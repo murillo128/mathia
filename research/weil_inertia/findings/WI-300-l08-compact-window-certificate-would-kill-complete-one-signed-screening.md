@@ -1,19 +1,21 @@
-# WI-300 — the L=0.8 compact-window certificate would kill complete one-signed screening
+# WI-300 — independently replayed L=0.8 compact-window positivity kills complete one-signed first-crossing screening
 
-**Status:** `PRIOR-ART-REDIRECT + RECENT-PREPRINT + COMPUTATIONAL-CERTIFICATE-NEEDS-INDEPENDENT-REPLAY + EXACT-DERIVED-CONDITIONAL`.
+**Status:** `PRIOR-ART-REDIRECT + RECENT-PREPRINT + COMPUTATIONAL-INTERVAL + INDEPENDENT-REPLAY + EXACT-DERIVED`.
 
-A recent compact-window Weil-positivity preprint materially changes the live first-crossing gate left by WI-298--WI-299. Xuefeng Zhu, *Weil positivity in compact windows: a finite reduction, certified two-sided bounds, and a Landau--Widom decay law*, arXiv:2608.24827v2 (revised 2 September 2026), reports a certified full-window inequality
+The verification gate recorded in the original version of this finding is now discharged. Xuefeng Zhu's pinned v2 preprint, *Weil positivity in compact windows: a finite reduction, certified two-sided bounds, and a Landau--Widom decay law*, arXiv:2608.24827v2 (revised 2 September 2026), states the unconditional compact-window bound
 
 \[
 \boxed{
-Q(f)\ge 8.9\times10^{-18}\,\|f\|_2^2
+Q_W(f)\ge 8.9\times10^{-18}\,\|f\|_2^2
 \qquad
 \text{for every complex }f\text{ supported in }[-0.8,0.8].
 }
 \tag{1}
 \]
 
-The theorem surface is the same compactly supported Weil quadratic form used in Suzuki's localized operator. Consequently, **if the published v2 certificate is independently replayed and validated**, then in the notation of WI-238
+Mathia issue [#152](https://github.com/murillo128/mathia/issues/152) independently reconstructed and interval-certified the v2 lower-bound pipeline from the geometric side, without using zeta zeros, RH, or an author-supplied matrix. The replay therefore upgrades (1) from fresh author-certified prior art to independently checked computer-assisted evidence at the level used by this line.
+
+Through the normalization dictionary already audited against Suzuki's localized Weil form, (1) gives
 
 \[
 \boxed{
@@ -22,20 +24,20 @@ The theorem surface is the same compactly supported Weil quadratic form used in 
 \tag{2}
 \]
 
-WI-238 gives monotonicity of the localized ground-state profile and defines, under RH failure, the first crossing
+WI-238 makes the localized ground-state profile nonincreasing in the aperture and, under RH failure, defines the first crossing
 
 \[
 a_*:=\inf\{a>0:\lambda_a\le0\}.
 \]
 
-Equation (2) would force
+Hence (2) forces
 
 \[
 \boxed{a_*>0.8.}
 \tag{3}
 \]
 
-But WI-298 proves that a hypothetical first-crossing null mode which is both one-signed and completely prime-power screened must satisfy
+WI-298 independently proves that a hypothetical first-crossing null mode which is both one-signed and completely prime-power screened would instead force
 
 \[
 \boxed{
@@ -44,211 +46,75 @@ a_*\le r_2:=\frac{\log2}{2}=0.346573590\ldots .
 \tag{4}
 \]
 
-Since `r_2<0.8`, (3) and (4) are incompatible. Thus a successful independent replay of Zhu's `L=0.8` certificate would immediately eliminate the **entire one-signed complete-screening first-crossing branch**. It would do so without needing to finish the much narrower endpoint certificate `lambda_{r_2}>0` pursued after WI-299.
+Since `r_2<0.8`, the two inequalities are incompatible. Thus the **one-signed completely screened first-crossing branch is unconditionally excluded**, subject only to the ordinary computer-assisted-evidence boundary of the replayed finite certificate. WI-301 strengthens this conclusion further: the first-crossing and null-mode hypotheses can be removed entirely for the completely screened one-signed class.
 
-This is a prior-art redirect, not an unconditional Mathia theorem yet. The analytic reduction is explicit in the v2 manuscript, but the decisive lower bound is computer-assisted and has not been independently replayed inside Mathia. Until that replay is complete, (2)--(4) are a conditional consequence, not established evidence that the branch is actually closed.
+## 1. What was independently replayed
 
-## 1. Exact dictionary to Suzuki's localized ground state
+The replay was pinned to the exact v2 source archive rather than to mutable unversioned metadata. Its source and matrix provenance, software versions, analytic error bounds, complete reconstruction code, and independent checker are preserved in the [issue evidence comment](https://github.com/murillo128/mathia/issues/152#issuecomment-5678076696).
 
-Suzuki's 2026 operator paper defines the closed localized Weil form `Q_W^a` on functions supported in `(-a,a)` and its attained ground-state value
-
-\[
-\lambda_a
-=\inf_{0\ne v}
-\frac{Q_W^a(v)}{\|v\|_2^2}.
-\tag{5}
-\]
-
-On compactly supported smooth functions his zeros-side definition is
+For `L=0.8`, the prime comb has only `n=2,3,4` active. The replay independently checked
 
 \[
-Q_W(v_1,v_2)
-=\sum_{\gamma}m_\gamma
-\widehat v_1(\gamma)
-\overline{\widehat v_2(\bar\gamma)},
-\tag{6}
+A_L
+=\sqrt2\log2+\frac{2}{\sqrt3}\log3+\log2
+=2.9419735252236204555\ldots
 \]
 
-and `Q_W^a` is the corresponding closed restriction to the aperture. This is the same Bombieri/Weil quadratic functional represented by the geometric side of the explicit formula.
-
-Zhu starts from the same Weil form. For compactly supported `f`, with `g=f\star\widetilde f`, the manuscript writes
+and the pointwise Binet tail floors
 
 \[
-Q(f)
-=\sum_\rho
-\widehat g\!\left(\frac{\rho-1/2}{i}\right),
-\tag{7}
+\beta_{200}=0.5134667749150707383\ldots,
+\qquad
+\beta_{150}=0.2241180357966231442\ldots .
 \]
 
-and uses the Bombieri normalization of the geometric explicit formula. Under the standard Fourier dictionary, (7) is the diagonal form (6). The v2 parity argument extends its certified even-sector lower bound to all real odd functions and then to arbitrary complex `f` by real/imaginary decomposition. Therefore its Corollary 6.3 is exactly the theorem surface needed to lower-bound Suzuki's unrestricted localized Rayleigh infimum at `a=0.8`; there is no missing parity restriction in the implication to (2).
+The even sector used `N=200` normalized Legendre modes, cutoff `T=200`, and outward Arb arithmetic at 100 decimal digits. The odd sector used `N=200`, `T=150`, and 140 digits. Head entries were enclosed with Gauss--Legendre quadrature plus a rigorous Bernstein-ellipse remainder; the discarded diagonal and head--tail coupling were bounded analytically. A separate 150-digit checker converted the matrix intervals to exact dyadic endpoint bounds, formed an exact-dyadic Gram factor from the midpoint Cholesky data, and enclosed the residual independently rather than reusing the primary recurrence or factorization logic.
+
+At shifts `9e-18` and `8.3e-15`, the residual operator bounds were below `7.367e-32` and `1.328e-88`, respectively. After the explicit quadrature and tail deductions, the certified sector floors are
+
+\[
+\lambda_{\rm even}\ge8.9\times10^{-18},
+\qquad
+\lambda_{\rm odd}\ge8.2065\times10^{-15}.
+\]
+
+Parity and real/imaginary decomposition therefore yield (1) for the full complex window. This is a computer-assisted interval certificate, not a Lean theorem.
+
+## 2. Dictionary to Suzuki's localized form
+
+Suzuki's localized operator uses the same Bombieri/Weil quadratic functional, closed on functions supported in `(-a,a)`. In the Fourier normalization of WI-238 its diagonal zeros-side form is
+
+\[
+Q_W(v,v)
+=\sum_\gamma m_\gamma
+\widehat v(\gamma)
+\overline{\widehat v(\bar\gamma)},
+\]
+
+while Zhu's geometric-side form is the corresponding explicit-formula representation of the same autocorrelation functional. Issue #152 rechecked the apparent archimedean normalization mismatch directly: the conversion factor is exactly one, because the residual constant is canceled by the elementary integral equal to `log 2`. Thus no scalar or parity loss occurs between the certified `L=0.8` theorem and Suzuki's `lambda_0.8`.
 
 Primary sources:
 
-- Masatoshi Suzuki, **Weil's quadratic form via the screw function**, arXiv:2606.09096 (2026), especially the definition of `Q_W^a`, the self-adjoint operator `A_a`, and the ground-state value `lambda_a`: https://arxiv.org/abs/2606.09096.
-- Xuefeng Zhu, **Weil positivity in compact windows: a finite reduction, certified two-sided bounds, and a Landau--Widom decay law**, arXiv:2608.24827v2, revised 2 September 2026: https://arxiv.org/abs/2608.24827v2.
+- Masatoshi Suzuki, **Weil's quadratic form via the screw function**, arXiv:2606.09096 (2026): https://arxiv.org/abs/2606.09096.
+- Xuefeng Zhu, **Weil positivity in compact windows: a finite reduction, certified two-sided bounds, and a Landau--Widom decay law**, pinned arXiv:2608.24827v2, revised 2 September 2026: https://arxiv.org/abs/2608.24827v2.
+- Mathia issue **#152**, independent certified replay: https://github.com/murillo128/mathia/issues/152.
 
-## 2. What the v2 certificate actually claims
+## 3. Exact branch consequence
 
-For `supp f subset [-L,L]`, Zhu rewrites the geometric side as
-
-\[
-Q(f)
-=2F(i/2)^2
-+\frac1{2\pi}\int_{\mathbb R}|F(t)|^2\Psi_L(t)\,dt,
-\tag{8}
-\]
-
-with
+The logical use of the certificate is much weaker than any attempt to extend compact-window positivity toward arbitrary aperture. Positivity at the single scale `0.8` already implies, by monotonicity,
 
 \[
-\Psi_L(t)
-=\Re\psi\!\left(\frac14+\frac{it}{2}\right)-\log\pi
--\sum_{\log n<2L}\frac{2\Lambda(n)}{\sqrt n}\cos(t\log n).
-\tag{9}
+a_*>0.8.
 \]
 
-Write
+The exact support-packing and rearrangement theorem WI-298 says complete one-signed prime-power screening at a first crossing would compress the mode to a nonpositive test at the first-prime aperture `r_2=(log2)/2`, hence `a_*<=r_2`. The contradiction is therefore finite and has no asymptotic step.
 
-\[
-A_L:=\sum_{\log n<2L}\frac{2\Lambda(n)}{\sqrt n}.
-\]
+This closes the verification target that originally motivated WI-300 and supersedes the narrower `lambda_{r_2}>0` certificate as the shortest route for this branch. It does not invalidate the endpoint analysis of WI-299; that work remains an independent description of the first-prime transition.
 
-The manuscript proves a one-stroke lower reduction: after choosing `T^sharp` with a positive tail floor `beta^*`, the infinite form is bounded below by
+## 4. Prior-art and evidence boundary
 
-\[
-R(f)
-=2F(i/2)^2
-+\frac1\pi\int_0^{T^\sharp}
-(\Psi_L(t)-\beta^*)|F(t)|^2\,dt
-+\beta^*\|f\|_2^2.
-\tag{10}
-\]
+The compact-window reduction, the `8.9e-18` constant, the parity extension, and the pointwise-envelope barrier are Zhu's v2 claims. Mathia's contribution in WI-300 is the source dictionary, independent replay, and the exact integration with the branch structure already proved in WI-238 and WI-298. No priority claim is made.
 
-In a normalized Legendre basis, the remaining head is finite-dimensional up to an explicitly bounded super-exponential tail. At `L=0.8` the reported primary certificate uses
+A targeted prior-art check found the fixed-window theorem in Zhu and the localized form in Suzuki, but no source turning this particular verified window into the line-local screened first-crossing contradiction. The stronger arbitrary-support screened-class consequence is recorded separately in WI-301 so that its different mathematical claim identity is explicit.
 
-\[
-T^\sharp=200,
-\qquad
-N=200\ \text{even Legendre modes},
-\qquad
-\beta^*=0.5134\ldots,
-\tag{11}
-\]
-
-with 50-digit arithmetic. The paper reports Bernstein-ellipse quadrature error below `10^-42`, head/tail and coupling errors below `10^-100`, and a verified Cholesky residual at shift `8.9e-18` with remainder below `10^-50`. A second computation at `T^sharp=150` reportedly certifies the weaker positive floor `1.2e-18`.
-
-The odd sector is treated separately and is reported to satisfy
-
-\[
-Q(f)\ge 8.2065\times10^{-15}\|f\|_2^2
-\]
-
-for real odd `f`. The manuscript then obtains (1) for arbitrary complex functions. These are stronger statements than the even-only inequality needed for many compact-window applications and remove a possible dictionary loophole in the implication to Suzuki's `lambda_a`.
-
-The manuscript also gives a certified variational upper bound
-
-\[
-\lambda^*(0.8)\le2.27\times10^{-17},
-\]
-
-so its claimed lower floor lies in a narrow positive interval rather than being separated from the observed window minimum by many orders of magnitude. This upper bound is not needed for the branch-elimination implication.
-
-## 3. Why this supersedes the live `r_2` gate for the screened branch
-
-WI-298 is an exact source-side structural theorem. It says that if the **first** Suzuki crossing mode is nonnegative and completely screened by all prime-power translations, symmetric decreasing rearrangement produces a nonpositive test supported already at the first-prime aperture:
-
-\[
-Q_W^{r_2}(v^*)\le0.
-\]
-
-Hence such a branch requires `a_*<=r_2`. WI-299 then showed that the smooth-kernel tail estimate needed by a separate finite-mode architecture reaches all the way to `r_2`; the only remaining task in that architecture was the low-mode interval-Schur certificate on the narrow interval above `69/200`.
-
-The new prior art changes that priority. To refute the screened branch one does not need positivity exactly at `r_2`. Any certified positive aperture strictly larger than `r_2` suffices, because `lambda_a` is nonincreasing in `a`: positivity at `0.8` implies positivity at every smaller aperture and therefore forbids a first crossing at or below `r_2`.
-
-Thus, conditional on independent certification of (1), the logical chain is simply
-
-\[
-\lambda_{0.8}>0
-\Longrightarrow
-a_*>0.8
-\Longrightarrow
-a_*>r_2,
-\]
-
-whereas complete one-signed screening gives `a_*<=r_2`. This is substantially stronger than the earlier public `FP-0.35` candidate audited in WI-259--WI-262: `0.8` is far beyond the first-prime threshold, and Zhu's reduction is a different certificate architecture rather than a repair of the defective FP-0.35 checker.
-
-The endpoint work of WI-299 is not mathematically invalidated. It remains useful as an independent finite-scale route and as a way to understand the first-prime transition. It is simply no longer the shortest verification target for eliminating this particular branch if the `L=0.8` certificate survives replay.
-
-## 4. Evidence boundary: this is not yet imported as an unconditional theorem
-
-The v2 manuscript calls Theorem 1.2 a certified unconditional result and describes concrete interval/error-control ingredients. That is materially stronger provenance than a floating-point experiment. Nevertheless it is a fresh unrefereed computer-assisted preprint, and Mathia has not yet independently reconstructed its finite matrix, quadrature enclosure, tail/coupling bounds, or verified-Cholesky step.
-
-This distinction is especially important because the paper itself records a correction between drafts: an earlier exploratory support-`2.38` calculation used an incorrect prime-comb mass and is withdrawn in v2. The current v2 claim is only the support-`1.6` theorem above. The explicit correction is positive evidence of self-audit, but it is also a reason not to collapse `author-certified` into `independently established`.
-
-Accordingly, this finding does **not** assert unconditionally that `lambda_0.8>0`, does not close the screened branch yet, and does not upgrade WI-238/WI-298 to RH. Its exact unconditional content is the logical implication:
-
-\[
-\boxed{
-\text{valid Zhu v2 }L=0.8\text{ certificate}
-\Longrightarrow
-\text{no one-signed completely screened first-crossing null mode}.
-}
-\tag{12}
-\]
-
-The implication uses only the already established localized-Weil dictionary, WI-238 monotonicity, and WI-298.
-
-## 5. The pointwise-envelope barrier prevents overinterpreting the result
-
-Zhu also proves a barrier internal to the certificate architecture. With
-
-\[
-T_1(L)=2\pi e^{A_L},
-\]
-
-the one-stroke reduction requires `T^sharp>T_1(L)`. The prime-comb supremum is exactly `A_L`, so no uniform pointwise majorant of that comb can lower this threshold. By the prime number theorem,
-
-\[
-A_L=(4+o(1))e^L,
-\]
-
-and the required matrix dimension therefore grows doubly exponentially with `L`.
-
-This is not a no-go for Weil positivity itself, only for this pointwise-envelope certificate class. It is nevertheless directly relevant to the line mandate: even if the `L=0.8` computation is correct, repeatedly extending the same construction to arbitrarily large aperture is not a credible route to RH without new arithmetic information controlling phase alignment.
-
-For the current screened branch, however, no large-`L` iteration is needed. WI-298 has already converted the branch into a **finite threshold contradiction**, so one validated certificate at any aperture above `r_2` is enough.
-
-## 6. Prior-art and novelty assessment
-
-All of the compact-window lower-bound architecture, the `L=0.8` numerical constants, the one-stroke reduction, the parity extension, and the pointwise-envelope barrier belong to Zhu's preprint. No Mathia novelty is claimed for those statements.
-
-The Mathia contribution recorded here is narrower and line-specific: integrating this new prior art with the exact first-crossing logic of WI-238 and the rearrangement theorem WI-298. That combination shows that the certificate, if independently validated, has a much stronger consequence for the current `weil_inertia` program than merely extending a known compact-support positivity range: it would **close an entire structural branch of possible RH failure** already isolated by the line.
-
-A targeted audit of the current line sources found no prior anchor to arXiv:2608.24827, and the current frontier after WI-299 still treated `lambda_{r_2}>0` as the live finite positivity gate. The present finding therefore changes the verification priority rather than rediscovering a stored local result.
-
-## 7. Decisive audit test
-
-The next evidence-changing test is an **independent replay of the v2 `L=0.8` lower certificate**, not another optimization of the first-prime endpoint. A successful replay must establish all of the following against the current v2 source and artifacts:
-
-1. the geometric quadratic form and Fourier normalization agree with the Bombieri/Suzuki localized `Q_W^a` used in WI-238;
-2. the pointwise envelope and `beta^*` tail inequality are rigorous on the stated domains;
-3. the finite Legendre head at `L=0.8`, `T^sharp=200`, `N=200` encloses the exact matrix entries, including quadrature error;
-4. the discarded tail block and head-tail coupling satisfy the claimed explicit bounds;
-5. the verified Cholesky/residual argument is genuinely outward or exact enough to imply positive definiteness at the stated shift, rather than merely evaluating an approximate factorization;
-6. the odd-sector argument and real/imaginary decomposition really give the all-complex function statement used in (2).
-
-The independent `T^sharp=150` computation is a useful cross-check but is not logically required if the primary `T^sharp=200` certificate is reconstructed from first principles. Conversely, reproducing only a floating-point eigenvalue is insufficient.
-
-If this audit passes, the evidence status of (2) can be upgraded and the branch in (12) becomes unconditionally closed. If it fails, WI-298--WI-299 remain intact and the finite `r_2` certificate architecture remains a live fallback.
-
-## Research consequence
-
-The immediate verification priority for the one-signed complete-screening branch is now external-certificate replay at `L=0.8`. The mathematical reason is unusually clean:
-
-\[
-0.8>\frac{\log2}{2},
-\]
-
-so a single independently established positive compact window beyond the first-prime aperture contradicts the exact support compression forced by complete screening.
-
-This does not resolve the sign-changing first-crossing branch, does not show that every off-critical zero creates a one-signed screened mode, and does not by itself prove RH. It does, however, convert a fresh finite-window computational theorem candidate into a precise branch-killing test with a binary outcome and no remaining asymptotic step.
+The result does **not** establish unrestricted Weil positivity beyond `L=0.8`, does not control sign-changing screened functions, and does not prove RH. Zhu's own pointwise-envelope architecture has a doubly exponential large-window cost: its threshold is `T_1(L)=2\pi e^{A_L}`, with `A_L=(4+o(1))e^L`. The present branch closure avoids that barrier because it needs only one verified finite window above `(log2)/2`.
