@@ -278,7 +278,7 @@ When choosing `U_{j+1}`, enlarge it further so that two finite conditions hold. 
 \exp[-U_{j+1}/(2U_n^2)]
 }{1+\Gamma_n^2}
 \le
-U_{j+1}^{-A-j-2}.
+U_{j+1}^{-A-j-3}.
 \tag{23}
 \]
 
