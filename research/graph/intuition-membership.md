@@ -83,6 +83,7 @@ This is a path-derived structural projection for graph topology. Each link means
 - [[research/arithmetic_fidelity/mind/intuition/MI-038-exponential-algebraic-gate-is-pointwise-not-stable]]
 - [[research/arithmetic_fidelity/mind/intuition/MI-039-exceptional-time-does-not-make-the-phase-point-algebraic]]
 - [[research/arithmetic_fidelity/mind/intuition/MI-040-unitary-zero-incidence-spends-two-algebraic-codimensions]]
+- [[research/arithmetic_fidelity/mind/intuition/MI-041-one-riesz-order-crosses-conditioning-without-moving-the-zero-discriminator]]
 
 ### Farey Discrepancy
 - [[research/farey_discrepancy/mind/intuition/MI-001-cumulative-farey-discrepancy-is-mertens-energy]]
@@ -95,6 +96,10 @@ This is a path-derived structural projection for graph topology. Each link means
 - [[research/farey_discrepancy/mind/intuition/MI-008-linear-least-prime-order-is-positive-rough-sieve-filtration]]
 - [[research/farey_discrepancy/mind/intuition/MI-009-finite-local-polynomial-nonlinearity-splits-by-parity]]
 - [[research/farey_discrepancy/mind/intuition/MI-010-fixed-rational-anchor-horizon-is-a-periodic-mobius-filter]]
+- [[research/farey_discrepancy/mind/intuition/MI-011-fixed-depth-physical-data-do-not-create-critical-coercivity-on-a-reversible-farey-skeleton]]
+- [[research/farey_discrepancy/mind/intuition/MI-012-unweighted-prime-ancestry-energy-dilutes-fixed-rank-gauge-cuts]]
+- [[research/farey_discrepancy/mind/intuition/MI-013-levelwise-ancestry-means-still-dilute-finite-prime-coordinate-cuts]]
+- [[research/farey_discrepancy/mind/intuition/MI-014-pointwise-primewise-decay-misses-a-moving-central-rank-boundary]]
 
 ### Möbius Cancellation
 - [[research/mobius_cancellation/mind/intuition/MI-001-local-cancellation-needs-a-polynomial-information-budget]]
@@ -121,6 +126,13 @@ This is a path-derived structural projection for graph topology. Each link means
 - [[research/mobius_cancellation/mind/intuition/MI-022-positive-shell-envelopes-erase-the-phase-cancellation-needed-below-the-blind-atom]]
 - [[research/mobius_cancellation/mind/intuition/MI-023-negative-witness-collapse-trades-rowwise-simplicity-for-source-depth]]
 - [[research/mobius_cancellation/mind/intuition/MI-024-arithmetic-image-blind-exclusion-is-directional-leverage]]
+- [[research/mobius_cancellation/mind/intuition/MI-025-small-exceptional-character-family-is-forced-toward-an-affine-halfspace]]
+- [[research/mobius_cancellation/mind/intuition/MI-026-low-source-cost-near-negative-spectrum-collapses-to-one-landau-page-mode]]
+- [[research/mobius_cancellation/mind/intuition/MI-027-bounded-overlap-order-cannot-determine-page-parity]]
+- [[research/mobius_cancellation/mind/intuition/MI-028-deuring-heilbronn-source-bandwidth-has-a-lambert-w-certificate-ceiling]]
+- [[research/mobius_cancellation/mind/intuition/MI-029-square-root-source-energy-capacity-leaves-a-logarithmic-dimension-gap]]
+- [[research/mobius_cancellation/mind/intuition/MI-030-multiquadratic-packaging-turns-source-cost-into-discriminant-complexity]]
+- [[research/mobius_cancellation/mind/intuition/MI-031-common-ramification-shifts-capacity-into-radical-size-or-roughness]]
 
 ### Nyman–Beurling
 - [[research/nyman_beurling/mind/intuition/MI-001-target-aware-gram-geometry-must-carry-absolute-scale]]
@@ -140,6 +152,12 @@ This is a path-derived structural projection for graph topology. Each link means
 - [[research/nyman_beurling/mind/intuition/MI-015-confluent-volume-is-curvature-blind-and-controlled-by-radial-depth]]
 - [[research/nyman_beurling/mind/intuition/MI-016-growing-confluent-rank-is-limited-by-endpoint-extrapolation-cost]]
 - [[research/nyman_beurling/mind/intuition/MI-017-finite-high-zero-target-access-requires-a-target-bearing-compression-near-kernel]]
+- [[research/nyman_beurling/mind/intuition/MI-018-actual-zero-power-packets-pay-logarithmic-confluent-rank-for-perfect-harmonic-profile-capture]]
+- [[research/nyman_beurling/mind/intuition/MI-019-finite-multibase-dealiasing-is-injective-but-not-height-coercive]]
+- [[research/nyman_beurling/mind/intuition/MI-020-natural-grid-target-visibility-has-a-reciprocal-height-defect-threshold]]
+- [[research/nyman_beurling/mind/intuition/MI-021-linear-rank-formal-zero-powers-are-natural-prefix-universal]]
+- [[research/nyman_beurling/mind/intuition/MI-022-actual-zero-counting-restores-recurrence-visibility-below-an-explicit-rank-threshold]]
+- [[research/nyman_beurling/mind/intuition/MI-023-recurrence-visibility-plus-radial-depth-does-not-control-annihilator-conditioning]]
 
 ### Prime Circle
 - [[research/prime_circle/mind/intuition/MI-001-anchor-required-but-local-anchor-is-classical]]
@@ -157,6 +175,12 @@ This is a path-derived structural projection for graph topology. Each link means
 - [[research/prime_circle/mind/intuition/MI-013-growing-collision-geometry-can-still-be-classical]]
 - [[research/prime_circle/mind/intuition/MI-014-single-source-positive-spectral-lifts-are-pure-gauge]]
 - [[research/prime_circle/mind/intuition/MI-015-selector-subtraction-leaves-a-classical-digamma-green-symbol]]
+- [[research/prime_circle/mind/intuition/MI-016-diffuse-independent-dilations-preserve-singular-channels-but-break-eigenvalue-loops]]
+- [[research/prime_circle/mind/intuition/MI-017-diffuse-boundary-logs-collapse-to-universal-square-zero-geometry]]
+- [[research/prime_circle/mind/intuition/MI-018-quadratic-square-zero-defect-is-fejer-autocorrelation-and-forgets-source-phase]]
+- [[research/prime_circle/mind/intuition/MI-019-independent-cyclic-noncommutativity-collapses-to-one-hankel-moment-matrix]]
+- [[research/prime_circle/mind/intuition/MI-020-centered-same-source-gram-formation-erases-coordinatewise-orientation-before-averaging]]
+- [[research/prime_circle/mind/intuition/MI-021-oriented-frame-repair-is-gauge-or-classical-sine-fourier-data]]
 
 ### Prime Flute
 - [[research/prime_flute/mind/intuition/MI-001-relative-multigap-geometry-carries-the-spectral-signal]]
@@ -194,6 +218,8 @@ This is a path-derived structural projection for graph topology. Each link means
 - [[research/prime_lattice/mind/intuition/MI-015-reciprocity-family-coupling-is-not-principal-zero-selection]]
 - [[research/prime_lattice/mind/intuition/MI-016-weil-form-observability-is-stronger-than-moment-observability]]
 - [[research/prime_lattice/mind/intuition/MI-017-fixed-order-shift-differentiability-survives-without-uniform-half-sobolev-control]]
+- [[research/prime_lattice/mind/intuition/MI-018-stretched-volterra-amplitude-selection-is-an-endpoint-matching-problem]]
+- [[research/prime_lattice/mind/intuition/MI-019-moving-green-atoms-require-tail-anti-concentration-beyond-weighted-l1]]
 
 ### Robin Extremal
 - [[research/robin_extremal/mind/intuition/MI-001-robin-failure-requires-self-tangent-half-mass-event-gaps]]
@@ -213,6 +239,12 @@ This is a path-derived structural projection for graph topology. Each link means
 - [[research/robin_extremal/mind/intuition/MI-015-surviving-robin-fans-pay-near-square-root-complexity-or-exponential-stretch]]
 - [[research/robin_extremal/mind/intuition/MI-016-positive-robin-peaks-force-a-larger-normalization-corridor-before-recurrence]]
 - [[research/robin_extremal/mind/intuition/MI-017-a-finite-zero-edge-upgrades-robin-recovery-to-a-power-corridor]]
+- [[research/robin_extremal/mind/intuition/MI-018-an-isolated-finite-zero-edge-determines-every-fixed-algebraic-ca-height-correction]]
+- [[research/robin_extremal/mind/intuition/MI-019-strong-finite-edge-atoms-can-only-hide-through-reciprocal-scale-annular-phase-competition]]
+- [[research/robin_extremal/mind/intuition/MI-020-macroscopic-hiding-forces-a-horizontally-locked-reciprocal-scale-zero-doublet]]
+- [[research/robin_extremal/mind/intuition/MI-021-one-level-zero-density-cannot-exclude-reciprocal-cancelling-doublets-on-sublinear-windows]]
+- [[research/robin_extremal/mind/intuition/MI-022-one-level-sparsity-cannot-exclude-growing-reciprocal-clusters-on-fixed-relative-windows]]
+- [[research/robin_extremal/mind/intuition/MI-023-bounded-reciprocal-box-packets-have-a-uniform-visibility-floor]]
 
 ### Visual Exploration
 - [[research/visual_exploration/mind/intuition/MI-001-visual-residuals-must-survive-exact-coordinate-controls]]
@@ -230,6 +262,8 @@ This is a path-derived structural projection for graph topology. Each link means
 - [[research/visual_exploration/mind/intuition/MI-013-autocorrelation-tapers-make-exact-difference-shells-noncancelling]]
 - [[research/visual_exploration/mind/intuition/MI-014-one-cancellation-shell-energy-is-an-anchor-gram-problem-and-thin-windows-diagonalize-it-exactly]]
 - [[research/visual_exploration/mind/intuition/MI-015-prime-phase-worst-starts-are-frustrated-torus-optimization]]
+- [[research/visual_exploration/mind/intuition/MI-016-coherent-prime-blocks-force-super-rms-ising-energy]]
+- [[research/visual_exploration/mind/intuition/MI-017-critical-collision-counts-need-the-balanced-occupancy-baseline]]
 
 ### Weil Inertia
 - [[research/weil_inertia/mind/intuition/MI-001-screening-is-an-information-bandwidth-obstruction]]
@@ -255,6 +289,7 @@ This is a path-derived structural projection for graph topology. Each link means
 - [[research/weil_inertia/mind/intuition/MI-021-complete-screening-promotes-support-avoidance-to-prime-deleted-spectral-criticality]]
 - [[research/weil_inertia/mind/intuition/MI-022-fixed-finite-prime-power-screening-cannot-buy-prime-deleted-spectral-coercivity]]
 - [[research/weil_inertia/mind/intuition/MI-023-nearest-prime-width-has-a-lambert-w-spectral-endpoint]]
+- [[research/weil_inertia/mind/intuition/MI-024-one-signed-complete-screening-imposes-a-support-measure-floor]]
 
 ### Weil Positivity
 - [[research/weil_positivity/mind/intuition/MI-001-positivity-needs-a-sign-producing-global-operation]]
@@ -276,6 +311,12 @@ This is a path-derived structural projection for graph topology. Each link means
 - [[research/weil_positivity/mind/intuition/MI-017-source-native-pole-cancellation-is-rh-complete-but-irreducibly-signed]]
 - [[research/weil_positivity/mind/intuition/MI-018-exact-weil-square-equality-makes-coarse-scalar-relocalization-exact]]
 - [[research/weil_positivity/mind/intuition/MI-019-flat-source-covariance-is-gauge-trivial-curvature-is-the-first-escape]]
+- [[research/weil_positivity/mind/intuition/MI-020-moving-nullspace-geometry-is-trapped-between-homogeneous-rigidity-and-free-programmability-unless-the-source-forces-the-motion]]
+- [[research/weil_positivity/mind/intuition/MI-021-bounded-source-resolvents-cannot-reach-gamma-and-the-first-renormalized-log-is-universal]]
+- [[research/weil_positivity/mind/intuition/MI-022-pole-normalized-curvature-is-an-affine-source-invariant]]
+- [[research/weil_positivity/mind/intuition/MI-023-holomorphic-scalar-automorphism-gauges-cannot-vary-spectrally]]
+- [[research/weil_positivity/mind/intuition/MI-024-critical-mangoldt-logarithmic-end-blocks-the-classical-infinity-schur-step]]
+- [[research/weil_positivity/mind/intuition/MI-025-interior-schur-stripping-is-admissible-but-contaminates-the-gamma-scale]]
 
 ### Xi Flow
 - [[research/xi_flow/mind/intuition/MI-001-collision-safe-coordinates-separate-singularity-from-source-information]]
