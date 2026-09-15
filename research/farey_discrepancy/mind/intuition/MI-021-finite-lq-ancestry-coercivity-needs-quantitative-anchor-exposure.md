@@ -1,25 +1,29 @@
-# MI-021 — Finite-`L^q` ancestry coercivity needs quantitative anchor exposure, not connectivity alone
+# MI-021 — Finite-`L^q` binary ancestry coercivity is exactly quantitative anchored cut exposure
 
-**Evidence level:** exact/proved obstruction from [FD-146](../../findings/FD-146-anchor-connectivity-alone-does-not-control-normalized-ancestry-energy.md), refining the exact component-orientation gauge in [FD-145](../../findings/FD-145-rank-truncated-ancestry-defects-have-an-exact-component-orientation-gauge.md).
+**Evidence level:** exact/proved classification from [FD-147](../../findings/FD-147-finite-seed-ancestry-coercivity-is-exactly-an-anchored-cut-problem.md), refining the disconnected-component gauge of FD-145 and the rank-wall dilution example of FD-146.
 
-FD-145 identifies the qualitative prerequisite: relative ancestry equations cannot determine absolute Möbius orientation on a visible component disconnected from an anchored coefficient. FD-146 deliberately restores that prerequisite completely. It uses the full squarefree ancestry graph up to `T`, which is connected to the anchor `1` and contains every local edge.
+Let `G=(V,E)` carry vertex and edge probability measures `nu,eta`, let `D` be the anchored seed, and let `b:V->{-1,+1}` equal `+1` on `D`. If `A_b={b=-1}`, then for every finite `q`,
 
-Connectivity still does not give normalized stability. Fix a rank wall `R0` and write `a_n=mu(n)b(n)` with `b(n)=+1` for `omega(n)<=R0` and `b(n)=-1` above the wall. Every nonzero ancestry defect is then concentrated on edges crossing exactly that finite-rank interface. The number of such edges is only
+`||b-1||_(L^q(V,nu)) = 2 nu(A_b)^(1/q)`,
 
-`O_R0(T (log log T)^R0/log T)`,
+`||nabla b||_(L^q(E,eta)) = 2 eta(partial A_b)^(1/q)`.
 
-while the full squarefree graph has `Omega(T)` edges. For every fixed finite `q`, uniform edge normalization therefore gives
+Every admissible `A subset V\D` occurs as such a binary orientation, so the optimal binary anchored Poincare constant is exactly
 
-`||a_(pn)+a_n||_(L^q(E_T)) -> 0`
+`C^(bin)_(q,D) = h_D(nu,eta)^(-1/q)`,
 
-although
+`h_D(nu,eta)=inf_A eta(partial A)/nu(A)`.
 
-`||a-mu||_(L^q(V_T)) -> 2`.
+This separates two resources sharply. Connectivity says only that no admissible cut has zero observed boundary; finite-`L^q` stability requires a **uniform lower bound on the boundary mass of every macroscopic flipped region** in the actual normalization. For `q=infinity`, the mass disappears and connectivity is again the relevant binary condition.
 
-Equivalently, any Poincare-type inequality with uniform vertex/edge normalization must have a coercivity constant diverging at least like `(log T/(log log T)^R0)^(1/q)`. The exact orientation gauge is gone, but the anchor is connected to most of the coefficient mass through a boundary whose normalized exposure vanishes.
+On the full squarefree ancestry graph with uniform measures, a fixed finite seed cannot provide that exposure. Let `D` be the finite squarefree divisor closure of the prescribed seed and flip the orientation on `V_T\D`. The full graph has `|E_T| ~ T log log T/zeta(2)`, while the boundary of fixed `D` has size `~ kappa_D T/log T`. Hence
 
-The correct resource after connectivity is therefore **quantitative anchor exposure in the destination norm**. A source-native weighting can defeat this particular wall only if it gives every macroscopic orientation change a boundary of nonvanishing normalized observation mass. The distinction is norm-sensitive: the same construction has `L^infinity` edge defect exactly `2`, so full pointwise ancestry data remain information-theoretically sufficient.
+`eta_T(partial D) = Theta_D(1/(log T log log T))`,
 
-This orders the coefficient-side gates. First establish an anchored component; second prove a uniform weighted cut/Poincare inequality for the actual Farey/Franel normalization; only then does the number of independent ancestry tests become the next information bottleneck. Counting observed edges before pricing their normalized cut mass confuses qualitative reachability with quantitative coercivity.
+while the flipped vertex mass tends to one. The ancestry defect is therefore `Theta_D((log T log log T)^(-1/q))` although coefficient error tends to `2`, and
 
-**Boundary.** FD-146 rules out uniform finite-`L^q` coercivity for the full ancestry graph under the stated uniform normalization. It does not rule out source-native nonuniform edge weights, `L^infinity` observables, direct coefficient anchors, or genuinely nonlocal Farey/Fourier functionals. It identifies the quantitative exposure property those alternatives must supply rather than proving that every ancestry-based route fails.
+`C^(bin)_(q,D)(T) >= c_D (log T log log T)^(1/q)`.
+
+The reusable test for a proposed ancestry observable is thus not “are all coefficients connected to the anchor?” but “what is its anchored cut profile under the exact source-native weights?” Uniformly adding local edges or fixing finitely many coefficients cannot repair a vanishing cut ratio.
+
+**Boundary.** The statement is exact for binary orientations and finite `L^q`. It does not exclude nonuniform source-native weights with a uniform cut lower bound, `L^infinity`, growing/direct anchoring, or genuinely nonlocal Farey/Fourier functionals that do not reduce to local coefficient recovery.

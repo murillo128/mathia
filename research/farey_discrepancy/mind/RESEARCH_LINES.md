@@ -2,36 +2,30 @@
 
 This file holds the current mathematical questions suggested by the durable Farey-discrepancy intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Require quantitative anchor exposure, not connectivity alone, before treating ancestry energy as coercive
+## Replace qualitative ancestry reachability by a source-native anchored cut theorem
 
 **Linked intuitions:** `MI-001-cumulative-farey-discrepancy-is-mertens-energy` through `MI-021-finite-lq-ancestry-coercivity-needs-quantitative-anchor-exposure`.
 
-FD-117--FD-144 separate the reversible Farey skeleton, common-source escape, finite-information blindness and the opposite source-reconstruction boundary. FD-145 then exposes an exact structural obstruction: writing `a_n=mu(n)b(n)` on squarefree integers turns a zero ancestry defect into `b(pn)=b(n)`, so any visible component disconnected from the finite Möbius anchor has a free `Z_2` orientation.
+FD-145--FD-147 now classify the binary coefficient-side obstruction exactly. FD-145 identifies the `Z_2` orientation gauge when an ancestry component is disconnected from the Möbius anchor. FD-146 shows that restoring the full connected squarefree ancestry graph does not give finite-`L^q` coercivity under uniform normalization. FD-147 identifies the common object: for an anchored seed `D`, binary orientations satisfy
 
-FD-146 shows that repairing this connectivity defect is not enough. On the **full** squarefree ancestry graph every coefficient is connected to the anchor `1` and every local edge is observed, yet a fixed rank-wall source has normalized finite-`L^q` ancestry defect
+`C^(bin)_(q,D) = h_D(nu,eta)^(-1/q)`,
 
-`O(((log log T)^R0/log T)^(1/q)) -> 0`
+where `h_D` is the infimum of boundary observation mass divided by flipped vertex mass over all admissible anchored cuts. Connectivity is only the statement that no such cut has zero boundary; stable recovery requires a uniform positive cut-exposure constant in the actual source/destination weights.
 
-while its normalized coefficient error tends to `2`. Equivalently, any uniformly normalized anchored Poincare constant must diverge at least like
+For the full squarefree ancestry graph with uniform vertex and edge measures, every fixed finite prescribed seed still fails this test. A source can agree with Möbius on the seed while flipping the whole complement of its finite divisor closure. Its coefficient error tends to `2`, but its normalized ancestry defect is only
 
-`(log T/(log log T)^R0)^(1/q)`.
+`Theta_S((log T log log T)^(-1/q))`,
 
-The wall is pointwise visible—its edge defect has magnitude `2` and `L^infinity` detects it—but its share of the full edge mass tends to zero. Connectivity is therefore qualitative; stable coefficient recovery requires **quantitative anchor exposure under the actual source-native normalization**. A useful ancestry/Farey observable must prove that every macroscopic orientation change crosses a boundary carrying nonvanishing observation mass, or use a nonlocal destination functional that couples the two orientations without reducing to diluted local edge energy.
+forcing every binary anchored Poincare constant to grow at least like `(log T log log T)^(1/q)`. The previous fixed-rank wall was therefore not the essential obstruction; the finite anchor itself can sit behind a vanishing normalized cut.
 
-## Determine the information threshold only after connectivity and exposure both survive
+The live coefficient-side theorem must now change the observation geometry. Either derive source-native nonuniform weights for which **every** macroscopic admissible orientation cut has nonvanishing exposure, or leave local coefficient recovery for a genuinely nonlocal Farey/Fourier destination functional. Merely adding more uniformly weighted ancestry edges, enlarging a finite seed, or proving connectivity cannot succeed.
 
-FD-144 remains the independent observation-budget obstruction, but its place in the audit is now later. Even after an observable has removed the exact disconnected-component gauge of FD-145 and defeated the vanishing-boundary construction of FD-146, `o(r_T)` arbitrary source-independent normalized ancestry tests can still be fooled by one common source along a subsequence.
+## Apply the information-budget gate only after cut exposure survives
 
-The live coefficient-side theorem must therefore establish a source-native anchored inequality such as
+FD-144 remains a separate lower bound: even after component anchoring and quantitative cut exposure are solved, `o(r_T)` arbitrary source-independent normalized ancestry tests can still be fooled along a subsequence. This is a later information threshold, not a substitute for the cut theorem. Conversely, FD-142 shows that sufficiently direct high-information coordinates can reconstruct the source and therefore risk circularity.
 
-`||b-1||_(L^q(V_T,nu_T)) <= C ||nabla b||_(L^q(E_T,eta_T))`
+Future ancestry proposals should therefore be audited in this order: **anchor connectivity -> quantitative cut exposure in the claimed norm -> information/precision budget -> destination relevance**. `L^infinity` remains qualitatively different: for binary data it sees any visible bridge and therefore reduces to connectivity rather than boundary mass.
 
-with `C` independent of `T` for the weights actually induced by the Farey/Franel skeleton, or identify a different quantitative exposure condition that defeats every fixed-rank wall. Only after such an inequality survives should the linear-rank information threshold of FD-144 be interpreted as the next bottleneck.
+## Keep binary cut coercivity and nonlocal destination coercivity separate
 
-A destination-side Fourier-skeleton coercivity theorem remains a distinct route because it could bypass local coefficient recovery, the component gauge and the finite-`L^q` boundary dilution simultaneously.
-
-## Keep connectivity, exposure, information, precision, provenance and target recovery separate
-
-A coercive law must now state more than coordinate count. It should specify which coefficient component is anchored, how observation mass is distributed across cuts connecting macroscopic source regions to the anchor, how many independent source constraints are imposed at rank `r_T`, how they are normalized, whether they are source-independent, what precision is consumed, and how much source freedom remains.
-
-The audit order for future ancestry claims is therefore: first test **anchor connectivity** against FD-145; then test **quantitative cut exposure in the claimed destination norm** against FD-146; then test the surviving information budget against FD-144. Direct source-identity encodings remain circular, while genuinely nonlocal Fourier/Farey observables must be judged separately by whether they force the target norm rather than merely identify coefficients.
+FD-147 is exact for binary Möbius orientations and finite `L^q`; it does not rule out source-native nonuniform edge weights, `L^infinity`, direct anchors growing with the problem, or nonlocal Farey/Fourier observables. Any escape should state which of those hypotheses it changes and why the new destination does not simply reconstruct the source.

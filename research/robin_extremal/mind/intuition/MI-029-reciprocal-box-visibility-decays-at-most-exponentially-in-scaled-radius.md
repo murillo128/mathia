@@ -1,17 +1,21 @@
-# MI-029 — Reciprocal-box visibility decays at most exponentially in scaled radius
+# MI-029 — Reciprocal-box visibility is exponentially sharp even for pure vertical escape
 
-**Evidence level:** exact quantitative positive-measure visibility theorem and Robin packet consequence from [RE-145](../../findings/RE-145-reciprocal-box-visibility-has-an-exponential-scaled-radius-floor.md), sharpening the qualitative fixed-box floor of RE-135 and the growing-radius matched obstruction of [RE-144](../../findings/RE-144-one-sided-slowly-diverging-clusters-defeat-target-anchored-turan-with-one-rightward-mode.md).
+**Evidence level:** exact positive-measure visibility lower bound from [RE-145](../../findings/RE-145-reciprocal-box-visibility-has-an-exponential-scaled-radius-floor.md), with functional-order sharpness strengthened by [RE-149](../../findings/RE-149-zero-horizontal-spread-product-packets-isolate-vertical-escape.md).
 
-For the positive empirical-measure representation of a finite Robin packet, confinement to a reciprocal-scale box of radius `R` controls visibility independently of how many atoms occupy the box. If `mu` is any probability measure supported in that box, its Laplace transform on the fixed observation interval satisfies a lower bound of the form
+For a normalized positive empirical Robin packet confined to a reciprocal-scale box of radius `R`, RE-145 gives a cardinality-free local floor
 
-`sup |F_mu| >= c_kappa exp(-C_kappa R)`.
+`sup_I |F_mu| >= c_kappa exp(-C_kappa R)`.
 
-The mechanism is quantitative analytic continuation from the normalization `F_mu(0)=1`: high-order interpolation reaches the observation interval at a cost exponential in the allowed scaled radius, while positivity removes any dependence on packet cardinality. Passing back to Robin coefficients preserves the same functional order as long as the coefficient perturbation and carrier scale are controlled.
+Thus `R(U)=o(log U)` still forces a `U^(-o(1))` normalized visibility floor, although it need not give a fixed positive margin.
 
-Consequently a packet with `R(U)=o(log U)` retains normalized local visibility at least `U^{-o(1)}` relative to its natural packet scale. This does **not** restore the fixed positive floor available for bounded `R`; it prices how quickly the floor is allowed to collapse as reciprocal geometry spreads.
+RE-149 shows that the exponential dependence cannot be blamed on horizontal drift. For every fixed relative observation window one can construct matched simple finite-edge packets whose active atoms all have **exactly the same real part** as the target. The target is the unique scale-maximal coefficient, while vertical offsets alone form a subset-product phase pattern. With scaled vertical radius `R_j`,
 
-RE-144 shows that the exponential dependence is the correct functional order in the matched class. Its product packets achieve normalized suppression `exp(-Omega(R))` while allowing `R(U)` to diverge arbitrarily slowly. Thus cardinality is not the primary local currency once positivity has been normalized: the decisive variable is the scaled radius, and its visibility price is exponential up to constants.
+`sup_I |packet| <= C exp(-c R_j) |target|`,
 
-The reusable diagnostic is therefore a rate comparison. If an external/source theorem can force actual zeros into a reciprocal radius `R(U)` whose exponential visibility floor dominates every exterior error term, the local packet cannot hide the target. Merely proving `R(U)->infinity` slowly, or bounding packet cardinality without radius, is not enough.
+and `R_j` may tend to infinity as slowly as prescribed. The normalized positive-measure version has the same exponential suppression.
 
-**Boundary.** RE-145 is a representation-level lower bound for positive empirical packet mass and the corresponding finite Robin coefficient regime. It does not prove that actual zeta zeros satisfy a useful radius law, does not contradict RE-144's qualitative hiding construction, and does not by itself compare the local floor with the full exterior Robin budget.
+So the `exp(-O(R))` lower theorem and `exp(-Omega(R))` controls match in functional order even on a vertical line. Horizontal localization, one-sided shell estimates and upper population counts do not by themselves improve this local floor. The missing actual-zeta input must constrain **vertical occupancy/phase geometry** or introduce another source relation that the abstract positive-measure model lacks.
+
+This also clarifies the role of packet complexity. Actual-zero counting can prevent arbitrarily many modes in a fixed absolute ordinate band, but it does not forbid scaled vertical radius from diverging with the observation scale. Radius and count are related only after the source theorem specifies the relevant absolute/scaled conversion.
+
+**Boundary.** RE-149 is a matched-control theorem, not a construction inside the actual zeta zero set. It preserves finite-edge symmetry and sparse one-level counts but not Euler-product, pair-correlation or other source-specific zero laws. The conclusion is sharpness of the representation-level visibility rate, not existence of the bad packet for zeta.
