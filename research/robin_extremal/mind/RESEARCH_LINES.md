@@ -2,31 +2,37 @@
 
 This file holds the current mathematical questions suggested by the durable robin-extremal intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Control horizontal spread, absolute vertical span and exterior cancellation for actual zeros
+## Beat the zero-density-lifted full-packet gain/complexity budget with actual-zero source information
 
-**Linked intuitions:** `MI-001-robin-failure-requires-self-tangent-half-mass-event-gaps` through `MI-024-vertical-reciprocal-escape-costs-packet-complexity-not-visibility-radius`.
+**Linked intuitions:** `MI-001-robin-failure-requires-self-tangent-half-mass-event-gaps` through `MI-025-rightmost-turan-observability-removes-the-horizontal-spread-tax-but-full-packet-closure-pays-a-gain-complexity-tail-budget`.
 
-RE-112--RE-133 reduce the attained finite-edge branch to a strong atom plus reciprocal-scale cancellation geometry and show that sparse formal spectra can realize both nearby doublets and growing hiding clusters.
+RE-112--RE-133 reduce the attained finite-edge branch to a strong atom plus reciprocal-scale cancellation geometry and show that sparse formal spectra can realize nearby doublets and growing hiding clusters. RE-134--RE-138 then make finite-packet visibility and actual-zero geometry explicit.
 
-RE-134--RE-136 remove local occupancy as the missing scalar variable and quantify isotropic reciprocal escape: a packet in radius `R` has visibility at least `exp(-C R)`, sharply in the matched formal class.
+RE-139 removes the horizontal-spread tax for finite packets. Normalize at a rightmost horizontal atom and use Turán's Second Main Theorem directly on samples inside the observation window. The lower bound depends exponentially on packet size but not on horizontal spread or vertical diameter. For actual zeros, bounded absolute vertical span gives only `O(log U)` retained modes, so superalgebraic finite-packet hiding forces the absolute vertical span itself to diverge.
 
-RE-137 exploits the anisotropy of the physical leading coefficient. Turan--Nazarov yields a lower bound depending on scaled horizontal spread `H_C(U)` and packet complexity `N`, but not on vertical diameter:
+RE-140 splices that finite witness with the full exterior tail. For a core truncated at height `T`, the finite contribution is governed by
 
-`sup |S_(C,0)| >= c exp(-H_C(U)-C_kappa N)|a_(rho_0,0)(U)|`.
+`G(U,T) exp(-Lambda_kappa N_T) M_0(U)`,
 
-RE-138 then inserts the actual zeta source law. Algebraic strength forces the distinguished ordinate to polynomial height, while Riemann--von Mangoldt gives
+where `G` is the amplitude transfer from the original strong atom to the rightmost retained atom and `N_T` is the paid Turán mode count.
 
-`N_U << (1+W_U)(log U + log(2+W_U))`
+RE-141 now improves the exterior side of that budget using the actual off-critical source law. Ingham zero density, partial summation of the `gamma^-2` Robin coefficients and horizontal damping give
 
-for a packet contained in absolute vertical half-width `W_U`. Hence bounded `W_U` together with `H_U=O(log U)` forces a fixed polynomial visibility floor. Superalgebraic relative hiding of the selected leading packet must make either `H_U/log U` or the **absolute** vertical span `W_U` unbounded.
+`||S_0-S_(0,T)||_infty << T^(-2+nu_I(Theta)+epsilon)(log T)^C + exp(-c_epsilon U) log T/T`,
 
-The live theorem is therefore no longer to bound packet cardinality independently. For actual zeros that resource has been converted into geometry. The remaining branch must control exterior cancellation from zeros outside the selected packet, or prove that the required horizontal/absolute-vertical escape is incompatible with the source. A bounded absolute ordinate band cannot hide a strong leading atom merely by packing more zeros into it.
+with `nu_I(Theta)=3(1-Theta)/(2-Theta)`. For `T=U^B`, `M_0>=U^-A`, `G>=T^-eta` and `N_T<=alpha log T`, a sufficient closing condition is
 
-## Keep atom extraction, source-count geometry, selected-packet observability and exterior tails separate
+`A/B + eta + Lambda_kappa alpha < 2-nu_I(Theta) = (1+Theta)/(2-Theta)`.
 
-RE-130 prices the size of an extracted atom from zero-density information. RE-131 constrains a nearby strong companion. RE-137 prices selected-packet observability by horizontal spread plus mode count. RE-138 replaces that formal mode count by an actual-zero bound in terms of absolute vertical span.
+The cutoff budget is therefore strictly better than the crude absolute-tail threshold `1` whenever `Theta>1/2`. But the problem does not disappear: the geometry-free amplitude transfer still corresponds to `eta=2`, while `2-nu_I(Theta)<2` for every attained `Theta<1`, and raw polynomial zero-density counts are still useless if charged directly inside the exponential Turán mode penalty.
 
-This does not yet control the full residual: zeros outside the selected packet may still cancel its visible contribution. For fixed `K>0`, the anisotropic lower bound also survives only under an additional logarithmic stability budget involving the atom strength. Any closure must therefore state the selected packet, its horizontal and absolute-vertical geometry, the finite-order budget when relevant, and the source information controlling the exterior remainder.
+The live theorem is now sharply source-specific. Improve the rightmost height/amplitude transfer, prove an `O(log T)` or otherwise affordable **effective** mode count, obtain a stronger signed-tail estimate, or replace the finite-core splice by infinite-packet observability. Zero density has already been spent where it is quantitatively productive: on the weighted exterior tail.
+
+## Keep atom extraction, finite-packet visibility, source-weighted tail suppression and retained-core complexity separate
+
+RE-130 prices the size of an extracted atom. RE-139 makes every finite rightmost-anchored packet visible without a horizontal-spread penalty. RE-141 shows that source sparsity at high ordinate can strongly suppress the omitted tail even though the same zero-density estimate does not solve the Turán cardinality term. RE-140--RE-141 leave the rightmost amplitude transfer and effective retained complexity as independent costs.
+
+These are different currencies. Failure of the full-packet certificate does not imply actual cancellation; it says the guaranteed core floor is below the available tail envelope. Any closing argument must state which zeros enter the core, how the rightmost anchor is selected, how many modes are paid for, what amplitude transfer is available, and whether exterior control uses density-weighted absolute mass or signed phase cancellation.
 
 ## Keep the exact binary tie local
 

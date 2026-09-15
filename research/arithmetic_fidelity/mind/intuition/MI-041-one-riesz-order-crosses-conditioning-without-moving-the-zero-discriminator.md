@@ -1,6 +1,6 @@
-# MI-041 — Fixed positive Riesz order crosses the critical conditioning threshold, while endpoint regularity depends on topology and source scale
+# MI-041 — Positive Riesz order crosses the critical regularity threshold, but removing the smoothing remains endpoint-sized
 
-**Evidence level:** exact/literature-derived boundary statement from [AF-352](../../findings/AF-352-every-positive-riesz-order-crosses-the-critical-boundary-conditioning-threshold.md), quantitatively sharpened by [AF-353](../../findings/AF-353-riesz-endpoint-conditioning-cost-diverges-quadratically-in-absolute-zero-budget.md), [AF-354](../../findings/AF-354-fast-vanishing-riesz-order-inherits-endpoint-oscillation.md), [AF-355](../../findings/AF-355-rh-cancellation-strengthens-moving-riesz-endpoint-obstruction.md), [AF-356](../../findings/AF-356-riesz-endpoint-is-b2-stable-but-uniformly-ill-conditioned.md), and [AF-357](../../findings/AF-357-riesz-beta-kernel-exposes-exponential-endpoint-scale-and-envelope-sharpness.md)
+**Evidence level:** exact/literature-derived boundary statement from [AF-352](../../findings/AF-352-every-positive-riesz-order-crosses-the-critical-boundary-conditioning-threshold.md), quantitatively sharpened by [AF-353](../../findings/AF-353-riesz-endpoint-conditioning-cost-diverges-quadratically-in-absolute-zero-budget.md) through [AF-358](../../findings/AF-358-riesz-smoothing-crosses-half-derivative-threshold-but-endpoint-difference-does-not.md)
 
 For fixed real `delta>0`, the Riesz profile
 
@@ -10,38 +10,28 @@ has the exact qualitative transition
 
 `RH <=> R_delta[Lambda-1](X)=O_delta(sqrt(X))`,
 
-whereas `delta=0` cannot satisfy the same bound because `psi(X)-X=Omega_±(sqrt(X) log log log X)`. The Mellin multiplier `B(rho,delta+1)` decays like `Gamma(1+delta)|gamma|^(-1-delta)` on the critical line, so every fixed positive order crosses the absolute-summability threshold without moving the off-critical singularity discriminator.
+whereas `delta=0` cannot satisfy the same bound. On the critical line the Mellin coefficient `B(rho,1+delta)` decays like `Gamma(1+delta)|gamma|^(-1-delta)`, so every fixed positive order improves high-frequency regularity without moving the off-critical singularity discriminator.
 
-The endpoint is singular in two different extremal senses. AF-353 gives the absolute zero-mode budget
+AF-358 makes the regularity gain exact. Under RH, for the zero-spectrum weighted Fourier--Besicovitch scale,
 
-`A_+(delta)=1/(2*pi*delta^2) - (log(2*pi)+gamma_E)/(2*pi*delta) + O(1)`,
+`||E_delta||_(H^s_(B,zeta)) < infinity  <=>  s < 1/2 + delta`.
 
-while the cancellation-aware physical norm `K(delta)=sup X^(-1/2)|R_delta[Lambda-1](X)|` also diverges as `delta->0+` under RH but need not have the same rate.
+Thus a fixed positive order buys exactly `delta` derivatives on the zeta-zero spectrum. Since `s>1/2` is enough, by Riemann--von Mangoldt plus Cauchy--Schwarz, to make the zero coefficients absolutely summable, every fixed `delta>0` crosses the ordinary uniform-convergence gate.
 
-AF-354 and AF-355 show that a moving order cannot be treated by plugging `delta=delta(X)` into the fixed-parameter theorem. On the half-integer mesh `X_N=N+1/2`, the unconditional source comparison is
+The singular limit is different. For every fixed `delta>0`,
 
-`|R_delta(X_N)-R_0(X_N)| << delta X_N`.
+`||E_delta-E_0||_(H^s_(B,zeta)) < infinity  <=>  s < 1/2`,
 
-Hence orders with `delta_N sqrt(N)/logloglog(N)->0` inherit the Hardy--Littlewood endpoint oscillation and cannot be `O(sqrt(N))`; in particular every power `N^-a` with `a>=1/2` fails.
+and for every fixed `s<1/2`,
 
-Under RH, Abel summation retains cancellation and improves the comparison to
+`||E_delta-E_0||_(H^s_(B,zeta)) = O_s(delta)` as `delta->0+`.
 
-`|R_delta(X_N)-R_0(X_N)| << sqrt(X_N) log^2(2X_N) min(1, delta log(2X_N))`.
+So increasing the quadratic Sobolev weight does not repair AF-356's topology split. The smoothed profile itself crosses the half-derivative threshold, but the operation of removing the smoothing leaves an endpoint-sized high-frequency tail and never reaches the `s>1/2` absolute-summability region. The obstruction is therefore not merely that ordinary `B^2` was too weak.
 
-Therefore, if `delta_N log^3(N)/logloglog(N)->0`, the moving profile still has `Omega_±(sqrt(N) logloglog(N))`. This rules out **every polynomially vanishing order** `delta_N=N^-a`, `a>0`, on the RH side. AF-355 also forces a subsequential lower rate `K(delta_j) >> log log(1/delta_j)`.
+AF-354--AF-355 show the same singularity in the moving physical profile: sufficiently fast `delta(X)->0` inherits the Hardy--Littlewood endpoint oscillation, and under RH every polynomially vanishing order fails the sharp `O(sqrt X)` profile. AF-356 shows that this can coexist with `B^2`-Lipschitz continuity and limiting-law convergence. AF-357 then identifies the physical resolution hidden in the parameter: the Beta kernel samples relative endpoint lags `exp(-Theta(1/delta))`, and the `min(1,delta log X)` endpoint modulus is sharp for arguments using only a scalar partial-sum envelope plus pointwise jump control.
 
-AF-356 shows that this singularity is not visible in every natural topology. Under RH, in logarithmic coordinates `E_delta(y)=e^(-y/2)R_delta(e^y)`, the critical-zero Fourier coefficients satisfy a square-summable perturbation law giving
+The spectral and physical descriptions now match. For small `delta`, the smoothed coefficient is endpoint-like through a huge frequency range and only gains the extra `gamma^(-delta)` damping beyond a moving scale of exponential type in `1/delta`; in physical space the kernel likewise reaches exponentially thin endpoint shells. The singular limit is therefore a **moving-bandwidth problem**.
 
-`||E_delta-E_0||_(B^2)=O(delta)`.
+The reusable proof obligation is narrow: a uniform moving-order theorem must exploit information absent from monotone quadratic zero-mode energies and scalar source envelopes. Candidate resources include phase cancellation, maximal/tail control, signed short-interval coupling, endpoint-to-past correlation or another source-native cross-scale constraint. Merely adding finitely many frequency weights to the same quadratic energy cannot cross the endpoint comparison barrier.
 
-The associated limiting distributions are likewise Lipschitz in bounded-Lipschitz distance, `d_BL(mu_delta,mu_0)=O(delta)`. Thus the same endpoint is **mean-square stable while uniformly ill-conditioned**: ordinary second-moment spectral energy and limiting-law convergence can remain regular even as the sharp supremum norm diverges and moving schedules inherit rare endpoint excursions.
-
-AF-357 identifies the physical resolution hidden inside `delta`. The normalized Riesz operator is a one-sided Beta average with `W_delta~Beta(delta,3/2)`, and
-
-`-delta log W_delta => Exp(1)`.
-
-Hence a fixed fraction of the kernel mass samples relative endpoint lags `w=exp(-Theta(1/delta))`; the smoothing order is not itself the physical lag. The same finding computes the exact `l^infinity` operator norm of the Riesz-to-endpoint difference and shows it has order `min(1,delta log X)`. Even adding the individual jump bound leaves the same order for the RH-calibrated source envelope. So the AF-355 logarithm is not merely an artifact of loose Abel summation: it is sharp for every argument whose arithmetic input is only a scalar partial-sum envelope plus pointwise jump size.
-
-The reusable point is therefore threefold. Crossing a fixed-parameter summability threshold, controlling a moving family, and controlling the endpoint in the topology actually consumed by the theorem are different problems. In addition, the formal parameter must be translated to the source resolution it probes: here the relevant hierarchy is exponentially thin in `1/delta`. A stronger moving theorem must use arithmetic coupling across those shells — such as signed short-interval control, maximal/tail information, endpoint-to-past correlation, or zero-phase structure — rather than another scalar envelope or second-moment estimate.
-
-**Boundary.** No moving-order RH criterion is proved. The region `delta_N` comparable to or larger than `logloglog(N)/log^3(N)` remains open to these arguments, and the true growth of `K(delta)` is still unknown. The `delta^-2` law is the triangle-inequality zero-mode budget, not the optimal cancellation-aware norm; `B^2` continuity is not pointwise or uniform control; and AF-357's sharpness examples are abstract coefficient profiles, not alternative prime systems. They prove insufficiency of the declared scalar source resources, not impossibility of stronger arithmetic cross-scale estimates.
+**Boundary.** AF-358 is conditional on RH and concerns the nontrivial-zero Fourier profile. The half-derivative obstruction rules out the ordinary weighted-`ell^2` route to uniform endpoint comparison; it does not rule out phase-sensitive, nonlinear, maximal or arithmetic-specific estimates. No moving-order RH criterion is proved, and the true growth of the cancellation-aware norm `K(delta)` remains unknown.
