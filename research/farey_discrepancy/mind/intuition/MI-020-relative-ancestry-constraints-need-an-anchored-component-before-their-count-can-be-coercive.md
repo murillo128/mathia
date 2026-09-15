@@ -1,0 +1,13 @@
+# MI-020 — Relative ancestry constraints need an anchored component before their count can be coercive
+
+**Evidence level:** exact obstruction from [FD-145](../../findings/FD-145-rank-truncated-ancestry-defects-have-an-exact-component-orientation-gauge.md), sharpening the sublinear observation-budget obstruction [FD-144](../../findings/FD-144-min-wise-prime-selectors-defeat-sublinear-rank-ancestry-observation-budgets.md).
+
+Write a squarefree coefficient field as `a_n=mu(n)b(n)`. On a visible ancestry edge `n -> pn`, a vanishing relative defect is exactly the equation `b(pn)=b(n)`. The observations therefore determine only relative orientation inside each connected component of the visible ancestry graph. A component not connected to any coefficient whose Möbius orientation is fixed has an exact `Z_2` gauge: flipping every `b` in that component preserves every visible relative equation.
+
+FD-145 makes the obstruction concrete with a rank wall. Choose `b(n)=+1` below a fixed prime-factor rank and `b(n)=-1` above it. Once the observation window sees only parents beyond that wall, every visible ancestry defect is identically zero, regardless of the number, weights, or resolution of the tests, while every observed coefficient has the opposite Möbius orientation. This is stronger than an underdetermined finite test count: the whole visible component can satisfy all relative constraints exactly and still carry the wrong absolute source sign.
+
+Hence ancestry information has two logically ordered currencies. **First establish anchor connectivity; only then price the number and precision of relative tests.** FD-144's `o(r_T)` common-source lower bound remains relevant after anchoring, but no amount of additional relative testing inside an unanchored component repairs the missing orientation.
+
+The same audit applies to proposed nonlocal variants. Direct observation of one anchored coefficient, a path of visible ancestry edges to the finite Möbius seed, or a genuinely nonlocal Farey/Fourier observable may remove the gauge, but that removal must be proved in the actual observation graph rather than inferred from test count or coefficient coverage.
+
+**Boundary.** FD-145 is an exact coefficient-side obstruction for rank-truncated relative ancestry defects. It does not rule out a destination-side Fourier/Farey coercivity theorem, an observable carrying absolute orientation, or an anchored ancestry model with sufficiently many source-native tests. It says only that relative equations on a disconnected visible component cannot determine its absolute Möbius orientation.

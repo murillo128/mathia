@@ -4,7 +4,7 @@ This file holds the current mathematical questions suggested by the durable robi
 
 ## Price one-sided near-left cancellation by reciprocal-scale radius and compare it with the exterior budget
 
-**Linked intuitions:** `MI-001-robin-failure-requires-self-tangent-half-mass-event-gaps` through `MI-029-reciprocal-box-visibility-decays-at-most-exponentially-in-scaled-radius`.
+**Linked intuitions:** `MI-001-robin-failure-requires-self-tangent-half-mass-event-gaps` through `MI-030-scale-maximal-anchoring-converts-rightward-horizontal-advantage-into-an-exponential-shell-budget`.
 
 RE-112--RE-138 reduce the attained finite-edge branch to a strong atom plus reciprocal-scale cancellation geometry. RE-139--RE-142 show that rightmost-anchored Turán visibility can lose an unusable transfer factor even under strong upper source envelopes. RE-143 removes that transfer by anchoring at the original algebraically strong atom and applying Turán's First Main Theorem only to zeros on or to its right.
 

@@ -4,7 +4,7 @@ This file holds the current mathematical questions suggested by the durable Fare
 
 ## Establish anchor connectivity before treating ancestry test count as coercive
 
-**Linked intuitions:** `MI-001-cumulative-farey-discrepancy-is-mertens-energy` through `MI-019-sub-root-rank-observation-budgets-can-remain-uniformly-blind-to-one-common-source-wall`.
+**Linked intuitions:** `MI-001-cumulative-farey-discrepancy-is-mertens-energy` through `MI-020-relative-ancestry-constraints-need-an-anchored-component-before-their-count-can-be-coercive`.
 
 FD-117--FD-144 separate the reversible Farey skeleton, common-source escape, finite-information blindness and the opposite source-reconstruction boundary. FD-144 shows that arbitrary source-independent normalized ancestry tests remain noncoercive throughout every sublinear-rank budget `L_T=o(r_T)`.
 

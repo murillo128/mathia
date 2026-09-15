@@ -1,0 +1,13 @@
+# MI-022 — Cumulative-intensity normalization removes a specified marginal but in-sample flattening erases the geometry
+
+**Evidence level:** exact probability-integral-transform and degeneracy statements from [VIS-239](../../findings/VIS-239-cumulative-intensity-gauge-uniformizes-specified-iid-intensity.md), extending the fixed-count tent calibration [VIS-238](../../findings/VIS-238-fixed-count-tent-calibration-removes-poissonization-variance.md).
+
+For a fixed-count iid ordered-point model with a predeclared continuous CDF `F`, the cumulative-intensity coordinates `U_i=F(X_i)` are exactly iid uniform. The origin-invariant tent collision statistic can therefore be calibrated with the finite-sample fixed-count uniform law after this coordinate change. A specified one-point nonuniform intensity is not a new source of residual geometry; it is an exact coordinate nuisance.
+
+The same operation becomes invalid when `F` is estimated from the confirmation sample itself. The empirical CDF maps the order statistics to their deterministic rank lattice `i/m`. After that transform every tent separation is a function of rank alone, so the spacing statistic is deterministic conditional on `m`. The normalization has not merely reduced nuisance variance: it has conditioned away the geometry being tested.
+
+The practical distinction is exact. **Externally specified or independently estimated intensity can be quotientable; same-sample empirical-rank normalization can be a sufficient-statistic collapse.** Any stronger critical prime-phase null must keep those cases separate and carry estimation uncertainty when the intensity is learned rather than known.
+
+Together with VIS-237 and VIS-238, the scalar critical calibration now has three ordered gates: quotient arbitrary grid origin, condition on the observed point count, then quotient only a one-point intensity that is fixed independently of the tested spacing data. What remains after those gates is pair/higher-order dependence, gap geometry, and model-estimation uncertainty. A residual is not source-specific until it survives a representation-matched model for those remaining degrees of freedom.
+
+**Boundary.** VIS-239 does not establish that prime coordinates are iid, identify their correct intensity, or remove genuine dependence. Cross-fitting or held-out intensity estimation is not exact uniformization unless its estimation error is accounted for. The result only classifies specified one-point intensity as an exact nuisance and same-sample empirical-CDF flattening as a degenerate confirmation procedure for this geometry.
