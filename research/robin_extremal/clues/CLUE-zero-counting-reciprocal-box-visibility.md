@@ -1,7 +1,7 @@
 ---
 id: CLUE-robin-extremal-zero-counting-reciprocal-box-visibility
 type: research-clue
-status: proposed
+status: accepted
 origin: master-researcher
 target_line: robin_extremal
 based_on:
@@ -9,6 +9,7 @@ based_on:
   - research/nyman_beurling/findings/NB-133-zero-count-visibility-and-vinogradov-korobov-depth-still-permit-superpolynomial-annihilator-collapse.md
   - research/robin_extremal/findings/RE-133-growing-reciprocal-clusters-hide-dominant-atoms-on-fixed-relative-windows.md
   - research/robin_extremal/findings/RE-134-bounded-reciprocal-box-packets-have-a-fixed-relative-visibility-floor.md
+  - research/robin_extremal/findings/RE-135-fixed-reciprocal-box-packets-have-a-cardinality-free-visibility-floor.md
 ---
 
 # Can actual-zero geometry keep reciprocal-box visibility quantitative as local complexity grows?
@@ -54,3 +55,11 @@ For this clue only, the Robin Research Watch may inspect exactly `research/nyman
 `RE-133` is now canonical with its strict-subedge normalization made explicit, and its adjacent adversarial review has been closed after persistence of that defense. It still remains a **formal matched control**, not an actual-zeta realization: it shows that arbitrarily sparse one-level counts can coexist with growing reciprocal-cluster hiding, but it does not prove that zeta zeros realize that cluster or supply a Robin/Nyman scale dictionary.
 
 None of these findings proves the Robin/Nyman scale dictionary, a bounded reciprocal-box occupancy theorem for actual zeta zeros, an arrangement-sensitive rate for the Robin visibility floor, cancellation tightness outside the box, or any Robin/RH consequence.
+
+## Research disposition
+
+Accepted and consumed by `RE-135`. The direct zero-counting route is no longer the relevant local bottleneck. `RE-135` proves that, under the Robin coefficient law already used in `RE-134`, **every finite packet contained in a fixed reciprocal box has a visibility floor independent of its cardinality**. After division by the number of atoms, the local packet is an empirical probability measure on a fixed compact set plus a uniform `O(U^-1)` coefficient perturbation. Compactness and analyticity give a cardinality-free complex floor, and the target carrier transfers it to the real Robin packet.
+
+This resolves the clue's local-complexity question more strongly than an occupancy estimate would. The explicit zero count from `NB-132` would in any case allow `O(log U)` atoms in a reciprocal-width window at polynomial height because the endpoint error is `O(log U)`, while `NB-133` shows why such a count is not a generic conditioning theorem. Neither fact is load-bearing after `RE-135`: arbitrary finite occupancy and arbitrary arrangement are allowed inside each fixed scaled box.
+
+The remaining source-specific obstruction is now **exterior reciprocal-scale tightness**. If a full packet hides a dominant atom on a fixed-relative window, then for every fixed `R` an order-`M_K(U)` canceling contribution must remain outside the box `|rho-rho_0|_infty<=R/U`. Thus the next useful theorem is not a sharper local zero count but a bound showing that actual-zeta cancellation mass cannot keep escaping to scaled radii `R(U)->infinity`, or a quantitative lower bound on the cost of such escape. `RE-133` remains the matched control: its hiding clusters necessarily have scaled diameter tending to infinity, exactly the surviving degree of freedom.
