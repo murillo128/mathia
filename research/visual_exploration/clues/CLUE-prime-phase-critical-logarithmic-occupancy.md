@@ -26,6 +26,8 @@ based_on:
   - research/visual_exploration/findings/VIS-243-complement-symmetry-closes-cyclic-overlap-multiplicities.md
   - research/visual_exploration/findings/VIS-244-empirical-gap-concentration-identifies-dirichlet-alpha.md
   - research/visual_exploration/findings/VIS-245-gap-concentration-tent-covariance-beta-moments.md
+  - research/visual_exploration/findings/VIS-246-concentration-conditioning-retains-dirichlet-alpha.md
+  - research/visual_exploration/findings/VIS-247-log-product-conditioning-alpha-free-coarea-law.md
 ---
 
 # Is there prime-specific critical pair geometry after fixed-count dependent-spacing and endpoint-phase calibration?
@@ -40,40 +42,62 @@ The critical coherence-cell branch has progressively quotiented the obvious repr
 
 `C=m sum_i X_i^2-1`,
 
-with exact mean and variance under fixed `alpha`. `VIS-245` now closes the remaining fixed-parameter second-moment cross term: `Cov(C,bar T)` is an explicit finite sum of one-dimensional truncated beta moments through degree four. Consequently the complete mean vector and covariance matrix of `(C,bar T)` are exact for every predeclared symmetric-Dirichlet `alpha`.
+with exact mean and variance under fixed `alpha`. `VIS-245` closes the remaining fixed-parameter second-moment cross term: `Cov(C,bar T)` is an explicit finite sum of one-dimensional truncated beta moments through degree four. Consequently the complete mean vector and covariance matrix of `(C,bar T)` are exact for every predeclared symmetric-Dirichlet `alpha`.
 
-This still does not make a same-sample plug-in test exact. The nonlinear estimator `alpha_hat(C)` and the conditional/full joint law of `bar T` after observing `C` are not determined by the covariance matrix. The live question is therefore whether the frozen prime-coordinate configuration has a residual after that final nuisance-propagation step, rather than after a naive fixed `alpha_hat` substitution.
+`VIS-246` separates nuisance identification from nuisance elimination. Conditioning on the observed concentration `C` does not remove `alpha` when `m>=3`, because a concentration sphere contains configurations with different products and hence different symmetric-Dirichlet likelihood ratios. The exact sufficient coordinate is instead
+
+`Lambda=sum_i log X_i`.
+
+`VIS-247` now makes that route explicit rather than formal. On every regular `Lambda=lambda` level, the conditional gap law is the parameter-free coarea measure
+
+`Z(lambda)^(-1) J(X)^(-1) d sigma_lambda`,
+
+with `J^2=sum_i X_i^(-2)-(1/m)(sum_i X_i^(-1))^2`. It also gives an exact three-gap witness showing that `bar T` can vary on a fixed log-product level. Thus exact same-configuration nuisance removal is available and is not structurally forced to erase the tent statistic.
+
+The live question is no longer whether the nuisance can be removed in principle. It is whether the frozen high-dimensional critical regime admits an accurate conditional calibration under that explicit measure, and whether the prime configuration retains a stable residual after the quotient.
 
 ## Research question
 
-Fix the critical `lambda` family, midpoint-symmetric taper, phase/coherence tolerance, point-coordinate normalization, width rule, endpoint convention, statistic, and dependence model before confirmation. Freeze `alpha` from theory/held-out information, or if the same configuration supplies `C`, carry the fitted nuisance through a valid joint/conditional calibration rather than plugging `alpha_hat(C)` into the fixed-parameter `bar T` law.
+Fix the critical `lambda` family, midpoint-symmetric taper, phase/coherence tolerance, point-coordinate normalization, width rule, endpoint convention, statistic, and dependence model before confirmation.
 
-Under that frozen specification, does the prime-coordinate `bar T` exhibit a stable residual relative to the symmetric-Dirichlet calibration across increasing scales? If endpoints are declared physical signal rather than nuisance, use the post-cut statistic and add the exact endpoint channel from `VIS-241` instead of switching conventions after observing the result.
+For a same-configuration symmetric-Dirichlet calibration, condition on the observed log-product `Lambda` using the exact parameter-free surface law of `VIS-247`; do not estimate `alpha` from the same gaps and then substitute a fixed-parameter null. Under that frozen conditioning rule, does the prime-coordinate `bar T` exhibit a stable residual across increasing scales?
+
+If theory or genuinely held-out information supplies `alpha`, the fixed-parameter route remains valid as a separate predeclared calibration. If endpoints are declared physical signal rather than nuisance, use the post-cut statistic and add the exact endpoint channel from `VIS-241` instead of switching conventions after observing the result.
 
 If a residual survives, can it also survive a stronger predeclared spacing control and then be translated into a lower bound, obstruction, or structural constraint for the signed prime-phase quadratic energy rather than remaining a generic point-process anomaly?
 
 ## Why it may matter
 
-The branch has removed forced occupancy, count fluctuation, specified one-point intensity, arbitrary grid origin, support-mismatched label randomization, a nontrivial spacing-dependence axis, arbitrary endpoint cut phase, cyclic-overlap bookkeeping, and the missing covariance between the nuisance-identification statistic and confirmation statistic.
+The branch has removed forced occupancy, count fluctuation, specified one-point intensity, arbitrary grid origin, support-mismatched label randomization, a nontrivial spacing-dependence axis, arbitrary endpoint cut phase, cyclic-overlap bookkeeping, and the same-sample Dirichlet nuisance parameter itself.
 
-A residual that disappears after honest nuisance propagation is generic spacing heterogeneity, not prime-specific structure. A residual that survives is still far below an RH result, but it would have passed a materially stronger representation-matched null and would justify asking whether the surviving statistic couples to the signed arithmetic kernel rather than merely to local point geometry.
+The log-product quotient is stronger than a moment correction: within the symmetric one-parameter Dirichlet family it removes `alpha` exactly from the conditional law. `VIS-247` also shows that this quotient need not collapse `bar T`, so a surviving residual would no longer be explainable merely as uncertainty in the fitted Dirichlet concentration.
+
+A residual that disappears under the exact conditional law is generic spacing heterogeneity, not prime-specific structure. A residual that survives is still far below an RH result, but it would have passed a materially stronger representation-matched null and would justify asking whether the surviving statistic couples to the signed arithmetic kernel rather than merely to local point geometry.
 
 ## Decisive test
 
-Before examining the confirmation residual, freeze all representation choices and the `alpha` rule. Evaluate the exact fixed-parameter center/variance calibration from `VIS-240`--`VIS-243`; at `alpha=1`, require agreement with the closed polynomial tent variance from `VIS-242` as an implementation audit.
+Before examining the confirmation residual, freeze all representation choices and the nuisance rule. For the same-configuration route, compute or independently validate the conditional distribution of the predeclared `bar T` under
 
-If `alpha` is supplied by theory or genuinely held-out data, propagate whatever uncertainty remains and test `bar T` under that frozen rule. If `alpha` is estimated from the same cyclic gap vector through `C`, use `VIS-244`--`VIS-245` to audit the nuisance channel and cross-covariance, but do **not** treat those second moments as the final conditional calibration. Derive the conditional/full joint law needed for `bar T | C`, or independently validate a procedure that carries the fitted `alpha_hat(C)` through the null with errors materially below the proposed residual scale.
+`P(dX | Lambda=lambda) proportional to J(X)^(-1) d sigma_lambda(X)`
 
-Compare the predeclared prime statistic against this calibration across increasing scales without retuning `alpha`, `ell`, the endpoint convention, or the statistic. Kill the candidate if the anomaly disappears under the frozen dependence calibration; if it depends on Poisson count noise, same-sample intensity flattening, random-cut phase declared to be nuisance, naive plug-in nuisance fitting, or post-hoc tuning; if significance is unstable across the predeclared scale family; or if a stronger representation-matched spacing control reproduces the effect.
+at the observed `m`, `u`, and `lambda`, with numerical/integration/sampling error materially below the proposed residual scale. Audit any conditional sampler against the exact simplex constraint, exact log-product constraint, permutation/cyclic symmetries, and low-dimensional cases where deterministic integration is feasible. Do not replace the `J^-1` weight by uniform surface sampling.
+
+Use the differential criterion from `VIS-247` to verify that the actual conditioned regime is not locally degenerate for `bar T`; the three-gap witness proves only that degeneracy is not automatic. Freeze all integration/sampling choices before looking at the prime residual.
+
+If `alpha` is instead supplied by theory or genuinely held-out data, use the exact fixed-parameter center/variance calibration from `VIS-240`--`VIS-243` and propagate whatever uncertainty remains. The concentration statistic `C` from `VIS-244`--`VIS-245` remains useful for model diagnostics but is not an exact same-sample nuisance quotient.
+
+Compare the predeclared prime statistic against the chosen calibration across increasing scales without retuning `alpha`, `ell`, `Lambda` conditioning rules, endpoint convention, or the statistic. Kill the candidate if the anomaly disappears under the frozen dependence calibration; if it depends on Poisson count noise, same-sample intensity flattening, random-cut phase declared to be nuisance, incorrect uniform sampling on a `Lambda` level, same-sample plug-in fitting, or post-hoc tuning; if significance is unstable across the predeclared scale family; or if a stronger representation-matched spacing control reproduces the effect.
 
 Only after a stable residual survives should a new mathematical thread translate it back through the signed prime-phase kernel and audit equivalent formulations in logarithmic prime gaps, short-interval counts, prime-pair/higher-correlation statistics, and critical Dirichlet-polynomial theory.
 
 ## Evidence boundary
 
-`VIS-237`--`VIS-241` establish the representation quotients and the symmetric-Dirichlet dependence family. `VIS-242`--`VIS-243` establish the exact fixed-parameter tent variance reduction and deterministic overlap coefficients. `VIS-244` establishes the concentration-based `alpha` identification channel and its variance. `VIS-245` establishes the exact fixed-parameter cross-covariance between that concentration and `bar T`, completing the covariance matrix of `(C,bar T)`.
+`VIS-237`--`VIS-241` establish the representation quotients and the symmetric-Dirichlet dependence family. `VIS-242`--`VIS-243` establish the exact fixed-parameter tent variance reduction and deterministic overlap coefficients. `VIS-244` establishes the concentration-based `alpha` identification channel and its variance. `VIS-245` establishes the exact fixed-parameter cross-covariance between that concentration and `bar T`.
 
-None of these findings proves that the one-parameter Dirichlet family is a faithful final model of prime gaps, supplies the exact conditional/full joint law required for same-configuration nuisance fitting, or reports a prime residual. In particular, covariance information alone does not make the nonlinear plug-in statistic calibrated. No cited result establishes prime-specific critical separation or any RH consequence.
+`VIS-246` proves that concentration conditioning retains `alpha` for `m>=3` and identifies the log-product as an exact sufficient statistic. `VIS-247` derives the explicit alpha-free coarea law on log-product levels, gives a local gradient criterion for conditioned variation, and proves by an exact three-gap example that `bar T` is not intrinsically collapsed by this quotient.
+
+None of these findings supplies the full high-dimensional conditional law at the actual prime parameters, validates a conditional numerical sampler, proves that the one-parameter Dirichlet family is a faithful final model of prime gaps, or reports a prime residual. No cited result establishes prime-specific critical separation or any RH consequence.
 
 ## Research disposition
 
-The clue remains `accepted`. Fixed-parameter first and second moments are now explicit, including the same-sample nuisance cross term. The remaining same-configuration gate is the conditional/full joint calibration needed to turn observed `C` into a valid null for `bar T`; alternatively, held-out/theoretical `alpha` bypasses that gate and leaves the actual frozen confirmation test as the next step.
+The clue remains `accepted`. The same-configuration nuisance ambiguity is now structurally resolved: conditioning on `Lambda=sum_i log X_i` removes the symmetric-Dirichlet `alpha` exactly, with an explicit nonuniform coarea measure, and this quotient need not make `bar T` constant. The remaining gate is to evaluate that frozen conditional law accurately in the actual high-dimensional critical regime and test whether the prime statistic has a stable residual; held-out/theoretical `alpha` remains the independent alternative.
