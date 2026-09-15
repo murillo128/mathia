@@ -4,26 +4,26 @@ This file holds the current mathematical questions suggested by the durable Fare
 
 ## Quantify active-scale Möbius breadth without importing the Mertens target
 
-**Linked intuitions:** `MI-001-cumulative-farey-discrepancy-is-mertens-energy` through `MI-014-pointwise-primewise-decay-misses-a-moving-central-rank-boundary`.
+**Linked intuitions:** `MI-001-cumulative-farey-discrepancy-is-mertens-energy` through `MI-015-local-ancestry-has-an-exact-rough-core-rigidity-threshold`.
 
 FD-117--FD-120 reduce same-horizon Farey information to the reversible floor-quotient skeleton. FD-121--FD-124 price common-source horizon coherence, while FD-125--FD-128 construct sparse multiplicative escapes. FD-129 marks the opposite circularity boundary: complete growing prime-prefix ancestry plus a stage-uniform critical envelope reconstructs the physical Möbius prefix and imports the Mertens target.
 
-FD-130--FD-133 progressively close mean-ancestry repairs. Global mean ancestry can hide a fixed-rank cut; rankwise means can still dilute a finite-prime coordinate cut; convergence for every fixed prime misses a moving central-rank boundary; and the same boundary survives every fixed polynomial active-prime family.
+FD-130--FD-134 progressively close mean-ancestry repairs. Global mean ancestry can hide a fixed-rank cut; rankwise means can dilute a finite-prime coordinate cut; convergence for every fixed prime misses a moving central-rank boundary; and the same boundary survives broad explicit `H^(1-o(1))` active-prime families while the displaced strip remains small relative to one squarefree Erdős--Kac standard deviation.
 
-FD-134 now pushes that same one-source obstruction into an explicit almost-full-prime regime. For `P(H)<H`, `Y(H)=H/P(H)`, the positive-density wrong source still satisfies uniform primewise mean ancestry decay for every prime `p<=P(H)` whenever `Y(H)->infinity` and
+FD-135 closes the obvious local-`L^infinity` repair in the opposite direction. In the squarefree unit-sign class, local ancestry defects are only `0` or `2`, so any bound below `2` is exact ancestry. With a rank-`K` Möbius anchor, exact ancestry through primes `p<=Y` decomposes the source into `Y`-rough-core components and reconstructs the whole horizon exactly iff
 
-`1 + log(log H/log Y(H)) = o(sqrt(log log Y(H)))`.
+`Q_(K+1)(Y)=prod_(j=1)^(K+1) p_j^+(Y)>H`.
 
-Equivalently, for `P(H)=H^(1-delta(H))`, the exponent deficit may tend to zero substantially faster than any fixed-power statement sees; for example `delta(H)=exp(-(log log H)^(1/3))` is still invisible. The present proof mechanism only reaches its natural boundary when the displaced central-rank strip becomes comparable with one squarefree Erdős--Kac standard deviation.
+In particular `Y^(K+1)>=H` already forces reconstruction. Below the threshold, flipping the first unanchored rough-core component gives an exact counterexample.
 
-The active source law must therefore be noncircular and visible at the **active scale in both multiplicative rank and prime direction**. Even almost-full prime breadth is not enough while each coordinate is normalized by a mean over ranks that lets the defect concentrate in a vanishing central layer.
+The active source law must therefore live between two failures: normalized mean control is too dilute at a moving multiplicative-rank interface, while fully local control becomes exact component rigidity and can reconstruct the source at a polynomial cutoff. The useful theorem must be noncircular and visible at the active scale in both rank and prime direction without simply encoding the physical prefix.
 
-## Locate the first scale-coupled multiplicative law that breaks all known dilution mechanisms
+## Locate the first scale-coupled multiplicative law between mean dilution and exact reconstruction
 
-The next candidate must prevent stagewise endpoint assignment from retaining a large free core without reconstructing the full physical prefix. FD-131 rules out rank-sensitive averaging over an expanding coordinate set, while FD-132--FD-134 rule out primewise mean control from fixed primes through a broad explicit `H^(1-o(1))` family.
+FD-131--FD-134 rule out increasingly broad primewise mean controls; FD-135 shows that edgewise `L^infinity` control is not a soft interpolation in the unit-sign class. The surviving currencies are genuinely intermediate: a joint rank-prime norm whose normalization gives nonvanishing weight to the moving central strip, a mesoscopic/local-density condition weaker than edgewise exactness, a growing anchor below the rough-core reconstruction threshold, or direct Fourier-skeleton coercivity that bypasses coefficient recovery.
 
-The surviving currencies are genuinely joint or local: a norm that simultaneously resolves multiplicative rank and prime direction, local/`L^infinity` ancestry control, a weighting that gives nonvanishing mass to an `o(sqrt(log log X))` central rank strip, an anchor depth that grows with scale, prime cutoffs beyond the FD-134 condition, or a direct Fourier-skeleton coercivity estimate that bypasses coefficient recovery. Any candidate must be tested against both the fixed-subcube witness of FD-131 and the moving-central-rank witness of FD-132--FD-134. Conversely, exact ancestry in a complete growing prime prefix risks returning to the circular reconstruction boundary of FD-129.
+Any candidate must be tested on both sides. It must kill the moving-central-rank witnesses of FD-132--FD-134, but it must also be audited against FD-135 to ensure the hypotheses have not silently crossed into full source reconstruction.
 
-## Keep information equivalence, horizon entropy, rank visibility, direction visibility, quantifier order and target recovery separate
+## Keep information equivalence, horizon entropy, rank visibility, direction visibility, local rigidity and target recovery separate
 
-FD-117--FD-120 classify information, FD-121--FD-124 price common-source horizon coherence, FD-125--FD-128 identify sparse multiplicative escape, FD-129 identifies circular reconstruction, FD-130 exposes dilution between ranks, FD-131 exposes dilution within ranks across prime directions, and FD-132--FD-134 expose the moving-rank loophole from fixed-prime convergence through almost-full primewise uniformity. “More arithmetic breadth” is not a single resource: a coercive law must specify which coordinates and rank layers remain visible after normalization and how much source freedom remains before the condition simply reconstructs Möbius.
+FD-117--FD-120 classify information, FD-121--FD-124 price common-source horizon coherence, FD-125--FD-128 identify sparse multiplicative escape, FD-129 identifies circular reconstruction, FD-130--FD-134 expose successive averaging/dilution loopholes, and FD-135 identifies the exact rough-core threshold where local ancestry plus a finite-rank anchor becomes source reconstruction. “More arithmetic breadth” is not a single resource: a coercive law must specify which coordinates and rank layers remain visible after normalization, how local the constraint is, and how much source freedom remains before the condition simply recovers Möbius.

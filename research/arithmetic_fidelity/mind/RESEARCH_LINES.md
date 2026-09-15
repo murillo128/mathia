@@ -14,13 +14,13 @@ AF-347--AF-349 locate the Riesz loss precisely. Sufficiently high fixed-order Ri
 
 AF-350 calibrates the weaker terminal quotient. If two fixed-order Riesz profiles differ by `O(X^theta)`, then the difference of their Dirichlet transforms is holomorphic on `Re s>theta`; every meromorphic principal part strictly to the right of the error line survives. For `Lambda-1`, an `O(X^theta)` Riesz bound therefore gives a zero-free half-plane `Re s>theta`.
 
-AF-351 now resolves the critical conditioning side of this model. For every fixed integer `r>=1`,
+AF-351 established the critical conditioning transition for positive integer orders. AF-352 removes the discretization artifact. For every fixed real `delta>0`,
 
-`RH <=> R_r[Lambda-1](X)=O_r(sqrt(X))`,
+`RH <=> R_delta[Lambda-1](X)=O_delta(sqrt(X))`,
 
-while order zero cannot satisfy the same sharp boundary norm because `psi(X)-X` has classical `Omega_pm(sqrt(X) log log log X)` oscillation. The mechanism is exact: one Riesz order changes the critical zero amplitudes from the non-absolutely-summable `1/|gamma|` scale to `1/|gamma|^2`, without moving the zero frequencies or erasing the off-critical singularity discriminator.
+while the unsmoothed `delta=0` profile cannot satisfy the same sharp boundary norm because `psi(X)-X` has classical `Omega_pm(sqrt(X) log log log X)` oscillation. The beta multiplier on a critical zero has size `|gamma|^(-1-delta)`, so **every** positive decay gain crosses the absolute-summability threshold against `N(T)=O(T log T)` without moving the zero frequencies or erasing the off-critical Mellin singularity discriminator.
 
-The live theorem is therefore not to preserve maximal source detail but to derive a **target-scale conditioning gain from admissible source structure**. AF-351 shows that a transform may improve the endpoint norm by damping nuisance accumulation faster than the target discriminator. What remains hard is proving the critical bound for the physical source without importing RH or the desired zero-free region through the hypothesis.
+The live theorem is therefore not to preserve maximal source detail but to derive a **target-scale conditioning gain from admissible source structure**. AF-352 shows that the relevant threshold is set by target-mode density versus multiplier decay, not nominal transform order. What remains hard is proving the critical bound for the physical source without importing RH or the desired zero-free region through the hypothesis, and understanding whether any source-native estimate has quantitative control as the smoothing order approaches the open endpoint `delta=0`.
 
 ## Price the actual target metric before calling a representation compressed
 
@@ -28,7 +28,7 @@ The live theorem is therefore not to preserve maximal source detail but to deriv
 
 Localization, contraction, lifting and smoothing can move or attenuate information without making it cheaper in the metric used by the final theorem. AF-349 makes this metric dependence exact: the full Riesz map is an isometry up to `r!` from local coefficient `ell^1` into derivative variation, yet there is no scale-uniform inverse modulus from raw `C^0` profile amplitude to that coefficient distance on the perfect-power controls.
 
-AF-350 shows that failure of source recovery in `C^0` does not imply failure of every target discriminator. AF-351 adds the converse warning: improving conditioning need not imply discriminator loss. One smoothing order is enough to make the critical zero series absolutely summable while preserving the same singularity locations.
+AF-350 shows that failure of source recovery in `C^0` does not imply failure of every target discriminator. AF-352 adds the converse warning: arbitrarily weak fixed positive smoothing can improve endpoint conditioning without discriminator loss. The transition occurs at the open endpoint `delta=0`, not at a positive integer order.
 
 Any claimed compression must therefore name the complete composed map, destination topology, asymptotic scale and discriminator required there. A small transformed residual is not information loss until the destination declares it negligible; an exact inverse in a stronger topology is not endpoint progress if the final theorem retains only a weaker one; and better conditioning is useful only when it suppresses nuisance directions without crossing the target discriminator.
 
@@ -52,4 +52,4 @@ AF-319 closes optimizer transfer once a homogeneous profile cap `Q<=C<3` is assu
 
 ## Keep source complexity, transform fidelity and terminal loss as different currencies
 
-Observation order, sign density, gap occupancy, concentration profile, raw locality, smoothing order, inverse conditioning, singularity class and destination slack are provably different resources. AF-349--AF-351 now separate four levels in one example: the complete Riesz representation preserves coefficient distance exactly in a source-matched derivative-variation norm; raw amplitude can collapse distinct sources; the quotient by `O(X^theta)` still preserves Dirichlet principal parts in `Re s>theta`; and one positive Riesz order can improve critical boundary conditioning without removing the zero discriminator. Future work must price `source -> representation -> terminal observer` in the **actual terminal metric, asymptotic scale and discriminator**, not infer loss or usefulness from source richness, transformed amplitude, intermediate invertibility or smoothing alone.
+Observation order, sign density, gap occupancy, concentration profile, raw locality, smoothing order, inverse conditioning, singularity class and destination slack are provably different resources. AF-349--AF-352 now separate four levels in one example: the complete Riesz representation preserves coefficient distance exactly in a source-matched derivative-variation norm; raw amplitude can collapse distinct sources; the quotient by `O(X^theta)` still preserves Dirichlet principal parts in `Re s>theta`; and every fixed positive real Riesz order can improve critical boundary conditioning without removing the zero discriminator. Future work must price `source -> representation -> terminal observer` in the **actual terminal metric, asymptotic scale and discriminator**, not infer loss or usefulness from source richness, transformed amplitude, intermediate invertibility or smoothing alone.

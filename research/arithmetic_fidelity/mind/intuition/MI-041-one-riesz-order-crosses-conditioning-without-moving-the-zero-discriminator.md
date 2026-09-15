@@ -1,21 +1,25 @@
-# MI-041 — One Riesz order crosses the critical conditioning threshold without moving the zero discriminator
+# MI-041 — Any positive Riesz order crosses the critical conditioning threshold without moving the zero discriminator
 
-**Evidence level:** exact/literature-derived boundary statement from [AF-351](../../findings/AF-351-one-riesz-order-is-the-critical-boundary-conditioning-threshold.md), building on the singularity-fidelity calibration in [AF-350](../../findings/AF-350-riesz-error-exponents-preserve-right-half-plane-dirichlet-singularities.md)
+**Evidence level:** exact/literature-derived boundary statement from [AF-352](../../findings/AF-352-every-positive-riesz-order-crosses-the-critical-boundary-conditioning-threshold.md), refining the integer-order result [AF-351](../../findings/AF-351-one-riesz-order-is-the-critical-boundary-conditioning-threshold.md) and the singularity-fidelity calibration in [AF-350](../../findings/AF-350-riesz-error-exponents-preserve-right-half-plane-dirichlet-singularities.md)
 
-For the Riesz profile
+For fixed real `delta>=0`, let
 
-`R_r[Lambda-1](X)=sum_(n<=X)(Lambda(n)-1)(1-n/X)^r`,
+`R_delta[Lambda-1](X)=sum_(n<=X)(Lambda(n)-1)(1-n/X)^delta`.
 
-AF-351 isolates an exact transition at the sharp `sqrt(X)` boundary. For every fixed integer `r>=1`,
+AF-352 identifies the exact transition at the sharp `sqrt(X)` boundary:
 
-`RH <=> R_r[Lambda-1](X)=O_r(sqrt(X))`,
+`RH <=> R_delta[Lambda-1](X)=O_delta(sqrt(X))` for every fixed `delta>0`,
 
-whereas the unsmoothed case `r=0` cannot satisfy the same bound: the classical Hardy--Littlewood oscillation of `psi(X)-X` exceeds `sqrt(X)` by an unbounded `log log log X` factor along suitable sequences.
+whereas `delta=0` cannot satisfy the same bound because `psi(X)-X=Omega_±(sqrt(X) log log log X)`.
 
-The mechanism is quantitative rather than semantic. On RH the critical zero at height `gamma` enters the order-`r` explicit formula with beta-factor amplitude `B(rho,r+1)=O_r(|gamma|^(-r-1))`. The zero count is `O(T log T)`, so `r=1` is the first integer order for which the critical zero amplitudes are absolutely summable. The frequencies `gamma` themselves are unchanged.
+The mechanism is the Mellin multiplier
 
-This gives a concrete counterexample to the idea that stronger conditioning must cost the target signal. **A transform can suppress the nuisance accumulation that makes the endpoint norm ill-conditioned while preserving the singularity locations that define the discriminator.** AF-350 guarantees the complementary direction: an `O(X^theta)` Riesz error still excludes singularities strictly to the right of `Re s=theta`.
+`B(rho,delta+1)=Gamma(rho)Gamma(delta+1)/Gamma(rho+delta+1)`.
 
-The design rule is therefore not “preserve as much source information as possible.” It is to compare how a transformation attenuates nuisance directions with how it attenuates the exact endpoint discriminator. Here one Riesz factor changes the high-zero tail from the non-absolutely-summable `1/|gamma|` scale to `1/|gamma|^2` while leaving the off-critical singularity obstruction intact.
+On the critical line its size is `O_delta(|gamma|^(-1-delta))`. Since `N(T)=O(T log T)`, every fixed `delta>0` makes the critical-zero coefficient tail absolutely summable; at `delta=0` the `1/|gamma|` endpoint does not. At the same time the beta multiplier is nonzero in `Re s>1/2`, so an `O(sqrt(X))` profile still excludes every off-critical zero through the Mellin singularity argument.
 
-**Boundary.** This is a sharp statement for the fixed finite-order Riesz kernel and the critical `C^0` boundary norm. It does not recover prime support or coefficients, does not say `r=0` loses zero information, and does not make the `O(sqrt(X))` estimate easier: for every fixed `r>=1` that estimate is already RH-equivalent.
+Thus the useful threshold is not “one integer smoothing step” but the interaction between **target-mode density and multiplier decay**. An arbitrarily small fixed positive gain in decay crosses the summability boundary while preserving the singularity locations that define the discriminator.
+
+This gives a concrete counterexample to the idea that better conditioning must cost the target signal: smoothing may suppress nuisance accumulation faster than it suppresses the discriminator. The audit for another kernel is therefore quantitative: determine the relevant mode density, the multiplier decay needed for the endpoint norm, and whether the same multiplier has zeros or quotient identifications at target-relevant singularities.
+
+**Boundary.** `delta` is fixed. No uniform control is claimed as `delta->0+`, no rate for a scale-dependent `delta(X)` is established, and no source recovery follows. For every fixed `delta>0`, proving the critical bound for the physical prime source is already RH-equivalent; the conditioning improvement does not supply the missing arithmetic estimate.
