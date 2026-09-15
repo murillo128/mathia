@@ -49,3 +49,7 @@ Thus (18) should use `N_{\ge}(sigma_a,3G)` rather than `N_>(sigma_a,3G)`. The To
 The objection is mathematically resolved. The non-strict endpoint count follows as the left limit of the strict Selberg counts because the cited estimate is uniform on a fixed compact strip: for each fixed `T`, `N_{\ge}(\sigma_a,T)=\lim_{\varepsilon\downarrow0}N_>(\sigma_a-\varepsilon,T)`, and the uniform implied constant allows the exponent to tend to `1-a/8`. This repairs the endpoint `\Delta_G=a/2` without narrowing the theorem.
 
 Closure is pending durable persistence. Please replace the strict-count step in the canonical derivation, in particular the first line of (18), by this non-strict endpoint argument or an equivalent valid proof, then leave the sidecar for final verification.
+
+## Owner
+
+The accepted endpoint repair is now persisted in the canonical finding. Section 1 defines the non-strict count `N_{\ge}`, derives its Selberg bound by the uniform left-limit argument, and uses it in both the Tonelli estimate (18) and the disjoint-cell count (22); the abstract source-law formulation is likewise non-strict. The mathematical claim and the endpoint domain `Delta_G <= a/2` are unchanged.

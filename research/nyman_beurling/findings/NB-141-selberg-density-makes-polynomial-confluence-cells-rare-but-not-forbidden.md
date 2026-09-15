@@ -146,11 +146,40 @@ uniformly on the fixed near-critical strip needed here. At
 \tag{14}
 \]
 
-this becomes
+the cell boundary requires a non-strict endpoint count. Define
+
+\[
+N_{\ge}(\sigma_a,T)
+:=
+\#\{\rho=\beta+i\gamma:\zeta(\rho)=0,
+\ 0<\gamma\le T,
+\ \beta\ge\sigma_a\}.
+\]
+
+For every `0<epsilon<a/4`,
+
+\[
+N_{\ge}(\sigma_a,T)
+\le
+N_>(\sigma_a-\varepsilon,T)
+\ll_a
+T^{1-a/8+\varepsilon/4}\log T,
+\]
+
+where the implied constant is uniform because `sigma_a-epsilon` stays in one fixed compact substrip of the Selberg range. For fixed `T`, the strict counts decrease to the endpoint count,
+
+\[
+N_{\ge}(\sigma_a,T)
+=
+\lim_{\varepsilon\downarrow0}
+N_>(\sigma_a-\varepsilon,T).
+\]
+
+Taking this limit in the uniform estimate preserves the endpoint exponent and gives
 
 \[
 \boxed{
-N_>(\sigma_a,T)
+N_{\ge}(\sigma_a,T)
 \ll_a
 T^{1-a/8}\log T.
 }
@@ -178,7 +207,7 @@ an interval of length at most `2 Delta_G`. Tonelli therefore gives the exact cou
 \int_G^{2G}m_G(t)\,dt
 &\le
 2\Delta_G\,
-N_>(\sigma_a,3G)\\
+N_{\ge}(\sigma_a,3G)\\
 &\ll_a
 \Delta_G\,G^{1-a/8}\log G.
 \end{aligned}
@@ -223,7 +252,7 @@ and suppose every cell `C_G(t_j)` contains at least `d_G` zeros. Their vertical 
 \[
 Jd_G
 \le
-N_>(\sigma_a,3G).
+N_{\ge}(\sigma_a,3G).
 \tag{22}
 \]
 
@@ -426,7 +455,7 @@ The coefficient `0.05038` in `(29)` is not proposed as an intrinsic zeta thresho
 The derivation is better stated abstractly. Suppose a source law gives, at the horizontal threshold relevant to a cell,
 
 \[
-N_>(\sigma_a,T)
+N_{\ge}(\sigma_a,T)
 \ll
 T^{1-\delta_a}L(T),
 \qquad \delta_a>0.
