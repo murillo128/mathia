@@ -22,86 +22,55 @@ based_on:
   - research/visual_exploration/findings/VIS-239-cumulative-intensity-gauge-uniformizes-specified-iid-intensity.md
   - research/visual_exploration/findings/VIS-240-rotation-randomized-dirichlet-gaps-give-fixed-count-uniform-intensity-dependence-null.md
   - research/visual_exploration/findings/VIS-241-random-cut-separates-endpoint-phase-variance.md
+  - research/visual_exploration/findings/VIS-242-dirichlet-gap-tent-variance-overlap-classes.md
 ---
 
 # Is there prime-specific critical pair geometry after fixed-count dependent-spacing and endpoint-phase calibration?
 
 ## Observation
 
-The critical coherence-cell branch has progressively removed several large but non-arithmetic sources of structure. `VIS-227`--`VIS-231` calibrate deterministic occupancy, independent occupancy noise, one-point heterogeneity, and first-order Markov effects. `VIS-232`--`VIS-236` then show that conditioning on occupancies or on the exact first-order transition type is too strong for the actual ordered prime-coordinate representation: the cell labels are monotone runs, so the endpoint-matched transition table has no useful internal randomization.
+The critical coherence-cell branch has progressively quotiented the obvious representation and null-model confounds. `VIS-227`--`VIS-236` calibrate occupancy, heterogeneous/Markov effects, and the degeneracy of controls that ignore the actual monotone ordered-point support. `VIS-237` removes arbitrary grid origin by identifying the triangular short-range pair functional. `VIS-238` removes Poisson count noise, and `VIS-239` separates an independently specified one-point intensity from the dependence question.
 
-`VIS-237` replaces arbitrary cell-origin scans by an exact quotient. Averaging an equal-width grid over its origin turns the same-cell count into the triangular short-range pair functional
+`VIS-240` supplies a nontrivial representation-matched dependence family: symmetric cyclic Dirichlet gaps with fixed count, uniform one-point intensity after random rotation, monotone ordered support, and a predeclared parameter `alpha` controlling spacing dependence. Its tent-statistic mean is exact. `VIS-241` then removes the arbitrary phase introduced by cutting the stationary circle into an interval: for endpoint phase treated as nuisance, the intrinsic statistic is
 
-`sum_(a<b) (1-|x_b-x_a|/ell)_+`.
+`bar T=sum_(i<j) (1-delta_ij/ell)_+(1-delta_ij/L)`.
 
-`VIS-238` shows that the null must also respect the observed fixed point count: at critical occupancy, Poissonization adds a separate leading `Theta(m)` variance channel that disappears under the fixed-count uniform model. `VIS-239` removes any independently specified iid one-point intensity exactly by cumulative-intensity coordinates, while showing that same-sample empirical-CDF flattening is degenerate because it maps the data to a deterministic rank lattice.
+`VIS-242` closes the remaining mathematical variance gap. Under symmetric Dirichlet gaps, `Var_G(bar T)` is exactly a finite sum over cyclic-arc overlap classes, each term an at-most-four-component Dirichlet expectation. At `alpha=1`, where the model is exactly iid uniform points on the circle, the variance collapses to the closed benchmark
 
-`VIS-240` supplies the first nontrivial dependence family that respects all of those boundaries simultaneously. Symmetric cyclic gaps
+`Var(bar T)=binom(m,2)[2u/3-4u^2/3+11u^3/15-u^4/9]`, `u=ell/L`.
 
-`(G_1,...,G_m)/L ~ Dirichlet(alpha,...,alpha)`
-
-followed by a uniform rotation and cut produce a fixed-count, monotone ordered-point process with exactly uniform one-point intensity. The parameter `alpha` changes short-gap dependence, and the finite-sample mean of the linear tent statistic is available exactly through beta/incomplete-beta integrals. Thus the iid-uniform model is only the `alpha=1` member of a wider representation-matched dependence calibration.
-
-`VIS-241` separates the still-missing variance calibration into two exact channels. For a fixed circular configuration, averaging over the random cut gives the intrinsic pair functional
-
-`bar T=sum_(i<j) (1-delta_ij/ell)_+(1-delta_ij/L)`,
-
-where `delta_ij` is the shorter circular distance. If `G` denotes the random gap configuration, then
-
-`Var_(G,Theta)(T)=Var_G(bar T)+E_G[V_cut]`,
-
-with `V_cut` given exactly by weighted overlaps of the minor pair arcs. The first term is genuine circular gap-geometry variance; the second is variance introduced only by where the auxiliary circle is cut into a finite interval.
-
-The live issue is therefore no longer a generic search for a stronger null. It is to calibrate the remaining **dependent circular pair geometry** without reintroducing arbitrary endpoint phase, count noise, intensity fitting, or support mismatch.
+The live question is therefore no longer how to construct or calibrate this null in principle. It is whether the frozen prime-coordinate configuration has a residual after applying the now explicit representation-matched calibration without tuning the null on the confirmation statistic.
 
 ## Research question
 
-Fix the critical `lambda` family, the inherited width rule, and a dependence model independently of confirmation data. After quotienting grid origin, total-count randomness, specified iid one-point intensity, and—when endpoints are nuisance—the random-cut phase, does the prime-coordinate configuration exhibit a stable residual relative to a fixed-count monotone dependence null?
+Fix the critical `lambda` family, midpoint-symmetric taper, phase/coherence tolerance, point-coordinate normalization, width rule, endpoint convention, statistic, and dependence model before confirmation. Choose `alpha` from theory, independent data, or a fitting procedure whose uncertainty is carried into the null rather than from the same `bar T` value being tested.
 
-The immediate tractable target is the symmetric-Dirichlet family of `VIS-240`. For a predeclared `alpha`, derive or independently validate the finite-sample variance/covariance of
+Under that frozen specification, does the prime-coordinate `bar T` exhibit a stable residual relative to the symmetric-Dirichlet overlap-class mean/variance calibration of `VIS-240` and `VIS-242` across increasing scales? If endpoints are declared physical signal rather than nuisance, use the post-cut statistic and add the exact `E_G[V_cut]` channel from `VIS-241` instead of switching conventions after observing the result.
 
-`bar T=sum_(i<j) (1-delta_ij/ell)_+(1-delta_ij/L)`
-
-under the circular Dirichlet gaps. If the physical interval endpoints are instead mathematically meaningful, retain the linear post-cut statistic and add the exact endpoint-phase contribution `E_G[V_cut]` from `VIS-241` rather than conflating it with gap dependence.
-
-If a residual survives this calibration across increasing scales, can it be translated into a lower bound, obstruction, or structural constraint for the signed prime-phase quadratic energy rather than remaining a generic point-process anomaly?
+If a residual survives, can it also survive a stronger predeclared spacing control and then be translated into a lower bound, obstruction, or structural constraint for the signed prime-phase quadratic energy rather than remaining a generic point-process anomaly?
 
 ## Why it may matter
 
-The branch has now isolated almost every obvious scalar nuisance at the critical cell scale: forced finite occupancy, independent and heterogeneous occupancy noise, serial-label dependence, conditioning degeneracy, monotone-support constraints, grid phase, count randomization, specified one-point intensity, a nontrivial fixed-count spacing-dependence axis, and finally the endpoint phase introduced by opening a stationary circular model into an interval.
+The branch has removed forced occupancy, count fluctuation, specified one-point intensity, arbitrary grid origin, support-mismatched label randomization, a nontrivial spacing-dependence axis, and arbitrary endpoint cut phase. `VIS-242` additionally removes the excuse that the dependent null lacks a mathematically controlled variance.
 
-This makes the next comparison materially harder to dismiss. A signal that vanishes after calibrating `Var_G(bar T)` was generic short-gap dependence, not prime-specific structure. A signal that survives still does not prove anything about RH, but it would have passed a substantially stronger representation-matched null than the earlier occupancy, Poisson, iid-uniform, or arbitrary-grid controls.
-
-The separation in `VIS-241` is also operationally important: it prevents a hard Dirichlet covariance calculation from spending effort on a variance component caused only by an arbitrary cut. The gap-geometry term can now be attacked directly when endpoint phase is not part of the mathematical signal.
+A residual that now disappears under a frozen symmetric-Dirichlet calibration is generic spacing dependence, not prime-specific structure. A residual that survives is still far below an RH result, but it would have passed a materially stronger representation-matched null and would justify asking whether the surviving statistic couples to the signed arithmetic kernel rather than merely to local point geometry.
 
 ## Decisive test
 
-Before confirmation, freeze the midpoint-symmetric taper, phase/coherence tolerance, critical `lambda` family, point-coordinate normalization, width rule, statistic, endpoint convention, and null family. Do not tune `alpha` on the same statistic being tested; choose it from theory, independent data, or a fitting procedure whose uncertainty is carried through the null.
+Before examining the confirmation residual, freeze all representation choices and the `alpha` rule. Evaluate the exact overlap-class calibration from `VIS-242`; at `alpha=1`, require agreement with its closed polynomial variance as an implementation audit. For `alpha!=1`, evaluate the finite Dirichlet overlap terms by deterministic quadrature or an independently validated numerical method, with numerical error materially below the proposed residual scale.
 
-If endpoints are treated as nuisance, use the cut-averaged statistic `bar T` and calibrate `Var_G(bar T)` under the frozen symmetric-Dirichlet family. An exact calculation is preferred; an independently validated numerical calibration is admissible only if it preserves the fixed count, circular gap law, and predeclared parameter without retuning on confirmation outcomes. Check the result at `alpha=1` against the corresponding iid-uniform circular-spacing specialization and against direct finite-sample integration or high-precision simulation.
+Compare the predeclared prime statistic against this calibration across increasing scales without retuning `alpha`, `ell`, the endpoint convention, or the statistic. If `alpha` is estimated from independent data, propagate that estimation uncertainty rather than conditioning on a point estimate silently.
 
-If endpoints are treated as signal, use the linear post-cut statistic and calibrate
+Kill the candidate if the anomaly disappears under the frozen dependence calibration; if it depends on Poisson count noise, same-sample intensity flattening, random-cut phase declared to be nuisance, or post-hoc tuning; if significance is unstable across the predeclared scale family; or if a stronger representation-matched spacing control reproduces the effect.
 
-`Var_G(bar T)+E_G[V_cut]`
-
-with `V_cut` computed from the exact pair-arc overlap formula of `VIS-241`. Do not switch between endpoint-sensitive and endpoint-quotiented statistics after seeing which gives the stronger residual.
-
-A stronger null beyond symmetric Dirichlet is useful only if it preserves increasing point support, fixed count, the predeclared one-point intensity treatment, and a nondegenerate value of the chosen statistic. Hard-core, renewal, or Markov-gap alternatives may be compared after the Dirichlet calibration, but opening a second null family is not necessary to decide the present variance question.
-
-Kill the candidate if the apparent anomaly disappears under the frozen dependent-spacing calibration; if significance depends on the Poisson count channel isolated by `VIS-238`; if it depends on same-sample empirical-CDF flattening ruled out by `VIS-239`; if it is driven by random-cut phase after endpoints were declared nuisance; if `alpha` or another null parameter must be retuned on confirmation data; or if the control gains apparent flexibility only by leaving the monotone ordered-point support.
-
-Only after a residual survives these gates should it be translated back through the signed phase kernel. Before promotion to a prime-specific finding, audit equivalent formulations in logarithmic prime gaps, short-interval counts, renewal and repulsive point-process controls, prime-pair/higher-correlation statistics, and the relevant critical Dirichlet-polynomial literature.
+Only after a stable residual survives should a new mathematical thread translate it back through the signed prime-phase kernel and audit equivalent formulations in logarithmic prime gaps, short-interval counts, prime-pair/higher-correlation statistics, and critical Dirichlet-polynomial theory.
 
 ## Evidence boundary
 
-`VIS-227`--`VIS-236` establish occupancy/Markov baselines and the support/conditioning obstructions that make label-randomization controls unsuitable for the actual monotone cell representation. `VIS-237` establishes the exact grid-origin quotient. `VIS-238` establishes fixed-count versus Poisson mean/variance calibration. `VIS-239` establishes exact removal of a specified iid one-point intensity and the degeneracy of same-sample empirical-CDF flattening.
+`VIS-237`--`VIS-241` establish the representation quotients and the symmetric-Dirichlet dependence family. `VIS-242` establishes an exact finite-sample variance reduction for the endpoint-quotiented statistic and a closed `alpha=1` benchmark. None of these findings chooses a prime-appropriate `alpha`, establishes that the one-parameter Dirichlet family is a faithful final model of prime gaps, or reports a prime residual.
 
-`VIS-240` establishes a fixed-count, uniform-intensity, monotone-support symmetric-Dirichlet spacing family and its exact finite-sample tent-statistic mean. It does not supply the dependent variance or assert that any `alpha` models prime gaps faithfully.
-
-`VIS-241` establishes an exact decomposition of the random-cut variance into circular gap-geometry variance and endpoint-phase variance. It does not compute `Var_G(bar T)`, estimate the size of the cut term asymptotically, identify the correct endpoint convention for the prime problem, or establish a surviving prime residual.
-
-None of the cited findings establishes prime-specific critical separation, a faithful final stochastic model of the prime coordinates, or any RH consequence.
+No cited result establishes prime-specific critical separation or any RH consequence. A future empirical residual would remain a calibrated point-process observation until an independent mathematical bridge connects it to the signed prime-phase object.
 
 ## Research disposition
 
-The clue remains `accepted`. Its current frontier is a single bounded calibration problem: with the endpoint convention fixed in advance and `alpha` frozen independently of confirmation data, compute or independently validate the finite-sample variance of the cut-averaged circular tent functional under the symmetric-Dirichlet gap family. Only after that variance is available should the prime configuration be tested for a residual.
+The clue remains `accepted`. Its former variance-calibration bottleneck is closed by `VIS-242`. The current frontier is now a separate confirmation problem: freeze the null and representation choices independently, evaluate the exact calibration, and test whether a stable prime residual survives before opening any new arithmetic interpretation.
