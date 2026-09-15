@@ -69,10 +69,10 @@ Split at `B_s=r/(2s)`. For `0<q<r`, set
 \[
 t=e^{-r/s},
 \qquad
-u=e^{-q/s}.
+\nu=e^{-q/s}.
 \]
 
-Bucur's exact interval Green formula, in the form already recorded in `PL-314`, is
+For the algebra below write `u:=\nu`. Bucur's exact interval Green formula, in the form already recorded in `PL-314`, is
 
 \[
 k_s(r,q)
