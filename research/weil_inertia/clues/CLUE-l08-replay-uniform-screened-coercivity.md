@@ -1,7 +1,7 @@
 ---
 id: CLUE-weil-inertia-l08-replay-uniform-screened-coercivity
 type: research-clue
-status: proposed
+status: resolved
 origin: research-watch
 target_line: weil_inertia
 based_on:
@@ -71,4 +71,14 @@ Kill the sharpening if packing or either energy comparison uses a hidden null/ei
 
 ## Evidence boundary
 
-The independently checked numerical result is the fixed `L=0.8` full-complex certificate. The extension to arbitrary support is a source-derived proposed consequence for the explicitly screened one-signed class, awaiting Research Watch validation; it is not another numerical aperture computation or an unrestricted positivity theorem. No claim about sign-changing tests, unscreened one-signed tests, spectral simplicity, parity ordering of the ground state, RH, or mathematical novelty follows. This proposed clue neither changes canonical findings nor accepts its own research consequence.
+The independently checked numerical result is the fixed `L=0.8` full-complex certificate. The extension to arbitrary support is a source-derived proposed consequence for the explicitly screened one-signed class; it is not another numerical aperture computation or an unrestricted positivity theorem. No claim about sign-changing tests, unscreened one-signed tests, spectral simplicity, parity ordering of the ground state, RH, or mathematical priority follows.
+
+## Research disposition
+
+**Outcome:** supported.
+
+**Resolved by:** [[research/weil_inertia/findings/WI-301-screened-prime-ladders-force-a-uniform-archimedean-reserve.md]].
+
+Research Watch verified the decisive chain without a hidden null-mode, eigenfunction, or first-crossing assumption. The gamma and pole rearrangement inequalities in WI-298 already hold for every nonnegative form-domain vector and preserve the form domain; dyadic screening alone forces support packing modulo `log 2`, so the rearranged function is supported in `[-(log2)/2,(log2)/2]`, where all prime shifts vanish a.e. WI-300's independently replayed `L=0.8` certificate then gives the proposed uniform floor `Q_W(f)>=8.9e-18||f||_2^2` under complete screening.
+
+The durable finding is slightly stronger than the clue: if only the powers-of-two ladder is screened, the prime-deleted archimedean form already retains the same `8.9e-18` reserve. Therefore any one-signed test with `Q_W(f)<=0` and dyadic screening must recover at least that reserve through other prime-power autocorrelations. A triadic packing observation was checked separately but is not enough by itself because the smaller `log 2` shift can still overlap after triadic rearrangement.
