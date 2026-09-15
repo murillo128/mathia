@@ -9,9 +9,10 @@ based_on:
   - research/visual_exploration/findings/VIS-226-finite-phase-net-scan-controls-subcritical-worst-start.md
   - research/visual_exploration/findings/VIS-227-critical-phase-cell-collisions-have-balanced-occupancy-floor.md
   - research/visual_exploration/findings/VIS-228-multinomial-cell-collisions-have-extensive-excess-above-balanced-floor.md
+  - research/visual_exploration/findings/VIS-229-nonuniform-categorical-cell-collisions-have-third-moment-variance.md
 ---
 
-# Is there prime-specific critical phase-cell structure after stochastic occupancy calibration?
+# Is there prime-specific critical phase-cell structure after one-point occupancy calibration?
 
 ## Observation
 
@@ -21,42 +22,52 @@ based_on:
 
 `S_lambda(y)=sum_j binom(n_j,2)`
 
-has an exact deterministic floor `S_min(m,J)` forced solely by fitting `m` points into `J` cells. `VIS-228` now removes the next false positive: under independent uniform allocation with the same `m` and `J`,
+has an exact deterministic floor forced solely by fitting `m` points into `J` cells. `VIS-228` removes the next false positive: under independent uniform allocation with the same `m` and `J`, an extensive excess above that floor is generic.
 
-`E[S]=binom(m,2)/J`,
+`VIS-229` removes a further representation mismatch. For independent categorical cell probabilities `(p_j)`, with
 
-`Var(S)=binom(m,2)(1/J)(1-1/J)`,
+`q_2=sum_j p_j^2`, `q_3=sum_j p_j^3`,
 
-and `E[S-S_min]=Theta(J)` whenever `m/J` tends to a positive constant. Thus even a positive linear excess above the balanced floor is generic under the simplest stochastic occupancy null.
+the exact null is
 
-The pair-count question therefore begins only after stochastic centering. For nonuniform independent cell probabilities `p_j`, even the null mean changes to `binom(m,2) sum_j p_j^2`, so the intended one-point occupancy law must be part of the control rather than assumed away.
+`E[S]=binom(m,2)q_2`,
+
+`Var(S)=binom(m,2)(q_2-q_2^2)+6binom(m,3)(q_3-q_2^2)`.
+
+The term `q_3-q_2^2=Var(p_X)` is already positive under independent sampling whenever the one-point cell law is nonuniform. Thus neither the uniform center nor the uniform variance is an admissible arithmetic baseline once the intended control has unequal cell probabilities.
 
 ## Research question
 
-For fixed critical `lambda`, does the actual prime system exhibit a stable non-generic residual after centering the phase-cell statistic against a matched stochastic occupancy model that preserves the same `m`, `J`, cell geometry, and intended one-point density?
+For fixed critical `lambda`, after fixing a mathematically justified one-point cell law `(p_j)` independently of the confirmation statistic, does the actual prime system exhibit a stable residual
 
-For pair collisions, the preliminary equal-cell statistic is
+`Z_(lambda,p)(y)`
+` = [S_lambda-binom(m,2)q_2]`
+`   / sqrt[binom(m,2)(q_2-q_2^2)+6binom(m,3)(q_3-q_2^2)]`
 
-`Z_lambda(y) = [S_lambda-binom(m,2)/J] / sqrt[binom(m,2)(1/J)(1-1/J)]`.
+that is non-generic across increasing scales and reasonable fixed cell-origin perturbations?
 
-Does an analogous centered statistic survive fixed cell-origin perturbations and stronger logarithmic-gap controls? If pair collisions become generic after those controls, is there a different phase-cell observable — multiscale occupancy persistence, nearest-neighbor phase crowding, or a direction-sensitive kernel statistic — that remains non-generic and can be translated into a critical-scale lower bound for the full prime-phase quadratic energy?
+If such a residual survives the independent categorical null, does it also survive controls that preserve logarithmic-scale gap or short-interval structure and therefore introduce genuine dependence between cell labels? If pair collisions become generic under those stronger controls, is there a genuinely different phase-cell observable — multiscale occupancy persistence, nearest-neighbor phase crowding, or a direction-sensitive kernel statistic — that remains non-generic and can be translated into a critical-scale lower bound for the full prime-phase quadratic energy?
 
 ## Why it may matter
 
-The deterministic floor and the multinomial mean are two different baselines. Removing both prevents ordinary balls-in-cells geometry and ordinary random collision fluctuations from being mistaken for prime arithmetic. A surviving, representation-stable residual would therefore have a clearer claim to encode logarithmic-scale prime organization not already supplied by one-point density or independent occupancy.
+The deterministic floor, the uniform multinomial baseline, and the nonuniform categorical baseline remove three increasingly strong sources of false arithmetic structure. A surviving residual after one-point calibration would isolate dependence not explained by cell geometry or marginal occupancy alone.
 
-Failure would also be useful: it would close pair-collision occupancy as a critical discriminator and force the search toward observables that retain information discarded by the cell-count representation.
+That is still not enough for the prime-phase objective: the surviving dependence must eventually couple with the signed phase kernel rather than merely produce a scalar occupancy anomaly. Failure at either stage would close pair collisions as a useful critical discriminator and redirect the search toward observables that retain more of the interaction geometry.
 
 ## Decisive test
 
-Fix the taper, phase tolerance, cell-origin convention, a finite set of `lambda` values, and the primary statistic before inspecting confirmation data. For each growing `y`, form exactly the `VIS-225` coherence cells at `H=lambda y/log y`, record `m`, `J`, and `(n_j)`, and first compare `S_lambda` with the exact independent equal-cell mean/variance from `VIS-228`.
+Fix the taper, phase tolerance, cell-origin convention, a finite set of `lambda` values, the primary collision statistic, and the rule determining `(p_j)` before inspecting confirmation outcomes. The one-point law should come from an analytic model, an independently frozen calibration range, or another construction whose uncertainty can be carried into the test; do not estimate `(p_j)` from the same confirmation occupancies and then treat the fixed-`p` variance in `VIS-229` as exact.
 
-Then replace the equal-cell null by controls that preserve the actual one-point cell probabilities or logarithmic-scale gap information while keeping the same declared geometry. The claim survives only if a predeclared centered statistic remains separated across increasing scales and reasonable fixed cell-origin perturbations, and if the surviving excess can be translated back through the phase kernel without importing the desired critical lower bound through the control assumptions.
+For each growing confirmation scale, form the `VIS-225` critical cells at `H=lambda y/log y`, compute `(m,J,S_lambda)`, and evaluate the exact independent-categorical center and variance from `VIS-229`. Require any candidate separation to persist under reasonable fixed cell-origin perturbations and across the predeclared `lambda` family.
 
-Kill the pair-collision route if its centered residual is generic under the matched controls, unstable under allowed representation perturbations, or explained by statistics already fixed by the null. If that happens, any successor statistic must be genuinely different rather than another monotone renormalization of `S_lambda`.
+Only if this residual survives should the control be strengthened to preserve logarithmic-scale gaps, short-interval counts, or another admitted local dependence structure. Such a control needs its own calibrated center and covariance; the independent-categorical formula is not valid after dependence is imposed. The claim survives only if a predeclared residual remains separated and can be translated back through the phase kernel without importing the desired critical lower bound through the control assumptions.
 
-Before promotion to a finding, audit equivalent formulations in logarithmic-scale prime gaps, short-interval counts, occupancy models, and prime-pair statistics.
+Kill the pair-collision route if the residual is explained by the calibrated one-point law, disappears under a structurally matched dependent control, is unstable under allowed representation perturbations, or cannot be connected to the signed phase energy. Any successor statistic must be genuinely different rather than another monotone renormalization of `S_lambda`.
+
+Before promotion to a prime-specific finding, audit equivalent formulations in logarithmic-scale prime gaps, short-interval counts, occupancy/U-statistic models, and prime-pair statistics.
 
 ## Evidence boundary
 
-`VIS-227` establishes the deterministic occupancy floor. `VIS-228` establishes the exact independent-allocation mean/variance and proves that extensive excess above that floor is still generic. Neither result establishes the behavior of the actual prime residual under a matched stochastic control, any critical-scale optimizer separation, or any RH consequence. This clue therefore remains `status: proposed`; the unresolved object is a control-stable residual after stochastic occupancy calibration.
+`VIS-227` establishes the deterministic occupancy floor. `VIS-228` establishes the exact uniform independent mean/variance and proves that extensive excess above the floor is generic. `VIS-229` establishes the exact nonuniform independent mean/variance and shows that one-point heterogeneity contributes a third-moment covariance term even without pair dependence.
+
+None of these results establishes the behavior of the actual prime residual after calibrated one-point removal, the effect of a gap-preserving dependent control, any critical-scale optimizer separation, or any RH consequence. This clue therefore remains `status: proposed`; the unresolved object is dependence beyond an independently specified one-point occupancy law and its relevance to the signed critical phase Hamiltonian.
