@@ -1,6 +1,6 @@
-# MI-030 — Isolated-pole Julia reduction forces collective support geometry
+# MI-030 — Scalar Julia reduction forces genuinely unbounded collective support geometry
 
-**Evidence level:** exact local scalar-Julia classification from [WP-316](../../findings/WP-316-scalar-julia-reduction-erases-every-asymptotically-isolated-mangoldt-pole.md), complementing the noncompact atom-mass-scale obstruction [WP-315](../../findings/WP-315-mangoldt-atom-mass-scale-is-not-a-uniform-isolated-pole-scale.md).
+**Evidence level:** exact local scalar-Julia classifications from [WP-316](../../findings/WP-316-scalar-julia-reduction-erases-every-asymptotically-isolated-mangoldt-pole.md) and [WP-317](../../findings/WP-317-finite-multipole-julia-reduction-is-interlacing-degree-reduction.md), complementing the noncompact atom-mass-scale obstruction [WP-315](../../findings/WP-315-mangoldt-atom-mass-scale-is-not-a-uniform-isolated-pole-scale.md).
 
 WP-315 shows that the intrinsic Mangoldt atom mass is not a uniform isolated-pole scale: bounded prime clusters can collapse arbitrarily many comparable positive atoms into one normalized support-side chart. A natural escape is to choose a gap-adapted scale or subsequence where one focal pole really does dominate.
 
@@ -12,16 +12,18 @@ with positive Herglotz background `h`, choose a regular real node `t=x+sigma r`,
 
 `kappa=(r^2/a) h'(t)`.
 
-If `kappa->0`, positivity controls the entire normalized background increment and the canonical local Julia profile converges to the real constant `sigma`. For the pure one-pole control this collapse is exact at every scale. The pole mass and gap scale survive only through a removable real scalar; they do not generate a nonconstant local Pick geometry.
+If `kappa->0`, positivity controls the entire normalized background increment and the canonical local Julia profile converges to the real constant `sigma`. For the pure one-pole control this collapse is exact at every scale. For the reflected Mangoldt source, every nonconstant scalar Julia tangent must therefore retain an order-one positive contribution from other prime-power atoms.
 
-For the reflected Mangoldt source the same ratio is the positive collectivity index
+WP-317 closes the next obvious escape: retaining a **fixed finite** cluster does not create a new arithmetic sign mechanism. For a positive atomic scalar Herglotz function with `N` poles, one regular normalized Julia step removes the original poles and produces exactly `N-1` positive poles interlacing the old support. Iterating gives
 
-`kappa_n = sum_(m!=n) (a_m/a_n) (r_n/(x_m-t_n))^2`.
+`N -> N-1 -> ... -> 1 -> 0`
 
-There is no cancellation in this expression. Therefore every nonconstant support-side scalar Julia tangent must retain an order-one contribution from other prime-power atoms before the sign-producing Julia theorem is applied.
+atoms, ending in the same constant collapse. Reversing the steps is classical Julia augmentation/continued-fraction reconstruction. The positivity and interlacing hold for arbitrary positive atomic input and therefore carry no prime-specific content by themselves.
 
-The reusable dichotomy is **isolated source atom versus collective positive geometry**. A source-specific one-pole normalization can fail in either direction: if nearby atoms collapse at the chosen scale, the chart is not locally compact; if the chart is genuinely one-pole dominated, scalar Julia reduction trivializes it. The surviving scalar category is necessarily multipole.
+The reusable dichotomy is now stronger than isolated versus multipole. **One-pole geometry is Julia-trivial, and every bounded finite multipole geometry is classical finite-degree Julia data.** A scalar support-side route can remain genuinely open only if the collectivity itself grows without bound or leaves the finite pure-atomic rational category through a continuous/affine component. Otherwise the reduction either erases the pole immediately or consumes the finite cluster in finitely many classical degree drops.
 
-This changes the proof obligation from “find the right prime gap scale” to “derive a canonical collective normalization.” The collective object must be forced by the source, remain locally controlled under clustering, preserve Pick positivity, and still couple to the archimedean/Gamma discriminator with the correct orientation. A synthetic positive multipole measure remains a matched control, so collectivity alone is not yet arithmetic specificity.
+This changes the proof obligation from “find the right prime gap scale” or even “retain several nearby primes” to “derive a canonical infinite collective normalization.” The collective object must be forced by the source, remain locally controlled despite WP-315 clustering, survive matched positive-measure controls, and still couple to the archimedean/Gamma discriminator with the correct orientation. Merely taking larger fixed clusters does not satisfy this: the relevant limit must show new stable geometry as multiplicity grows.
 
-**Boundary.** WP-316 does not claim that every support-side node has `kappa->0`, nor that `kappa` bounded away from zero is sufficient for a useful Weil tangent. It does not touch matrix/operator-valued Julia reduction, generalized resolvents or nonseparable finite--archimedean couplings. The conclusion is only that an asymptotically isolated Mangoldt pole cannot carry the missing Weil positivity through the classical scalar Julia mechanism.
+The same evidence also sharpens the category escape. Matrix/operator-valued Julia reduction, generalized resolvents, nonseparable finite--archimedean couplings, or a surviving continuous Herglotz component are not ruled out because they are not finite scalar rational reductions. But a proposed scalar construction should first prove why its infinite collective limit exists and is source-specific before positivity is interpreted as Weil positivity.
+
+**Boundary.** WP-317 treats finite pure positive atomic scalar Herglotz tangents at regular real Julia nodes. It does not classify an unbounded/infinite cluster limit, continuous measure, affine Herglotz channel, matrix/operator-valued response or a different non-Julia global operation. WP-315 shows that unbounded local multiplicity is genuinely available as a source phenomenon; it does not show that the corresponding normalized measures are compact or that their limit has the required Gamma orientation.

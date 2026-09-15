@@ -1,6 +1,6 @@
-# MI-041 — Positive Riesz order crosses the critical regularity threshold, but removing the smoothing is an exponential-bandwidth endpoint problem
+# MI-041 — Positive Riesz order crosses the critical regularity threshold, but the endpoint remains hidden behind scalarization and exponential scale separation
 
-**Evidence level:** exact/literature-derived boundary statement from [AF-352](../../findings/AF-352-every-positive-riesz-order-crosses-the-critical-boundary-conditioning-threshold.md), quantitatively sharpened by [AF-353](../../findings/AF-353-riesz-endpoint-conditioning-cost-diverges-quadratically-in-absolute-zero-budget.md) through [AF-359](../../findings/AF-359-riesz-endpoint-has-universal-exponential-spectral-transition.md).
+**Evidence level:** exact/literature-derived boundary statement from [AF-352](../../findings/AF-352-every-positive-riesz-order-crosses-the-critical-boundary-conditioning-threshold.md), quantitatively sharpened by [AF-353](../../findings/AF-353-riesz-endpoint-conditioning-cost-diverges-quadratically-in-absolute-zero-budget.md) through [AF-360](../../findings/AF-360-riesz-dyadic-projective-shape-is-endpoint-blind.md).
 
 For fixed real `delta>0`, the Riesz profile
 
@@ -30,10 +30,16 @@ and
 
 `D_delta(T)/A_0(T) -> (1-exp(-u))^2`.
 
-Hence polynomial or otherwise subexponential bandwidth in `1/delta` sees asymptotically none of the relative endpoint defect. An order-one fraction first appears at `T=exp(Theta(1/delta))`; above that scale the smoothed shell dies relative to the endpoint shell. This turns the qualitative high-frequency obstruction of AF-358 into an exact moving-bandwidth law.
+Hence polynomial or otherwise subexponential bandwidth in `1/delta` sees asymptotically none of the absolute endpoint defect. An order-one fraction first appears at `T=exp(Theta(1/delta))`; above that scale the smoothed shell dies relative to the endpoint shell. The reciprocal physical scale is already visible in AF-357: the Beta smoothing kernel places fixed mass at relative lags `exp(-Theta(1/delta))`.
 
-The spectral scale matches the physical one already exposed by AF-357: the Beta smoothing kernel places fixed mass at relative lags `exp(-Theta(1/delta))`. The reciprocal scales arise from the exact Riesz multiplier and kernel, not from a general uncertainty principle. AF-354--AF-355 likewise show that sufficiently fast moving orders inherit endpoint oscillation, while AF-356 shows average `B^2` stability can coexist with the extremal failure.
+AF-360 closes the most obvious phase-sensitive escape from this magnitude law. On every bounded-ratio zero shell, the exact Gamma quotient satisfies
 
-The reusable proof obligation is now narrow. A uniform moving-order theorem must either control the exponentially moving spectral/physical band or exploit information that bypasses magnitude-only shell energy: source-native phase cancellation, maximal/tail control, signed short-interval coupling, endpoint-to-past correlation or another cross-scale law. A larger but subexponential cutoff, a stronger monotone quadratic weight, or another scalar source envelope cannot by itself reach the endpoint transition identified here.
+`M_delta(rho_gamma)=c_(delta,T)(1+o(1))`
 
-**Boundary.** AF-358--AF-359 are conditional on RH and concern the nontrivial-zero Fourier profile. The exponential transition is specific to the Riesz multiplier and its quadratic critical-shell metric. It does not rule out phase-sensitive, nonlinear, maximal or arithmetic-specific mechanisms, and it does not prove that exponentially high zero information is necessary for every possible proof of an endpoint theorem.
+uniformly as `delta->0`, `T->infinity`, with no restriction on `delta log T`. After quotienting the common complex scalar, the entire shell vector converges projectively to the endpoint shell: normalized cross-frequency shape and every continuous uniformly well-conditioned scale-invariant observable are asymptotically unchanged. The shell can therefore lose essentially all endpoint amplitude while retaining the same projective phase geometry.
+
+Cross-scale comparison is equally rigid. If two dyadic shells are separated by a factor `R_delta`, their relative Riesz attenuation is asymptotically `R_delta^(-2delta)`. Thus `log R_delta=o(1/delta)` is still blind, while an order-one relative discriminator requires `R_delta=exp(Theta(1/delta))`. Moving from magnitude to post-Riesz phase, coherence, or subexponentially separated shell ratios does not lower the endpoint bandwidth price.
+
+The reusable proof obligation is consequently narrower. A uniform moving-order theorem must either control an exponentially broad spectral/physical range, accept an observer whose conditioning diverges strongly enough to amplify the vanishing residual, or use information **before** the Riesz channel scalarizes it: source-native signed short-interval structure, maximal/tail information, cancellation coupled before smoothing, endpoint-to-past correlation, or another genuinely pre-compression nonlinear operation. A larger but subexponential cutoff, a stronger monotone quadratic weight, or a well-conditioned post-Riesz phase statistic cannot by itself reach the endpoint.
+
+**Boundary.** AF-358--AF-360 are conditional on RH where they use the nontrivial-zero Fourier-shell interpretation. The scalarization statement is a property of the Riesz Gamma quotient on bounded-ratio shells; it does not rule out exponentially wide bands, source-side nonlinear operations, maximal/tail mechanisms, or deliberately ill-conditioned observers. Nothing here proves that exponentially high zero information is necessary for every possible proof of RH or of an endpoint theorem.

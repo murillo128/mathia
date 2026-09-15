@@ -4,7 +4,7 @@ This file holds the current mathematical questions suggested by the durable Fare
 
 ## Find a source-visible ancestry law whose information budget is coercive without reconstructing the source
 
-**Linked intuitions:** `MI-001-cumulative-farey-discrepancy-is-mertens-energy` through `MI-018-additive-coordinate-dimension-is-not-an-information-capacity-bound`.
+**Linked intuitions:** `MI-001-cumulative-farey-discrepancy-is-mertens-energy` through `MI-019-sub-root-rank-observation-budgets-can-remain-uniformly-blind-to-one-common-source-wall`.
 
 FD-117--FD-129 classify the reversible Farey skeleton, common-source horizon coherence, sparse multiplicative escape and the circular reconstruction boundary. FD-130--FD-137 then show that counting means, rankwise means, fixed-prime convergence and harmonic physical-scale balancing can all miss a macroscopic source defect; exact multiplicative-rank conditioning exposes one hidden wall but does not make the method generically coercive.
 
@@ -28,7 +28,7 @@ A destination-side Fourier-skeleton coercivity theorem remains a distinct route 
 
 ## Determine the first genuinely different regime between fixed alphabets and source reconstruction
 
-**Linked intuitions:** `MI-015-local-ancestry-has-an-exact-rough-core-rigidity-threshold`, `MI-016-harmonic-scale-balancing-still-misses-the-moving-rank-interface`, `MI-017-finite-rank-localization-can-miss-an-orthogonal-additive-prime-factor-coordinate`, `MI-018-additive-coordinate-dimension-is-not-an-information-capacity-bound`.
+**Linked intuitions:** `MI-015-local-ancestry-has-an-exact-rough-core-rigidity-threshold`, `MI-016-harmonic-scale-balancing-still-misses-the-moving-rank-interface`, `MI-017-finite-rank-localization-can-miss-an-orthogonal-additive-prime-factor-coordinate`, `MI-018-additive-coordinate-dimension-is-not-an-information-capacity-bound`, `MI-019-sub-root-rank-observation-budgets-can-remain-uniformly-blind-to-one-common-source-wall`.
 
 The frontier is now quantitatively bracketed. Fixed periodic alphabets are under-resolved by FD-140. FD-143 extends the no-go to arbitrary growing source-independent observation schemes with total prime-cell complexity `o(sqrt(loglog T))` in the central rank regime, using one common source along a subsequence. At the opposite end, FD-142 shows that one fixed strongly additive scalar observed with only `Theta(log T)` bits can already be source-reconstructing on the squarefree prefix.
 
