@@ -138,27 +138,27 @@ The resulting resource picture is therefore sharper than a simple choice between
 
 ## 1. Reachable mass is squeezed between two rank tails
 
-Because `1 in D`, every squarefree integer with at most `L` prime factors is reachable from the anchor through the edge `(1,m)`. Conversely FD-149 already gives, for every reachable `m`,
+Because `1 in D`, every squarefree integer outside `D` with between one and `L` prime factors is reachable from the anchor through the edge `(1,m)`. Conversely FD-149 already gives, for every reachable `m`,
 
 \[
 \omega(m)\le r_D+L.
 \tag{14}
 \]
 
-Thus, up to the fixed set `D`,
+Thus
 
 \[
-\{m\in V_T:1\le\omega(m)\le L\}
+\{m\in V_T\setminus D:1\le\omega(m)\le L\}
 \subseteq
 R_{D,L}(T)
 \subseteq
-\{m\in V_T:\omega(m)\le L+r_D\}.
+\{m\in V_T\setminus D:\omega(m)\le L+r_D\}.
 \tag{15}
 \]
 
 For `L=L_T=floor(alpha lambda_T)`, the two rank thresholds differ by only the fixed amount `r_D`. It is therefore enough to estimate the squarefree lower tail of `omega` at a fixed fraction of its normal order.
 
-This also shows why the estimate is not merely an upper bound inherited from FD-149. For every fixed divisor-closed anchor containing `1`, the complement-cut reachable set really contains the entire low-rank squarefree population; changing the finite anchor can modify only the constant in the large-deviation scale.
+This also shows why the estimate is not merely an upper bound inherited from FD-149. For every fixed divisor-closed anchor containing `1`, the complement-cut reachable set really contains the entire low-rank squarefree population apart from the fixed anchor itself; changing the finite anchor can modify only the constant in the large-deviation scale.
 
 ## 2. Sathe--Selberg gives the exact logarithmic exponent
 
@@ -218,7 +218,7 @@ Therefore
 \tag{20}
 \]
 
-Applying (20) to both sides of (15), with the fixed shift `r_D`, proves (7).
+Applying (20) to both sides of (15), with the fixed shift `r_D` and the removal of the fixed set `D`, proves (7).
 
 ## 3. The child-distortion phase curve
 
