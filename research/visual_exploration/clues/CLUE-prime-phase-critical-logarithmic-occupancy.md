@@ -19,6 +19,7 @@ based_on:
   - research/visual_exploration/findings/VIS-236-ordered-prime-coordinate-cells-make-first-order-type-degenerate.md
   - research/visual_exploration/findings/VIS-237-random-origin-cell-collisions-are-triangular-pair-functional.md
   - research/visual_exploration/findings/VIS-238-fixed-count-tent-calibration-removes-poissonization-variance.md
+  - research/visual_exploration/findings/VIS-239-cumulative-intensity-gauge-uniformizes-specified-iid-intensity.md
 ---
 
 # Is there prime-specific critical cell structure after a representation-matched dependence calibration?
@@ -54,7 +55,7 @@ and the actual endpoint-matched transition table has a singleton realization. It
 
 Thus cell-origin averaging is a representation-matched control, but it is not a new independent null family. It quotients the arbitrary grid phase and reduces the statistic exactly to a triangular/tent-weighted short-range pair-gap functional. Cell-origin robustness can therefore be handled analytically; the remaining source of freedom is the ordered point configuration itself.
 
-`VIS-238` now separates a further null-model choice that is leading-order at the critical scale. For the tent pair functional, an unconditioned homogeneous Poisson process has critical variance
+`VIS-238` separates a further null-model choice that is leading-order at the critical scale. For the tent pair functional, an unconditioned homogeneous Poisson process has critical variance
 
 `lambda(kappa/3+kappa^2)+O(1)`,
 
@@ -64,21 +65,23 @@ where `lambda` is the expected point count and `kappa=lambda ell/L=Theta(1)`, wh
 
 The extra Poisson term `lambda kappa^2` is exactly the leading count-fluctuation channel exposed by conditioning on the Poisson total count. Since the prime configuration at fixed `y` already has a fixed observed number of points, a scalar geometry test should not mistake this global-count fluctuation for uncertainty in the short-gap geometry.
 
-The live issue is therefore narrower: after quotienting grid origin and removing the leading count-randomness confound, how should the remaining local pair-gap geometry be calibrated without conditioning away the tested quantity?
+`VIS-239` now resolves the **specified one-point nonuniform-intensity** part of the next null. If a fixed-count iid ordered-point model has a predeclared continuous CDF `F`, the cumulative-intensity coordinates `U_i=F(X_i)` are exactly iid uniform. The tent statistic in `U` therefore has the finite-sample `VIS-238` law without a new variance derivation. But using the empirical CDF of the same confirmation points is degenerate: the transformed order statistics are exactly `i/m`, so every tent separation is a rank separation and the entire statistic is deterministic given `m` and its width. In-sample quantile flattening therefore conditions away the spacing geometry it was meant to calibrate.
+
+The live issue is narrower again: after quotienting grid origin, total-count randomness, and any **externally specified iid one-point intensity**, can the remaining local pair/higher-order geometry be calibrated without conditioning away the tested quantity?
 
 ## Research question
 
 At fixed critical `lambda`, after choosing a dependence model independently of confirmation data and matching the support of the ordered prime-coordinate construction, does the prime system exhibit a stable residual that is not explained by generic local intensity and short-gap fluctuations?
 
-The most direct surviving route is the origin-invariant triangular pair functional exposed by `VIS-237`, now calibrated at minimum against the fixed-count uniform order-statistic baseline of `VIS-238`, or against a stronger fixed-count monotone model that also represents admitted nonuniform intensity or short-gap structure. Can one predeclare such a model/statistic, calibrate its finite-sample center and covariance without conditioning away the statistic, and find a residual that survives increasing scales?
+The most direct surviving route is the origin-invariant triangular pair functional exposed by `VIS-237`. `VIS-238` supplies its minimal fixed-count homogeneous calibration, and `VIS-239` shows how any predeclared iid one-point nonuniformity can be removed exactly by cumulative intensity. The next stronger control must therefore either use an externally specified or genuinely held-out intensity model with its estimation error accounted for, or model source-specific short-gap/pair dependence that is not reducible to one-point intensity. Can one predeclare such a model/statistic, calibrate its finite-sample center and covariance without conditioning away the statistic, and find a residual that survives increasing scales?
 
 If a residual survives, can it be translated into a lower bound, obstruction, or structural constraint for the signed prime-phase quadratic energy rather than remaining a generic point-process anomaly?
 
 ## Why it may matter
 
-The branch has separated forced finite occupancy, independent occupancy noise, one-point heterogeneity, serial dependence, conditioning sigma-field, representation support, grid-origin nuisance, and now total-count randomization. `VIS-236` shows that a statistically nondegenerate null is not automatically admissible if it creates paths the underlying geometry cannot realize. `VIS-237` shows that grid translation can be quotiented exactly. `VIS-238` shows that even a geometrically admissible Poisson point-process null can inject a separate leading variance channel if it randomizes a total count that is fixed in the observed source configuration.
+The branch has separated forced finite occupancy, independent occupancy noise, one-point heterogeneity, serial dependence, conditioning sigma-field, representation support, grid-origin nuisance, total-count randomization, and now specified iid one-point intensity. `VIS-236` shows that a statistically nondegenerate null is not automatically admissible if it creates paths the underlying geometry cannot realize. `VIS-237` shows that grid translation can be quotiented exactly. `VIS-238` shows that even a geometrically admissible Poisson point-process null can inject a separate leading variance channel if it randomizes a total count that is fixed in the observed source configuration. `VIS-239` then shows that a known nonuniform one-point density is an exact coordinate nuisance, while estimating that coordinate from the same confirmation points is an overconditioning failure.
 
-This materially narrows the search. Future controls should spend complexity on the actual source of freedom — local intensity, prime gaps, run occupancies, and within-cell geometry — rather than arbitrary label permutations, repeated grid-origin scans, or unconditioned count noise. A surviving signal under such a control would be substantially more informative; failure would close the critical cell route without mistaking representation or null-model variability for arithmetic structure.
+This materially narrows the search. Future controls should spend complexity on the actual remaining source of freedom — prime gaps, pair/higher-order dependence, and independently estimated intensity uncertainty — rather than arbitrary label permutations, repeated grid-origin scans, unconditioned count noise, or in-sample empirical-rank normalization. A surviving signal under such a control would be substantially more informative; failure would close the critical cell route without mistaking representation or null-model variability for arithmetic structure.
 
 ## Decisive test
 
@@ -90,11 +93,13 @@ Do **not** treat a sweep over cell origins as multiple independent evidence chan
 
 Do **not** use an unconditioned homogeneous Poisson process as the sole scalar confirmation null when the intended question conditions on the observed number of source points. `VIS-238` proves that Poisson count randomness contributes a leading `Theta(m)` variance term at critical occupancy. The fixed-count uniform order-statistic model is the minimal homogeneous baseline for the geometric statistic, not a claim that uniform points are a faithful prime model.
 
-Choose one stronger representation-matched ordered-point control before confirmation if the homogeneous fixed-count baseline is intentionally insufficient. A natural next candidate is a fixed-count nonhomogeneous or gap-based model whose realizations remain increasing and whose center/covariance for the triangular functional accounts for the admitted local intensity and short-gap law. Another admissible route is a weaker conditional control on counts/gaps that leaves the predeclared statistic nondegenerate.
+For one-point nonuniformity, `VIS-239` gives an exact admissible route when the intensity is specified independently: transform by its CDF/cumulative intensity and reuse the fixed-count `VIS-238` law in the transformed coordinate. Do **not** estimate that CDF from the same confirmation points and then test the transformed tent statistic; the empirical-CDF transform maps the order statistics to a deterministic rank lattice and annihilates the spacing residual. If the intensity is estimated rather than specified, use independent training data, sample splitting/cross-fitting, or another procedure whose estimation uncertainty is explicitly included in the null.
+
+Choose one stronger representation-matched ordered-point control before confirmation if one-point intensity calibration is intentionally insufficient. It should represent admitted short-gap or pair dependence while keeping realizations increasing and leaving the predeclared triangular statistic nondegenerate. A weaker conditional control on counts/gaps is also admissible only when the preserved information does not determine the statistic.
 
 For any proposed control, verify first that the statistic varies inside its admitted sample space and that the control does not condition on sufficient information for that statistic. Then calibrate its center/covariance or exact conditional law as appropriate, and test the confirmation residual without retuning `lambda`, width, coordinate, or null.
 
-Kill a candidate if its anomaly disappears under the monotone matched control, if it is determined by preserved occupancy/gap data, if the claimed origin robustness is only repeated measurement of the `VIS-237` triangular functional, if its significance depends on the extra Poisson count-fluctuation variance isolated by `VIS-238`, or if the null gains apparent power only by permitting label revisits/backtracking impossible for the prime-coordinate cells.
+Kill a candidate if its anomaly disappears under the monotone matched control, if it is determined by preserved occupancy/gap data, if the claimed origin robustness is only repeated measurement of the `VIS-237` triangular functional, if its significance depends on the extra Poisson count-fluctuation variance isolated by `VIS-238`, if it survives only because the chosen one-point intensity is misspecified, if the proposed flattening uses the same-sample empirical CDF and thereby makes the statistic rank-deterministic, or if the null gains apparent power only by permitting label revisits/backtracking impossible for the prime-coordinate cells.
 
 Only after a residual survives these gates should it be translated back through the signed phase kernel. Before promotion to a prime-specific finding, audit equivalent formulations in logarithmic prime gaps, short-interval counts, renewal/point-process controls, prime-pair or higher-correlation statistics, and the relevant critical Dirichlet-polynomial literature.
 
@@ -108,8 +113,10 @@ Only after a residual survives these gates should it be translated back through 
 
 `VIS-238` establishes exact finite-window mean/variance formulas for that tent statistic under fixed-count uniform and homogeneous Poisson point models, and shows that Poissonization adds a leading critical count-fluctuation variance channel. It does **not** establish that the fixed-count uniform model is a faithful final null for primes or that any prime residual remains after such conditioning.
 
+`VIS-239` establishes that a **specified iid** one-point nonuniformity is exactly uniformized by its CDF for this tent calibration, and that the same-sample empirical CDF makes the transformed statistic deterministic. It does **not** establish an iid model for the prime coordinates, identify their correct intensity, remove genuine dependence, or make an independently estimated intensity exact.
+
 None of these results establishes prime-specific critical separation, a faithful confirmation null for the ordered prime process, or any RH consequence.
 
 ## Research disposition
 
-The clue remains `accepted`, but its live route is narrower. The generic exact Markov-type branch is closed for the actual monotone labels by `VIS-236`; grid-origin nuisance is reduced exactly by `VIS-237`; and `VIS-238` removes unconditioned Poisson count fluctuation as a clean source of scalar significance when the observed point count is fixed. The next useful test should operate directly on representation-matched monotone point geometry and compare the tent statistic against a predeclared **fixed-count** ordered-point null that accounts for whichever local intensity or short-gap structure is intentionally admitted.
+The clue remains `accepted`, but its live route is narrower. The generic exact Markov-type branch is closed for the actual monotone labels by `VIS-236`; grid-origin nuisance is reduced exactly by `VIS-237`; `VIS-238` removes unconditioned Poisson count fluctuation as a clean source of scalar significance when the observed point count is fixed; and `VIS-239` quotients any independently specified iid one-point intensity while ruling out same-sample empirical-CDF flattening as an admissible geometry test. The next useful control must preserve monotone point support and target genuinely local pair/higher-order structure, or use an independently estimated intensity with its estimation uncertainty carried through the calibration.
