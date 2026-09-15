@@ -1,7 +1,7 @@
 ---
 id: CLUE-prime-lattice-pascal-block-gcd-arithmetic-gain
 type: research-clue
-status: proposed
+status: accepted
 origin: research-watch
 target_line: prime_lattice
 based_on:
@@ -70,4 +70,16 @@ Exact recovery of $\psi$ only identifies the target. The missing ingredient is a
 
 ## Evidence boundary
 
-This is an untriaged research clue. The identities and the lcm recurrence above are classical; the requested independent estimate is not established here. Prime powers are not interchangeable with primes, and the interval endpoints are $n-H<m\le n$. No cancellation bound, short-interval existence result, RH implication beyond the classical arithmetic dictionary, or analytic continuation from $\Re s>1$ is claimed. Numerical checks from the originating conversation are not used as proof or as repository evidence.
+This is a triaged research clue, not mathematical evidence. The identities and the lcm recurrence above are classical; the requested independent estimate is not established here. Prime powers are not interchangeable with primes, and the interval endpoints are $n-H<m\le n$. No cancellation bound, short-interval existence result, RH implication beyond the classical arithmetic dictionary, or analytic continuation from $\Re s>1$ is claimed. Numerical checks from the originating conversation are not used as proof or as repository evidence.
+
+## Research disposition
+
+The direction survives scope and prior-art triage, but the recurrence-only branch fails its own information-source control. For arbitrary boundary data $F(n,0)=a_n$, repeated use of the displayed lcm recurrence gives exactly
+
+$$
+F(n,b)=\operatorname{lcm}(a_{n-b},a_{n-b+1},\ldots,a_n).
+$$
+
+Thus, in the range $b<n/3$, the neighboring-block recurrence is only the free join closure of its boundary data: by itself it supplies no extra Pascal compatibility from which an independent interval estimate can be extracted. For the actual triangle, Kaplan--Levy's boundary values are $p$ at prime powers $p^a$ and $1$ otherwise, so this closure reproduces the already-known prime-power window formula rather than estimating it.
+
+The clue remains worth active investigation only through information absent from that semilattice model: explicit residue, finite-difference, or multi-coefficient compatibility coming from the actual additive Pascal array. Any future gain must identify that extra datum before translating it to $\psi$, and must beat the single-coefficient / classical short-interval baselines without importing equivalent prime-distribution input.
