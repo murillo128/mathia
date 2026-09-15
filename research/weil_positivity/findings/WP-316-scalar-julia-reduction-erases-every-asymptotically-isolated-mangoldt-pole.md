@@ -18,7 +18,7 @@ prior_art:
 
 `WP-315` shows that the most obvious support-side localization of the reflected Mangoldt Herglotz source, namely the single-atom mass scale, is not uniformly an isolated-pole geometry: bounded prime clusters force arbitrarily many comparable atoms to collapse into that chart. This leaves a possible escape in the opposite regime. One could choose a source gap and a moving regular Julia node on a scale at which one focal Mangoldt pole really **is** isolated.
 
-Classical scalar Julia–Nevanlinna reduction then removes precisely the structure one hoped to use.
+Classical scalar [[research/prior_art/incremental/PA-julia-nevanlinna-boundary-reduction|Julia–Nevanlinna reduction]] then removes precisely the structure one hoped to use.
 
 Let `f` be a Pick/Herglotz function with a simple real pole at `x`, written
 

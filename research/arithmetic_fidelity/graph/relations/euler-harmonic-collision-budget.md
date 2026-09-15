@@ -23,6 +23,6 @@ derived: true
 
 The newer theorem strengthens AF-337's uniform tail bound; it does not withdraw AF-337 or contradict AF-217. Integer spacing and the fixed multiplicative window are hypotheses. The depth threshold is sufficient, not claimed optimal; the earlier order-two and order-three theorems remain stronger in their global low-order regimes. Primes and matched composite/integer controls all satisfy the tail theorem. Exact detection is not uniform stable inversion, and for `r>=2` the sufficient depth remains in `sigma>1`; neither prime-specific source sign control nor zero-sensitive transport is supplied.
 
-[[research/arithmetic_fidelity/mind/intuition/MI-018-signed-complexity-only-transfers-through-sign-regular-observations|MI-018]] retains the AF-337 margin principle. The linear-depth refinement above is grounded directly in AF-338, without rewriting that synthesis.
+[[research/arithmetic_fidelity/mind/intuition/MI-018-signed-complexity-only-transfers-through-sign-regular-observations|MI-018]] now cites AF-338 and later source/observation work. This mechanism note remains limited to the AF-337/AF-338 sampling theorem; it does not incorporate the later derivations merely through the synthesis pointer.
 
 The direct AF-337/AF-338 references are native links in the canonical source prose. This mechanism note supplements those directed dependencies and scoped comparisons; it does not assert reverse or transitive implications.

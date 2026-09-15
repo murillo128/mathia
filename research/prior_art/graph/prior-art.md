@@ -39,6 +39,10 @@ This derived view reconciles live Mathia research with the frozen issue-63 prior
 - [[research/prime_lattice/findings/PL-005-bagchi-prime-flow-recurrence-rh|PL-005]] → [[research/prior_art/incremental/PA-bagchi-strong-recurrence-criterion|Bagchi strong-recurrence criterion]]. [[research/prior_art/voronin-universality-translation-orbit|Voronin universality]] is related background but is intentionally not substituted for Bagchi's stronger RH equivalence.
 - [[research/prime_lattice/findings/PL-006-random-bohr-boundary-gmc|PL-006]] → [[research/prior_art/incremental/PA-randomized-zeta-critical-gmc-boundary|randomized-zeta critical GMC boundary]].
 
+## Weil Positivity
+
+[[research/weil_positivity/findings/WP-318-scalar-julia-tangents-are-boolean-self-energies-of-derivative-biased-measures|WP-318]] identifies its pure-measure scalar Julia response with [[research/prior_art/incremental/PA-boolean-convolution-self-energy|Boolean self-energy]], using [[research/prior_art/incremental/PA-julia-nevanlinna-boundary-reduction|classical boundary reduction]]. The [[research/weil_positivity/graph/relations/scalar-julia-derivative-biased-laws|mechanism note]] preserves the finite/infinite-support qualifications and the separate arithmetic-law/coupling question.
+
 ## Shared prior-art convergence
 
 [[research/prime_circle/findings/PC-022-cyclic-cover-spectrum-has-exact-order-birth-layers|PC-022]] and [[research/prime_flute/findings/PF-044-one-gap-tangent-is-gamma2-and-zeta-scattering-is-universal|PF-044]] independently land on [[research/prior_art/incremental/PA-gamma-2-thrice-punctured-sphere-scattering|the same Gamma(2) scattering object]] and both classify its Riemann-zeta content as inherited/universal background rather than newly generated arithmetic signal.

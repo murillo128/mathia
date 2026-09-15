@@ -63,12 +63,14 @@ This is a purely structural corpus projection. A link here means only that the t
 ## Incremental prior-art corpus
 
 - [[research/prior_art/incremental/PA-bagchi-strong-recurrence-criterion]]
+- [[research/prior_art/incremental/PA-boolean-convolution-self-energy]]
 - [[research/prior_art/incremental/PA-cycle-graph-spectral-zeta-rh-reformulation]]
 - [[research/prior_art/incremental/PA-gamma-2-thrice-punctured-sphere-scattering]]
 - [[research/prior_art/incremental/PA-gcd-sums-from-poisson-integrals-on-the-polydisc]]
 - [[research/prior_art/incremental/PA-generalized-cusp-scattering-inverse-rigidity]]
 - [[research/prior_art/incremental/PA-helson-zeta-divisor-and-continuation-flexibility]]
 - [[research/prior_art/incremental/PA-ideal-polygon-cross-ratio-moduli]]
+- [[research/prior_art/incremental/PA-julia-nevanlinna-boundary-reduction]]
 - [[research/prior_art/incremental/PA-randomized-zeta-critical-gmc-boundary]]
 - [[research/prior_art/incremental/PA-resultant-potential-theory-on-compact-riemann-surfaces]]
 - [[research/prior_art/incremental/PA-riemann-primon-gas]]

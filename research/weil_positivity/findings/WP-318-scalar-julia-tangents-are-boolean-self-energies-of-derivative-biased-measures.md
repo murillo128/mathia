@@ -348,7 +348,7 @@ A surviving scalar program must now establish something genuinely arithmetic abo
 
 ## Prior-art and novelty audit
 
-Agler--Young places the reduction/augmentation operation itself squarely inside classical boundary Nevanlinna-Pick theory. Speicher--Woroudi supplies the standard Boolean `K`-transform/self-energy framework. The identity (8) should therefore **not** be advertised as a new transform or a new positivity theorem.
+[[research/prior_art/incremental/PA-julia-nevanlinna-boundary-reduction|Agler--Young]] places the reduction/augmentation operation itself squarely inside classical boundary Nevanlinna-Pick theory. [[research/prior_art/incremental/PA-boolean-convolution-self-energy|Speicher--Woroudi]] supplies the standard Boolean `K`-transform/self-energy framework. The identity (8) should therefore **not** be advertised as a new transform or a new positivity theorem.
 
 The durable result here is narrower and route-specific: the Mathia support-side normalized Julia response is exactly this classical Boolean self-energy after derivative biasing; the affine tangent formula (10) reduces every finite or infinite scalar tangent to a probability law; and the construction (27) shows by matched controls that the entire gap-supported probability class is realizable. This turns the previously open `infinite collective scalar Julia` escape into a prior-art redirect plus a sharply defined arithmetic probability-limit problem.
 

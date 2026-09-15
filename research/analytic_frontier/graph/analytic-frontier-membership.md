@@ -194,3 +194,5 @@ This stable projection inventories every current canonical Analytic Frontier fin
 - [[research/analytic_frontier/findings/ANF-182-endpoint-geometry-makes-k-over-a-sharp-derivative-flattening-threshold|ANF-182]]
 - [[research/analytic_frontier/findings/ANF-183-endpoint-memory-has-a-sharp-physical-twist-aperture-threshold|ANF-183]]
 - [[research/analytic_frontier/findings/ANF-184-odd-dilation-return-has-a-sharp-ell-squared-physical-threshold|ANF-184]]
+- [[research/analytic_frontier/findings/ANF-185-triangular-twist-averaging-turns-critical-aperture-into-a-universal-one-height-high-pass|ANF-185]]
+- [[research/analytic_frontier/findings/ANF-186-prime-rough-source-marginals-still-permit-square-root-endpoint-memory-under-exact-carrier-placement|ANF-186]]

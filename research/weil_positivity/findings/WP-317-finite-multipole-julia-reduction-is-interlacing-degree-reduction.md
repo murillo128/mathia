@@ -271,7 +271,7 @@ The same matched-control statement holds for every fixed `N`: the interlacing pa
 
 ## 4. Finite clusters are continued-fraction data, not a persistent completion
 
-Classical Julia--Nevanlinna reduction and augmentation preserve the Pick class. Independently, rational Herglotz--Nevanlinna functions admit finite continued-fraction descriptions with positive coefficients. Equations (6)-(10) identify the exact specialization relevant here: one regular Julia step lowers the positive atomic degree by one, while augmentation restores the removed degree together with the boundary-node data.
+Classical [[research/prior_art/incremental/PA-julia-nevanlinna-boundary-reduction|Julia--Nevanlinna reduction and augmentation]] preserve the Pick class. Independently, rational Herglotz--Nevanlinna functions admit finite continued-fraction descriptions with positive coefficients. Equations (6)-(10) identify the exact specialization relevant here: one regular Julia step lowers the positive atomic degree by one, while augmentation restores the removed degree together with the boundary-node data.
 
 Accordingly, the finite chain (11) is not a new cohomology, intersection form, or global positivity theorem. If all reduction/augmentation parameters are retained, the construction is reversible classical encoding of the original rational function. If they are discarded, the original prime-power support is progressively lost. Neither branch generates the missing archimedean Gamma contribution or global counterterms.
 

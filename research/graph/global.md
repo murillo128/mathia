@@ -58,11 +58,13 @@ This is the derived root graph for Mathia research. Canonical findings and mind 
 
 ## Integration boundary
 
-Stable memberships cover all 13 initialized research lines, 3,066 canonical findings, 249 durable intuitions and 58 canonical prior-art notes. Structural attachment asserts ownership only. It includes challenged findings without treating a review as withdrawal or endorsement.
+Stable memberships cover all 13 initialized research lines, 3,296 canonical findings, 344 durable intuitions and 60 canonical prior-art notes. Structural attachment asserts ownership only. It includes challenged findings without treating a review as withdrawal or endorsement.
 
 Semantic coverage is selective. The [[research/arithmetic_fidelity/graph/relations/euler-harmonic-collision-budget|Euler harmonic collision budget]] records AF-337/AF-338's finite-order refinement and its surviving source/observation restrictions. Nine direct reference links in those two findings preserve their original text exactly. No cross-line implication follows from this maintenance.
 
-`research/graph/semantic-inspection.json` records the completed mechanism scope, its verified endpoints and the earlier source-window base. The remaining changes in that window have structural membership but are not certified here as semantically reconciled. Existing mechanism notes remain scoped to their cited canonical evidence; their presence is not a current-frontier census.
+The [[research/weil_positivity/graph/relations/scalar-julia-derivative-biased-laws|scalar Julia classification]] resolves the persisted finite/infinite pure-measure response into classical boundary reduction and Boolean self-energy. Four source-to-prior-art references are native links; code-formatted finding references are preserved. Source-specific derivative-biased laws and independent finite–archimedean coupling remain outside the universal sign theorem.
+
+`research/graph/semantic-inspection.json` records the completed mechanism scopes, their verified endpoints and the earlier source-window base. The remaining changes in that window have structural membership but are not certified here as semantically reconciled. Existing mechanism notes remain scoped to their cited canonical evidence; their presence is not a current-frontier census.
 
 The Riemann Atlas v1 masses and territory states are unchanged. [[research/graph/atlas/telemetry/frontier-summary|Frontier telemetry]] distinguishes the selected source-backed episode from topology maintenance and states its sampling limits.
 <!-- graph:end -->

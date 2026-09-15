@@ -2,7 +2,7 @@
 id: RA-metrics-v1
 type: riemann-atlas-metrics
 atlas_version: 1
-source_revision: 856cbb07faa1977c9c44ec8443b15949edb113f3
+source_revision: 739a70a2ee4d76b35ec300ccbef9a289e302a799
 derived: true
 ---
 
@@ -28,7 +28,7 @@ Thus:
 - pruned share of visited mass = **18.3%**
 - hard-pruned share of all pruned mass = **78.9%**
 
-The v1 denominator and territory states are unchanged by this structural reconciliation and the scoped Euler harmonic refinement. Recomputed masses retain the values above. Complete membership is not complete semantic traversal, and no new territory state is inferred from added links.
+The v1 denominator and territory states are unchanged by this structural reconciliation and the scoped Euler harmonic and scalar Julia classifications. Recomputed masses retain the values above. Complete membership is not complete semantic traversal, and no new territory state is inferred from added links.
 
 ## Atlas scope and confidence
 
@@ -38,15 +38,15 @@ The five hard-pruned interfaces retain their existing scoped canonical evidence:
 
 ## Structural and semantic scope
 
-The exact tree projections contain 13 research lines, 3,066 findings, 249 durable intuitions and 58 prior-art notes. Membership changes and reversible source-reference formatting are graph maintenance, never frontier episodes. Semantic inspection remains selective as recorded in `research/graph/semantic-inspection.json`; uninspected source changes do not justify Atlas transitions.
+The exact tree projections contain 13 research lines, 3,296 findings, 344 durable intuitions and 60 prior-art notes. Membership changes and reversible source-reference formatting are graph maintenance, never frontier episodes. Semantic inspection remains selective as recorded in `research/graph/semantic-inspection.json`; uninspected source changes do not justify Atlas transitions.
 
 ## Frontier fertility
 
-The retained prospective series contains **20** classifiable episodes and **0** insufficient-evidence episodes. AF-337 and AF-338 contribute one coherent finite-order Euler-transport extension. This is a selected episode sample, not a census of the source window.
+The retained prospective series contains **20** classifiable episodes and **0** insufficient-evidence episodes. The set includes the AF-337/AF-338 finite-order Euler-transport extension and one WP-316–WP-318 scalar Julia prior-art redirect. Each is a coherent question, not a count of its source findings. This is a selected episode sample, not a census of the source window.
 
-- **FrontierFertilityEpisodes = 40.0%**
+- **FrontierFertilityEpisodes = 35.0%**
 - **BarrierRate = 50.0%**
-- **PriorArtCollisionRate = 10.0%**
+- **PriorArtCollisionRate = 15.0%**
 - **InternalDuplicateRate = 0.0%**
 
 See [[research/graph/atlas/telemetry/frontier-summary|frontier telemetry]] for per-line sample sizes and [[research/graph/atlas/telemetry/frontier-events.jsonl|the event set]] for exact source provenance. Retrospective and prospective evidence are separate, and no metric alone justifies a portfolio decision.
