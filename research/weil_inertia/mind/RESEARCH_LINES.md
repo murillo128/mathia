@@ -12,16 +12,26 @@ Finite negative inertia detects off-line packets exactly but can lose coercivity
 
 **Linked intuitions:** `MI-017-sliding-first-crossing-localization-produces-autocorrelation-symbols` through `MI-024-one-signed-complete-screening-imposes-a-support-measure-floor`.
 
-WI-284 says a completely screened one-signed first-crossing null mode `v>=0` satisfies `q_arch(v)=0`. WI-286--WI-293 studied the harder relaxation obtained by minimizing the prime-deleted form over **all signed functions** on the same support; that route exposed a negative odd pole direction and led to Lambert-width/rare-host conditions.
+WI-284 says a completely screened one-signed first-crossing null mode `v>=0` satisfies `q_arch(v)=0`. WI-286--WI-293 studied the harder relaxation obtained by minimizing the prime-deleted form over all signed functions on the same support; that route exposed a negative odd pole direction and led to Lambert-width/rare-host conditions.
 
-WI-294 restores the sign constraint of the actual null vector and changes the asymptotic frontier. For nonzero `v>=0`, the pole term is strictly positive. Therefore `q_arch(v)=0` forces the gamma contribution negative. The support-measure uncertainty bound from WI-287 then gives an absolute floor
+WI-294 restores the sign constraint of the actual null vector and shows that the positive pole term forces a positive support-measure floor. WI-295 makes that floor exact at the density-cap level. With
 
-`|{v>0}| > mu_0 > 0`.
+`H(mu)=(mu/(2pi)) int_(-pi/mu)^(pi/mu) [Re psi(1/4+iz/2)-log pi] dz`,
 
-For symmetric two-island complete screening, the prime number theorem alone forces the island width, hence total support measure, to tend to zero at large aperture. This contradicts the floor. The large one-signed completely screened two-island branch is therefore closed without a Cramér-scale prime-gap theorem or rare-host incidence estimate.
+the exact gamma multiplier makes `H` strictly decreasing with one positive zero `mu_*`, and complete one-signed screening forces
 
-The live complete one-signed question is now topological/measure-theoretic: can any many-component support retain a fixed positive total measure while avoiding every active prime-power translation and satisfying the null equation? Bounded-aperture two-island cases, sign-changing first modes and incomplete screening remain separate branches.
+`mu_*<|{v>0}|<=log 2`.
+
+WI-295 also adds an amplitude constraint unavailable to support packing alone. If two positive-support pieces are separated by distance `R`, their `L^1` masses obey
+
+`M_1(A)M_1(B) < -H(mu)/(4 cosh(R/2))`.
+
+Thus large separation forces exponential amplitude imbalance. Remote satellites can preserve total support measure only by becoming weak in `L^1` relative to the rest of the null vector.
+
+The live complete one-signed question is now quantitative rather than merely topological: can many-component complete screening reconcile the fixed positive support-measure budget with the exponential separated-mass tariff and `L^2` normalization, or can source-side regularity convert that tariff into a contradiction? Bounded-aperture cases, sign-changing first modes and incomplete screening remain separate branches.
 
 ## Keep constrained null-vector geometry and unrestricted spectral relaxation separate
 
-WI-286--WI-293 remain valid for the unrestricted supported spectral bottom and useful as diagnostics of the relaxation gap. WI-293 also remains a provenance warning: an unverified prime-gap headline cannot be imported merely because it would close a relaxed branch. But those rare-host estimates are no longer load-bearing for the large **one-signed** symmetric two-island contradiction after WI-294.
+WI-286--WI-293 remain valid for the unrestricted supported spectral bottom and useful as diagnostics of the relaxation gap. WI-294--WI-295 show why they cannot be substituted for the actual one-signed null vector: the sign constraint makes the pole positive, which in turn forces both negative gamma energy and a support/amplitude budget.
+
+The earlier rare-host estimates are no longer load-bearing for the large one-signed two-island contradiction, and support topology alone is no longer the full frontier for many-component escapes. The missing step is a bridge from the exact `L^1` separated-mass tariff plus positive support measure to the `L^2` geometry of the normalized first null mode.

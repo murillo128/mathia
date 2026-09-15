@@ -1,25 +1,33 @@
-# MI-017 — Critical collision counts need the exact balanced-occupancy baseline
+# MI-017 — Critical collision counts need a stochastic occupancy baseline
 
-**Evidence level:** exact finite occupancy minimization plus critical-scale specialization from [VIS-227](../../findings/VIS-227-critical-phase-cell-collisions-have-balanced-occupancy-floor.md)
+**Evidence level:** exact deterministic occupancy minimization and exact independent-multinomial collision moments from [VIS-227](../../findings/VIS-227-critical-phase-cell-collisions-have-balanced-occupancy-floor.md) and [VIS-228](../../findings/VIS-228-multinomial-cell-collisions-have-extensive-excess-above-balanced-floor.md)
 
-At the critical prime-phase scale, a positive same-cell collision count is not automatically evidence of arithmetic clustering. If `N` points occupy `M` cells with counts `n_j` and
+At the critical prime-phase scale, neither a positive same-cell collision count nor a positive **linear excess above the balanced occupancy minimum** is automatically evidence of arithmetic clustering.
 
-`S=sum_j binom(n_j,2)`, 
+If `m` points occupy `J` cells with counts `n_j` and
 
-then writing `N=qM+r`, `0<=r<M`, gives the exact deterministic floor
+`S=sum_j binom(n_j,2)`,
 
-`S_min(N,M)=M binom(q,2)+rq`,
+then writing `m=qJ+r`, `0<=r<J`, gives the deterministic minimum
 
-attained exactly by balanced occupancies `q` and `q+1`.
+`S_min(m,J)=J binom(q,2)+rq`.
 
-For the VIS coherence cells at `H=lambda y/log y`, the prime count and cell count satisfy
+VIS-228 adds the missing stochastic calibration. Under independent uniform allocation of the same `m` labelled points to the same `J` cells,
 
-`m/J -> rho_lambda = eta_v/(8 lambda)`.
+`E[S]=binom(m,2)/J`,
 
-Thus the critical family has a real combinatorial phase boundary before any arithmetic organization is examined. If `lambda>eta_v/8`, occupancy alone forces no positive linear collision floor. If `lambda<eta_v/8`, it does; in the first nontrivial band `eta_v/16<lambda<eta_v/8`,
+`Var(S)=binom(m,2)(1/J)(1-1/J)`,
 
-`S_min = (1/2-4lambda/eta_v+o(1)) y/log y`.
+and
 
-The reusable discriminator is therefore not raw collision mass but **excess over the balanced floor**, `S-S_min(m,J)`, or a matched control conditioned on the same `(m,J)`. Otherwise a universal pigeonhole effect can be mistaken for prime-specific coherence exactly at the transition where cell occupancy becomes order one.
+`E[S-S_min]=q(J-1)/2+r(r-1)/(2J)`.
 
-This does not determine the critical Ising/torus/SDP objective, a sharp constant, optimizer geometry, a stochastic control law, or dynamical access time. It only calibrates one proposed critical statistic and removes its forced combinatorial component before arithmetic interpretation.
+If `m/J->rho>0`, the expected excess above the deterministic floor is `Theta(J)`, whereas the standard deviation is only `Theta(sqrt(J))`. Thus `S-S_min` being extensive is itself generic under the simplest independent null.
+
+For the VIS coherence cells at `H=lambda y/log y`, `m/J->eta_v/(8lambda)`, so the critical pair-collision discriminator begins only after **stochastic centering**. Under the equal-cell null a natural preliminary normalization is
+
+`Z=[S-binom(m,2)/J]/sqrt(binom(m,2)(1/J)(1-1/J))`.
+
+Even that is not yet a prime-specific theorem. If the intended one-point cell probabilities are nonuniform, the independent null mean becomes `binom(m,2) sum_j p_j^2`; stronger controls may also need to preserve logarithmic-gap or cell-origin structure. A residual is interpretable only after those admitted structures are matched.
+
+The reusable boundary is therefore: **deterministic extremality and stochastic typicality are different baselines**. Subtracting a pigeonhole floor removes forced geometry but can leave an order-`J` generic random contribution. If matched stochastic controls absorb the centered pair statistic too, the next observable must retain information not already encoded by one-point occupancy, rather than re-normalize the same collision count again.

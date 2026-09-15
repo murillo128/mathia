@@ -2,19 +2,23 @@
 
 This file holds the current mathematical questions suggested by the durable Nyman--Beurling intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Separate actual-zero geometry from formal high-rank interpolation
+## Turn source-specific recurrence visibility into a quantitative target margin
 
-**Linked intuitions:** `MI-001-target-aware-gram-geometry-must-carry-absolute-scale`, `MI-003-low-gram-spectrum-is-cheap-target-occupation-is-the-signal` through `MI-021-linear-rank-formal-zero-powers-are-natural-prefix-universal`.
+**Linked intuitions:** `MI-001-target-aware-gram-geometry-must-carry-absolute-scale`, `MI-003-low-gram-spectrum-is-cheap-target-occupation-is-the-signal` through `MI-022-actual-zero-counting-restores-recurrence-visibility-below-an-explicit-rank-threshold`.
 
-NB-123--NB-125 give a genuine source-faithful separator on geometric grids: finite zero-power packets obey annihilating recurrences, and the missing harmonic root creates a positive target-angle margin when enough recurrence depth is visible. NB-126--NB-128 then show that fixed finite phase systems alias globally, while the full natural prefix restores a quantitative local ordinate modulus inside a height window of size `Theta(R)`.
+NB-123--NB-125 give a genuine source-faithful separator on geometric grids: finite zero-power packets obey annihilating recurrences, and the missing harmonic root creates a positive target-angle margin when enough recurrence depth is visible. NB-126--NB-128 show that fixed finite phase systems alias globally, while the full natural prefix restores a quantitative local ordinate modulus inside a height window of size `Theta(R)`.
 
 NB-129 supplies the amplitude splice and its sharp ambient barrier. At height `|T|~m`, target-bearing natural-grid phase visibility requires target-angle defect `O(1/|T|)`, and an endpoint-preserving matched sequence with only `Theta(1/m)` excess energy can erase the entire phase-sensitive block.
 
-NB-130 closes the immediate appeal to finite recurrence or exponential-polynomial analyticity **by themselves**. For every prefix length `R`, arbitrary values on `1,...,R` are interpolated exactly by `R` distinct formal zero powers with common real part in `(1/2,1)`, arbitrarily high ordinate, and ordinates confined to an arbitrarily short interval. The interpolant still satisfies a genuine degree-`R` recurrence; the issue is that only `O(log R)` geometric samples lie below the natural cutoff, so the recurrence has no leverage at linear rank.
+NB-130--NB-131 then show why finite recurrence and exact prefix data do not suffice for arbitrary formal packets. Rank-`R` formal zero powers can interpolate arbitrary values on `1,...,R`, and one invertible support shape can be translated to every height with only a unitary row modulation while its formal Burnol defect tends to zero.
 
-NB-131 closes the remaining fixed-height loophole. Once one such support shape is invertible, translating it vertically multiplies the prefix evaluation matrix only by a unitary row phase. The same prefix is therefore reinterpolated **exactly at every height** with no additional height-dependent condition-number cost, while the formal finite-packet Burnol defect tends to zero like `S^-2`. Along simultaneous phase returns, even the re-solved coefficients and any fixed collection of periodic recurrence observables return to their initial values. Exact finite-prefix equality plus height-blind finite descriptors therefore cannot certify positive Burnol mass in the formal packet class.
+NB-132 now separates that formal class from genuine zeta zeros in an explicit regime. For right-half-plane zeros in a fixed-width band `(T,T+W]` with `T+W<=R^A`, symmetry plus explicit zero counting gives
 
-The live theorem must distinguish the **actual zeta-zero packet** from this formal interpolation class quantitatively. Viable inputs are actual zero locations/counting/spacing, a rank bound relative to visible prefix depth, or coefficient/model-space conditioning uniform in the growing cutoff. Generic analyticity, high ordinate, narrow ordinate support, finite recurrence, exact fixed-prefix data and finite periodic recurrence descriptors are no longer source separators without such a quantitative law.
+`d(F) <= A(W/(4 pi)+0.10076) log R + 0.24460 log log R + O_(A,W)(1)`.
+
+Whenever `A(W/(4 pi)+0.10076)<1/log q`, this lies below the `q`-geometric recurrence-visibility budget, so the NB-124 annihilator is actually visible inside the natural cutoff. The formal linear-rank interpolation control is therefore not source-faithful in this polynomial-height/narrow-band regime.
+
+The live theorem inside that regime is now quantitative conditioning: turn the visible recurrence into a lower bound on the missing-root margin relative to the weighted annihilator norm at the Burnol scale. Outside the regime, especially at superpolynomial height or growing ordinate width, rank visibility itself remains open.
 
 ## Push the canonical shell discrepancy toward a near-linear scale
 
@@ -24,6 +28,6 @@ The shell decomposition still reduces the rooted-mixing channel to a quantitativ
 
 ## Keep recurrence order, natural-prefix resolution, target angle, conditioning and provenance separate
 
-NB-128 buys local phase stability by growing the observation prefix. NB-129 shows that target visibility still costs reciprocal-height amplitude accuracy. NB-130 shows that recurrence/analyticity impose no finite-prefix restriction once model rank is allowed to grow linearly with the prefix. NB-131 then shows that absolute support height itself is not the missing conditioning resource: vertical translation is unitary on the natural-prefix rows and can drive formal Burnol mass to zero while keeping the prefix exact.
+NB-128 buys local phase stability by growing the observation prefix. NB-129 shows that target visibility still costs reciprocal-height amplitude accuracy. NB-130--NB-131 show that arbitrary formal rank can defeat finite-prefix and height-blind descriptors. NB-132 shows that actual-zero counting can restore rank visibility in a concrete source-faithful regime, but it does not produce a uniform Burnol-scale gap.
 
-The surviving discriminator is therefore whether **actual-zero geometry keeps the effective rank and conditioning inside the regime where recurrence/model-space structure is visible to the target**. The bad conditioning may grow with `R` or narrow internal spacing, and actual zeta zeros cannot be translated freely; those are genuine source-specific gates rather than technical nuisances.
+The surviving discriminator is therefore not simply “actual zeros versus formal powers.” One must state which source law limits effective rank, whether the observation prefix resolves that rank, and whether the resulting annihilator remains quantitatively conditioned strongly enough for the target scale.

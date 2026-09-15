@@ -30,14 +30,12 @@ and the exact torus and real SDP objectives have the same order. Since `R_v(y,H)
 
 up to fixed constants. The strictly subcritical static question is therefore closed at the coarse scale: neither a different relaxation nor subtler global phase optimization can change the asymptotic order.
 
-VIS-227 calibrates the first critical-scale collision statistic. At `H=lambda y/log y`, if `m` is the number of top-half primes and `J` the number of coherence cells, then `m/J -> eta_v/(8lambda)`. The exact finite occupancy minimum
+VIS-227 identifies the deterministic balanced-occupancy floor for critical phase-cell collisions. VIS-228 then shows that subtracting this floor is still insufficient: under independent uniform allocation with the same `(m,J)`, `E[S-S_min]=Theta(J)` while `sd(S)=Theta(sqrt(J))`. An extensive positive excess over the balanced floor is therefore generic even under the simplest stochastic null.
 
-`S_min(m,J)=J binom(q,2)+rq`,  where `m=qJ+r`,
+The critical pair-collision question begins only after stochastic centering against a matched occupancy law. The current local clue asks whether a centered residual survives fixed cell-origin perturbations and controls preserving the intended one-point density or logarithmic-gap structure. If pair collisions become generic under those controls, the next statistic must be genuinely different, such as a multiscale persistence or direction-sensitive phase observable.
 
-shows that for `lambda<eta_v/8` a positive linear number of same-cell pairs is forced even for perfectly balanced occupancies. Raw collision mass is therefore not a prime-specific signal at critical scale; the relevant statistic is excess above `S_min(m,J)` or a matched control with the same `(m,J)`.
+## Keep static scale, deterministic floor, stochastic baseline, optimizer recovery and dynamical access separate
 
-Live questions are now the critical/supercritical objective scale after removing such universal occupancy baselines, sharp constants and optimizer geometry inside the known scale, representation-matched controls that distinguish arithmetic organization rather than magnitude alone, and the one-parameter time needed for the physical prime-log orbit to approach a near-optimal torus point.
+VIS-226 fixes the strictly subcritical static supremum scale but does not identify the exact optimizer, a canonical sign pattern, a sharp constant or any recurrence/access time. VIS-227 fixes the deterministic balls-in-cells minimum at `H asy y/log y`. VIS-228 fixes the mean/variance of the simplest independent occupancy null and proves that deterministic-floor excess is not itself arithmetic evidence.
 
-## Keep static scale, critical baselines, optimizer recovery and dynamical access separate
-
-VIS-226 fixes the strictly subcritical static supremum scale but does not identify the exact optimizer, a canonical sign pattern, a sharp constant or any recurrence/access time. VIS-227 fixes one universal combinatorial baseline at `H asy y/log y`, but it does not determine the critical Ising/torus/SDP scale or prove any prime-specific excess above that floor. These are genuinely separate currencies rather than unfinished parts of one energy estimate.
+These are separate currencies. A critical statistic must first remove the universal deterministic constraint, then compare with an admitted stochastic control, and only then ask whether any surviving residual influences the Ising/torus/SDP objective or the physical prime-log orbit.
