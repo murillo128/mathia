@@ -75,7 +75,7 @@ h_{j+1}>2T_j
 \tag{8}
 \]
 
-and the quantities introduced below are strictly ordered toward `Theta`. This is possible by choosing each `U_(j+1)` sufficiently large after `U_j`.
+and the quantities introduced below are strictly ordered toward `Theta`. This is possible by choosing each \(U_{j+1}\) sufficiently large after `U_j`.
 
 Set
 
@@ -117,7 +117,7 @@ Since `delta_j >> U_j^-2`, both real parts lie strictly below `Theta`. By taking
 
 Include the conjugates and functional-equation mirrors of these points. If one wants the formal source to lie in the attained-edge branch literally, also include one fixed symmetric quartet with real parts `Theta` and `1-Theta`; the edge points are excluded from the strict-subedge packet because that packet uses `beta<Theta`.
 
-Condition (8) has a useful consequence. At the cutoff `T_j`, no pair from stage `j+1` or later has entered, because even the lower ordinate `h_(j+1)` already exceeds `T_j`. All earlier pairs have entered, and (12) makes `rho_( *,j)` the rightmost member of the strict-subedge core. Therefore the exact `RE-140` rightmost gain at `(U_j,T_j)` is anchored by the intended pair \((\rho_{0,j},\rho_{*,j})\), not by an accidental point from another stage.
+Condition (8) has a useful consequence. At the cutoff `T_j`, no pair from stage `j+1` or later has entered, because even the lower ordinate \(h_{j+1}\) already exceeds `T_j`. All earlier pairs have entered, and (12) makes \(\rho_{*,j}\) the rightmost member of the strict-subedge core. Therefore the exact `RE-140` rightmost gain at `(U_j,T_j)` is anchored by the intended pair \((\rho_{0,j},\rho_{*,j})\), not by an accidental point from another stage.
 
 The construction is one fixed infinite spectrum. It is not a different adversarial spectrum chosen separately for each `U_j`.
 
@@ -137,7 +137,7 @@ we have uniformly on the fixed strip
 \tag{14}
 \]
 
-At `rho_(0,j)`, equations (9)--(10) give
+At \(\rho_{0,j}\), equations (9)--(10) give
 
 \[
 \begin{aligned}
@@ -159,7 +159,7 @@ Hence
 \tag{16}
 \]
 
-So `rho_(0,j)` satisfies exactly the algebraically strong-atom hypothesis used by `RE-140` and `RE-141`.
+So \(\rho_{0,j}\) satisfies exactly the algebraically strong-atom hypothesis used by `RE-140` and `RE-141`.
 
 The rightmost atom differs horizontally by only
 
