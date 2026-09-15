@@ -8,21 +8,19 @@ This file holds the current mathematical questions suggested by the durable arit
 
 AF-351--AF-365 separate exact discriminator survival from target-relative inversion cost. Every fixed real Riesz order has a zero-free Mellin multiplier on `Re s>0`, so a **global eventual** profile error `O(X^theta)` preserves every Dirichlet principal part in `Re s>theta`. At the same time, finite-band coordinate recovery can cost `e^u`, `e^(u+v)`, or `e^(u+v)/sqrt(v)` depending on the target. Exact pole fidelity and stable reconstruction are therefore different currencies.
 
-AF-366 closes the finite-horizon loophole sharply. Any observation that factors through finitely many coefficients is blind to a tail
+AF-366 closes the unrestricted finite-horizon loophole: a finite coefficient prefix is blind to arbitrarily small raw tails that insert prescribed critical-strip poles. AF-367 then strengthens the source-class audit. For every finite cutoff, positive Beurling generalized-prime systems can agree exactly with the ordinary prime/integer data below that cutoff and both satisfy near-square-root generalized-integer counting, while having opposite RH zero geometry. Finite exact arithmetic data do not become zero-selective merely by adding positivity, Euler-product multiplicativity and a coarse `x+O(x^(1/2)exp(c(log x)^(2/3)))` counting class.
 
-`d_n = r n^(rho-1) 1_(n>N)`
+The complementary source gate is exact on the analytic side: if two coefficient sequences differ by `O(n^(theta-1))` in the tail, their Dirichlet transforms differ holomorphically on `Re s>theta`; hence all principal parts there agree. Away from the boundary, the tail transform is `O(N^-eta/eta)` on `Re s>=theta+eta`.
 
-that inserts a prescribed Dirichlet pole at `rho`, even though its unweighted tail amplitude tends to zero as `N->infinity` when `Re rho<1`. Thus a large finite Riesz window does **not** inherit AF-365's global pole-fidelity conclusion merely by being accurate on its visible prefix.
-
-The complementary source gate is exact: if two coefficient sequences differ by `O(n^(theta-1))` in the tail, their Dirichlet transforms differ holomorphically on `Re s>theta`; hence all principal parts there agree. Away from the boundary, the tail transform is bounded by `O(N^-eta/eta)` on `Re s>=theta+eta`. The live question is therefore to identify an independently justified arithmetic tail/continuation class, or another genuinely nonlocal certificate, strong enough for the destination to consume the preserved prime-pole discriminator without reconstructing the whole source.
+The live question is now narrower: identify an independently justified **ordinary-arithmetic** completion law that excludes both unrestricted pole-carrying tails and the Beurling matched controls. Candidate resources must be stated as actual theorems — exact ordinary-integer support, stronger global cancellation, a rigid continuation/growth class, functional-equation coupling, or another nonlocal relation — and must be shown to force the zero discriminator consumed by the destination.
 
 ## Couple the preserved prime-pole discriminator to a stably usable destination
 
 **Linked intuitions:** `MI-041-one-riesz-order-crosses-conditioning-without-moving-the-zero-discriminator`, `MI-042-finite-prefix-pole-fidelity-needs-a-tail-class`.
 
-AF-365 says what survives under global transformed control; AF-366 says what finite data cannot determine over an unrestricted completion class. A destination theorem must therefore declare three objects separately: the finite data actually observed, the admissible source-tail or continuation class, and the topology/modulus in which the pole-sensitive conclusion is inferred.
+AF-365 says what survives under global transformed control; AF-366--AF-367 say what finite data and broad completion categories do not determine. A destination theorem must therefore declare separately the finite data actually observed, the admissible source-tail/source category, and the topology or modulus in which the pole-sensitive conclusion is inferred.
 
-If the destination factors through a linear Hilbert target, derive its representer and Picard profile and price the `u,v` costs. If it uses Mellin continuation or principal parts, prove the source-tail/global hypothesis that makes the continuation unique and quantitatively usable. Exact finite-horizon data, increasingly large `N`, and small unweighted tail coefficients are not substitutes for that hypothesis.
+If the destination factors through a linear Hilbert target, derive its representer and Picard profile and price the `u,v` costs. If it uses Mellin continuation or principal parts, prove the source-tail/global hypothesis that makes the continuation unique and quantitatively usable. Exact finite-horizon data, increasingly large `N`, small unweighted tails, or Beurling-scale counting regularity are not substitutes for that hypothesis.
 
 ## Build cancellation-coherent source access to the Li root-rate class
 
@@ -38,4 +36,4 @@ AF-320--AF-336 separate exact recovery, conditioning, support-union geometry and
 
 ## Keep source class, transform fidelity, finite observation and target conditioning as different currencies
 
-Observation horizon, admissible tail class, smoothing order, principal-part fidelity, absolute attenuation, inverse conditioning, target spectral distribution, destination topology and destination slack are distinct resources. AF-362--AF-364 price target recovery, AF-365 proves global principal-part survival, and AF-366 shows that finite-prefix observation has an enormous completion fibre unless the source class constrains the unseen tail. Future work must keep these layers separate until a theorem explicitly connects them.
+Observation horizon, admissible source category, tail class, smoothing order, principal-part fidelity, absolute attenuation, inverse conditioning, target spectral distribution, destination topology and destination slack are distinct resources. AF-362--AF-364 price target recovery, AF-365 proves global principal-part survival, AF-366 exposes unrestricted finite-prefix completion freedom, and AF-367 shows that a broad positive Beurling completion class remains target-mixed even with near-square-root counting. Future work must keep these layers separate until a theorem explicitly connects them.

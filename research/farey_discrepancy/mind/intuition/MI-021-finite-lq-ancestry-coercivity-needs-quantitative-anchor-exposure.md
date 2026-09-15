@@ -1,6 +1,6 @@
-# MI-021 — Finite-`L^q` binary ancestry coercivity is exactly quantitative anchored cut exposure
+# MI-021 — Finite-`L^q` binary ancestry coercivity is exactly anchored cut exposure, and fixed-seed expansion requires singular endpoint weight
 
-**Evidence level:** exact/proved classification from [FD-147](../../findings/FD-147-finite-seed-ancestry-coercivity-is-exactly-an-anchored-cut-problem.md), refining the disconnected-component gauge of FD-145 and the rank-wall dilution example of FD-146.
+**Evidence level:** exact/proved classification from [FD-147](../../findings/FD-147-finite-seed-ancestry-coercivity-is-exactly-an-anchored-cut-problem.md), with the nonuniform-weight endpoint quantified by [FD-148](../../findings/FD-148-finite-seed-anchored-expansion-forces-singular-endpoint-marginals.md).
 
 Let `G=(V,E)` carry vertex and edge probability measures `nu,eta`, let `D` be the anchored seed, and let `b:V->{-1,+1}` equal `+1` on `D`. If `A_b={b=-1}`, then for every finite `q`,
 
@@ -14,16 +14,18 @@ Every admissible `A subset V\D` occurs as such a binary orientation, so the opti
 
 `h_D(nu,eta)=inf_A eta(partial A)/nu(A)`.
 
-This separates two resources sharply. Connectivity says only that no admissible cut has zero observed boundary; finite-`L^q` stability requires a **uniform lower bound on the boundary mass of every macroscopic flipped region** in the actual normalization. For `q=infinity`, the mass disappears and connectivity is again the relevant binary condition.
+Connectivity is only the zero-boundary endpoint. Finite-`L^q` stability requires a **uniform lower bound on observed boundary mass for every macroscopic flipped region** in the actual source-native weights.
 
-On the full squarefree ancestry graph with uniform measures, a fixed finite seed cannot provide that exposure. Let `D` be the finite squarefree divisor closure of the prescribed seed and flip the orientation on `V_T\D`. The full graph has `|E_T| ~ T log log T/zeta(2)`, while the boundary of fixed `D` has size `~ kappa_D T/log T`. Hence
+FD-148 shows that simply allowing arbitrary nonuniform weights does not make this gate free. On the squarefree ancestry graph, test the cut given by the complement of a fixed finite divisor-closed seed `D`. Its boundary has two endpoint descriptions: mass leaving the fixed seed and mass entering the one-step child set `C_D(T)`. If the edge parent marginal is dominated by `K_T` times the uniform vertex scale, then
 
-`eta_T(partial D) = Theta_D(1/(log T log log T))`,
+`h_(D,T) <= O_D(K_T/T)`.
 
-while the flipped vertex mass tends to one. The ancestry defect is therefore `Theta_D((log T log log T)^(-1/q))` although coefficient error tends to `2`, and
+If the child marginal is dominated by `L_T` times the uniform scale, then
 
-`C^(bin)_(q,D)(T) >= c_D (log T log log T)^(1/q)`.
+`h_(D,T) <= O_D(L_T/log T)`.
 
-The reusable test for a proposed ancestry observable is thus not “are all coefficients connected to the anchor?” but “what is its anchored cut profile under the exact source-native weights?” Uniformly adding local edges or fixing finitely many coefficients cannot repair a vanishing cut ratio.
+Consequently any weighting with `K_T=o(T)` or `L_T=o(log T)` still has vanishing anchored expansion. A positive fixed-seed limit forces singular endpoint concentration: order-one edge mass must remain on a fixed seed boundary, which corresponds to average parent amplification of order `T`, or to logarithmic amplification on the relevant child/prime rays. For `D={1}`, the prime fan itself must receive `Omega(log T)` overweight relative to uniform normalization.
 
-**Boundary.** The statement is exact for binary orientations and finite `L^q`. It does not exclude nonuniform source-native weights with a uniform cut lower bound, `L^infinity`, growing/direct anchoring, or genuinely nonlocal Farey/Fourier functionals that do not reduce to local coefficient recovery.
+The reusable test is therefore sharper than “choose better weights.” A source-native weighting must explain **where the compensating endpoint mass comes from and why that singular concentration is intrinsic rather than inserted to force coercivity**. Uniformly comparable marginals cannot solve the fixed-seed finite-`L^q` problem.
+
+**Boundary.** The result is exact for the fixed finite seed and local ancestry cut geometry. It does not exclude a growing anchor, `L^infinity`, deliberately singular but independently justified arithmetic weights, or genuinely nonlocal Farey/Fourier functionals. It says only that nonuniform local weighting pays an explicit endpoint-concentration tax before it can yield uniform anchored expansion.

@@ -2,34 +2,28 @@
 
 This file holds the current mathematical questions suggested by the durable Nyman--Beurling intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Change source resource beyond positive exterior Poisson sampling
+## Change source resource beyond the classified positive exterior Poisson cone
 
-**Linked intuitions:** `MI-001-target-aware-gram-geometry-must-carry-absolute-scale` through `MI-031-euler-product-poisson-mass-is-a-local-confluence-budget`.
+**Linked intuitions:** `MI-001-target-aware-gram-geometry-must-carry-absolute-scale` through `MI-032-zero-mass-poisson-cancellation-exports-an-equal-negative-lobe`.
 
-NB-123--NB-143 separate recurrence visibility, conditioning, target occupation and generic xi-type realizability. NB-144 supplies a genuinely arithmetic local discriminator: for a polynomially small right-half packet centered at `beta=1-epsilon`, the Euler-product half-plane plus zero-side Poisson positivity gives the sharp separated-packet coefficient, and in the moving near-one regime it yields `o(log G)` occupancy.
-
-NB-146 corrected the reflection-orbit bookkeeping at the critical line. NB-147 now closes the arbitrary tight interior packet geometry by identifying the exact invariant: the **reflection closure** `Chat=C union J(C)`. Positive exterior Poisson sampling with only the pointwise absolute Euler-product majorant yields
-
-`sum_(rho in Chat) 1/(1-Re rho) <= (1/2+o(1)) log G`,
-
-and one exterior sample asymptotically saturates this bound. Thus the whole positive-sampling architecture is minimax-classified by the weighted reflection closure, not by the packet center.
-
-For near-critical packets, if `d_G=|C_G|` and `b_G` counts packet occurrences whose reflected partner is absent, the closure law becomes
+NB-123--NB-143 separate recurrence visibility, conditioning, target occupation and generic xi-type realizability. NB-144--NB-147 then classify the positive exterior-Poisson resource. For any tight interior packet, the charged object is its weighted functional-equation **reflection closure**. Near the critical line, if `d_G` counts packet occurrences and `b_G` counts occurrences whose reflected partner is absent, then
 
 `d_G+b_G <= (1/4+o(1)) log G`.
 
-Writing `q_G=b_G/d_G`, the packet coefficient is `1/[4(1+q_G)]`: `1/4` for reflection-saturated/self-dual packets, `1/8` for fully one-sided packets, and a continuous interpolation between them. The apparent boundary jump of NB-146 was therefore a change in orbit exposure, not a discontinuity of the Poisson kernel.
+The `1/4` reflection-saturated and `1/8` fully one-sided coefficients are endpoints of the same orbit-exposure law. Arbitrary positive exterior resampling cannot improve this leading closure budget while the prime side is controlled only by the pointwise absolute Euler-product majorant.
 
-The fixed-interior problem remains outside the positive cone. A new theorem must use a different source resource: signed/oscillatory combinations with controlled zero-side indefiniteness, prime-side cancellation/correlation beyond the pointwise majorant, higher local moments/pair laws, or a theorem forcing every surviving reflection-saturated packet to be Nyman-target-bearing.
+NB-148 now sharpens the most obvious escape. A signed exterior sampler of total mass zero can cancel the universal leading Hadamard `(1/2)log G` term, but its zero-side Poisson kernel then has zero vertical integral. Any positive lobe of integrated mass `A` is accompanied by exactly `A` negative mass. Cancelling the universal logarithmic budget therefore destroys the positivity that made NB-147 minimax.
 
-## Treat reflection closure, not packet center, as the occupancy currency
+The fixed-interior problem has become a precise sign-allocation problem. A stronger theorem must either control the actual zero distribution in the negative lobe of a signed sampler, obtain prime-side cancellation/correlation strong enough to pay for it, use higher target-bearing information not expressible as one signed Poisson kernel, or prove that every surviving reflection-saturated packet is Nyman-target-bearing. “Use signed combinations” is not itself an escape once the equal negative-lobe debt is charged.
 
-Any packet approaching the critical line must track which functional-equation partners are already included. Near maximal `1/4 log G` occupancy forces `b_G=o(log G)`, so a nearly saturated packet is itself nearly reflection-saturated. This is useful structure, but it still allows `Theta(log G)` local zero packets and does not supply target coercivity.
+## Treat reflection closure and signed-lobe conservation as different exact currencies
 
-Future local zero arguments should therefore formulate their positive Poisson budget on the closure before comparing geometries. Adding more positive exterior samples cannot improve that weighted invariant; any stronger occupancy theorem must leave the classified proof cone.
+Positive sampling charges orbit exposure; zero-mass signed sampling cancels the leading universal term only by exporting equal negative kernel mass. These are complementary boundaries, not competing estimates. A future sampler should state which regime it inhabits and identify the independent theorem that controls the part of the zero measure on which its kernel is negative.
+
+Near maximal `1/4 log G` positive occupancy still forces `b_G=o(log G)`, hence near reflection saturation, but this allows `Theta(log G)` packets. Signed sampling does not remove that obstacle automatically; it changes the proof obligation from occupancy to location-sensitive sign control.
 
 ## Push canonical shell discrepancy independently
 
 **Linked intuition:** `MI-002-small-shell-discrepancy-can-destroy-rooted-visibility`.
 
-The shell decomposition still reduces the rooted-mixing channel to a quantitative coefficient discrepancy. The live theorem is whether the canonical arithmetic coefficients force near-linear discrepancy on the relevant shell family without assuming the Nyman distance estimate being targeted. This route is distinct from the zero-packet Poisson budget above.
+The shell decomposition still reduces the rooted-mixing channel to a quantitative coefficient discrepancy. The live theorem is whether the canonical arithmetic coefficients force near-linear discrepancy on the relevant shell family without assuming the Nyman distance estimate being targeted. This route is distinct from the zero-packet Poisson budgets above.

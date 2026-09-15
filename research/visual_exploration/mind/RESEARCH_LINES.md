@@ -2,28 +2,30 @@
 
 This file holds the current mathematical questions suggested by the durable visual-exploration intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Test a frozen prime-gap residual only after exact representation-matched calibration
+## Test a frozen prime-gap residual only after exact representation-matched nuisance calibration
 
-**Linked intuitions:** `MI-009-stable-decoding-is-a-collision-geometry-question` through `MI-024-dirichlet-gap-tent-variance-reduces-to-overlap-classes`.
+**Linked intuitions:** `MI-009-stable-decoding-is-a-collision-geometry-question` through `MI-025-gap-concentration-identifies-dirichlet-nuisance-but-same-sample-plugin-remains-coupled`.
 
-VIS-237--VIS-241 progressively quotient grid-origin phase, artificial Poisson count noise, independently specified one-point intensity and endpoint-cut phase while preserving the spacing geometry that the test is supposed to measure. Symmetric Dirichlet cyclic gaps with independent rotation provide a fixed-count, exactly uniform-intensity dependence family; `alpha=1` is precisely iid-uniform circular spacing.
+VIS-237--VIS-241 quotient grid-origin phase, Poisson count noise, independently specified one-point intensity and endpoint-cut phase while preserving the spacing geometry to be tested. Symmetric Dirichlet cyclic gaps with independent rotation provide a fixed-count, exactly uniform-intensity dependence family; `alpha=1` is precisely iid-uniform circular spacing.
 
-VIS-242 reduced the cut-averaged tent variance to low-dimensional Dirichlet expectations indexed by cyclic arc lengths and overlap cardinality. VIS-243 closes the remaining deterministic bookkeeping. Complement symmetry reduces arc lengths to `1<=r<=floor(m/2)` with the sole half-weight at `r=m/2` for even `m`; for `a=min(r,s)` and `b=max(r,s)`, the overlap multiplicities are exactly
+VIS-242 reduces the cut-averaged tent variance to low-dimensional Dirichlet overlap expectations. VIS-243 closes the deterministic displacement bookkeeping by complement symmetry and exact overlap multiplicities, leaving a finite explicit calibration for every predeclared `alpha`.
 
-`N_0=m-r-s+1`,  `N_a=b-a+1`,  `N_k=2` for `1<=k<a`.
+VIS-244 resolves the remaining nuisance-identification ambiguity without resolving confirmation itself. The complete-gap concentration
 
-Hence the general-`alpha` variance is a fully explicit finite weighted sum of the low-dimensional expectations `C_(r,s,k)`, with no complementary-arc or displacement enumeration left. At `alpha=1`, the independent audit remains the closed polynomial variance from VIS-242.
+`C=m sum_i X_i^2-1`
 
-The representation-matched null calibration is therefore mathematically explicit for every **predeclared** Dirichlet parameter. The next question is genuinely confirmatory: freeze `alpha` or a stronger null independently, evaluate the deterministic calibration, and test whether the prime configuration leaves a stable residual outside that envelope.
+satisfies `E[C]=(m-1)/(m alpha+1)` with exact finite-sample variance, so it provides a concrete method-of-moments channel for `alpha` that does not reuse `bar T`. But `C` and `bar T` are computed from the same gap vector and are generally dependent.
 
-A surviving point-process residual is still not an RH mechanism. It must be translated back through the signed prime-phase kernel and shown to survive the previously established moment-null and amplitude gates.
+The confirmation fork is therefore exact. Either freeze `alpha` from theory or genuinely held-out information and use the fixed-parameter VIS-242--VIS-243 null, or derive/validate the joint `(C,bar T)` calibration before estimating `alpha` and testing `bar T` on the same configuration. A naive plug-in `alpha_hat(C)` treated as fixed is not a calibrated residual.
 
-## Keep endpoint semantics and parameter selection outside the confirmation statistic
+Only after this nuisance gate is passed should the predeclared prime statistic be compared across increasing scales. A surviving point-process residual is still not an RH mechanism; it must be translated back through the signed prime-phase kernel and survive the earlier moment-null and amplitude controls.
 
-If interval endpoints are nuisance, use the cut average `bar T`; if physical endpoints are source-bearing, retain the separate exact endpoint channel from VIS-241. Likewise, fitting `alpha` on the same tent statistic being tested invalidates confirmation even though the variance formula is exact. These choices must be fixed by representation and null semantics rather than chosen to improve the residual.
+## Keep endpoint semantics and nuisance estimation outside post-hoc tuning
 
-VIS-243's half-circle quotient also depends specifically on the complement symmetry `q_u(s)=q_u(1-s)`. It must not be transferred to an oriented or endpoint-sensitive statistic without re-deriving the representation.
+If interval endpoints are nuisance, use the cut average `bar T`; if physical endpoints are source-bearing, retain the separate exact endpoint channel from VIS-241. If `alpha` is estimated from the same configuration, carry its joint uncertainty rather than switching to a fixed-parameter law after observing `C`. Representation choices, endpoint semantics and the nuisance rule must all be frozen before interpreting the confirmation residual.
+
+VIS-243's half-circle quotient depends specifically on the complement symmetry `q_u(s)=q_u(1-s)` and must not be transferred to oriented or endpoint-sensitive statistics without re-derivation.
 
 ## Preserve the older low-frequency and fixed-clock controls
 
-VIS-130--VIS-160 still show that finite signed moment-null packets and deterministic selector clocks can mimic broad classes of visual/mixing effects. Any confirmed spacing residual must therefore survive exact coordinate controls and connect to a source-sensitive low-frequency/destination quantity rather than remain a visually distinctive but representation-dependent statistic.
+VIS-130--VIS-160 still show that finite signed moment-null packets and deterministic selector clocks can mimic broad visual/mixing effects. Any confirmed spacing residual must survive exact coordinate controls and connect to a source-sensitive low-frequency/destination quantity rather than remain a visually distinctive but representation-dependent statistic.

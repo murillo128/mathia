@@ -2,30 +2,34 @@
 
 This file holds the current mathematical questions suggested by the durable Farey-discrepancy intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Replace qualitative ancestry reachability by a source-native anchored cut theorem
+## Replace qualitative ancestry reachability by a source-native anchored cut theorem that pays its endpoint concentration cost
 
 **Linked intuitions:** `MI-001-cumulative-farey-discrepancy-is-mertens-energy` through `MI-021-finite-lq-ancestry-coercivity-needs-quantitative-anchor-exposure`.
 
-FD-145--FD-147 now classify the binary coefficient-side obstruction exactly. FD-145 identifies the `Z_2` orientation gauge when an ancestry component is disconnected from the Möbius anchor. FD-146 shows that restoring the full connected squarefree ancestry graph does not give finite-`L^q` coercivity under uniform normalization. FD-147 identifies the common object: for an anchored seed `D`, binary orientations satisfy
+FD-145--FD-147 classify the binary coefficient-side obstruction exactly. For an anchored seed `D`, binary orientations satisfy
 
 `C^(bin)_(q,D) = h_D(nu,eta)^(-1/q)`,
 
-where `h_D` is the infimum of boundary observation mass divided by flipped vertex mass over all admissible anchored cuts. Connectivity is only the statement that no such cut has zero boundary; stable recovery requires a uniform positive cut-exposure constant in the actual source/destination weights.
+where `h_D` is the infimum of boundary observation mass divided by flipped vertex mass over all admissible anchored cuts. Connectivity only says no such cut has zero boundary; stable finite-`L^q` recovery requires a uniform positive cut-exposure constant in the actual weights.
 
-For the full squarefree ancestry graph with uniform vertex and edge measures, every fixed finite prescribed seed still fails this test. A source can agree with Möbius on the seed while flipping the whole complement of its finite divisor closure. Its coefficient error tends to `2`, but its normalized ancestry defect is only
+FD-148 closes the naive reweighting escape for a fixed finite divisor-closed seed. The complement-of-`D` cut forces
 
-`Theta_S((log T log log T)^(-1/q))`,
+`h_(D,T) <= O_D(K_T/T)`
 
-forcing every binary anchored Poincare constant to grow at least like `(log T log log T)^(1/q)`. The previous fixed-rank wall was therefore not the essential obstruction; the finite anchor itself can sit behind a vanishing normalized cut.
+when the edge parent marginal is at most `K_T` times uniform, and
 
-The live coefficient-side theorem must now change the observation geometry. Either derive source-native nonuniform weights for which **every** macroscopic admissible orientation cut has nonvanishing exposure, or leave local coefficient recovery for a genuinely nonlocal Farey/Fourier destination functional. Merely adding more uniformly weighted ancestry edges, enlarging a finite seed, or proving connectivity cannot succeed.
+`h_(D,T) <= O_D(L_T/log T)`
+
+when the child marginal is at most `L_T` times uniform. Thus uniformly comparable or mildly distorted marginals still fail. Positive anchored expansion requires a **singular endpoint allocation**: order-one edge mass on the fixed seed boundary, average parent amplification of order `T`, or logarithmic child-ray amplification; for `D={1}`, the prime fan must receive logarithmic overweight.
+
+The live coefficient-side theorem must therefore either derive such singular weights from an independent Farey/arithmetic principle, enlarge the anchor in a source-justified way, or leave local coefficient recovery for a genuinely nonlocal Farey/Fourier destination functional. “Use nonuniform weights” is no longer a mechanism until the endpoint concentration is derived rather than chosen.
 
 ## Apply the information-budget gate only after cut exposure survives
 
-FD-144 remains a separate lower bound: even after component anchoring and quantitative cut exposure are solved, `o(r_T)` arbitrary source-independent normalized ancestry tests can still be fooled along a subsequence. This is a later information threshold, not a substitute for the cut theorem. Conversely, FD-142 shows that sufficiently direct high-information coordinates can reconstruct the source and therefore risk circularity.
+FD-144 remains a separate lower bound: even after anchoring and quantitative cut exposure are solved, `o(r_T)` arbitrary source-independent normalized ancestry tests can still be fooled along a subsequence. This is a later information threshold, not a substitute for the cut theorem. Conversely, sufficiently direct high-information coordinates can reconstruct the source and risk circularity.
 
-Future ancestry proposals should therefore be audited in this order: **anchor connectivity -> quantitative cut exposure in the claimed norm -> information/precision budget -> destination relevance**. `L^infinity` remains qualitatively different: for binary data it sees any visible bridge and therefore reduces to connectivity rather than boundary mass.
+Future ancestry proposals should therefore be audited in this order: **anchor geometry -> quantitative cut exposure -> endpoint weight concentration/source justification -> information and precision budget -> destination relevance**. `L^infinity` remains qualitatively different because for binary data it sees any visible bridge rather than its normalized mass.
 
 ## Keep binary cut coercivity and nonlocal destination coercivity separate
 
-FD-147 is exact for binary Möbius orientations and finite `L^q`; it does not rule out source-native nonuniform edge weights, `L^infinity`, direct anchors growing with the problem, or nonlocal Farey/Fourier observables. Any escape should state which of those hypotheses it changes and why the new destination does not simply reconstruct the source.
+FD-147--FD-148 concern binary Möbius orientations, finite `L^q`, local ancestry edges and a fixed finite anchor. They do not rule out a growing source-native anchor, `L^infinity`, singular arithmetic weights with an independent derivation, or nonlocal Farey/Fourier observables. Any escape should state which hypothesis changes and why the new destination does not simply reconstruct the source.
