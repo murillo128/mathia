@@ -2,28 +2,26 @@
 
 This file holds the current mathematical questions suggested by the durable Farey-discrepancy intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Find a source-visible ancestry law whose information budget is coercive without reconstructing the source
+## Establish anchor connectivity before treating ancestry test count as coercive
 
 **Linked intuitions:** `MI-001-cumulative-farey-discrepancy-is-mertens-energy` through `MI-019-sub-root-rank-observation-budgets-can-remain-uniformly-blind-to-one-common-source-wall`.
 
-FD-117--FD-142 separate the reversible Farey skeleton, sparse/common-source escape, fixed-coordinate blindness and the opposite reconstruction boundary. One exact additive scalar with `Theta(log T)` bits can already identify the whole squarefree prefix, so coordinate count alone does not measure source information.
+FD-117--FD-144 separate the reversible Farey skeleton, common-source escape, finite-information blindness and the opposite source-reconstruction boundary. FD-144 shows that arbitrary source-independent normalized ancestry tests remain noncoercive throughout every sublinear-rank budget `L_T=o(r_T)`.
 
-FD-143 established a growing blind regime `K_T M_T=o(sqrt(r_T))` for arbitrary source-independent prime-cell partitions. FD-144 strengthens the same common-source obstruction to the **sublinear-rank** scale. Using min-wise prime selectors rather than Rademacher anti-concentration, it constructs one fixed infinite prime coloring and a subsequence for which all observed normalized nonnegative ancestry tests are asymptotically blind whenever
+FD-145 exposes a prior structural obstruction. Writing `a_n=mu(n)b(n)` on squarefree integers turns a zero ancestry defect into the relative equation `b(pn)=b(n)`. If the visible ancestry graph is disconnected from the finite Möbius anchor, its whole component has an undetermined `Z_2` orientation. A fixed rank-wall source can therefore satisfy **every** visible high-rank ancestry equation exactly while having `a_n=-mu(n)` at every observed parent, independently of how many tests are taken.
 
-`K_T M_T=o(r_T)`.
+The next coefficient-side theorem must therefore make its anchoring explicit. The requested coefficient vertices should lie in a visible ancestry component connected to at least one Möbius-fixed coefficient, or the observable must import equivalent absolute-orientation information through direct coefficients or a genuinely nonlocal Farey/Fourier coupling. Merely increasing the number or resolution of tests inside an unanchored high-rank component cannot be coercive.
 
-In the central regime `r_T~log log T`, every observation budget `o(log log T)` of this class can therefore miss a macroscopic source wall. This is a lower-bound frontier, not a proof that linear-rank observation is sufficient.
+## Determine the information threshold after the ancestry component is anchored
 
-The live coefficient-side theorem must now cross a linear-rank information scale or exploit structure excluded from the matched family: source-dependent/Farey-derived tests, signed structure not covered by the nonnegative normalized class, a sharper joint observation law, or an independent theorem ruling out the matched prime-color source for the physical coefficients. Jumping directly to a source-identity coordinate remains circular.
+Once anchor connectivity is guaranteed, FD-144 becomes the relevant quantitative lower bound again: `o(r_T)` arbitrary source-independent normalized local tests can still be defeated by one common source along a subsequence. It remains open whether the linear-rank scale is sharp in an anchored model, whether source-native signed structure beats it, or whether a stronger common-source construction pushes the impossibility beyond `Theta(r_T)`.
 
-A destination-side Fourier-skeleton coercivity theorem remains a distinct route because it could bypass coefficient recovery entirely.
+In the central regime `r_T~log log T`, this asks for the first genuinely coercive source-native law between the sublinear-rank no-go and the high-information identity observations of FD-142. A successful proposal must not merely encode the squarefree parent under another name; its provenance from the Farey/Franel/ancestry skeleton and its effective information budget both matter.
 
-## Determine the first genuinely different regime between sublinear rank and source reconstruction
+A destination-side Fourier-skeleton coercivity theorem remains a distinct route because it could bypass coefficient recovery and the local ancestry gauge entirely.
 
-FD-140 shows fixed periodic alphabets can be under-resolved; FD-144 extends blindness to arbitrary source-independent normalized ancestry observations with total complexity `o(r_T)`; FD-142 shows full prefix reconstruction is available at `Theta(log T)` bits. The useful middle regime must therefore be judged by effective resolving capacity and provenance, not by the number of named coordinates.
+## Keep connectivity, information, precision, provenance and target recovery separate
 
-The decisive audit for any proposal is whether it has merely become an indirect squarefree-parent label. Noninjectivity is necessary but not sufficient: FD-144 gives a broad noninjective regime that is still noncoercive.
+A coercive law must now specify more than coordinate count. It should state which coefficient component is anchored, which ancestry edges are visible, how many independent source constraints are imposed at rank `r_T`, how the tests are normalized, whether they are source-independent, what precision is consumed, and how much source freedom remains.
 
-## Keep information equivalence, horizon entropy, scale visibility, precision, provenance and target recovery separate
-
-A coercive law must specify which prime coordinates remain visible, how many independent source constraints are imposed at rank `r_T`, how the tests are normalized, whether they are source-independent, what precision is consumed, and how much source freedom remains. FD-144 replaces the earlier square-root union-budget obstruction by a linear-rank min-wise-selector obstruction; future ancestry claims should be tested against that stronger matched control before being treated as evidence of source recovery.
+The audit order for future ancestry claims is therefore: first test **anchor connectivity** against the exact rank-wall control of FD-145; then test the information budget against the min-wise common-source control of FD-144; only after both survive should the observable be treated as evidence for coefficient recovery. Direct source-identity encodings remain circular, while nonlocal Fourier/Farey observables must be judged separately by whether they actually force the target norm rather than merely identify coefficients.
