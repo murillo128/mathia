@@ -2,7 +2,7 @@
 
 ## Global picture
 
-This is the mutable Master Researcher snapshot for the Mathia research portfolio, reconciled against canonical default-branch research evidence through `f1fc86f46e5345fb54bdbfbb13bd40fa2c7f293c`. Canonical findings and accepted review outcomes control the mathematics; local and global `mind/` state is synthesis rather than proof, and Atlas telemetry is used only when its declared source revision is current enough for the decision at hand.
+This is the mutable Master Researcher snapshot for the Mathia research portfolio, reconciled against the current default-branch canonical research tree. Canonical findings and accepted review outcomes control the mathematics; local and global `mind/` state is synthesis rather than proof, and Atlas telemetry is used only when its declared source revision is current enough for the decision at hand.
 
 The portfolio remains **5 `continue` + 7 `narrow` + 1 `pause-candidate`**. `analytic_frontier`, `mobius_cancellation`, `prime_lattice`, `robin_extremal`, and `weil_inertia` remain `continue`; `prime_flute` remains the sole `pause-candidate`; the other seven lines remain `narrow`. The new evidence materially sharpens Möbius Cancellation, Robin Extremal, Prime Lattice, Arithmetic Fidelity, Farey Discrepancy, Nyman--Beurling, Prime Circle, and Weil Positivity, but it does not cross a strong merge, split, new-line, or additional pause threshold.
 
@@ -20,7 +20,7 @@ Robin Extremal also removes a previous generic obstruction. `RE-141` spends zero
 
 Weil Inertia remains the clearest verified positive branch. `WI-301` turns dyadic screening into a uniform archimedean reserve `8.9e-18||f||_2^2`; complete one-signed prime-power screening is impossible for `Q_W(f)<=0` at any aperture. The next step remains source-specific repayment by odd-prime autocorrelations. Weil Positivity moves in the opposite direction: `WP-316` shows that even an isolated moving Mangoldt pole, retained with its residue, has a universal Lebesgue Julia tangent after any nontrivial vanishing-scale blow-up. Together with `WP-315`, this leaves only genuinely collective/multipole or operator-valued local geometry as credible continuations of that line.
 
-The latest reachable adversarial checkpoint is `f1fc86f46e5345fb54bdbfbb13bd40fa2c7f293c`, declaring continuous review through `4b422ac6c027621cabe1eaa694e5a94bc78c38bd`. Hence `WI-301` and the evidence already present at that prefix are independently cleared by the global checkpoint. The newer canonical findings `PC-305`, `AF-358`, `FD-141`, `NB-140`, `RE-141`, `PL-316`, `WP-316`, and `MC-312` remain current evidence beyond that reviewed prefix and are not silently promoted to independently cleared status. Atlas entrypoints remain excluded from consequential decisions because their captured source revisions still lag the live research tree.
+Independent adversarial coverage is confirmed at least through `27557aa1efb9e53762140b9db4bcf9525d151e04` (`PL-316`). Accordingly `PC-305`, `AF-358`, `FD-141`, `NB-140`, `RE-141`, and `PL-316` are inside a confirmed reviewed prefix, together with the earlier `WI-301` evidence. `VIS-235`, `WP-316`, and `MC-312` remain current canonical evidence beyond that confirmed prefix and are not silently promoted to independently cleared status. Atlas entrypoints remain excluded from consequential decisions because their captured source revisions still lag the live research tree.
 
 ## Research-line portfolio
 
