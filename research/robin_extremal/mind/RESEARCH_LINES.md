@@ -2,7 +2,7 @@
 
 This file holds the current mathematical questions suggested by the durable robin-extremal intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Control horizontal spread and cooperative packet complexity for actual zeros
+## Control horizontal spread, absolute vertical span and exterior cancellation for actual zeros
 
 **Linked intuitions:** `MI-001-robin-failure-requires-self-tangent-half-mass-event-gaps` through `MI-024-vertical-reciprocal-escape-costs-packet-complexity-not-visibility-radius`.
 
@@ -10,19 +10,23 @@ RE-112--RE-133 reduce the attained finite-edge branch to a strong atom plus reci
 
 RE-134--RE-136 remove local occupancy as the missing scalar variable and quantify isotropic reciprocal escape: a packet in radius `R` has visibility at least `exp(-C R)`, sharply in the matched formal class.
 
-RE-137 then exploits the anisotropy of the physical leading coefficient. Turan--Nazarov yields a lower bound depending on scaled horizontal spread `H_C(U)` and packet complexity `N`, but **not** on vertical diameter:
+RE-137 exploits the anisotropy of the physical leading coefficient. Turan--Nazarov yields a lower bound depending on scaled horizontal spread `H_C(U)` and packet complexity `N`, but not on vertical diameter:
 
 `sup |S_(C,0)| >= c exp(-H_C(U)-C_kappa N)|a_(rho_0,0)(U)|`.
 
-Purely vertical matched packets can still hide when their cardinality grows, so the complexity term is essential. Vertical escape alone is therefore not a mechanism for bounded-complexity leading packets.
+RE-138 then inserts the actual zeta source law. Algebraic strength forces the distinguished ordinate to polynomial height, while Riemann--von Mangoldt gives
 
-The live actual-zero theorem should control the joint budget `H_C(U)+C N` for the modes capable of cancelling a distinguished strong atom. A zero-density/local-multiplicity theorem, source-specific horizontal locking law, or another arithmetic constraint on the number of comparable off-critical modes could now interact directly with RE-137. Bounding vertical diameter without complexity information is no longer the most targeted route.
+`N_U << (1+W_U)(log U + log(2+W_U))`
 
-## Keep atom extraction, horizontal geometry, packet complexity and finite-order transfer separate
+for a packet contained in absolute vertical half-width `W_U`. Hence bounded `W_U` together with `H_U=O(log U)` forces a fixed polynomial visibility floor. Superalgebraic relative hiding of the selected leading packet must make either `H_U/log U` or the **absolute** vertical span `W_U` unbounded.
 
-RE-130 prices the size of an extracted atom from zero-density information. RE-131 constrains a nearby strong companion. RE-136 prices isotropic box radius. RE-137 shows that for the leading packet the actual observability cost separates into horizontal spread plus mode count and is insensitive to vertical diameter.
+The live theorem is therefore no longer to bound packet cardinality independently. For actual zeros that resource has been converted into geometry. The remaining branch must control exterior cancellation from zeros outside the selected packet, or prove that the required horizontal/absolute-vertical escape is incompatible with the source. A bounded absolute ordinate band cannot hide a strong leading atom merely by packing more zeros into it.
 
-For fixed `K>0`, this anisotropic lower bound survives only under an additional logarithmic budget involving the atom strength. Any closure must therefore state which packet order is being controlled and compare its source-side complexity estimate with the exact observability exponent, rather than infer a finite-order theorem from the leading packet automatically.
+## Keep atom extraction, source-count geometry, selected-packet observability and exterior tails separate
+
+RE-130 prices the size of an extracted atom from zero-density information. RE-131 constrains a nearby strong companion. RE-137 prices selected-packet observability by horizontal spread plus mode count. RE-138 replaces that formal mode count by an actual-zero bound in terms of absolute vertical span.
+
+This does not yet control the full residual: zeros outside the selected packet may still cancel its visible contribution. For fixed `K>0`, the anisotropic lower bound also survives only under an additional logarithmic stability budget involving the atom strength. Any closure must therefore state the selected packet, its horizontal and absolute-vertical geometry, the finite-order budget when relevant, and the source information controlling the exterior remainder.
 
 ## Keep the exact binary tie local
 

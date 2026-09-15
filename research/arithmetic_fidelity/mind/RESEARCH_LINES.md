@@ -14,7 +14,7 @@ AF-351--AF-352 identify the fixed-order critical transition: every fixed real `d
 
 whereas the unsmoothed endpoint `delta=0` cannot satisfy the same bound. AF-353 prices the fixed-parameter approach to zero: the absolute critical-zero budget diverges like `1/(2*pi*delta^2)`, while the actual cancellation-aware norm `K(delta)` is also unbounded under RH but can be much smaller.
 
-AF-354--AF-355 now show that the endpoint singularity is already visible in the physical source. Unconditionally,
+AF-354--AF-355 show that the endpoint singularity is already visible in the physical source. Unconditionally,
 
 `|R_delta(X_N)-R_0(X_N)| << delta X_N`
 
@@ -24,7 +24,13 @@ on the half-integer mesh, so sufficiently fast moving orders inherit Hardy--Litt
 
 Consequently every polynomially vanishing order `delta_N=N^-a`, `a>0`, is still too close to the endpoint to satisfy the sharp `O(sqrt(N))` profile under RH. The unresolved moving regime begins around the much slower scale `delta_N >=~ logloglog(N)/log^3(N)`; failure of the known obstruction there is not a positive theorem.
 
-The live theorem is therefore no longer merely to offset the `delta^-2` absolute budget. It is to identify a **source-native cancellation estimate with uniform moving-parameter control** in the surviving slow-vanishing regime, or prove that no such schedule can retain the critical norm. Any candidate must distinguish the absolute zero-mode budget, the physical profile norm, and the source-to-endpoint comparison rather than infer one from another.
+AF-356 now separates that extremal obstruction from average spectral stability. Under RH the log-normalized profiles satisfy
+
+`||E_delta-E_0||_(B^2)=O(delta)`
+
+and their limiting distributions converge at the same linear scale in bounded-Lipschitz distance, even though `K(delta)->infinity`. The endpoint is therefore not generically unstable: it is specifically unstable in the uniform/extremal topology consumed by the critical bound.
+
+The live theorem is no longer merely to offset the `delta^-2` absolute budget or to prove another mean-square continuity statement. It is to identify a **source-native tail/peak/phase-coherence estimate with uniform moving-parameter control** in the surviving slow-vanishing regime, or prove that no such schedule can retain the critical supremum norm. Any candidate must distinguish the absolute zero-mode budget, the `B^2`/limiting-law topology, the physical supremum norm, and the source-to-endpoint comparison rather than infer one from another.
 
 ## Price the actual target metric before calling a representation compressed
 
@@ -34,7 +40,9 @@ Localization, contraction, lifting and smoothing can move or attenuate informati
 
 AF-350 shows that failure of source recovery in `C^0` does not imply failure of every target discriminator. AF-352 adds the converse warning: arbitrarily weak fixed positive smoothing can improve endpoint conditioning without discriminator loss. AF-353--AF-355 add the limiting-parameter audit: fixed-`delta` boundedness does not imply a useful moving family, and even under RH every polynomial approach to the unsmoothed endpoint retains the endpoint oscillation at the critical scale.
 
-Any claimed compression must therefore name the complete composed map, destination topology, asymptotic scale, discriminator and parameter regime required there. A small transformed residual is not information loss until the destination declares it negligible; an exact inverse in a stronger topology is not endpoint progress if the final theorem retains only a weaker one; and fixed-parameter conditioning is not a uniform resource unless its constants and source comparison remain controlled in the limit actually used.
+AF-356 gives the sharpest current metric split. The smoothed family is Lipschitz at `delta=0` in Besicovitch `B^2` and in its limiting distribution while the uniform critical norm is singular. Thus a representation may be stable in a natural average topology and still be unusable in the stronger destination topology; the missing information is carried by rare coherent excursions invisible to second-mean control.
+
+Any claimed compression must therefore name the complete composed map, destination topology, asymptotic scale, discriminator and parameter regime required there. A small transformed residual is not information loss until the destination declares it negligible; an exact inverse in a stronger topology is not endpoint progress if the final theorem retains only a weaker one; and fixed-parameter or mean-square conditioning is not a uniform resource unless its constants and source comparison remain controlled in the limit and topology actually used.
 
 ## Build cancellation-coherent source access to the Li root-rate class
 
@@ -56,4 +64,4 @@ AF-319 closes optimizer transfer once a homogeneous profile cap `Q<=C<3` is assu
 
 ## Keep source complexity, transform fidelity, terminal loss and parameter-uniform conditioning as different currencies
 
-Observation order, sign density, gap occupancy, concentration profile, raw locality, smoothing order, inverse conditioning, singularity class and destination slack are provably different resources. AF-349--AF-355 now separate the complete representation, weak terminal quotient, fixed-order critical threshold, absolute spectral conditioning cost, and moving-order source obstruction. Future work must price `source -> representation -> terminal observer` in the **actual terminal metric, asymptotic scale, discriminator and limiting parameter regime**, not infer usefulness from source richness, transformed amplitude, intermediate invertibility or fixed-parameter smoothing alone.
+Observation order, sign density, gap occupancy, concentration profile, raw locality, smoothing order, inverse conditioning, singularity class, destination topology and destination slack are provably different resources. AF-349--AF-356 now separate the complete representation, weak terminal quotient, fixed-order critical threshold, absolute spectral conditioning cost, moving-order source obstruction, and the `B^2`-stable but uniformly singular endpoint. Future work must price `source -> representation -> terminal observer` in the **actual terminal metric, asymptotic scale, discriminator and limiting parameter regime**, not infer usefulness from source richness, transformed amplitude, intermediate invertibility, fixed-parameter smoothing or average spectral stability alone.

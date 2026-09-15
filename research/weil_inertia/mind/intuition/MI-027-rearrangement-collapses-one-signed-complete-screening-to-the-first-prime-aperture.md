@@ -1,6 +1,6 @@
-# MI-027 — Rearrangement collapses one-signed complete screening to the first-prime aperture
+# MI-027 — Rearrangement collapses one-signed complete screening to the first-prime aperture, where only a finite low-mode certificate remains
 
-**Evidence level:** exact rearrangement/structural-rigidity theorem from [WI-298](../../findings/WI-298-rearrangement-collapses-complete-one-signed-screening-to-first-prime-aperture.md), using the complete-screening packing law of WI-281 and the prime-deleted form of WI-284
+**Evidence level:** exact rearrangement/structural-rigidity theorem from [WI-298](../../findings/WI-298-rearrangement-collapses-complete-one-signed-screening-to-first-prime-aperture.md), with the analytic tail barrier removed through the exact aperture by [WI-299](../../findings/WI-299-smooth-kernel-tail-bound-reaches-the-first-prime-aperture.md)
 
 For a nonnegative completely screened Weil null mode `v`, the powers of the first prime imply that its positivity set is a measurable selector modulo `log 2`, hence has measure at most `log 2`. Symmetric decreasing rearrangement therefore compresses `v` into the centered interval of radius
 
@@ -14,12 +14,16 @@ At radius `r_2` every prime-power translation term vanishes automatically: the f
 
 `Q_W^(r_2)(v^*) <= 0`,
 
-so the supported spectral bottom satisfies `lambda_(r_2)<=0` whenever such a completely screened one-signed null mode exists.
+so the supported spectral bottom satisfies `lambda_(r_2)<=0` whenever such a completely screened one-signed null mode exists. Applied to the **first** unrestricted Suzuki crossing, this forces its aperture to satisfy `a_*<=r_2`.
 
-Applied to the **first** unrestricted Suzuki crossing, this forces its aperture to satisfy `a_*<=r_2`. Hence the remote-satellite/local-to-global escape left by the pole-MGF analysis is unnecessary for the one-signed complete-screening branch above the first-prime threshold: rearrangement already pushes any such mode down to a nonpositive prime-free test at `r_2`, contradicting firstness.
+WI-299 removes a separate analytic-domain concern at exactly this boundary. For Suzuki's localized smooth Weil remainder `r`, the defect `delta(s)=-r''(s)-7/4` satisfies the uniform estimate
 
-The branch is now concentrated at one finite aperture. A rigorous strict positivity certificate `lambda_(r_2)>0` would exclude the entire one-signed complete-screening first-crossing scenario; below `r_2` complete screening is vacuous because no prime-power shift has positive-measure overlap.
+`0 <= delta(s) < 0.21621 |s|`  for `0<|s|<=log 2`,
 
-The reusable mechanism is that **one-signed screening plus rearrangement converts a global support-geometry problem into a single extremal aperture test** when the prime-deleted form is monotone under rearrangement. This is stronger than tail/core control because it removes the distant-support degree of freedom altogether.
+which yields the residual bound `||R_a|| <= 0.353143 a^2` for every `0<a<=r_2`. The earlier smooth-kernel cutoff below the first-prime aperture is therefore not the obstruction to certifying `lambda_(r_2)>0`.
 
-**Boundary.** No strict positivity at `r_2` is assumed or proved here. Existing public finite-scale candidates remain subject to their certification boundary. The argument applies to nonnegative complete-screening modes; sign-changing and incomplete-screening branches remain separate.
+The branch is now concentrated at one finite aperture and one finite unresolved component. A rigorous strict positivity certificate `lambda_(r_2)>0` would exclude the entire one-signed complete-screening first-crossing scenario, and the smooth tail estimate is already valid through that endpoint. The remaining burden is an **independent finite low-mode/interval-Schur certificate** on the narrow terminal aperture region rather than another improvement of the smooth tail constant.
+
+The reusable mechanism is that structural reduction and analytic tail control can remove all asymptotic degrees of freedom while still leaving a finite spectral sign problem. Once the tail estimate reaches the exact structural aperture, further tail sharpening is not progress unless it changes the finite low-mode certificate consumed by the positivity test.
+
+**Boundary.** No strict positivity at `r_2` is proved. WI-299 does not certify the remaining low-mode block or import any nearby numerical/Eureka certificate as established. The argument is specific to nonnegative complete-screening modes; sign-changing and incomplete-screening branches remain separate.

@@ -26,12 +26,18 @@ VIS-232 adds a model-admission gate that is logically prior to those formulas. S
 
 `S=sum_j binom(N_j,2)`,
 
-any confirmation-sample randomization preserving the realized occupancy histogram fixes `S`. Exact transition-count preservation plus endpoints also fixes the histogram and therefore gives zero conditional variance. A “stronger” dependence control can thus become circular by conditioning away the statistic.
+any confirmation-sample randomization preserving the realized occupancy histogram fixes `S`. Exact transition-count preservation plus endpoints also fixes the histogram and therefore gives zero conditional variance.
 
-The live critical test must choose one of two honest routes. Either fit a stochastic dependence model from independent calibration information and allow confirmation occupancies to fluctuate, carrying estimation uncertainty into the VIS-230/VIS-231 standardization; or preserve stronger realized local structure and replace `S` by an order-sensitive observable that remains nondegenerate within the chosen conditional class. Only after that admission gate is passed is a prime-specific residual meaningful.
+VIS-233 makes the escape criterion exact. Endpoints plus first-order transition counts determine **every translation-invariant additive range-one observable**, not just `S`. The lag-two return statistic
 
-## Keep static scale, occupancy baseline, dependence law, conditional sigma-field and dynamical access separate
+`T_2=sum_(t=1)^(m-2) 1_{x_t=x_(t+2)}`
 
-The deterministic floor, one-point law, lag-return center, higher return covariance and conditional randomization class are distinct objects. VIS-232 shows that matching more realized structure is not monotonically safer: if the preserved sigma-field already determines the statistic, the null has no falsification power.
+is the first simple counterexample: it depends on length-three block counts and can vary inside one endpoint-matched first-order type. The explicit binary type `00010,00100,01000` has identical transition counts but `T_2=2,1,2`.
 
-A critical observable must therefore declare both the stochastic model and what is conditioned on. Its source sensitivity must survive parameter estimation, representation perturbations and the exact conditional class before any bridge to the signed prime-phase Hamiltonian, optimizer geometry or physical prime-log orbit is interpreted.
+The live critical test therefore has two honest routes. Either fit a stochastic dependence model from independent calibration information and allow confirmation occupancies to fluctuate, carrying estimation uncertainty into the VIS-230/VIS-231 standardization; or preserve realized first-order structure and predeclare a **range-two-or-higher** observable such as `T_2`, first proving that it has nonzero conditional variance on the actual critical prime-phase type. Only after that admission gate is passed is a prime-specific residual meaningful.
+
+## Keep static scale, occupancy baseline, dependence law, conditional sigma-field and observable interaction order separate
+
+The deterministic floor, one-point law, lag-return center, higher return covariance, conditional randomization class and interaction order of the tested statistic are distinct objects. VIS-232 shows that matching more realized structure is not monotonically safer; VIS-233 sharpens this into a hierarchy: preserving length-two block counts fixes the entire additive range-one class, while a length-three statistic may still survive.
+
+A critical observable must therefore declare both the stochastic model and what is conditioned on. If the null is strengthened to preserve length-three block counts, `T_2` is conditioned away and the statistic must move outward again. Source sensitivity must survive parameter estimation, representation perturbations and the exact conditional sigma-field before any bridge to the signed prime-phase Hamiltonian, optimizer geometry or physical prime-log orbit is interpreted.

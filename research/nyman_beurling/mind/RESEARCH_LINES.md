@@ -10,7 +10,9 @@ NB-123--NB-132 build the source-faithful recurrence/phase route and show that ac
 
 NB-137 shows that ordinary conditioning is still not the endpoint quantity. A simple cluster may converge in the Grassmannian to a confluent jet state space while its raw power-basis condition number becomes arbitrarily worse, yet the **whole state span** has vanishing normalized projection of the canonical Nyman target. Divided-difference/confluent coordinates can remove a chart singularity without creating target relevance.
 
-Inside the NB-132 regime the live theorem must therefore constrain a target-bearing invariant of the actual zero packet: a lower bound on target projection, a source law excluding target-poor confluent limits, coefficient occupation of the target-bearing singular sectors, or another representation whose margin is defined directly against the Nyman target. Spacing or conditioning information is useful only insofar as it controls that target-aware quantity.
+NB-138 makes that obstruction quantitative at an ordinary polynomial scale. For logarithmic packet rank, the split simple-state space already inherits the target-poor confluent limit when `epsilon_G=G^(-B)` with fixed `B>c log(4/a-3)`, while the ordinary natural-prefix matrix can still have `log kappa_2(V_G) >= (cB+o(1))(log G)^2`. The target-poor control therefore does not rely on a hidden superexponential or nonconstructive confluence radius.
+
+Inside the NB-132 regime the live theorem must constrain a target-bearing invariant of the actual zero packet: a lower bound on target projection, a source law excluding **polynomially tight target-poor confluent limits**, coefficient occupation of the target-bearing singular sectors, or another representation whose margin is defined directly against the Nyman target. A theorem merely ruling out fantastically close clusters is insufficient; spacing or conditioning information is useful only insofar as it controls that target-aware quantity.
 
 ## Push the canonical shell discrepancy toward a near-linear scale
 
@@ -20,6 +22,6 @@ The shell decomposition still reduces the rooted-mixing channel to a quantitativ
 
 ## Keep recurrence order, translation resolution, coordinate conditioning, subspace geometry and target occupation separate
 
-NB-128 buys local resolution for one common phase translation by growing the natural prefix. NB-132 restores rank visibility in a concrete actual-zero regime. NB-133--NB-136 show that those facts do not give a conditioned packet representation. NB-137 then shows the converse diagnostic danger: catastrophic raw conditioning can coexist with a well-defined confluent subspace that is simply target-poor.
+NB-128 buys local resolution for one common phase translation by growing the natural prefix. NB-132 restores rank visibility in a concrete actual-zero regime. NB-133--NB-136 show that those facts do not give a conditioned packet representation. NB-137 shows that catastrophic raw conditioning can coexist with a well-defined confluent subspace that is simply target-poor, and NB-138 proves that this separation already occurs at explicit polynomial simple-state spacing.
 
-The surviving discriminator is representation-invariant. A proposal must state which subspace or quotient is physically meaningful, how the actual target occupies it, and which source law prevents that occupation from vanishing. Numerical conditioning of one basis is secondary unless it changes the target-bearing state geometry.
+The surviving discriminator is representation-invariant. A proposal must state which subspace or quotient is physically meaningful, how the actual target occupies it, and which source law prevents that occupation from vanishing. Numerical conditioning of one basis, or a spacing lower bound that does not exclude the polynomial confluence cell, is secondary unless it changes the target-bearing state geometry.
