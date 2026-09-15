@@ -16,7 +16,7 @@ VIS-150--VIS-160 show that deterministic selectors can mimic arbitrarily high fi
 
 ## Calibrate critical dependence on a representation-matched monotone object
 
-**Linked intuitions:** `MI-009-stable-decoding-is-a-collision-geometry-question` through `MI-020-a-conditional-null-is-invalid-when-it-fixes-the-statistics-sufficient-counts`.
+**Linked intuitions:** `MI-009-stable-decoding-is-a-collision-geometry-question` through `MI-021-fixed-count-pair-calibration-removes-poissonization-noise`.
 
 VIS-227--VIS-236 separate collision baselines, conditional sigma-fields and the monotone support of actual prime-coordinate cells. In that representation, exact first-order transition conditioning is degenerate: the labels are nondecreasing and the apparent lag-two escape reduces to an occupancy functional.
 
@@ -26,10 +26,12 @@ VIS-237 supplies a representation-faithful quotient instead of manufacturing lab
 
 Origin averaging therefore removes nuisance grid phase while preserving the ordered point geometry. It does **not** create a new stochastic null and does not by itself reveal prime specificity; it converts the cell statistic into a compactly supported two-point gap observable.
 
-The live question is now clean: freeze an independently justified ordered-point or gap baseline and ask whether this tent-kernel pair statistic, or a nearby source-sensitive statistic, has a residual that survives representation changes and couples to the signed prime-phase kernel. “Robust under cell-origin shifts” alone is no longer evidence, because VIS-237 explains that robustness exactly by quotienting to a pair-gap functional.
+VIS-238 then removes a second nuisance that belongs to the calibration law rather than the representation. At critical occupancy `kappa=m ell/L=Theta(1)`, the fixed-count uniform ordered-point model has tent-pair variance `m kappa/3+O(1)`, whereas an unconditioned Poisson model adds a leading `m kappa^2` channel coming only from fluctuations of the total count. Because the observed prime-coordinate sample already fixes its count, that Poissonization variance is artificial for this statistic.
 
-## Keep nuisance quotienting, stochastic law, sigma-field and arithmetic residual separate
+The live question is now narrower: after quotienting grid origin and conditioning on the observed count, freeze an independently justified ordered-point/gap baseline that captures any remaining nonuniform intensity or short-gap structure, then ask whether the tent-kernel pair statistic or a nearby source-sensitive statistic has a residual that couples to the signed prime-phase kernel. Origin robustness and excess variance against an unconditioned Poisson process are no longer evidence.
 
-A valid confirmation test must distinguish four operations. Removing grid-origin phase is an admissible representation quotient; choosing a stochastic point-process law is a modeling step; conditioning may erase the statistic; and only a residual against a predeclared baseline can be interpreted as source-sensitive. VIS-237 solves the first operation exactly and leaves the latter three untouched.
+## Keep nuisance quotienting, count calibration, stochastic law, sigma-field and arithmetic residual separate
 
-For the prime-coordinate critical scale, future visual statistics should therefore be expressed directly on monotone geometric data—ordered gaps, counts, within-cell positions or pair kernels—and audited against a representation-matched null before any arithmetic interpretation.
+A valid confirmation test must distinguish the operations being performed. Removing grid-origin phase is an exact representation quotient; fixing the observed sample count removes Poissonization noise; choosing the remaining ordered-point/gap law is a modeling step; conditioning can still erase the statistic; and only a residual against the frozen representation-matched baseline can be interpreted as source-sensitive.
+
+For the prime-coordinate critical scale, future visual statistics should therefore be expressed directly on monotone geometric data—ordered gaps, counts, within-cell positions or pair kernels—and audited against a fixed-count, representation-faithful null before any arithmetic interpretation.
