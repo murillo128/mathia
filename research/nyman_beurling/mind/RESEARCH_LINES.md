@@ -2,23 +2,23 @@
 
 This file holds the current mathematical questions suggested by the durable Nyman--Beurling intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Keep the signed exterior route microscopic or genuinely source-coupled after Hadamard cancellation
+## Move beyond two-point horizontal signed samplers after both mesoscopic and fixed-scale adverse lobes close
 
 **Linked intuitions:** `MI-001-target-aware-gram-geometry-must-carry-absolute-scale` through `MI-032-zero-mass-poisson-cancellation-exports-an-equal-negative-lobe`.
 
-NB-123--NB-143 separate recurrence visibility, conditioning, target occupation and generic xi-type realizability. NB-144--NB-147 then classify the positive exterior-Poisson resource. For any tight interior packet, the charged object is its weighted functional-equation **reflection closure**; near the critical line the positive proof cone cannot beat its logarithmic occupancy budget while the prime side is controlled only by an absolute Euler-product majorant.
+NB-123--NB-147 classify the positive exterior-Poisson resource and its reflection-closure budget. NB-148 identifies the natural signed escape: a zero-mass exterior sampler cancels the universal Hadamard logarithm but necessarily exports equal integrated negative Poisson mass. NB-149 shows that Jordan/total-variation domination simply restores the positive logarithmic budget.
 
-NB-148 identifies the natural signed escape and its exact debt. A zero-mass exterior sampler cancels the universal leading Hadamard `(1/2)log G` term, but its zero-side Poisson kernel then has zero vertical integral: every positive lobe exports equal integrated negative mass. NB-149 closes the obvious absolute-value repair: Jordan or total-variation domination returns to the positive Poisson cone and reinstates a genuine `Theta(log G)` zero budget.
+NB-150 closes the growing mesoscopic two-point horizontal route. For `1<<L_G=o(G)`, ordinary zero density fills both signs of the rescaled kernel with `Theta(log G)` actual-zero mass while a target packet inside `o(L_G)` becomes negligible.
 
-NB-150 now closes the simplest location-sensitive attempt to hide that debt by moving a two-point horizontal difference to a growing mesoscopic scale `1<<L_G=o(G)`. The signed kernel converges after scaling to an explicit profile `q_c`; Riemann--von Mangoldt density forces **both its positive and negative lobes to contain `(A_c/(2pi)+o(1)) log G` actual-zero mass**. Meanwhile any target packet of rank `O(log G)` inside `o(L_G)` contributes only `O(log G/L_G)`. Moving the sign boundary outward therefore makes the target negligible relative to both background lobes rather than isolating it.
+NB-151 now closes the fixed-scale loophole for the same two-point geometry when the target packet itself has logarithmic rank. Horizontal differencing of `xi'/xi` gives an absolutely convergent signed sum over the actual zeros with total charge only `O(1)`. A target packet of `Omega(log G)` positive charge must therefore be balanced by `Omega(log G)` negative charge, and quadratic kernel decay plus the unit-interval zero-count bound forces that adverse charge into a bounded neighboring ordinate annulus. Thus an isolated logarithmic target packet cannot make the fixed-scale negative lobe harmless either.
 
-The surviving signed exterior route is consequently more local and more source-specific than NB-149 alone implied. It must remain at fixed/shrinking ordinate scales where the zero-count remainder can compete with mean density, use a nonuniform kernel whose adverse support is tied to exceptional source information, obtain genuinely signed prime-side cancellation, or couple the signed expression to target-bearing Nyman data before the lobe masses are separated. Mesoscopic horizontal smoothing is not the missing location-sensitive resource.
+The surviving signed exterior route must change more than the horizontal scale. Possibilities still outside these theorems include shrinking scales where the Euler-product bound changes, many-point or nonuniform signed kernels with different conservation geometry, genuinely signed prime-side cancellation, or coupling the signed expression to target-bearing Nyman data before positive/negative lobe separation. A second nearby logarithmic zero packet remains compatible with NB-151, so the theorem is an obstruction to isolation rather than a contradiction to exceptional confluence itself.
 
-## Treat reflection closure, signed-lobe conservation, actual lobe occupation and Jordan cost as distinct currencies
+## Treat reflection closure, signed conservation and actual adverse occupation as distinct currencies
 
-Positive sampling charges orbit exposure. Zero-mass signed sampling removes the universal scalar budget only by exporting equal negative kernel mass. Jordan domination forgets where that negative mass sits and restores the positive logarithmic budget. NB-150 adds a stronger source-specific fact in the mesoscopic two-point regime: the actual zero set itself fills both lobes at logarithmic mass, so no sharpening of the Jordan estimate can remove that leading occupation there.
+Positive sampling pays the Hadamard budget. Zero-mass sampling cancels that scalar term but creates a sign debt. Jordan domination forgets location and pays the budget again. NB-150 shows mesoscopic actual-zero background fills both lobes; NB-151 shows that at fixed scale a logarithmic target packet itself forces a neighboring logarithmic adverse packet through exact `xi'/xi` charge conservation.
 
-A future sampler must state which regime it uses and identify the independent theorem that controls the adverse part without collapsing back to the previous cone. Near maximal positive occupancy still allows `Theta(log G)` packets; signed sampling changes the proof obligation to location-sensitive sign control, but growing horizontal scales are now background-dominated.
+A future signed sampler must state which conservation identity it uses and how the adverse part is controlled **without** reverting to total variation or to a two-point geometry already covered above. Mean-density and target-conditioned conservation are different mechanisms, but together they now cover the obvious growing- and fixed-scale horizontal differences.
 
 ## Push canonical shell discrepancy independently
 

@@ -1,29 +1,17 @@
-# MI-032 — Cancelling the Hadamard log budget creates a sign debt; mesoscopic horizontal spreading makes both lobes background-dominated
+# MI-032 — Cancelling the Hadamard log budget creates a sign debt; two-point horizontal spreading cannot isolate a logarithmic packet
 
-**Evidence level:** exact signed-kernel conservation law from [NB-148](../../findings/NB-148-cancelling-the-hadamard-log-budget-forces-an-equal-mass-negative-poisson-lobe.md), sharpened by the Jordan-method obstruction [NB-149](../../findings/NB-149-jordan-domination-reinstates-the-positive-poisson-log-budget.md) and the source-specific mesoscopic occupation theorem [NB-150](../../findings/NB-150-mesoscopic-horizontal-differencing-makes-both-poisson-lobes-logarithmically-zero-occupied.md), complementing the positive reflection-closure classification NB-147.
+**Evidence level:** exact signed-kernel conservation from [NB-148](../../findings/NB-148-cancelling-the-hadamard-log-budget-forces-an-equal-mass-negative-poisson-lobe.md), sharpened by the Jordan obstruction [NB-149](../../findings/NB-149-jordan-domination-reinstates-the-positive-poisson-log-budget.md), mesoscopic actual-zero occupation [NB-150](../../findings/NB-150-mesoscopic-horizontal-differencing-makes-both-poisson-lobes-logarithmically-zero-occupied.md), and the fixed-scale target-conditioned conservation theorem [NB-151](../../findings/NB-151-fixed-scale-horizontal-differencing-forces-a-neighboring-logarithmic-adverse-packet.md).
 
-Positive exterior Poisson sampling has a rigid advantage: every zero contributes with one sign, but the universal Hadamard/archimedean term consumes a leading `(1/2)log G` budget. A zero-mass signed exterior sampler can cancel that universal term.
+A zero-mass signed exterior sampler can cancel the universal leading Hadamard `(1/2)log G` term, but NB-148 shows the exact price: its zero-side Poisson kernel has zero vertical integral, so positive integrated mass is accompanied by equal negative integrated mass. Cancelling the scalar budget exchanges it for a **sign debt**.
 
-NB-148 gives the exact price. The associated zero-side Poisson kernel has zero vertical integral, so any positive lobe of integrated mass `A` is accompanied by exactly `A` negative mass. Cancelling the universal logarithmic budget exchanges a scalar budget for a **sign debt**; it does not create net positive zero mass.
+NB-149 shows that controlling the debt by Jordan or total variation simply re-enters the positive cone and restores a `Theta(log G)` budget. The only possible gain must therefore use where the negative charge sits, not merely its absolute size.
 
-NB-149 classifies the most immediate repair. If the adverse contribution is bounded by the negative Jordan part or the whole signed expression by total variation, the argument re-enters the positive Poisson cone. Under the cheap-exterior scaling, that majorant restores a genuine `Theta(log G)` zero budget. Taking absolute values after cancellation therefore forfeits the gain.
+NB-150 closes the obvious mesoscopic location strategy. For the two-point horizontal difference with `1<<L_G=o(G)`, Riemann--von Mangoldt density fills both lobes with logarithmic actual-zero mass, while a target packet of rank `O(log G)` inside `o(L_G)` contributes only `O(log G/L_G)`. Spreading the sign boundary makes the target negligible against both ambient lobes.
 
-NB-150 asks whether location sensitivity can instead make the negative lobe harmless by separating two horizontal sample points on a growing scale `1<<L_G=o(G)`. For the favorable sampler
+NB-151 closes the fixed-scale counterpart when the target packet itself has rank `Omega(log G)`. At fixed `L>0`, horizontal differencing of `xi'/xi` cancels the Hadamard background exactly and gives an absolutely convergent signed sum of actual-zero charges whose total is only `O(1)`. A narrow target packet carrying `Omega(log G)` positive charge therefore forces `Omega(log G)` negative charge from other zeros. Because the charge kernel decays quadratically and unit intervals contain only `O(log G)` zeros, a fixed bounded neighboring annulus must contain `Theta(log G)` adverse zeros.
 
-`delta_(1+L+iG) - delta_(1+cL+iG)`,
+The two scales fail for different reasons: mesoscopic differencing is background-filled; fixed-scale differencing is constrained by target-conditioned signed conservation. Together they show that **changing only the horizontal separation of a two-point zero-mass sampler does not isolate a logarithmic exceptional packet from an equally large adverse population**.
 
-the rescaled signed zero profile is
+The remaining signed route must alter the geometry or source coupling: shrinking scales where the exterior Euler-product bound changes, many-point/nonuniform kernels with a genuinely different conservation pattern, signed prime-side cancellation, or direct coupling to Nyman target data before lobe separation. NB-151 still permits paired exceptional packets, so naive iteration of the conservation law is not itself a contradiction.
 
-`q_c(x)=1/(1+x^2)-c/(c^2+x^2)`.
-
-Its positive and negative Lebesgue masses are equal, but more importantly the **actual zeta zero set fills both lobes at mean density**:
-
-`sum_rho (Q_G(rho))_+ = (A_c/(2pi)+o(1)) log G`,
-
-`sum_rho (Q_G(rho))_- = (A_c/(2pi)+o(1)) log G`.
-
-At the same time a target packet of rank `O(log G)` contained in `o(L_G)` receives only `O(log G/L_G)` total unnormalized charge. Multiplying the sampler to restore order-one target charge scales the two background lobes by the same factor. Thus mesoscopic horizontal spreading does not repay the sign debt; it makes the desired packet negligible against both signs of the ambient zero density.
-
-The live source question is consequently narrower. A successful signed route must stay at fixed or shrinking ordinate scales where the `O(log G)` zero-count remainder can compete with the mean density, use a kernel whose sign placement is tied to exceptional zero information, exploit genuinely signed/correlated von Mangoldt contributions, or couple positive and negative pieces directly to the Nyman target before lobe separation. Neither Jordan domination nor mesoscopic smoothing supplies the missing resource.
-
-**Boundary.** NB-150 is a two-point horizontal mesoscopic theorem. It does not classify fixed-scale samplers, many-point signed kernels, vertical differencing or zero-spacing-scale localization. The result is unconditional and uses only Riemann--von Mangoldt density; it does not prove that every signed route is background-dominated.
+**Boundary.** NB-150 is mesoscopic and density-driven; NB-151 is fixed-scale and conditioned on a logarithmic target packet. Neither classifies shrinking scales, general signed measures, vertical differences or many-point samplers. No local zero-spacing asymptotic, simplicity or RH is assumed.

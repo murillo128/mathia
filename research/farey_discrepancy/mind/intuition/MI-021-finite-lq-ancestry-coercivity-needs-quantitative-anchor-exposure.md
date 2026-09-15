@@ -1,45 +1,35 @@
-# MI-021 — Finite-`L^q` ancestry coercivity is anchored cut exposure; bounded distortion requires endpoint mass or typical-depth reach
+# MI-021 — Finite-`L^q` ancestry coercivity is anchored cut exposure; depth trades only the child-side tax
 
-**Evidence level:** exact/proved classification from [FD-147](../../findings/FD-147-finite-seed-ancestry-coercivity-is-exactly-an-anchored-cut-problem.md), with the endpoint-weight obstruction quantified by [FD-148](../../findings/FD-148-finite-seed-anchored-expansion-forces-singular-endpoint-marginals.md) and the bounded-distortion nonlocality threshold by [FD-149](../../findings/FD-149-bounded-distortion-ancestry-transfer-must-reach-typical-prime-factor-depth.md).
+**Evidence level:** exact/proved classification from [FD-147](../../findings/FD-147-finite-seed-ancestry-coercivity-is-exactly-an-anchored-cut-problem.md), with the endpoint-weight obstruction quantified by [FD-148](../../findings/FD-148-finite-seed-anchored-expansion-forces-singular-endpoint-marginals.md), the bounded-distortion depth threshold by [FD-149](../../findings/FD-149-bounded-distortion-ancestry-transfer-must-reach-typical-prime-factor-depth.md), and the explicit depth/distortion phase curve in [FD-150](../../findings/FD-150-ancestry-depth-trades-only-the-child-tax-along-a-sathe-selberg-phase-curve.md).
 
-Let `G=(V,E)` carry vertex and edge probability measures `nu,eta`, let `D` be the anchored seed, and let `b:V->{-1,+1}` equal `+1` on `D`. If `A_b={b=-1}`, then for every finite `q`,
+For binary orientations anchored on `D`, the optimal finite-`L^q` Poincaré constant is exactly
 
-`||b-1||_(L^q(V,nu)) = 2 nu(A_b)^(1/q)`,
+`C^(bin)_(q,D)=h_D(nu,eta)^(-1/q)`.
 
-`||nabla b||_(L^q(E,eta)) = 2 eta(partial A_b)^(1/q)`.
+Thus connectivity is only the zero-boundary endpoint. Stable recovery requires a uniform lower bound on observed boundary mass for every admissible macroscopic cut.
 
-Every admissible `A subset V\D` occurs as such a binary orientation, so the optimal binary anchored Poincaré constant is exactly
+FD-148 identifies a depth-independent parent obstruction for a fixed finite divisor-closed anchor. If the parent marginal satisfies `eta_T^-(d)<=P_T nu_T(d)` on `D`, then for every ancestry depth
 
-`C^(bin)_(q,D) = h_D(nu,eta)^(-1/q)`,
+`h_(D,T)^(<=L) <= (zeta(2)|D|+o_D(1)) P_T/T`.
 
-`h_D(nu,eta)=inf_A eta(partial A)/nu(A)`.
+Positive anchored expansion therefore always requires parent amplification of order `T`, unless the anchor itself is changed. Making the ancestry graph deeper does not dilute this fixed-seed tax.
 
-Connectivity is only the zero-boundary endpoint. Finite-`L^q` stability requires a **uniform lower bound on observed boundary mass for every macroscopic flipped region** in the actual source-native weights.
+The child side does admit a quantitative depth trade. Put `lambda_T=log log T` and `L_T=floor(alpha lambda_T)` with fixed `0<alpha<1`. FD-150 combines the exact complement cut with the squarefree Sathe--Selberg lower tail to obtain
 
-FD-148 shows that one-step nonuniform weighting pays an explicit endpoint tax. On the squarefree ancestry graph, the complement of a fixed finite divisor-closed seed `D` has boundary only through the seed and its immediate descendants. If the edge parent marginal is dominated by `K_T` times uniform, then
+`nu_T(R_(D,L_T)) asymp_(D,alpha) 1/[sqrt(lambda_T)(log T)^(I(alpha))]`,
 
-`h_(D,T) <= O_D(K_T/T)`;
+`I(alpha)=1-alpha+alpha log alpha`.
 
-if the child marginal is dominated by `L_T` times uniform, then
+If `eta_T^+(m)<=K_T nu_T(m)` on the reachable descendants, then
 
-`h_(D,T) <= O_D(L_T/log T)`.
+`h_(D,T)^(<=L_T) <<_(D,alpha) K_T/[sqrt(log log T)(log T)^(I(alpha))]`.
 
-Thus one-step positive expansion requires singular endpoint concentration: average parent amplification of order `T`, logarithmic amplification on the child/prime rays, or an equivalent source-native concentration mechanism.
+Hence constant expansion forces
 
-FD-149 shows that bounded distortion can avoid this tax only by becoming genuinely nonlocal at a quantitatively forced depth. If edges may jump at most `L` prime adjunctions and the child marginal is `K_T`-dominated by the uniform coefficient measure on reachable descendants, then the same complement cut gives
+`K_T >> sqrt(log log T)(log T)^(I(alpha))`.
 
-`h_(D,T)^(<=L) <= K_T nu_T(R_(D,L)(T))/(1-nu_T(D))`.
+This interpolates the fixed-depth obstruction and the Erdős--Kac transition. Approaching the typical depth relaxes the **additional child-side singularity**, but it never pays the parent bill. The earlier shorthand “endpoint mass or typical-depth reach” is therefore too weak for a fixed anchor: the correct resource statement is **parent concentration always, plus either child concentration or sufficient ancestry depth**.
 
-For fixed `L`, Landau's fixed-rank almost-prime law makes the reachable fraction
+A source-valid proposal should expose at least three quantities before a full coercivity argument: the ancestry depth, the parent amplification on the anchor, and the child amplification on the reachable set. If the parent amplification is `o(T)`, the fixed-anchor route is dead regardless of depth. If `L_T~alpha log log T` with `alpha<1`, the child amplification must cross the explicit Sathe--Selberg phase curve above.
 
-`nu_T(R_(D,L)(T)) <<_(D,L) (log log T)^(r_D+L-1)/log T`,
-
-so `K_T=O(1)` still forces `h->0`. If instead `K_T<=K` and `h_(D,T)^(<=L_T)>=c>0`, squarefree Erdős--Kac forces
-
-`L_T >= log log T - O_(c,K,D)(sqrt(log log T))`.
-
-Hence the reusable dichotomy is concrete: **a fixed-seed finite-`L^q` ancestry mechanism must pay either singular endpoint mass or genealogical reach essentially up to the typical squarefree prime-factor depth**. A few extra local generations do not change the obstruction.
-
-The source-validity test should therefore ask where that resource comes from. If a proposed weighting concentrates mass, explain the arithmetic mechanism producing the concentration. If it keeps bounded marginals, explain why the observation naturally couples the anchor to descendants roughly `log log T` prime adjunctions away and why that depth is not just hidden source reconstruction.
-
-**Boundary.** These results concern a fixed finite anchor, binary Möbius orientations, finite `L^q` and positive divisibility-ancestry observations. They do not exclude a growing anchor, `L^infinity`, independently justified singular weights, depth on the typical `log log T` scale, or genuinely nonlocal Farey/Fourier destination functionals outside this edge model.
+**Boundary.** These results concern a fixed finite anchor, binary Möbius orientations, finite `L^q` and positive divisibility-ancestry observations. They do not exclude a growing source-native anchor, `L^infinity`, independently justified singular weights, or genuinely nonlocal Farey/Fourier destination functionals outside this edge model. The phase curve is a necessary-condition screen, not a sufficiency theorem for expansion.

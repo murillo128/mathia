@@ -2,42 +2,34 @@
 
 This file holds the current mathematical questions suggested by the durable Weil-inertia intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Control the finite negative sector against the exact clipped source-tail gap
+## Control the finite negative sector against the now-uniform clipped source-tail gap
 
 **Linked intuitions:** `MI-017-sliding-first-crossing-localization-produces-autocorrelation-symbols` through `MI-032-reserve-lifting-converts-the-frozen-essential-obstruction-into-a-finite-negative-index-problem`.
 
-WI-304--WI-306 exactly classify the frozen-reserve tail-dropped comparison. With Liu's support and `beta_0=1/16`, the first active prime already creates an essential negative band, and the compressed-translation numerical-radius bound is sharp. No same-width reshaping of the localizer repairs that fixed comparison.
+WI-304--WI-306 classify the frozen-reserve tail-dropped comparison and show that its first active prime already creates an essential negative band. WI-307 changes the architecture: because the unit-window archimedean symbol is unbounded above, the exterior reserve can be lifted at every fixed aperture, moving the essential spectrum positive and leaving only a finite discrete negative sector. WI-308 restores the omitted source exactly by clipping the source symbol, producing a positive tail multiplier with qualitative bottom `c_(chi,B)>0`.
 
-WI-307 changes the architectural conclusion. The unit-window archimedean symbol is unbounded above, so at every fixed aperture `L` the exterior reserve can be raised to any prescribed `B` by moving the Fourier cutoff. The localized comparison becomes
+WI-309 closes the tail-gap half of the quantitative gate. Instead of fixing a smooth localizer while the clipping reserve grows, choose an aperture-adaptive compactly supported `L^2` localizer whose endpoint singularity approaches the square-integrability threshold. Its Fourier tail then decays only just fast enough, and the shrinking normalization cancels against the integrated tail. With the explicit reserve `B_L=P_L+1`, the exact decomposition satisfies
 
-`D_(L,chi,B)=B I-A_(L,chi)+K_(L,chi,B)`,
+`Q=D_(L,chi_L,B_L)+T_(chi_L,B_L)`,
 
-with `A_(L,chi)` the finite active prime-power translation sum and `K` compact. Choosing `B>||A_(L,chi)||` moves the essential spectrum strictly positive.
+`sigma_ess(D_(L,chi_L,B_L)) subset [1,infinity)`,
 
-WI-308 now supplies the missing source-valid remainder structure at fixed aperture. Clipping the exact unit-window source symbol at `B` decomposes the full Weil form as
+`T_(chi_L,B_L) >= c_0 I`,  `c_0=1/(64 pi e)`,
 
-`Q = D_(L,chi,B) + T_(chi,B)`,
+uniformly in the finite aperture. Under an RH failure, the first-crossing mode therefore forces `lambda_min(D)<=-c_0`: the clipped-tail witness cannot collapse to zero merely because the aperture grows.
 
-where the omitted tail becomes, after sliding localization, a Fourier multiplier with symbol
+The remaining obstruction has moved again. The endpoint-singular localizer makes its singularity exponent approach the `L^2` boundary, and the compact correction in `D` degenerates correspondingly. The live theorem is **uniform control of the finite negative spectrum for this adaptive family**, not a better lower bound on the tail multiplier. A successful construction must show `lambda_min(D_L)>=-c_0` (or an equivalent finite-sector domination) uniformly enough for the global limit; an impossibility result must show that the compact/discrete sector necessarily defeats every admissible adaptive reserve/localizer choice.
 
-`r_(chi,B)(xi)=(1/(2 pi)) int q_B(t)|F_chi(t-xi)|^2 dt`
+## Track localizer singularity and compact-sector complexity as the remaining price
 
-and has a **strictly positive global bottom** `c_(chi,B)=inf_xi r_(chi,B)(xi)>0`. Hence `T_(chi,B)>=c_(chi,B) I`. Positivity at fixed aperture is reduced to the finite discrete inequality
+WI-309 shows that a uniform positive tail reserve can be bought by moving the localizer toward the endpoint-singular `y^-1/2` profile. That purchase is not free: the localization-defect kernel remains compact for every finite aperture, but its regularity worsens as the singularity exponent approaches the endpoint. Future estimates must therefore track the norm, negative eigenvalue depth/multiplicity, or another effective spectral descriptor of that compact correction jointly with the active prime translations.
 
-`lambda_min(D_(L,chi,B)) >= -c_(chi,B)`.
-
-Conversely, a first-crossing zero mode under an RH failure must force `lambda_min(D)<=-c<0`; it cannot hide at zero margin in this clipped comparison. The live fixed-aperture problem is therefore no longer whether the omitted source can in principle pay for the discrete sector, but whether the actual finite negative eigenvalues obey this explicit source-tail budget.
-
-## Make the clipped tail reserve effective and uniform as the aperture grows
-
-The positive scalar `c_(chi,B)` is qualitative in WI-308. A global argument must quantify it jointly with `B`, the localizer and the outer aperture, while also tracking the norm and multiplicity of the active arithmetic translations. The Fourier cutoff needed to realize a large reserve can become expensive, and the finite negative sector can evolve with `L`.
-
-The next useful result should therefore either derive an effective lower bound for `c_(chi,B)` and a matching upper control on the negative discrete spectrum that survives `L->infinity`, or prove a scale incompatibility that defeats **all** admissible choices of `B` and `chi`. Reusing the frozen `beta_0=1/16` essential-band obstruction as if the reserve were intrinsic is no longer valid.
+Reusing the old frozen `beta_0=1/16` essential-band obstruction or treating the uniform tail gap as a proof of positivity both miss the current architecture.
 
 ## Keep compact certificate design separate from full Weil positivity
 
-Finite-dimensional trial-subspace optimization remains certificate design downstream of the source-valid information-retention question. WI-303 shows that the rank of a finite Loewner minorant is not structural. WI-307--WI-308 sharpen the distinction: finite negative index plus an exact positive tail reserve produces a concrete spectral inequality, but neither side may be replaced by an arbitrary finite-rank patch chosen after seeing the negative modes.
+Finite-dimensional trial-subspace optimization remains downstream of the source-valid information-retention question. The source-exact decomposition now supplies a fixed positive margin, but an arbitrary finite-rank patch chosen after observing negative modes is still not source-valid. Any certificate must be derived from the actual adaptive localized Weil operator and survive the aperture limit.
 
 ## Preserve the signed-density quotient
 
-Even a successful reserve-lifted/tail-retaining architecture must eventually survive the exact density-one cancellation of WI-241. The RH-relevant source variable is the signed discrepancy after the universal prime main density and pole cancel. A large positive reserve or retained arithmetic mass is not yet the required sign-producing discrepancy theorem.
+Even a successful reserve-lifted/tail-retaining architecture must eventually survive the exact density-one cancellation of WI-241. A large positive reserve or retained arithmetic mass is not yet the required sign-producing discrepancy theorem; the RH-relevant source variable remains the signed discrepancy after universal prime main density and pole cancellation.
