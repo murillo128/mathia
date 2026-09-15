@@ -14,17 +14,19 @@ AF-351--AF-353 identify the fixed-order critical transition and its conditioning
 
 whereas the endpoint `delta=0` cannot satisfy the same bound. The absolute critical-zero budget diverges like `1/(2*pi*delta^2)`, while the cancellation-aware norm is also unbounded under RH but can be much smaller.
 
-AF-354--AF-357 show that approaching the endpoint is a genuinely moving-scale problem. Unconditionally, sufficiently fast moving orders inherit Hardy--Littlewood endpoint oscillation; under RH every polynomially vanishing order still fails the sharp root profile. Yet in logarithmic coordinates `||E_delta-E_0||_(B^2)=O(delta)` and the limiting laws are Lipschitz in bounded-Lipschitz distance. The exact Beta kernel has lag `W_delta` with `-delta log W_delta=>Exp(1)`, so fixed mass samples relative shells `exp(-Theta(1/delta))`; the `min(1,delta log X)` endpoint modulus is sharp for every argument based only on a scalar partial-sum envelope, even with pointwise jump bounds.
+AF-354--AF-358 show that approaching the endpoint is a genuinely moving-scale problem. Unconditionally, sufficiently fast moving orders inherit Hardy--Littlewood endpoint oscillation; under RH every polynomially vanishing order still fails the sharp root profile. Yet in logarithmic coordinates `||E_delta-E_0||_(B^2)=O(delta)` and the limiting laws are Lipschitz in bounded-Lipschitz distance. The exact Beta kernel has lag `W_delta` with `-delta log W_delta=>Exp(1)`, so fixed mass samples relative shells `exp(-Theta(1/delta))`. Under RH the smoothed zero profile satisfies `E_delta in H^s_(B,zeta) <=> s<1/2+delta`, while `E_delta-E_0 in H^s_(B,zeta) <=> s<1/2`.
 
-AF-358 now identifies the exact quadratic spectral ceiling behind that topology split. Under RH,
+AF-359 resolves the corresponding two-parameter spectral scale. If `delta_j->0`, `T_j->infinity` and `delta_j log T_j->u`, then the critical half-derivative dyadic shell energies obey
 
-`E_delta in H^s_(B,zeta) <=> s<1/2+delta`,
+`A_delta(T)/A_0(T) -> exp(-2u)`
 
-but for every fixed `delta>0`,
+and
 
-`E_delta-E_0 in H^s_(B,zeta) <=> s<1/2`.
+`D_delta(T)/A_0(T) -> (1-exp(-u))^2`.
 
-Every fixed positive order therefore has enough spectral regularity to cross the ordinary `ell^1`/uniform-convergence gate, while the comparison with the endpoint never does. For each fixed `s<1/2` the difference is still `O_s(delta)`. The missing theorem is consequently not another weighted quadratic norm: it must use source-native phase, maximal/tail, signed short-interval or cross-scale information that couples the exponentially moving spectral/physical bands seen by the supremum endpoint.
+Thus a subexponential zero bandwidth in `1/delta` is asymptotically blind to the endpoint defect; an order-one fraction first appears at `T=exp(Theta(1/delta))`. This is the reciprocal spectral scale to the physical Beta-kernel localization, not a general uncertainty principle.
+
+The missing theorem is consequently not another weighted quadratic norm or a larger but subexponential zero cutoff. It must either reach the exponentially moving band in a controlled way or use source-native phase, maximal/tail, signed short-interval or cross-scale information that bypasses magnitude-only shell energy.
 
 ## Price the actual target metric before calling a representation compressed
 
@@ -32,7 +34,7 @@ Every fixed positive order therefore has enough spectral regularity to cross the
 
 Localization, contraction, lifting and smoothing can move or attenuate information without making it cheaper in the metric used by the final theorem. AF-349 makes this metric dependence exact: the full Riesz map is an isometry up to `r!` from local coefficient `ell^1` into derivative variation, yet there is no scale-uniform inverse modulus from raw `C^0` profile amplitude to that coefficient distance on the perfect-power controls.
 
-AF-350 shows that failure of source recovery in `C^0` does not imply failure of every target discriminator. AF-352 adds the converse warning: arbitrarily weak fixed positive smoothing can improve endpoint conditioning without discriminator loss. AF-356--AF-358 sharpen the limiting audit: the family is stable in `B^2` and in every strictly subcritical zero-Sobolev scale, every fixed smoothed profile itself crosses the half-derivative regularity boundary, but the endpoint comparison stays exactly below that boundary. A representation is therefore useful only relative to the topology, scale and parameter regime consumed by the destination.
+AF-350 shows that failure of source recovery in `C^0` does not imply failure of every target discriminator. AF-352 adds the converse warning: arbitrarily weak fixed positive smoothing can improve endpoint conditioning without discriminator loss. AF-356--AF-359 sharpen the limiting audit: every fixed smoothed profile crosses the half-derivative regularity boundary, the endpoint comparison stays exactly below it, and the missing endpoint energy is only detected at exponential spectral height as the smoothing vanishes. A representation is therefore useful only relative to the topology, physical scale, bandwidth and parameter regime consumed by the destination.
 
 ## Build cancellation-coherent source access to the Li root-rate class
 
@@ -54,4 +56,4 @@ AF-319 closes optimizer transfer once a homogeneous profile cap `Q<=C<3` is assu
 
 ## Keep source complexity, transform fidelity, terminal loss and parameter-uniform conditioning as different currencies
 
-Observation order, sign density, gap occupancy, concentration profile, raw locality, smoothing order, inverse conditioning, singularity class, destination topology, physical lag resolution and destination slack are provably different resources. AF-349--AF-358 now separate complete representation, weak terminal quotient, fixed-order critical threshold, absolute spectral conditioning cost, moving-order source obstruction, `B^2` stability, exponentially thin source resolution and the exact half-derivative endpoint ceiling. Future work must price `source -> representation -> terminal observer` in the **actual terminal metric, asymptotic scale, discriminator and limiting parameter regime**, not infer usefulness from source richness, transformed amplitude, intermediate invertibility, fixed-parameter smoothing or average spectral regularity alone.
+Observation order, sign density, gap occupancy, concentration profile, raw locality, smoothing order, inverse conditioning, singularity class, destination topology, physical lag resolution, spectral bandwidth and destination slack are different resources. AF-349--AF-359 now separate complete representation, weak terminal quotient, fixed-order critical threshold, absolute conditioning cost, moving-order source obstruction, average-topology stability, exponentially thin physical resolution, the exact half-derivative ceiling and the exact exponential spectral detection law. Future work must price `source -> representation -> terminal observer` in the **actual terminal metric, asymptotic scale, discriminator, bandwidth and limiting parameter regime**, not infer usefulness from source richness, transformed amplitude, intermediate invertibility, fixed-parameter smoothing or average spectral regularity alone.

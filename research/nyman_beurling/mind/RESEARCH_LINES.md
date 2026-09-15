@@ -4,7 +4,7 @@ This file holds the current mathematical questions suggested by the durable Nyma
 
 ## Force target-bearing geometry, not merely visibility or a well-conditioned coordinate chart
 
-**Linked intuitions:** `MI-001-target-aware-gram-geometry-must-carry-absolute-scale`, `MI-003-low-gram-spectrum-is-cheap-target-occupation-is-the-signal` through `MI-027-ordinary-near-confluent-conditioning-can-be-arbitrarily-bad-while-the-whole-state-space-is-target-poor`.
+**Linked intuitions:** `MI-001-target-aware-gram-geometry-must-carry-absolute-scale`, `MI-003-low-gram-spectrum-is-cheap-target-occupation-is-the-signal` through `MI-028-global-density-rarity-is-not-worst-cell-coercivity`.
 
 NB-123--NB-132 build the source-faithful recurrence/phase route and show that actual zero counting can put a narrow polynomial-height packet below a recurrence-visibility rank budget. NB-133--NB-136 then separate visibility, representation supply and conditioning: matched clustered packets can make scalar annihilators, finitely many geometric bases, and even the full natural-prefix evaluation matrix superpolynomially ill-conditioned under the same coarse source envelopes.
 
@@ -30,8 +30,8 @@ The live theorem must constrain a target-bearing invariant of the **actual** zer
 
 The shell decomposition still reduces the rooted-mixing channel to a quantitative coefficient discrepancy. The live theorem is whether the canonical arithmetic coefficients can force near-linear discrepancy on the relevant shell family without assuming the Nyman distance estimate one is trying to prove.
 
-## Keep recurrence order, translation resolution, coordinate conditioning, subspace geometry and target occupation separate
+## Keep recurrence order, translation resolution, coordinate conditioning, subspace geometry, target occupation and worst-cell source control separate
 
-NB-128 buys local resolution for one common phase translation by growing the natural prefix. NB-132 restores rank visibility in a concrete actual-zero regime. NB-133--NB-136 show that those facts do not give a conditioned packet representation. NB-137--NB-141 show that catastrophic raw conditioning, arbitrary two-dimensional simple-node geometry and even strong global rarity can coexist with a well-defined target-poor confluent subspace at sparse exceptional heights.
+NB-128 buys local resolution for one common phase translation by growing the natural prefix. NB-132 restores rank visibility in a concrete actual-zero regime. NB-133--NB-136 show that those facts do not give a conditioned packet representation. NB-137--NB-140 show that catastrophic raw conditioning and arbitrary two-dimensional simple-node geometry can coexist with a target-poor confluent subspace. NB-141 adds that even strong global rarity of those cells does not remove a sparse exceptional sequence.
 
-The surviving discriminator is representation-invariant and worst-cell local. A proposal must state which subspace or quotient is physically meaningful, how the actual target occupies it, what **complex cluster-scale** source law prevents that occupation from vanishing, and why the law applies uniformly to actual zeta zeros rather than merely on average or in a chosen chart. Numerical conditioning, average gaps, one-dimensional spacing bounds, global density or small horizontal freedom are secondary unless they change the target-bearing state geometry.
+The surviving discriminator is representation-invariant, local and worst-cell. A proposal must state which subspace or quotient is physically meaningful, how the actual target occupies it, what **complex cluster-scale** source law prevents that occupation from vanishing, and why the law applies uniformly to actual zeta zeros rather than merely on average or in a chosen chart. Numerical conditioning, average gaps, one-dimensional spacing bounds, global density or small horizontal freedom are secondary unless they change the target-bearing state geometry.
