@@ -6,39 +6,50 @@ origin: research-watch
 target_line: visual_exploration
 based_on:
   - research/visual_exploration/findings/VIS-225-coherent-prime-blocks-force-divergent-ising-scale.md
-  - research/visual_exploration/findings/VIS-226-subcritical-prime-phase-box-grid-cannot-beat-net-scan.md
+  - research/visual_exploration/findings/VIS-226-finite-phase-net-scan-controls-subcritical-worst-start.md
+  - research/visual_exploration/findings/VIS-227-critical-phase-cell-collisions-have-balanced-occupancy-floor.md
 ---
 
-# Does the prime-phase coherence transition at `H ~ y/log y` reduce to logarithmic-scale prime occupancy?
+# Is there prime-specific excess above the critical phase-cell occupancy floor?
 
 ## Observation
 
-`VIS-225` obtains a subcritical worst-start lower bound by partitioning primes in `[y/2,y]` into phase-coherent frequency cells on which the sinc kernel stays uniformly positive. The corresponding prime-coordinate width is `Delta p = Theta(y/H)`. When `H=o(y/log y)`, these cells are much wider than `log y`; prime-number-theorem scale information then gives many primes per cell, and a Cauchy occupancy bound forces a macroscopic same-cell pair contribution.
+`VIS-225` obtains a strict-subcritical worst-start lower bound by partitioning primes in `(y/2,y]` into phase-coherent frequency cells of width `eta_v y/(8H)`. Below `H~y/log y`, coarse density forces many same-cell prime pairs. `VIS-226` separately resolves the strict-subcritical worst-start asymptotic through a finite phase-net scan, leaving the critical scale `H=lambda y/log y` outside that argument.
 
-At the critical scale `H=lambda y/log y`, the same construction changes character: `Delta p=Theta(log y)`, the number of cells and the number of primes are both `Theta(y/log y)`, and the mean occupancy is only `Theta(1)`. The coarse PNT+Cauchy certificate therefore stops forcing a positive linear surplus automatically. For this particular lower-bound mechanism, the representation factors through the cell-occupancy vector `(n_j)`: it retains the same-cell pair mass `sum_j binom(n_j,2)` needed for the positive sinc block, while discarding within-cell positions and all cross-cell kernel structure. This factorization applies only to the coherent-block certificate, not to the full prime-phase optimizer.
-
-`VIS-226` independently shows that a naive fixed box-grid search does not provide a subcritical computational shortcut, so the critical occupancy boundary is not merely a restatement of that access-time obstruction.
-
-## Research question
-
-For fixed `lambda>0` and a pre-registered phase tolerance, what happens to the logarithmic-width occupancy statistic
+`VIS-227` sharpens what happens to the coherent-block certificate exactly at that boundary. If `m` primes occupy `J` coherence cells and `m=qJ+r`, then the raw pair count
 
 `S_lambda(y)=sum_j binom(n_j,2)`
 
-when `H=lambda y/log y`? In particular, is there a range of `lambda` for which `S_lambda(y)` has a positive linear-scale lower envelope relative to the number of primes in `[y/2,y]`, or does the coherent-block contribution fall to the scale predicted by generic logarithmic-gap occupancy?
+has the exact representation-free floor
 
-If a non-generic occupancy effect survives, does it yield a genuine critical-scale worst-start lower bound that remains separated from the Haar-average `L2` scale, rather than merely extending the already-settled subcritical argument?
+`S_min(m,J)=J binom(q,2)+rq`.
+
+At `H=lambda y/log y`, one has `m/J -> eta_v/(8lambda)`. Consequently, `Theta(1)` mean occupancy does not uniformly mean that coarse forcing has disappeared. For `lambda<eta_v/8`, occupancy alone already forces a positive linear raw collision count; for `lambda>eta_v/8`, the exact balanced floor is eventually zero; at the transition, first-order asymptotics force no positive linear floor. Raw same-cell mass is therefore not the right arithmetic discriminator across the whole critical family.
+
+## Research question
+
+After removing the exact finite balanced-occupancy floor, does the true prime system exhibit a stable positive excess
+
+`S_lambda(y)-S_min(m,J)`
+
+for any fixed range of `lambda`, beyond what is produced by matched logarithmic-gap controls with the same `m` and `J`?
+
+If pair-count excess is not discriminating, is there another phase-cell statistic — for example multiscale occupancy variance, nearest-neighbor phase crowding, or persistence of dense cells across nearby `t` — that survives an appropriate matched control and can be translated into a critical-scale lower bound for the full prime-phase quadratic energy?
 
 ## Why it may matter
 
-This is the first scale at which the visual/phase geometry appears to require genuinely local prime-spacing information. Below it, coarse prime density already forces coherent blocks; at `H ~ y/log y`, the cell width reaches the natural logarithmic prime-gap scale and local occupancy becomes load-bearing. Resolving this boundary could therefore identify whether the prime-phase transition contains arithmetic structure beyond the generic density mechanism, or whether the subcritical divergence simply dies when PNT-scale occupancy ceases to be deterministic.
+The exact occupancy floor removes a generic combinatorial source of apparent critical clustering before prime arithmetic enters. This leaves a cleaner question: whether logarithmic-scale prime geometry contributes **excess organization** beyond the minimum forced by fitting `m` points into `J` cells.
+
+A positive, control-stable excess would identify arithmetic information not supplied by the one-point density mechanism used in `VIS-225`. Failure would close an attractive route without confusing a balls-in-cells constraint with prime-specific phase coherence.
 
 ## Decisive test
 
-Fix the phase tolerance before inspecting outcomes, so that same-cell prime pairs have a uniform positive sinc-kernel lower bound. For `H=lambda y/log y`, partition `[y/2,y]` into the corresponding cells of width `c(lambda) log y` and obtain rigorous upper/lower information for `S_lambda(y)` from available short-interval or small-gap prime results. Compare the resulting occupancy scale with a matched random or Cramer-type logarithmic-gap baseline that preserves the same one-point prime density.
+Fix the taper, phase tolerance, and a finite set of `lambda` values before inspecting outcomes, including values on both sides of `eta_v/8`. For each growing `y`, form exactly the `VIS-225` coherence cells at `H=lambda y/log y`, record `m`, `J`, and the occupancies `(n_j)`, and compute the exact finite baseline `S_min(m,J)` from `m=qJ+r`.
 
-Then translate only the rigorously surviving same-cell mass back through the `VIS-225` kernel certificate. A useful positive result must show a stable excess or lower envelope not already forced by the matched generic occupancy model. Kill the route if the critical statistic is asymptotically generic, if existing prime-gap theory already makes the answer immediate with no residual mechanism, or if any apparent excess depends on tuning the cell phase after inspection. Before promotion to a finding, audit equivalent formulations in short-interval prime counts, prime-pair statistics, and logarithmic-scale gap literature.
+Compare the excess `S_lambda-S_min` with matched controls conditioned on the same `m` and `J` and preserving the intended one-point density; use stronger controls only if the first comparison leaves a stable signal. Pre-register at least one statistic beyond raw pair count if testing multiscale persistence. A useful positive result must survive the control and then admit a rigorous translation back through the phase kernel. Kill the route if the excess is asymptotically generic, unstable under fixed cell-origin/phase perturbations allowed by the construction, or explained by already-imposed occupancy information.
+
+Before promoting any surviving arithmetic excess to a finding, audit equivalent formulations in logarithmic-scale prime gaps, short-interval counts, occupancy models, and prime-pair statistics.
 
 ## Evidence boundary
 
-`VIS-225` establishes the coherent-block mechanism only in the subcritical regime where its occupancy forcing is coarse and robust. It does not establish critical-scale occupancy, a threshold in `lambda`, a critical worst-start divergence, or any RH consequence. The observation here is a representation-level boundary for that certificate: at `H ~ y/log y`, PNT-scale density alone no longer settles the same-cell pair mass. No novelty claim is made for logarithmic-width prime occupancy or the required short-interval/gap estimates.
+`VIS-227` establishes only the exact combinatorial floor and its critical-scale specialization. It does not establish any positive prime-specific excess, control separation, critical worst-start divergence, or RH consequence. `VIS-225` and `VIS-226` remain strict-subcritical results. This clue therefore remains `status: proposed`; the unresolved object is the excess above the forced finite occupancy baseline, not the raw collision count.
