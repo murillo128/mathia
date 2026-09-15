@@ -117,7 +117,7 @@ Since `delta_j >> U_j^-2`, both real parts lie strictly below `Theta`. By taking
 
 Include the conjugates and functional-equation mirrors of these points. If one wants the formal source to lie in the attained-edge branch literally, also include one fixed symmetric quartet with real parts `Theta` and `1-Theta`; the edge points are excluded from the strict-subedge packet because that packet uses `beta<Theta`.
 
-Condition (8) has a useful consequence. At the cutoff `T_j`, no pair from stage `j+1` or later has entered, because even the lower ordinate `h_(j+1)` already exceeds `T_j`. All earlier pairs have entered, and (12) makes `rho_( *,j)` the rightmost member of the strict-subedge core. Therefore the exact `RE-140` rightmost gain at `(U_j,T_j)` is anchored by the intended pair `(rho_(0,j),rho_(*,j))`, not by an accidental point from another stage.
+Condition (8) has a useful consequence. At the cutoff `T_j`, no pair from stage `j+1` or later has entered, because even the lower ordinate `h_(j+1)` already exceeds `T_j`. All earlier pairs have entered, and (12) makes `rho_( *,j)` the rightmost member of the strict-subedge core. Therefore the exact `RE-140` rightmost gain at `(U_j,T_j)` is anchored by the intended pair \((\rho_{0,j},\rho_{*,j})\), not by an accidental point from another stage.
 
 The construction is one fixed infinite spectrum. It is not a different adversarial spectrum chosen separately for each `U_j`.
 
@@ -303,7 +303,7 @@ The obstruction is matched inside the same leading Robin representation used by 
 \tag{29}
 \]
 
-The two-power loss comes from the invariant reciprocal-square ordinate decay of this coefficient together with the deliberate absence of compensating horizontal gain. It is therefore not created by switching to a poorly conditioned coordinate system or by assigning adversarial free coefficients.
+The two-power loss comes from the source-faithful reciprocal-square ordinate decay of this coefficient in the leading Robin representation together with the deliberate absence of compensating horizontal gain. It is therefore not created by switching to a poorly conditioned coordinate system or by assigning adversarial free coefficients.
 
 What is **not** source-faithful is the zero set itself. The construction satisfies the listed coarse consequences of the zeta source but is not asserted to arise from the Euler product, the functional equation as an analytic identity, or any actual zeta zero configuration. Accordingly the conclusion is only
 
