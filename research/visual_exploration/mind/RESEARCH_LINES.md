@@ -2,25 +2,27 @@
 
 This file holds the current mathematical questions suggested by the durable visual-exploration intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Test a frozen prime-gap residual only after exact representation-matched nuisance calibration
+## Test a frozen prime-gap residual only after an exact representation-matched nuisance quotient
 
 **Linked intuitions:** `MI-009-stable-decoding-is-a-collision-geometry-question` through `MI-025-gap-concentration-identifies-dirichlet-nuisance-but-same-sample-plugin-remains-coupled`.
 
 VIS-237--VIS-241 quotient grid-origin phase, Poisson count noise, independently specified one-point intensity and endpoint-cut phase while preserving the spacing geometry to be tested. Symmetric Dirichlet cyclic gaps with independent rotation provide a fixed-count, exactly uniform-intensity dependence family; `alpha=1` is precisely iid-uniform circular spacing.
 
-VIS-242--VIS-243 make the fixed-`alpha` tent calibration explicit. VIS-244 identifies the Dirichlet nuisance coordinate through the complete-gap concentration `C=m sum_i X_i^2-1`, with exact expectation and variance. VIS-245 now supplies the missing cross term: `Cov(C,bar T)` reduces exactly to one-dimensional truncated beta moments through degree four. The complete fixed-`alpha` mean/covariance matrix of `(C,bar T)` is therefore explicit.
+VIS-242--VIS-243 make the fixed-`alpha` tent calibration explicit. VIS-244 identifies the Dirichlet nuisance through the complete-gap concentration `C=m sum_i X_i^2-1`, and VIS-245 gives the exact cross-covariance `Cov(C,bar T)`. VIS-246 now closes the tempting shortcut “condition on the observed concentration.” For `m>=3`, the conditional density on a fixed-`C` simplex-sphere slice is proportional to `(prod_i X_i)^(alpha-1)`, so `Law(bar T | C)` still depends on `alpha` in general. The two-gap case is the exact low-dimensional exception.
 
-The remaining same-sample gate is no longer unknown covariance. It is the **conditional/full joint calibration** needed after applying the nonlinear estimator `alpha_hat(C)` on the same configuration. Exact second moments do not determine `Law(bar T | C)` and do not justify treating the fitted `alpha` as fixed.
+The same finding identifies the exact nuisance coordinate instead. The log-product
 
-The confirmation fork is consequently sharp. Either freeze `alpha` from theory or genuinely held-out information and use the fixed-parameter null, or derive/validate the joint/conditional calibration that carries `C -> alpha_hat(C)` through the same-sample test. Only after that nuisance gate is passed should a predeclared prime statistic be compared across increasing scales.
+`L=sum_i log X_i`
+
+is a sufficient statistic for the one-parameter symmetric-Dirichlet family, hence the conditional law of **any** gap statistic given `L` is independent of `alpha`. The live exact same-configuration route is therefore to determine whether the predeclared tent statistic has a tractable and nondegenerate `Law(bar T | L)` and whether this quotient retains the candidate prime-specific geometry. A held-out/theoretical `alpha` with the fixed-parameter null remains the clean alternative. Plug-in calibration through `alpha_hat(C)` is still possible only with an independently justified full joint approximation; conditioning on `C` itself is not nuisance elimination.
 
 A surviving point-process residual is still not an RH mechanism. It must translate back through the signed prime-phase kernel and survive the earlier moment-null, amplitude and representation controls.
 
 ## Keep endpoint semantics and nuisance estimation outside post-hoc tuning
 
-If interval endpoints are nuisance, use the cut average `bar T`; if physical endpoints are source-bearing, retain the separate exact endpoint channel from VIS-241. If `alpha` is estimated from the same configuration, carry its conditional uncertainty rather than switching to a fixed-parameter law after observing `C`.
+If interval endpoints are nuisance, use the cut average `bar T`; if physical endpoints are source-bearing, retain the separate exact endpoint channel from VIS-241. If `alpha` is estimated from the same configuration through `C`, carry its full uncertainty rather than switching to a fixed-parameter law after observing `C`. If the exact sufficient-statistic route is used, predeclare conditioning on `L` and audit whether the resulting conditional statistic still has useful variation.
 
-VIS-243's half-circle quotient depends specifically on complement symmetry and must not be transferred to oriented or endpoint-sensitive statistics without re-derivation. VIS-245 likewise belongs to the symmetric Dirichlet family and does not license a Gaussian or linear-regression nuisance correction by itself.
+VIS-243's half-circle quotient depends specifically on complement symmetry and must not be transferred to oriented or endpoint-sensitive statistics without re-derivation. VIS-246's `L` sufficiency likewise belongs specifically to the symmetric one-parameter Dirichlet family; richer/asymmetric gap laws require their own nuisance factorization.
 
 ## Preserve the older low-frequency and fixed-clock controls
 
