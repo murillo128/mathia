@@ -4,7 +4,7 @@ This file holds the current mathematical questions suggested by the durable robi
 
 ## Exclude source-faithful reciprocal clusters on an attained finite edge
 
-**Linked intuitions:** `MI-001-robin-failure-requires-self-tangent-half-mass-event-gaps` through `MI-022-one-level-sparsity-cannot-exclude-growing-reciprocal-clusters-on-fixed-relative-windows`.
+**Linked intuitions:** `MI-001-robin-failure-requires-self-tangent-half-mass-event-gaps` through `MI-023-bounded-reciprocal-box-packets-have-a-uniform-visibility-floor`.
 
 RE-112--RE-123 reduce the attained finite-edge branch to a signed subedge zero packet and transfer continuum excursions to regular CA states. RE-124--RE-129 show that hiding a dominant algebraically strong atom forces a distinct, logarithmically comparable companion at inverse-window spacing with the required cancelling target-demodulated phase.
 
@@ -12,17 +12,19 @@ RE-130 closes the separate diffuse-cloud escape quantitatively. If `M_K(U)` is t
 
 `A_K(U) << M_K(U)^(1-kappa/2) (log(e/M_K(U)))^q`.
 
-RE-131 sharpens the strong-atom geometry under fixed-relative-window hiding: the required companion has polylogarithmic-reciprocal ordinate distance, logarithmically comparable amplitude, cancelling demodulated phase and horizontal lock `O(log log U/U)`.
+RE-131 sharpens the strong-atom geometry under fixed-relative-window hiding: the required companion has polylogarithmic-reciprocal ordinate distance, logarithmically comparable amplitude, cancelling demodulated phase and horizontal lock `O(log log U/U)`. RE-132 shows that even a very sparse simple formal spectrum can realize the reciprocal doublet on every sublinear window.
 
-RE-132 shows that even an extraordinarily sparse simple formal spectrum can realize the reciprocal doublet on every sublinear window. RE-133 closes the remaining observation-scale shortcut: a growing reciprocal subset cluster can suppress the dominant coefficient uniformly on a fixed-relative window while the full off-critical count stays below any prescribed divergent one-level envelope. Macroscopic visibility is therefore not forced by global sparsity alone.
+RE-133 proposed a growing reciprocal-cluster matched control for fixed-relative windows; that finding is currently under unresolved adversarial review and is not used here as fresh evidence. Independently, RE-134 proves the positive compactness statement needed to sharpen the actual-zero target: every packet with uniformly bounded cardinality inside one fixed reciprocal-scale box has a uniform fixed-relative visibility floor against its dominant atom.
 
-Inside the attained finite-edge branch, the live question is now genuinely source-specific and local: can actual off-critical zeta zeros support infinitely many algebraically dominant, reciprocal-scale cancelling **clusters** with the required horizontal/phase geometry, or does an Euler-product/explicit-formula/local-zero law forbid that cluster complexity? The nonattained edge and `Theta=1` remain separate.
+Consequently a full packet that hides at order `o(M_K(U))` must lose compactness. Cancellation must come from unbounded local occupancy, from order-one mass escaping every fixed reciprocal box, or from both. If the exterior contribution is reciprocal-scale tight, hiding forces the occupancy of a fixed box to diverge.
 
-## Keep density-aware atom extraction, observation-window strength and local cluster exclusion distinct
+Inside the attained finite-edge branch, the live source theorem is therefore concrete: can actual off-critical zeta zeros satisfy both a bounded-occupancy law in one fixed reciprocal box and a tightness law preventing order-`M_K(U)` cancelling mass from migrating to larger reciprocal radii? Together those two properties contradict macroscopic hiding. The nonattained edge and `Theta=1` remain separate.
 
-RE-130 transfers the off-critical zero-density exponent into atom extraction. RE-129 turns sublinear-window hiding into a nearby cancelling companion. RE-131 strengthens the necessary geometry under macroscopic hiding. RE-132 proves that one-level sparsity does not exclude the sublinear doublet, and RE-133 proves that even an arbitrarily sparse one-level spectrum can accumulate enough microscopic reciprocal complexity at lacunary heights to defeat a fixed-relative observation window.
+## Keep density-aware atom extraction, observation-window strength and local compactness exclusion distinct
 
-Improving zero-density estimates therefore strengthens the atom extracted from a given packet mass but does **not** itself exclude the local configuration needed after extraction. Enlarging the observation window from sublinear to fixed-relative rules out a single `pi/U` doublet but not a growing contractive cluster. Closure now requires a local spacing/multiplicity/phase restriction for actual zeros or another arithmetic compatibility absent from the formal matched spectra.
+RE-130 transfers the off-critical zero-density exponent into atom extraction. RE-129/RE-131 turn hiding into a nearby strongly constrained cancelling companion. RE-132 proves that one-level sparsity alone does not exclude the sublinear doublet. RE-134 now shows that bounded reciprocal-box complexity **does** force fixed-relative visibility, but only locally: the complement of the box may still import order-one cancellation.
+
+Improving zero-density estimates therefore strengthens the atom extracted from a given packet mass but does not exclude the post-extraction geometry. Enlarging the observation window is not by itself enough; a closure argument must control either reciprocal-box occupancy together with exterior tightness, or another arithmetic compatibility that prevents cancellation from escaping compactness.
 
 ## Keep the exact binary tie local
 

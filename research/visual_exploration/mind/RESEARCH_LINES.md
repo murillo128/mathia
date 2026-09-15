@@ -20,22 +20,26 @@ VIS-150--VIS-160 show that deterministic selectors can mimic arbitrarily high fi
 
 VIS-213--VIS-224 reduce fixed-`(y,H)` worst starts to a midpoint-gauged real signed ratio-shell Hamiltonian and compare the binary Ising optimum, exact torus optimum and real correlation SDP within universal constants.
 
-VIS-225 proves a coherent-block lower bound throughout `H log y/y ->0`. VIS-226 supplies the matching upper bound from the already-audited absolute tapered envelope. Consequently,
+VIS-225 proves a coherent-block lower bound throughout `H log y/y ->0`; VIS-226 supplies the matching upper bound. Consequently
 
 `I_abs(B_(y,H)) asy y/(H log y)`,
 
-and the exact torus and real SDP objectives have the same order. Since `R_v(y,H) asy 1/H`, all three Haar-normalized objectives have the exact order
+and the exact torus and real SDP objectives have the same order. Since `R_v(y,H) asy 1/H`, all three Haar-normalized objectives have scale `y/(sqrt(H) log y)` up to constants. The strictly subcritical static question is therefore closed at the coarse scale.
 
-`y/(sqrt(H) log y)`
+VIS-227 identifies the deterministic balanced-occupancy floor for critical phase-cell collisions. VIS-228 shows that subtracting this floor is insufficient even for independent uniform allocation: the expected excess is `Theta(J)` while the standard deviation is `Theta(sqrt(J))` at fixed positive occupancy density.
 
-up to fixed constants. The strictly subcritical static question is therefore closed at the coarse scale: neither a different relaxation nor subtler global phase optimization can change the asymptotic order.
+VIS-229 now gives the exact independent **nonuniform** baseline. For cell probabilities `(p_j)`, with `q_2=sum p_j^2` and `q_3=sum p_j^3`,
 
-VIS-227 identifies the deterministic balanced-occupancy floor for critical phase-cell collisions. VIS-228 then shows that subtracting this floor is still insufficient: under independent uniform allocation with the same `(m,J)`, `E[S-S_min]=Theta(J)` while `sd(S)=Theta(sqrt(J))`. An extensive positive excess over the balanced floor is therefore generic even under the simplest stochastic null.
+`E[S]=binom(m,2)q_2`,
 
-The critical pair-collision question begins only after stochastic centering against a matched occupancy law. The current local clue asks whether a centered residual survives fixed cell-origin perturbations and controls preserving the intended one-point density or logarithmic-gap structure. If pair collisions become generic under those controls, the next statistic must be genuinely different, such as a multiscale persistence or direction-sensitive phase observable.
+`Var(S)=binom(m,2)(q_2-q_2^2)+6binom(m,3)(q_3-q_2^2)`.
+
+The extra term satisfies `q_3-q_2^2=Var(p_X)>=0`; it is present without pair dependence and vanishes only when all positive-probability cells are equiprobable. Matching an effective cell count or collision mean alone can therefore create a false critical residual from one-point heterogeneity.
+
+The critical pair-collision question begins only after centering and scaling against an admitted one-point law and then testing stronger dependent controls that preserve the intended logarithmic-gap structure. The current local clue should treat the `(q_2,q_3)` categorical law as the minimal independent baseline, not the final null. If the residual disappears there or under a gap-preserving dependent control, the next statistic must carry genuinely different information such as multiscale persistence or direction-sensitive phase structure.
 
 ## Keep static scale, deterministic floor, stochastic baseline, optimizer recovery and dynamical access separate
 
-VIS-226 fixes the strictly subcritical static supremum scale but does not identify the exact optimizer, a canonical sign pattern, a sharp constant or any recurrence/access time. VIS-227 fixes the deterministic balls-in-cells minimum at `H asy y/log y`. VIS-228 fixes the mean/variance of the simplest independent occupancy null and proves that deterministic-floor excess is not itself arithmetic evidence.
+VIS-226 fixes the strictly subcritical static supremum scale but not the exact optimizer, sharp constant or recurrence/access time. VIS-227 fixes the deterministic balls-in-cells minimum. VIS-228 fixes the uniform independent stochastic baseline. VIS-229 shows that the nonuniform independent baseline already needs both the second and third power sums of the one-point cell law.
 
-These are separate currencies. A critical statistic must first remove the universal deterministic constraint, then compare with an admitted stochastic control, and only then ask whether any surviving residual influences the Ising/torus/SDP objective or the physical prime-log orbit.
+These are separate currencies. A critical statistic must first remove the universal deterministic constraint, then calibrate the admitted one-point stochastic law including its heterogeneity-driven variance, then account for dependence preserved by stronger controls, and only afterward ask whether any surviving residual influences the Ising/torus/SDP objective or the physical prime-log orbit.
