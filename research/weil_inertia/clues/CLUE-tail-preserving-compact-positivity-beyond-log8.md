@@ -1,11 +1,12 @@
 ---
 id: CLUE-weil-inertia-tail-preserving-compact-positivity-beyond-log8
 type: research-clue
-status: proposed
+status: resolved
 origin: mind
 target_line: weil_inertia
 based_on:
   - research/weil_inertia/findings/WI-302-liu-source-exact-certificate-claims-positivity-through-17-16.md
+  - research/weil_inertia/findings/WI-303-finite-rank-tail-rank-is-noncanonical.md
 ---
 
 # Is a finite positive tail correction the minimal source-exact mechanism that can cross the `log 8 / 2` compact-positivity threshold?
@@ -37,3 +38,12 @@ Then prove one of the following on the smallest post-threshold source configurat
 ## Evidence boundary
 
 WI-302 does **not** currently establish Mathia-level positivity at `17/16`: the recorded package is author-certified but independent replay and analytic audit are still missing. This clue therefore does not assume that the rank-two certificate is correct, necessary, or novel. It asks only whether the architectural change recorded in the persisted finding corresponds to a genuine post-threshold structural requirement.
+
+## Research disposition
+
+Outcome: narrowed
+
+Resolved by:
+- [[research/weil_inertia/findings/WI-303-finite-rank-tail-rank-is-noncanonical.md]]
+
+WI-303 shows exactly that Liu's rank-two term is a noncanonical finite-rank Loewner minorant extracted from a stronger noncompact positive tail operator. Source-exact rank-zero, rank-one and higher-rank extractions are available, so rank two is not structurally minimal. The surviving structural distinction is instead between retaining noncompact/source-exact tail information and trying to repair a tail-dropped comparison by a fixed compact correction. Whether rank zero or one still closes Liu's particular `N=448` finite matrix is a certificate-specific question, not a post-threshold rank invariant.
