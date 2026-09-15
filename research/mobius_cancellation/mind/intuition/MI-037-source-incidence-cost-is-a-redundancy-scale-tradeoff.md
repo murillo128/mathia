@@ -1,31 +1,25 @@
-# MI-037 — Source-incidence cost is a redundancy/scale tradeoff, but generic code geometry can realize its coarse frontier
+# MI-037 — Source-incidence cost is a redundancy/scale tradeoff whose live boundary is second-order
 
-**Evidence level:** exact/literature-derived source-incidence consequence from [MC-312](../../findings/MC-312-generalized-hamming-source-redundancy-scale-tradeoff.md), sharpened by the generalized-weight/erasure boundary in [MC-313](../../findings/MC-313-generalized-griesmer-erasure-list-boundary.md), built on the source-cut theorem [MC-308](../../findings/MC-308-source-prime-cuts-force-quotient-occupancy.md) and classical generalized Hamming, Singleton, Griesmer and erasure-list theory.
+**Evidence level:** exact/literature-derived source-incidence consequence from [MC-312](../../findings/MC-312-generalized-hamming-source-redundancy-scale-tradeoff.md), with generic coding boundary from [MC-313](../../findings/MC-313-generalized-griesmer-erasure-list-boundary.md) and second-order sharpening from [MC-314](../../findings/MC-314-second-order-source-scale-near-capacity-erasure-boundary.md).
 
-MC-311 forces exponentially many Page-expensive endpoint directions, but it deliberately leaves open whether those directions can reuse one compact source package. MC-312 answers the first nonshareability question at the level of a **common representation code**.
+For fixed lower-prime representatives of `R` independent endpoint generators, let `A` be the binary source-incidence matrix, `n` its number of source coordinates, `Z` its largest source prime, and `d_t` the generalized Hamming weights of its row space. The source-cut theorem gives
 
-Choose fixed lower-prime representatives for the `R` independent endpoint generators. Let `A` be their binary source-incidence matrix, `n` the number of distinct lower-prime coordinates in the union support and `Z` the largest such prime. The row space `C_A` is an `[n,R]` binary code. A `t`-dimensional subcode with generalized Hamming support `d_t` is exactly a high-rank source cut carried by `d_t` source coordinates.
+`d_t log Z >= (1-(2+o(1))(R+1)/2^t) log y - O(1)`.
 
-MC-308 therefore gives the direct hierarchy bound
+MC-313 shows why the first-order consequence is not yet arithmetic. At `t_R=ceil(2 log_2(R+1))`, generic full-length `[2R,R]` binary codes can realize `d_t=R-O(R/log R)` across the relevant hierarchy. Thus near-half erasure resilience at coarse precision is compatible with ordinary code geometry.
 
-`d_t log Z >= (1-(2+o(1))(R+1)/2^t) log y - O(1)`
+MC-314 isolates the next currency. If
 
-whenever the exponent is positive. Generalized Singleton then recovers MC-312's coarse tradeoff. With `t~2 log_2 R`,
+`log Z <= ((1+eta_R)/R) log y`,
 
-`(n-R+O(log R)) log Z >= (1-o(1)) log y`.
+then at `t_R`
 
-If all source primes stay near the equal-share scale `y^(1/R)`, the package needs essentially another full rank of coordinates: `n>=2R-o(R)`. If the package keeps only `R+o(R)` coordinates, at least one source prime must move far above that scale.
+`R-d_(t_R) <= R eta_R/(1+eta_R)+2+o(1)`.
 
-MC-313 identifies the exact coding-theoretic boundary of this argument. The condition `d_t>s` is equivalent to adversarial erasure-list decodability from `s` erased source coordinates with ambiguity dimension at most `t-1`. At the live scale `t_R=ceil(2 log_2(R+1))`, the generalized Griesmer bound collapses **exactly** to generalized Singleton throughout every `n=O(R)` candidate, because `d_t<2^t-1`. Merely swapping in a stronger classical single-weight bound cannot increase the forced redundancy.
+At the exact equal-share scale `eta_R=0`, the allowed defect is only `2+o(1)`. More generally, a source-scale error `eta_R=o(1/log R)` forces `R-d_t=o(R/log R)`, beyond the slack supplied by the current generic matched-control theorem.
 
-More importantly, generic code geometry actually matches the coarse source hierarchy. For all large `R` there are full-length binary `[2R,R]` codes with
+The reusable lesson is that **source scale and hereditary redundancy couple at second order**. Saying only `Z=y^((1+o(1))/R)` loses the quantity that determines whether the arithmetic demand separates from the generic control. The endpoint argument needs a quantified `eta_R`, not another first-order redundancy count.
 
-`d_t > R-ceil(4R/t)`
+This changes the proof obligation without overclaiming it. One may prove a sufficiently sharp arithmetic source-prime scale, show that actual Legendre-incidence columns cannot realize the resulting near-capacity erasure profile, or find a joint generalized-weight constraint absent from generic codes. MC-314 does **not** prove that arbitrary binary codes cannot achieve the sharper constant-defect profile; it proves only that the arithmetic requirement has moved beyond what MC-313's generic construction currently guarantees.
 
-simultaneously for `t_R<=t<=R/2`; in particular `d_(t_R)=R-O(R/log R)`. Thus rate-one-half binary codes can have essentially the erasure-list profile demanded by the current arithmetic inequality. The obstruction is no longer “generic codes cannot carry this much hereditary support.”
-
-The reusable lesson is now two-layered. **Many expensive directions are not the same as expensive common support**, so the correct source accounting object is the hereditary support profile plus arithmetic coordinate scale. But once that profile is forced only to the current coarse order, **generic representation-code geometry is flexible enough to realize it**. The next coercive resource must distinguish arithmetic source-incidence matrices from generic binary codes.
-
-This changes the live proof obligation. A closing theorem must exploit arithmetic realizability of the incidence columns, sharpen the source-scale inequality beyond the `O(R/log R)` generic control slack, couple several generalized weights in a way generic rate-one-half codes cannot match, or identify another source constraint absent from arbitrary binary codes. Recounting expensive directions, invoking a stronger classical bound at one generalized weight, or repeating the linear redundancy conclusion cannot close the endpoint.
-
-**Boundary.** MC-313 does not construct an admissible arithmetic endpoint package. Its `[2R,R]` control has abstract binary columns, not lower-prime Legendre incidence columns. It also leaves open sharper second-order source-prime caps and joint hierarchy constraints. The theorem therefore kills a generic coding obstruction at the current precision; it does not show that the arithmetic source can realize the generic control or estimate `M(x)`.
+**Boundary.** The representation code remains an abstraction of fixed lower-prime representatives. None of MC-312--MC-314 proves that the arithmetic source realizes a generic code, nor that generic codes fail the second-order demand. The result prices the next discriminating scale; it does not estimate `M(x)` or close the Möbius endpoint.

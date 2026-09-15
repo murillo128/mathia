@@ -1,45 +1,19 @@
-# MI-041 — Positive Riesz order crosses the critical regularity threshold, but the endpoint remains hidden behind scalarization and exponential scale separation
+# MI-041 — Positive Riesz order crosses critical regularity; finite exponential bandwidth separates attenuation from conditioning
 
-**Evidence level:** exact/literature-derived boundary statement from [AF-352](../../findings/AF-352-every-positive-riesz-order-crosses-the-critical-boundary-conditioning-threshold.md), quantitatively sharpened by [AF-353](../../findings/AF-353-riesz-endpoint-conditioning-cost-diverges-quadratically-in-absolute-zero-budget.md) through [AF-360](../../findings/AF-360-riesz-dyadic-projective-shape-is-endpoint-blind.md).
+**Evidence level:** exact/literature-derived boundary statement from [AF-352](../../findings/AF-352-every-positive-riesz-order-crosses-the-critical-boundary-conditioning-threshold.md), quantitatively sharpened by [AF-353](../../findings/AF-353-riesz-endpoint-conditioning-cost-diverges-quadratically-in-absolute-zero-budget.md) through [AF-361](../../findings/AF-361-riesz-exponential-band-recovery-splits-attenuation-from-conditioning.md).
 
-For fixed real `delta>0`, the Riesz profile
+For every fixed real `delta>0`, the Riesz profile crosses the critical regularity threshold without moving the off-critical singularity discriminator. AF-358 makes the Sobolev gain exact, while AF-359 shows that an order-one fraction of the absolute endpoint defect first appears on the moving scale `delta log T=Theta(1)`. AF-360 then shows that every bounded-ratio high-frequency shell is asymptotically one common complex scalar times the endpoint shell, so well-conditioned projective phase/shape statistics are blind there.
 
-`R_delta[Lambda-1](X)=sum_(n<=X)(Lambda(n)-1)(1-n/X)^delta`
+AF-361 resolves the remaining finite exponential-band question. Put
 
-has the exact qualitative transition
+`x=delta log(gamma/T)`
 
-`RH <=> R_delta[Lambda-1](X)=O_delta(sqrt(X))`,
+on `T<gamma<=T exp(v/delta)`. After dividing by the lower-edge scalar, the exact Gamma-quotient multiplier converges uniformly to `e^-x`. Hence for fixed `v` the normalized transport has operator norm tending to `1`, inverse norm tending to `e^v`, and condition number tending to `e^v`. An exponentially broad band is therefore stably recoverable whenever its **scaled width** `v=delta log R` stays finite.
 
-whereas `delta=0` cannot satisfy the same bound. On the critical line the Mellin coefficient gains the factor `gamma^(-delta)`, so every fixed positive order improves high-frequency regularity without moving the off-critical singularity discriminator.
+Absolute attenuation is a different currency. If `u=delta log T`, the lower-edge multiplier has size asymptotic to `e^-u`, so the unnormalized inverse carries the combined cost `e^(u+v)`. The endpoint problem cannot use “conditioning” as a synonym for this loss: finite relative-band conditioning may coexist with severe absolute attenuation at large base height.
 
-AF-358 makes the regularity gain exact. Under RH,
+This leaves three genuinely different escape routes. A theorem may need an absolute error/noise bound strong enough to survive `e^-u`; it may have to control bands with `v->infinity`, where relative conditioning really diverges; or it may use source-native arithmetic information before the Riesz channel replaces frequency dependence by the universal `e^-x` envelope. The finite-width envelope itself contains no rational-prime selector.
 
-`E_delta in H^s_(B,zeta) <=> s < 1/2 + delta`,
+The reusable diagnostic is therefore two-parameter: price **where the band starts** through `u=delta log T` and **how wide it is** through `v=delta log R`. Only the second is relative conditioning; only the first controls common attenuation. Neither alone supplies arithmetic specificity.
 
-whereas for every fixed `delta>0`,
-
-`E_delta-E_0 in H^s_(B,zeta) <=> s < 1/2`.
-
-Thus a fixed positive order crosses the ordinary absolute-summability/uniform-convergence gate, but removing the smoothing leaves an endpoint-sized high-frequency tail. For every fixed `s<1/2` the difference is still `O_s(delta)`, so the singularity is topology-specific rather than generic instability.
-
-AF-359 locates that tail sharply when smoothing order and zero height move together. If `delta_j->0`, `T_j->infinity` and `delta_j log T_j->u`, then the critical half-derivative dyadic shell ratios satisfy
-
-`A_delta(T)/A_0(T) -> exp(-2u)`
-
-and
-
-`D_delta(T)/A_0(T) -> (1-exp(-u))^2`.
-
-Hence polynomial or otherwise subexponential bandwidth in `1/delta` sees asymptotically none of the absolute endpoint defect. An order-one fraction first appears at `T=exp(Theta(1/delta))`; above that scale the smoothed shell dies relative to the endpoint shell. The reciprocal physical scale is already visible in AF-357: the Beta smoothing kernel places fixed mass at relative lags `exp(-Theta(1/delta))`.
-
-AF-360 closes the most obvious phase-sensitive escape from this magnitude law. On every bounded-ratio zero shell, the exact Gamma quotient satisfies
-
-`M_delta(rho_gamma)=c_(delta,T)(1+o(1))`
-
-uniformly as `delta->0`, `T->infinity`, with no restriction on `delta log T`. After quotienting the common complex scalar, the entire shell vector converges projectively to the endpoint shell: normalized cross-frequency shape and every continuous uniformly well-conditioned scale-invariant observable are asymptotically unchanged. The shell can therefore lose essentially all endpoint amplitude while retaining the same projective phase geometry.
-
-Cross-scale comparison is equally rigid. If two dyadic shells are separated by a factor `R_delta`, their relative Riesz attenuation is asymptotically `R_delta^(-2delta)`. Thus `log R_delta=o(1/delta)` is still blind, while an order-one relative discriminator requires `R_delta=exp(Theta(1/delta))`. Moving from magnitude to post-Riesz phase, coherence, or subexponentially separated shell ratios does not lower the endpoint bandwidth price.
-
-The reusable proof obligation is consequently narrower. A uniform moving-order theorem must either control an exponentially broad spectral/physical range, accept an observer whose conditioning diverges strongly enough to amplify the vanishing residual, or use information **before** the Riesz channel scalarizes it: source-native signed short-interval structure, maximal/tail information, cancellation coupled before smoothing, endpoint-to-past correlation, or another genuinely pre-compression nonlinear operation. A larger but subexponential cutoff, a stronger monotone quadratic weight, or a well-conditioned post-Riesz phase statistic cannot by itself reach the endpoint.
-
-**Boundary.** AF-358--AF-360 are conditional on RH where they use the nontrivial-zero Fourier-shell interpretation. The scalarization statement is a property of the Riesz Gamma quotient on bounded-ratio shells; it does not rule out exponentially wide bands, source-side nonlinear operations, maximal/tail mechanisms, or deliberately ill-conditioned observers. Nothing here proves that exponentially high zero information is necessary for every possible proof of RH or of an endpoint theorem.
+**Boundary.** The zero-shell interpretation used in AF-358--AF-361 is conditional on RH where stated in the findings. AF-361 proves stable relative recovery only for finite scaled width; it does not control `v->infinity`, absolute observational noise, source-side nonlinear operations, or deliberately ill-conditioned observers. Nothing here says exponentially high zero information is necessary for every possible proof of RH.

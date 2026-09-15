@@ -1,29 +1,23 @@
-# MI-028 — Dyadic screening forces a uniform archimedean reserve before any nonpositive one-signed Weil test
+# MI-028 — Dyadic screening forces an archimedean reserve, but the endpoint needs signed discrepancy beyond density-one cancellation
 
-**Evidence level:** exact structural consequence from [WI-301](../../findings/WI-301-screened-prime-ladders-force-a-uniform-archimedean-reserve.md), combining the rearrangement inequalities of [WI-298](../../findings/WI-298-rearrangement-collapses-complete-one-signed-screening-to-first-prime-aperture.md) with the independently replayed compact-window floor of [WI-300](../../findings/WI-300-l08-compact-window-certificate-would-kill-complete-one-signed-screening.md)
+**Evidence level:** exact structural consequence from [WI-301](../../findings/WI-301-screened-prime-ladders-force-a-uniform-archimedean-reserve.md), combined with the corrected parity-free explicit-formula decomposition [WI-241](../../findings/WI-241-pole-cancels-pnt-main-density-leaving-prime-discrepancy.md).
 
-Let `f` be a nonzero real compactly supported Weil test with one global sign, normalized so `f>=0`. If every power-of-two autocorrelation vanishes,
+For every nonzero real compactly supported one-signed test, dyadic screening forces
 
-`C_f(k log 2)=0` for all `k>=1`,
+`q_arch(f) >= c_0 ||f||_2^2`,  `c_0=8.9e-18`.
 
-then nonnegativity turns screening into measurable disjointness: the positivity set and all its `log 2` translates are pairwise disjoint. Hence its measure is at most `log 2`.
+Therefore a one-signed dyadically screened test with `Q_W(f)<=0` must carry at least that much unscreened arithmetic interaction. Complete prime-power screening is impossible in this class. This reserve theorem is aperture-independent and does not require the earlier first-crossing/null-mode setup.
 
-Symmetric decreasing rearrangement preserves the `L^2` norm and compresses the support into radius `(log 2)/2`, while the source-side inequalities of WI-298 make the prime-deleted archimedean form nonincreasing. The rearranged test therefore lies inside the independently certified `0.8` window, where WI-300 gives the uniform floor
+WI-241 shows why this reserve is not yet the source coercivity needed at the endpoint. For a general compactly supported complex test, the pole contribution cancels the density-one prime main term exactly. What remains is a bounded nonnegative density-one autocorrelation remainder `R` plus the **signed** smoothed discrepancy `Delta_Lambda` of `d(psi-x)`. Schematically,
 
-`Q_W(f^*) >= c_0 ||f||_2^2`,  `c_0=8.9e-18`.
+`Q_W = Q_gamma + R - 2 Delta_Lambda`.
 
-Because every prime-power translation of the rearranged test vanishes, this lower bound is purely archimedean and transfers back:
+Thus total prime-power mass and signed arithmetic discrepancy are different resources. The universal main density can be large while contributing nothing after pole cancellation. A lower bound on unscreened interaction therefore cannot be promoted to the signed deficit needed to offset a negative spectral index.
 
-`q_arch(f) >= c_0 ||f||_2^2`.
+On the odd negative-index branch, if Weil positivity holds, WI-241 turns the requirement into a uniform one-sided condition on `Delta_Lambda`. Oddness is load-bearing only for that negative-index consequence; the pole/main-density cancellation itself is parity-free.
 
-Consequently any one-signed dyadically screened test with `Q_W(f)<=0` must carry an **unscreened arithmetic reserve** of at least the same size:
+The reusable lesson is a two-stage source audit. **Screening geometry can force arithmetic mass to remain, but the explicit formula may quotient out its universal component.** The proof must identify which part of the forced mass survives that quotient with the correct sign. Here that survivor is a discrepancy relative to `psi(x)~x`, not the total prime-power reserve.
 
-`P(f) >= c_0 ||f||_2^2`.
+The live bridge is therefore to derive a source-specific signed `Delta_Lambda` bound from the actual prime distribution, possibly using the one-signed reserve as auxiliary structure, or to develop a different sign-changing test mechanism. Merely localizing the reserve to some odd-prime lag is insufficient unless it also controls the density-subtracted signed quantity.
 
-If all active prime-power autocorrelations are screened, then `P(f)=0` and the inequality is impossible. Complete one-signed screening is therefore incompatible with nonpositivity at **every aperture**, not just at a first crossing.
-
-The reusable mechanism is a defect-to-unscreening principle. Screening the first-prime ladder is not a way to remove the arithmetic source for free: in the one-signed class it forces geometric packing, packing permits rearrangement into a certified compact window, and compact-window positivity creates a quantitative archimedean reserve that any nonpositive test must pay back through unscreened odd-prime interactions.
-
-This is stronger than a spectral-bottom statement because it no longer uses a null equation, first-crossing minimality or a bound on the original support radius. It also explains why the first prime is special: dyadic screening compresses below the first arithmetic shift, so all prime terms vanish after rearrangement. Screening a later prime ladder alone does not have the same consequence because smaller prime shifts may still overlap.
-
-**Boundary.** One-sign is essential both for turning zero autocorrelation into disjointness and for the rearrangement inequalities. Sign-changing functions can screen by cancellation. The reserve does not identify which odd-prime lag supplies the missing mass and does not imply unrestricted Weil positivity or RH.
+**Boundary.** The constant `c_0` comes from rigorous computer-assisted interval evidence, not a Lean proof. One-sign is essential to WI-301. The signed discrepancy inequality is a necessary consequence on the stated odd/positivity branch, not an unconditional theorem about `psi-x`, and none of these results proves unrestricted Weil positivity or RH.

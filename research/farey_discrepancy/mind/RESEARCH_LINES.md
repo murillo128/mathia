@@ -6,38 +6,24 @@ This file holds the current mathematical questions suggested by the durable Fare
 
 **Linked intuitions:** `MI-001-cumulative-farey-discrepancy-is-mertens-energy` through `MI-019-sub-root-rank-observation-budgets-can-remain-uniformly-blind-to-one-common-source-wall`.
 
-FD-117--FD-129 classify the reversible Farey skeleton, common-source horizon coherence, sparse multiplicative escape and the circular reconstruction boundary. FD-130--FD-137 then show that counting means, rankwise means, fixed-prime convergence and harmonic physical-scale balancing can all miss a macroscopic source defect; exact multiplicative-rank conditioning exposes one hidden wall but does not make the method generically coercive.
+FD-117--FD-142 separate the reversible Farey skeleton, sparse/common-source escape, fixed-coordinate blindness and the opposite reconstruction boundary. One exact additive scalar with `Theta(log T)` bits can already identify the whole squarefree prefix, so coordinate count alone does not measure source information.
 
-FD-138--FD-140 rotate the wall into transverse additive prime colors. Even conditioning on the complete exact vector of prime-factor counts in every reduced residue class modulo an arbitrary fixed modulus `Q` leaves a finer coprime quadratic coloring whose boundary has only `O((loglog T)^(-1/2))` conditional mass. Thus no fixed congruence-periodic coordinate alphabet is coefficient-coercive by itself.
+FD-143 established a growing blind regime `K_T M_T=o(sqrt(r_T))` for arbitrary source-independent prime-cell partitions. FD-144 strengthens the same common-source obstruction to the **sublinear-rank** scale. Using min-wise prime selectors rather than Rademacher anti-concentration, it constructs one fixed infinite prime coloring and a subsequence for which all observed normalized nonnegative ancestry tests are asymptotically blind whenever
 
-FD-141 shows that coordinate dimension does not control resolving power: one fixed exact strongly additive scalar can encode the full squarefree prime support. FD-142 sharply improves the capacity audit. The fixed coordinate
+`K_T M_T=o(r_T)`.
 
-`L(n)=sum_(p|n) log p = log rad(n)`
+In the central regime `r_T~log log T`, every observation budget `o(log log T)` of this class can therefore miss a macroscopic source wall. This is a lower-bound frontier, not a proof that linear-rank observation is sufficient.
 
-is already injective on squarefree `n<=T`, has minimum spacing `>1/T`, and remains injective after uniform quantization using only `log_2 T+log_2 log T+O(1)` bits. Any injective encoding of the whole squarefree prefix needs `Omega(log T)` bits, so full source reconstruction is possible at essentially the ambient source-identity scale, not only with exponentially fine precision.
-
-FD-143 supplies the first genuinely growing lower-bound regime between those extremes. For arbitrary source-independent partitions of central squarefree parent domains, let `K_T` be the number of active primes and `M_T` the maximum number of cells per prime. If
-
-`K_T M_T = o(sqrt(loglog T))`,
-
-then one fixed infinite prime coloring has a subsequence on which every observed conditional ancestry defect tends to zero, while one fixed orientation of the same source remains wrong on at least half of a fixed active-prime parent domain up to `o(1)`. The cells need not come from congruences, additive coordinates or any regular partition. The obstruction is therefore an observation-budget effect, not merely a fixed-alphabet artifact.
-
-The live coefficient-side theorem must now cross this sub-root-rank anti-concentration barrier without jumping all the way to source identity. Candidate resources include larger but still sub-reconstructive effective alphabets, entropy/covering budgets, source-native derivability from the Farey observable, controlled prime-weight complexity, or a theorem excluding the matched prime-color half-spaces for the physical source. Merely counting coordinates, specifying polynomial precision or allowing a slowly growing arbitrary alphabet is not enough.
+The live coefficient-side theorem must now cross a linear-rank information scale or exploit structure excluded from the matched family: source-dependent/Farey-derived tests, signed structure not covered by the nonnegative normalized class, a sharper joint observation law, or an independent theorem ruling out the matched prime-color source for the physical coefficients. Jumping directly to a source-identity coordinate remains circular.
 
 A destination-side Fourier-skeleton coercivity theorem remains a distinct route because it could bypass coefficient recovery entirely.
 
-## Determine the first genuinely different regime between fixed alphabets and source reconstruction
+## Determine the first genuinely different regime between sublinear rank and source reconstruction
 
-**Linked intuitions:** `MI-015-local-ancestry-has-an-exact-rough-core-rigidity-threshold`, `MI-016-harmonic-scale-balancing-still-misses-the-moving-rank-interface`, `MI-017-finite-rank-localization-can-miss-an-orthogonal-additive-prime-factor-coordinate`, `MI-018-additive-coordinate-dimension-is-not-an-information-capacity-bound`, `MI-019-sub-root-rank-observation-budgets-can-remain-uniformly-blind-to-one-common-source-wall`.
+FD-140 shows fixed periodic alphabets can be under-resolved; FD-144 extends blindness to arbitrary source-independent normalized ancestry observations with total complexity `o(r_T)`; FD-142 shows full prefix reconstruction is available at `Theta(log T)` bits. The useful middle regime must therefore be judged by effective resolving capacity and provenance, not by the number of named coordinates.
 
-The frontier is now quantitatively bracketed. Fixed periodic alphabets are under-resolved by FD-140. FD-143 extends the no-go to arbitrary growing source-independent observation schemes with total prime-cell complexity `o(sqrt(loglog T))` in the central rank regime, using one common source along a subsequence. At the opposite end, FD-142 shows that one fixed strongly additive scalar observed with only `Theta(log T)` bits can already be source-reconstructing on the squarefree prefix.
+The decisive audit for any proposal is whether it has merely become an indirect squarefree-parent label. Noninjectivity is necessary but not sufficient: FD-144 gives a broad noninjective regime that is still noncoercive.
 
-A useful middle regime must therefore live above the elementary Rademacher anti-concentration budget while remaining genuinely below the squarefree identity scale. One route is to push the hidden-wall theorem to much larger alphabets by exploiting structure beyond the union budget. A second is a finite or slowly growing family of source-intrinsic prime weights whose admissibility follows from the Farey/Fourier construction and whose resolving capacity can be priced without directly labeling `n`. A third is a theorem that the physical source cannot realize the matched half-space colorings, avoiding the need to observe every prime coordinate.
+## Keep information equivalence, horizon entropy, scale visibility, precision, provenance and target recovery separate
 
-For every proposal the decisive audit is whether the observation has become an indirect label for the squarefree parent. If it can distinguish essentially every parent state, the ancestry dilution problem has been bypassed by reconstruction rather than solved by a weaker coercive law. Conversely, being noninjective is not sufficient: FD-143 now gives one concrete range in which a growing noninjective observation is still provably noncoercive.
-
-## Keep information equivalence, horizon entropy, scale visibility, coordinate visibility, precision, provenance and target recovery separate
-
-The obstruction chain shows that “more arithmetic breadth” is not a scalar resource. A coercive law must specify which prime coordinates remain visible, how physical scales are weighted, how narrow the conditioning cells are, how many source states remain distinguishable at the available precision, how many active prime-cell constraints are imposed, where the observable came from, and how much source freedom remains before the condition simply reconstructs Möbius.
-
-FD-140 says exact localization in a maximal fixed congruence vector can still be too coarse. FD-141 says one exact scalar can instead be maximally fine. FD-142 shows that this does not require exotic infinite precision: `Theta(log T)` source-identity bits already suffice in one fixed additive coordinate. FD-143 adds a different resource law: below `sqrt(loglog T)` total prime-cell constraints, even arbitrary source-independent partitions cannot uniformly expose every transverse prime-color wall. Future ancestry claims should therefore state both their resolving capacity and why that capacity is noncircular for the Farey endpoint.
+A coercive law must specify which prime coordinates remain visible, how many independent source constraints are imposed at rank `r_T`, how the tests are normalized, whether they are source-independent, what precision is consumed, and how much source freedom remains. FD-144 replaces the earlier square-root union-budget obstruction by a linear-rank min-wise-selector obstruction; future ancestry claims should be tested against that stronger matched control before being treated as evidence of source recovery.
