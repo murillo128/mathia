@@ -16,7 +16,7 @@ VIS-150--VIS-160 show that deterministic selectors can mimic arbitrarily high fi
 
 ## Move to the transition, optimizer structure and access time: the subcritical static scale is closed
 
-**Linked intuitions:** `MI-009-stable-decoding-is-a-collision-geometry-question` through `MI-016-coherent-prime-blocks-force-super-rms-ising-energy`.
+**Linked intuitions:** `MI-009-stable-decoding-is-a-collision-geometry-question` through `MI-017-critical-collision-counts-need-the-balanced-occupancy-baseline`.
 
 VIS-213--VIS-224 reduce fixed-`(y,H)` worst starts to a midpoint-gauged real signed ratio-shell Hamiltonian and compare the binary Ising optimum, exact torus optimum and real correlation SDP within universal constants.
 
@@ -30,8 +30,14 @@ and the exact torus and real SDP objectives have the same order. Since `R_v(y,H)
 
 up to fixed constants. The strictly subcritical static question is therefore closed at the coarse scale: neither a different relaxation nor subtler global phase optimization can change the asymptotic order.
 
-Live questions are the critical/supercritical transition, sharp constants and optimizer geometry inside the known scale, representation-matched controls that distinguish arithmetic organization rather than magnitude alone, and the one-parameter time needed for the physical prime-log orbit to approach a near-optimal torus point.
+VIS-227 calibrates the first critical-scale collision statistic. At `H=lambda y/log y`, if `m` is the number of top-half primes and `J` the number of coherence cells, then `m/J -> eta_v/(8lambda)`. The exact finite occupancy minimum
 
-## Keep static scale, optimizer recovery and dynamical access separate
+`S_min(m,J)=J binom(q,2)+rq`,  where `m=qJ+r`,
 
-VIS-226 fixes the static supremum scale but does not identify the exact optimizer, a canonical sign pattern, a sharp constant or any recurrence/access time. It also says nothing about `H asy y/log y` or supercritical windows. These are now genuinely separate currencies rather than unfinished parts of the subcritical energy estimate.
+shows that for `lambda<eta_v/8` a positive linear number of same-cell pairs is forced even for perfectly balanced occupancies. Raw collision mass is therefore not a prime-specific signal at critical scale; the relevant statistic is excess above `S_min(m,J)` or a matched control with the same `(m,J)`.
+
+Live questions are now the critical/supercritical objective scale after removing such universal occupancy baselines, sharp constants and optimizer geometry inside the known scale, representation-matched controls that distinguish arithmetic organization rather than magnitude alone, and the one-parameter time needed for the physical prime-log orbit to approach a near-optimal torus point.
+
+## Keep static scale, critical baselines, optimizer recovery and dynamical access separate
+
+VIS-226 fixes the strictly subcritical static supremum scale but does not identify the exact optimizer, a canonical sign pattern, a sharp constant or any recurrence/access time. VIS-227 fixes one universal combinatorial baseline at `H asy y/log y`, but it does not determine the critical Ising/torus/SDP scale or prove any prime-specific excess above that floor. These are genuinely separate currencies rather than unfinished parts of one energy estimate.

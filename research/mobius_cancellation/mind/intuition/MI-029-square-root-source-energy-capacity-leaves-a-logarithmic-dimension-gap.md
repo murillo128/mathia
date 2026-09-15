@@ -1,13 +1,17 @@
-# MI-029 — Square-root source-energy capacity leaves a logarithmic dimension gap
+# MI-029 — Linear quadratic source reach still leaves the logarithmic endpoint-energy gap
 
-**Evidence level:** classical multiplicative large sieve plus exact endpoint-partition energy from [MC-301](../../findings/MC-301-multiplicative-large-sieve-source-energy-capacity.md)
+**Evidence level:** classical multiplicative/quadratic large sieve plus exact endpoint-partition energy from [MC-301](../../findings/MC-301-multiplicative-large-sieve-source-energy-capacity.md) and [MC-302](../../findings/MC-302-quadratic-large-sieve-source-horizon.md)
 
-The low-source problem has two quantitatively different arithmetic controls. Pointwise Page/Deuring--Heilbronn theory can nearly eliminate each nonexceptional mode but only in a comparatively small source band. MC-301 uses the multiplicative large sieve instead and reaches every selected primitive real source character through conductor `sqrt(y)`, at the price of controlling only the collective energy:
+The low-source problem has several quantitatively different arithmetic controls. Pointwise Page/Deuring--Heilbronn theory can nearly eliminate each nonexceptional mode but only in a comparatively small source band. MC-301 uses the multiplicative large sieve collectively and reaches every selected primitive real source character through conductor `sqrt(y)`, with total energy `O(log y)`.
 
-`sum_(Q(lambda)<=sqrt(y)) |x_lambda|^2 << log y`.
+MC-302 uses additional structure that MC-301 deliberately ignored: every selected source character is quadratic. Heath-Brown's quadratic large sieve changes the capacity envelope to
 
-This is a real enlargement of arithmetic access, but the reciprocal endpoint-partition model identifies its exact deficit. An `R`-dimensional obstruction subspace has total bias energy `2^R/R`. At the known blind-support floor `R~log_2 log y`, that energy is about `log y/R`, so the generic `O(log y)` large-sieve budget can still absorb the entire obstruction. To force energy above square-root source cost by this argument requires roughly an additional `log_2 R` independent directions.
+`E_y(C) <<_epsilon (Cy)^epsilon (1+C/y) log y`,
 
-The reusable point is that **conductor reach and family capacity are separate currencies**. Extending a theorem from quasi-subpower conductors to `sqrt(y)` does not cross the endpoint if the collective budget simultaneously has enough room for the whole obstruction spectrum.
+with an explicit subpower version from Liu. The natural collective conductor horizon therefore moves from `sqrt(y)` to `y`.
 
-The remaining target is precise: save a factor comparable to `R` in the source-specific family capacity, force a corresponding factor more obstruction energy in the actual shell geometry, or prove a coupling law that prevents the generic large-sieve budget from being saturated. MC-301 does not show that `sqrt(y)` is an intrinsic arithmetic threshold, nor that the reciprocal partition is realized by the actual Möbius shell.
+This larger reach still does not cross the endpoint. The reciprocal endpoint-partition model has total obstruction energy `2^R/R`. At the blind-support floor `R~log_2 log y`, this is only about `log y/R`. Even granting an **ideal loss-free** quadratic large sieve with the same `(C+y)` theorem shape gives only `E_y(C)<<log y` throughout `C<=y`, so its capacity still exceeds the complete endpoint obstruction by a factor of order `R`.
+
+The reusable point is sharper than “conductor reach and family capacity are separate currencies.” Once the capacity already dominates the entire obstruction energy, extending the conductor horizon by a power can leave the endpoint unchanged. Removing the explicit subpower loss, improving constants, or merely recognizing quadraticity cannot close a factor-`R` energy mismatch built into the black-box family bound.
+
+The remaining target is therefore source-specific: save a factor comparable to `R` in the capacity of the **selected** quadratic family, force a corresponding factor more obstruction energy/rank in the actual shell geometry, or prove an arithmetic coupling among the selected conductors/modes that prevents the generic quadratic-family budget from being freely spent. MC-302 does not show that conductor `y` is an intrinsic threshold or that no thinner selected-family theorem exists.
