@@ -100,19 +100,19 @@ However, this does **not** repair the live endpoint gap. For the reciprocal endp
 \tag{4}
 \]
 
-At the blind-support floor from `MC-242`,
+At the first-order blind-support frontier, consider the benchmark ranks
 
 \[
-R=\log_2\log y+o(\log\log y),
+R=\log_2\log y+O(1),
 \tag{5}
 \]
 
-so
+which have exactly the leading scale of the `MC-242` lower bound. Then
 
 \[
 \frac{2^R}{R}
-=
-\frac{(\log y)^{1+o(1)}}{R}.
+\asymp
+\frac{\log y}{R}.
 \tag{6}
 \]
 
@@ -123,7 +123,7 @@ E_y(C)\ll\log y.
 \tag{7}
 \]
 
-The right side of `(7)` is larger than the **entire** reciprocal-partition energy `(6)` by a factor of order `R` at the critical floor. Therefore removing Liu's subpower loss, improving constants, or merely exploiting the fact that the source characters are quadratic cannot by itself force any endpoint energy above conductor `y` at the live rank.
+The right side of `(7)` is larger than the **entire** reciprocal-partition energy `(6)` by a factor of order `R` at this first-order frontier. Therefore removing Liu's subpower loss, improving constants, or merely exploiting the fact that the source characters are quadratic cannot by itself force endpoint energy above conductor `y` without an additional rank surplus. Equivalently, the additive `\log_2R` dimension gap isolated in `MC-301` is not removed by replacing the generic large sieve with a loss-free quadratic theorem of the same mean-square shape.
 
 With the actually available explicit theorem the comparison is weaker still. Combining `(2)` and `(4)` can certify positive energy above `C\le y` only when
 
@@ -153,7 +153,7 @@ where
 \tag{10}
 \]
 
-Thus the quadratic large sieve buys a much larger **conductor horizon**, but its published uniform form does not buy the missing **energy factor**. More importantly, `(7)` shows that this failure is not solely an artifact of Liu's explicit `\varepsilon`-dependence: the black-box `(C+y)\|a\|_2^2` envelope still has enough capacity to contain the complete reciprocal endpoint spectrum at the blind-support floor even if the subpower loss were removed entirely.
+Thus the quadratic large sieve buys a much larger **conductor horizon**, but its published uniform form does not buy the missing **energy factor**. More importantly, `(7)` shows that this failure is not solely an artifact of Liu's explicit `\varepsilon`-dependence: the black-box `(C+y)\|a\|_2^2` envelope still has enough capacity to contain the complete reciprocal endpoint spectrum at the first-order blind-support frontier even if the subpower loss were removed entirely.
 
 No estimate for `M(x)`, no improvement of the blind-support floor, and no proof that the actual shell realizes the reciprocal endpoint partition follows.
 
@@ -290,22 +290,31 @@ x_{\lambda_I}
 
 and `MC-301` sums its squares to obtain `(4)`.
 
-At the critical rank `(5)`, equation `(6)` follows. Compare this not first with the published quadratic large sieve, but with the stronger hypothetical estimate obtained by deleting **all** `\varepsilon` and subpower losses from `(14)` while retaining its natural `M+Y` scale. The resulting source-energy conclusion for `C\le y` is exactly `(7)`.
+At the benchmark rank `(5)`, equation `(6)` follows. Compare this not first with the published quadratic large sieve, but with the stronger hypothetical estimate obtained by deleting **all** `\varepsilon` and subpower losses from `(14)` while retaining its natural `M+Y` scale. The resulting source-energy conclusion for `C\le y` is exactly `(7)`.
 
-But
+Now
 
 \[
 \frac{\log y}{2^R/R}
-=R(\log y)^{o(1)}
+\asymp R
 \tag{22}
 \]
 
-at `(5)`. Therefore the hypothetical upper bound remains compatible with placing the entire selected endpoint spectrum below the conductor cap. It cannot imply that any positive endpoint energy must escape above `C`.
+under `(5)`. Therefore the hypothetical upper bound remains compatible with placing the entire selected endpoint spectrum below the conductor cap. It cannot imply that any positive endpoint energy must escape above `C`.
+
+For ranks allowed to exceed `(5)` by an unbounded additive amount, the exact comparison is still the `MC-301` condition
+
+\[
+2^R/(R\log y)\to\infty.
+\tag{23}
+\]
+
+Thus the point is not that every `R=(1+o(1))\log_2\log y` remains invisible. The point is sharper: **quadraticity does not remove the same additive-rank threshold already exposed by the ideal `O(\log y)` capacity calculation.** Once enough extra dimensions are available, total endpoint energy can of course overtake `(7)`.
 
 This is a narrower but stronger negative conclusion than merely observing that Liu's explicit loss is large. The live mismatch has two layers:
 
 1. **published uniformity loss:** the known quadratic theorem carries `L(Cy)=y^{o(1)}` in the polynomial conductor range;
-2. **intrinsic black-box energy mismatch:** even if that loss vanished, an `O(log y)` source-energy envelope is still too large by a factor of order `R` compared with the reciprocal endpoint spectrum at the blind-support floor.
+2. **black-box energy mismatch at the first-order frontier:** even if that loss vanished, an `O(log y)` source-energy envelope is still too large by a factor of order `R` compared with the reciprocal endpoint spectrum at `(5)`.
 
 Only the first layer is a defect of the current quadratic-large-sieve technology. The second says that a successful collective theorem must exploit additional structure beyond replacing the generic character family by all quadratic characters.
 
@@ -319,7 +328,7 @@ Zihao Liu, *Explicit quadratic large sieve inequality*, Acta Arithmetica **223**
 
 A targeted literature check on 15 September 2026 found no later general quadratic-character large-sieve theorem that replaces the `(M+Y)(MY)^{o(1)}` envelope by a source-family-specific capacity capable of supplying the missing reciprocal-endpoint factor. Nearby 2026 work on large sieves for polynomial or quadratic moduli concerns different modulus families and does not alter the application above. This is not a completeness claim.
 
-No novelty is claimed for quadratic reciprocity, Jacobi-symbol factorization, the Heath-Brown inequality, Liu's explicit refinement, or the generic observation that a coarse mean-square bound can be too large to detect a smaller structured spectrum. The durable Mathia delta is the exact **source-side comparison** with `MC-301`: quadraticity enlarges the collective conductor horizon from `sqrt(y)` to `y`, while the reciprocal endpoint calculation proves that even the ideal loss-free theorem shape does not repair the live factor-`R` energy deficit.
+No novelty is claimed for quadratic reciprocity, Jacobi-symbol factorization, the Heath-Brown inequality, Liu's explicit refinement, or the generic observation that a coarse mean-square bound can be too large to detect a smaller structured spectrum. The durable Mathia delta is the exact **source-side comparison** with `MC-301`: quadraticity enlarges the collective conductor horizon from `sqrt(y)` to `y`, while the reciprocal endpoint calculation proves that even the ideal loss-free theorem shape does not repair the live factor-`R` energy deficit at the first-order frontier.
 
 ## Boundaries and falsification tests
 
@@ -328,6 +337,7 @@ No novelty is claimed for quadratic reciprocity, Jacobi-symbol factorization, th
 - The selected family is only a subset of all squarefree quadratic moduli. Equations `(1)` and `(2)` are capacity upper bounds and are not claimed sharp for the actual selected family.
 - Equation `(2)` uses Liu's explicit parameter dependence; one may not obtain it by choosing a varying `\varepsilon` inside an unspecified `\ll_\varepsilon` constant.
 - Equation `(7)` is an **idealized theorem-shape audit**, not a proved sharper large-sieve theorem. It intentionally grants the route the removal of every subpower loss to test whether that alone could close the endpoint.
+- The factor-`R` comparison is asserted only for the benchmark `(5)`. For larger additive rank surplus, use the exact threshold `(23)` rather than extrapolating the factor-`R` statement.
 - Failure of `(7)` to contradict `(6)` does not rule out a thin-family large sieve, inverse large sieve, maximum estimate, conductor-coupling theorem, or another argument whose capacity is genuinely below the all-quadratic-family diagonal scale.
 - No claim is made that the actual Legendre shell attains the reciprocal endpoint partition. The partition remains an exact finite control showing what the current generic information permits.
 - No RH, GRH, critical-strip zero-free region, random-walk model, or continuation of `1/\zeta(s)` is used. No bound for `M(x)` follows.
@@ -336,6 +346,6 @@ No novelty is claimed for quadratic reciprocity, Jacobi-symbol factorization, th
 
 `MC-301` left the square-root source horizon as an artifact of the generic multiplicative large sieve. The present finding removes that artifact: the actual source family is quadratic, and the classical quadratic large sieve reaches linear conductor collectively.
 
-That does not close the frontier. At the blind-support rank, the reciprocal endpoint obstruction carries only about `log y / R` total Fourier energy, whereas even the ideal loss-free all-quadratic mean-square envelope permits `O(log y)` below conductor `y`. The missing factor of order `R` therefore survives the quadratic refinement.
+That does not close the frontier. At the first-order blind-support benchmark, the reciprocal endpoint obstruction carries only about `log y / R` total Fourier energy, whereas even the ideal loss-free all-quadratic mean-square envelope permits `O(log y)` below conductor `y`. The missing factor of order `R` therefore survives the quadratic refinement unless the rank itself acquires the additive surplus quantified in `(23)`.
 
 The next useful collective theorem must do something qualitatively more source-specific: reduce the capacity of the **selected varying-conductor family** below the all-quadratic envelope, prove that the actual arithmetic obstruction carries more than reciprocal-partition energy, or exploit algebraic/arithmetic coupling among the selected conductors so that their biases cannot spend the generic quadratic-large-sieve budget independently.
