@@ -101,7 +101,13 @@ d_{\lambda_i}=\frac1R
 \tag{10}
 \]
 
-For `I subseteq [R]` write `lambda_I=sum_{i in I}lambda_i`. Then `MC-296` gives exactly
+For `I` contained in `[R]`, write
+
+\[
+\lambda_I=\sum_{i\in I}\lambda_i.
+\]
+
+Then `MC-296` gives exactly
 
 \[
 x_{\lambda_I}
@@ -123,7 +129,7 @@ Combining `(6)` and `(12)` therefore gives
 
 \[
 \boxed{
-\sum_{\substack{\varnothing\ne I\subseteq[R]\\
+\sum_{\substack{I\subseteq[R],\ I\neq\varnothing\\
                  \mathcal Q(\lambda_I)>\sqrt y}}
 |x_{\lambda_I}|^2
 \ge
@@ -136,7 +142,7 @@ and, since every squared bias is at most one,
 
 \[
 \boxed{
-\#\{\varnothing\ne I\subseteq[R]:\mathcal Q(\lambda_I)>\sqrt y\}
+\#\{I\subseteq[R]:I\neq\varnothing,\ \mathcal Q(\lambda_I)>\sqrt y\}
 \ge
 \frac{2^R}{R}-O(\log y).
 }
@@ -189,7 +195,7 @@ m_\lambda=\prod_{p\in V}p=\mathcal Q(\lambda),
 \tag{19}
 \]
 
-As in `MC-293`, the moduli in `V` are distinct odd primes, so `chi_lambda` is a primitive real Dirichlet character of squarefree conductor `m_lambda`. Because every shell prime satisfies `r equiv 1 mod 4`, quadratic reciprocity gives
+As in `MC-293`, the moduli in `V` are distinct odd primes, so `chi_lambda` is a primitive real Dirichlet character of squarefree conductor `m_lambda`. Because every shell prime satisfies `r≡1 (mod 4)`, quadratic reciprocity gives
 
 \[
 \chi_\lambda(r)
@@ -269,7 +275,7 @@ N\sim\frac{y}{2\log y},
 \tag{26}
 \]
 
-and `(4)`–`(6)` follow immediately. Markov's inequality in the finite family gives `(8)`.
+and `(4)`–`(6)` follow immediately. The elementary counting inequality behind `(8)` follows by dividing the energy budget by `(1-2tau)^2`.
 
 The `C^2` term is load-bearing. The same black-box inequality ceases to give an `O(log y)` energy budget once the source cap moves substantially beyond `sqrt(y)`.
 
