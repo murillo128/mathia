@@ -1,8 +1,8 @@
-# MI-033 — Current endpoint capacities are jointly satisfiable; the missing coupling is prime localization
+# MI-033 — Scalar endpoint capacities are jointly satisfiable, but projection separates the matched model
 
-**Evidence level:** exact matched critical-scale compatibility construction from [MC-306](../../findings/MC-306-near-shell-singleton-source-profile-saturates-current-capacities.md), testing the radical/energy/occupancy constraints of `MC-296` and `MC-301`--`MC-305`
+**Evidence level:** exact matched critical-scale compatibility construction from [MC-306](../../findings/MC-306-near-shell-singleton-source-profile-saturates-current-capacities.md), narrowed by the exact hereditary projection obstruction in [MC-307](../../findings/MC-307-hereditary-endpoint-projection-polynomial-source-cost.md)
 
-At critical rank `2^R=kappa log y`, the currently persisted scalar constraints do not contradict one another. MC-306 chooses `R` distinct odd primes `p_i in [z,2z]`, `z=y^(1/R)`, and the independent quadratic characters modulo those primes. Their common radical
+At critical rank `2^R=kappa log y`, the aggregate constraints persisted through MC-306 do not contradict one another. MC-306 chooses `R` distinct odd primes `p_i in [z,2z]`, `z=y^(1/R)`, and the independent quadratic characters modulo those primes. Their full common radical
 
 `P=prod_i p_i`
 
@@ -10,18 +10,18 @@ satisfies
 
 `y <= P <= kappa y log y`, `phi(P)/P -> 1`,
 
-while every nontrivial subset character has primitive conductor at least `z`, above the current Page source scale after fixing the audited constant.
+while every nontrivial subset character has primitive conductor above the audited Page source scale. The same model fits the other aggregate budgets: selected Fourier energy `2^R/R` lies inside fixed-radical capacity, and the quotient has ample residue-class cardinality in every required one-defect sign cell.
 
-The same model simultaneously fits the other endpoint budgets. The reciprocal one-defect law has selected Fourier energy
+So the original conclusion of MC-306 survives in a precise form: **rank, conductor scale, full radical, totient density, Fourier energy and full quotient-state cardinality are jointly satisfiable scalar capacities.** No recombination of only those aggregate inequalities can close the endpoint.
 
-`E_X=2^R/R = kappa log y/R`,
+MC-307 shows why that statement must not be upgraded to “the source profile is fully matched.” The exact endpoint law is hereditary under coordinate restriction. Projecting to any proper `k` coordinates leaves at most `k+1` occupied sign cells, which forces the projected source radical `P_I` to satisfy
 
-which fits well inside the fixed-radical capacity `(1-o(1))log y`. The quotient map `(Z/PZ)^* -> {±1}^R` is onto, every sign cell has `phi(P)/2^R` residue classes, and each of the `R` endpoint cells contains far more residue classes than the balanced shell multiplicity would require.
+`P_I >= y^(1-(2+o(1))(k+1)/2^k)e^(-O(1))`.
 
-Thus the factor-`R` energy slack, near-shell radical lower bound and quotient-support count are not three fragments of an eventual contradiction: **there is a single critical-scale source profile satisfying all of them at once.** Further algebraic recombination of those same scalar inequalities cannot close the endpoint.
+For `k=6`, every six-subfamily therefore has `P_I >= y^(25/32-o(1))`. The disjoint-singleton MC-306 model instead has `P_I <= 2^k y^(k/R)=y^o(1)` for fixed `k` at critical rank. It is a valid matched control for the aggregate capacities and an invalid model for the endpoint's hereditary source geometry.
 
-What the matched profile deliberately does not realize is the target arithmetic localization. Actual primes in `(y,2y]`, with the required congruence restriction, would have to land with the endpoint multiplicities in prescribed one-defect Legendre sign cells for a modulus `P=y^(1+o(1))`. Residue-class cardinality does not imply such dyadic prime occupancy. A second possible source-specific discriminator is the full shell source-cost minimization: a lower-prime representative could conceivably realize the same finite shell functional more cheaply than the constructed primitive conductor profile.
+The reusable lesson is sharper than the earlier “capacity accounting can be complete without becoming coercive.” **An aggregate capacity can be saturated while the same object fails immediately after restriction.** Endpoint source complexity must therefore be audited as a profile over coordinate projections, not only through full-family totals.
 
-The reusable lesson is that capacity accounting can become complete without becoming coercive. Once rank, conductor scale, common ramification, totient density, Fourier energy and quotient state count admit one matched model, the next theorem must couple the source to **where target primes actually occur**, or introduce an invariant absent from that model.
+What remains open is whether the actual lower-prime Legendre system can realize an independent endpoint family with this hereditary polynomial source profile. The surviving mechanism would have to make most directions individually expensive, make minimum representatives overlap strongly enough that small subfamilies already see near-shell radical, or satisfy another source constraint that explains the same projection pressure.
 
-**Boundary.** MC-306 does not construct an arithmetic endpoint realization and gives no Mertens estimate. It does not rule out a theorem on prime localization in simultaneous quadratic-sign cells, unexpectedly cheap ambient source representatives, finer conductor correlations or another source-specific invariant.
+**Boundary.** MC-306 remains a correct aggregate matched construction; MC-307 does not refute it as such. MC-307 does not rule out the arithmetic endpoint, prove a Mertens estimate, or determine the overlap geometry of minimum source representatives. It proves only that the earlier disjoint-singleton control cannot realize the endpoint once hereditary projections are included.

@@ -2,36 +2,38 @@
 
 This file holds the current mathematical questions suggested by the durable Möbius-cancellation intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Replace scalar endpoint capacity by a theorem on actual prime localization
+## Exploit hereditary endpoint source complexity before adding another scalar capacity
 
-**Linked intuitions:** `MI-013-bost-connes-regularity-needs-an-intermediate-transverse-category` through `MI-033-current-endpoint-capacities-are-jointly-satisfiable`.
+**Linked intuitions:** `MI-013-bost-connes-regularity-needs-an-intermediate-transverse-category` through `MI-034-endpoint-sparsity-is-hereditary-under-projection`.
 
 MC-293--MC-300 move the problem from individual character cost to the selected subset spectrum and price the current Page/Deuring--Heilbronn ceiling. MC-301--MC-302 give generic and quadratic family-energy bounds, but even an ideal loss-free quadratic large sieve of the same shape leaves an `O(log y)` capacity and a factor-`R` gap at the blind-support rank.
 
-MC-303 packages the selected modes into a degree-`2^R` multiquadratic field; generic effective Chebotarev then pays through the huge discriminant. MC-304 exposes the finer common squarefree ramification radical `P`, with `|D_K|=P^(2^(R-1))`, and derives a necessary energy dichotomy between reduced-residue density and radical size.
+MC-303 packages the selected modes into a degree-`2^R` multiquadratic field; generic effective Chebotarev then pays through the huge discriminant. MC-304 exposes the finer common squarefree ramification radical `P`, with `|D_K|=P^(2^(R-1))`, and derives a necessary energy dichotomy between reduced-residue density and radical size. MC-305 then uses the endpoint's occupation of only `R` out of `2^R` quotient sign cells to force the full common radical to the shell scale.
 
-MC-305 uses information those energy bounds discard. The exact endpoint partition occupies only `R` sign cells in `(Z/PZ)^*/ker Theta`, out of `2^R` available cells. Brun--Titchmarsh therefore forces
+MC-306 is still the decisive matched control for those **full-family scalar** quantities. Its independent prime conductors near `y^(1/R)` simultaneously realize critical rank, primitive-conductor scale, a near-shell full radical, totient density, multiquadratic discriminant, Fourier energy and quotient-state cardinality. Those aggregate capacities therefore do not contradict one another.
 
-`log(y/P) <= (2+o(1)) R log y/2^R + O(1)`,
+MC-307 finds the information that this control omits. Project the exact one-defect endpoint partition to any proper `k` selected coordinates. Only the `k` one-defect cells and the all-minus cell remain, so the projection occupies at most `k+1` of the `2^k` sign cells. If `P_I` is the common radical of minimum lower-prime representatives for those coordinates, Brun--Titchmarsh gives
 
-so at `2^R~kappa log y` the common radical must lie within a polylogarithmic factor of the shell scale.
+`log(y/P_I) <= (2+o(1))(k+1)log y/2^k + O(1)`,
 
-MC-306 shows that this is still not contradictory. An explicit matched critical-scale source profile has `R` independent prime conductors near `y^(1/R)`, common radical
+hence
 
-`y <= P <= kappa y log y`, `phi(P)/P -> 1`,
+`P_I >= y^(1-(2+o(1))(k+1)/2^k)e^(-O(1))`.
 
-endpoint energy `2^R/R` comfortably below the fixed-radical capacity, and enough residue classes in every required one-defect sign cell. Rank, primitive-conductor scale, radical size, totient density, multiquadratic discriminant, Fourier energy and quotient-state cardinality can therefore satisfy all current necessary inequalities simultaneously.
+Since `P_I <= prod_{i in I} Q_i`, this is also a hereditary source-cost bound. Already `k=6` forces every six-subfamily product to be at least `y^(25/32-o(1))`, and therefore all but at most five selected directions have minimum source cost at least `y^(25/192-o(1))`. More generally, whenever `k/2^k -> 0`, every such `k`-subfamily must collectively see radical `y^(1-o(1))`.
 
-The live theorem is no longer to combine those scalar capacities more efficiently. It must inject arithmetic localization that the matched model omits: rule out the required distribution of actual primes in `(y,2y]` among prescribed one-defect quadratic-sign cells for a modulus `P=y^(1+o(1))`, prove that the full shell source-cost map has unexpectedly cheap representatives incompatible with the model, or introduce another source invariant not determined by the current capacity package.
+This destroys the disjoint-singleton realization from MC-306 as a model of the actual endpoint: its fixed-`k` projected radicals are only `y^o(1)`. The endpoint itself remains open. The live question is now whether the actual lower-prime Legendre system can support an independent endpoint family whose source complexity survives **every relevant coordinate projection**. A surviving realization must make most directions polynomially expensive, force strong overlap among minimum representatives, or exhibit another mechanism that satisfies the same hereditary profile.
 
-## Keep pointwise exceptional-zero control, family energy, field complexity, ramification capacity, quotient occupancy and prime localization separate
+## Keep pointwise zero control, family energy, full radical, quotient occupancy, hereditary projection and target localization separate
 
-Page/Deuring--Heilbronn controls individual modes strongly but in a smaller conductor band. Large sieves control family energy. Multiquadratic packaging controls an algebraic field but can inflate discriminant through degree replication. MC-304 moves to the common radical and its totient density. MC-305 adds how many quotient sign cells the shell may occupy. MC-306 proves that all of those currencies can coexist at critical rank without realizing the actual shell-prime distribution.
+Page/Deuring--Heilbronn controls individual modes strongly but in a smaller conductor band. Large sieves control family energy. Multiquadratic packaging controls an algebraic field but can inflate discriminant through degree replication. MC-304 moves to the common radical and its totient density. MC-305 prices full quotient occupancy. MC-306 proves that these aggregate currencies can coexist at critical rank.
 
-These resources are not interchangeable. A family can satisfy energy and quotient-support capacities while the actual primes fail to populate the required cells; conversely, residue-class cardinality alone says nothing about prime occupancy in a dyadic shell when the modulus is already at shell scale. The next useful estimate must act on that source-to-target localization step rather than another relaxation of the same scalar budgets.
+MC-307 adds a genuinely different currency: **restriction stability of source complexity**. A large full radical can be assembled from many cheap almost-disjoint coordinates, but that mechanism collapses after projecting to a fixed small subfamily. The exact endpoint does not collapse in the same way because its projected sign law remains exponentially sparse: only `k+1` cells survive out of `2^k`.
 
-## Preserve matched controls and exact energy/support accounting as falsifiers
+This does not make actual prime localization irrelevant. The projected Brun--Titchmarsh argument is itself a localization constraint, but it still supplies only a necessary hereditary profile. The next useful theorem must act on the arithmetic geometry of the minimum lower-prime representatives — their overlap, individual cost, compatibility across many projections, or their interaction with family-energy/zero-free information — or else add a target-prime statement not already encoded by that profile.
 
-The exchangeable controls of MC-295/MC-298 show that low-order combinatorial regularity can coexist with forbidden parity. The reciprocal endpoint partition gives the sharp finite-geometric energy and quotient-support profiles. MC-306 now supplies a stronger matched control: a genuine independent quadratic source family whose conductor/radical geometry realizes every current scalar allowance simultaneously.
+## Preserve matched controls, but require them to match the hereditary profile
 
-A closing theorem must therefore distinguish the physical endpoint from that matched source by changing at least one quantity the model does **not** already match — target-prime localization, ambient source-minimization cost, finer conductor correlations, or another arithmetic invariant. Repackaging the same rank/energy/radical/cell-count data without adding such a discriminator is no longer a plausible route.
+The exchangeable controls of MC-295/MC-298 show that low-order combinatorial regularity can coexist with forbidden parity. The reciprocal endpoint partition gives the sharp finite-geometric energy and quotient-support profiles. MC-306 remains valuable because it demonstrates that the previous aggregate package was noncoercive, but MC-307 proves that it is **not** a matched endpoint control once coordinate projections are audited.
+
+Future controls must therefore reproduce not only rank, energy, conductor scale, full radical, totient density and full quotient occupancy, but also the source cost seen after restriction to small and growing coordinate subsets. A proposed closing theorem has real discriminatory content only if the same hereditary test either kills the control or is independently verified on it. Repackaging the old aggregate capacities without this restriction test is no longer a plausible route.
