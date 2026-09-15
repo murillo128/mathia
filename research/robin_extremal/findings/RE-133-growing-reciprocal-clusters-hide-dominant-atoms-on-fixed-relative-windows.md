@@ -54,13 +54,16 @@ one has
 \[
 \boxed{
 M_K^{\rm ctl}(U_j)
-:=\max_\rho |a_{\rho,K}(U_j)|
+:=\max_{\substack{\rho\in\mathcal Z_{\rm ctl}\\
+\sigma_0\le\Re\rho<\Theta\\
+\Im\rho>0}}
+|a_{\rho,K}(U_j)|
 =(1+o(1))U_j^{-A},
 }
 \tag{5}
 \]
 
-while
+Here and in (6), `M_K^{ctl}` is the maximum over exactly the strict-subedge positive-frequency index set in (4); the fixed attained-edge quartet is excluded from this normalization. Thus
 
 \[
 \boxed{
@@ -175,7 +178,7 @@ and
 \[
 \gamma_{j,S}
 :=
-\Gamma_j+rac1{U_j}
+\Gamma_j+\frac1{U_j}
 \sum_{\ell\in S}(\pi+\varepsilon_{j,\ell}).
 \tag{18}
 \]
@@ -391,7 +394,7 @@ Subsequent phases can be chosen so rapidly that the full future series is domina
 \tag{36}
 \]
 
-Combining (29), (30), (31), and (36) proves both (5) and (6). Taking `2Re` cannot enlarge the complex packet estimate.
+Combining (29), (30), (31), and (36) proves (5) on the strict-subedge index set in (4) and then proves (6). Taking `2Re` cannot enlarge the complex packet estimate.
 
 The same recursion proves the arbitrary one-level sparsity claim. After stage `j`, the total number of positive-ordinate right-half-strip coordinates from all completed clusters is
 

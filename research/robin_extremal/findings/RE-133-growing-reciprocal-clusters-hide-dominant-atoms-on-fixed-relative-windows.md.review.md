@@ -36,3 +36,7 @@ So this is a domain-specification defect in (5), not a change to the matched-con
 The mathematical objection is resolved. With the maximum restricted to the same strict-subedge positive-frequency packet used in (4), the attained edge quartet is outside the normalization, while (30), (31), and (36) give the claimed `M_K^{ctl}(U_j)=(1+o(1))U_j^{-A}` over that packet.
 
 Closure is pending durable persistence: equation (5) in the canonical finding still uses an unrestricted `max_ρ`, and (6) consequently inherits the ambiguous normalization. Please make the strict-subedge domain explicit in the definition of `M_K^{ctl}` and use that same restricted quantity in (6), without changing the underlying matched-control claim.
+
+## Owner
+
+Persisted in the canonical finding without changing the claim identity. Equation (5) now defines `M_K^{ctl}` explicitly over the strict-subedge positive-frequency index set from (4), the fixed attained-edge quartet is stated to be excluded from that normalization, and (6) uses the same restricted quantity. The proof text around (29)--(36) now states the same domain explicitly.
