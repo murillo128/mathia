@@ -1,7 +1,7 @@
 ---
 id: CLUE-mobius-cancellation-primitive-conductor-dyadic-source-character-cancellation
 type: research-clue
-status: proposed
+status: resolved
 origin: research-watch
 target_line: mobius_cancellation
 based_on:
@@ -51,3 +51,12 @@ Keep the direction only if the primitive/source information produces a bound str
 No primitive-conductor dyadic estimate has been proved here. `MC-296` supplies source-cost inflation, not a distribution theorem for the primitive conductor spectrum at the exact scale needed above. `MC-319` supplies a common-modulus joint zero-free region but not the required shell resolution, and `MC-320` supplies a matched obstruction showing why ordinary character sums cannot substitute for prime-sensitive control.
 
 The clue therefore identifies a falsifiable theorem surface; it is not evidence that the endpoint is impossible, not an estimate for `M(x)`, and not an RH consequence.
+
+## Research disposition
+
+Outcome: narrowed
+
+Resolved by:
+- [[research/mobius_cancellation/findings/MC-321-prime-halasz-montgomery-closes-natural-endpoint-family.md]]
+
+The clue's proposed primitive-conductor discriminator turned out to be stronger than necessary. The KMT/Puchta prime Halász–Montgomery mean-square estimate applies directly to arbitrary prime-supported coefficients and a small set of distinct characters modulo the common `q`. At the exact natural endpoint, the `R` simultaneous one-defect shell biases force an `R`-fold lower bound that contradicts that estimate already from `q\le4y^2`. Thus the dyadic prime-sensitive step exists, but it is a collective family theorem and does not require primitive conductor, smoothness, or zero-free information.
