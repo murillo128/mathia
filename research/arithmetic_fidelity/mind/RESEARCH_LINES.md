@@ -8,21 +8,21 @@ This file holds the current mathematical questions suggested by the durable arit
 
 AF-338 proves eventual fixed-order sign regularity for the Euler-log observation matrix. AF-339--AF-344 then expose the source escape: prime-independent weighted perfect-power backgrounds preserve the right-half-plane RH pole discriminator while collapsing residual sign variation. AF-345 identifies that sign statistic exactly with occupied prime gaps, and AF-346 shows the same perfect-power family saturates the resulting mass-concentration exponent.
 
-AF-347 showed on exact-power cutoffs that high enough finite-order Riesz observation makes the sparse weighted `k`-power background and dense unit mass close at coarse asymptotic resolution. AF-348 removes the alignment escape: for every fixed `k>=2` and smoothing order `r>=0`, uniformly for all real cutoffs `X`,
+AF-347--AF-348 show that sufficiently high fixed-order Riesz observation makes the sparse weighted `k`-power background and dense unit mass differ by only `O(1)` uniformly in the cutoff. AF-349 locates the loss precisely: the **complete** finite-order Riesz cutoff profile is injective, and after scaling by `X^r` its `r`-th derivative has jumps `r!a_n`. On every finite horizon this gives the exact source-matched identity
 
-`R_(k,r)(X)=X/(r+1)+O_(k,r)(X^max(1-(r+1)/k,0))`.
+`TV(D^r F_r)=r! sum |a_n|`.
 
-Once `r>=k-1`, the two controls differ by only `O_(k,r)(1)` throughout the cutoff axis. AF-349 now locates the loss precisely: the **complete** finite-order Riesz cutoff profile is still injective. Multiplying by `X^r` and differentiating `r+1` times recovers every coefficient, and the Mellin transform recovers the Dirichlet series through a nonzero beta factor. The perfect-power collision appears only after the terminal observer quotients away bounded residual profiles or otherwise keeps only coarse asymptotic data.
+Thus the same representation is perfectly conditioned in derivative-variation while the perfect-power controls remain only `O(1)` apart in raw profile amplitude and carry `Theta(N)` coefficient distance. The Mellin transform likewise recovers the Dirichlet series through a nonzero beta factor. The collision is created by the **terminal topology or quotient**, not by finite Riesz smoothing itself.
 
-The live theorem is therefore not to strengthen the raw locality statistic again, nor to call an invertible smoothing stage intrinsically lossy. It is to identify a normalized source functional that excludes the perfect-power controls and prove that the **actual terminal observer** consumes it with a quantitative margin. If the endpoint sees only a bounded-error quotient, full-profile injectivity is irrelevant; if it retains finer profile information, stability rather than mere injectivity becomes the next gate.
+The live theorem is therefore to identify a normalized source functional that excludes the perfect-power controls and prove that the **actual terminal observer** consumes it with a quantitative margin in its own norm. A strong metric that simply re-encodes the full source is not useful unless the RH-facing endpoint controls that metric; a weak amplitude or bounded-error quotient cannot inherit source recovery merely from injectivity upstream.
 
 ## Price the actual target metric before calling a representation compressed
 
 **Linked intuitions:** `MI-001-fidelity-is-quotient-relative`, `MI-019-faithful-translation-lifts-can-restore-gauge`, `MI-020-prime-tail-localization-has-an-information-conservation-law`.
 
-Localization, contraction, lifting and smoothing can move or attenuate information without making it cheaper in the metric used by the final theorem. AF-342--AF-348 show two distinct apparent losses: a source can preserve the RH discriminator while reducing sign/gap statistics, and a coarse asymptotic readout can identify a sparse source with a dense control after smoothing. AF-349 separates the second phenomenon into an injective intermediate representation followed by a genuinely lossy observation quotient.
+Localization, contraction, lifting and smoothing can move or attenuate information without making it cheaper in the metric used by the final theorem. AF-349 makes this metric dependence exact: the full Riesz map is an isometry up to `r!` from local coefficient `ell^1` into derivative variation, yet there is no scale-uniform inverse modulus from raw `C^0` profile amplitude to that coefficient distance on the perfect-power controls.
 
-Any claimed compression must therefore name the complete composed map. A small transformed residual is not information loss until the destination declares it negligible; exact inversion is not useful until its conditioning is compatible with the destination tolerance.
+Any claimed compression must therefore name the complete composed map **and the destination topology**. A small transformed residual is not information loss until the destination declares it negligible; an exact or even isometric inverse in a stronger topology is not endpoint progress if the final theorem retains only a weaker one.
 
 ## Build cancellation-coherent source access to the Li root-rate class
 
@@ -44,4 +44,4 @@ AF-319 closes optimizer transfer once a homogeneous profile cap `Q<=C<3` is assu
 
 ## Keep source complexity, transform fidelity and terminal loss as different currencies
 
-Observation order, sign density, gap occupancy, concentration profile, raw locality, smoothing order, inverse conditioning and destination slack are provably different resources. AF-346 shows one sharp source concentration bill can be saturated; AF-348 shows the corresponding sparse/dense outputs can enter the same bounded-error asymptotic class after finite Riesz smoothing; AF-349 shows that the complete smoothed profile nevertheless retains all coefficients exactly. Future work must price the composed map `source -> representation -> terminal observer`, not infer loss or usefulness from either source richness or intermediate invertibility alone.
+Observation order, sign density, gap occupancy, concentration profile, raw locality, smoothing order, inverse conditioning and destination slack are provably different resources. AF-349 now supplies both sides in one example: the complete Riesz representation preserves coefficient distance exactly in a source-matched derivative-variation norm, while the same controls collapse in raw amplitude and in the bounded-error asymptotic quotient. Future work must price `source -> representation -> terminal observer` in the **actual terminal metric**, not infer loss or usefulness from source richness, transformed amplitude, or intermediate invertibility alone.

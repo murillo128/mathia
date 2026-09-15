@@ -8,27 +8,21 @@ This file holds the current mathematical questions suggested by the durable robi
 
 RE-112--RE-123 reduce the attained finite-edge branch to a signed subedge zero packet and transfer continuum excursions to regular CA states. RE-124--RE-129 show that hiding a dominant algebraically strong atom forces a distinct, logarithmically comparable companion at inverse-window spacing with the required cancelling target-demodulated phase.
 
-RE-130 closes the previously separate diffuse-cloud escape. The finite-edge coefficients have a universal `O((1+gamma^2)^-1)` height envelope, while Riemann--von Mangoldt bounds the number of low ordinates. Balancing the maximum atom `M_K(U)` against the tail gives
+RE-130 closes the separate diffuse-cloud escape and now does so with an off-critical-density-aware quantitative bound. If `M_K(U)` is the largest packet atom and `A_K(U)` the absolute packet mass, a zero-density estimate `N_(sigma_0)(T) << T^kappa (log T)^q` gives
 
-`A_K(U) <= C sqrt(M_K(U)) log(e/M_K(U))`
+`A_K(U) << M_K(U)^(1-kappa/2) (log(e/M_K(U)))^q`.
 
-for the full absolute packet mass `A_K`. Therefore algebraic packet mass forces an algebraically strong atom; a collection of individually superalgebraic atoms cannot collectively produce an algebraic residual.
+Ingham already has `kappa<1` on every fixed off-critical half-strip, so the exponent is strictly larger than `1/2`; Guth--Maynard can improve it further. Thus algebraic packet mass forces a quantitatively stronger algebraic atom than the earlier square-root interpolation. The many-weak-mode branch is not merely qualitatively absent: its maximum-atom scale inherits the available off-critical zero-density exponent.
 
-RE-131 sharpens the strong-atom geometry when hiding persists on a fixed relative window. If `M_K(U)>=cU^-A` and the packet is uniformly small on `|u-U|<=kappa U`, then for every fixed `D>2` there is a distinct companion with
+RE-131 sharpens the strong-atom geometry when hiding persists on a fixed relative window. A dominant atom must have a distinct companion at polylogarithmic-reciprocal ordinate distance, amplitude at least a logarithmic fraction of the dominant one, cancelling demodulated phase, and horizontal lock `O(log log U/U)`.
 
-`c_*/U < |gamma_1-gamma_0| <= C_D (log U)^D/U`,
+Inside the attained finite-edge branch, every algebraically relevant packet therefore enters a genuine two-dimensional close-pair geometry, now with a stronger lower scale for the atom supplied by RE-130. The live question is external zero geometry: can an attained off-critical edge support infinitely many such dominant phase-cancelling doublets? If not, algebraic excursions survive and transfer to CA states. The nonattained edge and `Theta=1` remain separate.
 
-amplitude `gg M_K(U)/log U`, cancelling demodulated phase, and horizontal lock
+## Keep density-aware atom extraction, observation-window strength and cancelling-pair exclusion distinct
 
-`|beta_1-beta_0| << (log log U)/U`.
+RE-130 is an absolute-mass interpolation theorem whose exponent depends on the off-critical zero-density input. RE-129 turns sublinear-window hiding into a nearby cancelling companion. RE-131 uses the stronger macroscopic hiding hypothesis to sharpen that companion to reciprocal spacing up to polylogarithms and simultaneously lock the real parts.
 
-Inside the attained finite-edge branch, every algebraically relevant packet therefore enters a genuine two-dimensional close-pair geometry. The live question is external zero geometry: can an attained off-critical edge support infinitely many dominant atoms whose cancellation on macroscopic windows is supplied by such polylogarithmic-reciprocal, horizontally locked, phase-cancelling companions? If not, algebraic excursions survive and transfer to CA states. The nonattained edge and `Theta=1` remain separate frontiers.
-
-## Keep packet-mass interpolation, observation-window strength and cancelling-pair exclusion distinct
-
-RE-130 is an absolute-mass statement and removes the many-weak-mode branch. RE-129 turns sublinear-window hiding into a nearby cancelling companion. RE-131 uses the stronger macroscopic hiding hypothesis to sharpen that companion to reciprocal spacing up to `(log U)^D` and simultaneously locks the real parts.
-
-None of these proves the required pair impossible. The condition `D>2` reflects the current filter/count/drift bookkeeping and is not an asserted sharp zero-spacing threshold. The remaining theorem must attack the actual off-critical doublet configuration rather than search for a different diffuse cancellation mechanism inside the same finite-edge packet.
+Improving zero-density estimates strengthens the atom extracted from a given packet mass but does **not** itself exclude the required companion geometry. Conversely, a spacing theorem must be applied at the algebraic atom scale actually forced by RE-130. These are separate quantitative resources.
 
 ## Keep the exact binary tie local
 

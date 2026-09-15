@@ -2,30 +2,28 @@
 
 This file holds the current mathematical questions suggested by the durable prime-lattice intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Prove the actual completed-Weil corner decomposition and scalar matching law
+## Prove the actual completed-Weil corner decomposition with moving-diagonal tail control
 
-**Linked intuitions:** `MI-016-weil-form-observability-is-stronger-than-moment-observability`, `MI-017-fixed-order-shift-differentiability-survives-without-uniform-half-sobolev-control`, `MI-018-stretched-volterra-amplitude-selection-is-an-endpoint-matching-problem`.
+**Linked intuitions:** `MI-016-weil-form-observability-is-stronger-than-moment-observability`, `MI-017-fixed-order-shift-differentiability-survives-without-uniform-half-sobolev-control`, `MI-018-stretched-volterra-amplitude-selection-is-an-endpoint-matching-problem`, `MI-019-moving-green-atoms-require-tail-anti-concentration-beyond-weighted-l1`.
 
-PL-297--PL-308 remove the fixed-order state-side gates. PL-309 localizes the renormalized trace to an exponentially thin boundary layer. PL-310 identifies the universal outer Volterra profile `C/sqrt(e^(2r)-1)`, and PL-311--PL-312 prove that the regular outer defect has exactly one scalar solvability condition `h(0)=0` and no hidden smooth Fredholm family.
+PL-297--PL-312 close the fixed-order state-side and limiting outer gates. PL-313 identifies the compressed-corner communication channel: for compact physical mismatch the finite-`s` Green transfer reaches the unique obstructed regular outer direction through the scalar endpoint moment `M_±`.
 
-PL-313 now supplies the missing geometric transfer from the compressed physical corner to that cokernel. For compact physical mismatch `m`, the exact Green kernel gives
+PL-314 now sharpens the hypothesis needed to extend that transfer to a genuine endpoint tail. Weighted `L^1(dQ)` control alone is insufficient. The stretched Green measure has a moving diagonal atom at `q=r`, which samples physical logarithmic distance `Q=r/s`; one fixed smooth `L^1` mismatch can place sparse bumps there with arbitrarily small total mass yet produce order-one normalized transfer along a sequence `s_n->0`.
 
-`(1/sqrt(s)) T_s[s^(-1/2)m(x_s(.))](r) -> e^(-r) M_+(m)`,
+A clean sufficient condition is
 
-with
+`m in L^1(dQ)` and `Q m(Q) -> 0`.
 
-`M_+(m)=integral m(y)/(1-y) dy`
+Under this tail law the moving-diagonal contribution vanishes and the rank-one limit from PL-313 survives. The condition is not claimed necessary: BV, monotonicity, a stronger boundary expansion, or another source-structured anti-concentration estimate may give the same control.
 
-(and the reflected `M_-` at the other endpoint). Thus the `r=O(s)` physical corner reaches the first regular outer correction through **one rank-one endpoint functional**, precisely the forbidden `e^(-r)` direction. There is no codimension mismatch between the compressed physical problem and the limiting outer range.
+The remaining branch-specific theorem is therefore stronger than existence of the weighted endpoint moment. It must derive an overlap decomposition for the actual completed-Weil eigenbranch, match the singular amplitude, and prove enough tail regularity or anti-concentration to suppress `Q~1/s` concentration before invoking the scalar `M_±` balance.
 
-The remaining theorem is now sharply finite-`s` and branch-specific: prove an overlap decomposition for the actual completed-Weil eigenbranch, match the singular amplitude `C` strongly enough that the residual corner mismatch is integrable in logarithmic distance, control all other `O(sqrt(s))` terms, and derive the resulting scalar `M_±` balance against the completed source. PL-313 identifies the channel; it does not establish the actual branch identity.
+## Prove a rational-prime-specific sign or first-crossing law only after stable matching
 
-## Prove a rational-prime-specific sign or first-crossing law only after matching
-
-The Green-kernel transfer, universal stretched profile and exact regular inverse are geometric. The scalar `M_±(m)` can have either sign. Rational-prime specificity must enter through the actual mismatch/source relation or the selected singular amplitude after the finite-`s` matching theorem is proved.
+The Green-kernel transfer, universal stretched profile and exact regular inverse are geometric. The scalar endpoint moment can have either sign. Rational-prime specificity must enter through the actual mismatch/source relation or selected singular amplitude after the finite-`s` matching theorem **and its moving-tail control** are proved.
 
 A useful sign theorem must come from the actual rational-prime eigen-equation: a boundary-weighted lower law, source-specific oscillation or maximum principle, an absolute-value defect identity, a source-sensitive matching condition, or another order structure unavailable to matched locally finite shift systems.
 
-## Keep outer geometry, rank-one corner transfer, actual matching and arithmetic sign separate
+## Keep outer geometry, weak tail norms, moving sampling and arithmetic sign separate
 
-PL-310--PL-312 close the limiting outer shape and regular range. PL-313 closes the **geometric communication channel** from a resolved compact physical corner to the outer cokernel. What remains is not another outer inversion: it is to show that the actual eigenbranch admits the required weighted corner decomposition and to compute its scalar balance. The later arithmetic sign is a separate gate.
+PL-313 closes the geometric rank-one channel for compact mismatch. PL-314 shows why a weak integrated tail norm cannot automatically pass through a singular moving observation: negligible `L^1` mass can remain order-one at the moving Green diagonal. Future work must state which property of the actual branch rules out that concentration. Only after this stability gate is crossed does the scalar source balance become the relevant arithmetic object.

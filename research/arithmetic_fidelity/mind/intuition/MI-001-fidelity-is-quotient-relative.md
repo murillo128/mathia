@@ -16,25 +16,25 @@ AF-012 and AF-013 give a stochastic version with an exact sufficient statistic. 
 
 `D^(r+1) F_r = r! sum_n a_n delta_n`.
 
-The Mellin transform carries the same conclusion through the nonzero beta factor. Yet the AF-348 perfect-power control and dense unit mass become identical after the later quotient that discards bounded residual profiles once `r>=k-1`. Thus the collision is created by the **terminal observation quotient**, not by the intermediate Riesz transform. Small or bounded transformed differences do not establish information loss unless the actual destination identifies them.
+More strongly, the same jump structure gives an exact finite-horizon stability identity: the total variation of `D^r F_r[a-b]` is `r!` times the local coefficient `ell^1` distance. Thus the full Riesz representation is not merely injective; it is perfectly conditioned in this source-matched derivative-variation metric. The Mellin transform carries the same exact-fidelity conclusion through a nonzero beta factor.
 
-This example also separates exact from stable fidelity. Recovering coefficients from the full Riesz profile differentiates `r+1` times, so injectivity alone supplies no conditioning theorem. The destination must specify both which quotient/norm it consumes and the quantitative margin with which the discriminator survives there.
+Yet the AF-348 perfect-power control and dense unit mass stay only `O(1)` apart in raw profile amplitude once `r>=k-1`, while their local coefficient distance is `Theta(N)`. After the later quotient that discards bounded residual profiles they become identical. Hence fidelity and conditioning belong to the pair **(representation, destination topology)**: exact stability in a strong metric does not imply a useful inverse modulus in the weaker metric actually retained downstream.
 
 The same quotient principle appears in other categories without becoming one category-free theorem. AF-007 gives a first-order smooth obstruction through the vertical rank of `dD|ker dT`; AF-009 identifies conditional variance as the exact `L2` prediction defect; AF-011 gives the zero-error analogue through support confusability.
 
 ## What remains possible
 
-A lossy quotient can still be sufficient for one arithmetic predicate even when it does not reconstruct the full input. Conversely, a large or injective representation is not automatically meaningful if its extra coordinates are target-leaking, inaccessible to the terminal theorem, or too ill-conditioned at the required resolution. The live problem is to characterize the smallest **admissible** statistic on which the intended discriminator becomes well defined with the required stability.
+A lossy quotient can still be sufficient for one arithmetic predicate even when it does not reconstruct the full input. Conversely, a large or injective representation is not automatically meaningful if its extra coordinates are target-leaking, inaccessible to the terminal theorem, or controlled only in a topology stronger than the endpoint supplies. The live problem is to characterize the smallest **admissible** statistic on which the intended discriminator becomes well defined with the required stability in the actual destination metric.
 
 AF-016 adds a necessary caution: symmetry breaking in one base realization is not generally a completeness theorem for intrinsic observability. In first-order settings, for example, automorphism invariance can be much weaker than definability unless one has an `omega`-categorical or Svenonius-type completeness argument.
 
 ## Status / novelty
 
-The fiberwise, maximal-observable, smooth-rank, conditional-variance, support-confusability, statistical-sufficiency, and finite-order Riesz recovery statements are persisted exact findings or standard-category consequences specialized here. Their organization as a reusable Mathia fidelity gate is a supported synthesis.
+The fiberwise, maximal-observable, smooth-rank, conditional-variance, support-confusability, statistical-sufficiency, and finite-order Riesz recovery/stability statements are persisted exact findings or standard-category consequences specialized here. Their organization as a reusable Mathia fidelity gate is a supported synthesis.
 
 ## Falsification criterion
 
-Exhibit a pipeline in one of the audited categories where two conflicting states/models are indistinguishable under the complete admissible statistic entering the downstream construction, yet later processing recovers the discriminator without receiving new information. That would contradict the corresponding persisted fidelity theorem.
+Exhibit a pipeline in one of the audited categories where two conflicting states/models are indistinguishable under the complete admissible statistic entering the downstream construction, yet later processing recovers the discriminator without receiving new information. Or, for the quantitative version, exhibit a claimed terminal recovery theorem whose norm does not control the source-separating topology but nevertheless has a uniform inverse modulus on the stated source class.
 
 ## Lean-formalizable core
 
