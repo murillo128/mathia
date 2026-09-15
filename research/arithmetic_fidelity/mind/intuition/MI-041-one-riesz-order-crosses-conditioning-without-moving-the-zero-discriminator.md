@@ -1,6 +1,6 @@
-# MI-041 — Positive Riesz order crosses critical regularity; recovery is target-relative and the half-order endpoint pays a square-root bandwidth discount
+# MI-041 — Positive Riesz order preserves prime-pole fidelity while target recovery crosses a half-order conditioning threshold
 
-**Evidence level:** exact/literature-derived boundary statement from [AF-352](../../findings/AF-352-every-positive-riesz-order-crosses-the-critical-boundary-conditioning-threshold.md), quantitatively sharpened by [AF-353](../../findings/AF-353-riesz-endpoint-conditioning-cost-diverges-quadratically-in-absolute-zero-budget.md) through [AF-364](../../findings/AF-364-critical-half-order-riesz-recovery-scales-as-e-v-over-sqrt-v.md). The zero-shell interpretation remains conditional on RH where stated in the findings.
+**Evidence level:** exact/literature-derived boundary statement from [AF-352](../../findings/AF-352-every-positive-riesz-order-crosses-the-critical-boundary-conditioning-threshold.md), quantitatively sharpened by [AF-353](../../findings/AF-353-riesz-endpoint-conditioning-cost-diverges-quadratically-in-absolute-zero-budget.md) through [AF-364](../../findings/AF-364-critical-half-order-riesz-recovery-scales-as-e-v-over-sqrt-v.md), with the fractional-order pole-fidelity audit closed by [AF-365](../../findings/AF-365-fractional-riesz-error-quotients-preserve-prime-pole-fidelity.md). The zero-shell interpretation remains conditional on RH where stated in the conditioning findings.
 
 For every fixed real `delta>0`, the Riesz profile crosses the critical regularity threshold without moving the off-critical singularity discriminator. AF-358 makes the Sobolev gain exact, while AF-359 shows that an order-one fraction of the absolute endpoint defect first appears on the moving scale `delta log T=Theta(1)`. AF-360 then shows that every bounded-ratio high-frequency shell is asymptotically one common complex scalar times the endpoint shell, so well-conditioned projective phase/shape statistics are blind there.
 
@@ -10,26 +10,16 @@ AF-362 identifies the sharper currency for a declared target. If `L_a(z)=<a,z>` 
 
 `(int e^(2x) dmu_a(x))^(1/2)`
 
-up to the vanishing Gamma-ratio error. Uniform target recovery is therefore equivalent to a bounded exponential second moment of the target-energy distribution. The hard upper width `v` is only the operator worst case: even when `v->infinity`, a target whose energy stays exponentially localized can remain uniformly recoverable, whereas target mass near the upper edge pays the full `e^v` cost.
+up to the vanishing Gamma-ratio error. AF-363--AF-364 then identify the source-native half-order transition. Subcritical Sobolev probes pay the upper-edge `e^v` cost; supercritical probes remain uniformly conditioned on fixed scaled bands; and the critical `beta=1/2` probe pays `Theta(e^v/sqrt(v))` on growing scaled bands. Restoring the lower-edge attenuation gives the separate absolute factor `e^u`.
 
-AF-363 makes that criterion source-native. For the Sobolev/Bessel probes
+AF-365 proves that none of this ill-conditioning means the arithmetic singularity was erased. For every fixed real `delta>=0`, the Mellin multiplier of the Riesz mean is
 
-`a_gamma^(beta,y0)=(1+gamma^2)^(-beta/2)e^(i gamma y0)`,
+`B(s,delta+1)=Gamma(s)Gamma(delta+1)/Gamma(s+delta+1)`,
 
-the zero-shell energy density gives a half-order transition. For `beta<1/2`, the normalized recovery modulus pays the upper-edge cost `e^v`; for `beta>1/2`, it tends to `1` on every fixed scaled band.
+which has no zero in `Re s>0`. Consequently, if two sources have Riesz profiles differing by `O(X^theta)`, their Dirichlet transforms differ by a holomorphic function on `Re s>theta`; every principal part above the error line is preserved. Applied to the independently specified centered rational-prime source, this protects the poles at zeta zeros in `Re s>1/2`. Fractional order therefore preserves a genuine prime/zero discriminator even as detailed coordinate inversion becomes expensive.
 
-AF-364 resolves the critical value rather than interpolating it from either side. At `beta=1/2` the target energy is spread across logarithmic zero scales. With `u=delta log T` and fixed `v`, the squared recovery modulus is trapped, up to the known positive distinct-zero density constant, around the explicit profile
+The durable distinction is exact: **discriminator survival, destination resolution and stable recovery are separate properties of the same channel**. A zero-free multiplier can be injective and principal-part faithful while having very small modulus on the modes required by a stronger finite-band reconstruction task. Conversely, a well-conditioned source-independent target says nothing by itself about rational-prime specificity.
 
-`R(u,v)=((2u+2v-1)e^(2v)-2u+1)/(2v(2u+v))`.
+The live diagnostic has therefore moved. The first question is no longer whether small noninteger Riesz order preserves some arithmetic singularity; AF-365 answers that affirmatively at the Mellin principal-part level. The next question is whether a destination observable specified independently of the multiplier can consume that preserved pole information under the actual error topology **without reconstructing substantially more source detail than the endpoint needs**. If the endpoint is represented by a Hilbert target, derive its Picard profile and pay the `u,v` recovery bill. If the endpoint is an analytic-continuation/principal-part statement, prove the quantitative stability needed to read that quotient from the available data. Do not identify these categories merely because the exact transform is invertible.
 
-If distinct zeros have an asymptotic positive density, that scalar density cancels and `K_(1/2)^2 -> R(u,v)`. More robustly, no exact density is needed for the growing-band scale: as `v->infinity`,
-
-`K_(1/2)=Theta(e^v/sqrt(v))`.
-
-The critical target therefore receives a genuine `sqrt(v)` discount relative to the worst/subcritical `e^v` cost, but it is still exponentially ill-conditioned on growing scaled bands. The discount comes from normalization by target energy spread over the full logarithmic interval, not from a new arithmetic cancellation.
-
-The absolute price still factors separately. Multiplying back the lower-edge attenuation makes the critical growing-band recovery bill `Theta(e^(u+v)/sqrt(v))`. Regularity can therefore change target conditioning by an entire polynomial bandwidth factor without changing where the off-critical discriminator lives or creating rational-prime specificity.
-
-This closes the conditioning side of the half-order question. The live diagnostic is now: derive the representer of an arithmetic endpoint **before** looking at the Riesz multiplier, determine its target-energy profile, price its `u` and `v` costs, and only then ask whether the same target separates the rational-prime source from matched controls. A source-independent Sobolev target with excellent recovery is not useful if its law is reproduced by a non-arithmetic frequency system.
-
-**Boundary.** AF-364 uses the inherited RH channel interpretation and a modern positive lower density of distinct zeros; its exact fixed-band limit additionally assumes an asymptotic distinct-zero density, while the `e^v/sqrt(v)` scale does not. None of AF-362--AF-364 identifies the actual arithmetic destination target, controls nonlinear source operations, removes the separate `e^-u` attenuation, or proves that good target conditioning carries prime specificity. Nothing here says exponentially high zero information is necessary for every possible proof of RH.
+**Boundary.** AF-365 is a global eventual `C^0` Mellin-continuation statement for fixed `delta`; it does not provide a stable finite-data algorithm, a converse, or improved AF-361--AF-364 condition numbers. AF-364 uses the inherited RH zero-channel interpretation and a modern positive lower density of distinct zeros. None of these results proves that a cheap destination functional exists, removes the separate absolute attenuation, or supplies an RH proof. The point is that arithmetic pole fidelity survives exactly even where stronger recovery tasks are badly conditioned.

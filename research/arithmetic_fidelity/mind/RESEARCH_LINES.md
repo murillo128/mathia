@@ -2,7 +2,7 @@
 
 This file holds the current mathematical questions suggested by the durable arithmetic-fidelity intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Price source information after separating absolute attenuation, target conditioning and arithmetic specificity
+## Price source information after separating exact discriminator survival, target conditioning and destination consumption
 
 **Linked intuitions:** `MI-001-fidelity-is-quotient-relative`, `MI-004-prime-specificity-depends-on-the-retained-analytic-layer`, `MI-018-signed-complexity-only-transfers-through-sign-regular-observations`, `MI-041-one-riesz-order-crosses-conditioning-without-moving-the-zero-discriminator`.
 
@@ -18,25 +18,23 @@ AF-362 replaces hard bandwidth by the exact target-relative recovery currency. F
 
 `(int e^(2x) dmu_a(x))^(1/2)`,
 
-where `mu_a` is the target-energy distribution on scaled log-frequency. Thus `v->infinity` is not itself fatal: a target remains uniformly recoverable precisely when its energy has uniformly bounded exponential second moment. Conversely, energy placed near the moving upper edge pays the full `e^v` cost. Hard scaled width is the vector worst-case proxy, not the intrinsic cost of every target.
+where `mu_a` is the target-energy distribution on scaled log-frequency. AF-363--AF-364 then give the source-native Sobolev transition: `beta<1/2` pays the full normalized `e^v` edge cost, `beta>1/2` is uniformly conditioned on every fixed scaled band, and the critical `beta=1/2` target has growing-band cost `Theta(e^v/sqrt(v))`. Absolute recovery still pays the separate factor `e^u`.
 
-AF-363 computes that currency for the source-independent Sobolev/Bessel probes `a_gamma^(beta,y0)=(1+gamma^2)^(-beta/2)e^(i gamma y0)`. Fixed scaled bands have a sharp half-order transition: `beta<1/2` pays the full normalized `e^v` edge cost, whereas `beta>1/2` has normalized recovery modulus tending to `1`.
+AF-365 now closes the fractional-order fidelity audit that this conditioning sequence had left open. For every fixed real `delta>=0`, the Mellin multiplier of the Riesz mean is `B(s,delta+1)`, which is zero-free on `Re s>0`. Therefore an `O(X^theta)` Riesz error forces the underlying Dirichlet-series difference to be holomorphic on `Re s>theta`: all meromorphic principal parts above the error line survive the quotient exactly. For the independently specified centered prime-only source, the surviving principal parts include the poles at zeta zeros in `Re s>1/2`; an `O_epsilon(X^(1/2+epsilon))` bound for every `epsilon>0` would exclude every off-critical zero.
 
-AF-364 now resolves the critical endpoint. Under the inherited RH zero-channel interpretation and the known positive lower density of distinct zeros, `beta=1/2` has a two-sided fixed-band envelope governed by the explicit logarithmic profile `R(u,v)` and, on growing scaled bands,
+This gives an exact separation that was previously only implicit. **Arithmetic discriminator survival and stable coordinate recovery are different currencies.** The same fractional Riesz channel can preserve the prime/zero pole divisor perfectly while detailed finite-band inversion costs `e^u`, `e^(u+v)`, or `e^(u+v)/sqrt(v)` depending on the target.
 
-`K_(1/2)=Theta(e^v/sqrt(v))`.
+The missing theorem is no longer to show that some arithmetic information survives small positive Riesz order. The live problem is to identify a destination observable and error model that can **consume the preserved principal-part discriminator without first reconstructing an exponentially ill-conditioned amount of source detail**. The Mellin principal-part quotient and the Hilbert-space target-recovery problem are different categories; a bridge between them must be proved rather than inferred from either exact injectivity or a favorable Sobolev profile.
 
-If the distinct-zero proportion has an asymptotic density, the unknown density cancels and the fixed-band limit is exactly `R(u,v)^(1/2)`. The absolute recovery cost still multiplies by `e^u`, giving `Theta(e^(u+v)/sqrt(v))` on growing critical bands. The square-root bandwidth discount is target-energy geometry, not arithmetic specificity; matched frequency systems with comparable counting density reproduce the same scale.
-
-The remaining theorem must therefore identify an **independently specified arithmetic discriminator** and price all three currencies that reach it: absolute error/noise after the `e^{-u}` attenuation, target regularity/Picard mass under the normalized envelope, and rational-prime specificity. Choosing or adapting the target after seeing the multiplier merely hides the inverse cost.
-
-## Determine whether an arithmetic discriminator occupies the favorable side of the target-recovery law
+## Couple the preserved prime-pole discriminator to a stably usable endpoint
 
 **Linked intuition:** `MI-041-one-riesz-order-crosses-conditioning-without-moving-the-zero-discriminator`.
 
-The conditioning classification itself is now sharp enough to stop extrapolating from generic bandwidth. Subcritical source-native probes pay `e^v`, the critical half-order probe pays `e^v/sqrt(v)` on growing bands, and supercritical probes remove the differential band cost on fixed bands. None of those probes is yet a rational-prime selector.
+AF-365 provides a source-specified discriminator before the channel: the meromorphic pole divisor of the centered rational-prime Dirichlet transform. Fractional Riesz smoothing does not move or cancel that divisor in the positive half-plane. AF-362--AF-364, however, show that extracting stronger coordinate-level information from the same channel can be badly conditioned.
 
-The next sharp question is therefore target identification rather than another Riesz asymptotic. Starting from a destination quantity specified independently of the Riesz multiplier, derive its zero-side representer or spectral-energy measure, determine whether it lies below, at or above the half-order threshold, and compare its resulting `e^u`-weighted recovery bill with the endpoint error budget. A favorable Picard profile is useful only if the same target also distinguishes the arithmetic source from matched non-arithmetic controls.
+The next sharp question is therefore a destination-interface problem. Specify the desired endpoint independently of the Riesz multiplier, determine exactly what quotient or functional of the Riesz profile it consumes, and prove whether that functional can read the pole/principal-part information under the available absolute error. If it factors through a linear Hilbert target, derive its representer and Picard profile and price the `u` and `v` costs. If it instead uses a Mellin/analytic-continuation quotient, state the topology and stability needed to infer the relevant principal part from finite or noisy data. Do not silently replace one problem by the other.
+
+A useful endpoint must satisfy both gates: it must remain sensitive to the rational-prime pole divisor rather than a matched frequency background, and it must reach that discriminator with a quantitative modulus strong enough for the final argument. AF-365 proves exact survival; it does not provide stable numerical extraction.
 
 ## Build cancellation-coherent source access to the Li root-rate class
 
@@ -52,4 +50,4 @@ AF-320--AF-336 separate exact recovery, conditioning, support-union geometry and
 
 ## Keep source complexity, transform fidelity, terminal loss and target-uniform conditioning as different currencies
 
-Observation order, sign density, gap occupancy, concentration profile, raw locality, smoothing order, absolute attenuation, inverse conditioning, target spectral distribution, target regularity, singularity class, destination topology, physical lag resolution, spectral bandwidth, projective quotient and destination slack are different resources. AF-362 adds the decisive refinement that `delta log R` only controls the worst target in a band; AF-363--AF-364 show how a declared Sobolev target crosses from full edge conditioning through the critical `e^v/sqrt(v)` law to the supercritical fixed-band regime. Future work must keep that target-relative cost separate from `delta log T` attenuation and from arithmetic specificity.
+Observation order, sign density, gap occupancy, concentration profile, raw locality, smoothing order, absolute attenuation, inverse conditioning, target spectral distribution, target regularity, singularity class, destination topology, physical lag resolution, spectral bandwidth, projective quotient and destination slack are different resources. AF-362--AF-364 show that `delta log R` controls only a worst target unless the target-energy profile is specified. AF-365 adds the complementary fact that a zero-free transform multiplier may preserve an arithmetic singularity exactly while inverse recovery remains poorly conditioned. Future work must keep **exact discriminator survival, stable extraction, target-relative recovery and arithmetic specificity** separate until a theorem connects them at the destination.

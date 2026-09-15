@@ -14,28 +14,32 @@ VIS-130--VIS-150 show that support-safe companions enter a shrinking low-frequen
 
 VIS-150--VIS-160 show that deterministic selectors can mimic arbitrarily high fixed mixing orders. A useful theorem needs a predeclared joint complexity/height law or source information outside the sampled phase-clock state.
 
-## Calibrate critical dependence on a representation-matched monotone object
+## Calibrate critical dependence after quotienting endpoint phase explicitly
 
 **Linked intuitions:** `MI-009-stable-decoding-is-a-collision-geometry-question` through `MI-023-dirichlet-gap-controls-separate-dependence-from-count-and-intensity`.
 
-VIS-227--VIS-236 separate collision baselines, conditional sigma-fields and the monotone support of actual prime-coordinate cells. In that representation, exact first-order transition conditioning is degenerate: the labels are nondecreasing and the apparent lag-two escape reduces to an occupancy functional.
+VIS-227--VIS-236 separate collision baselines, conditional sigma-fields and the monotone support of actual prime-coordinate cells. VIS-237 then gives a representation-faithful grid-origin quotient: averaging the same-cell collision count over origin is exactly a triangular pair-gap functional. VIS-238 removes Poisson count noise by calibrating the observed fixed-count geometry, and VIS-239 removes an independently specified one-point intensity through cumulative-intensity coordinates while showing that same-sample empirical-CDF flattening destroys the spacing geometry.
 
-VIS-237 supplies a representation-faithful quotient instead of manufacturing label freedom. Randomizing the grid origin and averaging the same-cell collision count gives the exact triangular pair functional
+VIS-240 supplies a representation-matched dependence family. Symmetric Dirichlet cyclic gaps with an independent uniform rotation keep the point count exactly `m`, keep every one-point marginal exactly uniform, and remain on the same monotone ordered-point support after cutting. The parameter `alpha` changes short-gap dependence without changing those nuisance variables; `alpha=1` is exactly the iid-uniform circular-spacing model. The tent statistic has an explicit finite-sample mean under this family.
 
-`sum_(a<b) (1-|x_b-x_a|/ell)_+`.
+VIS-241 now separates the still-missing variance calibration into two exact channels. For a fixed circular configuration and a uniform cut phase `Theta`, the post-cut tent statistic can be written as a weighted arc-coverage count. Its cut average is the intrinsic circular pair functional
 
-VIS-238 removes Poisson count noise by calibrating the observed fixed-count geometry directly. VIS-239 then removes any **independently specified** one-point intensity through cumulative-intensity coordinates, while showing that same-sample empirical-CDF flattening is degenerate because it replaces the geometry by a deterministic rank lattice.
+`bar T=sum_(i<j) (1-delta_ij/ell)_+ (1-delta_ij/L)`,
 
-VIS-240 now supplies the missing first dependence family. Symmetric Dirichlet cyclic gaps with an independent uniform rotation keep the point count exactly `m`, keep every one-point marginal exactly uniform, and after cutting/sorting remain on the same monotone ordered-point support. The parameter `alpha` changes short-gap dependence without changing those nuisance variables: `alpha=1` is exactly the iid-uniform circular-spacing model, `alpha>1` regularizes gaps and `alpha<1` clusters them.
+and its conditional cut variance `V_cut` is an explicit quadratic form in the minor-arc overlap lengths. Under a random gap configuration `G`,
 
-For the triangular tent statistic, the finite-sample mean is explicit through beta aggregation of consecutive Dirichlet gaps. This makes the iid-uniform center one point in a broader **fixed-count, uniform-intensity, representation-matched dependence null** rather than the final baseline.
+`Var_(G,Theta)(T)=Var_G(bar T)+E_G[V_cut]`.
 
-The live calibration question is now quantitative rather than conceptual: with `alpha` fixed independently of confirmation data, derive or independently validate the variance/covariance or full finite-sample law of the tent statistic under this family. Only then test whether the prime configuration has a residual outside the dependence envelope and translate any survivor back through the signed prime-phase kernel. Fitting `alpha` on the same statistic without propagating estimation uncertainty would merely move the conditioning problem into the null.
+Thus random-cut endpoint phase and dependent circular gap geometry are not one undifferentiated null fluctuation. **The endpoint convention must be frozen before confirmation.** If the interval endpoints are nuisance, use `bar T` and the remaining mathematical target is `Var_G(bar T)` or a stronger finite-sample law under a predeclared `alpha`. If physical endpoints are part of the signal, retain the exact additional `E_G[V_cut]` channel and calibrate both pieces.
 
-## Keep nuisance quotienting, count calibration, marginal normalization, dependence law and arithmetic residual separate
+The live dependence question is therefore narrower than after VIS-240: derive or independently validate the fluctuation law of the intrinsic circular pair functional under fixed external `alpha`, with the cut-phase contribution included only when the endpoint model requires it. Only then test whether the prime configuration has a residual outside the representation-matched dependence envelope and translate any survivor back through the signed prime-phase kernel. Fitting `alpha` or the endpoint convention on the same confirmation statistic would merely move the conditioning problem into the null.
+
+## Keep nuisance quotienting, count calibration, marginal normalization, endpoint convention, dependence law and arithmetic residual separate
 
 **Linked intuitions:** `MI-022-cumulative-intensity-normalization-removes-a-specified-marginal-but-in-sample-flattening-erases-the-geometry`, `MI-023-dirichlet-gap-controls-separate-dependence-from-count-and-intensity`.
 
-A valid confirmation test must distinguish the operations being performed. Removing grid-origin phase is an exact representation quotient; fixing the observed sample count removes Poissonization noise; transforming by an independently specified cumulative intensity removes a one-point marginal; choosing `alpha` or another gap law is a dependence model; and conditioning can still erase the statistic.
+A valid confirmation test must distinguish the operations being performed. Removing grid-origin phase is one exact representation quotient; fixing the observed sample count removes Poissonization noise; transforming by an independently specified cumulative intensity removes a one-point marginal; symmetric Dirichlet gaps vary dependence at fixed count and marginal; and VIS-241 shows that opening a stationary circle into a finite interval introduces a separate endpoint-phase variance channel.
 
-VIS-240 is useful precisely because it changes dependence while preserving the preceding quotients. It does not model prime gaps by assertion and its exact mean is not yet a complete null. Future visual statistics should therefore be tested against frozen representation-faithful dependence families, with parameter uncertainty accounted for whenever parameters are learned. Only a residual surviving count, intensity and dependence controls can be interpreted as a candidate source signal, and even then RH relevance still requires a signed prime-phase bridge.
+If endpoint phase is a nuisance, averaging over it is another exact quotient and leaves the intrinsic circular statistic `bar T`. If endpoints are mathematically distinguished, averaging would erase real structure and `V_cut` belongs to the null. This choice is semantic, not a numerical tuning parameter.
+
+Only a residual surviving the frozen count, intensity, endpoint and dependence controls can be interpreted as a candidate source signal, and even then RH relevance still requires a signed prime-phase bridge.
