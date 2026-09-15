@@ -16,7 +16,7 @@ VIS-150--VIS-160 show that deterministic selectors can mimic arbitrarily high fi
 
 ## Move to the transition, optimizer structure and access time: the subcritical static scale is closed
 
-**Linked intuitions:** `MI-009-stable-decoding-is-a-collision-geometry-question` through `MI-018-dependent-collision-baselines-are-centered-by-lag-return-profiles`.
+**Linked intuitions:** `MI-009-stable-decoding-is-a-collision-geometry-question` through `MI-019-markov-collision-variance-is-controlled-by-three-and-four-time-return-tensors`.
 
 VIS-213--VIS-226 reduce the subcritical static problem and prove `I_abs(B_(y,H)) asy y/(H log y)`, with the exact torus and real SDP objectives of the same order. The strictly subcritical static scale is therefore closed up to constants.
 
@@ -26,12 +26,14 @@ VIS-230 closes the next centering shortcut. For a stationary Markov control with
 
 `E[S]=sum_(r=1)^(m-1)(m-r)c_r`, `c_r=P(X_0=X_r)`,
 
-not `binom(m,2)q_2`. For a finite ergodic chain the shift from the independent center is `mA-B+o(1)` and can therefore be extensive. Matching the full marginal occupancy law still does not calibrate a dependent control.
+not `binom(m,2)q_2`.
 
-The critical pair-collision question now begins only after fixing an admitted dependence model and calibrating both its lag-return center and its covariance. The accepted local clue has advanced accordingly: derive or independently freeze the dependent variance, test a standardized prime residual against that control, and only if it survives ask whether it couples to the signed prime-phase Hamiltonian. If dependence explains the residual, the next statistic must carry genuinely different information such as multiscale persistence or direction-sensitive phase structure.
+VIS-231 closes the corresponding covariance calculation for every specified finite-state stationary first-order Markov null. Squaring the collision U-statistic shows that overlapping pair indicators require the triple-return tensor `T_(r,s)`, while disjoint pairs require three four-time pair-pair tensors `D1,D2,D3`; the resulting finite sum is the exact `Var(S)`. The independent categorical formula of VIS-229 is recovered when `P` has rank one.
 
-## Keep static scale, deterministic floor, marginal baseline, dependence baseline, optimizer recovery and dynamical access separate
+The critical pair-collision question now begins only after **choosing and justifying the dependence model itself**. For an admitted Markov null, center and finite-sample variance are no longer missing. A standardized prime residual must survive that exact calibration, parameter-estimation uncertainty and representation perturbations before any coupling to the signed prime-phase Hamiltonian is meaningful. If the intended control is renewal, higher-order, nonstationary or scale-dependent, its own three-/four-time structure must be calibrated rather than forced into the Markov formula.
 
-VIS-226 fixes the strictly subcritical static supremum scale but not the exact optimizer, sharp constant or recurrence/access time. VIS-227 fixes the deterministic balls-in-cells minimum. VIS-228 fixes the uniform independent stochastic baseline. VIS-229 shows that nonuniform independent fluctuations already require second and third power sums of the one-point law. VIS-230 shows that dependent centering additionally requires the lag-return profile.
+## Keep static scale, deterministic floor, marginal baseline, dependence baseline, covariance structure, optimizer recovery and dynamical access separate
 
-These are separate currencies. A critical statistic must remove the universal deterministic constraint, calibrate the admitted one-point law, calibrate dependence in both center and covariance, and only afterward ask whether a surviving residual influences the Ising/torus/SDP objective or the physical prime-log orbit.
+VIS-226 fixes the strictly subcritical static supremum scale but not the exact optimizer, sharp constant or recurrence/access time. VIS-227 fixes the deterministic balls-in-cells minimum. VIS-228 fixes the uniform independent stochastic baseline. VIS-229 shows that nonuniform independent fluctuations require second and third power sums of the one-point law. VIS-230 shows that dependent centering additionally requires the lag-return profile. VIS-231 shows that dependent variance requires three- and four-time joint return tensors beyond that center.
+
+These are separate currencies. A critical statistic must remove the universal deterministic constraint, calibrate the admitted one-point law, dependence center and higher joint covariance, and only afterward ask whether a surviving residual influences the Ising/torus/SDP objective or the physical prime-log orbit.
