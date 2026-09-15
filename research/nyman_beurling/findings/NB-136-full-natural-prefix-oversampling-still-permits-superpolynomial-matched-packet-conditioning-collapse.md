@@ -286,7 +286,7 @@ The binomial theorem gives the exact identity
 \tag{28}
 \]
 
-Applying `(28)` with `theta=varepsilon_R log n` and using `(20)`,
+Applying `(28)` with the phase increment from `(22)` and using `(20)`,
 
 \[
 (V_Rx_R)_n
@@ -349,7 +349,7 @@ The central binomial coefficient satisfies
 \tag{34}
 \]
 
-Using `varepsilon_R=R^(-B)` and `m_R=c log R+O(1)`, the logarithm of the right side in `(33)` is
+Using `(13)` and `m_R=c log R+O(1)`, the logarithm of the right side in `(33)` is
 
 \[
 \begin{aligned}
