@@ -52,6 +52,10 @@ This file records durable literature dependencies for `research/farey_discrepanc
 
 - E. M. Wright, *A Simple Proof of a Theorem of Landau*, Proceedings of the Edinburgh Mathematical Society **9**(2) (1954), 87--90, DOI `10.1017/S0013091500021349`. Role: primary theorem anchor for the classical fixed-`k` asymptotic for squarefree integers with exactly `k` prime factors, `N_k(x) ~ x(log log x)^(k-1)/((k-1)! log x)`. `FD-131` uses it only to show that imposing any fixed finite set of prime divisors occupies a vanishing fraction of each fixed multiplicative-rank slice; no uniform-in-`k` estimate, RH input, or zero-density theorem is imported.
 
+## Squarefree Erdős--Kac auxiliary input
+
+- Huixi Li, Biao Wang, Chunlin Wang and Shaoyun Yi, *Some ergodic theorems over squarefree numbers and squarefull numbers*, Acta Arithmetica **221** (2025), 117--140, DOI `10.4064/aa240909-18-6`, arXiv `2405.18157`. Role: primary theorem anchor for the squarefree Erdős--Kac law with any fixed finite set of excluded prime divisors. `FD-132` uses the `k=0` specialization of current arXiv Theorem 1.2(1), only with the excluded set empty or `{p}`, to show that a bounded-width central `omega(n)` layer has zero relative density while either Gaussian half-space has asymptotic mass one half. No uniformity in a prime `p=p(H)` is imported.
+
 ## Prime-divisibility large-sieve auxiliary input
 
 - H. L. Montgomery and R. C. Vaughan, *The large sieve*, Mathematika **20**(2) (1973), 119--134, DOI `10.1112/S0025579300004708`. Role: primary anchor for the classical additive large-sieve inequality on separated rational points used in `FD-108` to turn the physical coefficient law into a simultaneous `L^2` bound for prime-divisibility projections.
