@@ -18,6 +18,7 @@ based_on:
   - research/visual_exploration/findings/VIS-235-lag-two-markov-type-mean-by-two-step-deletion.md
   - research/visual_exploration/findings/VIS-236-ordered-prime-coordinate-cells-make-first-order-type-degenerate.md
   - research/visual_exploration/findings/VIS-237-random-origin-cell-collisions-are-triangular-pair-functional.md
+  - research/visual_exploration/findings/VIS-238-fixed-count-tent-calibration-removes-poissonization-variance.md
 ---
 
 # Is there prime-specific critical cell structure after a representation-matched dependence calibration?
@@ -46,28 +47,38 @@ can vary inside an arbitrary endpoint-matched first-order Markov type; its compl
 
 and the actual endpoint-matched transition table has a singleton realization. Its `VIS-234` PGF is always a monomial. A generic Euler-trail/Markov-type randomization therefore either has no freedom on the actual table or, if enlarged to create revisits, leaves the support of the ordered prime-coordinate representation.
 
-`VIS-237` now removes one nuisance without leaving that support: average the equal-width interval grid over a uniform origin shift while keeping the ordered source points fixed. For any ordered points `x_1<...<x_m` and cell width `ell`, the exact origin-averaged collision count is
+`VIS-237` removes one nuisance without leaving that support: average the equal-width interval grid over a uniform origin shift while keeping the ordered source points fixed. For any ordered points `x_1<...<x_m` and cell width `ell`, the exact origin-averaged collision count is
 
 `(1/ell) integral_0^ell S(U)dU`
 ` = sum_(a<b) (1-|x_b-x_a|/ell)_+`.
 
 Thus cell-origin averaging is a representation-matched control, but it is not a new independent null family. It quotients the arbitrary grid phase and reduces the statistic exactly to a triangular/tent-weighted short-range pair-gap functional. Cell-origin robustness can therefore be handled analytically; the remaining source of freedom is the ordered point configuration itself.
 
-The live issue is now how to calibrate that local pair-gap/count geometry **without conditioning away the tested quantity and without importing a categorical path space the representation cannot realize**.
+`VIS-238` now separates a further null-model choice that is leading-order at the critical scale. For the tent pair functional, an unconditioned homogeneous Poisson process has critical variance
+
+`lambda(kappa/3+kappa^2)+O(1)`,
+
+where `lambda` is the expected point count and `kappa=lambda ell/L=Theta(1)`, while a fixed-count uniform sample with `m` points has
+
+`m kappa/3+O(1)`.
+
+The extra Poisson term `lambda kappa^2` is exactly the leading count-fluctuation channel exposed by conditioning on the Poisson total count. Since the prime configuration at fixed `y` already has a fixed observed number of points, a scalar geometry test should not mistake this global-count fluctuation for uncertainty in the short-gap geometry.
+
+The live issue is therefore narrower: after quotienting grid origin and removing the leading count-randomness confound, how should the remaining local pair-gap geometry be calibrated without conditioning away the tested quantity?
 
 ## Research question
 
 At fixed critical `lambda`, after choosing a dependence model independently of confirmation data and matching the support of the ordered prime-coordinate construction, does the prime system exhibit a stable residual that is not explained by generic local intensity and short-gap fluctuations?
 
-The most direct surviving route is now the origin-invariant triangular pair functional exposed by `VIS-237`, or another genuinely variable monotone statistic of cell occupancies, normalized prime gaps, within-cell point positions, or the increasing point process itself. Can one predeclare such a model/statistic, calibrate its finite-sample center and covariance without conditioning away the tested quantity, and find a residual that survives increasing scales?
+The most direct surviving route is the origin-invariant triangular pair functional exposed by `VIS-237`, now calibrated at minimum against the fixed-count uniform order-statistic baseline of `VIS-238`, or against a stronger fixed-count monotone model that also represents admitted nonuniform intensity or short-gap structure. Can one predeclare such a model/statistic, calibrate its finite-sample center and covariance without conditioning away the statistic, and find a residual that survives increasing scales?
 
 If a residual survives, can it be translated into a lower bound, obstruction, or structural constraint for the signed prime-phase quadratic energy rather than remaining a generic point-process anomaly?
 
 ## Why it may matter
 
-The branch has now separated forced finite occupancy, independent occupancy noise, one-point heterogeneity, serial dependence, conditioning sigma-field, representation support, and grid-origin nuisance. `VIS-236` shows that a statistically nondegenerate null is not automatically admissible if it creates paths the underlying geometry cannot realize. `VIS-237` then shows that one admissible source of representation variation — translating the grid — can be quotiented exactly and leaves a classical two-point kernel statistic.
+The branch has separated forced finite occupancy, independent occupancy noise, one-point heterogeneity, serial dependence, conditioning sigma-field, representation support, grid-origin nuisance, and now total-count randomization. `VIS-236` shows that a statistically nondegenerate null is not automatically admissible if it creates paths the underlying geometry cannot realize. `VIS-237` shows that grid translation can be quotiented exactly. `VIS-238` shows that even a geometrically admissible Poisson point-process null can inject a separate leading variance channel if it randomizes a total count that is fixed in the observed source configuration.
 
-This materially narrows the search. Future controls should spend complexity on the actual source of freedom — prime gaps, local intensity, run occupancies, and within-cell geometry — rather than arbitrary permutations of cell labels or repeated scanning over grid origins. A surviving signal under such a control would be substantially more informative; failure would close the critical cell route without mistaking discretization phase or null-model freedom for arithmetic structure.
+This materially narrows the search. Future controls should spend complexity on the actual source of freedom — local intensity, prime gaps, run occupancies, and within-cell geometry — rather than arbitrary label permutations, repeated grid-origin scans, or unconditioned count noise. A surviving signal under such a control would be substantially more informative; failure would close the critical cell route without mistaking representation or null-model variability for arithmetic structure.
 
 ## Decisive test
 
@@ -77,11 +88,13 @@ Do **not** use the exact endpoint-matched first-order Markov-type law of `VIS-23
 
 Do **not** treat a sweep over cell origins as multiple independent evidence channels. `VIS-237` gives the exact origin average. For the scalar collision route, use the origin-invariant triangular pair-gap functional directly unless an origin-specific deviation has a separately predeclared mathematical role.
 
-Choose one representation-matched ordered-point control before confirmation. A natural next candidate is an independently calibrated local point-process/gap model whose realizations remain increasing and whose center for the triangular functional accounts for the local intensity and admitted short-gap law. Another admissible route is a weaker conditional control on counts/gaps that leaves the predeclared statistic nondegenerate.
+Do **not** use an unconditioned homogeneous Poisson process as the sole scalar confirmation null when the intended question conditions on the observed number of source points. `VIS-238` proves that Poisson count randomness contributes a leading `Theta(m)` variance term at critical occupancy. The fixed-count uniform order-statistic model is the minimal homogeneous baseline for the geometric statistic, not a claim that uniform points are a faithful prime model.
+
+Choose one stronger representation-matched ordered-point control before confirmation if the homogeneous fixed-count baseline is intentionally insufficient. A natural next candidate is a fixed-count nonhomogeneous or gap-based model whose realizations remain increasing and whose center/covariance for the triangular functional accounts for the admitted local intensity and short-gap law. Another admissible route is a weaker conditional control on counts/gaps that leaves the predeclared statistic nondegenerate.
 
 For any proposed control, verify first that the statistic varies inside its admitted sample space and that the control does not condition on sufficient information for that statistic. Then calibrate its center/covariance or exact conditional law as appropriate, and test the confirmation residual without retuning `lambda`, width, coordinate, or null.
 
-Kill a candidate if its anomaly disappears under the monotone matched control, if it is determined by preserved occupancy/gap data, if the claimed origin robustness is only repeated measurement of the `VIS-237` triangular functional, or if the null gains apparent power only by permitting label revisits/backtracking impossible for the prime-coordinate cells.
+Kill a candidate if its anomaly disappears under the monotone matched control, if it is determined by preserved occupancy/gap data, if the claimed origin robustness is only repeated measurement of the `VIS-237` triangular functional, if its significance depends on the extra Poisson count-fluctuation variance isolated by `VIS-238`, or if the null gains apparent power only by permitting label revisits/backtracking impossible for the prime-coordinate cells.
 
 Only after a residual survives these gates should it be translated back through the signed phase kernel. Before promotion to a prime-specific finding, audit equivalent formulations in logarithmic prime gaps, short-interval counts, renewal/point-process controls, prime-pair or higher-correlation statistics, and the relevant critical Dirichlet-polynomial literature.
 
@@ -93,8 +106,10 @@ Only after a residual survives these gates should it be translated back through 
 
 `VIS-237` establishes an exact representation-matched quotient for the grid origin: the mean same-cell collision count is a triangular pair-gap functional. It does **not** establish a faithful stochastic model for prime gaps/counts, a nonzero prime residual relative to such a model, or any independence gained by origin averaging.
 
-None of these results establishes prime-specific critical separation, a faithful confirmation null for the ordered point process, or any RH consequence.
+`VIS-238` establishes exact finite-window mean/variance formulas for that tent statistic under fixed-count uniform and homogeneous Poisson point models, and shows that Poissonization adds a leading critical count-fluctuation variance channel. It does **not** establish that the fixed-count uniform model is a faithful final null for primes or that any prime residual remains after such conditioning.
+
+None of these results establishes prime-specific critical separation, a faithful confirmation null for the ordered prime process, or any RH consequence.
 
 ## Research disposition
 
-The clue remains `accepted`, but its live route is narrower. The generic exact Markov-type calibration branch is resolved negatively by `VIS-236`, while the arbitrary cell-origin nuisance is reduced exactly by `VIS-237`. The next useful test should therefore operate directly on representation-matched monotone point geometry — preferably the origin-invariant triangular short-gap functional or another predeclared occupancy/gap statistic — and compare it against an independently justified ordered-point null that proves its own nondegeneracy before confirmation.
+The clue remains `accepted`, but its live route is narrower. The generic exact Markov-type branch is closed for the actual monotone labels by `VIS-236`; grid-origin nuisance is reduced exactly by `VIS-237`; and `VIS-238` removes unconditioned Poisson count fluctuation as a clean source of scalar significance when the observed point count is fixed. The next useful test should operate directly on representation-matched monotone point geometry and compare the tent statistic against a predeclared **fixed-count** ordered-point null that accounts for whichever local intensity or short-gap structure is intentionally admitted.
