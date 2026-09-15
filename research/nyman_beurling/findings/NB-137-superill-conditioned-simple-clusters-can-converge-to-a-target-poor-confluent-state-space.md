@@ -127,7 +127,7 @@ v_{k,G}(\varepsilon)
 \tag{11}
 \]
 
-For every `varepsilon ne 0`, the transformation from the raw columns in `(10)` to the columns `(11)` is triangular with nonzero diagonal. Hence it is invertible and
+For every nonzero spacing `ε`, the transformation from the raw columns in `(10)` to the columns `(11)` is triangular with nonzero diagonal. Hence it is invertible and
 
 \[
 \boxed{
@@ -148,9 +148,9 @@ w_G^{(k)}(0)
 \tag{13}
 \]
 
-simultaneously for all `k<d_G` in the finite-dimensional Hilbert norm of `mathcal E_(r,R_G)`. The jet columns are linearly independent: the terminal-band Laguerre Gram used in `NB-111` is positive definite at every finite rank. Therefore the corresponding synthesis matrix has a positive smallest singular value.
+simultaneously for all `k<d_G` in the finite-dimensional Hilbert norm of the cell space `(5)`. Under the logarithmic rank condition imposed below, the coercive estimate in `NB-111` makes the jet synthesis map injective for all sufficiently large `G`, so its smallest singular value is positive.
 
-It follows by elementary finite-dimensional subspace perturbation that, for each `G` and every prescribed `eta_G>0`, there is a number
+It follows by elementary finite-dimensional subspace perturbation that, for each sufficiently large `G` and every prescribed `eta_G>0`, there is a number
 
 \[
 \varepsilon_*(G,\eta_G)>0
@@ -194,7 +194,7 @@ d_G\le\left(\frac18-\delta\right)\log G
 \tag{18}
 \]
 
-for all sufficiently large `G`. With `q` and `a` fixed, `(4)` is exactly the radial-depth regime of `NB-111`: `R_G asymp G` and
+for all sufficiently large `G`. With `q` and `a` fixed, `(4)` is exactly the radial-depth regime of `NB-111`: `R_G` is comparable to `G` and
 
 \[
 2a\log q\in(0,\infty)
@@ -247,7 +247,7 @@ Then `(15)` and the triangle inequality for the two orthogonal projectors imply
 
 which proves `(2)`.
 
-This conclusion is basis-invariant. In particular, if the split points were actual distinct right-half zeta zeros, `NB-095` shows that sequential canonical Blaschke deflation changes the raw state columns by an invertible triangular matrix. Its conditioning may explode during confluence, but its range is still precisely the same `mathcal S_G^split`. Thus `(23)` concerns the canonical finite-state range, not a convenient but lossy coordinate choice.
+This conclusion is basis-invariant. In particular, if the split points were actual distinct right-half zeta zeros, `NB-095` shows that sequential canonical Blaschke deflation changes the raw state columns by an invertible triangular matrix. Its conditioning may explode during confluence, but its range is still precisely the same split state space. Thus `(23)` concerns the canonical finite-state range, not a convenient but lossy coordinate choice.
 
 ## 3. The same packet makes the complete natural-prefix power matrix catastrophically ill-conditioned
 
@@ -300,7 +300,7 @@ Also
 \tag{28}
 \]
 
-Since `beta=1/2+a>1/2`,
+Since `β=1/2+a>1/2`,
 
 \[
 \sum_{n\le R_G}n^{-2\beta}
@@ -319,7 +319,7 @@ C_a
 \tag{30}
 \]
 
-For sufficiently small `varepsilon_G`, the numbers `e^(i varepsilon_G log n)`, `1<=n<=d_G`, are distinct, so the first `d_G` rows contain an ordinary Vandermonde minor and `V_G` has full column rank. Moreover its first column has norm at least one. Therefore
+For sufficiently small `ε_G`, the numbers `e^(i ε_G log n)`, `1<=n<=d_G`, are distinct, so the first `d_G` rows contain an ordinary Vandermonde minor and `V_G` has full column rank. Moreover its first column has norm at least one. Therefore
 
 \[
 \boxed{
@@ -351,7 +351,7 @@ That last statement is deliberately coordinate-sensitive: it concerns the matrix
 
 The construction above is a matched control, not an assertion that the points `(24)` are genuine zeta zeros.
 
-Its height is `G`, the cutoff is `R_G asymp G`, and the right-half packet cardinality is
+Its height is `G`, the cutoff `R_G` is comparable to `G`, and the right-half packet cardinality is
 
 \[
 d_G=(c+o(1))\log G,
@@ -411,6 +411,6 @@ A targeted prior-art search found the expected clustered-Vandermonde/superresolu
 
 `NB-136` left two possible readings of its superpolynomial conditioning collapse. One was optimistic: perhaps the tiny singular directions exposed a hidden finite-section route by which a high zero packet could mimic the target. The other was representational: perhaps ordinary zero-power coordinates simply become singular as distinct roots approach a confluent jet. `NB-137` separates them. The second phenomenon can occur while the canonical state range is provably target-poor.
 
-This does **not** show that every clustered packet is target-poor. The spacing threshold `varepsilon_*(G,eta_G)` in `(14)` is existential and may be extremely small; the construction deliberately exploits the absence of any source-specific lower-spacing law. Nor does it show that actual zeta zeros realize the matched packet. It only proves that population and horizontal-depth information, even supplemented by the complete natural prefix, cannot turn raw packet conditioning into a target certificate.
+This does **not** show that every clustered packet is target-poor. The spacing threshold `ε_*(G,eta_G)` in `(14)` is existential and may be extremely small; the construction deliberately exploits the absence of any source-specific lower-spacing law. Nor does it show that actual zeta zeros realize the matched packet. It only proves that population and horizontal-depth information, even supplemented by the complete natural prefix, cannot turn raw packet conditioning into a target certificate.
 
 The surviving problem is therefore sharper. A useful source-specific condition must control a **target-aware quotient** of the packet geometry: for example, the angle of the canonical state range to the harmonic target profile of `NB-117`, or the mass of the actual coefficient vector on target-bearing compression modes. Alternatively, a spacing/arrangement theorem strong enough to prevent the confluence regime would remove this matched control. Simply adding more samples to an ordinary Vandermonde inversion no longer addresses the relevant obstruction.
