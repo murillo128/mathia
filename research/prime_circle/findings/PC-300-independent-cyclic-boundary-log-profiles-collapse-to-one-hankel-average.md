@@ -1,0 +1,240 @@
+# PC-300 — independent cyclic boundary-log profiles collapse to one Hankel average
+
+**Status:** `EXACT-DERIVED` + `MATCHED-CONTROL-OBSTRUCTION` + `PRIOR-ART-CLASSICALIZATION` + `DECISIVE-BOUNDARY` for the independently sampled multi-profile escape left open by PC-299.
+
+PC-299 shows that the first positive two-step defect of one normalized boundary-log profile is a Fejer-smoothed additive source autocorrelation, and leaves genuinely phase-sensitive or noncommuting multiple-profile constructions open. The most direct source-coupled multi-profile repair is to compose pair profiles cyclically, sharing each source residue between the right frame of one profile and the left frame of the next.
+
+That construction does create noncommuting matrices before averaging, but its complete cyclic moment hierarchy collapses exactly after independent source averaging. Every averaged `k`-profile loop is the `k`th spectral moment of one deterministic real-symmetric Hankel-type matrix built from the **symmetrized additive Fourier transform of the source law**. Thus increasing the loop length does not preserve an independent noncommutative carrier: it only takes higher powers of one classical source-Fourier matrix.
+
+Let `q` be an odd prime,
+
+\[
+H_B=\{-B,\ldots,B\},\qquad N=2B+1\le q,
+\]
+
+and retain the PC-296/299 low-frequency packet
+
+\[
+S_M=\{\pm1,\ldots,\pm M\},\qquad 2M<q,
+\]
+
+with
+
+\[
+A^{p,r}:=X_p D Z_r^*,
+\qquad
+D=\operatorname{diag}_{m\in S_M}a_q(m).
+\tag{1}
+\]
+
+Here `a_q(m)<0` for `m!=0`, and
+
+\[
+c_d:=\frac1N\sum_{h\in H_B}e^{2\pi i d h/q}.
+\tag{2}
+\]
+
+For one source residue `s`, define the same-source overlap
+
+\[
+G_s:=Z_s^*X_s.
+\tag{3}
+\]
+
+Then
+
+\[
+\boxed{
+(G_s)_{n,m}=c_{(m+n)s}.
+}
+\tag{4}
+\]
+
+Let `p_1,\ldots,p_k` be independent with common probability law `mu` on `Z/qZ`, and form the cyclic profile loop
+
+\[
+L_k(p_1,\ldots,p_k)
+:=\operatorname{tr}\!\left(
+A^{p_1,p_2}A^{p_2,p_3}\cdots A^{p_k,p_1}
+\right).
+\tag{5}
+\]
+
+Put
+
+\[
+\overline G_\mu:=\mathbb E_{s\sim\mu}G_s.
+\tag{6}
+\]
+
+Then for every integer `k>=1`,
+
+\[
+\boxed{
+\mathbb E L_k
+=\operatorname{tr}\!\left((D\overline G_\mu)^k\right).
+}
+\tag{7}
+\]
+
+Moreover, if
+
+\[
+\widehat\mu(t):=\sum_{x\bmod q}\mu(x)e^{2\pi i tx/q},
+\]
+
+then
+
+\[
+\boxed{
+(\overline G_\mu)_{n,m}
+=g_\mu(m+n),
+\qquad
+g_\mu(a)
+=\frac1N\sum_{h=-B}^{B}\widehat\mu(ah)
+=\frac1N\left(1+2\sum_{h=1}^{B}\operatorname{Re}\widehat\mu(ah)\right).
+}
+\tag{8}
+\]
+
+Thus `\overline G_mu` is a real symmetric Hankel-type matrix on the mode packet. Since `D` is real negative diagonal, writing `W=-D>0` gives
+
+\[
+W^{-1/2}(D\overline G_\mu)W^{1/2}
+=-W^{1/2}\overline G_\mu W^{1/2},
+\tag{9}
+\]
+
+so `D\overline G_mu` is similar to a real symmetric matrix. The whole averaged cyclic hierarchy is therefore an ordinary self-adjoint moment sequence.
+
+## 1. Exact cyclic factorization
+
+The shared source coordinate between two neighboring profiles produces exactly one same-source cross-Gram factor:
+
+\[
+A^{p_j,p_{j+1}}A^{p_{j+1},p_{j+2}}
+=X_{p_j}D\,(Z_{p_{j+1}}^*X_{p_{j+1}})\,D Z_{p_{j+2}}^*.
+\tag{10}
+\]
+
+Multiplying around the cycle and using cyclicity of trace gives
+
+\[
+\boxed{
+L_k
+=\operatorname{tr}\!\left(
+D G_{p_2}D G_{p_3}\cdots D G_{p_k}D G_{p_1}
+\right).
+}
+\tag{11}
+\]
+
+The matrices `G_{p_j}` need not commute. Nevertheless the `p_j` are independent, and matrix multiplication is multilinear entry by entry, so
+
+\[
+\mathbb E\left[G_{p_2}D G_{p_3}\cdots D G_{p_1}\right]
+=\overline G_\mu D\overline G_\mu\cdots D\overline G_\mu.
+\tag{12}
+\]
+
+Substitution in (11) proves (7). No asymptotic equidistribution, PNT, random-matrix ansatz, or commutativity approximation is used.
+
+Equation (8) follows by substituting (2) into (4) and averaging over `s`. The centered interval `H_B` pairs `h` with `-h`, so only `Re widehat mu` survives. This is the additional information loss that turns the deterministic source average into a real Hankel matrix before any higher power is taken.
+
+## 2. Prime source: higher loops are powers of ordinary exponential-sum data
+
+Let
+
+\[
+P_q=\{\ell:\ell\text{ prime},\ 2<\ell<q\},
+\qquad R_q=|P_q|,
+\]
+
+let `nu_q` be the uniform law on `P_q`, and write
+
+\[
+S_q(a)=\sum_{\ell\in P_q}e^{2\pi i a\ell/q}.
+\tag{13}
+\]
+
+Then (8) becomes
+
+\[
+\boxed{
+g_{\nu_q}(a)
+=\frac1N\left(
+1+\frac{2}{R_q}\sum_{h=1}^{B}\operatorname{Re}S_q(ah)
+\right).
+}
+\tag{14}
+\]
+
+Consequently every independently averaged cyclic loop is a polynomial spectral moment of the single finite matrix whose entries are the Dirichlet-smoothed real parts of the ordinary additive prime exponential sums `S_q(a)`.
+
+This is more informative than the positive Fejer quotient of PC-299 because signs and relative real Fourier data survive. It is nevertheless not a new zeta operator by itself. There is no new spectral parameter, functional-equation symmetry, gamma factor, or critical line generated by the cyclic composition; all source dependence has already been compressed into the classical finite Fourier data (14) before the matrix power in (7) is taken.
+
+## 3. Exact matched control: reflection-odd source phase is invisible
+
+Let the reflected source law be
+
+\[
+\mu^\vee(x)=\mu(-x).
+\tag{15}
+\]
+
+Then
+
+\[
+\widehat{\mu^\vee}(t)=\overline{\widehat\mu(t)},
+\]
+
+and therefore (8) gives the exact identity
+
+\[
+\boxed{
+\overline G_{\mu^\vee}=\overline G_\mu.
+}
+\tag{16}
+\]
+
+Hence
+
+\[
+\boxed{
+\mathbb E_{\mu^\vee}L_k
+=\mathbb E_\mu L_k
+\quad\text{for every }k.
+}
+\tag{17}
+\]
+
+More generally the entire hierarchy depends only on the reflection symmetrization `(mu+mu^vee)/2`. Thus this natural cyclic repair cannot retain the reflection-odd part of the additive source phase. On the root circle the reflection is complex conjugation and fixes the common anchor `1`, so this is an intrinsic matched geometric control rather than a coordinate change introduced after spectralization.
+
+## 4. Distinct-source conditioning does not restore an order-one fixed-loop effect
+
+Equation (7) is exact for independent source sampling. The Prime-Circle prime-pair convention often conditions source residues to be distinct. For a fixed loop length `k` and fixed low-mode cutoff `M`, conditioning `k` samples from `P_q` to be all distinct changes the expectation of the bounded finite-dimensional loop (5) by at most
+
+\[
+O_{k,M}(R_q^{-1}),
+\tag{18}
+\]
+
+because the iid collision probability is `O_k(R_q^{-1})` and the fixed-mode operators are uniformly bounded as `q` grows. Thus the collapse (7) controls the order-one fixed-loop limit under distinct sampling as well.
+
+This does **not** claim an exact factorization after without-replacement conditioning, nor does it exclude information precisely at the `R_q^{-1}` collision scale, growing `k` or growing mode cutoff. Those are outside the theorem.
+
+## 5. Prior-art and novelty audit
+
+The abstract ingredients are classical: a matrix depending only on `m+n` is Hankel-type; independent random-matrix products factor under expectation entrywise when the factors use independent random variables; and the centered Dirichlet average in (8) is an elementary finite Fourier/cosine transform. Higher-order spectral and bispectral methods likewise distinguish genuine higher-order phase coupling from ordinary power-spectrum data, but no such external theorem is needed for (7)--(9).
+
+The zeta-facing arithmetic in (14) also stays inside the prior-art boundary already audited in PC-299: additive exponential sums over primes and their moment/correlation statistics are classical analytic-number-theory objects. A targeted search across Hankel moment matrices, higher-order/bispectral Fourier analysis, and additive prime exponential sums found those standard frameworks but no reason to treat the cyclic factorization above as a new spectral route to RH. No absence-of-literature claim is used; the load-bearing result is the exact finite factorization (7).
+
+The project-local contribution is narrower and precise: the most direct **shared-source cyclic composition** of the PC-296 boundary-log profiles looks noncommutative before averaging, but independent source averaging converts its entire loop hierarchy to powers of one reflection-even Hankel source matrix.
+
+## 6. Audit tests and research boundary
+
+The theorem has direct finite checks. For arbitrary `q,B,M`, source law `mu`, and `k`, enumerate the source residues in (5) and compare the average with `tr((D overline G_mu)^k)`. Entrywise averaging of (4) must agree with (8), and replacing `mu` by `mu^vee` must leave `overline G` unchanged. Small-modulus direct enumeration was used as a stress test and agrees with (7) to floating-point precision; the persisted claim depends only on the exact derivation.
+
+This closes only the independently sampled cyclic-profile moment route. It does **not** close correlated/reused source variables, source-dependent ordering before averaging, non-cyclic tensor contractions, growing-depth regimes in which collision corrections compete with the signal, cross-level compositions, or constructions that avoid the centered-window reflection symmetrization.
+
+The surviving requirement is therefore sharper than the PC-299 phrase “noncommuting multiple profiles”: merely chaining independently sourced profiles into a closed noncommutative loop is insufficient. A viable multi-profile mechanism must retain relational source information that does not factor through the single averaged matrix `overline G_mu`, or operate in a regime where the correlations discarded by independent averaging are themselves the load-bearing object.
