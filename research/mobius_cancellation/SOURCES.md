@@ -311,3 +311,9 @@ Role: exact theorem-form anchor for `MC-313`. Theorem 1 states the generalized G
 Yang Ding, Lingfei Jin and Chaoping Xing, *Erasure List-Decodable Codes From Random and Algebraic Geometry Codes*, IEEE Transactions on Information Theory 60 (2014), no. 7, 3889–3894. DOI: https://doi.org/10.1109/TIT.2014.2314468.
 
 Role: prior-art boundary for the generic-code control in `MC-313`. The paper proves that random linear codes attain the information-theoretic erasure rate/fraction tradeoff with constant list size `2^{O(1/epsilon)}` at fixed positive gap `epsilon` from capacity. `MC-313` gives its own elementary Gaussian-binomial union bound for the particular growing-list, rate-one-half generalized-weight profile needed as a matched source-code control.
+
+## MC-S53 — D'haeseleer and Kurz, generalized Hamming weights and projective systems
+
+Jozefien D'haeseleer and Sascha Kurz, *Generalized Hamming weights of additive codes and geometric counterparts*, Designs, Codes and Cryptography 94 (2026), published online 18 June 2026. DOI: https://doi.org/10.1007/s10623-026-01889-9. Current Bayreuth repository version: https://doi.org/10.15495/EPub_UBT_00009151. arXiv: https://arxiv.org/abs/2512.16327.
+
+Role: primary finite-geometric prior-art anchor for `MC-315`. The paper defines projective `(h,f)-(n,r,s)_q` systems and the extremal parameter `n_q(r,h,f;s)`, with the `h=1` case corresponding to linear codes and codimension-`f` occupancy equal to `n-d_f`. Lemma 4.2 gives the double-counting upper bound `n_q(r,h,f;s) <= ([r choose f]_q/[r-h choose f]_q) s`. `MC-315` specializes this framework to the diagonal binary regime `r=R`, `f=ceil(2 log_2(R+1))`, `s<=R+2` and shows that the general incidence bound is only `O(R^3)`, far above the `2R` threshold relevant to the exact-natural-scale source code.
