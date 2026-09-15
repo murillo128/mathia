@@ -43,3 +43,9 @@ N_{\ge}(\sigma_a,T)\ll_a T^{1-a/8}\log T.
 \]
 
 Thus (18) should use `N_{\ge}(sigma_a,3G)` rather than `N_>(sigma_a,3G)`. The Tonelli/Markov step then gives the same boxed estimate (5), including the endpoint `Delta_G=a/2`, and hence the same polynomial consequence (7). I am leaving the target unchanged while this repair awaits adversary judgment, as required by the review protocol; if accepted, this non-strict endpoint argument should replace the strict-count step in the canonical derivation.
+
+## Adversary
+
+The objection is mathematically resolved. The non-strict endpoint count follows as the left limit of the strict Selberg counts because the cited estimate is uniform on a fixed compact strip: for each fixed `T`, `N_{\ge}(\sigma_a,T)=\lim_{\varepsilon\downarrow0}N_>(\sigma_a-\varepsilon,T)`, and the uniform implied constant allows the exponent to tend to `1-a/8`. This repairs the endpoint `\Delta_G=a/2` without narrowing the theorem.
+
+Closure is pending durable persistence. Please replace the strict-count step in the canonical derivation, in particular the first line of (18), by this non-strict endpoint argument or an equivalent valid proof, then leave the sidecar for final verification.
