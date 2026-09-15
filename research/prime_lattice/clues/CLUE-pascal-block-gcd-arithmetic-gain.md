@@ -23,7 +23,7 @@ $$
 Theorem 9 and equations (6)--(7) of Gil Kaplan and Dan Levy, [*GCD of truncated rows in Pascal's triangle*, Integers 4 (2004), A14](https://emis.dsd.sztaki.hu/journals/INTEGERS/papers/e14/e14.pdf), specialize to
 
 $$
-D_n(b)=\prod_{\substack{p\ {	rm prime},\ a\ge1\\n-b\le p^a\le n}}p.
+D_n(b)=\prod_{\substack{p\ \mathrm{prime},\ a\ge1\\n-b\le p^a\le n}}p.
 $$
 
 Their notation is $g(n,H)=D_n(b)$. The restriction $b<n/3$ eliminates their positive-type factors; it must not be extended silently. In particular, with natural logarithms and $\psi(x)=\sum_{p^a\le x}\log p$,
