@@ -16,9 +16,11 @@ The live broader question is to identify justified source-class/data couplings s
 
 AF-371 separates source richness from target-faithful positivity: complete reciprocal Taylor data may determine the source while Hankel PSD remains target-mixed, whereas Schoenberg translation total positivity uses the correct ordered relation. AF-372 shows that no fixed determinant order is enough on the unrestricted translation-kernel class. AF-373 then shows that location sampling is an independent resource: on an exponentially decaying class some thin sets are determining, while the integer lattice is not.
 
-AF-374 identifies the fixed-lattice multiplicative quotient. AF-375 classifies its entire continuous separable gauge by the difference subgroup `H_E=<E-E>`. If `H_E=aZ`, exponential tilts times positive periodic factors remain invisible. If `H_E` is dense, only the universal exponential tilt survives. Thus a second commensurate phase only shrinks the hidden period, while one incommensurate phase kills every nonconstant periodic separable gauge.
+AF-374 identifies the fixed-lattice multiplicative quotient. AF-375 classifies its entire continuous separable gauge by the difference subgroup `H_E=<E-E>`. If `H_E=aZ`, exponential tilts times positive periodic factors remain invisible; if `H_E` is dense, only the universal exponential tilt survives. An incommensurate second lattice phase therefore kills every nonconstant periodic separable gauge.
 
-The remaining question is now precise: **after dense difference geometry removes the separable gauge, does the chosen source class make the sampled all-order Toeplitz minors determining, or can a non-separable target-changing fibre survive?** The simplest test case is `E=aZ union (tau+aZ)` with irrational `tau/a`. A proof must be a determining theorem for the declared source class; a counterexample must match all sampled minors while failing full Pólya-frequency structure. Dense `H_E` alone is not enough.
+AF-376 closes the obvious finite-phase repair on Ganzburg's broad class `L`. If the actual row set is uniformly discrete with separation `Delta_E>0`, any bounded nonnegative kernel supported in an interval shorter than `Delta_E` is `E`-Pólya-frequency at every order, while no nonzero compactly supported integrable kernel is globally Pólya-frequency. Thus `E=aZ union (tau+aZ)` with irrational `tau/a` can have dense generated difference subgroup and still retain an infinite-dimensional non-separable false-positive fibre because the **actual sampled rows** remain separated.
+
+The live question is therefore no longer whether more finite lattice phases remove the known gauge. A successful sampled positivity reduction must either use a sampling geometry with genuinely vanishing local spacing and a determining theorem, or derive a source-specific class rigid enough to exclude compact/local aliases. That source restriction must come from the arithmetic kernel rather than be imposed only to rescue the certificate.
 
 ## Separate source identification from the RH zero-selection mechanism
 
@@ -26,7 +28,7 @@ AF-370 identifies `zeta` exactly inside its declared source class, but Hamburger
 
 ## Couple preserved discriminators to a stably usable destination
 
-A destination theorem must declare separately the finite data observed, the admissible source/tail class, retained analytic layer, relation type and arity, sampling geometry, residual gauge, and topology/modulus in which the conclusion is inferred. Exact injectivity without usable conditioning, or gauge elimination without a determining theorem, is not a destination result.
+A destination theorem must declare separately the finite data observed, the admissible source/tail class, retained analytic layer, relation type and arity, actual sampling geometry, generated difference subgroup, residual gauge, and topology/modulus in which the conclusion is inferred. Exact injectivity without usable conditioning, or gauge elimination without a determining theorem, is not a destination result.
 
 ## Build cancellation-coherent source access to the Li root-rate class
 
@@ -42,4 +44,4 @@ AF-320--AF-336 separate exact recovery, conditioning, support-union geometry and
 
 ## Keep fidelity currencies separate until a theorem connects them
 
-Observation horizon, admissible source category, tail class, transform fidelity, inverse conditioning, positivity relation, relational arity, sampling geometry, generated difference subgroup, residual observation gauge and destination slack are distinct resources. AF-375 now makes one of those currencies exact: dense sampling differences eliminate a specific separable multiplicative gauge, but do not by themselves buy determination. Future work should state which fibre has actually been removed and which target-changing fibres remain.
+Observation horizon, admissible source category, tail class, transform fidelity, inverse conditioning, positivity relation, relational arity, **actual row separation**, generated difference subgroup, residual observation gauge and destination slack are distinct resources. AF-375 makes the separable gauge currency exact; AF-376 makes its limitation equally exact. Dense generated differences can eliminate that gauge while positive row separation still leaves all-order non-separable aliases. Future work should state which fibre has actually been removed and which target-changing fibres remain.

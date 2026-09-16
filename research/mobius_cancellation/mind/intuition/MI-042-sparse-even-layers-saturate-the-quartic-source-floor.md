@@ -1,27 +1,27 @@
-# MI-042 — Sparse even endpoint layers saturate the quartic source floor under columnwise incidence accounting
+# MI-042 — Universal nonnegative mode selection saturates the half-loading and quartic source floor
 
-**Evidence level:** proved for the reciprocal-endpoint architecture of MC-323--MC-325, with the new layer ceiling established in [MC-325](../../findings/MC-325-sparse-even-layer-averaging-saturates-quartic-source-floor.md).
+**Evidence level:** proved for the reciprocal-endpoint architecture of MC-323--MC-326, with the universal mode-selection ceiling established in [MC-326](../../findings/MC-326-universal-mode-selection-half-loading-barrier.md).
 
-The reciprocal endpoint contains many more fixed-bias characters than its generator and pair modes. That cardinality does not by itself buy a stronger source lower bound.
+The quartic common-radical frontier is not a peculiarity of pair modes or sparse even Hamming layers. Let `F` be any nonempty family of nonzero modes `a in F_2^R`, give them arbitrary nonnegative weights `w_a`, and write `W=sum_a w_a`. For a possible nonzero source column `s`, its weighted loading is
 
-For an even Hamming layer `|I|=r=o(sqrt R)`, every selected mode keeps asymptotically fixed shell bias, so MC-323 forces all but `O_delta(1)` individual primitive conductors above `y^(2-delta)`. But a source prime whose generator column has support size `a` belongs to exactly
+`L(s)=sum_(a in F, a·s=1) w_a`.
 
-`B_(R,r)(a)`
+Every fixed nonzero mode sees exactly `2^(R-1)` of the `2^R-1` possible nonzero source columns. Averaging `L(s)` over those columns therefore gives
 
-of the `r`-fold symmetric-difference representatives, where `B` is the odd-intersection/Krawtchouk slice. Uniformly in `a`,
+`(1/(2^R-1)) sum_(s!=0) L(s) = [2^(R-1)/(2^R-1)] W`.
 
-`B_(R,r)(a) / binom(R,r) <= 1/2 + binom(r,2)/R`,
+Hence some column satisfies
 
-and the `1/2` is asymptotically sharp.
+`L(s)/W >= 2^(R-1)/(2^R-1) = 1/2 + 1/[2(2^R-1)]`,
 
-Consequently the enormous layer size cancels between conductor demand and source-coordinate incidence capacity. Summing the individual near-quadratic conductor bills yields the same common-radical frontier
+and this finite-`R` constant is sharp when all nonzero modes carry equal weight. No irregular mode selection or nonnegative reweighting can drive the **universal** loading asymptotically below one half.
 
-`liminf log P / log y >= 4`
+Combined with the individual near-quadratic conductor bill from MC-323, a proof that only sums independent nonnegative mode costs and protects against every possible source column can certify at most
 
-already attained by the pair layer. Passing from pairs to `4`-, `6`-, or any sparse even modes does not improve the exponent under this accounting architecture.
+`(2-delta)(2^R-1)/2^(R-1) < 4-2delta`
 
-The reusable lesson is precise: **higher-mode multiplicity is useful only if it changes the per-coordinate loading law or creates a genuinely joint conductor constraint.** Counting more fixed-bias modes while allowing each source coordinate to serve asymptotically half of them cannot beat the pair-spectrum bill.
+in the common-radical exponent. Pair modes already approach this optimum, and MC-325's Krawtchouk half-balance is a structured special case of the same universal averaging law.
 
-A route past exponent `4` must therefore violate at least one load-bearing ingredient: obtain conductor information stronger than independent per-mode lower bounds, exploit correlations among conductors/characters, find a mode family with uniformly smaller source-column incidence, or change the endpoint/source representation so the Krawtchouk half-balance no longer describes its loading.
+The remaining escape is source-specific, not combinatorial family design. The actual columns are only `S_A={s_p}`. To beat one half one must prove that high-loading abstract columns cannot occur there, or carry too little logarithmic prime mass to matter. The other genuine escape is a joint or signed conductor relation that cannot be represented as a positive sum of independent bills; a stronger individual conductor horizon would also change the numerical ceiling.
 
-This is a ceiling for the stated proof architecture, not a universal upper bound on arithmetic source complexity and not an estimate for `M(x)`.
+This is a ceiling for the stated proof architecture, not an upper bound on the true common radical and not an estimate for `M(x)`. The reusable audit is: distinguish **mode count**, **universal loading over all abstract columns**, and **arithmetic restrictions on the columns actually realized** before interpreting a larger mode family as source leverage.

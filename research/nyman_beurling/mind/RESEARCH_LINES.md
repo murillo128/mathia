@@ -2,31 +2,25 @@
 
 This file holds the current mathematical questions suggested by the durable Nyman--Beurling intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Classify sublogarithmically conditioned exterior samplers after Gamma balancing
+## Make Gamma-balanced exterior samplers selective, not merely well-conditioned
 
 **Linked intuitions:** `MI-001-target-aware-gram-geometry-must-carry-absolute-scale` through `MI-033-macroscopic-gamma-cost-is-a-rank-one-signed-height-moment`.
 
 NB-148 identifies the signed escape from positive exterior Poisson sampling: zero total sampler mass cancels the universal Hadamard logarithm but exports an equal sign debt. NB-150--NB-155 progressively show that mesoscopic spreading, fixed-scale target packets, arbitrary fixed compact samplers, boundary approach and sublinear vertical widening do not isolate a logarithmic target packet under sublogarithmic effective conditioning.
 
-NB-156 crossed the macroscopic-support boundary with the sufficient envelope
+NB-156 crossed the macroscopic-support boundary with the sufficient envelope `E_G=D_G+C_G log(G/H_G)`. NB-157 then showed that this envelope is not intrinsic: before absolute values, the leading completed-Gamma contribution is the single signed log-height moment. Three polynomially separated heights can cancel both total mass and that Gamma moment exactly with bounded coefficients.
 
-`E_G = D_G + C_G log(G/H_G)`,
+NB-158 closes the target-conditioning loophole for the explicit three-height construction. The top lobe retains uniformly positive `O(1)` charge on every zero in a fixed window around `G`, while `D_G=O(1)` and `J_G=0`. Gamma balancing can therefore be both polynomially deep and well-conditioned on the same microscopic target cells used by the current route.
 
-suggesting that descending to much smaller ordinates might spend a new Gamma resource.
+What fails is **selection**. The negative middle-height coefficient creates a fixed-width lobe near `G^theta_2` with uniformly negative charge, and the explicit Riemann--von Mangoldt remainder already forces `Omega(log G)` actual zeros into that lobe for every sufficiently large `G`. The signed debt exported by a logarithmic target packet can be absorbed by a routine lower-height zero reservoir. Iterating the descent only walks through ordinary zero density unless some rarer target feature is preserved.
 
-NB-157 shows that the envelope is not intrinsic. Before absolute values, the leading completed-Gamma contribution is the single signed moment
+The live route must therefore prevent compensating negative charge from landing in a routinely populated region, preserve the target's horizontal/microscopic localization through the sign change, or couple the exterior sampler to a source-specific Nyman/von-Mangoldt observable before the zero charge is separated by sign. Widening support, cancelling the Gamma moment and keeping target conditioning bounded are no longer sufficient discriminators.
 
-`int log((G+Im w)/G) d mu_G(w)`.
+## Keep signed conservation, boundary conditioning, Gamma moments and adverse-reservoir occupancy as separate currencies
 
-After normalizing by target charge, call its magnitude `J_G`. The adverse-packet argument survives whenever `D_G+J_G=o(log G)`, independent of the size of `log(G/H_G)` as long as the lowest sampled ordinate still tends to infinity. On the mass-zero sampler space this Gamma term is rank one: two distinct heights cannot cancel it nontrivially, while three heights can cancel it exactly with bounded coefficients even for polynomially separated heights.
+Positive sampling pays the Hadamard background. Zero-mass sampling removes it but creates sign debt. Boundary approach is priced by `D_G=C_G/a_G`. NB-157 makes the macroscopic Gamma background a signed log-height moment `J_G`; NB-158 shows that even `D_G=O(1)` and `J_G=0` can coexist with a logarithmically populated adverse lobe.
 
-The live route is therefore **not vertical range itself**. A genuine escape must simultaneously preserve useful target charge while forcing `J_G=Omega(log G)`, pay `D_G=Omega(log G)`, descend into a regime where the uniform large-height Gamma expansion no longer applies, or obtain source-specific signed prime/Nyman cancellation that changes the conservation law. The decisive next theorem should price the compatibility of target conditioning, Gamma-balanced height moments and arithmetic signed cancellation rather than add another geometric support envelope.
-
-## Keep signed conservation, boundary conditioning and Gamma moments as separate currencies
-
-Positive sampling pays the Hadamard background. Zero-mass sampling removes it but creates sign debt. Boundary approach is priced by `D_G=C_G/a_G`. Vertical transport changes where adverse charge can lie. NB-157 adds the correction that the macroscopic Gamma background is controlled by a **signed log-height moment**, not by support diameter alone.
-
-A future sampler must therefore state target charge, total variation, boundary gap, height distribution, signed log-height defect and prime-side cancellation simultaneously. Replacing the signed moment by its absolute support envelope loses exactly the cancellation that the new three-height construction exposes.
+A future sampler must therefore state target charge, total variation, boundary gap, height distribution, signed log-height defect, **where each opposite-sign lobe lands**, the zero population there, and prime/Nyman-side cancellation simultaneously. A balanced moment is not a selector when ordinary source density already fills the compensating lobe.
 
 ## Push canonical shell discrepancy independently
 

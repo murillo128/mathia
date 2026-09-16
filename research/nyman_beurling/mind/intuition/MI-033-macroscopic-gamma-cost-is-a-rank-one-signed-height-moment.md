@@ -1,27 +1,19 @@
-# MI-033 — Macroscopic Gamma cost is a rank-one signed height moment, not an unavoidable vertical-range tariff
+# MI-033 — Gamma balancing can preserve target charge while exporting debt into a routine zero reservoir
 
-**Evidence level:** proved for the exterior signed-Poisson sampler regime of NB-148--NB-157, with the sharpened conservation law in [NB-157](../../findings/NB-157-three-height-balancing-annihilates-the-macroscopic-gamma-tariff.md).
+**Evidence level:** proved for the explicit polynomial-depth three-height exterior sampler of NB-157--NB-158, with target conditioning and the adverse reservoir quantified in [NB-158](../../findings/NB-158-polynomial-depth-gamma-balancing-keeps-target-charge-but-imports-a-routine-adverse-reservoir.md).
 
-NB-156 bounded the completed-Gamma contribution of a vertically macroscopic zero-mass sampler by the absolute envelope
+NB-157 identifies the leading macroscopic completed-Gamma cost as one signed log-height moment rather than an unavoidable vertical-range tariff. On the zero-mass sampler space, three distinct heights can cancel that moment exactly with bounded coefficients even when the lower heights are polynomially smaller than the target height `G`.
 
-`C_G log(G/H_G)`.
+NB-158 closes the main conditioning caveat for that explicit construction. With heights `G^theta_1`, `G^theta_2`, and `G`, the same Gamma-balanced coefficients retain a uniformly positive `O(1)` charge on every zero in a fixed vertical window around `G`, while total variation and boundary-normalized conditioning stay bounded. Thus this sampler has
 
-NB-157 identifies the exact leading quantity before taking absolute values. With target charge scale `q_G`, total variation `V_G`, boundary-normalized conditioning `D_G=V_G/(a_G q_G)`, define
+`J_G=0` and `D_G=O(1)`
 
-`J_G = q_G^(-1) | int log((G+Im w)/G) d mu_G(w) |`.
+without losing the microscopic target cells used by the confluence route.
 
-Then the signed zero conservation law has only the leading Gamma defect
+But exact balancing is not selection. The required negative coefficient at the middle height creates a fixed-width lobe around `G^theta_2` on which every zero contributes a uniformly negative amount. The explicit Riemann--von Mangoldt remainder already forces `Omega(log G)` actual zeta zeros into that lobe for all sufficiently large `G`. The adverse charge needed by the signed conservation law is therefore available from a routine lower-height reservoir without any exceptional target phenomenon.
 
-`(1/2) int log((G+Im w)/G) d mu_G(w)`
+This sharpens the resource accounting. **Macroscopic vertical range and target conditioning can both be cheap after Gamma balancing, yet the sign debt can simply be relocated onto an ordinary zero population.** Cancelling a universal background moment is useful only if the compensating signed lobes are also selective in the target-relevant geometry.
 
-plus an Euler/boundary error `O(V_G/a_G)`. Consequently a logarithmic target packet still exports logarithmic adverse zero mass whenever
+The next escape must therefore do more than preserve `q_G` while keeping `D_G` and `J_G` small. It must prevent the negative charge from landing in a routinely populated lobe, preserve the target's microscopic/horizontal feature through the sign change, or couple the sampler to the Nyman/von-Mangoldt source observable before the zero charge splits into positive and negative packets.
 
-`D_G + J_G = o(log G)`.
-
-The old `C_G log(G/H_G)` term is therefore an envelope, not an intrinsic price for vertical extent. On the mass-zero sampler space the leading Gamma background is one additional linear functional. Two distinct sampled heights cannot cancel both mass and this log-height moment nontrivially, but three heights can, with bounded coefficients, even when the lowest sampled height is only a fixed power of `G`.
-
-This changes the frontier sharply. **Macroscopic vertical range is not itself an escape resource.** A sampler may descend polynomially far while paying zero leading Gamma tariff. To evade the adverse-charge obstruction it must instead make the signed log-height defect genuinely logarithmic, already pay logarithmic boundary conditioning, or exploit arithmetic signed cancellation that changes the conservation argument while retaining useful target charge.
-
-The remaining resource is a coupled one: target charge `q_G`, total variation and boundary gap through `D_G`, the signed log-height moment `J_G`, and the prime/Nyman-side cancellation must be simultaneously compatible. A construction that merely widens the vertical support has not purchased anything unless it changes one of those quantities.
-
-**Boundary.** Gamma balancing does not prove that a three-height sampler has useful target charge or good conditioning. It removes one universal background term; it does not solve the target-selection or prime-side problem.
+**Boundary.** NB-158 does not produce a new zero-spacing theorem or an RH estimate. Its lower reservoir is certified by ordinary zero counting. It shows why an apparently well-conditioned Gamma-balanced descent can be mathematically nonselective even after the original conditioning loophole is closed.
