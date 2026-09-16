@@ -20,13 +20,25 @@ Under `Xi_j<=X_T`, logarithmic rescue still has density `o(1)` if
 
 `X_T sqrt(1+M_T/(T a_T^2))=o(log T)`.
 
-Conversely, when `X_T=o(log T)`, positive-density rescue requires at least `M_T ≳ T a_T^2 log^2 T/X_T^2` template changes. The former escape “adapt the shape with height” is therefore no longer qualitative: adaptation must cross an explicit refresh-rate threshold relative to the Poisson width.
+Conversely, when `X_T=o(log T)`, positive-density rescue requires at least `M_T ≳ T a_T^2 log^2 T/X_T^2` template changes.
 
-The compact frontier is now split into three genuinely different possibilities. A mechanism may spend logarithmic capped transport, target a genuinely sparse exceptional sequence, or use adaptation whose switching/variation complexity reaches the critical refresh scale. The next source-side question is to replace piecewise switching by a continuously varying family and identify a bounded-variation/entropy quantity whose mean-square bill reduces to the NB-169 refresh term on step functions.
+NB-170 replaces literal refresh counting by **bounded variation in capped Poisson transport**. If `V_T` is the normalized path variation of `t -> nu_{T,t}` and
+
+`H_T=min(a_T^(-1), log T/log log T)`, 
+
+then a BV family has only
+
+`M_eff(T) ≍ 1 + V_T H_T/log T`
+
+source-distinguishable templates at the `q_T log T` rescue scale. The NB-169 estimate therefore remains valid with this effective refresh count. Under a subcritical stationary baseline, positive-density rescue forces
+
+`V_T ≳ T a_T^2 log^3 T/(X_T^2 H_T)`.
+
+Thus continuous adaptation is no longer a qualitative escape. The compact frontier is now split into three genuinely different possibilities: spend logarithmic capped transport, target a genuinely sparse exceptional sequence, or use very large/infinite Poisson-resolution variation. The remaining source-side question is whether a genuinely arithmetic height-selection mechanism can supply that much variation while preserving target gain, or whether an entropy/modulus argument can control families beyond bounded variation.
 
 ## Keep the source and destination currencies separate
 
-A future sampler must expose target charge, total variation, boundary gap, ordinary Jordan transport, capped Poisson transport `T_G`, `Xi_G`, local moment order, support growth, the **height-adaptation complexity** of the signed template, the actual high-ordinate logarithmic-derivative input, exceptional-height density, localization radius and adverse-zero population. Persistence is a family quantifier: free switching between individually cheap templates is not itself a cheap family.
+A future sampler must expose target charge, total variation, boundary gap, ordinary Jordan transport, capped Poisson transport `T_G`, `Xi_G`, local moment order, support growth, the **Poisson-resolution height variation** of the signed template, the actual high-ordinate logarithmic-derivative input, exceptional-height density, localization radius and adverse-zero population. Persistence is a family quantifier: free switching between individually cheap templates is not itself a cheap family.
 
 ## Push canonical shell discrepancy independently
 
