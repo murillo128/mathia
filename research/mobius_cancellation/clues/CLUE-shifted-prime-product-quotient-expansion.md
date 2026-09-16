@@ -1,7 +1,7 @@
 ---
 id: CLUE-mobius-cancellation-shifted-prime-product-quotient-expansion
 type: research-clue
-status: proposed
+status: rejected
 origin: research-watch
 target_line: mobius_cancellation
 based_on:
@@ -77,3 +77,9 @@ Kill or sharply narrow the direction if a source-compatible family with `q=y^{1+
 ## Evidence boundary
 
 No shifted-shell product-expansion theorem is established here. The published results located in the bounded prior-art check concern products of primes from initial ranges such as `p\le q`, not the exact translated dyadic shell needed by the endpoint. The observation that endpoint pair products occupy only Hamming weights `0` and `2` in the selected quotient is exact, but turning that sparsity into a contradiction requires a new or already-existing arithmetic localization theorem whose hypotheses and uniformity have not yet been verified. This is therefore a research clue, not a finding.
+
+## Research disposition
+
+Rejected as a line-local research priority after `MC-321` and `MC-322`. The endpoint that motivated this clue is now ruled out more directly in the same prime-shell observation category: the Puchta/Klurman--Mangerel--Teräväinen prime Halász--Montgomery inequality bounds the simultaneous character-bias energy on the exact dense dyadic prime shell. `MC-321` already contradicts the natural one-defect family in its common-modulus range, and `MC-322` strengthens that obstruction to a bounded `\ell^2` shell-bias budget for every fixed-power range `q\le y^{3-\delta}`.
+
+A translated prime-product expansion theorem may remain independently interesting, but it is strictly stronger than what is now needed to decide this endpoint and is not established by the current evidence. Continuing to pursue it here would therefore spend research effort on an unproved theorem after its original target has already been closed. Reopen only if a future mechanism introduces a genuinely new target whose survival depends specifically on shifted product-set expansion rather than on prime-shell character-bias energy.
