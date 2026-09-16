@@ -96,22 +96,29 @@ F(z)=\int_{\mathbb R} f(y)e^{-zy}\,dy
 
 is entire of exponential type.
 
-Suppose, for contradiction, that `f` were a full Pólya-frequency function. Schoenberg's characterization, quoted as Theorem 1.1 in Ganzburg's 2008 paper, would give
+Suppose, for contradiction, that `f` were a full Pólya-frequency function. Schoenberg's characterization, in the equivalent form quoted as Theorem 1.1 in Ganzburg's 2008 paper, says that on the Laplace strip
 
 \[
-F(z)=C e^{\gamma z^2+\delta z}
-\prod_i(1+\alpha_i z)e^{-\alpha_i z},
+F(z)=\frac{1}{\Phi(z)},
 \tag{8}
 \]
 
-with real `\alpha_i`, `\gamma\ge0`, and the usual square-summability condition. Since `f\ge0` and is nonzero, `F(t)>0` for every real `t`; therefore `(8)` can have no real zero, forcing every `\alpha_i=0`. Exponential type then forces `\gamma=0`, leaving
+where `\Phi` extends to an entire Laguerre--Pólya function of the canonical Schoenberg form. Since compact support already makes `F` entire, the identity `F\Phi=1` on the nonempty Laplace strip extends by the identity theorem to all of `\mathbb C`. Thus `F` is a zero-free entire function.
+
+A zero-free entire function of exponential type has Hadamard factorization
 
 \[
-F(z)=C e^{\delta z}.
+F(z)=e^{az+b}
 \tag{9}
 \]
 
-But `f\in L^1(\mathbb R)`, so the Riemann-Lebesgue lemma gives `F(i\xi)\to0` as `|\xi|\to\infty`, whereas `(9)` has constant modulus `C>0` on the imaginary axis. Contradiction.
+for constants `a,b`. Because `f\ge0` is nonzero, `F(t)>0` for every real `t`; hence `a` and `b` may be taken real, up to the irrelevant `2\pi i` ambiguity in `b`. Therefore
+
+\[
+|F(i\xi)|=e^b
+\]
+
+for every real `\xi`. But `f\in L^1(\mathbb R)`, so the Riemann--Lebesgue lemma gives `F(i\xi)\to0` as `|\xi|\to\infty`, a contradiction.
 
 Thus every nonzero control covered by the determinant argument is genuinely outside the full PF class.
 
@@ -154,7 +161,7 @@ No zero-location statement follows from this obstruction.
 
 Michael I. Ganzburg, **“On E-Pólya Frequency Functions,”** *Journal of Mathematical Analysis and Applications* **346**(1) (2008), 1–8, DOI `10.1016/j.jmaa.2008.04.070`, is the direct classical source. It defines `E`-PF functions, proves that sampling sets with an accumulation point are determining on `L`, gives additional determining geometries, and in Example 2.1 constructs arbitrary compact-support false positives for `E=\mathbb Z`. The determinant proof above is an elementary extension of the same sparse-support mechanism from a lattice to an arbitrary uniformly discrete row set.
 
-I. J. Schoenberg, **“On Pólya Frequency Functions. I. The Totally Positive Functions and Their Laplace Transforms,”** *Journal d'Analyse Mathématique* **1** (1951), 331–374, DOI `10.1007/BF02790092`, supplies the classical Laplace-transform characterization used to exclude nonzero compactly supported integrable PF functions.
+I. J. Schoenberg, **“On Pólya Frequency Functions. I. The Totally Positive Functions and Their Laplace Transforms,”** *Journal d'Analyse Mathématique* **1** (1951), 331–374, DOI `10.1007/BF02790092`, supplies the classical reciprocal Laplace-transform characterization used to exclude nonzero compactly supported integrable PF functions.
 
 A focused search did not identify a standard result stated exactly as the uniformly-discrete extension above. No novelty is claimed: the proof is elementary and the lattice case is already explicit in Ganzburg. The durable Arithmetic Fidelity contribution is the **closure of AF-375's live two-phase question** and the separation of two different geometric resources: dense algebraic generation of differences does not compensate for positive geometric separation of the actually observed row set.
 
