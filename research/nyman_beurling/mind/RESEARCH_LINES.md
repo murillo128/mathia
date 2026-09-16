@@ -2,7 +2,7 @@
 
 This file holds the current mathematical questions suggested by the durable Nyman--Beurling intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Move beyond bounded-variation fixed horizontal signed samplers after the many-point obstruction
+## Leave fixed compact sublogarithmically conditioned exterior samplers after the two-dimensional obstruction
 
 **Linked intuitions:** `MI-001-target-aware-gram-geometry-must-carry-absolute-scale` through `MI-032-zero-mass-poisson-cancellation-exports-an-equal-negative-lobe`.
 
@@ -12,15 +12,15 @@ NB-150 closes the growing mesoscopic two-point horizontal route. For `1<<L_G=o(G
 
 NB-151 closes the fixed-scale loophole for the two-point geometry when the target packet itself has logarithmic rank. Horizontal differencing of `xi'/xi` gives an absolutely convergent signed sum over the actual zeros with total charge only `O(1)`. A target packet of `Omega(log G)` positive charge must therefore be balanced by `Omega(log G)` negative charge in a bounded neighboring ordinate window.
 
-NB-152 removes the two-point restriction. Let the horizontal sampler be any zero-mass signed measure on one fixed compact interval of exterior offsets, with total variation `V_G`, and let `q_G` be the minimum positive charge it assigns to a target packet of rank `Omega(log G)`. If the scale-invariant conditioning ratio `V_G/q_G` stays bounded, the integrated `xi'/xi` identity still has only `O(V_G)` total zero charge, so the target forces `Omega(q_G log G)` negative charge on actual zeros. Quadratic decay localizes a fixed fraction of that debt to bounded ordinate distance, hence `Omega(log G)` adverse zeros occur there.
+NB-152 removes the two-point restriction for fixed horizontal compact support under bounded conditioning. NB-153 now removes the bounded-vertical and bounded-conditioning restrictions up to the logarithmic threshold. For a zero-mass signed measure on any fixed compact complex offset set `K subset {Re w>0}`, let `V_G` be total variation, `q_G` the minimum positive charge on an `Omega(log G)` target packet, and `C_G=V_G/q_G`. If `C_G=o(log G)`, completed-function conservation forces `Omega(q_G log G)` adverse charge; a fixed fraction lies within ordinate radius `O(C_G)` and is carried by at least `Omega(log G/C_G)` actual adverse zeros.
 
-The surviving fixed-horizontal route must therefore spend a genuinely new resource. It can let `V_G/q_G` diverge, move the horizontal support toward a shrinking/growing scale, use vertical geometry, exploit signed Euler-side cancellation, or couple the expression to target-bearing Nyman data before the zero charges are separated. Merely adding more horizontal sample points or allowing a continuous/nonuniform signed measure does not evade the conservation law while the sampler remains uniformly conditioned.
+The surviving compact-sampler route must therefore spend at least logarithmic conditioning before this conservation argument ceases to force a large adverse population, and even that scale is only *not ruled out*, not validated. Bounded two-dimensional geometry itself is closed. A genuinely different route must combine useful logarithmic-or-worse conditioning with prime-side cancellation, move the support toward `Re s=1`, let horizontal/vertical support diameter grow with `G`, or couple directly to target-bearing Nyman data before the signed zero charges are separated.
 
-## Treat reflection closure, signed conservation, conditioning and actual adverse occupation as distinct currencies
+## Treat reflection closure, signed conservation, conditioning radius and actual adverse occupation as distinct currencies
 
-Positive sampling pays the Hadamard budget. Zero-mass sampling cancels that scalar term but creates a sign debt. Jordan domination forgets location and pays the budget again. NB-150 shows mesoscopic actual-zero background fills both lobes; NB-151 shows that at fixed scale a logarithmic target packet itself forces a neighboring logarithmic adverse packet; NB-152 shows that this is a conservation/conditioning phenomenon rather than an artifact of two-point factorization.
+Positive sampling pays the Hadamard budget. Zero-mass sampling cancels that scalar term but creates a sign debt. Jordan domination forgets location and pays the budget again. NB-150 shows mesoscopic actual-zero background fills both lobes; NB-151--NB-152 show that at fixed horizontal scale a logarithmic target packet forces a neighboring adverse population; NB-153 quantifies the remaining conditioning trade: `C_G` can move the debt only to radius `O(C_G)` and reduce the forced population only to `Omega(log G/C_G)` throughout the sublogarithmic regime.
 
-A future signed sampler must state which conservation identity it uses, how much coefficient variation it spends relative to target charge, and how the adverse part is controlled **without** reverting to total variation or to a bounded-variation fixed-horizontal geometry already covered above. Mean-density and target-conditioned conservation are different mechanisms, but together they now cover the obvious mesoscopic and uniformly conditioned fixed-scale horizontal families.
+A future signed sampler must state which conservation identity it uses, how much coefficient variation it spends relative to target charge, and how the adverse part is controlled **without** reverting to total variation or to a fixed compact sublogarithmically conditioned geometry already covered above. The threshold `C_G~log G` is a necessary escape scale for this argument, not evidence that an isolating sampler exists there.
 
 ## Push canonical shell discrepancy independently
 
