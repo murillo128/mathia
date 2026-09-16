@@ -16,17 +16,19 @@ MC-322 sharpens the obstruction from a fixed-bias family count to an explicit `e
 
 Hence every subpolynomial family has bounded total squared shell bias, and characters with bias at least `tau` obey `|B_tau|<<_delta tau^(-2)` once `tau^2` dominates the error scale. The natural endpoint with common modulus of order `y^2` lies well inside this obstruction.
 
-MC-323 now closes the simplest “drop the common modulus” escape throughout every fixed subquadratic individual-conductor range. Schlage-Puchta's varying-modulus theorem gives, for distinct characters of cubefree moduli `q_chi<=y^(2-delta)`,
+MC-323 closes the simplest “drop the common modulus” escape throughout every fixed subquadratic individual-conductor range. Schlage-Puchta's varying-modulus theorem gives, for distinct characters of cubefree moduli `q_chi<=y^(2-delta)`,
 
 `sum_(chi in Xi)|beta_chi|^2 <= C_delta(1+|Xi|y^(-c_delta)log y)`.
 
-So only `O_delta(1)` fixed-bias characters can live below `y^(2-delta)`. Applied to the exact endpoint generators, all but `O_delta(1)` directions must have primitive conductor exceeding that scale. In the natural `2R`-coordinate source package, whose radical satisfies `P<=y^2`, this forces
+So only `O_delta(1)` fixed-bias characters can live below `y^(2-delta)`. Applied to the endpoint generators, all but `O_delta(1)` directions must have primitive conductor above that scale; in the natural `2R`-coordinate source package this already forced the common radical to the quadratic boundary.
 
-`P=y^(2-o(1))`,
+MC-324 shows that the generator-level accounting is still too weak. The exact endpoint profile also gives every pair mode `lambda_i+lambda_j` the fixed bias `1-4/R`. Applying the varying-modulus obstruction to the `binom(R,2)` distinct pair characters and then double-counting their symmetric-difference representatives gives a weighted Plotkin inequality
 
-and almost every source-coordinate prime must lie near its maximal `y^(1/R)` logarithmic scale. The common-modulus-free route therefore survives only by saturating essentially the whole quadratic source budget.
+`liminf log P/log y >= 4`.
 
-The live boundary is now two-tiered rather than “common modulus versus no common modulus.” A controlled common modulus is blocked throughout cubic-minus powers; varying individual cubefree conductors are already forced to the quadratic boundary. A surviving reciprocal-endpoint variant must change a load-bearing hypothesis: cross the relevant conductor frontier, lose the cubefree/Burgess regime in a way that matters, make the demanded shell-bias vector collectively `ell^2`-small, abandon dense dyadic prime-shell localization, or change the endpoint defect geometry itself. Merely distributing a fixed amount of defect across independently sourced subquadratic characters does not evade the obstruction.
+Thus every fixed common-source radical bound `P<=y^(4-eta)` is eventually impossible, even though the analytic estimate is applied only to the individual primitive pair conductors rather than to `P` as a common modulus. Under the natural source-prime cap this forces at least `(4-o(1))R` source coordinates. The endpoint's **pair spectrum amplifies individual conductor pressure into a quartic package-capacity bill**.
+
+The live boundary is therefore stricter than “common modulus versus different moduli.” Controlled common moduli are blocked below the cubic horizon; varying individual fixed-bias characters are forced to the quadratic conductor frontier; and the complete endpoint pair geometry forces the aggregate common source package to the quartic radical frontier. A surviving reciprocal-endpoint variant must change a load-bearing hypothesis: weaken or decorrelate the pair-bias spectrum, cross the relevant conductor/package frontier, lose the cubefree/Burgess regime in a way that matters, abandon dense dyadic prime-shell localization, or change the endpoint defect geometry itself. Merely distributing a fixed amount of defect across independently sourced characters does not evade the obstruction.
 
 ## Repair probabilistic Möbius comparators only after exact-stratum and algebraic-collapse gates
 
@@ -34,8 +36,8 @@ The live boundary is now two-tiered rather than “common modulus versus no comm
 
 MC-318 shows that a recent probabilistic Möbius route fails before any delicate asymptotic estimate: conditioning on `Omega(n)=1` forces squarefreeness, contradicting the asserted independence, and the proposed auxiliary sum collapses exactly to `lambda(n)M(x)`. A repaired route must use a dependence law valid on a non-degenerate stratum and an auxiliary observable whose exact multiplicative simplification still leaves information beyond `M(x)`.
 
-## Treat observation category, family energy and conductor capacity as separate source currencies
+## Treat observation category, family energy, conductor capacity and source-code geometry as separate currencies
 
-The endpoint history now gives a precise hierarchy. Generic coding capacity does not distinguish the source. Smooth-modulus zero-free information can be too coarse in resolution. Ordinary interval cancellation can target the wrong population. A prime-supported family mean-square theorem can close the endpoint because it sees exactly the population and simultaneous coherence the construction consumes. MC-322 shows that the natural common-modulus currency is total squared bias rather than family cardinality alone; MC-323 shows that varying-modulus provenance adds a separate individual-conductor/package-capacity bill.
+The endpoint history gives a precise hierarchy. Generic coding capacity does not distinguish the source. Smooth-modulus zero-free information can be too coarse in resolution. Ordinary interval cancellation can target the wrong population. A prime-supported family mean-square theorem can close the endpoint because it sees exactly the population and simultaneous coherence the construction consumes. MC-322 shows that the common-modulus currency is total squared bias rather than family cardinality alone; MC-323 adds the individual-conductor bill; MC-324 shows that higher endpoint spectra plus source-code incidence can convert those individual bills into a stronger aggregate radical constraint.
 
-Future arguments should therefore simplify source observables first, retain matched controls, then ask whether the available theorem is stated in the **same observation category** as the endpoint, whether it controls the whole family-energy profile, and which conductor/source budget is required to realize that profile. “Zero-free,” “small interval sums,” “primitive,” “different moduli,” or “source-generated” are not useful labels until that transfer and capacity accounting are explicit.
+Future arguments should simplify source observables first, retain matched controls, then ask whether the available theorem is stated in the **same observation category** as the endpoint, whether it controls the whole family-energy profile, which conductor budget each demanded mode requires, and how the endpoint's higher-order mode geometry loads those conductors onto the common source package. “Zero-free,” “small interval sums,” “primitive,” “different moduli,” or “source-generated” are not useful labels until that transfer and capacity accounting are explicit.

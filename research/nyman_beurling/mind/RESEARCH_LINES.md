@@ -2,7 +2,7 @@
 
 This file holds the current mathematical questions suggested by the durable Nyman--Beurling intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Leave sublogarithmically conditioned exterior samplers after boundary normalization and sublinear vertical spreading
+## Leave sublogarithmically conditioned exterior samplers after boundary normalization and vertical spreading
 
 **Linked intuitions:** `MI-001-target-aware-gram-geometry-must-carry-absolute-scale` through `MI-032-zero-mass-poisson-cancellation-exports-an-equal-negative-lobe`.
 
@@ -14,25 +14,23 @@ NB-151 closes the fixed-scale loophole for the two-point geometry when the targe
 
 NB-152 removes the two-point restriction for fixed horizontal compact support under bounded conditioning. NB-153 removes the bounded-vertical and bounded-conditioning restrictions up to the logarithmic threshold on any fixed compact exterior set. With `C_G=V_G/q_G`, every family with `C_G=o(log G)` still exports `Omega(q_G log G)` adverse charge, a fixed fraction within ordinate radius `O(C_G)`, carried by at least `Omega(log G/C_G)` adverse zeros.
 
-NB-154 closes the simplest moving-boundary loophole. If the sampler support may approach `Re w=0` with minimum horizontal gap `a_G`, then the Euler-product remainder and the maximum pointwise Poisson amplification both worsen by the same factor `1/a_G`. The effective condition number is
+NB-154 closes the simplest moving-boundary loophole. If the sampler support may approach `Re w=0` with minimum horizontal gap `a_G`, then the Euler-product remainder and the maximum pointwise Poisson amplification both worsen by the same factor `1/a_G`. The effective condition number is `D_G=C_G/a_G=V_G/(a_G q_G)`. Whenever `D_G=o(log G)`, the same logarithmic sign debt survives.
 
-`D_G=C_G/a_G=V_G/(a_G q_G)`.
+NB-155 closes sublinear vertical support growth as an independent escape. Allow the support half-width `B_G` to tend to infinity with `B_G=o(G)`. A fixed fraction of the compensating adverse charge remains inside `|gamma-G|=O(B_G+C_G)`, so vertical spreading changes the localization radius but not the `D_G` conditioning threshold.
 
-Whenever `D_G=o(log G)`, the same logarithmic sign debt survives and at least `Omega(log G/D_G)` adverse zeros are required. Boundary proximity amplifies useful and adverse/source terms together.
+NB-156 now crosses the macroscopic-support boundary. For `B_G<G` with lowest sampled ordinate `H_G=G-B_G -> infinity`, completed-function conservation introduces the extra Gamma-profile tariff
 
-NB-155 now closes sublinear vertical support growth as an independent escape. Allow the support half-width `B_G` to tend to infinity with `B_G=o(G)`. The total signed zero sum is still `O_A(V_G/a_G)`, so the same `D_G=o(log G)` threshold forces `Omega(q_G log G)` adverse charge. A fixed fraction must lie inside
+`E_G = D_G + C_G log(G/H_G)`.
 
-`|gamma-G| <= 2B_G+4+M C_G=o(G)`,
+If `E_G=o(log G)`, the same `Omega(q_G log G)` adverse charge persists; a fixed fraction lies in `|gamma-G| <= B_G+O(C_G+1)`, and the window still contains `Omega(log G/D_G)` adverse zeros. Thus `B_G/G` may approach a positive constant, or even `1`, without creating an escape as long as the sampler does not descend so far that the logarithmic Gamma variation itself spends the missing budget. The relevant vertical resource is the logarithmic depth `log(G/H_G)`, not the coarse distinction `B_G=o(G)` versus `B_G asymp G`.
 
-and that window contains `Omega(log G/D_G)` adverse zeros. Vertical growth below the height scale therefore changes only the **localization radius** of the compensating debt, not the conditioning threshold or forced adverse population.
+The surviving exterior-sampler route must therefore spend at least logarithmic **combined** budget `E_G`, descend toward ordinates where `H_G` no longer tends to infinity and a genuinely different completed-function regime begins, obtain signed prime-side cancellation sharper than the absolute Euler bound, or couple directly to target-bearing Nyman/prime data before the signed zero charges are separated. Moving toward `Re s=1`, widening through a sublinear cloud, or occupying a macroscopic fraction of height is not a new escape by itself.
 
-The surviving exterior-sampler route must now spend at least logarithmic gap-normalized conditioning, use vertical support on a scale not covered by `B_G=o(G)`, obtain signed prime-side cancellation sharper than the absolute Euler bound, or couple directly to target-bearing Nyman/prime data before the signed zero charges are separated. Neither moving toward `Re s=1` nor letting a compact-width sampler drift through an `o(G)` vertical cloud is a new escape by itself.
-
-## Treat reflection closure, signed conservation, boundary amplification, conditioning radius and adverse occupation as distinct currencies
+## Treat reflection closure, signed conservation, boundary amplification, vertical Gamma variation, conditioning radius and adverse occupation as distinct currencies
 
 Positive sampling pays the Hadamard budget. Zero-mass sampling cancels that scalar term but creates a sign debt. Jordan domination forgets location and pays the budget again. NB-150 shows mesoscopic actual-zero background fills both lobes; NB-151--NB-153 show that compact exterior sampling cannot isolate a logarithmic target packet at sublogarithmic conditioning.
 
-NB-154 identifies the correct boundary-normalized conditioning variable `D_G=C_G/a_G`. NB-155 adds a separate transport variable `B_G`: under `B_G=o(G)`, widening the support only enlarges the window carrying the compensating charge from `O(C_G)` to `O(B_G+C_G)`. It does not improve the `D_G` threshold. A future sampler must therefore state how target charge, total variation, boundary gap and vertical diameter scale simultaneously, and how the adverse part is controlled **without** reverting to total variation or to the sublogarithmic/sublinear geometry already covered.
+NB-154 identifies the boundary-normalized conditioning variable `D_G=C_G/a_G`. NB-155 separates vertical transport `B_G` from conditioning below the height scale. NB-156 refines that transport further: once the cloud becomes macroscopic, the completed Gamma background charges `C_G log(G/H_G)` according to the lowest sampled ordinate. A future sampler must therefore state how target charge, total variation, boundary gap, vertical diameter and lowest ordinate scale simultaneously, and how the adverse part is controlled **without** reverting to total variation or spending the logarithmic Gamma tariff implicitly.
 
 ## Push canonical shell discrepancy independently
 
