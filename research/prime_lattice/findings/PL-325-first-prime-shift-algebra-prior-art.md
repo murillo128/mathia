@@ -135,16 +135,22 @@ This does **not** contradict `PL-324`. Beurling--Deny failure there concerns the
 
 ## 3. Why the norm jump is not itself a spectral crossing mechanism
 
-A tempting inference would be that the norm jump forces a comparably abrupt change in the bottom Weil eigenvalue. That inference is false. The same external project records the complementary endpoint-form estimate.
+A tempting inference would be that the norm jump forces a comparably abrupt change in the bottom Weil eigenvalue. That inference is false. Near the first-prime threshold the same overlap is small in a much stronger **form-localization** sense even though its bounded-operator norm is one.
 
 After scaling `(-a,a)` to `(-1,1)`, let
 
 \[
-\tau=\frac{\log2}{a},\qquad
-\varepsilon=2-\tau,
+\tau=\frac{b}{a},\qquad
+\varepsilon=2-\tau.
 \]
 
-so the first-prime coupling lives only on edge strips of width `epsilon`. For the standard endpoint potential
+The first-prime coupling lives only on the edge strips
+
+\[
+E_-=(-1,-1+\varepsilon),\qquad E_+=(1-\varepsilon,1).
+\]
+
+For the standard endpoint potential
 
 \[
 V(x)=-\frac12\log(1-x^2),
@@ -157,7 +163,17 @@ V(x)\ge \kappa_{\rm edge}(a)
 :=\frac12\log\frac1{2\varepsilon}.
 \]
 
-Hence the shift form obeys the elementary support estimate
+This lower bound is useful as a positive coercive weight only when
+
+\[
+\varepsilon<\frac12
+\quad\Longleftrightarrow\quad
+\tau>\frac32
+\quad\Longleftrightarrow\quad
+\frac b2<a<\frac{2b}{3}.
+\]
+
+In that near-threshold range,
 
 \[
 |\langle C_{\tau,1}w,w\rangle|
@@ -165,12 +181,14 @@ Hence the shift form obeys the elementary support estimate
 \le \kappa_{\rm edge}(a)^{-1}\langle Vw,w\rangle.
 \]
 
-As `a downarrow (1/2)log2`, `epsilon -> 0` and `kappa_edge(a) -> infinity`. Thus the prime perturbation is **not** small in bounded-operator norm, but it becomes small relative to the endpoint coercive form. This is exactly the topology in which a continuous bottom eigenvalue can survive the first-prime event.
+As `a downarrow b/2`, `epsilon -> 0` and `kappa_edge(a) -> infinity`. Thus the prime perturbation is **not** small in bounded-operator norm, but it becomes small relative to the endpoint coercive form. This is exactly the topology in which a continuous bottom eigenvalue can survive the first-prime event.
+
+There is a small but important audit correction here. `docs/THEOREMS.md` states `kappa_edge(L)>0` while presenting Theorem 2 over the broader interval `b/2<L<b`. Algebraically, `kappa_edge>0` requires `epsilon<1/2`, hence `L<2b/3`. The support inequality `V>=kappa_edge` remains formally true when the right side is nonpositive, but division by `kappa_edge` then cannot give the claimed positive absorption estimate. The finite target `a=7/20` lies safely in the corrected near-threshold range, so this does not affect the project's Theorem 3 calculation; it only narrows the general range in which Theorem 2 yields coercive absorption.
 
 Accordingly, neither side of the naive perturbative dichotomy is useful for RH:
 
 - bounded-operator norm sees an artificial jump of size one;
-- the natural closed-form topology can absorb the first-prime layer near threshold.
+- the natural closed-form topology can absorb the first-prime layer sufficiently close to threshold.
 
 A genuine first-crossing argument must use the selected eigenstate or a source-specific signed identity, not merely the size of the overlap operator.
 
@@ -184,18 +202,18 @@ at audited `main` commit
 
 `e66f467bc4447c5b2491577cbb6c3ae0e721fb43` (12 August 2026).
 
-Its `docs/THEOREMS.md` contains complete written proofs of:
+Its `docs/THEOREMS.md` contains written proofs of:
 
 - Theorem 1: the single-step flip decomposition and spectrum `{-1,0,1}`;
 - Corollaries 1--2: the first-prime `log 2` sign structure and operator-norm jump;
-- Theorems 2--3: endpoint-potential absorption and a rational bound at `a=7/20`;
+- Theorems 2--3: endpoint-potential absorption and a rational bound at `a=7/20`, with the general positivity range correction above;
 - Theorem 4: exact Legendre matrix algebra `J_ij(tau), E_ij(tau) in Q[tau]`;
 - Theorem 5: a split-residual Schur criterion;
 - Theorem 6: explicit negative witnesses for one weakened proof path.
 
 A targeted search for the same first-prime overlap theorem did not locate a peer-reviewed or arXiv paper containing this exact package. The repository is therefore treated as **public contemporaneous prior art**, not as peer-reviewed authority. No broad originality claim is made for the elementary flip decomposition regardless: it follows immediately from the truncated shift geometry and has been independently checked above.
 
-The project's stronger computer-assisted status is deliberately **not imported as Mathia evidence**. Its current README reports `FP-0.35 HOLDS` and gives a reproducible Arb/Schur script, while `docs/THEOREMS.md` still says that `FP-0.35` remains a conjecture. More importantly, the current head commit itself fixes an earlier misuse of python-flint interval construction and regenerates the certificate. This history is evidence that the certification layer must be independently replayed and audited before Mathia can use its numerical positivity margin. `PL-325` therefore relies only on the exact analytic overlap/algebra statements that can be reconstructed directly.
+The project's stronger computer-assisted status is deliberately **not imported as Mathia evidence**. Its current README reports `FP-0.35 HOLDS` and gives a reproducible Arb/Schur script, while `docs/THEOREMS.md` still says that `FP-0.35` remains a conjecture. More importantly, the current head commit itself fixes an earlier misuse of python-flint interval construction and regenerates the certificate. This history is evidence that the certification layer must be independently replayed and audited before Mathia can use its numerical positivity margin. `PL-325` therefore relies only on the exact analytic overlap/algebra statements that can be reconstructed directly, plus the elementary corrected support estimate above.
 
 The distinction is essential: finite-scale positivity at `a=7/20`, even if fully certified, does not imply RH, and the external project explicitly states that limitation.
 
