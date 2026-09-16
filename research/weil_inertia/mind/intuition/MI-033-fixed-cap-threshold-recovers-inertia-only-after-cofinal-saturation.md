@@ -1,27 +1,21 @@
-# MI-033 — Fixed-cap inertia recovery requires cofinal saturation before the source changes
+# MI-033 — Nested Weil windows make vanishing-cap diagonals sign-complete
 
-**Evidence level:** proved variational consequence of the source-exact capped-tail decomposition, established in [WI-314](../../findings/WI-314-fixed-cap-threshold-recovers-source-negative-index-cofinally.md) from the WI-311/WI-313 framework.
+**Evidence level:** the fixed-aperture comparison bounds are proved in [WI-314](../../findings/WI-314-fixed-cap-threshold-recovers-source-negative-index-cofinally.md); [WI-315](../../findings/WI-315-nested-weil-windows-make-vanishing-cap-diagonals-inertia-complete.md) proves that the actual nested compact-support Weil family removes WI-314's abstract changing-source diagonal obstruction.
 
-At one fixed source aperture, suppose
+At one fixed aperture, if
 
-`Q = D_delta + T_delta`, with `(1/2-delta)I <= T_delta <= (1/2)I`.
+`Q = D_delta + T_delta`, with `(1/2-delta)I <= T_delta <= (1/2)I`,
 
-Writing `E_delta=(1/2)I-T_delta` gives `0<=E_delta<=delta I` and the exact identity
-
-`D_delta + (1/2)I = Q + E_delta`.
-
-Therefore the strict fixed-threshold count satisfies
+then `D_delta+(1/2)I = Q+E_delta` with `0<=E_delta<=delta I`, so
 
 `N_Q(-delta) <= N_D_delta(-1/2) <= N_Q(0)`.
 
-The upper inequality is the key orientation: spectrum of `Q` at zero or above can never create a false comparison mode strictly below `-1/2`. Finite saturation error can only hide source-negative directions whose depth is at most `delta`.
+The strict `-1/2` threshold has no false positives; finite cap error can only hide source-negative directions shallower than `delta`.
 
-For any cofinal family `delta_j -> 0` at the **same fixed source form**,
+WI-314's abstract warning allowed the source form itself to change with aperture, so its negative direction could become shallower at the same rate as the cap error. WI-315 shows that this does **not** model the compact-support Weil problem. The spaces `D_L=C_c^infty((-L,L))` are nested restrictions of one global quadratic form `Q`. Once a finite-dimensional compactly supported negative subspace appears, its negative Rayleigh margin is fixed forever as the aperture grows.
 
-`N_Q(0) = sup_j N_D_j(-1/2)`.
+Consequently, for **any** cofinal aperture sequence `L_j->infinity` and any cap errors `delta_j->0`, the strict comparison counts below `-1/2` converge to the complete compact-support negative index of `Q`. If that index is finite, the counts are eventually exactly equal to it; if it is infinite, they diverge. No aperture-uniform negative-depth estimate, per-aperture cofinal saturation, commutation or spectral discreteness is needed.
 
-If the source negative index is finite, sufficiently saturated members eventually reproduce that index exactly. Thus the moving-floor statistic of WI-313 is not necessary to avoid positive-side ambiguity: the fixed cap gives a one-sided, false-positive-free sign detector when saturation is cofinal.
+This removes the limit-order problem for the actual Weil windows. The hard theorem is now cleaner: construct a source-exact cofinal capped-tail diagonal and prove that its comparison has **no spectrum below `-1/2`**. If such an estimate holds, the nested-domain variational theorem already transports it to Weil positivity on the compact-support criterion. The missing resource is comparison positivity/coercivity, not a separate source-margin synchronization theorem.
 
-The order of limits is load-bearing. If the aperture changes to `Q_L` while only one error `delta_L -> 0` is chosen, a source-negative margin may shrink faster than `delta_L`; WI-314 gives an exact one-dimensional countermodel where every fixed-cap comparison misses the negativity. Scalar tail saturation alone therefore does not justify a diagonal aperture limit.
-
-A route from fixed-aperture recovery to the global problem needs additional source-tail alignment: a uniform lower bound on relevant negative depth, a vectorwise cap-defect estimate on the negative sector, or genuinely cofinal saturation at each fixed aperture before changing the source. This is a sign-resolution theorem, not an RH result.
+**Boundary.** The correction applies to the nested compact-support restrictions of the same global Weil form. WI-314's arbitrary varying-source countermodel remains valid outside that consistency structure, and WI-315 does not itself prove the required comparison lower bound or RH.

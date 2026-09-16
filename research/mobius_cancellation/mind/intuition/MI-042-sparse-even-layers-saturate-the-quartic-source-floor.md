@@ -1,27 +1,23 @@
-# MI-042 — Universal nonnegative mode selection saturates the half-loading and quartic source floor
+# MI-042 — Quartic source saturation forces actual columns into the half-loaded band
 
-**Evidence level:** proved for the reciprocal-endpoint architecture of MC-323--MC-326, with the universal mode-selection ceiling established in [MC-326](../../findings/MC-326-universal-mode-selection-half-loading-barrier.md).
+**Evidence level:** proved for the reciprocal-endpoint common-source architecture by [MC-323](../../findings/MC-323-varying-modulus-prime-halasz-montgomery-obstruction.md) through [MC-327](../../findings/MC-327-quartic-saturation-forces-half-loaded-source-mass.md); the individual conductor input and Plotkin mechanism are literature-backed/classical, and no RH consequence is claimed.
 
-The quartic common-radical frontier is not a peculiarity of pair modes or sparse even Hamming layers. Let `F` be any nonempty family of nonzero modes `a in F_2^R`, give them arbitrary nonnegative weights `w_a`, and write `W=sum_a w_a`. For a possible nonzero source column `s`, its weighted loading is
+The universal loading problem is already minimax-sharp. For any nonempty family of nonzero modes `a in F_2^R` with nonnegative weights, some nonzero abstract source column carries asymptotically at least one half of the total mode weight. Thus no universal nonnegative mode selection can improve the quartic common-radical floor obtained from independent near-quadratic conductor bills.
 
-`L(s)=sum_(a in F, a·s=1) w_a`.
+MC-327 now removes the main ambiguity left by that abstract minimax statement. For the **actual** common source package, let `a_p` be the number of generators using source prime `p`, let `nu_p=log p/log P`, and define
 
-Every fixed nonzero mode sees exactly `2^(R-1)` of the `2^R-1` possible nonzero source columns. Averaging `L(s)` over those columns therefore gives
+`B_R = sum_p nu_p ((2a_p-R)/R)^2`.
 
-`(1/(2^R-1)) sum_(s!=0) L(s) = [2^(R-1)/(2^R-1)] W`.
+The weighted pair-distance identity is exact:
 
-Hence some column satisfies
+`sum_(i<j) log m_ij = (R^2/4)(1-B_R) log P`.
 
-`L(s)/W >= 2^(R-1)/(2^R-1) = 1/2 + 1/[2(2^R-1)]`,
+Combined with the varying-modulus conductor obstruction, this gives
 
-and this finite-`R` constant is sharp when all nonzero modes carry equal weight. No irregular mode selection or nonnegative reweighting can drive the **universal** loading asymptotically below one half.
+`liminf (1-B_R) log P/log y >= 4`.
 
-Combined with the individual near-quadratic conductor bill from MC-323, a proof that only sums independent nonnegative mode costs and protects against every possible source column can certify at most
+Hence quartic saturation `log P/log y=4+o(1)` forces `B_R->0`: for every fixed `epsilon>0`, asymptotically all logarithmic source mass lies on columns with `|a_p/R-1/2|<epsilon`. Persistent imbalance `B_R>=beta>0` costs a strictly larger source exponent, at least `4/(1-beta)` in the limit. Under quartic saturation, almost all generator and pair package costs are also pinned in density to exponent two.
 
-`(2-delta)(2^R-1)/2^(R-1) < 4-2delta`
+So the surviving actual-source question is no longer whether economical arithmetic columns can avoid the high-loading region. **They cannot.** At the quartic frontier the source is forced into the maximally pair-loaded Hamming band. What remains unresolved is structure *inside* that band: there are exponentially many near-half-loaded columns, and the present positive incidence accounting does not distinguish the arithmetic subset among them.
 
-in the common-radical exponent. Pair modes already approach this optimum, and MC-325's Krawtchouk half-balance is a structured special case of the same universal averaging law.
-
-The remaining escape is source-specific, not combinatorial family design. The actual columns are only `S_A={s_p}`. To beat one half one must prove that high-loading abstract columns cannot occur there, or carry too little logarithmic prime mass to matter. The other genuine escape is a joint or signed conductor relation that cannot be represented as a positive sum of independent bills; a stronger individual conductor horizon would also change the numerical ceiling.
-
-This is a ceiling for the stated proof architecture, not an upper bound on the true common radical and not an estimate for `M(x)`. The reusable audit is: distinguish **mode count**, **universal loading over all abstract columns**, and **arithmetic restrictions on the columns actually realized** before interpreting a larger mode family as source leverage.
+The genuine escapes are therefore sharper: prove an arithmetic restriction within the half-loaded band that interacts with a destination theorem, derive a joint or signed conductor relation not reducible to positive independent bills, improve the individual conductor horizon, or change the endpoint/source representation. Merely enlarging or reweighting the mode family, or hoping the actual source avoids half loading while keeping quartic cost, is closed.

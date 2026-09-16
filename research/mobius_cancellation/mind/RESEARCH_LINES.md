@@ -2,17 +2,21 @@
 
 This file holds the current mathematical questions suggested by the durable Möbius-cancellation intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Only pursue reciprocal-endpoint variants that escape the universal half-loading architecture
+## Work inside the forced half-loaded source band or change the conductor architecture
 
 **Linked intuitions:** `MI-013-bost-connes-regularity-needs-an-intermediate-transverse-category` through `MI-042-sparse-even-layers-saturate-the-quartic-source-floor`.
 
-MC-307--MC-321 progressively reduce the natural reciprocal endpoint to a source-character family on the exact dyadic prime shell and show that generic coding capacity, smooth-modulus zero-free information and ordinary interval cancellation do not address the right population. MC-321 closes the controlled-common-modulus endpoint by a prime Halász--Montgomery obstruction.
+MC-307--MC-321 reduce the reciprocal endpoint to a source-character family on the exact dyadic prime shell and show that generic coding capacity, smooth-modulus zero-free information and ordinary interval cancellation do not address the required population. MC-321 closes the controlled-common-modulus endpoint by a prime Halász--Montgomery obstruction.
 
-MC-322 gives an explicit `ell^2` shell-bias energy budget. MC-323 extends the obstruction to varying cubefree individual moduli: fixed-bias characters below the `y^(2-delta)` conductor scale form only an `O_delta(1)` family. MC-324 then uses every pair mode of the exact endpoint and weighted source-incidence double counting to force the common radical to the quartic frontier `liminf log P/log y >= 4`.
+MC-322--MC-324 then turn shell-bias energy, varying-modulus conductor costs and weighted source incidence into the quartic common-radical floor `liminf log P/log y >= 4`. MC-325 shows sparse even layers reproduce the same half-loading limit. MC-326 makes the proof-architecture ceiling universal: every nonempty nonnegative mode weighting has an abstract source column with loading at least `2^(R-1)/(2^R-1)>1/2`.
 
-MC-325 shows that every sparse even layer `r=o(sqrt R)` reproduces the same half-loading and quartic limit. MC-326 removes the remaining freedom to choose a cleverer family: for **every** nonempty mode family and every nonnegative weighting, the maximum loading over nonzero abstract source columns is at least `2^(R-1)/(2^R-1)>1/2`, with equality attainable by the full nonzero family. Thus pair modes are already asymptotically optimal among all universal nonnegative incidence-averaging schemes fed by independent near-quadratic conductor bills.
+MC-327 now constrains the actual source rather than only the abstract worst case. If `B_R` is the logarithmically weighted squared deviation of source-column occupancy from `R/2`, then
 
-The surviving question is no longer “use more endpoint modes” or “find a universally sub-half family.” A stronger source obstruction must change the architecture: prove that the **actual arithmetic incidence set** `S_A={s_p}` avoids or underweights the high-loading columns, derive a genuinely joint/signed conductor inequality not reducible to positive independent bills, improve the individual conductor horizon, or change the endpoint/source representation itself.
+`liminf (1-B_R) log P/log y >= 4`.
+
+Therefore any package saturating the quartic floor has `B_R->0`: essentially all logarithmic source mass is forced onto near-half-loaded columns, and persistent imbalance pays exponent at least `4/(1-beta)`. The former escape “perhaps the arithmetic columns avoid the high-loading region” is incompatible with economical quartic saturation.
+
+The live source-specific problem is now **internal structure within the near-half-loaded band**. A useful theorem must distinguish the arithmetic incidence subset among the many abstract half-loaded columns and connect that distinction to cancellation, or else change the analytic bill through a genuinely joint/signed conductor inequality, a stronger individual conductor horizon, or a different endpoint/source representation. Mode count and nonnegative reweighting are exhausted.
 
 ## Repair probabilistic Möbius comparators only after exact-stratum and algebraic-collapse gates
 
@@ -22,4 +26,4 @@ MC-318 shows that a recent probabilistic Möbius route fails before delicate asy
 
 ## Treat observation category, conductor cost and source loading as separate currencies
 
-A theorem about many characters helps only when it controls the exact population and scale demanded by the endpoint. MC-326 makes the source-loading gate minimax-sharp: arbitrary nonnegative selection and weighting cannot lower the worst abstract-column load below one half asymptotically. Future proposals must expose both the analytic bill per mode and the arithmetic set of source columns actually realized, or supply a genuinely joint conductor invariant, before interpreting family size or mode design as arithmetic leverage.
+A theorem about many characters helps only when it controls the exact population and scale demanded by the endpoint. MC-326 makes universal source loading minimax-sharp; MC-327 adds the equality-case rigidity for actual economical packages. Future proposals must expose the analytic bill per mode, the logarithmic occupancy distribution of the source columns actually realized, and any arithmetic structure remaining inside the forced half-loaded band before interpreting family size or mode design as leverage.

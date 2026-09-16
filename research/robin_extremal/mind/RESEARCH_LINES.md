@@ -2,25 +2,27 @@
 
 This file holds the current mathematical questions suggested by the durable robin-extremal intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Resolve the terminal moment hierarchy with both growing order and growing precision
+## Resolve the terminal moment hierarchy at the sharp Chebyshev radius and with growing precision
 
-**Linked intuitions:** `MI-001-robin-failure-requires-self-tangent-half-mass-event-gaps` through `MI-033-growing-moment-order-requires-a-factorial-precision-staircase`.
+**Linked intuitions:** `MI-001-robin-failure-requires-self-tangent-half-mass-event-gaps` through `MI-034-chebyshev-capacity-pins-the-growing-moment-terminal-threshold-at-four-tau-r`.
 
-RE-153 turns the source side of a regular self-tangent Robin counterexample into the normalized Pareto-weighted Chebyshev-deficit average. RE-154--RE-158 progressively show that terminal source modifications can move this exact destination at order one unless count, first placement information and Chebyshev mass are controlled at the relevant shrinking scale.
+RE-153--RE-158 show that terminal source modifications can move the exact Pareto-weighted Chebyshev-deficit destination at order one unless supply, placement and terminal mass are controlled. RE-159 introduces the exact moment hierarchy, and RE-160 identifies the factorial scale `tau_r=(r! eta_p)^(1/r)` for growing exact moment order.
 
-RE-159 gives the fixed-order hierarchy: exact matching through order `r-1` moves the first unresolved influence to order `r`. RE-160 supplies the growing-order correction. With `eta_p=epsilon_PNT(p)` and exact lower-moment matching, the factorial stability width is
+RE-162 sharpens that scale to an asymptotically exact capacity theorem. Exact matching through degree `r-1` turns the terminal discrepancy into degree-`r-1` uniform polynomial approximation. Chebyshev interpolation and opposite Chebyshev level-set packets meet at
 
-`tau_r=(r! eta_p)^(1/r)`,
+`D_(r,U)(L)=(4+o(1))(L/4)^r/r!`,
 
-and the crossover is `L asymp r eta_p^(1/r)` up to universal constants.
+so the sharp transition is
 
-RE-161 shows that **moment order alone is not a fidelity resource**. With approximate lower moments, leakage enters before the factorial remainder with weight `b_1~1`, `b_k~1/k!`. The robust cost is
+`L_crit = 4 tau_r = (4/e+o(1)) r eta_p^(1/r)`.
 
-`E_r=sum_(k<r) |mu_k|/k!`.
+Below the exponential-scale boundary `F_p=(L/(4 tau_r))^r=O(1)`, every vanishing source budget loses Robin leverage; when `F_p->infinity`, PNT-small exact-moment controls can retain fixed source separation. The former universal-constant uncertainty in the exact-moment terminal width is closed.
 
-Retaining the `RE-160` gain requires `E_r=O(L^r/r!)`; at `L=tau_r` this is the factorial precision staircase `E_r=O(eta_p)`. Even uniform relative errors tending to zero simultaneously across all moment orders can leave order-one Robin ambiguity.
+RE-161 supplies the independent robustness gate. Approximate lower moments leak before the factorial remainder with weighted cost
 
-The source-side question is now exact: does the ordinary-prime/CA structure provide the required **weighted precision profile**, or a signed arithmetic coupling that cancels `sum b_k mu_k`, at a cost below the destination threshold? Merely retaining more moments, or proving qualitative moment convergence, is exhausted as a route.
+`E_r=sum_(k<r)|mu_k|/k!`.
+
+Thus the live source question has two exact currencies: **Chebyshev radius for exact moment matching and factorially weighted precision for approximate matching**. Does the ordinary-prime/CA structure place the terminal layer on the stable side of `4 tau_r` while supplying the required weighted precision, or provide a signed arithmetic coupling outside the moment-capacity class? More moments alone are exhausted as a route.
 
 ## Control one-sided vertical reciprocal escape without overstating the symmetric obstruction
 
@@ -28,4 +30,4 @@ RE-144--RE-152 put the zero-side packet into reciprocal-scale language and show 
 
 ## Keep source-moment and zero-packet gates distinct
 
-RE-153--RE-161 expose a source-side hierarchy of terminal resources: supply, placement, exact moment order, factorial remainder and now approximate-moment precision. RE-151--RE-152 give a zero-side matched obstruction to one reciprocal-scale observation route. Neither subsumes the other. Progress should be credited only when it changes the exact quantity consumed by its own destination.
+RE-153--RE-162 now give a sharp source-side hierarchy: supply, placement, exact moment order, Chebyshev approximation radius, factorial remainder and approximate-moment precision. RE-151--RE-152 give a zero-side matched obstruction to one reciprocal-scale observation route. Neither subsumes the other. Progress should be credited only when it changes the exact quantity consumed by its own destination.
