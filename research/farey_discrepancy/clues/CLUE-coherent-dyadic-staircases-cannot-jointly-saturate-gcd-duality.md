@@ -1,7 +1,7 @@
 ---
 id: CLUE-coherent-dyadic-staircases-cannot-jointly-saturate-gcd-duality
 type: research-clue
-status: accepted
+status: resolved
 origin: master-researcher
 target_line: farey_discrepancy
 based_on:
@@ -104,7 +104,7 @@ For any nonzero vector m with t=m_1 and R=t^2/(m^TK_Hm)>0, orthogonal projection
 Crucially, coordinate evaluation is bounded by the square root of the inverse diagonal in (3), NOT by the unit diagonal of K_H. Thus
 
 \[
-\left|\frac{m_d}{t}-v^{(H)}_d\right|
+\left|\frac{m_d}{t}-v_d^{(H)}\right|
 \le Z\sqrt{\frac1R-\frac1{C_H}}.
 \tag{7}
 \]
@@ -132,6 +132,9 @@ The factorization and equality-case geometry are classical tools already in FD-0
 
 ## Research disposition
 
-Accepted. The two-horizon lemma survives independent reconstruction and is canonicalized in [[research/farey_discrepancy/findings/FD-014-coherent-dyadic-horizons-have-a-uniform-gcd-duality-saturation-gap.md]]. The same finding gives the legitimate repeated consequence: every adjacent dyadic pair has a uniform saturation deficit, and every even-length dyadic block has average normalized dual ratio strictly below `zeta(2)` by a fixed constant. This is additive block control, not a multiplicative contraction and not an RH-exponent improvement.
+Outcome: supported
 
-The remaining live question is whether a **compressed growing hierarchy of coherent horizons** can turn this genuine source-coherence gap into a scale-sensitive Franel/Mertens estimate before the hierarchy becomes complete enough to hit the exact source-reconstruction boundary of `FD-009`. Optimizing the finite constant in the present two-horizon lemma is secondary unless it exposes such a transport mechanism.
+Resolved by:
+- [[research/farey_discrepancy/findings/FD-014-coherent-dyadic-horizons-have-a-uniform-gcd-duality-saturation-gap.md]]
+
+`FD-014` proves the proposed two-horizon lemma for every real cumulative sequence, including the stated finite constant for `N>=101`, and derives the legitimate additive dyadic-block consequence. The remaining compressed-growing-hierarchy question is a separate research direction rather than unresolved evidence for this clue.
