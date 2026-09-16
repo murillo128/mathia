@@ -3,25 +3,19 @@
 **Date:** 2026-09-16  
 **Status:** `DERIVED + SOURCE-SPECIFIC + SIGNED-CONSERVATION + TRUNCATED-WASSERSTEIN + POISSON-SCALE + NB-165/NB-166-REFINEMENT`.
 
-`NB-165` controls compact signed conservation by total variation, while `NB-166` improves this to ordinary Jordan `W_1` transport by differentiating the high-ordinate one-line bound for `zeta'/zeta`. Both estimates discard part of the geometry. Total variation charges every positive/negative unit equally, even when it almost cancels locally; `W_1` charges distance linearly forever, even after the two signs are separated by more than one Poisson width and a bounded analytic test can no longer distinguish additional distance.
+`NB-165` controls compact signed conservation by total variation, while `NB-166` improves this to ordinary Jordan `W_1` transport. Both discard part of the geometry: total variation charges mass that almost cancels locally, whereas `W_1` keeps charging distance after the two signs are more than one Poisson width apart and a bounded analytic test has already saturated.
 
-The natural compact currency is therefore neither mass nor uncapped mean transport. It is the Jordan transport for the **truncated Poisson metric**
+The natural compact interpolation is the Jordan transport for the truncated Poisson metric
 
 \[
 d_a(s,t):=\min\left\{1,\frac{|s-t|}{a}\right\}.
 \]
 
-At distances below one exterior width it agrees with `W_1/a`; beyond one width it charges only the amount of unmatched signed mass. This is the same bounded-Lipschitz/Fortet--Mourier geometry that appears classically for finite measures, but here the cutoff scale is fixed by the distance to `Re s=1` and the test functions are the actual high-ordinate zeta source and Poisson zero kernels.
+Below one exterior width this is `W_1/a`; beyond one width it charges only the amount of unmatched signed mass. This is classical bounded-Lipschitz/Fortet--Mourier geometry, but here its cutoff is fixed by the exterior Poisson width and its test functions are the actual high-ordinate zeta source and zero kernels.
 
 ## Claim
 
-Fix `A,B,kappa>0`. For arbitrarily large `G`, let
-
-\[
-0<a_G\le A
-\]
-
-and let `nu_G` be a finite real signed Borel measure supported on `[G-B,G+B]`, with zero total mass. Write
+Fix `A,B,kappa>0`. For arbitrarily large `G`, let `0<a_G<=A` and let `nu_G` be a finite real signed Borel measure supported on `[G-B,G+B]`, with zero total mass. Write
 
 \[
 \nu_G=\nu_G^+-\nu_G^-,
@@ -31,12 +25,12 @@ m_G:=\nu_G^+(\mathbf R)=\nu_G^-(\mathbf R),
 V_G=2m_G.
 \]
 
-For couplings `pi in Pi(nu_G^+,nu_G^-)`, define
+Define the capped Jordan transport
 
 \[
 \mathsf T_G
 :=
-\inf_\pi
+\inf_{\pi\in\Pi(\nu_G^+,\nu_G^-)}
 \iint
 \min\left\{1,\frac{|s-t|}{a_G}\right\}
 \,d\pi(s,t).
@@ -83,17 +77,23 @@ L_{2,G}:=\log\log G,
 E_G:=\min\left\{\frac1{a_G},\frac{L_G}{L_{2,G}}\right\}.
 \]
 
-Then:
+Then the following hold.
 
-### 1. Capped transport strictly refines both previous conservation currencies
+### 1. Capped transport refines both predecessor currencies
 
-One has
+Since `d_a<=1` and `d_a<=|s-t|/a`,
+
+\[
+\mathsf T_G\le m_G,
+\qquad
+\mathsf T_G\le W_G/a_G,
+\]
+
+and therefore
 
 \[
 \boxed{
-\Xi_G
-\le
-\frac12\min\{C_G,\Theta_G\}.
+\Xi_G\le\frac12\min\{C_G,\Theta_G\}.
 }
 \]
 
@@ -106,25 +106,15 @@ Moreover the completed explicit-formula conservation remainder satisfies
 }
 \]
 
-Thus `NB-165` and `NB-166` are both recovered by the elementary bounds
+Thus `NB-165` and `NB-166` are both corollaries of the capped estimate, while mixed short/long couplings can be substantially cheaper than either global summary.
 
-\[
-\mathsf T_G\le m_G,
-\qquad
-\mathsf T_G\le \frac{W_G}{a_G},
-\]
-
-but neither is the intrinsic compact estimate when a coupling contains both very short and very long moves.
-
-### 2. The same capped transport controls every target Poisson response
+### 2. The same capped transport controls every Poisson response
 
 For every nontrivial zero,
 
 \[
 \boxed{
-|Q_G(\rho)|
-\le
-\frac{\mathsf T_G}{x_\rho}.
+|Q_G(\rho)|\le\frac{\mathsf T_G}{x_\rho}.
 }
 \]
 
@@ -137,15 +127,9 @@ Consequently every target zero satisfies
 }
 \]
 
-In particular, if `Delta_G` denotes any valid zero-free horizontal depth at height `G`, then for sufficiently large `G`
+This statement is height-free: no comparison between the target ordinates and `G` is needed. A zero-free-region lower bound such as `x_rho>=a_G+Delta_G` is used only later for adverse zeros already localized to height comparable with `G`.
 
-\[
-\Xi_G\ge a_G+\Delta_G.
-\]
-
-So the capped metric is not merely a better source-side majorant: the target itself directly measures it at its own Poisson width.
-
-### 3. A logarithmic packet exports full adverse debt whenever `Xi_G E_G=o(log G)`
+### 3. A logarithmic target packet exports full adverse debt whenever `Xi_G E_G=o(log G)`
 
 Let
 
@@ -161,9 +145,7 @@ Then
 \boxed{
 A_G^-
 \ge
-q_G\left(
- d_G-O_{A,B}(\Xi_GE_G)
-\right).
+q_G\left(d_G-O_{A,B}(\Xi_GE_G)\right).
 }
 \]
 
@@ -177,15 +159,15 @@ A_G^-\ge(\kappa-o(1))q_GL_G.
 }
 \]
 
-This strictly enlarges the sufficient regime from both predecessor statements. In the extreme boundary layer `a_G << L_{2,G}/L_G`, it is enough that
+In the extreme boundary layer `a_G << L_{2,G}/L_G`, it is enough that
 
 \[
 \boxed{\Xi_G=o(L_{2,G}),}
 \]
 
-even if both `C_G` and `Theta_G` are large.
+even when both `C_G` and `Theta_G` are large.
 
-### 4. Capped transport also gives a direct localization and population bound
+### 4. Capped transport also localizes the debt and forces a divergent adverse population
 
 There is `R_0=R_0(A,B)` such that, for sufficiently large fixed `D=D(A,B,kappa)`,
 
@@ -203,7 +185,7 @@ satisfies under `Xi_GE_G=o(L_G)`
 }
 \]
 
-Using Bellotti's already anchored zero-free depth
+Let
 
 \[
 \Delta_G
@@ -212,15 +194,15 @@ Using Bellotti's already anchored zero-free depth
 {53.989\,[\log(2G)]^{2/3}[\log\log(2G)]^{1/3}},
 \]
 
-every localized adverse zero obeys the same pointwise capped-transport estimate
+using Bellotti's already anchored zero-free region. Since `R_G=o(G)`, every adverse zero in this window has `x_rho>=a_G+Delta_G` for large `G`. Therefore
 
 \[
 |Q_G(\rho)|
 \le
-\frac{q_G\Xi_G}{a_G+\Delta_G}.
+\frac{q_G\Xi_G}{a_G+\Delta_G},
 \]
 
-Therefore
+and
 
 \[
 \boxed{
@@ -230,33 +212,9 @@ Therefore
 }
 \]
 
-The right side tends to infinity under the sole hypothesis `Xi_GE_G=o(L_G)`.
+The right side tends to infinity under the sole conservation hypothesis `Xi_GE_G=o(L_G)`.
 
 ## Derivation
-
-### The truncated Jordan metric interpolates mass and `W_1/a`
-
-The cost
-
-\[
-d_a(s,t)=\min\{1,|s-t|/a\}
-\]
-
-is a bounded metric. Since `d_a<=1` and `d_a<=|s-t|/a`, every coupling gives
-
-\[
-\mathsf T_G\le m_G,
-\qquad
-\mathsf T_G\le W_G/a_G.
-\]
-
-Division by `q_G`, together with `m_G=q_GC_G/2` and `W_G=q_Ga_GTheta_G/2`, proves
-
-\[
-\Xi_G\le\frac12\min\{C_G,\Theta_G\}.
-\]
-
-The improvement can be strict by an arbitrarily large factor. A coupling may move most mass by `o(a_G)` while moving a very small fraction by a fixed macroscopic distance. The long moves dominate `W_1/a_G`, while capped transport charges them only by their mass; total variation, conversely, charges the locally cancelled majority at full price.
 
 ### High-ordinate analyticity is bounded-Lipschitz at one Poisson width
 
@@ -266,7 +224,7 @@ Put
 f_G(t):=\frac{\zeta'}{\zeta}(1+a_G+it).
 \]
 
-The two estimates already established in `NB-165` and `NB-166` give uniformly on `[G-B,G+B]`
+`NB-165` and `NB-166` give uniformly on `[G-B,G+B]`
 
 \[
 |f_G(t)|\ll_{A,B}E_G,
@@ -274,28 +232,23 @@ The two estimates already established in `NB-165` and `NB-166` give uniformly on
 |f_G'(t)|\ll_{A,B}\frac{E_G}{a_G}.
 \]
 
-Therefore for all `s,t` in the support interval,
+Hence
 
 \[
 |f_G(s)-f_G(t)|
 \le
-\min\left\{2\|f_G\|_\infty,
-\|f_G'\|_\infty|s-t|
-\right\}
-\ll_{A,B}
-E_Gd_{a_G}(s,t).
+\min\{2\|f_G\|_\infty,\|f_G'\|_\infty|s-t|\}
+\ll_{A,B}E_Gd_{a_G}(s,t).
 \]
 
-Integrating this inequality against any Jordan coupling and minimizing gives
+Integrating against a Jordan coupling and minimizing gives
 
 \[
-\left|
-\int f_G(t)\,d\nu_G(t)
-\right|
+\left|\int f_G(t)\,d\nu_G(t)\right|
 \ll_{A,B}E_G\mathsf T_G.
 \]
 
-The completed Gamma and rational terms are cheaper. Their oscillation on the bounded high-ordinate interval is `O_{A,B}(|s-t|/G)` (or better). Since bounded support gives `|s-t| \ll_{A,B} d_{a_G}(s,t)` after absorbing the harmless fixed factor and `1/G=o(E_G)`, their signed integrals are `O_{A,B}(E_G\mathsf T_G)` as well. Zero total mass cancels the Hadamard reference constants exactly as in `NB-165/166`. Hence
+The completed Gamma and rational terms are cheaper: on the bounded high-ordinate interval their oscillation is `O_{A,B}(|s-t|/G)` or better, and bounded support implies `|s-t|<<_{A,B}d_{a_G}(s,t)`. Zero total mass cancels the Hadamard reference constants as in `NB-165/166`. This proves
 
 \[
 \sum_\rho Q_G(\rho)
@@ -303,14 +256,12 @@ The completed Gamma and rational terms are cheaper. Their oscillation on the bou
 =O_{A,B}(q_G\Xi_GE_G).
 \]
 
-### Poisson kernels belong to the same bounded-Lipschitz class
+### Poisson kernels lie in the same bounded-Lipschitz class
 
 For
 
 \[
-K_{x,\gamma}(t)
-:=
-\frac{x}{x^2+(t-\gamma)^2},
+K_{x,\gamma}(t)=\frac{x}{x^2+(t-\gamma)^2},
 \]
 
 one has
@@ -319,12 +270,10 @@ one has
 0\le K_{x,\gamma}\le\frac1x,
 \qquad
 \|K'_{x,\gamma}\|_\infty
-=
-\frac{9}{8\sqrt3\,x^2}
-<\frac1{x^2}.
+=\frac{9}{8\sqrt3\,x^2}<\frac1{x^2}.
 \]
 
-For every nontrivial zero, `x_rho>=a_G`. If `|s-t|>=a_G`, the range bound gives
+For a nontrivial zero `x_rho>=a_G`. If `|s-t|>=a_G`, the range bound gives
 
 \[
 |K(s)-K(t)|\le x_\rho^{-1}d_{a_G}(s,t).
@@ -334,52 +283,42 @@ If `|s-t|<a_G`, the derivative bound gives
 
 \[
 |K(s)-K(t)|
-<
-\frac{|s-t|}{x_\rho^2}
-\le
-\frac1{x_\rho}
-\frac{|s-t|}{a_G}.
+<\frac{|s-t|}{x_\rho^2}
+\le\frac1{x_\rho}\frac{|s-t|}{a_G}.
 \]
 
-Thus in all cases
+Thus
 
 \[
-|K(s)-K(t)|
-\le
-\frac1{x_\rho}d_{a_G}(s,t).
+|K(s)-K(t)|\le\frac1{x_\rho}d_{a_G}(s,t),
 \]
 
-Coupling and minimizing proves `|Q_G(rho)|<=T_G/x_rho`. On the target packet `Q_G(rho)>=q_G`, so `Xi_G=T_G/q_G>=x_rho`.
+and coupling proves the pointwise `Q_G` estimate. On `F_G`, `Q_G(rho)>=q_G`, hence `Xi_G>=x_rho`.
 
-### Signed debt and localization
+### Debt, localization, and population
 
-For negative ordinates, `t` remains near `G` while `gamma<0`. The Poisson kernel has size `O((G+|gamma|)^{-2})` and derivative `O((G+|gamma|)^{-3})`. Splitting pairs according to whether `|s-t|` is below or above `a_G` yields
+For `gamma<0`, the kernel is `O((G+|gamma|)^{-2})` and its derivative is `O((G+|gamma|)^{-3})` on the support interval. Splitting coupling pairs at distance `a_G` gives
 
 \[
-|Q_G(\rho)|
-\ll_{A,B}
-\frac{\mathsf T_G}{(G+|\gamma|)^2}.
+|Q_G(\rho)|\ll_{A,B}\frac{\mathsf T_G}{(G+|\gamma|)^2}.
 \]
 
-Riemann--von Mangoldt shell counting gives
+Riemann--von Mangoldt shell counting yields
 
 \[
 \sum_{\gamma<0}|Q_G(\rho)|
-\ll_{A,B}
-\mathsf T_G\frac{L_G}{G},
+\ll_{A,B}\mathsf T_G\frac{L_G}{G},
 \]
 
-which is negligible compared with `q_GL_G` when `Xi_GE_G=o(L_G)`. Combining this with the global conservation bound and the target contribution `q_Gd_G` proves the adverse-debt estimate.
+which is negligible compared with `q_GL_G` under `Xi_GE_G=o(L_G)`. Combining this with the conservation bound and the target contribution `q_Gd_G` proves the adverse-debt estimate.
 
-For positive zeros with `|gamma-G|>=R>=R_0(A,B)`, the same two-regime argument gives
+For positive zeros with `|gamma-G|>=R>=R_0(A,B)`, the same bounded/derivative split gives
 
 \[
-|Q_G(\rho)|
-\ll_{A,B}
-\frac{\mathsf T_G}{|\gamma-G|^2}.
+|Q_G(\rho)|\ll_{A,B}\frac{\mathsf T_G}{|\gamma-G|^2}.
 \]
 
-Shell counting therefore yields
+Consequently
 
 \[
 \sum_{\substack{\gamma>0\\|\gamma-G|\ge R}}
@@ -388,22 +327,12 @@ Shell counting therefore yields
 \mathsf T_G\left(\frac{L_G}{R}+\frac{L_G}{G}\right).
 \]
 
-Since `T_G=q_GXi_G`, taking `R=R_0+DXi_G` and then `D` sufficiently large leaves a fixed fraction of the global `Omega(q_GL_G)` adverse debt inside the stated window. The hypothesis implies `Xi_G=o(L_G)`, so `R_G=o(G)`.
+With `T_G=q_GXi_G`, choosing `R=R_0+DXi_G` and then `D` sufficiently large leaves a fixed fraction of the global adverse debt inside the stated window. Since `E_G` is bounded below by a positive constant depending only on `A`, the hypothesis gives `Xi_G=o(L_G)`, hence `R_G=o(G)`.
 
-Finally the universal pointwise bound `|Q_G(rho)|<=T_G/x_rho` and Bellotti's zero-free region give `|Q_G(rho)|<=q_GXi_G/(a_G+Delta_G)` in the window. Dividing the localized debt by this maximum proves the population lower bound.
-
-To check divergence, write
+For the population bound, write `Xi_GE_G=epsilon_GL_G` with `epsilon_G->0`. If `E_G=1/a_G`, then
 
 \[
-\Xi_GE_G=\varepsilon_GL_G,
-\qquad \varepsilon_G\to0.
-\]
-
-If `E_G=1/a_G`, then
-
-\[
-\frac{L_G(a_G+\Delta_G)}{\Xi_G}
-\ge\varepsilon_G^{-1}.
+\frac{L_G(a_G+\Delta_G)}{\Xi_G}\ge\epsilon_G^{-1}.
 \]
 
 If `E_G=L_G/L_{2,G}`, then `Xi_G=epsilon_G L_{2,G}` and
@@ -411,48 +340,51 @@ If `E_G=L_G/L_{2,G}`, then `Xi_G=epsilon_G L_{2,G}` and
 \[
 \frac{L_G(a_G+\Delta_G)}{\Xi_G}
 \ge
-\frac{L_G\Delta_G}{\varepsilon_GL_{2,G}}
+\frac{L_G\Delta_G}{\epsilon_GL_{2,G}}
 \asymp
 \frac{L_G^{1/3}}
-{\varepsilon_GL_{2,G}^{4/3}}
+{\epsilon_GL_{2,G}^{4/3}}
 \longrightarrow\infty.
 \]
 
 ## Representation and generalized-control audit
 
-The capped-transport lemma itself is not arithmetic. Any bounded test `f` with `||f||_infty<=M` and `Lip(f)<=M/a` obeys
+The capped-transport lemma is not arithmetic. Any bounded test `f` with `||f||_infty<=M` and `Lip(f)<=M/a` obeys
 
 \[
-\left|\int f\,d\nu\right|
-\ll M\mathsf T_a(\nu).
+\left|\int f\,d\nu\right|\ll M\mathsf T_a(\nu).
 \]
 
-Likewise the Poisson-kernel estimate is pure kernel geometry. The source-specific input is exactly the high-ordinate zeta statement that `zeta'/zeta` belongs to this bounded-Lipschitz class with `M=O(E_G)`. Thus a matched non-arithmetic control with the same sup-norm and derivative bounds satisfies the same conservation inequality. The new information is not a hidden RH claim; it identifies the correct representation-invariant signed geometry seen by all such tests and shows where the actual zeta estimate enters.
+Likewise the Poisson estimate is pure kernel geometry. The source-specific input is exactly that the actual high-ordinate `zeta'/zeta` belongs to this bounded-Lipschitz class with `M=O(E_G)`. A matched non-arithmetic control with the same sup-norm and derivative bounds therefore satisfies the same conservation inequality. The result identifies the signed geometry seen by the test class; it does not smuggle in an RH-strength source estimate.
 
-This audit also exposes why neither predecessor currency is canonical. Two measures can have the same total variation but arbitrarily different `T_a`; they can also have the same `W_1` but very different `T_a` by reallocating a small amount of mass beyond the cutoff. Hence the improvement is not a basis reparameterization of `C_G` or `Theta_G`.
+The refinement is genuinely geometric. Two measures can have the same total variation but arbitrarily different capped transport, and they can have the same `W_1` but very different capped transport by reallocating a small amount of mass beyond the cutoff. A coupling may move most mass by `o(a_G)` while moving a tiny fraction a fixed macroscopic distance: total variation overcharges the first part, while uncapped `W_1/a_G` overcharges the second.
 
 ## What this changes after NB-165 and NB-166
 
-The compact source budget is now controlled by
+The compact source budget is now
 
 \[
-\boxed{\Xi_GE_G,\qquad \Xi_G=\mathsf T_G/q_G,}
+\boxed{
+\Xi_GE_G,
+\qquad
+\Xi_G=\mathsf T_G/q_G,
+}
 \]
 
-where `T_G` measures how much positive/negative Jordan mismatch survives after one Poisson width of resolution. At short distances this reduces to the transport currency of `NB-166`; at long distances it reduces to the mass currency of `NB-165`; mixed geometries can be substantially cheaper than either global summary.
+where `T_G` measures the positive/negative Jordan mismatch that survives one Poisson width of resolution. At short distances it reduces to the transport currency of `NB-166`; at long distances it reduces to the mass currency of `NB-165`; mixed geometries can be much cheaper than either.
 
-This tightens the surviving escape route. Large total variation is irrelevant if it is locally paired, and large ordinary `W_1` is irrelevant if it is carried by too little mass beyond one width. To defeat the present conservation argument in the extreme boundary layer, the sampler needs capped mismatch `Xi_G` of order at least `log log G` (up to non-vanishing factors), not merely a large value of one predecessor parameter.
+This tightens the surviving escape route. Large total variation is irrelevant when locally paired, and large ordinary `W_1` is irrelevant when carried by too little mass beyond one width. In the extreme boundary layer, defeating this conservation argument requires capped mismatch that is not `o(log log G)`, rather than merely making one predecessor parameter large.
 
-The target inequality `Xi_G>=x_rho` also gives a useful interpretation: `Xi_G` is an effective unresolved signed width measured in the same units as the zero's Poisson scale. The open regime is therefore no longer described well by either 'high conditioning' or 'large transport' alone. What matters is whether a logarithmic packet can coexist with enough **Poisson-resolution Jordan mismatch** to reach the source-side threshold while still avoiding the adverse population forced above.
+The target inequality `Xi_G>=x_rho` supplies the complementary interpretation: `Xi_G` is an effective unresolved signed width in the same units as each target zero's Poisson scale. The open compact regime is therefore whether a logarithmic packet can coexist with enough **Poisson-resolution Jordan mismatch** to reach the source threshold while still avoiding the localized adverse population above.
 
 ## Prior-art and novelty audit
 
-A fresh search found the classical bounded-Lipschitz/Fortet--Mourier/Dudley probability metrics and the equivalent truncated-Wasserstein viewpoint with cost `min(1,d)`. That metric technology is standard and is not claimed as new. Searches combining those terms with Nyman--Beurling approximation, signed Poisson sampling, and high-ordinate `zeta'/zeta` did not locate the present transfer: scale the truncated cost by the exterior Poisson width, use the high-ordinate one-line value and Cauchy derivative bounds to place the zeta source in the corresponding bounded-Lipschitz class, and propagate the resulting currency simultaneously through target gain, signed zero conservation, localization, and adverse population.
+A fresh search found the classical bounded-Lipschitz/Fortet--Mourier/Dudley metrics and the equivalent truncated-Wasserstein viewpoint with cost `min(1,d)`. That metric technology is standard and is not claimed as new. Searches combining it with Nyman--Beurling approximation, signed Poisson sampling, and high-ordinate `zeta'/zeta` did not locate the present scale-specific transfer through target gain, signed zero conservation, localization, and adverse population.
 
 No new external theorem is load-bearing. The Cully--Hugill--Leong high-ordinate bound, Bellotti zero-free region, and Riemann--von Mangoldt counting are already anchored in `SOURCES.md`; the capped-coupling inequalities above are proved directly. Therefore `SOURCES.md` is unchanged.
 
 ## Boundaries and failure modes
 
-The sampler is still confined to one exterior vertical line and a bounded vertical interval. Growing vertical diameter or horizontal support requires a scale-dependent version of the capped cost. The condition `Xi_GE_G=o(log G)` is sufficient, not necessary: actual signed values of `zeta'/zeta` can cancel more strongly than any bounded-Lipschitz majorant records.
+The sampler remains confined to one exterior vertical line and a bounded vertical interval. Growing vertical diameter or horizontal support requires scale-dependent bookkeeping. The condition `Xi_GE_G=o(log G)` is sufficient, not necessary: actual signed values of `zeta'/zeta` may cancel more strongly than this bounded-Lipschitz majorant records.
 
-The target packet remains conditional. No crowded off-critical packet is asserted to exist, and no conclusion here proves RH. Adverse zeros are counted with multiplicity, consistently with the preceding findings.
+The target packet is conditional. No crowded off-critical packet is asserted to exist, and nothing here proves RH. Adverse zeros are counted with multiplicity, consistently with the preceding findings.
