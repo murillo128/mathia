@@ -249,7 +249,7 @@ q_T(k)
 \tag{21}
 \]
 
-where `A` is positive and smooth on such compact sets. Only ratios of neighboring ranks are needed here. From (21), uniformly for `k=r_T+j` as long as `j=o(sqrt(lambda_T))`,
+where `A` is positive and smooth on such compact sets. From (21), uniformly for `k=r_T+j` as long as `j=o(sqrt(lambda_T))`,
 
 \[
 \frac{q_T(k+1)}{q_T(k)}
@@ -293,7 +293,7 @@ Since `exp(lambda_T)=log T`, equations (24)--(25) are exactly (8).
 
 ## 2. The geometric tail becomes exponential just above the Gaussian window
 
-Now assume (9). Put `delta=delta_T` and suppress `T` temporarily. The characteristic overshoot scale suggested by (22) is `1/delta`. This scale is still much smaller than the Gaussian width because
+Now assume (9). Put `delta=delta_T`, `lambda=lambda_T`, and `r=r_T=(1+delta)lambda`. The characteristic overshoot scale is `1/delta`, and
 
 \[
 \frac{1/\delta}{\sqrt\lambda}
@@ -303,48 +303,86 @@ Now assume (9). Put `delta=delta_T` and suppress `T` temporarily. The characteri
 \tag{26}
 \]
 
-Hence (22) may be multiplied uniformly over `j=O(1/delta)`. For such `j`,
+The adjacent-ratio asymptotic (22) is not multiplied across this growing window. Instead use the full uniform Sathe--Selberg formula (21) once at the two ranks being compared. Fix `M<infinity`. Uniformly for `1\le j\le M/\delta`, we have `j/\lambda\to0`, so positivity and smoothness of `A` and the uniform error in (21) give
 
 \[
-\begin{aligned}
-\log\frac{q_T(r+j)}{q_T(r+1)}
-&=
--\sum_{m=1}^{j-1}
-\log\!\left(1+\delta+O\!\left(\frac m\lambda\right)\right)
-+o(1)\\
-&=
--(j-1)\delta
-+O(j\delta^2)
-+O(j^2/\lambda)
-+o(1).
-\end{aligned}
+\frac{q_T(r+j)}{q_T(r+1)}
+=
+(1+o_M(1))
+\frac{\lambda^{j-1}r!}{(r+j-1)!}
+=
+(1+o_M(1))
+\prod_{m=1}^{j-1}\frac{\lambda}{r+m}.
 \tag{27}
 \]
 
-If `delta j` remains bounded, then
+This uses only one quotient of the uniform local formula, so no unspecified `o(1)` is accumulated over the `O(1/delta)` ranks. Taking logarithms of the exact factorial product gives
 
 \[
-j\delta^2=O(\delta)\to0,
-\qquad
-j^2/\lambda
-=O((\delta^2\lambda)^{-1})\to0,
+\begin{aligned}
+\sum_{m=1}^{j-1}
+\log\!\left(1+\delta+\frac m\lambda\right)
+&=
+\delta(j-1)
++O(j\delta^2)
++O(j^2/\lambda)\\
+&=
+\delta(j-1)
++O(M\delta)
++O\!\left(\frac{M^2}{\delta^2\lambda}\right).
+\end{aligned}
 \tag{28}
 \]
 
-so
+Because `delta->0` and `delta^2 lambda->infinity`, both displayed error terms are `o_M(1)`. Hence, uniformly for `j<=M/delta`,
 
 \[
 \boxed{
 \frac{q_T(r+j)}{q_T(r+1)}
 =
-\exp\{-\delta(j-1)+o(1)\}
+\exp\{-\delta(j-1)+o_M(1)\}.
 }
 \tag{29}
 \]
 
-uniformly on bounded `delta j` ranges.
+It remains to normalize the whole upper tail without extrapolating (29) beyond its proved window. Choose a fixed `eta>0` small enough that the ranks through `(1+eta)lambda` remain inside a compact subset of `(0,2)`. On `M/delta<j<=eta lambda`, the same direct quotient from (21) and the exact product in (27) give
 
-To pass from the local ratios to the whole conditional tail, first truncate at `j<=M/delta` with fixed `M`. Equation (29) makes the truncated tail a Riemann sum for `e^{-u}`. Beyond that point the rank ratios only decrease at first order as the rank rises; a geometric majorant gives a remainder `O(e^{-cM})` relative to the full tail, uniformly for large `T`. Ranks a fixed positive fraction above `lambda_T` are again exponentially negligible by the same Selberg--Delange exponential-moment bound. Sending `T->infinity` and then `M->infinity` proves
+\[
+\frac{q_T(r+j)}{q_T(r+1)}
+\le
+C\prod_{m=1}^{j-1}\frac{\lambda}{r+m}
+\le
+C(1+\delta)^{-(j-1)}
+\le
+C e^{-c\delta j}
+\]
+
+for constants `C,c>0` independent of `T`. Thus this intermediate tail contributes at most
+
+\[
+O\!\left(\frac{q_T(r+1)}{\delta}e^{-cM}\right).
+\]
+
+For ranks `k>=(1+eta)lambda`, the fixed-parameter Selberg--Delange exponential-moment bound already used above gives total mass `O(e^{-c_eta lambda})`. This is `o(q_T(r+1)/delta)`: Stirling in (21) gives
+
+\[
+\frac{q_T(r+1)}{\delta}
+\asymp
+\frac{\exp\{-\lambda I(1+\delta)\}}
+{\delta\sqrt\lambda},
+\]
+
+and `I(1+delta)=O(delta^2)=o(1)`. Meanwhile (29) makes the truncated tail a Riemann sum,
+
+\[
+\delta
+\sum_{1\le j\le M/\delta}
+\frac{q_T(r+j)}{q_T(r+1)}
+\longrightarrow
+1-e^{-M}.
+\]
+
+Letting first `T->infinity` and then `M->infinity` therefore normalizes the entire tail. The same truncated argument with lower cutoff `j>x/delta` gives
 
 \[
 \Pr(\delta_TJ_T>x)\longrightarrow e^{-x}
@@ -352,13 +390,12 @@ To pass from the local ratios to the whole conditional tail, first truncate at `
 \tag{30}
 \]
 
-which is (11), and (12) follows.
-
-The same summation shows
+which is (11), and (12) follows. It also gives the sharper normalization
 
 \[
 \sum_{j\ge1}q_T(r_T+j)
-\asymp
+=
+(1+o(1))
 \frac{q_T(r_T+1)}{\delta_T}.
 \tag{31}
 \]

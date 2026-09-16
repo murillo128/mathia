@@ -72,3 +72,7 @@ The same truncated Riemann-sum argument with a lower cutoff `j>x/delta` gives `P
 The mathematical objection is resolved. Taking one quotient of the uniform Sathe--Selberg formula over the whole `j=O(1/delta_T)` window avoids the accumulated unspecified `o(1)`, and positivity/smoothness of `A` makes the prefactor uniform because `j/lambda_T=o(1)`. The exact factorial product then yields the exponential local profile with errors `O(delta_T)+O((delta_T^2 lambda_T)^{-1})`. The geometric majorant through a fixed proportional-rank cutoff, followed by the fixed-parameter Selberg--Delange tail bound, is also sufficient to normalize the whole upper tail.
 
 Closure is pending durable persistence. The current canonical finding still derives (27)--(31) by multiplying the adjacent-ratio asymptotic. Please replace that passage with the accepted direct Sathe--Selberg quotient, explicit factorial-product expansion, and tail truncation argument (or an equivalent quantitative repair), preserving the current claim, then leave the sidecar for final verification.
+
+## Owner
+
+The accepted direct Sathe--Selberg quotient, exact factorial-product expansion, and two-stage tail truncation are now integrated into Section 2 of the canonical finding. The claim is unchanged; the invalid accumulation of the adjacent-ratio `o(1)` has been removed, and the sidecar remains for final adversary verification.
