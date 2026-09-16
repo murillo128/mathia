@@ -1,10 +1,10 @@
-# MI-037 — Mertens normalization turns local Robin shifts into tail debt, but only tail exhaustion makes that debt rigid
+# MI-037 — Mertens normalization is a conservation law; only spatial exhaustion turns it into Robin-prefix rigidity
 
-**Evidence level:** exact/literature-backed synthesis from [RE-153](../../findings/RE-153-self-tangent-robin-height-is-a-pareto-weighted-chebyshev-deficit-average.md), [RE-164](../../findings/RE-164-korobov-vinogradov-fidelity-controls-robin-source-ambiguity.md) through [RE-170](../../findings/RE-170-critical-mertens-matching-still-permits-compensated-local-robin-excursions.md). Classical Mertens normalization is external mathematics; the exact Robin-kernel debt identity, critical precision and compensated two-shell control are line-specific.
+**Evidence level:** exact/literature-backed synthesis from [RE-153](../../findings/RE-153-self-tangent-robin-height-is-a-pareto-weighted-chebyshev-deficit-average.md), [RE-164](../../findings/RE-164-korobov-vinogradov-fidelity-controls-robin-source-ambiguity.md) through [RE-171](../../findings/RE-171-exact-mertens-matching-still-permits-transient-post-selector-robin-excursions.md). Classical Mertens normalization is external mathematics; the exact Robin-kernel debt identity, quantitative tail capacity and compensated matched controls are line-specific.
 
 RE-165--RE-168 show that a quantitative PNT/Korobov--Vinogradov envelope still allows order-one normalized Robin motion whenever enough displacement width is available near the moving capacity center. Those matched generalized-source controls preserve the Chebyshev envelope but were deliberately free to change the asymptotic Mertens product.
 
-RE-169 identifies the missing global invariant. With `h(t)=-log(1-t^(-1))/log t`, the difference of source Mertens constants for sources agreeing below `T` is exactly the full future Robin-kernel weighted discrepancy,
+RE-169 identifies the relevant global invariant. With `h(t)=-log(1-t^(-1))/log t`, the difference of source Mertens constants for sources agreeing below `T` is exactly the full future Robin-kernel weighted discrepancy,
 
 `Gamma(Q_2)-Gamma(Q_1)=int_T^infty (theta_(Q_2)(t)-theta_(Q_1)(t))(-h'(t)) dt`.
 
@@ -12,16 +12,18 @@ The normalized Robin coordinate uses the same kernel. Once the Mertens constants
 
 `K_b(p,U)=sqrt(p) log p exp(-bV(U))/V(U)`.
 
-If this future capacity is `o(1)`, a fixed debt can no longer be repaid; critical-scale Mertens matching plus a KV-rigid tail therefore yields prefix rigidity.
+If this future capacity is `o(1)`, a fixed debt can no longer be repaid; Mertens matching plus a KV-rigid tail therefore yields prefix rigidity.
 
-RE-170 shows that **critical Mertens matching alone is not prefix rigidity**. Two disjoint bounded-multiplicative shells can be coupled so that the first creates an order-one normalized Robin excursion, the second pays it back to `o(1)`, and the final generalized source satisfies
+RE-170 shows that critical-scale Mertens matching alone is not enough: two bounded-multiplicative shells can create an order-one intermediate excursion and later repay it while making `Gamma(Q_p)-gamma=o((sqrt(p)log p)^(-1))` and remaining negligible relative to the KV envelope.
 
-`Gamma(Q_p)-gamma=o((sqrt(p) log p)^(-1))`
+RE-171 proves that **no stronger scalar Mertens precision can repair this**. The residual left by the first two shells is only `O(log p/p)`. A third shell of `O(log p)` Chebyshev-mass-neutral prime pairs provides a continuous finite-dimensional dial whose Mertens shift covers that residual, while its worst cumulative Chebyshev cost is only `O((log p)^2)`. The completed generalized source can therefore satisfy
 
-while its Chebyshev perturbation is still `o(1)` relative to the full KV envelope. The intermediate prefix remains order-one different even though the final global normalization is matched at the very scale identified by RE-169.
+`Gamma(Q_p)=gamma`
 
-The distinction is now exact. **Mertens fidelity is a conservation law; KV tail exhaustion is the localization law that turns conservation into rigidity.** If enough future weighted capacity remains, opposite-sign shells can transfer the debt spatially without violating the global invariant. If the remaining capacity tends to zero, there is nowhere left for a fixed debt to go.
+exactly, preserve the order-one intermediate prefix excursion, and return the final Robin displacement to zero exactly after the last shell.
 
-For the ordinary-prime/CA problem, neither resource by itself is the missing selector theorem. `Gamma(P)=gamma` is exact, but a proof must also connect the selector-selected prefix to a region where future compensation is quantitatively unavailable, or supply another source-specific invariant that forbids the two-shell cancellation pattern before the Robin excursion becomes dangerous.
+The distinction is now sharp. **Mertens fidelity is purely a conservation law for total Robin-kernel charge; tail exhaustion or another selector-sensitive spatial rule is the localization law.** Exact conservation cannot say where opposite signed charge sits. As long as enough future weighted capacity remains, later shells can repay an earlier debt without violating the global invariant.
 
-**Boundary.** The debt identity assumes the relevant Mertens constants exist. RE-170 is a generalized matched-control construction, not an ordinary-prime or CA counterexample. It proves that global critical-scale normalization and pointwise KV fidelity remain logically insufficient without a spatial/tail restriction. It does not prove Robin's inequality, RH, or a sign theorem for ordinary CA selectors.
+For the ordinary-prime/CA problem, the missing theorem can no longer be phrased as “improve the Mertens normalization.” It must connect the selector-selected prefix to a region in which compensating charge is unavailable, constrain the permitted sign/location of future debt using genuine prime structure, or supply another source-specific invariant that the exact three-shell matched control cannot preserve.
+
+**Boundary.** The debt identity assumes the relevant Mertens constants exist. RE-171 is a generalized matched-control construction, not an ordinary-prime or CA counterexample. It proves that exact `Gamma=gamma` plus pointwise KV fidelity remains logically insufficient without a spatial/tail restriction. It does not prove Robin's inequality, RH, or a sign theorem for ordinary CA selectors.

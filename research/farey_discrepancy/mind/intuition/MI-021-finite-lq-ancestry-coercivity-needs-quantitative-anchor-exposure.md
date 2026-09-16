@@ -1,6 +1,6 @@
-# MI-021 — Finite-`L^q` ancestry coercivity is anchored cut exposure, and divisor closure prices terminal migration
+# MI-021 — Finite-`L^q` ancestry coercivity is anchored cut exposure, and principal closure prices anchor exhaustion
 
-**Evidence level:** exact/proved synthesis from [FD-147](../../findings/FD-147-finite-seed-ancestry-coercivity-is-exactly-an-anchored-cut-problem.md) through [FD-161](../../findings/FD-161-terminal-auxiliary-cores-force-growing-primorial-closure-pressure.md).
+**Evidence level:** exact/proved synthesis from [FD-147](../../findings/FD-147-finite-seed-ancestry-coercivity-is-exactly-an-anchored-cut-problem.md) through [FD-162](../../findings/FD-162-first-omitted-anchor-prime-forces-squarefree-volume-closure-pressure.md).
 
 For binary orientations anchored on `D`, finite-`L^q` recovery is controlled by anchored boundary exposure: `C^(bin)_(q,D)=h_D(nu,eta)^(-1/q)`. Connectivity only excludes zero boundary; stable recovery requires every admissible macroscopic flip to carry uniformly positive observed boundary mass.
 
@@ -12,16 +12,24 @@ FD-158 proves that a finite completed auxiliary vocabulary does not terminate th
 
 FD-160 removes the downward-closure assumption. Arbitrary sparse holes contribute an explicit incoming bill, and taking the divisor closure of every depth-`r` subfamily internalizes that bill without losing primary depth. Static non-downward holes therefore do not weaken the exponential obstruction; they only move its boundary outward in the divisor poset.
 
-FD-161 closes the remaining apparent escape in which the active auxiliary cores themselves are terminal and carry only bounded primary depth. For the initial-prime anchor `S_s={p_1,...,p_s}`, every nontrivial `S_s`-free terminal core `c` with `2c<=T` has a principal divisor ideal containing a full primary Boolean face through depth
+FD-161 first closes terminal presentation for the initial-prime anchor: a nontrivial terminal `S_s`-free core can have bounded visible primary depth while its principal divisor ideal regenerates a growing Boolean face. FD-162 shows that the Boolean face was only a sparse lower bound and removes the exact initial-segment requirement.
 
-`b_s=max{j<=s: P_j<=p_(s+1)}`,
+Let `ell_S` be the smallest prime not in a finite anchor `S`, and let `m(S)` be the number of initial primes contained in `S`. For every nontrivial active `S`-free core `c`, choose any prime `r|c`. Since `r>=ell_S`, every squarefree primary product `q<ell_S` fits in the fibres above the half of `D(c)` omitting `r`. Therefore
 
-where `P_j=p_1...p_j`. Averaging over that closure gives at least `(2^(b_s)-1)/2` occupied primary states, hence the same anchored cut law forces a bill of order `2^(b_s)`. Since `b_s~log s/log log s`, this pressure still diverges:
+`bar f_(S,D(c))(T) >= (Q_sf(ell_S-1)-1)/2`.
 
-`2^(b_s)=exp((log 2+o(1)) log s/log log s)`.
+The exact cut law becomes
 
-The important correction is conceptual. **Terminality of the presented core is not terminality under the closure intrinsic to divisibility.** A core can sit at bounded visible primary depth while its principal divisor ideal regenerates a growing initial-prime face. The surviving escape is no longer “move the complexity into terminal auxiliary support”; it must make the relevant closure leave the controlled regime, allow the distortion/expansion/leakage budgets to deteriorate, change the anchor/cut geometry, trivialize the root, or impose a source-native coefficient restriction that removes the tested flips.
+`P_(S,T) + L_(S,D(c),T)/2^(omega(c)) >= (h_(S,T)/2)(Q_sf(ell_S-1)-1)`.
 
-The information-budget caveat remains separate. A large outer-recipient population or growing primorial closure need not contain proportionally many independent source bits; a deterministic rule can generate many recipients from a short description. FD-144 still requires a later theorem connecting whatever geometric resource survives the cut analysis to independent source information and then to the Franel--Landau destination.
+If `m=m(S)->infinity`, then `ell_S=p_(m+1)~m log m` and squarefree density gives
 
-**Boundary.** FD-161 is tied to the initial-prime avoidance architecture and positive divisibility-edge coercivity. The primorial depth is a closure-pressure lower bound, not an information lower bound, and it is weaker than the direct double-exponential thinning bill. It does not rule out different anchors, signed/nonpositive couplings, unbounded distortion, closure that escapes the controlled truncation, or source constraints that change the admissible cuts.
+`bar f >= (1/(2 zeta(2))+o(1)) m log m`.
+
+So terminal migration is obstructed not only for literal initial-prime anchors but for **every anchor family that asymptotically exhausts the fixed primes**. Moving high-prime holes do not help: principal closure sees all squarefree primary products below the first omitted prime. With bounded expansion/distortion/leakage budgets, persistence of a nontrivial auxiliary core forces `m(S)` to remain bounded along a subsequence, hence one fixed small prime is omitted along a further subsequence.
+
+The conceptual correction is stronger than “terminality is not stable under closure.” **Anchor exhaustion has a quantitative closure volume measured by the first omitted prime.** The closure does not need to contain a complete high-dimensional Boolean face to become expensive; FD-159 prices the cardinality of occupied primary states, and all low squarefree products already supply `Theta(m log m)` pressure.
+
+The information-budget caveat remains separate. A large outer-recipient population or growing principal-closure fibre need not contain proportionally many independent source bits; a deterministic rule can generate many recipients from a short description. FD-144 still requires a later theorem connecting whatever geometric resource survives the cut analysis to independent source information and then to the Franel--Landau destination.
+
+**Boundary.** FD-162 applies to finite prime-avoidance anchors and positive divisibility-edge coercivity. It deliberately becomes weak when a small prime hole persists: bounded `m(S)` gives only bounded universal squarefree-volume pressure. It does not rule out such low-prime-hole anchors, signed/nonpositive couplings, unbounded distortion, closure escaping the controlled truncation, or source constraints changing the admissible cuts. The closure-volume bound is geometric, not an information lower bound.

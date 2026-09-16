@@ -20,22 +20,28 @@ WP-337 shows that approximate preservation has an additional independent term. W
 
 `Q(x) <= epsilon_x L_-L_+ + beta_x(L_+-L_-) - beta_x^2`.
 
-Thus asymptotic rigidity now requires control of both **channel error × bidirectional propagation** and **coordinate bias × propagation asymmetry**. An intrinsic dyadic Mangoldt example has vanishing channel error and vanishing coordinate bias but fixed defect because the second product remains critical even though `L_-L_+=0`.
+Thus asymptotic rigidity needs control of both **channel error × bidirectional propagation** and **coordinate bias × propagation asymmetry**. An intrinsic dyadic Mangoldt example has vanishing channel error and vanishing coordinate bias but fixed defect because a rare long jump keeps the relevant quadratic scale critical.
 
-A surviving operator-valued route must consequently pay a critical/supercritical propagation bill, abandon the current commutative Markov/UCP category, expose a genuinely source-forced coupling, or prove scale-aware approximate barycentric control strong enough for both geometric amplifiers. Small unweighted bias is not a replacement for exact martingale structure.
+WP-338 classifies the obvious transport-topology repair exactly. For the row law `P_x`,
+
+`W_2(P_x,delta_x)^2 = Q(x) + beta_x^2`.
+
+Hence every rowwise `W_p` with `p>=2` controls the Kadison defect, while every fixed `1<=p<2` admits growing-support Markov/UCP maps with `W_p(P_x,delta_x)->0` and order-one defect. The failure persists under exact barycentric preservation on a dyadic prime-power ray and in the intrinsic WP-337 Mangoldt witness. The exponent `2` is sharp.
+
+This closes ordinary rowwise Wasserstein distance as an independent source of rigidity. Subquadratic transport is too weak; quadratic transport works because it is **exactly the second-moment defect plus squared bias**; stronger exponents overpay. A surviving operator-valued route must therefore produce an independent source-side theorem forcing the quadratic transport energy to vanish, abandon the commutative rowwise Markov/UCP category, or expose a genuinely global/noncommutative coupling whose positivity is not just a reformulation of the desired Kadison defect.
 
 ## Separate source fingerprint from source-selective sign
 
-Shifted-lattice support, Mangoldt coefficients, prime-power gaps and exact scalar laws are source-specific fingerprints. WP-333--WP-337 show that even intrinsic arithmetic support does not make the variance mechanism arithmetic: the sharp propagation inequalities and their extremizers are generic finite-spectrum geometry. Sign provenance must fail on a matched control, not merely carry arithmetic labels.
+Shifted-lattice support, Mangoldt coefficients, prime-power gaps, exact scalar laws and dyadic realizations are source-specific fingerprints. WP-333--WP-338 show that even intrinsic arithmetic support does not make the variance/transport mechanism arithmetic: the sharp propagation inequalities, the `p=2` threshold and their extremizers are generic finite-spectrum probability geometry. Sign provenance must fail on a matched control, not merely carry arithmetic labels.
 
-## Match the topology to the moving observable
+## Match the topology to the moving observable without restating the target
 
-Normalization, algebraic category, scalar shadows, fluctuation visibility, faithfulness modulus, scalar-law topology, map-level topology, observable scale, barycentric bias and propagation geometry are independent. For the current coordinate the stability ledger is
+Normalization, algebraic category, scalar shadows, fluctuation visibility, faithfulness modulus, scalar-law topology, map-level topology, observable scale, barycentric bias and propagation geometry are independent. The WP-337 ledger
 
 `E_R=||Psi_R-I|| sup_x L_(-,R)L_(+,R)`
 
 and
 
-`B_R=||Psi_R(X_R)-X_R|| sup_x |L_(+,R)-L_(-,R)|`.
+`B_R=||Psi_R(X_R)-X_R|| sup_x |L_(+,R)-L_(-,R)|`
 
-Both must be `o(1)` for the WP-337 bound to force the Kadison defect to zero. Future weighted graph/energy norms are useful only if they dominate these concrete products or an equivalent second-moment quantity; merely being stronger on bounded shadows is not enough.
+prices two ways of generating second-moment defect. WP-338 identifies the invariant quantity they must ultimately control: rowwise quadratic transport. Future weighted graph/energy norms are useful only if a source theorem forces that quadratic quantity small for a reason stronger than simply assuming `W_2->0`; otherwise the proposed topology is only the conclusion rewritten as a metric.
