@@ -111,7 +111,7 @@ The corresponding sampled determinant is nonnegative by `(6)`. Continuity of `f`
 =
 \lim_{m\to\infty}
 \det\!\left(
- f\!left((r_a^{(m)}-s_b^{(m)})h_m\right)
+ f\!\left((r_a^{(m)}-s_b^{(m)})h_m\right)
 \right)_{a,b=1}^{j}
 \ge0.
 \tag{9}
