@@ -136,7 +136,7 @@ u>1:\ \text{Hilbert--Schmidt}.
 \tag{13}
 \]
 
-In (13), `\nu` denotes the same real exponent called `u` in the rest of the finding; the notation is used only to avoid visual ambiguity inside the display. Equation (13) is an operator classification, not a claim about zeros of (1).
+Equation (13) uses `u` throughout: `u=1` is the unique real transition between the unbounded and compact regimes. It is an operator classification, not a claim about zeros of (1).
 
 ## 3. The Green slice is a Hilbert matrix coefficient of Dirichlet-series source vectors
 
