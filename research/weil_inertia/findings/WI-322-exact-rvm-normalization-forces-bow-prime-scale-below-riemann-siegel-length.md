@@ -49,11 +49,11 @@ so
 }
 \]
 
-Write `n_h` for the number of integer derivative levels crossed. Since `n_h=Delta_h+O(1)`, every shift `h -> infinity` in the genuinely coupled range crosses at least `(3/4-o(1))h` integer derivative levels. If `K_kappa=floor(kappa X_*/H)` with fixed `kappa>0`, `H->infinity`, and `K_kappa->infinity`, then
+Write `a_h` for the number of integer derivative levels crossed. Since `a_h=Delta_h+O(1)`, every shift `h -> infinity` in the genuinely coupled range crosses at least `(3/4-o(1))h` integer derivative levels. If `K_kappa=floor(kappa X_*/H)` with fixed `kappa>0`, `H->infinity`, and `K_kappa->infinity`, then
 
 \[
 \boxed{
- \sum_{h\le K_\kappa}n_h
+ \sum_{h\le K_\kappa}a_h
  \ge \left(\frac38-o(1)\right)K_\kappa^2.
 }
 \]
@@ -220,7 +220,13 @@ f_h(x)=\frac{U}{2\pi}\log\left(1+\frac hx\right)
 \tag{15}
 \]
 
-on a central block `[X_*,2X_*]`:
+on a central block `[X_*,2X_*]`. Put
+
+\[
+u:=\frac h{X_*}.
+\]
+
+Then WI-189's exact formula is
 
 \[
 \Delta_h
@@ -228,13 +234,11 @@ on a central block `[X_*,2X_*]`:
 \frac{Uh}{4\pi X_*^2}
 \frac{3+u}{(1+u)(2+u)},
 \qquad
-n_h=\Delta_h+O(1),
-\qquad
-u:=\frac h{X_*}.
+a_h=\Delta_h+O(1),
 \tag{16}
 \]
 
-In (16), the last displayed symbol is only the ratio `u=h/X_*`; below we use the plain letter `u` for it. For the localized shift family `h <= kappa X_*/H` with fixed `kappa` and `H->infinity`, one has `u=o(1)` uniformly. Thus
+where `a_h` counts the integer derivative levels crossed by the monotone derivative image. For the localized shift family `h <= kappa X_*/H` with fixed `kappa` and `H->infinity`, one has `u=o(1)` uniformly. Thus
 
 \[
 \Delta_h
@@ -255,12 +259,12 @@ Therefore, uniformly for growing shifts in the coupled range,
 
 \[
 \boxed{
-n_h\ge\left(\frac34-o(1)\right)h-O(1).
+a_h\ge\left(\frac34-o(1)\right)h-O(1).
 }
 \tag{19}
 \]
 
-This does not give a matching upper bound because `rho_T` may grow subpolynomially. The corrected statement is consequently `n_h \gtrsim h`, not `n_h=Theta(h)` without an additional upper control on `rho_T`.
+This does not give a matching upper bound because `rho_T` may grow subpolynomially. The corrected statement is consequently `a_h \gtrsim h`, not `a_h=Theta(h)` without an additional upper control on `rho_T`.
 
 If
 
@@ -273,7 +277,7 @@ summing (19) gives
 
 \[
 \boxed{
-\sum_{h\le K_\kappa}n_h
+\sum_{h\le K_\kappa}a_h
 \ge
 \left(\frac38-o(1)\right)K_\kappa^2.
 }
@@ -283,7 +287,7 @@ summing (19) gives
 Under the hypotheses of WI-189 this is consistent with its exact aggregate asymptotic
 
 \[
-\sum_{h\le K_\kappa}n_h
+\sum_{h\le K_\kappa}a_h
 =
 \left(\frac{3\kappa^2}{16\pi}+o(1)\right)\frac{U}{H^2},
 \tag{22}
