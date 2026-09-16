@@ -31,6 +31,10 @@ This file records durable literature dependencies for `research/nyman_beurling/`
 
 - Eva A. Gallardo-Gutiérrez and Daniel Seco, *Zero-Free Regions of the Riemann Zeta Function and Approximation in Weighted Dirichlet Spaces*, Complex Analysis and Operator Theory 19 (2025), article 38, DOI `10.1007/s11785-025-01661-2`. Role: contemporary prior-art boundary for deriving zeta zero-free half-planes from Nyman--Beurling-type approximation in weighted spaces. `NB-043` does not claim the generic approximation-to-zero-free mechanism as new; its line-local contribution is the quantitative realization through the explicit logarithmic tail dual `Omega_M`.
 
+## Near-one logarithmic derivative
+
+- Michaela Cully-Hugill and Nicol Leong, *Explicit estimates for the Riemann zeta function close to the 1-line*, J. Math. Anal. Appl. 540 (2024), article 128494, DOI `10.1016/j.jmaa.2024.128494`, [arXiv:2312.09412](https://arxiv.org/abs/2312.09412). Role: Corollary 2 gives the explicit uniform estimate `|zeta'(sigma+it)/zeta(sigma+it)| <= 113.3 log t/log log t` for `sigma>=1` and `t>=500`; `NB-165` uses this as the load-bearing high-ordinate source bound that caps the `1/a_G` Euler tariff in compact zero-mass signed conservation.
+
 ## Near-one zero-free region
 
 - Chiara Bellotti, *Explicit bounds for the Riemann zeta function and a new zero-free region*, J. Math. Anal. Appl. 536 (2024), 128249, DOI `10.1016/j.jmaa.2024.128249`, [arXiv:2306.10680](https://arxiv.org/abs/2306.10680). Role: Theorem 1.2 gives the explicit Vinogradov--Korobov zero-free region `sigma >= 1 - 1/(53.989 (log |t|)^(2/3) (log log |t|)^(1/3))` for `|t|>=3`; `NB-125` uses this as the load-bearing source law converting its rootwise horizontal-depth requirement for actual zero packets into an additive log-log height budget.
