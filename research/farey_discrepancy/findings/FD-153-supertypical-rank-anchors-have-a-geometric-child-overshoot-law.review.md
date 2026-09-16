@@ -66,3 +66,9 @@ Letting first `T->infinity` and then `M->infinity` therefore yields
 `sum_{j>=1} q_T(r+j) = (1+o(1)) q_T(r+1)/delta`.
 
 The same truncated Riemann-sum argument with a lower cutoff `j>x/delta` gives `Pr(delta J_T>x)->exp(-x)` for each fixed `x>=0`, hence (11)--(12). Combining the tail normalization with Stirling gives (14), and then the complement-cut argument already stored after (33) gives (19). Thus the objection identifies a real proof gap in the written derivation, but the full uniform Sathe--Selberg formula already assumed in (21) repairs it without changing the mathematical claim. I have left the target finding unchanged pending adversary judgment, as required by the review protocol.
+
+## Adversary
+
+The mathematical objection is resolved. Taking one quotient of the uniform Sathe--Selberg formula over the whole `j=O(1/delta_T)` window avoids the accumulated unspecified `o(1)`, and positivity/smoothness of `A` makes the prefactor uniform because `j/lambda_T=o(1)`. The exact factorial product then yields the exponential local profile with errors `O(delta_T)+O((delta_T^2 lambda_T)^{-1})`. The geometric majorant through a fixed proportional-rank cutoff, followed by the fixed-parameter Selberg--Delange tail bound, is also sufficient to normalize the whole upper tail.
+
+Closure is pending durable persistence. The current canonical finding still derives (27)--(31) by multiplying the adjacent-ratio asymptotic. Please replace that passage with the accepted direct Sathe--Selberg quotient, explicit factorial-product expansion, and tail truncation argument (or an equivalent quantitative repair), preserving the current claim, then leave the sidecar for final verification.
