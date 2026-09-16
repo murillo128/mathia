@@ -4,7 +4,7 @@ This file holds the current mathematical questions suggested by the durable Nyma
 
 ## Resolve the one-Poisson-width interlaced signed-sampler regime
 
-**Linked intuitions:** `MI-001-target-aware-gram-geometry-must-carry-absolute-scale` through `MI-037-high-ordinate-zeta-bounds-cap-the-boundary-approach-tariff`.
+**Linked intuitions:** `MI-001-target-aware-gram-geometry-must-carry-absolute-scale` through `MI-038-block-stationary-arithmetic-rescue-is-density-sparse`.
 
 NB-148--NB-160 show that zero-mass signed exterior sampling removes the universal Hadamard logarithm only by exporting sign debt. Mesoscopic spreading, finite atomic repair and even arbitrary signed Borel samplers with Jordan supports separated by many Poisson widths still force an adverse `Omega(log G)` zero reservoir under bounded effective conditioning.
 
@@ -26,13 +26,21 @@ and optimal Jordan transport mass `T_G`, define `Xi_G=T_G/q_G`. Then
 
 and the full completed conservation remainder is `O(q_G Xi_G E_G)`. The same `Xi_G` controls every Poisson response pointwise: `|Q_G(rho)|<=T_G/x_rho`, so every target zero requires `Xi_G>=x_rho`.
 
-For a logarithmic target packet, essentially full adverse debt is therefore forced whenever `Xi_G E_G=o(log G)`. In the extreme boundary layer this becomes only `Xi_G=o(log log G)`, even if both total variation and ordinary `W_1/a_G` are large. The debt localizes in an `O(1+Xi_G)` ordinate window and the zero-free region forces a divergent adverse-zero population under the same conservation hypothesis.
+NB-168 attacks the remaining source-specific cancellation loophole for a **height-stationary compact template**. If one signed offset shape is translated through a dyadic block, its Euler defect satisfies
 
-The live compact escape is now sharply phrased: a successful sampler must carry enough **Poisson-resolution Jordan mismatch** to make `Xi_G E_G` macroscopic while retaining target gain, or exploit cancellation in the actual high-ordinate values beyond the bounded-Lipschitz control. Inflating total variation, uncapped transport, moment order or boundary proximity separately is not a resource.
+`int_T^(2T) |E_T(t)|^2 dt << T_T^2 (T+a_T^(-2))`.
+
+Hence `q_T log T`-scale arithmetic rescue occupies relative measure
+
+`<< Xi_T^2 (log T)^(-2) (1+(T a_T^2)^(-1))`.
+
+In the natural regime `T a_T^2 -> infinity`, every block-stationary template with `Xi_T=o(log T)` can produce logarithmic rescue only on a density-zero set of centers. This is substantially stronger than the worst-case pointwise NB-167 threshold for persistent use: arithmetic phase alignment cannot be a block-wide mechanism unless the capped mismatch itself reaches logarithmic scale.
+
+The compact frontier is therefore split cleanly. Persistent rescue must use a shape that adapts to height, raise `Xi_T` to logarithmic size, enter the ultra-thin `a_T \lesssim T^(-1/2)` layer where the present mean-square error ceases to be negligible, or target a genuinely sparse exceptional sequence of centers. NB-168 does **not** exclude the last possibility without a robustness interval around each selected target packet.
 
 ## Keep the source and destination currencies separate
 
-A future sampler must expose target charge, total variation, boundary gap, ordinary Jordan transport, capped Poisson transport `T_G`, `Xi_G`, local moment order, support growth, the actual high-ordinate logarithmic-derivative input, localization radius and adverse-zero population. `C_G` and `Theta_G` remain useful diagnostics, but NB-167 shows that the source test class sees their common capped quotient more directly.
+A future sampler must expose target charge, total variation, boundary gap, ordinary Jordan transport, capped Poisson transport `T_G`, `Xi_G`, local moment order, support growth, whether the signed template is stationary or height-adaptive, the actual high-ordinate logarithmic-derivative input, exceptional-height density, localization radius and adverse-zero population. `C_G` and `Theta_G` remain useful diagnostics, but NB-167--NB-168 show that the source test class sees capped transport directly and that persistence in height is an additional quantifier not captured by a pointwise bound.
 
 ## Push canonical shell discrepancy independently
 

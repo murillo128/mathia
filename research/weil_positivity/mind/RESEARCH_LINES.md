@@ -10,18 +10,32 @@ WP-293--WP-328 close broad scalar and enriched semigroup routes: many natural po
 
 WP-331--WP-332 give the opposite finite-cutoff rigidity. For a faithful UCP readout preserving the exact second moment of the same self-adjoint source observable, the positive Kadison defect vanishes; the observable lies in the multiplicative domain and its off-diagonal Stinespring coupling disappears.
 
-WP-333--WP-334 expose the nonuniform tail loophole. A support-preserving martingale UCP map on three consecutive points of the intrinsic dyadic prime-power ray can retain order-one Kadison/Stinespring defect on a moving atom of vanishing mass while total variation, fixed moments, fixed Wasserstein metrics, every fixed finite `f`-divergence and every fixed finite-order Renyi divergence vanish. WP-334 still left max-divergence as a topology that detected that particular defect.
+WP-333--WP-335 expose the nonuniform moving-tail loophole. A support-preserving martingale UCP map can converge to the identity under weak scalar metrics, every fixed finite divergence, both max-divergences and even ordinary channel norm while retaining an order-one Kadison defect on the growing logarithmic observable. The mechanism is a vanishing escape probability multiplied by a growing squared jump.
 
-WP-335 removes that apparent endpoint. A sharper barycentric map has likelihood ratio converging **uniformly to one**, so both max-divergences tend to zero; simultaneously the channel itself satisfies `||Psi_R-I|| -> 0` on the bounded algebra `C(Sigma_R)`. Nevertheless the Kadison variance defect of the logarithmic coordinate remains exactly `(log 2)^2` because a vanishing source probability multiplies a jump whose squared size grows like the reciprocal probability.
+WP-336 makes that tradeoff sharp. If `epsilon_x` is the off-diagonal row mass and `L_-(x),L_+(x)` are the one-sided source-coordinate propagation radii, exact barycentric preservation gives
 
-Thus neither scalar-law topology nor ordinary bounded-operator norm is the right asymptotic control for the moving unbounded source observable. The missing topology must scale with the **energy/graph norm of the actual observable consumed by the destination**, or control its second moment/Kadison defect directly. Uniform likelihood-ratio convergence can coexist with fixed observable variance when the observable norm itself diverges.
+`0 <= Q(x) <= epsilon_x L_-(x)L_+(x)`
 
-A surviving operator-valued route must then do more than control convergence. The remaining coupling must be source-forced and destination-visible through a sign theorem that matched martingale controls cannot reproduce, or the observable/interface must change before the same-observable multiplicative-domain rigidity applies.
+for the Kadison defect `Q=Psi(X^2)-X^2`, while
+
+`||Psi-I|| = 2 sup_x epsilon_x`.
+
+Hence
+
+`||Q|| <= (1/2)||Psi-I|| sup_x L_-(x)L_+(x)`.
+
+The WP-335 construction attains equality. Ordinary channel-norm convergence therefore **does** recover asymptotic multiplicative-domain rigidity once the bidirectional propagation product is subcritical relative to the channel error. A fixed surviving defect forces propagation budget at least reciprocal to `||Psi-I||` along a subsequence.
+
+A surviving operator-valued route must consequently pay a critical/supercritical nonlocal propagation bill, abandon exact martingale preservation of the same scalar coordinate, move outside the commutative Markov/UCP setting, or expose another source-forced coupling. Merely invoking a stronger unnamed “energy topology” is no longer enough; in this lane the exact missing resource is quantitatively identified.
 
 ## Separate source fingerprint from source-selective sign
 
-Shifted-lattice support, Mangoldt coefficients, prime-power gaps and exact scalar laws are source-specific fingerprints. WP-333--WP-335 show that even exact support preservation, nearest-neighbor motion on a canonical arithmetic ray, asymptotically identical likelihood ratios and asymptotically identical bounded channels do not make a positive operator coupling arithmetic: the same martingale mechanism is generic. Sign provenance must fail on a matched control, not merely carry arithmetic labels.
+Shifted-lattice support, Mangoldt coefficients, prime-power gaps and exact scalar laws are source-specific fingerprints. WP-333--WP-336 show that even exact support preservation and an intrinsic arithmetic ray do not make the UCP variance mechanism arithmetic: the sharp propagation inequality and its extremizer are generic martingale geometry. Sign provenance must fail on a matched control, not merely carry arithmetic labels.
 
 ## Match the topology to the moving observable
 
-Normalization, algebraic category, scalar shadows, fluctuation visibility, faithfulness modulus, scalar-law topology, map-level topology and observable scale are independent. WP-335 shows that the relevant defect can be invisible even to two-sided max-divergence and to channel norm on bounded functions when the target observable grows with the cutoff. Future constructions must state which topology controls the actual unbounded/moving observable and why its modulus is uniform at that scale. The natural remaining candidates are weighted energy/graph norms, direct second-moment control, or an equivalent relative estimate tied to the observable's growing amplitude.
+Normalization, algebraic category, scalar shadows, fluctuation visibility, faithfulness modulus, scalar-law topology, map-level topology, observable scale and propagation geometry are independent. WP-336 identifies the exact scale correction for the current martingale coordinate: bounded-channel convergence is sufficient only after multiplication by
+
+`B_R = sup_x L_(-,R)(x)L_(+,R)(x)`.
+
+The criterion `||Psi_R-I|| B_R -> 0` forces the second-moment/Kadison defect to vanish, while WP-335 sits exactly at the critical product scale. Future constructions should therefore state the norm on the actual moving observable and the propagation/moment budget that turns it into a uniform modulus. Weighted graph/energy norms remain possible reformulations, but they must dominate this concrete critical product rather than merely sound stronger than the sup norm.
