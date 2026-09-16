@@ -1,35 +1,17 @@
-# MI-021 — Finite-`L^q` ancestry coercivity is anchored cut exposure, and principal closure prices anchor exhaustion
+# MI-021 — Finite-`L^q` ancestry coercivity needs quantitative anchor exposure and a separate orientation source
 
-**Evidence level:** exact/proved synthesis from [FD-147](../../findings/FD-147-finite-seed-ancestry-coercivity-is-exactly-an-anchored-cut-problem.md) through [FD-162](../../findings/FD-162-first-omitted-anchor-prime-forces-squarefree-volume-closure-pressure.md).
+**Evidence level:** exact/proved synthesis from [FD-147](../../findings/FD-147-finite-seed-ancestry-coercivity-is-exactly-an-anchored-cut-problem.md) through [FD-164](../../findings/FD-164-one-farey-horizon-leaves-dense-coefficient-orientations-undetermined.md).
 
-For binary orientations anchored on `D`, finite-`L^q` recovery is controlled by anchored boundary exposure: `C^(bin)_(q,D)=h_D(nu,eta)^(-1/q)`. Connectivity only excludes zero boundary; stable recovery requires every admissible macroscopic flip to carry uniformly positive observed boundary mass.
+For binary orientations anchored on `D`, finite-`L^q` recovery is controlled by anchored boundary exposure: connectivity only excludes zero boundary, while stable recovery requires every admissible macroscopic flip to carry uniformly positive observed boundary mass.
 
-FD-154 gives a qualitatively different anchor from rank cuts. For a finite prime set `S`, the prime-avoidance face is divisor-closed and every unanchored squarefree integer has an `S`-free core in the anchor at depth at most `|S|`. The cost appears when that face is thinned: FD-155--FD-157 show that low anchor exposure plus bounded load forces exponentially large cross-core leakage.
+FD-154--FD-162 progressively remove sparse-anchor and terminal-core escapes. Prime-avoidance anchors give bounded ancestry depth; thinning them forces parent/leakage costs; arbitrary sparse holes disappear after divisor closure; and principal closure prices anchor exhaustion by the first omitted prime. If the anchor eventually contains every fixed prime, its occupied squarefree closure volume grows.
 
-FD-158 proves that a finite completed auxiliary vocabulary does not terminate the process. FD-159 then replaces complete auxiliary cubes by arbitrary finite **divisor-downward** active core sets. If `f(c)` is the occupied primary `S`-fibre size and `bar f` its average, the exact cut pressure is
+FD-163 closes the complementary persistent-low-prime-hole escape under bounded resources. If anchored expansion is bounded below, parent distortion and normalized leakage are bounded above, and a nontrivial active core persists, only finitely many anchor primes can enter the relevant principal-closure scale. The prime-avoidance anchor therefore retains a uniform positive density. In this architecture, finite-`L^q` coercivity cannot be bought with asymptotically invisible anchor exposure.
 
-`P_(S,T) + L_(S,C,T)/|C| >= h_(S,T) bar f`.
+FD-164 then separates **exposure from orientation information** exactly. One complete Farey horizon determines only the floor-quotient Mertens staircase. Inside the exact ternary squarefree-unit class, paired sign flips in macroscopic quotient shells can preserve every staircase coordinate and therefore the entire same-horizon discrepancy function while changing an arbitrarily large fraction of any positive-density squarefree family. Applied to the FD-163 anchor, the observation map can expose many coefficients geometrically while leaving almost all of their Möbius signs undetermined.
 
-FD-160 removes the downward-closure assumption. Arbitrary sparse holes contribute an explicit incoming bill, and taking the divisor closure of every depth-`r` subfamily internalizes that bill without losing primary depth. Static non-downward holes therefore do not weaken the exponential obstruction; they only move its boundary outward in the divisor poset.
+The durable distinction is therefore two-stage. First prove that the architecture exposes a positive amount of the coefficient source without unbounded distortion or leakage. Then prove that the **actual source law or cross-horizon coherence fixes the orientation on that exposed set**. Same-horizon Farey information cannot perform the second job, even at infinite precision and even when the matched control preserves the exact squarefree support and unit amplitudes.
 
-FD-161 first closes terminal presentation for the initial-prime anchor: a nontrivial terminal `S_s`-free core can have bounded visible primary depth while its principal divisor ideal regenerates a growing Boolean face. FD-162 shows that the Boolean face was only a sparse lower bound and removes the exact initial-segment requirement.
+The natural next discriminator is nonredundant coherence across horizons. FD-009 shows that consecutive physical divisor identities can recover the Möbius prefix triangularly, while FD-164 shows that one complete horizon leaves a dense kernel. A useful theorem must occupy the middle ground: enough simultaneous-horizon or multiplicative information to orient the positive-density exposed face, but not merely a disguised full reconstruction of the source.
 
-Let `ell_S` be the smallest prime not in a finite anchor `S`, and let `m(S)` be the number of initial primes contained in `S`. For every nontrivial active `S`-free core `c`, choose any prime `r|c`. Since `r>=ell_S`, every squarefree primary product `q<ell_S` fits in the fibres above the half of `D(c)` omitting `r`. Therefore
-
-`bar f_(S,D(c))(T) >= (Q_sf(ell_S-1)-1)/2`.
-
-The exact cut law becomes
-
-`P_(S,T) + L_(S,D(c),T)/2^(omega(c)) >= (h_(S,T)/2)(Q_sf(ell_S-1)-1)`.
-
-If `m=m(S)->infinity`, then `ell_S=p_(m+1)~m log m` and squarefree density gives
-
-`bar f >= (1/(2 zeta(2))+o(1)) m log m`.
-
-So terminal migration is obstructed not only for literal initial-prime anchors but for **every anchor family that asymptotically exhausts the fixed primes**. Moving high-prime holes do not help: principal closure sees all squarefree primary products below the first omitted prime. With bounded expansion/distortion/leakage budgets, persistence of a nontrivial auxiliary core forces `m(S)` to remain bounded along a subsequence, hence one fixed small prime is omitted along a further subsequence.
-
-The conceptual correction is stronger than “terminality is not stable under closure.” **Anchor exhaustion has a quantitative closure volume measured by the first omitted prime.** The closure does not need to contain a complete high-dimensional Boolean face to become expensive; FD-159 prices the cardinality of occupied primary states, and all low squarefree products already supply `Theta(m log m)` pressure.
-
-The information-budget caveat remains separate. A large outer-recipient population or growing principal-closure fibre need not contain proportionally many independent source bits; a deterministic rule can generate many recipients from a short description. FD-144 still requires a later theorem connecting whatever geometric resource survives the cut analysis to independent source information and then to the Franel--Landau destination.
-
-**Boundary.** FD-162 applies to finite prime-avoidance anchors and positive divisibility-edge coercivity. It deliberately becomes weak when a small prime hole persists: bounded `m(S)` gives only bounded universal squarefree-volume pressure. It does not rule out such low-prime-hole anchors, signed/nonpositive couplings, unbounded distortion, closure escaping the controlled truncation, or source constraints changing the admissible cuts. The closure-volume bound is geometric, not an information lower bound.
+**Boundary.** FD-163--FD-164 are architecture/information statements, not Franel--Landau coercivity. FD-164 is horizon-dependent and does not construct one infinite alternative source matching infinitely many horizons. The matched coefficients need not arise from another reduced-rational point set. The result says precisely that positive cut exposure and one-horizon Farey data do not by themselves justify the Möbius labels consumed by the ancestry proof.

@@ -2,34 +2,24 @@
 
 This file holds the current mathematical questions suggested by the durable Farey-discrepancy intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Quantify source information in anchor geometries that actually give coercivity
+## Bridge positive anchor exposure to actual Möbius orientation across horizons
 
 **Linked intuitions:** `MI-001-cumulative-farey-discrepancy-is-mertens-energy` through `MI-021-finite-lq-ancestry-coercivity-needs-quantitative-anchor-exposure`.
 
-FD-145--FD-147 reduce finite-`L^q` binary ancestry recovery to anchored cut exposure. FD-148--FD-153 price rank-aligned anchors: sparse anchors pay parent distortion, central-rank anchors buy bounded parent load with macroscopic source information but retain a `sqrt(log log T)` child window, and bounded residual depth requires orienting almost all coefficients.
+FD-145--FD-162 reduce finite-`L^q` binary ancestry recovery to anchored cut exposure and show that extra parents, finite auxiliary vocabularies, sparse holes, terminal-core migration and high-prime perturbations of an exhausting prime anchor do not remove the hidden-fibre cut after intrinsic divisor/principal closure. The first omitted anchor prime controls a growing squarefree closure volume.
 
-FD-154 shows that this rank-depth law is not universal. A fixed finite-prime avoidance face is divisor-closed, has positive asymptotic mass, and gives bounded ancestry depth and `T`-uniform endpoint distortion. FD-155 then prices thinning that face: reducing anchored exposure to `alpha` needs `s_alpha=exp(alpha^(-1+o(1)))` prime coordinates and the direct parent load becomes double exponential in `alpha^(-1+o(1))`.
+FD-163 closes the remaining low-prime-hole geometric escape under bounded architecture resources. If anchored expansion stays uniformly positive, parent distortion and normalized leakage stay bounded, and a nontrivial auxiliary core persists, then only finitely many anchor primes can be relevant below the principal-closure cutoff. The corresponding prime-avoidance anchor therefore has a uniform positive density. A coercive bounded-resource ancestry architecture cannot make the anchor exposure vanish merely by keeping one fixed small prime outside the anchor.
 
-FD-156--FD-160 successively remove one-parent, multi-parent, finite auxiliary vocabulary, divisor-downward support and static sparse-hole escapes. For an arbitrary sparse active-core family, taking divisor closure of the depth-`r` cores internalizes hole inflow and restores the exponential pressure `P+L/|D_r(C)|>=h(2^r-1)`.
+FD-164 shows why that geometric closure is still not source justification. At a single Farey horizon `T`, the complete discrepancy field is exactly equivalent to the floor-quotient Mertens staircase. Within the exact squarefree-unit coefficient class one can flip paired Möbius signs inside finitely many macroscopic quotient shells, preserve every floor-quotient cumulative value and hence preserve the entire same-horizon Farey discrepancy function exactly, while changing an arbitrarily large fraction of any positive-density squarefree family. In particular, the positive-density anchor forced by FD-163 remains almost completely orientation-ambiguous from one horizon alone.
 
-FD-161 prices terminal-core migration for the initial-prime anchor by recovering a growing Boolean face inside every active principal divisor closure. FD-162 strengthens and generalizes the mechanism. For an arbitrary finite prime anchor `S`, let `ell_S` be its first omitted prime and `m(S)` the length of its initial-prime prefix. Every nontrivial active `S`-free core `c` has
+The live source bridge is therefore **cross-horizon or genuinely arithmetic coherence**. A successful route must explain why the exposed coefficients carry the actual Möbius orientation by using information unavailable to a one-horizon matched squarefree-unit source: consecutive-horizon divisor identities, multiplicativity, simultaneous horizons, or another source-specific law. The geometric ancestry argument has already bought exposure; the missing theorem is what fixes the signs on that exposed set without simply reconstructing the whole source.
 
-`bar f_(S,D(c))(T) >= (Q_sf(ell_S-1)-1)/2`,
+## Apply the information-budget gate only after orientation survives the same-horizon kernel
 
-so the anchored cut law forces
+FD-144 remains a later lower bound: even after anchoring and quantitative cut exposure are solved, `o(r_T)` arbitrary source-independent normalized ancestry tests can still be fooled along a subsequence. FD-164 sharpens the ordering of obligations. Before counting source bits, first quotient out the exact same-horizon kernel of the Farey observation map. Positive exposure, recipient population and principal-closure volume are not information until a source law removes the balanced sign-flip directions invisible to the full horizon.
 
-`P_(S,T) + L_(S,D(c),T)/2^(omega(c)) >= (h_(S,T)/2)(Q_sf(ell_S-1)-1)`.
-
-If `m(S)->infinity`, then `ell_S=p_(m+1)` and the guaranteed average fibre grows as `(1/(2 zeta(2))+o(1)) m log m`. Thus merely perturbing an initial-prime anchor at moving high primes does not reopen terminal migration: **every anchor family that eventually contains each fixed prime regenerates growing squarefree-volume pressure after principal closure**.
-
-The surviving alternative-anchor escape is therefore sharper. With bounded architecture resources and persistent nontrivial auxiliary cores, `m(S)` must stay bounded along an infinite subsequence; after refinement, one fixed small prime is omitted throughout that subsequence. Otherwise anchored expansion, parent distortion, normalized outer leakage, or another hypothesis must deteriorate. A persistent low-prime hole is not ruled out by FD-162 and is now the concrete anchor-side structural alternative to test.
-
-## Apply the information-budget gate only after cut exposure survives
-
-FD-144 remains a later lower bound: even after anchoring and quantitative cut exposure are solved, `o(r_T)` arbitrary source-independent normalized ancestry tests can still be fooled along a subsequence. Neither a large cross-core recipient population, fresh-prime migration nor growing squarefree principal-closure volume is by itself an information lower bound; a deterministic rule may generate many recipients from little description. Any epistemic claim still needs a theorem connecting geometric leakage to independent source information and then to the Franel--Landau destination.
-
-Audit future ancestry proposals in the order **anchor geometry and mass -> first omitted prime/initial coverage -> source justification -> parent distortion -> hole/cross-core/outer leakage -> divisor/principal-ideal closure -> closure fibre volume -> anchored expansion -> child distortion/recipient population -> information and precision budget -> destination relevance**.
+Audit future ancestry proposals in the order **anchor geometry and mass -> parent distortion/leakage -> intrinsic closure -> positive exposure -> same-horizon orientation kernel -> cross-horizon/source law -> information and precision budget -> Franel--Landau destination**.
 
 ## Keep coefficient coercivity and nonlocal destination coercivity separate
 
-FD-147--FD-162 concern binary Möbius orientations, finite `L^q` and positive divisibility-ancestry observations. They show exactly how excellent coefficient-side coercivity can be purchased and why extra parents, finite auxiliary vocabularies, sparse holes, terminal-core presentation and high-prime perturbations of an exhausting anchor do not remove the hidden-fibre cut once intrinsic divisor closure is taken. None proves that Farey discrepancy supplies the orientation or that the resulting norm controls the RH-equivalent destination. Any surviving route must state which source hypothesis or geometry changes and why it does not simply reconstruct the source.
+The current line has a sharp architecture boundary but not an RH proof. FD-163 gives a positive-density coefficient surface under bounded resources; FD-164 proves that one-horizon Farey data does not orient that surface. Any surviving route must add nonredundant source coherence and then still show that the resulting coefficient information controls the RH-equivalent discrepancy norm. Neither step follows from the other.

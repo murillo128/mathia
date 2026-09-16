@@ -2,46 +2,24 @@
 
 This file holds the current mathematical questions suggested by the durable Nyman--Beurling intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Resolve the one-Poisson-width interlaced signed-sampler regime
+## Price height adaptation by both ordered refresh complexity and source-resolution repertoire entropy
 
 **Linked intuitions:** `MI-001-target-aware-gram-geometry-must-carry-absolute-scale` through `MI-038-block-stationary-arithmetic-rescue-is-density-sparse`.
 
-NB-148--NB-160 show that zero-mass signed exterior sampling removes the universal Hadamard logarithm only by exporting sign debt. Mesoscopic spreading, finite atomic repair and even arbitrary signed Borel samplers with Jordan supports separated by many Poisson widths still force an adverse `Omega(log G)` zero reservoir under bounded effective conditioning.
+NB-165--NB-167 isolate the capped Poisson transport metric actually seen by a compact signed sampler near `Re s=1`. NB-168 separates stationary source-specific resonance from a persistent mechanism: one fixed template cannot produce logarithmic Euler rescue on positive density under the subcritical transport budget. NB-169 then prices finitely many height-dependent templates by a refresh term.
 
-NB-161--NB-167 isolate the finely interlaced regime and identify capped Poisson transport as the common source currency. With `d_a(s,t)=min{1,|s-t|/a}`, optimal Jordan transport mass `T_G` and `Xi_G=T_G/q_G`, the same `Xi_G` controls every Poisson response and gives completed conservation remainder `O(q_G Xi_G E_G)`.
+NB-170--NB-171 identify the **ordered** adaptation currency. Total capped-transport variation and, more generally, finite `p`-variation bound the number of consecutive source-distinguishable templates available at the logarithmic rescue resolution. Even a path with infinite ordinary variation is constrained whenever some finite `p`-variation remains below its power-law tariff.
 
-NB-168 attacks source-specific cancellation for a height-stationary compact template. Its Euler defect has mean square `O(T_T^2(T+a_T^(-2)))`, so logarithmic rescue is confined to density zero when `Xi_T sqrt(1+(T a_T^2)^(-1))=o(log T)`.
+NB-172 shows that arbitrary temporal roughness is still not enough. Let `N_T(epsilon)` be the internal covering number of the *range* of templates in capped Poisson transport. Without any continuity, measurability, variation or interval-partition hypothesis, the rescue density is bounded by
 
-NB-169 extends this to **piecewise adaptive** templates. Partition `[T,2T]` into `M_T` cells and let `Xi_j` be the normalized capped transport on cell `j`. The mean-square budget separates ordinary cell energy from a refresh term
+`N_T(epsilon_T) X_T^2/log^2 T * (1 + 1/(T a_T^2))`,
 
-`R_T=(1/(T a_T^2)) sum_j Xi_j^2`.
+at the source resolution `epsilon_T~log T/H_T`. Thus a family can switch infinitely often and have infinite `p`-variation for every finite `p`, yet remain harmless if it only revisits a small repertoire of geometrically distinct source shapes.
 
-Under `Xi_j<=X_T`, logarithmic rescue still has density `o(1)` if
+Ordered refresh complexity and unordered range entropy are complementary. Ordered bounds are stronger for a path that progresses through many different templates regularly because the main mean-square term is shared across cells; range entropy is stronger for violent recurrence among a small alphabet because it ignores how often the family revisits the same shapes. A viable positive-density adaptive rescue must evade **both** controls, or exploit the known ultra-thin limitation of the stationary mean-square estimate.
 
-`X_T sqrt(1+M_T/(T a_T^2))=o(log T)`.
+The surviving compact escape is now sharply source-specific: construct an arithmetic height selector whose family has sufficiently large Poisson-resolution range entropy and ordered refresh complexity, concentrate the mechanism on a sparse exceptional set, or enter the ultra-thin exterior regime. Discontinuity, infinite variation and rapid switching are not proof resources by themselves.
 
-Conversely, when `X_T=o(log T)`, positive-density rescue requires at least `M_T ≳ T a_T^2 log^2 T/X_T^2` template changes.
+## Keep target conditioning and arithmetic-source persistence separate
 
-NB-170 replaces literal refresh counting by **bounded variation in capped Poisson transport**. If `V_T` is the normalized path variation of `t -> nu_{T,t}` and
-
-`H_T=min(a_T^(-1), log T/log log T)`, 
-
-then a BV family has only
-
-`M_eff(T) ≍ 1 + V_T H_T/log T`
-
-source-distinguishable templates at the `q_T log T` rescue scale. The NB-169 estimate therefore remains valid with this effective refresh count. Under a subcritical stationary baseline, positive-density rescue forces
-
-`V_T ≳ T a_T^2 log^3 T/(X_T^2 H_T)`.
-
-Thus continuous adaptation is no longer a qualitative escape. The compact frontier is now split into three genuinely different possibilities: spend logarithmic capped transport, target a genuinely sparse exceptional sequence, or use very large/infinite Poisson-resolution variation. The remaining source-side question is whether a genuinely arithmetic height-selection mechanism can supply that much variation while preserving target gain, or whether an entropy/modulus argument can control families beyond bounded variation.
-
-## Keep the source and destination currencies separate
-
-A future sampler must expose target charge, total variation, boundary gap, ordinary Jordan transport, capped Poisson transport `T_G`, `Xi_G`, local moment order, support growth, the **Poisson-resolution height variation** of the signed template, the actual high-ordinate logarithmic-derivative input, exceptional-height density, localization radius and adverse-zero population. Persistence is a family quantifier: free switching between individually cheap templates is not itself a cheap family.
-
-## Push canonical shell discrepancy independently
-
-**Linked intuition:** `MI-002-small-shell-discrepancy-can-destroy-rooted-visibility`.
-
-The shell decomposition still reduces the rooted-mixing channel to a quantitative coefficient discrepancy. The live theorem is whether canonical arithmetic coefficients force near-linear discrepancy on the relevant shell family without assuming the Nyman distance estimate being targeted. This route remains distinct from the zero-packet Poisson budgets above.
+Earlier findings already show that target amplification, radial depth, finite multibase visibility and recurrence observability do not by themselves control conditioning. NB-168--NB-172 are source-side persistence theorems: they price how much the compact arithmetic sampler may vary before logarithmic Euler rescue can occur on positive density. They do not turn a density obstruction into pointwise exclusion at a deliberately selected sparse sequence, nor do they remove the need to connect any surviving source response back to the Nyman target geometry.

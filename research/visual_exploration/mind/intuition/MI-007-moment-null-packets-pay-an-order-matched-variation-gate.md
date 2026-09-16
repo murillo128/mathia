@@ -1,31 +1,33 @@
-# MI-007 — Moment-null shrinking packets are limited by destination regularity and sharp order-matched conditioning
+# MI-007 — Cusp-adapted moment-null packets are exactly governed by uniform-approximation duality
 
-**Evidence level:** exact synthesis from the finite-window moment/capacity chain VIS-145--VIS-147 and the sine-kernel cusp results [VIS-256](../../findings/VIS-256-finite-moments-do-not-beat-sine-kernel-cusp.md)--[VIS-258](../../findings/VIS-258-cusp-plus-quadratic-null-sharp-quartic-conditioning.md).
+**Evidence level:** exact synthesis from the finite-window moment/capacity chain VIS-145--VIS-147 and the sine-kernel cusp results [VIS-256](../../findings/VIS-256-finite-moments-do-not-beat-sine-kernel-cusp.md) through [VIS-259](../../findings/VIS-259-cusp-moment-packet-conditioning-is-uniform-approximation-duality.md).
 
-Vanishing moments are useful only relative to the regularity of the function they are asked to annihilate. In the smooth finite-window regime, VIS-145 shows that a zero second frequency moment removes the common quadratic centered-cosine response. VIS-146 then gives the exact conditioning bill `|m_(2j)(nu_b)|<=b^(2j)||nu_b||_TV`; keeping an order-one `2j`-th moment on bandwidth `b` costs at least `b^(-2j)` variation.
+Vanishing moments are useful only relative to the regularity of the destination they are asked to annihilate. In the smooth finite-window regime, removing successive Taylor channels forces the first retained `2m`-th moment to pay a `b^(-2m)` total-variation scale on a shrinking band. VIS-256 shows that the sine-kernel/CUE support edge changes the nuisance basis because the limiting centered profile is the cusp `|q|`, which finite polynomial moments do not remove.
 
-VIS-256 shows that this Taylor-order picture is incomplete at a nonsmooth destination. The centered sine-kernel/CUE form-factor increment is `T(q)=min(|q|,1)`, so near zero the destination is the cusp `|q|`. For every fixed polynomial cancellation order there are bounded-normalization packets that annihilate that entire finite Taylor jet while retaining an exact `Theta(b)` cusp response. Ordinary moments do not control the singular profile.
+VIS-257 and VIS-258 solve the first two cusp-adapted stages sharply: after cancelling mass and `|q|`, unit quadratic signal costs exactly `8b^(-2)`; after cancelling the quadratic channel too, unit quartic signal costs `E_*^(-1)b^(-4)` with `E_*=0.06346155...`.
 
-VIS-257 answers the first cusp-adapted question. For every symmetric signed measure on `[-b,b]` with zero mass and zero `|q|` pairing,
+VIS-259 identifies the general structure. For order `m>=1`, impose zero mass, zero `|q|` pairing and vanishing even moments through `2m-2`. Put
 
-`|m_2(nu)| <= (b^2/8)||nu||_TV`.
+`V_m = span{1,t,t^2,t^4,...,t^(2m-2)}`
 
-The constant is sharp, so retaining unit quadratic signal after cancelling the cusp costs exactly `8b^(-2)` total variation at the optimum.
+on `[0,1]` and
 
-VIS-258 closes the next branch as sharply. If the packet also annihilates the quadratic moment, then
+`E_m = dist_infinity(t^(2m), V_m)`.
 
-`|m_4(nu)| <= E_* b^4 ||nu||_TV`,
+Then every admissible signed packet on `[-b,b]` satisfies the **sharp** inequality
 
-with `E_*=0.06346155...`; equivalently unit quartic signal costs
+`|m_(2m)(nu)| <= E_m b^(2m) ||nu||_TV`,
 
-`K_* b^(-4)`,  `K_*=E_*^(-1)=15.75757...`.
+and equality is attained. Hahn--Banach identifies the quotient norm with an annihilating functional and Riesz represents that functional by the extremal signed measure. Thus the best possible unit-carrier cost over *all* packet shapes is exactly `E_m^(-1)b^(-2m)`.
 
-The extremizer is symmetric on four radii `0, u b, v b, b`, with `u≈0.28443` and `v≈0.77708`, and the sharp constant comes from the best degree-two uniform approximation of `t^4` on `[0,1]`. Thus the quartic bill is not just dimensional `Theta(b^(-4))`: the exact destination-independent constant and optimizer are known.
+This turns the cancellation ladder into a complete dual-conditioning problem. The nuisance constraints define a finite-dimensional approximation space; the retained carrier is useful only to the extent that it lies a positive uniform distance from that space; total variation is the dual norm that pays for extracting it. Changing the signed packet ansatz cannot beat this minimax constant.
 
-The finite-window null must be calibrated at the same order. After cancelling both the cusp and quadratic channel, any transfer/covariance uncertainty `epsilon_b` is amplified by the quartic normalization. To isolate a quartic coefficient `A_4`, strong separation requires
+The destination error must be priced at the same order. If the source contribution is `A_(2m)q^(2m)` and the residual deterministic uncertainty is bounded by `epsilon_b` in sup norm, worst-case separation requires
 
-`epsilon_b/(E_* |A_4| b^4) -> 0`.
+`epsilon_b < E_m |A_(2m)| b^(2m)`,
 
-The correct design principle is therefore recursive and exact: identify the singular part of the destination, annihilate it in its natural dual coordinate, decide which smooth moment carries source signal, and then price that first surviving moment against the **sharp approximation-theoretic conditioning constant** and the finite-window error at the same order. More cancellations can improve nuisance rejection only if the source and transfer theorem survive the matching power of `b`.
+with strong asymptotic separation requiring the corresponding ratio to vanish. Extra cancellations are therefore valuable only when the actual source supplies the next coefficient and the transfer/covariance theorem improves fast enough to pay the new conditioning exponent.
 
-**Boundary.** VIS-258 is a sharp deterministic quartic inequality for symmetric finite signed packets. It does not supply the zeta-specific quartic coefficient, its sign, or a uniform finite-height transfer theorem with `o(b^4)` error. Higher cancellations require a new extremal approximation problem; the quartic constant cannot be extrapolated to them. Nothing here proves an RH-sensitive residual.
+The practical consequence is to stop optimizing higher universal packet shapes in isolation. After VIS-259, the scarce resource is **source-carrier existence and same-order error control**, not the extremal measure problem. The quadratic/quartic fork remains live because those are the first source coefficients that could plausibly be derived; higher orders need evidence before their approximation constants matter.
+
+**Boundary.** The theorem is deterministic and uses total variation against sup-norm uncertainty. Structured covariance, sign restrictions or another error norm produce a different dual problem. VIS-259 does not establish any zeta-specific higher coefficient, finite-height transfer law or RH-sensitive residual.

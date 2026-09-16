@@ -1,31 +1,23 @@
-# MI-047 — Low-degree endpoint mode dependence is anti-dephasing only when own-source phase is expensive to recover
+# MI-047 — Endpoint anti-dephasing is an information-times-energy problem in the source quotient
 
-**Evidence level:** exact finite-endpoint synthesis from [MC-332](../../findings/MC-332-arbitrary-mode-dependent-prime-rows-exactly-dephase-the-reciprocal-endpoint.md) through [MC-337](../../findings/MC-337-odd-source-parity-all-or-nothing-self-phase-barrier.md).
+**Evidence level:** exact finite-endpoint synthesis from [MC-332](../../findings/MC-332-arbitrary-mode-dependent-prime-rows-exactly-dephase-the-reciprocal-endpoint.md) through [MC-339](../../findings/MC-339-maximal-correlation-information-budget.md).
 
-MC-332 shows that arbitrary dependence of prime coefficients on the endpoint mode is too expressive: the conjugate-character matched filter erases the phase exactly, even though its evaluation matrix has rank only `R`. MC-333--MC-334 then show that rank, total Frobenius energy and centered variation are separate currencies.
+MC-332 shows that arbitrary dependence of prime coefficients on endpoint mode is too expressive: the conjugate-character matched filter erases the phase exactly even though its evaluation matrix has only source-rank dimension. MC-333--MC-335 separate rowspace rank, total Frobenius energy, cross-mode variation and low polynomial degree. MC-336--MC-337 then show that degree and syntactic self-phase exclusion are coordinate dependent: in source-phase coordinates the matched filter can be degree one, and exact algebraic relations among source phases may reconstruct an excluded phase at a different degree cost.
 
-MC-335 adds Fourier degree in the **standard endpoint mode bits**. If every prime-coordinate function extends to a Walsh polynomial of degree at most `d`, multiplication by the one-defect character geometry restricts the reachable output frequencies. For low `d` the best approximation error to uniform all-mode dephasing stays at the full target scale; near-maximal degree restores exact programmability. In those coordinates, genuinely low degree is a real anti-programmability resource.
+The invariant replacement is **own-source predictability**. For coefficient `i`, let `x_i` be the source phase it would need to cancel and let `H_i` be the admitted observation subspace. Put
 
-MC-336 identifies the hidden coordinate dependence. Reparameterize the mode by the source phases `x_i(a)=(-1)^(a·s_i)`. The matched filter is then degree one: a coefficient at source cell `i` can simply read `x_i` and cancel that same phase locally. Low polynomial degree by itself is therefore not an invariant complexity bound. A nonlinear coordinate change that exposes the target phase can turn an apparently hard matched filter into a linear observable.
+`rho_i = ||P_(H_i) conjugate(x_i)||_2`,
 
-For even source rank, MC-336 repairs this by **self-phase exclusion**. If coefficient `i` may depend on the other source phases but not on `x_i`, with source-coordinate degree at most `d`, the reachable output space misses a high-degree character tail. The resulting exact projection formula leaves asymptotically full RMS dephasing error for `d=o(R)` and exact dephasing first appears at `d=R-1`.
+and let `rho^2` be the average of `rho_i^2`. MC-338 proves an exact projection/energy inequality: if `E` is normalized coefficient Frobenius energy and `delta` is normalized RMS dephasing error, then
 
-MC-337 shows that literal variable exclusion is still not the invariant notion when the source coordinates satisfy relations. For odd `R`,
+`delta >= (1-rho sqrt(E))_+`.
 
-`prod_(i=1)^R x_i=1`,
+Equivalently, achieving error `delta<1` requires `E >= (1-delta)^2/rho^2`. Exact dephasing is cheap only when the architecture can predict each coefficient's own phase; if that predictability is `rho^2~1/m`, exact cancellation costs energy of order `m`.
 
-so the source-phase map has kernel `{0,1}` and image the even-parity subgroup `H`. The forbidden own phase is algebraically recoverable from the others:
+MC-339 identifies `rho` with standard information quantities for binary source phases. When `H_i=L^2(sigma(Y_i))`, `rho_i=||E[conjugate(x_i)|Y_i]||_2`. After removing the trivial mean, the excess predictability is exactly the squared Hirschfeld--Gebelein--Rényi maximal correlation between the own phase and its observation. Along a Markov information chain those maximal correlations multiply, so lossy stages cannot secretly restore cheap matched filtering. A Shannon-information corollary bounds the excess by mutual information, giving a directly interpretable sufficient condition: bounded coefficient energy plus vanishing average information about the own source phase leaves asymptotically full dephasing error.
 
-`x_i=prod_(j!=i) x_j` on `H`.
+This subsumes the earlier coordinate examples rather than discarding them. Low Walsh degree, source-variable exclusion and parity-quotient reconstruction are useful when they let one compute or bound `rho`; rank and variation remain separate because they do not determine either predictability or energy. The source-relative question is not whether the coefficient formula *mentions* its target phase, but how accurately its admitted information determines that phase after every exact source relation and reparameterization, and what analytic norm must be spent to exploit that information.
 
-The key point is the **cost** of that reconstruction. For `d<=R-2`, reachable outputs are exactly the nonconstant characters of `H` whose subset/complement class has minimal weight at most `d+1`. With `L=2^(R-1)`, `N=2^R` and `q_d` the missing nonconstant quotient characters, the exact error is
+The live route is therefore an analytic-information theorem for the actual Möbius coefficient family: exhibit a source-natural observation channel, prove small own-phase maximal correlation/information in the relevant quotient, and simultaneously control normalized coefficient energy/conditioning. A complexity restriction that does not imply those quantities can still hide the matched filter.
 
-`E_d = N (L+q_d)/(L+q_d+1)`.
-
-Hence the normalized error tends to one uniformly throughout the entire submaximal-degree range. Once `d>=(R-3)/2`, all nonconstant quotient characters are already reachable and the error nevertheless remains on the plateau `NL/(L+1)`. Only at `d=R-1` does the parity relation make the excluded phase cheap enough to reconstruct exactly, at which point the constant target enters and dephasing becomes exact.
-
-The durable resource is therefore **source-relative reconstruction complexity**, not low degree or syntactic self-phase exclusion separately. A useful information-flow restriction must prevent each output coefficient from observing *or cheaply reconstructing* the phase it is meant to cancel after all exact source relations and quotient identifications are taken into account.
-
-Rank, energy, variation, degree and own-phase reconstructibility remain independent. A class can be low rank but contain the matched filter; low degree in a target-exposing coordinate can be fully programmable; and an excluded variable can still be determined globally by the admitted variables while remaining inaccessible below a degree threshold. Any analytic theorem must charge restrictions in the same source-relative quotient representation in which programmability is tested.
-
-**Boundary.** MC-336--MC-337 are exact for the finite reciprocal endpoint and its source-phase character geometry. They do not show that a useful arithmetic coefficient family satisfies the required information-flow restriction. The odd-rank result depends on the precise parity relation and proves an all-or-nothing degree threshold there; different algebraic relations, mode sets, nonlinear output statistics or analytic norms require their own reconstruction-capacity calculation. Nothing here bounds `M(x)` or proves RH.
+**Boundary.** MC-338--MC-339 are exact for the finite reciprocal endpoint and binary/source-character observation model. The HGR composition statement requires the declared Markov information flow, and mutual information is only a convenient sufficient bound. None of these results proves that a useful arithmetic coefficient family obeys the needed information/energy restrictions, bounds `M(x)`, or proves RH.
