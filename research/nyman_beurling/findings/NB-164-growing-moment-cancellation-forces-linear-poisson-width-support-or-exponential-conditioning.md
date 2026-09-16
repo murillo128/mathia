@@ -210,7 +210,7 @@ so increasing moment order costs a factor asymptotic to a power of `1+sqrt(2)` i
 
 ### 4. Bounded conditioning forces support to spread linearly in the moment order
 
-The preceding estimate can be inverted before fixing `L/x`. If
+For `r>=2`, the preceding estimate can be inverted before fixing `L/x`. If
 
 \[
 |Q_\nu(x,\gamma)|
