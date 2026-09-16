@@ -1,33 +1,39 @@
-# MI-036 — Quantitative PNT fidelity has distinct local and remote moving capacity transitions
+# MI-036 — Quantitative PNT fidelity has a KV decay-length capacity profile
 
-**Evidence level:** literature-backed/exact synthesis from [RE-015](../../findings/RE-015-pnt-remainder-controls-upper-robin-tail.md), [RE-153](../../findings/RE-153-self-tangent-robin-height-is-a-pareto-weighted-chebyshev-deficit-average.md), and [RE-155](../../findings/RE-155-terminal-generalized-source-ambiguity.md) through [RE-167](../../findings/RE-167-fixed-width-kv-shells-have-a-distinct-local-capacity-center.md). The quantitative PNT envelope is an explicit source-class hypothesis; no claim is made that arbitrary generalized primes satisfy it.
+**Evidence level:** literature-backed/exact synthesis from [RE-015](../../findings/RE-015-pnt-remainder-controls-upper-robin-tail.md), [RE-153](../../findings/RE-153-self-tangent-robin-height-is-a-pareto-weighted-chebyshev-deficit-average.md), and [RE-155](../../findings/RE-155-terminal-generalized-source-ambiguity.md) through [RE-168](../../findings/RE-168-kv-decay-length-interpolates-local-and-remote-robin-capacity.md). The quantitative PNT envelope is an explicit source-class hypothesis; no claim is made that arbitrary generalized primes satisfy it.
 
-The terminal moment hierarchy measures ambiguity only inside the source class still allowed after stronger source information is imposed. RE-164--RE-166 identify a sharp Korobov--Vinogradov **remote-tail** capacity
+The terminal moment hierarchy measures ambiguity only inside the source class still allowed after stronger source information is imposed. RE-164--RE-166 identify a sharp Korobov--Vinogradov remote-tail capacity
 
 `K_b(p,T)=sqrt(p) log p exp(-b V(T))/V(T)`,
 
-where `V(T)=(log T)^(3/5)/(log log T)^(1/5)`. If `K_b->0`, matched sources agreeing below `T` have vanishing Robin-coordinate separation; generalized positive insertions show that positive or divergent capacity leaves order-one remote-tail ambiguity possible. RE-166 inverts this capacity and shows that the transition is an additive `O(1)` layer in the intrinsic `V` coordinate around a moving Lambert-W center.
-
-RE-167 adds the spatial-support variable that the remote capacity suppresses. If the discrepancy is confined to one fixed multiplicative shell `[T,CT]`, the sharp capacity is instead
+where `V(T)=(log T)^(3/5)/(log log T)^(1/5)`. RE-167 shows that a discrepancy confined to one fixed multiplicative shell has the smaller capacity
 
 `L_b(p,T)=sqrt(p) log p exp(-b V(T))/log T`.
 
-The extra denominator is structural: a proportional shell samples only logarithmic width `O(1/log T)` of the positive Robin kernel, whereas a remote tail can spend its PNT budget across many scales and accumulates the larger `1/V(T)` factor. Exact mass-balanced generalized-prime relocations attain the local scale while restoring the Chebyshev discrepancy to zero above the shell.
+RE-168 identifies the missing spatial scale relating them. In logarithmic height `u=log t`, the KV envelope changes by order one over
 
-Because `V(T)<<log T`, the local-shell transition occurs strictly earlier. If `v_loc=V(T_loc)` solves `L_b=1` and `v_*=V(T_*)` solves `K_b=1`, then
+`ell_KV(T)=log T/V(T)`.
 
-`v_* - v_loc = (2/(3b)) log log p + (1/(3b)) log log log p + O(1)`.
+For a shell of logarithmic width `W=o(log T)`, define
 
-This separation diverges, while each individual fixed-capacity contour still has only `O(1)` width in `V`. There is therefore no single “KV rigidity height”: the correct inversion target depends on whether the unresolved source is allowed to occupy one shell or the entire tail.
+`S_b(p;T,W)=sqrt(p) log p int_T^(T exp W) exp(-bV(t))/(t log t) dt`.
 
-The bounded-multiplicative selector regime remains far from even the lower local boundary. At `T=Bp`,
+If `xi=W/ell_KV(T)` tends to a finite value, then
 
-`L_b(p,Bp)=p^(1/2-o(1))->infinity`.
+`S_b/K_b -> Phi_b(xi)=(5/(3b))(1-exp(-3b xi/5))`.
 
-Hence order-one post-selector relocations can be made quantitatively PNT-faithful with an `o(1)` deterioration of the envelope constant. Knowing the ordinary source through a fixed multiple of `p` and imposing the full KV remainder afterwards still does not identify the normalized Robin source coordinate.
+This formula interpolates the previous sharp capacities. When `xi->0`, `S_b~W L_b`; a fixed multiplicative shell is the extreme local regime. When `xi` is order one, the shell already has remote-capacity order. When `xi->infinity` while `W=o(log T)`, the shell captures asymptotically the full remote integral up to its fixed Laplace constant.
 
-The reusable lesson is that a quantitative source theorem has **two independent inputs: error envelope and admissible spatial support of the discrepancy**. A destination kernel can assign different capacities to a localized perturbation and a distributed tail even when both obey the same pointwise source bound. Pricing only the envelope can therefore overstate the amount of unresolved information.
+The remote obstruction is therefore **subpower-local**. A width `W=omega_T ell_KV(T)` with `omega_T->infinity` and `omega_T=o(V(T))` still ends at `T^(1+o(1))`, yet contains essentially all of the remote KV capacity. The earlier `Theta(log log p)` separation between fixed-shell and remote capacity-one centers is the price of restricting available width from `Theta(ell_KV)` to `O(1)` in logarithmic height, not evidence for two different source mechanisms.
 
-For Robin, moment matching is relevant only after the actual selector/source geometry is placed relative to the appropriate capacity. If CA geometry localizes the missing source to bounded-width shells, crossing `T_loc` could already be enough for that restricted uncertainty; if remote rearrangement remains admissible, only the higher `T_*` center gives worst-case rigidity. RE-167 does not prove either selector coupling. It supplies the sharper target and shows that bounded-multiplicative selection plus quantitative PNT is insufficient.
+Matched generalized-prime controls make this an actual capacity law rather than an upper-bound artifact. Concatenate mass-balanced relocations in fixed logarithmic blocks. Each block returns its cumulative Chebyshev discrepancy exactly to zero before the next begins, so the pointwise KV envelope does not accumulate, while Robin displacements add with one sign. The resulting total displacement is a Riemann sum for `S_b`.
 
-**Boundary.** The lower sharpness constructions use generalized-prime relocations in the declared quantitative envelope and do not assert that ordinary primes realize them. The local theorem assumes fixed multiplicative shell width; the remote theorem allows distributed tail modifications. Neither controls the middle annulus, proves Robin's inequality, removes the zero-packet branch, or replaces the missing ordinary-prime/CA selector theorem.
+The reusable source-fidelity variable is therefore not simply “local versus remote.” It is the dimensionless width
+
+`xi = W V(T)/log T`.
+
+A pointwise source envelope has different destination power depending on how many of its intrinsic decay lengths the unresolved discrepancy may occupy. Restricting source error to a geometrically small or even subpower region can still leave full remote ambiguity if that region contains `omega(1)` KV decay lengths.
+
+For Robin, moment matching becomes relevant only after the actual selector/source geometry is placed relative to this profile. At bounded-multiplicative `T=Bp`, even the fixed-width capacity diverges, so quantitative PNT fidelity still does not identify the source coordinate. A genuinely new ordinary-prime/CA input must constrain **where inside the KV decay-length window** mass can move, not merely improve the global envelope or state that the perturbation is subpower-local.
+
+**Boundary.** The lower sharpness constructions use generalized-prime relocations in the declared quantitative envelope and do not assert that ordinary primes realize them. The interpolation assumes `W=o(log T)` for the stated local expansion, and it is a terminal-source capacity result, not a Robin proof or a zero-side theorem.

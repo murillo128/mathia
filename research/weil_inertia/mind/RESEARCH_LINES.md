@@ -8,21 +8,25 @@ This file holds the current mathematical questions suggested by the durable Weil
 
 WI-304--WI-316 build the source-exact comparison architecture, separate compact negative sectors from positive tail reserve, and show that cofinal vanishing-cap comparison bottoms converge to the global compact-support Weil floor. Consequently a comparison lower bound with `o(1)` threshold loss is already RH-equivalent; vanishing threshold error is not a softer intermediate theorem.
 
-WI-317--WI-318 show that feeding the same scalar lower semibound back through source-exact localization cannot produce a fixed contraction for finite portfolios or for arbitrary adaptive unit-window families with bounded total `H^1`. WI-319 identifies a sharp `t^2/log t` frequency-second-moment threshold for the **high-frequency recurrence witness** used in those proofs: critical-scale resonant localizers can defeat that witness.
+WI-317--WI-318 show that feeding the same scalar lower semibound back through source-exact localization cannot produce a fixed contraction for finite portfolios or arbitrary adaptive unit-window families with bounded total `H^1`. WI-319 identifies the sharp `t^2/log t` complexity threshold only for the high-frequency recurrence witness used in those proofs.
 
-WI-320 removes the apparent architectural loophole. The exact source-localization defect has an archimedean coefficient `K(a)>0` on `(0,h_0)`, where `h_0=log rho<log 2` and `rho^3-rho-1=0`. Choose one nonnegative smooth test function whose support diameter is below `h_0`. Its autocorrelation is nonnegative inside that interval and vanishes before the first arithmetic lag `log 2`, so every prime-power term is exactly zero. For every normalized real admissible multiwindow localizer, aggregate autocorrelation satisfies `R(a)<=1`; hence the entire localization defect on this same test vector is nonnegative.
+WI-320 closes the real-window loophole completely. The exact source-localization defect has an archimedean coefficient `K(a)>0` on `(0,h_0)`, with `h_0=log rho<log2`. One nonnegative smooth test supported inside that interval kills every prime-power lag and has nonnegative autocorrelation. Since every normalized real multiwindow localizer has aggregate autocorrelation `R(a)<=1`, the same test makes the entire localization defect nonnegative for **every** adaptive real localizer.
 
-Therefore **no adaptive source-exact multiwindow family can strictly improve a scalar Weil semibound by recycling only that same scalar semibound on the localized pieces**, regardless of portfolio size, regularity budget or carrier frequency. The `t^2/log t` scale remains sharp only for the old recurrence falsifier; paying that complexity no longer counts as an escape from the scalar-bootstrap no-go.
+WI-321 shows this is not an artifact of real windows or scalar presentation dimension. Package any finite complex multiwindow family as a Hilbert-valued window `G`. The exact defect becomes
 
-The live route must add information absent from the scalar premise: a genuinely stronger localized arithmetic estimate, vector/matrix/mode/prime-dependent state carried between scales, a different source-exact decomposition whose correction is not trapped by this sign witness, or direct coercivity/inertia control of the exact comparison form. Localization may still organize such information, but it cannot manufacture a stronger scalar constant from itself.
+`Re((1-R_G(a)) h_f(a))`.
+
+On the same short real nonnegative witness, `h_f(a)>=0` and Cauchy--Schwarz gives `Re R_G(a)<=1`, so the defect remains nonnegative for every finite complex channelization and every unitary mixing of its channels. Applying the same scalar semibound componentwise therefore cannot contract the scalar constant either.
+
+The live route must add **genuinely non-scalar information**, not merely more channels: a matrix/coupled lower bound with cross-channel terms, prime- or mode-dependent admissible state, a stronger localized arithmetic estimate, a different source-exact decomposition whose correction is not trapped by the short witness, or direct coercivity/inertia control. Finite auxiliary dimension, complex phases and carrier modulation are representation resources only when the propagated premise is still the same scalar inequality.
 
 ## Track comparison coercivity, compact complexity and information content separately
 
-Endpoint concentration, carrier frequency, compact correction size, cap defect and localization complexity remain useful implementation resources. WI-320 changes their logical role: none is a source of scalar contraction by itself. The decisive new currency is **what extra information is fed into the localized pieces beyond the global scalar floor**. A more complex localizer without stronger input is still the same ineffective channel.
+Endpoint concentration, carrier frequency, compact correction size, cap defect, localization complexity and channel dimension remain useful implementation resources. WI-320--WI-321 change their logical role: none can strengthen a scalar premise by itself. The decisive currency is **what extra relation is propagated between localized pieces beyond the Cartesian product of scalar semibounds**.
 
 ## Keep compact certificate design separate from full Weil positivity
 
-Finite-dimensional trial-subspace optimization remains downstream of source-valid information retention. The capped decomposition can expose bounded positive tail margin and finite negative sectors, but WI-315--WI-316 make its cofinal semantics RH-equivalent and WI-320 blocks autonomous scalar improvement. Any compact certificate that contributes to RH must therefore import a nontrivial sign-producing estimate rather than rely on iterative scalar localization.
+Finite-dimensional trial-subspace optimization remains downstream of source-valid information retention. The capped decomposition can expose bounded positive tail margin and finite negative sectors, but WI-315--WI-316 make its cofinal semantics RH-equivalent and WI-320--WI-321 block autonomous scalar improvement even after finite complex channelization. Any compact certificate that contributes to RH must therefore import a nontrivial sign-producing estimate rather than rely on iterative scalar localization.
 
 ## Preserve the signed-density quotient
 
