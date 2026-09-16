@@ -4,7 +4,7 @@ This file holds the current mathematical questions suggested by the durable Nyma
 
 ## Resolve the one-Poisson-width interlaced signed-sampler regime
 
-**Linked intuitions:** `MI-001-target-aware-gram-geometry-must-carry-absolute-scale` through `MI-035-jordan-transport-length-is-the-conditioning-price-of-sign-collapse`.
+**Linked intuitions:** `MI-001-target-aware-gram-geometry-must-carry-absolute-scale` through `MI-037-high-ordinate-zeta-bounds-cap-the-boundary-approach-tariff`.
 
 NB-148 identifies the signed escape from positive exterior Poisson sampling: zero total sampler mass cancels the universal Hadamard logarithm but exports an equal sign debt. NB-150--NB-155 show that mesoscopic spreading, fixed-scale packets, compact signed samplers, boundary approach and sublinear vertical widening do not isolate a logarithmic target packet under sublogarithmic effective conditioning.
 
@@ -24,17 +24,25 @@ NB-163 shows that imposing finitely many additional local moment cancellations d
 
 `Xi_r = M_r(nu;t_0)/(c a^r)`
 
-with `M_r=int |t-t_0|^r d|nu|` bounds both every normalized Poisson target response and the signed Euler response relative to its natural `c/a` boundary scale. For fixed `r`, `Xi_r=o(1)` therefore suppresses target and Euler sides together. If the sampler is supported in radius `L`, bounded conditioning gives `Xi_r <= C(L/a)^r`: sub-width support gains a factor per vanished moment, but at the unresolved one-width scale `L asymp a` finite-order moment balancing supplies no new small parameter.
+with `M_r=int |t-t_0|^r d|nu|` bounds both every normalized Poisson target response and the signed Euler response relative to its natural `c/a` boundary scale. For fixed `r`, `Xi_r=o(1)` therefore suppresses target and Euler sides together.
 
-The bounded-conditioning signed route is therefore narrowed to a scale-invariant intermediate geometry with an arithmetic requirement. Many-width sign separation exports an adverse `Omega(log G)` zero reservoir; sub-Poisson transport loses the target; and finite-order local Taylor cancellation suppresses target and generic Euler leakage through the same normalized moment. The remaining regime is **one-Poisson-width local interlacing with source-specific cancellation**, where positive and negative mass overlap strongly enough to evade the separated-reservoir argument but arithmetic prime phases must cancel better than the generic transport/moment majorants while preserving natural-scale target gain.
+NB-164 closes the growing-order local-moment escape on the target side. Exact minimax duality identifies the residual target capacity after annihilating degree `<r` polynomials with the polynomial-approximation error of the scaled Poisson kernel. At any fixed number of Poisson widths that capacity decays exponentially in `r`; fixed target gain therefore requires exponentially growing conditioning, while bounded conditioning forces support to spread at least linearly in `r` measured in Poisson widths. Increasing formal moment order is not a free arithmetic resource.
 
-The live theorem is whether such one-width interlacing can exploit actual von Mangoldt phases to suppress the Euler side without shrinking the target by the same factor, or whether a nonlocal geometry/increasing-order architecture can do so with its conditioning cost controlled. A claim based only on finitely many vanishing local moments is no longer an escape. An alternative route must worsen conditioning/lower-height assumptions or couple the signed sampler to the Nyman/source observable before the generic Poisson/Euler Taylor currency becomes load-bearing.
+NB-165 then corrects the boundary tariff itself for the **actual high-ordinate zeta source**. The absolute Euler estimate `O(V_G/a_G)` remains valid, but Cully--Hugill--Leong's uniform one-line estimate gives the stronger alternative `O(V_G log G/log log G)`. The signed conservation cost is therefore governed by
 
-## Keep signed conservation, conditioning, boundary scale, sign-support geometry, transport length, moment order and adverse occupancy separate
+`C_G min{a_G^(-1), log G/log log G}`.
 
-Positive sampling pays the Hadamard background. Zero-mass sampling removes it but creates sign debt. Boundary approach and first-order transport combine through `Theta_G=C_G ell_G/a_G`; higher fixed-order local cancellation is priced by `Xi_r=M_r/(c a^r)`. NB-158--NB-160 show that bounded conditioning plus universal moment cancellation does not help while opposite signs remain separated by many Poisson widths. NB-161--NB-162 show that transport much finer than the Poisson width suppresses both prime-side leakage and target response. NB-163 shows the same coupling persists for every fixed finite local Taylor order.
+Once `a_G << log log G/log G`, moving the sampler still closer to `Re s=1` no longer increases the source-side bill at the inverse-gap rate. In that extreme boundary regime `C_G=o(log log G)` is sufficient for essentially the full target charge to reappear as adverse signed zero mass, and a fixed fraction remains within ordinate radius `O(1+C_G)`. Combined with the explicit zero-free region, the required adverse zero population still diverges.
 
-A future sampler must therefore expose target charge, total variation, boundary gap, Jordan-support overlap/separation in Poisson units, mean optimal transport length, local moment order and normalized moment size, signed background moments, local zero population, and any genuinely arithmetic prime/Nyman-side cancellation simultaneously. Cardinality and atomicity are no longer relevant escape resources, and neither absolute minimum support distance nor a list of vanishing moments is a useful resource without normalization by the shrinking Poisson width.
+The bounded-conditioning signed route is therefore narrowed to a scale-invariant and source-specific intermediate geometry. Many-width sign separation exports an adverse zero reservoir; sub-Poisson transport loses the target; high local moment order requires nonlocal support or exponential conditioning; and arbitrarily close boundary approach no longer supplies unbounded arithmetic leverage because the actual one-line logarithmic derivative caps the inverse-gap tariff.
+
+The live theorem is whether **one-Poisson-width local interlacing can exploit cancellation in the actual values of `zeta'/zeta` beyond the available pointwise `log G/log log G` control while retaining target gain**, or whether a genuinely nonlocal geometry can do so with its support and conditioning costs controlled. A claim based only on boundary motion or formal moment cancellation is no longer an escape.
+
+## Keep signed conservation, conditioning, boundary scale, sign-support geometry, transport length, moment order, high-ordinate source control and adverse occupancy separate
+
+Positive sampling pays the Hadamard background. Zero-mass sampling removes it but creates sign debt. First-order target transport is priced by `Theta_G=C_G ell_G/a_G`; fixed-order Taylor cancellation is priced by `Xi_r=M_r/(c a^r)`; growing order pays the minimax support/conditioning tradeoff of NB-164. NB-165 adds a genuinely source-specific cap: for the global conservation remainder, the effective boundary multiplier is `min{a_G^(-1), log G/log log G}` rather than `a_G^(-1)` in every regime.
+
+A future sampler must therefore expose target charge, total variation, boundary gap, Jordan-support overlap/separation in Poisson units, mean optimal transport length, local moment order and normalized moment size, support growth, signed background moments, the actual high-ordinate logarithmic-derivative input, local zero population, and any further arithmetic cancellation simultaneously. Cardinality and atomicity are no longer relevant escape resources, and neither absolute minimum support distance nor a list of vanishing moments is useful without the corresponding normalized destination cost.
 
 ## Push canonical shell discrepancy independently
 
