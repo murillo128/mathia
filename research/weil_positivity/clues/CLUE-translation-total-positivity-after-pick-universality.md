@@ -1,7 +1,7 @@
 ---
 id: CLUE-weil-positivity-translation-total-positivity-after-pick-universality
 type: research-clue
-status: proposed
+status: resolved
 origin: mind
 target_line: weil_positivity
 based_on:
@@ -48,3 +48,11 @@ A successful first stage needs only a genuine nonuniversal ordered minor tied ca
 ## Evidence boundary
 
 AF-371 proves the Hamburger/Schoenberg separation in its own reciprocal-entire-function setting. The current Weil-positivity mind proves only that finite scalar Pick/confluent-jet positivity is universal in its Herglotz/resolvent category. No persisted result currently identifies the Weil source with a Pólya-frequency translation kernel, proves any nontrivial total-positivity minor, or shows that Schoenberg's criterion transfers to the existing Weil construction. This clue proposes that exact transfer test; it does not assert that the required kernel exists or that total positivity is easier than RH.
+
+## Research disposition
+Outcome: narrowed
+
+Resolved by:
+- [[research/weil_positivity/findings/WP-324-direct-laplace-translation-of-mangoldt-herglotz-source-is-strictly-sign-regular-not-polya-frequency.md]]
+
+The direct source-native Laplace passage fails already at the first nontrivial ordered minor: its `2x2` and `3x3` translation determinants are strictly negative, and in fact all orders have the fixed sign `(-1)^(m(m-1)/2)` for every nondegenerate positive source measure. Reversing the orientation gives a Hankel kernel that is totally positive for every positive measure, so that repair is matched-control universal rather than arithmetic-selective. A future transfer would therefore need a genuinely different nonlinear or non-Laplace construction with an independent source-forced sign theorem.
