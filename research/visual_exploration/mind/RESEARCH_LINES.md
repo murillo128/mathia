@@ -6,26 +6,20 @@ This file holds the current mathematical questions suggested by the durable visu
 
 **Linked intuitions:** `MI-009-stable-decoding-is-a-collision-geometry-question` through `MI-028-fiber-variance-certifies-nonlinear-heat-bath-slowdown`.
 
-VIS-237--VIS-247 progressively quotient grid phase, count noise, one-point intensity, endpoint phase and symmetric-Dirichlet nuisance. Conditioning on `Lambda=sum_i log X_i` gives the exact parameter-free coarea law on each regular level while leaving the cut-averaged tent statistic nonconstant.
+VIS-237--VIS-251 progressively quotient grid phase, count noise, one-point intensity, endpoint phase and symmetric-Dirichlet nuisance, then establish the exact conditional benchmark and irreducible random-scan three-coordinate heat-bath chain. VIS-252--VIS-253 give exact ordinary and logarithmic contrast eigenmodes with integrated autocorrelation time `m-2` triple updates.
 
-VIS-248 gives an exact `m=3` conditional benchmark. VIS-249 lifts it to an exact random-scan three-coordinate heat-bath kernel in arbitrary dimension. VIS-250 proves each regular level is connected and the exact chain irreducible; VIS-251 rules out dominant-label trapping as the high-`|lambda|` explanation.
-
-VIS-252--VIS-253 supply two exact additive-invariant calibrations. Every ordinary contrast `x_i-x_j` and every logarithmic contrast `log x_i-log x_j` is an eigenmode with `rho_m=(m-3)/(m-1)` and integrated autocorrelation time `m-2` triple updates.
-
-VIS-254 adds an exact one-moment nonlinear lower-bound diagnostic. For any fixed-weight exact heat-bath chain, the averaged conditional fiber variance `D_f` is the Dirichlet form and `delta_f=D_f/Var(f)` satisfies `tau_int(f)>=2/delta_f-1`. For the present triple chain the linear families have `delta=2/(m-1)` with equality in the bound.
-
-VIS-255 adds the sharp second dissipation moment. Writing `eta_f=||(I-P)f||^2/Var(f)`, the first two spectral moments obey `delta_f^2<=eta_f<=delta_f` and imply
-
-`tau_int(f) >= B2(delta_f,eta_f) = 2(1-delta_f+delta_f^2-eta_f)/(delta_f-eta_f)-1`
-
-when `0<delta_f<1` and `eta_f<delta_f`. The bound is sharp for the two moments and `eta_f` has an exact two-independent-block residual estimator, so it can be tested from the same exact heat-bath machinery without fitting a long-lag curve.
-
-The live operational question is now narrower. A frozen implementation must reproduce VIS-248 and both linear/log eigenmode families, then estimate `delta_(bar T)`. If the one-moment inequality certifies slowdown, the sampler budget must reflect it. If it is inconclusive, estimate `eta_(bar T)` and test whether `B2(delta_(bar T),eta_(bar T))>m-2`; this can certify nonlinear slowdown even when `delta` alone cannot. Only if both exact moment gates are inconclusive do separated-start and long-lag checks remain necessary before comparing `bar T` with the prime data.
+VIS-254--VIS-255 provide exact nonlinear slowdown certificates. The averaged conditional fiber variance gives the Dirichlet ratio `delta_f` and `tau_int(f)>=2/delta_f-1`; the second dissipation moment `eta_f` gives the sharper two-moment lower bound `B2(delta_f,eta_f)`. The operational question remains to reproduce the exact benchmarks in a frozen implementation and test these moment gates on the cut-averaged tent statistic before interpreting any apparent prime residual. Failure of both gates does not certify fast mixing and still requires separated-start/long-lag checks.
 
 ## Keep endpoint semantics and richer nuisance families outside post-hoc tuning
 
-If interval endpoints are nuisance, use the cut average `bar T`; if physical endpoints are source-bearing, retain the separate exact endpoint channel. The exact log-product quotient and VIS-248--VIS-255 heat-bath theory belong to the one-parameter symmetric Dirichlet family. Asymmetric Dirichlet models, mixtures, renewal laws and hard-core processes require their own sufficient coordinates or independently frozen nuisance parameters.
+If interval endpoints are nuisance, use the cut average; if physical endpoints are source-bearing, retain the separate exact endpoint channel. The log-product quotient and current heat-bath theory belong to the one-parameter symmetric Dirichlet family. Asymmetric Dirichlet models, mixtures, renewal laws and hard-core processes need their own sufficient coordinates or independently frozen nuisance parameters.
 
-## Preserve the older low-frequency and fixed-clock controls
+## Treat low-frequency suppression as a kernel-regularity problem, not a moment-count problem
 
-VIS-130--VIS-160 still show that finite signed moment-null packets and deterministic selector clocks can mimic broad visual/mixing effects. Any confirmed spacing residual must survive exact coordinate controls and connect to a source-sensitive low-frequency/destination quantity rather than remain a visually distinctive but representation-dependent statistic.
+**Linked intuition:** `MI-007-moment-null-packets-pay-an-order-matched-variation-gate`.
+
+VIS-145--VIS-147 show that for smooth finite-window corrections, cancelling successive polynomial moments moves the response to higher Taylor order but simultaneously raises the total-variation/conditioning bill; packet rescaling cannot improve the resulting signal-to-error ratio.
+
+VIS-256 adds a different obstruction at the sine-kernel/CUE support edge. The limiting centered profile has the nonanalytic cusp `T(q)=min(|q|,1)`. For every fixed cancellation order there is a bounded-normalization symmetric signed packet on a shrinking interval that annihilates all ordinary moments through that order yet pairs with the cusp at exactly `Theta(b)`. Thus zero mass, symmetry and any fixed finite set of polynomial vanishing moments do **not** force the universal `O(b)` low-frequency null to become `o(b)`.
+
+A stronger support-safe companion must therefore control a cusp-adapted quantity such as the `|q|` pairing, prove a quantitatively uniform finite-window smoothing scale that survives the source-window limit, or use a source-specific identity that changes the destination observable. Growing moment order remains a separate conditioning problem. The older deterministic selector-clock and low-frequency matched controls remain relevant: visually distinctive structure is not evidence until it survives the exact quotient and is consumed by a source-sensitive destination.

@@ -1,33 +1,33 @@
-# MI-036 — Quantitative PNT fidelity has a sharp moving Lambert-W transition before moment complexity
+# MI-036 — Quantitative PNT fidelity has distinct local and remote moving capacity transitions
 
-**Evidence level:** literature-backed/exact synthesis from [RE-015](../../findings/RE-015-pnt-remainder-controls-upper-robin-tail.md), [RE-153](../../findings/RE-153-self-tangent-robin-height-is-a-pareto-weighted-chebyshev-deficit-average.md), [RE-155](../../findings/RE-155-terminal-generalized-source-ambiguity.md) through [RE-166](../../findings/RE-166-lambert-w-inversion-localizes-the-kv-capacity-transition.md). The quantitative PNT envelope is an explicit source-class hypothesis for matched controls; no claim is made that arbitrary generalized primes satisfy it.
+**Evidence level:** literature-backed/exact synthesis from [RE-015](../../findings/RE-015-pnt-remainder-controls-upper-robin-tail.md), [RE-153](../../findings/RE-153-self-tangent-robin-height-is-a-pareto-weighted-chebyshev-deficit-average.md), and [RE-155](../../findings/RE-155-terminal-generalized-source-ambiguity.md) through [RE-167](../../findings/RE-167-fixed-width-kv-shells-have-a-distinct-local-capacity-center.md). The quantitative PNT envelope is an explicit source-class hypothesis; no claim is made that arbitrary generalized primes satisfy it.
 
-The terminal moment hierarchy measures ambiguity only relative to the source class that remains admissible. Under coarse PNT information `theta_Q(x)=x+o(x)`, terminal generalized-source modifications can match many raw or Chebyshev moments while moving the normalized Robin source coordinate by order one. RE-162--RE-163 quantify that coarse-information ambiguity through Chebyshev capacity and kernel-weighted leakage.
-
-RE-164--RE-165 place a stronger source-fidelity gate before this hierarchy. For a Korobov--Vinogradov-scale envelope the correct remote inversion currency is
+The terminal moment hierarchy measures ambiguity only inside the source class still allowed after stronger source information is imposed. RE-164--RE-166 identify a sharp Korobov--Vinogradov **remote-tail** capacity
 
 `K_b(p,T)=sqrt(p) log p exp(-b V(T))/V(T)`,
 
-with `V(T)=(log T)^(3/5)/(log log T)^(1/5)`. Quantitative PNT rigidity holds when `K_b(p,T)->0`, while generalized positive insertions inside the same exponent class show that a positive or divergent capacity leaves order-one terminal ambiguity possible. The nominal fixed-horizon equality `b kappa_B=1/2` is therefore not rigid: the slowly varying correction has the wrong sign and sends `K_b` to infinity.
+where `V(T)=(log T)^(3/5)/(log log T)^(1/5)`. If `K_b->0`, matched sources agreeing below `T` have vanishing Robin-coordinate separation; generalized positive insertions show that positive or divergent capacity leaves order-one remote-tail ambiguity possible. RE-166 inverts this capacity and shows that the transition is an additive `O(1)` layer in the intrinsic `V` coordinate around a moving Lambert-W center.
 
-RE-166 inverts this capacity exactly. The capacity-one center in the intrinsic `V` coordinate is
+RE-167 adds the spatial-support variable that the remote capacity suppresses. If the discrepancy is confined to one fixed multiplicative shell `[T,CT]`, the sharp capacity is instead
 
-`v_*(p)=b^(-1) W_0(b log(p) sqrt(p))`,
+`L_b(p,T)=sqrt(p) log p exp(-b V(T))/log T`.
 
-with the corresponding terminal horizon determined by `V(T_*)=v_*` and explicitly invertible through the `W_{-1}` branch. For every terminal horizon,
+The extra denominator is structural: a proportional shell samples only logarithmic width `O(1/log T)` of the positive Robin kernel, whereas a remote tail can spend its PNT budget across many scales and accumulates the larger `1/V(T)` factor. Exact mass-balanced generalized-prime relocations attain the local scale while restoring the Chebyshev discrepancy to zero above the shell.
 
-`K_b(p,T)=exp(-b Delta_p)/(1+Delta_p/v_*)`,
+Because `V(T)<<log T`, the local-shell transition occurs strictly earlier. If `v_loc=V(T_loc)` solves `L_b=1` and `v_*=V(T_*)` solves `K_b=1`, then
 
-where `Delta_p=V(T)-v_*(p)`. Hence `Delta_p->+infinity` is the rigidity regime, bounded `Delta_p` leaves nonvanishing generalized-source capacity, and `Delta_p->-infinity` gives divergent capacity.
+`v_* - v_loc = (2/(3b)) log log p + (1/(3b)) log log log p + O(1)`.
 
-The important sharpening is that the transition is much thinner than the leading fixed-`B` scale suggests. Every fixed positive capacity contour lies only an additive `O(1)` distance from every other one in `V`. The moving center itself has
+This separation diverges, while each individual fixed-capacity contour still has only `O(1)` width in `V`. There is therefore no single “KV rigidity height”: the correct inversion target depends on whether the unresolved source is allowed to occupy one shell or the entire tail.
 
-`v_*(p)=log(p)/(2b)+log(2b)/b+o(1)`,
+The bounded-multiplicative selector regime remains far from even the lower local boundary. At `T=Bp`,
 
-while its canonical-height coefficient contains a slowly varying relative displacement of order `log log log p / log log p`. That displacement is far larger than the actual transition layer. In `log T` coordinates an `O(1)` `V` layer has width `O((log p)^(2/3)(log log p)^(1/3))`; in the normalized `B` coordinate it has width only `O(1/log p)`.
+`L_b(p,Bp)=p^(1/2-o(1))->infinity`.
 
-The reusable lesson is stronger than “use the exact capacity rather than a leading exponent.” When a source theorem and a destination kernel define a sharp monotone capacity, the meaningful boundary is a **moving inversion contour**, and the scale on which source rigidity changes can be parametrically thinner than the scale on which its leading asymptotic center moves. Equality at a coarse exponent is therefore not a boundary theorem. One must resolve the capacity on its own transition coordinate before pricing downstream approximation or moment complexity.
+Hence order-one post-selector relocations can be made quantitatively PNT-faithful with an `o(1)` deterioration of the envelope constant. Knowing the ordinary source through a fixed multiple of `p` and imposing the full KV remainder afterwards still does not identify the normalized Robin source coordinate.
 
-For Robin, exact or approximate moment matching is relevant only after the source class and terminal position are shown to remain on the ambiguous side of this moving center. To force source rigidity from KV-strength information, the actual ordinary-prime/CA selector must place the effective terminal horizon above `T_*(p)` by an unbounded amount in `V`, not merely reach the leading equality coefficient. RE-166 does not supply that selector-height coupling; it gives the quantitative target that such a theorem would have to cross.
+The reusable lesson is that a quantitative source theorem has **two independent inputs: error envelope and admissible spatial support of the discrepancy**. A destination kernel can assign different capacities to a localized perturbation and a distributed tail even when both obey the same pointwise source bound. Pricing only the envelope can therefore overstate the amount of unresolved information.
 
-**Boundary.** RE-164--RE-166 do not prove Robin's inequality, control the middle annulus, or eliminate the zero-packet branch. Their lower sharpness uses generalized-prime insertions in the declared quantitative envelope and does not assert that ordinary primes realize those perturbations. The live arithmetic issue remains the coupling between the actual CA selector/source geometry and this moving terminal horizon, or another non-terminal source channel that bypasses the capacity altogether.
+For Robin, moment matching is relevant only after the actual selector/source geometry is placed relative to the appropriate capacity. If CA geometry localizes the missing source to bounded-width shells, crossing `T_loc` could already be enough for that restricted uncertainty; if remote rearrangement remains admissible, only the higher `T_*` center gives worst-case rigidity. RE-167 does not prove either selector coupling. It supplies the sharper target and shows that bounded-multiplicative selection plus quantitative PNT is insufficient.
+
+**Boundary.** The lower sharpness constructions use generalized-prime relocations in the declared quantitative envelope and do not assert that ordinary primes realize them. The local theorem assumes fixed multiplicative shell width; the remote theorem allows distributed tail modifications. Neither controls the middle annulus, proves Robin's inequality, removes the zero-packet branch, or replaces the missing ordinary-prime/CA selector theorem.

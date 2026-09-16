@@ -1,37 +1,19 @@
-# MI-007 — Moment-null shrinking packets pay an order-matched total-variation gate
+# MI-007 — Moment-null shrinking packets are limited by conditioning and by nonanalytic destination cusps
 
-**Evidence level:** exact finite-window moment obstruction, minimax total-variation bound, and effective-CUE calibration audit through VIS-147
+**Evidence level:** exact synthesis from the finite-window moment/capacity chain VIS-145--VIS-147 and the sine-kernel cusp obstruction [VIS-256](../../findings/VIS-256-finite-moments-do-not-beat-sine-kernel-cusp.md).
 
-## Core intuition
+Vanishing moments are useful only relative to the regularity of the function they are asked to annihilate. In the smooth finite-window regime, VIS-145 shows that a zero second frequency moment removes the entire common quadratic centered-cosine response, not only the CUE part. The first possible deterministic distinction then moves to quartic or higher order.
 
-Vanishing moments are not selective unless the source and null occupy different functional directions after the exact observable is frozen. In the current support-edge companion, imposing zero second frequency moment cancels the quadratic low-frequency response of every smooth finite-window correction, not merely the CUE null. The first common deterministic distinction is therefore quartic or higher.
+That shift has an exact conditioning bill. VIS-146 gives `|m_(2j)(nu_b)| <= b^(2j)||nu_b||_TV`; retaining an order-one `2j`-th moment on bandwidth `b` therefore costs at least `b^(-2j)` total variation. Any uncertainty controlled linearly by the same variation is amplified in lockstep. Packet rescaling cannot create signal-to-error separation; the post-calibration source coefficient must beat an error gate at the same order.
 
-Shrinking support then imposes a matching information bill: retaining an order-one `2j`-th moment on bandwidth `b` costs at least `b^(-2j)` total variation, and any uncertainty controlled linearly by that same variation is amplified in lockstep. Rescaling cannot manufacture signal-to-error separation.
+VIS-256 shows that this Taylor-order picture is not even the right abstraction when the limiting destination is nonsmooth. The centered sine-kernel/CUE form-factor increment is `T(q)=min(|q|,1)`, so near zero the destination is the cusp `|q|`. For every fixed `n` there is an explicit symmetric finite signed measure with bounded-in-`b` total variation that annihilates every ordinary moment through degree `2n-1`, yet after dilation to `[-b,b]` satisfies
 
-## Strongest justified principle
+`int T(q) dnu_b(q) = c_n b`, with `c_n != 0`.
 
-VIS-145 proves that for any finite-window signed kernel `H`, the centered-cosine response has leading term `2 pi^2 mu_2(H) q^2` with quartic remainder. A packet with `m_2=0` therefore removes the complete quadratic term regardless of whether `H` is universal or arithmetic. The hoped-for zeta-specific quadratic survivor is impossible inside this common representation.
+Thus **no fixed finite number of polynomial moments forces an improvement from `O(b)` to `o(b)` against the sine-kernel cusp**. Moment cancellation can eliminate a finite Taylor jet, but `|q|` is not represented by such a jet. This obstruction is logically different from the total-variation price of smooth high-order cancellation: here even keeping the normalization bounded does not remove the linear response.
 
-VIS-146 gives the exact capacity inequality `|m_{2j}(nu_b)| <= b^(2j)||nu_b||_TV`. Quartic normalization after second-moment cancellation needs variation at least `b^-4`, and a sup-norm uncertainty `epsilon_b` produces worst-case packet error `epsilon_b||nu_b||_TV`. The robust ratio is consequently bounded by `|A_{2j}|b^(2j)/epsilon_b`, independent of packet scaling. For the quartic route, `epsilon_b=o(|A_4|b^4)` is the necessary asymptotic gate.
+The combined design principle is to inspect destination regularity before choosing moment constraints. For a uniformly smooth kernel, moments can suppress successive derivatives but the conditioning cost must be paid. For a cusp or other nonanalytic feature, polynomial moments may be the wrong dual coordinates altogether; one needs direct control of a cusp-adapted functional such as `int |q| dnu_b`, a packet architecture that annihilates the actual singular profile, or a theorem giving a uniform finite-window smoothing scale before the asymptotic limit is taken.
 
-VIS-147 then audits the candidate source coefficient. The standard finite-height `rho_bar^-2` and `rho_bar^-3` two-point corrections are already tangent to effective finite-CUE size and scale calibration. Moreover the frozen observable uses a growing `Theta(L)` source window, so fixed-spacing remainder estimates do not control the required fourth spatial moment of the post-calibration residual.
+For the support-edge zeta/CUE route, adding zero mass, symmetry or more fixed ordinary moments to the low-frequency companion is therefore not a legitimate claim of stronger null suppression. The source-specific arithmetic residual, theorem/transfer error, normalization and covariance still have to be propagated through whatever extra mechanism actually controls the cusp.
 
-## Program consequence
-
-Derive the arithmetic residual **after** effective-CUE size/scale calibration in the exact bounded-source coordinate, and estimate its growing-window fourth moment together with the theorem/transfer error in a norm that survives packet integration. Test the deterministic inequality `epsilon_L=o(|A_4(L)|b_L^4)` before tuning packet shapes or computing covariance.
-
-If that gate fails, move to a different observable or genuinely wider/nonlocal information channel rather than adding more moment cancellations, which only raises the total-variation exponent.
-
-## Counterevidence / boundary
-
-The argument does not prove that the quartic zeta residual vanishes. Its coefficient may grow with the source window, or structured oscillation may provide stronger error control than a worst-case sup/variation envelope. A source-specific contribution may also lie outside the common smooth centered-cosine representation.
-
-The minimax bound is deliberately robust; additional correlation between the packet and the actual error could improve practical behavior, but such correlation would itself require a theorem and cannot be assumed.
-
-## Epistemic status
-
-**Exact design boundary: second-moment cancellation removes every common quadratic finite-window response, and the first surviving quartic channel must beat an order-matched `b^4` error gate that packet rescaling cannot improve; the required post-calibration growing-window zeta coefficient is not yet known.**
-
-## Falsification criterion
-
-Construct a smooth finite-window correction whose quadratic response survives an `m_2=0` packet, or exhibit a quartic-normalized shrinking packet with total variation `o(b^-4)`, or derive the required post-calibration zeta quartic coefficient and error bound in a regime that violates the stated minimax capacity inequality.
+**Boundary.** The VIS-256 construction is a sharpness obstruction for deductions from bounded total variation plus any *fixed finite* set of ordinary moments. It does not say every moment-balanced packet has linear cusp response, and it does not provide a uniform finite-`N` lower bound: at fixed finite source window the profile can be smoother on sufficiently tiny scales. If cancellation order grows with the asymptotic parameter, total variation and conditioning again become part of the problem. Nothing here proves a zeta-specific arithmetic residual or finite-height transfer theorem.

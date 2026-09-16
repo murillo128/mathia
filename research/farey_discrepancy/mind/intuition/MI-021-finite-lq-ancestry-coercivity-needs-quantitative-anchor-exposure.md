@@ -1,51 +1,25 @@
 # MI-021 — Finite-`L^q` ancestry coercivity is anchored cut exposure, and its cost depends on anchor geometry
 
-**Evidence level:** exact/proved synthesis from [FD-147](../../findings/FD-147-finite-seed-ancestry-coercivity-is-exactly-an-anchored-cut-problem.md) through [FD-156](../../findings/FD-156-one-parent-prime-face-forests-force-exponential-expansion-load-tradeoff.md).
+**Evidence level:** exact/proved synthesis from [FD-147](../../findings/FD-147-finite-seed-ancestry-coercivity-is-exactly-an-anchored-cut-problem.md) through [FD-157](../../findings/FD-157-multi-parent-prime-face-coercivity-requires-cross-core-boolean-leakage.md).
 
-For binary orientations anchored on `D`, finite-`L^q` recovery is controlled by anchored boundary exposure:
+For binary orientations anchored on `D`, finite-`L^q` recovery is controlled by anchored boundary exposure: `C^(bin)_(q,D)=h_D(nu,eta)^(-1/q)`. Connectivity only excludes zero boundary; stable recovery requires every admissible macroscopic flip to carry uniformly positive observed boundary mass.
 
-`C^(bin)_(q,D)=h_D(nu,eta)^(-1/q)`.
+FD-148--FD-153 price this for rank-aligned divisor-closed anchors. A fixed finite anchor forces large parent amplification; bounded parent distortion needs positive anchor mass. Central-rank anchors retain Gaussian-depth fluctuations, while bounded residual depth appears only as the rank anchor approaches total source mass.
 
-Connectivity merely excludes zero boundary. Stable recovery requires every admissible macroscopic flip to carry uniformly positive observed boundary mass.
+FD-154 gives a qualitatively different geometry. For a finite prime set `S`, the prime-avoidance face `D_(S,T)` is divisor-closed, and every unanchored squarefree integer has an `S`-free core in the anchor at depth at most `|S|`. The direct core-to-child frame has exact cut exposure and bounded parent/child distortion for fixed `S`.
 
-FD-148--FD-153 price this for **rank-aligned** divisor-closed anchors. A fixed finite anchor forces parent amplification of order `T`. Growing rank anchors trade that parent bill for direct source orientation: bounded parent distortion requires positive anchor mass. Once the rank anchor enters the Erdős--Kac central window, the residual child depth is the Gaussian fluctuation scale `sqrt(log log T)`; farther into the supertypical tail the conditional overshoot becomes geometric and the residual depth can become bounded only as the rank anchor approaches total source mass.
+The cost appears when this coordinate face is thinned. FD-155 shows that reducing its anchored mass to `alpha` requires `s=exp(alpha^(-1+o(1)))` avoided prime coordinates and gives a double-exponential direct parent bill. FD-156 proves that this is not a bad choice of unique ancestry: every one-parent divisibility forest on the same face obeys `P/h >= 2^s-1`, with equality for the direct star. Rerouting can move the exponential price between anchor congestion and cut exposure but cannot remove it.
 
-FD-154 shows that this depth phase diagram is not universal over divisor-closed anchors. For a fixed finite set of primes `S`, the prime-avoidance face
+FD-157 identifies what multi-parent structure would actually have to buy. Write the squarefree vertex as its `S`-part times its `S`-free core. The forced Boolean packet consists of the `2^s-1` nontrivial `S`-parts above one core. Let `L` be the normalized positive edge mass that crosses from that packet to a child with a **different `S`-free core**. Then every positive multi-parent divisibility relation satisfies the exact resource inequality
 
-`D_(S,T)={n<=T : mu^2(n)=1, (n,P_S)=1}`
+`P + L >= h (2^s-1)`.
 
-is divisor-closed and every unanchored squarefree `m` has an `S`-free core `c_S(m)` in the anchor at ancestry depth at most `|S|`. Giving each unanchored vertex its direct edge from that core yields an exact Dirichlet sampling frame:
+This is the correct replacement for “multi-parent may escape.” Extra parents that stay inside one core have `L=0` and inherit the full one-parent exponential law. To keep expansion fixed while reducing anchor load, a graph must leak an exponential amount of boundary mass across distinct cores. Under a uniform child-distortion bound `eta^+(m)<=K nu(m)`, this implies an exponential recipient-population requirement: cheap `P` forces `Omega(2^s/K)` outside-core children. At the FD-155 thinning scale that recipient population becomes double exponential in `alpha^(-1+o(1))`.
 
-`h_(D_(S,T)) = |V_T|/|R_(S,T)|`
+The reusable lesson is that **parent multiplicity is not the resource; source-fibre mixing is**. A representation can be highly connected while all edges remain inside fibres on which the difficult Boolean packet is conserved. Only edges that change the conserved core can relax the anchored bottleneck, and their total mass must be priced explicitly. This is analogous to a conductance problem with a hidden conserved label: adding edges inside components changes local degree but not the cut that matters.
 
-and, for every finite `q`, an exact norm identity between the unanchored coefficient norm and the edge-gradient norm up to the deterministic mass factor. Parent and child distortions stay bounded in `T` for fixed `S`. For one prime `ell`, the construction is depth one with
+This does not turn recipient count into an information lower bound. A deterministic rule can generate exponentially many children from a compact description. Nor does cross-core leakage supply the missing arithmetic orientation. A surviving Farey route still needs a source-native mechanism that produces the anchor/cross-core signs without reconstructing Möbius and a destination theorem showing that the resulting coefficient coercivity controls the nonlocal Franel--Landau quantity.
 
-`P_(ell,T)=K_(ell,T)=h_(D_(ell,T)) -> ell+1`.
+A source-valid ancestry proposal should therefore expose: anchor mass and geometry, parent load `P`, anchored expansion `h`, **cross-core leakage `L`**, residual depth, child distortion and recipient population, how those edges are generated from Farey data, and the final destination map. Calling a DAG “multi-parent” is not enough after FD-157; it must identify the conserved source fibre it actually crosses.
 
-FD-155 shows that the fixed-`S` statement hides a severe **cross-family** resource law when one tries to reduce the anchored source mass. For the direct FD-154 edge measure the limiting parent distortion is exactly
-
-`P^*(S)=(2^|S|-1)/(1-a(S))`,
-
-where `a(S)=prod_(p in S) p/(p+1)`. At fixed cardinality the first `s` primes minimize `a(S)`. Since `a_s=(log s)^(-1+o(1))`, obtaining `a(S)<=alpha` requires
-
-`s_alpha=exp(alpha^(-1+o(1)))`
-
-coordinates, and the best parent distortion within these direct prime-avoidance frames obeys
-
-`log log P_dir(alpha)=alpha^(-1+o(1))`.
-
-FD-156 identifies the architecture-invariant core of that bill for every **one-parent** forest on the same face. The `2^s-1` nontrivial squarefree divisors of `P_S` form a forced Boolean packet whose ancestry chains all terminate at the anchor root `1`. Removing the root partitions that packet among disjoint descendant branches. Testing the lightest branch in the anchored Cheeger quotient gives the exact universal tradeoff
-
-`P_(S,T)^pi / h_(S,T)^pi >= 2^s-1`.
-
-The direct star attains equality, so it is product-optimal over the complete one-parent class. A sequential parent map illustrates the only available rearrangement: it lowers anchor load from exponential to `s K_(S,T)` but simultaneously lowers expansion to `K_(S,T)/2^(s-1)`. Unique-parent rerouting can move the exponential bill from congestion into a narrow descendant cut; it cannot remove it.
-
-Consequently, at any fixed positive expansion, the FD-155 double-exponential thinning cost survives arbitrary one-parent depths and arbitrary nonnegative edge weights. This is stronger than the earlier direct-frame statement but still geometry-specific: it uses the pure-prime Boolean packet forced by the finite-prime avoidance anchor and the partition property of unique ancestry.
-
-So ancestry depth, anchor mass, parent load and expansion are not interchangeable source-complexity currencies. Rank faces leave arbitrarily many unfixed prime coordinates and pay an overshoot law; a fixed finite-coordinate face absorbs all but finitely many coordinate directions and has bounded depth; driving that coordinate-face mass toward zero creates a large Boolean packet; one-parent architectures must pay for that packet either at the anchor or through loss of cut exposure.
-
-The remaining escape on this anchor is genuinely **multi-parent**, or else a different divisor-closed geometry. A DAG may let several ancestry edges share the Boolean packet without partitioning it into disjoint root branches, so FD-156 does not decide that case. Nor does any of this solve the epistemic gate: a Farey-native observable must still supply the anchor orientation without reconstructing Möbius, and the resulting coefficient norm must still control the nonlocal Franel--Landau destination.
-
-A source-valid ancestry proposal should expose: anchor mass, anchor geometry, parent distortion, anchored expansion, residual coordinate/rank depth, child distortion, whether the graph is one-parent or genuinely multi-parent, how the anchor information is obtained, and the destination map. Applying a rank-tail law to a non-rank anchor is invalid; calling a macroscopic source anchor “cheap” because its edge depth is one is invalid; and proposing a clever unique-parent rerouting after FD-156 does not change the `2^s-1` expansion/load product law.
-
-**Boundary.** These results concern binary Möbius orientations, finite `L^q`, positive divisibility-ancestry observations and divisor-closed anchors. FD-156's sharp law covers arbitrary nonnegative **one-parent** forests on the finite-prime avoidance face, not multi-parent DAGs, signed edge measures, different anchor geometries, `L^infinity`, non-divisibility observations, or genuinely nonlocal Farey/Fourier functionals. The chain proves coefficient-side resource laws, not source-native availability of the anchor and not an RH-strength destination estimate.
+**Boundary.** FD-157 concerns positive divisibility-edge measures on the finite-prime avoidance face and the associated `S`-free core decomposition. It does not rule out signed observations, different anchor geometries, non-divisibility functionals, unbounded child distortion, or genuinely nonlocal Farey/Fourier mechanisms. The chain establishes coefficient-side resource laws, not RH-strength destination coercivity.
