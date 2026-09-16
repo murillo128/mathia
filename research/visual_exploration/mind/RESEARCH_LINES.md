@@ -12,26 +12,26 @@ VIS-237--VIS-251 progressively quotient grid phase, count noise, one-point inten
 
 If interval endpoints are nuisance, use the cut average; if physical endpoints are source-bearing, retain the separate exact endpoint channel. The log-product quotient and current heat-bath theory belong to the one-parameter symmetric Dirichlet family. Asymmetric Dirichlet models, mixtures, renewal laws and hard-core processes need their own sufficient coordinates or independently frozen nuisance parameters.
 
-## Treat low-frequency cancellation as an exact dual-conditioning and theorem-accuracy problem
+## Treat low-frequency cancellation as an exact source-moment, conditioning and theorem-accuracy problem
 
-**Linked intuitions:** `MI-007-moment-null-packets-pay-an-order-matched-variation-gate`, `MI-029-fixed-margin-pair-correlation-accuracy-must-outrun-packet-conditioning`.
+**Linked intuitions:** `MI-007-moment-null-packets-pay-an-order-matched-variation-gate`, `MI-029-fixed-margin-pair-correlation-accuracy-must-outrun-packet-conditioning`, `MI-030-low-frequency-arithmetic-jets-are-physical-moments`.
 
-VIS-145--VIS-147 show that for smooth finite-window corrections, cancelling successive polynomial moments moves the response to higher Taylor order while raising the total-variation/conditioning bill. VIS-256 shows why polynomial moments alone are the wrong coordinates at the sine-kernel/CUE support edge: the limiting centered profile has the nonanalytic cusp `min(|q|,1)`.
+VIS-145--VIS-147 show that cancelling successive polynomial moments raises both Taylor order and total-variation cost. VIS-256 identifies the sine-kernel/CUE support-edge cusp `min(|q|,1)`, so ordinary polynomial moment cancellation is not the right first coordinate.
 
-VIS-257--VIS-258 solve the first two cusp-adapted stages sharply. After cancelling mass and the `|q|` cusp, unit quadratic signal costs exactly `8b^(-2)` variation. Cancelling the quadratic channel as well makes unit quartic signal cost `E_*^(-1)b^(-4)`, with `E_*=0.06346155...`.
+VIS-257--VIS-259 solve the entire cusp-adapted packet ladder sharply. After cancelling mass, `|q|` and preceding even moments, unit `2m`-th signal costs exactly
 
-VIS-259 closes the **entire generic cancellation ladder**. After zero mass, exact cusp cancellation and the preceding even moments, the sharp capacity for the first retained `2m`-th moment is
+`E_m^(-1)b^(-2m)`
 
-`|m_(2m)(nu)| <= E_m b^(2m) ||nu||_TV`,
+in total variation, where `E_m` is the uniform-approximation distance of `t^(2m)` from the lower nuisance span on `[0,1]`.
 
-where `E_m` is exactly the uniform-approximation distance from `t^(2m)` to `span{1,t,t^2,t^4,...,t^(2m-2)}` on `[0,1]`. Hahn--Banach/Riesz duality proves that the constant is attained over all finite signed measures. Hence the optimal unit-carrier conditioning cost is exactly `E_m^(-1)b^(-2m)` at every order.
+VIS-260 attaches a rigorous transfer scale. Under RH, Rodgers' fixed-margin smooth pair-correlation theorem gives uniform error `O_delta(T^(-delta))` for every fixed `delta<epsilon/2`. Packetization multiplies this by the sharp conditioning bill, so for `b=T^(-beta)` the theorem can pay an order-`2m` packet only in the fixed-margin regime `beta<epsilon/(4m)`.
 
-VIS-260 now attaches a real theorem-accuracy scale to that conditioning bill. Under RH, Rodgers' fixed-margin smooth pair-correlation theorem gives a uniform error `O_delta(T^(-delta))` on `|alpha|<1-epsilon` for fixed `epsilon`, fixed smooth weight and every `delta<epsilon/2`. Applying an optimal cusp-adapted order-`2m` packet multiplies that error by exactly the `b^(-2m)` total-variation cost, so the certified transfer error is
+VIS-261 now identifies the **source carrier** that the packet would extract. If `D_T(u)` is the physical-space Bogomolny--Keating-minus-matched-GUE kernel and `R_T(alpha)` its frequency transform, then
 
-`O(T^(-delta) E_m^(-1)b^(-2m))`.
+`R_T^(2j)(0)=(-1)^j log(T)^(2j) int u^(2j)D_T(u)du`.
 
-For `b=T^(-beta)`, the published theorem can therefore pay the packet conditioning precisely when `beta<epsilon/(4m)`: quadratic packets admit `beta<epsilon/4`, quartic packets `beta<epsilon/8`. This is a genuine positive calibration inside a **fixed** support margin. It does not extend to `epsilon_T -> 0`, a varying weight, or the four-level covariance needed by the original edge--edge statistic.
+The first surviving low-frequency arithmetic jet is exactly the first nonzero even physical-space moment of `D_T`; it is not an independent frequency-side mystery. An optimal order-`2m` packet extracts that coefficient with a Taylor error bounded by `E_m^(-1)b^2 sup|R_T^(2m+2)|/(2m+2)!`, while VIS-260 contributes the independent theorem-transfer error `O(T^(-delta)E_m^(-1)b^(-2m))`.
 
-This removes both higher packet-shape optimization and vague claims that a polynomial theorem error is automatically enough. A `2m`-th-order route is interesting only after the actual zeta-minus-null destination supplies a nonzero coefficient `A_(2m)` and the available theorem error, after multiplication by `E_m^(-1)b^(-2m)`, is asymptotically smaller than that carrier.
+The live fixed-margin task is therefore concrete: for one predeclared even weight, compute the quadratic physical moment `M_2(T)` of the explicit arithmetic kernel difference and test whether its induced coefficient beats **both** the Taylor-resolution error and the conditioned Rodgers error. Move to `M_4` only if the quadratic carrier vanishes or is too small for a mathematically identified reason. Do not optimize packet order before the source moments justify it.
 
-The live support-edge fork is therefore source/theorem-side rather than packet-side. For a fixed-margin smooth pair statistic, compute the first nonzero Taylor coefficient of the explicit Bogomolny--Keating-minus-matched-null prediction after the declared cusp cancellations and compare it with the VIS-260 transfer gate. For the moving edge, separately prove a theorem uniform in the shrinking support margin and any changing window; for the original cross-window statistic, separately supply the missing four-level covariance law. None of those can be inferred from Rodgers' fixed-test result.
+The moving support edge remains separate: it needs theorem uniformity as `epsilon_T->0` and under changing windows. The original edge--edge statistic remains still further away because it needs a four-level covariance law. Neither follows from the fixed-margin two-level calculation.

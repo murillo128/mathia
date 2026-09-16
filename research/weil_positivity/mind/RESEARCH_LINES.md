@@ -4,26 +4,32 @@ This file holds the current mathematical lines of investigation suggested by the
 
 ## Find a source-derived sign theorem outside scalar shadows and universal enriched lifts
 
-**Linked intuitions:** `MI-001-positivity-needs-a-sign-producing-global-operation`, `MI-010-source-forced-critical-gram-can-have-the-wrong-weil-orientation` through `MI-042-faithful-exact-law-ucp-readouts-force-multiplicative-domain-rigidity`.
+**Linked intuitions:** `MI-001-positivity-needs-a-sign-producing-global-operation`, `MI-010-source-forced-critical-gram-can-have-the-wrong-weil-orientation` through `MI-043-stationary-cross-prime-hilbert-control-must-contain-the-log-square`.
 
 WP-293--WP-330 close broad scalar, semigroup and operator-valued routes whose positivity is universal before the source-selective readout. WP-331--WP-332 give the opposite exact rigidity: a faithful UCP readout preserving the first two moments of the same self-adjoint source observable has zero Kadison defect and places that observable in the multiplicative domain.
 
-WP-333--WP-338 expose and then classify the moving-tail loophole. A support-preserving Markov/UCP map may converge strongly on bounded observables while retaining order-one variance on the growing logarithmic coordinate. Exact/approximate barycentric formulas price channel error, propagation and coordinate bias, and rowwise `W_2^2` is exactly the Kadison defect plus squared bias. Every `W_p`, `p<2`, misses rare long jumps; every `p>=2` controls them, with exponent two sharp.
+WP-333--WP-338 expose and classify the moving-tail loophole. Strong convergence on bounded observables can coexist with order-one variance on a growing logarithmic coordinate. Rowwise `W_2^2` is exactly Kadison defect plus squared barycentric bias; every `W_p`, `p<2`, misses rare long jumps, while every `p>=2` controls them.
 
-WP-339 extends the classification from power costs to **every scalar displacement penalty**. Channel convergence plus vanishing row cost controls the defect uniformly on growing support if and only if the cost has an eventual quadratic lower bound. Any asymptotically subquadratic cost admits an exact-barycentric rare-long-jump counterexample with vanishing channel error and transport cost but fixed defect. Truncated, Orlicz or custom scalar costs therefore do not create a softer independent repair unless their tail already pays the missing second moment.
+WP-339 extends that threshold to every scalar displacement penalty: uniform defect control under channel convergence is possible exactly when the tail cost eventually dominates the quadratic displacement. Any asymptotically subquadratic scalar cost admits an exact-barycentric rare-long-jump counterexample.
 
-WP-340 closes the canonical stationary-Hilbertian escape on the intrinsic dyadic prime-power ray. For a translation-invariant negative-type cost from a `Z`-cocycle, mean ergodicity gives
+WP-340 classifies the stationary Hilbertian escape on one prime-power ray. A translation-invariant negative-type cost has quadratic growth only through an invariant Euclidean drift; the pure spectral/jump part is subquadratic.
 
-`||b(n)||^2/n^2 -> ||P b(1)||^2`.
+WP-341 closes the direct **cross-prime stationary scalar** extension. On the full prime-exponent group `Gamma=direct_sum_p Z e_p`, let `L(alpha)=sum_p alpha_p log p` and let `psi` be a translation-invariant squared-Hilbert/CND cost. Its abelian Levy--Khinchin decomposition is a quadratic part `q` plus a positive spectral/jump part. Eventual control
 
-Equivalently, the Lévy--Khintchine symbol has quadratic coefficient exactly when the affine action contains a nonzero invariant drift. Pure spectral/jump Hilbert geometry is subquadratic and fails the same exact-barycentric dyadic witness. A successful stationary Hilbert cost works only because it contains an honest Euclidean drift, reproducing the quadratic transport already known to be necessary.
+`psi(alpha) >= a L(alpha)^2`
 
-The remaining UCP route is therefore not to search for a prettier scalar or Hilbertian topology. It must derive decay of the **quadratic displacement energy** from genuinely source-specific structure, or leave the commutative rowwise setting for a global/noncommutative coupling whose sign is not a restatement of that energy. Matched non-arithmetic lattices reproduce the transport threshold, so the missing theorem must explain why arithmetic forces the quadratic quantity small or supplies a different sign mechanism.
+holds if and only if
+
+`q(alpha) >= a L(alpha)^2`
+
+for every `alpha`. Equivalently the arithmetic logarithm is already a bounded Hilbert covector of the quadratic sector; on each finite prime window the Gram matrix contains the rank-one PSD direction `a ell ell^T` with `ell_p=log p`. Cross-prime spectral coupling cannot synthesize the missing log-square from a softer stationary geometry.
+
+The remaining UCP route is therefore not to search for another scalar metric or a richer stationary Hilbert embedding. It must derive decay of the **quadratic logarithmic displacement energy** from genuinely source-specific arithmetic structure, or leave the commutative rowwise/stationary category for a global or noncommutative coupling whose sign is not a restatement of that energy. Matched free-abelian controls reproduce WP-341 for arbitrary weights, so the presence of prime labels alone is not selective.
 
 ## Separate source fingerprint from source-selective sign
 
-Shifted-lattice support, Mangoldt coefficients, prime-power gaps, exact scalar laws and dyadic realizations are source-specific fingerprints. WP-333--WP-340 show that the moving-tail variance obstruction and its sharp transport thresholds remain generic probability/Hilbert geometry even on intrinsic arithmetic coordinates. Sign provenance must fail on an appropriate matched control, not merely carry arithmetic labels.
+Shifted-lattice support, Mangoldt coefficients, prime-power gaps, exact scalar laws, dyadic realizations and the prime-exponent logarithm are source-specific fingerprints. WP-333--WP-341 show that the moving-tail variance obstruction and its sharp transport thresholds remain generic probability/Hilbert geometry even on intrinsic arithmetic coordinates. A valid sign mechanism must fail on an appropriate matched control, not merely carry the arithmetic log vector explicitly.
 
 ## Match the topology to the moving observable without restating the target
 
-The useful ledger remains channel error, barycentric bias, propagation geometry and the destination's moving quadratic scale. WP-339 says any scalar cost that universally closes the defect must eventually dominate that quadratic scale; WP-340 says stationary Hilbert geometry supplies it only through Euclidean drift. Future weighted graph/energy norms are useful only if a source theorem proves their quadratic control for an independent arithmetic reason; otherwise the topology is the desired conclusion rewritten.
+The useful ledger remains channel error, barycentric bias, propagation geometry and the destination's moving quadratic scale. WP-339 says every scalar cost that universally closes the defect must already pay that quadratic scale; WP-340--WP-341 say stationary Hilbert geometry supplies it only through a genuine quadratic drift sector containing the relevant logarithmic direction. Future weighted graph, energy or noncommutative norms are useful only if an independent source theorem proves their control without merely inserting the desired log-square into the metric.
