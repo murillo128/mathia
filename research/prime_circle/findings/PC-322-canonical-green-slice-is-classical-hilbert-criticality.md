@@ -136,7 +136,7 @@ u>1:\ \text{Hilbert--Schmidt}.
 \tag{13}
 \]
 
-Here the middle symbol is the real exponent `u=1`; equation (13) is an operator classification, not a claim about zeros of (1).
+In (13), `\nu` denotes the same real exponent called `u` in the rest of the finding; the notation is used only to avoid visual ambiguity inside the display. Equation (13) is an operator classification, not a claim about zeros of (1).
 
 ## 3. The Green slice is a Hilbert matrix coefficient of Dirichlet-series source vectors
 
@@ -179,8 +179,7 @@ for any period `q`. Then
 Because `|a(k)|^2` is periodic with positive mean, its Dirichlet series has a simple pole at exponent `1` with residue `mu_a`. Therefore
 
 \[
-\boxed{
-v_a(s)\in\ell^2\iff\Re s>\frac12,}
+\boxed{v_a(s)\in\ell^2\iff\Re s>\frac12,}
 \tag{18}
 \]
 
