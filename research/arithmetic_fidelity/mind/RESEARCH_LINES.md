@@ -12,6 +12,14 @@ AF-369 and AF-370 now give two complementary positive rigidity boundaries. In th
 
 The live broader question is to identify other justified source-class/data couplings that are substantially weaker than full reconstruction but still preserve the exact discriminator needed downstream. Any such claim must state both the source category and the retained analytic layer; neither can be priced independently.
 
+## Distinguish source-rich data from target-faithful positivity certificates
+
+**Linked intuition:** `MI-002-canonical-relational-lifts-can-restore-gauge`.
+
+AF-371 gives an exact classical separation. The full reciprocal Taylor sequence of an entire function can determine the analytic source, yet compressing it to the infinite verdict “all Hankel moment matrices are positive” is still not faithful for Laguerre--Pólya membership: Hamburger supplies false positives. Schoenberg's translation total positivity is qualitatively different because the ordered minors `det(Lambda(x_j-y_k))` characterize the Laguerre--Pólya target through the Pólya-frequency transform.
+
+The live question is therefore not how many positivity inequalities survive, but **which relational geometry their minors test**. For an RH-sensitive positivity proposal, first identify the target property and ask whether it factors through the proposed positivity signature. When ordinary PSD/Hankel data remain target-mixed, either derive a source-specific restriction that makes that fibre target-pure or move to a stronger relational family whose target faithfulness can be proved. AF-371 does not establish that Schoenberg total positivity is minimal, so any smaller proposed family still needs its own exact false-positive or sufficiency analysis.
+
 ## Separate source identification from the RH zero-selection mechanism
 
 AF-370 identifies `zeta` exactly inside its declared source class, but Hamburger rigidity does not constrain its nontrivial zeros to `Re s=1/2`. The functional equation fixes the reflection axis and, together with the source hypotheses, the analytic function; RH still requires an additional sign, positivity, unitarity, localization or equivalent zero-selecting theorem.
@@ -36,4 +44,4 @@ AF-320--AF-336 separate exact recovery, conditioning, support-union geometry and
 
 ## Keep source class, transform fidelity, finite observation and target conditioning as different currencies
 
-Observation horizon, admissible source category, tail class, scalar counting fidelity, smoothing order, principal-part fidelity, functional-equation rigidity, pole residue/normalization, inverse conditioning, destination topology and destination slack are distinct resources. AF-369--AF-370 show positively that small retained data can become complete after the admissible fibre is narrowed; AF-366--AF-368 show negatively that apparently accurate observations remain useless while the completion class is too broad. Future work must keep these layers separate until a theorem explicitly connects them.
+Observation horizon, admissible source category, tail class, scalar counting fidelity, smoothing order, principal-part fidelity, functional-equation rigidity, pole residue/normalization, inverse conditioning, destination topology, positivity-signature geometry and destination slack are distinct resources. AF-369--AF-370 show positively that small retained data can become complete after the admissible fibre is narrowed; AF-366--AF-368 show negatively that apparently accurate observations remain useless while the completion class is too broad; AF-371 shows that even an infinite positivity hierarchy can remain target-poor when it tests the wrong relations. Future work must keep these layers separate until a theorem explicitly connects them.

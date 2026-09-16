@@ -1,21 +1,33 @@
-# MI-032 — Self-tangent Robin height is a Pareto-weighted Chebyshev-deficit average with terminal-horizon sensitivity
+# MI-032 — Self-tangent Robin height is a Pareto-weighted Chebyshev-deficit average with a fourth-root terminal-capacity boundary
 
-**Evidence level:** exact-derived source-side reformulation from [RE-153](../../findings/RE-153-self-tangent-counterexamples-force-a-pareto-chebyshev-deficit-barrier.md), sharpened by the matched synthetic-source obstructions [RE-154](../../findings/RE-154-square-root-over-log-post-selector-relocations-move-pareto-robin-source-by-order-one.md) and [RE-155](../../findings/RE-155-pnt-stable-source-surgery-survives-to-any-fixed-fraction-of-the-robin-horizon.md), using the canonical finite-annulus threshold of RE-022.
+**Evidence level:** exact-derived source-side reformulation from [RE-153](../../findings/RE-153-self-tangent-counterexamples-force-a-pareto-chebyshev-deficit-barrier.md), sharpened by the matched synthetic-source obstructions [RE-154](../../findings/RE-154-square-root-over-log-post-selector-relocations-move-pareto-robin-source-by-order-one.md), [RE-155](../../findings/RE-155-pnt-stable-source-surgery-survives-to-any-fixed-fraction-of-the-robin-horizon.md), and the shrinking-layer capacity law [RE-156](../../findings/RE-156-terminal-source-relocation-capacity-has-a-fourth-root-transition.md), using the canonical finite-annulus threshold of RE-022.
 
 For a sufficiently large regular self-tangent Robin counterexample with largest active first-layer prime `p`, the mixed Mertens--Chebyshev height integral has a canonical positive kernel. After normalization and rescaling `t=py`, the kernel converges to the Pareto law `(1/2)y^(-3/2)dy`, and the counterexample condition becomes
 
 `E_(nu_p)[(t-vartheta(t))/sqrt(t)] >= sqrt(2)-o(1)`.
 
-RE-154 shows that at fixed multiplicative distance only `sqrt(p)/log p` coherent post-selector relocations are enough to move this exact average by order one. Such controls can agree exactly with the ordinary primes below any fixed `Bp`, remain PNT-dense and alter only a vanishing fraction of labels.
+RE-154 shows that at fixed multiplicative distance only `sqrt(p)/log p` coherent post-selector relocations are enough to move this exact average by order one. RE-155 shows that the fixed-distance qualifier is not the real boundary: equal-cardinality relocation inside any fixed terminal fraction of the full horizon `U=U_A(p)` can still change the normalized source coordinate by order one while exact source/generalized-CA agreement holds below that fraction and the modified source remains PNT-indistinguishable.
 
-RE-155 shows that the fixed-`B` qualifier was not the real boundary. Let `U=U_A(p)` be the full RE-022 horizon. For labels at fixed fractions `yU<zU`, equal-cardinality relocation cancels the leading endpoint subtraction and leaves the influence difference
+RE-156 identifies the first quantitative boundary of that control architecture. For the shrinking terminal layer
 
-`Lambda_p(yU)-Lambda_p(zU) ~ [sqrt(p) log p/(2U)](1/y-1/z)`.
+`T_p(epsilon)=[(1-epsilon)U,U]`,
 
-Therefore `m_p~U/(sqrt(p)log p)` relocations inside any fixed terminal fractional annulus move the normalized source coordinate by a fixed amount while the source agrees exactly with the ordinary primes and generalized CA event history through `cU`, for arbitrary fixed `c<1`, and remains `o(1)`-close at PNT scale.
+the total equal-cardinality relocation capacity satisfies
 
-The propagation interpretation is now sharp: **knowing the source exactly through every fixed fraction `(1-epsilon)U_A(p)` does not determine the destination average if the remaining terminal information is only PNT-scale density**. The live source bill sits in a shrinking relative terminal layer or in stronger arithmetic information capable of forbidding coherent terminal relocation.
+`Cap_p(epsilon) asymp epsilon^2 sqrt(p) log p / log U`
 
-The reusable distinction is between ambient source closeness and destination-weighted closeness. A perturbation that is negligible for prime counting and exact on almost the whole finite horizon can remain order-one in the Robin functional because the terminal labels carry a coherent signed influence. Any approximation theorem should therefore be tested in the exact Pareto/Robin kernel norm rather than by propagation radius or PNT density alone.
+whenever the layer is above the PNT remainder scale. The dimensionless capacity is therefore
 
-**Boundary.** RE-155 does not treat propagation to `(1-o(1))U_A(p)`, where a fixed fractional relocation shell no longer fits, and it does not claim the ordinary primes admit the synthetic surgery. Strong short-interval information, a signed square-root estimate, an explicit-formula restriction or an exact global CA identity can distinguish the controls. The result identifies the remaining information requirement; it does not prove the required `sqrt(2)-eta` bound.
+`K_p(epsilon)=(epsilon/epsilon_*(p))^2`,
+
+with
+
+`epsilon_*(p)=sqrt(log U/(sqrt(p)log p)) = sqrt(A) p^(-1/4)(log p)^(1/3)(log log p)^(1/6)`.
+
+The existing unconditional PNT remainder is already smaller than this transition. Consequently an asymptotically vanishing fraction of available terminal labels still produces any fixed displacement when `epsilon/epsilon_* -> infinity`; at `epsilon asymp epsilon_*` the relocation class has order-one total capacity; only when `epsilon=o(epsilon_*)` does this particular equal-cardinality surgery become `o(1)` in the Robin functional.
+
+The propagation interpretation is now quantitative: **exact source agreement through `(1-epsilon_p)U_A(p)` is still insufficient at PNT information level throughout the supercritical fourth-root regime.** A propagation theorem only begins to outrun this matched control once the unresolved relative terminal width is below `epsilon_*`; even there, RE-156 does not say that the Pareto source is controlled, because other structured signed perturbations may remain.
+
+The reusable distinction is between ambient source closeness and destination-weighted capacity. A perturbation can be negligible for prime counting, exact on almost the whole finite horizon, and still carry order-one destination leverage because the number of movable labels times their local influence slope remains finite. The right audit variable is the capacity product, not propagation radius alone.
+
+**Boundary.** RE-156 classifies one equal-cardinality terminal-relocation mechanism in the PNT-valid shrinking-layer regime. It does not claim the ordinary primes realize the surgery, does not prove source control below `epsilon_*`, and does not exclude stronger short-interval/signed controls, explicit-formula restrictions, global CA identities or different structured perturbations. Crossing the fourth-root scale is a necessary improvement over the known matched control, not a proof of the required `sqrt(2)-eta` bound.
