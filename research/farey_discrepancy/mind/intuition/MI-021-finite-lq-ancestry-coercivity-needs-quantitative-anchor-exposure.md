@@ -1,6 +1,6 @@
-# MI-021 — Finite-`L^q` ancestry coercivity is anchored cut exposure, and sparse holes only move the boundary bill
+# MI-021 — Finite-`L^q` ancestry coercivity is anchored cut exposure, and divisor closure prices terminal migration
 
-**Evidence level:** exact/proved synthesis from [FD-147](../../findings/FD-147-finite-seed-ancestry-coercivity-is-exactly-an-anchored-cut-problem.md) through [FD-160](../../findings/FD-160-sparse-auxiliary-holes-only-move-cheeger-pressure-to-divisor-closure.md).
+**Evidence level:** exact/proved synthesis from [FD-147](../../findings/FD-147-finite-seed-ancestry-coercivity-is-exactly-an-anchored-cut-problem.md) through [FD-161](../../findings/FD-161-terminal-auxiliary-cores-force-growing-primorial-closure-pressure.md).
 
 For binary orientations anchored on `D`, finite-`L^q` recovery is controlled by anchored boundary exposure: `C^(bin)_(q,D)=h_D(nu,eta)^(-1/q)`. Connectivity only excludes zero boundary; stable recovery requires every admissible macroscopic flip to carry uniformly positive observed boundary mass.
 
@@ -10,20 +10,18 @@ FD-158 proves that a finite completed auxiliary vocabulary does not terminate th
 
 `P_(S,T) + L_(S,C,T)/|C| >= h_(S,T) bar f`.
 
-The remaining loophole after FD-159 was non-downward sparsity: deleted lower cores could supply additional incoming boundary. FD-160 identifies that bill exactly. For an arbitrary sparse family `C`, let `J_(S,C,T)` be incoming mass whose `S`-free parent core lies in the hole set `(downarrow C)\C`. Then
+FD-160 removes the downward-closure assumption. Arbitrary sparse holes contribute an explicit incoming bill, and taking the divisor closure of every depth-`r` subfamily internalizes that bill without losing primary depth. Static non-downward holes therefore do not weaken the exponential obstruction; they only move its boundary outward in the divisor poset.
 
-`P_(S,T) + (J_(S,C,T)+L_(S,C,T))/|C| >= h_(S,T) bar f`.
+FD-161 closes the remaining apparent escape in which the active auxiliary cores themselves are terminal and carry only bounded primary depth. For the initial-prime anchor `S_s={p_1,...,p_s}`, every nontrivial `S_s`-free terminal core `c` with `2c<=T` has a principal divisor ideal containing a full primary Boolean face through depth
 
-So holes are not free; they exchange occupied-fibre pressure for explicit incoming source flux.
+`b_s=max{j<=s: P_j<=p_(s+1)}`,
 
-More importantly, the hole bill can be eliminated from the accounting by changing the test cut, not the architecture. For the depth-`r` occupied cores `C_(>=r)`, take their divisor closure `D_r(C)`. Divisibility closure preserves primary depth, makes the former hole inflow internal, and gives
+where `P_j=p_1...p_j`. Averaging over that closure gives at least `(2^(b_s)-1)/2` occupied primary states, hence the same anchored cut law forces a bill of order `2^(b_s)`. Since `b_s~log s/log log s`, this pressure still diverges:
 
-`P_(S,T) + L_(S,D_r(C),T)/|D_r(C)| >= h_(S,T)(2^r-1)`.
+`2^(b_s)=exp((log 2+o(1)) log s/log log s)`.
 
-Under bounded child distortion the same excess forces exponentially many genuinely outer recipients. Even a single deep sparse core triggers the law after taking its principal divisor ideal. Therefore **static non-downward holes do not weaken the exponential prime-depth obstruction; they only move its boundary outward in the divisor poset**.
+The important correction is conceptual. **Terminality of the presented core is not terminality under the closure intrinsic to divisibility.** A core can sit at bounded visible primary depth while its principal divisor ideal regenerates a growing initial-prime face. The surviving escape is no longer “move the complexity into terminal auxiliary support”; it must make the relevant closure leave the controlled regime, allow the distortion/expansion/leakage budgets to deteriorate, change the anchor/cut geometry, trivialize the root, or impose a source-native coefficient restriction that removes the tested flips.
 
-This changes the surviving architecture question. A genuinely different route must use support that is terminal or migrates with scale so that the relevant divisor closure itself leaves the controlled regime, allow the normalized parent/leakage or child-distortion budgets to grow, change the anchor/cut geometry, or impose a source identity that removes the corresponding coefficient flips from the admissible class. Merely using incomplete boxes, truncated down-sets, or sparse holes no longer changes the coercivity mechanism.
+The information-budget caveat remains separate. A large outer-recipient population or growing primorial closure need not contain proportionally many independent source bits; a deterministic rule can generate many recipients from a short description. FD-144 still requires a later theorem connecting whatever geometric resource survives the cut analysis to independent source information and then to the Franel--Landau destination.
 
-The information-budget caveat remains separate. A large outer-recipient population or migrating prime vocabulary need not contain proportionally many independent source bits; a deterministic rule can generate many recipients from a short description. FD-144 still requires a later theorem connecting whatever geometric resource survives the cut analysis to independent source information and then to the Franel--Landau destination.
-
-**Boundary.** FD-160 remains inside the declared positive divisibility-edge architecture with global anchored expansion. It does not rule out different anchors, signed/nonpositive couplings, unbounded distortion, genuinely migrating/terminal support, or source constraints that change the admissible cuts. The result is coefficient-side and does not itself produce Möbius orientation or an RH-equivalent discrepancy bound.
+**Boundary.** FD-161 is tied to the initial-prime avoidance architecture and positive divisibility-edge coercivity. The primorial depth is a closure-pressure lower bound, not an information lower bound, and it is weaker than the direct double-exponential thinning bill. It does not rule out different anchors, signed/nonpositive couplings, unbounded distortion, closure that escapes the controlled truncation, or source constraints that change the admissible cuts.

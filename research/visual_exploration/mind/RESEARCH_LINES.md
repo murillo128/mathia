@@ -22,12 +22,14 @@ VIS-145--VIS-147 show that for smooth finite-window corrections, cancelling succ
 
 VIS-256 shows why finite polynomial moments are the wrong coordinates at the sine-kernel/CUE support edge. The limiting centered profile has the nonanalytic cusp `T(q)=min(|q|,1)`, and bounded-normalization shrinking packets can annihilate any fixed finite polynomial jet while retaining an exact `Theta(b)` cusp response.
 
-VIS-257 supplies the natural cusp-adapted escape and prices it sharply. A symmetric signed packet on `[-b,b]` with zero mass and zero `|q|` pairing satisfies
+VIS-257 supplies the first cusp-adapted gate. A symmetric signed packet on `[-b,b]` with zero mass and zero `|q|` pairing satisfies `|m_2(nu)| <= (b^2/8)||nu||_TV`; unit quadratic signal therefore costs exactly `8b^(-2)` variation at the optimum.
 
-`|m_2(nu)| <= (b^2/8)||nu||_TV`,
+VIS-258 prices the branch that also cancels the quadratic channel. The sharp quartic inequality is
 
-with equality for the explicit three-radius packet `delta_0-2 sigma_(b/2)+sigma_b`. Thus normalizing the quadratic moment to order one costs at least `8/b^2` total variation. The limiting cusp is killed exactly, but the finite-window CUE correction has a quadratic channel of size `Theta(mu_2 b^2)`; under `bM->0` that channel remains the correct null-scale contribution.
+`|m_4(nu)| <= E_* b^4 ||nu||_TV`,  with  `E_*=0.06346155...`,
 
-The low-frequency design fork is therefore explicit. Either retain nonzero `m_2` and calibrate both source and finite-window null to `o(b^2)` after the sharp `b^(-2)` conditioning amplification, or also cancel `m_2` and move to a quartic/higher-order gate with its own conditioning bill. Merely saying “cusp-adapted” no longer removes the quantitative problem.
+so unit quartic signal costs `K_* b^(-4)` with `K_*=15.75757...`. The extremizer is the four-radius equioscillating packet associated with the best degree-two approximation of `t^4` on `[0,1]`.
+
+The low-frequency design fork is now quantitative through quartic order. Either retain `m_2` and prove/calibrate source and finite-window errors at `o(b^2)` after sharp quadratic amplification, or cancel `m_2` and prove an actual zeta-minus-null quartic coefficient together with transfer/covariance error `epsilon_b=o(|A_4|b^4)`. Without that theorem the extra cancellation only exchanges a nuisance channel for a `b^(-4)` conditioning bill.
 
 The older deterministic selector-clock and low-frequency matched controls remain relevant: visually distinctive structure is not evidence until it survives the exact quotient and is consumed by a source-sensitive destination.
