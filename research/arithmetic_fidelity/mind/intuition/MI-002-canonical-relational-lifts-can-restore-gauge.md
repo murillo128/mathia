@@ -1,6 +1,6 @@
 # MI-002 — Canonical relational lifts can restore an intended gauge without restoring absolute coordinates
 
-**Evidence level:** supported by exact finite harmonic, Euclidean and spectral models, with an exact classical target-fidelity separation from [AF-371](../../findings/AF-371-hankel-positivity-vs-total-positivity-target-fidelity.md).
+**Evidence level:** supported by exact finite harmonic, Euclidean and spectral models, with exact classical target-fidelity separations from [AF-371](../../findings/AF-371-hankel-positivity-vs-total-positivity-target-fidelity.md) and the finite-arity obstruction [AF-372](../../findings/AF-372-every-finite-toeplitz-minor-order-has-polya-frequency-false-positives.md).
 
 ## Core intuition
 
@@ -16,19 +16,21 @@ AF-014 supplies an important adversarial correction to generic “Gram destroys 
 
 AF-371 gives the analytic target-fidelity analogue. If `1/Psi` is represented by its complete Taylor sequence, the analytic germ can still determine `Psi`; nevertheless compressing that rich data to the infinite Boolean signature “every Hankel moment matrix is positive” does not determine whether `Psi` lies in the Laguerre--Pólya class. Hamburger's theorem supplies target-mixed false positives. Schoenberg's translation total positivity instead tests all ordered cross-relations `det(Lambda(x_j-y_k))` and, for the stated reciprocal Laplace-transform class, is equivalent to Laguerre--Pólya membership. Thus **adding infinitely many positivity tests does not repair a quotient when the tests probe the wrong relational geometry**.
 
+AF-372 adds a second resource axis inside the *correct* geometry. For every fixed `r`, there are nonnegative translation profiles in `TN_r\TN_(r+1)`. Therefore even exhaustive location sampling at a fixed determinant size does not recover the all-order Pólya-frequency target on the unrestricted class. The exact certificate needs **unbounded relational arity**, not merely many instances of one bounded-arity relation. This is an unrestricted-class statement: an arithmetic source subclass could still collapse the hierarchy, but that collapse would itself need a source-specific theorem.
+
 ## What remains possible
 
 These models do not say that bispectra, monomials, Gram data, matrix-valued measures or total positivity are universally sufficient. They show how to test a proposed lift: identify the ambiguity group or target fibre first, derive the relational observable canonically, and prove that the remaining ambiguity is precisely the intended gauge or that the target property factors through it. Arithmetic source specificity remains a separate gate.
 
-AF-371 also makes the next positivity question sharper. Schoenberg gives an exact target-faithful lift, not a minimality theorem. Any proposal to use a smaller family of minors, finite order of total positivity, or a source-restricted positivity signature must prove that the corresponding fibre is already Laguerre--Pólya-pure; the number of inequalities is not evidence for that conclusion.
+For positivity routes the audit now has two independent questions: **is this the right relation, and is the retained relational arity sufficient?** Ordinary Hankel PSD can fail the first question; fixed-order translation total positivity can fail the second. A smaller certificate must therefore use a structured infinite family, controlled growing arity, or a justified source restriction that eliminates the Karlin--Khare false-positive fibres.
 
 ## Status / novelty
 
-The bispectral, annihilator-lattice, Gram/compound-minor, marked-Hermitian and Hamburger/Schoenberg statements are persisted findings with classical ingredients. Their common interpretation as a constructive alternative to arbitrary target-carrying marks, and as a warning that positivity depth cannot substitute for the correct relational geometry, is a supported synthesis.
+The bispectral, annihilator-lattice, Gram/compound-minor, marked-Hermitian, Hamburger/Schoenberg and Karlin--Khare statements are persisted findings with classical ingredients. Their common interpretation as a constructive alternative to arbitrary target-carrying marks—and as a warning that positivity depth or sample count cannot substitute for correct relational geometry and sufficient relational arity—is a supported synthesis.
 
 ## Falsification criterion
 
-Produce a claimed canonical relational lift whose exact retained data still admit two configurations outside the intended gauge orbit or on opposite sides of the target property. Conversely, a new lift that removes a documented ambiguity without importing the target would strengthen the principle.
+Produce a claimed canonical relational lift whose exact retained data still admit two configurations outside the intended gauge orbit or on opposite sides of the target property. For a positivity lift, a matched control that agrees on all retained minor orders but differs at the target is decisive. Conversely, a new lift that removes a documented ambiguity without importing the target would strengthen the principle.
 
 ## Lean-formalizable core
 

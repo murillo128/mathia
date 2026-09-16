@@ -2,43 +2,35 @@
 
 This file holds the current mathematical questions suggested by the durable Weil-inertia intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Control the finite negative sector for a bounded retained-tail comparison
+## Control the finite negative sector without mistaking tail-floor saturation for progress
 
 **Linked intuitions:** `MI-017-sliding-first-crossing-localization-produces-autocorrelation-symbols` through `MI-032-reserve-lifting-converts-the-frozen-essential-obstruction-into-a-finite-negative-index-problem`.
 
 WI-304--WI-306 classify the frozen-reserve tail-dropped comparison and show that its first active prime already creates an essential negative band. WI-307 changes the architecture: because the unit-window archimedean symbol is unbounded above, the exterior reserve can be lifted at every fixed aperture, moving the essential spectrum positive and leaving only a finite discrete negative sector. WI-308 restores the omitted source exactly by clipping the source symbol, producing a positive tail multiplier.
 
-WI-309 shows that an aperture-adaptive endpoint-singular localizer can make the retained tail floor uniform while the essential spectrum stays positive. However WI-310 identifies a hidden opposite cost in the **uncapped** split. The same reserve gate forces `B_L->infinity`, and the full localized clipped excess grows like `1/eta_B` on every fixed bounded frequency window. Therefore
+WI-309 shows that an aperture-adaptive endpoint-singular localizer can make the retained tail floor uniform. WI-310 then identifies a hidden opposite cost in the **uncapped** split: the same reserve gate forces `B_L->infinity`, and the full localized clipped excess drives fixed-test Rayleigh quotients of the complementary comparison to `-infinity`. Capping the retained excess at `1/2` repairs that representation instability while preserving a uniform lower tail floor and finite negative index.
 
-`Q=D_(L,chi_B,B)+T_(chi_B,B)`
+WI-311 now proves that the endpoint singularity is not the structural source of the uniform floor. At every fixed aperture, finitely many smooth real unit-window localizers with widely separated carrier frequencies can make the capped retained-tail operator satisfy
 
-with the full unbounded retained tail necessarily drives fixed-test Rayleigh quotients of `D` to `-infinity` along the adaptive family. The uncapped comparison manufactures arbitrarily deep discrete negative modes regardless of RH, so a uniform bound on that `D` is the wrong endgame.
+`1/2(1-1/(2N)-epsilon) I <= That_(L,N,epsilon) <= (1/2) I`,
 
-WI-310 gives an exact repair. Replace the retained excess by
+so `That` can approach `(1/2)I` in operator norm. The exact source split then forces
 
-`qhat_B=min((sigma_1-B)_+,1/2)`.
+`Dhat_(L,N,epsilon) -> Q-(1/2)I`
 
-The source identity remains exact,
+with the same norm accuracy. Thus the largest possible scalar floor is asymptotically saturable by smooth localization, but **improving that floor alone does not simplify the RH problem**: in the saturating regime the complementary operator becomes an arbitrarily small bounded perturbation of the original unknown source shifted by `-1/2`.
 
-`Q=Dhat_(L,chi_B,B)+That_(chi_B,B)`,
+The live theorem is therefore not a stronger scalar retained-tail witness. It is a genuinely independent uniform control of the finite negative sector whose proof does not become equivalent to proving `Q>=0` after a near-constant subtraction. Any successful comparison must show that the compact/discrete part is easier for source-specific reasons that survive the exact identity `Q=D+T`.
 
-while the retained-tail operator now satisfies the uniform two-sided bound
+## Track compact-sector complexity across both endpoint and modulation degenerations
 
-`1/(64 pi e) I <= That <= (1/2) I`.
+WI-309 placed the uniform-tail cost in endpoint singularity. WI-311 shows that smooth frequency multiplexing can move that cost elsewhere: the carrier frequencies needed to flatten the capped tail become extremely large, derivatives of the localizers grow, and the aggregate autocorrelation becomes rapidly oscillatory. The compact localization correction may therefore deteriorate even though every individual window is smooth.
 
-The lower edge from WI-309 survives because the cap equals `1/2` on the exterior region used in that argument, but the upper bound prevents the representation itself from injecting unbounded negative depth into `Dhat`. Moreover `Dhat>=D`, so the reserve gate still leaves only a finite negative sector at each aperture.
-
-The live theorem is therefore **uniform control of the finite negative spectrum of the capped comparison**, not a stronger tail floor and not a lower bound for the uncapped `D`. Under an RH failure the first-crossing mode still forces a negative direction of depth at least `1/(64 pi e)`; a positive strategy must rule out such a direction for the source-valid capped family, while an impossibility result must show that the compact/discrete sector defeats every admissible bounded-tail reserve/localizer architecture.
-
-## Track localizer singularity and compact-sector complexity without retained-tail overcharge
-
-Endpoint-singular localization remains the mechanism that keeps a uniform source-tail witness, and its compact correction can still lose regularity as the singularity approaches the `L^2` boundary. But WI-310 separates that genuine compact-sector difficulty from a coordinate artifact: letting the retained positive tail grow without bound automatically forces the complementary comparison negative.
-
-Future estimates should therefore use a bounded retained-tail split (or prove an equivalent representation-stability property) before interpreting negative eigenvalue depth/multiplicity. A representation whose positive summand diverges while the source form stays fixed is not evidence of an arithmetic obstruction in the complementary summand.
+Future estimates must treat **endpoint regularity and modulation scale as alternative coordinate costs**, not infer structural progress from avoiding one of them. A source-valid family needs uniform control of the compact/discrete sector under whichever degeneration produces the tail floor. No result yet bounds the negative index or negative depth uniformly along the smooth multiplexed family.
 
 ## Keep compact certificate design separate from full Weil positivity
 
-Finite-dimensional trial-subspace optimization remains downstream of the source-valid information-retention question. The capped source-exact decomposition supplies a fixed positive margin without an unbounded subtraction artifact, but an arbitrary finite-rank patch chosen after observing negative modes is still not source-valid. Any certificate must be derived from the actual adaptive localized Weil operator and survive the aperture limit.
+Finite-dimensional trial-subspace optimization remains downstream of the source-valid information-retention question. The capped source-exact decomposition supplies a bounded positive margin without an unbounded subtraction artifact, but WI-311 shows that even an almost maximal margin can be representationally empty when the complement converges to `Q-cI`. An arbitrary finite-rank patch chosen after observing negative modes is still not source-valid. Any certificate must be derived from the actual localized Weil operator and survive the aperture/complexity limit.
 
 ## Preserve the signed-density quotient
 

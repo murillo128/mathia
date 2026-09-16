@@ -2,7 +2,7 @@
 
 This file holds the current mathematical questions suggested by the durable Nyman--Beurling intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Leave fixed compact sublogarithmically conditioned exterior samplers after the two-dimensional obstruction
+## Leave compact sublogarithmically conditioned exterior samplers after boundary normalization
 
 **Linked intuitions:** `MI-001-target-aware-gram-geometry-must-carry-absolute-scale` through `MI-032-zero-mass-poisson-cancellation-exports-an-equal-negative-lobe`.
 
@@ -12,15 +12,23 @@ NB-150 closes the growing mesoscopic two-point horizontal route. For `1<<L_G=o(G
 
 NB-151 closes the fixed-scale loophole for the two-point geometry when the target packet itself has logarithmic rank. Horizontal differencing of `xi'/xi` gives an absolutely convergent signed sum over the actual zeros with total charge only `O(1)`. A target packet of `Omega(log G)` positive charge must therefore be balanced by `Omega(log G)` negative charge in a bounded neighboring ordinate window.
 
-NB-152 removes the two-point restriction for fixed horizontal compact support under bounded conditioning. NB-153 now removes the bounded-vertical and bounded-conditioning restrictions up to the logarithmic threshold. For a zero-mass signed measure on any fixed compact complex offset set `K subset {Re w>0}`, let `V_G` be total variation, `q_G` the minimum positive charge on an `Omega(log G)` target packet, and `C_G=V_G/q_G`. If `C_G=o(log G)`, completed-function conservation forces `Omega(q_G log G)` adverse charge; a fixed fraction lies within ordinate radius `O(C_G)` and is carried by at least `Omega(log G/C_G)` actual adverse zeros.
+NB-152 removes the two-point restriction for fixed horizontal compact support under bounded conditioning. NB-153 removes the bounded-vertical and bounded-conditioning restrictions up to the logarithmic threshold on any fixed compact exterior set. With `C_G=V_G/q_G`, every family with `C_G=o(log G)` still exports `Omega(q_G log G)` adverse charge, a fixed fraction within ordinate radius `O(C_G)`, carried by at least `Omega(log G/C_G)` adverse zeros.
 
-The surviving compact-sampler route must therefore spend at least logarithmic conditioning before this conservation argument ceases to force a large adverse population, and even that scale is only *not ruled out*, not validated. Bounded two-dimensional geometry itself is closed. A genuinely different route must combine useful logarithmic-or-worse conditioning with prime-side cancellation, move the support toward `Re s=1`, let horizontal/vertical support diameter grow with `G`, or couple directly to target-bearing Nyman data before the signed zero charges are separated.
+NB-154 closes the simplest moving-boundary loophole. If the sampler support may approach `Re w=0` with minimum horizontal gap `a_G`, then the Euler-product remainder and the maximum pointwise Poisson amplification both worsen by the same factor `1/a_G`. The effective condition number is therefore
 
-## Treat reflection closure, signed conservation, conditioning radius and actual adverse occupation as distinct currencies
+`D_G=C_G/a_G=V_G/(a_G q_G)`.
 
-Positive sampling pays the Hadamard budget. Zero-mass sampling cancels that scalar term but creates a sign debt. Jordan domination forgets location and pays the budget again. NB-150 shows mesoscopic actual-zero background fills both lobes; NB-151--NB-152 show that at fixed horizontal scale a logarithmic target packet forces a neighboring adverse population; NB-153 quantifies the remaining conditioning trade: `C_G` can move the debt only to radius `O(C_G)` and reduce the forced population only to `Omega(log G/C_G)` throughout the sublogarithmic regime.
+Whenever `D_G=o(log G)`, the same logarithmic sign debt survives: `Omega(q_G log G)` adverse charge remains, a fixed fraction lies within ordinate radius `O(1+C_G)`, and at least `Omega(log G/D_G)` actual adverse zeros are required. Merely moving the sampler toward `Re s=1` is therefore not a new escape while it remains well-conditioned relative to the boundary amplification.
 
-A future signed sampler must state which conservation identity it uses, how much coefficient variation it spends relative to target charge, and how the adverse part is controlled **without** reverting to total variation or to a fixed compact sublogarithmically conditioned geometry already covered above. The threshold `C_G~log G` is a necessary escape scale for this argument, not evidence that an isolating sampler exists there.
+The surviving compact-sampler route must spend at least logarithmic **gap-normalized** conditioning, obtain signed prime-side cancellation sharper than the absolute Euler bound, let support diameter grow, or couple directly to target-bearing Nyman/prime data before the signed zero charges are separated. The threshold `D_G~log G` is only where this obstruction stops deciding the question; it is not an isolating construction.
+
+## Treat reflection closure, signed conservation, boundary amplification, conditioning radius and adverse occupation as distinct currencies
+
+Positive sampling pays the Hadamard budget. Zero-mass sampling cancels that scalar term but creates a sign debt. Jordan domination forgets location and pays the budget again. NB-150 shows mesoscopic actual-zero background fills both lobes; NB-151--NB-153 show that compact exterior sampling cannot isolate a logarithmic target packet at sublogarithmic conditioning.
+
+NB-154 adds a calibration rule for boundary approach. The raw ratio `C_G=V_G/q_G` is no longer the correct currency when the horizontal gap shrinks; both useful charge and worst-case source/adverse amplification scale against `a_G`. The invariant obstruction variable is `D_G=C_G/a_G`. A future boundary sampler must therefore state not only that `a_G->0`, but how its useful target charge, total variation and signed Euler remainder scale after this normalization.
+
+A future signed sampler must state which conservation identity it uses, how much coefficient variation it spends relative to target charge and boundary gain, and how the adverse part is controlled **without** reverting to total variation or to a compact sublogarithmically gap-conditioned geometry already covered above. The logarithmic `D_G` threshold is a necessary escape scale for this argument, not evidence that an isolating sampler exists there.
 
 ## Push canonical shell discrepancy independently
 
