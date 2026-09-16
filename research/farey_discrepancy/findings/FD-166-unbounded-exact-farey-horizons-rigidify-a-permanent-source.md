@@ -36,7 +36,7 @@ a(r)=\mu(r)\ \ (1\le r\le\lfloor\sqrt H\rfloor).
 \tag{2}
 \]
 
-Consequently, if `mathcal H subseteq N` is any unbounded set of horizons and
+Consequently, if \(\mathcal H\subseteq\mathbb N\) is any unbounded set of horizons and
 
 \[
 \mathcal D_{H,A}=\mathcal D_H
@@ -51,7 +51,7 @@ then
 \tag{4}
 \]
 
-No density, nesting or growth condition on `mathcal H` is needed. The horizons may be arbitrarily sparse or superlacunary.
+No density, nesting or growth condition on \(\mathcal H\) is needed. The horizons may be arbitrarily sparse or superlacunary.
 
 Equivalently, if `n_0` is the first coefficient at which a permanent source differs from Möbius,
 
@@ -124,7 +124,7 @@ through the same prefix. This proves (2).
 
 ## 2. Any unbounded horizon hierarchy exhausts every finite coefficient
 
-Assume (3) for an unbounded horizon set `mathcal H`. Fix an arbitrary integer `n`. Since `mathcal H` is unbounded, choose `H in mathcal H` with
+Assume (3) for an unbounded horizon set \(\mathcal H\). Fix an arbitrary integer `n`. Since \(\mathcal H\) is unbounded, choose \(H\in\mathcal H\) with
 
 \[
 H\ge n^2.
@@ -140,7 +140,7 @@ a(n)=\mu(n).
 
 As `n` was arbitrary, (4) follows. Notice that neither coherence between adjacent horizons nor a lower bound on the number of observed horizons enters the proof. One sufficiently large exact field settles each fixed finite coordinate, and an unbounded sequence eventually settles them all.
 
-The detection-radius formulation (6) is the same argument read contrapositively. If `a(n_0) != mu(n_0)`, then any horizon `H>=n_0^2` exposes `n_0` inside the consecutive part of `mathcal Q_H`, so exact full-field equality is impossible.
+The detection-radius formulation (6) is the same argument read contrapositively. If \(a(n_0)\ne\mu(n_0)\), then any horizon \(H\ge n_0^2\) exposes `n_0` inside the consecutive part of `mathcal Q_H`, so exact full-field equality is impossible.
 
 ## 3. Why this does not contradict the dense kernels of FD-164 and FD-165
 
