@@ -225,6 +225,62 @@ changes sign at a modulus exponent tending to
 
 The number `4` here comes from the classical Burgess-type exponent inside the prime Halász–Montgomery theorem, not from the source-incidence combinatorics of `MC-324`.
 
+### 1.1 Moving the Burgess order cannot cross the quartic exponent
+
+The same power balance gives an exact ceiling that is useful to state separately. Put
+
+\[
+q=y^\alpha
+\]
+
+and, before the `\varepsilon` and `B` losses, write the exponent of `y` in the second term of `(11)` as
+
+\[
+e_k(\alpha)
+:=-\frac1k+\alpha\frac{k+1}{4k^2}
+=\frac{(\alpha-4)k+\alpha}{4k^2}.
+\tag{17a}
+\]
+
+Then
+
+\[
+e_k(\alpha)<0
+\quad\Longleftrightarrow\quad
+\alpha<\frac{4k}{k+1}
+=4-\frac4{k+1}.
+\tag{17b}
+\]
+
+In particular,
+
+\[
+e_k(4)=\frac1{k^2}>0,
+\tag{17c}
+\]
+
+and `e_k(\alpha)>0` for every `\alpha>4` and every finite `k`. Therefore even perfect quantitative control of the `k`-dependent constant, sufficient to let `k=k(y)` grow, cannot turn this same Burgess exponent into a fixed-power gain at or beyond `q=y^4`. Moving `k` can only shrink the subquartic deficit `4/(k+1)` and potentially make a statement with exponent `4-o(1)` effective from below.
+
+There is also an intrinsic near-boundary cost. For `\alpha=4-\delta`, treating `k` as continuous and ignoring secondary losses, `(17a)` becomes
+
+\[
+e_k(4-\delta)
+=\frac{4-\delta}{4k^2}-\frac{\delta}{4k}.
+\tag{17d}
+\]
+
+Its optimum occurs at
+
+\[
+k_* = \frac{2(4-\delta)}{\delta},
+\qquad
+ e_{k_*}(4-\delta)
+=-\frac{\delta^2}{16(4-\delta)}.
+\tag{17e}
+\]
+
+Thus the raw Burgess saving itself degenerates quadratically as the modulus exponent approaches four; `\varepsilon`, sieve, auxiliary-parameter and theorem-constant losses can only make the uniform approach harder. This sharpens the role of moving-order estimates: they may quantify how close one can get to the quartic horizon, but **crossing that horizon requires a stronger analytic exponent or genuinely different information**, not merely better control of constants in the present inequality.
+
 ## 2. The full reciprocal endpoint has divergent exact bias energy
 
 Let `K` be binomial with parameters `(R,1/2)`. Under uniform `a\in\mathbf F_2^R`, equation `(5)` gives
@@ -309,7 +365,7 @@ The matching exponent therefore survives two mathematically different reductions
 It also sharpens the live next question. A new selection or nonnegative endpoint reweighting cannot matter merely because it uses more modes: the complete family already reaches the strongest fixed-power modulus range available from this Burgess/Halász–Montgomery mechanism. To cross the boundary one needs at least one of:
 
 - a prime-supported character-family estimate improving the fixed-modulus Burgess exponent;
-- quantitative control of Schlage-Puchta's constants strong enough to let `k` grow with `y` and resolve a genuinely `y^{4-o(1)}` boundary, rather than only every fixed `y^{4-\delta}` range;
+- quantitative control of Schlage-Puchta's constants strong enough to let `k` grow with `y` and resolve a genuinely `y^{4-o(1)}` boundary from below, rather than only every fixed `y^{4-\delta}` range;
 - a signed or joint invariant that retains information discarded by total squared bias;
 - an arithmetic obstruction to the common source package not expressible solely through its modulus size.
 
@@ -321,7 +377,7 @@ The analytic theorem is classical prior art. The primary source is Jan-Christoph
 
 The exact energy identity `(18)` is elementary binomial variance/Parseval-level arithmetic. No novelty is claimed for it either.
 
-The durable line-specific delta is the composition: the **full reciprocal endpoint energy** and the **arbitrary-`k` fixed cubefree modulus theorem** meet at exponent four. This gives a direct analytic proof of the same quartic source floor previously reached through pair-mode conductor summation, and identifies the quartic frontier as a shared boundary of two distinct proof architectures.
+The durable line-specific delta is the composition: the **full reciprocal endpoint energy** and the **arbitrary-`k` fixed cubefree modulus theorem** meet at exponent four. This gives a direct analytic proof of the same quartic source floor previously reached through pair-mode conductor summation, and identifies the quartic frontier as a shared boundary of two distinct proof architectures. Equations `(17a)`–`(17e)` further show that this boundary is intrinsic to the Burgess exponent itself: uniform control of the existing constants can improve approach to four from below, but cannot create a fixed-power gain at or beyond four.
 
 ## Boundaries and falsification tests
 
@@ -329,7 +385,7 @@ The durable line-specific delta is the composition: the **full reciprocal endpoi
 - **One common controlled modulus is load-bearing.** For genuinely different individual moduli, Schlage-Puchta's theorem replaces the modulus parameter by `Q^2`; `MC-323` shows that this moves the analogous fixed-power horizon back to exponent `2`.
 - **Dense prime support is load-bearing.** The normalization `(11)` uses `A_y\asymp y/\log y`.
 - **Distinct endpoint characters are load-bearing.** Independence of the endpoint generators supplies `2^R` distinct functionals; repetitions cannot manufacture the energy `(6)` inside a set of characters.
-- **The growth condition `(7)` is explicit.** The theorem does not justify letting `k=k(y)` grow with no control on the `k`-dependent constant. For every fixed `\delta`, `k=k(\delta)` is fixed first.
+- **The growth condition `(7)` is explicit.** The theorem does not justify letting `k=k(y)` grow with no control on the `k`-dependent constant. For every fixed `\delta`, `k=k(\delta)` is fixed first. Even if such uniformity were supplied, `(17b)`–`(17c)` show that the present Burgess exponent remains strictly subquartic for every finite `k` and has positive raw exponent at `q=y^4`.
 - **The conclusion is fixed-subquartic, not strictly superquartic.** Equation `(9)` means every fixed exponent below four is eventually excluded. Nothing here rules out `P=y^{4+o(1)}` or proves `P\ge y^{4+\eta}` for any fixed `\eta>0`.
 - **No source-incidence rigidity follows from this proof.** The half-loading and near-equality conclusions of `MC-327` remain genuinely additional information supplied by the Plotkin/source representation.
 - **No Möbius or RH bound follows.** This is a structural obstruction for the reciprocal-endpoint realization, not an estimate for `M(x)`.
@@ -340,4 +396,4 @@ A direct falsification is available at every step: `(3)` fails if the arbitrary-
 
 The quartic source barrier is now overdetermined rather than representation-specific. Pairwise conductor bills plus source incidence reach exponent four from below; the full common-modulus endpoint energy independently reaches exponent four from the analytic side. Both stop there for known reasons.
 
-Accordingly, another rearrangement of the same positive endpoint modes is unlikely to buy a fixed-power gain. The sharper live targets are now the **quartic boundary itself**—especially whether the `k`-dependence in the prime Halász–Montgomery/Burgess input can be quantified well enough to approach `y^{4-o(1)}` with moving parameters—or a genuinely joint/signed arithmetic invariant that is not summarized by total bias energy or positive conductor incidence.
+Accordingly, another rearrangement of the same positive endpoint modes is unlikely to buy a fixed-power gain. The sharper live targets are now either the **subquartic approach problem**—whether the `k`-dependence in the prime Halász–Montgomery/Burgess input can be quantified well enough to make an explicit `y^{4-o(1)}` exclusion from below—or a genuinely stronger prime-character exponent, joint/signed arithmetic invariant, or source obstruction that is not summarized by total bias energy or positive conductor incidence.
