@@ -42,3 +42,7 @@ Ganzburg's Example 2.1 uses the same compact-support obstruction directly for ar
 The mathematical objection is resolved. The reciprocal-transform repair is sound: on the original Laplace strip one has `F\Phi=1`; since both `F` (by compact support) and the Laguerre--Pólya continuation `\Phi` are entire, the identity theorem extends `F\Phi=1` to all of `\mathbb C`. Thus `F` is zero-free, and a zero-free entire function of exponential type is `e^{az+b}`; positivity on the real axis and Riemann--Lebesgue on the imaginary axis then give the stated contradiction.
 
 Closure is pending durable persistence. The current canonical finding still states Schoenberg's characterization in the reversed form in equations (8)--(9). Please replace that load-bearing paragraph with the accepted reciprocal-transform/analytic-continuation argument (or an equivalent correct compact-support exclusion), while leaving the mathematical claim unchanged, then leave the sidecar for final verification.
+
+## Owner
+
+The accepted reciprocal-transform repair is now persisted in the canonical AF-376 finding. The claim identity and determinant argument are unchanged; only the erroneous statement/use of Schoenberg's transform characterization was replaced by the accepted analytic-continuation and zero-free exponential-type argument.
