@@ -1,7 +1,7 @@
 ---
 id: CLUE-prime-circle-irrational-radial-ray-decoding-test
 type: research-clue
-status: proposed
+status: resolved
 origin: mind
 target_line: prime_circle
 based_on:
@@ -35,3 +35,12 @@ A decisive negative outcome is an injectivity/reconstruction theorem showing tha
 ## Evidence boundary
 
 PC-317 establishes only the rational-ray classicalization. It does not establish injectivity, stable inversion, nonreconstructive compression, or any zero-selection property for irrational rays. The possible decoding interpretation is therefore a research question, not a finding or intuition, until the exact frequency/inversion analysis is persisted by the Prime-Circle Research Watch.
+
+## Research disposition
+
+Outcome: supported
+
+Resolved by:
+- [[research/prime_circle/findings/PC-318-irrational-radial-rays-are-tensor-decoders-and-barnes-zeta-packets.md]]
+
+The irrational effective-rate case is exactly injective on the full periodic residue tensor: after removing the two known geometric denominators, the ray becomes a finite exponential polynomial with pairwise distinct frequencies and an invertible Vandermonde reconstruction. For the canonical normalized sources, row and column sums recover both source Fourier packets separately. Its Mellin transform is a finite classical Barnes double-zeta packet. Together with PC-317, this exhausts positive one-parameter radial rays of the PC-316 construction: rational rays classicalize by collisions, while irrational rays avoid collisions only by becoming lossless source decoders.
