@@ -118,7 +118,7 @@ Then (7) becomes
 \tag{10}
 \]
 
-Thus any fixed separation `|mathcal A_p(Q_1)-mathcal A_p(Q_2)|>=Delta>0` in such a shell forces
+Thus any source-coordinate separation bounded below by a fixed `Delta>0` in such a shell forces
 
 \[
 \boxed{
@@ -265,7 +265,7 @@ b\kappa_A\ge\frac12
 \tag{24}
 \]
 
-for every bounded terminal shell. The strict inequality `b kappa_A>1/2` used in the `RE-015` remote-tail truncation is more than enough.
+for every bounded terminal shell. The strict inequality required by the `RE-015` remote-tail truncation is more than enough.
 
 More generally, let
 
@@ -298,7 +298,7 @@ The terminal controls in `RE-155`--`RE-163` preserve only coarse PNT information
 \tag{27}
 \]
 
-while producing a nonvanishing change in `mathcal A_p`. Equation (11) now locates the missing information: an order-one terminal change necessarily creates, at some intermediate point of a shell of logarithmic width `L`, a relative Chebyshev discrepancy of size at least
+while producing a nonvanishing change in the normalized Robin source coordinate. Equation (11) now locates the missing information: an order-one terminal change necessarily creates, at some intermediate point of a shell of logarithmic width `L`, a relative Chebyshev discrepancy of size at least
 
 \[
 \asymp \frac{\eta_p}{L}.
