@@ -198,7 +198,7 @@ from a concrete boundary modulus. Any fixed logarithmic Hölder exponent strictl
 
 ## 3. The half-log exponent is genuinely critical
 
-Fix `C_delta=C ne 0`. Choose a nonzero real
+Fix a nonzero real number `C` and set `C_delta=C`. Choose a nonzero real
 
 \[
 \eta\in C_c^\infty((0,2)),
