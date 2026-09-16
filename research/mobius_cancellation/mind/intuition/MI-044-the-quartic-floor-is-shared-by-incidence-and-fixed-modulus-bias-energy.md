@@ -1,0 +1,13 @@
+# MI-044 — The quartic floor is shared by incidence geometry and fixed-modulus bias energy
+
+**Evidence level:** exact/literature-backed synthesis from [MC-323](../../findings/MC-323-varying-modulus-prime-halasz-montgomery-obstruction.md) through [MC-329](../../findings/MC-329-fixed-common-modulus-bias-energy-has-a-quartic-horizon.md). The two derivations use different summaries of the same endpoint package and neither proves RH.
+
+The exponent four is no longer only the output of positive pair-incidence accounting. MC-323--MC-327 obtain it by charging common source primes through varying-modulus conductor costs and then show that saturation forces the actual logarithmic source mass into the half-loaded Hamming band. MC-329 reaches the same lower bound before that geometry is used: a fixed-common-modulus character-bias energy estimate already controls every fixed finite character family throughout `q<=y^(4-delta)`.
+
+For the complete reciprocal endpoint family the squared-bias demand is exact, `sum_(a!=0)|x(a)|^2=2^R/R-1`. Under the mild growth condition `R y^(-c_delta) log y ->0`, the fixed-modulus estimate makes that demand impossible if `q=4P<=y^(4-delta)`. Hence the common radical again satisfies `liminf log P/log y>=4`.
+
+This coincidence is structurally useful because the two arguments discard different information. The incidence proof remembers which source primes load which modes but pays positive conductor bills. The fixed-modulus proof forgets the column geometry and compresses the entire family into one nonnegative bias-energy statistic. When both independently stop at the same exponent, rearranging modes inside either positive summary is unlikely to create a fixed-power gain.
+
+The next resource must therefore be genuinely new relative to both compressions: stronger prime-character control beyond the present fixed-power horizon; quantitative fixed-order constants allowing the character moment/order to grow with the scale; a signed or joint statistic that is not reducible to total squared bias or positive conductor incidence; or a different endpoint/source representation. Within the incidence route, MC-327--MC-328 still say that any economical source lives in the central Hamming band and cannot be resolved by low Fourier degree.
+
+**Boundary.** Equality of the two quartic exponents is a method-boundary diagnosis, not a theorem that exponent four is optimal for the underlying arithmetic problem. A stronger character theorem, a genuinely joint signed invariant, or a different source representation can escape both derivations. The intuition forbids only treating another positive reweighting of the same endpoint family as independent evidence of new leverage.

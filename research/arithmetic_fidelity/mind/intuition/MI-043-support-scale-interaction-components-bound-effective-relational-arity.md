@@ -1,0 +1,13 @@
+# MI-043 — Support-scale interaction components bound effective relational arity
+
+**Evidence level:** exact synthesis from [AF-372](../../findings/AF-372-finite-order-total-positivity-does-not-determine-laguerre-polya.md), [AF-376](../../findings/AF-376-uniform-separation-defeats-e-polya-frequency-determination.md), and [AF-377](../../findings/AF-377-bounded-support-interaction-components-hide-finite-order-aliases.md).
+
+Nominal access to determinants of every order does not imply genuinely unbounded relational information. For a compact/local kernel with support width `w`, the relevant object is the graph `G_w(E)` on the sampled row set: two rows are adjacent only when their translates can interact inside that support scale. If every connected component has at most `r` vertices, every sampled Toeplitz matrix permutes into blocks of size at most `r`, so all determinants of arbitrary nominal order are decided by minors of order at most `r`.
+
+AF-377 makes this exact and removes a tempting repair of AF-376. Positive minimum spacing is sufficient to hide compact-support false positives, but its failure is not sufficient to restore determination. One can have `inf |u-v|=0` while `G_w(E)` remains a disjoint union of pairs. A compactly supported `PF_2` function that is not `PF_3` then passes every sampled determinant order even though it is not globally Pólya-frequency.
+
+The reusable resource is therefore **interaction complexity at the source support scale**, not point density or declared determinant order separately. Vanishing gaps only matter when they assemble into components whose size grows enough to expose the higher-order relations needed by the target class. Dense generated difference groups solve a different gauge problem and do not imply this connectivity.
+
+For sampled positivity arguments the audit should ask, in order: what source localization scale is admissible; what interaction graph that scale induces on the actual rows; whether its component sizes are unbounded in the regime used; and whether the resulting relational access is determining on the declared source class. A proof that checks only `inf gap=0` can still be effectively finite-order.
+
+**Falsification criterion.** Given a proposed sampled all-order certificate, find an admissible compact/local source scale `w` for which `G_w(E)` has uniformly bounded components and the source class contains a `PF_r` but non-PF kernel at the corresponding component bound. Such a construction proves that the nominal high-order certificate factors through bounded arity. Escaping the obstruction requires either unbounded support-scale components plus a determining theorem or justified source rigidity excluding the local aliases.

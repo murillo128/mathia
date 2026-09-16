@@ -12,7 +12,7 @@ The live broader question is to identify justified source-class/data couplings s
 
 ## Distinguish gauge elimination from a target-faithful positivity certificate
 
-**Linked intuition:** `MI-002-canonical-relational-lifts-can-restore-gauge`.
+**Linked intuitions:** `MI-002-canonical-relational-lifts-can-restore-gauge`, `MI-043-support-scale-interaction-components-bound-effective-relational-arity`.
 
 AF-371 separates source richness from target-faithful positivity: complete reciprocal Taylor data may determine the source while Hankel PSD remains target-mixed, whereas Schoenberg translation total positivity uses the correct ordered relation. AF-372 shows that no fixed determinant order is enough on the unrestricted translation-kernel class. AF-373 then shows that location sampling is an independent resource: on an exponentially decaying class some thin sets are determining, while the integer lattice is not.
 
@@ -20,7 +20,9 @@ AF-374 identifies the fixed-lattice multiplicative quotient. AF-375 classifies i
 
 AF-376 closes the obvious finite-phase repair on Ganzburg's broad class `L`. If the actual row set is uniformly discrete with separation `Delta_E>0`, any bounded nonnegative kernel supported in an interval shorter than `Delta_E` is `E`-Pólya-frequency at every order, while no nonzero compactly supported integrable kernel is globally Pólya-frequency. Thus `E=aZ union (tau+aZ)` with irrational `tau/a` can have dense generated difference subgroup and still retain an infinite-dimensional non-separable false-positive fibre because the **actual sampled rows** remain separated.
 
-The live question is therefore no longer whether more finite lattice phases remove the known gauge. A successful sampled positivity reduction must either use a sampling geometry with genuinely vanishing local spacing and a determining theorem, or derive a source-specific class rigid enough to exclude compact/local aliases. That source restriction must come from the arithmetic kernel rather than be imposed only to rescue the certificate.
+AF-377 removes the converse shortcut. Vanishing minimum spacing is not enough either. For a compact/local source of support width `w`, form the support-interaction graph `G_w(E)` joining sampled rows whose translates can interact. If every connected component has size at most `r`, every sampled Toeplitz determinant factorizes into blocks of order at most `r`; any compactly supported `PF_r` kernel that is not globally PF is then an all-order sampled false positive. The explicit shrinking-pair construction has `inf |u-v|=0` but interaction components of size two, so a `PF_2` non-`PF_3` kernel already defeats the nominal all-order certificate.
+
+The live question is therefore no longer whether more finite lattice phases remove the known gauge, or whether the sampling set merely has points arbitrarily close together. A successful sampled positivity reduction must prove genuinely unbounded support-scale interaction complexity together with a determining theorem, or derive a source-specific class rigid enough to exclude compact/local aliases. Dense `H_E`, vanishing minimum spacing and nominally unbounded determinant order are each insufficient by themselves.
 
 ## Separate source identification from the RH zero-selection mechanism
 
@@ -44,4 +46,4 @@ AF-320--AF-336 separate exact recovery, conditioning, support-union geometry and
 
 ## Keep fidelity currencies separate until a theorem connects them
 
-Observation horizon, admissible source category, tail class, transform fidelity, inverse conditioning, positivity relation, relational arity, **actual row separation**, generated difference subgroup, residual observation gauge and destination slack are distinct resources. AF-375 makes the separable gauge currency exact; AF-376 makes its limitation equally exact. Dense generated differences can eliminate that gauge while positive row separation still leaves all-order non-separable aliases. Future work should state which fibre has actually been removed and which target-changing fibres remain.
+Observation horizon, admissible source category, tail class, transform fidelity, inverse conditioning, positivity relation, nominal relational arity, **support-scale interaction-component size**, actual row geometry, generated difference subgroup, residual observation gauge and destination slack are distinct resources. AF-375 makes the separable gauge currency exact; AF-376 makes positive row separation an independent obstruction; AF-377 shows that even zero minimum spacing can leave the effective interaction arity uniformly bounded. Future work should state which fibre has actually been removed and which target-changing fibres remain.
