@@ -2,44 +2,32 @@
 
 This file holds the current mathematical questions suggested by the durable robin-extremal intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Use the source-fidelity capacity matched to the spatial class of the missing source
+## Match source fidelity to both the spatial capacity and the global normalization actually consumed by Robin
 
-**Linked intuitions:** `MI-001-robin-failure-requires-self-tangent-half-mass-event-gaps` through `MI-036-quantitative-pnt-fidelity-rigidifies-the-terminal-source-before-moment-complexity`.
+**Linked intuitions:** `MI-001-robin-failure-requires-self-tangent-half-mass-event-gaps` through `MI-037-mertens-normalization-turns-local-robin-shifts-into-tail-debt`.
 
 RE-153--RE-163 identify the exact Pareto-weighted Chebyshev-deficit destination and quantify how coarse-PNT generalized sources can retain order-one terminal ambiguity even under many exact or approximate moment constraints. RE-164 then introduces quantitative Korobov--Vinogradov source fidelity.
 
-RE-165--RE-166 give the sharp **remote-tail** capacity
+RE-165--RE-168 identify one continuous KV source-capacity profile. The remote-tail capacity is
 
 `K_b(p,T)=sqrt(p) log p exp(-b V(T))/V(T)`,
 
-while RE-167 gives the smaller fixed-width shell capacity
+while a logarithmic shell of width `W` has capacity `S_b(p;T,W)`. The intrinsic decay length `ell_KV(T)=log T/V(T)` interpolates fixed-shell and remote regimes: only `Theta(ell_KV)` logarithmic width already carries remote-capacity order, and a subpower shell can contain essentially the whole remote ambiguity.
 
-`L_b(p,T)=sqrt(p) log p exp(-b V(T))/log T`,
+RE-169 adds a different source-fidelity coordinate that the earlier generalized controls did not preserve: the **Mertens-product normalization**. For two sources agreeing below `T`, the difference of their Mertens constants is exactly the full Robin-kernel weighted source discrepancy,
 
-with `V(T)=(log T)^(3/5)/(log log T)^(1/5)`. Both scales are sharp against matched generalized-prime relocations, but their capacity-one centers are separated by `Theta(log log p)` in the intrinsic `V` coordinate.
+`Gamma(Q_2)-Gamma(Q_1)=int_T^infty (theta_(Q_2)-theta_(Q_1))(-h')`.
 
-RE-168 shows these are not two unrelated regimes. The KV envelope has logarithmic decay length
+Consequently any accumulated post-selector Robin displacement is an exact debt to the unseen tail once `Gamma(Q_1)=Gamma(Q_2)`. Under the same KV envelope, the remaining debt above `U` is bounded by the remote capacity `K_b(p,U)`. A fixed normalized displacement therefore cannot be postponed beyond an `O(1)` neighborhood of the KV capacity center in the intrinsic `V` coordinate.
 
-`ell_KV(T)=log T / V(T)`.
+This does not make qualitative Mertens fidelity sufficient. The matched finite relocations of RE-167--RE-168 move `Gamma` only by `Theta((sqrt(p) log p)^(-1))` while producing order-one normalized Robin displacement, so they still satisfy `Gamma(Q_p)=gamma+o(1)`. The new rigidity enters only when the source class preserves the Mertens normalization at the **critical scale** `o((sqrt(p) log p)^(-1))` (or exactly), together with a KV-rigid tail.
 
-For a logarithmic shell `[T,T exp(W)]`, the exact source capacity is governed by
-
-`S_b(p;T,W)=sqrt(p) log p int_T^(T exp W) exp(-bV(t))/(t log t) dt`.
-
-If `xi=W/ell_KV(T) -> xi_0`, then relative to the remote capacity
-
-`S_b/K_b -> Phi_b(xi_0)=(5/(3b))(1-exp(-3b xi_0/5))`.
-
-Thus `W=o(ell_KV)` gives `S_b~W L_b`, while only `Theta(ell_KV)` logarithmic width already reaches the **remote-tail capacity scale**. Taking `W=omega_T ell_KV` with `omega_T->infinity` but `omega_T=o(V(T))` captures asymptotically the full remote capacity inside a subpower shell `T^(1+o(1))`.
-
-The source-fidelity gate is therefore genuinely two-dimensional: pointwise KV envelope plus **available displacement width measured in units of `ell_KV`**. “Local shell” and “remote tail” are endpoints of one interpolation, not separate mechanisms. Restricting uncertainty to a subpower neighborhood does not by itself make the source rigid if that neighborhood contains many KV decay lengths.
-
-At every bounded-multiplicative post-selector scale `T=Bp`, even the fixed-width capacity is `p^(1/2-o(1))->infinity`; quantitative PNT fidelity alone still does not identify the normalized Robin coordinate there. The live ordinary-prime/CA theorem must constrain where the actual selector can move Chebyshev mass **inside the KV decay-length window**, or provide a non-terminal channel that bypasses this terminal capacity altogether.
+The generalized-source frontier is therefore no longer described by pointwise PNT fidelity alone. A comparison must state both the spatial capacity available inside the KV decay-length window and which global normalization invariants are preserved at the precision the Robin kernel consumes. The live ordinary-prime/CA theorem is to obtain selector-sensitive control from genuine prime structure without simply restating the exact Mertens identity.
 
 ## Control one-sided vertical reciprocal escape without overstating the symmetric obstruction
 
 RE-144--RE-152 put the zero-side packet into reciprocal-scale language and show that one-sided vertical phase geometry can hide a scale-maximal target at lacunary stages while fixed-order global local-correlation statistics remain unchanged. A closure theorem on this branch must control target-conditioned exceptional geometry rather than typical-center averages.
 
-## Keep source capacities, source-spectral ambiguity and zero-packet gates distinct
+## Keep source capacities, global normalization and zero-packet gates distinct
 
-The coarse terminal moment hierarchy, quantitative shell/tail capacity profile and zero-side packet obstructions answer different questions. A generalized-source comparison must declare its quantitative PNT envelope, the allowed displacement region, the dimensionless width `xi=W/ell_KV(T)`, and whether the corresponding `S_b` actually tends to zero. Neither a sharp source-rigidity capacity nor a zero-side matched obstruction supplies the missing ordinary-prime selector theorem by itself.
+The coarse terminal moment hierarchy, quantitative shell/tail capacity profile, Mertens normalization and zero-side packet obstructions answer different questions. A generalized-source comparison must declare its quantitative PNT envelope, allowed displacement region, dimensionless width `xi=W/ell_KV(T)`, the Mertens constant/precision it preserves, and whether the corresponding future compensation capacity tends to zero. None of these source-rigidity statements by itself supplies the missing ordinary-prime selector theorem.

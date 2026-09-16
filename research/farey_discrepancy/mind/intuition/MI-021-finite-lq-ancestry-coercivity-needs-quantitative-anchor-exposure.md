@@ -1,31 +1,29 @@
-# MI-021 — Finite-`L^q` ancestry coercivity is anchored cut exposure, and finite prime boxes do not absorb its leakage
+# MI-021 — Finite-`L^q` ancestry coercivity is anchored cut exposure, and truncation pays average-fibre leakage
 
-**Evidence level:** exact/proved synthesis from [FD-147](../../findings/FD-147-finite-seed-ancestry-coercivity-is-exactly-an-anchored-cut-problem.md) through [FD-158](../../findings/FD-158-finite-auxiliary-prime-boxes-replicate-the-cross-core-leakage-obstruction.md).
+**Evidence level:** exact/proved synthesis from [FD-147](../../findings/FD-147-finite-seed-ancestry-coercivity-is-exactly-an-anchored-cut-problem.md) through [FD-159](../../findings/FD-159-truncated-auxiliary-down-sets-pay-average-fiber-leakage.md).
 
 For binary orientations anchored on `D`, finite-`L^q` recovery is controlled by anchored boundary exposure: `C^(bin)_(q,D)=h_D(nu,eta)^(-1/q)`. Connectivity only excludes zero boundary; stable recovery requires every admissible macroscopic flip to carry uniformly positive observed boundary mass.
 
-FD-148--FD-153 price this for rank-aligned divisor-closed anchors. A fixed finite anchor forces large parent amplification; bounded parent distortion needs positive anchor mass. Central-rank anchors retain Gaussian-depth fluctuations, while bounded residual depth appears only as the rank anchor approaches total source mass.
+FD-154 gives a qualitatively different anchor from rank cuts. For a finite prime set `S`, the prime-avoidance face is divisor-closed and every unanchored squarefree integer has an `S`-free core in the anchor at depth at most `|S|`. The cost appears when that face is thinned: FD-155--FD-157 show that low anchor exposure plus bounded load forces exponentially large cross-core leakage.
 
-FD-154 gives a qualitatively different geometry. For a finite prime set `S`, the prime-avoidance face `D_(S,T)` is divisor-closed, and every unanchored squarefree integer has an `S`-free core in the anchor at depth at most `|S|`. The direct core-to-child frame has exact cut exposure and bounded parent/child distortion for fixed `S`.
+FD-158 proves that a finite completed auxiliary vocabulary does not terminate the process. For disjoint finite `S,U`, completion of the whole Boolean `S union U` box gives
 
-The cost appears when this coordinate face is thinned. FD-155 shows that reducing its anchored mass to `alpha` requires `s=exp(alpha^(-1+o(1)))` avoided prime coordinates and gives a double-exponential direct parent bill. FD-156 proves that every one-parent divisibility forest on the same face obeys `P/h >= 2^s-1`: rerouting can move the exponential price between anchor congestion and cut exposure but cannot remove it.
+`P_(S,T) + 2^(-|U|) L_(S,U,T) >= h_(S,T)(2^|S|-1)`.
 
-FD-157 identifies the exact multi-parent resource. Decompose a squarefree vertex into its `S`-part and `S`-free core, and let `L` be normalized edge mass leaving the forced `2^s-1` Boolean packet for a **different** core. Then
+The auxiliary volume factor cancels exactly. Bounded child distortion then forces fresh-prime recipients outside `S union U`.
 
-`P + L >= h (2^s-1)`.
+FD-159 identifies the correct truncated replacement. Let `C` be any finite active auxiliary core set that is downward closed under the relevant divisibility truncation, and let `f(c)` count the occupied nonempty primary `S`-states above each core. Writing `bar f=|C|^{-1}sum_c f(c)`, the cut law becomes
 
-Extra parents staying inside one core have `L=0` and inherit the one-parent exponential law. Under a child-distortion bound `eta^+(m)<=K nu(m)`, cheap `P` and fixed positive expansion require `Omega(2^s/K)` recipient vertices outside the original core packet.
+`P_(S,T) + L_(S,C,T)/|C| >= h_(S,T) bar f`.
 
-FD-158 shows that a finite auxiliary prime vocabulary cannot terminate this process once its full Boolean box is present. For disjoint finite `S,U`, let `B_(S|U)` contain every nonempty `S`-face state over every `U`-core and assume the whole box lies below `T`. If `L_(S,U,T)` is outgoing mass to children outside that box, then
+This is the exact pressure variable. Full cubes are only the constant-fibre case. A truncation ceiling can weaken the obstruction only by reducing the **average occupied primary fibre**, not merely by preventing formal completion of the auxiliary cube. If `bar r` records average available primary depth, down-set geometry gives `bar f >= 2^bar r-1`.
 
-`P_(S,T) + 2^(-|U|) L_(S,U,T) >= h_(S,T) (2^|S|-1)`.
+The reusable point is stronger than “finite completed source vocabularies are not the resource.” **Divisor-downward truncation does not create a new escape unless it actually thins the average source fibre.** Extra coordinates, incomplete boxes and ceiling effects are bookkeeping until they change `bar f` or the admissible cut geometry itself.
 
-Every outgoing child contains a prime outside `S union U`. The factor `2^|U|` is not a gain: it multiplies both the number of packet states and the number of possible incoming anchor states, so it cancels from the normalized cut law. With bounded child distortion, the number of fresh-prime recipients is `Omega(2^(|S|+|U|)/K)`.
+This also sharpens the surviving loophole. A genuinely different architecture must exploit holes not forced by divisor-downward closure, a migrating vocabulary, unbounded distortion, a different anchor, or a source identity that changes which flips/cuts are admissible. Such holes are not automatically useful: deleting fibre states can create new incoming boundary and may simply move the coercivity cost elsewhere.
 
-The reusable point is now stronger than “parent multiplicity is not the resource.” **Finite completed source vocabularies are not the resource either.** A representation can add many parents and finitely many new prime coordinates while preserving a completed divisor box on which the same anchored obstruction tensorizes. To change the law, the architecture must exploit geometry not captured by any closed finite box: sparse occupation, scale-dependent or migrating support, unbounded distortion, a different anchor, or a source identity that changes which cuts are admissible.
+A concrete next discriminator is therefore to price **non-downward holes**. Given a sparse occupied auxiliary support with small average primary fibre, quantify the incoming boundary or source-description cost required to keep anchored expansion positive. A theorem of that form would distinguish a real sparse-support escape from a relabelling of the same cut pressure.
 
 This still does not turn recipient count into an information lower bound. Many recipients may be generated by a compact deterministic rule, and fresh-prime leakage does not supply the missing arithmetic orientation. A surviving Farey route needs both a source-native mechanism producing the required leakage/orientation and a destination theorem showing that the resulting coefficient coercivity controls Franel--Landau discrepancy.
 
-The next mathematically discriminating extension is a **truncated-down-set leakage law**: replace the full auxiliary cube hypothesis `P_S P_U<=T` by a quantity measuring the occupied divisor shadow or prime-coordinate entropy of an incomplete box, and determine whether fixed positive expansion plus bounded load still forces comparable migration before a full Boolean cube can form.
-
-**Boundary.** FD-158 needs the complete finite `S union U` divisor box below the truncation. It does not iterate indefinitely at fixed `T`, does not exclude sparse/migrating support, and does not prove independent source-information growth. The entire chain remains coefficient-side and uses positive divisibility-edge measures on finite-prime avoidance faces.
+**Boundary.** FD-159 applies to the declared positive divisibility-edge architecture with finite divisor-downward auxiliary core sets. It does not rule out non-downward sparse supports, signed/nonpositive couplings, unbounded distortion or other anchor geometries. The entire chain remains coefficient-side and does not prove an RH-equivalent discrepancy estimate.

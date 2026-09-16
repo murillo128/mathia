@@ -1,31 +1,39 @@
-# MI-037 — High-ordinate analyticity turns the boundary tariff into a transport budget
+# MI-037 — High-ordinate analyticity turns the boundary tariff into capped Poisson transport
 
-**Evidence level:** literature+derived synthesis from [NB-154](../../findings/NB-154-boundary-approach-amplifies-target-and-euler-response-by-the-same-poisson-width.md), [NB-160](../../findings/NB-160-separated-jordan-supports-force-adverse-zero-reservoir.md) through [NB-166](../../findings/NB-166-high-ordinate-analyticity-replaces-conditioning-by-poisson-transport.md). The high-ordinate `zeta'/zeta` estimate is external literature; the transport insertion into the signed conservation law is line-specific synthesis.
+**Evidence level:** literature+derived synthesis from [NB-154](../../findings/NB-154-boundary-approach-amplifies-target-and-euler-response-by-the-same-poisson-width.md), [NB-160](../../findings/NB-160-separated-jordan-supports-force-adverse-zero-reservoir.md) through [NB-167](../../findings/NB-167-capped-poisson-transport-unifies-conditioning-and-wasserstein-conservation.md). The high-ordinate `zeta'/zeta` estimate is external literature; the capped-transport insertion into the signed conservation law is line-specific synthesis.
 
-NB-154 gives the elementary boundary currency for a compact zero-mass signed sampler: absolute convergence prices the Euler side by `C_G/a_G`, where `C_G` is total-variation conditioning and `a_G` the horizontal gap from `Re s=1`. NB-165 corrects that tariff for the actual high-ordinate zeta source. Uniformly on `sigma>=1`, the verified pointwise bound `|zeta'/zeta| << log G/log log G` gives the better multiplier
+NB-165 corrects the naive inverse-gap tariff for the actual high-ordinate zeta source. Uniformly on `sigma>=1`, the verified pointwise bound gives
 
 `E_G=min{a_G^(-1), log G/log log G}`,
 
-so the total-variation conservation cost is `C_G E_G`. Boundary motion stops buying inverse-gap amplification below the crossover `a_G~log log G/log G`.
+so boundary motion stops buying inverse-gap amplification below `a_G~log log G/log G`.
 
-NB-166 shows that total variation is still not the right final currency when the Jordan signs interlace. Analyticity converts the high-ordinate pointwise estimate into a vertical derivative bound of size `O(E_G/a_G)` by Cauchy's estimate. If `ell_G` is the mean optimal transport distance between the positive and negative Jordan parts and
+NB-166 then shows that total variation is not the right final currency when the Jordan signs interlace. Analyticity turns the pointwise estimate into a vertical derivative bound `O(E_G/a_G)`, allowing ordinary Jordan transport to replace raw conditioning through `Theta_G=C_G ell_G/a_G`.
 
-`Theta_G=C_G ell_G/a_G`,
+NB-167 identifies the sharper geometry that both predecessor bounds were approximating. On the sampling line use the truncated Poisson metric
 
-then pairing the derivative bound with an optimal Jordan coupling yields
+`d_a(s,t)=min{1,|s-t|/a}`.
 
-`|int (zeta'/zeta)(1+a_G+it) dnu_G(t)| << q_G Theta_G E_G`.
+If `T_G` is the optimal Jordan transport cost for `d_a` and `Xi_G=T_G/q_G`, then
 
-The same transport treatment controls the completed Gamma/rational terms and the zero-side tails. Thus the entire signed conservation remainder is governed by `Theta_G E_G`, not by `C_G E_G`, when transport information is retained before absolute values are taken.
+`Xi_G <= (1/2) min{C_G,Theta_G}`.
 
-This is a qualitative change in the escape geometry. Arbitrarily large total variation is not itself useful if the two signs are interlaced finely enough that `Theta_G` stays small. For a logarithmic target packet, essentially full adverse debt is exported whenever
+This cap is intrinsic to the analytic test class. Below one Poisson width, displacement is charged linearly as in `W_1/a_G`; beyond one width, the response has saturated and only unmatched signed mass matters. Large short-range total variation and tiny long-range mass are both priced correctly in the same quantity.
 
-`Theta_G E_G=o(log G)`.
+The completed explicit-formula conservation remainder satisfies
 
-In the extreme boundary layer this becomes `Theta_G=o(log log G)`, independent of `C_G`. The adverse mass can also be localized on radius `O(1+sqrt(a_G Theta_G))`, improving the older `O(1+C_G)` localization, and the explicit zero-free region then forces a divergent adverse-zero population under the same conservation hypothesis.
+`sum_rho Q_G(rho)=O(q_G Xi_G E_G)`,
 
-The reusable principle is stronger than “use the best pointwise source estimate.” **Apply source regularity before destroying the signed geometry.** A pointwise analytic bound plus Cauchy differentiation can turn Wasserstein/Jordan transport into the correct source norm, replacing a large total-variation bill by a scale-invariant transport bill. The order of inequalities matters: taking absolute values too early loses the cancellation the source theorem can actually see.
+and every individual Poisson response obeys
 
-For Nyman--Beurling, the surviving one-width regime must therefore beat a transport-aware high-ordinate conservation law, not merely tolerate large `C_G`. A successful sampler needs target gain while making the actual values of `zeta'/zeta` cancel more strongly than the verified Lipschitz/pointwise bounds predict, or must move to a nonlocal geometry whose transport and support costs are separately controlled.
+`|Q_G(rho)| <= T_G/x_rho`.
 
-**Boundary.** The derivative estimate pays one factor `1/a_G` and uses holomorphy to the right of the one-line. The result is an upper/conservation theorem, not an optimality statement for actual high-ordinate cancellation. The target packet remains conditional and the argument does not imply RH. Growing vertical support or a different horizontal geometry requires a fresh analytic audit.
+Thus target gain itself requires `Xi_G>=x_rho`; the same currency both limits how cheaply the source can cancel and lower-bounds the unresolved signed width needed to see a target zero.
+
+For a logarithmic target packet, adverse debt is exported whenever `Xi_G E_G=o(log G)`. In the extreme boundary layer it is enough that `Xi_G=o(log log G)`, even if `C_G` and uncapped transport are separately large. NB-167 also localizes a fixed fraction of the debt to ordinate radius `O(1+Xi_G)` and, with the zero-free region, forces a divergent adverse population.
+
+The reusable principle is now more precise than “use transport before absolute values.” **Use the metric induced by the destination/source test class before compressing the signed measure.** Ordinary Wasserstein distance can overprice motion beyond the resolution of a bounded Poisson kernel, just as total variation overprices tightly paired signs. The capped metric is the smallest current source budget that simultaneously sees local displacement and saturated far separation.
+
+For Nyman--Beurling, a surviving compact sampler must therefore beat a bounded-Lipschitz conservation law at one Poisson width. It must either carry macroscopic `Xi_G E_G`, exploit cancellations in the actual high-ordinate source not captured by the uniform analytic envelope, or leave the compact one-line geometry altogether.
+
+**Boundary.** The capped metric theorem is an upper/conservation statement for the bounded high-ordinate interval and one exterior vertical line. It does not claim optimality for actual `zeta'/zeta` cancellation, and the target packet remains conditional. Growing support, different horizontal geometry or another destination kernel changes the induced metric and requires a fresh audit.

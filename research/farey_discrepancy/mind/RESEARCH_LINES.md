@@ -10,26 +10,24 @@ FD-145--FD-147 reduce finite-`L^q` binary ancestry recovery to anchored cut expo
 
 FD-154 shows that this rank-depth law is not universal. A fixed finite-prime avoidance face is divisor-closed, has positive asymptotic mass, and gives bounded ancestry depth and `T`-uniform endpoint distortion. FD-155 then prices thinning that face: reducing anchored exposure to `alpha` needs `s_alpha=exp(alpha^(-1+o(1)))` prime coordinates and the direct parent load becomes double exponential in `alpha^(-1+o(1))`.
 
-FD-156 proves the architecture law for every one-parent forest on the same face: `P/h >= 2^|S|-1`. FD-157 closes the naive multi-parent escape. If `L` is normalized edge mass that changes the `S`-free core, then every positive multi-parent divisibility relation obeys
+FD-156 proves the architecture law for every one-parent forest on the same face. FD-157 closes the naive multi-parent escape: cheap parent load at fixed expansion must transport boundary mass across distinct `S`-free source cores.
 
-`P + L >= h (2^|S|-1)`.
+FD-158 shows that completing any finite auxiliary prime vocabulary does not absorb that leakage. Once the full `S union U` Boolean box lies below the truncation, packet volume and available anchor states gain the same `2^|U|` factor, so the exponential cut pressure survives and bounded child load forces recipients carrying primes outside `S union U`.
 
-Thus more parents inside one core do not buy coercivity; cheap parent load at fixed expansion must transport boundary mass across distinct source cores.
+FD-159 removes the full-box assumption for **divisor-downward truncated auxiliary support**. Let `C` be the active auxiliary core set, let `f(c)` be the number of occupied nonempty primary `S`-states above core `c`, and put `bar f=|C|^{-1}sum_c f(c)`. Then the exact cut law is
 
-FD-158 now rules out the simplest attempt to absorb that leakage into a finite auxiliary prime vocabulary. For disjoint finite prime sets `S,U`, once the complete `S union U` Boolean box lies below the truncation, fresh-prime leakage `L_(S,U,T)` satisfies
+`P_(S,T) + L_(S,C,T)/|C| >= h_(S,T) bar f`.
 
-`P_(S,T) + 2^(-|U|) L_(S,U,T) >= h_(S,T) (2^|S|-1)`.
+Thus truncation helps only by making the average occupied primary fibre genuinely small. If `bar r` is the corresponding average available primary depth, the down-set structure gives `bar f >= 2^bar r-1`. With bounded child distortion, the same excess forces a proportional outer-core recipient population. The complete-cube law of FD-158 is the uniform-fibre special case.
 
-The factor `2^|U|` cancels exactly between packet volume and the enlarged anchor face. If child distortion is bounded by `K`, the completed box forces `Omega(2^(|S|+|U|)/K)` distinct recipients carrying a prime outside `S union U`. **Finite completed auxiliary prime support is therefore not a terminal resource.** The obstruction replicates over every auxiliary core instead of being diluted by it.
-
-The live escape is now narrower: sparse or scale-dependent auxiliary support that never closes to a full box before the truncation ceiling, a migrating prime vocabulary, loss of the bounded-load hypotheses, or a genuinely Farey-native invariant that controls the fresh-prime flux without reconstructing Möbius signs. A useful next theorem would replace full-box cardinality by a truncated-down-set quantity such as divisor shadow or occupied prime-coordinate entropy and recover a coercive leakage law before the product `P_S P_U` exceeds `T`.
+The live escape is narrower again: **non-downward sparse occupation with holes**, scale-dependent/migrating support, unbounded distortion, a different anchor, or a genuinely Farey-native invariant that changes which cuts are admissible. Merely staying below the truncation ceiling or using an incomplete divisor down-set is no longer enough. A useful next theorem would quantify the price of holes: how much extra incoming boundary/source information is needed to reduce `bar f` below the divisor-downward law while retaining anchored expansion.
 
 ## Apply the information-budget gate only after cut exposure survives
 
-FD-144 remains a later lower bound: even after anchoring and quantitative cut exposure are solved, `o(r_T)` arbitrary source-independent normalized ancestry tests can still be fooled along a subsequence. Neither a large cross-core recipient population nor fresh-prime migration by itself is an information lower bound; a deterministic rule may generate many recipients from little description. Any epistemic claim still needs a theorem connecting the geometric leakage to independent source information and then to the Franel--Landau destination.
+FD-144 remains a later lower bound: even after anchoring and quantitative cut exposure are solved, `o(r_T)` arbitrary source-independent normalized ancestry tests can still be fooled along a subsequence. Neither a large cross-core recipient population nor fresh-prime migration by itself is an information lower bound; a deterministic rule may generate many recipients from little description. Any epistemic claim still needs a theorem connecting geometric leakage to independent source information and then to the Franel--Landau destination.
 
-Audit future ancestry proposals in the order **anchor geometry and mass -> source justification -> parent distortion -> cross-core/fresh-prime leakage -> anchored expansion -> residual depth -> child distortion/recipient population -> support-completion or truncation geometry -> information and precision budget -> destination relevance**.
+Audit future ancestry proposals in the order **anchor geometry and mass -> source justification -> parent distortion -> cross-core/fresh-prime leakage -> occupied fibre/down-set geometry -> anchored expansion -> residual depth -> child distortion/recipient population -> information and precision budget -> destination relevance**.
 
 ## Keep coefficient coercivity and nonlocal destination coercivity separate
 
-FD-147--FD-158 concern binary Möbius orientations, finite `L^q` and positive divisibility-ancestry observations. They show exactly how excellent coefficient-side coercivity can be purchased and why finite completed prime vocabularies cannot terminate the required leakage. None proves that Farey discrepancy supplies the orientation or that the resulting norm controls the RH-equivalent destination. Any surviving route must state which source hypothesis changes and why it does not simply reconstruct the source.
+FD-147--FD-159 concern binary Möbius orientations, finite `L^q` and positive divisibility-ancestry observations. They show exactly how excellent coefficient-side coercivity can be purchased and why neither extra parents, finite completed prime vocabularies nor ordinary divisor-downward truncation removes the hidden-fibre cut. None proves that Farey discrepancy supplies the orientation or that the resulting norm controls the RH-equivalent destination. Any surviving route must state which source hypothesis changes and why it does not simply reconstruct the source.
