@@ -10,7 +10,7 @@ RE-153--RE-158 show that terminal source modifications can move the exact Pareto
 
 RE-163 identifies the correct approximate coordinates inside that coarse-information comparison class. After rescaling the terminal interval, the kernel has positive Chebyshev coefficients `A_j=(2+o(1))(L/4)^j/j!`, so approximate stability is governed by the kernel-weighted leakage `C_r=sum_(j<r)(L/4)^j |chi_j|/j!`, not qualitative raw-moment closeness. Generalized sources can make every normalized monomial discrepancy small while retaining an order-one growing Chebyshev mode.
 
-RE-164 now places a stronger source-fidelity gate **before** this terminal hierarchy. If two sources agree below `T`, their exact Robin-coordinate difference is an integral of the Chebyshev-function difference against the positive terminal kernel. Writing
+RE-164 places a stronger source-fidelity gate before this terminal hierarchy. If two sources agree below `T`, their exact Robin-coordinate difference is an integral of the Chebyshev-function difference against the positive terminal kernel. Writing
 
 `M_12(T,U)=sup_(T<=t<=U) |theta_(Q1)(t)-theta_(Q2)(t)|/t`,
 
@@ -18,11 +18,17 @@ one gets
 
 `|A_p(Q1)-A_p(Q2)| << sqrt(p) log p M_12(T,U) log(log U/log T)`.
 
-On a terminal logarithmic shell `T=Ue^(-L)`, an order-one source-coordinate separation therefore forces a relative Chebyshev excursion `M_12 >> eta_p/L`, independently of cardinality or moment matching. More strongly, if both sources preserve a Korobov--Vinogradov-scale quantitative PNT envelope, the same positive kernel makes their terminal Robin-coordinate difference `o(1)` at the canonical upper horizon once the PNT exponent crosses the same one-half inversion threshold used by the ordinary-source truncation.
+On a terminal logarithmic shell `T=Ue^(-L)`, an order-one source-coordinate separation therefore forces a relative Chebyshev excursion `M_12 >> eta_p/L`, independently of cardinality or moment matching.
 
-Thus RE-155--RE-163 remain sharp **coarse-PNT information obstructions**, but they are not matched controls for the full quantitative PNT class at the canonical upper horizon. Exact or approximate moment complexity is relevant only after the source class has been declared. If quantitative PNT fidelity is part of the admissible class, order-one terminal ambiguity disappears before the moment/Chebyshev hierarchy is invoked.
+RE-165 makes the quantitative-PNT gate sharp inside the generalized insertion class and corrects the critical equality boundary. For a lower cutoff `T`, the exact remote capacity parameter is
 
-The live ordinary-prime/CA question moves lower in the annulus or into the selector/source coupling: can the actual CA geometry exploit source information below the quantitative-PNT rigidity threshold, control the destination through a non-terminal channel, or prove the accepted selector-height coupling without assuming the Robin endpoint? A new terminal generalized-source control is informative only if it preserves the quantitative source envelope actually used by the destination.
+`K_b(p,T)=sqrt(p) log p exp(-b V(T))/V(T)`.
+
+RE-164 gives rigidity when `K_b->0`; RE-165 constructs positive generalized-prime insertions staying inside the same PNT exponent class whose Robin displacement is a fixed multiple of `K_b`, so if `K_b` stays positive or diverges the quantitative envelope alone does not identify the terminal source. At the canonical cutoff `T=U_B(p)`, fixed-`B` rigidity requires the strict inequality `b kappa_B>1/2`. The nominal equality `b kappa_B=1/2` lies on the ambiguous side because the next term in `V(U_B)` has the sign that makes `K_b->infinity`. This corrects the equality clause previously inferred from the leading exponent in RE-164.
+
+Thus RE-155--RE-163 remain sharp **coarse-PNT information obstructions**, while RE-164--RE-165 determine exactly when the stronger quantitative PNT class removes them. Exact or approximate moment complexity is relevant only after the source class and remote capacity parameter have been declared. Above the strict inversion threshold, order-one terminal ambiguity disappears before the moment/Chebyshev hierarchy is invoked; at or below the fixed canonical threshold, generalized insertion controls can still retain order-one separation.
+
+The live ordinary-prime/CA question moves lower in the annulus or into the selector/source coupling: can the actual CA geometry exploit source information below the quantitative-PNT rigidity threshold, control the destination through a non-terminal channel, or prove the accepted selector-height coupling without assuming the Robin endpoint? A new terminal generalized-source control is informative only if it preserves the quantitative source envelope actually used by the destination and is tested against the sharp `K_b` capacity rather than the leading exponent alone.
 
 ## Control one-sided vertical reciprocal escape without overstating the symmetric obstruction
 
@@ -30,6 +36,6 @@ RE-144--RE-152 put the zero-side packet into reciprocal-scale language and show 
 
 ## Keep quantitative source fidelity, source-spectral ambiguity and zero-packet gates distinct
 
-RE-153--RE-163 describe how much terminal ambiguity survives under coarse source information: supply, placement, exact moment order, Chebyshev approximation radius, kernel-adapted approximate leakage and endpoint spectral migration. RE-164 shows that a sufficiently strong quantitative PNT envelope can remove that ambiguity altogether near the canonical upper horizon. RE-151--RE-152 give a separate zero-side matched obstruction to one reciprocal-scale observation route.
+RE-153--RE-163 describe how much terminal ambiguity survives under coarse source information: supply, placement, exact moment order, Chebyshev approximation radius, kernel-adapted approximate leakage and endpoint spectral migration. RE-164 gives the quantitative-PNT upper rigidity estimate, and RE-165 shows that its remote scale is essentially attained by generalized insertions while moving the fixed canonical equality point to the ambiguous side. RE-151--RE-152 give a separate zero-side matched obstruction to one reciprocal-scale observation route.
 
-None subsumes the others. Progress should be credited only when it changes the exact quantity consumed by its own destination, and every generalized-source comparison must state whether it preserves merely `theta_Q(x)=x+o(x)` or the quantitative PNT remainder that makes the terminal source rigid.
+None subsumes the others. Progress should be credited only when it changes the exact quantity consumed by its own destination, and every generalized-source comparison must state whether it preserves merely `theta_Q(x)=x+o(x)` or the quantitative PNT remainder, which lower cutoff it uses, and whether `K_b(p,T)` actually tends to zero.
