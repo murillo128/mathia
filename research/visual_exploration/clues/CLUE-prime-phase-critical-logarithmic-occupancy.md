@@ -28,6 +28,7 @@ based_on:
   - research/visual_exploration/findings/VIS-245-gap-concentration-tent-covariance-beta-moments.md
   - research/visual_exploration/findings/VIS-246-concentration-conditioning-retains-dirichlet-alpha.md
   - research/visual_exploration/findings/VIS-247-log-product-conditioning-alpha-free-coarea-law.md
+  - research/visual_exploration/findings/VIS-248-three-gap-log-product-discriminant-audit.md
 ---
 
 # Is there prime-specific critical pair geometry after fixed-count dependent-spacing and endpoint-phase calibration?
@@ -48,13 +49,19 @@ with exact mean and variance under fixed `alpha`. `VIS-245` closes the remaining
 
 `Lambda=sum_i log X_i`.
 
-`VIS-247` now makes that route explicit rather than formal. On every regular `Lambda=lambda` level, the conditional gap law is the parameter-free coarea measure
+`VIS-247` makes that route explicit rather than formal. On every regular `Lambda=lambda` level, the conditional gap law is the parameter-free coarea measure
 
 `Z(lambda)^(-1) J(X)^(-1) d sigma_lambda`,
 
 with `J^2=sum_i X_i^(-2)-(1/m)(sum_i X_i^(-1))^2`. It also gives an exact three-gap witness showing that `bar T` can vary on a fixed log-product level. Thus exact same-configuration nuisance removal is available and is not structurally forced to erase the tent statistic.
 
-The live question is no longer whether the nuisance can be removed in principle. It is whether the frozen high-dimensional critical regime admits an accurate conditional calibration under that explicit measure, and whether the prime configuration retains a stable residual after the quotient.
+`VIS-248` now closes the low-dimensional deterministic audit target left implicit in that construction. For `m=3`, fixing `P=X_1X_2X_3=p` and quotienting by permutations leaves the single coordinate `Q=X_1X_2+X_2X_3+X_3X_1`. Its exact conditional density is proportional to
+
+`Delta_p(Q)^(-1/2)`,
+
+where `Delta_p(q)=q^2-4q^3-4p-27p^2+18pq` is the cubic discriminant, on the interval between its two positive roots. A cosine reparameterization removes the integrable endpoint singularities and gives stable deterministic one-dimensional quadrature. Any proposed conditional sampler can therefore be audited against an exact full distribution, not merely moment or constraint checks, before high-dimensional use.
+
+The live question is no longer whether the nuisance can be removed in principle or whether a low-dimensional audit target exists. It is whether the frozen high-dimensional critical regime admits an accurate conditional sampler/calibration under that explicit measure, and whether the prime configuration retains a stable residual after the quotient.
 
 ## Research question
 
@@ -70,7 +77,7 @@ If a residual survives, can it also survive a stronger predeclared spacing contr
 
 The branch has removed forced occupancy, count fluctuation, specified one-point intensity, arbitrary grid origin, support-mismatched label randomization, a nontrivial spacing-dependence axis, arbitrary endpoint cut phase, cyclic-overlap bookkeeping, and the same-sample Dirichlet nuisance parameter itself.
 
-The log-product quotient is stronger than a moment correction: within the symmetric one-parameter Dirichlet family it removes `alpha` exactly from the conditional law. `VIS-247` also shows that this quotient need not collapse `bar T`, so a surviving residual would no longer be explainable merely as uncertainty in the fitted Dirichlet concentration.
+The log-product quotient is stronger than a moment correction: within the symmetric one-parameter Dirichlet family it removes `alpha` exactly from the conditional law. `VIS-247` shows that this quotient need not collapse `bar T`, while `VIS-248` supplies an exact three-gap distributional benchmark for detecting incorrect weighting or sampling of the conditioned measure.
 
 A residual that disappears under the exact conditional law is generic spacing heterogeneity, not prime-specific structure. A residual that survives is still far below an RH result, but it would have passed a materially stronger representation-matched null and would justify asking whether the surviving statistic couples to the signed arithmetic kernel rather than merely to local point geometry.
 
@@ -80,7 +87,9 @@ Before examining the confirmation residual, freeze all representation choices an
 
 `P(dX | Lambda=lambda) proportional to J(X)^(-1) d sigma_lambda(X)`
 
-at the observed `m`, `u`, and `lambda`, with numerical/integration/sampling error materially below the proposed residual scale. Audit any conditional sampler against the exact simplex constraint, exact log-product constraint, permutation/cyclic symmetries, and low-dimensional cases where deterministic integration is feasible. Do not replace the `J^-1` weight by uniform surface sampling.
+at the observed `m`, `u`, and `lambda`, with numerical/integration/sampling error materially below the proposed residual scale. Do not replace the `J^-1` weight by uniform surface sampling.
+
+Before trusting any production sampler, require it to pass the exact `m=3` audit from `VIS-248` at several predeclared product levels `p`: reproduce the support and normalized CDF of `Q` under the `Delta_p(q)^(-1/2)` law, selected deterministic-quadrature moments/expectations, permutation symmetry, and the correct endpoint mass, while satisfying the simplex and product constraints to tighter tolerance than the eventual error budget. This is a necessary implementation/calibration audit, not evidence that the same algorithm is accurate at large `m`.
 
 Use the differential criterion from `VIS-247` to verify that the actual conditioned regime is not locally degenerate for `bar T`; the three-gap witness proves only that degeneracy is not automatic. Freeze all integration/sampling choices before looking at the prime residual.
 
@@ -94,10 +103,10 @@ Only after a stable residual survives should a new mathematical thread translate
 
 `VIS-237`--`VIS-241` establish the representation quotients and the symmetric-Dirichlet dependence family. `VIS-242`--`VIS-243` establish the exact fixed-parameter tent variance reduction and deterministic overlap coefficients. `VIS-244` establishes the concentration-based `alpha` identification channel and its variance. `VIS-245` establishes the exact fixed-parameter cross-covariance between that concentration and `bar T`.
 
-`VIS-246` proves that concentration conditioning retains `alpha` for `m>=3` and identifies the log-product as an exact sufficient statistic. `VIS-247` derives the explicit alpha-free coarea law on log-product levels, gives a local gradient criterion for conditioned variation, and proves by an exact three-gap example that `bar T` is not intrinsically collapsed by this quotient.
+`VIS-246` proves that concentration conditioning retains `alpha` for `m>=3` and identifies the log-product as an exact sufficient statistic. `VIS-247` derives the explicit alpha-free coarea law on log-product levels, gives a local gradient criterion for conditioned variation, and proves by an exact three-gap example that `bar T` is not intrinsically collapsed by this quotient. `VIS-248` reduces the `m=3` quotient to the exact discriminant-weighted `Q` interval and gives a nonsingular deterministic quadrature representation for validation.
 
-None of these findings supplies the full high-dimensional conditional law at the actual prime parameters, validates a conditional numerical sampler, proves that the one-parameter Dirichlet family is a faithful final model of prime gaps, or reports a prime residual. No cited result establishes prime-specific critical separation or any RH consequence.
+None of these findings supplies a production high-dimensional conditional sampler, validates that sampler at the actual prime parameters, proves that the one-parameter Dirichlet family is a faithful final model of prime gaps, or reports a prime residual. `VIS-248` is an audit law only; matching it in three dimensions is necessary but not sufficient for high-dimensional correctness. No cited result establishes prime-specific critical separation or any RH consequence.
 
 ## Research disposition
 
-The clue remains `accepted`. The same-configuration nuisance ambiguity is now structurally resolved: conditioning on `Lambda=sum_i log X_i` removes the symmetric-Dirichlet `alpha` exactly, with an explicit nonuniform coarea measure, and this quotient need not make `bar T` constant. The remaining gate is to evaluate that frozen conditional law accurately in the actual high-dimensional critical regime and test whether the prime statistic has a stable residual; held-out/theoretical `alpha` remains the independent alternative.
+The clue remains `accepted`. Same-configuration nuisance elimination is structurally resolved by `VIS-247`, and `VIS-248` now gives an exact low-dimensional distributional benchmark for auditing its implementation. The remaining gate is operational and high-dimensional: obtain or implement an accurate sampler/evaluator for the frozen conditional law, demonstrate that it passes the exact three-gap benchmark before scaling, then test whether the prime statistic has a stable residual. Held-out/theoretical `alpha` remains the independent alternative.
