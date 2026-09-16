@@ -12,13 +12,19 @@ VIS-248 gives an exact `m=3` conditional benchmark. VIS-249 lifts it to an exact
 
 VIS-252--VIS-253 supply two exact additive-invariant calibrations. Every ordinary contrast `x_i-x_j` and every logarithmic contrast `log x_i-log x_j` is an eigenmode with `rho_m=(m-3)/(m-1)` and integrated autocorrelation time `m-2` triple updates.
 
-VIS-254 adds an exact nonlinear lower-bound diagnostic. For any fixed-weight exact heat-bath chain, the averaged conditional fiber variance `D_f` is the Dirichlet form and `delta_f=D_f/Var(f)` satisfies `tau_int(f)>=2/delta_f-1`. For the present triple chain the linear families have `delta=2/(m-1)` with equality in the bound. Therefore `delta_(bar T)<2/(m-1)` rigorously certifies that `bar T` has integrated autocorrelation strictly larger than `m-2`, using only the exact three-coordinate fibers for the inner variance.
+VIS-254 adds an exact one-moment nonlinear lower-bound diagnostic. For any fixed-weight exact heat-bath chain, the averaged conditional fiber variance `D_f` is the Dirichlet form and `delta_f=D_f/Var(f)` satisfies `tau_int(f)>=2/delta_f-1`. For the present triple chain the linear families have `delta=2/(m-1)` with equality in the bound.
 
-The live operational question is now narrower. A frozen implementation must reproduce VIS-248 and both linear/log eigenmode families, then estimate the stationary target-law ratio `delta_(bar T)` before expensive long-lag interpretation. If it certifies slowdown, the sampler budget must reflect that nonlinear scale; if it does not, separated-start and long-lag checks remain necessary because a large one-step dissipation does not prove fast mixing. Only after these gates should `bar T` be compared with the prime data.
+VIS-255 adds the sharp second dissipation moment. Writing `eta_f=||(I-P)f||^2/Var(f)`, the first two spectral moments obey `delta_f^2<=eta_f<=delta_f` and imply
+
+`tau_int(f) >= B2(delta_f,eta_f) = 2(1-delta_f+delta_f^2-eta_f)/(delta_f-eta_f)-1`
+
+when `0<delta_f<1` and `eta_f<delta_f`. The bound is sharp for the two moments and `eta_f` has an exact two-independent-block residual estimator, so it can be tested from the same exact heat-bath machinery without fitting a long-lag curve.
+
+The live operational question is now narrower. A frozen implementation must reproduce VIS-248 and both linear/log eigenmode families, then estimate `delta_(bar T)`. If the one-moment inequality certifies slowdown, the sampler budget must reflect it. If it is inconclusive, estimate `eta_(bar T)` and test whether `B2(delta_(bar T),eta_(bar T))>m-2`; this can certify nonlinear slowdown even when `delta` alone cannot. Only if both exact moment gates are inconclusive do separated-start and long-lag checks remain necessary before comparing `bar T` with the prime data.
 
 ## Keep endpoint semantics and richer nuisance families outside post-hoc tuning
 
-If interval endpoints are nuisance, use the cut average `bar T`; if physical endpoints are source-bearing, retain the separate exact endpoint channel. The exact log-product quotient and VIS-248--VIS-254 heat-bath theory belong to the one-parameter symmetric Dirichlet family. Asymmetric Dirichlet models, mixtures, renewal laws and hard-core processes require their own sufficient coordinates or independently frozen nuisance parameters.
+If interval endpoints are nuisance, use the cut average `bar T`; if physical endpoints are source-bearing, retain the separate exact endpoint channel. The exact log-product quotient and VIS-248--VIS-255 heat-bath theory belong to the one-parameter symmetric Dirichlet family. Asymmetric Dirichlet models, mixtures, renewal laws and hard-core processes require their own sufficient coordinates or independently frozen nuisance parameters.
 
 ## Preserve the older low-frequency and fixed-clock controls
 

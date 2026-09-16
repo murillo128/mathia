@@ -12,7 +12,7 @@ The live broader question is to identify justified source-class/data couplings s
 
 ## Distinguish gauge elimination from a target-faithful positivity certificate
 
-**Linked intuitions:** `MI-002-canonical-relational-lifts-can-restore-gauge`, `MI-043-support-scale-interaction-components-bound-effective-relational-arity`.
+**Linked intuitions:** `MI-002-canonical-relational-lifts-can-restore-gauge`, `MI-019-faithful-translation-lifts-are-affine`, `MI-043-support-scale-interaction-components-bound-effective-relational-arity`.
 
 AF-371 separates source richness from target-faithful positivity: complete reciprocal Taylor data may determine the source while Hankel PSD remains target-mixed, whereas Schoenberg translation total positivity uses the correct ordered relation. AF-372 shows that no fixed determinant order is enough on the unrestricted translation-kernel class. AF-373 then shows that location sampling is an independent resource: on an exponentially decaying class some thin sets are determining, while the integer lattice is not.
 
@@ -22,7 +22,9 @@ AF-376 closes the obvious finite-phase repair on Ganzburg's broad class `L`. If 
 
 AF-377 removes the converse shortcut. Vanishing minimum spacing is not enough either. For a compact/local source of support width `w`, form the support-interaction graph `G_w(E)` joining sampled rows whose translates can interact. If every connected component has size at most `r`, every sampled Toeplitz determinant factorizes into blocks of order at most `r`; any compactly supported `PF_r` kernel that is not globally PF is then an all-order sampled false positive. The explicit shrinking-pair construction has `inf |u-v|=0` but interaction components of size two, so a `PF_2` non-`PF_3` kernel already defeats the nominal all-order certificate.
 
-The live question is therefore no longer whether more finite lattice phases remove the known gauge, or whether the sampling set merely has points arbitrarily close together. A successful sampled positivity reduction must prove genuinely unbounded support-scale interaction complexity together with a determining theorem, or derive a source-specific class rigid enough to exclude compact/local aliases. Dense `H_E`, vanishing minimum spacing and nominally unbounded determinant order are each insufficient by themselves.
+AF-378 closes the coordinate-only repair. An order isomorphism preserves all sampled determinant values when the kernel is transported with it, so the false-positive fibre survives even if the new coordinate picture has arbitrarily small gaps. For the full translation-kernel class, a common reparameterization preserves difference geometry exactly only when it is positive affine. Reimposing a fresh translation kernel after a nonlinear change is therefore a new source model, not evidence that the old observation became determining.
+
+The live question is no longer whether more finite lattice phases remove the known gauge, whether the sampling set merely has points arbitrarily close together, or whether nonlinear coordinates can manufacture such spacing. A successful sampled positivity reduction must prove genuinely unbounded **intrinsic** support-scale interaction complexity together with a determining theorem, or derive a source-specific class rigid enough to exclude compact/local aliases. Dense `H_E`, vanishing displayed spacing, nominally unbounded determinant order and nonlinear coordinate densification are each insufficient by themselves.
 
 ## Separate source identification from the RH zero-selection mechanism
 
@@ -30,7 +32,7 @@ AF-370 identifies `zeta` exactly inside its declared source class, but Hamburger
 
 ## Couple preserved discriminators to a stably usable destination
 
-A destination theorem must declare separately the finite data observed, the admissible source/tail class, retained analytic layer, relation type and arity, actual sampling geometry, generated difference subgroup, residual gauge, and topology/modulus in which the conclusion is inferred. Exact injectivity without usable conditioning, or gauge elimination without a determining theorem, is not a destination result.
+A destination theorem must declare separately the finite data observed, the admissible source/tail class, retained analytic layer, relation type and arity, intrinsic versus displayed sampling geometry, generated difference subgroup, residual gauge, and topology/modulus in which the conclusion is inferred. Exact injectivity without usable conditioning, or gauge elimination without a determining theorem, is not a destination result.
 
 ## Build cancellation-coherent source access to the Li root-rate class
 
@@ -46,4 +48,4 @@ AF-320--AF-336 separate exact recovery, conditioning, support-union geometry and
 
 ## Keep fidelity currencies separate until a theorem connects them
 
-Observation horizon, admissible source category, tail class, transform fidelity, inverse conditioning, positivity relation, nominal relational arity, **support-scale interaction-component size**, actual row geometry, generated difference subgroup, residual observation gauge and destination slack are distinct resources. AF-375 makes the separable gauge currency exact; AF-376 makes positive row separation an independent obstruction; AF-377 shows that even zero minimum spacing can leave the effective interaction arity uniformly bounded. Future work should state which fibre has actually been removed and which target-changing fibres remain.
+Observation horizon, admissible source category, tail class, transform fidelity, inverse conditioning, positivity relation, nominal relational arity, **intrinsic support-scale interaction-component size**, displayed coordinate geometry, source-category covariance under reparameterization, generated difference subgroup, residual observation gauge and destination slack are distinct resources. AF-375 makes the separable gauge currency exact; AF-376 makes positive row separation an independent obstruction; AF-377 shows that even zero minimum spacing can leave the effective interaction arity uniformly bounded; AF-378 shows that coordinate densification is not a new resource when the source experiment is transported faithfully. Future work should state which fibre has actually been removed, which source category is being preserved, and which target-changing fibres remain.

@@ -2,7 +2,7 @@
 
 This file holds the current mathematical questions suggested by the durable Nyman--Beurling intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Resolve the fixed-width interlaced signed-sampler regime
+## Resolve the one-Poisson-width interlaced signed-sampler regime
 
 **Linked intuitions:** `MI-001-target-aware-gram-geometry-must-carry-absolute-scale` through `MI-035-jordan-transport-length-is-the-conditioning-price-of-sign-collapse`.
 
@@ -12,25 +12,23 @@ NB-156 crossed the macroscopic-support boundary. NB-157 showed that the leading 
 
 NB-160 removes the finite-cardinality and atomicity loopholes. For an arbitrary finite signed Borel height measure with zero total mass, polynomially high support, bounded total-variation conditioning and positive/negative Jordan supports separated by a sufficiently large fixed number of Poisson widths, every infinitesimal piece of negative mass sees local zero density `Theta(log G)`. The zero-summed positive cross-talk decays like `1/Delta`, so the adverse charge remains `Omega(c_G log G)` and forces `Omega(log G)` negative-response zeros. Spreading the negative mass over growing cardinality or a continuum does not help.
 
-NB-161 closes the opposite geometric extreme under bounded conditioning. If `nu=nu^+-nu^-` is zero-mass and `ell(nu)=W_1(nu^+,nu^-)/M` is the mean optimal Jordan transport length, the exterior Poisson response obeys
+NB-161 closes the opposite geometric extreme at fixed horizontal scale. If `nu=nu^+-nu^-` is zero-mass and `ell(nu)=W_1(nu^+,nu^-)/M` is the mean optimal Jordan transport length, the exterior Poisson response is bounded by total variation times `ell`; hence genuine transport collapse at bounded conditioning loses fixed target gain.
 
-`|Q_nu| <= (9/(16 sqrt(3) a^2)) ||nu||_TV ell(nu)`
+NB-162 supplies the boundary-covariant form of that statement. If the exterior gap is `a_G`, conditioning is `C_G=||nu_G||_TV/c_G`, and
 
-uniformly at fixed horizontal offset `x in [a,a+1]`. Hence order-`c_G` target gain forces
+`Theta_G = C_G ell(nu_G)/a_G`,
 
-`C_G ell(nu_G) >= (16 sqrt(3)/9) q a^2`,
+then `Theta_G` controls every Poisson target response relative to its own natural kernel height and also controls the signed Euler-product response relative to the boundary scale `c_G/a_G`. Thus absolute `ell_G->0` is not itself fatal when the Poisson width shrinks. What is fatal is **sub-Poisson transport**, `Theta_G=o(1)`: it buys excellent prime-side cancellation only by making the sampler equally invisible to the target.
 
-where `C_G=||nu_G||_TV/c_G`. In particular, if opposite Jordan masses can be coupled at scale `epsilon_G->0`, bounded conditioning cannot retain fixed target gain; the conditioning must grow at least like `1/epsilon_G`.
+The bounded-conditioning signed route is therefore narrowed to a scale-invariant intermediate geometry. Many-width sign separation exports an adverse `Omega(log G)` zero reservoir; sub-Poisson transport loses the target. The remaining regime is **one-Poisson-width local interlacing**, `Theta_G=Theta(1)`, where positive and negative mass overlap strongly enough to evade the separated-reservoir argument but remain separated enough in transport units to preserve target gain.
 
-Together NB-160 and NB-161 narrow the bounded-conditioning signed route to a specific intermediate geometry. Large fixed sign separation exports an adverse `Omega(log G)` zero reservoir, while genuine transport collapse becomes invisible to the fixed-offset Poisson probe. The remaining regime has **local sign overlap/interlacing with order-one Jordan transport length**: the supports must interact within `O(1)` Poisson widths without allowing the mass transport itself to shrink to `o(1)`.
+The live theorem is whether one-width interlacing can make the routine local zero population cancel while preserving natural-scale target gain and bounded conditioning, and whether it can exploit source-specific prime cancellation stronger than the generic transport bound without shrinking the target by the same factor. An alternative escape must worsen conditioning/lower-height assumptions or couple the signed sampler to the von Mangoldt/Nyman observable before the Jordan transport description becomes load-bearing.
 
-The live theorem is whether such fixed-width interlacing can make the routine local zero population cancel while preserving order-`c_G` target gain and bounded conditioning, or whether an additional target-conditioned obstruction closes that last geometric window. An alternative escape must worsen conditioning/lower-height assumptions or couple the signed sampler to the von Mangoldt/Nyman observable before the Jordan decomposition becomes the relevant description.
+## Keep signed conservation, conditioning, boundary scale, sign-support geometry, transport length and adverse occupancy separate
 
-## Keep signed conservation, conditioning, sign-support geometry, transport length and adverse occupancy separate
+Positive sampling pays the Hadamard background. Zero-mass sampling removes it but creates sign debt. Boundary approach and transport now combine through the dimensionless currency `Theta_G=C_G ell_G/a_G`; macroscopic Gamma cancellation is a signed height-moment condition. NB-158--NB-160 show that bounded conditioning plus universal moment cancellation does not help while opposite signs remain separated by many Poisson widths. NB-161--NB-162 show the complementary bill: transport much finer than the Poisson width suppresses both prime-side leakage and target response.
 
-Positive sampling pays the Hadamard background. Zero-mass sampling removes it but creates sign debt. Boundary approach is priced by `D_G=C_G/a_G`; macroscopic Gamma cancellation is a signed height-moment condition. NB-158--NB-160 show that bounded conditioning plus universal moment cancellation does not help while opposite signs remain separated at the Poisson scale. NB-161 adds the complementary quantitative bill: too-fine opposite-sign transport loses target response unless total variation grows reciprocally.
-
-A future sampler must therefore expose target charge, total variation, boundary gap, Jordan-support overlap/separation, mean optimal transport length, signed background moments, local zero population, and any prime/Nyman-side cancellation simultaneously. Cardinality and atomicity are no longer relevant escape resources, and minimum support distance alone is not the correct coordinate inside an interlaced regime.
+A future sampler must therefore expose target charge, total variation, boundary gap, Jordan-support overlap/separation in Poisson units, mean optimal transport length, signed background moments, local zero population, and any prime/Nyman-side cancellation simultaneously. Cardinality and atomicity are no longer relevant escape resources, and absolute minimum support distance or absolute transport length alone is not the correct coordinate in the shrinking-boundary regime.
 
 ## Push canonical shell discrepancy independently
 
