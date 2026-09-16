@@ -49,11 +49,11 @@ so
 }
 \]
 
-Since the integer stationary-level count satisfies `nu_h=Delta_h+O(1)`, every shift `h -> infinity` in the genuinely coupled range crosses at least `(3/4-o(1))h` integer derivative levels. If `K_kappa=floor(kappa X_*/H)` with fixed `kappa>0`, `H->infinity`, and `K_kappa->infinity`, then
+Write `n_h` for the number of integer derivative levels crossed. Since `n_h=Delta_h+O(1)`, every shift `h -> infinity` in the genuinely coupled range crosses at least `(3/4-o(1))h` integer derivative levels. If `K_kappa=floor(kappa X_*/H)` with fixed `kappa>0`, `H->infinity`, and `K_kappa->infinity`, then
 
 \[
 \boxed{
- \sum_{h\le K_\kappa}\nu_h
+ \sum_{h\le K_\kappa}n_h
  \ge \left(\frac38-o(1)\right)K_\kappa^2.
 }
 \]
@@ -62,10 +62,10 @@ This sharpens the scale bookkeeping in WI-188/WI-189 but does **not** bound the 
 
 ## 1. Keep the exact local zero density
 
-Use the Maynard--Pratt bow normalization
+After translating the basepoint by one bow step if necessary, write the Maynard--Pratt ordinate model as
 
 \[
-\gamma_j=T_0+\frac{c_Tj}{L},
+\gamma_j=T_0+\frac{c_T(j-1)}{L},
 \qquad 1\le j\le m,
 \qquad L:=\log T,
 \qquad T_0\asymp T,
@@ -87,7 +87,7 @@ B_I=2m-r_c=2m+O(1),
 \tag{3}
 \]
 
-where the displayed Maynard--Pratt bow has only `r_c=O(1)` selected labels on the critical line. Multiplicity and any additional zeros only increase the interval count.
+where the displayed Maynard--Pratt bow has only `r_c=O(1)` selected labels on the critical line. Multiplicity and any additional zeros only increase the interval count. Endpoint conventions are harmless at the precision below: one may enlarge `[gamma_1,gamma_m]` by `O(L^{-2})` on each side, which changes the Riemann--von Mangoldt main term by `o(1)` and leaves the existing `O(L)` endpoint error dominant.
 
 Write the classical Riemann--von Mangoldt main term as
 
@@ -105,11 +105,11 @@ F''(t)=\frac1{2\pi t}.
 \tag{5}
 \]
 
-Using `N(t)=F(t)+O(log t)` and Taylor expansion over `Y=o(T_0)` gives
+Using `N(t)=F(t)+O(log t)` and Taylor expansion over `Y=o(T_0)` gives, for an interval enclosing the bow,
 
 \[
 \boxed{
-N(T_0+Y)-N(T_0)
+N_I
 =
 \frac{Y}{2\pi}\log\frac{T_0}{2\pi}
 +O\!\left(\frac{Y^2}{T_0}+L\right).
@@ -126,7 +126,7 @@ L_0:=\log\frac{T_0}{2\pi}.
 \tag{7}
 \]
 
-Since the interval contains at least the population (3), equations (2) and (6) imply
+Since `N_I` is at least the population (3), equations (2) and (6) imply
 
 \[
 2m-O(1)
@@ -228,13 +228,13 @@ on a central block `[X_*,2X_*]`:
 \frac{Uh}{4\pi X_*^2}
 \frac{3+u}{(1+u)(2+u)},
 \qquad
-u_h=\Delta_h+O(1),
+n_h=\Delta_h+O(1),
 \qquad
 u:=\frac h{X_*}.
 \tag{16}
 \]
 
-To avoid overloading notation, the last ratio will be denoted `u=h/X_*` below. For the localized shift family `h <= kappa X_*/H` with fixed `kappa` and `H->infinity`, one has `u=o(1)` uniformly. Thus
+In (16), the last displayed symbol is only the ratio `u=h/X_*`; below we use the plain letter `u` for it. For the localized shift family `h <= kappa X_*/H` with fixed `kappa` and `H->infinity`, one has `u=o(1)` uniformly. Thus
 
 \[
 \Delta_h
@@ -255,12 +255,12 @@ Therefore, uniformly for growing shifts in the coupled range,
 
 \[
 \boxed{
-\nu_h\ge\left(\frac34-o(1)\right)h-O(1).
+n_h\ge\left(\frac34-o(1)\right)h-O(1).
 }
 \tag{19}
 \]
 
-This does not give a matching upper bound because `rho_T` may grow subpolynomially. The corrected statement is consequently `nu_h \gtrsim h`, not `nu_h=Theta(h)` without an additional upper control on `rho_T`.
+This does not give a matching upper bound because `rho_T` may grow subpolynomially. The corrected statement is consequently `n_h \gtrsim h`, not `n_h=Theta(h)` without an additional upper control on `rho_T`.
 
 If
 
@@ -273,17 +273,17 @@ summing (19) gives
 
 \[
 \boxed{
-\sum_{h\le K_\kappa}\nu_h
+\sum_{h\le K_\kappa}n_h
 \ge
 \left(\frac38-o(1)\right)K_\kappa^2.
 }
 \tag{21}
 \]
 
-This is consistent with WI-189's exact aggregate asymptotic
+Under the hypotheses of WI-189 this is consistent with its exact aggregate asymptotic
 
 \[
-\sum_{h\le K_\kappa}\nu_h
+\sum_{h\le K_\kappa}n_h
 =
 \left(\frac{3\kappa^2}{16\pi}+o(1)\right)\frac{U}{H^2},
 \tag{22}
