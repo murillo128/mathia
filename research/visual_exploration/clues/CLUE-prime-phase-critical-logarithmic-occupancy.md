@@ -30,6 +30,7 @@ based_on:
   - research/visual_exploration/findings/VIS-247-log-product-conditioning-alpha-free-coarea-law.md
   - research/visual_exploration/findings/VIS-248-three-gap-log-product-discriminant-audit.md
   - research/visual_exploration/findings/VIS-249-three-coordinate-log-product-gibbs-kernel.md
+  - research/visual_exploration/findings/VIS-250-triple-gibbs-global-accessibility.md
 ---
 
 # Is there prime-specific critical pair geometry after exact log-product nuisance calibration?
@@ -50,9 +51,11 @@ with `J^2=sum_i X_i^(-2)-(1/m)(sum_i X_i^(-1))^2`, and proves that the tent stat
 
 on a known interval, giving a deterministic full-distribution audit target for any numerical implementation.
 
-`VIS-249` now removes the abstract sampler-existence gap. Conditional on all but any three coordinates, the remaining block sum and product are fixed, so after scaling that block its exact full conditional is precisely the `VIS-248` three-gap law. Random-scan exact heat-bath updates over coordinate triples are therefore reversible for the `VIS-247` target. Moreover, at every regular global state the infinitesimal directions supplied by three-coordinate sum/product-preserving moves span the whole tangent space of the conditioned surface. Thus the proposed sampler family has neither a missing conditional law nor an obvious local rank defect.
+`VIS-249` removes the abstract sampler-existence gap. Conditional on all but any three coordinates, the remaining block sum and product are fixed, so after scaling that block its exact full conditional is precisely the `VIS-248` three-gap law. Random-scan exact heat-bath updates over coordinate triples are reversible for the `VIS-247` target, and the infinitesimal directions supplied by the triple moves span the whole regular tangent space.
 
-The live question is now computational and discriminating rather than structural: whether a frozen implementation of that exact kernel mixes accurately enough at the actual high-dimensional critical parameters to calibrate `bar T`, and whether the prime configuration retains a stable residual after that calibration.
+`VIS-250` closes the corresponding global communication question for the exact kernel. Every regular log-product level is connected, the admissible triple-fiber flows form a single global accessibility class, and the exact positive-weight random-scan heat-bath chain is `mu_lambda`-irreducible. Thus a disconnected exact support or hidden communication class cannot explain a failure of calibration.
+
+The live question is now purely quantitative and discriminating: whether a frozen implementation of that exact kernel realizes the mathematics accurately and mixes fast enough at the actual high-dimensional critical parameters to calibrate `bar T`, and whether the prime configuration retains a stable residual after that calibration.
 
 ## Research question
 
@@ -64,7 +67,7 @@ If a residual survives, can it also survive a stronger predeclared spacing contr
 
 ## Why it may matter
 
-The log-product quotient is stronger than moment fitting: within the symmetric one-parameter Dirichlet family it removes `alpha` exactly. `VIS-247` gives the target measure, `VIS-248` gives an exact low-dimensional distributional benchmark, and `VIS-249` gives an exact block-conditional Markov kernel with full local tangent rank.
+The log-product quotient is stronger than moment fitting: within the symmetric one-parameter Dirichlet family it removes `alpha` exactly. `VIS-247` gives the target measure, `VIS-248` gives an exact low-dimensional distributional benchmark, `VIS-249` gives an exact block-conditional Markov kernel with full local tangent rank, and `VIS-250` removes the disconnected-support/global-communication ambiguity for that exact kernel.
 
 A residual that disappears under this calibration is generic spacing heterogeneity within the admitted null, not prime-specific structure. A residual that survives is still far below an RH result, but it would have passed a materially stronger representation-matched nuisance quotient and would justify asking whether the surviving statistic couples to the signed arithmetic kernel rather than merely to local point geometry.
 
@@ -72,7 +75,7 @@ A residual that disappears under this calibration is generic spacing heterogenei
 
 Before using prime data as a confirmation target, implement the `VIS-249` block kernel with a fixed state-independent triple-selection distribution. For each selected block, preserve its exact sum and product, sample the normalized `Q` coordinate from the `VIS-248` discriminant law, reconstruct the cubic roots, assign labels symmetrically, and verify the constraints to tolerance materially below the final statistic error budget.
 
-First require the one-block implementation to reproduce the exact `m=3` support and normalized CDF of `Q` at several predeclared product levels, together with selected deterministic-quadrature expectations, permutation symmetry, and endpoint mass. Then, at the actual high-dimensional `m` and `lambda`, test stationarity and mixing from deliberately separated admissible starting configurations. The full-tangent result of `VIS-249` is only a local accessibility certificate; it is not a substitute for an empirical convergence/mixing audit.
+First require the one-block implementation to reproduce the exact `m=3` support and normalized CDF of `Q` at several predeclared product levels, together with selected deterministic-quadrature expectations, permutation symmetry, and endpoint mass. Then, at the actual high-dimensional `m` and `lambda`, test stationarity and mixing from deliberately separated admissible starting configurations. `VIS-250` establishes exact irreducibility only; it does not supply a spectral gap, conductance bound, practical burn-in, or protection against a numerically distorted implementation.
 
 Freeze burn-in, retained-sample count, thinning if any, convergence diagnostics, numerical CDF/root tolerances, and the final `bar T` comparison rule before examining the prime residual. Require Monte Carlo and numerical uncertainty to be materially below the residual scale. Kill the candidate if the residual disappears under the exact quotient, if different valid initializations do not converge to the same calibrated law within the declared budget, if the result depends on post-hoc tuning, or if a stronger representation-matched spacing control reproduces it.
 
@@ -82,10 +85,10 @@ Only after a stable residual survives should a separate mathematical thread tran
 
 ## Evidence boundary
 
-`VIS-246` identifies the log product as the exact sufficient statistic for the symmetric-Dirichlet nuisance. `VIS-247` derives the alpha-free coarea target and proves nondegeneracy of the tent statistic on at least one product level. `VIS-248` supplies the exact three-gap quotient distribution used as a deterministic implementation audit. `VIS-249` proves that these three-gap conditionals assemble into reversible random-scan block Gibbs kernels for the full conditioned law and that their local directions span the regular tangent space.
+`VIS-246` identifies the log product as the exact sufficient statistic for the symmetric-Dirichlet nuisance. `VIS-247` derives the alpha-free coarea target and proves nondegeneracy of the tent statistic on at least one product level. `VIS-248` supplies the exact three-gap quotient distribution used as a deterministic implementation audit. `VIS-249` proves that these three-gap conditionals assemble into reversible random-scan block Gibbs kernels for the full conditioned law and that their local directions span the regular tangent space. `VIS-250` proves connectedness of the regular support, one global triple-flow accessibility class, and `mu_lambda`-irreducibility of the exact positive-weight triple heat-bath chain.
 
-None of these results proves global irreducibility, Harris recurrence, a spectral gap, useful high-dimensional mixing time, floating-point implementation accuracy, fidelity of the one-parameter Dirichlet family as a final prime-gap model, a prime residual, or any RH consequence. Constraint preservation and visually plausible chain motion are not enough; the high-dimensional calibration still needs an explicit convergence/error audit.
+None of these results proves a spectral gap, useful high-dimensional mixing time, floating-point implementation accuracy, fidelity of the one-parameter Dirichlet family as a final prime-gap model, a prime residual, or any RH consequence. Irreducibility rules out exact disconnected communication classes; it does not rule out severe bottlenecks or metastability on the computational scale that matters.
 
 ## Research disposition
 
-The clue remains `accepted`. The structural sampler problem is now reduced to an explicit kernel by `VIS-249`; the remaining gate is operational and high-dimensional. Implement and validate that frozen kernel against the exact `VIS-248` benchmark, establish adequate convergence/error control at the actual conditioned parameters, and only then test whether the prime statistic has a stable residual.
+The clue remains `accepted`. The structural sampler problem is now closed through exact conditionals, reversibility, tangent spanning, connected support, and global irreducibility. The remaining gate is operational and high-dimensional: implement and validate the frozen kernel against the exact `VIS-248` benchmark, establish adequate convergence/error control at the actual conditioned parameters, and only then test whether the prime statistic has a stable residual.
