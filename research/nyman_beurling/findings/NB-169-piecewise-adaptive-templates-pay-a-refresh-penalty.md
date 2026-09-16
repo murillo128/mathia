@@ -302,7 +302,13 @@ bounded-transport positive-density rescue would require
 {(\log\log T)^{2/3}},
 \]
 
-so the average template lifetime must be `o(1)` in height. At `a_T asymp 1/log T`, the threshold becomes order-one refreshes per unit height. These are illustrations of the theorem, not assumptions about where an actual target packet exists.
+so the average template lifetime must be `o(1)` in height. At
+
+\[
+a_T\asymp \frac1{\log T},
+\]
+
+the threshold becomes order-one refreshes per unit height. These are illustrations of the theorem, not assumptions about where an actual target packet exists.
 
 ## Adversarial checks and exact boundary
 
