@@ -2,7 +2,7 @@
 
 This file holds the current mathematical questions suggested by the durable prime-circle intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Add source-native zero-selecting structure before periodic scalarization
+## Add source-native zero-selecting structure beyond finite-Fourier closure and classical multiple-`L` recoding
 
 **Linked intuitions:** `MI-012-finite-scalar-cross-shell-fusion-is-closed-under-classical-packet-algebra` through `MI-028-canonical-mixed-packet-fails-finite-fourier-self-duality`.
 
@@ -12,12 +12,18 @@ PC-311 closes the direct cross-level escape: bilinearly pairing two centered pri
 
 PC-314 makes that even post-compression closure decisively unsuitable as an RH-like repair. For the smallest admissible canonical mixed pair `(q,r)=(5,7)`, both source-generated even Fourier eigensectors fail the exceptional `P(s)L(s,chi)` classification, so Saias--Weingartner forces linearly many zeros in strips strictly inside `Re s>1`.
 
-PC-315 closes the remaining chirality loophole rather than opening a new route. Keeping the unsymmetrized positive-frequency coefficient `c` adds the odd component `e=c-c^vee`; because `F_N^2=-I` there, its forced `+i/-i` Fourier eigensectors complete the order-four orbit. For the same canonical `(5,7)` source, exact coefficient inequalities put both odd sectors outside the exceptional single-`L` class as well. Thus **all four scalar sectors `+1,-1,+i,-i` of the complete finite-Fourier orbit have infinitely many zeros in `Re s>1`**. Retaining orientation before even symmetrization does not repair the route.
+PC-315 closes the remaining chirality loophole. Keeping the unsymmetrized positive-frequency coefficient adds the odd component; because `F_N^2=-I` there, its forced `+i/-i` Fourier eigensectors complete the order-four orbit. For the same canonical `(5,7)` source, both odd sectors also lie outside the exceptional single-`L` class. Thus **all four scalar sectors `+1,-1,+i,-i` of the complete finite-Fourier orbit have infinitely many zeros in `Re s>1`**.
 
-The live construction must therefore retain source-forced structure before reduction to one periodic scalar packet, or introduce structure not determined by its complete cyclic Fourier orbit, and it must arrive with an independently justified zero-selection theorem. Candidates may retain separate prime-level indices, pointed/shell state, nonlinear coupling before cyclic diagonalization, or a genuinely source-dependent matrix/operator not conjugate to the universal order-four Fourier action. Merely preserving parity/chirality, symmetrizing the compressed packet, or adjoining transform-generated components is closed.
+PC-316 now tests the most canonical nonlinear escape before scalar cyclic compression. Pointwise multiplication of the two oriented prime-level Hardy fields retains independent Fourier indices `k,l`; propagating the product by the same Poisson semigroup supplies the additive output mode `k+l`. Triple Mellinization therefore produces
+
+`sum_(k,l>=1) a(k)b(l)/(k^s l^t (k+l)^u)`.
+
+This is genuinely richer than PC-311's one-index collapse, but character decomposition identifies it exactly as a finite bundle of classical character-weighted Mordell--Tornheim double `L`-functions. The propagation itself is only the common radial translation `A(x+z)B(y+z)`. The canonical coefficient-free nonlinear coupling therefore preserves more source indices without producing a new analytic species.
+
+The live construction must now do more than act “before compression.” It must retain a source-forced object not exhausted by the finite-Fourier orbit **or** by immediate reduction to a standard multiple-Dirichlet family, and it must arrive with an independently justified zero-selection theorem. A source-specific theorem for the exact Mordell--Tornheim bundle would also be legitimate, but the existence of a three-variable series is not itself evidence for zero confinement.
 
 ## Demand a zero-sensitive destination theorem before interpreting source distinguishability
 
-Stable sub-mesh observations collapse matched sources; mesh-scale one-level observations decode the source; direct bilinear fusion classicalizes; the canonical scalar packet fails self-duality; universal Fourier closure is source-independent; and PC-314--PC-315 show that the complete canonical scalar Fourier orbit can have abundant zeros in the half-plane of absolute convergence.
+Stable sub-mesh observations collapse matched sources; mesh-scale one-level observations decode the source; direct bilinear fusion classicalizes; the canonical scalar packet fails self-duality; universal Fourier closure is source-independent; PC-314--PC-315 show that the complete canonical scalar Fourier orbit can have abundant zeros in the half-plane of absolute convergence; and PC-316 shows that the simplest pre-compression nonlinearity lands in classical Mordell--Tornheim theory.
 
-A viable observable must therefore state what additional source-native quantity survives **before** these reductions, or what genuinely new non-scalar structure survives beyond the full Fourier orbit, and which theorem converts that quantity into zero confinement. Functional-equation symmetry, even after retaining the complete orientation/parity content of the periodic packet, is no longer a plausible destination criterion for this branch. Future mixed-conductor proposals should be reduced on the common refinement and audited for the exact state retained before scalar periodicization, whether that state is already recoverable from the order-four Fourier orbit, and the source-specific mechanism that controls its divisor.
+A viable observable must therefore state exactly what additional source-native quantity survives these reductions and which theorem converts that quantity into zero confinement. Functional-equation symmetry, orientation/parity completion, additional Mellin variables, or the mere label “nonlinear coupling” are not destination criteria. Future mixed-conductor proposals should be reduced completely before their analytic complexity is interpreted as new information.

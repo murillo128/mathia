@@ -1,6 +1,6 @@
-# MI-032 — Self-tangent Robin height is a Pareto-weighted Chebyshev-deficit average with a terminal moment hierarchy
+# MI-032 — Self-tangent Robin height is a Pareto-weighted Chebyshev-deficit average with a fixed-order terminal moment hierarchy
 
-**Evidence level:** exact-derived source-side reformulation from [RE-153](../../findings/RE-153-self-tangent-counterexamples-force-a-pareto-chebyshev-deficit-barrier.md), sharpened by the matched synthetic-source obstructions [RE-154](../../findings/RE-154-square-root-over-log-post-selector-relocations-move-pareto-robin-source-by-order-one.md), [RE-155](../../findings/RE-155-pnt-stable-source-surgery-survives-to-any-fixed-fraction-of-the-robin-horizon.md), the ordinary-prime relocation capacity law [RE-156](../../findings/RE-156-terminal-source-relocation-capacity-has-a-fourth-root-transition.md), the first-order generalized insertion boundary [RE-157](../../findings/RE-157-pnt-small-insertion-placement-squares-the-terminal-ambiguity-scale.md), and the endpoint-count/Chebyshev-matched curvature law [RE-158](../../findings/RE-158-terminal-count-and-chebyshev-mass-matching-restore-the-fourth-root-ambiguity-scale.md), using the canonical finite-annulus threshold of RE-022.
+**Evidence level:** exact-derived source-side reformulation from [RE-153](../../findings/RE-153-self-tangent-counterexamples-force-a-pareto-chebyshev-deficit-barrier.md), sharpened by the matched synthetic-source obstructions [RE-154](../../findings/RE-154-square-root-over-log-post-selector-relocations-move-pareto-robin-source-by-order-one.md), [RE-155](../../findings/RE-155-pnt-stable-source-surgery-survives-to-any-fixed-fraction-of-the-robin-horizon.md), the ordinary-prime relocation capacity law [RE-156](../../findings/RE-156-terminal-source-relocation-capacity-has-a-fourth-root-transition.md), the first-order generalized insertion boundary [RE-157](../../findings/RE-157-pnt-small-insertion-placement-squares-the-terminal-ambiguity-scale.md), the endpoint-count/Chebyshev-matched curvature law [RE-158](../../findings/RE-158-terminal-count-and-chebyshev-mass-matching-restore-the-fourth-root-ambiguity-scale.md), and the all-fixed-order terminal moment hierarchy [RE-159](../../findings/RE-159-fixed-terminal-moment-matching-has-a-sharp-root-scale-ambiguity-hierarchy.md), using the canonical finite-annulus threshold of RE-022.
 
 For a sufficiently large regular self-tangent Robin counterexample with largest active first-layer prime `p`, the mixed Mertens--Chebyshev height integral has a canonical positive kernel. After normalization and rescaling `t=py`, the kernel converges to the Pareto law `(1/2)y^(-3/2)dy`, and the counterexample condition becomes
 
@@ -8,36 +8,36 @@ For a sufficiently large regular self-tangent Robin counterexample with largest 
 
 RE-154--RE-155 show that this destination remains highly sensitive to coherent post-selector source placement even when the control agrees exactly with the ordinary source through most of the canonical horizon `U=U_A(p)` and remains PNT-indistinguishable.
 
-RE-156 identifies the capacity boundary for **equal-cardinality ordinary-prime relocation** inside the shrinking terminal layer `T_p(epsilon)=[(1-epsilon)U,U]`:
+RE-156 identifies the capacity boundary for **equal-cardinality ordinary-prime relocation** inside the shrinking terminal layer. Its capacity is
 
-`Cap_p(epsilon) asymp epsilon^2 sqrt(p) log p / log U`.
+`Cap_p(epsilon) asymp epsilon^2 sqrt(p) log p / log U`,
 
-The transition is
+with transition
 
 `epsilon_*(p)=sqrt(log U/(sqrt(p)log p))`.
 
-The square in this law has two origins: one factor `epsilon` is the influence range across the terminal layer, while the second comes from the number `Theta(epsilon U/log U)` of ordinary primes locally available to delete and relocate. Thus `epsilon_*` is a genuine **ordinary-source local-supply boundary**, not automatically an information threshold for coarse PNT data.
+The square has two origins: one factor `epsilon` is terminal influence variation, while the second is the local ordinary-prime supply available to relocate. Thus `epsilon_*` is an ordinary-source supply boundary, not automatically a coarse-PNT information threshold.
 
-RE-157 separates those notions. Allow matched generalized-prime controls that add `m_p=delta_p U/log U` non-prime labels in the terminal layer with `delta_p->0`, comparing equal-cardinality packets placed near opposite ends. There is no local deletion cap, and the first placement moment gives separation
-
-`(1/2+o(1)) delta_p epsilon_p / epsilon_PNT(p)`,
-
-where
+RE-157 separates those notions. Matched generalized-prime controls with equal cardinality but unconstrained terminal placement retain a first-order mode whose transition is
 
 `epsilon_PNT(p)=log U/(sqrt(p)log p)=epsilon_*(p)^2`.
 
-Whenever `epsilon_p/epsilon_PNT(p)->infinity`, one can choose `delta_p->0` and still obtain any prescribed order-one separation while counting and Chebyshev perturbations remain globally PNT-small. This identifies the first-moment ambiguity left by coarse terminal control.
+Whenever `epsilon/epsilon_PNT->infinity`, a vanishing insertion budget can still yield order-one destination separation while global counting/Chebyshev perturbations remain PNT-small.
 
-RE-158 then matches one more source statistic **exactly**. Equal cardinality fixes the terminal counting increment; equality of total `sum log q_i` fixes the terminal Chebyshev increment and, in logarithmic terminal coordinates `z_i=log(U/q_i)`, cancels the entire linear placement moment. The exact Robin influence then begins at quadratic order in the difference of packet spreads:
+RE-158 matches one more source statistic exactly. Equality of total `sum log q_i` cancels the entire linear placement moment in logarithmic terminal coordinates `z_i=log(U/q_i)`, so the first surviving source freedom is quadratic spread and the transition returns to `epsilon_*`. The same exponent therefore has different causes in RE-156 and RE-158: local supply versus moment cancellation.
 
-`Cap_p^(theta)(epsilon,delta) asymp delta epsilon^2 sqrt(p) log p / log U = delta (epsilon/epsilon_*)^2`.
+RE-159 proves that this is not a two-level accident. For every fixed integer `r>=1`, if two equal-cardinality terminal packets match their logarithmic-position power sums through order `r-1`, the first unconstrained Robin influence is the `r`-th placement moment. The sharp scale is
 
-Therefore endpoint `pi` and endpoint `theta` matching raises the lower ambiguity scale back to `epsilon_*`: if `epsilon/epsilon_*->infinity`, a vanishing insertion budget can still create order-one source separation, while every such endpoint-matched insertion family is `o(1)`-stable for `epsilon=O(epsilon_*)`.
+`epsilon_r(p)=[log U/(sqrt(p)log p)]^(1/r)`.
 
-The reappearance of `epsilon_*` must not be conflated with RE-156. In ordinary relocation the second `epsilon` is a **supply factor**. In RE-158 it is a **moment-cancellation factor** exposing the curvature of the influence kernel. Two architectures can therefore share the same exponent while consuming different source resources.
+More precisely, the destination separation has leading term proportional to the difference of `sum z_i^r`, with coefficient `b_r(U)=1/r!+O_r(U^-1)` for `r>=2`, and an `O_r(m epsilon^(r+1))` remainder. Prouhet--Thue--Morse equal-power partitions give matched packets whose `r`-th moment separation is `asymp_r m epsilon^r`, so the upper bound is sharp. For a vanishing insertion intensity `m~delta U/log U`,
 
-The source audit is now a moment hierarchy rather than a single “PNT resolution” threshold. Coarse PNT plus terminal count leaves first-order placement freedom down to `epsilon_PNT`. Exact terminal count plus total Chebyshev mass kills that linear mode but still leaves quadratic spread above `epsilon_*`. A positive theorem must say what controls the *internal placement* of Chebyshev mass inside the terminal layer—through stronger short-interval information, higher matched moments, or source-specific CA/ordinary-prime structure—rather than treating endpoint values as sufficient.
+`Cap_p^(r)(epsilon,delta) asymp_r delta (epsilon/epsilon_r)^r`.
 
-The reusable distinction is between ambient source closeness, local source supply, matched endpoint moments and destination-weighted curvature. A perturbation can be negligible for prime counting and exact in low-order endpoint summaries while retaining order-one destination leverage through the next unresolved placement moment. A transition should therefore be attributed to the exact resource that creates it, not merely to its exponent.
+Thus every additional fixed matched terminal moment takes **one more root of the same coarse-PNT scale**. Order-one ambiguity persists above `epsilon_r` with `delta->0`, while this fixed-`r` matched class is `o(1)`-stable at `epsilon=O(epsilon_r)`.
 
-**Boundary.** RE-156 classifies ordinary equal-cardinality terminal relocation; RE-157 classifies vanishing-budget generalized insertion placement with unmatched first moment; RE-158 classifies the subclass with exact endpoint count and Chebyshev-mass matching. None says the ordinary primes realize the synthetic controls, proves source control at or below `epsilon_*`, or excludes higher-moment, signed/nonlocal, explicit-formula or global CA constraints. The scales identify what the known matched controls consume, not a positive Robin theorem.
+The source audit is therefore a genuine moment hierarchy, not a single terminal-resolution threshold. Endpoint count controls the zeroth moment; total Chebyshev mass controls the first logarithmic placement moment; matching further terminal power sums pushes ambiguity into successively higher derivatives of the exact Robin influence kernel. A positive theorem must identify what *source-native* arithmetic structure controls this hierarchy or replaces it by a stronger non-moment constraint. Merely adding finitely many terminal summaries cannot be treated as complete source identification without pricing the next unresolved moment.
+
+The reusable distinction is between ambient source closeness, local source supply, the number/order of matched terminal moments and destination-weighted Taylor sensitivity. A perturbation can be negligible for prime counting and exact in any prescribed fixed set of terminal moments while retaining order-one destination leverage through the next unresolved placement moment at its corresponding root scale.
+
+**Boundary.** RE-159 classifies every fixed matched moment order for the generalized insertion model and proves sharp matched controls using classical equal-power constructions. It does not let `r` grow with `p`, prove that ordinary primes realize the synthetic controls, establish positive source control at the moving root scales, or exclude non-moment, signed/nonlocal, explicit-formula or global colossally-abundant constraints. The hierarchy identifies what fixed-order summaries fail to determine, not a positive Robin theorem.

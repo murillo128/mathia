@@ -2,7 +2,7 @@
 
 This file holds the current mathematical questions suggested by the durable robin-extremal intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Resolve the terminal moment hierarchy, not a single coarse-PNT scale
+## Resolve the terminal moment hierarchy beyond every fixed order
 
 **Linked intuitions:** `MI-001-robin-failure-requires-self-tangent-half-mass-event-gaps` through `MI-032-self-tangent-robin-height-is-a-pareto-weighted-chebyshev-deficit-average`.
 
@@ -16,21 +16,25 @@ RE-156 quantifies the shrinking-layer endpoint for ordinary-prime equal-cardinal
 
 `Cap_p(epsilon) asymp epsilon^2 sqrt(p) log p / log U`,
 
-with transition
-
-`epsilon_*(p)=sqrt(log U/(sqrt(p)log p))`.
-
-RE-157 shows that this fourth-root transition includes a local ordinary-prime supply constraint and is therefore not a coarse-PNT identifiability threshold. If matched generalized-prime controls instead add `delta_p U/log U` labels with `delta_p->0` and vary only their terminal placement, their first-order leverage is linear in `epsilon`, giving the lower ambiguity scale
+with transition `epsilon_*(p)=sqrt(log U/(sqrt(p)log p))`. RE-157 removes the deletion-supply cap with PNT-small generalized insertions; when only cardinality is matched, first-order placement freedom survives down to
 
 `epsilon_PNT(p)=log U/(sqrt(p)log p)=epsilon_*(p)^2`.
 
-RE-158 now identifies why that smaller scale is not intrinsic once one more endpoint statistic is retained. If the two generalized insertion packets match both cardinality and total logarithmic/Chebyshev mass exactly, the complete linear placement moment cancels. The first surviving source freedom is the quadratic spread of logarithmic positions, with capacity
+RE-158 matches terminal count and total Chebyshev mass exactly. This cancels the linear placement moment and leaves quadratic spread, moving the ambiguity threshold back to `epsilon_*` for that more informative observation class.
 
-`Cap_p^(theta)(epsilon,delta) asymp delta epsilon^2 sqrt(p) log p / log U = delta (epsilon/epsilon_*)^2`.
+RE-159 now proves the full **fixed-order terminal moment hierarchy**. If two equal-cardinality insertion packets match logarithmic-position power sums through order `r-1`, the first unresolved Robin influence is the `r`-th moment and the sharp transition is
 
-Thus order-one ambiguity under a vanishing perturbation budget survives for `epsilon/epsilon_*->infinity`, while this endpoint-`pi`/endpoint-`theta` matched insertion class is `o(1)`-stable when `epsilon=O(epsilon_*)`. The fourth-root scale reappears, but for a different reason than in RE-156: ordinary relocation pays a second `epsilon` through local prime supply, whereas endpoint Chebyshev matching pays it by cancelling the first placement moment and exposing curvature.
+`epsilon_r(p)=[log U/(sqrt(p)log p)]^(1/r)`.
 
-The residual source theorem must therefore state **which terminal moments are actually controlled**. Coarse PNT plus terminal count alone leaves the `epsilon_PNT` first-moment ambiguity. Exact terminal count and total Chebyshev mass remove that mode but still leave quadratic placement ambiguity above `epsilon_*`. A positive Robin route must constrain the internal distribution of Chebyshev mass in the terminal layer—possibly through higher moments, short-interval structure, or genuine CA/ordinary-prime identities—rather than treating endpoint `pi` and `theta` values as complete source information.
+The exact Taylor coefficient satisfies `b_r(U)=1/r!+O_r(U^-1)` for `r>=2`, and Prouhet--Thue--Morse equal-power packets show the resulting `m epsilon^r` separation is sharp. With a vanishing insertion intensity `m~delta U/log U`, the attainable ambiguity is
+
+`Cap_p^(r)(epsilon,delta) asymp_r delta (epsilon/epsilon_r)^r`.
+
+Thus matching any **fixed** number of terminal moments merely transfers the ambiguity to the next placement moment and takes another root of the same coarse-PNT scale. The cases `r=1,2` recover RE-157--RE-158; higher fixed `r` form one coherent hierarchy rather than new ad hoc scales.
+
+The residual source theorem must therefore state what controls more than finitely many terminal Taylor moments. A positive Robin route needs source-native short-interval, analytic, CA/ordinary-prime, or other structure that couples the internal terminal distribution strongly enough to beat the whole fixed-order matched-control hierarchy. Merely retaining endpoint `pi`, `theta`, and finitely many additional terminal moments cannot be treated as complete source information.
+
+The next precise boundary is whether a genuinely arithmetic theorem supplies **growing-order or non-moment terminal control** at the scales consumed by the Robin influence, or whether matched generalized sources can extend the hierarchy when `r=r(p)` grows. RE-159 is fixed-order: it does not justify extrapolating the Prouhet construction or Taylor remainder uniformly to arbitrary growing `r`.
 
 ## Control one-sided vertical reciprocal escape without overstating the symmetric obstruction
 
@@ -38,4 +42,4 @@ RE-144--RE-152 put the zero-side packet into reciprocal-scale language and show 
 
 ## Keep the source-moment and zero-packet gates distinct
 
-RE-153--RE-158 give a direct source-side destination and expose a hierarchy of terminal resources: ordinary local supply, first placement moment, endpoint Chebyshev mass and then quadratic placement spread. RE-151--RE-152 give a zero-side matched obstruction to one reciprocal-scale observation route. Neither subsumes the other. Progress should be credited only when it changes the exact quantity consumed by its own destination: terminal arithmetic control strong enough to remove the surviving placement moments on the self-tangent branch, or target-conditioned zero geometry on the reciprocal-packet branch.
+RE-153--RE-159 give a direct source-side destination and expose a hierarchy of terminal resources: ordinary local supply, first placement moment, endpoint Chebyshev mass, and then every higher fixed placement moment. RE-151--RE-152 give a zero-side matched obstruction to one reciprocal-scale observation route. Neither subsumes the other. Progress should be credited only when it changes the exact quantity consumed by its own destination: terminal arithmetic control strong enough to escape the fixed-order moment hierarchy on the self-tangent branch, or target-conditioned zero geometry on the reciprocal-packet branch.
