@@ -1,42 +1,24 @@
-# MI-002 — Canonical relational lifts can restore an intended gauge without restoring absolute coordinates
+# MI-002 — Canonical relational lifts can restore an intended gauge only after the residual fibre is classified
 
-**Evidence level:** supported by exact finite harmonic, Euclidean and spectral models, with exact classical target-fidelity separations from [AF-371](../../findings/AF-371-hankel-positivity-vs-total-positivity-target-fidelity.md), the finite-arity obstruction [AF-372](../../findings/AF-372-every-finite-toeplitz-minor-order-has-polya-frequency-false-positives.md), and the determining-sampling separation [AF-373](../../findings/AF-373-sampling-geometry-can-preserve-all-order-polya-frequency-fidelity.md).
+**Evidence level:** supported synthesis from exact finite harmonic/Euclidean/spectral models and the translation-total-positivity sequence [AF-371](../../findings/AF-371-hankel-positivity-vs-total-positivity-target-fidelity.md) through [AF-375](../../findings/AF-375-sampling-difference-subgroup-classifies-separable-determinant-gauges.md).
 
-## Core intuition
+Information lost by scalar or quadratic compression need not require restoring absolute coordinates. A canonically available relation between surviving components can make the quotient faithful modulo an intended symmetry. The operative question is not “scalar versus high-dimensional” but the exact fibre left by the retained relations.
 
-Information lost by a scalar or quadratic compression need not require restoring the original coordinates. A canonically available relation between surviving components can be enough to make the quotient faithful modulo the intended symmetry. The useful distinction is therefore not “scalar versus high-dimensional,” or even “few versus infinitely many inequalities,” but whether the retained relational data leave exactly the intended ambiguity group or target fibre.
+The finite models make this algebraic. A bispectrum can recover a finite abelian signal modulo translation when Fourier coefficients do not vanish; an exponent lattice leaves precisely its annihilator ambiguity; Gram data classify ordered Euclidean configurations modulo the appropriate orthogonal gauge, with orientation requiring only the residual torsor when it actually survives. These examples show why one should identify the ambiguity group before adding more observables.
 
-## Strongest justified principle
+AF-371--AF-373 give the analytic target-fidelity version. Hankel positivity can retain abundant source data yet fail Laguerre--Pólya membership, while Schoenberg translation total positivity tests the correct ordered relation. Fixed determinant order still leaves false positives (AF-372), so relational arity is a separate resource. On a declared exponentially decaying class, some thin sampling sets are determining (AF-373), so sampling geometry is another independent resource.
 
-AF-004 gives a harmonic example: for finite abelian signals with nonvanishing Fourier coefficients, the power spectrum loses phase while the bispectrum reconstructs the signal modulo translation. AF-005 makes the same mechanism algebraic: for a residual phase torus `K`, monomial observables with exponent lattice `L` leave ambiguity exactly `L^perp`; Smith normal form detects finite aliases invisible to rank.
+AF-374--AF-375 sharpen the sampling question from a qualitative warning into an exact gauge calculation. For row-sampling set `E`, let
 
-AF-006 gives the operator version. A self-adjoint operator with ordered marks is classified, up to joint unitary equivalence, by the Gram data of the marked projections in each eigenspace. Diagonal spectral measures can lose relative orientation while the full matrix-valued marked spectral measure retains it.
+`H_E = <E-E>`.
 
-AF-014 supplies an important adversarial correction to generic “Gram destroys sign” reasoning. For an ordered real configuration `X`, `X^T X` is complete modulo `O(d)`. At full row rank the entire Gram fiber splits into exactly two `SO(d)`-orbits, and compound minors recover every relative maximal-minor sign; only one global orientation torsor remains. One nonzero maximal-minor sign repairs that defect, while at rank deficiency even the orientation ambiguity disappears. A relational lift should therefore be measured against the exact fiber, not against a slogan about positivity or quadratic compression.
+A positive continuous multiplicative factor is separable on the sampled Toeplitz kernel exactly when translation by `h in H_E` acts by a positive character. Hence:
 
-AF-371 gives the analytic target-fidelity analogue. If `1/Psi` is represented by its complete Taylor sequence, the analytic germ can still determine `Psi`; nevertheless compressing that rich data to the infinite Boolean signature “every Hankel moment matrix is positive” does not determine whether `Psi` lies in the Laguerre--Pólya class. Hamburger's theorem supplies target-mixed false positives. Schoenberg's translation total positivity instead tests all ordered cross-relations `det(Lambda(x_j-y_k))` and, for the stated reciprocal Laplace-transform class, is equivalent to Laguerre--Pólya membership. Thus **adding infinitely many positivity tests does not repair a quotient when the tests probe the wrong relational geometry**.
+- `H_E=aZ` leaves `p(t)=e^(lambda t) q(t)` with arbitrary positive continuous `a`-periodic `q`;
+- dense `H_E` collapses every continuous separable ambiguity to the universal exponential tilt `C e^(lambda t)`.
 
-AF-372 adds a second resource axis inside the *correct* geometry. For every fixed `r`, there are nonnegative translation profiles in `TN_r\TN_(r+1)`. Therefore even exhaustive location sampling at a fixed determinant size does not recover the all-order Pólya-frequency target on the unrestricted class. The exact certificate needs **unbounded relational arity**, not merely many instances of one bounded-arity relation.
+For `E=aZ union (tau+aZ)`, rational `tau/a` merely refines the hidden period, while irrational `tau/a` makes `H_E` dense and kills every nonconstant periodic separable gauge. This is an exact **gauge-elimination** theorem, not a determining-set theorem: non-separable false-positive fibres may remain.
 
-AF-373 separates a third resource that AF-372 did not settle: **where** the all-order relations are sampled. On the exponentially decaying source class `L`, Ganzburg's determining-set theorems allow one row-coordinate to be restricted to a much thinner infinite skeleton `E` without losing the full Pólya-frequency discriminator. An accumulation point is sufficient, and so is a symmetric unbounded sequence `u_s=o(sqrt(s))`. Yet the integer lattice `E=Z` admits explicit compactly supported `E`-PF false positives. Thus unbounded arity can survive while location geometry is compressed exactly, but only when the source class and sampling set supply a uniqueness theorem. Relational arity and sampling geometry are independent fidelity resources.
+The resulting audit has four independent gates: choose the right relation; retain enough relational arity; choose sampling geometry whose generated relation group removes the intended gauge; and prove that the remaining fibre is target-pure in the actual source class. Killing a visible gauge is progress only at the third gate. It must not be promoted to source recovery or target fidelity without the fourth.
 
-## What remains possible
-
-These models do not say that bispectra, monomials, Gram data, matrix-valued measures or total positivity are universally sufficient. They show how to test a proposed lift: identify the ambiguity group or target fibre first, derive the relational observable canonically, and prove that the remaining ambiguity is precisely the intended gauge or that the target property factors through it. Arithmetic source specificity remains a separate gate.
-
-For positivity routes the audit now has three independent questions: **is this the right relation, is the retained relational arity sufficient, and is the retained sampling geometry determining for the declared source class?** Ordinary Hankel PSD can fail the first question; fixed-order translation total positivity can fail the second; a fixed lattice can fail the third even when every determinant order is kept. Conversely AF-373 proves that spatial compression is not intrinsically fatal: it becomes exact when a source-class-specific determining theorem supplies the missing locations.
-
-## Status / novelty
-
-The bispectral, annihilator-lattice, Gram/compound-minor, marked-Hermitian, Hamburger/Schoenberg, Karlin--Khare and Ganzburg statements are persisted findings with classical ingredients. Their common interpretation as a constructive alternative to arbitrary target-carrying marks—and as a warning that relation type, relational arity and sampling geometry are distinct fidelity currencies—is a supported synthesis.
-
-## Falsification criterion
-
-Produce a claimed canonical relational lift whose exact retained data still admit two configurations outside the intended gauge orbit or on opposite sides of the target property. For a positivity lift, a matched control agreeing on every retained order and sampled location but differing at the target is decisive. Conversely, a source-class theorem proving that a thinner relational skeleton is determining strengthens the principle only for the hypotheses under which that uniqueness result holds.
-
-## Lean-formalizable core
-
-- Bispectral phase recursion modulo translation.
-- Annihilator-lattice equality and Smith-normal-form aliases.
-- Gram completeness modulo `O(d)` and the full-rank orientation torsor.
-- Classification of marked Hermitian data by per-eigenspace Gram matrices.
+**Falsification criterion.** For a claimed relational repair, exhibit two admissible sources that agree on every retained relation but lie on opposite sides of the target property. For sampled total positivity specifically, dense `H_E` falsifies only periodic/separable multiplicative aliases; a non-separable false positive would show directly why gauge elimination is weaker than determination.
