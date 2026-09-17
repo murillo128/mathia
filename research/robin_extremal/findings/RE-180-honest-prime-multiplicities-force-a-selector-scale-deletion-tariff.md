@@ -183,7 +183,7 @@ Thus the live `RE-179` dichotomy becomes quantitative in both branches. If the r
 N_{\rm del}(Y)\gg_\lambda\frac{\sqrt p}{\log p}.
 \]
 
-Conversely, if the repair uses `o(sqrt(p)/log p)` early deletions, then its remote tail must still pay a reset budget of order `d_p`.
+Conversely, if the repair uses \(o(\sqrt p/\log p)\) early deletions, then its remote tail must still pay a reset budget of order `d_p`.
 
 ## 1. Two exact Euler coordinates force negative centered repair
 
@@ -303,7 +303,13 @@ Writing `q=up`, the first term is
 
 For `u>2`, the function `log(u/2)/u` has global maximum `1/(2e)` at `u=2e`; restricting to `u>=lambda` gives `C_lambda<=1/(2e)`. The second term in (11) is `o(1/p)` uniformly for `q>=lambda p`. This proves (2).
 
-Combining (1) and (2) proves (3). Finally, on the original packet `q in [2p,3p]` one has `H(q)asymp1/p`, so (4) follows directly from the definition of `d_p`.
+Combining (1) and (2) proves (3). Finally, on the original packet \(q\in[2p,3p]\) one has
+
+\[
+H(q)\asymp\frac1p,
+\]
+
+so (4) follows directly from the definition of `d_p`.
 
 The cardinality scale is therefore not an artifact of the particular construction of `D_p`: it is the scale forced on **any** honest negative repair by the same two boundary coordinates.
 
@@ -351,7 +357,11 @@ Equations (9), (12), and (13) yield
 \ell_{\rm KV}(Y)e^{-bV(Y)},
 \]
 
-which is (5), and (6) follows from `d_p asymp 1/(sqrt(p)log p)`.
+which is (5), and (6) follows from
+
+\[
+d_p\asymp\frac1{\sqrt p\log p}.
+\]
 
 Unlike the raw branch statement in `RE-179`, (5) assigns a common Robin-scale currency to local source granularity and remote oscillatory capacity.
 
