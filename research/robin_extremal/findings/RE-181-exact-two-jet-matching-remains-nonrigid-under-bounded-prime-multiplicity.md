@@ -1,6 +1,6 @@
 # RE-181 — Exact two-jet matching remains non-rigid under bounded prime multiplicity
 
-**Status:** `EXACT-DERIVED + CONSTRUCTIVE-CONTROL + ORDINARY-PRIME-SUPPORT + MULTIPLICITY-012 + EXACT-TWO-JET-MATCHING + KV-FIDELITY + TRANSIENT-ROBIN-AMBIGUITY + RE-180-TARIFF-SHARP + PRIOR-ART-BOUNDED`.
+**Status:** `EXACT-DERIVED + CONSTRUCTIVE-CONTROL + ORDINARY-PRIME-SUPPORT + MULTIPLICITY-012 + EXACT-TWO-JET-MATCHING + KV-FIDELITY + TRANSIENT-ROBIN-AMBIGUITY + RE-180-EARLY-TARIFF-SCALE-ATTAINED + PRIOR-ART-BOUNDED`.
 
 **Parent findings:** RE-173, RE-175, RE-179, RE-180.
 
@@ -10,9 +10,9 @@
 \Omega\!\left(\frac{\sqrt p}{\log p}\right)
 \]
 
-unless the repair pays the remote KV-weighted reset budget of `RE-179`. That result prices the local branch but does not decide whether the branch is actually realizable.
+unless the repair pays the remote KV-weighted reset budget of `RE-179`. That result prices the local branch but does not decide whether the branch is realizable.
 
-It is realizable, at the same cardinality scale.
+It is realizable at that early-support scale.
 
 For every sufficiently large selector scale `p`, there exists an ordinary-prime-supported source `Q_p` with multiplicities
 
@@ -29,12 +29,12 @@ such that:
    \[
    D_{Q_p}(s):=\sum_q (m_{Q_p}(q)-1)\,[-\log(1-q^{-s})]
    \]
-   satisfies the two exact right-boundary conditions
+   satisfies
    \[
    \boxed{D_{Q_p}(1+)=D_{Q_p}'(1+)=0;}
    \tag{2}
    \]
-4. its Chebyshev discrepancy obeys the explicit uniform bound
+4. its Chebyshev discrepancy obeys
    \[
    \boxed{
    |\vartheta_{Q_p}(x)-\vartheta(x)|
@@ -43,7 +43,7 @@ such that:
    }
    \tag{3}
    \]
-   hence, for every fixed `b>0`,
+   and hence, for every fixed `b>0`,
    \[
    |\vartheta_{Q_p}(x)-\vartheta(x)|
    \ll_b x\exp[-bV(x)],
@@ -58,7 +58,7 @@ such that:
    }
    \tag{5}
    \]
-6. the first positive repair packet lies near `16p`, while the first negative repair packet lies near `32p`, and each uses
+6. the first positive repair packet lies near `16p`, the first negative repair packet lies near `32p`, and each uses
    \[
    \boxed{
    \Theta\!\left(\frac{\sqrt p}{\log p}\right)
@@ -67,9 +67,9 @@ such that:
    \]
    distinct ordinary primes.
 
-Thus the one-sided deletion tariff of `RE-180` is order-sharp inside the bounded multiplicity class `{0,1,2}`. More importantly, **two exact Euler boundary coordinates still do not rigidify the transient Robin prefix**, even after ordinary-prime support, nonnegative integer multiplicity, a fixed multiplicity cap, and arbitrarily strong fixed KV relative fidelity are all imposed simultaneously.
+Thus **two exact Euler boundary coordinates still do not rigidify the transient Robin prefix**, even after ordinary-prime support, nonnegative integer multiplicity, a fixed multiplicity cap, and arbitrarily strong fixed KV relative fidelity are imposed simultaneously. The local early-deletion scale forced by `RE-180` is actually attained in the first repair shell; exact equality still requires an infinite continuation, as it must already for the zeroth coordinate by `RE-172`.
 
-The construction uses an explicit two-shell quantizer. At each later scale, two disjoint narrow ordinary-prime shells have different Euler slopes. Their signed `H`-masses span the two-dimensional boundary residual over the reals; prime density then discretizes those two real masses with an error smaller than the next residual. Iterating on geometrically increasing shells makes the residual tend to zero while keeping both boundary series absolutely convergent.
+The construction uses an explicit two-shell quantizer. At each later scale, two disjoint narrow ordinary-prime shells have different Euler slopes. Their signed `H`-masses span the two-dimensional boundary residual over the reals; prime density discretizes those two real masses with a smaller residual. Iterating on geometrically increasing shells drives the residual to zero while keeping both boundary series absolutely convergent.
 
 ## 1. Boundary coordinates and the initial Robin excursion
 
@@ -127,14 +127,14 @@ we have
 \tag{11}
 \]
 
-The deletion packet contributes `(-d_p,-b_p)` to the `(H,B)` boundary vector. It is therefore enough to construct a repair on ordinary primes `q>=16p` whose absolutely convergent signed boundary vector is exactly
+The deletion packet contributes `(-d_p,-b_p)` to the `(H,B)` boundary vector. It therefore suffices to construct a repair on ordinary primes `q>=16p` whose absolutely convergent signed boundary vector is exactly
 
 \[
 \boxed{(d_p,b_p).}
 \tag{12}
 \]
 
-No repair occurs below `16p`. Consequently the `RE-173` calculation at the observation height `8p` is unchanged. In particular, with its normalization `Z_p=2+o(1)`, every deleted `q in [2p,3p]` contributes a positive amount comparable with `1/p`, so
+No repair occurs below `16p`. Consequently the `RE-173` calculation at observation height `8p` is unchanged. With its normalization `Z_p=2+o(1)`, every deleted `q in [2p,3p]` contributes a positive amount comparable with `1/p`, and
 
 \[
 \frac{\sqrt p\log p}{Z_p}
@@ -144,11 +144,11 @@ No repair occurs below `16p`. Consequently the `RE-173` calculation at the obser
 \tag{13}
 \]
 
-This is exactly (5). The problem is therefore purely whether the two-dimensional debt (12) can be repaid without leaving the source-fidelity class.
+This proves (5) once the exact repair is constructed.
 
-## 2. A two-shell prime quantizer
+## 2. A two-shell ordinary-prime quantizer
 
-Extend `A` from primes to real `t>1` by the same formula in (7). From the elementary expansion of `log(1+1/(t-1))`,
+Extend `A` to real `t>1` by the formula in (7). The elementary expansion of `log(1+1/(t-1))` gives
 
 \[
 A(t)=\log t+O\!\left(\frac{\log t}{t}\right),
@@ -157,13 +157,13 @@ A'(t)=\frac1t+O\!\left(\frac{\log t}{t^2}\right).
 \tag{14}
 \]
 
-For a large real scale `x`, put
+For large `x`, put
 
 \[
-\delta_x:=(\log x)^{-4},
+\delta_x:=(\log x)^{-4}
 \]
 
-and consider the two disjoint shells
+and take two disjoint shells
 
 \[
 I_x=[x,x(1+\delta_x)],
@@ -172,7 +172,7 @@ J_x=[2x,2x(1+\delta_x)].
 \tag{15}
 \]
 
-The PNT with the already anchored KV error gives
+The PNT with the line's already anchored KV error gives
 
 \[
 \vartheta(x(1+\delta_x))-\vartheta(x)
@@ -180,7 +180,7 @@ The PNT with the already anchored KV error gives
 \tag{16}
 \]
 
-because `exp(-aV(x))=o((log x)^(-4))`. Hence each shell contains total `H`-mass
+because `exp(-aV(x))=o((log x)^(-4))`. Dividing the corresponding prime count by the shell scale, or equivalently using `H(q)asymp1/q`, yields
 
 \[
 \boxed{
@@ -193,7 +193,7 @@ because `exp(-aV(x))=o((log x)^(-4))`. Hence each shell contains total `H`-mass
 \tag{17}
 \]
 
-Now let `r=(r_H,r_B)` be a two-coordinate residual and define
+For a residual `r=(r_H,r_B)`, define
 
 \[
 M_x(r):=|r_B|+\log x\,|r_H|.
@@ -207,7 +207,7 @@ M_x(r)\le c_0(\log x)^{-6}
 \tag{19}
 \]
 
-for a sufficiently small fixed `c_0`. Set
+for a sufficiently small fixed `c_0`. Put
 
 \[
 a_x:=A(x),
@@ -222,7 +222,7 @@ b_x-a_x=\log2+o(1).
 \tag{20}
 \]
 
-Therefore the real system
+Hence the real system
 
 \[
 u+v=r_H,
@@ -231,22 +231,16 @@ a_xu+b_xv=r_B
 \tag{21}
 \]
 
-has a unique solution satisfying
+has a unique solution with
 
 \[
 \boxed{|u|+|v|\ll M_x(r).}
 \tag{22}
 \]
 
-Interpret `u` and `v` as signed target `H`-masses. Equation (17), together with (19)--(22), provides far more prime `H`-mass than is needed in either shell. In `I_x`, choose primes greedily with the sign of `u` until their `H`-sum is the largest one not exceeding `|u|`; do the same in `J_x` for `v`. Since every atom in the two shells has `H(q)=O(1/x)`, the two scalar rounding errors are each `O(1/x)`.
+Interpret `u` and `v` as signed target `H`-masses. By (17), (19), and (22), either shell contains much more total `H`-mass than the required target. In `I_x`, choose distinct primes greedily with the sign of `u` until their `H`-sum is the largest one not exceeding `|u|`; do the same in `J_x` for `v`. Every shell atom has `H(q)=O(1/x)`, so each scalar rounding error is `O(1/x)`.
 
-Across either narrow shell, (14) gives
-
-\[
-A(q)-A(x)=O(\delta_x)
-\]
-
-in `I_x`, and the analogous estimate relative to `A(2x)` in `J_x`. Thus the signed prime vector selected from the two shells leaves a residual `r'=(r_H',r_B')` satisfying
+Across a shell, (14) also gives an `A`-variation of `O(delta_x)`. Therefore the signed prime vector selected from the two shells leaves a residual `r'=(r_H',r_B')` satisfying
 
 \[
 \boxed{
@@ -261,9 +255,7 @@ in `I_x`, and the analogous estimate relative to `A(2x)` in `J_x`. Thus the sign
 \tag{23}
 \]
 
-The total absolute `H`-mass used in this quantization step is `O(M_x(r))`.
-
-This lemma is the only discretization input. It is not a density or continuum approximation of the original Robin extremal problem: it is an explicit statement about selecting distinct **ordinary primes** with coefficient `+1` or `-1` in two concrete shells.
+The total absolute `H`-mass used in this step is `O(M_x(r))`. This is the only discretization lemma needed below.
 
 ## 3. Iteration gives exact two-jet matching with multiplicities `{0,1,2}`
 
@@ -278,7 +270,7 @@ L_j:=\log x_j,
 \tag{24}
 \]
 
-The shells `I_(x_j)` and `J_(x_j)` are pairwise disjoint, and every one lies above `8p`. Start with the repair residual
+The shells `I_(x_j)` and `J_(x_j)` are pairwise disjoint and all lie above `8p`. Start with
 
 \[
 r^{(0)}:=(d_p,b_p).
@@ -292,15 +284,15 @@ M_0:=M_{x_0}(r^{(0)})\ll\frac1{\sqrt p},
 \tag{26}
 \]
 
-which is much smaller than `L_0^(-6)` for large `p`. Apply the two-shell quantizer at `x_0`, subtract its signed prime vector, and repeat at `x_1,x_2,...`.
+which is `o(L_0^(-6))`. Apply the quantizer at `x_0`, subtract its signed prime vector, and repeat at `x_1,x_2,...`.
 
-If
+Writing
 
 \[
 M_j:=M_{x_j}(r^{(j)}),
 \]
 
-then (23) gives
+(23) gives
 
 \[
 M_{j+1}
@@ -310,7 +302,7 @@ L_j^{-4}M_j+
 \tag{27}
 \]
 
-For sufficiently large `p`, the implied constant times `L_j^(-4)` is at most `1/8` for every `j`. The bound `M_j<<L_j^(-6)` is then preserved inductively, so every later shell has enough ordinary primes for the next quantization step. Moreover
+For sufficiently large `p`, the implied constant times `L_j^(-4)` is at most `1/8` for every `j`. The invariant `M_j<<L_j^(-6)` is preserved, so every later shell has enough primes. Moreover
 
 \[
 \boxed{
@@ -322,9 +314,9 @@ M_j
 \tag{28}
 \]
 
-In particular `r^(j)->0`.
+Thus `r^(j)->0`.
 
-Assign coefficient `+1` to every repair prime selected with positive sign and `-1` to every repair prime selected with negative sign. The repair shells are disjoint from one another and from `D_p`, so no prime is ever modified twice. With the initial deletion packet included,
+Assign coefficient `+1` to every repair prime selected with positive sign and `-1` to every repair prime selected with negative sign. Since all shells are disjoint from one another and from `D_p`, no prime is modified twice. With the initial packet included,
 
 \[
 c_q:=m_{Q_p}(q)-1\in\{-1,0,1\},
@@ -332,14 +324,14 @@ c_q:=m_{Q_p}(q)-1\in\{-1,0,1\},
 
 which proves (1).
 
-The absolute `H`-mass used at stage `j` is `O(M_j)`. Hence (28) gives
+The absolute `H`-mass at stage `j` is `O(M_j)`, so
 
 \[
 \sum_q |c_q|H(q)<\infty.
 \tag{29}
 \]
 
-Likewise, all primes at stage `j` are comparable with `x_j`, so
+All stage-`j` primes are comparable with `x_j`, hence
 
 \[
 \sum_q |c_q|B(q)
@@ -349,7 +341,7 @@ Likewise, all primes at stage `j` are comparable with `x_j`, so
 \tag{30}
 \]
 
-Since the residual boundary vector tends to zero, (25), (29), and (30) yield the exact repair identities
+Since the residual boundary vector tends to zero, the repair satisfies
 
 \[
 \sum_{q\notin D_p}c_qH(q)=d_p,
@@ -358,7 +350,7 @@ Since the residual boundary vector tends to zero, (25), (29), and (30) yield the
 \tag{31}
 \]
 
-After restoring the initial negative packet,
+Restoring the initial negative packet gives
 
 \[
 \boxed{
@@ -369,7 +361,7 @@ After restoring the initial negative packet,
 \tag{32}
 \]
 
-By `RE-175`, these are precisely
+By `RE-175`, these are exactly
 
 \[
 D_{Q_p}(1+)=0,
@@ -377,11 +369,11 @@ D_{Q_p}(1+)=0,
 D_{Q_p}'(1+)=-\sum_qc_qB(q)=0,
 \]
 
-so (2) follows with legitimate absolutely convergent boundary sums.
+with both boundary sums absolutely convergent. This proves (2).
 
-## 4. The first repair saturates the RE-180 deletion tariff
+## 4. The first repair attains the RE-180 early-deletion scale
 
-The first quantization stage is more structured than the later ones. Put
+The first stage has a fixed sign pattern. Put
 
 \[
 a_0=A(16p),
@@ -398,7 +390,7 @@ b_0-a_0=\log2+o(1).
 \tag{33}
 \]
 
-Solving the initial real system
+Solving
 
 \[
 u_0+v_0=d_p,
@@ -417,14 +409,14 @@ u_0=d_p-v_0>0,
 \tag{35}
 \]
 
-and therefore
+and hence
 
 \[
 |u_0|\asymp|v_0|\asymp d_p.
 \tag{36}
 \]
 
-The scalar rounding error in either shell is only `O(1/p)=o(d_p)`. Thus the first shell near `16p` duplicates `H`-mass `Theta(d_p)`, while the first shell near `32p` deletes `H`-mass `Theta(d_p)`. Since `H(q)asymp1/p` on both fixed-multiple shells,
+The scalar rounding error in either shell is `O(1/p)=o(d_p)`. Thus the first shell near `16p` duplicates `H`-mass `Theta(d_p)`, while the first shell near `32p` deletes `H`-mass `Theta(d_p)`. Since `H(q)\asymp1/p` on both fixed-multiple shells,
 
 \[
 \boxed{
@@ -439,11 +431,11 @@ p d_p
 \tag{37}
 \]
 
-This is exactly the support scale forced from below by `RE-180`. The second selector-scale deletion set is not merely an abstract escape allowed by that theorem; it can be placed on ordinary primes at a fixed multiplicative distance and completed to exact two-jet matching by a sparse infinite continuation.
+This realizes, in the first negative repair shell, the same selector-scale cardinality that `RE-180` forces from below when the local branch is used. The complete exact control still has infinite support; the claim is sharpness of the **early local scale**, not finiteness of the total repair support.
 
 ## 5. The exact repair remains below every fixed KV relative envelope
 
-Let `W_j` be the total absolute Chebyshev mass of the modifications made in the two stage-`j` shells. Since each selected prime is comparable with `x_j`, while its `H`-weight is comparable with `1/x_j`,
+Let `W_j` be the total absolute Chebyshev mass of the modifications in the two stage-`j` shells. Since each selected prime is comparable with `x_j`, while its `H`-weight is comparable with `1/x_j`,
 
 \[
 W_j\ll x_jL_jM_j.
@@ -469,7 +461,7 @@ Therefore the total absolute modified Chebyshev mass below any `x` is
 \tag{40}
 \]
 
-The initial packet `D_p` contributes only `O(sqrt(p))`, so (40) proves (3), uniformly also inside a partially traversed shell.
+The initial packet contributes only `O(sqrt(p))`, so (40) proves (3), including points lying inside a partially traversed shell.
 
 For every fixed `b>0`,
 
@@ -484,16 +476,16 @@ x e^{-bV(x)}\ge x^{3/4}.
 \tag{41}
 \]
 
-Uniformly for `x>=2p`, the right side dominates both `sqrt(p)log p` and `(log x)^3`. This proves (4). In particular, combining (4) with the ordinary PNT/KV estimate from the line's existing Bellotti anchor shows that `Q_p` itself inherits a fixed KV PNT envelope for every exponent below the ordinary one.
+Uniformly for `x>=2p`, the right side dominates both `sqrt(p)log p` and `(log x)^3` once `p` is sufficiently large. This proves (4). Combining it with the ordinary PNT/KV estimate already anchored in the line also gives a fixed KV PNT envelope for `Q_p` itself for every exponent below the ordinary one.
 
-The construction therefore does not pay for exact two-jet matching by leaving the quantitative source class. Its extra complexity is genuinely in **which ordinary primes are deleted or duplicated**, not in a large aggregate counting error.
+The construction therefore does not buy exact two-jet matching by leaving the quantitative source class. Its extra complexity is in **which ordinary primes are deleted or duplicated**, not in a large aggregate counting error.
 
 ## 6. What this closes and what remains open
 
-**Two boundary jets are not source-rigid even under bounded honest multiplicity.** `RE-173` needed only one exact boundary charge and a one-sign compensating tail. `RE-175` detected that tail with the first slope, and `RE-179`--`RE-180` showed what any two-jet repair must pay. The present construction pays exactly that price and survives. Thus the package
+**Two boundary jets remain non-rigid under bounded honest multiplicity.** `RE-173` needed one exact boundary charge and a one-sign compensating tail. `RE-175` detected that tail with the first slope, and `RE-179`--`RE-180` priced every two-jet repair. The present construction pays the local price and survives. Thus the package
 
 \[
-\text{ordinary primes}
+\text{ordinary-prime support}
 +
  m_Q\in\{0,1,2\}
 +
@@ -506,22 +498,22 @@ The construction therefore does not pay for exact two-jet matching by leaving th
 
 still does not determine the selected finite Robin prefix.
 
-**The RE-180 cardinality tariff is order-sharp, not merely necessary.** The first negative repair shell already has `Theta(sqrt(p)/log p)` distinct deletions. No larger power-scale support is forced by the first two Euler coordinates alone.
+**The second selector-scale deletion set is therefore not itself an obstruction.** Genuine CA/Robin structure would have to forbid its *placement pattern* or couple it to another source quantity; cardinality alone cannot close the matched-control escape.
 
-**The construction does not preserve actual multiplicity one.** It is a matched synthetic source with deletions and duplications. The result therefore strengthens the warning that bounded integer multiplicity is still not the missing ordinary-prime invariant; it does not claim a deformation of the actual prime source within multiplicity one, which would of course leave no freedom.
+**The construction does not preserve actual multiplicity one.** It is a matched synthetic source with deletions and duplications. The theorem says that bounded integer multiplicity is still not the missing ordinary-prime invariant; it does not claim a deformation of the actual prime source while retaining multiplicity one.
 
-**The first slope remains extra information rather than a Robin-native observable.** Exact two-jet non-rigidity says that even granting this extra source coordinate does not close the matched-control escape. A Robin proof still needs either a genuinely selector-native restriction on the placement pattern, a stronger joint source invariant, or enough Euler information to cross the conditioning boundary identified by `RE-174` and `RE-178`.
+**The first slope remains extra information rather than a Robin-native observable.** Exact two-jet non-rigidity says that even granting this extra coordinate does not close the escape. A Robin proof still needs a genuinely selector-native restriction, a stronger joint source invariant, or enough Euler information to cross the conditioning boundary identified by `RE-174` and `RE-178`.
 
-**Higher-dimensional continuation is plausible but not automatic.** The two-shell lemma works because two separated slopes span the two boundary coordinates with uniformly bounded condition number. Matching `K+1` jets would require a controlled `(K+1)`-shell moment matrix together with enough prime mass and rounding precision. `RE-178` warns that shallow scalar jets are exponent-neutral, so merely iterating this construction dimension by dimension would not itself produce a Robin closure.
+**Higher-dimensional continuation is plausible but not automatic.** The two-shell lemma works because two separated slopes span the two boundary coordinates with uniformly bounded condition number. Matching `K+1` jets would require a controlled `(K+1)`-shell moment matrix together with enough prime mass and rounding precision. `RE-178` already warns that shallow scalar jets are exponent-neutral, so merely adding a few coordinates need not produce Robin closure.
 
-The immediate frontier is therefore no longer whether the `RE-180` local branch exists. It does. The remaining source-specific question is whether **genuine CA selector geometry forbids the required interlaced delete/duplicate pattern**, or whether one needs a genuinely joint moment/integrality invariant beyond the first two boundary coordinates.
+The immediate frontier is therefore no longer whether the `RE-180` local branch exists. It does. The source-specific question is whether **genuine CA selector geometry forbids the required interlaced delete/duplicate pattern**, or whether one needs a genuinely joint moment/integrality invariant beyond the first two boundary coordinates.
 
 ## 7. Prior-art and representation audit
 
-The generic mathematical ingredients are classical. Signed and subsum representations of small targets belong to the literature on signed series and achievement sets; nearby references include Armengol Gasull and Francesc Mañosas, *Subseries and signed series*, Communications on Pure and Applied Analysis **18** (2019), 479--492, DOI `10.3934/cpaa.2019024`, and Szymon Glab and Jacek Marchwicki, *Levy--Steinitz theorem and achievement sets of conditionally convergent series on the real plane*, Journal of Mathematical Analysis and Applications **459** (2018), 476--489, DOI `10.1016/j.jmaa.2017.10.034`. Beurling-prime perturbation theory is also broad neighboring literature.
+The generic mathematical ingredients are classical. Signed and subsum representations of small targets belong to the literature on signed series and achievement sets; nearby references include Armengol Gasull and Francesc Mañosas, *Subseries and signed series*, Communications on Pure and Applied Analysis **18** (2019), 479--492, DOI `10.3934/cpaa.2019024`, and Szymon Glab and Jacek Marchwicki, *Levy--Steinitz theorem and achievement sets of conditionally convergent series on the real plane*, Journal of Mathematical Analysis and Applications **459** (2018), 476--489, DOI `10.1016/j.jmaa.2017.10.034`. Beurling-prime perturbation theory is broader neighboring literature.
 
 Those results are not load-bearing here. The proof uses the explicit two-shell quantizer above, ordinary-prime PNT density already anchored in `SOURCES.md`, and the line's own Euler kernels. The prior-art search found no theorem asserting the line-specific conjunction of bounded `{0,1,2}` multiplicity on ordinary prime labels, exact value-and-slope matching at `s=1`, arbitrary fixed KV relative fidelity, and a preserved selector-scale transient Robin excursion.
 
-The representation split is therefore clear. The two-dimensional residual-correction mechanism is generic finite-dimensional approximation. The Robin-specific content is the target vector `(d_p,a_Dd_p)` created by the selector packet, the fixed-multiple prime shells that make the first negative repair have exactly selector-scale cardinality, the Euler boundary interpretation of `(H,B)`, and the fact that no repair appears before the order-one Robin measurement at `8p`.
+The representation split is clear. The two-dimensional residual-correction mechanism is generic finite-dimensional approximation. The Robin-specific content is the target vector `(d_p,a_Dd_p)` created by the selector packet, the fixed-multiple prime shells that make the first negative repair have exactly selector-scale cardinality, the Euler boundary interpretation of `(H,B)`, and the absence of any repair before the order-one Robin measurement at `8p`.
 
 No new external theorem is needed as a load-bearing dependency, so `SOURCES.md` requires no update.
