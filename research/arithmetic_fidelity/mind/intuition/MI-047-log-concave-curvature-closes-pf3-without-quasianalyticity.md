@@ -1,21 +1,29 @@
-# MI-047 — Curvature mass turns smooth positive `PF_3` recognition into a local slope bound
+# MI-047 — Curvature mass plus connected positive-curvature support exactly characterizes smooth `PF_3`
 
-**Evidence level:** exact synthesis from [AF-385](../../findings/AF-385-sampled-solid-minor-hierarchy-certifies-continuum-fixed-order-total-nonnegativity.md), [AF-388](../../findings/AF-388-shrinking-solid-pf3-excludes-quadratic-boundary-contact.md), [AF-389](../../findings/AF-389-multiscale-solid-pf3-excludes-all-finite-order-boundary-contact.md), [AF-390](../../findings/AF-390-quasianalytic-curvature-closes-multiscale-pf3-recognition.md), [AF-391](../../findings/AF-391-log-concave-logarithmic-curvature-forces-order-three-total-nonnegativity.md), [AF-392](../../findings/AF-392-adjacent-curvature-masses-exactly-characterize-smooth-order-three-fidelity.md), and [AF-393](../../findings/AF-393-positive-curvature-pf3-is-exactly-local-differential-fidelity.md).
+**Evidence level:** exact synthesis from [AF-388](../../findings/AF-388-shrinking-solid-pf3-excludes-quadratic-boundary-contact.md) through [AF-394](../../findings/AF-394-connected-curvature-support-completes-smooth-pf3-fidelity.md).
 
-For a positive `C^4` profile `f`, write `q=-(log f)''`. AF-392 expresses continuum order-three total positivity through every adjacent pair of curvature-mass windows. That initially looks stronger than the local differential inequality recovered from shrinking solid minors.
-
-AF-393 shows that there is no extra positive-curvature finite-window information. On the stratum `q>0`, the translation kernel `K_f(x,y)=f(x-y)` is `TN_3` exactly when
+For a positive `C^4` profile `f`, write `q=-(log f)''`. AF-392 expresses continuum order-three total positivity through every adjacent pair of curvature-mass windows. AF-393 shows that on the stratum `q>0` those finite-window conditions contain no information beyond the local inequality
 
 `(log q)'' <= 2q`.
 
-The right coordinate makes the equivalence transparent. Let `Q` be curvature mass, `dQ=q dt`, and set `r=(log q)'`. Then the condition is simply
+The right coordinate is curvature mass. If `dQ=q dt` and `r=(log q)'`, then the condition is simply
 
 `dr/dQ <= 2`.
 
-The AF-392 adjacent-window inequality is the integrated form of this slope bound. Conversely, shrinking the windows differentiates it back to the same inequality. Thus local and finite-window recognition are two presentations of one intrinsic statement once position is measured by accumulated curvature rather than Euclidean distance.
+The AF-392 adjacent-window inequality is its integrated form, and shrinking the windows differentiates it back. Thus positive-curvature local and finite-window recognition are the same intrinsic constraint written at different scales.
 
-This also clarifies the role of AF-391. Log-concavity of `q` is a strong sufficient condition because it makes `r` nonincreasing, but it is not the recognition variable itself. Smooth non-log-concave positive curvatures may still be `TP_3` as long as their slope in curvature mass never exceeds `2`.
+AF-394 supplies the missing global piece. The translation kernel `K_f(x,y)=f(x-y)` is `TN_3` exactly when
 
-The real residual fibre lies where `q=0`. There the coordinate `Q` ceases to be locally invertible, so the local slope formulation becomes singular. AF-388--AF-389 force any zero compatible with the shrinking solid hierarchy to be infinitely flat; AF-390 closes such zeros under flat-jet unique continuation, while AF-391 supplies a different global shape closure. What remains is a boundary-stratum problem: understand whether nontrivial infinitely-flat zero sets admit an exact limiting version of the curvature-mass criterion, or which weaker source hypotheses eliminate them.
+1. `q>=0`;
+2. `{q>0}` is an interval, allowing the empty and unbounded cases;
+3. `(log q)''<=2q` on `{q>0}`.
 
-**Boundary.** This synthesis does not derive the curvature inequality from arithmetic data, classify the `q=0` stratum, claim novelty over the classical `PF_3` literature, or provide a zero-selection theorem. Its durable content is the equivalence of local and finite-window recognition on `q>0` in the intrinsic curvature-mass coordinate.
+The zero-curvature boundary therefore contributes one qualitatively different resource: **component topology**. Local differential information controls the shape inside each positive-curvature region, but it cannot say whether two such regions are parts of one component separated by a zero. A separating zero, even an infinitely-flat one, creates a nonlocal order-three obstruction; a boundary zero of one connected component is allowed.
+
+This completes the multiscale interpretation of AF-388--AF-393. Under shrinking solid `PF_2/PF_3` consistency, `q>=0` and the differential inequality are already forced. The exact residual question is not another Taylor coefficient or another finite-window inequality: continuum `TN_3` holds iff the positive-curvature set is connected.
+
+AF-390 and AF-391 now sit in the correct hierarchy. Quasianalytic flat-jet uniqueness and log-concavity of `q` are sufficient closures because they force an admissible connected topology, but they are not the recognition variable itself. The target permits broader nonquasianalytic behavior as long as the positive-curvature region remains one interval and the intrinsic slope bound holds.
+
+The reusable lesson is concrete. A hierarchy of arbitrarily fine local certificates can recover the complete differential cone relevant to a target and still lose a global discriminator that lives only in **which local regions belong to the same component**. Any compressed arithmetic construction using such certificates must retain or derive that topology explicitly; local resolution cannot manufacture it afterward.
+
+**Boundary.** The characterization is an order-three, source-independent recognition theorem. It does not produce the required solid signs or curvature connectedness from prime data, does not claim novelty over the classical `PF_3` literature, does not extend automatically to higher `PF_k`, and does not provide a Riemann-zero selector.

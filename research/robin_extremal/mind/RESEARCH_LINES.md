@@ -4,7 +4,7 @@ This file holds the current mathematical questions suggested by the durable robi
 
 ## Find a selector-sensitive source invariant between one boundary charge and coefficient-by-coefficient Euler recovery
 
-**Linked intuitions:** `MI-001-robin-failure-requires-self-tangent-half-mass-event-gaps` through `MI-043-kv-weighted-reset-budget-replaces-raw-sign-phase-count`.
+**Linked intuitions:** `MI-001-robin-failure-requires-self-tangent-half-mass-event-gaps` through `MI-044-honest-multiplicity-prices-early-repair-by-deletion-support`.
 
 RE-153--RE-168 identify the Pareto-weighted Chebyshev-deficit destination and quantify how much post-selector Robin motion remains possible under quantitative Korobov--Vinogradov source fidelity. The intrinsic decay length `ell_KV(T)=log T/V(T)` gives the spatial capacity scale: a bounded-multiplicative or subpower region can still carry order-one normalized displacement while enough future capacity remains.
 

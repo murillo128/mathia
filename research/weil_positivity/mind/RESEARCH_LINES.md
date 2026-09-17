@@ -22,8 +22,22 @@ Thus the singular tangent has not escaped fixed scalarization: it has hidden it 
 
 The surviving categories are narrower still. A genuinely new mechanism must use operator-level positivity before scalarization, a boundary/singular construction with **no common fixed state carrying the target square**, nonstationary/basepoint-dependent geometry, a genuinely noncommutative source domain, or an independent arithmetic theorem that derives the quadratic direction rather than selecting it in advance. A singular limit is not an escape if it converges to a fixed boundary readout.
 
+## Use the full Maaß--Selberg finite part, not the positive height boundary square
+
+**Linked intuition:** `MI-047-positive-maass-selberg-boundary-square-can-be-divisor-blind`.
+
+WP-345 tests the direct boundary-square escape left by the Arthur-truncation/Maaß--Selberg program. Differentiating the exact rank-one truncated Eisenstein norm with respect to `tau=log T` gives the pointwise positive source-defined response
+
+`|1+S(r)e^(-ir tau)|^2`.
+
+But the same derivative annihilates the `T`-independent logarithmic-derivative block `m'/m` that carries the explicit-formula divisor. The sign theorem is therefore attached to the boundary phase rather than to the divisor-sensitive finite part.
+
+An explicit meromorphic inner/CDD matched control makes the separation sharp. It preserves reciprocal symmetry and unitary-axis modulus, hence every direct boundary-square inequality, while inserting off-axis zero/pole pairs and changing `m'/m`. Positivity of the height boundary response is therefore **divisor-blind under the hypotheses that prove it**.
+
+This does not close the full automorphic route because the control is not asserted to be automorphically realizable. The surviving question is whether the complete Maaß--Selberg finite part, Euler--Gamma/source realizability, or a genuinely operator-level finite--archimedean truncation supplies an independent restriction that excludes the inner-factor freedom before scalar boundary response is taken. A direct appeal to positivity or monotonicity of the height boundary layer is no longer an open mechanism.
+
 ## Keep source dependence distinct from sign coercivity
 
-WP-341--WP-344 are no-escape theorems for broad stationary transport/readout architectures. They do not prove that every nonlinear, singular or operator construction fails, and they do not prove Weil positivity. Their use is to prevent source labels, operator dimension, adaptive states or singular character tangents from being credited as arithmetic leverage when the sign-relevant square is still exposed by one fixed scalar state or inserted through a chosen source covector.
+WP-341--WP-345 are no-escape theorems for broad stationary transport/readout and direct boundary-square architectures. They do not prove that every nonlinear, singular or operator construction fails, and they do not prove Weil positivity. Their use is to prevent source labels, operator dimension, adaptive states, singular character tangents or a genuine geometric boundary square from being credited as arithmetic leverage when the sign-relevant square is still inserted through a chosen source covector, exposed by one fixed scalar state, or insensitive to divisor-changing matched controls.
 
-The next proposal should state the exact non-dominated/operator-level operation that consumes the source before reduction to a scalar sign, and prove that neither an interior positive scalarization nor a common boundary state reproduces it under matched non-arithmetic generator weights. Otherwise the desired log-square has merely been inserted or exposed rather than generated.
+The next proposal should state the exact non-dominated/operator-level operation that consumes the source before reduction to a scalar sign, and prove either that no interior or boundary scalarization reproduces the target square under matched non-arithmetic weights, or that the full source-realizability structure excludes divisor-changing inner factors for a reason independent of the desired zero sign. Otherwise the desired sign has merely been inserted, exposed or attached to a divisor-blind boundary response rather than generated.

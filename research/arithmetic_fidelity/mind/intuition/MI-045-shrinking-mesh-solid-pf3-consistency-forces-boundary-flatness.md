@@ -1,6 +1,6 @@
-# MI-045 — Shrinking-mesh solid `PF_3` consistency forces infinite flatness at the `PF_2` boundary
+# MI-045 — Shrinking-mesh solid `PF_3` consistency leaves curvature-component topology as the final smooth boundary resource
 
-**Evidence level:** exact synthesis from [AF-383](../../findings/AF-383-one-sided-consecutive-toeplitz-minors-generate-all-placements.md), [AF-385](../../findings/AF-385-sampled-solid-strictness-recognizes-continuum-tnk.md), [AF-387](../../findings/AF-387-connected-support-does-not-repair-nonstrict-solid-pf3-recognition.md), [AF-388](../../findings/AF-388-shrinking-solid-pf3-excludes-quadratic-boundary-contact.md), and [AF-389](../../findings/AF-389-multiscale-solid-pf3-excludes-all-finite-order-boundary-contact.md).
+**Evidence level:** exact synthesis from [AF-383](../../findings/AF-383-one-sided-consecutive-toeplitz-minors-generate-all-placements.md), [AF-385](../../findings/AF-385-sampled-solid-minor-hierarchy-certifies-continuum-fixed-order-total-nonnegativity.md), [AF-387](../../findings/AF-387-connected-support-does-not-repair-nonstrict-solid-pf3-recognition.md), [AF-388](../../findings/AF-388-shrinking-solid-pf3-excludes-quadratic-boundary-contact.md), [AF-389](../../findings/AF-389-multiscale-solid-pf3-excludes-all-finite-order-boundary-contact.md), and [AF-394](../../findings/AF-394-connected-curvature-support-completes-smooth-pf3-fidelity.md).
 
 Fixed-lattice recognition and common-profile multiscale recognition are different information problems. AF-387 shows that on one lattice `PF_2`, connected positive support and nonnegative solid order-three minors can coexist with a negative gapped order-three minor. The failure sits on an interior lower-order degeneracy: zero order-two minors can stop the solid generators from propagating to nonlocal placements.
 
@@ -12,8 +12,14 @@ one has `q>=0`, and every zero of `q` is infinitely flat. If the first nonzero l
 
 The mechanism is stronger than dense sampling. **Cross-scale compatibility preserves the order of contact with a compressed lower-order boundary.** One fixed lattice can hide a gapped negative minor behind a degenerate stratum; an unbounded family of compatible samples of one latent function forces every finite Taylor-order version of that stratum to disappear.
 
-This also makes the role of regularity explicit. For positive real-analytic `f`, infinite flatness at one zero forces `q≡0`; hence either `q>0` everywhere or `f=e^(ax+b)`. In the positive integrable analytic category only the strict alternative survives. In the merely smooth category, however, infinitely-flat zeros remain a genuine unresolved endpoint.
+AF-394 then resolves the smooth endpoint that AF-389 left open. The same shrinking hierarchy already forces the local analytic conditions needed for continuum `TN_3`; the exact remaining condition is
 
-The next recognition boundary is therefore precise: determine whether an infinitely-flat zero of `q` can satisfy the shrinking solid `PF_2/PF_3` hierarchy while some arbitrary-placement continuum order-three minor is negative. A negative answer would remove the last smooth lower-order boundary alias; a positive example would identify the exact information still lost by the multiscale solid certificate.
+`{q>0} is an interval`.
 
-**Boundary.** AF-389 is source-independent recognition theory. It does not prove continuum `TN_3`, does not supply the solid-minor signs for a Riemann-associated kernel, and does not extend automatically to determinant orders above three. Infinite flatness is a necessary boundary condition under the declared hierarchy, not proof that the boundary is empty.
+An infinitely-flat zero is therefore not intrinsically bad. It is admissible when it lies on the boundary of one connected positive-curvature region, but it is fatal when it separates two positive-curvature components. In the latter case nonlocal placement data detect a negative order-three orientation even though every local finite jet at the separating zero can be flat.
+
+This isolates a sharp information hierarchy. Shrinking local certificates recover the full finite-jet boundary geometry and the positive-curvature differential cone, but they do not encode **component membership**. The final smooth order-three resource is global topology, not another derivative, another finite window, or stronger pointwise flatness.
+
+Quasianalytic continuation and log-concavity remain useful sufficient closures because they force the allowed component geometry, but AF-394 shows they are stronger than necessary. The unrestricted smooth target is already characterized once connectedness of positive curvature is supplied.
+
+**Boundary.** This is source-independent recognition theory. It does not derive the sampled solid signs or curvature connectivity from arithmetic data, does not imply RH, and does not establish an analogous component-topology criterion for determinant orders above three. Its durable content is the separation between multiscale recovery of local boundary jets and the global topology still invisible to those local certificates.
