@@ -22,7 +22,7 @@ For a rationally independent positive phase family, the Haar volume of the weigh
 
 `log L_a^avg(eta) >> a exp(r_0/a)`.
 
-NB-194 now closes a genuine part of the specific-block loophole left by those worst-gap theorems. For the actual normalized full von-Mangoldt shell, a positive chord return forces a large complex barycenter, while Vinogradov--Korobov PNT dephasing gives
+NB-194 closes a genuine part of the specific-block loophole left by those worst-gap theorems. For the actual normalized full von-Mangoldt shell, a positive chord return forces a large complex barycenter, while Vinogradov--Korobov PNT dephasing gives
 
 `|C_a(t)| << (1+|t|)^(-1) + (1+|t|) exp(-c V(e^(r_0/a)))`.
 
@@ -32,10 +32,16 @@ Therefore for every fixed positive accuracy there is a deterministic return-free
 
 with inversion scale roughly `a_T~(log T)^(-5/3)(loglog T)^(-1/3)` up to constants. This is a source-dephasing theorem for the particular block, not another syndetic entropy estimate.
 
-The ranges still leave a substantial intermediate regime. The NB-193 guaranteed-block obstruction becomes relevant near the much larger log-log source-width scale, while NB-194 excludes actual positive returns only in the narrower Vinogradov--Korobov corridor. The next theorem should attack this gap directly: strengthen blockwise cancellation for the oscillatory von-Mangoldt shell, price signed/complex aggregate synthesis in a source-safe response norm, or identify a genuinely different high-block construction not obtained by positive recurrence. Weakening the positive recurrence target again is no longer enough.
+NB-195 extends the specific-block information far beyond that pointwise corridor by giving up emptiness and asking how much of the block can recur. The true normalized Euler shell has squared coefficient mass `sum_n w_(n,a)^2 << 1/(a exp(r_0/a))`. Montgomery--Vaughan mean-square dephasing therefore gives, for every fixed `0<eta<1`,
+
+`|{t in [T,2T]: A_a(t)<=eta}|/T <<_(eta,r_0,Delta) exp(-r_0/a)/a + 1/(aT)`.
+
+Hence whenever `a_T T->infinity`, positive true-source returns have vanishing relative measure on the actual block, including the broad intermediate regime where NB-194 gives no pointwise exclusion. This does not rule out a single exceptional return; it changes the surviving positive-recurrence problem into one about isolated near-maximal values of the actual Euler Dirichlet polynomial.
+
+The scale gap is therefore no longer a gap in **bulk** positive recurrence. The next theorem should decide whether isolated positive returns can occur in the remaining coupled regime, using separated-large-values or source-specific pointwise information, or else leave the positive topology and price signed/complex aggregate synthesis in a source-safe response norm. Weakening the positive recurrence target to another average-density statement is no longer enough.
 
 ## Keep source persistence, acquisition cost and destination conditioning separate
 
-NB-190--NB-194 are acquisition theorems in coefficient/phase topology. They do not establish that the true Nyman realized range contains the Poisson-packed dipoles, nor that the approximation problem demands independent recovery of all `K` normalized bands. Conversely, unrestricted mixtures can synthesize those bands, and fixed-`a` recurrence can eventually transplant them to high blocks, but NB-192--NB-193 show that positive recurrence becomes double-exponentially nonuniform as `a->0`, while NB-194 shows that the actual rational-prime shell is uniformly dephased on a narrower high-block corridor.
+NB-190--NB-195 are acquisition theorems in coefficient/phase topology. They do not establish that the true Nyman realized range contains the Poisson-packed dipoles, nor that the approximation problem demands independent recovery of all `K` normalized bands. Conversely, unrestricted mixtures can synthesize those bands, and fixed-`a` recurrence can eventually transplant them to high blocks, but NB-192--NB-193 show that positive recurrence becomes double-exponentially nonuniform as `a->0`; NB-194 shows that the actual rational-prime shell is uniformly dephased on a narrower high-block corridor; and NB-195 shows that outside that corridor positive returns are still sparse in measure under the mild condition `a_TT->infinity`.
 
-Frequency membership, true amplitudes, positive source mass, fanout, representation gain, scalar-mixture total variation, recurrence target volume/effective dimension, filling time, source-specific dephasing and destination conditioning are distinct currencies. A successful continuation must identify which of them is actually bounded by the Nyman construction in the simultaneous `a_T`--`T` regime and then test that bound against a matched control on the realized approximation range.
+Frequency membership, true amplitudes, positive source mass, fanout, representation gain, scalar-mixture total variation, recurrence target volume/effective dimension, filling time, source-specific pointwise dephasing, source-specific mean-square dephasing and destination conditioning are distinct currencies. A successful continuation must identify which of them is actually bounded by the Nyman construction in the simultaneous `a_T`--`T` regime and then test that bound against a matched control on the realized approximation range.
