@@ -18,13 +18,15 @@ AF-400 proves that ordinary regular variation is insufficient when the physical 
 
 AF-403 settles the placement question in the strict interior. For a smooth translation kernel, positivity of the complete initial confluent flag `H_m(t)>0` for every `m<=r` globalizes by extended-complete-Chebyshev theory to strict total positivity of every minor of order at most `r`. Thus fixed-order strict positivity needs no additional placement/topology datum once the whole flag is positive; topology re-enters on degenerate/nonstrict strata where a confluent minor vanishes.
 
-AF-404 then shows that the flag entries are not independent local certificates. The classical Toda/Hankel identity becomes
+AF-404 shows that the flag entries are recursively coupled by the classical Toda/Hankel identity
 
 `H_(m+1) H_(m-1) = -H_m^2 (log H_m)''`.
 
-Inside a positive flag, the next order is therefore present exactly when the current certificate is strictly log-concave. With `q=-(log f)''` and `R_m=H_m/f^m`, the normalized recursion is `R_(m+1)R_(m-1)=R_m^2(mq-(log R_m)'')`. For the full Euler-log profile, where orders two and three are already positive, the entire order-four question is reduced to the scalar inequality `(log R_3)''<3q`. This is an exact reduction, not evidence that order four succeeds; all-order positivity is already known to fail eventually.
+With `q=-(log f)''` and `R_m=H_m/f^m`, the normalized recursion is `R_(m+1)R_(m-1)=R_m^2(mq-(log R_m)'')`. AF-405 now closes the full-Euler order-four gate exactly: `H_1,...,H_4>0` everywhere, so the Euler-log translation kernel is strictly totally positive through order four. A finite signed source with at most three ordered sign changes cannot annihilate four distinct positive real samples, while AF-217 still forces failure at some later finite order. The first possible bad order is therefore at least five.
 
-The live locality problem is therefore three-layered. First declare the physical wall, sampling regime and same-scale source theorem needed to inspect the profile. Then establish the current confluent certificate on that physical source scale. Finally propagate one order at a time through the Toda/log-concavity gate rather than treating every higher determinant as unrelated. The `13/30` all-start and `13/15` density-one boundaries remain technology boundaries, not intrinsic detector constants; the finite-order Toda gate is a separate analytic boundary.
+The next local analytic frontier is correspondingly precise. Since `R_3,R_4>0`, order five is equivalent to `(log R_4)''<4q`; proving or refuting that scalar curvature inequality locates the next step of the finite-order hierarchy. This is separate from conditioning and arithmetic selectivity: AF-405 gives no uniform determinant margin, and its sign regularity holds for arbitrary positive generator norms rather than distinguishing rational primes.
+
+The live locality problem remains layered. First declare the physical wall, sampling regime and same-scale source theorem needed to inspect the profile. Then establish the confluent certificate on that physical source scale. Finally propagate one order at a time through the Toda/log-concavity gate. The `13/30` all-start and `13/15` density-one boundaries remain technology boundaries, not intrinsic detector constants; the finite-order Toda gate is a separate analytic boundary.
 
 ## Separate source identification from zero selection
 
