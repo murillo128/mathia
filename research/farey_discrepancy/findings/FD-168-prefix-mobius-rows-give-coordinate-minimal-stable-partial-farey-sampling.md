@@ -138,7 +138,7 @@ Hence for every fixed `\delta>0`,
 \[
 R\le H^{1/2-\delta}
 \quad\Longrightarrow\quad
-|\mathcal S_{H,R}|=H^{1/2-\delta+o(1)}=o(\sqrt H),
+|\mathcal S_{H,R}|\le H^{1/2-\delta+o(1)}=o(\sqrt H),
 \tag{12}
 \]
 
