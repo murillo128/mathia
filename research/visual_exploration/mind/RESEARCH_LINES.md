@@ -4,7 +4,7 @@ This file holds the current mathematical questions suggested by the durable visu
 
 ## Separate low-frequency moment extraction, arithmetic selectivity and theorem source coordinates
 
-**Linked intuitions:** `MI-029-fixed-margin-pair-correlation-accuracy-must-outrun-packet-conditioning`, `MI-030-low-frequency-arithmetic-jets-are-physical-moments`, `MI-033-leading-null-compensation-can-preserve-a-single-arithmetic-frequency`.
+**Linked intuitions:** `MI-029-fixed-margin-pair-correlation-accuracy-must-outrun-packet-conditioning`, `MI-030-low-frequency-arithmetic-jets-are-physical-moments`, `MI-033-leading-null-compensation-can-preserve-a-single-arithmetic-frequency`, `MI-034-wang-diagonal-is-a-green-potential-of-the-rodgers-prime-measure`.
 
 VIS-259 gives the sharp conditioning cost of an order-`2m` cusp-adapted low-frequency packet: normalized extraction of the first surviving even Taylor coefficient costs total variation `E_m^(-1)b^(-2m)`. VIS-260 propagates Rodgers' fixed-margin theorem error through that same norm. VIS-261 identifies the retained Taylor jet with the corresponding physical-space moment of the Bogomolny--Keating-minus-GUE kernel, and VIS-262 freezes every fixed even moment to an explicit functional `C_(2m)(omega)` of the admissible test weight.
 
@@ -22,11 +22,17 @@ VIS-270 shows that leading-functional cancellation and arithmetic access can be 
 
 VIS-271 identifies the theorem-coordinate mismatch hidden in the proposed Wang transfer. In Wang's short-interval formula the Fourier variable `alpha` corresponds to arithmetic scale `x=T^alpha`. A band at fixed positive `alpha` probes prime powers whose size grows like a power of `T`; a literal fixed prime is asymptotically invisible there. The same fixed prime that sits at fixed Rodgers frequency `log p/(2pi)` corresponds in Wang coordinates to a **shrinking** location `alpha~log p/log T -> 0`.
 
-The representation-side question is therefore no longer merely whether a leading-null packet can see arithmetic data, nor merely whether Wang's fixed-alpha remainder can be sharpened. A successful bridge must preserve the identity of the arithmetic carrier across the theorem's source-coordinate map. It must either derive a transform from Wang's collective moving-prime scale to the fixed Rodgers carrier, or obtain a controlled shrinking-`alpha` regime in which a literal fixed prime remains visible.
+VIS-272 resolves the representation-level part of that mismatch exactly. In the source-native coordinate `q=log x/(2pi)`, Wang's squared diagonal coefficient field is
+
+`A(q)=int exp(-4pi|q-xi|) dmu(xi)`,
+
+where `mu` is precisely the Rodgers weighted prime-power measure. Since `(16pi^2-d_q^2)exp(-4pi|q-xi|)=8pi delta_xi`, the Rodgers source measure is the Green inverse of `A`, and its quadratic carrier is an explicit fourth-order adjoint functional of the Wang diagonal field. The source labels therefore coincide after the correct logarithmic rescaling; the missing object is no longer an abstract transform between the two formulas.
+
+The live bridge is now entirely theorem-level. A fixed Rodgers source window becomes a Wang window of width `O(1/log T)` centered at `alpha_T=log p/log T`. A successful transfer must obtain short-interval asymptotic control uniform in that shrinking regime, or an integrated formulation stable under the Green adjoint pairing. The exact coefficient dictionary does **not** justify differentiating Wang's asymptotic error and does not by itself show that the Rodgers lower-order term survives the averaging theorem.
 
 ## Keep theorem-transfer conditioning, source localization and arithmetic content on separate ledgers
 
-**Linked intuitions:** `MI-031-wang-transfer-allows-moving-tests-only-inside-a-seminorm-and-support-budget`, `MI-032-wang-leading-null-packets-need-diagonal-and-cusp-cancellation-at-no-extra-exponent-cost`, `MI-033-leading-null-compensation-can-preserve-a-single-arithmetic-frequency`.
+**Linked intuitions:** `MI-031-wang-transfer-allows-moving-tests-only-inside-a-seminorm-and-support-budget`, `MI-032-wang-leading-null-packets-need-diagonal-and-cusp-cancellation-at-no-extra-exponent-cost`, `MI-033-leading-null-compensation-can-preserve-a-single-arithmetic-frequency`, `MI-034-wang-diagonal-is-a-green-potential-of-the-rodgers-prime-measure`.
 
 VIS-259--VIS-260 show that extracting a low-frequency coefficient pays the packet norm `b^(-2m)` and therefore requires theorem accuracy that beats the same conditioning scale. This is an analytic-access cost, independent of whether the retained coefficient is source-specific.
 
@@ -38,6 +44,6 @@ VIS-267 makes the packet side of that budget scale-sharp. A smooth compact packe
 
 VIS-268 fixes the remaining leading-functional mismatch. Wang's main term is `g(0)+int |alpha|g(alpha)dalpha`; the VIS-267 moment class canceled the cusp pairing but did not force `g(0)=0`. A diagonal-safe smooth packet can impose both conditions together with the lower even-moment cancellations and unit `2m`-th moment. This extra constraint changes profile constants but **does not change the sharp norm exponents or the gate `q<1/(2m+2)`**.
 
-VIS-269 shows that this generic shrinking-packet interface becomes source-blind once its Rodgers support falls below the first prime-power frequency. VIS-270 supplies the complementary fixed-band construction in that coordinate: the leading functional can vanish while the packet still samples the first arithmetic frequency. VIS-271 now shows that placing a band at a fixed positive Wang `alpha` is not the same source operation. Fixed Wang `alpha` tracks a growing arithmetic scale, whereas a fixed prime moves toward `alpha=0` like `1/log T`.
+VIS-269 shows that this generic shrinking-packet interface becomes source-blind once its Rodgers support falls below the first prime-power frequency. VIS-270 supplies the complementary fixed-band construction in that coordinate: the leading functional can vanish while the packet still samples the first arithmetic frequency. VIS-271 shows why placing a band at a fixed positive Wang `alpha` is not the same source operation. VIS-272 then supplies the exact coefficient-level source dictionary: after logarithmic rescaling the Wang diagonal is a Green potential of the Rodgers prime-power measure.
 
-What Wang still does not provide is a shrinking-`alpha` expansion resolving a fixed-prime carrier, a transform that identifies its moving collective prime scale with the Rodgers coefficient, support whose edge itself approaches `theta`, a remainder automatically below every source-sensitive residual, or four-level covariance. Source-height localization, theorem source coordinates and pair-separation weighting remain distinct resources: a theorem controlling one cannot be transferred by equating its plotting variable with another formula's arithmetic frequency.
+What Wang still does not provide is the theorem-level uniformity needed at `alpha=O(1/log T)` to resolve a fixed prime carrier, an integrated error estimate strong enough to pass through the Green adjoint without unstable differentiation, support whose edge itself approaches `theta`, a remainder automatically below every source-sensitive residual, or four-level covariance. Source-height localization, theorem source coordinates and pair-separation weighting remain distinct resources: an exact representation dictionary does not transfer an asymptotic theorem unless the theorem controls the pulled-back moving scale.

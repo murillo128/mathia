@@ -16,7 +16,7 @@ The surviving categories are narrower still. A genuinely new mechanism must use 
 
 ## Use the full Maaß--Selberg finite part and separate the unramified zeta block from ramified arithmetic inner factors
 
-**Linked intuitions:** `MI-047-positive-maass-selberg-boundary-square-can-be-divisor-blind`, `MI-048-arithmetic-ramification-itself-supplies-off-critical-reciprocal-inner-factors`.
+**Linked intuitions:** `MI-047-positive-maass-selberg-boundary-square-can-be-divisor-blind`, `MI-048-arithmetic-ramification-itself-supplies-off-critical-reciprocal-inner-factors`, `MI-049-unitary-moving-compressions-have-no-berry-trace-escape`.
 
 WP-345 tests the direct boundary-square escape left by the Arthur-truncation/Maaß--Selberg program. Differentiating the exact rank-one truncated Eisenstein norm with respect to `tau=log T` gives the pointwise positive source-defined response `|1+S(r)e^(-ir tau)|^2`, but annihilates the `T`-independent logarithmic-derivative block carrying the divisor. Scalar CDD matched controls preserve every boundary-square inequality while moving that divisor.
 
@@ -34,10 +34,16 @@ WP-349 strengthens this obstruction to arbitrary **positive moving compression a
 
 Therefore every positive state or positive `t`-dependent compression of that already-differentiated local block remains strictly negative. Positive channel motion cannot average the ramified contribution away; summing over bad primes only strengthens the one-sign obstruction.
 
-The live Maaß--Selberg question is now more specific than “use arithmetic rigidity” or “let the channel move.” A successful route must distinguish the **unramified global normalizer from ramified local dressing before the positive scalar readout collapses them into same-sign phase velocities**. A moving projector chosen before differentiation remains genuinely different because differentiation introduces connection/Berry terms; a noncommuting adelic/global operator mechanism could also evade the post-differentiation classification. Any such rule must be source-forced and prove its sign independently of the known meromorphic factorization.
+WP-350 closes the corresponding **unitary pre-differentiation moving-subspace** escape. If a moving compression `B(t)=V(t)^*U(t)V(t)` of the critical-line unitary scattering matrix remains unitary, then its moving range is a reducing sector of `U(t)`. In the compressed phase generator the Berry/connection terms are pure gauge in trace, so
+
+`tr Q_B(t)=tr(V(t)^* Q_U(t) V(t))`.
+
+The same one-sign bad-prime bounds therefore survive every nonzero unitary moving restriction. Pre-differentiation motion cannot strip ramification while preserving only the common unramified phase and inherited unitary scattering structure.
+
+The live Maaß--Selberg question is now categorical rather than a choice of channel motion. A successful route must distinguish the **unramified global normalizer from ramified local dressing before scalarization without remaining inside a unitary reducing compression**. A proper contraction/nonunitary defect, or a genuinely noncommuting adelic/global construction, may still escape the classification, but then ordinary Maaß--Selberg/Wigner--Smith positivity is no longer inherited and a new source-forced sign theorem is required. Algebraic division by the known factorization remains normalization, not positivity.
 
 ## Keep source dependence distinct from sign coercivity
 
-WP-341--WP-349 are no-escape theorems for broad stationary transport/readout and boundary-square/scattering architectures. They do not prove Weil positivity and do not rule out a genuinely arithmetic mechanism that treats ramified and unramified data differently before scalarization. Their use is to prevent source labels, operator dimension, adaptive states, singular tangents, positive geometric norms, hyperbolic self-adjointness, generic congruence arithmetic, or even positive moving post-differentiation channel selection from being credited as sign leverage when the target square is inserted through a chosen covector or the full divisor still contains independent source-defined inner factors.
+WP-341--WP-350 are no-escape theorems for broad stationary transport/readout and boundary-square/scattering architectures. They do not prove Weil positivity and do not rule out a genuinely arithmetic mechanism that treats ramified and unramified data differently before scalarization. Their use is to prevent source labels, operator dimension, adaptive states, singular tangents, positive geometric norms, hyperbolic self-adjointness, generic congruence arithmetic, positive post-differentiation channel selection, or unitary moving pre-differentiation channel selection from being credited as sign leverage when the target square is inserted through a chosen covector or the full divisor still contains independent source-defined inner factors.
 
-The next proposal should specify the exact unramified arithmetic coordinate, the positive pre-scalar structure that isolates it before one-sign ramified phase velocities become inseparable, and the matched ramified control it defeats. Otherwise the desired zeta block has merely been selected algebraically rather than generated by positivity.
+The next proposal should specify the exact unramified arithmetic coordinate, the nonunitary or genuinely noncommuting pre-scalar structure that isolates it, the independent theorem forcing a sign in that new category, and the matched ramified control it defeats. Otherwise the desired zeta block has merely been selected algebraically or by a reducing subspace rather than generated by positivity.
