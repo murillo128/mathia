@@ -20,14 +20,18 @@ The live source-content question remains to freeze a weight faithful to the inte
 
 ## Keep theorem-transfer conditioning, source localization and arithmetic content on separate ledgers
 
+**Linked intuition:** `MI-031-wang-transfer-allows-moving-tests-only-inside-a-seminorm-and-support-budget`.
+
 VIS-259--VIS-260 show that extracting a low-frequency coefficient pays the packet norm `b^(-2m)` and therefore requires theorem accuracy that beats the same conditioning scale. This is an analytic-access cost, independent of whether the retained coefficient is source-specific.
 
-VIS-265 adds a second transfer constraint using Wang's 2026 short-interval Montgomery theorem. On a zero interval of length `T^theta`, fixed pair-frequency support `[-lambda,lambda]` is available only for `lambda<theta`, with normalized error
+VIS-265 applies Wang's 2026 short-interval Montgomery theorem. On a zero interval of length `T^theta`, pair-frequency support `[-lambda,lambda]` requires `lambda<theta`, with normalized fixed-test error controlled by `1/log T + T^(lambda-theta)log T`. Hence a bounded physical source window cannot be reached merely by taking support near the Montgomery edge.
 
-`O(1/log T + T^(lambda-theta) log T)`.
+VIS-266 corrects an overly strong reading of the word “fixed.” The proof admits `T`-dependent test functions as long as the support stays inside a fixed margin `lambda<theta` and their seminorms grow slowly enough. For such a family the normalized error is bounded by
 
-Hence support near the Montgomery edge forces the source-window exponent toward one. The fixed physical tent of VIS-128, and likewise any polylogarithmic source window, has effective exponent tending to zero and is not covered for any fixed positive pair-frequency support. Wang therefore supplies genuine local-height control but does not validate the bounded-window support-edge statistic.
+`O(||g_T'||_inf/L + ||g_T||_inf[1/L + L^(-3/2) + T^(lambda-theta)L + 1/(HL)])`,
 
-Its stated `O(1/log T)` normalized remainder also cannot resolve a deterministic arithmetic coefficient at the same `1/log T` scale. The current route consequently has three independent gates: the packet-conditioning budget, a theorem whose source-window/support class contains the intended statistic, and a remainder smaller than the prime-sensitive residual being extracted. Only after all three are satisfied does the VIS-264 arithmetic carrier become a theorem-valid local support-edge prediction.
+with `L=log T`. Thus logarithmically shrinking or moving packets are theorem-valid when their derivative/amplitude cost fits this budget. For a packet of width `b=L^(-q)` and amplitude `b^(-A)`, a sufficient local condition is `q(A+1)<1`.
 
-Source-height localization and pair-separation weighting must remain distinct. A theorem controlling one cannot be transferred by identifying its window with the other. Moving-edge uniformity and four-level covariance remain further gates beyond the fixed two-level analysis.
+The transfer barrier is therefore not “the theorem only accepts fixed tests.” It is a **three-coordinate admissibility region**: fixed Fourier-support margin, test-seminorm growth and theorem remainder relative to the arithmetic signal. A family may move or shrink while remaining inside that region. What Wang still does not provide is support whose edge itself approaches `theta`, a polylogarithmic physical source window with fixed positive pair-frequency support, or a remainder automatically below every `1/L` arithmetic residual.
+
+Source-height localization and pair-separation weighting remain distinct. A theorem controlling one cannot be transferred by identifying its window with the other. Moving-edge uniformity and four-level covariance remain further gates beyond the current two-level analysis.

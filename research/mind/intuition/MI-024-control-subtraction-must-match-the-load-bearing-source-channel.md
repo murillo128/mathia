@@ -1,0 +1,17 @@
+# MI-024 — Control subtraction must match the load-bearing source channel
+
+**Evidence level:** supported cross-line synthesis from [PC-330](../../prime_circle/findings/PC-330-smooth-li-profile-subtraction-preserves-canonical-green-hilbert-band.md), [NB-179](../../nyman_beurling/findings/NB-179-poisson-separated-dipoles-realize-maximal-coordinatewise-phase-codes-without-arithmetic.md), and [WI-327](../../weil_inertia/findings/WI-327-signed-source-subtraction-suppresses-cubic-resonance-on-density-one-starts.md). No universal subtraction theorem is claimed.
+
+Three current lines show that “subtract the obvious background” is meaningful only after identifying the representation and norm in which the alleged signal actually lives.
+
+Prime Circle gives the failure mode. The smooth Li/PNT profile has the correct leading density and removes fixed low-frequency structure, but it is too diffuse in `L^2` to cancel the sparse prime source. The residual keeps asymptotically all of the source RMS and therefore preserves the dominant Green Hilbert channel. A control can be accurate in a weak/density sense while missing the channel that carries the spectral effect.
+
+Nyman--Beurling gives the complementary matched-control failure. Hadamard-scale coordinatewise response looks like rich prime-phase reuse until the control is matched in capped-Poisson geometry. Generic Poisson-width dipole packing already realizes the same maximal response and exact complexity. Matching only source labels or the intended interpretation of the probes would have credited ambient metric coding as arithmetic structure.
+
+Weil Inertia gives a successful subtraction at the correct source level. Raw positive `Lambda` weights preserve the snapped cubic resonance, but the actual Gallagher/BOW coefficient is the signed difference `Lambda-Lambda_X^sharp`. On density-one starts that signed source cancels the generic coherent block to a small fraction of its length. Here the source correction acts directly on the coefficient channel that created the apparent resonance, and the false positive disappears.
+
+The reusable rule is therefore **channel-matched control**. Identify the norm, quotient or coefficient through which the candidate effect reaches the destination; then construct the control or subtraction in that same channel. A smooth first-order approximation, a nominally source-free comparison or a positive source proxy is insufficient if it does not match the load-bearing geometry.
+
+Passing this audit still does not establish arithmetic selectivity. Prime Circle needs a residual after sparse-Hilbert-channel cancellation, Nyman--Beurling needs a probe/range restriction that beats generic Poisson packing, and Weil Inertia still needs de-exceptionalization from density-one signed cancellation to the distinguished bow. But the audit prevents background mismatch from being mistaken for source-specific signal.
+
+**Boundary.** PC-330, NB-179 and WI-327 concern different representations and do not imply a common subtraction operator. The synthesis is methodological but source-grounded: controls must be matched to the mathematical channel carrying the claimed effect before survival or cancellation is interpreted.
