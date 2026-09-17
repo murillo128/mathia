@@ -2,29 +2,31 @@
 
 This file holds the current mathematical questions suggested by the durable Farey-discrepancy intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Push quantitative prime-extension rigidity beyond deletion-only sources
+## Push quantitative prime-extension rigidity to its real sparsity boundary
 
 **Linked intuitions:** `MI-001-cumulative-farey-discrepancy-is-mertens-energy` through `MI-028-sparse-midpoint-rigidity-comes-from-cross-coordinate-multiplicativity-not-coefficient-fidelity`.
 
 The observation geometry is sharply source-class relative. Complete Farey fields and consecutive midpoint histories are exactly invertible over unrestricted formal sources. Sparse geometric horizons become target-rigid inside the bounded squarefree multiplicative cone, while FD-175--FD-179 construct permanent deletion-only controls that match every dyadic midpoint despite agreeing with Möbius through essentially the whole squarefree-rank range.
 
-FD-180 now turns the previously qualitative missing relation into an exact rate threshold for that deletion-only class. If the deleted set `S` is subpolynomial and primes remain physical, its prime-extension defect boundary satisfies
+FD-180 identified the first quantitative cross-coordinate separator for those deletion-only controls. FD-181 now removes the fragile parts of that statement. For an arbitrary squarefree-supported source `a`, put `delta=a-mu`, let `S` be the support of `delta`, and define the true prime-extension energy
 
-`B_a(x)=(C_S+o(1))x/log x`,  `C_S=sum_(n in S)1/n`.
+`M_(a,q)(x)=sum_((n,pn) in E_x) |a(pn)-a(p)a(n)|^q`.
 
-Normalized over all squarefree prime-extension edges, the finite-`L^q` multiplicativity defect is therefore
+If `S(x)=o(x/log x)`, with arbitrary signed amplitudes and even allowing prime coordinates themselves to move, then
 
-`((zeta(2)C_S+o(1))/(log x loglog x))^(1/q)`.
+`liminf_(x->infinity) (log x/x) M_(a,q)(x) >= sum_(n in S) |delta(n)|^q/n`.
 
-Hence an `o((log x loglog x)^(-1/q))` relation defect forces `S` empty, whereas merely requiring average multiplicativity to vanish still permits the exact dyadic-null control. The line has therefore found a weaker-than-full-multiplicativity separator, but only in a narrow source fibre.
+Consequently an `o((log x loglog x)^(-1/q))` normalized finite-`L^q` relation defect still forces `a=mu`. On the bounded subpolynomial fibre with physical primes, the lower bound is an exact first-order asymptotic and recovers FD-180 with the weighted reciprocal perturbation mass in place of deletion count.
 
-The live source question is to preserve this quantitative boundary principle under a broader admissible class: signed perturbations, compensating edits, or sources whose prime coordinates are not fixed can cancel or relocate the simple edge defect. A useful next relation should still force every sparse midpoint repair to expose a non-negligible relational boundary for an arithmetic reason, not merely because deletion-only errors cannot cancel.
+The live source question has therefore moved to the actual prime-fan scale. Is `S(x)=o(x/log x)` close to optimal? At support size comparable to `x/log x`, a source has enough changed coordinates in principle to corrupt an entire prime fan. Constructing a dyadic-null control there with subcritical relation energy, or proving that some stronger arithmetic obstruction survives, would identify the true cardinal threshold. Dense but tiny-amplitude perturbations require a weighted replacement for support sparsity and are a separate escape.
+
+More importantly, prime-extension energy is still an added source-faithfulness observable. The Farey program needs a source-native bridge showing that a natural Farey observation family controls a cross-coordinate relation at the required rate. Without such a bridge, FD-180--FD-181 are coercivity results for an augmented source model, not Franel--Landau estimates.
 
 Inside the genuinely multiplicative cone, the finite certification bound for geometric ladders remains quantitatively crude and may admit sharper orbit-hitting estimates. Pairwise sparse inversion also remains distinct from one-target rigidity.
 
 ## Apply information budgets only after fixing source class, observation family and destination
 
-The same midpoint coordinate can encode the full source when observed through changing consecutive horizons, become sparse-target-rigid under multiplicativity, and retain a permanent kernel under deletion-only sources that are coordinatewise indistinguishable from Möbius outside an `o(first-correction)` extremal cap. FD-180 adds that even the phrase “approximately multiplicative” is meaningless without a rate and a relation graph: the dyadic-null source has vanishing average prime-extension defect, but exactly at the non-rigid boundary scale.
+The same midpoint coordinate can encode the full source when observed through changing consecutive horizons, become sparse-target-rigid under multiplicativity, and retain a permanent kernel under deletion-only sources that are coordinatewise indistinguishable from Möbius outside an `o(first-correction)` extremal cap. FD-180--FD-181 add that even the phrase “approximately multiplicative” is meaningless without a rate, a relation graph and a source sparsity model: exact dyadic-null sources can have vanishing average prime-extension defect, yet any `o(x/log x)` perturbation support is rigid once the defect beats the explicit `(log x loglog x)^(-1/q)` boundary.
 
 Any lower bound should first declare whether it concerns unrestricted recovery, one-target testing, pairwise recovery or quotient recovery; whether changing horizon counts as a new operator; the source class and its cross-coordinate laws; the relation graph and normalization; and the observation/noise topology. Only then do rank, sample count, inverse modulus or information capacity become meaningful currencies.
 
