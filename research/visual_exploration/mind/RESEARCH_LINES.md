@@ -30,8 +30,18 @@ VIS-266 corrects an overly strong reading of the word “fixed.” The proof adm
 
 `O(||g_T'||_inf/L + ||g_T||_inf[1/L + L^(-3/2) + T^(lambda-theta)L + 1/(HL)])`,
 
-with `L=log T`. Thus logarithmically shrinking or moving packets are theorem-valid when their derivative/amplitude cost fits this budget. For a packet of width `b=L^(-q)` and amplitude `b^(-A)`, a sufficient local condition is `q(A+1)<1`.
+with `L=log T`.
 
-The transfer barrier is therefore not “the theorem only accepts fixed tests.” It is a **three-coordinate admissibility region**: fixed Fourier-support margin, test-seminorm growth and theorem remainder relative to the arithmetic signal. A family may move or shrink while remaining inside that region. What Wang still does not provide is support whose edge itself approaches `theta`, a polylogarithmic physical source window with fixed positive pair-frequency support, or a remainder automatically below every `1/L` arithmetic residual.
+VIS-267 now makes the packet side of that budget scale-sharp. A smooth compact packet of width `b` with vanishing lower even moments and normalized `2m`-th moment must satisfy
 
-Source-height localization and pair-separation weighting remain distinct. A theorem controlling one cannot be transferred by identifying its window with the other. Moving-edge uniformity and four-level covariance remain further gates beyond the current two-level analysis.
+`||g_b||_inf \gtrsim b^(-(2m+1))`,  `||g_b'||_inf \gtrsim b^(-(2m+2))`,
+
+and these exponents are attained by scaled smooth profiles. Feeding those unavoidable seminorms into the Wang bound gives the exact sufficient shrinking-window gate
+
+`1/(L b^(2m+2)) -> 0`.
+
+For `b=L^(-q)`, this is `q<1/(2m+2)`; in particular the quadratic packet needs `q<1/4` and the quartic packet `q<1/6`. The second support-margin remainder is then automatically negligible for fixed `lambda<theta`.
+
+The transfer barrier is therefore a **three-coordinate admissibility region** with a sharp moment-dependent seminorm face: fixed Fourier-support margin, unavoidable packet seminorm growth, and theorem remainder relative to the arithmetic signal. A family may move or shrink while remaining inside that region, but normalized high-moment extraction cannot shrink arbitrarily fast even before arithmetic selectivity is considered.
+
+What Wang still does not provide is support whose edge itself approaches `theta`, a polylogarithmic physical source window beyond this seminorm gate, a remainder automatically below every arithmetic residual, or four-level covariance. Source-height localization and pair-separation weighting also remain distinct: a theorem controlling one cannot be transferred by identifying its window with the other.
