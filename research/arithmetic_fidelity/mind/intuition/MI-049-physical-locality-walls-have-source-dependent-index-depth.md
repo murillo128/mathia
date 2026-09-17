@@ -1,8 +1,8 @@
 # MI-049 — Physical locality walls have source-dependent index depth
 
-**Evidence level:** exact synthesis from [AF-395](../../findings/AF-395-fixed-successor-radius-misses-disconnected-curvature-on-prime-log-meshes.md) through [AF-399](../../findings/AF-399-regular-variation-converts-physical-locality-walls-into-successor-resource-laws.md). The regular-variation conversion is exact within the stated asymptotic hypotheses; no detector theorem is transferred between source families.
+**Evidence level:** exact synthesis from [AF-395](../../findings/AF-395-fixed-successor-radius-misses-disconnected-curvature-on-prime-log-meshes.md) through [AF-400](../../findings/AF-400-regular-variation-does-not-control-shrinking-locality-walls.md). The fixed-wall conversion and the moving-wall counterexample/repair are exact within their stated asymptotic hypotheses; no detector theorem is transferred between source families.
 
-A locality threshold should first be stated in the source's intrinsic physical coordinate and only then converted into a combinatorial index budget. If an increasing source scale `a_N` is regularly varying with index `rho>0`, then a fixed logarithmic reach `h` corresponds to successor depth
+A locality threshold should first be stated in the source's intrinsic physical coordinate and only then converted into a combinatorial index budget. If an increasing source scale `a_N` is regularly varying with index `rho>0`, then a **fixed** logarithmic reach `h` corresponds to successor depth
 
 `B_N(h)/N -> exp(h/rho)-1`.
 
@@ -10,14 +10,18 @@ When the source admits a locally uniform second-order expansion
 
 `log(a_floor(lambda N)/a_N)=rho log lambda + epsilon_N psi(lambda)+o(epsilon_N)`,
 
-with `N epsilon_N -> infinity`, the same physical wall acquires the source-dependent correction
+with `N epsilon_N -> infinity`, the same fixed physical wall acquires the source-dependent correction
 
 `B_N(h)=(lambda_*-1)N-[lambda_* psi(lambda_*)/rho]N epsilon_N+o(N epsilon_N)`,
 
-where `lambda_*=exp(h/rho)`. Thus the physical wall is invariant while its index depth records the density law of the source coordinates.
+where `lambda_*=exp(h/rho)`. Thus a fixed physical wall is invariant while its index depth records the density law of the source coordinates.
 
-The prime-log `PF_3` boundary is one specialization. For `a_N=p_N`, `rho=1`, `h=1` and the prime-density expansion, the fixed physical reach one becomes the `(e-1)N` successor wall with the `-eN/log N` and later prime-density corrections found in AF-396--AF-398. AF-397's one-mesh overhang remains the detector-side margin: the source-density law locates the wall, while the determinant argument decides how much physical overhang is sufficient to cross it.
+AF-400 adds a scale-matching boundary that ordinary regular variation does not see. Regular variation controls fixed multiplicative ratios; it does **not** control a shrinking reach `h_N -> 0`. There are smooth increasing regularly varying scales for which `B_N(h_N)/(N h_N)` has different subsequential limits. A sufficient repair is the local differential law `x f'(x)/f(x) -> rho`: if also `N h_N -> infinity`, then
 
-The reusable rule is therefore: **do not treat successor count as an intrinsic locality resource**. State the physical relation first, then pull it back through the source coordinate map. Finer source density can change the number of indices needed to realize the same mathematical reach without changing the underlying locality threshold at all.
+`B_N(h_N) ~ N h_N/rho`.
 
-**Boundary.** AF-399 assumes fixed `h`, regular-variation index `rho>0`, and enough uniformity for the stated second-order expansion. It does not cover moving physical walls, rapidly varying or index-zero scales, supply a determinant detector by itself, or show that higher-order total-positivity problems have the same topological obstruction.
+For primes the exact pullback is `B_N(h)=pi(e^h p_N)-N`. The prime number theorem with an error smaller than the requested shrinking reach recovers the expected `N h_N` law, and the Korobov--Vinogradov error is strong enough for every polylogarithmically shrinking `h_N` covered in AF-400. This is a source-density theorem, not evidence that the `PF_3` topology wall itself shrinks.
+
+The reusable rule is therefore two-stage. **Define the physical relation first, then demand source-coordinate control at the same scale at which that relation is being probed.** Fixed-wall questions may need only regular variation; moving-wall questions need a matching local modulus. Successor count is never an intrinsic locality resource by itself.
+
+**Boundary.** AF-399 treats fixed `h`; AF-400 proves that this cannot simply be extrapolated to arbitrary `h_N -> 0`. The derivative criterion is sufficient rather than claimed necessary. None of these results supplies a shrinking `PF_3` detector wall, treats index-zero/rapidly varying scales in general, or proves that higher-order total-positivity problems have the same topology/resource split.

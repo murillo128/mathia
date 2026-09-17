@@ -4,7 +4,7 @@ This file holds the current mathematical questions suggested by the durable Möb
 
 ## Work inside the forced half-loaded source band with joint information, energy, inverse-conditioning, access-capacity and destination-relative reliability control
 
-**Linked intuitions:** `MI-013-bost-connes-regularity-needs-an-intermediate-transverse-category` through `MI-054-reliability-is-priced-by-the-destination-cut-not-output-size`.
+**Linked intuitions:** `MI-013-bost-connes-regularity-needs-an-intermediate-transverse-category` through `MI-055-channel-information-forces-an-extensive-exact-source-boundary-before-reliability`.
 
 MC-307--MC-328 reduce the reciprocal endpoint to a character/source geometry with a quartic common-radical floor. Near saturation, almost all logarithmic source mass lies in columns of occupancy `R/2+o(R)`, where nonnegative endpoint-polynomial weights of degree `o(R)` are blind.
 
@@ -22,7 +22,7 @@ MC-348 removes the raw-coordinate acquisition model itself. For an arbitrary com
 
 whenever average Hamming error tends to zero, with explicit even/odd-rank constants. No transcript factorization, query syntax, finite alphabet, dimension or adaptive structure is assumed. Raw-coordinate protocols become corollaries by upper-bounding `mathfrak J` with their accumulated query divergence; noisy joint Euclidean encodings pay through source-edge Dirichlet energy.
 
-MC-349 now makes the reliability theorem destination-relative. For a quotient `q` of the source, let `E_q` be the neighboring-state edges on which `q` changes, `kappa_q` their average cut degree, `Delta_q` their maximum cut degree, and `mathfrak J_q` the source-averaged symmetrized KL carried only by those cut edges. If the destination error is `p_q`, then
+MC-349 makes the reliability theorem destination-relative. For a quotient `q` of the source, let `E_q` be the neighboring-state edges on which `q` changes, `kappa_q` their average cut degree, `Delta_q` their maximum cut degree, and `mathfrak J_q` the source-averaged symmetrized KL carried only by those cut edges. If the destination error is `p_q`, then
 
 `p_q >= (kappa_q/(4 Delta_q)) exp(-mathfrak J_q/kappa_q)`,
 
@@ -32,7 +32,15 @@ so
 
 Thus a one-bit endpoint can still require extensive reliability when its cut crosses `Theta(R)` source directions, while a high-dimensional source may have a cheap destination if the quotient is constant along almost all neighboring directions. Output size, source dimension and full-vector reconstruction cost are not substitutes for destination-cut geometry.
 
-For endpoint dephasing this leaves a sharply stated arithmetic problem. First identify the actual destination quotient of the reciprocal source and its cut geometry inside the admissible source graph. Then bound the complete analytic transcript's divergence on exactly those cut edges using the resources genuinely supplied by the construction. A full-vector `Omega(R log(1/bar p))` tariff is justified only when the endpoint really requires that many neighboring source directions to remain distinguishable.
+MC-350 identifies the canonical exact channel-law quotient `q_Y`: source states are equivalent precisely when they induce the same complete transcript law. The information floor from MC-340 forces this quotient to have an extensive source-graph cut. Near the matched-filter floor essentially every local source direction must cross the exact channel boundary. Exact distinction alone, however, left open the possibility that neighboring transcript laws on those cut edges were arbitrarily close.
+
+MC-351 closes that lower-bound loophole. For the same source-natural graph, the all-edge symmetrized transcript-KL budget satisfies a dimension-free-defect inequality of the form
+
+`mathfrak J >= c I(X;Y)-O(1)`.
+
+In even rank one has exactly `mathfrak J_1 >= 2[I(X;Y)-Gamma_R]_+` with `Gamma_R<2 log 2`; the odd pair-flip source has the analogous linear bound up to an `O(1)` puncture defect. Non-cut channel-quotient edges have identical transcript laws and zero divergence, so this entire budget is already supported on the exact channel cut. Bounded-energy constant-factor dephasing therefore forces `mathfrak J=Omega(R)`, while exact matched-energy dephasing makes neighboring source rows mutually singular and gives infinite edge KL.
+
+The lower-bound side of the finite-source information problem is therefore substantially closed. The live arithmetic question is now **affordability**: identify the actual endpoint quotient when it is stricter or coarser than `q_Y`, and upper-bound the same source-edge transcript divergence using only the coefficient energy, bandwidth, precision, regularity or other analytic resources genuinely available to the proposed Möbius/endpoint architecture. A sublinear analytic upper bound would contradict the compulsory `Omega(R)` tariff; a linear or larger budget would leave the architecture alive.
 
 ## Repair probabilistic Möbius comparators only after exact-stratum and algebraic-collapse gates
 
@@ -44,4 +52,4 @@ MC-318 shows that a probabilistic Möbius route can fail before delicate asympto
 
 Source loading, common-modulus analytic horizon, placement relative to energy compression, rowspace rank, total coefficient energy/conditioning, cross-mode variation, coordinate degree, own-phase access, quotient reconstruction cost, per-coordinate maximal correlation, joint transcript mutual information, intrinsic source dependence, accessed source-coordinate count, adaptive query policy, per-access channel capacity, target reconstruction error, accumulated query divergence, source-edge transcript divergence, destination-cut degree/geometry, destination-cut transcript divergence, source-graph Dirichlet energy, transcript metric dimension/spread, forward source regularity, inverse distinguishability/precision, declared readout noise/SNR and source-natural coupling are different resources.
 
-MC-338--MC-349 identify the current invariant endpoint chain: admitted observations determine joint source information; source information and coefficient energy bound achievable dephasing; a metric realization must pay distinguishable-state packing; declared noise converts hidden precision into capacity; feedback cannot increase per-access memoryless capacity; and vanishing destination error has a logarithmic reliability price on the source edges that actually cross the destination quotient. A useful arithmetic theorem must first identify that quotient and then control the cut-relative currencies required by the actual endpoint.
+MC-338--MC-351 identify the current invariant endpoint chain: admitted observations determine joint source information; source information and coefficient energy bound achievable dephasing; a metric realization must pay distinguishable-state packing; declared noise converts hidden precision into capacity; feedback cannot increase per-access memoryless capacity; destination reliability has a logarithmic price on the source edges that cross the destination quotient; and, even before a decoder/reliability target is specified, the mutual information required by bounded-energy dephasing already forces an extensive aggregate KL budget across the exact channel-law cut. A useful arithmetic theorem must now control the affordability of that same edge budget in the actual analytic architecture.

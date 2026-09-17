@@ -2,7 +2,7 @@
 
 This file holds the current mathematical questions suggested by the durable prime-lattice intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Prove uniform state boundedness now that it closes the first-prime source gate
+## Move beyond the first-prime gate after uniform jump-form boundedness
 
 **Linked intuitions:** `MI-016-weil-form-observability-is-stronger-than-moment-observability` through `MI-028-uniform-state-boundedness-collapses-the-first-prime-gate`.
 
@@ -20,16 +20,18 @@ PL-335 supplies the missing odd-sector mechanism. For the lowest odd threshold s
 
 Thus the canonical fixed-threshold half-log amplitude cannot collapse on the lowest odd branch; whenever the matched quotient exists, `C_0>0`. The fixed `C_0!=0` gate is closed in the RH-relevant odd sector without claiming a positivity-preserving completed semigroup.
 
-PL-336 reduces the remaining moving first-prime burden to one concrete state-space estimate. If the normalized simple odd eigenbranch is uniformly bounded in `L^infty` as `delta->0`, the exact eigen-equation gives `S_delta=O(1)`; the source equation supplies the family-uniform endpoint remainder; PL-330/PL-332 transport `C_delta->C_0`; and PL-335 gives `C_0>0`. Hence the PL-329 ratio tends to zero and the favorable first-prime reflected sign follows.
+PL-336 reduced the remaining moving first-prime burden to one concrete state-space estimate. If the normalized simple odd eigenbranch were uniformly bounded in `L^infty` as `delta->0`, the exact eigen-equation would give `S_delta=O(1)`; the source equation would supply the family-uniform endpoint remainder; PL-330/PL-332 would transport `C_delta->C_0`; and PL-335 would give `C_0>0`.
 
-The first-prime frontier is therefore no longer a separate source-amplitude problem plus an independent endpoint-noncollapse problem. It is principally the **uniform `L^infty`/concentration problem for the actual normalized odd branch**. No current theorem supplies that bound, and `L^2`, graph-topology or any fixed logarithmic seminorm control is too weak. The next useful advance must prove uniform state boundedness or replace it with another estimate strong enough to imply the same source/remainder control without assuming away the compressed first-prime layer.
+PL-337 proves that state-space estimate on compact aperture intervals and bounded eigenvalue windows. The active prime translations can be written as positive atomic jump Dirichlet forms plus bounded scalar shifts, so the weakly singular logarithmic-Laplacian boundedness argument survives the prime-power activation jumps. Normalized eigenstates are uniformly bounded in `L^infty`. Consequently `S_delta=O(1)`, the endpoint remainder is uniform, `C_delta->C_0>0`, and the PL-329 ratio tends to zero. The favorable first-prime reflected sign therefore holds for sufficiently small `delta` on the selected lowest odd branch.
+
+The first-prime concentration obstruction is thus closed. The next arithmetic frontier begins **after** first-prime activation: later prime-power translations may create new correlation-sign, branch-ordering or multi-channel tail questions that are not consequences of the single first-prime argument. Any continuation should identify which part of the PL-337 jump-form boundedness scales uniformly across those activations and which new sign mechanism is actually required.
 
 ## Keep fixed-window certificates and scalable tail geometry separate
 
 PL-328 records a non-peer-reviewed, not independently reproduced computer-assisted source claiming full complex-test Weil coercivity at `a=17/16`, with active prime powers `2,3,4,5,7,8`. Conditional on independent validation it would certify every smaller aperture through the common-form dictionary, but it is not reproduced Mathia evidence.
 
-Its structural warning remains relevant: beyond the `8` threshold, dropping frequency-dependent positive tail information creates a phase-locked negative high-frequency defect that no fixed bounded compact correction repairs. The first-prime state-boundedness problem and later multi-channel tail retention are different interfaces; a global theorem must control both.
+Its structural warning remains relevant: beyond the `8` threshold, dropping frequency-dependent positive tail information creates a phase-locked negative high-frequency defect that no fixed bounded compact correction repairs. The now-closed first-prime state-boundedness problem and later multi-channel tail retention are different interfaces; a global theorem must control both.
 
 ## Keep transport, asymptotic uniqueness, operator positivity and destination orientation separate
 
-The topology hierarchy is now explicit. Norm-resolvent/graph continuity transports the branch; every fixed logarithmic seminorm still misses the shrinking sign margin; a uniform state bound would control the forcing and supply the endpoint remainder needed to transport the asymptotic coefficient. PL-333--PL-334 show that generic full/even Markov positivity fails at the threshold, while PL-335 shows a state-specific **antisymmetric** maximum/Hopf mechanism nevertheless forces the odd threshold boundary amplitude to be positive. PL-336 links these ingredients conditionally: the missing bridge is quantitative concentration control of the moving state, not another fixed-threshold positivity principle.
+The topology hierarchy is now explicit. Norm-resolvent/graph continuity transports the branch; fixed logarithmic seminorms miss the shrinking sign margin; PL-337 supplies the uniform state bound that controls the forcing and endpoint remainder; and PL-335 fixes the limiting odd boundary coefficient. PL-333--PL-334 still show that generic full/even Markov positivity fails at the threshold, while PL-335 supplies a state-specific **antisymmetric** maximum/Hopf mechanism. The first-prime bridge no longer lacks concentration control. What remains is to determine how much of this architecture survives when additional arithmetic jump channels activate and the destination is no longer governed by one isolated reflected sign.

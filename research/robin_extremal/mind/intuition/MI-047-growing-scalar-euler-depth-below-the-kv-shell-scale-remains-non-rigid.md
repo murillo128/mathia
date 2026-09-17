@@ -1,19 +1,21 @@
-# MI-047 — Growing scalar Euler depth below the KV shell scale remains non-rigid
+# MI-047 — Growing scalar Euler depth up to the KV shell scale remains non-rigid
 
-**Evidence level:** exact constructive synthesis from RE-173, RE-178, RE-182 and [RE-184](../../findings/RE-184-growing-euler-jet-depth-below-kv-shell-scale-remains-nonrigid.md). The stated growing-depth range is sufficient, not claimed sharp.
+**Evidence level:** exact constructive synthesis from RE-173, RE-178, RE-182, [RE-184](../../findings/RE-184-growing-euler-jet-depth-below-kv-shell-scale-remains-nonrigid.md), and [RE-185](../../findings/RE-185-chebyshev-shell-interpolation-removes-the-growing-jet-log-loss.md). The constant-fraction KV range is sufficient, not claimed sharp.
 
 The failure of scalar Euler data is not confined to fixed dimension. Let
 
 `V(p)=(log p)^(3/5)/(log log p)^(1/5)`.
 
-RE-184 constructs ordinary-prime-supported `{0,1,2}` controls matching every Euler boundary derivative through a depth `K(p)` whenever
+RE-184 already constructed ordinary-prime-supported `{0,1,2}` controls matching every Euler boundary derivative through depth `K` when `K log(K+2)=o(V(p))`, while preserving every fixed Korobov--Vinogradov source envelope and an order-one transient Robin displacement. RE-185 shows that the `log K` loss was not source rigidity but a basis-conditioning artifact.
 
-`K(p) log(K(p)+2)=o(V(p))`,
+After normalizing the logarithmic repair shell and using a Chebyshev-type interpolation basis, the repair overhead becomes `exp(O(K))`. There is therefore an absolute `c_*>0` such that every
 
-while preserving every fixed Korobov--Vinogradov source envelope and an order-one transient Robin displacement. In particular `K(p)=floor((log p)^(1/2))` is already admissible.
+`1 <= K <= c_* V(p)`
 
-The mechanism is quantitative shell interpolation. Recentring the Euler jets keeps the Vandermonde response controlled, and the growing interpolation overhead is only `exp(O(K log K))`; KV-wide prime shells still provide enough honest source mass for exact infinite-tail compensation. Thus **unbounded scalar dimension is not itself a source-rigidity mechanism** when the admissible source fibre can absorb the corresponding interpolation cost.
+can still be matched exactly by an ordinary-prime-supported `{0,1,2}` source with the same KV fidelity and transient Robin ambiguity. In particular every `K=o(V(p))` is admissible without choosing a small constant.
 
-The live transition is therefore quantitative rather than finite-versus-infinite. RE-178 identifies the much larger raw capacity scale `K_cap(p) asymp log p/log log p`, while RE-184 proves non-rigidity throughout a substantial subcritical range. Any scalar-jet rigidity theorem must locate a genuine crossover between these regimes or add a joint placement/integrality constraint that the shell interpolation cannot satisfy.
+This sharpens the reusable mechanism: **scalar-family dimension becomes meaningful only after the interpolation geometry is conditioned optimally**. A growth barrier seen in raw monomials can be an artifact of coordinates rather than a source-capacity threshold. Here the honest source fibre absorbs a constant fraction of the full KV shell scale once the repair basis is adapted to that shell.
 
-**Boundary.** RE-184 does not reach the RE-178 capacity scale, prove sharpness of `K log K=o(V)`, or treat arbitrary growing temperature panels. The repair still uses an infinite continuation; finite ordinary-prime perturbations remain rigid under RE-172. The conclusion concerns the declared `{0,1,2}` source class and does not make the full Euler germ a cheaply conditioned invariant.
+The live transition is therefore no longer the `K log K` regime. RE-178 places the raw higher-jet capacity scale much higher, at `K_cap(p) asymp log p/log log p`, while RE-185 proves non-rigidity through `K=Theta(V(p))`. Any scalar-jet rigidity theorem must either cross the KV shell scale by a genuine source obstruction or use joint/nonlocal placement information that shell interpolation cannot reproduce.
+
+**Boundary.** RE-185 does not reach the RE-178 capacity scale or prove that `V(p)` is a sharp barrier. The repair still uses an infinite continuation and the declared `{0,1,2}` ordinary-prime source class; finite perturbations remain rigid under RE-172. The conclusion does not make the full Euler germ cheaply conditioned and does not address arbitrary growing separated-temperature panels.
