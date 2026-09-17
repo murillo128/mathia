@@ -14,16 +14,24 @@ Yet Katkova proves that for every fixed finite order `m` there is `n_0(m)` such 
 
 `e^{nz}xi_1 in PF_m` for every `n>=n_0(m)`.
 
-Thus finite `PF_m` membership is not a function of the zero divisor. Along one exact zero-preserving gauge orbit the RH-relevant zero geometry is constant while the finite positivity verdict can be driven into the positive class. A finite positivity certificate can therefore be mathematically real and still fail the target-fidelity test.
+Thus finite **coefficient-sequence** `PF_m` membership is not a function of the zero divisor. Along one exact zero-preserving gauge orbit the RH-relevant zero geometry is constant while this finite positivity verdict can be driven into the positive class. A coefficient `PF_m` certificate can therefore be mathematically real and still fail the target-fidelity test.
 
 The quantifier boundary is decisive. The statement
 
 `for every m there exists n_0(m) such that e^{nz}xi_1 in PF_m for n>=n_0(m)`
 
-does not produce one finite exponential tilt that lies in `PF_m` for every `m`. All-order Pólya-frequency positivity remains equivalent to the Laguerre--Pólya zero condition in the classical setting. The obstruction is specifically to interpreting any **fixed finite level** as an intrinsic approximation to zero geometry without first controlling the gauge.
+does not produce one finite exponential tilt that lies in `PF_m` for every `m`. All-order Pólya-frequency positivity remains equivalent to the Laguerre--Pólya zero condition in the classical setting. The obstruction is specifically to interpreting any **fixed finite coefficient level** as an intrinsic approximation to zero geometry without first controlling the gauge.
 
-This also sharpens the meaning of the confluent Toda program. AF-403--AF-405 prove genuine finite-order structure of the full Euler-log translation kernel and place its first possible failure at order at least five. Continuing to the order-five gate `(log R_4)''<4q` remains a legitimate structural question. But success at another finite level would not by itself become RH evidence: one must additionally show that the retained positivity datum descends through the zero-free exponential freedom, or fix that freedom by an independently justified canonical normalization.
+AF-406 also shows that the gauge audit is representation-specific. If a positive translation profile is changed by an affine exponential tilt
 
-The reusable audit is simple: **before using finite positivity as evidence for a zero-set target, test whether the certificate is constant on zero-preserving gauge fibres**. If `F` and `gF` have the same divisor for an admissible nowhere-zero factor `g` but the finite certificate changes, the certificate belongs to the representation rather than intrinsically to the target zero geometry.
+`f(t) -> exp(at+b) f(t)`,
 
-**Boundary.** AF-406 does not settle `H_5`, determine the first bad total-positivity order, or show that every finite positivity notion is gauge-manufacturable. Canonical gauge fixing may remove this particular obstruction, but it does not make a fixed finite positivity condition sufficient for RH. The finding supplies a necessary target-fidelity audit, not a new zero-selection theorem.
+every translation determinant acquires only a positive row/column factor. Its confluent Hankel determinants satisfy `H_r -> exp(r(at+b))H_r`, while the normalized ratios `R_r=H_r/f^r` and the logarithmic curvature `q=-(log f)''` are unchanged. Consequently the Toda gate `(log R_4)''<4q` is invariant under this profile gauge.
+
+This distinction matters. Multiplying the entire generating function by `e^{nz}` can manufacture finite coefficient `PF_m` membership, but that does **not** imply that the same gauge can manufacture finite translation-kernel total positivity. The coefficient sequence and the translation kernel are different positivity representations, and a gauge obstruction may be transferred between them only after the action of the gauge has been computed in the representation actually used by the proof.
+
+The confluent Toda program therefore remains a legitimate structural question on its own terms. AF-403--AF-405 place the first possible failure of the Euler-log translation kernel at order at least five, and AF-406's coefficient-gauge counterexample does not invalidate the order-five test. A positive fifth Toda gate still would not by itself prove RH, but the reason is no longer this particular affine exponential gauge: the translation-kernel certificate already survives that gauge and must be judged against the remaining zero-selection and destination-faithfulness gates.
+
+The reusable audit is: **before using finite positivity as evidence for a zero-set target, compute the actual gauge action on the exact positivity object being certified**. If `F` and `gF` have the same divisor for an admissible nowhere-zero factor `g` but that certificate changes, it belongs to the representation rather than intrinsically to the zero geometry. If the certificate is invariant, this gauge objection is closed for that representation, but target sufficiency still has to be proved separately.
+
+**Boundary.** AF-406 does not settle `H_5`, determine the first bad total-positivity order, or show that every finite positivity notion is gauge-manufacturable. It proves a coefficient `PF_m` obstruction and, separately, affine-exponential invariance of the translation-kernel Toda hierarchy. More general zero-preserving changes of representation may require a separate audit. Gauge invariance is necessary for intrinsic zero-set evidence, not a zero-selection theorem by itself.

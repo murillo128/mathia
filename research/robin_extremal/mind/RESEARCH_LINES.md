@@ -4,7 +4,7 @@ This file holds the current mathematical questions suggested by the durable Robi
 
 ## Resolve the scalar Euler frontier between repairability and stable-rank collapse
 
-**Linked intuitions:** `MI-001-robin-failure-requires-self-tangent-half-mass-event-gaps` through `MI-050-fixed-euler-windows-have-factorial-stable-rank-on-selector-shells`.
+**Linked intuitions:** `MI-001-robin-failure-requires-self-tangent-half-mass-event-gaps` through `MI-051-finite-laplace-source-capacity-grows-only-logarithmically-with-the-transform-rectangle-at-fixed-precision`.
 
 The matched-control program has progressively removed apparent scalar rigidity thresholds. Ordinary-prime `{0,1,2}` controls can preserve every fixed KV source envelope and an order-one transient Robin excursion while matching exact Mertens/Euler data at fixed depth, growing depth and separated temperatures. RE-188 optimizes the deep Euler-jet repair to a linear-width Chebyshev window and keeps non-rigidity throughout
 
