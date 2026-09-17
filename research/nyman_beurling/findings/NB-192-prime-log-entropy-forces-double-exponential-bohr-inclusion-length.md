@@ -222,7 +222,7 @@ Partition `[0,L]` into at most
 \[
 J
 \le
-1+rac{L\lambda_{\max}(a)}{\delta}
+1+\frac{L\lambda_{\max}(a)}{\delta}
 \tag{17}
 \]
 
@@ -408,11 +408,7 @@ The covering estimate also keeps the dimensional constants explicit enough not t
 \exp\!\left(c_\epsilon a e^{r_0/a}\right).
 \]
 
-The next discriminator is therefore no longer the generic Bohr inclusion length. Its entropy scale is already too large. The useful questions are more specific:
-
-- can the **particular** dyadic block `[T,2T]` contain sufficiently early prime-log returns much sooner than the worst-gap inclusion length predicts, for the relevant coupling `a=a_T`;
-- can weighted or band-averaged recurrence preserve the `NB-190` coefficient masks without coordinatewise recurrence of exponentially many prime phases; or
-- can one prove a source-native lower bound showing that every such aggregate shortcut still pays a comparable acquisition tariff?
+The next discriminator is therefore no longer the generic Bohr inclusion length. Its entropy scale is already too large. The useful questions are more specific: whether the **particular** dyadic block `[T,2T]` can contain sufficiently early prime-log returns much sooner than the worst-gap inclusion length predicts; whether weighted or band-averaged recurrence can preserve the `NB-190` coefficient masks without coordinatewise recurrence of exponentially many prime phases; or whether a source-native lower bound shows that every such aggregate shortcut still pays a comparable acquisition tariff.
 
 Those are genuinely arithmetic/source-topology questions. Generic finite-dimensional almost periodicity has now been priced sharply enough to stop carrying the coupled-limit argument by itself.
 
