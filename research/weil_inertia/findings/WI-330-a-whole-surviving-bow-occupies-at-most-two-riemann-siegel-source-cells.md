@@ -68,8 +68,7 @@ q(U_M)=\sqrt{M\left(M+\frac12\right)}
 so `m_RS(U_M)=M` exactly for every positive integer `M`. WI-325 snaps `U_M` to an actual zero ordinate `\gamma_M\in(U_M,U_M+2]`; this changes `q` by only `O(M^{-1})`. Therefore any surviving bow containing such a snapped ordinate satisfies, uniformly across that bow,
 
 \[
-\boxed{
-m_{\rm RS}(U)=M}
+\boxed{m_{\rm RS}(U)=M}
 \tag{7}
 \]
 
@@ -315,28 +314,13 @@ This does not solve the WI-195 variance gate. It rules out one concrete de-excep
 
 ## 5. Prior art, novelty audit, and evidence boundary
 
-The Riemann--Siegel truncation in (1) is classical. NIST DLMF §25.10(ii), equation 25.10.3, records
-
-\[
-m=\left\lfloor\sqrt{t/(2\pi)}\right\rfloor
-\]
-
-in the Riemann--Siegel formula, citing Titchmarsh, *The Theory of the Riemann Zeta-Function*, §4.17. The bow geometry and its vertical spacing come from James Maynard and Kyle Pratt, *Half-Isolated Zeros and Zero-Density Estimates*, IMRN 2024:19 (2024), 12978--13014, DOI `10.1093/imrn/rnae191`; the exact surviving exponent and source-compatible normalization used here are the already-audited Mathia results WI-202 and WI-322.
+The Riemann--Siegel truncation in (1) is classical. NIST DLMF §25.10(ii), equation 25.10.3, records `m=floor(sqrt(t/(2*pi)))` in the Riemann--Siegel formula, citing Titchmarsh, *The Theory of the Riemann Zeta-Function*, §4.17. The bow geometry and its vertical spacing come from James Maynard and Kyle Pratt, *Half-Isolated Zeros and Zero-Density Estimates*, IMRN 2024:19 (2024), 12978--13014, DOI `10.1093/imrn/rnae191`; the exact surviving exponent and source-compatible normalization used here are the already-audited Mathia results WI-202 and WI-322.
 
 The endpoint carrier family and its snap to actual zero ordinates are WI-324--WI-325. No statement from those findings is strengthened here beyond the explicit scale consequence (20)--(23).
 
-A bounded prior-art audit of the Riemann--Siegel source and Maynard--Pratt bow literature did not locate a source using the bow span to derive the source-cell contraction (3)--(7). That absence is **not** a priority claim. The only new claim recorded here is the elementary exact deduction obtained by combining already attributed ingredients in this research line.
+A bounded prior-art audit of the Riemann--Siegel source and Maynard--Pratt bow literature did not locate a source using the bow span to derive the source-cell contraction (3)--(7). That absence is **not** a priority claim. The new line-local claim recorded here is the elementary exact deduction obtained by combining already attributed ingredients.
 
-There is a conceptual internal analogy in the read-only `robin_extremal` line: RE-059 warns that a continuum of external parameters inside one threshold cell need not represent new prime-source information. It is not evidence for the present result and no argument is imported from that line; the mechanisms and mathematical objects are different. It is noted only so the repository-wide novelty audit does not mistake the general information-compression motif for a new concept.
-
-The strongest admissible conclusion is therefore negative and specific. A successful continuation may still:
-
-- prove an every-start or distinguished-start cancellation theorem directly;
-- derive an **independent** family of source positions from bow arithmetic or zero geometry;
-- exploit a discontinuous/arithmetic source selector not governed by (25);
-- or bypass start de-exceptionalization and attack the full WI-195 `L^2` variance object.
-
-What is closed is the cheaper route in which the many ordinates of one surviving bow are fed through the ordinary self-dual/Riemann--Siegel height coordinate and counted as many source starts.
+The strongest admissible conclusion is negative and specific. A successful continuation may still prove an every-start or distinguished-start cancellation theorem directly, derive an **independent** family of source positions from bow arithmetic or zero geometry, exploit a discontinuous/arithmetic source selector not governed by (25), or bypass start de-exceptionalization and attack the full WI-195 `L^2` variance object. What is closed is the cheaper route in which the many ordinates of one surviving bow are fed through the ordinary self-dual/Riemann--Siegel height coordinate and counted as many source starts.
 
 ## Research consequence
 
