@@ -28,7 +28,7 @@ At the exact distinguished bow twist, does the signed off-diagonal contribution 
 
 `Off_X(T) = -D_X + o(D_X)`, with `D_X ~ X K log X`,
 
-so that the full variance is `o(X K log X`)? Alternatively, is there a canonical source-fixed subtraction of the diagonal after which the residual has that scale? Or can one prove that the distinguished twist cannot support either mechanism?
+so that the full variance is `o(X K log X)`? Alternatively, is there a canonical source-fixed subtraction of the diagonal after which the residual has that scale? Or can one prove that the distinguished twist cannot support either mechanism?
 
 The same norm must include the structured `Lambda^sharp` contribution rather than treating it only after an absolute-value decomposition.
 
