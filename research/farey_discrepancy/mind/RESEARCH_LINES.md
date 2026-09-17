@@ -26,19 +26,25 @@ for a constant `C>0`. Thus the complete dyadic midpoint ladder cannot by itself 
 
 FD-183 showed that the apparent `x/log x` support frontier belongs to the **moving-prime source fibre**, not to prime-extension multiplicativity in isolation. If the prime coordinates are fixed exactly, `a(p)=-1`, and `n_0` is the first changed coordinate, then subcritical energy `M_(a,q)(x)=o(x/log x)` already forces a semiprime-scale family of changed coordinates.
 
-FD-184 iterates that mechanism through **every fixed multiplicative rank**. For every fixed integer `r>=1`,
+FD-184 propagates that mechanism through every fixed multiplicative rank, but FD-186 shows that this growing-rank route is unnecessary for the physical-prime classification. Write `c(n)=a(n)/mu(n)` on squarefree coordinates. When `a(p)=-1`, every prime is anchored by `c(p)=1`, and one changed composite `n_0` with `Delta=|a(n_0)-mu(n_0)|>0` creates, for each fresh prime `r`, an edge-disjoint finite detour from the anchored prime `r` to `n_0r`. Hölder on the `omega(n_0)+1` edges gives
 
-`S(x) >= (1/(n_0 (r-1)!)+o(1)) x (loglog x)^(r-1)/log x`.
+`M_(a,q)(x) >= (pi(x/n_0)-omega(n_0)) Delta^q/(omega(n_0)+1)^(q-1)`,
 
-Equivalently, the support tariff beats `x(loglog x)^A/log x` for every fixed real `A`. The proof uses canonical fixed-depth paths and an exceptional-prefix convolution lemma: an `o(T/log T)` set of bad edges at each fixed prefix depth cannot contaminate a main-order proportion of the rank-`r` almost-prime layer after finitely many prime extensions. No fixed rank is therefore terminal on the fixed-prime fibre.
+hence
 
-FD-185 now removes the moving-prime loophole for every genuinely sparse perturbation. If a prime coordinate `p` is moved by `Delta_p=|a(p)+1|>0`, then
+`liminf_(x->infinity) (log x/x) M_(a,q)(x) >= Delta^q/(n_0(omega(n_0)+1)^(q-1)) > 0`.
+
+So `M_(a,q)(x)=o(x/log x)` already forces `a=mu` on the entire physical-prime squarefree fibre, with no perturbation-support hypothesis and no growing-rank uniformity problem.
+
+FD-185 supplies the complementary moving-prime tariff. If a prime coordinate `p` is moved by `Delta_p=|a(p)+1|>0`, then
 
 `S(x) >= x/(zeta(2)(p+1)) - M_(a,q)(x)/Delta_p^q + O_p(sqrt(x))`.
 
-The tariff is sharp: changing only that one prime coordinate gives zero prime-extension energy and exactly the corresponding positive-density support. Consequently, if `S(x)=o(x)` and `M_(a,q)(x)=o(x/log x)`, then every prime coordinate is forced back to the physical value `a(p)=-1`, after which FD-184 applies automatically. Sublinear-support, subcritical-energy perturbations therefore cannot hide in a moving prime coordinate; they inherit the fixed-prime all-fixed-rank tariff.
+The tariff is sharp: changing only that prime coordinate gives zero prime-extension energy and exactly the corresponding positive-density support. Combining FD-185 with FD-186 yields the clean global sparse classification
 
-The main source-side question is now **growing-rank uniformity**, not a separate moving-prime `x/log x` frontier. Can the FD-184 path/convolution bounds be made quantitative for `r=r(x)` far enough to force near-linear support once FD-185 has forced physical prime coordinates, or can deterioration in the path threshold and fixed-rank constants be exploited? Dense tiny-amplitude perturbations still require a weighted replacement for support sparsity and remain a separate escape.
+`S(x)=o(x)` and `M_(a,q)(x)=o(x/log x)  =>  a=mu`.
+
+The main source-side questions are now quantitative rather than rank-uniform. On the physical-prime fibre, determine the sharp critical-energy constant or a useful stability modulus. On the unrestricted prime-coordinate fibre, understand weighted substitutes for support sparsity when moved-prime amplitudes or dense perturbations become small enough that cardinal support is the wrong currency.
 
 A second live question is observation design rather than midpoint refinement: what minimal additional Farey spatial data destroys the FD-179 dyadic kernel and quantitatively exposes prime-extension relations? Complete fields are source-invertible but vastly stronger than needed; the interesting target is an intermediate observation family with a provable relation-energy modulus on the declared source fibre.
 
@@ -46,10 +52,10 @@ Inside the genuinely multiplicative cone, the finite certification bound for geo
 
 ## Apply information budgets only after fixing source class, observation family and destination
 
-The same midpoint coordinate can encode the full source when observed through changing consecutive horizons, become sparse-target-rigid under multiplicativity, and retain a permanent kernel under deletion-only sources that are coordinatewise indistinguishable from Möbius outside an `o(first-correction)` extremal cap. FD-180--FD-185 sharpen the separation further: exact dyadic-null data can coexist with critical prime-extension defect, while any perturbation that simultaneously has sublinear support and subcritical prime-extension energy is forced onto the physical-prime fibre and then pays every fixed almost-prime layer. Hence “approximately multiplicative” is not inferable from midpoint accuracy, and even a valid relation tariff is meaningless without its source-fibre, amplitude and rank-uniformity quantifiers.
+The same midpoint coordinate can encode the full source when observed through changing consecutive horizons, become sparse-target-rigid under multiplicativity, and retain a permanent kernel under deletion-only sources that are coordinatewise indistinguishable from Möbius outside an `o(first-correction)` extremal cap. FD-180--FD-186 sharpen the separation further: exact dyadic-null data can coexist with critical prime-extension defect, while the relation itself becomes fully rigid at subcritical energy on the physical-prime fibre by a finite anchored detour certificate. Allowing prime coordinates to move restores a zero-energy escape, but FD-185 prices it by positive-density support. Hence “approximately multiplicative” is not inferable from midpoint accuracy, and even a valid relation tariff is meaningless without its source-fibre, amplitude and support quantifiers.
 
-Any lower bound should first declare whether it concerns unrestricted recovery, one-target testing, pairwise recovery or quotient recovery; whether changing horizon counts as a new operator; the source class and which coordinates are fixed or allowed to move; the relation graph and normalization; the observation/noise topology; and whether multiplicative depth is fixed or growing. Only then do rank, sample count, inverse modulus, support cardinality or information capacity become meaningful currencies.
+Any lower bound should first declare whether it concerns unrestricted recovery, one-target testing, pairwise recovery or quotient recovery; whether changing horizon counts as a new operator; the source class and which coordinates are fixed or allowed to move; the relation graph and normalization; the observation/noise topology; and whether support cardinality or a weighted amplitude notion is the relevant sparsity currency. Only then do rank, sample count, inverse modulus, support cardinality or information capacity become meaningful currencies.
 
 ## Keep source coercivity and the Franel--Landau destination separate
 
-The results above concern recovery or non-rigidity of the coefficient source. They do not prove the RH-critical discrepancy estimate. Even a source condition that kills every sparse midpoint repair must still be shown to control the nonlocal Franel--Landau norm with the required scale and conditioning. Conversely, FD-182 rules out only a dyadic-midpoint-to-prime-extension bridge on a broad nonmultiplicative source class; FD-184--FD-185 strengthen the relation theorem dramatically on sparse subcritical perturbations but supply no missing observation-to-relation bridge.
+The results above concern recovery or non-rigidity of the coefficient source. They do not prove the RH-critical discrepancy estimate. Even a source condition that kills every sparse midpoint repair must still be shown to control the nonlocal Franel--Landau norm with the required scale and conditioning. Conversely, FD-182 rules out only a dyadic-midpoint-to-prime-extension bridge on a broad nonmultiplicative source class; FD-186 makes the relation theorem exact on the physical-prime fibre but supplies no missing observation-to-relation bridge.
