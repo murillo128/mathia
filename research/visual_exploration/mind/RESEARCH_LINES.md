@@ -2,20 +2,24 @@
 
 This file holds the current mathematical questions suggested by the durable visual-exploration intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Resolve the first residual after the fixed-physical-window Wang limit
+## Recover signed structure in the first fixed-window Wang residual
 
-**Linked intuitions:** `MI-029-fixed-margin-pair-correlation-accuracy-must-outrun-packet-conditioning` through `MI-034-wang-diagonal-is-a-green-potential-of-the-rodgers-prime-measure`, with corrected moving-test synthesis in `MI-031-wang-transfer-allows-moving-tests-only-inside-a-seminorm-and-support-budget`.
+**Linked intuitions:** `MI-029-fixed-margin-pair-correlation-accuracy-must-outrun-packet-conditioning` through `MI-035-laplace-null-packets-cannot-beat-a-sign-blind-wang-remainder-by-adding-signed-moments`, with corrected moving-test synthesis in `MI-031-wang-transfer-allows-moving-tests-only-inside-a-seminorm-and-support-budget`.
 
-The representation problem is largely resolved. Rodgers' low-frequency expansion separates universal zero-frequency structure from prime-power curvature samples. VIS-271 identifies the coordinate mismatch with Wang, and VIS-272 repairs it exactly: after `q=log x/(2pi)`, Wang's diagonal source field is the exponential Green potential of the same weighted prime-power measure used by Rodgers.
+The representation problem is largely resolved. VIS-271 identifies the theorem/source coordinate mismatch, VIS-272 gives the exact Green-potential dictionary between Wang's diagonal field and the Rodgers weighted prime-power measure, and VIS-274 shows that a fixed physical `q` packet has a finite leading Laplace limit after the concentrating Wang main term is retained and rescaled at its natural `1/log T` width.
 
-VIS-274 corrects the apparent theorem-scale obstruction previously recorded in VIS-273. A fixed physical `q` packet pulls back to a Wang test of width `Theta(1/log T)` and derivative norm `Theta(log T)`, but that derivative growth occurs on exactly the scale of the concentrating exponential main term. Keeping that term intact and rescaling directly gives a finite leading Laplace functional with only `O_h(1/log T)` normalized remainder. Fixed physical prime windows are therefore accessible at leading order; the former `O(1)` barrier was an artifact of collapsing the main term to a fixed-test Taylor approximation before rescaling.
+The live question after leading Laplace cancellation is no longer how many additional signed moments to impose. VIS-275 propagates the proof-level remainder without collapsing its weights and identifies the unique theorem-level `1/log T` term as
 
-The live question is now the **Laplace-null residual**. If the packet satisfies `int h(q)e^(-4pi q)dq=0`, the leading Wang contribution vanishes and the normalized statistic is only known to be `O_h(1/log T)`. A useful next result should identify the `1/log T` coefficient or improve the remainder to `o(1/log T)` for a source-selective family, while preserving the exact prime-power Green dictionary from VIS-272.
+`(1/log T) int |h(q)| e^(-4pi q)dq`.
+
+Because this is an absolute weighted norm, a fixed nonzero Laplace-null packet cannot improve the certified rate by adding any finite family of signed polynomial-Laplace moment constraints. The present proof interface has discarded precisely the sign information those constraints would need.
+
+The next theorem question is therefore source-side: can the dominant `H log T e^(-2 log(T) alpha)` remainder in Wang's proof be decomposed or expanded with signed structure after fixed-`q` rescaling, or can its rate be sharpened below `1/log T`? A signed first-order kernel would reopen packet engineering; without such an upgrade, increasingly elaborate null packets only reorganize mass inside a positive majorant.
 
 ## Keep packet conditioning, arithmetic selectivity and theorem coordinates separate
 
 Shrinking moment packets have a seminorm cost, and theorem error must beat that conditioning before a coefficient can be extracted. Separately, a packet can have nonzero low-order moments while being exactly prime-power blind if its support misses all arithmetic frequencies. Conversely, a fixed Rodgers band can isolate a prime contribution while cancelling a universal leading functional.
 
-VIS-274 adds a refinement to the theorem-coordinate ledger: a large moving-test seminorm is not automatically fatal when it measures variation of a structured main term on its natural concentration scale. The correct audit is to map the physical source window into theorem coordinates, retain and rescale every structured main component at that scale, and only then compare the residual theorem error with the arithmetic signal.
+VIS-274 and VIS-275 together sharpen the theorem-coordinate ledger. A large moving-test seminorm is not automatically fatal when it resolves a structured boundary layer, but after the structured main term is removed the **sign structure of the remainder bound** becomes a first-class resource. Same-scale rescaling must therefore be followed by an audit of whether the proof retains the phase/sign information required by the proposed cancellation.
 
-A future visual/analytic probe should therefore state its physical source window first, identify which leading theorem functionals it cancels, and compute the remaining signal and error after same-scale rescaling. Exact coordinate dictionaries and visual concentration remain intermediate resources until the residual—not a prematurely Taylor-collapsed main term—is controlled.
+A future visual/analytic probe should state its physical source window first, identify which theorem functionals it cancels, retain structured terms through the induced coordinate rescaling, and distinguish the actual signed residual from an absolute envelope. Exact coordinate dictionaries and visual concentration remain intermediate resources until the residual itself is controlled in a form that can support arithmetic cancellation.
