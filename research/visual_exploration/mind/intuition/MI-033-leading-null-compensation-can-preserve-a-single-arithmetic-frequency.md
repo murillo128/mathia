@@ -1,0 +1,11 @@
+# MI-033 — Leading-null compensation can preserve a single arithmetic frequency
+
+**Evidence level:** exact synthesis from VIS-264, VIS-268, VIS-269 and [VIS-270](../../findings/VIS-270-first-prime-translated-wang-null-packet.md). The packet construction and prime-power coefficient are exact; transfer to a lower-order Wang asymptotic remains unproved.
+
+Cancellation of the universal leading functional does not require retreating below the arithmetic spectrum. VIS-270 uses a fixed two-band translated packet: one band is centered at the first prime frequency `xi_2=log 2/(2 pi)`, while a compensating band lies in a source-empty region. Their relative weight simultaneously enforces `g(0)=0` and cancels the Wang diagonal/cusp functional, yet the support still intersects the Rodgers prime-power spectrum at exactly `xi_2`.
+
+The resulting quadratic arithmetic coefficient is therefore pure first-prime data and nonzero. This separates two design resources that the shrinking low-frequency packets of VIS-269 had entangled: **leading-functional nulling** can be paid by compensation away from the carrier, while **arithmetic access** is determined by whether the packet support physically reaches a prime-power frequency. For this representation the first access threshold is exactly `xi_2`.
+
+The representation problem is therefore no longer the main obstacle at first-prime level. A fixed-band packet can be source-sensitive, leading-null and uniformly conditioned at the same time. The remaining question is theorem transfer: the available Wang theorem has an error larger than the Rodgers lower-order coefficient and does not identify that coefficient inside the short-interval statistic.
+
+**Boundary.** This is a fixed quadratic two-band construction. It does not provide a refined Wang expansion, prove that the first-prime coefficient survives the theorem error, establish a zero-sensitive sign, or show that analogous compensation works for arbitrary higher jets or multiband arithmetic targets.

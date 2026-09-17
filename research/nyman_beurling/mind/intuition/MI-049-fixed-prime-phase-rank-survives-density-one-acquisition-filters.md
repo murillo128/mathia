@@ -1,0 +1,11 @@
+# MI-049 — Fixed prime-phase rank survives density-one acquisition filters
+
+**Evidence level:** exact finite-rank synthesis from NB-184 and [NB-185](../../findings/NB-185-prime-phase-hadamard-codes-survive-density-one-euler-acquisition-filters.md), using classical finite-dimensional Kronecker--Weyl equidistribution.
+
+After NB-184, cheap local Euler acquisition is available on a density-one set of heights whenever `a_T -> 0` and `T a_T^2 -> infinity`. NB-185 shows that finite-dimensional prime-phase algebra does not destroy coherent rank inside that same good set. For any fixed collection of distinct primes, rational independence of their logarithms makes the continuous phase flow equidistributed on the full torus; removing an `o(T)` set of acquisition-bad heights cannot erase a fixed positive-measure phase box.
+
+Consequently every fixed finite Hadamard phase pattern can be realized, to arbitrary prescribed accuracy, by heights that are simultaneously NB-184-good. For fixed `N=2^r`, one can choose `N` such heights so that the raw prime-phase matrix has all singular values on the `sqrt(N)` scale. There is therefore **no qualitative finite-rank ceiling coming from algebraic relations among prime phases**.
+
+This moves the source-side question from existence to quantitative growth. The relevant obstruction, if one exists, must compare shrinking high-dimensional phase-box measure and effective hitting time with the acquisition exceptional density, while retaining true Euler amplitudes and their charged source norm. Merely showing that many phases are algebraically accessible at separately chosen heights is not yet a bounded-cost source-rank theorem.
+
+**Boundary.** The argument fixes `N` before sending `T` to infinity. It gives no useful dependence of `T` on growing `N` or phase tolerance, does not expose prime channels independently at bounded acquisition cost, and selects continuum heights rather than zeta-zero ordinates or prescribed Nyman target data. The diagonal `N -> infinity` consequence is nonquantitative and cannot be substituted for a growing-rank theorem.

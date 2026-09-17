@@ -1,0 +1,11 @@
+# MI-040 — Height diversity is not source-start diversity below the square-root scale
+
+**Evidence level:** exact synthesis from WI-328, WI-329 and [WI-330](../../findings/WI-330-a-whole-surviving-bow-occupies-at-most-two-riemann-siegel-source-cells.md). The contraction statement is exact for the declared bow scale and smooth source coordinates with derivative `O(T^(-1/2))`.
+
+A large family of nearby spectral heights need not provide many independent arithmetic source states. At the surviving count-saturating bow scale, the Riemann--Siegel source coordinate `q(U)=sqrt(U/(2 pi))` changes by `o(1)` across the entire bow because the bow exponent is strictly below `1/2`. Its integer source cell therefore takes at most two adjacent values, and explicit resonant families can keep the whole bow in one cell.
+
+This turns the exceptional-start problem into a coordinate question. WI-328 already shows that endpoint-scale bow ordinates are twist-frozen, while WI-329 shows that moving to the first genuinely dephasing height scale still leaves one common arithmetic exceptional-start set. WI-330 adds that the natural square-root source selector itself does not convert those many heights into many source starts. **Phase diversity and source-start diversity are distinct resources.**
+
+The same contraction applies to any smooth source coordinate whose derivative is `O(T^(-1/2))`: a sub-square-root spectral window maps to `o(1)` source diameter. To split the exceptional arithmetic locus one therefore needs a genuinely independent source-position parameter, a selector with stronger variation, or pointwise control at the distinguished start; merely increasing the number of nearby heights is not enough.
+
+**Boundary.** The statement does not rule out source coordinates varying faster than `T^(-1/2)`, independently chosen arithmetic starts, or pointwise estimates for the exact signed covariance. It is a no-go for converting the present sub-square-root bow-height diversity into independent Riemann--Siegel source cells, not an RH consequence.
