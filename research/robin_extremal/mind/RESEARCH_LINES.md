@@ -4,7 +4,7 @@ This file holds the current mathematical questions suggested by the durable robi
 
 ## Find a selector-sensitive source invariant between one boundary charge and coefficient-by-coefficient Euler recovery
 
-**Linked intuitions:** `MI-001-robin-failure-requires-self-tangent-half-mass-event-gaps` through `MI-040-first-slope-matching-prices-the-terminal-kv-tail`.
+**Linked intuitions:** `MI-001-robin-failure-requires-self-tangent-half-mass-event-gaps` through `MI-041-remote-two-jet-repair-trades-kv-distance-for-sign-phase-complexity`.
 
 RE-153--RE-168 identify the Pareto-weighted Chebyshev-deficit destination and quantify how much post-selector Robin motion remains possible under quantitative Korobov--Vinogradov source fidelity. The intrinsic decay length `ell_KV(T)=log T/V(T)` gives the spatial capacity scale: a bounded-multiplicative or subpower region can still carry order-one normalized displacement while enough future capacity remains.
 
@@ -28,7 +28,17 @@ so necessarily
 
 and hence `b V(Y) <= (1/2+o(1)) log p`. The second sign change cannot be exiled arbitrarily far while retaining two-jet matching and KV fidelity. Distance can reduce the required Mertens mass, but it cannot erase the first-slope workload.
 
-This still does **not** make the first slope a free invariant of the original Robin problem or close all matched controls. RE-176 uses terminal one-sign monotonicity, so controls with further alternations remain outside the theorem. The live question is now whether repeated sign changes can keep cancelling the accumulated boundary-jet debts inside the KV envelope, or whether an iterated variation/transport/placement inequality turns finitely many boundary jets into a quantitative oscillation barrier strong enough to suppress the selector-scale Robin excursion. Any such closure must also explain why the required boundary-jet information follows from genuine arithmetic input rather than being imposed as an extra hypothesis.
+RE-177 removes the terminal one-sign restriction for tails of finite sign complexity. If the first positive compensating phase is completed before `Y` and the residual tail has `M` maximal sign-constant phases, exact Mertens plus first-slope matching leaves a centered Euler debt of order `d_p`, while the KV envelope gives only
+
+`(M + ell_KV(Y)) e^(-b V(Y))`
+
+of absolute first-slope capacity. Therefore
+
+`sqrt(p) log(p) (M + ell_KV(Y)) e^(-b V(Y)) >> 1`.
+
+In particular, `M=p^(o(1))` does not move the leading `bV(Y)=(1/2)log p` horizon, while delaying the repair to `bV(Y)>=(1/2+delta)log p` forces `M>=p^(delta-o(1))`. The live matched-control escape is now **high sign complexity**: polynomially many or infinitely many alternating phases, or an architecture that starts interlacing signs before a separated first positive phase can be isolated. A useful next test is whether higher boundary jets or ordinary-prime integer granularity impose a superlinear complexity tariff on such oscillatory repairs.
+
+This still does **not** make the first slope a free invariant of the original Robin problem. RE-175--RE-177 state what one additional source coordinate would force. Any closure must also explain why the required boundary-jet information follows from genuine arithmetic input rather than being imposed as an extra hypothesis.
 
 ## Control one-sided vertical reciprocal escape without overstating the symmetric obstruction
 
@@ -36,4 +46,4 @@ RE-144--RE-152 put the zero-side packet into reciprocal-scale language and show 
 
 ## Keep source capacity, exact identification and usable conditioning distinct
 
-Quantitative PNT/KV fidelity, exact Mertens normalization, ordinary-prime support, integer multiplicity, finite Euler boundary jets, the full high-temperature Euler germ and the zero-side packet obstruction answer different questions. RE-173 shows strong coarse fidelity plus one exact boundary charge is non-rigid; RE-174 shows an unbounded exact Euler hierarchy is fully rigid but exponentially ill-conditioned; RE-175 shows that an intermediate finite boundary observable can detect the known delayed-compensation control at the Robin scale; RE-176 shows that, for the minimal two-sign-change repair, matching that first slope also imposes a moving KV tail-capacity horizon. Future matched controls must state both **what source ambiguity survives, how many sign alternations it uses, and at what selector-normalized precision/placement cost** before source rigidity is credited as Robin leverage.
+Quantitative PNT/KV fidelity, exact Mertens normalization, ordinary-prime support, integer multiplicity, finite Euler boundary jets, the full high-temperature Euler germ and the zero-side packet obstruction answer different questions. RE-173 shows strong coarse fidelity plus one exact boundary charge is non-rigid; RE-174 shows an unbounded exact Euler hierarchy is fully rigid but exponentially ill-conditioned; RE-175 shows that an intermediate finite boundary observable can detect the known delayed-compensation control at the Robin scale; RE-176 prices the remote placement of the minimal two-sign-change repair; and RE-177 shows that bounded or subpolynomial later sign complexity cannot improve that leading placement horizon. Future matched controls must state both **what source ambiguity survives, how many sign alternations it uses, and at what selector-normalized precision/placement cost** before source rigidity is credited as Robin leverage.
