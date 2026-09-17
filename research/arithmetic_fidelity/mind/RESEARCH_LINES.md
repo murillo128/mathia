@@ -30,12 +30,28 @@ AF-404 shows that the flag entries are recursively coupled by the classical Toda
 
 With `q=-(log f)''` and `R_m=H_m/f^m`, the normalized recursion is `R_(m+1)R_(m-1)=R_m^2(mq-(log R_m)'')`. AF-405 closes the full-Euler order-four gate exactly: `H_1,...,H_4>0` everywhere, so the Euler-log translation kernel is strictly totally positive through order four. A finite signed source with at most three ordered sign changes cannot annihilate four distinct positive real samples, while AF-217 still forces failure at some later finite order. The first possible bad order is therefore at least five.
 
-The next local analytic frontier remains precise. Since `R_3,R_4>0`, order five is equivalent to `(log R_4)''<4q`; proving or refuting that scalar curvature inequality locates the next step of the finite-order hierarchy. AF-406 removes one possible misinterpretation: although coefficient `PF_m` can be manufactured along a zero-preserving exponential gauge, the normalized translation-kernel Toda quantities are invariant under affine exponential profile tilt. AF-407 removes another: the native Laplace transform has no zeta-zero obstruction inside its convergence half-plane, so a finite-order order-five argument cannot be replaced by simply locating continued zeta zeros. Any zero-based attack on finite translation positivity must first supply an independent continuation/localization theorem that preserves the finite-order certificate.
+AF-408 now localizes the order-five gate sharply. Since `R_3,R_4>0`, write
 
-The live locality problem remains layered. First declare the physical wall, sampling regime and same-scale source theorem needed to inspect the profile. Then establish the confluent certificate on that physical source scale. Finally propagate one order at a time through the Toda/log-concavity gate. The `13/30` all-start and `13/15` density-one boundaries remain technology boundaries, not intrinsic detector constants; coefficient-PF gauge sensitivity, translation-kernel Toda invariance, and continuation access are separate representation facts.
+`A_4(t)=4q(t)-(log R_4(t))''`,
+
+so `H_5` has the sign of `A_4`. The exact tail asymptotics are
+
+`A_4(t)=(24/5)e^(2t)(1+o(1))` as `t->-infinity`,
+
+and
+
+`A_4(t)=4e^t(1+o(1))` as `t->+infinity`.
+
+Therefore order five is automatically positive in both logarithmic tails. If it fails, it can fail only on one compact interior interval where several Euler harmonics interact at comparable size. The live analytic frontier is now finite-scale: prove or refute `A_4>0` on that bounded remainder. A global positive result would move the first possible bad order to at least six.
+
+AF-406 removes one possible misinterpretation of that compact problem: although coefficient `PF_m` can be manufactured along a zero-preserving exponential gauge, the normalized translation-kernel Toda quantities are invariant under affine exponential profile tilt. AF-407 removes another: the native Laplace transform has no zeta-zero obstruction inside its convergence half-plane, so the compact order-five question cannot be replaced by simply locating continued zeta zeros. Any zero-based attack on finite translation positivity must first supply an independent continuation/localization theorem that preserves the finite-order certificate.
+
+The live locality problem remains layered. First declare the physical wall, sampling regime and same-scale source theorem needed to inspect the profile. Then establish the confluent certificate on that physical source scale. Finally propagate one order at a time through the Toda/log-concavity gate, using the tail analysis to isolate the genuinely unresolved compact interaction region. The `13/30` all-start and `13/15` density-one boundaries remain technology boundaries, not intrinsic detector constants; coefficient-PF gauge sensitivity, translation-kernel Toda invariance, continuation access and compact-interior positivity are separate representation facts.
 
 ## Separate source identification from zero selection
 
 Hamburger-type rigidity can identify the zeta source without forcing RH. AF-406 strengthens the same separation while showing why the representation must be named: a finite coefficient positivity certificate may change while the entire zero divisor is held fixed, whereas the affine-exponential profile gauge leaves the normalized translation-kernel Toda hierarchy unchanged. AF-407 adds that even within one transform representation the native convergence domain can be zero-free while its meromorphic continuation carries the zeta divisor. A certificate that controls the former does not automatically control the latter.
+
+AF-408 adds a scale separation inside the finite translation hierarchy itself: the order-five sign is settled in both asymptotic tails without any appeal to zeta zeros, leaving only a compact interior interaction problem. Tail positivity is therefore not evidence that the finite certificate has acquired access to the continued divisor.
 
 Future fidelity arguments must therefore keep source identification, representation gauge, native analytic domain, admissible continuation, stable recovery, source-specific relational structure and zero selection as separate gates rather than transferring a gauge or zero verdict across them. For every proposed destination theorem state separately the observed data, admissible source/tail class, retained analytic layer, transform domain and continuation class, relation order, intrinsic physical source coordinate, sampling set, same-scale density theorem, exceptional-set transfer if needed, conditioning, residual gauge, positivity representation and final zero/sign discriminator. A source-coordinate count or finite positivity level has mathematical meaning only after those choices are fixed.
