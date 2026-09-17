@@ -26,13 +26,21 @@ AF-394 closes the smooth zero-curvature boundary. For positive `C^4` `f`, the tr
 
 AF-395 turns that qualitative residue into a sampling obstruction: fixed successor radius becomes physically more local on the prime-log mesh and can miss disconnected curvature forever. AF-396 gives the first-order prime-index scale: physical reach is `log(1+R_N/N)+o(1)`, so every `R_N=o(N)` stencil is eventually blind, `limsup R_N/N<e-1` is blind, and `liminf R_N/N>e-1` detects a negative order-three minor in every sufficiently large tail block.
 
-AF-397 resolves that boundary at the next scale for the explicit control. If `H_N(R)=log(p_(N+R)/p_N)` and `Delta_N(R)` is the largest local log-prime mesh width, `H_N(R)<=1` certifies blindness while `H_N(R)>1+Delta_N(R)` forces detection. For `R_N=floor((e-1)N-alpha N/log N)`, the prime asymptotic gives `H_N(R_N)=1+(1-alpha/e)/log N+O(log log N/log^2 N)` and `Delta_N=o(1/log N)`. Hence `alpha>e` is blind, `alpha<e` detects, and
+AF-397 shows that detection is governed by one local mesh width of overhang beyond physical log-prime reach one, not by a determinant margin bounded away from zero. AF-398 now resolves the former equality scale one asymptotic order further. With `L=log N`, `ell=log L` and
 
-`R_N^crit=(e-1)N-eN/log N+O(N log log N/log^2 N)`.
+`R_N(beta)=floor((e-1)N-eN/L+beta N ell/L^2)`,
 
-The first-order equality radius `floor((e-1)N)` is therefore eventually detecting. The residual conditioning question has moved to the thinner `alpha=e` scale. More importantly, the detector is governed by **one-mesh overhang across the topology wall**, not by a determinant margin bounded away from zero.
+one has
 
-The smooth `PF_3` recognition question is no longer missing an analytic boundary criterion or the reach scale of the canonical disconnected-curvature control through second order. The live arithmetic question is whether genuine source information forces the sampled local cone together with the required linear-in-index relational reach, or supplies connectedness through an independent arithmetic theorem. A separate structural frontier is whether higher determinant orders admit any comparably sharp split between local analytic conditions and a finite topological residue.
+`H_N(R_N(beta))=1+(beta/e-1)ell/L^2+O(ell^2/L^3)`.
+
+Thus `beta<e` is eventually blind and `beta>e` eventually detects, giving
+
+`R_N^crit=(e-1)N-eN/log N+eN log log N/log^2 N+O(N(log log N)^2/log^3 N)`.
+
+The exact physical count `pi(e p_N)-N` has the same expansion. The prime-density asymptotics therefore convert a fixed physical topology wall into successive corrections of the combinatorial successor radius. The residual sampling boundary has moved to the thinner `N(log log N)^2/log^3 N` scale.
+
+The smooth `PF_3` recognition question is no longer missing an analytic boundary criterion or the canonical disconnected-curvature reach scale through the first three asymptotic terms. The live arithmetic question is whether genuine source information forces the sampled local cone together with the required linear-in-index relational reach, or supplies connectedness through an independent arithmetic theorem. A separate structural frontier is whether higher determinant orders admit any comparably sharp split between local analytic conditions and a finite topological residue, and whether analogous source-density corrections control their combinatorial reach thresholds.
 
 ## Separate source identification from zero selection
 
@@ -42,4 +50,4 @@ AF-370 identifies `zeta` exactly inside its declared source class, but Hamburger
 
 The RH root-rate endpoint still requires cancellation-coherent access before taking the Li root-rate quotient; ordinary prefix accuracy is the wrong currency. The conditional Schanuel codimension program likewise remains open at the unconditional joint-dependence step: AF-320--AF-336 reduce exact incidence to algebraic relations on the common prime-phase tuple, but no unconditional source theorem yet excludes the required middle-singular fibre.
 
-For every proposed destination theorem state separately the observed data, admissible source/tail class, retained analytic layer, determinant/relation order, intrinsic support-scale interaction complexity, placement-generator family, support topology/zero pattern, lower-order zero-minor/interiority pattern, cross-scale compatibility, intrinsic curvature coordinate, normalized pattern closure, coordinate covariance, residual gauge and topology/modulus of inference. AF-394--AF-397 sharpen the multiscale entry: the local analytic order-three cone is completely recognized, connectedness of positive logarithmic curvature is the exact residual global datum, and the explicit prime-log control needs linear successor reach with a two-term critical depth. Any arithmetic application must derive both the local signs and a source-faithful route to the nonlocal component relation rather than assume target positivity.
+For every proposed destination theorem state separately the observed data, admissible source/tail class, retained analytic layer, determinant/relation order, intrinsic support-scale interaction complexity, placement-generator family, support topology/zero pattern, lower-order zero-minor/interiority pattern, cross-scale compatibility, intrinsic curvature coordinate, normalized pattern closure, coordinate covariance, residual gauge and topology/modulus of inference. AF-394--AF-398 sharpen the multiscale entry: the local analytic order-three cone is completely recognized, connectedness of positive logarithmic curvature is the exact residual global datum, and the explicit prime-log control needs linear successor reach with a three-term critical depth whose corrections are dictated by prime density. Any arithmetic application must derive both the local signs and a source-faithful route to the nonlocal component relation rather than assume target positivity.

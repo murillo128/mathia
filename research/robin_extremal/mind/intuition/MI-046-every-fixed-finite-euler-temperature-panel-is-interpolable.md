@@ -1,0 +1,15 @@
+# MI-046 — Every fixed finite Euler-temperature panel is interpolable by bounded honest prime repairs
+
+**Evidence level:** exact synthesis from [RE-173](../../findings/RE-173-ordinary-prime-tail-matches-mertens-charge-with-transient-robin-excursion.md), [RE-182](../../findings/RE-182-every-fixed-euler-jet-depth-remains-nonrigid-under-bounded-prime-multiplicity.md), and [RE-183](../../findings/RE-183-every-fixed-finite-euler-temperature-panel-remains-nonrigid.md).
+
+RE-182 shows that every fixed finite jet of Euler data at the boundary point `s=1` can be matched exactly by an ordinary-prime-supported `{0,1,2}` repair while a selector-scale Robin excursion survives. RE-183 closes the obvious escape of moving from derivatives at one point to values at several separated temperatures.
+
+For any fixed finite panel `1=sigma_0<sigma_1<...<sigma_m`, RE-183 constructs, for sufficiently large selector prime `p`, an ordinary-prime multiplicity perturbation that agrees with the original source below the selector region, pays the same first-generation `Theta(sqrt(p)/log p)` honest deletion/duplication tariff, matches the Mertens coordinate and every Euler value at `sigma_1,...,sigma_m` exactly, stays inside every fixed Korobov--Vinogradov envelope, and still preserves an order-one transient Robin displacement before the remote repair is visible.
+
+The finite-temperature interpolation is again a finite-dimensional shell problem. After placing geometrically separated prime shells, the response matrix is a Vandermonde-type matrix in the distinct numbers `2^(1-sigma_i)`. Its invertibility lets later shell generations drive the finite residual panel exactly to zero without destroying bounded multiplicity or coarse source fidelity.
+
+Combined with RE-182, this removes a coordinate-choice ambiguity: **no fixed finite family of scalar Euler observations is a selector for this source class merely because the observations are derivatives at one boundary point or values at finitely many separated temperatures**. Finite-dimensional scalar information remains interpolable by honest prime repairs that the Robin destination can still distinguish transiently.
+
+The live source-fidelity boundary must therefore grow with selector scale or use a genuinely joint/nonlocal invariant that shell interpolation cannot satisfy. Candidates include growing temperature/jet dimension, the full Euler germ with usable conditioning, or arithmetic placement constraints coupling the selector packet to its compensating primes.
+
+**Boundary.** RE-183 does not cover a panel whose cardinality or temperatures grow with the selector, the full Euler germ, or additional arithmetic constraints tying repair locations to genuine colossally-abundant/Robin structure. It also does not make the finite interpolation cheap in every norm; it shows only that the fixed finite scalar panel is non-rigid inside the declared source class.

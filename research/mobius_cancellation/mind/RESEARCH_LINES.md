@@ -2,9 +2,9 @@
 
 This file holds the current mathematical questions suggested by the durable Möbius-cancellation intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Work inside the forced half-loaded source band with joint information, energy, inverse-conditioning, access-capacity and reliability control
+## Work inside the forced half-loaded source band with joint information, energy, inverse-conditioning, access-capacity and destination-relative reliability control
 
-**Linked intuitions:** `MI-013-bost-connes-regularity-needs-an-intermediate-transverse-category` through `MI-053-vanishing-raw-bit-error-costs-r-log-inverse-error-accesses`.
+**Linked intuitions:** `MI-013-bost-connes-regularity-needs-an-intermediate-transverse-category` through `MI-054-reliability-is-priced-by-the-destination-cut-not-output-size`.
 
 MC-307--MC-328 reduce the reciprocal endpoint to a character/source geometry with a quartic common-radical floor. Near saturation, almost all logarithmic source mass lies in columns of occupancy `R/2+o(R)`, where nonnegative endpoint-polynomial weights of degree `o(R)` are blind.
 
@@ -22,9 +22,17 @@ MC-348 removes the raw-coordinate acquisition model itself. For an arbitrary com
 
 whenever average Hamming error tends to zero, with explicit even/odd-rank constants. No transcript factorization, query syntax, finite alphabet, dimension or adaptive structure is assumed. Raw-coordinate protocols become corollaries by upper-bounding `mathfrak J` with their accumulated query divergence; noisy joint Euclidean encodings pay through source-edge Dirichlet energy.
 
-For endpoint dephasing this creates two nested regimes. A fixed nontrivial gain is governed by linear joint information/capacity. Approaching the matched-filter floor with vanishing coordinate error requires an additional logarithmic **source-graph reliability tariff**. The acquisition architecture may decide how that tariff is paid, but it cannot make neighboring admissible source states simultaneously indistinguishable and reliably recoverable.
+MC-349 now makes the reliability theorem destination-relative. For a quotient `q` of the source, let `E_q` be the neighboring-state edges on which `q` changes, `kappa_q` their average cut degree, `Delta_q` their maximum cut degree, and `mathfrak J_q` the source-averaged symmetrized KL carried only by those cut edges. If the destination error is `p_q`, then
 
-The live arithmetic problem is consequently narrower. For any proposed Möbius-derived transcript, first determine whether the destination truly requires coordinatewise source recovery or only a quotient/aggregate. If it requires vanishing coordinate error, bound the complete transcript's source-edge divergence using the resources actually supplied by the analytic construction. If the destination is insensitive to some source directions, identify the correct quotient graph before importing the reliability theorem. Nominal noise, dimension, access count, forward smoothness or coding syntax without that destination-relative geometry are not enough.
+`p_q >= (kappa_q/(4 Delta_q)) exp(-mathfrak J_q/kappa_q)`,
+
+so
+
+`mathfrak J_q >= kappa_q [log(kappa_q/(4 Delta_q p_q))]_+`.
+
+Thus a one-bit endpoint can still require extensive reliability when its cut crosses `Theta(R)` source directions, while a high-dimensional source may have a cheap destination if the quotient is constant along almost all neighboring directions. Output size, source dimension and full-vector reconstruction cost are not substitutes for destination-cut geometry.
+
+For endpoint dephasing this leaves a sharply stated arithmetic problem. First identify the actual destination quotient of the reciprocal source and its cut geometry inside the admissible source graph. Then bound the complete analytic transcript's divergence on exactly those cut edges using the resources genuinely supplied by the construction. A full-vector `Omega(R log(1/bar p))` tariff is justified only when the endpoint really requires that many neighboring source directions to remain distinguishable.
 
 ## Repair probabilistic Möbius comparators only after exact-stratum and algebraic-collapse gates
 
@@ -34,6 +42,6 @@ MC-318 shows that a probabilistic Möbius route can fail before delicate asympto
 
 ## Keep the resource ledger explicit
 
-Source loading, common-modulus analytic horizon, placement relative to energy compression, rowspace rank, total coefficient energy/conditioning, cross-mode variation, coordinate degree, own-phase access, quotient reconstruction cost, per-coordinate maximal correlation, joint transcript mutual information, intrinsic source dependence, accessed source-coordinate count, adaptive query policy, per-access channel capacity, target reconstruction error, accumulated query divergence, source-edge transcript divergence, source-graph Dirichlet energy, transcript metric dimension/spread, forward source regularity, inverse distinguishability/precision, declared readout noise/SNR and source-natural coupling are different resources.
+Source loading, common-modulus analytic horizon, placement relative to energy compression, rowspace rank, total coefficient energy/conditioning, cross-mode variation, coordinate degree, own-phase access, quotient reconstruction cost, per-coordinate maximal correlation, joint transcript mutual information, intrinsic source dependence, accessed source-coordinate count, adaptive query policy, per-access channel capacity, target reconstruction error, accumulated query divergence, source-edge transcript divergence, destination-cut degree/geometry, destination-cut transcript divergence, source-graph Dirichlet energy, transcript metric dimension/spread, forward source regularity, inverse distinguishability/precision, declared readout noise/SNR and source-natural coupling are different resources.
 
-MC-338--MC-348 identify the current invariant endpoint chain: admitted observations determine joint source information; source information and coefficient energy bound achievable dephasing; a metric realization must pay distinguishable-state packing; declared noise converts hidden precision into capacity; feedback cannot increase per-access memoryless capacity; and vanishing source-coordinate error has a logarithmic reliability price that survives variable fidelity and arbitrary joint coding when expressed as divergence on the admissible source graph. A useful arithmetic theorem must control the currencies required by the actual destination, after quotienting source directions the destination does not need.
+MC-338--MC-349 identify the current invariant endpoint chain: admitted observations determine joint source information; source information and coefficient energy bound achievable dephasing; a metric realization must pay distinguishable-state packing; declared noise converts hidden precision into capacity; feedback cannot increase per-access memoryless capacity; and vanishing destination error has a logarithmic reliability price on the source edges that actually cross the destination quotient. A useful arithmetic theorem must first identify that quotient and then control the cut-relative currencies required by the actual endpoint.

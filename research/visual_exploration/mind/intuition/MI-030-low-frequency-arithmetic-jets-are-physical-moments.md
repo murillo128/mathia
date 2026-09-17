@@ -1,29 +1,25 @@
-# MI-030 — Low-frequency jets are physical moments, but source selectivity begins only after pole subtraction
+# MI-030 — Low-frequency jets are physical moments, but fixed shrinking jets become prime-power blind
 
-**Evidence level:** exact/literature-bridged synthesis from [VIS-259](../../findings/VIS-259-cusp-adapted-packet-ladder-is-uniform-approximation-duality.md), [VIS-260](../../findings/VIS-260-rodgers-fixed-margin-error-pays-cusp-packet-conditioning.md), [VIS-261](../../findings/VIS-261-bk-low-frequency-jet-is-physical-moment.md), [VIS-262](../../findings/VIS-262-rodgers-diagonal-kernel-freezes-fixed-order-source-moments.md), [VIS-263](../../findings/VIS-263-subprime-band-weight-has-exact-quadratic-carrier.md), and [VIS-264](../../findings/VIS-264-quadratic-carrier-prime-power-curvature-sampler.md). The pair-correlation theorem and Bogomolny--Keating prediction are inherited from the audited Rodgers source.
+**Evidence level:** exact/literature-bridged synthesis from [VIS-259](../../findings/VIS-259-cusp-adapted-packet-ladder-is-uniform-approximation-duality.md) through [VIS-269](../../findings/VIS-269-diagonal-safe-shrinking-packets-prime-power-blind.md). The pair-correlation theorem and Bogomolny--Keating prediction are inherited from the audited Rodgers/Wang sources used by the line.
 
 Once the sine-kernel cusp and lower even nuisance moments have been cancelled, the remaining low-frequency coefficient has a direct physical-space representation. If `D_T(u)` is the Bogomolny--Keating-minus-matched-GUE kernel and `R_T(alpha)` its Fourier transform, then
 
 `R_T^(2j)(0)=(-1)^j log(T)^(2j) M_(2j)(T)`,
 
-where `M_(2j)(T)=int u^(2j)D_T(u)du`; all odd derivatives vanish. The first surviving low-frequency jet is therefore exactly the first surviving even physical-space moment of the kernel difference.
+where `M_(2j)(T)=int u^(2j)D_T(u)du`; all odd derivatives vanish. Fixed even low-frequency jets are therefore fixed even physical-space moments of the kernel difference.
 
-VIS-259 supplies the sharp observation needed to extract that jet. An order-`2m` cusp-adapted packet with normalized retained moment has total variation `E_m^(-1)b^(-2m)`. VIS-261 shows that pairing it with `R_T` returns the `2m`-th Taylor coefficient plus a controlled higher-order remainder, while VIS-260 supplies the logically independent fixed-margin theorem-transfer error `O(T^(-delta)E_m^(-1)b^(-2m))`.
+VIS-259 supplies the sharp observation cost needed to extract such a jet. An order-`2m` cusp-adapted packet with normalized retained moment has total variation `E_m^(-1)b^(-2m)`. VIS-260--VIS-268 separate that packet conditioning from theorem-transfer error and enforce the full leading-functional cancellation required by Wang's interface without changing the sharp seminorm exponents.
 
-VIS-262 closes the abstract existence side of the quadratic coefficient. Rodgers' final diagonal comparison freezes each fixed even moment to a functional `C_(2m)(omega)+O(T^(-delta))`, and some admissible weights have `C_2(omega)!=0`. VIS-263 shows why this cannot be promoted directly to arithmetic selectivity: one may choose `omega` with Fourier support strictly below the first nonzero prime frequency and still obtain
-
-`C_2(omega)=1/(2pi^2)`
-
-exactly. That carrier comes entirely from the zero-frequency pole-compensating term.
-
-VIS-264 now gives the exact decomposition that the previous boundary demanded:
+VIS-263--VIS-264 already show at quadratic order why a nonzero total carrier is not automatically arithmetic. The quadratic coefficient splits into a zero-frequency pole term and a finite prime-power curvature sampler,
 
 `C_2(omega)=hat omega(0)/(2pi^2) - (1/(8pi^4)) sum_p sum_(m>=1) (log p)^2 p^(-m) hat omega''(m log p/(2pi))`.
 
-Because `hat omega` is compactly supported, the prime-power sum is finite. The first term is the universal DC/pole background. The second is the genuinely source-dependent coordinate: a **prime-power curvature sampler**. If the support lies below `log 2/(2pi)`, the sampler vanishes identically and VIS-263 is recovered. If the support crosses prime frequencies, arithmetic access becomes possible but nonzero response is still not automatic: the sampled curvature may vanish or different prime-power terms may cancel.
+VIS-269 generalizes the same separation to **every fixed even order**. At order `2r`, the source-dependent part is sampled only at the nonzero prime-power frequencies `m log p/(2pi)`, through the corresponding `2r`-th derivative of the Fourier-side packet, while the remaining terms are zero-frequency pole/diagonal jets.
 
-The corrected reusable lesson is therefore three-layered. **Low-frequency jets are physical moments; a nonzero total carrier need not contain any prime-frequency information; and after explicit pole subtraction the remaining quadratic coordinate is a finite linear functional of prime-power Fourier curvature.** Arithmetic selectivity begins at this residual, not at the existence of the total coefficient.
+Therefore a shrinking packet family whose Fourier support eventually lies below the first prime frequency becomes exactly prime-power blind at every fixed even order. Increasing fixed moment order does not rescue the branch: after the support shrinks past the arithmetic spectrum, any surviving fixed-order coefficient is generated by the universal zero-frequency structure. In the diagonal-safe quadratic class, even that leading carrier is annihilated.
 
-For the support-edge program the next burden is exact. Freeze a weight faithful to the intended edge observable and show that its prime-power curvature sampler is nonzero at the required normalization while still paying the `b^-2` packet conditioning and theorem-transfer error. That would establish a source-selective fixed-margin quadratic carrier. Moving-edge uniformity and the four-level covariance needed by the original edge--edge statistic remain separate gates.
+The reusable lesson is sharper than “subtract the pole before claiming arithmeticity.” **Arithmetic selectivity requires the representation itself to intersect the arithmetic frequency support.** A hierarchy of ever higher fixed derivatives at the origin cannot recover frequencies that the shrinking support has excluded. More moment cancellation or larger fixed jet order only changes the universal local Taylor data unless the packet is redesigned to reach prime-power frequencies.
 
-**Boundary.** VIS-264 does not prove that a support-edge-faithful weight has nonzero prime-power residual, and the residual formula itself is not a zero-selection theorem. It also does not establish moving-edge uniformity or four-level covariance. The gain is sharper: pole/background subtraction is now explicit, so source selectivity of the quadratic carrier can be tested by one concrete finite prime-power curvature functional rather than inferred from nonzero amplitude.
+The next viable representation must therefore change support geometry — for example a fixed-width, translated, or multiband packet that reaches selected prime-power frequencies — and then reprice the Wang support margin, seminorm growth and error against that source-specific residual. A nonzero residual would still be only a source-selective carrier, not a zero-selection theorem.
+
+**Boundary.** VIS-269 is a fixed-even-order statement. It does not rule out jet order growing with `T`, packets whose support follows prime frequencies, translated/multiband designs, or higher-level covariance mechanisms. It also does not supply the required theorem transfer for those altered representations.
