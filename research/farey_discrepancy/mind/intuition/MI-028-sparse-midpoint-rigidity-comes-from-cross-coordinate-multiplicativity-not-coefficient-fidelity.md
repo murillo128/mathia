@@ -1,21 +1,23 @@
-# MI-028 — Sparse midpoint rigidity comes from cross-coordinate multiplicativity, not coefficient fidelity
+# MI-028 — Sparse midpoint rigidity comes from cross-coordinate multiplicativity, not near-extremal coefficient fidelity
 
-**Evidence level:** exact synthesis from [FD-170](../../findings/FD-170-consecutive-midpoint-history-inverts-the-entire-source.md) through [FD-177](../../findings/FD-177-long-dyadic-block-repair-preserves-every-subextremal-rank-window.md).
+**Evidence level:** exact synthesis from [FD-170](../../findings/FD-170-consecutive-midpoint-history-inverts-the-entire-source.md) through [FD-178](../../findings/FD-178-variable-dyadic-blocks-hide-second-order-near-maximal-multiplicative-rank-fidelity.md).
 
-The midpoint sequence is a changing linear observation of the source. Consecutive horizons invert it exactly, while FD-172--FD-174 show that geometric sparse horizons certify Möbius inside a squarefree multiplicative cone. It is tempting to attribute that recovery to coefficient sparsity, the ternary Möbius alphabet, correct prime signs, or agreement on many low multiplicative-rank layers. FD-175--FD-177 separate those effects.
+The midpoint sequence is a changing linear observation of the source. Consecutive horizons invert it exactly, while sparse geometric horizons become target-rigid inside the genuinely multiplicative squarefree source class. FD-175--FD-178 show that this rigidity is not explained by knowing primes, signs, low multiplicative ranks, or even an extremely deep coordinatewise approximation to the Möbius source.
 
-For integer geometric ladders with `B>=3`, FD-175--FD-176 construct permanent deletion-only sources `a(n) in {0,mu(n)}` that preserve every prime coefficient, any prescribed finite prefix, and a growing low-rank cone while agreeing with Möbius at every sampled midpoint horizon. FD-177 closes the dyadic gap. For every fixed `rho<1`, every finite cutoff and every `eta>0`, one can preserve
+For the dyadic ladder, FD-177 already constructs permanent deletion-only sources `a(n) in {0,mu(n)}` that agree with Möbius on every fixed subextremal fraction of the maximal squarefree-rank scale,
 
-`omega(n) <= rho log n/log log n`
+`omega(n) <= rho log n/loglog n`, `rho<1`,
 
-for all sufficiently large squarefree `n`, agree at **every** dyadic horizon `2^m`, and confine all deletions to a set with counting function `O(x^eta)`.
+while matching every sampled midpoint and modifying only `O(x^eta)` coefficients up to `x` for arbitrary `eta>0`.
 
-The dyadic mechanism is a **long-block repair**. Instead of repairing one new midpoint row at a time, group `k` consecutive dyadic rows. Their rounding defects span only a finite response family, and the correction demand grows like `L^(alpha_k)` with
+FD-178 pushes the protected coordinate region through the leading extremal-rank scale. For every fixed `0<c<1`, one can still match every dyadic midpoint while preserving all sufficiently large squarefree coefficients satisfying
 
-`alpha_k=log_2(k+1)/k -> 0`.
+`omega(n) <= (log n/loglog n)(1 + c/loglog n)`,
 
-Choosing `k` so that `alpha_k<1-rho` leaves enough high-rank squarefree composites of either Möbius sign in the fresh fixed-ratio shells to repair the whole block. The apparent `B=2` exponent obstruction in the one-step recurrence was therefore a repair-coordinate artifact, not a rigidity threshold.
+with a deletion set of size `x^o(1)`. The construction uses variable-length dyadic repair blocks: increasing the block length makes the correction family grow slowly enough that only a vanishingly thin population of very high-rank composites is needed to absorb the rounding debt.
 
-The reusable lesson is stronger than coefficientwise non-rigidity. Sparse observation can remain blind even when the source agrees with Möbius on **every fixed subextremal fraction of the maximal multiplicative-rank scale** and differs only on an arbitrarily sparse set of high-rank composites. What the genuinely multiplicative cone supplies is a global product law tying those rare high-rank repair coordinates back to prime coordinates already fixed earlier. Coordinate fidelity alone, however deep, does not reproduce that coupling.
+The reusable lesson is that **coordinate depth is not relational rigidity**. Even correctness through a second-order near-maximal multiplicative-rank window can leave enough rare high-rank coordinates to repair every sparse observation block. What the genuinely multiplicative source class supplies is a global product law tying those repair coordinates to prime data fixed earlier; separately correct coordinates do not reproduce that coupling.
 
-**Boundary.** FD-177 reaches every fixed `rho<1` but not the endpoint `(1-o(1)) log n/log log n`, full squarefree-rank fidelity, or another condition that couples the protected low-rank region to near-primorial composites. It does not give pairwise sparse inversion or improve the Franel--Landau destination estimate. The next structural target is therefore the extremal-rank endpoint or a genuinely cross-coordinate compatibility weaker than full multiplicativity but strong enough to make recursive shell repair impossible.
+This also changes how a prospective information lower bound should be formulated. Counting how many coefficients are fixed, how sparse the defect set is, or how close the protected rank is to the maximal scale does not measure the missing source information. The relevant resource is a cross-coordinate compatibility that prevents fresh-shell repair, or an observation family whose equations directly expose those compatible relations.
+
+**Boundary.** FD-178 does not reach full squarefree-rank fidelity, prove a sharp second-order extremal endpoint, give pairwise sparse inversion, or improve the Franel--Landau destination estimate. The remaining coordinatewise escape is now pushed into an exceptionally thin near-extremal shell. The more structural target is to identify a compatibility weaker than full multiplicativity but strong enough to make block repair impossible, and then connect that source rigidity to the nonlocal RH-critical destination norm.

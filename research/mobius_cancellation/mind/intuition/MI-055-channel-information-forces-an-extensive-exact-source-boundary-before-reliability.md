@@ -1,27 +1,19 @@
-# MI-055 — Channel information forces an extensive exact source boundary and reverse-discrimination budget
+# MI-055 — Channel information forces an extensive exact source boundary and a nonvanishing privacy-loss budget
 
-**Evidence level:** exact synthesis of MC-340 and [MC-349](../../findings/MC-349-destination-relative-edge-kl-reliability.md) through [MC-352](../../findings/MC-352-edge-likelihood-ratio-stability-dephasing-barrier.md). The finite-source information/KL/likelihood implication is exact for the declared reciprocal source; the analytic reverse-sensitivity upper bound remains open.
+**Evidence level:** exact synthesis of MC-340 and [MC-349](../../findings/MC-349-destination-relative-edge-kl-reliability.md) through [MC-353](../../findings/MC-353-privacy-loss-tail-budget.md). The finite-source information/KL/privacy-loss implications are exact for the declared reciprocal source; the analytic upper bound for a concrete Möbius architecture remains open.
 
-The transcript channel itself defines a canonical source quotient: two source states are equivalent exactly when they induce the same transcript law. MC-350 shows that bounded-energy dephasing cannot hide behind a quotient with a tiny exact boundary. If the transcript carries the information required by MC-340, entropy of this channel-law quotient and Boolean-cube isoperimetry force its cut to cross a linear number of source directions on average.
+The transcript channel defines a canonical source quotient: two source states are equivalent exactly when they induce the same transcript law. MC-350--MC-351 show that the information required by bounded-energy nontrivial dephasing forces this quotient to have an extensive source-graph boundary and forces an `Omega(R)` aggregate symmetrized KL budget on that exact cut.
 
-MC-351 closes the quantitative loophole left by exact distinction. For the source-natural neighboring graph, let `mathfrak J` be the source-averaged symmetrized transcript KL. In even rank,
+MC-352 converts reverse likelihood stability into an upper currency. For a neighboring source edge `e={x,x'}`, let `L_e=log(dP_x/dP_x')` and put `psi(u)=u tanh(u/2)`. The symmetrized edge divergence is bounded by the edge likelihood-ratio radius and hence cannot stay extensive if all neighboring transcript laws become uniformly likelihood-close.
 
-`mathfrak J_1 >= 2[I(X;Y)-Gamma_R]_+`, with `Gamma_R<2 log 2`,
+MC-353 sharpens this from a worst-case radius to the **distribution of privacy loss itself**. Under the edge mixture law `M_e=(P_x+P_x')/2`,
 
-and the odd-rank pair-flip source has the analogous linear lower bound up to an `O(1)` puncture defect. Because non-cut edges of the channel-law quotient have identical transcript laws, they contribute zero KL: the entire budget is already supported on the exact channel cut.
+`b_e = E_(M_e) psi(|L_e|)`
 
-MC-352 supplies the matching upper currency. For an edge `e={x,x'}`, let
+for the corresponding half-Jeffreys divergence. Averaging over the natural source graph therefore turns the compulsory KL tariff into a compulsory privacy-loss tariff. If bounded-energy nontrivial dephasing requires a positive asymptotic average of `b_e`, then for every cutoff `u` the mass of `psi(|L_e|)` above `u` must pay the part not already supplied below `u`.
 
-`epsilon_e = ess sup |log(dP_x/dP_x')|`
+Consequently, convergence of source-edge privacy loss to zero in probability is incompatible with the required dephasing whenever the family is uniformly integrable in this `psi` currency. A uniform `p>1` moment bound gives an explicit version: rare large-privacy-loss edges cannot carry the whole extensive Jeffreys budget once their probability tends to zero fast enough. The remaining escapes are now concrete—nonvanishing typical reverse contrast, loss of uniform integrability/moment control, or a rare tail whose magnitude is large enough to carry constant aggregate divergence.
 
-with `epsilon_e=+infinity` when the neighboring transcript laws are not mutually absolutely continuous, and put `psi(u)=u tanh(u/2)`. The symmetrized edge divergence obeys the sharp bound
+The reusable lesson is that **information must be paid by reverse statistical distinguishability in the actual transcript law, not by forward smoothness of the encoding**. Exact quotient geometry identifies which neighboring source directions matter; aggregate KL says how much discrimination is compulsory; MC-353 says that this discrimination must appear either typically or in a quantitatively visible privacy-loss tail.
 
-`b_e <= psi(epsilon_e)`,
-
-with `psi(u)=u^2/2+O(u^4)` and `psi(u)<=u^2/2`. Thus the extensive KL tariff cannot coexist with uniformly vanishing source-edge likelihood contrast. Under bounded coefficient energy, any nontrivial asymptotic dephasing forces a nonvanishing weighted average of `psi(epsilon_e)`; exact matched-energy dephasing drives the relevant neighboring transcript laws to mutual singularity.
-
-This sharpens the remaining problem from generic “analytic affordability” to **reverse statistical sensitivity of the actual observation law**. A proposed Möbius/endpoint architecture must upper-bound the source-edge likelihood-ratio radius, or a suitable averaged/exceptional-tail version of the same `psi` budget, using coefficient energy, analytic bandwidth, precision, regularity or another genuinely available resource. Forward smoothness of the encoding is not such a bound: it can coexist with exponentially fine inverse distinguishability.
-
-The reusable lesson is that exact quotient geometry and quantitative distinguishability should be connected in both directions. Information first forces a large exact boundary and an extensive aggregate edge divergence; a concrete analytic architecture can defeat that lower bound only by proving that neighboring source states remain statistically too similar in the **reverse** likelihood sense. Counting coordinates, bounding forward derivatives, or postulating a noise model without controlling the induced transcript likelihoods does not close the loop.
-
-**Boundary.** The channel-law quotient is still not automatically the actual Möbius endpoint quotient. MC-352 supplies an exact conversion from edge likelihood-ratio stability to an upper KL budget, but no theorem yet bounds those likelihood ratios for a concrete Möbius architecture from its analytic resources. It does not estimate `M(x)` or prove RH. The live bridge is to prove a source-natural reverse-sensitivity estimate strong enough to make the compulsory extensive discrimination unaffordable, or else identify a cheaper destination quotient honestly.
+**Boundary.** No theorem yet bounds the privacy-loss distribution of a concrete Möbius/endpoint architecture from coefficient energy, analytic bandwidth, precision or regularity. MC-353 is a finite-source endpoint theorem and does not estimate `M(x)` or prove RH. The live bridge is now an analytic uniform-integrability/tail theorem for the induced source-edge transcript laws, or an honest demonstration that the architecture really can sustain the required heavy reverse-discrimination tail.

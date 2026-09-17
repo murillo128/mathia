@@ -1,21 +1,27 @@
-# MI-047 — Growing scalar Euler depth up to the KV shell scale remains non-rigid
+# MI-047 — Growing scalar Euler depth remains non-rigid when repair width is paid spatially
 
-**Evidence level:** exact constructive synthesis from RE-173, RE-178, RE-182, [RE-184](../../findings/RE-184-growing-euler-jet-depth-below-kv-shell-scale-remains-nonrigid.md), and [RE-185](../../findings/RE-185-chebyshev-shell-interpolation-removes-the-growing-jet-log-loss.md). The constant-fraction KV range is sufficient, not claimed sharp.
+**Evidence level:** exact constructive synthesis from RE-173, RE-178, RE-182 and [RE-184](../../findings/RE-184-growing-euler-jet-depth-below-kv-shell-scale-remains-nonrigid.md) through [RE-187](../../findings/RE-187-expanding-chebyshev-windows-push-euler-jet-non-rigidity-past-the-scalar-crossover.md). The stated depth range is sufficient, not claimed sharp.
 
-The failure of scalar Euler data is not confined to fixed dimension. Let
+Scalar Euler depth does not become rigid merely because it reaches or exceeds the first apparent capacity crossover. Earlier constructions progressed from fixed depth to `K=Theta(V(p))` and then, after conditioning the moving interpolation frame, to every
 
-`V(p)=(log p)^(3/5)/(log log p)^(1/5)`.
+`K=o(log p/loglog p)`
 
-RE-184 already constructed ordinary-prime-supported `{0,1,2}` controls matching every Euler boundary derivative through depth `K` when `K log(K+2)=o(V(p))`, while preserving every fixed Korobov--Vinogradov source envelope and an order-one transient Robin displacement. RE-185 shows that the `log K` loss was not source rigidity but a basis-conditioning artifact.
+while preserving ordinary-prime support, multiplicities in `{0,1,2}`, every fixed Korobov--Vinogradov source envelope and an order-one transient Robin excursion.
 
-After normalizing the logarithmic repair shell and using a Chebyshev-type interpolation basis, the repair overhead becomes `exp(O(K))`. There is therefore an absolute `c_*>0` such that every
+RE-187 shows that the coincidence with `log p/loglog p` was a fixed-window artifact. The centered Euler kernels admit an exact prime-power resummation in a Chebyshev coordinate. If the logarithmic interpolation window is widened to
 
-`1 <= K <= c_* V(p)`
+`W_p ~ K^2/log p`,
 
-can still be matched exactly by an ordinary-prime-supported `{0,1,2}` source with the same KV fidelity and transient Robin ambiguity. In particular every `K=o(V(p))` is admissible without choosing a small constant.
+the full prime-power tail becomes exponentially harmless while microstepped residue tracks keep the ordinary-prime repair shells disjoint. The remaining cost is no longer scalar interpolation conditioning but **where the repair reservoir must live**.
 
-This sharpens the reusable mechanism: **scalar-family dimension becomes meaningful only after the interpolation geometry is conditioned optimally**. A growth barrier seen in raw monomials can be an artifact of coordinates rather than a source-capacity threshold. Here the honest source fibre absorbs a constant fraction of the full KV shell scale once the repair basis is adapted to that shell.
+Requiring that the enlarged reservoir remain invisible to every fixed KV fidelity envelope yields the sufficient range
 
-The live transition is therefore no longer the `K log K` regime. RE-178 places the raw higher-jet capacity scale much higher, at `K_cap(p) asymp log p/log log p`, while RE-185 proves non-rigidity through `K=Theta(V(p))`. Any scalar-jet rigidity theorem must either cross the KV shell scale by a genuine source obstruction or use joint/nonlocal placement information that shell interpolation cannot reproduce.
+`K=o((log p)^(4/3)(loglog p)^(1/6))`,
 
-**Boundary.** RE-185 does not reach the RE-178 capacity scale or prove that `V(p)` is a sharp barrier. The repair still uses an infinite continuation and the declared `{0,1,2}` ordinary-prime source class; finite perturbations remain rigid under RE-172. The conclusion does not make the full Euler germ cheaply conditioned and does not address arbitrary growing separated-temperature panels.
+which is parametrically larger than `log p/loglog p`. Exact boundary jets at those depths still fail to select the ordinary-prime source uniquely at Robin scale.
+
+The reusable lesson is that **representation capacity can migrate between coordinates**. Optimizing the polynomial basis removed an interpolation-conditioning tariff; microstepping removed the coarse-generation transport tariff; widening the window then trades still larger scalar depth for a spatial source-placement tariff. A claimed scalar rigidity threshold is not intrinsic until all such equivalent repair coordinates have been priced.
+
+The live resource is now the spatial width needed to realize a deep exact jet while remaining source-invisible. RE-187 pays `W~K^2/log p`; proving that some comparable lower bound is unavoidable would turn this construction into a genuine source-capacity boundary. Finding a more adaptive frame or nonuniform repair could instead push non-rigidity deeper.
+
+**Boundary.** RE-187 does not prove the quadratic width tariff sharp, does not make the full Euler germ cheaply non-rigid, and does not show that scalar data are irrelevant when coupled to a genuinely joint/nonlocal source invariant. It is a matched-control theorem: deep scalar Euler agreement, even beyond the old crossover, still does not by itself force the Robin destination.

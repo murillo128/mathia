@@ -2,56 +2,28 @@
 
 This file holds the current mathematical questions suggested by the durable Möbius-cancellation intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Work inside the forced half-loaded source band with joint information, energy, inverse-conditioning, access-capacity and destination-relative reliability control
+## Upper-bound the reverse-discrimination tail of the actual endpoint transcript
 
 **Linked intuitions:** `MI-013-bost-connes-regularity-needs-an-intermediate-transverse-category` through `MI-055-channel-information-forces-an-extensive-exact-source-boundary-before-reliability`.
 
-MC-307--MC-328 reduce the reciprocal endpoint to a character/source geometry with a quartic common-radical floor. Near saturation, almost all logarithmic source mass lies in columns of occupancy `R/2+o(R)`, where nonnegative endpoint-polynomial weights of degree `o(R)` are blind.
+The reciprocal endpoint problem has been reduced from syntactic complexity to invariant source discrimination. Bounded coefficient energy with nontrivial all-mode dephasing forces linear joint source information. On the natural source graph, destination-relative reliability charges only edges that cross the relevant quotient, while the canonical channel-law quotient itself must have an extensive exact boundary.
 
-MC-329--MC-337 show that fixed-modulus bias energy, signed low-order processing, one common coefficient vector, low rank, low degree and apparent coordinate exclusion are not invariant endpoint restrictions. Source coordinates can reconstruct syntactically hidden phases cheaply, and exact source relations must be quotiented before a complexity claim is meaningful.
+MC-351 forces an `Omega(R)` aggregate symmetrized transcript-KL budget on that boundary. MC-352 identifies reverse likelihood contrast as an upper currency for the same budget. MC-353 now removes the need for a uniform worst-case likelihood radius: for each neighboring edge, the half-Jeffreys divergence is exactly
 
-MC-338--MC-340 identify the invariant finite-source currencies. If `Y` is the complete admitted transcript and `X` the reciprocal source vector, bounded coefficient energy can produce nontrivial all-mode dephasing only when the transcript carries linear joint source information. For the punctured source law the intrinsic total-correlation surcharge is only `O(1)`, so bounded-energy constant-factor dephasing requires `I(X;Y)=Omega(R)`; near the matched-filter floor it requires almost the full source entropy.
+`E_M psi(|L|)`, `psi(u)=u tanh(u/2)`,
 
-MC-341 closes the obvious analog-coordinate loophole once the transcript has a source-natural Euclidean metric. MC-342 shows why benign forward source regularity is not a substitute: a scalar dyadic transcript can carry `Theta(R)` source information with bounded range and forward regularity by hiding it in exponentially small separation. MC-343 turns that precision loophole into a channel-capacity obstruction under additive Gaussian readout.
+under the mixture of the two neighboring transcript laws. The compulsory information tariff is therefore a compulsory **privacy-loss distribution** tariff.
 
-MC-344--MC-345 give the discrete capacity analogue: fixed-quality noisy coordinate access contributes at most channel capacity per actual access even under feedback, revisiting and adaptive stopping. MC-346 then separates reliability from capacity: vanishing average raw-coordinate error costs `Omega_q(R log(1/bar p))` expected accesses at fixed BSC quality. MC-347 removes fixed channel quality as an invariant and charges accumulated directional discrimination divergence instead of nominal event count.
+This sharpens the live arithmetic bridge. A proposed endpoint architecture can be ruled out if its source-edge privacy loss tends to zero in probability together with enough uniform integrability, or more concretely if an analytic resource bound controls a `p>1` moment strongly enough that rare tails cannot carry the required constant Jeffreys mass. Conversely, a surviving architecture must exhibit where the necessary reverse discrimination lives: in typical neighboring contrasts, in a genuinely heavy exceptional tail, or in singular transcript laws.
 
-MC-348 removes the raw-coordinate acquisition model itself. For an arbitrary complete transcript law `P_x`, put the natural neighboring-state graph on the reciprocal source support and charge each edge by the symmetrized KL divergence between `P_x` and `P_x'`. The source-averaged edge budget `mathfrak J` obeys
-
-`mathfrak J = Omega(R log(1/bar p))`
-
-whenever average Hamming error tends to zero, with explicit even/odd-rank constants. No transcript factorization, query syntax, finite alphabet, dimension or adaptive structure is assumed. Raw-coordinate protocols become corollaries by upper-bounding `mathfrak J` with their accumulated query divergence; noisy joint Euclidean encodings pay through source-edge Dirichlet energy.
-
-MC-349 makes the reliability theorem destination-relative. For a quotient `q` of the source, let `E_q` be the neighboring-state edges on which `q` changes, `kappa_q` their average cut degree, `Delta_q` their maximum cut degree, and `mathfrak J_q` the source-averaged symmetrized KL carried only by those cut edges. If the destination error is `p_q`, then
-
-`p_q >= (kappa_q/(4 Delta_q)) exp(-mathfrak J_q/kappa_q)`,
-
-so
-
-`mathfrak J_q >= kappa_q [log(kappa_q/(4 Delta_q p_q))]_+`.
-
-Thus a one-bit endpoint can still require extensive reliability when its cut crosses `Theta(R)` source directions, while a high-dimensional source may have a cheap destination if the quotient is constant along almost all neighboring directions. Output size, source dimension and full-vector reconstruction cost are not substitutes for destination-cut geometry.
-
-MC-350 identifies the canonical exact channel-law quotient `q_Y`: source states are equivalent precisely when they induce the same complete transcript law. The information floor from MC-340 forces this quotient to have an extensive source-graph cut. Near the matched-filter floor essentially every local source direction must cross the exact channel boundary. Exact distinction alone, however, left open the possibility that neighboring transcript laws on those cut edges were arbitrarily close.
-
-MC-351 closes that lower-bound loophole. For the same source-natural graph, the all-edge symmetrized transcript-KL budget satisfies a dimension-free-defect inequality of the form
-
-`mathfrak J >= c I(X;Y)-O(1)`.
-
-In even rank one has exactly `mathfrak J_1 >= 2[I(X;Y)-Gamma_R]_+` with `Gamma_R<2 log 2`; the odd pair-flip source has the analogous linear bound up to an `O(1)` puncture defect. Non-cut channel-quotient edges have identical transcript laws and zero divergence, so this entire budget is already supported on the exact channel cut. Bounded-energy constant-factor dephasing therefore forces `mathfrak J=Omega(R)`, while exact matched-energy dephasing makes neighboring source rows mutually singular and gives infinite edge KL.
-
-MC-352 supplies a source-edge **upper** currency for the same budget. If `epsilon_e` is the essential supremum of the absolute log-likelihood ratio between the two transcript laws on edge `e`, then the symmetrized edge divergence obeys `b_e<=psi(epsilon_e)` with `psi(u)=u tanh(u/2)<=u^2/2`. Therefore bounded-energy nontrivial dephasing is impossible if the relevant source-edge likelihood radii vanish uniformly, and more generally it requires an extensive weighted average of `psi(epsilon_e)`. Exact matched-energy dephasing forces singular neighboring laws rather than merely large but finite contrast.
-
-The lower-bound side of the finite-source information problem is therefore substantially closed, and the affordability question is now sharper. The live arithmetic task is to identify the actual endpoint quotient when it is stricter or coarser than `q_Y`, and upper-bound the induced **reverse statistical sensitivity**—the source-edge likelihood-ratio radius or an averaged/exceptional-tail `psi` budget—using only coefficient energy, bandwidth, precision, regularity or other analytic resources genuinely available to the proposed Möbius/endpoint architecture. A sublinear edge budget, or a uniformly vanishing edge-likelihood radius under bounded energy, would contradict the compulsory tariff; a linear or larger budget leaves the architecture alive.
+The next theorem should therefore upper-bound the induced privacy-loss tail or moment budget from resources that the actual analytic architecture really has—coefficient energy, bandwidth, precision, regularity, source geometry or another invariant. Forward Lipschitz control, coordinate count, apparent low rank and generic smoothness are not substitutes; they can coexist with exponentially fine inverse distinguishability.
 
 ## Repair probabilistic Möbius comparators only after exact-stratum and algebraic-collapse gates
 
-**Linked intuition:** `MI-040-probabilistic-mobius-proxies-must-survive-exact-arithmetic-consistency`.
-
-MC-318 shows that a probabilistic Möbius route can fail before delicate asymptotics: conditioning on `Omega(n)=1` forces squarefreeness, contradicting an asserted independence, and its auxiliary sum collapses exactly to `lambda(n)M(x)`. A repaired probabilistic route needs a dependence law valid on a nondegenerate arithmetic stratum and an observable whose exact multiplicative simplification leaves information beyond `M(x)`.
+Probabilistic proxies remain secondary until their conditioning is arithmetically consistent and their observables survive exact multiplicative simplification. A model that becomes degenerate after conditioning on an exact arithmetic stratum, or whose auxiliary statistic collapses algebraically to `M(x)`, has not created an independent cancellation mechanism.
 
 ## Keep the resource ledger explicit
 
-Source loading, common-modulus analytic horizon, placement relative to energy compression, rowspace rank, total coefficient energy/conditioning, cross-mode variation, coordinate degree, own-phase access, quotient reconstruction cost, per-coordinate maximal correlation, joint transcript mutual information, intrinsic source dependence, accessed source-coordinate count, adaptive query policy, per-access channel capacity, target reconstruction error, accumulated query divergence, source-edge transcript divergence, source-edge likelihood-ratio radius/reverse sensitivity, destination-cut degree/geometry, destination-cut transcript divergence, source-graph Dirichlet energy, transcript metric dimension/spread, forward source regularity, inverse distinguishability/precision, declared readout noise/SNR and source-natural coupling are different resources.
+The current invariant chain distinguishes source loading, coefficient energy, exact source quotient, joint transcript information, destination-cut geometry, aggregate edge KL, privacy-loss distribution, inverse distinguishability/precision and declared readout noise. These are different resources.
 
-MC-338--MC-352 identify the current invariant endpoint chain: admitted observations determine joint source information; source information and coefficient energy bound achievable dephasing; a metric realization must pay distinguishable-state packing; declared noise converts hidden precision into capacity; feedback cannot increase per-access memoryless capacity; destination reliability has a logarithmic price on the source edges that cross the destination quotient; mutual information already forces an extensive aggregate KL budget across the exact channel-law cut; and likelihood-ratio stability gives a direct upper currency for that same edge budget. A useful arithmetic theorem must now control the affordability of the induced transcript likelihood contrast in the actual analytic architecture.
+A useful Möbius endpoint theorem must close the loop in both directions: the destination must force enough neighboring-state discrimination, and the concrete analytic channel must be shown unable to afford that discrimination at the relevant scale. MC-353 makes the second direction a tail/uniform-integrability problem rather than an informal appeal to smoothness.
