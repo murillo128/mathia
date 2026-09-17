@@ -4,7 +4,7 @@ This file holds the current mathematical questions suggested by the durable Möb
 
 ## Work inside the forced half-loaded source band with joint information, energy and inverse-conditioning control
 
-**Linked intuitions:** `MI-013-bost-connes-regularity-needs-an-intermediate-transverse-category` through `MI-051-gaussian-readout-noise-converts-source-information-into-snr-cost`.
+**Linked intuitions:** `MI-013-bost-connes-regularity-needs-an-intermediate-transverse-category` through `MI-052-bit-flip-noise-prices-coordinate-access-not-noise-alone`.
 
 MC-307--MC-328 reduce the reciprocal endpoint to a character/source geometry with a quartic common-radical floor. Near saturation, almost all logarithmic source mass lies in columns of occupancy `R/2+o(R)`, where nonnegative endpoint-polynomial weights of degree `o(R)` are blind.
 
@@ -20,9 +20,15 @@ MC-343 converts that qualitative precision loophole into an exact noisy-channel 
 
 `I(X;Z) <= (d/2) log(1+V_T/(d sigma^2)) <= V_T/(2 sigma^2)`,
 
-with the analogous diameter bound `I(X;Z) <= (d/2) log(1+D_T^2/(2d sigma^2))`. Combining this with the MC-340 information requirement forces `V_T/sigma^2 >= d(exp(2L_R/d)-1)` and the corresponding diameter-to-noise cost. Fixed transcript dimension therefore requires exponential SNR/spread; arbitrary dimension still pays at least the information-scale variance cost. Exact source recovery or exact dephasing is impossible at any positive Gaussian noise because distinct finite-source Gaussian output laws overlap.
+with the analogous diameter bound `I(X;Z) <= (d/2) log(1+D_T^2/(2d sigma^2))`. Combining this with the MC-340 information requirement forces explicit SNR/spread cost, exponential in `R` at fixed dimension.
 
-The live arithmetic problem is narrower again. For any proposed Möbius-derived transcript with a declared positive readout-noise scale, MC-343 already prices the analog packing loophole by channel capacity. A surviving architecture must either derive enough source-dependent SNR/metric separation from genuine arithmetic structure, justify a different source-natural noise/readout model and prove its capacity, or explicitly rely on effectively noiseless/arbitrary-precision access and explain why that access is legitimate downstream. Range, forward coefficient sensitivity, forward source-gradient energy or nominal dimension alone remain irrelevant.
+MC-344 sharpens what readout noise does and does not buy. If only `k` source coordinates are observed through independent bit-flip noise with crossover `q`, then data processing gives
+
+`I(X;Y) <= k c(q)`, with `c(q)=log 2-h(q)` in natural units.
+
+Combining this with the MC-340 dephasing requirement forces a linear accessed-coordinate fraction for any fixed nontrivial bounded-energy gain. But when all `R` coordinates are exposed at any fixed `q<1/2`, the noisy readout still carries `R c(q)-o(R)=Theta(R)` information under the punctured source law. **Positive fixed noise is therefore not itself an endpoint obstruction.** The invariant resource is aggregate source-access capacity: sublinear coordinate access, nearly randomizing noise, low-dimensional SNR limits, or dependence that genuinely drives total channel capacity to `o(R)` can obstruct dephasing; an extensive positive-capacity channel cannot.
+
+The live arithmetic problem is consequently narrower. For any proposed Möbius-derived transcript, identify the actual source-access channel and prove its aggregate information budget at the resolution consumed downstream. A surviving architecture may legitimately use `Theta(R)` source information, but then that extensive access must arise from genuine arithmetic observables and still be converted into the required coherent endpoint cancellation. Nominal noise, range, forward sensitivity, gradient energy or coordinate count without a capacity theorem are not enough.
 
 ## Repair probabilistic Möbius comparators only after exact-stratum and algebraic-collapse gates
 
@@ -32,6 +38,6 @@ MC-318 shows that a probabilistic Möbius route can fail before delicate asympto
 
 ## Keep the resource ledger explicit
 
-Source loading, common-modulus analytic horizon, placement relative to energy compression, rowspace rank, total coefficient energy/conditioning, cross-mode variation, coordinate degree, own-phase access, quotient reconstruction cost, per-coordinate maximal correlation, joint transcript mutual information, intrinsic source dependence, transcript metric dimension/spread, forward source regularity, inverse distinguishability/precision, declared readout noise/SNR and source-natural coupling are different resources.
+Source loading, common-modulus analytic horizon, placement relative to energy compression, rowspace rank, total coefficient energy/conditioning, cross-mode variation, coordinate degree, own-phase access, quotient reconstruction cost, per-coordinate maximal correlation, joint transcript mutual information, intrinsic source dependence, accessed source-coordinate count, per-coordinate channel capacity, transcript metric dimension/spread, forward source regularity, inverse distinguishability/precision, declared readout noise/SNR and source-natural coupling are different resources.
 
-MC-338--MC-343 identify the current invariant endpoint chain: admitted observations determine joint source information; source information and coefficient energy bound achievable dephasing; a finite-dimensional metric realization must pay distinguishable-state packing; bounded forward regularity does not pay that bill; and once a positive Gaussian readout scale is declared, Shannon capacity turns the hidden precision directly into an SNR/spread lower bound. A useful arithmetic theorem must control these currencies for the **actual** source representation rather than choose coordinates or a noiseless readout in which the desired obstruction disappears.
+MC-338--MC-344 identify the current invariant endpoint chain: admitted observations determine joint source information; source information and coefficient energy bound achievable dephasing; a finite-dimensional metric realization must pay distinguishable-state packing; bounded forward regularity does not pay that bill; declared noise converts hidden precision into a channel-capacity budget; and coordinatewise noisy access shows that the decisive quantity is **total surviving capacity**, not noise presence by itself. A useful arithmetic theorem must control these currencies for the actual source representation rather than choose coordinates or a readout model in which the desired obstruction disappears.

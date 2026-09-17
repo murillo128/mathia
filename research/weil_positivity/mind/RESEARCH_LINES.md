@@ -1,37 +1,27 @@
 # Weil-positivity research lines
 
-This file holds the current mathematical lines of investigation suggested by the durable Weil-positivity intuitions. It is not a roadmap, task queue, status page, or history.
+This file holds the current mathematical questions suggested by the durable Weil-positivity intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Find a source-derived sign theorem outside scalar shadows and universal enriched lifts
+## Identify a sign mechanism that survives stationary scalarization without inserting the arithmetic quadratic direction
 
-**Linked intuitions:** `MI-001-positivity-needs-a-sign-producing-global-operation`, `MI-010-source-forced-critical-gram-can-have-the-wrong-weil-orientation` through `MI-044-fixed-positive-scalarization-cannot-rescue-stationary-operator-valued-transport`.
+**Linked intuitions:** `MI-039-stationary-negative-type-transport-needs-quadratic-drift-for-weil-tail-control` through `MI-045-uniformly-dominated-moving-readouts-collapse-to-fixed-scalarization`.
 
-WP-293--WP-330 close broad scalar, semigroup and operator-valued routes whose positivity is universal before the source-selective readout. WP-331--WP-332 give the opposite exact rigidity: a faithful UCP readout preserving the first two moments of the same self-adjoint source observable has zero Kadison defect and places that observable in the multiplicative domain.
+WP-339 isolates the tail requirement: any scalar transport cost that universally controls the moving Kadison defect must have quadratic growth in the arithmetic displacement. WP-340 shows that one-ray stationary Hilbert geometry obtains such growth only from a Euclidean drift sector.
 
-WP-333--WP-338 expose and classify the moving-tail loophole. Strong convergence on bounded observables can coexist with order-one variance on a growing logarithmic coordinate. Rowwise `W_2^2` is exactly Kadison defect plus squared barycentric bias; every `W_p`, `p<2`, misses rare long jumps, while every `p>=2` controls them.
+WP-341 extends the classification to the prime-exponent group. A translation-invariant CND cost dominates
 
-WP-339 extends that threshold to every scalar displacement penalty: uniform defect control under channel convergence is possible exactly when the tail cost eventually dominates the quadratic displacement. Any asymptotically subquadratic scalar cost admits an exact-barycentric rare-long-jump counterexample.
+`L(alpha)^2=(sum_p alpha_p log p)^2`
 
-WP-340 classifies the stationary Hilbertian escape on one prime-power ray. A translation-invariant negative-type cost has quadratic growth only through an invariant Euclidean drift; the pure spectral/jump part is subquadratic.
+only when its Levy--Khinchin quadratic sector already contains the arithmetic logarithm as a bounded Hilbert covector, equivalently a rank-one PSD direction. A stationary metric cannot manufacture the Weil log-square from its oscillatory sector.
 
-WP-341 closes the direct **cross-prime stationary scalar** extension. On the full prime-exponent group `Gamma=direct_sum_p Z e_p`, let `L(alpha)=sum_p alpha_p log p` and let `psi` be a translation-invariant squared-Hilbert/CND cost. Its abelian Levy--Khinchin decomposition is a quadratic part `q` plus a positive spectral/jump part. Eventual control
+WP-342 shows that a stationary operator-valued order-CND lift does not evade this when the Weil-facing readout is one fixed positive linear functional. Positive scalarization is scalar CND, so the same quadratic-sector theorem applies.
 
-`psi(alpha) >= a L(alpha)^2`
+WP-343 closes a broad state-dependent version of the remaining loophole. Let the positive readout vary with the source state, but suppose all readouts satisfy one uniform domination envelope `0<=phi_alpha<=C omega` for a fixed positive functional `omega`. If `phi_alpha(Psi(alpha))` controls `L(alpha)^2`, then the fixed scalarization `omega(Psi(alpha))` controls the same square up to `C`, and WP-341--WP-342 apply again. In finite-dimensional `C*`-algebras every state is uniformly dominated by a fixed faithful trace, so arbitrary moving states or top-eigenvector choices do not escape. More generally, continuous nonnegative degree-one homogeneous readouts on a finite-dimensional positive cone are trace-dominated and collapse to the same fixed scalar shadow.
 
-holds if and only if
+The surviving categories are consequently narrower. A genuinely new mechanism must use operator-level positivity **before** scalarization, a nonlinear readout that is not uniformly dominated by one positive functional, an infinite-dimensional/singular moving state where no finite domination constant exists, nonstationary/basepoint-dependent geometry, a genuinely noncommutative source domain, or an independent arithmetic theorem that directly supplies the required quadratic log displacement. Calling a finite-dimensional moving state “adaptive” is not enough.
 
-`q(alpha) >= a L(alpha)^2`
+## Keep source dependence distinct from sign coercivity
 
-for every `alpha`. Equivalently the arithmetic logarithm is already a bounded Hilbert covector of the quadratic sector; on each finite prime window the Gram matrix contains the rank-one PSD direction `a ell ell^T` with `ell_p=log p`. Cross-prime spectral coupling cannot synthesize the missing log-square from a softer stationary geometry.
+WP-341--WP-343 are no-escape theorems for broad stationary transport/readout architectures. They do not prove that every nonlinear or singular operator construction fails, and they do not prove Weil positivity. Their use is to prevent source labels, operator dimension, state dependence or spectral readouts from being credited as arithmetic leverage when the sign-relevant quantity is still uniformly dominated by one fixed positive scalarization.
 
-WP-342 closes the immediate **stationary operator-valued plus fixed positive readout** escape. If `Psi:Gamma->A_sa` is stationary order-CND and `phi:A->C` is any fixed positive linear functional, then `psi_phi=phi circ Psi` is scalar CND. Therefore any eventual scalarized domination `psi_phi(alpha)>=aL(alpha)^2` is already subject to WP-341: the scalarized Levy--Khinchin quadratic sector must contain the arithmetic log-square, equivalently `L` must factor as a bounded Hilbert covector through that quadratic sector. States, traces and density-matrix expectations do not let operator-valued stationary transport synthesize the missing quadratic control after scalarization.
-
-The remaining UCP route is therefore not to search for another scalar metric, a richer stationary Hilbert embedding, or an operator-valued stationary CND kernel whose Weil-facing observable is only a fixed positive linear scalarization. It must derive decay of the **quadratic logarithmic displacement energy** from genuinely source-specific arithmetic structure, exploit nonseparable operator positivity before scalarization, use a genuinely nonlinear/state-dependent readout with its own sign theorem, or leave the stationary commutative domain for a global/noncommutative coupling. Matched free-abelian controls reproduce WP-341--WP-342 for arbitrary weights, so operator notation and prime labels alone are not selective.
-
-## Separate source fingerprint from source-selective sign
-
-Shifted-lattice support, Mangoldt coefficients, prime-power gaps, exact scalar laws, dyadic realizations and the prime-exponent logarithm are source-specific fingerprints. WP-333--WP-342 show that the moving-tail variance obstruction, its sharp transport thresholds, and the fixed-positive-scalarization reduction remain generic probability/Hilbert/operator geometry even on intrinsic arithmetic coordinates. A valid sign mechanism must fail on an appropriate matched control, not merely carry the arithmetic log vector explicitly or hide it inside an operator-valued kernel.
-
-## Match the topology to the moving observable without restating the target
-
-The useful ledger remains channel error, barycentric bias, propagation geometry, scalarization/readout and the destination's moving quadratic scale. WP-339 says every scalar cost that universally closes the defect must already pay that quadratic scale; WP-340--WP-341 say stationary Hilbert geometry supplies it only through a genuine quadratic drift sector containing the relevant logarithmic direction; WP-342 says fixed positive scalarization of a stationary operator-valued CND cost inherits the same requirement. Future weighted graph, energy, operator-valued or noncommutative norms are useful only if an independent source theorem proves their control without merely inserting the desired log-square before the final readout.
+The next proposal should therefore state the exact non-dominated/operator-level operation that consumes the source before reduction to a scalar sign, and prove that this operation is not reproduced by matched non-arithmetic generator weights. Otherwise the desired log-square has merely been inserted or exposed through the stationary quadratic sector.
