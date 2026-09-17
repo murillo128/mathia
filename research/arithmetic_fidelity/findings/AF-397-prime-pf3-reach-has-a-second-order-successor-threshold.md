@@ -306,33 +306,41 @@ p_n
 \tag{27}
 \]
 
-is sufficient here. Put
+is sufficient here. Define the exact slowly varying factor
 
 \[
-A(n)=
-\log n+\log\log n-1
-+O\!\left(\frac{\log\log n}{\log n}\right).
+A(n)=\frac{p_n}{n}.
+\tag{28}
 \]
 
-Because `\log k_N=L+1+O(1/L)`, subtraction of the two brackets gives
+Equation `(27)` gives
+
+\[
+A(n)
+=\log n+\log\log n-1
++O\!\left(\frac{\log\log n}{\log n}\right).
+\tag{29}
+\]
+
+Because `\log k_N=L+1+O(1/L)`, subtraction of the two asymptotic formulas yields
 
 \[
 A(k_N)-A(N)
 =1+O\!\left(\frac{\ell}{L}\right).
-\tag{28}
+\tag{30}
 \]
 
-Since `A(N)=L+O(\ell)`, equations `(28)` and the logarithm expansion imply
+Since `A(N)=L+O(\ell)`, equations `(29)`--`(30)` and the logarithm expansion imply
 
 \[
 \log\frac{A(k_N)}{A(N)}
 =
 \frac1L
 +O\!\left(\frac{\ell}{L^2}\right).
-\tag{29}
+\tag{31}
 \]
 
-Combining `(26)` and `(29)` gives
+Combining `(26)` and `(31)` gives
 
 \[
 \begin{aligned}
@@ -344,7 +352,7 @@ H_N(R_N)
 \frac{1-\alpha/e}{L}
 +O\!\left(\frac{\ell}{L^2}\right),
 \end{aligned}
-\tag{30}
+\tag{32}
 \]
 
 which is `(6)`.
@@ -355,7 +363,7 @@ Equivalently, define the exact locality-wall count
 
 \[
 B_N=\pi(e p_N)-N.
-\tag{31}
+\tag{33}
 \]
 
 For `R\le B_N`, one has `p_{N+R}<e p_N` and hence `H_N(R)<1`, so the block is certified nonnegative by `(3)`. The standard asymptotic expansion of `\pi(x)` (equivalently `(27)`) gives
@@ -365,7 +373,7 @@ B_N
 =(e-1)N
 -e\frac{N}{\log N}
 +O\!\left(\frac{N\log\log N}{\log^2N}\right).
-\tag{32}
+\tag{34}
 \]
 
 Thus `(8)` is not an arbitrary reparametrization: it is the second-order location of the exact physical topology boundary `p_{N+R}=e p_N`.
@@ -377,15 +385,15 @@ AF-380/AF-395 already audit the Baker--Harman--Pintz consequence
 \[
 \log\frac{p_{n+1}}{p_n}
 =O\!\left(p_n^{-19/40}\right).
-\tag{33}
+\tag{35}
 \]
 
 Uniformly over `N\le n<N+R_N`, monotonicity of `p_n` gives
 
 \[
 \Delta_N(R_N)
-=O\!left(p_N^{-19/40}\right).
-\tag{34}
+=O\!\left(p_N^{-19/40}\right).
+\tag{36}
 \]
 
 Since `p_N\sim N\log N`,
@@ -393,23 +401,23 @@ Since `p_N\sim N\log N`,
 \[
 p_N^{-19/40}
 =o\!\left(\frac1{\log N}\right).
-\tag{35}
+\tag{37}
 \]
 
-For `\alpha<e`, equation `(30)` therefore gives a constant `c_\alpha>0` such that
+For `\alpha<e`, equation `(32)` therefore gives a constant `c_\alpha>0` such that
 
 \[
 H_N(R_N)-1
 \ge\frac{c_\alpha}{\log N}
 >\Delta_N(R_N)
-\tag{36}
+\tag{38}
 \]
 
 for all sufficiently large `N`. The exact one-mesh criterion `(4)` then supplies a negative minor in every such block.
 
-For `\alpha>e`, equation `(30)` gives `H_N(R_N)<1`, so `(3)` makes the entire block nonnegative. No prime-gap input is needed on the blind side.
+For `\alpha>e`, equation `(32)` gives `H_N(R_N)<1`, so `(3)` makes the entire block nonnegative. No prime-gap input is needed on the blind side.
 
-At `\alpha=e`, the `1/\log N` term cancels. Equation `(30)` leaves an `O(\!\log\log N/\log^2N)` physical correction, still much larger than the BHP mesh bound in scale but not determined in sign by the truncated expansion used here. A further asymptotic term can sharpen that thinner boundary, but it does not alter the second-order conclusion.
+At `\alpha=e`, the `1/\log N` term cancels. Equation `(32)` leaves an `O(\log\log N/\log^2N)` physical correction, still much larger than the BHP mesh bound in scale but not determined in sign by the truncated expansion used here. A further asymptotic term can sharpen that thinner boundary, but it does not alter the second-order conclusion.
 
 ## Prior-art and novelty audit
 
@@ -448,7 +456,7 @@ The theorem is specific to the AF-395 profile, whose two curvature components ar
 
 Equation `(4)` is sufficient, not asserted necessary. There may be negative sampled minors when `1<H_N(R)\le1+\Delta_N(R)`. The theorem deliberately isolates a transition strip no wider than one mesh in physical coordinates rather than claiming an exact first detecting index.
 
-The BHP exponent is not believed to be optimal and is not structurally important. Any unconditional mesh estimate `\Delta_N=o(1/\log N)` would suffice for `(36)`.
+The BHP exponent is not believed to be optimal and is not structurally important. Any unconditional mesh estimate `\Delta_N=o(1/\log N)` would suffice for `(38)`.
 
 The expansion `(8)` is a two-term threshold statement. The case `\alpha=e` requires the next term of the classical prime asymptotic together with the same exact detector criterion; it is not settled here.
 
