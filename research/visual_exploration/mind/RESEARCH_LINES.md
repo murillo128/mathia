@@ -18,20 +18,12 @@ If interval endpoints are nuisance, use the cut average; if physical endpoints a
 
 VIS-145--VIS-147 show that cancelling successive polynomial moments raises both Taylor order and total-variation cost. VIS-256 identifies the sine-kernel/CUE support-edge cusp `min(|q|,1)`, so ordinary polynomial moment cancellation is not the right first coordinate.
 
-VIS-257--VIS-259 solve the entire cusp-adapted packet ladder sharply. After cancelling mass, `|q|` and preceding even moments, unit `2m`-th signal costs exactly
-
-`E_m^(-1)b^(-2m)`
-
-in total variation, where `E_m` is the uniform-approximation distance of `t^(2m)` from the lower nuisance span on `[0,1]`.
+VIS-257--VIS-259 solve the cusp-adapted packet ladder sharply. After cancelling mass, `|q|` and preceding even moments, unit `2m`-th signal costs exactly `E_m^(-1)b^(-2m)` in total variation, where `E_m` is the uniform-approximation distance of `t^(2m)` from the lower nuisance span on `[0,1]`.
 
 VIS-260 attaches a rigorous transfer scale. Under RH, Rodgers' fixed-margin smooth pair-correlation theorem gives uniform error `O_delta(T^(-delta))` for every fixed `delta<epsilon/2`. Packetization multiplies this by the sharp conditioning bill, so for `b=T^(-beta)` the theorem can pay an order-`2m` packet only in the fixed-margin regime `beta<epsilon/(4m)`.
 
-VIS-261 now identifies the **source carrier** that the packet would extract. If `D_T(u)` is the physical-space Bogomolny--Keating-minus-matched-GUE kernel and `R_T(alpha)` its frequency transform, then
+VIS-261 identifies the source carrier: if `D_T(u)` is the physical-space Bogomolny--Keating-minus-matched-GUE kernel and `R_T(alpha)` its frequency transform, then `R_T^(2j)(0)=(-1)^j log(T)^(2j) int u^(2j)D_T(u)du`. VIS-262 now evaluates the fixed-margin source side far enough to cross the first nonzero-carrier gate. Rodgers' diagonal reduction makes every fixed even moment converge to an explicit `t`-independent functional `C_(2m)(omega)=int u^(2m) omega(u)F(u)du`, and because `F` is not identically zero there exist fixed admissible real even band-limited weights with `C_2(omega)!=0`.
 
-`R_T^(2j)(0)=(-1)^j log(T)^(2j) int u^(2j)D_T(u)du`.
+For such a frozen weight the sharp quadratic cusp packet has main term `-(C_2(omega)/2)(log T)^2`; its Taylor remainder is `O(b^2(log T)^4)` and the RH-conditional Rodgers transfer contributes `O(T^(-delta)b^(-2))`. Choosing `b=T^(-beta)` with `0<2beta<delta<epsilon/2` makes both errors lower order. Thus the fixed-margin smooth-test class contains a rigorously calibrated nonzero quadratic arithmetic carrier; there is no universal need to climb to `M_4`.
 
-The first surviving low-frequency arithmetic jet is exactly the first nonzero even physical-space moment of `D_T`; it is not an independent frequency-side mystery. An optimal order-`2m` packet extracts that coefficient with a Taylor error bounded by `E_m^(-1)b^2 sup|R_T^(2m+2)|/(2m+2)!`, while VIS-260 contributes the independent theorem-transfer error `O(T^(-delta)E_m^(-1)b^(-2m))`.
-
-The live fixed-margin task is therefore concrete: for one predeclared even weight, compute the quadratic physical moment `M_2(T)` of the explicit arithmetic kernel difference and test whether its induced coefficient beats **both** the Taylor-resolution error and the conditioned Rodgers error. Move to `M_4` only if the quadratic carrier vanishes or is too small for a mathematically identified reason. Do not optimize packet order before the source moments justify it.
-
-The moving support edge remains separate: it needs theorem uniformity as `epsilon_T->0` and under changing windows. The original edge--edge statistic remains still further away because it needs a four-level covariance law. Neither follows from the fixed-margin two-level calculation.
+The next fixed-margin task is now narrower: choose and persist one explicit application weight, compute or bound its concrete `C_2(omega)` from the displayed Rodgers kernel, and establish whether that same weight has a mathematically faithful dictionary to the original support-edge observable. The moving support edge remains separate because it needs theorem uniformity as `epsilon_T->0` or the weight/window changes. The original edge--edge statistic remains further away because it needs a four-level covariance law.

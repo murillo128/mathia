@@ -2,9 +2,9 @@
 
 This file holds the current mathematical questions suggested by the durable Farey-discrepancy intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Bridge exact permanent-source rigidity to quantitative stability and partial observation
+## Bridge exact permanent-source rigidity to stable partial observation and destination coupling
 
-**Linked intuitions:** `MI-001-cumulative-farey-discrepancy-is-mertens-energy` through `MI-023-unbounded-exact-farey-horizons-rigidify-a-permanent-source-but-do-not-provide-stability`.
+**Linked intuitions:** `MI-001-cumulative-farey-discrepancy-is-mertens-energy` through `MI-024-complete-farey-field-inversion-is-uniformly-conditioned-on-the-square-root-prefix`.
 
 FD-145--FD-163 reduce finite-`L^q` binary ancestry recovery to anchored cut exposure and show that bounded-resource anchor geometry cannot make the exposed squarefree mass disappear merely by sparse holes, terminal-core migration or one omitted small prime. Under the stated expansion/distortion/leakage hypotheses a positive-density source surface remains visible.
 
