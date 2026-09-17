@@ -1,0 +1,13 @@
+# MI-045 — Every fixed Euler-jet depth can be matched by bounded honest prime repairs
+
+**Evidence level:** exact synthesis from [RE-173](../../findings/RE-173-ordinary-prime-tail-matches-mertens-charge-with-transient-robin-excursion.md), [RE-178](../../findings/RE-178-subcritical-euler-jet-depth-does-not-improve-leading-repair-exponent.md), [RE-180](../../findings/RE-180-honest-multiplicity-prices-early-repair-by-deletion-support.md), [RE-181](../../findings/RE-181-honest-two-jet-prime-control-attains-the-local-repair-tariff.md), and [RE-182](../../findings/RE-182-every-fixed-euler-jet-depth-remains-nonrigid-under-bounded-prime-multiplicity.md).
+
+The non-rigidity of the Robin source is not confined to one or two boundary coordinates. For every fixed depth `K`, RE-182 constructs an ordinary-prime-supported perturbation with multiplicities only in `{0,1,2}` that matches all Euler derivatives through order `K` exactly at `s=1`, remains inside every fixed Korobov--Vinogradov envelope, and still preserves the selector-scale transient Robin displacement before the remote repair becomes visible.
+
+The conditioning trick is to recenter the raw Euler jets at each repair scale. Raw responses carry powers of `log x`; after binomial recentering, shell responses converge to a fixed Vandermonde matrix on multiplicative offsets. For fixed `K` this matrix is uniformly invertible, so a finite set of narrow prime shells can quantize each repair generation with bounded conditioning. Geometrically separated generations drive the residual jets exactly to zero while preserving absolute convergence and bounded multiplicity.
+
+The first repair generation still needs `Theta_K(sqrt(p)/log p)` deletions and the same order of duplications, so it attains rather than evades the RE-180 honest-multiplicity tariff. Increasing fixed jet depth changes constants and finite-dimensional interpolation, not the polynomial source cost or the transient ambiguity.
+
+The reusable boundary is sharp: **no fixed finite scalar jet at one Euler boundary point is a selector** for this source class. To gain rigidity one needs information whose effective dimension grows with the selector scale, a genuinely joint/nonlocal source invariant, or a placement constraint that the shell interpolation cannot satisfy.
+
+**Boundary.** The construction is fixed-`K`; it does not prove non-rigidity for jet depth growing at the critical scale, for the full Euler germ, or under additional arithmetic constraints tying repair-prime locations to genuine colossally-abundant/Robin structure.

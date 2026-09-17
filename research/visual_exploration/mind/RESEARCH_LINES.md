@@ -20,28 +20,18 @@ The live source-content question remains to freeze a weight faithful to the inte
 
 ## Keep theorem-transfer conditioning, source localization and arithmetic content on separate ledgers
 
-**Linked intuition:** `MI-031-wang-transfer-allows-moving-tests-only-inside-a-seminorm-and-support-budget`.
+**Linked intuitions:** `MI-031-wang-transfer-allows-moving-tests-only-inside-a-seminorm-and-support-budget`, `MI-032-wang-leading-null-packets-need-diagonal-and-cusp-cancellation-at-no-extra-exponent-cost`.
 
 VIS-259--VIS-260 show that extracting a low-frequency coefficient pays the packet norm `b^(-2m)` and therefore requires theorem accuracy that beats the same conditioning scale. This is an analytic-access cost, independent of whether the retained coefficient is source-specific.
 
 VIS-265 applies Wang's 2026 short-interval Montgomery theorem. On a zero interval of length `T^theta`, pair-frequency support `[-lambda,lambda]` requires `lambda<theta`, with normalized fixed-test error controlled by `1/log T + T^(lambda-theta)log T`. Hence a bounded physical source window cannot be reached merely by taking support near the Montgomery edge.
 
-VIS-266 corrects an overly strong reading of the word “fixed.” The proof admits `T`-dependent test functions as long as the support stays inside a fixed margin `lambda<theta` and their seminorms grow slowly enough. For such a family the normalized error is bounded by
+VIS-266 corrects an overly strong reading of the word “fixed.” The proof admits `T`-dependent test functions as long as the support stays inside a fixed margin `lambda<theta` and their seminorms grow slowly enough. For such a family the normalized error is bounded by `O(||g_T'||_inf/L + ||g_T||_inf[1/L + L^(-3/2) + T^(lambda-theta)L + 1/(HL)])`, with `L=log T`.
 
-`O(||g_T'||_inf/L + ||g_T||_inf[1/L + L^(-3/2) + T^(lambda-theta)L + 1/(HL)])`,
+VIS-267 makes the packet side of that budget scale-sharp. A smooth compact packet of width `b` with vanishing lower even moments and normalized `2m`-th moment must satisfy `||g_b||_inf \gtrsim b^(-(2m+1))` and `||g_b'||_inf \gtrsim b^(-(2m+2))`, with matching constructions. Feeding those unavoidable seminorms into the Wang bound gives the sufficient shrinking-window gate `1/(L b^(2m+2)) -> 0`. For `b=L^(-q)`, this is `q<1/(2m+2)`; in particular the quadratic packet needs `q<1/4` and the quartic packet `q<1/6`.
 
-with `L=log T`.
+VIS-268 fixes the remaining leading-functional mismatch. Wang's main term is `g(0)+int |alpha|g(alpha)dalpha`; the VIS-267 moment class canceled the cusp pairing but did not force `g(0)=0`. A diagonal-safe smooth packet can impose both conditions together with the lower even-moment cancellations and unit `2m`-th moment. This extra constraint changes profile constants but **does not change the sharp norm exponents or the gate `q<1/(2m+2)`**.
 
-VIS-267 now makes the packet side of that budget scale-sharp. A smooth compact packet of width `b` with vanishing lower even moments and normalized `2m`-th moment must satisfy
-
-`||g_b||_inf \gtrsim b^(-(2m+1))`,  `||g_b'||_inf \gtrsim b^(-(2m+2))`,
-
-and these exponents are attained by scaled smooth profiles. Feeding those unavoidable seminorms into the Wang bound gives the exact sufficient shrinking-window gate
-
-`1/(L b^(2m+2)) -> 0`.
-
-For `b=L^(-q)`, this is `q<1/(2m+2)`; in particular the quadratic packet needs `q<1/4` and the quartic packet `q<1/6`. The second support-margin remainder is then automatically negligible for fixed `lambda<theta`.
-
-The transfer barrier is therefore a **three-coordinate admissibility region** with a sharp moment-dependent seminorm face: fixed Fourier-support margin, unavoidable packet seminorm growth, and theorem remainder relative to the arithmetic signal. A family may move or shrink while remaining inside that region, but normalized high-moment extraction cannot shrink arbitrarily fast even before arithmetic selectivity is considered.
+The transfer barrier is therefore now correctly specified: fixed Fourier-support margin, unavoidable packet seminorm growth, complete leading-functional cancellation, and theorem remainder relative to the arithmetic signal. The generic packet/interface problem is closed at this level. The next useful step is source-specific: derive a pre-registered quadratic or quartic arithmetic coefficient in the diagonal-safe class and show that it dominates the amplified remainder. If no such signal/error window exists inside `q<1/4` or `q<1/6`, respectively, the branch should be killed rather than rescued by more generic moment cancellation.
 
 What Wang still does not provide is support whose edge itself approaches `theta`, a polylogarithmic physical source window beyond this seminorm gate, a remainder automatically below every arithmetic residual, or four-level covariance. Source-height localization and pair-separation weighting also remain distinct: a theorem controlling one cannot be transferred by identifying its window with the other.
