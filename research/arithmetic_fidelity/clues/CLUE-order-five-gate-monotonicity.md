@@ -1,7 +1,7 @@
 ---
 id: CLUE-order-five-gate-monotonicity
 type: research-clue
-status: proposed
+status: accepted
 origin: research-watch
 target_line: arithmetic_fidelity
 based_on:
@@ -42,3 +42,7 @@ Construct a dependency-preserving rigorous enclosure for `A_4'` over the full fr
 ## Evidence boundary
 
 The issue-#162 result is bounded high-precision sampling with certified point/local enclosures, not a compact-interval positivity theorem and not a rigorous global-minimum proof. The Toda identities and asymptotic ratios used in the computation are already represented by AF-404 and AF-408; no new theorem, order-five positivity, all-order positivity, arithmetic-prime discriminator, or RH consequence is established here.
+
+## Research disposition
+
+The direction is accepted for continued investigation. AF-408 makes the compact sign problem mathematically consequential, while issue #162 supplies independent high-precision evidence that monotonicity is a plausible strengthening rather than a reformulation of the existing tail theorem. A fresh literature audit found classical Hankel/Toda and finite-order total-positivity machinery but no theorem that settles this concrete Euler-log third-log-derivative sign. The unresolved target remains exactly the rigorous sign of `A_4'` on `[-14,4]`; acceptance does not upgrade the numerical evidence.
