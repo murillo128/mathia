@@ -16,7 +16,7 @@ The current bow frontier asks for a source-fixed estimate of the form
 
 at the distinguished bow twist. WI-331 and WI-332 show that the available all-interval nilsequence and local `U^2` estimates do not reach this scale. The obstruction is stronger than their quantitative logarithmic loss: **even essentially square-root one-point cancellation against every fixed-degree polynomial phase, uniformly over every short interval and arithmetic subprogression, is logically compatible with a full diagonal-scale variance**.
 
-Thus no route whose only new arithmetic input is a stronger one-point polynomial/nilsequence pseudorandomness estimate can prove (1). The missing information is genuinely two-point and sign-sensitive: it must force macroscopic negative off-diagonal covariance at the distinguished twist (or introduce an equivalent source-fixed diagonal subtraction with independently controlled residual).
+Thus no route whose only new arithmetic input is a stronger version of the fixed-degree polynomial-phase consequence used in WI-331 can prove (1). The missing information is genuinely two-point and sign-sensitive: it must force macroscopic negative off-diagonal covariance at the distinguished twist (or introduce an equivalent source-fixed diagonal subtraction with independently controlled residual).
 
 ## 1. Abstract countermodel at the exact bow scaling
 
@@ -62,7 +62,7 @@ C_d\sqrt K\log N
 \tag{4}
 \]
 
-So (3) is asymptotically much stronger than an arbitrary fixed logarithmic saving of the all-interval form used in WI-331, while retaining its relevant maximal-subprogression feature for polynomial phases.
+So (3) is asymptotically much stronger than an arbitrary fixed logarithmic saving of the all-interval polynomial-phase form used in WI-331, while retaining its relevant maximal-subprogression feature.
 
 Second, the twisted sliding variance stays at full diagonal scale:
 
@@ -79,7 +79,7 @@ Second, the twisted sliding variance stays at full diagonal scale:
 
 In particular it is not `o(NK log N)`. Equations (3)--(5) coexist for the **same** coefficients.
 
-This is an information-interface counterexample, not a model for the von Mangoldt function. It says that one-point phase decorrelation, even strengthened far past the currently available theorem, does not contain enough information to imply the norm-matched bow estimate.
+This is an information-interface counterexample, not a model for the von Mangoldt function. It says that fixed-degree polynomial-phase decorrelation, even strengthened far past the currently used theorem consequence, does not contain enough information to imply the norm-matched bow estimate.
 
 ## 2. Uniform square-root polynomial-phase cancellation
 
@@ -201,13 +201,13 @@ Note that the prescribed twist `u_n` was arbitrary. In particular, replacing lin
 
 ## 4. What this closes beyond WI-331 and WI-332
 
-WI-331 shows that the published all-interval bound
+WI-331 shows that the published all-interval polynomial-phase consequence
 
 \[
 |\sum f_X(n)e(P(n))|\ll_A K\log^{-A}X
 \]
 
-is too large after naive squaring. That leaves open the possibility that a sufficiently strong quantitative upgrade of the **same one-point theorem surface** might eventually reach the variance scale.
+is too large after naive squaring. That leaves open the possibility that a sufficiently strong quantitative upgrade of the **same one-point phase-correlation surface** might eventually reach the variance scale.
 
 The countermodel closes that route. Its pointwise bound is already
 
@@ -217,9 +217,9 @@ O_d(\sqrt K\log N),
 
 which is square-root cancellation up to a logarithm and is smaller than `K log^{-A}N` for every fixed `A`; nevertheless the moving-window `L^2` norm remains `(1+o(1))NK log N`. The obstruction is therefore not merely that the known logarithmic saving is too weak.
 
-WI-332 similarly shows that black-box logarithmic local `U^2` control misses the variance scale and that `U^2` does not absorb the nonlinear bow carrier. WI-333 identifies the more basic structural issue underneath both observations: **generic pseudorandom cancellation suppresses off-diagonal correlations toward zero, whereas (1) needs the signed off-diagonal to cancel a positive diagonal of size `XK log X`.** Making a one-point pseudorandomness theorem quantitatively stronger does not manufacture that negative covariance.
+WI-332 similarly shows that black-box logarithmic local `U^2` control misses the variance scale and that `U^2` does not absorb the nonlinear bow carrier. WI-333 identifies the more basic structural issue underneath the polynomial-phase route: **generic phase pseudorandomness suppresses off-diagonal correlations toward zero, whereas (1) needs the signed off-diagonal to cancel a positive diagonal of size `XK log X`.** Making that one-point polynomial-phase estimate quantitatively stronger does not manufacture the required negative covariance.
 
-This does not rule out using nilsequence or Gowers technology as one ingredient inside a genuinely bilinear argument. It rules out an implication whose arithmetic hypothesis consists only of one-point phase decorrelation of the source, however close to square-root scale, together with its diagonal `L^2` size.
+This does not rule out richer nilsequence or Gowers information, or polynomial-phase estimates used as one ingredient inside a genuinely bilinear argument. It rules out an implication whose arithmetic hypothesis consists only of fixed-degree one-point polynomial-phase decorrelation of the source, however close to square-root scale, together with its diagonal `L^2` size.
 
 ## 5. Consequence for the distinguished-twist clue
 
@@ -230,10 +230,10 @@ The accepted clue `CLUE-bow-distinguished-twist-offdiagonal-cancellation` should
 - an arithmetic identity forcing the off-diagonal toward `-D_X` rather than toward zero; or
 - a canonical source-fixed diagonal subtraction whose residual can be controlled in the same norm.
 
-Pure strengthening of all-interval polynomial/nilsequence cancellation, even to essentially square-root size, is no longer a credible standalone route to the WI-195 gate.
+Pure strengthening of the all-interval fixed-degree polynomial-phase consequence, even to essentially square-root size, is no longer a credible standalone route to the WI-195 gate.
 
 ## 6. Evidence and novelty audit
 
 The random-sign subgaussian mechanism is classical; Salem--Zygmund is prior art for the underlying harmonic-analysis phenomenon. The exact coexistence statement (3)--(5), its arithmetic-subprogression coefficient-net proof, and its use as an information-interface obstruction for the WI-195 distinguished bow variance are derived here. A bounded search did not locate this zeta/bow formulation. **No priority claim is made.**
 
-The finding does not assert anything about the actual sign pattern of `Lambda-Lambda^sharp`, does not use the transferred `ANF-102` statement as evidence, and does not resolve the bow or RH. Its durable content is a decisive negative result about proof architecture: one-point pseudorandomness cannot by itself eliminate the diagonal-scale source defect that the current Weil-inertia bootstrap must remove.
+The finding does not assert anything about the actual sign pattern of `Lambda-Lambda^sharp`, does not use the transferred `ANF-102` statement as evidence, and does not resolve the bow or RH. Its durable content is a decisive negative result about one proof architecture: fixed-degree one-point polynomial-phase pseudorandomness cannot by itself eliminate the diagonal-scale source defect that the current Weil-inertia bootstrap must remove.
