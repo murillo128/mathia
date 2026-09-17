@@ -39,6 +39,10 @@ This file records durable literature dependencies for `research/nyman_beurling/`
 
 - Chiara Bellotti, *Explicit bounds for the Riemann zeta function and a new zero-free region*, J. Math. Anal. Appl. 536 (2024), 128249, DOI `10.1016/j.jmaa.2024.128249`, [arXiv:2306.10680](https://arxiv.org/abs/2306.10680). Role: Theorem 1.2 gives the explicit Vinogradov--Korobov zero-free region `sigma >= 1 - 1/(53.989 (log |t|)^(2/3) (log log |t|)^(1/3))` for `|t|>=3`; `NB-125` uses this as the load-bearing source law converting its rootwise horizontal-depth requirement for actual zero packets into an additive log-log height budget.
 
+## Prime-number-theorem remainder
+
+- Chiara Bellotti, *A new zero-density estimate for zeta(s) and the error term in the prime number theorem*, Bulletin of the London Mathematical Society 58 (2026), e70442, DOI `10.1112/blms.70442`, [arXiv:2508.02041](https://arxiv.org/abs/2508.02041). Role: peer-reviewed modern source for the essentially optimal prime-number-theorem remainder associated with a Korobov--Vinogradov zero-free region; in particular it implies `psi(x)-x << x exp(-c (log x)^(3/5) (log log x)^(-1/5))` for some `c>0`. `NB-194` uses this remainder, via Stieltjes partial summation, to obtain a deterministic return-free corridor for the actual full von-Mangoldt Euler band.
+
 ## Quantitative approximation boundary
 
 - Jean-François Burnol, *A lower bound in an approximation problem involving the zeros of the Riemann zeta function*, Adv. Math. 170 (2002), 56–70, DOI `10.1006/aima.2001.2066`, [arXiv:math/0103058](https://arxiv.org/abs/math/0103058). Role: zero-sensitive lower-bound boundary for claims about asymptotic Nyman approximation rates.
