@@ -43,6 +43,10 @@ This file records durable literature dependencies for `research/nyman_beurling/`
 
 - Chiara Bellotti, *A new zero-density estimate for zeta(s) and the error term in the prime number theorem*, Bulletin of the London Mathematical Society 58 (2026), e70442, DOI `10.1112/blms.70442`, [arXiv:2508.02041](https://arxiv.org/abs/2508.02041). Role: peer-reviewed modern source for the essentially optimal prime-number-theorem remainder associated with a Korobov--Vinogradov zero-free region; in particular it implies `psi(x)-x << x exp(-c (log x)^(3/5) (log log x)^(-1/5))` for some `c>0`. `NB-194` uses this remainder, via Stieltjes partial summation, to obtain a deterministic return-free corridor for the actual full von-Mangoldt Euler band.
 
+## Uniform primes in short intervals
+
+- Larry Guth and James Maynard, *New large value estimates for Dirichlet polynomials*, Annals of Mathematics 203 (2026), 623–675, DOI `10.4007/annals.2026.203.2.6`, [arXiv:2405.20552](https://arxiv.org/abs/2405.20552). Role: Corollary 1.3 gives, for every fixed `epsilon>0`, a uniform prime number theorem in intervals of length at least `x^(17/30+epsilon)` (within the stated fixed-power range). `NB-196` uses this as the load-bearing source-specific input converting spatial prime resolution `x^(17/30+epsilon)` into pointwise Mellin dephasing of the positive Euler shell up to the complementary frequency scale `x^(13/30-epsilon)`.
+
 ## Quantitative approximation boundary
 
 - Jean-François Burnol, *A lower bound in an approximation problem involving the zeros of the Riemann zeta function*, Adv. Math. 170 (2002), 56–70, DOI `10.1006/aima.2001.2066`, [arXiv:math/0103058](https://arxiv.org/abs/math/0103058). Role: zero-sensitive lower-bound boundary for claims about asymptotic Nyman approximation rates.
