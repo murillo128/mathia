@@ -8,19 +8,23 @@ This file holds the current mathematical questions suggested by the durable arit
 
 The fidelity results separate exact discriminator survival from finite observation, source freedom, conditioning and source-category rigidity. Recovering `zeta` inside a rigid source class can identify the analytic object without selecting its nontrivial zeros, while small observations can become complete only after the admissible source fibre has already been restricted enough. Any useful compression must therefore state the source class and retained analytic layer before counting coordinates.
 
-## Match physical locality to source-density and sparse-sampling scales
+## Match physical locality to source-density and confluent-certificate scales
 
-**Linked intuitions:** `MI-043-support-scale-interaction-components-bound-effective-relational-arity` through `MI-050-complete-confluent-flags-globalize-strict-translation-positivity`.
+**Linked intuitions:** `MI-043-support-scale-interaction-components-bound-effective-relational-arity` through `MI-051-nested-log-concavity-drives-the-strict-confluent-toda-flag`.
 
 AF-387--AF-394 identify the smooth order-three translation-kernel structure. For a positive `C^4` profile, the local analytic `TN_3` condition is controlled by logarithmic curvature `q=-(log f)''`; under the shrinking solid hierarchy the remaining global datum is connectedness of `{q>0}`. AF-395--AF-399 then show that a fixed successor stencil can miss that global topology and that physical logarithmic reach, not raw successor count, is the invariant resource.
 
 AF-400 proves that ordinary regular variation is insufficient when the physical wall itself shrinks. AF-401 supplies an all-prime-start conversion from uniform short-interval PNT: for `h_N=p_N^(-beta)` with `beta<13/30`, `B_N(h_N)~N h_N` for every sufficiently large prime index. AF-402 gives a distinct density-one route: exceptional-set inertia plus Brun--Titchmarsh packing transfers an almost-all ambient theorem to relative density one of prime starts, reaching every fixed `beta<13/15` with the current input.
 
-AF-403 settles a different question that had remained open in the low-order discussion. For a smooth translation kernel, positivity of the **complete initial confluent flag** `H_m(t)>0` for every `m<=r` globalizes by extended-complete-Chebyshev theory to strict total positivity of every minor of order at most `r`. Thus strict fixed-order interior positivity needs no extra placement/topology datum once the whole flag is positive. The topology seen at low order belongs to degenerate/nonstrict strata where a confluent minor vanishes.
+AF-403 settles the placement question in the strict interior. For a smooth translation kernel, positivity of the complete initial confluent flag `H_m(t)>0` for every `m<=r` globalizes by extended-complete-Chebyshev theory to strict total positivity of every minor of order at most `r`. Thus fixed-order strict positivity needs no additional placement/topology datum once the whole flag is positive; topology re-enters on degenerate/nonstrict strata where a confluent minor vanishes.
 
-The live locality problem is therefore two-layered. First declare the physical wall, sampling regime and same-scale source theorem needed to inspect the relevant analytic data. Then ask whether the arithmetic profile supplies the complete confluent flag required by the desired order. For fixed strict order the globalization step is classical once that flag is available; for all-order positivity the required flag is unbounded, and on vanishing strata additional global/topological information can re-enter.
+AF-404 then shows that the flag entries are not independent local certificates. The classical Toda/Hankel identity becomes
 
-The `13/30` all-start and `13/15` density-one boundaries remain technology boundaries, not intrinsic detector constants. A thinner wall needs stronger uniform source information, a sharper exceptional-set transfer, or a representation whose physical locality is priced differently.
+`H_(m+1) H_(m-1) = -H_m^2 (log H_m)''`.
+
+Inside a positive flag, the next order is therefore present exactly when the current certificate is strictly log-concave. With `q=-(log f)''` and `R_m=H_m/f^m`, the normalized recursion is `R_(m+1)R_(m-1)=R_m^2(mq-(log R_m)'')`. For the full Euler-log profile, where orders two and three are already positive, the entire order-four question is reduced to the scalar inequality `(log R_3)''<3q`. This is an exact reduction, not evidence that order four succeeds; all-order positivity is already known to fail eventually.
+
+The live locality problem is therefore three-layered. First declare the physical wall, sampling regime and same-scale source theorem needed to inspect the profile. Then establish the current confluent certificate on that physical source scale. Finally propagate one order at a time through the Toda/log-concavity gate rather than treating every higher determinant as unrelated. The `13/30` all-start and `13/15` density-one boundaries remain technology boundaries, not intrinsic detector constants; the finite-order Toda gate is a separate analytic boundary.
 
 ## Separate source identification from zero selection
 

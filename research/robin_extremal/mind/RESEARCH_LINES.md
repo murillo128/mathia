@@ -4,7 +4,7 @@ This file holds the current mathematical questions suggested by the durable Robi
 
 ## Resolve the scalar Euler window between repairability and log-squared saturation
 
-**Linked intuitions:** `MI-001-robin-failure-requires-self-tangent-half-mass-event-gaps` through `MI-048-high-euler-boundary-jets-become-a-net-multiplicity-channel-beyond-log-squared-depth`.
+**Linked intuitions:** `MI-001-robin-failure-requires-self-tangent-half-mass-event-gaps` through `MI-049-shrinking-euler-spectral-windows-collapse-to-reciprocal-mass-rank-one`.
 
 The matched-control program has progressively removed apparent scalar rigidity thresholds. Ordinary-prime `{0,1,2}` controls can preserve every fixed KV source envelope and an order-one transient Robin excursion while matching exact Mertens/Euler data at fixed depth, growing depth and separated temperatures. RE-188 optimizes the deep Euler-jet repair to a linear-width Chebyshev window and keeps non-rigidity throughout
 
