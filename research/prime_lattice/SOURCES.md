@@ -67,7 +67,6 @@ Only sources that materially support, delimit, or redirect stored `PL-*` finding
 
 16. **Juan Manzur, Waleed Noor, Gustavo Quintero**, “A Hardy space approximation supporting zero-free half-planes for the `zeta`-function,” arXiv:2606.16097v1 [math.FA] (submitted 15 June 2026), preprint. https://arxiv.org/abs/2606.16097.
     - Role: main current anchor for `PL-008`. Constructs a bounded map from `mathcal H^2` of Dirichlet series to half-plane Hardy spaces, proves that closure of the Bagchi family in `H^2(C_alpha)` forces zero-freeness in `C_alpha`, and proves the explicit Möbius approximation `sum mu(k)G_k -> E` for every `alpha>1`. The paper explicitly leaves `1/2<=alpha<=1` outside its analytical proof and treats its critical-strip computations only as numerical evidence.
-
 ## Prime-zeta counterterms and regularized determinants
 
 17. **Carl-Erik Fröberg**, “On the prime zeta function,” *BIT Numerical Mathematics* **8**(3) (1968), 187–202. DOI: https://doi.org/10.1007/BF01933420.
@@ -137,7 +136,6 @@ Only sources that materially support, delimit, or redirect stored `PL-*` finding
     - Role: modern structural anchor for `PL-015`. Formulates Beurling primes with rationally independent logarithms, unique finite-product generalized integers, generalized Dirichlet series, the Euler product for `zeta_q`, and Hardy/Bohr theory; confirms that Beurling systems are direct deformations of the same multiplicatively generated exponent-lattice/frequency setup rather than an unrelated analogy.
 
 ## LCM join geometry and multiplicative tensor spectra
-
 35. **Titus Hilberdink, Alexander Pushnitski**, “Spectral asymptotics for a family of LCM matrices,” *St. Petersburg Mathematical Journal* **34**(3) (2023), 463–481. DOI: https://doi.org/10.1090/spmj/1764. arXiv: https://arxiv.org/abs/2110.14323.
     - Role: main anchor for `PL-016`. Studies `E(sigma,tau)={n^sigma m^sigma/[n,m]^tau}` as a compact positive self-adjoint operator; makes the prime-exponent `max`/LCM tensor factorization explicit; proves product formulas for local/global eigenvalues, eigenvalue asymptotics and the exact Schatten threshold; connects `E(sigma,1)` to rescaled finite multiplicative Toeplitz Gram matrices from zeta coefficients; and factors the spectral zeta as `zeta(rho w)G(w)` with an analytic correction in a larger half-plane. The paper also explicitly distinguishes finite coefficient matrices from an infinite Toeplitz operator when analytic continuation is required and exhibits a mismatch between zeta value distribution and matrix singular-value distribution.
 
@@ -277,7 +275,6 @@ Only sources that materially support, delimit, or redirect stored `PL-*` finding
 
 70. **C. Feiler, W. P. Schleich**, “Entanglement and analytical continuation: an intimate relation told by the Riemann zeta function,” *New Journal of Physics* **15** (2013), 063009. DOI: https://doi.org/10.1088/1367-2630/15/6/063009.
     - Role: analytic-continuation/quantum prior-art anchor for `PL-106`. Explicitly proposes quantum measurements realizing the Dirichlet representation and its extension into the critical strip, showing that engineered quantum encodings of zeta continuation predate the 2026 DQPT correspondence.
-
 ## Prime-axis Lindelöf criteria and generalized-prime controls
 
 71. **Steven M. Gonek, Sidney W. Graham, Yoonbok Lee**, “The Lindelöf hypothesis for primes is equivalent to the Riemann hypothesis,” *Proceedings of the American Mathematical Society* **148**(7) (2020), 2863–2875. DOI: https://doi.org/10.1090/proc/14974.
@@ -409,3 +406,8 @@ Only sources that materially support, delimit, or redirect stored `PL-*` finding
 
 102. **Claudia Bucur**, “Some observations on the Green function for the ball in the fractional Laplace framework,” *Communications on Pure and Applied Analysis* **15**(2) (2016), 657–699. DOI: https://doi.org/10.3934/cpaa.2016.15.657. arXiv: https://arxiv.org/abs/1502.06468.
      - Role: primary Green-kernel anchor for `PL-309`. Theorems 3.1--3.3 give the explicit fractional Dirichlet Green function on a ball, the zero-exterior Poisson representation, and the normalization constant. `PL-309` specializes these formulas to `(-1,1)`, derives the exact boundary quotient and logarithmic rescaling `t=e^{-r/s}`, and uses a smooth exponentially localized forcing family to prove that bulk `L^infty` convergence alone cannot determine the `s^{-1/2}` boundary trace.
+
+## Antisymmetric logarithmic-Laplacian maximum and Hopf principles
+
+103. **Luigi Pollastro, Nicola Soave**, “Antisymmetric maximum principles and Hopf’s lemmas for the Logarithmic Laplacian, with applications to symmetry results,” *Annali di Matematica Pura ed Applicata* **204** (2025), 1827–1845. DOI: https://doi.org/10.1007/s10231-025-01549-0. arXiv: https://arxiv.org/abs/2407.11718.
+     - Role: main theorem-level anchor for `PL-335`. Proposition 3.1 and Corollary 3.6 give antisymmetric weak/strong maximum principles for `L_Delta u >= V u`; Lemma 3.4 gives the antisymmetric `ell(dist)^(1/2)` Hopf lower law, and Remark 2.3/3.5 gives the small-ball eigenvalue control needed for bounded potentials. `PL-335` combines these theorems with the exact odd folding of Suzuki's threshold archimedean kernel to prove noncollapse of the lowest odd threshold state's canonical half-log boundary channel.
