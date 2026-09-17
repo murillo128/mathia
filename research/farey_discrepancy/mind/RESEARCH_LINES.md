@@ -12,14 +12,21 @@ FD-164 then separates visibility from orientation. At one horizon the complete F
 
 FD-166 closes the exact **permanent-source** version. Every quotient set `Q_H` contains the consecutive prefix `1,...,floor(sqrt(H))`. A complete exact field at horizon `H` fixes the cumulative source, and hence every coefficient, on that prefix. If one fixed source matches complete fields on any unbounded horizon set, however sparse or non-nested, those prefixes exhaust the source and force `a=mu` identically. A first source defect at `n_0` is exposed by every `H>=n_0^2`.
 
-The finite-cutoff kernels are therefore noncompact rather than permanent: their altered orientations must drift to infinity as the outer cutoff grows. There is no exact critical horizon density for one permanent source. The live bridge has moved to **stability and partial observation**. Quantify how approximate complete-field agreement propagates through the FD-117 inversion to `A(r)-M(r)` or `a(r)-mu(r)` on the growing square-root prefix, and determine how much of the field can be discarded before this rigidity disappears.
+FD-167 closes the corresponding **complete-field conditioning** question in unnormalized `L^2`. If `E_H` is the difference between a real source-controlled field and the physical Farey field, the `FD-117` divisor inversion and Parseval give the uniform modulus
 
-The strongest immediate question is conditioning. Exact algebraic recoverability is not enough: identify a natural norm on the observed Farey field for which coefficient-prefix recovery has a usable modulus, and compare that modulus with the Franel--Landau destination scale. A separate source-native route may exploit multiplicative or Farey-order coherence without reconstructing the full Möbius staircase.
+\[
+\max_{1\le r\le\lfloor\sqrt H\rfloor}|A(r)-M(r)|
+\le \sqrt{30}\,\|E_H\|_2.
+\]
+
+There is no loss with `H` or with the recovered prefix coordinate. For integer-valued sources, `||E_H||_2<1/sqrt(30)` snaps the entire square-root prefix to Möbius exactly; a fixed first defect at `n_0` therefore remains at least `1/sqrt(30)` away in complete-field `L^2` for every `H>=n_0^2`. The finite-cutoff kernels are noncompact rather than poorly conditioned: their freedom must drift outward, not hide in a vanishing full-field perturbation.
+
+The live bridge has therefore narrowed to **partial observation and destination coupling**. Determine how much of the full Farey field or Fourier spectrum can be discarded while retaining stable recovery of a growing source prefix, and quantify the conditioning loss for sampled, sparse or coarsened observations. Complete-field `L^2` conditioning itself is no longer the bottleneck. A separate source-native route may exploit multiplicative or Farey-order coherence without reconstructing the full Möbius staircase.
 
 ## Apply the information-budget gate only after the observation-family kernel is understood
 
-FD-144 remains a later lower bound: even after geometric exposure and orientation are solved, `o(r_T)` arbitrary source-independent normalized ancestry tests can be fooled along a subsequence. FD-164--FD-166 sharpen the order of obligations. First quotient the kernel of the declared observation family and distinguish finite-cutoff controls from one permanent source; only then count how much source information the surviving architecture actually carries.
+FD-144 remains a later lower bound: even after geometric exposure and orientation are solved, `o(r_T)` arbitrary source-independent normalized ancestry tests can be fooled along a subsequence. FD-164--FD-167 sharpen the order of obligations. First quotient the kernel of the declared observation family and determine its stable inverse on the coordinates it exposes; only then count how much source information the surviving architecture actually carries.
 
 ## Keep coefficient coercivity and destination coercivity separate
 
-Exact complete fields on an unbounded hierarchy identify the permanent source, but source identification does not by itself prove the RH-critical discrepancy estimate. A useful continuation must control both the stability/economy of coefficient recovery and the nonlocal Franel--Landau norm. These are distinct mathematical gates.
+Exact or uniformly subcritical complete-field errors on an unbounded hierarchy identify an integer-valued permanent source, but source identification does not by itself prove the RH-critical discrepancy estimate. A useful continuation must either retain stable coefficient coercivity under substantially incomplete observation or connect source-native structure directly to the nonlocal Franel--Landau norm. These remain distinct mathematical gates.
