@@ -69,7 +69,7 @@ Where `q>0`, `(4)` is equivalently
 \tag{6}
 \]
 
-Thus the same nonstrict solid order-two/order-three data that fail on a single lattice acquire extra boundary information when required consistently along `h_m\to0`. They still do **not** yet imply continuum `TN_3`, but they exclude the simplest smooth lower-order degeneracy that could support an AF-387-type placement alias.
+Thus the same nonstrict solid order-two/order-three data that fail on a single lattice acquire extra boundary information when required consistently along `h_m\to0`. AF-393 now shows that on the strictly positive stratum `q>0`, `(6)` already integrates to every finite order-three placement condition and hence gives continuum `TN_3`. The unresolved part is the boundary where `q=0`; `(5)` excludes the simplest smooth lower-order degeneracy that could support an AF-387-type placement alias.
 
 ## Local solid-minor expansions
 
@@ -257,16 +257,13 @@ q=-(\log f)''
 
 reaches zero with ordinary quadratic contact, the next term of the solid `3x3` determinant necessarily turns negative at sufficiently fine scale. Requiring the compressed solid certificate at many scales therefore recovers information that one fixed lattice loses.
 
-This is a concrete arithmetic-fidelity mechanism: **multiscale consistency can act as a lift of a lossy local certificate**. The lift is still incomplete, but its extra information can be measured exactly through the order of contact with the lower-order boundary.
+This is a concrete arithmetic-fidelity mechanism: **multiscale consistency can act as a lift of a lossy local certificate**. AF-393 shows that the lift is complete on the strictly positive curvature stratum: there `(6)` is already equivalent to full continuum `TN_3`. What remains incomplete is the treatment of curvature-zero boundary strata, whose local information is measured here through the order of contact with the lower-order boundary.
 
 ## What remains open
 
-The theorem does not prove that nonstrict shrinking-mesh solid tests characterize continuum `TN_3`. It leaves at least two genuine possibilities:
+AF-393 closes the strictly positive branch: when `q>0` everywhere, the pointwise inequality `(6)` extracted from shrinking solid tests is sufficient for continuum `TN_3`.
 
-- `q` may stay strictly positive, where AF-385-type interior arguments are locally available but still have to be assembled without assuming a uniform strictness margin;
-- zeros of `q` may be flatter than quadratic, including higher finite-order or infinitely flat contact, and `(5)` alone does not determine whether those strata can support a hidden non-solid negative minor.
-
-The next sharp question is therefore whether the same multiscale hierarchy excludes **all finite-order** zeros of `q`, or whether a sufficiently flat smooth profile can pass every solid order-two/order-three test on `h_m\to0` while failing continuum `TN_3`.
+The unresolved regime is therefore concentrated at zeros of `q`. AF-389 excludes every finite-order zero under the same multiscale hierarchy, while AF-390 and AF-391 give separate sufficient boundary closures under quasianalyticity and curvature-shape hypotheses. The remaining sharp question is whether smooth infinitely-flat zero-curvature strata can pass the full shrinking-mesh solid hierarchy while still hiding a negative non-solid order-three minor, or whether an exact limiting form of the AF-393 mass-coordinate argument closes that boundary as well.
 
 No claim is made here about orders `k>3`.
 
@@ -285,7 +282,7 @@ A targeted search of these neighboring literatures did not identify this exact s
 
 This finding has no direct RH consequence and introduces no arithmetic source. It is upstream theory about whether a compressed determinant certificate can retain enough structure to recognize a stronger target.
 
-If a later prime-derived kernel supplies nonnegative solid minors at a hierarchy of increasingly fine arithmetic scales, AF-388 says those signs carry more than independent fixed-grid information: they constrain how the kernel may touch the log-concavity boundary. That constraint is useful only after the arithmetic construction itself has supplied the required signs; it must not be read backward as evidence that such a prime kernel exists.
+If a later prime-derived kernel supplies nonnegative solid minors at a hierarchy of increasingly fine arithmetic scales, AF-388 says those signs carry more than independent fixed-grid information: they constrain how the kernel may touch the log-concavity boundary. By AF-393, if that source also yields strict positive curvature, the same multiscale signs already force the full order-three translation target. This is useful only after the arithmetic construction itself has supplied the required signs; it must not be read backward as evidence that such a prime kernel exists.
 
 ## Boundaries and falsification checks
 
@@ -295,6 +292,6 @@ Strict positivity of `f` is used to define `g=\log f` and divide by powers of `f
 
 Both solid orders two and three are used. Order two supplies `q\ge0`; order three supplies `(4)` and the next-order contradiction at a zero of `q`.
 
-The conclusion `q''(x_0)=0` is only a necessary condition. It does not show `q(x_0)>0`, rule out quartic or infinitely flat contact, or reconstruct arbitrary-placement order-three minors.
+The conclusion `q''(x_0)=0` is only a necessary condition. It does not show `q(x_0)>0` or by itself rule out quartic or infinitely flat contact. AF-393 independently closes the branch where `q` never vanishes; the boundary problem remains where the curvature reaches zero.
 
 Finally, the proof depends on one fixed continuous profile being sampled on all meshes `h_m`. Unrelated discrete sequences at different resolutions need not satisfy any such compatibility and remain subject to the AF-387 obstruction.
