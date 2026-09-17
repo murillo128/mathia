@@ -30,7 +30,7 @@ NB-176 removes the arbitrary probe-design freedom in one natural direction. The 
 
 `mathfrak L_T(epsilon) >= (tr sqrt(G^Eul)-epsilon N)_+^2/N`.
 
-NB-177 now stress-tests that canonical witness and finds an intrinsic compactness ceiling. After the capped-transport Fourier estimate is inserted, the squared Euler amplitudes have a uniformly summable tail even as `a->0`. Finite spectral truncations therefore approximate every bounded-transport Euler fingerprint uniformly, and for `N` realized templates
+NB-177 stress-tests that canonical witness and finds an intrinsic compactness ceiling. After the capped-transport Fourier estimate is inserted, the squared Euler amplitudes have a uniformly summable tail even as `a->0`. Finite spectral truncations therefore approximate every bounded-transport Euler fingerprint uniformly, and for `N` realized templates
 
 `tr sqrt(G^Eul) <= C X_T N^(3/4) sqrt(log(2N))`.
 
@@ -40,10 +40,14 @@ Hence the average singular value decays at least like `X_T N^(-1/4)sqrt(log N)`,
 
 At the high-ordinate source resolution `epsilon_T~log log T`, if `X_T=o(sqrt(log T))` this canonical certificate is `o((log T)^2)` and therefore cannot certify the approximate complexity scale that positive-density rescue would require. This is a limit of the **witness**, not a proof that `mathfrak L_T(epsilon_T)` itself is small.
 
-The surviving adaptive question has therefore split cleanly. Either prove directly that source-natural Nyman template families have small approximate complexity, or construct a jointly contractive source-faithful witness that preserves coherent prime-phase information lost by the square-summed Euler Hilbert embedding. A maximal/time-frequency or phase-sensitive certificate is a plausible category, but it must respect the same capped-Poisson source resolution rather than regain power by changing the metric.
+NB-178 separates that Hilbert compactness from the full dual geometry. If `K` scalar probes are each individually capped-transport contractive, but need not share one joint `ell^2` budget, then an `N x K` response matrix satisfies
+
+`mathfrak L_T(epsilon) >= (||A||_* - epsilon sqrt(N K min(N,K)))_+^2/(N K)`.
+
+The larger coordinatewise witness class pays an explicit factor `K`, so duplicating probes gives no artificial gain. But when `N=K`, a dense Hadamard-scale phase code with singular values `~sqrt N` has `||A||_*~N^(3/2)` and repays that tariff completely, forcing `mathfrak L_T(epsilon)~N` above tolerance. Mere separation such as `A=I_N` gives only an order-one certificate. Therefore the post-NB-177 target is no longer an unspecified “non-Hilbert witness”: it is to construct **source-natural scalar capped-Poisson probes whose coherent prime-phase response matrix has many `sqrt N` singular values**, or prove that every such arithmetic construction has sub-Hadamard nuclear growth.
 
 ## Keep target conditioning and arithmetic-source persistence separate
 
-NB-168--NB-177 are source-side persistence/resource theorems. They control, lower-bound or expose limits of certificates for the complexity with which compact arithmetic samplers can create logarithmic Euler rescue after the sampler family has been viewed at the source's own resolution. NB-177 is especially important methodologically: using the actual Euler frequencies does not make a square-summed witness complete. A source-native representation may still compress the very coherent scalar phase structure needed downstream.
+NB-168--NB-178 are source-side persistence/resource theorems. They control, lower-bound or expose limits of certificates for the complexity with which compact arithmetic samplers can create logarithmic Euler rescue after the sampler family has been viewed at the source's own resolution. NB-177 is especially important methodologically: using the actual Euler frequencies does not make a square-summed witness complete. NB-178 shows why the missing resource can be stated more sharply as coherent coordinatewise phase reuse rather than simply “more frequencies.”
 
 None of these results turns a density obstruction into pointwise exclusion at a selected sparse sequence, removes the `a_T\lesssim T^(-1/2)` ultra-thin regime, or by itself connects surviving source response back to global Nyman approximation.
