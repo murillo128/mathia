@@ -24,7 +24,7 @@ In particular,
 
 not `0`, on every fixed source window `x=e^(2*pi*q)` with `q` in a compact subset of `(0,infinity)`.
 
-The constant is not a new arithmetic effect. It is the classical gamma-factor normalization already visible in `log(t/(2*pi))`. If one rec enters Wang's decomposition by defining
+The constant is not a new arithmetic effect. It is the classical gamma-factor normalization already visible in `log(t/(2*pi))`. If one recenters Wang's decomposition by defining
 
 `B_x^*(t) = [log(t+2)-log(2*pi)]/x`,
 
