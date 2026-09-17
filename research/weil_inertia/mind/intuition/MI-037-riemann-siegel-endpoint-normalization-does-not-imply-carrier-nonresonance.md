@@ -1,23 +1,25 @@
-# MI-037 — Endpoint normalization and zero-ordinate membership do not imply carrier nonresonance
+# MI-037 — Endpoint normalization, zero membership and positive raw prime weights do not imply carrier nonresonance
 
-**Evidence level:** exact/source-compatible negative synthesis from [WI-322](../../findings/WI-322-distinguished-twist-bow-needs-riemann-siegel-scale.md), [WI-323](../../findings/WI-323-riemann-siegel-bow-makes-direct-logarithmic-dual-noncontracting.md), [WI-324](../../findings/WI-324-riemann-siegel-endpoint-has-explicit-lattice-resonance.md), and [WI-325](../../findings/WI-325-endpoint-carrier-resonance-survives-snapping-to-actual-zero-ordinates.md).
+**Evidence level:** exact/source-compatible negative synthesis from [WI-322](../../findings/WI-322-distinguished-twist-bow-needs-riemann-siegel-scale.md), [WI-323](../../findings/WI-323-riemann-siegel-bow-makes-direct-logarithmic-dual-noncontracting.md), [WI-324](../../findings/WI-324-riemann-siegel-endpoint-has-explicit-lattice-resonance.md), [WI-325](../../findings/WI-325-endpoint-carrier-resonance-survives-snapping-to-actual-zero-ordinates.md), and [WI-326](../../findings/WI-326-raw-von-mangoldt-weights-preserve-cubic-snapped-zero-resonance.md).
 
-WI-322 identifies the square-root Riemann--Siegel scale as the source-compatible location of any distinguished bow. WI-323 shows that the direct logarithmic dual is noncontracting there. Those facts make the endpoint geometrically plausible, but they do not provide the cancellation required by a distinguished-twist argument.
+WI-322 identifies the square-root Riemann--Siegel scale as the source-compatible location of any distinguished bow, and WI-323 shows that the direct logarithmic dual is noncontracting there. Those facts make the endpoint geometrically plausible, but they do not provide the cancellation required by a distinguished-twist argument.
 
 WI-324 gives an explicit endpoint control. At
 
 `U_M=2pi M(M+1/2)`, `X_M=M`,
 
-the ratio `U_M/X_M^2` approaches `2pi` from above, yet the phase lattice is resonant. The first two Taylor jets cancel by aliasing and a coherent block of length `asymp M^(1/3)` remains. Thus Riemann--Siegel normalization by itself does not force nonresonance of the bare logarithmic carrier.
+the ratio `U_M/X_M^2` approaches `2pi` from above, yet the phase lattice is resonant. The first two Taylor jets cancel by aliasing and a coherent block of length `asymp M^(1/3)` remains. Riemann--Siegel normalization by itself therefore does not force nonresonance of the bare logarithmic carrier.
 
-WI-325 closes the most immediate arithmetic repair. The explicit Riemann--von Mangoldt error implies that every sufficiently high interval of fixed length two contains a zeta zero ordinate. Choose `gamma_M` with
+WI-325 closes the first arithmetic repair. Genuine zeta-zero membership is still too coarse: an actual zero ordinate `gamma_M=U_M+O(1)` can be chosen near each resonant height, and the resulting phase perturbation is only `O(M^(-2/3))` across the cubic block. Coherence survives after snapping to the zero set.
 
-`gamma_M=U_M+O(1)`.
+WI-326 closes the next weak repair. Positive raw von Mangoldt weights do not automatically destroy the snapped resonance. By averaging ordinary PNT mass over starting positions, infinitely many resonant cubic blocks contain total raw von Mangoldt mass `asymp M^(1/3)`. On the WI-325 sector the phase has positive real part, so
 
-Across the WI-324 coherent block, changing the height by `O(1)` perturbs the carrier phase by only `O(M^(-2/3))`. A sector argument therefore preserves a coherent sum of order `M^(1/3)`. The resonant family can be snapped to **actual zeta zero ordinates** without losing the endpoint obstruction.
+`|sum_(j<=ell) Lambda(M+j) exp(i gamma_M log((M+j)/M))| >> M^(1/3)`.
 
-The conceptual boundary is now sharper. “Use the actual zero height” is not yet source-specific enough: zero ordinates are dense on the `O(1)` scale relevant to this perturbation, while the resonance is stable under that amount of motion. A successful distinguished-twist theorem must use finer information than set membership — for example bow-specific off-critical geometry, weighted von-Mangoldt cancellation, local zero configuration at a scale that resolves the resonance, or another source-fixed observable not shared by arbitrary nearby critical-line zeros.
+After square-root normalization the coherent square is `>>M^(-1/3)`, while the diagonal energy of the same block is `<<M^(-2/3) log^2 M`. Their ratio therefore tends to infinity at least like `M^(1/3)/log^2 M`. Raw positive prime weighting can reinforce rather than suppress the exceptional block.
 
-This also prevents a common overinterpretation. WI-325 does not say actual zeta zeros are resonant in general; it constructs a cofinal subsequence of zero ordinates close enough to an explicit resonant lattice family that the bare carrier cannot distinguish them. Therefore any universal nonresonance theorem based only on endpoint scaling plus zero-ordinate membership is false.
+The conceptual boundary is now sharply source-specific. Endpoint scale, actual zero-ordinate membership and positive raw prime mass are all compatible with the resonance. A successful distinguished-twist theorem must consume structure that WI-326 deliberately omits: the signed subtraction `Lambda-Lambda^sharp`, an additional source factor from the exact BOW reduction, necessary cancellation with the rest of the natural window, or a bow-specific relation that distinguishes the selected off-critical configuration from an arbitrary nearby zero ordinate.
 
-**Boundary.** WI-324--WI-325 concern the bare logarithmic carrier. They do not produce an off-critical bow, prove a large signed Weil covariance, or show that the von-Mangoldt-weighted source sum fails to cancel. They isolate the extra information a closure theorem must genuinely use: source-weighted or bow-specific arithmetic structure beyond normalization and membership in the zero set.
+This is also a normalization warning. Comparing a source-weighted twisted block only with its diagonal `L^2` mass cannot by itself prove cancellation: the coherent contribution can parametrically exceed that scale on the control family. The missing theorem must act on the actual signed/full-window source, not merely on positivity of prime weights.
+
+**Boundary.** WI-326 does not prove that the full Gallagher/BOW coefficient is resonant, does not produce an off-critical bow, and does not lower-bound the complete distinguished Weil covariance. Terms outside the cubic block or the signed subtraction may cancel it. The result only rules out the progressively weaker claims that source-compatible scale, zero-set membership or positive raw von Mangoldt weighting automatically supply the required nonresonance.

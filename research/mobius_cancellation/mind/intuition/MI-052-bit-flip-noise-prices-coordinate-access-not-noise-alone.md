@@ -1,23 +1,23 @@
-# MI-052 — Bit-flip noise prices coordinate access, not noise alone
+# MI-052 — Aggregate noisy source-access capacity survives adaptation only by paying per access
 
-**Evidence level:** exact information-theoretic synthesis from [MC-339](../../findings/MC-339-bounded-energy-dephasing-needs-linear-joint-source-information.md), [MC-340](../../findings/MC-340-punctured-source-total-correlation-is-only-constant.md), [MC-343](../../findings/MC-343-gaussian-noise-transcript-capacity.md), and [MC-344](../../findings/MC-344-bit-flip-source-readout-capacity.md).
+**Evidence level:** exact information-theoretic synthesis from [MC-339](../../findings/MC-339-bounded-energy-dephasing-needs-linear-joint-source-information.md), [MC-340](../../findings/MC-340-punctured-source-total-correlation-is-only-constant.md), [MC-343](../../findings/MC-343-gaussian-noise-transcript-capacity.md), [MC-344](../../findings/MC-344-bit-flip-source-readout-capacity.md), and [MC-345](../../findings/MC-345-adaptive-source-query-feedback-capacity.md).
 
-MC-339--MC-340 reduce bounded-energy reciprocal-endpoint dephasing to a joint-information requirement: a fixed nontrivial gain requires `I(X;Y)=Omega(R)` for the punctured reciprocal source. MC-343 shows how a declared Gaussian readout prices hidden analog precision through SNR. MC-344 supplies the discrete-coordinate counterpart and clarifies an important boundary: **positive noise is not itself the obstruction; insufficient aggregate channel capacity is.**
+MC-339--MC-340 reduce bounded-energy reciprocal-endpoint dephasing to a joint-information requirement: a fixed nontrivial gain requires `I(X;Y)=Omega(R)` for the punctured reciprocal source. MC-343 shows how declared Gaussian readout prices hidden analog precision through SNR. MC-344 supplies the discrete-coordinate counterpart: if only `k` source coordinates are exposed through independent binary-symmetric channels with crossover `q`, then
 
-Suppose a readout exposes only `k` source coordinates and each is passed independently through a binary symmetric channel with crossover probability `q<1/2`. If `Z_J` is the noisy coordinate vector and `Y` is any downstream processing, data processing gives
+`I(X;Y) <= k c(q)`,
 
-`I(X;Y) <= I(X;Z_J) <= k c(q)`,
+where `c(q)=log 2-h(q)` is the one-use BSC capacity in natural units. Thus fixed gain needs `k=Omega(R)` at fixed `q`, but exposing all `R` coordinates at any fixed `q<1/2` still leaves `Theta(R)` information. Positive noise itself is not the obstruction.
 
-where `c(q)=log 2-h(q)` is the one-bit channel capacity in natural units. Combining this with the MC-340 lower bound implies that any fixed bounded-energy dephasing gain requires `k=Omega(R)` at fixed `q`.
+MC-345 closes the obvious adaptive escape. At query time `t`, let the controller choose a source coordinate using all previous noisy answers, allow repeated coordinates, private randomness and a stopping time `tau`, and pass each queried bit through the same memoryless BSC. Because the next index is already determined by the retained history, it contributes no extra conditional information. Each fresh noisy answer contributes at most `c(q)`. Therefore
 
-This gives a clean coordinate-access theorem: an architecture that reads only `o(R)` independently noisy source coordinates cannot supply the linear joint information demanded by the endpoint, no matter how nonlinear the downstream processing is. Equivalently, if the coefficient-energy budget is bounded by `C` and the desired gain is fixed at `eta`, the accessed fraction has a positive lower bound proportional to `eta^2/(C c(q))` up to the punctured-source `o(1)` correction.
+`I(X;T) <= c(q) E[tau]`
 
-But the converse stress test matters just as much. If all `R` source coordinates are exposed through the same fixed-noise channel, then the punctured source still satisfies
+for the complete adaptive transcript, and the same bound holds after arbitrary downstream processing.
 
-`I(X;Z)=R c(q)-o(R)`.
+Combining this with the MC-340 endpoint requirement gives a linear expected-access lower bound for every fixed bounded-energy dephasing gain. Near the matched-filter energy floor, the Fano lower bound prices almost the full source entropy. Adaptivity can decide **where** to spend source accesses, but it cannot manufacture more capacity per access than the declared channel provides.
 
-So every fixed `q<1/2` leaves extensive information. Even though exact recovery is impossible and each coordinate is noisy, the channel remains large enough in principle to meet an `Omega(R)` information demand. A proof that says only “there is positive readout noise” therefore cannot exclude bounded-energy dephasing.
+The zero-error boundary is consistent with the same geometry. With noiseless queries, exact source recovery needs hard depth at least `R` for even rank and `R-1` for odd rank, the latter saving exactly the one parity relation in the source support. With any fixed `0<q<1/2`, every finite transcript path has common support across source states, so an almost-surely finite protocol cannot recover the source with zero error.
 
-The reusable audit is to compute **aggregate source-access capacity at the actual downstream resolution**. Obstruction can come from sublinear access, per-coordinate capacity tending to zero, low-dimensional SNR limits, or source/readout dependence that destroys joint capacity. If the admitted observation has `Theta(R)` surviving capacity, information theory alone has not closed the route; one still needs to ask whether the arithmetic architecture can exploit that capacity coherently at the endpoint.
+The reusable audit is therefore to compute **aggregate source-access capacity at the actual downstream resolution, including every side channel used to choose what is observed**. Obstruction can come from sublinear access, per-use capacity tending to zero, low-dimensional SNR limits, or dependence that genuinely collapses total information. If an architecture has `Theta(R)` positive-capacity accesses, information theory alone has not closed the route; one still needs a structural reason why that information cannot be converted into coherent endpoint cancellation.
 
-**Boundary.** MC-344 studies coordinatewise binary-symmetric access to the reciprocal finite source and does not claim that this is the canonical observation model for Möbius cancellation. It gives an exact capacity benchmark. A different readout may obey a different law, but any claimed information obstruction must control its total channel capacity rather than appeal to noise, dimension, or coordinate syntax in isolation.
+**Boundary.** MC-345 assumes a memoryless BSC conditional on the queried source bit and a controller whose source dependence enters only through the admitted transcript. A hidden source-dependent selector side channel, stateful/correlated noise or a different observation primitive requires its own capacity theorem. The result is a finite reciprocal-endpoint admission theorem and gives no bound for `M(x)`.

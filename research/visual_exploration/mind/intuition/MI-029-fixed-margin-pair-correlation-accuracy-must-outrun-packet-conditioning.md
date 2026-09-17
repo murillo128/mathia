@@ -1,25 +1,27 @@
-# MI-029 — Fixed-margin pair-correlation accuracy must outrun packet conditioning
+# MI-029 — Pair-correlation transfer is jointly limited by packet conditioning and source-window support
 
-**Evidence level:** literature-plus-exact synthesis from [VIS-257](../../findings/VIS-257-cusp-annihilation-exposes-finite-window-quadratic-conditioning.md) through [VIS-260](../../findings/VIS-260-rodgers-fixed-margin-error-pays-cusp-packet-conditioning.md). The external pair-correlation theorem and its scope are inherited from the audited statement in VIS-260.
+**Evidence level:** literature-plus-exact synthesis from [VIS-257](../../findings/VIS-257-cusp-annihilation-exposes-finite-window-quadratic-conditioning.md) through [VIS-260](../../findings/VIS-260-rodgers-fixed-margin-error-pays-cusp-packet-conditioning.md), together with the short-interval transfer boundary in [VIS-265](../../findings/VIS-265-wang-short-interval-support-length-gate.md). The external pair-correlation theorems and their scopes are inherited from those audited findings.
 
-The sharp cusp-packet problem has two independent scales: how much total variation is required to isolate the first surviving carrier, and how accurately the underlying pair statistic is known uniformly over the packet support. VIS-259 solves the first scale exactly; VIS-260 shows how to compose it with a rigorous arithmetic theorem rather than reason from packet geometry alone.
-
-After cancelling mass, the sine-kernel cusp and even moments below order `2m`, a unit `2m`-th moment costs exactly
+The cusp-packet problem has an intrinsic conditioning scale. After cancelling mass, the sine-kernel cusp and all even moments below order `2m`, a unit `2m`-th retained moment costs exactly
 
 `E_m^(-1) b^(-2m)`
 
-in total variation on `[-b,b]`. If a theorem controls the underlying scalar pair statistic uniformly by `epsilon_T`, the packetized error is therefore at most `epsilon_T E_m^(-1)b^(-2m)`. The theorem error must beat the same conditioning exponent that the carrier extraction pays.
+in total variation on `[-b,b]`. If the scalar pair statistic is known uniformly with error `epsilon_T`, the packetized theorem error is therefore at most `epsilon_T E_m^(-1)b^(-2m)`. The theorem accuracy must outrun the same exponent paid to isolate the carrier.
 
-Rodgers supplies one concrete calibration. For fixed support margin `epsilon>0`, fixed smooth weight and any fixed `delta<epsilon/2`, the pair-correlation prediction has uniform error `O_delta(T^(-delta))`. Hence the optimally conditioned packet is certified only when
+Rodgers supplies one fixed-margin calibration. For fixed support margin `epsilon>0`, fixed smooth weight and fixed `delta<epsilon/2`, the pair-correlation prediction has error `O_delta(T^(-delta))`. Hence the optimally conditioned packet is certified only when
 
 `T^(-delta)b^(-2m) -> 0`.
 
-For a power bandwidth `b=T^(-beta)`, some admissible `delta` exists exactly when `beta<epsilon/(4m)`. Thus quadratic extraction can be certified for `beta<epsilon/4`, quartic extraction for `beta<epsilon/8`, and higher cancellation progressively narrows the theorem-supported shrinking-band regime.
+For `b=T^(-beta)`, some admissible `delta` exists exactly when `beta<epsilon/(4m)`. This is a theorem-relative bandwidth condition, not a universal support-edge law.
 
-This is a useful positive result because it separates an absolute conditioning obstruction from a theorem-relative one. The `b^(-2m)` cost is unavoidable, but a sufficiently accurate theorem can pay it. Conversely, quoting a decaying scalar error without multiplying by the packet norm can overstate what survives after cancellation.
+VIS-265 adds an independent **source-height localization budget** from Wang's 2026 short-interval Montgomery theorem. For a zero window of length `H=T^theta`, a fixed pair-frequency test with Fourier support inside `[-lambda,lambda]` is covered only when `lambda<theta`, and the normalized theorem error is
 
-The fixed-margin qualifier is load-bearing. Rodgers' theorem fixes the support margin and the weight before `T -> infinity`; it does not provide uniform control for `epsilon_T -> 0` or a family of changing windows. Nor does a two-level pair theorem supply the four-level covariance needed for the original edge--edge statistic. Those are new mathematical inputs, not parameter substitutions.
+`O(1/log T + T^(lambda-theta) log T)`.
 
-The next source-side test is therefore concrete: for one predeclared fixed-margin statistic, compute the first nonzero Taylor coefficient of the arithmetic prediction after the same cusp-adapted cancellations and compare its size directly with the conditioned theorem error. Only if that carrier survives should one spend effort on a moving-edge uniform theorem or higher-order covariance.
+Thus pair-frequency support consumes source-window exponent. A probe reaching radius `a` needs `theta>a`; approaching the Montgomery edge `a=1-epsilon` forces `theta>1-epsilon`. A fixed physical or polylogarithmic source window has effective exponent tending to zero, so this theorem supplies no fixed positive pair-frequency support there. “Short interval” is therefore not enough by itself: the theorem's admissible frequency support must be compared with the actual source-window scale of the statistic.
 
-**Boundary.** The rate `beta<epsilon/(4m)` belongs to the specific fixed-margin theorem quoted in VIS-260 and the total-variation/sup-norm packet duality of VIS-259. It is not a universal support-edge threshold, does not justify varying `epsilon` or the test weight with `T`, and does not establish any RH implication beyond the hypotheses already assumed by the pair-correlation theorem.
+The error scale creates a second boundary. Even in the admissible power-length regime, Wang's stated normalized `O(1/log T)` term cannot resolve a deterministic arithmetic residual of size `c/log T`. A lower-order coefficient requires a theorem whose remainder is smaller than the coefficient scale, or one that carries the lower-order term explicitly. This is logically separate from the `b^(-2m)` packet-conditioning bill.
+
+The combined audit has three independent coordinates: **packet conditioning, pair-frequency support versus source-window length, and theorem remainder versus the intended residual scale**. Passing one does not imply the others. In particular, Wang narrows the previous global-versus-local gap but does not validate the bounded-source tent of VIS-128 and does not transport the prime-power residual isolated in VIS-264 into that regime.
+
+**Boundary.** Rodgers and Wang use different fixed theorem classes; neither statement supplies moving-edge uniformity or the four-level covariance needed by the original edge--edge statistic. Source-height taper and pair-separation weighting are also distinct objects and cannot be identified. Any future transfer must preserve the exact statistic's localization, support and normalization before a source-specific carrier is credited.

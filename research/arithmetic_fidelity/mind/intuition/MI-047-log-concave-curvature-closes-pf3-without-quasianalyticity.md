@@ -1,19 +1,33 @@
-# MI-047 — Log-concave curvature closes `PF_3` recognition without quasianalyticity
+# MI-047 — Adjacent curvature mass is the exact smooth `PF_3` recognition variable
 
-**Evidence level:** exact synthesis from [AF-385](../../findings/AF-385-sampled-solid-minor-hierarchy-certifies-continuum-fixed-order-total-nonnegativity.md), [AF-389](../../findings/AF-389-multiscale-solid-pf3-excludes-all-finite-order-boundary-contact.md), [AF-390](../../findings/AF-390-quasianalytic-curvature-closes-multiscale-pf3-recognition.md), and [AF-391](../../findings/AF-391-log-concave-logarithmic-curvature-forces-order-three-total-nonnegativity.md).
+**Evidence level:** exact synthesis from [AF-385](../../findings/AF-385-sampled-solid-minor-hierarchy-certifies-continuum-fixed-order-total-nonnegativity.md), [AF-389](../../findings/AF-389-multiscale-solid-pf3-excludes-all-finite-order-boundary-contact.md), [AF-390](../../findings/AF-390-quasianalytic-curvature-closes-multiscale-pf3-recognition.md), [AF-391](../../findings/AF-391-log-concave-logarithmic-curvature-forces-order-three-total-nonnegativity.md), and [AF-392](../../findings/AF-392-adjacent-curvature-masses-exactly-characterize-smooth-order-three-fidelity.md).
 
-For a positive smooth profile `f`, write `q=-(log f)''`. AF-389 shows that shrinking-mesh solid `PF_2/PF_3` consistency forces `q>=0` and makes every zero of `q` infinitely flat. AF-390 then closes the residual boundary whenever the admissible source class has flat-zero unique continuation for `q`.
+For a positive `C^3` profile `f`, write
 
-AF-391 identifies a different closure mechanism. If `q` is nonnegative and log-concave in the extended sense, the order-three placement ratio needed to move from solid to arbitrary Toeplitz minors is monotone. Consequently the translation kernel `K_f(x,y)=f(x-y)` is continuum `TN_3`; when `q` is smooth and strictly positive, increasing coordinates give strict `TP_3`.
+`q=-(log f)''`.
 
-The important point is that **quasianalyticity is sufficient but not necessary**. AF-391 includes an explicit curvature profile
+When `q>0`, AF-392 identifies the exact finite-window variable controlling continuum order-three total positivity. For adjacent gaps `a,b>0`, set
 
-`q(x)=0` for `x<=0`, and `q(x)=exp(-1/x)` for `x>0`,
+`A_a(t)=int_(t-a)^t q(s) ds`,
 
-which is nonquasianalytic and infinitely flat at the boundary but still log-concave. Its translation kernel is therefore `TN_3`. An infinitely-flat zero is not itself the obstruction left by AF-389; the residual defect requires additional shape freedom that breaks the log-concave curvature mechanism.
+`B_(a,b)(t)=int_(t-a-b)^(t-a) q(s) ds`.
 
-This changes the source-class audit. The multiscale certificate has already recovered the complete finite jet at any boundary zero. One can close the remaining fibre either by a category theorem that says a flat jet determines the curvature globally, as in AF-390, or by a shape theorem that makes every allowed placement minor positive despite that flat zero, as in AF-391. These are logically different resources and should not be conflated.
+Then the translation kernel `K_f(x,y)=f(x-y)` is `TN_3` exactly when, for every `t,a,b`,
 
-The next boundary is therefore narrower: construct or rule out a smooth nonnegative curvature `q` with an infinitely-flat zero that is both nonquasianalytic and non-log-concave, satisfies the full shrinking solid hierarchy, yet leaves a negative gapped continuum `3x3` minor. Any weaker source-derived shape condition that excludes that residual fibre would improve the recognition theorem without requiring full quasianalytic rigidity.
+`A+B+B'/B-A'/A >= 0`.
 
-**Boundary.** AF-391 does not derive log-concavity of `q` from any Riemann-associated source and does not show that log-concavity is necessary for `TN_3`. It only proves that a broad nonquasianalytic flat-zero class is already harmless. The arithmetic problem remains to obtain the required solid signs or curvature restriction from genuine source information, and none of these recognition statements supplies an RH zero-selection theorem.
+Equivalently, after normalizing a three-column minor to the curve `(1,U(t),V(t))`, this inequality says that `V` is convex as a function of the strictly increasing coordinate `U`. Thus arbitrary order-three placements are controlled by a **comparison of two adjacent curvature masses and their logarithmic drift**, not by a pointwise curvature inequality alone.
+
+AF-391 is now best understood as a strong sufficient cone inside this exact criterion. If `q` is log-concave, then `(log q)'` is nonincreasing, which forces the adjacent-window drift term to have the favorable sign and makes the AF-392 inequality automatic. But log-concavity is not necessary: AF-392 gives smooth oscillatory examples such as `q_epsilon(t)=1+epsilon cos t` that are not log-concave yet remain `TP_3` for sufficiently small `epsilon`.
+
+The relation to the shrinking-mesh hierarchy is also exact. Letting `a,b -> 0` in the finite-window criterion gives
+
+`(log q)'' <= 2q`,
+
+the same local differential condition recovered in AF-388. Hence the shrinking local inequality is only the **infinitesimal shadow** of the continuum placement problem. The information missing from a local solid-minor limit is precisely the family of finite adjacent-window comparisons. Any source or category theorem that upgrades the multiscale certificate to full `TN_3` must somehow recover those comparisons, or imply them indirectly.
+
+AF-389--AF-390 still control the boundary where `q` can vanish. Compatible shrinking lattices force every zero of `q` to be infinitely flat, and a flat-jet uniqueness theorem closes that residual fibre. AF-391 supplies a different closure route when the curvature shape itself is log-concave. AF-392 does not classify curvature zeros because its exact ratio criterion assumes `q>0`; a limiting version across flat zeros remains a separate boundary problem.
+
+The reusable distinction is therefore sharper than “quasianalytic versus nonquasianalytic” or “log-concave versus non-log-concave.” In the strictly positive smooth region, `PF_3` is exactly a **finite-window curvature-transport condition**. Quasianalyticity and log-concavity are sufficient mechanisms that make the required global placement information follow from simpler source-class structure; neither is the definition of the surviving fibre.
+
+**Boundary.** AF-392 makes no novelty claim relative to the classical `PF_3` literature and may be a smooth specialization of Weinberger's characterization. It also does not derive the adjacent-window inequality from arithmetic data, classify `q=0` boundary points, or produce an RH zero-selection theorem. The arithmetic-fidelity problem is to determine what retained source information can force the finite-window criterion, not merely its infinitesimal limit.

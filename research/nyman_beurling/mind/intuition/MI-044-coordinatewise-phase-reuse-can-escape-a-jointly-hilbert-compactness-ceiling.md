@@ -1,0 +1,17 @@
+# MI-044 — Coordinatewise phase reuse can escape a jointly Hilbert compactness ceiling
+
+**Evidence level:** exact source-side synthesis from [NB-174](../../findings/NB-174-source-resolution-defines-approximate-linear-template-complexity.md), [NB-175](../../findings/NB-175-dual-nuclear-response-lower-bounds-source-complexity.md), [NB-176](../../findings/NB-176-euler-weighted-fourier-fingerprints-certify-source-complexity.md), [NB-177](../../findings/NB-177-square-summable-euler-spectrum-caps-canonical-complexity-certificate.md), and [NB-178](../../findings/NB-178-coordinatewise-phase-codes-recover-linear-source-complexity-certificates.md).
+
+NB-177 shows that the canonical Euler witness becomes compact because all source-frequency probes share one jointly contractive Hilbert budget. Square-summing the Euler coordinates makes the total dual energy summable, so the average singular scale of the response matrix decays and the resulting certificate cannot reach the linear complexity demanded by positive-density rescue in the relevant regime.
+
+NB-178 isolates exactly which part of that obstruction is architecture-specific. Replace the single joint `ell^2` contraction by scalar probes `ell_k` that are each separately contractive for the same capped-Poisson source norm. For `N` realized templates and `K` probes, let `A_(ik)=ell_k(nu_i)`. Then
+
+`mathfrak L_T(epsilon) >= (||A||_* - epsilon sqrt(N K min(N,K)))_+^2/(N K)`.
+
+The factor `K` is the explicit price of abandoning the shared Hilbert budget. Merely duplicating a probe or separating coordinates does not beat it: with `N=K`, an identity response gives only an order-one certificate. To recover linear complexity, the source responses must be **dense and spectrally spread**. A Hadamard-scale matrix with singular values `asymp sqrt N` has nuclear norm `asymp N^(3/2)` and forces `mathfrak L_T(epsilon)=Omega(N)` above tolerance.
+
+Thus the reusable distinction is not “Hilbert versus non-Hilbert” in the abstract. It is **shared quadratic dual budget versus coordinatewise reusable phase budget**. The compactness theorem rules out one square-summed canonical embedding, not every source-faithful dual architecture. A family of scalar source observables can repay its larger budget only if many templates reuse those observables with coherently different sign/phase patterns so that stable rank and nuclear norm grow together.
+
+This makes the next arithmetic target concrete. Construct source-natural capped-Poisson scalar probes on natural Nyman templates whose response matrix has a positive proportion of singular values on the `sqrt N` scale, or prove that every such arithmetic construction has sub-Hadamard nuclear growth. Either outcome would resolve whether the NB-177 compactness ceiling is merely a witness-choice artifact or reflects a deeper phase-complexity obstruction of the source.
+
+**Boundary.** NB-178 is still a lower-certificate theorem, not a dual characterization of `mathfrak L_T`. The probes may be chosen after the finite template family unless an additional source-natural construction is imposed, and no such Euler/Nyman phase code is currently built. The result does not remove sparse exceptional-height escape, the ultra-thin source regime, or the final bridge from source persistence to global Nyman approximation.
