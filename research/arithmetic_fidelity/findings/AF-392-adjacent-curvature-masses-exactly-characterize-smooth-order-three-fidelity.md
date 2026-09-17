@@ -65,7 +65,7 @@ A+B
 
 Strict inequality in `(2)` for every `t,a,b`, together with `q>0`, gives strict positivity of every non-colliding minor of orders one through three.
 
-Thus, in the smooth positive-curvature regime, order-three translation fidelity is not controlled by a pointwise curvature condition alone. It is exactly controlled by a **two-adjacent-window comparison of curvature mass and logarithmic mass drift**.
+Thus `(2)` is the exact finite-window form of smooth positive-curvature order-three translation fidelity. AF-393 shows that, with the regularity needed to differentiate `r=(\log q)'`, this finite-window condition is equivalent to the pointwise differential inequality `(\log q)''\le2q`: the two-adjacent-window comparison is the integrated curvature-mass form of that local condition, not an independent information requirement.
 
 This criterion is strictly broader than the log-concavity certificate in AF-391. In particular, sufficiently small smooth oscillations of constant curvature remain `TP_3` even though their curvature is not log-concave.
 
@@ -301,14 +301,14 @@ that is,
 \tag{18}
 \]
 
-This is exactly the interior differential condition extracted in AF-388 from shrinking solid order-three minors. The AF-388 inequality is therefore the **infinitesimal shadow** of the full adjacent-window criterion; finite non-solid placement information is precisely what is lost when only the shrinking local limit is retained.
+This is exactly the interior differential condition extracted in AF-388 from shrinking solid order-three minors. It is the infinitesimal form of the finite-window criterion. AF-393 proves the converse exactly: in accumulated curvature-mass coordinates, `(18)` bounds the drift between every left/right pair, and averaging that bound over two adjacent mass intervals gives `(2)`.
 
-That identifies the remaining recognition gap sharply. Any attempt to lift multiscale solid tests to continuum `TN_3` must recover enough finite-window information to promote the local inequality `(18)` to the complete family `(2)`.
+Consequently there is no separate local-to-finite placement gap on the smooth stratum `q>0`. The remaining recognition problem is the boundary where `q` reaches zero and the logarithmic curvature drift and mass coordinate may become singular or degenerate.
 
 ## Falsification and boundaries
 
 - Positivity of `q` is essential to the stated equivalence because it makes `U` strictly increasing and keeps `A,B` away from zero. Curvature zeros require a separate limiting/boundary analysis and are not classified here.
-- Criterion `(2)` concerns every pair of positive column gaps. Checking only `a=b`, only a discrete mesh, or only the infinitesimal limit is weaker.
+- Criterion `(2)` concerns every pair of positive column gaps. Checking only `a=b` or only one discrete mesh is weaker. Under `q>0` and the regularity of AF-393, however, the pointwise infinitesimal inequality `(18)` everywhere is equivalent to the full finite-window family `(2)`.
 - The Lipschitz estimate `(13)` is only a sufficient corollary of the exact criterion; it is not necessary and is deliberately coarse.
 - The oscillatory example does not show that arbitrary non-log-concave curvature works. It only proves that log-concavity is not necessary.
 - No arithmetic consequence is asserted. The result is a source/target-fidelity theorem for the order-three Toeplitz recognition testbed.
@@ -317,9 +317,9 @@ That identifies the remaining recognition gap sharply. Any attempt to lift multi
 
 The ambient mathematics is classical. I. J. Schoenberg's 1951 `PF` theory and Samuel Karlin's 1968 monograph establish the translation-kernel/total-positivity framework and the role of ratio and variation-diminishing structures. H. F. Weinberger's 1983 paper, *A Characterization of the Polya Frequency Functions of Order 3*, is directly on the same classification problem and must be treated as the primary neighboring source.
 
-The accessible publisher and institutional metadata confirm that Weinberger gives a dedicated characterization of `PF_3` functions, but the primary article text was not available in the present literature pass. Accordingly **no novelty claim is made** for criterion `(2)`, its convex-curve reformulation, or the possibility of weaker-than-log-concavity `PF_3` certificates. They may be equivalent to, or a smooth specialization of, Weinberger's classical characterization.
+The accessible publisher and institutional metadata confirm that Weinberger gives a dedicated characterization of `PF_3` functions, but the primary article text was not available in the present literature pass. Accordingly **no novelty claim is made** for criterion `(2)`, its convex-curve reformulation, the AF-393 local differential equivalent, or the possibility of weaker-than-log-concavity `PF_3` certificates. They may be equivalent to, or a smooth specialization of, Weinberger's classical characterization.
 
-The durable contribution for Arithmetic Fidelity is narrower: `(2)` is derived directly in the notation of AF-388--AF-391, it identifies exactly which finite adjacent-window information is absent from the local solid hierarchy, and it proves by `(14)`--`(17)` that the previous log-concavity closure mechanism is not necessary.
+The durable contribution for Arithmetic Fidelity is narrower: `(2)` is derived directly in the notation of AF-388--AF-391 and gives an explicit finite-window description of the order-three constraint; AF-393 then shows that the apparent positive-interior gap between that description and the AF-388 differential condition is only representational, while `(14)`--`(17)` still prove that the previous log-concavity closure mechanism is not necessary.
 
 Primary/authoritative neighboring sources:
 
