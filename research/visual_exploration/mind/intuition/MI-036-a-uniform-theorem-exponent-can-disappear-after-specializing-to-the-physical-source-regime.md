@@ -1,19 +1,25 @@
 # MI-036 — A uniform theorem exponent can disappear after specializing to the physical source regime
 
-**Evidence level:** literature+derived synthesis from [VIS-272](../../findings/VIS-272-wang-green-potential-dictionary.md), [VIS-274](../../findings/VIS-274-wang-fixed-source-leading-profile.md), [VIS-278](../../findings/VIS-278-wang-gamma-normalized-source-energy.md), and [VIS-279](../../findings/VIS-279-wang-fixed-source-removes-l32-floor.md). Wang's mean-square estimate is prior art; the Mathia content is the fixed-source rescaling audit and its consequence for the apparent theorem frontier.
+**Evidence level:** literature+derived synthesis from [VIS-272](../../findings/VIS-272-wang-green-potential-dictionary.md), [VIS-274](../../findings/VIS-274-wang-fixed-source-leading-profile.md), [VIS-278](../../findings/VIS-278-wang-gamma-normalized-source-energy.md), [VIS-279](../../findings/VIS-279-wang-fixed-source-removes-l32-floor.md), and [VIS-280](../../findings/VIS-280-wang-db-cross-power-small.md). Wang's mean-square and cross-term estimates are prior art; the Mathia content is the fixed-source rescaling audit and its consequence for the apparent theorem frontier.
 
 The Wang channel is consumed by a fixed physical source packet `x=e^(2 pi q)` with `q` in a compact set while `L=log T` grows. A theorem stated uniformly for a much larger moving range of `x` can therefore carry an error exponent that is not intrinsic to this destination regime.
 
-VIS-279 makes this explicit for the first non-source cross term. Wang's exact mean-square identity gives, for fixed `x`,
+VIS-279 makes this explicit for the `D_x`--`E_x` cross term. Wang's exact mean-square identity gives, for fixed `x`,
 
 `int |D_x(t)|^2 dt = H log x + O(H + x log^2(...))`,
 
-so on a compact fixed-source window `||D_x||_2=O(sqrt H)` rather than the `O(sqrt(HL))` scale obtained by inserting a worst-case growing-`x` bound. Together with `||E_x||_2=O(sqrt H/x)`, the `D_x`--`E_x` cross term is only `O(H/x)`. After the fixed-source `dq/L` pullback and the theorem normalization `1/(HL)`, its contribution is `O(L^-2)`.
+so on a compact fixed-source window `||D_x||_2=O(sqrt H)` rather than the `O(sqrt(HL))` scale obtained by inserting a worst-case growing-`x` bound. Together with `||E_x||_2=O(sqrt H/x)`, the cross term is only `O(H/x)`. After the fixed-source `dq/L` pullback and the theorem normalization `1/(HL)`, its contribution is `O(L^-2)`.
 
-Thus the previously visible `L^-3/2` scale is not forced by this cross interaction. It came from retaining a uniform-in-growing-source estimate after the destination had already specialized to fixed physical `q`. VIS-278 had separately shown that the gamma-normalized pure source energy is also `L^-2`. Two natural candidate sectors therefore fail to produce an intrinsic fixed-source `L^-3/2` obstruction.
+VIS-280 removes the other direct prime/source cross as a candidate source of `L^-3/2`. Wang's explicit bound
 
-The reusable lesson is stronger than “use a sharper estimate.” **Before assigning mathematical meaning to a limiting exponent, re-specialize every theorem input to the physical source scaling actually used by the destination.** A bound optimized for a larger parameter range may create an apparent frontier that vanishes when the source window is fixed. Packet cancellation should target an exact signed term at the destination scale, not a slack exponent inherited from an unused uniformity regime.
+`|int D_x(t) overline(B_x(t)) dt| << L/sqrt(x)`
 
-This also changes the search order. One should first decompose the full fixed-source theorem and determine whether any sector genuinely survives at `L^-3/2`. Only if such a term exists should its sign/covariance be engineered. If every exact compact-source sector is `O(L^-2)` or smaller, the right advance is a sharper fixed-source transfer theorem rather than another cancellation packet.
+is `O_K(L)` on a compact fixed-source packet. After the same `dq/L` pullback and `1/(HL)` normalization, the full `D_x`--`B_x` packet is `O_K(1/(HL))`, hence smaller than every fixed negative power of `L` when `H=T^theta` with fixed `theta>0`.
 
-**Boundary.** VIS-279 does not prove that the full fixed-source remainder is `O(L^-2)`, identify every interaction sector, or improve Wang's theorem globally in `x`. It closes only the `D_x`--`E_x` candidate and shows that the old `L^-3/2` attribution was not justified in the fixed-source regime. A genuine `L^-3/2` contribution may still occur elsewhere and must be exhibited explicitly before it is treated as the destination bottleneck.
+Together with VIS-278, the current audit now excludes all of the obvious source and direct prime/source sectors as compulsory `L^-3/2` mechanisms: the gamma-normalized pure source energy is `L^-2`, the `D_x`--`E_x` cross is at most `L^-2`, and the `D_x`--`B_x` cross is power-small. The previously visible `L^-3/2` scale is therefore not forced by `D_x` against `B_x+E_x` at all.
+
+The reusable lesson is stronger than “use a sharper estimate.” **Before assigning mathematical meaning to a limiting exponent, re-specialize every theorem input to the physical source scaling actually used by the destination, and decompose the remainder until an exact sector genuinely realizes that exponent.** A bound optimized for a larger parameter range may create an apparent frontier that vanishes when the source window is fixed. Packet cancellation should target an exact signed term at the destination scale, not a slack envelope inherited from unused uniformity.
+
+This also changes the search order. The next task is not to engineer cancellation inside the direct prime/source cross. It is to inspect the remaining proof-loss, localization, truncation or replacement sectors at fixed physical `q` and identify the actual largest surviving term. If some exact sector really remains at `L^-3/2`, preserve its sign/covariance and test cancellation there. If every compact-source sector falls to `L^-2` or below, the advance is a sharper fixed-source transfer theorem rather than another cancellation packet.
+
+**Boundary.** VIS-280 does not prove that the full fixed-source remainder is `O(L^-2)`, identify every remaining theorem-loss sector, improve Wang's uniform theorem globally in `x`, or imply RH. It closes the direct `D_x`--`(B_x+E_x)` candidate only. A genuine `L^-3/2` contribution may still occur elsewhere and must be exhibited explicitly before it is treated as the destination bottleneck.

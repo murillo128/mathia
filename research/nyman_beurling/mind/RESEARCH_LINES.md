@@ -14,7 +14,7 @@ NB-191 closes the simplest fixed-resolution locality escape. At every fixed `a` 
 
 NB-192 quantifies the hidden nonuniformity. A single fixed log-width Euler band contains `m_a~a exp(r_0/a)` rationally independent prime-log phases. Coordinatewise common recurrence at fixed accuracy therefore has worst-gap inclusion length with `log L_a >> a exp(r_0/a)`, giving a log-log lower floor on `a` if the return must be guaranteed inside a block of length `T`.
 
-NB-193 now closes the most direct aggregate-weighted escape from that entropy barrier. Replace coordinatewise phase recurrence by the true-source-weighted coefficient mismatch
+NB-193 closes the most direct aggregate-weighted escape from that entropy barrier. Replace coordinatewise phase recurrence by the true-source-weighted coefficient mismatch
 
 `A_a(t) = theta_(0,a)^(-1) sum_(n in S_(0,a)) alpha_(n,a) |e^(-it log n)-1|`.
 
@@ -22,12 +22,20 @@ For a rationally independent positive phase family, the Haar volume of the weigh
 
 `log L_a^avg(eta) >> a exp(r_0/a)`.
 
-The same log-log block-width floor survives. Thus replacing max-phase recurrence by the natural positive `ell^1` aggregate used by the NB-190 coefficient topology does not make the NB-191 transplant uniformly cheap in the coupled limit.
+NB-194 now closes a genuine part of the specific-block loophole left by those worst-gap theorems. For the actual normalized full von-Mangoldt shell, a positive chord return forces a large complex barycenter, while Vinogradov--Korobov PNT dephasing gives
 
-The live discriminator is now narrower. A successful high-block synthesis below that floor must exploit something not captured by positive syndetic recurrence of the target coefficient mask: an exceptionally early return in the specific block `[T,2T]`, signed cancellation after aggregation, a different response topology, or a genuinely different source-native synthesis architecture. The next theorem should price one of those mechanisms directly rather than weakening the recurrence target while retaining the same worst-gap paradigm.
+`|C_a(t)| << (1+|t|)^(-1) + (1+|t|) exp(-c V(e^(r_0/a)))`.
+
+Therefore for every fixed positive accuracy there is a deterministic return-free corridor from a fixed height up to `exp(c_eta V(e^(r_0/a)))`. In particular the physical block `[T,2T]` cannot contain an exceptionally early positive return when
+
+`log T=o(V(e^(r_0/a_T)))`,
+
+with inversion scale roughly `a_T~(log T)^(-5/3)(loglog T)^(-1/3)` up to constants. This is a source-dephasing theorem for the particular block, not another syndetic entropy estimate.
+
+The ranges still leave a substantial intermediate regime. The NB-193 guaranteed-block obstruction becomes relevant near the much larger log-log source-width scale, while NB-194 excludes actual positive returns only in the narrower Vinogradov--Korobov corridor. The next theorem should attack this gap directly: strengthen blockwise cancellation for the oscillatory von-Mangoldt shell, price signed/complex aggregate synthesis in a source-safe response norm, or identify a genuinely different high-block construction not obtained by positive recurrence. Weakening the positive recurrence target again is no longer enough.
 
 ## Keep source persistence, acquisition cost and destination conditioning separate
 
-NB-190--NB-193 are acquisition theorems in coefficient topology. They do not establish that the true Nyman realized range contains the Poisson-packed dipoles, nor that the approximation problem demands independent recovery of all `K` normalized bands. Conversely, unrestricted mixtures can synthesize those bands, and fixed-`a` recurrence can eventually transplant them to high blocks, but NB-192--NB-193 show that both coordinatewise and natural positive weighted recurrence become double-exponentially nonuniform as `a->0`.
+NB-190--NB-194 are acquisition theorems in coefficient/phase topology. They do not establish that the true Nyman realized range contains the Poisson-packed dipoles, nor that the approximation problem demands independent recovery of all `K` normalized bands. Conversely, unrestricted mixtures can synthesize those bands, and fixed-`a` recurrence can eventually transplant them to high blocks, but NB-192--NB-193 show that positive recurrence becomes double-exponentially nonuniform as `a->0`, while NB-194 shows that the actual rational-prime shell is uniformly dephased on a narrower high-block corridor.
 
-Frequency membership, true amplitudes, positive source mass, fanout, representation gain, scalar-mixture total variation, recurrence target volume/effective dimension, filling time and destination conditioning are distinct currencies. A successful continuation must identify which of them is actually bounded by the Nyman construction in the simultaneous `a_T`--`T` regime and then test that bound against a matched control on the realized approximation range.
+Frequency membership, true amplitudes, positive source mass, fanout, representation gain, scalar-mixture total variation, recurrence target volume/effective dimension, filling time, source-specific dephasing and destination conditioning are distinct currencies. A successful continuation must identify which of them is actually bounded by the Nyman construction in the simultaneous `a_T`--`T` regime and then test that bound against a matched control on the realized approximation range.

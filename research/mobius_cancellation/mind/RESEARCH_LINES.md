@@ -4,7 +4,7 @@ This file holds the current mathematical questions suggested by the durable Möb
 
 ## Match compulsory reverse discrimination to the actual endpoint channel
 
-**Linked intuitions:** `MI-013-bost-connes-regularity-needs-an-intermediate-transverse-category` through `MI-060-total-variation-prices-source-edge-discrimination-without-breaking-at-singular-endpoints`.
+**Linked intuitions:** `MI-013-bost-connes-regularity-needs-an-intermediate-transverse-category` through `MI-061-hellinger-affinity-tensorizes-the-bounded-source-edge-tariff`.
 
 The reciprocal endpoint problem has been reduced from syntactic complexity to invariant source discrimination. Bounded coefficient energy with nontrivial all-mode dephasing forces linear joint source information. On the natural source graph, destination-relative reliability charges only edges that cross the relevant quotient, while the canonical channel-law quotient itself must have an extensive exact boundary.
 
@@ -28,15 +28,19 @@ one has
 
 `I(X;Y) <= (log 2) T_1 + 2(R-1)log 2/m`.
 
-Hence bounded-energy constant-factor dephasing forces `T_1/R` to stay bounded away from zero. In the matched-filter limit the ratio tends to its maximal value, and at exact unit-energy dephasing every surviving source edge has TV one. The source graph therefore remains quantitatively expensive even when KL/Jeffreys has blown up and ceased to be a useful finite metric.
+Hence bounded-energy constant-factor dephasing forces `T_1/R` to stay bounded away from zero. In a genuine shared-randomness architecture `Y=F(x,U_0)`, TV is bounded by the probability that a one-source flip changes the complete transcript under the common seed. This gives a finite architecture-specific upper-theorem surface even when KL/Jeffreys is singular.
 
-The most actionable form is coupling-based. If the real architecture has source-independent shared randomness `Y=F(x,U_0)`, then
+MC-360 now adds a **compositional bounded currency**. If `h_e^2=H^2(P_x,P_x')` and `H_1=(2/m)sum_e h_e^2`, then
 
-`TV(P_x,P_x') <= P(F(x,U_0) != F(x',U_0))`.
+`I(X;Y) <= H_1 + 2(R-1)/m`,
 
-A one-source flip must therefore alter the complete transcript on a positive fraction of common random seeds on average if the architecture is to realize fixed nontrivial bounded-energy dephasing. This creates a finite upper-theorem surface for randomized or nearly deterministic constructions: expose the actual shared seed/branch structure and bound how often one source edge can change the transcript.
+so bounded-energy nontrivial dephasing forces `H_1/R` to remain positive. More importantly, for a genuine source-dependent latent law followed by conditionally independent components, Hellinger affinity factorizes and yields
 
-The live bridge is architecture-specific rather than family-classification-specific. For an actual Möbius endpoint construction, prove that its adjacent TV/common-seed change budget is too small, prove a finite lifted Jeffreys/Fisher upper bound where regularity permits it, or identify the singular/high-change source path that genuinely pays the compulsory budget. Hidden adaptive branches, random seeds, metadata or side channels must be included in the lifted transcript before any upper theorem is applied.
+`H^2(P_x,P_x') <= H^2(nu_x,nu_x') + sum_j int sqrt(r_x r_x') h_(e,j)^2 d kappa`.
+
+Thus source discrimination cannot disappear by being split among a latent selector and many weak product components. With source-independent latent randomness this becomes an extensive weighted source-coordinate incidence tariff. Hellinger fills the gap between the TV/common-seed interpretation and the regular Jeffreys/Fisher ledger: it remains bounded at singularity and composes naturally across conditional products.
+
+The live bridge is now architecture-specific rather than family-classification-specific. For an actual Möbius endpoint construction, expose its complete transcript including adaptive branches, random seeds, metadata and side channels, then use the finite currency matching its architecture. A common-seed construction invites a TV change-probability upper bound; a latent/product construction invites a Hellinger latent/component-incidence upper bound; a regular channel may admit a sharper lifted Jeffreys/Fisher theorem. The task is to prove that the actual arithmetic channel cannot afford the compulsory extensive separation, or identify the source-dependent high-change/singular component that genuinely pays it.
 
 ## Repair probabilistic Möbius comparators only after exact-stratum and algebraic-collapse gates
 
@@ -44,6 +48,6 @@ Probabilistic proxies remain secondary until their conditioning is arithmeticall
 
 ## Keep the resource ledger explicit
 
-The current invariant chain distinguishes source loading, coefficient energy, exact source quotient, joint transcript information, destination-cut geometry, aggregate edge KL, privacy-loss distribution, inverse distinguishability, mean displacement, covariance deformation, Fisher action, latent mixing-law divergence, conditional component divergence, lifted joint divergence, total-variation edge budget, common-seed change probability, support singularity, score curvature/noise scale and side-channel structure. These are different resources.
+The current invariant chain distinguishes source loading, coefficient energy, exact source quotient, joint transcript information, destination-cut geometry, aggregate edge KL, privacy-loss distribution, inverse distinguishability, mean displacement, covariance deformation, Fisher action, latent mixing-law divergence, conditional component divergence, lifted joint divergence, total-variation edge budget, common-seed change probability, Hellinger edge budget, affinity-weighted component incidence, support singularity, score curvature/noise scale and side-channel structure. These are different resources.
 
-A useful Möbius endpoint theorem must close the loop in both directions: the destination must force enough neighboring-state discrimination, and the concrete arithmetic channel must be shown unable to afford that discrimination at the relevant scale. MC-354--MC-358 price progressively broader regular/lifted architectures; MC-359 adds a bounded source-edge currency that survives singularity. The remaining problem is no longer to name a more complicated generic statistical family, but to prove a source-edge upper theorem for the actual Möbius-derived transcript or exhibit the source-dependent high-change/singular channel that defeats such an upper bound.
+A useful Möbius endpoint theorem must close the loop in both directions: the destination must force enough neighboring-state discrimination, and the concrete arithmetic channel must be shown unable to afford that discrimination at the relevant scale. MC-354--MC-358 price progressively broader regular/lifted architectures; MC-359 adds a bounded source-edge currency that survives singularity; MC-360 adds the bounded product/latent ledger needed to prevent source sensitivity from disappearing by component splitting. The remaining problem is no longer to name a more complicated generic statistical family, but to prove a source-edge upper theorem for the actual Möbius-derived transcript in the currency native to its architecture.
