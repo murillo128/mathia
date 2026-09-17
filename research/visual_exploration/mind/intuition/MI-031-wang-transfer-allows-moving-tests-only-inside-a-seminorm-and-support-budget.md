@@ -1,23 +1,21 @@
-# MI-031 — Wang transfer admits moving tests only within a seminorm budget that excludes fixed physical prime windows
+# MI-031 — Critical moving tests must retain the concentrated main term before seminorm collapse
 
-**Evidence level:** literature-backed/exact synthesis from [VIS-265](../../findings/VIS-265-wang-short-interval-support-law-blocks-bounded-window-edge-transfer.md) through [VIS-273](../../findings/VIS-273-wang-fixed-q-pullbacks-hit-derivative-budget.md). The proof-interface obstruction is exact for the audited Wang estimate; it is not a theorem that the underlying asymptotic is false beyond that interface.
+**Evidence level:** corrected exact synthesis from [VIS-266](../../findings/VIS-266-wang-moving-test-bound.md), [VIS-271](../../findings/VIS-271-wang-fixed-alpha-prime-scale-mismatch.md), [VIS-272](../../findings/VIS-272-wang-source-green-kernel-recovers-rodgers-prime-measure.md) and [VIS-274](../../findings/VIS-274-wang-fixed-q-rescaled-laplace-limit.md). The earlier VIS-273 obstruction was withdrawn; its `O(1)` barrier came from applying a fixed-test Taylor reduction at the same scale as the concentrating main term.
 
-Wang's short-interval pair-correlation proof does allow `T`-dependent tests when Fourier support stays inside a fixed margin and the test seminorms grow slowly enough. With `L=log T`, the normalized error contains the term
+A fixed physical prime window in the logarithmic coordinate `q=log x/(2pi)` pulls back to a Wang test of the form
 
-`||g_T'||_inf / L`
+`g_T(alpha)=h((log T)|alpha|/(2pi))`,
 
-along with lower-order support and amplitude terms. For a smooth normalized moment packet of width `b`, the unavoidable derivative growth is `b^(-(2m+2))`, giving the familiar sufficient shrinking-window gate `L b^(2m+2) -> infinity`.
+so its width is `Theta(1/log T)` and `||g_T'||=Theta(log T)`. That derivative growth is real, but VIS-274 shows it is **not by itself a theorem-transfer obstruction**. It is the expected cost of resolving the same `1/log T` boundary layer on which Wang's exponential diagonal main term concentrates.
 
-VIS-271--VIS-272 identify the exact source-coordinate pullback. In the physical logarithmic prime coordinate `q=log x/(2pi)`, Wang's diagonal field is a Green potential of the same weighted prime-power measure that appears in Rodgers. A literal fixed prime therefore corresponds in Wang's variable to a center and width of order `1/L`, not to a fixed positive `alpha` band.
+If one first replaces the structured main term by a fixed-test approximation at `alpha=0`, the generic derivative remainder `||g_T'||/log T` becomes order one and appears to destroy the signal. Keeping the concentrated exponential term intact and rescaling directly to `q` instead gives
 
-VIS-273 inserts that exact pullback into the audited theorem interface. Any nontrivial fixed-width packet in the physical `q` coordinate becomes a Wang test with `alpha` width `Theta(1/L)`. Rescaling a fixed profile to that width forces
+`(2pi/(H log T)) W_I(g_T) = 4pi int h(q)e^(-4pi q)dq + O_h(1/log T)`,
 
-`||g_T'||_inf = Theta(L)`,
+with an explicit smaller `1/(log T)^2` deterministic correction. Thus the fixed physical `q` window is theorem-accessible at leading order.
 
-so the derivative contribution `||g_T'||_inf/L` is only `Theta(1)`, not `o(1)`. Damping the packet amplitude and renormalizing the extracted statistic does not change this relative obstruction.
+The reusable lesson is that **seminorm growth must be compared to the proof component it controls, not to a main term that has already been Taylor-collapsed away**. When the test family concentrates on the same scale as a structured kernel, rescale the kernel and test together before invoking generic moving-test bounds. Otherwise an artifact of a coarse fixed-test corollary can be mistaken for a genuine physical-resolution barrier.
 
-The reusable lesson is that **an exact representation dictionary does not imply theorem transfer at the pulled-back source scale**. The physical coordinate map can move a fixed source window exactly onto the boundary of the proof's seminorm budget. Here the obstruction is not support access or packet design; it is the stability of the asymptotic theorem under a derivative cost forced by the coordinate change itself.
+There is still a real boundary after the leading Laplace functional is cancelled. If `int h(q)e^(-4pi q)dq=0`, VIS-274 leaves only an `O_h(1/log T)` normalized remainder and does not identify its coefficient. At that point a sharper first-order expansion or an `o(1/log T)` theorem is genuinely needed to extract source-selective residual information.
 
-A successful continuation therefore needs a genuinely stronger theorem interface: improved dependence on `||g'||`, a structure-sensitive integrated identity that pairs directly with the Green kernel/adjoint, or another estimate that controls the fixed-`q` functional without differentiating an uncontrolled remainder.
-
-**Boundary.** VIS-273 does not prove that Wang's pair-correlation asymptotic fails for `1/L`-scale moving tests. It proves that the currently audited bound does not make the error vanish there. It also does not extend the support edge, supply four-level covariance, or establish a source-sensitive residual. The next step is theorem-level, not another coordinate transform.
+**Boundary.** VIS-274 does not transfer arbitrary shrinking packets, does not justify differentiating unknown remainders, and does not produce a new pair-correlation or RH criterion. It corrects the earlier claim that fixed physical prime windows are automatically excluded by the derivative budget.

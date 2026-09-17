@@ -1,23 +1,17 @@
-# MI-049 — Unitary motion and contraction defects do not isolate the scalar zeta phase
+# MI-049 — Scalar-gauge-invariant positivity cannot isolate the common zeta phase
 
-**Evidence level:** exact operator-theoretic synthesis from [WP-348](../../findings/WP-348-congruence-scattering-has-arithmetic-inner-factors-beyond-zeta.md) through [WP-351](../../findings/WP-351-proper-contraction-defect-positivity-is-blind-to-the-scalar-zeta-phase-under-unimodular-gauge.md). These are no-escape results for the stated scattering/compression categories; no Weil-positivity theorem is supplied.
+**Evidence level:** exact operator/geometric synthesis from [WP-348](../../findings/WP-348-congruence-scattering-has-arithmetic-inner-factors-beyond-zeta.md) through [WP-352](../../findings/WP-352-projective-and-chern-curvature-cannot-force-the-common-zeta-phase.md). These are no-escape results for the stated scattering, compression and scalar-connection categories; no Weil-positivity theorem is supplied.
 
-Squarefree congruence scattering factors into a common completed-zeta scalar and source-defined ramified reciprocal local factors. After logarithmic differentiation every bad-prime block has one-sign phase velocity, so positive moving compression cannot average the ramification away.
+Squarefree congruence scattering factors into a common completed-zeta scalar `g` and source-defined ramified reciprocal local factors. WP-350 closes unitary pre-differentiation motion: a unitary compression is reducing, and moving-frame Berry terms cancel in the phase-generator trace. WP-351 closes the most canonical proper-contraction repair: defect operators and singular values are exactly invariant under `U=gR -> e^(i phi)U`, so their positivity throws away the scalar zeta phase.
 
-WP-350 closes the apparent pre-differentiation escape when the compressed channel is still unitary. If `B(t)=V(t)^*U(t)V(t)` is a unitary compression of a unitary scattering matrix, the selected subspace is reducing. Moving-frame Berry terms are gauge/commutator contributions and cancel in the phase-generator trace, leaving the same sign-definite ramified contribution.
+WP-352 tests the remaining direct cross-parameter geometric escape. Projective/eigenbundle geometry is equally blind to a common nonzero scalar: eigenspaces and projectors do not change, hence neither do Berry/Grassmann curvature, quantum metrics, Chern forms or projector holonomy. If the scalar phase is retained in the full Maurer--Cartan connection, it enters as an exact central one-form and contributes no curvature. If the spectral parameter is complexified, the canonical singular scalar curvature is the Poincare--Lelong divisor current—exactly the zero-minus-pole data one was trying not to insert.
 
-WP-351 tests the next categorical escape: allow a **proper contraction** and try to inherit positivity from its defect operators. Write the unitary scattering matrix as
+The matched control is especially sharp. Multiplying
 
-`U(t)=g(t) R(t)`, `|g(t)|=1`,
+`g(s)` by `c_a(s)=exp(a(s-1/2))`
 
-where `g` is the common scalar zeta phase. For a compression `B=V^*UV=gC`, the standard contraction defects satisfy
+preserves reciprocal symmetry, critical-line unitarity, every zero and pole, the divisor/Chern current, and all projective geometry, while shifting the critical-line logarithmic phase generator by the arbitrary constant `a`. Thus divisor/projective geometry plus reciprocal unitary scattering structure cannot even determine the additive normalization of the target phase velocity.
 
-`I-B^*B = I-C^*C`, `I-BB^* = I-CC^*`.
+The reusable lesson is categorical: **a positivity or curvature construction that is invariant under the relevant scalar gauge cannot prove a sign theorem about that scalar phase.** To survive, a route must introduce an independently forced phase anchor or a genuinely noncentral/global coupling before scalarization. An absolute eigenphase window, chosen metric or normalization can restore sensitivity only if its own arithmetic canonicality and sign theorem are proved rather than inserted.
 
-They are exactly invariant under the unimodular scalar factor. Any positivity theorem depending only on singular values, defect operators or the associated unanchored characteristic-function geometry is therefore **blind to the scalar zeta phase it was meant to isolate**. A matched scalar rephasing changes the zeta phase generator while leaving those positive defects unchanged.
-
-The reusable lesson is categorical. Motion within the unitary class supplies no trace leverage; leaving that class via a proper contraction supplies positive defect geometry, but the most canonical defect positivity quotients out the common scalar phase altogether. Neither operation creates a destination-selective sign resource by itself.
-
-A surviving route must retain phase-sensitive information that is not erased by unimodular gauge: an anchored cross-parameter connection, a genuinely noncommuting global construction, a phase-sensitive nonunitary observable, or another source-forced sign theorem whose matched control cannot rephase the scalar block away.
-
-**Boundary.** WP-351 does not rule out every nonunitary construction. It rules out treating ordinary contraction-defect/singular-value positivity as if it selected the common scalar zeta phase. A proposed escape that changes under scalar rephasing must explain the extra anchor or structure that makes that change arithmetic rather than gauge choice. None of these results proves Weil positivity or RH.
+**Boundary.** These results do not rule out noncentral adelic/cohomological bundles, operator-valued connections coupling finite and archimedean data before projection, or an independently forced phase normalization. They rule out treating unitary motion, ordinary contraction defects, projective Berry/Chern geometry, flat scalar connections or the meromorphic divisor itself as if they independently selected the common zeta phase.

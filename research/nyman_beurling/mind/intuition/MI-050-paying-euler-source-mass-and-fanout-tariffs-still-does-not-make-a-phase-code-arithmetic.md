@@ -1,0 +1,13 @@
+# MI-050 — Paying Euler source-mass and fanout tariffs still does not make a phase code arithmetic
+
+**Evidence level:** exact/derived synthesis from [NB-187](../../findings/NB-187-positive-mass-euler-phase-acquisition-needs-exponential-population.md) through [NB-189](../../findings/NB-189-positive-mass-euler-band-routing-saturates-source-fidelity-tariffs-on-poisson-packed-controls.md). The construction is source-faithful in the declared Euler--Wiener acquisition model but remains a matched-control result, not a Nyman approximation theorem.
+
+NB-188 shows that a Hadamard-scale code built from the same-frequency Euler--Wiener population must pay two source-fidelity tariffs: positive source mass forces square-root source-density amplification, and bounded acquisition gain forces bounded effective fanout. NB-189 shows that these tariffs are **sharp but not selective**.
+
+Partition a fixed positive-mass region of the normalized Euler--Wiener source into `K asymp 1/a` disjoint contiguous bands in logarithmic frequency. Normalize each band separately using the true positive von-Mangoldt amplitudes. Then the total routed source mass stays bounded below, the effective fanout is exactly one, and the source-density gain is `asymp sqrt K`, precisely the order forced by NB-188.
+
+After this normalization, consecutive bands have a common local Fourier envelope multiplied by consecutive carriers. On Poisson-packed zero-mass dipole controls the resulting `K x K` response is, up to a common row envelope and a rank-one correction, an ordinary discrete Fourier matrix. Its nuclear norm is `Theta(K^(3/2))`. Thus a non-arithmetic matched control can realize full linear source complexity while paying the true Euler amplitudes, positive source mass, bounded fanout and the sharp square-root amplification tariff.
+
+The reusable lesson is that **source fidelity can be necessary without being discriminating**. Charging amplitudes, mass and fanout removes fake codes that normalize away the physical source, but it does not prevent coefficient-side spectral partitioning from manufacturing a complete Fourier code out of a generic packed destination. The next invariant must constrain which source decompositions/acquisition operators are actually available to the Nyman architecture, or exploit a property of the realized Nyman template range that the packed control does not share.
+
+**Boundary.** NB-189 does not show that the actual Nyman range contains the packed dipoles, does not prove that scalar Euler translates can synthesize the required independently normalized bands, and does not make the square-root tariff irrelevant. It shows only that satisfying the current source-mass/fanout ledger is not by itself an arithmetic certificate.

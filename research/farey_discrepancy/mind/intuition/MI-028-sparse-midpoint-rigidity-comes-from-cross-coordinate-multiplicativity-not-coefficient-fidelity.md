@@ -1,23 +1,27 @@
-# MI-028 — Sparse midpoint rigidity comes from cross-coordinate multiplicativity, not near-extremal coefficient fidelity
+# MI-028 — Sparse midpoint rigidity comes from cross-coordinate multiplicativity, not near-maximal coefficient fidelity
 
-**Evidence level:** exact synthesis from [FD-170](../../findings/FD-170-consecutive-midpoint-history-inverts-the-entire-source.md) through [FD-178](../../findings/FD-178-variable-dyadic-blocks-hide-second-order-near-maximal-multiplicative-rank-fidelity.md).
+**Evidence level:** exact synthesis from [FD-170](../../findings/FD-170-consecutive-midpoint-history-inverts-the-entire-source.md) through [FD-179](../../findings/FD-179-dyadic-midpoint-null-defects-fit-inside-an-o-first-correction-rank-cap.md).
 
-The midpoint sequence is a changing linear observation of the source. Consecutive horizons invert it exactly, while sparse geometric horizons become target-rigid inside the genuinely multiplicative squarefree source class. FD-175--FD-178 show that this rigidity is not explained by knowing primes, signs, low multiplicative ranks, or even an extremely deep coordinatewise approximation to the Möbius source.
+The midpoint sequence is a changing linear observation of the source. Consecutive horizons invert it exactly, while sparse geometric horizons become target-rigid inside the genuinely multiplicative squarefree source class. FD-175--FD-179 show that this rigidity is not explained by knowing primes, signs, low multiplicative ranks, or even coordinatewise agreement through essentially the entire squarefree-rank range.
 
-For the dyadic ladder, FD-177 already constructs permanent deletion-only sources `a(n) in {0,mu(n)}` that agree with Möbius on every fixed subextremal fraction of the maximal squarefree-rank scale,
+For the dyadic ladder, deletion-only sources `a(n) in {0,mu(n)}` can match every sampled midpoint while agreeing with Möbius on all but an exceptionally thin high-rank shell. FD-177 protects every fixed subextremal fraction of the maximal rank scale; FD-178 pushes protection through the leading extremal scale and its first explicit correction.
 
-`omega(n) <= rho log n/loglog n`, `rho<1`,
+FD-179 sharpens this to the exact maximal-rank geometry. If
 
-while matching every sampled midpoint and modifying only `O(x^eta)` coefficients up to `x` for arbitrary `eta>0`.
+`R(x)=max_(n<=x) omega(n)`
 
-FD-178 pushes the protected coordinate region through the leading extremal-rank scale. For every fixed `0<c<1`, one can still match every dyadic midpoint while preserving all sufficiently large squarefree coefficients satisfying
+and
 
-`omega(n) <= (log n/loglog n)(1 + c/loglog n)`,
+`g(x)=(log x)^(2/3)(loglog x)^(-1/3) logloglog x`,
 
-with a deletion set of size `x^o(1)`. The construction uses variable-length dyadic repair blocks: increasing the block length makes the correction family grow slowly enough that only a vanishingly thin population of very high-rank composites is needed to absorb the rounding debt.
+then a permanent exact dyadic-midpoint repair can be arranged so that every sufficiently large squarefree `n` with
 
-The reusable lesson is that **coordinate depth is not relational rigidity**. Even correctness through a second-order near-maximal multiplicative-rank window can leave enough rare high-rank coordinates to repair every sparse observation block. What the genuinely multiplicative source class supplies is a global product law tying those repair coordinates to prime data fixed earlier; separately correct coordinates do not reproduce that coupling.
+`omega(n) <= R(n)-2g(n)`
 
-This also changes how a prospective information lower bound should be formulated. Counting how many coefficients are fixed, how sparse the defect set is, or how close the protected rank is to the maximal scale does not measure the missing source information. The relevant resource is a cross-coordinate compatibility that prevents fresh-shell repair, or an observation family whose equations directly expose those compatible relations.
+is untouched. The defect set lies in a rank cap of thickness `(1+o(1))g(n)`, which is `o(log n/(loglog n)^2)`, hence smaller than the first correction scale in the maximal-order expansion. Its counting function remains subpolynomial.
 
-**Boundary.** FD-178 does not reach full squarefree-rank fidelity, prove a sharp second-order extremal endpoint, give pairwise sparse inversion, or improve the Franel--Landau destination estimate. The remaining coordinatewise escape is now pushed into an exceptionally thin near-extremal shell. The more structural target is to identify a compatibility weaker than full multiplicativity but strong enough to make block repair impossible, and then connect that source rigidity to the nonlocal RH-critical destination norm.
+The reusable lesson is stronger than “coordinate depth is not relational rigidity.” **Even correctness up to the exact maximum minus an `o(first-correction)` cap does not recover the cross-coordinate product law.** Rare extremal coordinates can still absorb every sparse observation debt when they remain independently editable. Full multiplicativity prevents that by coupling repair coordinates to earlier prime data; the open structural question is how much weaker a compatibility can already kill the repair freedom.
+
+A prospective information lower bound should therefore price the relation that couples coordinates, not the number or extremal rank of individually correct coefficients. The natural next discriminator is a source law whose violation cannot be confined to a vanishing near-maximal shell, or an observation family whose equations directly test such compatibility.
+
+**Boundary.** FD-179 does not prove full squarefree-rank fidelity, a sharp minimal cap thickness, pairwise sparse inversion, or the Franel--Landau destination estimate. It shows that the remaining coordinatewise escape can be compressed below the first extremal correction scale; what remains missing is genuinely relational source information.

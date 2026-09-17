@@ -1,27 +1,21 @@
-# MI-047 — Growing scalar Euler depth remains non-rigid when repair width is paid spatially
+# MI-047 — Growing scalar Euler depth remains non-rigid with only a linear spatial repair tariff
 
-**Evidence level:** exact constructive synthesis from RE-173, RE-178, RE-182 and [RE-184](../../findings/RE-184-growing-euler-jet-depth-below-kv-shell-scale-remains-nonrigid.md) through [RE-187](../../findings/RE-187-expanding-chebyshev-windows-push-euler-jet-non-rigidity-past-the-scalar-crossover.md). The stated depth range is sufficient, not claimed sharp.
+**Evidence level:** exact constructive synthesis from RE-173, RE-178, RE-182 and [RE-184](../../findings/RE-184-growing-euler-jet-depth-below-kv-shell-scale-remains-nonrigid.md) through [RE-188](../../findings/RE-188-logarithmic-chebyshev-growth-cuts-the-euler-jet-spatial-tariff-to-linear.md). The stated depth range is sufficient, not claimed sharp; the linear-width lower bound is specific to the full-window Gauss--Chebyshev representation.
 
-Scalar Euler depth does not become rigid merely because it reaches or exceeds the first apparent capacity crossover. Earlier constructions progressed from fixed depth to `K=Theta(V(p))` and then, after conditioning the moving interpolation frame, to every
+Scalar Euler depth does not become rigid merely because it reaches or exceeds the first apparent capacity crossover. Earlier constructions progressed from fixed depth to `K=Theta(V(p))`, then to every `K=o(log p/loglog p)`, and RE-187 pushed farther by paying a growing spatial repair width.
 
-`K=o(log p/loglog p)`
+RE-188 shows that the quadratic width `W~K^2/log p` used there was itself a proof artifact. Exact logarithmic exterior growth of the Chebyshev modes makes the prime-power tail exponentially harmless already with
 
-while preserving ordinary-prime support, multiplicities in `{0,1,2}`, every fixed Korobov--Vinogradov source envelope and an order-one transient Robin excursion.
+`W=4K`.
 
-RE-187 shows that the coincidence with `log p/loglog p` was a fixed-window artifact. The centered Euler kernels admit an exact prime-power resummation in a Chebyshev coordinate. If the logarithmic interpolation window is widened to
+The ordinary-prime microstepped repair then survives with multiplicities in `{0,1,2}`, exact matching of every boundary Euler derivative through depth `K`, every fixed Korobov--Vinogradov source envelope, and the same order-one transient Robin ambiguity throughout the larger sufficient range
 
-`W_p ~ K^2/log p`,
+`K=o((log p)^(5/3)(loglog p)^(1/3))`.
 
-the full prime-power tail becomes exponentially harmless while microstepped residue tracks keep the ordinary-prime repair shells disjoint. The remaining cost is no longer scalar interpolation conditioning but **where the repair reservoir must live**.
+Within the same full-window Gauss--Chebyshev frame, `W=Omega(K)` is also necessary in the deep regime if the exact shell matrix is to remain uniformly close to its DCT model. Thus this representation's spatial tariff is genuinely linear up to constants, while the previous quadratic tariff was not intrinsic.
 
-Requiring that the enlarged reservoir remain invisible to every fixed KV fidelity envelope yields the sufficient range
+The reusable lesson is sharper: **representation capacity can migrate repeatedly until the remaining tariff is proved intrinsic in the actual representation.** Basis conditioning, coarse transport and then quadratic spatial width all disappeared under better coordinates or estimates. Even the surviving linear width is only a theorem about this repair frame, not a universal scalar-rigidity barrier.
 
-`K=o((log p)^(4/3)(loglog p)^(1/6))`,
+The next useful selector should therefore be joint/nonlocal and destination-sensitive rather than another scalar family whose repair cost can move into source placement. Any claimed scalar threshold must first survive optimized conditioning, exact prime-power resummation, microstepping and the linear Chebyshev width scale.
 
-which is parametrically larger than `log p/loglog p`. Exact boundary jets at those depths still fail to select the ordinary-prime source uniquely at Robin scale.
-
-The reusable lesson is that **representation capacity can migrate between coordinates**. Optimizing the polynomial basis removed an interpolation-conditioning tariff; microstepping removed the coarse-generation transport tariff; widening the window then trades still larger scalar depth for a spatial source-placement tariff. A claimed scalar rigidity threshold is not intrinsic until all such equivalent repair coordinates have been priced.
-
-The live resource is now the spatial width needed to realize a deep exact jet while remaining source-invisible. RE-187 pays `W~K^2/log p`; proving that some comparable lower bound is unavoidable would turn this construction into a genuine source-capacity boundary. Finding a more adaptive frame or nonuniform repair could instead push non-rigidity deeper.
-
-**Boundary.** RE-187 does not prove the quadratic width tariff sharp, does not make the full Euler germ cheaply non-rigid, and does not show that scalar data are irrelevant when coupled to a genuinely joint/nonlocal source invariant. It is a matched-control theorem: deep scalar Euler agreement, even beyond the old crossover, still does not by itself force the Robin destination.
+**Boundary.** RE-188 does not make the full Euler germ cheaply non-rigid, prove a universal `Omega(K)` width bound for arbitrary nonlinear/nonuniform repairs, or show scalar information is irrelevant when coupled to a genuinely relational source invariant. It strengthens the matched-control statement: deep scalar Euler agreement remains compatible with transient Robin ambiguity much farther than the previous capacity heuristics suggested.
