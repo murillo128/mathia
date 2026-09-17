@@ -1,27 +1,31 @@
-# MI-059 — Fixed-component mixtures pay their source tariff in the mixing law
+# MI-059 — Mixture source tariffs split between latent-law motion and component motion
 
-**Evidence level:** exact synthesis from [MC-353](../../findings/MC-353-edge-jeffreys-is-the-exact-local-dephasing-currency.md) and [MC-357](../../findings/MC-357-fixed-component-mixture-edge-tariff.md). Relative-entropy and total-variation data processing are classical; the Mathia content is their composition with the reciprocal endpoint discrimination lower bound.
+**Evidence level:** exact synthesis from [MC-353](../../findings/MC-353-edge-jeffreys-is-the-exact-local-dephasing-currency.md), [MC-357](../../findings/MC-357-fixed-component-mixture-edge-tariff.md), and [MC-358](../../findings/MC-358-source-dependent-mixture-component-tariff.md). Relative-entropy chain rule, Jeffreys divergence and data processing are classical; the Mathia content is their composition with the reciprocal endpoint discrimination lower bound and the architecture-relative resource ledger.
 
-Suppose a source-dependent mixture factors as
+Suppose a source-dependent latent architecture factors as
 
-`X=x -> Theta~nu_x -> Y~K(.|Theta)`
+`Theta~nu_x`, `Y|Theta=theta~K_x(.|theta)`,
 
-with a component kernel `K` that is independent of the source. For a natural neighboring source edge `e={x,x'}`, half-Jeffreys divergence contracts through the fixed kernel:
+with lifted joint law `Q_x(dtheta,dy)=nu_x(dtheta)K_x(dy|theta)` and output marginal `P_x`. For a neighboring source edge `e={x,x'}`, write `b_e(Y)` for output half-Jeffreys divergence, `b_e(Theta)` for latent-law half-Jeffreys divergence, and let `c_e(K)` be the symmetrized conditional KL cost of changing the paired component kernels on the same latent fibers.
 
-`b_e(Y) <= b_e(Theta)`.
+The KL chain rule gives the exact joint split
 
-MC-353 independently forces `E_e b_e(Y) >= eta^2/C-o(1)` under bounded coefficient energy `C` and fixed nontrivial dephasing `eta`. Therefore every fixed-component mixture that carries the endpoint must pay
+`(1/2)J(Q_x,Q_x') = b_e(Theta)+c_e(K)`,
 
-`E_e b_e(Theta) >= eta^2/C-o(1)`.
+while marginalization gives
 
-The output density may be highly non-Gaussian, multimodal, singular-looking or outside a finite-dimensional exponential family; none of that creates free discrimination when all source dependence enters through the mixing law. The latent law is the bottleneck.
+`b_e(Y) <= b_e(Theta)+c_e(K)`.
 
-For a finite component bank with categorical weights `w_x`, the latent tariff is explicit:
+MC-353 independently forces `E_e b_e(Y) >= eta^2/C-o(1)` under bounded coefficient energy `C` and fixed nontrivial dephasing `eta`. Therefore every such admitted mixture architecture must pay
 
-`b_e(Theta) = (1/2) sum_j (w_(x,j)-w_(x',j)) log(w_(x,j)/w_(x',j))`.
+`E_e[b_e(Theta)+c_e(K)] >= eta^2/C-o(1)`.
 
-Inside the simplex this prices weighted squared motion of the weights. At the exact endpoint, total-variation contraction is sharper: mutually singular neighboring transcript laws force mutually singular mixing laws, so finite categorical mixtures need disjoint neighboring supports. An all-interior weight path cannot realize exact dephasing.
+MC-357 is the fixed-component boundary `c_e(K)=0`: all source discrimination must then be carried by the latent selector. MC-358 shows that allowing the components themselves to move does not remove the tariff; it only creates a second place to pay it. The exact resource is the half-Jeffreys divergence of the **actual lifted architecture**, not visual complexity of the marginal mixture.
 
-The reusable point is that **mixture complexity and source complexity are different resources**. A fixed library of arbitrarily complicated components cannot manufacture source information absent from the latent selector. To escape the tariff, the architecture must change the component kernel with the source, approach a singular/support-changing latent law, or expose another source-dependent transcript path.
+At the exact endpoint the support statement also splits cleanly. If neighboring output laws are mutually singular, the lifted joint laws must be singular. For a finite categorical latent variable, every label with positive weight under both neighboring source states must therefore pair mutually singular component laws. Fixed components force disjoint weight supports; moving components may share a label only by making that shared fiber singular.
 
-**Boundary.** MC-357 gives no arithmetic upper bound on the latent Jeffreys budget and does not price genuinely source-dependent component kernels. Growing component count can also destroy simple Euclidean interior-floor corollaries even though the exact data-processing inequality remains valid. The next contradiction still needs a theorem showing that the actual Möbius architecture cannot afford the required latent/component discrimination.
+The decomposition is meaningful only when the latent coordinate has common architectural semantics across source states. A source-dependent relabeling can move cost between the latent and conditional terms, and an arbitrary post-hoc decomposition of the same marginal law is not evidence that the system paid either tariff. Hidden adaptive branches, random seeds, selectors, metadata or other source-dependent paths must be included in the lifted transcript before the accounting is applied.
+
+The reusable point is that **mixture complexity and source discrimination are different resources, and source dependence cannot be made free by choosing whether it lives in weights or components**. A surviving endpoint mechanism must exhibit the required adjacent lifted divergence or singularity somewhere in its real source graph.
+
+**Boundary.** MC-358 supplies no arithmetic upper bound on the lifted tariff and does not prove a bound for `M(x)`. A large latent-plus-component tariff is necessary but not sufficient for dephasing because marginalization may discard it. Approximate endpoints require quantitative divergence/near-singularity rather than literal support separation. The next productive step is architecture-specific: expose an actual Möbius-derived lifted law and prove a source-edge upper theorem for it, or identify the mathematically forced source-dependent channel that prevents such an upper bound.
