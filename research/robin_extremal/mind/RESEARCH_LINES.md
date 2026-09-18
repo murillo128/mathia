@@ -4,7 +4,7 @@ This file holds the current mathematical questions suggested by the durable Robi
 
 ## Resolve the vertical Euler continuum between constructive hiding and spectral-gap coercivity
 
-**Linked intuitions:** `MI-001-robin-failure-requires-self-tangent-half-mass-event-gaps` through `MI-053-positive-real-euler-is-laplace-compressive-vertical-phase-is-fourier-resolving`.
+**Linked intuitions:** `MI-001-robin-failure-requires-self-tangent-half-mass-event-gaps` through `MI-054-continuum-vertical-hiding-pays-an-exponential-signed-prefix-tariff`.
 
 The scalar Euler program now separates positive-real compression from vertical-phase resolution. RE-196--RE-199 show that the full positive real ray can remain exponentially almost blind at selector scale even when a fixed positive fraction of `log p` boundary jets are matched. RE-200 restores linear Euclidean dimension with vertical complex samples on one shell, but RE-201--RE-202 show that finite panels remain globally vulnerable to multiplicative shell aliases and low-Diophantine-rank common recurrences.
 
