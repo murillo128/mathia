@@ -4,40 +4,28 @@ This file holds the current mathematical questions suggested by the durable prim
 
 ## Price recurrence only after canonical PNT/pole centering
 
-**Linked intuitions:** `MI-016-weil-form-observability-is-stronger-than-moment-observability` through `MI-030-pnt-endpoint-modes-cap-jump-only-coercivity-before-completion`.
+**Linked intuitions:** `MI-016-weil-form-observability-is-stronger-than-moment-observability` through `MI-031-the-centered-prime-endpoint-is-a-classical-riesz-zero-spectrum-before-completion`.
 
-The local activation, positive-bulk and compact-completion questions are no longer the frontier. PL-338 shows every finite prime-power activation is born with favorable reflected sign when the transported boundary trace is nonzero. PL-339 gives total-source-scale jump coercivity. PL-340--PL-341 identify the sharp PNT prime-block edges `+/-e^a`, while PL-342 promotes those edges to essential spectrum by high-frequency Kronecker recurrence. Finite-rank correction and bounded compact completion therefore cannot suppress the sharp bounded prime edge by themselves.
+PL-338--PL-344 separate activation, raw bounded-block coercivity, essential-edge recurrence, prevalence and canonical completion. The sharp prime-block edges are `+/-e^a` and belong to essential spectrum, but the raw edge event is exponentially rare in long-time density. Nevertheless, bounded modulation already produces edge-sized raw values because the endpoint weights have a deterministic PNT profile; the zeta-pole term cancels that leading profile. Raw recurrence therefore does not decide the completed problem.
 
-PL-343 separates existence from prevalence in exactly the recurrence channel used by PL-342. For the weighted endpoint observable `H_a` on the active prime torus,
+PL-345 now identifies the centered prime remainder itself. After subtracting the PNT continuum, the outer endpoint residual is the classical first logarithmic Riesz mean:
 
-`mu_a{|H_a| >= eta e^a} <= 2 exp[-(eta^2/8+o(1)) e^(2a)/a]`.
+`R_a(tau) = -e^(2ia tau) sum_rho e^((2rho-1)a)/(rho+i tau)^2 + O_T(ae^-a)`,
 
-Unique ergodicity transfers the same estimate to long-time density along the physical prime-log orbit for each fixed aperture. Thus the raw edge witnesses needed for essential spectrum are exponentially rare in time even though they exist arbitrarily far out.
+with the Prime-Lattice residual `E_a(tau)=R_a(tau)+o_T(1)` for fixed bounded modulation. The critical line `Re rho=1/2` is exactly the neutral square-root scale of this expansion, and boundedness of `R_a(0)` is already equivalent to RH.
 
-PL-344 shows why that rarity is not a first-hit theorem and why the raw first hit is not the completed obstruction. The endpoint weights concentrate the PNT response into an `O(1)` logarithmic boundary layer, and for bounded modulation one has the deterministic profile
+This is a prior-art redirect, not the missing mechanism. The centered prime endpoint does expose the zero spectrum cleanly, but the first exact criterion one obtains is already a classical RH-equivalent smoothed prime-error statement. More importantly, the prime-centered residual is not the fully completed same-state form at `O(1)` precision: the exact pole contribution and the PNT continuum differ by `3a-1+o(1)`, larger than the bounded zero signal on the critical scale.
 
-`F_a(tau)= [e^a/(1-e^-a)] * e^(2ia tau)/(1+i tau)^2 + o_T(e^a)`.
-
-For every fixed `tau_0`, phase alignment therefore produces `tau_a=tau_0+O(1/a)` with raw edge response
-
-`H_a(tau_a)= +/- e^a/(1+tau_0^2)+o(e^a)`.
-
-So an edge-sized raw prime response can occur at uniformly bounded modulation despite the exponentially small long-time density in PL-343. More importantly, the canonical zeta-pole quadratic form has the same leading bounded-frequency PNT response with the opposite sign. On these states,
-
-`Q_pole(M_tau u_a^+) - H_a(tau)=o_T(e^a)`.
-
-The leading early recurrence is therefore a **PNT-universal background profile that is cancelled by canonical completion**, not a surviving arithmetic instability.
-
-The live theorem must be posed after this centering. Identify the atomic-prime-minus-PNT/pole residual actually left by the completed form, then compare the earliest modulation at which that centered residual reaches a dangerous scale with the unbounded logarithmic principal energy on the same state. A useful result must control the destination-surviving residual itself; recurrence or first-hit estimates for raw `H_a` no longer address the completed coercivity question.
+The live theorem must therefore retain the exact completion. It should control the Riesz zero signal together with the `O(a)` pole mismatch, archimedean/scalar terms and the unbounded logarithmic principal energy on the same state. A useful result must show why that complete competition has a coercive sign or another destination-selective property; re-proving boundedness of the centered Riesz residual simply restates an RH-equivalent classical criterion.
 
 ## Keep universal bulk response distinct from rational-prime residual structure
 
-PL-339--PL-344 use PNT-scale positive mass, compressed-shift geometry, finite rational independence, classical concentration/ergodicity and the canonical pole profile. Their sharp bulk spectrum, essential-edge recurrence, exponential Haar rarity and bounded-modulation deterministic response are therefore PNT-universal matched-control phenomena. None by itself supplies rational-prime RH rigidity.
+PL-339--PL-344 use PNT-scale mass, compressed-shift geometry, rational independence, concentration/ergodicity and canonical pole cancellation. Those mechanisms are PNT-universal matched-control phenomena. PL-345 adds rational-prime zero information only after PNT centering, but the resulting object is the classical explicit-formula Riesz spectrum.
 
-A successful continuation must expose structure remaining **after** the PNT/pole profile has been removed: a rational-prime-specific centered residual, a source-selected branch persistence/noncollapse theorem for that residual, or another same-state quantity not reproduced by a generalized-prime control. Re-proving positivity, sharpening the raw edge, or converting PL-343 prevalence into a raw first-hit estimate would not close the completed operator because PL-344 already identifies and cancels the bounded-frequency leading profile.
+A genuinely new continuation must therefore use structure surviving **both** universal PNT subtraction and prior-art identification of the Riesz remainder. Candidate leverage could come from the exact completed same-state geometry, a source-selected branch persistence theorem not equivalent to the classical Riesz criterion, or another rational-prime-specific coupling not reproduced by generalized-prime controls.
 
-## Keep transport, prevalence, centering and completed-state energy distinct
+## Keep transport, prevalence, centering, explicit-formula identity and completed-state energy distinct
 
-Norm-resolvent continuity transports eigenbranches; activation analysis fixes local birth signs; the bounded block determines ordinary and essential spectral edges; Haar concentration measures prevalence of raw recurrence witnesses; PNT asymptotics determine the bounded-frequency deterministic profile; pole completion removes that universal profile. These are different resources.
+Norm-resolvent continuity transports eigenbranches; the bounded block determines ordinary and essential spectral edges; Haar concentration measures prevalence; PNT asymptotics determine early raw recurrence; pole completion removes that universal profile; the centered residual has a classical zero expansion; and the full completed state still carries pole/archimedean corrections plus unbounded principal energy. These are different resources.
 
-The completed low spectrum depends on the arithmetic remainder that survives canonical centering and on how its dangerous states interact with the unbounded principal term. Essential-spectrum existence of the uncentered block, exponentially small time density, and early raw recurrence do not decide that centered same-state competition.
+The next Prime-Lattice result should therefore be evaluated at the final completed observable, not at an earlier layer whose exact arithmetic meaning is already classified.
