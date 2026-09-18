@@ -12,58 +12,44 @@ NB-190 prices the missing normalization step for the genuine scalar Euler transl
 
 NB-191 closes the simplest fixed-resolution locality escape. At every fixed `a` and fixed positive accuracy, compactly truncated sharp synthesizers can be translated into every sufficiently high dyadic block `[T,2T]` with no extra asymptotic variation cost. Finite-frequency Bohr recurrence supplies a common near-return for the active frequencies, so high height alone does not add a universal surcharge.
 
-NB-192 quantifies the hidden nonuniformity. A single fixed log-width Euler band contains `m_a~a exp(r_0/a)` rationally independent prime-log phases. Coordinatewise common recurrence at fixed accuracy therefore has worst-gap inclusion length with `log L_a >> a exp(r_0/a)`, giving a log-log lower floor on `a` if the return must be guaranteed inside a block of length `T`.
+NB-192--NB-193 quantify the hidden nonuniformity. A single fixed log-width Euler band contains `m_a~a exp(r_0/a)` rationally independent prime-log phases. Coordinatewise common recurrence has double-exponential worst-gap scale in `1/a`, and even the true-source-weighted positive target has exponentially small Haar volume in effective dimension `D_eff asymp m_a`. Positive recurrence is therefore cheap at fixed `a` but catastrophically nonuniform in the coupled `a->0` limit.
 
-NB-193 closes the most direct aggregate-weighted escape from that entropy barrier. Replace coordinatewise phase recurrence by the true-source-weighted coefficient mismatch
+NB-194--NB-197 move from recurrence volume to the actual physical block. Vinogradov--Korobov dephasing gives an initial pointwise return-free corridor; Montgomery--Vaughan mean square gives vanishing return density when `a_T T->infinity`; uniform short-interval source resolution gives a `13/30` pointwise Mellin corridor; and positivity plus Guth--Maynard almost-all source resolution extends fixed-tolerance exclusion to exponent `13/15`. Those exponents measure available source-resolution technology rather than an intrinsic recurrence threshold.
 
-`A_a(t) = theta_(0,a)^(-1) sum_(n in S_(0,a)) alpha_(n,a) |e^(-it log n)-1|`.
+NB-198 removes the need to approximate every spatial cell. If a positive return is sufficiently accurate, most von-Mangoldt source mass must lie in the short multiplicative phase windows where `t log n` is near `2 pi Z`. Brun--Titchmarsh bounds how much positive source mass those favorable windows can carry. Consequently no fixed subunit Mellin exponent can contain arbitrarily accurate positive returns.
 
-For a rationally independent positive phase family, the Haar volume of the weighted target is exponentially small in the effective dimension `D_eff=1/sum_j w_j^2`. The true prime weights in one fixed log-width Euler band remain diffuse enough that `D_eff asymp m_a`, while higher prime powers carry vanishing relative mass. Hence for every fixed `0<eta<1`, any **syndetic** inclusion length for `{t:A_a(t)<=eta}` still satisfies
+NB-199 follows the actual window width diagonally toward the endpoint. Put `X_a=log x_a=r_0/a`. In the range
 
-`log L_a^avg(eta) >> a exp(r_0/a)`.
+`X_a^2 <= |t| <= x_a/(U_0 X_a)`
 
-NB-194 closes a genuine part of the specific-block loophole left by those worst-gap theorems. For the actual normalized full von-Mangoldt shell, a positive chord return forces a large complex barycenter, while Vinogradov--Korobov PNT dephasing gives
-
-`|C_a(t)| << (1+|t|)^(-1) + (1+|t|) exp(-c V(e^(r_0/a)))`.
-
-Therefore for every fixed positive accuracy there is a deterministic return-free corridor from a fixed height up to `exp(c_eta V(e^(r_0/a)))`. In particular the physical block `[T,2T]` cannot contain an exceptionally early positive return when `log T=o(V(e^(r_0/a_T)))`.
-
-NB-195 extends the specific-block information far beyond that pointwise corridor by giving up emptiness and asking how much of the block can recur. The true normalized Euler shell has squared coefficient mass `sum_n w_(n,a)^2 << 1/(a exp(r_0/a))`. Montgomery--Vaughan mean-square dephasing therefore gives, for every fixed `0<eta<1`,
-
-`|{t in [T,2T]: A_a(t)<=eta}|/T <<_(eta,r_0,Delta) exp(-r_0/a)/a + 1/(aT)`.
-
-Hence whenever `a_T T->infinity`, positive true-source returns have vanishing relative measure on the actual block. This does not rule out a single exceptional return; it changes the surviving positive-recurrence problem into one about isolated near-maximal values of the actual Euler Dirichlet polynomial.
-
-NB-196 first closes that isolated-return loophole pointwise through the corridor allowed by a **uniform** short-interval prime theorem. Resolving every spatial cell at length `x_a^(17/30+epsilon)` gives continuum Mellin control for `|t|<=x_a^(13/30-epsilon)` and eventual return-freeness of `[T,2T]` when `a_T log(2T)/r_0<13/30` by a fixed margin.
-
-NB-197 shows that uniform control of every cell is stronger than positivity requires. Guth--Maynard's almost-all short-interval theorem reaches length `x^(2/15+epsilon)` outside an exponentially sparse set of starts. By averaging over shifted grids, one can choose a partition whose bad cells have exponentially small total length; positivity lets their complete von-Mangoldt mass be discarded at `o(1)` cost, while the chosen partition is independent of `t`. The same continuum shell response then holds uniformly through
-
-`1<=|t|<=x_a^(13/15-epsilon)`.
-
-Consequently every fixed positive-return tolerance is excluded pointwise in that enlarged corridor, and the physical block `[T,2T]` is eventually return-free whenever
-
-`limsup_(T->infinity) a_T log(2T)/r_0 < 13/15`.
-
-NB-198 replaces lower-and-upper source approximation by a weaker but much longer-range **occupancy** argument. If a positive return is sufficiently accurate, most von-Mangoldt source mass must lie in the short multiplicative phase windows where `t log n` is near `2 pi Z`. Brun--Titchmarsh upper bounds the mass those favorable windows can carry. For every fixed exponent margin `0<beta<1`, this excludes some fixed positive accuracy uniformly up to `|t|<=x_a^(1-beta)`. Thus no fixed subunit Mellin exponent can contain arbitrarily accurate positive returns. The tolerance deteriorates with `beta`, so NB-197 remains stronger when one prescribes a large fixed tolerance inside its shorter corridor.
-
-NB-199 resolves the vanishing-tolerance regime more sharply by using the actual phase-window scale rather than freezing a power margin. Put `X_a=log x_a=r_0/a`. In the diagonal range
-
-`X_a^2 <= |t| <= x_a/(U_0 X_a)`,
-
-one has the explicit lower bound
+one has
 
 `A_a(t) >= c * log(x_a/(|t|X_a))/X_a`.
 
-Equivalently, `A_a(t)<=eta` forces
+Thus `A_a(t)<=eta` forces `|t|>=x_a^(1-C eta)/log x_a`; in particular `eta_a=o(1/X_a)` cannot occur below a constant multiple of the final logarithmic layer `x_a/X_a`.
 
-`|t| >= x_a^(1-C eta)/log x_a`.
+NB-200 shows that the disappearance of the Brun--Titchmarsh logarithmic reserve is **not** the end of positive coercivity. At endpoint height the favorable phase cells become physically shorter than one integer. Then interval-density technology hands off to atomic capacity: each phase cell can carry at most one von-Mangoldt atom. A fixed top logarithmic slab carries a fixed fraction of normalized source mass, while the number of favorable cells available there is only `t h/(2 pi)+O(1)` and each atom has mass at most order `X_a/x_a`.
 
-In particular, if the required positive-return tolerance satisfies `eta_a=o(1/log x_a)=o(a)`, no return can occur below a constant multiple of the final logarithmic Mellin layer `x_a/log x_a`. The positive recurrence frontier has therefore moved from a technology-dependent fixed power to a thin endpoint layer whose width is measured directly by the requested accuracy.
+The resulting one-sided endpoint theorem is explicit. For every fixed
 
-The next positive-source question is now genuinely endpoint-scale: determine what happens inside the remaining `t~x_a/log x_a` layer, or prove that the Nyman destination actually requires a positive-shell return accurate enough for NB-199 to apply. A different continuation must leave positivity and control signed/complex synthesis, where occupancy arguments no longer convert small aggregate error into monotone source mass concentration.
+`0 < K < 2 pi e^Delta`
+
+there is `c_K>0` such that, for small `a`,
+
+`inf_(X_a^2 <= |t| <= K x_a/X_a) A_a(t) >= c_K/X_a`.
+
+Equivalently, any sequence with `X_a A_a(t)->0` and bounded endpoint ratio must satisfy
+
+`liminf |t| X_a/x_a >= 2 pi e^Delta`.
+
+The constant is a **capacity threshold**, not an existence theorem. `2 pi` comes from phase periodicity and `e^Delta` from the physical upper edge of the fixed log-width shell. The proof uses only macroscopic PNT mass plus one lattice atom per sub-unit favorable cell; it does not require primes in bounded intervals.
+
+The positive-source frontier is therefore sharper than “inside the final logarithmic layer.” An `o(a)` positive return at endpoint scale must lie at or beyond `(2 pi e^Delta-o(1))x_a/log x_a`. The remaining acquisition question is what happens at and beyond that atomic-capacity threshold, where enough cells exist in principle but their occupation by the actual von-Mangoldt source is still constrained. A separate destination question remains load-bearing: prove that a Nyman approximant capable of resolving the target must realize a positive Euler-shell return with `o(a)` accuracy, or identify the correct destination-coupled source condition if it does not.
+
+A different continuation must leave positivity and control signed/complex synthesis, where both interval occupancy and atomic mass packing cease to be monotone because cancellation can move between phase cells.
 
 ## Keep source persistence, acquisition cost and destination conditioning separate
 
-NB-190--NB-199 are acquisition theorems in coefficient/phase topology. They do not establish that the true Nyman realized range contains the Poisson-packed dipoles, nor that the approximation problem demands independent recovery of all `K` normalized bands. Conversely, unrestricted mixtures can synthesize those bands, and fixed-`a` recurrence can eventually transplant them to high blocks, but NB-192--NB-193 show that positive recurrence becomes double-exponentially nonuniform as `a->0`; NB-194 gives an early pointwise dephasing corridor; NB-195 gives vanishing-density returns under `a_TT->infinity`; NB-196--NB-197 convert short-interval source density into progressively longer fixed-tolerance pointwise corridors; NB-198 replaces approximation by occupancy to reach every fixed subunit Mellin power for sufficiently accurate returns; and NB-199 pushes vanishing positive tolerances to the final logarithmic Mellin layer.
+NB-190--NB-200 are acquisition theorems in coefficient/phase topology. They do not establish that the true Nyman realized range contains the Poisson-packed dipoles, nor that the approximation problem demands independent recovery of all normalized bands. Conversely, unrestricted mixtures can synthesize those bands, and fixed-`a` recurrence can eventually transplant them to high blocks, but the coupled source-height limit successively exposes target-volume, pointwise-dephasing, source-resolution, occupancy and finally atomic-capacity obstructions.
 
-Frequency membership, true amplitudes, positive source mass, fanout, representation gain, scalar-mixture total variation, recurrence target volume/effective dimension, long-time prevalence, first-hit/return-free scale, source-specific pointwise dephasing, source-specific mean-square dephasing, **uniform versus almost-all source resolution versus occupancy-only control**, requested return tolerance and destination conditioning are distinct currencies. A successful continuation must identify which of them is actually bounded by the Nyman construction in the simultaneous `a_T`--`T` regime and then test that bound against a matched control on the realized approximation range. In particular, the occupancy gains cannot be imported unchanged into a signed synthesis architecture where exceptional phase cells may cancel rather than carry a monotone mass tariff.
+Frequency membership, true amplitudes, positive source mass, fanout, representation gain, scalar-mixture total variation, recurrence target volume/effective dimension, long-time prevalence, first-hit/return-free scale, source-specific pointwise dephasing, source-specific mean-square dephasing, **uniform versus almost-all source resolution versus interval occupancy versus atomic cell capacity**, requested return tolerance and destination conditioning are distinct currencies. A successful continuation must identify which of them is actually bounded by the Nyman construction in the simultaneous `a_T`--`T` regime and then test that bound against a matched control on the realized approximation range. The positive occupancy/capacity gains cannot be imported unchanged into a signed synthesis architecture where exceptional cells may cancel rather than carry a monotone mass tariff.

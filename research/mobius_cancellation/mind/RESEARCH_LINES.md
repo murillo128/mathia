@@ -4,7 +4,7 @@ This file holds the current mathematical questions suggested by the durable Möb
 
 ## Match compulsory reverse discrimination to the actual endpoint channel
 
-**Linked intuitions:** `MI-013-bost-connes-regularity-needs-an-intermediate-transverse-category` through `MI-061-hellinger-affinity-tensorizes-the-bounded-source-edge-tariff`.
+**Linked intuitions:** `MI-013-bost-connes-regularity-needs-an-intermediate-transverse-category` through `MI-062-own-phase-revealment-prices-coordinate-query-dephasing`.
 
 The reciprocal endpoint problem has been reduced from syntactic complexity to invariant source discrimination. MC-351--MC-360 establish complementary finite currencies for regular, common-seed and latent/product channels. MC-361 then gives the sharp binary posterior-entropy information floor, MC-363 gives the sharp Jensen--Shannon/Hellinger conversion, and MC-364 identifies the additive product coordinate: source-independent product architectures must pay directional negative log-affinity depth
 
@@ -12,11 +12,19 @@ The reciprocal endpoint problem has been reduced from syntactic complexity to in
 
 which grows like `(1/2)log(1/epsilon)` near exact matched-filter dephasing.
 
-MC-365 closes the remaining architecture-free hope in this branch. A coordinatewise binary-symmetric channel on the punctured source cube simultaneously saturates the information floor up to an exponentially small puncture correction, the sharp JS/Hellinger envelope, the normalized Hellinger edge tariff and the negative-log-affinity product depth. At `delta=epsilon/2` it realizes exactly the same `1-sqrt(2 epsilon-epsilon^2)` Hellinger scale and `(1/2)log[1/(2 epsilon-epsilon^2)]` Bhattacharyya-depth scale forced by MC-363--MC-364.
+MC-365 closes the architecture-free hope in this branch. A coordinatewise binary-symmetric channel on the punctured source cube simultaneously saturates the information floor up to an exponentially small puncture correction, the sharp JS/Hellinger envelope, the normalized Hellinger edge tariff and the negative-log-affinity product depth. At `delta=epsilon/2` it realizes exactly the same `1-sqrt(2 epsilon-epsilon^2)` Hellinger scale and `(1/2)log[1/(2 epsilon-epsilon^2)]` Bhattacharyya-depth scale forced by MC-363--MC-364. Generic destination tariffs are therefore admission conditions, not generic impossibility theorems.
 
-Therefore the generic lower tariffs are now calibrated rather than contradictory: **an abstract product transcript can afford them at the stated scale**. Replacing Hellinger by another generic divergence, further optimizing the lower conversion, or arguing only from component count cannot produce a Möbius obstruction while a BSC-like equality family remains admissible.
+MC-366 supplies the first exact source-specific converse for a natural intermediate architecture. For the even-rank reciprocal law, let `Y_i` be the complete transcript of a randomized adaptive noiseless coordinate-query algorithm with source-independent randomness and no other source side channel. If `p_i` is the probability that the transcript ever queries its own source coordinate `X_i`, then
 
-The live bridge is source-specific and one-sided. Expose an actual Möbius-derived transcript, including adaptive branches, random seeds, metadata and side channels, and prove an independent arithmetic **upper** theorem showing that its source-direction discrimination budget lies below the required tariff in the currency native to that architecture. For a common-seed construction this may be a TV change-probability ceiling; for a source-independent latent/product construction it is a Hellinger/Bhattacharyya incidence or depth ceiling; for a regular channel a lifted Jeffreys/Fisher bound may be sharper. The theorem must exclude or quantitatively price the BSC-like realization rather than merely restate the destination lower bound.
+`rho_i^2=E|E[X_i|Y_i]|^2 <= p_i + 1/(2^R-1)`.
+
+Averaging and inserting the MC-338 endpoint energy inequality gives
+
+`delta(W) >= (1-sqrt(C)*sqrt(pbar+1/(2^R-1)))_+`
+
+for normalized coefficient energy at most `C`. At unit energy, exact dephasing therefore forces `pbar>=1-1/(2^R-1)`. This is sharp: querying every other coordinate first avoids the own coordinate only on the unique puncture atom and reconstructs the phase exactly. The BSC equality family has `p_i=1`, so MC-366 identifies the resource that family spends explicitly rather than contradicting it: **direct own-phase revealment**.
+
+The live bridge is now more concrete. For an actual Möbius-derived transcript, expose its provenance well enough to bound how often the coefficient attached to source cell `i` can depend directly on `X_i`. If that average revealment is `o(1)`, MC-366 kills bounded-energy constant dephasing in the even-rank reciprocal endpoint. If it is positive or near one, the construction must explain why the access is not simply a disguised matched filter. Architectures using parity queries, arbitrary linear measurements, dependent joint side channels or other non-coordinate observations remain outside this theorem and need their own source-specific provenance tariff rather than another generic divergence lower bound.
 
 ## Repair probabilistic Möbius comparators only after exact-stratum and algebraic-collapse gates
 
@@ -24,6 +32,6 @@ Probabilistic proxies remain secondary until their conditioning is arithmeticall
 
 ## Keep the resource ledger explicit
 
-The current invariant chain distinguishes source loading, coefficient energy, exact source quotient, joint transcript information, posterior entropy/predictability, destination-cut geometry, aggregate edge KL, privacy-loss distribution, inverse distinguishability, mean displacement, covariance deformation, Fisher action, latent mixing-law divergence, conditional component divergence, lifted joint divergence, total-variation edge budget, common-seed change probability, Hellinger edge budget, affinity-weighted component incidence, negative log-affinity depth, support singularity, score curvature/noise scale and side-channel structure. These are different resources.
+The current invariant chain distinguishes source loading, coefficient energy, exact source quotient, joint transcript information, posterior entropy/predictability, destination-cut geometry, aggregate edge KL, privacy-loss distribution, inverse distinguishability, mean displacement, covariance deformation, Fisher action, latent mixing-law divergence, conditional component divergence, lifted joint divergence, total-variation edge budget, common-seed change probability, Hellinger edge budget, affinity-weighted component incidence, negative log-affinity depth, **own-phase revealment**, support singularity, score curvature/noise scale and side-channel structure. These are different resources.
 
-MC-365 adds the crucial calibration rule: a compulsory destination tariff is not yet an obstruction merely because it is large or even divergent near an endpoint. One must also show that the physical arithmetic acquisition mechanism cannot realize the matching source channel. The next substantive progress must therefore come from a Möbius-specific acquisition upper bound or from identifying the concrete source-dependent component that actually pays the calibrated tariff.
+MC-365 supplies the calibration rule: a compulsory destination tariff is not yet an obstruction merely because it is large or divergent near an endpoint. MC-366 supplies the complementary architecture rule: once the physical acquisition mechanism is restricted, a source-specific provenance quantity can upper-bound the posterior predictability in the same endpoint inequality. The next substantive progress must either prove that a concrete Möbius transcript has subcritical own-phase revealment, or derive an analogous exact acquisition ceiling for the richer query/side-channel class actually used by the arithmetic construction.
