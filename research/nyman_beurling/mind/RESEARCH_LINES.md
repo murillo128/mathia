@@ -4,7 +4,7 @@ This file holds the current mathematical questions suggested by the durable Nyma
 
 ## Price the physically admissible scalar acquisition budget in the coupled source-height limit
 
-**Linked intuitions:** `MI-001-target-aware-gram-geometry-must-carry-absolute-scale` through `MI-051-normalized-euler-band-access-costs-inverse-source-mass-in-scalar-translate-variation`.
+**Linked intuitions:** `MI-001-target-aware-gram-geometry-must-carry-absolute-scale` through `MI-052-brun-titchmarsh-occupancy-pushes-positive-return-obstruction-to-the-mellin-endpoint`.
 
 The source-side program has separated raw phase accessibility, representation complexity and physical Euler acquisition. The natural scalar Euler functional escapes the bounded Hilbert dual but is priced by an absolute Wiener/Dirichlet budget `W(a)~1/a`. NB-188 shows that compressing positive source mass into a Hadamard-scale code forces square-root source-density amplification and bounded effective fanout. NB-189 proves those representation tariffs are sharp but nonselective: independently normalized true-amplitude bands still generate a DFT-scale code on a Poisson-packed matched control.
 
@@ -26,9 +26,7 @@ NB-194 closes a genuine part of the specific-block loophole left by those worst-
 
 `|C_a(t)| << (1+|t|)^(-1) + (1+|t|) exp(-c V(e^(r_0/a)))`.
 
-Therefore for every fixed positive accuracy there is a deterministic return-free corridor from a fixed height up to `exp(c_eta V(e^(r_0/a)))`. In particular the physical block `[T,2T]` cannot contain an exceptionally early positive return when
-
-`log T=o(V(e^(r_0/a_T)))`.
+Therefore for every fixed positive accuracy there is a deterministic return-free corridor from a fixed height up to `exp(c_eta V(e^(r_0/a)))`. In particular the physical block `[T,2T]` cannot contain an exceptionally early positive return when `log T=o(V(e^(r_0/a_T)))`.
 
 NB-195 extends the specific-block information far beyond that pointwise corridor by giving up emptiness and asking how much of the block can recur. The true normalized Euler shell has squared coefficient mass `sum_n w_(n,a)^2 << 1/(a exp(r_0/a))`. Montgomery--Vaughan mean-square dephasing therefore gives, for every fixed `0<eta<1`,
 
@@ -46,10 +44,26 @@ Consequently every fixed positive-return tolerance is excluded pointwise in that
 
 `limsup_(T->infinity) a_T log(2T)/r_0 < 13/15`.
 
-The `13/15` is again not an intrinsic Nyman transition: it is the complement of the current almost-all short-interval exponent `2/15`. The gain is specifically enabled by positive source mass; signed or complex aggregation cannot discard exceptional cells by absolute mass in the same way. Beyond `x_a^(13/15-o(1))`, NB-195 still gives sparsity but not emptiness. The surviving positive route is now pushed into isolated near-maximal values past that larger technology-dependent corridor, or requires stronger source-density input.
+NB-198 replaces lower-and-upper source approximation by a weaker but much longer-range **occupancy** argument. If a positive return is sufficiently accurate, most von-Mangoldt source mass must lie in the short multiplicative phase windows where `t log n` is near `2 pi Z`. Brun--Titchmarsh upper bounds the mass those favorable windows can carry. For every fixed exponent margin `0<beta<1`, this excludes some fixed positive accuracy uniformly up to `|t|<=x_a^(1-beta)`. Thus no fixed subunit Mellin exponent can contain arbitrarily accurate positive returns. The tolerance deteriorates with `beta`, so NB-197 remains stronger when one prescribes a large fixed tolerance inside its shorter corridor.
+
+NB-199 resolves the vanishing-tolerance regime more sharply by using the actual phase-window scale rather than freezing a power margin. Put `X_a=log x_a=r_0/a`. In the diagonal range
+
+`X_a^2 <= |t| <= x_a/(U_0 X_a)`,
+
+one has the explicit lower bound
+
+`A_a(t) >= c * log(x_a/(|t|X_a))/X_a`.
+
+Equivalently, `A_a(t)<=eta` forces
+
+`|t| >= x_a^(1-C eta)/log x_a`.
+
+In particular, if the required positive-return tolerance satisfies `eta_a=o(1/log x_a)=o(a)`, no return can occur below a constant multiple of the final logarithmic Mellin layer `x_a/log x_a`. The positive recurrence frontier has therefore moved from a technology-dependent fixed power to a thin endpoint layer whose width is measured directly by the requested accuracy.
+
+The next positive-source question is now genuinely endpoint-scale: determine what happens inside the remaining `t~x_a/log x_a` layer, or prove that the Nyman destination actually requires a positive-shell return accurate enough for NB-199 to apply. A different continuation must leave positivity and control signed/complex synthesis, where occupancy arguments no longer convert small aggregate error into monotone source mass concentration.
 
 ## Keep source persistence, acquisition cost and destination conditioning separate
 
-NB-190--NB-197 are acquisition theorems in coefficient/phase topology. They do not establish that the true Nyman realized range contains the Poisson-packed dipoles, nor that the approximation problem demands independent recovery of all `K` normalized bands. Conversely, unrestricted mixtures can synthesize those bands, and fixed-`a` recurrence can eventually transplant them to high blocks, but NB-192--NB-193 show that positive recurrence becomes double-exponentially nonuniform as `a->0`; NB-194 shows early pointwise dephasing; NB-195 shows vanishing-density returns under `a_TT->infinity`; NB-196 converts uniform short-interval prime density into a `13/30` pointwise Mellin corridor; and NB-197 uses almost-all prime density plus positivity to extend that pointwise corridor to `13/15`.
+NB-190--NB-199 are acquisition theorems in coefficient/phase topology. They do not establish that the true Nyman realized range contains the Poisson-packed dipoles, nor that the approximation problem demands independent recovery of all `K` normalized bands. Conversely, unrestricted mixtures can synthesize those bands, and fixed-`a` recurrence can eventually transplant them to high blocks, but NB-192--NB-193 show that positive recurrence becomes double-exponentially nonuniform as `a->0`; NB-194 gives an early pointwise dephasing corridor; NB-195 gives vanishing-density returns under `a_TT->infinity`; NB-196--NB-197 convert short-interval source density into progressively longer fixed-tolerance pointwise corridors; NB-198 replaces approximation by occupancy to reach every fixed subunit Mellin power for sufficiently accurate returns; and NB-199 pushes vanishing positive tolerances to the final logarithmic Mellin layer.
 
-Frequency membership, true amplitudes, positive source mass, fanout, representation gain, scalar-mixture total variation, recurrence target volume/effective dimension, filling time, source-specific pointwise dephasing, source-specific mean-square dephasing, **uniform versus almost-all short-interval source resolution**, exceptional-cell positive mass and destination conditioning are distinct currencies. A successful continuation must identify which of them is actually bounded by the Nyman construction in the simultaneous `a_T`--`T` regime and then test that bound against a matched control on the realized approximation range. In particular, the `13/15` gain cannot be imported unchanged into a signed synthesis architecture where exceptional cells may cancel rather than carry a monotone mass tariff.
+Frequency membership, true amplitudes, positive source mass, fanout, representation gain, scalar-mixture total variation, recurrence target volume/effective dimension, long-time prevalence, first-hit/return-free scale, source-specific pointwise dephasing, source-specific mean-square dephasing, **uniform versus almost-all source resolution versus occupancy-only control**, requested return tolerance and destination conditioning are distinct currencies. A successful continuation must identify which of them is actually bounded by the Nyman construction in the simultaneous `a_T`--`T` regime and then test that bound against a matched control on the realized approximation range. In particular, the occupancy gains cannot be imported unchanged into a signed synthesis architecture where exceptional phase cells may cancel rather than carry a monotone mass tariff.

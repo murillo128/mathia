@@ -1,6 +1,6 @@
 # MI-052 — Brun--Titchmarsh occupancy pushes accurate positive Euler recurrence to the Mellin endpoint
 
-**Evidence level:** literature+derived synthesis from [NB-192](../../findings/NB-192-prime-log-dimension-forces-double-exponential-bohr-return-scale.md) through [NB-198](../../findings/NB-198-brun-titchmarsh-phase-occupancy-excludes-accurate-positive-euler-returns-at-every-sublinear-mellin-power.md). The Brun--Titchmarsh interval bound and phase-window counting mechanism are classical; the Mathia content is their use on the normalized positive von-Mangoldt Euler shell and the resulting exponent/tolerance tradeoff.
+**Evidence level:** literature+derived synthesis from [NB-192](../../findings/NB-192-prime-log-dimension-forces-double-exponential-bohr-return-scale.md) through [NB-199](../../findings/NB-199-diagonal-brun-titchmarsh-localizes-vanishing-positive-euler-returns-to-the-logarithmic-mellin-endpoint.md). The Brun--Titchmarsh interval bound and phase-window counting mechanism are classical; the Mathia content is their use on the normalized positive von-Mangoldt Euler shell and the resulting exponent/tolerance tradeoff all the way to the logarithmic Mellin endpoint.
 
 The earlier positive-recurrence frontier was tied to how accurately the true prime shell could be replaced by continuum mass cell by cell. Uniform short-interval PNT gave the `13/30` Mellin corridor, and the almost-all Guth--Maynard input plus positivity extended pointwise exclusion to `13/15`. Those exponents measured available source-resolution technology, not an intrinsic recurrence threshold.
 
@@ -12,24 +12,24 @@ for the normalized positive von-Mangoldt shell around `x_a=exp(r_0/a)`, then a s
 
 `|t| <= x_a^(1-beta)`.
 
-Brun--Titchmarsh bounds the prime mass that can occupy all favorable windows. Choosing the phase tolerance proportionally to `beta` yields a fixed gap
+Brun--Titchmarsh bounds the prime mass that can occupy all favorable windows. Choosing the phase tolerance proportionally to `beta` yields a fixed gap `A_a(t)>eta_beta`, so no fixed Mellin-power corridor below exponent one can contain arbitrarily accurate positive Euler returns. This is stronger in range than the short-interval approximation theorems but weaker in prescribed tolerance as `beta->0`.
 
-`A_a(t) > eta_beta`,
+NB-199 removes the artificial fixed exponent margin and follows the phase-window scale diagonally toward the endpoint. Put `X_a=log x_a=r_0/a`. Throughout
 
-uniformly from a fixed height up to `x_a^(1-beta)`, with one admissible choice
+`X_a^2 <= |t| <= x_a/(U_0 X_a)`,
 
-`eta_beta=sin(pi beta/32)`.
+one has
 
-Consequently, if a coupled physical block satisfies
+`A_a(t) >= c * log(x_a/(|t|X_a))/X_a`.
 
-`limsup a_T log(2T)/r_0 < 1`,
+Inverting the inequality, a return of accuracy `eta` can occur only if
 
-then some fixed positive return tolerance is eventually excluded throughout `[T,2T]`. No fixed Mellin-power corridor below exponent one can therefore contain arbitrarily accurate positive Euler returns.
+`|t| >= x_a^(1-C eta)/log x_a`.
 
-This does not supersede NB-197 at a prescribed large tolerance. As `beta->0`, the certified `eta_beta` also tends to zero. NB-197 remains stronger inside its `13/15` corridor when one wants to rule out every chosen fixed `eta<1`; NB-198 is stronger in range when the question is whether the recurrence can become arbitrarily accurate.
+Hence if `eta_a=o(1/X_a)=o(a)`, every positive return below a constant multiple of `x_a/log x_a` is excluded. The vanishing-tolerance positive frontier is therefore compressed into the final logarithmic Mellin layer, not merely into an unspecified `x_a^(1-o(1))` region.
 
-The reusable distinction is between **source approximation** and **source occupancy**. To approximate an oscillatory shell one needs lower-and-upper asymptotics on spatial cells. To rule out a positive near-return, it is enough to prove that the support cannot concentrate most of its positive mass inside the favorable phase cells. A sieve upper bound can therefore obstruct accurate recurrence far beyond the range where a continuum approximation theorem is available.
+The reusable distinction is between **source approximation, source occupancy, and requested return accuracy**. To approximate an oscillatory shell one needs lower-and-upper asymptotics on spatial cells. To rule out a positive near-return, it is enough to show that favorable phase cells cannot carry almost all positive source mass. Once the phase-window width itself is retained, the occupancy deficit becomes an explicit function of distance from the Mellin endpoint and can be inverted against a shrinking tolerance.
 
-The positive frontier is compressed to the endpoint layer `t=x_a^(1-o(1))`, where favorable phase windows have subpower length and the Brun--Titchmarsh logarithmic denominator no longer gives a fixed occupancy gap. Independently, signed or complex synthesis remains outside this argument because cancellation destroys the monotone mass implication that turns a small chord average into phase occupancy.
+This still leaves two separate gates. First, the endpoint layer `t~x_a/log x_a` is not controlled by NB-199. Second, the Nyman destination must be shown to require a positive-shell return with the corresponding accuracy. Signed or complex synthesis remains outside the occupancy argument because cancellation destroys the monotone implication from small chord average to phase concentration.
 
-**Boundary.** NB-198 is a positive-source acquisition obstruction, not an Nyman-distance theorem. It does not rule out isolated endpoint-layer returns, give a uniform fixed tolerance as the exponent margin tends to zero, or constrain signed/complex aggregates. A destination theorem is still needed to show that a successful Nyman approximation must realize one of these positive-shell returns.
+**Boundary.** NB-199 is a positive-source acquisition obstruction, not a Nyman-distance theorem. It does not exclude isolated returns in the final logarithmic endpoint layer, give a uniform large fixed tolerance all the way to exponent one, or constrain signed/complex aggregates. NB-197 can remain stronger at prescribed fixed tolerance inside its shorter corridor.

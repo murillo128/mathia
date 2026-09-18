@@ -1,35 +1,33 @@
-# MI-030 — The sharp PNT prime-block edge is essential, so only noncompact completion can suppress it
+# MI-030 — The raw PNT edge is essential and rare, but canonical pole centering removes its bounded-frequency recurrence
 
-**Evidence level:** exact synthesis from [PL-339](../../findings/PL-339-outer-source-shell-carries-unit-gap-coercivity.md), [PL-340](../../findings/PL-340-pnt-endpoint-jump-coercivity-ceiling.md), [PL-341](../../findings/PL-341-sharp-pnt-prime-block-half-mass-spectrum.md), and [PL-342](../../findings/PL-342-sharp-prime-block-essential-spectrum.md), using the endpoint modes constructed in PL-051. The conclusion concerns the bounded prime/jump block and compact completion terms, not the spectrum of the full completed Weil operator.
+**Evidence level:** exact synthesis from [PL-339](../../findings/PL-339-outer-source-shell-carries-unit-gap-coercivity.md), [PL-340](../../findings/PL-340-pnt-endpoint-jump-coercivity-ceiling.md), [PL-341](../../findings/PL-341-sharp-pnt-prime-block-half-mass-spectrum.md), [PL-342](../../findings/PL-342-sharp-prime-block-essential-spectrum.md), [PL-343](../../findings/PL-343-haar-rarity-of-recurrent-prime-edge.md), and [PL-344](../../findings/PL-344-bounded-modulation-pnt-edge-cancelled-by-pole.md), using the endpoint modes constructed in PL-051. The conclusion concerns the PNT-universal bounded prime profile and its canonical pole cancellation; it does not determine the centered residual or the spectrum of the full completed Weil operator.
 
-PL-339 proved that the accumulated positive jump sector has the total-source lower bound
+PL-339--PL-341 determine the bounded PNT geometry. With `W_a=2e^a(1+o(1))`, the weighted compressed-shift sum has asymptotic spectral edges `+/-e^a`. PL-342 shows that those edges are already essential: high common modulations combined with Kronecker recurrence reproduce the endpoint Rayleigh values on weakly-null sequences. Finite-rank correction and bounded compact completion therefore cannot remove the sharp bounded edge by compactness alone.
 
-`J_a >= (1-o(1)) W_a I`.
+PL-343 then shows that the same raw recurrence witnesses are extremely sparse. For the exact weighted endpoint phase observable `H_a`,
 
-Since the exact prime block is `P_a=J_a-2W_a I`, one remaining hope was that compatibility among many positive jump forms might drive the lower edge of `J_a` all the way toward `2W_a`, asymptotically neutralizing the scalar compensation.
+`mu_a{|H_a| >= eta e^a} <= 2 exp[-(eta^2/8+o(1)) e^(2a)/a]`.
 
-PL-340 ruled out that jump-only mechanism with explicit PNT endpoint states, and PL-341 identified the whole leading ordinary spectral picture. For the weighted compressed-shift sum `K_a`,
+Finite rational independence makes the physical prime-log orbit uniquely ergodic, so the same quantity controls long-time density for each fixed `a`. Raw edge recurrence is therefore topologically sufficient for essential spectrum yet exponentially rare in prevalence.
 
-`sup sigma(K_a)=e^a(1+o(1))`,
+PL-344 demonstrates that prevalence still does not price the first hit. The endpoint weight has an explicit bounded-modulation PNT response
 
-`inf sigma(K_a)=-e^a(1+o(1))`,
+`F_a(tau)= [e^a/(1-e^-a)] * e^(2ia tau)/(1+i tau)^2 + o_T(e^a)`.
 
-while `W_a=2e^a(1+o(1))`. Therefore the isolated prime block `P_a=-K_a` has asymptotic normalized edges `-1/2` and `+1/2`, and the jump sector `J_a=2W_a I-K_a` has edges `3/2` and `5/2`. The favorable jump edge remains exactly one half-source-mass below the scalar-cancellation threshold.
+For any fixed `tau_0`, a phase-aligned `tau_a=tau_0+O(1/a)` gives
 
-PL-342 strengthens this from an ordinary spectral statement to a topological one. The same endpoint Rayleigh values can be reproduced on weakly-null high-frequency modulations. At every fixed aperture only finitely many prime logarithms occur, and Kronecker recurrence lets one choose arbitrarily large modulation frequencies that simultaneously restore all active prime-power translation phases. Consequently
+`H_a(tau_a)= +/- e^a/(1+tau_0^2)+o(e^a)`.
 
-`sup sigma_ess(K_a)=e^a(1+o(1))`,
+Thus edge-sized raw responses occur at uniformly bounded modulation even though their long-time density is exponentially small. This is a concrete warning that **existence, prevalence and first-hit time are different recurrence currencies**.
 
-`inf sigma_ess(K_a)=-e^a(1+o(1))`.
+But the completed problem has an additional, decisive layer. The canonical zeta-pole quadratic form carries exactly the same leading bounded-frequency PNT profile with the opposite sign, so
 
-The sharp half-mass prime edge is therefore already present in the Calkin quotient. It is not a finite-dimensional surplus carried only by a few smooth endpoint modes.
+`Q_pole(M_tau u_a^+) - H_a(tau)=o_T(e^a)`
 
-This makes the completion boundary precise. The zeta-pole operator at fixed aperture has rank at most two, and the bounded continuous completion remainder is compact, so neither can change the essential spectrum of the bounded prime block. The smooth PNT cancellation of PL-059 and the essential edge of PL-342 are compatible: the pole cancels the fixed smooth endpoint mode, while compact terms vanish on the weakly-null recurrent sequence.
+through that regime. The surprisingly early raw recurrence is therefore a universal background effect removed by the canonical completion rather than a surviving completed instability.
 
-The genuinely unresolved completion is the unbounded logarithmic principal operator. The recurrence sequence that preserves the prime-block Rayleigh value does so by sending frequency to infinity, and the logarithmic principal symbol grows along the same sequence. The full localized completed-Weil operator has compact resolvent, so PL-342 does **not** imply essential spectrum or a negative direction for that full operator. Instead it isolates a same-state competition: recurrent prime translation gain versus archimedean/logarithmic frequency cost.
+The live quantity is the **centered arithmetic residual** after subtracting the PNT/pole profile. Any first-hit or recurrence theorem relevant to completed coercivity must be stated for that residual and compared, on the same state, with the unbounded logarithmic principal cost. A theorem about raw `H_a` alone can no longer settle the completed sign question, whether it gives recurrence existence, rarity or an early hit.
 
-The matched-control warning also strengthens. The leading mass scale comes from the PNT law, and the promotion to essential spectrum uses finite rational independence of the active logarithmic frequencies. A generalized-prime source with the same PNT-scale mass and corresponding independent frequencies reproduces the mechanism. Neither the ordinary half-mass edge nor its Calkin persistence is by itself rational-prime RH rigidity.
+The matched-control warning is correspondingly stronger. PL-343 and PL-344 use PNT mass, rational independence and the canonical pole response, so their phenomena are reproduced by suitable generalized-prime controls. RH-facing information must enter through the rational-prime-specific centered remainder, a source-selected branch theorem for that remainder, or another nonuniversal coupling surviving completion.
 
-The reusable lesson is that **compact or finite-rank completion cannot repair a bounded source obstruction that already survives on weakly-null recurrent states; the only possible repair must act in a noncompact/unbounded channel on those same states**. Here that channel is the logarithmic principal operator. A future result must compare its frequency cost with the recurrent prime edge on the relevant moving branch, rather than further refine the bounded PNT geometry.
-
-**Boundary.** PL-342 determines the essential spectral edges of the bounded prime block and their invariance under compact completion. It does not prove branch persistence, identify the completed low spectrum, control the scalar part, or produce a negative direction for the completed Weil form. The unbounded principal term is load-bearing, and any RH-facing gain must enter through its same-state interaction with source-selective branch structure.
+**Boundary.** PL-344 does not prove that the centered residual is small, recurrent, nonrecurrent or coercive, and it gives no completed negative direction. It only identifies and cancels the leading bounded-frequency PNT profile. The remaining theorem must control the destination-surviving residual together with the unbounded principal term.
