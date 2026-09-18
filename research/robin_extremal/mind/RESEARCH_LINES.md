@@ -16,25 +16,23 @@ RE-205--RE-208 show that ordinary primes can pay a substantial part of that cont
 
 The `1/2` ceiling there is a limitation of the absolute-variation/KV realization, not a proved source-rigidity threshold.
 
-RE-209 supplies the first representation-independent converse inside the same separated ordinary-prime architecture. Integrating the spectral-gap test one level further forces a large exponentially weighted cumulative primitive, which is exactly a signed prime-count prefix after the arithmetic pullback. RE-210 keeps the exact first-sidelobe geometry of the repeated-uniform sinc test and obtains `gamma_*=0.5979019108...`. RE-211 then shows that this is not the compact-support extremum: replacing the uniform base density by a normalized nonnegative Blackman window gives the certified rate
+RE-209 supplies the first representation-independent converse inside the same separated ordinary-prime architecture. Integrating the spectral-gap test one level further forces a large exponentially weighted cumulative primitive, which is exactly a signed prime-count prefix after the arithmetic pullback. RE-210 keeps the exact first-sidelobe geometry of the repeated-uniform sinc test and obtains `gamma_*=0.5979019108...`; RE-211 proves that window shaping beats that value with a Blackman rate `0.7415820315...`.
 
-`gamma_B=0.7415820315...`.
+RE-212 changes the obstruction frontier qualitatively. For the normalized continuous Kaiser--Bessel family,
 
-Thus any repair preserving every fixed KV envelope must now satisfy
+`gamma_beta=log(sinh(beta)/beta)/beta -> 1`.
 
-`(1/2 log Q - gamma_B H T_Q)/V(Q) -> +infinity`.
+For every fixed `eta>0`, one may choose `beta` once and obtain a positive compact convolution test with signed-prefix rate at least `(1-eta) H T`. Thus any separated repair preserving every fixed KV envelope excludes
 
-For `T_Q=c log Q` and `H=log 8`, the universal ceiling is
+`T_Q=c log Q` whenever `c>1/(2H)`.
 
-`c<1/(2 gamma_B H)=0.3242381331...`.
-
-The vertical continuum remains a genuine **two-sided logarithmic-height problem**: hiding is constructed below `0.0289079...` and impossible at or above `0.3242382...` within the fixed-gap ordinary-prime `{0,1,2}` architecture. The remaining ratio between explicit construction and coercion is about `11.2`.
+For `H=log 8`, every `c>0.2404491734...` is impossible in the fixed-gap ordinary-prime `{0,1,2}` architecture. Equality is not settled by the present argument. Explicit hiding remains constructed below `0.0289079...`; the ratio between the current constructive and coercive constants is `12 log 2=8.317766...`.
 
 The obstruction-side problem is now naturally expressed by the compact-support functional
 
 `Gamma(w)=sup_a [-log sup_{|x|>=a}|w_hat(x)|]/a`
 
-over nonnegative probability densities supported on `[-1,1]` with sufficient Fourier-tail regularity. RE-211 proves `sup_w Gamma(w)>=0.7415820315...`; it gives no matching upper bound. The high-value coercive question is to determine or tightly bound this extremum, rather than optimize one convenient kernel family. The triangular-window negative control shows that smoothing alone need not improve the rate.
+over nonnegative probability densities supported on `[-1,1]` with sufficient Fourier-tail regularity. RE-212 proves `sup_w Gamma(w)>=1` in the supremal sense, but gives no upper bound and does not prove that one is attained. The high-value coercive question is therefore whether `Gamma(w)<=1` universally, or whether another positive compact window can cross the unit rate. Small numerical improvements within a fixed window family are no longer the frontier.
 
 On the constructive side, replace the coefficient-heavy one-sided synthesis by a source-aware repair with directly controlled signed weighted prefixes, not merely controlled absolute variation. A third possibility is to leave the separated-repair architecture entirely and prove that any such escape changes the physical source class or destination effect.
 
