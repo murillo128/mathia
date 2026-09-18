@@ -7,6 +7,7 @@ target_line: arithmetic_fidelity
 based_on:
   - research/arithmetic_fidelity/findings/AF-405-full-euler-log-is-strictly-sign-regular-through-order-four.md
   - research/arithmetic_fidelity/findings/AF-408-order-five-euler-failure-is-confined-to-compact-log-scale.md
+  - research/arithmetic_fidelity/findings/AF-409-order-five-euler-gate-explicit-right-tail.md
   - research/arithmetic_fidelity/clues/CLUE-order-five-gate-monotonicity.md
 ---
 
@@ -14,52 +15,71 @@ based_on:
 
 ## Observation
 
-AF-408 proves only an existential tail statement: there is some `T>0` for which the order-five Toda gate
+AF-408 proves eventual positivity of the order-five Toda gate
 
 \[
 A_4(t)=4q(t)-(\log R_4(t))''=-(\log H_4(t))''
 \]
 
-is positive whenever `|t|>T`. Its left and right asymptotics are
+in both tails, with
 
 \[
-A_4(t)=\frac{24}{5}e^{2t}(1+o(1))\quad(t\to-\infty),
+A_4(t)=\frac{24}{5}e^{2t}(1+o(1))
+\quad(t\to-\infty),
 \qquad
-A_4(t)=4e^t(1+o(1))\quad(t\to+\infty).
+A_4(t)=4e^t(1+o(1))
+\quad(t\to+\infty).
 \]
 
-The accepted compact-monotonicity clue freezes the complementary interval `[-14,4]`. Even a proof of positivity on that whole compact interval would not by itself imply global order-five positivity unless AF-408's asymptotic theorem is made effective with tail cutoffs that meet or overlap those endpoints.
+AF-409 has now made the **right** tail effective. It proves
+
+\[
+A_4(t)>4e^t-3>0
+\qquad(t\ge\log50),
+\]
+
+so in particular
+
+\[
+A_4(t)>0\qquad(t\ge4).
+\]
+
+The independently frozen compact interval is `[-14,4]`. Therefore the only remaining tail bridge is the left semi-infinite interval.
 
 ## Research question
 
 Can the exact Euler-log gate be proved to satisfy
 
 \[
-A_4(t)>0\qquad(t\le -14)
+A_4(t)>0\qquad(t\le-14)
 \]
 
-and
-
-\[
-A_4(t)>0\qquad(t\ge 4)
-\]
-
-by explicit analytic remainder bounds or another rigorous comparison? More generally, what explicit left and right cutoffs can be certified from the exact profile?
+by explicit analytic remainder bounds or another rigorous comparison? More generally, what explicit left cutoff can be certified from the exact small-\(x=e^t\) profile?
 
 ## Why it may matter
 
-An endpoint-matched effective tail theorem is the missing logical bridge between a compact certificate and a global `H_5>0` theorem. If the current compact monotonicity program succeeds and these tail inequalities are also proved, AF-404 and AF-403 would upgrade the full Euler-log translation kernel from strict total positivity through order four to strict total positivity through order five. If the best explicit cutoffs lie strictly outside `[-14,4]`, the remaining uncovered intervals become the exact residual problem instead of being hidden inside an existential asymptotic statement.
+AF-409 removes the right endpoint from the global order-five gap. If the compact monotonicity program succeeds on `[-14,4]` and the remaining left inequality is proved, AF-404 and AF-403 would upgrade the full Euler-log translation kernel from strict total positivity through order four to strict total positivity through order five.
+
+If the best explicit left cutoff lies below `-14`, the finite uncovered interval between that cutoff and `-14` becomes the exact residual problem instead of being hidden inside AF-408's existential asymptotic statement.
 
 ## Decisive test
 
-Starting from AF-408's exact left- and right-tail expansions, replace every `o(1)`/big-`O` step needed for the sign by a rigorous bound on the exact Euler-log profile. On the left, control the `x=e^t` expansion with `u=-\log x` uniformly for `0<x\le e^{-14}` and prove that the positive `(24/5)x^2` term dominates the remainder. On the right, control the `y=e^{-x}` expansion uniformly for `x\ge e^4` and prove that the positive `4x` term dominates all exponentially small corrections. An alternative exact inequality for `A_4` is equally decisive.
+Starting from AF-408's left-tail expansion, replace every `o(1)`/big-`O` step needed for the sign by a rigorous bound on the exact Euler-log profile. With
 
-If either endpoint cannot be reached, produce a rigorous explicit cutoff and identify the finite uncovered interval. A numerical sample or an asymptotic sign without a quantified remainder does not resolve the clue.
+\[
+x=e^t,\qquad u=-\log x,
+\]
+
+control the convergent small-\(x\) expansion uniformly for `0<x<=e^{-14}` and prove that the positive `(24/5)x^2` term dominates the exact remainder. An alternative exact inequality for `A_4` is equally decisive.
+
+If `-14` cannot be reached, produce a rigorous explicit left cutoff and identify the finite uncovered interval. A numerical sample or an asymptotic sign without a quantified remainder does not resolve the clue.
 
 ## Evidence boundary
 
-AF-408 establishes positivity only sufficiently far into each tail and gives no explicit admissible `T`. The endpoint choices `-14` and `4` come from the separate compact investigation and are not currently certified tail thresholds. This clue therefore establishes neither global order-five positivity nor positivity on either semi-infinite endpoint range; it isolates the quantitative theorem needed to connect a future compact result to the existing asymptotic theorem.
+AF-409 settles only the right tail and does not imply any left-tail sign. AF-408 still supplies only eventual left positivity. The endpoint `-14` comes from the separate compact investigation and is not currently certified as a tail threshold.
+
+This clue therefore establishes neither global order-five positivity nor positivity on `t<=-14`; it now isolates the single quantitative theorem needed to connect a future compact result to the existing left asymptotic theorem.
 
 ## Research disposition
 
-The direction is accepted for continued investigation. AF-408 makes the two endpoint inequalities the exact missing bridge between its eventual tail theorem and the independently frozen compact interval. A targeted literature search found the expected general total-positivity, Pólya-frequency, and Hankel/Toda machinery but no theorem that supplies explicit cutoffs for this concrete Euler-log gate. The remaining question is quantitative rather than conceptual: certify the exact profile on the two semi-infinite tails with rigorous remainder control, or return the best explicit cutoffs and the finite intervals left uncovered. Acceptance does not assert that `-14` and `4` are valid cutoffs.
+The direction remains accepted, but its right-hand half is resolved by AF-409. The surviving target is exactly the left inequality `A_4(t)>0` for `t<=-14` (or the strongest explicit cutoff obtainable with rigorous remainder control). No new literature theorem was found that supplies this concrete Euler-log cutoff automatically, so the remaining work is a line-specific quantitative estimate rather than a search for a generic total-positivity theorem.
