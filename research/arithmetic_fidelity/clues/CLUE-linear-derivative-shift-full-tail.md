@@ -7,6 +7,7 @@ target_line: arithmetic_fidelity
 based_on:
   - research/arithmetic_fidelity/findings/AF-417-linear-derivative-shift-renormalizes-left-tail-plancherel-sectors.md
   - research/arithmetic_fidelity/findings/AF-418-full-height-rectangles-expose-sigma-2-absolute-tail-transition.md
+  - research/arithmetic_fidelity/findings/AF-419-subcritical-linear-shifts-admit-uniform-full-tail-resummation.md
 ---
 
 # Linear derivative-shift full-tail resummation
@@ -57,15 +58,15 @@ Hence AF-415-style absolute domination is impossible for `sigma>2`. At `sigma=2`
 
 which is invisible to every fixed partition. For `s_n=2n`, even the single column `(1^n)` grows exponentially in normalized magnitude when `c>2pi`.
 
-The signed complete sum could still exhibit global cancellations, so AF-418 does not by itself refute the proposed exponential limit.
+AF-419 closes the opposite side of this obstruction. If `limsup s_n/n<2`, a column-height split plus Pieri's rule gives a shape-uniform absolute majorant: columns bounded away from full height obey a Cauchy majorant, while all nearly full-height columns are collectively superexponentially suppressed. Consequently the complete exceptional-`1` sector converges to the fixed-degree candidate throughout the subcritical regime.
+
+The signed complete sum could still exhibit global cancellations at or above the critical ratio, so AF-418 does not by itself refute the proposed exponential limit there.
 
 ## Decisive test
 
-Treat the regimes separately.
+The `sigma<2` branch is resolved by AF-419. No further absolute-tail argument is needed there.
 
-For `sigma<2`, derive a shape-uniform absolute majorant strong enough to justify the complete partition-tail interchange, including partitions whose length and size grow with `n`.
-
-For `sigma>=2`, an AF-415-style absolute argument is ruled out. Either derive an exact signed resummation/cancellation mechanism that controls the exponentially large growing-partition sectors, or construct a signed asymptotic/counterexample showing that the complete sector depends on additional scaling data and does not have the fixed-degree candidate limit.
+For `sigma>=2`, an AF-415/AF-419-style absolute argument is ruled out in general. Either derive an exact signed resummation/cancellation mechanism that controls the exponentially large growing-partition sectors, or construct a signed asymptotic/counterexample showing that the complete sector depends on additional scaling data and does not have the fixed-degree candidate limit.
 
 The critical regime must track at least the window
 
@@ -81,4 +82,4 @@ Only after the exceptional-`1` signed sector is controlled in the relevant deriv
 
 ## Research disposition
 
-Accepted. AF-418 proves that the original all-`sigma` absolute-majorant route is impossible and identifies a new critical large-partition scale. The unresolved research question is now sharply regime-dependent: subcritical shape-uniform absolute resummation versus critical/supercritical signed cancellation or failure. A future resolution should not infer complete-tail behavior from fixed-degree coefficients alone.
+Accepted. AF-419 resolves the entire subcritical regime and proves that `sigma=2` is the sharp boundary for this absolute-uniform-integrability architecture. The unresolved question is now only critical/supercritical: whether genuinely signed global cancellation preserves the candidate exponential despite AF-418's growing rectangular sectors, or whether the complete limit retains additional scaling data and changes or fails to exist.
