@@ -42,12 +42,28 @@ hence
 
 where `E_a` is the inherited Vinogradov--Korobov PNT remainder. The quadratic modulus is structural: a relative capacity deficit `d` is tested on a top slab containing `Theta(d)` source mass, and the unfillable fraction contributes another factor `Theta(d)`.
 
-The positive-source frontier is therefore genuinely at and above the certified atomic edge. Below it, increasingly accurate returns are forced quantitatively against the edge, down to the PNT resolution floor. Beyond it, enough cells exist in principle, so a stronger obstruction must use how actual von-Mangoldt mass occupies those cells rather than only their count or maximal atom mass. A separate destination question remains load-bearing: prove that a Nyman approximant resolving the target must realize such an `o(a)` positive Euler-shell return, or identify the correct destination-coupled source condition if it does not.
+NB-202 shows that the certified atomic edge is not the end of deterministic positive-source coercivity. Counting favorable phase cells ignores whether those cells actually meet the integer carrier. Erdős--Turán discrepancy plus the van der Corput second-derivative estimate gives, for a fixed angular tolerance `q/X_a`,
 
-A different continuation must leave positivity and control signed/complex synthesis, where occupancy and atomic packing cease to be monotone because cancellation can move between phase cells.
+`#{n in [x_a,e^Delta x_a): dist(t log n,2 pi Z)<=q/X_a} << q x_a/X_a + sqrt(|t|X_a/q) + x_a/sqrt(|t|)`.
+
+Together with the pointwise Euler atom cap `w_(n,a)<<X_a/x_a`, this forces
+
+`A_a(t) >> 1/X_a`
+
+uniformly for
+
+`C X_a^2 <= |t| <= c x_a^2/X_a^3`.
+
+Combined with NB-199, an `o(1/X_a)` positive return in the high-ordinate regime cannot occur before the quadratic carrier scale `x_a^2/X_a^3`. In a block `[T,2T]`, this gives the necessary acquisition width
+
+`a >= 2 r_0/(log T + 3 log log T + O(1))`.
+
+The upper scale `x_a^2/X_a^3` is a discrepancy-method boundary, not a certified first-return threshold. The positive-source frontier is therefore to extend carrier discrepancy beyond the second-derivative window or to use genuinely von-Mangoldt occupancy rather than the all-integers carrier bound, while keeping clear which gain is generic harmonic analysis and which is source-specific arithmetic. A separate destination question remains load-bearing: prove that a Nyman approximant resolving the target must realize such an `o(a)` positive Euler-shell return, or identify the correct destination-coupled source condition if it does not.
+
+A different continuation must leave positivity and control signed/complex synthesis, where occupancy, integer carrying capacity and positive chord mass cease to be monotone because cancellation can move between phase sectors.
 
 ## Keep source persistence, acquisition cost and destination conditioning separate
 
-NB-190--NB-201 are acquisition theorems in coefficient/phase topology. They do not establish that the true Nyman realized range contains the Poisson-packed dipoles, nor that the approximation problem demands independent recovery of all normalized bands. Conversely, unrestricted mixtures can synthesize those bands, and fixed-`a` recurrence can eventually transplant them to high blocks, but the coupled source-height limit successively exposes target volume, dephasing, source resolution, occupancy, atomic capacity and now **capacity stability**.
+NB-190--NB-202 are acquisition theorems in coefficient/phase topology. They do not establish that the true Nyman realized range contains the Poisson-packed dipoles, nor that the approximation problem demands independent recovery of all normalized bands. Conversely, unrestricted mixtures can synthesize those bands, and fixed-`a` recurrence can eventually transplant them to high blocks, but the coupled source-height limit successively exposes target volume, dephasing, source resolution, occupancy, atomic capacity, endpoint stability and now **integer-carrier discrepancy**.
 
-Frequency membership, true amplitudes, positive source mass, fanout, representation gain, scalar-mixture total variation, recurrence target volume/effective dimension, long-time prevalence, first-hit/return-free scale, source-specific pointwise dephasing, uniform versus almost-all source resolution, interval occupancy, atomic cell capacity, endpoint deficit, requested return tolerance and destination conditioning are distinct currencies. A successful continuation must identify which are actually bounded by the Nyman construction in the simultaneous `a_T`--`T` regime and test that bound against a matched control on the realized approximation range.
+Frequency membership, true amplitudes, positive source mass, fanout, representation gain, scalar-mixture total variation, recurrence target volume/effective dimension, long-time prevalence, first-hit/return-free scale, source-specific pointwise dephasing, uniform versus almost-all source resolution, interval occupancy, atomic cell capacity, integer-cell occupancy, endpoint deficit, requested return tolerance and destination conditioning are distinct currencies. A successful continuation must identify which are actually bounded by the Nyman construction in the simultaneous `a_T`--`T` regime and test that bound against a matched control on the realized approximation range.
