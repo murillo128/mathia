@@ -12,58 +12,32 @@ NB-190 prices the missing normalization step for the genuine scalar Euler transl
 
 NB-192--NB-197 expose the coupled-limit nonuniformity. Prime-log phase dimension forces enormous recurrence scales; Vinogradov--Korobov, mean-square and short-interval source resolution give progressively stronger return-free corridors, but the intermediate exponents measure source-resolution technology rather than a natural endpoint constant.
 
-NB-198 replaces cellwise source approximation by positive occupancy. A sufficiently accurate positive return forces most von-Mangoldt mass into favorable phase windows, and Brun--Titchmarsh bounds how much those windows can carry. NB-199 follows their width diagonally and shows that throughout
+NB-198 replaces cellwise source approximation by positive occupancy. A sufficiently accurate positive return forces most von-Mangoldt mass into favorable phase windows, and Brun--Titchmarsh bounds how much those windows can carry. NB-199 follows their width diagonally and proves a quantitative gap through the final logarithmic layer below `x_a/X_a`. NB-200--NB-201 then show that local density hands off to atomic carrying capacity at endpoint height and quantify the approach to the resulting one-sided capacity edge.
 
-`X_a^2 <= |t| <= x_a/(U_0 X_a)`
+NB-202 makes the next transition from counting favorable phase cells to counting which cells actually meet the integer carrier. Erdős--Turán plus the second-derivative van der Corput test yields `A_a(t)>>1/X_a` through `|t|<<x_a^2/X_a^3`. NB-203 extends the same carrier argument with every fixed derivative order and thereby removes every fixed polynomial shell height. NB-204 uses a uniform all-orders derivative estimate with order growing with `a` to push the obstruction to quasi-polynomial height,
 
-one has
+`log |t| >= (1/log 2-o(1)) X_a log X_a`
 
-`A_a(t) >= c log(x_a/(|t|X_a))/X_a`.
+for any high-ordinate positive-return sequence with `X_a A_a(t)->0`.
 
-Thus `o(1/X_a)` positive returns cannot remain below the final logarithmic layer `x_a/X_a`.
+NB-205 replaces the derivative hierarchy by Ford's Vinogradov--Korobov exponential-sum estimate for `sum n^(-it)`. Coupled to the same angular-resolution Erdős--Turán count and the Euler atom cap `w_(n,a)<<X_a/x_a`, it proves that for every fixed `kappa<1/sqrt(133.66)`,
 
-NB-200 shows that the disappearance of the interval-density reserve is not the end of coercivity. At endpoint height each favorable phase cell becomes shorter than one integer, so local density hands off to atomic carrying capacity. The one-sided theorem implies that any sequence with `X_a A_a(t)->0` and bounded endpoint ratio must satisfy
+`X_a^2 <= |t| <= exp(kappa X_a^(3/2)/sqrt(log X_a))`
 
-`liminf |t|X_a/x_a >= 2 pi e^Delta`.
+implies `A_a(t)>>_kappa 1/X_a`. Hence an `o(1/X_a)` positive return must satisfy
 
-The constant is a certified capacity edge, not an existence theorem.
+`liminf log|t| sqrt(log X_a)/X_a^(3/2) >= 1/sqrt(133.66)`.
 
-NB-201 now diagonalizes that atomic argument. Define
+In a physical block `[T,2T]`, the resulting necessary positive-source acquisition width is
 
-`kappa_a^cap = 2 pi e^Delta X_a/(X_a+Delta)`, `kappa_a(t)=|t|X_a/x_a`, and `d_a(t)=1-kappa_a(t)/kappa_a^cap`.
+`a >= r_0 (3/(2*133.66)+o(1))^(1/3) / ((log T)^(2/3)(log log T)^(1/3))`.
 
-In the one-sided endpoint regime,
-
-`A_a(t) >= (c/X_a)(d_a(t)^2-C E_a)_+`,
-
-hence
-
-`d_a(t) <= C(sqrt(X_a A_a(t))+sqrt(E_a))`,
-
-where `E_a` is the inherited Vinogradov--Korobov PNT remainder. The quadratic modulus is structural: a relative capacity deficit `d` is tested on a top slab containing `Theta(d)` source mass, and the unfillable fraction contributes another factor `Theta(d)`.
-
-NB-202 shows that the certified atomic edge is not the end of deterministic positive-source coercivity. Counting favorable phase cells ignores whether those cells actually meet the integer carrier. Erdős--Turán discrepancy plus the van der Corput second-derivative estimate gives, for a fixed angular tolerance `q/X_a`,
-
-`#{n in [x_a,e^Delta x_a): dist(t log n,2 pi Z)<=q/X_a} << q x_a/X_a + sqrt(|t|X_a/q) + x_a/sqrt(|t|)`.
-
-Together with the pointwise Euler atom cap `w_(n,a)<<X_a/x_a`, this forces
-
-`A_a(t) >> 1/X_a`
-
-uniformly for
-
-`C X_a^2 <= |t| <= c x_a^2/X_a^3`.
-
-Combined with NB-199, an `o(1/X_a)` positive return in the high-ordinate regime cannot occur before the quadratic carrier scale `x_a^2/X_a^3`. In a block `[T,2T]`, this gives the necessary acquisition width
-
-`a >= 2 r_0/(log T + 3 log log T + O(1))`.
-
-The upper scale `x_a^2/X_a^3` is a discrepancy-method boundary, not a certified first-return threshold. The positive-source frontier is therefore to extend carrier discrepancy beyond the second-derivative window or to use genuinely von-Mangoldt occupancy rather than the all-integers carrier bound, while keeping clear which gain is generic harmonic analysis and which is source-specific arithmetic. A separate destination question remains load-bearing: prove that a Nyman approximant resolving the target must realize such an `o(a)` positive Euler-shell return, or identify the correct destination-coupled source condition if it does not.
+This is a source-acquisition obstruction, not a Nyman distance theorem. The positive-source frontier is now to test whether stronger logarithmic exponential-sum bounds or genuinely von-Mangoldt-weighted carrier cancellation can improve Ford's all-integers law. A separate destination question remains load-bearing: prove that a Nyman approximant resolving the target must realize such an `o(a)` positive Euler-shell return, or identify the correct destination-coupled source condition if it does not.
 
 A different continuation must leave positivity and control signed/complex synthesis, where occupancy, integer carrying capacity and positive chord mass cease to be monotone because cancellation can move between phase sectors.
 
 ## Keep source persistence, acquisition cost and destination conditioning separate
 
-NB-190--NB-202 are acquisition theorems in coefficient/phase topology. They do not establish that the true Nyman realized range contains the Poisson-packed dipoles, nor that the approximation problem demands independent recovery of all normalized bands. Conversely, unrestricted mixtures can synthesize those bands, and fixed-`a` recurrence can eventually transplant them to high blocks, but the coupled source-height limit successively exposes target volume, dephasing, source resolution, occupancy, atomic capacity, endpoint stability and now **integer-carrier discrepancy**.
+NB-190--NB-205 are acquisition theorems in coefficient/phase topology. They do not establish that the true Nyman realized range contains the Poisson-packed dipoles, nor that the approximation problem demands independent recovery of all normalized bands. Conversely, unrestricted mixtures can synthesize those bands, and fixed-`a` recurrence can eventually transplant them to high blocks, but the coupled source-height limit successively exposes target volume, dephasing, source resolution, occupancy, atomic capacity, endpoint stability, integer-carrier discrepancy, derivative-order uniformity and now **Vinogradov--Korobov logarithmic-sum cancellation**.
 
 Frequency membership, true amplitudes, positive source mass, fanout, representation gain, scalar-mixture total variation, recurrence target volume/effective dimension, long-time prevalence, first-hit/return-free scale, source-specific pointwise dephasing, uniform versus almost-all source resolution, interval occupancy, atomic cell capacity, integer-cell occupancy, endpoint deficit, requested return tolerance and destination conditioning are distinct currencies. A successful continuation must identify which are actually bounded by the Nyman construction in the simultaneous `a_T`--`T` regime and test that bound against a matched control on the realized approximation range.
