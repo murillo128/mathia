@@ -2,42 +2,22 @@
 
 This file holds the current mathematical questions suggested by the durable Nyman--Beurling intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Price the physically admissible scalar acquisition budget in the coupled source-height limit
+## Replace isolated positive-return exclusion by correlated prime-harmonic large-value control
 
 **Linked intuitions:** `MI-001-target-aware-gram-geometry-must-carry-absolute-scale` through `MI-052-brun-titchmarsh-occupancy-pushes-positive-return-obstruction-to-the-mellin-endpoint`.
 
-The source-side program has separated raw phase accessibility, representation complexity and physical Euler acquisition. The natural scalar Euler functional escapes the bounded Hilbert dual but is priced by an absolute Wiener/Dirichlet budget `W(a)~1/a`. NB-188 shows that compressing positive source mass into a Hadamard-scale code forces square-root source-density amplification and bounded effective fanout. NB-189 proves those representation tariffs are sharp but nonselective: independently normalized true-amplitude bands still generate a DFT-scale code on a Poisson-packed matched control.
+The positive-source program has progressively separated recurrence existence, source resolution, interval occupancy, atomic carrying capacity and integer-carrier discrepancy. NB-202--NB-205 push an `o(1/X_a)` positive Euler return from quadratic shell height, through every fixed polynomial scale and a quasi-polynomial derivative regime, out to the Vinogradov--Korobov height supplied by Ford's exponential-sum estimate. These are acquisition obstructions, not Nyman distance theorems.
 
-NB-190 prices the missing normalization step for the genuine scalar Euler translate family. A normalized probe supported on source mass `Theta` requires Fourier--Stieltjes mixing variation at least `(1-epsilon)/Theta` at coefficient error `epsilon<1`. Under source-safe high-ordinate normalization the same lower bound becomes `Omega(H_T)` per band. NB-191 then shows that at fixed `a` and fixed positive accuracy, finite-frequency Bohr recurrence can transplant compact sharp synthesizers into arbitrarily high blocks without an extra asymptotic variation surcharge.
+NB-206 shows that a straightforward VMVT replacement does not automatically improve that coupled frontier: a fixed `epsilon` loss becomes fatal when the derivative/degree parameter itself grows. Any higher-moment input must retain quantitatively uniform dependence on the moving complexity rather than merely improve a fixed-degree exponent.
 
-NB-192--NB-197 expose the coupled-limit nonuniformity. Prime-log phase dimension forces enormous recurrence scales; Vinogradov--Korobov, mean-square and short-interval source resolution give progressively stronger return-free corridors, but the intermediate exponents measure source-resolution technology rather than a natural endpoint constant.
+NB-207 removes a different artefact. Fejér/window majorants eliminate the harmonic logarithmic loss caused by naive sharp truncation, so the surviving barrier is not bookkeeping from the Fourier cutoff. NB-208 then changes the geometry of the necessary event: a positive Euler return forces not one anomalously large Dirichlet-polynomial value but a **whole prime-harmonic plateau** of correlated large values. NB-209 compares that plateau with existing large-value technology and isolates the deficit: generic large-value bounds miss the forced configuration by one logarithmic dimension.
 
-NB-198 replaces cellwise source approximation by positive occupancy. A sufficiently accurate positive return forces most von-Mangoldt mass into favorable phase windows, and Brun--Titchmarsh bounds how much those windows can carry. NB-199 follows their width diagonally and proves a quantitative gap through the final logarithmic layer below `x_a/X_a`. NB-200--NB-201 then show that local density hands off to atomic carrying capacity at endpoint height and quantify the approach to the resulting one-sided capacity edge.
+The live source-side theorem is therefore no longer simply “improve the largest admissible height.” It is to exploit the deterministic correlation structure of the prime-harmonic plateau. A useful bound must count or suppress a correlated family of nearby prime-frequency values more efficiently than treating them as independent large-value events. Prime support, harmonic spacing and positivity are part of the input; a generic one-point large-value estimate is now known to leave exactly the wrong logarithmic slack.
 
-NB-202 makes the next transition from counting favorable phase cells to counting which cells actually meet the integer carrier. Erdős--Turán plus the second-derivative van der Corput test yields `A_a(t)>>1/X_a` through `|t|<<x_a^2/X_a^3`. NB-203 extends the same carrier argument with every fixed derivative order and thereby removes every fixed polynomial shell height. NB-204 uses a uniform all-orders derivative estimate with order growing with `a` to push the obstruction to quasi-polynomial height,
+A separate destination theorem remains load-bearing: show that a Nyman approximant resolving the target must realize the positive-return condition used by this source analysis, or identify the correct destination-coupled source condition if positivity is too restrictive. Signed/complex synthesis remains a genuinely different branch because cancellation can move between phase sectors and destroys the monotone occupancy argument.
 
-`log |t| >= (1/log 2-o(1)) X_a log X_a`
+## Keep moving-complexity uniformity and destination conditioning explicit
 
-for any high-ordinate positive-return sequence with `X_a A_a(t)->0`.
+The relevant currencies now include source mass, requested return tolerance, integer-cell occupancy, harmonic-window width, moving derivative order, exponential-sum loss, large-value multiplicity and **correlation across the prime-harmonic plateau**. NB-206 is the warning that an estimate which is excellent at each fixed complexity may become useless on the diagonal where complexity grows with the source scale. NB-207 is the complementary warning that avoidable window losses should be removed before interpreting a logarithmic deficit as arithmetic.
 
-NB-205 replaces the derivative hierarchy by Ford's Vinogradov--Korobov exponential-sum estimate for `sum n^(-it)`. Coupled to the same angular-resolution Erdős--Turán count and the Euler atom cap `w_(n,a)<<X_a/x_a`, it proves that for every fixed `kappa<1/sqrt(133.66)`,
-
-`X_a^2 <= |t| <= exp(kappa X_a^(3/2)/sqrt(log X_a))`
-
-implies `A_a(t)>>_kappa 1/X_a`. Hence an `o(1/X_a)` positive return must satisfy
-
-`liminf log|t| sqrt(log X_a)/X_a^(3/2) >= 1/sqrt(133.66)`.
-
-In a physical block `[T,2T]`, the resulting necessary positive-source acquisition width is
-
-`a >= r_0 (3/(2*133.66)+o(1))^(1/3) / ((log T)^(2/3)(log log T)^(1/3))`.
-
-This is a source-acquisition obstruction, not a Nyman distance theorem. The positive-source frontier is now to test whether stronger logarithmic exponential-sum bounds or genuinely von-Mangoldt-weighted carrier cancellation can improve Ford's all-integers law. A separate destination question remains load-bearing: prove that a Nyman approximant resolving the target must realize such an `o(a)` positive Euler-shell return, or identify the correct destination-coupled source condition if it does not.
-
-A different continuation must leave positivity and control signed/complex synthesis, where occupancy, integer carrying capacity and positive chord mass cease to be monotone because cancellation can move between phase sectors.
-
-## Keep source persistence, acquisition cost and destination conditioning separate
-
-NB-190--NB-205 are acquisition theorems in coefficient/phase topology. They do not establish that the true Nyman realized range contains the Poisson-packed dipoles, nor that the approximation problem demands independent recovery of all normalized bands. Conversely, unrestricted mixtures can synthesize those bands, and fixed-`a` recurrence can eventually transplant them to high blocks, but the coupled source-height limit successively exposes target volume, dephasing, source resolution, occupancy, atomic capacity, endpoint stability, integer-carrier discrepancy, derivative-order uniformity and now **Vinogradov--Korobov logarithmic-sum cancellation**.
-
-Frequency membership, true amplitudes, positive source mass, fanout, representation gain, scalar-mixture total variation, recurrence target volume/effective dimension, long-time prevalence, first-hit/return-free scale, source-specific pointwise dephasing, uniform versus almost-all source resolution, interval occupancy, atomic cell capacity, integer-cell occupancy, endpoint deficit, requested return tolerance and destination conditioning are distinct currencies. A successful continuation must identify which are actually bounded by the Nyman construction in the simultaneous `a_T`--`T` regime and test that bound against a matched control on the realized approximation range.
+Any continuation should therefore state the simultaneous `a_T`--`T`--complexity regime, preserve uniform constants through the moving parameter, and compare the forced plateau with a matched large-value theorem in the same normalization. Only after that source theorem is established should its cost be transferred to the Nyman destination.

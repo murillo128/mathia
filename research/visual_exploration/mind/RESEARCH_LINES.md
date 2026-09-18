@@ -2,38 +2,34 @@
 
 This file holds the current mathematical questions suggested by the durable visual-exploration intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Determine what survives when the packet leaves the fixed-interior bounded-projection regime
+## Move beyond fixed-power source escape and generic smoothing explanations
 
 **Linked intuitions:** `MI-029-fixed-margin-pair-correlation-accuracy-must-outrun-packet-conditioning` through `MI-037-laplace-null-localization-pays-an-inverse-width-conditioning-cost`, with corrected moving-test synthesis in `MI-031-wang-transfer-allows-moving-tests-only-inside-a-seminorm-and-support-budget`.
 
-The fixed-source representation audit has removed the apparent generic `L^-3/2` frontier from every direct sector inspected so far. VIS-271--VIS-278 identify the theorem/source coordinate mismatch, reconstruct the gamma-normalized source and show that its invariant residual has positive prime-power energy `C_Lambda` entering only at `L^-2`. VIS-279--VIS-281 then show that the direct `D_x--E_x` envelope, the `D_x--B_x` cross and the zero-window localization loss all fall to `L^-2` or below after specializing to compact physical source before rescaling.
+VIS-282--VIS-284 identify the fixed-source coefficient-scale arithmetic profile
 
-VIS-282 resolves the formerly anonymous `O(H)` Dirichlet mean square. At fixed source,
+`Q_gamma(x)=S_D(x)+C_Lambda/x^2`
 
-`int_I |D_x(t)|^2 dt = H S_D(x)+O_K(1)`,
+and show that fixed-interior packet localization is a bounded linear projection problem. A Laplace-null packet of support diameter `b` loses response like `b||h||_1`; keeping a nonzero localized signal therefore costs inverse-width conditioning and amplifies unresolved errors by the same factor.
 
-where
+VIS-285 closes the left source boundary for this isolated profile: on the first source cell, `Q_gamma(e^(2pi q))=2 C_Lambda cosh(4pi q)`, so `q=0` is regular with zero first derivative rather than singular. VIS-286 closes the opposite isolated-profile escape: `Q_gamma(x)=log x+o(1)`, so after subtracting the universal linear law there is no persistent bounded residual at `q->infinity` for bounded-total-variation translating packets.
 
-`S_D(x)=x^(-2) sum_(n<=x)n Lambda(n)^2 + x^2 sum_(n>x) Lambda(n)^2/n^3`.
+VIS-287--VIS-291 then move from the isolated diagonal to Wang's complete pair statistic in a genuine moving-source regime. For every compact power panel `x=T^beta` with `0<beta_0<=beta<=beta_1<theta`, the leading law is uniformly
 
-The profile has explicit derivative jumps `-4 Lambda(m)^2/m^2` at prime powers, so the coefficient-scale `L^-2` term contains deterministic arithmetic structure rather than merely theorem error.
+`F_I(T^beta)=(H beta log T)/(2pi)+residual`.
 
-VIS-283 closes the signed recombination question. The arithmetic residual `zeta'/zeta(3/2-it)` has the wrong temporal-frequency orientation to resonate with `D_x`: product frequencies are `-log(mn)`, not differences, so there is no zero-frequency diagonal. Consequently the signed prime/source cross is power-small after fixed-source normalization, while the field energy separates through constant order as
+The successive audit removes the apparent `H` frontier and propagates the strongest standard unconditional PNT remainder through Wang's decomposition. The complete residual is bounded by
 
-`(1/H) int_I |A(x,t)|^2 dt = S_D(x) + x^(-2)[log(T/(2*pi))^2 + C_Lambda] + o_K(1)`.
+`H exp(-c (log T)^(3/5)(loglog T)^(-1/5))`
 
-Keeping the exact gamma baseline intact leaves the positive coefficient-scale arithmetic profile
+for some `c>0` depending on the fixed panel. Thus a fixed power-law source escape strictly inside `(0,theta)` carries no larger hidden coefficient-scale profile after the linear baseline is removed.
 
-`Q_gamma(x)=S_D(x)+C_Lambda/x^2`.
+VIS-292 narrows the remaining “symmetric smoothing” explanation further. On logarithmic source scale, Wang's squared-von-Mangoldt profile is exactly convolution with `K(u)=e^(-2|u|)`, the Green kernel of `4-d^2/du^2`. Its Fourier multiplier `4/(4+xi^2)` has no real zeros, and the Mellin multiplier `4/(4-w^2)` has no zeros in its strip. The smoothing attenuates high frequencies but has **no exact blind mode**; any improvement beyond the Korobov--Vinogradov envelope must come from arithmetic structure of the weighted prime-power source, not from an automatic spectral null of the kernel.
 
-VIS-284 now closes the **fixed-interior packet projection** itself. For every uniformly `L^1`-bounded packet family supported in one fixed compact physical-source interval, Wang's exact inversion gives the coefficient-scale contribution as a bounded linear functional of `Q_gamma(e^(2*pi q))`. If the packet annihilates the universal Laplace mode `e^(-4*pi q)`, then support localization has a sharp conditioning cost: for support diameter `b`,
+The live frontier is therefore concentrated in genuinely nonuniform regimes: `beta(T)` approaching `0` or the short-interval ceiling, packets whose support/variation grow with `T`, source-boundary scalings not contained in one fixed compact power panel, or a source-specific cancellation theorem for `D(s)=sum Lambda(n)^2 n^(-s)` that survives Wang's complete error budget. A claim based only on fixed-power escape, the left boundary singularity, a persistent large-source diagonal residual or an exact blind frequency of the symmetric kernel is now excluded.
 
-`|<h,Q_gamma(e^(2*pi q))>| <= C_K b ||h||_1`.
+## Keep packet conditioning, source arithmetic and theorem uniformity separate
 
-Thus a Laplace-null packet with bounded total variation loses arithmetic response as its support shrinks. Keeping a nonzero localized response requires `||h||_1` to grow at least like `1/b`, and that same growth amplifies the unresolved remainder. Narrowing inside the fixed compact regime therefore does not create free source resolution.
+The current ledger separates packet total variation, support width, moving-test seminorm, source exponent, distance to the admissible source boundary, prime-power source measure, smoothing multiplier and the uniformity range of Wang's remainder. Exact invertibility of the Green filter is not stable recovery: applying `4-d^2/du^2` amplifies high log-frequencies quadratically. Conversely, strong smoothing does not imply information loss when the multiplier is nonzero.
 
-The live question has moved to the boundary of that theorem. A new mechanism must arise when packet support approaches a source boundary, escapes every fixed compact physical-source interval, or uses a singular normalization with enough quantitative control to survive its own norm amplification. Any claimed gain must first subtract the established `Q_gamma` projection and universal Laplace mode, then show a residual term absent from the compact-source model whose error budget remains controlled under the moving family.
-
-## Keep packet conditioning, arithmetic selectivity, theorem coordinates and parameter-uniformity separate
-
-The current ledger separates moving-test seminorm cost, prime-power support, normalization gauge, physical source scale, sign/covariance retention, temporal-frequency orientation and now **packet total variation versus support width**. VIS-284 adds a precise distinction: localization can improve spatial resolution only by paying in operator norm, and a gain bought entirely by that norm is not new arithmetic information. A future probe should preserve exact source structure through the physical pullback, quantify the moving-family remainder before amplification, and only then interpret any surviving boundary signal.
+A useful next probe must therefore declare its moving family before asymptotics, charge the corresponding norm growth, and identify an arithmetic term that remains after the linear source baseline and the known PNT envelope are removed. Only then can a visual/source-localization effect be interpreted as new mathematical information rather than conditioning or a repackaging of classical prime-number-theorem error.
