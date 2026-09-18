@@ -2,30 +2,30 @@
 
 This file holds the current mathematical questions suggested by the durable Nyman--Beurling intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Push prime-specific harmonic control from the diagonal corridor to the Ford edge
+## Reduce the full-Euler Vinogradov--Korobov prefactor from the log-squared corridor toward the Ford edge
 
-**Linked intuitions:** `MI-001-target-aware-gram-geometry-must-carry-absolute-scale` through `MI-053-prime-halasz-turns-the-harmonic-plateau-into-an-order-one-return-gap`.
+**Linked intuitions:** `MI-001-target-aware-gram-geometry-must-carry-absolute-scale` through `MI-054-one-smooth-full-euler-barycenter-already-reaches-the-log-squared-corridor`.
 
-The positive-source program has progressively separated recurrence existence, source resolution, interval occupancy, atomic carrying capacity and integer-carrier discrepancy. NB-202--NB-205 push an `o(1/X_a)` positive Euler return from quadratic shell height, through every fixed polynomial scale and a quasi-polynomial derivative regime, out to the Vinogradov--Korobov height supplied by Ford's exponential-sum estimate. These are acquisition obstructions, not Nyman distance theorems.
+The positive-source program has progressively separated recurrence existence, source resolution, interval occupancy, atomic carrying capacity and integer-carrier discrepancy. NB-202--NB-205 push an `o(1/X_a)` positive Euler return from quadratic shell height through the Vinogradov--Korobov acquisition regime. NB-206 shows why fixed-complexity estimates cannot be used blindly on a moving diagonal, while NB-207 removes an avoidable harmonic-window logarithm.
 
-NB-206 shows that a straightforward VMVT replacement does not automatically improve that coupled frontier: a fixed `epsilon` loss becomes fatal when the derivative/degree parameter itself grows. NB-207 removes a different artefact: Fejér/window majorants eliminate the harmonic logarithmic loss caused by naive sharp truncation.
+NB-208--NB-211 then derive an order-one positive-return gap from a phase-pinned harmonic plateau and a prime-supported Halász inequality, ultimately reaching
 
-NB-208 changes the geometry of the necessary event. A small positive Euler return forces a whole harmonic plateau of correlated prime Dirichlet-polynomial values. NB-209 showed that generic large-value estimates miss this configuration by one logarithmic dimension because they pay the ambient integer-support tariff.
+`log |t| <= kappa X_a^(3/2)/(log X_a)^2`.
 
-NB-210 proves that this particular logarithmic deficit is not intrinsic. The Matomäki--Radziwiłł prime-supported Halász inequality carries exactly the prime-density gain the generic estimates lack, and a fixed number of harmonics gives an order-one return gap throughout each fixed subcritical range `|t|<=exp(X_a^(3/2-delta))`.
+NB-212 shows that the harmonic plateau is not what creates this log-squared scale once the full contour estimate is exposed. A **single fixed nonnegative smooth full-von-Mangoldt barycenter** inside the actual Euler shell already gives the same corridor directly: small positive Euler defect forces that barycenter close to its mass, while the Vinogradov--Korobov contour gives a strict nonzero-frequency contraction.
 
-NB-211 removes the fixed-`delta` quantifier boundary by reopening the same Halász proof at the full Vinogradov--Korobov zero-free width. The resulting off-diagonal factor is epsilon-free, and the order-one positive-return gap now holds uniformly through the moving corridor
+The remaining method boundary is now the prefactor in the source-faithful contour estimate. If the normalized error has shape
 
-`log |t| <= kappa_* X_a^(3/2)/(log X_a)^2`.
+`L(Q) exp(-c X/(Q^(2/3)(log Q)^(1/3)))`,
 
-This strictly exceeds every fixed `X_a^(3/2-delta)` scale. It still stops before the Ford corridor `X_a^(3/2)/sqrt(log X_a)` by a factor `(log X_a)^(3/2)`. At the Ford scale the zero-free contour supplies only constant exponential saving, so the polynomial prime-correlation prefactor can no longer be absorbed. The remaining boundary is therefore not prime sparsity or a hidden fixed epsilon; it is the actual off-diagonal geometry of the prime correlation kernel.
+then NB-212 proves the phase diagram: every polynomial prefactor `L(Q)=Q^(A+o(1))`, however small `A>0`, forces the same `X^(3/2)/(log X)^2` corridor; a polylogarithmic prefactor would reach `X^(3/2)/(log X)^(1/2+epsilon)` for every fixed `epsilon>0`; a bounded prefactor would permit Ford-scale access `X^(3/2)/sqrt(log X)` in principle. This is a method theorem, not a claim that the stronger source estimate exists.
 
-The live source-side question is now precise: exploit the fact that the forced large values occur on the phase-pinned arithmetic progression `t,2t,...`, or find another prime-specific correlation estimate that removes part of the remaining log-power gap to Ford. Increasing harmonic count inside the same inequality or invoking another generic large-value theorem is not responsive to the boundary isolated by NB-211.
+The live source-side question is therefore more precise than “use more harmonics” or “improve the prime large-value theorem”: can the full smoothed von-Mangoldt correlation be proved with a genuinely subpolynomial, ideally bounded, `Q`-prefactor at the needed Vinogradov--Korobov displacement? Any proposed improvement should state exactly which contour/logarithmic-derivative factor is removed and how uniformity in the coupled `X,Q` regime is preserved.
 
-A separate destination theorem is still load-bearing. One must show that a Nyman approximant resolving the target must realize the positive-return condition used by this source analysis, or identify the correct destination-coupled source condition if positivity is too restrictive. Signed/complex synthesis remains a genuinely different branch because cancellation can move between phase sectors and destroys the monotone occupancy argument.
+A separate destination theorem remains load-bearing. One must still show that a Nyman approximant resolving the target must realize the positive-return condition used by this source analysis, or identify the correct destination-coupled source condition if positivity is too restrictive. Signed/complex synthesis remains a different branch because cancellation can move between phase sectors and destroys the monotone positive-source implication.
 
-## Keep moving-complexity uniformity, source geometry and destination conditioning explicit
+## Keep moving-complexity uniformity, source representation and contour prefactor explicit
 
-The relevant currencies now include source mass, requested return tolerance, integer-cell occupancy, harmonic-window width, moving derivative order, zero-free contour width, prime-correlation polynomial prefactor, large-value multiplicity and correlation across the prime-harmonic plateau. NB-206 warns that an estimate excellent at each fixed complexity may become useless on a coupled diagonal. NB-207 shows that avoidable window losses should be removed before interpreting a logarithmic deficit as arithmetic. NB-210 shows that generic support-density losses can disappear under a source-matched theorem. NB-211 adds that even a published fixed-epsilon exponent may be only a proof-presentation boundary if the underlying contour admits uniform diagonalization.
+The relevant currencies now include source mass, requested return tolerance, integer-cell occupancy, moving derivative order, zero-free contour width, the exact prefactor multiplying the contour saving, and whether the observable is prime-only or the full von-Mangoldt source. NB-210 shows that a source-matched theorem can remove a generic support-density loss. NB-211 shows that a fixed-epsilon exponent can disappear when the proof is diagonalized at the natural contour width. NB-212 adds that an apparently essential harmonic/prime-only representation can also be removed: the same corridor is already visible in one smooth full-source scalar.
 
-Any continuation should therefore state the simultaneous `a_T`--`T`--complexity regime, preserve constants through moving parameters, and compare the forced plateau with a source-matched theorem in the same normalization. The next technical bottleneck is the phase-sensitive prime off-diagonal at heights where Vinogradov--Korobov gives only constant exponential saving. Only after that source theorem is established should its cost be transferred to the Nyman destination.
+Any continuation should therefore work from the source-faithful barycenter or an equally faithful observable, retain all dependence on `Q=log(10+|t|)`, and measure progress by the growth class of the prefactor rather than by a small change in a polynomial exponent. Only after that source theorem is established should its cost be transferred to the Nyman destination.
