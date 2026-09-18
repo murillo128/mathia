@@ -11,6 +11,7 @@ based_on:
   - research/visual_exploration/findings/VIS-286-wang-large-source-diagonal-linearizes.md
   - research/visual_exploration/findings/VIS-287-wang-fixed-power-source-escape-linear.md
   - research/visual_exploration/findings/VIS-288-wang-fixed-power-residual-h-frontier.md
+  - research/visual_exploration/findings/VIS-289-wang-fixed-power-residual-o-h.md
 ---
 
 # Does Wang packet localization preserve the fixed-source diagonal profile without manufacturing strip gain?
@@ -35,50 +36,56 @@ Wang's Proposition 2.6 gives uniformly
 
 `(2*pi/(H L)) F_I(T^beta)=beta+o(1)`.
 
-`VIS-288` now extracts the next scale from the same complete error budget. After subtracting Wang's full main term,
+`VIS-288` first confined every fixed-power residual above the linear source law to `O(H)`. `VIS-289` identifies the apparent bare `O(H)` floor in Wang's proof: it comes from the coarse estimate `sum a_n^2=log x+O(1)`. Standard prime-number-theorem precision gives instead
 
-`R_beta(T)=F_I(T^beta)-(H/(2*pi))(L^2 T^(-2 beta)+beta L)=O(H)`
+`sum a_n^2=log x+o(1)`,
 
-uniformly on every such panel, and all explicit source-dependent error terms are actually `o(H)`. Since the `L^2 T^(-2 beta)` main term is itself `o(H)`, one also has
+so all remaining proof terms are `o(H)` on a fixed compact power panel. Therefore
 
-`F_I(T^beta)-(H beta L)/(2*pi)=O(H)`.
+`F_I(T^beta)-(H beta L)/(2*pi)=o(H)`
 
-Therefore every fixed-power residual scale strictly between `H` and `HL` is already excluded by the published theorem. The first unresolved fixed-power scale is `H` itself.
+uniformly for `beta in [beta_0,beta_1]`.
+
+The fixed-power branch is consequently closed through the `H` scale. Any residual mechanism must either live strictly below `H` or leave the fixed compact exponent regime.
 
 ## Research question
 
-Can the bare `O(H)` remainder in Wang's fixed-power formula be sharpened enough to expose or eliminate a genuine source-dependent `H`-scale profile after the linear baseline is removed?
+Can a genuinely smaller-than-`H` fixed-power residual be isolated with a quantitative refinement that carries source-dependent arithmetic information, or does the fixed-power statistic collapse completely to the known linear source law at every useful scale?
 
 Alternatively, can a source family approaching a true boundary not covered by one fixed exponent panel — `beta(T)->0`, a regime approaching the admissible source ceiling, or deliberately singular packet normalization — produce information not already contained in the compact-source and fixed-power controls?
 
 ## Why it may matter
 
-The source-localization thread has now removed the obvious ways to manufacture a gain and has also removed an entire range of possible residual scales. Compact localization is a bounded projection, the isolated source profile has no endpoint singularity after forced baselines are removed, the complete statistic is linear at `HL` scale on fixed power panels, and every remaining fixed-power deviation is at most `O(H)`.
+The source-localization thread has removed the obvious ways to manufacture a gain and progressively closed the complete fixed-power statistic from its leading `HL` profile through the `H` scale. Compact localization is a bounded projection, the isolated source profile has no endpoint singularity after forced baselines are removed, and the complete statistic satisfies
 
-A positive result must therefore refine the actual theorem floor or enter a genuinely nonuniform boundary regime. Replotting, renormalizing, or packet-reweighting the same fixed-power statistic cannot create a mesoscopic `H a(T)` signal with `a(T)->infinity` that Wang's estimate already rules out.
+`F_I(T^beta)=(H beta L)/(2*pi)+o(H)`
+
+on every pre-fixed compact exponent panel inside `(0,theta)`.
+
+A positive result must therefore refine the theorem substantially below `H` or enter a genuinely nonuniform boundary regime. Replotting, renormalizing, or packet-reweighting the same fixed-power statistic cannot resurrect an `H`-scale source signal already removed by the strengthened mean-square input.
 
 ## Decisive test
 
 Choose **one** remaining regime before inspecting its signal.
 
-For the fixed-power branch, identify the source of the bare `O(H)` term in Wang's proof and determine whether its contribution to
+For a sub-`H` fixed-power test, derive an explicit quantitative remainder for
 
-`F_I(T^beta)-(H beta L)/(2*pi)`
+`sum_n a_n^2-log x`
 
-admits a uniform `o(H)` estimate or a source-dependent `H`-scale asymptotic on one predeclared compact `beta` panel. A useful positive result must produce a term not already swallowed by the current `O(H)` bound; a useful negative result should show that the load-bearing `O(H)` contribution is source-independent or can be sharpened below `H`.
+and propagate it together with every `D_x`, `B_x`, `E_x`, localization, and cross-term error in Wang's proof. A candidate source-dependent term is interesting only if it dominates the complete resulting error envelope uniformly on one predeclared compact `beta` panel and is not a repackaging of the explicit gamma or prime-power diagonal baselines.
 
-For a boundary test, state the source law and normalization explicitly and verify that it lies outside the compact exponent panel proved in `VIS-287`–`VIS-288`. Do not let Wang's fixed theorem parameter `lambda<theta` drift with `T` without a new uniformity proof. At `q->0`, retain the exact `VIS-285` baseline; near the source ceiling, rederive the load-bearing localization and mean-value errors rather than extrapolating the compact-panel formula.
+For a boundary test, state the source law and normalization explicitly and verify that it lies outside the compact exponent panel proved in `VIS-287`–`VIS-289`. Do not let Wang's fixed theorem parameter `lambda<theta` drift with `T` without a new uniformity proof. At `q->0`, retain the exact `VIS-285` baseline; near the source ceiling, rederive the load-bearing localization and mean-value errors rather than extrapolating the compact-panel formula.
 
-Kill the direction if the proposed effect is reproduced by the known linear source main term, the explicit gamma term, Wang's `O(H)` theorem floor, or packet-norm amplification. A surviving effect must either sharpen that floor or occupy a boundary regime not covered by `VIS-283`–`VIS-288`.
+Kill the direction if the proposed effect is reproduced by the known linear source main term, the explicit gamma term, the sharpened `o(H)` fixed-power remainder, or packet-norm amplification. A surviving effect must occupy a quantitatively resolved sub-`H` scale or a boundary regime not covered by `VIS-283`–`VIS-289`.
 
 ## Evidence boundary
 
-`VIS-283`–`VIS-286` establish the compact-source diagonal/cross controls and both isolated-profile endpoint baselines. `VIS-287` establishes the leading normalized complete-statistic asymptotic on fixed exponent panels. `VIS-288` establishes only the consequence that the remaining fixed-power residual is uniformly `O(H)` and therefore cannot occupy any asymptotic scale strictly between `H` and `HL`.
+`VIS-283`–`VIS-286` establish the compact-source diagonal/cross controls and both isolated-profile endpoint baselines. `VIS-287` establishes the leading normalized complete-statistic asymptotic on fixed exponent panels. `VIS-288` localizes the previously unresolved theorem floor to `O(H)`. `VIS-289` uses standard prime-number-theorem precision inside Wang's own mean-square step to sharpen that fixed-panel residual to `o(H)`.
 
-None of these findings gives an `o(H)` remainder, an `H`-scale limiting profile, a theorem with `beta=beta(T)` approaching a boundary, or control for packet families whose total variation diverges. No source-threshold theorem, new pair-correlation theorem, off-critical-strip gain, RH criterion, or new arithmetic invariant is established here.
+None of these findings supplies a quantitative best sub-`H` rate, a nonzero sub-`H` limiting profile, a theorem with `beta=beta(T)` approaching a boundary, or control for packet families whose total variation diverges. No source-threshold theorem, new pair-correlation theorem, off-critical-strip gain, RH criterion, or new arithmetic invariant is established here.
 
 ## Research disposition
 
 Outcome so far: **narrowed**.
 
-The fixed-interior mechanism, both isolated diagonal endpoint singularities, the leading fixed-power escape, and every intermediate fixed-power residual scale above `H` are closed. Continued investigation is justified only at the theorem's `H`-scale remainder itself or at a true moving boundary where one fixed uniform exponent panel no longer applies.
+The fixed-interior mechanism, both isolated diagonal endpoint singularities, and the complete fixed-power branch through the `H` scale are closed. Continued investigation is justified only by a quantitatively controlled sub-`H` refinement or a true moving boundary where one fixed uniform exponent panel no longer applies.
