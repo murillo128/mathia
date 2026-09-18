@@ -21,6 +21,7 @@ based_on:
   - research/visual_exploration/findings/VIS-296-wang-relative-boundary-reduces-to-explicit-formula-remainder-mean.md
   - research/visual_exploration/findings/VIS-297-wang-boundary-remainder-mean-is-gamma-normalization.md
   - research/visual_exploration/findings/VIS-298-wang-gamma-recentering-removes-moving-h-barrier.md
+  - research/visual_exploration/findings/VIS-299-wang-pointwise-moving-ceiling-h-over-log-cubed.md
 ---
 
 # Does Wang packet localization preserve source information without manufacturing strip gain?
@@ -29,13 +30,21 @@ based_on:
 
 `VIS-283`--`VIS-291` isolate Wang's source channel and show that fixed-interior packet localization does not create new information: the complete statistic on compact power panels reduces to the linear source law plus the classical Korobov--Vinogradov arithmetic envelope. `VIS-292` and `VIS-293` then rule out two cheap escapes: the symmetric smoother has no exact blind frequency, while excluding all poles of the squared-von-Mangoldt source transform in `Re(s)>1/2` is already RH-equivalent.
 
-`VIS-294`--`VIS-297` progressively narrowed the apparent lower moving-source boundary. They separated absolute from relative resolution, isolated the finite relative crossover, and identified its remaining order-one mean as deterministic gamma normalization rather than new arithmetic.
+`VIS-294`--`VIS-298` close the apparent moving lower-source boundary. Exact gamma recentering removes the square-root-log `H` barrier and yields
 
-`VIS-298` now closes the **entire moving lower-source branch at absolute `H` resolution** under Wang's fixed theorem ceiling. Recombining the exact Landau decomposition before applying norm bounds gives, for every `x=x(T)->infinity` with `x<=T^lambda` and fixed `lambda<theta`,
+`F_I(x) = (H/(2*pi))[log x + (L-log(2*pi))^2/x^2] + o(H)`
 
-`F_I(x) = (H/(2*pi))[log x + (L-log(2*pi))^2/x^2] + o(H)`.
+for every moving `x->infinity` below one fixed exponent ceiling.
 
-The earlier `x~sqrt(L)` boundary was therefore a Cauchy--Schwarz/error-packaging artifact: the coarse terms `H sqrt(L)/x` and `H L/x^2` are not load-bearing once the explicit gamma and absolutely convergent right-half-plane zeta pieces are estimated according to their actual frequency structure.
+`VIS-299` now removes that fixed exponent gap as a **pointwise** obstruction. Re-running Wang's localization proof rather than substituting a moving theorem parameter shows that the same asymptotic holds whenever
+
+`x L^3 / H -> 0`.
+
+Equivalently, for `x=T^beta(T)`,
+
+`(theta-beta(T))L - 3 log L -> +infinity`.
+
+Thus `beta(T)` may approach `theta`; the first unresolved upper layer in the current proof is where the explicit localization remainder `O(xL^3)` itself reaches `H` scale, around `x asymp H/L^3`.
 
 ## Research question
 
@@ -47,32 +56,38 @@ For the **fixed-power real-axis source**, is there a property of
 
 strictly weaker than the RH-equivalent half-plane pole exclusion of `VIS-293`, that improves the generic Korobov--Vinogradov envelope and survives Wang's complete error budget?
 
-For the **upper source ceiling**, can Wang's source-uniform theorem be sharpened so that the admissible exponent approaches `theta` with `T`, rather than remaining below one fixed `lambda<theta`? Any such claim must prove the needed uniformity instead of silently letting the theorem parameter drift.
+For the **upper localization layer**, can the comparison
 
-A genuinely bounded source `x=O(1)` is not covered by `VIS-298`, but it is a different regime from the now-closed moving-source escape. It should be reopened only if it exposes information not already exhausted by the fixed-source findings `VIS-283`--`VIS-286`.
+`2*pi F_I(x) = integral_I |A(x,t)|^2 dt + O(xL^3)`
+
+be sharpened, recombined, or given a structured leading correction when `xL^3/H` is no longer negligible, especially near `x asymp H/L^3`? The question is now about interval-localization tails, not merely about allowing a fixed `lambda` to drift.
+
+A genuinely bounded source `x=O(1)` remains separate. A moving-support version of Wang's integrated Theorem 2.2 is also separate: `VIS-299` controls the pointwise source statistic and does not establish uniformity for a test function whose support changes with `T`.
 
 ## Why it may matter
 
-The lower-boundary thread no longer offers a cheap escape from the fixed-power negative controls. Neither `sqrt(log T)` nor `sqrt(log T/log log T)` marks a new moving arithmetic regime in the exact fixed-ceiling decomposition; all `x->infinity` are already resolved to `o(H)` after natural gamma recentering.
+The source-scale search space has been compressed substantially. Neither the moving lower boundary nor a fixed exponent gap below `theta` is a live pointwise obstruction. Any upper-source signal within Wang's present framework must now enter through the localization layer where the full-zero statistic is replaced by the interval-restricted explicit-formula energy, or through arithmetic information stronger than the generic PNT envelope.
 
-What remains is substantially sharper. A fixed-power advance must beat or structurally refine the genuinely arithmetic source envelope, while an upper-boundary advance must improve theorem uniformity itself. Either route would address information not removed by the normalization and frequency accounting already completed.
+This distinction prevents theorem-parameter bookkeeping from masquerading as mathematical structure. It also gives a concrete scale at which a further argument could matter: a gain over `O(xL^3)` would immediately enlarge the pointwise source window beyond `o(H/L^3)`.
 
 ## Decisive test
 
 For the fixed-power branch, state a concrete real-axis estimate or secondary expansion for `S(x)-log x`, derive it from arithmetic information strictly weaker than the pole exclusion of `VIS-293`, and propagate it through all `D_x`, gamma/zeta, localization, and cross-term errors. Kill the route if the gain is only a generic PNT substitution, smoothing attenuation, an RH-equivalent continuation assumption, or a term swallowed by another Wang remainder.
 
-For a near-ceiling branch, derive source-uniform estimates with a quantitatively tracked dependence on the gap between the source exponent and `theta`. A family with `beta(T)->theta` is admissible only after proving that every implied constant and localization error remains controlled in that moving regime. Kill the route if it merely substitutes a drifting `lambda(T)` into a theorem whose constants were proved only for fixed `lambda<theta`.
+For the upper branch, return to the proof of Wang's Lemma 2.4 and isolate the actual contribution of zeros outside `I` to `A-A_I` and to the energy difference. Test whether the `O(xL^3)` bound is saturated by an admissible configuration, whether its endpoint pieces admit cancellation or a deterministic correction, or whether a sharper dependence on `x,H,L` follows from the zero geometry already available. A valid advance must work directly in the moving range; do not infer it by inserting `lambda(T)` into a fixed-parameter theorem.
+
+Kill the upper route if the only improvement is available after assuming the desired pair-correlation or zero-distribution conclusion, or if the `H/L^3` layer is recreated by a matched admissible control with no arithmetic-specific content.
 
 Do not reopen a moving lower-source branch unless a new hypothesis invalidates the exact recombination of `VIS-298`; changing only the rate at which `x->infinity` is not such a hypothesis.
 
 ## Evidence boundary
 
-`VIS-283`--`VIS-298` establish reductions, negative controls, exact decomposition identities, normalization corrections, and the closure of the fixed-ceiling moving lower-source branch. They do **not** improve the Korobov--Vinogradov arithmetic input, control a genuinely bounded source through the same `o(H)` formula, or justify a source ceiling approaching `theta`.
+`VIS-283`--`VIS-299` establish reductions, negative controls, exact decomposition identities, normalization corrections, closure of the moving lower-source branch, and extension of the **pointwise** source asymptotic through every `x=o(H/L^3)`. They do **not** improve the Korobov--Vinogradov arithmetic input, control a genuinely bounded source by the same formula, evaluate the localization boundary `x asymp H/L^3`, or prove a moving-support version of Wang's integrated pair-correlation theorem.
 
-`VIS-298` also does not claim that Wang's theorem is optimal or that no other statistic can reveal lower-scale structure. It shows only that this particular moving-source route, for the complete Wang statistic under one fixed ceiling, has no unresolved absolute-`H` transition once its explicit pieces are recombined correctly.
+In particular, `VIS-299` identifies the first unresolved scale of the current localization proof; it does not prove that `H/L^3` is an intrinsic barrier of `F_I`.
 
 ## Research disposition
 
 Outcome so far: **narrowed further**.
 
-The moving lower-source branch is closed and should no longer consume research effort. The accepted clue remains live only for the fixed-power source-specific arithmetic question and the moving upper-ceiling uniformity question; bounded-source work is separate and needs an independently motivated residual target.
+The moving lower-source branch remains closed. The pointwise upper-ceiling branch is now reduced from a fixed exponent gap to the explicit `xL^3/H` localization layer. The accepted clue remains live for that localization question and for the separate fixed-power source-specific arithmetic question; bounded-source and moving-test-function questions require independently justified targets.
