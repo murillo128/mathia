@@ -2,7 +2,7 @@
 
 This file holds the current mathematical questions suggested by the durable Weil-positivity intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Find a non-scalar automorphic sign mechanism before critical positive closure collapses or squares the carrier
+## Find a non-scalar finite--archimedean sign mechanism before critical positive geometry collapses
 
 **Linked intuitions:** `MI-039-enriched-semigroups-inherit-obstructed-scalar-shadows-or-universal-lifts` through `MI-052-rankin-selberg-positive-grams-die-at-the-weil-half-density`.
 
@@ -14,20 +14,26 @@ WP-359 closes the fixed smooth-height repair, WP-360 shows the all-prime critica
 
 WP-362 tests the canonical scalar analytic completion. The Eisenstein Hecke Dirichlet series is exactly `zeta(s+ir)zeta(s-ir)`, and its completed central value is a modulus square. Taking the logarithmic derivative recovers the exact Mangoldt half-density on every prime power, but simultaneously imports the zeta divisor as poles and loses inherited positivity.
 
-WP-363 now shows that moving from a one-parameter scalar completion to the canonical **two-parameter Rankin--Selberg Gram** does not repair the critical sign. For `s>1`,
+WP-363 shows that moving from a one-parameter scalar completion to the canonical **two-parameter Rankin--Selberg Gram** does not repair the critical sign. For `s>1`,
 
 `K_s(r,u)=sum_n lambda_r(n)lambda_u(n)n^(-s)`
 
-is genuinely positive semidefinite and factors exactly into four zeta factors divided by `zeta(2s)`. At the Weil exponent `s=1/2`, the denominator pole forces the entire Gram kernel to vanish identically. Its first nonzero jet is
+is genuinely positive semidefinite and factors exactly into four zeta factors divided by `zeta(2s)`. At the Weil exponent `s=1/2`, the denominator pole forces the entire Gram kernel to vanish identically. Its first nonzero jet is entrywise nonnegative but indefinite, and the logarithmic derivative again exposes the desired linear Mangoldt half-density only after positivity has disappeared and the divisor has entered the meromorphic readout.
 
-`J(r,u)=|zeta(1/2+i(r+u))|^2 |zeta(1/2+i(r-u))|^2`,
+WP-364 closes the most canonical objection to that collapse: quotient out the common norm before continuation. The normalized projective overlap
 
-which is entrywise nonnegative but not positive semidefinite: choosing a critical zero on one diagonal and a nonzero off-diagonal gives a negative `2x2` determinant. The logarithmic derivative again exposes the desired linear Mangoldt half-density only after positivity has disappeared and the divisor has entered the meromorphic readout.
+`C_s(r,u)=K_s(r,u)/sqrt(K_s(r,r)K_s(u,u))`
 
-The direct level-one Hecke/Eisenstein positivity route is therefore classified more tightly than before. The problem is not merely scalarization: even a canonical non-scalar positive Rankin--Selberg kernel dies exactly at the critical exponent, and its first surviving infinitesimal layer has no Gram positivity. A viable continuation must couple finite arithmetic and archimedean/scattering data **before** the `1/zeta(2s)` diagonal factor or another positive square annihilates the critical carrier, and it must derive the sign independently of the divisor being constrained.
+cancels the universal `1/zeta(2s)` factor exactly for `s>1`, so projectivization genuinely removes WP-363's scalar zero without a hand-picked counterterm. But the critical continuation is
+
+`C_*(r,u)=F(r+u)F(r-u)/(F(0)sqrt(F(2r)F(2u)))`, `F(t)=|zeta(1/2+it)|^2`.
+
+Near any unconditional critical-line zero ordinate `gamma`, generic fixed `u` gives `|C_*(r,u)| -> infinity` as `r -> gamma/2` through regular points, violating the projective Cauchy--Schwarz bound `|C|<=1`. The Fubini--Study pullback gives the infinitesimal version: `g_*(r)=(log F)''(2r)-(log F)''(0) -> -infinity` near the same zero. Scalar Gamma/completion factors cannot repair either failure because projective geometry is invariant under nonzero scalar gauges.
+
+The direct level-one Hecke/Eisenstein positivity route is therefore classified more tightly than before. It is not enough to remove the critical scalar collapse by normalization or intrinsic projectivization: the continued cross-parameter geometry itself ceases to be Hilbert-positive. A viable continuation must change the **nonseparable finite--archimedean geometry before critical specialization**—for example through a source-forced orthogonal feature sector, boundary response, intersection/cohomological form, or genuinely noncentral operator coupling—and must derive its sign independently of the divisor being constrained.
 
 ## Keep arithmetic content, convergence category, critical survival and sign coercivity separate
 
-The current audit distinguishes finite Hecke algebra, nonconstant divisibility projections, smooth-orbit interference, strong all-prime completion, Eisenstein eigenline coherence, canonical Euler completion, Rankin--Selberg Gram positivity, critical collapse, first-jet indefiniteness and logarithmic-derivative divisor readout. Each stage retains some genuine arithmetic information, but none by itself supplies Weil positivity.
+The current audit distinguishes finite Hecke algebra, nonconstant divisibility projections, smooth-orbit interference, strong all-prime completion, Eisenstein eigenline coherence, canonical Euler completion, Rankin--Selberg Gram positivity, critical collapse, first-jet indefiniteness, projective scalar removal, projective overlap blowup, negative Fubini--Study continuation and logarithmic-derivative divisor readout. Each stage retains some genuine arithmetic information, but none by itself supplies Weil positivity.
 
-A proposal should therefore state where the critical `p^(-1/2)` or `(log p)p^(-1/2)` amplitude lives **before** positive closure, what completion/domain makes the object meaningful, which noncentral degrees of freedom survive at `s=1/2`, and what theorem fixes their orientation independently of the target RH sign. If the construction becomes a modulus square, a rank-one pullback, a `1/p` projection density, a kernel killed by `1/zeta(2s)`, or an indefinite first jet, it has crossed back into a classified nonselective closure.
+A proposal should therefore state where the critical `p^(-1/2)` or `(log p)p^(-1/2)` amplitude lives **before** positive closure, what completion/domain makes the object meaningful, which noncentral degrees of freedom survive at `s=1/2`, and what theorem fixes their orientation independently of the target RH sign. If the construction becomes a modulus square, a rank-one pullback, a `1/p` projection density, a kernel killed by `1/zeta(2s)`, an indefinite first jet, or a projective metric that turns negative at the critical specialization, it has crossed back into a classified nonselective closure.

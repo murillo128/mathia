@@ -1,25 +1,39 @@
 # MI-067 — Exact endpoints force a quantitatively superpolynomial common source cost
 
-**Evidence level:** exact synthesis from [MC-377](../../findings/MC-377-smooth-subspace-prime-frame-forces-superpolynomial-source-cost.md) and [MC-378](../../findings/MC-378-moving-smooth-frame-forces-iterated-log-source-cost-rate.md).
+**Evidence level:** exact synthesis from [MC-377](../../findings/MC-377-smooth-subspace-prime-frame-forces-superpolynomial-source-cost.md), [MC-378](../../findings/MC-378-moving-smooth-frame-forces-iterated-log-source-cost-rate.md), and [MC-379](../../findings/MC-379-rough-squarefree-terminal-block-lifts-moving-source-cost-ceiling.md).
 
 Let `P` be the common lower-prime source radical of an exact endpoint package at shell scale `y`, with source rank `R`. MC-377 proves the qualitative escape
 
 `log P / log y -> infinity`,
 
-so every fixed `A>0` eventually fails as an upper bound `P<=y^A`. MC-378 upgrades this from a fixed-parameter contradiction to a moving-parameter theorem. There are absolute constants such that `P<=y^A` is impossible whenever
+so every fixed `A>0` eventually fails as an upper bound `P<=y^A`.
 
-`A^2=o(R)` and `A 2^(C A)=o(log log y)`.
+MC-378 gives the first moving-parameter rate. Its generic smooth-modulus argument rules out `P<=y^A` when
 
-A concrete nonoptimized consequence is
+`A^2=o(R)` and `A 2^(C A)=o(log log y)`,
 
-`log P/log y >= c min{sqrt(R/log(R+2)), log log log y}`
+and yields, with a nonoptimized absolute constant,
 
-for some absolute `c>0` and all sufficiently large shells.
+`log P/log y >= c min{sqrt(R/log(R+2)), log log log y}`.
 
-The mechanism explains exactly where the rate comes from. Assuming `P<=y^A`, choose a roughness threshold of order `1/A`. Killing the incidence columns of source primes above that threshold and the moving exceptional-prime set costs only `O(A^2)` dimensions, leaving a mode space of dimension `R-O(A^2)`. Every surviving package character and pair product then has a smooth polynomial-size ambient modulus. The moving smooth-character estimate supplies a saving `sigma_A` no worse than exponentially small in `A`; choosing the Selberg cutoff proportionally to that saving keeps the diagonal cost controlled. Bombieri's frame inequality then gives an upper bound incompatible with the exponential normalized Gram eigenvalue forced by the exact endpoint partition.
+MC-379 shows that the `log log log y` analytic ceiling is not intrinsic to the endpoint source class. Assuming `P<=y^A`, remove source coordinates from primes above `y^(1/(32A))` and from primes below `2^(K A)`. The codimension cost is only `2^(O(A))`, while every surviving canonical source conductor is primitive, squarefree and rough from below. For the terminal squarefree block `Q`, the prime-local complete-sum estimate can then be multiplied before the final differencing root; the collision average costs only a factor of the form
 
-This changes the source-cost picture twice. MC-372--MC-376 describe conditional near-equality structure inside `P=y^(4+o(1))`, but MC-377 proves no exact endpoint inhabits any fixed-power regime. MC-378 now shows that the escape is not merely qualitative: within the current smooth-character/frame architecture the common radical must climb at least through an explicit iterated-log/rank-dependent exponent.
+`prod_(p|Q) (1+k/sqrt(p))`,
 
-The rate should not be mistaken for an intrinsic optimum. Its bottlenecks are visible: the rough-column codimension is quadratic in `A`, while the moving character saving deteriorates exponentially with the differencing depth. Improving either uniformity could strengthen the exponent; changing the endpoint representation could evade the common-radical tariff entirely.
+which roughness absorbs into a fixed negative power of `Q`. This avoids the generic moving-depth condition `k 2^k << log log Q` inherited by MC-378.
 
-**Boundary.** This is a source-realization obstruction, not a bound for `M(x)` and not an RH implication. It does not prove that the displayed lower bound is sharp, nor that every alternative endpoint architecture pays the same currency. What is now ruled out is broader and quantitative: an exact endpoint cannot be implemented by one common lower-prime radical whose exponent stays below the stated moving threshold.
+The resulting contradiction holds whenever
+
+`2^(C A)=o(R)` and `2^(C A) log log y=o(log y)`,
+
+so every exact endpoint package also satisfies
+
+`log P/log y >= c min{log(R+2), log log y}`
+
+for a possibly different absolute `c>0` and all sufficiently large shells.
+
+The MC-378 and MC-379 bounds are complementary rather than ordered. MC-378 retains a stronger `sqrt(R/log R)` rank-side scale in some regimes; MC-379 raises the source-specific analytic ceiling from `log log log y` to `log log y` but pays `2^(O(A))` small-prime pruning and final differencing costs. The current lower bound should therefore be read through the stronger theorem in the relevant `(R,y)` regime, not compressed to one universal displayed asymptotic.
+
+This sharpens the source-cost lesson: a generic theorem's moving-parameter tariff need not be the tariff of the actual source family. Here the endpoint incidence structure forces squarefree primitive conductors and permits an extra roughness projection; those source-specific facts materially improve the available cancellation estimate before the destination frame argument is applied.
+
+**Boundary.** These are source-realization obstructions, not bounds for `M(x)` and not RH implications. They do not prove either quantitative rate optimal, nor that every alternative endpoint representation pays a common-radical cost. What is ruled out is one exact endpoint architecture whose shared lower-prime radical remains below the stated moving thresholds.

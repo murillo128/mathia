@@ -1,37 +1,41 @@
-# MI-052 — Rankin--Selberg positive Grams die at the Weil half-density
+# MI-052 — Rankin--Selberg positive geometry fails at the Weil half-density even after projectivization
 
-**Evidence level:** exact synthesis from [WP-363](../../findings/WP-363-eisenstein-rankin-selberg-gram-collapses-at-critical-exponent-and-first-jet-is-indefinite.md). The Rankin--Selberg Euler factorization is classical; the Mathia content is the critical-survival/sign audit of this canonical positive kernel.
+**Evidence level:** exact synthesis from [WP-363](../../findings/WP-363-eisenstein-rankin-selberg-gram-collapses-at-critical-exponent-and-first-jet-is-indefinite.md) and [WP-364](../../findings/WP-364-projective-rankin-selberg-geometry-fails-at-critical-zeros.md). The Rankin--Selberg factorization and Fubini--Study geometry are classical ingredients; the Mathia content is the critical-survival/sign audit.
 
 For real spectral parameters `r,u` and real `s>1`, the Eisenstein Hecke coefficients give the genuine positive Gram kernel
 
 `K_s(r,u)=sum_n lambda_r(n)lambda_u(n)n^(-s)`.
 
-Its exact meromorphic factorization is
+Its exact meromorphic factorization contains four zeta factors divided by `zeta(2s)`. WP-363 shows that the denominator pole at `s=1/2` forces the whole Gram to vanish precisely at the Weil half-density. The first nonzero critical jet is proportional to
 
-`K_s(r,u)=zeta(s+i(r+u))zeta(s+i(r-u))zeta(s-i(r-u))zeta(s-i(r+u))/zeta(2s)`.
+`J(r,u)=F(r+u)F(r-u)`, with `F(t)=|zeta(1/2+it)|^2`,
 
-This is stronger than the one-dimensional scalar Eisenstein completion: cross-parameter arithmetic coherence is present before positivity, and the kernel is positive semidefinite in its convergence half-plane.
+and is not positive semidefinite: a critical zero can make one diagonal entry vanish while a generic off-diagonal entry remains positive. Taking the logarithmic derivative recovers the desired linear Mangoldt half-density only after the positive Gram category has collapsed and the zeta divisor has entered the meromorphic readout.
 
-The critical exponent destroys that advantage. At `s=1/2`, the pole of `zeta(2s)` forces
+WP-364 tests the strongest canonical scalar-removal repair. For `s>1`, projectivize the Hecke coefficient vectors and form the normalized overlap
 
-`K_(1/2)(r,u)=0`
+`C_s(r,u)=K_s(r,u)/sqrt(K_s(r,r)K_s(u,u))`.
 
-for every real `r,u`. The whole positive Gram collapses precisely where the Weil prime amplitude would have the desired half-density. Positivity does not merely square the coefficient here; the canonical Rankin--Selberg diagonal normalization annihilates the carrier.
+The common `1/zeta(2s)` factor cancels **identically**, so this is a genuine intrinsic quotient of Hilbert vectors rather than a hand-chosen renormalization. Its source-defined critical continuation is
 
-Renormalizing by the first nonzero `s`-jet does not preserve the cone. Up to the normalization used in WP-363,
+`C_*(r,u)=F(r+u)F(r-u)/(F(0)sqrt(F(2r)F(2u)))`.
 
-`J(r,u)=F(r+u)F(r-u)`, with `F(t)=|zeta(1/2+it)|^2`.
+Let `gamma` be any ordinate of a critical-line zero. For generic fixed `u`, the numerator remains nonzero while `F(2r)->0` as `r->gamma/2` through regular points. Hence
 
-Although every entry of `J` is nonnegative, `J` is not positive semidefinite. If `gamma` is a critical zero ordinate and `r=gamma/2`, then `J(r,r)=0`, while a generic `u` can make `J(r,u)>0`; the corresponding `2x2` principal determinant is negative. The first surviving infinitesimal layer is therefore not another hidden positive Gram.
+`|C_*(r,u)| -> infinity`,
 
-The logarithmic derivative shows where the desired arithmetic coefficient reappears:
+violating the necessary projective Gram bound `|C|<=1` on punctured neighborhoods of the zero ray, not merely at the singular point itself.
 
-`-d_s log K_s = 4 sum_n Lambda(n)n^(-s) cos(r log n)cos(u log n) - 2 sum_n Lambda(n)n^(-2s)`
+The infinitesimal projective geometry fails with the same sign. The Fubini--Study pullback for `s>1` is
 
-in the absolute-convergence region. Formally at `s=1/2`, the first term has exactly the linear Mangoldt half-density that the Weil criterion wants. But this readout is reached only after taking a logarithmic derivative of the collapsed kernel; meromorphic continuation imports the zeta divisor and the inherited Gram positivity is gone.
+`g_s(r)=partial_r partial_u log K_s(r,u)|_(u=r) >= 0`.
 
-The reusable lesson is that **non-scalar positivity is not enough; the positive object must survive the critical specialization in the same category that carries the linear arithmetic amplitude**. A canonical positive family can contain rich arithmetic correlations for `s>1` yet become identically zero at the target exponent, while its first nonzero renormalization loses positivity.
+After the common scalar has disappeared, the critical continuation becomes
 
-For the automorphic route, the remaining structural possibility must couple finite arithmetic to archimedean/scattering data before the `1/zeta(2s)` Rankin--Selberg diagonal factor, or replace this closure by a different source-forced positive/order structure whose critical limit remains nondegenerate and whose sign is not reconstructed from the target divisor.
+`g_*(r)=(log F)''(2r)-(log F)''(0)`.
 
-**Boundary.** This does not rule out all automorphic or higher-rank positivity mechanisms, all Maaß--Selberg remainder terms, or all renormalized kernels. It rules out reading the canonical level-one Eisenstein Rankin--Selberg Gram, or its first critical jet, as the missing Weil-positive object. No RH implication follows.
+If `gamma` has multiplicity `m`, then `(log F)''(t)=-2m/(t-gamma)^2+O(1)`, so `g_*(r)->-infinity` as `r->gamma/2`. This sign cannot be repaired by a smooth reparameterization, and scalar Gamma/completion factors are invisible because Fubini--Study geometry is gauge-invariant under `v_r -> a(r)v_r`.
+
+The reusable lesson is stronger than “non-scalar positivity must survive the critical specialization.” Even when the universal critical scalar collapse can be removed **canonically before continuation**, the inherited cross-parameter projective geometry can still lose its Hilbert inequalities at the target. A viable automorphic route must therefore alter the nonseparable finite--archimedean correlations themselves before the critical specialization, rather than normalize, complete or projectivize the bare Eisenstein coefficient family.
+
+**Boundary.** This does not rule out all automorphic/cohomological positivity mechanisms, genuinely enlarged feature spaces, Maaß--Selberg remainder structures or noncentral operator couplings. It rules out the canonical level-one Eisenstein coefficient Gram, its first critical jet, scalar completions and its intrinsic projectivization as the missing Weil-positive object. No RH implication follows.

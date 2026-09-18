@@ -1,6 +1,6 @@
-# MI-054 — One smooth full-Euler barycenter reaches the log-squared corridor, and ordinary primitivization does not improve its growth class
+# MI-054 — One smooth full-Euler barycenter reaches the log-squared corridor, and positive fixed-shell primitivization cannot escape it
 
-**Evidence level:** exact synthesis from [NB-212](../../findings/NB-212-smooth-euler-barycenter-saturates-the-log-squared-vinogradov-korobov-corridor.md) and [NB-213](../../findings/NB-213-absolute-mellin-primitivization-preserves-a-positive-power-vk-tariff.md), refining the representation used in [NB-211](../../findings/NB-211-vinogradov-korobov-prime-halasz-reaches-a-log-squared-diagonal-corridor.md).
+**Evidence level:** exact synthesis from [NB-212](../../findings/NB-212-smooth-euler-barycenter-saturates-the-log-squared-vinogradov-korobov-corridor.md), [NB-213](../../findings/NB-213-absolute-mellin-primitivization-preserves-a-positive-power-vk-tariff.md), and [NB-214](../../findings/NB-214-positive-shell-preconditioning-cannot-remove-the-mellin-reconstruction-tariff.md), refining the representation used in [NB-211](../../findings/NB-211-vinogradov-korobov-prime-halasz-reaches-a-log-squared-diagonal-corridor.md).
 
 NB-211 reaches an order-one positive-return gap by converting a small Euler defect into a phase-pinned plateau of large prime Dirichlet values and then applying a prime-supported Halász inequality. NB-212 shows that the same quantitative corridor is already visible before that reduction.
 
@@ -28,8 +28,18 @@ NB-213 shows that **ordinary Mellin primitivization does not change that growth 
 
 `X=Q^(2/3+o(1))`,
 
-so even a hypothetical `Q^(o(1))` pointwise envelope for `log zeta` yields a reconstructed prefactor `Q^(2/3+o(1))`. Any fixed number of ordinary primitive transfers similarly pays powers of `X` and remains in the positive-power class.
+so even a hypothetical `Q^(o(1))` pointwise envelope for `log zeta` yields a reconstructed positive-power prefactor.
 
-The next source theorem must therefore improve the **final reconstructed contour bound**, not merely replace the arithmetic transform by a smoother-looking primitive. A real escape must exploit cancellation between the primitive and `e^(iXv)` before taking absolute values, or change the observable so that source reconstruction does not repay the primitive gain through the carrier.
+NB-214 upgrades this from a calculation for one primitive/window to a profile-uniform obstruction. For any nonzero nonnegative `X`-dependent profile `h_X` supported in a fixed logarithmic shell `[0,Delta]`, with mass `m_X`, the primitive reconstruction kernel is
 
-**Boundary.** NB-213 is a method boundary, not a lower bound for the true oscillatory contour integral. Joint cancellation could still make the integral substantially smaller. The positive-return condition also remains only a source-side obstruction; a separate Nyman destination theorem must show that a successful approximant is forced into this positive source regime.
+`K_X(v)=i int_0^Delta (X+y)h_X(y)e^(ivy)dy`.
+
+Positivity forces a coherent central Fourier lobe on a fixed neighbourhood of zero, giving
+
+`||K_X||_1/m_X >= c_Delta X`.
+
+Thus rescaling, narrowing, drifting or otherwise reshaping a positive bounded-shell profile cannot precondition the normalized reconstruction below linear order in `X`. A formal factor intended to cancel the carrier would translate the physical source away from the fixed shell rather than improve the same observable.
+
+The next source theorem must therefore improve the **actual oscillatory reconstructed integral**, not merely the intermediate arithmetic transform or the positive shell profile. Within the nonnegative fixed-shell class, the remaining route is to exploit correlation between `log zeta`, `K_X` and the Mellin carrier before passing to an `L^infinity` envelope. A different route must genuinely leave that class, for example by using signed/complex source profiles whose moment cancellation is itself source-justified or by changing the physical shell geometry.
+
+**Boundary.** NB-214 is an operator-norm/method boundary, not a lower bound for the true zeta contour integral. Joint arithmetic cancellation can still beat the worst-case norm, and a growing shell is a different representation not covered by the fixed-support argument. The positive-return condition also remains only a source-side obstruction; a separate Nyman destination theorem must show that a successful approximant is forced into this regime.

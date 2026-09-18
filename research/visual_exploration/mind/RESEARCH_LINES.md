@@ -2,7 +2,7 @@
 
 This file holds the current mathematical questions suggested by the durable visual-exploration intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Resolve the mean explicit-formula remainder at Wang's relative lower boundary
+## Resolve the absolute-H lower boundary after removing deterministic gamma normalization
 
 **Linked intuitions:** `MI-029-fixed-margin-pair-correlation-accuracy-must-outrun-packet-conditioning` through `MI-039-wang-lower-source-crossover-is-resolution-dependent`.
 
@@ -20,16 +20,24 @@ VIS-295 shows that even this boundary depends on normalization. After subtractin
 
 whenever `x^2 log x/L -> infinity`. This extends below `sqrt(L)` to the current relative-error boundary `x^2 log x=O(L)`, of order `sqrt(L/log L)` up to slowly varying factors.
 
-VIS-296 resolves the bookkeeping exactly on the finite crossover `x^2 log x/L -> kappa in (0,infinity)`. After the gamma term is removed,
+VIS-296 reduces the finite relative crossover `x^2 log x/L -> kappa in (0,infinity)` to one normalized mean remainder,
 
 `R_gamma/(H log x)=1/(2pi)+Re Q_E(T,x)/(pi kappa)+o(1)`,
 
-where `Q_E=(x/H) integral_I E_x(t) dt` is the normalized mean of Wang's explicit-formula remainder. The apparently competing pure `B_x^2` error can be sharpened below the relative scale on power-short intervals, and the remaining propagated terms are also lower order. At this normalization the first unresolved order-one channel is therefore **one mean remainder**, not a generic collection of theorem errors.
+with `Q_E=(x/H) integral_I E_x(t) dt`. VIS-297 evaluates that remaining channel rather than discovering a new arithmetic transition:
 
-The lower-boundary problem is now concrete. Prove `Re Q_E(T,x)->0` uniformly on the crossover to extend relative linearization through it, or identify a nonzero limiting/oscillatory contribution and determine whether it is genuinely source-arithmetic rather than another removable explicit-formula baseline. The absolute-`H` crossover near `sqrt(L)` and the near-ceiling regime `x` approaching `T^theta` remain separate questions.
+`Re Q_E(T,x)=-log(2pi)+o(1)`.
+
+The contribution is the deterministic gamma-factor constant hidden by Wang's coarse baseline `log(t+2)/x`; the absolutely convergent right-half-plane zeta term has zero interval mean at this normalization, while pole and trivial-zero terms are negligible. Consequently
+
+`R_gamma/(H log x)=1/(2pi)-log(2pi)/(pi kappa)+o(1)`.
+
+Thus the finite relative crossover at `x^2 log x/L=Theta(1)` is a **baseline-normalization effect**, not evidence of a new prime-sensitive channel. Using the natural gamma normalization removes the only order-one mean left by VIS-296.
+
+The lower-boundary problem is now the genuinely harder absolute-`H` question near `x=O(sqrt(L))`: after all deterministic gamma terms are normalized exactly, can the remaining load-bearing errors in Wang's short-interval formula be sharpened or structurally resolved at absolute `H` scale? The near-ceiling regime `x` approaching `T^theta`, fixed-power real-axis source behavior and packet-conditioning questions remain separate and should not be inferred from the now-closed relative-mean calculation.
 
 ## Keep packet conditioning, source arithmetic, theorem uniformity, normalization and analytic continuation separate
 
 The current ledger separates packet total variation, support width, moving-test seminorm, source exponent, distance to the source boundary, requested output scale, prime-power source measure, smoothing multiplier, theorem-uniformity range, explicit-formula remainder and analytic domain of the source Dirichlet transform. Exact invertibility of the Green filter is not stable recovery, while strong smoothing is not information loss when the multiplier is nonzero.
 
-VIS-294--VIS-296 sharpen the normalization warning. The same nominal `HL/x^2` scale can mix a coarse deterministic replacement with a genuinely unresolved remainder channel; after the deterministic part is sharpened, only the normalized mean `Q_E` survives at the relative crossover. A useful next probe must therefore name the residual and requested scale explicitly rather than infer arithmetic structure from an error crossover itself.
+VIS-294--VIS-297 sharpen the normalization warning. The same nominal `HL/x^2` scale can mix a coarse deterministic replacement with a genuinely unresolved remainder channel. At relative resolution the only surviving mean remainder is now identified exactly as gamma normalization, so no source-selective conclusion should be attached to that crossover. A useful next probe must specify the residual **after** deterministic normalization and the requested absolute or relative output scale before treating an error boundary as new arithmetic structure.

@@ -1,6 +1,6 @@
-# MI-039 — Wang's lower-source crossover is resolution-dependent, and the relative boundary is a mean-remainder problem
+# MI-039 — Wang's lower-source crossover is resolution-dependent, and the relative mean is gamma normalization
 
-**Evidence level:** exact error-budget synthesis from [VIS-294](../../findings/VIS-294-wang-lower-moving-source-sqrtlog-crossover.md), [VIS-295](../../findings/VIS-295-wang-gamma-subtracted-residual-relative-crossover.md), and [VIS-296](../../findings/VIS-296-wang-relative-boundary-reduces-to-explicit-formula-remainder-mean.md), using the Wang/PNT inputs already audited in those findings.
+**Evidence level:** exact error-budget and explicit-formula synthesis from [VIS-294](../../findings/VIS-294-wang-lower-moving-source-sqrtlog-crossover.md), [VIS-295](../../findings/VIS-295-wang-gamma-subtracted-residual-relative-crossover.md), [VIS-296](../../findings/VIS-296-wang-relative-boundary-reduces-to-explicit-formula-remainder-mean.md), and [VIS-297](../../findings/VIS-297-wang-boundary-remainder-mean-is-gamma-normalization.md), using the Wang/PNT inputs audited in those findings.
 
 Write `H=T^theta` and `L=log T`. VIS-294 keeps Wang's explicit gamma contribution visible and shows that, for one fixed `lambda<theta`,
 
@@ -14,28 +14,30 @@ VIS-295 changes only the requested resolution. After subtracting the known gamma
 
 `R_gamma=F_I-(H/(2pi))L^2/x^2`.
 
-The same error budget gives
+Then
 
 `R_gamma=(H/(2pi))log x+o(H log x)`
 
-whenever `x^2 log x/L -> infinity`. Thus relative linearization survives strictly below `sqrt(L)`. The current relative boundary is `x^2 log x=O(L)`, roughly `sqrt(L/log L)` up to slowly varying factors.
-
-VIS-296 then resolves what actually survives at that relative boundary. On a moving family with
+whenever `x^2 log x/L -> infinity`, so relative linearization survives below `sqrt(L)`. VIS-296 identifies the finite relative boundary exactly: if
 
 `x^2 log x/L -> kappa in (0,infinity)`, 
 
-one has
+then
 
 `R_gamma/(H log x)=1/(2pi)+Re Q_E(T,x)/(pi kappa)+o(1)`,
 
-where
+where `Q_E(T,x)=(x/H) integral_I E_x(t) dt` is Wang's normalized explicit-formula remainder mean.
 
-`Q_E(T,x)=(x/H) integral_I E_x(t) dt`
+VIS-297 evaluates that channel. Refining the exact Landau/functional-equation decomposition gives
 
-is the normalized interval mean of Wang's explicit-formula remainder. The pure `B_x^2` contribution that had been hidden inside the coarse `HL/x^2` error is actually `o(H log x)` on the power-short interval, and the other propagated channels are lower order as well. The relative crossover is therefore no longer an undifferentiated error-budget boundary: **one mean remainder is the only currently unresolved order-one channel**.
+`Re Q_E(T,x)=-log(2pi)+o(1)`.
 
-This gives a precise discriminator. If `Re Q_E->0` uniformly on the crossover, the gamma-subtracted linear profile extends through the present relative boundary. If it does not, the next question is whether the surviving mean encodes genuine prime-power structure or only another classical explicit-formula term that can be extracted. Either outcome is more informative than treating `x~sqrt(L/log L)` as an intrinsic transition.
+The constant comes from the gamma factor omitted by the coarse baseline `B_x(t)=log(t+2)/x`; the absolutely convergent `zeta'/zeta(3/2-it)` term has vanishing interval mean and the pole/trivial-zero terms are negligible. Hence
 
-The two scales still answer different questions. `x~sqrt(L)` is where present errors stop being negligible compared with `H`; `x^2 log x~L` is where the gamma-subtracted residual first becomes sensitive to the mean remainder at its own `H log x` scale. Any lower-boundary claim must specify what has been subtracted and what output scale is supposed to reveal new information.
+`R_gamma/(H log x)=1/(2pi)-log(2pi)/(pi kappa)+o(1)`.
 
-**Boundary.** Neither `sqrt(L)` nor `sqrt(L/log L)` is proved sharp or intrinsic. VIS-296 does not determine the limit of `Q_E`, and it does not establish that the remainder mean is source-selective or new. A sharper explicit-formula analysis could still remove it. The near-ceiling source regime is separate, and no new zero-free region or RH implication follows from these normalizations.
+The finite relative crossover is therefore not a new source-arithmetic regime. It records a deterministic choice of baseline. Replacing the coarse logarithmic scale by the natural gamma-normalized one removes the apparent order-one remainder mean. The reusable diagnostic is stronger than before: **a moving error boundary is not evidence of new arithmetic until every deterministic explicit-formula normalization surviving at the requested output scale has been extracted.**
+
+The two lower scales still answer different questions. `x^2 log x~L` is now a resolved relative normalization crossover. The first unresolved absolute-`H` corridor remains `x=O(sqrt(L))`, where the current theorem's load-bearing errors are large enough that a sharper source-specific calculation could still matter.
+
+**Boundary.** Neither `sqrt(L)` nor `sqrt(L/log L)` is proved to be an intrinsic transition of the true statistic. VIS-297 closes the relative mean channel only; it does not resolve the absolute-`H` boundary, the near-ceiling source regime, the fixed-power real-axis branch, or any RH implication.

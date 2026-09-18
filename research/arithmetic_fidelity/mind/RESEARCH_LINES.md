@@ -18,7 +18,13 @@ AF-411--AF-412 then show that every **fixed** confluent order is eventually posi
 
 AF-416 closes the remaining fixed-shift diagonal loopholes. For `m=n+3` and `e^t=c/n`, the **full** normalized determinant converges locally uniformly on compact `c>0` intervals to the same positive Cauchy exponential. Exponent sets omitting `1`, one-singular-block sectors and the zero-singular-block sector are negligible at that scale. Thus `n e^t=Theta(1)` is a genuine competition scale but not a fixed-shift sign obstruction. Any large-order left-tail failure must leave every compact `n e^t` corridor or introduce another moving parameter.
 
-AF-417 identifies exactly such a parameter. For shifted derivative-Hankel minors on `x=c/n`, fixed excess degree `d` acquires the factor `e^{sigma d}` when `s_n/n -> sigma`; sublinear derivative depth preserves the old law, linear depth changes the effective Cauchy parameter, and superlinear depth destroys baseline dominance already in degree one. The live diagonal question is therefore two-parameter: can the complete partition sector be summed uniformly when `s_n~sigma n`, and do the omitted exponent/singular-block sectors remain negligible there? `CLUE-linear-derivative-shift-full-tail` records the first precise resummation test. Fixed-order compact positivity and the moving-depth problem must not be conflated.
+AF-417 identifies derivative depth as that extra parameter: for fixed excess degree `d`, `s_n/n -> sigma` multiplies the limiting Cauchy coefficient by `e^(sigma d)`. AF-418 shows that this fixed-degree compression is not uniform over the complete partition ensemble. For each fixed-width full-height rectangle `lambda=(r^n)`, with `a=c^2/(4pi^2)`,
+
+`(1/n) log C_(n,r) = r((s_n/n)-2) log n + r log a - (s_n/n) log(r!) + o(1)`.
+
+Hence every such rectangle is superexponentially negligible for `sigma<2`, while for `sigma>2` it diverges in absolute value for every fixed `a>0`; no AF-415-style absolute domination can control the full tail there. At the critical ratio `sigma=2`, the coarse variable `s_n/n` is itself insufficient: if `tau_n=((s_n/n)-2)log n -> tau`, then `(C_(n,r))^(1/n) -> e^(r tau)a^r/(r!)^2`. In particular, for `s_n=2n` the single column `(1^n)` already grows exponentially when `c>2pi`.
+
+The live question is therefore regime-dependent. For `sigma<2`, can one prove a shape-uniform absolute majorant over the complete partition family and then recheck the omitted determinant sectors? For `sigma>=2`, any survival of the fixed-degree candidate `exp(-e^sigma c^2/(4pi^2))` must come from a genuinely signed global cancellation or resummation mechanism; fixed-degree convergence and absolute Schur domination cannot establish it. At `sigma=2`, any such statement must track at least the finer critical variable `tau_n`, because AF-418 proves that growing sectors retain information erased by the limit `s_n/n -> 2`.
 
 ## Match physical locality to source-density and certificate scales
 
