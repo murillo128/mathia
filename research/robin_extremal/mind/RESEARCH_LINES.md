@@ -16,17 +16,21 @@ RE-205--RE-208 show that ordinary primes can pay a substantial part of that cont
 
 The `1/2` ceiling there is a limitation of the absolute-variation/KV realization, not a proved source-rigidity threshold.
 
-RE-209 supplies the first representation-independent converse inside the same separated ordinary-prime architecture. Integrating the spectral-gap test one level further forces a large exponentially weighted cumulative primitive, which is exactly a signed prime-count prefix after the arithmetic pullback. Any repair that hides the interval must create a Chebyshev-prefix excursion at least of size
+RE-209 supplies the first representation-independent converse inside the same separated ordinary-prime architecture. Integrating the spectral-gap test one level further forces a large exponentially weighted cumulative primitive, which is exactly a signed prime-count prefix after the arithmetic pullback. RE-210 then keeps the exact first-sidelobe geometry of the same sinc-power test instead of replacing it by the crude `1/x` envelope. The weighted-prefix rate improves from `1/e` to
 
-`Q^(-1/2) exp(H T_Q/e)`
+`gamma_* = 0.5979019108...`,
 
-relative to scale. Preserving every fixed KV envelope therefore requires, for `T_Q=c log Q`,
+so any repair preserving every fixed KV envelope must satisfy
 
-`c<e/(2H)`.
+`(1/2 log Q - gamma_* H T_Q)/V(Q) -> +infinity`.
 
-For `H=log 8` this universal ceiling is `0.6536086...`. The vertical continuum is thus a genuine **two-sided logarithmic-height problem**: hiding is constructed below one positive constant and impossible above another, with a large quantitative gap still open.
+For `T_Q=c log Q` and `H=log 8`, the universal ceiling is therefore
 
-The high-value question is now to close or structurally explain that gap. One direction is constructive: improve the repair geometry without violating integer multiplicities and KV prefix control. The opposite direction is coercive: strengthen the weighted-primitive lower bound or use additional arithmetic structure to push the necessary ceiling down. A third possibility is to leave the separated-repair architecture entirely and prove that any such escape changes the physical source class or destination effect.
+`c<1/(2 gamma_* H)=0.4021548838...`,
+
+improving the previous `0.6536086...` ceiling without changing the source assumptions. The vertical continuum remains a genuine **two-sided logarithmic-height problem**: hiding is constructed below `0.0289079...` and impossible at or above `0.4021549...` within the fixed-gap ordinary-prime `{0,1,2}` architecture.
+
+The high-value question is now to close or structurally explain this still-large quantitative gap in the correct physical currency. On the coercive side, determine or tightly bound the extremal compact-support test constant for the weighted primitive rather than lose information in a convenient kernel. On the constructive side, replace the coefficient-heavy one-sided synthesis by a source-aware repair with directly controlled signed weighted prefixes, not merely controlled absolute variation. A third possibility is to leave the separated-repair architecture entirely and prove that any such escape changes the physical source class or destination effect.
 
 ## Keep exact identification, stable inversion and continuum source cost distinct
 
