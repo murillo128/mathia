@@ -12,14 +12,22 @@ PC-344--PC-346 sharpen that closure distributionally. The full-shell tempered Me
 
 ## Test nonlinear path information without confusing faithfulness with zero selection
 
+**Linked intuition:** `MI-045-reciprocity-closed-signature-is-abelian-trivial-and-rank-two-at-first-lie-level`.
+
 PC-347--PC-348 move outside the finite linear class. Finite radial-flux Chen truncations remain cyclotomic/finite-level objects, but the **full** radial Chen signature is faithful to the shell path and its abelianization recovers the Mangoldt shell data. This is genuine information beyond any fixed finite linear Mellin lift: the infinite iterated-integral object can reconstruct the underlying radial path.
 
-Faithfulness is nevertheless only a source-identification theorem. It does not by itself distinguish the Riemann zero configuration or create a sign/positivity law. The high-value question is whether a nonabelian quotient, finite but source-forced signature family, or structural relation among iterated integrals has a destination theorem that is not equivalent to reconstructing the full Mangoldt source and then reapplying the classical explicit formula.
+PC-349 tests whether cyclotomic reciprocity supplies the missing selective structure when that path is closed by its forced exterior asymptotic ray. The result is sharply negative at the first two structural levels. The closed signature has trivial abelianization, so every commutative character and finite-dimensional determinant sees the identity. Its first nonzero Lie term is a decomposable antisymmetric area matrix of rank at most two,
 
-A useful proposal must therefore sit between two closure extremes. A fixed finite Chen level is too algebraically restricted, while the complete signature is so informative that source recovery becomes tautological. The missing object would be an intermediate nonlinear invariant whose sufficiency is arithmetically forced but whose information content is not already complete source reconstruction.
+`A_mn = zeta(2) phi(m) phi(n) (g_n-g_m)`,
+
+with `g_n=mu(rad n) rad(n)/n^2`. The rank-two collapse is kinematic for any reciprocal path with one asymptotic direction; cyclotomic arithmetic merely evaluates the remaining moment vector explicitly.
+
+This removes two tempting intermediate readouts. Closing by inversion does not turn the faithful signature into a useful commutative scattering determinant, and the first nonabelian correction still carries only a universal rank-two defect. Moreover every fixed higher homogeneous coefficient remains in the classical cyclotomic regularized-holonomy/multiple-polylogarithm setting. Merely incrementing Chen degree one fixed level at a time is therefore not yet a new mechanism.
+
+The surviving question is narrower: can **unbounded or conductor-coupled noncommutative depth** support a source-forced quotient or relation whose destination theorem is neither a fixed-level cyclotomic identity nor complete Mangoldt-path reconstruction? Such a proposal must specify the quotient and zero-sensitive destination before crediting the extra depth.
 
 ## Keep source recovery, nonlinear completeness and zero selection separate
 
-Prime Circle now exhibits both linear and nonlinear completeness phenomena. Full-shell finite-measure Mellin data collapses to the universal zeta factor; the full Chen signature reconstructs the radial path. Neither statement is a new RH mechanism. The next route should state the zero-sensitive destination first, identify exactly what quotient of source/path information it needs, and prove that the proposed finite or structured nonlinear observation retains that quotient while matched controls do not.
+Prime Circle now exhibits linear completeness, nonlinear completeness and a low-depth inversion no-go. Full-shell finite-measure Mellin data collapses to the universal zeta factor; the full Chen signature reconstructs the radial path; reciprocity closure then kills the entire abelian channel and leaves only a rank-two first Lie defect. None of these statements is a new RH mechanism.
 
-More spectral richness, larger matrices, higher Chen depth or exact source reconstruction count only when the surviving invariant is independently coupled to the Riemann zero restriction. Otherwise the construction has improved representation fidelity without producing a new mathematical discriminator.
+The next route should state the zero-sensitive destination first, identify exactly what noncommutative quotient of source/path information it needs, and prove that the proposed growing-depth observation retains that quotient while matched controls do not. More spectral richness, larger matrices, higher fixed Chen depth or exact source reconstruction count only when the surviving invariant is independently coupled to the Riemann zero restriction. Otherwise the construction has improved representation fidelity without producing a new mathematical discriminator.

@@ -10,17 +10,17 @@ The fidelity results separate exact discriminator survival from finite observati
 
 ## Move from fixed-order tail closure to the increasing-order diagonal
 
-**Linked intuitions:** `MI-043-support-scale-interaction-components-bound-effective-relational-arity` through `MI-053-first-harmonic-perturbation-makes-the-order-five-right-tail-effective`.
+**Linked intuitions:** `MI-043-support-scale-interaction-components-bound-effective-relational-arity` through `MI-054-signed-plancherel-sectors-make-reciprocal-order-tail-genuinely-nonuniform`.
 
 AF-403--AF-405 reduce fixed-order strict translation positivity to the complete confluent flag and the Toda recursion. For the Euler-log kernel the flag is strictly positive through order four, so the first possible failure is at order five. AF-408--AF-410 made that first gate effective: with `A_4=4q-(log R_4)''`, one has `A_4>0` for `t<=-14` and for `t>=4`; the order-five problem is therefore compact on `[-14,4]`.
 
 AF-411--AF-412 change the larger frontier. The first-harmonic factorization on the right and the logarithmic-germ expansion on the left extend beyond `m=5`: **for every fixed confluent order `m`, `H_m(t)` is eventually positive in both tails**. Consequently any sequence of negative determinants with `|t|->infinity` must also have `m->infinity`. Escaping-tail failure is no longer a fixed-order phenomenon.
 
-AF-413 identifies the first nontrivial scale of that variable-order problem on the left. The exact leading coefficient of the left-tail determinant has Barnes-`G`/zeta structure and its root-normalized size is asymptotic to `m e^t/(pi e^(3/2))`. Thus the natural double-scaling window is
+AF-413 identifies the first nontrivial scale of that variable-order problem on the left. The exact leading coefficient of the left-tail determinant has Barnes-`G`/zeta structure and its root-normalized size is asymptotic to `m e^t/(pi e^(3/2))`, so the natural diagonal is `m e^t=Theta(1)`.
 
-`m e^t = Theta(1)`.
+AF-414 proves that this is a **genuine competition scale**, not merely a dimensional balance of the leading term. Inside the same double-rank-two Cauchy--Binet sector, every fixed excess partition `lambda` has a nonzero diagonal limit, with sign `(-1)^|lambda|` and Plancherel/hook weighting. The first competitor is already opposite-signed and remains order one relative to the AF-412 leading monomial. Summing each fixed excess degree gives the coefficients of the formal exponential `exp(-c^2/(4pi^2))`, but no uniform summation over growing partition degree is yet justified.
 
-This is a scale diagnosis, not a uniform sign theorem: AF-413 does not justify substituting `m=m(t)` into the fixed-order asymptotic. The accepted clue `CLUE-left-tail-diagonal-order-drift-scale` therefore carries the right next question: obtain a genuinely uniform large-order/small-`x` determinant or Toda asymptotic in that window, or find a counterexample showing that another scale controls the first sign failure.
+The accepted clue `CLUE-left-tail-diagonal-order-drift-scale` therefore now asks a sharper question. Control the growing partition tail, exponent families omitting the exceptional exponent `1`, and determinant sectors using fewer than two singular-block entries on `x=c/n`; only then can the full diagonal determinant asymptotic or sign be decided. A fixed-degree Plancherel limit is not a full determinant theorem.
 
 The fixed-order and variable-order questions should remain separate. Certifying `A_4>0` on `[-14,4]` would move the first bad order above five, but it would not address the diagonal `m->infinity`, `e^t->0` regime. Conversely, a diagonal obstruction would not invalidate the fixed-order tail theorems.
 
