@@ -1,7 +1,7 @@
 ---
 id: CLUE-left-tail-diagonal-order-drift-scale
 type: research-clue
-status: accepted
+status: resolved
 origin: research-watch
 target_line: arithmetic_fidelity
 based_on:
@@ -73,6 +73,11 @@ AF-413 proves only the exact coefficient and its large-order asymptotic. It does
 
 ## Research disposition
 
-Accepted. AF-414 first proved that `x=c/n` is a genuine nonuniformity scale inside the double-rank-two Cauchy--Binet sector: every fixed excess degree survives with a signed Plancherel profile and the degree-one correction has opposite sign. AF-415 now closes the previously open partition-tail interchange for the complete subfamily whose exponent set contains the exceptional exponent `1`: after normalization by the AF-412 leading term, that entire subfamily converges locally uniformly to the positive factor `exp(-c^2/(4 pi^2))`.
+Outcome: supported
 
-The clue remains unresolved because its decisive test concerns the **full** determinant. The load-bearing open terms are now narrower: exponent sets that omit `1`, and determinant sectors using only one or zero entries from the rank-two singular block, must still be controlled on the same `x=c/n` diagonal before a uniform full-determinant asymptotic or sign statement is justified.
+Resolved by:
+- [[research/arithmetic_fidelity/findings/AF-416-full-left-tail-diagonal-has-positive-cauchy-limit]]
+
+AF-416 carries the AF-415 exceptional-`1` resummation through the complete determinant. It proves that exponent sets omitting `1` are super-polynomially negligible relative to the exceptional baseline on `x=c/n`, and that the one- and zero-singular-block sectors vanish on the same scale. Consequently the normalized full determinant converges locally uniformly to `exp(-c^2/(4 pi^2))>0`.
+
+The result resolves this clue but does not prove all-order total positivity: any large-order left-tail obstruction must now escape every compact reciprocal-order corridor `nx=c` rather than arise on this natural balance scale.
