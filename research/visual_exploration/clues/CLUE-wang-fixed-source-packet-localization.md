@@ -16,95 +16,59 @@ based_on:
   - research/visual_exploration/findings/VIS-291-wang-fixed-power-korobov-vinogradov-envelope.md
   - research/visual_exploration/findings/VIS-292-wang-symmetric-smoothing-green-resolvent.md
   - research/visual_exploration/findings/VIS-293-wang-source-dirichlet-rh-half-plane.md
+  - research/visual_exploration/findings/VIS-294-wang-lower-moving-source-sqrtlog-crossover.md
 ---
 
-# Does Wang packet localization preserve the fixed-source diagonal profile without manufacturing strip gain?
+# Does Wang packet localization preserve source information without manufacturing strip gain?
 
 ## Observation
 
-`VIS-283` isolates the fixed-source coefficient-scale field energy after the exact gamma baseline is retained. On compact fixed physical-source windows, the signed prime/source cross is power-small after packet normalization, while the surviving `L^-2` arithmetic profile before packet projection is the positive diagonal quantity
+`VIS-283`--`VIS-286` isolate the fixed-source arithmetic profile, prove that bounded packet localization is only a bounded projection, and close both obvious endpoint singularities of the isolated diagonal profile. `VIS-287`--`VIS-291` then show that the **complete** Wang statistic on every pre-fixed compact power panel has the linear source law with a residual no larger than the standard Korobov--Vinogradov PNT envelope.
 
-`Q_gamma(x)=S_D(x)+C_Lambda/x^2`,
+`VIS-292` rules out an exact blind-frequency explanation from Wang's symmetric smoothing: on logarithmic source scale the kernel is a Green resolvent with nonvanishing Fourier/Mellin multiplier. `VIS-293` then shows that the Dirichlet transform of the squared-von-Mangoldt source equals `(log zeta)''` plus a holomorphic remainder on `Re(s)>1/2`; excluding all its poles there is already RH-equivalent.
 
-with `x=e^(2*pi*q)`.
+`VIS-294` narrows the lower moving-boundary escape. If `L=log T`, one fixed `lambda<theta` is retained, and
 
-`VIS-284` resolves the fixed-interior packet interface. Uniformly `L^1`-bounded packets are bounded projections of that profile, while Laplace-null localization loses arithmetic response linearly with support width unless total variation grows at least inversely with the width.
+`x/sqrt(L) -> infinity`, `x<=T^lambda`,
 
-`VIS-285` and `VIS-286` close the two obvious isolated-profile endpoint escapes: the left endpoint is analytic, while the large-source profile is the universal linear baseline `2*pi*q+o(1)` after prime-number-theorem partial summation.
+then
 
-`VIS-287` closes the leading complete-statistic fixed-power escape. For every fixed compact exponent panel
+`F_I(x)=(H/(2*pi))(L^2/x^2+log x)+o(H)`.
 
-`0<beta_0<=beta<=beta_1<theta`, `x=T^beta`,
-
-Wang's Proposition 2.6 gives uniformly
-
-`(2*pi/(H L)) F_I(T^beta)=beta+o(1)`.
-
-`VIS-288` confined every fixed-power residual above the linear source law to `O(H)`, `VIS-289` sharpened that to `o(H)`, and `VIS-290` made the improvement quantitative with a de la Vallée Poussin remainder.
-
-`VIS-291` propagates the stronger Korobov–Vinogradov prime-number-theorem scale through the same symmetric squared-von-Mangoldt coefficient sum and Wang's complete error budget. For some `c_0>0`, uniformly on every pre-fixed compact exponent panel,
-
-`F_I(T^beta)-(H beta L)/(2*pi)`
-` = O(H exp(-c_0 L^(3/5)(log L)^(-1/5)))`.
-
-This scale is inherited from generic unconditional prime-counting accuracy; it is not a detected residual of the pair-correlation statistic.
-
-`VIS-292` isolates the exact symmetric smoothing. With `u=log x`,
-
-`S(e^u)=K*mu`, `K(v)=e^(-2|v|)`,
-
-where
-
-`mu=sum_n [Lambda(n)^2/n] delta_(log n)`.
-
-The filter is distributionally invertible and its log-Fourier/Mellin multipliers have no zeros, so a sharper remainder cannot come from an exact blind frequency manufactured by the window.
-
-`VIS-293` now audits the analytic source itself. For
-
-`D(s)=sum_n Lambda(n)^2 n^(-s)`,
-
-one has in `Re(s)>1/2`
-
-`D(s)=(log zeta)''(s)+A(s)`
-
-with `A` holomorphic. Thus after removing the pole at `s=1`, holomorphy of `D` throughout `Re(s)>1/2` is equivalent to RH. The nonvanishing Wang Mellin multiplier preserves every off-critical pole. Therefore a proposed fixed-power escape based on simply proving a zero-free continuation for `D` is not cheaper source structure; it is RH itself in source coordinates.
+Thus `beta(T)=log x/L ->0` is not itself an uncontrolled regime. After retaining the explicit gamma term, the present theorem remains `o(H)`-accurate down to sources just above the `sqrt(log T)` scale. The first unresolved lower boundary at `H` resolution is therefore `x=O(sqrt(log T))`, not arbitrary vanishing `beta`.
 
 ## Research question
 
-Is there a **real-axis** arithmetic property of the weighted source `mu`, weaker than RH-equivalent half-plane holomorphy, that forces `S(x)-log x` below the generic Korobov–Vinogradov envelope and still survives Wang's complete remaining error budget?
+Two genuinely distinct routes remain.
 
-Alternatively, can a source family approaching a true boundary not covered by one fixed exponent panel — `beta(T)->0`, a regime approaching the admissible source ceiling, or deliberately singular packet normalization — produce information not already contained in the compact-source and fixed-power controls?
+First, at the lower source boundary `x=O(sqrt(log T))`, can the terms currently bounded by `H sqrt(L)/x` and `H L/x^2` be sharpened, recombined, or shown to have a structured limit after the exact gamma baseline is retained? Any surviving effect must be arithmetic rather than an artifact of the known two-term main profile.
+
+Second, is there a real-axis property of the weighted source `mu=sum Lambda(n)^2/n delta_(log n)`, strictly weaker than RH-equivalent half-plane holomorphy, that beats the generic Korobov--Vinogradov envelope and survives Wang's complete error budget?
+
+The upper source-ceiling branch is still separate because Wang fixes `lambda<theta`; nothing in the current findings permits `lambda` to drift toward `theta` with `T`.
 
 ## Why it may matter
 
-The source-localization thread has progressively removed the obvious ways to manufacture gain. Compact localization is a bounded projection, the isolated source profile has no endpoint singularity after forced baselines are removed, and the complete fixed-power statistic satisfies the unconditional Korobov–Vinogradov-scale envelope on every pre-fixed compact exponent panel inside `(0,theta)`.
+The thread has removed most inexpensive escape routes: fixed-interior packet localization, endpoint singularities, compact fixed-power source escape, a generic PNT improvement, an exact smoothing null, an unpriced analytic-continuation argument, and now the broad class of lower moving exponents whose source still satisfies `x>>sqrt(log T)`.
 
-The two most tempting structural explanations are now also controlled. `VIS-292` rules out exact cancellation created by the symmetric filter, while `VIS-293` shows that the first continuation half-plane of the remaining source transform already carries the zeta zero divisor itself. A useful fixed-power result must therefore be genuinely quantitative and weaker than merely assuming or proving the RH-equivalent analytic continuation one wants to exploit. The conceptually distinct alternative remains a moving boundary where the compact-panel theorem no longer supplies uniform control.
+What remains is substantially sharper. A lower-boundary result must address the actual theorem crossover where the present errors become `H`-scale, while a fixed-power result must expose genuinely source-specific real-axis arithmetic and state its analytic cost explicitly. Either outcome would distinguish new information from a repackaging of Wang's existing main terms and classical zeta input.
 
 ## Decisive test
 
-Choose **one** remaining regime before inspecting its signal.
+For the lower-boundary branch, predeclare a source law with `x=O(sqrt(L))`, retain the exact `H L^2/(2*pi x^2)` gamma term, and rederive the load-bearing pieces of Wang's Proposition 2.6 rather than substituting a moving exponent into a compact-panel asymptotic. Identify separately the origins of `H sqrt(L)/x` and `H L/x^2`; prove a sharper bound, cancellation, or limiting profile before interpreting any residual. Kill the branch if the observed `H`-scale shape is forced by the explicit gamma term or by the existing error majorants.
 
-For the fixed-power branch, state a concrete real-axis estimate or secondary expansion for
+For the fixed-power source branch, state a concrete real-axis estimate or secondary expansion for `S(x)-log x`, derive it from arithmetic information weaker than the RH-equivalent pole exclusion of `VIS-293`, and propagate it through every `D_x`, `B_x`, `E_x`, localization, and cross-term error. Kill the route if the gain is only another generic PNT substitution, high-frequency attenuation, an RH-equivalent continuation assumption, or a term swallowed by another Wang remainder.
 
-`S(x)-log x`
-
-and derive it from arithmetic information that is not simply the assertion that `D(s)-1/(s-1)^2` is holomorphic on `Re(s)>1/2`. Determine explicitly what zero-free region or continuation statement the proposed estimate would imply. Then propagate the estimate together with every `D_x`, `B_x`, `E_x`, localization, and cross-term error in Wang's proof. A source-dependent term is interesting only if it survives the complete sharpened envelope uniformly on one predeclared compact `beta` panel and is not a repackaging of the gamma/prime-power diagonal baselines.
-
-Kill the fixed-power route if the proposed gain is only another generic PNT substitution, follows only from high-frequency attenuation, assumes the RH-equivalent pole exclusion of `VIS-293`, is swallowed by another Wang error, or requires an unproved prime-counting improvement.
-
-For a boundary test, state the source law and normalization explicitly and verify that it lies outside the compact exponent panel proved in `VIS-287`–`VIS-293`. Do not let Wang's fixed theorem parameter `lambda<theta` drift with `T` without a new uniformity proof. At `q->0`, retain the exact `VIS-285` baseline; near the source ceiling, rederive the load-bearing localization and mean-value errors rather than extrapolating the compact-panel formula.
-
-Kill the direction if the proposed effect is reproduced by the known linear source main term, the explicit gamma term, the Korobov–Vinogradov PNT envelope, the nonvanishing symmetric smoothing, RH-equivalent source holomorphy, or packet-norm amplification. A surviving effect must either improve the complete fixed-power envelope for a strictly identified weaker arithmetic reason or occupy a boundary regime not covered by `VIS-283`–`VIS-293`.
+For a near-ceiling branch, keep Wang's theorem parameter fixed unless a new uniformity proof is supplied. A family with `beta(T)->theta` cannot be justified by silently letting `lambda` drift.
 
 ## Evidence boundary
 
-`VIS-283`–`VIS-286` establish the compact-source diagonal/cross controls and both isolated-profile endpoint baselines. `VIS-287` establishes the leading normalized complete-statistic asymptotic on fixed exponent panels. `VIS-288` localizes the previously unresolved theorem floor to `O(H)`. `VIS-289` sharpens that fixed-panel residual to `o(H)`. `VIS-290` derives a de la Vallée Poussin quantitative envelope, `VIS-291` sharpens it to the standard Korobov–Vinogradov PNT scale, and `VIS-292` proves that the symmetric Green/Mellin filter has no blind frequency.
+`VIS-283`--`VIS-294` establish only negative controls, exact reductions, and regime extractions. They do not prove an `x=O(sqrt(L))` asymptotic, show that the square-root-log crossover is intrinsic rather than a limitation of Wang's present bounds, improve the Korobov--Vinogradov PNT scale, or give a theorem with a source ceiling approaching `theta`.
 
-`VIS-293` proves only an exact analytic reduction: in `Re(s)>1/2`, the source transform is `(log zeta)''` plus a holomorphic remainder, so full pole exclusion there is RH-equivalent. It does **not** prove that the Korobov–Vinogradov real-axis envelope is optimal, classify all weaker source estimates, or rule out a useful bound that implies less than RH. None of these findings controls a theorem with `beta=beta(T)` approaching a boundary or packet families whose total variation diverges.
+The clue therefore remains `accepted`: the broad source-localization idea has been heavily narrowed, but the actual lower theorem crossover, a source-specific weaker real-axis estimate, and the moving upper ceiling remain unresolved.
 
 ## Research disposition
 
 Outcome so far: **narrowed**.
 
-The fixed-interior mechanism, both isolated diagonal endpoint singularities, the compact fixed-power branch through the strongest standard Korobov–Vinogradov-shaped PNT envelope, an exact blind-frequency explanation from Wang's smoothing, and an unpriced appeal to source-transform holomorphy are closed. Continued fixed-power investigation is justified only by a precisely quantified real-axis source estimate whose analytic cost is explicitly weaker than the RH-equivalent condition in `VIS-293` and which survives Wang's full error budget. Otherwise the remaining route is a true moving boundary where one fixed uniform exponent panel no longer applies.
+For the lower boundary, future work should begin at `x=O(sqrt(log T))`; sources with `x>>sqrt(log T)` are already controlled to `o(H)` after the explicit gamma term is retained. For the fixed-power branch, only a precisely priced source-specific real-axis improvement remains credible. Near the upper ceiling, a new theorem-uniformity argument is required.
