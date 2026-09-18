@@ -1,27 +1,29 @@
-# MI-045 — Reciprocity-closed signature is abelian-trivial and rank two at the first Lie level
+# MI-045 — Reciprocity closure is abelian-trivial and low-rank first, but all-depth faithfulness is still only source recovery
 
-**Evidence level:** exact synthesis from [PC-347](../../findings/PC-347-finite-radial-chen-truncations-are-cyclotomic-iterated-integrals.md) through [PC-349](../../findings/PC-349-inversion-closed-signature-has-rank-two-first-lie-level.md). Regularized holonomy and Chen-signature facts are classical; the Mathia content is the exact cyclotomic reciprocity closure and its resulting shell moments.
+**Evidence level:** exact synthesis from [PC-347](../../findings/PC-347-full-radial-chen-signature-is-faithful-to-mangoldt-shell-path.md), [PC-349](../../findings/PC-349-reciprocity-closed-signature-has-rank-two-first-lie-defect.md), and [PC-350](../../findings/PC-350-full-inversion-defect-is-faithful-via-two-by-two-fourier-decoder.md). The signature/Fourier-uniqueness ingredients are classical; the source/destination interpretation is specific to the Prime-Circle construction.
 
-The full radial Chen signature is faithful to the Prime-Circle shell path, but faithfulness alone leaves the zero-selection problem untouched. PC-349 asks whether the exact spatial reciprocity of the cyclotomic path supplies a more selective nonlinear object. Closing the interior radial path by the asymptotic ray forced by
+Reciprocity closure has two very different information scales. At low degree it destroys almost everything; at all depths it can recover almost everything again. Neither fact by itself supplies zero selection.
 
-`X_n(r)=phi(n) log r + X_n(1/r)`
+PC-349 shows that closing the radial path by its forced exterior reciprocity ray kills the entire abelian signature. The first nonzero Lie term is the rank-two antisymmetric area
 
-produces a canonical regularized holonomy rather than an arbitrary matrix model.
+`A_mn = zeta(2) phi(m) phi(n) (g_n-g_m)`.
 
-The closure removes more information than the open-path signature. Its complete abelianization is the identity, so every commutative character is trivial; after any finite-dimensional substitution the determinant is also one. The Mangoldt endpoint information visible in the abelianization of the open signature cancels against the reciprocity-forced exterior displacement.
+Thus commutative characters, determinants and first-order nonabelian summaries see only a universal low-rank defect.
 
-The first surviving noncommutative term is nevertheless extremely small in structural rank. Its Levy-area matrix satisfies
+PC-350 shows that this low-rank first layer is not an information ceiling. Use shell `2` as the canonical calibration coordinate and center
 
-`A_mn = phi(n) I_m - phi(m) I_n`
+`W_n(r)=X_n(r)-phi(n)X_2(r)`.
 
-with
+Reciprocity gives `W_n(r)=W_n(1/r)`. A `2x2` solvable evaluation of the complete regularized defect isolates
 
-`I_n = -zeta(2) mu(rad n) phi(n) rad(n)/n^2`.
+`V_n(lambda)=int_0^infinity (1+r)^lambda dW_n(r)`.
 
-Hence `A` is a single wedge of the totient vector with one scalar moment vector and has rank at most two. This collapse is not specifically cyclotomic: any reciprocal path with one asymptotic direction has the same decomposable first-Lie geometry. The arithmetic source only makes the remaining moment vector elementary Ramanujan data.
+For `lambda=i tau`, inversion rewrites this as the Fourier transform of a finite signed measure whose two pieces occupy disjoint intervals below and above `log 2`. Fourier uniqueness recovers `dW_n`, hence `W_n` and the original radial profile. In fact the repeated-shell-`2`/one-transverse subsector already suffices. The rank-two quantity from PC-349 is exactly the first derivative `V_n'(0)`; higher derivatives restore the transverse source information invisible at first order.
 
-Reciprocity therefore does not manufacture a zeta functional equation from path ordering at low depth. It annihilates the commutative channel and leaves a universal low-rank first Lie defect. Since every fixed higher homogeneous coefficient belongs to the classical cyclotomic regularized-holonomy/multiple-polylogarithm world, moving to another fixed Chen degree is not by itself evidence of a new RH mechanism.
+The matched-control audit is decisive. The same decoder works for any sufficiently regular reciprocal path family with one canonical calibration direction. All-depth faithfulness is therefore kinematic: it proves that the signature is a powerful source code, not that cyclotomic arithmetic has produced a Riemann-zero selector.
 
-The surviving possibility is qualitatively different: an **unbounded or conductor-coupled Lie-depth regime** together with a source-forced quotient or relation that remains selective after reciprocity closure. Such a mechanism would have to prove why growing depth retains zero-relevant structure without merely approaching the complete faithful signature and reconstructing the whole Mangoldt source.
+The reusable lesson is that **low-degree collapse and all-depth faithfulness can coexist**. One cannot infer source poverty from a small first Lie layer, but one also cannot infer arithmetic selectivity from eventual source reconstruction. The mathematically interesting regime lies between them: a strict quotient/invariant or growing-depth law that forgets generic reciprocal source freedom while retaining a destination-relevant arithmetic relation.
 
-**Boundary.** PC-349 closes only commutative/determinant readouts and the first nonzero Lie level. It does not classify the full free-Lie holonomy at growing depth, rule out source-forced relations among higher levels, or prove that every unbounded-depth quotient is equivalent to source reconstruction. No critical-line selector or RH consequence is established.
+For Prime Circle, every future noncommutative proposal should identify that quotient before crediting additional depth. If the proposed observable is faithful on the matched reciprocal control class, it has merely encoded the path more accurately. If it collapses to the abelian or first-Lie data, it is already classified. The open space is a proper intermediate invariant with an independent zero-sensitive theorem.
+
+**Boundary.** PC-350 proves injectivity for the complete regularized inversion defect under the stated reciprocity/calibration setup. It does not classify every quotient of that defect, every conductor-coupled depth regime, or every nonlinear destination map. Those remain possible only after matched-control selectivity is established.

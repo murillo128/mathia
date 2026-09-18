@@ -1,43 +1,17 @@
-# MI-039 — Wang's lower-source crossover is resolution-dependent, and the relative mean is gamma normalization
+# MI-039 — Wang's moving lower-source crossover disappears after exact gamma recentering
 
-**Evidence level:** exact error-budget and explicit-formula synthesis from [VIS-294](../../findings/VIS-294-wang-lower-moving-source-sqrtlog-crossover.md), [VIS-295](../../findings/VIS-295-wang-gamma-subtracted-residual-relative-crossover.md), [VIS-296](../../findings/VIS-296-wang-relative-boundary-reduces-to-explicit-formula-remainder-mean.md), and [VIS-297](../../findings/VIS-297-wang-boundary-remainder-mean-is-gamma-normalization.md), using the Wang/PNT inputs audited in those findings.
+**Evidence level:** exact error-budget and explicit-formula synthesis from [VIS-294](../../findings/VIS-294-wang-lower-moving-source-sqrtlog-crossover.md), [VIS-295](../../findings/VIS-295-wang-gamma-subtracted-residual-relative-crossover.md), [VIS-296](../../findings/VIS-296-wang-relative-boundary-reduces-to-explicit-formula-remainder-mean.md), [VIS-297](../../findings/VIS-297-wang-boundary-remainder-mean-is-gamma-normalization.md), and [VIS-298](../../findings/VIS-298-wang-gamma-recentering-removes-moving-h-barrier.md), using the Wang/PNT inputs audited in those findings.
 
-Write `H=T^theta` and `L=log T`. VIS-294 keeps Wang's explicit gamma contribution visible and shows that, for one fixed `lambda<theta`,
+Write `H=T^theta` and `L=log T`. The earlier lower-source analysis first exposed two apparent thresholds. Keeping Wang's coarse gamma baseline visible led to an absolute-`H` error wall near `x~sqrt(L)`, while subtracting that leading term moved the relative boundary to `x^2 log x~L`. VIS-296--VIS-297 then showed that the finite relative crossover was only the deterministic gamma constant hidden by the coarse baseline.
 
-`F_I(x)=(H/(2pi))(L^2/x^2+log x)+o(H)`
+VIS-298 completes the correction at absolute resolution. Returning to the exact Landau decomposition and recombining the gamma factor before estimating cross terms gives, for every fixed `lambda<theta` and every moving source `x=x(T)->infinity` with `x<=T^lambda`,
 
-uniformly through moving lower-source families satisfying `x/sqrt(L)->infinity` and `x<=T^lambda`. The apparent escape `beta(T)=log x/log T -> 0` is therefore too coarse: many vanishing-exponent families are already controlled to absolute `H` accuracy.
+`F_I(x)=(H/(2pi))[log x+(L-log(2pi))^2/x^2]+o(H)`.
 
-At that normalization, the current source-dependent errors `H L/x^2` and `H sqrt(L)/x` first reach `H` scale around `x~sqrt(L)`. This makes `sqrt(log T)` the first unresolved **absolute-`H`** lower corridor in the existing theorem, not a proved transition of the true statistic.
+Thus the `sqrt(log T)` absolute boundary was also an artifact of proof packaging. The terms that looked like `H sqrt(L)/x` and `H L/x^2` were not independent source errors: they came from placing a deterministic gamma contribution inside a coarse remainder and then applying Cauchy--Schwarz before exploiting its exact structure. The absolutely convergent right-half-plane zeta term is small at the required scale once `x->infinity`.
 
-VIS-295 changes only the requested resolution. After subtracting the known gamma term, put
+The reusable diagnostic is stronger than “normalize deterministic terms first.” **Before promoting a moving error wall to a candidate arithmetic transition, recombine every exact deterministic component that the proof split only for estimation convenience and re-evaluate the cross terms in their native frequency structure.** A threshold created by an inequality between artificial pieces need not survive in the original observable.
 
-`R_gamma=F_I-(H/(2pi))L^2/x^2`.
+For Wang's statistic, no moving lower-source branch remains under a fixed ceiling. Changing only the rate at which `x(T)->infinity` cannot reopen it. The genuine residual questions lie elsewhere: improve the fixed-power arithmetic source estimate with information weaker than the RH-equivalent half-plane condition, prove uniformity as the upper exponent approaches `theta`, or formulate a distinct bounded-source problem with its own destination-sensitive residual.
 
-Then
-
-`R_gamma=(H/(2pi))log x+o(H log x)`
-
-whenever `x^2 log x/L -> infinity`, so relative linearization survives below `sqrt(L)`. VIS-296 identifies the finite relative boundary exactly: if
-
-`x^2 log x/L -> kappa in (0,infinity)`, 
-
-then
-
-`R_gamma/(H log x)=1/(2pi)+Re Q_E(T,x)/(pi kappa)+o(1)`,
-
-where `Q_E(T,x)=(x/H) integral_I E_x(t) dt` is Wang's normalized explicit-formula remainder mean.
-
-VIS-297 evaluates that channel. Refining the exact Landau/functional-equation decomposition gives
-
-`Re Q_E(T,x)=-log(2pi)+o(1)`.
-
-The constant comes from the gamma factor omitted by the coarse baseline `B_x(t)=log(t+2)/x`; the absolutely convergent `zeta'/zeta(3/2-it)` term has vanishing interval mean and the pole/trivial-zero terms are negligible. Hence
-
-`R_gamma/(H log x)=1/(2pi)-log(2pi)/(pi kappa)+o(1)`.
-
-The finite relative crossover is therefore not a new source-arithmetic regime. It records a deterministic choice of baseline. Replacing the coarse logarithmic scale by the natural gamma-normalized one removes the apparent order-one remainder mean. The reusable diagnostic is stronger than before: **a moving error boundary is not evidence of new arithmetic until every deterministic explicit-formula normalization surviving at the requested output scale has been extracted.**
-
-The two lower scales still answer different questions. `x^2 log x~L` is now a resolved relative normalization crossover. The first unresolved absolute-`H` corridor remains `x=O(sqrt(L))`, where the current theorem's load-bearing errors are large enough that a sharper source-specific calculation could still matter.
-
-**Boundary.** Neither `sqrt(L)` nor `sqrt(L/log L)` is proved to be an intrinsic transition of the true statistic. VIS-297 closes the relative mean channel only; it does not resolve the absolute-`H` boundary, the near-ceiling source regime, the fixed-power real-axis branch, or any RH implication.
+**Boundary.** VIS-298 assumes one fixed `lambda<theta` and `x->infinity`. It does not give a bounded-source asymptotic, improve the Korobov--Vinogradov arithmetic input, or justify a source exponent drifting to `theta`. Nor does it prove that no other statistic has meaningful lower-scale structure; it closes this moving-source interpretation of Wang's complete statistic at absolute `H` resolution.

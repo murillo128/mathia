@@ -1,41 +1,29 @@
-# MI-052 — Rankin--Selberg positive geometry fails at the Weil half-density even after projectivization
+# MI-052 — Rankin--Selberg positive geometry fails at the Weil half-density even after canonical finite--archimedean tensor completion
 
-**Evidence level:** exact synthesis from [WP-363](../../findings/WP-363-eisenstein-rankin-selberg-gram-collapses-at-critical-exponent-and-first-jet-is-indefinite.md) and [WP-364](../../findings/WP-364-projective-rankin-selberg-geometry-fails-at-critical-zeros.md). The Rankin--Selberg factorization and Fubini--Study geometry are classical ingredients; the Mathia content is the critical-survival/sign audit.
+**Evidence level:** exact synthesis from [WP-363](../../findings/WP-363-eisenstein-rankin-selberg-gram-collapses-at-critical-exponent-and-first-jet-is-indefinite.md), [WP-364](../../findings/WP-364-projective-rankin-selberg-geometry-fails-at-critical-zeros.md), and [WP-365](../../findings/WP-365-completed-rankin-selberg-tensor-gram-still-fails-at-critical-zeros.md). The Rankin--Selberg factorization, Bessel Mellin product and Fubini--Study geometry are classical ingredients; the Mathia content is the critical-survival/sign audit.
 
-For real spectral parameters `r,u` and real `s>1`, the Eisenstein Hecke coefficients give the genuine positive Gram kernel
+The failure of Eisenstein Rankin--Selberg positivity at the Weil exponent is not caused merely by omitting archimedean geometry or by choosing the wrong scalar normalization.
 
-`K_s(r,u)=sum_n lambda_r(n)lambda_u(n)n^(-s)`.
+For real spectral parameters `r,u` and `s>1`, the finite Hecke coefficients form a genuine positive Gram. Its exact factorization contains four zeta factors divided by `zeta(2s)`. WP-363 shows that this common denominator forces the whole finite Gram to vanish at `s=1/2`, and the first nonzero critical jet is indefinite. WP-364 then removes the common scalar intrinsically by projectivization; the resulting normalized overlap still becomes unbounded near critical-line zeros and its Fubini--Study metric becomes negative with a double-pole divergence.
 
-Its exact meromorphic factorization contains four zeta factors divided by `zeta(2s)`. WP-363 shows that the denominator pole at `s=1/2` forces the whole Gram to vanish precisely at the Weil half-density. The first nonzero critical jet is proportional to
+WP-365 adds the canonical independent archimedean Hilbert space. The Bessel kernel
 
-`J(r,u)=F(r+u)F(r-u)`, with `F(t)=|zeta(1/2+it)|^2`,
+`H_s(r,u)=int_0^infinity K_(ir)(x)K_(iu)(x)x^(s-1)dx`
 
-and is not positive semidefinite: a critical zero can make one diagonal entry vanish while a generic off-diagonal entry remains positive. Taking the logarithmic derivative recovers the desired linear Mangoldt half-density only after the positive Gram category has collapsed and the zeta divisor has entered the meromorphic readout.
+is positive semidefinite for every `s>0` and has the classical four-Gamma Mellin factorization. Tensoring it with the finite Hecke Gram gives a positive kernel before continuation whose factorization is, up to a scalar,
 
-WP-364 tests the strongest canonical scalar-removal repair. For `s>1`, projectivize the Hecke coefficient vectors and form the normalized overlap
+`B_s(r+u)B_s(r-u)/Lambda(2s)`,
 
-`C_s(r,u)=K_s(r,u)/sqrt(K_s(r,r)K_s(u,u))`.
+with `B_s(t)=|Lambda(s+it)|^2`. The finite and infinite places have therefore been combined **before** the scalar readout, and the archimedean factor is genuinely nonseparable in `(r,u)`.
 
-The common `1/zeta(2s)` factor cancels **identically**, so this is a genuine intrinsic quotient of Hilbert vectors rather than a hand-chosen renormalization. Its source-defined critical continuation is
+Yet projectivization again leaves
 
-`C_*(r,u)=F(r+u)F(r-u)/(F(0)sqrt(F(2r)F(2u)))`.
+`C_s(r,u)=B_s(r+u)B_s(r-u)/(B_s(0)sqrt(B_s(2r)B_s(2u)))`.
 
-Let `gamma` be any ordinate of a critical-line zero. For generic fixed `u`, the numerator remains nonzero while `F(2r)->0` as `r->gamma/2` through regular points. Hence
+At `s=1/2`, any critical-line zero ordinate `gamma` makes the denominator vanish as `r->gamma/2` while the numerator remains nonzero for generic fixed `u`. Thus `|C_*|->infinity`, violating the normalized Gram bound `|C|<=1` on regular points arbitrarily near the zero. The Fubini--Study pullback likewise tends to `-infinity`. The Gamma factors are smooth and nonzero at those arithmetic zeros and cannot repair the sign.
 
-`|C_*(r,u)| -> infinity`,
+The reusable lesson is stronger than “non-scalar positivity must survive critical specialization.” **Even tensoring independently positive finite and archimedean local feature spaces can fail if their completed product still packages the target divisor multiplicatively.** Local positivity plus canonical completion does not imply that the analytically continued global projective geometry remains Hilbert-positive.
 
-violating the necessary projective Gram bound `|C|<=1` on punctured neighborhoods of the zero ray, not merely at the singular point itself.
+A viable automorphic route must therefore change the nonseparable correlation law itself before critical specialization. Standard scalar completion, intrinsic projectivization, ordinary Whittaker normalization, or multiplying additional positive local Gram factors of the same product type cannot address a failure caused by zeros in the global completed factor. The missing ingredient must be genuinely noncentral/non-product—such as a source-forced interaction, remainder, intersection/cohomological form or orthogonal sector whose sign theorem is established independently of the divisor to be constrained.
 
-The infinitesimal projective geometry fails with the same sign. The Fubini--Study pullback for `s>1` is
-
-`g_s(r)=partial_r partial_u log K_s(r,u)|_(u=r) >= 0`.
-
-After the common scalar has disappeared, the critical continuation becomes
-
-`g_*(r)=(log F)''(2r)-(log F)''(0)`.
-
-If `gamma` has multiplicity `m`, then `(log F)''(t)=-2m/(t-gamma)^2+O(1)`, so `g_*(r)->-infinity` as `r->gamma/2`. This sign cannot be repaired by a smooth reparameterization, and scalar Gamma/completion factors are invisible because Fubini--Study geometry is gauge-invariant under `v_r -> a(r)v_r`.
-
-The reusable lesson is stronger than “non-scalar positivity must survive the critical specialization.” Even when the universal critical scalar collapse can be removed **canonically before continuation**, the inherited cross-parameter projective geometry can still lose its Hilbert inequalities at the target. A viable automorphic route must therefore alter the nonseparable finite--archimedean correlations themselves before the critical specialization, rather than normalize, complete or projectivize the bare Eisenstein coefficient family.
-
-**Boundary.** This does not rule out all automorphic/cohomological positivity mechanisms, genuinely enlarged feature spaces, Maaß--Selberg remainder structures or noncentral operator couplings. It rules out the canonical level-one Eisenstein coefficient Gram, its first critical jet, scalar completions and its intrinsic projectivization as the missing Weil-positive object. No RH implication follows.
+**Boundary.** This does not rule out Maaß--Selberg remainder structures, enlarged automorphic spaces, cohomological positivity, noncentral operators or other global couplings that are not pointwise products of the tested local Grams. It rules out the canonical level-one Eisenstein coefficient Gram, its critical jet, scalar/projective repairs and the canonical positive Bessel tensor completion as the missing Weil-positive object. No RH implication follows.

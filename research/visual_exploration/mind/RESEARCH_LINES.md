@@ -2,42 +2,26 @@
 
 This file holds the current mathematical questions suggested by the durable visual-exploration intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Resolve the absolute-H lower boundary after removing deterministic gamma normalization
+## Treat the moving lower-source branch as closed after exact gamma recentering
 
 **Linked intuitions:** `MI-029-fixed-margin-pair-correlation-accuracy-must-outrun-packet-conditioning` through `MI-039-wang-lower-source-crossover-is-resolution-dependent`.
 
 VIS-282--VIS-286 classify the isolated coefficient-scale profile and its two source boundaries. VIS-287--VIS-291 then move to Wang's complete pair statistic and show that on every compact power panel `x=T^beta`, `0<beta_0<=beta<=beta_1<theta`, the leading law is uniformly linear after the explicit gamma contribution is retained, with the squared-von-Mangoldt remainder controlled by the standard Korobov--Vinogradov PNT envelope. VIS-292 shows that the symmetric log-source Green filter has no exact blind frequency, and VIS-293 shows that first-half-plane holomorphy of the exact source transform is RH-equivalent rather than an independent continuation mechanism.
 
-VIS-294 narrows the lower moving-source escape sharply. With `H=T^theta`, `L=log T` and one fixed theorem ceiling `x<=T^lambda`, `lambda<theta`, Wang's existing error budget gives
+VIS-294--VIS-297 progressively narrowed the apparent lower moving-source boundary. They separated absolute from relative resolution, isolated the finite relative crossover, and identified its remaining order-one mean as deterministic gamma normalization rather than new arithmetic.
 
-`F_I(x)=(H/(2pi))(L^2/x^2+log x)+o(H)`
+VIS-298 closes the entire moving lower-source branch at absolute `H` resolution under one fixed theorem ceiling. With `H=T^theta`, `L=log T`, fixed `lambda<theta`, and every `x=x(T)->infinity` satisfying `x<=T^lambda`, exact recombination of the Landau/gamma decomposition gives
 
-through every family with `x/sqrt(L)->infinity`. Thus `beta(T)->0` by itself creates no new `H`-scale regime. The first lower range not resolved to absolute `H` accuracy by the current bounds begins only at `x=O(sqrt(L))`; the explicit gamma term itself is known and must not be misclassified as an unexplained residual.
+`F_I(x)=(H/(2pi))[log x+(L-log(2pi))^2/x^2]+o(H)`.
 
-VIS-295 shows that even this boundary depends on normalization. After subtracting the gamma term, the residual remains relatively linear,
+The earlier `x~sqrt(L)` boundary was therefore not an intrinsic arithmetic crossover. It arose from packaging the gamma term inside a coarse remainder and then applying norm bounds before exploiting the exact frequency structure. Once the gamma term is recentered and the absolutely convergent right-half-plane zeta term is handled at its actual frequencies, no moving `x->infinity` lower-source transition remains at absolute `H` scale.
 
-`R_gamma(T,x)=(H/(2pi))log x+o(H log x)`,
+The active source questions are now different. On the **fixed-power real-axis branch**, can one improve or structurally refine the genuinely arithmetic source envelope using information strictly weaker than the RH-equivalent continuation of VIS-293? On the **upper source ceiling**, can Wang's theorem be made quantitatively uniform as the source exponent approaches `theta`, rather than keeping one fixed `lambda<theta`? A genuinely bounded source `x=O(1)` is separate and should be reopened only if it exposes information not already classified by the fixed-source findings.
 
-whenever `x^2 log x/L -> infinity`. This extends below `sqrt(L)` to the current relative-error boundary `x^2 log x=O(L)`, of order `sqrt(L/log L)` up to slowly varying factors.
+## Recombine exact deterministic structure before interpreting an error wall
 
-VIS-296 reduces the finite relative crossover `x^2 log x/L -> kappa in (0,infinity)` to one normalized mean remainder,
+The current ledger separates packet total variation, support width, moving-test seminorm, source exponent, requested output scale, prime-power source measure, smoothing multiplier, theorem-uniformity range, explicit-formula remainder, deterministic gamma normalization and analytic domain of the source Dirichlet transform.
 
-`R_gamma/(H log x)=1/(2pi)+Re Q_E(T,x)/(pi kappa)+o(1)`,
+VIS-294--VIS-298 give a particularly sharp methodological warning. A nominal error boundary can disappear when terms that were split only for estimation convenience are recombined before Cauchy--Schwarz or supremum bounds are applied. The scales `sqrt(log T)` and `sqrt(log T/log log T)` were useful bookkeeping thresholds in the coarse proof, but they do not survive as moving arithmetic regimes of the exact statistic under the fixed-ceiling assumptions.
 
-with `Q_E=(x/H) integral_I E_x(t) dt`. VIS-297 evaluates that remaining channel rather than discovering a new arithmetic transition:
-
-`Re Q_E(T,x)=-log(2pi)+o(1)`.
-
-The contribution is the deterministic gamma-factor constant hidden by Wang's coarse baseline `log(t+2)/x`; the absolutely convergent right-half-plane zeta term has zero interval mean at this normalization, while pole and trivial-zero terms are negligible. Consequently
-
-`R_gamma/(H log x)=1/(2pi)-log(2pi)/(pi kappa)+o(1)`.
-
-Thus the finite relative crossover at `x^2 log x/L=Theta(1)` is a **baseline-normalization effect**, not evidence of a new prime-sensitive channel. Using the natural gamma normalization removes the only order-one mean left by VIS-296.
-
-The lower-boundary problem is now the genuinely harder absolute-`H` question near `x=O(sqrt(L))`: after all deterministic gamma terms are normalized exactly, can the remaining load-bearing errors in Wang's short-interval formula be sharpened or structurally resolved at absolute `H` scale? The near-ceiling regime `x` approaching `T^theta`, fixed-power real-axis source behavior and packet-conditioning questions remain separate and should not be inferred from the now-closed relative-mean calculation.
-
-## Keep packet conditioning, source arithmetic, theorem uniformity, normalization and analytic continuation separate
-
-The current ledger separates packet total variation, support width, moving-test seminorm, source exponent, distance to the source boundary, requested output scale, prime-power source measure, smoothing multiplier, theorem-uniformity range, explicit-formula remainder and analytic domain of the source Dirichlet transform. Exact invertibility of the Green filter is not stable recovery, while strong smoothing is not information loss when the multiplier is nonzero.
-
-VIS-294--VIS-297 sharpen the normalization warning. The same nominal `HL/x^2` scale can mix a coarse deterministic replacement with a genuinely unresolved remainder channel. At relative resolution the only surviving mean remainder is now identified exactly as gamma normalization, so no source-selective conclusion should be attached to that crossover. A useful next probe must specify the residual **after** deterministic normalization and the requested absolute or relative output scale before treating an error boundary as new arithmetic structure.
+A useful next probe must therefore identify a residual that survives **after** exact deterministic normalization and recombination. Merely choosing a slower moving `x(T)->infinity`, or reinterpreting a coarse `H`-scale error term as source structure, is already ruled out. The unresolved information lies in arithmetic improvement at fixed source scale/power or in genuinely new uniformity near the upper theorem boundary.

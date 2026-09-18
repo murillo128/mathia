@@ -4,42 +4,32 @@ This file holds the current mathematical questions suggested by the durable Nyma
 
 ## Escape the absolute-value Mellin tariff rather than merely changing source representation
 
-**Linked intuitions:** `MI-001-target-aware-gram-geometry-must-carry-absolute-scale` through `MI-054-one-smooth-full-euler-barycenter-already-reaches-the-log-squared-corridor`.
+**Linked intuitions:** `MI-001-target-aware-gram-geometry-must-carry-absolute-scale` through `MI-055-signed-fixed-shell-preconditioning-exports-the-mellin-tariff`.
 
 The positive-source program has progressively separated recurrence existence, source resolution, interval occupancy, atomic carrying capacity and integer-carrier discrepancy. NB-202--NB-205 push an `o(1/X_a)` positive Euler return from quadratic shell height through the Vinogradov--Korobov acquisition regime. NB-206 shows why fixed-complexity estimates cannot be used blindly on a moving diagonal, while NB-207 removes an avoidable harmonic-window logarithm.
 
-NB-208--NB-211 then derive an order-one positive-return gap from a phase-pinned harmonic plateau and a prime-supported Halász inequality, ultimately reaching
+NB-208--NB-212 derive the current log-squared corridor and show that one fixed nonnegative smooth full-von-Mangoldt barycenter already exposes it. NB-213 then closes ordinary Mellin primitivization as a representation-only repair: replacing `-zeta'/zeta` by `log zeta` and estimating the transferred contour absolutely differentiates the shell carrier and restores a factor `X`.
 
-`log |t| <= kappa X_a^(3/2)/(log X_a)^2`.
+NB-214 closes the larger positive fixed-shell preconditioning escape. For every nonzero nonnegative profile supported in one fixed logarithmic shell `[0,Delta]`, the source-normalized primitive reconstruction kernel has `L1` norm at least `c_Delta X`, and positivity preserves the same order on a fixed central frequency neighborhood.
 
-NB-212 shows that the harmonic plateau is not what creates this log-squared scale once the full contour estimate is exposed. A **single fixed nonnegative smooth full-von-Mangoldt barycenter** inside the actual Euler shell already gives the same corridor directly: small positive Euler defect forces that barycenter close to its mass, while the Vinogradov--Korobov contour gives a strict nonzero-frequency contraction.
+NB-215 removes the tempting conclusion that signs alone repair this. For every signed/complex fixed-shell profile with nonzero mean `m`, Fourier inversion gives the sign-blind global lower bound
 
-The remaining method boundary is the prefactor in the source-faithful contour estimate. If the normalized error has shape
+`||K_X||_1/|m| >= 2pi/log(1+Delta/X) >= (2pi/Delta)X`.
 
-`L(Q) exp(-c X/(Q^(2/3)(log Q)^(1/3)))`,
+After `j` primitive transfers the same argument costs at least `(2pi/Delta)X^j`. A signed profile can suppress the central lobe only by exporting reconstruction mass to other frequencies or by becoming badly conditioned as a source functional. If `kappa=||h||_1/|m|` and the contour contains a fixed central neighborhood, NB-215 proves
 
-then NB-212 proves the phase diagram: every polynomial prefactor `L(Q)=Q^(A+o(1))`, however small `A>0`, forces the same `X^(3/2)/(log X)^2` corridor; a polylogarithmic prefactor would reach `X^(3/2)/(log X)^(1/2+epsilon)` for every fixed `epsilon>0`; a bounded prefactor would permit Ford-scale access `X^(3/2)/sqrt(log X)` in principle.
+`kappa max{1,C_X(I)} >= X/(5Delta)`,
 
-NB-213 closes ordinary Mellin primitivization as a representation-only repair. Replacing `-zeta'/zeta` by `log zeta` and then estimating the transferred contour absolutely differentiates the shell carrier and restores a factor `X`; on the coupled diagonal `X=Q^(2/3+o(1))`, even an optimistically subpolynomial envelope for `log zeta` is therefore converted back into a positive-power tariff.
+so at least one of source conditioning or central reconstruction costs `Omega(sqrt(X))`. On the Vinogradov--Korobov diagonal `X=Q^(2/3+o(1))`, bare absolute-norm closure therefore still pays a positive power `Q^(1/3+o(1))` somewhere and remains in the same log-squared method class.
 
-NB-214 closes the larger **positive fixed-shell preconditioning** escape. Let `h_X>=0` be any nonzero source profile supported in one fixed logarithmic shell `[0,Delta]`, allowed to vary arbitrarily with `X`, with mass `m_X`. After one primitive transfer the reconstruction kernel is
+The live escape is now more specific than “use signs.” One must exploit the **actual oscillatory correlation between `log zeta` and the reconstruction kernel before absolute values**, replace the nonzero-mean barycentric signal by a source-justified zero-mean/higher-moment observable, or change the fixed-shell geometry itself. A growing shell is also outside NB-215 and must be analyzed as a different physical observable rather than as a free preconditioner.
 
-`K_X(v)=i int_0^Delta (X+y) h_X(y) e^(ivy) dy`.
+A separate destination theorem remains load-bearing. One must still show that a Nyman approximant resolving the target realizes the source condition used by this analysis, or identify the correct destination-coupled signed observable. The source-side tariff alone is not an RH theorem.
 
-On a fixed neighbourhood of `v=0`, positivity and bounded support force `|K_X(v)| >= c X m_X`, hence
+## Keep moving-complexity uniformity, source representation, conditioning and reconstruction explicit
 
-`||K_X||_1/m_X >= c_Delta X`.
+The relevant currencies now include source mass, source total variation, signed conditioning `kappa`, requested return tolerance, integer-cell occupancy, moving derivative order, zero-free contour width, the exact prefactor multiplying the contour saving, whether the observable is prime-only or full von Mangoldt, and the reconstruction cost introduced when derivatives are moved between the arithmetic transform and Mellin carrier.
 
-Amplitude rescaling, concentration inside the shell, or an `X`-dependent positive profile therefore cannot make the normalized reconstruction operator sublinear in `X`. On the Vinogradov--Korobov diagonal this is again a `Q^(2/3+o(1))` tariff before any arithmetic cancellation is used.
+NB-210--NB-212 show that several apparent representation costs were removable once the source theorem was made faithful. NB-213--NB-215 give the converse warning: a smoother arithmetic transform, a positive profile, or a signed profile can all repay the apparent gain through carrier reconstruction or source conditioning. Signed cancellation changes **where** the tariff lives; it does not remove the global absolute tariff for a nonzero-mean fixed shell.
 
-The live source-side question is consequently narrower. To beat the log-squared method class while staying with the same positive shell observable, one must exploit the **actual oscillatory correlation between `log zeta` and the reconstruction kernel before taking absolute values**, gaining roughly the inverse carrier scale relative to the worst-case operator norm. Otherwise the representation must leave the nonnegative fixed-shell class in a mathematically meaningful way, for example through a signed/complex profile with source-justified moment cancellation or a genuinely different growing-shell observable. Merely reshaping a positive bounded shell or inserting a formal reciprocal carrier factor does not change the reconstructed growth class.
-
-A separate destination theorem remains load-bearing. One must still show that a Nyman approximant resolving the target must realize the positive-return condition used by this source analysis, or identify the correct destination-coupled source condition if positivity is too restrictive. Signed/complex synthesis remains a different branch because cancellation can move between phase sectors and destroys the monotone positive-source implication.
-
-## Keep moving-complexity uniformity, source representation, carrier reconstruction and contour prefactor explicit
-
-The relevant currencies now include source mass, requested return tolerance, integer-cell occupancy, moving derivative order, zero-free contour width, the exact prefactor multiplying the contour saving, whether the observable is prime-only or the full von-Mangoldt source, and the reconstruction cost introduced when derivatives are moved between the arithmetic transform and the Mellin carrier.
-
-NB-210 shows that a source-matched theorem can remove a generic support-density loss. NB-211 shows that a fixed-epsilon exponent can disappear when the proof is diagonalized at the natural contour width. NB-212 adds that an apparently essential harmonic/prime-only representation can also be removed: the same corridor is already visible in one smooth full-source scalar. NB-213 adds the converse warning that a formally smoother arithmetic transform is not cheaper if recovering the original shell observable restores a positive-power carrier factor. NB-214 strengthens that warning from one primitive/window choice to the entire nonnegative bounded-shell class: positivity itself preserves a central Fourier lobe of normalized size `Theta(X)`.
-
-Any continuation should therefore work from the source-faithful barycenter or an equally faithful observable, retain all dependence on `Q=log(10+|t|)` and `X=log x`, and measure progress by the growth class of the **final reconstructed prefactor after any source normalization**. Only after that source theorem is established should its cost be transferred to the Nyman destination.
+Any continuation should therefore measure progress only after source normalization and final reconstruction. A smaller central kernel is not an improvement if `kappa` or the omitted frequency tails grow by the reciprocal amount. Only a source-specific correlation theorem, a genuinely different normalized signal, or a changed shell geometry can move the method into a new asymptotic class.
