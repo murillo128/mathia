@@ -1,6 +1,6 @@
-# MI-061 — Hellinger affinity tensorizes the bounded source-edge tariff and remains endpoint-sharp after TV transfer
+# MI-061 — Hellinger affinity tensorizes the bounded source-edge tariff and has a sharp direct endpoint envelope
 
-**Evidence level:** exact synthesis from [MC-340](../../findings/MC-340-bounded-energy-dephasing-forces-linear-joint-source-information.md), [MC-359](../../findings/MC-359-total-variation-source-edge-tariff.md), [MC-360](../../findings/MC-360-hellinger-product-component-edge-tariff.md), [MC-361](../../findings/MC-361-binary-entropy-sharpens-reciprocal-endpoint-information-floor.md), and [MC-362](../../findings/MC-362-tv-to-hellinger-near-endpoint-transfer.md). The TV--Hellinger comparison, Jensen--Shannon/Hellinger comparison, Hellinger data processing, joint convexity and product affinity are classical; the Mathia content is their composition with the reciprocal-endpoint information floor and source-edge geometry.
+**Evidence level:** exact synthesis from [MC-340](../../findings/MC-340-bounded-energy-dephasing-forces-linear-joint-source-information.md), [MC-359](../../findings/MC-359-total-variation-source-edge-tariff.md), [MC-360](../../findings/MC-360-hellinger-product-component-edge-tariff.md), [MC-361](../../findings/MC-361-binary-entropy-sharpens-reciprocal-endpoint-information-floor.md), [MC-362](../../findings/MC-362-tv-to-hellinger-near-endpoint-transfer.md), and [MC-363](../../findings/MC-363-sharp-js-hellinger-endpoint-envelope.md). The statistical inequalities and binary-channel extremality are classical; the Mathia content is their composition with the reciprocal-endpoint information floor and source-edge geometry.
 
 Total variation solves the singular-endpoint problem but does not provide a canonical additive accounting rule for conditionally independent transcript components. Squared Hellinger distance supplies both boundedness and product structure. For neighboring source states `e={x,x'}` let
 
@@ -20,24 +20,28 @@ This already forces an extensive average Hellinger boundary under bounded-energy
 
 Thus source dependence may move between the latent law and the conditionally independent components, but it cannot disappear. Unlike a post-hoc TV coupling, the Hellinger accounting is intrinsic to the product architecture because affinity factorizes.
 
-The direct MC-360 route through `JS<=H^2` is not endpoint-sharp: mutually singular edge laws have Jensen--Shannon divergence `log 2` but squared Hellinger distance `1`, so that comparison leaves a permanent `log 2` fraction even as dephasing becomes exact. MC-361 and MC-362 show that this slack is avoidable without abandoning Hellinger composition.
+The first direct route in MC-360 used `JS<=H^2`. It is qualitatively correct but not endpoint-sharp: mutually singular edge laws have Jensen--Shannon divergence `log 2` and squared Hellinger distance `1`, so that linear comparison leaves a permanent `log 2` fraction. MC-361 and MC-362 showed that the architectural conclusion could be made endpoint-sharp by first forcing a nearly maximal TV boundary and only then transferring TV to Hellinger. That detour proved `H_1/R -> 1` as dephasing error tends to zero, but its quantitative deficit was `O(sqrt(epsilon log(1/epsilon)))`.
 
-Let `T_1=(2/m)sum_e TV(P_x,P_x')` and `q_R=(m-1)/m`. MC-362 proves the aggregate metric transfer
+MC-363 identifies the sharp direct one-dimensional conversion. For probability laws `P,Q`, put `z=H^2(P,Q)` and
 
-`T_1/(R q_R) <= sqrt((H_1/(R q_R))(2-H_1/(R q_R)))`.
+`Phi(z)=log 2-h((1-sqrt(1-(1-z)^2))/2)`.
 
-Hence if `T_1/(R q_R)>=s`, then
+Then
 
-`H_1/R >= q_R Psi(s)`,  where  `Psi(s)=1-sqrt(1-s^2)`.
+`JS(P,Q) <= Phi(z)`,
 
-MC-361 first turns near-endpoint dephasing into an almost-full transcript-information requirement. MC-359 then converts that information floor into a nearly maximal TV boundary using the endpoint-sharp inequality `JS<=(log 2)TV`. Only after that global TV floor is established does MC-362 transfer it to Hellinger. For normalized energy at most one and dephasing error at most `epsilon`, the asymptotic lower bound becomes
+with equality for the binary-symmetric experiment. `Phi` is increasing and concave. The concavity matters because the envelope can be inserted after the source-edge reduction and averaged over the punctured cube without abandoning the Hellinger coordinate. If `q_R=(m-1)/m`, MC-363 gives
 
-`liminf H_1/R >= 1-sqrt(1-(1-h(epsilon/2)/log 2)^2)`,
+`I(X;Y) <= R q_R Phi(H_1/(R q_R)) + 2(R-1)log 2/m`.
 
-which tends to `1` as `epsilon->0`. Thus near-exact dephasing forces an **almost-maximal** Hellinger source boundary rather than merely a positive fraction of one.
+For normalized energy at most one and dephasing error at most `epsilon`, inversion of this sharp envelope yields
 
-When the latent law is source-independent and component `j` depends only on source coordinates `A_j`, the same lower bound transfers through MC-360 to the total affinity-weighted source-coordinate incidence. Splitting a source-sensitive transcript into many individually weak components therefore does not evade the endpoint demand; near exactness drives the aggregate compositional tariff toward its maximal per-direction scale.
+`liminf H_1/R >= 1-sqrt(2 epsilon-epsilon^2)`
 
-The reusable distinction is between **bounded distinguishability and compositional bounded distinguishability**, together with the order in which metric conversions are applied. TV is natural when a genuine common-seed representation turns source flips into change probabilities and is endpoint-sharp for binary discrimination. Hellinger is natural when the transcript has a genuine latent/product factorization. MC-362 shows that one can obtain the sharp endpoint requirement in TV first and only then transfer it to Hellinger, retaining product tensorization without paying the direct Jensen--Shannon/Hellinger endpoint slack. Jeffreys/Fisher remain sharper in regular smooth channels.
+along the even-rank endpoint sequence. Hence the deficit from maximal Hellinger separation is asymptotically at most `sqrt(2 epsilon)`. This strictly improves the TV-mediated `sqrt(epsilon log(1/epsilon))` scale while preserving the same compositional Hellinger ledger.
 
-**Boundary.** MC-362 is still a necessary admission theorem, not an arithmetic upper bound and not an estimate for `M(x)`. The TV and Hellinger budgets must refer to the same complete conditional transcript laws. Conditional independence and the latent representation must be genuine properties of the architecture rather than an artificial refactorization. The next useful result remains architecture-specific: prove a subextensive TV/common-seed or Hellinger latent/component budget for the actual Möbius-derived transcript, or identify the real source-dependent component that pays the almost-maximal near-endpoint tariff.
+When the latent law is source-independent and component `j` depends only on source coordinates `A_j`, the MC-360 product bound transfers the same lower requirement to the total affinity-weighted source-coordinate incidence. Splitting a source-sensitive transcript into many individually weak components therefore does not evade the endpoint demand, and MC-363 removes the remaining possibility of hiding inside a loose metric conversion.
+
+The reusable distinction is between **bounded distinguishability, compositional bounded distinguishability, and sharp conversion into the compositional currency**. TV remains natural when a genuine common-seed representation turns source flips into change probabilities. Hellinger is natural when the transcript has a genuine latent/product factorization. MC-363 shows that one need not choose between endpoint sharpness and Hellinger tensorization: the sharp Jensen--Shannon/affinity envelope supplies both directly. Jeffreys/Fisher remain sharper in regular smooth channels.
+
+**Boundary.** MC-363 is still a necessary admission theorem, not an arithmetic upper bound and not an estimate for `M(x)`. The Hellinger budgets must refer to the same complete conditional transcript laws. Conditional independence and the latent representation must be genuine properties of the architecture rather than an artificial refactorization. The next useful result remains architecture-specific: prove a subextensive TV/common-seed or Hellinger latent/component budget for the actual Möbius-derived transcript, or identify the real source-dependent component that pays the almost-maximal near-endpoint tariff.

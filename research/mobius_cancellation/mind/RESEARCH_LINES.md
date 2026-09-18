@@ -34,7 +34,7 @@ MC-360 adds a **compositional bounded currency**. If `h_e^2=H^2(P_x,P_x')` and `
 
 `I(X;Y) <= H_1 + 2(R-1)/m`,
 
-so bounded-energy nontrivial dephasing forces `H_1/R` to remain positive. More importantly, for a genuine source-dependent latent law followed by conditionally independent components, Hellinger affinity factorizes and yields
+so bounded-energy nontrivial dephasing forces an extensive average Hellinger boundary. More importantly, for a genuine source-dependent latent law followed by conditionally independent components, Hellinger affinity factorizes and yields
 
 `H^2(P_x,P_x') <= H^2(nu_x,nu_x') + sum_j int sqrt(r_x r_x') h_(e,j)^2 d kappa`.
 
@@ -52,17 +52,27 @@ Combined with the endpoint energy/dephasing inequality, normalized energy at mos
 
 `I(X;Y) >= H(X)-R h(epsilon/2)`.
 
-MC-362 closes the remaining near-endpoint metric-conversion slack without sacrificing the product architecture ledger. If `q_R=(m-1)/m`, then the aggregate TV and squared-Hellinger budgets for the same source-edge laws satisfy
+MC-362 first showed that the permanent `log 2` endpoint slack in the direct `JS<=H^2` route was not architectural: passing through the endpoint-sharp TV tariff and then transferring TV to Hellinger already forces `H_1/R -> 1` as `epsilon->0`.
 
-`T_1/(R q_R) <= sqrt((H_1/(R q_R))(2-H_1/(R q_R)))`.
+MC-363 now removes the logarithmic quantitative loss of that detour while staying entirely in the compositional Hellinger currency. If `z=H^2(P,Q)` and
 
-Equivalently, a normalized TV floor `s` forces
+`Phi(z)=log 2-h((1-sqrt(1-(1-z)^2))/2)`,
 
-`H_1/R >= q_R(1-sqrt(1-s^2))`.
+then the sharp distribution-free envelope is
 
-Feeding the MC-361 entropy floor through the endpoint-sharp MC-359 TV tariff therefore makes the normalized Hellinger boundary tend to **one** as unit-energy dephasing error tends to zero. The earlier direct `JS<=H^2` route in MC-360 lost a permanent `log 2` factor near singularity; that loss is now known to be an artifact of metric conversion rather than an architectural escape. The same sharpened lower bound transfers to the affinity-weighted latent/product incidence cost supplied by MC-360.
+`JS(P,Q) <= Phi(z)`.
 
-The live bridge is therefore architecture-specific rather than family-classification-specific. For an actual Möbius endpoint construction, expose its complete transcript including adaptive branches, random seeds, metadata and side channels, then use the finite currency matching its architecture. A common-seed construction invites a TV change-probability upper bound; a latent/product construction invites a Hellinger latent/component-incidence upper bound; a regular channel may admit a sharper lifted Jeffreys/Fisher theorem. Near the deterministic endpoint, MC-362 now says that a Hellinger/product upper theorem must beat an almost-maximal per-direction tariff, not merely a positive constant fraction. The task remains to prove that the actual arithmetic channel cannot afford that boundary, or identify the genuine source-dependent component that pays it.
+`Phi` is increasing and concave and equality is attained by a binary-symmetric experiment. Inserting this envelope directly into the punctured source-cube aggregation gives
+
+`I(X;Y) <= R q_R Phi(H_1/(R q_R)) + 2(R-1)log 2/m`.
+
+At matched-filter energy, dephasing error `epsilon` therefore forces
+
+`liminf H_1/R >= 1-sqrt(2 epsilon-epsilon^2)`
+
+along the even-rank endpoint sequence. The Hellinger deficit is now `O(sqrt(epsilon))`, rather than the `O(sqrt(epsilon log(1/epsilon)))` deficit left by the TV-mediated conversion in MC-362. The same sharp lower bound transfers through MC-360 to the source-independent latent/product incidence ledger. Splitting the transcript into many weak components cannot hide in the metric-conversion slack.
+
+The live bridge is therefore architecture-specific rather than family-classification-specific. For an actual Möbius endpoint construction, expose its complete transcript including adaptive branches, random seeds, metadata and side channels, then use the finite currency matching its architecture. A common-seed construction invites a TV change-probability upper bound; a latent/product construction invites a Hellinger latent/component-incidence upper bound; a regular channel may admit a sharper lifted Jeffreys/Fisher theorem. Near the deterministic endpoint, MC-363 says that a Hellinger/product upper theorem must beat an almost-maximal per-direction tariff with the sharp `sqrt(epsilon)` deficit. The task remains to prove that the actual arithmetic channel cannot afford that boundary, or identify the genuine source-dependent component that pays it.
 
 ## Repair probabilistic Möbius comparators only after exact-stratum and algebraic-collapse gates
 
@@ -72,4 +82,4 @@ Probabilistic proxies remain secondary until their conditioning is arithmeticall
 
 The current invariant chain distinguishes source loading, coefficient energy, exact source quotient, joint transcript information, posterior entropy/predictability, destination-cut geometry, aggregate edge KL, privacy-loss distribution, inverse distinguishability, mean displacement, covariance deformation, Fisher action, latent mixing-law divergence, conditional component divergence, lifted joint divergence, total-variation edge budget, common-seed change probability, Hellinger edge budget, affinity-weighted component incidence, support singularity, score curvature/noise scale and side-channel structure. These are different resources.
 
-A useful Möbius endpoint theorem must close the loop in both directions: the destination must force enough neighboring-state discrimination, and the concrete arithmetic channel must be shown unable to afford that discrimination at the relevant scale. MC-354--MC-358 price progressively broader regular/lifted architectures; MC-359 adds a bounded source-edge currency that survives singularity; MC-360 adds the bounded product/latent ledger needed to prevent source sensitivity from disappearing by component splitting; MC-361 sharpens the compulsory binary transcript-information curve; MC-362 transfers that sharp endpoint demand back into the compositional Hellinger currency with no permanent endpoint slack. The remaining problem is no longer to name a more complicated generic statistical family, but to prove a source-edge or transcript-information upper theorem for the actual Möbius-derived architecture in the currency native to it.
+A useful Möbius endpoint theorem must close the loop in both directions: the destination must force enough neighboring-state discrimination, and the concrete arithmetic channel must be shown unable to afford that discrimination at the relevant scale. MC-354--MC-358 price progressively broader regular/lifted architectures; MC-359 adds a bounded source-edge currency that survives singularity; MC-360 adds the bounded product/latent ledger needed to prevent source sensitivity from disappearing by component splitting; MC-361 sharpens the compulsory binary transcript-information curve; MC-362 proves endpoint sharpness survives transfer into Hellinger; MC-363 makes that transfer quantitatively sharp in the Hellinger coordinate itself. The remaining problem is no longer to name a more complicated generic statistical family, but to prove a source-edge or transcript-information upper theorem for the actual Möbius-derived architecture in the currency native to it.

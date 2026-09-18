@@ -2,7 +2,7 @@
 
 This file holds the current mathematical questions suggested by the durable Robin-extremal intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Resolve the scalar Euler frontier between repairability and stable-rank collapse
+## Resolve the scalar Euler frontier between exact identification and selector-scale stable rigidity
 
 **Linked intuitions:** `MI-001-robin-failure-requires-self-tangent-half-mass-event-gaps` through `MI-051-finite-laplace-source-capacity-grows-only-logarithmically-with-the-transform-rectangle-at-fixed-precision`.
 
@@ -28,11 +28,21 @@ RE-194 converts the canonical selector's shrinking absolute debt `d_p~1/(sqrt(p)
 
 `O((1+log(1+R))(1+log_+(V/d_p)))`.
 
-RE-195 now closes the tempting converse interpretation of that formula. Reciprocal variation is **not a coercive source-complexity resource** under the current matched-control class. For every fixed jet depth `K` and every prescribed finite `Lambda_p`, one can append a finite remote `{+1,-1}` prime packet beginning at `p^2` with reciprocal variation at least `Lambda_p`, while greedy Chebyshev sign balancing keeps its signed primitive `O(log x)`. Abel summation then makes its complete fixed Euler profile `O_U(p^-2)` on every fixed `1<=s<=1+U` and its fixed boundary jets `O_j((log p)^j/p^2)=o(d_p)`. Using a disjoint prime-index parity channel, the exact RE-182 repair still matches every fixed jet through depth `K`, preserves `{0,1,2}` multiplicities, the KV envelope and the order-one transient selector excursion.
+RE-195 closes the tempting converse interpretation of that formula. Reciprocal variation is **not a coercive source-complexity resource** under the current matched-control class. For every fixed jet depth `K` and every prescribed finite `Lambda_p`, one can append a finite remote `{+1,-1}` prime packet beginning at `p^2` with reciprocal variation at least `Lambda_p`, while greedy Chebyshev sign balancing keeps its signed primitive `O(log x)`. Abel summation then makes its complete fixed Euler profile `O_U(p^-2)` on every fixed `1<=s<=1+U` and its fixed boundary jets `O_j((log p)^j/p^2)=o(d_p)`. Using a disjoint prime-index parity channel, the exact RE-182 repair still matches every fixed jet through depth `K`, preserves `{0,1,2}` multiplicities, the KV envelope and the order-one transient selector excursion.
 
-Therefore the `log(V/d_p)` factor in RE-194 is only a **worst-case norm tariff**. Large unsigned reciprocal variation can be hidden in Chebyshev-balanced directions that are almost invisible to the scalar Euler channel. It cannot be used as evidence that the source exposes more robust scalar dimensions, nor can current KV fidelity or any fixed exact Euler panel upper-bound it in a way that closes the scalar escape.
+RE-196 now closes the natural “observe the whole positive real Euler ray” escape at every fixed logarithmic precision depth. The RE-182 repair has bounded centered logarithmic transport moments at selector scale. After factoring the common decay `p^{-(s-1)}`, exact matching of the first `K` boundary jets makes the normalized discrepancy vanish to order `K+1`; the remaining Taylor term is suppressed globally by
 
-The scalar frontier is consequently sharper. The open derivative region between constructive repair and `j~(log p)^2` saturation remains, but on the spectral side neither enlarging the transform rectangle nor inflating reciprocal variation is by itself a source-visible resource. A future scalar rigidity argument needs a **coercive signed/quotiented source complexity** that lower-bounds actual Euler response after balanced directions are factored out, or must leave the one-sided scalar Euler channel for a joint/nonlocal invariant tied directly to Robin.
+`sup_(u>=0) u^(K+1) p^(-u) ~ (log p)^(-(K+1))`.
+
+At the same time the Chebyshev-balanced padding used in RE-195 is uniformly `O(p^-2)` for **all** real `s>=1`, independently of its arbitrarily large reciprocal variation. Consequently, for every fixed `K`, the matched control can satisfy
+
+`sup_(s>=1)|D_Q(s)| <<_K d_p/(log p)^(K+1)`
+
+while retaining exact jets through order `K`, KV fidelity, an order-one transient Robin excursion and arbitrarily large reciprocal variation. For every fixed `A`, choosing fixed `K>A` makes the entire real Euler profile `o(d_p/(log p)^A)`.
+
+Thus exact continuum identification and selector-scale stable discrimination separate even on the **complete positive real Euler axis**. RE-174 remains valid at infinite precision: exact values on an unbounded temperature set identify the source. RE-196 says only that the inverse has no modulus at Robin-relevant log-power precision on the current matched-control class. Enlarging the real spectral window does not repair the scalar channel unless the required precision shrinks beyond every fixed log power or the admissible source class is restricted by a genuinely coercive signed condition.
+
+The scalar frontier is consequently sharper. The open derivative region between constructive repair and `j~(log p)^2` saturation remains, but on the spectral side neither transform width, the complete real ray nor inflated reciprocal variation is by itself a source-visible stable resource. A future scalar rigidity argument needs a **coercive signed/quotiented source complexity** that lower-bounds actual Euler response after balanced directions are factored out, or a precision theorem at growing jet depth, or must leave the one-sided scalar Euler channel for a joint/nonlocal invariant tied directly to Robin.
 
 ## Control one-sided reciprocal escape independently
 
@@ -40,6 +50,6 @@ The zero-side packet obstruction remains separate. One-sided vertical phase geom
 
 ## Keep exact identification, stable information and destination leverage distinct
 
-Finite ordinary-prime rigidity, full exact Euler-germ identification, fixed/growing jet matching, KV fidelity, weighted reset complexity, repair width, high-order jet saturation, shrinking-window rank-one collapse, fixed-window factorial compression, spectral-logwidth compression, dyadic logarithmic compression, Robin-scale precision conversion, reciprocal total variation, Chebyshev-balanced signed response and transient Robin displacement answer different questions. RE-195 sharpens the distinction: an arbitrarily large unsigned source norm can coexist with negligible response in every fixed scalar Euler window, so a norm appearing in a stable-rank upper bound need not be an inverse complexity lower bound.
+Finite ordinary-prime rigidity, full exact Euler-germ identification, fixed/growing jet matching, KV fidelity, weighted reset complexity, repair width, high-order jet saturation, shrinking-window rank-one collapse, fixed-window factorial compression, spectral-logwidth compression, dyadic logarithmic compression, full-real-ray log-power suppression, Robin-scale precision conversion, reciprocal total variation, Chebyshev-balanced signed response and transient Robin displacement answer different questions. RE-196 makes the distinction explicit: an analytically injective continuum can be uniformly almost blind at every fixed log-power fraction of the selector debt.
 
-Future proposals should therefore state the surviving source ambiguity, exact invariant family, optimized repair width, source-fidelity cost, integer-multiplicity constraints, normalization, inverse conditioning, spectral/source diameter, **source-visible signed complexity rather than only unsigned reciprocal variation**, precision scale and selector-normalized destination effect. A scalar family should be credited as Robin leverage only after matched repair, high-depth common-mode collapse, shrinking-window low-rank collapse, finite-Laplace compression and balanced-padding invisibility at the actual physical parameters are ruled out.
+Future proposals should therefore state the surviving source ambiguity, exact invariant family, optimized repair width, source-fidelity cost, integer-multiplicity constraints, normalization, inverse conditioning, spectral/source diameter, **source-visible signed complexity rather than only unsigned reciprocal variation**, precision scale and selector-normalized destination effect. A scalar family should be credited as Robin leverage only after matched repair, high-depth common-mode collapse, shrinking-window low-rank collapse, finite-Laplace compression, balanced-padding invisibility and full-real-ray log-power near-nullity at the actual physical parameters are ruled out.

@@ -1,6 +1,6 @@
-# MI-030 — PNT endpoint modes cap jump-only coercivity before it can cancel the scalar compensation
+# MI-030 — The sharp PNT prime-block edge is essential, so only noncompact completion can suppress it
 
-**Evidence level:** exact synthesis from [PL-339](../../findings/PL-339-outer-source-shell-carries-unit-gap-coercivity.md), [PL-340](../../findings/PL-340-pnt-endpoint-jump-coercivity-ceiling.md), and [PL-341](../../findings/PL-341-sharp-pnt-prime-block-half-mass-spectrum.md), using the endpoint modes constructed in PL-051. The conclusion concerns the isolated prime/jump block, not the completed Weil operator.
+**Evidence level:** exact synthesis from [PL-339](../../findings/PL-339-outer-source-shell-carries-unit-gap-coercivity.md), [PL-340](../../findings/PL-340-pnt-endpoint-jump-coercivity-ceiling.md), [PL-341](../../findings/PL-341-sharp-pnt-prime-block-half-mass-spectrum.md), and [PL-342](../../findings/PL-342-sharp-prime-block-essential-spectrum.md), using the endpoint modes constructed in PL-051. The conclusion concerns the bounded prime/jump block and compact completion terms, not the spectrum of the full completed Weil operator.
 
 PL-339 proved that the accumulated positive jump sector has the total-source lower bound
 
@@ -8,24 +8,28 @@ PL-339 proved that the accumulated positive jump sector has the total-source low
 
 Since the exact prime block is `P_a=J_a-2W_a I`, one remaining hope was that compatibility among many positive jump forms might drive the lower edge of `J_a` all the way toward `2W_a`, asymptotically neutralizing the scalar compensation.
 
-PL-340 ruled out that jump-only mechanism with explicit PNT endpoint states, giving the sharp upper ceiling `limsup inf sigma(J_a)/W_a <= 3/2`. PL-341 now identifies the whole leading spectral picture rather than only the ceiling. For the weighted compressed-shift sum `K_a`,
+PL-340 ruled out that jump-only mechanism with explicit PNT endpoint states, and PL-341 identified the whole leading ordinary spectral picture. For the weighted compressed-shift sum `K_a`,
 
 `sup sigma(K_a)=e^a(1+o(1))`,
 
 `inf sigma(K_a)=-e^a(1+o(1))`,
 
-while `W_a=2e^a(1+o(1))`. Therefore the isolated prime block `P_a=-K_a` has asymptotic spectral edges
+while `W_a=2e^a(1+o(1))`. Therefore the isolated prime block `P_a=-K_a` has asymptotic normalized edges `-1/2` and `+1/2`, and the jump sector `J_a=2W_a I-K_a` has edges `3/2` and `5/2`. The favorable jump edge remains exactly one half-source-mass below the scalar-cancellation threshold.
 
-`inf sigma(P_a)/W_a -> -1/2`, `sup sigma(P_a)/W_a -> 1/2`,
+PL-342 strengthens this from an ordinary spectral statement to a topological one. The same endpoint Rayleigh values can be reproduced on weakly-null high-frequency modulations. At every fixed aperture only finitely many prime logarithms occur, and Kronecker recurrence lets one choose arbitrarily large modulation frequencies that simultaneously restore all active prime-power translation phases. Consequently
 
-and the jump sector `J_a=2W_a I-K_a` has edges
+`sup sigma_ess(K_a)=e^a(1+o(1))`,
 
-`inf sigma(J_a)/W_a -> 3/2`, `sup sigma(J_a)/W_a -> 5/2`.
+`inf sigma_ess(K_a)=-e^a(1+o(1))`.
 
-The positive jump bulk is therefore genuinely coercive, but its best lower edge remains exactly one half-source-mass below the `2W_a` scalar cancellation threshold. More positive channels or better compatibility inside the same PNT-scale prime block cannot remove that deficit.
+The sharp half-mass prime edge is therefore already present in the Calkin quotient. It is not a finite-dimensional surplus carried only by a few smooth endpoint modes.
 
-The result is also a matched-control warning. The leading edges use only positive PNT mass plus the compressed-shift geometry, and a generalized-prime source with the same PNT-scale weight reproduces the constants. The macroscopic half-mass spectrum is therefore **PNT-universal**, not a rational-prime discriminator. PL-059 still shows that the zeta-pole completion cancels the universal negative endpoint mode at leading order, so the sharp prime-block edge is not evidence that the completed Weil operator has a macroscopic negative direction.
+This makes the completion boundary precise. The zeta-pole operator at fixed aperture has rank at most two, and the bounded continuous completion remainder is compact, so neither can change the essential spectrum of the bounded prime block. The smooth PNT cancellation of PL-059 and the essential edge of PL-342 are compatible: the pole cancels the fixed smooth endpoint mode, while compact terms vanish on the weakly-null recurrent sequence.
 
-The reusable lesson is that **coercive positive pieces cannot be credited toward a signed destination until the compensation/completion at the same scale is included**. PL-341 makes this quantitative and sharp: the isolated prime/jump decomposition has a universal leading spectrum with a fixed `W_a/2` deficit at its favorable edge. The next theorem must work with the completed/centered object or with a rational-prime-specific branch invariant that survives the universal PNT cancellation.
+The genuinely unresolved completion is the unbounded logarithmic principal operator. The recurrence sequence that preserves the prime-block Rayleigh value does so by sending frequency to infinity, and the logarithmic principal symbol grows along the same sequence. The full localized completed-Weil operator has compact resolvent, so PL-342 does **not** imply essential spectrum or a negative direction for that full operator. Instead it isolates a same-state competition: recurrent prime translation gain versus archimedean/logarithmic frequency cost.
 
-**Boundary.** PL-341 determines the leading spectral edges of the isolated PNT prime/jump block, but it does not prove branch persistence, identify the completed low spectrum, or produce a negative direction for the completed Weil form. Completion remains essential, and any RH-facing gain must enter through source-selective completion/coupling or branch information absent from the universal PNT block.
+The matched-control warning also strengthens. The leading mass scale comes from the PNT law, and the promotion to essential spectrum uses finite rational independence of the active logarithmic frequencies. A generalized-prime source with the same PNT-scale mass and corresponding independent frequencies reproduces the mechanism. Neither the ordinary half-mass edge nor its Calkin persistence is by itself rational-prime RH rigidity.
+
+The reusable lesson is that **compact or finite-rank completion cannot repair a bounded source obstruction that already survives on weakly-null recurrent states; the only possible repair must act in a noncompact/unbounded channel on those same states**. Here that channel is the logarithmic principal operator. A future result must compare its frequency cost with the recurrent prime edge on the relevant moving branch, rather than further refine the bounded PNT geometry.
+
+**Boundary.** PL-342 determines the essential spectral edges of the bounded prime block and their invariance under compact completion. It does not prove branch persistence, identify the completed low spectrum, control the scalar part, or produce a negative direction for the completed Weil form. The unbounded principal term is load-bearing, and any RH-facing gain must enter through its same-state interaction with source-selective branch structure.
