@@ -52,6 +52,7 @@ This file records durable literature dependencies for `research/nyman_beurling/`
 
 - Paul Erdős and Pál Turán, *On a problem in the theory of uniform distribution. I*, Proc. Nederl. Akad. Wetensch. 51 (1948), 1146–1154; Indagationes Math. 10 (1948), 370–378. Role: primary classical source for the one-dimensional discrepancy inequality bounding interval counts by finitely many exponential sums. `NB-202` applies it to the coupled logarithmic carrier `t log n/(2 pi)` at angular resolution `1/X_a`.
 - Olivier Robert, *On van der Corput’s k-th derivative test for exponential sums*, Indagationes Mathematicae 27 (2016), no. 2, 559–589, DOI `10.1016/j.indag.2015.11.009`. Role: authoritative modern source for the classical van der Corput second-derivative estimate `sum e(f(n)) << N sqrt(lambda) + lambda^(-1/2)` under two-sided second-derivative control. `NB-202` uses it for `f(u)=m t log u/(2 pi)` to quantify integer occupancy of logarithmic phase windows.
+- Juan Arias de Reyna, *Explicit van der Corput's d-th derivative estimate*, [arXiv:2407.02094v1](https://arxiv.org/abs/2407.02094) (2024). Role: explicit all-orders derivative test with constants uniformly bounded in `d`; `NB-204` uses that uniformity to let the derivative order grow with the Mellin shell parameter and, together with Erdős--Turán, extend the generic integer-carrier positive Euler-return obstruction to quasi-polynomial shell heights. This is a preprint source; `NB-204` uses only the displayed theorem stated and proved there.
 
 ## Quantitative approximation boundary
 
