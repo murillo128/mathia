@@ -126,8 +126,7 @@ and `U` is supported only on its upper-left `2 x 2` block:
 \[
 U_{\{0,1\},\{0,1\}}
 =
-\begin{pmatrix}
-u&-1\\-1&0\end{pmatrix}.
+\begin{pmatrix}u&-1\\-1&0\end{pmatrix}.
 \tag{8}
 \]
 
