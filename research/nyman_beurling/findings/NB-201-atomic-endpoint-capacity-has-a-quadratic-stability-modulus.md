@@ -301,7 +301,7 @@ Combining (12), (14), (19), (22), and (26), the normalized source mass in `J_(a,
 
 \[
 \boxed{
-\sum_{\substack{n\in J_{a,h}\\n\notin W_{t,a}}}w_{n,a}
+\sum_{\substack{n\in J_{a,h}\\ n\notin W_{t,a}}}w_{n,a}
 \ge
 c_1d^2-C_1\mathcal E_a.
 }
@@ -335,7 +335,19 @@ for all sufficiently small `a`. Positivity of the Euler weights and (27) now giv
 
 which proves (5).
 
-If `d^2<=2C mathcal E_a`, then `d<<sqrt(mathcal E_a)`. Otherwise (5) gives `d^2<<X_a mathcal A_a(t)`. Combining the two cases proves (6). Finally,
+If
+
+\[
+d^2\le2C\mathcal E_a,
+\]
+
+then `d<<sqrt(mathcal E_a)`. Otherwise (5) gives
+
+\[
+d^2\ll X_a\mathcal A_a(t).
+\]
+
+Combining the two cases proves (6). Finally,
 
 \[
 1-\frac{\kappa_a(t)}{2\pi e^\Delta}
