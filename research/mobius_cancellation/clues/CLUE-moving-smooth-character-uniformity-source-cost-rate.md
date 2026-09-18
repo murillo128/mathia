@@ -1,7 +1,7 @@
 ---
 id: CLUE-mobius-cancellation-moving-smooth-character-uniformity-source-cost-rate
 type: research-clue
-status: proposed
+status: resolved
 origin: research-watch
 target_line: mobius_cancellation
 based_on:
@@ -53,3 +53,33 @@ Keep the direction only if all constants can be bounded uniformly enough to make
 No effective lower bound on `log P/log y` is established here. `MC-377` remains the canonical theorem and proves only divergence. Cochrane--Granville--Zheng's published arXiv statement gives a fixed-parameter theorem plus a moving-parameter discussion, but the required uniform constant propagation through the specialized proof and through Mathia's prime-frame argument has not yet been completed.
 
 The candidate iterated-logarithmic range above is therefore only a falsifiable theorem surface. This clue does not strengthen `MC-377`, does not assert that Remark 1 is incorrect, and does not imply any estimate for `M(x)`.
+
+## Research disposition
+
+Outcome: supported and narrowed
+
+Resolved by:
+- [[research/mobius_cancellation/findings/MC-378-moving-smooth-frame-forces-iterated-log-source-cost-rate.md]]
+
+The moving-parameter audit succeeds in a conservative range. After killing source columns from primes above `y^{c/A}` and from the moving Cochrane--Granville--Zheng exceptional integer, the surviving mode space has codimension `O(A^2)`. Their displayed Theorem 3 dependence gives a character-sum saving `sigma_A >= 2^{-C_1 A}` provided `A 2^{C_0 A}=o(log log y)` for a sufficiently large absolute `C_0`. The imprimitive-character divisor loss is smaller in the same range, and choosing the Selberg cutoff exponent `b=sigma_A/100` keeps the diagonal cost at `O(sigma_A^{-1})` while retaining a power-saving off diagonal.
+
+Consequently an exact endpoint cannot have `P<=y^{A(y)}` whenever
+
+\[
+A(y)^2=o(R),
+\qquad
+A(y)2^{C_0A(y)}=o(\log\log y).
+\]
+
+One explicit non-optimized corollary is
+
+\[
+\frac{\log P}{\log y}
+\ge
+c\min\left\{
+\sqrt{\frac{R}{\log(R+2)}},
+\log\log\log y
+\right\}
+\]
+
+for some absolute `c>0` and all sufficiently large exact endpoints. The clue is resolved at this proof rate only. The `log log log y` ceiling comes from the explicit `k2^k` tariff in Theorem 3 and is not claimed to be optimal; no estimate for `M(x)` follows.
