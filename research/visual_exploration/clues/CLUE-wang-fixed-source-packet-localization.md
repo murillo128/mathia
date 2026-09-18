@@ -13,6 +13,7 @@ based_on:
   - research/visual_exploration/findings/VIS-288-wang-fixed-power-residual-h-frontier.md
   - research/visual_exploration/findings/VIS-289-wang-fixed-power-residual-o-h.md
   - research/visual_exploration/findings/VIS-290-wang-fixed-power-classical-pnt-envelope.md
+  - research/visual_exploration/findings/VIS-291-wang-fixed-power-korobov-vinogradov-envelope.md
 ---
 
 # Does Wang packet localization preserve the fixed-source diagonal profile without manufacturing strip gain?
@@ -37,58 +38,58 @@ Wang's Proposition 2.6 gives uniformly
 
 `(2*pi/(H L)) F_I(T^beta)=beta+o(1)`.
 
-`VIS-288` confined every fixed-power residual above the linear source law to `O(H)`, and `VIS-289` removed that apparent floor by replacing the coarse coefficient estimate `sum a_n^2=log x+O(1)` with the standard two-term squared-von-Mangoldt asymptotic, giving
+`VIS-288` confined every fixed-power residual above the linear source law to `O(H)`, `VIS-289` sharpened that to `o(H)`, and `VIS-290` made the improvement quantitative with a de la Vallée Poussin remainder.
 
-`F_I(T^beta)-(H beta L)/(2*pi)=o(H)`
+`VIS-291` now propagates the stronger Korobov–Vinogradov prime-number-theorem scale through the same symmetric squared-von-Mangoldt coefficient sum and Wang's complete error budget. For some `c_0>0`, uniformly on every pre-fixed compact exponent panel,
 
-uniformly on compact exponent panels.
+`F_I(T^beta)-(H beta L)/(2*pi)`
+` = O(H exp(-c_0 L^(3/5)(log L)^(-1/5)))`.
 
-`VIS-290` makes this quantitative. Retaining the classical de la Vallee Poussin prime-number-theorem remainder through the same symmetric coefficient square and Wang's complete error budget yields, for some `c_0>0`,
-
-`F_I(T^beta)-(H beta L)/(2*pi)=O(H exp(-c_0 sqrt(log T)))`
-
-uniformly for `beta in [beta_0,beta_1]`. The stretched-exponential factor is inherited from ordinary prime-counting accuracy; it is an unconditional envelope, not a claimed intrinsic residual scale.
-
-The fixed compact-power branch is therefore closed not only through the `H` scale but through every residual asymptotically larger than this classical-PNT envelope. Any surviving mechanism must resolve a still smaller term or leave the fixed compact exponent regime.
+This scale is inherited from generic unconditional prime-counting accuracy; it is not a detected residual of the pair-correlation statistic. The fixed compact-power route is therefore closed through the strongest standard Korobov–Vinogradov-shaped PNT envelope available to this argument.
 
 ## Research question
 
-Can a fixed-power residual below the classical-PNT envelope be isolated with a sharper quantitative input and shown to carry source-dependent arithmetic information, or does the compact fixed-power statistic continue to collapse to the universal linear source law as the arithmetic remainder is sharpened?
+Can the particular symmetric `Lambda^2` smoothing in Wang's coefficient square be expanded or cancelled more sharply than the generic prime-number-theorem envelope in a way that leaves a source-dependent term dominating the **complete** remaining Wang error budget?
 
 Alternatively, can a source family approaching a true boundary not covered by one fixed exponent panel — `beta(T)->0`, a regime approaching the admissible source ceiling, or deliberately singular packet normalization — produce information not already contained in the compact-source and fixed-power controls?
 
 ## Why it may matter
 
-The source-localization thread has progressively removed the obvious ways to manufacture gain. Compact localization is a bounded projection, the isolated source profile has no endpoint singularity after forced baselines are removed, and the complete fixed-power statistic now satisfies the explicit unconditional estimate
+The source-localization thread has progressively removed the obvious ways to manufacture gain. Compact localization is a bounded projection, the isolated source profile has no endpoint singularity after forced baselines are removed, and the complete fixed-power statistic now satisfies the unconditional estimate
 
-`F_I(T^beta)=(H beta L)/(2*pi)+O(H exp(-c_0 sqrt(log T)))`
+`F_I(T^beta)=(H beta L)/(2*pi)`
+` + O(H exp(-c_0 L^(3/5)(log L)^(-1/5)))`
 
 on every pre-fixed compact exponent panel inside `(0,theta)`.
 
-A positive fixed-power result must therefore improve on a complete quantitative error budget rather than merely display a smaller normalized deviation. Because the current envelope is inherited from a generic prime-number-theorem remainder, a genuine mechanism would need either a sharper arithmetic expansion whose candidate term survives all of Wang's other errors or a regime in which the fixed-panel argument ceases to apply.
+A positive fixed-power result can no longer come merely from replacing a coarse PNT estimate with another already-known generic one: the standard Korobov–Vinogradov scale has already been propagated. A surviving fixed-power mechanism must exploit structure specific to the smoothed squared-von-Mangoldt quantity or require genuinely stronger prime-counting information. The conceptually distinct alternative is a genuinely moving boundary where the compact-panel theorem no longer supplies uniform control.
 
 ## Decisive test
 
 Choose **one** remaining regime before inspecting its signal.
 
-For a deeper fixed-power test, replace the classical de la Vallee Poussin input by an explicitly stronger quantitative asymptotic for
+For the deeper fixed-power branch, derive a structural asymptotic for
 
-`sum_n a_n^2-log x`
+`S(x)-log x`,
 
-and propagate it together with every `D_x`, `B_x`, `E_x`, localization, and cross-term error in Wang's proof. A candidate source-dependent term is interesting only if it dominates the **complete** sharpened error envelope uniformly on one predeclared compact `beta` panel and is not a repackaging of the explicit gamma or prime-power diagonal baselines. Kill the route if the apparent term is swallowed by the improved arithmetic remainder or another existing Wang error.
+where
 
-For a boundary test, state the source law and normalization explicitly and verify that it lies outside the compact exponent panel proved in `VIS-287`–`VIS-290`. Do not let Wang's fixed theorem parameter `lambda<theta` drift with `T` without a new uniformity proof. At `q->0`, retain the exact `VIS-285` baseline; near the source ceiling, rederive the load-bearing localization and mean-value errors rather than extrapolating the compact-panel formula.
+`S(x)=x^(-2) sum_(n<=x)n Lambda(n)^2 + x^2 sum_(n>x)Lambda(n)^2/n^3`,
 
-Kill the direction if the proposed effect is reproduced by the known linear source main term, the explicit gamma term, the `O(H exp(-c_0 sqrt(log T)))` classical-PNT envelope, or packet-norm amplification. A surviving effect must occupy a quantitatively resolved smaller fixed-power scale or a boundary regime not covered by `VIS-283`–`VIS-290`.
+that is strictly sharper than the generic Korobov–Vinogradov envelope for a reason specific to this symmetric smoothing. Propagate that expansion together with every `D_x`, `B_x`, `E_x`, localization, and cross-term error in Wang's proof. A candidate source-dependent term is interesting only if it survives the complete sharpened envelope uniformly on one predeclared compact `beta` panel and is not a repackaging of the explicit gamma or prime-power diagonal baselines. Kill the route if the proposed gain is only another generic PNT substitution, is swallowed by another Wang error, or requires an unproved prime-counting improvement.
+
+For a boundary test, state the source law and normalization explicitly and verify that it lies outside the compact exponent panel proved in `VIS-287`–`VIS-291`. Do not let Wang's fixed theorem parameter `lambda<theta` drift with `T` without a new uniformity proof. At `q->0`, retain the exact `VIS-285` baseline; near the source ceiling, rederive the load-bearing localization and mean-value errors rather than extrapolating the compact-panel formula.
+
+Kill the direction if the proposed effect is reproduced by the known linear source main term, the explicit gamma term, the Korobov–Vinogradov PNT envelope, or packet-norm amplification. A surviving effect must either beat the complete fixed-power envelope for a source-specific reason or occupy a boundary regime not covered by `VIS-283`–`VIS-291`.
 
 ## Evidence boundary
 
-`VIS-283`–`VIS-286` establish the compact-source diagonal/cross controls and both isolated-profile endpoint baselines. `VIS-287` establishes the leading normalized complete-statistic asymptotic on fixed exponent panels. `VIS-288` localizes the previously unresolved theorem floor to `O(H)`. `VIS-289` sharpens that fixed-panel residual to `o(H)`. `VIS-290` retains a classical quantitative prime-number-theorem remainder and derives the explicit stretched-exponential upper envelope above.
+`VIS-283`–`VIS-286` establish the compact-source diagonal/cross controls and both isolated-profile endpoint baselines. `VIS-287` establishes the leading normalized complete-statistic asymptotic on fixed exponent panels. `VIS-288` localizes the previously unresolved theorem floor to `O(H)`. `VIS-289` sharpens that fixed-panel residual to `o(H)`. `VIS-290` derives a de la Vallée Poussin quantitative envelope, and `VIS-291` sharpens it to the standard Korobov–Vinogradov PNT scale.
 
-`VIS-290` does **not** establish a nonzero residual at that scale, prove that the envelope is optimal, or show that stronger prime-counting estimates cannot improve it. None of these findings gives a theorem with `beta=beta(T)` approaching a boundary or control for packet families whose total variation diverges. No source-threshold theorem, new pair-correlation theorem, off-critical-strip gain, RH criterion, or new arithmetic invariant is established here.
+`VIS-291` does **not** establish a nonzero residual at that scale, prove an optimal remainder for Wang's special smoothing, or rule out a sharper source-specific cancellation. None of these findings gives a theorem with `beta=beta(T)` approaching a boundary or control for packet families whose total variation diverges. No source-threshold theorem, new pair-correlation theorem, off-critical-strip gain, RH criterion, or new arithmetic invariant is established here.
 
 ## Research disposition
 
 Outcome so far: **narrowed**.
 
-The fixed-interior mechanism, both isolated diagonal endpoint singularities, and the compact fixed-power branch down to the classical-PNT stretched-exponential envelope are closed. Continued investigation is justified only by a quantitatively sharper sub-envelope expansion or a true moving boundary where one fixed uniform exponent panel no longer applies.
+The fixed-interior mechanism, both isolated diagonal endpoint singularities, and the compact fixed-power branch through the strongest standard Korobov–Vinogradov-shaped PNT envelope are closed. Continued fixed-power investigation is justified only by structure specific to Wang's symmetric squared-von-Mangoldt smoothing that beats the generic PNT transfer, or by genuinely new prime-counting input. Otherwise the remaining route is a true moving boundary where one fixed uniform exponent panel no longer applies.
