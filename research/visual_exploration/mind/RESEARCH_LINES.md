@@ -14,30 +14,30 @@ VIS-294--VIS-298 close the apparent moving lower-source branch. Once the explici
 
 The earlier `sqrt(log T)` and related lower-source thresholds were proof-packaging artifacts rather than arithmetic transitions.
 
-## Resolve the inside--outside coherence at the true upper localization layer
+## Resolve the interior mean-value budget at the true upper pointwise layer
 
 **Linked intuition:** `MI-040-wang-pointwise-upper-ceiling-is-a-localization-coherence-budget`.
 
-VIS-299 shows that the fixed exponent gap `x<=T^lambda`, `lambda<theta`, was also not the true pointwise boundary. Re-running Wang's displayed localization proof gives the same gamma-recentered asymptotic whenever
+VIS-299 shows that the fixed exponent gap was not the true pointwise boundary. Re-running Wang's displayed localization proof gives the same gamma-recentered asymptotic whenever `x log^3 T/H -> 0`.
 
-`x log^3 T / H -> 0`, with `H=T^theta`.
+VIS-300 identifies the only term carrying that extra logarithm. The pure inside/outside leakage energies are already `O(x log^2 T)`, so at `x=O(H/log^3 T)` they are `o(H)`; the whole unresolved scale is the bilinear inside--outside coherence `C_I(x)`.
 
-VIS-300 identifies what actually remains at the first unresolved scale. Writing `A_I` for the interval field and `R_I=A-A_I` for the omitted-zero tail, Wang's exact energy identity gives
+VIS-301 then removes that localization boundary. The unconditional Vinogradov--Korobov zero-free region inserts the near-height attenuation `x^(-eta_T)` with `eta_T asymp L^(-2/3)(log L)^(-1/3)` into both sides of the coherence term. Re-running the localization proof with that information gives `C_I(x)=o(H)` and preserves the pointwise asymptotic throughout
 
-`2pi F_I(x)-int_I |A|^2 = int_(R\I)|A_I|^2 - 2 Re int_I A_I overline(R_I) - int_I |R_I|^2`.
+`x=o(H/L^2)`.
 
-Both pure leakage energies are only `O(x log^2 T)`, hence already `o(H)` when `x=O(H/log^3 T)`. The extra logarithm in Wang's `O(x log^3 T)` localization bound comes solely from estimating the bilinear cross-coherence
+The next generic `H`-scale term is therefore the **interior Montgomery--Vaughan mean-value remainder** `O(x log^2(2x))`, which reaches output scale at `x asymp H/L^2`. The live upper question is whether Wang's exact coefficients
 
-`C_I(x)=int_I A_I(x,t) overline(A(x,t)-A_I(x,t)) dt`
+`a_n=(Lambda(n)/sqrt(n)) min(n/x,x/n)`
 
-by absolute values. At `x~H/log^3 T`, the whole unresolved `H`-scale problem is therefore whether `Re C_I(x)=o(H)`, has a deterministic `H`-scale correction, or can survive under an admissible control.
+have enough arithmetic structure to improve that generic bound, produce a stable deterministic correction, or realize the `H` scale sharply. Any continuation should attack this exact interior term. Re-estimating localization leakage or the old `H/L^3` coherence without changing the zero-free input is no longer a live boundary test.
 
-The live upper question is no longer “improve localization tails” in general. Their `L^2` masses are already negligible at the boundary. The next probe must exploit phase/cancellation structure of this **specific inside--outside bilinear term**, compute its leading contribution, or construct a control showing that an `H`-scale coherence term can persist. The separate fixed-power arithmetic question remains: can the prime-source envelope itself be improved with information genuinely weaker than the RH-equivalent continuation route?
+The separate fixed-power arithmetic question remains: can the prime-source envelope itself be improved with information genuinely weaker than the RH-equivalent continuation route?
 
-## Recombine exact deterministic structure and decompose localization before interpreting an error wall
+## Recombine exact deterministic structure and decompose every newly exposed proof wall before interpreting it
 
-The current ledger separates packet total variation, support width, moving-test seminorm, source exponent, requested output scale, prime-power source measure, smoothing multiplier, theorem-uniformity range, pure localization leakage, cross-coherence, explicit-formula remainder, deterministic gamma normalization and analytic domain of the source Dirichlet transform.
+The current ledger separates packet total variation, support width, moving-test seminorm, source exponent, requested output scale, prime-power source measure, smoothing multiplier, theorem-uniformity range, pure localization leakage, cross-coherence, interior Dirichlet-polynomial mean-value error, explicit-formula remainder, deterministic gamma normalization and analytic domain of the source Dirichlet transform.
 
-VIS-294--VIS-300 now show three ways a nominal boundary can be misread. Exact deterministic pieces may have been split before Cauchy--Schwarz; a theorem may be packaged with fixed parameters even though its proof exposes a larger moving regime; or several error mechanisms may be bundled into one big-O even though only one coherent cross term is load-bearing at the boundary.
+VIS-294--VIS-301 now show four ways a nominal boundary can be misread. Exact deterministic pieces may have been split before Cauchy--Schwarz; a theorem may be packaged with fixed parameters even though its proof exposes a larger moving regime; several errors may be bundled into one big-O even though only one cross term is load-bearing; and that cross term can itself fall below resolution once classical source information is inserted, exposing a different interior estimate underneath.
 
-A genuine new source transition must survive exact recombination, proof-level uniformity, and an energy decomposition that isolates the term actually reaching output scale. The current upper candidate is not the raw ratio `x log^3 T/H` by itself but the behavior of `C_I(x)` when that ratio is order one.
+A genuine new source transition must survive exact recombination, proof-level uniformity, energy decomposition and coefficient-specific testing of the first remaining term at output scale. The current upper candidate is not the old ratio `xL^3/H`, but whether the exact Wang Dirichlet polynomial improves or saturates the `xL^2` mean-value horizon.

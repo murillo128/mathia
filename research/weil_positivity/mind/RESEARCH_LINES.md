@@ -2,7 +2,7 @@
 
 This file holds the current mathematical questions suggested by the durable Weil-positivity intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Find a genuinely noncentral finite--archimedean sign mechanism before critical positive geometry collapses
+## Find a genuinely noncentral finite--archimedean sign mechanism that survives critical specialization and scale globalization
 
 **Linked intuitions:** `MI-039-enriched-semigroups-inherit-obstructed-scalar-shadows-or-universal-lifts` through `MI-052-rankin-selberg-positive-grams-die-at-the-weil-half-density`.
 
@@ -12,20 +12,16 @@ WP-358 shows that nonconstant Fourier modes do retain genuine arithmetic informa
 
 WP-359--WP-362 classify scalar/smooth repairs. Fixed smooth-height interference does not preserve the critical carrier; all-prime critical amplitudes fail ordinary `l2` completion; the Eisenstein eigenline is scalar; and the completed logarithmic derivative recovers the desired Mangoldt half-density only by importing the zeta divisor and abandoning inherited positivity.
 
-WP-363--WP-364 then test genuinely two-parameter positive geometry. The finite Rankin--Selberg coefficient Gram is positive for `s>1`, but `1/zeta(2s)` kills it at `s=1/2`. Projectivizing removes that common scalar canonically, yet the continued normalized overlap becomes unbounded near critical-line zeros and the Fubini--Study metric tends to `-infinity` there.
+WP-363--WP-365 test increasingly canonical positive geometry. The finite Rankin--Selberg Gram dies at the critical exponent; projectivization leaves unbounded overlap and negative Fubini--Study geometry near critical-line zeros; and even tensoring with an independent positive Bessel/Whittaker Hilbert Gram generates the completed zeta factors but does not preserve Hilbert positivity through critical specialization.
 
-WP-365 closes the strongest canonical finite--archimedean tensor repair. The independent Bessel/Whittaker kernel
+WP-366 closes the literal fixed-height Whittaker-incidence repair under canonical scalar globalization. At fixed `Y`, the positive feature family `lambda_r(n)K_(ir)(2 pi nY)` genuinely entangles finite and archimedean variables through `nY`. However any positive scalar dilation-covariant measure on `Y` is power-Haar, and Mellin averaging then separates the incidence exactly back into the WP-365 Rankin--Selberg tensor geometry. At critical half-density the positive diagonal already diverges.
 
-`H_s(r,u)=int_0^infinity K_(ir)(x)K_(iu)(x)x^(s-1)dx`
+Thus it is not enough to introduce a non-product local feature before continuation. The coupling must also **survive the source-defined operation that globalizes or removes the scale variable**. A viable route needs a genuinely noncentral interaction, boundary remainder, cohomological/intersection form, source-fixed scale, intrinsically non-Haar/operator-valued scale mixing, or another global degree of freedom whose sign is not inherited from multiplying positive local Grams and which cannot be Mellin-diagonalized back to the failed Rankin--Selberg product.
 
-is an honest positive Hilbert Gram for every `s>0` and supplies a genuinely nonseparable archimedean correlation. Tensoring it with the finite Hecke Gram is positive before continuation and produces the completed zeta factors automatically, not by a fitted scalar gauge. Nevertheless its intrinsic projective overlap at `s=1/2` still blows up near every unconditional critical-line zero, while the corresponding Fubini--Study metric again tends to `-infinity`.
+## Keep arithmetic content, local positivity, tensorization, scale globalization and critical sign coercivity separate
 
-Thus even a canonical product of independently positive finite and archimedean local sectors does not preserve Hilbert positivity through the critical specialization. Standard Whittaker normalization cannot help because projective geometry removes separated gauges. A viable route must introduce a **genuinely noncentral/non-product finite--archimedean mixing mechanism before continuation**—for example an interaction term, boundary remainder, cohomological/intersection form or source-forced orthogonal sector whose sign is not inherited from multiplying positive local Grams.
+The current audit distinguishes finite Hecke structure, nonconstant divisibility projections, smooth-orbit interference, strong all-prime completion, scalar Euler completion, finite Rankin--Selberg positivity, intrinsic projectivization, independent positive Bessel geometry, finite--archimedean tensorization, fixed-height `nY` incidence, dilation-covariant globalization, critical overlap blowup and negative projective metric.
 
-## Keep arithmetic content, local positivity, tensorization and critical sign coercivity separate
+WP-365 removes the objection that the previous failure came from omitting archimedean Hilbert geometry. WP-366 removes a different objection: even retaining a genuinely nonseparable finite--archimedean incidence at fixed height does not help if the canonical positive scalar scale average is forced by dilation covariance and Mellin-separates it again.
 
-The current audit now distinguishes finite Hecke structure, nonconstant divisibility projections, smooth-orbit interference, strong all-prime completion, scalar Euler completion, finite Rankin--Selberg Gram positivity, intrinsic projectivization, an independent positive Bessel sector, positive finite-times-archimedean tensorization, critical overlap blowup and negative projective metric.
-
-WP-365 is especially important because it removes the objection that the previous failure came from omitting the archimedean Hilbert geometry or using only scalar Gamma factors. The Gamma coupling is now generated by an independent positive feature space and is genuinely nonseparable in `(r,u)`, yet the arithmetic zero divisor still destroys the continued projective inequalities.
-
-A proposal should therefore state where the critical `p^(-1/2)` or `(log p)p^(-1/2)` amplitude lives before positive closure, what completion/domain makes the object meaningful, which **non-product** degrees of freedom survive at `s=1/2`, and what theorem fixes their orientation independently of the divisor being constrained. Multiplying more positive local Gram factors, completing the same Rankin--Selberg product, or changing scalar normalization is now classified rather than a new route.
+A proposal should therefore state where the critical `p^(-1/2)` or `(log p)p^(-1/2)` amplitude lives before positive closure, what completion/domain makes the object meaningful, how any auxiliary scale is selected or globalized, which non-product degrees of freedom survive that operation at `s=1/2`, and what theorem fixes their orientation independently of the divisor being constrained. Multiplying more positive local factors, standard Whittaker normalization, positive scalar dilation averaging, scalar completion or projective normalization is now classified rather than a new route.
