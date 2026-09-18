@@ -9,6 +9,7 @@ based_on:
   - research/arithmetic_fidelity/findings/AF-418-full-height-rectangles-expose-sigma-2-absolute-tail-transition.md
   - research/arithmetic_fidelity/findings/AF-419-subcritical-linear-shifts-admit-uniform-full-tail-resummation.md
   - research/arithmetic_fidelity/findings/AF-420-critical-derivative-window-has-sharp-subthreshold-absolute-resummation-domain.md
+  - research/arithmetic_fidelity/findings/AF-421-finite-critical-windows-reduce-to-full-column-saddle-hierarchy.md
 ---
 
 # Linear derivative-shift full-tail resummation
@@ -75,30 +76,59 @@ if `s_n/n -> 2` and `limsup b_n(A)<1`, the full sector converges uniformly on `0
 \tau_n=\left(\frac{s_n}{n}-2\right)\log n\to\tau,
 \]
 
-this gives the exact subthreshold domain `a<e^{-tau}`. Conversely, for `a e^tau>1` the single full-height column grows exponentially. On the exact critical sequence `s_n=2n`, the boundary is `a=1` (`c=2pi`): the candidate limit is proved for every compact `a<1`, while the `lambda=(1^n)` term already grows linearly at `a=1`.
+this gives the exact absolute subthreshold domain `a<e^{-tau}`. Conversely, for `a e^tau>1` the single full-height column grows exponentially; on `s_n=2n`, the boundary `a=1` already gives a linearly growing full-height term.
 
-The signed complete sum could still exhibit global cancellations on the boundary and in the superthreshold region, so the growing-column obstruction does not by itself refute the candidate exponential there.
+AF-421 resolves the missing signed organization throughout the finite-`tau` window. If `b_n->b in (0,infinity)`, the exponentially leading partition families are exactly packets around full-height rectangles `(r^n)`, with rates
+
+\[
+L_r(b)=\frac{b^r}{(r!)^2}.
+\]
+
+Away from the square transition values `b=1,4,9,...`, one packet with `r=floor(sqrt(b))` dominates and carries the same residual Schur-Cauchy factor `exp(-a e^2)`. Thus every non-square superthreshold value `b>1` gives genuine signed divergence rather than hidden cancellation back to the fixed-partition candidate.
+
+At `b=m^2`, only the adjacent packets `r=m-1,m` tie on the exponential scale. Their exact amplitude ratio is
+
+\[
+F_{n,m}
+=
+\left(\frac{a}{n^2}\right)^n
+\left(\frac{n+m}{m}\right)^{s_n-1}
+\frac{\zeta(2(n+m))}{\zeta(2m)}
+\left(\frac{2(n+m)-1}{2m-1}\right)^2.
+\]
+
+For even `n` their signs agree. For odd `n` they oppose, so only a finer regime with `F_{n,m}` sufficiently close to `1` can still support leading cancellation. The first square is already closed on the exact sequence `s_n=2n,a=1`: the complete signed sector diverges linearly with parity-alternating sign.
 
 ## Decisive test
 
-The strictly subcritical branch is resolved by AF-419. The finite-`tau` critical window is also resolved throughout the absolute subthreshold region `a e^tau<1` by AF-420.
-
-The remaining critical problem starts at the effective boundary
+The finite-`tau` problem is now reduced to the **square-transition fibers**
 
 \[
-a e^\tau\ge1.
+b=m^2,\qquad m\ge1,
 \]
 
-There, derive an exact signed resummation/cancellation mechanism for the exponentially or polynomially large full-height sectors, or derive a signed asymptotic/counterexample showing that the complete sum depends on additional scaling data and differs from the fixed-degree candidate.
+and specifically to the odd-`n` subregimes where the adjacent-packet ratio `F_{n,m}` approaches `1` closely enough that their leading terms can cancel.
 
-For genuinely supercritical ratios `sigma>2`, absolute control is impossible already from AF-418. The same signed alternative remains: either identify a global cancellation mechanism or prove a different/nonexistent complete limit.
+Derive the next asymptotic scale of `F_{n,m}` under `b_n->m^2`. Determine whether the two leading packets:
 
-The critical analysis should retain the effective coordinate `b_n(a)=a n^{s_n/n-2}` rather than only `s_n/n`, because AF-420 proves that this finer coordinate governs the absolute phase boundary.
+1. have an explicit nonzero residual after cancellation;
+2. require a third packet or a near-full-column packet at the same next order; or
+3. can genuinely recover the fixed-partition exponential under a fine-tuned derivative-depth sequence.
+
+For `m=1`, retain AF-421's next coordinate
+
+\[
+\Gamma_n=n\,b_n^n,
+\]
+
+which already classifies whether the one-full-column packet vanishes, stays finite, or dominates inside the `b_n->1` layer.
+
+Separately, for genuinely supercritical ratios `sigma>2`, AF-418 still rules out absolute control but AF-421 does not apply because `b_n` no longer has a finite limit. Determine the correct growing full-column saddle there rather than extrapolating the finite-window classification.
 
 ## Downstream gate
 
-Only after the exceptional-`1` signed sector is controlled in the boundary/superthreshold derivative-depth regime should AF-416's omitted-`1` and one-/zero-singular-block estimates be revisited for growing `s_n`. Their fixed-shift negligibility cannot be assumed.
+Only after the exceptional-`1` signed sector is controlled at the remaining square-transition fibers and in the genuinely supercritical derivative-depth regime should AF-416's omitted-`1` and one-/zero-singular-block estimates be revisited for growing `s_n`. Their fixed-shift negligibility cannot be assumed.
 
 ## Research disposition
 
-Accepted. AF-419 resolves all strictly subcritical derivative ratios. AF-420 further resolves the critical `n/log n` window below the sharp effective threshold `b=a e^tau=1` and shows that the full-height column blocks absolute control on the other side; for `s_n=2n` even the boundary term grows linearly. The live question is now genuinely signed: boundary/superthreshold cancellation or failure in the critical window, followed by the `sigma>2` regime.
+Accepted. AF-419 resolves all strictly subcritical derivative ratios. AF-420 resolves the finite-`tau` absolute subthreshold phase. AF-421 then resolves the signed finite-window problem away from the discrete square transitions and closes the exact first boundary `s_n=2n,a=1` by proving parity-alternating linear divergence. The live finite-window question is now only the finer odd-`n` cancellation problem at `b=m^2`; the genuinely supercritical `sigma>2` regime remains separate.
