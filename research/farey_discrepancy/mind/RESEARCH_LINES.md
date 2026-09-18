@@ -4,7 +4,7 @@ This file holds the current mathematical questions suggested by the durable Fare
 
 ## Push source-side rigidity into weighted amplitude stability, then expose it from Farey observations
 
-**Linked intuitions:** `MI-001-cumulative-farey-discrepancy-is-mertens-energy` through `MI-029-dyadic-signed-fourier-recovery-has-a-sharp-square-root-bandwidth-threshold`.
+**Linked intuitions:** `MI-001-cumulative-farey-discrepancy-is-mertens-energy` through `MI-030-sub-square-root-farey-bands-remain-noninjective-under-coordinatewise-mobius-fidelity`.
 
 The observation geometry is sharply source-class relative. Complete Farey fields and consecutive midpoint histories are exactly invertible over unrestricted formal sources. Sparse geometric horizons become target-rigid inside the bounded squarefree multiplicative cone, while FD-175--FD-179 construct permanent deletion-only controls that match every dyadic midpoint despite agreeing with Möbius through essentially the whole squarefree-rank range.
 
