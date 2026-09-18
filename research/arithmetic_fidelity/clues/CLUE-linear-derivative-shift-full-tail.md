@@ -8,6 +8,7 @@ based_on:
   - research/arithmetic_fidelity/findings/AF-417-linear-derivative-shift-renormalizes-left-tail-plancherel-sectors.md
   - research/arithmetic_fidelity/findings/AF-418-full-height-rectangles-expose-sigma-2-absolute-tail-transition.md
   - research/arithmetic_fidelity/findings/AF-419-subcritical-linear-shifts-admit-uniform-full-tail-resummation.md
+  - research/arithmetic_fidelity/findings/AF-420-critical-derivative-window-has-sharp-subthreshold-absolute-resummation-domain.md
 ---
 
 # Linear derivative-shift full-tail resummation
@@ -56,30 +57,48 @@ Hence AF-415-style absolute domination is impossible for `sigma>2`. At `sigma=2`
 \left(\frac{s_n}{n}-2\right)\log n,
 \]
 
-which is invisible to every fixed partition. For `s_n=2n`, even the single column `(1^n)` grows exponentially in normalized magnitude when `c>2pi`.
+which is invisible to every fixed partition.
 
-AF-419 closes the opposite side of this obstruction. If `limsup s_n/n<2`, a column-height split plus Pieri's rule gives a shape-uniform absolute majorant: columns bounded away from full height obey a Cauchy majorant, while all nearly full-height columns are collectively superexponentially suppressed. Consequently the complete exceptional-`1` sector converges to the fixed-degree candidate throughout the subcritical regime.
+AF-419 closes the strictly subcritical branch. If `limsup s_n/n<2`, a column-height split plus Pieri's rule gives a shape-uniform absolute majorant and the complete exceptional-`1` sector converges to the fixed-degree candidate.
 
-The signed complete sum could still exhibit global cancellations at or above the critical ratio, so AF-418 does not by itself refute the proposed exponential limit there.
+AF-420 penetrates the critical window itself. With
+
+\[
+a=\frac{c^2}{4\pi^2},
+\qquad
+b_n(a)=a\,n^{s_n/n-2},
+\]
+
+if `s_n/n -> 2` and `limsup b_n(A)<1`, the full sector converges uniformly on `0<=a<=A` to `exp(-a e^{s_n/n})`. If
+
+\[
+\tau_n=\left(\frac{s_n}{n}-2\right)\log n\to\tau,
+\]
+
+this gives the exact subthreshold domain `a<e^{-tau}`. Conversely, for `a e^tau>1` the single full-height column grows exponentially. On the exact critical sequence `s_n=2n`, the boundary is `a=1` (`c=2pi`): the candidate limit is proved for every compact `a<1`, while the `lambda=(1^n)` term already grows linearly at `a=1`.
+
+The signed complete sum could still exhibit global cancellations on the boundary and in the superthreshold region, so the growing-column obstruction does not by itself refute the candidate exponential there.
 
 ## Decisive test
 
-The `sigma<2` branch is resolved by AF-419. No further absolute-tail argument is needed there.
+The strictly subcritical branch is resolved by AF-419. The finite-`tau` critical window is also resolved throughout the absolute subthreshold region `a e^tau<1` by AF-420.
 
-For `sigma>=2`, an AF-415/AF-419-style absolute argument is ruled out in general. Either derive an exact signed resummation/cancellation mechanism that controls the exponentially large growing-partition sectors, or construct a signed asymptotic/counterexample showing that the complete sector depends on additional scaling data and does not have the fixed-degree candidate limit.
-
-The critical regime must track at least the window
+The remaining critical problem starts at the effective boundary
 
 \[
-s_n=2n+\Theta(n/\log n),
+a e^\tau\ge1.
 \]
 
-because AF-418 proves that the coarser datum `s_n/n -> 2` does not control individual full-height sectors.
+There, derive an exact signed resummation/cancellation mechanism for the exponentially or polynomially large full-height sectors, or derive a signed asymptotic/counterexample showing that the complete sum depends on additional scaling data and differs from the fixed-degree candidate.
+
+For genuinely supercritical ratios `sigma>2`, absolute control is impossible already from AF-418. The same signed alternative remains: either identify a global cancellation mechanism or prove a different/nonexistent complete limit.
+
+The critical analysis should retain the effective coordinate `b_n(a)=a n^{s_n/n-2}` rather than only `s_n/n`, because AF-420 proves that this finer coordinate governs the absolute phase boundary.
 
 ## Downstream gate
 
-Only after the exceptional-`1` signed sector is controlled in the relevant derivative-depth regime should AF-416's omitted-`1` and one-/zero-singular-block estimates be revisited for growing `s_n`. Their fixed-shift negligibility cannot be assumed.
+Only after the exceptional-`1` signed sector is controlled in the boundary/superthreshold derivative-depth regime should AF-416's omitted-`1` and one-/zero-singular-block estimates be revisited for growing `s_n`. Their fixed-shift negligibility cannot be assumed.
 
 ## Research disposition
 
-Accepted. AF-419 resolves the entire subcritical regime and proves that `sigma=2` is the sharp boundary for this absolute-uniform-integrability architecture. The unresolved question is now only critical/supercritical: whether genuinely signed global cancellation preserves the candidate exponential despite AF-418's growing rectangular sectors, or whether the complete limit retains additional scaling data and changes or fails to exist.
+Accepted. AF-419 resolves all strictly subcritical derivative ratios. AF-420 further resolves the critical `n/log n` window below the sharp effective threshold `b=a e^tau=1` and shows that the full-height column blocks absolute control on the other side; for `s_n=2n` even the boundary term grows linearly. The live question is now genuinely signed: boundary/superthreshold cancellation or failure in the critical window, followed by the `sigma>2` regime.
