@@ -1,7 +1,7 @@
 ---
 id: CLUE-left-tail-diagonal-order-drift-scale
 type: research-clue
-status: proposed
+status: accepted
 origin: research-watch
 target_line: arithmetic_fidelity
 based_on:
@@ -70,3 +70,7 @@ A fixed-`m` asymptotic, a finite scan over determinant orders, or merely evaluat
 ## Evidence boundary
 
 AF-413 proves only the exact coefficient and its large-order asymptotic. It does not establish a uniform remainder, a diagonal sign theorem, a sharp threshold in `c`, or any all-order total-positivity statement. The proposed `x~1/m` regime is a mathematically forced balance scale for the leading coefficient, not yet an observed or proved transition of the full determinant. No arithmetic-prime discriminator or RH consequence is established.
+
+## Research disposition
+
+Accepted. AF-414 proves that `x=c/n` is a genuine nonuniformity scale already inside the double-rank-two Cauchy--Binet sector: the first competing exponent family has opposite sign and a nonzero limiting relative size, while every fixed excess degree has a signed Plancherel limit. The live question is now the uniform control not supplied by that fixed-degree theorem: the growing partition tail, exponent sets omitting `1`, and determinant sectors using fewer than two singular-block entries must be controlled on the same diagonal before the full determinant asymptotic or sign can be decided.
