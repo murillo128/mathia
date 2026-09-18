@@ -23,6 +23,7 @@ based_on:
   - research/visual_exploration/findings/VIS-298-wang-gamma-recentering-removes-moving-h-barrier.md
   - research/visual_exploration/findings/VIS-299-wang-pointwise-moving-ceiling-h-over-log-cubed.md
   - research/visual_exploration/findings/VIS-300-wang-localization-cross-coherence.md
+  - research/visual_exploration/findings/VIS-301-wang-zero-free-localization-log-squared-window.md
 ---
 
 # Does Wang packet localization preserve source information without manufacturing strip gain?
@@ -37,30 +38,27 @@ based_on:
 
 for every moving `x->infinity` below one fixed exponent ceiling.
 
-`VIS-299` removes that fixed exponent gap as a **pointwise** obstruction. Re-running Wang's localization proof rather than substituting a moving theorem parameter shows that the same asymptotic holds whenever
-
-`x L^3 / H -> 0`.
-
-Equivalently, for `x=T^beta(T)`,
-
-`(theta-beta(T))L - 3 log L -> +infinity`.
-
-Thus `beta(T)` may approach `theta`; the first unresolved upper layer in the current proof is where the explicit localization remainder `O(xL^3)` reaches `H` scale, around `x asymp H/L^3`.
-
-`VIS-300` now isolates that layer exactly. With `R_I=A-A_I`, Wang's Lemma 2.3 gives
-
-`2*pi F_I - integral_I |A|^2`
-` = integral_(R\I)|A_I|^2 - 2 Re integral_I A_I overline(R_I) - integral_I|R_I|^2`.
-
-Both pure leakage energies are only `O(xL^2)`. Therefore for every `x=O(H/L^3)` they are already `o(H)`, and after inserting the interior expansion the complete `H`-scale ambiguity is
+`VIS-299` then removes the fixed exponent gap as a pointwise obstruction, extending the same asymptotic through `x=o(H/L^3)`. `VIS-300` decomposes the first apparent upper boundary and shows that the two pure localization leakage energies are already `o(H)` there; the only remaining `H`-scale term was the inside--outside coherence
 
 `C_I(x)=Re integral_I A_I(x,t) overline(A(x,t)-A_I(x,t)) dt`.
 
-The extra factor `log H` in Wang's `O(xL^3)` estimate enters only when this bilinear term is bounded by absolute values. The upper source problem is consequently an inside--outside coherence problem, not a tail-mass problem.
+`VIS-301` now removes that `H/L^3` localization boundary as well. Retaining the classical Vinogradov--Korobov zero-free-region bound on the real parts of the zeros inserts a factor
+
+`q_T(x)=x^(-eta_T)`,
+
+with `eta_T asymp L^(-2/3)(log L)^(-1/3)`, into the near-height pieces of both `A_I` and `A-A_I`. For sources near the old upper layer this factor is super-polynomially small in `L`. Re-running Wang's localization proof with that information gives
+
+`C_I(x)=o(H)`
+
+and the same pointwise pair-correlation asymptotic throughout
+
+`x=o(H/L^2)`.
+
+The next generic `H`-scale term is therefore not localization at all. It is the `O(x log^2(2x))` Montgomery--Vaughan mean-value error for Wang's Dirichlet polynomial, which reaches output scale at `x asymp H/L^2`.
 
 ## Research question
 
-Two genuinely distinct source routes remain.
+Two distinct source routes remain.
 
 For the **fixed-power real-axis source**, is there a property of
 
@@ -68,44 +66,42 @@ For the **fixed-power real-axis source**, is there a property of
 
 strictly weaker than the RH-equivalent half-plane pole exclusion of `VIS-293`, that improves the generic Korobov--Vinogradov envelope and survives Wang's complete error budget?
 
-For the **upper localization layer**, does the bilinear coherence
+For the **moving upper pointwise layer**, can the exact coefficient structure of Wang's Dirichlet polynomial improve, evaluate, or prove sharp the mean-value remainder
 
-`C_I(x)=Re integral_I A_I(x,t) overline(A(x,t)-A_I(x,t)) dt`
+`O(sum n a_n^2) = O(x log^2(2x))`
 
-satisfy `C_I(x)=o(H)` when `x asymp H/L^3`, or does it have a deterministic or oscillatory `H`-scale correction? If it is small, what zero-phase or endpoint structure forces that cancellation? If it is not small, can its leading term be identified and separated from genuinely arithmetic source information?
+when `x asymp H/L^2`? In particular, is there cancellation in the off-diagonal time integral that is invisible to the generic Montgomery--Vaughan bound, or can an admissible coefficient/control model show that an `H`-scale remainder genuinely survives?
 
-A genuinely bounded source `x=O(1)` remains separate. A moving-support version of Wang's integrated Theorem 2.2 is also separate: `VIS-299` controls the pointwise source statistic and does not establish uniformity for a test function whose support changes with `T`.
+A genuinely bounded source `x=O(1)` remains separate. A moving-support version of Wang's integrated Theorem 2.2 is also separate: the current findings concern the pointwise source statistic and do not establish uniformity for a test function whose support changes with `T`.
 
 ## Why it may matter
 
-The source-scale search space has been compressed substantially. Neither the moving lower boundary nor a fixed exponent gap below `theta` is a live pointwise obstruction, and `VIS-300` rules out pure localization leakage as the explanation for the first remaining boundary. Any upper-source signal within Wang's present framework must now enter through one explicit bilinear coherence or through arithmetic information stronger than the generic PNT envelope.
+The source-scale search space is now considerably cleaner. The moving lower boundary, the fixed exponent gap, and the apparent `H/L^3` localization wall have all collapsed under exact recombination, proof-level uniformity, or classical zero-free information. Continuing to optimize localization tails would attack a term that is already below the requested `H` resolution in the full range where the current interior mean-value argument remains asymptotic.
 
-This gives a much sharper target than improving a global `O(xL^3)` remainder. A proof that `C_I=o(H)` at the boundary would extend the `VIS-299` asymptotic without needing smaller tail energy; a nonzero `H`-scale limit would instead identify the actual endpoint-localization correction that the present absolute-value proof hides.
+The next positive result must therefore act on a different information channel. A gain over the `x log^2 x` interior mean-value error would genuinely enlarge the pointwise source window; a sharpness mechanism would instead certify that the current proof has reached a real Dirichlet-polynomial barrier rather than another packaging artifact.
 
 ## Decisive test
 
 For the fixed-power branch, state a concrete real-axis estimate or secondary expansion for `S(x)-log x`, derive it from arithmetic information strictly weaker than the pole exclusion of `VIS-293`, and propagate it through all `D_x`, gamma/zeta, localization, and cross-term errors. Kill the route if the gain is only a generic PNT substitution, smoothing attenuation, an RH-equivalent continuation assumption, or a term swallowed by another Wang remainder.
 
-For the upper branch, analyze `C_I(x)` directly in the moving range `x asymp H/L^3`. Keep the interval/exterior split explicit and preserve the oscillatory factor carried by the zero kernel rather than replacing it immediately by absolute values. A decisive outcome is one of:
+For the moving upper branch, work directly with Wang's exact coefficients
 
-- prove `Re C_I=o(H)` from unconditional zero information already available;
-- derive a stable deterministic `H`-scale correction and show how it modifies the pointwise asymptotic;
-- construct a mathematically admissible matched zero model with the same relevant local density/correlation constraints in which an `H`-scale cross term survives, showing that additional arithmetic input is necessary.
+`a_n=(Lambda(n)/sqrt(n)) min(n/x,x/n)`
 
-Do not count a smaller `L^2` bound for `A-A_I` or exterior `A_I` as progress by itself; `VIS-300` already shows those masses are `o(H)` at the boundary. Kill the upper route if every proposed improvement implicitly assumes the desired pair-correlation/zero-distribution conclusion, or if the coherence term is reproduced generically by an admissible non-arithmetic control.
+and the interval integral of `D_x`. Determine whether the generic mean-value remainder `O(sum n a_n^2)` can be replaced near `x asymp H/L^2` by an `o(H)` term, an explicit lower-order correction, or a matching lower/control construction. Preserve the actual coefficient frequencies and interval length; do not infer a gain by assuming the pair-correlation or prime-variance conclusion that the statistic is meant to test.
 
-Do not reopen a moving lower-source branch unless a new hypothesis invalidates the exact recombination of `VIS-298`; changing only the rate at which `x->infinity` is not such a hypothesis.
+A decisive outcome is one of: an unconditional coefficient-specific cancellation giving `o(H)` at the `L^-2` boundary; a stable deterministic `H`-scale correction that can be separated from the main source law; or a matched admissible model showing that the generic `xL^2` scale is genuinely attainable and additional arithmetic input is necessary.
+
+Do not reopen the `H/L^3` localization branch unless a new hypothesis invalidates the zero-free suppression used in `VIS-301`. Improving the `L^2` leakage masses or re-estimating `C_I` without changing that input is no longer a live upper-boundary test.
 
 ## Evidence boundary
 
-`VIS-283`--`VIS-299` establish reductions, negative controls, exact decomposition identities, normalization corrections, closure of the moving lower-source branch, and extension of the **pointwise** source asymptotic through every `x=o(H/L^3)`. `VIS-300` further establishes that at `x=O(H/L^3)` both pure leakage energies are `o(H)` and the only remaining `H`-scale localization term is the inside--outside bilinear coherence `C_I(x)`.
+`VIS-283`--`VIS-300` establish the source reductions, normalization corrections, lower-source closure, pointwise moving-source extension, and exact localization-energy decomposition. `VIS-301` additionally establishes, using the unconditional classical zero-free region, that the complete localization error is `o(H)` for every moving source with `x=o(H/L^2)`.
 
-None of these findings determines the sign, size, or asymptotic law of `C_I` at the boundary. They also do **not** improve the Korobov--Vinogradov arithmetic input, control a genuinely bounded source by the same formula, or prove a moving-support version of Wang's integrated pair-correlation theorem.
-
-In particular, `H/L^3` remains a proof boundary, not an established transition of `F_I`.
+None of these findings improves the coefficient-specific mean-value error at `x asymp H/L^2`, improves the fixed-power Korobov--Vinogradov source envelope, controls a genuinely bounded source by the same formula, or proves a moving-support version of Wang's integrated pair-correlation theorem. In particular, `H/L^2` is currently a **proof boundary produced by the interior Dirichlet-polynomial estimate**, not an established transition of `F_I`.
 
 ## Research disposition
 
-Outcome so far: **narrowed to one bilinear localization observable**.
+Outcome so far: **upper pointwise branch narrowed from localization coherence to the interior `x log^2 x` mean-value horizon**.
 
-The moving lower-source branch remains closed. The pointwise upper-ceiling branch no longer asks for a generic improvement of Wang's tail bounds: it asks whether the inside field and the outside-zero tail are asymptotically orthogonal at absolute `H` resolution, or what correction replaces orthogonality. The separate fixed-power source-specific arithmetic question remains live.
+The moving lower-source and `H/L^3` localization branches are closed under the current hypotheses. The accepted clue remains live for the coefficient-specific `H/L^2` question and for the separate fixed-power source-specific arithmetic question; bounded-source and moving-test-function questions still require independently justified targets.
