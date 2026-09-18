@@ -1,17 +1,27 @@
-# MI-046 — Uniformly analytic features preserve fixed-aperture compressibility
+# MI-046 — Uniform projective continuity preserves fixed-aperture compressibility
 
-**Evidence level:** exact synthesis from [WI-345](../../findings/WI-345-fixed-degree-polynomial-carriers-remain-compressible.md) and [WI-346](../../findings/WI-346-uniformly-analytic-bow-features-remain-compressible.md). The broad preservation of Kolmogorov-width decay under holomorphic maps is prior art; the Mathia content is the explicit fixed-aperture bow specialization and conditioning barrier.
+**Evidence level:** exact synthesis from [WI-345](../../findings/WI-345-fixed-degree-polynomial-carriers-remain-compressible.md), [WI-346](../../findings/WI-346-uniformly-analytic-bow-features-remain-compressible.md), and [WI-347](../../findings/WI-347-extensive-bow-feature-rank-requires-projective-resolution-collapse.md). Polynomial/analytic approximation and Kolmogorov-width mechanisms are classical in broad form; the Mathia content is the fixed-aperture projective-resolution consequence for the bow carrier.
 
-WI-344 proves that one bounded logarithmic source aperture cannot support an extensive family of scale-preserving height directions after fixed height-independent linear preprocessing. WI-345 shows that passing to a fixed-degree polynomial/tensor algebra does not change this: degree `p` only enlarges the residual log-frequency aperture by a finite factor, so at fixed `H Delta` and nonvanishing transmission the normalized family still has bounded effective rank.
+WI-344 proves that one bounded logarithmic source aperture cannot support an extensive family of scale-preserving height directions after fixed height-independent linear preprocessing. WI-345 and WI-346 show that the same compression survives fixed-degree polynomial/tensor enrichment and uniformly analytic height-independent maps with controlled coefficient budget and transmission.
 
-WI-346 closes the uniformly analytic extension. Suppose a height-independent feature map has an absolutely convergent bi-homogeneous tensor expansion on the unit carrier sphere with one fixed analytic radius `R>1`, coefficient budget `M_R`, and output norm bounded below by `mu>0`. For any normalized Gram-tail tolerance `tau`, when `H Delta<=1` its effective rank is bounded by
+WI-347 reveals that analyticity was not the essential hypothesis. Normalize the source carriers `w_U` and outputs `h_U` projectively. Suppose that for each `epsilon>0` there is a radius `rho_epsilon>0`, independent of height, such that
 
-`O_R((1+log(M_R/(mu sqrt(tau))))^2)`,
+`d_P(w_U,w_V)<=rho_epsilon` implies `d_P(h_U,h_V)<=epsilon`.
 
-independently of height, source-set size, output dimension and number of sampled ordinates.
+For ordinates sampled in a window of width `H` from a log-frequency aperture `Delta`, a projective source ball of radius `rho_epsilon` covers a height interval of length comparable to `rho_epsilon/Delta`. Consequently the output Gram family has spectral-tail effective rank bounded after
 
-The contrapositive is the useful resource statement. If a fixed-aperture construction really needs effective rank `r(T)->infinity` while retaining a fixed tail fraction, then some apparently secondary feature parameter must itself become expensive: the analytic radius can shrink toward one, the coefficient budget relative to transmitted amplitude can diverge, the polynomial/feature complexity can grow, the source aperture can grow, or the map can become nonsmooth or explicitly height-dependent. Under the uniform analytic hypotheses, maintaining rank beyond `r` already forces `M_R/mu` at least `exp(c_R sqrt(r))` up to fixed constants.
+`N_epsilon = 1+ceil(H Delta/(2 rho_epsilon))`.
 
-Thus `use nonlinear features` is not a generic escape from time--bandwidth compression. Smooth nonlinear enrichment remains information-limited unless its **complexity or conditioning scales with the problem**. The alternative is a source-specific arithmetic cancellation identity whose usefulness does not depend on manufacturing many generic carrier directions at all.
+At the natural bow scale `H Delta<=1`, any feature family with a height-uniform projective continuity modulus therefore has bounded effective dimension at fixed tolerance. This statement does not require linearity, polynomial degree, an analytic expansion, a fixed output dimension, or any particular number of channels.
 
-**Boundary.** The theorem does not cover shrinking analytic radius, unbounded coefficient budgets, hard thresholds/branch singularities, height-dependent maps, growing aperture, or direct signed arithmetic covariance. It is a compression theorem for a declared feature class, not an impossibility theorem for the bow program and not a zero-location result.
+The contrapositive is the useful resource statement. If the construction needs effective rank `r(T)->infinity` while retaining a fixed tail fraction, then its usable source-resolution radius must collapse at least like
+
+`rho=O(H Delta/r(T))`.
+
+For a fixed Hölder law this means the Hölder/Lipschitz constant must grow accordingly. The earlier analytic budget lower bound is one realization of the same phenomenon: extensive rank requires some feature complexity, conditioning or resolution parameter to scale with the problem.
+
+Thus `use nonlinear or nonsmooth features` is not by itself an escape from time--bandwidth compression. A feature map can be arbitrarily complicated in ambient coordinates yet remain information-limited if nearby physical carriers stay nearby in projective output geometry. What matters is whether the map resolves progressively finer differences of the **actual source family** at nonvanishing transmitted scale.
+
+The alternative is to bypass generic feature-rank manufacture altogether through a source-specific arithmetic identity, especially the distinguished signed covariance sought by the bow program. Such an identity need not create many generic height directions if it couples directly to the destination quantity.
+
+**Boundary.** The theorem does not cover families whose projective continuity radius collapses with height, diverging Lipschitz/Hölder constants, vanishing output transmission, growing source aperture, essential sensitivity to global phase, explicitly height-dependent maps, cross-window/cross-scale constructions, or direct signed arithmetic covariance. It is a compression theorem for uniformly resolvable fixed-aperture feature families, not an impossibility theorem for the bow program and not a zero-location result.
