@@ -1,47 +1,39 @@
 # MI-028 — Sparse midpoint rigidity comes from cross-coordinate multiplicativity, with the threshold set by the source fibre
 
-**Evidence level:** exact synthesis from [FD-170](../../findings/FD-170-consecutive-midpoint-history-inverts-the-entire-source.md) through [FD-186](../../findings/FD-186-prime-detour-cycles-make-physical-prime-subcritical-energy-rigid.md). The quantitative relation rigidity is proved for squarefree-supported perturbations of Möbius; the sharp escape depends materially on whether prime coordinates are allowed to move. These are source-identifiability statements, not Franel--Landau estimates.
+**Evidence level:** exact synthesis from [FD-170](../../findings/FD-170-consecutive-midpoint-history-inverts-the-entire-source.md) through [FD-187](../../findings/FD-187-prime-translated-divisor-cubes-remove-the-rank-penalty-from-physical-prime-rigidity.md). The quantitative relation rigidity is proved for squarefree-supported perturbations of Möbius; the sharp escape depends materially on whether prime coordinates are allowed to move. These are source-identifiability statements, not Franel--Landau estimates.
 
 The midpoint sequence is a changing linear observation of the source. Consecutive horizons invert it exactly, while sparse geometric horizons become target-rigid inside the genuinely multiplicative squarefree source class. FD-175--FD-179 show that this rigidity is not explained by knowing primes, signs, low multiplicative ranks, or even coordinatewise agreement through essentially the entire squarefree-rank range.
 
-For the dyadic ladder, deletion-only sources can match every sampled midpoint while agreeing with Möbius outside a subpolynomial defect set confined to an exceptionally thin high-rank shell. FD-180 first showed that such a repair cannot also make prime-extension multiplicativity too accurate. FD-181 then removed the fragile source assumptions: if `delta=a-mu`, `S=supp(delta)` and `S(x)=o(x/log x)`, with arbitrary signed amplitudes and prime coordinates allowed to move, then for the true prime-extension energy
+For the dyadic ladder, deletion-only sources can match every sampled midpoint while agreeing with Möbius outside a subpolynomial defect set confined to an exceptionally thin high-rank shell. FD-181 gives the broad sparse-fibre tariff: if `delta=a-mu`, `S=supp(delta)` and `S(x)=o(x/log x)`, then the true prime-extension energy
 
 `M_(a,q)(x)=sum_((n,pn) in E_x) |a(pn)-a(p)a(n)|^q`
 
-one has
+obeys
 
 `liminf_(x->infinity) (log x/x) M_(a,q)(x) >= sum_(n in S) |delta(n)|^q/n`.
 
-Thus the general sparse fibre has a first-generation prime-fan rigidity scale `x/log x`: changing enough prime labels or children can in principle screen the fan of one erroneous parent once the support budget reaches that order.
+The physical-prime fibre is much more rigid. Put `c(n)=a(n)/mu(n)` on squarefree coordinates and assume `a(p)=-1`, so every prime is anchored by `c(p)=1`. FD-186 showed that one changed composite `n_0`, with `k=omega(n_0)` and `Delta=|a(n_0)-mu(n_0)|`, already creates an edge-disjoint finite consistency certificate for every fresh prime.
 
-FD-183--FD-184 showed why fixing the prime coordinates changes the geometry. If `a(p)=-1`, a defect cannot be screened by moving the prime labels, and subcritical relation energy propagates through every fixed almost-prime rank. That route suggested a growing-rank uniformity problem, but FD-186 proves that the fixed-rank bootstrap is not the real obstruction.
+FD-187 identifies the exact finite geometry hidden inside that certificate. For each fresh prime `r`, the translated divisors `rd`, `d|n_0`, form the full Boolean cube `Q_k`, joined in series with the direct edge `n_0--n_0r`. For `q>1` define
 
-On the physical-prime fibre define `c(n)=a(n)/mu(n)` on squarefree coordinates, so every prime satisfies `c(p)=1` and
+`B_(k,q)=1+sum_(j=0)^(k-1) [k binom(k-1,j)]^(-1/(q-1))`.
 
-`|a(pn)-a(p)a(n)|=|c(pn)-c(n)|`.
+The exact `q`-capacity of this finite network gives
 
-If `n_0` is any changed squarefree coordinate, `k=omega(n_0)` and `Delta=|a(n_0)-mu(n_0)|`, then every fresh prime `r` gives two routes to `n_0r`: the direct edge `n_0 -> n_0r` and a `k`-edge path from the anchored prime `r` obtained by adjoining the prime factors of `n_0`. The triangle inequality followed by Hölder forces at least
+`M_(a,q)(x) >= (pi(x/n_0)-k) Delta^q / B_(k,q)^(q-1)`
 
-`Delta^q/(k+1)^(q-1)`
+and hence
 
-of `L^q` edge energy on that finite detour. Distinct fresh primes give edge-disjoint detours, hence
+`liminf_(x->infinity) (log x/x) M_(a,q)(x) >= Delta^q/[n_0 B_(k,q)^(q-1)] > 0`.
 
-`M_(a,q)(x) >= (pi(x/n_0)-k) Delta^q/(k+1)^(q-1)`
+For `q=1` the local cost is exactly `Delta`. For `q=2`, `B_(k,2)-1` is the antipodal effective resistance of the divisor cube. Most importantly, for every fixed `q>1`, `B_(k,q)->1` as `k->infinity`. The apparent multiplicative-rank penalty in the single-path proof was therefore an artifact of throwing away the exponentially many parallel divisor routes. High rank does not weaken the physical-prime rigidity certificate; apart from the unavoidable fresh-prime density `1/n_0`, the local cost approaches the full defect `Delta^q`.
 
-and therefore
-
-`liminf_(x->infinity) (log x/x) M_(a,q)(x) >= Delta^q/(n_0(k+1)^(q-1)) > 0`.
-
-So on the physical-prime fibre `M_(a,q)(x)=o(x/log x)` already forces `a=mu`, with no support hypothesis and no rank-uniformity limit. The reusable mechanism is an **anchored finite-cycle consistency certificate**: a changed vertex and a large anchored generator layer create many edge-disjoint short detours, so local relation inconsistency becomes extensive without pushing the defect to growing depth.
-
-FD-185 identifies the only zero-energy escape left by the relation itself. Moving one prime coordinate produces a genuinely multiplicative squarefree source with zero prime-extension energy, but the changed support then has positive density. Quantitatively,
-
-`S(x) >= x/(zeta(2)(p+1)) - M_(a,q)(x)/Delta_p^q + O_p(sqrt(x))`.
-
-Combining this with FD-186 gives
+FD-185 identifies the complementary zero-energy escape. Moving a prime coordinate can produce a genuinely multiplicative squarefree source with zero prime-extension energy, but then the changed support has positive density. Combining the moving-prime tariff with the physical-prime capacity theorem keeps the global classification
 
 `S(x)=o(x)` and `M_(a,q)(x)=o(x/log x)  =>  a=mu`.
 
-The dyadic midpoint observations still do not expose this relation automatically. FD-182 gives one permanent non-Möbius source matching the complete dyadic midpoint ladder while retaining prime-extension energy at its critical fan scale. The source-side relation theorem is now stronger, but the observation-to-relation bridge remains absent.
+The reusable mechanism is now stronger than an anchored short-detour principle: **anchored multiplicative consistency should be priced by the capacity of the whole finite relation network, not by one selected path**. Parallel relation routes can remove apparent depth/rank losses even when every individual path becomes longer.
 
-**Boundary.** FD-186 is critical-scale rather than a sharp-constant theorem, and relation energy alone cannot eliminate moved-prime multiplicative sources without an additional support/amplitude condition. The finite detour argument does not derive prime-extension energy from Farey observations, does not provide the RH-critical Franel--Landau estimate, and does not settle the right weighted replacement for support sparsity when moved-prime or dense perturbation amplitudes tend to zero. A useful continuation should therefore target either a quantitative observation-to-relation modulus on a declared source fibre, a sharp/stable version of the critical detour tariff, or a weighted moving-prime sparsity principle.
+The observation problem remains separate. FD-182 supplies one permanent non-Möbius source matching the complete dyadic midpoint ladder while retaining prime-extension energy at the critical `x/log x` scale. FD-187 strengthens the source-side separator but does not make midpoint data observe it. The live questions are therefore a quantitative observation-to-relation modulus for richer Farey spatial data, the genuinely sharp critical constant/stability law once the full local capacity is used, and a weighted moving-prime sparsity currency when prime perturbation amplitudes can shrink.
+
+**Boundary.** The divisor-cube capacity theorem assumes the physical prime labels are fixed. It does not derive relation energy from Farey observations, remove the moved-prime escape, control dense small-amplitude perturbations by support cardinality, or provide the RH-critical Franel--Landau estimate. The disappearance of the rank penalty is a source-relation result, not a destination theorem.
