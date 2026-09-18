@@ -10,13 +10,21 @@ R_s(K,N):=\frac{2^s\log\log N}{\log K}
 
 reaches `2`, while below that threshold the same random source can have small local `U^s` on every interval and still retain the full WI-195 sliding variance. A natural repair is to remove the zero-increment cubes before taking the `2^{-s}` root, so that the deterministic diagonal floor is no longer present.
 
-The literal repair is still insufficient. The Walsh expansion in WI-338 makes the diagonal-deleted cube sum exactly the **centered Rademacher cube chaos**. Its `L^2` fluctuation is much smaller than the removed diagonal, and hypercontractivity yields a matched-energy sign source whose diagonal-deleted amplitude is small on every bow-scale interval through every growing order satisfying a fixed margin below
+The literal repair is still insufficient, and the obstruction reaches substantially closer to its own natural random-chaos boundary than the first version of this finding showed. The Walsh expansion in WI-338 makes the diagonal-deleted cube sum exactly the **centered Rademacher cube chaos**. Its `L^2` size has the sharp power
 
 \[
-\boxed{R_s=s+1,}
+K^{-(s+1)/2+o(1)}.
 \]
 
-while the distinguished sliding square remains `(1+o(1))NK\log N`. Thus subtracting the ordinary Gowers diagonal does not create the signed two-point information required by the bow. It moves the random-countermodel frontier from `R_s=2` to a substantially higher growing-order curve, but it does not couple the statistic to the required negative covariance.
+A direct second-moment union bound therefore produces one matched-energy sign source whose diagonal-deleted amplitude is small on every bow-scale interval for every growing order satisfying
+
+\[
+\boxed{
+s+1-R_s(K,N)\longrightarrow\infty,
+}
+\]
+
+while the distinguished sliding square remains `(1+o(1))NK\log N`. Thus subtracting the ordinary Gowers diagonal does not create the signed two-point information required by the bow. The random-countermodel frontier moves from the ordinary threshold `R_s=2` to the much higher curve `R_s=s+1`, and even a shrinking **relative** margin below that curve is insufficient: only a bounded additive strip below it escapes the present countermodel.
 
 Precisely, fix
 
@@ -42,35 +50,33 @@ and a deterministic unit-modulus carrier `u_n`. For an interval `I` and `s\ge2`,
 
 This is only a diagnostic amplitude; after diagonal deletion it need not be a norm, and the quantity before the outer absolute value need not be nonnegative.
 
-For every fixed `eta` with `0<eta<1`, for all sufficiently large `N` there is a real sequence
+Choose any constant
+
+\[
+C_\kappa>\frac12\left(1+\frac1\kappa\right).
+\tag{2}
+\]
+
+Then for all sufficiently large `N` there is a real sequence
 
 \[
 b_n=\sqrt{\log N}\,\varepsilon_n,
 \qquad \varepsilon_n\in\{-1,+1\},
-\tag{2}
-\]
-
-such that, simultaneously for every integer interval `I\subset[1,N]` with `K\le |I|\le2K` and every integer `s\ge2` satisfying
-
-\[
-\boxed{
-R_s(K,N)\le(1-\eta)(s+1),
-}
 \tag{3}
 \]
 
-one has
+such that simultaneously for every integer interval `I\subset[1,N]` with `K\le |I|\le2K` and every integer `s\ge2` with `R_s(K,N)\le s+1`, one has
 
 \[
 \boxed{
-\|b\|_{\dot U^s(I)}
+|P_{s,I}|
 \le
-(\log N)^{-\eta/(4(1-\eta))},
+K^{-(s+1)/2+C_\kappa},
 }
 \tag{4}
 \]
 
-while the same realization satisfies
+where `P_{s,I}` is the centered cube polynomial defined below, and the same realization satisfies
 
 \[
 \boxed{
@@ -81,22 +87,39 @@ while the same realization satisfies
 \tag{5}
 \]
 
-Hence every fixed margin below `R_s=s+1` admits an all-interval diagonal-deleted countermodel with full destination variance. This reaches to within `O_{\kappa,\eta}(1)` orders of `\log_2\log N`: if
+Consequently, writing
 
 \[
-s=\lfloor\log_2\log N\rfloor-C,
-\]
-
-then
-
-\[
-\frac{R_s}{s+1}
-\le
-\frac{(\log 2)2^{-C}}{\kappa}(1+o(1)).
+\Delta_s:=s+1-R_s(K,N),
 \tag{6}
 \]
 
-(The floor contributes a bounded factor, so an asymptotic equality without tracking its fractional part would be false.) Choosing fixed `C` large enough that the displayed constant is below `1-\eta` places these orders in the countermodel regime.
+we have the explicit all-interval bound
+
+\[
+\boxed{
+\log\|b\|_{\dot U^s(I)}
+\le
+-\frac{\Delta_s-2C_\kappa}{2R_s(K,N)}\log\log N.
+}
+\tag{7}
+\]
+
+In particular, for any sequence `\rho_N\to\infty`, all growing orders satisfying
+
+\[
+R_s(K,N)\le s+1-\rho_N
+\tag{8}
+\]
+
+obey
+
+\[
+\sup_{K\le |I|\le2K}\|b\|_{\dot U^s(I)}=o(1)
+\tag{9}
+\]
+
+on the same realization. This strictly strengthens the earlier fixed-relative-margin statement `R_s\le(1-\eta)(s+1)`: the relative margin may now tend to zero, provided the additive gap from `s+1` tends to infinity.
 
 ## 1. Diagonal deletion is exactly centering for Rademacher cubes
 
@@ -106,7 +129,7 @@ Retain the notation of WI-338. For independent Rademacher signs `\varepsilon_n`,
 Q_{s,I}=\sum_c\chi_{A(c)}(\varepsilon),
 \qquad
 F_{s,I}=Q_{s,I}/D_{s,I},
-\tag{7}
+\tag{10}
 \]
 
 where the sum is over all additive cubes inside `I`. WI-338 encodes the parity support by
@@ -114,7 +137,7 @@ where the sum is over all additive cubes inside `I`. WI-338 encodes the parity s
 \[
 P_c(X)=X^x\prod_{j=1}^s(1+X^{h_j})
 \quad\text{in }\mathbb F_2[X,X^{-1}].
-\tag{8}
+\tag{11}
 \]
 
 Because this Laurent polynomial ring is an integral domain,
@@ -123,7 +146,7 @@ Because this Laurent polynomial ring is an integral domain,
 A(c)=\varnothing
 \quad\Longleftrightarrow\quad
 h_j=0\text{ for at least one }j.
-\tag{9}
+\tag{12}
 \]
 
 A Rademacher monomial has expectation zero unless its parity support is empty. Therefore
@@ -132,7 +155,7 @@ A Rademacher monomial has expectation zero unless its parity support is empty. T
 \mathbb E Q_{s,I}
 =
 \#\{c:\text{some }h_j=0\},
-\tag{10}
+\tag{13}
 \]
 
 and deleting exactly the zero-increment cubes gives
@@ -147,7 +170,7 @@ and deleting exactly the zero-increment cubes gives
 F_{s,I}-\mathbb EF_{s,I}
 =:P_{s,I}.
 }
-\tag{11}
+\tag{14}
 \]
 
 Thus the most literal diagonal renormalization is not a new random object: it is precisely the centered Walsh polynomial already exposed by WI-338.
@@ -159,134 +182,126 @@ For the energy-matched source `b_n=\sqrt{\log N}\varepsilon_n`, every `2^s`-vert
 \|b\|_{\dot U^s(I)}
 =\sqrt{\log N}\,|P_{s,I}|^{1/2^s}.
 }
-\tag{12}
+\tag{15}
 \]
 
-## 2. Centering exposes much stronger random concentration
+## 2. The centered `L^2` exponent is sharp
 
 WI-338 proves, uniformly for `|I|=L` and `s=O(\log\log N)`,
 
 \[
+\boxed{
 \|P_{s,I}\|_2
 \le
 L^{-(s+1)/2}
 \exp\!\bigl(O(s\log(s\log L))\bigr).
-\tag{13}
+}
+\tag{16}
 \]
 
-The centered polynomial has Walsh degree at most `d=2^s`, so the classical Bonami--Beckner inequality gives, for every `q\ge2`,
+The power `L^{-(s+1)/2}` cannot be improved for the Rademacher model by a sharper upper-bound argument. Indeed Parseval gives
 
 \[
-\|P_{s,I}\|_q
-\le(q-1)^{2^{s-1}}\|P_{s,I}\|_2.
-\tag{14}
+\operatorname{Var}(Q_{s,I})
+=\sum_{A\ne\varnothing}m_A^2,
+\tag{17}
 \]
 
-Condition (3) implies
+where `m_A` counts cubes with parity support `A`. Every nonzero-increment cube contributes to some nonempty `A`, and `m_A^2\ge m_A`. If `M_{s,I}` is the number of nonzero-increment cubes, then
 
 \[
-2^s
+\operatorname{Var}(Q_{s,I})\ge M_{s,I}.
+\tag{18}
+\]
+
+The zero-increment cubes are at most `sL(2L)^{s-1}`, while WI-338's elementary interior-cube count gives
+
+\[
+D_{s,I}\ge \frac{L^{s+1}}{(Cs)^s}.
+\tag{19}
+\]
+
+For `s=O(\log\log N)` and `L=N^{\kappa+o(1)}`, the ratio of those two quantities is `L^{-1+o(1)}`. Hence
+
+\[
+M_{s,I}=(1-o(1))D_{s,I}.
+\tag{20}
+\]
+
+Also trivially `D_{s,I}\le L(2L)^s`. Therefore
+
+\[
+\boxed{
+2^{-s/2}L^{-(s+1)/2}(1-o(1))
 \le
-(1-\eta)(s+1)\frac{\log K}{\log\log N},
-\tag{15}
+\|P_{s,I}\|_2
+\le
+L^{-(s+1)/2+o(1)}.
+}
+\tag{21}
 \]
 
-and hence `s=O(\log\log N)`, so (13) applies. Unlike the ordinary-`U^s` argument of WI-338, after deleting the diagonal we can take a sufficiently large **fixed** moment `q`: the `L^2` decay carries `(s+1)` powers of `K`, while the hypercontractive loss contributes only `2^s=O((s+1)\log K/\log\log N)` in the logarithm.
+So the exponent `(s+1)/2` is the genuine random-chaos scale. This matters at the top boundary: when `R_s=s+1+O(1)`, the energy-normalized `2^{-s}` root of a typical `L^2` fluctuation is only of constant size, not automatically `o(1)`. Closing a bounded additive strip cannot come from merely improving the multiplicity constants in (16).
+
+## 3. A second-moment union bound closes every diverging additive gap
+
+Condition `R_s\le s+1` implies `s=O(\log\log N)`: if `s` were larger than a sufficiently large constant multiple of `\log\log N`, the exponential growth of `2^s` would make `R_s` exceed `s+1`. Thus (16) applies uniformly to every order under consideration, and its subexponential factor is `K^{o(1)}`.
 
 Set
 
 \[
-a_s:=\frac{1-\eta/2}{2}(s+1),
-\qquad
-t_s:=K^{-a_s}.
-\tag{16}
-\]
-
-Using `L\ge K`, (13)--(15), and fixed `q`,
-
-\[
-\begin{aligned}
-\log\frac{\|P_{s,I}\|_q}{t_s}
-&\le
-2^{s-1}\log(q-1)
--\frac{s+1}{2}\log K
-+a_s\log K
-+O(s\log(s\log K))\\
-&=
--\frac{\eta}{4}(s+1)\log K
-+o\bigl((s+1)\log K\bigr).
-\end{aligned}
-\tag{17}
-\]
-
-Indeed the hypercontractive term is
-
-\[
-O_q\!\left(\frac{(s+1)\log K}{\log\log N}\right),
-\tag{18}
-\]
-
-and the multiplicity error in (13) is `O((\log\log N)^2)`, both lower order than the fixed-`eta` negative term in (17).
-
-Markov's inequality now gives
-
-\[
-\mathbb P(|P_{s,I}|>t_s)
-\le
-\exp\!\left(-q\frac{\eta}{4}(s+1)\log K
-+o_q((s+1)\log K)\right).
-\tag{19}
-\]
-
-Since `\log K=(\kappa+o(1))\log N`, choose the fixed `q=q(\kappa,\eta)` large enough that even the smallest retained order `s=2` makes the main exponent in (19) larger than `(1+\kappa+1)\log N`. There are only `O(NK)` integer intervals with length in `[K,2K]` and `O(\log\log N)` retained orders. A union bound therefore yields, with probability `1-o(1)`,
-
-\[
-\boxed{|P_{s,I}|\le K^{-a_s}}
-\tag{20}
-\]
-
-for every such interval and every order satisfying (3).
-
-## 3. Energy normalization leaves a logarithmic power saving
-
-Insert (20) into (12):
-
-\[
-\log\|b\|_{\dot U^s(I)}
-\le
-\frac12\log\log N
--\frac{a_s}{2^s}\log K.
-\tag{21}
-\]
-
-By (3),
-
-\[
-\frac{\log K}{2^s}
-\ge
-\frac{\log\log N}{(1-\eta)(s+1)}.
+t_s:=K^{-(s+1)/2+C_\kappa}.
 \tag{22}
 \]
 
-Using (16),
+Chebyshev's inequality and (16) give, uniformly in `I` and `s`,
 
 \[
 \begin{aligned}
-\log\|b\|_{\dot U^s(I)}
-&\le
-\left[
-\frac12-
-\frac{1-\eta/2}{2(1-\eta)}
-\right]\log\log N\\
-&=
--\frac{\eta}{4(1-\eta)}\log\log N,
+\mathbb P(|P_{s,I}|>t_s)
+&\le t_s^{-2}\|P_{s,I}\|_2^2\\
+&\le K^{s+1-2C_\kappa}K^{-(s+1)+o(1)}\\
+&=K^{-2C_\kappa+o(1)}.
 \end{aligned}
 \tag{23}
 \]
 
-which is exactly (4).
+There are `O(NK)=K^{1+1/\kappa+o(1)}` integer intervals with length in `[K,2K]` and only `O(\log\log N)` retained orders. By (2),
 
-The point is structural: diagonal subtraction removes the deterministic floor at `R_s=2`, but the random off-diagonal chaos remains uniformly tiny much farther upward. The new random-countermodel scale is governed by the competition between the `(s+1)` powers in the centered `L^2` fluctuation and the `2^s` root needed to return to source-amplitude normalization.
+\[
+1+\frac1\kappa-2C_\kappa<0,
+\]
+
+so a union bound shows that (4) holds for every retained `(s,I)` simultaneously with probability `1-o(1)`.
+
+Substitute (4) into the exact scaling identity (15). Since
+
+\[
+\frac{\log K}{2^s}
+=
+\frac{\log\log N}{R_s(K,N)},
+\tag{24}
+\]
+
+we obtain
+
+\[
+\begin{aligned}
+\log\|b\|_{\dot U^s(I)}
+&\le
+\frac12\log\log N
+-\left(\frac{s+1}{2}-C_\kappa\right)\frac{\log K}{2^s}\\
+&=
+-\frac{s+1-2C_\kappa-R_s}{2R_s}\log\log N,
+\end{aligned}
+\tag{25}
+\]
+
+which is (7).
+
+If (8) holds, the numerator in (25) is at least `\rho_N-2C_\kappa`. Moreover `R_s\le s+1=O(\log\log N)`, so `\log\log N/R_s` is bounded below by a positive absolute constant throughout the growing top-order regime. Hence the right side tends to `-\infty` as `\rho_N\to\infty`, proving (9).
+
+For fixed low orders, the original fixed-moment hypercontractive argument from the first version of this finding still gives all-interval `o(1)` directly. The new second-moment estimate is needed only to squeeze the growing-order frontier from a fixed **relative** gap to a diverging **additive** gap.
 
 ## 4. The bow sliding square survives the same realization
 
@@ -296,12 +311,12 @@ WI-338 proves for the same Rademacher model and any prescribed unit carrier `u_n
 V(\varepsilon)
 :=
 \sum_{x=0}^{N-K}
-\left|\sum_{j=1}^K\varepsilon_{x+j}u_{x+j}\right|^2
+\left|\sum_{j=1}^{K}\varepsilon_{x+j}u_{x+j}\right|^2
 =(1+o(1))NK
-\tag{24}
+\tag{26}
 \]
 
-with probability `1-o(1)`. Multiplying by `\log N` gives (5). The all-interval event (20) also has probability `1-o(1)`, so their intersection has positive probability for all sufficiently large `N`. This proves the existence of one realization satisfying (4) and (5) simultaneously.
+with probability `1-o(1)`. Multiplying by `\log N` gives (5). The all-interval event (4) also has probability `1-o(1)`, so their intersection has positive probability for all sufficiently large `N`. This proves the existence of one realization satisfying the diagonal-deleted bounds and the full bow-scale destination variance simultaneously.
 
 No property of the carrier beyond `|u_n|=1` enters. In particular the countermodel applies to the distinguished bow carrier just as in WI-333--WI-338.
 
@@ -317,11 +332,11 @@ The result kills the **literal** diagonal-renormalization repair of ordinary Gow
 2^{-s}\text{ root}.
 \]
 
-Smallness of this statistic, even uniformly on every relevant interval and through all growing orders satisfying a fixed margin below `R_s=s+1`, does not imply a saving over the diagonal-scale WI-195 sliding variance.
+Smallness of this statistic, even uniformly on every relevant interval and through every growing order whose additive distance below `R_s=s+1` tends to infinity, does not imply a saving over the diagonal-scale WI-195 sliding variance.
 
-This does **not** rule out every statistic that could reasonably be called renormalized. A useful replacement might subtract a carrier-dependent or source-dependent local covariance, retain the signed two-point structure of `\Lambda-\Lambda^\sharp`, use a relative linear-forms object rather than an ordinary cube average, or couple several cube orders in a way not controlled by (1). The present proof also leaves a top growing-order strip where `R_s/(s+1)` approaches or exceeds `1`; (13)--(14) do not by themselves produce the amplitude-small countermodel there.
+This does **not** rule out every statistic that could reasonably be called renormalized. A useful replacement might subtract a carrier-dependent or source-dependent local covariance, retain the signed two-point structure of `\Lambda-\Lambda^\sharp`, use a relative linear-forms object rather than an ordinary cube average, or couple several cube orders in a way not controlled by (1). Nor does the present proof cover the bounded additive strip `s+1-R_s=O_\kappa(1)` or orders above the curve `R_s=s+1`.
 
-The conclusion is therefore an interface restriction, not a theorem that all higher-order methods fail. Any surviving diagonal-renormalized route must retain mathematical information absent from the centered ordinary cube chaos.
+The conclusion is therefore an interface restriction, not a theorem that all higher-order methods fail. Any surviving diagonal-renormalized route must either operate at that top chaos scale or retain mathematical information absent from the centered ordinary cube chaos.
 
 ## 6. Relation to the bow defect problem
 
@@ -333,32 +348,36 @@ The accepted local clue `CLUE-bow-distinguished-twist-offdiagonal-cancellation` 
 
 or for a canonical subtraction after which the same variance saving follows. WI-338 showed that increasing ordinary Gowers order cannot provide that sign information before the ordinary diagonal floor intervenes.
 
-The present finding tests the most immediate escape from that floor. Removing zero-increment cubes makes the Gowers statistic diagonal-free, but random matched-energy sources can be uniformly small in that statistic through a much larger hierarchy while retaining full positive diagonal-scale destination variance. The missing bow input is therefore not merely “remove the Gowers diagonal.” It must encode a relation to the distinguished carrier or to the signed shifted-prime covariance itself.
+The present finding tests the most immediate escape from that floor. Removing zero-increment cubes makes the Gowers statistic diagonal-free, but random matched-energy sources can be uniformly small in that statistic through essentially the whole subcritical random-chaos hierarchy while retaining full positive diagonal-scale destination variance. The missing bow input is therefore not merely “remove the Gowers diagonal.” It must encode a relation to the distinguished carrier or to the signed shifted-prime covariance itself, unless one can exploit the narrow bounded-additive top strip by genuinely new information.
 
-For the surviving fixed-power bow range, `K=X^{\kappa+o(1)}` with fixed positive `\kappa`. Equation (6) shows that this countermodel reaches to within a constant number of the `\log_2\log X`-scale orders. A generic hierarchy that hopes to evade the result solely by going to higher diagonal-deleted Gowers order is therefore compressed into a top-order strip rather than reopening the broad hierarchy closed by WI-338.
+Because `R_{s+1}=2R_s`, the transition through `R_s\asymp s+1` occurs in only a constant number of integer orders. Thus the broad hierarchy is not reopened by diagonal deletion: the first order not defeated by the present random countermodel is pinned to the top `\log_2\log N` scale, while all lower growing orders at diverging additive distance are excluded as black-box routes.
 
 ## 7. Prior-art and novelty audit
 
-The ingredients are classical or already persisted. Standard Gowers cube averages and inverse theory are classical additive combinatorics. Bonami--Beckner hypercontractivity on the Boolean cube is classical; WI-338 records Ryan O'Donnell, *Analysis of Boolean Functions* (Cambridge University Press, 2014), Chapter 9, as a modern reference. Random functions as small-Gowers benchmarks are classical; WI-338 also records Fouvry--Kowalski--Michel, *An inverse theorem for Gowers norms of trace functions over F_p*, *Math. Proc. Cambridge Philos. Soc.* 155 (2013), 277--295.
+The ingredients are classical or already persisted. Standard Gowers cube averages and inverse theory are classical additive combinatorics. WI-338 records the classical Bonami--Beckner hypercontractive inequality and random functions as small-Gowers benchmarks. The present sharpening itself uses only Parseval/orthogonality already present in WI-338, Chebyshev's inequality, and a union bound.
 
-A targeted external search around diagonal-free/nondegenerate Gowers cubes, centered cube statistics, degenerate U-statistics, and Rademacher chaos located the general probability literature on centered/degenerate U-processes and Rademacher chaoses, including Peter Eichelsbacher, *Moderate deviations for degenerate U-processes*, *Stochastic Processes and their Applications* 87 (2000), 255--279. Those sources support the general viewpoint that centering leads to a Rademacher-chaos object; they do not supply the interval-uniform growing-order statement (3)--(5) or its comparison with the WI-195 bow variance.
+A targeted prior-art search around diagonal-free/nondegenerate Gowers cubes, centered cube statistics, and Rademacher chaos did not locate a published statement matching the interval-uniform growing-order comparison with the WI-195 bow variance. That absence is not a priority claim. The mathematical delta here is narrower and repository-local: the `L^2` exponent in WI-338 is both lower- and upper-sharp for the Rademacher model, and using it directly squeezes WI-339's former fixed-relative-margin boundary down to a bounded additive strip.
 
-The Mathia deduction is narrower: combine WI-338's specific Walsh multiplicity/`L^2` estimate with fixed-moment hypercontractivity, then retain the `2^{-s}` source normalization after deleting the zero-increment cubes. A local corpus check found no existing finding stating this diagonal-deleted barrier. No priority claim is made beyond that repository delta.
+No new external theorem is needed for this strengthening, so the literature anchors already recorded for WI-338 remain sufficient provenance for the classical ingredients.
 
 ## 8. Boundary and falsification checks
 
-The argument has four important boundaries. First, (9) is exact for the real Rademacher model: expectation-one cubes are precisely those with at least one zero increment. A renormalization removing a larger or source-dependent family is not identified with `P_{s,I}` by (11).
+The argument has five important boundaries.
+
+First, (12) is exact for the real Rademacher model: expectation-one cubes are precisely those with at least one zero increment. A renormalization removing a larger or source-dependent family is not identified with `P_{s,I}` by (14).
 
 Second, the source is a matched-energy countermodel, not the primes. The result is information-theoretic: an implication consuming only (1), interval length, energy normalization and a prescribed carrier is false. Arithmetic hypotheses not shared by the Rademacher model remain legitimate escape routes.
 
-Third, `eta` is fixed. Shrinking margins would require retaining the exact gap `s+1-R_s` in (17)--(23); no such strengthening is claimed here.
+Third, the new sharpening does **not** claim small diagonal-deleted amplitude when `s+1-R_s` stays bounded. Equation (21) shows why this is not merely a loose concentration constant: the centered `L^2` scale itself reaches constant source amplitude in that regime.
 
-Fourth, (1) is not asserted to be a norm. The finding concerns the most literal diagonal-subtracted ordinary Gowers interface, not a pre-existing canonical object of additive combinatorics.
+Fourth, orders above `R_s=s+1` are not ruled out. The diagonal-deleted statistic has no deterministic positivity floor analogous to WI-336, so no contradiction prevents an arithmetic source from being small there.
 
-The decisive audit test is direct: if WI-338's centered `L^2` bound (13), its degree bound `2^s`, or the exact centering identity (11) fails under the stated interval convention, this finding must be narrowed or withdrawn. Otherwise a future generic diagonal-renormalized proposal must identify information absent from (1), rather than merely deleting zero-increment cubes.
+Fifth, (1) is not asserted to be a norm. The finding concerns the most literal diagonal-subtracted ordinary Gowers interface, not a pre-existing canonical object of additive combinatorics.
+
+The decisive audit tests are direct: verify WI-338's centered `L^2` estimate (16), the Parseval lower bound (17)--(21), the exponent count in the all-interval union bound (23), and the exact source-amplitude conversion (25). Failure of any one of those steps requires narrowing the strengthened range. Otherwise a future generic diagonal-renormalized proposal must identify information absent from (1), rather than merely deleting zero-increment cubes.
 
 ## 9. Research consequence
 
-WI-338 showed that the ordinary norm is blocked by its own diagonal exactly when random countermodels stop being ordinary-Gowers-small. WI-339 shows that **removing that diagonal still does not reveal the bow covariance**: the centered cube chaos can remain uniformly tiny through every fixed margin below `R_s=s+1` while the destination variance remains full.
+WI-338 showed that the ordinary norm is blocked by its own diagonal exactly when random countermodels stop being ordinary-Gowers-small. WI-339 now shows that **removing that diagonal still does not reveal the bow covariance even when the relative gap to the centered-chaos boundary shrinks to zero**: every diverging additive gap below `R_s=s+1` still admits an all-interval matched-energy countermodel with full destination variance.
 
-The live source-side route is therefore more specific. A useful statistic must be carrier-aware, source-aware, or explicitly two-point/covariance-aware; deleting universal Gowers self-contractions is not enough. This sharpens the remaining defect-elimination question without changing any unconditional zeta-zero proportion.
+The live source-side route is therefore more specific. A useful statistic must be carrier-aware, source-aware, explicitly two-point/covariance-aware, or exploit the bounded-additive top chaos strip in a way unavailable to the generic Rademacher interface. Deleting universal Gowers self-contractions is not enough. This sharpens the remaining defect-elimination question without changing any unconditional zeta-zero proportion.
