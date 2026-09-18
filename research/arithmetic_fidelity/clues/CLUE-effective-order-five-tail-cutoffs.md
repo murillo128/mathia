@@ -1,7 +1,7 @@
 ---
 id: CLUE-effective-order-five-tail-cutoffs
 type: research-clue
-status: proposed
+status: accepted
 origin: research-watch
 target_line: arithmetic_fidelity
 based_on:
@@ -59,3 +59,7 @@ If either endpoint cannot be reached, produce a rigorous explicit cutoff and ide
 ## Evidence boundary
 
 AF-408 establishes positivity only sufficiently far into each tail and gives no explicit admissible `T`. The endpoint choices `-14` and `4` come from the separate compact investigation and are not currently certified tail thresholds. This clue therefore establishes neither global order-five positivity nor positivity on either semi-infinite endpoint range; it isolates the quantitative theorem needed to connect a future compact result to the existing asymptotic theorem.
+
+## Research disposition
+
+The direction is accepted for continued investigation. AF-408 makes the two endpoint inequalities the exact missing bridge between its eventual tail theorem and the independently frozen compact interval. A targeted literature search found the expected general total-positivity, Pólya-frequency, and Hankel/Toda machinery but no theorem that supplies explicit cutoffs for this concrete Euler-log gate. The remaining question is quantitative rather than conceptual: certify the exact profile on the two semi-infinite tails with rigorous remainder control, or return the best explicit cutoffs and the finite intervals left uncovered. Acceptance does not assert that `-14` and `4` are valid cutoffs.
