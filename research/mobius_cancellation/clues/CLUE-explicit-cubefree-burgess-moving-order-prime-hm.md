@@ -1,7 +1,7 @@
 ---
 id: CLUE-mobius-cancellation-explicit-cubefree-burgess-moving-order-prime-hm
 type: research-clue
-status: proposed
+status: resolved
 origin: research-watch
 target_line: mobius_cancellation
 based_on:
@@ -63,6 +63,35 @@ After obtaining a candidate formula, optimize `r=r(y)` jointly with the source-m
 
 ## Evidence boundary
 
-The explicit Burgess inequality is a primary-source theorem statement in an arXiv v1 manuscript; it is not being treated here as a peer-reviewed result. Its displayed theorem is for primitive characters. No uniform prime Halász–Montgomery estimate with growing order has been derived here, and no claim is made that Schlage-Puchta's full constant dependence is already controlled.
+The explicit Burgess inequality is a primary-source theorem statement in an arXiv v1 manuscript; it is not being treated here as a peer-reviewed result. Its displayed theorem is for primitive characters. No uniform prime Halász–Montgomery estimate with growing order had been derived when this clue was proposed, and no claim was made that Schlage-Puchta's full constant dependence was already controlled.
 
-In particular, the existence of explicit Burgess constants does not alter the fixed-power horizon proved in `MC-329`, does not supply a cheaper-to-minimum-conductor bridge for `MC-372`, and does not imply any new bound for `M(x)`. The clue is only a now-concrete audit path for the previously qualitative moving-order boundary.
+In particular, the existence of explicit Burgess constants does not alter the fixed-power horizon proved in `MC-329`, does not supply a cheaper-to-minimum-conductor bridge for `MC-372`, and does not imply any new bound for `M(x)`.
+
+## Research disposition
+
+Outcome: supported and narrowed
+
+Resolved by:
+- [[research/mobius_cancellation/findings/MC-373-explicit-moving-order-burgess-gives-effective-near-endpoint-rate.md]]
+
+The explicit theorem does survive the prime Selberg/Halász–Montgomery transfer at a genuinely growing order. One clean asymptotic choice is `r=floor(log log y/32)` together with
+
+\[
+\delta(y)=K\frac{\log\log\log y}{\log\log y}
+\]
+
+for a sufficiently large absolute `K`. The explicit modulus-complexity factor contributes only
+
+\[
+\exp\!\left(O\left(\frac{(\log y)\log\log\log y}{(\log\log y)^2}\right)\right),
+\]
+
+while the shrinking Burgess deficit supplies a saving of the same scale with an arbitrarily larger constant after choosing `K`. Primitive-conductor induction costs only `exp(O(log log y))`, and the Selberg convolution has polynomial dependence on the moving Burgess order. Therefore the existing source boundaries become effective at
+
+\[
+y^{2-O(\log\log\log y/\log\log y)}
+\quad\text{and}\quad
+y^{4-O(\log\log\log y/\log\log y)}.
+\]
+
+This resolves the clue only at a non-optimized rate. It does not cross exponents `2` or `4`, does not remove the minimum-conductor escape exposed by `MC-372`, and does not imply an improved bound for `M(x)`.
