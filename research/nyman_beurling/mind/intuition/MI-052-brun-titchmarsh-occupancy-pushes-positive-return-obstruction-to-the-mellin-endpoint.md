@@ -1,43 +1,41 @@
-# MI-052 — Positive Euler recurrence changes from interval occupancy to atomic phase-cell capacity at the Mellin endpoint
+# MI-052 — Positive Euler recurrence changes from interval occupancy to stable atomic phase-cell capacity at the Mellin endpoint
 
-**Evidence level:** literature+derived synthesis from [NB-192](../../findings/NB-192-prime-log-dimension-forces-double-exponential-bohr-return-scale.md) through [NB-200](../../findings/NB-200-atomic-phase-cell-packing-forces-a-2pi-exp-delta-endpoint-threshold.md). The Brun--Titchmarsh interval bound, phase-window counting and one-atom-per-subunit-cell argument are classical mechanisms; the Mathia content is their specialization to the normalized positive von-Mangoldt shell and the resulting endpoint acquisition threshold.
+**Evidence level:** literature+derived synthesis from [NB-192](../../findings/NB-192-prime-log-dimension-forces-double-exponential-bohr-return-scale.md) through [NB-201](../../findings/NB-201-atomic-endpoint-capacity-has-a-quadratic-stability-modulus.md). The occupancy, phase-window counting and one-atom-per-subunit-cell mechanisms are classical; the Mathia content is their specialization to the normalized positive von-Mangoldt shell and the resulting endpoint acquisition modulus.
 
-The earlier positive-recurrence frontier was tied to how accurately the true prime shell could be replaced by continuum mass cell by cell. Uniform short-interval PNT gave the `13/30` Mellin corridor, and almost-all source resolution plus positivity extended pointwise exclusion to `13/15`. Those exponents measured available source-resolution technology, not an intrinsic recurrence threshold.
+The earlier positive-recurrence frontier was tied to how accurately the true prime shell could be replaced by continuum mass cell by cell. Uniform short-interval PNT and almost-all source resolution produced intermediate Mellin corridors, but those exponents measured available source-resolution technology rather than an intrinsic recurrence threshold.
 
-NB-198 shows that excluding a sufficiently accurate positive return needs less than an asymptotic prime count. If
+NB-198--NB-199 replace cellwise source approximation by a mass-placement argument. If
 
 `A_a(t)=sum_n w_(n,a)|exp(-it log n)-1|`
 
-for the normalized positive von-Mangoldt shell around `x_a=exp(r_0/a)`, then a small `A_a(t)` forces most source mass into short multiplicative windows where `t log n` lies near `2 pi Z`. Brun--Titchmarsh upper-bounds the mass those favorable windows can carry, excluding arbitrarily accurate returns throughout every fixed subunit Mellin power.
+for the normalized positive von-Mangoldt shell around `x_a=exp(r_0/a)` and `X_a=log x_a`, then small `A_a(t)` forces most positive source mass into short multiplicative phase windows. Brun--Titchmarsh bounds how much mass those windows can carry and yields the diagonal corridor
 
-NB-199 follows the window scale diagonally toward the endpoint. With `X_a=log x_a=r_0/a`, throughout
+`A_a(t) >= c log(x_a/(|t|X_a))/X_a`
 
-`X_a^2 <= |t| <= x_a/(U_0 X_a)`
+for `X_a^2 <= |t| <= x_a/(U_0X_a)`. Thus `o(1/X_a)` returns cannot occur below the final logarithmic layer `x_a/X_a`.
 
-one has
+At endpoint scale the favorable windows become physically shorter than one integer, so local density ceases to be the right currency. NB-200 switches to atomic capacity: each favorable phase cell contains at most one von-Mangoldt atom. This gives the one-sided threshold
 
-`A_a(t) >= c log(x_a/(|t|X_a))/X_a`.
+`liminf |t|X_a/x_a >= 2 pi e^Delta`
 
-Hence `A_a(t)<=eta` implies `|t|>=x_a^(1-C eta)/log x_a`, and any tolerance `eta_a=o(1/X_a)=o(a)` is excluded below a constant multiple of `x_a/X_a`.
+for sequences with `X_a A_a(t)->0` and bounded endpoint ratio. The constant is a certified carrying-capacity edge, not a return-existence theorem.
 
-At exactly that scale the favorable windows stop being macroscopic intervals. NB-200 exploits the change of geometry rather than asking for a stronger short-interval prime theorem. In the endpoint strip `|t|=kappa x_a/X_a`, choose phase tolerance `delta_a=q/X_a`. Each favorable component has physical length asymptotic to `2uq/(kappa x_a)`. For fixed `kappa` and small enough `q`, every component meeting the shell has length below one, so it can contain at most one integer and therefore at most one von-Mangoldt atom.
+NB-201 makes that edge quantitatively stable. With
 
-A fixed top log-slab `[x_a e^(Delta-h),x_a e^Delta)` carries normalized source mass `h/Delta+o(1)`. It contains at most `th/(2 pi)+O(1)` favorable phase cells, and each possible atom has normalized mass at most
+`kappa_a^cap = 2 pi e^Delta X_a/(X_a+Delta)`, `kappa_a(t)=|t|X_a/x_a`, and `d_a(t)=1-kappa_a(t)/kappa_a^cap`,
 
-`(1+o(1)) X_a e^(-(Delta-h))/(x_a Delta)`.
+one has, in the one-sided endpoint regime,
 
-Thus the favorable cells cannot carry the whole slab whenever `kappa<2 pi e^(Delta-h)`. Sending `h` down to the room allowed by a fixed `K<2 pi e^Delta` gives the endpoint theorem
+`A_a(t) >= (c/X_a) (d_a(t)^2-C E_a)_+`,
 
-`inf_(X_a^2 <= |t| <= K x_a/X_a) A_a(t) >= c_K/X_a`.
+where `E_a` is the inherited Vinogradov--Korobov PNT remainder. Equivalently,
 
-Equivalently, if `X_a A_a(t)->0` and `|t|X_a/x_a` stays bounded, then
+`d_a(t) <= C(sqrt(X_a A_a(t))+sqrt(E_a))`.
 
-`liminf |t|X_a/x_a >= 2 pi e^Delta`.
+The square is structural: a relative capacity deficit `d` is tested on a top slab of source mass `Theta(d)`, and the fraction of that slab that cannot fit into favorable cells is another `Theta(d)`. Thus an increasingly accurate positive return approaching the edge from below must approach it at a square-root modulus, down to the PNT resolution floor.
 
-This threshold is one-sided. It says there is not enough **atomic carrying capacity** below `2 pi e^Delta`; it does not construct returns at or above that constant. The mechanism is also more primitive than unit-scale prime distribution: primality enters only through the macroscopic PNT mass of the shell, while the endpoint packing uses the integer lattice and `Lambda(n)<=log n`.
+The reusable transition is therefore `continuum occupancy -> atomic capacity -> capacity stability`. First price favorable regions by local source mass, then by discrete carrying capacity once cells become sub-lattice, and finally retain the finite-scale capacity ratio if the requested error approaches the endpoint simultaneously. Positivity is load-bearing throughout because it converts chord error into monotone missing source mass.
 
-The reusable transition is therefore **continuum occupancy -> atomic capacity**. When favorable cells are wider than the lattice spacing, local source-density estimates limit how much positive mass they can hold. Once the cells are shorter than one, local density ceases to be the right currency; the hard cap is number of cells times maximal atom mass. In both regimes positivity turns a small chord average into a monotone mass-placement problem.
+The positive-source frontier is now at and above the certified atomic edge. A stronger obstruction there must use how von-Mangoldt mass actually occupies the available cells, not only their number or maximal atom mass. Independently, the Nyman destination must still be shown to demand such an `o(a)` positive-shell return; acquisition alone is not a Nyman-distance lower bound.
 
-The next positive-source question begins at and beyond the atomic threshold: enough phase cells exist in principle, but their actual occupation by the von-Mangoldt source may still be arithmetically sparse or dephased. Independently, the Nyman destination must be shown to demand an `o(a)` positive-shell return at all; the acquisition theorem by itself is not a Nyman-distance lower bound.
-
-**Boundary.** `2 pi e^Delta` depends on the chosen fixed log-width shell and is not claimed universal. NB-200 gives no existence/sharpness theorem above the threshold, and its positive mass argument does not constrain signed or complex synthesis. The lower high-ordinate cutoff is inherited from the previous corridor rather than asserted as a natural transition.
+**Boundary.** The edge depends on the chosen fixed log-width shell and remains one-sided. NB-201 does not prove a return exists at the edge, and the `sqrt(E_a)` floor is intrinsic to the source-resolution input used in this argument. Signed or complex synthesis can cancel across cells, so neither the positive packing theorem nor its quadratic stability modulus transfers automatically.

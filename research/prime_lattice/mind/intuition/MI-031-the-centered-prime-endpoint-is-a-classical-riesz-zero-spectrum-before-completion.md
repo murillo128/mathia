@@ -1,17 +1,27 @@
-# MI-031 — The centered prime endpoint is a classical Riesz zero spectrum before completion
+# MI-031 — The completed Prime-Lattice endpoint collapses to the classical logarithmic Riesz residual
 
-**Evidence level:** literature-backed exact synthesis from [PL-344](../../findings/PL-344-bounded-modulation-pnt-edge-cancelled-by-pole.md) and [PL-345](../../findings/PL-345-schur-endpoint-log-riesz-zero-spectrum.md). The explicit-formula/Riesz mechanism is classical; the Mathia content is its identification inside the Prime-Lattice endpoint channel and the exact completion mismatch.
+**Evidence level:** literature-backed exact synthesis from [PL-344](../../findings/PL-344-bounded-modulation-pnt-edge-cancelled-by-pole.md), [PL-345](../../findings/PL-345-schur-endpoint-log-riesz-zero-spectrum.md), and [PL-346](../../findings/PL-346-completed-endpoint-riesz-collapse.md). The explicit-formula/Riesz mechanism is classical; the Mathia content is its exact realization by the localized endpoint state after full same-state Weil completion.
 
-After subtracting the PNT continuum from the outer prime endpoint response, PL-345 identifies the surviving residual with the classical first logarithmic Riesz mean. For fixed bounded modulation `tau`,
+PL-345 identifies the PNT-centered outer prime response with the classical first logarithmic Riesz mean. At zero modulation,
 
-`R_a(tau) = -e^(2ia tau) sum_rho e^((2rho-1)a)/(rho+i tau)^2 + O_T(ae^-a)`,
+`R_a(0) = - sum_rho e^((2rho-1)a)/rho^2 + O(ae^-a)`,
 
-and the Prime-Lattice outer-shell residual satisfies `E_a(tau)=R_a(tau)+o_T(1)`.
+so a zero `rho` is weighted by `e^((2 Re rho-1)a)`. The critical line is exactly the neutral square-root scale, and boundedness of `R_a(0)` is already equivalent to RH.
 
-This gives a precise scale dictionary. A zero `rho` contributes with exponential weight `e^((2 Re rho-1)a)`, so the critical line `Re rho=1/2` is exactly the neutral square-root scale. At `tau=0`, boundedness of the centered Riesz residual as `a->infinity` is already equivalent to RH. The critical scale therefore appears naturally in the centered prime channel, but **its first exact appearance is a classical RH-equivalent observable, not an independent coercive mechanism**.
+PL-346 resolves the remaining completion question for the same normalized endpoint state `u_a`. Keeping the pole, **all** prime sectors, scalar term and archimedean integral gives
 
-PL-345 also prevents identifying that prime residual with the fully completed Weil endpoint form at `O(1)` precision. The exact pole contribution and the PNT continuum differ by `3a-1+o(1)`, which is larger than the bounded zero signal on RH scale. Archimedean and scalar completion terms must therefore be retained before the centered prime residual can be used to infer a completed operator sign.
+`Q_W^a(u_a) = 2 + gamma_E - log(4 pi) - R_a(0) + o(1)`
 
-The useful frontier is no longer to discover the zero spectrum of the centered prime endpoint; that spectrum is explicit. The missing theorem must control the exact completed same-state form and explain how the Riesz zero signal competes with the pole/archimedean correction and the unbounded logarithmic principal energy.
+and equivalently
 
-**Boundary.** The Riesz expansion does not prove RH, completed coercivity, or a negative direction. Its boundedness criterion is already equivalent to RH, and the `O(a)` completion mismatch prevents treating the prime-centered residual alone as the completed destination observable.
+`Q_W^a(u_a) = C_zeta + sum_rho e^((2rho-1)a)/rho^2 + o(1)`,
+
+with `C_zeta=2+gamma_E-log(4 pi)=2 lambda_1`. Hence boundedness of this completed endpoint Rayleigh value is equivalent to RH, but it is exactly the same classical Riesz criterion plus a fixed Li-coefficient constant.
+
+The apparent `O(a)` completion mismatch left by PL-345 was bookkeeping rather than new spectral structure. Comparing the pole only with the **outer** prime shell omitted the same-end/inner prime sector. Restoring those primes cancels the missing linear scale; the residual archimedean integral is only `o(1)` and does not supply a new order-one mechanism.
+
+The reusable lesson is that exact completion can close a representation gap without creating new coercivity. A localized state may package a classical RH-equivalent explicit-formula residual into one completed Weil quadratic value, yet the completion contributes no independent zero-selecting law. Before treating a new endpoint state as a mechanism, reduce the **full same-state observable**, including all prime sectors and completion terms, and compare it with known smoothed explicit-formula criteria.
+
+The specific endpoint-state route is therefore exhausted as a source of new rigidity. A continuation must change more than bookkeeping: use a genuinely different moving state, matrix/family coupling, target-relative interaction, noncommutative observable, or another structure whose completed value does not reduce to this classical Riesz residual.
+
+**Boundary.** This does not weaken the exact RH equivalence of the completed endpoint value. It says that equivalence is not new: PL-346 identifies it with a classical logarithmic Riesz criterion. The negative conclusion applies to this one endpoint Rayleigh state and does not rule out richer families of states or observables.
