@@ -2,24 +2,18 @@
 
 This file holds the current mathematical questions suggested by the durable Möbius-cancellation intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Exploit source-signature coefficients or a genuinely joint variable, not another exact endpoint reparameterization
+## Exploit source-signature structure or leave the lcm-factorable quadratic frame
 
 **Linked intuitions:** `MI-013-bost-connes-regularity-needs-an-intermediate-transverse-category` through `MI-073-source-mode-averaging-collapses-to-a-signature-projector`.
 
-MC-385--MC-396 identify the endpoint costs: source quotient rank/codimension controls the admissible fourth-moment geometry, greedy paired packing removes an artificial inverse-gap differencing depth, and the remaining analytic tariff, exceptional low-conductor family, source incidence and projected-simplex geometry are genuine.
+MC-385--MC-396 identify genuine endpoint costs in source quotient rank/codimension, fourth-moment geometry, conductor and source incidence. MC-397--MC-399 then remove source-mode multiplicity, divisor-pair multiplicity and the standard lcm source phase as independent cancellation dimensions. MC-400 shows that the moving hyperbola endpoint is exactly invertible, and MC-401 shows that the full endpoint collapses to a classical signed gcd/divisor incidence energy.
 
-MC-397--MC-399 then remove three formal dimensions. Uniform source-mode averaging Fourier-collapses to a signature subgroup projector; the Selberg divisor pair collapses exactly to one lcm-fibre coefficient `C_g(ell)`; and complete multiplicativity makes the standard `ell`-dependent character factor disappear at the first additive correlation. Keeping those labels visible does not make them independent cancellation coordinates.
+MC-402 now closes the simplest truncated-mask escape as a representation-only gain. The exact identity `1_(r<=X)=sum_(n<=X,r|n) M(floor(X/n))` converts the incomplete lcm mask into a Mertens-weighted divisor-incidence sum, and each incidence fibre retains the signed gcd factorization of MC-401. Truncation therefore does not create a free positive or cheaply signed dimension: generic incidence resolution merely moves the missing arithmetic into the Mertens staircase.
 
-MC-400 closes the attempt to extract new information from the moving hyperbola endpoint alone. With `c_chi(ell)=C_g(ell)chi(ell)`, the twisted majorant is the exact convolution `f_chi=chi*c_chi`, hence `c_chi=(mu chi)*f_chi`. The moving endpoints `N/ell` are therefore an invertible representation of the same arithmetic data rather than an independent sample axis.
+This does **not** make the truncated endpoint Mertens-equivalent. A useful theorem may still exploit the actual Selberg coefficient, cancellation across source signatures, a collective estimate of the weighted energies, or a pre-quadratic variable that never collapses to lcm. The live question is to exhibit one of those source-specific relations explicitly, rather than credit the cutoff itself as new information.
 
-MC-401 closes the corresponding **full endpoint** at `N=B^2`. There the lcm constraint disappears and the quadratic form rewrites exactly as a signed gcd/divisor incidence energy:
+## Keep formal dimension, retained arithmetic coupling and transferred difficulty distinct
 
-`A_chi(B^2)=sum_(k<=B) (mu *_D chi)(k) (sum_(k|d,d<=B) g(d)chi(d))^2`.
+A variable can survive notation while carrying no new information. The current audit consumes averaging indices by Fourier duality, pair labels by lcm regrouping, lcm phase at first correlation, scale-indexed endpoints by inversion, the complete endpoint by gcd factorization, and now the generic incomplete mask by Möbius incidence inversion.
 
-This is a classical meet-kernel factorization. For the unit-prime sign `chi(p)=-1` the local two-state kernel is indefinite, so the rewrite does not supply positivity; it shows instead that the complete endpoint has collapsed to source-signature coefficients inside a classical gcd energy. The unresolved information is therefore in the truncation mask `N<B^2`, the actual Selberg coefficient/signature law, a genuinely joint bilinear estimate, or a pre-quadratic variable that remains nonseparable before lcm collapse.
-
-## Keep source rank, exact regrouping, first-correlation separability, invertibility and endpoint collapse distinct
-
-A variable can survive algebraic notation while carrying no new information. MC-397 consumes an averaging index by Fourier duality; MC-398 consumes pair multiplicity by lcm regrouping; MC-399 consumes the standard lcm source phase at first correlation; MC-400 shows that the remaining scale-indexed hyperbola transform is exactly invertible; and MC-401 shows that at the full endpoint the lcm geometry itself reduces to a signed gcd incidence form.
-
-A future endpoint theorem must therefore identify a source-specific statistic that survives all of these exact reductions. Any claimed gain should be tested by regrouping, first correlation, explicit inversion and the full-endpoint gcd reduction before being credited as a new arithmetic dimension. The promising residual is not another endpoint coordinate but information carried by the signed source coefficients, the incomplete hyperbola mask, or a genuinely joint pre-quadratic relation that the classical reductions cannot reconstruct for free.
+A future theorem should therefore identify a source-specific statistic that survives all of these reductions without simply importing an unavailable Mertens estimate. The decisive test is whether the claimed saving comes from actual `g`/signature/joint structure, or whether exact algebra merely relocates the same cancellation burden.

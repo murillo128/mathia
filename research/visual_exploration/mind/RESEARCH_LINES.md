@@ -2,22 +2,18 @@
 
 This file holds the current mathematical questions suggested by the durable visual-exploration intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Sieve the fixed-gate Wang path after center-gap decimation
+## Sieve the fixed-gate Wang path at the run-length frontier, not at the singular-series frontier
 
 **Linked intuitions:** `MI-040-wang-pointwise-upper-ceiling-is-a-localization-coherence-budget` and `MI-041-wang-natural-window-is-a-taper-weighted-prime-ratio-occupancy-problem`.
 
-VIS-299--VIS-316 reduce the natural Wang mean-square window to a taper-weighted prime-ratio occupancy problem. VIS-317--VIS-318 show why scalar determinant projection and fixed determinant fibres each throw away a load-bearing resource. VIS-319 resolves the representation dilemma with a unimodular Bezout chart `(t,h)->(q,r)` that preserves both prime exclusions modulo every prime while retaining a long transverse coordinate.
+VIS-299--VIS-319 reduce the natural Wang mean-square window to a faithful two-prime occupancy problem in unimodular coordinates. VIS-320--VIS-322 then compress the long-thin domain to at most three frozen mechanical branches and decimate each branch by the center gap `k=|v-u|` into fixed-gap diagonal runs, at most `min(k,L)+1` per branch.
 
-VIS-320 reduces the resulting thin domain to at most three branches `t_j(h)=floor(U(h))-j` governed by one rational rotation of period `max(u,v) asymp M`. At natural resolution `D asymp M/log log M`, the physical segment is shorter than one full period, so full-cycle equidistribution is not the missing theorem.
+VIS-323 removes a feared arithmetic loss in the non-maximally-fragmented regime. The exact Bézout geometry makes determinant residue and prime-pair gap the same coordinate modulo `k`, keeps all run gaps in an interval of width `<k+1`, and gives aggregate singular-series mass `sum_s ell_s S(g_s) << L+k`. Hence for `k<=L` the local Hardy--Littlewood factors cost only `O(L)` in total: fragmentation does **not** create an extra singular-series loss.
 
-VIS-321 removes the moving-gate complication. Consecutive branch steps are the two vectors `s_0=(-b,-a)` and `s_1=(u-b,v-a)`, with determinant `1`; all three branches are translates of the same rational mechanical/Christoffel path. The actual moving branch threshold can be frozen with only `O(1)` membership errors per branch at the natural scale.
+The live obstruction has therefore moved to **sieve depth versus run length**. A typical residue class contains only about `L/k` points. As `k` grows, each fixed-gap run eventually becomes too short for the available sieve/correlation theorem before the fully fragmented regime `k>L` is reached. A useful estimate should track the theorem's uniformity in the moving gap/offset against this `L/k` length, then aggregate with the Wang taper.
 
-VIS-322 then exposes a second exact coordinate inside that frozen path. Let `k=|v-u|` be the center gap and `L` the subperiod length. Decimating a branch by residue class modulo `k` makes the regular step exactly diagonal: away from at most one wrap index, a `k`-step changes `(q,r)` by `(sigma,sigma)`. Each residue class therefore becomes at most one fixed-gap diagonal run, with at most one extra split from the wrap. The number of runs is bounded by `min(k,L)+1` per branch.
+## Keep arithmetic dimension, center gap, run length and destination taper together
 
-The live theorem is now more structured than generic simultaneous-prime occupancy on a mechanical word. Near the diagonal, small `k` gives a few long runs of prime pairs at one fixed gap, so classical or modern fixed-gap sieve/correlation machinery may become relevant. For large `k`, the same decomposition produces many short runs, so the remaining cost is fragmentation and destination-weighted aggregation rather than gate motion or coordinate fidelity. A useful theorem should exploit this center-gap split instead of treating all slopes uniformly from the start.
+The exact chart preserves both prime coordinates, gate motion is negligible at the destination scale, center-gap decimation exposes fixed-gap runs, and VIS-323 shows that the singular-series weights are aggregate-neutral for `k<=L`. The remaining price is not raw run count or exceptional local factors separately, but whether the run-length profile provides enough samples for a uniform two-prime upper bound with the logarithmic saving Wang needs.
 
-## Keep local arithmetic dimension, subperiod length, center-gap fragmentation and destination taper together
-
-The exact chart preserves the two prime coordinates, the path geometry is unimodular, the gate motion is negligible at the destination scale, and center-gap decimation turns the surviving orbit into fixed-gap diagonal pieces. What remains is the interaction of two-prime exclusion with the number and length distribution of those pieces as `(u,v)` varies.
-
-A successful argument should therefore keep the fixed branch mask, simultaneous-prime condition, center gap `k`, run-length profile and Wang coefficient mass visible until the final estimate. Generic two-dimensional lattice bounds prove more than the representation needs; full-period rational balance proves less than the physical window requires; and a fixed-gap theorem applied without paying the `min(k,L)+1` fragmentation count may hide the actual loss. The next gain must come from arithmetic occupancy or destination-weighted cancellation on this precise decomposed object.
+A continuation should therefore split by `L/k` rather than by slope vocabulary alone. Any fixed-gap theorem used here must state how its error and sieve depth depend on run length, gap and offset; otherwise a formally strong prime-pair estimate may still be too weak on the short fragments consumed by the actual window.

@@ -2,22 +2,18 @@
 
 This file holds the current mathematical questions suggested by the durable Robin-extremal intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Leave the finite-ray single-center large-center branch and change geometry
+## Leave the ordinary single-center large-center branch and change geometry
 
 **Linked intuitions:** `MI-001-robin-failure-requires-self-tangent-half-mass-event-gaps` through `MI-060-complex-single-center-drift-cannot-escape-a-fixed-prediction-corridor`.
 
-RE-204--RE-227 establish the continuum prediction problem and close the positive-real fixed-corridor single-center architecture with a factor-two-plus Wiener obstruction. RE-228--RE-231 then classify drifting single centers at the microscopic scale. The dimensionless coordinate `kappa_m=N_m/(m(a_m-1))` is the load-bearing transition: finite complex limits with `Re(kappa)<1` retain residual delay, while positive-real `kappa>=1` can flatten the compact `u=m theta` profile.
+RE-204--RE-227 establish the continuum prediction problem and close the fixed-corridor single-center architecture. RE-228--RE-234 classify drifting large centers at finite load. The microscopic coordinate `kappa=N/(m(a-1))` has a unit local threshold, but crossing it only exposes a macroscopic prediction radius and a Wiener cost. Positive-real finite load already costs normalized rate above `6`, and complex finite rays cannot discount that cost because prediction sees the effective radial load while the coefficient norm pays the full load.
 
-RE-232 shows that microscopic flattening is not the global escape. For positive-real large centers and finite `kappa>1`, there is a sharp macroscopic prediction radius `alpha_*(kappa)=arccos((1+log kappa)/kappa)`. Fixed arcs below that radius are predicted exponentially well and fixed arcs above it fail, but the normalized Wiener rate stays strictly above `6`, already worse than the `5.996390` finite-center construction of RE-218.
+RE-235 closes the super-broad continuation outside the inverse-center layer. With `tau=N/(m|a|)->infinity` and a fixed positive arc, the exact normalized Wiener rate diverges. More generally, under `|a| sin(alpha)>=1`, bounded normalized rate forces `sin(alpha)` to be exponentially small in `tau`, on the scale `tau^(-1+1/m) 2^(-tau)` up to bounded factors. Thus super-broad growth buys no cheap fixed-arc escape; it trades corridor width for an exponentially collapsing destination.
 
-RE-233 resolves the equality arc in a clean rate-achieving fast-center regime and exposes a `log(m)/m` detuning layer. At exact tuning the closed boundary arc is predicted with `Theta(m^(-1/2))` error; logarithmic detuning can switch the boundary from success to failure without changing the six-plus Wiener verdict.
+The remaining one-center boundary is now the separate inverse-center layer `|a| sin(alpha)<1` and any regime not covered by the contraction hypotheses. Higher-value architectural routes remain multi-center/minimax, rational, or another predictor class that changes the global approximation geometry rather than tuning a dominated one-center family.
 
-RE-234 closes the remaining **finite-ray complex** version of this escape. If `a_m=rho_m e^(i phi_m)` tends to infinity with `N_m/(m rho_m)->tau in (0,infinity)` along a phase-convergent subsequence, contraction and successful prediction force the effective radial load `x=tau cos(phi)>1` and the same macroscopic restriction `x cos(alpha)>=1+log x`. The Wiener norm still pays the full `tau`, giving a normalized rate at least `(x+1+log x)/alpha_*(x)>6`. Complex phase therefore cannot discount the cost; the positive-real ray is already the cheapest finite-ray representative.
+## Keep local phase transition, destination width and Wiener cost distinct
 
-The finite-ray single-center large-center route is now structurally dominated. The remaining single-center regime is genuinely super-broad growth such as `N/(m|a|)->infinity`, together with any category outside the finite-ray hypotheses. Higher-value architectural routes remain multi-center/minimax, rational, or another predictor class that changes the global approximation geometry rather than tuning a dominated one-center family.
+A parameter regime is useful only if it changes the destination-visible normal form **and** remains globally competitive. RE-232--RE-234 show that microscopic flattening and complex tilt do not lower the finite-load cost. RE-235 shows that sending the load to infinity does not help either unless the observed arc shrinks exponentially fast.
 
-## Keep local phase transition, effective radial load, macroscopic radius and Wiener cost distinct
-
-Crossing the microscopic threshold removes one local obstruction but does not certify a useful global predictor. RE-232--RE-234 show that the macroscopic arc is controlled by an effective radial load while the coefficient norm can still pay the full complex-ray load; tilting the center therefore makes the global cost no cheaper.
-
-A future construction should be judged by the whole chain: does it flatten the relevant local normal form, control the full destination arc, and do so at a Wiener cost competitive with the existing `5.996390` construction? A complex phase, equality-layer refinement or other parameter change that leaves the same six-plus finite-ray cost is not a new extremal mechanism.
+A future construction should therefore be judged by the whole chain: local normal form, full destination region, normalization, and Wiener cost. A route that wins only by making the destination exponentially thin has not produced a new fixed-arc extremal mechanism.
