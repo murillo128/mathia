@@ -13,68 +13,76 @@ based_on:
   - research/mobius_cancellation/findings/MC-399-lcm-retention-separates-from-source-qvdc-phase.md
   - research/mobius_cancellation/findings/MC-400-twisted-lcm-hyperbola-transform-is-mobius-invertible.md
   - research/mobius_cancellation/findings/MC-401-full-lcm-endpoint-is-signed-gcd-energy.md
+  - research/mobius_cancellation/findings/MC-402-truncated-lcm-mask-is-mertens-weighted-divisor-energy.md
 ---
 
-# Can truncated lcm structure or a genuinely nonseparable pre-quadratic variable beat the source-depth barrier?
+# Can actual lcm/source structure or a genuinely nonseparable pre-quadratic variable beat the source-depth barrier?
 
 ## Observation
 
 `MC-382` shows that the current single-character Cochrane--Granville--Zheng recursion pays one square-root loss per conductor-scale layer, forcing an exponential-in-source-exponent saving tariff and hence a `log log y` analytic horizon. `MC-396` removes the earlier inverse-gap packing loss but leaves that `2^{O(A)}` tariff intact. `MC-383` shows that replacing individual estimates by a generic thin-family mean value is not enough when the theorem still charges a fixed positive power of one global modulus.
 
-Julia Stadlmann's *On primes in arithmetic progressions and bounded gaps between many primes* (Advances in Mathematics 474 (2025), 110190; arXiv:2309.00425) gives a nearby but structurally different mechanism: a modified q-van der Corput argument retains an arithmetic `y`-summation variable inside the differencing/Cauchy geometry, reducing the diagonal count and enlarging the admissible parameter range.
+Julia Stadlmann's modified q-van der Corput argument in *On primes in arithmetic progressions and bounded gaps between many primes* (Advances in Mathematics 474 (2025), 110190; arXiv:2309.00425) remains the structural comparison: it keeps an arithmetic summation variable alive through differencing/Cauchy so that the diagonal count genuinely changes.
 
-The endpoint source/Selberg frame has now passed five exact representation tests. `MC-397` shows that pre-modewise source averaging Fourier-collapses to a source-signature projector, so the source-mode index is not an extra arithmetic sample. `MC-398` shows that the squared Selberg divisor pair `(d_1,d_2)` enters the arithmetic only through `ell=[d_1,d_2]`, with the pair fiber compressed to one coefficient `C_g(ell)`. `MC-399` shows that complete multiplicativity separates `chi_I(ell m)` and removes the lcm scalar at the first additive q-vdC correlation. `MC-400` then shows that the moving hyperbola boundary is an exactly reversible Dirichlet-convolution representation rather than an independent arithmetic coordinate.
+The current source/Selberg frame has now passed six exact representation tests. `MC-397` collapses source-mode averaging to a signature projector. `MC-398` compresses the squared Selberg pair `(d_1,d_2)` to the lcm coefficient `C_g(ell)`. `MC-399` shows that complete multiplicativity removes the lcm scalar at the first additive q-vdC correlation. `MC-400` proves that the moving hyperbola family is an invertible Dirichlet-convolution coordinate. `MC-401` classifies the complete endpoint `A_I(B^2)` as a classical signed GCD/divisor-incidence energy with an indefinite local kernel.
 
-`MC-401` now classifies the **complete lcm endpoint** left inside that branch. For one source mode,
+`MC-402` now resolves the generic representation question at an incomplete endpoint. For `X<B^2`,
 
-`A_I(B^2)=sum_{ell<=B^2} C_g(ell) chi_I(ell)`
+`A_I(X)=sum_(n<=X) M(floor(X/n)) E_I(n;B)`,
 
-has the exact meet-matrix factorization
-
-`A_I(B^2)=sum_k (mu *_D chi_I)(k) (sum_{k|d<=B} g(d) chi_I(d))^2`.
-
-This is classical GCD/meet-matrix incidence algebra. The diagonal weights are signed whenever a unit prime has `chi_I(p)=-1`, and the local two-point kernel is already indefinite, so the full endpoint supplies neither positivity nor generic cancellation. If all unit primes through `B` have positive character value, the endpoint instead collapses to a single perfect square. Thus generic structure of the **complete** lcm coefficient is no longer a plausible missing mechanism by itself.
+where each `E_I(n;B)` has the same signed GCD/meet factorization as the complete endpoint, restricted to divisors of `n`. This is an exact Möbius-inversion identity. It does **not** make `A_I(X)` Mertens-equivalent and does not rule out a direct truncated-lcm theorem. It does show that the cutoff mask itself is not a free retained variable: the natural incidence resolution of `[d_1,d_2]<=X` introduces the Mertens staircase as its outer coefficient.
 
 ## Research question
 
-The retained-variable question now has two legitimate branches.
+Two branches remain legitimate.
 
-First, can one prove an **independent truncated-lcm or actual-weight theorem** strong enough to change the source-cost scaling? The standard-lcm target is no longer the complete endpoint `A_I(B^2)`. It is one of:
+First, can the **actual Selberg/source structure** inside the truncated lcm form produce a theorem that is genuinely stronger than generic cutoff inversion? A surviving result must exploit something specific to the real coefficient `g`, the source-signature family, or a collective bilinear relation among the incidence energies. It may use the range `X<B^2`, but the gain must not come merely from rewriting the cutoff with `MC-402` and then inserting an unavailable Mertens estimate.
 
-- a genuinely truncated partial sum `A_I(X)` with `X<B^2`, where the mask `[d_1,d_2]<=X` prevents the complete meet-matrix square decomposition;
-- a theorem using special structure of the actual Selberg coefficient `g`, rather than the generic lcm/GCD kernel;
-- source-signature class information or a collective bilinear estimate not determined by the complete quadratic form.
+The useful target is therefore no longer “truncation prevents factorization.” It is a source-specific theorem such as a nontrivial estimate for
 
-A successful estimate must avoid both the sequential `2^{-Omega(A)}` source-depth tariff and a fixed positive common-radical cost `P^theta`. It does not count to recover the complete endpoint by the classical meet-matrix factorization in `MC-401`, nor to obtain lcm partial sums from the inversion formula in `MC-400` and feed them back without an independent quantitative gain.
+`A_I(X)=sum_(ell<=X) C_g(ell) chi_I(ell)`
+
+or for the corresponding joint form
+
+`sum_(ell m<=N) C_g(ell) chi_I(ell) chi_I(m)`
+
+whose proof exploits actual `g`/signature structure and, after complete bookkeeping, avoids both the sequential `2^{-Omega(A)}` source-depth tariff and a fixed positive common-radical cost `P^theta`.
 
 Second, can a different **pre-quadratic arithmetic representation** expose a divisor/source variable whose phase or congruence does not factor through `[d_1,d_2]` and remains nonseparable through the relevant Cauchy/q-vdC correlation? This remains the direct analogue of Stadlmann's retained-variable mechanism.
 
 ## Why it may matter
 
-Five apparent escape dimensions have now been separated from genuine analytic content by exact algebra: source-mode averaging, the Selberg divisor-pair labels, the lcm factor inside the source phase, the hyperbola boundary viewed merely as a new sample coordinate, and the complete lcm endpoint viewed as an unexplained quadratic statistic. Each reduction prevents a richer notation from being mistaken for a stronger estimate.
+The representation audit has now consumed six superficially richer coordinates without using a deep analytic estimate: source modes, divisor-pair labels, the standard lcm source phase, the moving hyperbola endpoint, the complete lcm quadratic statistic, and finally the generic incomplete lcm mask under divisor-incidence resolution.
 
-The surviving lcm-side question is consequently sharper. **Truncation, actual Selberg-weight structure, or extra signature distribution must do real mathematical work.** If they do not, the remaining escape is no longer another rearrangement of the squared Selberg frame but a genuinely different pre-quadratic kernel.
+That leaves a much cleaner distinction. A useful theorem must derive leverage from **source-specific coefficient law or genuinely joint arithmetic**, not from keeping a coordinate visible after an exact reversible or classical incidence transform. This is precisely where a Stadlmann-style gain would have to differ from the current frame.
 
 ## Decisive test
 
-For the lcm branch, exhibit a theorem that is genuinely unavailable at the complete endpoint classified by `MC-401`. Concretely, prove a bound for `A_I(X)` in a nontrivial range `X<B^2`, a source-signature analog, or a joint bilinear form
+For the lcm branch, exhibit a bound in a nontrivial range `X<B^2` or a collective source-signature/bilinear estimate and identify the exact ingredient not present for generic `g` and a generic quadratic character. Propagate it through the source-frame argument and account explicitly for every source-depth factor, common-radical power, exceptional set, logarithmic loss, and truncation error. The branch survives only if a strict quantitative gain remains.
 
-`sum_{ell m<=N} C_g(ell) chi_I(ell) chi_I(m)`
+Reject an argument if its only new step is one of the already-classified representations:
 
-using arithmetic structure of the truncation, the actual Selberg coefficient, or the source family. Propagate the estimate to the source-frame bound and account explicitly for every source-depth factor, common-radical power, exceptional set, logarithmic loss, and truncation. The direction survives only if a strict quantitative improvement remains after that accounting.
+- complete endpoint signed-GCD energy (`MC-401`);
+- generic cutoff-to-incidence expansion with Mertens weights (`MC-402`);
+- moving hyperbola inversion (`MC-400`);
+- separable lcm phase (`MC-399`);
+- divisor-pair labels after lcm compression (`MC-398`);
+- source-mode labels after projector collapse (`MC-397`).
 
-Reject an argument if it uses only the full endpoint `A_I(B^2)`: `MC-401` gives its exact classical signed GCD/divisor-energy factorization and shows that the underlying kernel is indefinite rather than generically cancelling. Also reject a purported gain if its only new step is the moving boundary `m<=N/ell` (`MC-400`), if it treats `chi_I(ell m)` as nonseparable (`MC-399`), keeps divisor-pair labels after lcm compression (`MC-398`), or reuses the source-mode index after projector collapse (`MC-397`). Generic family estimates with a fixed positive global-modulus cost remain subject to `MC-383`.
+A use of `MC-402` can still be productive only if the proof exploits non-generic structure of the incidence energies and controls the resulting Mertens-weighted combination without assuming the target cancellation.
 
-For a pre-quadratic alternative, exhibit the kernel before estimating it. It must not factor through the lcm as in `MC-398`, and after source Fourier expansion its retained variable must remain nonseparable through the relevant first correlation rather than cancelling as in `MC-399`. Then count the post-Cauchy diagonal exactly and compare the mechanism with Stadlmann's genuine retained-variable gain.
+For a pre-quadratic alternative, exhibit the kernel before estimating it. It must not factor through the lcm as in `MC-398`, and after source Fourier expansion its retained variable must remain nonseparable through the relevant first correlation rather than cancelling as in `MC-399`. Then count the post-Cauchy diagonal exactly and compare the mechanism with Stadlmann's retained-variable gain.
 
 ## Evidence boundary
 
-No nontrivial uniform estimate for truncated `A_I(X)` has been proved, no theorem exploiting special structure of the actual Selberg coefficient has changed the source-cost scaling, and no genuinely non-lcm-factorable pre-quadratic variable has been exhibited. `MC-401` does not rule out any of those routes; it only closes the generic complete-endpoint lcm statistic as an independent mechanism.
+No theorem using the actual Selberg coefficient has yet changed the source-cost scaling, no collective source-signature estimate has escaped the global-modulus horizon, and no genuinely non-lcm-factorable pre-quadratic variable has been exhibited.
 
-Stadlmann's theorem concerns averaged prime distribution to smooth moduli in a different Type I setting and does not imply an endpoint source-cost theorem or improved Möbius cancellation. None of `MC-397`--`MC-401` yields a bound for the Mertens function.
+`MC-402` supplies no bound for `A_I(X)` or `M(x)`. Its role is narrower: it prevents generic truncation/incidence algebra from being credited as independent arithmetic information. A direct theorem for truncated `A_I(X)` remains open if it uses structure beyond that identity.
+
+Stadlmann's theorem concerns averaged prime distribution to smooth moduli in a different Type I setting and does not imply an endpoint source-cost theorem or improved Möbius cancellation.
 
 ## Research disposition
 
-The clue remains `accepted` but is narrower. The standard-lcm branch is now a **truncated/actual-weight arithmetic theorem obligation**: exploit the cutoff `[d_1,d_2]<=X`, special structure of the actual Selberg weight, source-signature distribution beyond the complete meet-matrix energy, or a genuinely collective bilinear form, and show that the resulting estimate changes the source-depth/common-radical scaling.
+The clue remains `accepted` but is narrower. The lcm-side obligation is now **actual-weight/source-family arithmetic**, not truncation by itself: exploit the specific Selberg coefficient, source-signature distribution, or a genuinely collective bilinear relation and prove that it changes the source-depth/common-radical scaling without importing Mertens cancellation through `MC-402`.
 
-The second branch remains unchanged: find a pre-quadratic arithmetic variable that survives both lcm compression and source-phase separation and then verify, by an exact post-Cauchy diagonal count, that it produces the retained-variable effect missing from the present representation.
+The alternative branch remains unchanged: find a pre-quadratic arithmetic variable that survives both lcm compression and source-phase separation, then verify by an exact post-Cauchy diagonal count that it produces the retained-variable effect missing from the present representation.
