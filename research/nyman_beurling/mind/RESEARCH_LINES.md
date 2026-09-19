@@ -2,32 +2,28 @@
 
 This file holds the current mathematical questions suggested by the durable Nyman--Beurling intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Replace population and fixed-power phase control below linear source width by genuinely joint depth-phase information
+## Replace separable population/depth/phase control by genuinely joint residue information
 
 **Linked intuitions:** `MI-001-target-aware-gram-geometry-must-carry-absolute-scale` through `MI-060-fixed-power-phase-cancellation-is-not-enough-at-the-ford-boundary`.
 
-The positive-source program has progressively separated recurrence existence, source resolution, interval occupancy, reconstruction cost and the exact analytic carrier. NB-218 shows that the Mellin-primitive tariff disappears when the source and kernel are kept coupled; NB-219--NB-221 remove localization and transport artifacts and identify the same leading carrier, a smooth convolution of `-zeta'/zeta`, for every fixed primitive depth.
+NB-218--NB-224 isolate the exact source-side carrier. Keeping source and Mellin kernel coupled removes artificial primitive tariffs; generic strip analyticity is sharp for the ambient class; the actual zeta singularity spectrum plus Bellotti density reaches almost to Ford height; and a proportional logarithmic source shell narrows the vertical carrier enough to reach the exact Ford denominator.
 
-NB-222 proves that generic bounded strip analyticity is exhausted: the contour factor `e^(-X eta)` is sharp for the exact carrier over that ambient function class. NB-223 then retains the actual zeta singularity spectrum. Its weighted zero sum combined with Bellotti's near-one zero-density theorem gives an order-one positive Euler gap throughout every fixed logarithmic margin below Ford height.
+NB-225 proves that the linear shell width is the sharp transition for the current **population-only** mechanism. Every genuinely sublinear `H=o(R)` permits an abstract near-one packet compatible with the zero-free, density and local-count inputs while retaining an order-one moving-shell contribution.
 
-NB-224 shows that the endpoint obstruction is resolution-dependent. Widen the source shell to `H=theta X`, normalized by `1/H`; the Fourier carrier narrows to vertical width `Theta(1/X)`, and Bellotti's local disk count then reaches the exact Ford denominator. The price is physical: the source spans roughly `e^X <= n <= e^((1+theta)X)`.
+NB-226 shows that an unweighted fixed-power phase theorem does not repair this. For every fixed `0<vartheta<1`, the packet can satisfy `O(m^vartheta)` cancellation on every consecutive vertical subpacket and move horizontally until the Ford damping `e^(-YD)` compensates the allowed phase bias.
 
-NB-225 proves that this linear shell width is the sharp transition for the **current population-only mechanism**. At exact Ford scale `R~X`, every genuinely sublinear width `H=o(R)` permits an abstract near-one zero packet compatible with the Vinogradov--Korobov zero-free depth, Bellotti's fixed and growing density estimates, Bellotti's local disk count and ordinary local zero counting. Its moving-shell phases can be aligned while its horizontal depth is tuned so the signed residue remains order one.
+NB-227 closes a much broader separable repair. Even if the raw phase estimate is strengthened by an arbitrary predetermined depth-only factor,
 
-NB-226 shows that replacing alignment by a generic phase-cancellation hypothesis still does not cross the boundary. For every fixed `0<vartheta<1`, the matched packet can be arranged so that **every consecutive vertical subpacket** of `m` zeros satisfies a deterministic bound `O(m^vartheta)` while the weighted signed residue remains order one. Square-root cancellation is therefore insufficient. The packet simply moves horizontally until its damping `e^(-YD)` compensates the allowed `M^vartheta` phase bias.
+`|sum_I e^(iX(gamma-t))| << 1 + |I|^vartheta/Q(D)`,
 
-The live source-side question is now precise: prove a theorem that couples horizontal depth to vertical phase strongly enough that
+with `Q(D)` finite at every fixed depth, the packet can choose a depth `D=D(M)->infinity` slowly enough that `Q(D)e^(YD) <= M^(vartheta/2)`, distribute a bias of size `~e^(YD)` across the packet, satisfy the strengthened bound on every consecutive subpacket, and still leave an order-one residue after horizontal damping. No fixed depth-only penalty multiplying a fixed positive population power can therefore control the exact-Ford sublinear-shell regime uniformly.
 
-`e^(-YD) |sum e^(iX(gamma-t))| = o(1)`
+The live source-side question is now sharper: the missing theorem must couple population, horizontal depth and phase **nonseparably**, remove the admissible population as depth changes, constrain nested depth slabs jointly, or control the actual residue-weighted sum directly. A theorem of the schematic form `M^vartheta/Q(D)` is insufficient no matter how fast the fixed function `Q` grows.
 
-uniformly on the packets admitted by the population bounds, or control the actual residue-weighted sum directly. Equivalent useful inputs include a joint depth-window density theorem or a depth-sensitive phase estimate whose saving strengthens as zeros move left. Another absolute count, or a fixed-power bound for raw phases independent of depth, cannot close a sublinear Ford shell.
+## Keep source width, population, depth and weighted phase as separate currencies
 
-## Keep source width, carrier width, zero population, phase coherence and horizontal depth separate
+The relevant currencies include logarithmic source width `H`, carrier width `1/H`, local zero population, normalized horizontal depth `D`, raw phase bias, the damping `e^(-YD)`, residue weights and the norm in which cancellation is asserted. NB-225--NB-227 show that these cannot be optimized independently and then multiplied after the fact.
 
-The relevant currencies now include source total variation, logarithmic shell width `H`, multiplicative span `e^H`, transported carrier width `1/H`, zero-free contour width, horizontal zero depth, local zero counts at scale `1/R`, raw carrier phase, depth-sensitive phase cancellation, residue weights, and any cancellation norm placed on the zero sum.
+A future source-side improvement must therefore state a joint admissible region in `(M,D)` or act on the weighted residues themselves. A depth-sensitive theorem is not useful merely because it becomes arbitrarily strong for each fixed `D`: the matched control can let `D` diverge on a diagonal slower than that fixed-depth strengthening becomes effective relative to the available population.
 
-NB-222--NB-226 give a sharp hierarchy. Generic strip analyticity cannot improve the carrier scale. Zeta-specific population improves it almost to Ford for fixed-width shells. Local disk counts plus a log-wide shell reach exact Ford because the source buys vertical localization. Every sublinear shell leaves enough vertical capacity for an order-one matched packet, and NB-226 shows that the same packet can satisfy any fixed positive power cancellation law by trading the remaining phase bias against horizontal damping.
-
-A future source-side improvement must therefore pay for a **joint depth-window/phase theorem**, not another absolute count and not an unweighted random-phase heuristic. A theorem at Ford height is not automatically stronger if it achieves that height by widening the source beyond the multiplicative resolution consumed by the Nyman--Beurling destination. Conversely, the sublinear-width no-go remains a method boundary for the audited information, not an obstruction to actual zeta phase-depth correlations.
-
-This remains source-side information. NB-224--NB-226 do not themselves give a quantitative Nyman--Beurling distance theorem or prove that every good approximant realizes the positive Euler-return observable. Any destination claim must preserve that bridge explicitly.
+This remains source-side information. The matched packets are logical controls compatible with the audited zero information, not constructions of actual zeta zeros, and the results do not by themselves give a quantitative Nyman--Beurling distance theorem. Any destination claim must preserve that bridge explicitly.
