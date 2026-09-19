@@ -15,6 +15,7 @@ based_on:
   - research/visual_exploration/findings/VIS-304-wang-prime-power-spacing-loglog-boundary.md
   - research/visual_exploration/findings/VIS-305-cramer-parity-control-loglog-spacing-norm.md
   - research/visual_exploration/findings/VIS-306-bernoulli-signed-shell-hilbert-cancellation.md
+  - research/visual_exploration/findings/VIS-307-prime-power-random-phase-hilbert-cancellation.md
 ---
 
 # Does Wang packet localization preserve source information without manufacturing strip gain?
@@ -54,6 +55,17 @@ uniformly in `T,H`. Therefore
 
 and in particular `R_I=o_p(H)` at `H asymp x log log x`. The `log log x` absolute norm is therefore not merely non-prime-specific; it is also a poor predictor of signed obstruction size in the obvious matched sparse control.
 
+`VIS-307` strengthens the control without changing the support at all. It keeps every actual prime power and every Wang coefficient magnitude, randomizing only one independent unit-modulus phase per prime-power support point. Exact phase orthogonality and a dyadic estimate of the squared reciprocal-log kernel give
+
+`E R_I^epsilon=0`,
+`E|R_I^epsilon|^2 << x log^3(3x)`.
+
+Hence
+
+`R_I^epsilon=O_p(sqrt(x) log^(3/2)(3x))=o_p(H)`
+
+at `H asymp x log log(3x)`. The actual prime-power spacing pattern therefore does not by itself sustain the boundary-scale signed remainder: the missing information must lie in deterministic phase organization that this stronger null deliberately destroys.
+
 ## Research question
 
 Two source routes remain distinct.
@@ -64,42 +76,44 @@ For the **fixed-power real-axis source**, is there a property of
 
 strictly weaker than the RH-equivalent half-plane pole exclusion of `VIS-293` that improves the generic Korobov--Vinogradov envelope and survives Wang's complete error budget?
 
-For the **moving upper pointwise layer**, can the actual prime-power endpoint Hilbert form be shown to cancel beyond the `x log log x` absolute spacing bound? The decisive distinction is now between ordinary sparse occupancy and **prime-specific coherence**. Possible outcomes are:
+For the **moving upper pointwise layer**, can the actual deterministic prime-power endpoint phases be shown to cancel beyond the `x log log x` weighted-Hilbert bound, or can one isolate a concrete phase-coherence mechanism that genuinely prevents such cancellation? Support geometry is no longer enough: `VIS-307` preserves the exact prime-power support, all spacings, and all coefficient magnitudes while still giving `o_p(H)` after phase randomization.
 
-- prove that the true prime-power signed endpoint form is `o(H)` near `H asymp x log log x`, for example by using arithmetic spacing correlations and phase cancellation unavailable to the Bernoulli control;
-- prove a stronger coefficient/support statement such as an `O(x)`-scale signed remainder over the relevant tapered prime-power range;
-- construct an admissible matched support/coefficient model that preserves enough arithmetic or phase coherence to produce an `H`-scale signed remainder, thereby identifying what information is missing from the Bernoulli null.
+The useful next alternatives are therefore narrower:
 
-The plain density/parity Bernoulli model is no longer a candidate for the third outcome: `VIS-306` rules it out.
+- prove that Wang's true deterministic prime-power endpoint form is `o(H)` near `H asymp x log log x`;
+- identify a specific deterministic phase relation, such as base-prime harmonic coherence or a structured endpoint alignment, and prove that it can sustain an `H`-scale contribution;
+- construct a stronger matched control that preserves that explicit phase relation and test whether the obstruction survives.
+
+A support-only refinement, even one preserving the exact arithmetic spacings, is no longer a candidate explanation by itself.
 
 ## Why it may matter
 
-Repeatedly decomposing the first term that reaches output scale has removed the moving lower-source barrier, the fixed exponent gap, the `H/L^3` localization wall, the `H/L^2` coefficient-majorant wall, the unrestricted `H/L` mean-value wall, the ambient integer-spacing wall, and finally the interpretation of the `x log log x` absolute spacing norm as a signed obstruction.
+Repeatedly decomposing the first term that reaches output scale has removed the moving lower-source barrier, the fixed exponent gap, the `H/L^3` localization wall, the `H/L^2` coefficient-majorant wall, the unrestricted `H/L` mean-value wall, the ambient integer-spacing wall, the interpretation of the `x log log x` absolute spacing norm as a signed obstruction, and now the hypothesis that exact prime-power spacing geometry alone is enough.
 
-`VIS-305` and `VIS-306` together now separate three layers that were previously conflated: sparse nearest-neighbor geometry, its absolute weighted Hilbert majorant, and the actual signed endpoint form. Density and parity reproduce the first two at the `log log x` scale, but the signed form of the same ensemble is only `O_p(x)`. Any genuine barrier at `H/log log x` must therefore involve coherence that survives the sign/phase structure rather than only large reciprocal spacings.
+`VIS-305`--`VIS-307` separate four levels: sparse occupancy, its absolute Hilbert majorant, exact arithmetic support geometry, and deterministic coefficient phase organization. The first three can reproduce large reciprocal-spacing costs while their matched signed controls remain `o_p(H)`. A genuine barrier at `H/log log x` must therefore live in the fourth level or in a still more structured interaction coupled to it.
 
-A further gain for the true prime-power form would enlarge the pointwise source window beyond `H/log log x`. A coherent matched lower construction would instead identify the first boundary in this chain that survives coefficient support, classical zero-free localization, support-sensitive Hilbert geometry, density/parity matching, and ordinary Bernoulli signed cancellation.
+A cancellation theorem for the true phase pattern would enlarge the pointwise source window beyond `H/log log x`. A coherent matched lower construction would instead identify the first boundary in this chain that survives exact support, exact coefficient magnitudes, classical zero-free localization, support-sensitive Hilbert geometry, and phase-randomized signed cancellation.
 
 ## Decisive test
 
 For the fixed-power branch, state a concrete real-axis estimate or secondary expansion for `S(x)-log x`, derive it from arithmetic information strictly weaker than the pole exclusion of `VIS-293`, and propagate it through all source, gamma, localization, and cross-term errors. Kill the route if the gain is only a generic PNT substitution, smoothing attenuation, an RH-equivalent continuation assumption, or a term swallowed by another Wang remainder.
 
-For the moving upper branch, work from the exact signed endpoint Hilbert forms on the prime-power logarithmic frequencies. In the regime `x log log(3x) asymp H`, determine whether the true tapered form admits a gain unavailable to the Bernoulli control. Any proposed gain should identify the arithmetic or phase-coherence input actually used, rather than return to the absolute local-spacing norm.
+For the moving upper branch, work from the exact signed endpoint Hilbert form on the actual prime-power logarithmic frequencies in the regime `x log log(3x) asymp H`. Any claimed obstruction must now identify a **phase-coherence invariant** lost by the independent-support-phase control of `VIS-307`. A natural next control is to restore one shared unit phase per base prime, so that the coefficient at `p^k` carries the harmonic phase `epsilon_p^k`, while leaving Wang's magnitudes and exact support untouched. If that phase-preserving control still gives `o_p(H)`, the candidate mechanism must be narrower again.
 
-A matched obstruction must now preserve more than density, parity, coefficient size and generic sparsity. It should encode a concrete additional feature of the prime-power support or endpoint phases and then show that feature can sustain an `H`-scale signed form. Conversely, a cancellation theorem should control the full signed form and still account for the localization/gamma budget already isolated by `VIS-298`--`VIS-304`.
+Conversely, a cancellation theorem for the true deterministic phases should control the full signed form and still account for the localization/gamma budget already isolated by `VIS-298`--`VIS-304`.
 
-Do not reopen the old `H/L^3`, `H/L^2`, `H/L`, ambient-spacing, density-only local-spacing, or plain Bernoulli signed-control routes unless a new hypothesis invalidates the corresponding findings.
+Do not reopen the old `H/L^3`, `H/L^2`, `H/L`, ambient-spacing, density-only local-spacing, plain Bernoulli signed-control, or exact-support/independent-phase routes unless a new hypothesis invalidates the corresponding findings.
 
 ## Evidence boundary
 
-`VIS-283`--`VIS-303` establish the previous source reductions and boundary corrections. `VIS-304` proves only an upper bound for the mean-value remainder using classical weighted-Hilbert and sieve machinery; it does not show that `x log log x` is attained, optimal, or a transition of `F_I`.
+`VIS-283`--`VIS-303` establish the previous source reductions and boundary corrections. `VIS-304` proves only an upper bound for the actual mean-value remainder using classical weighted-Hilbert and sieve machinery; it does not show that `x log log x` is attained, optimal, or a transition of `F_I`.
 
-`VIS-305` proves an exact negative control for the **absolute spacing norm**: parity-matched independent sparse occupancy already has expected order `x log log x`. `VIS-306` proves a complementary negative control for the **signed shell remainder** of that same ensemble: its expectation is `O(x)`, its variance is `O(x log^3 x)`, and hence it is `o_p(H)` at the `H asymp x log log x` boundary.
+`VIS-305` proves an exact negative control for the **absolute spacing norm**. `VIS-306` proves a complementary negative control for the **signed Bernoulli shell remainder**. `VIS-307` preserves the **exact prime-power support and Wang coefficient magnitudes** and shows that after independent coefficient-phase randomization its signed remainder has second moment `O(x log^3 x)` and is still `o_p(H)` at the current boundary.
 
-Neither result estimates the actual signed prime-power endpoint form. Prime-pair singular-series structure, higher prime powers, the full tapered range, and deterministic endpoint phases may still create or destroy coherence absent from the Bernoulli model. No stronger RH criterion or new prime-gap theorem is established.
+`VIS-307` deliberately does not preserve multiplicative phase coherence among `p,p^2,p^3,...`; it therefore does not estimate the actual deterministic form and does not rule out a mechanism carried by shared base-prime harmonics or by endpoint-phase alignment. No stronger RH criterion, new prime-gap theorem, or new random quadratic-form theorem is established.
 
 ## Research disposition
 
-Outcome so far: **upper pointwise branch narrowed past absolute spacing geometry and ordinary sparse signed controls to prime-specific arithmetic/phase coherence**.
+Outcome so far: **upper pointwise branch narrowed from support geometry to explicit deterministic phase coherence**.
 
-The accepted clue remains live for the true signed prime-power endpoint form and for the separate fixed-power source-specific arithmetic question. A future matched obstruction must preserve an explicit coherence mechanism beyond the density/parity Bernoulli null.
+The accepted clue remains live for the true signed prime-power endpoint form and for the separate fixed-power source-specific arithmetic question. The next matched obstruction must preserve a concrete phase-coherence mechanism rather than refine support geometry again.
