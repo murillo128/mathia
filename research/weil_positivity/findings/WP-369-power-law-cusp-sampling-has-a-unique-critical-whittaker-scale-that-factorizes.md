@@ -4,7 +4,7 @@ title: Power-law cusp sampling has a unique critical Whittaker scale that factor
 branch: weil_positivity
 status: supported
 kind: index-adapted-whittaker-cusp-scale-trichotomy
-claim_strength: exact power-law sampling trichotomy and critical-scale factorization for physical Eisenstein Fourier-Whittaker modes
+claim_strength: exact power-law sampling trichotomy and critical-scale factorization for normalized Eisenstein Fourier-Whittaker modes
 created: 2026-09-19
 related: [WP-358, WP-363, WP-366, WP-367, WP-368]
 clues: [CLUE-maass-selberg-remainder-sign-interface]
@@ -18,9 +18,9 @@ prior_art:
 
 ## Claim
 
-`WP-368` left one explicit escape open: let the radial height approach the cusp origin as the arithmetic/Fourier index grows, instead of using one fixed source scale `Y>=Y_*>0`. For the standard physical Fourier--Whittaker amplitude of the level-one Eisenstein family, that escape has a sharp scale transition.
+`WP-368` left one explicit escape open: let the radial height approach the cusp origin as the arithmetic/Fourier index grows, instead of using one fixed source scale `Y>=Y_*>0`. For the normalized Fourier--Whittaker mode of the level-one Eisenstein family, that escape has a sharp scale transition.
 
-Up to a common nonzero factor depending only on the spectral parameter `r`, write the positive-index nonconstant mode as
+Work with the standard normalized positive-index Whittaker coefficient
 
 \[
 w_{r,n}(Y)
@@ -29,6 +29,8 @@ w_{r,n}(Y)
 \lambda_r(n)=n^{ir}\sigma_{-2ir}(n).
 \tag{1}
 \]
+
+A particular Eisenstein normalization may multiply every mode at fixed `r` by one common meromorphic scalar. Every `n`-scale statement below is unchanged by a finite nonzero common scalar; if that scalar vanishes at an exceptional parameter, the corresponding physical channel is simply null and cannot rescue the candidate.
 
 For any index-adapted height `Y_n>0`, put
 
@@ -49,7 +51,7 @@ Then there is an exact factorization
 \tag{3}
 \]
 
-Thus the critical `n^{-1/2}` scale is already the kinematic factor obtained when the physical Whittaker normalization `sqrt(Y)` is rewritten in the natural variable `nY`; all remaining finite--archimedean incidence is carried by the single profile `Psi_r(nY_n)`.
+Thus the critical `n^{-1/2}` scale is already the kinematic factor obtained when the Whittaker normalization `sqrt(Y)` is rewritten in the natural variable `nY`; all remaining finite--archimedean incidence is carried by the single profile `Psi_r(nY_n)`.
 
 Now take the canonical power-law family
 
@@ -68,15 +70,15 @@ For fixed real `r`, the three regimes are:
 & w_{r,n}(Y_n)
  =\frac12\lambda_r(n)n^{-1/2}
    e^{-2\pi c n^{1-\alpha}}
-   \left(1+O_r(n^{-(1-\alpha)})\right),\\[1.2ex]
+   \left(1+O_{r,c}(n^{-(1-\alpha)})\right),\\[1.2ex]
 \alpha=1:
 & w_{r,n}(Y_n)
  =B_r(c)\lambda_r(n)n^{-1/2},
  \quad B_r(c):=\sqrt c\,K_{ir}(2\pi c),\\[1.2ex]
 \alpha>1,\ r\ne0:
-& w_{r,n}(Y_n)=O_{r,c}\!\left(\lambda_r(n)n^{-\alpha/2}\right),\\[0.8ex]
+& w_{r,n}(Y_n)=O_{r,c}\!\left(|\lambda_r(n)|n^{-\alpha/2}\right),\\[0.8ex]
 \alpha>1,\ r=0:
-& w_{0,n}(Y_n)=O_c\!\left(\lambda_0(n)n^{-\alpha/2}\log n\right).
+& w_{0,n}(Y_n)=O_c\!\left(|\lambda_0(n)|n^{-\alpha/2}\log n\right).
 \end{array}
 }
 \tag{5}
@@ -133,18 +135,18 @@ Y_n=c/n
 
 This is independent of RH and uses no zero data.
 
-**Classification:** `EXACT-DERIVED + PHYSICAL-WHITTAKER-MODE + INDEX-ADAPTED-CUSP-SCALE + POWER-LAW-TRICHOTOMY + UNIQUE-CRITICAL-SCALE + FINITE-ARCHIMEDEAN-FACTORIZATION + HILBERT-SQUARE-DIVERGENCE + MATCHED-CONTROL + NEGATIVE/NARROWING + CLASSICAL-BESSEL-INGREDIENT + NO-GRAND-NOVELTY-CLAIM`.
+**Classification:** `EXACT-DERIVED + NORMALIZED-WHITTAKER-MODE + INDEX-ADAPTED-CUSP-SCALE + POWER-LAW-TRICHOTOMY + UNIQUE-CRITICAL-SCALE + FINITE-ARCHIMEDEAN-FACTORIZATION + HILBERT-SQUARE-DIVERGENCE + MATCHED-CONTROL + NEGATIVE/NARROWING + CLASSICAL-BESSEL-INGREDIENT + NO-GRAND-NOVELTY-CLAIM`.
 
 ## 1. The exact `nY` reduction exposes what the cusp scale can and cannot carry
 
-The standard Fourier expansion of the unitary-axis Eisenstein series has nonconstant coefficients proportional to
+The standard Fourier expansion of the unitary-axis Eisenstein family has normalized nonconstant coefficients proportional, after removing a scalar common to all arithmetic indices, to
 
 \[
 \lambda_r(n)\sqrt Y\,K_{ir}(2\pi nY).
 \tag{10}
 \]
 
-Any normalization factor common to all `n` at fixed `r` is irrelevant to the arithmetic-index scale and has therefore been suppressed in (1). Equation (3) is then only the identity `sqrt(Y_n)=n^{-1/2}sqrt(nY_n)`, but it is structurally decisive for this research route.
+That common scalar is irrelevant to the arithmetic-index scale whenever finite and nonzero. If a chosen uncompleted normalization makes it vanish at a special spectral parameter, the entire corresponding physical Fourier channel vanishes rather than acquiring a different `n`-dependence. Equation (3) is then only the identity `sqrt(Y_n)=n^{-1/2}sqrt(nY_n)`, but it is structurally decisive for this research route.
 
 The variable `nY` is the standard archimedean Whittaker/Kirillov scaling variable. Consequently an index-dependent sampling rule does not create a new independent finite-place weight and archimedean weight. It produces the universal half-density factor `n^{-1/2}` multiplied by the profile `Psi_r(t_n)`. To retain a nonvanishing critical-size envelope, the sequence `t_n=nY_n` must avoid both ends of the positive half-line, because
 
@@ -200,7 +202,7 @@ w_{r,n}(Y_n)
  K_{ir}(2\pi c n^{1-\alpha})\\
 &=\frac12\lambda_r(n)n^{-1/2}
  e^{-2\pi c n^{1-\alpha}}
- \left(1+O_r(n^{-(1-\alpha)})\right),
+ \left(1+O_{r,c}(n^{-(1-\alpha)})\right),
 \end{aligned}
 \tag{16}
 \]
@@ -209,7 +211,7 @@ which proves the first line of (5). The cancellation of the powers of `n` down t
 
 At `alpha=1`, the argument is exactly `2 pi c` for every index, giving the second line of (5) with no asymptotic approximation.
 
-For `alpha>1`, the argument tends to zero. For fixed `r!=0`, the standard small-argument expansion of `K_{ir}` is an oscillatory bounded combination of `x^{ir}` and `x^{-ir}`, hence `K_{ir}(x)=O_r(1)`. For `r=0`, `K_0(x)=-log x+O(1)`. Substitution gives the last two lines of (5). On primes the boundedness of `lambda_r(p)` makes both estimates `o(p^{-1/2})`; on general integers the standard divisor-size bound `lambda_r(n)=n^{o(1)}` gives the same conclusion for each fixed `alpha>1`.
+For `alpha>1`, the argument tends to zero. For fixed `r!=0`, the standard small-argument expansion of `K_{ir}` is an oscillatory bounded combination of `x^{ir}` and `x^{-ir}`, hence `K_{ir}(x)=O_r(1)`. For `r=0`, `K_0(x)=-log x+O(1)`. Substitution gives the last two lines of (5). On primes the boundedness of `lambda_r(p)` makes both estimates `o(p^{-1/2})`; on general integers `|lambda_r(n)|<=d(n)=n^{o(1)}`, so the same conclusion holds for each fixed `alpha>1`.
 
 No analytic continuation in `r`, no zeta zero, and no regularization enters this trichotomy.
 
@@ -278,12 +280,12 @@ No novelty is claimed for the Eisenstein Fourier expansion, the Whittaker/Kirill
 
 A bounded literature audit around Kirillov/Whittaker scaling, Fourier coefficients sampled near shrinking cusps/horocycles, and small-scale automorphic equidistribution confirms that the `nY` scaling itself is standard representation-theoretic structure. It did not surface a theorem presented as the specific Weil-positivity route obstruction above. That is not a historical novelty proof.
 
-The line-specific contribution is the exact stress test of the escape left by `WP-368`: after restoring the physical `sqrt Y` factor and allowing arithmetic-index-dependent power-law heights, the full family has one and only one unsuppressed critical power scale, and that scale is exactly the one on which `nY` becomes constant and the finite--archimedean Whittaker incidence separates. The inherited positive boundary norm then squares the half-density and diverges.
+The line-specific contribution is the exact stress test of the escape left by `WP-368`: after retaining the normalized physical `sqrt Y` Whittaker factor and allowing arithmetic-index-dependent power-law heights, the full family has one and only one unsuppressed critical power scale, and that scale is exactly the one on which `nY` becomes constant and the finite--archimedean Whittaker incidence separates. The inherited positive boundary norm then squares the half-density and diverges.
 
 ## 7. Consequence for the Weil-positivity frontier
 
 `WP-366` showed that averaging the genuinely mixed `nY` Whittaker geometry over all scales with a dilation-covariant positive scalar form Mellin-separates back to Rankin--Selberg. `WP-367` extended that separation to arbitrary common homogeneous positive radial forms. `WP-368` showed that bounded common positive geometry at a source-fixed height bounded away from zero exponentially erases large arithmetic indices.
 
-The present result closes the simplest remaining repair: **move the source height toward zero by a pure arithmetic power law.** The only exponent that keeps the physical Fourier--Whittaker mode at the unsuppressed critical half-density is `Y_n=c/n`, and there the supposedly mixed archimedean coordinate is frozen. Ordinary boundary Hilbert positivity then returns a divergent Rankin--Selberg square rather than the linear Weil carrier.
+The present result closes the simplest remaining repair: **move the source height toward zero by a pure arithmetic power law.** The only exponent that keeps the normalized Fourier--Whittaker mode at the unsuppressed critical half-density is `Y_n=c/n`, and there the supposedly mixed archimedean coordinate is frozen. Ordinary boundary Hilbert positivity then returns a divergent Rankin--Selberg square rather than the linear Weil carrier.
 
 A surviving Whittaker route must therefore add genuinely new structure. The most concrete remaining possibilities are a source-forced nonconstant transition sequence `t_n=nY_n` that stays away from both `0` and `infinity`; a canonical cross-index/operator-valued boundary form that acts before diagonal squaring; or a different cohomological/intersection sign theorem that does not obtain positivity by an ordinary Fourier `L^2` norm. Any such route must still generate the Mangoldt/Gamma/polar normalization intrinsically and survive the branch's prior-art and matched-control gates.
