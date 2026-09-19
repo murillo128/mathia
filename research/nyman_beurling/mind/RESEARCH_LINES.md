@@ -32,13 +32,19 @@ Hence every moving depth with `YD_0-log J -> +infinity` is already absolutely ha
 
 inside the Bellotti range, plus any `Theta(log Q)` transition interval not covered by the local-disk lemma before the coarse NB-229 cutoff. When `log(R/H)=o(log Q)`, this is a genuine asymptotic compression; for very narrow shells with `log(R/H)=Theta(log Q)` no such improvement should be claimed.
 
-The matched packets of NB-225--NB-227 live on the same logarithmic carrier-width scale: available vertical population is roughly `J`, while Ford damping charges `e^(YD)`, so the critical balance is `J≈e^(YD)`. The next source theorem should therefore be parameterized by `D/log(1+R/H)`, not by `D/log Q` alone.
+NB-231 shows that this transition is sharp for the same information set in the conservative capacity regime `1 << R/H <= log Q`. A packet using a fixed positive fraction of the `R/H` carrier slots can be placed at
+
+`D=(log(R/H)+w)/Y`, with `w=O(1)`,
+
+while obeying the Vinogradov--Korobov zero-free boundary, Bellotti's growing-density allowance, Bellotti's local `O(D)` disk count, and ordinary local zero counting. Its moving-shell phases are exactly aligned and its signed residue stays order one. Thus `YD-log J -> +infinity` is not merely sufficient: population-only information cannot force decay while `YD-log J=O(1)`. The next actual-zeta input must attack the bounded transition layer itself by coupling depth to phase or spacing.
+
+The matched packets of NB-225--NB-227 and NB-231 therefore live on the same logarithmic carrier-width scale as the NB-230 upper cutoff. Available vertical population is roughly `J`, while Ford damping charges `e^(YD)`, so the critical balance is `J≈e^(YD)`. The next source theorem should be parameterized by `D/log(1+R/H)`, not by `D/log Q` alone.
 
 Inside that window, population information may still be insufficient. Useful surviving inputs are genuinely joint: a local estimate coupling vertical population and horizontal depth more strongly than `D+R/H`, a phase-sensitive bound for `C(D)`, or an arithmetic restriction ruling out the matched packet geometry for actual zeta zeros. Improving zero density outside the carrier-width window attacks a region already subcritical under existing Bellotti input.
 
 ## Keep source width, cumulative depth phase, carrier capacity and Ford damping in one ledger
 
-The relevant currencies are source width `H`, vertical capacity `J=1+R/H`, normalized horizontal depth `D`, the full profiled coefficient `b_rho`, cumulative signed carrier `C(D)`, and Ford damping `e^(-YD)`. NB-230 shows that the **linear** capacity cost `J` becomes only a **logarithmic** depth budget after attenuation.
+The relevant currencies are source width `H`, vertical capacity `J=1+R/H`, normalized horizontal depth `D`, the full profiled coefficient `b_rho`, cumulative signed carrier `C(D)`, and Ford damping `e^(-YD)`. NB-230 shows that the **linear** capacity cost `J` becomes only a **logarithmic** depth budget after attenuation; NB-231 shows that this logarithmic conversion, including the need for a diverging additive margin, is sharp in the audited `J<=log Q` regime.
 
 This is stronger bookkeeping than asking for a theorem uniformly over the whole Ford strip. Near-wide shells, almost every moving shallow depth is already harmless; narrow shells retain a larger active band. The remaining theorem must therefore track width and depth together and remain source-specific enough not to recover the same Euler shell circularly.
 
