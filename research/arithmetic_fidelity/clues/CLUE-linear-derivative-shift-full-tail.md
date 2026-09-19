@@ -20,6 +20,7 @@ based_on:
   - research/arithmetic_fidelity/findings/AF-429-supercritical-full-column-saddle-has-shrinking-integer-window.md
   - research/arithmetic_fidelity/findings/AF-430-supercritical-residual-packets-preserve-shrinking-saddle-window.md
   - research/arithmetic_fidelity/findings/AF-431-constant-rational-supercritical-sources-hit-first-saddle-window.md
+  - research/arithmetic_fidelity/findings/AF-432-supercritical-packet-center-amplitudes-are-residual-but-metrically-thin.md
 ---
 
 # Linear derivative-shift full-tail resummation
@@ -105,13 +106,23 @@ a e^\sigma R_n/n^2\,(1+o(1)),
 
 a factor `1/n` smaller than the `R_n/n` integer-comparability window.
 
-AF-431 now shows that this first supercritical lattice gate is **not universally obstructive**. For every fixed rational density `q=u/v>2`, the exact source progression `n=vk, s=uk` has a continuously interpolated saddle satisfying
+AF-431 shows that this first supercritical lattice gate is **not universally obstructive**. For every fixed rational density `q=u/v>2`, the exact source progression `n=vk, s=uk` has a continuously interpolated saddle satisfying
 
 \[
 \tau'(n)=\frac{q-2}{q}\frac{R(n)}n(1+o(1)).
 \]
 
-The sampled saddle is increasing, divergent, and moves by only `Theta(R_n/n)` per admissible source step, so a deterministic integer-crossing argument forces infinitely many `O(R_n/n)` hits for every `a>0`. If `v` is odd, the same holds on the odd progression `n=v(2k+1)`, where adjacent packet signs alternate. This positive control does not reach the finer `R_n/n^2` packet center.
+The sampled saddle is increasing, divergent, and moves by only `Theta(R_n/n)` per admissible source step, so a deterministic integer-crossing argument forces infinitely many `O(R_n/n)` hits for every `a>0`. If `v` is odd, the same holds on the odd progression `n=v(2k+1)`, where adjacent packet signs alternate.
+
+AF-432 resolves the first finer amplitude-genericity question. For fixed rational `q`, write the AF-430 leading corrected center as
+
+\[
+\widehat\tau_n(a)
+=
+\tau_n(a)+a e^q R_n(a)/n^2.
+\]
+
+Its amplitude derivative is `Theta(R_n)=Theta(n^(1-2/q))` on compact positive amplitude intervals. Each `R_n/n^2` integer target therefore pulls back to only `O(n^-2)` amplitude width, while only `O(R_n)` integer targets occur at scale `n`. The amplitudes with infinitely many `o(R_n/n^2)` hits form a Lebesgue-null set of Hausdorff dimension at most `1-1/q`, yet exact corrected-center roots are dense at every large source scale, so the same exceptional set is a dense `G_delta`. Actual `log Q=o(n^-1)` packet balance is contained in this residual-null set.
 
 ## Research question
 
@@ -125,13 +136,15 @@ H_n(d_n)=o(n^{-2}),
 
 along infinitely many odd source-compatible depths?
 
-Separately, in the genuinely supercritical regime, AF-431 closes first-window realizability positively for the constant rational source class. For an actual distinguished source sequence outside that class, the live first question is whether its allowed saddle samples inherit the same monotone mesh condition `Delta tau_n=O(R_n/n)`—which would make first-window hits automatic—or whether source-induced jumps/oscillations create a genuine obstruction. On rational constant-density sources that already pass this gate, the live target moves immediately to AF-430's packet-corrected `R_n/n^2` scale and to the omitted determinant sectors.
+Separately, in the genuinely supercritical regime, AF-431 closes first-window realizability positively for the constant rational source class and AF-432 classifies the first packet-corrected `R_n/n^2` target over amplitudes. For an actual distinguished source sequence outside the constant-rational class, first classify its allowed saddle mesh as in AF-431. For an exact rational constant-density source, the live question is now **pointwise membership of the distinguished amplitude in AF-432's residual-null fine-hit set**, followed, on a surviving amplitude, by the next uniform packet correction and the omitted determinant sectors.
 
 ## Why it may matter
 
 For `m>=2`, the tied square packets carry an exponential rate `Lambda_m>1`, so any uncancelled polynomial relative mismatch dominates every exponentially smaller neighboring saddle. AF-426 excludes the exact square-amplitude fiber pointwise, AF-427 says almost every displaced amplitude is nonexceptional, and AF-428 shows exceptional amplitudes nevertheless occur in every neighborhood.
 
-Consequently, neither metric scarcity nor perturbative/local stability can close the remaining critical branch for a source-forced constant. The deciding input must distinguish that exact amplitude from arbitrarily close exceptional ones. In the supercritical branch, AF-429--AF-431 now separate three scales: packet geometry preserves the `R_n/n` window; ordinary constant-rational source sampling can hit that window automatically; but the packet correction lives at `R_n/n^2`, a factor `n` below the source-step scale. That finer mismatch, rather than first-window existence by itself, is the next candidate arithmetic obstruction on the positive control class.
+Consequently, neither metric scarcity nor perturbative/local stability can close the remaining critical branch for a source-forced constant. The deciding input must distinguish that exact amplitude from arbitrarily close exceptional ones.
+
+The supercritical branch now exhibits the same lesson at a different scale. AF-429--AF-431 make the first `R_n/n` window automatic on rational constant-density sources; AF-432 then makes the factor-`n` finer `R_n/n^2` target metrically exceptional but topologically generic in amplitude. Thus the source-step mismatch is a genuine metric obstruction but still not a pointwise arithmetic obstruction. A concrete source constant cannot be decided by either “almost every amplitude fails” or “a residual set succeeds.”
 
 ## Decisive test
 
@@ -155,9 +168,19 @@ H_n(d)
 
 Prove a pointwise membership theorem for this exact `A`: either a lower bound excluding `H_n(d_n)=o(n^-2)` for every source-compatible integer sequence, or an explicit arithmetic mechanism producing infinitely many hits at that precision. A generic measure theorem, Baire-category theorem, or neighborhood-stability argument is no longer decisive: AF-427 and AF-428 show that those notions of genericity point in opposite directions.
 
-If a specific distinguished amplitude is proved exceptional, only then derive the first beyond-all-orders complete-packet residual—including the tall-column sector suppressed in AF-423--AF-425—and compare it with the first subleading full-column saddle. For `m=1`, keep the same source-realizability test but do not import the `Lambda_m>1` divergence conclusion.
+If a specific distinguished critical amplitude is proved exceptional, only then derive the first beyond-all-orders complete-packet residual—including the tall-column sector suppressed in AF-423--AF-425—and compare it with the first subleading full-column saddle. For `m=1`, keep the same source-realizability test but do not import the `Lambda_m>1` divergence conclusion.
 
-For the independent `sigma>2` branch, do **not** try to prove a universal no-hit theorem at the `O(R_n/n)` scale: AF-431 supplies exact rational-density controls that hit it infinitely often. Instead classify the actual allowed source mesh. If its saddle is eventually increasing/divergent and consecutive admissible samples differ by `O(R_n/n)`, first-window membership follows by the same crossing argument. If that criterion fails, identify the exact source mechanism producing larger jumps or persistent avoidance. On a source class that passes, refine directly to AF-430's corrected center at `R_n/n^2`; because admissible constant-rational saddle steps are `Theta(R_n/n)`, this finer target is not supplied by AF-431 and requires a genuinely sharper arithmetic mechanism. Only then compare the omitted-`1` and singular-block determinant sectors.
+For the independent constant-rational `q=u/v>2` branch, use AF-432's exact fine target
+
+\[
+\operatorname{dist}\!\left(
+\tau_n(a)+a e^q R_n(a)/n^2,\mathbb Z
+\right)
+=
+o(R_n(a)/n^2).
+\]
+
+For the actual distinguished amplitude, prove a **pointwise** lower bound excluding this along every admissible source subsequence, or exhibit a source/arithmetic mechanism producing infinitely many such hits. Do not use measure-zero or residuality as a proxy for membership. If the amplitude survives, derive the next uniform term in the complete packet ratio and compare the omitted-`1` and singular-block determinant sectors. For varying `q_n`, first prove the source-mesh hypotheses needed to reduce to an analogous fine target rather than importing the constant-density theorem.
 
 ## Evidence boundary
 
@@ -165,10 +188,12 @@ AF-428 proves that AF-427's critical exceptional set is residual and dense; it d
 
 AF-430 proves that, conditional on reaching AF-429's `R_n/n` candidate window, the complete residual partition packets inside the exceptional-`1` sector share the limit `exp(-a e^sigma)` and differ adjacently only by the explicit inverse-`n` drift `sigma a e^sigma/n`.
 
-AF-431 proves infinitely many first-window hits for exact constant rational derivative density, and on an odd sign-alternating progression when the reduced denominator is odd. It does **not** prove first-window membership for an arbitrary prescribed `q_n->sigma`, `o(R_n/n)` alignment, the packet-corrected `R_n/n^2` hit, sufficient cancellation of the two exponentially large leading packets, or negligibility of the omitted determinant sectors. No rational-prime discriminator has been recovered.
+AF-431 proves infinitely many first-window hits for exact constant rational derivative density, and on an odd sign-alternating progression when the reduced denominator is odd. It does not prove the packet-corrected hit or sufficient cancellation.
+
+AF-432 proves that the **first displayed corrected center** has a residual but Lebesgue-null fine-hit set, with Hausdorff dimension at most `1-1/q`, and that actual `log Q=o(n^-1)` balance can occur only inside that set. It does **not** identify any fixed distinguished amplitude in the set, prove that corrected-center membership is sufficient for packet cancellation, control the next packet term, or bound the omitted determinant sectors. No rational-prime discriminator has been recovered.
 
 ## Research disposition
 
 Accepted. AF-419--AF-425 reduce the finite critical window to integer source realizability; AF-426 closes the exact square-amplitude fiber; AF-427 makes displaced second-order cancellation metrically exceptional; AF-428 proves the same exceptional set is residual and dense. The live critical gate is therefore **arithmetic membership of exact distinguished amplitudes**, not whether the exceptional set exists or is generic in either measure or category. Beyond-all-orders critical packet analysis should wait until one such source-forced amplitude is proved to survive.
 
-For `sigma>2`, AF-429 locates the moving rectangle saddle, AF-430 proves that the complete residual packet preserves its first `R_n/n` window, and AF-431 shows that exact rational constant-density source lattices can hit that window automatically. The supercritical owner question therefore no longer treats first-window membership as an intrinsic obstruction. It is now a **source-mesh classification problem**, followed—on source classes that pass—by the factor-`n` finer `R_n/n^2` alignment and control of omitted determinant sectors.
+For `sigma>2`, AF-429 locates the moving rectangle saddle, AF-430 identifies its first complete-packet correction, AF-431 shows that exact rational constant-density sources hit the first `R_n/n` window automatically, and AF-432 classifies the finer `R_n/n^2` corrected-center target as residual but metrically thin in amplitude. On constant rational sources the owner question has therefore narrowed again: **decide the exact distinguished amplitude pointwise**, then—only on a survivor—compute the next packet scale and control the omitted determinant sectors. For nonconstant source densities, source-mesh classification remains prerequisite.
