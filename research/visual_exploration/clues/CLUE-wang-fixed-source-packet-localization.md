@@ -18,6 +18,7 @@ based_on:
   - research/visual_exploration/findings/VIS-308-base-prime-harmonic-phase-cancellation.md
   - research/visual_exploration/findings/VIS-309-wang-bohr-time-haar-equivalence.md
   - research/visual_exploration/findings/VIS-310-wang-hard-truncation-global-gap-quintic-horizon.md
+  - research/visual_exploration/findings/VIS-311-wang-weighted-gap-cubic-horizon.md
 ---
 
 # Does Wang packet localization preserve source information without manufacturing strip gain?
@@ -44,16 +45,28 @@ where the expectation is exactly the completely multiplicative Haar control of `
 
 in the iterated Bohr-time sense. The one-parameter prime-phase relation `p^(-iT)` therefore does not generically restore the obstruction.
 
-`VIS-310` now quantifies the most direct attempt to turn that Bohr law into a finite-window estimate. Hard truncation at prime-power support `Y`, followed by Montgomery--Vaughan using only the global ratio-frequency gap, gives uniformly in the start point
+`VIS-310` quantified the most direct finite-window transfer and showed why it was too coarse. Hard support truncation at `Y`, followed by a single global ratio-frequency gap, gives a sufficient `o(H^2)` averaging horizon only at
+
+`V >> x^5 log^3 x/(log log x)^2`
+
+when `H asymp x log log x`.
+
+`VIS-311` now replaces that worst-gap step by the weighted Montgomery--Vaughan inequality. If `m_lambda` is the reduced rational height of a grouped ratio frequency, the exact Wang spectrum satisfies
+
+`sum_lambda m_lambda |B_lambda|^2 << x^2 log^3(3x)`.
+
+Since a frequency retained below `Y` has individual inverse spacing at most `Y m_lambda`, the finite-window bound becomes
 
 `V^(-1) integral |R_(x,H)(T)|^2 dT`
-` << x log^3(3x) + H^(4/3)x^(7/3)log(3x)V^(-1/3)`
+` << x L^3 + H x^(5/2)L^(3/2)V^(-1/2)`
 
-after optimizing the cutoff. At `H asymp x log log x`, this particular upper bound becomes `o(H^2)` only for the sufficient window
+after optimizing the same hard cutoff. At `H asymp x ell`, this is `o(H^2)` on the improved sufficient scale
 
-`V >> x^5 log^3 x/(log log x)^2`.
+`V >> x^3 L^3/ell^2`,
 
-This is not an actual dephasing lower bound. It kills only the **hard-tail + worst-gap proof representation** as a useful bridge to the desired local scale. Any surviving finite-window route must preserve coefficient-weighted ratio geometry, control the infinite tail in energy, or attack the exceptional set directly.
+where `L=log(3x)` and `ell=log log(3x)`.
+
+Thus two powers of `x` in the `VIS-310` horizon were an artifact of collapsing all ratio geometry to the closest pair. The remaining cubic loss is now tied to the **uniform hard-tail approximation**, not to the global gap itself.
 
 ## Research question
 
@@ -65,15 +78,15 @@ For the **fixed-power real-axis source**, is there a property of
 
 strictly weaker than the RH-equivalent half-plane pole exclusion of `VIS-293` that improves the generic Korobov--Vinogradov envelope and survives Wang's complete error budget?
 
-For the **moving upper pointwise layer**, can one upgrade the Bohr-average cancellation of `VIS-309` by a genuinely coefficient-sensitive finite-window estimate strong enough when `x=x(T)`, or instead exhibit a concrete sparse resonance mechanism whose exceptional heights sustain an `H`-scale remainder near `H asymp x log log x`?
+For the **moving upper pointwise layer**, can one transfer the small Bohr energy of `VIS-309` to finite windows without paying the uniform hard-tail cutoff that still leaves the cubic `VIS-311` horizon, or instead exhibit a concrete sparse resonance mechanism whose exceptional heights sustain an `H`-scale remainder near `H asymp x log log x`?
 
-A generic cross-prime dependence model is no longer enough, and `VIS-310` shows that a global minimum-gap argument after hard support truncation is also too coarse. The live issue is quantitative localization of exceptional coherence in the actual one-parameter prime flow while retaining the nonuniform energy of its ratio spectrum.
+The live finite-window issue is no longer generic coefficient sensitivity: `VIS-311` already supplies that and quantifies its gain. The missing information is an **energy-level treatment of the infinite ratio tail/local density**, or evidence that exceptional deterministic coherence defeats such a transfer.
 
 ## Why it may matter
 
-The sequence `VIS-301`--`VIS-310` has removed a series of apparently structural barriers or insufficient proof abstractions: localization leakage, generic coefficient majorants, ambient spacing, support-sensitive absolute spacing, density-matched signed controls, exact prime-power support, same-base multiplicative harmonics, the distinction between product-Haar phases and the actual vertical flow at long-time first/second moment level, and finally the naive hard-truncation/global-gap bridge back to finite time.
+The sequence `VIS-301`--`VIS-311` has removed a series of apparently structural barriers or insufficient proof abstractions: localization leakage, generic coefficient majorants, ambient spacing, support-sensitive absolute spacing, density-matched signed controls, exact prime-power support, same-base multiplicative harmonics, the distinction between product-Haar phases and the actual vertical flow at long-time first/second moment level, the naive hard-truncation/global-gap bridge, and now most of the loss caused by the global-gap collapse itself.
 
-This leaves a sharper pointwise question. If a weighted finite-window estimate rules out the exceptional set strongly enough for moving `x(T)`, Wang's pointwise range can move beyond the present `x log log x` ceiling. If not, a genuine obstruction must identify a sparse resonant geometry that is invisible to the Bohr mean but survives the complete localization/gamma budget.
+A successful energy-tail or direct infinite-spectrum estimate could potentially move the deterministic finite-window scale much closer to the natural `x log log x` range. Failure would be equally informative if it isolates an explicit family of rare ratio resonances carrying enough Wang coefficient mass to survive all existing controls.
 
 ## Decisive test
 
@@ -85,21 +98,21 @@ For the moving upper branch, start from
 
 The next useful result must do one of two things:
 
-- prove a quantitative mean-square/large-deviation estimate on finite height windows, with constants uniform enough in the moving source scale, **without collapsing the grouped ratio spectrum to its global minimum gap or controlling the full tail only in uniform norm**; natural candidates include a coefficient-weighted local-spacing/large-sieve inequality or an energy-controlled smooth decomposition; or
+- replace the uniform hard-tail estimate by a smooth/dyadic or direct infinite-series finite-window argument whose discarded spectrum is controlled in mean square or another coefficient-sensitive energy norm, and quantify whether the resulting horizon beats `x^3 log^3 x/(log log x)^2`; or
 - identify an explicit family of near-resonant rational-ratio frequencies and heights for which the phase sum is coherently `H`-scale, then show that this survives Wang's taper and all previously isolated errors.
 
-A result that only re-proves infinite-time Kronecker/Haar equidistribution, support geometry, same-base harmonic coherence, the absolute Hilbert majorant, or the `VIS-310` hard-cutoff worst-gap estimate is already covered.
+A result that only re-proves infinite-time Kronecker/Haar equidistribution, support geometry, same-base harmonic coherence, the absolute Hilbert majorant, the `VIS-310` global-gap estimate, or the `VIS-311` weighted hard-cutoff estimate is already covered.
 
 ## Evidence boundary
 
 `VIS-304` is an upper bound, not proof that `x log log x` is attained. `VIS-305`--`VIS-308` are increasingly faithful negative controls. `VIS-309` is exact for the Bohr-time first and second moments of the actual deterministic remainder, but its density statement is **iterated**: fix `x,H`, take the long-time limit, then let `x` grow.
 
-`VIS-310` is likewise a proof-method control, not a theorem that finite-window dephasing requires a quintic horizon. Its large sufficient scale comes from two deliberately crude losses: hard uniform tail truncation and the global minimum gap of the retained ratio spectrum. A weighted or nontruncated argument may be far stronger.
+`VIS-310` and `VIS-311` are proof-method controls, not lower bounds on true finite-window dephasing. `VIS-311` proves that coefficient weighting materially improves the hard-cutoff transfer, but its cubic sufficient horizon still inherits the uniform tail cost `H x^(3/2)/sqrt(Y)` from `VIS-310`.
 
-The current evidence therefore does not control a joint limit with `x=x(T)`, does not rule out sparse exceptional heights, and does not prove pointwise cancellation. No stronger RH criterion or new prime-gap theorem is established.
+The current evidence therefore does not control a joint limit with `x=x(T)`, does not rule out sparse exceptional heights, and does not prove pointwise cancellation at `H asymp x log log x`. No stronger RH criterion or new prime-gap theorem is established.
 
 ## Research disposition
 
-Outcome so far: **the moving upper-source branch has narrowed to coefficient-sensitive finite-window dephasing versus exceptional-height resonance**. Generic phase models and the naive hard-truncation/global-gap transfer are both exhausted as explanations or proof routes.
+Outcome so far: **the moving upper-source branch has narrowed from coefficient-sensitive finite-window dephasing in general to energy-controlled infinite-tail transfer versus exceptional-height resonance**. The global minimum-gap loss has been quantitatively reduced from a quintic to a cubic sufficient horizon; the hard-tail representation is now the dominant explicit bottleneck.
 
-The clue remains accepted and live. The next contribution should either preserve the weighted ratio-spectrum energy quantitatively on finite windows or exhibit an explicit sparse resonance mechanism; another worst-gap truncation estimate would not materially advance the frontier.
+The clue remains accepted and live. The next contribution should attack that tail/local-density boundary or exhibit an explicit sparse resonance mechanism, rather than repeat another finite hard-cutoff spacing estimate.
