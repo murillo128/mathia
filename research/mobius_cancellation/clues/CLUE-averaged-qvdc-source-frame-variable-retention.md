@@ -10,9 +10,10 @@ based_on:
   - research/mobius_cancellation/findings/MC-396-paired-block-packing-removes-inverse-gap-depth-tax.md
   - research/mobius_cancellation/findings/MC-397-source-mode-averaging-collapses-to-signature-projector.md
   - research/mobius_cancellation/findings/MC-398-selberg-divisor-pair-lcm-fiber-collapse.md
+  - research/mobius_cancellation/findings/MC-399-lcm-retention-separates-from-source-qvdc-phase.md
 ---
 
-# Can an arithmetic Selberg variable be kept inside q-vdC before modewise collapse?
+# Can a genuinely nonseparable arithmetic variable or lcm transform beat the source-depth barrier?
 
 ## Observation
 
@@ -22,40 +23,54 @@ Julia Stadlmann's *On primes in arithmetic progressions and bounded gaps between
 
 `MC-397` performs the corresponding pre-modewise source summation exactly in the present endpoint Selberg/Bombieri frame. The source-mode index is Fourier-dual rather than an arithmetic summation variable: summing it produces a source-signature weight, and the uniform source average becomes a multiplicative subgroup projector. Thus the source index itself cannot supply Stadlmann's retained-variable gain in this representation.
 
-`MC-398` then tests the most literal Selberg-divisor escape inside the already-squared majorant. The two labels `(d_1,d_2)` enter the arithmetic inner sum only through `ell=[d_1,d_2]`; exact regrouping replaces the whole pair fiber by one scalar coefficient `C_g(ell)`. Therefore the pair labels themselves are also not independent arithmetic samples. The surviving standard-Selberg candidate is the single lcm/shell variable, unless a different pre-quadratic representation can exhibit arithmetic dependence that genuinely does not factor through the lcm.
+`MC-398` tests the most literal Selberg-divisor escape inside the already-squared majorant. The two labels `(d_1,d_2)` enter the arithmetic inner sum only through `ell=[d_1,d_2]`; exact regrouping replaces the whole pair fiber by one scalar coefficient `C_g(ell)`. Therefore the pair labels themselves are not independent arithmetic samples.
+
+`MC-399` now tests the remaining standard lcm coordinate. After finite source Fourier expansion the incidence sum is exactly
+
+`sum_I sum_ell C_g(ell) chi_I(ell) M_I(N/ell)`.
+
+Complete multiplicativity gives `chi_I(ell m)=chi_I(ell)chi_I(m)`, so the scalar `chi_I(ell)` cancels at the first additive van-der-Corput correlation in `m`. The lcm coordinate therefore does not remain nonseparably inside the source-character phase and cannot reproduce Stadlmann's specific diagonal-thinning mechanism merely by being left visible in the standard representation.
 
 ## Research question
 
-Can an **arithmetic variable that survives both exact collapses**—most naturally the lcm/shell variable `ell`, or a genuinely non-lcm-factorable variable exposed before the quadratic Selberg compression—remain inside q-vdC/Cauchy long enough to change the diagonal geometry in the way Stadlmann's retained `y` variable does?
+The retained-variable question is now narrower and has two legitimate forms.
 
-The target is an exact representation of the endpoint frame quantity in which differencing acts before the surviving arithmetic variable is frozen or bounded trivially. A useful representation must produce a resource scaling qualitatively different from both known barriers: it must avoid the `2^{-Omega(A)}` terminal saving caused solely by sequential conductor depth and avoid a fixed positive global-radical tariff `P^theta` of the type ruled out in `MC-383`.
+First, can the **twisted lcm/end-point transform**
 
-A direct structured estimate for the source-signature incidence operator also remains admissible, but only if its gain comes from arithmetic distribution/coupling not equivalent to Fourier-expanding the projector and reapplying the individual character estimates.
+`sum_ell C_g(ell) chi_I(ell) M_I(N/ell)`
+
+or its equivalent source-signature incidence form be estimated collectively in a way that avoids both the sequential `2^{-Omega(A)}` source-depth tariff and a fixed positive global-radical cost `P^theta`? Any gain here must come from genuine arithmetic cancellation/concentration in the lcm coefficients, signature classes, or moving hyperbola boundary; `MC-399` rules out crediting it to a nonseparable source phase that is not actually present.
+
+Second, can a different **pre-quadratic arithmetic representation** expose a divisor/source variable whose phase or congruence does not factor through `[d_1,d_2]` and does not separate multiplicatively before the relevant Cauchy/q-vdC correlation? This is the remaining direct analogue of Stadlmann's retained-variable mechanism.
+
+A direct structured estimate for the source-signature incidence operator is also admissible when it gives information beyond Fourier-expanding the projector and reapplying the same individual character bounds.
 
 ## Why it may matter
 
-After `MC-396`, further block-packing inside the same single-character recursion can improve constants without changing the exponential source-depth scale. `MC-397` removes the easiest collective escape: averaging the source modes first is exactly a basis change to signature/coset incidence, not an additional oscillatory sample. `MC-398` removes a second bookkeeping escape: preserving the two Selberg divisor labels after the square has already been expanded does not preserve two arithmetic variables, because simultaneous divisibility factors exactly through their lcm.
+Three formal dimensions have now been removed by exact algebra rather than by weak estimates. `MC-397` turns source-mode averaging into a signature projector; `MC-398` turns Selberg divisor-pair multiplicity into one lcm coefficient; `MC-399` shows that the surviving lcm source phase itself separates and disappears under the first additive correlation.
 
-The remaining Stadlmann analogy is therefore sharper. If the lcm/shell variable, or a truly pre-lcm arithmetic coordinate, changes the Cauchy diagonal count before the character recursion begins, it would attack the actual analytic bottleneck. If the lcm variable freezes without gain and every pre-quadratic candidate either re-collapses to lcm, recreates the individual q-vdC recursion, or leaves a global-modulus power cost, this entire retained-variable branch can be closed cleanly.
+This makes the residual branch substantially more informative. A success can no longer come from keeping one of those indices unevaluated. It must either prove cancellation in the actual lcm/signature coefficient geometry or construct a kernel with genuinely nonseparable arithmetic dependence. A failure of both possibilities would close the retained-variable escape rather than merely repeat the current character-sum barrier in another expansion.
 
 ## Decisive test
 
-Start from equation `(3)` or `(4)` of `MC-398`, where the standard Selberg divisor-pair fibers have already been compressed exactly to the lcm variable. Keep `ell` and the interval/shell variable explicit rather than applying triangle inequality term by term.
+For the standard lcm route, start from equation `(2)` of `MC-399`. Do **not** count `ell` as an extra q-vdC sample through `chi_I(ell m)`, because `(5)`--`(6)` of that finding prove this dependence separable. Instead isolate the exact operator
 
-Derive one full Cauchy/q-vdC step with `ell` still live and count the resulting diagonal configurations exactly. The direction survives only if retaining `ell` produces a quantitative diagonal thinning analogous in mechanism to Stadlmann's `1/Y` gain and the off-diagonal term can still be controlled without paying either a sequential `2^{-Omega(A)}` source-depth tariff or a fixed positive power of the common radical.
+`T_I(N)=sum_ell C_g(ell) chi_I(ell) M_I(N/ell)`
 
-A pre-quadratic alternative is admissible only if it passes the representation test from `MC-398`: the arithmetic phase, congruence, interval, or signature must distinguish the proposed divisor/source variables separately and must not factor through `[d_1,d_2]`. Merely retaining two labels before an exact lcm regrouping is rejected.
+and determine whether its lcm coefficient/signature structure or moving hyperbola boundary yields a uniform saving that is not obtainable by termwise bounds on `M_I`. The direction survives only if the resulting estimate changes the source-cost scaling while avoiding both a sequential `2^{-Omega(A)}` differencing tariff and a fixed positive power of the common radical.
 
-Also reject a candidate if the supposed extra average is only the source-mode index killed by `MC-397`, if Fourier expansion merely returns to the individual source characters, if arbitrary mode-dependent weights trigger the matched-filter obstruction of `MC-332`, or if the final family estimate has the fixed-global-modulus shape excluded by `MC-383`.
+For a pre-quadratic alternative, exhibit the proposed arithmetic kernel before estimating it and apply both representation tests already established. It must not factor through the lcm as in `MC-398`, and after source Fourier expansion its retained variable must remain nonseparable through the relevant first correlation rather than cancelling as in `MC-399`. Then count the post-Cauchy diagonal exactly and compare it with Stadlmann's genuine retained-variable gain.
 
-As the literature control, preserve the exact feature of Stadlmann's argument responsible for the gain: an arithmetic summation variable remains inside the differencing/Cauchy geometry and reduces the diagonal count. Similar terminology without that structural effect is not a valid transfer.
+Reject a candidate if the supposed extra average is only the source-mode index killed by `MC-397`, if pair labels only repackage one lcm fiber, if complete multiplicativity removes the retained coordinate from the source phase, if arbitrary mode-dependent weights trigger the matched-filter obstruction of `MC-332`, or if the final family estimate has the fixed-global-modulus shape excluded by `MC-383`.
+
+As the literature control, preserve the exact feature of Stadlmann's argument responsible for the gain: an arithmetic summation variable remains coupled inside the differencing/Cauchy geometry and reduces the diagonal count. Similar terminology or an extra visible summation index without that structural effect is not a valid transfer.
 
 ## Evidence boundary
 
-No surviving arithmetic variable has yet been shown to yield a better endpoint character-sum estimate. Stadlmann's theorem concerns averaged prime distribution to smooth moduli in a different Type I setup and does not imply an endpoint source-cost theorem or improved Möbius cancellation.
+No collective estimate for the twisted lcm/end-point transform has been proved, and no genuinely non-lcm-factorable pre-quadratic variable has been exhibited. Stadlmann's theorem concerns averaged prime distribution to smooth moduli in a different Type I setup and does not imply an endpoint source-cost theorem or improved Möbius cancellation.
 
-`MC-397` resolves the source-index interpretation, and `MC-398` resolves the independent divisor-pair interpretation inside the standard squared Selberg majorant. Neither finding rules out a gain from the single lcm/shell variable nor from a genuinely non-lcm-factorable pre-quadratic representation. A structured direct estimate for the signature-incidence operator also remains open.
+`MC-397` resolves the source-index interpretation, `MC-398` resolves the independent divisor-pair interpretation inside the standard squared Selberg majorant, and `MC-399` resolves the standard lcm-as-nonseparable-source-phase interpretation. None of them rules out arithmetic cancellation among the lcm coefficients/signature classes, a useful theorem exploiting the moving endpoint `N/ell`, a direct structured signature-incidence estimate, or a genuinely nonseparable pre-quadratic representation.
 
 ## Research disposition
 
-The clue remains accepted but is narrowed again. The source-mode branch failed by exact finite Fourier orthogonality in `MC-397`; the standard Selberg divisor-pair branch failed by exact lcm-fiber compression in `MC-398`. The live question is now whether the **single surviving lcm/shell variable** changes q-vdC diagonal geometry, or whether a different pre-quadratic representation exposes an arithmetic variable that provably does not factor through lcm, while respecting `MC-332` and `MC-383`.
+The clue remains accepted but is narrowed to the two surviving mathematical obligations above. The standard lcm variable is no longer a candidate for a Stadlmann-style mixed source-phase q-vdC gain: `MC-399` proves that this phase separates before the first additive correlation. The live question is whether the **twisted lcm/signature hyperbola transform itself has new collective cancellation**, or whether a different pre-quadratic construction exposes an arithmetic variable that survives both lcm compression and source-phase separation while respecting `MC-332` and `MC-383`.
