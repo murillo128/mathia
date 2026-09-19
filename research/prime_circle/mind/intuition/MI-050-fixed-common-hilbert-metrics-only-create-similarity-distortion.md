@@ -1,33 +1,23 @@
-# MI-050 — A fixed common Hilbert metric can break unitary parity without breaking reciprocal similarity
+# MI-050 — Any fixed finite Hilbertization preserves reciprocal similarity
 
-**Evidence level:** exact operator-theoretic synthesis from [PC-355](../../findings/PC-355-free-fock-completion-preserves-reciprocal-parity.md) through [PC-357](../../findings/PC-357-fixed-common-hilbert-metrics-only-create-similarity-distortion.md).
+**Evidence level:** exact operator-theoretic synthesis from [PC-355](../../findings/PC-355-free-fock-completion-preserves-reciprocal-parity.md) through [PC-358](../../findings/PC-358-arbitrary-fixed-finite-hilbertizations-preserve-reciprocal-similarity.md).
 
-PC-355 shows that the canonical full-Fock signature multiplier of the reciprocal control is unitarily conjugate to the source multiplier when the one-particle Hilbert structure is parity-compatible. PC-356 then shows that even a genuinely source-dependent non-diagonal radial Gram metric does not help when it is recomputed covariantly on the control: the metric becomes `J^*GJ`, so parity is still an isometry between the two Hilbert spaces.
+PC-355 shows that the canonical full-Fock signature multiplier of the reciprocal control is unitarily conjugate to the source multiplier when the Hilbert structure is parity-compatible. PC-356 shows that a source-dependent radial Gram metric does not help when recomputed covariantly on the control: the metric is transported by parity and source/control remain isometric.
 
-PC-357 treats the complementary repair. Fix one positive Hermitian metric `H` independently of the reciprocal radial flip and use the same metric for both source and control. If `J^*HJ != H`, unitary equivalence can fail. But the algebraic reciprocal law remains
+PC-357 freezes one parity-breaking one-particle metric on both source and control. Unitarity can fail, but after whitening the reciprocal law still becomes an exact nonunitary similarity, with depth-dependent singular/resolvent distortion bounded by the tensor condition number.
 
-`L~_N = Gamma_N(J) L_N Gamma_N(J)`.
+PC-358 removes the tensor-product assumption. On the finite word space `V_N`, the algebraic reciprocal identity is
 
-After whitening the common metric, put
+`L~_N = P_N L_N P_N`, `P_N^2=I`.
 
-`S=H^(1/2) J H^(-1/2)`
+Equip `V_N` with **any** fixed positive Hermitian metric `G_N>0`, allowing arbitrary word, shell and degree couplings. With `R_N=G_N^(1/2)`, the Euclidean representatives satisfy
 
-and `S_N=direct_sum_(m<=N) S^(tensor m)`. Then the Euclidean representatives satisfy the exact similarity
+`A~_N = S_N A_N S_N^(-1)`, `S_N=R_N P_N R_N^(-1)`.
 
-`A~_N = S_N A_N S_N^(-1)`.
+Hence every fixed finite-dimensional Hilbertization leaves ordinary spectrum, Jordan form and rational functional-calculus data exactly control-blind. Metric-sensitive quantities may differ, but their separation is bounded by the single static distortion `Delta_N=kappa_2(S_N)=||P_N||_(G_N)^2`. The earlier tensor law `kappa_H(J)^N` is only one special case of this general similarity budget.
 
-Therefore a fixed common metric cannot change ordinary spectrum. The finite-truncation spectrum remains `{1}` because left multiplication is identity plus a degree-raising nilpotent. What can change are singular values, resolvents and pseudospectra, and their separation is controlled entirely by the static one-particle mismatch
+The same principle extends to infinite depth whenever the algebraic parity extends boundedly to the chosen Hilbert completion and the multipliers extend boundedly. In that case the source and control remain boundedly similar. Therefore a **metric-only** escape must make parity genuinely unbounded in the completion, or change the domain/operator/control law so the algebraic conjugacy no longer induces a bounded similarity.
 
-`kappa_H(J)=kappa_2(H^(1/2) J H^(-1/2))`.
+The reusable audit is to solve the algebraic reciprocal intertwining relation before attributing spectral leverage to a chosen norm. Nonfactorizing geometry, cross-degree coupling and shell-dependent metrics do not create source information at finite depth when they merely change the condition number of the same involution.
 
-Tensor depth amplifies this generic distortion exactly as
-
-`kappa_2(S_N)=kappa_H(J)^N`.
-
-Thus a rapidly growing singular-value or pseudospectral difference at large tensor depth is not by itself new arithmetic information. It can be produced by repeatedly tensoring one fixed nonunitary similarity. The effect is real, but it is a conditioning effect of the chosen common Hilbert metric unless an additional theorem couples that metric specifically to the cyclotomic defect in a way unavailable to the matched reciprocal control.
-
-This closes a useful ambiguity in the metric escape. There are now two distinct failures to distinguish: a metric constructed from transported source data is covariantly carried to the control and restores unitary equivalence; a metric fixed independently can break unitarity but leaves an exact similarity whose nonnormal distortion is fully priced by one static condition number. **Breaking isometry is weaker than breaking control equivalence.**
-
-The surviving route must therefore alter more than the Hilbert norm around the same algebraic signature multiplier. It needs a source-forced domain, boundary condition, coupling, anchored frame, non-tensor metric structure, or joint invariant `(H,D)` whose arithmetic content is not generated by the fixed similarity `S_N`. Any claimed depth amplification should first be divided by the generic `kappa_H(J)^N` similarity budget.
-
-**Boundary.** PC-357 is finite-cutoff and assumes one fixed positive-definite one-particle metric used on both source and control, tensorized by degree. It does not classify source-forced domains, shell/word-dependent nonfactorizing Hilbert structures, genuinely different operators, unbounded infinite-depth similarities, or special arithmetic correlations between an independently forced roots-of-unity metric and the cyclotomic defect. It does not produce a zero-sensitive spectral parameter or imply RH.
+**Boundary.** PC-358 does not classify completions where parity is unbounded, source-forced domains not preserved by parity, genuinely different operators or asymmetric couplings inserted before the reciprocal quotient. It produces no zero-sensitive spectral parameter and implies no RH statement.
