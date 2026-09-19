@@ -2,28 +2,24 @@
 
 This file holds the current mathematical questions suggested by the durable Weil-positivity intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Keep mixed shells active or leave the strongly-continuous unitary radial positive category
+## Keep mixed shells active and make the Mangoldt boundary operation part of the source-forced positive topology
 
-**Linked intuitions:** `MI-039-enriched-semigroups-inherit-obstructed-scalar-shadows-or-universal-lifts` through `MI-057-exact-mixed-shell-nullity-collapses-every-closable-radial-positive-form`.
+**Linked intuitions:** `MI-004-mangoldt-anchor-is-unbounded-in-positive-hardy-norm` and `MI-039-enriched-semigroups-inherit-obstructed-scalar-shadows-or-universal-lifts` through `MI-057-exact-mixed-shell-nullity-collapses-every-closable-radial-positive-form`.
 
-WP-356--WP-373 classify finite Hecke, finite--archimedean, Whittaker and mixed-prime positive-completion routes. Genuine arithmetic incidence can survive in nonconstant finite modes, and mixed-prime coefficients can remove divergent local completion taxes, but continuous scalar post-selection cannot then delete the dense mixed spectrum.
+WP-356--WP-377 classify a large family of finite, finite--archimedean and radial positive-completion routes. The strongest radial conclusion is now representation-independent inside the strongly-continuous unitary category: spectator-prime mixed shells generate every non-invariant component of a prime-power shell, so exact mixed-shell nullity forces any closable positive form through the invariant sector. In scalar spectral realizations that sector is only the zero Mellin atom and yields the wrong `Lambda^2`-type readout.
 
-WP-374 shows that stationary positive radial forms with exact mixed-shell nullity collapse surviving prime-power profiles to zero Mellin frequency. WP-375 removes stationarity from the essential hypothesis: in the canonical logarithmic-radial `L^2` topology, any closable nonnegative Hermitian form that gives zero energy to every mixed-prime shell must also annihilate every prime-power shell.
+WP-378 tests a natural nonradial analytic escape using the full cyclotomic logarithmic potentials `F_n=log Phi_n` in Hardy `H^2(D)`. This does create a genuinely positive Gram geometry with nonzero cross-prime terms, but the exact kernel still Euler-factorizes primewise. Its diagonal depends only on `rad(n)`, has full composite support, and forgets the prime-power exponent. The exact Mangoldt selector is present in the same family only as the boundary value
 
-WP-376 shows that ordinary topology changes do not escape this closure mechanism. Every finite-order Sobolev `H^r` and every translation-invariant Fourier-weight Hilbert space with absolutely-continuous positive weight still has weak escape of remote translations, so Mazur convexification and closability propagate exact mixed-shell radicality. A zero-frequency trace is a matched escape, but it retains only `c Lambda(n)^2` rather than the linear Weil coefficient.
+`F_n(1)=log Phi_n(1)=Lambda(n)`,
 
-WP-377 removes the remaining generic “use singular spectral data” continuation. Assume only that radial translations extend to a **strongly continuous unitary** group `U(t)` and preserve the exact cyclotomic relation `h_(nq)=(U(log q)-I)h_n`. Because consecutive prime logarithms have shrinking mesh, any matrix coefficient orthogonal to all spectator-prime mixed differences is forced by uniform continuity to approach its value at zero for all large times. The mean ergodic theorem then gives, for every prime power,
+and evaluation at `1` is unbounded in `H^2`; even the prime-power shell vectors have uniformly bounded Hardy norm while the desired boundary value grows like `log p`.
 
-`(I-P_0) h_(p^a) in closure(span{h_(p^a q): q != p prime})`,
+The obstruction is therefore no longer merely radial scalarization. Canonical interior positivity and the exact arithmetic selector can live in the same analytic family while being separated by topology. A surviving analytic-disk route must derive from the source a different positive topology/boundary object in which the Mangoldt operation is bounded enough to participate in the form, while also producing the archimedean/polar completion and avoiding the exact mixed-shell-nullity collapse.
 
-where `P_0` projects onto the translation-invariant sector.
+The other surviving option remains to keep mixed shells active through an indefinite or genuinely global finite--archimedean assembly until the final sign theorem, rather than demand that a positive finite-place Hilbert norm itself perform the prime-power selection.
 
-Therefore every closable nonnegative form with exact mixed-shell nullity factors prime-power energy through `P_0`. This conclusion no longer depends on weak mixing, absolute continuity, Rajchman decay or Sobolev regularity. In an arbitrary scalar spectral realization the invariant sector is exactly the zero Mellin atom, so the surviving form again has rank one and diagonal `c Lambda(n)^2`. Singular-continuous and nonzero pure-point spectrum do not provide an escape merely by preventing Fourier decay.
+## Keep positive bulk, mixed-prime incidence, selector regularity and archimedean completion distinct
 
-The surviving route must now break a load-bearing hypothesis rather than merely alter spectral type: keep mixed shells active through an indefinite or global finite--archimedean assembly before final positivity; derive a geometrically justified radial action that is not strongly-continuous unitary in the relevant Hilbert topology; introduce non-radial invariant multiplicity with genuine arithmetic incidence and the linear Weil coefficient; or create the finite-prime coupling before radial projection.
+WP-378 is an important matched control because the Hardy Gram is not trivial: it really couples distinct prime shells. Its failure comes from the *kind* of coupling and from the singularity of the boundary selector, not from lack of interaction. Likewise WP-374--WP-377 show that exact positive mixed-shell nullity is too strong in the radial unitary category.
 
-## Keep positive completion, exact nullity, invariant sector and final selector distinct
-
-WP-372 shows that positivity can make a mixed completion cheap; WP-373 shows that regular scalar projection may be unable to remove that mixed sector; WP-374--WP-377 show that **exact positive nullity is stronger still**. Once spectator-prime differences generate the entire non-invariant radial component, changing the continuous/singular decomposition of the same unitary radial spectrum does not change the quotient seen by a closable positive form.
-
-A new construction should therefore state which mixed-prime coefficients remain source-active, when positivity is imposed, whether the radial action is strongly continuous/unitary, what its invariant subspace actually carries, and whether any nullity is exact or approximate. The scalar zero-Mellin trace is now the sharp invariant-sector control, not evidence for a new Weil mechanism.
+A new construction should therefore state which mixed-prime coefficients remain active, when positivity is imposed, what topology makes the selector continuous or legitimately renormalizable, and where the Gamma/polar terms enter. Replacing one canonical positive norm by another without changing these load-bearing interfaces is unlikely to create the Weil sign.

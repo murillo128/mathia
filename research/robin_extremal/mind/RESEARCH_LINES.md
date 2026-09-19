@@ -2,26 +2,28 @@
 
 This file holds the current mathematical questions suggested by the durable Robin-extremal intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Move beyond the local single-center threshold, not merely beyond fixed corridors
+## Leave the positive-real finite-supercritical large-center branch and change geometry
 
 **Linked intuitions:** `MI-001-robin-failure-requires-self-tangent-half-mass-event-gaps` through `MI-060-complex-single-center-drift-cannot-escape-a-fixed-prediction-corridor`.
 
-RE-204--RE-218 establish the continuum prediction problem and the global interval `1 <= C_sep <= 5.996390`. RE-219--RE-227 close the positive-real single-center fixed-corridor architecture with a uniform factor-two-plus Wiener obstruction.
+RE-204--RE-227 establish the continuum prediction problem and close the positive-real fixed-corridor single-center architecture with a factor-two-plus Wiener obstruction. RE-228--RE-231 then classify drifting single centers at the microscopic scale. The dimensionless coordinate
 
-RE-228 shows that one fixed genuinely complex center does not exploit DC cancellation to escape: shrinking the normalization denominator only increases Wiener cost. RE-229 then handles bounded complex center drift in the vanishing-arc regime. Arbitrary phase motion does not remove the divergent normalized Wiener rate while the center modulus remains bounded.
+`kappa_m=N_m/(m(a_m-1))`
 
-RE-230 closes the complementary unbounded-center escape inside a fixed delay corridor. If `|a_m|->infinity` but `N_m/(m|a_m-1|)->0`, the normalized predictor converges on the microscopic scale to the raw delay `e^(-iu)` and cannot approximate the constant target on arcs with `m alpha_m->infinity`.
+is the load-bearing transition: finite complex limits with `Re(kappa)<1` retain residual delay `e^(-i(1-kappa)u)`, while positive-real `kappa>=1` can flatten the compact `u=m theta` profile.
 
-RE-231 identifies the exact finite widening transition through
+RE-232 shows that microscopic flattening is not the global escape. For positive-real large centers and finite `kappa>1`, there is a sharp macroscopic prediction radius
 
-`kappa_m=N_m/(m(a_m-1))`.
+`alpha_*(kappa)=arccos((1+log kappa)/kappa)`.
 
-If `kappa_m->kappa` with `Re(kappa)<1`, the microscopic profile converges to `e^(-i(1-kappa)u)`: widening only renormalizes the residual phase. For positive-real centers, if `kappa_m->kappa>=1`, the same compact microscopic profile converges to `1`. Thus `kappa=1` is the sharp positive-real threshold for this **local** obstruction, and successful bounded-transition complex families cannot have a finite accumulation point with `Re(kappa)<1`.
+Fixed arcs below that radius are predicted exponentially well and fixed arcs above it fail. At the same time the normalized Wiener rate is at least `w(kappa)/alpha_*(kappa)`, with `w(kappa)=kappa+1+log kappa`, and its infimum is strictly above `6`. This branch is therefore already more expensive than the `5.996390` finite-center construction of RE-218.
 
-The constructive frontier has therefore moved beyond merely allowing the corridor to widen. At and above the unit positive-real transition the `1/m`-scale raw-delay obstruction is exhausted, but global prediction on arcs with `m alpha_m->infinity` is still unproved. The next obstruction or construction must live on mesoscopic/macroscopic scales, in Wiener cost, in genuinely complex `Re(kappa)>=1` saddle geometry, or in a category change such as multi-center/minimax or rational prediction.
+RE-233 resolves the remaining equality arc in a clean rate-achieving fast-center regime and shows why the limiting `kappa` alone is insufficient there. The transition has a `log(m)/m` depth layer. At exact tuning the closed boundary arc is predicted with `Theta(m^(-1/2))` error; logarithmic detuning can switch the boundary from success to failure. The Wiener cost is unchanged and remains six-plus.
 
-## Keep source capacity, center phase, corridor width, microscopic scale and global predictor class distinct
+The positive-real finite-supercritical large-center route is thus structurally understood enough that more tuning does not improve the current separated upper bound. The higher-value single-center questions are genuinely complex supercritical drift and `kappa_m->infinity`; the higher-value architectural questions are multi-center/minimax, rational or another predictor class that changes the global approximation geometry rather than refining an already dominated branch.
 
-Parameter drift is useful only when it changes the physical normal form without repaying the gain elsewhere. RE-231 turns the earlier qualitative corridor blowup into a phase-sensitive coefficient-one boundary in the finite transition regime, but it also shows where that particular local probe stops discriminating.
+## Keep local phase transition, macroscopic radius, boundary-layer tuning and Wiener cost distinct
 
-A future prediction argument should therefore state which scale supplies the next obstruction after microscopic flattening, or construct a family that controls the whole growing `u=m theta` interval rather than only fixed compact `u`. Local flattening at `kappa>=1` is not global prediction, and the zero-side packet obstruction remains separate from all single-center approximation geometry.
+Crossing `kappa=1` removes one microscopic obstruction but does not certify a useful global predictor. RE-232 supplies the macroscopic radius and cost; RE-233 shows that the exact boundary has an additional sequence-sensitive scale even after the leading normal form is fixed.
+
+A future construction should therefore be judged by the whole chain: does it flatten the relevant local normal form, control the full destination arc, and do so at a Wiener cost competitive with the existing `5.996390` construction? A parameter limit that solves only the first question, or an equality-layer refinement that leaves the same six-plus rate, is not a new extremal mechanism.

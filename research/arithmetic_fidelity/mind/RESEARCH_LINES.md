@@ -2,30 +2,24 @@
 
 This file holds the current mathematical questions suggested by the durable arithmetic-fidelity intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Preserve exact shell provenance through a joint carrier with auditable conditioning
+## Require finite-prefix identifiability before pricing joint pole recovery
 
-**Linked intuition:** `MI-055-derivative-depth-is-a-second-left-tail-scaling-coordinate`.
+**Linked intuitions:** `MI-042-finite-prefix-pole-fidelity-needs-a-tail-class` and the current shell-carrier/derivative-depth intuitions.
 
-AF-416--AF-432 isolate the full left-tail determinant hierarchy. Fixed derivative shifts close to a positive Cauchy limit, moving depth introduces `s_n/n`, the complete partition family detects the critical value `2`, and the effective coordinate is `b_n(a)=a n^(s_n/n-2)`. Exact square fibres retain finer rectangle, packet and derivative-offset obstructions that continuous saddle matching misses.
+AF-416--AF-435 separate left-tail scaling, source selection and downstream transport. AF-436 shows that the exact Euler moments `s_k=zeta(2k)` retain the full reciprocal-square shell ladder, while AF-437 shows that sequential shell peeling is exponentially ill-conditioned.
 
-AF-433--AF-435 separate source realization, source selection and transport. Coefficient-root neutrality canonically selects the Taylor radius, hence `c=2pi` and `a=1` for the Bernoulli source, but the current determinant aggregates shell labels before packet geometry and the selected square fibre fails the present adjacent-packet cancellation.
-
-AF-436 shows that this loss is **not intrinsic to the exact coefficient sequence**. The normalized even coefficients are `s_k=zeta(2k)=sum_(m>=1)m^(-2k)`, so the complete exact moment sequence determines the shell ladder. AF-437 then prices the triangular way of exposing it: recursive peeling of shell `m` amplifies earlier shell-`j` errors at the target scale by roughly `(m/j)^(2k)`, so exact recoverability and stable recoverability are different resources.
-
-AF-438 resolves the next exact representation question. The generating transform
+AF-438 removes that particular representation artifact. The exact generating transform
 
 `F(z)=sum_(k>=1) zeta(2k) z^(k-1)=sum_(m>=1) 1/(m^2-z)`
 
-is a classical Stieltjes/Markov transform with meromorphic continuation
+is a Stieltjes/Markov carrier whose poles expose all shells simultaneously with residue `-1`. Exact shell provenance is therefore present without recursive subtraction.
 
-`F(z)=(1-pi sqrt(z) cot(pi sqrt(z)))/(2z)`.
+AF-439 moves the finite-data frontier one step earlier than conditioning. For every fixed moment depth `N`, even inside a nearby positive finite Stieltjes class with the same unit-residue normalization, there are local pole-moving fibres with exactly the same first `N` moments. The construction perturbs the constant elementary-symmetric coefficient of `N+1` positive nodes; Newton identities keep the first `N` power sums fixed while every pole moves. The perturbed nodes need not remain reciprocal integer squares, so this is a generalized-shell identifiability obstruction, not a second Riemann source.
 
-Its poles are exactly `z=m^2`, all with residue `-1`. Thus every shell label is present **simultaneously** in one exact carrier; exposing shell `m` no longer requires subtracting shells `1,...,m-1`. The exponential cascade of AF-437 is therefore a property of sequential peeling, not an information-theoretic loss of the exact Euler sequence.
+The live question is therefore two-stage. First specify a source/tail/support class strong enough that the finite observation map is injective, or quantify the residual fibre when it is not. Only after that gate is passed does it make sense to compare Padé, Stieltjes continued fractions, Hankel/Prony or another joint inverse by condition number. A numerically stable algorithm cannot recover a pole that the admissible finite-data class does not identify.
 
-The live question has moved to **stable joint recovery**. Given only a finite/noisy moment prefix, can Stieltjes continued fractions, Padé, Hankel/Prony or another joint inverse recover the first `M` poles/residues with conditioning materially better than the AF-437 peeling benchmark? A negative result is equally useful if it proves that analytic continuation/rational reconstruction recreates an equivalent instability. Exact pole transport by itself does not answer that finite-data question.
+## Keep source class, exact carrier, identifiability, conditioning and destination transport separate
 
-## Keep selection, exact carrier, inverse conditioning, downstream transport and target cancellation as separate currencies
+Exact analytic continuation from the complete moment sequence is not finite-prefix recovery. Likewise, removing the artificial AF-437 peeling cascade does not prove that the remaining inverse is stable, and a narrow source class can restore identifiability without supplying a useful quantitative modulus.
 
-A source-selected parameter can fail downstream; exact source information can be present but badly conditioned; and a representation can preserve aggregate moments while deleting provenance needed by the target. AF-438 now adds the converse lesson: changing representation can remove an **artificial sequential inverse** while leaving the genuine stability problem unresolved.
-
-A continuation should therefore change something substantive: quantify the finite/noisy conditioning of the joint Stieltjes carrier, construct a shell-resolved destination that consumes those poles without re-aggregating them, justify a different source-native selector independently of target success, or use a destination mechanism that does not require the adjacent-packet cancellation excluded at the selected scale. Metric largeness of favorable amplitudes, exact analytic continuation with infinite data, or downstream optimization cannot substitute for these obligations.
+A continuation should therefore state the admissible completion class explicitly, prove the finite-prefix map is target-pure on that class, then price the inverse at the precision and shell depth consumed downstream. Alternatively, a negative theorem may show that every source-natural class broad enough to be useful retains pole-moving fibres or an equivalent instability. Treating AF-438's exact carrier as a finite-data reconstruction theorem would skip the new AF-439 gate.
