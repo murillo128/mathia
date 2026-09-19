@@ -168,14 +168,14 @@ In the usual squarefree Selberg setting, assume `g(d)` vanishes unless `d` is sq
 
 Ignoring the individual cutoff `d_i\le B`, this is the classical `3^{\omega(\ell)}` lcm-fiber count; the cutoff only removes members of the fiber. Thus the familiar `3^{\omega(\ell)}` factors in Selberg-sieve remainder estimates are the combinatorial shadow of precisely the same compression.
 
-If the coefficient system factorizes locally without a global cutoff, the lcm-fiber transform is itself local. For example, on squarefree support one has formally
+If the coefficient system factorizes locally without a global cutoff, the lcm-fiber transform is itself local. For example, under the standard normalization `g(1)=1`, squarefree support gives
 
 \[
 C_g(p)=2g(p)+g(p)^2
 \tag{9}
 \]
 
-at one prime, and the global coefficient is obtained by multiplying these local lcm contributions. The standard finite-level cutoff can destroy literal multiplicativity of `C_g`, but it does not restore a second arithmetic variable: `(2)` and `(3)` remain exact.
+at one prime, and the global coefficient is obtained by multiplying these local lcm contributions. Without that normalization the local identity is `C_g(p)=2g(1)g(p)+g(p)^2`. The standard finite-level cutoff can destroy literal multiplicativity of `C_g`, but it does not restore a second arithmetic variable: `(2)` and `(3)` remain exact.
 
 This is useful for the present frontier because it distinguishes two questions that should not be conflated:
 
