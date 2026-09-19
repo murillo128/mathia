@@ -1,6 +1,6 @@
-# MI-040 — Wang's upper pointwise ceiling has narrowed to infinite-tail finite-height coherence
+# MI-040 — Wang's upper pointwise ceiling has narrowed to aggregate-density finite-height coherence on a dense ratio spectrum
 
-**Evidence level:** exact synthesis from [VIS-298](../../findings/VIS-298-wang-gamma-recentering-removes-moving-h-barrier.md) through [VIS-311](../../findings/VIS-311-wang-weighted-gap-cubic-horizon.md), using Wang's displayed localization/mean-value identities, the classical weighted Hilbert inequality and the matched support/phase controls audited there.
+**Evidence level:** exact synthesis from [VIS-298](../../findings/VIS-298-wang-gamma-recentering-removes-moving-h-barrier.md) through [VIS-312](../../findings/VIS-312-wang-dense-ratio-spectrum-no-nearest-spacing.md), using Wang's displayed localization/mean-value identities, the classical weighted Hilbert inequality and the matched support/phase controls audited there.
 
 The upper pointwise boundary in Wang's short-interval pair statistic has moved repeatedly because generic estimates were applied before the exact structure of their load-bearing terms was exposed.
 
@@ -14,22 +14,20 @@ VIS-310 asks how cheaply that Bohr cancellation can be transported to a finite h
 
 `V >> x^5 log^3 x/(log log x)^2`.
 
-That quintic horizon is explicitly a proof-method boundary: uniform tail control and worst-gap compression discard where the small coefficient energy actually lives.
+VIS-311 preserves local geometry of the retained finite spectrum. Its coefficient-weighted spacing estimate removes two powers of `x`, lowering the sufficient window to
 
-VIS-311 preserves the local geometry of the retained spectrum. For a grouped frequency `lambda` with reduced rational height `m_lambda`, its inverse nearest-neighbor spacing costs only `Y m_lambda`, and Wang's exact taper gives
+`V >> x^3 log^3 x/(log log x)^2`.
 
-`sum_lambda m_lambda |B_lambda|^2 << x^2 log^3(3x)`.
+That improvement isolates global-gap compression as a proof cost, but it does not identify an infinite-spectrum norm.
 
-The weighted finite-window estimate becomes
+VIS-312 closes the direct passage `Y->infinity` in the same nearest-neighbor functional. Cross-base prime quotients already give a dense set of supported log-frequencies, and the Wang kernel removes only a discrete lattice. Therefore the **nonzero grouped coefficient support is dense in `R`**. For every fixed retained frequency `lambda_0`, its finite-cutoff nearest-neighbor spacing `delta_(lambda_0,Y)` tends to zero as `Y->infinity`; for a fixed cross-base coefficient that stabilizes once its primes are included,
 
-`V^(-1) integral |R_(x,H)(T)|^2 dT << xL^3 + H x^(5/2)L^(3/2)V^(-1/2)`
+`|B_(lambda_0)|^2/delta_(lambda_0,Y) -> infinity`.
 
-after optimizing the same hard cutoff. At `H~x log log x`, the sufficient horizon falls from quintic to cubic:
+Hence the weighted VIS-311 quantity `sum |B_lambda|^2/delta_lambda` has no finite cutoff-free limit. This divergence is a representation failure, not evidence that the true finite-window mean square is large.
 
-`V >> x^3 L^3/(log log x)^2`.
+The reusable point is now sharper than “use an energy-sensitive tail.” On a dense ratio spectrum, **pointwise frequency isolation is itself the wrong infinite-dimensional currency**. A cutoff-free transfer must aggregate frequencies before inversion: local density in smooth/dyadic blocks, a large-sieve/nonharmonic-Fourier inequality based on interval counts, or direct summation of the finite-window kernel `min(V,1/|lambda-mu|)` against the coefficient energy. Such a representation can still fail if a sparse near-resonant packet carries enough Wang mass; VIS-312 only says the nearest-neighbor denominator cannot decide that question.
 
-This identifies which part of VIS-310 was artificial. **Global-gap compression cost two powers of `x`; the remaining large polynomial loss is now tied to the uniform hard-tail representation.** The finite-window frontier is no longer “use coefficient-sensitive spacing”—that has been done. It is to control the infinite ratio tail in an energy-sensitive norm, or to prove that a sparse exceptional resonance defeats such a transfer.
+The survivor test is therefore layered. Preserve exact coefficient/support data; preserve multiplicative phase relations; compare the true common-time orbit with Haar; price finite-height transport using coefficient energy; and, when the support becomes dense, replace individual gaps by an aggregate-density quantity before interpreting a large required window as arithmetic coherence.
 
-The reusable lesson is a layered survivor test. Preserve the exact object until the first inequality that discards structure; match support statistics; preserve exact support; restore multiplicative phase relations; compare the true deterministic orbit with Haar; preserve local weighted frequency geometry; and finally avoid paying an infinite spectral tail in a norm much stronger than the destination average. A nominal finite-height critical scale becomes arithmetic only after the corresponding joint moving regime defeats all of those matched controls.
-
-**Boundary.** VIS-309 is a Bohr-mean statement for fixed finite frequency data before the large-`x` limit. VIS-310 and VIS-311 give sufficient finite-window bounds, not lower bounds for true dephasing. VIS-311 still inherits the uniform tail estimate from VIS-310 and does not control a prescribed height, a joint limit `x=x(T)`, or pointwise cancellation at `H~x log log x`. Exceptional-height coherence remains open.
+**Boundary.** VIS-312 proves density of the full supported ratio spectrum and divergence of the VIS-311 nearest-neighbor functional. It does not give a quantitative collapse rate for each gap, a lower bound on the true averaging horizon, a prescribed-height cancellation theorem, or a joint `x=x(T)` result. Aggregate density/energy control and exceptional-height resonance remain open.

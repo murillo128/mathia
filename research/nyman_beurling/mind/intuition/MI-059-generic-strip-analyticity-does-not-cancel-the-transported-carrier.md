@@ -1,6 +1,6 @@
-# MI-059 — Generic strip analyticity is sharp, while zeta-specific localization trades source width for Ford-scale reach
+# MI-059 — Generic strip analyticity is sharp, while population-only Ford reach has a linear source-width threshold
 
-**Evidence level:** exact synthesis from [NB-221](../../findings/NB-221-flat-soft-primitive-windows-factor-through-local-log-derivative-contour.md) through [NB-224](../../findings/NB-224-log-wide-shell-converts-local-zero-counts-into-exact-ford-gap.md), building on the exact source/kernel coupling of NB-218--NB-220.
+**Evidence level:** exact synthesis from [NB-221](../../findings/NB-221-flat-soft-primitive-windows-factor-through-local-log-derivative-contour.md) through [NB-225](../../findings/NB-225-sublinear-shells-admit-bellotti-compatible-phase-aligned-ford-packets.md), building on the exact source/kernel coupling of NB-218--NB-220.
 
 NB-221 removes the artificial costs of fixed-depth primitivization, global vertical acquisition and remote-zero transport. After faithful localization and a safe finite contour shift, every fixed primitive depth has the same leading term: a carrier-frequency convolution of the local logarithmic derivative `-zeta'/zeta`.
 
@@ -14,22 +14,22 @@ NB-223 shows that the actual zeta carrier has additional spectral structure. Mov
 
 `sum_rho m(rho) e^(-X(1-beta)) (1+|gamma-t|)^(-A)`.
 
-Bellotti's near-one density theorem controls the population in layers `1-beta~K/R`, where
+Bellotti's near-one density theorem controls the population in layers `1-beta~K/R`, with
 
 `R=(log |t|)^(2/3)(log log |t|)^(1/3)`.
 
-For a fixed-width logarithmic shell, every fixed positive power in `X/R` beats those layer counts, yielding an order-one positive Euler gap throughout every fixed `log^epsilon` margin below Ford height. At exact Ford scale `X/R=Theta(1)`, that argument stalls because a carrier of vertical width `Theta(1)` still sees too many zeros in the final near-edge layer.
+For a fixed-width logarithmic shell, every fixed positive power in `X/R` beats those layer counts, yielding an order-one positive Euler gap throughout every fixed logarithmic margin below Ford height. At exact Ford scale `X/R=Theta(1)`, a vertical carrier of width `Theta(1)` still sees too many zeros in the final near-edge layer.
 
-NB-224 shows that this is not a universal endpoint obstruction; it is coupled to source resolution. Take a nonnegative shell of logarithmic width `H=theta X`, normalized by `1/H`. Its source mass stays order one, but its Fourier carrier becomes `e^(iXv)F(Hv)` and narrows to vertical scale `1/H=Theta(1/X)`. Bellotti's local disk bound then prices the shallow zero population by the horizontal depth `K` itself. At fixed sufficiently large `Y=X/R`, the resulting residue sum is exponentially small in `Y`, so a constant positive-return gap survives all the way to
+NB-224 shows that source width can pay for that missing localization. A nonnegative shell of logarithmic width `H=theta X`, normalized by `1/H`, keeps order-one source mass while narrowing the Fourier carrier to `1/H=Theta(1/X)`. Bellotti's local disk count then prices the shallow zero population by the horizontal depth itself, giving a constant positive-return gap all the way to the exact Ford denominator for a sufficiently small fixed Ford constant.
 
-`log |t| <= kappa_0 X^(3/2)/(log X)^(1/2)`
+NB-225 proves the complementary method boundary. At exact Ford scale `R~X`, suppose `H=o(R)`. Then one can place an abstract packet of `M->infinity` simple near-one zeros with spacing `Theta(1/X)` and horizontal depth chosen so each residue has size `~1/M`. The whole packet lies inside one `1/H` carrier window, its moving-shell phases can be aligned exactly, and its total signed contribution stays order one. The packet remains compatible with all population-only inputs used by NB-223--NB-224: the Vinogradov--Korobov zero-free depth, Bellotti fixed/growing density, the local `O(K)` disk bound and ordinary local zero counting.
 
-for a sufficiently small fixed `kappa_0>0`.
+Therefore the present population information has a sharp width transition:
 
-The price is equally structural. A shell of width `theta X` occupies an integer range roughly `[e^X,e^((1+theta)X)]`. Exact-Ford reach has been purchased by sacrificing multiplicative localization. NB-224 therefore does not settle the fixed-width endpoint from NB-223; it reveals a **source-width/carrier-width tradeoff**.
+`H=Theta(X)` can reach exact Ford by NB-224, while every `H=o(X)` admits an order-one matched spectral packet under the same hypotheses.
 
-The reusable lesson is three-layered. Generic strip analyticity is genuinely sharp. Source-specific singularity population can beat that ambient extremizer. And once zero information is local in the vertical coordinate, physical source width becomes a controllable localization resource: wider source support creates a narrower carrier that can convert local zero counts into stronger height reach. Any claimed gain must price the resulting loss of destination resolution.
+This is not a theorem about the actual local configuration of zeta zeros. It is an information boundary on the current proof interface. To improve the sublinear-width endpoint one must add a genuinely joint theorem coupling horizontal depth to vertical window occupancy, or use phase-sensitive cancellation/correlation of the actual zero residues. Sharpening the same separate population bounds cannot distinguish the matched packet.
 
-The next meaningful question is not another contour refinement. It is whether the exact Ford gap can be retained with fixed or sublinear logarithmic source width, or whether one can prove an optimal width-versus-Ford-constant law. If fixed width is intrinsically insufficient for population-only arguments, the remaining source-side option is phase cancellation in the weighted zero sum rather than further absolute counting.
+The reusable lesson is four-layered. Generic strip analyticity is sharp; source-specific singularity population beats that ambient extremizer; physical source width converts local zero counts into vertical localization; and below the linear-width threshold the missing resource is **joint depth-window or phase information**, not another absolute count.
 
-**Boundary.** NB-224 is still source-side. It reaches the exact Ford denominator only for a proportional log-width shell and sufficiently small fixed Ford constant. It does not solve the fixed-width endpoint, give a Nyman--Beurling distance bound, or show that every good approximant realizes the positive Euler-return observable.
+**Boundary.** NB-225 is a method no-go for the population inputs used at the exact Ford endpoint. It does not assert that zeta contains the constructed packet, rule out phase cancellation for the true zeros, solve the fixed/sublinear-width endpoint by other information, give a Nyman--Beurling distance bound, or prove that every good approximant realizes the positive Euler-return observable.

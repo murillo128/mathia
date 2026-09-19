@@ -2,9 +2,9 @@
 
 This file holds the current mathematical questions suggested by the durable Weil-positivity intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Find a genuinely noncentral finite--archimedean sign mechanism beyond componentwise and Hecke-equivariant Whittaker scale traps
+## Find a global finite--archimedean sign mechanism beyond diagonal scale traps and local scalar Toeplitz completion
 
-**Linked intuitions:** `MI-039-enriched-semigroups-inherit-obstructed-scalar-shadows-or-universal-lifts` through `MI-054-index-adapted-whittaker-sampling-has-one-critical-scale-and-it-factorizes`.
+**Linked intuitions:** `MI-039-enriched-semigroups-inherit-obstructed-scalar-shadows-or-universal-lifts` through `MI-055-centered-prime-power-toeplitz-positivity-pays-a-divergent-diagonal-tax`.
 
 WP-356--WP-357 classify the finite constant-mode Hecke route: cusp-boundary defects reduce to universal interval-overlap/Brownian geometry, so finite arithmetic operator structure survives before positivity but becomes nonselective after positive closure.
 
@@ -12,34 +12,32 @@ WP-358 shows that nonconstant Fourier modes retain genuine arithmetic informatio
 
 WP-359--WP-365 classify scalar/smooth and Rankin--Selberg repairs. The desired Mangoldt half-density can be recovered by importing the completed logarithmic derivative, but inherited positivity is lost; canonical finite and finite--archimedean positive Grams either vanish, diverge or acquire indefinite critical geometry.
 
-WP-366 retains genuine finite--archimedean incidence at fixed physical height through `lambda_r(n)K_(ir)(2 pi nY)`, but canonical positive scalar dilation-covariant globalization forces a power-Haar measure and Mellin-separates the construction back into Rankin--Selberg/Bessel geometry. WP-367 broadens this to any common positive-semidefinite radial form with exact dilation homogeneity. WP-368 closes the opposite fixed-scale escape: a bounded positive readout supported on `Y>=Y_*>0` preserves literal `nY` incidence only while the Whittaker tail exponentially erases large arithmetic indices.
+WP-366--WP-370 classify componentwise Whittaker scale repairs. Common positive homogeneous globalization Mellin-separates the finite--archimedean construction; a bounded fixed scale preserves incidence only while the Whittaker tail kills large indices; moving `Y_n=c n^(-alpha)` has one unsuppressed critical power `alpha=1`, but there `nY_n=c` is constant and the carrier factorizes. Exact diagonal prime-Hecke equivariance itself forces the same law `Y_n=c/n`. Ordinary positive boundary `L^2` then squares the half-density to `|lambda_r(n)|^2/n` and diverges.
 
-WP-369 tests the natural remaining repair: move the source height toward the cusp with the Fourier index. For normalized modes
+WP-371 tests the most canonical translation-invariant non-diagonal repair. On a prime-power ray let
 
-`w_(r,n)(Y_n)=lambda_r(n)n^(-1/2) Psi_r(nY_n)`.
+`C_r=sum_(k>=1) r^k(U^k+U^(-k))`, `r=p^(-1/2)`.
 
-For the power law `Y_n=c n^(-alpha)`, there is a sharp trichotomy. If `alpha<1`, the formal half-density is killed by stretched-exponential Whittaker decay. If `alpha>1`, the amplitude is subcritical (up to one logarithm at `r=0`). The unique unsuppressed critical power law is `alpha=1`, but then `nY_n=c` is constant and the finite--archimedean incidence factorizes exactly:
+Its nonzero Fourier coefficients are exactly the critical prime-power half-density pattern after multiplication by `log p`. But `C_r` is the **centered** Poisson kernel, with symbol minimum `-2r/(1+r)`, so it is indefinite. More strongly, every scalar diagonal completion preserving those nonzero coefficients,
 
-`w_(r,n)(c/n)=B_r(c) lambda_r(n)n^(-1/2)`.
+`a I + C_r`,
 
-Ordinary positive boundary `L^2` then squares the half-density to `|lambda_r(n)|^2/n` and the resulting Rankin--Selberg sum diverges.
+is positive if and only if
 
-WP-370 now tests whether the intrinsic Hecke correspondence can **force** a more interesting nonconstant transition sequence. For a diagonal sampler `(R_Ya)_n=a_n(Y_n)`, exact intertwining with every prime Hecke operator on the smooth finite-Fourier cusp core,
+`a >= 2r/(1+r)`.
 
-`R_Y T_p = H_p R_Y`,
+At prime `p`, the least positive-completion tax is therefore
 
-holds if and only if
+`2 log p/(sqrt(p)+1)`,
 
-`Y_(pm)=Y_m/p`.
+and its sum over primes diverges. The ordinary positive Poisson kernel pays an even larger diagonal. Subtracting this accumulated zero mode after applying local positivity simply reintroduces an indefinite counterterm outside the sign theorem.
 
-Equivalently `t_(pm)=t_m` for `t_n=nY_n`; prime factorization therefore forces `Y_n=c/n` and `t_n=c`. Hecke naturality selects exactly the critical ray of WP-369 and simultaneously freezes the mixed coordinate. The sampled Whittaker mode factorizes, and ordinary positive boundary `L^2` returns to the same divergent `|lambda_r(n)|^2/n` geometry.
+The surviving operator-valued route is consequently stricter than “couple different translates before squaring.” A viable form must assemble finite primes with an archimedean/global sector, or use a genuinely matrix/cross-prime/source-constrained operator, **before positivity is asserted**, so that the divergent local diagonal direction is cancelled or quotiented inside one source-forced global sign structure. A direct sum of independently positive local Poisson blocks followed by baseline subtraction is closed.
 
-The route is now trapped by four complementary componentwise failures: **common homogeneous globalization erases incidence; fixed bounded scale preserves incidence but kills the tail; pure power-law index adaptation has one critical scale and that scale factorizes; and exact diagonal Hecke equivariance itself forces that same factorized critical ray.** A source-forced nonconstant transition sequence must therefore break exact diagonal Hecke equivariance or arise from a genuinely cross-index/operator-valued construction whose naturality and sign theorem are formulated at a different level.
+## Keep arithmetic content, local positivity, tensorization, scale globalization, Hecke naturality, diagonal tax and critical sign coercivity separate
 
-## Keep arithmetic content, local positivity, tensorization, scale globalization, Hecke naturality, tail survival and critical sign coercivity separate
+The current audit distinguishes finite Hecke structure, nonconstant divisibility projections, finite--archimedean incidence, common versus cross-index radial geometry, exact dilation homogeneity, fixed-scale boundedness, cusp approach rate, transition coordinate `nY`, arithmetic-index tail size, diagonal Hecke intertwining, critical half-density, diagonal Hilbert squaring, translation-invariant prime-power coupling, zero-mode completion cost and sign coercivity.
 
-The current audit distinguishes finite Hecke structure, nonconstant divisibility projections, finite--archimedean incidence, common versus cross-index radial geometry, exact dilation homogeneity, fixed-scale boundedness, cusp approach rate, the transition coordinate `nY`, arithmetic-index tail size, diagonal Hecke intertwining, critical half-density, diagonal Hilbert squaring and sign coercivity.
+WP-365--WP-371 show that seeing the right `n^(-1/2)` or `p^(-k/2)` coefficient is not enough. One must ask which mixed coordinate still carries source-specific incidence, which naturality law generated the scale, what positivity adds on the diagonal, and whether a local positive completion survives global assembly without an infinite counterterm. At the critical Whittaker ray the mixed coordinate freezes; at the critical Toeplitz ray the desired carrier is precisely the centered indefinite part of a positive harmonic kernel.
 
-WP-365--WP-370 show that seeing the right `n^(-1/2)` prefactor is not enough. One must ask whether the remaining Whittaker profile still carries source-specific incidence, whether the scale law was source-forced rather than chosen to fit the desired exponent, what naturality requirement generated that law, and what positivity does after the half-density is exposed. At `Y_n=c/n`, the exponent is correct but the mixed coordinate is constant and the canonical positive norm is both quadratic and divergent; WP-370 shows that exact prime-Hecke equivariance does not supply a richer diagonal section, because it forces precisely that ray.
-
-Any next proposal should state where the `(log p)p^(-1/2)` carrier lives before closure, how `t_n=nY_n` is generated, which Hecke covariance is required or deliberately broken, what cross-index degrees of freedom survive, whether the form remains finite, and what theorem fixes the required orientation independently of the divisor being constrained. More elaborate componentwise positivity on a homogeneous global scale, a bounded fixed scale, a pure power-law moving scale, or an exactly Hecke-equivariant diagonal sampler is now calibration rather than a new route.
+Any next proposal should state where the `(log p)p^(-1/2)` carrier lives before closure, how finite and archimedean sectors are coupled, which diagonal/zero-mode directions are quotiented or compensated, why that compensation is intrinsic rather than a post-hoc subtraction, and what theorem fixes the required orientation independently of the divisor being constrained. More elaborate componentwise positivity, diagonal Hecke-equivariant sampling, or scalar prime-by-prime Toeplitz completion is now calibration rather than a new route.

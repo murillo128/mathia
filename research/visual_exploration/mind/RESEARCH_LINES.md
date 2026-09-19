@@ -12,7 +12,7 @@ VIS-282--VIS-293 separate the isolated coefficient profile, Wang's complete pair
 
 The earlier `sqrt(log T)` and related lower-source thresholds were proof-packaging artifacts rather than arithmetic transitions.
 
-## Replace hard-tail finite-window transfer by energy-sensitive infinite-spectrum control
+## Replace pointwise frequency isolation by aggregate density-sensitive infinite-spectrum control
 
 **Linked intuition:** `MI-040-wang-pointwise-upper-ceiling-is-a-localization-coherence-budget`.
 
@@ -24,26 +24,24 @@ VIS-310 quantifies the crudest finite-window transfer. Hard truncating the infin
 
 `V >> x^5 log^3 x/(log log x)^2`
 
-when `H~x log log x`. That quintic scale is a proof-representation cost, not a lower bound on true dephasing.
-
-VIS-311 removes most of the worst-gap loss. Keeping the local spacing `delta_lambda` of each grouped rational-ratio frequency and its coefficient energy gives
-
-`sum_lambda m_lambda |B_lambda|^2 << x^2 log^3(3x)`,
-
-where `m_lambda` is the reduced rational height. The weighted Montgomery--Vaughan inequality then lowers the sufficient finite-window horizon to
+when `H~x log log x`. VIS-311 keeps the local spacing of each retained rational-ratio frequency and its coefficient energy, lowering the sufficient horizon to
 
 `V >> x^3 log^3 x/(log log x)^2`.
 
-Two powers of `x` were therefore artifacts of global-gap compression. The remaining cubic loss comes from the **uniform hard-tail estimate**, which forces the optimized cutoff far beyond the natural support before the full remainder is certified small.
+Two powers of `x` were therefore artifacts of global-gap compression. But VIS-312 shows that the finite-cutoff nearest-neighbor representation has no cutoff-free continuation. The nonzero cross-base prime-ratio frequencies `log(p/q)` surviving the Wang kernel are dense in `R`. Consequently every fixed retained frequency loses nearest-neighbor isolation as the cutoff grows, and the VIS-311 functional
 
-The live finite-height problem is now narrower. A useful next theorem should keep the infinite ratio spectrum in an energy norm—through a smooth/dyadic decomposition, direct nontruncated mean square, or another coefficient-sensitive tail estimate—and ask whether the observation window can approach the natural `V~H~x log log x` scale. The opposite useful outcome would be an explicit sparse family of near-resonant ratios and heights carrying enough Wang coefficient mass to force an `H`-scale remainder despite the small Bohr energy.
+`sum_lambda |B_lambda|^2/delta_lambda`
 
-The accepted clue `CLUE-wang-fixed-source-packet-localization` already records this destination. Another hard-cutoff spacing estimate that leaves the uniform tail untouched is no longer the most informative move.
+diverges as the cutoff tends to infinity. One cannot remove the hard tail simply by sending `Y->infinity` inside the same weighted Montgomery--Vaughan nearest-neighbor denominator.
+
+This is a proof-method obstruction, not a lower bound on true dephasing. Dense frequency support can still have small coefficient energy. The live finite-height problem is now representation-specific: replace individual spacing by a cutoff-free quantity that remains meaningful on a dense spectrum, such as local frequency counts in blocks, a smooth/dyadic large-sieve decomposition, or direct control of the finite-window kernel `min(V,1/|lambda-mu|)` against coefficient energy. The opposite useful outcome would be an explicit sparse near-resonant family carrying enough Wang coefficient mass to force an `H`-scale remainder despite the small Bohr energy.
+
+The accepted clue `CLUE-wang-fixed-source-packet-localization` remains aligned with this destination, but another nearest-neighbor hard-cutoff estimate is no longer the most informative move.
 
 ## Recombine exact deterministic structure and decompose every newly exposed proof wall before interpreting it
 
-The current ledger separates packet variation, source exponent, localization leakage, coefficient majorants, support-sensitive spacing, random versus completely multiplicative phases, the actual prime-log time orbit, Bohr/Haar equivalence, global versus local ratio spacing, hard versus energy-sensitive tail treatment, finite-window length, moving-frequency limits and the analytic domain of the source transform.
+The current ledger separates packet variation, source exponent, localization leakage, coefficient majorants, support-sensitive spacing, random versus completely multiplicative phases, the actual prime-log time orbit, Bohr/Haar equivalence, global versus local ratio spacing, finite-cutoff versus dense-spectrum geometry, hard versus energy-sensitive tail treatment, finite-window length, moving-frequency limits and the analytic domain of the source transform.
 
-VIS-294--VIS-311 give a repeated control pattern. Exact deterministic pieces can be split too early; generic majorants can lose logarithms; matched support models can show an absolute norm is generic; exact support can still cancel after phase randomization; same-base harmonic relations can be preserved without restoring the boundary; the true deterministic orbit can have the same long-time quadratic mean as Haar; and even a finite-window proof can manufacture polynomial horizons by compressing weighted spectrum or paying the tail in uniform norm.
+VIS-294--VIS-312 give a repeated control pattern. Exact deterministic pieces can be split too early; generic majorants can lose logarithms; matched support models can show an absolute norm is generic; exact support can still cancel after phase randomization; same-base harmonic relations can be preserved without restoring the boundary; the true deterministic orbit can have the same long-time quadratic mean as Haar; finite-window proofs can manufacture polynomial horizons by compressing weighted spectrum; and the nearest-neighbor geometry itself ceases to exist in the infinite dense support.
 
-A structural transition is credible only after the surviving **finite-height/moving-frequency coherence mechanism** defeats a control that preserves the coefficient distribution, local ratio geometry, infinite tail and destination quantifier at the same scale.
+A structural transition is credible only after the surviving **finite-height/moving-frequency coherence mechanism** defeats a control that preserves the coefficient distribution, aggregate local ratio density, infinite tail and destination quantifier at the same scale.
