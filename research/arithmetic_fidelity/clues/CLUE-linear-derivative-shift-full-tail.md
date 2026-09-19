@@ -16,6 +16,7 @@ based_on:
   - research/arithmetic_fidelity/findings/AF-431-constant-rational-supercritical-sources-hit-first-saddle-window.md
   - research/arithmetic_fidelity/findings/AF-432-supercritical-packet-center-amplitudes-are-residual-but-metrically-thin.md
   - research/arithmetic_fidelity/findings/AF-433-free-left-tail-amplitude-is-not-a-source-discriminator.md
+  - research/arithmetic_fidelity/findings/AF-434-full-column-saddle-does-not-transport-source-shell-index.md
 ---
 
 # Linear derivative-shift full-tail resummation
@@ -32,77 +33,60 @@ b_n=a n^{s_n/n-2},
 
 with square transitions `b=m^2`. AF-426 excludes exact square amplitude at the complete adjacent-packet scale. AF-427--AF-428 show that displaced critical amplitudes with infinitely many second-order hits form a set that is simultaneously residual and Lebesgue-null. For rational supercritical density `q>2`, AF-429--AF-432 refine the target to a shrinking packet-corrected integer window and again obtain a residual but metrically thin amplitude set.
 
-AF-433 originally exposed a more basic provenance gate: the reciprocal-order path `x_n(c)=c/n` is available for every `c>0`, so exceptional-set membership for an arbitrarily chosen amplitude is not a source discriminator.
-
-The corrected AF-433 now sharpens that conclusion. For
+AF-433 supplies the source-side correction. For
 
 \[
 h(x)=-\log\!\left(\frac{1-e^{-x}}x\right),
 \]
 
-the source has singularities at `2\pi i k`, hence the intrinsic ordered shell radii
+the singularities lie at `2\pi i k`, so the source has the ordered shell radii
 
 \[
 r_m=2\pi m,\qquad m\ge1.
 \]
 
-Since `a=(c/2\pi)^2`, the target square amplitudes satisfy
+Since `a=(c/2\pi)^2`, the source-attached shell family satisfies `c=r_m \iff a=m^2`. This makes the square family intrinsic to the source normalization, but does not by itself select one shell.
 
-\[
-a=m^2\iff c=r_m.
-\]
+AF-434 now closes the proposed **shell/packet transfer mechanism negatively for the current determinant route**. The exact source expansion resolves each even coefficient as a sum over shell labels `j`, while the target packet index `r` is introduced later by the rectangular partition decomposition. For every fixed full-column packet, the source-shell zeta factor has zero contribution to the `n`-th-root saddle rate; the square law `L_r(b)=b^r/(r!)^2` is formed by packet combinatorics plus the scalar `b`. Even the first exact zeta prefactor is an aggregate over all source shells rather than a selector of shell `j=m`.
 
-Thus square amplitudes are not purely downstream-tuned values: they coincide exactly with a canonical source-attached shell family. What remains unresolved is stronger and cleaner: the source does not yet force **which shell**, or prove that the shell/packet index coincidence is more than a normalization identity.
+Thus the common integer in `c=r_m` and `a=m^2` is an exact coordinate correspondence, not a shell label transported through the present compression.
 
 ## Research question
 
-Can the source singularity structure select one admissible reciprocal-order probe, or otherwise turn the exact shell/packet index matching into a genuine transfer mechanism, **before** desired cancellation or exceptional-set membership is inspected?
+Can the source analytic structure force a principled reciprocal-order probe, in particular the nearest-shell value `c=r_1=2\pi`, **before** target cancellation or exceptional-set membership is inspected?
 
-There are now two distinct possibilities worth separating:
-
-1. a principled admissibility/minimality theorem selects the nearest singularity shell `c=r_1=2\pi` (or another uniquely characterized shell) independently of the target; or
-2. no unique shell is selected, but the whole source ladder `r_m` maps canonically to the target square-transition ladder and a theorem explains why the same index `m` governs both structures.
-
-Either would be stronger than arbitrarily choosing `c`; neither follows merely from the identity `a=(c/2\pi)^2`.
+AF-434 removes the previous alternative that the current determinant itself might transport the shell index into the packet index. A future shell-to-packet proposal would therefore need a genuinely enriched representation that carries shell-resolved provenance explicitly; it is no longer a live explanation of the existing AF-417--AF-432 formulas.
 
 ## Why it may matter
 
-The previous version of this clue treated `c=2\pi m` as merely convenient unless an independent source theorem selected it. AF-433 now supplies an independent source interpretation for the entire family: `2\pi m` is the modulus of the `m`-th singularity shell. This makes AF-426's exact-square obstruction source-relevant rather than purely target-conditioned.
+The source-selection issue is now isolated cleanly from the target saddle. AF-434 proves more than a notational distinction: the farther-shell contributions to coefficient order `2k` are exponentially suppressed relative to the nearest shell, so large-order source asymptotics intrinsically privilege `r_1=2\pi`. This supplies a real source-side reason to investigate nearest-shell selection.
 
-At the same time, the correction does not solve the original discriminator problem. The continuum `c>0` remains admissible, and even restricting attention to the singularity ladder leaves infinitely many source-attached scales. Chasing whichever `m` has favorable target behavior would still reverse the provenance direction.
-
-The nearest shell `r_1` is special because it is the unique radius of convergence, so `c=2\pi` is now a serious source-defined candidate rather than a numerically convenient choice. But accepting it as the uniquely relevant probe requires a mathematical criterion saying why nearest-singularity selection is the admissible operation for this compression problem.
+It still does not prove that the probe family `x_n(c)=c/n` must take `c=2\pi`. All `c>0` remain analytically available, and choosing `2\pi` because it has desirable packet behavior would still reverse provenance. What is needed is an admissibility, extremality, minimality, or functoriality theorem formulated entirely on the source side.
 
 ## Decisive test
 
-**Gate 0 — source admissibility.** Starting from the intrinsic source analytic continuation, formulate an admissible class of probe selectors and determine whether nearest-shell selection
+**Gate 0 — source admissibility.** Starting only from the intrinsic source analytic continuation and the reciprocal-order scaling problem, formulate an admissible class of probe selectors and determine whether nearest-shell selection
 
 \[
 S(h)=r_1=2\pi
 \]
 
-is forced, minimal, universal, or otherwise canonical inside that class. Similarity-equivariance alone is insufficient, because every `\kappa R(h)` has that property. If no unique selector exists, characterize the strongest source-defined family that survives; AF-433 now proves that `{r_m}` is one such family.
+is forced, minimal, universal, or otherwise canonical inside that class. Similarity-equivariance alone is insufficient because every `\kappa R(h)` has that property. A successful criterion must distinguish the nearest singularity without inspecting downstream packet cancellation or exceptional membership.
 
-**Gate 1 — shell/packet transfer.** Determine whether the equivalence
+**Gate 1 — current shell/packet transfer: closed negatively.** AF-434 shows that, in the present determinant/Cauchy--Binet mechanism, shell labels are aggregated inside the coefficient `\zeta(2k)` before packet labels are formed, and the fixed-packet zeta factor is subexponential at the saddle scale. Do not continue trying to explain `c=r_m \iff a=m^2` as transport through this mechanism. Reopen this gate only for a new construction that explicitly retains shell-resolved data.
 
-\[
-c=r_m\iff a=m^2
-\]
-
-can be derived as a structural source-to-target mechanism rather than by substituting the normalized coordinate into AF-421's square saddle law. A positive result should identify a source quantity indexed by the singularity shell whose transport through the determinant/compression produces the adjacent-packet index. A negative result should show that the common integer label is exhausted by coordinate normalization.
-
-**Gate 2 — pointwise target membership.** Only after Gate 0 or Gate 1 supplies genuine provenance should a fixed source-attached amplitude be tested against the exact critical or supercritical shrinking target. On the exact square family, AF-426 already closes complete adjacent-packet cancellation. For any other surviving source-selected value, use the AF-425/AF-432 pointwise conditions rather than category or measure genericity.
+**Gate 2 — pointwise target membership.** Only after Gate 0 supplies a source-selected probe should that fixed amplitude be tested against the exact critical or supercritical shrinking target. On the exact square family, AF-426 already closes complete adjacent-packet cancellation. For any other source-selected value, use the AF-425/AF-432 pointwise conditions rather than category or measure genericity.
 
 **Gate 3 — next packet scale.** Only on a pointwise survivor derive the next uniform complete-packet correction. Do not spend beyond-all-orders effort before the provenance and pointwise gates survive.
 
 ## Evidence boundary
 
-AF-433 proves that the full probe family remains free and that exceptional-set membership alone is not a source statement. It now also proves that the source analytic continuation supplies the singularity-shell ladder `r_m=2\pi m`, which maps exactly to the square amplitudes `m^2`.
+AF-433 proves that the full probe family remains free and identifies the source singularity-shell ladder. AF-434 proves that the existing square saddle does not transport that shell index: source-shell data are already aggregated at the coefficient layer, and the shell-sensitive zeta factors do not control the fixed-packet exponential saddle rate.
 
-It does **not** prove that one shell is uniquely admissible, that the source must use the nearest shell, or that the shared index `m` reflects a causal transfer rather than an exact coordinate coincidence. AF-426 remains a valid negative theorem on every exact square fiber.
+Neither result proves that `c=2\pi` is the unique admissible probe. AF-434 also does not rule out a different representation that carries shell marks explicitly, nor does it say that all aggregate shell information disappears from exact prefactors.
 
-A new cross-line arithmetic construction may also supply a selector. If it does, its provenance must be established independently before this clue treats the resulting amplitude as distinguished.
+A new cross-line arithmetic construction may supply a selector. If it does, its provenance must be established independently before this clue treats the resulting amplitude as distinguished.
 
 ## Research disposition
 
-Accepted. The live owner question is now **source-shell admissibility and shell/packet transfer before Diophantine membership**. Do not continue exceptional-set analysis for an arbitrarily chosen amplitude. First determine whether the source forces a shell rule or whether the exact singularity-shell / square-packet index matching carries additional structure. Only then test the surviving fixed amplitude or family against AF-426/AF-432.
+Accepted. **The sole live branch of this clue is now source-side probe admissibility.** Investigate whether nearest-shell dominance can be upgraded to a canonical selector theorem for `c=2\pi` (or to a sharply characterized source-defined admissible family). Do not continue exceptional-set analysis for freely chosen amplitudes, and do not pursue the existing shell/packet index coincidence as a transport mechanism after AF-434.
