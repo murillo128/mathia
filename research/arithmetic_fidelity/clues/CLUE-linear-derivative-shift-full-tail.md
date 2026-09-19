@@ -16,6 +16,7 @@ based_on:
   - research/arithmetic_fidelity/findings/AF-425-second-order-square-packet-detuning-exposes-source-lattice.md
   - research/arithmetic_fidelity/findings/AF-426-exact-square-amplitude-has-irreducible-integer-source-packet-gap.md
   - research/arithmetic_fidelity/findings/AF-427-displaced-square-packet-cancellation-is-metrically-exceptional.md
+  - research/arithmetic_fidelity/findings/AF-428-second-order-exceptional-amplitudes-are-residual-but-null.md
 ---
 
 # Linear derivative-shift full-tail resummation
@@ -69,31 +70,33 @@ L_{n,m}=\log(n/m)+m/n\sim\log n.
 
 AF-426 closes the exact-amplitude subfiber `a=m^2`: bounded packet balance forces `d_n=-1` eventually, and at that only admissible depth `Q_{n,m}->mK_m>1`.
 
-AF-427 now treats the displaced amplitudes metrically. Reparameterizing by `A=log(m^2/a)`, the source-compatible depths at scale `n` number only `O(n/log n)`, while the second-order target `|H_n(d)|<=n^-2` pulls back to amplitude intervals of width `O(n^-3)`. Hence the amplitudes admitting infinitely many second-order hits form a Lebesgue-null set of Hausdorff dimension at most `2/3`.
+AF-427 treats displaced amplitudes metrically. With `A=log(m^2/a)`, the source-compatible depths at scale `n` number only `O(n/log n)`, while the second-order target `|H_n(d)|<=n^-2` pulls back to amplitude intervals of width `O(n^-3)`. Hence the amplitudes admitting infinitely many second-order hits form a Lebesgue-null set of Hausdorff dimension at most `2/3`.
 
-Thus the finite-window question is no longer whether generic displaced source depths can track the continuous saddle. They cannot at the required precision. The surviving question is whether the **specific exceptional set** contains any distinguished amplitudes supplied by the original source problem.
+AF-428 supplies the complementary category statement: the very same exceptional set is a dense `G_delta`, hence residual. Exact second-order roots become dense because at each large odd scale the affine source grid can be centered within `O(log n)` of the target, while `partial_A H=-n+O(n^-1)` moves the resulting root only `O(log n/n)` in amplitude. The surviving set is therefore simultaneously metrically thin and topologically generic.
 
 ## Research question
 
-On the surviving odd square-transition branch, can any mathematically distinguished amplitude `a!=m^2` lie in AF-427's exceptional set and realize
+Which **concrete distinguished amplitudes** supplied by the source construction belong to, or are excluded from, this residual-null exceptional set? What exact arithmetic mechanism decides membership in
 
 \[
-H_n(d_n)=o(n^{-2})
+H_n(d_n)=o(n^{-2}),
+\qquad
+\frac{d_n\log n}{n}\to\log(m^2/a),
 \]
 
-along infinitely many source-compatible integer depths? If so, what arithmetic mechanism produces those hits? If not, can the pointwise obstruction be proved for the amplitudes actually forced by the source construction without relying on an almost-everywhere statement?
+along infinitely many odd source-compatible depths?
 
 Separately, for genuinely supercritical ratios `s_n/n -> sigma>2`, what moving full-column saddle replaces the finite-`b` classification, and can that complete signed regime be controlled without importing fixed-window asymptotics?
 
 ## Why it may matter
 
-For `m>=2`, the tied square packets carry an exponential rate `Lambda_m>1`. Any uncancelled polynomial relative mismatch dominates every exponentially smaller neighboring saddle. AF-426 eliminates the exact-amplitude fiber pointwise, and AF-427 eliminates almost every displaced amplitude metrically, so spending effort on beyond-all-orders packet asymptotics is justified only after one concrete exceptional amplitude survives the source-realizability gate.
+For `m>=2`, the tied square packets carry an exponential rate `Lambda_m>1`, so any uncancelled polynomial relative mismatch dominates every exponentially smaller neighboring saddle. AF-426 excludes the exact square-amplitude fiber pointwise, AF-427 says almost every displaced amplitude is nonexceptional, and AF-428 shows exceptional amplitudes nevertheless occur in every neighborhood.
 
-The remaining issue is therefore qualitatively sharper. A metric theorem cannot exclude a distinguished arithmetic constant merely because the exceptional set has measure zero. The next useful result must use the exact moving centers or arithmetic nature of the physical amplitude, rather than another generic spacing or equidistribution heuristic.
+Consequently, neither metric scarcity nor perturbative/local stability can close the remaining branch for a source-forced constant. The deciding input must distinguish that exact amplitude from arbitrarily close exceptional ones. This is now a genuinely pointwise arithmetic gate, not another generic asymptotic-spacing problem.
 
 ## Decisive test
 
-Fix `m>=1` and a concrete positive amplitude `a!=m^2` supplied by, or naturally singled out in, the source construction. Put
+Fix `m>=1` and an actual positive amplitude `a!=m^2` supplied by, or naturally singled out in, the source construction. Put
 
 \[
 A=\log(m^2/a),
@@ -101,7 +104,7 @@ A=\log(m^2/a),
 b_n=a n^{d_n/n},
 \]
 
-and require `b_n->m^2` along odd `n` with integer `d_n`. Using AF-425's exact functions, reduce the nearest admissible depth to the explicit moving-center condition for
+and use AF-425's exact cancellation function
 
 \[
 H_n(d)
@@ -111,18 +114,18 @@ H_n(d)
 +\frac{B_2(d/n)}{n^2}.
 \]
 
-Prove one of two pointwise outcomes: either a lower bound preventing `H_n(d_n)=o(n^-2)` for every source-compatible sequence, or an explicit mechanism yielding infinitely many hits at that precision. A merely metric or generic theorem is no longer enough; AF-427 already supplies that layer.
+Prove a pointwise membership theorem for this exact `A`: either a lower bound excluding `H_n(d_n)=o(n^-2)` for every source-compatible integer sequence, or an explicit arithmetic mechanism producing infinitely many hits at that precision. A generic measure theorem, Baire-category theorem, or neighborhood-stability argument is no longer decisive: AF-427 and AF-428 show that those notions of genericity point in opposite directions.
 
-If a specific exceptional amplitude survives, only then derive the first beyond-all-orders complete-packet residual—including the tall-column sector suppressed in AF-423--AF-425—and compare it with the first subleading full-column saddle. For `m=1`, retain the same source-realizability test but do not import the `Lambda_m>1` divergence conclusion.
+If a specific distinguished amplitude is proved exceptional, only then derive the first beyond-all-orders complete-packet residual—including the tall-column sector suppressed in AF-423--AF-425—and compare it with the first subleading full-column saddle. For `m=1`, keep the same source-realizability test but do not import the `Lambda_m>1` divergence conclusion.
 
 For the independent `sigma>2` branch, derive the growing saddle scale directly rather than extrapolating the finite-window packet hierarchy.
 
 ## Evidence boundary
 
-AF-427 proves only that the second-order-hit amplitudes have Lebesgue measure zero and Hausdorff dimension at most `2/3`. It does not prove that this exceptional set is empty, identify its elements, or exclude any distinguished fixed amplitude. AF-426 remains the only pointwise closure of an entire amplitude fiber, namely `a=m^2`.
+AF-428 proves that AF-427's exceptional set is residual and dense; it does **not** identify a single distinguished source amplitude in that set. Residuality gives no membership statement for a fixed arithmetic constant, no Hausdorff-dimension lower bound, and no control of the undisplayed determinant remainder.
 
-The genuinely supercritical moving-saddle regime, omitted-`1` sector, one-/zero-singular-block contributions for growing derivative depth, and beyond-all-orders packet residuals at a surviving exceptional amplitude remain uncontrolled.
+AF-426 still excludes the exact amplitude `a=m^2` despite exceptional amplitudes occurring arbitrarily close to it. The genuinely supercritical moving-saddle regime, omitted-`1` sector, one-/zero-singular-block contributions for growing derivative depth, and beyond-all-orders packet residuals at a surviving distinguished amplitude remain uncontrolled.
 
 ## Research disposition
 
-Accepted. AF-419 closes the strictly subcritical regime; AF-420 handles the finite-`tau` absolute subthreshold phase; AF-421--AF-425 reduce the signed finite-window obstruction to integer source realizability. AF-426 closes the exact-amplitude fiber pointwise, and AF-427 shows that the displaced second-order cancellation set is metrically exceptional. The live finite-window gate is now **pointwise exceptional-set arithmetic for distinguished amplitudes**, not generic source-lattice spacing. Beyond-all-orders packet analysis should wait until such an amplitude is actually shown to survive. The genuinely supercritical `sigma>2` moving-saddle problem remains independent and unresolved.
+Accepted. AF-419--AF-425 reduce the finite critical window to integer source realizability; AF-426 closes the exact square-amplitude fiber; AF-427 makes displaced second-order cancellation metrically exceptional; AF-428 proves the same exceptional set is residual and dense. The live finite-window gate is therefore **arithmetic membership of exact distinguished amplitudes**, not whether the exceptional set exists or is generic in either measure or category. Beyond-all-orders packet analysis should wait until one such source-forced amplitude is proved to survive. The genuinely supercritical `sigma>2` moving-saddle problem remains independent and unresolved.
