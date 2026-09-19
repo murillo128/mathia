@@ -1,27 +1,25 @@
-# MC-389 — Endpoint affine rank forces a fixed excess over the Welch exception budget
+# MC-389 — Endpoint affine rank forces an explicit excess over the Welch exception budget
 
 ## Status
 
-`LITERATURE+DERIVED`.
+`EXACT-DERIVED` · `PRIOR-ART-AUDITED` · `FRONTIER-ADVANCE` · `STRUCTURAL-OBSTRUCTION` · `NON-RH`.
 
-This finding combines the endpoint-support affine-rank obstruction of MC-388 with Xuancheng Shao's robust restricted-sumset stability theorem to obtain a fixed additive-energy deficit, then converts that deficit through the Bochner representation into a fixed multiplicative improvement over the generic `H/R` exceptional-mode threshold from MC-386.
-
-The fixed constants below are existential: the formulation of Shao's Lemma 4.4 used here gives a sufficiently-small threshold depending on a prescribed `epsilon`, but does not provide a numerical modulus in the statement. No effective numerical value of the final excess constant is claimed.
+The endpoint-support affine-rank identity of MC-388 has a direct finite-field consequence that makes the previous inverse-theorem argument unnecessary. For a finite set in a binary vector space, large affine dimension limits every nonzero translate overlap. Summing that overlap bound gives an explicit additive-energy deficit for the projected endpoint simplex, hence an explicit fourth-moment contraction and an explicit multiplicative gap above the generic `H/R` exceptional-mode threshold of MC-386.
 
 ## Precise claim
 
-Let `W <= F_2^R` have dimension `d`, let `H = |W| = 2^d`, and consider the endpoint Bochner kernel from MC-388
+Let `W <= F_2^R` have dimension `d`, let `H=|W|=2^d`, and consider the endpoint Bochner kernel from MC-388
 
 \[
-g(K)=\sum_{\xi} p(\xi)(-1)^{\langle \xi,K\rangle},
+g(K)=\sum_\xi p(\xi)(-1)^{\langle\xi,K\rangle},
 \qquad
-p=\sum_z d_z\,\delta_{\pi(1+e_z)},
+p=\sum_z d_z\,\delta_{\pi(\mathbf 1+e_z)},
 \]
 
 where `p` is a probability measure and its distinct support is
 
 \[
-S=\{\pi(1+e_z):1\le z\le R\},
+S=\{\pi(\mathbf1+e_z):1\le z\le R\},
 \qquad r=|S|\le R.
 \]
 
@@ -31,159 +29,125 @@ Assume the high-rank endpoint branch
 d\ge \frac{3R}{4}.
 \]
 
-Then there exists an absolute constant `c_endpoint > 0` such that the following holds for all sufficiently large `R`.
-
-If `B subset W\setminus\{0\}` is an exceptional set and every good nonzero mode satisfies
+Then, for all sufficiently large `R`, the support has the explicit energy bound
 
 \[
-|g(K)|\le \varepsilon_R,
+\boxed{E(S)\le \frac34 r^3.}
+\tag{1}
+\]
+
+Consequently, if `B subset W\setminus\{0\}` is an exceptional set and every good nonzero mode satisfies
+
+\[
+|g(K)|\le\varepsilon_R,
 \qquad
 K\in W\setminus(B\cup\{0\}),
 \qquad
 \varepsilon_R=o(R^{-1/2}),
 \]
 
-then necessarily
+then, for all sufficiently large `R`,
 
 \[
-|B|\ge (1+c_{\mathrm{endpoint}})\frac{H}{R}.
+\boxed{|B|\ge\left(1+\frac1{4096}\right)\frac HR.}
+\tag{2}
 \]
 
-Thus the endpoint support geometry forces a fixed-factor gap above the generic PSD/rank threshold `H/R` of MC-386. The result is conditional only on the stated good-mode bound; it does not supply that analytic estimate.
+The constant `1/4096` is deliberately non-optimized. The result remains conditional on the stated good-mode estimate; it does not supply that analytic estimate and does not imply an RH-scale bound for `M(x)`.
 
 ## Derivation
 
-### 1. Near-maximal additive energy creates a dense small restricted sumset
+### 1. Affine dimension bounds every nonzero translate overlap
 
-For a nonempty finite set `A subset F_2^n`, write `r=|A|` and
-
-\[
-r_A(t)=|\{(a,b)\in A^2:a+b=t\}|.
-\]
-
-Its ordered additive energy is
+Let `A` be any finite subset of a vector space over `F_2`, with
 
 \[
-E(A)=\sum_t r_A(t)^2.
-\]
-
-Since `sum_t r_A(t)=r^2` and `r_A(t) <= r`, there is the exact deficiency identity
-
-\[
-r^3-E(A)
- =\sum_t r_A(t)(r-r_A(t))
- =\sum_{(a,b)\in A^2}\bigl(r-r_A(a+b)\bigr).
-\]
-
-Fix once and for all
-
-\[
-\epsilon_0=\frac1{100}<\frac1{20},
+|A|=r,
 \qquad
-\eta=\frac{\epsilon_0}{2}=\frac1{200}.
+k=\dim\operatorname{aff}(A).
 \]
 
-Define
+For nonzero `t`, put
 
 \[
-M=\{(a,b)\in A^2:r_A(a+b)\ge (1-\eta)r\}.
+m_t:=|A\cap(A+t)|.
 \]
 
-If
+Translation by `t` acts without fixed points on `A\cap(A+t)`, so those `m_t` points split into `m_t/2` disjoint pairs `{a,a+t}`. Choose one representative from each pair and keep the `r-m_t` points of `A` outside the overlap. The whole of `A` lies in the affine span of these
 
 \[
-E(A)\ge (1-\delta')r^3,
+\frac{m_t}{2}+(r-m_t)=r-\frac{m_t}{2}
 \]
 
-then every pair outside `M` contributes more than `eta r` to the deficiency identity, hence
+representatives together with the one direction `t`. Therefore
 
 \[
-|A^2\setminus M|\le \frac{\delta'}{\eta}r^2.
+k\le r-\frac{m_t}{2},
 \]
 
-Every value in the restricted sumset `A+_M A` has at least `(1-eta)r` representations, so
+and hence
 
 \[
-|A+_M A|\le \frac{r}{1-\eta}\le (1+\epsilon_0)r.
+\boxed{m_t\le 2(r-k)\qquad(t\ne0).}
+\tag{3}
 \]
 
-### 2. Shao stability plus high affine rank gives a fixed energy deficit
+This estimate is sharp in the affinely independent extreme: if `k=r-1`, every nonzero pair sum has at most the two ordered representations obtained by swapping the pair.
 
-Shao's Lemma 4.4 states, in the specialization needed here, that for each fixed `epsilon in (0,1/20)` there is a sufficiently small `delta_Shao(epsilon)>0` such that if `X,Y` both have size `N`, a relation `M subset X times Y` contains at least `(1-delta_Shao)N^2` pairs, and
+### 2. Translate overlap gives an explicit energy deficit
+
+In characteristic two the additive representation number is exactly
 
 \[
-|X+_M Y|\le (1+\epsilon)N,
+r_A(t)=|A\cap(A+t)|=m_t,
 \]
 
-then `X` is close to a coset `x+L`: at most `epsilon N` elements of `X` lie outside it and at most `3 epsilon N` elements of the coset lie outside `X`.
-
-Apply this with `X=Y=A`, `epsilon=epsilon_0`, and choose
+with `m_0=r`, and
 
 \[
-\delta'\le \eta\,\delta_{\mathrm{Shao}}(\epsilon_0).
+\sum_t m_t=r^2.
 \]
 
-The previous step gives the hypotheses of the lemma. Therefore there is an affine coset `C=x+L` with
+Thus
 
 \[
-|A\setminus C|\le \epsilon_0 r,
-\qquad
-|C\setminus A|\le 3\epsilon_0 r.
+E(A)=\sum_t m_t^2
+\le r^2+2(r-k)\sum_{t\ne0}m_t
+=r^2+2(r-k)(r^2-r).
+\tag{4}
 \]
 
-In particular
+This is a general explicit affine-rank/energy inequality for finite subsets of binary vector spaces.
+
+For the endpoint support, MC-388 gives
 
 \[
-|L|=|C|\le (1+3\epsilon_0)r.
+k=\dim\operatorname{aff}(S)
+=d-\dim(W\cap\langle\mathbf1\rangle)
+\ge d-1
+\ge\frac{3R}{4}-1.
 \]
 
-Adding one affine dimension for each point outside `C` gives
+Since `r<=R`,
 
 \[
-\dim \operatorname{aff}(A)
- \le \dim L+|A\setminus C|
- \le \log_2((1+3\epsilon_0)r)+\epsilon_0 r.
+r-k\le\frac r4+1.
 \]
 
-For sufficiently large `r`, the right-hand side is strictly less than `r/2`. Taking the contrapositive yields fixed constants `delta_0>0` and `r_0` such that
+Substituting into `(4)` gives
 
 \[
-\dim\operatorname{aff}(A)\ge \frac r2,
-\quad r\ge r_0
-\quad\Longrightarrow\quad
-E(A)\le (1-\delta_0)r^3.
+E(S)
+\le r^2+\left(\frac r2+2\right)(r^2-r)
+=\frac12r^3+\frac52r^2-2r.
+\tag{5}
 \]
 
-The existence of `delta_0` is unconditional; its numerical size is not extracted from the cited formulation of Shao's lemma.
+The affine-rank lower bound also implies `r>=3R/4`, so `r` tends to infinity with `R`. In particular, for `r>=10`, the right side of `(5)` is at most `3r^3/4`, proving `(1)`.
 
-### 3. Endpoint support lies in the high-affine-rank regime
+The important point is that the fixed energy gap is now elementary and explicit. No additive inverse theorem or ineffective stability modulus is required.
 
-MC-388 proved the exact endpoint identity
-
-\[
-\dim\operatorname{aff}(S)
- =d-\dim(W\cap\langle\mathbf 1\rangle)
- \ge d-1.
-\]
-
-Under `d>=3R/4`, and since `r<=R`, for sufficiently large `R`,
-
-\[
-\dim\operatorname{aff}(S)
- \ge \frac{3R}{4}-1
- \ge \frac R2
- \ge \frac r2.
-\]
-
-Hence the fixed energy gap applies:
-
-\[
-E(S)\le (1-\delta_0)r^3.
-\]
-
-This is the quantitative strengthening that MC-388 left open: the endpoint support is not merely unable to converge to a low-dimensional annihilator coset; it stays a fixed amount below maximal additive energy.
-
-### 4. Near-Welch weighting inherits a fixed fourth-moment contraction
+### 3. Near-Welch endpoint weights inherit an explicit fourth-moment contraction
 
 Let
 
@@ -191,194 +155,149 @@ Let
 Q:=\sum_{K\in W}|g(K)|^2=H\|p\|_2^2.
 \]
 
+Set
+
+\[
+\alpha:=\frac1{1024}.
+\]
+
 Suppose first that
 
 \[
-Q\le (1+\alpha)\frac HR.
+Q\le(1+\alpha)\frac HR.
+\tag{6}
 \]
 
 Because `p` is supported on `r` points,
 
 \[
-\|p\|_2^2\ge \frac1r,
+\|p\|_2^2\ge\frac1r,
 \]
 
-so
+so `(6)` implies `r>=R/(1+alpha)`. If `u_S` denotes the uniform probability measure on `S`, then
 
 \[
-r\ge \frac{R}{1+\alpha}.
+\|p-u_S\|_2^2
+=\|p\|_2^2-\frac1r
+\le\frac\alpha R.
+\tag{7}
 \]
 
-Let `u_S` be the uniform probability measure on `S`. Since
-
-\[
-\|p-u_S\|_2^2=\|p\|_2^2-\frac1r,
-\]
-
-we obtain
-
-\[
-\|p-u_S\|_2^2\le \frac{\alpha}{R}.
-\]
-
-The additive-energy gap gives
+From `(1)`,
 
 \[
 \|u_S*u_S\|_2^2
- =\frac{E(S)}{r^4}
- \le \frac{1-\delta_0}{r}.
+=\frac{E(S)}{r^4}
+\le\frac{3}{4r}.
+\tag{8}
 \]
 
-Young's inequality and the fact that both measures have `l^1` norm one imply
+Young's inequality gives
 
 \[
 \|p*p-u_S*u_S\|_2
- \le 2\|p-u_S\|_2.
+\le2\|p-u_S\|_2.
 \]
 
-Since `||p||_2 >= r^{-1/2}` and `r<=R`,
+Using `(7)`, `(8)`, `r<=R`, and `\|p\|_2>=r^{-1/2}`,
 
 \[
 \frac{\|p*p\|_2}{\|p\|_2}
- \le \sqrt{1-\delta_0}+2\sqrt{\alpha}.
+\le \frac{\sqrt3}{2}+2\sqrt\alpha
+=\frac{\sqrt3}{2}+\frac1{16}.
+\tag{9}
 \]
 
-Choose a fixed `alpha_0>0` small enough that
+The square of the last quantity is strictly below `7/8`. Finite-group Plancherel therefore yields the explicit contraction
 
 \[
-q:=\sqrt{1-\delta_0}+2\sqrt{\alpha_0}<1,
-\]
-
-for example
-
-\[
-\alpha_0=
-\left(\frac{1-\sqrt{1-\delta_0}}{4}\right)^2.
-\]
-
-Set
-
-\[
-\eta_0:=1-q^2>0.
-\]
-
-Whenever `Q <= (1+alpha_0)H/R`, finite-group Plancherel gives
-
-\[
+\boxed{
 \sum_{K\in W}|g(K)|^4
- =H\|p*p\|_2^2
- \le (1-\eta_0)H\|p\|_2^2
- =(1-\eta_0)Q.
+=H\|p*p\|_2^2
+\le\frac78 Q
+}
+\tag{10}
 \]
 
-So the endpoint affine-rank gap becomes a fixed contraction of the fourth Fourier moment relative to the second.
+whenever `(6)` holds and `R` is sufficiently large for `(1)`.
 
-### 5. Physical concentration forces more than `H/R` exceptional modes
+### 4. Fewer than `(1+1/4096)H/R` exceptions force the near-Welch regime and contradict `(10)`
 
 Let `E=|B|`. On the good modes,
 
 \[
 \sum_{K\notin B\cup\{0\}}|g(K)|^2
- \le H\varepsilon_R^2
- =o(H/R).
+\le H\varepsilon_R^2
+=o(H/R).
+\tag{11}
 \]
 
-Welch gives `Q>=H/R`. Therefore the `L^2` mass on `B union {0}` is
+Also `Q>=H/r>=H/R`. Suppose toward contradiction that
 
 \[
-U:=\sum_{K\in B\cup\{0\}}|g(K)|^2
- \ge (1-o(1))Q.
+E<\left(1+\frac1{4096}\right)\frac HR.
+\tag{12}
 \]
 
-Suppose, toward contradiction, that for a fixed small `c>0`,
+Since `|g(K)|<=1`, `(11)` and `(12)` give
 
 \[
-E<(1+c)\frac HR.
+Q\le1+E+o(H/R)
+\le\left(1+\frac1{4096}+o(1)\right)\frac HR.
 \]
 
-Because `|g(K)|<=1`,
+Because `d>=3R/4`, one has `H/R -> infinity`; hence, for sufficiently large `R`, this is strictly below `(1+1/1024)H/R`. Thus `(10)` applies.
+
+Let
 
 \[
-Q\le 1+E+H\varepsilon_R^2
- \le (1+c+o(1))\frac HR.
+U:=\sum_{K\in B\cup\{0\}}|g(K)|^2.
 \]
 
-The high-rank assumption implies `H/R -> infinity`, so the isolated `1` is negligible. Choose
-
-\[
-c\le \frac{\alpha_0}{2}.
-\]
-
-For large `R`, this puts `Q` inside the near-Welch regime of the previous step. Cauchy-Schwarz on the `E+1` modes in `B union {0}` then gives
+By `(11)`, `U=(1-o(1))Q`. Cauchy--Schwarz and `(10)` give
 
 \[
 U^2
- \le (E+1)\sum_{K\in B\cup\{0\}}|g(K)|^4
- \le (E+1)(1-\eta_0)Q.
+\le(E+1)\sum_{K\in B\cup\{0\}}|g(K)|^4
+\le(E+1)\frac78Q.
 \]
 
-Since `U >= (1-o(1))Q`,
+Therefore
 
 \[
 E+1
- \ge (1-o(1))\frac{Q}{1-\eta_0}
- \ge (1-o(1))\frac{H}{R(1-\eta_0)}.
+\ge\left(\frac87-o(1)\right)Q
+\ge\left(\frac87-o(1)\right)\frac HR.
+\tag{13}
 \]
 
-Thus
-
-\[
-E\ge
-\left(\frac{1}{1-\eta_0}-o(1)\right)\frac HR.
-\]
-
-Because
-
-\[
-\frac{1}{1-\eta_0}>1,
-\]
-
-one may choose any fixed positive
-
-\[
-c_{\mathrm{endpoint}}
- <\min\left\{\frac{\alpha_0}{2},
- \frac12\left(\frac1{1-\eta_0}-1\right)\right\},
-\]
-
-which proves the claimed fixed-factor improvement for all sufficiently large `R`.
+For large `R`, `(13)` contradicts `(12)` because `1=o(H/R)`. This proves `(2)`.
 
 ## Relevance
 
-MC-386 showed that the generic PSD/rank argument alone cannot force more than approximately `H/R` exceptional modes because annihilator kernels attain that scale. MC-387 showed that abstract near-sharpness must look approximately like an annihilator. MC-388 then proved that the endpoint support has too much affine rank to approach such a low-dimensional coset, but stopped short of converting that qualitative incompatibility into a stronger exceptional count.
+MC-386 showed that generic PSD/rank information alone cannot force more than approximately `H/R` exceptional modes because annihilator kernels attain that scale. MC-387 identified the near-extremal subgroup geometry, and MC-388 showed that the actual endpoint support has too much affine rank to approach it. The previous form of MC-389 converted that qualitative obstruction into an existential fixed gap by invoking robust restricted-sumset stability.
 
-This finding completes that conversion. The endpoint support has a fixed additive-energy deficit; near-Welch endpoint weights therefore have a fixed fourth-moment contraction; and a Fourier kernel whose mass is concentrated on only `H/R` modes would violate that contraction. The result is the first fixed multiplicative separation from the generic Welch exception budget in this branch.
-
-The mechanism is still only a structural obstruction. It says that any argument producing `o(R^{-1/2})` control on all but a small family of modes must pay a strictly larger exceptional family than generic rank theory predicts. It does not yet provide the analytic estimate that creates such a good/bad split, nor does it imply an RH-scale bound for `M(x)`.
+The direct overlap argument `(3)` is stronger for the actual high-rank endpoint regime. It turns affine rank immediately into an explicit energy deficit of at least one quarter, removes the inverse-theorem modulus, and gives a concrete endpoint exception gap. The structural frontier is therefore no longer effectiveness of the additive-energy constant. The remaining bottleneck is analytic: obtain a good-mode estimate at the `o(R^{-1/2})` frame scale with an exceptional family smaller than the explicit endpoint budget.
 
 ## Prior-art audit
 
-The external theorem used is Xuancheng Shao, *Additive energies of subsets of discrete cubes*, Proceedings of the Royal Society of Edinburgh Section A: Mathematics **156** (2026), 944–965, DOI `10.1017/prm.2024.126`, especially Lemma 4.4. That lemma gives robust coset stability from an almost-complete relation with small restricted sumset.
+Additive energy and the representation identity `E(A)=sum_t r_A(t)^2` are classical. Xuancheng Shao, *Additive energies of subsets of discrete cubes*, Proceedings of the Royal Society of Edinburgh Section A: Mathematics **156** (2026), 944–965, DOI `10.1017/prm.2024.126`, studies near-maximal additive energy and provides the robust restricted-sumset stability previously used here. The related paper by de Dios Pont, Greenfeld, Ivanisvili and Madrid, *Additive energies on discrete cubes*, Discrete Analysis (2023), studies sharp energy inequalities for subsets of discrete cubes.
 
-The general principle that near-maximal additive energy forces approximate coset structure is therefore prior art and is not claimed here as new. The line-specific derived contribution is the chain
-
-`endpoint affine rank -> fixed support-energy deficit -> near-Welch fourth-moment contraction -> fixed excess over H/R exceptional modes`.
-
-MC-387 previously used the same literature only qualitatively, obtaining `o(1)` closeness to a coset under near-extremality. The fixed-`epsilon` contrapositive here is what supplies a fixed gap rather than another asymptotic stability statement.
+A targeted literature search by the mathematical ingredients `affine dimension`, `translate overlap`, `binary vector space`, and `additive energy` did not identify a source for the exact inequality `(4)`. That absence is not evidence of novelty. Inequality `(3)` is an elementary affine-span count, and `(4)` is its immediate energy consequence, so no novelty claim is made for either. The line-specific result is their application to the exact projected endpoint simplex and the resulting explicit frame threshold.
 
 ## Boundaries and failure modes
 
-- The final constant is existential and ineffective from the cited theorem statement. No numerical improvement factor is claimed.
-- The result requires the high-rank endpoint branch `d>=3R/4`; it is not a statement about arbitrary Bochner supports or arbitrary low-dimensional `W`.
-- The good-mode hypothesis `epsilon_R=o(R^{-1/2})` is essential to make the total good-mode `L^2` mass negligible relative to the Welch scale `H/R`.
-- The result does not prove such a good-mode estimate for the Möbius problem. It only strengthens the necessary exceptional-mode budget conditional on one.
-- The argument uses the exact endpoint support structure from MC-388. Replacing it by a generic rank-`R` PSD kernel destroys the affine-rank input and restores the annihilator sharpness of MC-386.
-- The use of Shao's stability theorem is genuinely quantitative only at the level of fixed positive constants; extracting an explicit numerical `c_endpoint` would require an explicit modulus through the inverse theorem.
-- No statement here upgrades averaged, logarithmic, or short-interval Möbius cancellation to uniform global cancellation.
+- The binary-field hypothesis is load-bearing for the pairing argument: for `t!=0`, translation by `t` is a fixed-point-free involution. The displayed constants are not asserted over general groups.
+- The high-rank endpoint branch `d>=3R/4` is load-bearing for the `3/4` energy factor. Equation `(4)` itself holds for every finite set in a binary vector space.
+- The exact endpoint support identity of MC-388 is load-bearing. A generic rank-`R` PSD Cayley kernel need not have high-affine-rank Fourier support and still admits the annihilator sharpness example of MC-386.
+- The constant `1/4096` is not optimized. It is chosen only to sit comfortably inside the explicit near-Welch admission window used in `(6)`--`(10)`.
+- The good-mode hypothesis `epsilon_R=o(R^{-1/2})` remains essential. This finding supplies no character-sum theorem capable of proving it.
+- The result does not upgrade averaged, logarithmic, short-interval, or exceptional-set Möbius cancellation to uniform global cancellation.
+- No RH or direct `M(x)` estimate follows.
 
 ## Consequences
 
-1. The `H/R` barrier from MC-386 is not the true endpoint barrier in the high-rank branch: endpoint geometry forces a fixed multiplicative excess.
-2. Future analytic work in this branch should compare any attainable bad-mode count with `(1+c_endpoint)H/R`, not merely `H/R`.
-3. The natural next quantitative question is whether the fixed endpoint energy deficit can be proved directly, with an effective constant, from the explicit projected-simplex support rather than through a qualitative inverse theorem.
-4. A direct effective deficit would make the fourth-moment contraction and exceptional-count improvement explicit and could reveal whether the true endpoint gap is much larger than the existential constant established here.
+1. The endpoint branch now has an **effective structural exception threshold**: `(1+1/4096)H/R`, rather than an unspecified `(1+c_endpoint)H/R`.
+2. The additive inverse-theorem modulus is no longer a frontier issue for this step; the elementary translate-overlap bound already gives a much larger explicit energy deficit.
+3. Any analytic good/bad decomposition intended to close the high-rank source-frame branch must now beat the explicit threshold `(2)` while reaching `o(R^{-1/2})` on the good modes.
+4. Improving the structural constant further is secondary unless it changes that analytic comparison; the immediate live question is the good-mode character-sum estimate at frame scale.
