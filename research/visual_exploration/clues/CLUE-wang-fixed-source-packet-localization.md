@@ -22,6 +22,7 @@ based_on:
   - research/visual_exploration/findings/VIS-312-wang-dense-ratio-spectrum-no-nearest-spacing.md
   - research/visual_exploration/findings/VIS-313-wang-dyadic-ratio-shell-linear-horizon.md
   - research/visual_exploration/findings/VIS-314-selberg-prime-pair-sieve-wang-shell-log-square.md
+  - research/visual_exploration/findings/VIS-315-prime-ratio-local-density-natural-window-criterion.md
 ---
 
 # Does Wang packet localization preserve source information without manufacturing strip gain?
@@ -41,20 +42,38 @@ so at `H asymp x ell`, `ell=log log(3x)`, the mean square is `o(H^2)` for
 
 `V >> x L^3/ell^2`.
 
-`VIS-314` now removes one of those logarithms without changing the representation. The `log^3 M` shell energy in `VIS-313` came from bounding the two squared von-Mangoldt weights independently. Applying the classical dimension-two Selberg upper-bound sieve to the prime-prime pairs before summing the reciprocal gap kernel gives
+`VIS-314` removes one of those logarithms without changing the representation. Retaining two-prime sparsity and applying the classical dimension-two Selberg upper-bound sieve gives
 
-`E_M << M v_x(M)^4 log^2(4M)`.
+`E_M << M v_x(M)^4 log^2(4M)`,
 
-Proper prime powers are lower order. Replaying the same cutoff-free Montgomery--Vaughan/Minkowski recombination yields
+and therefore
 
 `V^(-1) integral |R_(x,H)(T)|^2 dT`
 ` << x^2 + x L^2 + x^3 L^2/V`,
 
-and therefore the improved sufficient finite-window scale
+with sufficient scale
 
 `V >> x L^2/ell^2`.
 
-The remaining distance to the natural local window `V asymp H asymp x ell` is still logarithmic, of relative size roughly `L^2/ell^3`, but the first residual logarithm was only a two-point coefficient-mass artifact.
+`VIS-315` now identifies the exact missing many-frequency input. For the ordinary-prime frequencies in a dyadic shell, let `kappa_M(V)` be the maximum number of prime-ratio frequencies in a Fourier cell of width `1/V`. A coloring plus the classical separated-frequency large sieve gives
+
+`V^(-1) integral |F_M^pp(T)|^2 dT << kappa_M(V) E_M^pp`.
+
+A nonempty frequency cluster is, up to absolute constants, exactly a thin determinant strip
+
+`|qv-ur| << M^2/V`
+
+around another represented prime ratio `u/v`. If uniformly
+
+`kappa_M(V) << 1 + A M^2/(V log^2 M)`,
+
+then the full cutoff-free remainder obeys
+
+`V^(-1) integral |R_(x,H)(T)|^2 dT`
+` << x^2 + x L^2 + A x^3/V`
+`    + x^(1/2)L^4 + x^(5/2)L^4/V`.
+
+Thus at the natural local window `V asymp H asymp x ell`, an occupancy loss `A=o(ell^3)` is sufficient for `o(H^2)` mean-square cancellation. The unresolved logarithmic gap is therefore no longer merely “many-frequency organization”: it is a concrete local-density/energy problem for prime ratios, or else a genuine exceptional represented direction that violates the average-density scale.
 
 ## Research question
 
@@ -66,45 +85,46 @@ For the **fixed-power real-axis source**, is there a property of
 
 strictly weaker than the RH-equivalent half-plane pole exclusion of `VIS-293` that improves the generic Korobov--Vinogradov envelope and survives Wang's complete error budget?
 
-For the **moving upper pointwise layer**, can the cutoff-free finite-window estimate now be sharpened from
-
-`V >> x log^2 x/(log log x)^2`
-
-to the natural local scale
+For the **moving upper pointwise layer**, can one prove a uniform local-density or sparse-energy estimate strong enough to control prime-ratio clusters at resolution `1/V` near
 
 `V asymp H asymp x log log x`,
 
-or can one exhibit an explicit exceptional-height mechanism showing that some residual logarithmic loss is genuinely necessary?
+or can one exhibit represented slopes whose thin determinant strips contain enough weighted prime-ratio mass and deterministic phase coherence to force an `H`-scale exceptional contribution?
 
-After `VIS-314`, another crude two-point prime-pair count is no longer the informative frontier. The live issue is the organization of many ratio frequencies over a finite window: shellwise `M^2/V` separation cost, cancellation across arithmetic-height shells, a stronger aggregate-density/large-sieve treatment, or genuine deterministic coherence at exceptional starting heights.
+The useful target is now quantitative. An essentially average-density estimate
+
+`kappa_M(V) << 1 + M^2/(V log^2 M)`
+
+would suffice, and even a worst-cell excess factor `A=o((log log x)^3)` is still compatible with the natural mean-square window.
 
 ## Why it may matter
 
-`VIS-301`--`VIS-314` have successively removed localization leakage, generic coefficient majorants, ambient spacing, support-sensitive absolute spacing, increasingly faithful random-phase controls, generic deterministic Bohr-time alignment, hard support truncation, global minimum-gap compression, dense-spectrum nearest-neighbor failure, and now one logarithm caused by discarding prime-pair sparsity.
+`VIS-301`--`VIS-315` have successively removed localization leakage, generic coefficient majorants, ambient spacing, support-sensitive absolute spacing, increasingly faithful random-phase controls, generic deterministic Bohr-time alignment, hard support truncation, global minimum-gap compression, dense-spectrum nearest-neighbor failure, one logarithm caused by discarding prime-pair sparsity, and finally the ambiguity about what the remaining large-sieve improvement must measure.
 
-The remaining finite-window gap is therefore narrower and more structural. A successful aggregate-frequency estimate could bring the deterministic mean-square window close to `H` without assuming new zeta information. Failure would be equally useful if it isolates a concrete packet of near-resonant ratio frequencies whose Wang mass and deterministic phase coherence survive all current controls.
+The present frontier separates two materially different possibilities. If prime-ratio frequencies have near-average local occupancy at Fourier resolution, the remaining `log^2 x` finite-window tariff is another proof-packaging loss. If they do not, the violating determinant strips identify explicit arithmetic directions where an exceptional-height mechanism could live and can be tested against the actual Wang coefficients rather than inferred from a worst gap.
 
 ## Decisive test
 
 For the fixed-power branch, state a concrete real-axis estimate or secondary expansion for `S(x)-log x`, derive it from arithmetic information strictly weaker than the pole exclusion of `VIS-293`, and propagate it through all source, gamma, localization, and cross-term errors. Kill the route if the gain is only a generic PNT substitution, smoothing attenuation, an RH-equivalent continuation assumption, or a term swallowed by another Wang remainder.
 
-For the moving upper branch, start from the cutoff-free decomposition of `VIS-313` with the sharpened shell energy of `VIS-314`. A next useful result must do one of two things:
+For the moving upper branch, start from the prime-ratio local-density reduction of `VIS-315`. A next useful result must do one of three things:
 
-- reduce the remaining `L^2` finite-window tariff enough that the sufficient scale approaches `V asymp x ell`, using an aggregate-frequency count, a sharper shellwise large-sieve/kernel estimate, cancellation between shells, or another argument that preserves the infinite support; or
-- identify explicit starting heights and a quantitatively sufficient family of ratio interactions whose deterministic phases produce an `H`-scale remainder near `H asymp x ell`, surviving the `VIS-309` small Bohr energy and the `VIS-314` improved finite-window mean-square control.
+- prove `kappa_M(V) << 1 + A M^2/(V log^2 M)` uniformly over the dyadic shells and represented directions with `A=o((log log x)^3)` at `V asymp x log log x`;
+- replace the maximum-occupancy condition by a weighted/additive-energy large-sieve estimate that yields the same shell bound `M v_x(M)^4 log^2 M + o((log log x)^3) M^3 v_x(M)^4/V`; or
+- identify a concrete family of represented slopes `u/v` for which the determinant strips `|qv-ur|<<M^2/V` violate that scale, then show that the corresponding Wang coefficients and deterministic phases produce a quantitatively sufficient exceptional contribution rather than a large but harmless frequency cluster.
 
-A result that merely reapplies a hard support cutoff, a global/nearest frequency gap, or the same dimension-two prime-pair upper sieve is no longer informative unless it exposes a genuinely new obstruction.
+A result that merely reapplies a hard support cutoff, a global/nearest frequency gap, or the same two-point fixed-shift upper sieve is no longer informative unless it changes this local-density/energy boundary.
 
 ## Evidence boundary
 
-`VIS-304` remains only an upper bound for the actual pointwise remainder. `VIS-305`--`VIS-309` are controls or iterated long-time statements, not pointwise cancellation at every height. `VIS-310`--`VIS-313` are finite-window proof-method reductions.
+`VIS-304` remains only an upper bound for the actual pointwise remainder. `VIS-305`--`VIS-309` are controls or iterated long-time statements, not pointwise cancellation at every height. `VIS-310`--`VIS-314` are finite-window proof-method reductions and improvements.
 
-`VIS-314` improves the cutoff-free mean-square horizon by a classical upper-sieve input. It does not prove a prime-pair asymptotic, does not prove pointwise cancellation, does not justify a joint moving `x(T)` limit, and does not show that its remaining logarithmic factor is intrinsic.
+`VIS-315` proves an exact local-density reduction and a conditional sufficient criterion. It does **not** prove the required uniform prime-ratio occupancy estimate. Nearby sparse-large-sieve and Beatty-prime literature does not, by the statements audited there, automatically provide the moving-slope two-prime strip bound required here.
 
-No stronger RH criterion, new prime-gap theorem, or pointwise Wang asymptotic at `H asymp x log log x` is established.
+No stronger RH criterion, new prime-distribution theorem, pointwise Wang asymptotic, or moving-`x(T)` theorem is established.
 
 ## Research disposition
 
-Outcome so far: **the moving upper-source branch has progressed from a polynomial finite-window barrier to a cutoff-free near-linear bound whose first residual logarithm is now removed by prime-pair sparsity**. The unresolved frontier is the remaining aggregate ratio-frequency cost versus genuine exceptional-height coherence.
+Outcome so far: **the moving upper-source branch has progressed from a polynomial finite-window barrier to a concrete prime-ratio local-density criterion at the natural window**. The remaining mean-square problem is to control the worst Fourier-resolution cluster within an `o((log log x)^3)` factor of average density, obtain an equivalent weighted-energy bound, or turn a violating cluster into a genuine exceptional-height obstruction.
 
-The clue remains accepted and live. The next contribution should attack that many-frequency finite-window structure or exhibit a concrete obstruction; another two-point shell-mass refinement is unlikely to change the current decision boundary.
+The clue remains accepted and live. Another minimum-gap estimate or another two-point shell-mass refinement is superseded by `VIS-315`; the next contribution should attack the thin determinant-strip/local-energy frontier or exhibit a concrete coherent exception.
