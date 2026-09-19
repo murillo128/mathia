@@ -57,10 +57,19 @@ At the pinned source commit used in WI-302, Liu first proves the stronger operat
 
 \[
 T_{\rm tail}\succeq C\,(I-B_{\rm band}),
+\qquad C=\frac{123}{1280}.
 \tag{3}
 \]
 
-with an explicit positive rational constant `C`. The source then fixes `delta=2^-120` and writes
+The source fixes
+
+\[
+\delta=2^{-49158},
+\qquad
+\tau=2^{-49162},
+\]
+
+and writes
 
 \[
 S:=I-B_{\rm band}-\delta I\succeq0,
@@ -94,7 +103,7 @@ S\succeq
 \tag{6}
 \]
 
-The manuscript verifies the strict rational inequalities
+The manuscript and its exact scalar checker verify the strict rational inequalities
 
 \[
 81(e_0-\delta)<C,
@@ -105,7 +114,7 @@ C\delta>\tau,
 \tag{7}
 \]
 
-and therefore obtains
+and therefore obtain
 
 \[
 T_{\rm tail}
@@ -170,15 +179,15 @@ This is a decisive negative for the rank-minimality route, but a positive redire
 
 The operator inequality (1) is classical. It is a direct Bessel/projection argument and sits naturally in the theory of shorted positive operators and generalized Schur complements; see W. N. Anderson Jr. and G. E. Trapp, **Shorted Operators II**, *SIAM Journal on Applied Mathematics* 28(1) (1975), 60--71, DOI `10.1137/0128007`. No originality is claimed for that lemma.
 
-The source-side formulas (3)--(8), including the constants `81`, `27`, `delta=2^-120`, the vectors `h_0,h_1`, and the inequalities in (7), are taken directly from Vincent Liu's frozen submitted source at commit `b6cd2183c1e79c6c27a34267812a7b2d73ed1b59`. The source uses these terms to build its finite certificate; it does not assert that rank two is necessary or optimal.
+The source-side formulas (3)--(8), including the constants `C=123/1280`, `81`, `27`, `delta=2^-49158`, `tau=2^-49162`, the vectors `h_0,h_1`, and the inequalities in (7), are taken directly from Vincent Liu's frozen submitted source and exact scalar checker at commit `b6cd2183c1e79c6c27a34267812a7b2d73ed1b59`. The source uses these terms to build its finite certificate; it does not assert that rank two is necessary or optimal.
 
 A targeted audit of the current `weil_inertia` findings and active clue found no earlier durable result making the distinction proved here. WI-302 records the architecture and its evidence boundary but leaves rank minimality open. The present Mathia contribution is therefore the **diagnosis** obtained by combining the source-exact tail inequality, the classical finite-rank minorant lemma, and the source's own compact-repair obstruction: finite-rank extraction is optional, whereas noncompact tail retention is the structural distinction relevant to the barrier. No priority claim is made beyond that line-local deduction.
 
 ### Primary sources
 
-- Vincent Liu, **Certified Weil Positivity Beyond the Unit Window: Source-Exact Block-Schur and Tail-Compensation Bounds for the Riemann Zeta Function**, frozen submitted source in `luciferyu666/certified-weil-positivity`, commit `b6cd2183c1e79c6c27a34267812a7b2d73ed1b59`, especially the tail-complement lower bound, rank-two extraction, and Obstruction Theorem.
+- Vincent Liu, **Certified Weil Positivity Beyond the Unit Window: Source-Exact Block-Schur and Tail-Compensation Bounds for the Riemann Zeta Function**, frozen submitted source in `luciferyu666/certified-weil-positivity`, commit `b6cd2183c1e79c6c27a34267812a7b2d73ed1b59`, especially the tail-complement lower bound, rank-two extraction, exact scalar checker, and Obstruction Theorem.
 - W. N. Anderson Jr. and G. E. Trapp, **Shorted Operators II**, *SIAM Journal on Applied Mathematics* 28(1) (1975), 60--71, DOI `10.1137/0128007`.
 
 ### Validation boundary
 
-The derivation of (1)--(2) is exact operator algebra. Equations (3)--(8) were checked against Liu's pinned manuscript source, not inferred from an informal summary. No floating-point spectral computation enters the structural conclusion. The author-supplied `N=448` certificate was **not** independently executed in this finding, so WI-302's numerical theorem claim remains unreplayed and cannot be promoted to established Mathia evidence.
+The derivation of (1)--(2) is exact operator algebra. Equations (3)--(8) were rechecked against Liu's pinned manuscript source and the self-contained exact-rational `reproduction/scalar.py`, not inferred from an informal summary. The scalar checker itself has no numerical data inputs and verifies the relevant constants with Python `Fraction`/integer arithmetic, but the full author-supplied `N=448` source-to-certificate reconstruction was **not** independently executed here. WI-302's numerical theorem claim therefore remains unreplayed and cannot be promoted to established Mathia evidence.
