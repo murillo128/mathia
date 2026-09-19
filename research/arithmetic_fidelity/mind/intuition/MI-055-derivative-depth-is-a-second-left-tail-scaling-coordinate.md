@@ -1,6 +1,6 @@
 # MI-055 — Derivative depth and source amplitude form a joint left-tail critical coordinate
 
-**Evidence level:** exact synthesis from [AF-416](../../findings/AF-416-full-left-tail-diagonal-has-positive-cauchy-limit.md) through [AF-423](../../findings/AF-423-adjacent-residual-packets-have-universal-inverse-n-drift.md).
+**Evidence level:** exact synthesis from [AF-416](../../findings/AF-416-full-left-tail-diagonal-has-positive-cauchy-limit.md) through [AF-424](../../findings/AF-424-complete-square-packet-cancellation-has-explicit-derivative-offset-detuning.md).
 
 AF-416 closes the full fixed-shift determinant on the reciprocal-order left-tail diagonal. AF-417 shows that this closure is not uniform in an independently moving derivative offset: fixed partition sectors see `s_n/n->sigma` by multiplying the Cauchy parameter by `e^sigma`. AF-418 then shows that the complete growing partition family detects a finer critical coordinate at `sigma=2`, namely
 
@@ -10,38 +10,48 @@ AF-419 proves that the opposite side is genuinely controlled: if `limsup s_n/n<2
 
 `b_n(a)=a n^(s_n/n-2)=a e^(tau_n)`, with `a=c^2/(4pi^2)`.
 
-If `limsup b_n(A)<1`, absolute resummation survives uniformly on `0<=a<=A`. If `tau_n->tau`, the controlled domain is every compact `a<e^(-tau)`. On the exact sequence `s_n=2n`, this is every compact `a<1`, equivalently `c<2pi`.
-
-AF-421 resolves the signed finite-`tau` organization beyond that absolute boundary. When `b_n->b in (0,infinity)`, the exponentially leading families are full-column packets around rectangles `(r^n)` with nth-root rates
+If `limsup b_n(A)<1`, absolute resummation survives uniformly on `0<=a<=A`. AF-421 then resolves the signed finite-window organization beyond that absolute boundary. When `b_n->b in (0,infinity)`, the exponentially leading families are full-column packets around rectangles `(r^n)` with nth-root rates
 
 `L_r(b)=b^r/(r!)^2`.
 
-Away from the square values `b=m^2`, a single packet dominates: `r=floor(sqrt(b))`. The packet carries the same residual Schur--Cauchy factor `exp(-a e^2)`, so every nonsquare superthreshold value `b>1` gives genuine signed divergence rather than cancellation back to the fixed-partition limit. The apparent continuum boundary therefore resolves into a **discrete saddle hierarchy** with transitions at `1,4,9,...`.
+Away from the square values `b=m^2`, a single packet dominates. At the square values, adjacent packets `r=m-1,m` tie and the problem acquires a hierarchy of finer retained coordinates rather than one scalar critical parameter.
 
-AF-422 resolves the first subleading coordinate on those collision fibers. Write `s_n=2n+d_n`, `d_n=o(n)`, and suppose `b_n->m^2`. Then the ratio of the two adjacent rectangular packet amplitudes has the form
+AF-422 gives the first such coordinate. Write `s_n=2n+d_n`, `alpha_n=d_n/n`, and suppose `b_n->m^2`. The adjacent rectangular ratio has the form
 
 `F_(n,m)=K_m exp(Xi_(n,m))(1+o(1))`,
 
 where
 
-`Xi_(n,m)=log n+n log(b_n/m^2)-d_n log m`
+`Xi_(n,m)=log n+n log(b_n/m^2)-d_n log m`.
 
-and `K_m>0` is explicit. Thus equality of exponential rates is still too coarse. Even `n` reinforces the adjacent packets, while for odd `n` leading rectangular cancellation is possible only when `Xi_(n,m)->-log K_m`.
+Thus equality of exponential rates is too coarse. Even `n` reinforces the two packets, while for odd `n` leading rectangular cancellation is possible only when `Xi_(n,m)->-log K_m`.
 
-AF-423 shows that this rectangle-level tuning is still one scale too coarse. If `G_(n,r)` is the complete residual Schur--Cauchy factor of the `r`-column packet, then on every fixed square fiber
+AF-423 shows that rectangle balance is still one scale too coarse. If `G_(n,r)` is the complete residual Schur--Cauchy factor of the `r`-column packet, then
 
-`log(G_(n,m)/G_(n,m-1)) = 2 a e^2/n + o(1/n)`.
+`log(G_(n,m)/G_(n,m-1))=2ae^2/n+o(1/n)`.
 
-Hence the complete adjacent-packet ratio `Q_(n,m)=F_(n,m)G_(n,m)/G_(n,m-1)` satisfies
+AF-424 resolves the missing detuning at the same scale instead of replacing `alpha_n` by its limit too early. It proves
 
-`log Q_(n,m)=log F_(n,m)+2 a e^2/n+o(1/n)`.
+`log F_(n,m)=Xi_(n,m)+log K_m+m alpha_n+[-m^2+m-1-(m^2/2)alpha_n]/n+O(n^-2)`
 
-For odd `n`, even `F_(n,m)->1` does not cancel the complete packets. First packet-level cancellation additionally requires the inverse-`n` tuning
+and
 
-`n log F_(n,m) -> -2 a e^2`.
+`log(G_(n,m)/G_(n,m-1))=a e^(2+alpha_n)(2+alpha_n)/n+O(n^-2)`.
 
-For `m>=2`, failure of this condition leaves only a polynomial suppression of a tied saddle whose common nth-root rate is greater than one, so the residual still diverges exponentially. The coefficient `2ae^2` is not an arbitrary correction: AF-423 derives a one-partition drift depending only on residual degree and sums it exactly under the limiting signed Schur packet.
+Consequently, if
 
-The reusable lesson is now a **nested asymptotic-coordinate hierarchy**. The square condition `b_n=m^2+o(1)` retains too little information; rectangle balance `F_(n,m)=1+o(1)` retains more but still loses the first complete-packet asymmetry; cancellation at the next level requires `n log F_(n,m)+2ae^2->0`. Each time a collision is tuned away, the load-bearing object changes and exposes a finer coordinate. Uniformity on an open stratum therefore does not control its collision fibers, and equality of leading saddles does not control the summed packets around them.
+`Omega_(n,m)=Xi_(n,m)+log K_m+m alpha_n`,
 
-**Boundary.** This synthesis concerns the exceptional-`1` Cauchy--Binet sector in finite critical windows. AF-423 gives a necessary first packet-level cancellation condition, not boundedness or recovery of the fixed-partition exponential. After `n log F_(n,m)->-2ae^2`, the decisive quantities are the next asymptotic term in the complete packet ratio, the correspondingly finer expansion of `F_(n,m)`, and the size of lower saddle packets. The genuinely supercritical regime `s_n/n>2` with `b_n->infinity`, other determinant sectors, and zero selection remain separate.
+then the complete adjacent-packet ratio satisfies
+
+`log Q_(n,m)=Omega_(n,m)+[-m^2+m-1-(m^2/2)alpha_n+a e^(2+alpha_n)(2+alpha_n)]/n+O(n^-2)`.
+
+The first complete cancellation condition on the odd square fiber is therefore not merely `n log F_(n,m)->-2ae^2`, but the equivalent explicit source-coordinate condition
+
+`n(Xi_(n,m)+log K_m)+m d_n -> m^2-m+1-2ae^2`.
+
+The term `m alpha_n` is load-bearing. On a generic square path with `a!=m^2`, the square constraint forces `alpha_n log n -> log(m^2/a)`, so this detuning is naturally order `1/log n`, larger than the inverse-`n` packet correction. AF-424 also shows that the first partition-shape correction cancels only after the complete packet is summed by conjugation symmetry. Packetwise asymptotics can therefore contain structure that disappears at the exact signed-family level.
+
+The reusable lesson is a **nested asymptotic-coordinate hierarchy**. Equality at one scale does not control a collision fiber at the next: `b_n=m^2+o(1)` loses rectangle balance; `F_(n,m)=1+o(1)` loses the first complete-packet drift; and even inverse-`n` cancellation must retain derivative-offset detuning before taking limits. Every successful tuning changes the load-bearing object and may expose another coordinate, symmetry cancellation or lower saddle.
+
+**Boundary.** AF-424 supplies a necessary first complete-packet cancellation law, not boundedness or recovery of the fixed-partition exponential. For `m>=2`, a polynomially small mismatch still multiplies an exponentially growing tied saddle. After the displayed tuning, the decisive objects are the next complete-packet expansion and any lower-saddle, tall-column or beyond-all-orders residual. The genuinely supercritical regime `s_n/n>2`, other determinant sectors and zero selection remain separate.
