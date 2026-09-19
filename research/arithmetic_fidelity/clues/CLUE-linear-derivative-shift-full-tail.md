@@ -17,6 +17,7 @@ based_on:
   - research/arithmetic_fidelity/findings/AF-426-exact-square-amplitude-has-irreducible-integer-source-packet-gap.md
   - research/arithmetic_fidelity/findings/AF-427-displaced-square-packet-cancellation-is-metrically-exceptional.md
   - research/arithmetic_fidelity/findings/AF-428-second-order-exceptional-amplitudes-are-residual-but-null.md
+  - research/arithmetic_fidelity/findings/AF-429-supercritical-full-column-saddle-has-shrinking-integer-window.md
 ---
 
 # Linear derivative-shift full-tail resummation
@@ -74,9 +75,23 @@ AF-427 treats displaced amplitudes metrically. With `A=log(m^2/a)`, the source-c
 
 AF-428 supplies the complementary category statement: the very same exceptional set is a dense `G_delta`, hence residual. Exact second-order roots become dense because at each large odd scale the affine source grid can be centered within `O(log n)` of the target, while `partial_A H=-n+O(n^-1)` moves the resulting root only `O(log n/n)` in amplitude. The surviving set is therefore simultaneously metrically thin and topologically generic.
 
+AF-429 resolves the first scale question in the independent supercritical branch. If `q_n=s_n/n->sigma>2`, the full-height rectangular family has moving width
+
+\[
+R_n=a^{1/q_n}n^{1-2/q_n},
+\]
+
+with normalized profile `sigma t(1-log t)` at `r~tR_n`. The exact adjacent ratio has a real crossing `tau_n~R_n`, but integer adjacent rectangles are comparable only when
+
+\[
+\operatorname{dist}(\tau_n,\mathbb Z)=O(R_n/n).
+\]
+
+For odd `n` this is a necessary lattice-resolution gate before neighboring full-height rectangles can cancel. AF-429 does not yet control the nonrectangular packet around the moving saddle.
+
 ## Research question
 
-Which **concrete distinguished amplitudes** supplied by the source construction belong to, or are excluded from, this residual-null exceptional set? What exact arithmetic mechanism decides membership in
+Which **concrete distinguished amplitudes** supplied by the source construction belong to, or are excluded from, the residual-null critical exceptional set? What exact arithmetic mechanism decides membership in
 
 \[
 H_n(d_n)=o(n^{-2}),
@@ -86,13 +101,13 @@ H_n(d_n)=o(n^{-2}),
 
 along infinitely many odd source-compatible depths?
 
-Separately, for genuinely supercritical ratios `s_n/n -> sigma>2`, what moving full-column saddle replaces the finite-`b` classification, and can that complete signed regime be controlled without importing fixed-window asymptotics?
+Separately, in the genuinely supercritical regime, does the **complete nonrectangular packet** around `r~R_n` inherit AF-429's moving rectangular saddle and shrinking integer window? If it does, what exact arithmetic or source constraint decides whether `dist(tau_n,Z)` can reach the required `R_n/n` scale, and can the signed packet cancel without a false continuous tuning parameter?
 
 ## Why it may matter
 
 For `m>=2`, the tied square packets carry an exponential rate `Lambda_m>1`, so any uncancelled polynomial relative mismatch dominates every exponentially smaller neighboring saddle. AF-426 excludes the exact square-amplitude fiber pointwise, AF-427 says almost every displaced amplitude is nonexceptional, and AF-428 shows exceptional amplitudes nevertheless occur in every neighborhood.
 
-Consequently, neither metric scarcity nor perturbative/local stability can close the remaining branch for a source-forced constant. The deciding input must distinguish that exact amplitude from arbitrarily close exceptional ones. This is now a genuinely pointwise arithmetic gate, not another generic asymptotic-spacing problem.
+Consequently, neither metric scarcity nor perturbative/local stability can close the remaining critical branch for a source-forced constant. The deciding input must distinguish that exact amplitude from arbitrarily close exceptional ones. In the supercritical branch, AF-429 now shows an analogous but distinct discretization problem: the moving continuous saddle exists, yet adjacent rectangular cancellation demands integer resolution in a window that shrinks like `R_n/n`.
 
 ## Decisive test
 
@@ -118,14 +133,16 @@ Prove a pointwise membership theorem for this exact `A`: either a lower bound ex
 
 If a specific distinguished amplitude is proved exceptional, only then derive the first beyond-all-orders complete-packet residual—including the tall-column sector suppressed in AF-423--AF-425—and compare it with the first subleading full-column saddle. For `m=1`, keep the same source-realizability test but do not import the `Lambda_m>1` divergence conclusion.
 
-For the independent `sigma>2` branch, derive the growing saddle scale directly rather than extrapolating the finite-window packet hierarchy.
+For the independent `sigma>2` branch, start from AF-429's exact adjacent-ratio center `tau_n` rather than re-deriving the rectangle scale. Derive the complete packet uniformly for widths `r=tau_n+O(1)` and determine whether nonrectangular residuals preserve, shift, or wash out the `R_n/n` lattice window. A decisive positive result must then identify an admissible source mechanism that hits the resulting window; a decisive negative result may show that the complete packet has an unavoidable imbalance larger than that window.
 
 ## Evidence boundary
 
-AF-428 proves that AF-427's exceptional set is residual and dense; it does **not** identify a single distinguished source amplitude in that set. Residuality gives no membership statement for a fixed arithmetic constant, no Hausdorff-dimension lower bound, and no control of the undisplayed determinant remainder.
+AF-428 proves that AF-427's critical exceptional set is residual and dense; it does **not** identify a single distinguished source amplitude in that set. Residuality gives no membership statement for a fixed arithmetic constant, no Hausdorff-dimension lower bound, and no control of the undisplayed determinant remainder.
 
-AF-426 still excludes the exact amplitude `a=m^2` despite exceptional amplitudes occurring arbitrarily close to it. The genuinely supercritical moving-saddle regime, omitted-`1` sector, one-/zero-singular-block contributions for growing derivative depth, and beyond-all-orders packet residuals at a surviving distinguished amplitude remain uncontrolled.
+AF-429 identifies the supercritical full-height rectangular saddle and its necessary adjacent integer-comparability window. It does **not** prove that the complete partition packet is dominated by rectangles, that the full signed tail cancels or diverges, or that any rational-prime discriminator survives. The omitted-`1` sector, one-/zero-singular-block contributions for growing derivative depth, nonrectangular/tall-column saddle geometry, and beyond-all-orders critical packet residuals remain uncontrolled.
 
 ## Research disposition
 
-Accepted. AF-419--AF-425 reduce the finite critical window to integer source realizability; AF-426 closes the exact square-amplitude fiber; AF-427 makes displaced second-order cancellation metrically exceptional; AF-428 proves the same exceptional set is residual and dense. The live finite-window gate is therefore **arithmetic membership of exact distinguished amplitudes**, not whether the exceptional set exists or is generic in either measure or category. Beyond-all-orders packet analysis should wait until one such source-forced amplitude is proved to survive. The genuinely supercritical `sigma>2` moving-saddle problem remains independent and unresolved.
+Accepted. AF-419--AF-425 reduce the finite critical window to integer source realizability; AF-426 closes the exact square-amplitude fiber; AF-427 makes displaced second-order cancellation metrically exceptional; AF-428 proves the same exceptional set is residual and dense. The live critical gate is therefore **arithmetic membership of exact distinguished amplitudes**, not whether the exceptional set exists or is generic in either measure or category. Beyond-all-orders critical packet analysis should wait until one such source-forced amplitude is proved to survive.
+
+For `sigma>2`, AF-429 now resolves the previously open rectangle-level saddle scale: `r~R_n`, with adjacent comparability only inside an `R_n/n` integer window. The supercritical clue remains open because the complete nonrectangular packet and source-forced membership in that shrinking window are not yet controlled.
