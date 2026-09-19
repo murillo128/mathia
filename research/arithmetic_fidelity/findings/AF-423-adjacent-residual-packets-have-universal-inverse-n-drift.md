@@ -259,13 +259,61 @@ W_{n,r-1}(\mu)
 
 where `H_mu` is the hook product.
 
-The first-order exchange in `(14)` follows from the same residual-packet domination used in AF-421, with one extra factor of `n`. At `b_n->m^2`, both packets `r=m-1,m` lie strictly inside their residual tall-column thresholds: for `r=m-1`,
+It remains to justify multiplying `(14)` by `n` and passing the limit through the full packet. Use the same column-height split as AF-421. Fix `eta` with `1/2<eta<1` and first restrict to residual partitions whose columns all have height at most `eta n`. Every nonzero `delta_i` then occurs at
 
 \[
-m^2<(m+1)^2=(r+2)^2,
+i\ge(1-\eta)n,
 \]
 
-and the gap is even larger for `r=m`. Thus the tall-column part remains exponentially small after multiplication by `n`. On the complementary sector, the AF-421 positive Schur--Cauchy majorant gives factorial degree tails. Choose a degree cutoff tending to infinity slowly enough that the majorized tail is `o(n^{-1})`; on the retained degrees `(11)--(12)` are uniform. This yields
+so `x=i+r` is uniformly comparable with `n`. The rational factor in `(8)` has the exact form
+
+\[
+\frac{(x+\delta)(x-1)}{x(x-1+\delta)}
+=
+1-\frac{\delta}{x(x-1+\delta)}.
+\tag{16}
+\]
+
+Since `s_n/n` is bounded, `(16)` gives on this sector
+
+\[
+|\log q_{n,r,\mu}|
+\le
+C_\eta\frac{|\mu|}{n}
+\tag{17}
+\]
+
+for fixed `r`; the odd-distance cross-ratio contributes the same or a smaller bound and the zeta cross-ratio is exponentially smaller because all active arguments are `\gg n`. Therefore
+
+\[
+n|q_{n,r,\mu}-1|
+\le
+C_\eta |\mu|\exp\!\left(C_\eta\frac{|\mu|}{n}\right).
+\tag{18}
+\]
+
+AF-421's non-tall-column estimate gives, for another constant `A_eta` independent of `n`,
+
+\[
+|W_{n,r-1}(\mu)|
+\le
+\left(\frac{A_\eta a}{n^2}\right)^{|\mu|}
+s_\mu(1^n)^2.
+\tag{19}
+\]
+
+Combining `(18)`--`(19)` merely replaces `A_eta a` in the positive Schur--Cauchy majorant by `A_eta a\,e^{C_\eta/n}` and inserts one degree factor. The corresponding positive degree moment is uniformly finite. Thus the non-tall part of `nW(q-1)` is dominated by a summable degree-weighted Schur--Cauchy family, and `(12)` may be summed by dominated convergence.
+
+For the complementary tall-column sector, AF-421's fixed-`r` estimate is exponentially decaying whenever
+
+\[
+b<(r+2)^2.
+\tag{20}
+\]
+
+At the square fiber `b=m^2`, `(20)` is strict for both adjacent packets: for `r=m-1`, `m^2<(m+1)^2`, and for `r=m` the gap is larger. The same estimate remains exponentially small after multiplication by `n`, so the tall sector contributes zero to the first-order limit.
+
+Consequently
 
 \[
 \lim_{n\to\infty}
@@ -274,14 +322,14 @@ and the gap is even larger for `r=m`. Thus the tall-column part remains exponent
 -2
 \sum_{\mu}
 |\mu|\frac{(-ae^2)^{|\mu|}}{H_\mu^2}.
-\tag{16}
+\tag{21}
 \]
 
 The hook-length identity
 
 \[
 \sum_{\mu\vdash d}\frac1{H_\mu^2}=\frac1{d!}
-\tag{17}
+\tag{22}
 \]
 
 implies, with `x=-ae^2`,
@@ -290,10 +338,10 @@ implies, with `x=-ae^2`,
 \sum_\mu \frac{x^{|\mu|}}{H_\mu^2}=e^x,
 \qquad
 \sum_\mu |\mu|\frac{x^{|\mu|}}{H_\mu^2}=xe^x.
-\tag{18}
+\tag{23}
 \]
 
-Therefore `(16)` becomes
+Therefore `(21)` becomes
 
 \[
 \boxed{
@@ -301,17 +349,17 @@ Therefore `(16)` becomes
  \longrightarrow
  2ae^2 e^{-ae^2}.
 }
-\tag{19}
+\tag{24}
 \]
 
 AF-421 already proves
 
 \[
 G_{n,m-1},G_{n,m}\longrightarrow e^{-ae^2}>0.
-\tag{20}
+\tag{25}
 \]
 
-Dividing `(19)` by `(20)` proves `(1)`, and `(2)` follows because the ratio tends to one.
+Dividing `(24)` by `(25)` proves `(1)`, and `(2)` follows because the ratio tends to one.
 
 ## 3. The tuned square fiber acquires another retained coordinate
 
@@ -327,7 +375,7 @@ Its tuning `Xi_{n,m}->-log K_m` is exactly the condition `F_{n,m}->1` at leading
 
 \[
 n\log F_{n,m}+2ae^2.
-\tag{21}
+\tag{26}
 \]
 
 Thus the hierarchy on the square collision fiber is now
