@@ -21,6 +21,7 @@ based_on:
   - research/visual_exploration/findings/VIS-311-wang-weighted-gap-cubic-horizon.md
   - research/visual_exploration/findings/VIS-312-wang-dense-ratio-spectrum-no-nearest-spacing.md
   - research/visual_exploration/findings/VIS-313-wang-dyadic-ratio-shell-linear-horizon.md
+  - research/visual_exploration/findings/VIS-314-selberg-prime-pair-sieve-wang-shell-log-square.md
 ---
 
 # Does Wang packet localization preserve source information without manufacturing strip gain?
@@ -29,28 +30,31 @@ based_on:
 
 The fixed-power branch is already reduced to a classical arithmetic envelope: `VIS-283`--`VIS-293` isolate the source channel and show that half-plane pole exclusion for the squared-von-Mangoldt transform is RH-equivalent rather than a new continuation mechanism. `VIS-294`--`VIS-298` remove the apparent moving lower-source barrier by exact gamma recentering.
 
-For the moving upper pointwise branch, `VIS-301`--`VIS-304` progressively move the first generic error wall to the weighted Hilbert bound
+For the moving upper pointwise branch, `VIS-301`--`VIS-304` move the first generic error wall to the weighted Hilbert bound `R_(x,H)(T)=O(x log log(3x))`. `VIS-305`--`VIS-309` then show that density, exact prime-power support, same-base harmonic phase structure, and even the true deterministic long-time quadratic mean do not by themselves explain an `H`-scale obstruction at `H asymp x log log x`.
 
-`R_(x,H)(T)=O(x log log(3x))`,
-
-so the current pointwise asymptotic holds under `x log log(3x)=o(H)`. `VIS-305`--`VIS-308` show that this absolute spacing scale is not by itself a signed obstruction: matched density/parity controls, exact prime-power support with independent phases, and completely multiplicative same-base harmonic controls all cancel well below `H` at `H asymp x log log x`.
-
-`VIS-309` shows that the **true deterministic** vertical phases have the same long-time quadratic mean as the completely multiplicative Haar control. Thus generic deterministic alignment across primes is not the missing mechanism.
-
-`VIS-310`--`VIS-312` then expose and remove two proof artifacts. A hard support cutoff plus one global gap yields only a quintic finite-window horizon; coefficient-weighted local spacing lowers that to cubic; but the full ratio-frequency support is dense, so the nearest-neighbor functional itself has no cutoff-free continuation.
-
-`VIS-313` supplies the first cutoff-free aggregate-density replacement. Split the grouped spectrum at the fixed ratio boundary `|lambda|=log 2`. The far band is pointwise `O(x)` because `sum_q a_q<<sqrt(x)`, hence already `o(H)` at `H asymp x log log x`. The strict near band contains no same-base harmonics; cross-base ratios are uniquely reduced. Decomposing them by dyadic arithmetic height `M` gives shell separation `delta_M>>M^(-2)`, while the `VIS-307` Wang shell energy is summable after the classical Montgomery--Vaughan mean-value bound. The resulting cutoff-free estimate is
+`VIS-310`--`VIS-312` expose hard-cutoff/global-gap and full-spectrum nearest-neighbor artifacts. `VIS-313` replaces them by a cutoff-free dyadic ratio-shell decomposition and obtains, with `L=log(3x)`,
 
 `V^(-1) integral |R_(x,H)(T)|^2 dT`
 ` << x^2 + x L^3 + x^3 L^3/V`,
 
-so at `H asymp x ell` it is `o(H^2)` whenever
+so at `H asymp x ell`, `ell=log log(3x)`, the mean square is `o(H^2)` for
 
-`V >> x L^3/ell^2`,
+`V >> x L^3/ell^2`.
 
-with `L=log(3x)` and `ell=log log(3x)`.
+`VIS-314` now removes one of those logarithms without changing the representation. The `log^3 M` shell energy in `VIS-313` came from bounding the two squared von-Mangoldt weights independently. Applying the classical dimension-two Selberg upper-bound sieve to the prime-prime pairs before summing the reciprocal gap kernel gives
 
-The polynomial finite-window gap has therefore disappeared. The unresolved transfer problem is now logarithmic rather than a dense-spectrum or support-cutoff obstruction.
+`E_M << M v_x(M)^4 log^2(4M)`.
+
+Proper prime powers are lower order. Replaying the same cutoff-free Montgomery--Vaughan/Minkowski recombination yields
+
+`V^(-1) integral |R_(x,H)(T)|^2 dT`
+` << x^2 + x L^2 + x^3 L^2/V`,
+
+and therefore the improved sufficient finite-window scale
+
+`V >> x L^2/ell^2`.
+
+The remaining distance to the natural local window `V asymp H asymp x ell` is still logarithmic, of relative size roughly `L^2/ell^3`, but the first residual logarithm was only a two-point coefficient-mass artifact.
 
 ## Research question
 
@@ -62,47 +66,45 @@ For the **fixed-power real-axis source**, is there a property of
 
 strictly weaker than the RH-equivalent half-plane pole exclusion of `VIS-293` that improves the generic Korobov--Vinogradov envelope and survives Wang's complete error budget?
 
-For the **moving upper pointwise layer**, can the cutoff-free shell estimate of `VIS-313` be sharpened from the sufficient horizon
+For the **moving upper pointwise layer**, can the cutoff-free finite-window estimate now be sharpened from
 
-`V >> x log^3 x/(log log x)^2`
+`V >> x log^2 x/(log log x)^2`
 
 to the natural local scale
 
 `V asymp H asymp x log log x`,
 
-or can one exhibit a concrete exceptional-height mechanism showing that a logarithmic loss is genuinely necessary?
+or can one exhibit an explicit exceptional-height mechanism showing that some residual logarithmic loss is genuinely necessary?
 
-The live issue is no longer generic coefficient sensitivity, a global minimum gap, a hard support tail, or dense-spectrum nearest-neighbor failure. It is the remaining logarithmic cost in the scale-local shell energy/mean-value recombination versus genuine deterministic exceptional-height coherence.
+After `VIS-314`, another crude two-point prime-pair count is no longer the informative frontier. The live issue is the organization of many ratio frequencies over a finite window: shellwise `M^2/V` separation cost, cancellation across arithmetic-height shells, a stronger aggregate-density/large-sieve treatment, or genuine deterministic coherence at exceptional starting heights.
 
 ## Why it may matter
 
-The sequence `VIS-301`--`VIS-313` has removed a long chain of nonstructural barriers: localization leakage, generic coefficient majorants, ambient spacing, support-sensitive absolute spacing, density-matched signed controls, exact support, same-base phase coherence, product-Haar versus the actual vertical flow, global-gap compression, hard-tail optimization, and finally pointwise isolation of the full dense spectrum.
+`VIS-301`--`VIS-314` have successively removed localization leakage, generic coefficient majorants, ambient spacing, support-sensitive absolute spacing, increasingly faithful random-phase controls, generic deterministic Bohr-time alignment, hard support truncation, global minimum-gap compression, dense-spectrum nearest-neighbor failure, and now one logarithm caused by discarding prime-pair sparsity.
 
-`VIS-313` is qualitatively different from the preceding hard-cutoff estimates: it is already cutoff-free and loses no polynomial power of `x` relative to the natural scale. A further improvement can therefore focus on logarithmic shell energy, cancellation between shells, or the actual finite-window phase kernel rather than repairing another artificial polynomial horizon.
-
-Failure is equally informative if it isolates an explicit exceptional family carrying enough coefficient mass to force an `H`-scale remainder despite the small Bohr energy and the new shellwise average bound.
+The remaining finite-window gap is therefore narrower and more structural. A successful aggregate-frequency estimate could bring the deterministic mean-square window close to `H` without assuming new zeta information. Failure would be equally useful if it isolates a concrete packet of near-resonant ratio frequencies whose Wang mass and deterministic phase coherence survive all current controls.
 
 ## Decisive test
 
 For the fixed-power branch, state a concrete real-axis estimate or secondary expansion for `S(x)-log x`, derive it from arithmetic information strictly weaker than the pole exclusion of `VIS-293`, and propagate it through all source, gamma, localization, and cross-term errors. Kill the route if the gain is only a generic PNT substitution, smoothing attenuation, an RH-equivalent continuation assumption, or a term swallowed by another Wang remainder.
 
-For the moving upper branch, start from the cutoff-free decomposition of `VIS-313`. A next useful result must do one of two things:
+For the moving upper branch, start from the cutoff-free decomposition of `VIS-313` with the sharpened shell energy of `VIS-314`. A next useful result must do one of two things:
 
-- reduce the `log^3 x` shell-energy/large-sieve loss enough that the sufficient finite-window scale approaches `V asymp x log log x`, by a sharper shell moment, cancellation between adjacent height shells, a direct finite-window kernel estimate, or another aggregate-density argument that keeps the full support; or
-- identify explicit starting heights and a quantitatively sufficient family of ratio interactions whose deterministic phases produce an `H`-scale remainder near `H asymp x log log x`, surviving the taper, the `VIS-309` small Bohr energy, and the `VIS-313` shellwise mean-square control.
+- reduce the remaining `L^2` finite-window tariff enough that the sufficient scale approaches `V asymp x ell`, using an aggregate-frequency count, a sharper shellwise large-sieve/kernel estimate, cancellation between shells, or another argument that preserves the infinite support; or
+- identify explicit starting heights and a quantitatively sufficient family of ratio interactions whose deterministic phases produce an `H`-scale remainder near `H asymp x ell`, surviving the `VIS-309` small Bohr energy and the `VIS-314` improved finite-window mean-square control.
 
-A result that only reintroduces a hard support cutoff, a global or pointwise nearest-neighbor spacing, or another polynomial sufficient horizon is no longer informative unless it exposes a genuinely new obstruction not covered by `VIS-310`--`VIS-313`.
+A result that merely reapplies a hard support cutoff, a global/nearest frequency gap, or the same dimension-two prime-pair upper sieve is no longer informative unless it exposes a genuinely new obstruction.
 
 ## Evidence boundary
 
-`VIS-304` is an upper bound, not proof that `x log log x` is attained. `VIS-305`--`VIS-308` are increasingly faithful negative controls. `VIS-309` is exact for the long-time first and second moments of the deterministic remainder but remains an iterated fixed-`x,H` statement.
+`VIS-304` remains only an upper bound for the actual pointwise remainder. `VIS-305`--`VIS-309` are controls or iterated long-time statements, not pointwise cancellation at every height. `VIS-310`--`VIS-313` are finite-window proof-method reductions.
 
-`VIS-310` and `VIS-311` are hard-cutoff proof-method bounds; `VIS-312` is a proof-method obstruction to taking their nearest-neighbor representation cutoff-free. `VIS-313` removes that polynomial transfer barrier only in **mean square over the starting height**. It does not prove pointwise cancellation at every `T`, does not justify a joint moving-`x(T)` limit, and does not prove that its remaining logarithmic loss is intrinsic.
+`VIS-314` improves the cutoff-free mean-square horizon by a classical upper-sieve input. It does not prove a prime-pair asymptotic, does not prove pointwise cancellation, does not justify a joint moving `x(T)` limit, and does not show that its remaining logarithmic factor is intrinsic.
 
 No stronger RH criterion, new prime-gap theorem, or pointwise Wang asymptotic at `H asymp x log log x` is established.
 
 ## Research disposition
 
-Outcome so far: **the moving upper-source branch has crossed from polynomial finite-window transfer loss to a cutoff-free near-linear mean-square horizon**. The remaining problem is logarithmic: sharpen the shellwise aggregate-density estimate toward the natural window, or find a genuine exceptional-height coherence mechanism that explains why this cannot be done.
+Outcome so far: **the moving upper-source branch has progressed from a polynomial finite-window barrier to a cutoff-free near-linear bound whose first residual logarithm is now removed by prime-pair sparsity**. The unresolved frontier is the remaining aggregate ratio-frequency cost versus genuine exceptional-height coherence.
 
-The clue remains accepted and live. Another hard-cutoff or nearest-neighbor refinement is now superseded by `VIS-313`; the next contribution should address the logarithmic gap or a concrete exceptional-height obstruction.
+The clue remains accepted and live. The next contribution should attack that many-frequency finite-window structure or exhibit a concrete obstruction; another two-point shell-mass refinement is unlikely to change the current decision boundary.
