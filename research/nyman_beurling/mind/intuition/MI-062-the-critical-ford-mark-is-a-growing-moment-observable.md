@@ -1,15 +1,17 @@
-# MI-062 — The critical Ford mark is a growing-moment observable, not a fixed-moment statistic
+# MI-062 — The critical Ford mark is a growing-resolution observable whose classical form is a microlocal Landau–Gonek remainder
 
-**Evidence level:** exact positive reduction plus matched-control boundary from [NB-234](../../findings/NB-234-growing-depth-moment-hierarchy-reconstructs-critical-ford-mark.md), building on NB-230--NB-233.
+**Evidence level:** exact positive reduction plus matched-control and classical-explicit-formula boundary from [NB-234](../../findings/NB-234-growing-depth-moment-hierarchy-reconstructs-critical-ford-mark.md) and [NB-235](../../findings/NB-235-critical-ford-transition-reduces-to-microlocal-landau-gonek-remainder.md), building on NB-230--NB-233.
 
-At the carrier-width Ford transition, center depth as `d_rho=YD_rho-log J` and retain the exact profiled coefficient `b_rho=e^{iX(gamma-t)}F(Hv_rho)`. On every fixed layer `|d_rho|<=C`, the residue is `e^{-r} J^(-1) sum e^{-d_rho} b_rho`. Taylor expansion gives
+NB-234 shows that on every fixed critical layer the residue can be reconstructed from profiled depth--phase moments with an order `K(Q)` that grows slowly with source capacity, while every predetermined fixed `K` remains blind in a matched spectral control. The nonlinear exponential depth mark is therefore not a fixed-moment statistic.
 
-`Z_C = e^{-r} sum_(m<=K) (-1)^m M_m(C)/m! + O_C(C^(K+1)/(K+1)!)`,
+NB-235 identifies what that growing hierarchy is approximating in classical zeta language. With `x=e^X` and `s_X=sigma_X+it`, the exact carrier satisfies `e^(iXv_rho)=x^(rho-s_X)`, and the critical residue is, up to `o(1)`,
 
-where `M_m(C)=J^(-1) sum d_rho^m b_rho`. Thus a hierarchy with `K(Q)->infinity` and uniform `max_(m<=K)|M_m|=o(1)` already controls the exact nonlinear Ford mark. For inverse-logarithmic approximation of the mark, the approximation side needs only very slowly growing order, roughly `log log J / log log log J`.
+`x^(-s_X) sum_{|X(1-beta)-log J|<=C} m(rho) x^rho F(H(gamma-t))`.
 
-The necessity of growth is structural for the currently admitted source information. NB-234 embeds finite-difference packets in the same Bellotti-compatible carrier geometry: for every predetermined fixed `K`, all profiled moments through order `K` tend to zero while the exponentially marked residue stays order one. Adding another finite collection of polynomial depth statistics therefore cannot close the transition.
+This is a microscopic Landau zero sum with an additional horizontal-depth cutoff. The shell profile has zero total integral, so the ordinary Landau--Gonek prime-power diagonal disappears up to a negligible endpoint tail. What survives is a microlocal remainder coefficient, not a missing main term.
 
-The reusable lesson is that **a nonlinear source mark may be reconstructible from simple statistics only when their resolution grows with the source capacity**. Fixed-order moment control and growing-order reconstruction are qualitatively different information channels. Here the approximation problem is cheap; the source theorem must pay the uniformity needed to control an expanding hierarchy on the exact short window.
+The nearest classical global theorem does not yet control it. Stieltjes smoothing of the cumulative Landau--Gonek formula pays the total variation of `F(H(.-t))`, which is independent of `H`; the generic cumulative remainder therefore gives only an `O(Q)` normalized guarantee at the Ford scale. Narrowing the window does not automatically buy the `o(1)` needed by the destination.
 
-**Boundary.** NB-234 is not a theorem that zeta supplies those growing moments. Its positive half is a reduction, and its negative half is a matched spectral control. The profile factor, local window and bounded transition layer are essential; dropping them returns to the projection losses already exposed by NB-231--NB-233. No Nyman--Beurling distance bound or RH consequence follows without a separate destination bridge.
+The reusable lesson is that **growing-resolution source information and microlocal explicit-formula cancellation are two representations of the same missing object here**. The moment hierarchy is a sufficient surrogate, but the sharper theorem target is direct control of the horizontally marked local remainder or an equivalent zeta-specific identity that couples depth to ordinate phase before absolute-value estimates erase cancellation.
+
+**Boundary.** NB-234 does not prove that zeta supplies the growing moments, and NB-235 does not prove the microlocal remainder is large or small. Its `O(Q)` statement is only the guarantee inherited from global cumulative control after black-box smoothing, and the ordinary Landau--Gonek formula does not include the horizontal cutoff. No Nyman--Beurling distance bound or RH consequence follows without a separate source theorem and destination bridge.

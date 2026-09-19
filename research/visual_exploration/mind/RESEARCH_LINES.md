@@ -1,27 +1,19 @@
 # Visual-exploration research lines
 
-This file holds the current mathematical questions suggested by the durable visual-exploration intuitions. It is not a roadmap, task queue, status page, or history.
+This file records current mathematical questions for the visual-exploration line. It is a mutable synthesis, not a task queue or history.
 
-## Aggregate the near-maximally fragmented Wang regime; polynomial run lengths are already cheap enough
+## Renormalize maximally fragmented Wang branches before declaring cross-fragment aggregation unavoidable
 
-**Linked intuitions:** `MI-040-wang-pointwise-upper-ceiling-is-a-localization-coherence-budget` and `MI-041-wang-natural-window-is-a-taper-weighted-prime-ratio-occupancy-problem`.
+**Linked intuition:** `MI-041-wang-natural-window-is-a-taper-weighted-prime-ratio-occupancy-problem`.
 
-VIS-299--VIS-319 reduce the natural Wang mean-square window to a faithful two-prime occupancy problem in unimodular coordinates. VIS-320--VIS-322 then compress the long-thin domain to at most three frozen mechanical branches and decimate each branch by the center gap `k=|v-u|` into fixed-gap diagonal runs, at most `min(k,L)+1` per branch.
+VIS-317--VIS-323 identify the faithful unimodular Wang coordinates, reduce each frozen branch to center-gap fixed-gap runs and show that aggregate singular-series cost is neutral at the first diagonal decomposition. VIS-324 then closes every polynomially long first-level run by the classical two-linear-form Selberg upper-bound sieve: at the natural scale, `k<=M^(1-delta)` already gives the required `L/log^2 M` occupancy scale.
 
-VIS-323 removes a feared arithmetic loss in the non-maximally-fragmented regime. The exact Bézout geometry makes determinant residue and prime-pair gap the same coordinate modulo `k`, keeps all run gaps in an interval of width `<k+1`, and gives aggregate singular-series mass `sum_s ell_s S(g_s) << L+k`. Hence for `k<=L` fragmentation does not create an extra singular-series tax.
+VIS-325 changes the interpretation of the fully fragmented range `k>L`. With `k=|u-v|`, the same branch is, up to only `O(1)` determinant indices, the rational mechanical path of lower denominator `k` and slope `d/k`, where `|dm-ck|=1`. Its exact period monodromy is the diagonal vector `(sigma,sigma)`. Thus the apparent singleton fragmentation is a failure of the **first diagonal period representation**, not a proof that the observed path has no deeper repeated structure.
 
-VIS-324 now inserts the classical dimension-two Selberg upper-bound sieve into that exact run decomposition. For one frozen branch and `1<=k<=L`,
+The live question is now whether the continued-fraction/Christoffel hierarchy of `d/k` exposes a shorter primitive direction with enough repetition for the two-prime sieve, or whether the complementary nonrepetitive regime admits a direct discrepancy/energy estimate once the Wang taper is included. Cross-fragment aggregation remains a plausible destination, but it should be invoked after this exact lower-denominator renormalization rather than because `k>L` looks pointwise in the first coordinate system.
 
-`P_j << L/log^2(3+L/k) + k`.
+## Keep arithmetic dimension, center gap, representation denominator, run length, aggregation and taper together
 
-At the natural scale `L asymp M/log log M`, every fixed `delta>0` and every center gap `k<=M^(1-delta)` therefore already satisfy the required two-prime upper-bound scale `P_j <<_delta L/log^2 M`. Polynomially long runs are no longer part of the worst-cell obstruction.
+The first-level center-gap decomposition and the denominator-`k` mechanical representation describe the same branch at different resolutions. When `k<=L`, complete periods are visible and fixed-gap runs are the natural unit. When `k>L`, VIS-325 proves that the branch still carries an exact lower-denominator rational word up to bounded error, but it does not prove that continued-fraction iteration creates a long sieveable block.
 
-The live frontier is compressed to the **near-maximal center-gap regime** `k=M^(1-o(1))`, where the effective run length `L/k=M^(o(1))`, together with the fully fragmented range `k>L`. A continuation should use an averaging direction that survives when individual runs are too short: a multi-run sieve, coefficient-weighted energy estimate, destination-taper aggregation, or another joint statistic across many fragments. Re-proving branchwise prime-pair bounds on polynomially long runs is no longer load-bearing.
-
-## Keep arithmetic dimension, center gap, run length, aggregation and destination taper together
-
-The exact chart preserves both prime coordinates, gate motion is negligible at the destination scale, center-gap decimation exposes fixed-gap runs, VIS-323 neutralizes aggregate singular-series cost, and VIS-324 shows that classical branchwise sieve depth is sufficient throughout every fixed polynomial power-saving range.
-
-The remaining price is therefore not raw fragmentation, exceptional local factors, or ordinary fixed-gap sieve theory separately. It is whether **many subpolynomial or singleton fragments can be controlled collectively** at the logarithmic saving demanded by the Wang window. Any proposed estimate should state what is being averaged across fragments, how gap and offset vary, how the Wang taper weights that aggregation, and why the gain survives the transition through `k~L` into `k>L`.
-
-A formally stronger prime-pair theorem is irrelevant if it still needs each individual run to contain a polynomial number of samples. The useful theorem must change the unit of averaging.
+Future work must preserve the two-prime local factor and final destination taper while changing representation. A large partial quotient may create many repeats of a shorter Christoffel block; a bounded-type regime may instead favor an energy/discrepancy estimate. Either mechanism must ultimately be priced against the weighted Wang occupancy target. Mechanical renormalization is structural simplification, not arithmetic cancellation by itself.

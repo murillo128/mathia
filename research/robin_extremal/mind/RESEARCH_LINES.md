@@ -1,19 +1,23 @@
 # Robin-extremal research lines
 
-This file holds the current mathematical questions suggested by the durable Robin-extremal intuitions. It is not a roadmap, task queue, status page, or history.
+This file records current mathematical questions for the Robin-extremal line. It is a mutable synthesis, not a task queue or history.
 
-## Leave the ordinary single-center large-center branch and change geometry
+## Leave the ordinary single-center super-broad architecture; only the exponentially thin coupled limit remains inside it
 
-**Linked intuitions:** `MI-001-robin-failure-requires-self-tangent-half-mass-event-gaps` through `MI-060-complex-single-center-drift-cannot-escape-a-fixed-prediction-corridor`.
+**Linked intuition:** `MI-060-complex-single-center-drift-cannot-escape-a-fixed-prediction-corridor`.
 
-RE-204--RE-227 establish the continuum prediction problem and close the fixed-corridor single-center architecture. RE-228--RE-234 classify drifting large centers at finite load. The microscopic coordinate `kappa=N/(m(a-1))` has a unit local threshold, but crossing it only exposes a macroscopic prediction radius and a Wiener cost. Positive-real finite load already costs normalized rate above `6`, and complex finite rays cannot discount that cost because prediction sees the effective radial load while the coefficient norm pays the full load.
+RE-229--RE-234 identify the local phase threshold, finite-ray macroscopic prediction corridor and associated Wiener cost for complex single-center negative-binomial predictors. RE-235 extends the audit to super-broad center drift and shows that bounded normalized Wiener rate on a contracting arc forces exponential destination thinning whenever `|a| sin(alpha)>=1`, leaving an apparent inverse-center exception.
 
-RE-235 closes the super-broad continuation outside the inverse-center layer. With `tau=N/(m|a|)->infinity` and a fixed positive arc, the exact normalized Wiener rate diverges. More generally, under `|a| sin(alpha)>=1`, bounded normalized rate forces `sin(alpha)` to be exponentially small in `tau`, on the scale `tau^(-1+1/m) 2^(-tau)` up to bounded factors. Thus super-broad growth buys no cheap fixed-arc escape; it trades corridor width for an exponentially collapsing destination.
+RE-236 closes that exception. Full contraction on the symmetric arc implies the uniform DC margin
 
-The remaining one-center boundary is now the separate inverse-center layer `|a| sin(alpha)<1` and any regime not covered by the contraction hypotheses. Higher-value architectural routes remain multi-center/minimax, rational, or another predictor class that changes the global approximation geometry rather than tuning a dominated one-center family.
+`1-|1-1/a| > sin(alpha)/(sqrt(3)|a|)`
 
-## Keep local phase transition, destination width and Wiener cost distinct
+with no comparison between `alpha` and `1/|a|`. The RE-235 coefficient argument therefore applies to every contracting super-broad single-center family: if `tau=N/(m|a|)` grows while normalized Wiener rate remains bounded, the observed arc must satisfy an explicit bound of order `tau^(-1+1/m) 2^(-tau)` up to bounded factors.
 
-A parameter regime is useful only if it changes the destination-visible normal form **and** remains globally competitive. RE-232--RE-234 show that microscopic flattening and complex tilt do not lower the finite-load cost. RE-235 shows that sending the load to infinity does not help either unless the observed arc shrinks exponentially fast.
+The one-center frontier no longer splits into ordinary and inverse-center regimes. Continuing this architecture means confronting the genuinely coupled exponentially thin-arc limit itself. A route intended to improve the live separated constant has stronger reason to change global approximation geometry—multi-center/minimax, rational, another basis, or another source-derived architecture—rather than tune another center-scale relation.
 
-A future construction should therefore be judged by the whole chain: local normal form, full destination region, normalization, and Wiener cost. A route that wins only by making the destination exponentially thin has not produced a new fixed-arc extremal mechanism.
+## Keep local phase transition, destination width, contraction geometry and global Wiener cost distinct
+
+The single-center results are a price ledger, not a universal impossibility theorem. Microscopic flattening can occur, and full-arc contraction can hold, while the normalization/coefficient budget forces the destination to collapse. RE-236 shows that the former inverse-center branch was a proof artifact caused by discarding endpoint phase information, not a genuinely cheaper geometry.
+
+Future candidates should report all four currencies together: the local normal form, the effective predictive load, the macroscopic destination width and the normalized coefficient/Wiener cost. A parameter scaling is useful only if it improves the destination-visible approximation without repaying the gain through exponential thinning or larger global cost. The remaining exponentially thin single-center limit is still open at this level; multi-center and other architectures remain outside these theorems.
