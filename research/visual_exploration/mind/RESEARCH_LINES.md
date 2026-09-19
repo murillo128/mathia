@@ -6,38 +6,40 @@ This file holds the current mathematical questions suggested by the durable visu
 
 **Linked intuitions:** `MI-029-fixed-margin-pair-correlation-accuracy-must-outrun-packet-conditioning` through `MI-039-wang-lower-source-crossover-is-resolution-dependent`.
 
-VIS-282--VIS-293 separate the isolated coefficient profile, Wang's complete pair statistic, deterministic gamma structure and the RH-equivalent continuation boundary of the exact source transform. VIS-294--VIS-298 then close the apparent moving lower-source branch: after exact gamma recentering, every moving `x(T)->infinity` under a fixed upper exponent has
+VIS-282--VIS-298 separate the coefficient profile, Wang's complete pair statistic, deterministic gamma structure and the source transform. After exact gamma recentering, the apparent `sqrt(log T)` and related lower-source thresholds disappear: they were proof-packaging artifacts rather than arithmetic transitions.
 
-`F_I(x)=(H/(2pi))[log x+(L-log(2pi))^2/x^2]+o(H)`.
-
-The earlier `sqrt(log T)` and related lower-source thresholds were proof-packaging artifacts rather than arithmetic transitions.
-
-## Close the polynomial finite-window gap with dyadic aggregate spectrum control
+## Reduce the remaining logarithmic finite-window tariff, not a fictitious spacing wall
 
 **Linked intuition:** `MI-040-wang-pointwise-upper-ceiling-is-a-localization-coherence-budget`.
 
-VIS-299--VIS-304 progressively move the first generic upper error wall from localization leakage to the coefficient-specific prime-power spacing bound `x log log x=o(H)`. VIS-305--VIS-308 show that this absolute scale is not itself a signed arithmetic obstruction: density/parity controls, exact support with randomized phases, and completely multiplicative same-base harmonic controls all cancel well below `H` at the candidate boundary.
+VIS-299--VIS-312 move the generic upper wall from localization leakage to coefficient-specific spacing, then show that neither randomized phases, completely multiplicative same-base controls nor the true long-time prime-log orbit make the absolute candidate scale an intrinsic obstruction. Pointwise nearest-neighbour isolation itself has no cutoff-free limit because the full cross-base ratio spectrum is dense.
 
-VIS-309 then compares those controls to the actual common-time orbit. For fixed `x,H`, the deterministic phases `p^(-it)` have the same long-time quadratic mean as Haar completely multiplicative phases. The Bohr mean square is `O(x log^3(3x))`, so generic deterministic alignment across primes is not the missing mechanism.
-
-VIS-310 quantifies the crudest finite-window transfer. Hard truncating the infinite prime-power series and compressing every retained ratio frequency to one global minimum gap yields a quintic sufficient averaging horizon at the active boundary. VIS-311 keeps coefficient-weighted local spacing and lowers the horizon to cubic. VIS-312 then proves that the finite-cutoff nearest-neighbour representation itself has no infinite-spectrum limit because the supported cross-base ratio frequencies are dense.
-
-VIS-313 replaces individual isolation by a cutoff-free aggregate decomposition. Split at `|lambda|=log 2`. The far band is pointwise `O(x)`, already `o(H)` for `H~x log log x`. In the near band, same-base harmonics disappear; grouping by dyadic arithmetic height gives within-shell spacing `delta_M>>M^(-2)`, while the Wang taper makes the shell energies summable. Shellwise Montgomery--Vaughan plus Minkowski yields
+VIS-313 resolves that representation problem by grouping the strict near band by dyadic arithmetic height. The shell spacing is sufficient once combined with the Wang taper and summable shell energies, giving
 
 `V^(-1) integral |R_(x,H)(T)|^2 dT << x^2 + x log^3 x + x^3 log^3 x/V`.
 
-Therefore, at `H~x log log x`, deterministic finite-window mean square is `o(H^2)` once
+At `H~x log log x`, this yields a cutoff-free sufficient horizon `V >> x log^3 x/(log log x)^2`.
 
-`V >> x log^3 x/(log log x)^2`.
+VIS-314 shows that one of those logarithms was only a coarse one-point von-Mangoldt majorant. Retaining the two-point sparsity and applying the classical Selberg upper-bound sieve to prime pairs sharpens each shell from
 
-The polynomial finite-window gap is no longer the live obstruction. The remaining distance to the natural local scale `V~H~x log log x` is only logarithmic, roughly `log^3 x/(log log x)^3`. The next useful result should reduce this logarithmic tariff through sharper shell energy/large-sieve accounting, cancellation between shells, or a genuinely effective signed treatment of the far band; the opposite useful result would exhibit a sparse near-resonant packet carrying enough Wang mass to show that some logarithmic loss is real. Another hard support cutoff or unpartitioned nearest-neighbour estimate is no longer informative.
+`E_M << M v_x(M)^4 log^3 M`
 
-The accepted clue `CLUE-wang-fixed-source-packet-localization` has therefore produced a cutoff-free aggregate-density mechanism; any further use of it should target the residual logarithmic scale or the missing prescribed-height/joint-limit quantifier rather than repeat finite-cutoff spacing.
+to
 
-## Recombine exact deterministic structure and decompose every newly exposed proof wall before interpreting it
+`E_M << M v_x(M)^4 log^2 M`.
 
-The current ledger separates packet variation, source exponent, localization leakage, coefficient majorants, support-sensitive spacing, random versus completely multiplicative phases, the actual prime-log time orbit, Bohr/Haar equivalence, global versus local ratio spacing, finite-cutoff versus dense-spectrum geometry, dyadic aggregate density, hard versus energy-sensitive tail treatment, finite-window length, moving-frequency limits and the analytic domain of the source transform.
+The cutoff-free recombination therefore improves to
 
-VIS-294--VIS-313 give a repeated control pattern. Exact deterministic pieces can be split too early; generic majorants can lose logarithms; matched support models can show an absolute norm is generic; exact support can still cancel after phase randomization; same-base harmonic relations can be preserved without restoring the boundary; the true deterministic orbit can have the same long-time quadratic mean as Haar; finite-window proofs can manufacture polynomial horizons by compressing weighted spectrum; and dense support becomes manageable again when frequencies are grouped by arithmetic scale before inversion.
+`V^(-1) integral |R_(x,H)(T)|^2 dT << x^2 + x log^2 x + x^3 log^2 x/V`,
 
-A structural transition is credible only after the surviving **finite-height/moving-frequency coherence mechanism** defeats a control that preserves the coefficient distribution, aggregate local ratio density, infinite tail and destination quantifier at the same scale. VIS-313 moves that audit to the logarithmic and pointwise/joint-limit level.
+so at the active Wang scale it is sufficient that
+
+`V >> x log^2 x/(log log x)^2`.
+
+The remaining gap to the natural local window `V~H~x log log x` is still logarithmic, now roughly `log^2 x/(log log x)^3`. The next useful result should determine whether that residual factor is another proof loss—through sharper weighted pair/shell accounting, cancellation between shells, or a better far/near coupling—or whether a source-faithful near-resonant packet forces some logarithmic loss. Another finite support cutoff or global minimum-gap estimate would revert to a representation already shown noncanonical.
+
+## Recombine exact deterministic structure before interpreting a proof wall
+
+The current ledger separates coefficient weights, support-sensitive spacing, random versus completely multiplicative phases, the actual prime-log orbit, dense full-spectrum geometry, dyadic aggregate density, sieve sparsity, finite-window length and the moving-frequency/joint-limit quantifier.
+
+VIS-313--VIS-314 give a concrete audit pattern: once dense spectrum makes pointwise gaps meaningless, aggregate by arithmetic scale; once a logarithmic loss remains, keep the actual two-point sparsity before paying independent coefficient majorants. A structural transition is credible only after the remaining finite-height mechanism defeats a control that preserves coefficient distribution, aggregate ratio density, infinite tail and the destination quantifier at the same scale.
