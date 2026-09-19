@@ -1,7 +1,7 @@
 ---
 id: CLUE-mobius-cancellation-cayley-welch-near-extremizer-geometry
 type: research-clue
-status: accepted
+status: resolved
 origin: research-watch
 target_line: mobius_cancellation
 based_on:
@@ -52,4 +52,11 @@ Kill the clue if an explicit family of admissible endpoint source characters rea
 
 ## Research disposition
 
-Accepted for continued investigation, narrowed by `MC-387`. The generic stability half is resolved; the only live question is whether the actual quadratic-character source/conductor map can support the forced near-coset Fourier geometry and near-annihilator exceptional set at the endpoint source-cost scale.
+Outcome: refuted
+
+Resolved by:
+- [[research/mobius_cancellation/findings/MC-388-endpoint-simplex-rank-excludes-near-annihilator-sharpness.md]]
+
+`MC-388` identifies the Bochner support of every exact endpoint partition frame as the projection of the translated coordinate simplex `1+e_z`. Its affine dimension is at least `dim W-1`. In the rank-linear source-cost branch `MC-381` retains `dim W>=3R/4`, whereas the near-extremizer forced by `MC-387` would require that support to be `o(R)`-close to an `R`-point coset of dimension only `O(log R)`. An exact rank argument forces `Omega(R)` support points outside every such coset, so the near-annihilator realization is impossible in the relevant high-dimensional endpoint regime before primitive-conductor details enter.
+
+This resolves the clue's live high-dimensional branch negatively. It does not improve the `H/R` exceptional-count scale by itself: obtaining a stronger frame contradiction now requires a quantitative additive-energy or physical-spread gap for high-affine-rank projected endpoint simplices.
