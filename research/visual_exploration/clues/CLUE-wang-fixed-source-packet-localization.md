@@ -26,6 +26,8 @@ based_on:
   - research/visual_exploration/findings/VIS-316-wang-weighted-shell-occupancy-criterion.md
   - research/visual_exploration/findings/VIS-317-wang-determinant-projection-loses-prime-sieve-dimension.md
   - research/visual_exploration/findings/VIS-318-wang-fixed-determinant-slices-bounded-lattice-length.md
+  - research/visual_exploration/findings/VIS-319-wang-bezout-strip-restores-prime-sieve-dimension.md
+  - research/visual_exploration/findings/VIS-320-wang-bezout-strip-subperiod-rational-rotation.md
 ---
 
 # Does Wang packet localization preserve source information without manufacturing strip gain?
@@ -38,12 +40,9 @@ For the moving upper pointwise branch, `VIS-301`--`VIS-304` move the first gener
 
 `VIS-310`--`VIS-312` expose hard-cutoff/global-gap and full-spectrum nearest-neighbor artifacts. `VIS-313` replaces them by a cutoff-free dyadic ratio-shell decomposition and obtains, with `L=log(3x)`,
 
-`V^(-1) integral |R_(x,H)(T)|^2 dT`
-` << x^2 + x L^3 + x^3 L^3/V`,
+`V^(-1) integral |R_(x,H)(T)|^2 dT << x^2 + x L^3 + x^3 L^3/V`,
 
-so at `H asymp x ell`, `ell=log log(3x)`, the mean square is `o(H^2)` for
-
-`V >> x L^3/ell^2`.
+so at `H asymp x ell`, `ell=log log(3x)`, the mean square is `o(H^2)` for `V >> x L^3/ell^2`.
 
 `VIS-314` removes one of those logarithms without changing the representation. Retaining two-prime sparsity and applying the classical dimension-two Selberg upper-bound sieve gives
 
@@ -51,22 +50,15 @@ so at `H asymp x ell`, `ell=log log(3x)`, the mean square is `o(H^2)` for
 
 and therefore
 
-`V^(-1) integral |R_(x,H)(T)|^2 dT`
-` << x^2 + x L^2 + x^3 L^2/V`,
+`V^(-1) integral |R_(x,H)(T)|^2 dT << x^2 + x L^2 + x^3 L^2/V`,
 
-with sufficient scale
-
-`V >> x L^2/ell^2`.
+with sufficient scale `V >> x L^2/ell^2`.
 
 `VIS-315` identifies the missing many-frequency input. For the ordinary-prime frequencies in a dyadic shell, let `kappa_M(V)` be the maximum number of prime-ratio frequencies in a Fourier cell of width `1/V`. A coloring plus the classical separated-frequency large sieve gives
 
 `V^(-1) integral |F_M^pp(T)|^2 dT << kappa_M(V) E_M^pp`.
 
-A nonempty frequency cluster is, up to absolute constants, exactly a thin determinant strip
-
-`|qv-ur| << M^2/V`
-
-around another represented prime ratio `u/v`.
+A nonempty frequency cluster is, up to absolute constants, exactly a thin determinant strip `|qv-ur| << M^2/V` around another represented prime ratio `u/v`.
 
 `VIS-316` sharpens the global criterion without proving a new density theorem. If shell-dependent excesses satisfy
 
@@ -76,62 +68,62 @@ then the Wang taper only sees
 
 `B(x,V)=sum_(M dyadic) w(M/x) sqrt(A_M)`,
 
-with `w(r)=r^(7/2)` below the central scale and `w(r)=r^(-1/2)` above it. At `V asymp H asymp x ell`, the natural-window mean square follows from the weaker aggregate condition
+with `w(r)=r^(7/2)` below the central scale and `w(r)=r^(-1/2)` above it. At `V asymp H asymp x ell`, the natural-window mean square follows from the weaker aggregate condition `B(x,x ell)=o(ell^(3/2))`.
 
-`B(x,x ell)=o(ell^(3/2))`.
+`VIS-317` rules out scalar determinant-only sieving: the projection `h=qv-ur` preserves ratio closeness but erases the two coordinatewise odd-prime exclusions. `VIS-318` closes the opposite fixed-slice shortcut: every represented same-shell exact determinant fibre contains only `O(1)` lattice candidates, so there is no long affine sifting variable inside one `h`-slice.
 
-`VIS-317` rules out one tempting compression of that determinant-strip problem. For every odd prime `p` away from the fixed source factors and every determinant residue `h mod p`, there are nonzero residues `q,r mod p` with `qv-ur=h`; in fact the exact count is `p-1` for `h=0` and `p-2` otherwise. Thus the scalar determinant coordinate preserves ratio closeness but has no odd-prime forbidden residue classes inherited from the two primality conditions. A direct one-dimensional residue sieve of `h` cannot manufacture the missing `1/log^2 M` density factor.
+`VIS-319` resolves the apparent missing sieve dimension without solving the density problem. Choosing `a,b` with `au-bv=1` and writing
 
-`VIS-318` closes the opposite slice-by-slice shortcut. For a represented same-shell center `u/v`, every exact determinant equation `qv-ur=h` has all integer solutions `(q,r)=(q_0+ut,r_0+vt)`, but the step vector `(u,v)` is already of size `asymp M`. Inside `M/2<q,r<=2M` the affine parameter has fewer than three units of range, so each exact `h` contains at most three lattice candidates. The full strip has `O(1+M^2/V)` candidates only after aggregating many short slices. Therefore a long dimension-two sieve cannot be obtained by freezing `h` and sieving the affine parameter separately.
+`q=ut-bh`, `r=vt-ah`
 
-Thus uniform control of every arithmetic-height shell is stronger than the destination estimate needs, scalar determinant-only sieving is weaker than the arithmetic structure needs, and fixed-determinant affine slicing is too short to supply the missing density factor. The genuinely dangerous region remains the weighted neighborhood `M asymp x`, but the next proof representation must preserve both prime coordinates **and** aggregate across the family of determinant slices, or bypass worst-cell density through weighted energy.
+is a unimodular bijection of `Z^2`, so modulo every prime the joint `(t,h)` coordinates retain exactly the two-prime local factor `(1-1/ell)^2`. The shell preimage is nevertheless a long thin domain: `h` has length `D asymp M/log log M`, while each `h`-fibre has fewer than three `t` values. The remaining issue is distribution across this thin moving domain, not recovery of a lost local sieve dimension.
+
+`VIS-320` makes that domain substantially more rigid. In the natural strip `D<M/2`, the active shell boundaries never switch, the strip width is affine and below three, and all lattice points lie on at most three exact branches `t_j(h)=floor(U(h))-j`. The mask `{U(h)}+j<W(h)` is a rational rotation of exact period `m=max(u,v) asymp M`. Since the Wang determinant interval has length `D asymp M/log log M=o(m)`, the relevant sample sees less than one full period. Thus the live worst-cell problem is no longer a generic two-dimensional lattice-distribution problem: it is simultaneous primality on at most three moving rational mechanical branches over a subperiod orbit, followed by the taper-weighted aggregation of `VIS-316`.
 
 ## Research question
 
 Two source routes remain distinct.
 
-For the **fixed-power real-axis source**, is there a property of
+For the **fixed-power real-axis source**, is there a property of `mu=sum Lambda(n)^2/n delta_(log n)` strictly weaker than the RH-equivalent half-plane pole exclusion of `VIS-293` that improves the generic Korobov--Vinogradov envelope and survives Wang's complete error budget?
 
-`mu=sum Lambda(n)^2/n delta_(log n)`
-
-strictly weaker than the RH-equivalent half-plane pole exclusion of `VIS-293` that improves the generic Korobov--Vinogradov envelope and survives Wang's complete error budget?
-
-For the **moving upper pointwise layer**, can one prove a taper-weighted local-density or sparse-energy estimate strong enough that
+For the **moving upper pointwise layer**, can one control the simultaneous-prime occupancy of the at-most-three rational mechanical branches from `VIS-320` over intervals `|h|<=D`, with `D asymp M/log log M` and rotation denominator `m asymp M`, strongly and uniformly enough that
 
 `sum_M w(M/x) sqrt(A_M)=o((log log x)^(3/2))`
 
-at `V asymp H asymp x log log x`, while retaining the pair-coordinate prime structure and aggregating over the complete thin determinant strip rather than projecting to scalar `h` or freezing one exact `h`-slice? Equivalently, can a two-coordinate sieve over the strip, a rational/Beatty-type formulation of the selected pair process, or a weighted additive-energy estimate control the central Fourier-resolution clusters; or can one exhibit represented slopes whose strip crowding and deterministic phase coherence violate the aggregate scale?
+at `V asymp H asymp x log log x`? The required theorem may be an upper-bound sieve/discrepancy estimate on these subperiod branches, or a coefficient-weighted/additive-energy estimate that bypasses worst-cell occupancy. A counterexample route should instead exhibit represented slopes whose subperiod masks produce excessive prime-pair crowding in central or weakly tapered shells and whose Wang coefficient mass and phases survive aggregation.
 
-Near-average density uniformly in every shell remains sufficient, but it is no longer the minimal target. Neither a one-dimensional residue sieve on `h=qv-ur` nor a long affine-form sieve on a fixed determinant slice is a viable source of the required two-prime density saving in the represented same-shell geometry.
+Near-average density uniformly in every shell remains sufficient but is stronger than necessary. Full-period rational equidistribution is unavailable at the natural scale because the observed branch segment ends before one period; scalar determinant sieving and fixed-determinant long affine sieving are already excluded by `VIS-317`--`VIS-318`.
 
 ## Why it may matter
 
-`VIS-301`--`VIS-318` have successively removed localization leakage, generic coefficient majorants, ambient spacing, support-sensitive absolute spacing, increasingly faithful random-phase controls, generic deterministic Bohr-time alignment, hard support truncation, global minimum-gap compression, dense-spectrum nearest-neighbor failure, one logarithm caused by discarding prime-pair sparsity, ambiguity about the relevant Fourier-cell density, unnecessary uniformity across dyadic arithmetic height, a scalar projection that erases the two coordinatewise prime-sieve exclusions, and now a slice parametrization whose averaging variable has only bounded length.
+`VIS-301`--`VIS-320` have progressively converted a vague localization/spacing problem into a sharply represented arithmetic one. The sequence of reductions has removed generic coefficient majorants, ambient-spacing artifacts, hard support truncation, nearest-gap compression, unnecessary shellwise uniformity, scalar determinant information loss, fixed-slice false averaging length, and finally the apparent need for a generic two-dimensional thin-domain theorem.
 
-The present frontier is narrower. A determinant-strip theorem only needs to control the taper-weighted shell profile strongly enough for the natural window, but it must obtain its prime-density saving from the **joint family of candidate pairs across the strip** or from an equivalent energy formulation. Conversely, a putative obstruction must survive the Wang weighting: a spectacular cluster far from `M asymp x` is not structurally relevant unless its excess overcomes the shell taper and its Wang coefficients remain coherent.
+The remaining representation simultaneously preserves the genuine two-prime residue exclusions and exposes the exact short geometry that must be controlled. This is useful because a proof can now target only what Wang actually needs: subperiod simultaneous-prime occupancy on at most three rational mechanical branches, aggregated through the known taper. Conversely, a negative result has an equally concrete target: produce branch segments whose arithmetic crowding is too large and remains relevant after Wang weighting.
 
 ## Decisive test
 
 For the fixed-power branch, state a concrete real-axis estimate or secondary expansion for `S(x)-log x`, derive it from arithmetic information strictly weaker than the pole exclusion of `VIS-293`, and propagate it through all source, gamma, localization, and cross-term errors. Kill the route if the gain is only a generic PNT substitution, smoothing attenuation, an RH-equivalent continuation assumption, or a term swallowed by another Wang remainder.
 
-For the moving upper branch, start from `VIS-315`--`VIS-318`. A next useful result must do one of three things:
+For the moving upper branch, work in the exact `VIS-319`--`VIS-320` coordinates. A next useful result must do one of three things:
 
-- prove pair-coordinate thin-strip bounds equivalent to `kappa_M(V) << 1 + A_M M^2/[V log^2 M]` with `sum_M w(M/x) sqrt(A_M)=o((log log x)^(3/2))` at `V asymp x log log x`, using a sieve or distribution argument over the **whole strip/family of slices** rather than an asymptotic sieve on one fixed `h`;
-- replace maximum occupancy by a coefficient-weighted/additive-energy large-sieve estimate whose dyadic recombination gives the same `o(H^2)` natural-window conclusion without first taking worst-cell density in each shell; or
-- identify a family of represented slopes in the central or sufficiently weakly tapered shells whose determinant-strip crowding violates the aggregate criterion, then show that the corresponding Wang coefficient mass and deterministic phases create a quantitatively sufficient exceptional contribution rather than a large but harmless cluster.
+- prove, uniformly in represented same-shell coprime `u,v`, an upper-bound sieve or congruence-discrepancy estimate for the at-most-three subperiod rational mechanical branches of length `D asymp M/log log M` that yields `kappa_M(V) << 1 + A_M M^2/[V log^2 M]` with `sum_M w(M/x) sqrt(A_M)=o((log log x)^(3/2))`;
+- replace maximum occupancy by a coefficient-weighted/additive-energy estimate on the same branch representation whose dyadic recombination gives the `o(H^2)` natural-window conclusion without first controlling every worst cell; or
+- identify a family of represented slopes whose subperiod branch masks have quantitatively excessive simultaneous-prime occupancy, then show that the associated Wang coefficient mass and deterministic phases create a sufficient exceptional contribution after tapering.
 
-Kill any proposed proof route that first projects to scalar `h` and then claims the two-prime `log^{-2} M` saving solely from forbidden determinant residue classes: `VIS-317` shows those odd-prime exclusions are absent. Also kill a route that fixes one exact determinant and claims the saving from a long two-linear-form Selberg sieve in the affine parameter: `VIS-318` shows that parameter has only bounded length for represented same-shell centers. Another hard support cutoff, global/nearest frequency gap, the same two-point fixed-shift upper sieve, or uniform shell control much stronger than the weighted destination requires is likewise not the sharp decision boundary.
+Any proposed proof should preserve both prime coordinates. Kill routes that project first to scalar `h`, freeze one determinant fibre and invoke a long one-variable sieve, or use full-period rational-rotation balance without controlling the shorter `D=o(m)` segment. Likewise, do not replace the sharp weighted destination by a much stronger uniform shell theorem unless the stronger theorem is genuinely what the available arithmetic naturally proves.
+
+The most direct falsification experiment for the new representation is to compute, over growing same-shell coprime centers `(u,v)`, the exact three branch masks and their simultaneous-prime counts on `|h|<=D`, normalize against the local two-prime sieve density, and measure the maximal and taper-weighted excess as functions of `D/m`. A persistent central-shell excess large enough to violate the `VIS-316` aggregate scale would kill the optimistic occupancy route; absence of such excess is only motivation for a theorem, not evidence of one.
 
 ## Evidence boundary
 
 `VIS-304` remains only an upper bound for the actual pointwise remainder. `VIS-305`--`VIS-309` are controls or iterated long-time statements, not pointwise cancellation at every height. `VIS-310`--`VIS-314` are finite-window proof-method reductions and improvements.
 
-`VIS-315` proves the local-density reduction but no prime-ratio occupancy theorem. `VIS-316` proves only that the shell excess may be aggregated with the existing Wang taper before imposing a sufficient condition. `VIS-317` proves an exact local representation obstruction: scalar determinant values have no odd-prime forbidden residue class coming from simultaneous nonvanishing of `q` and `r`. `VIS-318` proves that each represented same-shell exact determinant slice contains only `O(1)` candidate lattice points, so the fixed-slice affine parameter is not a long sifting variable. Neither finding disproves the occupancy estimate, bounds any `A_M`, or supplies the missing joint strip/energy theorem.
+`VIS-315` proves the local-density reduction but no prime-ratio occupancy theorem. `VIS-316` proves only that shell excess may be aggregated with the existing Wang taper before imposing a sufficient condition. `VIS-317` and `VIS-318` rule out two lossy or too-short sieve parametrizations. `VIS-319` proves that the joint Bézout coordinates preserve the exact dimension-two local residue factor but does not control the thin-domain sieve remainder. `VIS-320` proves the at-most-three-branch rational-rotation decomposition and the subperiod relation `D=o(m)`; it does not prove prime counts, discrepancy, pseudorandomness, or a Wang natural-window estimate.
 
-Nearby sparse-large-sieve, Beatty-prime, linear-form sieve, and binary-form sieve literature does not, by the statements audited so far, automatically provide the required moving-slope two-prime strip control. No stronger RH criterion, new prime-distribution theorem, pointwise Wang asymptotic, or moving-`x(T)` theorem is established.
+Nearby Beatty/mechanical-sequence and short-interval prime-sieve literature establishes that floor/rotation structure plus primality is classical, but the sources audited in `VIS-320` do not directly supply this moving rational, denominator-`asymp M`, subperiod, simultaneous-two-prime regime. No stronger RH criterion, new prime-distribution theorem, pointwise Wang asymptotic, or moving-`x(T)` theorem is established.
 
 ## Research disposition
 
-Outcome so far: **the moving upper-source branch has progressed from a polynomial finite-window barrier to a taper-weighted prime-ratio local-density criterion at the natural window, while two tempting determinant-coordinate shortcuts have been closed**. The remaining mean-square problem is to control the weighted dyadic profile with a pair-preserving argument that aggregates over the strip, obtain an equivalent weighted-energy bound, or turn a violating central cluster into a genuine exceptional-height obstruction.
+Outcome so far: **the moving upper-source frontier is now an explicit subperiod simultaneous-prime branch problem rather than an unspecified strip-density problem**. The correct representation has at most three rational mechanical branches, exact period `m=max(u,v)`, natural observation length `D=o(m)`, and the full two-prime local sieve factor still present before restriction to the short branch segment.
 
-The clue remains accepted and live. Another minimum-gap estimate, another two-point shell-mass refinement, a scalar determinant residue sieve, a fixed-`h` long affine-form sieve, or a uniform density theorem that ignores the already available shell taper is not the sharp next target; the next contribution should attack the joint pair-preserving weighted thin-strip/local-energy frontier or exhibit a coherent exception that survives it.
+The clue remains accepted and live. The sharp next target is uniform subperiod branch discrepancy/sieve control, an equivalent Wang-weighted energy theorem, or a coherent violating branch family that survives the taper. Re-deriving sieve dimension, using full-cycle rational balance, projecting again to `h`, or returning to fixed-fibre long-sieve arguments would not advance the remaining obstruction.
