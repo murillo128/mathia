@@ -3,7 +3,7 @@
 **Date:** 2026-09-19  
 **Status:** `EXACT-DERIVED + NEGATIVE/METHOD-BOUNDARY + ZETA-SPECTRAL-MATCHED-CONTROL + PAIR-CORRELATION-BLINDNESS + MESOSCOPIC-CARRIER-SCALE + NB-231-REFINEMENT + SOURCE-ONLY + PRIOR-ART-AUDITED`.
 
-`NB-231` sharpens the source-side endpoint to one bounded transition layer. In the regime
+`NB-231` leaves one sharply localized source-side obstruction. With
 
 \[
 Q=\log(10+|t|),\qquad L=\log Q,\qquad R=Q^{2/3}L^{1/3},
@@ -14,155 +14,105 @@ Y=\frac XR\to Y_*\in(0,\infty),\qquad
 1\ll J:=\frac RH\le L,
 \]
 
-a packet using a fixed positive fraction of the `J` carrier slots at depth
+a packet using `Theta(J)` carrier slots at depth
 
 \[
 YD=\log J+O(1)
 \]
 
-can contribute order one to the exact signed Ford residue while remaining compatible with all population inputs currently used in the line. The surviving frontier therefore asks for genuinely zeta-specific information coupling depth to vertical phase or spacing.
+can contribute order one to the exact signed Ford residue while satisfying all population inputs currently used in the line. A natural next candidate is zero-spacing or pair-correlation information.
 
-A natural next candidate is global pair correlation of zero ordinates. This finding rules out that route at its usual averaged level. The `NB-231` packet is **mesoscopic rather than crowded**: its aligned spacing is `Theta(1/X)`, whereas the mean zeta-zero spacing at height `t` is `Theta(1/Q)`, and
+The global version of that idea does not close the endpoint. The `NB-231` packet is **mesoscopic rather than crowded**: its aligned spacing is `Theta(1/X)`, while the mean zeta-zero spacing is `Theta(1/Q)`, so
 
 \[
 \boxed{
 \frac{1/X}{1/Q}=\frac QX
-\asymp
-Q^{1/3}L^{-1/3}
-\longrightarrow\infty.
+\asymp Q^{1/3}L^{-1/3}\to\infty.
 }
 \]
 
-More decisively, Montgomery-type global pair statistics are stable under inserting arbitrarily sparse sequences of such carrier-critical packets. If a baseline ordinate multiset has the ordinary `O(log T)` unit-interval count, then adding `A(T)=O(\sqrt{\log T}\log\log T)` packet ordinates below height `T` changes the standard weighted pair-correlation numerator by only
+More decisively, the standard Montgomery weighted pair statistic is stable under arbitrarily sparse insertion of such packets. If a baseline ordinate multiset has the ordinary `O(log T)` unit-interval count and `A(T)` extra ordinates are inserted below height `T`, then the pair-correlation numerator changes by at most
 
 \[
-O\!\left(A(T)\log T+A(T)^2\right),
+\boxed{
+O\!\left(A(T)\log T+A(T)^2\right)
+}
 \]
 
-uniformly in the Fourier parameter. After the natural `T log T` normalization this is `o(1)`. At the same time the inserted packets can be chosen exactly as in `NB-231`, including functional-equation and conjugation partners, and each selected packet still carries order-one Ford residue mass.
-
-Hence even a complete global Montgomery-type pair-correlation asymptotic cannot, by itself, exclude the sparse phase-aligned controls that saturate the `YD-log J=O(1)` transition. The next useful theorem must be **local and depth-conditioned**: it has to control the carrier-frequency phases of the near-one zeros in the actual `1/H` window, not merely the global two-point distribution of ordinates.
-
-## 1. The carrier lattice is much coarser than the mean zero lattice
-
-Keep the notation and exact-Ford scaling of `NB-231`:
+uniformly in the Fourier parameter. Choosing carrier-critical packets at heights `t_k=e^{k^2}` gives
 
 \[
-R=Q^{2/3}L^{1/3},
-\qquad
-X=YR,
-\qquad
-Y\to Y_*>0.
+A(T)=O(\sqrt{\log T}\log\log T),
+\]
+
+so after the natural `T log T` normalization the change is `o(1)`, while every selected packet still carries order-one Ford residue.
+
+Thus a global Montgomery-type pair-correlation asymptotic, even known for the full Fourier parameter range, cannot by itself exclude the sparse packets that saturate `YD-log J=O(1)`. The missing theorem must be **local and depth-conditioned**, resolving the carrier phases of the near-one zeros in the actual `1/H` window.
+
+## 1. The carrier lattice is coarser than the mean zero lattice
+
+The phase-aligned ordinates of `NB-231` are
+
+\[
+\gamma_j=t+\frac{2\pi qj}{X},
+\qquad q\in\mathbb N\ \text{fixed}.
 \tag{1}
 \]
 
-The phase-aligned ordinates used there have the form
+Hence their spacing is
 
 \[
-\gamma_j
-=t+\frac{2\pi qj}{X},
-\qquad q\in\mathbb N\ \text{fixed}.
+\Delta_{\rm car}=\frac{2\pi q}{X}\asymp\frac1R.
 \tag{2}
 \]
 
-Thus their spacing is
+Riemann--von Mangoldt gives mean spacing
 
 \[
-\Delta_{\rm car}
-=
-\frac{2\pi q}{X}
-\asymp\frac1R.
+\Delta_{\rm mean}\asymp\frac{2\pi}{Q}.
 \tag{3}
 \]
 
-On the other hand the Riemann--von Mangoldt law gives local mean spacing
-
-\[
-\Delta_{\rm mean}
-\asymp
-\frac{2\pi}{Q}.
-\tag{4}
-\]
-
-Therefore
+Since `X=YR` and `Y->Y_*>0`,
 
 \[
 \boxed{
 \frac{\Delta_{\rm car}}{\Delta_{\rm mean}}
-\asymp
-\frac QX
-\asymp
-Q^{1/3}L^{-1/3}
-\to\infty.
+\asymp\frac QX
+\asymp Q^{1/3}L^{-1/3}	o\infty.
 }
+\tag{4}
+\]
+
+So consecutive packet points are separated by a diverging number of mean zero spacings. Natural-scale repulsion cannot exclude them.
+
+The same scale separation appears in carrier capacity. A packet with `M asymp J=R/H` occupies vertical width
+
+\[
+W_{\rm car}\asymp\frac M X\asymp\frac1H.
 \tag{5}
 \]
 
-The coherent packet is not asking for abnormally close ordinates. Consecutive selected points are separated by a diverging number of mean zero spacings. A repulsion statement acting only at the natural `1/Q` scale therefore points in the wrong direction for this obstruction.
-
-There is the same surplus at the level of local capacity. A packet with
+A mean-density window of this width has expected zero count of order `Q/H`, whereas the packet uses only `R/H`. Their ratio is
 
 \[
-M\asymp J=\frac RH
+\frac{Q/H}{R/H}=\frac QR
+\asymp Q^{1/3}L^{-1/3}\to\infty.
 \tag{6}
 \]
 
-occupies a vertical interval of length
+This comparison is diagnostic rather than a short-interval counting theorem: the rigorous blindness statement is the global stability estimate below. Its interpretation is nevertheless clear—the obstruction is phase selection, not close spacing.
+
+## 2. A stability lemma for Montgomery's global pair statistic
+
+Let `Gamma` be any positive ordinate multiset satisfying
 
 \[
-W_{\rm car}
-\asymp
-\frac{M}{X}
-\asymp
-\frac{1}{H},
+N_\Gamma(u+1)-N_\Gamma(u)\ll\log(10+u)
 \tag{7}
 \]
 
-while the expected total number of zeta ordinates in such a window is of order
-
-\[
-QW_{\rm car}
-\asymp
-\frac QH.
-\tag{8}
-\]
-
-The ratio between ordinary zero capacity and the aligned packet size is
-
-\[
-\boxed{
-\frac{Q/H}{R/H}
-=
-\frac QR
-\asymp
-Q^{1/3}L^{-1/3}
-\to\infty.
-}
-\tag{9}
-\]
-
-Thus the matched packet uses a vanishing fraction `R/Q` of the ordinates that a mean-density window could contain. The obstruction is a **phase-selection problem**, not a crowding problem.
-
-## 2. Sparse insertions are invisible to the Montgomery weighted pair statistic
-
-The preceding scale comparison already shows why mean-spacing repulsion is not enough. One can make the blindness exact for the standard global two-point observable.
-
-Let `Gamma` be any positive ordinate multiset satisfying the classical local envelope
-
-\[
-N_\Gamma(u+1)-N_\Gamma(u)
-\ll \log(10+u)
-\tag{10}
-\]
-
-and the Riemann--von Mangoldt order of magnitude
-
-\[
-N_\Gamma(T)\asymp T\log T.
-\tag{11}
-\]
-
-For real `alpha`, define the Montgomery-type weighted pair numerator
+and `N_Gamma(T) asymp T log T`. Define
 
 \[
 \mathcal P_\Gamma(\alpha,T)
@@ -170,50 +120,34 @@ For real `alpha`, define the Montgomery-type weighted pair numerator
 \sum_{\substack{0<\gamma,\gamma'\le T\\
 \gamma,\gamma'\in\Gamma}}
 T^{i\alpha(\gamma-\gamma')}
- w(\gamma-\gamma'),
-\tag{12}
+\frac4{4+(\gamma-\gamma')^2}.
+\tag{8}
 \]
 
-where
-
-\[
-w(u)=\frac4{4+u^2}.
-\tag{13}
-\]
-
-The exact normalization is immaterial below; the classical one is comparable to `T log T`.
-
-Let `E` be an additional multiset of ordinates and write
+Let `E` be an inserted ordinate multiset and
 
 \[
 A(T):=\#\{\eta\in E:0<\eta\le T\}.
-\tag{14}
+\tag{9}
 \]
 
-For each inserted ordinate `eta<=T`, decompose the original ordinates into unit intervals according to `|gamma-eta|`. From (10) and the summability of `(1+k^2)^(-1)`,
+For a fixed inserted ordinate `eta`, split the original ordinates into unit distance shells around `eta`. By (7) and summability of `(1+k^2)^(-1)`,
 
 \[
 \sum_{\substack{0<\gamma\le T\\\gamma\in\Gamma}}
- w(\eta-\gamma)
-\ll \log T.
-\tag{15}
+\frac4{4+(\eta-\gamma)^2}
+\ll\log T.
+\tag{10}
 \]
 
-Since the Fourier factor in (12) has modulus one, all old--new pairs contribute at most
+The oscillatory factor in (8) has modulus one, so all old--new pairs contribute
 
 \[
 O(A(T)\log T).
-\tag{16}
+\tag{11}
 \]
 
-The new--new contribution is bounded trivially by
-
-\[
-O(A(T)^2).
-\tag{17}
-\]
-
-Consequently, uniformly for every real `alpha`,
+The new--new pairs contribute at most `O(A(T)^2)`. Therefore, **uniformly for every real `alpha`**,
 
 \[
 \boxed{
@@ -225,17 +159,92 @@ Consequently, uniformly for every real `alpha`,
 \ll
 A(T)\log T+A(T)^2.
 }
+\tag{12}
+\]
+
+Since the classical normalization is comparable to `T log T`, every insertion satisfying
+
+\[
+A(T)\log T+A(T)^2=o(T\log T)
+\tag{13}
+\]
+
+is invisible to the normalized global statistic. The conclusion is uniform in `alpha`; it is not restricted to one fixed Fourier mode.
+
+The same proof applies to any global two-point statistic whose oscillatory factor is bounded and whose difference weight is dominated by an integrable envelope.
+
+## 3. Infinitely many transition-saturating packets fit inside the invisible budget
+
+Choose
+
+\[
+t_k=e^{k^2}.
+\tag{14}
+\]
+
+Then, with the line's convention `Q_k=log(10+t_k)`,
+
+\[
+Q_k=k^2+o(1),
+\qquad
+L_k=2\log k+o(1).
+\tag{15}
+\]
+
+Choose `J_k->infinity` with `J_k<=c_0 L_k`, put
+
+\[
+H_k=\frac{R_k}{J_k},
+\tag{16}
+\]
+
+and use the `NB-231` packet
+
+\[
+M_k=\lfloor\delta J_k\rfloor,
+\qquad
+D_k=\frac{\log J_k+w_k}{Y_k},
+\qquad |w_k|\le W,
+\tag{17}
+\]
+
+at ordinates
+
+\[
+\gamma_{j,k}
+=t_k+\frac{2\pi qj}{X_k},
+\qquad 1\le j\le M_k.
 \tag{18}
 \]
 
-If, for example,
+Then
 
 \[
-A(T)=O(\sqrt{\log T}\log\log T),
+e^{iX_k(\gamma_{j,k}-t_k)}=1,
 \tag{19}
 \]
 
-then
+and `NB-231` gives a positive order-one lower bound for the signed packet residue, uniformly in `k`.
+
+If `t_K<=T<t_(K+1)`, the number of inserted positive ordinates satisfies
+
+\[
+A(T)
+\ll\sum_{k\le K}L_k
+\ll K\log K.
+\tag{20}
+\]
+
+Since `K asymp sqrt(log T)`,
+
+\[
+\boxed{
+A(T)=O(\sqrt{\log T}\log\log T).
+}
+\tag{21}
+\]
+
+Equations (12)--(13) therefore give
 
 \[
 \frac{
@@ -244,118 +253,28 @@ then
 \mathcal P_\Gamma(\alpha,T)
 }{T\log T}
 =o(1)
-\tag{20}
+\tag{22}
 \]
 
 uniformly in `alpha`.
 
-This is stronger than saying that one particular limiting pair law cannot see one packet. **The entire standard weighted pair-correlation function is asymptotically unchanged, at every Fourier parameter, by a sufficiently sparse family of carrier-critical packets.** The argument uses only the integrable vertical envelope `w`; the same stability holds for any global two-point statistic with a bounded oscillatory factor and an integrable difference weight.
+Moreover `A(T)=o(log T)`, so the insertion preserves any Riemann--von Mangoldt formula with its standard `O(log T)` remainder. Adding functional-equation reflections and complex conjugates changes `A(T)` by only a fixed factor. The reflected positive-ordinate partner has the same ordinate, producing only `O(M_k)` additional zero-difference pairs per packet, already covered by the `A(T)^2` bound; horizontally it lies at depth `R_k-D_k` and is exponentially invisible to the near-one carrier, exactly as in `NB-225` and `NB-231`.
 
-## 3. One can insert infinitely many `NB-231` packets inside that invisible budget
+Thus standard zeta symmetries, ordinary zero counting and a full global Montgomery-type pair statistic can coexist, at the level of the matched information, with infinitely many transition-saturating Ford packets.
 
-Choose packet heights
+## 4. Prior-art boundary and what this does not prove
 
-\[
-t_k=e^{k^2},
-\tag{21}
-\]
+Montgomery introduced the weighted pair statistic above in H. L. Montgomery, *The pair correlation of zeros of the zeta function*, Proc. Sympos. Pure Math. 24 (1973), 181--193, DOI `10.1090/pspum/024/9944`. The classical theorem is conditional on RH. Modern work has also developed no-RH pair-correlation formulations; for example D. A. Goldston, J. Lee, J. Schettler and A. I. Suriajaya, *Pair Correlation Conjecture for the zeros of the Riemann zeta-function I: simple and critical zeros*, arXiv:2503.15449 (2025), shows that an appropriate Pair Correlation Conjecture implies that asymptotically `100%` of zeros are simple and on the critical line.
 
-so that
+That density-one conclusion is fully consistent with the method boundary here: the packet family (21) is much smaller than `o(N(T))`, while the source obstruction is pointwise in the selected heights. One exceptional order-one packet along an arbitrarily sparse sequence is enough to defeat a uniform endpoint theorem.
 
-\[
-Q_k=\log t_k=k^2,
-\qquad
-L_k=\log Q_k=2\log k.
-\tag{22}
-\]
+No external pair-correlation theorem is load-bearing for (12)--(22); only the classical statistic is used as the prior-art target. The proof is the elementary stability estimate (12), so `SOURCES.md` acquires no new theorem dependency.
 
-At each height choose a carrier capacity
+This finding also does **not** construct actual zeta zeros with the packet geometry. As in `NB-231`, the packet is a matched control proving logical insufficiency of a specified information set. A theorem uniform in every short height window, conditioned on horizontal depth and resolving the carrier frequency `X`, would not be ruled out; it would already be close to the missing observable below.
 
-\[
-J_k\to\infty,
-\qquad
-J_k\le c_0L_k,
-\tag{23}
-\]
+## 5. The surviving observable is local, mesoscopic and depth-conditioned
 
-for a fixed sufficiently small `c_0`, set
-
-\[
-H_k=\frac{R_k}{J_k},
-\tag{24}
-\]
-
-and insert the `NB-231` packet
-
-\[
-M_k=\lfloor\delta J_k\rfloor
-\tag{25}
-\]
-
-at depth
-
-\[
-D_k=\frac{\log J_k+w_k}{Y_k},
-\qquad |w_k|\le W,
-\tag{26}
-\]
-
-with ordinates
-
-\[
-\gamma_{j,k}
-=t_k+\frac{2\pi qj}{X_k},
-\qquad 1\le j\le M_k.
-\tag{27}
-\]
-
-Exactly as in `NB-231`,
-
-\[
-e^{iX_k(\gamma_{j,k}-t_k)}=1,
-\]
-
-the profile stays in a fixed positive patch, and the signed packet residue has a positive order-one lower bound independent of `k`.
-
-The cumulative number of inserted positive ordinates up to height `T` is tiny. If `t_K<=T<t_(K+1)`, then
-
-\[
-A(T)
-\ll
-\sum_{k\le K}L_k
-\ll K\log K.
-\tag{28}
-\]
-
-Since `K\asymp sqrt(log T)`,
-
-\[
-\boxed{
-A(T)
-=O(\sqrt{\log T}\log\log T).
-}
-\tag{29}
-\]
-
-Thus (20) applies. Moreover (29) is itself `o(log T)`, so adding the packets preserves any Riemann--von Mangoldt formula with the usual `O(log T)` remainder.
-
-For each right-half point one may also insert its functional-equation reflection and complex conjugate. This multiplies `A(T)` by only a fixed constant. The reflected positive-ordinate partner has the same ordinate and therefore creates a bounded number of zero-difference pairs per packet point; these are already absorbed by (17). The reflected zero lies at Ford depth `R-D_k` and is exponentially invisible to the local near-one carrier at `+t_k`, exactly as in `NB-225` and `NB-231`.
-
-Hence standard zeta symmetries, the ordinary counting law and a full global Montgomery-type pair statistic can all coexist, at the level of the matched information, with infinitely many transition-saturating Ford packets.
-
-## 4. Why stronger global pair-correlation conclusions still do not close the endpoint
-
-Montgomery introduced the weighted statistic (12) to study the vertical two-point distribution of zeta zeros. The classical theorem is conditional on RH, while modern work has developed pair-correlation formulations that extract horizontal information under weaker or conjectural hypotheses. In particular, recent no-RH formulations of the Pair Correlation Conjecture can imply that asymptotically `100%` of zeros are simple and on the critical line.
-
-Those results are an important prior-art boundary, but they do not contradict the stability statement above. An asymptotic density-one conclusion still permits an exceptional set of size `o(N(T))`, whereas the packet family (29) has density vastly smaller than that. The present obstruction is pointwise in the selected source heights: **one order-one packet at an arbitrarily sparse sequence of heights is enough to defeat a uniform endpoint theorem.**
-
-This distinction prevents an invalid inference. A global statistic may determine the behavior of almost all zeros, or almost all height windows, while leaving the exceptional windows required by the Nyman source-side obstruction completely uncontrolled.
-
-The load-bearing mathematics in this finding is the elementary stability estimate (18), not any external pair-correlation theorem. The relevant prior-art boundary is H. L. Montgomery, *The pair correlation of zeros of the zeta function*, Proc. Sympos. Pure Math. 24 (1973), 181--193, DOI `10.1090/pspum/024/9944`. For the modern no-RH distinction between pair correlation and exceptional off-critical zeros, see D. A. Goldston, J. Lee, J. Schettler and A. I. Suriajaya, *Pair Correlation Conjecture for the zeros of the Riemann zeta-function I: simple and critical zeros*, arXiv:2503.15449 (2025). No theorem from either paper is needed to prove (18)--(29), so `SOURCES.md` acquires no new load-bearing dependency.
-
-## 5. Representation audit: the missing observable is local phase discrepancy conditioned on depth
-
-The obstruction survives because global pair statistics average over the wrong axes. The exact Ford carrier distinguishes simultaneously:
+The exact Ford carrier remembers simultaneously
 
 \[
 R(1-\beta),
@@ -363,49 +282,35 @@ R(1-\beta),
 X(\gamma-t)\pmod{2\pi},
 \qquad
 H(\gamma-t).
-\tag{30}
+\tag{23}
 \]
 
-A pair statistic depending only on ordinate differences, normalized over all zeros up to height `T`, discards the first coordinate and averages the other two over an enormous population. The sparse packet can therefore carry order-one source residue while contributing `o(1)` to the global statistic.
+A global pair statistic depending only on ordinate differences discards the first coordinate and averages the other two over the full zero population. The packet can therefore carry order-one source residue while contributing `o(1)` globally.
 
-The next useful zeta theorem must instead control a local, depth-conditioned phase sum on the transition slab. Schematically, one needs information of the form
+The next useful zeta theorem must instead control, in the bounded transition layer, a quantity schematically of the form
 
 \[
 \sum_{\substack{
 R(1-\beta)\le D\\
-|\gamma-t|\lesssim 1/H}}
+|\gamma-t|\lesssim1/H}}
  e^{iX(\gamma-t)}
  F\!\left(H[(\gamma-t)+i(\sigma_X-\beta)]\right),
-\tag{31}
+\tag{24}
 \]
 
 uniformly when
 
 \[
 YD-\log(1+R/H)=O(1).
-\tag{32}
+\tag{25}
 \]
 
-It is not enough to know the global pair distribution, nor merely that near-neighbor gaps repel at scale `1/Q`. The phase in (31) oscillates on the much coarser `1/X` scale and is restricted to the exceptional near-one population that actually receives Ford weight.
+This sharpens the `NB-231` frontier: **natural-scale spacing statistics are too fine, while global pair statistics are too averaged**. What remains viable is local carrier-frequency discrepancy for shallow zeros, or an equivalent arithmetic estimate obtained from the explicit formula without first averaging over height.
 
-This is a useful narrowing of the `NB-231` frontier. The phrase “phase or spacing information” can now be made more precise: **natural-scale spacing statistics are too fine and global pair statistics are too averaged**. What remains viable is mesoscopic carrier-frequency discrepancy for shallow zeros in the actual local window, or an equivalent arithmetic statement obtained from the explicit formula without first averaging over height.
-
-## 6. Failure modes and scope
-
-This finding does **not** say that every conceivable pair-correlation theorem is useless. A theorem uniform in every short height window, conditioned on horizontal depth, and resolving the carrier frequency `X` would no longer be the global statistic treated here; it would be close to the missing observable (31) itself.
-
-It also does not construct actual zeta zeros with the packet geometry. As in `NB-231`, the packet is a matched control showing logical insufficiency of a specified information set. The actual zeta function may have additional arithmetic rigidity that forbids such packets.
-
-Finally, the result remains source-side. Even a successful bound for (31) would still have to be connected to the Nyman--Beurling destination through the separate bridge already isolated in `RESEARCH_LINES.md`.
+The destination bridge remains separate. Even a successful bound for (24) would still need to be converted into a Nyman--Beurling distance statement.
 
 ## Conclusion
 
-At exact Ford scale, the `NB-231` coherent packet is separated by
+At exact Ford scale, the coherent `NB-231` packet is separated by `Q/X->infinity` mean zero spacings, so it is not a close-spacing anomaly. More strongly, infinitely many such order-one packets may be inserted at sparse heights while changing the standard globally normalized Montgomery pair statistic by only `o(1)`, uniformly in its Fourier parameter.
 
-\[
-\frac QX\to\infty
-\]
-
-mean zero spacings and uses only a vanishing fraction `R/Q` of the ordinary local zero capacity. It is therefore not a close-spacing anomaly. More strongly, one may place infinitely many such order-one packets at sparse heights while changing the standard globally normalized Montgomery pair statistic by only `o(1)`, uniformly in its Fourier parameter.
-
-So global pair correlation does not provide the missing actual-zeta input at the `YD-log J=O(1)` transition. The surviving target is genuinely local and mesoscopic: a depth-conditioned discrepancy theorem for the carrier phases `X gamma mod 2 pi` inside the `1/H` window.
+Global pair correlation therefore does not supply the missing actual-zeta input at `YD-log J=O(1)`. The surviving target is genuinely local and mesoscopic: a depth-conditioned discrepancy theorem for the carrier phases `X gamma mod 2 pi` inside the `1/H` window.
