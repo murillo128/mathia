@@ -12,30 +12,24 @@ VIS-282--VIS-293 separate the isolated coefficient profile, Wang's complete pair
 
 The earlier `sqrt(log T)` and related lower-source thresholds were proof-packaging artifacts rather than arithmetic transitions.
 
-## Resolve the signed endpoint Hilbert form beyond density/parity spacing controls
+## Resolve the signed endpoint Hilbert form beyond density/parity controls
 
 **Linked intuition:** `MI-040-wang-pointwise-upper-ceiling-is-a-localization-coherence-budget`.
 
 VIS-299--VIS-301 show that Wang's displayed localization ceiling is not structural. Decomposition isolates one inside--outside coherence term, and the unconditional Vinogradov--Korobov zero-free region suppresses it far enough that the first generic `H`-scale obstruction moves into the interior Montgomery--Vaughan mean-value estimate.
 
-VIS-302 specializes that estimate to Wang's exact coefficients and saves one logarithm, extending the pointwise asymptotic to `x log x=o(H)`. VIS-303 then uses the actual support: powers of two have negligible energy and bounded weighted mass, so throughout `x log x=O(H)` every odd-additive-shift contribution is `o(H)`. VIS-304 applies the weighted Hilbert inequality on the actual prime-power logarithmic frequencies and obtains
+VIS-302 specializes that estimate to Wang's exact coefficients and saves one logarithm. VIS-303 uses the actual support to remove the power-of-two/odd-shift sector. VIS-304 applies the weighted Hilbert inequality on the actual prime-power logarithmic frequencies and obtains an absolute spacing cost `O(x log log x)`, moving the generic pointwise range to `x log log x=o(H)`.
 
-`sum_q a_q^2/delta_q << x log log(3x)`,
+VIS-305 shows that this absolute reciprocal-spacing scale is not arithmetic by itself: a parity- and density-matched Bernoulli support already has expected cost `Theta(x log log x)` under the same Wang-scale weights.
 
-moving the generic pointwise range again to `x log log(3x)=o(H)`.
+VIS-306 now runs the matched control on the **signed endpoint form itself** rather than only on its absolute Hilbert majorant. For the Bernoulli-thinned odd lattice, the off-diagonal signed Dirichlet remainder has expectation `O(x)`, variance `O(x log^3 x)` and hence size `O_p(x)`. In the critical comparison regime `H~x log log x`, this is `o_p(H)`. Density, parity, coefficient size and short-gap harmonic tails therefore do not create an `H`-scale signed obstruction even though their absolute spacing norm is already `Theta(x log log x)`.
 
-VIS-305 now supplies the matched control that VIS-304 lacked. On the odd lattice, retain each site independently with probability `2/log x`, matching prime density and parity. Conditional nearest-neighbor gaps are geometric, and the exact inverse-gap expectation produces
+This materially narrows the live arithmetic object. A genuine prime-power obstruction must now come from phase/coherence or spacing correlations absent from independent thinning, or from another exact source feature not represented by the Bernoulli control. The `x log log x` absolute proof wall should no longer be promoted as evidence for such an obstruction.
 
-`E sum_(q occupied in [x,2x]) b_q^2/delta(q)=Theta(x log log x)`
-
-for Wang-scale weights. Thus the `log log x` absolute reciprocal-spacing cost already occurs in a parity- and density-matched independent support. It is not, by itself, an arithmetic signature of prime powers.
-
-This rules out one tempting continuation: no argument that remembers essentially only density, parity, coefficient size and nearest-neighbor sparsity can uniformly improve the `x log log x` norm. The live object is more specific: the **signed endpoint Hilbert form** on the actual prime-power logarithmic frequencies, or an arithmetic spacing correlation absent from the Bernoulli control. A further gain must use source information that the matched support does not reproduce.
-
-The `x log log x` scale remains a proof boundary, not a proven correction to Wang's statistic. VIS-305 does not lower-bound the true prime-power norm or the signed endpoint form. A matched admissible construction attaining `H` scale for the signed form would establish a genuine obstruction; a cancellation theorem would move the boundary again. The fixed-power prime-source envelope remains a separate arithmetic question.
+VIS-306 is a negative control, not a theorem about prime powers. The current target is to evaluate or bound the actual prime-power signed endpoint Hilbert form at the same scale and identify which arithmetic correlations, if any, prevent the Bernoulli cancellation mechanism.
 
 ## Recombine exact deterministic structure and decompose every newly exposed proof wall before interpreting it
 
-The current ledger separates packet total variation, support width, moving-test seminorm, source exponent, localization leakage, cross-coherence, coefficient-specific mean-value weight, ambient versus support-sensitive frequency spacing, matched random spacing controls, actual signed endpoint phase, deterministic gamma normalization and analytic domain of the source transform.
+The current ledger separates packet total variation, support width, moving-test seminorm, source exponent, localization leakage, cross-coherence, coefficient-specific mean-value weight, ambient versus support-sensitive frequency spacing, matched random spacing controls, signed matched-control cancellation, actual prime-power endpoint phase, deterministic gamma normalization and analytic domain of the source transform.
 
-VIS-294--VIS-305 give a repeated control pattern. Exact deterministic pieces can be split too early; theorem parameters can hide moving uniformity; a bundled error can contain one load-bearing cross term; generic coefficient majorants can lose logarithms; support decomposition can delete whole sectors; sparse-frequency geometry can improve an ambient bound; and a matched random support can then show that the remaining absolute norm is still generic. A structural transition is credible only after it survives all of those reductions and the surviving signed object itself is controlled or matched.
+VIS-294--VIS-306 give a repeated control pattern. Exact deterministic pieces can be split too early; theorem parameters can hide moving uniformity; a bundled error can contain one load-bearing cross term; generic coefficient majorants can lose logarithms; support decomposition can delete whole sectors; sparse-frequency geometry can improve an ambient bound; a matched random support can show the remaining absolute norm is generic; and the signed version of the same control can then cancel below the apparent critical scale. A structural transition is credible only after the surviving signed object itself defeats the strongest matched control.
