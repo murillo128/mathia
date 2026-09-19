@@ -25,6 +25,7 @@ based_on:
   - research/visual_exploration/findings/VIS-300-wang-localization-cross-coherence.md
   - research/visual_exploration/findings/VIS-301-wang-zero-free-localization-log-squared-window.md
   - research/visual_exploration/findings/VIS-302-wang-weighted-mean-value-log-boundary.md
+  - research/visual_exploration/findings/VIS-303-wang-odd-shift-power-two-sparsity.md
 ---
 
 # Does Wang packet localization preserve source information without manufacturing strip gain?
@@ -45,7 +46,7 @@ for every moving `x->infinity` below one fixed exponent ceiling.
 
 as the next apparent boundary.
 
-`VIS-302` now shows that this `log^2` scale is also a proof-packaging artifact for Wang's exact coefficients. Reusing the same classical asymptotic
+`VIS-302` shows that this `log^2` scale is also a proof-packaging artifact for Wang's exact coefficients. Reusing the same classical asymptotic
 
 `sum_(n<=u) Lambda(n)^2 = u log u-u+O(u exp(-cV(log u)))`
 
@@ -55,11 +56,19 @@ already established in `VIS-291`, direct weighted partial summation gives
 ` = (4/3)x log x + (8/9)x`
 `   + O(x exp(-cV(log x)))`.
 
-Hence the mean-value error is `O(x log x)`, not merely `O(x log^2 x)`. Re-running the `VIS-301` localization bounds shows that the complete pointwise asymptotic in fact survives throughout
+Hence the mean-value error is `O(x log x)`, not merely `O(x log^2 x)`. Re-running the `VIS-301` localization bounds shows that the complete pointwise asymptotic survives throughout
 
 `x log(2x)=o(H)`.
 
-The first unresolved moving upper layer is therefore near `x log x asymp H`, equivalently `x asymp H/L` in the polynomial source regime.
+`VIS-303` now removes another whole sector from the boundary problem. Splitting Wang's polynomial into the powers-of-two part `D_2` and the odd-prime-power part `D_o`, the exact support identity for `Lambda` gives
+
+`sum_(2^k) a_(2^k)^2 << 1/x`,
+
+`sum_(2^k) 2^k a_(2^k)^2 << 1`.
+
+The cross term `2 Re integral_I D_2 overline(D_o)` is exactly the full off-diagonal sector with odd additive difference. By Montgomery--Vaughan and Cauchy--Schwarz it is `o(H)` whenever `x log(2x)=O(H)`. Thus at the current boundary the full remainder agrees at `H` resolution with the remainder formed only from **odd prime powers**, whose pairwise additive differences are necessarily even.
+
+The first unresolved moving upper layer therefore remains near `x log x asymp H`, but its live arithmetic channel has narrowed to the odd-prime-power/even-shift off-diagonal sector.
 
 ## Research question
 
@@ -73,17 +82,19 @@ strictly weaker than the RH-equivalent half-plane pole exclusion of `VIS-293`, t
 
 For the **moving upper pointwise layer**, what is the actual off-diagonal Montgomery--Vaughan remainder for Wang's exact coefficients when
 
-`x log x asymp H`?
+`x log x asymp H`,
 
-Does the interval integral of `D_x` contain coefficient-specific oscillatory cancellation that pushes the asymptotic beyond this scale, is there a stable deterministic `H`-scale correction, or can an admissible matched coefficient/control model realize the `x log x` scale and show that additional arithmetic information is necessary?
+after restricting to pairs of odd prime powers, equivalently to even additive differences?
+
+Does the exact interval kernel and the frequencies `log(m/n)` yield further oscillatory cancellation across the even-shift sectors, is there a stable deterministic `H`-scale correction, or can an admissible matched coefficient/control model realize the `x log x` scale and show that additional arithmetic information is necessary?
 
 A genuinely bounded source `x=O(1)` remains separate. A moving-support version of Wang's integrated Theorem 2.2 is also separate: the current findings concern the pointwise source statistic and do not establish uniformity for a test function whose support changes with `T`.
 
 ## Why it may matter
 
-The source-scale search space has been compressed repeatedly by decomposing the first term that appears to reach output scale instead of interpreting its packaged big-O as a transition. The moving lower boundary, fixed exponent gap, `H/L^3` localization wall, and now the `H/L^2` interior wall have all collapsed under exact recombination, proof-level uniformity, classical zero-free information, or coefficient-specific moment evaluation.
+The source-scale search space has been compressed repeatedly by decomposing the first term that appears to reach output scale instead of interpreting its packaged big-O as a transition. The moving lower boundary, fixed exponent gap, `H/L^3` localization wall, `H/L^2` interior wall, and now the entire opposite-parity off-diagonal sector have collapsed under exact recombination, proof-level uniformity, classical zero-free information, coefficient-specific moment evaluation, or exact arithmetic support.
 
-A further positive result must therefore act on the actual off-diagonal time integral, not on a loose coefficient majorant. A gain beyond `x log x=o(H)` would genuinely enlarge the pointwise source window; a sharp `H`-scale correction or matched lower construction would instead certify that the current proof has finally reached a real Dirichlet-polynomial boundary rather than another bookkeeping artifact.
+A further positive result must therefore act on the surviving even-shift odd-prime-power channel, not on a loose coefficient majorant or a power-of-two interaction. A gain beyond `x log x=o(H)` would genuinely enlarge the pointwise source window; a sharp `H`-scale correction or matched lower construction would instead certify that the current proof has finally reached a real arithmetic Dirichlet-polynomial boundary rather than another bookkeeping artifact.
 
 ## Decisive test
 
@@ -97,20 +108,20 @@ using
 
 `a_n=(Lambda(n)/sqrt(n)) min(n/x,x/n)`.
 
-Analyze the range `x log x asymp H`. Preserve the actual frequencies `log(n/m)`, coefficient signs/weights, and interval kernel rather than replacing them immediately by the generic Montgomery--Vaughan absolute bound. Determine whether the remainder is `o(H)`, has a stable explicit `H`-scale term, or admits a matching admissible lower/control construction.
+By `VIS-303`, discard the power-of-two and odd-additive-shift sectors at `H` resolution. Analyze the remaining pairs `m,n` of odd prime powers in the range `x log x asymp H`, preserving the exact interval kernel, frequencies `log(m/n)`, coefficient weights, and even additive differences `m-n=2r`. Determine whether the surviving remainder is `o(H)`, has a stable explicit `H`-scale term, or admits a matching admissible lower/control construction.
 
-A decisive outcome is one of: an unconditional coefficient-specific cancellation extending the pointwise asymptotic beyond `x log x=o(H)`; a deterministic `H`-scale correction that can be separated from the main source law; or a matched admissible model showing that the `x log x` scale is genuinely attainable and additional arithmetic input is necessary.
+A decisive outcome is one of: an unconditional coefficient-specific cancellation extending the pointwise asymptotic beyond `x log x=o(H)`; a deterministic `H`-scale correction that can be separated from the main source law; or a matched admissible model showing that the surviving even-shift channel genuinely attains `H` scale and requires additional arithmetic input.
 
-Do not reopen the old `H/L^3` localization or `H/L^2` coefficient-bound branches unless a new hypothesis invalidates `VIS-301` or `VIS-302`. Re-estimating already-subcritical leakage, or reusing `Lambda(n)<=log n` after the weighted moment has been evaluated, is no longer a live upper-boundary test.
+Do not reopen the old `H/L^3` localization, `H/L^2` coefficient-bound, or opposite-parity branches unless a new hypothesis invalidates `VIS-301`, `VIS-302`, or `VIS-303`. Re-estimating already-subcritical leakage, reusing `Lambda(n)<=log n` after the weighted moment has been evaluated, or attributing the boundary to powers of two is no longer a live upper-boundary test.
 
 ## Evidence boundary
 
-`VIS-283`--`VIS-300` establish the source reductions, normalization corrections, lower-source closure, pointwise moving-source extension, and exact localization-energy decomposition. `VIS-301` establishes that classical zero-free information makes localization `o(H)` before the interior mean-value term becomes critical. `VIS-302` then evaluates the exact coefficient weight in that mean-value theorem and proves that the complete pointwise asymptotic holds whenever `x log(2x)=o(H)`.
+`VIS-283`--`VIS-300` establish the source reductions, normalization corrections, lower-source closure, pointwise moving-source extension, and exact localization-energy decomposition. `VIS-301` establishes that classical zero-free information makes localization `o(H)` before the interior mean-value term becomes critical. `VIS-302` evaluates the exact coefficient weight in that mean-value theorem and proves that the complete pointwise asymptotic holds whenever `x log(2x)=o(H)`. `VIS-303` proves that, throughout the boundary regime `x log(2x)=O(H)`, the full off-diagonal remainder differs by only `o(H)` from the remainder restricted to odd prime powers.
 
-None of these findings evaluates the actual off-diagonal mean-value remainder at `x log x asymp H`, improves the fixed-power Korobov--Vinogradov source envelope, controls a genuinely bounded source by the same formula, or proves a moving-support version of Wang's integrated pair-correlation theorem. In particular, `H/L` is currently a **proof boundary exposed by the remaining off-diagonal Dirichlet-polynomial estimate**, not an established transition of `F_I`.
+None of these findings evaluates the surviving even-shift mean-value remainder at `x log x asymp H`, improves the fixed-power Korobov--Vinogradov source envelope, controls a genuinely bounded source by the same formula, or proves a moving-support version of Wang's integrated pair-correlation theorem. In particular, `H/L` remains a **proof boundary**, now localized to the odd-prime-power/even-shift channel rather than to the unrestricted off-diagonal sum.
 
 ## Research disposition
 
-Outcome so far: **upper pointwise branch narrowed to the true off-diagonal mean-value problem near `x log x asymp H`**.
+Outcome so far: **upper pointwise branch narrowed to the even-shift odd-prime-power off-diagonal problem near `x log x asymp H`**.
 
-The moving lower-source, `H/L^3` localization, and `H/L^2` coefficient-majorant branches are closed under the current hypotheses. The accepted clue remains live for the off-diagonal `H/L`-scale question and for the separate fixed-power source-specific arithmetic question; bounded-source and moving-test-function questions still require independently justified targets.
+The moving lower-source, `H/L^3` localization, `H/L^2` coefficient-majorant, and opposite-parity branches are closed under the current hypotheses. The accepted clue remains live for the surviving even-shift `H/L`-scale question and for the separate fixed-power source-specific arithmetic question; bounded-source and moving-test-function questions still require independently justified targets.
