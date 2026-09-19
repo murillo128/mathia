@@ -1,43 +1,25 @@
-# MI-071 — Source-frame exceptional geometry is directly priced by source codimension
+# MI-071 — Source-frame exceptional geometry is priced jointly by codimension and conductor
 
-**Evidence level:** exact synthesis from [MC-385](../../findings/MC-385-fixed-power-exceptional-moduli-cannot-feed-rank-linear-source-frame.md) through [MC-392](../../findings/MC-392-source-codimension-controls-sparse-exception-budget.md), interpreted against the endpoint source-frame bounds of MC-374 and MC-381.
+**Evidence level:** exact synthesis from [MC-385](../../findings/MC-385-fixed-power-exceptional-moduli-cannot-feed-rank-linear-source-frame.md) through [MC-393](../../findings/MC-393-near-full-rank-source-cost-from-codimension-feedback.md), interpreted against the endpoint source-frame bounds of MC-374 and MC-381.
 
-The endpoint frame does not require uniform cancellation for every source character. Let `W` be a surviving endpoint-mode subspace, `H=|W|`, let `C=W^perp` with codimension resource `c=dim C`, and let `g` be the exact normalized Cayley correlation kernel.
+The endpoint frame does not require uniform cancellation for every source character, but exceptional geometry must be measured after pullback to the actual source-difference family. Let `W` be a surviving endpoint-mode space, `H=|W|`, `C=W^perp` and `c=dim C`. MC-386--MC-391 show that abstract Welch extremizers, high dual distance and Sidon-like projected character systems do not model the exact source quotient correctly: sparse endpoint exceptions require substantial genuine four-character collision mass.
 
-MC-385--MC-389 show that an ambient exceptional count is meaningful only after pullback to the source-difference family. Rank at most `R` gives the generic Welch scale `H/R`, but the actual endpoint Bochner support is a high-dimensional projected simplex rather than a near-extremal low-dimensional coset. In the high-rank branch, if ordinary good modes satisfy `epsilon_R=o(R^(-1/2))`, this source geometry already forces more than the abstract `H/R` floor.
-
-MC-390 adds an orthogonal obstruction. Up to a harmless global sign, the exact endpoint kernel is a weighted coordinate-sign sum. If the dual distance of `W` is at least five, the coordinate signs are four-wise independent and exact second/fourth moments force `Omega(H)` source differences to have correlation at the critical frame scale. High dual distance is therefore hostile to the desired `o(R^(-1/2))` good-mode theorem outside `O(H/R)` exceptions.
-
-MC-391 identifies the additive invariant behind that split. Quotient the coordinate characters by `C`, merge equal classes, and write the resulting distinct classes as `a` with masses `w_a`. With
-
-`sigma^2=sum_a w_a^2`,
-
-the fourth moment is controlled by genuine four-character collisions. In particular, an analytic theorem with at most `K H/R` bad modes and all other modes `o(R^(-1/2))` requires linearly growing normalized quartic collision mass. This rules out Sidon-like or generic high-distance projected character systems.
-
-MC-392 shows that the quartic collision resource is itself not free. Because the support comes from quotienting coordinate vertices by the `c`-dimensional relation space, every nonzero translate pairs at most `c+1` support points. For the weighted probability measure `p=sum_a w_a delta_a`, this gives
-
-`||p*p||_2^2 <= (2c+3) sigma^4`,
-
-and therefore, by Plancherel,
+MC-392 prices that fourth-moment resource directly by independent source relations. After quotienting duplicate coordinate characters, the exact kernel satisfies
 
 `E_W |g|^4 <= (2c+3)(E_W |g|^2)^2`.
 
-If all nonzero modes outside `B` satisfy `|g(I)|<=epsilon` with `R epsilon^2<=1`, then
+If all nonzero modes outside `B` obey `|g|<=epsilon` with `R epsilon^2<=1`, then
 
 `|B|+1 >= H/(2c+3) (1-R epsilon^2)^2`.
 
-At the target scale `epsilon=o(R^(-1/2))`,
+Thus at the desired `epsilon=o(R^(-1/2))`, an exceptional budget `|B|<=K H/R` forces `c=Omega(R)`. Additive collision mass is not an independent knob: linearly many independent quotient relations must exist first.
 
-`|B|+1 >= (1-o(1)) H/(2c+3)`.
+MC-393 closes the next source-cost loophole. If a trial endpoint source package satisfies `P<=y^A`, then for every fixed `0<beta<1` killing all source primes above `y^beta` costs at most `A/beta` dimensions. The remaining rough-squarefree characters still admit the needed power saving because their prime factors can be packed into blocks below `y^gamma`, `gamma=(1+beta)/2<1`. Feeding this codimension bound into MC-392 gives, for each fixed `eta>0`,
 
-Hence a sparse exceptional theorem `|B|<=K H/R` with fixed `K` requires
+`log P/log y >= min{(1-eta)R, a_eta log log y}`.
 
-`c >= (1-o(1)) R/(2K)-3/2`.
+The rank coefficient can therefore be made arbitrarily close to one. The source relation budget demanded by sparse endpoint exceptions is not merely linear in rank; inside this fixed-power architecture it costs **near full rank in logarithmic conductor** until the separate `log log y` ceiling takes over.
 
-The usable source relation resource is therefore **linear codimension**, not merely the existence or raw count of low-weight relations. Quartic collision mass can only become large enough if the quotient has enough independent source relations to support it. In the fixed-power source model of MC-381, where `c<=A/beta` with `beta=1/100`, MC-392 yields the concrete floor `|B|+1 >= (1-o(1))H/(200A+3)`; sublinear `A` cannot support any fixed `K H/R` exceptional budget.
+The reusable audit is now two-stage. First pull exceptional geometry back to the source quotient and compute the codimension needed to support the required moment concentration. Then price that codimension through the physical incidence/conductor map. A combinatorial abundance of relations is not useful if buying those relations already consumes essentially one source unit per endpoint rank.
 
-This sharpens the reusable audit. First pull exceptional geometry back to the physical source frame. Then quotient duplicate characters exactly. Before trying to manufacture quartic collisions, price how many **independent quotient relations** are available. A proposed analytic theorem should be compared directly with the codimension/exception inequality; otherwise combinatorial collision counting can appear promising in a source regime that cannot carry enough total fourth-moment concentration.
-
-The immediate arithmetic question is now whether the actual source package can provide `c=Omega(R)` independent relations at an admissible conductor/source cost, or whether the fixed-power incidence architecture forces `c=o(R)` in the regime where the analytic estimate would need only `O(H/R)` exceptions.
-
-**Boundary.** MC-392 is a necessary resource inequality for the exact exponent-two endpoint quotient. It does not prove that linear codimension is sufficient, estimate the actual analytic good-mode bound, identify every source prime with an independent relation, bound `M(x)`, prove Möbius cancellation, or imply RH. The matching argument depends on the projected-coordinate-simplex origin and on the exponent-two quotient.
+**Boundary.** MC-393 gives a necessary source-cost lower bound in the exact endpoint/fixed-power package and does not prove linear codimension sufficient, estimate the desired good-mode theorem, bound `M(x)` or imply RH. The `log log y` branch remains, and constants deteriorate as the cutoff exponent tends to one.
