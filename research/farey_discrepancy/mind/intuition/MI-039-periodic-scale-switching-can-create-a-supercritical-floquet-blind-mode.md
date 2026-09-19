@@ -1,6 +1,6 @@
-# MI-039 — Periodic scale switching creates an all-integer supercritical blind mode from individually harmless filters
+# MI-039 — Periodic scale switching creates a supercritical blind mode that survives horizon-local Euler coherence
 
-**Evidence level:** exact synthesis from [FD-212](../../findings/FD-212-period-three-diagonal-root-depth-creates-a-source-realizable-supercritical-floquet-blind-ray.md) and [FD-213](../../findings/FD-213-dyadic-band-profile-lifting-preserves-all-integer-switched-blindness.md), interpreted against the fixed-family dichotomy of FD-210--FD-211.
+**Evidence level:** exact synthesis from [FD-212](../../findings/FD-212-period-three-diagonal-root-depth-creates-a-source-realizable-supercritical-floquet-blind-ray.md) through [FD-216](../../findings/FD-216-logarithmically-growing-euler-coherence-remains-horizon-locally-blind.md), interpreted against the fixed-family dichotomy of FD-210--FD-211.
 
 Let `Delta_A(n)=A(2n)-A(n)` and observe one dyadic root filter at each scale. FD-212 takes the periodic depth schedule `q_j=(0,3,3)` on powers of two. Each instantaneous annihilator has only the harmless root `1`, and the fixed family has gcd `1`, yet the ordered period-three transfer has multiplier
 
@@ -8,18 +8,20 @@ Let `Delta_A(n)=A(2n)-A(n)` and observe one dyadic root filter at each scale. FD
 
 whose per-step modulus `rho=phi^(4/3)` satisfies `sqrt(2)<rho<2`. The nonautonomous recurrence therefore supports a physical super-square-root Floquet mode at bounded filter depth and critical random cost.
 
-FD-213 shows that this is not merely a sparse-ray artifact. Dyadic dilation preserves the mantissa
+FD-213 shows that this is not merely a sparse-ray artifact. Dyadic dilation preserves the mantissa `t(n)=n/2^floor(log_2 n)`, so a scale-index Floquet mode can be tensored with a boundary-vanishing Lipschitz profile and stitched into one bounded-increment source whose selected switched filter vanishes at every integer while `|A(N_m)| asymp N_m^alpha`, `alpha≈0.9256558848>1/2`.
 
-`t(n)=n/2^floor(log_2 n)`.
+FD-214 and FD-215 show that substantial arithmetic source fidelity can still be layered onto the same blind mechanism: exact squarefree support, exact unit amplitudes, and every fixed finite collection of Möbius Euler sign laws can be preserved. FD-216 makes the finite-versus-global boundary quantitative. For every fixed
 
-If `(a_j)` is the scale-index Floquet mode and `h:[1,2]->R` is Lipschitz with `h(1)=h(2)=0`, then
+`0<c<1/(2 log 2)`,
 
-`A(n)=epsilon a_(floor(log_2 n)) h(t(n))`
+there is a deterministic **horizon-indexed** family whose member at scale `N` satisfies the exact Euler law at the first `k=floor(c log N)` primes, yet the switched observation is sub-square-root on the target window while the summatory value remains `N^(alpha-o(1))`. The complete comparison error is governed by
 
-inherits the switched recurrence on every integer because dilation changes only the scale index. The endpoint zeros of `h` make adjacent-band increments uniformly bounded when `rho<2`. Hence FD-213 constructs a real bounded source for which the selected switched filter vanishes **for every integer** while `|A(N_m)| asymp N_m^alpha` on explicit interior band points, with `alpha≈0.9256558848>1/2`.
+`N^beta G_(1/2)(P)G_beta(P) + 2^k`,
 
-The durable mechanism is a fibre decomposition. An all-integer diagonal criterion need not add cross-ray information when its dilation operator preserves an auxiliary coordinate exactly. Here the mantissa fibres carry independent copies of the same scale recurrence, and a vanishing boundary profile stitches them into one bounded-increment source without destroying the blind mode.
+with `beta=alpha-1/2<1/2`; for the first `c log N` primes the Euler products are `N^o(1)` and `2^k=N^(c log 2+o(1))`. Thus merely making the number of exact Euler constraints unbounded does not destroy the blind mode.
 
-The remaining arithmetic discriminator must therefore couple those fibres or forbid the lifted source for a reason absent from bounded-increment geometry—for example squarefree support, multiplicativity, or another exact Möbius relation. Another argument based only on all-integer sampling, bounded source increments, fixed-family gcds or instantaneous filter spectra cannot eliminate the FD-213 mode.
+The decisive quantifier is not the count of local constraints but whether they belong to **one persistent source across all scales**. If a fixed squarefree ternary source with `xi_1=1` satisfies nested exact Euler laws whose union exhausts the primes, FD-216 shows immediately that `xi=mu`. Horizon-local countermodels can therefore absorb logarithmically growing coherence, while globally compatible exhaustive coherence collapses the source class to Möbius itself.
 
-**Boundary.** FD-213 is a bounded-source representation countermodel, not a Möbius counterexample. It does not show that a multiplicative or squarefree-supported source can realize the profile-lifted mode, nor classify arbitrary switched schedules. Its exact content is that additive/summatory coherence plus all-integer diagonal observation still does not restore square-root completeness for this nonautonomous sensor.
+The reusable mechanism is a fibre decomposition plus a quantifier boundary. The switched observation remains fibrewise enough that finite Euler packages can be preconditioned before source construction, even when their size grows like `log N`. What has not been absorbed is the compatibility required to reuse the **same** source when the constrained prime set changes with scale.
+
+**Boundary.** FD-216 is not a Möbius counterexample and does not prove that `1/(2 log 2)` is sharp. Its sources depend on the target horizon. The surviving research question is whether physical Farey data can exploit same-source cross-scale multiplicative compatibility quantitatively before the assumptions have already identified the source as Möbius.

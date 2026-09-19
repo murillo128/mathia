@@ -1,29 +1,29 @@
-# MI-072 — Moving source cutoffs turn analytic depth into a quantitative rank deficit
+# MI-072 — Paired source packing separates the genuine analytic tariff from the moving-gap artifact
 
-**Evidence level:** exact synthesis from `MC-392`--`MC-395`.
+**Evidence level:** exact synthesis from `MC-392`--`MC-396`.
 
-Write
+Write `A=log P/log y`, `R=endpoint rank`, and `L=log log y`. MC-392 shows that after restricting to a surviving source-mode space, an `O(H/R)` exceptional family at critical accuracy cannot coexist with low relation codimension: the exact projected-simplex fourth moment forces essentially linear codimension. MC-393 then prices that codimension through the physical source package, and MC-394 gives `liminf A/R>=1` throughout `R=o(L)`.
 
-`A=log P/log y`, `R=endpoint rank`, `L=log log y`.
+MC-395 reopened the explicit q-van-der-Corput/differencing inequality with a moving smoothness gap `delta`. Its greedy modulus factorization bounded each closed block separately from below and therefore used `O(A/delta)` differencing stages, producing a power-saving tariff of the form `2^(-O(A/delta))` and the quantitative deficit
 
-MC-392 shows that after restricting to a surviving source-mode space, an `O(H/R)` exceptional family at critical accuracy cannot coexist with low relation codimension: the exact projected-simplex fourth moment forces essentially linear codimension. MC-393 then prices that codimension through the physical source package. For every fixed source cutoff below the shell scale, the relation budget already gives a source-cost coefficient arbitrarily close to one until an independent `log log y` analytic ceiling intervenes.
+`R-A = O(R^2/L + log R)`.
 
-MC-394 makes the fixed-cutoff quantifiers decisive. If `R=o(L)`, every fixed proportional deficit is eventually impossible, so
+MC-396 identifies the `1/delta` stage count as an artifact of that intermediate packing estimate. For next-fit greedy blocks below the cap `B=y^(1-delta/2)`, every consecutive pair satisfies
 
-`liminf A/R >= 1`.
+`B_j B_(j+1) > B`.
 
-At a fixed cutoff, only `O(log R)` source dimensions can remain unpaid after the exceptional-family and fourth-moment constraints are combined.
+Since the total conductor is at most `y^A`, pairing consecutive blocks gives only `O(A)` blocks uniformly as `delta->0`. The rough terminal and differencing calculation then has
 
-MC-395 makes the conclusion quantitative by allowing the cutoff gap `delta` to move. Reopening the explicit q-van-der-Corput/differencing inequality shows that approaching the shell scale requires `O(A/delta)` stages and therefore pays an analytic tariff of the form
+`σ_(A,delta) >= c delta 2^(-C A)`
 
-`2^{O(A/delta)}`.
+for absolute `c,C>0`. The gap still weakens the final saving, but it no longer multiplies the proof depth.
 
-Choosing `delta` from the hypothetical deficit `D=R-A` and feeding the resulting good-mode bound back into the exact codimension inequality yields
+Feeding that corrected analytic estimate back into the exact codimension inequality sharpens the source-cost conclusion to
 
-`D = O(R^2/L + log R)`
+`A >= R-O(log(R+2))`
 
-throughout `R=o(L)`. In particular, sufficiently far below the logarithmic horizon the exact endpoint package pays nearly one full source unit per rank, with only the displayed quantitative deficit.
+for every `R=o(L)`. More strongly, the same logarithmic unpaid rank persists for `R<=kappa_0 L` for some absolute `kappa_0>0`. The former `R^2/L` deficit was therefore not the intrinsic transition-scale obstruction.
 
-The reusable point is that **a moving structural cutoff and its analytic proof depth are one coupled resource**. A fixed-parameter theorem may hide the tariff that becomes decisive when the cutoff itself is optimized. To claim a stronger source-cost result, one must expose the parameter dependence of the analytic estimate and optimize it jointly with the source codimension rather than tune either side in isolation.
+The reusable point is more precise than “moving parameters cost proof depth.” **Expose the internal combinatorics before declaring that parameter dependence intrinsic.** A moving cutoff can genuinely weaken the analytic saving, but a lossy factorization can add a second, artificial dependence. Here the invariant of two consecutive greedy blocks removes the artificial inverse-gap depth while leaving the genuine `2^(O(A))` tariff and the linear `delta` loss visible.
 
-**Boundary.** This is an obstruction inside the current exact endpoint/source-package architecture, not an estimate for `M(x)` and not an RH consequence. The transition `R~log log y` remains open because the term `R^2/L` is then already of order `R`. A different source relation, exceptional geometry, terminal estimate, or destination theorem can change the ledger rather than merely improve the constants in this one.
+**Boundary.** This remains an obstruction inside the current exact endpoint/source-package architecture, not an estimate for `M(x)` and not an RH consequence. The constant `kappa_0` is not optimized. Beyond the fixed-fraction logarithmic range, the genuine `2^(O(A))` differencing tariff, the `O(R)` exceptional family, source incidence, or the destination theorem may still become decisive.

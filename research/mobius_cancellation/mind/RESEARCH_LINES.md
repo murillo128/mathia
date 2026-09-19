@@ -12,32 +12,34 @@ MC-385--MC-392 identify the correct endpoint resource. Ambient exceptional count
 
 At `epsilon=o(R^(-1/2))`, an exceptional theorem of size `O(H/R)` therefore needs linear source codimension. Quartic collision mass is not an independent combinatorial knob: the source quotient must first carry enough exact relations.
 
-MC-393 feeds that codimension obstruction back into physical source cost. For every fixed cutoff exponent below one, a package `P<=y^A` leaves many source modes after removing large-prime incidence, while the remaining rough-squarefree characters still admit the needed power saving. This already gives, for every fixed `eta>0`,
+MC-393 feeds that codimension obstruction back into physical source cost. For every fixed cutoff exponent below one, a package `P<=y^A` leaves many source modes after removing large-prime incidence, while the remaining rough-squarefree characters still admit the needed power saving. MC-394 closes the coefficient-one limit below the analytic horizon: when `R=o(log log y)`, `liminf A/R>=1`.
 
-`A >= min{(1-eta)R, a_eta log log y}`.
+MC-395 exposed an apparent quantitative deficit by allowing the source cutoff gap `delta` to move: a one-block-at-a-time factorization produced `O(A/delta)` differencing stages and hence the bound `A>=R-O(R^2/L+log R)`, `L=log log y`. MC-396 shows that the inverse-gap depth was a packing artifact. In next-fit greedy packing, consecutive blocks satisfy `B_j B_(j+1)>B`; pairing them bounds the number of blocks by `O(A)` uniformly as `delta->0`. The analytic saving becomes
 
-MC-394 closes the coefficient-one limit below the analytic horizon: when `R=o(log log y)`,
+`σ_(A,delta) >= c delta 2^(-C A)`,
 
-`liminf A/R >= 1`,
+rather than `c delta 2^(-C A/delta)`. Under the explicit admission condition
 
-and at each fixed cutoff the number of unpaid source dimensions is only `O(log R)`. MC-395 then returns to the explicit moving-parameter differencing inequality and quantifies the remaining deficit. Writing `L=log log y`, still under `R=o(L)`,
+`2^(C_0 A)(L+log(R+2)) = o(delta log y)`,
 
-`A >= R - C(R^2/L + log(R+2))`.
+the same codimension feedback now yields
 
-Thus the fixed-power endpoint architecture pays essentially one unit of `log_y P` per rank until the independent `log log y` analytic ceiling becomes active. The useful transition is no longer a vague question of whether enough codimension can be generated: it is where the moving cutoff becomes so expensive analytically that `R^2/L` is order `R`.
+`A >= R-O(log(R+2))`
 
-The live endpoint question is therefore concentrated near `R~log log y`, or in mechanisms that change one of the load-bearing ledgers: source incidence, the squarefree-smooth conductor model, the `O(R)` exceptional family, the projected-simplex fourth moment, or the destination's exceptional-set requirement. Another fixed proportional source-cost improvement below the logarithmic horizon is no longer a distinct frontier.
+throughout `R=o(L)`, and even for `R<=kappa_0 L` for some absolute `kappa_0>0`.
+
+The source-cost frontier has therefore moved again. The `R^2/L` deficit was not a genuine smooth-character-sum barrier; it came from a lossy modulus-factorization estimate. The remaining transition-scale difficulty is the true `2^{O(A)}` differencing tariff, the `O(R)` low-conductor exceptional family, the source-incidence ledger, or the projected-simplex fourth-moment geometry.
 
 ## Keep source incidence, analytic depth, conductor and exceptional geometry distinct
 
-The current resource ledger separates finite-resolution quotienting, source-incidence rank, package conductor, theorem admission, terminal character saving, source-frame energy, additive collision mass and independent relation codimension. MC-395 adds one more explicit currency: when the source cutoff approaches the shell scale by a gap `delta`, the analytic differencing depth is `O(A/delta)` and the power saving pays an exponential tariff of the form `2^{O(A/delta)}`.
+The current resource ledger separates finite-resolution quotienting, source-incidence rank, package conductor, theorem admission, terminal character saving, source-frame energy, additive collision mass and independent relation codimension. MC-396 sharpens the analytic-depth currency: the moving gap `delta` still weakens the power-saving exponent linearly, but it no longer multiplies the number of differencing stages.
 
-That tariff must be optimized jointly with the codimension left after imposing source relations. It is not legitimate to substitute a moving `delta(y)` into a theorem whose constants were proved only for fixed smoothness. The quantitative conclusion comes from reopening the explicit differencing inequality, tracking the moving gap, and only then feeding the resulting good-mode estimate back into MC-392.
+This distinction matters methodologically and quantitatively. A moving structural parameter can expose hidden proof cost, but one must first audit whether the claimed parameter dependence is intrinsic or came from an intermediate decomposition. Here the individual lower bound on each closed greedy block was too weak; the paired invariant `B_jB_(j+1)>B` removes the artificial `1/delta` stage count without changing the underlying character-sum theorem.
 
-A future endpoint theorem should therefore state both the relation budget and the analytic price of making those relations useful. Generic Gram improvements, abstract code-distance arguments, isolated low-weight relations or larger character families do not help unless they survive this source-cost/analytic-depth feedback and change the `R~log log y` transition or the destination theorem itself.
+A future endpoint theorem should therefore state both the source relation budget and the **surviving** analytic price after optimal factorization. Generic Gram improvements, abstract code-distance arguments, isolated low-weight relations or larger character families do not help unless they change the genuine `2^{O(A)}` tariff, the exceptional family, the source-incidence cost, or the destination theorem itself.
 
 ## Repair probabilistic comparators only after exact-stratum and algebraic-collapse gates
 
-Probabilistic proxies remain secondary until their conditioning is arithmetically consistent and their observables survive exact multiplicative simplification. The endpoint results now make the missing resource quantitative: a source with too little relation codimension cannot support the desired sparse exceptional geometry, while below the logarithmic horizon buying enough codimension already costs asymptotically full rank.
+Probabilistic proxies remain secondary until their conditioning is arithmetically consistent and their observables survive exact multiplicative simplification. The endpoint results now make the missing resource quantitative: a source with too little relation codimension cannot support the desired sparse exceptional geometry, while below a fixed positive fraction of the logarithmic horizon buying enough codimension already costs all but `O(log R)` of the rank.
 
-A comparator that appears favorable only because it ignores that source-cost and moving-cutoff feedback is not modelling the physical endpoint problem.
+A comparator that appears favorable only because it ignores source cost, exceptional geometry or the genuine exponential-in-rank analytic tariff is not modelling the physical endpoint problem.

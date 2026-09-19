@@ -1,25 +1,27 @@
-# MI-050 — Full localized Weil energy turns any RH failure into a finite-radius first crossing
+# MI-050 — Full localized Weil energy turns any RH failure into a finite-radius first crossing whose prime thresholds are form-small, not norm-small
 
-**Evidence level:** `WI-355` synthesis from Suzuki's localized Weil-form theorem plus exact variational monotonicity.
+**Evidence level:** exact synthesis from `WI-355` and `WI-356`, using Suzuki's localized Weil-form framework.
 
 For the localized Weil form on `(-a,a)`, let
 
 `lambda(a)=inf_(v!=0) Q_W(v)/||v||_2^2`.
 
-Suzuki's framework identifies this as the lowest eigenvalue of a localized self-adjoint Weil operator, proves continuity in `a`, positivity for sufficiently small `a`, and that failure of RH is equivalent to `lambda(a)<0` for some finite radius.
+Suzuki's framework identifies this as the lowest eigenvalue of a localized self-adjoint Weil operator, proves continuity in `a`, positivity for sufficiently small `a`, and that failure of RH is equivalent to `lambda(a)<0` for some finite radius. Nested variational domains give the exact monotonicity `lambda(b)<=lambda(a)` for `b>a`. Therefore under `not RH` there is a canonical first radius `a_*=inf{a:lambda(a)<=0}` with `lambda(a_*)=0`; zero is then an actual ground-state eigenvalue. At radius `a`, the arithmetic kernel uses only prime powers up to `e^(2a)`.
 
-The nested variational domains add a simple but decisive exact fact: if `a<b`, every test function supported in `(-a,a)` is also admissible in `(-b,b)`, hence
+WI-356 resolves the local topology of one newly activated prime-power channel. For `q=p^k`, activation occurs at `a_q=(log q)/2`. On the fixed interval `(-1,1)`, let `t=log(q)/a=2-epsilon`. The channel is a compressed translation with coefficient `c_q=Lambda(q)/sqrt(q)`. For every `a>a_q` sufficiently close to threshold, its self-adjoint `L^2` operator norm is exactly `c_q`; at `a=a_q` it is zero. Thus the arithmetic perturbation is not norm-continuous at activation, no matter how short the new overlap strip becomes.
 
-`lambda(b)<=lambda(a)`.
+The same channel is small in the topology supplied by Suzuki's universal logarithmic form `L(w)`. WI-356 proves the endpoint estimate
 
-Therefore under `not RH` there is a canonical first radius
+`|C_w(2-epsilon)| <= L(w)/log(1/(2 epsilon))`,
 
-`a_*=inf{a: lambda(a)<=0}`
+hence
 
-with `0<a_*<infinity` and `lambda(a_*)=0`. Because the localized operator has discrete lower-bounded spectrum, zero is then an actual ground-state eigenvalue rather than a defect visible only through a cofinal limiting sequence.
+`|P_(q,a)(w)| <= [2 c_q/log(1/(2 epsilon))] L(w)`.
 
-This changes the sparse-defect ledger. A normalized pair-correlation statistic can make finitely many or zero-density off-line zeros asymptotically invisible, but the **full localized quadratic form cannot hide every RH failure in that way**: some finite radius must lose coercivity. At radius `a`, the arithmetic kernel uses only prime powers up to `e^(2a)`, so the hypothetical failure has finite arithmetic support data even though the operator problem remains infinite-dimensional.
+The relative-form coefficient tends to zero as `a downarrow a_q`. The apparent paradox is resolved by the witnesses: vectors that nearly saturate the `L^2` norm jump put order-one mass into shrinking endpoint strips, forcing their logarithmic form energy to diverge. They escape every bounded-`L` set.
 
-The reusable distinction is between localization that compresses and normalizes away sparse defects and localization that retains a monotone variational ground energy. The RH-facing source problem becomes: prove strict positivity of the localized ground energy for every finite radius, or find a propagation principle that prevents its first zero crossing as new prime-power thresholds enter.
+This sharpens the first-crossing program. The threshold step cannot be controlled by ordinary bounded-operator perturbation theory in `L^2`; a viable induction must use the logarithmic form topology together with a quantitative coercive reserve, a bound on the `L`-energy of a hypothetical null state, or additional source constraints from the exact null equation. Form-smallness makes threshold propagation compatible with the source formula, but does not prove it.
 
-**Boundary.** Finite prime-power input does not make the localized operator finite-dimensional or automatically decidable. This intuition does not give an effective bound on a hypothetical `a_*`, does not invalidate `WI-354` for pair correlation, and does not prove the required coercivity. It identifies a stronger defect-sensitive interface and the exact first-crossing event that RH would forbid.
+The reusable distinction is between **defect sensitivity** and **perturbation topology**. The full localized form detects every RH failure at finite radius, unlike zero-count-normalized pair correlation, but the discrete arithmetic channels entering that form are only small relative to the endpoint-singular energy that penalizes their concentration.
+
+**Boundary.** Finite prime-power input does not make the localized operator finite-dimensional or automatically decidable. WI-356 controls only the newly activated channel; the already-active prime terms, archimedean contribution and continuous remainder also vary with `a`. No spectral gap, global coercivity theorem or threshold-propagation theorem is established.
