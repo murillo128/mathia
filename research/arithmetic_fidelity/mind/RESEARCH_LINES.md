@@ -8,7 +8,7 @@ Arithmetic fidelity is not a scalar property of a representation. What matters i
 
 The line should therefore keep source geometry, observation fidelity, conditioning, asymptotic scale and admissible parameter lattice separate. A formal coordinate that exists in the ambient analytic model is useful only after its pullback to the physical source class has been identified.
 
-## Resolve the remaining off-square source-lattice branch after exact square fibers close
+## Resolve the metrically thin exceptional off-square source-lattice branch
 
 **Linked intuitions:** `MI-055-derivative-depth-is-a-second-left-tail-scaling-coordinate`.
 
@@ -20,12 +20,14 @@ At the square collision fibers `b_n->m^2`, equality of exponential saddle rates 
 
 AF-425 pushes the same odd square fiber one order further and exposes the source-realizability gate. Its continuously tuned cancellation equation lives in the integer coordinate `d_n=s_n-2n`; adjacent admissible depths are separated by `~log n` in the corrected target function while the required alignment window shrinks by inverse powers of `n`.
 
-AF-426 resolves that square-fiber question exactly rather than statistically. On an exact square amplitude `a=m^2`, bounded complete-packet ratio forces `d_n=-1` eventually, and at that only admissible depth the packet ratio tends to `m K_m>1`. Hence the target ratio cannot approach one, and in particular the `o(n^-2)` shrinking target has no solutions on any exact square-amplitude fiber, even when the integer depth is allowed to vary with `n`. Adjacent-packet cancellation therefore cannot neutralize the tied exponential transition there.
+AF-426 resolves the exact square-amplitude fiber pointwise. On `a=m^2`, bounded complete-packet ratio forces `d_n=-1` eventually, and at that only admissible depth the packet ratio tends to `m K_m>1`. Hence the ratio cannot approach one and the `o(n^-2)` shrinking target has no solutions on any exact square-amplitude fiber.
 
-The source-lattice problem has consequently moved off the exact square fibers. For `a!=m^2`, the formal balancing depth can grow on the `n/log n` scale and the admissible integer depth remains a genuine inhomogeneous Diophantine variable. The live question is whether those off-square moving targets are hit, avoided or only sparsely realized at the precision needed to suppress the tied saddle. Lower saddles, tall-column families and beyond-all-orders residuals remain separate even if an off-square alignment occurs.
+AF-427 resolves most of the displaced branch metrically. Writing the amplitude displacement as `A=log(m^2/a)`, source compatibility is `d log n/n -> A`. On every compact `A`-interval only `O(n/log n)` integer depths are admissible at scale `n`, while the second-order cancellation target is transverse to `A` with derivative of size `~n`; an `n^-2` target window therefore occupies only `O(n^-3)` amplitude width per source cell. The resulting limsup cover has finite total length and `s`-mass for every `s>2/3`. Thus the amplitudes admitting infinitely many second-order hits form a set of Lebesgue measure zero and Hausdorff dimension at most `2/3`.
+
+The live source-lattice question is no longer generic off-square tuning. It is **pointwise exceptional-set arithmetic**: determine whether any distinguished amplitudes forced by the original source construction can lie in AF-427's thin limsup set, and whether the exact moving centers admit infinitely many `o(n^-2)` hits there. Beyond-all-orders packet analysis is relevant only after a specific exceptional amplitude survives this gate. Lower saddles, tall-column families, the omitted-`1` sector and the genuinely supercritical regime remain separate.
 
 ## Keep physical locality separate from transformed criticality
 
 Source-local statements should be formulated in the physical arithmetic coordinate before they are interpreted through transforms, determinants or saddle geometry. A transform may make a critical exponent or collision surface visible while hiding the discrete source constraints that decide whether the surface is reachable.
 
-The reusable control is to pull every proposed critical tuning back through the exact source map. If the pullback is discrete, constrained or nonuniform, its spacing and admissible quantifier are part of the mathematical claim rather than a technical afterthought. AF-426 adds the stronger warning that an apparently natural collision fiber can be empty at the required source precision even when the continuous saddle equations balance there.
+The reusable control is to pull every proposed critical tuning back through the exact source map. If the pullback is discrete, constrained or nonuniform, its spacing and admissible quantifier are part of the mathematical claim rather than a technical afterthought. AF-426 adds the pointwise warning that a natural collision fiber can be empty at the required precision; AF-427 adds the metric warning that allowing the fiber to drift continuously still leaves the infinitely recurring source hits confined to a Hausdorff-thin exceptional set.

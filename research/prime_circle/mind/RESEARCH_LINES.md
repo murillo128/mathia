@@ -8,7 +8,7 @@ This file holds the current mathematical questions suggested by the durable prim
 
 PC-335--PC-346 classify the scalar finite-measure Mellin route. Full shell observations reconstruct the classical zeta-zero support, while the tempered extension gives only finite zeta-zero jets subject to a Gamma-strip threshold. Enlarging the scalar channel by a finite linear package therefore repackages the same divisor data rather than selecting its zeros.
 
-## Break matched-control equivalence with a source-specific destination invariant, not merely an outer automorphism
+## Break matched-control equivalence before finite spectralization, not by wrapping the same spectrum in another representation
 
 **Linked intuitions:** `MI-045-reciprocity-closed-signature-is-abelian-trivial-and-rank-two-at-first-lie-level` through `MI-048-outer-parity-exposes-only-contragredient-orientation-without-a-source-specific-destination`.
 
@@ -20,14 +20,18 @@ PC-353 proves that the inner-parity boundary is sharp but also closes the most i
 
 `tilde(D_R)=D_R^(-T)`.
 
-The source and control spectra are therefore contragredient. In `SL_3`, if the characteristic polynomial is `z^3-t z^2+s z-1`, the control swaps `(t,s)`. The odd coordinate `Delta=tr D-tr D^-1` can be nonzero, so outer parity genuinely escapes equality of conjugacy classes; the explicit target can still generate all of `sl_3`.
+The source and control spectra are therefore contragredient. In `SL_3`, if the characteristic polynomial is `z^3-t z^2+s z-1`, the control swaps `(t,s)`. A duality-odd coordinate such as `tr D-tr D^-1` can be nonzero, but the same orientation occurs for every admissible non-arithmetic reciprocal profile.
 
-But this surviving orientation is generic. The same reciprocal spectral relation holds for every admissible non-arithmetic matched profile because its derivation uses only the parity law and target automorphism. Reciprocal-symmetric class functions remain blind, while duality-odd class functions distinguish only a path from its sign-flipped contragredient twin. A nonzero `Delta` is therefore not an arithmetic or zero-selecting invariant by itself.
+PC-354 closes the natural finite-dimensional representation lift of that surviving orientation. For every finite-dimensional algebraic representation `rho` of `SL_d`, the spectrum of `rho(D)` is a fixed multiset of weight monomials in the ordinary eigenvalues of `D`, while
 
-The surviving question is now stricter than “make the involution outer.” A viable construction must explain why some duality-sensitive observable is **source-forced beyond generic contragredient orientation** and why that observable feeds an independently zero-sensitive destination theorem. Larger type-`A` targets, non-palindromic characteristic polynomials or arbitrary analytic wrappers around `Delta` do not satisfy that requirement.
+`Spec rho(tilde(D)) = Spec rho(D)^(-1)`.
+
+Exterior powers merely exchange complementary characteristic coefficients; symmetric powers, tensor products and arbitrary highest-weight representations apply the same classical weight/contragredient functoriality. Self-dual representations are reciprocal-blind, while non-self-dual representations only retain the generic orientation between a representation and its contragredient. No finite collection of such spectra recovers information already lost by the ordinary conjugacy-class quotient.
+
+The surviving question is therefore stricter than “make the involution outer” or “choose a richer representation.” A viable construction must introduce **source-forced structure before the finite spectral quotient**, retain a non-spectral covariant or canonical frame supplied intrinsically by the roots geometry, or justify an infinite-dimensional destination with an independently zero-sensitive analytic theorem. A fixed algebraic representation applied after `D` is formed cannot manufacture the missing arithmetic channel.
 
 ## Keep source recovery, nonlinear completeness, automorphism quotient, duality orientation and zero selection separate
 
-Prime Circle now exhibits distinct endpoints. Full scalar measurement reconstructs classical zeta structure. Full noncommutative depth reconstructs the centered source path. Triangular spectralization discards the oriented source coordinate. Inner parity makes even semisimple spectra exactly control-blind. Outer parity can restore a conjugacy-class distinction, but PC-353 shows that the forced distinction is classical contragredient orientation shared by matched controls.
+Prime Circle now exhibits distinct endpoints. Full scalar measurement reconstructs classical zeta structure. Full noncommutative depth reconstructs the centered source path. Triangular spectralization discards the oriented source coordinate. Inner parity makes even semisimple spectra exactly control-blind. Outer parity can restore a conjugacy-class distinction, but PC-353 shows that the forced distinction is classical contragredient orientation shared by matched controls, and PC-354 shows that every finite-dimensional algebraic representation spectrum is only a deterministic reciprocal function of the same original spectrum.
 
-The audit should therefore state the destination discriminator first; identify the quotient it uses; determine the automorphism group of that quotient; classify the source/control involution as inner or outer; and, if outer, test whether the resulting duality-odd coordinate is source-specific or merely a generic orientation. Progress requires a quotient that survives this full automorphism/duality audit and is independently tied to zeta-zero geometry.
+The audit should therefore state the destination discriminator first; identify the quotient it uses; determine the automorphism group of that quotient; classify the source/control involution as inner or outer; and, if outer, test whether the surviving duality coordinate is source-specific. If the destination then applies a representation functor, verify whether its observables contain any information beyond weight functions of the existing spectrum. Progress requires a source-forced invariant that survives this full automorphism/duality/representation audit and is independently tied to zeta-zero geometry.
