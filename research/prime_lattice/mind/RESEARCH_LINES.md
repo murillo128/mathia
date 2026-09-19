@@ -2,18 +2,20 @@
 
 This file holds the current mathematical questions suggested by the durable Prime-Lattice intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Leave bounded normal exact complete multiplicativity, not merely finite dimension
+## Leave scalarizable exact complete multiplicativity, not merely finite dimension or normality
 
 **Linked intuitions:** `MI-016-weil-form-observability-is-stronger-than-moment-observability` through `MI-043-bounded-normal-complete-multiplicativity-is-a-measure-mixture-of-scalar-prime-channels`.
 
 PL-345--PL-373 close the obvious completion, multiplicativity, functional-equation, coefficient-topology and scalar nonlinear theorem interfaces. PL-374--PL-376 then classify every finite-dimensional completely multiplicative matrix source for linear observables as a finite Artinian thickening of scalar multiplicative channels.
 
-PL-377 pushes the scalarization beyond finite dimension. A bounded normal completely multiplicative representation generates an abelian C*-algebra; after Gelfand transform, every integer acts pointwise by a scalar semicharacter, and every bounded linear observable is a measure mixture of those scalar channels. Infinite Hilbert dimension therefore does not by itself create irreducible operator-valued cross-prime coupling.
+PL-377 pushes scalarization beyond finite dimension. A bounded normal completely multiplicative representation generates an abelian C*-algebra; after Gelfand transform, every integer acts pointwise by a scalar semicharacter, and every bounded linear observable is a measure mixture of those scalar channels.
 
-The live frontier has moved outside **bounded normal exact complete multiplicativity with linear observation**. A materially new mechanism must use nonnormality, unbounded/domain structure, a controlled failure of complete multiplicativity, nonlinear operator observables, or a global measure/support/boundary condition that contributes information not already present in the scalar semicharacter family.
+PL-378 narrows the apparent nonnormal escape. If an invertible completely multiplicative representation extends to the rational group `Q_(>0)^x` and that **full group representation is uniformly bounded**, Day--Dixmier unitarization supplies one bounded similarity that turns the whole family into commuting unitaries. The spectral theorem then again gives a measure of scalar prime-torus characters. Nonnormality that disappears under one uniformly controlled change of Hilbert metric is therefore not an irreducible arithmetic coupling mechanism.
 
-## Keep source algebra, representation size, observable nonlinearity and analytic continuation separate
+The load-bearing distinction is now sharper than “normal versus nonnormal.” Genuine surviving categories include intrinsically one-sided noninvertibility, inverse-norm growth that prevents uniform group boundedness, unbounded/domain-sensitive representations, controlled failure of exact multiplicativity, or metric-sensitive observables for which the original Hilbert metric is itself arithmetically canonical and cannot be discarded by similarity.
 
-Finite nilpotent thickness and infinite normal spectral multiplicity are different enlargements, but both can remain scalar at the source interface. Neither creates analytic continuation, positivity or zero localization by itself.
+## Keep source algebra, group completion, metric covariance and analytic continuation separate
 
-A future Prime-Lattice proposal should state exactly where it leaves the classification: which noncommutative/nonnormal relation survives, which unbounded domain condition carries arithmetic data, which nonlinear observable extracts genuinely new content, or which global support condition is independently strong. Formal Euler products must not be carried past their proved normal-convergence domain merely because scalar channels have been packaged as operators.
+Finite nilpotent thickness, infinite normal spectral multiplicity and uniformly bounded nonnormal group representations are different enlargements, but all can remain scalar after the appropriate exact algebraic or similarity reduction. None creates analytic continuation, positivity or zero localization merely by packaging scalar prime channels as operators.
+
+A future Prime-Lattice proposal should therefore state exactly where it leaves these classifications: which one-sided/domain obstruction prevents group completion, which inverse growth blocks unitarization, which noncommutative or nonmultiplicative relation survives, or which metric-sensitive observable has source-canonical meaning not removable by equivalent renorming. Formal Euler products must not be carried past their proved normal-convergence domain merely because scalar channels have been packaged as operators.

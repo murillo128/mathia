@@ -1,6 +1,6 @@
-# MI-041 — Wang natural windows require pair-coordinate occupancy on a long-thin Bezout strip
+# MI-041 — Wang natural windows reduce to simultaneous-prime occupancy on subperiod rational-rotation branches
 
-**Evidence level:** exact synthesis from `VIS-313`--`VIS-319` plus the classical separated-frequency large sieve.
+**Evidence level:** exact synthesis from `VIS-313`--`VIS-320` plus the classical separated-frequency large sieve.
 
 The cutoff-free Wang remainder has no useful global nearest-frequency spacing because the full cross-base prime-ratio spectrum is dense. Dyadic arithmetic-height shells restore finite-resolution structure, and retaining two-prime sparsity gives the prime-prime shell energy at the correct logarithmic scale.
 
@@ -12,10 +12,22 @@ VIS-319 supplies the correct exact coordinates. Choose Bezout integers `a,b` wit
 
 `(q,r)=(ut-bh, vt-ah)`.
 
-The map `(t,h)->(q,r)` is unimodular, and modulo every prime `ell` it is a bijection. Exactly `(ell-1)^2` residue pairs have both `q` and `r` nonzero, so the full two-prime local factor `(1-1/ell)^2` is restored. The representation problem is therefore solved at the local sieve-dimension level.
+The map `(t,h)->(q,r)` is unimodular, and modulo every prime `ell` it is a bijection. Exactly `(ell-1)^2` residue pairs have both `q` and `r` nonzero, so the full two-prime local factor `(1-1/ell)^2` is restored.
 
-What remains is geometric rather than representational. The shell pulls back to a **long-thin skew domain**: for each determinant coordinate `h`, the `t`-interval has bounded length, while `h` ranges over a long interval. The missing theorem is a uniform upper-bound sieve/congruence-discrepancy estimate on that thin domain, with constants controlled uniformly in the slope/center and strong enough after Wang taper weighting.
+VIS-320 shows that the resulting long-thin domain is much more rigid than a generic skew lattice region. Under the natural condition `D<M/2`, the active lower and upper shell boundaries do not switch as `h` moves, the `t`-width is always below `3`, and every lattice point lies on one of at most three branches
 
-The reusable lesson is that coordinate fidelity and averaging length can live in different directions. The unimodular Bezout chart preserves both prime exclusions exactly, while the transverse `h` direction supplies the long family that fixed slices lacked. A viable proof should sieve the joint domain rather than project away the prime coordinates or demand asymptotics on each microscopic fibre.
+`t_j(h)=floor(U(h))-j`, `j=0,1,2`,
 
-**Boundary.** VIS-319 restores the local sieve dimension but does not prove the required thin-domain prime occupancy theorem, natural-window Wang estimate or RH consequence. Uniformity in the skew domain and destination-weighted aggregation remain the load-bearing analytic questions.
+selected by the exact mask `{U(h)}+j<W(h)`. The fractional part `{U(h)}` is a rational rotation with exact period `max(u,v)`.
+
+At the Wang resolution `D asymp M/log log M`, this period is `asymp M` while the full determinant segment has length `O(D)=o(M)`. The natural window therefore samples **less than one rational period**. Full-cycle residue balance cannot justify prime occupancy on the actual segment, even though the local two-prime exclusions are perfectly preserved.
+
+The live theorem is now a one-parameter arithmetic-distribution problem: uniformly control simultaneous primality of
+
+`q_j(h)=u t_j(h)-bh`, `r_j(h)=v t_j(h)-ah`
+
+on at most three moving mechanical branches over a subperiod rational orbit, then feed the resulting shell excess into the taper-weighted criterion of VIS-316. A generic two-dimensional sieve theorem may be sufficient but is no longer the minimal object; a full-period rational equidistribution theorem is insufficient because the physical window ends before one cycle.
+
+The reusable lesson is that coordinate fidelity, averaging length and periodicity scale are separate resources. The unimodular Bezout chart preserves the source exclusions, the transverse `h` coordinate supplies the family length, and VIS-320 identifies when that length is too short to average a rational orbit globally. A viable proof must use all three scales in the form consumed by the destination taper.
+
+**Boundary.** VIS-320 proves no prime-pair occupancy estimate, short-interval Beatty theorem in this moving rational regime, Wang natural-window bound or RH consequence. It only replaces the generic thin-domain frontier by at most three exact subperiod rational-rotation branches carrying both prime coordinates.

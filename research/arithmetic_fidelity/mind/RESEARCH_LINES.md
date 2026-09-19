@@ -10,12 +10,18 @@ AF-416--AF-432 isolate the full left-tail determinant hierarchy. Fixed derivativ
 
 AF-433--AF-435 separate source realization, source selection and transport. Coefficient-root neutrality canonically selects the Taylor radius, hence `c=2pi` and `a=1` for the Bernoulli source, but the current determinant aggregates shell labels before packet geometry and the selected square fibre fails the present adjacent-packet cancellation.
 
-AF-436 now shows that this loss is **not intrinsic to the exact coefficient sequence**. The normalized even coefficients are `zeta(2k)`; after peeling earlier shells, the residual beginning at shell `m` is asymptotic to `m^(-2k)`. The full shell ladder is therefore exactly recoverable in principle, but shell identity lives at exponentially separated resolution scales.
+AF-436 shows that this loss is **not intrinsic to the exact coefficient sequence**. The normalized even coefficients are `zeta(2k)`; after exact peeling of earlier shells, the residual beginning at shell `m` is asymptotic to `m^(-2k)`. The full shell ladder is therefore recoverable in exact arithmetic.
 
-The live question is no longer whether the source contains canonical shell data. It does. The question is whether a destination representation can transport that shell ladder with enough conditioning to interact with the critical packet aperture, rather than compressing it into aggregate zeta factors. Any proposed shell-resolved carrier must state the precision required to recover shell `m` and show that the downstream target consumes that information before it is averaged away.
+AF-437 adds the conditioning boundary hidden by exact peeling. For sequential recovery of shell `m`, coefficient noise and errors in every earlier shell are amplified at the target scale by
 
-## Keep selection, carrier resolution, transport and target cancellation as separate currencies
+`m^(2k)|e_k| + sum_(j<m) (m/j)^(2k)(|omega_(j,k)| + k|eta_(j,k)|)`.
 
-A source-selected parameter can fail downstream; exact source information can be present but exponentially ill-conditioned; and a representation can preserve aggregate moments while deleting provenance needed by the target. The current branch supplies all three controls at once.
+Hence an earlier weight error must be `o((j/m)^(2k))` and a relative location error must be `o(k^(-1)(j/m)^(2k))` for that peeling route; estimating the common radius itself requires error `o(m^(-2k)/k)`. Exact symbolic normalization avoids that particular estimation cost.
+
+The live question is no longer whether the source contains canonical shell data. It does. The question is whether a destination representation can transport the shell ladder **without first paying this sequential exponential error cascade**. A serious carrier must either preserve shell labels before recursive subtraction, prove a joint inverse whose conditioning beats the peeling benchmark, or use exact symbolic shell structure so that the earlier layers are not re-estimated from noisy downstream data.
+
+## Keep selection, carrier resolution, conditioning, transport and target cancellation as separate currencies
+
+A source-selected parameter can fail downstream; exact source information can be present but exponentially ill-conditioned; and a representation can preserve aggregate moments while deleting provenance needed by the target. AF-437 makes the distinction between exact recoverability and stable recoverability explicit rather than leaving it inside a generic precision warning.
 
 A continuation should therefore change something substantive: construct a shell-resolved carrier with auditable conditioning, justify a different source-native selector independently of target success, or use a destination mechanism that does not require the adjacent-packet cancellation excluded at the selected scale. Metric largeness of favorable amplitudes or downstream optimization cannot substitute for those source-side obligations.
