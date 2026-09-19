@@ -4,12 +4,12 @@
 
 **Parent findings:** RE-218--RE-221, RE-227.
 
-RE-220 shows that a complex phase cannot help one negative-binomial expansion center when the discarded tail is certified termwise in absolute value. RE-221 then shows that, for a fixed **positive-real** center, even the exact cancellation-sensitive normalized polynomial retains the factor-two Wiener floor. The fixed-parameter complex-center case remained open because the DC normalization `Q(1)` can itself have complex cancellation and need not be exponentially close to one.
+RE-220 shows that complex phase does not help a single negative-binomial expansion center when the discarded tail is certified termwise in absolute value. RE-221 then proves that a fixed **positive-real** center still has the factor-two Wiener floor when the exact cancellation-sensitive normalized polynomial is used. The fixed complex-center case remained open because the DC normalization `Q(1)` may itself have complex cancellation and need not be exponentially close to one.
 
-That escape is also blocked. Fix
+That fixed-parameter escape is also blocked. Fix
 
 \[
-0<\alpha<\frac\pi2,
+0<\alpha<\frac{\pi}{2},
 \qquad a=\rho e^{i\varphi}\ne0,
 \qquad N=\lambda m+O(1),\quad \lambda>0,
 \tag{1}
@@ -22,7 +22,7 @@ Q_{m,N,a}(z)
 :=z^m a^{-m}
 \sum_{k=0}^{N}
 \binom{m+k-1}{k}
-\left(1-\frac za\right)^k,
+\left(1-\frac{z}{a}\right)^k,
 \qquad
 F_m(z):=\frac{Q_{m,N,a}(z)}{Q_{m,N,a}(1)}.
 \tag{2}
@@ -32,11 +32,11 @@ Assume the whole symmetric arc is contracting,
 
 \[
 r:=\max_{|\theta|\le\alpha}
-\left|1-\frac{e^{-i\theta}}a\right|<1,
+\left|1-\frac{e^{-i\theta}}{a}\right|<1,
 \tag{3}
 \]
 
-and that the **actual normalized polynomial**, with no absolute-tail estimate on its remainder, predicts uniformly:
+and that the **actual normalized polynomial**, without replacing its remainder by an absolute-tail certificate, predicts uniformly:
 
 \[
 \sup_{|\theta|\le\alpha}
@@ -54,20 +54,20 @@ Then
 \tag{5}
 \]
 
-Thus exact cancellation at one genuinely complex fixed center does not cross the factor-two boundary either.
+Thus exact cancellation at one genuinely complex fixed center does not cross the factor-two boundary.
 
-More precisely, put
+More precisely, set
 
 \[
-r_0:=\left|1-\frac1a\right|,
+r_0:=\left|1-\frac{1}{a}\right|,
 \qquad
-u_0:=1+\frac1\rho,
+u:=1+\frac{1}{\rho},
 \qquad
 g(x):=(1+x)\log(1+x)-x\log x.
 \tag{6}
 \]
 
-Symmetric-arc contraction gives `0<=r_0<r<1`. Let `lambda_*` be the unique upper root of
+Symmetric-arc contraction gives `0 <= r_0 < r < 1`. Let `lambda_*` be the unique upper root of
 
 \[
 g(\lambda)+\lambda\log r+\log(1-r_0)=0.
@@ -78,7 +78,7 @@ Uniform prediction forces
 
 \[
 \boxed{
-\lambda\ge\lambda_*>rac r{1-r},
+\lambda\ge\lambda_* > r/(1-r),
 }
 \tag{8}
 \]
@@ -88,14 +88,14 @@ and the normalized coefficient norm obeys
 \[
 \boxed{
 \liminf_{m\to\infty}
-\frac1m\log\|F_m\|_A
+\frac{1}{m}\log\|F_m\|_A
 \ge
-\lambda_*\log\frac{\nu_0}{r}>2\alpha.
+\lambda_*\log\frac{\nu}{r}>2\alpha.
 }
 \tag{9}
 \]
 
-The theorem is deliberately fixed-parameter. It does not yet supply the diagonal/uniform closure for drifting complex centers that RE-222--RE-227 establish on the positive-real slice. Multi-center coefficient recombination, minimax/rational predictors, and other bases also remain outside the claim.
+The theorem is deliberately fixed-parameter. It does not yet supply the diagonal/uniform closure for drifting complex centers that RE-222--RE-227 establish on the positive-real slice. Multi-center coefficient recombination, minimax/rational predictors, and other bases remain outside the claim.
 
 ## 1. Complex DC cancellation cannot discount the Wiener norm
 
@@ -114,7 +114,7 @@ A_m:=\|Q_{m,N,a}\|_A
 \rho^{-m}
 \sum_{k=0}^{N}
 C_{m,k}
-\left(1+\frac1\rho\right)^k.
+\left(1+\frac{1}{\rho}\right)^k.
 \tag{11}
 \]
 
@@ -128,7 +128,7 @@ Q_{m,N,a}(1)
 a^{-m}
 \sum_{k=0}^{N}
 C_{m,k}
-\left(1-\frac1a\right)^k.
+\left(1-\frac{1}{a}\right)^k.
 \tag{12}
 \]
 
@@ -156,19 +156,19 @@ Consequently
 \tag{14}
 \]
 
-This direction is decisive: exact cancellation in `Q(1)` only makes the denominator smaller and the normalized Wiener norm larger. It cannot be used as a hidden discount.
+This is the decisive direction of the estimate: exact cancellation in `Q(1)` only makes the denominator smaller and the normalized Wiener norm larger. It cannot act as a hidden discount.
 
 ## 2. Exact flatness forces truncation beyond the worst-endpoint mode
 
-The finite polynomial in (2) is the same incomplete-beta polynomial as in RE-221, now at complex `a`. Direct differentiation gives
+The finite polynomial in (2) is the same incomplete-beta polynomial used in RE-221, now at complex `a`. Direct differentiation gives
 
 \[
 \frac{d}{d\theta}
 Q_{m,N,a}(e^{-i\theta})
 =
 -iK_{m,N}
-\left(\frac{e^{-i\theta}}a\right)^m
-\left(1-\frac{e^{-i\theta}}a\right)^N,
+\left(\frac{e^{-i\theta}}{a}\right)^m
+\left(1-\frac{e^{-i\theta}}{a}\right)^N,
 \tag{15}
 \]
 
@@ -182,40 +182,41 @@ K_{m,N}:=\frac{(m+N)!}{(m-1)!N!}.
 Choose an endpoint `theta_* in {+alpha,-alpha}` where (3) attains `r`. Equations (13)--(16) imply
 
 \[
-|F_m'(e^{-i\theta_*})|
+\left|\frac{d}{d\theta}F_m(e^{-i\theta})\right|_{\theta=\theta_*}
 \ge
 \frac{K_{m,N}r^N}
 {\displaystyle\sum_{k=0}^{N}C_{m,k}r_0^k}.
 \tag{17}
 \]
 
-For fixed `alpha,a,lambda`, the logarithmic derivative of the analytic factor in (15) is `O(m)` in a fixed neighborhood of `theta_*`. On an inward interval of length `h_m=m^{-2}`, the derivative therefore changes by only `1+o(1)` in magnitude and by `o(1)` in phase. Hence the difference of the two endpoint-near values of `F_m` is
+For fixed `alpha`, `a`, and `lambda`, the logarithmic derivative of the analytic factor in (15) is `O(m)` in a fixed neighborhood of `theta_*`. On an inward interval of length `h_m=m^{-2}`, the derivative therefore changes by only `1+o(1)` in magnitude and by `o(1)` in phase. Hence the difference between the two endpoint-near values of `F_m` is
 
 \[
-(1+o(1))h_m|F_m'(e^{-i\theta_*})|.
+(1+o(1))h_m
+\left|\frac{d}{d\theta}F_m(e^{-i\theta})\right|_{\theta=\theta_*}.
 \tag{18}
 \]
 
-It must tend to zero by (4). Since `h_m=e^{o(m)}`, the exponential rate in (17) cannot be positive.
+It must tend to zero by (4). Since `h_m=e^{o(m)}`, the exponential rate on the right of (17) cannot be positive.
 
 Stirling gives
 
 \[
-\frac1m\log K_{m,N}=g(\lambda)+o(1).
+\frac{1}{m}\log K_{m,N}=g(\lambda)+o(1).
 \tag{19}
 \]
 
-For fixed `0<=v<1`, the truncated negative-binomial sum has exponential rate
+For fixed `0 <= v < 1`, the truncated negative-binomial sum has exponential rate
 
 \[
-\frac1m\log
+\frac{1}{m}\log
 \sum_{k=0}^{N}C_{m,k}v^k
 =
 \begin{cases}
  g(\lambda)+\lambda\log v+o(1),
- &\lambda\le \dfrac v{1-v},\\[1.1ex]
+ &\lambda\le v/(1-v),\\
  -\log(1-v)+o(1),
- &\lambda\ge \dfrac v{1-v}.
+ &\lambda\ge v/(1-v).
 \end{cases}
 \tag{20}
 \]
@@ -227,7 +228,7 @@ For `v=0` the sum is exactly one. Because the arc is symmetric and nontrivial wh
 \tag{21}
 \]
 
-If `lambda<=r_0/(1-r_0)`, equations (17)--(20) have positive exponential rate `lambda log(r/r_0)`, contradicting (4). Thus `lambda>r_0/(1-r_0)`, and exact flatness requires
+If `lambda <= r_0/(1-r_0)`, equations (17)--(20) have positive exponential rate `lambda log(r/r_0)`, contradicting (4). Thus `lambda > r_0/(1-r_0)`, and exact flatness requires
 
 \[
 h(\lambda)
@@ -253,29 +254,29 @@ h(x_r)=\log\frac{1-r_0}{1-r}>0.
 Also
 
 \[
-h'(\lambda)=\log\frac{r(1+\lambda)}\lambda,
+h'(\lambda)=\log\frac{r(1+\lambda)}{\lambda},
 \qquad
-h''(\lambda)=-\frac1{\lambda(1+\lambda)}<0.
+h''(\lambda)=-\frac{1}{\lambda(1+\lambda)}<0.
 \tag{25}
 \]
 
-Therefore `h` reaches its maximum at `x_r`, tends to `-infinity`, and has a unique upper zero `lambda_*>x_r`. Condition (22) forces (8). This conclusion used the true normalized polynomial; cancellation in its DC denominator can only make (17) stronger.
+Therefore `h` reaches its maximum at `x_r`, tends to `-infinity`, and has a unique upper zero `lambda_* > x_r`. Condition (22) proves (8). This conclusion uses the true normalized polynomial; cancellation in its DC denominator can only make (17) stronger.
 
 ## 3. The same denominator bound prices the normalized coefficient norm
 
-Since `nu_0=1+1/rho>1`, the summands in (11) are exponentially increasing through `k=N`, so
+Since `nu=1+1/rho>1`, the summands in (11) are exponentially increasing through `k=N`, so
 
 \[
-\frac1m\log A_m
+\frac{1}{m}\log A_m
 =
--\log\rho+g(\lambda)+\lambda\log\nu_0+o(1).
+-\log\rho+g(\lambda)+\lambda\log\nu+o(1).
 \tag{26}
 \]
 
-Because `lambda>=lambda_*>r/(1-r)>r_0/(1-r_0)`, equation (20) applied to (13) gives
+Because `lambda >= lambda_* > r/(1-r) > r_0/(1-r_0)`, equation (20) applied to (13) gives
 
 \[
-\frac1m\log B_m
+\frac{1}{m}\log B_m
 =
 -\log\rho-\log(1-r_0)+o(1).
 \tag{27}
@@ -284,10 +285,10 @@ Because `lambda>=lambda_*>r/(1-r)>r_0/(1-r_0)`, equation (20) applied to (13) gi
 Combining (14), (26), and (27),
 
 \[
-\liminf\frac1m\log\|F_m\|_A
+\liminf\frac{1}{m}\log\|F_m\|_A
 \ge
 c(\lambda)
-:=g(\lambda)+\lambda\log\nu_0+\log(1-r_0).
+:=g(\lambda)+\lambda\log\nu+\log(1-r_0).
 \tag{28}
 \]
 
@@ -296,7 +297,7 @@ This lower-bound rate is strictly increasing because
 \[
 c'(\lambda)
 =
-\log\frac{\nu_0(1+\lambda)}\lambda>0.
+\log\frac{\nu(1+\lambda)}{\lambda}>0.
 \tag{29}
 \]
 
@@ -305,9 +306,9 @@ Hence the cheapest admissible fixed truncation ratio is the boundary `lambda_*`.
 \[
 c(\lambda_*)
 =
-\lambda_*\log\frac{\nu_0}{r}
+\lambda_*\log\frac{\nu}{r}
 >
-\frac r{1-r}\log\frac{\nu_0}{r}.
+\frac{r}{1-r}\log\frac{\nu}{r}.
 \tag{30}
 \]
 
@@ -329,12 +330,12 @@ r\ge r_{\mathbb R}.
 \tag{32}
 \]
 
-The radial comparator contracts because `r_R<=r<1`. Define
+The radial comparator also contracts because `r_mathbbR <= r < 1`. Define
 
 \[
-\Phi_{\nu_0}(s)
+\Phi_\nu(s)
 :=
-\frac{s}{1-s}\log\frac{\nu_0}{s},
+\frac{s}{1-s}\log\frac{\nu}{s},
 \qquad 0<s<1.
 \tag{33}
 \]
@@ -342,25 +343,25 @@ The radial comparator contracts because `r_R<=r<1`. Define
 Its derivative is
 
 \[
-\Phi_{\nu_0}'(s)
+\Phi_\nu'(s)
 =
-\frac{\log(\nu_0/s)-(1-s)}{(1-s)^2}>0,
+\frac{\log(\nu/s)-(1-s)}{(1-s)^2}>0,
 \tag{34}
 \]
 
-because `log(nu_0/s)>-log s>1-s`. Therefore
+because `log(nu/s)>-log s>1-s`. Therefore
 
 \[
-\Phi_{\nu_0}(r)
+\Phi_\nu(r)
 \ge
-\Phi_{\nu_0}(r_{\mathbb R}).
+\Phi_\nu(r_{\mathbb R}).
 \tag{35}
 \]
 
 The elementary one-variable arc estimate proved in RE-219 for the radial center is
 
 \[
-\Phi_{\nu_0}(r_{\mathbb R})>2\alpha.
+\Phi_\nu(r_{\mathbb R})>2\alpha.
 \tag{36}
 \]
 
@@ -390,7 +391,7 @@ and (9) yields
 
 \[
 \frac{\lambda_*}{\alpha}
-\log\frac{\nu_0}{r}
+\log\frac{\nu}{r}
 =5.99594835267216\ldots .
 \tag{39}
 \]
