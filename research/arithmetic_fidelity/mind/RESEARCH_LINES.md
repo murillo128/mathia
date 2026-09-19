@@ -4,46 +4,34 @@ This file holds the current mathematical questions suggested by the durable arit
 
 ## Price retained information jointly with the admissible source class
 
-**Linked intuitions:** `MI-001-fidelity-is-quotient-relative`, `MI-004-prime-specificity-depends-on-the-retained-analytic-layer`, `MI-018-signed-complexity-only-transfers-through-sign-regular-observations`, `MI-041-one-riesz-order-crosses-conditioning-without-moving-the-zero-discriminator`, `MI-042-finite-prefix-pole-fidelity-needs-a-tail-class`, `MI-052-finite-positivity-must-be-gauge-invariant-to-track-zero-geometry`.
+Arithmetic fidelity is not a scalar property of a representation. What matters is which source distinctions survive the exact observation map, at what scale they survive, and whether the admissible arithmetic source can actually occupy the formal directions that an asymptotic or inverse argument treats as continuously tunable.
 
-The fidelity results separate exact discriminator survival from finite observation, source freedom, conditioning and source-category rigidity. AF-406 shows why the representation must be named: finite coefficient-sequence Pólya-frequency positivity can change under an exponential tilt that preserves the entire zero divisor, whereas the normalized translation-kernel Toda hierarchy is invariant under the corresponding affine exponential-profile gauge. AF-407 adds that the native bilateral-Laplace convergence half-plane of the Euler-log profile is zero-free; the nontrivial zeta divisor enters only after meromorphic continuation. Source identification, representation gauge, native analytic domain, admissible continuation and zero selection are therefore separate gates.
+The line should therefore keep source geometry, observation fidelity, conditioning, asymptotic scale and admissible parameter lattice separate. A formal coordinate that exists in the ambient analytic model is useful only after its pullback to the physical source class has been identified.
 
-## Resolve square-transition cancellation beyond the explicit first detuning coordinate
+## Resolve source-lattice realizability on tuned square-transition fibers
 
-**Linked intuitions:** `MI-043-support-scale-interaction-components-bound-effective-relational-arity` through `MI-055-derivative-depth-is-a-second-left-tail-scaling-coordinate`.
+**Linked intuitions:** `MI-055-derivative-depth-is-a-second-left-tail-scaling-coordinate`.
 
-AF-417--AF-420 show that derivative depth is an independent moving coordinate. In the critical window `s_n=2n+d_n`, `d_n=o(n)`, source amplitude and derivative depth combine through
+AF-416--AF-424 isolate a nested critical hierarchy in the full left-tail determinant. Fixed derivative shifts close to a positive Cauchy limit, moving derivative depth introduces the coordinate `s_n/n`, the complete partition family detects the critical value `2`, and the effective source/derivative coordinate becomes
 
-`b_n(a)=a n^(d_n/n)`.
+`b_n(a)=a n^(s_n/n-2)`.
 
-AF-421 resolves the finite-window signed organization into full-column packets with exponential rates `L_r(b)=b^r/(r!)^2`. Away from square values `b=m^2`, one packet dominates and every nonsquare superthreshold `b>1` genuinely diverges. At `b=m^2`, exactly the adjacent packets `r=m-1,m` tie and a nested cancellation problem begins.
+At the square collision fibers `b_n->m^2`, equality of exponential saddle rates is not enough. Rectangle balance is controlled by `Xi_(n,m)`, complete packets add an inverse-`n` drift, and AF-424 shows that the derivative-offset term `m alpha_n` with `alpha_n=(s_n-2n)/n` is load-bearing before limits are taken.
 
-AF-422 identifies the rectangle-scale coordinate
+AF-425 pushes the same odd square fiber one order further and changes the live obstruction. The complete adjacent-packet logarithm has a second-order cancellation law of the form
 
-`Xi_(n,m)=log n+n log(b_n/m^2)-d_n log m`,
+`n^2 Omega_(n,m)+n B_1(alpha_n)+B_2(alpha_n)->0`,
 
-with adjacent rectangle ratio `F_(n,m)=K_m exp(Xi_(n,m))(1+o(1))`. AF-423 then shows that rectangle balance is still too coarse: the complete residual packets contribute a deterministic inverse-`n` drift, so first complete-packet cancellation requires `n log F_(n,m)->-2ae^2` on the odd square fiber.
+but the tuning variable is not continuous: `d_n=s_n-2n` is an integer source coordinate. In the exact corrected target function, changing `d_n` by one changes the cancellation coordinate by
 
-AF-424 makes that condition explicit in the original square-fiber coordinates. Writing `alpha_n=d_n/n`, it proves
+`log(n/m)+m/n+O(n^-2) ~ log n`.
 
-`log F_(n,m)=Xi_(n,m)+log K_m+m alpha_n+[-m^2+m-1-(m^2/2)alpha_n]/n+O(n^-2)`
+Thus a formal continuous saddle solution does not imply that an admissible source path realizes it. The tuned branch is now an inhomogeneous shrinking-target problem on an increasingly coarse source lattice. AF-425 makes the scale explicit: an `o(n^-1)` target requires fractional alignment at width `o((n log n)^-1)`, and an `o(n^-2)` target requires `o((n^2 log n)^-1)`.
 
-and
+The current question is therefore not merely to compute another formal packet coefficient. It is to determine whether the integer derivative-depth source can hit the moving cancellation target often enough, rarely enough, or never at the precision required to suppress the exponentially large tied saddle. Any answer must distinguish an exact arithmetic avoidance/equidistribution statement from a continuous asymptotic saddle calculation. Lower saddles, tall-column families and beyond-all-orders residuals remain separate even if source-lattice alignment occurs.
 
-`log(G_(n,m)/G_(n,m-1))=a e^(2+alpha_n)(2+alpha_n)/n+O(n^-2)`.
+## Keep physical locality separate from transformed criticality
 
-Hence, with `Omega_(n,m)=Xi_(n,m)+log K_m+m alpha_n`, the first complete cancellation condition is equivalently
+Source-local statements should be formulated in the physical arithmetic coordinate before they are interpreted through transforms, determinants or saddle geometry. A transform may make a critical exponent or collision surface visible while hiding the discrete source constraints that decide whether the surface is reachable.
 
-`n(Xi_(n,m)+log K_m)+m d_n -> m^2-m+1-2ae^2`.
-
-The new retained coordinate is the derivative-offset term `m alpha_n`. When `a!=m^2`, the square condition normally makes it order `1/log n`, so replacing `alpha_n` by its limit zero before expanding loses a correction larger than `1/n`. AF-424 also proves that the first shape-sensitive content correction cancels only after the complete Schur packet is summed by partition conjugation; this is a derived cancellation, not an assumption.
-
-The live finite-window problem is now one scale deeper. For `m>=2`, satisfying the displayed condition removes only the first polynomial mismatch while the common saddle still grows exponentially. Determine whether the next complete-packet term already forbids admissible tuning, or whether polynomial cancellation can continue until a lower-saddle, tall-column or other beyond-all-orders residual becomes load-bearing. The exact square path, parity, admissible behavior of `d_n`, and the distinction between packetwise and complete-family cancellation must remain explicit throughout.
-
-The genuinely supercritical regime `s_n/n>2`, where `b_n->infinity`, remains a separate moving-saddle problem and should not be extrapolated from the fixed-square hierarchy.
-
-## Match physical locality to source-density and certificate scales
-
-AF-400--AF-402 remain the locality gate. Ordinary regular variation is insufficient when the physical wall shrinks; current short-interval input gives all-prime-start control for `h_N=p_N^(-beta)` with `beta<13/30` and a density-one route for every fixed `beta<13/15`. These are technology boundaries of the source theorem, not intrinsic detector constants.
-
-A useful continuation must therefore declare the physical sampling wall, confluent order, derivative depth when it moves, the critical amplitude coordinate when relevant, and the source theorem used to populate that wall. Uniformity in one coordinate cannot be silently promoted to uniformity in the others, and no conclusion about zero geometry follows without an independent continuation or selection theorem.
+The reusable control is to pull every proposed critical tuning back through the exact source map. If the pullback is discrete, constrained or nonuniform, its spacing and admissible quantifier are part of the mathematical claim rather than a technical afterthought.

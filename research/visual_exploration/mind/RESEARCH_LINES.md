@@ -12,48 +12,30 @@ VIS-282--VIS-293 separate the isolated coefficient profile, Wang's complete pair
 
 The earlier `sqrt(log T)` and related lower-source thresholds were proof-packaging artifacts rather than arithmetic transitions.
 
-## Resolve the support-sensitive endpoint Hilbert form at the upper pointwise layer
+## Resolve the signed endpoint Hilbert form beyond density/parity spacing controls
 
 **Linked intuition:** `MI-040-wang-pointwise-upper-ceiling-is-a-localization-coherence-budget`.
 
-VIS-299--VIS-301 show that Wang's displayed localization ceiling is not structural. Decomposing the proof isolates one inside--outside coherence term, and the unconditional Vinogradov--Korobov zero-free region suppresses it far enough that the first generic `H`-scale obstruction becomes the interior Montgomery--Vaughan mean-value estimate.
+VIS-299--VIS-301 show that Wang's displayed localization ceiling is not structural. Decomposition isolates one inside--outside coherence term, and the unconditional Vinogradov--Korobov zero-free region suppresses it far enough that the first generic `H`-scale obstruction moves into the interior Montgomery--Vaughan mean-value estimate.
 
-VIS-302 then specializes that generic estimate to Wang's exact coefficients
+VIS-302 specializes that estimate to Wang's exact coefficients and saves one logarithm, extending the pointwise asymptotic to `x log x=o(H)`. VIS-303 then uses the actual support: powers of two have negligible energy and bounded weighted mass, so throughout `x log x=O(H)` every odd-additive-shift contribution is `o(H)`. VIS-304 applies the weighted Hilbert inequality on the actual prime-power logarithmic frequencies and obtains
 
-`a_n=(Lambda(n)/sqrt(n)) min(n/x,x/n)`
+`sum_q a_q^2/delta_q << x log log(3x)`,
 
-and proves
+moving the generic pointwise range again to `x log log(3x)=o(H)`.
 
-`sum_n n a_n^2=(4/3)x log x+(8/9)x+O(x exp(-cV(log x)))`.
+VIS-305 now supplies the matched control that VIS-304 lacked. On the odd lattice, retain each site independently with probability `2/log x`, matching prime density and parity. Conditional nearest-neighbor gaps are geometric, and the exact inverse-gap expectation produces
 
-This saves one logarithm and extends the pointwise asymptotic to `x log x=o(H)`.
+`E sum_(q occupied in [x,2x]) b_q^2/delta(q)=Theta(x log log x)`
 
-VIS-303 decomposes the actual remainder at that exposed scale. Powers of two have negligible energy and bounded weighted mass, so throughout `x log x=O(H)` every odd-additive-shift contribution is `o(H)`. The previous `x log x asymp H` layer is therefore carried only by odd-prime-power/even-shift pairs.
+for Wang-scale weights. Thus the `log log x` absolute reciprocal-spacing cost already occurs in a parity- and density-matched independent support. It is not, by itself, an arithmetic signature of prime powers.
 
-VIS-304 shows that even this is not yet the generic boundary once the mean-value inequality is applied on the **actual nonzero frequency set**. For prime powers `q`, let `delta_q` be the nearest-neighbor spacing among the logarithmic frequencies `log q`. A support-sensitive Montgomery--Vaughan inequality and a Brun--Selberg reciprocal-spacing estimate give
+This rules out one tempting continuation: no argument that remembers essentially only density, parity, coefficient size and nearest-neighbor sparsity can uniformly improve the `x log log x` norm. The live object is more specific: the **signed endpoint Hilbert form** on the actual prime-power logarithmic frequencies, or an arithmetic spacing correlation absent from the Bernoulli control. A further gain must use source information that the matched support does not reproduce.
 
-`sum_q a_q^2/delta_q << x log log(3x)`
-
-and hence
-
-`int_I |D_x(t)|^2 dt = H sum_q a_q^2 + O(x log log(3x))`.
-
-Combining this with the already controlled localization and gamma terms yields the same pointwise asymptotic whenever
-
-`x log log(3x)=o(H)`.
-
-The `x log x` layer was therefore another ambient-spacing artifact. VIS-303 remains a valid classification of that smaller layer, but it no longer identifies the first unresolved generic upper scale.
-
-The live object is now the **signed endpoint Hilbert form on prime-power logarithmic frequencies** near `x log log x asymp H`. The `log log x` factor comes from an absolute reciprocal-spacing sum plus an upper-bound sieve; it is not an observed correction term in Wang's pair statistic. Determine whether the actual oscillatory endpoint form cancels below that weighted norm, whether the prime-power spacing average can be sharpened for these taper weights, or whether a matched admissible construction attains an `H`-scale contribution and proves the cost genuine.
-
-Do not reinterpret the coincidence with other `log log` scales elsewhere in Mathia as a common mechanism: here the factor is a reciprocal frequency-spacing/sieve cost in a mean-value inequality.
-
-The separate fixed-power arithmetic question remains: can the prime-source envelope itself be improved with information genuinely weaker than the RH-equivalent continuation route?
+The `x log log x` scale remains a proof boundary, not a proven correction to Wang's statistic. VIS-305 does not lower-bound the true prime-power norm or the signed endpoint form. A matched admissible construction attaining `H` scale for the signed form would establish a genuine obstruction; a cancellation theorem would move the boundary again. The fixed-power prime-source envelope remains a separate arithmetic question.
 
 ## Recombine exact deterministic structure and decompose every newly exposed proof wall before interpreting it
 
-The current ledger separates packet total variation, support width, moving-test seminorm, source exponent, requested output scale, prime-power source support, localization leakage, cross-coherence, coefficient-specific mean-value weight, ambient versus support-sensitive frequency spacing, actual signed endpoint Hilbert form, explicit-formula remainder, deterministic gamma normalization and analytic domain of the source transform.
+The current ledger separates packet total variation, support width, moving-test seminorm, source exponent, localization leakage, cross-coherence, coefficient-specific mean-value weight, ambient versus support-sensitive frequency spacing, matched random spacing controls, actual signed endpoint phase, deterministic gamma normalization and analytic domain of the source transform.
 
-VIS-294--VIS-304 now give a repeated control pattern. Exact deterministic pieces can be split too early; theorem parameters can hide moving uniformity; a bundled error can contain one load-bearing cross term; source-specific classical information can suppress that term; a generic coefficient majorant can lose a logarithm; support decomposition can delete an entire parity sector; and even the frequency spacing used by a classical inequality can be too coarse if it is computed on the ambient integers rather than the actual arithmetic support.
-
-A genuine new source transition must survive all of these reductions. The current candidate is not `H/log^3 T`, `H/log^2 T` or `H/log T`, and `H/log log x` is still only a proof boundary. The next theorem must decide the signed prime-power endpoint form itself rather than another envelope that forgets its phases.
+VIS-294--VIS-305 give a repeated control pattern. Exact deterministic pieces can be split too early; theorem parameters can hide moving uniformity; a bundled error can contain one load-bearing cross term; generic coefficient majorants can lose logarithms; support decomposition can delete whole sectors; sparse-frequency geometry can improve an ambient bound; and a matched random support can then show that the remaining absolute norm is still generic. A structural transition is credible only after it survives all of those reductions and the surviving signed object itself is controlled or matched.

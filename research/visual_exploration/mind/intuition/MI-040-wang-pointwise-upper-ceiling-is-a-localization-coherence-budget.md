@@ -1,35 +1,21 @@
-# MI-040 — Wang's upper pointwise ceiling follows the first source-specific remainder that survives decomposition
+# MI-040 — Wang's upper pointwise ceiling follows the first source-specific remainder that survives decomposition and matched controls
 
-**Evidence level:** exact synthesis from [VIS-298](../../findings/VIS-298-wang-gamma-recentering-removes-moving-h-barrier.md) through [VIS-304](../../findings/VIS-304-wang-prime-power-spacing-loglog-boundary.md), using Wang's displayed localization and mean-value identities plus the classical Montgomery--Vaughan weighted Hilbert inequality and prime-pair upper-bound sieve as audited there.
+**Evidence level:** exact synthesis from [VIS-298](../../findings/VIS-298-wang-gamma-recentering-removes-moving-h-barrier.md) through [VIS-305](../../findings/VIS-305-cramer-parity-control-loglog-spacing-norm.md), using Wang's displayed localization/mean-value identities, the classical weighted Hilbert inequality and the matched Bernoulli spacing control audited there.
 
-The upper pointwise boundary in Wang's short-interval pair statistic has moved repeatedly because each generic estimate was applied before the exact structure of its load-bearing term was exposed.
+The upper pointwise boundary in Wang's short-interval pair statistic has moved repeatedly because generic estimates were applied before the exact structure of their load-bearing terms was exposed.
 
-VIS-298 removes the lower moving-source crossover by exact gamma recentering. VIS-299--VIS-301 then decompose the apparent localization ceiling. The pure leakage terms are already cheaper; the only load-bearing localization contribution is an inside--outside coherence term, and the unconditional Vinogradov--Korobov zero-free region suppresses it sufficiently that the first generic `H`-scale obstruction moves into the interior mean-value estimate.
+VIS-298 removes the lower moving-source crossover by exact gamma recentering. VIS-299--VIS-301 decompose the apparent localization ceiling and show that only one inside--outside coherence term is load-bearing; the unconditional Vinogradov--Korobov zero-free region suppresses it enough that the first generic `H`-scale obstruction moves into the interior mean-value estimate.
 
-VIS-302 shows that Wang's displayed Montgomery--Vaughan coefficient majorant is itself loose after source specialization. For
+VIS-302 then specializes the coefficient majorant. For Wang's exact `a_n`, the generic `x log^2 x` cost drops to `x log x`. VIS-303 specializes the support: powers of two carry negligible energy and bounded weighted mass, so at `x log x=O(H)` every odd-additive-shift term is `o(H)`. VIS-304 specializes the frequency geometry as well. Applying the weighted Hilbert inequality on the nonzero prime-power frequencies `log q` gives an absolute spacing cost
 
-`a_n=(Lambda(n)/sqrt(n)) min(n/x,x/n)`,
+`sum_q a_q^2/delta_q << x log log(3x)`,
 
-one has
+and hence the pointwise asymptotic throughout `x log log(3x)=o(H)`.
 
-`sum_n n a_n^2=(4/3)x log x+(8/9)x+O(x exp(-cV(log x)))`,
+VIS-305 applies the missing matched-control test to that last norm. A parity- and density-matched independent support on the odd lattice already has expected reciprocal-spacing cost of order `x log log x` under the same Wang-scale weights. The logarithm comes from ordinary geometric nearest-gap statistics; no prime-pair arithmetic is needed to create it. Therefore the `log log x` absolute norm cannot by itself be interpreted as a source-specific prime barrier.
 
-so the complete pointwise asymptotic survives throughout `x log x=o(H)`.
+The current load-bearing object is the **signed endpoint Hilbert form itself**, or arithmetic spacing information stronger than density/parity-level sparsity. A further improvement must exploit endpoint phase cancellation or correlations of the actual prime-power support that the Bernoulli control lacks. Merely sharpening a nearest-neighbor bound while retaining only density and parity cannot remove the scale uniformly.
 
-VIS-303 then decomposes the actual off-diagonal source support at that scale. Powers of two have negligible energy and bounded weighted mass, which makes every odd-additive-shift contribution `o(H)` throughout `x log x=O(H)`. The first unresolved part at that layer is therefore the odd-prime-power/even-shift sector.
+The reusable lesson is a layered survivor test. Preserve the exact object until the first inequality that discards structure; restore the discarded deterministic, coefficient, support and spacing information; then run a matched control that preserves the generic features still used by the bound. A nominal critical scale becomes evidence of arithmetic structure only if it survives that matched control or if the remaining signed term itself is shown to attain the scale.
 
-VIS-304 goes one step deeper and changes the relevant notion of spacing. Since `Lambda(n)` vanishes off prime powers, the nonzero frequencies are `lambda_q=log q` for prime powers `q`. Applying the weighted Montgomery--Vaughan inequality with the **nearest-neighbor spacing inside this sparse frequency set**, rather than with ambient integer spacing, yields
-
-`|int_I |D_x(t)|^2 dt-H sum_q a_q^2| << sum_q a_q^2/delta_q`.
-
-A dyadic reciprocal-spacing estimate based on a Brun--Selberg upper-bound sieve gives
-
-`sum_q a_q^2/delta_q << x log log(3x)`.
-
-Thus the same pointwise asymptotic persists whenever `x log log(3x)=o(H)`. The previous `x log x` boundary was not an intrinsic even-shift transition; it was another cost of forgetting the exact sparse frequency support before applying a classical inequality.
-
-The current load-bearing object is now the **signed endpoint Hilbert form itself** on the prime-power logarithmic frequencies near `x log log x asymp H`. The `log log x` factor is the cost of an absolute weighted norm and an upper-bound sieve. It is not a proven term of the pair-correlation statistic and may still disappear if the endpoint phases cancel.
-
-The reusable lesson is stronger than “specialize coefficients before estimating.” At each stage, preserve the exact object until the first inequality that loses its structure, then ask which structure that inequality discarded: deterministic recombination, source-specific coefficients, support parity, sparse frequency spacing, or finally oscillatory phase. A nominal theorem boundary is structural only after all earlier discarded structure has been restored and the surviving term itself can be matched by a lower/control construction or an exact asymptotic.
-
-**Boundary.** VIS-304 does not prove an `x log log x` lower obstruction, a Hardy--Littlewood prime-pair asymptotic, or further cancellation in the signed Hilbert form. Its prime-spacing input is an upper-bound sieve, and the local-spacing norm may be far from sharp for the actual endpoint phases. The fixed-power arithmetic source envelope and the RH-equivalent continuation route remain separate questions.
+**Boundary.** VIS-305 does not prove a lower bound for the true prime-power spacing sum or for Wang's signed endpoint remainder, and it does not supply a Hardy--Littlewood pair theorem. The fixed-power arithmetic source envelope and the RH-equivalent continuation route remain separate. The `x log log x` layer is still a proof boundary, now known to be reproducible by a non-arithmetic density/parity control at the absolute-spacing level.

@@ -8,38 +8,30 @@ This file holds the current mathematical questions suggested by the durable Fare
 
 FD-187--FD-194 establish the source and observation gates. Prime-extension energy is a genuine Möbius relation currency, while dyadic signed-Fourier observation has a sharp geometric square-root threshold: below the critical band permanent quotient holes remain, while at and above it cumulative source recovery has an explicit uniformly stable inverse. The transition is therefore one of geometry and injectivity, not a conditioning pathology of the raw coordinate map.
 
-FD-195--FD-201 show why that stable coordinate recovery does not automatically survive quadratic compression. Classical Franel/Sobolev energies price the same geometric witnesses differently from the raw inverse; on reciprocal-prime shells the RH-facing positive diagonal budget is substantially more coercive than the square-root Mertens target. Fixed-mode cross-horizon differences do contain new Möbius interval increments, but independently squaring the shell rows restores the `H^(3/2+o(1))` random-multiplicative tariff.
+FD-195--FD-201 show why stable coordinate recovery does not automatically survive quadratic compression. Classical Franel/Sobolev energies price the same geometric witnesses differently from the raw inverse; on reciprocal-prime shells the RH-facing positive diagonal budget is substantially more coercive than the square-root Mertens target. Fixed-mode cross-horizon differences do contain new Möbius interval increments, but independently squaring the shell rows restores the `H^(3/2+o(1))` random-multiplicative tariff.
 
-FD-202 gives the first exact escape from that diagonal benchmark. For shell primes `K/2<p_1<...<p_m<=K`, `K~sqrt(H)`, normalize the centered fixed-mode rows to `S_i` and take adjacent-prime differences before applying a positive quadratic norm. The overlapping long Mertens intervals collapse to disjoint endpoint slabs, and the shell-normalized path energy
+FD-202 gives the first exact escape. Taking adjacent-prime differences before a positive quadratic norm collapses overlapping long Mertens intervals to endpoint slabs, and the shell-normalized path energy has squarefree-Rademacher mean `Theta(H)`. FD-203 then separates kernel removal from inverse conditioning: one scalar anchor closes the constant mode at the same critical random cost, yet any anchored path retains endpoint-difference squared dual norm `m-1` and hence `Theta(m)` resistance diameter.
 
-`G_(r,H)=K sum_i |S_i-S_(i+1)|^2`
+FD-204 shows that this path-resistance obstruction is not universal. Reverse the prime shell and connect each index `j` to `j-2^(nu_2(j))`. The resulting lowbit tree has exact anchored point-evaluation dual norm
 
-has squarefree-Rademacher mean `~(6/pi^2)(1+r)H`. The gain is produced by a signed cross-mode projection before squaring. Its only algebraic kernel is the constant shell mode.
+`||e_(m-j)||_*^2 = 1+popcount(j)`,
 
-FD-203 resolves the first anchoring question and separates **kernel removal** from **uniform inverse conditioning**. For any scalar anchor `ell` with `ell(1)=1`, the anchored form
+so the worst resistance falls to `Theta(log m)`. Every nonlocal edge is still exactly the difference of two Möbius source slabs, and each adjacent source boundary is reused by at most one edge per dyadic scale. Consequently the same squarefree-random comparator pays only
 
-`||S||_ell^2=sum_i |S_i-S_(i+1)|^2+|ell(S)|^2`
+`E G_(r,H)^lb = O(H log K)=H^(1+o(1))`.
 
-has exact endpoint-difference dual norm
+Thus signed nonlocal enrichment can jointly improve conditioning and preserve the critical **power** exponent when its source-side overlap is controlled. The old `H^(3/2)` diagonal tariff and the `Theta(m)` path resistance are no longer structural barriers for this observation family.
 
-`||e_1-e_m||_(ell,*)^2=m-1`.
-
-Hence every scalar anchor leaves some point-evaluation direction with squared dual cost `Omega(m)`. The endpoint anchor is sharp in order: `||e_i||_*^2=m-i+1`. Since `m~K/(2 log K)`, a one-dimensional anchor can close the kernel while the path still has resistance diameter `Theta(K/log K)`.
-
-Crucially, that anchor itself is cheap in the source-faithful random benchmark. Adding the endpoint coordinate preserves an anchored shell expectation `Theta(H)` rather than restoring the old `H^(3/2)` tariff. The obstruction is therefore no longer “the constant mode costs too much.” It is that **a cheap anchor need not propagate cheaply through a sparse observation graph**.
-
-The next discriminating question has two genuinely different branches. One is arithmetic: can the anchored coordinate itself be chosen as the geometric Mertens witness needed downstream, so no path propagation is required? The other is representational: can an exact signed nonlocal or multiscale projection add edges to the prime-shell observation graph, reduce effective-resistance diameter, and still keep the squarefree-random quadratic cost at `H^(1+o(1))`? Any such proposal must use the same physical observation map and must not hide the FD-198--FD-201 shellwide tariff in the anchor or added edges.
-
-FD-203's resistance lower bound is a representation-space statement. Its extremizers are arbitrary shell vectors and are not proved realizable by Möbius or by the random-multiplicative control. A future source-compatibility theorem could therefore beat the unrestricted inverse bound, but it must state exactly which arithmetic constraint removes the high-resistance directions.
+The live gap has moved. A physical Möbius bound `G_(r,H)^lb=O(H log^C H)` would give square-root-sized cross-horizon increments uniformly on the shell, but no such analytic bound is proved. Even that would control interval increments `M(floor(rH/p))-M(floor(H/p))`, not absolute Mertens values. The current questions are therefore whether the lowbit energy admits a representation-native Farey/Franel estimate at only polylogarithmic loss, whether an outer cross-scale anchoring/telescoping mechanism recovers absolute `M(n)`, and whether the logarithmic source-reuse/resistance tradeoff can be improved without losing source locality.
 
 ## Apply information budgets only after fixing source class, observation family and destination norm
 
-The same Farey representation can be complete, target-rigid or permanently noninjective depending on the source class, observation family and destination norm. The current sequence of results separates quotient coverage, raw inverse conditioning, diagonal quadratic coercivity, cross-horizon source information, covariance-preserving signed projection, kernel dimension and inverse graph resistance.
+The same Farey representation can be complete, target-rigid or permanently noninjective depending on the source class, observation family and destination norm. The current sequence separates quotient coverage, raw inverse conditioning, diagonal quadratic coercivity, cross-horizon source information, covariance-preserving signed projection, kernel dimension, graph resistance and now source-overlap cost of nonlocal edges.
 
-Sample count and algebraic injectivity are not enough. A proposed improvement must say which source coordinates are acquired, which cross-coordinate relations the source class forces, whether nominally new coordinates survive exact divisor transport, what projection occurs before the norm, what random-multiplicative cost that projection pays, and what dual/effective-resistance price is required to recover the intended witness.
+Sample count and algebraic injectivity are not enough. A proposed improvement must say which source coordinates are acquired, which cross-coordinate relations the source class forces, what projection occurs before the norm, how often source slabs are reused, what random-multiplicative cost that reuse pays, and what dual/effective-resistance price remains for the intended witness.
 
 ## Keep source coercivity, coordinate inversion and the Franel--Landau destination separate
 
-Stable source recovery above the square-root observation threshold still does not prove the RH-critical discrepancy estimate. Conversely, source-rigidity theorems identify what relation-sensitive information would be sufficient if a representation exposed it at the required scale.
+Stable source recovery above the square-root observation threshold still does not prove the RH-critical discrepancy estimate. Conversely, the lowbit tree now gives a finite-dimensional geometry whose conditioning and random benchmark are simultaneously near-critical, but this auxiliary norm is not itself the Franel--Landau destination.
 
-The high-value frontier is now narrower than another Sobolev reweighting or another low-rank anchor. It is a deterministic Möbius-specific compatibility that suppresses the high-resistance shell directions, or a representation-native signed projection whose random benchmark remains critical while its anchored observation graph has substantially smaller resistance. Either route must still connect to the actual Farey/Franel destination rather than stop at a well-conditioned auxiliary shell norm.
+The high-value frontier is therefore no longer another diagonal reweighting, low-rank anchor or path repair. It is a deterministic Möbius/Farey theorem controlling the multiscale source-localized energy and a cross-scale mechanism connecting its interval increments to the absolute Mertens/Farey quantity required downstream. Any further graph optimization should be judged by the joint source-overlap/effective-resistance budget rather than by graph density alone.

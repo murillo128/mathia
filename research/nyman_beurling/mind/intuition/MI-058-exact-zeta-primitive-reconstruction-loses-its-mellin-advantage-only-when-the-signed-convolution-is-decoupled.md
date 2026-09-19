@@ -1,33 +1,21 @@
-# MI-058 — Exact zeta-primitive reconstruction loses its Mellin advantage only when the signed convolution is decoupled
+# MI-058 — Exact zeta-primitive reconstruction can be localized before the Mellin advantage is lost
 
-**Evidence level:** exact synthesis from [NB-218](../../findings/NB-218-exact-zeta-primitive-convolution-isolates-mellin-tariff.md), refining the absolute reconstruction obstruction in [NB-217](../../findings/NB-217-reciprocal-log-support-mass-prices-two-sided-mellin-reconstruction.md).
+**Evidence level:** exact synthesis from [NB-218](../../findings/NB-218-exact-zeta-primitive-convolution-isolates-mellin-tariff.md) and [NB-219](../../findings/NB-219-smooth-vertical-windowing-localizes-zeta-primitive-convolution.md), refining the absolute reconstruction obstruction in [NB-217](../../findings/NB-217-reciprocal-log-support-mass-prices-two-sided-mellin-reconstruction.md).
 
-Let `sigma>1`, let `h` be a smooth logarithmic source shell supported away from `u=0`, and define the `j`-fold vertical primitive
+Let `sigma>1`, let `h` be a smooth logarithmic source shell supported away from `u=0`, and define the `j`-fold vertical primitive and its matched reconstruction kernel. Fourier inversion gives an exact signed convolution for the Euler shell. The factors `(log n)^j` and `(log n)^(-j)` cancel coefficient by coefficient **inside the convolution**, and every finite polynomial jet of the primitive is annihilated because the shell kernel vanishes to all moments at the origin.
 
-`P_j(t)=sum_(n>=2) Lambda(n)/(log n)^j n^(-sigma-it)`
+NB-218 therefore separates the exact algebra from the absolute reconstruction tariff. The lower bound `||K_j||_1/|M_psi(h)|>=2pi/J_j(E)` applies when kernel and primitive are decoupled by absolute values; it is not an algebraic multiplier in the signed identity. For a moving shell `h(u)=phi(u-X)`, the source is a carrier-frequency Fourier coefficient of the zeta primitive, so a pointwise primitive envelope is not the native quantity.
 
-and reconstruction kernel
+NB-219 now shows that the full vertical line can be localized without first destroying this structure. Multiply the Fourier kernel by a smooth cutoff `chi(v/V)` that equals one for `|v|<=V` and vanishes for `|v|>=2V`. On the natural `1+` line `sigma_X=1+r/X`, Fourier inversion transfers this cutoff back to the source as convolution with a Schwartz approximate identity. For every `A>0`, the resulting Euler-source perturbation is
 
-`K_(j,h)(v)=int u^j h(u)e^(ivu)du`.
+`O_A(V^(-A))`
 
-Fourier inversion gives the exact signed identity
+uniformly in the vertical ordinate. Any slowly growing `V_X` gives `o(1)` source error, and `V=X^epsilon` gives error smaller than every prescribed power of `X`. The finite-jet annihilation of the exact kernel survives to superalgebraic accuracy.
 
-`sum Lambda(n)h(log n)n^(-sigma-it) = (1/(2pi)) int K_(j,h)(v) P_j(t+v) dv`.
+This changes the live bottleneck. The infinite vertical tail does not need to be estimated by `int |K P_j|`; it can be removed **at the source level** before estimating the primitive. Thus localization and signed cancellation are compatible on `Re(s)>1`.
 
-The factors `(log n)^j` and `(log n)^(-j)` cancel coefficient by coefficient **inside the convolution**. For `j=1`, `P_1(t)=log zeta(sigma+it)` on the Euler-product half-plane, so this is the actual zeta primitive rather than a surrogate Fourier model.
+The remaining obstruction is transport across `Re(s)=1`. Compact support in the vertical frequency creates Schwartz, but noncompact, tails in the logarithmic source variable. Those tails remain harmless with the positive Euler weight on `sigma>1` but need not be absolutely summable on a line left of one. A successful continuation must therefore carry the localized signed convolution through the pole/branch structure, horizontal contour pieces and zero-free rectangle without reverting to the absolute-norm tariff.
 
-Because `u^j h(u)` vanishes near `u=0`, every moment of `K_(j,h)` vanishes. The shell extraction is therefore unchanged if any finite polynomial in `v` is subtracted from `P_j(t+v)`. Large constant or finite Taylor-jet components of the primitive are invisible to the exact source observable; what matters is the primitive's vertical Fourier content at the shell's logarithmic carrier frequency.
+The reusable lesson is that **a proof-interface loss should be attacked before the destructive inequality is applied**. If a global acquisition domain can be localized by an operation that corresponds to a negligible source perturbation, there is no reason to pay for that domain with a global supremum. The next question is whether the same coupling survives the analytic transport required by the destination.
 
-This separates two currencies that NB-217 intentionally left entangled. The reciprocal-support lower bound
-
-`||K_j||_1/|M_psi(h)| >= 2pi/J_j(E)`
-
-is an exact obstruction for **absolute-value decoupling**, not an algebraic multiplier that appears in the exact signed reconstruction. The tariff re-enters when one bounds the convolution by `||K_j||_1 sup|P_j|` or otherwise prices kernel and primitive independently. A better pointwise bound for the primitive does not by itself exploit the available cancellation.
-
-For a moving shell `h(u)=phi(u-X)`, the source is an explicit carrier-frequency coefficient
-
-`(1/(2pi)) int B_X(v) P_j(t+v)e^(iXv) dv`.
-
-The live analytic object is therefore this localized oscillatory coefficient, with kernel tails, contour transport, pole/branch terms and the zero-free window kept coupled. Any proof that takes absolute values before those interactions have occurred returns to the NB-217 tariff.
-
-**Boundary.** The exact identity is established cleanly in `Re(s)>1`; it is not itself a saving on the Vinogradov--Korobov contour. Moving the coupled convolution left, truncating it to an effective vertical window and proving cancellation at carrier frequency `X` remain open analytic tasks. The Nyman destination coupling also remains separate: no result here shows that a near-optimal Nyman approximant forces the source coefficient being estimated.
+**Boundary.** NB-219 proves localization only on the absolutely convergent `1+` side; it does not provide a Vinogradov--Korobov saving, a contour-shift theorem, a Nyman-distance improvement or the destination coupling from near-optimal approximants to this source coefficient. The unresolved object is the localized signed carrier coefficient after crossing `Re(s)=1`.

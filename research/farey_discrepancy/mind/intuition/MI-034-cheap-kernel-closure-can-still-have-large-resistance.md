@@ -1,23 +1,19 @@
-# MI-034 — Cheap kernel closure can still have large resistance
+# MI-034 — Cheap kernel closure can still have large resistance, and graph geometry can change that price
 
-**Evidence level:** exact synthesis from [FD-202](../../findings/FD-202-prime-path-cross-mode-differences-collapse-random-multiplicative-energy-to-the-critical-scale.md) and [FD-203](../../findings/FD-203-scalar-anchors-close-the-prime-path-kernel-at-critical-random-cost-but-retain-path-resistance-amplification.md).
+**Evidence level:** exact synthesis from [FD-202](../../findings/FD-202-prime-path-cross-mode-differences-collapse-random-multiplicative-energy-to-the-critical-scale.md) through [FD-204](../../findings/FD-204-lowbit-prime-shell-trees-achieve-logarithmic-resistance-at-critical-exponent-random-cost.md).
 
-FD-202 shows that an exact signed projection can change the scaling of a positive quadratic statistic without changing the underlying Farey observation family. Adjacent differences of normalized reciprocal-prime rows cancel their common long Mertens bulk before squaring, and the resulting prime-path energy has the critical squarefree-random scale `Theta(H)` instead of the diagonal `H^(3/2+o(1))` tariff. Algebraically the only missing direction is the constant shell mode.
+FD-202 shows that an exact signed projection can change the scaling of a positive quadratic statistic without changing the underlying Farey observation family. Adjacent differences of normalized reciprocal-prime rows cancel their common long Mertens bulk before squaring, and the resulting prime-path energy has critical squarefree-random scale `Theta(H)` instead of the diagonal `H^(3/2+o(1))` tariff. Algebraically the only missing direction is the constant shell mode.
 
-FD-203 shows that the dimension of that kernel is not the right measure of the remaining inverse problem. Add any scalar anchor `ell` with `ell(1)=1` and define
+FD-203 shows that the dimension of that kernel is not the right measure of the remaining inverse problem. Add any scalar anchor `ell` with `ell(1)=1`. The constant direction disappears, but the endpoint-difference functional still has exact squared dual norm `m-1`, independently of the anchor. The endpoint anchor itself is cheap in the source-faithful random benchmark, so kernel closure can cost `Theta(H)` while propagation through the path remains `Theta(m)` in squared resistance. **Kernel dimension, source cost and inverse resistance are independent resources.**
 
-`||S||_ell^2=sum_(i=1)^(m-1)|S_i-S_(i+1)|^2+|ell(S)|^2`.
+FD-204 then proves that the large resistance is a property of the chosen sparse graph, not an unavoidable price of the source information. On the reversed prime shell, the lowbit tree joins `j` to `j-2^(nu_2(j))`. Point evaluation has the exact squared dual norm
 
-The constant direction is now removed, but the endpoint-difference functional still has the exact dual norm
+`1+popcount(j)`,
 
-`||e_1-e_m||_(ell,*)^2=m-1`,
+so the worst anchored resistance is only `Theta(log m)`. These longer edges remain source-faithful: each is the difference of two explicit Möbius slabs, and any adjacent shell boundary is crossed by at most one edge at each dyadic scale. That bounded multiscale overlap keeps the squarefree-random cost at `O(H log K)=H^(1+o(1))`.
 
-independently of the anchor. Consequently some point evaluation has squared dual cost at least `(m-1)/4`. For an endpoint anchor this order is exact coordinatewise: `||e_i||_*^2=m-i+1`.
+The reusable point is a **joint source-overlap / inverse-resistance design law**. Adding nonlocal constraints is useful only when their source preimages can be reused sparsely enough that conditioning improves faster than the source benchmark deteriorates. Graph density by itself is not the resource; the relevant pair is how many times physical source slabs are charged and how much effective resistance remains after those edges are added.
 
-The source-cost side behaves differently. The endpoint anchor itself has squarefree-random variance `Theta(K)` on the reciprocal-prime shell, so after the same shell normalization as FD-202 the complete anchored statistic still has expectation `Theta(H)`. **Kernel closure is therefore cheap while propagation through the path is expensive.** The two costs are independent resources.
+This also changes how negative conditioning results should be interpreted. A large condition number for one representation can identify the missing graph geometry without proving that the source problem itself is ill-conditioned. Conversely, a well-conditioned auxiliary graph is not enough unless its edge functionals remain exact source observables and the resulting norm connects to the actual Farey/Mertens destination.
 
-This distinction is the reusable point. A low-dimensional nullspace can be eliminated by very little additional data while the resulting inverse remains badly conditioned because the observation graph has large effective-resistance diameter. Counting missing dimensions would call the problem solved; the dual geometry says it is not. Conversely, a large representation-space condition number does not prove that the physical source realizes its worst directions.
-
-For the prime shell, `m~K/(2 log K)`. Thus an `H^(1+o(1))` anchored path budget gives the correct square-root scale at the anchored coordinate itself but does not force the same scale uniformly across all shell coordinates by abstract inversion alone. A successful continuation must therefore do at least one of two things: make the anchor itself the downstream witness, avoiding long propagation, or enrich the signed observation graph so that effective resistance falls without repaying the gain in random-multiplicative energy.
-
-**Boundary.** The resistance lower bound is exact for unrestricted shell-coordinate space. FD-203 does not show that its extremizers are attainable by Möbius, by squarefree random multiplicativity, or by the Farey source class. Source-specific compatibility could eliminate high-resistance directions. Nor does the result say that every denser projection is useful: extra edges count only if their source-faithful quadratic cost remains at the critical scale and the resulting statistic still maps to the Farey/Franel destination.
+**Boundary.** FD-204 does not prove a physical Möbius bound for the lowbit energy and does not recover absolute `M(n)` from its cross-horizon increments. Its random estimate is an upper bound at the critical power exponent, not a proof that the logarithmic overhead is optimal. The remaining arithmetic questions are analytic control of this multiscale energy, outer cross-scale recovery, and the best achievable tradeoff between source-slab overlap and resistance.
