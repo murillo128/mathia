@@ -1,7 +1,7 @@
 ---
 id: CLUE-farey-growing-euler-coherence-threshold
 type: research-clue
-status: proposed
+status: resolved
 origin: mind
 target_line: farey_discrepancy
 based_on:
@@ -44,3 +44,12 @@ Only after this Farey-specific dependence is derived should its scale be compare
 ## Evidence boundary
 
 `FD-215` proves only fixed-finite-prime coherence and permits its constants to deteriorate with the prime set. `MC-395` concerns a different source package, endpoint geometry and analytic differencing argument; it neither predicts nor bounds the Farey threshold. No growing-prime-set countermodel, obstruction, `log log N` law, improved Mertens estimate or RH consequence is established here.
+
+## Research disposition
+
+Outcome: supported
+
+Resolved by:
+- [[research/farey_discrepancy/findings/FD-216-logarithmically-growing-euler-coherence-remains-horizon-locally-blind]]
+
+`FD-216` gives the requested explicit unbounded regime: for any fixed `c<1/(2 log 2)`, the first `floor(c log N)` prime Euler relations can be imposed exactly in an `N`-dependent squarefree ternary countermodel while the switched Farey filter remains sub-square-root on the target scale and the partial sum is `N^(alpha-o(1))`, `alpha>1/2`. The constant is a sufficient threshold from a crude `2^k` Euler-cube cost, not an optimal barrier. The same finding also separates this finite-horizon statement from the coherent global limit: one fixed squarefree source satisfying an eventually exhaustive nested family of exact prime relations is necessarily the Möbius function itself.
