@@ -1,6 +1,6 @@
 # MI-039 — Canonical positive approximation plus ordinary evaluation cannot realize zeta continuation
 
-**Evidence level:** exact synthesis from [PL-361](../../findings/PL-361-energy-cutoff-schauder-continuation-obstruction.md) and [PL-362](../../findings/PL-362-positive-energy-filter-renormalization-obstruction.md), with [PL-360](../../findings/PL-360-diagonal-weighted-hilbert-spaces-cannot-carry-zeta-continuation.md) as the preceding diagonal-Hilbert special case.
+**Evidence level:** exact synthesis from [PL-360](../../findings/PL-360-diagonal-weighted-hilbert-spaces-cannot-carry-zeta-continuation.md) through [PL-363](../../findings/PL-363-finite-signed-lattice-shift-filter.md).
 
 PL-360 shows that no positive diagonal coefficient Hilbert metric can simultaneously contain the zeta coefficient vector and keep ordinary point evaluation bounded in the critical strip. PL-361 removes the diagonal and Hilbert assumptions from the most canonical completion repair.
 
@@ -16,10 +16,24 @@ PL-362 closes the most obvious smoothing escape. Let `w_i(n)>=0` be any directed
 
 No monotonicity, common finite support, Hilbert structure or continuity assumption is needed. Positivity plus coefficientwise recovery alone preserves the divergent mass. Positive Riesz-, Cesàro-, heat- or energy-style coefficient filters therefore cannot continue the coefficient-one zeta series across its real convergence wall by unrenormalized evaluation.
 
-The classical Euler--Maclaurin continuation exposes the missing ingredient explicitly: below one, the positive partial sum is cancelled by a divergent counterterm of opposite sign. Thus a viable Prime-Lattice completion must change more than the coefficient metric or cutoff smoothness. It must leave the coefficientwise positive cone through signed/complex cancellation or a source-forced counterterm, introduce non-coefficientwise mixing, use a target-relative quotient/model geometry, or alter the readout to an unbounded/distributional pairing whose normalization is itself audited.
+PL-363 gives the complementary signed control. For a fixed finite lattice-shift filter
 
-This is a stronger topological-and-summation obstruction than PL-360 alone. Non-diagonal correlations can change covariance and source geometry, and noncanonical summation can be mathematically legitimate, but neither deserves continuation credit until the approximation family and destination functional explain where the necessary cancellation enters. A smoother positive approximate identity merely hides the same convergence wall under different weights.
+`T=sum_(m in F) c_m S_m`,
 
-The reusable lesson is that **completion topology, approximation protocol and continuation mechanism are one coupled interface**. Before crediting a new completion, state which approximants converge, whether coefficient recovery is positive or sign-indefinite, what renormalization is subtracted, in what topology convergence occurs, and which destination readout remains continuous or otherwise controlled.
+the coefficient-one vector becomes the periodic sequence
 
-**Boundary.** PL-361--PL-362 do not prohibit analytic continuation, signed or complex summability, renormalized finite parts, non-diagonal mixing, rigged/distributional pairings, unbounded evaluation or spaces in which the coefficient-one vector is not obtained from ordinary/positive coefficientwise approximate identities. PL-362 is strongest on the real axis and does not claim that positivity of coefficients prevents oscillatory cancellation at an isolated nonreal point. These results classify a broad naive completion route; they do not supply RH rigidity.
+`b_k=sum_(m|k)c_m`,
+
+and on `Re s>1` its Dirichlet series is
+
+`B(s)=P(s)zeta(s)`, with `P(s)=sum_m c_m m^-s`.
+
+The period mean is `P(1)`. If `P(1)=0`, the coefficients have zero mean, the ordinary Dirichlet series converges locally uniformly on `Re s>0`, and this half-plane is sharp for ordinary convergence. Classical Hurwitz-zeta continuation then extends the periodic series after the pole cancellation. Thus **finite sign-indefinite cancellation is enough to cross the positive wall, but not enough to create a new zero selector**.
+
+The one-prime filter `1-pS_p` makes the point especially clean: it produces the eta-type factor `(1-p^(1-s))zeta(s)`. For `p=2` the extra factor has its zeros on `Re s=1`, so it does not alter the zeta divisor in the critical strip. A general finite Dirichlet polynomial `P` can add its own zeros, but nothing in the finite shift construction forces those zeros to encode the critical line. The continuation gain comes from periodic pole cancellation, not from new rational-prime rigidity.
+
+PL-363 therefore sharpens the lesson from PL-361--PL-362. Leaving the positive cone is a genuine mechanism change and can enlarge the ordinary convergence domain, but the sign pattern itself must still be **source-forced and destination-selective**. A chosen finite cancellation that merely turns the coefficient-one series into a classical periodic Dirichlet series has solved continuation without solving zero selection.
+
+The reusable lesson is that **completion topology, approximation protocol, sign structure and continuation mechanism are one coupled interface**. Before crediting a new completion, state which approximants converge, where cancellation enters, whether it is forced by the arithmetic source or chosen externally, what renormalization is subtracted, in what topology convergence occurs, and which destination readout remains selective after continuation.
+
+**Boundary.** PL-360--PL-363 do not prohibit analytic continuation, infinite or scale-dependent signed/complex summability, renormalized finite parts, non-diagonal mixing, rigged/distributional pairings, unbounded evaluation or source-forced global correlations. PL-363 classifies only fixed finite lattice-shift filters. It shows that the first obvious signed escape is classical periodic continuation, not that every sign-indefinite or renormalized continuation must be classical or zero-blind.

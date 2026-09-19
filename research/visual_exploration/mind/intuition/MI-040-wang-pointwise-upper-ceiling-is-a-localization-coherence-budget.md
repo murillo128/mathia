@@ -1,6 +1,6 @@
 # MI-040 — Wang's upper pointwise ceiling moves from localization coherence to the interior mean-value budget
 
-**Evidence level:** exact synthesis from [VIS-298](../../findings/VIS-298-wang-gamma-recentering-removes-moving-h-barrier.md) through [VIS-301](../../findings/VIS-301-wang-zero-free-localization-log-squared-window.md), using Wang's displayed localization and mean-value identities as audited there.
+**Evidence level:** exact synthesis from [VIS-298](../../findings/VIS-298-wang-gamma-recentering-removes-moving-h-barrier.md) through [VIS-302](../../findings/VIS-302-wang-weighted-mean-value-log-boundary.md), using Wang's displayed localization and mean-value identities as audited there.
 
 VIS-298 removes the lower moving-source crossover by exact gamma recentering. VIS-299 then shows that Wang's fixed exponent gap is not the true pointwise boundary: re-running the localization proof yields the same asymptotic whenever
 
@@ -10,26 +10,26 @@ VIS-300 decomposes that apparent boundary. Both pure localization leakage energi
 
 `C_I(x)=int_I A_I(x,t) overline(A(x,t)-A_I(x,t)) dt`.
 
-VIS-301 closes that coherence wall under unconditional classical zero-free information. The standard Vinogradov--Korobov zero-free region bounds the real parts of the relevant zeros away from one by
+VIS-301 closes that coherence wall under unconditional classical zero-free information. The standard Vinogradov--Korobov zero-free region inserts the attenuation `q_T(x)=x^(-eta_T)` into the near-height pieces and makes the localization contribution `o(H)` throughout `x=o(H/log^2 T)`. At that point the first generic `H`-scale term becomes Wang's displayed Montgomery--Vaughan coefficient bound `O(x log^2(2x))`.
 
-`eta_T asymp (log T)^(-2/3)(log log T)^(-1/3)`
+VIS-302 shows that this second wall is also a proof-packaging artifact. For the exact Wang coefficients
 
-at the needed scale. In the near-height pieces this inserts the attenuation `q_T(x)=x^(-eta_T)` into both the inside and outside fields. Around the old `H/log^3 T` layer this is already super-polynomially small in `log T`; carrying it through the localization argument gives `C_I(x)=o(H)` throughout
+`a_n=(Lambda(n)/sqrt(n)) min(n/x,x/n)`,
 
-`x=o(H/log^2 T)`.
+the coefficient weight is not merely `O(x log^2 x)` but
 
-The first generic `H`-scale term has therefore moved. It is no longer localization at all, but the Montgomery--Vaughan interior mean-value remainder
+`sum_n n a_n^2=(4/3)x log x+(8/9)x+O(x exp(-cV(log x)))`.
 
-`O(x log^2(2x))`
+The saved logarithm comes from inserting the classical asymptotic for `sum_(n<=u)Lambda(n)^2` instead of the pointwise majorant `Lambda(n)<=log n`. Feeding this exact weight into Montgomery--Vaughan, while retaining the VIS-301 zero-free localization control, gives the complete pointwise asymptotic whenever
 
-for Wang's exact Dirichlet polynomial. This reaches the requested output scale at `x asymp H/log^2 T`.
+`x log(2x)=o(H)`.
 
-The reusable lesson is that resolving a bundled proof boundary should **relocate the load-bearing term**, not preserve the old label. Exact recombination removed the lower-source wall; proof-level uniformity moved the first upper wall; energy decomposition isolated one coherence term; classical zero-free information then suppressed that term and exposed the interior Dirichlet-polynomial estimate underneath. A boundary is structural only after all earlier error channels are below resolution and the newly exposed term has itself been tested for coefficient-specific cancellation or sharpness.
+The load-bearing term has therefore moved again. The first unresolved generic upper scale is now
 
-For the current Wang statistic, the decisive next question is whether the exact coefficients
+`x log x asymp H`,
 
-`a_n=(Lambda(n)/sqrt(n)) min(n/x,x/n)`
+or `x asymp H/log T` in the polynomial source regime, and the unresolved object is the **actual off-diagonal time integral** rather than its generic absolute coefficient majorant. A further gain must use the frequencies `log(n/m)` and Wang's exact weights, produce an explicit correction, or exhibit a matched lower/control construction. Re-estimating localization or repeating the `x log^2 x` coefficient bound cannot decide this layer.
 
-permit an improvement, explicit correction or matching lower/control construction beyond the generic `O(sum n a_n^2)=O(x log^2 x)` mean-value bound near `x~H/log^2 T`.
+The reusable lesson is that resolving a bundled proof boundary should **relocate the load-bearing term and then re-audit the new term after source specialization**. Exact recombination removed the lower-source wall; proof-level uniformity moved the first upper wall; energy decomposition isolated one coherence term; classical zero-free information suppressed that term; and coefficient-specific moment evaluation then removed one logarithm from the newly exposed generic mean-value bound. A boundary is structural only after every earlier channel is below resolution and the first remaining term has survived specialization to the actual source coefficients.
 
-**Boundary.** `H/log^2 T` is currently a proof boundary, not a proved transition of the pair-correlation statistic. VIS-301 does not establish coefficient-specific cancellation at that scale, improve the fixed-power arithmetic source envelope, control bounded `x`, or justify moving-support versions of the integrated theorem. The `H/log^3 T` localization branch is closed under the current hypotheses and should not be reopened without changing the zero-free input.
+**Boundary.** `x log x asymp H` is currently a proof boundary, not a proved transition of the pair-correlation statistic. VIS-302 evaluates the coefficient weight entering the generic mean-value theorem but does not evaluate the actual off-diagonal remainder at that scale, improve the fixed-power arithmetic source envelope, control genuinely bounded `x`, or justify moving-support versions of Wang's integrated theorem.

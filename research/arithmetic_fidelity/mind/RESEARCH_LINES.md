@@ -8,7 +8,7 @@ This file holds the current mathematical questions suggested by the durable arit
 
 The fidelity results separate exact discriminator survival from finite observation, source freedom, conditioning and source-category rigidity. AF-406 shows why the representation must be named: finite coefficient-sequence Pólya-frequency positivity can change under an exponential tilt that preserves the entire zero divisor, whereas the normalized translation-kernel Toda hierarchy is invariant under the corresponding affine exponential profile gauge. AF-407 adds that the native bilateral-Laplace convergence half-plane of the Euler-log profile is zero-free; the nontrivial zeta divisor enters only after meromorphic continuation. Source identification, representation gauge, native analytic domain, admissible continuation and zero selection are therefore separate gates.
 
-## Resolve the square-transition fibers of the critical derivative window
+## Resolve the packet-level tuned square-transition fibers of the critical derivative window
 
 **Linked intuitions:** `MI-043-support-scale-interaction-components-bound-effective-relational-arity` through `MI-055-derivative-depth-is-a-second-left-tail-scaling-coordinate`.
 
@@ -20,13 +20,23 @@ AF-420 then identifies the joint critical coordinate
 
 `b_n(a)=a n^(s_n/n-2)=a e^(tau_n)`, with `a=c^2/(4pi^2)`.
 
-For `b<1`, the complete exceptional-`1` sector remains absolutely resummable to the fixed-degree exponential. AF-421 now resolves the signed finite-window organization beyond that boundary. If `b_n->b in (0,infinity)`, the exponentially leading partition families are full-column packets around `(r^n)` with rates
+For `b<1`, the complete exceptional-`1` sector remains absolutely resummable to the fixed-degree exponential. AF-421 resolves the signed finite-window organization beyond that boundary. If `b_n->b in (0,infinity)`, the exponentially leading partition families are full-column packets around `(r^n)` with rates
 
 `L_r(b)=b^r/(r!)^2`.
 
-Away from `b=m^2`, one packet with `r=floor(sqrt(b))` dominates, so every nonsquare superthreshold `b>1` gives genuine signed divergence rather than hidden cancellation. At each square transition `b=m^2`, exactly the adjacent packets `r=m-1,m` tie exponentially. Even `n` reinforces them; odd `n` can cancel only when their exact amplitude ratio is tuned to one at the next scale. The first transition is already closed on `s_n=2n,a=1`, where the complete signed sector diverges linearly with parity-alternating sign.
+Away from `b=m^2`, one packet with `r=floor(sqrt(b))` dominates, so every nonsquare superthreshold `b>1` gives genuine signed divergence rather than hidden cancellation. At each square transition `b=m^2`, exactly the adjacent packets `r=m-1,m` tie exponentially.
 
-The finite-`tau` frontier is therefore now discrete. Determine the next-order asymptotics on the odd-`n` square fibers `b=m^2`, including whether adjacent-packet cancellation leaves a nonzero residual, recruits a third/near-column packet, or can recover the fixed-partition exponential under a finely tuned derivative sequence. The genuinely supercritical regime `s_n/n>2`, where `b_n` no longer stays finite, is a separate moving-saddle problem and should not be extrapolated from AF-421.
+AF-422 resolves the next scale of that collision. Write `s_n=2n+d_n`, `d_n=o(n)`, and along `b_n->m^2` define
+
+`Xi_(n,m)=log n+n log(b_n/m^2)-d_n log m`.
+
+The adjacent rectangular packet ratio is
+
+`F_(n,m)=K_m exp(Xi_(n,m))(1+o(1))`,
+
+with an explicit `K_m>0`. Even `n` cannot cancel because the packet signs agree. For odd `n`, leading rectangular cancellation is possible only under the codimension-one tuning `Xi_(n,m)->-log K_m`. Outside that tuning the adjacent rectangles do not cancel; for `m>=2` the surviving square-transition packet already has exponential nth-root rate greater than one. The exact square path `a=m^2, s_n=2n` is untuned because `Xi_(n,m)=log n`, so it is closed as well.
+
+The finite-`tau` frontier is therefore narrower than the square fibers themselves. The only unresolved finite-window interface is the **odd tuned packet problem**: after the two rectangular amplitudes have been tuned to cancel at leading order, determine the ratio of their complete residual packet factors and whether the cancellation survives the near-column/Schur--Cauchy corrections. The genuinely supercritical regime `s_n/n>2`, where `b_n->infinity`, remains a separate moving-saddle problem and should not be extrapolated from the finite-window hierarchy.
 
 ## Match physical locality to source-density and certificate scales
 

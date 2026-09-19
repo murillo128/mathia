@@ -14,30 +14,36 @@ VIS-294--VIS-298 close the apparent moving lower-source branch. Once the explici
 
 The earlier `sqrt(log T)` and related lower-source thresholds were proof-packaging artifacts rather than arithmetic transitions.
 
-## Resolve the interior mean-value budget at the true upper pointwise layer
+## Resolve the actual off-diagonal mean-value remainder at the upper pointwise layer
 
 **Linked intuition:** `MI-040-wang-pointwise-upper-ceiling-is-a-localization-coherence-budget`.
 
-VIS-299 shows that the fixed exponent gap was not the true pointwise boundary. Re-running Wang's displayed localization proof gives the same gamma-recentered asymptotic whenever `x log^3 T/H -> 0`.
+VIS-299 shows that the fixed exponent gap was not the true pointwise boundary. Re-running Wang's displayed localization proof first gives the same gamma-recentered asymptotic whenever `x log^3 T/H -> 0`.
 
 VIS-300 identifies the only term carrying that extra logarithm. The pure inside/outside leakage energies are already `O(x log^2 T)`, so at `x=O(H/log^3 T)` they are `o(H)`; the whole unresolved scale is the bilinear inside--outside coherence `C_I(x)`.
 
-VIS-301 then removes that localization boundary. The unconditional Vinogradov--Korobov zero-free region inserts the near-height attenuation `x^(-eta_T)` with `eta_T asymp L^(-2/3)(log L)^(-1/3)` into both sides of the coherence term. Re-running the localization proof with that information gives `C_I(x)=o(H)` and preserves the pointwise asymptotic throughout
+VIS-301 removes that localization boundary. The unconditional Vinogradov--Korobov zero-free region inserts the near-height attenuation `x^(-eta_T)` with `eta_T asymp L^(-2/3)(log L)^(-1/3)` into both sides of the coherence term. Re-running the localization proof with that information gives `C_I(x)=o(H)` and preserves the pointwise asymptotic throughout `x=o(H/L^2)`.
 
-`x=o(H/L^2)`.
+VIS-302 then shows that the next apparent `H/L^2` wall is also not structural. For Wang's exact coefficients
 
-The next generic `H`-scale term is therefore the **interior Montgomery--Vaughan mean-value remainder** `O(x log^2(2x))`, which reaches output scale at `x asymp H/L^2`. The live upper question is whether Wang's exact coefficients
+`a_n=(Lambda(n)/sqrt(n)) min(n/x,x/n)`,
 
-`a_n=(Lambda(n)/sqrt(n)) min(n/x,x/n)`
+the coefficient weight entering Montgomery--Vaughan has the exact asymptotic
 
-have enough arithmetic structure to improve that generic bound, produce a stable deterministic correction, or realize the `H` scale sharply. Any continuation should attack this exact interior term. Re-estimating localization leakage or the old `H/L^3` coherence without changing the zero-free input is no longer a live boundary test.
+`sum_n n a_n^2=(4/3)x log x+(8/9)x+O(x exp(-cV(log x)))`.
+
+The displayed `O(x log^2 x)` bound loses one logarithm through the pointwise estimate on `Lambda`. Feeding the coefficient-specific moment back into the same argument preserves the complete pointwise asymptotic whenever
+
+`x log(2x)=o(H)`.
+
+The first unresolved generic upper layer is therefore `x log x asymp H`, equivalently `x asymp H/L` in the polynomial source regime. This time the live object is the **actual off-diagonal time integral** behind the Montgomery--Vaughan remainder. Determine whether Wang's exact frequencies and weights give further oscillatory cancellation, a stable deterministic `H`-scale correction, or a matched admissible lower/control construction showing that this scale is genuinely attainable. Re-estimating localization leakage, the old `H/L^3` coherence or the coarse `x log^2 x` coefficient majorant is no longer a live boundary test.
 
 The separate fixed-power arithmetic question remains: can the prime-source envelope itself be improved with information genuinely weaker than the RH-equivalent continuation route?
 
 ## Recombine exact deterministic structure and decompose every newly exposed proof wall before interpreting it
 
-The current ledger separates packet total variation, support width, moving-test seminorm, source exponent, requested output scale, prime-power source measure, smoothing multiplier, theorem-uniformity range, pure localization leakage, cross-coherence, interior Dirichlet-polynomial mean-value error, explicit-formula remainder, deterministic gamma normalization and analytic domain of the source Dirichlet transform.
+The current ledger separates packet total variation, support width, moving-test seminorm, source exponent, requested output scale, prime-power source measure, smoothing multiplier, theorem-uniformity range, pure localization leakage, cross-coherence, coefficient-specific mean-value weight, actual off-diagonal Dirichlet-polynomial remainder, explicit-formula remainder, deterministic gamma normalization and analytic domain of the source Dirichlet transform.
 
-VIS-294--VIS-301 now show four ways a nominal boundary can be misread. Exact deterministic pieces may have been split before Cauchy--Schwarz; a theorem may be packaged with fixed parameters even though its proof exposes a larger moving regime; several errors may be bundled into one big-O even though only one cross term is load-bearing; and that cross term can itself fall below resolution once classical source information is inserted, exposing a different interior estimate underneath.
+VIS-294--VIS-302 now show five ways a nominal boundary can be misread. Exact deterministic pieces may have been split before Cauchy--Schwarz; a theorem may be packaged with fixed parameters even though its proof exposes a larger moving regime; several errors may be bundled into one big-O even though only one cross term is load-bearing; classical source information can suppress that term and expose a different estimate underneath; and a generic theorem bound can itself be loose after specializing to the exact arithmetic coefficient sequence.
 
-A genuine new source transition must survive exact recombination, proof-level uniformity, energy decomposition and coefficient-specific testing of the first remaining term at output scale. The current upper candidate is not the old ratio `xL^3/H`, but whether the exact Wang Dirichlet polynomial improves or saturates the `xL^2` mean-value horizon.
+A genuine new source transition must survive exact recombination, proof-level uniformity, energy decomposition and coefficient-specific testing of the first remaining term at output scale. The current upper candidate is not `xL^3/H` or `xL^2/H`, but the off-diagonal behavior at `xL/H` in the polynomial source regime. That is still a proof boundary, not an established transition of the pair-correlation statistic.
