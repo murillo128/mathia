@@ -6,30 +6,22 @@ This file holds the current mathematical questions suggested by the durable visu
 
 **Linked intuitions:** `MI-029-fixed-margin-pair-correlation-accuracy-must-outrun-packet-conditioning` through `MI-039-wang-lower-source-crossover-is-resolution-dependent`.
 
-VIS-282--VIS-298 separate the coefficient profile, Wang's complete pair statistic, deterministic gamma structure and the source transform. After exact gamma recentering, the apparent `sqrt(log T)` and related lower-source thresholds disappear: they were proof-packaging artifacts rather than arithmetic transitions.
+VIS-282--VIS-298 separate coefficient profile, Wang's complete pair statistic, deterministic gamma structure and the source transform. After exact gamma recentering, the apparent `sqrt(log T)` and related lower-source thresholds disappear: they were proof-packaging artifacts rather than arithmetic transitions.
 
-## Reduce the natural-window problem to taper-weighted prime-ratio crowding without projecting away sieve dimension
+## Aggregate determinant slices while preserving the two prime coordinates
 
 **Linked intuitions:** `MI-040-wang-pointwise-upper-ceiling-is-a-localization-coherence-budget` and `MI-041-wang-natural-window-is-a-taper-weighted-prime-ratio-occupancy-problem`.
 
-VIS-299--VIS-312 move the generic upper wall from localization leakage to coefficient-specific spacing, then show that randomized phases, completely multiplicative same-base controls and the true long-time prime-log orbit do not make the absolute candidate scale an intrinsic obstruction. Pointwise nearest-neighbour isolation itself has no cutoff-free limit because the full cross-base ratio spectrum is dense.
+VIS-299--VIS-316 reduce the natural Wang mean-square window to a taper-weighted prime-ratio occupancy problem. Dense global ratio spectrum makes pointwise nearest-neighbour gaps meaningless; dyadic arithmetic shells restore finite-resolution geometry; retaining two-prime sparsity removes one logarithm; and the separated-frequency large sieve reduces a shell to the maximal occupancy `kappa_M(V)` of a Fourier cell. At the natural scale, only the taper-weighted excess over the expected two-prime density matters.
 
-VIS-313 resolves that representation problem by grouping the strict near band by dyadic arithmetic height. VIS-314 retains two-prime sparsity and removes one logarithm from the shell energy. VIS-315 identifies the correct shell-local object: if `kappa_M(V)` is the maximal number of ordinary-prime ratio frequencies in a log-frequency cell of width `O(1/V)`, the separated-frequency large sieve plus coloring gives
+VIS-317 identifies one representation failure. The determinant coordinate `h=qv-ur` correctly measures distance from a represented ratio `u/v`, but it erases the two coordinatewise forbidden residues that supply the dimension-two prime sieve. Determinant-only residue sifting cannot produce the desired `log^(-2) M` density factor.
 
-`V^(-1) integral |F_M^pp(T)|^2 dT << kappa_M(V) E_M^pp`.
+VIS-318 closes the opposite extreme. For a fixed same-shell represented center and fixed determinant `h`, the solutions of `vq-ur=h` are `(q,r)=(q_0,r_0)+t(u,v)`. Since the step vector itself has size `asymp M`, the shell contains only `O(1)` values of `t`—at most three in the standard `M/2<.<=2M` convention. Thus a fixed-`h` slice retains both prime coordinates but has no long one-dimensional parameter over which an asymptotic two-linear-form sieve can generate the missing density factor.
 
-A nonempty frequency cell is, up to constants, a thin determinant strip `|qv-ur| << M^2/V` around a represented prime-ratio direction `u/v`. VIS-316 then removes unnecessary uniformity across shells. If
-
-`kappa_M(V) << 1 + A_M M^2/(V log^2 M)`,
-
-the Wang taper sees only `B(x,V)=sum_M w(M/x) sqrt(A_M)`, and at `H~V~x log log x` the natural-window mean square follows from `B=o((log log x)^(3/2))`.
-
-VIS-317 adds a representation-level obstruction that is easy to miss if the determinant coordinate is treated as the arithmetic variable rather than the geometric label. For fixed coprime odd `u,v` and `h=qv-ur`, every odd prime `ell` away from `uv` admits **every** residue class of `h` with `q,r` both nonzero modulo `ell`: the exact local multiplicity is `ell-1` when `h=0` and `ell-2` otherwise. Thus `(q,r)->h` preserves the ratio-cell geometry but erases the two coordinatewise forbidden residues that carry the prime-pair sieve dimension. A determinant-only residue sieve cannot by itself generate the desired `log^(-2) M` density factor.
-
-The live arithmetic question is therefore a taper-weighted determinant-strip estimate in a representation that retains the two prime coordinates: a pair-coordinate Selberg sieve, a fixed-`h` parametrization by two affine linear forms, or a weighted/additive-energy argument with equivalent information. A spectacular remote-shell cluster is not automatically relevant after tapering, but neither can the central-shell problem be solved by scalar determinant residue sifting after its prime-coordinate exclusions have already been projected away.
+The live object is therefore the **family of short determinant slices taken together**. A successful argument must preserve `(q,r)` while averaging across the whole thin strip, or use an equivalent weighted/additive-energy formulation that retains the same prime-coordinate information. The remaining candidates include a two-coordinate upper-bound sieve on the strip, a rational/Beatty-type organization of the varying short slices, or a coefficient-weighted energy estimate. VIS-318 does not rule out any of those and applies specifically to represented same-shell centers.
 
 ## Recombine exact deterministic structure before interpreting a proof wall
 
-The current ledger separates coefficient weights, support-sensitive spacing, random versus completely multiplicative phases, the actual prime-log orbit, dense full-spectrum geometry, dyadic aggregate density, prime-pair sieve sparsity, Fourier-cell occupancy, shell taper, determinant projection, finite-window length and the moving-frequency/joint-limit quantifier.
+The current ledger separates coefficient weights, support-sensitive spacing, actual prime-log dynamics, dyadic density, prime-pair sparsity, Fourier-cell occupancy, shell taper, determinant projection, slice length and finite-window aggregation.
 
-VIS-313--VIS-317 give a reusable audit pattern: when dense spectrum makes pointwise gaps meaningless, aggregate by arithmetic scale; when a logarithmic loss remains, preserve the actual prime-pair sparsity; before demanding a uniform shell theorem, recombine shell excess through the destination taper; and when introducing a scalar geometric coordinate, check whether the projection has discarded the local residue exclusions that the intended sieve still needs. A structural transition is credible only after the remaining finite-height mechanism defeats a control that preserves these same weighted variables and arithmetic coordinates at the same scale.
+VIS-317--VIS-318 give a two-sided representation audit. Projecting all the way to the scalar determinant loses sieve dimension; freezing the determinant preserves that dimension but destroys averaging length. The surviving representation must sit between those extremes: retain both prime coordinates **and** aggregate enough neighboring determinant values for arithmetic density to become visible. Remote worst-case clusters remain irrelevant unless the Wang taper gives them destination weight.
