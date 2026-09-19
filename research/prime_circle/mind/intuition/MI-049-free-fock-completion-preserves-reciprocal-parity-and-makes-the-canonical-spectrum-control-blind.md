@@ -1,6 +1,6 @@
-# MI-049 — Free-Fock completion preserves reciprocal parity and makes the canonical spectrum control-blind
+# MI-049 — Free-Fock completion and covariant source metrics preserve reciprocal control equivalence
 
-**Evidence level:** exact synthesis from [PC-350](../../findings/PC-350-solvable-decoder-recovers-centered-radial-profile.md), [PC-351](../../findings/PC-351-triangular-development-is-spectrally-trivial-and-control-conjugate.md) and [PC-355](../../findings/PC-355-free-fock-signature-tower-is-unitarily-control-blind.md), sharpening the finite-dimensional quotient audit of MI-047--MI-048.
+**Evidence level:** exact synthesis from [PC-350](../../findings/PC-350-solvable-decoder-recovers-centered-radial-profile.md), [PC-351](../../findings/PC-351-triangular-development-is-spectrally-trivial-and-control-conjugate.md), [PC-355](../../findings/PC-355-free-fock-signature-tower-is-unitarily-control-blind.md) and [PC-356](../../findings/PC-356-source-induced-radial-gram-metrics-remain-matched-control-isometric.md), sharpening the finite-dimensional quotient audit of MI-047--MI-048.
 
 Prime Circle already separates **source recovery** from **spectral discrimination**. The full Chen signature can retain the centered radial path, while triangular and semisimple finite-dimensional developments can lose the useful orientation under conjugacy-class spectralization. PC-355 shows that the canonical all-depth/free-Fock lift does not evade that obstruction merely by becoming infinite-dimensional in spirit.
 
@@ -16,8 +16,18 @@ The ordinary finite-level spectrum is even more degenerate. The signature has sc
 
 where `Q_N` strictly raises tensor degree and is nilpotent on the truncation. Hence `Spec L_N(D)={1}` for every finite `N`, independently of the arithmetic source. Degree weights or enlarging the shell alphabet do not remove the parity covariance when they are functorial and parity-compatible.
 
-This closes a tempting escape from PC-354. Moving from fixed finite-dimensional algebraic representations to the canonical full-signature/Fock representation does not manufacture a source-specific spectral coordinate. **Infinite representation depth is not useful by itself when the entire construction remains equivariant under the source/control involution and the destination again quotients by unitary equivalence.**
+PC-356 tests the most direct objection: perhaps the fixed one-particle metric is itself the source of the blindness. Let `T_S` map the centered shell alphabet to the actual radial derivative profiles and define the source-native energy metric
 
-The surviving design space is more specific: a viable operator construction must introduce source-forced structure **before** the unitary spectral quotient that is not transported by the fixed reciprocal parity. Candidates include a source-dependent domain, metric, boundary condition, coupling, canonical frame or other non-spectral covariant whose control action is not implemented by the same second-quantized unitary. Any such proposal must then be tested against a matched non-arithmetic reciprocal control before assigning zero-selective meaning to the resulting spectrum.
+`G_S=T_S^*T_S`.
 
-**Boundary.** PC-355 does not rule out source-dependent Hilbert spaces, non-functorial refinement laws, parity-breaking domains/boundary conditions, non-spectral covariants retained before quotienting, or an infinite-dimensional operator whose spectral theorem is tied independently to zeta zeros. It rules out the canonical free-Fock/left-regular signature tower, its parity-compatible degree completions and unitary spectral invariants as a new discriminator merely because they retain all tensor depths.
+This Gram form is positive definite and can genuinely break parity: already for shells `{2,3}` the calibration/transverse cross term is `pi/sqrt(3)-2 != 0`, so `J^*G_SJ != G_S`. But the reciprocal matched control has radial realization `T~_S=T_SJ`, and applying the same native construction to it gives exactly
+
+`G~_S=J^*G_SJ`.
+
+Thus `J` is an isometry **between** the source and control Hilbert spaces even though it is not an isometry of the source metric to itself. Its tensor powers and second quantization again implement unitary equivalence of the corresponding Fock constructions. Spectra, singular values, pseudospectra, numerical ranges, resolvents and functorial `*`-polynomial spectral data remain matched-control blind.
+
+The reusable obstruction is therefore **covariance**, not symmetry of a chosen metric. A source-dependent enrichment does not break a matched control if the enrichment is recomputed fairly on the control and is transported by the same involution as the underlying source data. Making the Hilbert geometry more source-native can still leave the entire destination isometric.
+
+The surviving design space is more specific: a viable operator construction must introduce source-forced structure **before** the unitary spectral quotient that is not transported covariantly by reciprocal control. Candidates include an independently anchored domain, boundary condition, asymmetric coupling, canonical frame or other non-spectral covariant whose control-side reconstruction is not just the `J`-transport of the source object. Such asymmetry must itself have an arithmetic justification and survive a matched non-arithmetic reciprocal control.
+
+**Boundary.** PC-356 rules out the Euclidean radial-energy Gram construction and, more generally, the inference that a parity-noncommuting source-native metric is automatically discriminating. It does not rule out every source-dependent Hilbert space, non-functorial refinement law, parity-breaking domain/boundary condition, non-spectral covariant retained before quotienting, or an infinite-dimensional operator whose spectral theorem is tied independently to zeta zeros. The obstruction applies when the source/control construction is covariant under the same reciprocal involution.

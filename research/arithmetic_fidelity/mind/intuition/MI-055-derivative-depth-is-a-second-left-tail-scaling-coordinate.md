@@ -1,6 +1,6 @@
 # MI-055 — Derivative depth and source amplitude form a joint left-tail critical coordinate
 
-**Evidence level:** exact synthesis from [AF-416](../../findings/AF-416-full-left-tail-diagonal-has-positive-cauchy-limit.md) through [AF-429](../../findings/AF-429-supercritical-full-column-saddle-has-shrinking-integer-window.md).
+**Evidence level:** exact synthesis from [AF-416](../../findings/AF-416-full-left-tail-diagonal-has-positive-cauchy-limit.md) through [AF-430](../../findings/AF-430-supercritical-residual-packets-preserve-shrinking-saddle-window.md).
 
 AF-416 closes the full fixed-shift determinant on the reciprocal-order left-tail diagonal. AF-417 shows that this closure is not uniform in an independently moving derivative offset: fixed partition sectors see `s_n/n->sigma` by multiplying the Cauchy parameter by `e^sigma`. AF-418 then shows that the complete growing partition family detects a finer critical coordinate at `sigma=2`, namely
 
@@ -34,8 +34,16 @@ The continuous maximum is at `t=1`, but the exact adjacent-width ratio crosses o
 
 `dist(tau_n,Z)=O(R_n/n)=O(n^(-2/sigma+o(1)))`.
 
-The supercritical continuous saddle therefore creates another shrinking-target gate rather than removing discreteness. A formal real optimizer is not enough: the source lattice must hit a window much smaller than one integer spacing before nearest-width cancellation becomes available. This condition is necessary only for the rectangular sector, not sufficient for cancellation of the full signed partition sum.
+AF-430 shows that the complete residual partition packet does not repair that mismatch. Whenever an integer sequence reaches the AF-429 window, the adjacent residual factors satisfy
 
-The reusable lesson is a **nested asymptotic-coordinate hierarchy whose final tuning must survive the actual source lattice**. At the critical transition, square-amplitude balance descends to an integer derivative-depth shrinking target whose exceptional amplitude set is residual but null. Above the transition, the optimizer itself moves to `R_n`, yet adjacent cancellation again requires a shrinking integer hit at resolution `R_n/n`. In both regimes continuous saddle balance and discrete source realizability are separate mathematical gates.
+`G_(n,r_n-1), G_(n,r_n) -> exp(-a e^sigma)`
 
-**Boundary.** AF-429 does not decide whether a distinguished source amplitude satisfies the critical displaced shrinking target, whether the supercritical centers `tau_n` hit integers at the required rate, or whether either necessary condition controls the complete determinant. Nonrectangular shapes, other determinant sectors and interactions among competing packet families can still alter the signed total. No statement here selects rational primes, zeta zeros or RH.
+and
+
+`log(G_(n,r_n)/G_(n,r_n-1)) = sigma a e^sigma/n + o(n^-1)`.
+
+Thus the complete-packet balance center moves only by `a e^sigma R_n/n^2(1+o(1))`, while the necessary integer-comparability window remains `R_n/n`. The packet correction is a real finer coordinate, but it is **sub-window**: summing all residual partition shapes does not enlarge the lattice aperture in which cancellation can start.
+
+The reusable lesson is a **nested asymptotic-coordinate hierarchy whose final tuning must survive the actual source lattice**. At the critical transition, square-amplitude balance descends to an integer derivative-depth shrinking target whose exceptional amplitude set is residual but null. Above the transition, the optimizer moves to `R_n`, adjacent cancellation requires a shrinking integer hit at resolution `R_n/n`, and the complete residual packet only refines the center at `R_n/n^2`. Continuous saddle balance, packet resummation and discrete source realizability are separate mathematical gates.
+
+**Boundary.** AF-430 does not decide whether a distinguished source amplitude satisfies the critical displaced shrinking target, whether the supercritical centers `tau_n` hit integers at the required `R_n/n` rate, whether a surviving hit reaches the packet-corrected `R_n/n^2` center closely enough, or whether the omitted determinant sectors remain subordinate. No statement here selects rational primes, zeta zeros or RH.

@@ -2,7 +2,7 @@
 
 This file holds the current mathematical questions suggested by the durable Weil-positivity intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Find a genuinely noncentral finite--archimedean sign mechanism beyond componentwise Whittaker scale traps
+## Find a genuinely noncentral finite--archimedean sign mechanism beyond componentwise and Hecke-equivariant Whittaker scale traps
 
 **Linked intuitions:** `MI-039-enriched-semigroups-inherit-obstructed-scalar-shadows-or-universal-lifts` through `MI-054-index-adapted-whittaker-sampling-has-one-critical-scale-and-it-factorizes`.
 
@@ -22,14 +22,24 @@ For the power law `Y_n=c n^(-alpha)`, there is a sharp trichotomy. If `alpha<1`,
 
 `w_(r,n)(c/n)=B_r(c) lambda_r(n)n^(-1/2)`.
 
-Ordinary positive boundary `L^2` then squares the half-density to `|lambda_r(n)|^2/n` and the resulting Rankin--Selberg sum diverges. Thus the simplest index-adapted scale escape reaches the right exponent precisely by freezing the mixed coordinate it was meant to preserve.
+Ordinary positive boundary `L^2` then squares the half-density to `|lambda_r(n)|^2/n` and the resulting Rankin--Selberg sum diverges.
 
-The route is now trapped by three complementary componentwise failures: **common homogeneous globalization erases incidence; fixed bounded scale preserves incidence but kills the tail; pure power-law index adaptation has a unique critical scale and that scale factorizes and diverges under diagonal positivity.** A viable construction must introduce genuinely new structure: a source-forced nonconstant transition sequence `t_n=nY_n` staying in a compact positive range, a canonical cross-index/operator-valued boundary form acting before diagonal squaring, controlled unboundedness with its own sign theorem, or a cohomological/intersection mechanism outside ordinary componentwise Hilbert positivity.
+WP-370 now tests whether the intrinsic Hecke correspondence can **force** a more interesting nonconstant transition sequence. For a diagonal sampler `(R_Ya)_n=a_n(Y_n)`, exact intertwining with every prime Hecke operator on the smooth finite-Fourier cusp core,
 
-## Keep arithmetic content, local positivity, tensorization, scale globalization, tail survival and critical sign coercivity separate
+`R_Y T_p = H_p R_Y`,
 
-The current audit distinguishes finite Hecke structure, nonconstant divisibility projections, finite--archimedean incidence, common versus cross-index radial geometry, exact dilation homogeneity, fixed-scale boundedness, cusp approach rate, the transition coordinate `nY`, arithmetic-index tail size, critical half-density, diagonal Hilbert squaring and sign coercivity.
+holds if and only if
 
-WP-365--WP-369 show that seeing the right `n^(-1/2)` prefactor is not enough. One must ask whether the remaining Whittaker profile still carries source-specific incidence, whether the scale law was source-forced rather than chosen to fit the desired exponent, and what positivity does after the half-density is exposed. At `Y_n=c/n`, the exponent is correct but the mixed coordinate is constant and the canonical positive norm is both quadratic and divergent.
+`Y_(pm)=Y_m/p`.
 
-Any next proposal should state where the `(log p)p^(-1/2)` carrier lives before closure, how `t_n=nY_n` is generated, what cross-index degrees of freedom survive, whether the form remains finite, and what theorem fixes the required orientation independently of the divisor being constrained. More elaborate componentwise positivity on a homogeneous global scale, a bounded fixed scale, or a pure power-law moving scale is now calibration rather than a new route.
+Equivalently `t_(pm)=t_m` for `t_n=nY_n`; prime factorization therefore forces `Y_n=c/n` and `t_n=c`. Hecke naturality selects exactly the critical ray of WP-369 and simultaneously freezes the mixed coordinate. The sampled Whittaker mode factorizes, and ordinary positive boundary `L^2` returns to the same divergent `|lambda_r(n)|^2/n` geometry.
+
+The route is now trapped by four complementary componentwise failures: **common homogeneous globalization erases incidence; fixed bounded scale preserves incidence but kills the tail; pure power-law index adaptation has one critical scale and that scale factorizes; and exact diagonal Hecke equivariance itself forces that same factorized critical ray.** A source-forced nonconstant transition sequence must therefore break exact diagonal Hecke equivariance or arise from a genuinely cross-index/operator-valued construction whose naturality and sign theorem are formulated at a different level.
+
+## Keep arithmetic content, local positivity, tensorization, scale globalization, Hecke naturality, tail survival and critical sign coercivity separate
+
+The current audit distinguishes finite Hecke structure, nonconstant divisibility projections, finite--archimedean incidence, common versus cross-index radial geometry, exact dilation homogeneity, fixed-scale boundedness, cusp approach rate, the transition coordinate `nY`, arithmetic-index tail size, diagonal Hecke intertwining, critical half-density, diagonal Hilbert squaring and sign coercivity.
+
+WP-365--WP-370 show that seeing the right `n^(-1/2)` prefactor is not enough. One must ask whether the remaining Whittaker profile still carries source-specific incidence, whether the scale law was source-forced rather than chosen to fit the desired exponent, what naturality requirement generated that law, and what positivity does after the half-density is exposed. At `Y_n=c/n`, the exponent is correct but the mixed coordinate is constant and the canonical positive norm is both quadratic and divergent; WP-370 shows that exact prime-Hecke equivariance does not supply a richer diagonal section, because it forces precisely that ray.
+
+Any next proposal should state where the `(log p)p^(-1/2)` carrier lives before closure, how `t_n=nY_n` is generated, which Hecke covariance is required or deliberately broken, what cross-index degrees of freedom survive, whether the form remains finite, and what theorem fixes the required orientation independently of the divisor being constrained. More elaborate componentwise positivity on a homogeneous global scale, a bounded fixed scale, a pure power-law moving scale, or an exactly Hecke-equivariant diagonal sampler is now calibration rather than a new route.
