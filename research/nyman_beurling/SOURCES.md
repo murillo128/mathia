@@ -39,6 +39,10 @@ This file records durable literature dependencies for `research/nyman_beurling/`
 
 - Chiara Bellotti, *Explicit bounds for the Riemann zeta function and a new zero-free region*, J. Math. Anal. Appl. 536 (2024), 128249, DOI `10.1016/j.jmaa.2024.128249`, [arXiv:2306.10680](https://arxiv.org/abs/2306.10680). Role: Theorem 1.2 gives the explicit Vinogradov--Korobov zero-free region `sigma >= 1 - 1/(53.989 (log |t|)^(2/3) (log log |t|)^(1/3))` for `|t|>=3`; `NB-125` uses this as the load-bearing source law converting its rootwise horizontal-depth requirement for actual zero packets into an additive log-log height budget.
 
+## Landau–Gonek zero sums
+
+- S. M. Gonek, *A Formula of Landau and Mean Values of ζ(s)*, in *Topics in Analytic Number Theory* (Austin, Tex., 1982), ed. S. W. Graham and J. D. Vaaler, University of Texas Press, Austin, 1985, 92–97, [author PDF](https://www.sas.rochester.edu/mth/people/faculty/gonek-steve/assets/pdf/8-landau-form.pdf). Role: Theorem 1 gives the uniform-in-`x,T` Landau formula for `sum_{0<gamma<=T} x^rho`, including the prime-power main term and the explicit cumulative error terms. `NB-235` uses it only as a load-bearing method audit: after the actual shell weight annihilates the diagonal, bounded-variation smoothing of this global cumulative remainder still gives only `O(Q)` after Ford normalization, so a genuinely microlocal and horizontally sensitive remainder estimate is required.
+
 ## Prime-number-theorem remainder
 
 - Chiara Bellotti, *A new zero-density estimate for zeta(s) and the error term in the prime number theorem*, Bulletin of the London Mathematical Society 58 (2026), e70442, DOI `10.1112/blms.70442`, [arXiv:2508.02041](https://arxiv.org/abs/2508.02041). Role: peer-reviewed modern source for the essentially optimal prime-number-theorem remainder associated with a Korobov--Vinogradov zero-free region; in particular it implies `psi(x)-x << x exp(-c (log x)^(3/5) (log log x)^(-1/5))` for some `c>0`. `NB-194` uses this remainder, via Stieltjes partial summation, to obtain a deterministic return-free corridor for the actual full von-Mangoldt Euler band.
