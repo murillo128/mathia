@@ -1,6 +1,6 @@
-# MI-071 — Source-frame exceptional geometry is constrained twice: by Welch scale and by the exact source image
+# MI-071 — Source-frame exceptional geometry has a fixed gap above the generic Welch threshold
 
-**Evidence level:** exact synthesis from [MC-385](../../findings/MC-385-fixed-power-exceptional-moduli-cannot-feed-rank-linear-source-frame.md) through [MC-388](../../findings/MC-388-endpoint-simplex-rank-excludes-near-annihilator-sharpness.md), interpreted against the endpoint source-frame bounds of MC-374 and MC-381 and the analytic ceilings MC-382--MC-384.
+**Evidence level:** exact synthesis from [MC-385](../../findings/MC-385-fixed-power-exceptional-moduli-cannot-feed-rank-linear-source-frame.md) through [MC-389](../../findings/MC-389-endpoint-affine-rank-forces-fixed-exception-gap.md), interpreted against the endpoint source-frame bounds of MC-374 and MC-381 and the analytic ceilings MC-382--MC-384.
 
 The endpoint frame does not require uniform cancellation for every source character. Let `W` be a surviving endpoint-mode subspace, `H=|W|`, and let `G` be the Gram matrix of its normalized source rows. Exact endpoint constancy puts all rows in an `R`-dimensional space.
 
@@ -12,10 +12,20 @@ MC-388 performs the decisive second pullback. For the exact endpoint partition t
 
 `d-dim(W cap <1>) >= d-1`.
 
-Hence a high-dimensional endpoint support cannot be close to the low-dimensional coset required by the MC-387 near-extremizer. In the rank-linear branch `d>=cR`, and in particular in the `d>=3R/4` source-cost regime of MC-381, the abstract annihilator sharpness mechanism is inadmissible.
+Hence a high-dimensional endpoint support cannot approach the low-dimensional coset required by the MC-387 near-extremizer. In the rank-linear branch, and in particular for `d>=3R/4`, the abstract annihilator sharpness mechanism is inadmissible.
 
-The reusable lesson is that **source-conditioned exceptional incidence has a scale, a near-extremal shape, and a source-image compatibility gate**. It is not enough to prove that a generic analytic bound is sharp by constructing an ambient extremizer. One should classify near-extremizers and then pull their structure through the exact arithmetic source map. A source law can exclude an otherwise sharp ambient obstruction without improving the generic inequality itself.
+MC-389 converts that qualitative incompatibility into a fixed quantitative gap. Combining the endpoint affine-rank lower bound with restricted-sumset stability gives an absolute `delta_0>0` such that the endpoint Bochner support has additive-energy deficit
 
-The remaining problem is quantitative. MC-388 excludes near-minimal coset/annihilator concentration in high dimension, but does not yet show that fewer than `Theta(H/R)` exceptional source differences suffice, because energy may spread over more physical modes or sit above the Welch floor. The next useful statement would convert the projected-simplex affine-rank lower bound into an explicit additive-energy deficit, physical-spread lower bound or improved exceptional-mode budget.
+`E(S) <= (1-delta_0)|S|^3`
 
-**Boundary.** No common exponent or frame estimate transfers to unrelated Mathia lines. The endpoint simplex identity uses the exact one-defect-per-shell-prime partition and high-dimensional `W`; low-dimensional source subspaces remain outside the asymptotic exclusion. MC-388 does not prove Möbius cancellation or RH. It removes one abstract sharpness mechanism and exposes the quantitative gap that arithmetic structure must now exploit.
+in the high-rank branch. Near-Welch weights then inherit a fixed fourth-moment contraction. Consequently, if all good nonzero source modes satisfy `|g(K)|<=epsilon_R` with `epsilon_R=o(R^(-1/2))`, any exceptional set `B` must obey
+
+`|B| >= (1+c_endpoint) H/R`
+
+for some fixed `c_endpoint>0` once `R` is large. The exact endpoint source therefore cannot merely avoid the generic `H/R` near-extremizer shape; it needs a **strict multiplicative excess** over the generic Welch exceptional count.
+
+The reusable lesson is that source-conditioned exceptional incidence has four layers: ambient scale, near-extremal shape, source-image compatibility, and then a quantitative source gap. A generic inequality can be sharp in its ambient category while the exact arithmetic image forces every admissible near-extremizer a fixed distance away, converting source geometry into a stronger threshold without changing the ambient Welch theorem.
+
+The remaining bottleneck has moved again. MC-389 is conditional on the analytic good-mode estimate `epsilon_R=o(R^(-1/2))` and gives only an existential fixed excess. The useful next statements are an effective deficit directly from the explicit projected-simplex support, a larger endpoint-specific exceptional gap if available, and—most importantly—the analytic estimate that puts the nonexceptional source differences below the `R^(-1/2)` frame scale.
+
+**Boundary.** The constants in the source-frame gap are endpoint-specific and do not transfer to unrelated Mathia lines. MC-389 does not prove the required character cancellation, Möbius cancellation or RH. Low-dimensional endpoint subspaces remain outside the high-rank argument, and the fixed multiplicative improvement does not by itself determine the optimal endpoint exceptional scale.

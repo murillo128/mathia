@@ -8,7 +8,7 @@ Arithmetic fidelity is not a scalar property of a representation. What matters i
 
 The line should therefore keep source geometry, observation fidelity, conditioning, asymptotic scale and admissible parameter lattice separate. A formal coordinate that exists in the ambient analytic model is useful only after its pullback to the physical source class has been identified.
 
-## Resolve the residual-null exceptional off-square source-lattice branch
+## Resolve shrinking integer windows before promoting continuous left-tail saddles
 
 **Linked intuitions:** `MI-055-derivative-depth-is-a-second-left-tail-scaling-coordinate`.
 
@@ -18,16 +18,22 @@ AF-416--AF-424 isolate a nested critical hierarchy in the full left-tail determi
 
 At the square collision fibers `b_n->m^2`, equality of exponential saddle rates is not enough. Rectangle balance is controlled by `Xi_(n,m)`, complete packets add an inverse-`n` drift, and AF-424 shows that the derivative-offset term `m alpha_n` with `alpha_n=(s_n-2n)/n` is load-bearing before limits are taken.
 
-AF-425 exposes the source-realizability gate. Its continuously tuned second-order cancellation equation lives in the integer coordinate `d_n=s_n-2n`; adjacent admissible depths are separated by `~log n` in the corrected target while the required alignment window shrinks by inverse powers of `n`. AF-426 then resolves every exact square-amplitude fiber pointwise: bounded complete-packet ratio forces `d_n=-1` eventually, and at that only admissible depth the packet ratio tends to `m K_m>1`, so the `o(n^-2)` target has no solutions there.
+AF-425 exposes the source-realizability gate. Its continuously tuned second-order cancellation equation lives in the integer coordinate `d_n=s_n-2n`; adjacent admissible depths are separated by `~log n` in the corrected target while the required alignment window shrinks by inverse powers of `n`. AF-426 resolves every exact square-amplitude fiber pointwise: bounded complete-packet ratio forces `d_n=-1` eventually, and at that only admissible depth the packet ratio tends to `m K_m>1`, so the `o(n^-2)` target has no solutions there.
 
-AF-427 resolves the displaced branch metrically. Writing `A=log(m^2/a)`, source compatibility is `d log n/n -> A`. On compact `A`-ranges there are only `O(n/log n)` admissible integer depths at scale `n`, while transversality makes an `n^-2` target window only `O(n^-3)` wide per source cell. The infinitely recurring exceptional set therefore has Lebesgue measure zero and Hausdorff dimension at most `2/3`.
+AF-427 resolves the displaced critical branch metrically. Writing `A=log(m^2/a)`, source compatibility is `d log n/n -> A`. On compact `A`-ranges there are only `O(n/log n)` admissible integer depths at scale `n`, while transversality makes an `n^-2` target window only `O(n^-3)` wide per source cell. The infinitely recurring exceptional set therefore has Lebesgue measure zero and Hausdorff dimension at most `2/3`. AF-428 supplies the complementary category statement: the same set is a dense `G_delta`, hence residual. Pointwise membership of a distinguished source amplitude remains undecided by either notion of genericity.
 
-AF-428 supplies the complementary category statement. For each fixed packet index `m`, the same exceptional set is a dense `G_delta`, hence residual. It is therefore simultaneously topologically generic and metrically thin. This does not contradict AF-426: `A=0` is excluded pointwise even though exceptional amplitudes occur arbitrarily close to it. Nor does residuality decide any distinguished amplitude forced by the original source.
+AF-429 now opens the genuinely supercritical side without removing the source-lattice obstruction. If `q_n=s_n/n->sigma>2`, full-height rectangles develop a moving saddle at
 
-The live source-lattice question is consequently **pointwise exceptional-set arithmetic**, not generic off-square tuning. Neighborhood, openness or perturbative-stability arguments cannot exclude the branch, and almost-everywhere/metric arguments cannot decide a fixed source-forced amplitude. The useful next step is to prove membership or nonmembership in the exact moving-center shrinking target for a concrete distinguished amplitude. Beyond-all-orders packet analysis becomes relevant only after such an amplitude survives this gate. Lower saddles, tall-column families, the omitted-`1` sector and the genuinely supercritical regime remain separate.
+`R_n=a^(1/q_n)n^(1-2/q_n)`,
+
+with logarithmic profile `sigma t(1-log t)` at widths `r~tR_n`. But the exact adjacent-width ratio crosses one at a real center `tau_n~R_n` with slope of order `n/R_n`. Neighbouring integer rectangles can therefore be comparable only if
+
+`dist(tau_n,Z)=O(R_n/n)=O(n^(-2/sigma+o(1)))`.
+
+So both the critical displaced branch and the supercritical moving saddle end at **shrinking integer targets** before signed cancellation is available. The live question is pointwise arithmetic recurrence for the actual source-forced parameters, together with whether any such local packet balance survives the complete partition sum. Continuous saddle existence, residuality or almost-everywhere statements are insufficient substitutes.
 
 ## Keep physical locality separate from transformed criticality
 
 Source-local statements should be formulated in the physical arithmetic coordinate before they are interpreted through transforms, determinants or saddle geometry. A transform may make a critical exponent or collision surface visible while hiding the discrete source constraints that decide whether the surface is reachable.
 
-The reusable control is to pull every proposed critical tuning back through the exact source map. If the pullback is discrete, constrained or nonuniform, its spacing and admissible quantifier are part of the mathematical claim rather than a technical afterthought. AF-426 adds the pointwise warning that a natural collision fiber can be empty at the required precision. AF-427--AF-428 add a second warning: the same moving target can be residual while still Lebesgue-null and Hausdorff-thin. Category, measure and pointwise source membership are different currencies and none can substitute for the exact arithmetic membership question.
+The reusable control is to pull every proposed critical tuning back through the exact source map. If the pullback is discrete, constrained or nonuniform, its spacing and admissible quantifier are part of the mathematical claim rather than a technical afterthought. AF-426 adds the pointwise warning that a natural collision fiber can be empty at the required precision. AF-427--AF-428 add that the same moving target can be residual while still Lebesgue-null and Hausdorff-thin. AF-429 adds that even a smooth supercritical saddle can require lattice accuracy `R_n/n=o(1)` before adjacent signed sectors become comparable. Category, measure, continuous optimization and pointwise source membership are different currencies.

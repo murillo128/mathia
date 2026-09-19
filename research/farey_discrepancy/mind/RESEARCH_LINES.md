@@ -4,7 +4,7 @@ This file holds the current mathematical questions suggested by the durable Fare
 
 ## Separate source-side rigidity from the exact observation and recovery geometry
 
-**Linked intuitions:** `MI-001-cumulative-farey-discrepancy-is-mertens-energy` through `MI-036-fixed-depth-dyadic-root-differences-remain-rh-complete`.
+**Linked intuitions:** `MI-001-cumulative-farey-discrepancy-is-mertens-energy` through `MI-037-growing-dyadic-root-differencing-has-a-sublogarithmic-critical-random-window`.
 
 FD-187--FD-194 establish the source and observation gates. Prime-extension energy is a genuine Möbius relation currency, while dyadic signed-Fourier observation has a sharp geometric square-root threshold: below the critical band permanent quotient holes remain, while at and above it cumulative source recovery has an explicit uniformly stable inverse. The transition is one of geometry and injectivity, not a conditioning pathology of the raw coordinate map.
 
@@ -24,16 +24,22 @@ FD-207 tests the most direct signed repair. For every fixed depth `q`, let
 
 Each `C_q` is an exact finite signed combination of root-aligned Farey sensors and still has the critical squarefree-random second-moment scale. Nevertheless, for every fixed `q`, square-root control of `C_q(n)` is again RH-equivalent. The bounded physical Möbius odd-step defect lets one invert the finite dyadic difference recursively along binary prefixes. Therefore a fixed number of signed root subtractions can remove the literal positive anchor before squaring without lowering the pointwise theorem surface.
 
-The live question is now narrower. A surviving signed/cross-scale route must use structure that is not reducible to a fixed dilation polynomial followed by a pointwise positive square: for example depth growing with scale, an aggregate signed relation across many root edges whose proof never first bounds each `C_q` critically, or a Farey-native observable whose destination recovery uses additional geometry rather than bounded inversion of a fixed dyadic difference.
+FD-208 now prices the only obvious way around that fixed-depth inverse. For growing `q=q(n)`, the squarefree-random second moment is multiplied by the central Delannoy factor
+
+`D_q=sum_(j=0)^q binom(q,j)^2 2^j`, with `log D_q=Theta(q)`.
+
+On `H_n=n p_n`, the benchmark remains `H_n^(1+o(1))` exactly when `q=o(log n)`, and its surcharge is only polylogarithmic when `q=O(log log n)`. The largest dyadic horizon touched by `C_q` grows like `4^q`, so the same sublogarithmic condition keeps the observation span subpower.
+
+The live growing-depth question is therefore no longer unrestricted. A useful escape must sit in the **sublogarithmic window**: large enough that the fixed-depth inversion argument no longer gives a uniform theorem, but small enough that the comparator and scale span have not already paid a power loss. The decisive alternatives are a uniform source-side inversion for `q=o(log n)`, which would close this escape as well, or a collective signed estimate across depths/root edges whose proof does not first control each `C_q` at the critical pointwise scale.
 
 ## Apply information budgets only after fixing source class, observation family and destination norm
 
 The same Farey representation can be complete, target-rigid or permanently noninjective depending on the source class, observation family and destination norm. The current sequence separates quotient coverage, raw inverse conditioning, diagonal quadratic coercivity, cross-horizon source information, covariance-preserving signed projection, kernel dimension, graph resistance, source-overlap cost, quotient-coordinate recovery and destination-complete scalar anchors.
 
-FD-206--FD-207 add a required audit: a favorable random benchmark and improved inverse geometry do not imply analytic leverage if a positive coordinate, or any fixed finite dyadic difference of that coordinate, is already RH-complete. Sign placement matters only when the cancellation mechanism cannot be inverted back to the hard scalar problem at the same pointwise exponent.
+FD-206--FD-208 add a required audit: a favorable random benchmark and improved inverse geometry do not imply analytic leverage if a positive coordinate, or a signed dyadic transform with an effective physical inverse, is already RH-complete. Growing the signed depth has a measurable cost: once `q` reaches logarithmic scale, the random benchmark itself loses critical-power normalization. Sign placement matters only inside the window where cancellation can plausibly destroy recoverability without repaying the gain in transform cost.
 
 ## Keep source coercivity, coordinate inversion and the Franel--Landau destination separate
 
 Stable source recovery above the square-root observation threshold still does not prove the RH-critical discrepancy estimate. The lowbit tree solves a genuine finite-dimensional conditioning/source-reuse problem, and the quotient-coordinate picture remains a useful exact recovery language.
 
-But the present anchored positive norm and every fixed-depth pointwise dyadic root repair remain destination-complete. The high-value frontier is therefore not simply “prove the critical-power lowbit-energy estimate” or “difference the root a few times.” It is to find a source-forced collective signed mechanism that controls the destination without isolating an RH-equivalent root coefficient as a separate critical pointwise cost.
+But the present anchored positive norm and every fixed-depth pointwise dyadic root repair remain destination-complete. The high-value frontier is therefore not simply “prove the critical-power lowbit-energy estimate” or “difference the root more times.” It is to determine whether sublogarithmic growing depth or a source-forced collective signed mechanism can control the destination without isolating an RH-equivalent root coefficient as a separate critical pointwise cost.

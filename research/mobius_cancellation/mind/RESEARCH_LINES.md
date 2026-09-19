@@ -2,7 +2,7 @@
 
 This file holds the current mathematical questions suggested by the durable Möbius-cancellation intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Beat the exact-endpoint source horizon only with arithmetic structure beyond the generic frame extremizer
+## Convert the fixed endpoint source-frame gap into analytic cancellation
 
 **Linked intuitions:** `MI-013-bost-connes-regularity-needs-an-intermediate-transverse-category` through `MI-071-exceptional-sets-must-be-measured-on-the-source-difference-frame`.
 
@@ -16,26 +16,28 @@ MC-385 adds the source-family exceptional-geometry gate: ambient exceptional-set
 
 `H/R-1 <= E+(H-1-E)epsilon^2`.
 
-Thus good modes only need `epsilon=o(R^(-1/2))`, while the exceptional budget remains `E=o(H/R)`. An annihilator-subgroup Cayley frame attains the `H/R` exceptional scale, so generic PSD/rank geometry cannot improve it.
+Thus good modes only need `epsilon=o(R^(-1/2))`, while the generic exceptional budget is `E=o(H/R)`. An annihilator-subgroup Cayley frame attains the `H/R` scale, so abstract PSD/rank geometry cannot improve it.
 
 MC-387 classifies the near-extremizers of that abstract bound. Near-Welch energy together with physical concentration on the minimal `H/R` scale forces the dual Bochner support close to a subgroup coset and the physical exceptional set close to the corresponding annihilator subgroup.
 
-MC-388 then pulls that extremizer class through the **actual endpoint source map**. The endpoint Bochner measure is not an arbitrary `R`-point measure: it is the push-forward of the defect weights on the translated coordinate simplex `1+e_z`. If `d=dim W`, its support has affine dimension
+MC-388 pulls that extremizer class through the **actual endpoint source map**. The endpoint Bochner measure is the push-forward of defect weights on the translated coordinate simplex `1+e_z`, whose projected support has affine dimension at least `d-1` when `d=dim W`. In the rank-linear branch this excludes the low-dimensional coset support required by the generic near-extremizer.
 
-`d-dim(W cap <1>) >= d-1`.
+MC-389 turns that exclusion into a quantitative endpoint theorem. In the high-rank branch `d>=3R/4`, restricted-sumset stability plus the affine-rank constraint gives a fixed additive-energy deficit for the endpoint support. Near-Welch weights inherit a fixed fourth-moment contraction, and if good nonzero modes satisfy `epsilon_R=o(R^(-1/2))`, every exceptional set obeys
 
-Therefore its distance from any affine coset of dimension `ell` is at least `d-1-ell` in support points. In the rank-linear branch `d>=cR`, this excludes the `O(log R)`-dimensional coset support required by MC-387. In particular the abstract annihilator sharpness model of MC-386 is **not admissible, even asymptotically, for the high-dimensional exact endpoint frame**.
+`|B| >= (1+c_endpoint) H/R`
 
-The live frontier has consequently moved from qualitative compatibility to a quantitative source-frame gap. The next useful target is to turn the affine-rank obstruction into an explicit excess-energy, physical-spread or exceptional-mode lower bound. MC-388 does not yet improve the `H/R` count scale by itself: a source frame can avoid the near-minimal annihilator shape while still place substantial correlation energy on `Theta(H/R)` differences.
+for some fixed `c_endpoint>0`. Thus the exact endpoint source forces a strict multiplicative gap above the generic Welch threshold.
+
+The live frontier is no longer “prove that the endpoint avoids the annihilator extremizer.” It is to **cash out the source gap analytically**. The immediate bottleneck is the good-mode estimate at the `R^(-1/2)` frame scale; a parallel structural question is whether the explicit projected-simplex support yields an effective or larger endpoint constant than the existential `c_endpoint` supplied by stability.
 
 ## Keep resolution, source incidence, conductor, theorem admission, exceptional geometry and terminal saving distinct
 
-The current resource ledger separates exact-real subset-sum conditioning, finite-resolution quotienting, source-incidence balance, package conductor, common-radical size, q-vdC factor depth, collective family size, global-modulus exponent, theorem-admission range, terminal saving exponent, ambient exceptional volume, bad-neighbor degree, source-frame correlation energy, distance to the abstract coset/annihilator near-extremizer and now the affine rank forced by the exact endpoint simplex.
+The current resource ledger separates exact-real subset-sum conditioning, finite-resolution quotienting, source-incidence balance, package conductor, common-radical size, q-vdC factor depth, collective family size, global-modulus exponent, theorem-admission range, terminal saving exponent, ambient exceptional volume, bad-neighbor degree, source-frame correlation energy, near-extremizer shape, affine rank of the exact source support, additive-energy deficit and the resulting endpoint exceptional gap.
 
-These currencies are not interchangeable. MC-386--MC-388 give a particularly clean sequence: a generic frame lower bound can be sharp abstractly; stability can rigidify all near-sharp examples; and only then can the exact arithmetic source image exclude that rigid class. Further generic Gram or uncertainty inequalities are unlikely to help unless they exploit the endpoint simplex or another source law strongly enough to yield a quantitative gap.
+These currencies are not interchangeable. MC-386--MC-389 give a particularly clean sequence: a generic frame lower bound is sharp abstractly; stability rigidifies all near-sharp examples; the arithmetic source image excludes that rigid class; and quantitative additive-combinatorial stability then forces a fixed improvement over the ambient count threshold. Further generic Gram inequalities are unlikely to help unless they either exploit more of the explicit endpoint simplex or deliver the missing analytic `o(R^(-1/2))` good-mode control.
 
 ## Repair probabilistic comparators only after exact-stratum and algebraic-collapse gates
 
 Probabilistic proxies remain secondary until their conditioning is arithmetically consistent and their observables survive exact multiplicative simplification. A model that becomes degenerate after conditioning on an exact arithmetic stratum, or whose auxiliary statistic collapses algebraically to `M(x)`, has not created an independent cancellation mechanism.
 
-The endpoint results add the same control at the theorem interface. A plausible comparator must not hide the exact source architecture inside an ambient modulus class or an abstract frame class whose admission, conductor or extremizer geometry is impossible after pullback to the source. MC-388 shows that **matched extremizers themselves must be source-admissible**, not merely sharp in the ambient analytic category.
+The endpoint results add the same control at the theorem interface. A plausible comparator must not hide the exact source architecture inside an ambient modulus class or an abstract frame class whose admission, conductor or extremizer geometry is impossible after pullback to the source. MC-389 strengthens the rule: source admissibility can alter not only the extremizer's shape but the **numerical threshold itself**, so the comparator must be calibrated after the exact source-image restriction.

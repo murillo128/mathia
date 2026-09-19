@@ -1,6 +1,6 @@
 # MI-055 — Derivative depth and source amplitude form a joint left-tail critical coordinate
 
-**Evidence level:** exact synthesis from [AF-416](../../findings/AF-416-full-left-tail-diagonal-has-positive-cauchy-limit.md) through [AF-428](../../findings/AF-428-second-order-exceptional-amplitudes-are-residual-but-null.md).
+**Evidence level:** exact synthesis from [AF-416](../../findings/AF-416-full-left-tail-diagonal-has-positive-cauchy-limit.md) through [AF-429](../../findings/AF-429-supercritical-full-column-saddle-has-shrinking-integer-window.md).
 
 AF-416 closes the full fixed-shift determinant on the reciprocal-order left-tail diagonal. AF-417 shows that this closure is not uniform in an independently moving derivative offset: fixed partition sectors see `s_n/n->sigma` by multiplying the Cauchy parameter by `e^sigma`. AF-418 then shows that the complete growing partition family detects a finer critical coordinate at `sigma=2`, namely
 
@@ -22,6 +22,20 @@ AF-427 shows that allowing the amplitude to move does not restore a metrically g
 
 AF-428 proves that the very same exceptional set is nevertheless a dense `G_delta`. The branch is therefore **residual but null**: topological genericity, metric prevalence and pointwise source membership diverge. Exact square amplitude remains excluded, while exceptional amplitudes occur arbitrarily near every point. Consequently neither an open-neighborhood obstruction nor an almost-everywhere theorem can decide a distinguished source-forced amplitude.
 
-The reusable lesson is a **nested asymptotic-coordinate hierarchy whose final tuning must survive the actual source lattice, and whose surviving set must be classified in the right notion of size**. Equality at one scale does not control a collision fiber at the next, and solving a continuous cancellation equation is not enough when the physical parameter is discrete. Even after transversality makes successful recurrence metrically thin, Baire category can make the same recurrence topologically generic. The final gate is therefore exact arithmetic membership in the moving shrinking target, not generic perturbation or prevalence.
+AF-429 shows that the same lattice issue reappears on the genuinely supercritical side in a different coordinate. If `q_n=s_n/n->sigma>2`, the full-height rectangular family has moving saddle width
 
-**Boundary.** AF-428 does not show that any particular distinguished amplitude belongs to the residual exceptional set, improve the Hausdorff-dimension upper bound, control the undisplayed determinant remainder, or couple different packet indices. Lower saddles, tall-column families, beyond-all-orders effects, the genuinely supercritical regime `s_n/n>2`, other determinant sectors and zero selection remain separate.
+`R_n=a^(1/q_n) n^(1-2/q_n)`,
+
+and for `r_n/R_n->t` its logarithmic profile is
+
+`(n R_n)^(-1) log C_(n,r_n) -> sigma t(1-log t)`.
+
+The continuous maximum is at `t=1`, but the exact adjacent-width ratio crosses one at a real point `tau_n~R_n` with local slope of order `n/R_n`. Hence two adjacent **integer** rectangles can even have comparable magnitude only if
+
+`dist(tau_n,Z)=O(R_n/n)=O(n^(-2/sigma+o(1)))`.
+
+The supercritical continuous saddle therefore creates another shrinking-target gate rather than removing discreteness. A formal real optimizer is not enough: the source lattice must hit a window much smaller than one integer spacing before nearest-width cancellation becomes available. This condition is necessary only for the rectangular sector, not sufficient for cancellation of the full signed partition sum.
+
+The reusable lesson is a **nested asymptotic-coordinate hierarchy whose final tuning must survive the actual source lattice**. At the critical transition, square-amplitude balance descends to an integer derivative-depth shrinking target whose exceptional amplitude set is residual but null. Above the transition, the optimizer itself moves to `R_n`, yet adjacent cancellation again requires a shrinking integer hit at resolution `R_n/n`. In both regimes continuous saddle balance and discrete source realizability are separate mathematical gates.
+
+**Boundary.** AF-429 does not decide whether a distinguished source amplitude satisfies the critical displaced shrinking target, whether the supercritical centers `tau_n` hit integers at the required rate, or whether either necessary condition controls the complete determinant. Nonrectangular shapes, other determinant sectors and interactions among competing packet families can still alter the signed total. No statement here selects rational primes, zeta zeros or RH.
