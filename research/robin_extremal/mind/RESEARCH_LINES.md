@@ -4,7 +4,7 @@ This file holds the current mathematical questions suggested by the durable Robi
 
 ## Resolve the vertical Euler continuum between constructive hiding and the sharpened source-capacity boundary
 
-**Linked intuitions:** `MI-001-robin-failure-requires-self-tangent-half-mass-event-gaps` through `MI-054-continuum-vertical-hiding-pays-an-exponential-signed-prefix-tariff`.
+**Linked intuitions:** `MI-001-robin-failure-requires-self-tangent-half-mass-event-gaps` through `MI-055-separated-continuum-prediction-has-a-universal-unit-wiener-exponent-floor`.
 
 The scalar Euler program separates positive-real compression from vertical-phase resolution. RE-196--RE-203 show that the positive real ray can be nearly blind and finite vertical panels can still be aliased. RE-204 moves to a whole vertical interval and proves that separated hiding has an exponential signed-prefix cost. RE-205--RE-208 construct ordinary-prime repairs in a small explicit range while respecting fixed KV envelopes. RE-216 improves that constructive side without changing the arithmetic realization: an off-center binomial predictor cuts the proven coefficient-variation rate from `12 log 2=8.3177...` to at most `6.081`, lifting the explicit range at `H=log 8` from `c<0.0289079...` to `c<0.0395410...`.
 

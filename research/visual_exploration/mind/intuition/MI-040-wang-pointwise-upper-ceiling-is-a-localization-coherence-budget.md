@@ -1,6 +1,6 @@
 # MI-040 — Wang's upper pointwise ceiling moves from localization coherence to the interior mean-value budget
 
-**Evidence level:** exact synthesis from [VIS-298](../../findings/VIS-298-wang-gamma-recentering-removes-moving-h-barrier.md) through [VIS-302](../../findings/VIS-302-wang-weighted-mean-value-log-boundary.md), using Wang's displayed localization and mean-value identities as audited there.
+**Evidence level:** exact synthesis from [VIS-298](../../findings/VIS-298-wang-gamma-recentering-removes-moving-h-barrier.md) through [VIS-303](../../findings/VIS-303-wang-odd-shift-power-two-sparsity.md), using Wang's displayed localization and mean-value identities as audited there.
 
 VIS-298 removes the lower moving-source crossover by exact gamma recentering. VIS-299 then shows that Wang's fixed exponent gap is not the true pointwise boundary: re-running the localization proof yields the same asymptotic whenever
 
@@ -24,12 +24,16 @@ The saved logarithm comes from inserting the classical asymptotic for `sum_(n<=u
 
 `x log(2x)=o(H)`.
 
-The load-bearing term has therefore moved again. The first unresolved generic upper scale is now
+VIS-303 then decomposes the actual off-diagonal object at the exposed boundary instead of applying another generic majorant. Because `Lambda` is supported on prime powers, write `D_x=D_2+D_o`, where `D_2` contains powers of two and `D_o` odd prime powers. The power-of-two sector satisfies
 
-`x log x asymp H`,
+`sum_(k>=1) a_(2^k)^2 << 1/x`,
 
-or `x asymp H/log T` in the polynomial source regime, and the unresolved object is the **actual off-diagonal time integral** rather than its generic absolute coefficient majorant. A further gain must use the frequencies `log(n/m)` and Wang's exact weights, produce an explicit correction, or exhibit a matched lower/control construction. Re-estimating localization or repeating the `x log^2 x` coefficient bound cannot decide this layer.
+`sum_(k>=1) 2^k a_(2^k)^2 << 1`.
 
-The reusable lesson is that resolving a bundled proof boundary should **relocate the load-bearing term and then re-audit the new term after source specialization**. Exact recombination removed the lower-source wall; proof-level uniformity moved the first upper wall; energy decomposition isolated one coherence term; classical zero-free information suppressed that term; and coefficient-specific moment evaluation then removed one logarithm from the newly exposed generic mean-value bound. A boundary is structural only after every earlier channel is below resolution and the first remaining term has survived specialization to the actual source coefficients.
+Consequently, throughout `x log(2x)=O(H)`, the full mean-value remainder and the odd-prime-power remainder differ by only `o(H)`. Opposite parity is exactly the sector of odd additive differences, since the only even prime powers are powers of two. Therefore **every potentially `H`-scale off-diagonal contribution at the current boundary is carried by pairs of odd prime powers, hence by even additive differences**.
 
-**Boundary.** `x log x asymp H` is currently a proof boundary, not a proved transition of the pair-correlation statistic. VIS-302 evaluates the coefficient weight entering the generic mean-value theorem but does not evaluate the actual off-diagonal remainder at that scale, improve the fixed-power arithmetic source envelope, control genuinely bounded `x`, or justify moving-support versions of Wang's integrated theorem.
+The load-bearing term has thus moved twice inside the same proof interface. First it moved from localization to the exact coefficient-weighted mean-value remainder; after source specialization and parity decomposition it moves again to the interval-kernel sum over odd-prime-power/even-shift pairs. A further gain must estimate that surviving sector using its exact frequencies `log(m/n)` and weights, produce a stable `H`-scale correction, or exhibit a matched admissible lower/control construction. Spending effort on powers of two, odd additive shifts, localization leakage, or the old `x log^2 x` coefficient majorant cannot decide the boundary.
+
+The reusable lesson is that resolving a bundled proof boundary should **relocate the load-bearing term and then decompose that term using the exact source support before declaring the next barrier structural**. Exact recombination removed the lower-source wall; proof-level uniformity moved the first upper wall; energy decomposition isolated one coherence term; classical zero-free information suppressed it; coefficient-specific moment evaluation removed one logarithm; and exact prime-power support then deletes the whole odd-shift sector at the newly exposed scale.
+
+**Boundary.** `x log x asymp H` remains a proof boundary, not a proved transition of the pair-correlation statistic. VIS-303 does not estimate the surviving even-shift sector, prove a Hardy--Littlewood-type asymptotic, distinguish prime pairs from general odd-prime-power pairs, improve the fixed-power arithmetic source envelope, control genuinely bounded `x`, or justify moving-support versions of Wang's integrated theorem.

@@ -26,17 +26,27 @@ For `b<1`, the complete exceptional-`1` sector remains absolutely resummable to 
 
 Away from `b=m^2`, one packet with `r=floor(sqrt(b))` dominates, so every nonsquare superthreshold `b>1` gives genuine signed divergence rather than hidden cancellation. At each square transition `b=m^2`, exactly the adjacent packets `r=m-1,m` tie exponentially.
 
-AF-422 resolves the next scale of that collision. Write `s_n=2n+d_n`, `d_n=o(n)`, and along `b_n->m^2` define
+AF-422 resolves the next rectangle scale. With `s_n=2n+d_n`, `d_n=o(n)`, and `b_n->m^2`, define
 
 `Xi_(n,m)=log n+n log(b_n/m^2)-d_n log m`.
 
-The adjacent rectangular packet ratio is
+The adjacent rectangular packet ratio is `F_(n,m)=K_m exp(Xi_(n,m))(1+o(1))`, with explicit `K_m>0`. Even `n` cannot cancel because the packet signs agree. For odd `n`, leading rectangular cancellation is possible only when `Xi_(n,m)->-log K_m`; the exact square path is untuned.
 
-`F_(n,m)=K_m exp(Xi_(n,m))(1+o(1))`,
+AF-423 now resolves the first complete-packet correction that was previously the live interface. If `G_(n,r)` denotes the residual Schur--Cauchy factor around the `r`-column rectangle, then
 
-with an explicit `K_m>0`. Even `n` cannot cancel because the packet signs agree. For odd `n`, leading rectangular cancellation is possible only under the codimension-one tuning `Xi_(n,m)->-log K_m`. Outside that tuning the adjacent rectangles do not cancel; for `m>=2` the surviving square-transition packet already has exponential nth-root rate greater than one. The exact square path `a=m^2, s_n=2n` is untuned because `Xi_(n,m)=log n`, so it is closed as well.
+`log(G_(n,m)/G_(n,m-1)) = 2 a e^2/n + o(1/n)`.
 
-The finite-`tau` frontier is therefore narrower than the square fibers themselves. The only unresolved finite-window interface is the **odd tuned packet problem**: after the two rectangular amplitudes have been tuned to cancel at leading order, determine the ratio of their complete residual packet factors and whether the cancellation survives the near-column/Schur--Cauchy corrections. The genuinely supercritical regime `s_n/n>2`, where `b_n->infinity`, remains a separate moving-saddle problem and should not be extrapolated from the finite-window hierarchy.
+Thus `F_(n,m)->1` is still insufficient. The complete adjacent ratio obeys
+
+`log Q_(n,m)=log F_(n,m)+2 a e^2/n+o(1/n)`,
+
+so first packet-level cancellation on the odd square fiber additionally requires
+
+`n log F_(n,m) -> -2 a e^2`.
+
+For `m>=2`, any surviving order-`1/n` mismatch is only polynomially smaller than an exponentially growing tied saddle and still diverges exponentially. The finite-window frontier has therefore moved one scale deeper: under the new inverse-`n` tuning, derive the next term of the complete packet ratio together with the matching finer expansion of `F_(n,m)`, and compare the resulting residual against the lower saddle packets. AF-423 does not show that this stronger tuning is sufficient for boundedness or recovery of the fixed-partition exponential.
+
+The genuinely supercritical regime `s_n/n>2`, where `b_n->infinity`, remains a separate moving-saddle problem and should not be extrapolated from the finite-window hierarchy.
 
 ## Match physical locality to source-density and certificate scales
 

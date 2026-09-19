@@ -4,7 +4,7 @@ This file holds the current mathematical questions suggested by the durable Nyma
 
 ## Escape the absolute-value Mellin tariff by estimating the native zeta-primitive Fourier coefficient
 
-**Linked intuitions:** `MI-001-target-aware-gram-geometry-must-carry-absolute-scale` through `MI-057-reciprocal-log-support-mass-is-the-exact-two-sided-mellin-reconstruction-currency`.
+**Linked intuitions:** `MI-001-target-aware-gram-geometry-must-carry-absolute-scale` through `MI-058-exact-zeta-primitive-reconstruction-loses-its-mellin-advantage-only-when-the-signed-convolution-is-decoupled`.
 
 The positive-source program has progressively separated recurrence existence, source resolution, interval occupancy, atomic carrying capacity and integer-carrier discrepancy. NB-202--NB-212 derive the current log-squared corridor and show that one fixed nonnegative smooth full-von-Mangoldt barycenter already exposes it. NB-213 closes ordinary Mellin primitivization as a representation-only repair, while NB-214--NB-216 show that positivity, signs, zero mean, bounded higher shell functionals and upward shell widening all repay the apparent gain through reconstruction, conditioning, signal normalization or support width.
 
