@@ -1,49 +1,56 @@
 ---
 id: CLUE-mobius-cancellation-averaged-qvdc-source-frame-variable-retention
 type: research-clue
-status: proposed
+status: accepted
 origin: research-watch
 target_line: mobius_cancellation
 based_on:
   - research/mobius_cancellation/findings/MC-382-iterated-q-vdc-has-an-intrinsic-loglog-source-horizon.md
   - research/mobius_cancellation/findings/MC-383-small-doubling-family-mean-value-retains-global-modulus-horizon.md
   - research/mobius_cancellation/findings/MC-396-paired-block-packing-removes-inverse-gap-depth-tax.md
+  - research/mobius_cancellation/findings/MC-397-source-mode-averaging-collapses-to-signature-projector.md
 ---
 
-# Can endpoint source averaging be kept inside q-vdC before modewise collapse?
+# Can an arithmetic Selberg variable be kept inside q-vdC before modewise collapse?
 
 ## Observation
 
-`MC-382` shows that the current single-character Cochrane--Granville--Zheng recursion pays one square-root loss per conductor-scale layer, forcing an exponential-in-source-exponent saving tariff and hence a `log log y` analytic horizon. `MC-396` removes the earlier inverse-gap packing loss but leaves that `2^{O(A)}` tariff intact. `MC-383` then shows that replacing individual estimates by a generic thin-family mean value is not enough when the theorem still charges a fixed positive power of one global modulus.
+`MC-382` shows that the current single-character Cochrane--Granville--Zheng recursion pays one square-root loss per conductor-scale layer, forcing an exponential-in-source-exponent saving tariff and hence a `log log y` analytic horizon. `MC-396` removes the earlier inverse-gap packing loss but leaves that `2^{O(A)}` tariff intact. `MC-383` shows that replacing individual estimates by a generic thin-family mean value is not enough when the theorem still charges a fixed positive power of one global modulus.
 
-There is, however, concrete prior art for a different kind of escape. Julia Stadlmann's *On primes in arithmetic progressions and bounded gaps between many primes* (Advances in Mathematics 474 (2025), 110190; arXiv:2309.00425) improves the exponent of distribution for primes to smooth moduli by modifying the q-van der Corput step so that an additional summation variable in the Type I exponential sums is not treated trivially. The gain comes from the precise multi-variable phase and from retaining averaging through the differencing argument, not from a better bound for each individual character sum after all other variables have been frozen.
+Julia Stadlmann's *On primes in arithmetic progressions and bounded gaps between many primes* (Advances in Mathematics 474 (2025), 110190; arXiv:2309.00425) gives a concrete nearby mechanism: her modified q-van der Corput argument retains an arithmetic summation variable inside differencing. In the proof sketch, the earlier treatment does not exploit the `y`-sum and its diagonal forces `Delta<N/Y^2`; after reorganizing the congruence so that both `n` and `y` remain inside q-vdC, the diagonal contributes `O(Delta N/Y)` and permits `Delta<N/Y`.
 
-That theorem is not an endpoint-source theorem and does not directly apply here. Its relevance is narrower: it gives an existence proof that the specific escape left open by `MC-382`—avoiding a purely modewise q-vdC recursion by preserving extra averaging—can be mathematically real in a nearby smooth-modulus setting.
+`MC-397` performs the corresponding pre-modewise source summation exactly in the present endpoint Selberg/Bombieri frame. The source-mode index is Fourier-dual rather than an arithmetic summation variable: summing it produces a source-signature weight, and the uniform source average becomes a multiplicative subgroup projector. Thus the source index itself cannot supply Stadlmann's retained-variable gain in this representation.
 
 ## Research question
 
-Can the Selberg/prime-frame transfer underlying `MC-377`--`MC-396` be reorganized *before* source modes are bounded one at a time so that a genuine source, sieve-divisor, or shell variable remains averaged inside the q-vdC phase, in a form structurally analogous to Stadlmann's modified Type I step?
+Can an **arithmetic variable that survives the exact source-signature collapse**—most naturally the Selberg divisor variables, their lcm, or a finer shell/source arithmetic variable before that compression—remain inside q-vdC/Cauchy long enough to change the diagonal geometry in the way Stadlmann's retained `y` variable does?
 
-The target is not an averaged theorem by name. It is an exact representation in which the endpoint frame quantity that must be controlled is expressed as one multi-variable exponential sum (or a bounded number of such sums) whose differencing acts while a nontrivial source-family variable is still live. The representation is useful only if this prevents the terminal saving from being raised through `2^{-k}` independently for every conductor layer and also avoids the fixed `P^theta` global-modulus tariff ruled out in `MC-383`.
+The target is an exact representation of the endpoint frame quantity in which differencing acts before the surviving arithmetic variable is frozen or bounded trivially. A useful representation must produce a resource scaling qualitatively different from both known barriers: it must avoid the `2^{-Omega(A)}` terminal saving caused solely by sequential conductor depth and avoid a fixed positive global-radical tariff `P^theta` of the type ruled out in `MC-383`.
+
+A direct structured estimate for the source-signature incidence operator also remains admissible, but only if its gain comes from arithmetic distribution/coupling not equivalent to Fourier-expanding the projector and reapplying the individual character estimates.
 
 ## Why it may matter
 
-After `MC-396`, further block-packing improvements inside the same single-character recursion can change constants but not the exponential source-depth scale. A successful variable-retaining reformulation would attack exactly that remaining analytic bottleneck rather than another combinatorial source-cost loss.
+After `MC-396`, further block-packing inside the same single-character recursion can improve constants without changing the exponential source-depth scale. `MC-397` also removes the easiest collective escape: averaging the source modes first is exactly a basis change to signature/coset incidence, not an additional oscillatory sample.
 
-Conversely, an exact collapse showing that every natural pre-absolute-value source average either diagonalizes by character orthogonality, reduces to the already-audited common-modulus mean-value shape of `MC-383`, or recreates the individual Proposition-7 recursion would close a concrete class of the main escape routes left open by `MC-382`.
+The remaining Stadlmann analogy is therefore much sharper. If one of the arithmetic variables in the exact Selberg expansion changes the Cauchy diagonal count before the character recursion begins, it would attack the actual analytic bottleneck. If every such variable either freezes without gain, recreates the individual q-vdC recursion, or leaves a global-modulus power cost, this entire retained-variable branch can be closed cleanly.
 
 ## Decisive test
 
-Start from the actual normalized prime-frame/Selberg expression used to turn endpoint source characters into shell-bias bounds in `MC-377`--`MC-396`, before applying triangle inequality or a character-by-character incomplete-sum estimate. Keep simultaneously visible the source-mode index, the sieve divisor variables, and the interval/shell summation variable.
+Start from equation `(9)` of `MC-397`, or from the finer pre-lcm Selberg expansion from which it is derived. Keep the sieve variables and interval/shell variable explicit rather than applying triangle inequality term by term.
 
-First derive the exact result of summing over a rank-`d` endpoint subgroup at this stage. If character orthogonality immediately collapses the expression to signature/coset incidences with no oscillatory variable left, record that as a kill: Stadlmann-style extra averaging is unavailable in this representation. If a genuinely mixed phase survives, identify one explicit variable that was previously frozen and carry one q-vdC/Cauchy step with that variable still averaged.
+Choose one concrete surviving arithmetic variable and derive one full Cauchy/q-vdC step with it still live. Count the resulting diagonal configurations exactly. The direction survives only if retaining that variable produces a quantitative diagonal thinning analogous in mechanism to Stadlmann's `1/Y` gain and the off-diagonal term can still be controlled without paying either a sequential `2^{-Omega(A)}` source-depth tariff or a fixed positive power of the common radical.
 
-The direction survives only if the resulting estimate has a resource scaling qualitatively different from both known barriers: it must avoid a `2^{-Omega(A)}` saving produced solely by sequential conductor depth and avoid a fixed positive power `P^theta` of the global common radical. Merely averaging the already-derived individual bounds, invoking a large sieve after absolute values, or obtaining another `exp(O(R))` family-cardinality gain against `P^theta` rejects the candidate.
+Reject a candidate if the supposed extra average is only the source-mode index killed by `MC-397`, if Fourier expansion merely returns to the individual source characters, if arbitrary mode-dependent weights trigger the matched-filter obstruction of `MC-332`, or if the final family estimate has the fixed-global-modulus shape excluded by `MC-383`.
 
-As a literature control, reconstruct the exact role of the previously-trivial summation variable in Stadlmann's Section 3 Type I/q-vdC argument and verify that any proposed endpoint dictionary preserves the feature responsible for the gain rather than only the phrase “additional averaging.”
+As the literature control, preserve the exact feature of Stadlmann's argument responsible for the gain: an arithmetic summation variable remains inside the differencing/Cauchy geometry and reduces the diagonal count. Similar terminology without that structural effect is not a valid transfer.
 
 ## Evidence boundary
 
-No collective endpoint character-sum estimate is established here, and Stadlmann's theorem concerns averaged prime distribution to smooth moduli in a different Type I setup. Nothing in that work implies improved Möbius cancellation or the endpoint source-cost bound sought by this line.
+No surviving arithmetic variable has yet been shown to yield a better endpoint character-sum estimate. Stadlmann's theorem concerns averaged prime distribution to smooth moduli in a different Type I setup and does not imply an endpoint source-cost theorem or improved Möbius cancellation.
 
-The only established point is the prior-art narrowing: modified q-vdC with retained auxiliary averaging is a concrete analytic mechanism in a nearby smooth-modulus problem, while `MC-382`, `MC-383`, and `MC-396` show exactly which two resource tariffs an endpoint adaptation would have to avoid. Whether the endpoint frame possesses the required mixed variable is the unresolved mathematical test.
+`MC-397` resolves only the **source-index** interpretation: pure source-mode averaging collapses to a signature projector. The sieve-divisor/lcm and other genuinely arithmetic retained-variable branches remain open, as does a structured direct estimate for the signature-incidence operator.
+
+## Research disposition
+
+The clue is accepted in this narrowed form. The initial source-mode branch failed its decisive test by exact finite Fourier orthogonality in `MC-397`; the live question is whether a surviving arithmetic Selberg/shell variable can alter the q-vdC diagonal geometry before modewise character estimation, while respecting `MC-332` and `MC-383`.
