@@ -1,25 +1,21 @@
-# MI-041 — Wang natural windows require pair-coordinate occupancy across a family of short determinant slices
+# MI-041 — Wang natural windows require pair-coordinate occupancy on a long-thin Bezout strip
 
-**Evidence level:** exact synthesis from `VIS-313`--`VIS-318` plus the classical separated-frequency large sieve.
+**Evidence level:** exact synthesis from `VIS-313`--`VIS-319` plus the classical separated-frequency large sieve.
 
 The cutoff-free Wang remainder has no useful global nearest-frequency spacing because the full cross-base prime-ratio spectrum is dense. Dyadic arithmetic-height shells restore finite-resolution structure, and retaining two-prime sparsity gives the prime-prime shell energy at the correct logarithmic scale.
 
-VIS-315 shows that the finite-window loss is controlled by the number `kappa_M(V)` of actual prime-ratio frequencies in one Fourier cell of width `O(1/V)`. A frequency cluster around a represented ratio `u/v` becomes a thin determinant strip
+VIS-315--VIS-316 reduce the finite-window loss to the number of actual prime-ratio frequencies in one Fourier cell. Around a represented ratio `u/v`, the cell becomes the thin determinant strip `|qv-ur| << M^2/V`, and the destination taper only prices a weighted aggregate of shell excesses.
 
-`|qv-ur| << M^2/V`
+VIS-317--VIS-318 identify two false reductions. Projecting to the scalar determinant `h=qv-ur` erases the two coordinatewise prime exclusions and therefore loses dimension-two sieve density. Freezing `h` keeps `(q,r)` but leaves only `O(1)` same-shell lattice points because the affine step `(u,v)` is itself of size `asymp M`.
 
-with all four prime coordinates at scale `M`. VIS-316 then shows that the destination does not need a uniform shell theorem: the Wang taper sees only a weighted aggregate of the shell excesses.
+VIS-319 supplies the correct exact coordinates. Choose Bezout integers `a,b` with `au-bv=1` and write
 
-VIS-317 identifies the first trap. Passing from `(q,r)` to the scalar determinant `h=qv-ur` preserves the cell geometry, but for every odd prime away from `uv` every residue class of `h` remains compatible with both `q` and `r` nonzero. The determinant quotient has erased the two coordinatewise exclusions that carry the prime-pair sieve dimension. Determinant-only residue sifting therefore cannot recover the desired `log^(-2) M` factor.
+`(q,r)=(ut-bh, vt-ah)`.
 
-VIS-318 identifies the opposite trap. If `h` is frozen and `u/v` is a represented same-shell center, then the integer solutions are
+The map `(t,h)->(q,r)` is unimodular, and modulo every prime `ell` it is a bijection. Exactly `(ell-1)^2` residue pairs have both `q` and `r` nonzero, so the full two-prime local factor `(1-1/ell)^2` is restored. The representation problem is therefore solved at the local sieve-dimension level.
 
-`(q,r)=(q_0,r_0)+t(u,v)`.
+What remains is geometric rather than representational. The shell pulls back to a **long-thin skew domain**: for each determinant coordinate `h`, the `t`-interval has bounded length, while `h` ranges over a long interval. The missing theorem is a uniform upper-bound sieve/congruence-discrepancy estimate on that thin domain, with constants controlled uniformly in the slope/center and strong enough after Wang taper weighting.
 
-Because `u,v asymp M`, changing `t` by one already moves a distance comparable with the shell width. Each exact determinant slice therefore contains only `O(1)` candidate lattice points. The two prime coordinates have been retained, but there is no long affine parameter on a fixed slice over which a dimension-two sieve can obtain its asymptotic density saving.
+The reusable lesson is that coordinate fidelity and averaging length can live in different directions. The unimodular Bezout chart preserves both prime exclusions exactly, while the transverse `h` direction supplies the long family that fixed slices lacked. A viable proof should sieve the joint domain rather than project away the prime coordinates or demand asymptotics on each microscopic fibre.
 
-These two obstructions locate the correct representation between projection and freezing. **The sieve dimension lives in `(q,r)`, while the averaging length lives across many neighboring determinant slices.** A viable occupancy argument must keep both at once: a two-coordinate sieve on the whole thin strip, a rational/Beatty-type organization of the moving short slices, or a weighted/additive-energy argument with equivalent pair information.
-
-The reusable lesson is that preserving the right coordinates is not sufficient if the chosen fibre is too short to average, and having a long aggregate is not sufficient if projection has erased the local exclusions that supply arithmetic saving. The destination taper should price the aggregate only after both information resources are retained.
-
-**Boundary.** VIS-318 applies to represented centers whose primitive step vector is comparable with the shell scale; a deliberately smaller primitive direction would require a new audit. No prime-ratio occupancy theorem, natural-window Wang theorem or stronger RH criterion is proved. The surviving whole-strip sieve/energy mechanisms remain conjectural research directions.
+**Boundary.** VIS-319 restores the local sieve dimension but does not prove the required thin-domain prime occupancy theorem, natural-window Wang estimate or RH consequence. Uniformity in the skew domain and destination-weighted aggregation remain the load-bearing analytic questions.

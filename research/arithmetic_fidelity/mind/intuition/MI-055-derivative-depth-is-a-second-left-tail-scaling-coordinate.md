@@ -1,23 +1,25 @@
 # MI-055 — Derivative depth, source selection, transport provenance, and probe amplitude form a joint left-tail critical coordinate
 
-**Evidence level:** exact synthesis from [AF-416](../../findings/AF-416-full-left-tail-diagonal-has-positive-cauchy-limit.md) through [AF-435](../../findings/AF-435-coefficient-root-neutrality-selects-source-radius.md).
+**Evidence level:** exact synthesis from [AF-416](../../findings/AF-416-full-left-tail-diagonal-has-positive-cauchy-limit.md) through [AF-436](../../findings/AF-436-exact-euler-coefficients-retain-shell-ladder-at-exponential-resolution.md).
 
 AF-416--AF-424 show that the reciprocal-order left-tail determinant has more than one scaling coordinate. A fixed derivative shift closes to a positive Cauchy limit, but moving depth enters through `s_n/n`; the complete partition family detects the critical value `2`, and in the critical window probe amplitude and depth combine as
 
 `b_n(a)=a n^(s_n/n-2)`.
 
-Near square values `b=m^2`, full-column rectangles can tie at leading exponential order while exact rectangle ratios, complete-packet drift and the discrete derivative offset remain visible at finer scales. AF-425--AF-428 show that continuous saddle tuning is therefore not enough: the physical depth variable is integral, exact-square fibres miss the required second-order cancellation, and moving amplitudes lead to exceptional sets that can be residual while still Lebesgue-null and Hausdorff-thin. AF-429--AF-432 expose the analogous supercritical hierarchy: for fixed rational density the source mesh automatically reaches the first `R_n/n` saddle aperture infinitely often, while the packet-corrected `R_n/n^2` target is a genuinely finer pointwise condition.
+Near square values `b=m^2`, full-column rectangles can tie at leading exponential order while exact rectangle ratios, complete-packet drift and the discrete derivative offset remain visible at finer scales. AF-425--AF-432 show that continuous saddle tuning is therefore not enough: the physical depth variable is integral, exact-square fibres miss the required second-order cancellation, and the packet-corrected target lives at a finer scale than the first saddle window.
 
-AF-433--AF-434 then separate two provenance questions that the target geometry alone cannot answer. The reciprocal-order family `x_n(c)=c/n` permits every `c>0`, while the source itself has singularity shells `r_m=2pi m`, so the square amplitudes satisfy `a=m^2 <=> c=r_m`. But the present determinant sums shell labels into zeta factors before partition packets form. Source realization of the same numerical values therefore does not mean that shell identity is transported into packet identity.
+AF-433--AF-435 separate source selection from downstream transport. The reciprocal-order family `x_n(c)=c/n` permits every `c>0`, while coefficient-root neutrality selects the Taylor radius, hence `c=2pi` and `a=1` for the Bernoulli source, without inspecting determinant packets. That selector is genuinely source-native, but the present determinant has already aggregated shell labels into zeta factors before packet labels form, and the selected square fibre fails the adjacent-packet cancellation of AF-426.
 
-AF-435 closes one natural version of the missing selection gate. For an analytic germ `f(z)=sum a_j z^j` with finite nonzero Taylor radius `R(f)`, the source-only coefficient-root response obeys
+AF-436 sharpens the transport diagnosis. The **exact even Euler coefficients have not lost the shell ladder**. After normalization,
 
-`Gamma_f(c)=limsup |a_j c^j|^(1/j)=c/R(f)`.
+`s_k=(-1)^k k R^(2k)c_(2k)=zeta(2k)=sum_(j>=1) j^(-2k)`.
 
-Hence the unique coefficient-root-neutral scale is `c=R(f)`. For the Bernoulli source, `R(h)=2pi`, so this criterion selects `c=2pi` and therefore `a=1` without inspecting determinant packets, exceptional-set membership, primes or zeros. The selection is genuine source provenance. It is also only one admissible selector class, not a theorem that every canonical source rule must choose the radius.
+Peeling shells below `m` leaves `r_(m,k)=sum_(j>=m)j^(-2k)`, with
 
-The selected point immediately separates selection from downstream success. AF-434 still says that the existing determinant does not transport shell index, and AF-426 says that the exact-square fibre `a=1` cannot achieve complete adjacent-packet cancellation. Thus the root-neutral selector is a **provenance-positive but mechanism-negative control**: fixing the free amplitude canonically does not make the current target cancellation work.
+`1 <= m^(2k) r_(m,k) <= 1+m/(2k-1)`.
 
-The reusable order is now four-stage. **First establish source selection. Second establish transport of the selected datum into the destination representation. Third compare the physical source mesh with the target aperture. Fourth test the selected point rather than an optimized surrogate.** The current branch passes the first stage for coefficient-root neutrality, fails shell-index transport in the present determinant, and fails adjacent-packet cancellation at the selected amplitude.
+Thus `m^(2k)r_(m,k)->1` and the residual root/ratio recovers the next shell. The loss in AF-434 is therefore not intrinsic to the source coefficients; it occurs when the downstream asymptotic representation compresses exponentially separated shell amplitudes into aggregate zeta factors. Shell `m` is present only at scale `m^(-2k)`, so stable recovery requires coefficient error `o(m^(-2k))`.
 
-**Boundary.** AF-435 does not classify all possible source-side admissibility notions or nonlinear reparameterizations. AF-434 does not rule out a different shell-resolved representation. AF-426 closes only the present adjacent-packet cancellation mechanism at the selected square fibre, not every full-determinant mechanism. Nothing in this synthesis selects rational primes or zeta zeros or implies RH.
+The reusable order is now five-stage. **First establish source selection. Second identify the exact source carrier and its resolution scale. Third verify that the downstream representation transports rather than aggregates that carrier. Fourth compare the physical source mesh with the target aperture. Fifth test the selected point rather than an optimized surrogate.** The current branch passes source selection and exact shell retention, but the present determinant fails shell-resolved transport and the selected square fibre fails its adjacent-packet mechanism.
+
+**Boundary.** AF-436 is an exact-information statement, not a stability theorem at fixed precision. It does not show that a shell-resolved representation with usable conditioning exists, and it does not rescue the present determinant. AF-435 does not classify all possible source-side selectors. Nothing here selects rational primes or zeta zeros or implies RH.

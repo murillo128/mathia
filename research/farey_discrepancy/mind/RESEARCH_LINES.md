@@ -2,28 +2,18 @@
 
 This file holds the current mathematical questions suggested by the durable Farey-discrepancy intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Force same-source cross-horizon coherence rather than increasing one-horizon prime coverage
+## Quantify cross-horizon overlap rather than one-horizon prime count
 
 **Linked intuitions:** `MI-001-cumulative-farey-discrepancy-is-mertens-energy` through `MI-039-periodic-scale-switching-can-create-a-supercritical-floquet-blind-mode`.
 
-FD-187--FD-211 separate source information, observation geometry and destination completeness. Prime-extension energy is a genuine Möbius relation currency; raw dyadic observation has a geometric recovery threshold; lowbit-tree coordinates improve inverse geometry; and fixed signed filters are classified by their characteristic roots. FD-212--FD-214 then show that nonautonomous scale switching creates a genuine super-square-root Floquet blind mode that can be lifted to every integer while preserving squarefree ternary amplitudes.
+FD-187--FD-214 separate source information, observation geometry and destination completeness, culminating in a bounded-depth periodic switched filter with a physical super-square-root Floquet blind mode. FD-215--FD-217 then show that a horizon-indexed source may satisfy very large families of exact Möbius Euler sign relations and remain blind at one target: every fixed fractional cutoff `p<=theta N`, `theta<1`, still leaves a prime reservoir that can be retuned.
 
-FD-215--FD-216 show that finite multiplicative fidelity is not enough. Every fixed finite family of exact Möbius Euler sign relations can be absorbed, and even the first `Theta(log N)` exact Euler relations may be imposed on a horizon-indexed source while the switched observation remains sub-square-root over the target window.
+FD-218 shows that merely requiring one source at two horizons is also insufficient below a geometric threshold. The same deterministic source can serve `N` and `2N`, satisfy the exact Euler laws through `p<=theta H` at each horizon, and retain a macroscopic earlier-prefix defect for every fixed `theta<1/2`. At `theta>=1/2`, the later cutoff reaches all primes up to the earlier horizon and forces the earlier squarefree prefix to be Möbius.
 
-FD-217 pushes the one-horizon boundary much further. For every fixed `0<theta<1`, a deterministic source depending on the target `N` can obey the exact Euler law for **every prime `p<=theta N`**, keep the switched observation bounded at that target, and still have `X_N(N) asymp_theta N/log N`. Thus one isolated horizon can remain blind after `Theta(N/log N)` exact prime constraints. At the exact endpoint `theta=1`, however, those relations force `xi_n=mu(n)` for every `n<=N`.
+The live discriminator is therefore **coverage overlap on the prefix being tested**. Useful continuations should classify more general horizon ratios, several coupled horizons, shrinking cutoffs or source-independent observables that create equivalent overlap without assuming full Möbius data. Relation count and persistence are not enough unless the moving constraint windows actually close the repair reservoir.
 
-The live discriminator is therefore not the number of prime constraints at one scale. It is **compatibility of the same source across moving horizons**, or another observable that couples neighboring horizons strongly enough that the unconstrained prime reservoirs cannot be retuned independently. The shrinking regime `theta_N->1` is not classified by FD-217 and should not be inferred from the fixed-ratio result.
+## Keep local fidelity, persistent identity and overlap geometry distinct
 
-## Treat one-horizon coverage and persistent multiplicative coherence as different information currencies
+The source can be exact on many Euler relations without being globally Möbius, and it can persist across multiple scales while still exploiting uncovered primes. The first-crossing threshold in FD-218 is a concrete control: persistence gains coercivity only when the later information reaches the earlier prefix.
 
-The current sequence separates quotient coverage, inverse conditioning, positive coercivity, fixed-family spectral roots, nonautonomous monodromy, dyadic-mantissa lifting, squarefree ternary fidelity, finite-prime Euler coherence and now almost-full one-horizon prime coverage.
-
-FD-217 makes the quantifier boundary sharp in a new way: any fixed fractional cutoff leaves a macroscopic reservoir of primes above `theta N` that can repair one target, whereas full coverage of the target prefix identifies Möbius on that prefix. This does not diagonalize into a single countermodel because the reservoir choices depend on `N`.
-
-A useful continuation should therefore quantify how much **overlap between horizons** is enough to prevent independent retuning before the hypotheses have already identified Möbius tautologically. Improving the number of local Euler factors without controlling their cross-scale compatibility attacks a resource that the one-horizon construction has already shown to be nondecisive.
-
-## Keep source coercivity, coordinate inversion and the Franel--Landau destination separate
-
-Stable source recovery and a critical random benchmark still do not imply an RH-critical discrepancy theorem. Positive coordinates can already be RH-complete, while switched signed coordinates can be critically blind on increasingly faithful source classes.
-
-The high-value frontier is now narrow: prove a quantitative persistent-source law that couples the preserved dyadic fibres across scales, or construct a source-independent sensor whose dynamics prevents the target-dependent prime-reservoir repair. Neither another fixed filter nor merely a larger finite set of independently reselected prime constraints addresses that obstruction.
+A future theorem should therefore state which source coordinates are common across scales, how much of the earlier prefix is covered by later exact constraints, and why any remaining reservoir cannot repair the switched observation. Neither another fixed filter nor a larger isolated prime family addresses that obstruction by itself.

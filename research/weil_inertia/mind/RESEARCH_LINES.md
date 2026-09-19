@@ -8,20 +8,18 @@ This file holds the current mathematical questions suggested by the durable Weil
 
 WI-331--WI-352 classify ordinary local Gowers smallness, scalar repairs and generic fixed-aperture feature enrichment at the bow scale. Matched-energy controls survive the generic inequalities, while useful enrichment pays explicit source-resolution or transmission tariffs. The destination remains the distinguished signed `Lambda-Lambda^sharp` covariance, not generic feature rank.
 
-## Treat threshold regularity as closed; the remaining first-crossing gate is positive source-side reserve
+## Use the null equation or positive reserve for cofinal control; an energy budget alone is insufficient
 
-**Linked intuitions:** `MI-010-pair-correlation-slack-is-a-shared-exceptional-budget` and `MI-050-full-localized-weil-energy-turns-any-rh-failure-into-a-finite-radius-first-crossing`.
+**Linked intuitions:** `MI-010-pair-correlation-slack-is-a-shared-exceptional-budget`, `MI-050-full-localized-weil-energy-turns-any-rh-failure-into-a-finite-radius-first-crossing`, and `MI-051-local-threshold-continuity-does-not-bootstrap-cofinally-from-an-energy-budget-alone`.
 
-WI-354 shows that Wang's short-interval pair-correlation interface can still tolerate finitely many or zero-density off-critical defects after normalization. WI-355 moves to Suzuki's full localized Weil form, whose lowest energy `lambda(a)` is monotone and continuous, positive at small aperture, and negative at some finite aperture iff RH fails. Any failure therefore has a finite first-crossing radius.
+WI-355 makes any RH failure a finite first crossing of Suzuki's full localized Weil form. WI-356--WI-357 identify the correct local threshold topology: a newly activated prime channel is large in ambient operator norm but form-small on actual normalized null states because the null equation bounds logarithmic energy and bounded log-energy gives an inverse-log autocorrelation modulus.
 
-WI-356 identifies the correct topology at a new prime-power threshold. The newly activated compressed-translation channel jumps immediately to full `L^2` operator norm, yet is infinitesimally small relative to Suzuki's logarithmic form. Ordinary bounded-operator perturbation theory is therefore the wrong interface.
+WI-358 prevents overextending that result. The same logarithmic-energy budget, considered as an abstract state class, does **not** yield cofinal threshold continuity: permitted normalized tests can change an already-present source autocorrelation by order one between consecutive thresholds. These witnesses are not null states, so local null-state regularity survives; what fails is a global bootstrap from the energy ceiling alone.
 
-WI-357 closes the regularity gap left there. Suzuki's exact null equation already bounds the logarithmic energy of every normalized null state by an explicit finite `B(a)`. The Fourier representation then gives an inverse-logarithmic modulus of continuity for autocorrelations on bounded-log-energy sets, and hence a quantitative aperture modulus for the complete finite source ledger. Combining that with WI-356 shows that a newly activated prime atom cannot create a first crossing from a fixed positive reserve: a null state just above threshold would already be an approximate null state for the source-deleted/pre-existing form.
+The open gate is therefore source-side coherence/coercive reserve. A useful continuation must use the null equation beyond its scalar energy bound, prove a reserve that does not collapse along the threshold sequence, or derive source-specific cancellation coupling successive ground states. Seeking a stronger generic continuity theorem on the whole energy ball attacks a class already shown to be too large.
 
-The open gate is consequently **not** logarithmic-energy boundedness or threshold continuity. It is source-side coercive reserve/arithmetic sign. A useful continuation must lower-bound the pre-existing/source-deleted form strongly enough to prevent reserves from collapsing along the threshold sequence, or derive from a hypothetical first-crossing null equation an arithmetic cancellation/coercivity identity that contradicts the near-null inheritance. Local continuity alone cannot be iterated to infinity if the positive reserve tends to zero.
+## Keep feature resolution, local form topology and cofinal coercivity separate
 
-## Keep feature resolution, defect normalization, form topology and coercive reserve separate
+A singular ambient perturbation can be harmless on the physical null-state class, but local regularity is not global positivity. Conversely, failure of budget-only cofinal continuity does not show that actual null states jump.
 
-The current ledger contains genuinely different currencies. Generic features price source resolution and covariance orientation. Pair correlation prices interval/support error but normalizes sparse defects. The full localized form retains the complete variational sign. The logarithmic form topology prices endpoint concentration and regularizes prime-threshold activation on the actual ground-state class.
-
-WI-357 removes one possible confusion: a perturbation may be singular in ambient operator norm yet harmless on the bounded-energy states selected by the exact source equation. But regularity is not positivity. The RH-facing step is now to prove a **uniformly useful reserve or sign mechanism** in the same source-faithful form, not to seek a stronger continuity theorem for an already continuous lowest eigenvalue.
+Any first-crossing exclusion must state which source equation or reserve ties states across thresholds. The RH-facing resource is now that persistent source-side sign/coherence, not another generic feature or ambient-norm estimate.
