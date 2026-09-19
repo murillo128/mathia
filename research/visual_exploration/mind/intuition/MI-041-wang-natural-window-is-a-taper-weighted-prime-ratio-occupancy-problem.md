@@ -1,25 +1,17 @@
-# MI-041 — Wang natural windows reduce to simultaneous-prime occupancy on fixed-gate subperiod mechanical paths
+# MI-041 — Wang natural windows reduce to fixed-gap prime-pair runs after faithful mechanical-path compression
 
-**Evidence level:** exact synthesis from `VIS-313`--`VIS-321` plus classical rational mechanical/Christoffel geometry. No prime-pair occupancy estimate or RH consequence is claimed.
+**Evidence level:** exact synthesis from `VIS-313`--`VIS-322` plus classical rational mechanical/Christoffel geometry. No prime-pair occupancy estimate or RH consequence is claimed.
 
 The cutoff-free Wang remainder has no useful global nearest-frequency spacing because the full cross-base prime-ratio spectrum is dense. Dyadic arithmetic-height shells restore finite-resolution structure, and VIS-315--VIS-316 reduce the finite-window loss to the number of actual prime-ratio frequencies in one Fourier cell, with the destination taper pricing a weighted aggregate of shell excesses.
 
-VIS-317--VIS-318 identify two false reductions. Projecting to the scalar determinant erases the two coordinatewise prime exclusions; fixing the determinant keeps those exclusions but leaves only `O(1)` same-shell points. VIS-319 supplies the faithful coordinates: with `au-bv=1`,
+VIS-317--VIS-318 identify two false reductions. Projecting to the scalar determinant erases the two coordinatewise prime exclusions; fixing the determinant keeps those exclusions but leaves only `O(1)` same-shell points. VIS-319 supplies the faithful coordinates: with `au-bv=1`, `(q,r)=(ut-bh,vt-ah)` is a unimodular change of variables and preserves exactly the local two-prime factor `(1-1/ell)^2` modulo every prime.
 
-`(q,r)=(ut-bh, vt-ah)`
+VIS-320 shows that the long-thin domain consists of at most three branches `t_j(h)=floor(U(h))-j`, selected by a rational rotation whose period is `max(u,v) asymp M`. At the natural Wang scale the determinant window has length `O(M/log log M)=o(M)`, so the physical segment sees less than one rotation period. VIS-321 then freezes the moving gate up to `O(1)` candidate points and identifies a common two-step mechanical/Christoffel path with unimodular step basis.
 
-is a unimodular change of variables and preserves exactly the local two-prime factor `(1-1/ell)^2` modulo every prime.
+VIS-322 adds the decisive center-gap normal form. Put `k=|v-u|`. Along a fixed branch, advancing `h` by `k` changes `(q,r)` by `(sigma,sigma)` except at at most one wrap index. Splitting the subperiod segment by residue class modulo `k` therefore decomposes the branch into fixed-gap diagonal runs `(Q+n sigma,R+n sigma)`, with at most `min(k,L)+1` runs when the segment length is `L`. The two primality conditions are retained exactly while the mechanical-path complexity is converted into an explicit fragmentation count.
 
-VIS-320 shows that the long-thin domain consists of at most three branches `t_j(h)=floor(U(h))-j`, selected by a rational rotation whose period is `max(u,v) asymp M`. At the natural Wang scale the determinant window has length `O(M/log log M)=o(M)`, so the physical segment sees less than one rotation period. Full-cycle equidistribution is therefore not a substitute for short-orbit prime occupancy.
+This changes how the unresolved arithmetic theorem should be attacked. When `k` is small, there are few long runs and the problem is close to prime-pair occupancy at a fixed difference. When `k` is large, there are many short runs and any fixed-gap estimate must be aggregated without losing the Wang taper budget. The important variable is therefore no longer just rational slope or orbit period but **center-gap fragmentation relative to the physical subperiod length**.
 
-VIS-321 makes the branch geometry still more rigid. The increment word is binary and common to all branches; its two lattice steps are
+The reusable lesson is that coordinate fidelity, arithmetic dimension, orbit length, gate motion, decimation geometry and destination weighting are separate resources. A faithful chart can preserve both prime exclusions; a short physical window can defeat full-cycle averaging; a moving threshold can be negligible; and a mechanical word can still hide a simpler fixed-gap decomposition after the source-native center difference is used.
 
-`s_0=(-b,-a)`, `s_1=(u-b,v-a)`,
-
-with `det(s_0,s_1)=1`, and the three candidate branches are translates of one rational mechanical/Christoffel path. The actual moving branch threshold can be frozen: on a subperiod interval the moving/frozen masks differ at no more than `1+floor(2D/min(u,v))` indices per branch, which is eventually at most one at `D=O(M/log log M)`.
-
-This removes the affine gate drift from the list of plausible main difficulties. Up to `O(1)` candidate points, the natural Wang cell is a fixed-gate subword of a unimodular mechanical path carrying two simultaneous primality constraints. The live theorem is therefore a short-orbit arithmetic-distribution statement, or a destination-weighted estimate that avoids worst-cell occupancy altogether.
-
-The reusable lesson is that **coordinate fidelity, arithmetic dimension, orbit length, gate motion and destination weighting are separate resources**. A faithful chart can preserve the prime exclusions; a short physical window can still prevent full-period averaging; and a moving threshold can be provably irrelevant once its symmetric difference is below the destination's `O(1)` tolerance. The next theorem should attack only the resource that survives all three reductions.
-
-**Boundary.** VIS-321 does not prove simultaneous-prime density on these paths, a short-interval Beatty/Christoffel prime theorem, the Wang natural-window estimate, or RH. The `O(1)` gate-freezing statement uses the subperiod/natural-scale regime. The remaining slope, prime occupancy and taper-weighted aggregation are genuinely unresolved.
+**Boundary.** VIS-322 does not prove uniform simultaneous-prime density on the diagonal runs, a sufficiently strong fixed-gap prime theorem over the required moving family, or the taper-weighted aggregate needed by Wang. The run bound can still be too large in the fragmented regime. The result is a representation reduction: it identifies the arithmetic pieces and the combinatorial price that a downstream sieve/discrepancy estimate must actually pay.

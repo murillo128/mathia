@@ -1,0 +1,15 @@
+# MI-044 — Finite-prime Wold classification does not globalize atomically without an extra global hypothesis
+
+**Evidence level:** literature-backed exact specialization from [PL-379](../../findings/PL-379-infinite-prime-wold-globalization-failure.md), interpreted against the scalarization boundaries of PL-377--PL-378.
+
+Unique factorization identifies the positive-integer exponent semigroup with the countably generated free commutative monoid `N_0^infinity` of finitely supported exponent sequences. For a fixed finite set of prime generators, doubly commuting isometries admit the familiar Wold decomposition into pure and unitary coordinate sectors. It is tempting to classify every finite-prime restriction and then pass to a global binary pure/unitary type.
+
+PL-379 imports a precise prior-art obstruction to that passage. There exist doubly commuting isometric representations of `N_0^infinity` for which every finite-coordinate restriction has its ordinary Wold decomposition, yet no global decomposition indexed by one binary type `g in {0,1}^N` exists. In the explicit construction the coordinate type is distributed over a non-atomic Bernoulli space. Finite Wold sectors are positive-measure cylinder sets, while a complete infinite type is a measure-zero singleton, so all putative atomic global sectors vanish.
+
+The reusable point is a **globalization gate**. Exact classification on every finite coordinate set does not determine the measure-theoretic organization of the countably infinite family. A finite-prime audit can therefore be perfectly correct while missing a diffuse global type field. The missing resource is not another local Wold theorem but a global compactness, atomicity, cyclicity, covariance or source condition strong enough to control the projective limit.
+
+For Prime Lattice this keeps one-sided noninvertibility open after PL-377--PL-378, but only as a representation-theoretic escape. The Wold failure is generic to a countable free commutative monoid and appears before the frequencies `log p`, the rational-prime norm map, analytic continuation or a zero-sensitive observable are introduced. It therefore supplies no arithmetic discriminator by itself.
+
+A positive use of the one-sided category must identify an arithmetic hypothesis that excludes the diffuse Bernoulli-type freedom for a source reason. A canonical cyclic vacuum, exact `log p` energy covariance, a Mellin/Nyman condition or completed Weil data are possible kinds of extra structure, but each must be audited against existing classical models rather than inserted solely to recover rigidity.
+
+**Boundary.** PL-379 is an existence obstruction, not a theorem that all infinite doubly commuting families fail Wold decomposition, and it does not make the canonical prime shift pathological. It says only that compatible finite-prime classifications do not imply a global atomic Wold classification in the general countable semigroup category. No analytic continuation, critical-line selector or RH consequence follows.

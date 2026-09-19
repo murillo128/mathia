@@ -1,0 +1,17 @@
+# MI-029 — Exact finite-stage classifications need a separate globalization theorem
+
+**Evidence level:** supported cross-line synthesis from [PC-362](../../prime_circle/findings/PC-362-subcritical-unbounded-raising-perturbations-remain-spectrally-blind.md), [PL-379](../../prime_lattice/findings/PL-379-infinite-prime-wold-globalization-failure.md), and the cofinal-control boundaries WI-358--WI-359. The mechanisms are different; only the finite-to-global audit is shared.
+
+Several Mathia lines now contain exact examples in which every finite or local stage is mathematically well behaved while the infinite/cofinal object has an additional degree of freedom that the finite classifications do not determine.
+
+Prime Circle gives a domain/spectral example. In the weighted raising family behind PC-362, every finite grade truncation is triangular and keeps the same diagonal eigenvalues. Subcritical relatively bounded infinite-depth perturbations remain isospectral as well. Yet beyond the relative-growth threshold the full closed operator can lose point spectrum. No finite triangular truncation sees the domain phenomenon responsible for that category change.
+
+Prime Lattice gives a measure-theoretic decomposition example. PL-379 specializes prior art on `N_0^infinity` to the prime-exponent semigroup: every finite set of doubly commuting isometric prime generators has the ordinary Wold decomposition, while the countable family may have no global atomic decomposition into pure/unitary coordinate types. Finite sectors are compatible cylinder sets; the missing information is whether their infinite intersection is carried by atoms or by a diffuse type measure.
+
+Weil Inertia supplies a related cofinal warning in a different category. Local threshold continuity on selected states can be correct while scalar energy, graph norm and an abstract zero-mode condition remain too weak to iterate through an unbounded sequence of prime-power thresholds. The failure there is not Wold diffuseness or operator-domain growth, but it reinforces the quantifier distinction: a useful local estimate is not automatically a cofinal propagation theorem.
+
+The reusable audit is therefore: **after proving every finite-stage statement, identify the extra compactness, uniformity, atomicity, domain control or source-specific compatibility needed to pass to the infinite object, and prove that property separately.** Projective compatibility of finite answers is not by itself the missing theorem. The global object may contain diffuse measure, escaping domain behavior, nonuniform constants or exceptional subsequences that vanish from every fixed-stage description.
+
+This is not an argument against finite truncations. Finite models remain valuable when the desired theorem itself has a finite witness, when uniform estimates close the limit, or when a source law forces a unique global completion. The warning applies only when the conclusion consumes an infinite/cofinal object but the proof supplies no quantitative or structural globalization mechanism.
+
+**Boundary.** PC-362, PL-379 and WI-358--WI-359 prove different statements in different mathematical categories; no numerical threshold or operator theorem transfers between them. PL-379's diffuse Wold pathology is generic and not rational-prime specific, and PC-362's supercritical shift is not a zeta operator. The cross-line claim is only methodological but exact: finite-stage correctness does not license a global conclusion unless the passage to the limit has its own proved control.
