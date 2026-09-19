@@ -1,43 +1,27 @@
-# MI-055 — Centered prime-power Toeplitz positivity pays a divergent diagonal tax
+# MI-055 — Prime-power Toeplitz positivity has a sparse-sum versus mixed-max completion boundary
 
-**Evidence level:** exact synthesis from [WP-371](../../findings/WP-371-exact-prime-power-toeplitz-carrier-is-indefinite-and-every-positive-completion-pays-a-divergent-diagonal-tax.md), interpreted as the first non-diagonal continuation of the critical-scale obstruction in WP-369--WP-370.
+**Evidence level:** exact synthesis from [WP-371](../../findings/WP-371-exact-prime-power-toeplitz-carrier-is-indefinite-and-every-positive-completion-pays-a-divergent-diagonal-tax.md) and [WP-372](../../findings/WP-372-mixed-prime-completion-collapses-the-wp-371-diagonal-tax-to-a-finite-sharp-mass.md), interpreted against the critical-scale obstructions in WP-369--WP-370.
 
-The critical prime-power half-density does admit a canonical translation representation, but it appears in the wrong part of the canonical positive kernel.
+The critical prime-power half-density appears as the nonzero Fourier coefficients of a centered Poisson kernel. On a single prime ray, positivity of `aI+C_r` with `r=p^(-1/2)` requires the exact local diagonal
 
-Let `U` be a bilateral unitary shift and
+`a >= 2/(sqrt(p)+1)`.
 
-`C_r=sum_(k>=1) r^k(U^k+U^(-k))`, `0<r<1`.
+After multiplication by `log p`, independent scalar completion of every prime therefore pays
 
-For `r=p^(-1/2)`, multiplying by `log p` gives the exact symmetric prime-power coefficient pattern
+`c_p^+=2 log p/(sqrt(p)+1)`,
 
-`(log p) p^(-k/2)`
+and `sum_p c_p^+` diverges. WP-371 correctly identifies this as the sharp cost of **sparse/separable** local completion.
 
-on the nonzero translates. The Fourier symbol is
+WP-372 shows that it is not the sharp cost of arbitrary global scalar positivity. On `G=Q_+^x` with prime-torus dual, allow unconstrained mixed-prime Fourier coefficients while fixing every one-prime ray to the positive critical coefficients. A finite positive measure exists exactly when its total mass satisfies
 
-`c_r(theta)=P_r(theta)-1`,
+`C >= C_+^* := sup_p c_p^+`,
 
-where `P_r` is the positive Poisson kernel. Thus the exact Weil-shaped carrier is the **centered** part of a positive harmonic object, not the positive object itself.
+and this supremum is finite, attained at `p=13`. An explicit product measure realizes the completion, with mixed coefficients equal to products of the prescribed one-prime moments scaled by powers of `C`.
 
-This distinction has an exact completion cost. Since
+The distinction is exact. If mixed-prime coefficients are forced to vanish, positivity on each finite prime set again requires the **sum** of the local minima and diverges. The same sparse sum obstruction survives when the carrier is assembled first on the common prime-log translation line, because multiplicative independence makes that line dense in each finite prime torus. Thus mixed-prime freedom changes the completion cost from a divergent sum to a finite maximum.
 
-`min_theta c_r(theta)=-2r/(1+r)`,
+The reusable audit is therefore global. A divergent local positive-completion tax is not fundamental until the allowed cross-coordinate coefficients are specified and the full positive-definite extension problem is solved. Conversely, a finite mixed completion is not arithmetic leverage when its cross-prime coefficients are freely engineered from the target moments and reproduced by a universal product control.
 
-the scalar translation-invariant completion
+The surviving Weil route must sit between these extremes: it needs mixed-prime coefficients **forced by the arithmetic/archimedean source construction**, enough freedom to keep global positivity finite, and an independently fixed sign/orientation not present in the universal product completion.
 
-`a I + C_r`
-
-is positive if and only if
-
-`a >= 2r/(1+r)`.
-
-At the critical prime scale, even the optimal local diagonal repair therefore costs
-
-`2 log p/(sqrt(p)+1)`.
-
-The sum of these minimal costs over the primes diverges. Keeping the full Poisson kernel is no escape: it adds the larger zero Fourier coefficient `1` at every prime. Removing the accumulated diagonal after the local positivity argument is likewise not intrinsic positivity; it is a subtraction outside the sign theorem.
-
-The reusable mechanism is a **positive-completion audit**. When the desired arithmetic coefficients are off-diagonal Fourier coefficients of a familiar positive kernel, identify whether they belong to the full kernel or only to its centered/sign-indefinite part. If positivity requires adding a diagonal direction, compute the smallest allowed completion before treating that direction as normalization. Here the local completion is exact and the resulting global zero-mode mass is infinite.
-
-This sharpens the surviving operator-valued route from WP-370. Cross-index coupling by itself is insufficient if it decomposes prime-by-prime into scalar positive Toeplitz blocks. A successful sign mechanism must cancel, quotient or absorb the accumulated diagonal **inside one source-forced global finite--archimedean or cross-prime structure before positivity is asserted**. The compensation must itself preserve the positive form on the admissible global subspace; subtracting local baselines afterwards only restores the original indefiniteness.
-
-**Boundary.** WP-371 classifies scalar translation-invariant diagonal completions that preserve the exact nonzero prime-power coefficients. It does not classify matrix-valued, cross-prime, finite--archimedean or constrained-subspace completions. It does not prove that no global positive operator exists, supply the archimedean term, or imply RH. The divergence is a no-go for independent local scalar completion, not for every global operator-valued construction.
+**Boundary.** WP-372 classifies the positive-sign scalar completion with unconstrained mixed-prime coefficients and the sparse/common-line control. It does not construct a Weil-positive form, supply the archimedean term, make the mixed coefficients source-specific, or imply RH. The product completion is a matched control, not a successful sign mechanism.
