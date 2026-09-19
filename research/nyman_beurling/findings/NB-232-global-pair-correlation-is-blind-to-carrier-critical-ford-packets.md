@@ -168,7 +168,7 @@ For real `alpha`, define the Montgomery-type weighted pair numerator
 \mathcal P_\Gamma(\alpha,T)
 :=
 \sum_{\substack{0<\gamma,\gamma'\le T\\
-gamma,gamma'\in\Gamma}}
+\gamma,\gamma'\in\Gamma}}
 T^{i\alpha(\gamma-\gamma')}
  w(\gamma-\gamma'),
 \tag{12}
@@ -193,7 +193,7 @@ A(T):=\#\{\eta\in E:0<\eta\le T\}.
 For each inserted ordinate `eta<=T`, decompose the original ordinates into unit intervals according to `|gamma-eta|`. From (10) and the summability of `(1+k^2)^(-1)`,
 
 \[
-\sum_{\substack{0<\gamma\le T\\gamma\in\Gamma}}
+\sum_{\substack{0<\gamma\le T\\\gamma\in\Gamma}}
  w(\eta-\gamma)
 \ll \log T.
 \tag{15}
@@ -309,7 +309,13 @@ with ordinates
 \tag{27}
 \]
 
-Exactly as in `NB-231`, the phase factor `exp(i X_k(gamma_(j,k)-t_k))` is one, the profile stays in a fixed positive patch, and the signed packet residue has a positive order-one lower bound independent of `k`.
+Exactly as in `NB-231`,
+
+\[
+e^{iX_k(\gamma_{j,k}-t_k)}=1,
+\]
+
+the profile stays in a fixed positive patch, and the signed packet residue has a positive order-one lower bound independent of `k`.
 
 The cumulative number of inserted positive ordinates up to height `T` is tiny. If `t_K<=T<t_(K+1)`, then
 
