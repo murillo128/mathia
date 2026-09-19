@@ -19,6 +19,7 @@ based_on:
   - research/visual_exploration/findings/VIS-309-wang-bohr-time-haar-equivalence.md
   - research/visual_exploration/findings/VIS-310-wang-hard-truncation-global-gap-quintic-horizon.md
   - research/visual_exploration/findings/VIS-311-wang-weighted-gap-cubic-horizon.md
+  - research/visual_exploration/findings/VIS-312-wang-dense-ratio-spectrum-no-nearest-spacing.md
 ---
 
 # Does Wang packet localization preserve source information without manufacturing strip gain?
@@ -51,7 +52,7 @@ in the iterated Bohr-time sense. The one-parameter prime-phase relation `p^(-iT)
 
 when `H asymp x log log x`.
 
-`VIS-311` now replaces that worst-gap step by the weighted Montgomery--Vaughan inequality. If `m_lambda` is the reduced rational height of a grouped ratio frequency, the exact Wang spectrum satisfies
+`VIS-311` replaces that worst-gap step by the weighted Montgomery--Vaughan inequality. If `m_lambda` is the reduced rational height of a grouped ratio frequency, the exact Wang spectrum satisfies
 
 `sum_lambda m_lambda |B_lambda|^2 << x^2 log^3(3x)`.
 
@@ -66,7 +67,9 @@ after optimizing the same hard cutoff. At `H asymp x ell`, this is `o(H^2)` on t
 
 where `L=log(3x)` and `ell=log log(3x)`.
 
-Thus two powers of `x` in the `VIS-310` horizon were an artifact of collapsing all ratio geometry to the closest pair. The remaining cubic loss is now tied to the **uniform hard-tail approximation**, not to the global gap itself.
+`VIS-312` now closes the most literal nontruncated continuation of that argument. Quotients of ordinary primes are dense in the positive reals, so their logarithms already form a dense subset of Wang's ratio-frequency spectrum. The kernel `K_H(lambda)` removes only a discrete frequency lattice, hence the **nonzero cross-base coefficient support remains dense**. For every fixed retained frequency the nearest-neighbor spacing inside `Lambda_Y` tends to zero as `Y->infinity`, and the `VIS-311` spacing functional `W_(x,H)(Y)` necessarily diverges. Thus one cannot remove the hard cutoff by simply taking the same nearest-neighbor Hilbert inequality to the full spectrum.
+
+The remaining finite-window problem is therefore not merely “control the tail in energy.” It is to do so with an **aggregate-density representation** that remains meaningful for a dense frequency set, or else identify an explicit sparse resonance mechanism that defeats such a representation.
 
 ## Research question
 
@@ -78,15 +81,15 @@ For the **fixed-power real-axis source**, is there a property of
 
 strictly weaker than the RH-equivalent half-plane pole exclusion of `VIS-293` that improves the generic Korobov--Vinogradov envelope and survives Wang's complete error budget?
 
-For the **moving upper pointwise layer**, can one transfer the small Bohr energy of `VIS-309` to finite windows without paying the uniform hard-tail cutoff that still leaves the cubic `VIS-311` horizon, or instead exhibit a concrete sparse resonance mechanism whose exceptional heights sustain an `H`-scale remainder near `H asymp x log log x`?
+For the **moving upper pointwise layer**, can one transfer the small Bohr energy of `VIS-309` to finite windows using scale-local density, smooth/dyadic frequency blocks, a large-sieve/nonharmonic-Fourier estimate, or direct finite-window-kernel control that tolerates the dense full ratio spectrum; or instead exhibit a concrete sparse resonance mechanism whose exceptional heights sustain an `H`-scale remainder near `H asymp x log log x`?
 
-The live finite-window issue is no longer generic coefficient sensitivity: `VIS-311` already supplies that and quantifies its gain. The missing information is an **energy-level treatment of the infinite ratio tail/local density**, or evidence that exceptional deterministic coherence defeats such a transfer.
+The live issue is no longer generic coefficient sensitivity, a global minimum gap, or even an unpartitioned nearest-neighbor treatment of the infinite spectrum. `VIS-311` handles coefficient weighting at finite cutoff; `VIS-312` proves that nearest-neighbor isolation disappears altogether in the full spectrum.
 
 ## Why it may matter
 
-The sequence `VIS-301`--`VIS-311` has removed a series of apparently structural barriers or insufficient proof abstractions: localization leakage, generic coefficient majorants, ambient spacing, support-sensitive absolute spacing, density-matched signed controls, exact prime-power support, same-base multiplicative harmonics, the distinction between product-Haar phases and the actual vertical flow at long-time first/second moment level, the naive hard-truncation/global-gap bridge, and now most of the loss caused by the global-gap collapse itself.
+The sequence `VIS-301`--`VIS-312` has removed a series of apparently structural barriers or insufficient proof abstractions: localization leakage, generic coefficient majorants, ambient spacing, support-sensitive absolute spacing, density-matched signed controls, exact prime-power support, same-base multiplicative harmonics, the distinction between product-Haar phases and the actual vertical flow at long-time first/second moment level, the naive hard-truncation/global-gap bridge, most of the global-gap loss under coefficient weighting, and now the idea that the finite nearest-neighbor functional itself survives removal of the cutoff.
 
-A successful energy-tail or direct infinite-spectrum estimate could potentially move the deterministic finite-window scale much closer to the natural `x log log x` range. Failure would be equally informative if it isolates an explicit family of rare ratio resonances carrying enough Wang coefficient mass to survive all existing controls.
+A successful aggregate-density finite-window estimate could still move the deterministic scale toward the natural `x log log x` range. Failure would be equally informative if it isolates an explicit family of rare ratio resonances carrying enough Wang coefficient mass to survive all existing controls.
 
 ## Decisive test
 
@@ -98,21 +101,23 @@ For the moving upper branch, start from
 
 The next useful result must do one of two things:
 
-- replace the uniform hard-tail estimate by a smooth/dyadic or direct infinite-series finite-window argument whose discarded spectrum is controlled in mean square or another coefficient-sensitive energy norm, and quantify whether the resulting horizon beats `x^3 log^3 x/(log log x)^2`; or
+- partition or otherwise represent the **full dense ratio spectrum** so that the tail is controlled by aggregate local density and coefficient energy rather than an individual nearest-neighbor gap; quantify the resulting finite-window mean-square/large-deviation bound and determine whether its sufficient horizon beats `x^3 log^3 x/(log log x)^2`; or
 - identify an explicit family of near-resonant rational-ratio frequencies and heights for which the phase sum is coherently `H`-scale, then show that this survives Wang's taper and all previously isolated errors.
 
-A result that only re-proves infinite-time Kronecker/Haar equidistribution, support geometry, same-base harmonic coherence, the absolute Hilbert majorant, the `VIS-310` global-gap estimate, or the `VIS-311` weighted hard-cutoff estimate is already covered.
+A viable positive route may use smooth/dyadic height or frequency blocks, a large-sieve inequality expressed through counts in frequency intervals, or direct summation against the finite-window kernel `min(V,1/|lambda-mu|)`. It must explicitly survive the `VIS-312` density obstruction rather than silently reintroduce a positive full-spectrum nearest-neighbor spacing.
+
+A result that only re-proves infinite-time Kronecker/Haar equidistribution, support geometry, same-base harmonic coherence, the absolute Hilbert majorant, the `VIS-310` global-gap estimate, the `VIS-311` weighted hard-cutoff estimate, or a formal `Y->infinity` limit of the same nearest-neighbor functional is already covered or ruled out.
 
 ## Evidence boundary
 
 `VIS-304` is an upper bound, not proof that `x log log x` is attained. `VIS-305`--`VIS-308` are increasingly faithful negative controls. `VIS-309` is exact for the Bohr-time first and second moments of the actual deterministic remainder, but its density statement is **iterated**: fix `x,H`, take the long-time limit, then let `x` grow.
 
-`VIS-310` and `VIS-311` are proof-method controls, not lower bounds on true finite-window dephasing. `VIS-311` proves that coefficient weighting materially improves the hard-cutoff transfer, but its cubic sufficient horizon still inherits the uniform tail cost `H x^(3/2)/sqrt(Y)` from `VIS-310`.
+`VIS-310` and `VIS-311` are proof-method controls, not lower bounds on true finite-window dephasing. `VIS-311` proves that coefficient weighting materially improves the hard-cutoff transfer, but its cubic sufficient horizon still inherits the uniform tail cost from `VIS-310`.
 
-The current evidence therefore does not control a joint limit with `x=x(T)`, does not rule out sparse exceptional heights, and does not prove pointwise cancellation at `H asymp x log log x`. No stronger RH criterion or new prime-gap theorem is established.
+`VIS-312` is also a proof-method obstruction. Dense frequency support makes the unpartitioned nearest-neighbor spacing vanish, but it does **not** imply a large finite-window remainder: the coefficients decay and an aggregate-density or kernel estimate may remain strong. No joint limit with `x=x(T)`, pointwise cancellation at `H asymp x log log x`, stronger RH criterion, or new prime-gap theorem is established.
 
 ## Research disposition
 
-Outcome so far: **the moving upper-source branch has narrowed from coefficient-sensitive finite-window dephasing in general to energy-controlled infinite-tail transfer versus exceptional-height resonance**. The global minimum-gap loss has been quantitatively reduced from a quintic to a cubic sufficient horizon; the hard-tail representation is now the dominant explicit bottleneck.
+Outcome so far: **the moving upper-source branch has narrowed to aggregate-density finite-window control of a dense weighted ratio spectrum versus exceptional-height resonance**. The global minimum-gap loss is no longer the issue, and the finite-cutoff nearest-neighbor inequality cannot simply be continued to the full spectrum.
 
-The clue remains accepted and live. The next contribution should attack that tail/local-density boundary or exhibit an explicit sparse resonance mechanism, rather than repeat another finite hard-cutoff spacing estimate.
+The clue remains accepted and live. The next contribution should quantify a block/local-density or direct-kernel energy mechanism that genuinely handles the infinite dense spectrum, or exhibit an explicit sparse resonance family; another isolated-gap estimate is no longer informative.
