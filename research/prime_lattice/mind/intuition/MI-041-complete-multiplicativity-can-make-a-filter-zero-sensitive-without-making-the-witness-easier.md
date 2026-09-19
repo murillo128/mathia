@@ -1,29 +1,31 @@
-# MI-041 — Complete multiplicativity makes pole neutrality zero-sensitive and locally Liouville-rigid without making critical continuation easier
+# MI-041 — Complete multiplicativity makes pole neutrality zero-sensitive but does not supply continuation
 
-**Evidence level:** literature-backed exact synthesis from [PL-369](../../findings/PL-369-venturini-completely-multiplicative-zero-free-witness.md) and [PL-370](../../findings/PL-370-pole-neutral-liouville-prime-harmonic-rigidity.md), interpreted against the ambient filter controls PL-363--PL-368.
+**Evidence level:** literature-backed exact synthesis from [PL-369](../../findings/PL-369-venturini-completely-multiplicative-zero-free-witness.md) through [PL-371](../../findings/PL-371-sparse-liouville-real-continuation-obstruction.md), interpreted against the ambient filter controls PL-363--PL-368.
 
-PL-363--PL-368 show that linear filter classes can manufacture critical-looking convergence walls without selecting zeta zeros. Finite filters are periodic continuations, unrestricted filters are programmable, `ell^1` filters become limit-periodic, `ell^p` geometry produces the entire exponent ladder `1-1/p`, and scalar Dirichlet Hardy spaces produce a generic absolute-convergence wall at `1/2` that moves under vector-valued cotype. Pole neutrality inside those ambient classes is therefore not a zero-selection mechanism.
+PL-363--PL-368 show that linear filter classes can manufacture critical-looking convergence walls without selecting zeta zeros. Finite filters are periodic continuations, unrestricted filters are programmable, `ell^p` geometry produces the exponent ladder `1-1/p`, and scalar Dirichlet Hardy spaces produce a generic absolute-convergence wall at `1/2`. Pole neutrality inside those ambient classes is therefore not a zero-selection mechanism.
 
-PL-369 identifies a qualitatively different regime already present in the literature. Let `a` be bounded and completely multiplicative. Venturini proves that if `L(a,s)` is holomorphic on `Re(s)>sigma_0` and `L(a,1)=0`, then zeta has no zero in that half-plane. Complete multiplicativity fixes the entire exponent-lattice source from its prime-axis values, and conjugate symmetrization produces a nonnegative logarithmic Dirichlet series. The resulting theorem interface is genuinely source-rigid rather than an ambient norm artifact.
+PL-369 identifies a qualitatively different regime already present in the literature. Let `a` be bounded and completely multiplicative. Venturini proves that if `L(a,s)` is holomorphic on `Re(s)>sigma_0` and `L(a,1)=0`, then zeta has no zero in that half-plane. Complete multiplicativity fixes the entire exponent-lattice source from its prime-axis values, and conjugate symmetrization produces a nonnegative logarithmic Dirichlet series. The theorem interface is genuinely source-rigid rather than an ambient norm artifact.
 
-The Liouville function gives the adversarial control:
+The Liouville function gives the exact adversarial control:
 
 `L(lambda,s)=zeta(2s)/zeta(s)`.
 
-For `1/2<=sigma_0<1`, zero-freeness supplies exactly such a witness, so at `sigma_0=1/2` existence of the critical witness is RH-equivalent. The nonlinear source law creates a valid zero-sensitive criterion, but the hard step moves into proving continuation independently.
+At the critical half-plane, witness existence is therefore RH-equivalent. The nonlinear source law creates a valid zero-sensitive criterion, but the hard step moves into proving continuation independently.
 
-PL-370 sharpens the **local** source class before any critical-half-plane continuation is considered. If `L(a,s)` merely extends holomorphically across a neighbourhood of `s=1` and vanishes there, then the zero is forced to be simple and
+PL-370 sharpens the **local** source class before any critical-half-plane continuation is assumed. If `L(a,s)` extends holomorphically across a neighbourhood of `s=1` and vanishes there, then the zero is simple and
 
-`log |L'(a,1)| = sum_p sum_(k>=1) (1+Re(a(p)^k))/(k p^k) < infinity`.
+`sum_p (1+Re a(p))/p < infinity`.
 
-In particular
+Thus a pole-neutral witness lies at finite prime-harmonic distance from Liouville. In a fixed finite phase alphabet it equals `-1` outside a reciprocal-prime-summable exceptional set. Local boundary cancellation already removes generic Helson-phase freedom.
 
-`sum_p (1+Re a(p))/p < infinity`,
+PL-371 supplies the decisive control on what that rigidity buys. Fix any `sigma_0<1`. One can choose a reciprocal-prime-summable set `E_alpha` whose prime Dirichlet series diverges at a prescribed `alpha in (max(sigma_0,1/2),1)`, flip Liouville from `-1` to `+1` on exactly that set, and preserve a simple holomorphic zero at `s=1`. Yet the Euler correction
 
-so `a` lies at finite prime-harmonic distance from Liouville. For a fixed finite phase alphabet, every non-`-1` prime value can occur only on a set of finite reciprocal-prime mass; an alphabet not containing `-1` is excluded entirely. Thus pole neutrality at the Euler-product boundary already collapses generic Helson-phase freedom to a Liouville neighbourhood.
+`H_alpha(s)=product_(p in E_alpha) (1+p^(-s))/(1-p^(-s))`
 
-This is stronger than saying that complete multiplicativity is a useful nonlinear class. It identifies the first rigid source coordinate: a pole-neutral witness must be **Liouville-like on the prime axes before one asks for continuation toward `1/2`**. The next continuation problem should therefore be posed on finite prime-harmonic perturbations of Liouville, not on arbitrary bounded completely multiplicative phases.
+blows up as real `s` decreases to `alpha`, while `zeta(2alpha)/zeta(alpha)` is finite and nonzero. The resulting completely multiplicative witness therefore cannot extend holomorphically to `Re(s)>sigma_0`.
 
-The reusable lesson is that **source rigidity, local boundary selection, critical continuation and proof advantage are separate gates**. PL-370 shows that a local zero at `1` already forces substantial arithmetic structure, while PL-369 shows that extending any admissible witness through the critical half-plane is still as hard as the zero-free conclusion in the Liouville control. Narrowing the source class is real progress only if that rigidity yields an independent continuation mechanism.
+This makes the separation exact: **source rigidity, local boundary selection and global continuation are independent gates**. Finite prime-harmonic distance is a strong necessary condition for pole neutrality, but it controls only the `1/p` geometry. Sparse prime defects can carry a different Dirichlet abscissa and place a continuation obstruction arbitrarily close to one without violating any local PL-370 diagnostic.
 
-**Boundary.** Finite prime-harmonic distance from Liouville is necessary for a holomorphic zero at `1`, not sufficient for continuation across `1`, continuation to `Re(s)>1/2`, or RH. PL-370 controls the real/chordal prime distance and does not imply absolute convergence of the complex Euler-log difference. The finite-alphabet conclusion does not make the witness unique: finite or reciprocal-prime-summable perturbations of Liouville remain possible. Venturini's zero-free implication remains classical prior art.
+The next continuation mechanism must therefore control the exceptional-prime tail on every exponent scale needed to cross the strip, or invoke a genuinely global source-native structure that those sparse flips cannot preserve. Merely narrowing the source to a Liouville neighbourhood is real classification progress, but it is not analytic proof advantage by itself.
+
+**Boundary.** PL-371 is a negative control, not a natural-boundary theorem. It shows that finite reciprocal-prime distance plus the exact simple zero at `1` gives no uniform holomorphic half-plane beyond `1`. It does not rule out stronger continuation hypotheses derived from additional arithmetic structure, and it has no independent RH consequence.

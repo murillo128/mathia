@@ -1,39 +1,39 @@
-# MI-071 — Source-frame exceptional geometry has an explicit fixed gap above the generic Welch threshold
+# MI-071 — Source-frame exceptional geometry forces a low-weight dual escape
 
-**Evidence level:** exact synthesis from [MC-385](../../findings/MC-385-fixed-power-exceptional-moduli-cannot-feed-rank-linear-source-frame.md) through [MC-389](../../findings/MC-389-endpoint-affine-rank-forces-fixed-exception-gap.md), interpreted against the endpoint source-frame bounds of MC-374 and MC-381 and the analytic ceilings MC-382--MC-384.
+**Evidence level:** exact synthesis from [MC-385](../../findings/MC-385-fixed-power-exceptional-moduli-cannot-feed-rank-linear-source-frame.md) through [MC-390](../../findings/MC-390-high-dual-distance-forces-macroscopic-source-frame-exceptions.md), interpreted against the endpoint source-frame bounds of MC-374 and MC-381.
 
-The endpoint frame does not require uniform cancellation for every source character. Let `W` be a surviving endpoint-mode subspace, `H=|W|`, and let `G` be the Gram matrix of its normalized source rows. Exact endpoint constancy puts all rows in an `R`-dimensional space.
+The endpoint frame does not require uniform cancellation for every source character. Let `W` be a surviving endpoint-mode subspace, `H=|W|`, and let `g` be the exact normalized Cayley correlation kernel.
 
-MC-385 shows that an ambient exceptional count is meaningful only after pullback to the source Cayley frame. MC-386 identifies the sharp generic scale: rank at most `R` forces total off-diagonal squared correlation at least `H/R-1` per row on average, so a sufficient contradiction regime is `E=o(H/R)` exceptional differences together with ordinary correlations `epsilon=o(R^(-1/2))`. Abstract annihilator-subgroup Cayley frames attain the `H/R` exceptional scale.
+MC-385 shows that an ambient exceptional count is meaningful only after pullback to the source-difference family. MC-386 identifies the sharp generic scale: rank at most `R` forces Welch energy, so a sufficient contradiction regime is `o(H/R)` exceptional differences together with ordinary correlations `o(R^(-1/2))`. Abstract annihilator-subgroup Cayley frames attain that `H/R` scale.
 
-MC-387 proves that this sharp model is rigid near equality. A PSD Cayley kernel has a finite Bochner representation. Near-Welch equality makes the Fourier measure nearly uniform on an `R`-sized support, while concentration of physical `L^2` mass on the minimal `H/R` scale forces near-maximal additive energy. The dual support must then approach a subgroup coset and the physical exceptional set the corresponding annihilator subgroup.
-
-MC-388 performs the decisive second pullback. For the exact endpoint partition the Bochner support is the projection of the translated coordinate simplex `1+e_z`, with positive defect weights. If `d=dim W`, its affine dimension is exactly
-
-`d-dim(W cap <1>) >= d-1`.
-
-Hence a high-dimensional endpoint support cannot approach the low-dimensional coset required by the MC-387 near-extremizer. In the rank-linear branch, and in particular for `d>=3R/4`, the abstract annihilator sharpness mechanism is inadmissible.
-
-MC-389 turns this source mismatch into a direct quantitative theorem without needing an additive inverse theorem. If a finite set `A` in a binary vector space has size `r` and affine dimension `k`, then every nonzero translate overlap satisfies
-
-`|A cap (A+t)| <= 2(r-k)`.
-
-Since additive energy is the sum of squared translate overlaps,
-
-`E(A) <= r^2 + 2(r-k)(r^2-r)`.
-
-For the projected endpoint simplex, `k>=d-1>=3R/4-1` and `r<=R`, so for large `R`
-
-`E(S) <= (3/4) r^3`.
-
-Near-Welch endpoint weights inherit a fixed fourth-moment contraction from this explicit energy deficit. Consequently, if all good nonzero source modes satisfy `|g(K)|<=epsilon_R` with `epsilon_R=o(R^(-1/2))`, any exceptional set `B` obeys
+MC-387--MC-389 then use the actual endpoint source image. Near-Welch sharpness requires a low-dimensional coset-like Bochner support, whereas the exact endpoint support is the projection of the translated coordinate simplex with affine dimension essentially `dim W`. The resulting additive-energy deficit is explicit and yields a fixed arithmetic excess above the generic Welch floor:
 
 `|B| >= (1+1/4096) H/R`
 
-for all sufficiently large `R`. The constant is deliberately non-optimized, but the source-frame excess itself is now effective.
+under the assumed good-mode estimate.
 
-The reusable lesson is that source-conditioned exceptional incidence has four layers: ambient scale, near-extremal shape, source-image compatibility, and then a quantitative source gap. A generic inequality can be sharp in its ambient category while the exact arithmetic image forces every admissible near-extremizer a fixed distance away. When the source support also has an explicit affine model, the final gap can sometimes be obtained by a direct combinatorial inequality rather than an abstract stability modulus.
+MC-390 adds an orthogonal obstruction that changes what “good-mode estimate” can even mean. The exact endpoint kernel factors, up to a harmless global sign, as a weighted coordinate-sign sum
 
-The remaining bottleneck has therefore moved again. MC-389 is still conditional on the analytic good-mode estimate `epsilon_R=o(R^(-1/2))`, but the endpoint source gap no longer needs to be made effective. The useful next statements are the analytic estimate that puts nonexceptional source differences below the frame scale and, secondarily, an optimal endpoint-specific constant or stronger inequality extracted from the projected simplex.
+`Z(I)=sum_z d_z (-1)^(I_z)`.
 
-**Boundary.** The `1/4096` gap is endpoint-specific and deliberately non-optimal; it does not transfer to unrelated Mathia lines. MC-389 does not prove the required character cancellation, Möbius cancellation or RH. Low-dimensional endpoint subspaces remain outside the high-rank argument, and the fixed multiplicative improvement does not by itself determine the optimal endpoint exceptional scale.
+If the dual distance of `W` is at least five, uniform `I in W` makes the coordinate signs four-wise independent. Hence
+
+`E Z^2 = sigma^2 = sum_z d_z^2 >= 1/R`
+
+and
+
+`E Z^4 <= 3 sigma^4`.
+
+Paley--Zygmund then forces at least `1/12` of all source differences to satisfy
+
+`|g(I)| >= sqrt(sigma^2/2) >= 1/sqrt(2R)`.
+
+So high dual distance is not a desirable pseudorandom regime for the endpoint problem. It makes the desired `o(R^(-1/2))` correlation statement outside `o(H/R)` exceptions impossible by producing `Omega(H)` frame-scale correlations.
+
+The necessary escape is exact and finite: `W^perp` must contain a nonzero word of weight at most four. In the physical construction, `W^perp` is generated by the incidence columns of the large source primes removed in MC-381. Therefore a surviving route must exploit a binary combination of those columns supported on at most four endpoint generators.
+
+This sharpens the reusable source-pullback lesson. **Ambient extremizer exclusion and source pseudorandomness are different tests.** The endpoint source image can be too high-dimensional to realize the abstract Welch extremizer while simultaneously being too high-dual-distance to permit small correlations. The viable region lies between those failures and is characterized by explicit low-weight source-incidence relations.
+
+The next useful question is not a generic improvement of the Welch bound or a generic character estimate. It is to classify the weight-2, weight-3 and weight-4 words in the actual incidence span and determine whether their arithmetic structure can carry the signed cancellation demanded by the frame. The existence of one such word is only necessary; it does not itself imply that the exceptional set falls to the required scale.
+
+**Boundary.** The `1/4096` gap and the `1/12` anti-concentration bound are endpoint-specific. MC-390 gives a necessary low-dual-distance condition, not a sufficient good-mode theorem. It does not estimate `M(x)`, prove Möbius cancellation, or imply RH.

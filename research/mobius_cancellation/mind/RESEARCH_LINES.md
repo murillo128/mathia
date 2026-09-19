@@ -2,48 +2,38 @@
 
 This file holds the current mathematical questions suggested by the durable Möbius-cancellation intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Convert the explicit endpoint source-frame gap into analytic cancellation
+## Classify the low-weight source-incidence relations required by the endpoint frame
 
 **Linked intuitions:** `MI-013-bost-connes-regularity-needs-an-intermediate-transverse-category` through `MI-071-exceptional-sets-must-be-measured-on-the-source-difference-frame`.
 
-MC-366--MC-381 separate exact-real source leakage, finite-resolution quotienting, shell stability and the geometry of a hypothetical exact endpoint. After removing avoidable combinatorial losses, the current common-source obstruction is already linear in rank until an analytic ceiling intervenes:
+MC-366--MC-384 progressively separate exact source leakage, finite-resolution quotienting, package conductor, theorem admission and analytic saving. The common-source obstruction is already linear in rank until an analytic ceiling intervenes, and stronger-looking character estimates can simply repay their gain through modulus depth, family breadth or theorem-admission cost.
 
-`log P/log y >= c min{R, log log y}`.
+MC-385--MC-389 then identify the correct exceptional geometry. Ambient exceptional counts must be pulled back to the source-difference frame. MC-386 gives the sharp generic Welch scale `H/R`; MC-387 classifies near-extremizers; MC-388 shows that the exact endpoint Bochner support is a high-dimensional projected simplex rather than the required low-dimensional coset; and MC-389 converts that mismatch into an explicit fixed source gap. In the high-rank branch, if ordinary good modes satisfy `epsilon_R=o(R^(-1/2))`, every exceptional set satisfies
 
-MC-382--MC-384 show why stronger-looking character estimates need not move that horizon: q-van der Corput can pay an exponential depth tax, exponential family breadth cannot defeat a fixed positive power of one full modulus, and Chang's factorization-sensitive theorem has excellent terminal saving only after an admission condition that already forces a very large source modulus.
+`|B| >= (1+1/4096) H/R`
 
-MC-385 adds the source-family exceptional-geometry gate: ambient exceptional-set counts must be measured on the structured source-difference family actually used by the endpoint frame. MC-386 sharpens that gate to the natural quadratic threshold. If `W` is a surviving endpoint subspace, `H=|W|`, and normalized rows have rank at most `R`, Welch energy forces
+for all sufficiently large `R`.
 
-`H/R-1 <= E+(H-1-E)epsilon^2`.
+MC-390 changes the frontier more sharply. Write the exact endpoint kernel as a weighted coordinate-sign sum on the physical subspace `W`. If the dual code `W^perp` has minimum nonzero weight at least five, the coordinate signs are four-wise independent. Their exact second and fourth moments plus Paley--Zygmund force at least `H/12` modes to have correlation at least `1/sqrt(2R)`. Thus the desired `o(R^(-1/2))` good-mode theorem outside `o(H/R)` exceptions is **impossible** in the high-dual-distance regime.
 
-Thus good modes only need `epsilon=o(R^(-1/2))`, while the generic exceptional budget is `E=o(H/R)`. An annihilator-subgroup Cayley frame attains the `H/R` scale, so abstract PSD/rank geometry cannot improve it.
+A successful endpoint route must therefore enter the opposite structural class:
 
-MC-387 classifies the near-extremizers of that abstract bound. Near-Welch energy together with physical concentration on the minimal `H/R` scale forces the dual Bochner support close to a subgroup coset and the physical exceptional set close to the corresponding annihilator subgroup.
+`d^perp(W) <= 4`.
 
-MC-388 pulls that extremizer class through the **actual endpoint source map**. The endpoint Bochner measure is the push-forward of defect weights on the translated coordinate simplex `1+e_z`, whose projected support has affine dimension at least `d-1` when `d=dim W`. In the rank-linear branch this excludes the low-dimensional coset support required by the generic near-extremizer.
+For the actual source subspace from MC-381, this means that some binary combination of the large-source incidence columns is supported on at most four endpoint generators. Low dual distance is only a necessary escape, not a sufficient cancellation theorem. The immediate structural target is to classify the weight-2, weight-3 and weight-4 words in that source-incidence span and determine whether their arithmetic provenance can support the signed cancellation required by the endpoint frame.
 
-MC-389 now makes the resulting gap elementary and explicit. For a finite set `A` in a binary vector space with `r=|A|` and affine dimension `k`, every nonzero translate overlap satisfies
+The analytic question should now be conditioned on that classification. Generic pseudorandomness of the source columns points in the wrong direction: sufficiently high dual distance creates positive-density frame-scale correlations. Any future character-sum or source-frame estimate must retain and exploit the low-weight parity structure rather than average it away.
 
-`|A cap (A+t)| <= 2(r-k)`.
+## Keep source incidence, conductor, exceptional geometry and code structure distinct
 
-Summing these overlaps gives
+The current resource ledger separates exact-real conditioning, finite-resolution quotienting, source-incidence balance, package conductor, common-radical size, q-vdC factor depth, collective family size, theorem admission, terminal saving, source-frame energy, source-image affine rank, additive-energy deficit and now **dual distance of the physical source subspace**.
 
-`E(A) <= r^2+2(r-k)(r^2-r)`.
+MC-386--MC-390 show why these currencies cannot be collapsed. A generic rank bound gives the ambient `H/R` scale; source-image geometry improves that threshold by a fixed factor; but high coding-theoretic pseudorandomness does not improve the analytic side. It forces four-wise independence of the coordinate signs and hence an `Omega(H)` population at the critical frame scale. The only surviving branch has explicit low-weight source-incidence parity relations.
 
-For the projected endpoint simplex in the high-rank branch `d>=3R/4`, this yields `E(S)<=3r^3/4` for large `R`. After the near-Welch weight reduction, if good nonzero modes satisfy `epsilon_R=o(R^(-1/2))`, every exceptional set obeys the explicit bound
-
-`|B| >= (1+1/4096) H/R`.
-
-The live frontier is no longer “prove that the endpoint avoids the annihilator extremizer” or “make the source gap effective.” The source-side threshold improvement is already explicit. The immediate bottleneck is now the analytic good-mode estimate at the `R^(-1/2)` frame scale; a secondary structural question is whether the projected-simplex geometry yields a larger optimal constant than the deliberately non-optimized `1/4096`.
-
-## Keep resolution, source incidence, conductor, theorem admission, exceptional geometry and terminal saving distinct
-
-The current resource ledger separates exact-real subset-sum conditioning, finite-resolution quotienting, source-incidence balance, package conductor, common-radical size, q-vdC factor depth, collective family size, global-modulus exponent, theorem-admission range, terminal saving exponent, ambient exceptional volume, bad-neighbor degree, source-frame correlation energy, near-extremizer shape, affine rank of the exact source support, additive-energy deficit and the resulting endpoint exceptional gap.
-
-These currencies are not interchangeable. MC-386--MC-389 give a particularly clean sequence: a generic frame lower bound is sharp abstractly; stability identifies the shape of abstract near-sharp examples; the arithmetic source image excludes that rigid class; and the exact affine dimension of the projected simplex then supplies a direct translate-overlap bound and an explicit fixed improvement over the ambient count threshold. Further generic Gram inequalities are unlikely to help unless they deliver the missing analytic `o(R^(-1/2))` good-mode control or exploit more source structure to improve the endpoint constant beyond `1/4096`.
+A proposed endpoint theorem should therefore state both the exceptional-set target and the relevant low-weight dual structure. Further generic Gram inequalities, abstract code-distance improvements or pseudorandom-source heuristics are not useful unless they interact with those concrete relations and produce the signed covariance needed downstream.
 
 ## Repair probabilistic comparators only after exact-stratum and algebraic-collapse gates
 
 Probabilistic proxies remain secondary until their conditioning is arithmetically consistent and their observables survive exact multiplicative simplification. A model that becomes degenerate after conditioning on an exact arithmetic stratum, or whose auxiliary statistic collapses algebraically to `M(x)`, has not created an independent cancellation mechanism.
 
-The endpoint results add the same control at the theorem interface. A plausible comparator must not hide the exact source architecture inside an ambient modulus class or an abstract frame class whose admission, conductor or extremizer geometry is impossible after pullback to the source. MC-389 strengthens the rule: source admissibility can alter not only the extremizer's shape but the **numerical threshold itself**, and in the present high-rank endpoint branch that improvement can be quantified explicitly before the analytic cancellation theorem is supplied.
+The endpoint results add the same control at the theorem interface. A plausible comparator must preserve the exact source architecture rather than replacing it by an ambient modulus, frame or code class whose extremizers or typical behavior are impossible after source pullback. MC-390 makes the warning especially concrete: treating the source-incidence span as a generic high-dual-distance code would certify the **opposite** of the desired frame cancellation.

@@ -12,36 +12,38 @@ VIS-282--VIS-293 separate the isolated coefficient profile, Wang's complete pair
 
 The earlier `sqrt(log T)` and related lower-source thresholds were proof-packaging artifacts rather than arithmetic transitions.
 
-## Resolve exceptional finite-height coherence after Bohr/Haar identification
+## Replace hard-tail finite-window transfer by energy-sensitive infinite-spectrum control
 
 **Linked intuition:** `MI-040-wang-pointwise-upper-ceiling-is-a-localization-coherence-budget`.
 
-VIS-299--VIS-301 show that Wang's displayed localization ceiling is not structural. Decomposition isolates one inside--outside coherence term, and the unconditional Vinogradov--Korobov zero-free region suppresses it far enough that the first generic `H`-scale obstruction moves into the interior Montgomery--Vaughan mean-value estimate.
+VIS-299--VIS-304 progressively move the first generic upper error wall from localization leakage to the coefficient-specific prime-power spacing bound `x log log x=o(H)`. VIS-305--VIS-308 show that this absolute scale is not itself a signed arithmetic obstruction: density/parity controls, exact support with randomized phases, and completely multiplicative same-base harmonic controls all cancel well below `H` at the candidate boundary.
 
-VIS-302 specializes that estimate to Wang's exact coefficients and saves one logarithm. VIS-303 uses the actual support to remove the power-of-two/odd-shift sector. VIS-304 applies the weighted Hilbert inequality on the actual prime-power logarithmic frequencies and obtains an absolute spacing cost `O(x log log x)`, moving the generic pointwise range to `x log log x=o(H)`.
+VIS-309 then compares those controls to the actual common-time orbit. For fixed `x,H`, the deterministic phases `p^(-it)` have the same long-time quadratic mean as Haar completely multiplicative phases. The Bohr mean square is `O(x log^3(3x))`, so generic deterministic alignment across primes is not the missing mechanism.
 
-VIS-305 shows that this absolute reciprocal-spacing scale is not arithmetic by itself: a parity- and density-matched Bernoulli support already has expected cost `Theta(x log log x)`. VIS-306 then evaluates the signed endpoint form on that control and obtains expectation `O(x)`, variance `O(x log^3 x)` and hence `o_p(H)` at `H~x log log x`.
+VIS-310 quantifies the crudest finite-window transfer. Hard truncating the infinite prime-power series and compressing every retained ratio frequency to one global minimum gap yields a sufficient averaging horizon only at
 
-VIS-307 removes support-geometry ambiguity. It keeps every actual prime power, every prime-power spacing and every Wang coefficient magnitude, but assigns an independent Steinhaus phase to each support point. The signed quadratic remainder still has second moment `O(x log^3 x)` and is `o_p(H)` at the boundary. Exact support, spacing and magnitudes are therefore insufficient when deterministic relative phases are destroyed.
+`V >> x^5 log^3 x/(log log x)^2`
 
-VIS-308 strengthens the matched control by preserving complete multiplicativity of the phases. One Steinhaus variable is assigned per base prime and `f(p^k)=f(p)^k`, so every harmonic phase relation inside the family `p,p^2,p^3,...` survives exactly. The only additional torus-character collisions are same-prime equal-exponent-difference fibers, and Wang's taper makes their total contribution negligible. The same `O(x log^3 x)` second-moment bound survives.
+when `H~x log log x`. That quintic scale is a proof-representation cost, not a lower bound on true dephasing.
 
-VIS-309 then compares that Haar model to the **actual deterministic common-time orbit**. For fixed `x,H`, time averaging `p^{-it}` over arbitrarily long intervals has the same quadratic mean as Haar averaging the completely multiplicative prime phases, because the surviving logarithmic-frequency relations are exactly the multiplicative character collisions. The Bohr mean square remains `O(x log^3(3x))`; at the critical `H~x log log x` scale, large signed remainders therefore occupy vanishing long-time density in the corresponding calibration.
+VIS-311 removes most of the worst-gap loss. Keeping the local spacing `delta_lambda` of each grouped rational-ratio frequency and its coefficient energy gives
 
-VIS-310 quantifies the most naive attempt to convert that Bohr statement into a finite-window theorem. Hard truncating the prime-power series at `Y`, controlling the discarded tail in uniform norm, and applying Montgomery--Vaughan only through the **global minimum gap** of retained rational-ratio frequencies gives
+`sum_lambda m_lambda |B_lambda|^2 << x^2 log^3(3x)`,
 
-`V^(-1) integral |R_(x,H)(T)|^2 dT << x L^3 + H^(4/3)x^(7/3)L V^(-1/3)`
+where `m_lambda` is the reduced rational height. The weighted Montgomery--Vaughan inequality then lowers the sufficient finite-window horizon to
 
-after optimizing `Y`, with `L=log(3x)`. At `H~x log log x`, this particular route reaches `o(H^2)` only for the sufficient scale
+`V >> x^3 log^3 x/(log log x)^2`.
 
-`V >> x^5 L^3/(log log x)^2`.
+Two powers of `x` were therefore artifacts of global-gap compression. The remaining cubic loss comes from the **uniform hard-tail estimate**, which forces the optimized cutoff far beyond the natural support before the full remainder is certified small.
 
-That quintic horizon is not a true dephasing lower bound. It measures the information thrown away by **uniform tail control plus worst-gap compression**. The local scale `V~H` remains open to a coefficient-weighted/nontruncated argument.
+The live finite-height problem is now narrower. A useful next theorem should keep the infinite ratio spectrum in an energy norm—through a smooth/dyadic decomposition, direct nontruncated mean square, or another coefficient-sensitive tail estimate—and ask whether the observation window can approach the natural `V~H~x log log x` scale. The opposite useful outcome would be an explicit sparse family of near-resonant ratios and heights carrying enough Wang coefficient mass to force an `H`-scale remainder despite the small Bohr energy.
 
-The live arithmetic object is consequently narrower than “cross-prime deterministic alignment.” Generic common-time alignment is already Haar-typical in the infinite-time quadratic mean, while the first straightforward finite-time transfer is far too lossy. A genuine pointwise mechanism must live in **exceptional finite heights, coefficient-weighted finite-window dephasing of the growing ratio spectrum, a joint moving regime `x=x(T)`, or another endpoint interaction invisible to both the quadratic Bohr average and the hard-cutoff worst-gap estimate**. The next useful control should preserve the nonuniform ratio-spectrum energy rather than collapsing it to one global gap.
+The accepted clue `CLUE-wang-fixed-source-packet-localization` already records this destination. Another hard-cutoff spacing estimate that leaves the uniform tail untouched is no longer the most informative move.
 
 ## Recombine exact deterministic structure and decompose every newly exposed proof wall before interpreting it
 
-The current ledger separates packet total variation, support width, moving-test seminorm, source exponent, localization leakage, cross-coherence, coefficient-specific mean-value weight, ambient versus support-sensitive frequency spacing, matched random spacing controls, signed matched-control cancellation, exact prime-power support, independent versus completely multiplicative random phases, common-time torus motion, Bohr/Haar equivalence, hard versus energy-sensitive tail treatment, global minimum ratio gap versus coefficient-weighted local spacing, finite-height discrepancy, actual endpoint phase, deterministic gamma normalization and analytic domain of the source transform.
+The current ledger separates packet variation, source exponent, localization leakage, coefficient majorants, support-sensitive spacing, random versus completely multiplicative phases, the actual prime-log time orbit, Bohr/Haar equivalence, global versus local ratio spacing, hard versus energy-sensitive tail treatment, finite-window length, moving-frequency limits and the analytic domain of the source transform.
 
-VIS-294--VIS-310 give a repeated control pattern. Exact deterministic pieces can be split too early; generic coefficient majorants can lose logarithms; sparse-frequency geometry can improve ambient bounds; matched support models can show an absolute norm is generic; exact support can still cancel after phase randomization; all same-base harmonic relations can be preserved without restoring the boundary; the actual deterministic phase orbit has the same long-time quadratic mean as that Haar control; and the direct hard-truncation/global-gap route can still lose powers large enough to be useless locally. A structural transition is credible only after the surviving **finite-height/moving-frequency coherence mechanism** itself defeats a control that preserves the weighted frequency geometry at the destination scale.
+VIS-294--VIS-311 give a repeated control pattern. Exact deterministic pieces can be split too early; generic majorants can lose logarithms; matched support models can show an absolute norm is generic; exact support can still cancel after phase randomization; same-base harmonic relations can be preserved without restoring the boundary; the true deterministic orbit can have the same long-time quadratic mean as Haar; and even a finite-window proof can manufacture polynomial horizons by compressing weighted spectrum or paying the tail in uniform norm.
+
+A structural transition is credible only after the surviving **finite-height/moving-frequency coherence mechanism** defeats a control that preserves the coefficient distribution, local ratio geometry, infinite tail and destination quantifier at the same scale.
