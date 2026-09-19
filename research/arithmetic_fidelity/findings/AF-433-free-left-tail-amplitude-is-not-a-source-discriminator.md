@@ -6,265 +6,196 @@
 
 ## Claim
 
-In the AF-416--AF-432 left-tail hierarchy, the amplitude
-
-\[
-a=\frac{c^2}{4\pi^2}
-\tag{1}
-\]
-
-is not presently selected by the underlying analytic source. The source function and left-tail germ are fixed, but AF-416 evaluates them on the whole reciprocal-order family
+In the AF-416--AF-432 left-tail hierarchy, the source function is fixed but the reciprocal-order probe family
 
 \[
 x_n(c)=\frac cn,
 \qquad c>0,
-\tag{2}
+\tag{1}
 \]
 
-and AF-417 retains the same arbitrary positive parameter under derivative shifts. The map
-
-\[
-\phi:(0,\infty)\to(0,\infty),
-\qquad
-\phi(c)=\frac{c^2}{4\pi^2},
-\tag{3}
-\]
-
-is a smooth bijection with smooth inverse `c=2\pi\sqrt a`. Therefore every positive amplitude appearing in AF-421--AF-432 can be realized by tuning the external diagonal constant `c`, without changing the intrinsic source function.
-
-Consequently, for any subset `E\subset(0,\infty)`:
-
-\[
-E\neq\varnothing
-\iff
-\exists c>0:\phi(c)\in E,
-\tag{4}
-\]
-
-and, if `E` is proper,
-
-\[
-(0,\infty)\setminus E\neq\varnothing
-\iff
-\exists c>0:\phi(c)\notin E.
-\tag{5}
-\]
-
-Thus membership of `a` in a critical or supercritical shrinking-target exceptional set is **not an intrinsic source-fidelity statement** unless an independent source-side rule first selects `c` (equivalently `a`) before the target condition is inspected.
-
-For AF-432 in particular, let `\mathcal E_q` be its first packet-corrected fine-hit set for a fixed rational density `q>2`, and define the corresponding diagonal-parameter set
-
-\[
-\mathcal C_q:=\phi^{-1}(\mathcal E_q).
-\tag{6}
-\]
-
-Because `\phi` is a homeomorphism and is bi-Lipschitz on every compact subinterval of `(0,\infty)`, AF-432 immediately implies that `\mathcal C_q` is a dense `G_\delta`, has Lebesgue measure zero, and satisfies
-
-\[
-\dim_H \mathcal C_q
-=
-\dim_H \mathcal E_q
-\le 1-\frac1q.
-\tag{7}
-\]
-
-Hence the residual/null dichotomy survives unchanged when expressed in the original diagonal constant. It classifies exceptional **probe paths** through the fixed source, not distinguished source amplitudes.
-
-There is, however, a source-intrinsic scale hidden in `(1)`. For
+retains a free positive parameter. Writing
 
 \[
 h(x)=-\log\!\left(\frac{1-e^{-x}}x\right),
+\qquad
+R:=R(h)=2\pi,
+\tag{2}
 \]
 
-the Taylor germ at the origin has exact analyticity radius
+the downstream amplitude is
 
 \[
-\boxed{R(h)=2\pi.}
-\tag{8}
+\boxed{a=\left(\frac cR\right)^2.}
+\tag{3}
 \]
 
-Therefore the downstream amplitude is exactly
+Thus `c\mapsto a` is a smooth bijection from `(0,\infty)` to `(0,\infty)`. The critical and supercritical exceptional sets of AF-421--AF-432 therefore classify exceptional **probe paths through the fixed source** unless an independent source-side rule first restricts `c`.
 
-\[
-\boxed{a=\left(\frac c{R(h)}\right)^2.}
-\tag{9}
-\]
-
-The source thus canonically supplies the **unit in which the diagonal speed is measured**. It does not, from the radius data alone, select one dimensionless speed `c/R(h)`. Under the rescaled source family `h_\lambda(y)=h(y/\lambda)`, one has `R(h_\lambda)=\lambda R(h)`, and every rule
-
-\[
-c_\kappa(h)=\kappa R(h),\qquad \kappa>0,
-\tag{10}
-\]
-
-is target-independent and similarity-equivariant. Hence analyticity radius plus scale covariance leaves a full dimensionless continuum `\kappa`; it removes a scale gauge but does not by itself close the amplitude-provenance gate.
-
-In particular, the exact square values satisfy
-
-\[
-a=m^2
-\iff
-c=mR(h).
-\tag{11}
-\]
-
-Their factor `R(h)=2\pi` is genuinely source-side, while the integer label `m` is singled out downstream by adjacent-saddle collisions in AF-421--AF-426. The special choice `c=R(h)` (`a=1`) is therefore a natural source-normalized candidate, but radius and similarity-equivariance alone do not force the normalized value `\kappa=1`; an additional source-side characterization would still be required to promote it from normalization to discriminator.
-
-## 1. The diagonal constant remains free in the canonical source chain
-
-AF-416 fixes
-
-\[
-f(t)=-\log(1-e^{-e^t})
-\]
-
-and its left-tail analytic decomposition, then proves its full-diagonal asymptotic **uniformly for every compact positive interval of `c`** at `x=c/n`. Nothing in that construction chooses one `c` over another.
-
-AF-417 keeps exactly the same family `x=c/n`, with arbitrary `c>0`, while allowing derivative depths `s_n/n\to\sigma`. Its fixed-excess limit depends on the combination
-
-\[
-e^\sigma\frac{c^2}{4\pi^2}.
-\]
-
-Introducing `a=c^2/(4\pi^2)` is therefore a useful asymptotic coordinate, but it does not add source information. Equations `(1)` and `(3)` show that the change of variables is lossless and onto.
-
-Later critical and supercritical analyses constrain derivative depth, packet index, saddle location, or integer realizability. None of AF-421--AF-432 supplies an additional rule that reduces the admissible continuum `c>0` to a source-determined point.
-
-## 2. The nearest source singularity fixes the unit but not the normalized speed
-
-Set
+The source nevertheless contains more structure than a single radius. If
 
 \[
 g(x)=\frac{1-e^{-x}}x,
-\qquad g(0):=1.
+\qquad g(0)=1,
+\tag{4}
 \]
 
-Then `g` is entire and its nonzero zeros are exactly
+then its nonzero zeros are exactly
 
 \[
-2\pi i k,\qquad k\in\mathbb Z\setminus\{0\}.
-\tag{12}
+2\pi i k,\qquad k\in\mathbb Z\setminus\{0\},
+\tag{5}
 \]
 
-They are simple because the numerator derivative `e^{-x}` equals one there. The germ `h=-\log g` is therefore holomorphic throughout `|x|<2\pi`. It cannot extend holomorphically across `x=\pm2\pi i`, because
+and they are simple. Hence the germ `h=-\log g` has logarithmic singularities there and
 
 \[
 h'(x)=-\frac{g'(x)}{g(x)}
+\tag{6}
 \]
 
-has simple poles at those zeros. This proves `(8)` exactly. The classical Bernoulli generating function records the same radius: DLMF §24.2 gives the expansion of `x/(e^x-1)` for `|x|<2\pi`.
-
-This source radius is already visible algebraically in AF-416. Its exact coefficient formula is
+has simple poles at the same points. The source therefore supplies the canonical ordered singularity-shell radii
 
 \[
-c_{2k}=(-1)^k\frac{\zeta(2k)}{kR(h)^{2k}},
+\boxed{r_m=2\pi m=mR,\qquad m=1,2,\ldots.}
+\tag{7}
+\]
+
+This corrects the narrower provenance statement that the integer `m` in the square transitions is introduced only downstream. AF-421 proves that adjacent full-column saddle rates collide exactly at
+
+\[
+a=m^2,
+\tag{8}
+\]
+
+and `(3)` plus `(7)` gives the exact equivalence
+
+\[
+\boxed{a=m^2\iff c=mR=r_m.}
+\tag{9}
+\]
+
+So every square transition aligns the `m`-th target packet collision with the modulus of the `m`-th source singularity shell. The integer index has independent source-side and target-side realizations.
+
+This does **not** yet produce a unique arithmetic/source discriminator. The source singularity data canonically reduces the continuum of especially distinguished probe scales to the countable ladder `{r_m}`, but it does not by itself select one shell index for the research question. The first shell `r_1=R` is intrinsically distinguished as the nearest singularity and therefore gives a genuinely source-defined candidate `c=R` (`a=1`); however, using that candidate as the unique probe still requires a stated admissibility/minimality principle explaining why nearest-singularity selection, rather than another source functional or shell, is the relevant notion of canonicity.
+
+For AF-432, if `\mathcal E_q` is the packet-corrected fine-hit amplitude set at fixed rational density `q>2`, then under
+
+\[
+\phi(c)=\left(\frac cR\right)^2
+\tag{10}
+\]
+
+the corresponding probe set `\mathcal C_q=\phi^{-1}(\mathcal E_q)` is again dense `G_\delta`, Lebesgue-null, and has the same Hausdorff dimension bound
+
+\[
+\dim_H\mathcal C_q=\dim_H\mathcal E_q\le 1-\frac1q.
+\tag{11}
+\]
+
+Thus the residual/null dichotomy remains a statement about probe paths until one first restricts the source-side probe rule. Equation `(9)` identifies a nontrivial intrinsic subfamily on which that restriction can now be tested.
+
+## 1. The diagonal parameter is free before source selection
+
+AF-416 proves its full-diagonal asymptotic locally uniformly for `x=c/n` with `c` in arbitrary compact positive intervals. AF-417 retains the same family under derivative shifts. Nothing in that construction requires `c` to lie on the singularity ladder `(7)`.
+
+Consequently, for any nonempty amplitude set `E\subset(0,\infty)`, some admissible probe parameter satisfies `\phi(c)\in E`; and when the complement is nonempty, another admissible parameter satisfies `\phi(c)\notin E`. Pointwise exceptional membership cannot by itself establish source fidelity.
+
+This obstruction concerns provenance, not the validity of the target condition. AF-426--AF-432 impose genuine arithmetic/asymptotic restrictions on packet balance. Those restrictions become source statements only after the admissible probe family has been independently narrowed.
+
+## 2. The source fixes both a unit and a singularity ladder
+
+The zero set in `(5)` follows directly from
+
+\[
+1-e^{-x}=0\iff e^{-x}=1\iff x=2\pi i k.
+\tag{12}
+\]
+
+At every nonzero such point the numerator derivative is `e^{-x}=1`, so the zero is simple. The Taylor germ of `h` is therefore holomorphic on `|x|<2\pi` and cannot extend holomorphically through the nearest zeros. Hence
+
+\[
+R(h)=2\pi.
 \tag{13}
 \]
 
-so every partition displacement by total excess `2d` carries the dimensionless factor
+The same scale is classical in the Bernoulli generating function
 
 \[
-\left(\frac{x}{R(h)}\right)^{2d}.
+\frac{x}{e^x-1}=\sum_{n\ge0}B_n\frac{x^n}{n!},
+\qquad |x|<2\pi.
 \tag{14}
 \]
 
-On `x=c/n`, the resummed Cauchy limit can therefore be written without a special numerical constant as
+AF-416's exact even-coefficient formula may accordingly be written
 
 \[
-\exp\!\left(-\left(\frac c{R(h)}\right)^2\right).
+c_{2k}=(-1)^k\frac{\zeta(2k)}{kR^{2k}},
 \tag{15}
 \]
 
-Thus `2\pi` in the AF-416--AF-432 amplitude is not an arbitrary target normalization: it is the nearest-singularity scale of the source germ.
+so the Cauchy resummation depends on the normalized speed `c/R`, yielding `(3)`.
 
-That observation does **not** yet select a point on the amplitude line. To isolate what scale naturality can prove, consider the similarity orbit
+The earlier radius-only naturality audit remains valid. Under the rescaled source family `h_\lambda(y)=h(y/\lambda)`, the radius becomes `\lambda R`; any selector using only the scalar radius and required merely to be similarity-equivariant has the form
 
 \[
-h_\lambda(y):=h(y/\lambda),\qquad \lambda>0.
+S(R)=\kappa R,
+\qquad \kappa>0.
 \tag{16}
 \]
 
-Its radius is `R(h_\lambda)=\lambda R(h)`. A scalar selector `S` that depends only on the radius and is equivariant under these similarities must obey
+Radius plus homogeneity alone therefore does not force `\kappa=1`.
+
+But the **full singularity set** sharpens the provenance picture. It canonically carries the integer shell order `(7)`. A rule `c=r_m` is target-independent once `m` is specified, while `c=r_1=R` is the unique smallest positive singularity modulus. This is stronger than saying that `2\pi` is merely a convenient numerical normalization, though it still does not prove that the research problem should privilege one shell-selection rule.
+
+## 3. Square packet transitions have dual provenance
+
+AF-421 derives the target-side saddle hierarchy
 
 \[
-S(\lambda R)=\lambda S(R).
+L_r(b)=\frac{b^r}{(r!)^2},
+\qquad
+\frac{L_{r+1}(b)}{L_r(b)}=\frac{b}{(r+1)^2}.
 \tag{17}
 \]
 
-Putting `R=1` after rescaling shows that every such selector has the form
+Two adjacent packets tie precisely when `b=m^2`. On the exact critical path this becomes the square-amplitude fiber `a=m^2` studied by AF-422--AF-426.
+
+Combining this target statement with the source singularity ladder yields `(9)`. The coincidence is exact: the same positive integer `m` labels both the source shell radius `r_m=mR` and the adjacent target-packet transition `a=m^2` after the source-normalized coordinate `a=(c/R)^2` is formed.
+
+No novelty is claimed for the singularity lattice or for the algebra in `(9)`. The durable correction is the provenance classification: square amplitudes are **not purely target-generated choices**. They form a canonical source-attached subfamily as well. What remains unresolved is whether the shell/packet index matching reflects a deeper transfer mechanism or is exhausted by the normalization `(3)` together with the elementary square saddle law `(17)`.
+
+AF-426 still supplies a decisive negative result on every exact square fiber: the integer derivative source cannot tune the two complete adjacent packets to cancellation. The present correction does not weaken that theorem. Instead it makes AF-426 more relevant to source fidelity, because its whole square family now has an intrinsic source-side interpretation through `(7)--(9)`.
+
+## 4. Exceptional-set pullback still does not choose a source shell
+
+For fixed rational `q>2`, AF-432 studies the packet-corrected target
 
 \[
-\boxed{S(R)=\kappa R}
+\operatorname{dist}\!\left(\widehat\tau_n(a),\mathbb Z\right)
+=o(R_n(a)/n^2)
 \tag{18}
 \]
 
-for one constant `\kappa>0`, and conversely every `\kappa` gives an equivariant selector. Hence the radius determines the physical unit but leaves the normalized coordinate
+and proves that the corresponding amplitude set `\mathcal E_q` is residual but metrically thin. Because `\phi` is a homeomorphism and is bi-Lipschitz on every compact subinterval of `(0,\infty)`, category, nullness, and Hausdorff dimension transfer to `\mathcal C_q`, giving `(11)`.
+
+The new shell interpretation does not change this genericity result. A source-side question can now be sharpened to the discrete family
 
 \[
-\kappa=\frac cR
+a_m=m^2,
+\qquad m\ge1,
 \tag{19}
 \]
 
-undetermined.
-
-This is the exact provenance distinction needed here. A rule may still select `\kappa` by using additional source structure, a variational principle, a source symmetry-breaking condition, or a separately justified normalization. But the statement "the source has nearest singularities at distance `2\pi`" alone cannot distinguish `c=2\pi` from `c=\kappa 2\pi` for another fixed `\kappa`.
-
-## 3. Pointwise exceptional membership is tunable without a source selector
-
-Suppose a downstream theorem defines a nontrivial target set `E` of amplitudes by some property `P(a)`. As long as the admissible source-side probe family remains `(2)`, the source can be evaluated along a path whose amplitude lies in `E` whenever `E` is nonempty, and along a path outside `E` whenever its complement is nonempty.
-
-This is not a statement that the target property is arbitrary. AF-426--AF-432 impose highly nontrivial arithmetic and asymptotic restrictions on which amplitudes satisfy their packet-balance conditions. The obstruction is instead one of **provenance**: those restrictions classify the pair `(source, chosen diagonal path)`, while the source function alone does not select the path.
-
-Accordingly, a pointwise theorem such as
-
-\[
-a_*\in\mathcal E_q
-\qquad\text{or}\qquad
-a_*\notin\mathcal E_q
-\]
-
-becomes a source-fidelity statement only after `a_*` has been independently derived from source data under an admissible normalization or symmetry rule. Choosing `a_*` because it has desirable saddle behavior reverses the required direction of explanation.
-
-After `(8)--(19)`, this gate can be stated more sharply: the source already supplies the scale `R(h)`, so what remains to be selected is the **dimensionless ratio** `\kappa=c/R(h)`. Merely rediscovering `2\pi` from Bernoulli coefficients or complex singularities does not solve that remaining selection problem.
-
-## 4. AF-432 pulls back exactly to the free diagonal family
-
-For fixed rational `q=u/v>2`, AF-432 studies
-
-\[
-\widehat\tau_n(a)
-=
-\tau_n(a)+a e^q R_n(a)/n^2
-\]
-
-and the infinitely-often target
-
-\[
-\operatorname{dist}(\widehat\tau_n(a),\mathbb Z)
-=o(R_n(a)/n^2).
-\tag{20}
-\]
-
-Its exceptional set is residual but metrically thin. Under `(3)`, `(20)` is simply a condition on `c` through `a=\phi(c)`. Homeomorphisms preserve dense `G_\delta` sets, while on each compact interval `\phi` and `\phi^{-1}` are Lipschitz. Covering `(0,\infty)` by compact intervals bounded away from zero transfers nullness and Hausdorff dimension in both directions, giving `(7)`.
-
-This makes the provenance issue explicit: the strongest current supercritical genericity result remains true after returning to the original free scaling parameter. No arithmetic identity has yet picked one point of that parameter line.
-
-## 5. Critical square collisions mix a source scale with a target index
-
-AF-421 identifies the transition `b=m^2` because two adjacent full-column saddle rates agree there. AF-422--AF-426 then analyze the finer packet balance at that collision. At exact square amplitude `a=m^2`, AF-426 proves an irreducible source-packet gap.
-
-Equation `(11)` now separates the provenance of `c=2\pi m`: the factor `2\pi=R(h)` is intrinsic to the source germ, whereas the integer `m` comes from the downstream saddle-packet collision. Rewriting a target collision in source units therefore reveals a genuine source scale, but it does not make the target packet label source-forced.
-
-The case `m=1` deserves the narrower statement. It coincides with the source-normalized choice `c=R(h)`, so it can no longer be dismissed as numerically unrelated to source structure. However, radius data alone still leave every `c=\kappa R(h)` scale-equivariant; one must independently justify why the normalized speed should be `\kappa=1` before AF-426's `m=1` obstruction can be interpreted as the fate of a distinguished source probe rather than one natural normalization among a continuum.
+or to the uniquely nearest-shell candidate `a_1=1`, but residuality or nullness of `\mathcal E_q` says nothing by itself about membership of those fixed source-attached points.
 
 ## Prior-art and novelty audit
 
-No novelty is claimed for the elementary diffeomorphism `(3)`, for transporting category/measure/dimension statements through a smooth change of coordinates, for the general fact that double-scaling asymptotics may contain externally varied parameters, or for the radius-of-convergence calculation in `(8)`. DLMF §24.2 records the classical Bernoulli generating function with convergence domain `|x|<2\pi`; the zero set of `(1-e^{-x})/x` gives the same boundary directly.
+No novelty is claimed for the Bernoulli generating function, its convergence radius, the zeros of `(1-e^{-x})/x`, logarithmic singularities at simple zeros, or transport of category/measure/dimension under smooth one-dimensional changes of variable.
 
-The similarity calculation `(16)--(18)` is elementary homogeneity, not a new invariant-theory result. Its role is to audit the exact source/normalization boundary: the nearest complex singularity explains why `2\pi` is the intrinsic scale in AF-416, while scale covariance alone cannot choose the remaining dimensionless probe speed.
+NIST DLMF §24.2 gives the classical Bernoulli generating function `x/(e^x-1)` with `|x|<2\pi`. The singularity locations `(5)` are elementary consequences of the exponential equation and directly explain that radius. The similarity calculation `(16)` is elementary homogeneity.
 
-The durable Mathia result is therefore narrower: it audits the exact provenance chain AF-416--AF-432 and shows that the current amplitude variable is still a free probe coordinate **after quotienting out its source-determined scale**. The existing residual/null exceptional-set theorems cannot by themselves supply the rational-prime or source discriminator sought by Arithmetic Fidelity.
+The Mathia-specific result is the audited provenance chain across AF-416--AF-432: the source fixes the normalization scale and in fact a complete singularity-shell ladder; the target independently has square packet collisions; under the derived amplitude coordinate the two integer ladders coincide exactly. This corrects the previous claim that the square index was solely target-side while preserving the broader obstruction that no unique probe is forced by the current chain.
 
 Source:
 
@@ -272,18 +203,17 @@ Source:
 
 ## Boundaries and falsification checks
 
-- The result does **not** invalidate AF-416--AF-432. Their analytic, asymptotic, metric, and category statements remain unchanged.
-- It does not say that no intrinsic source-selection rule for `c` exists. It says that none has been established in the current canonical chain, and now isolates the unresolved part as selection of the dimensionless ratio `\kappa=c/R(h)`.
-- It does not prove that `c=R(h)` is an inadmissible selector. A separately justified rule such as a variational principle or source theorem may genuinely force `\kappa=1`; if so, that selected amplitude must be tested against the existing critical/supercritical gates.
-- Conversely, merely observing that `R(h)=2\pi`, or declaring "one analyticity radius" as a normalization, does not by itself prove uniqueness: every `\kappa R(h)` is similarity-equivariant.
-- The rescaling family `(16)` is used only to audit scale naturality. It does not assert that all rescaled germs represent the identical physical/arithmetic source under every richer structure.
-- Square amplitudes mix provenances: `R(h)` is source-derived, while the integer `m` in `c=mR(h)` is introduced by the downstream saddle collision unless another source theorem independently selects it.
-- The result does not rule out selectors built from dimensionless invariants of the **full normalized germ** rather than its radius alone. Such a proposal must state its admissible source family and naturality/minimality criterion so that canonicity is falsifiable rather than a choice of formula.
-- The pullback statement `(7)` uses local bi-Lipschitz equivalence on compact subsets of `(0,\infty)`; no claim is made about adding the endpoints `0` or `\infty`.
-- No rational-prime discriminator, zeta-zero recovery, or implication for RH is established.
+- The result does **not** invalidate AF-416--AF-432; their analytic, asymptotic, metric, and category statements are unchanged.
+- The admissible diagonal family remains all `c>0`. The singularity ladder is a distinguished source-attached subfamily, not an automatic restriction of AF-416.
+- `c=R` is source-defined as the nearest singularity modulus, but declaring that this is the uniquely relevant probe still requires an admissibility or minimality principle. Similarity-equivariance alone is insufficient.
+- Likewise, `c=mR` is source-defined for every `m>=1`; choosing an `m` because its downstream packet behavior is desirable would still reverse the provenance direction.
+- The exact index coincidence in `(9)` does not itself prove a causal source-to-packet mechanism. A decisive strengthening would derive the packet transition from the singularity-shell structure without merely substituting `a=(c/R)^2` into the already-known square law.
+- AF-426's obstruction applies to the complete exact-square family and remains valid after the provenance correction.
+- The pullback statement `(11)` uses local bi-Lipschitz equivalence on compact subsets of `(0,\infty)`; no endpoint claim at `0` or `\infty` is made.
+- No rational-prime discriminator, zeta-zero recovery theorem, or implication for RH is established.
 
 ## Consequence for the research line
 
-The source-selection gate now splits cleanly into two parts. The **scale gate is solved** for the current analytic germ: its nearest singularities give the exact unit `R(h)=2\pi`, and the AF-416 amplitude is simply the squared normalized speed `a=(c/R(h))^2`. The remaining **ratio gate** is the substantive one: derive a source-intrinsic, normalization-stable rule selecting `\kappa=c/R(h)` without consulting the downstream saddle cancellation or shrinking-target outcome.
+The source-selection gate is now narrower than previously stated. The source does not merely supply the unit `R=2\pi`; it supplies the ordered singularity scales `r_m=mR`, and these map exactly to the square transition amplitudes `a=m^2`. Therefore the square hierarchy should no longer be dismissed as having purely downstream provenance.
 
-Only after such a ratio selector is proved does pointwise membership in the AF-428 critical exceptional set or AF-432 supercritical fine-hit set become mathematically capable of distinguishing the source. Exact square amplitudes do not bypass this gate: they correspond to `\kappa=m`, where `m` is presently a target packet index. If no additional source structure selects `\kappa`, further pointwise analysis of arbitrarily chosen amplitudes would refine the geometry of the probe family but would not advance arithmetic fidelity.
+The next source-fidelity test is twofold. First, determine whether nearest-shell selection `c=R` or another shell rule is forced by a principled admissibility/minimality criterion rather than chosen for its target behavior. Second, determine whether the exact shell/packet index matching has a derivable transfer mechanism beyond the coordinate identity `(9)`. Until one of those gates is passed, the continuum of admissible probes remains too large for exceptional-set membership alone to identify the source.
