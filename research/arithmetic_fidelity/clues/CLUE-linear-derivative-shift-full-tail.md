@@ -11,6 +11,7 @@ based_on:
   - research/arithmetic_fidelity/findings/AF-420-critical-derivative-window-has-sharp-subthreshold-absolute-resummation-domain.md
   - research/arithmetic_fidelity/findings/AF-421-finite-critical-windows-reduce-to-full-column-saddle-hierarchy.md
   - research/arithmetic_fidelity/findings/AF-422-square-transition-detuning-controls-adjacent-packet-cancellation.md
+  - research/arithmetic_fidelity/findings/AF-423-adjacent-residual-packets-have-universal-inverse-n-drift.md
 ---
 
 # Linear derivative-shift full-tail resummation
@@ -87,7 +88,7 @@ L_r(b)=\frac{b^r}{(r!)^2}.
 
 Away from the square transition values `b=1,4,9,...`, one packet with `r=floor(sqrt(b))` dominates. At `b=m^2`, only the adjacent packets `r=m-1,m` tie on the exponential scale; even `n` reinforces them, while odd `n` can cancel only through their exact amplitude ratio `F_{n,m}`.
 
-AF-422 now resolves the next scale of that ratio. Writing `s_n=2n+d_n`, define
+AF-422 resolves the next rectangle-amplitude scale. Writing `s_n=2n+d_n`, define
 
 \[
 \Xi_{n,m}
@@ -119,44 +120,64 @@ Therefore every even square-transition subsequence is closed, and every odd subs
 
 For `m>=2`, all non-tuned square-transition regimes diverge exponentially. On the natural exact-square path `a=m^2, s_n=2n`, one has `F_{n,m}~K_m n`, so the `m`-column packet dominates for every `m`; `m=1` recovers AF-421's explicit linear boundary result.
 
+AF-423 resolves the first complete-packet correction on that remaining interface. The residual packets satisfy
+
+\[
+\log\frac{G_{n,m}}{G_{n,m-1}}
+=
+\frac{2ae^2}{n}+o(n^{-1}),
+\]
+
+so the complete adjacent-packet ratio obeys
+
+\[
+\log\!\left(
+F_{n,m}\frac{G_{n,m}}{G_{n,m-1}}
+\right)
+=
+\log F_{n,m}+\frac{2ae^2}{n}+o(n^{-1}).
+\]
+
+Thus `F_{n,m}->1` still leaves a deterministic inverse-`n` packet asymmetry. First packet-level cancellation additionally requires
+
+\[
+n\log F_{n,m}\to-2ae^2.
+\]
+
+For `m>=2`, any surviving mismatch at inverse-`n` scale remains exponentially large after multiplication by the tied saddle amplitude.
+
 ## Decisive test
 
-The remaining finite-window problem is now the **odd, packet-level tuned square interface**. Fix `m>=1`, assume
+The remaining finite-window problem is now the **odd, doubly tuned square interface**. Fix `m>=1`, assume
 
 \[
 b_n\to m^2,
 \qquad
 \Xi_{n,m}\to-\log K_m,
+\qquad
+n\log F_{n,m}\to-2ae^2,
 \]
 
-and derive the first asymptotic difference between the complete residual packets attached to the two tied rectangles. Equivalently, determine the asymptotic of
+and derive the next asymptotic of
 
 \[
-\frac{G_{n,m}}{G_{n,m-1}}
-\]
-
-at the precision at which `F_{n,m}->1`, and hence of the complete adjacent-packet ratio
-
-\[
+Q_{n,m}
+=
 F_{n,m}\frac{G_{n,m}}{G_{n,m-1}}.
 \]
 
-Decide whether the tuned interface leaves a nonzero residual, exposes a still finer retained coordinate, recruits the next partition saddle, or can genuinely restore the fixed-partition exponential. Do not infer this from `F_{n,m}` alone: AF-422 proves only that its tuning is necessary for leading rectangle cancellation, not sufficient for complete-packet cancellation.
+Compare the first nonzero remainder in `Q_{n,m}-1` against the first subleading full-column saddle. For `m>=2`, determine whether the remaining mismatch is still larger than the neighboring-saddle ratio and therefore forces exponential divergence, or whether a finer tuning can lower the tied-packet residual to the next saddle scale.
 
-For `m=1`, AF-421's coordinate
+Do not treat polynomially accurate cancellation as evidence for recovery of the fixed-partition exponential. Because the tied saddle has rate `Lambda_m>1` for `m>=2`, an order-one limit would ultimately require cancellation accurate on an exponentially small relative scale, after which lower saddles may become the new obstruction.
 
-\[
-\Gamma_n=n\,b_n^n
-\]
+For `m=1`, the same packet ratio law applies but `Lambda_1=1`, so the polynomial boundary must be analyzed separately rather than imported from the `m>=2` exponential hierarchy.
 
-is the same transition scale in another form, since `Xi_{n,1}=log Gamma_n`; the unresolved cancellation fiber is the special tuning `Gamma_n->1/K_1` on odd `n`.
-
-Separately, for genuinely supercritical ratios `sigma>2`, AF-418 still rules out absolute control but AF-421--AF-422 do not apply because `b_n` no longer has a finite limit. Determine the correct growing full-column saddle there rather than extrapolating the finite-window classification.
+Separately, for genuinely supercritical ratios `sigma>2`, AF-418 still rules out absolute control but AF-421--AF-423 do not apply because `b_n` no longer has a finite limit. Determine the correct growing full-column saddle there rather than extrapolating the finite-window classification.
 
 ## Downstream gate
 
-Only after the exceptional-`1` signed sector is controlled on the tuned packet-level square interface and in the genuinely supercritical derivative-depth regime should AF-416's omitted-`1` and one-/zero-singular-block estimates be revisited for growing `s_n`. Their fixed-shift negligibility cannot be assumed.
+Only after the exceptional-`1` signed sector is controlled on the doubly tuned packet-level square interface and in the genuinely supercritical derivative-depth regime should AF-416's omitted-`1` and one-/zero-singular-block estimates be revisited for growing `s_n`. Their fixed-shift negligibility cannot be assumed.
 
 ## Research disposition
 
-Accepted. AF-419 resolves all strictly subcritical derivative ratios. AF-420 resolves the finite-`tau` absolute subthreshold phase. AF-421 reduces the signed finite-window problem to discrete square saddle collisions, and AF-422 resolves the next rectangle-amplitude scale: outside the odd tuning `Xi_{n,m}->-log K_m`, the square fibers are closed as well, with exponential divergence for `m>=2`. The live finite-window question is now only the complete-packet asymptotic on that fine-tuned odd interface. The genuinely supercritical `sigma>2` regime remains a separate moving-saddle problem.
+Accepted. AF-419 resolves all strictly subcritical derivative ratios. AF-420 resolves the finite-`tau` absolute subthreshold phase. AF-421 reduces the signed finite-window problem to discrete square saddle collisions; AF-422 narrows the only odd collision fiber to `F_{n,m}->1`; AF-423 shows that the complete residual packets then retain a universal `2ae^2/n` asymmetry. The live finite-window question is now only the next scale after the additional tuning `n log F_{n,m}->-2ae^2`, together with comparison to the first subleading saddle. The genuinely supercritical `sigma>2` regime remains a separate moving-saddle problem.
