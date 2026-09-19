@@ -14,12 +14,18 @@ MC-398 closes the next literal bookkeeping escape in the standard squared Selber
 
 `C_g(ell)=sum_([d_1,d_2]=ell) g(d_1)g(d_2)`.
 
-Pair multiplicity is coefficient multiplicity, not sample multiplicity. A Cauchy/q-vdC saving that exists only while the pair labels are written separately and disappears after this regrouping is representation-dependent rather than a new arithmetic resource.
+Pair multiplicity is coefficient multiplicity, not sample multiplicity.
 
-The live analytic question is now sharper. The **single lcm/shell variable `ell` itself remains genuine arithmetic data** because it changes interval length, source signature and coprimality constraints. Alternatively, a pre-quadratic construction could expose a divisor/source variable that genuinely does not factor through lcm. The accepted retained-variable clue now owns exactly this distinction.
+MC-399 performs the corresponding audit on the surviving lcm coordinate. After source Fourier expansion the exact post-Selberg quantity has the form
 
-## Keep source incidence, analytic depth, conductor and surviving averaging dimension distinct
+`sum_I sum_ell C_g(ell) chi_I(ell) M_I(N/ell)`.
 
-A large source family can be valuable for rank, codimension and exceptional geometry while being useless as an additional cancellation dimension. Before crediting a new average, perform the exact representation reduction first: source modes may become a projector, and Selberg divisor pairs may become one lcm coefficient.
+Complete multiplicativity gives `chi_I(ell m)=chi_I(ell)chi_I(m)`, so the factor `chi_I(ell)` cancels at the **first additive van-der-Corput correlation in `m`**. The lcm variable therefore does not remain nonseparably inside the source-character phase and cannot reproduce Stadlmann's retained-variable diagonal thinning merely by being kept visible. Exact rectangular signature incidence likewise has finite-rank factorization through the source characters/signature classes.
 
-Likewise, moving structural parameters should be charged only after auditing whether their proof cost is intrinsic. MC-396 removed a packing artifact; MC-397 removes an averaging artifact; MC-398 removes an independent-pair artifact. A future endpoint theorem must identify a variable whose variation **survives all three reductions and actually changes the post-Cauchy diagonal geometry**, rather than counting formal dimensions that exact algebra has already consumed.
+The lcm is still genuine arithmetic data in two places that MC-399 does not remove: the signed coefficient/signature distribution `C_g(ell)chi_I(ell)` and the moving endpoint `N/ell`. The accepted retained-variable clue is therefore correctly narrowed to two routes: prove a genuinely collective estimate for this twisted lcm/signature hyperbola transform that beats the existing source-depth and global-modulus costs, or expose a pre-quadratic arithmetic variable whose phase/congruence is non-lcm-factorable and remains nonseparable through the relevant Cauchy/differencing step.
+
+## Keep source incidence, analytic depth, conductor and surviving arithmetic coupling distinct
+
+A large source family can be valuable for rank, codimension and exceptional geometry while being useless as an additional cancellation dimension. Before crediting a new average, perform the exact representation reduction first and then test **separability under the correlation that is supposed to create the gain**. MC-397 consumes the source-mode index by Fourier duality; MC-398 consumes the Selberg pair by lcm regrouping; MC-399 shows that even the remaining lcm source phase is consumed by complete multiplicativity at the first correlation.
+
+A future endpoint theorem must therefore obtain its improvement from arithmetic structure that survives all three reductions: collective cancellation in lcm/signature classes or the hyperbola boundary, or a genuinely different pre-quadratic kernel. Keeping another already-separable index unevaluated is not a new resource, and any successful estimate must still avoid the sequential `2^(-Omega(A))` source-depth tariff and fixed positive global-radical costs already isolated elsewhere in the line.

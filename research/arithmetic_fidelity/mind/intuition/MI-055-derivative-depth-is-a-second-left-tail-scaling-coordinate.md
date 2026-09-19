@@ -1,6 +1,6 @@
-# MI-055 — Derivative depth, source selection, transport provenance, conditioning, and probe amplitude form a joint left-tail critical coordinate
+# MI-055 — Derivative depth, source selection, joint shell transport, conditioning, and probe amplitude form a joint left-tail critical coordinate
 
-**Evidence level:** exact synthesis from [AF-416](../../findings/AF-416-full-left-tail-diagonal-has-positive-cauchy-limit.md) through [AF-437](../../findings/AF-437-recursive-shell-peeling-amplifies-earlier-errors-exponentially.md).
+**Evidence level:** exact synthesis from [AF-416](../../findings/AF-416-full-left-tail-diagonal-has-positive-cauchy-limit.md) through [AF-438](../../findings/AF-438-stieltjes-generating-transform-transports-shell-ladder-jointly.md).
 
 AF-416--AF-424 show that the reciprocal-order left-tail determinant has more than one scaling coordinate. A fixed derivative shift closes to a positive Cauchy limit, but moving depth enters through `s_n/n`; the complete partition family detects the critical value `2`, and in the critical window probe amplitude and depth combine as
 
@@ -14,14 +14,18 @@ AF-436 shows that the **exact even Euler coefficients have not lost the shell la
 
 `s_k=(-1)^k k R^(2k)c_(2k)=zeta(2k)=sum_(j>=1) j^(-2k)`.
 
-Exact peeling below shell `m` leaves `r_(m,k)=sum_(j>=m)j^(-2k)` with `m^(2k)r_(m,k)->1`, so the next shell can be recovered in exact arithmetic.
-
-AF-437 supplies the missing stability calculation for that representation. If earlier shell `j` is peeled with relative location error `eta_(j,k)` and weight error `omega_(j,k)`, while the observed moment has additive error `e_k`, the target-scale error budget is controlled by
+AF-437 supplies the stability calculation for sequential exposure. If earlier shell `j` is peeled with relative location error `eta_(j,k)` and weight error `omega_(j,k)`, while the observed moment has additive error `e_k`, then the target-scale error budget contains
 
 `m^(2k)|e_k| + sum_(j<m)(m/j)^(2k)(|omega_(j,k)| + k|eta_(j,k)|)`.
 
-For worst-case independent peeling errors, stable shell-`m` recovery therefore needs `|omega_(j,k)|=o((j/m)^(2k))` and `|eta_(j,k)|=o(k^(-1)(j/m)^(2k))`. If the common radius is estimated rather than supplied exactly, its relative error must be `o(m^(-2k)/k)` along this normalization route. Deeper provenance is not merely small; recursive reconstruction amplifies every earlier-shell error exponentially relative to the new target scale.
+Thus the triangular peeling inverse is exponentially sensitive to earlier-shell errors even though the exact sequence is shell-determinate.
 
-The reusable order is now six-stage. **First establish source selection. Second identify the exact source carrier and its resolution scale. Third price the conditioning of any inverse used to expose that carrier. Fourth verify that the downstream representation transports rather than aggregates it. Fifth compare the physical source mesh with the target aperture. Sixth test the selected point rather than an optimized surrogate.** The current branch passes source selection and exact shell retention, but the present determinant fails shell-resolved transport and the selected square fibre fails its adjacent-packet mechanism.
+AF-438 shows that this sequential inverse is not forced by the information itself. The ordinary generating transform
 
-**Boundary.** AF-437 is a sharp conditioning statement for sequential dominant-shell peeling, not a universal minimax lower bound for every joint Prony/Hankel or symbolic reconstruction. Exact symbolic shell locations and exact `R=2pi` remove the corresponding estimation errors. Nothing here constructs a well-conditioned shell-resolved destination, selects rational primes or zeta zeros, or implies RH.
+`F(z)=sum_(k>=1) zeta(2k)z^(k-1)=sum_(m>=1)1/(m^2-z)`
+
+extends meromorphically as `(1-pi sqrt(z)cot(pi sqrt(z)))/(2z)` and has one simple pole at every `m^2` with residue `-1`. All shell identities therefore coexist in one exact Stieltjes carrier. Removing shell `m` subtracts exactly `1/(m^2-z)`; no earlier shell must first be estimated and cancelled.
+
+The reusable order is now more precise. **First establish source selection. Second identify an exact carrier and whether it is sequential or joint. Third price the inverse conditioning under the actual finite/noisy observation model. Fourth verify that the downstream representation transports rather than aggregates the recovered provenance. Fifth compare the physical source mesh with the target aperture. Sixth test the selected point rather than an optimized surrogate.** AF-438 passes the exact joint-carrier step but does not pass the conditioning or determinant-transport steps.
+
+**Boundary.** The Stieltjes/cotangent representation is classical and exact only with the complete exact coefficient data. It does not prove that truncated/noisy Padé, Hankel, Prony or continued-fraction recovery is well conditioned, and analytic continuation may recreate a severe instability. Nothing here transports the shell poles through the present determinant, selects rational primes or zeta zeros, or implies RH.

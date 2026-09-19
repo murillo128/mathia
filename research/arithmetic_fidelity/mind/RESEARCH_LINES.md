@@ -2,7 +2,7 @@
 
 This file holds the current mathematical questions suggested by the durable arithmetic-fidelity intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Preserve exact shell provenance through the representation, not merely at the source
+## Preserve exact shell provenance through a joint carrier with auditable conditioning
 
 **Linked intuition:** `MI-055-derivative-depth-is-a-second-left-tail-scaling-coordinate`.
 
@@ -10,18 +10,22 @@ AF-416--AF-432 isolate the full left-tail determinant hierarchy. Fixed derivativ
 
 AF-433--AF-435 separate source realization, source selection and transport. Coefficient-root neutrality canonically selects the Taylor radius, hence `c=2pi` and `a=1` for the Bernoulli source, but the current determinant aggregates shell labels before packet geometry and the selected square fibre fails the present adjacent-packet cancellation.
 
-AF-436 shows that this loss is **not intrinsic to the exact coefficient sequence**. The normalized even coefficients are `zeta(2k)`; after exact peeling of earlier shells, the residual beginning at shell `m` is asymptotic to `m^(-2k)`. The full shell ladder is therefore recoverable in exact arithmetic.
+AF-436 shows that this loss is **not intrinsic to the exact coefficient sequence**. The normalized even coefficients are `s_k=zeta(2k)=sum_(m>=1)m^(-2k)`, so the complete exact moment sequence determines the shell ladder. AF-437 then prices the triangular way of exposing it: recursive peeling of shell `m` amplifies earlier shell-`j` errors at the target scale by roughly `(m/j)^(2k)`, so exact recoverability and stable recoverability are different resources.
 
-AF-437 adds the conditioning boundary hidden by exact peeling. For sequential recovery of shell `m`, coefficient noise and errors in every earlier shell are amplified at the target scale by
+AF-438 resolves the next exact representation question. The generating transform
 
-`m^(2k)|e_k| + sum_(j<m) (m/j)^(2k)(|omega_(j,k)| + k|eta_(j,k)|)`.
+`F(z)=sum_(k>=1) zeta(2k) z^(k-1)=sum_(m>=1) 1/(m^2-z)`
 
-Hence an earlier weight error must be `o((j/m)^(2k))` and a relative location error must be `o(k^(-1)(j/m)^(2k))` for that peeling route; estimating the common radius itself requires error `o(m^(-2k)/k)`. Exact symbolic normalization avoids that particular estimation cost.
+is a classical Stieltjes/Markov transform with meromorphic continuation
 
-The live question is no longer whether the source contains canonical shell data. It does. The question is whether a destination representation can transport the shell ladder **without first paying this sequential exponential error cascade**. A serious carrier must either preserve shell labels before recursive subtraction, prove a joint inverse whose conditioning beats the peeling benchmark, or use exact symbolic shell structure so that the earlier layers are not re-estimated from noisy downstream data.
+`F(z)=(1-pi sqrt(z) cot(pi sqrt(z)))/(2z)`.
 
-## Keep selection, carrier resolution, conditioning, transport and target cancellation as separate currencies
+Its poles are exactly `z=m^2`, all with residue `-1`. Thus every shell label is present **simultaneously** in one exact carrier; exposing shell `m` no longer requires subtracting shells `1,...,m-1`. The exponential cascade of AF-437 is therefore a property of sequential peeling, not an information-theoretic loss of the exact Euler sequence.
 
-A source-selected parameter can fail downstream; exact source information can be present but exponentially ill-conditioned; and a representation can preserve aggregate moments while deleting provenance needed by the target. AF-437 makes the distinction between exact recoverability and stable recoverability explicit rather than leaving it inside a generic precision warning.
+The live question has moved to **stable joint recovery**. Given only a finite/noisy moment prefix, can Stieltjes continued fractions, Padé, Hankel/Prony or another joint inverse recover the first `M` poles/residues with conditioning materially better than the AF-437 peeling benchmark? A negative result is equally useful if it proves that analytic continuation/rational reconstruction recreates an equivalent instability. Exact pole transport by itself does not answer that finite-data question.
 
-A continuation should therefore change something substantive: construct a shell-resolved carrier with auditable conditioning, justify a different source-native selector independently of target success, or use a destination mechanism that does not require the adjacent-packet cancellation excluded at the selected scale. Metric largeness of favorable amplitudes or downstream optimization cannot substitute for those source-side obligations.
+## Keep selection, exact carrier, inverse conditioning, downstream transport and target cancellation as separate currencies
+
+A source-selected parameter can fail downstream; exact source information can be present but badly conditioned; and a representation can preserve aggregate moments while deleting provenance needed by the target. AF-438 now adds the converse lesson: changing representation can remove an **artificial sequential inverse** while leaving the genuine stability problem unresolved.
+
+A continuation should therefore change something substantive: quantify the finite/noisy conditioning of the joint Stieltjes carrier, construct a shell-resolved destination that consumes those poles without re-aggregating them, justify a different source-native selector independently of target success, or use a destination mechanism that does not require the adjacent-packet cancellation excluded at the selected scale. Metric largeness of favorable amplitudes, exact analytic continuation with infinite data, or downstream optimization cannot substitute for these obligations.

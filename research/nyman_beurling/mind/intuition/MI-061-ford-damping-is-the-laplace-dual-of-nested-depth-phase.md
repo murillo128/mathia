@@ -1,6 +1,6 @@
-# MI-061 — Ford damping is the Laplace dual of nested depth phase, and carrier width sets the sharp shallow depth scale
+# MI-061 — Ford damping is the Laplace dual of nested depth phase, carrier width sets the shallow scale, and global pair statistics miss sparse critical packets
 
-**Evidence level:** exact synthesis from `NB-225`--`NB-231`.
+**Evidence level:** exact synthesis from `NB-225`--`NB-232`.
 
 At the exact-Ford scale, let `d_rho=R(1-beta)` be normalized horizontal zero depth and `Y=X/R`. Keep the full moving-shell coefficient inside
 
@@ -12,28 +12,22 @@ and define the nested cumulative carrier
 
 NB-228 applies Stieltjes integration by parts to the exact residue sum and shows that, up to a negligible endpoint, the residue is the Laplace transform of **one cumulative depth-phase process** against `e^(-YD)`. Ford damping therefore does not price population, depth and phase independently; it integrates their nested signed accumulation.
 
-NB-229 removes the deep formal Ford interval. Smooth vertical carrier decay plus the classical zero count yields an absolute `Qe^(-YD_0)` tail, so depths beyond `O(log Q)` are harmless before any new zeta-specific phase or density theorem is used.
+NB-229 removes the deep formal Ford interval. NB-230 retains vertical carrier width in the shallow layer. Bellotti's local zero-disk theorem gives `M_(t,H)(D) << D+J`, with `J=1+R/H`, and the same Ford weight yields
 
-NB-230 retains the vertical carrier width inside that shallow layer. Bellotti's local zero-disk theorem gives
+`T(D_0,D_1) << e^(-YD_0)(D_0+J+1)`.
 
-`M_(t,H)(D) << D + J`, with `J=1+R/H`,
+Hence every moving depth with `YD_0-log J -> +infinity` is absolutely negligible. The active shallow window is controlled by `log(1+R/H)`, not by `log Q` alone.
 
-throughout its admissible range, and the same Ford weight yields
+NB-231 shows that this logarithmic carrier-width threshold is sharp for the currently audited information when `1 << R/H <= log Q`. A phase-aligned abstract zero packet can use `Theta(R/H)` carrier slots at `D=(log(R/H)+w)/Y`, with `w=O(1)`, while remaining compatible with the zero-free boundary, growing-density allowance, local disk count and ordinary local zero counting. Its exact signed residue stays bounded away from zero. Thus the upper and lower controls meet at the dimensionless balance `YD-log J`.
 
-`T(D_0,D_1) << e^(-Y D_0)(D_0+J+1)`.
+NB-232 identifies a further quantifier mismatch. The aligned packet spacing is `Theta(1/X)`, whereas the mean zero spacing is `Theta(1/Q)` and `Q/X -> infinity`. The obstruction is therefore mesoscopic rather than a close-gap anomaly. Moreover a sparse insertion set of size `A(T)` changes the standard globally weighted pair numerator by only
 
-Hence every moving depth with `Y D_0-log J -> +infinity` is absolutely negligible. The active shallow window is controlled by `log(1+R/H)`, not by `log Q` alone.
+`O(A(T) log T + A(T)^2)`.
 
-NB-231 shows that this logarithmic carrier-width threshold is sharp for the currently audited information when `1 << R/H <= log Q`. A phase-aligned abstract zero packet can use `Theta(R/H)` carrier slots at
+Choosing infinitely many transition-saturating packets with cumulative `A(T)=O(sqrt(log T) log log T)` makes that change `o(T log T)` uniformly in the pair-correlation Fourier parameter. Global Montgomery-type pair statistics can consequently remain asymptotically unchanged while the inserted packet carries order-one Ford residue at each selected height.
 
-`D=(log(R/H)+w)/Y`, with `w=O(1)`,
+The missing source information must therefore act on the same three coordinates as the carrier: horizontal depth `R(1-beta)`, local window `H(gamma-t)`, and carrier phase `X(gamma-t) mod 2pi`. A density-one/global two-point theorem can average away the exceptional windows relevant to a uniform endpoint, while natural-scale gap repulsion resolves a much finer spacing than the packet uses. A viable next theorem is local and depth-conditioned, controlling the carrier-frequency phase sum on the `YD-log J=O(1)` slab, or is an equivalent arithmetic statement that forbids the packet geometry without first averaging over height.
 
-while remaining compatible with the Vinogradov--Korobov zero-free boundary, Bellotti's growing-density allowance, Bellotti's local disk count and ordinary local zero counting. Its exact signed residue stays bounded away from zero. Thus the upper and lower controls meet at the dimensionless balance
+The reusable lesson is now four-stage. **First identify the cumulative signed object dual to the physical attenuation. Second use the actual carrier to remove absolutely harmless parameter ranges. Third test sharpness with a matched control that spends the same carrier capacity. Fourth audit the quantifier and scale of any proposed external statistic: a global or finer-scale statistic need not see the sparse local configuration that matters pointwise.**
 
-`Y D - log J`.
-
-For this information set, `Y D-log J -> +infinity` kills the residue, while `Y D-log J=O(1)` can still carry order-one coherent mass. The additive divergence in NB-230 is therefore not a proof artifact in the controlled capacity regime. A further source-side theorem must attack the bounded transition layer itself by coupling depth to phase or spacing for the actual zeta zeros; improving estimates only beyond that layer targets a region already harmless.
-
-The reusable lesson is three-stage. **First identify the cumulative signed object dual to the physical attenuation. Second use the actual carrier to remove parameter ranges that are absolutely harmless. Third test sharpness with a matched control that spends the same carrier capacity before asking for stronger arithmetic input.** A theorem on a larger formal domain can be much harder while adding no destination leverage.
-
-**Boundary.** NB-231 is an abstract matched-packet method boundary, not evidence that the actual zeta zeros realize the packet. Its sharpness statement is deliberately restricted to `1 << R/H <= log Q`; much narrower shells require a separate population audit. The source-side residue analysis still does not prove a quantitative Nyman--Beurling distance bound or RH consequence.
+**Boundary.** NB-231--NB-232 construct matched controls, not actual zeta-zero configurations. NB-232 rules out the usual globally normalized pair-correlation information as sufficient by itself; it does not rule out short-window, depth-conditioned pair/phase theorems that essentially control the missing carrier observable. The source-side analysis still does not prove a quantitative Nyman--Beurling distance bound or RH consequence.

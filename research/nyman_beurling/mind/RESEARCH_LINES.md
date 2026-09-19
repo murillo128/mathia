@@ -16,36 +16,22 @@ NB-228 identifies the nonseparable object consumed by the residue. With normaliz
 
 Stieltjes/Abel summation makes the residue the Laplace-weighted integral of `C(D)` against `e^(-YD)`.
 
-NB-229 first removes the deep formal Ford range: the smooth vertical carrier plus the classical zero count gives an absolute `Qe^(-YD_0)` tail, so depths beyond `O(log Q)` cannot contribute at order one.
+NB-229 first removes the deep formal Ford range. NB-230 then keeps carrier width visible: with `J=1+R/H`, Bellotti's local count gives `M_(t,H)(D) << D+J`, hence an integrated tail `T(D_0,D_1) << e^(-YD_0)(D_0+J+1)`. Every moving depth with `YD_0-log J -> +infinity` is therefore absolutely harmless in the audited range.
 
-NB-230 now compresses the remaining shallow frontier further by keeping the **carrier width** visible. Bellotti's local zero-disk estimate already gives, in its valid shallow range,
+NB-231 shows that the remaining transition is sharp for the same information set when `1 << R/H <= log Q`. A phase-aligned packet using a fixed positive fraction of the `J` carrier slots at `YD=log J+O(1)` can carry order-one Ford residue while respecting all population inputs used so far. The open source theorem must therefore attack the bounded transition layer itself rather than improve already-subcritical depths.
 
-`M_(t,H)(D) << D + J`, with `J=1+R/H`.
+NB-232 now removes **global Montgomery-type pair correlation** as that missing input. The carrier packet spacing is `Theta(1/X)`, while the mean zeta-zero spacing is `Theta(1/Q)`, so one selected packet point is separated from the next by `Q/X -> infinity` mean spacings. The packet is mesoscopic, not a close-spacing anomaly. More strongly, inserting only
 
-Under the exact Ford damping this implies an integrated tail
+`A(T)=O(sqrt(log T) log log T)`
 
-`T(D_0,D_1) << e^(-Y D_0)(D_0+J+1)`.
+such packet ordinates below height `T` changes the usual weighted pair-correlation numerator by at most `O(A(T)log T+A(T)^2)=o(T log T)`, uniformly in the Fourier parameter, while infinitely many selected packets can still carry order-one residue at their own heights. Thus even a complete global pair-correlation asymptotic can be blind to the exceptional transition packets relevant to a uniform endpoint theorem.
 
-Hence every moving depth with `YD_0-log J -> +infinity` is already absolutely harmless. The unresolved width-dependent layer is confined to
+The missing observable is now sharper: it must be **local, depth-conditioned and carrier-frequency sensitive**. Schematically it must control the shallow-zero sum in the actual `1/H` window with phase `e^(iX(gamma-t))` while `YD-log(1+R/H)=O(1)`. Natural `1/Q` gap repulsion is too fine for the carrier spacing, and globally normalized two-point statistics average away a packet family sparse enough to matter pointwise.
 
-`1 << D \lesssim (1/Y) log(1+R/H)`
+## Keep source width, cumulative depth phase, carrier capacity and local exceptional quantifiers in one ledger
 
-inside the Bellotti range, plus any `Theta(log Q)` transition interval not covered by the local-disk lemma before the coarse NB-229 cutoff. When `log(R/H)=o(log Q)`, this is a genuine asymptotic compression; for very narrow shells with `log(R/H)=Theta(log Q)` no such improvement should be claimed.
+The relevant currencies are source width `H`, vertical capacity `J=1+R/H`, normalized horizontal depth `D`, the full profiled coefficient `b_rho`, cumulative signed carrier `C(D)`, Ford damping `e^(-YD)`, carrier frequency `X`, and the **uniform-in-height** quantifier required by the endpoint. NB-230 converts linear capacity `J` into a logarithmic depth budget; NB-231 shows that this conversion is sharp for the audited information; NB-232 shows that an exceptional set invisible to global statistics can still saturate the pointwise transition at infinitely many heights.
 
-NB-231 shows that this transition is sharp for the same information set in the conservative capacity regime `1 << R/H <= log Q`. A packet using a fixed positive fraction of the `R/H` carrier slots can be placed at
-
-`D=(log(R/H)+w)/Y`, with `w=O(1)`,
-
-while obeying the Vinogradov--Korobov zero-free boundary, Bellotti's growing-density allowance, Bellotti's local `O(D)` disk count, and ordinary local zero counting. Its moving-shell phases are exactly aligned and its signed residue stays order one. Thus `YD-log J -> +infinity` is not merely sufficient: population-only information cannot force decay while `YD-log J=O(1)`. The next actual-zeta input must attack the bounded transition layer itself by coupling depth to phase or spacing.
-
-The matched packets of NB-225--NB-227 and NB-231 therefore live on the same logarithmic carrier-width scale as the NB-230 upper cutoff. Available vertical population is roughly `J`, while Ford damping charges `e^(YD)`, so the critical balance is `J≈e^(YD)`. The next source theorem should be parameterized by `D/log(1+R/H)`, not by `D/log Q` alone.
-
-Inside that window, population information may still be insufficient. Useful surviving inputs are genuinely joint: a local estimate coupling vertical population and horizontal depth more strongly than `D+R/H`, a phase-sensitive bound for `C(D)`, or an arithmetic restriction ruling out the matched packet geometry for actual zeta zeros. Improving zero density outside the carrier-width window attacks a region already subcritical under existing Bellotti input.
-
-## Keep source width, cumulative depth phase, carrier capacity and Ford damping in one ledger
-
-The relevant currencies are source width `H`, vertical capacity `J=1+R/H`, normalized horizontal depth `D`, the full profiled coefficient `b_rho`, cumulative signed carrier `C(D)`, and Ford damping `e^(-YD)`. NB-230 shows that the **linear** capacity cost `J` becomes only a **logarithmic** depth budget after attenuation; NB-231 shows that this logarithmic conversion, including the need for a diverging additive margin, is sharp in the audited `J<=log Q` regime.
-
-This is stronger bookkeeping than asking for a theorem uniformly over the whole Ford strip. Near-wide shells, almost every moving shallow depth is already harmless; narrow shells retain a larger active band. The remaining theorem must therefore track width and depth together and remain source-specific enough not to recover the same Euler shell circularly.
+A useful next zeta theorem must therefore condition the vertical statistic on horizontal depth and resolve the carrier phase on each relevant short window, or obtain an equivalent arithmetic restriction from the explicit formula without averaging away the exceptional heights. Stronger global density-one or pair-correlation information is not enough unless it yields that local conditioned control.
 
 The destination bridge is unchanged. These source-side residue estimates do not themselves prove a quantitative Nyman--Beurling distance bound; a successful destination argument must still force an approximant to realize the positive Euler return tested by this carrier rather than merely control an abstract zero sum.

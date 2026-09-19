@@ -1,31 +1,35 @@
-# MI-057 — Exact mixed-shell nullity collapses every closable radial positive form with absolutely-continuous translation spectrum
+# MI-057 — Exact mixed-shell nullity collapses every closable strongly-continuous unitary radial positive form to the invariant sector
 
-**Evidence level:** exact synthesis from [WP-374](../../findings/WP-374-positive-composite-nullity-collapses-stationary-radial-flux-to-zero-frequency.md), [WP-375](../../findings/WP-375-exact-mixed-shell-nullity-collapses-every-closable-log-radial-positive-form.md), and [WP-376](../../findings/WP-376-sobolev-radial-topologies-do-not-escape-exact-mixed-shell-nullity.md).
+**Evidence level:** exact synthesis from [WP-374](../../findings/WP-374-positive-composite-nullity-collapses-stationary-radial-flux-to-zero-frequency.md), [WP-375](../../findings/WP-375-exact-mixed-shell-nullity-collapses-every-closable-log-radial-positive-form.md), [WP-376](../../findings/WP-376-sobolev-radial-topologies-do-not-escape-exact-mixed-shell-nullity.md), and [WP-377](../../findings/WP-377-prime-log-asymptotic-density-collapses-exact-mixed-shell-nullity-to-the-translation-invariant-sector.md).
 
 WP-374 first showed that translation-invariant positive radial forms are too rigid: mixed-prime shell nullity plus source coboundary identities force prime-power shell profiles into the translation-fixed zero-Mellin sector. WP-375 removes stationarity. In the canonical logarithmic-radial `L^2` topology, positivity makes every zero-energy mixed shell radical; spectator-prime identities
 
-`h_(p^a q)=tau_(log q) h_(p^a)-h_(p^a)`
+`h_(p^a q)=tau_(log q)h_(p^a)-h_(p^a)`
 
-and weak escape of far translations let Mazur convexification approximate `-h_(p^a)` strongly by radical mixed shells. Closability then forces the prime-power shell itself into the radical.
+and weak escape of far translations let closability propagate that radical to prime-power shells.
 
-WP-376 identifies the actual topological hypothesis more precisely. Every cyclotomic shell profile `h_n` is Schwartz, so it lies in every finite-order Sobolev `H^r`. In `H^r`, and more generally in any translation-invariant Fourier-weight Hilbert space
+WP-376 identifies a much larger topological class with the same behavior. The cyclotomic profiles are Schwartz, and remote translations still converge weakly to zero in every finite-order Sobolev space and every translation-invariant Fourier-weight Hilbert space with absolutely-continuous positive weight containing the profiles. Merely strengthening or weakening an ordinary Fourier norm therefore does not change the obstruction.
 
-`||f||_(H_w)^2 = integral w(xi)|hat f(xi)|^2 dxi`
+WP-377 removes weak escape and absolute continuity from the load-bearing assumptions. Let radial translations act as a strongly continuous unitary group `U(t)` and preserve
 
-with positive measurable absolutely-continuous weight and the relevant `h_n` in the space, translations are unitary and `tau_t f -> 0` weakly as `|t|->infinity`. The proof is again Riemann--Lebesgue after the weighted Fourier product is placed in `L^1`. Therefore the WP-375 radical argument survives every such reweighting.
+`h_(nq)=(U(log q)-I)h_n`.
 
-So the escape is not “choose a stronger or weaker Sobolev norm.” A successful topology must change the **spectral type seen by translations** or another load-bearing assumption. WP-376 supplies an exact control: adjoining the zero-frequency trace
+Fix a prime power `n=p^a` and let `M_n` be the closed span of the spectator-prime mixed shells. If `g` is orthogonal to `M_n`, then the matrix coefficient `f_g(t)=<U(t)h_n,g>` satisfies `f_g(log q)=f_g(0)` at every spectator-prime logarithm. Strong continuity plus unitarity makes `f_g` uniformly continuous, while the prime number theorem gives
 
-`||f||_*^2 = ||f||_(H^r)^2 + c|hat f(0)|^2`
+`log q_(k+1)-log q_k -> 0`.
 
-prevents far translates from disappearing in that coordinate. The bounded positive form `Q_*(f)=c|hat f(0)|^2` annihilates every mixed shell while retaining prime powers, because `hat h_n(0)=Lambda(n)`. But the retained value is exactly `c Lambda(n)^2`, the zero-Mellin survivor already isolated in WP-374, not the linear Weil coefficient.
+Hence `f_g(t)->f_g(0)` as `t->+infinity`. The mean ergodic theorem identifies the Cesàro limit with the invariant projection `P_0h_n`, so
 
-Within the simplest atomic class, zero frequency is forced. If one Fourier atom `xi_0` retains a prime-power profile while annihilating all spectator-prime mixed shells, the identity
+`(I-P_0)h_n in M_n`.
 
-`hat h_(nq)(xi_0)=(e^(i xi_0 log q)-1)hat h_n(xi_0)`
+This is the exact closure statement: spectator-prime mixed shells generate every **non-invariant** radial component of the prime-power shell in any such topology. If a closable nonnegative Hermitian form vanishes on all mixed shells, positivity makes their span radical and closability forces
 
-forces `e^(i xi_0 log q)=1` for all spectator primes, hence `xi_0=0`. Thus moving to a single nonzero spectral atom does not create a new selector either.
+`Q(h_(p^a)) = overline(Q)(P_0h_(p^a))`.
 
-The reusable audit is: before treating a topology change as new arithmetic structure, compute how remote source-forced translations behave in that topology. If they still escape weakly, exact positive nullity plus closability propagates through the same closure. If a singular spectral component blocks escape, identify what coefficient it actually retains; the simplest canonical component retains only the already-known `Lambda^2` zero mode.
+If the source-generated radial space has no invariant vector, the prime-power shell is killed as well.
 
-**Boundary.** WP-376 does not classify arbitrary singular-continuous or multi-atomic spectral completions, approximate mixed-shell nullity, indefinite intermediate pairings, nonclosable forms, or genuinely nonradial/global geometry. It does not construct the linear finite Weil form or prove global Weil positivity/RH.
+For arbitrary scalar spectral measures, the invariant subspace is supported only at frequency zero. Thus singular continuous measure, nonzero atoms and failure of Fourier decay do not help: exact mixed-shell nullity pushes all nonzero-frequency content into the radical closure. A scalar zero-frequency atom survives, but `hat h_n(0)=Lambda(n)`, so the resulting positive form is rank one, `Q(h_m,h_n)=c Lambda(m)Lambda(n)`, and the diagonal is `c Lambda(n)^2`, not the linear finite Weil coefficient.
+
+The reusable audit is therefore no longer “does the topology make remote translations decay?” It is: **what is the invariant quotient of the actual source translation action after the exact mixed-shell differences are imposed?** For prime-log translations with shrinking mesh, every non-invariant component is generated by those differences under strong-continuous unitarity. A viable escape must keep mixed shells active until a different global assembly, break the unitary/strong-continuity radial hypothesis for a source-geometric reason, weaken exact positive nullity, or supply a higher-multiplicity non-radial invariant sector carrying genuine finite--archimedean incidence and the linear Weil coefficient.
+
+**Boundary.** WP-377 is an infinite-spectator closure theorem; finite spectator sets still admit rank-one controls, and sparse artificial scale sets with nonshrinking mesh can retain nontrivial characters. It does not rule out non-unitary or non-strongly-continuous source topologies, approximate nullity, indefinite intermediate pairings, extra non-radial invariant multiplicity, or a global construction that keeps mixed shells active. It does not construct the linear finite Weil form or prove global Weil positivity/RH.
