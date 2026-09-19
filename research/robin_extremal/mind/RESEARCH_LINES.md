@@ -2,29 +2,33 @@
 
 This file holds the current mathematical questions suggested by the durable Robin-extremal intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Resolve the single remaining real single-center boundary: the vanishing arc
+## Leave the uniformly separated positive-real single-center class and change geometry
 
-**Linked intuitions:** `MI-001-robin-failure-requires-self-tangent-half-mass-event-gaps` through `MI-056-fixed-corridor-real-single-center-prediction-has-two-singular-rate-two-regimes`.
+**Linked intuitions:** `MI-001-robin-failure-requires-self-tangent-half-mass-event-gaps` through `MI-058-diagonal-closure-upgrades-familywise-wiener-gap-to-a-class-gap`.
 
-The scalar Euler program separates positive-real compression from vertical-phase resolution. RE-204--RE-218 establish the continuum prediction problem and the global interval `1 <= C_sep <= 5.996390`. RE-219--RE-222 then show that the positive-real single-center architecture has Wiener exponent strictly above two throughout every compact interior parameter set, even when the exact incomplete-beta remainder is allowed to use complex cancellation.
+The scalar Euler program separates positive-real compression from vertical-phase resolution. RE-204--RE-218 establish the continuum prediction problem and the global interval `1 <= C_sep <= 5.996390`. RE-219--RE-222 show that the positive-real single-center architecture has Wiener exponent strictly above two throughout every compact interior parameter set.
 
-RE-223 excludes truncation collapse inside a fixed delay corridor, while RE-224 excludes unbounded real centers and the upper arc edge. Before RE-225 this left two apparent singular escapes for a rate-two sequence: `alpha_m->0` or contraction degeneration `r(alpha_m,a_m)->1`.
+RE-223 excludes truncation collapse inside a fixed delay corridor, RE-224 excludes unbounded real centers and the upper arc edge, and RE-225 reduces every remaining rate-two degeneration to a vanishing observed arc `alpha_m->0`. RE-226 closes that singular regime by evaluating the same normalized polynomial at the anti-aligned point `z=-1`. For bounded positive real center `a<=A`,
 
-RE-225 shows that these are not independent. If the truncation ratio remains in a compact positive interval and uniform prediction holds, then for every fixed `alpha_0>0` the contraction factor stays uniformly below one whenever `alpha_m>=alpha_0`. Equivalently,
+`||F_(m,N,a)||_A >= e^(-1)(1+1/(2A))^N`,
 
-`r_m -> 1  =>  alpha_m -> 0`.
+so if `N/m` stays bounded below while `alpha_m->0` and `m alpha_m->infinity`, the normalized Wiener rate diverges.
 
-Combined with RE-222--RE-224, any fixed-corridor positive-real single-center sequence whose normalized Wiener rate approaches two must satisfy `alpha_m->0`. If the contraction boundary is approached inside that limit, boundedness of the center further forces `(alpha_m,a_m)->(0,1/2)`.
+RE-227 removes the last family-wise caveat. For each fixed finite corridor ratio `R>1`, diagonal extraction shows that there is one class-level constant `eta_R>0` such that every `R`-admissible positive-real single-center family satisfies
 
-The live exact-remainder question is therefore one-dimensional in its essential singular geometry: derive a uniform small-arc normal form for the exact incomplete-beta remainder as `alpha->0`, including the corner `a->1/2`, and decide whether genuine cancellation can attain Wiener rate two there. A strict gap in this vanishing-arc regime would close the entire fixed-corridor positive-real single-center route. Complex centers, multi-center/minimax predictors and non-binomial representations remain separate routes toward the global unit floor.
+`liminf log ||F||_A /(m alpha) >= 2+eta_R`.
+
+If separately tuned families had gaps tending to zero, one could choose a sufficiently late near-liminf stage from each and form a single admissible diagonal family with rate at most two, contradicting RE-226. The margin is presently nonconstructive and may depend on `R`; no positive `inf_R eta_R` is claimed.
+
+The positive-real single-center fixed-corridor class is therefore closed at the level of its extremal constant, not merely family by family. The constructive frontier should move to genuinely complex centers, multi-center/minimax cancellation, rational or different approximation bases, or else quantify `eta_R` to understand how much of the current constructive gap is representation-intrinsic.
 
 ## Keep exact identification, source capacity and prediction representation distinct
 
-RE-174 gives exact source identification from rich Euler data, but later results show why injectivity is not the selector-scale statement. Positive-real data can be nearly singular; finite vertical panels can be aliased; and a continuum interval forces an exponentially large signed-prefix primitive.
+RE-174 gives exact source identification from rich Euler data, but injectivity is not the selector-scale statement. Positive-real data can be nearly singular; finite vertical panels can be aliased; and a continuum interval forces an exponentially large signed-prefix primitive.
 
-RE-217 separates the global prediction floor from prime-placement capacity. RE-219--RE-225 add representation-local lower bounds and now collapse every rate-two fixed-corridor real single-center escape to a vanishing arc. None of these representation-specific floors may be promoted to a universal `C_sep>1` theorem.
+RE-217 separates the global prediction floor from prime-placement capacity. RE-219--RE-227 now prove a uniform fixed-corridor obstruction for one specific positive-real single-center negative-binomial representation. They still do **not** improve the universal separated-measure lower bound `C_sep>=1`.
 
-A future real single-center argument should therefore analyze the joint small-arc scaling directly rather than continue optimizing interior center/truncation parameters already proved nondecisive.
+A future prediction argument should therefore state which new geometry invalidates the anti-aligned Wiener probe or leaves the diagonal-closed single-center class before claiming progress toward the universal floor.
 
 ## Control one-sided reciprocal escape independently
 
