@@ -2,7 +2,7 @@
 
 This file holds the current mathematical questions suggested by the durable Prime-Lattice intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Find a genuinely global continuation mechanism inside the Liouville-rigid class
+## Find a genuinely global continuation mechanism outside finite-alphabet Liouville corrections
 
 **Linked intuitions:** `MI-016-weil-form-observability-is-stronger-than-moment-observability` through `MI-041-complete-multiplicativity-can-make-a-filter-zero-sensitive-without-making-the-witness-easier`.
 
@@ -16,22 +16,28 @@ PL-370 then makes pole neutrality locally rigid. A holomorphic zero at `s=1` is 
 
 Thus every admissible witness is at finite prime-harmonic distance from Liouville; in a fixed finite phase alphabet, non-`-1` values can occur only on a reciprocal-prime-summable exceptional set.
 
-PL-371 proves that this local rigidity gives **no uniform continuation gain to the left of `1`**. For every `sigma_0<1`, choose `alpha in (max(sigma_0,1/2),1)` and a sparse prime set `E_alpha` with
+PL-371 proves that this local rigidity gives **no uniform continuation gain to the left of `1`**. Sparse reciprocal-prime perturbations can preserve the exact zero at `1` while placing a real continuation obstruction at any prescribed exponent in `(1/2,1)`. Local pole neutrality and global continuation are separate resources.
 
-`sum_(p in E_alpha) 1/p < infinity`
+PL-372 shows that a genuine Venturini continuation itself forces much stronger scale-by-scale rigidity. Venturini's positive logarithmic Dirichlet series has nonnegative coefficients, so Landau's theorem implies that for every `sigma>sigma_0`,
 
-but
+`sum_p (1+Re a(p))/p^sigma < infinity`
 
-`sum_(p in E_alpha) p^(-alpha) = infinity`.
+and therefore
 
-Flipping Liouville from `-1` to `+1` exactly on `E_alpha` produces a `{+1,-1}`-valued completely multiplicative function whose Dirichlet series has the required simple zero at `1`, yet whose Euler correction blows up at the real point `s=alpha`. It therefore cannot extend holomorphically to `Re(s)>sigma_0`.
+`sum_p |1+a(p)|^2/p^sigma < infinity`.
 
-The live question is no longer whether finite prime-harmonic distance can bootstrap continuation. It cannot. A surviving witness theorem must control the exceptional-prime tail on the exponent scales actually crossed, or supply another genuinely global source-native structure—such as a functional equation, trace/positivity identity, or rigidity principle—that sparse reciprocal-prime perturbations cannot reproduce while remaining independent of the zero-free region to be proved.
+For a fixed finite prime alphabet, this forces the exceptional set `E={p:a(p)!=-1}` to satisfy `sum_(p in E)p^(-sigma)<infinity` at every crossed exponent. The relative Euler product then converges normally and gives
 
-## Treat coefficient algebra, local pole neutrality and global continuation as separate budgets
+`L(a,s)=[zeta(2s)/zeta(s)] C_a(s)`,
 
-The divisor-convolution identity `b=c*1` is coefficient algebra. Complete multiplicativity is a nonlinear prime-axis law. A local zero at the Euler-product boundary is a further source restriction. Holomorphic continuation through a half-plane is a genuinely global analytic property.
+where `C_a` is holomorphic and zero-free on `Re(s)>sigma_0`. For `1/2<=sigma_0<1`, every finite-alphabet witness therefore has exactly the Liouville divisor: it cannot cancel or move a zeta zero and supplies no independent continuation mechanism.
 
-PL-369--PL-371 now separate these layers exactly. Complete multiplicativity makes continuation plus pole neutrality zero-sensitive. PL-370 proves that local pole neutrality collapses generic phase freedom to a Liouville neighbourhood. PL-371 then shows that the same neighbourhood still contains functions with a prescribed real continuation obstruction arbitrarily close to `1`. The hard step has not merely moved from a norm to a smaller source class; it requires information that controls the sparse tail across subunit exponents.
+The live question has narrowed accordingly. A genuinely different source-forced witness must exploit structure that survives the scale-by-scale Liouville constraint but is not an absolutely convergent finite-alphabet correction. The clearest remaining source class is an **infinite alphabet approaching `-1` whose first-order prime information is only conditionally organized**, because PL-372 supplies quadratic weighted closeness but not absolute first-order convergence there. The alternative is a genuinely global source-native functional equation, trace/positivity identity or rigidity principle that constructs continuation without merely assuming or repackaging the desired zeta zero-free region.
 
-A proposed Prime-Lattice mechanism should therefore specify the admissible prime perturbations, the origin of pole cancellation, which Dirichlet-exponent tails are controlled, the independent continuation theorem, and why that theorem is not simply another form of the desired zeta zero-free region. Rewriting Liouville's quotient, invoking finite pretentious distance, or imposing a generic Hardy/`ell^p` topology does not supply that missing global input.
+## Treat coefficient algebra, local pole neutrality, scale-by-scale rigidity and global continuation as separate budgets
+
+The divisor-convolution identity `b=c*1` is coefficient algebra. Complete multiplicativity is a nonlinear prime-axis law. A local zero at the Euler-product boundary is a further source restriction. Holomorphic continuation through a half-plane is a genuinely global analytic property, and once present it feeds back into a whole family of weighted prime constraints.
+
+PL-369--PL-372 now separate these layers exactly. Complete multiplicativity makes continuation plus pole neutrality zero-sensitive. PL-370 proves that local pole neutrality collapses generic phase freedom to a Liouville neighbourhood. PL-371 shows that the same neighbourhood still contains functions with a prescribed real continuation obstruction arbitrarily close to one. PL-372 then shows the converse diagnostic: true continuation forces Liouville closeness at every crossed exponent, and in a finite alphabet this makes the witness a zero-free Euler correction of `zeta(2s)/zeta(s)`.
+
+A proposed Prime-Lattice mechanism should therefore specify the admissible prime perturbations, the origin of pole cancellation, which Dirichlet-exponent tails are forced or controlled, the independent continuation theorem, and why that theorem is not simply another form of the desired zeta zero-free region. Finite alphabets are now divisor-equivalent to Liouville under the continuation hypothesis; any surviving novelty must live in conditional infinite-alphabet structure or another genuinely global mechanism.

@@ -12,7 +12,7 @@ VIS-282--VIS-293 separate the isolated coefficient profile, Wang's complete pair
 
 The earlier `sqrt(log T)` and related lower-source thresholds were proof-packaging artifacts rather than arithmetic transitions.
 
-## Replace pointwise frequency isolation by aggregate density-sensitive infinite-spectrum control
+## Close the polynomial finite-window gap with dyadic aggregate spectrum control
 
 **Linked intuition:** `MI-040-wang-pointwise-upper-ceiling-is-a-localization-coherence-budget`.
 
@@ -20,28 +20,24 @@ VIS-299--VIS-304 progressively move the first generic upper error wall from loca
 
 VIS-309 then compares those controls to the actual common-time orbit. For fixed `x,H`, the deterministic phases `p^(-it)` have the same long-time quadratic mean as Haar completely multiplicative phases. The Bohr mean square is `O(x log^3(3x))`, so generic deterministic alignment across primes is not the missing mechanism.
 
-VIS-310 quantifies the crudest finite-window transfer. Hard truncating the infinite prime-power series and compressing every retained ratio frequency to one global minimum gap yields a sufficient averaging horizon only at
+VIS-310 quantifies the crudest finite-window transfer. Hard truncating the infinite prime-power series and compressing every retained ratio frequency to one global minimum gap yields a quintic sufficient averaging horizon at the active boundary. VIS-311 keeps coefficient-weighted local spacing and lowers the horizon to cubic. VIS-312 then proves that the finite-cutoff nearest-neighbour representation itself has no infinite-spectrum limit because the supported cross-base ratio frequencies are dense.
 
-`V >> x^5 log^3 x/(log log x)^2`
+VIS-313 replaces individual isolation by a cutoff-free aggregate decomposition. Split at `|lambda|=log 2`. The far band is pointwise `O(x)`, already `o(H)` for `H~x log log x`. In the near band, same-base harmonics disappear; grouping by dyadic arithmetic height gives within-shell spacing `delta_M>>M^(-2)`, while the Wang taper makes the shell energies summable. Shellwise Montgomery--Vaughan plus Minkowski yields
 
-when `H~x log log x`. VIS-311 keeps the local spacing of each retained rational-ratio frequency and its coefficient energy, lowering the sufficient horizon to
+`V^(-1) integral |R_(x,H)(T)|^2 dT << x^2 + x log^3 x + x^3 log^3 x/V`.
 
-`V >> x^3 log^3 x/(log log x)^2`.
+Therefore, at `H~x log log x`, deterministic finite-window mean square is `o(H^2)` once
 
-Two powers of `x` were therefore artifacts of global-gap compression. But VIS-312 shows that the finite-cutoff nearest-neighbor representation has no cutoff-free continuation. The nonzero cross-base prime-ratio frequencies `log(p/q)` surviving the Wang kernel are dense in `R`. Consequently every fixed retained frequency loses nearest-neighbor isolation as the cutoff grows, and the VIS-311 functional
+`V >> x log^3 x/(log log x)^2`.
 
-`sum_lambda |B_lambda|^2/delta_lambda`
+The polynomial finite-window gap is no longer the live obstruction. The remaining distance to the natural local scale `V~H~x log log x` is only logarithmic, roughly `log^3 x/(log log x)^3`. The next useful result should reduce this logarithmic tariff through sharper shell energy/large-sieve accounting, cancellation between shells, or a genuinely effective signed treatment of the far band; the opposite useful result would exhibit a sparse near-resonant packet carrying enough Wang mass to show that some logarithmic loss is real. Another hard support cutoff or unpartitioned nearest-neighbour estimate is no longer informative.
 
-diverges as the cutoff tends to infinity. One cannot remove the hard tail simply by sending `Y->infinity` inside the same weighted Montgomery--Vaughan nearest-neighbor denominator.
-
-This is a proof-method obstruction, not a lower bound on true dephasing. Dense frequency support can still have small coefficient energy. The live finite-height problem is now representation-specific: replace individual spacing by a cutoff-free quantity that remains meaningful on a dense spectrum, such as local frequency counts in blocks, a smooth/dyadic large-sieve decomposition, or direct control of the finite-window kernel `min(V,1/|lambda-mu|)` against coefficient energy. The opposite useful outcome would be an explicit sparse near-resonant family carrying enough Wang coefficient mass to force an `H`-scale remainder despite the small Bohr energy.
-
-The accepted clue `CLUE-wang-fixed-source-packet-localization` remains aligned with this destination, but another nearest-neighbor hard-cutoff estimate is no longer the most informative move.
+The accepted clue `CLUE-wang-fixed-source-packet-localization` has therefore produced a cutoff-free aggregate-density mechanism; any further use of it should target the residual logarithmic scale or the missing prescribed-height/joint-limit quantifier rather than repeat finite-cutoff spacing.
 
 ## Recombine exact deterministic structure and decompose every newly exposed proof wall before interpreting it
 
-The current ledger separates packet variation, source exponent, localization leakage, coefficient majorants, support-sensitive spacing, random versus completely multiplicative phases, the actual prime-log time orbit, Bohr/Haar equivalence, global versus local ratio spacing, finite-cutoff versus dense-spectrum geometry, hard versus energy-sensitive tail treatment, finite-window length, moving-frequency limits and the analytic domain of the source transform.
+The current ledger separates packet variation, source exponent, localization leakage, coefficient majorants, support-sensitive spacing, random versus completely multiplicative phases, the actual prime-log time orbit, Bohr/Haar equivalence, global versus local ratio spacing, finite-cutoff versus dense-spectrum geometry, dyadic aggregate density, hard versus energy-sensitive tail treatment, finite-window length, moving-frequency limits and the analytic domain of the source transform.
 
-VIS-294--VIS-312 give a repeated control pattern. Exact deterministic pieces can be split too early; generic majorants can lose logarithms; matched support models can show an absolute norm is generic; exact support can still cancel after phase randomization; same-base harmonic relations can be preserved without restoring the boundary; the true deterministic orbit can have the same long-time quadratic mean as Haar; finite-window proofs can manufacture polynomial horizons by compressing weighted spectrum; and the nearest-neighbor geometry itself ceases to exist in the infinite dense support.
+VIS-294--VIS-313 give a repeated control pattern. Exact deterministic pieces can be split too early; generic majorants can lose logarithms; matched support models can show an absolute norm is generic; exact support can still cancel after phase randomization; same-base harmonic relations can be preserved without restoring the boundary; the true deterministic orbit can have the same long-time quadratic mean as Haar; finite-window proofs can manufacture polynomial horizons by compressing weighted spectrum; and dense support becomes manageable again when frequencies are grouped by arithmetic scale before inversion.
 
-A structural transition is credible only after the surviving **finite-height/moving-frequency coherence mechanism** defeats a control that preserves the coefficient distribution, aggregate local ratio density, infinite tail and destination quantifier at the same scale.
+A structural transition is credible only after the surviving **finite-height/moving-frequency coherence mechanism** defeats a control that preserves the coefficient distribution, aggregate local ratio density, infinite tail and destination quantifier at the same scale. VIS-313 moves that audit to the logarithmic and pointwise/joint-limit level.

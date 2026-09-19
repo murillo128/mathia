@@ -1,6 +1,6 @@
-# MI-041 — Complete multiplicativity makes pole neutrality zero-sensitive but does not supply continuation
+# MI-041 — Complete multiplicativity plus continuation forces scale-by-scale Liouville rigidity
 
-**Evidence level:** literature-backed exact synthesis from [PL-369](../../findings/PL-369-venturini-completely-multiplicative-zero-free-witness.md) through [PL-371](../../findings/PL-371-sparse-liouville-real-continuation-obstruction.md), interpreted against the ambient filter controls PL-363--PL-368.
+**Evidence level:** literature-backed exact synthesis from [PL-369](../../findings/PL-369-venturini-completely-multiplicative-zero-free-witness.md) through [PL-372](../../findings/PL-372-venturini-scale-rigidity-finite-alphabet-collapse.md), interpreted against the ambient filter controls PL-363--PL-368.
 
 PL-363--PL-368 show that linear filter classes can manufacture critical-looking convergence walls without selecting zeta zeros. Finite filters are periodic continuations, unrestricted filters are programmable, `ell^p` geometry produces the exponent ladder `1-1/p`, and scalar Dirichlet Hardy spaces produce a generic absolute-convergence wall at `1/2`. Pole neutrality inside those ambient classes is therefore not a zero-selection mechanism.
 
@@ -18,14 +18,32 @@ PL-370 sharpens the **local** source class before any critical-half-plane contin
 
 Thus a pole-neutral witness lies at finite prime-harmonic distance from Liouville. In a fixed finite phase alphabet it equals `-1` outside a reciprocal-prime-summable exceptional set. Local boundary cancellation already removes generic Helson-phase freedom.
 
-PL-371 supplies the decisive control on what that rigidity buys. Fix any `sigma_0<1`. One can choose a reciprocal-prime-summable set `E_alpha` whose prime Dirichlet series diverges at a prescribed `alpha in (max(sigma_0,1/2),1)`, flip Liouville from `-1` to `+1` on exactly that set, and preserve a simple holomorphic zero at `s=1`. Yet the Euler correction
+PL-371 supplies the decisive control on what that local rigidity alone buys. For any `sigma_0<1`, one can choose a reciprocal-prime-summable set whose prime Dirichlet series diverges at a prescribed `alpha in (max(sigma_0,1/2),1)`, flip Liouville on exactly that set, preserve the simple zero at `1`, and create a real continuation obstruction at `alpha`. Finite prime-harmonic distance by itself gives no uniform holomorphic half-plane to the left of `1`.
 
-`H_alpha(s)=product_(p in E_alpha) (1+p^(-s))/(1-p^(-s))`
+PL-372 shows what changes once the full Venturini continuation hypothesis is actually present. Venturini's positive logarithm is a Dirichlet series with nonnegative coefficients. Since it continues holomorphically throughout `Re(s)>sigma_0`, Landau's theorem forces its abscissa of convergence to be at most `sigma_0`. Consequently, for every real `sigma>sigma_0`,
 
-blows up as real `s` decreases to `alpha`, while `zeta(2alpha)/zeta(alpha)` is finite and nonzero. The resulting completely multiplicative witness therefore cannot extend holomorphically to `Re(s)>sigma_0`.
+`sum_p (1+Re a(p))/p^sigma < infinity`
 
-This makes the separation exact: **source rigidity, local boundary selection and global continuation are independent gates**. Finite prime-harmonic distance is a strong necessary condition for pole neutrality, but it controls only the `1/p` geometry. Sparse prime defects can carry a different Dirichlet abscissa and place a continuation obstruction arbitrarily close to one without violating any local PL-370 diagnostic.
+and hence
 
-The next continuation mechanism must therefore control the exceptional-prime tail on every exponent scale needed to cross the strip, or invoke a genuinely global source-native structure that those sparse flips cannot preserve. Merely narrowing the source to a Liouville neighbourhood is real classification progress, but it is not analytic proof advantage by itself.
+`sum_p |1+a(p)|^2/p^sigma < infinity`.
 
-**Boundary.** PL-371 is a negative control, not a natural-boundary theorem. It shows that finite reciprocal-prime distance plus the exact simple zero at `1` gives no uniform holomorphic half-plane beyond `1`. It does not rule out stronger continuation hypotheses derived from additional arithmetic structure, and it has no independent RH consequence.
+So continuation does not merely force one boundary metric at exponent `1`; it forces **Liouville closeness at every crossed prime-power scale inside the continuation half-plane**. The direction is diagnostic rather than constructive: these weighted distances are consequences of continuation, not an independent proof of it.
+
+For a fixed finite prime alphabet this becomes much stronger. The finite gap away from `-1` turns quadratic closeness into absolute tail sparsity:
+
+`sum_(p in E) p^(-sigma) < infinity` for every `sigma>sigma_0`,
+
+where `E={p:a(p)!=-1}`. The relative Euler correction
+
+`C_a(s)=prod_(p in E) (1+p^(-s))/(1-a(p)p^(-s))`
+
+therefore converges normally and is holomorphic and zero-free on `Re(s)>sigma_0`, with
+
+`L(a,s)=[zeta(2s)/zeta(s)] C_a(s)`.
+
+For `1/2<=sigma_0<1`, the finite-alphabet witness has exactly the same zero/pole obstruction as Liouville. Its correction can change amplitudes and local phases but cannot cancel or move zeros of `zeta(s)`. At `sigma_0=1/2`, the finite-alphabet witness problem collapses to the Liouville quotient times a zero-free factor.
+
+This changes the surviving source class. **Finite-alphabet continuation is not an independent mechanism.** A genuinely different Venturini witness must use structure absent from an absolutely convergent sparse correction: for example an infinite alphabet approaching `-1` with conditionally organized first-order prime information, or a separate global functional/trace/positivity mechanism not reducible to a zero-free Euler factor multiplying Liouville.
+
+**Boundary.** The finite-alphabet collapse is conditional on the continuation already being available and does not supply it. For a general unit-disk-valued infinite alphabet, the forced `ell^2`-type prime closeness does not imply absolute convergence of `sum |1+a(p)|p^(-sigma)`, so conditional first-order information remains open. No independent critical witness, zeta zero-free region, or RH proof is obtained.
