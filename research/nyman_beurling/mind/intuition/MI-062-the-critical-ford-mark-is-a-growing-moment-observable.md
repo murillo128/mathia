@@ -1,25 +1,25 @@
-# MI-062 — The critical Ford mark is a bounded-mass signed edge observable of the local zeta potential
+# MI-062 — The critical Ford mark is a bounded-cost edge observable whose first-order form is an R-normalized resonant logarithmic-derivative current
 
-**Evidence level:** exact positive reduction plus matched-control and classical potential-theoretic boundary from [NB-234](../../findings/NB-234-growing-depth-moment-hierarchy-reconstructs-critical-ford-mark.md), [NB-235](../../findings/NB-235-critical-ford-transition-reduces-to-microlocal-landau-gonek-remainder.md), and [NB-236](../../findings/NB-236-poincare-lelong-turns-ford-depth-localization-into-bounded-edge-potential.md), building on NB-230--NB-233.
+**Evidence level:** exact positive reduction plus matched-control and classical potential/logarithmic-derivative boundary from [NB-234](../../findings/NB-234-growing-depth-moment-hierarchy-reconstructs-critical-ford-mark.md)--[NB-237](../../findings/NB-237-first-order-ford-edge-duality-isolates-the-r-normalized-zeta-logarithmic-derivative.md), building on NB-230--NB-233.
 
 NB-234 shows that on every fixed critical layer the residue can be reconstructed from profiled depth--phase moments with an order `K(Q)` that grows slowly with source capacity, while every predetermined fixed `K` remains blind in a matched spectral control. The nonlinear exponential depth mark is therefore not a fixed-moment statistic.
 
 NB-235 identifies what that hierarchy approximates in classical zeta language. The critical coefficient is a microscopic Landau zero sum with an additional horizontal Ford-depth cutoff. The shell profile has zero total integral, so the ordinary Landau--Gonek prime-power diagonal disappears; black-box smoothing of the global cumulative formula pays the full cumulative remainder and does not exploit the microscopic window.
 
-NB-236 changes representation again. Let `Psi(s)=K_(X,H)(s) chi(d(s))`, where `K_(X,H)` is the exact holomorphic carrier and `chi` is a smooth cutoff in Ford depth. Poincare--Lelong gives the weighted zero coefficient as a pairing of `log|zeta|` with `Delta Psi`. Since the carrier is holomorphic,
-
-`Delta Psi = X^2 K chi'' - 2X K' chi'`,
-
-so the kernel is supported only on the two transition strips of the horizontal cutoff. It also satisfies `int Delta Psi dA=0`, hence annihilates constants and, under the justified integration by parts, harmonic comparison functions.
-
-The Ford scales cancel sharply in the kernel norm. With `Y=X/R` and `J_0=R/H`, NB-236 proves
+NB-236 changes representation again. For `Psi(s)=K_(X,H)(s) chi(d(s))`, Poincare--Lelong gives the weighted zero coefficient as a pairing of `log|zeta|` with `Delta Psi`. Since the carrier is holomorphic, the kernel lives only on the two transition strips of the horizontal cutoff, has zero total integral, and satisfies
 
 `||Delta Psi||_1 << Y + J_0^(-1)`.
 
-On the critical Ford diagonal this is `O(1)`. Smooth horizontal depth localization therefore has **bounded tariff**: there is no unavoidable extra power of `X`, `H` or `J_0` merely from selecting the correct horizontal layer.
+On the critical Ford diagonal this is `O(1)`. Smooth horizontal depth localization therefore has bounded tariff; there is no unavoidable extra power merely from selecting the correct layer.
 
-This does not solve the coefficient. Taking absolute values against `log|zeta|` discards exactly the remaining resource and yields no `o(1)` gain. The load-bearing object is the signed local potential fluctuation across the two edge strips. A source theorem should show that the zeta potential there is sufficiently close to a harmonic background, or otherwise has a small signed correlation with `Delta Psi`. Such a theorem would control the exact Ford coefficient directly; the growing moment hierarchy remains a sufficient surrogate rather than the only formulation.
+NB-237 exposes the same coefficient at first order. Distributionally, `bar partial(zeta'/zeta)` is the zero divisor, and differentiating the depth cutoff only once gives a kernel whose complete `L^1` mass is `O(1/R)`. In Ford coordinates the unresolved quantity is therefore a microlocal signed pairing with
 
-The reusable lesson is a three-stage audit. First determine the source resolution needed to identify the mark. Then ask whether imposing that localization itself creates a large analytic tariff. Only after that price is known ask for cancellation of the localized source observable. Here the first stage needs growing resolution, the second stage is unexpectedly cheap after Poincare--Lelong, and the unresolved third stage is a bounded-mass signed potential estimate.
+`R^(-1) zeta'(s)/zeta(s)`.
 
-**Boundary.** NB-236 uses a smooth rather than hard depth cutoff, and bounded `L^1` mass is only a tariff calculation. It does not prove that the signed pairing is small, that `log|zeta|` admits the required local harmonic approximation, or that Nyman--Beurling approximation controls this source quantity. The Poincare--Lelong identity is generic complex analysis; the source-specific content is the Ford carrier/scaling and any future theorem controlling the local zeta potential.
+The factor `1/R` is the correct normalization, not an automatic gain. The matched critical packets already constructed in NB-231 have pole spacing `asymp 1/R`; after scaling, consecutive poles advance by an integer number of carrier periods. Their residues can therefore be exactly phase-locked to the oscillatory kernel, yielding order-one mass despite the shrinking first-order tariff. Riemann--Lebesgue or integration-by-parts intuition fails because the source itself changes with the carrier frequency and can place singularities at the resonant lattice scale.
+
+The reusable lesson is now a four-stage audit. First determine the source resolution needed to identify the mark. Second price the localization operation itself. Third expose the natural normalized first-order current if available. Fourth test whether moving source singularities can resonate with the carrier at exactly that normalization. Here the first stage needs growing resolution, the second is cheap, the third produces `R^(-1) zeta'/zeta`, and the fourth shows why generic high-frequency cancellation is insufficient.
+
+A source theorem should therefore control the **joint pole geometry and phase** seen by the Ford kernel: for example, a deterministic microlocal estimate for the `R`-normalized logarithmic derivative that rules out carrier-locked packets, or an equivalent zero-statistical statement with the horizontal depth mark retained. Deleting neighborhoods of poles loses the residues; estimating them absolutely returns the population tariffs already ruled out.
+
+**Boundary.** NB-236--NB-237 are exact representation/tariff results, not decay theorems. The `O(1)` potential kernel and `O(1/R)` logarithmic-derivative kernel do not imply a small pairing. The resonant packet is an admissible adversarial control, not a claim about actual zeta zeros. No new bound for the optimal Nyman--Beurling distance or bridge from an optimal approximant to vanishing of this coefficient is proved.
