@@ -17,6 +17,7 @@ based_on:
   - research/visual_exploration/findings/VIS-337-wang-prime-power-jump-derivative-channel.md
   - research/visual_exploration/findings/VIS-338-proper-prime-power-tail-negligible.md
   - research/visual_exploration/findings/VIS-339-wang-prime-source-chebyshev-theta-differential-image.md
+  - research/visual_exploration/findings/VIS-340-wang-prime-squarelog-partial-summation-invertible.md
 ---
 
 # Does Wang packet localization preserve source information without manufacturing strip gain?
@@ -45,7 +46,7 @@ and every prime-power jump is copied exactly into Wang's derivative channel. Ind
 
 `VIS-338` removes the complete proper-prime-power escape: the `k>=2` source, its Green response, its one-sided derivative response, and its far-tail jump mass are all `O(U^2 e^(-U/2))`, exponentially below the live envelope. The only possible envelope-scale source carrier is therefore the `k=1` prime contribution against the continuous baseline.
 
-`VIS-339` now identifies that surviving prime source exactly. If
+`VIS-339` identifies that surviving prime source exactly. If
 
 `G(u)=e^(-u)theta(e^u)-1`
 
@@ -55,13 +56,23 @@ and
 
 then
 
-`nu_prime=u(1+D)G`.
+`nu_prime=u(1+D)G`,
 
-Moreover, every smooth packet satisfies
+and every smooth prime packet is an exact functional of `G`. Thus atomic coordinates, tapers, phases, blocks, or multiscale linear statistics do not create an independent source channel.
 
-`integral phi d nu_prime = integral [(u-1)phi-u phi']G du`,
+`VIS-340` closes the parallel summatory escape. If
 
-and `G` is recoverable from `nu_prime` after one boundary value. Thus a smooth prime packet, taper, phase, block, or multiscale linear statistic is not an independent information channel merely because it is expressed in atomic coordinates: it is an exact functional of the normalized Chebyshev-theta remainder.
+`A_prime(x)=sum_(p<=x)(log p)^2`
+
+and
+
+`P(u)=e^(-u)[A_prime(e^u)-e^u(u-1)]`,
+
+then exact partial summation gives
+
+`P(u)=uG(u)-H(u)+2e^(-u)`,
+
+where `H` is the one-sided exponential average of `G`, and the map is explicitly invertible after removing the endpoint term. The full normalized `Lambda^2` summatory remainder differs from `P` only by an `O(u^2e^(-u/2))` proper-prime-power correction. At a Korobov--Vinogradov envelope, `H` stays on the same envelope scale, so at envelope-saturating heights `F(u)/(uG(u))->1`.
 
 The moving-upper occupancy branch is separately closed at the required upper-bound scale by `VIS-329`.
 
@@ -71,46 +82,46 @@ Does the normalized Chebyshev-theta remainder
 
 `G(u)=e^(-u)theta(e^u)-1`
 
-have a genuinely nonstationary or multiscale property at the live source-envelope scale which, under Wang's exact nonvanishing filter, makes
+have a genuinely nonstationary or scale-migrating property at the live source-envelope scale which survives the exact quotients in `VIS-339` and `VIS-340`, and which Wang's nonvanishing one-order filter turns into a pointwise smaller
 
-`Q(u)=S(e^u)-u+(3/4)e^(-2u)`
-
-pointwise smaller while the missing scale is carried by the derivative channel?
+`Q(u)=S(e^u)-u+(3/4)e^(-2u)`?
 
 If such a property exists, does Wang's complete downstream error decomposition retain the smaller `Q` scale without requiring `Q'` or equivalent unsmoothed information at the larger source scale?
 
 ## Why it may matter
 
-The remaining escape has now been stripped of three false sources of apparent leverage. It cannot be an isolated arithmetic singularity (`VIS-337`), it cannot be collective proper-prime-power mass (`VIS-338`), and it cannot gain independent status merely by repackaging the prime atoms into a smooth packet (`VIS-339`).
+The source side has now been stripped of four false mechanisms. The desired leverage cannot come from isolated arithmetic singularities (`VIS-337`), collective proper-prime-power mass (`VIS-338`), repackaging prime atoms into smooth packets (`VIS-339`), or the elementary theta-to-square-log summatory partial-summation step (`VIS-340`).
 
-A positive result must therefore expose a genuine property of the classical prime-counting error itself, in a representation for which Wang's filter gives useful attenuation and the final destination does not repay that attenuation. A negative result showing that every admissible nonstationary property is repaid downstream would close the remaining fixed-source transform route for a source-specific reason.
+A positive result must therefore expose a genuine property of the classical prime-counting error itself. The only remaining plausible source-side leverage is that `G` contains nonstationary or migrating log-frequency structure which the exact Wang filter attenuates pointwise even though it cannot annihilate any fixed band. A negative result showing that every admissible such structure is either a stronger PNT remainder in disguise or is repaid downstream would close the remaining fixed-source transform route for a source-specific reason.
 
 ## Decisive test
 
-Start from the exact decomposition
+Start from the exact source quotients
 
-`mu-u du = u(1+D)G + mu_pp`.
+`nu_prime=u(1+D)G`
 
-Use `VIS-338` as a hard control: account explicitly for the exponentially negligible `mu_pp` term. On the surviving source, do not begin from an atomic packet and infer novelty from its geometry. First translate any proposed smooth statistic through the `VIS-339` identity
+and
 
-`integral phi d nu_prime = integral [(u-1)phi-u phi']G du`.
+`F(u)=uG(u)-H(u)+2e^(-u)+O(u^2e^(-u/2))`,
 
-A candidate survives the source gate only if the translated statement is a nontrivial quantitative property of `G` at the relevant scale rather than ordinary partial summation, a positive-mass estimate, coherent regular variation, a fixed/bounded log-frequency band, or a restatement of an already assumed prime-number-theorem remainder.
+with the exact causal inverse for the prime-only summatory term supplied by `VIS-340`.
 
-For a surviving candidate, derive the resulting pointwise size of `Q` and compare it against the Korobov--Vinogradov-scale input. If a proposed gain is `exp(-phi(u))`, compute the lower linear rate `liminf phi(u)/u`; any positive rate still carries the Mellin/zero-free-half-plane cost isolated in `VIS-331`.
+A candidate survives the source gate only if its content remains nontrivial when stated directly as a quantitative property of `G`. Reject any mechanism whose apparent gain is produced only by atomic packetization, prime square-log weighting, ordinary partial summation, positive-mass estimates, coherent regular variation, a fixed/bounded log-frequency band, or a restatement of an already assumed prime-number-theorem remainder.
+
+For a surviving candidate, derive the resulting pointwise size of `Q` through the exact multiplier from `VIS-333` and compare it against the Korobov--Vinogradov-scale input. If a proposed gain is `exp(-phi(u))`, compute the lower linear rate `liminf phi(u)/u`; any positive rate still carries the Mellin/zero-free-half-plane cost isolated in `VIS-331`.
 
 Then trace the same mechanism through Wang's complete destination. Explicitly identify every term depending on `Q`, `Q'`, or equivalent unsmoothed source information. Accept transform leverage only if the final bound retains the smaller `Q` scale without requiring derivative-sized control that reconstructs the source through `VIS-334`.
 
-Kill a candidate if its only content disappears under the `VIS-339` theta translation, if it relies on isolated prime discontinuities or proper-prime-power mass, if it discards the signed baseline cancellation by absolute values, if it hides a stronger bound for the theta/source remainder, or if a downstream term pays back the derivative carrier.
+Kill a candidate if its only content disappears under the `VIS-339` theta translation or the `VIS-340` summatory inversion, if it relies on isolated prime discontinuities or proper-prime-power mass, if it discards signed baseline cancellation by absolute values, if it hides a stronger theta/PNT remainder, or if a downstream term pays back the derivative carrier.
 
 ## Evidence boundary
 
-`VIS-333`--`VIS-336` classify generic filter transfer and repayment. `VIS-337` proves that prime-power atoms enter `Q'` exactly and that each individual atom is too small. `VIS-338` proves that all proper prime powers are collectively negligible at the live envelope scale. `VIS-339` proves that the remaining centered `k=1` prime source is exactly `u(1+D)G` and that its smooth packet statistics are exact functionals of `G`.
+`VIS-333`--`VIS-336` classify generic filter transfer and repayment. `VIS-337` proves that prime-power atoms enter `Q'` exactly and that each individual atom is too small. `VIS-338` proves that all proper prime powers are collectively negligible at the live envelope scale. `VIS-339` proves that the remaining centered `k=1` prime source is exactly `u(1+D)G` and that its smooth packet statistics are exact functionals of `G`. `VIS-340` proves that the prime square-log summatory remainder is an explicitly invertible partial-summation image of the same `G`, with proper prime powers exponentially lower order.
 
-None of these results proves a new bound or nonstationary theorem for `G`, an improvement of the Korobov--Vinogradov remainder, arithmetic frequency migration, or destination-level avoidance of derivative-sensitive information. The clue therefore remains `accepted`.
+None of these results proves a new bound or nonstationarity theorem for `G`, an improvement of the Korobov--Vinogradov remainder, arithmetic frequency migration, or destination-level avoidance of derivative-sensitive information. The clue therefore remains `accepted`.
 
 ## Research disposition
 
 Outcome: **narrowed**.
 
-The live source question is no longer "can many prime atoms form a special packet?" It is whether the normalized Chebyshev-theta remainder itself has a source-envelope-scale nonstationary structure that Wang's filter can exploit without the complete destination paying back the derivative carrier.
+The live source question no longer concerns whether a clever representation of primes creates hidden cancellation before Wang's filter. Both the atomic and summatory source descriptions quotient back explicitly to the Chebyshev-theta remainder. The remaining candidate mechanism must be a genuine nonstationary property of `G` itself, followed by demonstrable attenuation through Wang's nonvanishing filter and a destination-level proof that the derivative carrier is not paid back.
