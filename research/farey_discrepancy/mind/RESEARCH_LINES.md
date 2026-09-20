@@ -2,16 +2,14 @@
 
 This file holds the current mathematical questions suggested by the durable Farey-discrepancy intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Decide whether the block-Mertens correction can become negative-sparse modulo switched-blind directions
+## Define the growing-block switched quotient before testing block-Mertens positivity
 
 **Linked intuition:** `MI-039-periodic-scale-switching-can-create-a-supercritical-floquet-blind-mode`.
 
-FD-233 makes vanishing late-band negative-capacity density necessary and sufficient for a switched-preserving positive lift. FD-234 removes the nearest-integer artifact from this question: the rounded correction differs by a capacity-negligible switched-blind profile from the canonical real representative
+FD-233 makes vanishing negative-capacity density necessary and sufficient for a positive lift inside a nontrivial switched-response class, and FD-234 identifies the canonical source-forced correction as `tilde c_N=-(1/2)(1*U_N)` modulo a capacity-negligible rounding term. FD-235 shows that the fixed-profile quotient is too coarse for this representative: for every fixed `N`, `tilde c_N` itself is switched-blind because its switched response is only `O_N(2^j)=o(4^j)`. Its affine class therefore contains zero and the fixed-`N` negative-capacity infimum is exactly zero.
 
-`tilde c_N(n)=-(1/2)(1*U_N)(n)`, with `U_N(d)=M(dN)-M((d-1)N)`.
+The live coefficient question must use the same quantifier order as the growing reservoir construction. What source-derived normalization `L_N` and triangular blind class on `0<=j<J(N)` capture harmless adjustments uniformly while not automatically quotienting out the canonical block-Mertens repair? Once that class is fixed, does the normalized correction have a positive one-sided distance from the nonnegative cone, or can a uniformly blind family make its negative capacity negligible? A lower bound after freezing `N` cannot answer this question.
 
-The live coefficient problem is therefore exact. Vary this explicit block-Mertens convolution by legitimate switched-blind directions. Is the infimum of its late-band negative-capacity density bounded away from zero, or is there a representative for which that density tends to zero? Rounding cannot change the answer.
+## Separate family-level coefficient positivity from discrete source realization
 
-## Separate coefficient positivity from discrete source realization
-
-Passing the one-sided affine criterion does not construct an admissible prime occupancy. Integer multiplicities, finite reservoir capacities and the exact source-side constraints must still be realized. Conversely, failure of those discrete gates should not be conflated with the coefficient-level affine question now expressed directly in terms of block Mertens increments.
+Even a nontrivial triangular positive lift would not construct an admissible prime occupancy. Integer multiplicities, finite reservoir capacities and the exact source-side constraints would still have to be realized. Conversely, failure of those discrete gates should not be folded into the coefficient-level question. The first task is to formulate a non-vacuous coupled `N,J(N)` quotient; only after that quotient survives the FD-235 control does its one-sided capacity distance become an arithmetic obstruction worth transporting to the discrete source.
