@@ -1,27 +1,25 @@
-# MI-041 — Wang fragmentation renormalizes to parent-scale repetition and conductor before deeper aggregation is necessary
+# MI-041 — Direct original-period Minkowski decimation closes Wang branchwise occupancy without a center-gap hierarchy
 
-**Evidence level:** exact/literature-backed synthesis from VIS-313--[VIS-327](../../findings/VIS-327-wang-parent-length-decimation.md), plus classical rational mechanical/Christoffel geometry and the dimension-two Selberg upper-bound sieve. No prime-pair asymptotic or RH consequence is claimed.
+**Evidence level:** exact/literature-backed synthesis from VIS-313--[VIS-329](../../findings/VIS-329-direct-minkowski-decimation-closes-wang-transition.md), plus classical rational mechanical-word geometry, Minkowski's convex-body theorem and the dimension-two Selberg upper-bound sieve. No prime-pair asymptotic or RH consequence is claimed.
 
-The cutoff-free Wang remainder has no useful global nearest-frequency spacing, but dyadic shells reduce the finite-window loss to prime-ratio occupancy with destination taper. VIS-317--VIS-323 identify the faithful coordinates: a unimodular Bézout chart preserves both prime exclusions, the thin domain has only a few mechanical branches, center-gap decimation converts them into fixed-gap diagonal runs, and the aggregate Hardy--Littlewood weight of those runs is neutral at the relevant scale.
+The cutoff-free Wang remainder has no useful global nearest-frequency spacing, but dyadic shells reduce the finite-window loss to simultaneous-prime occupancy on a few rational mechanical branches with a taper-weighted destination. VIS-317--VIS-324 identify faithful unimodular Bézout coordinates and show that sufficiently long affine packets have the natural two-prime Selberg upper-bound scale.
 
-VIS-324 prices the first-level run length. The standard translation-uniform two-linear-form Selberg sieve gives the required two-prime upper-bound scale whenever `k<=M^(1-delta)` at the natural Wang window. VIS-325 then shows that `k>L` is not representation-final: the observed branch is a lower-denominator rational mechanical path up to `O(1)` determinant indices.
+VIS-325--VIS-328 originally treated fragmentation through the center-gap denominator `k=|u-v|`: lower-denominator mechanical words, Christoffel parents and finally a determinant-`k` Minkowski vector progressively closed the range `k>L`. That analysis correctly exposed how packet length, arithmetic dimension and conductor have to be controlled together, but it left a near-maximal transition when `k<=L`.
 
-VIS-326 resolves the first Christoffel split inside that word. Put `J=floor(m/k)` and `q=m mod k`. The two parents have lengths `q` and `k-q`; their Wang monodromies are primitive consecutive-coordinate vectors. For `J>=2` both parent steps are nondegenerate, while for `J=1` the externally selected parent is axis-degenerate and the complementary parent remains nondegenerate.
+VIS-329 shows that the transition belonged to the intermediate representation. Return to the original Wang phase denominator `m=max(u,v)` with `L<m` and the lattice
 
-VIS-327 converts that structural split into an exact finite-window arithmetic estimate. For a parent `(p,s)` with `d s-p k=±1`, an `s`-step changes the Wang prime-coordinate pair by one constant vector `G` except at at most one edge. If `s<L`, residue classes modulo `s` therefore form at most `s+1` affine runs with repeat scale `L/s`. On each run the two-form resultant satisfies the exact identity
+`Lambda_(c,m)={(s,e) in Z^2 : e=cs (mod m)}`.
 
-`Delta=p h_0-s t_j(h_0)`
+Its covolume is `m`, so Minkowski gives a nonzero vector with `1<=s<=2 sqrt(m)` and `1<=E=|e|<=2 sqrt(m)`. Along an `s`-step, the branch has one constant Wang displacement except at at most `E` edges. Removing those edges partitions the whole candidate branch into at most `s+E` affine runs. The same vector makes the step coefficients `O(E)` and the two-form resultant `O(s+E)`, so the arithmetic conductor is polynomial in `M`; at the natural scale the step is automatically nondegenerate.
 
-and the uniform bound `|Delta|<=4s`. The same renormalization that makes the step small therefore makes the arithmetic conductor small; it does not merely rearrange the word.
+The classical two-form upper-bound sieve then gives, uniformly in the center gap,
 
-For a nondegenerate parent the classical two-form sieve gives
+`P_j << L (log log M)^2/log^2 M`
 
-`P_j << Lambda_s [L/log^2(3+L/s)+s]`,
+when `L asymp M/log log M` and `m asymp M`. Relative to the natural two-prime cell scale this is only `A_M=O((log log M)^2)`, and its square root lies inside the taper allowance isolated in VIS-316. The complete natural subperiod branchwise occupancy problem is therefore closed at the required upper-bound scale.
 
-where `Lambda_s` grows only logarithmically with the parent-scale conductor. At the natural Wang scale, every nondegenerate `s<=M^(1-delta)` yields only `O_delta(log log M)` excess over the natural two-prime cell scale, well below the final taper allowance. Thus for `J>=2` every unresolved center must have `min(q,k-q)=M^(1-o(1))`; for `J=1`, the same conclusion applies to the complementary nondegenerate parent, while a short axis parent alone remains one-dimensional.
+The reusable lesson is stronger than “fragmentation should be renormalized.” A faithful representation should be judged by the finite-window cost it exposes, not by whether its intermediate symbolic decomposition looks canonical. The source-native period `m` already carries a short Diophantine vector that controls **packet count, exceptional edges, arithmetic dimension and conductor simultaneously**. Passing first to the center-gap denominator can reveal structure, but it is not automatically the representation that should govern the final estimate.
 
-The reusable lesson is stronger than “fragmentation should be renormalized.” A faithful renormalization is useful when it simultaneously controls **block length, arithmetic dimension and conductor** on the finite window actually observed. Once those quantities are carried together, polynomially short nondegenerate first parents are already harmless. The remaining obstruction is genuinely near-full-scale nonrepetition, not hidden local-factor growth.
+This moves the critical path away from branchwise Wang occupancy. The remaining source-sensitive question is the fixed-power real-axis route: whether the squared-von-Mangoldt source admits a quantitatively useful statement strictly weaker than the RH-equivalent half-plane pole exclusion already isolated by VIS-293. Occupancy refinements should be reopened only if a later destination needs more than the VIS-316 upper-bound criterion or a flaw is found in the direct decimation.
 
-The next discriminator is therefore whether deeper continued-fraction parents or offset aggregation can create a shorter nondegenerate packet in the surviving `M^(1-o(1))` regime without enlarging the resultant or destroying the Wang taper. If no such packet exists, a discrepancy/energy formulation may be the right representation rather than further symbolic factorization.
-
-**Boundary.** VIS-327 is an upper-bound closure for polynomially short nondegenerate first parents. It does not prove that deeper parents exist at useful scales, solve the `J=1` axis-short/complement-long case, provide a prime-pair asymptotic/lower bound, or establish the final Wang natural-window theorem. Any continuation must preserve the two-prime local arithmetic and destination taper.
+**Boundary.** VIS-329 is an upper-bound closure for the moving-upper candidate branches in the subperiod regime `L<m`. It does not give a prime-pair asymptotic, lower bound, complete Wang theorem, improved fixed-power source estimate or stronger RH criterion. Center-gap/Christoffel descriptions remain valid mathematics; they are simply not load-bearing for this upper-bound destination.
