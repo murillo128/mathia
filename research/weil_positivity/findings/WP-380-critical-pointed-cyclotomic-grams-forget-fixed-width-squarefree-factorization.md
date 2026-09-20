@@ -1,10 +1,10 @@
 ---
 id: WP-380
-title: Critical pointed cyclotomic Grams forget fixed-width squarefree factorization
+title: Critical pointed cyclotomic Grams forget factorization when reciprocal-root mass vanishes
 branch: weil_positivity
 status: supported
 kind: prime-circle-pointed-dirichlet-primitive-shell-critical-scaling-obstruction
-claim_strength: exact RH-independent asymptotic reduction showing that critically normalized primitive cyclotomic logarithms on every fixed-width squarefree family with least prime factor tending to infinity converge in pointed Dirichlet geometry to the same full-root Nyman carrier as prime shells, so finite Gram packets become asymptotically blind to prime versus mixed-prime support while the exact Mangoldt boundary distinction is subcritical
+claim_strength: exact RH-independent asymptotic reduction showing that critically normalized primitive cyclotomic logarithms converge in pointed Dirichlet geometry to the same full-root Nyman carrier whenever the reciprocal square-root mass of their distinct prime factors tends to zero; this includes arbitrary prime-power exponents and growing-width families, so finite Gram packets become asymptotically blind to prime versus mixed-prime support while the exact Mangoldt boundary distinction is subcritical
 created: 2026-09-20
 related: [WP-072, WP-073, WP-161, WP-168, WP-378, WP-379]
 clues: [CLUE-noncharacter-finite-archimedean-incidence]
@@ -14,7 +14,7 @@ prior_art:
   - Nyman-Beurling and Muenz Mellin geometry already audited in WP-168
 ---
 
-# WP-380 — Critical pointed cyclotomic Grams forget fixed-width squarefree factorization
+# WP-380 — Critical pointed cyclotomic Grams forget factorization when reciprocal-root mass vanishes
 
 ## Claim
 
@@ -34,34 +34,34 @@ K(r)=r^{-1/2}\int_0^\infty a(x)a(x/r)\,dx,
 a(x)=H_{\lfloor x\rfloor}-\log x-\gamma.
 \]
 
-A possible objection remained important for the `weil_positivity` mandate: a composite `A_N` is an all-root control, not the actual primitive Prime-Circle shell `\log\Phi_N`. Perhaps the primitive cyclotomic shell removes exactly the mixed-prime content that classicalized the full-root Gram and thereby restores arithmetic discrimination.
+A possible objection remained important for the `weil_positivity` mandate: a composite `A_N` is an all-root control, not the actual primitive Prime-Circle shell `\log\Phi_N`. Perhaps primitive cyclotomic projection removes exactly the mixed-prime content that classicalized the full-root Gram and restores arithmetic discrimination.
 
-It does not, at the critical scale forced by `WP-073`, on a broad source-native family.
+It does not at the critical scale forced by `WP-073` whenever the distinct prime factors have vanishing reciprocal square-root mass.
 
 Let
 
 \[
-F_n(z):=\log\Phi_n(z)
+F_n(z):=\log\Phi_n(z),
+\qquad
+W_n:=n^{-1/2}F_n,
 \]
 
-with the canonical analytic branch satisfying `F_n(0)=0`, and put
-
-\[
-W_n:=n^{-1/2}F_n
-\]
-
-in the pointed local Dirichlet space
+with the canonical analytic branch `F_n(0)=0`, in the pointed local Dirichlet space
 
 \[
 D_1(F)=\left\|\frac{F(z)-F(1)}{z-1}\right\|_{H^2}^2.
 \]
 
-Fix an integer `R>=1`. For every sequence of squarefree integers `n_j` satisfying
+Define
 
 \[
-\omega(n_j)\le R,
-\qquad
-P^-(n_j):=\min_{p\mid n_j}p\longrightarrow\infty,
+\eta(n):=\sum_{p\mid n}p^{-1/2}.
+\]
+
+For every integer sequence `n_j>1` satisfying
+
+\[
+\eta(n_j)\longrightarrow0,
 \]
 
 one has
@@ -73,9 +73,13 @@ one has
 \tag{1}
 \]
 
-Thus any fixed number of growing prime factors becomes invisible to the critically normalized positive pointed geometry. More generally, if `n_j,m_j` are two such squarefree sequences and
+No squarefreeness or bounded-factor-width hypothesis is needed. In particular, (1) includes arbitrary prime-power exponents, every bounded-width family whose least prime factor tends to infinity, and also growing-width families for which the collective reciprocal-root mass still tends to zero.
+
+More generally, if `n_j,m_j` satisfy
 
 \[
+\eta(n_j)+\eta(m_j)\longrightarrow0,
+\qquad
 \frac{m_j}{n_j}\longrightarrow r\in(0,\infty),
 \]
 
@@ -84,12 +88,12 @@ then
 \[
 \boxed{
 \langle W_{n_j},W_{m_j}\rangle_{D_1}
-\longrightarrow K(r),
+\longrightarrow K(r).
 }
 \tag{2}
 \]
 
-exactly the same kernel as for the full-root controls and hence the same Nyman--Beurling/Muenz modulus-square geometry classified in `WP-168`.
+Thus the same Nyman--Beurling/Muenz modulus-square geometry classified in `WP-168` survives primitive cyclotomic projection on a substantially larger class than the original fixed-width squarefree statement.
 
 This includes the sharp prime-versus-semiprime control. For distinct primes `p,q`,
 
@@ -103,7 +107,8 @@ F_{pq}=A_{pq}-A_p-A_q.
 If `p,q\to\infty`, then
 
 \[
-\left\|\frac{F_{pq}}{\sqrt{pq}}-rac{A_{pq}}{\sqrt{pq}}\right\|_{D_1}
+\left\|\frac{F_{pq}}{\sqrt{pq}}-
+\frac{A_{pq}}{\sqrt{pq}}\right\|_{D_1}
 \longrightarrow0,
 \tag{4}
 \]
@@ -127,21 +132,32 @@ At critical half-density the latter boundary value is only
 \tag{5}
 \]
 
-So the positive critical bulk geometry keeps a nonzero universal Nyman norm while the exact finite-prime selector becomes asymptotically invisible. This is not merely an all-root matched control: the clone is now an **actual primitive mixed-prime cyclotomic shell**.
+The same suppression occurs on a prime-power shell `p^a`:
 
-The result closes the route
+\[
+\frac{F_{p^a}(1)}{\sqrt{p^a}}
+=
+\frac{\log p}{p^{a/2}}
+\longrightarrow0
+\qquad(p\to\infty).
+\]
+
+So the positive critical bulk geometry keeps a nonzero universal Nyman norm while the exact finite-prime selector becomes asymptotically invisible. This is not merely an all-root matched control: the clone can be an actual primitive mixed-prime cyclotomic shell.
+
+The route now closed is
 
 \[
 \boxed{
 \text{primitive Prime-Circle shell}
 +\text{pointed }D_1
 +\text{forced }n^{-1/2}\text{ scaling}
++\eta(n)\to0
 \not\Rightarrow
-\text{prime-power-selective Weil positivity}
+\text{prime-power-selective Weil positivity}.
 }
 \]
 
-for every fixed-width squarefree family whose prime factors all escape to infinity. A surviving pointed route must retain arithmetic information before this top-divisor dominance takes over, for example through source-forced small-prime/archimedean incidence, growing-width coupling, a singular boundary object, or an indefinite finite--archimedean assembly formed before the positive critical limit.
+A surviving pointed route must therefore retain arithmetic information before this top-divisor dominance takes over, for example through persistent small-prime mass, source-forced finite--archimedean incidence, a singular boundary object, or an indefinite/global assembly formed before the positive critical limit.
 
 ## 1. Primitive cyclotomic logarithms are Mobius combinations of full-root shells
 
@@ -166,7 +182,7 @@ A_d(z)=\log(1-z^d)-\log(1-z),
 \tag{8}
 \]
 
-choosing the analytic logarithm branches that vanish at `z=0` yields the exact identity
+choosing analytic logarithm branches vanishing at `z=0` yields
 
 \[
 \boxed{
@@ -175,21 +191,28 @@ F_n=\sum_{d\mid n}\mu(n/d)A_d.
 \tag{9}
 \]
 
-The top divisor `d=n` occurs with coefficient one. Thus
+The top divisor `d=n` occurs with coefficient one, so
 
 \[
 F_n-A_n
 =
-\sum_{\substack{d\mid n\\ d<n}}
+\sum_{\substack{d\mid n\\d<n}}
 \mu(n/d)A_d.
 \tag{10}
 \]
 
-For `n=pq` with distinct primes, (10) is exactly (3).
+Equivalently, with `e=n/d`,
 
-This identity is elementary but important for the research question: primitive-shell projection does not create a new analytic object unrelated to the full-root family. It is an inclusion--exclusion of lower-degree full-root shells. The only question is whether those lower-degree terms survive the intrinsic critical normalization.
+\[
+F_n-A_n
+=
+\sum_{\substack{e\mid n\\e>1}}
+\mu(e)A_{n/e}.
+\]
 
-## 2. WP-168 supplies the uniform linear energy bound
+Only squarefree `e` contribute, regardless of the exponents in `n`. This is the key point hidden by the original squarefree specialization.
+
+## 2. The defect is controlled by reciprocal-root prime mass
 
 Taking `M=N` in `WP-168` gives
 
@@ -202,7 +225,7 @@ C:=\log(2\pi)-\gamma>0.
 \tag{11}
 \]
 
-Consequently there is a fixed constant `B<infinity` such that
+Hence there is a fixed `B<infinity` such that
 
 \[
 \boxed{
@@ -212,9 +235,9 @@ D_1(A_d)\le Bd
 \tag{12}
 \]
 
-where `A_1=0` and finitely many small degrees are absorbed into `B`.
+with `A_1=0` and finitely many small degrees absorbed into `B`.
 
-Normalize (10) by `n^{-1/2}` and use the triangle inequality in the pointed Hilbert seminorm:
+Normalize (10) by `n^{-1/2}` and use the triangle inequality:
 
 \[
 \begin{aligned}
@@ -231,52 +254,85 @@ Normalize (10) by `n^{-1/2}` and use the triangle inequality in the pointed Hilb
 \tag{13}
 \]
 
-Now assume `n` is squarefree. Then every divisor contributes with `|mu|=1`, and the divisor sum factorizes exactly:
+Changing variables to `e=n/d` gives the uniform bound, valid for every `n>1`,
 
 \[
-\sum_{d\mid n}\sqrt{\frac dn}
-=
-\prod_{p\mid n}\left(1+p^{-1/2}\right).
+\|W_n-U_n\|_{D_1}
+\le
+\sqrt B
+\sum_{\substack{e\mid n\\e>1}}
+|\mu(e)|e^{-1/2}.
 \tag{14}
 \]
 
-Removing the top divisor gives
+The nonzero terms are indexed by squarefree divisors of `rad(n)`, hence
 
 \[
 \boxed{
 \|W_n-U_n\|_{D_1}
 \le
-\sqrt B
-\left[
+\sqrt B\left[
 \prod_{p\mid n}(1+p^{-1/2})-1
 \right].
 }
 \tag{15}
 \]
 
-If `omega(n)<=R`, then
+For squarefree `n`, the `e=n` term in the product bound corresponds to `A_1=0`, so (15) may overcount one harmless zero term; it remains a valid bound. Since `1+x\le e^x`,
 
 \[
-\prod_{p\mid n}(1+p^{-1/2})-1
+\boxed{
+\|W_n-U_n\|_{D_1}
 \le
-\left(1+P^-(n)^{-1/2}\right)^R-1,
+\sqrt B\left(e^{\eta(n)}-1\right).
+}
 \tag{16}
 \]
 
-which tends to zero as `P^-(n)->infinity`. Equations (15)--(16) prove (1).
+Therefore `eta(n_j)->0` proves (1).
 
-For semiprimes this reduces to the transparent estimate
+The original sufficient condition is recovered immediately: if `omega(n)<=R` and `P^-(n)->infinity`, then
 
 \[
-\left\|\frac{F_{pq}}{\sqrt{pq}}-rac{A_{pq}}{\sqrt{pq}}\right\|_{D_1}
+\eta(n)\le \frac{R}{\sqrt{P^-(n)}}\longrightarrow0.
+\]
+
+But the proof now also permits `omega(n)->infinity`, provided the entire reciprocal-root mass tends to zero. For example, any family satisfying
+
+\[
+\omega(n)=o\!\left(\sqrt{P^-(n)}\right)
+\]
+
+has `eta(n)->0`. This is only a convenient sufficient condition; `eta(n)->0` itself is the sharper hypothesis supplied by the exact divisor estimate.
+
+For semiprimes, (15) yields
+
+\[
+\left\|\frac{F_{pq}}{\sqrt{pq}}-
+\frac{A_{pq}}{\sqrt{pq}}\right\|_{D_1}
 \le
-\sqrt B\left(p^{-1/2}+q^{-1/2}+ (pq)^{-1/2}\,0\right),
+\sqrt B\left(p^{-1/2}+q^{-1/2}+p^{-1/2}q^{-1/2}\right),
 \tag{17}
 \]
 
-where the `A_1` term is zero. In particular the defect is `O(p^{-1/2}+q^{-1/2})`.
+where the last product term merely overcounts the zero `A_1` contribution. In particular the defect is `O(p^{-1/2}+q^{-1/2})`.
 
-## 3. The full Nyman Gram kernel transfers to primitive mixed-prime shells
+For a prime power, the identity is even sharper:
+
+\[
+F_{p^a}=A_{p^a}-A_{p^{a-1}},
+\]
+
+so
+
+\[
+\left\|p^{-a/2}F_{p^a}-p^{-a/2}A_{p^a}\right\|_{D_1}
+\le \sqrt B\,p^{-1/2}.
+\]
+
+Thus repeated prime exponents do not rescue the positive critical geometry.
+
+## 3. The full Nyman Gram kernel transfers under the same condition
 
 Put
 
@@ -284,14 +340,14 @@ Put
 E_n:=W_n-U_n.
 \]
 
-On the fixed-width squarefree families above, (1) says
+Under `eta(n_j)->0`, (16) gives
 
 \[
-\|E_n\|_{D_1}=o(1).
+\|E_{n_j}\|_{D_1}=o(1).
 \tag{18}
 \]
 
-`WP-168` also gives bounded critical norms for `U_n` and the exact pairwise limit
+`WP-168` also gives bounded critical norms for `U_n` and the pairwise limit
 
 \[
 \langle U_{n_j},U_{m_j}\rangle_{D_1}
@@ -318,15 +374,11 @@ Therefore Cauchy--Schwarz gives
 \tag{20}
 \]
 
-Combining (19)--(20) proves (2).
+This proves (2). It also transfers immediately to every fixed finite Gram packet whose shell sequences all satisfy `eta->0` and have convergent pairwise degree ratios. The limiting positive form cannot recover which vectors came from prime powers and which came from genuinely mixed-prime primitive shells.
 
-The statement extends immediately from one pair to every fixed finite Gram packet: if finitely many shell sequences have bounded squarefree width, least prime factor tending to infinity, and convergent pairwise degree ratios, their entire critically normalized primitive-shell Gram matrix converges entrywise to the same matrix obtained from the universal full-root Nyman kernel. The limiting positive form therefore cannot recover which entries came from primes and which came from genuinely mixed-prime primitive shells.
-
-This is stronger than saying that one diagonal statistic is wrong. At the critical scale, the **vectors themselves** differ from their full-root controls by `o(1)` in the geometry whose positivity was supposed to carry the arithmetic theorem.
+This is stronger than a bad diagonal statistic: the normalized primitive vectors themselves approach the universal full-root controls in the geometry whose positivity was supposed to carry the arithmetic theorem.
 
 ## 4. Same-scale prime and semiprime primitive shells can become indistinguishable
-
-The previous section already gives a matched composite control without using any distribution theorem for primes. There is also a particularly sharp same-scale version.
 
 Choose any semiprime sequence
 
@@ -356,7 +408,7 @@ F_{\ell_j}=A_{\ell_j},
 while (4) gives
 
 \[
-\left\|W_{n_j}-U_{n_j}\right\|_{D_1}\to0.
+\|W_{n_j}-U_{n_j}\|_{D_1}\to0.
 \tag{24}
 \]
 
@@ -383,7 +435,7 @@ Hence
 \tag{26}
 \]
 
-Yet the exact cyclotomic boundary values are maximally different in support:
+Yet
 
 \[
 F_{\ell_j}(1)=\log\ell_j,
@@ -392,26 +444,24 @@ F_{n_j}(1)=0.
 \tag{27}
 \]
 
-The contradiction is only apparent because critical normalization suppresses the prime boundary value:
+The apparent contradiction is resolved by critical scaling:
 
 \[
 \frac{\log\ell_j}{\sqrt{\ell_j}}\to0.
 \tag{28}
 \]
 
-Thus the geometry is internally consistent but unusable for the desired selection: its positive critical topology makes a true prime shell and a true mixed-prime shell asymptotically the same vector precisely while the unnormalized arithmetic boundary functional distinguishes them.
-
-This supplies a stronger matched control than the all-degree control in `WP-168` or the rotated full-root control in `WP-379`.
+The geometry is internally consistent but unusable for prime-power selection: it makes a true prime shell and a true mixed-prime shell asymptotically the same vector precisely while the unnormalized arithmetic boundary functional distinguishes them.
 
 ## 5. Relation to WP-378 and WP-379
 
 `WP-378` computed the canonical unpointed `H^2` Gram of `log Phi_n`. There the mixed-prime obstruction is visible at finite degree: the exact positive kernel Euler-factorizes, gives positive energy to composites, and carries `Lambda(n)` only through the unbounded boundary trace at `z=1`.
 
-The present result tests the principal escape left open there: move to the non-rotation-invariant pointed local Dirichlet metric of `WP-072`, where boundary evaluation is controlled and the degree-cover normalization itself forces the critical half-density. The obstruction changes form but does not disappear. Rather than a finite-degree Euler-factorized Hardy kernel, one gets **top-divisor dominance**: primitive inclusion--exclusion terms from every proper divisor become negligible after critical normalization whenever the number of prime factors is fixed and all of them grow. The primitive shell then classicalizes to the same Nyman carrier as the full-root shell.
+The present result tests the principal escape left open there: move to the non-rotation-invariant pointed local Dirichlet metric of `WP-072`, where boundary evaluation is controlled and the degree-cover normalization itself forces the critical half-density. The obstruction changes form but does not disappear. Primitive inclusion--exclusion terms are controlled by the reciprocal-root mass of distinct prime divisors. When that mass vanishes, all proper-divisor corrections disappear in the critical norm and the primitive shell classicalizes to the same Nyman carrier as the full-root shell.
 
-`WP-379` found a two-channel version of the same loss for `A_N(z)` and `A_N(-z)`, but its mixed-degree controls were still full-root objects. Equation (1) removes that loophole for actual primitive cyclotomic shells on fixed-width squarefree families.
+`WP-379` found a two-channel version of the same loss for `A_N(z)` and `A_N(-z)`, but its mixed-degree controls were still full-root objects. Equation (1) removes that loophole for actual primitive cyclotomic shells and now includes arbitrary exponents and some growing-width families.
 
-The three findings therefore expose the same tension at different topological levels:
+The three findings expose the same tension at different topological levels:
 
 \[
 \text{exact cyclotomic arithmetic boundary}
@@ -425,26 +475,34 @@ The arithmetic selector survives at finite scale, but the positive critical geom
 
 The negative result is intentionally not universal.
 
-First, the hypothesis `P^-(n)->infinity` matters. Families with a fixed small prime factor, such as `n=2p`, do not satisfy (16): a lower-divisor term can remain at order one after critical normalization. Such families require a separate analysis; `WP-379` already shows that the most immediate half-turn channel does not rescue the finite-prime contrast, but (1) by itself does not classify every small-prime defect.
+First, `eta(n)->0` is a sufficient condition supplied by the top-divisor estimate, not a necessary condition for collapse. Families with persistent small-prime mass, such as `n=2p`, satisfy `eta(n)>=2^{-1/2}` and lie outside the theorem. A lower-divisor channel can remain order one there. `WP-379` already shows that the most immediate half-turn channel does not rescue the finite-prime contrast, but (1) does not classify every small-prime defect.
 
-Second, bounded factor width matters. If `omega(n)` grows, the product in (15) need not tend to one even if individual primes grow. Growing-width incidence remains outside this theorem and would have to be source-forced rather than chosen to encode the desired support.
+Second, growing factor width by itself is no longer an escape. The theorem includes every growing-width family with `eta(n)->0`. What remains outside this argument is growing-width or other incidence for which the reciprocal-root mass does not vanish, and any successful use of that regime would still have to be source-forced rather than tuned to encode the desired support.
 
-Third, this result concerns the positive pointed `D_1` Gram after the `n^{-1/2}` normalization forced by the cover isometry. It does not rule out an indefinite precritical pairing, a singular boundary topology, a genuinely finite--archimedean relation formed before scalar Hilbert completion, or a cohomological object whose sign theorem is not the pointed Gram norm.
+Third, the result concerns the positive pointed `D_1` Gram after the `n^{-1/2}` normalization forced by the cover isometry. It does not rule out an indefinite precritical pairing, a singular boundary topology, a genuinely finite--archimedean relation formed before scalar Hilbert completion, or a cohomological object whose sign theorem is not the pointed Gram norm.
 
 Fourth, nothing here generates the Gamma term or the polar counterterm of the completed explicit formula. The limiting kernel is exactly the `WP-168` Nyman modulus-square carrier, so its positivity remains unconditional autocorrelation positivity and cannot force RH.
 
-These limitations sharpen rather than weaken the research consequence: a surviving construction must use information that is **not** asymptotically contained in a fixed finite collection of lower-divisor corrections to the universal full-root carrier.
+The consequence is therefore precise: a surviving construction must use information not controlled away by the distinct-prime reciprocal-root defect estimate, or must couple the arithmetic boundary to the global sign mechanism before the critical Hilbert completion forgets it.
 
 ## 7. Prior-art and novelty audit
 
 No new theorem about cyclotomic polynomials, the prime number theorem, or Nyman--Beurling geometry is claimed. The Mobius product (6), the boundary value `Phi_n(1)`, and the prime number theorem are classical. `WP-168` already identified the full-root critical scaling kernel with the classical Nyman--Muenz Mellin modulus square.
 
-A bounded literature search for combinations of local Dirichlet spaces, cyclotomic logarithms, semiprime primitive shells, and Nyman--Beurling geometry did not locate a source stating the branch-specific asymptotic reduction (1)--(2). The mathematical ingredients are elementary once the `WP-168` scaling theorem is available. The substantive contribution is therefore **Mathia-local search-space closure**: the Nyman classicalization of the full-root control survives primitive cyclotomic projection on every fixed-width squarefree family whose least prime factor grows, and a genuine mixed-prime shell can be made asymptotically indistinguishable from a prime shell in the intrinsic critical pointed norm.
+A bounded literature search for combinations of cyclotomic logarithms, local Dirichlet spaces, Nyman--Beurling geometry, prime-factor asymptotics, and primitive-shell limits did not locate a source stating the branch-specific reduction (1)--(2). The strengthening from bounded squarefree width to `eta(n)->0` uses only the same classical Mobius identity and the `WP-168` linear energy bound: changing variables from divisors `d` to squarefree complementary divisors `e=n/d` exposes that prime-power exponents are irrelevant and that width matters only through the aggregate product `prod_{p|n}(1+p^{-1/2})`.
 
-This is not a variant of classical Weil positivity, Hilbert--Polya, Connes/trace, Frobenius/cohomology, Sonin/localization, or an inserted zero functional. No zero data are used, and the sign is simply the independent positivity of the pointed Hilbert Gram. That is exactly why the matched control is decisive: a geometry whose positive vectors cannot asymptotically distinguish prime support from mixed-prime support cannot itself yield the required finite Weil selector.
+The substantive contribution is therefore **Mathia-local search-space closure**, not a broad novelty claim: primitive cyclotomic projection still classicalizes to the full-root Nyman carrier on every family with vanishing reciprocal-root prime mass, including some growing-width families and arbitrary exponents.
+
+This is not a variant of classical Weil positivity, Hilbert--Polya, Connes/trace, Frobenius/cohomology, Sonin/localization, or an inserted zero functional. No zero data are used, and the sign is simply the independent positivity of the pointed Hilbert Gram. That is exactly why the matched control is decisive: a positive geometry whose vectors can forget the arithmetic support cannot itself supply the required finite Weil selector.
 
 ## Consequence for the research line
 
-The pointed Prime-Circle route is now narrower than `WP-379` alone showed. Passing from full roots to the actual primitive shell does not restore arithmetic discrimination at the critical scale whenever only finitely many growing prime factors are involved. The lower-divisor corrections that encode primitiveness are too small in `D_1` after the forced half-density normalization.
+The pointed Prime-Circle route is narrower than the original form of this finding stated. Squarefreeness and bounded factor width were artifacts of the first estimate, not essential hypotheses. The natural control parameter of the proof is
 
-The next useful test should therefore target one of the hypotheses that made (15) vanish rather than add another bounded finite channel to the same critical Gram. The most concrete surviving classes are: a source-forced coupling in which a small finite place and the archimedean sector enter the same object before the critical limit; a growing-width incidence whose complexity is intrinsic rather than tuned; or a singular boundary/cohomological topology in which the exact `Lambda` trace remains finite and its global sign follows from an independent theorem. Any candidate should be compared against the prime/semiprime control (26) before its positivity is treated as arithmetic evidence.
+\[
+\eta(n)=\sum_{p\mid n}p^{-1/2}.
+\]
+
+Whenever `eta(n)->0`, lower-divisor corrections encoding primitiveness are too small in `D_1` after forced half-density normalization, regardless of prime-power exponents and even when the number of distinct primes grows.
+
+The next useful test should therefore target a regime not killed by (16), rather than merely add more factors or another bounded finite channel to the same critical Gram. The most concrete surviving classes are a source-forced construction with persistent small-prime/archimedean coupling; a nonvanishing-`eta` growing-width incidence whose complexity is intrinsic; or a singular boundary/cohomological topology in which the exact `Lambda` trace remains finite and its global sign follows from an independent theorem. Any candidate should still be checked against the prime/semiprime control (26) before its positivity is treated as arithmetic evidence.
