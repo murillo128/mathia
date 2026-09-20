@@ -15,18 +15,28 @@ C_\Gamma=\frac\pi2+\gamma+\log(8\pi),
 
 where `R_A` is the sum of a screened difference form, a positive endpoint multiplier and a positive Hankel image. The near-floor sector is not merely of unbounded dimension: its negative form index has a strictly positive asymptotic density on the natural `A` scale.
 
-For a Hermitian quadratic form `q` on the common core, define its depth-`eta` negative index by
+For a Hermitian quadratic form `q` on the common core and `eta>0`, define its depth-`eta` negative index by
 
 \[
 \iota_\eta(q):=
 \sup\left\{\dim V:
 V\subset C_c^1(0,1),\ 
 q[f]\le-\eta\|f\|_2^2\text{ for every }f\in V
-\right\},
+\right\}.
 \tag{2}
 \]
 
-and write `iota_eta(A)=iota_eta(mathcal A_A)`. Let
+At depth zero, retain the strict negative form index
+
+\[
+\iota_0(q):=
+\sup\left\{\dim V:
+V\subset C_c^1(0,1),\ 
+q[f]<0\text{ for every }0\ne f\in V
+\right\}.
+\]
+
+Write `iota_eta(A)=iota_eta(mathcal A_A)`. Let
 
 \[
 M_2:=\int_0^\infty s^2h(s)\,ds
