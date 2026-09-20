@@ -1,15 +1,25 @@
-# MI-063 — Hardy-projected Ford energy is naturally narrow, and single-shell dilation preserves that obstruction
+# MI-063 — Ford bandwidth counts only when carrier coherence does not renormalize the critical layer
 
-**Evidence level:** exact harmonic/source-specific synthesis from NB-246--[NB-252](../../findings/NB-252-single-shell-dilation-renormalizes-j-and-preserves-the-ford-packet-obstruction.md), including the Hardy projection identity of [NB-249](../../findings/NB-249-positive-ford-frequencies-collapse-first-order-depth-localization-to-a-one-sided-cauchy-projection.md), the carrier representation [NB-250](../../findings/NB-250-hardy-projected-ford-energy-is-a-narrow-carrier-band-form-factor.md), and the matched-packet crossover [NB-251](../../findings/NB-251-matched-ford-packet-energy-has-a-sharp-super-h-bandwidth-crossover.md). The carrier-energy estimate is a sufficient route, and the packet calculations are controls rather than theorems for actual zeta zeros.
+**Evidence level:** exact harmonic/source-specific synthesis from NB-246--[NB-253](../../findings/NB-253-positive-multi-shell-comb-recreates-the-ford-obstruction-at-shallower-depth.md), including the Hardy projection identity of NB-249, carrier representation NB-250, matched-packet crossover NB-251 and single-shell scale covariance NB-252. The matched packets are compatibility controls, not claims about actual zeta zeros.
 
-NB-248--NB-249 settle the order of operations. The Ford-scaled logarithmic-derivative field has a pole at the planar `L^2` endpoint, so it cannot be squared before the signed divisor pairing. Resolving the positive Mellin frequencies instead performs a one-sided Hardy projection, cancels the Ford depth factors and exactly recovers the finite marked zero current. The carrier phase and horizontal depth mark survive this projection; no decay is created by it.
+NB-248--NB-250 fix the legal order of operations. The Ford-scaled pole must be Hardy-projected through positive Mellin frequencies before Hilbert-space squaring, which exactly recovers the finite depth-marked zero current. The resulting carrier band has natural width `Theta(H)=Theta(X/J)`, while pair phases still resolve ordinate differences at the finer `1/X` scale.
 
-NB-250 identifies what the remaining Hilbert-space problem measures. The projected moving-center current can be written as a Fourier integral whose amplitude is a depth-marked exponential sum over zeros. The natural Mellin shell samples a physical carrier band of width `Theta(H)=Theta(X/J)`. Expanding its energy gives a positive local pair form factor: the averaging envelope resolves ordinate differences on scale `1/H`, while the carrier phase itself oscillates on the finer `1/X` scale.
+NB-251 shows that an independently available carrier span `W` with `W/H->infinity` would disperse the standard matched packet even before full `1/X`-cell orthogonality. NB-252 shows that literal single-shell dilation does not realize that premise: replacing `H` by `B_J H` simultaneously replaces `J` by `J/B_J` and transports the dangerous Ford layer.
 
-NB-251 separates two bandwidth thresholds. To make adjacent `1/X` cells orthogonal one would need width of order `X`, but the matched Ford packet already loses normalized energy when an independently available width `W` satisfies `W/H -> infinity`. A fixed `W=O(H)` retains a positive floor, while an intermediate `H << W << X` would disperse that control packet.
+NB-253 tests the first canonical fixed-`H` multi-carrier realization. For a positive equal-weight comb of `K` translated `H`-scale shells,
 
-NB-252 shows that literal dilation of the same shell does not create such an independently available `W`. If `H_B=B_J H`, then `J_B=J/B_J`; for `1<<B_J<<J` the dilated observable again has only `Theta(H_B)` legal carrier width relative to its own shell scale and supports a matched packet of size `Theta(J_B)` with positive normalized energy. The Ford depth variable shifts by `log B_J`, so the critical packet is transported to the new coordinates rather than destroyed.
+`L_K(v)=e^(iXv) F(Hv) P_K(CHv)`
 
-The durable distinction is therefore between **bandwidth added to a fixed source geometry** and **a rescaling that changes the geometry itself**. Only the first can exploit the NB-251 super-`H` crossover. A legitimate escape must generate extra carriers or shells while keeping the relevant `H,J`, depth marks, selected center and Hardy-projection order under explicit control.
+with the normalized Dirichlet factor `P_K`. Although the convex carrier span is `Theta(KH)`, `P_K` creates a coherence peak of width `Theta(1/(KH))`. The selected-height capacity therefore becomes
 
-**Boundary.** NB-250 does not prove the required carrier-energy estimate for zeta zeros; NB-251 does not prove that super-`H` width suffices for the true marked current; NB-252 rules out only the single-shell dilation mechanism. Zeta-specific cancellation on the legal band or a genuinely multi-carrier source construction remains open.
+`J_eff=R/(KH)=J/K`,
+
+and the matched obstruction reappears at the shallower Ford coordinate
+
+`d_crit=-log K+O(1)`.
+
+Thus super-`H` support is not itself independent bandwidth. The source operation must supply carrier energy across that span **without** converting the same span into a narrower unit-height coherence peak and a correspondingly smaller effective population. Single-shell dilation and the positive normalized multi-shell comb fail by different mechanisms, but both export the apparent averaging gain into a renormalized critical geometry.
+
+The remaining escape is sharper. Signed or complex carrier coefficients, a genuinely vector-valued family retained separately until after projection, or a nonuniform carrier architecture could still work, but it must keep the old Ford normalization and selected-height capacity while adding super-`H` carrier energy. If its Fourier recombination creates a dominant peak of width `1/W`, the matched layer must be re-audited at the population supported by that peak rather than at the original `J`.
+
+**Boundary.** NB-253 is source-side and assumes the positive equal-weight mesoscopic regime stated there. It neither proves that zeta zeros realize the replacement packet nor excludes all multi-carrier constructions. Zeta-specific cancellation on the legal band and architectures whose coherence geometry is genuinely different remain open.

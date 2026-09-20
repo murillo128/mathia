@@ -1,15 +1,23 @@
-# MI-039 — Even the natural capacity-normalized triangular quotient kills the block-Mertens repair
+# MI-039 — Dyadic switched response has an exact macroscopic signed nullspace
 
-**Evidence level:** exact synthesis from FD-230--[FD-236](../../findings/FD-236-natural-reservoir-capacity-normalization-still-collapses-the-growing-block-mertens-quotient.md). No Mertens or RH conclusion is claimed.
+**Evidence level:** exact synthesis from FD-230--[FD-238](../../findings/FD-238-exact-dyadic-response-zeros-can-carry-macroscopic-signed-capacity.md). No Mertens or RH conclusion is claimed, and the exact nullspace construction is signed rather than a physical nonnegative occupancy.
 
-FD-232--FD-233 identify the one-sided coefficient criterion inside any genuinely nontrivial switched-response class: a switched-preserving nonnegative lift exists exactly when the negative aggregate capacity of a signed representative is asymptotically negligible. FD-234 removes nearest-integer bookkeeping from the source-forced correction by writing the canonical real representative as `tilde c_N=-(1/2)(1*U_N)`, with `U_N(d)=M(dN)-M((d-1)N)`, and showing that rounding is capacity-negligible.
+FD-232--FD-233 identify the one-sided coefficient criterion inside a genuinely nontrivial switched-response class: a switched-preserving nonnegative lift exists exactly when the negative aggregate capacity of a signed representative is asymptotically negligible. FD-234 isolates the canonical real correction, while FD-235--FD-236 show that both the fixed-profile quotient and the natural capacity-normalized triangular quotient are too coarse: the source-forced block-Mertens correction itself becomes asymptotically switched-blind.
 
-FD-235 first exposes the quantifier-order failure: for every fixed `N`, `tilde c_N` itself is switched-blind, so the fixed-profile affine class contains zero. FD-236 then tests the natural family-level repair rather than stopping at that formal defect. The physical reservoir cell scale from FD-226 is `L_N=N/(D log N)`. On the coupled rows `0<=j<J(N)`, with the coefficient envelope measured relative to `L_N d` and switched response relative to `L_N 4^j`, the same canonical correction is still blind throughout the currently certified reservoir regime. More precisely, the source estimates force both the normalized coefficient envelope and the maximal normalized switched response to tend to zero.
+FD-238 makes the signed obstruction exact and independent of scalar normalization. There exists an integer sequence `b` with `|b_n|<=n` such that its divisor response `A b` satisfies
 
-Thus the problem is not repaired merely by coupling `N` and `J(N)` or by normalizing with the physical reservoir capacity. At the natural capacity scale the triangular affine class again contains zero exactly. The surviving degree of freedom is the **response topology**: a nontrivial quotient must test decisive rows at scales `S_{N,j}=o(L_N 4^j)` strong enough to keep `tilde c_N` visible while still declaring genuinely harmless reservoir adjustments negligible.
+`(A b)(2^j)=0`
 
-That refinement is not formal. FD-233 proves its positive-lift equivalence for the earlier switched class; once the response scale is changed, the one-sided lifting theorem has to be established again. A finer topology that makes the canonical correction visible but also makes ordinary admissible adjustments expensive would not yet be the right physical quotient.
+for every dyadic point, and hence
 
-The reusable point is stronger than the original order-of-quantifiers warning: **a coupled normalization can still erase the source-forced family if the response scale is chosen from reservoir capacity rather than from the smallest physically meaningful observable change**. Both the family quantifiers and the topology in which blindness is measured must be source-derived.
+`((T-I)^r A b)(2^j)=0`
 
-**Boundary.** FD-236 does not identify the correct finer scales, prove a positive distance from the nonnegative cone there, or construct an admissible prime occupancy. It proves that the natural `L_N 4^j` triangular quotient is still vacuous for the block-Mertens repair and therefore cannot supply the missing obstruction.
+for every fixed finite-difference order `r>=1` and every `j`. These are not small coefficient directions. On dyadic bands, their normalized total variation has lower density at least `12/pi^2-1`, and both positive and negative parts retain at least half of that density asymptotically.
+
+The consequence is stronger than the earlier request to choose a finer scalar normalization on the same dyadic rows. **No scalar strengthening of those same coordinates can control the signed geometry**, because the blind directions are exact zeros before normalization. A signed coercive topology must add genuinely new response information, such as off-dyadic/all-integer or source-forced coordinates, rather than merely rescale the existing dyadic switched family.
+
+The one-sided route remains logically different. FD-230--FD-233 show that positivity can cut across signed null directions, and FD-238 does not construct an admissible nonnegative prime occupancy. The live physical question is therefore whether the concrete source-forced correction class is quantitatively transverse to this exact signed kernel once nonnegativity, finite capacities and source coherence are imposed, or whether additional response coordinates are required even after those restrictions.
+
+FD-237 separately shows that interior integer realization is cheap in exact divisor-response coordinates: rounding in response space and applying the unimodular inverse costs only `tau(n)` in coefficients and bounded error in the existing switched rows. Thus bulk integrality should not be conflated with the exact signed-nullspace obstruction.
+
+**Boundary.** The construction says nothing by itself about the distance of the physical nonnegative cone from the blind affine class, and a finer topology may make the bounded quantization error from FD-237 non-negligible. It proves only that the present dyadic switched coordinates, at any scalar normalization and any finite differencing order, cannot be a signed coercive coordinate system.

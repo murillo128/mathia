@@ -1,25 +1,17 @@
-# MI-059 — Pointwise-local boundary nullity collapses exactly to the Mangoldt ray
+# MI-059 — Local and Markov-jump boundary nullity collapse to the Mangoldt ray
 
-**Evidence level:** exact RH-independent synthesis from [WP-386](../../findings/WP-386-pointwise-local-positive-boundary-selectors-collapse-to-the-mangoldt-ray.md), extending the boundary classifications of WP-384--WP-385. The theorem is for positive multiplication-form geometry in the canonical boundary coordinate; nonlocal kernels and delayed finite--archimedean couplings are outside its scope.
+**Evidence level:** supported RH-independent synthesis from [WP-386](../../findings/WP-386-pointwise-local-positive-boundary-selectors-collapse-to-the-mangoldt-ray.md) and [WP-387](../../findings/WP-387-beurling-deny-jump-selectors-collapse-to-unit-cell-invisibility.md), extending the boundary classifications of WP-384--WP-385. Arbitrary non-Markov off-diagonal forms and strongly local/interface terms remain outside the classification.
 
-WP-385 excludes every closed positive boundary form that remains stationary under the canonical dilation action. WP-386 tests the most immediate nonstationary escape without retaining that symmetry: let `nu` be an arbitrary positive Borel measure on `(0,infinity)` and measure the WP-384 boundary profiles pointwise by `Q_nu(f,g)=int f overline(g) dnu`.
+WP-386 classifies arbitrary positive pointwise reweighting in the native boundary coordinate. Exact nullity of every mixed-prime shell forces the measure into `(0,1)`, where every profile is the constant `Lambda(m)/sqrt(m)`. The complete shell Gram and every local-anchor incidence therefore collapse to one Mangoldt ray.
 
-Exact mixed-shell nullity is then completely rigid. Requiring `Q_nu(h_m)=0` for every `m` with at least two distinct prime divisors is equivalent to
+WP-387 tests the first canonical genuinely nonlocal positive continuation: the pure-jump sector of a Beurling--Deny Dirichlet form. The arithmetic boundary profiles satisfy an exact discretization: every `h_m` is constant on each unit cell `I_n=[n,n+1)` (with `I_0=(0,1)`), while fresh mixed-prime shells separate any two distinct cells.
 
-`nu([1,infinity))=0`.
+For a positive symmetric jump measure `J`, exact mixed-shell nullity is therefore equivalent to `J` being supported only on same-cell pairs. But on that support every arithmetic difference `h_m(x)-h_m(y)` is zero, so the jump form annihilates **all** shell pairs, not only the mixed ones. Adding a positive killing measure recovers exactly the WP-386 contribution on `(0,1)`, hence
 
-The converse is not merely a common-zero-set argument. For every finite interval `[1,X]`, choosing two distinct primes `p,q>X` gives the exact profile `h_pq(x)=H_floor(x)/sqrt(pq)>0` throughout that interval. Positivity of the form means nulling that one mixed shell already removes all measure from `[1,X]`; exhausting `X` forces support into `(0,1)`.
+`E_(J,nu)(h_m,h_n)=nu((0,1)) Lambda(m)Lambda(n)/sqrt(mn)`.
 
-On the forced support interval the arithmetic family collapses exactly:
+Thus replacing pointwise locality by a positive Markov jump conductance does not create a second arithmetic channel. Mixed-shell nullity forces the jump geometry into directions that the entire boundary family cannot see, and the jump-plus-killing sector has the same rank-one arithmetic response as the pointwise-local class.
 
-`h_m(x)=Lambda(m)/sqrt(m)` for `0<x<1`.
+The surviving routes must therefore change operator category or stage. A strongly local/interface component whose domain genuinely contains the shell steps, a non-Markov positive off-diagonal form with an independent source reason for its kernel, a finite-`q` prelimit term lost in the continuum boundary, or a finite--archimedean coupling whose final positivity appears only after assembly are not classified by WP-386--WP-387.
 
-Consequently every shell Gram has the form
-
-`Q_nu(h_m,h_n)=M_nu Lambda(m)Lambda(n)/sqrt(mn)`,
-
-and every admissible local-anchor cross term factors through the same scalar `Lambda(m)/sqrt(m)`. The form can recover exact prime-power support, but only on one Mangoldt ray. Changing atoms, singular measures, discontinuous densities or arbitrary nonstationary local weights cannot create a second independent shell-dependent channel.
-
-This complements WP-385 rather than subsuming it. Stationary positive geometry is rigid in Mellin frequency because the finite Euler factors are boundedly invertible; nonstationary pointwise-local geometry is rigid in the native boundary coordinate because fresh mixed shells are strictly positive off `(0,1)`. The surviving mechanism must therefore change the operator category itself: genuinely nonlocal/off-diagonal boundary kernels, derivative/interface forms, a finite-`q` prelimit effect, or delayed finite--archimedean interaction before exact selection.
-
-**Boundary.** WP-386 does not prove that every positive boundary form collapses to rank one. Off-diagonal kernels can use correlations between distinct boundary points, derivative energies are not multiplication forms, and a signed or indefinite finite--archimedean assembly may postpone positivity until a later stage. Those are structurally different categories and require their own source-forcing and sign audits.
+**Boundary.** WP-387 does not say that every nonlocal positive kernel is arithmetic-blind. Its exact classification uses the difference structure and independent nonnegativity of the Beurling--Deny jump/killing sectors on the WP-384 profiles. Strongly local diffusion/interface energy, arbitrary positive-definite kernels and delayed indefinite couplings require separate audits.

@@ -1,29 +1,29 @@
-# MI-054 — The gamma floor forces a positive-density repair spectral profile
+# MI-054 — The exact gamma dispersion forces a positive-density repair spectral profile
 
-**Evidence level:** exact synthesis from WI-369--[WI-372](../../findings/WI-372-gamma-bulk-forces-a-full-repair-spectral-profile.md). This is an archimedean/operator repair barrier; it does not by itself classify the full source-conditioned Weil form or imply anything about RH.
+**Evidence level:** exact synthesis from WI-369--[WI-373](../../findings/WI-373-exact-digamma-dispersion-sharpens-gamma-negative-index-profile.md). This is an archimedean/operator repair barrier; it does not classify the full source-conditioned Weil form or imply anything about RH.
 
-WI-369 decomposes the odd archimedean block as `A_A + C_Gamma I = R_A >= 0` with the sharp scalar floor `-C_Gamma`, where `C_Gamma=pi/2+gamma+log(8 pi)`. WI-370 shows that the existing scalar MASTER surplus cannot conservatively pay this debit. WI-371 then proves that the floor is not confined to a sparse exceptional set: for every fixed `0<eta<C_Gamma`,
+WI-369 decomposes the corrected odd archimedean block as `A_A+C_Gamma I=R_A>=0`. WI-371 proved a linear negative-index density by replacing the screened nonlocal kernel with its quadratic second-moment majorant, and WI-372 converted that bound into a necessary eigenvalue/singular-value profile for additive or factorized repairs.
 
-`liminf_(A->infinity) iota_eta(A)/A >= (1/pi) sqrt((C_Gamma-eta)/M_2)`,
+WI-373 retains the exact bulk dispersion. If
 
-with `M_2=7 zeta(3)+pi^3/4`. In particular the zero-depth negative index has certified lower density `c_bulk=(1/pi)sqrt(C_Gamma/M_2)=0.183495...`.
+`m(q)=Re psi(1/4+iq/2)-log pi`,
 
-WI-372 converts that inertia family into a necessary **spectral profile** for any additive repair. If a bounded self-adjoint `K_A` satisfies `A_A+K_A>=0`, then for every `0<t<C_Gamma` its positive spectral counting function obeys
+then the screened-difference symbol satisfies `d(q)-C_Gamma=m(q)` exactly. For each `0<eta<C_Gamma`, let `q_eta` be the unique positive solution of `m(q_eta)=-eta`. The corrected gamma block then obeys
 
-`liminf_(A->infinity) N_A^+(t)/A >= c_t := (1/pi) sqrt((C_Gamma-t)/M_2)`.
+`liminf_(A->infinity) iota_eta(A_A)/A >= q_eta/pi`.
 
-For positive compact `K_A` with eigenvalues `kappa_(A,1)>=kappa_(A,2)>=...`, this implies, for every `alpha<c_bulk`,
+At zero depth, `q_0/pi≈2.00211698`, strictly stronger than the earlier second-moment coefficient. The improvement is structural: `d(q)<M_2 q^2` for every `q>0`, so the exact digamma profile dominates the parabolic lower bound at every nonzero depth.
 
-`liminf_(A->infinity) kappa_(A,ceil(alpha A)) >= C_Gamma-pi^2 M_2 alpha^2`.
+The additive-repair tariff is therefore the full digamma profile. If bounded self-adjoint `K_A` makes `A_A+K_A` nonnegative, then
 
-Thus the repair cannot consist merely of `c_bulk A` arbitrarily tiny positive directions. A positive fraction of the spectrum must remain above every corresponding depth threshold. Integrating these level-set bounds also strengthens the finite-`p` Schatten tariff beyond any single-threshold estimate.
+`liminf N_A^+(t)/A >= q_t/pi`.
 
-If the repair factors as `K_A=B_A^*B_A`, the same statement becomes a singular-value profile:
+For positive compact repairs this gives the quantile envelope
 
-`liminf s_(ceil(alpha A))(B_A) >= sqrt(C_Gamma-pi^2 M_2 alpha^2)`
+`liminf kappa_(A,ceil(alpha A)) >= -m(pi alpha)`
 
-for `alpha<c_bulk`, up to the appropriate weighted-domain normalization when the source map is measured in a different metric. This is the quantity a source network must actually finance on the bulk quasimodes.
+for `0<alpha<q_0/pi`; factorized repairs `K_A=B_A^*B_A` inherit `s_(ceil(alpha A))(B_A)>=sqrt(-m(pi alpha))`. The corresponding Schatten lower constants are the integrals of `[-m(q)]^p` over `0<q<q_0`, not merely consequences of one threshold.
 
-The source-network caveat remains load-bearing. A physical construction may restrict the admissible subspace, change the geometry non-additively, or couple through a rooted-Schur mechanism outside the additive model. But within additive/factorized repair, nominal dimension and total norm are no longer adequate proxies: the overlap with the negative bands must carry the required spectrum across a linear set of directions.
+Thus source dimension, rank, total norm and even the older parabolic profile are insufficient proxies. A source mechanism reducible to additive/factorized repair must place the required positive spectrum on the actual negative bulk with the full depth dependence dictated by the archimedean digamma multiplier.
 
-**Boundary.** The profile is a necessary condition derived from the same second-moment majorization used for WI-371, not the exact spectrum of the original nonlocal gamma operator. WI-372 does not classify non-additive repairs or prove that the arithmetic source supplies or fails to supply the required profile.
+**Boundary.** Desogus's common-cut/rooted-Schur architecture is not asserted to be a uniformly bounded additive or factorized repair. It may change the admissible geometry rather than repair the gamma block after the fact. WI-373 is therefore a sharper necessary audit gate for such reductions, not a disproof of the source construction or evidence against RH.
