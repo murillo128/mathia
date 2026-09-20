@@ -6,14 +6,12 @@ This file holds the current mathematical questions suggested by the durable Nyma
 
 **Linked intuitions:** `MI-062-the-critical-ford-mark-is-a-growing-moment-observable`, `MI-063-demodulated-ford-energy-is-bandlimited-at-the-window-scale`.
 
-NB-245 separates exact algebraic reconstruction from a uniform observable. NB-246 then shows that after freezing the Ford parameters and demodulating the common carrier, the smooth critical current moves with center bandwidth `O(H)` while its pair expansion still resolves the finer `1/X` zero scale and retains the depth marks.
+NB-245 separates exact algebraic reconstruction from a uniform observable. NB-246 shows that after freezing the Ford parameters and demodulating the common carrier, the smooth critical current moves with center bandwidth `O(H)` while its pair expansion still resolves the finer `1/X` zero scale and retains the depth marks. NB-247 removes the Schwartz-tail artifact: Bellotti population regularity makes one literal hard `1/H` box sufficient for pointwise control.
 
-NB-247 removes the remaining Schwartz-tail artifact. Bellotti's weighted near-one population law gives uniform Lipschitz control of the demodulated current on the scaled center variable, so an order-one selected value persists across a fixed fraction of a Ford window. Consequently it is enough to prove
+NB-248 now fixes the proof interface. The normalized first-order field `R^{-1} zeta'/zeta` has Cauchy poles that are locally `L^p` only for `p<2`; its planar `L^2` norm diverges logarithmically, and a matched `Theta(J)` zero packet leaves no decay after regularization. The hard-window target therefore cannot be obtained by squaring that area integrand and applying black-box Cauchy--Schwarz.
 
-`sup_t0 H int_{t0-A/H}^{t0+A/H} |R_{t0}(s)|^2 ds = o(1)`
+The live theorem remains `sup_t0 H int_{t0-A/H}^{t0+A/H} |R_{t0}(s)|^2 ds = o(1)` for one fixed `A>0`, uniformly over admissible selected centers, but the signed divisor pairing must be performed before squaring, or the argument must work directly with the equivalent two-copy depth-marked carrier energy.
 
-for one fixed `A>0`, uniformly over admissible selected centers. The hard box is now source-faithful; the matched coherent packet still has nonvanishing box energy, so success requires arithmetic zero geometry rather than dilution by averaging.
+## Keep observability, the missing zero theorem and the singular first-order field separate
 
-## Keep observability and the missing zero theorem separate
-
-The hard-window implication is proved, but the required shrinking-interval second moment for the actual depth-marked zeta-zero current is not. Macroscopic height averages, random-height laws and estimates that discard the `e^{iX(gamma_j-gamma_k)}` phase do not supply it. The remaining analytic target is precisely the uniform Ford-scale box energy with frozen parameters, depth marks and carrier phase intact.
+The hard-window implication is proved, while the required shrinking-interval second moment for actual zeta zeros is not. NB-248 is a method obstruction, not a counterexample to that second moment: it only excludes local `L^2` control of `zeta'/zeta` before pairing. Macroscopic averages, random-height laws, subcritical absolute `L^p` bounds and estimates that discard the `e^{iX(gamma_j-gamma_k)}` phase still do not supply the missing theorem.

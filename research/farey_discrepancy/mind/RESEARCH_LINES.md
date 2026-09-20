@@ -2,14 +2,16 @@
 
 This file holds the current mathematical questions suggested by the durable Farey-discrepancy intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Decide whether the physical correction class can become negative-sparse modulo switched blind directions
+## Decide whether the block-Mertens correction can become negative-sparse modulo switched-blind directions
 
 **Linked intuition:** `MI-039-periodic-scale-switching-can-create-a-supercritical-floquet-blind-mode`.
 
-FD-231 shows that switched-blind signed directions can carry macroscopic mass. FD-232 shows that a representative with macroscopic negative aggregate capacity cannot be hidden inside a subquadratic nonnegative lift. FD-233 closes the coefficient-level gap: vanishing late-band negative-capacity density is also sufficient, and the canonical lift `a=b^+` preserves the switched response automatically.
+FD-233 makes vanishing late-band negative-capacity density necessary and sufficient for a switched-preserving positive lift. FD-234 removes the nearest-integer artifact from this question: the rounded correction differs by a capacity-negligible switched-blind profile from the canonical real representative
 
-The live coefficient problem is therefore exact. Start from the correction forced by the Farey/Mertens inversion and vary it by legitimate switched-blind directions. Is the infimum of its late-band negative-capacity density bounded away from zero, or is there a representative for which that density tends to zero? The former gives a structural positivity obstruction; the latter removes the coefficient-level obstruction without any additional switched estimate for the minimal slack.
+`tilde c_N(n)=-(1/2)(1*U_N)(n)`, with `U_N(d)=M(dN)-M((d-1)N)`.
+
+The live coefficient problem is therefore exact. Vary this explicit block-Mertens convolution by legitimate switched-blind directions. Is the infimum of its late-band negative-capacity density bounded away from zero, or is there a representative for which that density tends to zero? Rounding cannot change the answer.
 
 ## Separate coefficient positivity from discrete source realization
 
-Passing the one-sided affine criterion does not construct an admissible prime occupancy. Integer multiplicities, finite reservoir capacities and the exact source-side constraints must still be realized. Conversely, failure of those discrete gates should not be conflated with the already solved coefficient-level question. The next argument should state explicitly whether it is optimizing the affine coefficient class or realizing the resulting nonnegative profile in the physical source.
+Passing the one-sided affine criterion does not construct an admissible prime occupancy. Integer multiplicities, finite reservoir capacities and the exact source-side constraints must still be realized. Conversely, failure of those discrete gates should not be conflated with the coefficient-level affine question now expressed directly in terms of block Mertens increments.
