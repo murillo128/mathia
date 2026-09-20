@@ -11,13 +11,13 @@ There is nevertheless a quantitative obstruction. After normalizing by the actua
 \sigma_X=1+\frac rX,
 \]
 
-a signed or complex mixture with Euler-weighted coefficient total variation `V` cannot change by order one on a scale smaller than `Theta(1/(WV))`. Consequently, if
+a signed or complex mixture with Euler-weighted coefficient total variation `V` remains order-one coherent throughout a disk of radius at least `c/(WV)`. Consequently, if
 
 \[
 J_*:=\frac{R}{WV}\to\infty,
 \]
 
-then a matched Ford packet with `Theta(J_*)` points still fits inside the compulsory coherent region and contributes order one. In the original Ford coordinate
+then a matched Ford packet with `Theta(J_*)` points still fits inside that compulsory coherent region and contributes order one. In the original Ford coordinate
 
 \[
 d=X(1-\beta)-\log J,
@@ -158,7 +158,13 @@ satisfies `V>=1`. Since the regime below will imply `W/X -> 0`, fixed `r` also g
 \tag{13}
 \]
 
-This is the natural coefficient-conditioning parameter after the Euler return has been normalized to order one. The same prime-number-theorem/Stieltjes calculation used in `NB-253` and `NB-254` then gives
+This is the natural coefficient-conditioning parameter after the Euler return has been normalized to order one. Under the matched regime (28) below, `J_* -> infinity` implies eventually
+
+\[
+V<\frac RW\le J\le\log Q.
+\]
+
+Thus the uniform prime-number-theorem/Stieltjes error used in `NB-253` and `NB-254` remains `o(1)` after integration against the variation measure, and the same calculation gives
 
 \[
 \sum_{n\ge2}\Lambda(n)h_\nu(\log n)n^{-\sigma_X}
@@ -234,65 +240,59 @@ so
 \tag{21}
 \]
 
-The constant is irrelevant; what matters is the scale. A normalized signed or complex measure with support diameter `W` and total variation `V` has a compulsory order-one Fourier--Laplace coherence neighborhood of radius
+The constant is irrelevant; what matters is the guaranteed scale. A normalized signed or complex measure with support diameter `W` and total variation `V` has a compulsory order-one Fourier--Laplace coherence neighborhood containing the disk
 
 \[
 \boxed{
-\asymp\frac1{WV}.
+|z|\le \frac{c}{WV}
 }
 \tag{22}
 \]
 
-For `V=1`, equality in the triangle inequality forces positivity up to a common phase after normalization, and (22) reduces to the `1/W` scale of `NB-254`. Cancellation can shrink the coherent window, but only in direct proportion to the coefficient variation spent on that cancellation.
+for an absolute `c>0`. This is a lower bound on the coherence radius, not a claim that every mixture loses coherence immediately outside that disk.
+
+For `V=1`, equality in the triangle inequality forces positivity up to a common phase after normalization, and (22) recovers the `1/W` guaranteed scale of `NB-254`. Cancellation can make the guaranteed coherent disk smaller, but only in direct proportion to the coefficient variation spent on that cancellation.
 
 ## 3. Euler normalization removes the `r/X` shift exactly
 
-A Ford zero is evaluated at
+For a zero `rho=beta+i gamma`, the Ford carrier is evaluated at
 
 \[
-v=u+i(\sigma_X-\beta)
-=
- u+i\left(\frac rX+1-\beta\right),
+v_\rho
+=u_\rho+i(\sigma_X-\beta),
 \qquad
-u:=\gamma-t_0.
+u_\rho:=\gamma-t_0,
 \tag{23}
 \]
 
-To avoid a collision between the measure name and the real displacement, write from now on
-
-\[
-u_\rho:=\gamma-t_0.
-\tag{24}
-\]
-
-Using (10), the signed carrier factor satisfies the exact identity
+where the displayed `u_rho` is the real vertical displacement, not the measure `nu`. Using (10), the signed carrier factor satisfies the exact identity
 
 \[
 \begin{aligned}
-A_\nu(v)
+A_\nu(v_\rho)
 &=
 \int e^{i\xi u_\rho}
  e^{-\xi(r/X+1-\beta)}\,d\nu(\xi)\\
 &=
 \int e^{i\xi u_\rho}e^{-\xi(1-\beta)}\,d\lambda(\xi).
 \end{aligned}
-\tag{25}
+\tag{24}
 \]
 
 Hence, with
 
 \[
 z_\rho:=u_\rho+i(1-\beta),
-\tag{26}
+\tag{25}
 \]
 
 we have
 
 \[
 \boxed{
-A_\nu(v)=B_\lambda(z_\rho).
+A_\nu(v_\rho)=B_\lambda(z_\rho).
 }
-\tag{27}
+\tag{26}
 \]
 
 This is why the weighted normalization is the clean one: the fixed Euler displacement `r/X` disappears exactly from the coherence problem. The only remaining imaginary displacement is the actual horizontal zero depth `1-beta`.
@@ -307,21 +307,21 @@ Assume
 \qquad
 J_*:=\frac{R}{WV}\to\infty.
 }
-\tag{28}
+\tag{27}
 \]
 
-Since `V>=1`, (28) implies `W/R -> 0`, hence `W/X -> 0`, justifying (13). It also gives
+Since `V>=1`, (27) implies `W/R -> 0`, hence `W/X -> 0`, justifying (13). It also gives
 
 \[
 J_*\le\frac RW\le\frac RH=J.
-\tag{29}
+\tag{28}
 \]
 
 Fix an integer `q>=1` and a bounded real depth offset `d_*`. Let
 
 \[
 M_*:=\lfloor\delta J_*\rfloor,
-\tag{30}
+\tag{29}
 \]
 
 where `delta>0` will be chosen sufficiently small depending only on `q` and a fixed compact range for `Y`.
@@ -336,14 +336,14 @@ Use the same matched-control ordinates as in `NB-231`, `NB-253`, and `NB-254`:
 \qquad
 0\le j<M_*.
 }
-\tag{31}
+\tag{30}
 \]
 
 Then
 
 \[
 e^{iX(\gamma_j-t_0)}=1
-\tag{32}
+\tag{31}
 \]
 
 for every point. Place all points at horizontal depth
@@ -352,10 +352,10 @@ for every point. Place all points at horizontal depth
 \boxed{
 X(1-\beta_j)=\log J_*+d_*.
 }
-\tag{33}
+\tag{32}
 \]
 
-For the real displacement in (26),
+For the real displacement in (25),
 
 \[
 WV|u_j|
@@ -363,7 +363,7 @@ WV|u_j|
 \frac{2\pi qWV M_*}{X}
 \le
 \frac{2\pi q\delta}{Y}+o(1).
-\tag{34}
+\tag{33}
 \]
 
 Choose `delta` so that this is at most `1/8` uniformly in the allowed range of `Y`. The imaginary displacement obeys
@@ -373,14 +373,14 @@ WV(1-\beta_j)
 =
 \frac{\log J_*+d_*}{YJ_*}
 \longrightarrow0.
-\tag{35}
+\tag{34}
 \]
 
 Therefore, for all sufficiently large `J`,
 
 \[
 |z_j|\le\frac{1}{4WV}.
-\tag{36}
+\tag{35}
 \]
 
 By (21),
@@ -390,7 +390,7 @@ By (21),
 =
 \Re B_\lambda(z_j)
 \ge\frac34.
-\tag{37}
+\tag{36}
 \]
 
 The original shell profile is simultaneously flat across the packet. Indeed,
@@ -399,7 +399,7 @@ The original shell profile is simultaneously flat across the packet. Indeed,
 H|u_j|
 \ll
 \frac{H}{WV},
-\tag{38}
+\tag{37}
 \]
 
 which tends to zero because `W/H -> infinity` and `V>=1`, while
@@ -409,22 +409,22 @@ H(\sigma_X-\beta_j)
 =
 \frac{r+\log J_*+d_*}{YJ}
 \longrightarrow0.
-\tag{39}
+\tag{38}
 \]
 
 Thus
 
 \[
 F(Hv_j)=F(0)+o(1)
-\tag{40}
+\tag{39}
 \]
 
-uniformly through the packet. Combining (37) and (40), after increasing the scale if necessary,
+uniformly through the packet. Combining (36) and (39), after increasing the scale if necessary,
 
 \[
 \Re\!\left(F(Hv_j)A_\nu(v_j)\right)
 \ge c_\phi>0
-\tag{41}
+\tag{40}
 \]
 
 uniformly in `j`.
@@ -441,7 +441,7 @@ e^{iXv_j}
 &=
 \frac{e^{-r-d_*}}{J_*}.
 \end{aligned}
-\tag{42}
+\tag{41}
 \]
 
 Hence the matched packet contributes
@@ -455,7 +455,7 @@ Hence the matched packet contributes
 &\longrightarrow
 \delta c_\phi e^{-r-d_*}>0.
 \end{aligned}
-\tag{43}
+\tag{42}
 \]
 
 We have therefore proved the control statement
@@ -466,14 +466,14 @@ J_*\to\infty
 \quad\Longrightarrow\quad
 \text{the Euler-normalized signed scalar carrier still admits an order-one matched Ford packet.}
 }
-\tag{44}
+\tag{43}
 \]
 
 As in the earlier matched controls, this is a compatibility construction. It does not assert that the actual zeros of `zeta` realize these points.
 
 ## 5. The new critical coordinate includes the variation budget
 
-From (33), the original Ford coordinate is
+From (32), the original Ford coordinate is
 
 \[
 \begin{aligned}
@@ -482,7 +482,7 @@ d
 &=\log J_* -\log J+d_*\\
 &=-\log\!\left(\frac{J}{J_*}\right)+d_*.
 \end{aligned}
-\tag{45}
+\tag{44}
 \]
 
 Since
@@ -493,7 +493,7 @@ Since
 \frac{R/H}{R/(WV)}
 =
 \frac WH V,
-\tag{46}
+\tag{45}
 \]
 
 we obtain
@@ -503,7 +503,7 @@ we obtain
 d_{\mathrm{crit}}
 =-\log\!\big((W/H)V\big)+O(1).
 }
-\tag{47}
+\tag{46}
 \]
 
 This interpolates the previous scalar obstructions:
@@ -512,16 +512,16 @@ This interpolates the previous scalar obstructions:
 V=1
 \quad\Longrightarrow\quad
  d_{\mathrm{crit}}=-\log(W/H)+O(1),
-\tag{48}
+\tag{47}
 \]
 
-which is exactly the positive-mixture layer of `NB-254`. Allowing cancellation with variation `V` buys only the additional horizontal shift `-log V`.
+which is exactly the positive-mixture layer of `NB-254`. Allowing cancellation with variation `V` buys only the additional horizontal shift `-log V` in this guaranteed-coherence argument.
 
 Equivalently, if
 
 \[
 V=o(R/W),
-\tag{49}
+\tag{48}
 \]
 
 then `J_* -> infinity` and the matched obstruction survives. Therefore any signed/complex scalar design that hopes to escape **this particular forced-coherence argument** must enter the regime
@@ -530,19 +530,19 @@ then `J_* -> infinity` and the matched obstruction survives. Therefore any signe
 \boxed{
 V\not=o(R/W),
 }
-\tag{50}
+\tag{49}
 \]
 
-and in the clean asymptotic design sense must pay variation on the scale
+and in a regular asymptotic design must pay variation on the scale
 
 \[
 V\gtrsim\frac RW
-\tag{51}
+\tag{50}
 \]
 
 so that the guaranteed coherent capacity no longer diverges.
 
-Equation (51) is a conditioning threshold, not yet a norm lower bound for the projected Nyman source.
+Equation (50) is a conditioning threshold, not yet a norm lower bound for the projected Nyman source.
 
 ## 6. Compatibility with the previously audited zeta inputs
 
@@ -550,7 +550,7 @@ The packet in section 4 is no larger or deeper than the positive packet already 
 
 \[
 M_*=\Theta(J_*)\le O(J)\le O(\log Q),
-\tag{52}
+\tag{51}
 \]
 
 and its Ford/Bellotti depth is
@@ -560,7 +560,7 @@ R(1-\beta)
 =
 \frac{\log J_*+O(1)}{Y}
 =O(\log\log Q).
-\tag{53}
+\tag{52}
 \]
 
 Its full vertical diameter is
@@ -571,12 +571,11 @@ Its full vertical diameter is
 \frac{J_*}{X}
 =
 \frac{1}{Y W V}
-\le
-\frac1H,
-\tag{54}
+=o\!\left(\frac1H\right),
+\tag{53}
 \]
 
-where the last inequality follows from `WV>=W>>H`. Thus the construction inherits the same compatibility audit with the zero-free input, the Bellotti growing-density allowance, local disk population, and ordinary zero count used for `NB-231` and `NB-254`.
+where the final relation follows from `W/H -> infinity` and `V>=1`. Thus the construction inherits the same compatibility audit with the zero-free input, the Bellotti growing-density allowance, local disk population, and ordinary zero count used for `NB-231` and `NB-254`.
 
 No stronger statement is intended: those results do not construct such a packet, and this finding does not claim they do.
 
@@ -588,27 +587,27 @@ The main failure mode is to identify coefficient total variation with the actual
 \|h_\nu\|_{L^1}
 \le
 \|\phi\|_{L^1}\|\nu\|_{\mathrm{TV}},
-\tag{55}
+\tag{54}
 \]
 
-but there is no matching lower bound in this argument. Nearby positive and negative shells may cancel strongly after convolution with `phi`; still more cancellation may occur after the Hardy projection used in the Nyman--Beurling route. Therefore (51) does **not** close the signed/complex escape.
+but there is no matching lower bound in this argument. Nearby positive and negative shells may cancel strongly after convolution with `phi`; still more cancellation may occur after the Hardy projection used in the Nyman--Beurling route. Therefore (50) does **not** close the signed/complex escape.
 
 The statement that survives adversarial review is narrower and exact:
 
-> After normalizing the actual Euler return, a scalar carrier mixture of span `W` and Euler-weighted coefficient variation `V` necessarily retains order-one Fourier--Laplace coherence throughout a disk of radius `Theta(1/(WV))`. Whenever `R/(WV) -> infinity`, that disk is large enough to contain a growing matched Ford packet whose normalized contribution stays order one.
+> After normalizing the actual Euler return, a scalar carrier mixture of span `W` and Euler-weighted coefficient variation `V` necessarily retains order-one Fourier--Laplace coherence throughout a disk of radius `c/(WV)`. Whenever `R/(WV) -> infinity`, that disk is large enough to contain a growing matched Ford packet whose normalized contribution stays order one.
 
 The genuinely open question is now whether a family with
 
 \[
 V\asymp R/W
-\tag{56}
+\tag{55}
 \]
 
 or larger can suppress the scalar coherence peak **while keeping the convolved source and its Hardy projection admissibly conditioned**. Proving that the projected norm must inherit a comparable cost would close the signed-scalar route. Constructing a design where projection cancels the large coefficient variation without restoring a coherent Ford window would instead be a real escape.
 
 The other qualitatively different route from `NB-254` remains untouched: keep multiple carrier channels as an `ell^2` family until after projection rather than collapsing them into one scalar source.
 
-The local review also checks the normalization issue that is easy to miss with signs. Using raw mass `int dnu=1` would be incorrect at `sigma_X`; equations (8)--(27) show that the Euler-weighted measure is the invariant object, and with that normalization the `r/X` imaginary displacement cancels exactly.
+The local review also checks the normalization issue that is easy to miss with signs. Using raw mass `int dnu=1` would be incorrect at `sigma_X`; equations (8)--(26) show that the Euler-weighted measure is the invariant object, and with that normalization the `r/X` imaginary displacement cancels exactly.
 
 **Adversarial-review verdict:** `pass`, with the explicit restriction that the theorem is a coefficient-conditioning/coherence statement and not a lower bound for the final Nyman--Beurling norm.
 
@@ -616,13 +615,13 @@ The local review also checks the normalization issue that is easy to miss with s
 
 The lemma (18)--(22) is generic harmonic analysis: a compactly supported normalized Fourier--Stieltjes transform cannot move far from its value at the origin faster than its first absolute moment permits. The elementary proof above is sufficient; no external theorem is load-bearing.
 
-The zeta/Nyman-specific content begins with the Euler-weighted normalization (8)--(14), the Ford scaling `X~R`, the matched population `R/(WV)`, the depth choice (33), and the conversion to the original critical coordinate (47). The finding is therefore classified as a **source-side method boundary with an abstract matched spectral control**, not as a new zero theorem or a quantitative Nyman--Beurling approximation theorem.
+The zeta/Nyman-specific content begins with the Euler-weighted normalization (8)--(14), the Ford scaling `X~R`, the matched population `R/(WV)`, the depth choice (32), and the conversion to the original critical coordinate (46). The finding is therefore classified as a **source-side method boundary with an abstract matched spectral control**, not as a new zero theorem or a quantitative Nyman--Beurling approximation theorem.
 
-A fresh targeted prior-art search checked compactly supported signed/complex Fourier measures and Bernstein/Lipschitz-type transform bounds, together with signed/complex Nyman--Beurling and mollifier constructions. The generic variation estimate is classical in spirit, but no result found in that audit supplied this Ford-scaled `V`-dependent obstruction or the critical layer (47). Since the argument here is self-contained and uses no new external load-bearing theorem, `SOURCES.md` requires no update.
+A fresh targeted prior-art search checked compactly supported signed/complex Fourier measures and Bernstein/Lipschitz-type transform bounds, together with signed/complex Nyman--Beurling and mollifier constructions. The generic variation estimate is classical in spirit, but no result found in that audit supplied this Ford-scaled `V`-dependent obstruction or the critical layer (46). Since the argument here is self-contained and uses no new external load-bearing theorem, `SOURCES.md` requires no update.
 
 ## Conclusion
 
-`NB-254` left signs and complex phases as the most immediate scalar escape from positivity. `NB-255` quantifies what those signs must buy: after the Euler return is normalized, the carrier cannot lose coherence before scale `1/(WV)`, where `V` is the weighted coefficient total variation. The effective Ford capacity is therefore
+`NB-254` left signs and complex phases as the most immediate scalar escape from positivity. `NB-255` quantifies what those signs must buy: after the Euler return is normalized, the carrier remains coherent throughout a guaranteed disk of radius `c/(WV)`, where `V` is the weighted coefficient total variation. The effective Ford capacity is therefore
 
 \[
 \boxed{
