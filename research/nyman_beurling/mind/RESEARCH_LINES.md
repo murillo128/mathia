@@ -1,21 +1,17 @@
 # Nyman--Beurling research lines
 
-This file records current mathematical questions for the Nyman--Beurling line. It is a mutable synthesis, not a task queue or history.
+This file holds the current mathematical questions suggested by the durable Nyman--Beurling intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Control the depth-marked Ford carrier pair energy inside one selected window
+## Prove a uniform Ford-scale local second-moment bound with the depth marks and carrier phase intact
 
-**Linked intuition:** `MI-062-the-critical-ford-mark-is-a-growing-moment-observable`.
+**Linked intuitions:** `MI-062-the-critical-ford-mark-is-a-growing-moment-observable`, `MI-063-demodulated-ford-energy-is-bandlimited-at-the-window-scale`.
 
-NB-234--NB-242 identify the critical Ford coefficient as a microlocal, depth-marked carrier observable and show why fixed moments, global pair statistics, coarse clustering and absolute-phase-free reconstruction can miss its signed value. NB-243 corrects the strongest interpretation of that obstruction. For the actual goal `R_J=o(1)`, the complex phase of `R_J` need not be reconstructed: its exact squared modulus is a depth/profile-marked two-point form factor at carrier frequency `X`.
+NB-245 corrects the inverse-problem interpretation. For each fixed finite carrier law, the exact unnormalized Cauchy/Stieltjes transform determines every coefficient by its poles and residues; the issue is not algebraic nonuniqueness. Bounded normalized interior probes can nevertheless become arbitrarily insensitive to a top depth-marked block as the strip grows, so exact recovery does not give a uniform observable.
 
-The diagonal of that energy is already `O(1/J)=o(1)` at the established Ford population scale. The surviving source theorem is therefore a deterministic selected-height estimate for the marked **off-diagonal carrier pair energy**, with the Ford depth, source profile and moving frequency retained. Half-period twin packets are not a counterexample to this formulation; they have the same order-one energy and are correctly rejected by any theorem forcing that energy to zero.
+NB-246 identifies a strictly weaker sufficient target than pointwise control at every selected height. Freeze the Ford parameters at a target center, retain the full smooth shell current, and demodulate its common carrier `e^{-iXt}`. The moving-center current then has Fourier bandwidth `O(H)`, and its energy is also band-limited at `O(H)`. A reproducing-kernel estimate therefore bounds the selected-height energy by a weighted local `L^2` mean on center scale `1/H`.
 
-Published source-specific tools remain too coarse. NB-240 shows that the audited short-interval pair-correlation theorem does not resolve the required moving carrier statistic. NB-244 shows that Ramachandra--Révész near-one zero clustering becomes nonvacuous only at a radius at least a factor `~log J` larger than the entire Ford window, and may place the forced companion mass near twice the selected height. It therefore cannot control the local pair energy needed by NB-243.
+The live source theorem is consequently quantitative and local: prove that this Ford-scale weighted second moment is `o(1)` uniformly over every admissible selected center, with the horizontal depth marks and the original `e^{iX(gamma_j-gamma_k)}` pair phase retained. This does not reduce the zero-resolution scale from `1/X`; it only shows that a bad selected current cannot be isolated on a center scale much shorter than `1/H`.
 
-The live question is to prove the marked pair-energy decay at the source-selected window `J/R` and carrier scale `1/R`, or derive an equivalent deterministic estimate for the normalized logarithmic derivative. A theorem averaged over unrelated heights or one that first collapses the window into a larger cluster is insufficient unless its exceptional-set control can be transported to the selected block.
+## Keep exact reconstruction, macroscopic averaging and source-faithful local averaging separate
 
-## Keep signed reconstruction, modulus decay, source localization and detector resolution distinct
-
-An absolute carrier phase anchor is necessary if one wants to reconstruct the complex Ford coefficient from translation-invariant data. It is **not** necessary to prove its modulus tends to zero. Squaring removes the absolute phase while preserving the depth marks and all dangerous relative coherence.
-
-This does not make the analytic problem easy: the pair energy is an exact reformulation of the desired norm. The gain is conceptual precision about the missing source information. Future pair or clustering results should be tested simultaneously for selected-height localization, Ford-depth conditioning, moving carrier frequency, window size and deterministic/exceptional-set strength rather than rejected merely because their statistic is translation invariant.
+A long-height average or random-height law can miss sparse bad Ford blocks and remains insufficient. The `1/H` local mean of NB-246 is different: it follows from the exact bandlimit of the frozen smooth shell and must hold uniformly around every candidate selected height. Hard moving cutoffs destroy that bandlimit. Any averaging theorem used here must therefore match the smooth source window, its depth marking, its frozen parameters and the required uniform center quantifier.

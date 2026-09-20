@@ -1,19 +1,13 @@
-# MI-062 — Critical Ford decay is a depth-marked carrier pair-energy problem, not an absolute-phase reconstruction problem
+# MI-062 — The critical Ford mark is exactly recoverable at finite depth but can be uniformly invisible to bounded interior probes
 
-**Evidence level:** exact positive reduction plus matched controls and source-specific detector audits from [NB-234](../../findings/NB-234-growing-depth-moment-hierarchy-reconstructs-critical-ford-mark.md)--[NB-244](../../findings/NB-244-ramachandra-revesz-clustering-turns-on-beyond-the-ford-window.md), building on NB-230--NB-233.
+**Evidence level:** exact synthesis from NB-237--[NB-245](../../findings/NB-245-cauchy-stieltjes-laws-resolve-ford-cells-but-average-away-depth-marked-blocks.md). No RH-equivalent reconstruction theorem is claimed.
 
-NB-234--NB-237 identify the critical coefficient first as a growing depth--phase moment observable and then as a microlocal pairing with the `R`-normalized logarithmic derivative. The `1/R` first-order normalization is not automatic decay because `Theta(J)` poles can sit at spacing `Theta(1/R)` with carrier phases locked.
+The Ford reduction isolates a depth-marked local coefficient rather than an unstructured phase variable. Earlier work expressed that coefficient through increasingly high moments, jets or derivatives as the strip depth grows. NB-245 clarifies what this does and does not mean for Cauchy/Stieltjes representations.
 
-NB-238--NB-242 show how easily relevant information is coarse-grained. Half-isolated-zero clumps, mesoscopic zero forcing, published short-interval pair correlation and translation-invariant statistics can all fail to reconstruct the **signed** anchored coefficient at the required scale. In particular, a half-period translate can reverse the carrier phase while preserving every relative ordinate statistic.
+For a fixed finite carrier law, the unnormalized rational transform `M(z)=sum_r c_r/(z-r)` determines every coefficient exactly: the residues at the known poles recover the `c_r`. There is therefore no finite-dimensional algebraic ambiguity. Calling the critical coefficient “missing from the Cauchy transform” would be false.
 
-NB-243 separates reconstruction from decay. Writing the exact Ford coefficient as `J^-1 sum_j b_j exp(i X(gamma_j-t))`, its squared modulus is exactly
+The real obstruction is conditioning across a growing family. NB-245 gives pairs whose top depth-marked coefficients differ by order one while their normalized transforms differ by only `O(k/L)` on fixed compact subsets away from the support. Bounded interior probes average away a block that becomes deeper in the carrier even though the complete exact transform remains injective. The critical observable is therefore a growing-resolution quantity.
 
-`J^-2 sum_(j,k) b_j conjugate(b_k) exp(i X(gamma_j-gamma_k))`.
+This puts the burden on a source-available lower modulus, not on uniqueness. A complete exact rational transform with individually resolved poles and residues already contains the answer; the arithmetic question is whether the norm actually supplied by the Nyman/Ford argument resolves the critical block uniformly as the depth grows.
 
-The selected height disappears from the oscillatory phase, while the source localization and Ford-depth/profile marks remain. The diagonal is `O(1/J)`. Hence proving `R_J=o(1)` only requires the marked off-diagonal carrier energy to be `o(1)`; no absolute `U(1)` phase reference is needed. The half-period twins both have order-one energy, which is exactly the behavior a decay theorem must exclude.
-
-NB-244 then tests a pointwise near-one clustering theorem against this corrected target. Ramachandra--Révész clustering turns on only at radii much larger than the full Ford window in the transition regime, so it remains quantitatively silent where the marked energy lives. This reinforces a resolution gate without reinstating the unnecessary absolute-phase requirement.
-
-The reusable audit is therefore: identify the exact norm needed by the destination; preserve the marks and selected window defining that norm; reduce to the weakest sufficient correlation statistic; and then compare every source theorem with the carrier frequency and localization scale before crediting it. Source specificity without matching resolution is insufficient, but signed reconstruction can also demand strictly more information than decay.
-
-**Boundary.** The pair-energy identity is exact but tautological at the estimate level: it supplies no new zero correlation theorem. Published pair-correlation and clustering results audited here do not furnish the required uniform marked local estimate. If a later destination needs the argument of the Ford coefficient rather than only small modulus, the absolute-phase obstruction returns. None of these findings proves a new Nyman--Beurling distance bound or RH.
+**Boundary.** NB-245 does not prove that every source-faithful observable is ill-conditioned. In particular, it does not rule out local information tied to the smooth Ford current rather than a fixed compact family of normalized Cauchy probes; NB-246 identifies such a separate moving-center mechanism.

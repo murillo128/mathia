@@ -2,18 +2,16 @@
 
 This file holds the current mathematical questions suggested by the durable Weil-positivity intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Keep mixed shells or boundary/infinite analytic structure active until selector and positive bulk are coupled
+## Reach the boundary or postpone mixed-shell selection before asking positivity to couple finite and archimedean data
 
 **Linked intuitions:** `MI-004-mangoldt-anchor-is-unbounded-in-positive-hardy-norm`, `MI-039-enriched-semigroups-inherit-obstructed-scalar-shadows-or-universal-lifts` through `MI-057-exact-mixed-shell-nullity-collapses-every-closable-radial-positive-form`, and `MI-058-finite-interior-riesz-selectors-collapse-to-the-mangoldt-line`.
 
-WP-374--WP-379 show two complementary failures. Exact mixed-shell nullity collapses broad radial positive forms to an invariant sector, while pointed Hardy geometry can retain a nondegenerate positive bulk whose critical normalization is nevertheless universal across prime and composite controls as the Mangoldt boundary contrast vanishes.
+WP-374--WP-382 show that exact mixed-shell nullity is highly destructive. A bounded pointed local-Dirichlet Riesz coordinate can recover `Lambda(n)`, but every fixed finite interior packet satisfying exact mixed-shell nullity collapses on the cyclotomic shell family to one vector times `Lambda(n)`.
 
-WP-380--WP-382 close the most natural finite pointed repair. Critical pointed cyclotomic Grams forget fixed-width squarefree factorization. A local-Dirichlet Riesz anchor does recover the exact bounded Mangoldt coordinate, but WP-382 proves that every **fixed finite packet** of interior Hardy evaluations and jets satisfying exact mixed-shell nullity collapses on the shell family to one vector times `Lambda(n)`. Any positive Gram formed from those exact-support channels is rank one; critical normalization only multiplies that line by `1/sqrt(n)`.
+WP-383 closes the obvious infinite-coordinate loophole. Every Banach- or Hilbert-valued linear response `T:H(D)->K` that is continuous for the compact-open topology and annihilates all mixed-prime shells also satisfies `T(B_m)=Lambda(m)v` for one fixed vector `v`. Continuity means the whole packet is controlled on one fixed compact subdisk, and the fresh-prime dilation then disappears exponentially. Infinite dimension does not help if the response remains fixed-interior continuous.
 
-The next useful construction must therefore change when or where selection occurs. It can keep mixed-prime shells active until finite and archimedean pieces interact, use an infinite or boundary-accumulating analytic sector whose growth is source-forced, use scale-varying probes with controlled energy, or introduce genuinely new finite--archimedean geometry before exact support selection. Another fixed finite interior Riesz packet with componentwise mixed-shell nullity cannot provide an independent test-function or real-place channel.
+The surviving constructions must therefore cross a real boundary: use probes whose radii or derivative scale approach the unit circle with the arithmetic scale, a boundary/singular response not compact-open continuous, or postpone exact mixed-shell selection until after a source-derived finite--archimedean interaction. The first adversarial test for any proposed infinite packet is whether its energy bounds secretly imply compact-open continuity; if so, WP-383 collapses it back to the Mangoldt line.
 
-## Keep selector existence, selector dimension, positive bulk and destination-scale coupling distinct
+## Keep selector existence, response dimension, topology and destination coupling distinct
 
-WP-381 proves that a bounded exact Mangoldt selector can exist inside the pointed geometry. WP-382 proves that finitely many such exact-support interior probes still span only the Mangoldt line on the cyclotomic source. Thus regularizing the selector and making the analytic probe family look multidimensional are not enough.
-
-A surviving Weil-positive route must say which mixed-prime coefficients remain active, when positivity and exact nullity are imposed, how many source-dependent channels remain after that quotient, how the linear finite coefficient couples to the Gamma/polar completion, and whether the coupling survives critical normalization. The selector and the positive bulk must coexist at the destination scale rather than becoming separate well-behaved objects.
+WP-381 proves existence of a bounded exact selector in the pointed geometry. WP-382--WP-383 show that exact support selection can still reduce an arbitrarily large interior response space to rank one on the source family. A surviving Weil-positive route must explain how its boundary or scale-varying channel remains canonical and positive, how mixed-prime information is retained until the right stage, and how the linear finite coefficient couples to the Gamma/polar completion at the destination scale.
