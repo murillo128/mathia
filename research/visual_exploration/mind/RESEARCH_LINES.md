@@ -2,34 +2,24 @@
 
 This file records current mathematical questions for the visual-exploration line. It is a mutable synthesis, not a task queue or history.
 
-## Push past first-parent decimation only in the genuinely nonrepetitive Christoffel regime
+## Move the Wang frontier out of the maximally fragmented regime
 
 **Linked intuition:** `MI-041-wang-natural-window-is-a-taper-weighted-prime-ratio-occupancy-problem`.
 
-VIS-317--VIS-323 identify the faithful unimodular Wang coordinates, reduce each frozen branch to center-gap fixed-gap runs and show that aggregate singular-series cost is neutral at the first diagonal decomposition. VIS-324 closes every polynomially long first-level run by the classical two-linear-form Selberg upper-bound sieve: at the natural scale, `k<=M^(1-delta)` already gives the required `L/log^2 M` occupancy scale.
+VIS-317--VIS-324 identify faithful unimodular Wang coordinates, reduce frozen branches to fixed-gap affine runs and close every polynomially long first-level run with the classical two-linear-form Selberg upper-bound sieve. VIS-325--VIS-327 then show that the fragmented range `k>L` has a lower-denominator mechanical-word description and that a short nondegenerate Christoffel parent simultaneously buys visible repetition and a small resultant/conductor.
 
-VIS-325 changes the interpretation of the fully fragmented range `k>L`. With `k=|u-v|`, the same branch is, up to only `O(1)` determinant indices, the rational mechanical path of lower denominator `k`. VIS-326 makes the first continued-fraction split explicit. Writing `J=floor(m/k)` and `q=m-Jk`, the two Christoffel parents have lengths `q` and `k-q`; their Wang monodromies are primitive consecutive-coordinate vectors of size `O(log log M)` in the hard natural regime. For `J>=2` both are nondegenerate; for `J=1` the externally selected parent is axis-degenerate while the complementary parent remains two-dimensional.
+VIS-328 removes the remaining dependence on a short first parent. For any denominator-`k` slope, the determinant-`k` approximation lattice contains a nonzero vector `(s,e)` with `s,|e|=O(sqrt(k))` by Minkowski. An `s`-step has one constant Wang displacement except at at most `|e|` edges, so the observed branch splits into at most `s+|e|` affine runs. The same vector controls both the primitive two-prime step and the resultant, and the only axis-degenerate vectors lie on an explicit long ray that the Minkowski vector misses at the natural same-shell scale.
 
-VIS-327 now prices the missing **visible repetition and conductor** at this first parent level. For a parent `(p,s)` with `d s-p k=±1`, every admissible `s`-step in the observed branch has the same Wang displacement `G` except at at most one edge. If `s<L`, residue classes modulo `s` split the finite window into at most `s+1` affine runs, with copy-index scale `L/s`. On each constant-step run the two-form resultant is exactly
+At `L asymp M/log log M` with `k>L`, this gives `s+|e|=O(sqrt(M))=o(L)`, a polynomial-size conductor and a dimension-two Selberg bound with excess only `O((log log M)^2)`. That is inside the final taper budget. **The entire maximally fragmented range `k>L` is therefore closed as a Wang occupancy obstruction**, including the previous `J=1` axis-parent case.
 
-`Delta=p h_0-s t_j(h_0)`
+The live branchwise frontier has moved to the near-maximal but non-fragmented transition
 
-and satisfies `|Delta|<=4s`. Thus both the step and the local sieve conductor live at the parent scale rather than at the ambient center scale.
+`k<=L`, `k=M^(1-o(1))`,
 
-For a nondegenerate parent, the dimension-two Selberg upper bound becomes
+where phases can repeat and the denominator-`k` bounded-error replacement used by VIS-328 no longer applies in the same form. The next exact question is whether an analogous short nondegenerate packet survives once `L` reaches/exceeds `k`, or whether the repeated-phase geometry should instead be treated by discrepancy/energy aggregation.
 
-`P_j << Lambda_s [ L/log^2(3+L/s) + s ]`,
+## Keep finite-window repetition, arithmetic dimension, conductor and the taper destination coupled
 
-with only logarithmic dependence on the bad-prime conductor. At the natural Wang scale, every nondegenerate parent with `s<=M^(1-delta)` therefore has excess only `O_delta(log log M)`, comfortably inside the final taper budget. Consequently an unresolved `J>=2` center must satisfy
+VIS-328 strengthens the renormalization lesson. A useful packet need not be a canonical continued-fraction parent; it is enough that one short Diophantine vector simultaneously bounds exceptional edges, preserves two prime coordinates, controls the affine step/resultant and repeats often enough inside the actual observation window. Minkowski supplies such a packet throughout `k>L`.
 
-`min(q,k-q)=M^(1-o(1))`.
-
-For `J=1`, the same closure applies when the **complementary** nondegenerate length `k-q` is polynomially short; a short axis parent alone still has sieve dimension one.
-
-The live frontier is therefore no longer generic “repeat multiplicity plus conductor.” Those costs are controlled whenever a nondegenerate first parent is polynomially short. What remains is the genuinely nonrepetitive first-Christoffel regime in which every available nondegenerate parent has length `M^(1-o(1))`, together with the `J=1` axis-short/complement-long case. The next exact question is whether a deeper continued-fraction parent, offset aggregation, or a discrepancy/energy representation creates a shorter **nondegenerate** packet without repaying the gain in conductor or taper.
-
-## Keep arithmetic dimension, parent length, visible repetition, conductor and destination taper together
-
-The center-gap decomposition, denominator-`k` mechanical word and Christoffel split describe the same Wang branch at progressively finer resolutions. VIS-327 shows that small parent length simultaneously buys many visible copies and a small resultant. The two resources cannot be priced independently: a small primitive step with `s>=L` does not repeat, while an axis step can repeat but still has only one arithmetic dimension.
-
-Future work should therefore descend the continued-fraction hierarchy only where the first parent test actually fails. For every proposed deeper packet, carry its block length, primitive two-prime step, exceptional-edge count, resultant/local factors and final Wang taper through the same finite-window calculation. Mechanical renormalization has now removed all polynomially short nondegenerate first-parent cases; the residual problem is a near-full-scale nonrepetition problem, not a generic fragmentation problem.
+Future work should not keep descending the Christoffel hierarchy in a regime that is already closed. It should target only `k<=L` with near-maximal `k`, carrying phase repetition, packet length, arithmetic dimension, local factors and final taper through the same finite-window estimate.
