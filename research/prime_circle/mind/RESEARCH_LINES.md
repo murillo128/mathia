@@ -2,20 +2,20 @@
 
 This file holds the current mathematical questions suggested by the durable prime-circle intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Leave the entire scalar one-sided grade-raising phase diagram, not only its critical edge
+## Find cross-grade structure that breaks the common-unitary matched control
 
 **Linked intuitions:** `MI-045-reciprocity-closed-signature-is-abelian-trivial-and-rank-two-at-first-lie-level` through `MI-052-proper-grade-hamiltonians-do-not-spectralize-bounded-raising-data`.
 
-PC-347--PC-360 show that increasingly rich finite signature and spectral constructions remain reciprocal-control blind. PC-361 proves that bounded strictly grade-raising source terms leave a proper diagonal grade Hamiltonian's eigenvalues and algebraic multiplicities unchanged, and PC-362 extends that blindness to relatively bounded strictly raising perturbations below relative bound one.
+PC-361--PC-364 close the scalar one-sided grade-raising family: subcritical spectra are triangularly blind, the critical edge is a universal Hardy/`ell^2` threshold, and the supercritical residual spectrum fills the plane. PC-365 shows that the obvious two-sided scalar repair is classical `su(1,1)`/Jacobi structure rather than an arithmetic selector. PC-366--PC-367 likewise classify single and homogeneous multichannel full-Fock creator routes by Wold/gauge or finite Gram data.
 
-PC-363 resolves the canonical critical weighted shift. On the forced closed extension, the exact spectrum becomes a universal half-plane whose boundary moves to `Re(s)=1/2` after the harmless sign normalization. The whole half-plane is spectral and no Prime-Circle arithmetic selects zeta zeros; the edge comes from the ambient `ell^2`/Hardy summability threshold.
+PC-368 identifies a real information-preserving boundary. Heterogeneous tensor degrees create equal-total-grade resonances, so cross-grade word contractions are not determined by separate homogeneous Gram matrices and can survive into canonical pointed spectral moments. Mixed degree therefore does retain source tensor information that the homogeneous classification erases.
 
-PC-364 now completes the scalar amplitude family. For `H_c=N+Q_c`, `Q_c e_n=c(n+1)e_(n+1)`, the spectrum is the bare nonnegative grade set for `|c|<1`, the universal critical half-plane for `|c|=1`, and **all of `C` for `|c|>1`**. In the supercritical regime the operator has no eigenvalues while its adjoint has every complex number as a one-dimensional eigenvalue, so every spectral parameter is residual/compression spectrum. Increasing the scalar raising amplitude therefore destroys localization rather than revealing progressively sharper arithmetic data.
+But every canonical resonant word-Gram invariant is preserved by one common one-particle unitary. The exact Prime-Circle matched reciprocal control of PC-355 is related by precisely such a unitary, so the entire resonance package remains control-blind. Retaining more tensor data is not yet arithmetic discrimination.
 
-The canonical scalar one-sided route is closed across all amplitudes. A live operator route must change something source-bearing: the domain or boundary condition itself, same-grade/backward/two-sided or otherwise nontriangular coupling, a coefficient sequence carrying arithmetic data, or a non-eigenvalue observable with an independently established zeta-zero destination. A universal spectral transition, even one whose boundary is exactly `1/2`, is not an arithmetic discriminator.
+The live operator question is therefore narrower: does the source force a cross-grade/domain/boundary relation that is **not** invariant under the PC-355 common-unitary control, and can that relation reach a zeta/RH destination? Another scalar amplitude, two-sided Jacobi coupling, homogeneous creator family or common-unitary word contraction should not be reopened without a new discriminator.
 
-## Keep source recovery, triangular position, domain growth, closure and spectral observable separate
+## Keep information retention, unitary classification, matched controls and arithmetic readout separate
 
-A representation may recover the source path and still lose it after spectral quotienting. Strictly upper-triangular source data can leave every eigenvalue unchanged below threshold; the critical closure can manufacture an RH-looking boundary from ambient summability; and the supercritical closure can fill the entire complex plane. Unboundedness and spectral-category change are therefore not evidence of source sensitivity.
+A representation can be strictly richer than a previous one and still fail the decisive source/control test. PC-368 is the clean example: heterogeneous degrees genuinely defeat homogeneous Gram collapse, yet their first canonical invariants are cloned exactly by the matched nonarithmetic control.
 
-Future candidates should state where arithmetic enters relative to the grading, which closed domain/extension it forces, what matched nonarithmetic control reproduces the same transition, and which spectral datum is consumed downstream. The next useful theorem must distinguish source-dependent structure from this fully classified scalar one-sided universality.
+Future candidates should state which datum survives the graded closure, which equivalence group preserves it, how the source breaks that group if it does, and which downstream observable uses the broken symmetry. A spectral transition or a nontrivial tensor contraction earns arithmetic credit only after this matched-control audit.

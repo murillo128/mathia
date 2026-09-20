@@ -2,28 +2,22 @@
 
 This file records the current mathematical questions suggested by the durable Möbius-cancellation intuitions. It is not a task queue or history.
 
-## Retain arithmetic structure before scalarization; the surviving scalar PNT-error correlation is already RH-scale
+## Control incomplete translated character blocks before completion deletes source coupling
 
 **Linked intuition:** `MI-073-source-mode-averaging-collapses-to-a-signature-projector`.
 
-MC-397--MC-404 progressively consume source-mode averaging, divisor-pair multiplicity, lcm phase, moving endpoints, complete endpoints, generic truncation and finally every finite divisor-incidence enrichment. Formal family size and finite incidence nonlinearity are not independent cancellation resources once the downstream arithmetic has collapsed them to signature or lcm data.
+MC-397--MC-408 show that source-mode averaging, divisor incidence, lcm labels, floor-quotient coordinates and the final scalar PNT-error correlation can all survive formally while still collapsing by exact identities to target-hard information. MC-409 provides a genuine alternative representation: a well-factorable upper linear-sieve frame preserves positivity and the prime-frame diagonal without first squaring into the Selberg lcm coefficient.
 
-MC-405 leaves the lcm semilattice by retaining the prime-power label in `M(floor(x/b))`, but the complete Mangoldt-weighted family is an exact first-order self-coupling of `M`. MC-406 then identifies the quotient actually seen downstream: only the `O(sqrt(x))` floor-quotient masses survive, and their PNT main kernel is exactly classical harmonic Möbius cancellation. MC-407 shows that the remaining increment pairing Abel-collapses to the scalar correlation
+MC-410--MC-412 then remove three false sources of leverage. The raw factorable character phase is Mellin-separable, ordinary additive completion is only a dual permutation, and the divisor condition occupies the degenerate zero residue rather than the nonzero affine progression geometry exploited by modern well-factorable distribution theorems.
 
-`C(x)=sum_(a<=x) mu(a)(psi(x/a)-x/a)`
+MC-413 finds the first real escape and its exact boundary. Additive differencing creates a translated character phase coupled to the divisor pair, but every complete source-conductor block collapses to the universal Ramanujan scalar `c_q(h)`, independent of the divisor pair, lcm, CRT starting point and primitive character. The only surviving source/divisor phase is therefore in the **incomplete sub-conductor blocks**.
 
-plus the endpoint term.
+The live factorable route is to estimate that incomplete translated family collectively before completion or pairwise absolute values erase its geometry. A useful theorem must exploit factorability, dispersion, modulus factorization or reciprocal structure in the joint CRT data strongly enough that the gain survives the divisor-pair sum and the source-depth bookkeeping. Applying an individual Burgess/Pólya--Vinogradov estimate to each remainder is not progress unless the fully propagated bound beats the existing source tariff.
 
-MC-408 now classifies that scalar escape. Its Mellin transform is
+The source-specific truncated-lcm branch also remains logically open, but it must use an actual property of the Selberg/source coefficients beyond the generic inversion and incidence reductions already classified.
 
-`-zeta'(s)/(s zeta(s)^2)-1/((s-1)zeta(s))`,
+## Keep retained variables, completion boundaries, scalarization and analytic leverage distinct
 
-so every nontrivial zeta zero produces a nonremovable pole whose leading order cannot cancel. The bound `C(x)=O_epsilon(x^(1/2+epsilon))` for every `epsilon>0` is equivalent to RH. Finite prefixes of `C` also determine the corresponding Möbius prefix by a lower-triangular recursion. The scalar correlation is therefore neither a compression nor an easier RH-scale auxiliary observable merely because it mixes Möbius and prime-counting error.
+A coordinate can survive one exact quotient and still be useless later. MC-409 shows that coefficient factorization is real; MC-413 shows that a genuinely nonseparable translated phase is also real. Yet complete-period averaging deletes that phase exactly. Earlier findings show the analogous loss under lcm compression, Abel summation and scalar aggregation.
 
-The live route is now **pre-scalarization arithmetic**. Either exploit the actual Selberg/source coefficients through a theorem not available for generic lcm incidence, or retain phase, congruence, translation, source labels or another genuinely nonseparable variable inside the quotient fibers and control it before exact aggregation. One may still attack `C(x)` directly as an RH criterion, but it no longer counts as an independently easier intermediate mechanism.
-
-## Keep retained variables, invertibility, coordinate changes and analytic leverage distinct
-
-A variable can survive one quotient and still be analytically redundant. Divisor tuples collapse to lcm; source labels collapse to floor-quotient masses; deterministic PNT mass collapses to harmonic Möbius cancellation; MC-407 identifies the residual increment coordinates with the same Möbius-weighted error convolution; and MC-408 shows that the final scalar correlation is both finite-prefix invertible and RH-equivalent at the square-root target.
-
-Exact recoverability is therefore not the same resource as a cheaper estimate. Future candidates should be reduced through all exact regroupings, inversions and summation-by-parts identities before receiving credit for a second observable. Genuine progress requires an independently controlled signed relation **before** scalarization, or a source-specific theorem whose proof input is not already equivalent to the desired Mertens/RH-strength bound.
+Future candidates should therefore identify the last stage at which the new variable remains source-sensitive and prove the estimate there. Exact recoverability, invertibility, factorability or a visibly mixed formula does not count as an independent cancellation resource if completion, regrouping or summation-by-parts returns the old target before any cheaper estimate has been obtained.

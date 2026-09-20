@@ -1,25 +1,15 @@
-# MI-041 — Direct original-period Minkowski decimation closes Wang branchwise occupancy without a center-gap hierarchy
+# MI-041 — Wang occupancy is closed; any surviving transform gain must be nonstationary and survive the inverse derivative tax
 
-**Evidence level:** exact/literature-backed synthesis from VIS-313--[VIS-329](../../findings/VIS-329-direct-minkowski-decimation-closes-wang-transition.md), plus classical rational mechanical-word geometry, Minkowski's convex-body theorem and the dimension-two Selberg upper-bound sieve. No prime-pair asymptotic or RH consequence is claimed.
+**Evidence level:** exact/literature-backed synthesis from VIS-313--[VIS-334](../../findings/VIS-334-wang-summatory-pointwise-inverse-derivative-tax.md), plus classical rational mechanical-word geometry, Minkowski decimation, the Selberg upper-bound sieve and exact transform identities. No prime-pair asymptotic or RH consequence is claimed.
 
-The cutoff-free Wang remainder has no useful global nearest-frequency spacing, but dyadic shells reduce the finite-window loss to simultaneous-prime occupancy on a few rational mechanical branches with a taper-weighted destination. VIS-317--VIS-324 identify faithful unimodular Bézout coordinates and show that sufficiently long affine packets have the natural two-prime Selberg upper-bound scale.
+VIS-313--VIS-329 reduce the moving-upper source to rational mechanical branches and then close the entire natural subperiod occupancy problem directly in the original Wang period. One Minkowski short vector controls packet count, exceptional edges, two-prime step and conductor simultaneously, giving the required `A_M=O((log log M)^2)` excess uniformly. The former center-gap transition is therefore a representation artifact for this destination.
 
-VIS-325--VIS-328 originally treated fragmentation through the center-gap denominator `k=|u-v|`: lower-denominator mechanical words, Christoffel parents and finally a determinant-`k` Minkowski vector progressively closed the range `k>L`. That analysis correctly exposed how packet length, arithmetic dimension and conductor have to be controlled together, but it left a near-maximal transition when `k<=L`.
+The surviving fixed-source route has its own representation audit. VIS-330 prices any fixed power saving by the zero-free half-plane it already implies. VIS-331 extends that pricing to general pointwise logarithmic envelopes: positive lower linear rate buys a fixed Mellin half-plane, while sublinear rate does not do so by that direct comparison alone. VIS-332 shows that a coherent regularly varying secondary term is transmitted with an explicit nonzero multiplier and, at the PNT-relevant index, without leading attenuation.
 
-VIS-329 shows that the transition belonged to the intermediate representation. Return to the original Wang phase denominator `m=max(u,v)` with `L<m` and the lattice
+VIS-333 gives the exact log-frequency picture. The normalized source-to-Wang map has multiplier `4(1+i xi)/(4+xi^2)`: no real zero, unit response at zero and only first-order attenuation at high frequency. Fixed coherent frequencies therefore cannot be credited as a hidden null.
 
-`Lambda_(c,m)={(s,e) in Z^2 : e=cs (mod m)}`.
+VIS-334 converts that spectral statement into a pointwise boundary. The inverse is a first derivative plus exponentially weighted memory. For ordinary smooth sublinear envelopes, if both `Q` and `Q'` have the claimed improved size, then the normalized source remainder `F` has the same size. The derivative is precisely where a genuine high-frequency/nonstationary mechanism can hide the scale lost from `Q`.
 
-Its covolume is `m`, so Minkowski gives a nonzero vector with `1<=s<=2 sqrt(m)` and `1<=E=|e|<=2 sqrt(m)`. Along an `s`-step, the branch has one constant Wang displacement except at at most `E` edges. Removing those edges partitions the whole candidate branch into at most `s+E` affine runs. The same vector makes the step coefficients `O(E)` and the two-form resultant `O(s+E)`, so the arithmetic conductor is polynomial in `M`; at the natural scale the step is automatically nondegenerate.
+The reusable distinction is now **source arithmetic -> transform frequency behavior -> inverse derivative cost -> downstream destination**. A transform-induced improvement is meaningful only if the actual arithmetic puts mass in a moving/high-frequency regime and the final Wang statistic can exploit the attenuated output without reintroducing the derivative that exact inversion charges.
 
-The classical two-form upper-bound sieve then gives, uniformly in the center gap,
-
-`P_j << L (log log M)^2/log^2 M`
-
-when `L asymp M/log log M` and `m asymp M`. Relative to the natural two-prime cell scale this is only `A_M=O((log log M)^2)`, and its square root lies inside the taper allowance isolated in VIS-316. The complete natural subperiod branchwise occupancy problem is therefore closed at the required upper-bound scale.
-
-The reusable lesson is stronger than “fragmentation should be renormalized.” A faithful representation should be judged by the finite-window cost it exposes, not by whether its intermediate symbolic decomposition looks canonical. The source-native period `m` already carries a short Diophantine vector that controls **packet count, exceptional edges, arithmetic dimension and conductor simultaneously**. Passing first to the center-gap denominator can reveal structure, but it is not automatically the representation that should govern the final estimate.
-
-This moves the critical path away from branchwise Wang occupancy. The remaining source-sensitive question is the fixed-power real-axis route: whether the squared-von-Mangoldt source admits a quantitatively useful statement strictly weaker than the RH-equivalent half-plane pole exclusion already isolated by VIS-293. Occupancy refinements should be reopened only if a later destination needs more than the VIS-316 upper-bound criterion or a flaw is found in the direct decimation.
-
-**Boundary.** VIS-329 is an upper-bound closure for the moving-upper candidate branches in the subperiod regime `L<m`. It does not give a prime-pair asymptotic, lower bound, complete Wang theorem, improved fixed-power source estimate or stronger RH criterion. Center-gap/Christoffel descriptions remain valid mathematics; they are simply not load-bearing for this upper-bound destination.
+**Boundary.** VIS-334 does not derive a `Q'` bound from a `Q` bound and does not prove that the actual squared-von-Mangoldt remainder has high-frequency migration. The current Korobov--Vinogradov input remains an upper envelope. VIS-329 is only the branchwise occupancy closure required by VIS-316, not a full Wang theorem. The remaining source-specific cancellation question is open.

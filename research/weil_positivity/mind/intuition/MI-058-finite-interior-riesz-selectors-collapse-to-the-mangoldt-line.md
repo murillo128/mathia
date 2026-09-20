@@ -1,0 +1,15 @@
+# MI-058 — Exact mixed-shell nullity collapses every fixed finite interior Riesz selector packet to the Mangoldt line
+
+**Evidence level:** exact synthesis from [WP-381](../../findings/WP-381-pointed-dirichlet-riesz-anchor-recovers-mangoldt-but-decouples-at-critical-scale.md) and [WP-382](../../findings/WP-382-finite-interior-dirichlet-riesz-packets-with-exact-mixed-shell-nullity-collapse-to-the-mangoldt-line.md), interpreted against the pointed-bulk controls of WP-378--WP-380.
+
+WP-381 identifies a positive result that earlier Hardy-topology obstructions did not exclude: after the pointed local-Dirichlet transform, one bounded interior Riesz coordinate recovers `Lambda(n)` exactly on the cyclotomic shell family. The difficulty is not simply that every exact Mangoldt selector must be an unbounded boundary trace.
+
+WP-382 classifies the natural finite enlargement. Take any fixed finite linear combination of interior Hardy reproducing-kernel evaluations and derivatives of the pointed transform. If that functional vanishes on every mixed-prime shell, the fresh-prime cyclotomic identity forces its value on **every** primitive shell to be `C Lambda(n)` for one constant `C`. Componentwise, any finite vector packet therefore maps the whole shell family into a single Mangoldt line.
+
+The mechanism is source-exact. For a fresh prime `q`, the identity `Phi_(mq)(z)=Phi_m(z^q)/Phi_m(z)` drives `F_m(z^q)` and all fixed interior jets to zero on compact subsets as `q` grows. Exact mixed-shell nullity then determines the remaining primitive-shell response. No RH input, zero distribution or density theorem is involved.
+
+Consequently a finite positive matrix acting on such a packet cannot manufacture an independent selector family: on the source shells its Gram is rank one in `Lambda(m)Lambda(n)`, and critical half-density gives only the same line scaled by `1/sqrt(mn)`. Analytic probe dimension is not the same as source-response dimension after exact support selection.
+
+The reusable lesson is about **when selection is imposed**. If exact mixed-shell nullity is demanded before a fixed finite bounded interior packet enters the positive assembly, the packet has only the Mangoldt line available. To preserve more source information one must keep mixed shells active longer, move to an infinite or boundary-accumulating sector, let probes vary with scale for a source-derived reason, or add a genuinely different finite--archimedean coupling.
+
+**Boundary.** The theorem is restricted to fixed finite interior jet packets and exact mixed-shell nullity. It does not classify infinite packets, points approaching the unit circle, growing derivative order, scale-dependent probes, singular boundary functionals or constructions that deliberately retain mixed shells until a later sign theorem. It also does not turn the rank-one selector energy into the classical Weil finite term or prove RH.
