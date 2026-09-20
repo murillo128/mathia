@@ -1,27 +1,15 @@
 # MI-057 — Paired-cube completion defect transfers Banach type ceilings into source-relative mixture fidelity
 
-**Evidence level:** exact geometric synthesis from [AF-458](../../findings/AF-458-rademacher-type-controls-sparse-mixture-fidelity-through-paired-secants.md) and [AF-459](../../findings/AF-459-average-cube-completion-defect-controls-type-p-fidelity.md), interpreted against AF-456--AF-457. No arithmetic source is asserted to have small completion defect.
+**Evidence level:** exact geometric synthesis from [AF-458](../../findings/AF-458-rademacher-type-controls-sparse-mixture-fidelity-through-paired-secants.md), [AF-459](../../findings/AF-459-average-cube-completion-defect-controls-type-p-fidelity.md), and [AF-460](../../findings/AF-460-finite-rank-source-laws-have-zero-cube-completion-defect.md), interpreted against AF-456--AF-457. The AF-460 conclusion applies to the normalized kernel carrier of a bounded finite-rank linear source law; transfer to a physical carrier requires the stated carrier inclusion.
 
-For a bounded barycentric marking `phi:A->Y` with `sup_a ||phi(a)||<=M`, Banach type limits source-relative TV fidelity through the geometry of the normalized completed-secant carrier `C`. For a paired block `B=((a_1,b_1),...,(a_k,b_k))`, write
-
-`q_epsilon^B=(1/(2k)) sum_j epsilon_j (delta_(a_j)-delta_(b_j))`
-
-and measure how well the physical carrier realizes the full sign cube by
-
-`D_B(C)=E_epsilon dist_1(q_epsilon^B,C)`, `D_k(C)=inf_B D_B(C)`.
-
-If `Y` has Rademacher type `p in [1,2]`, AF-459 gives the quantitative source-relative ceiling
+For a bounded barycentric marking `phi:A->Y` with `sup_a ||phi(a)||<=M`, Banach type limits source-relative TV fidelity through the geometry of the normalized completed-secant carrier `C`. For a paired block `B=((a_1,b_1),...,(a_k,b_k))`, write `q_epsilon^B=(1/(2k)) sum_j epsilon_j(delta_(a_j)-delta_(b_j))` and let `D_k(C)` be the least mean `ell^1` distance from such a sign cube to `C`. AF-459 gives
 
 `kappa_C(F_phi) <= M [T_p(Y) k^(1/p-1) + D_k(C)]`.
 
-AF-458 is exactly the zero-defect case. The obstruction therefore does not require every sign orientation to be physically completable. If a fraction at least `1-theta` of the orientations of one paired cube is exactly completable, then `D_B(C)<=2 theta`; for `p>1`, asymptotically dense completion already forces the lower gain to vanish when `theta->0`.
+AF-460 supplies an exact source-side closure theorem for finite-rank linear constraints. If `L:ell^1_0(A)->E` is bounded and finite-rank on an infinite alphabet, then its normalized kernel carrier `C_L={h in ker L: ||h||_1=1}` satisfies `D_k(C_L)=0` for every fixed `k`. Finite-dimensional compactness clusters many atomic images, and a bounded right inverse corrects the residual without destroying the paired-cube normalization. Thus finite many bounded linear source laws do not keep their full normalized kernel uniformly cube-poor.
 
-The contrapositive identifies the source resource needed for stable bounded affine fidelity. If `kappa_C(F_phi)>=kappa_0>0`, then every admissible scale must satisfy
+Combined with AF-459, any physical completed-secant carrier containing `C_L` has zero bounded-affine lower gain into every Banach target of nontrivial type. The obstruction is therefore not just that a large source has many degrees of freedom: **finite-rank source laws leave an exact paired-cube completion defect of zero unless the physical source removes part of their normalized kernel**.
 
-`D_k(C) >= max(0, kappa_0/M - T_p(Y) k^(1/p-1))`.
+This sharpens the contrapositive resource. Stable bounded affine fidelity cannot be protected merely by finitely many bounded linear conservation laws. It needs a completion restriction that excludes the kernel cube geometry—positivity, support or boundary constraints, nonlinear/infinite-dimensional source laws, an unbounded observation category, or a different source metric may do so, but that must be proved on the actual physical carrier.
 
-Thus the useful arithmetic invariant is no longer binary cube incidence but **average normalized-secant separation from every large paired sign cube**. Deleting a few bad orientations does not provide an escape; a source that keeps a uniform discriminator in a nontrivial-type target must remain quantitatively cube-poor on average.
-
-This condition is still only a necessary obstruction. Large `D_k(C)` does not construct a positive inverse modulus, and some other family of completed secants may collapse even when paired cubes are far away. The source carrier, its normalization, and the target category remain load-bearing.
-
-**Boundary.** The result is affine/barycentric and uses TV/`ell^1` source geometry with bounded marks. Type `p=1` gives no decaying type term. Finite alphabets impose a cutoff on `k`, and neither AF-458 nor AF-459 covers nonlinear encoders or proves that the physical prime source has any particular asymptotic completion profile.
+**Boundary.** AF-460 does not say that an arbitrary arithmetic source contains the whole normalized kernel of a finite-rank model. The physical-carrier inclusion is load-bearing, as are the infinite alphabet, bounded finite rank, TV/`ell^1` geometry and affine bounded target map. Large `D_k(C)` is still only a necessary escape from this obstruction, not a sufficient inverse theorem.

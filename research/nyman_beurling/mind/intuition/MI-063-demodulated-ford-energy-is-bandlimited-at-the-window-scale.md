@@ -1,25 +1,15 @@
 # MI-063 — Ford bandwidth counts only when carrier coherence does not renormalize the critical layer
 
-**Evidence level:** exact harmonic/source-specific synthesis from NB-246--[NB-253](../../findings/NB-253-positive-multi-shell-comb-recreates-the-ford-obstruction-at-shallower-depth.md), including the Hardy projection identity of NB-249, carrier representation NB-250, matched-packet crossover NB-251 and single-shell scale covariance NB-252. The matched packets are compatibility controls, not claims about actual zeta zeros.
+**Evidence level:** exact harmonic/source-specific synthesis from NB-246--[NB-254](../../findings/NB-254-positivity-forces-a-1-over-w-coherence-window-for-every-scalar-multi-shell-mixture.md), including the Hardy projection identity of NB-249, carrier representation NB-250, matched-packet crossover NB-251, single-shell scale covariance NB-252 and the equal-comb test NB-253. The matched packets are compatibility controls, not claims about actual zeta zeros.
 
-NB-248--NB-250 fix the legal order of operations. The Ford-scaled pole must be Hardy-projected through positive Mellin frequencies before Hilbert-space squaring, which exactly recovers the finite depth-marked zero current. The resulting carrier band has natural width `Theta(H)=Theta(X/J)`, while pair phases still resolve ordinate differences at the finer `1/X` scale.
+NB-248--NB-250 fix the legal order of operations. The Ford-scaled pole must be Hardy-projected through positive Mellin frequencies before Hilbert-space squaring, exactly recovering the finite depth-marked zero current. The resulting carrier band has natural width `Theta(H)=Theta(X/J)`, while pair phases still resolve ordinate differences at the finer `1/X` scale.
 
-NB-251 shows that an independently available carrier span `W` with `W/H->infinity` would disperse the standard matched packet even before full `1/X`-cell orthogonality. NB-252 shows that literal single-shell dilation does not realize that premise: replacing `H` by `B_J H` simultaneously replaces `J` by `J/B_J` and transports the dangerous Ford layer.
+NB-251 shows that an independently available carrier span `W` with `W/H->infinity` would disperse the standard matched packet. NB-252 shows that literal single-shell dilation does not realize that premise because it simultaneously replaces `J` by `J/B_J`. NB-253 shows that a positive equal-weight translated-shell comb also fails: its Dirichlet coherence peak has width `Theta(1/W)`, so the effective selected-height population is `R/W` and the Ford obstruction reappears at a shallower depth.
 
-NB-253 tests the first canonical fixed-`H` multi-carrier realization. For a positive equal-weight comb of `K` translated `H`-scale shells,
+NB-254 removes the equal-spacing artifact. For **every positive scalar mixture** of width-`H` shells whose carrier centers lie in a span of width `W`, the characteristic factor `A_mu(v)=int e^(i xi v)dmu(xi)` obeys a compulsory coherence bound on `|v|=O(1/W)`: positivity prevents the phases from cancelling near the origin. Consequently the effective coherent population is `J_W=R/W`, and the matched packet at `X(1-beta)=log J_W+O(1)` still has order-one residual. In the old Ford coordinate this is `d=-log(W/H)+O(1)`.
 
-`L_K(v)=e^(iXv) F(Hv) P_K(CHv)`
+Thus super-`H` support is not itself independent bandwidth, and equal spacing was not the reason for the obstruction. **Scalar positivity forces a `1/W` coherence window for any carrier distribution of span `W`.** Any positive scalar architecture that widens the carrier while recombining it before the final Hilbert norm must re-audit the Ford layer at population `R/W`, not at the original `J`.
 
-with the normalized Dirichlet factor `P_K`. Although the convex carrier span is `Theta(KH)`, `P_K` creates a coherence peak of width `Theta(1/(KH))`. The selected-height capacity therefore becomes
+The remaining escape is correspondingly narrower. Signed or complex carrier coefficients can destroy the positive characteristic-function lower bound; a vector/`ell^2` family kept separate until after projection can avoid scalar coherent recombination; zeta-specific off-diagonal cancellation may also operate inside the legal `O(H)` band. Each route must preserve the original Ford normalization and demonstrate that it does not recreate an equivalent narrow coherence window by another mechanism.
 
-`J_eff=R/(KH)=J/K`,
-
-and the matched obstruction reappears at the shallower Ford coordinate
-
-`d_crit=-log K+O(1)`.
-
-Thus super-`H` support is not itself independent bandwidth. The source operation must supply carrier energy across that span **without** converting the same span into a narrower unit-height coherence peak and a correspondingly smaller effective population. Single-shell dilation and the positive normalized multi-shell comb fail by different mechanisms, but both export the apparent averaging gain into a renormalized critical geometry.
-
-The remaining escape is sharper. Signed or complex carrier coefficients, a genuinely vector-valued family retained separately until after projection, or a nonuniform carrier architecture could still work, but it must keep the old Ford normalization and selected-height capacity while adding super-`H` carrier energy. If its Fourier recombination creates a dominant peak of width `1/W`, the matched layer must be re-audited at the population supported by that peak rather than at the original `J`.
-
-**Boundary.** NB-253 is source-side and assumes the positive equal-weight mesoscopic regime stated there. It neither proves that zeta zeros realize the replacement packet nor excludes all multi-carrier constructions. Zeta-specific cancellation on the legal band and architectures whose coherence geometry is genuinely different remain open.
+**Boundary.** NB-254 is a source-side theorem for positive scalar mixtures with the stated carrier span and mesoscopic regime. It neither proves a zero theorem nor excludes signed/complex, vector-valued or non-scalar architectures. The matched packet is an adversarial compatibility control, not an asserted zeta-zero configuration.

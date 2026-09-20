@@ -1,0 +1,11 @@
+# MI-041 — Sublinear point sampling cannot make divisor response signed-coercive
+
+**Evidence level:** exact source-specific synthesis from [FD-238](../../findings/FD-238-dyadic-switched-response-has-a-macroscopic-signed-nullspace.md) and [FD-239](../../findings/FD-239-sublinear-off-dyadic-response-sampling-still-has-a-macroscopic-signed-nullspace.md). This concerns unrestricted signed profiles under the stated coefficient box; no conclusion is transferred to the physical nonnegative/source-coherent class without a transversality argument.
+
+FD-238 showed that sampling only the dyadic switched response leaves a macroscopic signed kernel. FD-239 makes the obstruction density-sensitive rather than grid-specific. Let `S` contain `s_k=o(2^k)` response samples in the octave `(2^(k-1),2^k]`, together with the dyadic endpoints. There are integer coefficients with `|b_n|<=n` whose divisor response vanishes at every sampled point, remains `O(m)` globally, and still carries a fixed positive fraction of linear reservoir capacity in both signs on each large octave.
+
+The decisive quantity is therefore **sampling density relative to the number of fresh source coordinates**, not whether the samples are exactly dyadic. Any sublinear number of off-grid scalar response coordinates per octave can be absorbed while preserving a macroscopic signed direction. Changing the placement of a sparse sampling set does not repair the signed coercivity failure.
+
+This isolates the first unresolved sampling regime. To obtain signed coercivity from pointwise divisor response alone, one must either enter a positive-density response budget or exploit a source restriction that is quantitatively transverse to these constructed signed profiles. Full all-integer response remains injective, so the result is a lower-bound mechanism for sparse observation rather than a claim that the divisor transform itself loses information.
+
+**Boundary.** FD-239 does not prove that positive-density sampling is sufficient, does not preserve arbitrary nonlinear or nonnegative source constraints, and does not convert the constructed signed profiles into physical corrections. The exact conclusion is that `o(2^k)` scalar response samples in octave `k` are insufficient for signed coercivity under the stated coefficient-capacity model.

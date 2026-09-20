@@ -1,0 +1,13 @@
+# MI-060 — Strongly local Markov forms either reject mixed shells or become unit-cell invisible
+
+**Evidence level:** exact one-dimensional Dirichlet-form synthesis from [WP-386](../../findings/WP-386-pointwise-local-positive-mixed-shell-nullity-collapses-to-mangoldt-ray.md), [WP-387](../../findings/WP-387-markov-jump-mixed-shell-nullity-forces-unit-cell-invisibility.md), and [WP-388](../../findings/WP-388-strongly-local-diffusions-collapse-to-unit-cell-invisibility.md). The conclusion is for regular strongly local one-dimensional diffusion forms with fully supported Radon speed measure on the continuum carrier; it does not classify non-Markov positive kernels or finite-prelimit/interface constructions outside these hypotheses.
+
+Boundary-shell profiles are step functions with jumps at integers. For a fixed squarefree mixed shell such as `h_(pq)`, WP-388 uses the fact that the jump is nonzero at every integer. Functions in the domain of a regular strongly local one-dimensional diffusion have continuous representatives on each effective interval.
+
+This creates a sharp dichotomy. If an effective interval crosses an integer, the mixed-shell step cannot belong to the diffusion domain. If all mixed shells are admitted, no effective interval may cross any integer, so every effective interval lies inside one open unit cell. But every arithmetic shell profile is constant on each such cell. The strongly local energy of every admitted shell is therefore zero.
+
+Together with WP-386--WP-387, this closes the canonical Beurling--Deny Markov sectors on the continuum carrier. The killing/pointwise-local sector collapses exact mixed-shell selection to the Mangoldt ray; the pure-jump sector is forced inside unit cells and becomes arithmetic-blind; the strongly local sector either excludes the shell domain or, if it admits it, is again unit-cell invisible.
+
+The reusable lesson is operator-category specific: **locality cannot extract arithmetic boundary information from discontinuous shell steps while simultaneously treating those steps as finite-energy domain elements**. A positive boundary escape must therefore leave at least one of the hypotheses that make the Markov decomposition canonical here.
+
+**Boundary.** WP-388 does not rule out non-Markov positive off-diagonal forms, interface energies with extra boundary degrees of freedom not represented by a regular strongly local diffusion, finite-`q` prelimit effects, or finite--archimedean coupling before final positivity. Those remain separate categories and require their own source-forced kernels.
