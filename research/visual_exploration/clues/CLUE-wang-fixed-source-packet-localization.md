@@ -18,6 +18,7 @@ based_on:
   - research/visual_exploration/findings/VIS-338-proper-prime-power-tail-negligible.md
   - research/visual_exploration/findings/VIS-339-wang-prime-source-chebyshev-theta-differential-image.md
   - research/visual_exploration/findings/VIS-340-wang-prime-squarelog-partial-summation-invertible.md
+  - research/visual_exploration/findings/VIS-341-vk-scale-stable-under-finite-spectral-smoothing.md
 ---
 
 # Does Wang packet localization preserve source information without manufacturing strip gain?
@@ -74,6 +75,16 @@ then exact partial summation gives
 
 where `H` is the one-sided exponential average of `G`, and the map is explicitly invertible after removing the endpoint term. The full normalized `Lambda^2` summatory remainder differs from `P` only by an `O(u^2e^(-u/2))` proper-prime-power correction. At a Korobov--Vinogradov envelope, `H` stays on the same envelope scale, so at envelope-saturating heights `F(u)/(uG(u))->1`.
 
+`VIS-341` removes a weaker interpretation of the remaining frequency-migration escape. Bellotti's optimal PNT balance has the form
+
+`Omega_1(u)=inf_t {u nu(t)+log t}`,
+
+with `nu(t)` of Korobov--Vinogradov shape. More generally, replacing the polynomial truncation cost by fixed `t^(-r)` gives
+
+`Omega_r(u) ~ C_A r^(2/5) u^(3/5)(log u)^(-1/5)`.
+
+Thus any fixed finite improvement in polynomial high-frequency decay changes only the exponential constant, not the `3/5,-1/5` exponent class. Wang's one-order filter cannot create a new subpower class merely by being treated as one extra fixed inverse-frequency factor in the standard absolute truncation balance.
+
 The moving-upper occupancy branch is separately closed at the required upper-bound scale by `VIS-329`.
 
 ## Research question
@@ -82,7 +93,7 @@ Does the normalized Chebyshev-theta remainder
 
 `G(u)=e^(-u)theta(e^u)-1`
 
-have a genuinely nonstationary or scale-migrating property at the live source-envelope scale which survives the exact quotients in `VIS-339` and `VIS-340`, and which Wang's nonvanishing one-order filter turns into a pointwise smaller
+have a genuinely nonstationary or scale-migrating property at the live source-envelope scale which survives the exact quotients in `VIS-339` and `VIS-340`, is not reducible to the fixed-polynomial Korobov--Vinogradov balance classified by `VIS-341`, and which Wang's nonvanishing one-order filter turns into a pointwise smaller
 
 `Q(u)=S(e^u)-u+(3/4)e^(-2u)`?
 
@@ -90,9 +101,9 @@ If such a property exists, does Wang's complete downstream error decomposition r
 
 ## Why it may matter
 
-The source side has now been stripped of four false mechanisms. The desired leverage cannot come from isolated arithmetic singularities (`VIS-337`), collective proper-prime-power mass (`VIS-338`), repackaging prime atoms into smooth packets (`VIS-339`), or the elementary theta-to-square-log summatory partial-summation step (`VIS-340`).
+The source side has now been stripped of five false mechanisms. The desired leverage cannot come from isolated arithmetic singularities (`VIS-337`), collective proper-prime-power mass (`VIS-338`), repackaging prime atoms into smooth packets (`VIS-339`), the elementary theta-to-square-log summatory partial-summation step (`VIS-340`), or merely adding a fixed finite amount of polynomial spectral smoothing to the classical Korobov--Vinogradov optimization (`VIS-341`).
 
-A positive result must therefore expose a genuine property of the classical prime-counting error itself. The only remaining plausible source-side leverage is that `G` contains nonstationary or migrating log-frequency structure which the exact Wang filter attenuates pointwise even though it cannot annihilate any fixed band. A negative result showing that every admissible such structure is either a stronger PNT remainder in disguise or is repaid downstream would close the remaining fixed-source transform route for a source-specific reason.
+A positive result must therefore expose a genuinely stronger property of the classical prime-counting error itself. The remaining plausible source-side leverage is nonstationary or migrating structure in `G` whose quantitative content is not just a stronger constant in the known zero-free-region/truncation balance and whose attenuation survives the complete destination without derivative repayment.
 
 ## Decisive test
 
@@ -108,20 +119,22 @@ with the exact causal inverse for the prime-only summatory term supplied by `VIS
 
 A candidate survives the source gate only if its content remains nontrivial when stated directly as a quantitative property of `G`. Reject any mechanism whose apparent gain is produced only by atomic packetization, prime square-log weighting, ordinary partial summation, positive-mass estimates, coherent regular variation, a fixed/bounded log-frequency band, or a restatement of an already assumed prime-number-theorem remainder.
 
+Also translate any proposed high-frequency gain into the zero-free-region/truncation language when that is the mechanism being invoked. If it amounts only to replacing the standard fixed polynomial tail cost `t^(-1)` by `t^(-r)` for another fixed `r`, `VIS-341` already shows that the Korobov--Vinogradov exponent class is unchanged. Such a candidate must supply additional signed or arithmetic information rather than count a constant improvement in the exponent as a new source scale.
+
 For a surviving candidate, derive the resulting pointwise size of `Q` through the exact multiplier from `VIS-333` and compare it against the Korobov--Vinogradov-scale input. If a proposed gain is `exp(-phi(u))`, compute the lower linear rate `liminf phi(u)/u`; any positive rate still carries the Mellin/zero-free-half-plane cost isolated in `VIS-331`.
 
 Then trace the same mechanism through Wang's complete destination. Explicitly identify every term depending on `Q`, `Q'`, or equivalent unsmoothed source information. Accept transform leverage only if the final bound retains the smaller `Q` scale without requiring derivative-sized control that reconstructs the source through `VIS-334`.
 
-Kill a candidate if its only content disappears under the `VIS-339` theta translation or the `VIS-340` summatory inversion, if it relies on isolated prime discontinuities or proper-prime-power mass, if it discards signed baseline cancellation by absolute values, if it hides a stronger theta/PNT remainder, or if a downstream term pays back the derivative carrier.
+Kill a candidate if its only content disappears under the `VIS-339` theta translation or the `VIS-340` summatory inversion, if its frequency migration reduces to the fixed-`r` optimization of `VIS-341`, if it relies on isolated prime discontinuities or proper-prime-power mass, if it discards signed baseline cancellation by absolute values, if it hides a stronger theta/PNT remainder, or if a downstream term pays back the derivative carrier.
 
 ## Evidence boundary
 
-`VIS-333`--`VIS-336` classify generic filter transfer and repayment. `VIS-337` proves that prime-power atoms enter `Q'` exactly and that each individual atom is too small. `VIS-338` proves that all proper prime powers are collectively negligible at the live envelope scale. `VIS-339` proves that the remaining centered `k=1` prime source is exactly `u(1+D)G` and that its smooth packet statistics are exact functionals of `G`. `VIS-340` proves that the prime square-log summatory remainder is an explicitly invertible partial-summation image of the same `G`, with proper prime powers exponentially lower order.
+`VIS-333`--`VIS-336` classify generic filter transfer and repayment. `VIS-337` proves that prime-power atoms enter `Q'` exactly and that each individual atom is too small. `VIS-338` proves that all proper prime powers are collectively negligible at the live envelope scale. `VIS-339` proves that the remaining centered `k=1` prime source is exactly `u(1+D)G` and that its smooth packet statistics are exact functionals of `G`. `VIS-340` proves that the prime square-log summatory remainder is an explicitly invertible partial-summation image of the same `G`, with proper prime powers exponentially lower order. `VIS-341` proves that changing only a fixed polynomial truncation exponent in the Korobov--Vinogradov optimization changes the exponential constant by `r^(2/5)` but leaves the `3/5,-1/5` exponent class unchanged.
 
-None of these results proves a new bound or nonstationarity theorem for `G`, an improvement of the Korobov--Vinogradov remainder, arithmetic frequency migration, or destination-level avoidance of derivative-sensitive information. The clue therefore remains `accepted`.
+None of these results proves a new bound or nonstationarity theorem for `G`, an improvement of the Korobov--Vinogradov remainder, arithmetic frequency migration beyond that classical optimization, or destination-level avoidance of derivative-sensitive information. In particular, `VIS-341` does not prove that Wang's multiplier literally replaces Bellotti's `t^(-1)` truncation factor by `t^(-2)`. The clue therefore remains `accepted`.
 
 ## Research disposition
 
 Outcome: **narrowed**.
 
-The live source question no longer concerns whether a clever representation of primes creates hidden cancellation before Wang's filter. Both the atomic and summatory source descriptions quotient back explicitly to the Chebyshev-theta remainder. The remaining candidate mechanism must be a genuine nonstationary property of `G` itself, followed by demonstrable attenuation through Wang's nonvanishing filter and a destination-level proof that the derivative carrier is not paid back.
+The live source question no longer concerns whether a clever representation of primes creates hidden cancellation before Wang's filter, nor whether generic Korobov--Vinogradov frequency migration plus a fixed extra inverse-frequency power changes the asymptotic envelope class. The remaining candidate mechanism must be a genuinely stronger nonstationary property of `G` itself, followed by demonstrable attenuation through Wang's nonvanishing filter and a destination-level proof that the derivative carrier is not paid back.
