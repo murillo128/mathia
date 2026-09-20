@@ -63,7 +63,7 @@ Then (3) cannot be asymptotically null for all scheduled rows. There is a residu
 
 for all sufficiently large `j`, where `(TF)(m)=F(2m)`.
 
-Thus an order-one oscillation among any **fixed finite collection of dyadic capacity fractions** cannot remove the FD-226 common-cushion bottleneck. This includes the most natural scheduler-matched attempt: a period-three occupancy profile proportional to `d` with one coefficient for each phase `(1,4,4)`. A subrelative perturbation of such a profile still leaks at the full quadratic scale.
+Thus an order-one oscillation among any **fixed finite collection of dyadic capacity fractions** cannot remove the FD-226 common-cushion bottleneck. This includes the scheduler-matched attempt: a period-three occupancy profile proportional to `d` with one coefficient for each phase `(1,4,4)`. A subrelative perturbation of such a profile still leaks at full quadratic scale.
 
 For the scale-adapted reservoirs of FD-226, write
 
@@ -108,15 +108,15 @@ a_j=\sum_{z^P=1}\widehat a_z z^j.
 \tag{9}
 \]
 
-It is therefore enough to understand one mode
+It is enough to understand one mode
 
 \[
 b_z(d):=d\,z^{\lfloor\log_2 d\rfloor},
-\qquad |z|=1.
+\qquad |z|=1,
 \tag{10}
 \]
 
-Let
+and its partial sums
 
 \[
 B_z(x):=\sum_{d\le x}b_z(d).
@@ -140,7 +140,7 @@ C_0(z):=\frac{3}{2(4z-1)}.
 \tag{13}
 \]
 
-In particular, uniformly on the unit circle,
+Uniformly on the unit circle,
 
 \[
 \boxed{|C_0(z)|\ge\frac3{10},}
@@ -159,9 +159,9 @@ L_a(z)
 \tag{15}
 \]
 
-exists. One direct way to see this is to choose `ell=ceil(log_2 a)`. Apart from the harmless endpoint convention when `a` is a power of two, `floor(2^j/a)` eventually lies in dyadic band `j-ell` with a fixed limiting mantissa `2^ell/a`. Formula (12) gives a geometric sum over the complete earlier bands plus one quadratic partial-band contribution, so after division by `(4z)^j` every term has a limit.
+exists. Choose `ell=ceil(log_2 a)`. Apart from the harmless endpoint convention when `a` is a power of two, `floor(2^j/a)` eventually lies in dyadic band `j-ell` with fixed limiting mantissa `2^ell/a`. Formula (12) gives a geometric sum over the complete earlier bands plus one quadratic partial-band contribution, so after division by `(4z)^j` every term has a limit.
 
-The crude bound
+The crude estimate
 
 \[
 |B_z(x)|
@@ -170,7 +170,7 @@ The crude bound
 \tag{16}
 \]
 
-will be more useful than the explicit expression for `L_a(z)`.
+will be enough below.
 
 ## 2. The Möbius divisor response has no blind Fourier phase
 
@@ -201,12 +201,12 @@ C(z)=\sum_{a\ge1}\mu(a)L_a(z).
 \tag{19}
 \]
 
-The domination can be checked without any analytic number theory. From (16),
+The domination needs no analytic number theory. From (16),
 
 \[
 \frac{|B_z(\lfloor2^j/a\rfloor)|}{4^j}
 \le
-\frac1{2a^2}+\frac1{2a2^j}.
+\frac{1}{2a^2}+\frac{1}{2a2^j}.
 \tag{20}
 \]
 
@@ -219,7 +219,7 @@ The key point is that **`C(z)` is uniformly nonzero for every phase on the unit 
 \sum_{a\ge2}\mu(a)L_a(z)
 \right|
 \le
-\frac12\sum_{a\ge2}\frac{\mu(a)^2}{a^2}.
+\frac{1}{2}\sum_{a\ge2}\frac{\mu(a)^2}{a^2}.
 \tag{21}
 \]
 
@@ -241,7 +241,7 @@ Combining (14), (21), and (22),
 |C(z)|
 \ge
 \frac3{10}
--rac12\left(\frac{15}{\pi^2}-1\right)
+-\frac{1}{2}\left(\frac{15}{\pi^2}-1\right)
 =
 \frac45-\frac{15}{2\pi^2}
 >0.
@@ -249,7 +249,7 @@ Combining (14), (21), and (22),
 \tag{23}
 \]
 
-Numerically the uniform margin in (23) is about `0.04009`. Thus the divisor/Mertens response cannot erase even one Fourier phase of a finite dyadic-band oscillation.
+The uniform margin is about `0.04009`. Thus the divisor/Mertens response cannot erase even one Fourier phase of a finite dyadic-band oscillation.
 
 Returning to (9), linearity and (18) give
 
@@ -307,7 +307,7 @@ v_j:=4^jc_j.
 \tag{28}
 \]
 
-Equation (3) says `y_j=v_j+o(4^j)`. Applying any fixed row order `r` preserves an `o(4^j)` remainder, so for the period-three schedule (4),
+Equation (3) says `y_j=v_j+o(4^j)`. Applying any fixed row order preserves an `o(4^j)` remainder, so for the period-three schedule (4),
 
 \[
 (T-I)^{r_j}(\mathscr A b)(2^j)
@@ -315,7 +315,7 @@ Equation (3) says `y_j=v_j+o(4^j)`. Applying any fixed row order `r` preserves a
 \tag{29}
 \]
 
-The normalized leading coefficient in `(E-I)^{r_j}v_j/4^j` is periodic modulo `lcm(P,3)`. Suppose, toward a contradiction, that every one of those leading coefficients vanished. Then the nonzero sequence `(v_j)` would satisfy exactly
+The normalized leading coefficient in `(E-I)^{r_j}v_j/4^j` is periodic modulo `lcm(P,3)`. Suppose every one of those leading coefficients vanished. Then the nonzero sequence `(v_j)` would satisfy exactly
 
 \[
 (E-I)^{r_j}v_j=0
@@ -323,7 +323,7 @@ The normalized leading coefficient in `(E-I)^{r_j}v_j/4^j` is periodic modulo `l
 \tag{30}
 \]
 
-FD-212 already identifies the Floquet spectrum of this switched recurrence. For completeness, write
+FD-212 identifies the Floquet spectrum of this switched recurrence. For completeness, write
 
 \[
 x_m=v_{3m}=v_{3m+1},
@@ -381,7 +381,7 @@ so every exact solution of (30) grows at most like
 \tag{36}
 \]
 
-But a nonzero periodic `(c_j)` makes `v_j=4^jc_j` have size comparable to `4^j` along at least one residue class. This contradicts (36). Therefore at least one normalized leading switched coefficient is nonzero. Periodicity then supplies a fixed `eta>0` and an infinite residue class on which (5) holds.
+But a nonzero periodic `(c_j)` makes `v_j=4^jc_j` have size comparable to `4^j` along at least one residue class. This contradicts (36). Therefore at least one normalized leading switched coefficient is nonzero. Periodicity supplies a fixed `eta>0` and an infinite residue class on which (5) holds.
 
 The mismatch is strong: the candidate capacity profile carries a quadratic dyadic multiplier `4`, whereas the largest switched-null Floquet multiplier per dyadic step is only `rho<2`. Synchronizing the occupancy with the three scheduler phases cannot bridge that spectral gap.
 
@@ -389,7 +389,7 @@ The mismatch is strong: the candidate capacity profile carries a quadratic dyadi
 
 FD-226 gives, under its existing prime-resolution condition, the uniform capacity law (6). A fixed choice of phase fractions of those cells has the form (7), after absorbing the factor `1/4` into the amplitudes. The finite-range version of Sections 1--2 needs no new uniform asymptotic theorem: for any scheduled rows with `m=2^j->infinity` and deepest sample at most `D`, only cells `d<=O(m)` enter, and a uniform `o(B_Nd)` occupancy error contributes `o(B_Nm^2)` by the trivial bound `|M(x)|<=x` and the same split used in (27).
 
-After restoring the factor `2` contributed by each core-prime flip, (5) therefore yields (8). In particular, if the amplitudes `a_0,...,a_(P-1)` are fixed nonnegative fractions of local capacity and at least one is positive, no subrelative adjustment can make all the switched observations small. Allowing signs in the theorem only strengthens the veto: even an unphysical signed fixed-period cushion cannot hide its quadratic leading mode.
+After restoring the factor `2` contributed by each core-prime flip, (5) yields (8). In particular, if the amplitudes `a_0,...,a_(P-1)` are fixed nonnegative fractions of local capacity and at least one is positive, no subrelative adjustment can make all the switched observations small. Allowing signs in the theorem only strengthens the veto: even an unphysical signed fixed-period cushion cannot hide its quadratic leading mode.
 
 This sharply separates two notions of oscillation. The Floquet obstruction of FD-212 is itself period three in the **response sequence** and has growth radius below `2`; it can therefore be realized by bounded source increments. The attempted reservoir cushion here oscillates in the **divisor occupancy** while retaining the natural linear capacity envelope `b_d asymp d`. The divisor-response operator raises that envelope to quadratic scale, and the nonvanishing Fourier multipliers (23) prevent finite phase cancellation before the switched rows are applied.
 
