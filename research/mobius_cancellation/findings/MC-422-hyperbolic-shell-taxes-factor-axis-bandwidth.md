@@ -85,7 +85,7 @@ Thus a **full coordinate-axis translation box with growing lattice volume** is p
 \tag{9}
 \]
 
-This directly limits the naive continuation of the `MC-419` tensorized-Fejér escape. More formal factor variables do not automatically mean more usable stationary translation rank. At the Matomäki–Teräväinen all-interval scale `\theta>0.55`, two coordinate axes can have at most total bandwidth volume `\ll X^{0.10+o(1)}`, while three simultaneously growing coordinate axes already fail the threshold because `0.55<2/3`.
+This directly limits the naive continuation of the `MC-419` tensorized-Fejér escape. More formal factor variables do not automatically mean more usable stationary translation rank. In the endpoint regime `\theta=0.55+o(1)` reached by Matomäki–Teräväinen, two coordinate axes can have at most total bandwidth volume `\ll X^{0.10+o(1)}`, while three simultaneously growing coordinate axes already fail the threshold because `0.55<2/3`.
 
 The geometric reason is clearer in logarithmic factor coordinates `y_j=\log u_j`. The shell `(1)` becomes the exact slab
 
