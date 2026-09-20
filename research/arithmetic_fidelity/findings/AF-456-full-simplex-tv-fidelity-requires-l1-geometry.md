@@ -269,9 +269,9 @@ c\|\mu-\nu\|_1
 \tag{28}
 \]
 
-for all probability laws. Thus **exact identifiability and quantitative TV recoverability are distinct resources**. A characteristic RKHS representation may distinguish every law while arbitrarily different TV directions become arbitrarily close in Hilbert norm.
+for all probability laws. Thus **exact identifiability and quantitative TV recoverability are distinct resources**. A characteristic RKHS representation may distinguish every law while the best uniform lower Lipschitz constant against TV is still zero.
 
-This does not contradict kernel-embedding results that metrize weak convergence: TV is strictly stronger than weak topology on an infinite alphabet, and `(28)` asks for a uniform lower Lipschitz comparison in that stronger source metric.
+This does not contradict kernel-embedding results that metrize weak convergence. Topological equivalence of convergent sequences or neighborhoods is much weaker than a global bi-Lipschitz lower bound such as `(28)`; even on source spaces where weak convergence and TV convergence happen to coincide, compatible metrics need not be uniformly comparable by a positive linear constant.
 
 ## Arithmetic specialization: distributions over rational primes
 
