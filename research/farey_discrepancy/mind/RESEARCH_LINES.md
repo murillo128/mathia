@@ -2,20 +2,24 @@
 
 This file holds the current mathematical questions suggested by the durable Farey-discrepancy intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Classify the density-one endpoint, or leave pointwise response sampling
+## Go below capacity scale after the sharp density-one point-sampling threshold
 
-**Linked intuitions:** `MI-039-periodic-scale-switching-can-create-a-supercritical-floquet-blind-mode`, `MI-041-sublinear-point-sampling-cannot-make-divisor-response-signed-coercive`, `MI-042-subfull-point-sampling-density-cannot-make-divisor-response-signed-coercive`.
+**Linked intuitions:** `MI-039-periodic-scale-switching-can-create-a-supercritical-floquet-blind-mode`, `MI-040-response-space-rounding-makes-interior-integrality-asymptotically-cheap`, `MI-041-sublinear-point-sampling-cannot-make-divisor-response-signed-coercive`, `MI-042-subfull-point-sampling-density-cannot-make-divisor-response-signed-coercive`.
 
-FD-233--FD-237 separate the positive-lift boundary from interior integrality. FD-238 then shows that the common kernel of all dyadic switched finite-difference rows already contains integer signed profiles with `|b_n|<=n`, exact zero response at every dyadic row and macroscopic capacity in both signs. FD-239 extends that obstruction to a certified low positive-density range of arbitrary point samples.
+FD-238--FD-240 show that exact point samples with any fixed missing fraction leave a macroscopic signed kernel under the linear envelope `|b_n|=O(n)`. Pairwise resetting inside sample cells produces integer profiles with exact sampled zeros, globally controlled response and positive normalized octave capacity.
 
-FD-240 removes the apparent density threshold. If a prescribed point-sampling set has octave upper density `eta<1`, pairwise resetting inside each sample cell constructs integer signed profiles whose divisor response vanishes at every requested sample and every dyadic endpoint, remains `O(m)` globally, and retains normalized octave variation at least `(1-eta)^2/(6 C_phi)` asymptotically. Both signs retain half of that macroscopic scale. Thus **no fixed point-sampling density strictly below one can make the divisor response signed-coercive**, independently of the geometry of the sampled locations.
+FD-241 closes the remaining density-one endpoint at that scale. If `E=N\S` is the omitted set, `delta_k=|E cap B_k|/|B_k|`, and the divisor response vanishes on `S`, then
 
-Full all-integer response is injective, so the remaining point-sampling frontier is the density-one-but-not-full regime. Which sparse omitted sets still permit macroscopic signed capacity, and which omission geometries force a quantitative inverse estimate? If no useful response-side threshold survives there, the route must leave scalar point sampling and use a genuinely non-pointwise observable, or prove that the physical nonnegative/capacity/source-coherent correction class is quantitatively transverse to the signed nullspaces that survive every fixed missing fraction.
+`delta_k -> 0  =>  sum_(n in B_k)|b_n| / sum_(n in B_k)n -> 0`.
 
-## Separate the boundary obstruction from interior integrality
+More quantitatively, with `R(N)=|E cap [1,N]|` and dyadic `N`, the normalized octave mass is `O(C sqrt((R(N)+1)/N))`. Conversely, if `limsup delta_k>0`, the FD-240 construction retains a positive capacity fraction on infinitely many octaves. Hence sample density tending to one is the exact threshold for **macroscopic signed capacity coercivity** in this exact-zero, linear-envelope model.
 
-**Linked intuition:** `MI-040-response-space-rounding-makes-interior-integrality-asymptotically-cheap`.
+The mechanism is sharper than a density count. Möbius inversion writes the response as partial sums of `g=mu*b`; exact zeros at consecutive sampled locations force `supp(g)` into `E union (E+1)`. Density-one omissions therefore make the increment support sparse, and the mean-square bound for `sigma_-1` prevents that sparse support from carrying linear-capacity mass.
 
-FD-237 removes integer realization as an independent bulk obstruction once a real reservoir profile is safely inside the capacity box. The finite divisor-response map is lower-triangular unimodular: response-space rounding followed by exact inversion produces integer occupancies with coefficient error at most `tau(n)` and only bounded changes in the currently used switched rows.
+The live response question is now below this settled scale. For a proper density-one sampling set, what finer norm of the exact kernel can still remain large, and what quantitative stability replaces support localization when sampled responses are merely small rather than exactly zero? A robust version must expose both the omitted-set geometry and the sampled residual, because `g(m)=Y(m)-Y(m-1)` is no longer literally supported on `E union (E+1)`. Separately, a physical nonnegative/source-coherent correction could still be more coercive than the unrestricted signed class, but that requires a source-side transversality statement rather than more point-sample density.
 
-FD-240 now shows that increasing a pointwise response budget to any fixed fraction below full density still leaves macroscopic signed capacity invisible. The unresolved discrete work is therefore concentrated at a sharper boundary: density-one omission geometry, genuinely non-pointwise response information, or source-side positivity/coherence strong enough to exclude the signed constructions. None of those follows from integrality or point-sample count alone.
+## Separate boundary/source admissibility from interior integrality
+
+FD-237 removes integer realization as an independent bulk obstruction once a real reservoir profile is safely inside the capacity box: response-space rounding followed by exact unimodular inversion produces integer occupancies with coefficient error at most `tau(n)` and only bounded changes in the switched rows used there.
+
+FD-241 now settles the point-sampling density question at the macroscopic signed-capacity scale. The unresolved discrete boundary is not another fixed density threshold: it is finer-than-capacity control for density-one omissions, stability under approximate response data, or a proof that positivity/capacity/arithmetic coherence excludes signed directions that remain legal in the unrestricted model. None follows from integrality alone.

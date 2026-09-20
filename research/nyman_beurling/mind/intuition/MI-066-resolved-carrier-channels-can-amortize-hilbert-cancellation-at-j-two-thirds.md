@@ -1,17 +1,23 @@
-# MI-066 — Resolved carrier channels can amortize Hilbert cancellation at the `J^(2/3)` scale
+# MI-066 — Resolved Hilbert channels amortize isolated notches but not a full Ford band at fixed-power span
 
-**Evidence level:** exact source-side synthesis from [NB-257](../../findings/NB-257-h-separated-signed-carriers-have-a-sharp-j-two-thirds-hilbert-cost-crossover.md), refining the representation obstruction of NB-255--NB-256. The result concerns one Ford-scale carrier notch before the full Hardy/Nyman destination map.
+**Evidence level:** exact source-side synthesis from [NB-257](../../findings/NB-257-h-separated-signed-carriers-have-a-sharp-j-two-thirds-hilbert-cost-crossover.md) and [NB-258](../../findings/NB-258-fixed-power-resolved-carrier-spans-cannot-suppress-a-full-ford-band-at-bounded-hilbert-cost.md), refining NB-255--NB-256. The result concerns the resolved scalar source carrier before the full Hardy/Nyman destination map.
 
-Requiring carrier centers to be separated at scale `H` successfully removes the microscopic-dipole pathology of NB-256. The translated shells then have disjoint physical support, so the shell-scaled source `L^2` norm is exactly the coefficient `ell^2` norm up to the fixed profile factor. Coefficient geometry is genuinely visible in the synthesized source.
+`H`-separation removes the microscopic-dipole pathology of NB-256: translated shells have disjoint physical support, so shell-scaled source `L^2` is coefficient `ell^2` up to the fixed profile factor. NB-257 nevertheless shows that one order-one Ford-scale notch can be spread over `K` resolved channels at minimum source Hilbert cost
 
-That coercivity is nevertheless not enough to force a divergent Hilbert price. For `K` resolved channels filling an `H`-grid, the minimum source Hilbert cost of imposing an order-one carrier notch at Ford distance `Theta(1/R)` is
+`H^(1/2)||h||_2 ~ J/K^(3/2)`.
 
-`H^(1/2)||h||_2 ~ J/K^(3/2)`, where `J=R/H`.
+The sharp one-notch crossover is `K~J^(2/3)`, where the cost is only order one even though the carrier span satisfies `W/R~J^(-1/3)->0`.
 
-The sharp crossover is therefore `K~J^(2/3)`. Below it the required Hilbert cost diverges; at the crossover it is only order one, even though the total carrier span remains mesoscopic, `W/R~J^(-1/3)->0`.
+NB-258 shows why that superoscillatory freedom does not extend to a whole fixed Ford interval at any fixed exponent gap below the Ford scale. If the shell-Hilbert cost stays bounded and `K<=J^(1-delta)` for fixed `delta>0`, then for some fixed `q=q(delta)` the Ford-rescaled carrier
 
-The construction is not another unresolved cancellation artifact. Its total variation satisfies `V~J/K` and hence `WV~R`, exactly paying the NB-255 coherence tax, while the `H`-separation makes that variation physically resolvable. The difference is geometric: a Hilbert norm can amortize the required signed displacement over `K` genuinely distinct channels.
+`C_J(x)=B_lambda(x/R)`
 
-Thus **quotienting microscopic dipoles identifies physical source geometry but does not by itself make Ford-scale cancellation expensive in the Hilbert category**. The next load-bearing object must involve more than one interpolation constraint: a family of Ford-scale notches, a whole carrier-band energy, or the actual Hardy-projected destination norm. A transport or `L^1` cost may remain large, but that cannot be substituted for the Hilbert geometry of Nyman--Beurling without a theorem connecting them.
+satisfies `||C_J^(q)||_infty=o(1)`. On bounded Ford coordinates it is therefore asymptotically a polynomial of degree `<q` with `C_J(0)=1`. Evaluation at zero is coercive on that finite-dimensional polynomial space, so every fixed interval `I` of positive length has
 
-**Boundary.** NB-257 constructs and prices a single carrier notch on the source side. It does not show that the same bounded cost suppresses the positive carrier-band form factor required downstream, survives Hardy projection, or improves the Nyman distance. Conversely it does not rule those possibilities out. The exact conclusion is the `J^(2/3)` Hilbert-cost crossover for resolved scalar channels.
+`liminf int_I |C_J(x)|^2 dx > 0`.
+
+At `K~J^(2/3)` one can take `q=2`: the bounded-cost family is asymptotically affine. The optimal NB-257 notch is exactly the expected linear ramp in the limit—enough to hit one point, not enough to erase an interval.
+
+Thus **isolated interpolation constraints and full carrier-band suppression have different resolved-channel thresholds**. Bounded-cost suppression of a fixed Ford band requires leaving every fixed-power mesoscopic regime, necessarily `K=J^(1-o(1))`. For a filled dictionary this is `W/R=J^(-o(1))`.
+
+**Boundary.** NB-258 is still source-only. It does not prove that the same positive band floor survives the legally required Hardy projection or equals the final Nyman distance, and it does not rule out near-Ford channel counts or structures outside the resolved scalar dictionary. The next obstruction must connect this source-band rigidity to the actual Hardy/Nyman destination rather than substitute an unprojected energy for it.

@@ -1,15 +1,19 @@
-# MI-077 — Factor multiplicity does not survive a Möbius-sign projection
+# MI-077 — Factor multiplicity remains subpolynomial after fixed-dimensional bounded source summaries
 
-**Evidence level:** exact combinatorial synthesis from [MC-425](../../findings/MC-425-growing-factor-depth-does-not-create-polynomial-mobius-sign-channels.md), following the state-count bounds of MC-423--MC-424. This is a source-channel obstruction, not a cancellation theorem for richer factor data.
+**Evidence level:** exact combinatorial synthesis from [MC-425](../../findings/MC-425-growing-factor-depth-does-not-create-polynomial-mobius-sign-channels.md) and [MC-426](../../findings/MC-426-bounded-additive-factor-summaries-have-subpolynomial-state-volume.md), following the state-count bounds of MC-423--MC-424. These are source-channel obstructions, not cancellation theorems for richer factor data.
 
-A large family of ordered factorizations is not automatically a large family of arithmetic source states. For squarefree `n`, an active factorization `n=u_1...u_d` partitions the prime factors of `n` into labeled blocks. If the construction retains from each block only `mu(u_j)`, then each coordinate remembers only the parity of the block size.
+A large family of ordered factorizations is not automatically a large family of arithmetic source states. MC-425 gives the coarsest example: for squarefree `n`, retaining each active factor only through `mu(u_j)` leaves fewer than `2^omega(n)=X^(o(1))` sign words across all possible depths.
 
-At depth `d`, all sign vectors lie in one parity hyperplane and there are at most `2^(d-1)` of them. Summing over every arithmetically possible active depth still gives fewer than `2^omega(n)` source-sign vectors. Since `omega(n)=O(log X/log log X)` for `n<=X`, the total sign-state family is only
+MC-426 shows that replacing one sign bit by a fixed list of bounded additive prime-local statistics still does not create polynomial source capacity. Give each prime `p|n` an increment `a(p) in Z^m` with `||a(p)||_infty<=B`, for fixed `m,B`, and retain a factor only through
 
-`X^(o(1))`.
+`S(u)=sum_(p|u) a(p)`.
 
-This remains true even when depth grows to its arithmetic maximum. Hence a factor lift can have polynomially many raw tuple states while exposing only subpolynomially many distinct Möbius-sign channels. **State multiplicity must be counted after projecting to the source information the mechanism actually uses.** Unit slots, factor labels and tuple multiplicity are not independent arithmetic bandwidth if the source phase identifies them.
+Across every ordered active factorization and every depth up to `omega(n)`, the number of distinct retained words is
 
-The practical first-kill test is therefore to remove unit padding and project every active factor to its retained arithmetic datum before crediting any factor-state gain. A sign-only projection cannot supply a fixed polynomial channel exponent. A surviving growing-depth construction must justify richer retained information—sizes, residues, characters, additive phases, intrinsic relations—or obtain analytic leverage from correlations inside the subpolynomial sign family.
+`exp(O_(B,m)(omega(n))) = X^(o(1))`.
 
-**Boundary.** MC-425 does not rule out growing-depth lifts carrying richer factor data, signed analytic cancellation, source-dependent weights or canonical labels beyond Möbius sign. It also does not say that a subpolynomial channel family is analytically useless. The exact obstruction is to deriving polynomial source complexity from raw factor multiplicity when the retained coordinate state is only `mu(u_j)`.
+The reason is conservation rather than a finite alphabet: each additive coordinate has only `O(omega(n))` total mass to distribute among at most `omega(n)` blocks, so weak-composition counting remains exponential only in `omega(n)`. For fixed `B`, achieving even `X^delta` retained states forces `m=Omega_(B,delta)(log log X)`.
+
+Thus **state multiplicity must be counted after the exact source projection, and fixed-dimensional bounded additive enrichment still collapses the all-depth factorization family to subpolynomial volume**. Exact counts such as `omega(u_j)` and fixed vectors of prime-class incidences are already inside this obstruction; merely replacing Möbius parity by several bounded additive coordinates is not a new polynomial channel.
+
+**Boundary.** MC-426 does not rule out growing dimension, unbounded or increasingly precise prime weights, exact identities, residues/characters with growing modulus or conductor, or genuinely non-additive relations between factors. Nor does `X^(o(1))` state volume imply analytic uselessness. A surviving factor lift must identify which hypothesis it escapes and prove that the retained information contributes to cancellation rather than only increasing labels.

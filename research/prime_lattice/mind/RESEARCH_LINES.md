@@ -2,20 +2,28 @@
 
 This file holds the current mathematical questions suggested by the durable prime-lattice intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Make cubic continuation sensitive to arithmetic fluctuations, not only parity density
+## Resolve the zeta-zero Mellin layer below the cubic transition error floor
 
 **Linked intuitions:** `MI-044-finite-prime-wold-classification-does-not-globalize-atomically`, `MI-045-fixed-gap-meet-join-data-collapse-to-finite-congruence-decoration`, `MI-046-growing-gap-arithmetic-complexity-pays-a-reciprocal-continuation-tariff`, `MI-047-mesoscopic-continuation-phase-can-miss-the-prime-pair-parity-sector`, `MI-048-cubic-phase-can-reopen-arithmetic-support-yet-average-to-a-universal-control`.
 
-PL-391--PL-397 separate the frozen multiplicative geometry from the continuation-faithful incomplete-gamma transition layer. PL-398 shows that fixed-gap meet/join data reduce to finite congruence decoration, and PL-399 prices growing-gap arithmetic complexity by a reciprocal `1/d` continuation tail.
+PL-391--PL-399 separate frozen multiplicative geometry from the continuation-faithful transition layer and price growing-gap information by a reciprocal `1/d` tail. PL-400 shows that the subcubic real channel misses the even-gap prime-pair sector; PL-401 restores that sector at `d~r^(1/3)` through the cubic phase but finds that the first singular-series average uses only Gallagher's mean and is reproduced by a parity-only control.
 
-PL-400 then exposes the phase gate hidden by that magnitude estimate. In the subcubic regime `d=o(r^(1/3))`, the leading real same-sign coefficient vanishes on even gaps, exactly where von-Mangoldt pair bulk can live, while the odd-gap real channel has negligible prime-pair mass.
+PL-402 changes the interpretation of that collapse without undoing it. Classical Goldston--Suriajaya continuation of the same pair singular series has
 
-PL-401 shows that this parity mismatch is genuinely subcubic rather than permanent. Retaining the next transition phase gives a factor `exp(-i pi d^3/(6r))`; at `d~c r^(1/3)` the even-gap real channel is generically restored at full `1/d` scale. But the first natural mesoscopic aggregation still loses the arithmetic information: weighting by the Hardy--Littlewood pair singular series and applying Gallagher averaging produces a universal sine-integral limit, with full-window value `-1/(6 sqrt(2))`, identical to the parity-only control `2*1_(2|d)`.
+`F(s) = const * zeta(s) zeta(s+1) / zeta(2s+2) * G(s)`,
 
-The live question is therefore no longer whether the completed continuation channel can overlap the prime-pair support—it can at cubic scale. The unresolved step is to retain **arithmetic fluctuations beyond the Gallagher mean**. Can a fluctuation-sensitive singular-series statistic, genuine `Lambda(r)Lambda(r+d)` correlation error, or coupled gap/height observable survive the cubic kernel with a term that a parity-only control cannot reproduce? Any transfer to actual prime pairs must also provide uniform errors for the `r`-dependent transition weight.
+so every nontrivial zero `rho` appears at `s_rho=rho/2-1`. After the natural Riesz normalization, the zero layer is `x^(rho/2-2)`; on RH its radial exponent is `-7/4`, while an off-line zero produces a strictly larger power. This is prior-art arithmetic, not a new RH criterion from Prime Lattice.
 
-## Keep continuation magnitude, complex phase, arithmetic support and averaging depth separate
+The cubic continuation kernel is compatible with that layer rather than annihilating it. For `g(u)=sin(pi u^3/6)/u`, its oscillatory Mellin transform is
 
-PL-399 supplies the `1/d` tariff; PL-400 shows that phase may put the arithmetic support in quadrature; PL-401 shows that the next phase term can repair that support mismatch while the subsequent averaging still scalarizes the source to its first moment. Passing one gate does not imply passing the next.
+`g_hat(s) = (1/3) (pi/6)^(-(s-1)/3) Gamma((s-1)/3) sin(pi(s-1)/6)`,
 
-Future constructions must state the completed quantity and projection, the complex transition phase, the gap range carrying arithmetic mass, the statistic of the arithmetic weight that survives aggregation, and the matched control after averaging. A nonzero cubic signal that is unchanged when the singular series is replaced by parity density is continuation structure, not yet arithmetic rigidity.
+and `g_hat(rho/2-1) != 0` for every nontrivial zeta zero. The universal Gallagher mean in PL-401 is therefore only the leading layer; subleading linear singular-series information can be zero-sensitive.
+
+The quantitative obstruction is resolution. The same Mellin picture has a deterministic `s=0` contribution at order `H^-1`, while the RH zero layer begins at `H^-7/4`. The current cubic transition approximation aggregates only to order `H^-1` on a fixed cubic annulus, so it stops three quarters of a power too early. The live question is whether the exact continuation statistic can be expanded and renormalized through every contribution larger than the zero layer, with a regulator/cutoff that justifies Mellin inversion and a remainder small enough to expose the `H^(rho/2-2)` residues.
+
+## Keep leading mean collapse, subleading Mellin arithmetic and transfer to actual prime pairs separate
+
+PL-401 remains decisive for the leading cubic average: matching parity density reproduces it exactly. PL-402 shows that this does not justify the stronger claim that linear singular-series averages are intrinsically zero-blind. Their meromorphic continuation already contains the zeta divisor, and the cubic kernel has no structural zero at those pole locations.
+
+A viable continuation argument must therefore specify which asymptotic layer it extracts. It must subtract or control the deterministic contributions above `H^-7/4`, justify the finite-window or smoothed Mellin transform, retain uniform transition errors at that scale, and distinguish the singular-series model from an actual `Lambda(r)Lambda(r+d)` correlation theorem. A visible zero-sensitive Riesz layer in classical prior art is a route reopening, not yet a transfer theorem for the exact Prime-Lattice continuation observable.

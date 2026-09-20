@@ -1,17 +1,23 @@
-# MI-058 — Boundary geometry can protect anchored fidelity without pairwise fidelity
+# MI-058 — Boundary geometry can protect anchored fidelity without improving convex pairwise linear fidelity
 
-**Evidence level:** exact source-geometry synthesis from [AF-462](../../findings/AF-462-finite-support-simplex-boundaries-separate-anchored-from-pairwise-hilbert-fidelity.md), interpreted against the paired-cube obstruction of AF-459--AF-461. This is a generic simplex-boundary statement, not an arithmetic-source theorem.
+**Evidence level:** exact source-geometry synthesis from [AF-462](../../findings/AF-462-finite-support-simplex-boundaries-separate-anchored-from-pairwise-hilbert-fidelity.md) and [AF-463](../../findings/AF-463-convex-boundaries-do-not-improve-pairwise-linear-fidelity-beyond-affine-hull.md), interpreted against the paired-cube obstruction of AF-459--AF-461. The anchored statement is a finite-support simplex result; the pairwise classification is for convex sources and bounded linear destinations in the ambient norm.
 
-At a probability law `mu_0` with finite support `S`, the normalized directions reachable from that anchor are not the unit sphere of a large linear tangent space. Positivity forces every negative coordinate of a reachable direction to remain inside `S`, while positive mass may spread over arbitrarily many fresh coordinates. The resulting carrier has a fixed negative-coordinate budget `s=|S|`.
+At a probability law `mu_0` with finite support `S`, positivity makes the anchored feasible directions genuinely one-sided: negative coordinates can occur only inside `S`, while positive mass may move onto fresh coordinates. If `s=|S|`, AF-462 proves the paired-cube defect bound
 
-That one-sided constraint is strong enough to defeat the paired-cube completion mechanism. If `D_k` denotes the AF-459 average cube-completion defect, AF-462 proves
+`D_k >= (1-s/k)_+`,
 
-`D_k >= (1-s/k)_+`.
+and the canonical one-hot Hilbert embedding has exact anchored TV gain `1/sqrt(s)`. So a convex boundary can carry real source provenance when every comparison is made against one distinguished anchor.
 
-So the carrier stays macroscopically far from large paired sign cubes even though the ambient alphabet is infinite. This is a genuine source-side escape from the regular finite-codimension and regular smooth-fiber obstructions of AF-460--AF-461.
+AF-463 identifies the exact pairwise geometry once both source points may move. For every convex source class `C`,
 
-But the escape is **anchored, not pairwise**. For the canonical one-hot Hilbert embedding, displacement from the distinguished finite-support law has exact positive TV gain `1/sqrt(s)`. Inside every neighborhood of that law, however, two admissible sources can move the same depleted anchor mass onto two large disjoint fresh supports; their `ell^1` distance stays fixed while their Hilbert distance tends to zero. The pairwise local lower gain is therefore zero.
+`T_C^P(x_bar) = closure(span(C-C)) =: L_C`
 
-The reusable distinction is that **one-sided provenance can preserve distance from a distinguished source without metrizing the whole local source class**. A boundary theorem must state whether the downstream task is anchored discrimination or arbitrary pairwise recovery. Showing that a carrier is cube-poor removes one collapse certificate, but does not by itself supply pairwise stability.
+at every base point. Moreover, for a bounded linear map `F:X->Y` and any relative neighborhood `W` of `x_bar`,
 
-**Boundary.** Finite support is essential to the fixed negative-coordinate budget used by AF-462, and the sharp anchored modulus is for the canonical one-hot Hilbert embedding. No arithmetic conclusion follows until the physical source identifies a distinguished boundary law and proves that its relevant perturbations obey this one-sided provenance geometry. If arbitrary nearby source pairs must be distinguished, positivity plus finite support at the anchor is insufficient.
+`kappa_W(F;C) = inf_(0 != v in L_C) ||Fv||/||v||`.
+
+Thus moving comparisons symmetrize every one-sided active-face restriction: convex boundary information cannot improve the pairwise local linear modulus beyond the closed affine direction space. For the countable simplex, `L_C` is the zero-sum subspace of `ell^1`; diffuse signed directions have fixed `ell^1` norm and vanishing `ell^2` norm, so the canonical `ell^1 -> ell^2` pairwise gain is zero in every neighborhood of every source law. The fresh-support construction of AF-462 is one witness of this general paratingent fact.
+
+The reusable distinction is therefore exact: **one-sided provenance can protect an anchored discriminator, while convexity itself removes that protection from arbitrary pairwise linear recovery**. If the physical task is pairwise, a source-side escape must change the paratingent geometry rather than merely strengthen convex inequalities, or else change the metric/operator category.
+
+**Boundary.** The sharp anchored modulus `1/sqrt(s)` is specific to the finite-support anchor and canonical one-hot Hilbert embedding. The pairwise identity uses convexity, bounded linearity and the ambient norm; nonconvex/singular source classes, nonlinear or relational destinations, and different intrinsic source metrics are not classified by AF-463. No arithmetic conclusion follows until the actual physical source and comparison class are identified.
