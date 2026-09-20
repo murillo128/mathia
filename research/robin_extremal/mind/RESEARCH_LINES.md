@@ -2,22 +2,24 @@
 
 This file records current mathematical questions for the Robin-extremal line. It is a mutable synthesis, not a task queue or history.
 
-## Leave the ordinary single-center super-broad architecture; only the exponentially thin coupled limit remains inside it
+## Seek coefficient-phase interference outside same-ray serial single-center prediction
 
-**Linked intuition:** `MI-060-complex-single-center-drift-cannot-escape-a-fixed-prediction-corridor`.
+**Linked intuitions:** `MI-060-complex-single-center-drift-cannot-escape-a-fixed-prediction-corridor` and `MI-061-co-phased-serial-multicenter-has-no-wiener-discount`.
 
-RE-229--RE-234 identify the local phase threshold, finite-ray macroscopic prediction corridor and associated Wiener cost for complex single-center negative-binomial predictors. RE-235 extends the audit to super-broad center drift and shows that bounded normalized Wiener rate on a contracting arc forces exponential destination thinning whenever `|a| sin(alpha)>=1`, leaving an apparent inverse-center exception.
+RE-229--RE-236 close the ordinary single-center escape routes far beyond the fixed-real regime. The local phase threshold, finite-ray prediction corridor and Wiener cost persist under complex drift; RE-236 removes the inverse-center proof artifact and shows that every contracting super-broad single-center family with bounded normalized Wiener rate forces an exponentially thin destination.
 
-RE-236 closes that exception. Full contraction on the symmetric arc implies the uniform DC margin
+RE-237 tests the simplest proposed change of architecture: multiply several normalized single-center predictors. If all centers lie on one common complex ray, every factor has the same relative coefficient phase character. Convolution paths reaching a common output degree are therefore co-phased, so there is **no coefficient cancellation at all**:
 
-`1-|1-1/a| > sin(alpha)/(sqrt(3)|a|)`
+`||prod_r F_r||_A = prod_r ||F_r||_A`.
 
-with no comparison between `alpha` and `1/|a|`. The RE-235 coefficient argument therefore applies to every contracting super-broad single-center family: if `tau=N/(m|a|)` grows while normalized Wiener rate remains bounded, the observed arc must satisfy an explicit bound of order `tau^(-1+1/m) 2^(-tau)` up to bounded factors.
+The minimum delays add, and the normalized Wiener rate of the cascade is exactly the delay-weighted average of the constituent rates. A serial cascade of individually successful positive-real or same-ray predictors can never beat its best constituent merely by adding centers. In the delay-measure representation the same statement is exact multiplicativity of total variation under convolution.
 
-The one-center frontier no longer splits into ordinary and inverse-center regimes. Continuing this architecture means confronting the genuinely coupled exponentially thin-arc limit itself. A route intended to improve the live separated constant has stronger reason to change global approximation geometry—multi-center/minimax, rational, another basis, or another source-derived architecture—rather than tune another center-scale relation.
+The common-ray hypothesis is load-bearing. Different center phases can make convolution paths interfere, and RE-237 gives a finite algebraic example with strict Wiener submultiplicativity. Its rate conclusion also assumes the stages are individually successful predictors; a deliberately coupled product whose factors are not predictors is not covered.
 
-## Keep local phase transition, destination width, contraction geometry and global Wiener cost distinct
+The live multi-center frontier is therefore much more specific than “try several centers.” A useful architecture must make several centers contribute to the **same final coefficient with genuinely different phases before absolute values are taken**, or use parallel/additive/minimax synthesis, or arrange a coupled product whose predictive behavior exists only after composition. Those mechanisms must still beat the destination-width/Wiener-cost ledger left by the single-center results.
 
-The single-center results are a price ledger, not a universal impossibility theorem. Microscopic flattening can occur, and full-arc contraction can hold, while the normalization/coefficient budget forces the destination to collapse. RE-236 shows that the former inverse-center branch was a proof artifact caused by discarding endpoint phase information, not a genuinely cheaper geometry.
+## Keep local flattening, destination width, coefficient phase and global Wiener cost distinct
 
-Future candidates should report all four currencies together: the local normal form, the effective predictive load, the macroscopic destination width and the normalized coefficient/Wiener cost. A parameter scaling is useful only if it improves the destination-visible approximation without repaying the gain through exponential thinning or larger global cost. The remaining exponentially thin single-center limit is still open at this level; multi-center and other architectures remain outside these theorems.
+The single-center results show that local flattening can be real while global cost destroys the gain. RE-237 adds a second representation trap: changing from one center to several centers does not change the cost mechanism if all coefficient paths remain locked to one phase character. Architectural multiplicity is not useful unless it creates an interference channel unavailable to the one-center representation.
+
+Future candidates should therefore expose their final coefficient geometry before asymptotic optimization. If convolution paths are co-phased, Wiener cost multiplies exactly and serial composition cannot improve the normalized exponent. If phases differ, quantify the cancellation that survives DC normalization and the prediction constraint rather than relying on generic submultiplicativity. The remaining multi-center branch is an interference problem, not a center-count problem.

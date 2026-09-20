@@ -1,12 +1,14 @@
 # MI-007 — Stable fidelity is distance from the admitted collision boundary, and repair is category-relative
 
-**Evidence level:** supported by exact Hilbert, Euclidean, smooth strongly-convex, polyhedral, Lipschitz, finite-channel, metric-refinement, powered-lift, and horofunction classifications
+**Evidence level:** supported by exact Hilbert, Euclidean, smooth strongly-convex, polyhedral, Lipschitz, finite-channel, metric-refinement, powered-lift, horofunction, and finite-moment class-separation results through [AF-444](../../findings/AF-444-one-surplus-consecutive-moment-sharply-restores-unit-atom-fidelity.md)
 
 ## Core intuition
 
 Exact recoverability, stable recoverability, and distance to a repaired target are different claims. Stability is controlled by distance from the relevant collision set in the **specific perturbation geometry**, while a repair radius becomes intrinsic only after both target transport and the source metric category are fixed.
 
-The newer safe-lift results sharpen the category dependence. Smooth strongly-convex norms recover a robust convex-hull phase diagram and a genuine higher-order boundary exponent, whereas polyhedral norms retain first-order provenance through norming faces and collapse every finite powered threshold to one dual-face coherence test. There is therefore no category-free meaning to a critical repair exponent.
+AF-444 gives a sharp arithmetic-fidelity instance of this distinction. For positive unit-weight atoms, one consecutive surplus moment globally forbids the `K`- versus `(K+1)`-atom collision, yet on compact positive nuisance classes the distance between the two observation images is only `Theta(y)` as the extra atom coordinate `y` tends to zero. In the reciprocal-square shell model this is `Theta(m^-2)`. Exact target purity can therefore hold at every finite depth while the stable margin still collapses at the physical tail scale.
+
+The safe-lift results sharpen the same category dependence in a different geometry. Smooth strongly-convex norms recover a robust convex-hull phase diagram and a genuine higher-order boundary exponent, whereas polyhedral norms retain first-order provenance through norming faces and collapse every finite powered threshold to one dual-face coherence test. There is no category-free meaning to a critical repair exponent.
 
 ## Strongest justified principle
 
@@ -18,19 +20,21 @@ AF-064--AF-065 show that this instability narrows under genuine geometric hypoth
 
 AF-066--AF-068 give the nonsmooth counter-regime. For polyhedral norms, first-order safe lifting is governed by the whole norming face, not merely the convex hull. The safe kernel is an exact finite cone hull, its inclusion order is generator cofinality, and every finite power `p>1` has the same pass/fail boundary. Nonsmooth geometry can therefore preserve target provenance that smooth first-order convexification erases.
 
+AF-443--AF-444 add the finite-moment analogue: a collision fibre can exist at equal observation/nuisance dimension and disappear completely after one source-law-sensitive surplus coordinate, while the resulting class margin still tends to zero with the disappearing target atom. The topology of exact identification and the scale of robust identification must be audited separately even when the separating invariant is algebraic and global.
+
 ## What remains possible
 
-The live problem is to identify representation categories in which collision geometry, target transport, norming-face data, and any higher-order contact exponent are all forced by the mathematical construction. A higher-order invariant is meaningful only after proving it stable under the declared equivalences; conversely, a polyhedral face invariant is meaningful only if the nonsmooth structure itself is intrinsic rather than a chosen encoding.
+The live problem is to identify representation categories in which collision geometry, target transport, norming-face data, source-law certificates and any higher-order contact exponent are forced by the mathematical construction. An exact discriminator is useful only if its distance from the admitted collision set remains large enough at the destination scale.
 
-For arithmetic applications, a discriminator should pass three independent tests: positive distance from matched-control collisions; target descent through information-preserving equivalences; and invariance of the relevant smooth-contact or nonsmooth-face boundary under the admitted representation class.
+For arithmetic applications, a discriminator should pass three independent tests: exact separation from matched-control collisions on the declared source class; target descent through information-preserving equivalences; and a quantitative margin in the perturbation geometry consumed downstream. AF-444 shows why the first test cannot substitute for the third.
 
 ## Status / novelty
 
-The functional-analytic, coapproximation, convex-hull, horofunction, polyhedral duality, and norm-comparison mechanisms are classical or direct. The Mathia synthesis is the joint gate: **robust fidelity is relative to a collision geometry; robust repair is additionally relative to target transport; and the form of higher-order boundary fidelity is itself category-dependent**.
+The functional-analytic, coapproximation, convex-hull, horofunction, polyhedral duality, norm-comparison and Newton--Girard mechanisms are classical or direct. The Mathia synthesis is the joint gate: **exact fidelity is relative to a source class; robust fidelity is relative to a collision geometry; robust repair is additionally relative to target transport; and the form of higher-order boundary fidelity is category-dependent**.
 
 ## Falsification criterion
 
-Exhibit a covered category where the stated distance or safe-envelope classifier fails, a smooth strongly-convex example violating the AF-064 phase diagram/contact-profile law, or a polyhedral example where powered liftability depends on the exponent despite the same dual-face coherence data.
+Exhibit a covered category where the stated distance or safe-envelope classifier fails, a smooth strongly-convex example violating the AF-064 phase diagram/contact-profile law, a polyhedral example where powered liftability depends on the exponent despite the same dual-face coherence data, or a compact positive unit-atom moment class for which AF-444's exact separation holds but the inter-class distance is not linear in the disappearing atom coordinate up to class-dependent constants.
 
 ## Lean-formalizable core
 
@@ -40,3 +44,4 @@ Exhibit a covered category where the stated distance or safe-envelope classifier
 - Support-contact profile criterion.
 - Polyhedral dual-face coherence and finite cone hulls.
 - Weighted-distance-excess equivalence and horofunction margins.
+- Compact-class `Theta(y)` separation from the Newton--Girard certificate.

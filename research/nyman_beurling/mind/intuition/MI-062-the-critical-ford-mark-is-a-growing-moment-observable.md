@@ -1,17 +1,25 @@
-# MI-062 — The critical Ford mark is a growing-resolution observable whose classical form is a microlocal Landau–Gonek remainder
+# MI-062 — The critical Ford mark is a bounded-mass signed edge observable of the local zeta potential
 
-**Evidence level:** exact positive reduction plus matched-control and classical-explicit-formula boundary from [NB-234](../../findings/NB-234-growing-depth-moment-hierarchy-reconstructs-critical-ford-mark.md) and [NB-235](../../findings/NB-235-critical-ford-transition-reduces-to-microlocal-landau-gonek-remainder.md), building on NB-230--NB-233.
+**Evidence level:** exact positive reduction plus matched-control and classical potential-theoretic boundary from [NB-234](../../findings/NB-234-growing-depth-moment-hierarchy-reconstructs-critical-ford-mark.md), [NB-235](../../findings/NB-235-critical-ford-transition-reduces-to-microlocal-landau-gonek-remainder.md), and [NB-236](../../findings/NB-236-poincare-lelong-turns-ford-depth-localization-into-bounded-edge-potential.md), building on NB-230--NB-233.
 
 NB-234 shows that on every fixed critical layer the residue can be reconstructed from profiled depth--phase moments with an order `K(Q)` that grows slowly with source capacity, while every predetermined fixed `K` remains blind in a matched spectral control. The nonlinear exponential depth mark is therefore not a fixed-moment statistic.
 
-NB-235 identifies what that growing hierarchy is approximating in classical zeta language. With `x=e^X` and `s_X=sigma_X+it`, the exact carrier satisfies `e^(iXv_rho)=x^(rho-s_X)`, and the critical residue is, up to `o(1)`,
+NB-235 identifies what that hierarchy approximates in classical zeta language. The critical coefficient is a microscopic Landau zero sum with an additional horizontal Ford-depth cutoff. The shell profile has zero total integral, so the ordinary Landau--Gonek prime-power diagonal disappears; black-box smoothing of the global cumulative formula pays the full cumulative remainder and does not exploit the microscopic window.
 
-`x^(-s_X) sum_{|X(1-beta)-log J|<=C} m(rho) x^rho F(H(gamma-t))`.
+NB-236 changes representation again. Let `Psi(s)=K_(X,H)(s) chi(d(s))`, where `K_(X,H)` is the exact holomorphic carrier and `chi` is a smooth cutoff in Ford depth. Poincare--Lelong gives the weighted zero coefficient as a pairing of `log|zeta|` with `Delta Psi`. Since the carrier is holomorphic,
 
-This is a microscopic Landau zero sum with an additional horizontal-depth cutoff. The shell profile has zero total integral, so the ordinary Landau--Gonek prime-power diagonal disappears up to a negligible endpoint tail. What survives is a microlocal remainder coefficient, not a missing main term.
+`Delta Psi = X^2 K chi'' - 2X K' chi'`,
 
-The nearest classical global theorem does not yet control it. Stieltjes smoothing of the cumulative Landau--Gonek formula pays the total variation of `F(H(.-t))`, which is independent of `H`; the generic cumulative remainder therefore gives only an `O(Q)` normalized guarantee at the Ford scale. Narrowing the window does not automatically buy the `o(1)` needed by the destination.
+so the kernel is supported only on the two transition strips of the horizontal cutoff. It also satisfies `int Delta Psi dA=0`, hence annihilates constants and, under the justified integration by parts, harmonic comparison functions.
 
-The reusable lesson is that **growing-resolution source information and microlocal explicit-formula cancellation are two representations of the same missing object here**. The moment hierarchy is a sufficient surrogate, but the sharper theorem target is direct control of the horizontally marked local remainder or an equivalent zeta-specific identity that couples depth to ordinate phase before absolute-value estimates erase cancellation.
+The Ford scales cancel sharply in the kernel norm. With `Y=X/R` and `J_0=R/H`, NB-236 proves
 
-**Boundary.** NB-234 does not prove that zeta supplies the growing moments, and NB-235 does not prove the microlocal remainder is large or small. Its `O(Q)` statement is only the guarantee inherited from global cumulative control after black-box smoothing, and the ordinary Landau--Gonek formula does not include the horizontal cutoff. No Nyman--Beurling distance bound or RH consequence follows without a separate source theorem and destination bridge.
+`||Delta Psi||_1 << Y + J_0^(-1)`.
+
+On the critical Ford diagonal this is `O(1)`. Smooth horizontal depth localization therefore has **bounded tariff**: there is no unavoidable extra power of `X`, `H` or `J_0` merely from selecting the correct horizontal layer.
+
+This does not solve the coefficient. Taking absolute values against `log|zeta|` discards exactly the remaining resource and yields no `o(1)` gain. The load-bearing object is the signed local potential fluctuation across the two edge strips. A source theorem should show that the zeta potential there is sufficiently close to a harmonic background, or otherwise has a small signed correlation with `Delta Psi`. Such a theorem would control the exact Ford coefficient directly; the growing moment hierarchy remains a sufficient surrogate rather than the only formulation.
+
+The reusable lesson is a three-stage audit. First determine the source resolution needed to identify the mark. Then ask whether imposing that localization itself creates a large analytic tariff. Only after that price is known ask for cancellation of the localized source observable. Here the first stage needs growing resolution, the second stage is unexpectedly cheap after Poincare--Lelong, and the unresolved third stage is a bounded-mass signed potential estimate.
+
+**Boundary.** NB-236 uses a smooth rather than hard depth cutoff, and bounded `L^1` mass is only a tariff calculation. It does not prove that the signed pairing is small, that `log|zeta|` admits the required local harmonic approximation, or that Nyman--Beurling approximation controls this source quantity. The Poincare--Lelong identity is generic complex analysis; the source-specific content is the Ford carrier/scaling and any future theorem controlling the local zeta potential.
