@@ -1,33 +1,38 @@
-# FD-239 — Sublinear off-dyadic response sampling still has a macroscopic signed nullspace
+# FD-239 — Low positive-density off-dyadic response sampling still has a macroscopic signed nullspace
 
 - **Date:** 2026-09-20
 - **Status:** proved
 - **Task:** Farey discrepancy
 - **Research line:** `farey_discrepancy`
-- **Kind:** divisor-response kernel / sparse point sampling / signed capacity / exact prescribed zeros / response-density boundary
+- **Kind:** divisor-response kernel / positive-density point sampling / signed capacity / exact prescribed zeros / response-density boundary
 - **Depends on:** FD-225, FD-231, FD-238
-- **Classification:** `EXACT-DERIVED + COUNTERMODEL + SPARSE-POINT-SAMPLING-NULLSPACE + SIGNED-LINEAR-CAPACITY + RESPONSE-DENSITY-BOUNDARY`
+- **Classification:** `EXACT-DERIVED + COUNTERMODEL + LOW-POSITIVE-DENSITY-SAMPLING-NULLSPACE + SIGNED-LINEAR-CAPACITY + RESPONSE-DENSITY-BOUNDARY`
 
 ## Claim
 
-FD-238 shows that exact dyadic response coordinates leave a macroscopic signed nullspace. Adding a sublinear number of off-dyadic point samples per dyadic octave still does not remove that obstruction.
+FD-238 shows that exact dyadic response coordinates leave a macroscopic signed nullspace. The same obstruction survives not only sublinear off-dyadic sampling, but an explicit nonzero density of arbitrarily placed point samples in every dyadic octave.
 
 Let `S subset N` be any prescribed sampling set and write
 
 \[
 B_k=(2^{k-1},2^k]\cap\mathbb N,
 \qquad
-s_k=|S\cap B_k|.
+s_k=|S\cap B_k|,
+\qquad
+\eta=\limsup_{k\to\infty}\frac{s_k}{|B_k|}.
 \]
 
-Assume only
+Since `|B_k|=2^{k-1}`, assume
 
 \[
-\boxed{s_k=o(2^k).}
+\boxed{
+\eta<\eta_0:=\frac9{\pi^2}-\frac34
+=0.161890652\ldots .
+}
 \tag{1}
 \]
 
-Then there exists an integer sequence `(b_n)` such that
+Then there exists an integer sequence `(b_n)` satisfying
 
 \[
 \boxed{|b_n|\le n\qquad(n\ge1),}
@@ -43,23 +48,25 @@ whose divisor response
 \tag{3}
 \]
 
-vanishes at every prescribed sample:
+vanishes at every prescribed sample and at every dyadic endpoint:
 
 \[
-\boxed{(\mathscr A b)(s)=0\qquad(s\in S).}
+\boxed{
+(\mathscr A b)(s)=0\quad(s\in S),
+\qquad
+(\mathscr A b)(2^j)=0\quad(j\ge0).
+}
 \tag{4}
 \]
 
-The construction can simultaneously impose zero response at every dyadic endpoint, and its full off-sample response remains only linear:
+Its full off-sample response remains only linear,
 
 \[
-\boxed{(\mathscr A b)(2^j)=0\quad(j\ge0),
-\qquad
-(\mathscr A b)(m)=O(m).}
+\boxed{(\mathscr A b)(m)=O(m),}
 \tag{5}
 \]
 
-Nevertheless the coefficient vector retains the same macroscopic signed capacity as in FD-238:
+while its coefficient mass obeys the quantitative lower bound
 
 \[
 \boxed{
@@ -67,12 +74,12 @@ Nevertheless the coefficient vector retains the same macroscopic signed capacity
 \frac{\sum_{n\in B_k}|b_n|}
      {\sum_{n\in B_k}n}
 \ge
-\frac{12}{\pi^2}-1.
+\frac{12}{\pi^2}-1-\frac43\eta.
 }
 \tag{6}
 \]
 
-Both signs remain macroscopic:
+The right-hand side is positive precisely under `(1)`. Both signs are macroscopic:
 
 \[
 \boxed{
@@ -84,18 +91,20 @@ Both signs remain macroscopic:
 \frac{\sum_{n\in B_k}b_n^-}
      {\sum_{n\in B_k}n}
 \ge
-\frac12\left(\frac{12}{\pi^2}-1\right).
+\frac12\left(
+\frac{12}{\pi^2}-1-\frac43\eta
+\right).
 }
 \tag{7}
 \]
 
-Consequently, any well-defined family of linear response rows that factors only through the point coordinates `{(mathscr A b)(s): s in S}` annihilates this profile exactly. In particular, augmenting the dyadic switched family by finitely many, polylogarithmically many, or more generally `o(2^k)` raw off-dyadic response samples in the `k`-th octave cannot yield signed coercivity on the natural linear-capacity box.
+Thus **even an arbitrary fixed positive fraction of all integer response coordinates per octave can fail to be signed-coercive**: every sampling pattern with asymptotic octave density below `16.18%` is annihilated exactly by a macroscopic signed profile in the natural linear-capacity box.
 
-This gives a genuine density boundary for the point-sampling escape proposed after FD-238. It does **not** prove that positive-density sampling is sufficient. At the opposite endpoint, retaining every integer response is injective by the exact divisor inversion of FD-225. The intermediate positive-density regime remains open.
+The threshold `eta_0` is a guaranteed survival range for this construction, not a claimed sharp coercivity threshold. Positive-density sampling above `eta_0` may still have a macroscopic nullspace; this argument simply stops certifying one there. At the opposite endpoint, retaining every integer response is injective by the exact divisor inversion of FD-225.
 
 The construction is signed and therefore is not a physical nonnegative prime-reservoir occupancy. Positivity and source coherence remain possible mechanisms of transversality.
 
-## 1. Put exact reset points at every requested sample
+## 1. Exact reset points at every requested sample
 
 As in FD-238, start from an integer arithmetic function `g` and set
 
@@ -118,7 +127,7 @@ Since `mu*1=epsilon`, the divisor response has the exact cumulative form
 \tag{9}
 \]
 
-Set `g(1)=0`. Fix a dyadic band `B_k`. Order the points of `S cap B_k`, adjoin the right endpoint `2^k`, and use these points as consecutive cell boundaries. Thus `B_k` is partitioned into at most
+Set `g(1)=0`. Fix a dyadic band `B_k`. Order the points of `S cap B_k`, adjoin the right endpoint `2^k`, and use them as consecutive cell boundaries. The band is partitioned into at most
 
 \[
 s_k+1
@@ -127,58 +136,47 @@ s_k+1
 
 nonempty consecutive integer cells. The left endpoint `2^{k-1}` already has zero cumulative sum from the preceding band.
 
-Treat each cell independently. Choose a pivot `e` in the cell for which `phi(e)` is maximal. Process all nonpivot integers in increasing order and assign
+Treat each cell independently. Choose a pivot `e` for which `phi(e)` is maximal. Process all nonpivot integers in increasing order and assign
 
 \[
 g(n)\in\{-\varphi(n),+\varphi(n)\}
 \tag{11}
 \]
 
-with sign opposite to the current nonpivot partial sum. If `W` is the largest nonpivot `phi`-weight in the cell, the one-dimensional greedy step keeps the running nonpivot sum within `[-W,W]`. At the end set the pivot value to the negative of the final nonpivot sum. Since `phi(e)` is maximal,
+with sign opposite to the current nonpivot partial sum. If `W` is the largest nonpivot `phi`-weight in the cell, this greedy rule keeps that running sum in `[-W,W]`. At the end set the pivot equal to the negative final nonpivot sum. Maximality of `phi(e)` gives
 
 \[
 |g(e)|\le W\le\varphi(e).
 \tag{12}
 \]
 
-Hence every cell has exact total zero while all values are integral and satisfy
+Hence every cell has exact total zero, every `g(n)` is integral, and
 
 \[
 |g(n)|\le\varphi(n).
 \tag{13}
 \]
 
-Because every requested sample is a cell boundary and every preceding cell has total zero,
+Every requested sample and every dyadic endpoint is a completed-cell boundary, so `(9)` gives `(4)` exactly.
+
+## 2. Full response and coefficient envelope
+
+Inside a cell the nonpivot greedy sum has modulus at most `W`. If the pivot occurs before the end in natural order, inserting its final correction changes a partial sum into a difference of two greedy partial sums, hence into a quantity of modulus at most `2W`. For `m in B_k`, `W<=2^k`, so
 
 \[
-Y(s)=0\qquad(s\in S).
+|Y(m)|\le2^{k+1}=O(m).
 \tag{14}
 \]
 
-The same is true at each adjoined dyadic endpoint. Equations `(9)` and `(14)` prove `(4)` and the first part of `(5)`.
+This proves `(5)`.
 
-## 2. The full response remains linearly bounded
-
-The extra reset points do not worsen the between-sample response. Inside a cell the greedy nonpivot partial sum has modulus at most `W`. If the pivot occurs before the end of the cell in the natural integer order, inserting its final correction changes a natural-order partial sum into a difference of two greedy partial sums, so its modulus is at most `2W`.
-
-For a cell in `B_k`, `W<=2^k`. Since every new cell starts again from cumulative value zero,
+From `(8)`, `(13)`, and the classical identity
 
 \[
-|Y(m)|\le 2^{k+1}
-\qquad(m\in B_k),
-\tag{15}
+\sum_{d\mid n}\varphi(d)=n,
 \]
 
-and therefore
-
-\[
-\boxed{Y(m)=O(m).}
-\tag{16}
-\]
-
-By `(9)` this is the second assertion in `(5)`.
-
-The coefficient envelope follows exactly as in FD-238. From `(8)`, `(13)`, and the classical identity `sum_(d|n) phi(d)=n`,
+we get
 
 \[
 |b_n|
@@ -186,23 +184,22 @@ The coefficient envelope follows exactly as in FD-238. From `(8)`, `(13)`, and t
 \sum_{d\mid n}|g(d)|
 \le
 \sum_{d\mid n}\varphi(d)
-=
-\boxed n,
-\tag{17}
+=n,
+\tag{15}
 \]
 
 which proves `(2)`.
 
-## 3. Sublinear sampling costs only negligible capacity
+## 3. Quantitative capacity retained at positive sampling density
 
-Every nonpivot integer still has the saturated magnitude
+Every nonpivot integer remains saturated:
 
 \[
 |g(n)|=\varphi(n).
-\tag{18}
+\tag{16}
 \]
 
-For such an `n`, separating the top divisor in `(8)` gives
+For such an `n`, separate the top divisor in `(8)`:
 
 \[
 \begin{aligned}
@@ -214,34 +211,57 @@ For such an `n`, separating the top divisor in `(8)` gives
 \varphi(n)-
 \sum_{\substack{d\mid n\\d<n}}\varphi(d)\\
 &=
-\boxed{2\varphi(n)-n}.
+2\varphi(n)-n.
 \end{aligned}
-\tag{19}
+\tag{17}
 \]
 
-There are at most `s_k+1` pivots in `B_k`. Omitting their terms from the band sum in `(19)` changes the corresponding full-band lower bound by at most
-
-\[
-O((s_k+1)2^k)=o(4^k)
-\tag{20}
-\]
-
-by assumption `(1)`. The standard summatory totient asymptotic
-
-\[
-\sum_{n\le x}\varphi(n)
-=
-\frac{3}{\pi^2}x^2+O(x\log x)
-\tag{21}
-\]
-
-therefore gives
+Let `P_k` be the pivot set in `B_k`. Since `|P_k|<=s_k+1` and `2phi(n)-n<=n<=2^k`, summing `(17)` over the nonpivots gives
 
 \[
 \sum_{n\in B_k}|b_n|
 \ge
-\left(\frac{9}{2\pi^2}-\frac38\right)4^k
-+o(4^k).
+\sum_{n\in B_k}(2\varphi(n)-n)
+-(s_k+1)2^k.
+\tag{18}
+\]
+
+The standard totient asymptotic
+
+\[
+\sum_{n\le x}\varphi(n)
+=
+\frac3{\pi^2}x^2+O(x\log x)
+\tag{19}
+\]
+
+yields
+
+\[
+\sum_{n\in B_k}(2\varphi(n)-n)
+=
+\left(\frac9{2\pi^2}-\frac38\right)4^k
++O(k2^k).
+\tag{20}
+\]
+
+Because `|B_k|=2^{k-1}`, the definition of `eta` gives
+
+\[
+(s_k+1)2^k
+\le
+\left(\frac\eta2+o(1)\right)4^k.
+\tag{21}
+\]
+
+Therefore
+
+\[
+\sum_{n\in B_k}|b_n|
+\ge
+\left(
+\frac9{2\pi^2}-\frac38-\frac\eta2-o(1)
+\right)4^k.
 \tag{22}
 \]
 
@@ -254,15 +274,27 @@ Since
 \tag{23}
 \]
 
-this proves `(6)`.
+dividing `(22)` by `(23)` proves `(6)`. The coefficient in `(22)` is positive exactly when
 
-To separate the two signs, let
+\[
+\eta<2\left(\frac9{2\pi^2}-\frac38\right)
+=
+\frac9{\pi^2}-\frac34,
+\]
+
+which is `(1)`.
+
+For `eta=0`, `(6)` recovers the FD-238/previous FD-239 lower bound `12/pi^2-1`. The strengthening is that the same exact-zero construction still retains positive capacity after paying a **linear** number of pivots, as long as their octave density is below the explicit constant above.
+
+## 4. Both signs remain macroscopic
+
+Let
 
 \[
 B(x)=\sum_{n\le x}b_n.
 \]
 
-Using `(8)` and Abel summation with `Y(d)=O(d)` from `(16)`,
+Using `(8)` and Abel summation with `Y(d)=O(d)` from `(14)`,
 
 \[
 B(x)
@@ -280,24 +312,22 @@ O(x\log x).
 \tag{24}
 \]
 
-Thus the signed sum over `B_k` is `O(k2^k)=o(4^k)`, whereas `(6)` supplies absolute mass `Omega(4^k)`. Splitting total variation into positive and negative parts proves `(7)`.
+Hence the signed sum over `B_k` is `O(k2^k)=o(4^k)`. Under `(1)`, `(6)` supplies absolute mass `Omega(4^k)`. Splitting total variation into positive and negative parts proves `(7)`.
 
-## 4. What point sampling can and cannot repair
+## 5. What point sampling can and cannot repair
 
-FD-238 left open whether adding off-dyadic/all-integer response coordinates might remove the exact dyadic signed kernel. The present result separates those two possibilities. **Sparse off-dyadic point sampling does not help at the capacity scale.** An arbitrary sublinear number of sampled integers in each octave can be promoted to exact reset points while sacrificing only a vanishing fraction of the saturated `phi`-weighted construction.
+The earlier sublinear formulation identified positive density as the first regime where the coarse `o(4^k)` pivot-loss argument stopped applying automatically. Tracking the constant shows that this was **not** the actual boundary of the construction. A linear number of exact reset constraints is still harmless while its density is sufficiently small.
 
-This statement is stronger than failure of any particular scalar normalization. The selected response coordinates themselves are exactly zero, so every linear row built only from them is also zero. The obstruction therefore applies to arbitrary weights, finite differences, or cross-sample linear combinations supported on the same sparse sample set.
+Consequently, a response-topology refinement cannot claim signed coercivity merely because it samples `Theta(2^k)` integers per octave. At least for densities below `eta_0`, arbitrary sample placement still leaves a macroscopic exact kernel. Any genuinely coercive point-sampling theorem must therefore either exceed this quantitative range, exploit structure beyond raw sampled values, or use the physical nonnegative/source-coherent class essentially.
 
-The theorem deliberately stops at sampling density. If `|S cap B_k|` is comparable to `2^k`, the number of pivots may itself consume a positive fraction of the band and argument `(20)` no longer preserves the FD-238 capacity lower bound. This does not establish coercivity there; it only identifies the first regime not killed by this construction. Full all-integer data are injective: if `(mathscr A b)(m)=0` for every `m`, then the successive differences of `(9)` force `g=0`, hence `b=0`.
-
-For the Farey research frontier, a response-topology refinement based on point samples must therefore either retain at least linearly many off-dyadic integers per octave, use measurements that do not factor through sparse point values, or rely essentially on the physical nonnegative/source-coherent coefficient class. Merely sprinkling additional off-dyadic checkpoints onto the existing switched grid cannot control signed repairs.
+This result does not show that `eta_0` is sharp. The only exact opposite endpoint currently available is full all-integer response, where `(mathscr A b)(m)=0` for every `m` forces successive differences of `(9)` to give `g=0`, hence `b=0`.
 
 ## Prior-art / novelty audit
 
-The cellwise sign choice is a one-dimensional discrepancy-balancing argument, and general prefix/vector discrepancy is a substantial classical and modern literature. No novelty claim is made for that balancing principle. A targeted search of prefix-discrepancy and vector-balancing literature did not locate the specific line-local statement proved here: arbitrary sublinear prescribed zero sampling for the Mertens divisor-response transform together with retention of a fixed fraction of the natural linear coefficient capacity.
+The cellwise sign assignment is a one-dimensional discrepancy-balancing argument, and general prefix/vector balancing belongs to the classical Steinitz/discrepancy literature. A targeted search of that literature and of prescribed-zero interval balancing did not locate the line-local quantitative statement here: exact annihilation of an arbitrary positive-density sampling set for the Mertens divisor-response transform while retaining a fixed fraction of the natural linear coefficient capacity.
 
-No external theorem is load-bearing beyond the standard totient identities already used in FD-231 and FD-238. The mathematical delta is the sampling-density obstruction obtained by combining independent exact-zero cells with the exact divisor-response inversion and the retained-capacity estimate.
+No external theorem is load-bearing beyond the standard totient identities already used in FD-231 and FD-238. The mathematical delta over the previous version of FD-239 is the explicit pivot-loss calculation `(18)--(23)`, which pushes the nullspace obstruction from sublinear sampling into the positive-density regime and replaces the qualitative open boundary by the certified interval `eta<9/pi^2-3/4`.
 
 ## Status
 
-**Proved.** The construction gives exact zeros on an arbitrary prescribed set with `o(2^k)` samples per dyadic band, uniform linear full-response control, the natural coefficient envelope, and macroscopic mass in both signs. It is a signed response-topology countermodel, not a physical nonnegative source and not an RH estimate.
+**Proved.** For every prescribed sampling set of asymptotic octave density below `9/pi^2-3/4`, the construction gives exact zero response on all samples and dyadic endpoints, uniform linear full-response control, the natural coefficient envelope, and an explicit positive amount of capacity in both signs. It is a signed response-topology countermodel, not a physical nonnegative source and not an RH estimate.
