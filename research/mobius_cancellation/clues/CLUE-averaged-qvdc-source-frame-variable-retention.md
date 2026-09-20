@@ -17,6 +17,7 @@ based_on:
   - research/mobius_cancellation/findings/MC-405-mangoldt-quotient-self-coupling-needs-cross-scale-cancellation.md
   - research/mobius_cancellation/findings/MC-406-mangoldt-quotient-fibers-collapse-to-harmonic-mobius.md
   - research/mobius_cancellation/findings/MC-407-prime-error-increment-coupling-abel-collapse.md
+  - research/mobius_cancellation/findings/MC-408-signed-pnt-error-correlation-is-rh-equivalent.md
 ---
 
 # Can actual lcm/source structure or a genuinely nonseparable pre-quadratic variable beat the source-depth barrier?
@@ -37,6 +38,8 @@ where each `E_I(n;B)` has the same signed GCD/meet factorization as the complete
 
 The later quotient audit closes another tempting escape. `MC-405` exhibits an exact source variable outside the lcm algebra, `b -> M(floor(x/b))`, but its Mangoldt-weighted aggregate is exactly a first-order self-coupling of `M`. `MC-406` shows that the source then factors through only `O(sqrt(x))` floor-quotient fibers; their PNT main kernel is classical harmonic Möbius cancellation. `MC-407` further shows that the apparently extra pairing between `M(k)` and adjacent prime-counting-error increments is just discrete-Abel coordinates for the same Möbius-weighted PNT-error convolution. Even a pointwise power saving for that prime error becomes linear after absolute summation over the quotient variable.
 
+`MC-408` closes the scalar version of that signed escape at the target exponent. For `C(x)=sum_(a<=x) mu(a)E(x/a)`, its Mellin transform is `-zeta'(s)/(s zeta(s)^2)-1/((s-1)zeta(s))`; every nontrivial zeta zero creates a nonremovable pole whose leading order cannot cancel, and `C(x)=O_epsilon(x^(1/2+epsilon))` for every positive `epsilon` is equivalent to RH. The finite sequence `C(1),...,C(N)` is also a triangularly invertible re-encoding of `mu(1),...,mu(N)`. Thus the scalar correlation is neither an independent finite information source nor an easier RH-scale auxiliary target merely because it mixes Möbius and prime-counting error.
+
 ## Research question
 
 Two branches remain legitimate.
@@ -53,13 +56,13 @@ or for the corresponding joint form
 
 whose proof exploits actual `g`/signature structure and, after complete bookkeeping, avoids both the sequential `2^{-Omega(A)}` source-depth tariff and a fixed positive common-radical cost `P^theta`.
 
-Second, can a different **pre-quadratic arithmetic representation** expose a divisor/source variable that remains genuinely joint through the relevant Cauchy/q-vdC correlation? It is no longer sufficient that the variable merely avoid lcm factorization: the Mangoldt quotient example shows that a visible source coordinate can still scalarize after exact summation into a Mertens self-coupling. The desired analogue of Stadlmann must change the usable diagonal/off-diagonal information rather than only provide a reversible or Abel-equivalent coordinate system.
+Second, can a different **pre-quadratic arithmetic representation** expose a divisor/source variable that remains genuinely joint through the relevant Cauchy/q-vdC correlation? It is no longer sufficient that the variable merely avoid lcm factorization: the Mangoldt quotient example shows that a visible source coordinate can still scalarize after exact summation into a Mertens self-coupling, while `MC-408` shows that the surviving scalar signed prime-error convolution is itself an RH-equivalent target at square-root scale. The desired analogue of Stadlmann must therefore change the usable diagonal/off-diagonal information **before scalarization**, rather than only provide a reversible, Abel-equivalent, or RH-equivalent coordinate system.
 
 ## Why it may matter
 
-The representation audit now separates three increasingly strong notions that had previously been easy to conflate: a coordinate may be visible, may survive lcm compression, and may even change a quotient argument, yet still fail to provide independent analytic information after aggregation. The Mangoldt quotient family is an exact example of all three phenomena without a power gain.
+The representation audit now separates several increasingly strong notions that had previously been easy to conflate: a coordinate may be visible, may survive lcm compression, may change a quotient argument, and may even leave a nontrivial signed scalar correlation, yet still fail to provide independent analytic information after aggregation. `MC-405`--`MC-408` give exact examples of these failures without a power gain.
 
-That leaves a cleaner target. A useful theorem must derive leverage from **source-specific coefficient law or genuinely joint arithmetic**, not from keeping a coordinate visible after an exact reversible, incidence, quotient, or Abel transform. This is precisely where a Stadlmann-style gain would have to differ from the current frame.
+That leaves a cleaner target. A useful theorem must derive leverage from **source-specific coefficient law or genuinely joint arithmetic**, not from keeping a coordinate visible after an exact reversible, incidence, quotient, Abel, or RH-equivalent transform. This is precisely where a Stadlmann-style gain would have to differ from the current frame.
 
 ## Decisive test
 
@@ -67,15 +70,15 @@ For the lcm branch, exhibit a bound in a nontrivial range `X<B^2` or a collectiv
 
 Reject an argument if its only new step is one of the already-classified representations: complete endpoint signed-GCD energy (`MC-401`), generic cutoff-to-incidence expansion with Mertens weights (`MC-402`), moving hyperbola inversion (`MC-400`), separable lcm phase (`MC-399`), divisor-pair labels after lcm compression (`MC-398`), source-mode labels after projector collapse (`MC-397`), or the Mangoldt quotient/error family that reduces by exact summation and Abel transformation to `MC-405`--`MC-407`.
 
-A use of `MC-402` can still be productive only if the proof exploits non-generic structure of the incidence energies and controls the resulting Mertens-weighted combination without assuming the target cancellation. Likewise, a use of the prime-error term from `MC-407` remains productive only if it proves an independently controlled **signed** Möbius--PNT-error relation; a pointwise estimate for `E(y)` followed by absolute values fails the test.
+`MC-408` shows that the scalar signed relation `sum mu(a)E(x/a)` itself is RH-equivalent at square-root scale. A continuation may still attack that correlation as an RH criterion, but it no longer qualifies as an independent retained-variable mechanism. For this clue, the route survives only if the proof exposes additional phase, congruence, translation, source, or bilinear information **before** scalarization and controls that information independently enough to change the final estimate.
 
-For a pre-quadratic alternative, exhibit the kernel before estimating it. It must not factor through the lcm as in `MC-398`; after source expansion, its retained variable must remain nonseparable through the relevant first correlation rather than cancelling as in `MC-399`; and after exact aggregation it must not reduce to a scalar Mertens self-coupling or an Abel-equivalent coordinate system as in `MC-405`--`MC-407`. Then count the post-Cauchy diagonal exactly and compare the mechanism with Stadlmann's retained-variable gain.
+For a pre-quadratic alternative, exhibit the kernel before estimating it. It must not factor through the lcm as in `MC-398`; after source expansion, its retained variable must remain nonseparable through the relevant first correlation rather than cancelling as in `MC-399`; and after exact aggregation it must not reduce to a scalar Mertens self-coupling, an Abel-equivalent coordinate system, or the RH-equivalent scalar criterion classified by `MC-405`--`MC-408`. Then count the post-Cauchy diagonal exactly and compare the mechanism with Stadlmann's retained-variable gain.
 
 ## Evidence boundary
 
 No theorem using the actual Selberg coefficient has yet changed the source-cost scaling, no collective source-signature estimate has escaped the global-modulus horizon, and no genuinely non-lcm-factorable pre-quadratic variable with independent post-aggregation information has been exhibited.
 
-`MC-402` supplies no bound for `A_I(X)` or `M(x)`. `MC-405`--`MC-407` likewise supply no improved bound for `M(x)` or for the PNT error. Their role is narrower: they prevent generic truncation, quotient retention, and coordinate changes of the same Möbius--Mangoldt convolution from being credited as independent arithmetic information.
+`MC-402` supplies no bound for `A_I(X)` or `M(x)`. `MC-405`--`MC-407` supply no improved bound for `M(x)` or for the PNT error, and `MC-408` likewise proves no new Mertens estimate: it classifies the remaining scalar signed correlation as an RH-equivalent square-root target and as a finite-prefix re-encoding of Möbius data. Their role is to prevent generic truncation, quotient retention, coordinate changes, or the scalar prime-error correlation itself from being credited as independent arithmetic information.
 
 Stadlmann's theorem concerns averaged prime distribution to smooth moduli in a different Type I setting and does not imply an endpoint source-cost theorem or improved Möbius cancellation.
 
@@ -83,4 +86,4 @@ Stadlmann's theorem concerns averaged prime distribution to smooth moduli in a d
 
 The clue remains `accepted` but is narrower. The lcm-side obligation is **actual-weight/source-family arithmetic**, not truncation by itself: exploit the specific Selberg coefficient, source-signature distribution, or a genuinely collective bilinear relation and prove that it changes the source-depth/common-radical scaling without importing Mertens cancellation through `MC-402`.
 
-The alternative branch now has a stronger admission test: find a pre-quadratic arithmetic variable that survives lcm compression and source-phase separation **and** remains analytically independent after exact aggregation, rather than collapsing to the Möbius--Mangoldt self-coupling or an Abel-equivalent form. Only then is a post-Cauchy diagonal comparison with Stadlmann meaningful.
+The scalar Möbius--PNT-error branch is now classified by `MC-408`: at the square-root target it is RH-equivalent, so it is not an easier retained-variable intermediate. The alternative branch must find a pre-quadratic arithmetic variable that survives lcm compression and source-phase separation **and** remains analytically independent before exact aggregation, rather than collapsing to the Möbius--Mangoldt self-coupling, an Abel-equivalent form, or an RH-equivalent scalar target. Only then is a post-Cauchy diagonal comparison with Stadlmann meaningful.
