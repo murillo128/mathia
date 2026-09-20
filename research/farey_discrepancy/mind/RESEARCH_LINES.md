@@ -2,16 +2,14 @@
 
 This file holds the current mathematical questions suggested by the durable Farey-discrepancy intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Measure the affine distance from the physical correction to the positive cone modulo switched blind directions
+## Decide whether the physical correction class can become negative-sparse modulo switched blind directions
 
 **Linked intuition:** `MI-039-periodic-scale-switching-can-create-a-supercritical-floquet-blind-mode`.
 
-FD-231 establishes that signed switched-blind directions can have macroscopic mass while keeping the all-integer response only first order. FD-232 then shows that this freedom cannot automatically be realized by a nonnegative occupancy. If a signed blind correction has a fixed positive fraction of negative aggregate capacity on late dyadic blocks, every positive lift `a=b+s` whose occupancy and switched response are both subquadratic would require too much nonnegative slack.
+FD-231 shows that switched-blind signed directions can carry macroscopic mass. FD-232 shows that a representative with macroscopic negative aggregate capacity cannot be hidden inside a subquadratic nonnegative lift. FD-233 closes the coefficient-level gap: vanishing late-band negative-capacity density is also sufficient, and the canonical lift `a=b^+` preserves the switched response automatically.
 
-For the explicit FD-231 blind profile, the negative-capacity fraction stays bounded away from zero, so that particular blind direction cannot be hidden inside a subquadratic positive reservoir. The unresolved physical question is narrower: start from the correction forced by the actual Farey/Mertens inversion and allow addition of any signed switched-blind direction. Can its negative part be made aggregate-capacity sparse on late blocks?
+The live coefficient problem is therefore exact. Start from the correction forced by the Farey/Mertens inversion and vary it by legitimate switched-blind directions. Is the infimum of its late-band negative-capacity density bounded away from zero, or is there a representative for which that density tends to zero? The former gives a structural positivity obstruction; the latter removes the coefficient-level obstruction without any additional switched estimate for the minimal slack.
 
-A positive lower bound for that best possible negative-capacity fraction would give an intrinsic one-sided obstruction. A sequence of blind representatives whose negative fraction tends to zero would reopen the construction, but would still need a separate response/capacity estimate. The relevant quotient is therefore the affine class of the physical correction modulo the switched blind space, measured against the positive cone rather than by a symmetric nullspace norm.
+## Separate coefficient positivity from discrete source realization
 
-## Keep signed invisibility and positive realizability distinct
-
-Signed kernel vectors describe what the switched operator cannot see. A physical occupancy must also satisfy positivity and capacity constraints. FD-232 proves that these are independent requirements: a large signed null direction can be analytically invisible yet physically unaffordable. Future constructions should price the negative part after the best admissible blind adjustment before attributing any gain to switched cancellation.
+Passing the one-sided affine criterion does not construct an admissible prime occupancy. Integer multiplicities, finite reservoir capacities and the exact source-side constraints must still be realized. Conversely, failure of those discrete gates should not be conflated with the already solved coefficient-level question. The next argument should state explicitly whether it is optimizing the affine coefficient class or realizing the resulting nonnegative profile in the physical source.
