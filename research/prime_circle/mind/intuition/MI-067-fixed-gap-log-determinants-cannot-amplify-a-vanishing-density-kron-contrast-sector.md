@@ -1,21 +1,25 @@
-# MI-067 — Thin Kron contrast cannot create extensive normalized determinant mass, even at the singular edge
+# MI-067 — Thin positive Kron contrast cannot create extensive mass, and summable deleted-layer coupling kills its unscaled outliers
 
-**Evidence level:** exact/asymptotic spectral synthesis from [PC-392](../../findings/PC-392-fixed-gap-log-determinants-cannot-amplify-the-thin-multi-deletion-contrast-sector.md) and [PC-393](../../findings/PC-393-complete-survivor-connectivity-closes-the-singular-normalized-determinant-edge.md), sharpening the exceptional-observable escape left by PC-391.
+**Evidence level:** exact/asymptotic spectral synthesis from [PC-392](../../findings/PC-392-fixed-gap-log-determinants-cannot-amplify-the-thin-multi-deletion-contrast-sector.md), [PC-393](../../findings/PC-393-complete-survivor-connectivity-closes-the-singular-normalized-determinant-edge.md), and [PC-394](../../findings/PC-394-summable-deleted-layer-coupling-closes-the-kron-outlier-window.md), sharpening the exceptional-observable escape left by PC-391.
 
-PC-391 isolates the irreducible simultaneous-deletion correction as a positive semidefinite contrast operator `Delta_T` of rank at most `k-1`. PC-392 showed that at positive regularization the determinant ratio reduces exactly to this contrast space and cannot produce an extensive normalized log-determinant whenever `lambda_p>>(log p)/p`.
+PC-391 isolates the irreducible simultaneous-deletion correction as a positive semidefinite contrast operator `Delta_T` of rank at most `k-1`. PC-392 shows that positive-regularized determinant ratios reduce exactly to this thin sector and cannot create an extensive normalized log-determinant. PC-393 closes the apparent singular loophole: the common constant zero mode lies outside the contrast carrier, complete survivor connectivity gives a mean-zero spectral floor, and the same normalized determinant conclusion persists through the exact pseudodeterminant endpoint.
 
-PC-393 closes the apparent singular loophole. Both the independent-star and true Kron Laplacians have the same constant zero mode, and `Delta_T 1=0`, so the determinant contrast lives entirely on the mean-zero subspace. The surviving boundary graph is complete and positive; on a fixed polynomial window `H=p^u`, every direct survivor edge has weight at least `c H^(-2 alpha)`. Hence
+PC-394 removes the most immediate nonextensive escape in the natural summable-tail phase. Writing the simultaneous correction as
 
-`lambda_2(L_ind) >= c |S| H^(-2 alpha)`.
+`Delta_T=P Q P^*`, with `0<=Q<=K`,
 
-Combining this intrinsic mean-zero conditioning floor with `rank Delta_T<=k-1`, `tr Delta_T=O(k)`, and `k/|S|=O(log p/p)` gives the uniform estimate
+where `K` is the internal deleted-layer Laplacian and the columns of `P` are normalized incidence profiles, gives the exact contraction
 
-`sup_(lambda>=0) (1/|S|) log(det_lambda(L_red)/det_lambda(L_ind)) = O((log p)^2/p) -> 0`,
+`||Delta_T||_op <= tr K`.
 
-where `lambda=0` is interpreted through pseudodeterminants. Thus no nonnegative regularization scale, including the exact pseudodeterminant endpoint, turns the thin multi-deletion contrast into a nonzero normalized free-energy density in this positive complete chord-Laplacian family.
+At a successive primorial step the deleted vertices are all multiples of the new prime `q`, so their mutual separations live on a coarse `q`-lattice. For inverse-power chord conductances with exponent `alpha>1/2` and window `H=p^u`, Buchstab counting plus summability of the internal tail yields
 
-The important correction is conceptual as well as quantitative. The `lambda^(-1)` divergence in PC-392 was a bound on the full space and therefore saw the common constant zero mode. That mode is orthogonal to the source-sensitive contrast carrier. Once the carrier is restricted first, the singularity disappears and the remaining inverse grows only polynomially with the window, too slowly to overcome the vanishing contrast-rank fraction after the logarithm.
+`||Delta_T||_op = O(p^(u-1-2 alpha)/log p)`.
 
-The determinant branch is therefore not reopened merely by taking `lambda_p` smaller. What remains are genuinely nonextensive or different-category observables: unnormalized determinant changes, individual outliers, cross-level evolution of the `k-1` contrast subspaces, or signed/indefinite/non-complete operators where positivity and the direct complete-edge floor fail.
+Hence throughout `2<u<=1+2 alpha` the entire irreducible simultaneous-deletion correction tends to zero in operator norm. Every eigenvalue of the true Kron response is then `o(1)` from the independent-star baseline. For the canonical inverse-square interaction, this closes persistent unscaled outliers through the full first higher-boundary range `2<u<=3`.
 
-**Boundary.** The conclusion uses the normalized positive inverse-power chord kernel, complete survivor connectivity, Laplacian Schur complementation and fixed polynomial primorial windows. It does not show that the unnormalized determinant ratio tends to one, does not rule out exceptional eigenvalues or cross-level dynamics, and does not extend by assertion to signed or non-complete operator categories. No zeta-zero or critical-line mechanism is supplied.
+The reusable distinction is between **thin rank**, **determinant amplification**, and **operator amplitude**. A vanishing-rank carrier can in principle support an exceptional eigenvalue, so normalized determinant control alone does not close outliers. Here the source-forced coarse spacing of the deleted layer supplies the extra amplitude estimate that does.
+
+The positive linear-Kron branch therefore survives only in regimes not covered by this amplitude collapse: longer windows `u>1+2 alpha`, nonsummable tails, renormalized exceptional observables, cross-level orientation/evolution of the contrast subspaces, or signed/indefinite/nonlinear operators where the positive Schur and conductance bounds no longer apply.
+
+**Boundary.** The operator-norm conclusion uses positive regularized inverse-power chord conductances, fixed polynomial primorial windows and `alpha>1/2`. The threshold `u=1+2 alpha` is a proof boundary, not evidence for a phase transition. PC-394 does not rule out rescaled outliers, longer windows, signed kernels or cross-level state information, and none of the Kron results supplies a zeta-zero mechanism.

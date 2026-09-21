@@ -1,27 +1,21 @@
-# MI-054 — Bounded switched response depletes positive capacity; monotone response sharpens the rate to inverse-linear
+# MI-054 — Bounded switched response depletes positive capacity; finite arithmetic sharpens the general exponent past one half
 
-**Evidence level:** exact quantitative synthesis from [FD-257](../../findings/FD-257-bounded-switched-rows-force-polynomial-nonnegative-capacity-depletion.md) and [FD-259](../../findings/FD-259-monotone-divisor-response-forces-sharp-inverse-linear-capacity-depletion.md), strengthening the qualitative positive-cushion boundary of FD-230.
+**Evidence level:** exact quantitative synthesis from [FD-257](../../findings/FD-257-bounded-switched-rows-force-polynomial-nonnegative-capacity-depletion.md), [FD-259](../../findings/FD-259-monotone-divisor-response-forces-sharp-inverse-linear-capacity-depletion.md), and [FD-260](../../findings/FD-260-finite-mertens-blocks-push-nonnegative-switched-depletion-past-square-root-scale.md), strengthening the qualitative positive-cushion boundary of FD-230.
 
-Positivity already turns bounded switched response into a quantitative loss of source capacity. If `0<=b_d<=Cd` and the period-three switched rows remain uniformly bounded, FD-257 proves that the normalized coefficient mass on the dyadic band `[2^k,2^(k+1))` is at most
+Positivity already turns bounded switched response into a quantitative loss of source capacity. If `0<=b_d<=Cd` and the period-three switched rows remain uniformly bounded, FD-257 reduces the dyadic band masses to a positive Volterra recurrence whose kernel is built from dyadic Mertens maxima. The original proof retained only the first blocks exactly and then used the trivial bound `|M(q)|<=q`, producing a small positive depletion exponent.
 
-`A(C+B)(23/24)^k`.
+FD-260 shows that the weak numerical exponent was mostly a bookkeeping artifact rather than a structural limit. Recomputing only the first nineteen dyadic Mertens blocks exactly makes the same positive Volterra kernel contract at weight `r=2/3`; all later blocks may still be bounded trivially. Consequently the relative coefficient mass on a divisor band of scale `x` satisfies
 
-Equivalently, at divisor scale `x=2^k`, the relative band capacity is `O((C+B)x^(-beta))` with `beta=log_2(24/23)>0`. This rate is not sharp in the full positive class, but it is unconditional under the stated envelope and switched-row hypotheses.
+`O((C+B)x^(-log_2(3/2))) = O((C+B)x^(-0.58496...))`.
 
-FD-259 identifies a source-side subclass where the exact rate becomes much stronger. Write `g=mu*b`. If in addition `g(n)>=0`, then the divisor response
+No sign assumption on `mu*b` is used. The same kernel method cannot contract as far as `r=0.65` from the exact prefix alone, so this calculation also separates the proved source bound from an unsupported claim of an inverse-linear rate. The important reusable lesson is that a finite amount of exact arithmetic information can materially strengthen a global positive recurrence even when the infinite tail remains under a trivial estimate.
 
-`(A b)(m)=sum_(n<=m) g(n)`
+FD-259 identifies a genuinely different source-side subclass. If `g=mu*b` is nonnegative, the divisor response is monotone, neighboring switched stencils trap every dyadic response increment, and
 
-is monotone. The order-one and neighboring order-four switched stencils then trap every dyadic response increment by `O(B)`. Consequently
+`sum_(n<=x)b_n = O((C+B)x)`.
 
-`sum_(n<=x)b_n = O((C+B)x)`
+The relative dyadic capacity is then `O((C+B)/x)`, and exponent `1` is sharp in that monotone-response cone. Thus nonnegativity of `b` plus bounded switched response already forces more-than-square-root depletion after FD-260, while nonnegativity of the Möbius increments supplies an additional structural mechanism that upgrades the rate to inverse-linear.
 
-and the relative mass of a dyadic band is `O((C+B)/x)`. The exponent `1` is sharp in this monotone-response cone: the constant cushion `b_n=1` has relative dyadic capacity of order `1/x` while all switched rows vanish.
+For the FD-226 source geometry, the practical frontier is therefore narrower. Any physical nonnegative repair with bounded switched rows has less than inverse-square-root relative capacity on sufficiently deep bands, even if `mu*b` changes sign. If the actual repair also lies in the monotone-response cone, only inverse-linear capacity remains. A complete obstruction still needs a lower bound showing that the concrete repair consumes more positive slack than the applicable ceiling; neither FD-257 nor FD-260 supplies that source-specific lower bound.
 
-This separates two levels of positivity. Nonnegativity of `b` alone gives the FD-257 fixed-power depletion. Nonnegativity of the Möbius increments `mu*b` removes oscillation in the response itself and upgrades the aggregate loss to inverse-linear. A positive cushion seeking polynomially more slack than the common-cushion scale must therefore leave the monotone-response cone and create sign changes in `mu*b`; raw positivity of the source coefficients does not prevent that possibility.
-
-For the FD-226 scale-adapted reservoirs, after normalizing by `L_N=N/(D log N)`, the monotone-response subclass can use only `O(L_N x)` aggregate occupancy in a divisor band of scale `x`, against available capacity `asymp L_N x^2`. This closes any attempt to recover a polynomial fraction of the growing cell capacity while keeping `mu*b>=0` and bounded switched response.
-
-The decisive remaining comparison is still source-specific. The actual Mertens repair is not known to lie in the monotone-response cone, so FD-259 does not replace the need to quantify the slack it really requires. If the repair necessarily forces signed Möbius increments, the relevant frontier returns to the weaker FD-257 class or to a new signed structural estimate.
-
-**Boundary.** FD-259's extra hypothesis `mu*b>=0` is load-bearing and is not automatic for a physical nonnegative occupancy. The inverse-linear rate is an exact aggregate statement for that subclass, not an RH statement and not a universal positive-cushion theorem. FD-257 remains the general bounded-switched positive-capacity control.
+**Boundary.** FD-260 sharpens the existing positive-kernel mechanism; it does not prove the optimal exponent for arbitrary signed `mu*b`, and its `0.65<r_c<2/3` bracket concerns only that kernel method. FD-259's hypothesis `mu*b>=0` is load-bearing. None of these depletion estimates proves an RH statement or shows that the actual Mertens repair satisfies the needed lower bound.
