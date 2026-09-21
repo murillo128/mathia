@@ -1,0 +1,9 @@
+# MI-061 — Fixed inverse-power mesh singularities classicalize to wrapped-t
+
+**Evidence level:** asymptotic synthesis from [PC-384](../../findings/PC-384-mesh-scale-inverse-power-chords-have-wrapped-t-universal-limit.md), extending the exact Poisson case PC-383. The periodization/Student-t/Bessel ingredients are classical; the line-specific content is the root-fiber limit and matched prime/composite falsification.
+
+For the regularized inverse-power chord with fixed exponent `alpha>0` at exact mesh scale `eta=tau/m`, intrinsic `L^2` normalization leaves only a universal analytic phase transition. If `alpha<1/2`, the singularity is integrable and normalized root-fiber energy tends uniformly to `1`; at `alpha=1/2` it still tends to `1`, now at logarithmic rate. If `alpha>1/2`, it tends uniformly to the periodization of `(u^2+tau^2)^(-alpha)`, the classical wrapped Student-t profile.
+
+The `alpha=1` member is exactly the Poisson kernel already seen in PC-383. More importantly, the same limit holds along every prime and composite degree sequence. Thus changing the fixed positive inverse-power exponent cannot create arithmetic selectivity in `T^*T`: the surviving order-one profile is determined by local singularity and mesh matching, not by the factorization of the covering degree.
+
+**Boundary.** The result concerns fixed `alpha`, positive scalar weights, exact mesh scaling and the positive operator. It does not classify submesh regularization, exponent sequences `alpha_m`, phase-changing/nonnormal data, nonlinear or tensor observables, or cross-level/source-dependent couplings. Those are the remaining categories; another fixed positive inverse-power modulus is not.

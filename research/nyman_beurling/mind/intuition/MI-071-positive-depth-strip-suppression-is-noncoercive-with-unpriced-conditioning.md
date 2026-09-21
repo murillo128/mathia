@@ -1,0 +1,11 @@
+# MI-071 — Positive-depth strip suppression is noncoercive with unpriced conditioning
+
+**Evidence level:** exact functional-analytic synthesis from [NB-263](../../findings/NB-263-positive-depth-ford-strip-restriction-is-noncoercive-at-resolved-hilbert-scale.md), correcting the universal interpretation of the one-notch side-lobe in NB-262. The Hahn--Banach/Riesz and truncated Fourier--Laplace instability ingredients are classical; the line-specific content is their Ford-scale transfer and resolved-carrier discretization.
+
+Fix any compact Ford strip strictly away from the Euler anchor. There are real signed densities with total mass one whose Fourier--Laplace transform is arbitrarily small uniformly on that strip. After cell discretization into `K` resolved channels, the Euler anchor remains exact while the coefficient `ell^2` norm is bounded by the witness `L^2` norm divided by `sqrt(K)`. Choosing `K` after the strip and witness therefore makes both strip response and resolved shell-Hilbert cost arbitrarily small.
+
+This means the packet-scale side-lobe of NB-262 is a property of the minimum-Hilbert two-constraint interpolant, not a universal obstruction to multi-point signed carriers. Even preassigned strips whose horizontal/vertical sizes grow can be suppressed diagonally, provided rank and conditioning are allowed to grow afterward without control.
+
+The cost has not vanished; it has moved into unpriced resources. The approximate annihilator may have huge `L^1/L^2` norm, discrete total variation may explode, and side-lobes can be exported outside the requested strip. The argument also does not cover a fixed positive fraction of the full hard width `|x|=O(J)` when that width is coupled to the eventual rank, and it is source-side rather than a final Hardy/Nyman estimate.
+
+**Boundary.** Positive-depth strip coverage alone is therefore noncoercive in resolved Hilbert norm. A viable obstruction must couple coverage to rank/conditioning/variation, reach the full rank-dependent hard window, include the Euler edge, or survive the exact Hardy projection. Those are different quantitative questions from merely adding more interpolation points.
