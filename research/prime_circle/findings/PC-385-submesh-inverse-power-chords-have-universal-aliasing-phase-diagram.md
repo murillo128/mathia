@@ -1,10 +1,10 @@
 # PC-385 — submesh inverse-power chords have a universal aliasing phase diagram
 
-**Status:** `ASYMPTOTIC-DERIVED` + `LITERATURE-ANCHORED` + `PRIOR-ART-CLASSICALIZATION` + `DECISIVE-BOUNDARY` for the genuinely submesh regularization regime left open by PC-384.
+**Status:** `ASYMPTOTIC-DERIVED` + `DECISIVE-BOUNDARY` for the genuinely submesh regularization regime left open by PC-384.
 
 PC-384 classifies fixed positive inverse powers of the regularized common-anchor chord at exact mesh scale `m eta -> tau>0`. Its explicit remaining loophole is the genuinely submesh regime `eta=eta_m ->0` with `delta_m=m eta_m ->0`, where the singularity is narrower than one inverse-image cell and could in principle interact with the discrete root fiber in a new way.
 
-It does not produce arithmetic information. The normalized root-fiber energy is exactly a pushforward of a one-point singular probability measure, and its nonconstant Fourier coefficients are only high-frequency samples of a positive classical kernel. Submesh behavior is governed by the singularity exponent and two scalar combinations of `m` and `eta_m`; prime and composite degrees with the same parameters have the same laws. The only surviving effects are uniformization, a universal anchor spike, or concentration at the anchor.
+It does not produce arithmetic information. The normalized root-fiber energy is exactly a pushforward of a one-point singular probability measure, and its nonconstant Fourier coefficients are only high-frequency samples of a positive classical kernel. Submesh behavior is governed by the singularity exponent and scalar combinations of `m` and `eta_m`; prime and composite degrees with the same parameters have the same laws. The only surviving effects are uniformization, a universal anchor spike, or concentration at the anchor.
 
 ## 1. Exact pushforward and positivity
 
@@ -59,15 +59,15 @@ A_{m,\alpha,\eta}(x)-1
 \tag{6}
 \]
 
-Consequently
+Consequently the anchor controls uniform flattening:
 
 \[
-\boxed{\ \|A_{m,\alpha,\eta}-1\|_\infty
-=A_{m,\alpha,\eta}(1)-1\ },
+\boxed{\ \sup_x |A_{m,\alpha,\eta}(x)-1|
+=A_{m,\alpha,\eta}(1)-1\ }
 \tag{7}
 \]
 
-whenever the right side tends to zero, and in all cases the anchor value is the sharp test for the largest positive deviation. There is therefore no hidden angular cancellation capable of rescuing this scalar modulus branch.
+whenever `A(1)>=1`, as it is here by positivity and mean one. There is therefore no hidden angular cancellation capable of rescuing this scalar modulus branch.
 
 ## 2. Subcritical singularities: `0<alpha<1/2`
 
@@ -88,7 +88,7 @@ At the anchor, the `j=0` sample contributes
 \tag{9}
 \]
 
-The remaining samples form the ordinary singular trapezoidal sum for the integrable zero-cutoff kernel and converge to `c_(alpha,0)`. With
+The remaining samples form the singular trapezoidal sum for the integrable zero-cutoff kernel and converge to `c_(alpha,0)`. With
 
 \[
 \lambda_m=m\eta_m^{2\alpha},
@@ -179,16 +179,16 @@ A_{m,\alpha,\eta_m}\,dm\Longrightarrow\delta_1.
 
 This is precisely the concentration endpoint `tau ->0` of the wrapped Student-t family in PC-384, not a new arithmetic phase.
 
-## 5. Matched controls and novelty audit
+## 5. Matched controls and novelty boundary
 
 Every formula above depends on the integer degree only through the sampling mesh and the scalars `m eta_m^(2 alpha)`, `m eta_m`, and logarithms thereof. Replacing a prime degree by a composite degree while keeping those geometric parameters fixed changes nothing. Primitive-shell, divisor, Ramanujan, or conductor data never enter (1)--(18).
 
-The analytic mechanism is also established territory. Israel Navot's 1961 extension of Euler--Maclaurin treats trapezoidal asymptotics for functions with branch singularities (DOI `10.1002/sapm1961401271`). Bowei Wu's 2025 extension treats the near-singular regime and explicitly separates singular and jump contributions in generalized Euler--Maclaurin asymptotics (SIAM J. Numer. Anal. 63(5), 2119--2132, DOI `10.1137/24M1697530`). The Prime-Circle-specific content here is the exact pushforward/aliasing reduction and the resulting falsification of arithmetic sensitivity; the singular quadrature asymptotics themselves are not novel.
+The asymptotic mechanism is ordinary singular/near-singular trapezoidal aliasing. A literature audit against generalized Euler--Maclaurin and near-singular quadrature theory found no reason to treat that analytic mechanism as new; the durable mathematical content claimed here is instead the exact Prime-Circle pushforward reduction and the resulting falsification of arithmetic sensitivity. No independent spectral parameter, completed-zeta symmetry, zero-sensitive determinant, or critical-line selector is generated.
 
-No independent spectral parameter, completed-zeta symmetry, zero-sensitive determinant, or critical-line selector is generated. The submesh limit therefore closes the remaining scalar inverse-power regularization loophole left by PC-384.
+The submesh limit therefore closes the remaining scalar inverse-power regularization loophole left by PC-384.
 
 ## 6. Consequence for the research frontier
 
-PC-383, PC-384, and the present result now classify the shrinking regularized common-anchor inverse-chord modulus across supermesh/exact-mesh/submesh scaling for every fixed positive inverse power relevant to this branch. Altering only the scalar singularity or its cutoff scale cannot recover prime-sensitive information after root-fiber averaging.
+PC-383, PC-384, and the present result classify the shrinking regularized common-anchor inverse-chord modulus across exact-mesh and submesh scaling for every fixed positive inverse power relevant to this branch. Altering only the scalar singularity or its cutoff scale cannot recover prime-sensitive information after root-fiber averaging.
 
 Any surviving use of this geometry must retain information before that scalarization: phase or nonnormal data, source/shell-sensitive profiles, genuinely nonlinear or tensor observables, or cross-level couplings whose arithmetic survives matched prime/composite controls. This finding does not rule out those mechanisms.
