@@ -17,6 +17,7 @@ based_on:
   - research/visual_exploration/findings/VIS-346-turan-nazarov-short-window-obstruction.md
   - research/visual_exploration/findings/VIS-347-variable-wang-phase-entropy-budget.md
   - research/visual_exploration/findings/VIS-348-higher-wang-moments-inherit-phase-entropy-gate.md
+  - research/visual_exploration/findings/VIS-349-wang-cross-order-confluent-exponential-polynomial.md
 ---
 
 # Does Wang packet localization preserve source information without manufacturing strip gain?
@@ -46,44 +47,53 @@ If `D_X/||S_X||_2=X^(o(1))`, this budget must be `(1-o(1))log X`. Consequently, 
 
 `VIS-348` shows that the first-moment gate is not special. If the lower translated inverse-scale moment polynomials `P_1,...,P_(q-1)` vanish exactly and `P_q` is the first surviving one, then claiming one further local inverse-frequency order again forces the same one-power `X` Turán--Nazarov budget, now with the phase count, spacing and conditioning of the `q`th moment. Exact low-order Vandermonde cancellation therefore does not make the first surviving higher moment locally cheap.
 
-The finite-bank escape is consequently quantitative at every first surviving tail order: it must pay through exact moment cancellation, phase count, phase coalescence, window shrinkage, or coefficient/scale degeneration before any arithmetic property of `G` is credited.
+`VIS-349` removes a further ambiguity. Without assuming any lower moments vanish, the complete interaction among the first `q` Wang tail orders is exactly
+
+`E_(q,X)(xi)=sum_b exp(-i b xi) Q_(b,q,X)(xi)`,
+
+with `deg Q_(b,q,X)<=q-1`. Thus finite cross-order interaction is a classical confluent exponential-polynomial concentration problem, not a new algebraic information channel. Exact cancellation of `E_(q,X)` forces all phase-fiber moments through order `q` to vanish separately. If the bank claims one extra local order, then `E_(q,X)` itself must be `O(X^-1)` on the working window, with the next-tail coefficient/scale norm appearing explicitly in the bound.
+
+The finite-bank escape is consequently quantitative rather than algebraic: it must pay through moment cancellation, phase count, phase coalescence, polynomial multiplicity, window shrinkage or coefficient/scale degeneration before any arithmetic property of `G` is credited.
 
 ## Research question
 
-Does `G` possess a genuinely scale-dependent, adaptive, signed, or arithmetic localization that survives these moment, phase-entropy and derivative-repayment gates and produces a pointwise smaller Wang output without reconstructing the larger source scale through `Q'` or equivalent unsmoothed information?
+Does `G` possess a genuinely scale-dependent, adaptive, signed, or arithmetic localization that survives these moment, phase-entropy, confluent-concentration and derivative-repayment gates and produces a pointwise smaller Wang output without reconstructing the larger source scale through `Q'` or equivalent unsmoothed information?
 
-For finite translated/dilated packet mechanisms, can a family expose a complete moment ledger and meet the `VIS-347`/`VIS-348` entropy budgets with controlled coefficient norms, nondegenerate first surviving moments, finite-frequency leakage, and a realizable source coupling? Alternatively, can frequency- or source-dependent coefficients, interacting nonzero asymptotic orders, or an infinite expansion use signed structure of `G` in a way that is not equivalent to making one scalar multiplier uniformly small on a window?
+For a finite translated/dilated packet mechanism with frequency-independent coefficients, can the associated confluent exponential polynomial actually achieve the needed local smallness with controlled phase geometry, polynomial coefficient norms, finite-frequency leakage and scale count? Alternatively, can frequency- or source-dependent coefficients, an infinite expansion, or direct signed structure of `G` produce a gain that is not equivalent to making a finite scalar multiplier unusually small on a window?
 
 ## Why it may matter
 
-The fixed and slowly varying scalar-bank routes are now substantially classified. Neither bounded/subpolynomial scalar order, a small pure-dilation bank, fixed translations, phase-resolving moving windows, ordinary mildly shrinking windows, a casually growing/coalescing phase bank, nor exact cancellation of several low tail moments can manufacture the required smoothing order without an explicit complexity or conditioning payment.
+The fixed and slowly varying scalar-bank routes are now substantially classified. Neither bounded/subpolynomial scalar order, a small pure-dilation bank, fixed translations, phase-resolving moving windows, ordinary mildly shrinking windows, a casually growing/coalescing phase bank, exact cancellation of several low tail moments, nor mere interaction among finitely many nonzero tail orders provides a free smoothing gain.
 
-A surviving mechanism would therefore have to use information that those controls deliberately discard: interaction among nonzero orders on a finite window, sufficiently rich scale-dependent phase geometry, adaptive/source-coupled coefficients, an infinite representation, or arithmetic sign structure of `G`. Such a result would be qualitatively different from another filter-tail cancellation and would identify a more credible place to search for leverage.
+A surviving mechanism would therefore have to do one of two materially stronger things: solve a genuinely quantitative confluent concentration problem without paying away the gain in conditioning/complexity, or use information that the finite scalar model discards, such as source/frequency-dependent coefficients, an infinite representation, or arithmetic sign structure of `G`. Either outcome would identify a sharper place to search for actual leverage.
 
 ## Decisive test
 
-Start from the exact source quotients in `VIS-339` and `VIS-340` and state the candidate directly as a quantitative property of `G`. For any finite translated-dilate bank with frequency-independent coefficients, write the moment polynomials
+Start from the exact source quotients in `VIS-339` and `VIS-340` and state the candidate directly as a quantitative property of `G`.
 
-`P_(q,X)(xi)=sum_b [sum_(j:b_j=b)c_(j,X)a_(j,X)^(-q)] exp(-i b xi)`
+For any finite translated-dilate bank with frequency-independent coefficients, choose the finite asymptotic depth `q` needed by the claimed gain and form
 
-in order. Record which lower moments vanish exactly and identify the first surviving `P_q`. Apply `VIS-347` when `q=1` and `VIS-348` when `q>1`; compute the relevant phase count, minimum spacing, window length, moment norm and tail-conditioning term before crediting local attenuation.
+`E_(q,X)(xi)=sum_(k=1)^q beta_k xi^(q-k) P_(k,X)(xi)`
+`             =sum_b exp(-i b xi) Q_(b,q,X)(xi)`.
 
-A candidate that meets an entropy budget is not yet a positive result. Derive its coefficient system explicitly and control the norm/conditioning, finite-frequency leakage, phase crowding, scale count, and any interaction among nonzero asymptotic orders needed to realize the bank. If the apparent gain is purchased by the first surviving moment becoming polynomially small relative to the next-tail conditioning term, record that as coefficient/scale degeneration rather than source cancellation.
+Record the distinct phases, the degree and coefficients of each `Q_b`, the window length, scale count and the next-tail conditioning term. Use `VIS-347`/`VIS-348` when exact lower moment cancellations isolate a first surviving ordinary exponential polynomial. When several orders remain nonzero, use the `VIS-349` confluent reduction and prove an appropriate quantitative lower/concentration bound for that actual polynomial-coefficient system rather than crediting informal cross-order cancellation.
 
-If coefficients depend on frequency or directly on `G`, or if the mechanism relies on interaction among several nonzero orders rather than exact lower cancellations, state that dependence explicitly and prove the resulting estimate as a signed source statement rather than rebranding it as fixed-filter smoothing. Any surviving gain must then be propagated through Wang's full destination: identify every occurrence of `Q`, `Q'`, or equivalent unsmoothed information and show that the final bound retains the smaller scale rather than reconstructing the source through the derivative channel.
+A candidate that meets the resulting concentration budget is not yet a positive result. Control the coefficient norm/conditioning, finite-frequency leakage, phase crowding, scale count and any parameter growth used to realize the bank. If the apparent gain is purchased by polynomially small effective moments, coefficient explosion, phase collision, window collapse or growing finite-dimensional complexity, debit that cost rather than calling it source cancellation.
 
-Kill the route if it reduces to the already-classified scalar truncation order, violates the applicable phase-entropy budget at its first surviving moment, satisfies that budget only through an ill-conditioned coefficient explosion or vanishing moment, restates a stronger theta/PNT remainder, or loses the gain in a destination derivative term.
+If coefficients depend on frequency or directly on `G`, or if the mechanism is infinite rather than finite-dimensional, state that dependence explicitly and prove the resulting estimate as a signed source statement rather than rebranding it as fixed-filter smoothing. Any surviving gain must then be propagated through Wang's full destination: identify every occurrence of `Q`, `Q'`, or equivalent unsmoothed information and show that the final bound retains the smaller scale rather than reconstructing the source through the derivative channel.
+
+Kill the route if it reduces to the already-classified scalar truncation order, violates the applicable ordinary or confluent concentration requirement, satisfies it only through ill-conditioned coefficient/phase/window degeneration, restates a stronger theta/PNT remainder, or loses the gain in a destination derivative term.
 
 ## Evidence boundary
 
-`VIS-333`--`VIS-348` are obstruction and transfer results. They do not prove a new bound or nonstationarity theorem for `G`, an improvement of the Korobov--Vinogradov remainder, or a destination-level avoidance of derivative repayment.
+`VIS-333`--`VIS-349` are obstruction, representation and transfer results. They do not prove a new bound or nonstationarity theorem for `G`, an improvement of the Korobov--Vinogradov remainder, or a destination-level avoidance of derivative repayment.
 
-`VIS-348` is conditional on exact cancellation of lower moment polynomials. It does not classify finite-window cancellation caused by interaction among several nonzero asymptotic orders, frequency/source-dependent coefficients, infinite expansions, or arithmetic sign cancellation coupled directly to `G`. The phase-entropy thresholds remain necessary controls for uniform/local multiplier smallness, not evidence that a qualifying source mechanism exists or is useful downstream.
+`VIS-349` proves the exact confluent reduction and exact-cancellation equivalence, but it does **not** yet provide the sharp scale-dependent Turán-type inequality needed to price every moving confluent system uniformly. The quantitative finite-bank loophole therefore remains open, as do frequency/source-dependent coefficients, infinite expansions and arithmetic sign cancellation coupled directly to `G`.
 
-The clue therefore remains `accepted`: the finite scalar packet hierarchy is narrower, but genuinely source-coupled or non-scalar localization remains unclassified.
+The clue therefore remains `accepted`: the finite scalar packet hierarchy is narrower, but a genuinely source-coupled localization mechanism remains unclassified.
 
 ## Research disposition
 
 Outcome: **narrowed**.
 
-Future work should require a finite-bank proposal to expose its complete moment ledger and pay the entropy/conditioning cost at the first surviving order. The remaining live branch should now concentrate on mechanisms that are not reducible to that ledger: interacting nonzero orders on finite windows, source/frequency-dependent coefficients, infinite expansions, or direct signed structure of `G`, followed by the unchanged downstream derivative audit.
+Future finite-bank work should no longer treat interaction among nonzero asymptotic orders as a separate escape. It must expose the resulting confluent exponential polynomial and pay its concentration/conditioning cost. The remaining qualitatively distinct branch is source/frequency dependence, infinite representation, or direct signed arithmetic structure of `G`, followed by the unchanged downstream derivative audit.
