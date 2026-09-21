@@ -2,26 +2,22 @@
 
 This file holds the current mathematical questions suggested by the durable prime-lattice intuitions. It is not a roadmap, task queue, status page, or history.
 
-## Transfer the exact cubic continuation kernel from model covariance to prime variance
+## Transfer the moving-boundary cubic spectral functional from model covariance to prime variance
 
-**Linked intuitions:** `MI-044-finite-prime-wold-classification-does-not-globalize-atomically`, `MI-045-fixed-gap-meet-join-data-collapse-to-finite-congruence-decoration`, `MI-046-growing-gap-arithmetic-complexity-pays-a-reciprocal-continuation-tariff`, `MI-047-mesoscopic-continuation-phase-can-miss-the-prime-pair-parity-sector`, `MI-048-cubic-phase-can-reopen-arithmetic-support-yet-average-to-a-universal-control`, `MI-049-abel-cubic-singular-series-asymptotics-isolate-an-rh-equivalent-zero-layer-at-model-level`, `MI-050-the-zero-sensitive-exact-kernel-bridge-now-ends-in-a-signed-prime-variance-problem`, `MI-051-cubic-source-replacement-has-a-variance-power-saving-curve`.
+**Linked intuitions:** `MI-044-finite-prime-wold-classification-does-not-globalize-atomically`, `MI-045-fixed-gap-meet-join-data-collapse-to-finite-congruence-decoration`, `MI-046-growing-gap-arithmetic-complexity-pays-a-reciprocal-continuation-tariff`, `MI-047-mesoscopic-continuation-phase-can-miss-the-prime-pair-parity-sector`, `MI-048-cubic-phase-can-reopen-arithmetic-support-yet-average-to-a-universal-control`, `MI-049-abel-cubic-singular-series-asymptotics-isolate-an-rh-equivalent-zero-layer-at-model-level`, `MI-050-the-zero-sensitive-exact-kernel-bridge-now-ends-in-a-signed-prime-variance-problem`, `MI-051-cubic-source-replacement-has-a-variance-power-saving-curve`, `MI-052-cubic-filter-pushes-subleading-ramanujan-mass-to-a-moving-square-free-boundary`.
 
-PL-391--PL-406 transfer the RH-equivalent model zero layer through the exact incomplete-gamma kernel, isolate the critical Ramanujan covariance, and show that the cubic test projects out the divergent diagonal. The remaining arithmetic bridge is one signed prime short-interval variance / zero-pair functional.
+PL-391--PL-406 transfer the RH-equivalent model zero layer through the exact incomplete-gamma kernel, isolate the critical Ramanujan covariance, and show that the cubic test projects out the divergent diagonal. PL-407 then calibrates the precision required by a generic source-subtracted short-interval variance route: at `H=X^theta`, an LPZ-shaped relative saving exponent `mu` preserves the `H^(-7/4)` layer only when `mu>3theta/(4(1-theta))` after absolute values are taken.
 
-PL-407 calibrates the precision needed by a generic power-saving variance route. If
+PL-408 adds a different localization on the model side. Truncating the square-free Ramanujan spectrum at `q<=Q` changes the cubic statistic by at most
 
-`|Delta T_X(L)| << X L (L/X)^mu * logs`
+`O_eta(H^(-7) Q^6 (log log(3Q))^2)`.
 
-on `L~H=X^theta`, then the cubic source error is `O(H^-1(H/X)^mu * logs)`, and the `H^-7/4` layer is preserved whenever
+Hence every range `q<=H^(1-epsilon)` misses the deterministic `H^(-1)` correction asymptotically, while every `q<=H^(7/8-epsilon)` misses the zero-sensitive `H^(-7/4)` layer under the present seventh-order decay estimate. The cubic filter is therefore looking at a moving square-free exponent-energy boundary, not at finitely many fixed Ramanujan channels. The `7/8` number is method-relative; the robust point is escape from every fixed interior at the deterministic correction scale.
 
-`mu > 3 theta/(4(1-theta))`.
+The live fork is now more specific. Either prove a source-subtracted prime-variance theorem above the PL-407 exponent curve, or control directly the one signed cubic filtered spectral-measure difference at the moving rational-frequency boundary so that the absolute-value tariff is avoided. A source replacement that is accurate only on fixed or slowly growing denominator sets cannot see the model correction that must be transferred.
 
-A square-root relative saving reaches every `theta<2/5`; the exact endpoint needs logarithmic gain. This is only the boundary of the route that first takes absolute values against the signed cubic kernel.
+## Keep exact-kernel transfer, model boundary localization and actual prime source distinct
 
-The live fork is now quantitative and explicit. Either prove a source-subtracted short-interval variance estimate with an exponent above this curve in a usable polynomial window, or exploit the sign/oscillation of `K_eta''` and the one tested zero-pair functional directly so that the absolute-value exponent tariff is avoided. Current fixed-logarithmic averaged Hardy--Littlewood input remains too weak for the first route.
+The continuation kernel, Ramanujan diagonal and fixed-denominator interior are no longer the bottlenecks. PL-408 is a model-side localization theorem: it does not prove the actual prime spectral measure matches the critical Ramanujan endpoint and does not determine the sign of the moving-boundary contribution.
 
-## Keep exact-kernel transfer, model covariance and actual prime source distinct
-
-The continuation kernel and Ramanujan diagonal are no longer the bottlenecks. PL-407 does not turn a hypothetical LPZ-shaped remainder into a theorem; it only states how strong such a remainder would need to be after all source/model conventions are aligned.
-
-A future source-replacement proof must therefore specify whether it controls the full variance remainder or only the signed cubic functional. Failure of the absolute-value calibration above `theta=2/5` is not evidence that the statistic fails there; it is evidence that the signed kernel information has been discarded.
+A future source-replacement proof must therefore specify whether it controls the full variance remainder or the single signed cubic functional, and must do so on the denominator/frequency scales actually selected by the kernel. Failure of the absolute-value calibration above `theta=2/5`, or failure of a fixed-denominator approximation, is not evidence that the statistic fails there; both only identify information discarded by those routes.
