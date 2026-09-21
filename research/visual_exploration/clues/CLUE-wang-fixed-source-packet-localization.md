@@ -28,6 +28,7 @@ based_on:
   - research/visual_exploration/findings/VIS-357-compact-wang-anchor-packing-collapse.md
   - research/visual_exploration/findings/VIS-358-dense-cluster-occupancy-width-floor.md
   - research/visual_exploration/findings/VIS-359-regular-multicluster-hermite-jet-capacity.md
+  - research/visual_exploration/findings/VIS-360-pooled-rescaling-colliding-center-floor.md
 ---
 
 # Does Wang packet localization preserve source information without manufacturing strip gain?
@@ -50,23 +51,29 @@ The source side has already collapsed to the normalized Chebyshev-theta remainde
 
 `s_q(D_beta V_(N,epsilon)) asymp sqrt(N) epsilon^(q-1)`.
 
-`VIS-359` now closes the regular separated multicluster extension. If cluster `ell` has occupancy `N_ell asymp epsilon_ell^(-2a_ell)`, it supplies exactly
+`VIS-359` closes the regular separated multicluster extension. If cluster `ell` has occupancy `N_ell asymp epsilon_ell^(-2a_ell)`, it supplies exactly
 
 `kappa_ell=floor(a_ell)+1`
 
-stable Hermite jets under the current Euclidean normalization. These capacities add across separated cluster centers. The fixed-depth quotient stays uniformly nondegenerate exactly when the total regular jet capacity reaches `q`; if the total remains below `q`, an explicit polynomial vanishing to the corresponding orders at every center drives the quotient floor to zero.
+stable Hermite jets under the current Euclidean normalization. These capacities add across separated cluster centers.
+
+`VIS-360` now prices the first colliding-center regime. If all samples are pooled inside an outer width `rho` around a positive center and the rescaled node cloud has a uniformly nondegenerate degree-`q-1` moment Gram, then
+
+`s_q(D_beta V) asymp sqrt(N) rho^(q-1)`.
+
+Thus shrinking separation between named subcluster centers is not itself a new compact resource. After the correct outer rescaling, any cloud that still exposes `q` stable polynomial modes is just another one-cluster sampling problem. A genuinely new compact degeneration requires the **pooled normalized sampling Gram itself** to lose rank/conditioning, forcing a further hierarchy of inner scales, weights, or norms.
 
 ## Research question
 
-After quotienting bounded source-independent banks, bounded source-adaptive selection, anchored bank enlargement, compact square-anchor loss, regular one-cluster occupancy repayment, and regular separated multicluster Hermite-jet capacity, can a genuinely source-coupled or growing/global construction produce a smaller Wang destination without merely importing a stronger estimate for `G`, `theta`, or an equivalent unsmoothed source quantity?
+After quotienting bounded source-independent banks, bounded source-adaptive selection, anchored bank enlargement, compact square-anchor loss, regular one-cluster occupancy repayment, regular separated multicluster Hermite-jet capacity, and pooled colliding-center configurations with a stable outer sampling Gram, can a genuinely source-coupled or growing/global construction produce a smaller Wang destination without merely importing a stronger estimate for `G`, `theta`, or an equivalent unsmoothed source quantity?
 
-The remaining live mechanisms must expose a real resource outside that ledger: an irregular or weighted clustered rectangular geometry whose **scaled local sampling Gram** degenerates beyond its effective jet capacity; cluster centers whose mutual separation also collapses; growing tail depth/order; scale escape toward zero or infinity; growing/global phase complexity; shrinking windows; an infinite-dimensional topology; nonlinear source dependence; or direct signed arithmetic structure of `G`.
+The remaining live compact mechanisms must expose a real resource outside that ledger: a **hierarchically degenerate irregular or weighted rescaled sampling Gram** whose deficient modes remain small after successive rescaling, nonuniform weights or a changed coefficient norm, or source-dependent coefficients carrying signed arithmetic information. Other exits remain growing tail depth/order, scale escape toward zero or infinity, growing/global phase complexity, shrinking windows, an infinite-dimensional topology, nonlinear source dependence, or direct signed arithmetic structure of `G`.
 
 ## Why it may matter
 
-The compact fixed-depth branch is now close to a classification rather than a collection of examples. `VIS-358` priced one dense cluster; `VIS-359` shows that several regular separated clusters simply pool local Hermite conditions. Dense scale clouds do not acquire extra arithmetic power merely by being split among several compact centers.
+The compact fixed-depth branch is now close to a multiscale classification. `VIS-358` prices one dense cluster; `VIS-359` prices regular separated clusters by local Hermite capacity; `VIS-360` shows that when those centers themselves merge, one must first pool them at the outer collision scale rather than charge pairwise separation again.
 
-A positive compact-bank mechanism must therefore identify an actual failure of the regular jet ledger: irregular local sampling that loses polynomial-sampling rank after rescaling, nonuniform weights or a changed norm that alter effective mass, collapsing center separation that turns separate Hermite blocks into a higher confluence problem, or source-dependent coefficients carrying information not present in the source-free bank geometry.
+A positive compact-bank mechanism must therefore exhibit an actual hierarchy of lost polynomial modes. If the pooled normalized cloud keeps a positive `q`-moment Gram at some scale, the branch closes there with the ordinary occupancy-width law. Only when the Gram is deficient does finer geometry become relevant, and that deficiency must then survive the next rescaling rather than being an artifact of how subclusters were named.
 
 ## Decisive test
 
@@ -80,7 +87,9 @@ If every fixed-depth square anchor degenerates inside a compact interval, apply 
 
 For several regular clusters with fixed positive separated centers, apply `VIS-359`. In general choose Hermite multiplicities `m_ell` summing to `q`; a uniform lower bound follows whenever the deepest assigned jet masses `N_ell epsilon_ell^(2(m_ell-1))` stay bounded below. In the power-law regime compute `kappa_ell=floor(a_ell)+1`: total capacity at least `q` closes quotient degeneration, while total capacity below `q` produces the explicit source-free collapsing polynomial from `VIS-359`.
 
-A claimed compact escape beyond `VIS-359` must therefore show why this Hermite allocation model fails. For irregular point clouds, rescale each cluster and study the actual fixed-degree polynomial-sampling Gram rather than nominal point count. For weights, state the coefficient norm and effective sample masses explicitly. If cluster centers themselves collide, price the resulting higher-level confluent geometry rather than treating the blocks as separated. Do not infer degeneration from pairwise collisions, bad square minors, or large raw occupancy alone.
+If the cluster centers themselves approach one another, **do not treat their pairwise separation as an additional escape parameter before pooling the cloud**. Choose the outer diameter/scale `rho`, write every sample as `c+rho t_j`, and form the normalized degree-`q-1` sampling Gram `(1/N)S^*S`. Apply `VIS-360`: if its smallest eigenvalue stays bounded below, the whole colliding configuration has quotient scale `sqrt(N) rho^(q-1)` and is closed. Continue inward only through the Gram-deficient polynomial directions when that normalized Gram actually degenerates.
+
+For a claimed compact escape beyond `VIS-360`, state the coefficient norm/column weights and exhibit the deficient rescaled polynomial modes at each relevant scale. An irregular hierarchy must show that the next normalized Gram still loses a positive eigenvalue after the already-visible outer modes are quotiented or rescaled. Do not infer degeneration from pairwise collisions, bad square minors, large raw occupancy, or a chosen subcluster decomposition.
 
 If the effective cancellation depth grows, combine `VIS-342`--`VIS-343` with the conditioning of the growing moment system. If downstream phase geometry also grows or degenerates, price its cluster count/multiplicity/span/density, separation, and window length through `VIS-344`--`VIS-353`.
 
@@ -88,18 +97,18 @@ If coefficients, scales, translations, weights, or selection rules use signed in
 
 For an infinite representation, specify the convergence topology, coefficient norm, truncation control, and finite approximants that preserve the claimed gain.
 
-Kill a route if its improvement disappears after the explicit growth/degeneration parameter is charged, if adaptive weights merely approach the known moment kernel, if extra scales leave a stable anchor intact, if regular one- or multicluster occupancy restores the full-map floor as in `VIS-358`--`VIS-359`, if a changed norm or weighting is doing the real work but is not priced, if source-dependent weights encode the target source estimate, or if the gain is lost in the destination derivative step.
+Kill a route if its improvement disappears after the explicit growth/degeneration parameter is charged, if adaptive weights merely approach the known moment kernel, if extra scales leave a stable anchor intact, if regular occupancy restores the full-map floor as in `VIS-358`--`VIS-359`, if pooled center collisions retain a stable normalized moment Gram as in `VIS-360`, if a changed norm or weighting is doing the real work but is not priced, if source-dependent weights encode the target source estimate, or if the gain is lost in the destination derivative step.
 
 ## Evidence boundary
 
-`VIS-333`--`VIS-359` are exact representation, obstruction, conditioning, compactness, packing, Hermite-interpolation, and finite-dimensional negative-control results. They do not prove a stronger PNT remainder, a new pointwise estimate for `G`, an RH-equivalent localization theorem, or a destination-level improvement.
+`VIS-333`--`VIS-360` are exact representation, obstruction, conditioning, compactness, packing, Hermite-interpolation, pooled-rescaling, and finite-dimensional negative-control results. They do not prove a stronger PNT remainder, a new pointwise estimate for `G`, an RH-equivalent localization theorem, or a destination-level improvement.
 
-`VIS-359` classifies **regular equally spaced clusters with fixed separated centers** under the current unweighted Euclidean coefficient norm, including an exact power-law occupancy dichotomy. It does not classify arbitrary irregular cluster point clouds, nonuniform weights, collapsing inter-center separations, growing asymptotic depth, or other coefficient topologies. Those are now the precise compact questions rather than generic “multicluster interaction.”
+`VIS-360` handles colliding centers only when the **pooled outer-scale normalized polynomial-sampling Gram is uniformly nondegenerate**. It does not classify a hierarchy in which that Gram itself becomes singular or nearly singular, nonuniform weights, changed coefficient topologies, growing asymptotic depth, or infinite-dimensional limits. Those are now the precise compact questions rather than generic “center collision.”
 
-The clue therefore remains `accepted`, but its compact frontier is narrowed to a genuine failure of the regular Hermite-jet ledger after the actual local sampling Gram, weights, center separation, and norm are accounted for. Growing order, scale escape, phase/window/infinite-dimensional resources, and genuinely new arithmetic source information remain separate exits.
+The clue therefore remains `accepted`, but its compact frontier is narrowed to hierarchical degeneration of successive rescaled sampling/jet Grams after occupancy, weights, center separation, and norm are accounted for. Growing order, scale escape, phase/window/infinite-dimensional resources, and genuinely new arithmetic source information remain separate exits.
 
 ## Research disposition
 
 Outcome: **narrowed**.
 
-Treat bounded source-independent conditioning, bounded source-adaptive selection, anchored fixed-depth scale growth, diffuse compact anchor loss, regular one-cluster collapse, and regular separated multicluster occupancy as closed. Future compact-bank work must exhibit irregular/weighted/colliding-center geometry that survives the `VIS-358`--`VIS-359` controls; other continuations must expose growing order, scale escape, infinite/nonlinear structure, or a new signed source estimate that survives the unchanged Wang destination audit.
+Treat bounded source-independent conditioning, bounded source-adaptive selection, anchored fixed-depth scale growth, diffuse compact anchor loss, regular one-cluster collapse, regular separated multicluster occupancy, and colliding-center clouds with a stable pooled outer Gram as closed. Future compact-bank work must exhibit a genuinely hierarchical irregular/weighted degeneration that survives successive rescaling; other continuations must expose growing order, scale escape, infinite/nonlinear structure, or a new signed source estimate that survives the unchanged Wang destination audit.
