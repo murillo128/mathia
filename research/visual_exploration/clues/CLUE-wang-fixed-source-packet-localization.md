@@ -36,6 +36,7 @@ based_on:
   - research/visual_exploration/findings/VIS-365-finite-weighted-vandermonde-subset-energy-spectrum.md
   - research/visual_exploration/findings/VIS-366-fixed-depth-vandermonde-partition-sum-spectrum.md
   - research/visual_exploration/findings/VIS-367-growing-depth-chebyshev-capacity-baseline.md
+  - research/visual_exploration/findings/VIS-368-uniform-positive-hilbert-correlation-is-bounded-preconditioning.md
 ---
 
 # Does Wang packet localization preserve source information without manufacturing strip gain?
@@ -62,7 +63,7 @@ and
 
 For discrete support, `Z_k` is the exact positive sum over all `k`-point weighted Vandermonde squares. This remains valid when support cardinality grows, when the support converges to a continuous positive measure, and when masses/separations have no common power-law valuation.
 
-`VIS-367` now identifies the first generic growing-depth effect. For every positive probability measure on `[-1,1]`,
+`VIS-367` identifies the first generic growing-depth effect. For every positive probability measure on `[-1,1]`,
 
 `Z_q(mu) <= 2^(-(q-1)(q-2))`
 
@@ -72,52 +73,62 @@ and the raw monomial sampling map satisfies
 
 These bounds come from the classical Chebyshev minimax polynomial and are completely source-free. Thus even before arithmetic information enters, growing polynomial depth creates a super-exponentially shrinking determinant scale and an exponentially small raw monomial singular direction.
 
-So **fixed depth is closed by the partition-sum audit, while growing depth must now be judged only after quotienting its universal Chebyshev/capacity and coordinate-conditioning baseline**.
+`VIS-368` now closes another apparent coefficient-topology escape. Let `W` be an already priced positive diagonal coefficient covariance and `H` any positive-definite, possibly non-diagonal covariance. If
+
+`mW <= H <= MW`
+
+in Loewner order, then for the corresponding Wang maps
+
+`sqrt(m) s_k(A_W) <= s_k(A_H) <= sqrt(M) s_k(A_W)`
+
+for every singular sector. Hence bounded positive off-diagonal correlation is only bounded preconditioning; it does not change rank or any singular asymptotic scale. Static source-independent sign/phase factors are an exact gauge special case. A positive correlated metric becomes a genuinely new resource only when its relative spectrum degenerates, depends on arithmetic source information, or leaves positive Hilbert geometry.
+
+So **fixed depth is closed by the partition-sum audit, growing depth must first quotient the universal Chebyshev/capacity baseline, and bounded positive non-diagonal Hilbert correlation is now closed as an independent escape**.
 
 ## Research question
 
-After quotienting fixed-depth positive compact polynomial-sampling geometry and the universal source-free high-degree Chebyshev/capacity collapse, can a genuinely growing-depth, source-coupled, different-topology, noncompact/global, or nonlinear construction produce a smaller Wang destination without merely importing a stronger estimate for `G`, `theta`, or an equivalent unsmoothed source quantity?
+After quotienting fixed-depth positive compact polynomial-sampling geometry, the universal source-free high-degree Chebyshev/capacity collapse, and every positive correlated coefficient metric uniformly equivalent to the priced diagonal geometry, can a genuinely source-coupled, metric-degenerate, indefinite/non-Hilbert, noncompact/global, or nonlinear construction produce a smaller Wang destination without merely importing a stronger estimate for `G`, `theta`, or an equivalent unsmoothed source quantity?
 
-The live routes must now leave or materially outperform the closed baselines. Cancellation depth `q` may grow, but a useful result must survive the generic high-degree compact conditioning in `VIS-367` and the scalar order-growth cost in `VIS-342`. Alternatively, coefficient geometry may become signed, indefinite, non-diagonal, or otherwise non-positive-Hilbert; nodes, weights, or selectors may depend on signed arithmetic information from the source; normalized support may escape compactness together with a nontrivial destination repayment; or the mechanism may use global phase/window geometry, nonlinear source dependence, or a genuinely infinite-dimensional limit with a controlled coefficient topology.
+Cancellation depth `q` may grow, but a useful result must survive the generic high-degree compact conditioning in `VIS-367` and the scalar order-growth cost in `VIS-342`. Positive non-diagonal coefficient metrics no longer count as a distinct mechanism unless their relative Loewner spectrum itself degenerates and that degeneration is justified and repaid. Other live routes include genuinely indefinite or non-Hilbert coefficient topology, nodes/weights/selectors depending on signed arithmetic information from the source, normalized support escaping compactness with a nontrivial destination repayment, global phase/window geometry, nonlinear source dependence, or a genuinely infinite-dimensional limit with a controlled physical coefficient topology.
 
-Merely adding more positive compact support points, allowing a continuous positive support, replacing power scales by non-power scales at fixed `q`, or citing the generic high-degree collapse of a raw monomial moment matrix no longer qualifies as a distinct mechanism.
+Merely adding more positive compact support points, allowing a continuous positive support, replacing power scales by non-power scales at fixed `q`, citing the generic high-degree collapse of a raw monomial moment matrix, or adding uniformly bounded positive off-diagonal coefficient correlations no longer qualifies as a distinct mechanism.
 
 ## Why it may matter
 
-The Wang branch has progressively separated arithmetic information from conditioning geometry. `VIS-365` replaced finite branch trees by one tropical subset-energy ledger, `VIS-366` replaced that finite valuation picture by exact positive partition sums, and `VIS-367` shows that the most obvious effect of letting the polynomial depth grow is itself classical source-free approximation geometry.
+The Wang branch has progressively separated arithmetic information from conditioning geometry. `VIS-365` replaced finite branch trees by one tropical subset-energy ledger, `VIS-366` replaced that finite valuation picture by exact positive partition sums, `VIS-367` showed that the most obvious growing-depth collapse is classical source-free approximation geometry, and `VIS-368` shows that ordinary positive Hilbert correlation cannot reopen the branch unless the metric equivalence itself degenerates.
 
-This makes the remaining frontier materially sharper. A future positive result must show a **net destination gain** after the polynomial coordinate system, high-degree conditioning, truncation/order growth, and outer Wang factors are all charged. A tiny determinant or raw coefficient singular value is not enough; the residual improvement has to carry source information that the same compact polynomial space does not already manufacture.
+This makes the remaining frontier materially sharper. A future positive result must show a **net destination gain** after polynomial coordinates, high-degree conditioning, coefficient-metric equivalence, truncation/order growth, and outer Wang factors are all charged. A tiny determinant, raw coefficient singular value, or correlated positive norm is not enough; the residual improvement has to carry source information or genuinely different topology that the same compact polynomial space does not already manufacture.
 
 ## Decisive test
 
 For any proposed continuation, first state exactly which closed assumption is being abandoned or which source-free baseline is claimed to be beaten.
 
-If the effective polynomial/cancellation depth `q` is fixed, the coefficient geometry is positive Hilbert/diagonal after the existing normalization, and the normalized support lies in one fixed compact interval, form its positive coefficient measure `mu` and the partition sums
+If the effective polynomial/cancellation depth `q` is fixed, the coefficient geometry is positive Hilbert after normalization, and the normalized support lies in one fixed compact interval, form the corresponding polynomial sampling map and positive covariance. For diagonal geometry, apply `VIS-366`. For a non-diagonal positive covariance `H`, choose a natural priced diagonal baseline `W` and examine
 
-`Z_k(mu)=(1/k!) integral prod_(i<j)(x_j-x_i)^2 dmu^k`, `1<=k<=q`.
+`C=W^(-1/2) H W^(-1/2)`.
 
-Apply `VIS-366`. Kill the route as source-free conditioning geometry if the claimed improvement is exactly the smallness of `sqrt(Z_k/Z_(k-1))` after restoring the outer Wang mass/scale factors.
+If the spectrum of `C` stays in one fixed interval `[m,M] subset (0,infinity)`, apply `VIS-368` and kill the supposed metric gain as bounded preconditioning. If `lambda_min(C)` tends to zero or `lambda_max(C)` diverges, quantify that degeneration explicitly and show that the physical Wang coefficient/destination norm actually permits it; do not hide the new resource inside a coordinate choice.
 
 If `q=q(parameter)` grows, first affine-normalize the compact node coordinate and identify the actual coefficient norm used by the Wang destination. Apply the `VIS-367` baseline: on `[-1,1]`, generic positive compact monomial geometry already allows
 
 `Z_q <= 2^(-(q-1)(q-2))`, `s_q <= 2^(2-q)`.
 
-Do not credit determinant decay, monomial condition-number growth, or a high-degree near-null direction that is explained by this classical compact-capacity effect. If a better-conditioned polynomial basis is introduced, include the norm of the basis change needed to return to the physical Wang tail coefficients. Then combine the remaining gain with `VIS-342`: a fixed change in the scalar Vinogradov--Korobov power class requires polynomial growth of the relevant effective order, together with its truncation and destination costs.
+If a positive correlated metric is also used, apply `VIS-368` dimension by dimension. Uniform Loewner equivalence cannot alter the Chebyshev scale by more than constants. A nonuniform comparison must expose its relative eigenvalue growth as an additional resource. If a better-conditioned polynomial basis is introduced, include the norm of the basis change needed to return to the physical Wang tail coefficients. Then combine the remaining gain with `VIS-342`: a fixed change in the scalar Vinogradov--Korobov power class requires polynomial growth of the relevant effective order, together with its truncation and destination costs.
 
-If coefficient geometry leaves the positive Hilbert setting, define its topology and norm precisely and identify which moment/Gram positivity step fails. If nodes, weights, scales, translations, or selectors use signed information from `G`, `theta`, or another arithmetic statistic, formulate the claimed gain directly as a source estimate and show that the selection rule does not already encode the desired stronger bound.
+If coefficient geometry is genuinely indefinite/non-Hilbert, define its topology and destination norm precisely and identify exactly which positivity/Loewner step fails. If nodes, weights, scales, translations, metric, or selectors use signed information from `G`, `theta`, or another arithmetic statistic, formulate the claimed gain directly as a source estimate and show that the selection rule does not already encode the desired stronger bound.
 
 If support escapes the compact normalized regime, or the route uses phase/window growth, nonlinear dependence, or an infinite-dimensional representation, specify the growth parameter, convergence topology, truncation control, coefficient normalization, and full destination cost. Kill the route if the gain disappears once those costs are charged or if it reduces to a stronger source estimate assumed rather than proved.
 
 ## Evidence boundary
 
-`VIS-333`--`VIS-365` are exact representation, obstruction, conditioning, interpolation, compactness, and finite-dimensional negative-control results. `VIS-366` adds a support-cardinality-independent exact partition-sum comparison for every positive compact coefficient measure at fixed polynomial depth. `VIS-367` adds only a universal growing-depth **baseline**: classical Chebyshev minimax forces an `exp(-Theta(q^2))` determinant ceiling and an exponential raw-monomial smallest-singular-value ceiling in normalized compact coordinates.
+`VIS-333`--`VIS-365` are exact representation, obstruction, conditioning, interpolation, compactness, and finite-dimensional negative-control results. `VIS-366` adds a support-cardinality-independent exact partition-sum comparison for every positive compact coefficient measure at fixed polynomial depth. `VIS-367` adds only a universal growing-depth baseline: classical Chebyshev minimax forces an `exp(-Theta(q^2))` determinant ceiling and an exponential raw-monomial smallest-singular-value ceiling in normalized compact coordinates. `VIS-368` adds an exact Loewner comparison showing that uniformly equivalent positive non-diagonal Hilbert metrics preserve every singular-value scale up to bounded factors.
 
-These findings do not prove a stronger PNT remainder, a new pointwise estimate for `G`, an RH-equivalent localization theorem, or a destination-level improvement. `VIS-367` does not prove that growing depth is useless, does not provide a uniform lower bound on the achievable Wang destination, and does not classify signed/indefinite/non-diagonal coefficient geometries, source-dependent arithmetic selectors, noncompact/global phase-window escape, nonlinear dependence, or genuinely different infinite-dimensional coefficient topologies.
+These findings do not prove a stronger PNT remainder, a new pointwise estimate for `G`, an RH-equivalent localization theorem, or a destination-level improvement. `VIS-367` does not prove that growing depth is useless. `VIS-368` does not classify metric degeneration, genuinely indefinite/non-Hilbert coefficient spaces, source-dependent correlated metrics, noncompact/global phase-window escape, nonlinear dependence, or genuinely different infinite-dimensional topologies.
 
-The clue therefore remains `accepted`, but both fixed-depth positive compact geometry and the raw high-degree compact-capacity collapse are now closed as standalone explanations of arithmetic gain.
+The clue therefore remains `accepted`, but fixed-depth positive compact geometry, raw high-degree compact-capacity collapse, and uniformly equivalent positive correlated Hilbert metrics are now closed as standalone explanations of arithmetic gain.
 
 ## Research disposition
 
 Outcome: **narrowed**.
 
-Treat any fixed-depth positive compact Wang bank as source-free moment conditioning priced by `VIS-366`. When depth grows, first quotient the universal Chebyshev/capacity collapse from `VIS-367` and charge the coefficient/basis-change and scalar order costs from `VIS-342`. Future work must exhibit a residual net destination improvement, different coefficient topology, source-dependent signed arithmetic information, noncompact/global geometry with its costs repaid, nonlinear dependence, or another mechanism outside these positive compact polynomial baselines.
+Treat any fixed-depth positive compact Wang bank as source-free moment conditioning priced by `VIS-366`. When depth grows, first quotient the universal Chebyshev/capacity collapse from `VIS-367` and charge the coefficient/basis-change and scalar order costs from `VIS-342`. When a positive non-diagonal coefficient metric is proposed, apply the relative Loewner test from `VIS-368`; bounded equivalence is only preconditioning, while degeneration must be exposed and repaid as an explicit resource. Future work must exhibit a residual net destination improvement, genuinely different coefficient topology, source-dependent arithmetic information, noncompact/global geometry with its costs repaid, nonlinear dependence, or another mechanism outside these positive compact Hilbert baselines.
