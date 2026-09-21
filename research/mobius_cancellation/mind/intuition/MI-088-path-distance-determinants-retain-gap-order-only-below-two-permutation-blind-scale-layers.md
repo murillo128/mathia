@@ -1,27 +1,17 @@
-# MI-088 — Path-distance determinant order first survives through one adjacency-endpoint scalar
+# MI-088 — Fixed-rank path-distance gap geometry is order-sensitive but not prime-separating
 
-**Evidence level:** exact/classical determinant synthesis from [MC-440](../../findings/MC-440-path-distance-determinant-buries-gap-order-two-degrees-down.md) and [MC-441](../../findings/MC-441-first-order-sensitive-path-coefficient-is-adjacency-endpoint-scalar.md), testing the growing-rank escape left by MC-439. The weighted-tree distance determinant formulas and principal-minor machinery are classical; the line-specific content is their placement after the Möbius full-interaction gate.
+**Evidence level:** exact/classical determinant and source-geometry synthesis from [MC-440](../../findings/MC-440-path-distance-determinant-buries-gap-order-two-degrees-down.md), [MC-441](../../findings/MC-441-first-order-sensitive-path-coefficient-is-adjacency-endpoint-scalar.md), [MC-442](../../findings/MC-442-distance-polynomial-coefficients-have-universal-sign-rigidity.md), and [MC-443](../../findings/MC-443-fixed-rank-prime-gap-shapes-are-projectively-dense.md). The weighted-tree determinant and principal-minor ingredients are classical; the line-specific content is their placement after the Möbius full-interaction gate and the prime-gap projective-density audit.
 
-The path-distance kernel is a genuine escape from the fixed-feature-rank collapse of MC-439. For ordered points with adjacent gaps `g_1,...,g_(r-1)`, let `D(g)` be the matrix `D_ij=|x_i-x_j|`. Its rank grows with `r`, and `det(D-I_r)` can distinguish non-reversal permutations of the same gap multiset.
+The path-distance kernel is a genuine escape from the fixed-feature-rank collapse of MC-439. For ordered points with adjacent positive gaps `g_1,...,g_(r-1)`, its determinant can distinguish non-reversal permutations of the same gap multiset. Common scaling nevertheless exposes two permutation-blind leading layers, and MC-441 shows that all order dependence in the first surviving coefficient factors through
 
-Common scaling nevertheless exposes two permutation-blind leading layers. With `g->Xg`, and
+`J(g)=1/g_1+1/g_(r-1)-(sum_i g_i)(sum_i 1/(g_i g_(i+1)))`.
 
-`S=sum_i g_i`, `P=prod_i g_i`, `Q=sum_i 1/g_i`,
+Thus the first ordinal signal is relative `O(X^(-2))` under common dilation and is compressed to endpoint plus nearest-neighbor reciprocal data. MC-442 strengthens the obstruction: every nonconstant coefficient of `det(XD-I)` has the same sign throughout the entire positive-gap domain, and `J(g)` itself is strictly negative. Lower determinant degrees may contain richer magnitudes, but no coefficient-sign layer can manufacture Möbius-like cancellation.
 
-MC-440 proves that the `X^r` and `X^(r-1)` coefficients depend only on the gap multiset. Different orders of one fixed gap shape first separate at degree `r-2`, hence at relative scale `O_g(X^(-2))` against the common `Theta_g(X^r)` determinant scale.
+MC-443 then changes how even those magnitudes may be interpreted at fixed rank. After normalizing by total gap span, selected-prime gap shapes are dense in the full positive simplex. Any continuous scale-invariant statistic of a fixed number of gaps therefore has the same image closure on prime-derived and generic positive shapes. In particular, normalized path-distance coefficient vectors and `S(g)J(g)` cannot separate rational-prime chains from positive-gap controls by a forbidden range or a positive topological margin.
 
-MC-441 identifies the full order dependence of that first surviving coefficient. Writing `h_i=1/g_i`, the permutation-sensitive part factors through the single scalar
+This does not make gap order useless; it identifies which kind of information is still untested. A prime-specific effect could live in the **distribution** of shapes rather than their support, in the source height needed to realize a shape, in absolute scale coupled to shape, in a growing-rank limit, or in a discontinuous/arithmetic invariant. Those are changed resources and must be priced directly.
 
-`J(g)=h_1+h_(r-1)-S sum_i h_i h_(i+1)`.
+The reusable lesson is that order sensitivity, sign variation and source separation are three different gates. A growing-rank determinant can preserve order while its signs are universal, and a continuous normalized magnitude can vary richly while rational-prime realizations remain topologically dense in the generic control space.
 
-All other terms in the `X^(r-2)` coefficient are symmetric in the gap multiset. Thus clearing the fixed-rank obstruction and reaching the first order-sensitive homogeneous layer still does not expose unrestricted global gap order: the initial ordinal carrier consists only of the two endpoint reciprocals and one nearest-neighbor reciprocal-product energy.
-
-The locality is exact. For an interior adjacent transposition with neighboring reciprocal gaps `a,b,c,d`, MC-441 gives
-
-`J_after-J_before=-S(c-b)(a-d)`.
-
-So the first ordinal layer can be blind to a swap for a purely four-gap local reason even while the full permutation is different. This is a factorization statement, not a cardinality theorem: a single real scalar can still take many distinct values.
-
-The surviving question is therefore quantitative and arithmetic. One must show that the actual prime-divisor gap family forces useful separation, rigidity or cancellation in `J(g)` at the `X^(-2)` relative layer, and that matched nonprime gap permutations do not reproduce the same behavior. Otherwise this first surviving determinant layer is only a local adjacency summary and the branch must descend to lower coefficients or change observable.
-
-**Boundary.** These are finite exact identities and common-scale fixed-shape asymptotics, not a theorem about the distribution of consecutive prime gaps. Reflection remains invisible. Lower determinant coefficients can contain longer-range information, and other growing-rank kernels can have different scale hierarchies. No source-capacity or Mertens cancellation estimate follows from the existence or factorization of `J(g)` alone.
+**Boundary.** Projective density is proved only at fixed rank and uses selected primes, not necessarily consecutive ambient primes. It is not equidistribution and gives no uniform source-height efficiency as rank grows. Scale-sensitive, distributional, discontinuous and growing-rank observables remain outside the no-go. No Möbius or zeta cancellation estimate follows from these representation facts alone.
