@@ -21,6 +21,7 @@ based_on:
   - research/visual_exploration/findings/VIS-350-confluent-turan-total-multiplicity.md
   - research/visual_exploration/findings/VIS-351-divided-difference-cluster-conditioning.md
   - research/visual_exploration/findings/VIS-352-hermite-collision-scale-budget.md
+  - research/visual_exploration/findings/VIS-353-separated-cluster-block-riesz-floor.md
 ---
 
 # Does Wang packet localization preserve source information without manufacturing strip gain?
@@ -76,17 +77,27 @@ Thus if `D_(q,X)/||c_X||_2=X^(o(1))`, a collision-only explanation of the requir
 
 Near-coalescence is therefore no longer an unpriced conditioning loophole: bounded confluent geometry can buy the missing power only through an explicitly polynomially microscopic translation scale. Hierarchical subcollisions must be separated into their own scales rather than hidden in one cluster constant.
 
+`VIS-353` removes the corresponding bounded **inter-cluster** loophole. For a fixed number of cluster-local divided-difference blocks with bounded total spectral span and uniform separation between distinct cluster spectra, the union has a uniform lower Riesz bound on a fixed interval:
+
+`||F||_2 >= kappa (sum_a ||u_a||_2^2)^(1/2)`.
+
+Combining this with the `VIS-352` local collision ledger gives
+
+`||F||_2 >= C (sum_a delta_a^(2(N_a-1)) ||c_a||_2^2)^(1/2)`.
+
+So a bounded separated family cannot obtain a second asymptotic power from cancellation between already-priced cluster subspaces. If inter-cluster separation collapses, the clusters must be merged into a new collision hierarchy; if count or total span grows, that growth is itself a new complexity resource.
+
 ## Research question
 
-Does `G` possess a genuinely scale-dependent, adaptive, signed, or arithmetic localization that survives these moment, phase-entropy, total-multiplicity, collision-scale, cluster-coordinate conditioning and derivative-repayment gates and produces a pointwise smaller Wang output without reconstructing the larger source scale through `Q'` or equivalent unsmoothed information?
+Does `G` possess a genuinely scale-dependent, adaptive, signed, or arithmetic localization that survives these moment, phase-entropy, total-multiplicity, collision-scale, block-Riesz, and derivative-repayment gates and produces a pointwise smaller Wang output without reconstructing the larger source scale through `Q'` or equivalent unsmoothed information?
 
-For a finite translated/dilated packet mechanism with frequency-independent coefficients, after grouping near-colliding phases and pricing every bounded cluster by the `VIS-352` Hermite collision scale, can the interaction among distinct cluster subspaces or the map from Wang source moments to the raw polynomial coefficient vector collapse strongly enough to meet the required local attenuation without paying the same gain through growing multiplicity, hierarchical microscopic clustering, inter-cluster packing, scale degeneration, or source-side strengthening? Alternatively, can frequency- or source-dependent coefficients, an infinite expansion, or direct signed structure of `G` produce a gain that is not equivalent to making a finite scalar multiplier unusually small?
+For a finite translated/dilated packet mechanism with frequency-independent coefficients, after pricing all bounded collision scales and quotienting all bounded separated cluster blocks by `VIS-353`, can the map from Wang source moments into the raw polynomial coefficient vectors collapse strongly enough to meet the required local attenuation without restating stronger source cancellation? Alternatively, can a genuinely growing/global geometry — increasing multiplicity or cluster count, collapsing inter-cluster scales, expanding spectral span/density, shrinking windows — or frequency/source-dependent coefficients, an infinite expansion, or direct signed structure of `G` supply a gain that is not equivalent to making a finite scalar multiplier unusually small?
 
 ## Why it may matter
 
-The fixed and slowly varying scalar-bank routes are now substantially classified. Neither bounded/subpolynomial scalar order, a small pure-dilation bank, fixed translations, phase-resolving moving windows, ordinary mildly shrinking windows, exact cancellation of several low tail moments, interaction among finitely many nonzero tail orders, failure of Turan propagation under phase coalescence, raw Vandermonde blow-up, nor an unpriced bounded cluster collision provides a free smoothing gain.
+The bounded finite-bank routes are now substantially classified. Neither bounded/subpolynomial scalar order, a small pure-dilation bank, fixed translations, phase-resolving moving windows, ordinary mildly shrinking windows, exact cancellation of several low tail moments, interaction among finitely many nonzero tail orders, failure of Turan propagation under phase coalescence, raw Vandermonde blow-up, an unpriced bounded collision, nor cancellation among a fixed bounded separated family of stable cluster blocks provides a free smoothing gain.
 
-For finite frequency-independent banks the remaining issue is now global rather than intra-cluster. A bounded cluster has stable divided-difference coordinates, and its possible coefficient-to-function loss is explicitly charged by `delta_X^(N-1)`. A useful construction must therefore exploit a genuinely singular source-to-polynomial-coefficient map, cancellation among several cluster subspaces, growing/hierarchical cluster complexity, or information absent from the finite scalar model.
+For finite frequency-independent banks the remaining bounded-dimensional issue is now mostly upstream of the block geometry: whether the exact Wang scale/translation moments map into an anomalously small polynomial coefficient vector relative to the source normalization. Global geometry becomes a distinct resource only when one of the compactness parameters genuinely escapes with `X`.
 
 ## Decisive test
 
@@ -109,24 +120,28 @@ Apply the exact `VIS-350` budget
 
 Partition phases into collision clusters at the scale relevant to `I_X`. Within every cluster of bounded multiplicity, choose its physical diameter `delta_X` and normalized shape. If the normalized centers remain uniformly separated, apply `VIS-352`: any claimed intra-cluster loss must appear in the explicit factor `delta_X^(N_cluster-1)` or in a small raw Wang polynomial coefficient vector. If the normalized shape itself degenerates, recurse on the finer subcluster scale rather than burying it in a condition number.
 
-After all intra-cluster collision powers are charged, quantify the map from the original Wang scale/translation moments to the raw polynomial coefficient vectors and the interaction among distinct cluster subspaces. A surviving finite-bank proposal must identify where the required power of `X` is paid. Legitimate possibilities now include growing total/cluster multiplicity, a shrinking measure ratio, a hierarchy of polynomially microscopic collision scales, inter-cluster density/cancellation, or a quantitatively singular source-to-coefficient map.
+After the local collision scales are priced, apply `VIS-353` whenever the number of blocks is fixed, their total spectral span is uniformly bounded, and distinct block spectra remain uniformly separated. In that regime, do not debit an additional power to inter-block cancellation: the global norm is bounded below by the quadrature norm of the stable local block coordinates. If cross-block separation collapses, merge the affected blocks and price the new collision scale; if block count or spectral span grows, record that growth explicitly as the candidate resource.
+
+What remains in the bounded regime is the exact map from Wang source/scale moments to the raw polynomial coefficient vectors. A surviving proposal must prove a genuine polynomial loss there without simply assuming a stronger bound for `G`, `theta`, or an equivalent source quantity.
 
 A construction satisfying this finite-dimensional budget is still not a positive source result. Propagate it through Wang's full destination: identify every occurrence of `Q`, `Q'`, or equivalent unsmoothed information and show that the final bound retains the smaller scale rather than reconstructing the source through the derivative channel.
 
 If coefficients depend on frequency or directly on `G`, or if the mechanism is infinite rather than finite-dimensional, state that dependence explicitly and prove the resulting estimate as a signed source statement rather than rebranding it as fixed-filter smoothing.
 
-Kill the route if it reduces to the already-classified scalar truncation order, violates the total-multiplicity/window budget, appears to win only through raw collision-coordinate blow-up, hides the needed power in an unrecorded microscopic collision hierarchy, restates a stronger theta/PNT remainder, or loses the gain in a destination derivative term.
+Kill the route if it reduces to the already-classified scalar truncation order, violates the total-multiplicity/window budget, appears to win only through raw collision-coordinate blow-up, hides the needed power in an unrecorded collision hierarchy or bounded separated-block cancellation, restates a stronger theta/PNT remainder, or loses the gain in a destination derivative term.
 
 ## Evidence boundary
 
-`VIS-333`--`VIS-352` are obstruction, representation, transfer, classicalization and conditioning results. They do not prove a new bound or nonstationarity theorem for `G`, an improvement of the Korobov--Vinogradov remainder, or a destination-level avoidance of derivative repayment.
+`VIS-333`--`VIS-353` are obstruction, representation, transfer, classicalization, conditioning, and finite-dimensional block-norming results. They do not prove a new bound or nonstationarity theorem for `G`, an improvement of the Korobov--Vinogradov remainder, or a destination-level avoidance of derivative repayment.
 
-`VIS-350` proves that measurable Turan--Nazarov propagation survives confluent phase collision with total multiplicity replacing ordinary term count. `VIS-351` supplies stable divided-difference coordinates for bounded collision multiplicity. `VIS-352` adds a uniform worst-case lower bound that charges a bounded cluster by `delta_X^(N-1)` relative to its raw polynomial coefficient scale. None of these gives a global lower frame bound for a growing hierarchy of clusters, controls cancellation among distinct cluster subspaces, or proves that the map from `G`/Wang moments into the polynomial coefficient vector is non-singular at the required scale.
+`VIS-350` proves measurable Turan--Nazarov propagation with total confluent multiplicity. `VIS-351` supplies stable divided-difference coordinates through bounded collisions. `VIS-352` charges each bounded cluster by its explicit Hermite collision scale relative to raw polynomial coefficients. `VIS-353` shows that a fixed separated family of such cluster blocks with bounded total spectral span has a uniform global Riesz floor, so bounded inter-cluster cancellation contributes no additional asymptotic power.
 
-The clue therefore remains `accepted`: the finite scalar packet hierarchy is narrower, but genuinely source-coupled localization, hierarchical/growing cluster structure, and inter-cluster cancellation remain unclassified.
+None of these proves that the exact map from `G`/Wang source moments into the raw polynomial coefficient vectors is non-singular at the required scale. They also do not cover growing cluster count/multiplicity, unbounded spectral span/density, collapsing inter-cluster separation, shrinking reference windows, source/frequency-dependent coefficients, infinite expansions, or direct arithmetic sign cancellation.
+
+The clue therefore remains `accepted`: the bounded finite-bank geometry is narrower again, while source-coupled coefficient loss and genuinely growing/global localization mechanisms remain unclassified.
 
 ## Research disposition
 
 Outcome: **narrowed**.
 
-Future finite-bank work should treat every bounded collision cluster as a priced Hermite finite-difference resource: record its total multiplicity and physical diameter, charge the factor `delta_X^(N-1)`, and recurse when the normalized shape has a finer subcollision. The remaining finite-dimensional question is then the source-to-polynomial-coefficient map and interaction between the resulting cluster subspaces. Qualitatively different branches remain source/frequency dependence, infinite representation, or direct signed arithmetic structure of `G`, followed by the unchanged downstream derivative audit.
+Future bounded finite-bank work should stop treating inter-cluster cancellation as an independent escape once local collision scales are priced and the blocks stay in a compact separated regime. The next bounded-dimensional target is the Wang source-moment-to-polynomial-coefficient map itself. Qualitatively different branches require an explicit escaping parameter — growing multiplicity/count/span/density, a new collision hierarchy or shrinking window — or source/frequency dependence, infinite representation, or direct signed arithmetic structure of `G`, followed by the unchanged downstream derivative audit.
