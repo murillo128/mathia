@@ -212,7 +212,7 @@ X^2\vartheta^{1+\alpha}
 \tag{19}
 \]
 
-which, at additive length `L=theta X`, has the same power shape
+which, at additive length `L=vartheta X`, has the same power shape
 
 \[
 XL(L/X)^\alpha
