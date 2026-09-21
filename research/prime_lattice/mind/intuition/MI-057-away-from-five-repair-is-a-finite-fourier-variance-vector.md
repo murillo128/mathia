@@ -1,23 +1,31 @@
-# MI-057 — Away-from-five repair is a finite Fourier variance vector
+# MI-057 — Away-from-five repair is one signed character-variance supertrace
 
-**Evidence level:** exact source/representation synthesis from [PL-414](../../findings/PL-414-away-from-5-residue-variance-projection.md), refining the actual-prime transfer boundary left by MI-056.
+**Evidence level:** exact source/representation synthesis from [PL-414](../../findings/PL-414-away-from-5-residue-variance-projection.md) and [PL-415](../../findings/PL-415-away-from-5-dirichlet-character-variance-supertrace.md), refining the actual-prime transfer boundary left by MI-056.
 
-The source-realized `p=5` de-aliasing does not create a new infinite-dimensional prime bridge. Its multiplier on pair lags is the fixed finite Fourier projector
+The source-realized `p=5` de-aliasing has two exact finite representations. PL-414 writes its lag multiplier as the additive Fourier projector
 
-`g_5(h)=76/75-(4/75) sum_{j=1}^4 e(jh/5)`.
+`g_5(h)=76/75-(4/75) sum_(j=1)^4 e(jh/5)`,
 
-Equivalently, multiplying the prime-pair correlation by `g_5` is, up to the explicit power-of-5 exceptional terms, a normalized average over the admissible residue classes modulo `5`. For the cubic source-replacement functional this gives an exact decomposition into five ordinary quadratic variance sectors at rational frequencies `j/5`, `j=0,...,4`.
+which yields five rational-frequency quadratic variance sectors. PL-415 diagonalizes the same local factor on the unit group modulo `5` in the multiplicative character basis. Up to the explicit power-of-5 exceptional terms, the repaired source-subtracted variance is the single signed superposition
 
-The quantitative consequence is sharp at the level already isolated by PL-407. If all five triangular source-subtracted remainders satisfy
+`Delta T_X^(5)(L) = Delta T_(X,chi_0)(L) - (1/15)Delta T_(X,chi_2)(L) - (2/15)Delta T_(X,chi_4)(L) + E_5(X,L)`,
 
-`|Delta T_{X,j}(L)| << X L (L/X)^mu (log X)^B`,
+where `chi_0` is principal, `chi_2` is quadratic, and `chi_4` represents the conjugate quartic pair. The exceptional term is polynomially negligible on the short-interval scales used by the cubic kernel.
 
-uniformly on the effective kernel support, then the away-from-five cubic error has the same power-saving curve as before: for `H=X^theta`, it is sufficient that
+This changes the intrinsic quantitative target. Separate power-saving bounds for all five additive sectors, or even for the three real character sectors, are sufficient but not necessary. What the source bridge actually needs is one bound on their fixed signed combination. Cancellation between the principal, quadratic and quartic channels is therefore a legitimate resource that componentwise triangle inequalities would erase.
+
+If the combined remainder obeys
+
+`|Delta T_(X,chi_0)(L) - (1/15)Delta T_(X,chi_2)(L) - (2/15)Delta T_(X,chi_4)(L)| << X L (L/X)^mu (log X)^B`
+
+uniformly on the effective kernel support, the PL-407 transfer is unchanged: for `H=X^theta`, it is sufficient that
 
 `mu > 3 theta / (4(1-theta))`.
 
-Thus the square-root calibration boundary `theta=2/5` is unchanged. The untwisted sector `j=0` alone is not enough; the repair replaces one scalar variance target by a five-component fixed-modulus vector without changing the exponent requirement.
+Thus the representation improves the target's structure without improving the required exponent by itself.
 
-This localizes the remaining actual-prime problem much more tightly. Model-side Euler continuation and the provenance of the `p=5` deletion are no longer the missing steps. What remains is a power-small signed estimate for a finite family of mod-5 twisted short-interval prime variances. Fixed-modulus periodicity itself is not the obstruction; the required power precision is.
+The character basis also exposes a guardrail. The nonprincipal sectors are genuine primitive Dirichlet-`L` short-interval variance channels. Standard zero-pair routes to strong individual estimates are commonly formulated under GRH for those auxiliary `L(s,chi)`, which would import information stronger than RH for zeta alone. The safe route is therefore to analyze the fixed signed supertrace directly, or to derive an explicit-formula cancellation specific to that combination, rather than assume independent critical-line control for each sector.
 
-**Boundary.** PL-414 supplies exact residue/Fourier identities and a conditional transfer of the PL-407 threshold, not the needed variance estimate. Existing fixed-modulus almost-all correlation technology does not by itself provide the stated power-saving signed remainder at this scale, so this intuition must not be read as an actual-prime bridge theorem.
+The reusable lesson is that finite coordinate count is not the intrinsic complexity of a linear source repair. After exact diagonalization, the destination may depend on a lower-dimensional signed combination, and estimating components independently can destroy the only cancellation the source actually preserves.
+
+**Boundary.** PL-414--PL-415 are exact representation and source-bridge identities, not the missing power-saving theorem. The character transform alone does not improve the cubic source-replacement error, and no cancellation of Dirichlet-`L` zeros is established on the spectral side. The principal character also includes the deleted `p=5` Euler factor, and the power-of-5 terms remain an explicit controlled remainder rather than disappearing identically.

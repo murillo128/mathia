@@ -12,13 +12,17 @@ FD-256 proves that this sublinear hypothesis is sharp in order on the signed res
 
 The remaining signed exact-omission question is quantitative rather than qualitative. In the regime `K/H->0`, FD-255 and FD-256 leave only the slowly varying gap between the constructive `KH` scale and the upper bound `KH log(e+log(H/K))`; closing that factor would sharpen the extremal norm but cannot reopen the already-settled macroscopic density threshold.
 
-The physical source boundary is stricter because FD-256 is intrinsically signed. FD-257 gives the first quantitative positive-side rate at the bounded switched-response scale. If `0<=b_d<=Cd` and the scheduled switched rows stay uniformly bounded, the relative mass on the dyadic band `[x,2x)` satisfies
+The physical source boundary is stricter because FD-256 is intrinsically signed. FD-257 gives the general positive-side rate at bounded switched-response scale: if `0<=b_d<=Cd` and the scheduled switched rows stay uniformly bounded, the relative mass on a dyadic band of scale `x` is `O((C+B)x^(-beta))`, `beta=log_2(24/23)>0`.
 
-`relative capacity << (C+B)x^(-beta)`, `beta=log_2(24/23)>0`.
+FD-259 shows that a natural subclass is much more rigid. If the Möbius increments `g=mu*b` are also nonnegative, equivalently the divisor response is monotone, the neighboring order-one and order-four stencils force every dyadic response increment to be `O(B)`. Then
 
-So a nonnegative cushion cannot keep even a slowly vanishing fraction such as `1/log x` of every deep band's linear capacity while remaining switched-invisible. The theorem is causal and survives finite growing blocks, but it does not yet rule out the canonical Mertens repair: that still requires a matching lower bound showing that the concrete repair needs more than this polynomially depleted slack on some deep bands.
+`sum_(n<=x)b_n = O((C+B)x)`
 
-FD-258 adds an independent source-side ceiling that appears before those deep bands if the same exact reservoir geometry is pushed to polynomial depth. The first switched row satisfies
+and the relative dyadic capacity is `O((C+B)/x)`. This inverse-linear aggregate rate is sharp in the monotone-response cone. In the FD-226 normalization it leaves only `O(L_N x)` cushion mass in a band with available capacity `asymp L_N x^2`; a power-sized use of the growing cell capacity therefore requires sign changes in `mu*b`.
+
+The theorem does not show that every physical nonnegative cushion has monotone divisor response. The live subpolynomial-depth source question is now more specific: determine whether the actual Mertens repair can or must leave the `mu*b>=0` cone, and in the genuinely signed-increment case quantify the minimum nonnegative slack it consumes against the weaker FD-257 depletion ceiling.
+
+FD-258 adds an independent source-side ceiling if the same exact reservoir geometry is pushed to polynomial depth. The first switched row satisfies
 
 `X_N(2N)-X_N(N)=M(2N)-M(N)+2(a_2-a_1)`,
 
@@ -26,12 +30,10 @@ while the first two physical cells provide only `O(N/D)` possible flips. Since `
 
 `liminf log D_N/log N <= 1-Theta <= 1/2`.
 
-This does not touch the present `D=N^{o(1)}` Vinogradov--Korobov regime. It does say that later-row conditioning, rounding or positive-capacity improvements cannot extend this same architecture uniformly past the zero-frontier depth ceiling; a route seeking a larger polynomial exponent must change which source variables can affect the first two samples or change the reservoir geometry itself.
-
-The live Farey source question therefore has two scales. At the currently certified subpolynomial depth, determine the minimum nonnegative slack required by the actual Mertens correction and compare it against the FD-257 polynomial capacity depletion. For any future polynomial-depth extension of the same exact cells, treat `1-Theta` as an independent first-row ceiling rather than expecting a better late-band argument to remove it.
+This does not touch the present `D=N^{o(1)}` Vinogradov--Korobov regime. It says that later-row conditioning, rounding or positive-capacity improvements cannot extend this same architecture uniformly past the zero-frontier depth ceiling; a route seeking a larger polynomial exponent must change which source variables can affect the first two samples or change the reservoir geometry itself.
 
 ## Separate support conditioning, paired reachability, global extension and source admissibility
 
 The exact hierarchy has four layers. `kappa(D)` prices free active coordinates; the omission map restricts them to paired/telescoping amplitudes; the global identities `g=mu*b` and `b=1*g` require those amplitudes to extend through every divisor row under the coefficient envelope; and only then does physical source admissibility impose positivity, capacity and arithmetic realization.
 
-FD-255 shows that the third layer removes all sublinear macroscopic signed extremizers. FD-256 shows that globally extendable signed directions return at linear omission density by a trivial top-half antichain, so large restricted inverse norms are not needed to locate the density transition. FD-257 and FD-258 then split the fourth layer into two distinct mechanisms: bounded switched response depletes nonnegative capacity across deep dyadic bands, while the first row of the exact selected-prime reservoir already ties polynomial depth to the dyadic Mertens zero frontier. Future arguments must state which layer and which source-side mechanism supplies the obstruction instead of transferring a signed reachability example or a late-band capacity estimate into a regime it does not control.
+FD-255 shows that the third layer removes all sublinear macroscopic signed extremizers. FD-256 shows that globally extendable signed directions return at linear omission density by a trivial top-half antichain, so large restricted inverse norms are not needed to locate the density transition. FD-257 and FD-259 then split the fourth layer more finely: nonnegative coefficients plus bounded switched response force power depletion in general, while monotonicity of the divisor response upgrades that loss to the sharp inverse-linear aggregate rate. FD-258 supplies the separate first-row polynomial-depth ceiling. Future arguments must state which sign information is available for `b` and `mu*b`, which source-side mechanism supplies the obstruction, and which regime it actually controls.
