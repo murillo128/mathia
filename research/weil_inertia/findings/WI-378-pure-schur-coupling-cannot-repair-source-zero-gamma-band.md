@@ -139,7 +139,7 @@ At depth zero one retains the rank consequence
 \tag{12}
 \]
 
-under the same positivity premise. These are the same spectral tariffs that WI-377 placed on a generic additive repair, but now the budget is **partitioned**: an off-diagonal source Schur channel cannot be counted toward them. The entire tariff must be carried by a term that acts directly on the old source-zero sector before elimination (or by an exact domain constraint that removes that sector).
+under the same positivity premise. Equation (12) is obtained from (11), not from the semidefinite `\eta=0` inequality alone: for every fixed `\eta>0`, `\operatorname{rank}_+(P_k)\ge N^{\ge}_{P_k}(\eta)`, and then `\eta\downarrow0` gives `q_\eta\to q_0`. These are the same spectral tariffs that WI-377 placed on a generic additive repair, but now the budget is **partitioned**: an off-diagonal source Schur channel cannot be counted toward them. The entire tariff must be carried by a term that acts directly on the old source-zero sector before elimination (or by an exact domain constraint that removes that sector).
 
 For the common situation in which one only wants positivity of the short rather than of the full block, (9) yields the identical conclusion. A stronger positive source pivot cannot help: it only shrinks the magnitude of the negative Schur debit away from `Z_k`, while the debit remains identically zero on `Z_k`.
 
