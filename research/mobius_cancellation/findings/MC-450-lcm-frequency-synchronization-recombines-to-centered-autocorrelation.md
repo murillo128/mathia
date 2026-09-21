@@ -109,7 +109,7 @@ and `(10)` is the residue-class aggregation of
 \tag{12}
 \]
 
-Because `g_h` has mean zero, its complete conductor blocks vanish automatically; `(12)` is exactly the centered source-sensitive component isolated by `MC-449`, with the universal zero mode separated. Hence synchronizing the lcm slices by `t=mL` and then fully recombining them returns to the original centered additive-differenced correlation. It does not manufacture an extra cross-lcm source coordinate.
+In the divisor-pair coordinates, complete `p`-blocks of `g_{a_L}` vanish before the pieces are recombined. Equation `(12)` is the exact recombined form of that centered source-sensitive component, with the universal zero mode separated as in `MC-449`. Hence synchronizing the lcm slices by `t=mL` and then fully recombining them returns to the original centered additive-differenced correlation. It does not manufacture an extra cross-lcm source coordinate.
 
 Moreover, generic Cauchy after this synchronization is **exactly the generic physical-space Cauchy bound**. Since
 
@@ -236,7 +236,7 @@ w(n+h)w(n)
 \tag{24}
 \]
 
-and grouping by the corresponding CRT `(L,r)` gives exactly the coefficients in `(5)`. Thus full recombination yields `(11)`--`(12)`. The centered form is especially clean: every complete `p`-block of `g_h` has zero sum, so the complete/incomplete separation of `MC-413` and the centering of `MC-449` are already encoded in `(12)` without introducing a new lcm variable.
+and grouping by the corresponding CRT `(L,r)` gives exactly the coefficients in `(5)`. Thus full recombination yields `(11)`--`(12)`. For each divisor-pair progression, every complete `p`-block of `g_{a_L}` has zero sum before the pieces are recombined. Equation `(12)` therefore packages the same centered complete/incomplete separation without turning it into a new lcm variable.
 
 ## 3. Generic dual-space Cauchy cannot improve the recombined form
 
