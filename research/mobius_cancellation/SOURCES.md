@@ -323,3 +323,15 @@ Role: primary finite-geometric prior-art anchor for `MC-315`. The paper defines 
 Maxie Dion Schmidt, *Picking up the partial sums of the Möbius function problem with probabilistic number theory*, arXiv:2604.23517 (submitted 26 April 2026). https://arxiv.org/abs/2604.23517.
 
 Role: primary manuscript source for `MC-318`. The audit uses Assertion 1.10 (IH-A), which asserts independence between squarefreeness and `Omega(n)=k`, and Theorem 2.2 equations (8a)–(8b), which define `Q_{1,n}(x)=sum_{j<=x} lambda(nj) mu^2(j)` and assign it an `n`-independent leading asymptotic. `MC-318` checks these displayed statements against the exact `Omega=1` stratum and the pointwise identity `lambda(j)mu^2(j)=mu(j)`; no secondary summary is used as theorem evidence.
+
+## MC-S55 — Cochrane and Pinner, Weil bounds for mixed rational character sums
+
+Todd Cochrane and Christopher Pinner, *Using Stepanov's method for exponential sums involving rational functions*, Journal of Number Theory 116 (2006), no. 2, 270–292. DOI: https://doi.org/10.1016/j.jnt.2005.04.001.
+
+Role: primary classical anchor for the Fourier multiplier estimate in `MC-448`. The paper proves the corresponding Weil bound for complete finite-field sums combining a multiplicative character of a rational function with a nontrivial additive character. `MC-448` applies only the bounded-complexity specialization with multiplicative phase `(x+a)/x` and linear additive phase; no novelty is claimed for the square-root complete-sum estimate.
+
+## MC-S56 — Mérai, Shparlinski and Winterhof, character sums over sparse finite-field sets
+
+László Mérai, Igor E. Shparlinski and Arne Winterhof, *Character sums over sparse elements of finite fields*, Bulletin of the London Mathematical Society 56 (2024), no. 4, 1488–1510. DOI: https://doi.org/10.1112/blms.13008. arXiv: https://arxiv.org/abs/2211.08452.
+
+Role: adjacent sparse-set prior-art boundary for `MC-448`. The paper obtains mixed character-sum estimates on subsets defined by sparse coordinate representations in finite-field extensions. Its sparse-set geometry is different from the CRT-idempotent start sets arising in `MC-447`; it is therefore comparison literature rather than a theorem transfer to the Mathia source frame.
