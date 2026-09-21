@@ -247,9 +247,7 @@ The operator setting is classical transfer/QMF theory. Bratteli, Evans and Jorge
 Xianghong Chen and Hans Volkmer, **On transfer operators on the circle with trigonometric weights**, *Journal of Fractal Geometry* 5 (2018), 351--386, DOI `10.4171/JFG/64`, study the same circle endomorphism transfer form
 
 \[
-(Lu)(t)=\frac1d\sum_{i=0}^{d-1}
-f\!\left(\frac{t+i}{d}\right)
-u\!\left(\frac{t+i}{d}\right)
+(Lu)(t)=\frac1d\sum_{i=0}^{d-1} f\!\left(\frac{t+i}{d}\right)\,u\!\left(\frac{t+i}{d}\right)
 \]
 
 for trigonometric weights including powers of sine and cosine. Thus weighted root-fiber transfer on the circle is established classical territory, including weights geometrically equivalent to chord profiles.
