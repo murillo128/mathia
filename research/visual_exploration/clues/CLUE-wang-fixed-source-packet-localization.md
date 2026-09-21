@@ -23,6 +23,7 @@ based_on:
   - research/visual_exploration/findings/VIS-352-hermite-collision-scale-budget.md
   - research/visual_exploration/findings/VIS-353-separated-cluster-block-riesz-floor.md
   - research/visual_exploration/findings/VIS-354-wang-tail-coefficient-block-vandermonde.md
+  - research/visual_exploration/findings/VIS-355-source-adaptive-compact-bank-floor.md
 ---
 
 # Does Wang packet localization preserve source information without manufacturing strip gain?
@@ -33,50 +34,54 @@ The source side has already collapsed to the normalized Chebyshev-theta remainde
 
 `G(u)=e^(-u)theta(e^u)-1`.
 
-`VIS-333`--`VIS-340` show that Wang's prime and square-log summatory channels are exact transforms of the same source and that pointwise inversion repays one derivative. The subsequent chain `VIS-341`--`VIS-353` prices the bounded source-independent finite-bank geometry: fixed smoothing order, dilation count, translation fibers, moving/shrinking windows, phase entropy, higher tail moments, confluent propagation, phase collisions, and cancellation among a fixed separated family of stable cluster blocks.
+`VIS-333`--`VIS-340` show that Wang's prime and square-log summatory channels are exact transforms of the same source and that pointwise inversion repays one derivative. `VIS-341`--`VIS-353` price the bounded finite-bank geometry: fixed smoothing order, dilation count, translation fibers, moving/shrinking windows, phase entropy, higher tail moments, confluent propagation, phase collisions, and cancellation among a fixed separated family of stable cluster blocks.
 
-`VIS-354` closes the remaining bounded coefficient-conditioning ambiguity. For fixed asymptotic depth `q`, the raw polynomial coefficients in each translation fiber are exactly
+`VIS-354` identifies the upstream coefficient map itself: for fixed asymptotic depth `q`, each translation fiber has the source-free truncated Vandermonde map
 
-`d_b=D_beta V_b c_b`,
+`d_b=D_beta V_b c_b`.
 
-where `(V_b)_(k,j)=a_j^(-k)` is an ordinary truncated Vandermonde moment matrix. Across translations the map is block diagonal. The arithmetic source does not enter it.
+`VIS-355` now closes the weakest source-adaptive escape. On any fixed compact nondegenerate family of such scale geometries, the smallest nonzero singular value is uniformly positive, so
 
-If a fiber has at most `q` distinct scales in a fixed compact separated inverse-scale geometry, this map has a uniform lower singular value. If it has more than `q` scales, its kernel is exactly the familiar first-`q` moment-cancellation space from `VIS-343`/`VIS-344`; near-kernel smallness is approximate filter-design cancellation, not source localization. Any genuine source-to-coefficient map therefore begins only when the bank parameters or selection rule depend on `G` or equivalent arithmetic information.
+`||T_theta c||_2 >= sigma dist(c,ker T_theta)`
+
+uniformly. This inequality remains true pointwise when `theta` and `c` are chosen from `G`. Thus **adaptive selection from an already-uniformly-conditioned bounded family is not a new arithmetic cancellation resource**. Small tail coefficients still mean approach to the classical moment kernel or departure from the compact assumptions.
 
 ## Research question
 
-After quotienting all bounded source-independent finite-bank mechanisms, can a genuinely **source-coupled or growing/global** construction produce a smaller Wang destination without merely importing a stronger estimate for `G`, `theta`, or an equivalent unsmoothed source quantity?
+After quotienting bounded source-independent banks **and bounded source-adaptive selection inside the same compact ledger**, can a genuinely source-coupled or growing/global construction produce a smaller Wang destination without merely importing a stronger estimate for `G`, `theta`, or an equivalent unsmoothed source quantity?
 
-The remaining live mechanisms must expose at least one real resource outside the closed compact regime: growing scale count or tail depth, inverse-scale geometry escaping compactness, growing cluster count/multiplicity/span/density, collapsing inter-cluster hierarchy, shrinking windows, frequency/source-dependent coefficients, an infinite representation, or direct signed arithmetic structure of `G`.
+The remaining live mechanisms must expose a real resource outside that regime: growing scale count or tail depth, inverse-scale geometry escaping compactness, growing cluster count/multiplicity/span/density, collapsing inter-cluster hierarchy, shrinking windows, an infinite representation, nonlinear source dependence, or direct signed arithmetic structure of `G`.
 
 ## Why it may matter
 
-The finite-bank story is now conceptually cleaner. There is no hidden arithmetic conditioning left between source-independent bank weights and the confluent Wang tail: the upstream coefficient map is classical block-Vandermonde linear algebra, while the downstream phase geometry has explicit collision and Riesz budgets.
+The finite-bank story now separates filter selection from arithmetic information. A source may choose among bounded filters, but a uniform quotient lower bound survives that choice. Therefore a positive result must identify where genuinely new information or asymptotic complexity enters rather than attributing the gain to the word “adaptive.”
 
-A positive result must therefore identify where new information enters. That makes source-adaptive proposals testable rather than allowing them to borrow unexplained smallness from filter coordinates, and it separates honest growing-complexity mechanisms from bounded-dimensional representation artifacts.
+This makes the next source-coupled proposal easier to falsify: either it quantifies an escaping geometric/complexity parameter or it proves a new signed statement about the arithmetic source. If it does neither, it remains inside the already-closed compact filter geometry.
 
 ## Decisive test
 
-For any proposed continuation, first state explicitly which closed assumption is being abandoned.
+For any proposed continuation, first state exactly which closed assumption is being abandoned.
 
-If bank parameters are still source-independent, record the growth/degeneration parameter quantitatively: scale count/depth, inverse-scale range or collision, phase-cluster count/multiplicity/span/density, inter-cluster separation, or window length. Reduce the resulting filter geometry through `VIS-343`--`VIS-354` before crediting any new power gain.
+If a source-dependent selector keeps fixed dimension, bounded separated inverse scales, bounded phase geometry, and a fixed reference window, apply `VIS-355` before crediting any gain. Measure coefficients modulo the exact moment-cancellation kernel. A selector that merely moves closer to that kernel is filter design, not new source localization.
 
-If coefficients, scales, translations, or selection rules depend on `G`, `theta`, signs, or another arithmetic statistic, write that dependence explicitly and formulate the claimed gain directly as a signed/source estimate. Show that the information used to choose the bank is not equivalent to assuming the desired stronger source bound, and then propagate the estimate through Wang's full destination, including every `Q'` or equivalent inverse-derivative repayment.
+If geometry escapes the compact regime, record the escape quantitatively: scale count/depth, inverse-scale range or collision, phase-cluster count/multiplicity/span/density, inter-cluster separation, or window length. Reduce the resulting filter geometry through `VIS-343`--`VIS-355` before crediting a new power gain.
 
-For an infinite representation, specify the convergence topology, coefficient norm, truncation control, and the finite approximants that preserve the claimed gain. A formal infinite superposition is not evidence unless the gain survives approximation and destination reconstruction.
+If coefficients, scales, translations, or selection rules use signed information from `G`, `theta`, or another arithmetic statistic in a way not reducible to compact filter selection, formulate the claimed gain directly as an arithmetic/source estimate. Show that the information used to choose the bank is not equivalent to assuming the desired stronger source bound, and propagate the estimate through Wang's full destination, including every `Q'` or equivalent inverse-derivative repayment.
 
-Kill a route if its improvement disappears after the explicit growth parameter is charged, if its small coefficients reduce to source-free moment cancellation, if source-adaptive weights merely encode the target source estimate, or if the gain is lost in the derivative/destination step.
+For an infinite representation, specify the convergence topology, coefficient norm, truncation control, and finite approximants that preserve the claimed gain.
+
+Kill a route if its improvement disappears after the explicit growth/degeneration parameter is charged, if adaptive weights merely approach the known moment kernel, if source-dependent weights encode the target source estimate, or if the gain is lost in the destination derivative step.
 
 ## Evidence boundary
 
-`VIS-333`--`VIS-354` are exact representation, obstruction, conditioning, and finite-dimensional negative-control results. They do not prove a stronger PNT remainder, a new pointwise estimate for `G`, an RH-equivalent localization theorem, or a destination-level improvement.
+`VIS-333`--`VIS-355` are exact representation, obstruction, conditioning, compactness, and finite-dimensional negative-control results. They do not prove a stronger PNT remainder, a new pointwise estimate for `G`, an RH-equivalent localization theorem, or a destination-level improvement.
 
-In particular, `VIS-354` does not rule out source-dependent/adaptive coefficients or growing/infinite constructions. It establishes only that **under the bounded source-independent finite-bank assumptions there is no separate source-to-polynomial-coefficient channel to exploit**.
+`VIS-355` does not rule out source-dependent banks that **leave** the compact bounded family, nonlinear operations on `G`, infinite constructions, or direct signed cancellation. It establishes only that source-adaptive selection *within* a uniformly conditioned bounded family obeys the same quotient floor as source-independent selection.
 
-The clue therefore remains `accepted`, but its unresolved frontier has moved entirely outside that compact finite-bank regime.
+The clue therefore remains `accepted`, but its unresolved frontier is now restricted to an explicit escaping resource or genuinely new arithmetic source information.
 
 ## Research disposition
 
 Outcome: **narrowed**.
 
-Treat bounded source-independent coefficient conditioning as closed. Future work should either quantify an explicit escaping geometric/complexity parameter or formulate a genuinely source-dependent/infinite/signed mechanism and test whether its information survives the unchanged Wang destination audit.
+Treat bounded source-independent coefficient conditioning and bounded source-adaptive selection as closed. Future work should quantify the first resource that genuinely leaves the compact ledger, or formulate a new signed/infinite source mechanism and test whether its information survives the unchanged Wang destination audit.
