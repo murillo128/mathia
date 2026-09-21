@@ -1,27 +1,23 @@
 # MI-043 — Approximate density-one sampling has a defect-plus-residual coercivity ledger
 
-**Evidence level:** supported by [FD-242](../../findings/FD-242-density-one-approximate-sampling-is-stable-under-weighted-response-residual.md) and its proved sharpening [FD-243](../../findings/FD-243-sparse-omission-defect-improves-from-square-root-to-entropy-scale.md). This concerns unrestricted signed profiles under `|b_n|<=Cn`; it does not transfer to physical nonnegative/source-coherent profiles without a separate theorem.
+**Evidence level:** supported by [FD-242](../../findings/FD-242-density-one-approximate-sampling-is-stable-under-weighted-response-residual.md), with the omission side sharpened by [FD-243](../../findings/FD-243-sparse-omission-defect-improves-from-square-root-to-entropy-scale.md) and [FD-244](../../findings/FD-244-sparse-reciprocal-divisor-mass-has-sharp-double-logarithmic-density-scale.md). This concerns unrestricted signed profiles under `|b_n|<=Cn`; it does not transfer to physical nonnegative/source-coherent profiles without a separate theorem.
 
 Let `Y(m)` be the divisor response, `S` the sampled locations, `R(N)=|[1,N]\S|`, and define
 
 `V_S(N)=sum_(m<=N, m,m-1 sampled) |Y(m)-Y(m-1)|/m`.
 
-With `S_0=S union {0}`, put
+With `S_0=S union {0}`, put `T_N={m<=N: m notin S or m-1 notin S_0}` and `rho_N=|T_N|/N`. FD-244 proves the sharp sparse-weight scale
 
-`T_N={m<=N: m notin S or m-1 notin S_0}`, `rho_N=|T_N|/N`.
+`sum_(m in A) sigma_-1(m) << N delta log(e+log(1/delta))`, `delta=|A|/N`,
 
-FD-243 sharpens the defect side of the FD-242 ledger to
+and matching lower bounds up to constants along primorial densities. Transferred through the exact inversion ledger, this gives
 
-`sum_(N/2<n<=N)|b_n| / sum_(N/2<n<=N)n << C rho_N log(e/rho_N) + V_S(N)/N`,
+`sum_(N/2<n<=N)|b_n| / sum_(N/2<n<=N)n << C rho_N log(e+log(1/rho_N)) + V_S(N)/N`,
 
-with the defect term interpreted as zero when `rho_N=0`. Since `|T_N|<=2R(N)`, the same bound holds with `eta_N=min(1,2R(N)/N)` in place of `rho_N`. Also `V_S(N)<=2Q_S(N)` for `Q_S(N)=sum_(m<=N,m in S)|Y(m)|/m`, so the sampled-amplitude version keeps the identical entropy-scale omission term.
+with the defect term zero when `rho_N=0`. Since `|T_N|<=2R(N)`, the same form holds with `eta_N=min(1,2R(N)/N)`, and `V_S(N)<=2Q_S(N)` gives the corresponding sampled-amplitude version.
 
-The mechanism is the stable form of exact support localization. Möbius inversion gives `g(m)=Y(m)-Y(m-1)`. On sampled runs this increment is measured exactly by `V_S`; on `T_N`, the coefficient envelope gives `|g(m)|<=Cm sigma_-1(m)`. FD-243 replaces the old Cauchy--Schwarz estimate by an adaptive high-moment bound
+The mechanism is stable support localization. Möbius inversion gives `g(m)=Y(m)-Y(m-1)`. On sampled runs this increment is measured by `V_S`; on the defect set the coefficient envelope bounds it by `Cm sigma_-1(m)`. The square-root and entropy defects of FD-242--FD-243 were moment-method losses: the true arbitrary sparse reciprocal-divisor mass grows only on the `delta log log(1/delta)` scale, up to the regularization above.
 
-`sum_(m in A) sigma_-1(m) << N delta log(e/delta)`, `delta=|A|/N`,
+This sharp sparse-set norm is still not automatically the sharp **sampling** defect, because exact missing response values generate paired adjacent-difference columns rather than arbitrary sparse increments. FD-245 proves that distinction is decisive for a bounded number of exact omissions; that finite-defect geometry is recorded separately in MI-044.
 
-obtained from moments of `n/phi(n)` and Hölder with moment order `q` matched to the sparsity. The previous square-root defect was therefore a `q=2` loss, not the structural density-one scale.
-
-The residual side does not improve in this step. Existing signed blind profiles can still have macroscopic capacity with response of linear order, so sublinear weighted sampled residual remains the robust coercive regime for the relaxed signed class. For exact sampled zeros and `R(N)=O(N^alpha)`, the new defect bound gives octave mass `O_C(N^(1+alpha) log N)`, rather than the previous square-root interpolation.
-
-**Boundary.** The entropy factor is not claimed optimal; the next defect-side quantity is the sharp sparse-subset norm of `sigma_-1`. The coefficient envelope is load-bearing, and no positivity, finite-reservoir constraint or Euler/source coherence is used. Crossing the linear weighted-residual barrier still requires additional source structure rather than a further sharpening of omission density alone.
+**Boundary.** The weighted-residual term is unchanged, the coefficient envelope is load-bearing, and no positivity, finite-reservoir constraint or Euler/source coherence is used. Crossing the linear residual barrier remains a source-structure problem. For growing exact omission sets, the sharp interpolation between the arbitrary sparse `delta log log(1/delta)` bound and the finite triangular geometry is not supplied by FD-244 alone.

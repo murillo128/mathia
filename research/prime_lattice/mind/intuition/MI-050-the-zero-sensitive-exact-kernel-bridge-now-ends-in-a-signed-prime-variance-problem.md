@@ -1,0 +1,13 @@
+# MI-050 — The zero-sensitive exact-kernel bridge now ends in a signed prime-variance problem
+
+**Evidence level:** exact/literature-based synthesis from [PL-404](../../findings/PL-404-vanishing-abel-weight-exact-kernel-transfer.md), [PL-405](../../findings/PL-405-critical-ramanujan-source-endpoint.md), and [PL-406](../../findings/PL-406-cubic-source-prime-variance-sector.md), refining the model-level RH equivalence PL-403. The Ramanujan, short-interval variance and zero-pair ingredients are classical; the line-specific content is the exact sequence of reductions at the cubic continuation scale.
+
+PL-404 closes the first transfer obstruction left by MI-049. Multiplying the exact incomplete-gamma pair channel by the quadratic vanishing factor `(d/H)^2` and retaining the first lower-transition tail gives an exact-kernel statistic whose error against the shifted Abel singular-series average is `O_eta(H^-2 (log H)^3)`, safely below the `H^(-7/4+epsilon)` zeta-zero layer. The shifted weight keeps nonzero Mellin response at every nontrivial-zero pole, so the RH-equivalent remainder survives this transfer.
+
+The remaining source bridge is not an ordinary finite-energy covariance theorem. PL-405 identifies the Hardy--Littlewood pair singular series as the off-diagonal critical limit of the Ramanujan covariance of the modified Mangoldt function `Lambda_1=(phi(n)/n)Lambda(n)`, while its diagonal `B^2` energy diverges logarithmically. PL-406 then shows that the actual cubic test annihilates that diagonal exactly because its even kernel has a fourth-order zero at the origin.
+
+After that projection, the weighted source functional has exact additive-Fourier and triangular short-interval second-moment representations. The unresolved replacement of the singular-series model by prime data therefore lies in the **signed prime short-interval variance / zeta zero-pair sector**. Generic almost-all-shift Hardy--Littlewood error bounds with fixed logarithmic savings are far too coarse to preserve an `H^-7/4` signal when `H` is polynomial in the ambient scale; any gain has to use the special sign-changing cubic kernel or stronger pair-correlation information.
+
+The durable route correction is that the continuation kernel itself is no longer the bottleneck. The live theorem is a quantitative source-transfer statement for one specific signed quadratic prime-variance functional at the zero-sensitive scale.
+
+**Boundary.** PL-404 still inserts the classical singular series, and PL-406 does not prove the required prime variance estimate. One fixed cubic test is not equivalent to full strong pair correlation. The result redirects the remaining bridge; it does not supply it or produce a new unconditional RH criterion.
