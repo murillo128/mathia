@@ -32,6 +32,8 @@ based_on:
   - research/visual_exploration/findings/VIS-361-weighted-pooled-moment-gram-floor.md
   - research/visual_exploration/findings/VIS-362-one-inner-scale-weighted-support-exponent.md
   - research/visual_exploration/findings/VIS-363-polynomial-mass-decay-hermite-order-statistic.md
+  - research/visual_exploration/findings/VIS-364-nested-vandermonde-chain-cumulative-scale-spectrum.md
+  - research/visual_exploration/findings/VIS-365-finite-weighted-vandermonde-subset-energy-spectrum.md
 ---
 
 # Does Wang packet localization preserve source information without manufacturing strip gain?
@@ -42,126 +44,72 @@ The source side has already collapsed to the normalized Chebyshev-theta remainde
 
 `G(u)=e^(-u)theta(e^u)-1`.
 
-`VIS-333`--`VIS-340` show that Wang's prime and square-log summatory channels are exact transforms of the same source and that pointwise inversion repays one derivative. `VIS-341`--`VIS-353` price the bounded finite-bank geometry: fixed smoothing order, dilation count, translation fibers, moving/shrinking windows, phase entropy, higher tail moments, confluent propagation, phase collisions, and cancellation among a fixed separated family of stable cluster blocks.
+`VIS-333`--`VIS-340` show that Wang's prime and square-log summatory channels are exact transforms of the same source and that pointwise inversion repays one derivative. `VIS-341`--`VIS-353` price fixed smoothing/order, finite dilation and translation geometry, moving windows, phase entropy, confluent propagation, phase collisions, and separated finite cluster blocks. `VIS-354` identifies the upstream fixed-depth coefficient map as a source-free truncated Vandermonde map; `VIS-355`--`VIS-361` then close bounded source-adaptive selection, anchored scale-count growth, compact packing collapse, regular one- and multi-cluster occupancy, pooled center collisions, and arbitrary positive diagonal coefficient weights whenever the corresponding normalized moment Gram remains healthy.
 
-`VIS-354` identifies the upstream coefficient map itself: for fixed asymptotic depth `q`, each translation fiber has the source-free truncated Vandermonde map
+`VIS-362` and `VIS-363` price the first weighted degenerations. A one-level outer rank collapse with one healthy inner scale pays the appropriate Hermite depth, while polynomially vanishing positive support masses simply add weight valuations to the Hermite jet costs.
 
-`d_b=D_beta V_b c_b`.
+`VIS-364` removes the next apparent escape: a strictly nested finite chain of polynomial scales has a complete cumulative Newton spectrum. Merely inserting deeper positive separations does not create an unpriced resource.
 
-`VIS-355` closes bounded source-adaptive selection inside a compact nondegenerate family. `VIS-356` shows that raw scale-count growth cannot lower the quotient floor while one uniformly conditioned `q`-column anchor survives. `VIS-357` classifies the complementary loss of every compact square anchor as shrinking `q`-point packing, equivalently concentration into fewer than `q` shrinking inverse-scale clusters.
+`VIS-365` closes the fixed finite branching version altogether. For fixed `N,q`, positive normalized weights with `sqrt(pi_i) asymp epsilon^(a_i)`, and compact distinct nodes with pair separations `|t_i-t_j| asymp epsilon^(kappa_ij)`, define
 
-`VIS-358` shows that square-anchor collapse is not the same thing as full rectangular degeneration: an equally spaced one-cluster bank of width `2 epsilon` and occupancy `N` has
+`Gamma_k = min_(|I|=k) [sum_(i in I) a_i + sum_(i<j, i,j in I) kappa_ij]`.
 
-`s_q(D_beta V_(N,epsilon)) asymp sqrt(N) epsilon^(q-1)`.
+Then the weighted polynomial-sampling singular values satisfy
 
-`VIS-359` closes the regular separated multicluster extension. If cluster `ell` has occupancy `N_ell asymp epsilon_ell^(-2a_ell)`, it supplies exactly
-
-`kappa_ell=floor(a_ell)+1`
-
-stable Hermite jets under the current Euclidean normalization. These capacities add across separated cluster centers.
-
-`VIS-360` prices the first colliding-center regime. If all samples are pooled inside an outer width `rho` around a positive center and the rescaled node cloud has a uniformly nondegenerate degree-`q-1` moment Gram, then
-
-`s_q(D_beta V) asymp sqrt(N) rho^(q-1)`.
-
-`VIS-361` prices arbitrary **positive diagonal coefficient weights**. If `w_j>0`, `M=sum_j w_j`, and the coefficient norm is `sum |a_j|^2/w_j`, then the relevant matrix is `D_beta V W^(1/2)`. Whenever the normalized weighted moment Gram
-
-`M^(-1) S^* W S`
-
-has a positive degree-`q-1` eigenvalue floor,
-
-`s_q(D_beta V W^(1/2)) asymp sqrt(M) rho^(q-1)`.
-
-`VIS-362` prices the first genuinely degenerate weighted continuation. Suppose the outer normalized weighted cloud collapses onto exactly `L<q` separated atoms, every atom keeps a positive fraction of total mass, and one common finer scale `epsilon` exposes a uniformly nondegenerate local weighted polynomial cloud at each atom. Then, with
-
-`h=floor((q-1)/L)`,
-
-one has
-
-`lambda_min(M^(-1)S^*WS) asymp epsilon^(2h)`
-
-and therefore
-
-`s_q(D_beta V W^(1/2)) asymp sqrt(M) rho^(q-1) epsilon^h`.
-
-`VIS-363` removes the next apparent loophole: polynomially vanishing positive cluster masses. If
-
-`M_ell/M asymp epsilon^(2a_ell)`
-
-while the local weighted clouds stay uniformly nondegenerate at the same inner scale, assign cost `a_ell+d` to the `d`-th Hermite jet at center `ell`. If `tau_q` is the `q`-th smallest such cost, then
-
-`lambda_min(M^(-1)S^*WS) asymp epsilon^(2 tau_q)`
+`prod_(r=1)^k s_r asymp epsilon^(Gamma_k)`
 
 and
 
-`s_q(D_beta V W^(1/2)) asymp sqrt(M) rho^(q-1) epsilon^tau_q`.
+`s_k asymp epsilon^(Gamma_k-Gamma_(k-1))`.
 
-Thus neither a singular outer weighted Gram nor polynomially disappearing positive support masses are by themselves new compact cancellation resources. One common inner scale is completely priced by a weighted Hermite filtration.
+Thus every fixed finite positive weighted branching hierarchy with stable power valuations is already priced by a finite tropical subset-energy ledger. The minimizing supports need not form one nested branch, so branching itself is no longer a residual compact mechanism.
 
 ## Research question
 
-After quotienting bounded source-independent banks, bounded source-adaptive selection, anchored bank enlargement, compact square-anchor loss, regular one-cluster occupancy repayment, regular separated multicluster Hermite-jet capacity, pooled colliding-center configurations, positive diagonal coefficient weights, one-scale weighted Gram collapse, and polynomially vanishing outer mass fractions, can a genuinely source-coupled or growing/global construction produce a smaller Wang destination without merely importing a stronger estimate for `G`, `theta`, or an equivalent unsmoothed source quantity?
+After quotienting the entire fixed finite positive-diagonal, power-valued compact Vandermonde geometry, can a genuinely source-coupled, growing, non-power, or different-topology construction produce a smaller Wang destination without merely importing a stronger estimate for `G`, `theta`, or an equivalent unsmoothed source quantity?
 
-The remaining live compact mechanisms must expose a resource outside that ledger: a **recursive weighted degeneration beyond one common Hermite scale** in which local normalized weighted Grams themselves lose rank/conditioning, distinct nested inner scales remain after the first rescaling, or the coefficient geometry leaves the positive diagonal Hilbert setting. Source-dependent coefficients carrying signed arithmetic information remain a separate route. Other exits remain growing tail depth/order, scale escape toward zero or infinity, growing/global phase complexity, shrinking windows, an infinite-dimensional topology, nonlinear source dependence, or direct signed arithmetic structure of `G`.
+The remaining routes must leave at least one hypothesis of `VIS-365`: support cardinality or cancellation depth may grow; node/mass scales may lack stable comparable power valuations; coefficient geometry may become signed, indefinite, non-diagonal, or otherwise non-Hilbert; nodes or weights may depend on signed arithmetic information from the source; or the mechanism may use global phase/window geometry, scale escape, an infinite-dimensional limit, or nonlinear source dependence.
+
+A recursively changing active subspace is interesting only if it actually escapes the finite subset-energy description. A more complicated finite branch tree with positive power-law masses and separations does not.
 
 ## Why it may matter
 
-The compact fixed-depth branch is now close to a recursive multiscale classification. `VIS-358` prices one dense cluster; `VIS-359` prices regular separated clusters by local Hermite capacity; `VIS-360` pools colliding centers at their outer scale; `VIS-361` shows that positive nonuniform coefficient weights merely replace raw occupancy by a positive weighted moment measure; `VIS-362` prices a first outer rank collapse when all surviving support masses stay macroscopic; `VIS-363` shows that even polynomially vanishing positive masses are still just additive jet costs when one common inner rescaling keeps every local cloud healthy.
+The compact fixed-depth positive branch has changed character. Earlier findings progressively priced particular cluster geometries; `VIS-365` gives a global finite formula that subsumes arbitrary finite branching under stable power valuations. This prevents further work from mistaking increasingly elaborate cluster trees for new arithmetic cancellation.
 
-A positive compact-bank mechanism must therefore exhibit an actual **persistent multiscale loss**, not merely light clusters. Once mass decay and jet depth are combined into the cost spectrum `a_ell+d`, the first `q` costs already determine the full one-scale singular exponent. What remains is genuinely recursive geometry: another local Gram collapse, incompatible finer scales, a changed coefficient topology, or arithmetic/source information not present in the source-free bank geometry.
+The useful frontier is therefore sharper: either identify a representation whose asymptotic geometry is genuinely outside a fixed finite valuation ledger, or expose source information that the geometry alone cannot manufacture. That distinction is exactly what the Wang line needs, because any destination gain that is only a singular-value conditioning effect is not evidence of stronger prime cancellation.
 
 ## Decisive test
 
 For any proposed continuation, first state exactly which closed assumption is being abandoned.
 
-If a source-dependent selector stays inside a fixed compact nondegenerate family, apply `VIS-355` before crediting any gain. Measure coefficients modulo the exact moment-cancellation kernel.
+If `N` and `q` are fixed, the normalized weights are positive, the nodes remain in a compact interval, and all weight and pair-separation scales admit stable power valuations in one parameter `epsilon`, apply `VIS-365` before crediting any gain. Compute the actual exponents `a_i` and `kappa_ij`, then the subset energies `Gamma_k` and the marginal exponent
 
-If the number of scales grows at fixed asymptotic depth while one uniformly conditioned `q`-column anchor survives, apply `VIS-356`: raw count growth is closed as an independent conditioning resource.
+`gamma_q=Gamma_q-Gamma_(q-1)`.
 
-If every fixed-depth square anchor degenerates inside a compact interval, apply `VIS-357` to identify the shrinking-cluster geometry. For one regular cluster, apply `VIS-358` and charge the occupancy-width scale `N epsilon^(2(q-1))`.
+After restoring the outer Wang factors from `VIS-360`--`VIS-361`, the quotient floor is
 
-For several regular clusters with fixed positive separated centers, apply `VIS-359`. In general choose Hermite multiplicities `m_ell` summing to `q`; a uniform lower bound follows whenever the deepest assigned jet masses `N_ell epsilon_ell^(2(m_ell-1))` stay bounded below. In the power-law regime compute `kappa_ell=floor(a_ell)+1`: total capacity at least `q` closes quotient degeneration, while total capacity below `q` produces the explicit source-free collapsing polynomial from `VIS-359`.
+`s_q(A_w) asymp sqrt(M) rho^(q-1) epsilon^(gamma_q)`.
 
-If the cluster centers themselves approach one another, do not treat pairwise separation as an additional escape parameter before pooling the cloud. Choose the outer diameter/scale `rho`, write every sample as `c+rho t_j`, and form the normalized degree-`q-1` sampling Gram. Apply `VIS-360`: if its smallest eigenvalue stays bounded below, the whole colliding configuration has quotient scale `sqrt(N) rho^(q-1)` and is closed.
+Kill the route as source-free conditioning geometry if the claimed compact gain is exactly this scale. `VIS-364` is the corresponding transparent Newton benchmark for a one-branch nested chain and can be used when that representation makes the cost easier to read.
 
-If the coefficient space uses positive diagonal weights `w_j`, set `M=sum_j w_j` and form the normalized weighted Gram `M^(-1)S^*WS`. Apply `VIS-361`: if its smallest eigenvalue stays bounded below, the weighted quotient scale is `sqrt(M) rho^(q-1)` no matter how unequal the individual positive weights are.
+If support size `N=N(epsilon)` or cancellation depth `q=q(epsilon)` grows, account explicitly for the changing family of minors, occupancy, moment-system conditioning, and any loss in the Wang destination. Fixed-dimensional norm equivalences from `VIS-365` cannot simply be carried into that limit.
 
-If that weighted outer Gram degenerates because the normalized measure collapses onto `L<q` separated support points and each support point keeps a positive mass fraction, test the first inner scale before crediting a new mechanism. When one common inner rescaling has a uniformly nondegenerate local degree-`q-1` weighted moment Gram, apply `VIS-362`:
+If scales are claimed to be non-power or mutually non-comparable, specify the actual asymptotic family and show why no single reparameterization or finite valuation data recover the relevant singular hierarchy. A merely awkward choice of parameter is not an escape.
 
-`s_q asymp sqrt(M) rho^(q-1) epsilon^floor((q-1)/L)`.
+If coefficient geometry leaves the positive diagonal Hilbert setting, define the coefficient topology and norm exactly and identify which step of the positive weighted-moment reduction fails. If coefficients, nodes, scales, translations, weights, or selectors use signed information from `G`, `theta`, or another arithmetic statistic, formulate the claimed gain directly as a source estimate and show that the selection rule does not already encode the desired stronger bound.
 
-If some outer mass fractions also vanish polynomially at that same inner scale, write
-
-`M_ell/M asymp epsilon^(2a_ell)`
-
-and apply `VIS-363`. Form the finite jet-cost multiset
-
-`{a_ell+d : 0<=d<=q-1}`
-
-and let `tau_q` be its `q`-th smallest element. Then the full one-scale weighted quotient is already priced by
-
-`s_q asymp sqrt(M) rho^(q-1) epsilon^tau_q`.
-
-Continue inward only if the local weighted Grams themselves degenerate after this rescaling, distinct finer scales remain in the deficient modes, or no fixed common-scale valuation describes the relevant mass/local geometry. A claimed deeper hierarchy must identify the deficient polynomial subspace after the priced filtration and show that its next normalized Gram still loses a positive eigenvalue.
-
-If the effective cancellation depth grows, combine `VIS-342`--`VIS-343` with the conditioning of the growing moment system. If downstream phase geometry also grows or degenerates, price its cluster count/multiplicity/span/density, separation, and window length through `VIS-344`--`VIS-353`.
-
-If coefficients, scales, translations, weights, or selection rules use signed information from `G`, `theta`, or another arithmetic statistic, formulate the claimed gain directly as an arithmetic/source estimate. Show that the information used to choose the bank is not equivalent to assuming the desired stronger source bound, and propagate the estimate through Wang's full destination, including every `Q'` or equivalent inverse-derivative repayment.
-
-For an infinite representation, specify the convergence topology, coefficient norm, truncation control, and finite approximants that preserve the claimed gain.
-
-Kill a route if its improvement disappears after the explicit growth/degeneration parameter is charged, if adaptive weights merely approach the known moment kernel, if extra scales leave a stable anchor intact, if regular occupancy restores the full-map floor as in `VIS-358`--`VIS-359`, if pooled center collisions retain a stable normalized moment Gram as in `VIS-360`, if positive diagonal weights retain a stable normalized weighted moment Gram as in `VIS-361`, if a one-level outer weighted collapse is restored by the inner Hermite exponent in `VIS-362`, if polynomially vanishing positive masses are already priced by the weighted jet order statistic in `VIS-363`, if a changed norm or weighting is doing the real work but is not priced, if source-dependent weights encode the target source estimate, or if the gain is lost in the destination derivative step.
+If the route uses phase/window growth, scale escape, nonlinear dependence, or an infinite representation, specify the growth parameter, convergence topology, truncation control, and the full destination repayment. Kill the route if the improvement disappears once those costs are charged or if it reduces to a stronger source estimate assumed rather than proved.
 
 ## Evidence boundary
 
-`VIS-333`--`VIS-363` are exact representation, obstruction, conditioning, compactness, packing, Hermite-interpolation, pooled-rescaling, weighted-moment, and finite-dimensional negative-control results. They do not prove a stronger PNT remainder, a new pointwise estimate for `G`, an RH-equivalent localization theorem, or a destination-level improvement.
+`VIS-333`--`VIS-365` are exact representation, obstruction, conditioning, compactness, interpolation, and finite-dimensional negative-control results. `VIS-364` prices a maximally nested one-branch hierarchy; `VIS-365` prices arbitrary fixed finite positive weighted branching with stable power valuations through compound-matrix/Vandermonde subset energies.
 
-`VIS-363` handles one common inner scale with healthy local positive weighted clouds and cluster mass fractions comparable to fixed powers `epsilon^(2a_ell)`. It does not classify arbitrary recursive cluster trees, locally degenerate weighted measures, multiple incompatible inner scales, non-polynomial valuations requiring a different rescaling, non-diagonal or indefinite coefficient geometries, growing asymptotic depth, or infinite-dimensional limits.
+These findings do not prove a stronger PNT remainder, a new pointwise estimate for `G`, an RH-equivalent localization theorem, or a destination-level improvement. `VIS-365` also does not classify growing `N` or `q`, genuinely non-power/non-comparable asymptotics, signed or non-diagonal coefficient geometries, source-dependent arithmetic selectors, infinite-dimensional limits, or global phase/window mechanisms.
 
-The clue therefore remains `accepted`, but its compact frontier is narrowed to **recursive degeneration beyond a single weighted Hermite filtration**, or a genuinely different coefficient topology. Growing order, scale escape, phase/window/infinite-dimensional resources, and genuinely new arithmetic source information remain separate exits.
+The clue therefore remains `accepted`, but the fixed finite positive power-valued compact branch is now closed as a standalone escape. The unresolved question begins only outside that ledger.
 
 ## Research disposition
 
 Outcome: **narrowed**.
 
-Treat bounded source-independent conditioning, bounded source-adaptive selection, anchored fixed-depth scale growth, diffuse compact anchor loss, regular one-cluster collapse, regular separated multicluster occupancy, colliding-center clouds with a stable pooled outer Gram, arbitrary positive diagonal weights with a stable weighted Gram, a one-level positive weighted outer collapse with healthy macroscopic inner clouds, and polynomially vanishing positive cluster masses on one common healthy inner scale as closed. Future compact-bank work must exhibit a recursive local Gram loss, genuinely distinct nested scales, a different coefficient topology, or arithmetic source information not already encoded by the source-free weighted Hermite filtration; other continuations must expose growing order, scale escape, infinite/nonlinear structure, or a new signed source estimate that survives the unchanged Wang destination audit.
+Treat every fixed finite compact positive-diagonal Wang bank with stable power valuations of its normalized weights and pair separations as priced source-free geometry. Future work must exhibit growing support/depth, genuinely non-power asymptotics, a different coefficient topology, source-dependent signed arithmetic information, scale/phase/window escape, infinite-dimensional structure, or another mechanism that survives the unchanged Wang destination audit.
