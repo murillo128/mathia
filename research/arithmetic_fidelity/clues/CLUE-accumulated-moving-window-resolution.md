@@ -1,7 +1,7 @@
 ---
 id: CLUE-arithmetic-fidelity-accumulated-moving-window-resolution
 type: research-clue
-status: proposed
+status: resolved
 origin: mind
 target_line: arithmetic_fidelity
 based_on:
@@ -37,3 +37,9 @@ Fix a precise accumulated observation model on one sampling lattice and first at
 ## Evidence boundary
 
 AF-487 proves only the one-window local minimax law. The uniform-prefix indistinguishability estimate above is a source-motivated candidate argument, not persisted mathematical evidence. The answer can also depend on the exact noise geometry: independent per-window errors, one coherent pointwise error process, stochastic noise, or a different scaling from `q_J^(-s)` are different experiments and must not be conflated.
+
+## Research disposition
+Outcome: supported
+
+Resolved by:
+- [[research/arithmetic_fidelity/findings/AF-488-pointwise-critical-noise-makes-horizon-not-history-control-dirichlet-resolution.md]]
