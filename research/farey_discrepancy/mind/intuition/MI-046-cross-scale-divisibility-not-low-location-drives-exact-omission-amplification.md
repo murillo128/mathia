@@ -1,25 +1,27 @@
-# MI-046 — Exact-omission amplification is the weighted divisibility inverse norm
+# MI-046 — Exact-omission amplification is weighted divisibility conditioning, and one high-arity merge already makes it unbounded
 
-**Evidence level:** exact divisor-poset synthesis from [FD-247](../../findings/FD-247-primitive-increment-support-gives-sharp-linear-exact-omission-cost.md) and [FD-248](../../findings/FD-248-weighted-incidence-mobius-norm-localizes-exact-omission-amplification.md). Finite-poset Möbius inversion is classical; the line-specific content is the exact-omission conditioning statistic and its coefficient-mass consequence.
+**Evidence level:** exact divisor-poset synthesis from [FD-247](../../findings/FD-247-primitive-increment-support-gives-sharp-linear-exact-omission-cost.md), [FD-248](../../findings/FD-248-weighted-incidence-mobius-norm-localizes-exact-omission-amplification.md), and [FD-249](../../findings/FD-249-single-high-arity-merge-forces-unbounded-incidence-conditioning.md). Finite-poset Möbius inversion and the primorial reciprocal-mass estimates are classical ingredients; the line-specific content is their exact-omission realization and conditioning consequence.
 
-Let `g=Delta Y`, `D=supp(g)∩[1,N]`, and order `D` by divisibility. On active coordinates, after normalizing `beta_d=b_d/d` and `x_d=g(d)/d`, the response inverse is
-
-`beta = W_D x`,  with  `W_D = R^(-1) Z_D R`.
-
-Hence
+Let `g=Delta Y`, `D=supp(g)∩[1,N]`, and order `D` by divisibility. After normalizing the active divisor map, the inverse has entries
 
 `W_D^(-1)(d,q) = 1_(q|d) mu_D(q,d) q/d`,
 
-where `mu_D` is the Möbius function of the induced finite divisibility poset. The exact conditioning parameter is therefore
+so the exact conditioning parameter is
 
 `kappa(D)=||W_D^(-1)||_infty = max_d sum_(q|d,q∈D) |mu_D(q,d)| q/d`.
 
 Under `|b_n|<=Cn` and `K` exact omissions, `|D|<=2K` and
 
-`sum_(n<=N)|b_n| <= C N |D| kappa(D) <= 2 C N K kappa(D)`.
+`sum_(n<=N)|b_n| <= 2 C N K kappa(D)`.
 
-This sharpens the earlier statement that cross-scale divisibility is necessary: **chains themselves are harmless**. If every nonminimal active `d` has at most one maximal proper active divisor, the induced Hasse diagram has no downward merges and `kappa(D)<=3/2`, even for arbitrarily long divisibility chains. Antichains are the special case `kappa=1`.
+This keeps the earlier negative controls intact: antichains have `kappa=1`, and induced divisibility forests with no downward merges have `kappa<=3/2`, so arbitrarily long chains do not by themselves create large amplification.
 
-Conversely, macroscopic top-scale coefficient mass with `K=o(N)` forces `kappa(D) ≳ (eta/C) N/K`. Thus a bad exact-omission family must develop a quantitatively ill-conditioned incidence inverse; merely placing defects at low scale, spanning many scales, or forming deep chains is insufficient. Repeated merge geometry is the first possible source of growth, but no individual merge pattern is yet proved sufficient.
+FD-249 shows that repeated merge depth is nevertheless unnecessary for growth. There are exact omission supports with `K=N^(o(1))` whose active divisor interval below the top point is a height-one star: all proper active divisors are pairwise incomparable and attach directly to the top. A rank-selected primorial construction gives
 
-**Boundary.** This is an exact-zero signed response theorem. It does not control approximate residuals or impose physical positivity, finite prime-reservoir capacity, squarefree realization or arithmetic coherence. The next response-side question is concrete: how large can `kappa(D)` become subject to `D⊆E∪(E+1)` with `|E|=K`, and which repeated divisibility-merge patterns realize growth comparable to `N/K`?
+`kappa(D_N) >> log log N / sqrt(log log log N)`.
+
+The growth is the reciprocal mass of one high-arity weighted antichain. Thus chain depth and repeated nested merges are not the structural threshold; **one sufficiently wide merge already makes the incidence inverse unbounded**.
+
+This still falls far short of the scale needed to hide macroscopic coefficient mass. With `K=o(N)`, such mass forces `kappa(D) >> N/K`, while the known star construction is only polylogarithmic. The durable response-side frontier is therefore quantitative: determine the maximal growth of `kappa(D)` under the genuine adjacent-pair constraint `D⊆E∪(E+1)`, and whether nested/rank-selected merge geometries can approach the required `N/K` scale or a universal subcritical upper bound survives.
+
+**Boundary.** These are signed exact-response statements. They do not control approximate residuals and do not impose positivity, finite prime-reservoir capacity, squarefree physical-source realization or full arithmetic coherence. Those source-side constraints remain a separate transversality question.

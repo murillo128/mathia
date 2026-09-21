@@ -1,15 +1,21 @@
-# MI-052 — Fixed Wang tail coefficients are a source-free block Vandermonde map
+# MI-052 — Compact Wang tail maps have a uniform quotient floor even under source-adaptive selection
 
-**Evidence level:** exact finite-dimensional synthesis from [VIS-354](../../findings/VIS-354-wang-tail-coefficient-block-vandermonde.md), extending the moment/fiber decomposition in VIS-343--VIS-344 and the collision conditioning ledger in VIS-351--VIS-353. Vandermonde rank and compact singular-value bounds are classical; the line-specific content is the elimination of a hidden source-to-coefficient channel in the fixed-bank Wang model.
+**Evidence level:** exact finite-dimensional synthesis from [VIS-354](../../findings/VIS-354-wang-tail-coefficient-block-vandermonde.md) and [VIS-355](../../findings/VIS-355-source-adaptive-compact-bank-floor.md), together with the stable phase-coordinate controls in VIS-351--VIS-353. Vandermonde rank, singular values and compact constant-rank conditioning are classical; the line-specific content is the closure of both hidden coefficient conditioning and bounded adaptive selection as Wang resources.
 
 For one translation fiber with inverse scales `x_j=a_j^(-1)` and fixed tail depth `q`, the raw Wang polynomial coefficients satisfy
 
-`d_b = D_beta V_b c_b`,  `(V_b)_(k,j)=x_j^k`, `1<=k<=q`,
+`d_b = D_beta V_b c_b`, with `(V_b)_(k,j)=x_j^k`, `1<=k<=q`.
 
-with invertible diagonal `D_beta`. Across translations this map is block diagonal. The arithmetic source `G` does not enter it at all when bank weights, scales and translations are source-independent.
+Across translations the map is block diagonal. With source-independent bank parameters, the arithmetic source `G` does not enter this coefficient map at all.
 
-If a fiber has at most `q` distinct scales and the inverse scales remain in a compact interval with fixed separation, `D_beta V_b` has a uniform positive smallest singular value. Its coefficient vector therefore cannot become asymptotically small relative to the bank weights. If the fiber has more than `q` scales, the only exact nullspace is the already-known moment cancellation `sum_j c_j a_j^(-k)=0` for `k=1,...,q`; near-nullness is approximate filter-design cancellation of the same source-free equations.
+VIS-355 strengthens the conclusion to source-adaptive choice. Fix a compact nondegenerate family in which inverse scales stay in a bounded positive interval, distinct scales have uniform separation, and the number of fibers/scales and `q` are fixed. The block map has constant rank, hence its smallest nonzero singular value has a uniform floor:
 
-Thus the bounded finite-bank chain separates into two explicit maps: bank weights to tail coefficients via block Vandermonde moments, then those coefficients to the confluent exponential function via phase/Hermite geometry. VIS-351--VIS-353 already price the second map in stable coordinates; VIS-354 shows that the first contains no latent arithmetic localization either.
+`||T_theta c||_2 >= sigma dist(c,ker T_theta)`.
 
-**Boundary.** A genuinely source-specific collapse is still possible only if some bank parameter or selection rule depends on `G` or equivalent arithmetic information, or if another explicit resource escapes the compact finite model: growing scale count/depth, scale collisions or unbounded scale range, growing/global phase geometry, shrinking windows, frequency-dependent coefficients or infinite representations. Source dependence must then be counted as mathematical input and traced through the downstream map rather than credited to passive Wang smoothing.
+This remains true pointwise when the source chooses `theta=theta(G)` and `c=c(G)`. Adaptivity does not change the worst-case quotient conditioning of the admissible family.
+
+If a fiber has at most `q` scales, the kernel is zero. With more than `q`, the kernel is exactly the known moment-cancellation space `sum_j c_j a_j^(-k)=0`, `k=1,...,q`. Thus small tail coefficients inside the compact family mean motion toward an already-explicit filter-design kernel, not a hidden arithmetic localization effect.
+
+Together with the divided-difference/Riesz controls for the downstream confluent exponential map, the bounded finite-bank chain has no remaining unnamed compact conditioning resource. A source-dependent selector earns new credit only by making something leave this ledger—growing dimension/depth/count, scale or phase degeneration, unbounded range, shrinking windows—or by supplying a genuinely new signed estimate of `G` outside passive parameter selection.
+
+**Boundary.** Nonlinear source operations, infinite representations with controlled truncation, growing/degenerating geometries and direct arithmetic cancellation remain outside the theorem. “Source-adaptive” by itself is not such a resource.

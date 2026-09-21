@@ -1,19 +1,19 @@
-# MI-062 — Scalar Hilbert repair has square-root and full-diameter complete-alternation gates
+# MI-062 — Smooth scalar Hilbert repair on TV is exactly a bounded Bernstein mixture
 
-**Evidence level:** exact metric synthesis from [AF-468](../../findings/AF-468-any-scalar-hilbert-repair-must-amplify-tv-at-least-square-root.md), [AF-469](../../findings/AF-469-exact-scalar-hilbert-repairs-obey-local-bernstein-sign-laws.md), and [AF-470](../../findings/AF-470-replicated-private-atoms-force-full-diameter-complete-alternation.md), extending the power-law boundary in AF-466--AF-467. The cube/type and Bernstein/Schoenberg ingredients are classical; the line-specific content is their transfer to the unrestricted probability-law source.
+**Evidence level:** exact radial-kernel classification from [AF-468](../../findings/AF-468-any-scalar-hilbert-repair-must-amplify-tv-at-least-square-root.md), [AF-470](../../findings/AF-470-replicated-private-atoms-force-full-diameter-complete-alternation.md), and [AF-471](../../findings/AF-471-bounded-bernstein-signs-classify-smooth-radial-tv-hilbert-repairs.md). The negative-type and positive-definite kernel ingredients are classical; the line-specific content is their exact specialization to the full TV diameter of unrestricted finitely supported probability mixtures.
 
-For the unrestricted TV simplex, a scalar radial transform cannot evade the paired-mixture obstruction by choosing a clever non-power profile. If a Hilbert representation has complexity-independent two-sided distortion in a transformed distance `phi(d_TV)`, then along `t=2/k`
+For a continuous radial squared-distance law `g:[0,2]->[0,infinity)` that is smooth on `(0,2)` and is required to be conditionally negative definite on every finite family of probability measures under total variation, AF-471 closes the necessity/sufficiency gap left by AF-470. The condition is exactly
 
-`phi(t) >= c sqrt(t)`,
+`(-1)^(k-1) g^(k)(t) >= 0` for every `k>=1` and `0<t<2`,
 
-and under monotonicity the same lower scale holds throughout a neighborhood of zero. Relative to the original TV metric, any such repair therefore has singular forward sensitivity: `phi(t)/t` must diverge at least like `t^(-1/2)` on the forced scales.
+equivalently
 
-Exact radial repair is more rigid. Writing the squared transformed distance as `g=phi^2`, AF-470 replaces AF-469's half-diameter/concentration argument by an exact replicated-private-atom realization. For every `k>=1`, `x>=0`, and positive increments with `x+sum_i epsilon_i<=2`, exact Hilbert embeddability forces
+`g(t)=sum_(n>=1) a_n [1-(1-t/2)^n]`, with `a_n>=0` and `sum_n a_n=g(2)`.
 
-`(-1)^(k-1) Delta_(epsilon_1)...Delta_(epsilon_k) g(x) >= 0`.
+Writing the overlap kernel as `S(mu,nu)=1-d_TV(mu,nu)/2`, every term `1-S^n` is a squared Hilbert distance after the tensor-power embedding. Thus the full smooth radial class is not merely constrained by complete alternation: it has an explicit positive-mixture realization.
 
-Thus complete alternation is necessary across the entire TV diameter, and the finite-difference statement needs no continuity assumption. If `g` is smooth, `(-1)^(k-1) g^(k)(x)>=0` throughout `0<x<2`, so `g'` is completely monotone on the full interior.
+The small-scale square-root gate remains load-bearing for the corresponding distance transform. AF-468 already shows that a complexity-independent bounded-distortion scalar Hilbert repair cannot stay locally Lipschitz-equivalent to TV: it must amplify the forced small scales at least at square-root order. AF-471 therefore closes the smooth exact radial branch rather than opening a smoother escape.
 
-The key geometric mechanism is that a positive base distance `x` can be carried by vertex-private probability mass. Replication increases alphabet breadth without consuming extra TV diameter; the diagonal defect is only one `g(x)` term against a `2^m` replicated Walsh contribution, and vanishes after dividing by `2^m` and sending `m` upward. The previous half-diameter boundary was therefore a realization artifact, not remaining scalar freedom.
+The compact TV diameter matters. These bounded-interval mixtures are a larger class than restrictions of global Bernstein functions on `[0,infinity)`; for example AF-471 gives a smooth polynomial member that satisfies the bounded interval sign hierarchy without being a global Bernstein function. The correct object is therefore the bounded overlap variable `S in [0,1]`, not an assumed global radial extension.
 
-**Boundary.** The exact theorem uses unrestricted alphabet breadth; it does not by itself impose arbitrary-order constraints on a fixed finite-dimensional simplex, prove sufficiency of bounded-interval complete alternation, classify approximate/bounded-distortion embeddings, or constrain non-radial/state-dependent lifts. There is still no arithmetic specificity: the live question is whether the physical arithmetic source contains enough comparable mixture geometry to inherit the obstruction, or whether a source-forced non-radial structure survives downstream with actual arithmetic selectivity.
+**Boundary.** The classification uses the breadth of the unrestricted mixture simplex over an infinite discrete alphabet and applies only to scalar radial exact Hilbertization. It does not show that a narrower physical arithmetic source realizes the private-atom tests, and it does not rule out non-radial source-forced structure. Any surviving route must therefore identify a genuine source restriction, retain non-radial/marked provenance through later quotients, or prove that the destination can consume the singularly changed metric without silently restoring the original TV fidelity requirement.
