@@ -9,11 +9,10 @@
 
 \[
 m=\frac JK,
-\qquad
-u:=X(1-\beta)\sim\log m.
+\qquad u=X(1-\beta)\sim\log m.
 \]
 
-Here and below the physical Ford depth is denoted by `u`; the display above uses `u=X(1-beta)`. That one-notch result deliberately leaves open whether additional horizontal constraints can flatten the side-lobe without making the resolved Hilbert cost coercive. They can if no independent conditioning bound is imposed and the target strip is prescribed before the resolved rank `K` is allowed to grow.
+That one-notch result deliberately leaves open whether additional horizontal constraints can flatten the side-lobe without making the resolved Hilbert cost coercive. They can if no independent conditioning bound is imposed and the target strip is prescribed before the resolved rank `K` is allowed to grow.
 
 For
 
