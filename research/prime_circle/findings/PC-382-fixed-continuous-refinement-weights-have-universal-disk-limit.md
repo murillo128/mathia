@@ -271,7 +271,6 @@ The branch
 \text{infinite Fourier tail}
 \longrightarrow
 \text{new large-degree spectral shape}
-}
 \]
 
 is closed on the canonical Haar `L^2` refinement space. Finite Fourier bandwidth was not the essential reason for the PC-381 collapse; **fixed regularity at the inverse-image mesh scale** is enough.
