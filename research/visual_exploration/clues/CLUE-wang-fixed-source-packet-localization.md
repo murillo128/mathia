@@ -27,6 +27,7 @@ based_on:
   - research/visual_exploration/findings/VIS-356-fixed-depth-bank-growth-anchored-floor.md
   - research/visual_exploration/findings/VIS-357-compact-wang-anchor-packing-collapse.md
   - research/visual_exploration/findings/VIS-358-dense-cluster-occupancy-width-floor.md
+  - research/visual_exploration/findings/VIS-359-regular-multicluster-hermite-jet-capacity.md
 ---
 
 # Does Wang packet localization preserve source information without manufacturing strip gain?
@@ -45,23 +46,27 @@ The source side has already collapsed to the normalized Chebyshev-theta remainde
 
 `VIS-355` closes bounded source-adaptive selection inside a compact nondegenerate family. `VIS-356` shows that raw scale-count growth cannot lower the quotient floor while one uniformly conditioned `q`-column anchor survives. `VIS-357` classifies the complementary loss of every compact square anchor as shrinking `q`-point packing, equivalently concentration into fewer than `q` shrinking inverse-scale clusters.
 
-`VIS-358` now shows why square-anchor collapse is not the same thing as full rectangular degeneration. For an equally spaced one-cluster bank of `N` distinct inverse scales inside width `2 epsilon` around a positive center,
+`VIS-358` shows that square-anchor collapse is not the same thing as full rectangular degeneration: an equally spaced one-cluster bank of width `2 epsilon` and occupancy `N` has
 
 `s_q(D_beta V_(N,epsilon)) asymp sqrt(N) epsilon^(q-1)`.
 
-Thus every fixed `q`-column anchor can collapse while the full quotient floor remains bounded or even grows. Under the current Euclidean bank norm, the canonical compact tradeoff is occupancy against the deepest available cluster jet: `N epsilon^(2(q-1))`.
+`VIS-359` now closes the regular separated multicluster extension. If cluster `ell` has occupancy `N_ell asymp epsilon_ell^(-2a_ell)`, it supplies exactly
+
+`kappa_ell=floor(a_ell)+1`
+
+stable Hermite jets under the current Euclidean normalization. These capacities add across separated cluster centers. The fixed-depth quotient stays uniformly nondegenerate exactly when the total regular jet capacity reaches `q`; if the total remains below `q`, an explicit polynomial vanishing to the corresponding orders at every center drives the quotient floor to zero.
 
 ## Research question
 
-After quotienting bounded source-independent banks, bounded source-adaptive selection, anchored bank enlargement, compact square-anchor loss, and the regular one-cluster occupancy repayment, can a genuinely source-coupled or growing/global construction produce a smaller Wang destination without merely importing a stronger estimate for `G`, `theta`, or an equivalent unsmoothed source quantity?
+After quotienting bounded source-independent banks, bounded source-adaptive selection, anchored bank enlargement, compact square-anchor loss, regular one-cluster occupancy repayment, and regular separated multicluster Hermite-jet capacity, can a genuinely source-coupled or growing/global construction produce a smaller Wang destination without merely importing a stronger estimate for `G`, `theta`, or an equivalent unsmoothed source quantity?
 
-The remaining live mechanisms must expose a real resource outside that ledger: growing tail depth/order; an irregular or weighted clustered rectangular geometry whose scaled polynomial-sampling Gram genuinely degenerates after the coefficient norm is fixed; several clusters with a nontrivial jet-allocation interaction; scale escape toward zero or infinity; growing/global phase complexity; shrinking windows; an infinite-dimensional topology; nonlinear source dependence; or direct signed arithmetic structure of `G`.
+The remaining live mechanisms must expose a real resource outside that ledger: an irregular or weighted clustered rectangular geometry whose **scaled local sampling Gram** degenerates beyond its effective jet capacity; cluster centers whose mutual separation also collapses; growing tail depth/order; scale escape toward zero or infinity; growing/global phase complexity; shrinking windows; an infinite-dimensional topology; nonlinear source dependence; or direct signed arithmetic structure of `G`.
 
 ## Why it may matter
 
-The compact fixed-depth branch is now more sharply constrained. Destroying every square anchor is only a geometric warning. `VIS-358` gives an explicit family in which all such anchors collapse but multiplicity restores the full row-space conditioning exactly at the scale `sqrt(N) epsilon^(q-1)`.
+The compact fixed-depth branch is now close to a classification rather than a collection of examples. `VIS-358` priced one dense cluster; `VIS-359` shows that several regular separated clusters simply pool local Hermite conditions. Dense scale clouds do not acquire extra arithmetic power merely by being split among several compact centers.
 
-A positive compact-bank mechanism must therefore show that its cluster geometry defeats this repayment after the actual coefficient norm and weights are included. Otherwise “many colliding scales” is another coordinate description of source-free finite-dimensional conditioning rather than a new arithmetic localization resource.
+A positive compact-bank mechanism must therefore identify an actual failure of the regular jet ledger: irregular local sampling that loses polynomial-sampling rank after rescaling, nonuniform weights or a changed norm that alter effective mass, collapsing center separation that turns separate Hermite blocks into a higher confluence problem, or source-dependent coefficients carrying information not present in the source-free bank geometry.
 
 ## Decisive test
 
@@ -71,9 +76,11 @@ If a source-dependent selector stays inside a fixed compact nondegenerate family
 
 If the number of scales grows at fixed asymptotic depth while one uniformly conditioned `q`-column anchor survives, apply `VIS-356`: raw count growth is closed as an independent conditioning resource.
 
-If every fixed-depth square anchor degenerates inside a compact interval, apply `VIS-357` to identify the shrinking-cluster geometry, then apply `VIS-358` as the first full-map control. A regular one-cluster bank with width `epsilon` and occupancy `N` has full quotient scale `sqrt(N) epsilon^(q-1)`; anchor collapse alone is therefore insufficient.
+If every fixed-depth square anchor degenerates inside a compact interval, apply `VIS-357` to identify the shrinking-cluster geometry. For one regular cluster, apply `VIS-358` and charge the occupancy-width scale `N epsilon^(2(q-1))`.
 
-For a claimed compact escape beyond `VIS-358`, state the coefficient norm/column weights and rescale each cluster to its center and width. Show that the corresponding fixed-degree polynomial-sampling or jet Gram loses rank/conditioning in a way not repaid by effective occupancy. In a multicluster proposal, identify which derivative orders are supplied by which clusters and prove that the combined rectangular Gram still develops a small positive eigenvalue. Do not infer this from pairwise collisions or bad square minors.
+For several regular clusters with fixed positive separated centers, apply `VIS-359`. In general choose Hermite multiplicities `m_ell` summing to `q`; a uniform lower bound follows whenever the deepest assigned jet masses `N_ell epsilon_ell^(2(m_ell-1))` stay bounded below. In the power-law regime compute `kappa_ell=floor(a_ell)+1`: total capacity at least `q` closes quotient degeneration, while total capacity below `q` produces the explicit source-free collapsing polynomial from `VIS-359`.
+
+A claimed compact escape beyond `VIS-359` must therefore show why this Hermite allocation model fails. For irregular point clouds, rescale each cluster and study the actual fixed-degree polynomial-sampling Gram rather than nominal point count. For weights, state the coefficient norm and effective sample masses explicitly. If cluster centers themselves collide, price the resulting higher-level confluent geometry rather than treating the blocks as separated. Do not infer degeneration from pairwise collisions, bad square minors, or large raw occupancy alone.
 
 If the effective cancellation depth grows, combine `VIS-342`--`VIS-343` with the conditioning of the growing moment system. If downstream phase geometry also grows or degenerates, price its cluster count/multiplicity/span/density, separation, and window length through `VIS-344`--`VIS-353`.
 
@@ -81,18 +88,18 @@ If coefficients, scales, translations, weights, or selection rules use signed in
 
 For an infinite representation, specify the convergence topology, coefficient norm, truncation control, and finite approximants that preserve the claimed gain.
 
-Kill a route if its improvement disappears after the explicit growth/degeneration parameter is charged, if adaptive weights merely approach the known moment kernel, if extra scales leave a stable anchor intact, if regular cluster occupancy restores the full-map floor as in `VIS-358`, if a changed norm or weighting is doing the real work but is not priced, if source-dependent weights encode the target source estimate, or if the gain is lost in the destination derivative step.
+Kill a route if its improvement disappears after the explicit growth/degeneration parameter is charged, if adaptive weights merely approach the known moment kernel, if extra scales leave a stable anchor intact, if regular one- or multicluster occupancy restores the full-map floor as in `VIS-358`--`VIS-359`, if a changed norm or weighting is doing the real work but is not priced, if source-dependent weights encode the target source estimate, or if the gain is lost in the destination derivative step.
 
 ## Evidence boundary
 
-`VIS-333`--`VIS-358` are exact representation, obstruction, conditioning, compactness, packing, and finite-dimensional negative-control results. They do not prove a stronger PNT remainder, a new pointwise estimate for `G`, an RH-equivalent localization theorem, or a destination-level improvement.
+`VIS-333`--`VIS-359` are exact representation, obstruction, conditioning, compactness, packing, Hermite-interpolation, and finite-dimensional negative-control results. They do not prove a stronger PNT remainder, a new pointwise estimate for `G`, an RH-equivalent localization theorem, or a destination-level improvement.
 
-`VIS-358` proves the occupancy-width law only for a canonical equally spaced one-cluster family under the current unweighted Euclidean coefficient norm. It does not classify arbitrary irregular point clouds, multiple interacting clusters, nonuniform weights, or other coefficient topologies. Those are now the precise compact questions rather than the already-refuted implication “all square anchors collapse, therefore the rectangular bank degenerates.”
+`VIS-359` classifies **regular equally spaced clusters with fixed separated centers** under the current unweighted Euclidean coefficient norm, including an exact power-law occupancy dichotomy. It does not classify arbitrary irregular cluster point clouds, nonuniform weights, collapsing inter-center separations, growing asymptotic depth, or other coefficient topologies. Those are now the precise compact questions rather than generic “multicluster interaction.”
 
-The clue therefore remains `accepted`, but its compact frontier is narrowed to an actual degeneration of the scaled clustered sampling/jet Gram after occupancy, weights, and norm are accounted for. Growing order, scale escape, phase/window/infinite-dimensional resources, and genuinely new arithmetic source information remain separate exits.
+The clue therefore remains `accepted`, but its compact frontier is narrowed to a genuine failure of the regular Hermite-jet ledger after the actual local sampling Gram, weights, center separation, and norm are accounted for. Growing order, scale escape, phase/window/infinite-dimensional resources, and genuinely new arithmetic source information remain separate exits.
 
 ## Research disposition
 
 Outcome: **narrowed**.
 
-Treat bounded source-independent conditioning, bounded source-adaptive selection, anchored fixed-depth scale growth, diffuse compact anchor loss, and regular one-cluster anchor collapse as closed. Future compact-bank work must exhibit a weighted/irregular/multicluster rectangular degeneration that survives the `VIS-358` occupancy control; other continuations must expose growing order, scale escape, infinite/nonlinear structure, or a new signed source estimate that survives the unchanged Wang destination audit.
+Treat bounded source-independent conditioning, bounded source-adaptive selection, anchored fixed-depth scale growth, diffuse compact anchor loss, regular one-cluster collapse, and regular separated multicluster occupancy as closed. Future compact-bank work must exhibit irregular/weighted/colliding-center geometry that survives the `VIS-358`--`VIS-359` controls; other continuations must expose growing order, scale escape, infinite/nonlinear structure, or a new signed source estimate that survives the unchanged Wang destination audit.
