@@ -50,7 +50,7 @@ The consequence for `NB-262` is direct. A box containing
 X(1-\beta)=\log m+O(1)
 \]
 
-can be uniformly flattened by a signed resolved carrier. If the carrier supremum is `epsilon=o(1/B)`, then even the absolute contribution of every carrier-locked packet of maximal `O(mB)` population in that box is `o(1)` at damping `e^{-u}~1/m`. The packet-scale side-lobe of the two-constraint optimizer is therefore not a universal signed obstruction.
+can be uniformly flattened by a signed resolved carrier. If the carrier supremum is `epsilon=o(1/B)`, then even the absolute contribution of every carrier-locked packet with `O(mB)` points in that box is `o(1)` at damping `e^{-u}~1/m`. The packet-scale side-lobe of the two-constraint optimizer is therefore not a universal signed obstruction.
 
 The price is intentionally uncontrolled: the approximate annihilator may require enormous `L^2` and `L^1` norms, the discrete coefficient variation may be enormous, and very large side-lobes may appear outside the prescribed box. The result is a method boundary, not a successful Nyman approximant.
 
@@ -82,7 +82,7 @@ and
 L(f):=\int_0^1f(t)\,dt.
 \]
 
-### Claim
+The central claim is
 
 \[
 \boxed{
@@ -90,8 +90,6 @@ L(f):=\int_0^1f(t)\,dt.
 }
 \tag{2}
 \]
-
-### Proof
 
 Assume instead that the infimum is positive. By homogeneity there is `A<infinity` such that
 
@@ -386,13 +384,7 @@ u=\log m+d,
 \qquad |d|\le D,
 \]
 
-cover `|x|<=mB`. Carrier-locked ordinates have Ford spacing `Theta(1)`, so there are at most `O(mB)` such points in the band. Each has damping
-
-\[
-e^{-u}=\Theta(m^{-1}).
-\]
-
-If the carrier supremum on the box is `epsilon`, then before using any phase cancellation the absolute contribution of every carrier-locked packet contained in the box is
+cover `|x|<=mB`. Carrier-locked ordinates have Ford spacing `Theta(1)`, so any such packet with `O(mB)` points in the band has total damped carrier magnitude at most
 
 \[
 O(mB)\,O(m^{-1})\,O(\epsilon)
@@ -400,7 +392,7 @@ O(mB)\,O(m^{-1})\,O(\epsilon)
 \tag{18}
 \]
 
-up to the uniformly bounded smooth envelope and the fixed normalization factors already present in `NB-261`--`NB-262`. Choosing `epsilon_n=o(B_n^{-1})` therefore forces the complete matched packet contribution inside the covered box to be `o(1)`.
+before using phase cancellation, because `e^{-u}=Theta(m^{-1})`. The smooth envelope is uniformly bounded on the box. Choosing `epsilon_n=o(B_n^{-1})` therefore forces every such covered matched packet to contribute `o(1)`.
 
 In particular, the `Theta(log m)` packet around the minimum-Hilbert side-lobe at `x=Theta(m)` from `NB-262` is not a universal signed obstruction. It is a feature of that two-constraint optimizer. Additional horizontal freedom can remove the entire exposed packet scale without paying in resolved `ell^2`, provided arbitrary conditioning and sufficiently many resolved channels are allowed.
 
