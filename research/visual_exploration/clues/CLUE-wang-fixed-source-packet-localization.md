@@ -31,6 +31,7 @@ based_on:
   - research/visual_exploration/findings/VIS-360-pooled-rescaling-colliding-center-floor.md
   - research/visual_exploration/findings/VIS-361-weighted-pooled-moment-gram-floor.md
   - research/visual_exploration/findings/VIS-362-one-inner-scale-weighted-support-exponent.md
+  - research/visual_exploration/findings/VIS-363-polynomial-mass-decay-hermite-order-statistic.md
 ---
 
 # Does Wang packet localization preserve source information without manufacturing strip gain?
@@ -71,7 +72,7 @@ has a positive degree-`q-1` eigenvalue floor,
 
 `s_q(D_beta V W^(1/2)) asymp sqrt(M) rho^(q-1)`.
 
-`VIS-362` now prices the first genuinely degenerate weighted continuation. Suppose the outer normalized weighted cloud collapses onto exactly `L<q` separated atoms, every atom keeps a positive fraction of total mass, and one common finer scale `epsilon` exposes a uniformly nondegenerate local weighted polynomial cloud at each atom. Then, with
+`VIS-362` prices the first genuinely degenerate weighted continuation. Suppose the outer normalized weighted cloud collapses onto exactly `L<q` separated atoms, every atom keeps a positive fraction of total mass, and one common finer scale `epsilon` exposes a uniformly nondegenerate local weighted polynomial cloud at each atom. Then, with
 
 `h=floor((q-1)/L)`,
 
@@ -83,19 +84,31 @@ and therefore
 
 `s_q(D_beta V W^(1/2)) asymp sqrt(M) rho^(q-1) epsilon^h`.
 
-So even an outer weighted Gram eigenvalue tending to zero is not by itself a new compact cancellation resource. A one-level positive weighted hierarchy is exactly Hermite-jet geometry; further compact gain requires the degeneration to survive the first inner rescaling.
+`VIS-363` removes the next apparent loophole: polynomially vanishing positive cluster masses. If
+
+`M_ell/M asymp epsilon^(2a_ell)`
+
+while the local weighted clouds stay uniformly nondegenerate at the same inner scale, assign cost `a_ell+d` to the `d`-th Hermite jet at center `ell`. If `tau_q` is the `q`-th smallest such cost, then
+
+`lambda_min(M^(-1)S^*WS) asymp epsilon^(2 tau_q)`
+
+and
+
+`s_q(D_beta V W^(1/2)) asymp sqrt(M) rho^(q-1) epsilon^tau_q`.
+
+Thus neither a singular outer weighted Gram nor polynomially disappearing positive support masses are by themselves new compact cancellation resources. One common inner scale is completely priced by a weighted Hermite filtration.
 
 ## Research question
 
-After quotienting bounded source-independent banks, bounded source-adaptive selection, anchored bank enlargement, compact square-anchor loss, regular one-cluster occupancy repayment, regular separated multicluster Hermite-jet capacity, pooled colliding-center configurations, positive diagonal coefficient weights, and the first one-scale weighted Gram collapse, can a genuinely source-coupled or growing/global construction produce a smaller Wang destination without merely importing a stronger estimate for `G`, `theta`, or an equivalent unsmoothed source quantity?
+After quotienting bounded source-independent banks, bounded source-adaptive selection, anchored bank enlargement, compact square-anchor loss, regular one-cluster occupancy repayment, regular separated multicluster Hermite-jet capacity, pooled colliding-center configurations, positive diagonal coefficient weights, one-scale weighted Gram collapse, and polynomially vanishing outer mass fractions, can a genuinely source-coupled or growing/global construction produce a smaller Wang destination without merely importing a stronger estimate for `G`, `theta`, or an equivalent unsmoothed source quantity?
 
-The remaining live compact mechanisms must expose a resource outside that ledger: a **recursive weighted degeneration** in which mass fractions or local normalized weighted Grams continue to collapse after the first inner Hermite rescaling, a genuinely non-diagonal/indefinite coefficient topology, or source-dependent coefficients carrying signed arithmetic information. Other exits remain growing tail depth/order, scale escape toward zero or infinity, growing/global phase complexity, shrinking windows, an infinite-dimensional topology, nonlinear source dependence, or direct signed arithmetic structure of `G`.
+The remaining live compact mechanisms must expose a resource outside that ledger: a **recursive weighted degeneration beyond one common Hermite scale** in which local normalized weighted Grams themselves lose rank/conditioning, distinct nested inner scales remain after the first rescaling, or the coefficient geometry leaves the positive diagonal Hilbert setting. Source-dependent coefficients carrying signed arithmetic information remain a separate route. Other exits remain growing tail depth/order, scale escape toward zero or infinity, growing/global phase complexity, shrinking windows, an infinite-dimensional topology, nonlinear source dependence, or direct signed arithmetic structure of `G`.
 
 ## Why it may matter
 
-The compact fixed-depth branch is now close to a recursive multiscale classification. `VIS-358` prices one dense cluster; `VIS-359` prices regular separated clusters by local Hermite capacity; `VIS-360` pools colliding centers at their outer scale; `VIS-361` shows that positive nonuniform coefficient weights merely replace raw occupancy by a positive weighted moment measure; `VIS-362` shows that the first loss of rank of that measure is still explicitly priced when one inner scale restores healthy local sampling.
+The compact fixed-depth branch is now close to a recursive multiscale classification. `VIS-358` prices one dense cluster; `VIS-359` prices regular separated clusters by local Hermite capacity; `VIS-360` pools colliding centers at their outer scale; `VIS-361` shows that positive nonuniform coefficient weights merely replace raw occupancy by a positive weighted moment measure; `VIS-362` prices a first outer rank collapse when all surviving support masses stay macroscopic; `VIS-363` shows that even polynomially vanishing positive masses are still just additive jet costs when one common inner rescaling keeps every local cloud healthy.
 
-A positive compact-bank mechanism must therefore exhibit an actual **persistent** hierarchy of lost polynomial modes. If an outer cloud collapses to `L` positive-mass atoms but their first rescaled local clouds are healthy, the extra penalty is already `epsilon^floor((q-1)/L)` and the branch closes at that level. Only vanishing masses, another local Gram collapse, deeper nested scales, or a changed coefficient topology remain as compact geometric resources.
+A positive compact-bank mechanism must therefore exhibit an actual **persistent multiscale loss**, not merely light clusters. Once mass decay and jet depth are combined into the cost spectrum `a_ell+d`, the first `q` costs already determine the full one-scale singular exponent. What remains is genuinely recursive geometry: another local Gram collapse, incompatible finer scales, a changed coefficient topology, or arithmetic/source information not present in the source-free bank geometry.
 
 ## Decisive test
 
@@ -113,11 +126,23 @@ If the cluster centers themselves approach one another, do not treat pairwise se
 
 If the coefficient space uses positive diagonal weights `w_j`, set `M=sum_j w_j` and form the normalized weighted Gram `M^(-1)S^*WS`. Apply `VIS-361`: if its smallest eigenvalue stays bounded below, the weighted quotient scale is `sqrt(M) rho^(q-1)` no matter how unequal the individual positive weights are.
 
-If that weighted outer Gram degenerates because the normalized measure collapses onto `L<q` separated support points, test the **first inner scale before crediting a new mechanism**. When each support point keeps a mass fraction bounded below and one common inner rescaling has a uniformly nondegenerate local degree-`q-1` weighted moment Gram, apply `VIS-362`:
+If that weighted outer Gram degenerates because the normalized measure collapses onto `L<q` separated support points and each support point keeps a positive mass fraction, test the first inner scale before crediting a new mechanism. When one common inner rescaling has a uniformly nondegenerate local degree-`q-1` weighted moment Gram, apply `VIS-362`:
 
 `s_q asymp sqrt(M) rho^(q-1) epsilon^floor((q-1)/L)`.
 
-Continue inward only if at least one of those hypotheses fails materially: a support mass fraction vanishes, a local weighted Gram also degenerates, or distinct finer scales remain in the deficient modes. A claimed deeper hierarchy must identify the deficient polynomial subspace after the first rescaling and show that its next normalized Gram still loses a positive eigenvalue. Do not infer recursive degeneration merely from the fact that the outer Gram was singular.
+If some outer mass fractions also vanish polynomially at that same inner scale, write
+
+`M_ell/M asymp epsilon^(2a_ell)`
+
+and apply `VIS-363`. Form the finite jet-cost multiset
+
+`{a_ell+d : 0<=d<=q-1}`
+
+and let `tau_q` be its `q`-th smallest element. Then the full one-scale weighted quotient is already priced by
+
+`s_q asymp sqrt(M) rho^(q-1) epsilon^tau_q`.
+
+Continue inward only if the local weighted Grams themselves degenerate after this rescaling, distinct finer scales remain in the deficient modes, or no fixed common-scale valuation describes the relevant mass/local geometry. A claimed deeper hierarchy must identify the deficient polynomial subspace after the priced filtration and show that its next normalized Gram still loses a positive eigenvalue.
 
 If the effective cancellation depth grows, combine `VIS-342`--`VIS-343` with the conditioning of the growing moment system. If downstream phase geometry also grows or degenerates, price its cluster count/multiplicity/span/density, separation, and window length through `VIS-344`--`VIS-353`.
 
@@ -125,18 +150,18 @@ If coefficients, scales, translations, weights, or selection rules use signed in
 
 For an infinite representation, specify the convergence topology, coefficient norm, truncation control, and finite approximants that preserve the claimed gain.
 
-Kill a route if its improvement disappears after the explicit growth/degeneration parameter is charged, if adaptive weights merely approach the known moment kernel, if extra scales leave a stable anchor intact, if regular occupancy restores the full-map floor as in `VIS-358`--`VIS-359`, if pooled center collisions retain a stable normalized moment Gram as in `VIS-360`, if positive diagonal weights retain a stable normalized weighted moment Gram as in `VIS-361`, if a one-level outer weighted collapse is restored by the inner Hermite exponent in `VIS-362`, if a changed norm or weighting is doing the real work but is not priced, if source-dependent weights encode the target source estimate, or if the gain is lost in the destination derivative step.
+Kill a route if its improvement disappears after the explicit growth/degeneration parameter is charged, if adaptive weights merely approach the known moment kernel, if extra scales leave a stable anchor intact, if regular occupancy restores the full-map floor as in `VIS-358`--`VIS-359`, if pooled center collisions retain a stable normalized moment Gram as in `VIS-360`, if positive diagonal weights retain a stable normalized weighted moment Gram as in `VIS-361`, if a one-level outer weighted collapse is restored by the inner Hermite exponent in `VIS-362`, if polynomially vanishing positive masses are already priced by the weighted jet order statistic in `VIS-363`, if a changed norm or weighting is doing the real work but is not priced, if source-dependent weights encode the target source estimate, or if the gain is lost in the destination derivative step.
 
 ## Evidence boundary
 
-`VIS-333`--`VIS-362` are exact representation, obstruction, conditioning, compactness, packing, Hermite-interpolation, pooled-rescaling, weighted-moment, and finite-dimensional negative-control results. They do not prove a stronger PNT remainder, a new pointwise estimate for `G`, an RH-equivalent localization theorem, or a destination-level improvement.
+`VIS-333`--`VIS-363` are exact representation, obstruction, conditioning, compactness, packing, Hermite-interpolation, pooled-rescaling, weighted-moment, and finite-dimensional negative-control results. They do not prove a stronger PNT remainder, a new pointwise estimate for `G`, an RH-equivalent localization theorem, or a destination-level improvement.
 
-`VIS-362` handles exactly one additional positive weighted inner scale after the outer normalized moment Gram collapses to `L<q` separated atoms with nonvanishing mass fractions. It does not classify arbitrary recursive cluster trees, vanishing cluster masses, locally degenerate weighted measures, non-diagonal or indefinite coefficient geometries, growing asymptotic depth, or infinite-dimensional limits.
+`VIS-363` handles one common inner scale with healthy local positive weighted clouds and cluster mass fractions comparable to fixed powers `epsilon^(2a_ell)`. It does not classify arbitrary recursive cluster trees, locally degenerate weighted measures, multiple incompatible inner scales, non-polynomial valuations requiring a different rescaling, non-diagonal or indefinite coefficient geometries, growing asymptotic depth, or infinite-dimensional limits.
 
-The clue therefore remains `accepted`, but its compact frontier is narrowed to **persistent recursive degeneration beyond the first weighted Hermite rescaling**, or a genuinely different coefficient topology. Growing order, scale escape, phase/window/infinite-dimensional resources, and genuinely new arithmetic source information remain separate exits.
+The clue therefore remains `accepted`, but its compact frontier is narrowed to **recursive degeneration beyond a single weighted Hermite filtration**, or a genuinely different coefficient topology. Growing order, scale escape, phase/window/infinite-dimensional resources, and genuinely new arithmetic source information remain separate exits.
 
 ## Research disposition
 
 Outcome: **narrowed**.
 
-Treat bounded source-independent conditioning, bounded source-adaptive selection, anchored fixed-depth scale growth, diffuse compact anchor loss, regular one-cluster collapse, regular separated multicluster occupancy, colliding-center clouds with a stable pooled outer Gram, arbitrary positive diagonal weights with a stable weighted Gram, and a one-level positive weighted outer collapse with healthy positive-mass inner clouds as closed. Future compact-bank work must exhibit a recursive loss that survives the first inner Hermite rescaling or leave the positive diagonal Hilbert setting; other continuations must expose growing order, scale escape, infinite/nonlinear structure, or a new signed source estimate that survives the unchanged Wang destination audit.
+Treat bounded source-independent conditioning, bounded source-adaptive selection, anchored fixed-depth scale growth, diffuse compact anchor loss, regular one-cluster collapse, regular separated multicluster occupancy, colliding-center clouds with a stable pooled outer Gram, arbitrary positive diagonal weights with a stable weighted Gram, a one-level positive weighted outer collapse with healthy macroscopic inner clouds, and polynomially vanishing positive cluster masses on one common healthy inner scale as closed. Future compact-bank work must exhibit a recursive local Gram loss, genuinely distinct nested scales, a different coefficient topology, or arithmetic source information not already encoded by the source-free weighted Hermite filtration; other continuations must expose growing order, scale escape, infinite/nonlinear structure, or a new signed source estimate that survives the unchanged Wang destination audit.
