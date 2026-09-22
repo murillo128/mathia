@@ -116,7 +116,7 @@ I_W+B^*A^{-1}B
 \tag{4}
 \]
 
-These multiplicative null blocks inherit their own exact semigroup cocycle. For `k,m,n>=2` whenever the relevant lower sections are already first-free-surjective,
+These multiplicative null blocks inherit their own exact semigroup cocycle. For `k,m,n>=2`, whenever the relevant lower sections are already first-free-surjective,
 
 \[
 \boxed{
