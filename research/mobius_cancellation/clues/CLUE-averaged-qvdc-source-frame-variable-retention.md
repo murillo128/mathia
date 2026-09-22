@@ -18,56 +18,69 @@ based_on:
   - research/mobius_cancellation/findings/MC-455-standard-qvdc-conductor-reduction-preserves-product-quotient.md
   - research/mobius_cancellation/findings/MC-456-triply-well-factorable-dispersion-provides-a-factor-specific-quotient-breaking-template.md
   - research/mobius_cancellation/findings/MC-457-coprime-factor-residue-completion-tensorizes-from-fixed-source-conductor.md
+  - research/mobius_cancellation/findings/MC-458-staged-factor-conditioning-exposes-residual-divisor-sum-kernel.md
 ---
 
-# Can a pre-positive factor-specific dispersion transform break the Möbius source-frame quotient?
+# Can the staged factor-weighted source kernel beat the Möbius source-frame tariff?
 
 ## Observation
 
-The direct source-frame repairs are now tightly classified. `MC-446`--`MC-450` show that ambient box averaging, hidden CRT multiplicity, one-lcm Fourier/Weil control, near-complete intervals, and bare cross-lcm frequency synchronization do not pay the conductor-power occupancy tariff. The surviving gain must use arithmetic information before generic recombination or positive quadratic closure.
+The direct source-frame repairs are now tightly classified. `MC-446`--`MC-450` show that ambient box averaging, hidden CRT multiplicity, one-lcm Fourier/Weil control, near-complete intervals, and bare cross-lcm frequency synchronization do not pay the conductor-power occupancy tariff. `MC-451`--`MC-455` then show that fixed-lcm sieve signs, raw truncated Möbius, bounded factorable component counts, internal factor multiplicity, and source-only conductor splitting do not become exponent-saving resources merely by changing representation.
 
-The coefficient side is equally restrictive. `MC-451` shows that the fixed-lcm beta-sieve signs are coherent rather than self-cancelling; `MC-452` shows that raw truncated Möbius is not a standard well-factorable weight; `MC-453` shows that a bounded decomposition into factorable components buys only a bounded constant if the components are separately closed by positive quadratic norms. `MC-454` then identifies the core quotient obstruction: internal tuples such as `(r1,r2,r1',r2')` create no new source occupancy while the kernel depends only on their products `(d,e)`.
+`MC-456` supplies the positive neighboring template: Pascadi/Yang-type dispersion succeeds when factor blocks occupy genuinely different arithmetic roles before positive closure and survive into reciprocal/Kloosterman phases. `MC-457` tests the most direct transfer into the present fixed-conductor frame and finds exact CRT tensorization: an internal factor retained only as an independent coprime residue modulus disappears from complete mixed blocks, leaving factor dependence only in incomplete tails.
 
-`MC-455` tests the obvious conductor-factorization escape and proves that standard source-only q-van-der-Corput steps still factor through `(d,e)` when their conductor splits and shifts are chosen independently of the internal coefficient representative. Conductor reduction is real, but it is not automatically a factor-level source mechanism.
+`MC-458` now identifies a different legal ordering. For one genuine factorable component `lambda=alpha*beta`, write
 
-`MC-456` supplies the first positive structural precedent from modern prior art. In Pascadi's triply-well-factorable prime-distribution method, and in Yang's 2026 convolution-type use of it, the factor variables are themselves factors of the progression modulus. Linnik dispersion and completion keep those blocks in different arithmetic roles and produce reciprocal/Kloosterman phases that are not constant on a fixed total-product fibre. This validates the *shape* of the escape condition while also exposing the mismatch with the present fixed external character conductor.
+\[
+B_\beta(y)=\sum_{s\mid y}\beta_s,
+\qquad
+w(m)=\sum_{r\mid m}\alpha_r B_\beta(m/r).
+\]
 
-`MC-457` now tests the most direct transfer ordering: keep one internal sieve factor as a separate congruence modulus and complete the translated source sum before recombining it. Because every surviving sieve factor is coprime to the fixed primitive-character conductor, the mixed modulus is a CRT product. Complete blocks tensorize exactly: every nonzero Fourier mode of the factor congruence vanishes and the zero mode is the same Ramanujan correlation `c_q(h)`. Separate factor residues survive only in the incomplete mixed tails.
+After conditioning the shifted correlation on the `alpha`-block divisors `r,r'`, the incomplete source kernel becomes a translated primitive-character correlation multiplied by two residual divisor-sum weights along affine quotient progressions. Those residual weights vary with the same integer source variable, so they are not the independent coprime residue masks classified by `MC-457`. Expanding them immediately restores the old product variables, but before that expansion there is a genuine staged factor-weighted kernel on which an analytic estimate can act.
 
 ## Research question
 
-Does the exact pre-recombination well-factorable source form underlying `MC-409`/`MC-413` admit any legitimate **incomplete** dispersion, reciprocity, Poisson/completion, or conductor-coupling order in which two internal factorizations of the same divisor products acquire analytically different source kernels *before* the CRT tensorization of `MC-457` or the positive closure of `MC-453`?
+Can the exact `MC-458` staged kernel
 
-Concretely, can one derive a transformed kernel `K(z;xi)` for internal label `z=(r1,r2,r1',r2')` such that two labels with the same products `r1 r2=d` and `r1' r2'=e` give different kernels on a non-negligible source/dual set, with the distinction surviving the later diagonal/off-diagonal bookkeeping? A useful analogue of the Pascadi/Yang architecture would put disjoint factor blocks into distinct modulus or reciprocal-phase positions in a way that prevents the fixed-conductor source coordinate and the coefficient-factor coordinate from tensorizing.
+\[
+\sum_{k\in I}
+\chi(k+u+\delta)\overline{\chi(k+u)}
+B_\beta(A+vk)\overline{B_\beta(A'+v'k)}
+\]
 
-A second branch remains legitimate but separate: source-only conductor reduction could still win without quotient breaking if the reduced-conductor estimate is quantitatively strong enough to beat the existing product-level occupancy cost after every later summation.
+be estimated **before** residual divisor expansion and before componentwise positive closure with a strict conductor-power gain that survives the true diagonal, progression concentration, exceptional sets, and later source-depth bookkeeping?
+
+Equivalently, does staging one well-factorable block as progression geometry and the complementary block as a divisor-sum amplitude create analytically usable coupling, or does every admissible estimate of this object ultimately pay the same product-level occupancy/diagonal tariff once the arithmetic concentration of `B_\beta` on the relevant affine progressions is accounted for?
+
+A second branch remains legitimate but separate: source-only conductor reduction could still win without factor-specific staging if the reduced-conductor estimate beats the full product-level occupancy cost after every later summation.
 
 ## Why it may matter
 
-The prior-art comparison removes an important ambiguity. Well-factorability is not useful because a coefficient has many convolution representations; successful neighboring theorems use it because the factors enter the arithmetic constraint before dispersion and remain visible in a structured oscillatory kernel. That is qualitatively different from all routes closed by `MC-446`--`MC-457`.
+The structural ambiguity in the factor-specific branch is now removed. The fixed external character conductor does **not** force every legal well-factorable ordering to become product/lcm-level before analysis: `MC-458` gives an exact pre-positive carrier outside the simple CRT-tensorization hypothesis of `MC-457`. At the same time, the carrier is algebraically equivalent to the old product expansion after its residual divisor weights are opened, so representation change alone is not a gain.
 
-A positive transfer would therefore expose genuinely new usable information in the current branch rather than another reparameterization. A negative transfer theorem showing that the fixed external character conductor forces every admissible pre-positive transform to remain product/lcm-level or CRT-tensorized would, conversely, close the most plausible modern factorable-dispersion escape and leave only a source-only quantitative improvement or a materially different representation.
+This leaves a sharper and more valuable question than generic “can factorability help?” A positive estimate would identify the first factorable mechanism in this branch that survives long enough to alter the analytic budget. A negative estimate showing that the progression-sensitive second moment or true diagonal of the residual weights necessarily consumes every prospective conductor saving would close the most plausible remaining well-factorable escape without claiming that factorability is useless in other arithmetic geometries.
 
 ## Decisive test
 
-Start from one genuine well-factorable component of the centered incomplete correlation in `MC-413`, *before* the multiplication quotient is restored. Keep its internal factor variables explicit and keep the factor-conditioned source intervals incomplete through the first nontrivial dispersion/Cauchy/reciprocity step.
+Take a balanced well-factorable component `lambda=alpha*beta` in the source form underlying `MC-409`/`MC-413`, and keep the exact `MC-458` ordering through the first nontrivial dispersion/Cauchy/completion step. Do **not** expand `B_\beta` into its complementary divisors before that step and do not replace it by a pointwise divisor-function majorant unless the resulting loss is explicitly charged.
 
-The structural admission test is fibre separation **before full mixed completion**: exhibit a justified transformed phase, congruence, interval, or source kernel that is not constant on the map `(r1,r2,r1',r2')->(d,e)` and that is not merely a nonzero Fourier mode of an independent coprime residue mask destined to vanish by `MC-457`. The Pascadi/Yang template in `MC-456` remains the comparison control: there, separately factorized modulus blocks survive dispersion/completion into reciprocal phases such as `e(h overline(ell d)/c)`. Merely splitting an external conductor as in `MC-455`, or merely retaining a coprime factor residue through complete source analysis as in `MC-457`, does not pass the test.
+First derive a progression-sensitive second-moment or dispersion bound for the residual amplitudes `B_\beta(A+vk)` over the actual family of slopes, offsets, source intervals, and factor ranges. The unrestricted exact baseline from `MC-458`, `sum_{y<=Y}|B_\beta(y)|^2 << Y(log S)^3`, is not enough because the affine progressions may concentrate divisibility. Determine the true diagonal after the character phase and both residual weights are retained.
 
-If fibre separation is obtained, carry the exact transformed form through Cauchy, completion, exceptional sets, common-radical factors, and the true diagonal. The route survives only if the final bound has a strict quantitative gain over the current source-depth/occupancy budget. If every legal ordering can be shown to factor through `(d,e)`, `[d,e]`, or a CRT tensor product before the first useful estimate, record that as the closure result instead.
+Then propagate the strongest justified bound through the `MC-415` diagonal and `MC-448` occupancy budget. The branch survives only if the final estimate gives a strict conductor-power improvement after all summations and exceptional terms. If the required progression-sensitive energy is necessarily polynomially larger, or every useful estimate must first expand/majorize the residual divisor sums and thereby restore the product quotient, record that as the closure result.
 
-For the independent source-only branch, propagate the best admissible reduced-conductor estimate through the existing product-level summation and require an actual net conductor-power gain after all losses; an improved individual character sum that is consumed by occupancy does not qualify.
+For the independent source-only branch, propagate the best admissible reduced-conductor estimate through the existing product-level summation and require an actual net conductor-power gain; an improved individual character sum that is consumed by occupancy does not qualify.
 
 ## Evidence boundary
 
-`MC-456` is a literature-backed transfer classification, not a theorem about the Möbius kernel. Pascadi and Yang show that factor-specific modulus geometry can power successful dispersion estimates in arithmetic-progression problems; they do not show that the current divisor-factor variables can be inserted into the fixed-conductor translated-character source geometry.
+`MC-456` is a literature-backed transfer classification, not a theorem about the Möbius kernel. Pascadi and Yang show that factor-specific modulus geometry can power successful dispersion estimates in arithmetic-progression problems; they do not estimate the fixed-conductor staged kernel here.
 
-`MC-457` is an exact finite CRT/Fourier obstruction for one natural attempted insertion: a separate sieve factor used only as an additional coprime residue modulus contributes no nontrivial factor mode on complete mixed blocks. It does not classify genuinely incomplete dispersion or a transform that entangles the factor modulus with the source before completion.
+`MC-457` exactly closes full completion of an independent coprime factor-residue mask. `MC-458` exactly constructs a different staged kernel and proves only a global polylogarithmic `L^2` baseline for its residual divisor-sum weight. It does **not** prove a progression-sensitive bound for those weights, a power saving for the weighted translated-character sum, or an improvement to Möbius cancellation.
 
-No theorem yet supplies surviving fibre separation for the exact incomplete `MC-413` kernel, and no source-only conductor estimate has yet been propagated to a winning global budget. The accepted clue therefore remains open, but generic factor counting, bounded coefficient splitting, independent q-vdC conductor factorization, and full completion of an independent factor residue are no longer live escapes.
+The structural admission question is therefore answered positively in a narrow sense, but the substantive analytic question remains open. The clue stays `accepted` because no theorem yet shows that the staged carrier produces, or cannot produce, a net conductor-power gain.
 
 ## Research disposition
 
-The clue remains `accepted` and is **materially narrowed through `MC-457`**. The live well-factorable branch is now an incomplete pre-tensorization transfer problem: either derive a Pascadi/Yang-style dispersion step while factor-conditioned source tails remain coupled, producing a non-tensor factor-specific kernel, or prove that the fixed external conductor forces those tails to recombine before any useful estimate. Generic internal-factor multiplicity, source-only q-vdC after product collapse, and complete factor-residue completion are closed by `MC-454`--`MC-457`.
+The clue remains `accepted` and is **materially narrowed through `MC-458`**. The live well-factorable branch is no longer a search over arbitrary orderings: it is the quantitative analysis of the explicit staged residual-divisor-sum kernel. The next result must either demonstrate a progression-sensitive dispersion gain that survives the existing source budget or prove that the residual-weight energy/diagonal forces collapse back to the old tariff.
 
-The independent source-only branch remains open only as a quantitative question: reduced conductor must beat the full product-level occupancy budget without crediting internal factor labels.
+Generic internal-factor multiplicity, bounded component splitting, source-only q-vdC after product collapse, and complete factor-residue completion remain closed by `MC-454`--`MC-457`. The independent source-only conductor-reduction branch remains open only as a separate quantitative question.
