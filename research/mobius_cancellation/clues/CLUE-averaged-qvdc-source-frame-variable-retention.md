@@ -29,6 +29,7 @@ based_on:
   - research/mobius_cancellation/findings/MC-463-gcd-sector-normalization-collapses-to-common-anchor-quotient.md
   - research/mobius_cancellation/findings/MC-464-normalized-gcd-gate-makes-favorable-shifts-totient-sparse.md
   - research/mobius_cancellation/findings/MC-465-fejer-weighted-favorable-gcd-classes-remain-sparse.md
+  - research/mobius_cancellation/findings/MC-466-original-shift-fejer-envelope-cancels-outer-gcd-advantage.md
 ---
 
 # Can the staged factor-weighted source kernel beat the Möbius source-frame tariff?
@@ -138,6 +139,23 @@ Thus they have vanishing density whenever `M=o(sqrt(r_2))`; merely allowing many
 
 So the triangular preference for short shifts does not rescue the sparse favorable classes: `M=o(sqrt(r_2))` still gives vanishing favorable mass. The first outer-weight loophole is closed for the canonical positive q-vdC kernel. `MC-415`--`MC-417` also show that abandoning Fejér inside the scalar positive finite-band framework is not a free optimization, because the Fejér window already minimizes the normalized diagonal/DC burden, although those findings do not by themselves give a sharp favorable-set concentration inequality for every alternative kernel.
 
+`MC-466` removes the most immediate coefficient-concentration loophole in that normalized ratio. Returning to the original shift `h`, the quotient has the exact form
+
+\[
+T=\frac{r'}{(h,r')},
+\]
+
+and the favorable positive Fejér mass for any fixed outer pair satisfies
+
+\[
+F_Q(r,r';M)
+\le
+\frac{Q(Q-1)}2
+\min\!\left(1,\frac{M(M+1)}{r'}\right).
+\]
+
+The bound is independent of `g=(r,r')` and survives multiplication by **arbitrary nonnegative shift-independent outer coefficient-pair weights**. Thus concentrating the actual outer coefficients on large-gcd pairs cannot by itself beat the standard-Fejér sparsity barrier: the gain in favorable fraction among compatible shifts is exactly offset, at exponent scale, by the thinner supply of compatible original shifts. Any surviving outer advantage must instead come from cells where the pair-dependent threshold `M_{r,r'}` is itself large relative to `sqrt(r')`, from small `r'`, or from structure involving the retained residual coefficient/amplitude rather than bare outer-gcd concentration.
+
 ## Research question
 
 Can the one-sided staged family, after the exact `MC-463` aggregation,
@@ -150,7 +168,7 @@ Can the one-sided staged family, after the exact `MC-463` aggregation,
 \overline{B_\beta(C_{s_0}+r_1s_0j)},
 \]
 
-be estimated before the second residual expansion and before componentwise positive closure with a strict conductor-power gain that survives outer coefficient weights, aggregated coefficient participation, amplitude variation, off-diagonal dispersion/completion, exceptional source ranges, and later source-depth bookkeeping?
+be estimated before the second residual expansion and before componentwise positive closure with a strict conductor-power gain that survives pair-dependent interval geometry, aggregated coefficient participation, amplitude variation, off-diagonal dispersion/completion, exceptional source ranges, and later source-depth bookkeeping?
 
 For a fixed outer pair set
 
@@ -160,15 +178,15 @@ G=(h_0,r_2),
 T=r_2/G.
 \]
 
-`MC-464`--`MC-465` now show that, for the standard Fejér outer average, configurations with sufficiently small `T` are not only support-sparse but carry vanishing relative nonzero shift mass below the square-root normalized-quotient threshold. The live arithmetic question is therefore sharper: **can the actual well-factorable outer coefficients and the aggregated residual coefficients concentrate enough useful signed mass on those sparse favorable classes to overcome that baseline, and does the aligned unexpanded amplitude preserve a conductor-power gain once they do?**
+`MC-464`--`MC-466` now show that, for the standard Fejér outer average, neither generic shift abundance, triangular short-shift bias, nor concentration of shift-independent outer coefficient mass on large pair gcds supplies the missing resource. The live arithmetic question is therefore sharper: **which outer cells make the actual threshold `M_{r,r'}` large enough relative to `sqrt(r')` (or place `r'` on a genuinely smaller scale), and inside those cells do `\widetilde\beta(s_0)` and the aligned unexpanded amplitude retain enough weighted participation and oscillatory structure to yield a conductor-power gain?**
 
 A second branch remains legitimate but separate: source-only conductor reduction could still win without factor-specific staging if the reduced-conductor estimate beats the full product-level occupancy cost after every later summation.
 
 ## Why it may matter
 
-The factor-specific branch has moved from a qualitative representation question to a narrow quantitative bottleneck. `MC-458` gives an exact pre-positive carrier, `MC-459` removes positive-energy inflation as the immediate obstruction, `MC-460` promotes a residual factor into a reciprocal translated-character shift, `MC-461` compresses the accompanying start variation, `MC-462` supplies the first support gate, and `MC-463` removes the artificial gcd-sector coordinate. `MC-464`--`MC-465` then show that the outer gcd configurations admitted by that gate are sparse in both counting measure and the standard Fejér shift measure below the same square-root threshold.
+The factor-specific branch has moved from a qualitative representation question to a narrow quantitative bottleneck. `MC-458` gives an exact pre-positive carrier, `MC-459` removes positive-energy inflation as the immediate obstruction, `MC-460` promotes a residual factor into a reciprocal translated-character shift, `MC-461` compresses the accompanying start variation, `MC-462` supplies the first support gate, and `MC-463` removes the artificial gcd-sector coordinate. `MC-464`--`MC-465` then show that the outer gcd configurations admitted by that gate are sparse in both counting measure and the standard Fejér compatible-shift measure below the same square-root threshold, while `MC-466` shows that large outer gcd does not recover the loss when one returns to the original Fejér shift envelope with arbitrary shift-independent coefficient weights.
 
-A positive route must therefore exhibit **arithmetic coefficient concentration or joint oscillatory structure**, not merely choose the standard shift average and hope that its short-shift bias favors large gcds. A negative result showing that well-factorable coefficient mass cannot concentrate sufficiently on those classes, or that the surviving amplitude destroys the fixed-anchor gain, would close the most plausible remaining factor-specific escape without claiming factorability is useless in other arithmetic geometries.
+A positive route must therefore exhibit **pair-dependent interval/support geometry or joint residual oscillatory structure**, not merely coefficient concentration on large gcds. A negative result showing that the remaining cells with `M_{r,r'}` large relative to `sqrt(r')` or small `r'` carry insufficient total coefficient mass, or that the surviving residual amplitude destroys the fixed-anchor gain inside those cells, would close the most plausible remaining factor-specific escape without claiming factorability is useless in other arithmetic geometries.
 
 ## Decisive test
 
@@ -186,9 +204,17 @@ U_{s_0}\text{ determined by }s_0\pmod T,
 D_{s_0}=H_0(r_1Ts_0)^{-1}\pmod p.
 \]
 
-In the regime `T<p`, apply the exact full-family support gate first. `MC-464`--`MC-465` already price the **bare standard-Fejér outer mass** of the surviving normalized-gcd classes, so do not repeat that counting argument. Instead restore the actual outer sieve coefficients and determine whether their signed or quadratic weight can concentrate on the classes `T(h_0)<=M` at a rate that beats the Fejér baseline without merely moving the cost into the positive diagonal. If a modified positive finite-band shift filter is proposed, its favorable-set concentration and its diagonal/DC cost must be priced together against `MC-416`--`MC-417`.
+In the regime `T<p`, apply the exact full-family support gate first. `MC-464`--`MC-466` already price the bare normalized-gcd sparsity, the standard Fejér weighting, and the absolute original-shift Fejér envelope after arbitrary nonnegative shift-independent outer coefficient weights. **Do not repeat large-gcd coefficient concentration as a live escape.** Instead retain the actual pair-dependent interval length and threshold
 
-Inside the surviving outer classes, group the aggregated coefficients `\widetilde\beta(s_0)` by exact anchor class and reciprocal-shift collision and compute their **weighted participation**, not just support cardinality. Effective participation must exceed the `p/H` slice threshold at the relevant common-length or legitimate variable-length scale.
+\[
+M_{r,r'}
+=
+\left\lceil\frac{S L_{r,r'}}{p-L_{r,r'}}\right\rceil-1
+\]
+
+whenever the common-length reduction applies, dyadically or otherwise separate the scale of `r'`, and price the total outer coefficient mass of cells for which `M_{r,r'}^2/r'` is not small. A positive outer-stage result must show that these exceptional cells carry enough mass for a later saving; a negative result may show that their total coefficient envelope is itself negligible. If a modified positive finite-band shift filter is proposed, its favorable-set concentration and diagonal/DC cost must still be priced together against `MC-416`--`MC-417`.
+
+Inside the surviving outer cells, group the aggregated coefficients `\widetilde\beta(s_0)` by exact anchor class and reciprocal-shift collision and compute their **weighted participation**, not just support cardinality. Effective participation must exceed the `p/H` slice threshold at the relevant common-length or legitimate variable-length scale.
 
 Then repeat the estimate with the second residual amplitude still present, using its exact aligned trajectory
 
@@ -196,9 +222,9 @@ Then repeat the estimate with the second residual amplitude still present, using
 B_\beta(C_{s_0}+r_1s_0j)
 \]
 
-rather than replacing it by an unrelated pointwise norm. The next substantive gate is passed only if a weighted fixed-anchor dispersion or completion estimate retains a strict conductor-power gain after coefficient concentration, amplitude variation, variable lengths, outer summation, exceptional terms, and source depth are all charged.
+rather than replacing it by an unrelated pointwise norm. The next substantive gate is passed only if a weighted fixed-anchor dispersion or completion estimate retains a strict conductor-power gain after the exceptional outer-cell mass, aggregated coefficient participation, amplitude variation, variable lengths, outer summation, exceptional terms, and source depth are all charged.
 
-A bound that treats different `d=(s,r_2)` sectors as independent source families, averages over the full `(U,D)` box, expands the surviving divisor sum first, ignores the normalized-gcd support/mass condition, or merely rederives the bare Fejér sparsity of `MC-465` has not passed this gate.
+A bound that treats different `d=(s,r_2)` sectors as independent source families, averages over the full `(U,D)` box, expands the surviving divisor sum first, ignores the normalized-gcd support/mass condition, rederives the bare Fejér sparsity of `MC-465`, or relies only on large `(r,r')` to beat the original-shift envelope of `MC-466` has not passed this gate.
 
 For the independent source-only branch, propagate the best admissible reduced-conductor estimate through the existing product-level summation and require an actual net conductor-power gain; an improved individual character sum consumed by occupancy does not qualify.
 
@@ -206,12 +232,12 @@ For the independent source-only branch, propagate the best admissible reduced-co
 
 `MC-456` is a literature-backed transfer classification, not a theorem about the Möbius kernel. Reciprocal/Kloosterman and bilinear character-sum methods in the neighboring literature show that reciprocal factor variables can be analytically meaningful, but they do not estimate the coupled family derived here.
 
-`MC-457` exactly closes full completion of an independent coprime factor-residue mask. `MC-458` exactly constructs the staged carrier. `MC-459` proves that its positive diagonal is affordable. `MC-460` exactly derives the reciprocal source shift and modular alignment of the surviving amplitude. `MC-461` exactly classifies the start fibres and the bare prime-conductor fixed-anchor shift moment. `MC-462` adds a sectorwise coefficient-independent support ceiling. `MC-463` proves the common normalized quotient and exact coefficient aggregation. `MC-464` proves totient/gcd sparsity of the favorable outer shifts, and `MC-465` proves that this sparsity survives the standard triangular Fejér weighting with relative favorable mass `O(M^2/r_2)`.
+`MC-457` exactly closes full completion of an independent coprime factor-residue mask. `MC-458` exactly constructs the staged carrier. `MC-459` proves that its positive diagonal is affordable. `MC-460` exactly derives the reciprocal source shift and modular alignment of the surviving amplitude. `MC-461` exactly classifies the start fibres and the bare prime-conductor fixed-anchor shift moment. `MC-462` adds a sectorwise coefficient-independent support ceiling. `MC-463` proves the common normalized quotient and exact coefficient aggregation. `MC-464` proves totient/gcd sparsity of the favorable outer shifts, `MC-465` proves that this sparsity survives the standard triangular Fejér weighting with relative favorable mass `O(M^2/r_2)`, and `MC-466` proves that the apparent large-outer-gcd advantage cancels in the original Fejér envelope even after arbitrary nonnegative shift-independent outer coefficient weighting, leaving an `O(M^2/r')` envelope.
 
-None of these findings proves that the **actual well-factorable coefficient weight** cannot concentrate on the favorable normalized-gcd classes, that `\widetilde\beta` attains the available participation, that the full weighted family with `B_\beta(C_{s_0}+r_1s_0j)` intact satisfies a useful joint moment, or that any local gain propagates to the final Möbius source budget. Nor do `MC-416`--`MC-417` classify every possible arithmetic, signed, or nonstationary reweighting. The clue therefore remains `accepted`.
+None of these findings proves that the actual pair-dependent threshold `M_{r,r'}` cannot be large on a coefficient-significant family, that small-`r'` cells are negligible, that `\widetilde\beta` attains the available participation, that the full weighted family with `B_\beta(C_{s_0}+r_1s_0j)` intact satisfies a useful joint moment, or that any local gain propagates to the final Möbius source budget. Nor do `MC-416`--`MC-417` classify every possible arithmetic, signed, nonstationary, or shift-adaptive reweighting. The clue therefore remains `accepted`.
 
 ## Research disposition
 
-The clue remains `accepted` and is **materially narrowed through `MC-465`**. Standard Fejér/q-vdC weighting is no longer a live escape from the normalized-gcd support sparsity: below the square-root quotient scale, the favorable classes carry vanishing relative nonzero shift mass even after the exact triangular weight is applied.
+The clue remains `accepted` and is **materially narrowed through `MC-466`**. Standard Fejér/q-vdC weighting is not a live escape from normalized-gcd support sparsity, and shift-independent outer coefficients cannot repair it merely by concentrating on large `(r,r')`: in the original shift envelope the compatible-supply loss cancels the normalized-gcd advantage.
 
-The live well-factorable branch is now restricted to two genuinely arithmetic questions: whether the actual outer sieve coefficients can concentrate useful mass on the sparse favorable gcd classes without an offsetting positive-energy cost, and whether the aggregated `\widetilde\beta` plus the aligned unexpanded residual amplitude then yield a strict conductor-power gain. Generic internal-factor multiplicity, bounded component splitting, source-only q-vdC after product collapse, complete factor-residue completion, polynomial progression-energy inflation, automatically free start/shift variation, short anchor fibres, residual-gcd-sector multiplicity, unweighted favorable-shift abundance, and ordinary Fejér short-shift bias are now closed or neutralized by `MC-454`--`MC-465`. The independent source-only conductor-reduction branch remains open only as a separate quantitative question.
+The live well-factorable branch is now restricted to two sharper arithmetic layers. First, identify and price outer cells where the **actual pair-dependent threshold** `M_{r,r'}` is large relative to `sqrt(r')` or where `r'` is genuinely small; generic large-gcd concentration is closed. Second, inside the surviving cells determine whether aggregated `\widetilde\beta` participation plus the aligned unexpanded residual amplitude yields a strict conductor-power gain before positive closure. Generic internal-factor multiplicity, bounded component splitting, source-only q-vdC after product collapse, complete factor-residue completion, polynomial progression-energy inflation, automatically free start/shift variation, short anchor fibres, residual-gcd-sector multiplicity, unweighted favorable-shift abundance, ordinary Fejér short-shift bias, and bare large-gcd outer coefficient concentration are now closed or neutralized by `MC-454`--`MC-466`. The independent source-only conductor-reduction branch remains open only as a separate quantitative question.
