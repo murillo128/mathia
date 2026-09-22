@@ -60,9 +60,9 @@ Then the exact simultaneous-deletion correction `Delta_T` from PC-391--PC-397 sa
 \tag{6}
 \]
 
-Here `omega` is Buchstab's function. Thus, after the only natural macroscopic normalization, the surviving positive Kron form is the universal nonlocal Riesz form of the normalized averaging operator `A_beta`; the rough-number arithmetic remains only in the scalar Buchstab density ratio. This is a boundary result, not a new RH mechanism.
+Here `omega` is Buchstab's function. Thus, after the natural macroscopic normalization, the surviving positive Kron form is the universal nonlocal Riesz form of the normalized averaging operator `A_beta`; the rough-number arithmetic remains only in the scalar Buchstab density ratio. This is a boundary result, not a new RH mechanism.
 
-## 1. A local upper-bound sieve supplies the missing singular-integrability control
+## 1. A local upper-bound sieve supplies the singular-integrability control
 
 Weak equidistribution of the rough-number clouds is not by itself enough to pass to the singular kernel `|x-y|^{-beta}`. The required extra input is a standard local consequence of the one-dimensional upper-bound linear sieve.
 
@@ -85,7 +85,7 @@ uniformly in the position of `I`. For a translated interval one has `|I_d|=Y/d+O
 
 for large `z`; the main term is `O(Y prod_{ell<=z}(1-1/ell))=O(Y/log z)` and the total interval remainder is `O(D)=o(Y/log z)`. This is the usual dimension-one upper-bound sieve, not a new rough-number estimate.
 
-For the survivor cloud choose a fixed `eta<u-1` and put `R_0=p^{1+eta}`. At distances below `R_0`, even the crude integer bound gives
+For the survivor cloud choose a fixed `eta<u-1` and put `R_0=p^{1+eta}`. Since `q/p->1`, the same local sieve bound applies with the survivor threshold `q` after a harmless reduction of `eta`. At distances below `R_0`, even the crude integer bound gives
 
 \[
 \sum_{1\le |s-t|<R_0}|s-t|^{-\beta}
@@ -109,7 +109,7 @@ O\!\left(\log p\left(\frac{R_0}{L}\right)^{1-\beta}\right)=o(1),
 
 while the mesoscopic contribution below `epsilon L` is `O(epsilon^{1-beta})`.
 
-This local-sieve truncation is the technical point that upgrades the macroscopic weak convergence used in PC-397 to convergence against the singular Riesz kernels needed for the exact limit below.
+This local-sieve truncation upgrades the macroscopic weak convergence used in PC-397 to convergence against the singular Riesz kernels needed for the exact limit below.
 
 ## 2. The two boundary clouds converge to Lebesgue measure with Buchstab cardinalities
 
@@ -213,20 +213,19 @@ x^TKx
 \tag{20}
 \]
 
-Using (18), the deleted empirical convergence in (13), and the pairwise uniform-integrability estimate (11), one obtains
+Using (18), the deleted empirical convergence in (13), and the pairwise uniform-integrability estimate (11), one obtains the form limit
 
 \[
 \boxed{
 x^TKx
-\sim
-(2\pi)^{-\beta}
+=(2\pi)^{-\beta}
 \frac{n_T^2}{n_S}H^{-\beta}
-\mathcal E_\beta(h).
+\left[\mathcal E_\beta(h)+o(1)\right].
 }
 \tag{21}
 \]
 
-The factor `1/2` in (5) matches the unordered-pair convention in (20), so no additional factor of two occurs.
+This formulation also covers the zero-energy case, for example constant `g`. The factor `1/2` in (5) matches the unordered-pair convention in (20), so no additional factor of two occurs.
 
 PC-397 already proves, with `A=D^{-1/2}KD^{-1/2}`, that
 
@@ -242,7 +241,7 @@ and consequently
 \tag{23}
 \]
 
-Therefore `x^TQx=(1+o(1))x^TKx`. Substituting (12) into (21) gives
+Therefore the same normalized limit holds with `x^TQx` in place of `x^TKx`. Substituting (12) into (21) gives
 
 \[
 \frac{n_T^2}{n_S}H^{-\beta}
@@ -300,7 +299,7 @@ This is **not** an operator-norm vanishing theorem at or below (28). A sequence 
 
 The arithmetic inputs are classical. PC-388 anchors the identification with rough numbers and cites H. Halberstam and H.-E. Richert, *Sieve Methods* (Academic Press, 1974), together with Kai (Steve) Fan, *Numerically explicit estimates for the distribution of rough numbers*, Journal of Number Theory 260 (2024), 120--150, DOI `10.1016/j.jnt.2024.01.008`, arXiv:2306.03347. Equation (7) is the standard upper-bound linear-sieve estimate on a translated interval, while (12)--(13) are fixed-parameter Buchstab theory.
 
-The Schur/Kron component is the classical framework of Dörfler--Bullo already anchored in `SOURCES.md`. The limiting energy (5) is likewise an ordinary positive nonlocal Dirichlet/Riesz form; generic graph-to-continuum convergence for nonlocal energies is established prior art, for example Y. Hafiene, J. M. Fadili and A. Elmoataz, *Continuum Limits of Nonlocal p-Laplacian Variational Problems on Graphs*, SIAM Journal on Imaging Sciences 12:4 (2019), 1772--1807, DOI `10.1137/18M1223927`. Targeted searches did not locate the exact rough-number/Kron composition in (6), but absence from search is not evidence of novelty of the continuum operator.
+The Schur/Kron component is the classical framework of Dörfler--Bullo already anchored in `SOURCES.md`. The limiting object (5) is explicitly a positive nonlocal Riesz/Dirichlet form, so no novelty is claimed for that continuum operator. Targeted searches across nonlocal graph-continuum limits, Riesz energies, Kron reduction, and rough-number supports did not locate the exact rough-number/Kron composition in (6), but absence from search is not evidence of novelty.
 
 More decisively, (6) passes a matched-control test in the negative direction. Replace `S` and `T` by deterministic point clouds with the same two cardinality asymptotics, empirical Lebesgue limit, and a comparable mesoscopic occupancy bound. The proof is unchanged and gives the same limit. The only arithmetic data surviving at leading smooth scale are the Buchstab density constants
 
