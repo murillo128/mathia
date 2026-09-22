@@ -14,46 +14,18 @@ NB-284--NB-287 isolate the genuine finite-section penalty. For a fixed zero pack
 
 NB-288 closes generic Hilbert conditioning as the source of a rate: arbitrary decreasing excess profiles coexist with uniformly positive, almost perfectly conditioned sampling Grams, bounded optimal right inverses and sample-visible enrichments. NB-289 closes the stronger sample-algebra shortcut. By a unit-triangular change of generators one can impose the exact future Dirichlet zero-sample vectors `n^(-rho_j)-n^(-1)` and their exact multiplicative semigroup identities while leaving every section, projector, sampling Gram, null innovation and prescribed lethargy profile unchanged.
 
-NB-290 supplies a genuine canonical source-metric identity that those controls do not automatically contain. The Nyman dilation isometry satisfies
+NB-290 supplies a genuine canonical source-metric identity that those controls do not automatically contain. The Nyman dilation isometry satisfies `P_(V_(mn-1)^perp) A_m w_n = sqrt(m) w_(mn)`, so the raw Gram--Schmidt pivots obey `sigma_(mn)<=sigma_n/sqrt(m)` and `sqrt(n) sigma_n` is monotone down divisibility chains. NB-291 then shows that **all scalar consequences of that pivot profile are still insufficient**: an old-section triangular graft can match the exact Dirichlet sample table and prescribe the canonical pivot `sigma_n` at every future index while preserving the same sections, sampling Grams, normalized null innovations and arbitrary finite-section lethargy. It therefore also matches the scalar divisibility contraction, retention coefficients, cocycle and one-step determinant ratios.
 
-`P_(V_(mn-1)^perp) A_m w_n = sqrt(m) w_(mn)`,
+NB-292 identifies the first exact vector/matrix structure that this scalar graft does not encode. For a finite zero packet `Z`, let `V_(r,Z)` be the Blaschke-deflated quotient sections, `L_Z` the first-free sampling map and `D_Z(m)` the diagonal action of the canonical dilation. The orthogonal multiplicative band `W_(m,n,Z)=V_(mn-1,Z) \ominus S_m V_(n-1,Z)` has positive sampling Gram `Gamma_(m,n,Z)=K_(mn-1,Z)-D_Z(m)K_(n-1,Z)D_Z(m)^* >= 0`, and these Grams obey the exact cocycle `Gamma_(km,n,Z)=Gamma_(k,mn,Z)+D_Z(k)Gamma_(m,n,Z)D_Z(k)^*`.
 
-so the raw Gram--Schmidt pivots obey `sigma_(mn)<=sigma_n/sqrt(m)` and `sqrt(n) sigma_n` is monotone down divisibility chains. NB-291 then shows that **all scalar consequences of that pivot profile are still insufficient**: an old-section triangular graft can match the exact Dirichlet sample table and prescribe the canonical pivot `sigma_n` at every future index while preserving the same sections, sampling Grams, normalized null innovations and arbitrary finite-section lethargy. It therefore also matches the scalar divisibility contraction, retention coefficients, cocycle and one-step determinant ratios.
+For the normalized innovation, the old-section defect `b_(m,n,Z)=S_m psi_(n,Z)-c_(m,n)psi_(mn,Z)` lies in this band, with sample defect `d_(m,n,Z)=D_Z(m)v_(n,Z)-c_(m,n)v_(mn,Z)`, and the scalar dilation loss splits exactly as `1-c_(m,n)^2 = d_(m,n,Z)^* Gamma_(m,n,Z)^+ d_(m,n,Z) + ||z_(m,n,Z)||^2`, where `z_(m,n,Z)` is the sample-null component of the same quotient band. Thus the previously scalar retention loss has a canonical visible/null decomposition tied by the actual dilation geometry.
 
-NB-292 identifies the first exact vector/matrix structure that this scalar graft does not encode. For a finite zero packet `Z`, let `V_(r,Z)` be the Blaschke-deflated quotient sections, `L_Z` the first-free sampling map and `D_Z(m)` the diagonal action of the canonical dilation. The orthogonal multiplicative band
+NB-293 gives the exact destination map for that carrier once the lower quotient section is first-free-surjective. Neutralizing each `w` in `W_(m,n,Z)` by its minimum-norm old-section sample repair produces a bijection onto the new null block `Q_(m,n,Z)=D_(mn-1,Z) \ominus S_m D_(n-1,Z)`. For first-free datum `y`, if `g_(m,n)(y)` is its minimum-norm realization in the dilated old section, the entire multiplicative-section improvement is `Delta_(m,n,Z)(y)=||P_(Q_(m,n,Z)) g_(m,n)(y)||^2`. Equivalently, with `A=D_Z(m)K_(n-1,Z)D_Z(m)^*`, `M=A^(-1/2) Gamma_(m,n,Z) A^(-1/2)` and `x=A^(-1/2)y`, `Delta_(m,n,Z)(y)=x^* M(I+M)^(-1)x`. Trace, determinant, operator norm, band dimension and scalar dilation loss count only through spectral occupation by the **actual transformed datum** unless a stronger uniform spectral theorem is available.
 
-`W_(m,n,Z)=V_(mn-1,Z) \ominus S_m V_(n-1,Z)`
+NB-294 supplies exactly such a theorem above an explicit moving-packet gate. If `delta_min=min_j(Re rho_j-1/2)` and `kappa(K)` is the condition number of the lower sampling Gram, then the actual canonical band satisfies `M >= (m^(2 delta_min)/kappa(K)-1)_+ I`. Hence whenever `2 delta_min log m-log kappa(K)->+infinity`, every nonzero first-free datum receives asymptotically complete relative gain. In that regime the target-occupation problem is automatic; poor alignment cannot hide from the whole positive spectrum.
 
-has positive sampling Gram
+NB-295 separates this uniform regime from a weaker but conditioning-free aggregate pressure. If `H_Z=sum_j(Re rho_j-1/2)` and `delta_bar=H_Z/|Z|`, then exactly `det(I+M)=m^(2H_Z) det(K^+)/det(K) >= m^(2H_Z)`. Therefore `sum_j log(1+mu_j)>=2H_Z log m`, `mu_max(M)>=m^(2 delta_bar)-1`, and at least one target direction has relative gain at least `1-m^(-2 delta_bar)`. This survives even when the minimum displacement and lower-section condition number make the NB-294 uniform gate fail. But determinant/log-volume may concentrate in one spectral direction, so it still does not show that the prescribed Ford datum occupies the forced strong subspace.
 
-`Gamma_(m,n,Z)=K_(mn-1,Z)-D_Z(m)K_(n-1,Z)D_Z(m)^* >= 0`,
+The decisive moving-packet question is therefore now split into two quantitative regimes. First determine whether the actual Ford packet crosses the uniform gate `2 delta_min log m-log kappa(K)->+infinity`; if it does, no separate target-alignment estimate is needed. If the uniform gate fails but `2 delta_bar log m` is large, the multiplicative band still contains a condition-number-free strong mode, and the missing theorem is **arithmetic target occupation**: prove that the transformed Ford datum has quantitatively non-negligible projection onto the spectral subspace carrying this forced log-volume, or lower-bound an equivalent canonical pairing such as `d^*A^(-1)y`. The existential log-volume result is a real source-geometric constraint, but it is not a closing estimate until the actual destination datum is shown to use it.
 
-and these Grams obey the exact cocycle
-
-`Gamma_(km,n,Z)=Gamma_(k,mn,Z)+D_Z(k)Gamma_(m,n,Z)D_Z(k)^*`.
-
-For the normalized innovation, the old-section defect `b_(m,n,Z)=S_m psi_(n,Z)-c_(m,n)psi_(mn,Z)` lies in this band, with sample defect `d_(m,n,Z)=D_Z(m)v_(n,Z)-c_(m,n)v_(mn,Z)`, and the scalar dilation loss splits exactly as
-
-`1-c_(m,n)^2 = d_(m,n,Z)^* Gamma_(m,n,Z)^+ d_(m,n,Z) + ||z_(m,n,Z)||^2`,
-
-where `z_(m,n,Z)` is the sample-null component of the same quotient band. Thus the previously scalar retention loss has a canonical visible/null decomposition tied by the actual dilation geometry.
-
-NB-293 now gives the exact destination map for that carrier once the lower quotient section is first-free-surjective. Neutralizing each `w` in `W_(m,n,Z)` by its minimum-norm old-section sample repair produces a bijection onto the new null block
-
-`Q_(m,n,Z)=D_(mn-1,Z) \ominus S_m D_(n-1,Z)`.
-
-For first-free datum `y`, if `g_(m,n)(y)` is its minimum-norm realization in the dilated old section, the entire multiplicative-section improvement is
-
-`Delta_(m,n,Z)(y)=||P_(Q_(m,n,Z)) g_(m,n)(y)||^2`.
-
-Equivalently, with `A=D_Z(m)K_(n-1,Z)D_Z(m)^*`, `M=A^(-1/2) Gamma_(m,n,Z) A^(-1/2)` and `x=A^(-1/2)y`,
-
-`Delta_(m,n,Z)(y)=x^* M(I+M)^(-1)x`.
-
-Thus trace, determinant, operator norm, band dimension and scalar dilation loss count only through spectral occupation by the **actual transformed datum**. The canonical defect gives the explicit certificate
-
-`Delta_(m,n,Z)(y) >= |d_(m,n,Z)^* A^(-1)y|^2 / (1-c_(m,n)^2+d_(m,n,Z)^*A^(-1)d_(m,n,Z))`,
-
-while an already sample-null component of the band is target-silent for this direct enrichment. Multiplicative gains also obey an exact chain rule only after transporting the datum contravariantly: a fixed-datum telescoping argument is invalid.
-
-The decisive moving-packet question is therefore no longer whether a vector carrier exists or how it reaches the target. Both are exact. The missing theorem is **arithmetic target occupation**: force enough mass of the moving transformed Ford datum into the positive spectrum of the whitened cocycle, or lower-bound a canonical pairing such as `d^*A^(-1)y`, strongly enough to control the target-aware future-null tail. NB-293 itself supplies no such lower bound and no approximation rate. Another inequality depending only on `sigma_n`, `sqrt(n)sigma_n`, `c_(m,n)`, raw matrix size or the zero-sample table remains outside the needed target-aware currency.
+Both NB-294 and NB-295 compare the enlarged canonical section against the **old dilated section**. Their large relative gains repair dilation-induced synthesis cost; they do not by themselves produce a decrement for the ordinary undilated Nyman distance or for the finite-section excess from NB-284--NB-288. Any final bridge must therefore connect the forced multiplicative-band gain back to the actual Nyman approximation quantity without silently changing the baseline.
