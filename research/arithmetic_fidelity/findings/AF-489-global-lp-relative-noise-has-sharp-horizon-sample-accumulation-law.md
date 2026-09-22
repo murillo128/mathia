@@ -73,17 +73,9 @@ r_k:=\frac{y_k-G(s_k)}{a}
 Because every coordinate satisfies `|xi_k|<=||xi||_p<=epsilon_0<1`, all `r_k` are positive. Define
 
 \[
-z_k:=\log r_k=-\theta s_k+u_k,
-\qquad
-u_k:=\log(1+\xi_k).
-\]
-
-Here `u_k=nu_k`; equivalently, using one symbol throughout,
-
-\[
 u_k:=\log(1+\xi_k),
 \qquad
-z_k=-\theta s_k+u_k.
+z_k:=\log r_k=-\theta s_k+u_k.
 \]
 
 On `[-epsilon_0,epsilon_0]`,
