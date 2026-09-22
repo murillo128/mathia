@@ -18,6 +18,10 @@ based_on:
   - research/visual_exploration/findings/VIS-384-hilbert-schmidt-source-subspace-laplacian.md
   - research/visual_exploration/findings/VIS-385-isotropic-source-subspace-null-defect-energy-moments.md
   - research/visual_exploration/findings/VIS-386-gram-tangent-scale-normalization.md
+  - research/visual_exploration/findings/VIS-387-qubit-source-subspace-spectrum-collapses-to-defect-energy.md
+  - research/visual_exploration/findings/VIS-388-qutrit-rank-one-source-spectrum-has-cubic-shape.md
+  - research/visual_exploration/findings/VIS-389-qutrit-rank-one-shape-closes-at-second-moment.md
+  - research/visual_exploration/findings/VIS-390-isotropic-qutrit-tangent-null-uniform-residual-second-moment.md
 ---
 
 # Does Wang packet localization preserve source information without manufacturing strip gain?
@@ -44,23 +48,31 @@ The finite-dimensional rational escape is now much narrower. `VIS-378` replaces 
 
 But that quotient has an exact universal baseline: for every `alpha>1`, at least `1-1/alpha` of the normalized positive-spectrum Gram mass lies below `alpha m_S(G)` by Markov's inequality. Therefore an order-one self-normalized low-mode mass above the mean is not itself source-specific evidence.
 
-The remaining channel is sharper again: **source-subspace-specific spectral organization after generator gauge, tangent-amplitude gauge, the isotropic rank baseline, and the universal self-normalized spectral floor have all been removed**.
+The minimal-dimension classification now makes the residual shape channel much more explicit. `VIS-387` shows that rank-one qubits are too small: after the scalar defect rate is fixed, the complete positive spectral measure has no independent shape freedom. `VIS-388` identifies rank-one qutrits as the first nontrivial test bed: the source spectrum has one intrinsic cubic parameter `t^2=tr(E^3)^2`, and at generic `t^2` the tangent-weighted spectral measure can vary at fixed first moment. `VIS-389` closes that freedom exactly: once `t^2` and the scalar defect rate `m_1` are fixed, the complete qutrit spectral shape is one-dimensional and is determined by the second moment `m_2`.
+
+`VIS-390` adds an exact source-free tangent-orientation null for that final scalar. Holding the generic qutrit source spectrum fixed and drawing the tangent isotropically in its six-dimensional positive spectral subspace makes the three root-sector weights `Dirichlet(1,1,1)`. In moment coordinates `(m_1,m_2)` this is a constant-density triangle, so after conditioning on the observed `m_1` the normalized residual coordinate
+
+`u=[m_2-L(m_1)]/[U(m_1)-L(m_1)]`
+
+is exactly `Uniform(0,1)`. The qutrit branch therefore no longer needs arbitrary spectral windows or empirical isotropic simulations merely to calibrate its residual shape degree of freedom.
+
+The remaining channel is sharper again: **source-specific non-isotropic Gram-tangent alignment that is extreme relative to the exact qutrit conditional null, survives stronger Wang-resource-matched nonarithmetic controls, has a structural explanation, and still pays for itself at the destination**.
 
 ## Research question
 
 Can an admissible Wang/source-packet construction produce a normalized positive-spectrum Gram spectral distribution for the intrinsic source-subspace commutator Laplacian `Delta_S` that is genuinely source-specific and survives matched source-free controls, in a way that can still be propagated to a Wang destination after all scale and conditioning costs are charged?
 
-Equivalently, after quotienting compact/Vandermonde conditioning, Gram-only spectral filtering, bounded positive preconditioning, rational-expression artifacts, unavailable similarity directions, bare commutator-gap collapse, generator-coordinate gauge, tangent-amplitude gauge, the isotropic source-subspace defect-energy budget, and the universal self-normalized Markov floor, is there any remaining low-spectrum organization that carries arithmetic/source information rather than generic approximate reducibility?
+Equivalently, after quotienting compact/Vandermonde conditioning, Gram-only spectral filtering, bounded positive preconditioning, rational-expression artifacts, unavailable similarity directions, bare commutator-gap collapse, generator-coordinate gauge, tangent-amplitude gauge, the isotropic source-subspace defect-energy budget, the universal self-normalized Markov floor, and in the minimal qutrit rank-one test bed the exact isotropic tangent-shape null, is there any remaining low-spectrum organization that carries arithmetic/source information rather than generic approximate reducibility or non-isotropic but source-free tangent geometry?
 
 A positive answer still needs a destination-level payoff: the source-specific orientation must produce a smaller Wang output after metric scale, Gram-gap/cluster width, coefficient norm, normalization, rank-selection, and source-information costs are all charged.
 
 ## Why it may matter
 
-The current question isolates a finite-dimensional positive-Hilbert rational channel that is no longer allowed to claim credit for representation choices or universal first-moment effects. `VIS-386` is especially important because a visually impressive concentration in a self-defect window can otherwise be manufactured by tangent scaling, and after scale normalization a large super-mean mass is partly guaranteed for every source by the same first-moment identity.
+The current question isolates a finite-dimensional positive-Hilbert rational channel that is no longer allowed to claim credit for representation choices or universal low-order effects. `VIS-386` is especially important because a visually impressive concentration in a self-defect window can otherwise be manufactured by tangent scaling, and after scale normalization a large super-mean mass is partly guaranteed for every source by the same first-moment identity.
 
-This creates a clean diagnostic split. First ask whether the fixed observed `(G,S)` is exceptional at the quadratic defect-energy level relative to the exact `VIS-385` isotropic Grassmann null. If not, compare the **shape** of the normalized positive spectral distribution against stronger matched controls. A source-specific claim must concern excess concentration, sub-mean structure, a stable distributional feature, or identifiable low-mode geometry beyond the universal `1-1/alpha` floor.
+`VIS-387`--`VIS-390` make the minimal nontrivial case unusually clean. Dimension two is an exact no-shape control. In dimension three and source rank one, source conjugacy is represented by `t^2`, scalar defect by `m_1`, and all remaining normalized positive spectral shape by one scalar `m_2`. Under an isotropic tangent at fixed source, the corresponding conditional rank coordinate `u` is exactly uniform. A qutrit anomaly can therefore be separated into three questions instead of being inferred from a high-dimensional visual profile: is the source cubic geometry unusual, is the scalar defect rate unusual, and is the residual tangent-shape coordinate unusual after those are fixed?
 
-The isotropic null and Markov floor are only baseline layers. They do not preserve every Wang resource, so any surviving effect still requires stronger matched nonarithmetic controls and a mathematical explanation.
+These exact nulls are only baseline layers. An extreme qutrit `u` establishes non-isotropic alignment relative to a deliberately source-free tangent null; it does not identify arithmetic information. Admissibility, block geometry, coarse Gram clustering, or another source-independent Wang resource can create non-isotropy and must be preserved by stronger matched controls.
 
 ## Decisive test
 
@@ -96,22 +108,30 @@ as a universal source-free floor, not as evidence. Any quantitative claim should
 
 Before interpreting higher spectral organization, run the `VIS-385` isotropic alignment calibration with `G` held fixed: compare the observed `epsilon_S(G)^2` to the exact Haar-Grassmann rank-`r` mean and variance. Treat an anomalous defect energy and an ordinary defect energy with anomalous normalized spectral shape as different mechanisms.
 
-Then construct stronger matched controls preserving the matrix resources that remain relevant after the quotients: source-subspace dimension, Hermitian structure, fixed ambient Hilbert metric, appropriate operator/subspace scale, relevant coarse Gram clustering, tangent-normalization rule, and destination metric bounds. Break arithmetic/source coupling while keeping those resources. The control must have a nondegenerate realizable sample space.
+For the generic qutrit rank-one test bed, replace an arbitrary family of spectral-shape coordinates by the exact `VIS-390` scalar calibration. Compute the source cubic invariant `t^2`, the three positive support values `q_1<q_2<q_3`, the tangent moments `m_1,m_2`, the feasible endpoints `L(m_1),U(m_1)`, and
+
+`u=[m_2-L(m_1)]/[U(m_1)-L(m_1)]`.
+
+Under an isotropic positive-spectrum tangent with the observed source and `m_1` fixed, `u` is exactly uniform. Use that as the pre-registered source-free qutrit shape baseline. Treat an extreme `u` only as evidence of non-isotropic tangent alignment, not yet as arithmetic/source specificity.
+
+Then construct stronger matched controls preserving the matrix resources that remain relevant after the quotients: source-subspace dimension, Hermitian structure, fixed ambient Hilbert metric, appropriate operator/subspace scale, relevant coarse Gram clustering, tangent-normalization rule, and destination metric bounds. In the qutrit rank-one case, additionally stratify or match by `t^2` and `m_1` so that source conjugacy and scalar defect energy cannot masquerade as residual shape. Break arithmetic/source coupling while keeping those resources. The control must have a nondegenerate realizable sample space.
 
 A candidate source-specific channel must show stable excess or structurally different normalized low-spectrum organization relative to those controls across scale/truncation changes fixed independently of the observed effect. Then identify the geometry mathematically: which approximate symmetry or block relation produces it, why the Gram tangent overlaps it, and which source information is lost when the matched control destroys the effect.
 
-Kill the route if the normalized spectral profile is reproduced by generic source subspaces with matched resources, if the apparent effect reduces to the universal Markov floor, disappears under harmless ambient unitary changes, depends on a data-tuned rank or window, or requires an output metric/rational rule that already imports the target arithmetic estimate. A positive spectral difference is still insufficient unless its full cost propagates to the Wang destination without assuming a stronger bound for `G`, `theta`, or an equivalent unsmoothed source quantity.
+Kill the route if the normalized spectral profile is reproduced by generic source subspaces or tangent orientations with matched resources, if the apparent effect reduces to the universal Markov floor or the exact qutrit conditional null, disappears under harmless ambient unitary changes, depends on a data-tuned rank or window, or requires an output metric/rational rule that already imports the target arithmetic estimate. A positive spectral difference is still insufficient unless its full cost propagates to the Wang destination without assuming a stronger bound for `G`, `theta`, or an equivalent unsmoothed source quantity.
 
 ## Evidence boundary
 
 `VIS-378`--`VIS-382` establish exact finite-dimensional necessary conditions and accounting bounds for bounded positive rational orientation. `VIS-383` removes a generator-coordinate false positive by exposing it; `VIS-384` supplies the intrinsic source-subspace quotient; `VIS-385` gives exact fixed-`G` isotropic defect-energy calibration; and `VIS-386` removes the tangent-amplitude gauge while identifying the universal self-normalized spectral mass floor.
 
-None of these results proves that a useful arithmetic family has exceptional normalized spectral shape, that any such shape is source-specific, stable, or propagates to a Wang gain. `VIS-386` also does not say super-mean spectral windows are useless; it says their absolute order-one mass is nondiscriminating unless interpreted relative to the universal floor and matched controls.
+`VIS-387`--`VIS-390` classify the minimal rank-one matrix dimensions for the residual spectral-shape question. Qubits have no independent shape channel after defect energy. Generic qutrits have one source cubic support parameter and, after the first tangent moment is fixed, exactly one residual shape scalar. Under the fixed-source isotropic tangent null, that residual scalar has an exact uniform conditional calibration.
 
-The clue therefore remains `accepted`: the finite positive-Hilbert rational route has been narrowed to a coordinate-quotiented, tangent-normalized, isotropically calibrated spectral-shape test, but the decisive source-specificity and destination-payoff questions remain open.
+None of these results proves that an admissible Wang family has extreme qutrit `u`, that any observed non-isotropy is arithmetic/source-specific, that the effect survives stronger matched controls, or that it propagates to a Wang gain. `VIS-390` deliberately randomizes tangent orientation and therefore does not preserve all admissibility or Gram resources of the actual construction.
+
+The clue therefore remains `accepted`: the finite positive-Hilbert rational route has been narrowed to a coordinate-quotiented, tangent-normalized, isotropically calibrated spectral-shape test, with an exact one-dimensional residual null in the minimal qutrit rank-one case, but the decisive source-specificity and destination-payoff questions remain open.
 
 ## Research disposition
 
 Outcome: **narrowed**.
 
-Future work on this clue should compare scale-invariant positive spectral shape, not raw self-defect projector mass. Start with the `VIS-385` fixed-`G` defect-energy calibration, quotient tangent amplitude as in `VIS-386`, subtract or otherwise account for the universal Markov floor, then ask whether stronger matched nonarithmetic controls reproduce the remaining spectral organization and whether any surviving excess can be charged through to the Wang destination.
+For the minimal nontrivial qutrit rank-one test, stop treating many CDF windows or higher moments as independent evidence. Condition on source cubic shape `t^2` and scalar defect `m_1`, use the exact `VIS-390` uniform coordinate `u` as the residual isotropic tangent null, and ask whether the actual admissible Wang tangent is stably extreme relative to that null and to stronger matched nonarithmetic controls. Only after a surviving non-isotropy has a source-specific structural explanation should the route pay the full destination cost.
