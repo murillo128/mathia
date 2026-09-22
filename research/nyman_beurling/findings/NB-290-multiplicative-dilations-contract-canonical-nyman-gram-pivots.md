@@ -18,7 +18,7 @@ g_n(x)=\left\{\frac1{nx}\right\}-\frac1n\left\{\frac1x\right\},
 V_n:=\operatorname{span}\{g_2,\ldots,g_n\},
 \]
 
-with `V_1={0}`, and define
+with `V_1={0}`, and define the one-step innovation
 
 \[
 w_n:=(I-P_{V_{n-1}})g_n,
@@ -48,7 +48,7 @@ A_mg_j
 \tag{3}
 \]
 
-The new quotient identity is
+After quotienting by all canonical generators preceding the product index `mn`, one obtains
 
 \[
 \boxed{
@@ -59,7 +59,7 @@ P_{V_{mn-1}^{\perp}}A_mw_n
 \tag{4}
 \]
 
-Hence
+Consequently
 
 \[
 \boxed{
@@ -69,13 +69,13 @@ Hence
 \tag{5}
 \]
 
-Equivalently,
+Equivalently, for
 
 \[
-\tau_n:=\sqrt n\,\sigma_n
+\tau_n:=\sqrt n\,\sigma_n,
 \]
 
-is monotone along divisibility:
+one has the divisibility monotonicity
 
 \[
 \boxed{n\mid N\quad\Longrightarrow\quad \tau_N\le\tau_n.}
@@ -86,7 +86,7 @@ This is a source-metric restriction absent from the arbitrary-lethargy controls 
 
 ## 1. Exact quotient transport
 
-Equation (2) is an isometry:
+Equation (2) is an isometry because
 
 \[
 \|A_mf\|_2^2
@@ -99,7 +99,7 @@ Equation (2) is an isometry:
 
 Equation (3) follows directly from the fractional-part definition. On `x<=1/m`, the two `{1/x}` terms cancel and leave `sqrt(m) g_j(mx)`. On `x>1/m`, both `1/(mx)` and `1/(mjx)` lie in `(0,1)`, so the right side of (3) cancels to zero, matching `A_mg_j`.
 
-If `j<n`, (3) uses only `g_m` and `g_(mj)`, and
+If `j<n`, equation (3) uses only `g_m` and `g_(mj)`, with
 
 \[
 m<mn,
@@ -107,7 +107,7 @@ m<mn,
 mj\le m(n-1)<mn.
 \]
 
-Therefore
+Hence
 
 \[
 \boxed{A_mV_{n-1}\subseteq V_{mn-1}.}
@@ -125,17 +125,11 @@ A_mw_n
 \tag{9}
 \]
 
-The last two terms belong to `V_(mn-1)`. Projecting onto its orthogonal complement leaves exactly `sqrt(m) w_(mn)`, proving (4). Projection is contractive and `A_m` is isometric, so
-
-\[
-\sqrt m\,\sigma_{mn}\le\sigma_n,
-\]
-
-which proves (5)--(6).
+The last two terms belong to `V_(mn-1)`. Projecting onto its orthogonal complement leaves exactly `sqrt(m) w_(mn)`, proving (4). Projection is contractive and `A_m` is isometric, so `sqrt(m) sigma_(mn) <= sigma_n`, which proves (5)--(6).
 
 This differs from `NB-002`. A copied block `A_mV_N` preserves its internal Gram geometry exactly. Here the copied innovation is tested against the **full canonical section** preceding `mn`, which contains many directions outside the copied block. Those extra directions can only absorb more of the innovation.
 
-## 2. Retention coefficients and the multiplicative cocycle
+## 2. Retention coefficients form a multiplicative cocycle
 
 Normalize
 
@@ -164,29 +158,12 @@ Thus
 \tag{12}
 \]
 
-There is an orthogonal decomposition
-
-\[
-A_m\psi_n
-=c_{m,n}\psi_{mn}+u_{m,n},
-\qquad
-u_{m,n}\in V_{mn-1},
-\tag{13}
-\]
-
-and therefore
-
-\[
-\|u_{m,n}\|^2=1-c_{m,n}^2.
-\tag{14}
-\]
-
-The coefficient obeys the exact multiplicative law
+The coefficient obeys the exact consistency law
 
 \[
 \boxed{c_{km,n}=c_{k,mn}\,c_{m,n}}
 \qquad(k,m,n\ge2),
-\tag{15}
+\tag{13}
 \]
 
 because
@@ -198,7 +175,7 @@ because
 \left(\frac{\sqrt m\,\sigma_{mn}}{\sigma_n}\right).
 \]
 
-Hence the normalized fraction of novelty surviving along a multiplicative ray is governed by a scalar cocycle. Equation (15) concerns the quotient coefficient only; it does not assert a scalar semigroup law for the old-section remainders `u_(m,n)`.
+So the fraction of normalized novelty surviving along a multiplicative ray is governed by a scalar cocycle. This is stronger source-metric information than the pointwise future sample table imposed in `NB-289`.
 
 ## 3. Schur-complement and composite-index consequences
 
@@ -210,10 +187,10 @@ Let `G_n` be the Gram matrix of `g_2,...,g_n`. Positive definiteness and the blo
 =
 \frac{\det G_n}{\det G_{n-1}},
 }
-\tag{16}
+\tag{14}
 \]
 
-with `det G_1:=1`. Squaring (5),
+with `det G_1:=1`. Squaring (5) yields
 
 \[
 \boxed{
@@ -222,18 +199,18 @@ with `det G_1:=1`. Squaring (5),
 \frac1m
 \frac{\det G_n}{\det G_{n-1}}.
 }
-\tag{17}
+\tag{15}
 \]
 
 Thus a multiplicatively inherited canonical direction contributes at most a `1/m` fraction of its predecessor's one-step Gram volume.
 
-Now let `N=mp` be composite with `p` its smallest prime factor. Since `p<=sqrt(N)`,
+Let `N=mp` be composite with `p` its smallest prime factor. Since `p<=sqrt(N)`,
 
 \[
 \sigma_N
 \le
 \sigma_p\sqrt{\frac pN}.
-\tag{18}
+\tag{16}
 \]
 
 Fractional parts are bounded by one, so
@@ -251,10 +228,10 @@ Therefore
 \sigma_N\le\frac32N^{-1/4}
 \qquad(N\text{ composite}).
 }
-\tag{19}
+\tag{17}
 \]
 
-Along multiples of any fixed `n>=2`, the stronger statement is
+Along multiples of any fixed `n>=2`, the stronger estimate is
 
 \[
 \boxed{
@@ -264,14 +241,14 @@ Along multiples of any fixed `n>=2`, the stronger statement is
 \ll_nN^{-1/2}
 \qquad(n\mid N).
 }
-\tag{20}
+\tag{18}
 \]
 
 In particular,
 
 \[
 \sigma_{p^r}\le\sigma_p p^{-(r-1)/2}.
-\tag{21}
+\tag{19}
 \]
 
 This does **not** assert that prime pivots are large. It says only that a composite index has a proper multiplicative predecessor from which its one-step novelty is quantitatively inherited. Prime indices are the only indices `n>=2` for which this particular predecessor mechanism is unavailable.
@@ -280,7 +257,7 @@ The result complements `NB-016`: there, multiplication-table overlaps make the q
 
 ## 4. Relation to the active finite-section obstruction
 
-`NB-289` can prescribe the exact future first-free zero-sample table while keeping arbitrary finite-section lethargy because its abstract construction leaves metric relations among raw generators essentially free. Equations (4)--(6) are precisely a constraint that construction does not encode: canonical Nyman sections cannot assign Gram--Schmidt novelty independently at multiplicatively related indices.
+`NB-289` can prescribe the exact future first-free zero-sample table while retaining arbitrary finite-section lethargy because its abstract construction leaves metric relations among raw generators essentially free. Equations (4)--(6) are precisely a restriction that construction does not encode: canonical Nyman sections cannot assign Gram--Schmidt novelty independently at multiplicatively related indices.
 
 But (5) alone does not bound the target-aware excess of `NB-287`,
 
@@ -288,31 +265,31 @@ But (5) alone does not bound the target-aware excess of `NB-287`,
 \mathfrak A_M
 =
 \sum_{r\ge M}|\langle h_M,q_{r+1}\rangle|^2.
-\tag{22}
+\tag{20}
 \]
 
 The `q_r` there are **normalized** future null-innovations for the first-free sampling problem. A small raw pivot can still have a large normalized sample profile or target correlation; division by `sigma_r` can amplify the quantity the sampler uses. Therefore this finding does not claim decay of `||L psi_n||`, decay of the `q_n`, a rate for `mathfrak A_M`, convergence of `d_N`, or any implication for RH.
 
-The next discriminant should couple the new source metric to the actual sample/target geometry. Useful quantities include
+The next discriminant should couple the new source metric to the actual sample/target geometry, for example through
 
 \[
 \|L_Z\psi_n\|,
 \qquad
 \langle h_M,q_n\rangle,
-\tag{23}
+\tag{21}
 \]
 
 or a weighted combination in which the `sigma_n` contraction survives normalization. A bound depending only on point-sample identities is ruled out by `NB-289`; a bound depending only on `sigma_n` ignores the normalization problem.
 
 ## 5. Adversarial review and prior-art audit
 
-The proof uses only the concrete isometry (2), the exact covariance (3), and the one-way inclusion (8); no reducing-subspace assumption is made. Both the transferred old-section term and the `g_m` correction in (9) are placed inside the full preceding section before projection. The normalization direction is also checked: (4) gives `sqrt(m) sigma_(mn) <= sigma_n`, not the reverse. The composite estimate assumes no lower bound on prime pivots, and no target conclusion is imported from raw source geometry.
+The proof uses only the concrete isometry (2), the exact covariance (3), and the one-way inclusion (8); no reducing-subspace assumption is made. Both the transferred old-section term and the `g_m` correction in (9) are placed inside the full preceding section before projection. The normalization direction is checked explicitly: (4) gives `sqrt(m) sigma_(mn) <= sigma_n`, not the reverse. The composite estimate assumes no lower bound on prime pivots, and no target conclusion is imported from raw source geometry.
 
 The result does not resolve `CLUE-visible-semigroup-defect-controls-section-enrichment`, whose missing step is residual-specific visibility and a quantitative target-distance decrement. It supplies a new exact metric restriction on canonical source enrichment, not that missing coupling.
 
 The dilation/semigroup structure itself is classical. Bagchi's 2006 survey, *On Nyman, Beurling and Baez-Duarte's Hilbert space reformulation of the Riemann hypothesis*, treats the Hilbert-space criterion with its semigroup viewpoint; inside this repository, (3) is already used by `NB-002`, `NB-014`, `NB-016`, `NB-039`, and the accepted visible-semigroup clue. No novelty is claimed for (3), projection contraction, or the Schur-complement formula.
 
-A fresh search found Hugh Carvill's 2025 preprint *Beurling Nyman Geometry and Gram Matrix Structure, Ladder Density and Polynomial Decay via Mellin Smoothing* (arXiv:2510.18132), which proves polynomial off-diagonal Gram decay and block compressibility on a multiplicative `2^(-j)3^(-k)` ladder after Mellin smoothing. That is adjacent source-metric structure, but the searched material does not state (4), (5), or the cocycle (15). Werner Ehm's 2024 *On certain Gram matrices and their associated series* studies formulas and decompositions for Nyman--Beurling Gram matrices, again adjacent but not a substitute for the quotient transport above.
+A fresh search found Hugh Carvill's 2025 preprint *Beurling Nyman Geometry and Gram Matrix Structure, Ladder Density and Polynomial Decay via Mellin Smoothing* (arXiv:2510.18132), which proves polynomial off-diagonal Gram decay and block compressibility on a multiplicative `2^(-j)3^(-k)` ladder after Mellin smoothing. That is adjacent source-metric structure, but the searched material does not state (4), (5), or the cocycle (13). Werner Ehm's 2024 *On certain Gram matrices and their associated series* studies formulas and decompositions for Nyman--Beurling Gram matrices, again adjacent but not a substitute for the quotient transport above.
 
 The theorem is self-contained from identities already established in the repository. No external result is load-bearing, so `SOURCES.md` is unchanged. No `mind/**` file is updated because the relevance of the contraction to the Ford/Nyman target obstruction still depends on normalized sample coupling.
 
