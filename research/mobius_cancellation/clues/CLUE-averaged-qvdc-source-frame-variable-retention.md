@@ -6,6 +6,9 @@ origin: research-watch
 target_line: mobius_cancellation
 based_on:
   - research/mobius_cancellation/findings/MC-413-additive-differencing-complete-block-ramanujan-collapse.md
+  - research/mobius_cancellation/findings/MC-415-vdc-diagonal-resquares-linear-sieve.md
+  - research/mobius_cancellation/findings/MC-416-weighted-vdc-filters-cannot-remove-diagonal.md
+  - research/mobius_cancellation/findings/MC-417-fejer-riesz-closes-positive-finite-band-kernels.md
   - research/mobius_cancellation/findings/MC-446-source-frame-box-mean-square-has-quadratic-occupancy-threshold.md
   - research/mobius_cancellation/findings/MC-447-crt-source-frame-fibers-collapse-to-shift-common-primes.md
   - research/mobius_cancellation/findings/MC-448-fixed-lcm-fourier-weil-averaging-still-pays-polynomial-occupancy.md
@@ -24,6 +27,8 @@ based_on:
   - research/mobius_cancellation/findings/MC-461-residual-source-starts-decompose-into-bounded-anchor-slices.md
   - research/mobius_cancellation/findings/MC-462-anchor-fibre-support-ceiling-forces-a-residual-range-gate.md
   - research/mobius_cancellation/findings/MC-463-gcd-sector-normalization-collapses-to-common-anchor-quotient.md
+  - research/mobius_cancellation/findings/MC-464-normalized-gcd-gate-makes-favorable-shifts-totient-sparse.md
+  - research/mobius_cancellation/findings/MC-465-fejer-weighted-favorable-gcd-classes-remain-sparse.md
 ---
 
 # Can the staged factor-weighted source kernel beat the Möbius source-frame tariff?
@@ -92,37 +97,46 @@ T=\frac{r_2}{G},
 H_0=\frac{h_0}{G}.
 \]
 
-Every compatible `d=(s,r_2)` satisfies
-
-\[
-(h_1,t)=G/d,
-\qquad
-t_0=T,
-\]
-
-and after writing `m=(G/d)(\ell+Tj)`, both the source pair and the surviving amplitude trajectory depend only on `s_0=s/d`, not on `d`. The original coefficients therefore aggregate exactly to
+Every compatible `d=(s,r_2)` has the same reduced quotient `t_0=T`; after normalization the interval, source pair, anchor modulus, and surviving amplitude depend only on `s_0=s/d`, while the original coefficients aggregate exactly into
 
 \[
 \widetilde\beta(s_0)
 =
 \sum_{\substack{d\mid G\\(s_0,r_2/d)=1\\d s_0\le S}}
-\beta_{d s_0}
+\beta_{d s_0}.
 \]
 
-before Cauchy or completion. In the clean regime `T<p`, one anchor contains at most
-
-\[
-1+\frac ST
-=1+\frac{SG}{r_2}
-\]
-
-reduced source points, so the natural full-family support gate is
+In the clean regime `T<p`, one anchor contains at most `1+S/T` reduced source points, so the natural full-family support gate is
 
 \[
 1+\frac{S(h_0,r_2)}{r_2}>\frac pH.
 \]
 
 The internal `d`-sector is therefore not a source-frame resource or cost. The relevant compression parameter is the outer gcd `G=(h_0,r_2)`.
+
+`MC-464` then counts the shifts that can pass this gate. Writing
+
+\[
+T(h_0)=\frac{r_2}{(h_0,r_2)},
+\]
+
+and expressing the support condition as `T(h_0)<=M`, the favorable residue classes modulo `r_2` have exact cardinality
+
+\[
+\sum_{\substack{T\mid r_2\\T\le M}}\varphi(T).
+\]
+
+Thus they have vanishing density whenever `M=o(sqrt(r_2))`; merely allowing many shifts does not make the large-gcd sector generic.
+
+`MC-465` propagates the **actual standard Fejér/van-der-Corput outer weights** into those same gcd classes. If `Q` is the Fejér bandwidth, `X=floor((Q-1)/g)>=2`, and `F_Q` is the total nonzero compatible Fejér mass on `T(h_0)<=M`, while `D_Q` is the total compatible positive nonzero Fejér mass, then
+
+\[
+\frac{F_Q}{D_Q}
+\le
+\min\!\left(1,2\frac{M(M+1)}{r_2}\right).
+\]
+
+So the triangular preference for short shifts does not rescue the sparse favorable classes: `M=o(sqrt(r_2))` still gives vanishing favorable mass. The first outer-weight loophole is closed for the canonical positive q-vdC kernel. `MC-415`--`MC-417` also show that abandoning Fejér inside the scalar positive finite-band framework is not a free optimization, because the Fejér window already minimizes the normalized diagonal/DC burden, although those findings do not by themselves give a sharp favorable-set concentration inequality for every alternative kernel.
 
 ## Research question
 
@@ -136,9 +150,9 @@ Can the one-sided staged family, after the exact `MC-463` aggregation,
 \overline{B_\beta(C_{s_0}+r_1s_0j)},
 \]
 
-be estimated before the second residual expansion and before componentwise positive closure with a strict conductor-power gain that survives off-diagonal dispersion/completion, outer-factor multiplicity, exceptional source ranges, and later source-depth bookkeeping?
+be estimated before the second residual expansion and before componentwise positive closure with a strict conductor-power gain that survives outer coefficient weights, aggregated coefficient participation, amplitude variation, off-diagonal dispersion/completion, exceptional source ranges, and later source-depth bookkeeping?
 
-For a fixed outer pair, set
+For a fixed outer pair set
 
 \[
 G=(h_0,r_2),
@@ -146,21 +160,15 @@ G=(h_0,r_2),
 T=r_2/G.
 \]
 
-When `T<p`, the bare fixed-anchor moment can only help if
-
-\[
-1+\frac ST>\frac pH.
-\]
-
-The live arithmetic question is therefore no longer how to sum favourable residual gcd sectors. It is whether outer pairs/shifts with sufficiently small normalized quotient `T`, equivalently sufficiently large `G`, carry enough total weight and whether the **aggregated** coefficients `\widetilde\beta(s_0)` have effective reciprocal-shift participation above `p/H`. Only after those gates should the aligned amplitude and variable lengths be passed through a joint dispersion/completion estimate.
+`MC-464`--`MC-465` now show that, for the standard Fejér outer average, configurations with sufficiently small `T` are not only support-sparse but carry vanishing relative nonzero shift mass below the square-root normalized-quotient threshold. The live arithmetic question is therefore sharper: **can the actual well-factorable outer coefficients and the aggregated residual coefficients concentrate enough useful signed mass on those sparse favorable classes to overcome that baseline, and does the aligned unexpanded amplitude preserve a conductor-power gain once they do?**
 
 A second branch remains legitimate but separate: source-only conductor reduction could still win without factor-specific staging if the reduced-conductor estimate beats the full product-level occupancy cost after every later summation.
 
 ## Why it may matter
 
-The factor-specific branch has moved from a qualitative representation question to a sequence of quantitative gates. `MC-458` gives an exact pre-positive carrier, `MC-459` removes positive-energy inflation as the immediate obstruction, `MC-460` promotes a residual factor into a reciprocal translated-character shift, `MC-461` compresses the accompanying start variation, `MC-462` supplies the first support gate, and `MC-463` removes the artificial gcd-sector coordinate and exposes the true outer quotient `T=r_2/(h_0,r_2)`.
+The factor-specific branch has moved from a qualitative representation question to a narrow quantitative bottleneck. `MC-458` gives an exact pre-positive carrier, `MC-459` removes positive-energy inflation as the immediate obstruction, `MC-460` promotes a residual factor into a reciprocal translated-character shift, `MC-461` compresses the accompanying start variation, `MC-462` supplies the first support gate, and `MC-463` removes the artificial gcd-sector coordinate. `MC-464`--`MC-465` then show that the outer gcd configurations admitted by that gate are sparse in both counting measure and the standard Fejér shift measure below the same square-root threshold.
 
-A positive route must now find genuine mass where the outer gcd compression is strong enough, the reduced residual support is long enough, and coefficient participation survives exact aggregation. A negative bound showing that such outer-gcd configurations are too sparse, or that `\widetilde\beta`/the surviving amplitude destroys the fixed-anchor gain, would close the most plausible remaining well-factorable escape without claiming factorability is useless in other arithmetic geometries.
+A positive route must therefore exhibit **arithmetic coefficient concentration or joint oscillatory structure**, not merely choose the standard shift average and hope that its short-shift bias favors large gcds. A negative result showing that well-factorable coefficient mass cannot concentrate sufficiently on those classes, or that the surviving amplitude destroys the fixed-anchor gain, would close the most plausible remaining factor-specific escape without claiming factorability is useless in other arithmetic geometries.
 
 ## Decisive test
 
@@ -178,29 +186,19 @@ U_{s_0}\text{ determined by }s_0\pmod T,
 D_{s_0}=H_0(r_1Ts_0)^{-1}\pmod p.
 \]
 
-In the regime `T<p`, first apply the exact full-family support gate. Outer configurations satisfying
+In the regime `T<p`, apply the exact full-family support gate first. `MC-464`--`MC-465` already price the **bare standard-Fejér outer mass** of the surviving normalized-gcd classes, so do not repeat that counting argument. Instead restore the actual outer sieve coefficients and determine whether their signed or quadratic weight can concentrate on the classes `T(h_0)<=M` at a rate that beats the Fejér baseline without merely moving the cost into the positive diagonal. If a modified positive finite-band shift filter is proposed, its favorable-set concentration and its diagonal/DC cost must be priced together against `MC-416`--`MC-417`.
 
-\[
-1+\frac ST\le\frac pH
-\]
+Inside the surviving outer classes, group the aggregated coefficients `\widetilde\beta(s_0)` by exact anchor class and reciprocal-shift collision and compute their **weighted participation**, not just support cardinality. Effective participation must exceed the `p/H` slice threshold at the relevant common-length or legitimate variable-length scale.
 
-cannot gain from bare anchor slicing and should be charged directly. For the complementary configurations, quantify their total outer `(r,r',h)` weight through the condition
-
-\[
-SH(h_0,r_2)\gtrsim p r_2.
-\]
-
-Inside those survivors, group the **aggregated** coefficients by exact anchor class and reciprocal-shift collision and compute their weighted participation. Passing the support gate is only admission: effective participation still has to exceed `p/H` per represented anchor at the relevant common-length or legitimate variable-length scale.
-
-Then repeat the estimate with the second residual amplitude still present. Use its exact aligned trajectory
+Then repeat the estimate with the second residual amplitude still present, using its exact aligned trajectory
 
 \[
 B_\beta(C_{s_0}+r_1s_0j)
 \]
 
-rather than replacing it by an unrelated pointwise norm. The next substantive gate is passed only if a weighted fixed-anchor dispersion or completion estimate retains a strict conductor-power gain after amplitude variation, variable lengths, outer summation, exceptional terms, and source depth are all charged.
+rather than replacing it by an unrelated pointwise norm. The next substantive gate is passed only if a weighted fixed-anchor dispersion or completion estimate retains a strict conductor-power gain after coefficient concentration, amplitude variation, variable lengths, outer summation, exceptional terms, and source depth are all charged.
 
-A bound that treats different `d=(s,r_2)` sectors as independent source families, averages over the full `(U,D)` box, expands the surviving divisor sum first, ignores the outer-gcd support condition, or proves only the bare `MC-461` slice moment has not passed this gate.
+A bound that treats different `d=(s,r_2)` sectors as independent source families, averages over the full `(U,D)` box, expands the surviving divisor sum first, ignores the normalized-gcd support/mass condition, or merely rederives the bare Fejér sparsity of `MC-465` has not passed this gate.
 
 For the independent source-only branch, propagate the best admissible reduced-conductor estimate through the existing product-level summation and require an actual net conductor-power gain; an improved individual character sum consumed by occupancy does not qualify.
 
@@ -208,18 +206,12 @@ For the independent source-only branch, propagate the best admissible reduced-co
 
 `MC-456` is a literature-backed transfer classification, not a theorem about the Möbius kernel. Reciprocal/Kloosterman and bilinear character-sum methods in the neighboring literature show that reciprocal factor variables can be analytically meaningful, but they do not estimate the coupled family derived here.
 
-`MC-457` exactly closes full completion of an independent coprime factor-residue mask. `MC-458` exactly constructs the staged carrier. `MC-459` proves that its positive diagonal is affordable. `MC-460` exactly derives the reciprocal source shift and modular alignment of the surviving amplitude. `MC-461` exactly classifies the start fibres and the bare prime-conductor fixed-anchor shift moment. `MC-462` adds a sectorwise coefficient-independent support ceiling. `MC-463` proves that all compatible residual gcd sectors for a fixed outer pair normalize to the common quotient `T=r_2/(h_0,r_2)`, can be aggregated exactly into `\widetilde\beta`, and obey the full-family support gate `1+S/T>p/H` in the clean `T<p` regime.
+`MC-457` exactly closes full completion of an independent coprime factor-residue mask. `MC-458` exactly constructs the staged carrier. `MC-459` proves that its positive diagonal is affordable. `MC-460` exactly derives the reciprocal source shift and modular alignment of the surviving amplitude. `MC-461` exactly classifies the start fibres and the bare prime-conductor fixed-anchor shift moment. `MC-462` adds a sectorwise coefficient-independent support ceiling. `MC-463` proves the common normalized quotient and exact coefficient aggregation. `MC-464` proves totient/gcd sparsity of the favorable outer shifts, and `MC-465` proves that this sparsity survives the standard triangular Fejér weighting with relative favorable mass `O(M^2/r_2)`.
 
-None of these findings proves that outer configurations passing that gate carry enough total mass, that `\widetilde\beta` attains the available participation, that the full weighted family with `B_\beta(C_{s_0}+r_1s_0j)` intact satisfies a useful joint moment, or that any local gain propagates to the final Möbius source budget. The clue therefore remains `accepted`.
+None of these findings proves that the **actual well-factorable coefficient weight** cannot concentrate on the favorable normalized-gcd classes, that `\widetilde\beta` attains the available participation, that the full weighted family with `B_\beta(C_{s_0}+r_1s_0j)` intact satisfies a useful joint moment, or that any local gain propagates to the final Möbius source budget. Nor do `MC-416`--`MC-417` classify every possible arithmetic, signed, or nonstationary reweighting. The clue therefore remains `accepted`.
 
 ## Research disposition
 
-The clue remains `accepted` and is **materially narrowed through `MC-463`**. The residual gcd sector `d=(s,r_2)` is no longer a live source-frame degree of freedom: after exact normalization it disappears from the interval, source pair, anchor modulus, and surviving amplitude, leaving only coefficient aggregation.
+The clue remains `accepted` and is **materially narrowed through `MC-465`**. Standard Fejér/q-vdC weighting is no longer a live escape from the normalized-gcd support sparsity: below the square-root quotient scale, the favorable classes carry vanishing relative nonzero shift mass even after the exact triangular weight is applied.
 
-The live well-factorable branch is now restricted to outer pairs/shifts for which the common quotient
-
-\[
-T=\frac{r_2}{(h_0,r_2)}
-\]
-
-passes the support gate, followed by a weighted-participation test for `\widetilde\beta` and a joint estimate that retains the aligned unexpanded residual amplitude. Generic internal-factor multiplicity, bounded component splitting, source-only q-vdC after product collapse, complete factor-residue completion, polynomial progression-energy inflation, absence of factor-specific source oscillation, automatically free two-dimensional start/shift variation, short anchor fibres, and residual-gcd-sector multiplicity are now closed or neutralized by `MC-454`--`MC-463`. The independent source-only conductor-reduction branch remains open only as a separate quantitative question.
+The live well-factorable branch is now restricted to two genuinely arithmetic questions: whether the actual outer sieve coefficients can concentrate useful mass on the sparse favorable gcd classes without an offsetting positive-energy cost, and whether the aggregated `\widetilde\beta` plus the aligned unexpanded residual amplitude then yield a strict conductor-power gain. Generic internal-factor multiplicity, bounded component splitting, source-only q-vdC after product collapse, complete factor-residue completion, polynomial progression-energy inflation, automatically free start/shift variation, short anchor fibres, residual-gcd-sector multiplicity, unweighted favorable-shift abundance, and ordinary Fejér short-shift bias are now closed or neutralized by `MC-454`--`MC-465`. The independent source-only conductor-reduction branch remains open only as a separate quantitative question.
