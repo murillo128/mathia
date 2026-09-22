@@ -20,13 +20,14 @@ based_on:
   - research/mobius_cancellation/findings/MC-468-root-scale-support-makes-well-factorability-vacuous.md
   - research/mobius_cancellation/findings/MC-469-empty-vector-sieve-component-survives-small-outer-cell-pruning.md
   - research/mobius_cancellation/findings/MC-470-empty-vector-residual-is-a-nonnegative-sieve-boundary-count.md
+  - research/mobius_cancellation/findings/MC-471-empty-vector-base-is-two-sided-sifted-translated-ratio-sum.md
 ---
 
 # Can the staged factor-weighted source kernel beat the Möbius source-frame tariff?
 
 ## Observation
 
-The surviving factor-specific route starts from the exact staging
+The factor-specific route still starts from the staged decomposition
 
 \[
 w(m)=\sum_{r\mid m}\alpha_r B_\beta(m/r),
@@ -34,7 +35,9 @@ w(m)=\sum_{r\mid m}\alpha_r B_\beta(m/r),
 B_\beta(y)=\sum_{s\mid y}\beta_s,
 \]
 
-which keeps one factor block in the source progression while the complementary block remains as an unexpanded divisor-sum amplitude. `MC-459`--`MC-467` progressively remove apparent free resources from this representation: the true residual diagonal is only subpower; compatible gcd sectors collapse to one normalized anchor modulus; favorable normalized-gcd classes are sparse even under Fejér weighting; large outer gcd gives no net advantage; and support growth is coupled to shrinking source-interval length. In the nonendpoint bulk, the dyadic shell geometry obeys
+but the surviving channels are now more sharply separated.
+
+`MC-459`--`MC-467` price the generic staged source geometry: the true residual diagonal is only subpower, compatible gcd sectors collapse to one normalized anchor modulus, favorable normalized-gcd classes are sparse even under Fejér weighting, large outer gcd gives no net advantage, and support growth is coupled to shrinking source-interval length. In the nonendpoint bulk,
 
 \[
 A_XH_X\le 4\frac{N}{RT},
@@ -54,41 +57,71 @@ with `R=[r,r']` and `T=r'/(h,r')`.
 R=T=1,
 \]
 
-so no growing outer-support suppression applies. Nonempty rough-block components still have a genuine product-of-bins support filter and should be pruned before any expensive dispersion estimate.
-
-`MC-470` now identifies the base residual exactly. If `Q=D^\varepsilon`, `z=Q^\varepsilon`, and
+so no growing outer-support suppression applies. `MC-470` identifies the base residual as a nonnegative upper-sieve boundary count
 
 \[
-m_z(y)=\prod_{\substack{q<z\\q\mid y}}q,
+B(y)=B_{\lambda^{(0)}}(y)
+=R_z(y)+E(y),
+\qquad
+R_z(y)=\mathbf 1_{(y,P(z))=1},
+\qquad E(y)\ge0.
 \]
 
-then
+Its internal coefficient signs therefore cannot supply the missing oscillation.
+
+`MC-471` removes a further apparent resource specific to this unavoidable base cell. Because `r=r'=1`, the staged reciprocal coordinate is only a divisor parametrization of the fixed translated-ratio phase. The base correlation recombines exactly to
 
 \[
-B_{\lambda^{(0)}}(y)
-=\sum_{\substack{d\mid m_z(y)\\d\in\mathcal D^+(Q)}}\mu(d)
-\in\mathbf Z_{\ge0}.
+C_h^{(0)}(I)
+=
+\sum_{n\in I}
+K_h(n)B(n+h)B(n),
+\qquad
+K_h(n)=\chi(n+h)\overline{\chi(n)}
+=\chi\!\left(\frac{n+h}{n}\right)
 \]
 
-It is a nonnegative upper-sieve boundary count, not a hidden signed oscillatory amplitude. It equals `1` on genuinely `z`-rough values and its non-rough positive part is supported only on high-rank small-prime configurations: if `m_z(y)>1` and `\varepsilon(\omega(m_z(y))+2)\le1`, then the amplitude vanishes exactly. This rank gate is structural, not a density or power-saving estimate.
+on nonzero character support. If `n+h=sj`, the staged phase `chi(j) overline{chi(j-h/s)}` is exactly the same `K_h(n)` after the constant `chi(s)` factors cancel. Thus `D_s=h/s` is not an independent source-phase resource in the empty-vector cell.
 
-The live coefficient problem is therefore sharper. The empty-vector branch cannot gain from sign cancellation internal to `B_{\lambda^{(0)}}`; the nonempty branch can still gain only after exact support pruning; and a cross-component route must retain the signed finite decomposition before triangle inequalities or positive closure.
+The exact positive-amplitude decomposition is now
+
+\[
+B(n+h)B(n)
+=
+R_z(n+h)R_z(n)
++R_z(n+h)E(n)
++E(n+h)R_z(n)
++E(n+h)E(n).
+\]
+
+The leading rough channel is a two-sided pair-sieve sum
+
+\[
+\sum_n K_h(n)
+\mathbf 1_{(n(n+h),P(z))=1}.
+\]
+
+For each small prime `q<z`, the sieve excludes `n=0,-h (mod q)` when `q` does not divide `h`, with the two classes merging when `q|h`.
+
+There is now a direct prior-art boundary. Gong--Jia--Korolev prove, for prime conductor and `N` above `p^(1/2+epsilon)`, logarithmic cancellation in `sum f(n)chi(n+a)` for every `1`-bounded multiplicative `f`. Taking `f(n)=R_z(n) overline{chi(n)}` controls the **one-sided** rough sum `sum R_z(n)K_h(n)`; translating `n+h` gives the symmetric one-sided statement. The theorem does not apply to the joint coefficient `R_z(n)R_z(n+h)`, which is not multiplicative, and supplies only logarithmic rather than conductor-power saving.
+
+The live base problem is therefore no longer generic factorability or one rough coefficient. It is the interaction of the fixed translated-ratio phase with **simultaneous shifted roughness and the positive first-exit boundary terms**. Nonempty rough-block components and pre-positive cross-component interference remain separate channels.
 
 ## Research question
 
-Can the staged decomposition produce a strict conductor-power gain through one of the mechanisms that survives `MC-470`?
+Can the concrete staged-sieve decomposition produce a strict conductor-power gain through one of the mechanisms that survives `MC-471`?
 
-For the **empty-vector base component**, the target is now the joint estimate
+For the **empty-vector base component**, the primary target is now the recombined pair-sieve family
 
 \[
-\sum_{s_0}\widetilde\beta(s_0)
-\sum_{j\in J_{s_0}}
-\chi(j+U_{s_0})
-\overline{\chi(j+U_{s_0}-D_{s_0})}
-B_{\lambda^{(0)}}(C_{s_0}+s_0j),
+\sum_n
+\chi\!\left(\frac{n+h}{n}\right)
+R_z(n)R_z(n+h)
 \]
 
-where the residual factor is a positive `z`-rough-plus-boundary weight. Can the translated-character phase cancel against this weight on the exact affine trajectories strongly enough to give a conductor-power saving after the near-complete endpoint and weighted outer participation are charged? Alternatively, can cancellation in the signed outer coefficients `\widetilde\beta(s_0)` survive long enough to supply the missing gain?
+and the three boundary variants obtained by replacing one or both rough indicators by `E`. Can simultaneous shifted roughness, the exact first-exit boundary structure, or outer signed averaging create a power saving unavailable to the one-sided shifted-character theorem?
+
+A staged divisor representation is still admissible, but only when it exposes a bilinear, dispersion, or cross-component structure that is **not already present as a reparametrization** of the recombined `n`-sum. Merely varying the reciprocal coordinate `h/s` does not qualify in the base cell.
 
 For **nonempty rough-block components**, after discarding every bin tuple whose product cannot enter the `MC-467` small-outer region, does the surviving normalized signed mass remain large and structured enough for factor-specific dispersion to matter?
 
@@ -96,37 +129,42 @@ A third channel is **cross-component interference**. It is admissible only if th
 
 ## Why it may matter
 
-The route has moved from a generic appeal to factorability to a narrowly defined arithmetic interaction. Large gcd, extra factor labels, Fejér concentration, independent support/interval tuning, generic well-factorability, and blanket support pruning have all been priced or ruled out as standalone resources. `MC-470` also removes internal residual coefficient signs from the base component.
+The route has moved from a generic appeal to factorability to a narrowly defined arithmetic interaction. Large gcd, extra factor labels, Fejér concentration, independent support/interval tuning, generic well-factorability, blanket support pruning, internal signs of the empty-vector upper-sieve residual, and now the apparent reciprocal source degree of freedom in that base cell have all been priced or removed as standalone resources.
 
-This makes the next estimate discriminating. If the positive upper-sieve boundary weight can be shown to obey the same source-frame tariff even after its exact affine arithmetic is retained, while the nonempty components are support-pruned or individually too expensive, the componentwise architecture is close to closure. A positive result would instead have to exhibit a genuine character-versus-sieve interaction, outer signed cancellation, or explicit cross-component interference that is absent from the already-classified positive source-frame model.
+At the same time, prior art now rules out spending effort on the simplest remaining base surrogate: one rough multiplicative coefficient against the shifted character is already controlled in the long range. The unresolved object starts at the translated **pair** constraint `n` and `n+h`, exactly where multiplicativity breaks.
+
+A positive estimate here would therefore identify a genuinely joint character-versus-sieve mechanism. A negative estimate showing that the pair-sieve and boundary channels still pay the existing source tariff would bring the componentwise architecture close to closure and leave only nonempty components or pre-positive cross-component interference.
 
 ## Decisive test
 
-Keep the exact `MC-463` variable `s_0`, the standard Fejér shift weight, and the `MC-467` shell geometry. Do not expand the residual into the old product variables before the decisive estimate.
-
-For the **base component**, set `R=T=1` from the outset. Split
+For the **base component**, set `R=T=1` from the outset and work first in the recombined `n` representation. Separate
 
 \[
-B_{\lambda^{(0)}}(y)
+B(n+h)B(n)
 =
-\mathbf 1_{(y,P(z))=1}+E(y),
-\qquad E(y)\ge0,
+R_hR+R_hE+E_hR+E_hE.
 \]
 
-where `E(y)` is the high-rank first-exit boundary count supplied by `MC-470`. Estimate the rough part and boundary part separately on the actual affine values `y=C_{s_0}+s_0j`. The rank condition on `E` may be used only after proving a quantitative count or weighted estimate for those affine high-rank values; it is not itself a sparsity saving. Keep exact `(U,D)` collision aggregation and isolate `L_X>(1-\eta)p` instead of absorbing the near-complete endpoint into a bulk estimate.
+1. For the rough×rough term, keep the exact two-residue local sieve pattern, including the `q|h` degeneracies. Derive either a strict conductor-power saving for the translated-ratio phase against this pair-sieve weight or a quantitative obstruction showing that standard sieve/trace-function machinery cannot pay the source budget.
 
-The base channel advances only if the character-weight interaction or the retained outer signs yield a strict conductor-power gain after shell summation, Fejér weights, endpoints, coefficient normalization, and source depth. A proof based on alternating signs inside `\lambda^{(0)}` is killed by `MC-470`, because those signs have already recombined pointwise into a nonnegative count.
+2. For the mixed and boundary terms, use the exact first-exit formula from `MC-470`. Its rank condition may be used only after proving a quantitative count or weighted estimate on the actual shifted pair trajectories; nonnegativity and high rank alone are not sparsity.
 
-For **nonempty components**, use the exact lower support `a>D_1\cdots D_r` to remove impossible bin tuples before estimating anything else. Price only the surviving tuples with their actual scalar normalization/sign and the Fejér participation factor. Continue to residual collisions only if their total contribution is quantitatively non-negligible.
+3. Use the Gong--Jia--Korolev one-sided theorem only as a prior-art/control benchmark. A logarithmic one-sided saving does not satisfy the conductor-power target, and applying it to `R_z(n)R_z(n+h)` by pretending that coefficient is multiplicative is invalid.
+
+4. Return to a staged divisor representation only if the transform preserves information absent from the recombined form, such as a genuine bilinear modulus split, a factor-specific off-diagonal phase coupled to the pair-sieve condition, or signed cross-component interference. The identity in `MC-471` kills arguments based solely on counting `h/s` as new source occupancy.
+
+Keep exact `(U,D)` collision aggregation wherever the staged form is used, and isolate the near-complete endpoint `L_X>(1-eta)p` instead of absorbing it into a bulk estimate. Any claimed saving must survive shell summation, Fejér weights, endpoints, coefficient normalization, and source depth.
+
+For **nonempty components**, use the exact lower support `a>D_1...D_r` to remove impossible bin tuples before estimating anything else. Price only surviving tuples with their actual scalar normalization/sign and Fejér participation factor.
 
 For **cross-component interference**, retain the signed finite sum through the proposed transform and exhibit an explicit cross term whose cancellation remains after normalization and source-length costs. Separate positive energies followed by a later appeal to cancellation do not qualify.
 
 ## Evidence boundary
 
-`MC-467` is a shellwise geometric restriction, not a bound for the full staged kernel. `MC-468` rules out generic anti-concentration from well-factorability. `MC-469` shows that one concrete upper-sieve decomposition contains an unavoidable base component at `R=T=1`. `MC-470` further proves that this base residual is a nonnegative boundary count and gives an exact low-rank vanishing criterion.
+`MC-467` is a shellwise geometric restriction, not a bound for the full staged kernel. `MC-468` rules out generic anti-concentration from well-factorability. `MC-469` shows that the concrete upper-sieve decomposition contains an unavoidable base component at `R=T=1`. `MC-470` proves that its residual is a nonnegative rough-plus-boundary count. `MC-471` proves that its staged reciprocal coordinate is not independent source information and identifies the exact two-sided pair-sieve target; it also imports the classical one-sided shifted-character theorem only in its legitimate long-range multiplicative-coefficient regime.
 
-None of these findings proves that the high-rank boundary correction is sparse on the relevant affine trajectories, that the positive rough part has a favorable character correlation, that the outer coefficients cancel sufficiently, or that cross-component interference survives. No conductor-power gain, Möbius bound, zero-free region, or RH consequence has been obtained.
+None of these findings proves a power saving for the joint rough×rough term, any boundary term, the nonempty components, or cross-component interference. No conductor-power gain, Möbius bound, zero-free region, or RH consequence has been obtained.
 
 ## Research disposition
 
-The clue remains `accepted` and is **materially narrowed through `MC-470`**. The empty-vector residual is no longer an unspecified signed divisor amplitude: its internal coefficient signs cannot be the missing oscillatory resource. The immediate base test is now character cancellation against a positive `z`-rough plus high-rank boundary weight on the exact affine trajectories, with outer `s_0` signs and the near-complete endpoint accounted for separately. Nonempty rough-block pruning and pre-positive cross-component interference remain distinct surviving channels.
+The clue remains `accepted` and is **materially narrowed through `MC-471`**. The immediate base test is no longer generic staged source occupancy. It is power cancellation for the fixed translated-ratio character phase against the exact two-sided shifted sieve and positive first-exit boundary weights. One-sided roughness and the reciprocal divisor coordinate are now prior-art/reparametrization controls, not candidate missing resources. Nonempty rough-block pruning and pre-positive cross-component interference remain distinct surviving channels.
