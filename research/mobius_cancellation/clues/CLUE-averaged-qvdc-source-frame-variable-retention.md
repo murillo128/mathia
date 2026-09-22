@@ -23,6 +23,7 @@ based_on:
   - research/mobius_cancellation/findings/MC-460-one-sided-residual-conditioning-promotes-reduced-divisor-to-reciprocal-source-shift.md
   - research/mobius_cancellation/findings/MC-461-residual-source-starts-decompose-into-bounded-anchor-slices.md
   - research/mobius_cancellation/findings/MC-462-anchor-fibre-support-ceiling-forces-a-residual-range-gate.md
+  - research/mobius_cancellation/findings/MC-463-gcd-sector-normalization-collapses-to-common-anchor-quotient.md
 ---
 
 # Can the staged factor-weighted source kernel beat the Möbius source-frame tariff?
@@ -79,83 +80,127 @@ Hence `U_s=m_st^{-1}` occupies at most `phi(t_0)` anchor slices, rather than an 
 
 Consequently a bare source-frame aggregate supported on `R_U` anchors has the slice-Cauchy tariff `R_U p/H`; variable `U_s` does not by itself kill the staged route.
 
-`MC-462` now prices the other side of the same quotient. If the residual block is supported on `s<=S` and `t<p`, one fixed anchor can contain at most
+`MC-462` prices the other side of that quotient inside one fixed residual gcd sector. If the residual block is supported on `s<=S` and `t<p`, one fixed anchor contains at most `1+S(h_1,t)/r_2` residual divisors, so a short fibre cannot meet the `p/H` participation threshold.
+
+`MC-463` shows that the sector decomposition itself contains a redundancy. For the fixed outer pair define
 
 \[
-1+\frac{S}{dt_0}
-=1+\frac{S(h_1,t)}{r_2}
+G=(h_0,r_2),
+\qquad
+T=\frac{r_2}{G},
+\qquad
+H_0=\frac{h_0}{G}.
 \]
 
-residual divisors. Since participation ratio never exceeds support cardinality, the `MC-461` moment cannot beat the pointwise bound at all in a sector satisfying
+Every compatible `d=(s,r_2)` satisfies
 
 \[
-1+\frac{S(h_1,t)}{r_2}\le \frac pH.
+(h_1,t)=G/d,
+\qquad
+t_0=T,
 \]
 
-Thus small anchor diversity is useful only when it is accompanied by enough **per-anchor residual support**. In power-scale form the bare route needs `S H (h_1,t) \gtrsim p r_2`. This eliminates every short-fibre sector before coefficient phases or the surviving amplitude are examined.
+and after writing `m=(G/d)(\ell+Tj)`, both the source pair and the surviving amplitude trajectory depend only on `s_0=s/d`, not on `d`. The original coefficients therefore aggregate exactly to
+
+\[
+\widetilde\beta(s_0)
+=
+\sum_{\substack{d\mid G\\(s_0,r_2/d)=1\\d s_0\le S}}
+\beta_{d s_0}
+\]
+
+before Cauchy or completion. In the clean regime `T<p`, one anchor contains at most
+
+\[
+1+\frac ST
+=1+\frac{SG}{r_2}
+\]
+
+reduced source points, so the natural full-family support gate is
+
+\[
+1+\frac{S(h_0,r_2)}{r_2}>\frac pH.
+\]
+
+The internal `d`-sector is therefore not a source-frame resource or cost. The relevant compression parameter is the outer gcd `G=(h_0,r_2)`.
 
 ## Research question
 
-Can the one-sided staged family isolated by `MC-460`, schematically
+Can the one-sided staged family, after the exact `MC-463` aggregation,
 
 \[
-\sum_s \beta_s
-\sum_{j\in J_s}
-\chi(j+U_s)\overline{\chi(j+U_s-\delta s_0^{-1})}
-\overline{B_\beta(C_s+r_1s_0j)},
+\sum_{s_0}\widetilde\beta(s_0)
+\sum_{j\in J_{s_0}}
+\chi(j+U_{s_0})
+\overline{\chi(j+U_{s_0}-D_{s_0})}
+\overline{B_\beta(C_{s_0}+r_1s_0j)},
 \]
 
 be estimated before the second residual expansion and before componentwise positive closure with a strict conductor-power gain that survives off-diagonal dispersion/completion, outer-factor multiplicity, exceptional source ranges, and later source-depth bookkeeping?
 
-The geometric admissibility part is now explicit. In the `t<p` regime, only gcd sectors satisfying
+For a fixed outer pair, set
 
 \[
-1+\frac{S(h_1,t)}{r_2}>\frac pH
+G=(h_0,r_2),
+\qquad
+T=r_2/G.
 \]
 
-can possibly exploit the bare fixed-anchor second moment. The live question is therefore whether those favourable sectors carry enough outer weight and whether their **actual** factorable coefficients have participation comparable to the available support. Only after that should the aligned amplitude `B_beta(C_s+r_1s_0j)` and variable lengths `J_s` be passed through a joint dispersion/completion estimate.
+When `T<p`, the bare fixed-anchor moment can only help if
+
+\[
+1+\frac ST>\frac pH.
+\]
+
+The live arithmetic question is therefore no longer how to sum favourable residual gcd sectors. It is whether outer pairs/shifts with sufficiently small normalized quotient `T`, equivalently sufficiently large `G`, carry enough total weight and whether the **aggregated** coefficients `\widetilde\beta(s_0)` have effective reciprocal-shift participation above `p/H`. Only after those gates should the aligned amplitude and variable lengths be passed through a joint dispersion/completion estimate.
 
 A second branch remains legitimate but separate: source-only conductor reduction could still win without factor-specific staging if the reduced-conductor estimate beats the full product-level occupancy cost after every later summation.
 
 ## Why it may matter
 
-The factor-specific branch has moved from a qualitative representation question to a sequence of quantitative gates. `MC-458` gives an exact pre-positive carrier, `MC-459` removes positive-energy inflation as the immediate obstruction, `MC-460` promotes a residual factor into a reciprocal translated-character shift, `MC-461` compresses the accompanying start variation, and `MC-462` proves that the same compression yields a necessary residual-range threshold.
+The factor-specific branch has moved from a qualitative representation question to a sequence of quantitative gates. `MC-458` gives an exact pre-positive carrier, `MC-459` removes positive-energy inflation as the immediate obstruction, `MC-460` promotes a residual factor into a reciprocal translated-character shift, `MC-461` compresses the accompanying start variation, `MC-462` supplies the first support gate, and `MC-463` removes the artificial gcd-sector coordinate and exposes the true outer quotient `T=r_2/(h_0,r_2)`.
 
-A positive route must therefore find genuine mass in sectors where normalized-shift gcd compression is strong enough, residual support is long enough, and coefficient participation survives aggregation. A negative estimate showing that such sectors are too sparse after the outer sums, or that the surviving amplitude destroys the fixed-anchor gain, would close the most plausible remaining well-factorable escape without claiming factorability is useless in other arithmetic geometries.
+A positive route must now find genuine mass where the outer gcd compression is strong enough, the reduced residual support is long enough, and coefficient participation survives exact aggregation. A negative bound showing that such outer-gcd configurations are too sparse, or that `\widetilde\beta`/the surviving amplitude destroys the fixed-anchor gain, would close the most plausible remaining well-factorable escape without claiming factorability is useless in other arithmetic geometries.
 
 ## Decisive test
 
-Take a balanced well-factorable component `lambda=alpha*beta` in the source form underlying `MC-409`/`MC-413`. Keep the `MC-458` staging, condition on exactly one complementary divisor as in `MC-460`, and preserve the second `B_\beta` block through the first nontrivial Cauchy/dispersion/completion step.
+Take a balanced well-factorable component `lambda=alpha*beta` in the source form underlying `MC-409`/`MC-413`. Keep the `MC-458` staging and condition on exactly one complementary divisor as in `MC-460`, but **before any Cauchy or sectorwise absolute value**, apply `MC-463`: replace all compatible residual gcd sectors by the single reduced variable `s_0` and coefficient `\widetilde\beta(s_0)`.
 
-For each fixed outer pair and gcd sector, write
+For each fixed outer pair compute
 
 \[
-t_0=\frac{t}{(h_1,t)},
+G=(h_0,r_2),
 \qquad
-U_s\text{ determined by }s_0\pmod{t_0},
+T=\frac{r_2}{G},
 \qquad
-D_s=\delta s_0^{-1}\pmod p.
+U_{s_0}\text{ determined by }s_0\pmod T,
+\qquad
+D_{s_0}=H_0(r_1Ts_0)^{-1}\pmod p.
 \]
 
-First apply the exact `MC-462` support gate. Sectors with
+In the regime `T<p`, first apply the exact full-family support gate. Outer configurations satisfying
 
 \[
-1+\frac{S(h_1,t)}{r_2}\le\frac pH
+1+\frac ST\le\frac pH
 \]
 
-cannot gain from bare anchor slicing and should be charged directly rather than sent into a finer occupancy argument. For the complementary sectors, sum the actual outer/gcd weights and determine whether their total mass is polynomially large enough to matter after the `MC-415`/`MC-448` source-depth budget.
-
-Inside those surviving sectors, group residual divisors by exact anchor class and compute the **weighted** participation of reciprocal shifts after collisions modulo `p`, using the actual `beta_s` rather than the support ceiling. Passing the support gate is only admission: the required quantity is still larger than `p/H` per represented anchor at the relevant common-length or legitimate variable-length scale.
-
-Then repeat the estimate with the second residual amplitude still present. Use
+cannot gain from bare anchor slicing and should be charged directly. For the complementary configurations, quantify their total outer `(r,r',h)` weight through the condition
 
 \[
-C_s\equiv r_1s_0(U_s-D_s)\pmod p
+SH(h_0,r_2)\gtrsim p r_2.
 \]
 
-rather than replacing `B_\beta(C_s+r_1s_0j)` by an unrelated pointwise norm. The next substantive gate is passed only if a weighted fixed-anchor dispersion or completion estimate retains a strict conductor-power gain after amplitude variation, variable lengths, gcd sectors, outer `(r,r')` summation, exceptional terms, and source depth are all charged.
+Inside those survivors, group the **aggregated** coefficients by exact anchor class and reciprocal-shift collision and compute their weighted participation. Passing the support gate is only admission: effective participation still has to exceed `p/H` per represented anchor at the relevant common-length or legitimate variable-length scale.
 
-A bound that averages over the full `(U,D)` box, expands the surviving divisor sum first, ignores the `MC-462` range condition, or proves only the bare `MC-461` slice moment without controlling the aligned amplitude has not passed this gate.
+Then repeat the estimate with the second residual amplitude still present. Use its exact aligned trajectory
+
+\[
+B_\beta(C_{s_0}+r_1s_0j)
+\]
+
+rather than replacing it by an unrelated pointwise norm. The next substantive gate is passed only if a weighted fixed-anchor dispersion or completion estimate retains a strict conductor-power gain after amplitude variation, variable lengths, outer summation, exceptional terms, and source depth are all charged.
+
+A bound that treats different `d=(s,r_2)` sectors as independent source families, averages over the full `(U,D)` box, expands the surviving divisor sum first, ignores the outer-gcd support condition, or proves only the bare `MC-461` slice moment has not passed this gate.
 
 For the independent source-only branch, propagate the best admissible reduced-conductor estimate through the existing product-level summation and require an actual net conductor-power gain; an improved individual character sum consumed by occupancy does not qualify.
 
@@ -163,12 +208,18 @@ For the independent source-only branch, propagate the best admissible reduced-co
 
 `MC-456` is a literature-backed transfer classification, not a theorem about the Möbius kernel. Reciprocal/Kloosterman and bilinear character-sum methods in the neighboring literature show that reciprocal factor variables can be analytically meaningful, but they do not estimate the coupled family derived here.
 
-`MC-457` exactly closes full completion of an independent coprime factor-residue mask. `MC-458` exactly constructs the staged carrier. `MC-459` proves that its positive diagonal is affordable. `MC-460` exactly derives the reciprocal source shift and modular alignment of the surviving amplitude. `MC-461` exactly classifies the start fibres and the bare prime-conductor fixed-anchor shift moment. `MC-462` adds a coefficient-independent support ceiling and excludes every `t<p` sector whose residual range cannot even meet the `p/H` participation threshold.
+`MC-457` exactly closes full completion of an independent coprime factor-residue mask. `MC-458` exactly constructs the staged carrier. `MC-459` proves that its positive diagonal is affordable. `MC-460` exactly derives the reciprocal source shift and modular alignment of the surviving amplitude. `MC-461` exactly classifies the start fibres and the bare prime-conductor fixed-anchor shift moment. `MC-462` adds a sectorwise coefficient-independent support ceiling. `MC-463` proves that all compatible residual gcd sectors for a fixed outer pair normalize to the common quotient `T=r_2/(h_0,r_2)`, can be aggregated exactly into `\widetilde\beta`, and obey the full-family support gate `1+S/T>p/H` in the clean `T<p` regime.
 
-None of these findings proves that the favourable sectors have enough total mass, that the actual `beta_s` attain the available participation, that the full weighted family with `B_beta(C_s+r_1s_0j)` intact satisfies a useful joint moment, or that any local gain propagates to the final Möbius source budget. The clue therefore remains `accepted`.
+None of these findings proves that outer configurations passing that gate carry enough total mass, that `\widetilde\beta` attains the available participation, that the full weighted family with `B_\beta(C_{s_0}+r_1s_0j)` intact satisfies a useful joint moment, or that any local gain propagates to the final Möbius source budget. The clue therefore remains `accepted`.
 
 ## Research disposition
 
-The clue remains `accepted` and is **materially narrowed through `MC-462`**. The questions “does variable `U_s` automatically restore a two-dimensional conductor box?” and “can every compressed anchor sector exploit the fixed-anchor moment?” are both closed negatively. The first is ruled out by the quotient `s_0 mod t_0`; the second by the support ceiling `1+S(h_1,t)/r_2`.
+The clue remains `accepted` and is **materially narrowed through `MC-463`**. The residual gcd sector `d=(s,r_2)` is no longer a live source-frame degree of freedom: after exact normalization it disappears from the interval, source pair, anchor modulus, and surviving amplitude, leaving only coefficient aggregation.
 
-The live well-factorable branch is now restricted to favourable gcd/range sectors that pass the exact `MC-462` gate. Within them, determine the weighted `D_s` participation, price the total sector mass, and carry the aligned unexpanded residual amplitude through the first oscillatory estimate. Generic internal-factor multiplicity, bounded component splitting, source-only q-vdC after product collapse, complete factor-residue completion, polynomial progression-energy inflation, absence of factor-specific source oscillation, automatically free two-dimensional start/shift variation, and short anchor fibres are now closed or neutralized by `MC-454`--`MC-462`. The independent source-only conductor-reduction branch remains open only as a separate quantitative question.
+The live well-factorable branch is now restricted to outer pairs/shifts for which the common quotient
+
+\[
+T=\frac{r_2}{(h_0,r_2)}
+\]
+
+passes the support gate, followed by a weighted-participation test for `\widetilde\beta` and a joint estimate that retains the aligned unexpanded residual amplitude. Generic internal-factor multiplicity, bounded component splitting, source-only q-vdC after product collapse, complete factor-residue completion, polynomial progression-energy inflation, absence of factor-specific source oscillation, automatically free two-dimensional start/shift variation, short anchor fibres, and residual-gcd-sector multiplicity are now closed or neutralized by `MC-454`--`MC-463`. The independent source-only conductor-reduction branch remains open only as a separate quantitative question.
