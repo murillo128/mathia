@@ -299,30 +299,59 @@ If the quotient-visible tail is compact at such an `R>lambda`, the upper and low
 
 ## Sharp model
 
-Take
+Fix any `lambda>=0` and take
 
 \[
-H=\mathbb R\oplus_2 V,
+H=\mathbb R^2\oplus_2 V,
 \qquad
-D=\mathbb N\times V,
+D=\{(n,\lambda,v):n\in\mathbb N,\ v\in V\},
 \qquad
-s=(1,0),
+s=(1,0,0),
 \]
 
-with infinite-dimensional Hilbert `V`. Then `lambda=0` and the quotient tail at every finite radius is eventually the singleton `{0}`, hence has zero Hausdorff noncompactness. At integer times the raw tail contains
+with infinite-dimensional Hilbert `V`. Then `D+V=D` and
 
 \[
-\{0\}\times\overline B_V(0,R),
+\operatorname{dist}_H(ts,D)
+=
+\sqrt{\operatorname{dist}(t,\mathbb N)^2+\lambda^2},
 \]
 
-so
+so the asymptotic liminf is exactly `lambda`.
+
+For every `R>=lambda`, identify the quotient with `\mathbb R^2`. For all sufficiently large `T`, the quotient tail is the compact segment
 
 \[
-\nu_C^0(s;R)=R
-=\sqrt{R^2-\lambda^2}.
+E^V_{T,R}
+=
+\left\{
+(a,\lambda): |a|\le\sqrt{R^2-\lambda^2}
+\right\},
 \]
 
-This attains the formula. More generally, replacing the first-coordinate source by a saturated source whose quotient asymptotic separation is a prescribed `lambda>0` gives the same Pythagorean fiber radius `sqrt(R^2-lambda^2)` whenever the quotient-visible tail is compact.
+hence
+
+\[
+\nu_C^V(s;R)=0.
+\]
+
+At integer times `t=n`, the raw tail contains the exact nuisance ball
+
+\[
+(0,\lambda,0)
++
+\sqrt{R^2-\lambda^2}\,\overline B_V.
+\]
+
+The upper bound already proved gives the reverse estimate, so
+
+\[
+\nu_C^0(s;R)
+=
+\sqrt{R^2-\lambda^2}.
+\]
+
+Thus the square-root profile, including the zero value at the critical radius, is attained for every prescribed finite `lambda`.
 
 ## Prior-art and novelty audit
 
