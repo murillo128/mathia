@@ -277,7 +277,7 @@ FD-259 proves a different ceiling when the positive cushion has nonnegative Möb
 \tag{19}
 \]
 
-Then its aggregate normalized mass on a dyadic band is only `O(x)`, not `O(x^(2-beta))`. Returning to physical units at `xasympD`,
+Then its aggregate normalized mass on a dyadic band is only `O(x)`, not `O(x^(2-beta))`. Returning to physical units at `x\asymp D`,
 
 \[
 \boxed{
