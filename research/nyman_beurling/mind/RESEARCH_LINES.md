@@ -36,6 +36,24 @@ For the normalized innovation, the old-section defect `b_(m,n,Z)=S_m psi_(n,Z)-c
 
 `1-c_(m,n)^2 = d_(m,n,Z)^* Gamma_(m,n,Z)^+ d_(m,n,Z) + ||z_(m,n,Z)||^2`,
 
-where `z_(m,n,Z)` is the sample-null component of the same quotient band. Thus the previously scalar retention loss now has a canonical decomposition into a first-free visible repair charge and a first-free sample-null charge, tied by the actual dilation geometry.
+where `z_(m,n,Z)` is the sample-null component of the same quotient band. Thus the previously scalar retention loss has a canonical visible/null decomposition tied by the actual dilation geometry.
 
-The decisive moving-packet question is no longer whether such a vector-valued carrier exists, but whether it is **coercive in the target-relevant direction**. NB-292 gives no lower bound forcing either charge to be large and does not yet control the target-aware future-null Parseval tail of NB-287. A useful next theorem must connect the matrix cocycle `Gamma_(m,n,Z)`, the defect vectors `d_(m,n,Z)` or the null-band components `z_(m,n,Z)` to the moving minimum-norm source/target coefficients strongly enough to force a rate. Another inequality depending only on `sigma_n`, `sqrt(n)sigma_n`, `c_(m,n)` or the raw zero-sample table remains inside the NB-291 matched-control class.
+NB-293 now gives the exact destination map for that carrier once the lower quotient section is first-free-surjective. Neutralizing each `w` in `W_(m,n,Z)` by its minimum-norm old-section sample repair produces a bijection onto the new null block
+
+`Q_(m,n,Z)=D_(mn-1,Z) \ominus S_m D_(n-1,Z)`.
+
+For first-free datum `y`, if `g_(m,n)(y)` is its minimum-norm realization in the dilated old section, the entire multiplicative-section improvement is
+
+`Delta_(m,n,Z)(y)=||P_(Q_(m,n,Z)) g_(m,n)(y)||^2`.
+
+Equivalently, with `A=D_Z(m)K_(n-1,Z)D_Z(m)^*`, `M=A^(-1/2) Gamma_(m,n,Z) A^(-1/2)` and `x=A^(-1/2)y`,
+
+`Delta_(m,n,Z)(y)=x^* M(I+M)^(-1)x`.
+
+Thus trace, determinant, operator norm, band dimension and scalar dilation loss count only through spectral occupation by the **actual transformed datum**. The canonical defect gives the explicit certificate
+
+`Delta_(m,n,Z)(y) >= |d_(m,n,Z)^* A^(-1)y|^2 / (1-c_(m,n)^2+d_(m,n,Z)^*A^(-1)d_(m,n,Z))`,
+
+while an already sample-null component of the band is target-silent for this direct enrichment. Multiplicative gains also obey an exact chain rule only after transporting the datum contravariantly: a fixed-datum telescoping argument is invalid.
+
+The decisive moving-packet question is therefore no longer whether a vector carrier exists or how it reaches the target. Both are exact. The missing theorem is **arithmetic target occupation**: force enough mass of the moving transformed Ford datum into the positive spectrum of the whitened cocycle, or lower-bound a canonical pairing such as `d^*A^(-1)y`, strongly enough to control the target-aware future-null tail. NB-293 itself supplies no such lower bound and no approximation rate. Another inequality depending only on `sigma_n`, `sqrt(n)sigma_n`, `c_(m,n)`, raw matrix size or the zero-sample table remains outside the needed target-aware currency.
