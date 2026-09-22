@@ -10,24 +10,28 @@ Canonical full-grid inversion does not supply that amplifier. FD-262 bounds its 
 
 The live deterministic source question is therefore a theorem on **one-sided or `l^1` within-band repair variation** under the exact replication kernel, or a genuinely different switched-only repair whose intermediate motion changes the source demand. A negative signed mean or a dense population of deep blocks is not enough by itself.
 
-## Decide whether desingularized zero clusters can couple coherently to the physical horizons
+## Decide whether the cluster-complete spectral packet can couple to the physical source without an unpaid remainder or background tariff
 
 FD-268--FD-273 separate absolute spectral mass from usable source-phase coherence. The finite critical packet has enough absolute `l^1` budget under the natural negative-moment calibration, but its phase-sensitive replicated field is sparse at threshold on integer horizons. Under RH, FD-273 localizes any nonexceptional threshold-sized finite-packet contribution to the close-gap complement of the well-spaced zeros.
 
-FD-274 changes the interpretation of that close-gap escape. If a finite cluster of distinct simple zeros is factored as `zeta=P_C H_C`, then the signed cluster sum `sum A(rho)/zeta'(rho)` is exactly the divided difference of `A/H_C`. The inverse powers of the **internal** zero gaps in the separate reciprocal derivatives are therefore removable after the cluster is recombined at each physical repair coordinate. Large raw negative moments concentrated on close zeros do not by themselves provide signed repair amplification.
+FD-274--FD-276 then remove internal close-gap singularity as a free resource. A complete simple-zero cluster recombines into a divided difference, fixed derivative order costs only linear depth-band variation up to logarithms, and a reciprocal-log component of size `m` with collar background `B_C` obeys the exponent ledger
 
-FD-275 also prices the packet-side variation after that recombination. The exact interval representation of the consecutive-difference/divisor kernel gives only linear depth-band cost, up to logarithms, for every fixed derivative order. For a bounded-size cluster to reach the `x^(2-beta)` positive-capacity threshold at polynomial depth, some derivative of the desingularized background `H_C^(-1)` must therefore be at least `x^(1-beta-o(1))`; zero height, internal gap size and packet differentiation alone cannot supply the missing power.
+`(m-1) log(2 log(2Nx)) + log B_C >= (1-beta-o(1)) log x`
 
-FD-276 removes the unquantified growing-cluster loophole under RH and simple zeros. At reciprocal-log collar width `eta=1/log(2Nx)`, a complete externally separated cluster of size `m` satisfies a uniform band bound of scale `x (2 log(2Nx))^(m-1) B_C(eta)`, where `B_C(eta)` is the zero-free-collar envelope of `|H_C|^(-1)`. Hitting the positive-capacity threshold forces the additive budget
+if it is individually threshold-sized. Thus subpolynomial background requires `m` on the order of `log x/log log x`; internal inverse gaps and zero height do not independently amplify the grouped packet.
 
-`(m-1) log(2 log(2Nx)) + log B_C(eta) >= (1-beta-o(1)) log x`.
+FD-277 prices that single-component large-cardinality branch by spectral height. At depth `x=N^(lambda+o(1))`, if the background exponent is `delta<1-beta` and `q=1-beta-delta`, RH forces
 
-In the polynomial-depth regime this means that subpolynomial background conditioning requires `m >= (1-beta-o(1)) log x/log log x`, while `m=o(log x/log log x)` forces `B_C(eta)>=x^(1-beta-o(1))`. Internal cluster gaps and zero height are still not independent amplification resources once the cluster has been recombined.
+`log Gamma/log x >= 2q/(1+2q/(pi(1+1/lambda)))-o(1)`.
 
-FD-277 prices the large-cardinality branch itself. If one complete reciprocal-log component is threshold-sized and its collar background is `B_C(eta)<=x^(delta+o(1))`, put `q=1-beta-delta>0`. Under RH and simple zeros, Riemann--von Mangoldt converts the required cluster size into an `S(t)` excursion, and the sharp RH bound on `S(t)` forces
+For subpolynomial background this gives a uniform exponent floor `0.656590...`, and `0.733210...` at balanced depth.
 
-`log Gamma/log x >= 2q/(1+2q/(pi(1+1/lambda)))-o(1)`
+FD-278 closes the aggregate complete-component loophole at exponent level. For `R=x^(r+o(1))` complete components, maximal reciprocal-log cardinality `(kappa+o(1))log x/log log x`, and maximal background `x^(b+o(1))`, even perfect inter-component coherence can reach threshold only if
 
-when `x=N^(lambda+o(1))`. Uniformly in fixed `lambda>0`, this is at least `2q/(1+2q/pi)-o(1)`. In particular, subpolynomial background forces `Gamma>=x^(0.6565900638708717-o(1))`, and at balanced depth `lambda=1` the exponent is `0.7332102032858479`. Spectral height is therefore a tariff on the large-cluster escape, not an independent source of repair: a tame-background threshold component must be reciprocal-log dense, polynomially high and still phase-aligned at the physical horizon.
+`r+kappa+b >= c`, where `c=1-log_2(3/2)`.
 
-The live spectral question is therefore aggregate and cluster-aware. The single-component route must now pay size, background conditioning and spectral height simultaneously, but FD-277 does not control many components that are individually subthreshold. Can such components add coherently on the source-selected Mertens-large integer horizons, or can their grouped background envelopes and inter-cluster phases be shown collectively subthreshold? A useful positive theorem must retain those phases after divided-difference compression; a useful negative theorem may bound aggregate background conditioning, aggregate spectral population or coherent accumulation. Multiple zeros, off-line zeros, explicit-formula remainders and genuinely different switched repairs remain separate escapes.
+If all components lie below `T=x^(tau+o(1))`, RH gives `r<=tau` and `kappa<=tau/[2(1-tau/(pi(1+1/lambda)))]`. Tame aggregate background therefore forces `T>=x^(tau_*(lambda)-o(1))`; uniformly in fixed polynomial depth `tau_*>=0.2683381468...`, with `tau_*(1)=0.2725714441...`. At subpolynomial height the background must pay essentially the full exponent `c`.
+
+FD-279 removes the one component cut by a hard upper spectral boundary as a separate power-scale escape in the same low-height regime. A reciprocal-log component crossing `T=x^(tau+o(1))`, `tau<pi(1+1/lambda)`, has diameter `O(1/log log x)` under RH and simple zeros. Moving an analyst-controlled cutoff just beyond it restores complete-cluster divided-difference cancellation without changing the spectral exponent. The only new object created by that move is the separately derived explicit-formula remainder.
+
+The spectral frontier is therefore now **cluster-complete and remainder-aware**. A tame-background low-height packet, even with optimally coherent complete components, cannot pay the positive-capacity threshold below the FD-278 height floor, and a truncation boundary does not create a hidden power-scale exception. The next useful negative theorem would control the explicit-formula remainder uniformly under the `O(1/log log x)` cluster-completion displacement and close any residual source-selected coherence at permitted polynomial heights. A positive escape must instead exhibit a genuinely polynomial desingularized-background anomaly, use sufficiently high zeros with the required source phase, exploit multiple/off-critical zeros outside the simple critical decomposition, or change the repair architecture. These possibilities must be kept separate rather than reintroduced through partial-cluster residues.
