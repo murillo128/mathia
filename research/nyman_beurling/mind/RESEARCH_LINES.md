@@ -24,6 +24,28 @@ The live destination question is therefore a concrete fork. Estimate the actual 
 
 The separate source-side question of whether `O(log K)` aggregate coverage is minimal remains open, but improving that radius cannot by itself overcome the destination leak. Aggregate response, projected Hardy energy, target projection defect, anchor mismatch, inverse-Gram conditioning and the full Nyman norm are distinct currencies.
 
+## Realize the Ford divisor current through a legal finite Nyman regularization
+
+**Linked intuition:** `MI-078-the-ford-current-is-a-singular-mellin-derivative-of-the-canonical-nyman-source`.
+
+NB-276 gives an exact source identity that is independent of the proposed/pending NB-273--NB-275 chain. For the canonical Nyman synthesis
+
+`N[P](s)=zeta(s)/s (P(s)-P(1))`
+
+and `P_*(s)=1/zeta(s)`, one has `N[P_*]=1/s`, while differentiation gives
+
+`-s N[P_*'] = zeta'(s)/zeta(s) + zeta(s)`.
+
+Thus the Ford divisor current is already encoded as the singular Mellin derivative of the canonical Möbius source: the Euler pole cancels and the nontrivial-zero residues survive. The obstruction is not source provenance but legal realization. Differentiation inserts `log k`, multiplication by `s` is unbounded in the Hardy geometry, and the zero poles appear only after meromorphic continuation rather than a norm-continuous `H^2` passage.
+
+NB-277 closes the canonical Abel-shift repair. Replacing `1/zeta(s)` by `1/zeta(s+epsilon)` displaces the Ford depth by `X epsilon`. Preserving Ford depth requires `X epsilon->0`, but then the differentiated coefficients on the shell retain their full `log k~X` size. Taking `X epsilon` bounded away from zero buys only bounded damping at order-one depth bias, while `X epsilon->infinity` gives strong damping only by sending the source to a diverging Ford displacement.
+
+The live question is therefore whether a **finite legal truncation, cancellation-aware regularizer, or other zero-preserving source mechanism** can approximate the source-native Ford current while controlling the Hardy/Ford-scale cost. A plain horizontal Abel shift cannot do both jobs. Any positive result must state the finite admissible source, the topology in which it converges, the price of the logarithmic derivative, and which cancellation is used before continuation.
+
+This research line does not promote NB-273--NB-275 and does not use their pending claims as premises. NB-276--NB-277 also do not establish `H^2` convergence, a Hardy lower bound, or failure of Möbius cancellation; they isolate the exact source identity and the regularization tradeoff that a legal construction must overcome.
+
 ## Keep preassigned strips, rank-coupled coverage, certificate complexity and target norm distinct
 
 A future theorem must state the order of quantifiers and every bounded resource. NB-269--NB-272 show that an order-one point residue can be hidden in a shrinking width while every positive quadratic observable continuously dominated by the resolved `H^2` channel pays the rank leak, and that the ordinary target pairing does not secretly alter the source Gram. A successful target mechanism must therefore locate either a genuine target mismatch that survives at order one or a new source-source component with the necessary rank-growing strength, rather than infer coercivity from aggregate source response or unspecified target-sensitive structure.
+
+NB-276--NB-277 add a different source-native route rather than repairing that quadratic channel. The exact Ford current is present only after a singular derivative/continuation operation, and the canonical Abel smoothing cannot preserve Ford depth while removing the derivative tariff. Future work must keep finite legal source approximation, Hardy topology, meromorphic continuation and Ford-scale localization distinct rather than treating the exact continued identity as an admissible Nyman approximant.

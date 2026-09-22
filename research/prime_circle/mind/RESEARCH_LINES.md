@@ -16,18 +16,24 @@ PC-394 first prices the operator amplitude through the internal deleted-layer La
 
 closing unscaled outliers throughout `2<u<=1+2 alpha`.
 
-PC-395 removes the remaining fixed-polynomial-window loophole. Source-forced `q`-separation of the deleted layer, Jacobsthal covering by surviving vertices, and the exact factorization `Delta_T=PQP^*` yield
+PC-395 removes the remaining fixed-polynomial-window loophole for `alpha>1/2`. Source-forced `q`-separation of the deleted layer, Jacobsthal covering by surviving vertices, and the exact factorization `Delta_T=PQP^*` yield
 
 `||Delta_T||_op << (1+J(q)/q) q^(-2 alpha)`.
 
-The classical `J(q)<<q^2` bound makes this `o(1)` for every `alpha>1/2`, independently of the fixed polynomial window exponent. Thus **no longer fixed polynomial primorial window can recover a persistent unscaled simultaneous-deletion outlier in the positive summable phase**.
+The classical `J(q)<<q^2` bound makes this `o(1)` for every `alpha>1/2`, independently of the fixed polynomial window exponent.
 
-The live positive-Kron frontier must therefore change the resource rather than the window length: nonsummable interactions, independently justified renormalized exceptional observables, cross-level orientation/evolution of the thin contrast subspaces, or source/state information not exhausted by support deletion and positive Schur transport. Signed, indefinite and nonlinear operators remain different categories rather than escapes inside the closed positive summable mechanism.
+PC-396 closes the critical endpoint as well. At `alpha=1/2`, survivor vertices in the outer half of every fixed polynomial window force deleted-vertex degrees large enough to compensate the borderline interaction, while `q`-spacing controls the normalized incidence overlap. The exact Kron factorization then gives
+
+`||Delta_T||_op = O_(tau,u)(log p/p) -> 0`
+
+for every fixed polynomial window `H=p^u`. Thus **the simultaneous-deletion contrast vanishes on all fixed polynomial windows throughout the positive summable phase and at its critical endpoint**.
+
+The live positive-Kron frontier must therefore change the resource rather than the window length: the genuinely nonsummable regime `alpha<1/2`, independently justified renormalized exceptional observables, cross-level orientation/evolution of the thin contrast subspaces, or source/state information not exhausted by support deletion and positive Schur transport. Signed, indefinite and nonlinear operators remain different categories rather than escapes inside the closed positive summable/critical mechanism.
 
 ## Apply the strongest matched and classicalization controls after the representation is fixed
 
 For full fibers, order-one spikes or singular transitions do not count as arithmetic evidence when matched composite controls share the same pushforward. For primitive fibers, prime/composite separation is still insufficient because exact-order restriction supplies classical coprimality data and the primorial boundary preselects the rough-number support.
 
-For multi-deletion positive Kron transport, the audit now has four levels: restrict to the thin contrast carrier, remove common null directions before applying nonlinear observables, price the carrier's operator amplitude using the source-forced internal spacing, and control the normalized incidence overlap using actual survivor covering. PC-395 shows that the last local-geometric step closes the longer-window proof boundary left by PC-394.
+For multi-deletion positive Kron transport, the audit now has four levels: restrict to the thin contrast carrier, remove common null directions before applying nonlinear observables, price the carrier's operator amplitude using the source-forced internal spacing, and control the normalized incidence overlap using actual survivor covering. PC-395 closes the supercritical fixed-polynomial-window boundary and PC-396 shows that the same conclusion survives at `alpha=1/2` by a sharper borderline degree/overlap estimate.
 
 Credit a new Prime-Circle branch only after identifying a source datum that survives these reductions and affects the intended destination. A non-scalar matrix, Schur fill-in, simultaneous deletion, small spectral regulator, normalized determinant, exceptional eigenvalue or longer fixed polynomial window on prime-selected support is not by itself a new arithmetic mechanism.
