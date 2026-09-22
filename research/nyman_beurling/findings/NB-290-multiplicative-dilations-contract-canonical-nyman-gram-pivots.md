@@ -8,9 +8,9 @@
 
 ## Claim
 
-`NB-288` and `NB-289` show that bounded sampling Grams, bounded right inverses, and even the exact future Dirichlet zero-sample table do not force a quantitative finite-section rate: an abstract Hilbert model can retain arbitrary lethargy while satisfying all of those constraints. A useful next invariant therefore has to use metric relations among the **actual Nyman source vectors**, not only their sampled values.
+`NB-288` and `NB-289` show that bounded sampling Grams, bounded right inverses, and even the exact future Dirichlet zero-sample table do not force a quantitative finite-section rate. An abstract Hilbert model can retain arbitrary lethargy while satisfying all of those constraints. A useful next invariant therefore has to use metric relations among the **actual Nyman source vectors**, not only their sampled values.
 
-Use the canonical generators
+Use
 
 \[
 g_n(x)=\left\{\frac1{nx}\right\}-\frac1n\left\{\frac1x\right\},
@@ -18,7 +18,7 @@ g_n(x)=\left\{\frac1{nx}\right\}-\frac1n\left\{\frac1x\right\},
 V_n:=\operatorname{span}\{g_2,\ldots,g_n\},
 \]
 
-with `V_1={0}`, and define the one-step source innovation
+with `V_1={0}`, and define
 
 \[
 w_n:=(I-P_{V_{n-1}})g_n,
@@ -48,7 +48,7 @@ A_mg_j
 \tag{3}
 \]
 
-After quotienting by **all** canonical generators preceding the product index `mn`, one gets the exact transport law
+The new quotient identity is
 
 \[
 \boxed{
@@ -59,7 +59,7 @@ P_{V_{mn-1}^{\perp}}A_mw_n
 \tag{4}
 \]
 
-Consequently
+Hence
 
 \[
 \boxed{
@@ -69,25 +69,24 @@ Consequently
 \tag{5}
 \]
 
-Equivalently, the renormalized pivots
+Equivalently,
 
 \[
 \tau_n:=\sqrt n\,\sigma_n
-\tag{6}
 \]
 
-are monotone along divisibility:
+is monotone along divisibility:
 
 \[
 \boxed{n\mid N\quad\Longrightarrow\quad \tau_N\le\tau_n.}
-\tag{7}
+\tag{6}
 \]
 
 This is a source-metric restriction absent from the arbitrary-lethargy controls of `NB-288`--`NB-289`. It does **not** yet control normalized first-free samples or the target-aligned Parseval tail of `NB-287`, so it is not by itself a Nyman-distance rate.
 
 ## 1. Exact quotient transport
 
-Equation (2) is an isometry because
+Equation (2) is an isometry:
 
 \[
 \|A_mf\|_2^2
@@ -95,27 +94,27 @@ Equation (2) is an isometry because
 \int_0^{1/m}m|f(mx)|^2\,dx
 =
 \int_0^1|f(u)|^2\,du.
-\tag{8}
+\tag{7}
 \]
 
-For completeness, (3) follows directly from the fractional-part definition. On `x<=1/m`, the two `{1/x}` terms cancel and one obtains `sqrt(m) g_j(mx)`. On `x>1/m`, both `1/(mx)` and `1/(mjx)` lie in `(0,1)`, so the right side of (3) cancels to zero, matching `A_mg_j`.
+Equation (3) follows directly from the fractional-part definition. On `x<=1/m`, the two `{1/x}` terms cancel and leave `sqrt(m) g_j(mx)`. On `x>1/m`, both `1/(mx)` and `1/(mjx)` lie in `(0,1)`, so the right side of (3) cancels to zero, matching `A_mg_j`.
 
-If `j<n`, equation (3) uses only `g_m` and `g_(mj)`. Since
+If `j<n`, (3) uses only `g_m` and `g_(mj)`, and
 
 \[
 m<mn,
 \qquad
-mj\le m(n-1)<mn,
+mj\le m(n-1)<mn.
 \]
 
-we have
+Therefore
 
 \[
 \boxed{A_mV_{n-1}\subseteq V_{mn-1}.}
-\tag{9}
+\tag{8}
 \]
 
-Now write `w_n=g_n-P_(V_(n-1))g_n`. Applying `A_m` gives
+Since `w_n=g_n-P_(V_(n-1))g_n`, applying `A_m` gives
 
 \[
 A_mw_n
@@ -123,38 +122,26 @@ A_mw_n
 \sqrt m\,g_{mn}
 -\frac{\sqrt m}{n}g_m
 -A_mP_{V_{n-1}}g_n.
-\tag{10}
+\tag{9}
 \]
 
-The last two terms belong to `V_(mn-1)` by (9) and `m<mn`. Therefore
+The last two terms belong to `V_(mn-1)`. Projecting onto its orthogonal complement leaves exactly `sqrt(m) w_(mn)`, proving (4). Projection is contractive and `A_m` is isometric, so
 
 \[
-P_{V_{mn-1}^{\perp}}A_mw_n
-=
-\sqrt m\,P_{V_{mn-1}^{\perp}}g_{mn}
-=
-\sqrt m\,w_{mn},
+\sqrt m\,\sigma_{mn}\le\sigma_n,
 \]
 
-which proves (4). Projection is contractive and `A_m` is isometric, hence
+which proves (5)--(6).
 
-\[
-\sqrt m\,\sigma_{mn}
-\le
-\sigma_n,
-\]
+This differs from `NB-002`. A copied block `A_mV_N` preserves its internal Gram geometry exactly. Here the copied innovation is tested against the **full canonical section** preceding `mn`, which contains many directions outside the copied block. Those extra directions can only absorb more of the innovation.
 
-proving (5) and (7).
+## 2. Retention coefficients and the multiplicative cocycle
 
-This is distinct from `NB-002`. A copied block `A_mV_N` preserves its internal Gram geometry exactly. Here the copied innovation is compared with the **full canonical section** preceding `mn`, which contains many directions not present in the copied block. Those extra directions can only absorb more of the innovation.
-
-## 2. Retention coefficients form a scalar multiplicative cocycle
-
-Normalize the pivots by
+Normalize
 
 \[
 \psi_n:=\frac{w_n}{\sigma_n}.
-\tag{11}
+\tag{10}
 \]
 
 Equation (4) becomes
@@ -165,7 +152,7 @@ P_{V_{mn-1}^{\perp}}A_m\psi_n
 c_{m,n}\psi_{mn},
 \qquad
 c_{m,n}:=\frac{\sqrt m\,\sigma_{mn}}{\sigma_n}.
-\tag{12}
+\tag{11}
 \]
 
 Thus
@@ -174,44 +161,44 @@ Thus
 0<c_{m,n}\le1,
 \qquad
 \boxed{\langle A_m\psi_n,\psi_{mn}\rangle=c_{m,n}.}
-\tag{13}
+\tag{12}
 \]
 
-Equivalently,
+There is an orthogonal decomposition
 
 \[
 A_m\psi_n
 =c_{m,n}\psi_{mn}+u_{m,n},
 \qquad
 u_{m,n}\in V_{mn-1},
-\tag{14}
+\tag{13}
 \]
 
-and orthogonality gives
+and therefore
 
 \[
 \|u_{m,n}\|^2=1-c_{m,n}^2.
+\tag{14}
+\]
+
+The coefficient obeys the exact multiplicative law
+
+\[
+\boxed{c_{km,n}=c_{k,mn}\,c_{m,n}}
+\qquad(k,m,n\ge2),
 \tag{15}
 \]
 
-The coefficient has an exact multiplicative consistency law. For `k,m,n>=2`,
-
-\[
-\boxed{c_{km,n}=c_{k,mn}\,c_{m,n}.}
-\tag{16}
-\]
-
-Indeed,
+because
 
 \[
 \frac{\sqrt{km}\,\sigma_{kmn}}{\sigma_n}
 =
 \left(\frac{\sqrt k\,\sigma_{kmn}}{\sigma_{mn}}\right)
 \left(\frac{\sqrt m\,\sigma_{mn}}{\sigma_n}\right).
-\tag{17}
 \]
 
-So the canonical source does not merely satisfy isolated pairwise contractions. The fraction of normalized novelty that survives along a multiplicative ray is governed by a scalar cocycle. Equation (16) concerns only the quotient coefficient; it does not assert a scalar semigroup law for the old-section remainders `u_(m,n)`.
+Hence the normalized fraction of novelty surviving along a multiplicative ray is governed by a scalar cocycle. Equation (15) concerns the quotient coefficient only; it does not assert a scalar semigroup law for the old-section remainders `u_(m,n)`.
 
 ## 3. Schur-complement and composite-index consequences
 
@@ -223,7 +210,7 @@ Let `G_n` be the Gram matrix of `g_2,...,g_n`. Positive definiteness and the blo
 =
 \frac{\det G_n}{\det G_{n-1}},
 }
-\tag{18}
+\tag{16}
 \]
 
 with `det G_1:=1`. Squaring (5),
@@ -235,21 +222,21 @@ with `det G_1:=1`. Squaring (5),
 \frac1m
 \frac{\det G_n}{\det G_{n-1}}.
 }
-\tag{19}
+\tag{17}
 \]
 
 Thus a multiplicatively inherited canonical direction contributes at most a `1/m` fraction of its predecessor's one-step Gram volume.
 
-There is also an unconditional consequence for every composite index. Let `N=mp`, where `p` is the smallest prime factor of the composite integer `N`. Then `p<=sqrt(N)`, and
+Now let `N=mp` be composite with `p` its smallest prime factor. Since `p<=sqrt(N)`,
 
 \[
 \sigma_N
 \le
 \sigma_p\sqrt{\frac pN}.
-\tag{20}
+\tag{18}
 \]
 
-Since fractional parts are bounded by one,
+Fractional parts are bounded by one, so
 
 \[
 |g_p(x)|\le1+\frac1p\le\frac32,
@@ -261,94 +248,77 @@ Therefore
 
 \[
 \boxed{
-\sigma_N\le\frac32 N^{-1/4}
+\sigma_N\le\frac32N^{-1/4}
 \qquad(N\text{ composite}).
 }
-\tag{21}
+\tag{19}
 \]
 
-Along multiples of any fixed `n>=2`, the stronger estimate is
+Along multiples of any fixed `n>=2`, the stronger statement is
 
 \[
 \boxed{
 \sigma_N
 \le
 \sigma_n\sqrt{\frac nN}
-\ll_n N^{-1/2}
+\ll_nN^{-1/2}
 \qquad(n\mid N).
 }
-\tag{22}
+\tag{20}
 \]
 
-For example,
+In particular,
 
 \[
-\sigma_{p^r}
-\le
-\sigma_p\,p^{-(r-1)/2}.
-\tag{23}
+\sigma_{p^r}\le\sigma_p p^{-(r-1)/2}.
+\tag{21}
 \]
 
-This does **not** say that prime pivots are large. It says only that a composite index has a proper multiplicative predecessor from which its canonical one-step novelty is quantitatively inherited. Prime indices are the only indices `n>=2` for which this particular predecessor mechanism is unavailable.
+This does **not** assert that prime pivots are large. It says only that a composite index has a proper multiplicative predecessor from which its one-step novelty is quantitatively inherited. Prime indices are the only indices `n>=2` for which this particular predecessor mechanism is unavailable.
 
-This complements `NB-016`: there, multiplicative overlaps make the quotient range of a whole dilation-enrichment frame multiplication-table sparse. Here, in the ordinary nested canonical ordering, every composite one-step pivot is already metrically dominated by a smaller divisor pivot.
+The result complements `NB-016`: there, multiplication-table overlaps make the quotient range of a whole dilation-enrichment frame sparse. Here, in the ordinary nested canonical ordering, every composite one-step pivot is already metrically dominated by a smaller divisor pivot.
 
 ## 4. Relation to the active finite-section obstruction
 
-`NB-289` constructs abstract section systems whose generators reproduce any prescribed future first-free zero-sample table while the finite-section excess follows an arbitrary decreasing profile. That construction leaves metric relations among the raw generators essentially free. Equations (4)--(7) are therefore the kind of source-native constraint that its control does not encode: canonical Nyman sections cannot assign Gram--Schmidt novelty independently at multiplicatively related indices.
+`NB-289` can prescribe the exact future first-free zero-sample table while keeping arbitrary finite-section lethargy because its abstract construction leaves metric relations among raw generators essentially free. Equations (4)--(6) are precisely a constraint that construction does not encode: canonical Nyman sections cannot assign Gram--Schmidt novelty independently at multiplicatively related indices.
 
-But (5) alone does not bound the target-aware excess from `NB-287`,
+But (5) alone does not bound the target-aware excess of `NB-287`,
 
 \[
 \mathfrak A_M
 =
-\sum_{r\ge M}
-|\langle h_M,q_{r+1}\rangle|^2.
-\tag{24}
+\sum_{r\ge M}|\langle h_M,q_{r+1}\rangle|^2.
+\tag{22}
 \]
 
-The vectors `q_r` there are **normalized** future null-innovations for the first-free sampling problem. A small raw source pivot can still have a large normalized sample profile or target correlation: division by `sigma_r` can amplify the very quantity the sampler uses. Hence this finding does not claim decay of `||L psi_n||`, decay of the `q_n`, a rate for `mathfrak A_M`, convergence of `d_N`, or any implication for RH.
+The `q_r` there are **normalized** future null-innovations for the first-free sampling problem. A small raw pivot can still have a large normalized sample profile or target correlation; division by `sigma_r` can amplify the quantity the sampler uses. Therefore this finding does not claim decay of `||L psi_n||`, decay of the `q_n`, a rate for `mathfrak A_M`, convergence of `d_N`, or any implication for RH.
 
-The next discriminant should couple the metric law above to the actual sample/target geometry. Useful quantities include
+The next discriminant should couple the new source metric to the actual sample/target geometry. Useful quantities include
 
 \[
 \|L_Z\psi_n\|,
 \qquad
 \langle h_M,q_n\rangle,
-\tag{25}
+\tag{23}
 \]
 
 or a weighted combination in which the `sigma_n` contraction survives normalization. A bound depending only on point-sample identities is ruled out by `NB-289`; a bound depending only on `sigma_n` ignores the normalization problem.
 
-The retention cocycle gives another concrete test. If the actual arithmetic source forces cumulative loss through products of the `c_(m,n)`, the arbitrary-lethargy construction cannot persist unchanged. If normalized sample coupling compensates that loss, the pivot contraction is metrically real but target-irrelevant. This is a source-versus-sample question rather than another generic conditioning question.
+## 5. Adversarial review and prior-art audit
 
-## 5. Adversarial review
+The proof uses only the concrete isometry (2), the exact covariance (3), and the one-way inclusion (8); no reducing-subspace assumption is made. Both the transferred old-section term and the `g_m` correction in (9) are placed inside the full preceding section before projection. The normalization direction is also checked: (4) gives `sqrt(m) sigma_(mn) <= sigma_n`, not the reverse. The composite estimate assumes no lower bound on prime pivots, and no target conclusion is imported from raw source geometry.
 
-The derivation was checked against the principal failure modes exposed earlier in the line.
+The result does not resolve `CLUE-visible-semigroup-defect-controls-section-enrichment`, whose missing step is residual-specific visibility and a quantitative target-distance decrement. It supplies a new exact metric restriction on canonical source enrichment, not that missing coupling.
 
-First, no reducing-subspace assumption is made. The only semigroup input is the concrete isometry (2), the exact generator identity (3), and the one-way inclusion (9).
+The dilation/semigroup structure itself is classical. Bagchi's 2006 survey, *On Nyman, Beurling and Baez-Duarte's Hilbert space reformulation of the Riemann hypothesis*, treats the Hilbert-space criterion with its semigroup viewpoint; inside this repository, (3) is already used by `NB-002`, `NB-014`, `NB-016`, `NB-039`, and the accepted visible-semigroup clue. No novelty is claimed for (3), projection contraction, or the Schur-complement formula.
 
-Second, the full preceding section matters. Both the transferred old-section term and the `g_m` correction in (10) are proved to lie in `V_(mn-1)` before projection. This is what turns block covariance into a canonical pivot inequality.
+A fresh search found Hugh Carvill's 2025 preprint *Beurling Nyman Geometry and Gram Matrix Structure, Ladder Density and Polynomial Decay via Mellin Smoothing* (arXiv:2510.18132), which proves polynomial off-diagonal Gram decay and block compressibility on a multiplicative `2^(-j)3^(-k)` ladder after Mellin smoothing. That is adjacent source-metric structure, but the searched material does not state (4), (5), or the cocycle (15). Werner Ehm's 2024 *On certain Gram matrices and their associated series* studies formulas and decompositions for Nyman--Beurling Gram matrices, again adjacent but not a substitute for the quotient transport above.
 
-Third, the normalization is consistent: (4) implies `sqrt(m) sigma_(mn) <= sigma_n`, not the reverse. The same `sqrt(m)` convention is used in `NB-002`, `NB-014`, and `NB-039`.
-
-Fourth, the composite estimate assumes no lower bound on prime pivots. It uses only the trivial upper bound `sigma_p<=||g_p||<=3/2` and `p<=sqrt(N)`.
-
-Fifth, no target conclusion is imported from source geometry. The argument stops before identifying raw Gram pivots with the normalized first-free null-innovations. This distinction is load-bearing after `NB-288`--`NB-289`.
-
-Finally, the result does not resolve `CLUE-visible-semigroup-defect-controls-section-enrichment`. That clue asks for residual-specific visibility and a target-distance decrement. The present theorem supplies a new exact metric constraint on canonical source enrichment, but not the missing residual coupling.
-
-## 6. Prior-art and repository audit
-
-The dilation/semigroup structure is classical in the Nyman--Beurling literature. Bagchi's 2006 survey, *On Nyman, Beurling and Baez-Duarte's Hilbert space reformulation of the Riemann hypothesis*, treats the Hilbert-space criterion together with its semigroup viewpoint. Inside this repository, the covariance identity (3) is already used in `NB-002`, `NB-014`, `NB-016`, `NB-039`, and the accepted visible-semigroup clue. No novelty is claimed for that identity, projection contraction, or the Schur-complement determinant formula.
-
-A fresh search found Hugh Carvill's 2025 preprint *Beurling Nyman Geometry and Gram Matrix Structure, Ladder Density and Polynomial Decay via Mellin Smoothing* (arXiv:2510.18132), which proves polynomial off-diagonal Gram decay and block compressibility on a multiplicative `2^(-j)3^(-k)` ladder after Mellin smoothing. This is adjacent source-metric structure, but the searched material does not state the canonical nested-section quotient identity (4), the divisibility pivot contraction (5), or the cocycle (16). Werner Ehm's 2024 work *On certain Gram matrices and their associated series* studies formulas and decompositions for Nyman--Beurling Gram matrices, again adjacent but not a substitute for the quotient transport proved here.
-
-The theorem is self-contained from identities already established in the repository, so no external result is load-bearing and `SOURCES.md` is unchanged. No `mind/**` file is updated: the result narrows the active frontier, but its relevance to the target-aware Ford/Nyman obstruction still depends on the missing normalized sample coupling.
+The theorem is self-contained from identities already established in the repository. No external result is load-bearing, so `SOURCES.md` is unchanged. No `mind/**` file is updated because the relevance of the contraction to the Ford/Nyman target obstruction still depends on normalized sample coupling.
 
 ## Research disposition
 
-Keep as a source-metric advance after `NB-289`. The abstract negative controls showed that sample algebra and conditioning permit arbitrary lethargy. This finding identifies a concrete restriction they omit:
+Keep as a source-metric advance after `NB-289`. The abstract controls permit arbitrary lethargy because they do not enforce
 
 \[
 \boxed{
@@ -358,4 +328,4 @@ Keep as a source-metric advance after `NB-289`. The abstract negative controls s
 }
 \]
 
-Canonical one-step novelty is therefore not free along multiplicative rays, and every composite pivot is quantitatively inherited from a smaller divisor. The next useful pass should test whether the actual first-free sample/target coupling neutralizes or preserves this divisibility contraction after normalization.
+Canonical one-step novelty is not free along multiplicative rays, and every composite pivot is quantitatively inherited from a smaller divisor. The next useful pass should test whether the actual first-free sample/target coupling neutralizes or preserves this divisibility contraction after normalization.
