@@ -20,4 +20,22 @@ NB-290 supplies a genuine canonical source-metric identity that those controls d
 
 so the raw Gram--Schmidt pivots obey `sigma_(mn)<=sigma_n/sqrt(m)` and `sqrt(n) sigma_n` is monotone down divisibility chains. NB-291 then shows that **all scalar consequences of that pivot profile are still insufficient**: an old-section triangular graft can match the exact Dirichlet sample table and prescribe the canonical pivot `sigma_n` at every future index while preserving the same sections, sampling Grams, normalized null innovations and arbitrary finite-section lethargy. It therefore also matches the scalar divisibility contraction, retention coefficients, cocycle and one-step determinant ratios.
 
-What NB-291 cannot graft is the common vector/operator geometry that produces those scalars: the actual isometric dilation `A_m`, its old-section remainder, cross-index inner products, and their interaction with the sampling map and target. The decisive moving-packet question is therefore whether this **vector-valued dilation geometry is visible after first-free neutralization** strongly enough to control the target-aware future-null Parseval tail. A useful estimate must involve an object such as the old-section component `P_(V_(mn-1)) A_m psi_n`, its first-free sample image or its correlation with the minimum-norm source; another inequality depending only on `sigma_n`, `sqrt(n)sigma_n`, the scalar cocycle or the zero-sample table is already reproduced by the arbitrary-lethargy control.
+NB-292 identifies the first exact vector/matrix structure that this scalar graft does not encode. For a finite zero packet `Z`, let `V_(r,Z)` be the Blaschke-deflated quotient sections, `L_Z` the first-free sampling map and `D_Z(m)` the diagonal action of the canonical dilation. The orthogonal multiplicative band
+
+`W_(m,n,Z)=V_(mn-1,Z) \ominus S_m V_(n-1,Z)`
+
+has positive sampling Gram
+
+`Gamma_(m,n,Z)=K_(mn-1,Z)-D_Z(m)K_(n-1,Z)D_Z(m)^* >= 0`,
+
+and these Grams obey the exact cocycle
+
+`Gamma_(km,n,Z)=Gamma_(k,mn,Z)+D_Z(k)Gamma_(m,n,Z)D_Z(k)^*`.
+
+For the normalized innovation, the old-section defect `b_(m,n,Z)=S_m psi_(n,Z)-c_(m,n)psi_(mn,Z)` lies in this band, with sample defect `d_(m,n,Z)=D_Z(m)v_(n,Z)-c_(m,n)v_(mn,Z)`, and the scalar dilation loss splits exactly as
+
+`1-c_(m,n)^2 = d_(m,n,Z)^* Gamma_(m,n,Z)^+ d_(m,n,Z) + ||z_(m,n,Z)||^2`,
+
+where `z_(m,n,Z)` is the sample-null component of the same quotient band. Thus the previously scalar retention loss now has a canonical decomposition into a first-free visible repair charge and a first-free sample-null charge, tied by the actual dilation geometry.
+
+The decisive moving-packet question is no longer whether such a vector-valued carrier exists, but whether it is **coercive in the target-relevant direction**. NB-292 gives no lower bound forcing either charge to be large and does not yet control the target-aware future-null Parseval tail of NB-287. A useful next theorem must connect the matrix cocycle `Gamma_(m,n,Z)`, the defect vectors `d_(m,n,Z)` or the null-band components `z_(m,n,Z)` to the moving minimum-norm source/target coefficients strongly enough to force a rate. Another inequality depending only on `sigma_n`, `sqrt(n)sigma_n`, `c_(m,n)` or the raw zero-sample table remains inside the NB-291 matched-control class.
