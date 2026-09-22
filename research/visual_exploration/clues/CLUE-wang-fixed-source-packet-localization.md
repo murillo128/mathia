@@ -17,6 +17,7 @@ based_on:
   - research/visual_exploration/findings/VIS-383-source-coordinate-metric-controls-defect-squared-localization.md
   - research/visual_exploration/findings/VIS-384-hilbert-schmidt-source-subspace-laplacian.md
   - research/visual_exploration/findings/VIS-385-isotropic-source-subspace-null-defect-energy-moments.md
+  - research/visual_exploration/findings/VIS-386-gram-tangent-scale-normalization.md
 ---
 
 # Does Wang packet localization preserve source information without manufacturing strip gain?
@@ -33,31 +34,33 @@ The finite-dimensional rational escape is now much narrower. `VIS-378` replaces 
 
 `VIS-380` identifies the next necessary geometric degeneration. For a bounded-spread positive rational output, persistent order-one Gram orientation while the external-generator defect tends to zero forces the joint commutator gap of the source tuple to collapse. `VIS-381` shows that gap collapse alone is insufficient: the Gram tangent must carry nonvanishing mass in the collapsing low positive commutator modes.
 
-`VIS-382` fixes the relevant scale. If the output orientation `q=||[G,C]||_F` stays order one and the output spectral spread stays bounded, then a fixed amount of Gram-tangent mass must already lie in positive commutator modes with eigenvalues `lambda=O(epsilon_G^2)`, where `epsilon_G^2=<G,Delta_H G>` is the source-tuple commutator defect energy. The surviving channel is therefore not generic rational sensitivity or generic near-reducibility, but **defect-squared low-mode localization aligned with the actual Gram tangent**.
+`VIS-382` fixes the relevant scale. If the output orientation `q=||[G,C]||_F` stays order one and the output spectral spread stays bounded, then a fixed amount of Gram-tangent mass must already lie in positive commutator modes whose eigenvalues are on the defect-squared scale. Its orientation-adapted threshold is homogeneous in the tangent amplitude.
 
-`VIS-383` then exposes a representation false positive in that statistic. The naive coordinate Laplacian `Delta_H=sum_j ad_(H_j)^*ad_(H_j)` depends on the Euclidean metric assigned to the generator index, so anisotropic reweighting can create order-one normalized low-mode mass without changing the source span or exact joint commutant.
+`VIS-383` exposes a representation false positive in the naive generator-coordinate Laplacian. `VIS-384` removes that gauge by replacing the generator list with its centered Hilbert-Schmidt source subspace `S` and the intrinsic commutator Laplacian `Delta_S`. `VIS-385` then supplies a source-free calibration: rank fixes total commutator spectral mass, and under a Haar-uniform rank-`r` source subspace the fixed-`G` defect energy has exact finite-dimensional mean and variance.
 
-`VIS-384` removes that gauge relative to the fixed coefficient-space Hilbert geometry. Center the generators modulo the scalar identity, let `S` be their Hilbert-Schmidt span, and define `Delta_S` by summing commutator squares over any Hilbert-Schmidt orthonormal basis of `S`. Equivalently, contract an arbitrary redundant generator frame with the pseudoinverse of its source Gram. The resulting `Delta_S`, defect energy, and defect-normalized projector profile are invariant under every change of generator coordinates that preserves `S`, including anisotropic and redundant presentations.
+`VIS-386` exposes one further representation issue in the exploratory low-mode statistic itself. The raw window `P_(0,alpha epsilon_S(G)^2]G` moves when only the amplitude of `G` is rescaled. After removing the exact commutant component `g=(I-P_0)G`, the scale-invariant quantity is the normalized spectral distribution relative to
 
-`VIS-385` now supplies a source-free calibration before the nonlinear low-mode test. For every rank-`r` source subspace in `Herm_0(d)`, the total commutator spectral mass is exactly `2dr`; under a Haar-uniform rank-`r` source subspace, the mean commutator Laplacian is scalar on the traceless sector. For fixed Gram tangent `G`, the defect energy `epsilon_S(G)^2` has an exact finite-dimensional mean and variance determined by `d`, `r`, and the second/fourth moments of the traceless part of `G`.
+`m_S(G)=epsilon_S(G)^2/||g||_F^2`.
 
-The remaining channel is therefore sharper again: **source-subspace-specific spectral organization after quotienting generator presentation and pricing the isotropic Grassmann defect baseline**. Universal subspace geometry, approximate reducibility, block structure, a data-dependent numerical rank choice, or another source-independent mechanism could still produce the same low-mode concentration.
+But that quotient has an exact universal baseline: for every `alpha>1`, at least `1-1/alpha` of the normalized positive-spectrum Gram mass lies below `alpha m_S(G)` by Markov's inequality. Therefore an order-one self-normalized low-mode mass above the mean is not itself source-specific evidence.
+
+The remaining channel is sharper again: **source-subspace-specific spectral organization after generator gauge, tangent-amplitude gauge, the isotropic rank baseline, and the universal self-normalized spectral floor have all been removed**.
 
 ## Research question
 
-Can an admissible Wang/source-packet construction force or detect order-one Gram-tangent mass in the `lambda=O(epsilon_S^2)` spectral band of the intrinsic source-subspace commutator Laplacian `Delta_S` in a way that is genuinely source-specific and survives matched source-free controls?
+Can an admissible Wang/source-packet construction produce a normalized positive-spectrum Gram spectral distribution for the intrinsic source-subspace commutator Laplacian `Delta_S` that is genuinely source-specific and survives matched source-free controls, in a way that can still be propagated to a Wang destination after all scale and conditioning costs are charged?
 
-Equivalently, after quotienting the known compact/Vandermonde conditioning, Gram-only spectral filtering, bounded positive preconditioning, rational-expression artifacts, unstructured derivative blow-up, irrelevant similarity-orbit directions, bare commutator-gap collapse, low modes not seen by the Gram tangent, arbitrary source-generator reparameterization, and the universal isotropic source-subspace defect-energy budget, is there any remaining mechanism that ties the intrinsic defect-squared low eigenspace to arithmetic information rather than generic approximate reducibility of a source subspace?
+Equivalently, after quotienting compact/Vandermonde conditioning, Gram-only spectral filtering, bounded positive preconditioning, rational-expression artifacts, unavailable similarity directions, bare commutator-gap collapse, generator-coordinate gauge, tangent-amplitude gauge, the isotropic source-subspace defect-energy budget, and the universal self-normalized Markov floor, is there any remaining low-spectrum organization that carries arithmetic/source information rather than generic approximate reducibility?
 
-A positive answer would still need a destination-level payoff: the localized source-specific orientation must produce a smaller Wang output after metric scale, Gram-gap/cluster width, coefficient norm, normalization, rank-selection, and source-information costs are all charged.
+A positive answer still needs a destination-level payoff: the source-specific orientation must produce a smaller Wang output after metric scale, Gram-gap/cluster width, coefficient norm, normalization, rank-selection, and source-information costs are all charged.
 
 ## Why it may matter
 
-This question isolates the first finite-dimensional positive-Hilbert rational channel not already explained by source-free conditioning, generic matrix sensitivity, generator-coordinate gauge, or the lowest-order isotropic source-subspace baseline. Even an external noncommuting operator family receives no credit unless its **intrinsic source subspace** has defect-squared approximate-commutant modes, the actual Gram tangent occupies them in a way not explained by the Grassmann defect-energy null, and stronger matched non-arithmetic subspaces do not reproduce the effect.
+The current question isolates a finite-dimensional positive-Hilbert rational channel that is no longer allowed to claim credit for representation choices or universal first-moment effects. `VIS-386` is especially important because a visually impressive concentration in a self-defect window can otherwise be manufactured by tangent scaling, and after scale normalization a large super-mean mass is partly guaranteed for every source by the same first-moment identity.
 
-`VIS-385` makes the next comparison diagnostically cleaner. If the actual `epsilon_S(G)^2` is already exceptional relative to the exact fixed-`G` isotropic rank-`r` null, then source coupling is visible at the quadratic commutator level and should be explained there before invoking a nonlinear spectral-localization mechanism. If the defect energy is ordinary but the defect-normalized low-mode projector mass is exceptional, then the surviving signal is genuinely about higher spectral organization rather than total commutator stiffness.
+This creates a clean diagnostic split. First ask whether the fixed observed `(G,S)` is exceptional at the quadratic defect-energy level relative to the exact `VIS-385` isotropic Grassmann null. If not, compare the **shape** of the normalized positive spectral distribution against stronger matched controls. A source-specific claim must concern excess concentration, sub-mean structure, a stable distributional feature, or identifiable low-mode geometry beyond the universal `1-1/alpha` floor.
 
-The isotropic null is only a first calibration layer. It does not preserve every Wang resource, so a source-specific claim still needs the stronger matched controls below.
+The isotropic null and Markov floor are only baseline layers. They do not preserve every Wang resource, so any surviving effect still requires stronger matched nonarithmetic controls and a mathematical explanation.
 
 ## Decisive test
 
@@ -65,36 +68,50 @@ Choose one explicit admissible source family, center it modulo the identity, and
 
 `Delta_S=sum_a ad_(E_a)^*ad_(E_a)`
 
-from a Hilbert-Schmidt orthonormal basis `E_a` of `S`, or use the exactly equivalent pseudoinverse-frame contraction. Record
+from a Hilbert-Schmidt orthonormal basis `E_a` of `S`, or use the exactly equivalent pseudoinverse-frame contraction.
 
-`epsilon_S(G)^2=<G,Delta_S G>`
+Let `P_0` project onto `ker Delta_S` and set
 
-and study
+`g=(I-P_0)G`.
 
-`A_(G,S)(alpha)=||P_(0,alpha epsilon_S(G)^2]^(Delta_S)G||_F`
+If `g=0`, the tangent carries no positive commutator component and this localization route is trivial. Otherwise record
 
-for fixed preselected `alpha>0`. Use spectral projectors rather than individual eigenvectors so degeneracies and crossings do not create a coordinate artifact.
+`epsilon_S(G)^2=<g,Delta_S g>`
 
-As an implementation gate, verify exact invariance under deliberately anisotropic invertible reparameterizations and redundant expansions of the same centered source subspace. Failure of that check means the computation has not actually implemented the `VIS-384` quotient.
+and the scale-invariant mean spectral value
 
-Before interpreting the nonlinear projector statistic, run the `VIS-385` isotropic alignment calibration with `G` held fixed: compare the observed `epsilon_S(G)^2` to the exact Haar-Grassmann rank-`r` mean and variance. This calibration deliberately breaks source-subspace/Gram coupling while preserving `d`, `r`, the fixed ambient Hilbert metric, and the observed `G`. Treat an anomalous defect energy and an ordinary defect energy with anomalous low-mode mass as different mechanisms rather than combining them into one score.
+`m_S(G)=epsilon_S(G)^2/||g||_F^2`.
 
-Then construct stronger matched controls that preserve the obvious matrix resources still relevant after the quotient: source-subspace dimension, Hermitian structure, the fixed ambient Hilbert metric, appropriate operator-norm or subspace-scale data, relevant coarse Gram clustering, and any destination metric bounds. Break the arithmetic/source coupling while keeping those resources. The control must have a nondegenerate realizable sample space; merely conjugating every object together or otherwise preserving the full joint configuration is not a null.
+Use the normalized spectral CDF
 
-A candidate source-specific channel must show stable excess or structurally different localization of `G` in the `O(epsilon_S^2)` positive spectrum relative to those controls, across scale/truncation changes fixed independently of the observed effect. If a quantitative statistic is used, freeze its normalization, spectral window, rank rule, and decision rule before confirmation data. Then identify the actual low-mode geometry mathematically: which approximate symmetry or block relation produces it, why the Gram tangent overlaps it, and which source information is lost when the matched control destroys the effect.
+`F_(G,S)(alpha)=||P_(0,alpha m_S(G)]^(Delta_S)g||_F^2/||g||_F^2`
 
-Kill the route if the localization is reproduced by generic source subspaces with matched resources, disappears under harmless ambient unitary changes, depends on a data-tuned rank threshold, or requires an output metric/rational rule whose construction already imports the target arithmetic estimate. A positive low-mode difference is not enough unless its full cost propagates to the Wang destination without assuming a stronger bound for `G`, `theta`, or an equivalent unsmoothed source quantity.
+or an equivalently pre-registered scale-invariant spectral statistic. Verify exact invariance under nonzero rescaling of `G`, deliberately anisotropic invertible reparameterizations of the source generators, and redundant expansions of the same centered source subspace.
+
+For `alpha>1`, treat
+
+`F_(G,S)(alpha) >= 1-1/alpha`
+
+as a universal source-free floor, not as evidence. Any quantitative claim should either compare excess above matched controls, use pre-registered sub-mean windows, or compare a broader normalized spectral profile. Freeze the normalization, spectral windows, rank rule, and decision rule before confirmation data.
+
+Before interpreting higher spectral organization, run the `VIS-385` isotropic alignment calibration with `G` held fixed: compare the observed `epsilon_S(G)^2` to the exact Haar-Grassmann rank-`r` mean and variance. Treat an anomalous defect energy and an ordinary defect energy with anomalous normalized spectral shape as different mechanisms.
+
+Then construct stronger matched controls preserving the matrix resources that remain relevant after the quotients: source-subspace dimension, Hermitian structure, fixed ambient Hilbert metric, appropriate operator/subspace scale, relevant coarse Gram clustering, tangent-normalization rule, and destination metric bounds. Break arithmetic/source coupling while keeping those resources. The control must have a nondegenerate realizable sample space.
+
+A candidate source-specific channel must show stable excess or structurally different normalized low-spectrum organization relative to those controls across scale/truncation changes fixed independently of the observed effect. Then identify the geometry mathematically: which approximate symmetry or block relation produces it, why the Gram tangent overlaps it, and which source information is lost when the matched control destroys the effect.
+
+Kill the route if the normalized spectral profile is reproduced by generic source subspaces with matched resources, if the apparent effect reduces to the universal Markov floor, disappears under harmless ambient unitary changes, depends on a data-tuned rank or window, or requires an output metric/rational rule that already imports the target arithmetic estimate. A positive spectral difference is still insufficient unless its full cost propagates to the Wang destination without assuming a stronger bound for `G`, `theta`, or an equivalent unsmoothed source quantity.
 
 ## Evidence boundary
 
-`VIS-378`--`VIS-382` establish exact finite-dimensional **necessary conditions and accounting bounds** for bounded positive rational orientation. `VIS-383` shows that the naive generator-index metric can manufacture the target normalized localization. `VIS-384` gives an exact coordinate quotient: relative to a fixed coefficient-space Hilbert geometry, the source-subspace Laplacian and its normalized low-mode profile are independent of the generator presentation. `VIS-385` adds exact source-free first/second-moment calibration for the fixed-`G` Haar-Grassmann source-subspace null and shows that rank alone fixes total commutator spectral mass.
+`VIS-378`--`VIS-382` establish exact finite-dimensional necessary conditions and accounting bounds for bounded positive rational orientation. `VIS-383` removes a generator-coordinate false positive by exposing it; `VIS-384` supplies the intrinsic source-subspace quotient; `VIS-385` gives exact fixed-`G` isotropic defect-energy calibration; and `VIS-386` removes the tangent-amplitude gauge while identifying the universal self-normalized spectral mass floor.
 
-None of these results proves that intrinsic defect-squared low modes exist in any useful arithmetic family, that such modes are source-specific, that their projector mass is stable, or that they improve a Wang destination. The `VIS-385` moments also do not describe the nonlinear projector statistic itself and do not apply unchanged when `G` is jointly resampled with the source subspace.
+None of these results proves that a useful arithmetic family has exceptional normalized spectral shape, that any such shape is source-specific, stable, or propagates to a Wang gain. `VIS-386` also does not say super-mean spectral windows are useless; it says their absolute order-one mass is nondiscriminating unless interpreted relative to the universal floor and matched controls.
 
-The clue therefore remains `accepted`: the finite positive-Hilbert rational route has been narrowed to a coordinate-quotiented, isotropically calibrated source-subspace localization test, but the decisive higher-order source-specificity and destination-payoff questions remain open.
+The clue therefore remains `accepted`: the finite positive-Hilbert rational route has been narrowed to a coordinate-quotiented, tangent-normalized, isotropically calibrated spectral-shape test, but the decisive source-specificity and destination-payoff questions remain open.
 
 ## Research disposition
 
 Outcome: **narrowed**.
 
-Future work on this clue should start by separating quadratic defect-energy alignment from genuinely higher spectral localization. Use the intrinsic centered source subspace and `Delta_S`, price the exact `VIS-385` fixed-`G` Grassmann baseline, then ask whether the low-mode projector carries additional source-specific information under stronger matched non-arithmetic controls and whether any surviving excess can be charged through to the Wang destination.
+Future work on this clue should compare scale-invariant positive spectral shape, not raw self-defect projector mass. Start with the `VIS-385` fixed-`G` defect-energy calibration, quotient tangent amplitude as in `VIS-386`, subtract or otherwise account for the universal Markov floor, then ask whether stronger matched nonarithmetic controls reproduce the remaining spectral organization and whether any surviving excess can be charged through to the Wang destination.
