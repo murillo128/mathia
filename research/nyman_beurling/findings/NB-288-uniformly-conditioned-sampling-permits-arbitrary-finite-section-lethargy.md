@@ -1,0 +1,575 @@
+# NB-288 — uniformly conditioned sampling permits arbitrary finite-section lethargy
+
+- **Date:** 2026-09-22
+- **Status:** proved
+- **Research line:** `nyman_beurling`
+- **Depends on:** NB-284, NB-285, NB-287
+- **Classification:** `EXACT-DERIVED + FINITE-SECTION-EXCESS + NULLSPACE-INNOVATION + TARGET-AWARE + BERNSTEIN-LETHARGY-CONTROL + UNIFORM-CONDITIONING + MOVING-PACKET-NONUNIFORMITY + NEGATIVE-CONTROL + ROUTE-NARROWING + PRIOR-ART-AUDITED`
+
+## Claim
+
+The Parseval tail isolated in `NB-287` cannot be controlled from generic Hilbert-space geometry, eventual surjectivity, or sampling-Gram conditioning alone. More strongly, an arbitrary prescribed decreasing excess profile can occur in a nested finite-section interpolation problem whose sampling Grams are uniformly positive and uniformly conditioned, whose optimal right inverses are uniformly bounded, and in which every one-dimensional future enrichment is sample-visible.
+
+Precisely, let
+
+\[
+a_0>a_1>a_2>\cdots>0,
+\qquad
+a_M\downarrow0,
+\]
+
+let `N>=1`, and let `c>0`. There exist a Hilbert space `H`, nested finite-dimensional spaces
+
+\[
+V_0\subset V_1\subset\cdots\subset\mathcal H,
+\qquad
+\dim(V_{M+1}\ominus V_M)=1,
+\]
+
+a bounded sampling map
+
+\[
+L:\mathcal H\to\mathbb C^N
+\]
+
+that is already onto on `V_0`, and a fixed datum `y in C^N` such that, with
+
+\[
+K_M:=LP_ML^*,
+\qquad
+\mathcal C_M:=y^*K_M^{-1}y,
+\qquad
+\mathcal C_\infty:=y^*(LL^*)^{-1}y,
+\]
+
+one has the exact identity
+
+\[
+\boxed{
+\mathfrak A_M:=\mathcal C_M-\mathcal C_\infty=a_M
+}
+\tag{1}
+\]
+
+for every `M`. At the same time,
+
+\[
+\boxed{
+\kappa(K_M)\le 1+\frac{a_0}{c},
+\qquad
+\|L\|=c^{-1/2},
+\qquad
+\|R_M^{\rm opt}\|\le\sqrt{c+a_0},
+}
+\tag{2}
+\]
+
+and every new orthogonal source direction has nonzero sample vector.
+
+Thus the genuine finite-section penalty may decay **arbitrarily slowly** while all ordinary conditioning diagnostics stay uniformly benign. In a moving family the effect is stronger: for any prescribed cutoffs `M_X`, packet dimensions `N_X>=1`, floor `eta>0`, and conditioning tolerance `epsilon>0`, one can arrange
+
+\[
+\mathfrak A_{X,M}\to0
+\quad\text{for each fixed }X\text{ as }M\to\infty,
+\]
+
+while simultaneously
+
+\[
+\boxed{
+\mathfrak A_{X,M_X}>\eta
+}
+\tag{3}
+\]
+
+for every `X`, with all `K_(X,M)` uniformly spectrally bounded and
+
+\[
+\boxed{
+\kappa(K_{X,M})\le1+\epsilon
+}
+\tag{4}
+\]
+
+uniformly in `X`, `M`, and `N_X`.
+
+This is a matched **negative control**, not a statement about the actual Nyman--Beurling source system. It shows that the next step after `NB-287` must use source-specific Dirichlet/arithmetic localization: no argument using only nestedness, density, surjectivity, bounded right inverses, or well-conditioned sampling Grams can force the moving null-innovation tail to disappear.
+
+---
+
+## 1. An explicit scalar lethargy model
+
+Start with
+
+\[
+\mathcal H_1=\ell^2(\mathbb N_0)
+\]
+
+and its standard orthonormal basis `(e_m)_(m>=0)`. Define
+
+\[
+k_M:=\frac1{c+a_M},
+\qquad
+k_\infty:=\frac1c.
+\tag{5}
+\]
+
+Because `a_M` is strictly decreasing to zero,
+
+\[
+0<k_0<k_1<\cdots<k_M<\cdots\uparrow k_\infty.
+\]
+
+Choose positive numbers `(gamma_m)` by
+
+\[
+\gamma_0^2:=k_0,
+\qquad
+\gamma_m^2:=k_m-k_{m-1}
+\quad(m\ge1),
+\tag{6}
+\]
+
+and set
+
+\[
+g:=\sum_{m\ge0}\gamma_me_m.
+\]
+
+The series is square summable because it telescopes:
+
+\[
+\|g\|^2
+=
+\sum_{m\ge0}\gamma_m^2
+=
+k_\infty
+=
+\frac1c.
+\tag{7}
+\]
+
+Let
+
+\[
+V_M^{(1)}:=\operatorname{span}\{e_0,\ldots,e_M\}
+\]
+
+and define the scalar sampler
+
+\[
+L_1x:=\langle x,g\rangle.
+\]
+
+Then
+
+\[
+K_M^{(1)}
+=
+L_1P_ML_1^*
+=
+\|P_Mg\|^2
+=
+\sum_{m=0}^M\gamma_m^2
+=
+k_M.
+\tag{8}
+\]
+
+For datum `y=1`, the finite minimum-norm source is
+
+\[
+h_M
+=
+P_ML_1^*(K_M^{(1)})^{-1}y
+=
+\frac{P_Mg}{k_M},
+\]
+
+and hence
+
+\[
+\mathcal C_M
+=
+\|h_M\|^2
+=
+\frac1{k_M}
+=
+c+a_M.
+\tag{9}
+\]
+
+The infinite minimum-norm cost is
+
+\[
+\mathcal C_\infty
+=
+\frac1{\|g\|^2}
+=
+c.
+\tag{10}
+\]
+
+Subtracting `(10)` from `(9)` proves `(1)` in the scalar case.
+
+The construction is deliberately nondegenerate at every enrichment. Since `a_M` is strictly decreasing,
+
+\[
+\gamma_{M+1}^2=k_{M+1}-k_M>0.
+\]
+
+Thus the new orthogonal source direction `e_(M+1)` has nonzero sample
+
+\[
+L_1e_{M+1}=\gamma_{M+1}\ne0.
+\tag{11}
+\]
+
+The slow excess therefore does not come from appending sample-invisible atoms.
+
+---
+
+## 2. Arbitrary data dimension with uniformly good conditioning
+
+The scalar example already disproves any universal conditioning-only theorem, but the same control can be embedded in arbitrary sample dimension without spoiling the conditioning.
+
+For `N>=1`, set
+
+\[
+\mathcal H_N
+:=
+\ell^2(\mathbb N_0)\oplus\mathbb C^{N-1},
+\]
+
+with the second summand omitted when `N=1`, and define
+
+\[
+V_M
+:=
+V_M^{(1)}\oplus\mathbb C^{N-1}.
+\tag{12}
+\]
+
+Define
+
+\[
+L(x,z_2,\ldots,z_N)
+:=
+\left(
+\langle x,g\rangle,
+\frac{z_2}{\sqrt c},\ldots,
+\frac{z_N}{\sqrt c}
+\right),
+\tag{13}
+\]
+
+and choose
+
+\[
+y=(1,0,\ldots,0)^T.
+\tag{14}
+\]
+
+The map `L|_(V_0)` is onto: the first coordinate is generated by `e_0` because `gamma_0>0`, and the remaining coordinates are already present in the fixed `C^(N-1)` summand.
+
+The sampling Gram is exactly
+
+\[
+K_M
+=
+\operatorname{diag}
+\left(
+ k_M,
+ c^{-1},\ldots,c^{-1}
+\right).
+\tag{15}
+\]
+
+Since `k_M<=c^(-1)`, its extremal eigenvalues are
+
+\[
+\lambda_{\min}(K_M)=k_M=\frac1{c+a_M},
+\qquad
+\lambda_{\max}(K_M)=\frac1c.
+\]
+
+Therefore
+
+\[
+\boxed{
+\kappa(K_M)
+=
+\frac{c+a_M}{c}
+\le
+1+\frac{a_0}{c}.
+}
+\tag{16}
+\]
+
+The full sampler has
+
+\[
+\|L\|^2=\|LL^*\|=\frac1c,
+\tag{17}
+\]
+
+while the optimal right inverse from `NB-285` satisfies
+
+\[
+\|R_M^{\rm opt}\|^2
+=
+\lambda_{\min}(K_M)^{-1}
+=
+c+a_M
+\le c+a_0.
+\tag{18}
+\]
+
+For the target `(14)`, only the first diagonal entry contributes, so `(9)`--`(10)` remain unchanged:
+
+\[
+\mathcal C_M=c+a_M,
+\qquad
+\mathcal C_\infty=c,
+\qquad
+\mathfrak A_M=a_M.
+\tag{19}
+\]
+
+Thus one may prescribe the finite-section convergence rate independently of the sample dimension, while keeping the Gram condition numbers and the optimal right inverses uniformly controlled.
+
+There is no conflict here with `NB-285`: `K_M` converges monotonically to `K_\infty` and `A_M` does tend to zero for every fixed system. The point is that Hilbert geometry supplies **no uniform rate** for that convergence.
+
+---
+
+## 3. The `NB-287` innovations realize the prescribed profile exactly
+
+In the model above, `L|_(V_0)` is already onto and each later section adds exactly one new source direction. Hence the neutralized innovations `q_(r+1)` of `NB-287` are defined for every `r>=0` and form the successive orthonormal increments of
+
+\[
+D_r=V_r\cap\ker L.
+\]
+
+`NB-287` gives the exact one-step identity
+
+\[
+|\langle h_r,q_{r+1}\rangle|^2
+=
+\mathcal C_r-\mathcal C_{r+1}.
+\]
+
+Using `(19)`, this becomes
+
+\[
+\boxed{
+|\langle h_r,q_{r+1}\rangle|^2
+=
+a_r-a_{r+1}.
+}
+\tag{20}
+\]
+
+The coefficient-invariance statement of `NB-287` then yields, for any fixed `M` and every `r>=M`,
+
+\[
+|\langle h_M,q_{r+1}\rangle|^2
+=
+a_r-a_{r+1}.
+\tag{21}
+\]
+
+Therefore its Parseval representation telescopes to exactly the prescribed excess:
+
+\[
+\sum_{r\ge M}
+|\langle h_M,q_{r+1}\rangle|^2
+=
+\sum_{r\ge M}(a_r-a_{r+1})
+=
+a_M
+=
+\mathfrak A_M.
+\tag{22}
+\]
+
+So the null-innovation tail isolated in `NB-287` is not merely capable of slow decay. Subject only to the abstract interpolation axioms used there, its total energy can follow **any** strictly decreasing profile tending to zero.
+
+---
+
+## 4. A matched moving family keeps a fixed floor with condition number arbitrarily close to one
+
+The fixed-system statement is a lethargy result. The Ford regime is more demanding because both the packet and the cutoff move. The same construction gives a matched control with uniform constants.
+
+Let `(M_X)` be any sequence of cutoffs and `(N_X)` any sequence of positive sample dimensions. Fix `eta>0` and `epsilon>0`. Choose
+
+\[
+c\ge\frac{2\eta}{\epsilon}
+\tag{23}
+\]
+
+and for each `X` prescribe
+
+\[
+a_M^{(X)}
+:=
+2\eta\,2^{-M/(M_X+1)}.
+\tag{24}
+\]
+
+For every fixed `X`, this sequence is strictly decreasing and tends to zero as `M->infty`, while
+
+\[
+a_0^{(X)}=2\eta
+\tag{25}
+\]
+
+uniformly and
+
+\[
+a_{M_X}^{(X)}
+=
+2\eta\,2^{-M_X/(M_X+1)}
+>
+\eta.
+\tag{26}
+\]
+
+Apply the construction of Sections 1--2 with dimension `N_X` and profile `a^(X)`. Then every fixed member of the family satisfies
+
+\[
+\mathfrak A_{X,M}\to0,
+\]
+
+but the matched section satisfies
+
+\[
+\boxed{
+\mathfrak A_{X,M_X}>\eta.
+}
+\tag{27}
+\]
+
+At the same time, `(16)`, `(23)` and `(25)` give
+
+\[
+\boxed{
+\kappa(K_{X,M})
+\le
+1+\frac{2\eta}{c}
+\le
+1+\epsilon
+}
+\tag{28}
+\]
+
+for every `X` and `M`. The spectra are uniformly trapped in the fixed interval
+
+\[
+\boxed{
+\frac1{c+2\eta}
+\le
+\lambda_{\min}(K_{X,M})
+\le
+\lambda_{\max}(K_{X,M})
+\le
+\frac1c,
+}
+\tag{29}
+\]
+
+and the sampler/right-inverse bounds are likewise uniform:
+
+\[
+\|L_X\|=c^{-1/2},
+\qquad
+\|R_{X,M}^{\rm opt}\|
+\le
+\sqrt{c+2\eta}.
+\tag{30}
+\]
+
+Every future enrichment remains sample-visible because every profile `(24)` is strictly decreasing.
+
+Thus the nonuniform moving obstruction does not require a collapsing singular value, a growing Gram condition number, an unbounded sampler, an unbounded optimal repair map, or invisible section increments. It can be carried entirely by how the target-specific minimum-norm source distributes its mass among future null innovations.
+
+---
+
+## 5. Consequence for the Nyman--Beurling frontier
+
+`NB-287` reduced the genuine finite-section penalty for the actual moving packet to
+
+\[
+\mathfrak A_{M_X}(Z_X)
+=
+\sum_{r\ge M_X}
+|\langle h_{X,M_X},q_{X,r+1}\rangle|^2.
+\tag{31}
+\]
+
+The present control shows that `(31)` cannot be made small by an abstract theorem whose hypotheses mention only:
+
+- nested finite sections with one-dimensional enrichments;
+- density of their union in the declared source space;
+- eventual or immediate surjectivity of the sampling map;
+- uniform lower/upper spectral bounds for `K_(X,M)`;
+- uniform conditioning of `K_(X,M)`;
+- bounded optimal right inverses;
+- or the fact that every new atom has nonzero samples.
+
+All those properties hold in `(23)`--`(30)` while the matched excess stays above `eta`.
+
+Therefore the next useful estimate must exclude this lethargy construction by using information that the abstract model deliberately forgets. In the real Nyman problem that means structure tying the innovations to **orthogonalized Dirichlet atoms and the zero-sampling map**. A plausible form is a source-specific weighted localization/Jackson estimate that penalizes correlations with innovations appearing far beyond the legal cutoff, or an arithmetic estimate directly bounding the tail in `(31)` uniformly in the Ford packet.
+
+This also sharpens how Gram-decay information should be used. Generator-Gram decay or compressibility may help only if it transfers to the target-specific neutralized correlations in `(31)`. Good conditioning by itself cannot supply that transfer.
+
+---
+
+## 6. Adversarial checks
+
+### The slow rate is not caused by ill-conditioning
+
+The scalar core has a `1x1` positive sampling Gram and therefore condition number exactly one. The `N`-dimensional embedding has condition number `(16)`, and `(23)` makes the moving family as close to perfectly conditioned as desired while preserving a fixed matched excess floor.
+
+### The slow rate is not caused by a vanishing spectral gap
+
+Equation `(29)` gives a uniform positive lower bound on every sampling Gram in the moving family. Hence this is not a disguised small-singular-value example.
+
+### The slow rate is not caused by unbounded sample repair
+
+Equation `(30)` uniformly bounds the optimal right inverses. The obstruction survives even when every finite interpolation problem is stably solvable.
+
+### Future enrichments are genuinely sample-visible
+
+Strict decrease of every `a_M` gives `gamma_(M+1)>0` in `(11)`. No step is an appended vector lying already in `ker L`. The null innovation appears only **after** optimally neutralizing the new atom against the old section, exactly as in `NB-287`.
+
+### Fixed-packet convergence is preserved
+
+For every single constructed system, `a_M->0` and hence `A_M->0`. The matched floor `(27)` comes solely from allowing the system to move with `X`, which is the same quantifier order that remains open in the Ford-coupled problem. This does not contradict `NB-284` or `NB-285`.
+
+### Arbitrary data dimension does not create the effect by itself
+
+The extra `N-1` sample coordinates in Section 2 are perfectly resolved from `V_0` and remain orthogonal to the slow target direction. They show that increasing packet rank and good full-Gram conditioning do not eliminate the target-aware lethargy mechanism. The control does **not** claim that real Nyman zero packets decompose this way.
+
+### No claim is made that actual Dirichlet innovations can realize arbitrary profiles
+
+That would be exactly the missing arithmetic statement. The construction is a negative control delimiting what follows from generic Hilbert/RKHS geometry. Any property of the actual Nyman synthesis that forbids `(20)`--`(24)` is potentially the source-specific input the research line is seeking.
+
+---
+
+## 7. Prior-art audit and novelty boundary
+
+The abstract phenomenon of arbitrarily slow best approximation is classical and is **not** claimed as new. Bernstein's lethargy theorem says, in its classical finite-dimensional nested-subspace form, that prescribed decreasing approximation errors tending to zero can be realized exactly. Modern extensions and discussions include J. M. Almira and T. Oikhberg, *Approximation schemes satisfying Shapiro's Theorem*, Journal of Approximation Theory 164 (2012), 534--571, DOI `10.1016/j.jat.2012.01.005`, and A. G. Aksoy and Q. Peng, *Bernstein Lethargy Theorem and Reflexivity*, arXiv:1803.09874 (2018). The diagonal construction `(5)`--`(10)` is an elementary interpolation-side incarnation of that general lethargy principle, not a new lethargy theorem.
+
+The research-specific content is the exact placement of that control inside the `NB-284`--`NB-287` first-free finite-section formalism: the excess itself can be prescribed while the sampling Gram remains uniformly positive and arbitrarily close to perfectly conditioned, every enrichment is sample-visible, and the prescribed decay is realized exactly as the neutralized-Dirichlet-innovation Parseval profile `(20)`--`(22)`. The matched construction `(23)`--`(30)` then proves that these generic diagnostics cannot close the moving Ford route.
+
+The closest recent Nyman--Beurling structural work found remains Hugh Carvill, *Beurling Nyman Geometry and Gram Matrix Structure, Ladder Density and Polynomial Decay via Mellin Smoothing*, arXiv:2510.18132 (2025), which proves polynomial decay and block-compressibility for a particular smoothed BN generator Gram. That kind of source-specific geometry is precisely the sort of additional information not represented in the control above; it does not provide the target-aware null-innovation estimate `(31)` directly.
+
+The proof here is self-contained once the exact excess/innovation identities of `NB-285` and `NB-287` are admitted. The external references delimit generic prior art and are not load-bearing dependencies, so no new `SOURCES.md` anchor is required.
+
+---
+
+## 8. Research disposition
+
+This finding closes a generic escape route rather than the Nyman finite-section branch itself. `NB-287` made the obstruction look like a concrete Parseval tail; `NB-288` shows that **Parseval plus uniformly excellent sampling conditioning still gives no uniform tail rate**. The moving family can store an arbitrary amount of target mass just beyond the matched cutoff while remaining stable at every finite stage.
+
+The next discriminating target is therefore source-specific: derive a uniform weighted localization or decay estimate for the actual neutralized Dirichlet innovations `q_(X,r)` against the actual minimum-norm source `h_(X,M_X)`. Equivalently, find an arithmetic mechanism that prevents the exact lethargy profile `(20)` from being embedded in the Ford-coupled Nyman sections. Without such an input, further abstract conditioning refinements cannot force `A_(M_X)(Z_X)->0`.
