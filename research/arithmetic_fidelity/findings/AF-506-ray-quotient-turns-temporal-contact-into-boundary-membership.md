@@ -1,0 +1,491 @@
+# AF-506 — The ray quotient turns temporal critical contact into boundary membership
+
+**Status:** `EXACT-DERIVED`, `LITERATURE+DERIVED`, `ARITHMETIC-FIDELITY`, `CONVEX-GEOMETRY`, `QUOTIENT`, `CRITICAL-CONTACT`, `MINIMAL-LIFT`, `ORDER-OF-OPERATIONS`, `NEGATIVE/OBSTRUCTION`, `NO-BROAD-NOVELTY-CLAIM`
+
+## Claim
+
+AF-505 shows that for a convex destination set the exact asymptotic threshold is reached either on an eventual temporal plateau or never at any finite time. The remaining gate can be rewritten as a static quotient-attainment problem.
+
+Let `Q` be a normed real vector space, let `F subset Q` be nonempty, closed, and convex, let `u in Q` be nonzero, and define
+
+\[
+f(t):=\operatorname{dist}_Q(tu,F),\qquad t\ge0.
+\]
+
+Assume
+
+\[
+\lambda:=\liminf_{t\to\infty}f(t)<\infty.
+\]
+
+Let
+
+\[
+L:=\operatorname{span}\{u\},
+\qquad
+q:Q\to Q/L
+\]
+
+be the quotient by the observation ray direction, equipped with the quotient norm, and put
+
+\[
+G:=q(F).
+\]
+
+Then:
+
+1. bounded asymptotic distance already forces
+
+\[
+\boxed{u\in\operatorname{rec}(F)};
+\]
+
+2. the asymptotic critical value is exactly the quotient distance
+
+\[
+\boxed{
+\lambda
+=\operatorname{dist}_{Q/L}(0,G)
+=\operatorname{dist}_Q(F,L);
+}
+\]
+
+3. if `G` contains a point of minimum quotient norm, then the AF-505 temporal plateau occurs, and in fact there is an actual source contact at the critical radius for some finite time;
+4. conversely, if `F` is proximinal along the ray -- in particular if `Q` is reflexive Banach and `F` is closed convex -- then a temporal plateau occurs if and only if `G` contains a point of minimum quotient norm.
+
+Equivalently, whenever best approximation to `F` is available,
+
+\[
+\boxed{
+\exists t_*\ge0:\ f(t_*)=\lambda
+\iff
+\operatorname*{argmin}_{g\in G}\|g\|_{Q/L}\ne\varnothing.
+}
+\]
+
+Since `G` need not be closed even when `F` is closed and convex, this isolates the AF-505 no-plateau branch: **the closest point may exist only after closing the quotient image**.
+
+If `Q/L` is finite-dimensional, or more generally if `Q/L` is reflexive, the closed convex set `\overline G` has a nearest point to the origin. Hence
+
+\[
+\boxed{
+\text{critical plateau}
+\iff
+P_{\overline G}(0)\cap G\ne\varnothing,
+}
+\]
+
+where `P_{\overline G}(0)` denotes the set of nearest points in `\overline G`.
+
+In a Hilbert quotient the nearest point is unique, say `g_*`, and the test reduces to one membership bit:
+
+\[
+\boxed{
+\text{critical plateau}
+\iff
+g_*\in G.
+}
+\]
+
+Thus the temporal critical-contact bit from AF-495/AF-505 is not an independent mysterious time variable in convex geometry. After one further quotient by the observation direction, it is exactly the information lost by replacing a possibly nonclosed convex image `G` with its closure `\overline G` at the nearest boundary point.
+
+## Bounded tracking forces the ray into the recession cone
+
+Choose times `t_n->infinity` along which `f(t_n)` stays bounded. Pick `y_n in F` with
+
+\[
+\|y_n-t_nu\|\le M
+\]
+
+for one finite `M` after enlarging it slightly to absorb approximation error.
+
+Fix `y in F` and `a>=0`. For all large `n`, `a/t_n in [0,1]`, so convexity gives
+
+\[
+z_n
+:=
+\left(1-\frac a{t_n}\right)y
++
+\frac a{t_n}y_n
+\in F.
+\]
+
+Write `y_n=t_nu+r_n` with `(r_n)` bounded. Then
+
+\[
+z_n
+=
+y+au+
+\frac a{t_n}(r_n-y)
+\longrightarrow
+y+au.
+\]
+
+Closedness of `F` yields `y+au in F`. Since `y` and `a` were arbitrary,
+
+\[
+u\in\operatorname{rec}(F).
+\]
+
+This is stronger structural information than monotonicity of the scalar distance profile. A convex set that tracks the ray within bounded error indefinitely must actually admit forward translation by that ray direction as a recession motion.
+
+Consequently
+
+\[
+F+\mathbb R_+u\subseteq F.
+\]
+
+It follows that saturation by the whole line can be written using only backward translations:
+
+\[
+\boxed{
+F+L
+=
+F-\mathbb R_+u.
+}
+\]
+
+Indeed positive multiples of `u` are absorbed by `F`, while negative multiples are precisely the backward translates.
+
+## The asymptotic threshold is a quotient distance
+
+By AF-505, convexity plus finite `lambda` gives
+
+\[
+\lambda
+=
+\inf_{t\ge0}\operatorname{dist}(tu,F).
+\]
+
+The quotient norm satisfies
+
+\[
+\|q(y)\|_{Q/L}
+=
+\inf_{a\in\mathbb R}\|y-au\|.
+\]
+
+Therefore
+
+\[
+\operatorname{dist}_{Q/L}(0,G)
+=
+\inf_{y\in F}\inf_{a\in\mathbb R}\|y-au\|.
+\]
+
+Allowing `a<0` does not lower the infimum. If `a<0` and `y in F`, recession gives
+
+\[
+y':=y-au\in F,
+\]
+
+and
+
+\[
+\|y-au\|=\|y'-0u\|.
+\]
+
+So every residual represented using a negative line parameter is already represented at nonnegative time. Hence
+
+\[
+\begin{aligned}
+\operatorname{dist}_{Q/L}(0,G)
+&=
+\inf_{t\ge0}\inf_{y\in F}\|y-tu\|\\
+&=
+\lambda.
+\end{aligned}
+\]
+
+This identity exposes the exact compression involved in the temporal limit. Sending time to infinity and asking for the best bounded transverse residual is equivalent, at the level of the scalar threshold, to quotienting the source by the entire line generated by `u`.
+
+The quotient is therefore task-sufficient for the **value** `lambda`. It is not automatically sufficient for whether that value is actually reached.
+
+## Minimum quotient norm implies finite-time critical contact
+
+Suppose there exists `g=q(y) in G` with
+
+\[
+\|g\|_{Q/L}=\lambda.
+\]
+
+Because `L` is one-dimensional, distance from `y` to `L` is attained: there is some `a in R` with
+
+\[
+\|y-au\|=\lambda.
+\]
+
+If `a>=0`, then
+
+\[
+f(a)\le\|y-au\|=\lambda,
+\]
+
+and the lower bound `f>=lambda` from AF-505 gives equality.
+
+If `a<0`, choose any `b>=-a`. Since `u in rec(F)`,
+
+\[
+y_b:=y+bu\in F,
+\]
+
+and with `t=a+b>=0`,
+
+\[
+y_b-tu=y-au.
+\]
+
+Thus again `f(t)=lambda`.
+
+The quotient minimizer therefore does more than produce the scalar plateau: it produces an actual source representative at critical distance. AF-505 then implies
+
+\[
+f(s)=\lambda\qquad(s\ge t).
+\]
+
+So one minimum-norm point in the ray quotient generates the whole eventual critical plateau.
+
+## Converse under pointwise proximinality
+
+Now assume `f(t_0)=lambda` for some finite `t_0` and assume the distance from `t_0u` to `F` is attained. Choose `y in F` with
+
+\[
+\|y-t_0u\|=\lambda.
+\]
+
+Then
+
+\[
+\|q(y)\|_{Q/L}
+\le
+\|y-t_0u\|
+=
+\lambda.
+\]
+
+But the quotient-distance identity already gives
+
+\[
+\operatorname{dist}(0,G)=\lambda,
+\]
+
+so equality must hold and `q(y)` is a minimum-norm point of `G`.
+
+Thus the only extra hypothesis needed for the converse is pointwise source attainment at one plateau time. In a reflexive Banach space every nonempty closed convex set is proximinal, so for closed convex `F` the equivalence is automatic. In finite-dimensional normed spaces it is automatic as well.
+
+This places the AF-505 gates in a sharper order. The temporal gate can be moved into the static quotient, but only if the source-contact gate is either separately retained or supplied by a proximinality theorem.
+
+## Closure of the quotient image is exactly where the bit can disappear
+
+The set `G=q(F)` is convex, but a continuous linear image of a closed convex set need not be closed. This standard convex-analysis pathology is precisely what the no-plateau branch requires here.
+
+Since closure does not change distance,
+
+\[
+\operatorname{dist}(0,G)
+=
+\operatorname{dist}(0,\overline G)
+=
+\lambda.
+\]
+
+Suppose `Q/L` is reflexive. Then `\overline G` is nonempty, closed, and convex, so it has at least one nearest point to `0`. Let
+
+\[
+P_{\overline G}(0)
+:=
+\{g\in\overline G:\|g\|=\lambda\}.
+\]
+
+Combining the previous equivalence with this existence gives
+
+\[
+\boxed{
+\text{plateau}
+\iff
+P_{\overline G}(0)\cap G\ne\varnothing.
+}
+\]
+
+The failure mode is therefore exact:
+
+\[
+\boxed{
+P_{\overline G}(0)
+\subseteq
+\overline G\setminus G
+}
+\]
+
+for every closest point when no plateau exists.
+
+This is weaker than requiring the whole image `G` to be closed. The image may be nonclosed elsewhere and still contain a closest point. What matters is only **closedness at the task-selected minimum-norm boundary**.
+
+If `Q/L` is Hilbert, `\overline G` has a unique nearest point `g_*`. The entire equality decision is then
+
+\[
+\mathbf 1\{g_*\in G\}.
+\]
+
+Closing `G` preserves the distance `lambda`, all ordinary continuous distance queries, and the unique nearest point of the closure, but erases whether that point had an actual preimage in `F` before closure. That is exactly the one bit needed by the exact-threshold task.
+
+## The AF-505 convex pair becomes an open-versus-closed quotient image
+
+Take the explicit AF-505 pair in `Q=R^2`, with `u=e_1` and `L>0`:
+
+\[
+F_0
+=
+\{(x,y):x\ge0,\ y\ge L\},
+\]
+
+\[
+F_+
+=
+\left\{(x,y):x\ge0,\ y\ge L+\frac1{x+1}\right\}.
+\]
+
+Identify `Q/L` with the vertical axis. Then
+
+\[
+\boxed{
+q(F_0)=[L,\infty),
+\qquad
+q(F_+)=(L,\infty).
+}
+\]
+
+Their quotient closures are identical:
+
+\[
+\overline{q(F_0)}
+=
+\overline{q(F_+)}
+=[L,\infty),
+\]
+
+and both have
+
+\[
+\lambda=L.
+\]
+
+The unique closest point of the common closure is `L`. It belongs to `q(F_0)` and does not belong to `q(F_+)`. Hence
+
+\[
+f_0(t)=L
+\]
+
+has the critical plateau, while
+
+\[
+f_+(t)>L,
+\qquad
+f_+(t)\downarrow L
+\]
+
+never reaches the threshold.
+
+So the apparently temporal distinction from AF-505 is exactly the elementary static distinction
+
+\[
+[L,\infty)
+\quad\text{versus}\quad
+(L,\infty)
+\]
+
+after quotienting by the observed ray direction.
+
+This also explains why the complete translated-set outer limit in AF-505 cannot recover the answer. That limit has already performed the closure operation that inserts the missing endpoint.
+
+## Consequence for the AF-495 critical-contact bit
+
+In the finite-dimensional convex setting, AF-505 turns recurrent critical contact into the same plateau decision: if the critical value is reached once, it is reached for every later time; if it is never reached, there are no critical-radius times at all.
+
+Therefore the AF-495 bit can be written in quotient form. With
+
+\[
+G=q(F),
+\qquad
+\lambda=\operatorname{dist}(0,G),
+\]
+
+one has
+
+\[
+\boxed{
+\chi_F(u)
+=
+\mathbf 1\!\left\{
+P_{\overline G}(0)\cap G\ne\varnothing
+\right\}.
+}
+\]
+
+In Euclidean/Hilbert quotient geometry this reduces to
+
+\[
+\boxed{
+\chi_F(u)
+=
+\mathbf 1\{g_*\in G\},
+\qquad
+g_*=P_{\overline G}(0).
+}
+\]
+
+This is a task-relative minimal lift of the closure compression. Once `\overline G` is retained, the exact-threshold phase question does not require reconstructing the original `F`; it requires only retaining whether the task-selected nearest boundary point belonged to the unclosed image.
+
+The order-of-operations obstruction is now explicit:
+
+\[
+F
+\xrightarrow{\ q\ }
+G=q(F)
+\xrightarrow{\ \mathrm{closure}\ }
+\overline G.
+\]
+
+The first map preserves the asymptotic threshold exactly. The second preserves that threshold but may destroy the exact critical-contact predicate. The lost datum is not generic source identity; it is membership of the minimum-norm boundary point before closure.
+
+## Prior-art and novelty audit
+
+No broad novelty is claimed for the convex-analysis ingredients.
+
+- R. Tyrrell Rockafellar, *Convex Analysis*, Princeton University Press (1970), especially Chapters 8--9, is foundational prior art for recession cones, lineality, linear images, and the closedness issues of convex sets under projection.
+- R. Tyrrell Rockafellar and Roger J.-B. Wets, *Variational Analysis*, Springer (1998), DOI `10.1007/978-3-642-02431-3`, supplies the standard framework for horizon/recession geometry, set convergence, distance functions, and closed convex images.
+- Heinz H. Bauschke and Patrick L. Combettes, *Convex Analysis and Monotone Operator Theory in Hilbert Spaces*, 2nd ed., Springer (2017), DOI `10.1007/978-3-319-48311-5`, is standard prior art for metric projection and nearest-point theory in Hilbert spaces.
+- Dimitri P. Bertsekas, *Convex Optimization Theory*, Athena Scientific (2009), Section 1.4, discusses recession cones and gives explicit closedness conditions for linear images/intersections of closed convex sets; it also emphasizes that linear images of closed convex sets need not be closed.
+
+The standard literature therefore already contains every ambient ingredient: recession directions, quotient/linear images, nonclosed convex projections, and metric projections. The durable Arithmetic Fidelity contribution is their exact composition with AF-495/AF-505: **finite asymptotic tracking forces the observed direction into the source recession cone; quotienting that direction preserves the critical value; and the entire convex exact-threshold ambiguity is the single membership question of the closest point before versus after closure.**
+
+This is not claimed as a new theorem of convex analysis in isolation. It is a sharpened preservation theorem for the current compression chain and identifies precisely which operation loses the AF critical-contact bit.
+
+## Falsification and boundary audit
+
+- Closedness and convexity of `F` are essential to the recession-direction proof. For nonconvex or nonclosed sources, bounded tracking along a sequence need not imply `u in rec(F)`.
+- The quotient identity concerns the scalar asymptotic threshold under the finite-liminf hypothesis. It does not say that `q(F)` is closed or that quotient representatives are unique.
+- A minimum-norm point of `q(F)` always implies an actual critical contact because the one-dimensional kernel `L` is proximinal. The converse needs source-distance attainment at a plateau time. Reflexivity/finite dimensionality is a sufficient condition, not a hidden consequence of convexity alone.
+- Full closedness of `q(F)` is sufficient but not necessary for a plateau. Only attainment at the minimum-norm boundary matters.
+- In a general reflexive Banach quotient the nearest-point set of `\overline G` may contain several points. The correct condition is intersection with `G`, not membership of an arbitrarily selected minimizer. Uniqueness of `g_*` is special to Hilbert or other strictly convex settings.
+- The closure-membership bit is task-relative. A different downstream predicate may care about other missing boundary points of `q(F)` and require a richer lift.
+- The result does not repair source-saturation admission from AF-501, nor does it identify which quotient images arise from natural arithmetic source classes.
+- The result does not identify a rational-prime discriminator or advance RH directly. It sharpens the abstract theory of when a quotient-plus-closure compression preserves an exact boundary predicate.
+
+## Relationship to AF-495 and AF-505
+
+AF-495 shows that taking the outer limit before applying a closed-radius predicate can lose one boundary-contact bit. AF-505 proves that convexity rigidifies that bit into a temporal dichotomy: eventual plateau versus approach from above.
+
+AF-506 removes the remaining temporal opacity. Under closed convex geometry with ordinary best-approximation hypotheses, the plateau is equivalent to minimum-norm attainment in the quotient by the observed ray. The hierarchy becomes
+
+\[
+\text{closed convex source }F
+\longrightarrow
+\text{ray quotient }G=q(F)
+\longrightarrow
+\text{closure }\overline G.
+\]
+
+The quotient preserves `lambda`; closure can erase `chi`. In the Hilbert case the exact missing datum is simply whether the unique closest point of `\overline G` was already present in `G`.
+
+This gives a concrete Arithmetic Fidelity template that is broader than the particular convex pair: when a canonical compression contains an unavoidable closure step, exact-threshold properties may depend not on the closed limit object itself but on **which task-selected boundary points were genuine images before closure**.
