@@ -78,6 +78,14 @@ z_k:=\log r_k=-\theta s_k+u_k,
 u_k:=\log(1+\xi_k).
 \]
 
+Here `u_k=nu_k`; equivalently, using one symbol throughout,
+
+\[
+u_k:=\log(1+\xi_k),
+\qquad
+z_k=-\theta s_k+u_k.
+\]
+
 On `[-epsilon_0,epsilon_0]`,
 
 \[
@@ -92,7 +100,7 @@ so
 \frac{\varepsilon}{1-\varepsilon_0}.
 \]
 
-Let `p*` be the Holder dual exponent. Finite-dimensional `ell_p` duality gives a vector `w` satisfying
+Let `p*` be the Hölder dual exponent. Finite-dimensional `ell_p` duality gives a vector `w` satisfying
 
 \[
 \langle w,s\rangle=1,
@@ -160,7 +168,13 @@ The same datum can be represented under `q_1` using the relative perturbation
 =e^{\delta s_k}-1.
 \]
 
-Since `||s||_p>=||s||_infinity=H`,
+Since
+
+\[
+\|s\|_p\ge \|s\|_\infty=H,
+\]
+
+we have
 
 \[
 0\le\delta H\le\frac{\varepsilon}{2e}<1.
@@ -210,7 +224,13 @@ so
 \asymp H^{1+1/p}.
 \]
 
-For `p=infinity`, `||s||_infinity=H`. Hence the global-budget interpolation is
+For `p=infinity`,
+
+\[
+\|s\|_\infty=H.
+\]
+
+Hence the global-budget interpolation is
 
 \[
 \boxed{
@@ -262,7 +282,7 @@ The theorem is deliberately local and channel-specific.
 
 The ingredients are classical and the claim is not presented as a new general theorem of inverse problems.
 
-- David L. Donoho, **“Statistical Estimation and Optimal Recovery,”** *Annals of Statistics* 22(1), 238–270 (1994), DOI `10.1214/AOS/1176325367`, develops the modulus-of-continuity / optimal-recovery viewpoint in which indistinguishable nearby objects determine minimax difficulty.
+- David L. Donoho, **“Statistical Estimation and Optimal Recovery,”** *Annals of Statistics* 22(1), 238–270 (1994), DOI `10.1214/aos/1176325367`, develops the modulus-of-continuity / optimal-recovery viewpoint in which indistinguishable nearby objects determine minimax difficulty.
 - Amir Beck and Yonina C. Eldar, **“Regularization in Regression with Bounded Noise: A Chebyshev Center Approach,”** *SIAM Journal on Matrix Analysis and Applications* 29(2), 606–625 (2007), DOI `10.1137/060656784`, studies worst-case estimation in regression with norm-bounded noise and the geometry of feasible parameter sets.
 - Dmitry Batenkov and Yosef Yomdin, **“On the Accuracy of Solving Confluent Prony Systems,”** *SIAM Journal on Applied Mathematics* 73(1), 134–154 (2013), DOI `10.1137/110836584`, studies maximal local accuracy and stability in Prony-type reconstruction and is the closest established inverse-problem setting to the surrounding AF-486/AF-487 Dirichlet sampling work.
 
