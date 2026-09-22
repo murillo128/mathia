@@ -1,0 +1,13 @@
+# MI-065 — Finite external operator calculus inherits Gram orientation from its generators
+
+**Evidence level:** exact finite-dimensional operator-algebra synthesis from [VIS-375](../../findings/VIS-375-external-spectral-reweighting-inherits-gram-noncommutativity.md) and [VIS-376](../../findings/VIS-376-finite-noncommutative-operator-polynomials-inherit-gram-noncommutativity.md), extending MI-064.
+
+A nonlinear-looking external metric does not automatically contain new orientation. VIS-375 shows that scalar spectral reweighting `C=f(H)` of one external Hermitian operator inherits its failure to commute with the Gram from `[G,H]`; functional calculus can reshape an existing orientation but cannot manufacture one from a commuting generator.
+
+VIS-376 extends that closure to finite noncommutative operator polynomials in several external generators. If every generator commutes with `G`, then the whole finite algebra commutes with `G`. More generally, at bounded polynomial degree and coefficient size, the commutator of the constructed operator with `G` is quantitatively controlled by the generator commutators. A complicated finite formula therefore does not turn small inherited orientation into an order-one resource for free.
+
+Together with MI-064, the relevant object is the **generator-level, gap-resolved Gram orientation after the full complexity ledger**. Finite spectral filters, products, sums and commutators may redistribute that resource, but any claimed gain must be paid either by substantial noncommutation already present in the justified generators, by growth of algebraic complexity, by singular/nonpolynomial functional calculus, or by metric degeneration that itself survives the destination accounting.
+
+This is also a provenance gate. Even a large inherited commutator is useful only if the external generators are fixed by the arithmetic/physical construction rather than chosen after seeing the Gram. Otherwise the operator algebra remains engineered preconditioning, however noncommutative its notation appears.
+
+**Boundary.** VIS-375--VIS-376 are finite-dimensional bounded-complexity statements. They do not classify singular functional calculus, unbounded operators, infinite-degree limits, indefinite forms or nonlinear source-dependent geometry. They also do not show that a source-native family of noncommuting generators cannot exist; they only prevent finite external operator calculus from being counted as an independent orientation resource once the generators are fixed.

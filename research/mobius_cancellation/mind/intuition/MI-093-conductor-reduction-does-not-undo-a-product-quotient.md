@@ -1,0 +1,13 @@
+# MI-093 — Conductor reduction does not undo a product quotient
+
+**Evidence level:** exact source-frame quotient and standard q-van der Corput bookkeeping from [MC-454](../../findings/MC-454-internal-factorization-does-not-increase-source-frame-occupancy.md) and [MC-455](../../findings/MC-455-standard-qvdc-conductor-reduction-preserves-product-quotient.md), sharpening MI-091--MI-092.
+
+Internal factorization is useful only while the analytic observable still resolves the factors. MC-454 shows that if a factorable coefficient `lambda=beta*gamma` reaches a source-frame kernel only through the products `uv` and `u'v'`, then the apparent tuple multiplicity does not enlarge the effective source image. The factor variables have already been quotiented away; counting their representations again is not new occupancy.
+
+MC-455 shows that the standard first q-van der Corput conductor-reduction step does not by itself repair this loss. It may replace the original source character by one of smaller conductor, but if its parameters and later observable remain functions only of the product coefficient, the same product quotient survives. Repeating source-only conductor reductions cannot recreate factor coordinates that disappeared before the differencing step.
+
+There are therefore two distinct ways a factorable/q-vdC continuation could still matter. A reduced conductor may be quantitatively cheap enough that the **product-level** source-frame sum itself closes after every later summation. Alternatively, a dispersion or conductor-splitting argument may act **before** the product quotient and create a kernel that depends separately on retained factor variables, with a genuinely smaller diagonal that survives completion, Cauchy and recombination.
+
+This refines the representation gate from MI-091--MI-092. It is not enough that an auxiliary coefficient has a factorization, not enough that it has many factor representations, and not enough that q-vdC lowers a conductor somewhere in the derivation. The gain must be visible in the exact post-transform source frame on which the final positive estimate is charged.
+
+**Boundary.** MC-454 does not rule out factor-sensitive pre-quotient dispersion, and MC-455 does not show that conductor reduction is quantitatively useless at product level. Neither finding supplies a Möbius cancellation estimate. The remaining question is numerical and structural: either the reduced conductor survives the whole budget, or a retained factor variable must change the true diagonal before the destination quotient erases it.

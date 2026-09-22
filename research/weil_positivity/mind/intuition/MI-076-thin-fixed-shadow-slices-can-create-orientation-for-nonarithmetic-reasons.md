@@ -1,0 +1,13 @@
+# MI-076 — Thin fixed-shadow slices can create orientation for nonarithmetic reasons
+
+**Evidence level:** exact compact-operator countermodel from [WP-404](../../findings/WP-404-thin-same-shadow-source-slices-can-manufacture-one-sided-orientation.md), showing the finite-codimensional hypothesis of MI-075/WP-403 is genuinely sharp but not sufficient for arithmetic provenance.
+
+Finite-codimensional source constraints cannot break fixed-shadow sign symmetry because their quotient errors can be repaired inside a dense two-sided order-bounded tangent core. WP-404 shows that this repair mechanism can fail completely on a sufficiently thin slice. In an explicit one-dimensional, hence infinite-codimensional, same-shadow source line, the positive fibre becomes one-sided and a nonzero bounded linear orientation exists.
+
+So infinite codimension is not merely a logical loophole in WP-403: changing the reachable source geometry can really create sign. But the same example supplies the adversarial control that prevents overinterpretation. The construction is generic compact-operator geometry with no arithmetic content. **Thinness can manufacture orientation by itself.** Escaping the tangent no-go is therefore necessary for a source-native mechanism, not evidence that the resulting sign is related to Weil arithmetic.
+
+The relevant next gate is canonicity under matched controls. A viable arithmetic source restriction must explain why its thin or singular fixed-shadow slice is forced by the source/destination structure, why an analogous nonarithmetic control does not produce the same orientation, and how the surviving functional recovers the required Weil coefficients rather than an arbitrary one-sided coordinate.
+
+WP-404 also clarifies the limiting geometry. Finite truncations can retain a small negative interval while the infinite slice converges to a truly one-sided endpoint. Any argument using such a mechanism must therefore price the singular limit rather than infer an infinite orientation from finite asymmetry alone.
+
+**Boundary.** WP-404 does not characterize all infinite-codimensional slices and does not prove any arithmetic orientation. It does not weaken WP-403 on closed finite-codimensional constraints. Nonlinear/quadratic mechanisms, singular operator domains and finite--archimedean completions remain separate categories. The durable lesson is only that source restriction counts when it changes the closure of the reachable tangent geometry, and that this change still needs an independent arithmetic-provenance test.

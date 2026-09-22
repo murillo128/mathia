@@ -1,0 +1,13 @@
+# MI-081 — First-free zero jets have sparse support but unpriced Hilbert conditioning
+
+**Evidence level:** exact multiplicity-jet classification from [NB-281](../../findings/NB-281-multiplicity-forced-nyman-jets-collapse-to-the-same-burnol-blaschke-defect.md) plus explicit finite-section interpolation from [NB-282](../../findings/NB-282-first-free-nyman-jets-admit-explicit-sparse-dirichlet-neutralization.md), refining MI-080.
+
+The derivative escape left by finite zero sampling splits sharply at the actual zero multiplicity. If `rho` has multiplicity `m`, every legal finite Nyman residual agrees with `1/s` through derivative order `m-1`. NB-281 shows that this entire forced Hermite packet is exactly the multiplicity-counted Blaschke condition, so its least Hardy cost is the same finite Burnol defect `1-|B_Z(1)|^2`. At high ordinate that universal forced-jet budget is still `O(1/G)`.
+
+The derivative of order `m` is different: it contains the source value `P(rho)-P(1)` and is not universally forced. NB-281 proves those first-free values can be prescribed independently on any finite zero packet. NB-282 then prices the **support-length** part of that freedom constructively. For `N` distinct zeros one can choose a prime base `q` and use exactly the `N` atoms `q^{-s},...,q^{-Ns}` to realize arbitrary first-free data, with a natural cutoff satisfying `log M=O(N log N)`.
+
+Thus neither multiplicity nor finite-section rank protects the first-free jet once the available section is above that sparse interpolation threshold. The obstruction has moved from existence to conditioning. The Vandermonde determinant proves that an interpolant exists but can be tiny, so the coefficients and actual Nyman/Hardy synthesis norm may still be large.
+
+The next source-native quantity is therefore the weighted inverse of the **actual finite synthesis map**, not another zero-only Hermite Gram and not section length alone. With natural Nyman Gram `R_M` and zero-evaluation matrix `U`, the relevant minimum source cost is governed by the constrained form built from `U R_M^{-1} U^*` for the specific neutralizing data. A Ford-scale lower bound there would be genuinely arithmetic because it charges the source realization rather than the universal zero geometry.
+
+**Boundary.** NB-282 gives no uniform coefficient bound, no condition-number bound and no Hardy-norm estimate for the sparse interpolator. It neutralizes only the first source-dependent jet of a finite packet. Higher/global source data, nonlinear boundary observables and rank regimes beyond the interpolation budget remain open, and none of these results assumes or proves the existence of right-half zeta zeros.

@@ -1,0 +1,11 @@
+# MI-071 — Positive carrier portfolios inherit the square-root prime exponent barrier
+
+**Evidence level:** exact portfolio estimate from [WI-394](../../findings/WI-394-positive-carrier-portfolios-cannot-beat-square-root-prime-exponent.md), extending the single-carrier crossover of MI-070.
+
+The square-root prime tariff is not removed by spreading a positive certificate over many separated carrier scales. For a positive portfolio with carrier separations `A_j>=A_0` and weights `w_j>=0`, WI-394 normalizes the absolute-prime budget by the same `e^(A_j/2)` envelope that appears for one carrier. At every fixed interior defect depth `|delta|<=delta_*<1/2`, the aggregate defect response is then suppressed by a factor of order `e^{-(1/2-delta_*)A_0}` relative to that budget, up to lower-order terms.
+
+Thus positive multiscale diversification does not change the exponent mismatch. The defect grows like `e^(A|delta|)` while the absolute prime control grows like `e^(A/2)`, and summing many positive carriers cannot convert the former into the latter without paying the same budget scale. The MI-070 crossover is therefore a cone-level barrier, not an artifact of choosing one carrier.
+
+What remains live must change the algebra before absolute positive closure: arithmetic cancellation inside the prime polynomial, coherent signed or matrix-valued cross terms, a collective defect observable whose mass grows with the number of defects, or a near-edge regime where `(1/2-|delta|)A` stays bounded. Simply adding more positive carriers at different scales is not a new resource.
+
+**Boundary.** WI-394 assumes the stated positive portfolio and absolute-prime budget and keeps the defect depth uniformly inside the critical strip. It does not rule out signed interference, source-specific cancellation, matrix positivity with nontrivial cross terms, aggregation over a growing defect family, or boundary layers approaching `|delta|=1/2`. No new prime estimate or RH criterion follows from the portfolio obstruction alone.
