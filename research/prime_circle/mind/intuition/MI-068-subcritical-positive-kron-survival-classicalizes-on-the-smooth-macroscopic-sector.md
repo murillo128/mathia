@@ -1,0 +1,13 @@
+# MI-068 — Subcritical positive Kron survival classicalizes on the smooth macroscopic sector
+
+**Evidence level:** asymptotic spectral synthesis from [PC-397](../../findings/PC-397-subcritical-riesz-kron-contrast-survives-on-long-polynomial-windows.md) and [PC-398](../../findings/PC-398-subcritical-kron-macroscopic-forms-have-universal-buchstab-riesz-limit.md), extending the summable/critical closure of MI-067.
+
+The positive simultaneous-deletion Kron correction has a genuine phase boundary at the Riesz exponent `alpha=1/2`. PC-396 closes every fixed polynomial window at and above that endpoint, while PC-397 shows that for `alpha<1/2` the unscaled contrast can survive—and on sufficiently long windows can diverge—at the natural scale `H^(1-2alpha)/(q^2 log p)`.
+
+Survival is not yet arithmetic specificity. PC-398 identifies the complete fixed smooth macroscopic quadratic-form limit in the subcritical regime. After normalization by `q^2 log p/H^(1-2alpha)`, every fixed continuous macroscopic test profile converges to a positive nonlocal Riesz form of a normalized Riesz averaging operator, multiplied only by the classical Buchstab density ratio `omega(u-1)^2/omega(u)`.
+
+The same continuum limit is reproduced by matched deterministic point clouds with the same cardinality asymptotics, empirical Lebesgue limit and comparable mesoscopic occupancy control. Thus the leading smooth macroscopic sector retains rough-number density but not a zeta-zero, functional-equation or critical-line mechanism. The fact that nonsummability keeps a large operator signal alive is a representation-scale statement until a residual survives that matched-control classicalization.
+
+The positive-Kron frontier is therefore narrower than “go below `alpha=1/2`.” Any RH-facing information must live beyond the universal Buchstab--Riesz continuum mode: centered fluctuations around the macroscopic limit, mesoscopic/arithmetic-scale test vectors, cross-level orientation/evolution, or another source-dependent observable that matched clouds do not reproduce. A large subcritical contrast by itself is not evidence for such a residual.
+
+**Boundary.** PC-398 controls fixed continuous macroscopic observables and does not prove operator-norm vanishing at or below the macroscopic threshold. Mesoscopic concentration, arithmetic-scale vectors, centered fluctuation operators, signed/indefinite kernels, nonlinear eliminations and cross-level state remain outside the theorem. The continuum limit is a negative matched-control result, not an RH consequence.
