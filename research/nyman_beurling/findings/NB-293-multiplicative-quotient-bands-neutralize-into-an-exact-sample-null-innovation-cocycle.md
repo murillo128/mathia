@@ -8,12 +8,10 @@
 
 ## Claim
 
-`NB-292` identifies the multiplicative quotient band
+`NB-292` gives the multiplicative quotient band
 
 \[
-W_{m,n,Z}
-=
-V_{mn-1,Z}\ominus S_mV_{n-1,Z}
+W_{m,n,Z}=V_{mn-1,Z}\ominus S_mV_{n-1,Z}
 \]
 
 and its positive first-free sampling Gram
@@ -24,9 +22,7 @@ and its positive first-free sampling Gram
 K_{mn-1,Z}-D_Z(m)K_{n-1,Z}D_Z(m)^*.
 \]
 
-It also splits the normalized canonical dilation defect inside that band into a first-free-visible repair part and a sample-null part. The missing link is target-aware: which part of a whole multiplicative band actually lowers the minimum synthesis cost when the dilated old section is enlarged to the canonical section?
-
-Once the lower section is first-free-surjective, the answer is exact. The whole quotient band neutralizes against the dilated old section into a canonical block of new interpolation-null directions, and the minimum-norm synthesis gain is precisely the squared projection of the old minimum source onto that block.
+The missing target-aware step is exact once the lower quotient section is first-free-surjective: **the entire band becomes a canonical block of new interpolation-null directions after subtracting the old-section repair of its samples, and the minimum synthesis gain is exactly the projection onto that block.**
 
 Fix a finite zero packet `Z` and abbreviate
 
@@ -40,7 +36,7 @@ K_r:=LP_rL^*,
 D_r:=V_r\cap\ker L.
 \]
 
-Assume `L|_(V_(n-1))` is onto, as it is beyond the finite surjective cutoff supplied by `NB-282`. Put
+Assume `L|_(V_(n-1))` is onto, as supplied eventually by `NB-282`. Put
 
 \[
 U:=S_mV_{n-1},
@@ -62,14 +58,16 @@ B:=L|_W,
 \Gamma:=BB^*=\Gamma_{m,n,Z}.
 \]
 
-Since `D` is invertible and the lower section is onto, `A` is positive definite. Let
+Then `A` is positive definite. The minimum-norm right inverse on `U` is
 
 \[
-R_U:=P_UL^*A^{-1}
-=S_mR_{n-1}D^{-1}
+R_U
+:=P_UL^*A^{-1}
+=S_mR_{n-1}D^{-1}.
+\tag{1}
 \]
 
-be the minimum-norm right inverse of `L|_U`. Define the **block neutralization map**
+Define
 
 \[
 \boxed{
@@ -77,34 +75,32 @@ J_{m,n,Z}:W\to V,
 \qquad
 Jw:=w-R_UBw.
 }
-\tag{1}
+\tag{2}
 \]
 
-Then `J` is a linear bijection from the full quotient band onto the new nullspace block
+Then `J` is a linear bijection onto
 
 \[
 \boxed{
 Q_{m,n,Z}
 :=
-D_{mn-1}\ominus S_mD_{n-1}.
+D_{mn-1}\ominus S_mD_{n-1},
 }
-\tag{2}
+\tag{3}
 \]
 
-Equivalently,
+so that
 
 \[
 \boxed{
 D_{mn-1}
 =
-S_mD_{n-1}
-\oplus
-Q_{m,n,Z}
+S_mD_{n-1}\oplus Q_{m,n,Z}
 }
-\tag{3}
+\tag{4}
 \]
 
-orthogonally, and every band direction becomes an exact first-free-null direction after subtracting the unique minimum-norm old-section repair of its samples. Its induced null metric is
+orthogonally. Moreover
 
 \[
 \boxed{
@@ -113,40 +109,38 @@ J^*J
 I_W+B^*A^{-1}B
 \succeq I_W.
 }
-\tag{4}
+\tag{5}
 \]
 
-These multiplicative null blocks inherit their own exact semigroup cocycle. For `k,m,n>=2`, whenever the relevant lower sections are already first-free-surjective,
+Thus every multiplicative band direction can be made first-free-null by cancelling its samples with the unique minimum-norm vector from the dilated old section. The price of that cancellation is encoded exactly in `(5)`.
+
+The null blocks themselves satisfy the multiplicative cocycle
 
 \[
 \boxed{
 Q_{km,n,Z}
 =
-Q_{k,mn,Z}
-\oplus
-S_kQ_{m,n,Z}
+Q_{k,mn,Z}\oplus S_kQ_{m,n,Z}
 }
-\tag{5}
+\tag{6}
 \]
 
 orthogonally.
 
-The target consequence is also exact. For an arbitrary first-free datum `y in C^N`, let
+For any first-free datum `y in C^N`, let
 
 \[
-g_{m,n}(y)
-:=R_Uy
+g_{m,n}(y):=R_Uy
 =S_mR_{n-1}D^{-1}y
 \]
 
-be its minimum-norm realization in the dilated old section `U`, and let
+be its minimum-norm realization in `U`, and let
 
 \[
-h_{mn-1}(y)
-:=P_VL^*K_{mn-1}^{-1}y
+h_{mn-1}(y):=P_VL^*K_{mn-1}^{-1}y
 \]
 
-be its minimum-norm realization in the enlarged canonical section `V`. Then
+be the minimum-norm realization in `V`. Then
 
 \[
 \boxed{
@@ -154,10 +148,10 @@ h_{mn-1}(y)
 =
 g_{m,n}(y)-P_{Q_{m,n,Z}}g_{m,n}(y).
 }
-\tag{6}
+\tag{7}
 \]
 
-Hence the complete multiplicative-section improvement is the block Parseval mass
+Consequently the whole multiplicative-section improvement is the block Parseval mass
 
 \[
 \boxed{
@@ -168,10 +162,10 @@ Hence the complete multiplicative-section improvement is the block Parseval mass
 =
 \|P_Qg_{m,n}(y)\|^2.
 }
-\tag{7}
+\tag{8}
 \]
 
-In finite-dimensional sample coordinates this same quantity is
+In sample coordinates,
 
 \[
 \boxed{
@@ -181,10 +175,10 @@ y^*A^{-1}B
 \bigl(I_W+B^*A^{-1}B\bigr)^{-1}
 B^*A^{-1}y.
 }
-\tag{8}
+\tag{9}
 \]
 
-Writing
+Equivalently, with
 
 \[
 M:=A^{-1/2}\Gamma A^{-1/2},
@@ -192,7 +186,7 @@ M:=A^{-1/2}\Gamma A^{-1/2},
 x:=A^{-1/2}y,
 \]
 
-one obtains the equivalent target-spectral formula
+we have
 
 \[
 \boxed{
@@ -200,12 +194,24 @@ one obtains the equivalent target-spectral formula
 =
 x^*M(I+M)^{-1}x.
 }
-\tag{9}
+\tag{10}
 \]
 
-Thus the positive matrix cocycle of `NB-292` becomes coercive only through the spectral mass of the **actual transformed datum** in the generalized band modes. Large trace, determinant, operator norm, or scalar dilation loss by themselves still do not force a synthesis gain.
+If `M e_j=lambda_j e_j` and `x=sum_j x_j e_j`, this is
 
-There is also a direct certificate from the normalized canonical innovation defect of `NB-292`. Recall
+\[
+\boxed{
+\Delta_{m,n,Z}(y)
+=
+\sum_j
+\frac{\lambda_j}{1+\lambda_j}|x_j|^2.
+}
+\tag{11}
+\]
+
+Hence the positive matrix cocycle from `NB-292` becomes coercive only through the spectral mass of the **actual transformed datum** in its generalized band modes. Large trace, determinant, operator norm, or scalar dilation loss alone still do not force target improvement.
+
+Finally, let
 
 \[
 b_{m,n,Z}
@@ -214,20 +220,20 @@ b_{m,n,Z}
 \|b_{m,n,Z}\|^2=1-c_{m,n}^2,
 \]
 
-with sample defect
+and
 
 \[
-d_{m,n,Z}=Lb_{m,n,Z}.
+d_{m,n,Z}=Lb_{m,n,Z}
 \]
 
-Its block-neutralized form
+be the normalized canonical innovation defect from `NB-292`. Its neutralized null direction
 
 \[
 \widehat q_{m,n,Z}
 :=Jb_{m,n,Z}
 =b_{m,n,Z}-R_Ud_{m,n,Z}
 \in Q_{m,n,Z}
-\tag{10}
+\tag{12}
 \]
 
 has exact norm
@@ -239,10 +245,10 @@ has exact norm
 1-c_{m,n}^2
 +d_{m,n,Z}^*A^{-1}d_{m,n,Z}.
 }
-\tag{11}
+\tag{13}
 \]
 
-Since `g_(m,n)(y)` lies in `U` while `b_(m,n,Z)` lies in `W`, their only overlap after neutralization comes from the old-section repair. Therefore
+Therefore
 
 \[
 \boxed{
@@ -254,104 +260,52 @@ Since `g_(m,n)(y)` lies in `U` while `b_(m,n,Z)` lies in `W`, their only overlap
 1-c_{m,n}^2+d_{m,n,Z}^*A^{-1}d_{m,n,Z}
 }
 }
-\tag{12}
-\]
-
-whenever the denominator is nonzero; when the defect vanishes the right side is interpreted as zero.
-
-This is the first direct target-aware section-enrichment certificate built from the vector defect exposed in `NB-292`. It still supplies no arithmetic lower bound on the numerator. The remaining question is now sharply localized: whether the actual moving Ford datum has non-negligible pairing with the old-section repair forced by the canonical dilation defect.
-
----
-
-## 1. The dilated old kernel is exactly the old nullspace transported by the semigroup
-
-The covariance from `NB-292` gives
-
-\[
-LS_m=DL.
-\tag{13}
-\]
-
-Because `D` is diagonal with nonzero entries,
-
-\[
-LS_mh=0
-\quad\Longleftrightarrow\quad
-Lh=0.
-\]
-
-Therefore
-
-\[
-\boxed{
-\ker(L|_U)
-=S_mD_{n-1}.
-}
 \tag{14}
 \]
 
-Surjectivity of `L|_(V_(n-1))` and invertibility of `D` imply surjectivity on `U`. Its sampling Gram is
+whenever the denominator is nonzero, with the right side interpreted as zero when the defect vanishes.
 
-\[
-LP_UL^*
-=
-DK_{n-1}D^*
-=A\succ0.
-\tag{15}
-\]
-
-For `x in C^N`, the vector
-
-\[
-S_mR_{n-1}D^{-1}x
-\]
-
-lies in `U`, has samples `x`, and has minimum norm because `S_m` is an isometry and `R_(n-1)` is the minimum-norm realization of `D^(-1)x` in `V_(n-1)`. Hence
-
-\[
-\boxed{
-R_U
-=S_mR_{n-1}D^{-1}
-=P_UL^*A^{-1}.
-}
-\tag{16}
-\]
-
-In particular,
-
-\[
-R_U^*R_U=A^{-1}.
-\tag{17}
-\]
+Equation `(14)` is a direct target-aware section-enrichment certificate built from the vector defect of `NB-292`. It still contains the missing arithmetic problem explicitly: prove a lower bound on the target pairing `d^*A^(-1)y` at moving Ford scales, with the repair cost in the denominator paid honestly.
 
 ---
 
-## 2. Every multiplicative band direction produces one new exact null direction
+## 1. Block neutralization is exactly the new nullspace
 
-Take `w in W`. By definition `(1)`,
+The covariance from `NB-292` is
+
+\[
+LS_m=DL.
+\tag{15}
+\]
+
+Because `D` is invertible,
+
+\[
+\ker(L|_U)=S_mD_{n-1}.
+\tag{16}
+\]
+
+Surjectivity of the lower section therefore passes to `U`, and `(1)` follows from the isometry of `S_m`: realizing samples `x` in `U` is equivalent to realizing `D^{-1}x` in `V_(n-1)`.
+
+For `w in W`,
 
 \[
 LJw
 =Bw-LR_UBw
-=0,
+=0.
 \]
 
-so `Jw in D_(mn-1)`. Moreover `w` is orthogonal to all of `U`, while `R_UBw` belongs to the orthogonal complement of `ker(L|_U)` inside `U`. Hence
+Also `w perp U`, while `R_UBw` belongs to the orthogonal complement of `ker(L|_U)` inside `U`. Hence
 
 \[
-Jw\perp S_mD_{n-1}.
+Jw\perp S_mD_{n-1},
 \]
 
-Thus
+so `ran J subseteq Q_(m,n,Z)`.
 
-\[
-\operatorname{ran}J\subseteq Q_{m,n,Z}.
-\tag{18}
-\]
+The map is injective because `Jw=0` would put the same nonzero vector in the orthogonal spaces `W` and `U`.
 
-The map is injective: if `Jw=0`, then `w=R_UBw` lies simultaneously in `W` and `U`, so `w=0`.
-
-For surjectivity, take `q in Q_(m,n,Z)` and split it uniquely as
+For surjectivity, take `q in Q_(m,n,Z)` and write uniquely
 
 \[
 q=u+w,
@@ -359,32 +313,25 @@ q=u+w,
 u\in U,
 \qquad
 w\in W.
-\tag{19}
+\tag{17}
 \]
 
-Here the symbol in the middle is the same `u` appearing in `q=u+w`; equivalently, `(19)` means `q=u+w` with `u in U` and `w in W`. Since `Lq=0`,
+In words, `(17)` means `q=u+w` with the same variable `u` lying in `U` and `w` lying in `W`. Since `Lq=0`,
 
 \[
 Lu=-Bw.
-\tag{20}
+\tag{18}
 \]
 
-The condition `q perp S_mD_(n-1)` and `w perp U` imply
+The orthogonality `q perp S_mD_(n-1)` and `w perp U` imply that `u` is orthogonal to `ker(L|_U)`. Thus `u` is the unique minimum-norm vector in `U` with samples `-Bw`, namely
 
 \[
-u\perp\ker(L|_U).
-\tag{21}
+u=-R_UBw.
 \]
 
-Equivalently, `u` is orthogonal to `ker(L|_U)`. Among vectors of `U` with samples `-Bw`, the unique one orthogonal to the kernel is the minimum-norm repair `-R_UBw`. Thus
+Hence `q=Jw`, proving the bijection and `(4)`.
 
-\[
-q=w-R_UBw=Jw.
-\]
-
-This proves that `J` maps `W` bijectively onto `Q`, and `(3)` follows.
-
-Because the two terms in `Jw` belong to orthogonal spaces,
+For `w,t in W`, the `W` and `U` components are orthogonal, so
 
 \[
 \begin{aligned}
@@ -396,29 +343,28 @@ Because the two terms in `Jw` belong to orthogonal spaces,
 &=
 \langle w,t\rangle
 +
-\langle Bw,A^{-1}Bt\rangle.
+\langle Bw,A^{-1}Bt\rangle,
 \end{aligned}
-\tag{22}
 \]
 
-This is exactly `(4)`.
+because `R_U^*R_U=A^{-1}`. This proves `(5)`.
 
-One consequence sharpens the visible/null split of `NB-292`. If `w in W cap ker L`, then `Bw=0` and
+If `w in W cap ker L`, then `Bw=0` and therefore
 
 \[
 \boxed{Jw=w.}
-\tag{23}
+\tag{19}
 \]
 
-Thus the already-sample-null part of the quotient band embeds unchanged into the new kernel block. But it is also orthogonal to every old-section source in `U`. Such a direction, by itself, cannot lower the synthesis norm when passing from `U` to `V`. Target improvement appears only when a band direction has nonzero samples and its neutralization acquires the compensating old-section component `-R_UBw`.
+So the already-sample-null part of the band embeds unchanged into `Q`. But it remains orthogonal to every old-section source in `U`. Such a direction alone cannot lower the synthesis norm in the natural enrichment `U subset V`; target improvement appears only when a band direction has samples that must be cancelled by an old-section repair.
 
-This does **not** say that a sample-null band vector is globally irrelevant to every ordinary cutoff. It is a statement about the natural multiplicative enrichment `S_mV_(n-1) subset V_(mn-1)`. Relative to another, non-dilated starting section, the same vector can sit in a different part of the `NB-287` null-innovation filtration.
+This last statement is deliberately local to the multiplicative block. It does not say that a sample-null band vector is irrelevant to every ordinary cutoff; relative to another starting section it can occupy a different part of the `NB-287` null-innovation filtration.
 
 ---
 
-## 3. The null blocks satisfy the same multiplicative orthogonal geometry
+## 2. The null blocks inherit the semigroup cocycle
 
-The semigroup preserves first-free nullspaces by `(13)`. Therefore
+Equation `(15)` sends first-free-null vectors to first-free-null vectors. Hence
 
 \[
 S_{km}D_{n-1}
@@ -426,10 +372,9 @@ S_{km}D_{n-1}
 S_kD_{mn-1}
 \subseteq
 D_{kmn-1}.
-\tag{24}
 \]
 
-Split the orthogonal difference between the first and last spaces at the middle one:
+Splitting the orthogonal difference at the middle space gives
 
 \[
 \begin{aligned}
@@ -439,12 +384,11 @@ D_{kmn-1}\ominus S_{km}D_{n-1}
 &\quad\oplus
 \bigl(S_kD_{mn-1}\ominus S_{km}D_{n-1}\bigr).
 \end{aligned}
-\tag{25}
 \]
 
-The first term is `Q_(k,mn,Z)`. Since `S_k` is an isometry and `S_(km)=S_kS_m`, the second is `S_kQ_(m,n,Z)`. This proves `(5)`.
+The first summand is `Q_(k,mn,Z)` and the second is `S_kQ_(m,n,Z)`, proving `(6)`.
 
-Hence `NB-292` has two parallel multiplicative cocycles:
+Thus `NB-292` has parallel multiplicative structures:
 
 \[
 W_{km,n,Z}
@@ -460,47 +404,25 @@ Q_{km,n,Z}
 Q_{k,mn,Z}\oplus S_kQ_{m,n,Z}
 \]
 
-for the exact first-free-null freedom unlocked after those bands are neutralized against the old sample-surjective section.
-
-The passage `W -> Q` is not isometric in general. Equation `(4)` records exactly the extra norm paid by the old-section sample repair. This metric distortion is target-relevant and is absent from a purely scalar pivot description.
+for the exact null freedom unlocked after those bands are neutralized against the sample-surjective old section. The map `J` is generally not isometric; `(5)` records exactly the repair-induced metric distortion.
 
 ---
 
-## 4. Minimum-norm synthesis removes exactly the new null block
+## 3. Minimum-norm synthesis removes exactly the new null block
 
-Let
-
-\[
-g:=g_{m,n}(y)=R_Uy.
-\]
-
-It is feasible in `U`, hence also feasible in `V`, and satisfies
-
-\[
-g\perp S_mD_{n-1}
-\tag{26}
-\]
-
-by minimum-norm interpolation in `U`. Every feasible vector in `V` is in the affine space
+Let `g=R_Uy`. It is feasible in `U` and orthogonal to `S_mD_(n-1)`. Every feasible vector in `V` is in
 
 \[
 g+D_{mn-1}.
 \]
 
-Using `(3)` and `(26)`, minimizing its norm first kills the component in `S_mD_(n-1)` and then subtracts the orthogonal projection onto `Q`. Therefore
-
-\[
-h_{mn-1}(y)=g-P_Qg,
-\]
-
-proving `(6)`. Pythagoras gives
+Using `(4)`, the only new kernel component that can reduce its norm is `Q`. Orthogonal projection therefore gives `(7)`, and Pythagoras gives
 
 \[
 \|g\|^2-
 \|h_{mn-1}(y)\|^2
 =
 \|P_Qg\|^2.
-\tag{27}
 \]
 
 The two norms are
@@ -509,77 +431,49 @@ The two norms are
 \|g\|^2
 =y^*A^{-1}y
 =(D^{-1}y)^*K_{n-1}^{-1}(D^{-1}y)
-\tag{28}
 \]
 
 and
 
 \[
 \|h_{mn-1}(y)\|^2
-=y^*K_{mn-1}^{-1}y.
-\tag{29}
+=y^*K_{mn-1}^{-1}y,
 \]
 
-This proves `(7)`.
+which proves `(8)`.
 
-Because `J` is injective with range `Q`, its orthogonal projector is
+Since `J` is injective with range `Q`,
 
 \[
-P_Q
-=
-J(J^*J)^{-1}J^*.
-\tag{30}
+P_Q=J(J^*J)^{-1}J^*.
 \]
 
 For `g=R_Uy`, orthogonality of `U` and `W` gives
 
 \[
 J^*g
-=-B^*R_U^*R_Uy
 =-B^*A^{-1}y.
-\tag{31}
 \]
 
-Substituting `(4)` and `(31)` into `(30)` proves `(8)`.
-
-Since
+Together with `(5)`, this proves `(9)`. Since
 
 \[
 K_{mn-1}=A+\Gamma,
 \qquad
 \Gamma=BB^*,
-\tag{32}
 \]
 
-Woodbury gives the equivalent identity
+Woodbury also gives
 
 \[
 \Delta_{m,n,Z}(y)
 =y^*\bigl(A^{-1}-(A+\Gamma)^{-1}\bigr)y.
-\tag{33}
+\tag{20}
 \]
 
-Whitening by `A^(1/2)` yields `(9)`. If `M` has eigenpairs `(lambda_j,e_j)` and
+Whitening `(20)` gives `(10)` and `(11)`.
 
-\[
-x=\sum_jx_je_j,
-\]
-
-then
-
-\[
-\boxed{
-\Delta_{m,n,Z}(y)
-=
-\sum_j
-\frac{\lambda_j}{1+\lambda_j}|x_j|^2.
-}
-\tag{34}
-\]
-
-This is the exact target-alignment criterion for the band Gram. A large band can be irrelevant if its generalized eigenmodes miss the transformed datum.
-
-There is also an exact target cocycle. Define `Delta_(m,n,Z)(y)` by `(7)`. Since `D_Z(km)=D_Z(k)D_Z(m)`, inserting the intermediate dilated section `S_kV_(mn-1)` gives
+The target gain itself has an exact multiplicative chain rule. Define `Delta_(m,n,Z)(y)` by `(8)`. Since `D_Z(km)=D_Z(k)D_Z(m)`, inserting the intermediate space `S_kV_(mn-1)` yields
 
 \[
 \boxed{
@@ -589,25 +483,16 @@ There is also an exact target cocycle. Define `Delta_(m,n,Z)(y)` by `(7)`. Since
 +
 \Delta_{m,n,Z}\bigl(D_Z(k)^{-1}y\bigr).
 }
-\tag{35}
+\tag{21}
 \]
 
-The target transforms contravariantly along the inner factor. Therefore the matrix cocycle of `NB-292` cannot be turned into a fixed-datum scalar telescope without controlling this target transport.
+Thus target gains do telescope across multiplicative factorization, but the datum transforms contravariantly. Any fixed-datum coercivity claim must control that transport rather than silently dropping it.
 
 ---
 
-## 5. The normalized canonical dilation defect gives one explicit target certificate
+## 4. The canonical dilation defect supplies one explicit null direction
 
-Apply the neutralization map to the canonical defect `b=b_(m,n,Z)` of `NB-292`. Its samples are `d=d_(m,n,Z)`, so
-
-\[
-\widehat q
-=Jb
-=b-R_Ud
-\in Q.
-\]
-
-The two terms are orthogonal because `b in W` and `R_Ud in U`. Using `NB-292` and `(17)`,
+Apply `J` to the `NB-292` canonical defect `b=b_(m,n,Z)`. Its samples are `d=d_(m,n,Z)`, so `(12)` is immediate. Because `b in W` and `R_Ud in U`, the two terms are orthogonal. Hence
 
 \[
 \begin{aligned}
@@ -620,15 +505,15 @@ The two terms are orthogonal because `b in W` and `R_Ud in U`. Using `NB-292` an
 \end{aligned}
 \]
 
-which proves `(11)`.
+proving `(13)`.
 
 For the old minimum source `g=R_Uy`,
 
 \[
-\langle g,b\rangle=0
+\langle g,b\rangle=0,
 \]
 
-because `g in U` and `b in W`. Hence
+so
 
 \[
 |\langle g,\widehat q\rangle|
@@ -636,20 +521,12 @@ because `g in U` and `b in W`. Hence
 |\langle R_Uy,R_Ud\rangle|
 =
 |d^*A^{-1}y|.
-\tag{36}
+\tag{22}
 \]
 
-If `widehat q` is nonzero, normalize it and apply Bessel inside `Q`:
+Normalizing `widehat q` and applying Bessel inside `Q`, then using `(8)`, gives `(14)`.
 
-\[
-\|P_Qg\|^2
-\ge
-\frac{|\langle g,\widehat q\rangle|^2}{\|\widehat q\|^2}.
-\]
-
-Together with `(7)`, `(11)`, and `(36)`, this is exactly `(12)`.
-
-Now reconsider the `NB-292` orthogonal split
+This also clarifies the sample-null term from `NB-292`. There the canonical defect has the orthogonal split
 
 \[
 b=s+z,
@@ -657,32 +534,32 @@ b=s+z,
 z\in W\cap\ker L.
 \]
 
-The null component satisfies `Jz=z` by `(23)`, but
+By `(19)`, `Jz=z`, but because `g in U` and `z in W`,
 
 \[
-\langle g,z\rangle=0.
-\tag{37}
+\boxed{\langle g,z\rangle=0.}
+\tag{23}
 \]
 
-Thus, for the natural multiplicative enrichment from `S_mV_(n-1)` to `V_(mn-1)`, the sample-null piece of the canonical dilation loss is **target-silent at first order**: it is already orthogonal to the old feasible minimum source. The component capable of producing an immediate norm decrement is the sample-visible defect, because cancelling its samples tilts the null direction back into the old section.
+Therefore the already-sample-null part of the canonical dilation loss is target-silent for the direct multiplicative block enrichment. Immediate norm reduction comes from the sample-visible defect because neutralizing it creates an old-section component that can overlap the target source.
 
-This sharpens the post-`NB-292` fork. The visible/null split remains an exact source fact, but at a sample-surjective multiplicative block endpoint only the visible part can couple directly to the old minimum interpolant. A future argument based on the `z` term must therefore use a different cutoff geometry, not the direct block enrichment priced in `(7)`.
+This sharpens, but does not contradict, `NB-292`: its `z` component can still matter in a different cutoff geometry. What it cannot do is by itself certify the gain from `S_mV_(n-1)` to `V_(mn-1)`.
 
 ---
 
-## 6. Stress tests, prior art, and research disposition
+## 5. Stress tests, prior art, and research disposition
 
-The identities above still do not force a Nyman approximation rate. Even very large positive band Grams can miss the actual target. For the finite-dimensional control
+The theorem does **not** produce a Nyman approximation rate. A large positive band can still miss the target. For example,
 
 \[
 A=I_2,
 \qquad
 \Gamma=\operatorname{diag}(\varepsilon,T^2),
 \qquad
-y=e_1,
+y=e_1
 \]
 
-formula `(9)` gives
+gives from `(10)`
 
 \[
 \Delta
@@ -690,13 +567,13 @@ formula `(9)` gives
 \frac{\varepsilon}{1+\varepsilon}.
 \]
 
-This can be arbitrarily small while the trace is arbitrarily large; taking `T` sufficiently large can also make the determinant arbitrarily large. Thus positivity of `Gamma`, large band volume, or strong Gram growth is not a substitute for target spectral mass.
+This can be arbitrarily small while the trace is arbitrarily large; choosing `T` large enough can also make the determinant arbitrarily large. Positive matrix mass is therefore not a substitute for target spectral mass.
 
-The surjectivity hypothesis is essential to the clean statement. Before the lower section is onto, `A` is singular and a band can also enlarge the attainable sample range. Then the correct formulation requires Moore--Penrose inverses together with explicit range compatibility. This finding deliberately stays beyond the finite surjective cutoff already proved in `NB-282`, which is the regime relevant to the first-free finite-section excess of `NB-284`--`NB-287`.
+The lower-section surjectivity assumption is essential to the clean form. Before that cutoff, `A` is singular and adding a band can enlarge the attainable sample range. The correct statement then needs Moore--Penrose inverses and explicit range compatibility. This finding deliberately works in the post-`NB-282` regime used by the finite-section analysis of `NB-284`--`NB-287`.
 
-The generic Hilbert-space ingredients in `(1)`--`(9)` are standard minimum-norm interpolation, orthogonal-kernel projection, and block pseudoinverse/Woodbury algebra; no novelty is claimed for those abstract facts. A fresh prior-art search found the expected classical Nyman dilation-semigroup background in Bagchi, general Nyman Gram analysis in Ehm, and Carvill's recent multiplicative-ladder Gram decay and block-compressibility. The surfaced literature does not provide the line-local multiplicative null block `(2)`, its cocycle `(5)`, or the target projection/canonical-defect formulas `(7)` and `(12)`. No external theorem is load-bearing for the derivation, so `SOURCES.md` requires no change.
+The abstract ingredients are classical: minimum-norm interpolation, orthogonal projection onto a kernel, block pseudoinverse geometry, and Woodbury. No novelty is claimed for those generic identities. A fresh prior-art search found the expected dilation-semigroup background in Bagchi, Ehm's Nyman Gram analysis, and Carvill's recent multiplicative-ladder Gram decay and block-compressibility. The surfaced literature does not provide this line-local null block `Q_(m,n,Z)`, its cocycle `(6)`, or the target/canonical-defect conversions `(8)` and `(14)`. No external theorem is load-bearing, so `SOURCES.md` requires no change.
 
-The main research consequence is a sharper target than the raw positive cocycle from `NB-292`. In a moving packet `(Z_X,n_X,m_X)`, the exact multiplicative enrichment is controlled by either of the equivalent target-aware quantities
+The decisive moving-packet quantities after `NB-292` can now be stated without ambiguity. The exact multiplicative enrichment is measured by either
 
 \[
 \|P_{Q_{m_X,n_X,Z_X}}g_{m_X,n_X}(y_X)\|^2
@@ -708,19 +585,19 @@ or
 x_X^*M_X(I+M_X)^{-1}x_X.
 \]
 
-A source-native lower bound may be attacked through the explicit canonical direction `(12)`, namely the pairing
+A more source-specific sufficient route is the canonical pairing from `(14)`,
 
 \[
 |d_{m,n,Z}^*A^{-1}y|.
 \]
 
-If that pairing is small throughout the Ford regime, the new vector/matrix dilation structure can still remain target-silent despite being inaccessible to the scalar graft of `NB-291`. If it is quantitatively nonzero after paying the denominator in `(12)`, it gives an immediate certified first-free synthesis decrement across the corresponding multiplicative block.
+If that pairing stays small at Ford scales, the new vector/matrix dilation geometry can remain target-silent even though it is inaccessible to the scalar graft of `NB-291`. If it is quantitatively nonzero after paying the denominator in `(14)`, it gives an immediate certified first-free synthesis decrement.
 
-No local clue is resolved by this finding. In particular, `CLUE-visible-semigroup-defect-controls-section-enrichment` concerns the original residual and its actual Nyman-distance decrement; the present result prices the different first-free quotient interpolation problem. The structural analogy is useful, but identifying the two would conflate distinct target geometries.
+No local clue is resolved here. In particular, `CLUE-visible-semigroup-defect-controls-section-enrichment` concerns the original residual and its actual Nyman-distance decrement, whereas this finding prices the first-free quotient interpolation problem. Their structures are analogous but their targets are not interchangeable.
 
 ## Research disposition
 
-Keep. `NB-292` isolated the first source/sample vector coupling but left both its visible and sample-null charges without a target conversion. The present result supplies that conversion for the natural multiplicative quotient enrichment:
+Keep. `NB-292` isolated the first vector/matrix source-sample coupling but stopped before target conversion. `NB-293` supplies the exact conversion for the natural multiplicative quotient enrichment:
 
 \[
 \boxed{
@@ -734,4 +611,4 @@ Q_{m,n,Z},
 }
 \]
 
-The decisive next estimate is no longer a lower bound on `Gamma`, `1-c^2`, or the sample-null charge separately. It is a moving-packet bound on the target spectral mass in `(9)`, or more concretely on the canonical pairing in `(12)`, with the transported datum `D_Z(m)^(-1)y` and its conditioning paid explicitly.
+The next useful theorem must therefore control target spectral mass in `(10)`, or the canonical pairing in `(14)`, under the moving Ford packet. Another lower bound on `Gamma`, `1-c^2`, or the sample-null charge separately would still miss the target alignment that actually prices section enrichment.
