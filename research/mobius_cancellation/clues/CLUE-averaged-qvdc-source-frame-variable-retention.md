@@ -21,13 +21,14 @@ based_on:
   - research/mobius_cancellation/findings/MC-458-staged-factor-conditioning-exposes-residual-divisor-sum-kernel.md
   - research/mobius_cancellation/findings/MC-459-staged-residual-energy-is-controlled-by-the-normalized-shift.md
   - research/mobius_cancellation/findings/MC-460-one-sided-residual-conditioning-promotes-reduced-divisor-to-reciprocal-source-shift.md
+  - research/mobius_cancellation/findings/MC-461-residual-source-starts-decompose-into-bounded-anchor-slices.md
 ---
 
 # Can the staged factor-weighted source kernel beat the Möbius source-frame tariff?
 
 ## Observation
 
-The direct source-frame repairs are now tightly classified. `MC-446`--`MC-450` show that ambient box averaging, hidden CRT multiplicity, one-lcm Fourier/Weil control, near-complete intervals, and bare cross-lcm frequency synchronization do not pay the conductor-power occupancy tariff. `MC-451`--`MC-455` then show that fixed-lcm sieve signs, raw truncated Möbius, bounded factorable component counts, internal factor multiplicity, and source-only conductor splitting do not become exponent-saving resources merely by changing representation.
+The direct source-frame repairs are tightly classified. `MC-446`--`MC-450` show that ambient box averaging, hidden CRT multiplicity, one-lcm Fourier/Weil control, near-complete intervals, and bare cross-lcm frequency synchronization do not pay the conductor-power occupancy tariff. `MC-451`--`MC-455` then show that fixed-lcm sieve signs, raw truncated Möbius, bounded factorable component counts, internal factor multiplicity, and source-only conductor splitting do not become exponent-saving resources merely by changing representation.
 
 `MC-456` supplies the positive neighboring template: Pascadi/Yang-type dispersion succeeds when factor blocks occupy genuinely different arithmetic roles before positive closure and survive into reciprocal/Kloosterman phases. `MC-457` tests the most direct transfer into the present fixed-conductor frame and finds exact CRT tensorization: an internal factor retained only as an independent coprime residue modulus disappears from complete mixed blocks, leaving factor dependence only in incomplete tails.
 
@@ -51,13 +52,31 @@ After conditioning the shifted correlation on the `alpha`-block divisors `r,r'`,
 D_s=\delta s_0^{-1}\pmod q,
 \]
 
-while the second residual amplitude remains unexpanded on `C_s+r_1s_0j`. Moreover
+while the second residual amplitude remains unexpanded on `C_s+r_1s_0j`, with
 
 \[
 C_s\equiv r_1s_0(U_s-D_s)\pmod q.
 \]
 
-Thus a surviving factor variable has finally entered the **oscillatory source coordinate itself**, reciprocally, and the remaining amplitude is aligned modulo `q` with the conjugate-character leg. This is the factor-specific dependence that was absent from the product/lcm and independent-residue orderings.
+Thus a surviving factor variable enters the oscillatory source coordinate itself and the remaining amplitude is aligned with the conjugate-character leg.
+
+`MC-461` now removes the main dimensional ambiguity in that source map. In a fixed gcd sector set `h_0=d h_1`, `g_0=(h_1,t)`, and `t_0=t/g_0`. The congruence defining `m_s` implies
+
+\[
+m_s=m_{s'}\pmod t
+\quad\Longleftrightarrow\quad
+s_0=s'_0\pmod{t_0}.
+\]
+
+Hence `U_s=m_st^{-1}` occupies at most `phi(t_0)` anchor slices, rather than an automatically conductor-sized independent start coordinate. For prime conductor `p`, each fixed anchor has the exact complete-shift second moment
+
+\[
+\sum_{D\bmod p}
+\left|\sum_{j\in J}\chi(j+U)\overline{\chi(j+U-D)}\right|^2
+\le p|J|.
+\]
+
+Consequently a bare source-frame aggregate supported on `R_U` anchors has the slice-Cauchy tariff `R_U p/H`, and the full `p^2/H` ambient tariff reappears only if anchor diversity itself reaches conductor scale. The variable `U_s` therefore does **not** by itself kill the staged route. What remains unresolved is whether the actual residual weights populate enough reciprocal shifts per anchor and whether the unexpanded aligned `B_beta` amplitude can survive the same dispersion step.
 
 ## Research question
 
@@ -72,35 +91,41 @@ Can the one-sided staged family isolated by `MC-460`, schematically
 
 be estimated before the second residual expansion and before componentwise positive closure with a strict conductor-power gain that survives off-diagonal dispersion/completion, outer-factor multiplicity, exceptional source ranges, and later source-depth bookkeeping?
 
-The diagonal side is closed by `MC-459`, and the factor-specific-oscillation existence question is closed by `MC-460`. The live issue is now sharply quantitative: does the coupled parameter map `s -> (U_s,D_s,C_s,r_1s_0)` have enough one-dimensional or low-complexity structure to beat the quadratic source-frame occupancy threshold of `MC-446`, or does the varying start `U_s` restore the same effective two-parameter tariff despite the reciprocal shift and alignment?
+The source-pair multiplicity question is now partly resolved by `MC-461`: in a fixed gcd sector the starts factor through `s_0 mod t_0`, so the decisive quantity is no longer ambient two-dimensional occupancy but **effective reciprocal-shift occupancy inside each represented anchor fibre**. Does the actual well-factorable residual-divisor range supply more than `p/H` effective `D_s` values per anchor often enough to gain, and can that gain be retained when the aligned amplitude `B_beta(C_s+r_1s_0j)` and variable lengths `J_s` are kept rather than majorized away?
 
 A second branch remains legitimate but separate: source-only conductor reduction could still win without factor-specific staging if the reduced-conductor estimate beats the full product-level occupancy cost after every later summation.
 
 ## Why it may matter
 
-The earlier structural ambiguity in the factor-specific branch is gone. `MC-458` gives an exact pre-positive carrier, `MC-459` removes positive-energy inflation as the immediate obstruction, and `MC-460` proves that one-sided conditioning can promote a residual factor from amplitude-only dependence into a reciprocal translated-character shift before product collapse.
+The earlier structural ambiguity in the factor-specific branch is gone. `MC-458` gives an exact pre-positive carrier, `MC-459` removes positive-energy inflation as the immediate obstruction, `MC-460` promotes a residual factor into a reciprocal translated-character shift, and `MC-461` proves that the accompanying start variation is arithmetically compressed rather than automatically free.
 
-This is the first point in the branch where the surviving factor enters the same kind of oscillatory coordinate that powers successful neighboring dispersion arguments. But the gain is not automatic: `U_s` varies with the same residual divisor, and the raw source coordinate before thinning still has a fixed shift. A valid estimate must exploit the exact coupling rather than count reciprocal shifts as independent new source samples.
-
-A positive result would identify the first factorable mechanism in this branch that actually alters the analytic conductor budget. A negative result proving that the map `s -> (U_s,D_s)` has full two-parameter occupancy, or that every usable completion first destroys the `MC-460` alignment, would close the most plausible remaining well-factorable escape without claiming factorability is useless in other arithmetic geometries.
+This puts the branch at a genuinely quantitative threshold. A favourable range with small `phi(t_0)` and many reciprocal shifts per anchor could lower the source-frame cost before product collapse. An unfavourable theorem showing that the actual factorable coefficients never supply the required `p/H` effective fibre occupancy, or that preserving the second residual amplitude necessarily destroys fixed-anchor orthogonality, would close the most plausible remaining well-factorable escape.
 
 ## Decisive test
 
 Take a balanced well-factorable component `lambda=alpha*beta` in the source form underlying `MC-409`/`MC-413`. Keep the `MC-458` staging, condition on exactly one complementary divisor as in `MC-460`, and preserve the second `B_\beta` block through the first nontrivial Cauchy/dispersion/completion step.
 
-Do not expand the second residual block before that step. Do not replace it by a pointwise divisor-function majorant except when using `MC-459` solely to certify that the positive diagonal is affordable. Track the exact source parameters
+For each fixed outer pair and gcd sector, write
 
 \[
-D_s=\delta s_0^{-1},
+t_0=\frac{t}{(h_1,t)},
 \qquad
-C_s\equiv r_1s_0(U_s-D_s)\pmod q,
+U_s\text{ determined by }s_0\pmod{t_0},
+\qquad
+D_s=\delta s_0^{-1}\pmod p.
 \]
 
-and determine the true multiplicity/energy of the induced family of pairs `(U_s,D_s)` after the congruence defining `m_s` is imposed.
+Group the residual divisors by their exact anchor class before applying positivity. Compute the effective weighted occupancy of reciprocal shifts inside each `U` fibre, including collisions modulo `p`, the actual `beta_s` magnitudes, and the admissible `s_0` range. The bare source-frame gate from `MC-461` is crossed only when the fibre participation ratio is larger than `p/H` after the relevant common-length or legitimate variable-length reduction.
 
-The next quantitative gate is passed only if that structure yields a strict conductor-power gain over the `MC-446` source-frame tariff after all off-diagonal completion terms are charged. A bound that merely averages over all possible `(U,D)` pairs, expands the surviving divisor sum first, or uses the reciprocal shape without controlling `U_s` has not used the new structure.
+Then repeat the estimate **with the second residual amplitude still present**. Use the alignment
 
-Then propagate the strongest justified estimate through the `MC-415` diagonal and `MC-448` occupancy budget. The branch survives only if the final estimate remains a strict conductor-power improvement after outer `(r,r')` summation, residual-`s` multiplicity, shift dependence, exceptional terms, and source depth are all charged.
+\[
+C_s\equiv r_1s_0(U_s-D_s)\pmod p
+\]
+
+rather than replacing `B_\beta(C_s+r_1s_0j)` by an unrelated pointwise norm. The next substantive gate is passed only if a weighted fixed-anchor dispersion or completion estimate retains a strict conductor-power gain after the amplitude, variable lengths, gcd sectors, outer `(r,r')` summation, exceptional terms, and `MC-415`/`MC-448` source-depth bookkeeping are all charged.
+
+A bound that averages over the full `(U,D)` box, expands the surviving divisor sum first, or proves only the bare `MC-461` slice moment without controlling the aligned amplitude has not passed this gate.
 
 For the independent source-only branch, propagate the best admissible reduced-conductor estimate through the existing product-level summation and require an actual net conductor-power gain; an improved individual character sum consumed by occupancy does not qualify.
 
@@ -108,12 +133,12 @@ For the independent source-only branch, propagate the best admissible reduced-co
 
 `MC-456` is a literature-backed transfer classification, not a theorem about the Möbius kernel. Reciprocal/Kloosterman and bilinear character-sum methods in the neighboring literature show that reciprocal factor variables can be analytically meaningful, but they do not estimate the coupled family derived here.
 
-`MC-457` exactly closes full completion of an independent coprime factor-residue mask. `MC-458` exactly constructs the staged carrier. `MC-459` proves that its positive diagonal is affordable. `MC-460` exactly derives the reciprocal source shift and the modular alignment of the surviving amplitude, but proves no large-sieve, bilinear, trace-function, or conductor-saving estimate for that family.
+`MC-457` exactly closes full completion of an independent coprime factor-residue mask. `MC-458` exactly constructs the staged carrier. `MC-459` proves that its positive diagonal is affordable. `MC-460` exactly derives the reciprocal source shift and modular alignment of the surviving amplitude. `MC-461` exactly classifies the start fibres and the bare prime-conductor fixed-anchor shift moment.
 
-In particular, `MC-460` does not justify replacing the two-dimensional source-frame threshold by a one-dimensional one: the shift `D_s` is reciprocal, but the start `U_s` also varies. None of these findings proves an improvement to Möbius cancellation, so the substantive analytic question remains open and the clue stays `accepted`.
+None of these findings controls the full weighted family with `B_beta(C_s+r_1s_0j)` intact, proves that enough effective reciprocal shifts occur in the actual well-factorable range, or propagates a gain to the final Möbius source budget. The clue therefore remains `accepted`.
 
 ## Research disposition
 
-The clue remains `accepted` and is **materially narrowed through `MC-460`**. The live well-factorable branch is no longer “find some factor-specific source dependence”: that dependence now exists exactly. The target is to classify and estimate the concrete one-sided family produced by `s -> (U_s,D_s,C_s,r_1s_0)`, with special attention to whether the congruence alignment reduces effective source-frame occupancy or whether variable starts restore the old tariff.
+The clue remains `accepted` and is **materially narrowed through `MC-461`**. The question “does variable `U_s` automatically restore a two-dimensional conductor box?” is closed negatively: in each gcd sector `U_s` factors through `s_0 mod t_0`, and prime-conductor shift averaging has only a `p/H` tariff per represented anchor.
 
-Generic internal-factor multiplicity, bounded component splitting, source-only q-vdC after product collapse, complete factor-residue completion, a supposed polynomial progression-energy penalty, and the absence of factor-specific source oscillation are now closed or neutralized by `MC-454`--`MC-460`. The independent source-only conductor-reduction branch remains open only as a separate quantitative question.
+The live well-factorable branch is now the weighted fibre problem: determine the actual effective `D_s` occupancy inside those anchor classes and carry the aligned unexpanded residual amplitude through the first oscillatory estimate. Generic internal-factor multiplicity, bounded component splitting, source-only q-vdC after product collapse, complete factor-residue completion, polynomial progression-energy inflation, absence of factor-specific source oscillation, and automatically free two-dimensional start/shift variation are now closed or neutralized by `MC-454`--`MC-461`. The independent source-only conductor-reduction branch remains open only as a separate quantitative question.
