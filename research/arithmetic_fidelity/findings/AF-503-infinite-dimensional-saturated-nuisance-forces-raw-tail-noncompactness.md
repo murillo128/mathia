@@ -147,7 +147,19 @@ x+\delta\overline B_V(0,1)
 \subset E^0_{T,R}(C,s).}
 \]
 
-For an infinite-dimensional normed space, the Hausdorff measure of noncompactness of a closed ball of radius `delta` is exactly `delta`. Translation does not change the measure, and viewing the closed subspace `V` inside `Y` does not reduce this value. Thus
+For an infinite-dimensional normed space, the Hausdorff measure of noncompactness of a closed radius-`delta` ball is `delta`. The same value holds when that ball is viewed inside the ambient space `Y`, even though finite covering centers are then allowed outside `V`. Indeed, suppose finitely many ambient centers `y_1,...,y_N` with radii strictly below `delta` covered `delta\overline B_V`. Let `F=span{y_1,...,y_N}`. Since `F` is finite-dimensional while `V` is infinite-dimensional, the classical dimension-gap lemma gives a nonzero `v in V` with
+
+\[
+\operatorname{dist}_Y(v,F)=\|v\|_Y.
+\]
+
+After scaling to `\|v\|=delta`, this point has distance at least `delta` from every covering center, a contradiction. Thus
+
+\[
+\chi_Y(\delta\overline B_V)=\delta.
+\]
+
+Translation does not change the measure, so
 
 \[
 \chi_Y(E^0_{T,R})
@@ -266,10 +278,11 @@ with infinite-dimensional `V`, one has `lambda=0`. At integer times, the raw rad
 
 ## Prior-art and novelty audit
 
-No broad novelty is claimed for saturated quotient sets, infinite-dimensional noncompact balls, or Hausdorff measures of noncompactness.
+No broad novelty is claimed for saturated quotient sets, infinite-dimensional noncompact balls, subspace-gap lemmas, or Hausdorff measures of noncompactness.
 
 - R. R. Akhmerov, M. I. Kamenskii, A. S. Potapov, A. E. Rodkina, and B. N. Sadovskii, *Measures of Noncompactness and Condensing Operators*, Operator Theory: Advances and Applications 55, Birkhauser (1992), DOI `10.1007/978-3-0348-5727-7`. Role: classical Hausdorff-measure-of-noncompactness machinery, including translation invariance, homogeneity, and the infinite-dimensional ball calculation used in the proof.
 - Tomasz Zajac, **“The Concept of Measures of Noncompactness in Banach Spaces,”** *Symmetry* 17(8), 1248 (2025), DOI `10.3390/sym17081248`. Role: modern survey explicitly recording that in an infinite-dimensional Banach space the Hausdorff measure of noncompactness of a radius-`r` ball is `r`, while it vanishes in finite dimension.
+- Silas Luliro Kito and Gerald Wanjala, **“Stability Theory for Nullity and Deficiency of Linear Relations,”** *Abstract and Applied Analysis* 2021, 5517215, DOI `10.1155/2021/5517215`, §4. Role: records the classical gap lemma that if `dim M>dim N` then some nonzero `x in M` satisfies `dist(x,N)=||x||`; this ensures allowing ambient covering centers does not lower the nuisance-ball Hausdorff measure.
 - Robert E. Megginson, *An Introduction to Banach Space Theory*, Graduate Texts in Mathematics 183, Springer (1998), DOI `10.1007/978-1-4612-0603-3`. Role: standard closed-subspace and Banach-quotient background used for the nuisance interpretation.
 
 The literature audit supports the ingredients as classical. The durable Arithmetic Fidelity result is the line-specific composition: **source saturation converts every interior translated residual into a full nuisance ball, so an infinite-dimensional nuisance direction imposes the exact lower floor `R-lambda` on both raw tail noncompactness and every positive-width quotient-tube profile.** This closes the proposed route of lifting quotient compactness through a fully saturated infinite-dimensional source by a uniform near-fiber compactness argument.
