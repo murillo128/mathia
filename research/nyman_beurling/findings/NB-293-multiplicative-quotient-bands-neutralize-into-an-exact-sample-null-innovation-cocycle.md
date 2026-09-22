@@ -357,12 +357,12 @@ For surjectivity, take `q in Q_(m,n,Z)` and split it uniquely as
 q=u+w,
 \qquad
 u\in U,
-\quad
+\qquad
 w\in W.
 \tag{19}
 \]
 
-Since `Lq=0`,
+Here the symbol in the middle is the same `u` appearing in `q=u+w`; equivalently, `(19)` means `q=u+w` with `u in U` and `w in W`. Since `Lq=0`,
 
 \[
 Lu=-Bw.
@@ -376,7 +376,7 @@ u\perp\ker(L|_U).
 \tag{21}
 \]
 
-Among vectors of `U` with samples `-Bw`, the unique one orthogonal to the kernel is the minimum-norm repair `-R_UBw`. Thus
+Equivalently, `u` is orthogonal to `ker(L|_U)`. Among vectors of `U` with samples `-Bw`, the unique one orthogonal to the kernel is the minimum-norm repair `-R_UBw`. Thus
 
 \[
 q=w-R_UBw=Jw.
