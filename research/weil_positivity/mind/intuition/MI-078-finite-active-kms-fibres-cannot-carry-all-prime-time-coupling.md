@@ -1,0 +1,13 @@
+# MI-078 — Finite active KMS fibres cannot carry all-prime time coupling
+
+**Evidence level:** supported by the Bost--Connes phase and active-fibre analysis in [WP-419](../../findings/WP-419-arbitrary-bost-connes-phase-coefficients-are-haar-universal-and-finitely-programmable.md), [WP-420](../../findings/WP-420-decoupled-active-kms-fibres-cannot-mix-bost-connes-time-degrees.md), and [WP-421](../../findings/WP-421-finite-active-fibres-can-mix-only-finitely-many-bost-connes-prime-directions.md).
+
+WP-419 shows that allowing arbitrary phase coefficients at one Bost--Connes ratio does not create arithmetic rigidity. After the critical KMS normalization, their Gram law is ordinary Haar `L^2` on `Zhat`; unrestricted continuous coefficients can program any prescribed finite correlation matrix. Distinct source ratios remain KMS-orthogonal. Thus coefficient freedom by itself supplies expressivity, not a source-derived finite--archimedean relation.
+
+WP-420 closes the most direct finite auxiliary repair when the active fibre is decoupled. Separate invariance prevents the auxiliary dynamics from compensating a mismatch of source time degrees, and product readouts reduce to Schur-type combinations of already separated source sectors. Frequency labels cannot simply be attached externally to make forbidden Bost--Connes degrees interfere.
+
+WP-421 shows that even allowing a jointly invariant state does not make a fixed finite-dimensional autonomous fibre universal. Its Bohr difference spectrum is finite. A nonzero mixed source Gram coefficient can therefore connect only source degree differences lying in that finite set, which reaches only finitely many ordinary prime-valuation directions. A fixed finite active fibre cannot encode a uniform coupling across the unbounded family of prime time degrees.
+
+The surviving design principle is that an all-prime finite--archimedean bridge needs spectral capacity that grows with, or is forced by, the arithmetic source. Candidates must therefore involve an infinite/source-indexed active spectrum, genuinely interacting joint dynamics that change the degree bookkeeping, or a representation outside the finite autonomous tensor-fibre framework. Merely enlarging a fixed programmable coefficient space does not address the missing source law.
+
+**Boundary.** The obstruction is to finite-dimensional autonomous active fibres under the stated invariant-state framework. It does not rule out infinite-dimensional fibres, source-dependent spectra, non-autonomous/interacting dynamics, or other couplings whose invariance law is not the one analyzed in WP-420--WP-421.
