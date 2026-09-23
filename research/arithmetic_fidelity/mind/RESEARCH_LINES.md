@@ -18,15 +18,25 @@ while
 
 More precisely the zeroth, first and second normalized moment participations all acquire the same vanishing factor `C_A^(-1-t)(1+o(1))`, so the exact AF-521 curvature quotient cancels that common factor. A finite set of boundary scales, or even the complete leading relative-curvature profile on the shrinking layer `1<s<=1+1/A`, therefore still does not recover prime provenance.
 
-AF-524 now resolves the first leading-order re-entry beyond that blind layer for the same transport. At
+AF-524 resolves the first leading-order re-entry beyond that blind layer for the same transport. At
 
 `t_A=exp(-alpha C_A log log A)`, `alpha>0` fixed,
 
 one still has source extinction, with `C_A Q_A(1+t_A)/P(1+t_A)->1+1/alpha`, and the first two logarithmic-moment participations remain tail-dominated, `C_A M_j^Q/M_j^P->1` for `j=1,2`. The retained prefix has, however, re-entered the zeroth moment at leading order, and the relative curvature converges to `alpha/(1+alpha)`. Thus leading curvature becomes informative precisely when the visible moment layers stop sharing one common participation factor. The crossover variable is `log(1/t)/(C_A log log A)`, not the geometric boundary `t~1/A`.
 
-The live question has therefore moved again. Inside the AF-523 blind region, determine whether a source-derived lower-order curvature term, a finite asymptotic jet, or another intrinsic observable breaks the common-factor degeneracy; alternatively prove that a broader class of such refinements can still be matched by positive source transports. Outside that region, classify how generally the AF-524 moment-balance crossover persists beyond this tuned anchored family. A useful theorem must identify which moment layer de-locks first and why, rather than crediting scale change alone.
+AF-525 now resolves the first lower-order question *inside* the AF-523 blind layer, but only for this rigid control family. If `D_A(t)` denotes the normalized first anchor-defect scale extracted in AF-525, then uniformly for `0<t<=1/A`,
 
-The adversarial boundary remains sharp. AF-523 is a moving-family, shrinking-window leading-order obstruction, while AF-524 is a fixed-`alpha` leading-curvature calculation for the same positive simple-source transport. Neither is equality of complete curvature profiles for two fixed sources, and AF-524 does not give a uniform transition law for arbitrary source classes or lower-order asymptotics. The exact full-profile inversion of AF-509--AF-510 therefore remains intact. Any claimed robust prime discriminator must state which scale range, asymptotic order or extra observable escapes the common-factor collapse rather than conflating exact recoverability with stable provenance.
+`(1-kappa_Q_A(1+t)/kappa_P(1+t))/D_A(t)->1`,
+
+with
+
+`D_A(t) ~ C_A log log A / log(1/t)`.
+
+Thus the leading quotient is blind while its first nonzero correction remembers the transport parameter `C_A`; equivalently that correction asymptotically recovers `C_A` after the known boundary normalization. This is genuine lower-order provenance for the *chosen anchored family*, but it is not prime-source identification: `C_A` describes how that control was constructed, and AF-525 does not show that another positive source family cannot reproduce the same jet.
+
+The live question is therefore no longer simply whether a lower-order curvature term can break the common-factor degeneracy. It can in the AF-523 family. The sharper question is whether a finite intrinsic curvature jet, or another source-derived correction, is **source-specific beyond the chosen transport family**, or whether broader positive source transports can match those corrections while remaining provenance-distinct. Outside the blind region, one should likewise classify how generally the AF-524 moment-balance crossover persists and which moment layer de-locks first.
+
+The adversarial boundary remains sharp. AF-523 is a moving-family, shrinking-window leading-order obstruction; AF-524 is a fixed-`alpha` leading-curvature calculation for the same transport; AF-525 is a uniform first-correction theorem for that same rigid family. None is equality of complete curvature profiles for two fixed sources, and AF-525 does not provide a universal lower-order prime discriminator. The exact full-profile inversion of AF-509--AF-510 therefore remains intact. Any claimed robust discriminator must state the source class, scale range and asymptotic order at which its information survives matched positive controls.
 
 ## Classify quotient-visible contact through admission and no-contact accessibility rates
 
