@@ -1,7 +1,7 @@
 ---
 id: CLUE-farey-signed-horizontal-perron-collar-cancellation
 type: research-clue
-status: proposed
+status: accepted
 origin: mind
 target_line: farey_discrepancy
 based_on:
@@ -38,3 +38,9 @@ A positive result must exhibit a power saving beyond the `Nx` absolute-collar sc
 ## Evidence boundary
 
 `FD-281` and `FD-282` are certificate obstructions, not lower bounds for the true Perron remainder. No signed horizontal cancellation estimate, integrated lower bound, smoothing theorem or RH consequence is established here. The clue concerns the present hard-contour/grouped-repair architecture only; a smooth Mellin cutoff, modified Perron formula or different repair map may have a different collar law.
+
+## Research disposition
+
+Accepted. `FD-283` shows that on every strict right subcollar `1+eta/log(2Nx) <= sigma <= c`, preserving signs through the `sigma` integral does not itself produce a new oscillatory mechanism. After exact physical grouping and the absolutely convergent expansion of `1/zeta(s)`, the `sigma` integration is a positive radial weight multiplying the Möbius Mellin character `exp(iT log(Nu/n))`, while the conjugate edge pair merely extracts one sine quadrature.
+
+The unresolved question is therefore narrower: can this coefficient-space Mellin cancellation, or cancellation between the strict right collar and the portion with `Re(s) <= 1+eta/log(2Nx)`, beat `N^theta x^(2-beta)` at cluster-prunable `T`? No such power saving is established. The clue remains worth pursuing because the exact reduction preserves both a genuinely signed Möbius channel and a cross-collar channel, while ruling out a separate `sigma`-phase explanation.
