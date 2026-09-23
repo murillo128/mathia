@@ -173,7 +173,7 @@ Its estimates are uniform on \(K\Subset(0,1)\). Indeed,
 \tag{9}
 \]
 
-uniformly, and therefore
+uniformly, and hence
 
 \[
 \log\log B_A(\theta)=H_A+\log\theta+o(1)
@@ -205,7 +205,7 @@ The co-tuning also satisfies
 \tag{12}
 \]
 
-uniformly on \(K\): the factor \(\log\theta\) stays bounded and the nearest-integer error remains exponentially smaller than \(H_A^{-1}\). Consequently the multiplier term in AF-529's exact derivative identity is still \(o(L_A/H_A)\) uniformly. Thus
+uniformly on \(K\): \(\log\theta\) stays bounded and the nearest-integer error remains exponentially smaller than \(H_A^{-1}\). Consequently the multiplier term in AF-529's exact derivative identity is still \(o(L_A/H_A)\) uniformly. Thus
 
 \[
 \boxed{
@@ -225,18 +225,11 @@ Subtracting the expansions for \(\theta\) and \(\eta\) gives
 
 \[
 \frac{F_{A,\theta}(u)-F_{A,\eta}(u)}{\delta_A}
-=
-u(\eta-\theta)+r_A(\theta,\eta,u),
+= u(\eta-\theta)+r_A(\theta,\eta,u),
 \tag{14}
 \]
 
-where here the first symbol on the right is the profile variable \(u\), so equivalently the leading term is simply
-
-\[
-u(\eta-\theta)=u(\eta-\theta),
-\]
-
-and
+with
 
 \[
 \sup_{\theta,\eta\in K}\sup_{u\in[0,1]}|r_A(\theta,\eta,u)|\to0.
@@ -292,13 +285,7 @@ For \(\theta_0,\theta_1\in K\), if
 
 the midpoint \((F_{A,\theta_0}+F_{A,\theta_1})/2\) is an admissible datum for both parameters. Every decoder therefore incurs worst-case error at least \(|\theta_0-\theta_1|/2\) on that datum.
 
-If \(0<c<\infty\), choose any
-
-\[
-0<d<\min(2c,D)
-\]
-
-and parameters in \(K\) separated by \(d\). Equation (2) gives
+If \(0<c<\infty\), choose any \(0<d<\min(2c,D)\) and parameters in \(K\) separated by \(d\). Equation (2) gives
 
 \[
 \|F_{A,\theta_0}-F_{A,\theta_1}\|_\infty
@@ -312,7 +299,7 @@ for large \(A\), so
 \liminf_A\mathcal R_A(\varepsilon_A)\ge d/2.
 \]
 
-Letting \(d\uparrow\min(2c,D)\) yields the lower half of (5). For \(c=0\), (17) gives zero risk asymptotically. For \(c=\infty\), take any \(d<D\), use (19) for large \(A\), and let \(d\uparrow D\). This proves (5).
+Letting \(d\uparrow\min(2c,D)\) gives the lower half of (5). For \(c=0\), (17) gives zero risk asymptotically. For \(c=\infty\), take any \(d<D\), use (19) for large \(A\), and let \(d\uparrow D\). This proves (5).
 
 If \(\varepsilon_A=o(\delta_A)\), equation (17) gives uniform consistency. Conversely, if \(\varepsilon_A/\delta_A\not\to0\), a subsequence has \(\varepsilon_A/\delta_A\ge c_0>0\), and the same overlap argument gives a fixed positive minimax error on that subsequence. This proves (6).
 
