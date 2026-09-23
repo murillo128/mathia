@@ -18,9 +18,15 @@ while
 
 More precisely the zeroth, first and second normalized moment participations all acquire the same vanishing factor `C_A^(-1-t)(1+o(1))`, so the exact AF-521 curvature quotient cancels that common factor. A finite set of boundary scales, or even the complete leading relative-curvature profile on the shrinking layer `1<s<=1+1/A`, therefore still does not recover prime provenance.
 
-The live question has moved beyond “add more nearby curvature samples.” One must identify information that breaks the common asymptotic dilation factor: scales `t>>1/A` where the retained anchor re-enters, lower-order curvature asymptotics that survive after the leading ratio cancels, or a richer observable whose visible layers do not share the same participation factor. Within those alternatives, the source category still has to determine which normalized moment profiles are actually realizable; arbitrary signed/complex sources, inward transports and arbitrary prescribed moment tuples are not consequences of AF-522--AF-523.
+AF-524 now resolves the first leading-order re-entry beyond that blind layer for the same transport. At
 
-The adversarial boundary remains sharp. AF-523 is a moving-family, shrinking-window leading-order obstruction, not equality of complete curvature profiles for two fixed sources. The exact full-profile inversion of AF-509--AF-510 therefore remains intact. Any claimed robust prime discriminator must state which scale range, asymptotic order or extra observable escapes the AF-523 gauge-like collapse rather than conflating exact recoverability with stable provenance.
+`t_A=exp(-alpha C_A log log A)`, `alpha>0` fixed,
+
+one still has source extinction, with `C_A Q_A(1+t_A)/P(1+t_A)->1+1/alpha`, and the first two logarithmic-moment participations remain tail-dominated, `C_A M_j^Q/M_j^P->1` for `j=1,2`. The retained prefix has, however, re-entered the zeroth moment at leading order, and the relative curvature converges to `alpha/(1+alpha)`. Thus leading curvature becomes informative precisely when the visible moment layers stop sharing one common participation factor. The crossover variable is `log(1/t)/(C_A log log A)`, not the geometric boundary `t~1/A`.
+
+The live question has therefore moved again. Inside the AF-523 blind region, determine whether a source-derived lower-order curvature term, a finite asymptotic jet, or another intrinsic observable breaks the common-factor degeneracy; alternatively prove that a broader class of such refinements can still be matched by positive source transports. Outside that region, classify how generally the AF-524 moment-balance crossover persists beyond this tuned anchored family. A useful theorem must identify which moment layer de-locks first and why, rather than crediting scale change alone.
+
+The adversarial boundary remains sharp. AF-523 is a moving-family, shrinking-window leading-order obstruction, while AF-524 is a fixed-`alpha` leading-curvature calculation for the same positive simple-source transport. Neither is equality of complete curvature profiles for two fixed sources, and AF-524 does not give a uniform transition law for arbitrary source classes or lower-order asymptotics. The exact full-profile inversion of AF-509--AF-510 therefore remains intact. Any claimed robust prime discriminator must state which scale range, asymptotic order or extra observable escapes the common-factor collapse rather than conflating exact recoverability with stable provenance.
 
 ## Classify quotient-visible contact through admission and no-contact accessibility rates
 

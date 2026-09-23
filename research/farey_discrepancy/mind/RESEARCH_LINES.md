@@ -8,12 +8,24 @@ FD-255--FD-264 separate the signed exact-omission threshold from the physical no
 
 The live deterministic source question remains a theorem on **one-sided or `l^1` within-band repair variation** under the exact replication kernel, or a genuinely different switched-only repair whose intermediate motion changes the source demand. Any such theorem must be proved for the physical nonnegative geometry rather than inferred from signed telescoping.
 
-## Prove remainder-good zero-gap occupation at an arbitrarily small fixed inverse-polylog scale
+## Prove near-linear remainder-good zero-gap occupation at a fixed inverse-polylog scale
 
 FD-282--FD-287 show that the grouped strict-right Perron collar retains a prime witness unless an order-`L` near-one `zeta'/zeta` phase event occurs. FD-288--FD-289 make those events sparse uniformly in translated polynomial windows, and FD-290 shows phase-good and zero-safe cluster-complete heights coexist. FD-291 then uses the exact constancy of the complete hard complementary remainder on each zero gap: a remainder-good gap can be trimmed internally by reciprocal-log collars and stays remainder-good throughout its safe core.
 
-FD-292 removes the apparent `L^{-2}` frontier from the phase side. Applying the same Montgomery--Vaughan mean-square theorem to fixed powers of the strict-right logarithmic derivative gives, for every fixed moment order `m`, phase-bad proportion `O_m(L^{-2m})` on polynomial windows. Equivalently, for every prescribed fixed `P>0`, the phase-bad measure is `O_P(H/L^P)`. No uniformity in a growing `P` is claimed.
+FD-292 removes any distinguished inverse-polylog exponent from the phase side. Applying the same Montgomery--Vaughan mean-square theorem to fixed powers of the strict-right logarithmic derivative gives, for every prescribed fixed `P>0`, phase-bad measure `O_P(H/L^P)` on polynomial windows. It is therefore enough, in principle, to prove reciprocal-log-safe occupation `Omega_B(J)>=delta_P H/L^P` for the **complete physical hard remainder** at one convenient fixed `P`.
 
-Consequently the surviving sufficient condition is no longer a particular quadratic-log occupation threshold. For any fixed `P>0`, it is enough to prove that reciprocal-log-safe cores of gaps on which the **complete physical hard remainder** is below the required budget occupy at least `delta_P H/L^P`; choosing a fixed `m>P/2` then makes the phase obstruction negligible relative to that occupation. The live gate is therefore a good-gap occupation theorem at some fixed inverse-polylog scale, however small, or a genuine cross-collar/remainder cancellation mechanism that bypasses gap occupation entirely.
+FD-293 shows that this apparently weak measure target has a strong population cost under RH. The classical RH zero-gap cap
 
-This sharpening is one-sided. FD-292 does not prove that even one remainder-good gap exists, does not make the moment constants uniform in `P`, and does not transfer the gapwise constancy to individual contour pieces or smoothed truncations. Any attempt to replace the physical grouped remainder by a generic Möbius/Mellin estimate must re-prove that it controls the exact gapwise destination quantity; if it loses the Farey divisor-replication geometry, the natural ownership moves to `mobius_cancellation`.
+`gamma_(j+1)-gamma_j <= (pi+o(1))/log log H`
+
+implies that any such occupation certificate forces at least
+
+`K_B(J) >= (delta_P/pi-o(1)) H log log H/L^P = H^(1-o(1))`
+
+remainder-good gaps in the relevant polynomial window. Finitely many good gaps, a sparse exceptional sequence, or `O(H^alpha)` good gaps for fixed `alpha<1` cannot close the FD-292 route. The count is only necessary, not sufficient: the safe cores must still contribute enough total length.
+
+FD-293 also closes the tempting gap-by-gap reuse of the current phase selector. The FD-292 Montgomery--Vaughan estimate on an interval of length `R` requires `R/L^(2m(m+2))->infinity` for fixed moment order `m`, whereas every individual RH zero gap has `R<<1/log log H`. The present phase theorem is therefore intrinsically aggregate at zero-gap scale. This is a limitation of that implementation, not a theorem that finer local phase control is impossible.
+
+The live gate is now a genuinely aggregate theorem: prove that the complete divisor-replicated physical remainder is good on a near-linear population of zero gaps with enough reciprocal-log-safe occupation, prove the occupation measure directly without enumerating gaps, or replace the current phase/remainder intersection architecture by a mechanism that couples them at zero-gap scale. A theorem producing only isolated favorable cutoffs cannot suffice within the present route.
+
+This sharpening is one-sided and conditional where stated. FD-293 does not prove that even one remainder-good gap exists, its population floor uses RH, and many good gaps need not give enough occupation. FD-292 still gives no uniformity in a growing `P`. Any attempt to replace the physical grouped remainder by a generic Möbius/Mellin estimate must re-prove that it controls the exact gapwise destination quantity; if it loses the Farey divisor-replication geometry, the natural ownership moves to `mobius_cancellation`.
