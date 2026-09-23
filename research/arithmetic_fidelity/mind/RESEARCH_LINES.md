@@ -26,7 +26,17 @@ AF-518 supplies the opposite endpoint and shows that the AF-514 weighted budget 
 
 then `sup_(s>1)|kappa_A(s)-kappa_P(s)|/kappa_P(s) <= C epsilon_A`. In particular, an all-composite transport with displacement of order `p/log p` can be globally curvature-invisible even when the AF-514 weighted budget diverges. The robust frontier is therefore not an absolute-displacement threshold. It must combine the **relative transport amplitude** with how much of the prime tail participates and with its mesoscopic log-moment distribution.
 
-The quantitative question is now to classify the nonuniform regimes between these endpoints. Uniformly vanishing relative transport is globally invisible; coherent order-one transport on a cofinite or fixed positive-density tail is mesoscopically visible. What remains is sparse, zero-density, blockwise, oscillatory or scale-dependent participation, where neither point count alone nor the AF-514 absolute weighted budget can decide visibility. A useful intrinsic criterion should recover AF-518 in the uniformly small regime and AF-515--AF-517 in the positive-density proportional regime, likely through a transport-participation/log-moment profile rather than a single scalar count. For robust rational-prime provenance, independent arithmetic incidence or a source-aware topology may still be necessary even after that curvature threshold is understood.
+AF-519 resolves the first genuinely scale-dependent participation model. For a fixed multiplicative move `p -> cp` on an arbitrary selected set `E_A`, probed at `s_A=1+t_A`, let
+
+`alpha_0 = lim T_A(s_A)/P(s_A)` and `alpha_2 = lim T_A''(s_A)/P''(s_A)`
+
+when these limits exist, with `beta_0=1-1/c`. Then the leading curvature response is exactly
+
+`kappa_A(s_A)/kappa_P(s_A) -> (1-beta_0 alpha_2)/(1-beta_0 alpha_0)`.
+
+The first logarithmic moment is lower order. Hence counting density and even normalized Dirichlet-value participation are not intrinsic visibility statistics: a moving logarithmic shell can have `alpha_0=0` but `alpha_2>0` and still create an order-one curvature defect. AF-517 is the regular-density specialization in which the zeroth and second moment shares are locked together by PNT density.
+
+The quantitative question has therefore narrowed from whether participation matters to **which transport-weighted moment profile controls nonuniform deformations**. For fixed-amplitude proportional moves, the leading boundary carrier sees the mismatch between zeroth and second logarithmic-moment participation. What remains is to determine how variable log-displacements, blockwise or oscillatory amplitudes, and the requirement of uniform control over the full domain alter that profile, and whether a source-native criterion can recover both AF-518's uniformly small-displacement invisibility and AF-515--AF-519's mesoscopic visible regimes. For robust rational-prime provenance, independent arithmetic incidence or a source-aware topology may still be necessary even after that curvature threshold is understood.
 
 ## Classify quotient-visible contact through admission, boundary membership and no-contact accessibility rates
 

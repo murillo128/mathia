@@ -56,10 +56,16 @@ MC-480 then exposes the exact phase structure of that leakage. On a complete joi
 
 `sum_(n mod pW) K_h(n)L_(W,h)(n) = -sum_(b mod W)L_(W,h)(b)`.
 
-So complete-period character oscillation does not cancel the leakage; it reproduces its mass with the same CRT mechanism as the hard mask. The meaningful incomplete object is the **centered leakage discrepancy**
+So complete-period character oscillation does not cancel the leakage; it reproduces its mass with the same CRT mechanism as the hard mask. The corresponding centered leakage discrepancy is
 
 `E_(W,h)(I)=sum_(n in I) K_h(n)L_(W,h)(n)+|I| ell_W(h)/p`.
 
-The live q-vdC route is therefore narrower than “use a low-denominator envelope.” The envelope representation can make the rational-mode coefficient ledger affordable, but exact transfer now requires a conductor-power estimate for this centered incomplete leakage discrepancy, or a different signed/factorable surrogate whose approximation theorem retains the character phase. The accepted local clue `CLUE-averaged-qvdc-source-frame-variable-retention` already records this precise handoff. Full divisor inclusion-exclusion, exact hard-mask Fourier `l^1`, complete-grid Cauchy--Parseval, coefficient-blind zero-mode restriction, unsigned envelope leakage, and complete-period leakage cancellation are all closed as standalone repairs.
+MC-481 closes the interpretation of this quantity as a cheaper exact-to-envelope transfer target. Canonical centering is linear for every `W`-periodic sieve-coordinate weight, so if `A` is the hard mask, `beta` the envelope and `L=beta-A`, then exactly
 
-The mixed rough/boundary and first-exit channels remain separate possibilities, as do retained outer signs and explicit cross-component interference before componentwise absolute values or positive quadratic closure. For nonempty rough-block pieces, retain the exact bin-product support pruning and price only the surviving construction-specific coefficient mass. Redesigned non-Fejer architectures remain separate and must re-pay interval geometry, diagonal cost and favorable-set concentration rather than treating reweighting as free.
+`D_L(I)=D_beta(I)-D_A(I)`.
+
+The low-denominator work of MC-477--MC-478 already gives a conductor-sensitive bound for `D_beta`. Hence any conductor-power bound for centered leakage is, up to that already-controlled comparison term, the original exact rough×rough discrepancy itself; conversely an exact-mask estimate controls centered leakage at the same scale. Centering removes the forced complete-period mean but creates no independent transfer resource.
+
+The live q-vdC route is therefore narrower than “control the envelope error.” A useful continuation must introduce **genuinely additional signed/factorable structure**—for example an exact finite factorization, a first-exit identity, or a bilinear/dispersion representation in which the translated-ratio phase couples before coefficientwise absolute values—or move to the mixed rough/boundary, nonempty rough-block, or pre-positive cross-component channels. Merely changing the majorant, centering, or norm on `beta-A` is closed as an independent mechanism. The accepted local clue `CLUE-averaged-qvdc-source-frame-variable-retention` has already been narrowed to this exact handoff.
+
+For nonempty rough-block pieces, retain the exact bin-product support pruning and price only the surviving construction-specific coefficient mass. Redesigned non-Fejer architectures remain separate and must re-pay interval geometry, diagonal cost and favorable-set concentration rather than treating reweighting as free.
