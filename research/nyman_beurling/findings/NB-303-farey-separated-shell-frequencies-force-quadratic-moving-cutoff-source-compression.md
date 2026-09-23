@@ -101,8 +101,7 @@ and
 Each `r_j` is `j`-periodic, so its finite Fourier expansion has frequencies `h/j`, `0<=h<j`. After combining equal characters, there is a finite set `F_N subset R/Z` and coefficients `c_alpha` such that
 
 \[
-\boxed{
-u_k=\sum_{\alpha\in F_N}c_\alpha e^{2\pi i\alpha k}.}
+\boxed{u_k=\sum_{\alpha\in F_N}c_\alpha e^{2\pi i\alpha k}.}
 \tag{4}
 \]
 
