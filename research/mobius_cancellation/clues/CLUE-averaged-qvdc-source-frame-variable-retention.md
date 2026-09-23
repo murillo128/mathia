@@ -44,84 +44,79 @@ based_on:
   - research/mobius_cancellation/findings/MC-492-native-repeated-residue-blocks-have-no-common-sign-cancellation.md
   - research/mobius_cancellation/findings/MC-493-native-cross-root-blocks-need-square-root-multiplicity.md
   - research/mobius_cancellation/findings/MC-494-complete-repeated-residue-blocks-tensorize-before-root-interference.md
+  - research/mobius_cancellation/findings/MC-495-incomplete-cross-root-multiplicity-collapses-to-weighted-character-bias.md
 ---
 
 # Can load-bearing q-dependent arithmetic asymmetry beat the Möbius source-frame tariff?
 
 ## Observation
 
-The empty-vector source has survived a long sequence of exact reductions but most generic summaries are now closed. `MC-472`--`MC-476` rule out direct full-period, inclusion-exclusion, hard-mask Fourier, plain Parseval and coefficient-blind restriction routes. `MC-477`--`MC-483` show that positive or bracketed sieve surrogates either leak too much, retain the hard-mask selector, or force only a polylogarithmic useful cutoff when one demands a fixed conductor-power gain.
+The normalized empty-vector source has survived a long sequence of exact reductions, but most generic uses of the first-exit label are now closed. `MC-472`--`MC-483` eliminate direct completion, hard-mask Fourier/Parseval, coefficient-blind restriction, and positive or bracketed sieve replacements as routes to a fixed conductor-power gain. `MC-484` supplies the canonical lossless escape: exact Buchstab first exit removes the bracket selector while retaining a dimension-two residual pair sieve and an explicit prime label `q`.
 
-`MC-484` supplied the canonical selector-free escape: exact Buchstab first exit writes the hard mask as a signed sum over first-exit primes `q`, leaving a dimension-two residual pair sieve. `MC-485`--`MC-486` close complete and incomplete coefficient-blind inverse-shift frame gains. `MC-487` shows that the common inverse shifts `hq^{-1}` in the phase and residual sieve are affine gauge: in an intrinsic integer coordinate the translated-ratio separation and pair polynomial are fixed, while q-dependence moves to support, cutoff, endpoints and coefficients.
+The subsequent chain shows that most visible q-dependence is not load-bearing. `MC-485`--`MC-486` close complete and incomplete coefficient-blind inverse-shift frame gains; `MC-487` identifies the common inverse shift as affine gauge; `MC-488` shows that exact first-exit cells are a disjoint least-prime partition; and `MC-489`--`MC-491` price rowwise dilation, distinct-residue conditioning, and repeated-residue mask coherence without producing a conductor-power saving.
 
-`MC-488` proves that the exact progression-plus-cutoff first-exit cells are disjoint: each source integer in the Buchstab shell has a unique least active prime divisor `q_*(n)`. Their incidence Gram matrix is diagonal and every common unitary transform preserves that orthogonality. If the outer coefficient is common, the q-sum refolds exactly to the original hard-mask difference; with q-dependent coefficients it becomes the one-variable weight `c_{q_*(n)}(n)`.
-
-`MC-489` tests the first literal escape. Rowwise dilation `n=qm` is genuinely q-dependent and can create nonzero cross-row terms after alignment in the `m` coordinate. But the exact hard-mask row has complete energy `(p-2)P(q)d_q` with `d_q >> (log q)^-2`; after removing sieve-period replication its `L^2` size remains `p^{1/2-o(1)}` throughout polynomial q-ranges. The complete cross-row term factorizes into the classical shifted-character correlation times an ordinary local sieve-overlap count. Hence q-dependent coordinates plus coefficient-blind positive `L^2` closure are exhausted.
-
-`MC-490` closes the favorable-scalar-direction loophole for distinct conductor residues. After putting the exact moving hard-mask rows on one common complete period and normalizing each row, any `k=o(p)` first-exit family with distinct residues modulo `p` has Gram matrix `I+E` with `|E_{q,r}|<=2/(p-2)`. A scalar function of the least prime therefore cannot align those rows with a hidden small singular subspace.
-
-`MC-491` prices the repeated-residue branch that `MC-490` left open. If `q!=r` but `q=r (mod p)`, the completed character phases coincide, yet the exact nested pair-sieve masks do not: their normalized coherence satisfies
+The native repeated-residue branch is now especially rigid. `MC-492` proves that same-root rows with the Buchstab common sign cannot cancel even on incomplete domains. `MC-494` strengthens the completed cross-root analysis by showing that arbitrary repeated-residue multiplicity tensorizes into two nonnegative amplitudes before Jacobi interference. `MC-495` shows that the same aggregation happens **before completion as well**: on any incomplete common `m`-domain the whole repeated-residue two-root block reduces to
 
 \[
-\rho(q,r)=\frac{d_{q,r}}{\sqrt{d_qd_r}}
-\ll \frac{\log\log(3|h(q-r)|)}{\log r}.
+U=K_a^+A,\qquad V=K_a^-B,
 \]
 
-Thus in polynomial ranges every repeated-residue pair has coherence `O(log log p/log p)`, and an arbitrary-residue family of size `o(log p/log log p)` is still Riesz-stable.
-
-`MC-492` then closes same-root dense blocks: for `q=r (mod p)` the character phase is identical pointwise, so with the native Buchstab coefficient and exact nonnegative masks/endpoints every same-root cross term is nonnegative, even on incomplete intervals. Opposite-root completed interaction is the exact Jacobi scalar `chi(4)J(chi,chi)-1`, normalized at `O(p^-1/2)` pairwise (`O(p^-1)` for quadratic `chi`).
-
-`MC-493` first prices the remaining collective opposite-root possibility by pairwise coherence: an order-one effect would require square-root-conductor effective multiplicity in both roots, and quadratic characters require conductor-scale multiplicity. `MC-494` shows that even this admission threshold is nonsharp for the exact native completed block. For one repeated conductor residue, all plus rows share one conductor vector and all minus rows share another; row multiplicity lives only in two nonnegative auxiliary amplitudes. CRT therefore tensorizes the whole block before root interference, giving
+with `A,B>=0`. The only possible destructive term is therefore
 
 \[
-\|U+V\|_2^2
-\ge
-\left(1-\frac{|\chi(4)J(\chi,\chi)-1|}{p-2}\right)
-\left(\|U\|_2^2+\|V\|_2^2\right).
+C_{A,B}=\sum_m A(m)B(m)R_a(m),
+\qquad
+R_a(m)=\chi(am+h)\chi(am-h)\overline{\chi(am)}^2.
 \]
 
-Hence the native complete-period cross-root block remains `1-O(p^-1/2)` stable **at arbitrary finite multiplicity**; for quadratic characters it is exactly cross-root orthogonal when `p=3 (mod 4)` and loses only `2/(p-2)` in the other parity class. Bare completed cross-root accumulation is therefore closed, not merely postponed to a denser source range.
-
-The live resource is now narrower than “use q-dependent coordinates, scalar weights, dense collisions, or many opposite-root rows.” It must be **load-bearing arithmetic q-asymmetry inside the inner source coefficient/kernel before the two-direction tensorization**, or a genuinely incomplete signed transform in which complete conductor CRT/Jacobi factorization no longer applies.
+After projection modulo `p`, this is one nonnegative source-derived weight `w(t)` against the fixed rational-character phase `chi(1-t^{-2})`. The uniform part of `w` is exactly the already-small complete Jacobi contribution; any larger incomplete effect must come from the centered conductor profile `w(t)-\bar w`. Thus repeated-residue multiplicity itself is closed even in the incomplete setting. What remains is a source-weight/phase correlation problem, or a pre-aggregation q-dependent sign/complex phase that prevents the collapse.
 
 ## Research question
 
-Can the exact normalized first-exit family be passed through a justified dispersion, reciprocity, Poisson, staged-factor, or coefficient-sensitive operation in which the first-exit label `q` changes the arithmetic kernel itself — not only the row coordinate or scalar row weight — and for which the resulting signed off-diagonal structure yields a fixed conductor-power gain after all diagonals, endpoints and source weights are restored?
+Can the exact normalized first-exit family produce a justified operation in which the first-exit label `q` changes the **inner arithmetic coefficient or kernel** before positive closure, rather than only the row coordinate, scalar weight, support, or repeated-residue multiplicity?
 
-Equivalently, can the exact source algebra produce a genuinely `m`-dependent q-specific sign/complex phase, q-dependent modulus, or reciprocal-phase role **before** completion collapses a repeated-residue block to two conductor directions? Alternatively, can a provably incomplete signed transform exploit endpoints or truncated conductor sums in a way that survives reconstruction costs and escapes `MC-494`? If neither structure exists, the normalized empty-vector first-exit continuation should be closed and research should return to the separately retained nonempty rough-block, boundary or pre-positive cross-component channels.
+There are now two precise surviving forms. First, derive the exact conductor projection `w(t)` created by endpoints, lower-prime cutoffs, pair-sieve masks and source coefficients, and prove that its centered component has a sufficiently strong negative correlation with the relative phase `chi(1-t^{-2})` to yield a fixed conductor-power gain after reconstruction. Second, derive a genuinely q-dependent signed/complex coefficient, modulus, or reciprocal-phase role before the aggregation step of `MC-495`, analogous in spirit to the factor-specific quotient-breaking mechanism isolated in `MC-456`.
+
+If neither structure can be derived from the exact source frame, the normalized empty-vector first-exit continuation should be closed and research should return to separately retained nonempty rough-block, boundary, or pre-positive cross-component channels.
 
 ## Why it may matter
 
-The current chain has separated several effects that initially looked like one source variable. The visible inverse shift is coordinate gauge (`MC-487`); exact first-exit support is a deterministic least-prime partition (`MC-488`); rowwise dilation retains the conductor-scale diagonal (`MC-489`); scalar reweighting of sublinear distinct-residue families cannot access a hidden small singular direction (`MC-490`); repeated-residue masks are pairwise only weakly coherent (`MC-491`); native same-root dense blocks are constructive (`MC-492`); pairwise opposite-root coherence cannot matter below large multiplicity (`MC-493`); and exact completed opposite-root multiplicity itself tensorizes away (`MC-494`). Repeating those representations cannot create a new averaging dimension.
+The surviving question is no longer whether more averaging variables can be exposed. The exact reductions show that the obvious candidates repeatedly collapse: inverse shifts are gauge, first-exit supports are a deterministic partition, coefficient-blind phase families remain at the conductor scale, scalar weights do not access a hidden small singular direction, and repeated-residue multiplicity produces no new conductor phase even without completion.
 
-The surviving positive template remains the asymmetry identified in `MC-456`: successful neighboring dispersion arguments make factor labels analytically visible because they enter different modulus or reciprocal-phase roles **before** positive closure. The open question is whether the exact Möbius source frame contains that stronger arithmetic role for `q`, or whether first exit is ultimately only deterministic bookkeeping once all inner-coordinate source data are exposed.
+`MC-495` makes the remaining incomplete escape auditable. A fixed-fraction energy reduction requires an order-one negative weighted correlation of the **actual** source overlap with one explicit relative character phase. This is much sharper than saying that endpoints or incomplete sums might help: the source geometry must now explain where the phase-selective conductor bias comes from and how it survives all normalization and reconstruction tariffs.
 
 ## Decisive test
 
-Work first in the `R=T=1` empty-vector source frame and normalize to the common intrinsic source coordinate. Keep the exact first-exit cell
+Work first in the `R=T=1` empty-vector source frame and keep the exact first-exit cell
 
 \[
 E_q=\{n:q\mid n(n+h),\ (n(n+h),P(q))=1\}
 \]
 
-with exact interval endpoints and source coefficients.
+with exact shortened endpoints and source coefficients. Reject proposals whose only q-dependence is already priced by `MC-485`--`MC-495`: coefficient-blind complete/incomplete phase averaging, affine inverse shifts, common transforms of disjoint first-exit cells, rowwise dilation followed by positive `L^2` closure, scalar reweighting, dense same-root repeated-residue blocks, or completed/incomplete cross-root multiplicity by itself.
 
-Reject immediately any proposal whose only q-dependence is one of the already-priced effects: a common transform of disjoint cells (`MC-488`); inverse shifts `hq^{-1}` (`MC-487`); complete or incomplete coefficient-blind phase-frame averaging (`MC-485`--`MC-486`); rowwise dilation/completion followed by a uniform positive `L^2` bound (`MC-489`); scalar q-reweighting of sublinear distinct-residue completed rows (`MC-490`); isolated/small repeated-residue alignment (`MC-491`); a dense same-root repeated-residue block with only the native common-sign coefficient (`MC-492`); pairwise counting of native opposite-root coherence (`MC-493`); or arbitrary-size native **complete-period** repeated-residue cross-root aggregation (`MC-494`). A harmless row scaling is not an escape unless exact reconstruction constants are charged.
+For an incomplete repeated-residue proposal, compute the exact projected overlap weight
 
-For a surviving proposal, identify the first formula at which two first-exit labels occupy mathematically different arithmetic roles **inside the transformed kernel or inner source coefficient**. Examples that pass the admission gate include a q-dependent modulus or reciprocal phase not removable by affine relabeling, a factor-specific pre-positive kernel analogous to `MC-456`, a genuinely `m`-dependent signed/complex law for the actual source coefficient, or an incomplete-interval mechanism whose conductor variable cannot be factored into the complete Jacobi scalar. Merely changing coordinates, multiplying each completed row by a scalar, grouping more primes in one conductor class, or increasing cross-root multiplicity does not pass.
+\[
+w(t)=\sum_{m\equiv t\ (p)}A(m)B(m)
+\]
 
-Then compute the true diagonal and off-diagonal terms before claiming gain. Accept the route only if the final estimate saves a fixed conductor power after coefficient normalization, dyadic q summation, endpoint costs, root collisions, shell reconstruction and all q-vdC/Fejér/staged-sieve weights are restored. A per-q estimate followed by triangle inequality is insufficient unless its aggregate already beats the existing first-exit budget; a positive complete-period norm whose normalized Gram remains well conditioned is likewise insufficient.
+and the centered correlation
 
-Dropping the exact cutoff `A_q` merely to recover overlap of bare progressions `q|n` or `q|n+h` changes the family and must still pay the positive/bracket transfer barriers of `MC-479`--`MC-483`.
+\[
+\sum_{t\in\mathbf F_p}(w(t)-\bar w)\chi(1-t^{-2}).
+\]
+
+Do not replace `w` by a smooth, uniform, random, or interval model unless the replacement error is quantitatively transferred. Accept this route only if the resulting bound gives a fixed conductor-power gain after diagonal energy, endpoint costs, q-summation, shell reconstruction and all source weights are restored.
+
+For a pre-aggregation proposal, identify the first exact formula where two first-exit labels occupy genuinely different arithmetic roles inside the transformed kernel or coefficient: for example a q-dependent modulus, reciprocal phase, or `m`-dependent sign/complex coefficient not removable by affine relabeling. A harmless scalar row factor or increased multiplicity does not pass.
 
 ## Evidence boundary
 
-`MC-484` proves exact selector-free Buchstab first exit and the residual dimension-two pair sieve. `MC-485`--`MC-486` close complete and incomplete coefficient-blind inverse-shift frame routes. `MC-487` proves that the shared inverse shifts are affine gauge. `MC-488` proves that the exact normalized progression-plus-cutoff cells form a disjoint least-prime partition and remain orthogonal under every common unitary transform. `MC-489` proves that row-dependent dilation retains a `p^{1/2-o(1)}` complete-row diagonal in polynomial q-ranges, with complete interactions factoring into character correlation times sieve overlap. `MC-490` shows that `k=o(p)` distinct-residue completed rows are uniformly well conditioned in every scalar outer-weight direction. `MC-491` quantifies repeated-residue mask coherence and extends Riesz stability to arbitrary-residue families of size `o(log p/log log p)`. `MC-492` rules out native same-root repeated-residue cancellation and identifies the opposite-root completed Jacobi scale. `MC-493` derives the pairwise square-root-multiplicity tariff. `MC-494` strengthens the native complete-period endpoint by tensorizing an arbitrary finite repeated-residue block before root interference, eliminating multiplicity as an escape altogether.
+`MC-484` proves exact selector-free Buchstab first exit and preserves the dimension-two pair sieve. `MC-485`--`MC-491` close coefficient-blind phase-frame, affine-shift, partition, dilation and small/repeated-residue conditioning loopholes. `MC-492` rules out native same-root repeated-residue cancellation. `MC-494` removes arbitrary completed cross-root multiplicity as a resource. `MC-495` removes incomplete repeated-residue multiplicity as an independent phase resource and identifies the exact surviving object as a weighted rational-character bias.
 
-None of these findings proves or rules out a genuinely factor-specific dispersion/reciprocity theorem, an `m`-dependent signed arithmetic law for exact source coefficients/endpoints, a signed incomplete-interval conductor-power saving before positive closure, or an improved bound for the Möbius function. `MC-456` supplies only a neighboring quotient-breaking template whose factor-specific modulus geometry must still be derived here.
+None of these findings estimates the centered source weight in `MC-495`, derives a new q-dependent signed/complex pre-aggregation coefficient, proves a factor-specific dispersion theorem for the exact dimension-two source frame, or improves `M(x)`. `MC-456` remains a neighboring positive template only; it is not evidence that the required quotient-breaking structure exists here.
 
 ## Research disposition
 
-The clue remains `accepted`, but its admission gate is stricter again. Closed routes include positive/bracket replacement without transfer control; complete or incomplete coefficient-blind inverse-shift averaging; exploiting visible `hq^{-1}` motion; cross-q dispersion from exact first-exit supports through one common source transform; q-dependent row dilation/completion followed only by coefficient-blind positive `L^2` closure; scalar least-prime reweighting of sublinear distinct-residue rows; isolated/small repeated-residue completed families; arbitrary-size native same-root repeated-residue blocks; and arbitrary-size native **completed cross-root** repeated-residue blocks.
-
-The active test is now **inner-coordinate-dependent signed/complex arithmetic q-asymmetry or a genuinely incomplete signed transform retained before complete-period tensorization and positive closure**. If no such operation can be derived from the source frame with a quantitative gain, the normalized empty-vector first-exit branch should be treated as exhausted rather than revisiting another scalar, coordinate, collision-density, or cross-root-multiplicity version of the same partition.
+The clue remains `accepted`, with a stricter frontier. The primary live test is now **source-derived phase-selective conductor bias or genuinely q-specific pre-aggregation arithmetic asymmetry**. Bare repeated-residue density, pair counting, or incompleteness without control of the exact projected weight should not be revisited as distinct mechanisms.
