@@ -228,7 +228,7 @@ and hence
 H_h-1\ge\frac13H_N.
 \]
 
-Also `2+pi^2/3<2H_N` for `N>=8`. Combining these elementary comparisons with (12)-(13) gives
+Also `2+\pi^2/3<2H_N` for `N>=8`. Combining these elementary comparisons with (12)-(13) gives
 
 \[
 \boxed{
@@ -254,7 +254,7 @@ u_N(y/m)\,\overline{u_N(y)}\,dy.
 \tag{15}
 \]
 
-Using (8),
+Here `u_N(y/m)` is the first factor in the integrand; the displayed `u_N` has no additional normalization. Using (8),
 
 \[
 |\langle u_N,A_m u_N\rangle|
