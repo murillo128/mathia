@@ -30,8 +30,18 @@ NB-309 shows that this tiny determinant bound is principally an artifact of mult
 
 `1-s_post(N,m)^2 >= 1 / (5(1+sqrt(2)) m N^2 H_(mN) (H_N-H_q))`.
 
-Consequently the first singular value below the exact core is separated from `1` by at least a polynomial amount; uniformly for `2<=m<=N`, the squared gap is `Omega(1/(N^3 log^2 N))`. In the first post-core strip `N/2<m<=N`, this applies directly to `beta_(N+1)(m)`. The unresolved source question is therefore no longer whether a nonzero or merely non-superpolynomial post-core gap exists. **The live discriminator is whether the exact residual-Gram pencil has a macroscopic lower edge somewhere in the linear-to-quadratic transition, or whether explicit post-core near-isometries force a genuinely vanishing polynomial gap.**
+Consequently the first singular value below the exact core is separated from `1` by at least a polynomial amount; uniformly for `2<=m<=N`, the squared gap is `Omega(1/(N^3 log^2 N))`.
 
-Thus `m=N/2` is the exact end of the unit-norm plateau, NB-309 supplies polynomial spectral separation immediately beyond the plateau, and `m/N^2->infinity` is a sufficient full-decay regime. The remaining source transition lies between these statements rather than in pointwise pivot nondegeneracy.
+NB-310 supplies the complementary upper construction and resolves the first branch of the transition question. Let `h=m(q+1)-N` be the overrun of the first product index beyond the finite section. The next canonical innovation after the exact core gives
+
+`0 < 1-s_post(N,m)^2 <= min(1, (2 pi^2/3) h^2 C_(N+h)/m)`,
+
+with `C_n=O(log n)`. Hence `h^2 log(N+h)/m -> 0` forces `s_post(N,m)->1`. In the first post-core strip, at `m=floor(N/2)+1`, the overrun is only `1` or `2` and
+
+`1-beta_(N+1)(m)^2 = O(log N/N)`.
+
+Thus explicit post-core near-isometries really do sit immediately beyond the exact unit plateau. NB-309 and NB-310 are compatible: the residual singular gap is nonzero and polynomially bounded below, yet it can still vanish polynomially along staircase boundary layers. The live source discriminator is now **where those near-isometric boundary layers end and whether the residual-Gram pencil develops a macroscopic lower edge deeper in the linear-to-quadratic transition**. One must classify the width and geometry of the staircase layers rather than ask whether post-core near-isometries exist at all.
+
+Accordingly `m=N/2` is the exact end of the unit-norm plateau, NB-310 gives an explicit vanishing-gap regime just beyond staircase edges, NB-309 prevents superpolynomial collapse of the first post-core gap, and `m/N^2->infinity` is a sufficient full-decay regime. The unresolved source transition lies between these quantitative regions; neither the pivot floor nor one boundary-layer test vector determines its interior spectrum.
 
 That source theorem is still not the destination theorem. After locating the strong singular subspaces one must propagate the actual moving first-free datum through the NB-298 sampling/null decomposition, lower-section conditioning and off-critical diagonal contraction. A large singular value that lives in a sample-null or unoccupied direction does not improve the Nyman target. The surviving destination question is therefore joint singular-spectrum **and target-occupation** control, not support mass, one-vector Rayleigh overlap, operator norm, or pivot survival alone.
