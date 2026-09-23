@@ -29,6 +29,7 @@ based_on:
   - research/mobius_cancellation/findings/MC-477-low-denominator-envelope-admits-denominator-free-character-completion.md
   - research/mobius_cancellation/findings/MC-478-pair-sieve-local-fourier-factorization-lowers-envelope-l1-cost.md
   - research/mobius_cancellation/findings/MC-479-selberg-envelope-leakage-is-order-one-on-near-cutoff-single-violations.md
+  - research/mobius_cancellation/findings/MC-480-selberg-leakage-complete-period-phase-factorizes.md
 ---
 
 # Can the staged factor-weighted source kernel beat the Möbius source-frame tariff?
@@ -49,22 +50,39 @@ for only `O(sqrt(p) log p)`, uniformly in the rational denominator. `MC-478` the
 \ll \frac{z^2(\log(2z))^5}{G(z)}.
 \]
 
-`MC-479` now closes the simplest unsigned transfer back to the exact mask. The Selberg envelope equals the hard pair-sieve indicator exactly on genuine survivors; the entire difference is positive false-positive leakage. More importantly, a residue that violates exactly one sieve prime `r` with `z/2<r<z` still receives envelope weight
+`MC-479` closes the simplest unsigned transfer back to the exact mask. The Selberg envelope equals the hard pair-sieve indicator exactly on genuine survivors; the entire difference is positive false-positive leakage. A residue that violates exactly one sieve prime `r` with `z/2<r<z` still receives envelope weight
 
 \[
 \left(1-\frac{r}{(r-\nu_r(h))G_1(z)}\right)^2
 =1+O(1/\log z),
 \]
 
-while the exact mask is zero. These single near-cutoff violations force complete-period leakage only logarithmically smaller than the survivor mass. Thus `beta-A` is not a small pointwise or phase-blind `L^1` error capable of paying a fixed conductor power.
+while the exact mask is zero. These single near-cutoff violations force complete-period leakage only logarithmically smaller than the survivor mass, so `beta-A` is not a small pointwise or phase-blind `L^1` error capable of paying a fixed conductor power.
 
-The low-denominator family itself is therefore not the main representation-complexity obstruction, but neither is ordinary majorant accuracy the missing bridge. The remaining base-component gap is specifically **cancellation of the translated-ratio phase against Selberg false-positive leakage**, or a genuinely signed/factorable replacement that suppresses that leakage before coefficient-blind closure.
+`MC-480` now closes a second apparent escape. The leakage is a pure small-prime sieve-coordinate function, so CRT tensorization with the translated-ratio phase is exact on the complete joint period. If
+
+\[
+L_{W,h}=\beta-A_{W,h},
+\qquad
+\ell_W(h)=\frac1W\sum_{b\bmod W}L_{W,h}(b),
+\]
+
+then
+
+\[
+\sum_{n\bmod pW}K_h(n)L_{W,h}(n)
+=-\sum_{b\bmod W}L_{W,h}(b).
+\]
+
+Thus complete-period character oscillation does not cancel the positive leakage: it reproduces its total mass with a minus sign. Combined with `MC-479`, the twisted leakage remains at least logarithmically large relative to the exact hard-mask complete-period channel whenever the survivor mass is nonzero.
+
+The low-denominator family itself is therefore not the main representation-complexity obstruction, but neither unsigned envelope accuracy nor complete-period phase cancellation supplies the missing bridge. The remaining base-component gap is specifically a **centered incomplete leakage discrepancy**, or a genuinely signed/factorable replacement that suppresses the leakage before coefficient-blind closure.
 
 The mixed rough/boundary and first-exit terms remain mathematically distinct, as do nonempty rough-block components and cross-component interference before positive closure.
 
 ## Research question
 
-Can the false-positive leakage of the low-denominator Selberg envelope be controlled after coupling it to `K_h`, or replaced by a signed/factorable surrogate, with a remainder strictly below the conductor-saving budget supplied by `MC-477`--`MC-478`?
+Can the centered incomplete false-positive leakage of the low-denominator Selberg envelope be controlled with a conductor-sensitive gain, or replaced by a signed/factorable surrogate, with a remainder strictly below the conductor-saving budget supplied by `MC-477`--`MC-478`?
 
 For the exact mask
 
@@ -72,41 +90,49 @@ For the exact mask
 A_{W,h}(n)=\mathbf1_{(n(n+h),W)=1}
 \]
 
-and the corresponding low-denominator envelope `beta`, `MC-479` gives
+and the corresponding low-denominator envelope `beta`, define
 
 \[
 L_{W,h}(n):=\beta(n)-A_{W,h}(n)\ge0,
 \qquad
-L_{W,h}(n)=0\ \text{whenever }A_{W,h}(n)=1.
+\ell_W(h):=\frac1W\sum_{b\bmod W}L_{W,h}(b).
 \]
 
-The direct missing object is therefore
+`MC-480` shows that the complete joint-period mean is exactly `-ell_W(h)/p`. Therefore the direct missing object should be centered as
 
 \[
-\sum_{n\in I}K_h(n)L_{W,h}(n).
+\mathcal E_{W,h}(I)
+:=
+\sum_{n\in I}K_h(n)L_{W,h}(n)
++\frac{|I|}{p}\ell_W(h).
 \]
 
-A useful result may derive a bilinear, Buchstab, truncated-sieve, first-exit, dispersion, or positive quadratic representation of this **leakage-weighted character sum** in which the translated-ratio phase remains visible. What no longer qualifies is an attempt to prove that `beta-A` is uniformly or absolutely small: `MC-479` rules that out in the relevant sense. A norm estimate whose right-hand side depends only on coefficient magnitude and therefore treats `K_h` like constant positive coefficients likewise cannot exploit the surviving conductor gain.
+A useful result may derive a bilinear, Buchstab, truncated-sieve, first-exit, dispersion, or positive quadratic representation of this **centered leakage-weighted character discrepancy** in which the translated-ratio phase remains visible. What no longer qualifies is an attempt to prove that `beta-A` is uniformly or absolutely small, or an appeal to complete-period character orthogonality: `MC-479` and `MC-480` rule those mechanisms out in the relevant senses. A norm estimate whose right-hand side depends only on coefficient magnitude and therefore treats `K_h` like constant positive coefficients likewise cannot exploit the surviving conductor gain.
 
 For nonempty components and boundary terms, the same question should be asked only after their exact support and first-exit structure is retained; they are not automatically covered by the empty-vector analysis.
 
 ## Why it may matter
 
-The route has progressively removed several apparent resources that were artifacts of representation or positive closure: favorable gcd sectors, generic well-factorability, residual coefficient signs, complete-period resonance, full inclusion-exclusion, hard-mask Fourier expansion, generic Hilbert-space averaging, coefficient-uniform restriction, and now unsigned Selberg-envelope accuracy. The low-denominator envelope remains the first surviving representation in this chain whose individual character modes and aggregate absolute coefficient mass both fit a polynomial source budget.
+The route has progressively removed several apparent resources that were artifacts of representation or positive closure: favorable gcd sectors, generic well-factorability, residual coefficient signs, complete-period resonance, full inclusion-exclusion, hard-mask Fourier expansion, generic Hilbert-space averaging, coefficient-uniform restriction, unsigned Selberg-envelope accuracy, and now complete-period phase cancellation of Selberg leakage. The low-denominator envelope remains the first surviving representation in this chain whose individual character modes and aggregate absolute coefficient mass both fit a polynomial source budget.
 
-If its false-positive leakage can also be coupled to `K_h` with a conductor-sensitive saving, the base component would genuinely evade the full-primorial obstructions of `MC-473`--`MC-475`. If every legitimate treatment of that leakage either costs its full positive mass or loses the `K_h`-specific gain under positive closure, the main restriction-style escape is closed and attention should redirect to boundary/nonempty components or pre-positive cross-component interference.
+If its **centered incomplete** leakage can be controlled with a conductor-sensitive saving, the base component would genuinely evade the full-primorial obstructions of `MC-473`--`MC-475`. If every legitimate incomplete treatment either costs the full leakage mass, recenters to a discrepancy with no power gain, or loses the `K_h`-specific gain under positive closure, the main restriction-style escape is closed and attention should redirect to boundary/nonempty components or pre-positive cross-component interference.
 
 ## Decisive test
 
-Work in the `R=T=1` empty-vector source frame and retain the centering from `MC-472`. Use the actual Bera--Viswanadham/Ramaré--Ruzsa enveloping object or one precisely specified signed/truncated/factorable replacement; do not revert to the exact full-primorial Fourier frame already closed by `MC-473`--`MC-475`.
+Work in the `R=T=1` empty-vector source frame and retain the exact centering forced by `MC-480`. Use the actual Bera--Viswanadham/Ramaré--Ruzsa enveloping object or one precisely specified signed/truncated/factorable replacement; do not revert to the exact full-primorial Fourier frame already closed by `MC-473`--`MC-475`.
 
-For the actual Selberg envelope, start from the exact leakage identity from `MC-479`, not from pointwise majorization. Derive a valid estimate or structural decomposition for
+For the actual Selberg envelope, start from the exact leakage identities from `MC-479`--`MC-480`, not from pointwise majorization or complete-period orthogonality. Derive a valid estimate or structural decomposition for
 
 \[
+\mathcal E_{W,h}(I)
+=
 \sum_{n\in I}K_h(n)L_{W,h}(n)
++\frac{|I|}{p}\ell_W(h)
 \]
 
-that retains `K_h` information. Charge the resulting terms explicitly against the conductor-sensitive envelope budget
+that retains genuinely incomplete `K_h` information. A decomposition into complete `pW` blocks cannot be credited with phase saving: each complete block contributes exactly the negative leakage mass prescribed by `MC-480`.
+
+Charge the resulting discrepancy terms explicitly against the conductor-sensitive envelope budget
 
 \[
 \frac{z^2(\log(2z))^5}{G(z)}\sqrt p\log(2p)
@@ -114,16 +140,16 @@ that retains `K_h` information. Charge the resulting terms explicitly against th
 
 from `MC-478`, together with source interval length, shell summation, Fejér weights, coefficient normalization, endpoint separation, and source depth from the staged architecture.
 
-Accept the route only if the complete accounting gives a strict conductor-power gain for the exact base component. Kill the Selberg-envelope transfer if every legitimate leakage decomposition has trivial-scale positive mass after the phase is discarded, and no `K_h`-sensitive estimate survives. A different signed surrogate remains admissible only if its exact matching/error theorem is proved rather than inferred from majorization.
+Accept the route only if the complete accounting gives a strict conductor-power gain for the exact base component. Kill the Selberg-envelope transfer if every legitimate incomplete leakage decomposition has trivial-scale positive mass or centered discrepancy, and no `K_h`-sensitive estimate survives. A different signed surrogate remains admissible only if its exact matching/error theorem is proved rather than inferred from majorization.
 
 For mixed/boundary terms, use the exact first-exit decomposition from `MC-470`; for nonempty pieces, retain the exact bin-product support pruning; for cross-component interference, retain the signed finite decomposition through the proposed transform and exhibit a concrete surviving cross term rather than appealing to cancellation after separate absolute bounds.
 
 ## Evidence boundary
 
-`MC-477` proves only a denominator-independent character estimate for each low-denominator rational mode and a crude envelope recombination. `MC-478` improves only that envelope recombination by exploiting exact local pair-sieve Fourier factorization. `MC-479` proves that the Selberg envelope is exact on survivors but has order-one false positives near the cutoff and only logarithmically suppressed unsigned leakage on the complete local period. None of these results controls the **twisted** leakage sum on the actual source interval, boundary terms, nonempty components, or cross-component interference.
+`MC-477` proves only a denominator-independent character estimate for each low-denominator rational mode and a crude envelope recombination. `MC-478` improves only that envelope recombination by exploiting exact local pair-sieve Fourier factorization. `MC-479` proves that the Selberg envelope is exact on survivors but has order-one false positives near the cutoff and only logarithmically suppressed unsigned leakage on the complete local period. `MC-480` proves that completing also in the conductor coordinate does not cancel that leakage: the complete twisted leakage equals minus its positive mass.
 
-The displayed low-denominator budget is an upper bound for one coefficientwise envelope treatment, not a lower bound or an optimal barrier. The complete-period leakage lower bound is an adversarial control against phase-blind replacement, not a short-interval lower bound. No conductor-power estimate for the exact rough×rough discrepancy, Möbius bound, zero-free region, or RH consequence has been obtained.
+None of these results controls the **centered incomplete** leakage discrepancy on the actual source interval, boundary terms, nonempty components, or cross-component interference. The displayed low-denominator budget is an upper bound for one coefficientwise envelope treatment, not a lower bound or an optimal barrier. The complete-period leakage statements are adversarial controls, not short-interval lower bounds. No conductor-power estimate for the exact rough×rough discrepancy, Möbius bound, zero-free region, or RH consequence has been obtained.
 
 ## Research disposition
 
-The clue remains `accepted`, but the restriction-style branch is narrower again. The low-denominator character modes and their aggregate pair-sieve `ell^1` cost survive and are priced by `MC-477`--`MC-478`; `MC-479` eliminates unsigned envelope accuracy as the missing mechanism. The immediate unresolved question is now the **translated-character sum against Selberg false-positive leakage**, or an exact signed/factorable surrogate that removes that leakage without sacrificing the conductor gain.
+The clue remains `accepted`, but the restriction-style branch is narrower again. The low-denominator character modes and their aggregate pair-sieve `ell^1` cost survive and are priced by `MC-477`--`MC-478`; `MC-479` eliminates unsigned envelope accuracy as the missing mechanism, and `MC-480` eliminates complete-period character cancellation of that leakage. The immediate unresolved question is now the **centered incomplete translated-character discrepancy on the Selberg false-positive set**, or an exact signed/factorable surrogate that removes that leakage without sacrificing the conductor gain.
