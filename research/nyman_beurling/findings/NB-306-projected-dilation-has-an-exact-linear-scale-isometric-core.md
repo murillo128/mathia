@@ -24,10 +24,10 @@ and let `A_m` be the normalized integer dilation from `NB-290`,
 \end{cases}
 \]
 
-For integer `m>=2`, set
+For integers `N>=4` and `2<=m<=N/2`, set
 
 \[
-q:=\left\lfloor\frac Nm\right\rfloor.
+q:=\left\lfloor\frac Nm\right\rfloor\ge2.
 \]
 
 Then the canonical Nyman section contains an exact isometric copy of its lower-index core:
@@ -84,7 +84,7 @@ A_mg_j
 \tag{5}
 \]
 
-Take `2<=j<=q=floor(N/m)`. Then `mj<=N`. Since `m>=2` and `q>=2` whenever the core is nontrivial, also `m<=N`, so both `g_(mj)` and `g_m` belong to `U_N`. Equation (5) therefore gives
+Take `2<=j<=q=floor(N/m)`. Then `mj<=N`. Since `2<=m<=N/2`, also `m<=N`, so both `g_(mj)` and `g_m` belong to `U_N`. Equation (5) therefore gives
 
 \[
 A_mg_j\in U_N
@@ -140,9 +140,9 @@ A positive operator has zero quadratic form on `v` only when it annihilates `v`,
 T_{N,m}^*T_{N,m}v=v.
 \]
 
-This proves (3). The corresponding left singular vectors are the isometric images `A_mU_q subset U_N`.
+This proves (3). The corresponding left singular subspace contains the isometric image `A_mU_q subset U_N`.
 
-If `2m<=N`, then `q>=2` and `U_q` contains the nonzero generator `g_2`. Thus `T_(N,m)` has norm at least `1`; since it is already a contraction,
+Because `q>=2`, `U_q` contains the nonzero generator `g_2`. Thus `T_(N,m)` has norm at least `1`; since it is already a contraction,
 
 \[
 \beta_{N+1}(m)=1,
@@ -150,7 +150,7 @@ If `2m<=N`, then `q>=2` and `U_q` contains the nonzero generator `g_2`. Thus `T_
 
 proving (4).
 
-More generally, the theorem gives a staircase of exact unit singular directions: whenever `floor(N/m)=q>=2`, the entire lower section `U_q` survives projection without any norm loss. No linear-independence assertion about the displayed generators is needed; the safe multiplicity statement is `dim U_q`.
+More generally, inside the stated range the theorem gives a staircase of exact unit singular directions: whenever `floor(N/m)=q>=2`, the entire lower section `U_q` survives projection without any norm loss. No linear-independence assertion about the displayed generators is needed; the safe multiplicity statement is `dim U_q`.
 
 ## 3. What this changes after NB-303–NB-305
 
@@ -185,13 +185,13 @@ N\lesssim m\lesssim N^2,
 
 up to constants at the lower edge and the asymptotic nature of the upper edge.
 
-This also resolves an apparent tension with `NB-305`. Its high-index adjacent cancellation can lose its self-correlation while `T_(N,m)` still has norm exactly one, because the norm is carried by a **different, lower-index core** `U_floor(N/m)`. For `m=N^(2-eta)` that core is eventually trivial when `eta<1`, so `NB-305` probes beyond the exact plateau; for `m=o(N)`, by contrast, the isometric core grows and operator-norm decay is impossible.
+This also resolves an apparent tension with `NB-305`. Its high-index adjacent cancellation can lose its self-correlation while `T_(N,m)` still has norm exactly one, because the norm is carried by a **different, lower-index core** `U_floor(N/m)`. For `m=N^(2-eta)` that core is absent from the proved plateau when `eta<1`, so `NB-305` probes beyond the exact linear regime; for `m=o(N)`, by contrast, the isometric core grows and operator-norm decay is impossible.
 
 A useful way to read (3) is that the singular-spectrum problem is already partially solved at the bottom: before any arithmetic cancellation estimate is invoked, the multiplication table of the canonical indices forces a block of singular values to be pinned exactly at one. Any future upper bound for `beta` must therefore begin only after this finite-section semigroup core disappears.
 
 ## 4. Adversarial and prior-art audit
 
-The proof uses only three ingredients already established in the line: the exact covariance (5), the nested canonical sections, and the isometry of `A_m`. The index check is essential: `g_m` belongs to `U_N` because the nontrivial-core assumption `q>=2` implies `m<=N/2<N`, while `g_(mj)` belongs to `U_N` because `j<=floor(N/m)`. No statement is made for `m>N/2`, where this particular nonzero core vanishes.
+The proof uses only three ingredients already established in the line: the exact covariance (5), the nested canonical sections, and the isometry of `A_m`. The index check is essential: `g_m` belongs to `U_N` because the theorem assumes `m<=N/2`, while `g_(mj)` belongs to `U_N` because `j<=floor(N/m)`. No statement is made for `m>N/2`, where this particular nonzero canonical core is no longer available.
 
 The step from norm preservation to `T^*T v=v` uses positivity of `I-T^*T`; it is stronger than merely observing one Rayleigh quotient. Conversely, nothing here proves that the unit singular subspace is **exactly** `U_q`, nor that its multiplicity equals the number of displayed generators. Additional accidental unit directions could exist, and no linear-independence count is required for the theorem.
 
@@ -201,7 +201,7 @@ The result remains entirely source-side. It gives no first-free sample estimate,
 
 ## Conclusion
 
-The bilinear question left by `NB-305` does have a rigid obstruction, but it comes from a simpler place than the quadratic tail witness. Integer dilation transports the whole lower canonical section `U_floor(N/m)` exactly inside `U_N`, so projected dilation cannot contract that core at all. Therefore
+The bilinear question left by `NB-305` does have a rigid obstruction, but it comes from a simpler place than the quadratic tail witness. Integer dilation transports the whole lower canonical section `U_floor(N/m)` exactly inside `U_N` throughout `2m<=N`, so projected dilation cannot contract that core at all. Therefore
 
 \[
 \boxed{
