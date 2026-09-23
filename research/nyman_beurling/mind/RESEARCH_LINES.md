@@ -24,6 +24,16 @@ and the complete unit right-singular subspace is exactly `U_q`. Hence singular v
 
 `beta_(N+1)(m)=1` if and only if `2m<=N`.
 
-Thus `m=N/2` is the exact end of the unit-norm plateau, not merely a sufficient lower-scale regime. The unresolved source question is quantitative: **how far below one is the largest singular value, and how is the rest of the singular spectrum distributed, throughout `N/2<m\lesssim N^2`?** Any theorem should respect the exact disappearance of the unit core at the left endpoint and the NB-303 superquadratic decay at the right.
+NB-307 now resolves the algebraic form of the spectrum immediately after quotienting that unit core. On `H_(N,m)=U_N minus-orthogonal U_q`, the defect `I-T_(N,m)^*T_(N,m)` is exactly the generalized residual-Gram pencil `(mR,S)`, and its determinant is bounded below by the canonical multiplicative pivot-survival product
 
-That source theorem is still not the destination theorem. After locating the strong singular subspaces one must propagate the actual moving first-free datum through the NB-298 sampling/null decomposition, lower-section conditioning and off-critical diagonal contraction. A large singular value that lives in a sample-null or unoccupied direction does not improve the Nyman target. The surviving destination question is therefore joint singular-spectrum **and target-occupation** control, not support mass, one-vector Rayleigh overlap, or operator norm alone.
+`prod_(j=q+1)^N c_(m,j)^2`, with `c_(m,j)=sqrt(m) sigma_(mj)/sigma_j` from NB-290.
+
+Consequently the least post-core defect obeys
+
+`1-s_post(N,m)^2 >= prod_(j=q+1)^N c_(m,j)^2`.
+
+In the first post-core strip `N/2<m<=N`, this is directly `1-beta_(N+1)(m)^2`. The unresolved source question is therefore no longer only to estimate an opaque cross-Gram norm: **one concrete route is to lower-bound multiplicative-band pivot survival, equivalently to control `sum_(j=q+1)^N -log c_(m,j)`, while the exact residual-Gram pencil remains available if the determinant certificate is too lossy.** NB-290 currently gives only the opposite-direction bound `c_(m,j)<=1`, so a quantitative rate still requires new arithmetic input.
+
+Thus `m=N/2` is the exact end of the unit-norm plateau, and `m/N^2->infinity` is a sufficient decay regime, with canonical pivot survival now exposing a metric mechanism that can open a gap between them.
+
+That source theorem is still not the destination theorem. After locating the strong singular subspaces one must propagate the actual moving first-free datum through the NB-298 sampling/null decomposition, lower-section conditioning and off-critical diagonal contraction. A large singular value that lives in a sample-null or unoccupied direction does not improve the Nyman target. The surviving destination question is therefore joint singular-spectrum **and target-occupation** control, not support mass, one-vector Rayleigh overlap, operator norm, or pivot survival alone.
