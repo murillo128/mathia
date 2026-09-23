@@ -9,18 +9,19 @@ Associated finding:
 
 Formalized theorem boundary: for the finite canonical sections
 `U N = span {g j | 2 ≤ j ≤ N}`, a linear isometry followed by orthogonal projection
-onto `U N` preserves every vector in a lower section whose image lies in `U N`. If, for
-`q = N / m`, each generator with `2 ≤ j ≤ q` has an image of the form
-`a j • g (m*j) + b j • g m`, then `A(U q) ⊆ U N`; under `4 ≤ N`, `2 ≤ m`, and
-`2*m ≤ N`, projection is therefore inactive on `A(U q)`, norms are preserved there,
-and the projected operator on `U N` has norm exactly one when `g 2 ≠ 0`.
+onto `U N` preserves exactly the vectors in `U (N / m)`, provided the generator tail
+`(g j)_{j ≥ 2}` is linearly independent and
+`A (g j) = a j • g (m*j) + b j • g m` has `a j ≠ 0`. Consequently the projected
+operator has norm one exactly when `2*m ≤ N`, and has norm strictly less than one
+when `2*m > N`.
 
-The arbitrary two-term coefficients are a weaker sufficient support hypothesis implied by
-the exact NB-290 covariance (whose coefficients are `sqrt m` and `-sqrt m / j`); they are
-not an equivalent formalization of that analytic identity. The fractional-part realization
-of the dilation and its covariance, nonvanishing of the concrete Nyman generator, the
-adjoint identity, singular-value multiplicity/exactness, target/sample statements, and
-RH-facing consequences remain outside Lean.
+The arbitrary two-term coefficients together with the nonzero leading coefficient are an
+algebraic interface implied by the exact NB-290 covariance (whose coefficients are `sqrt m`
+and `-sqrt m / j`); they are not a formalization of that analytic identity. The shell proof
+that the concrete Nyman generators are linearly independent in `L²`, the fractional-part
+realization of the dilation and its covariance, the adjoint/kernel identity, singular-value
+multiplicity, target/sample statements, quantitative contraction gaps, and RH-facing
+consequences remain outside Lean.
 -/
 
 noncomputable section
@@ -185,9 +186,286 @@ theorem norm_nyman_projectedDilation (g : ℕ → E) (A : E →ₗᵢ[K] E)
     (dilation_maps_lowerSection K g A N m hN hm h2m a b hcov)
     (generator_mem_canonicalSection K g le_rfl hq) hg2
 
+/-! ## Exact core and threshold -/
+
+/-- The lower section maps into `U N` without assuming in advance that it is nontrivial. -/
+theorem dilation_maps_lowerSection_exact (g : ℕ → E) (A : E →ₗᵢ[K] E)
+    (N m : ℕ) (hm : 2 ≤ m) (a b : ℕ → K)
+    (hcov : ∀ j, 2 ≤ j → j ≤ N →
+      A (g j) = a j • g (m * j) + b j • g m) :
+    (canonicalSection K g (N / m)).map A.toLinearMap ≤ canonicalSection K g N := by
+  rw [canonicalSection, LinearMap.map_span_le]
+  rintro _ ⟨j, hj, rfl⟩
+  have hmpos : 0 < m := by omega
+  have hjpos : 0 < j := Nat.zero_lt_two.trans_le hj.1
+  have hmj : m * j ≤ N := by
+    simpa [Nat.mul_comm] using (Nat.le_div_iff_mul_le hmpos).mp hj.2
+  have hjN : j ≤ N := hj.2.trans (Nat.div_le_self N m)
+  have hmN : m ≤ N := (Nat.le_mul_of_pos_right m hjpos).trans hmj
+  change A (g j) ∈ canonicalSection K g N
+  rw [hcov j hj.1 hjN]
+  apply add_mem
+  · exact smul_mem _ _ (generator_mem_canonicalSection K g
+      (hm.trans (Nat.le_mul_of_pos_right m hjpos)) hmj)
+  · exact smul_mem _ _ (generator_mem_canonicalSection K g hm hmN)
+
+/-- Under tail independence and nonzero leading covariance, the only vectors in `U N`
+whose dilates remain in `U N` are those in `U (N / m)`. -/
+theorem mem_lowerSection_iff_dilation_mem (g : ℕ → E) (A : E →ₗᵢ[K] E)
+    (N m : ℕ) (_hN : 2 ≤ N) (hm : 2 ≤ m)
+    (hg : LinearIndependent K (fun j : {j : ℕ // 2 ≤ j} => g j))
+    (a b : ℕ → K)
+    (hcov : ∀ j, 2 ≤ j → j ≤ N →
+      A (g j) = a j • g (m * j) + b j • g m)
+    (ha : ∀ j, 2 ≤ j → j ≤ N → a j ≠ 0)
+    {v : E} (hv : v ∈ canonicalSection K g N) :
+    A v ∈ canonicalSection K g N ↔ v ∈ canonicalSection K g (N / m) := by
+  classical
+  constructor
+  · intro hAv
+    let I : Finset ℕ := Finset.Icc 2 N
+    have hv' : v ∈ span K (g '' (I : Set ℕ)) := by
+      simpa [canonicalSection, I] using hv
+    have hAv' : A v ∈ span K (g '' (I : Set ℕ)) := by
+      simpa [canonicalSection, I] using hAv
+    obtain ⟨c, hc⟩ :=
+      (Submodule.mem_span_image_finset_iff_exists_fun' (R := K) (v := g)).mp hv'
+    obtain ⟨d, hd⟩ :=
+      (Submodule.mem_span_image_finset_iff_exists_fun' (R := K) (v := g)).mp hAv'
+    let ca : ℕ →₀ K := Finsupp.onFinset I
+      (fun j => if j ∈ I then c j * a j else 0) (by simp_all)
+    let df : ℕ →₀ K := Finsupp.onFinset I
+      (fun j => if j ∈ I then d j else 0) (by simp_all)
+    let lead : ℕ →₀ K := ca.mapDomain (fun j => m * j)
+    let compensation : ℕ →₀ K :=
+      Finsupp.single m (∑ j ∈ I, c j * b j)
+    let relation : ℕ →₀ K := lead + compensation - df
+    have hmpos : 0 < m := by omega
+    have hmul_inj : Function.Injective (fun j : ℕ => m * j) :=
+      mul_right_injective₀ hmpos.ne'
+    have hca_supported : ca ∈ Finsupp.supported K K (I : Set ℕ) := by
+      rw [Finsupp.mem_supported]
+      exact fun _ hk => Finsupp.support_onFinset_subset hk
+    have hlead_supported : lead ∈ Finsupp.supported K K (Set.Ici 2) := by
+      rw [Finsupp.mem_supported]
+      intro k hk
+      rcases Finset.mem_image.mp (Finsupp.mapDomain_support hk) with ⟨j, hj, rfl⟩
+      have hjI : j ∈ I := by exact hca_supported hj
+      have hjI' := Finset.mem_Icc.mp hjI
+      simp only [Set.mem_Ici]
+      exact hm.trans (Nat.le_mul_of_pos_right m (Nat.zero_lt_two.trans_le hjI'.1))
+    have hcomp_supported : compensation ∈ Finsupp.supported K K (Set.Ici 2) :=
+      Finsupp.single_mem_supported K _ (by simpa using hm)
+    have hdf_I : df ∈ Finsupp.supported K K (I : Set ℕ) := by
+      rw [Finsupp.mem_supported]
+      intro j hj
+      exact Finsupp.support_onFinset_subset hj
+    have hdf_supported : df ∈ Finsupp.supported K K (Set.Ici 2) := by
+      apply Finsupp.supported_mono (s := (I : Set ℕ)) _ hdf_I
+      intro j hj
+      exact (Finset.mem_Icc.mp hj).1
+    have hrelation_supported : relation ∈ Finsupp.supported K K (Set.Ici 2) :=
+      sub_mem (add_mem hlead_supported hcomp_supported) hdf_supported
+    have hrelation_combination : Finsupp.linearCombination K g relation = 0 := by
+      rw [show relation = lead + compensation - df by rfl, map_sub, map_add]
+      rw [show lead = ca.mapDomain (fun j => m * j) by rfl,
+        Finsupp.linearCombination_mapDomain]
+      rw [show compensation = Finsupp.single m (∑ j ∈ I, c j * b j) by rfl]
+      rw [Finsupp.linearCombination_single]
+      rw [Finsupp.linearCombination_apply_of_mem_supported (R := K)
+        (v := g ∘ fun j => m * j) hca_supported]
+      rw [Finsupp.linearCombination_apply_of_mem_supported (R := K) (v := g) hdf_I]
+      simp +contextual only [Function.comp_apply, ca, df, Finsupp.onFinset_apply,
+        ite_eq_left]
+      rw [hd, ← hc]
+      have hmap :
+          A (∑ j ∈ I, c j • g j) =
+            (∑ j ∈ I, (c j * a j) • g (m * j)) +
+              (∑ j ∈ I, c j * b j) • g m := by
+        rw [map_sum]
+        simp_rw [map_smul]
+        calc
+          ∑ j ∈ I, c j • A (g j) =
+              ∑ j ∈ I, ((c j * a j) • g (m * j) + (c j * b j) • g m) := by
+            apply Finset.sum_congr rfl
+            intro j hj
+            have hj' := Finset.mem_Icc.mp hj
+            rw [hcov j hj'.1 hj'.2]
+            module
+          _ = (∑ j ∈ I, (c j * a j) • g (m * j)) +
+              (∑ j ∈ I, c j * b j) • g m := by
+            rw [Finset.sum_add_distrib]
+            simp only [← Finset.sum_smul]
+      rw [hmap]
+      module
+    have hg' : LinearIndepOn K g (Set.Ici 2) := by
+      let f : (Set.Ici 2 : Set ℕ) → {j : ℕ // 2 ≤ j} :=
+        fun j => ⟨j, j.property⟩
+      exact hg.comp f (by
+        intro x y hxy
+        exact Subtype.ext (congrArg Subtype.val hxy))
+    have hrelation_zero : relation = 0 :=
+      (linearIndepOn_iff.mp hg') relation hrelation_supported hrelation_combination
+    have hc_high : ∀ j, j ∈ I → N / m < j → c j = 0 := by
+      intro j hjI hjq
+      have hj2 : 2 ≤ j := (Finset.mem_Icc.mp hjI).1
+      have hjN : j ≤ N := (Finset.mem_Icc.mp hjI).2
+      have hmjN : N < m * j := by
+        simpa [Nat.mul_comm] using (Nat.div_lt_iff_lt_mul hmpos).mp hjq
+      have hmj_ne_m : m * j ≠ m := by
+        intro h
+        have : j = 1 := hmul_inj (by simpa using h)
+        omega
+      have hm_ne_mj : m ≠ m * j := hmj_ne_m.symm
+      have hmj_not_I : m * j ∉ I := by
+        simp only [I, Finset.mem_Icc, not_and_or]
+        exact Or.inr (by omega)
+      have hz := congrArg (fun f : ℕ →₀ K => f (m * j)) hrelation_zero
+      simp only [relation, lead, compensation, Finsupp.add_apply, Finsupp.sub_apply,
+        Finsupp.mapDomain_apply_of_injective hmul_inj, Finsupp.single_apply,
+        ite_eq_right hm_ne_mj, ca, df, Finsupp.onFinset_apply, ite_eq_left hjI,
+        ite_eq_right hmj_not_I, Finsupp.zero_apply, sub_zero, add_zero] at hz
+      exact (mul_eq_zero.mp hz).resolve_right (ha j hj2 hjN)
+    have hvlow : v ∈ span K (g '' (↑(Finset.Icc 2 (N / m)) : Set ℕ)) := by
+      rw [Submodule.mem_span_image_finset_iff_exists_fun']
+      refine ⟨c, ?_⟩
+      rw [← hc]
+      apply Finset.sum_subset
+      · intro j hj
+        rcases Finset.mem_Icc.mp hj with ⟨hj2, hjq⟩
+        exact Finset.mem_Icc.mpr ⟨hj2, hjq.trans (Nat.div_le_self N m)⟩
+      · intro j hjI hjlow
+        have hj2 := (Finset.mem_Icc.mp hjI).1
+        have hjq : N / m < j := by
+          by_contra h
+          exact hjlow (Finset.mem_Icc.mpr ⟨hj2, Nat.le_of_not_gt h⟩)
+        rw [hc_high j hjI hjq, zero_smul]
+    simpa [canonicalSection] using hvlow
+  · intro hvq
+    apply dilation_maps_lowerSection_exact K g A N m hm a b hcov
+    exact ⟨v, hvq, rfl⟩
+
+/-- The exact restricted preimage form of the NB-306 intersection law. -/
+theorem canonicalSection_inf_comap_dilation (g : ℕ → E) (A : E →ₗᵢ[K] E)
+    (N m : ℕ) (hN : 2 ≤ N) (hm : 2 ≤ m)
+    (hg : LinearIndependent K (fun j : {j : ℕ // 2 ≤ j} => g j))
+    (a b : ℕ → K)
+    (hcov : ∀ j, 2 ≤ j → j ≤ N →
+      A (g j) = a j • g (m * j) + b j • g m)
+    (ha : ∀ j, 2 ≤ j → j ≤ N → a j ≠ 0) :
+    canonicalSection K g N ⊓
+        (canonicalSection K g N).comap A.toLinearMap =
+      canonicalSection K g (N / m) := by
+  ext v
+  constructor
+  · rintro ⟨hvN, hAv⟩
+    exact (mem_lowerSection_iff_dilation_mem K g A N m hN hm hg a b hcov ha hvN).mp hAv
+  · intro hvq
+    have hvN := lowerSection_le_section K g N m hvq
+    exact ⟨hvN,
+      (mem_lowerSection_iff_dilation_mem K g A N m hN hm hg a b hcov ha hvN).mpr hvq⟩
+
+/-- Projection preserves the norm exactly on the lower canonical core. -/
+theorem norm_projectedDilation_eq_iff_mem_lowerSection
+    (g : ℕ → E) (A : E →ₗᵢ[K] E)
+    (N m : ℕ) (hN : 2 ≤ N) (hm : 2 ≤ m)
+    (hg : LinearIndependent K (fun j : {j : ℕ // 2 ≤ j} => g j))
+    (a b : ℕ → K)
+    (hcov : ∀ j, 2 ≤ j → j ≤ N →
+      A (g j) = a j • g (m * j) + b j • g m)
+    (ha : ∀ j, 2 ≤ j → j ≤ N → a j ≠ 0)
+    (v : canonicalSection K g N) :
+    ‖projectedDilation K (canonicalSection K g N) A v‖ = ‖v‖ ↔
+      (v : E) ∈ canonicalSection K g (N / m) := by
+  change ‖(canonicalSection K g N).starProjection (A (v : E))‖ = ‖(v : E)‖ ↔ _
+  rw [← A.norm_map (v : E)]
+  rw [← (canonicalSection K g N).mem_iff_norm_starProjection]
+  exact mem_lowerSection_iff_dilation_mem K g A N m hN hm hg a b hcov ha v.property
+
+/-- A continuous linear map on a nontrivial finite-dimensional `RCLike` space attains its norm
+on the unit sphere. -/
+theorem exists_unit_norm_apply_eq_opNorm
+    {F : Type*} [NormedAddCommGroup F] [InnerProductSpace K F]
+    [FiniteDimensional K F] [Nontrivial F] (T : F →L[K] F) :
+    ∃ v : F, ‖v‖ = 1 ∧ ‖T v‖ = ‖T‖ := by
+  let _ : NormedSpace ℝ F := NormedSpace.restrictScalars ℝ K F
+  let _ : ProperSpace F := FiniteDimensional.proper_rclike K F
+  have hsphere : (Metric.sphere (0 : F) 1).Nonempty :=
+    NormedSpace.sphere_nonempty.mpr zero_le_one
+  obtain ⟨v, hv, hmax⟩ := (isCompact_sphere (0 : F) 1).exists_sSup_image_eq
+    hsphere T.continuous.norm.continuousOn
+  refine ⟨v, ?_, ?_⟩
+  · simpa [Metric.mem_sphere] using hv
+  · calc
+      ‖T v‖ = sSup ((fun x : F => ‖T x‖) '' Metric.sphere 0 1) := hmax.symm
+      _ = ‖T‖ := T.sSup_sphere_eq_norm
+
+/-- The projected finite-section dilation has norm one exactly on the linear plateau. -/
+theorem norm_nyman_projectedDilation_iff (g : ℕ → E) (A : E →ₗᵢ[K] E)
+    (N m : ℕ) (hN : 2 ≤ N) (hm : 2 ≤ m)
+    (hg : LinearIndependent K (fun j : {j : ℕ // 2 ≤ j} => g j))
+    (a b : ℕ → K)
+    (hcov : ∀ j, 2 ≤ j → j ≤ N →
+      A (g j) = a j • g (m * j) + b j • g m)
+    (ha : ∀ j, 2 ≤ j → j ≤ N → a j ≠ 0) :
+    ‖projectedDilation K (canonicalSection K g N) A‖ = 1 ↔ 2 * m ≤ N := by
+  constructor
+  · intro hnorm
+    have hg2 : g 2 ≠ 0 := by
+      exact LinearIndependent.ne_zero ⟨2, le_rfl⟩ hg
+    let g2U : canonicalSection K g N :=
+      ⟨g 2, generator_mem_canonicalSection K g le_rfl hN⟩
+    have hg2U : g2U ≠ 0 := by
+      intro h
+      apply hg2
+      exact congrArg Subtype.val h
+    let _ : Nontrivial (canonicalSection K g N) := nontrivial_of_ne g2U 0 hg2U
+    obtain ⟨v, hvunit, hvnorm⟩ :=
+      exists_unit_norm_apply_eq_opNorm K (projectedDilation K (canonicalSection K g N) A)
+    have hv_preserved : ‖projectedDilation K (canonicalSection K g N) A v‖ = ‖v‖ := by
+      rw [hvnorm, hnorm, hvunit]
+    have hvq := (norm_projectedDilation_eq_iff_mem_lowerSection K g A N m hN hm
+      hg a b hcov ha v).mp hv_preserved
+    have hq : 2 ≤ N / m := by
+      by_contra hq
+      have hset : Set.Icc 2 (N / m) = ∅ := by
+        ext j
+        simp only [Set.mem_Icc, Set.mem_empty_iff_false, iff_false]
+        omega
+      have hvzero : (v : E) = 0 := by
+        simpa [canonicalSection, hset] using hvq
+      have : ‖v‖ = 0 := by simpa using congrArg norm hvzero
+      linarith
+    exact (Nat.le_div_iff_mul_le (by omega : 0 < m)).mp hq
+  · intro h2m
+    have hN4 : 4 ≤ N := by omega
+    have hg2 : g 2 ≠ 0 := LinearIndependent.ne_zero ⟨2, le_rfl⟩ hg
+    exact norm_nyman_projectedDilation K g A N m hN4 hm h2m hg2 a b
+      (fun j hj hjq => hcov j hj (hjq.trans (Nat.div_le_self N m)))
+
+/-- Above the exact threshold, the projected finite-section dilation is a strict contraction. -/
+theorem norm_nyman_projectedDilation_lt_one (g : ℕ → E) (A : E →ₗᵢ[K] E)
+    (N m : ℕ) (hN : 2 ≤ N) (hm : 2 ≤ m)
+    (hg : LinearIndependent K (fun j : {j : ℕ // 2 ≤ j} => g j))
+    (a b : ℕ → K)
+    (hcov : ∀ j, 2 ≤ j → j ≤ N →
+      A (g j) = a j • g (m * j) + b j • g m)
+    (ha : ∀ j, 2 ≤ j → j ≤ N → a j ≠ 0)
+    (h2m : N < 2 * m) :
+    ‖projectedDilation K (canonicalSection K g N) A‖ < 1 := by
+  apply lt_of_le_of_ne (projectedDilation_norm_le_one K (canonicalSection K g N) A)
+  intro hnorm
+  have := (norm_nyman_projectedDilation_iff K g A N m hN hm hg a b hcov ha).mp hnorm
+  omega
+
 #print axioms dilation_maps_lowerSection
 #print axioms nyman_projectedDilation_core_apply
 #print axioms norm_nyman_projectedDilation_core
 #print axioms norm_nyman_projectedDilation
+#print axioms mem_lowerSection_iff_dilation_mem
+#print axioms canonicalSection_inf_comap_dilation
+#print axioms norm_projectedDilation_eq_iff_mem_lowerSection
+#print axioms norm_nyman_projectedDilation_iff
+#print axioms norm_nyman_projectedDilation_lt_one
 
 end Mathia.NB306
