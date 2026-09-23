@@ -1,7 +1,7 @@
 ---
 id: CLUE-farey-signed-horizontal-perron-collar-cancellation
 type: research-clue
-status: accepted
+status: resolved
 origin: mind
 target_line: farey_discrepancy
 based_on:
@@ -41,6 +41,12 @@ A positive result must exhibit a power saving beyond the `Nx` absolute-collar sc
 
 ## Research disposition
 
-Accepted. `FD-283` shows that on every strict right subcollar `1+eta/log(2Nx) <= sigma <= c`, preserving signs through the `sigma` integral does not itself produce a new oscillatory mechanism. After exact physical grouping and the absolutely convergent expansion of `1/zeta(s)`, the `sigma` integration is a positive radial weight multiplying the Möbius Mellin character `exp(iT log(Nu/n))`, while the conjugate edge pair merely extracts one sine quadrature.
+Outcome: narrowed
 
-The unresolved question is therefore narrower: can this coefficient-space Mellin cancellation, or cancellation between the strict right collar and the portion with `Re(s) <= 1+eta/log(2Nx)`, beat `N^theta x^(2-beta)` at cluster-prunable `T`? No such power saving is established. The clue remains worth pursuing because the exact reduction preserves both a genuinely signed Möbius channel and a cross-collar channel, while ruling out a separate `sigma`-phase explanation.
+Resolved by:
+- [[research/farey_discrepancy/findings/FD-283-signed-right-perron-collar-is-a-positive-mobius-mellin-average.md]]
+- [[research/farey_discrepancy/findings/FD-284-prime-phases-preserve-a-signed-outer-perron-strip-plateau-below-square-root-height.md]]
+
+`FD-283` removes an independent `sigma`-oscillation mechanism on every strict-right subcollar: after exact physical grouping, the `sigma` integration is only a positive radial weight on a Möbius Mellin character, and upper/lower pairing selects its sine quadrature. `FD-284` then supplies the decisive sign-preserving witness requested here: under RH and for `x^epsilon <= T <= x^(1/2-epsilon)`, a fixed thin outer strip still has physical band norm `Nx^(1-o(1))` on prime self-divisor coordinates after the `sigma` integration and upper/lower pairing.
+
+The original escape is therefore narrowed rather than fully refuted. The remaining hard-Perron mechanism must produce comparable coordinatewise cancellation between that outer strip and the rest of the horizontal contour, or alter the contour/truncation architecture by smoothing or another modified Perron representation. That residual question now belongs to the canonical research frontier carried by `FD-284`, not to an active clue state.
