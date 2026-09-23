@@ -23,6 +23,8 @@ based_on:
   - research/mobius_cancellation/findings/MC-471-empty-vector-base-is-two-sided-sifted-translated-ratio-sum.md
   - research/mobius_cancellation/findings/MC-472-pair-sieve-complete-period-factorizes.md
   - research/mobius_cancellation/findings/MC-473-termwise-pair-sieve-completion-pays-exponential-branch-multiplicity.md
+  - research/mobius_cancellation/findings/MC-474-pair-sieve-fourier-spectral-norm-is-exponential.md
+  - research/mobius_cancellation/findings/MC-475-pair-sieve-parseval-coupling-pays-full-frequency-dimension.md
 ---
 
 # Can the staged factor-weighted source kernel beat the Möbius source-frame tariff?
@@ -94,15 +96,32 @@ up to the smaller finite-interval centering term. For a primorial sieve,
 
 So the individual progression character sums are easy, but full inclusion-exclusion plus branchwise absolute values is exponentially expensive in the number of sieve primes. This is a method obstruction, not a lower bound for the true discrepancy: any surviving sieve route must keep cancellation or approximation structure across divisor levels before absolute closure.
 
+`MC-474` and `MC-475` now classify the two most immediate Fourier repairs. Exact additive Fourier expansion followed by separate modewise completion still pays an exponentially large Fourier `ell^1` norm. Replacing `ell^1` scalarization by plain Cauchy--Schwarz/Parseval does not help either: if
+
+\[
+S_r(I)=\sum_{n\in I}K_h(n)e_W(rn),
+\]
+
+then grouping by residues modulo `W` gives exactly
+
+\[
+\sum_{r\bmod W}|S_r(I)|^2
+=W\sum_{a\bmod W}\left|
+\sum_{\substack{n\in I\\n\equiv a\pmod W}}K_h(n)
+\right|^2.
+\]
+
+In the live `|I|<W`, `|I|\le p` regime this is essentially `W|I|`. Thus the centered mask has cheap Fourier `ell^2` energy, but the matching full-grid response carries the entire primorial frequency dimension. Ordinary full-grid additive large-sieve averaging therefore reproduces the same `W` cost rather than yielding a conductor-power saving.
+
 There is also a one-sided prior-art boundary from Gong--Jia--Korolev: above the square-root conductor scale, `sum R_z(n)K_h(n)` and its translated analogue receive logarithmic cancellation because one rough leg can be absorbed into a bounded multiplicative coefficient. That theorem neither handles the joint pair-sieve coefficient nor supplies the required conductor-power gain.
 
 ## Research question
 
-Can the concrete staged-sieve decomposition still produce a strict conductor-power gain through a mechanism that survives `MC-473`?
+Can the concrete staged-sieve decomposition still produce a strict conductor-power gain through a mechanism that survives `MC-473`--`MC-475`?
 
-For the **empty-vector rough×rough component**, the target is no longer generic incomplete completion. Can a **compressed sieve representation**—for example truncated/factorable beta-sieve weights, a Buchstab/bilinear decomposition, or dispersion before branchwise absolute values—control `mathcal D_{W,h}(I)` with a conductor-power gain while preserving the simultaneous shifted roughness? Any approximation to the exact pair-sieve indicator must price its error against the oscillatory sum on the actual source interval; positivity or a standard density asymptotic alone is insufficient.
+For the **empty-vector rough×rough component**, the target is no longer generic incomplete completion, exact hard-mask Fourier expansion, or ordinary full-grid Hilbert-space averaging. Can a **compressed or genuinely structured sieve representation**—for example truncated/factorable beta-sieve weights, a Buchstab/bilinear decomposition, sieve-specific restriction, or dispersion before the full `W`-frequency frame is formed—control `mathcal D_{W,h}(I)` with a conductor-power gain while preserving simultaneous shifted roughness? Any approximation to the exact pair-sieve indicator must price its error against the oscillatory sum on the actual source interval; positivity or a standard density asymptotic alone is insufficient.
 
-The three positive boundary variants obtained by replacing one or both rough indicators by `E` remain separate targets. Their first-exit structure is not covered by the complete-period factorization or the branch-multiplicity calculation.
+The three positive boundary variants obtained by replacing one or both rough indicators by `E` remain separate targets. Their first-exit structure is not covered by the complete-period factorization, branch-multiplicity calculation, or hard-mask Fourier barriers.
 
 For **nonempty rough-block components**, after discarding every bin tuple whose product cannot enter the `MC-467` small-outer region, does the surviving normalized signed mass remain large and structured enough for factor-specific dispersion to matter?
 
@@ -110,20 +129,22 @@ A third channel is **cross-component interference**. It is admissible only if th
 
 ## Why it may matter
 
-The route has progressively removed fake resources: large gcd, extra factor labels, Fejér concentration, independent support/interval tuning, generic well-factorability, blanket support pruning, internal signs of the empty-vector upper-sieve residual, the reciprocal divisor coordinate, complete-period sieve/phase resonance, and now full exact pair-sieve inclusion-exclusion followed by independent completion.
+The route has progressively removed fake resources: large gcd, extra factor labels, Fejér concentration, independent support/interval tuning, generic well-factorability, blanket support pruning, internal signs of the empty-vector upper-sieve residual, the reciprocal divisor coordinate, complete-period sieve/phase resonance, full exact pair-sieve inclusion-exclusion followed by independent completion, exact Fourier `ell^1` recombination, and now plain full-grid `ell^2`/ordinary-large-sieve averaging.
 
-The surviving rough×rough question is therefore sharply structural. A positive result must show how a sieve representation preserves enough divisor-level coherence to beat the `MC-473` branch tariff while still controlling the approximation error. A negative result showing that every natural compressed representation either loses conductor-power precision in the sieve error or recreates the existing source tariff would close most of the componentwise base architecture and leave the boundary, nonempty, or pre-positive interference channels.
+The surviving rough×rough question is therefore sharply structural. A positive result must show how a sieve representation preserves enough divisor-level coherence to beat both the `MC-473` branch tariff and the `MC-475` full-frequency-dimension tariff while still controlling the approximation error. A negative result showing that every natural compressed representation either loses conductor-power precision in the sieve error or recreates one of these source tariffs would close most of the componentwise base architecture and leave the boundary, nonempty, or pre-positive interference channels.
 
 ## Decisive test
 
 For the **base rough×rough term**, set `R=T=1` and work in the recombined `n` representation. Remove odd `h` exactly when `z>2` and subtract the complete mean `-delta_W(h)/p` from the outset.
 
-Do **not** re-expand the exact pair sieve completely and estimate every divisor/residue branch independently: `MC-473` proves that this pays `B_W(h)=prod(1+nu_q(h))`. Instead choose one concrete compressed representation and derive both sides of its tradeoff:
+Do **not** re-expand the exact pair sieve completely and estimate every divisor/residue branch independently: `MC-473` proves that this pays `B_W(h)=prod(1+nu_q(h))`. Do **not** replace that by exact hard-mask Fourier modes and estimate them independently: `MC-474` proves exponential `ell^1` cost. Do **not** rely only on Cauchy--Schwarz/Parseval or the ordinary additive large sieve over all `W` modes: `MC-475` proves that the dual response energy pays the full primorial frequency dimension.
 
-1. the character/trace-function estimate for the retained divisor or bilinear pieces, with all modulus/support dependence explicit; and
+Instead choose one concrete representation that changes this effective complexity—such as a truncated/factorable sieve weight, a Buchstab/bilinear split, a genuinely sieve-adapted restriction estimate, or dispersion before full frequency expansion—and derive both sides of its tradeoff:
+
+1. the character/trace-function estimate for the retained divisor, spectral, or bilinear pieces, with all modulus/support dependence explicit; and
 2. the error incurred when replacing or decomposing the exact pair-sieve indicator on the actual source interval.
 
-Accept the route only if the two bounds together produce a strict conductor-power saving after source length, shell summation, Fejér weights, endpoint separation, coefficient normalization, and source depth are charged. Kill the route if obtaining conductor-power sieve accuracy necessarily forces a divisor level or branch complexity that erases the character saving.
+Accept the route only if the two bounds together produce a strict conductor-power saving after source length, shell summation, Fejér weights, endpoint separation, coefficient normalization, and source depth are charged. Kill the route if obtaining conductor-power sieve accuracy necessarily forces a divisor level, spectral dimension, or branch complexity that erases the character saving.
 
 For the mixed and boundary terms, use the exact first-exit formula from `MC-470`; high rank or nonnegativity alone is not sparsity. For nonempty components, apply the exact lower support `a>D_1...D_r` before estimating surviving tuples. For cross-component interference, retain the signed finite sum through the proposed transform and exhibit a concrete cross term whose cancellation survives normalization; separate positive energies followed by a later appeal to cancellation do not qualify.
 
@@ -131,10 +152,10 @@ Keep exact `(U,D)` collision aggregation wherever a staged form is genuinely nee
 
 ## Evidence boundary
 
-`MC-472` proves only complete-period factorization and local density identities. `MC-473` proves only that **full exact inclusion-exclusion plus independent branchwise completion** is too expensive; it does not bound the actual incomplete discrepancy and does not rule out structured sieve weights, Buchstab identities, bilinear forms, or dispersion.
+`MC-472` proves only complete-period factorization and local density identities. `MC-473` proves only that full exact inclusion-exclusion plus independent branchwise completion is too expensive. `MC-474` proves only that exact hard-mask Fourier expansion plus modewise absolute values has exponential Fourier `ell^1` cost. `MC-475` proves only that plain full-grid `ell^2` coupling restores the full `W`-dimensional response energy. None of these results bounds the actual incomplete discrepancy or rules out structured sieve weights, restriction estimates adapted to such weights, Buchstab identities, bilinear forms, or dispersion before scalarization.
 
 Likewise, none of the persisted findings proves a power saving for the boundary terms, the surviving nonempty components, or cross-component interference. No conductor-power gain, Möbius bound, zero-free region, or RH consequence has been obtained.
 
 ## Research disposition
 
-The clue remains `accepted` and is materially narrowed through `MC-473`. The immediate rough×rough test is now a **sieve-compression tradeoff**: preserve divisor-level structure strongly enough to avoid exponential branch multiplicity, while proving that the resulting approximation/decomposition error is small enough at conductor-power scale. Full inclusion-exclusion plus termwise completion is closed as a standalone route; boundary terms, nonempty components, and pre-positive cross-component interference remain distinct surviving channels.
+The clue remains `accepted` and is materially narrowed through `MC-475`. The immediate rough×rough test is now a **structured sieve-compression/restriction tradeoff**, not a generic large-sieve invocation: preserve divisor-level or weighted spectral coherence strongly enough to avoid both exponential branch/`ell^1` costs and the full primorial `ell^2` dimension, while proving that the approximation/decomposition error is small enough at conductor-power scale. Full inclusion-exclusion plus termwise completion, exact hard-mask Fourier `ell^1` recombination, and ordinary full-grid `ell^2` averaging are closed as standalone routes; boundary terms, nonempty components, and pre-positive cross-component interference remain distinct surviving channels.
