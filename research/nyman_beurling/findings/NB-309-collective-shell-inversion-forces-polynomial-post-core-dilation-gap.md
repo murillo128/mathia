@@ -188,13 +188,13 @@ w:=\sum_{j\in J}a_js_j.
 \tag{13}
 \]
 
-Because `j>q=floor(N/m)`, every `mj>N`. The coefficient extractor `L_n` of `NB-308` annihilates every `g_l` with `l<n` and extracts the coefficient of `g_n`. Since
+Because `j>q=floor(N/m)`, every `mj>N`. The coefficient extractor `L_n` of `NB-308` recovers the coefficient of `g_n` from any finite canonical expansion, not only from `U_n`: for a higher generator `g_l` with `l>n`, its first `n` shell differences are constant and the Möbius weights sum to zero, so `L_n(g_l)=0`; finite independence gives the same coefficient interpretation for the whole expansion. Since
 
 \[
 s_j=g_{mj}-P_{U_N}g_{mj},
 \]
 
-and the projection term belongs to `U_N`, while all indices `mj` are distinct, we have the exact identities
+the projection term lies in `U_N`, every `mj>N`, and the indices `mj` are distinct. Therefore all lower, higher, and off-index contributions are annihilated and
 
 \[
 \boxed{
@@ -236,7 +236,7 @@ Then
 \tag{18}
 \]
 
-Equations (14)--(17) say that `a=Mz`, where the finite matrix indexed by `j in J` and `1<=k<=mN` is
+Equations (14)--(17) say that `a=Mz`, using only the coordinates `1<=k<=mN`, where the finite matrix indexed by `j in J` and `1<=k<=mN` is
 
 \[
 M_{j,k}
@@ -245,7 +245,7 @@ M_{j,k}
 \tag{19}
 \]
 
-We now bound its `ell^2 -> ell^2` norm by a Schur test.
+The truncated shell vector has norm at most `||w||_2`. We now bound the matrix `ell^2 -> ell^2` norm by a Schur test.
 
 ### Row sums
 
@@ -415,9 +415,11 @@ The destination-side warning from `NB-284`--`NB-299` is unchanged. Even a strong
 
 The proof uses only three structural facts already established on this research line: the exact post-core pencil of `NB-307`, the reciprocal-shell coefficient extractor of `NB-308`, and finite independence from `NB-014`. The remaining estimates are elementary.
 
-The most delicate point is the column Schur bound. For fixed `k`, `k|mj` reduces to `(k/gcd(k,m))|j`, so the number of possible `j<=N` is at most `N gcd(k,m)/k`; the adjacent `(k+1)|mj` condition has the analogous count. Thus no hidden factor `N` or divisor count is lost in (23)--(25).
+The first subtle point is that `L_n` must ignore higher-index generators as well as lower ones. This follows directly from the shell-difference formula in `NB-308`: if `l>n`, then `Delta g_l(d)=1/l` for every divisor `d|n`, and the constant contribution is killed by `sum_(d|n) mu(n/d)=0`. Hence (14) is valid even though `w` contains generators with indices both below and above a given `mj`.
 
-A second potential failure mode would be contamination of `L_(mj)(w)` by the projection terms in `s_j`. This cannot occur because every projection term lies in `U_N`, whereas `mj>N` for every `j>floor(N/m)`. Distinct `j` give distinct indices `mj`, so (14) is exact.
+The second delicate point is the column Schur bound. For fixed `k`, `k|mj` reduces to `(k/gcd(k,m))|j`, so the number of possible `j<=N` is at most `N gcd(k,m)/k`; the adjacent `(k+1)|mj` condition has the analogous count. Thus no hidden factor `N` or divisor count is lost in (23)--(25).
+
+A third potential failure mode would be contamination of `L_(mj)(w)` by the projection terms in `s_j`. This cannot occur because every projection term lies in `U_N`, whereas `mj>N` for every `j>floor(N/m)`. Distinct `j` give distinct indices `mj`.
 
 Finally, the denominator is deliberately bounded from above by its trace. This may be very wasteful but is safe and works in the direction needed for a generalized-eigenvalue lower bound.
 
