@@ -178,7 +178,7 @@ The obstruction removes only the **passive full-unitary matrix-decoration** bran
 
 First, off-diagonal observables such as `V_m^*V_n`, ordered products around cycles, commutators, or matrix-valued holonomy can retain the `U(d)` data. Any such proposal must keep those observables alive until the sign-bearing form is constructed rather than project immediately to `E_n`.
 
-Second, a coefficient correspondence with non-full range can behave differently. If the lifted scale element is a partial isometry with a nontrivial fibre source or range projection, then `V_nV_n^*` need not equal `E_n otimes I_d`; the fibre projection can survive into the Gram. This includes genuinely nontrivial Hilbert-module/Fell-bundle correspondences not covered by the present matrix-amplified calculation.
+Second, a coefficient correspondence with non-full range can behave differently. If the lifted scale element is a partial isometry with a nontrivial fibre source or range projection, then `V_nV_n^*` need not equal `E_n\otimes I_d`; the fibre projection can survive into the Gram. This includes genuinely nontrivial Hilbert-module/Fell-bundle correspondences not covered by the present matrix-amplified calculation.
 
 Third, an active fibre dynamics can change the KMS weight. If
 
