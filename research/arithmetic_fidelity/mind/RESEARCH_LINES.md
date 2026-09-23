@@ -36,7 +36,13 @@ when these limits exist, with `beta_0=1-1/c`. Then the leading curvature respons
 
 The first logarithmic moment is lower order. Hence counting density and even normalized Dirichlet-value participation are not intrinsic visibility statistics: a moving logarithmic shell can have `alpha_0=0` but `alpha_2>0` and still create an order-one curvature defect. AF-517 is the regular-density specialization in which the zeroth and second moment shares are locked together by PNT density.
 
-The quantitative question has therefore narrowed from whether participation matters to **which transport-weighted moment profile controls nonuniform deformations**. For fixed-amplitude proportional moves, the leading boundary carrier sees the mismatch between zeroth and second logarithmic-moment participation. What remains is to determine how variable log-displacements, blockwise or oscillatory amplitudes, and the requirement of uniform control over the full domain alter that profile, and whether a source-native criterion can recover both AF-518's uniformly small-displacement invisibility and AF-515--AF-519's mesoscopic visible regimes. For robust rational-prime provenance, independent arithmetic incidence or a source-aware topology may still be necessary even after that curvature threshold is understood.
+AF-520 removes the fixed-amplitude one-block restriction at leading boundary order. For an arbitrary outward tail transport `p -> q_(p,A)>=p`, write `Q_A` for the transported prime-zeta sum at `s_A=1+t_A`, `L_A=log(1/t_A)`, and suppose the normalized source survival `rho_0=Q_A/P` stays bounded below by a positive constant. With `rho_2=Q_A''/P''`,
+
+`kappa_A(s_A)/kappa_P(s_A) = rho_2/rho_0 + O_c(1/L_A) = (1-d_2)/(1-d_0)+O_c(1/L_A)`.
+
+Thus arbitrary outward source-surviving transport is compressed, at one moving boundary scale and to leading curvature order, to the normalized value and second logarithmic moment. The first moment and the detailed displacement geometry are lower order. Variable, blockwise and oscillatory outward displacement are therefore not separate leading-order escape routes once `rho_0` stays nondegenerate.
+
+The quantitative frontier has moved to what this two-defect compression does **not** cover. The live questions are mixed or inward transport, the near-extinction regime `rho_0->0`, lower-order terms and full-profile stability, and whether multi-scale curvature or a richer source-native observable can recover information erased by the one-scale pair `(rho_0,rho_2)`. Any robust rational-prime provenance claim still has to distinguish those destination-visible defects from arithmetic incidence that curvature may never retain.
 
 ## Classify quotient-visible contact through admission, boundary membership and no-contact accessibility rates
 
