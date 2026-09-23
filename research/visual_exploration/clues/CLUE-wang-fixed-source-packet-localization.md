@@ -22,6 +22,7 @@ based_on:
   - research/visual_exploration/findings/VIS-402-finite-additive-cross-sector-signed-factor-control.md
   - research/visual_exploration/findings/VIS-403-unrestricted-finite-latent-conditional-independence-vacuous.md
   - research/visual_exploration/findings/VIS-404-fixed-uniform-latent-monotone-decoder-universal.md
+  - research/visual_exploration/findings/VIS-405-fixed-lipschitz-quantile-budget-has-uniform-mass-floor.md
 ---
 
 # Does Wang packet localization preserve source information without manufacturing strip gain?
@@ -44,19 +45,25 @@ The fixed-`m_1` qutrit residual is therefore still exactly calibrated once the l
 
 `VIS-404` closes the immediate repair “fix the latent prior”. A single pre-fixed `U~Uniform(0,1)` plus the generalized quantile decoder `Q_nu` reproduces any Borel target residual law `nu`, and `Q_nu` is monotone. For positive continuous target densities the same transport can even be `C^1` and bi-Lipschitz, with target-dependent derivative bounds. Fixing the latent distribution, monotonicity, or qualitative smoothness therefore remains non-diagnostic while decoder capacity is allowed to absorb the target.
 
+`VIS-405` identifies the first exact quantitative boundary for that transport escape. If the monotone decoder is required **in advance** to satisfy `Lip(Q)<=L` on a residual interval `I` of length `ell`, then the target law must and, conversely, may be exactly of the form
+
+`nu = (1/L) Leb_I + (1-ell/L) eta`, `L>=ell`,
+
+with arbitrary probability excess `eta`. Equivalently every residual interval `(x,y]` must carry at least `(y-x)/L` mass. Thus a fixed numerical Lipschitz budget is genuinely falsifiable, but its content is precisely a mandatory uniform mass floor; it is not yet a Wang/source-packet null until the numerical `L` is derived independently of the observed residual.
+
 The remaining channel is consequently not “choose a canonical latent and a regular decoder”. It must earn a **pre-specified, falsifiable restriction on the joint latent-to-residual mechanism** from a source-free packet construction or Wang admissibility, with quantitative/structural capacity fixed independently of the candidate residual.
 
 ## Research question
 
 Can an admissible Wang/source-packet construction produce a normalized positive-spectrum distribution for the intrinsic source-subspace commutator Laplacian `Delta_S` whose qutrit residual is genuinely source-specific relative to an independently specified, mechanistically justified source-free control, and can that surviving direction still yield a Wang destination gain after all scale and conditioning costs are charged?
 
-After `VIS-403`--`VIS-404`, the decisive issue is **joint model restriction, not latent representation**. A useful escape should derive before seeing the candidate a non-vacuous family of allowed latent states and decoders/loadings, interaction kernels, phase relations, support/moment constraints, or continuum limits whose induced residual family has a falsifiable boundary. A standard latent prior and qualitative monotonicity/smoothness are not such a boundary when their decoder or numerical regularity constants can be selected from the target.
+After `VIS-403`--`VIS-405`, the decisive issue is **joint model restriction, not latent representation**. A useful escape should derive before seeing the candidate a non-vacuous family of allowed latent states and decoders/loadings, interaction kernels, phase relations, support/moment constraints, or continuum limits whose induced residual family has a falsifiable boundary. A standard latent prior and qualitative monotonicity/smoothness are not such a boundary; a fixed numerical Lipschitz budget is a real boundary, but only after its constant has been justified independently rather than fit to the target.
 
 ## Why it may matter
 
 The qutrit reduction leaves a deliberately small evidential target. Nonuniformity, skew, concentration, boundary mass, positive or negative dependence, unequal counts/rates, non-Gamma amplitudes, sector-local signed cancellation, finite additive common-factor coherence, abstract finite-latent conditional independence, and even a fixed scalar latent prior with arbitrary monotone transport can all be source-free or representation-vacuous when their nuisance structure is not independently restricted.
 
-A surviving anomaly would therefore carry more information than rejection of a convenient parametric or independence null. It would still not be sufficient by itself: the mechanism must also propagate through the Wang map after metric scale, Gram-gap/cluster width, coefficient norm, normalization, rank-selection, and source-information costs are charged.
+`VIS-405` also shows that “put a Lipschitz bound on the decoder” is meaningful only when it becomes a numerical pre-candidate hypothesis. Once frozen, it has a clean observable consequence; if left target-dependent, it collapses back to the `VIS-404` freedom. A surviving anomaly would therefore carry more information than rejection of a convenient parametric or qualitative-regularity null, but the mechanism must still propagate through the Wang map after metric scale, Gram-gap/cluster width, coefficient norm, normalization, rank-selection, and source-information costs are charged.
 
 ## Decisive test
 
@@ -64,9 +71,11 @@ Choose one explicit admissible source family, center it modulo the identity, for
 
 Use only a source-free control justified independently by the packet mechanism. Existing exact controls already cover Gaussian orientation/scale nuisance (`VIS-390`--`VIS-392`), finite additive Gamma packet/shock architectures (`VIS-394`--`VIS-398`), fixed-budget exclusive positive amplitudes (`VIS-399`--`VIS-400`), fixed-budget exclusive sector-local signed coherent sums (`VIS-401`), and finite additive common signed factors with conditionally independent idiosyncratic sector amplitudes (`VIS-402`). `VIS-403` adds a representation gate: do not count conditional independence given some finite latent as a restriction unless the allowed latent law and decoder/interaction family were fixed independently and exclude the trivial `L=u`/`L=S` encoding. `VIS-404` strengthens that gate: fixing the scalar latent law to `Uniform(0,1)` still excludes nothing if an arbitrary monotone quantile decoder remains available.
 
-The next useful test must therefore derive the admissible nuisance family **jointly**. Starting from Wang/source-packet mathematics rather than from the observed residual, predeclare the latent law when relevant, the decoder/interaction family, and any numerical capacity bounds independently of the target. Obtain at least one testable consequence: an inequality, support exclusion, moment/cumulant relation, conditional phase constraint, fixed degree/basis or coefficient budget, fixed Lipschitz/variation bound, restricted copula, scaling law, or another invariant that excludes some residual laws. Then compare the actual source residual only against that frozen family.
+If a proposed control uses monotone `L`-Lipschitz transport from a fixed uniform latent, `VIS-405` gives the exact predeclared null: after fixing `L`, require `nu((x,y]) >= (y-x)/L` for every residual interval, equivalently `nu >= L^(-1)Leb_I`. Do not tune `L` from the observed residual. Derive it from a fixed basis/coefficient budget, packet geometry, incidence rule, source regularity estimate, or another Wang/source-packet mechanism specified before target inspection.
 
-Kill the route if the proposed control can realize arbitrary laws on `u`; if latent, decoder, basis, degree, coefficient, regularity or interaction capacity is enlarged after seeing the candidate; if a fixed latent prior merely pushes arbitrary target dependence into a quantile/transport decoder; if the supposed restriction disappears under an equivalent reparameterization; or if the surviving source-side effect vanishes once the independently justified restricted control is admitted.
+More generally, derive the admissible nuisance family **jointly**. Predeclare the latent law when relevant, the decoder/interaction family, and any numerical capacity bounds independently of the target. Obtain at least one testable consequence: an inequality, support exclusion, moment/cumulant relation, conditional phase constraint, fixed degree/basis or coefficient budget, fixed Lipschitz/variation bound, restricted copula, scaling law, or another invariant that excludes some residual laws. Then compare the actual source residual only against that frozen family.
+
+Kill the route if the proposed control can realize arbitrary laws on `u`; if latent, decoder, basis, degree, coefficient, regularity or interaction capacity is enlarged after seeing the candidate; if a fixed latent prior merely pushes arbitrary target dependence into a quantile/transport decoder; if a nominal Lipschitz restriction chooses its constant from the target; if the supposed restriction disappears under an equivalent reparameterization; or if the surviving source-side effect vanishes once the independently justified restricted control is admitted.
 
 For any surviving source-side anomaly, freeze the statistic and decision rule before confirmation data and then propagate the full effect to the Wang destination. Kill the route if the destination argument imports the target arithmetic estimate, if the effect disappears after admitted nuisance calibration, or if tuned ranks/windows are required.
 
@@ -74,12 +83,12 @@ For any surviving source-side anomaly, freeze the statistic and decision rule be
 
 `VIS-378`--`VIS-386` establish the intrinsic source-subspace and normalization gates; `VIS-388`--`VIS-393` classify the minimal qutrit residual and Gaussian/symmetry boundary; `VIS-394`--`VIS-398` calibrate independent and positively dependent finite Gamma packet mechanisms; `VIS-399`--`VIS-400` calibrate fixed-budget exclusive allocation with arbitrary independently specified positive amplitudes; `VIS-401` calibrates sector-local signed coherent cancellation; `VIS-402` calibrates finite additive common-factor cross-sector coherence whenever conditioning on the independently specified latent restores sector independence.
 
-`VIS-403` does not say that every restricted smooth/noisy latent model is universal or that latent models are invalid controls. It shows that finite-latent conditional independence by itself is non-identifying. `VIS-404` does not show that one fixed smoothness budget or a Wang-derived decoder family is universal; it shows that a fixed standard latent and merely qualitative monotonicity/regularity still leave arbitrary residual freedom when the decoder is target-dependent.
+`VIS-403` does not say that every restricted smooth/noisy latent model is universal or that latent models are invalid controls. It shows that finite-latent conditional independence by itself is non-identifying. `VIS-404` does not show that one fixed smoothness budget or a Wang-derived decoder family is universal; it shows that a fixed standard latent and merely qualitative monotonicity/regularity still leave arbitrary residual freedom when the decoder is target-dependent. `VIS-405` shows the complementary positive boundary: a pre-fixed numerical monotone-Lipschitz budget is non-universal and is exactly equivalent to a uniform mass floor plus arbitrary excess measure.
 
-None of these findings proves that an admissible Wang family has an anomalous residual relative to a properly restricted matched control, identifies an arithmetic cause for such an anomaly, derives the required joint Wang admissibility restriction, or propagates one to a destination gain.
+None of these findings derives the required Wang/source-packet value of that budget, proves that an admissible Wang family has an anomalous residual relative to a properly restricted matched control, identifies an arithmetic cause for such an anomaly, or propagates one to a destination gain.
 
 ## Research disposition
 
 Outcome: **narrowed**.
 
-The clue remains `accepted`. The nuisance frontier has moved past generic finite-latent language and fixed-prior monotone-transport repairs. The next coherent test must derive a pre-candidate Wang/source-packet family with decoder/interaction capacity quantitatively or structurally bounded independently of the residual, then test a consequence that excludes at least some residual laws.
+The clue remains `accepted`. The nuisance frontier has moved past generic finite-latent language and fixed-prior monotone-transport repairs, while `VIS-405` supplies one exact example of what a genuinely frozen quantitative capacity bound would buy. The next coherent test must derive such a bound — `L` or something stronger — from pre-candidate Wang/source-packet mathematics and then test the actual residual against that fixed boundary.
