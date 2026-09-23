@@ -36,76 +36,61 @@ based_on:
   - research/mobius_cancellation/findings/MC-484-buchstab-first-exit-removes-selector-but-preserves-dimension-two.md
   - research/mobius_cancellation/findings/MC-485-complete-q-shift-frame-coefficient-blind-l2-ceiling.md
   - research/mobius_cancellation/findings/MC-486-incomplete-q-subframes-remain-l2-tight.md
+  - research/mobius_cancellation/findings/MC-487-first-exit-inverse-shifts-are-affine-gauge.md
 ---
 
-# Can the staged factor-weighted source kernel beat the Möbius source-frame tariff?
+# Can the normalized first-exit source family beat the Möbius source-frame tariff?
 
 ## Observation
 
-The empty-vector base component is an incomplete translated-ratio character sum against an exact dimension-two pair-sieve mask. `MC-472`--`MC-476` close the direct full-period, inclusion-exclusion, hard-mask Fourier, plain Parseval and coefficient-blind restriction routes. `MC-477`--`MC-478` show that low-denominator sieve envelopes are compatible with the character phase at polynomial spectral cost, but `MC-479`--`MC-481` show that transferring that gain back through Selberg leakage is either unsigned and too large or, after centering, algebraically target-equivalent to the original hard-mask discrepancy.
+The empty-vector source has survived a long sequence of exact reductions but most obvious summaries have now been closed. `MC-472`--`MC-476` rule out direct full-period, inclusion-exclusion, hard-mask Fourier, plain Parseval and coefficient-blind restriction routes. `MC-477`--`MC-483` show that positive or bracketed sieve surrogates either leak too much, retain the hard-mask selector, or force only a polylogarithmic useful cutoff when one demands a fixed conductor-power gain.
 
-`MC-482` supplies an independent positive transfer by a two-sided beta-sieve bracket, but standard fundamental-lemma plus absolute interval-remainder bookkeeping forces the active sieve cutoff to be only polylogarithmic if one demands a fixed conductor-power relative gain on polynomial source intervals. `MC-483` then shows why merely making that bracket well-factorable does not repair the loss: the exact signed error is `theta(B^+-B^-)/2`, and the source-dependent selector `theta` contains precisely the hard-mask information not fixed by the bracket.
+`MC-484` supplied the canonical selector-free escape: exact Buchstab first exit writes the hard mask as a signed sum over first-exit primes `q`, leaving a dimension-two residual pair sieve on intervals of length about `H/q`. In the root coordinate `n=a+qm`, both the translated-ratio character phase and the residual pair-sieve mask carry the same inverse-dilation separation `h q^{-1}`. `MC-485`--`MC-486` then show that the bare complete or incomplete inverse-shift phase family has no generic coefficient-blind `L^2` gain below the natural `sqrt(p)` scale once the moving coefficients are frozen.
 
-`MC-484` changes the frontier. The selector is not intrinsic to the hard mask. Classical Buchstab first exit gives the exact pointwise identity
+`MC-487` sharpens the representation again. The common inverse shifts are **affine gauge**, not an independent source variable. On each root branch, returning to the intrinsic integer coordinate (`x=qm=n` on the zero root, or `x=qm=n+h` on the other root) removes the `h q^{-1}` motion simultaneously from the character phase and from the pair-sieve root separation. The fixed translated-ratio kernel has separation `h`; the fixed pair polynomial is `x(x+h)` or `x(x-h)`. What genuinely remains q-dependent is the arithmetic-progression support, exact endpoints, nested roughness cutoff `P(q)`, and the actual outer/staged coefficients.
 
-\[
-A_z(n)=A_w(n)-\sum_{w\le q<z}\mathbf 1_{q\mid n(n+h)}A_q(n),
-\]
-
-so the hard mask has a selector-free signed decomposition retaining the first-exit prime `q` before absolute values. After writing `n=a+qm` on one of the one or two roots of `n(n+h)=0 (mod q)`, both structures close exactly: the character phase remains a translated-ratio phase with conductor shift `h q^{-1} (mod p)`, and the residual roughness remains a dimension-two pair-sieve mask with CRT shift `h q^{-1} (mod P(q))` and cutoff `q`.
-
-`MC-485` then computes the complete inverse-shift character frame exactly and shows that freezing the `q`-dependent coefficient profile leaves the sharp coefficient-blind operator scale `sqrt(p)`. `MC-486` closes the natural incomplete-source loophole: for every subset `Q` of at least three distinct nonzero residue classes modulo `p`, the restricted phase matrix still has exact operator norm `sqrt(p)`, and when `|Q|=o(p)` its row singular spectrum remains at that scale in every source-weight direction. Thus neither completing over all shifts nor merely replacing the complete family by the actual sparse source-prime residues creates a generic `L^2` saving after the moving mask has been frozen.
-
-The algebraic existence question is therefore answered, and two coefficient-blind shortcuts are closed. First exit still does not lower the sieve dimension: it converts the target into a moving-prime bilinear family on intervals of length about `H/q`. Triangle bounding the prime branches gives only the harmonic/endpoint budget and no conductor power. The surviving resource is now more specific: **the coupled dependence on the same first-exit prime `q` in the source interval, character shift and exact pair-sieve mask, or a separately proved special alignment of the actual arithmetic coefficients with the restricted phase row space/kernel**.
+The accepted continuation is therefore narrower. **The live resource is not motion of the inverse shifts. It is cross-q interaction among the normalized progression supports, changing cutoffs and exact source weights, or a separately proved special alignment of those coefficients.** Any argument whose only q-sensitive ingredient is the visible family `h q^{-1}` has failed the gauge test before analytic estimation begins.
 
 ## Research question
 
-Does the exact Buchstab first-exit family
+After branchwise affine normalization, does the exact first-exit family
 
 \[
 \sum_{w\le q<z}
-\sum_{m\in I_{q,a}}
-K_{h q^{-1}\,(\mathrm{mod}\ p)}(m)
-\mathbf 1_{(m(m\pm\delta_q),P(q))=1},
-\qquad
-q\delta_q\equiv h\pmod{P(q)},
+\sum_{x\in J_{q,a}}
+ c_{q,a}(x)
+ K_{\pm h}(x)
+ \mathbf 1_{(x(x\pm h),P(q))=1}
 \]
 
-admit a conductor-sensitive bilinear, dispersion, reciprocity or staged-factor estimate that uses the common `q` dependence before coefficientwise absolute values and survives restoration of the exact q-vdC source weights?
+with `J_{q,a}` the exact q-progression/endpoint set induced by the root branch, admit a conductor-sensitive bilinear, dispersion, reciprocity or staged-factor estimate that uses the **joint q-dependence of progression incidence, nested cutoff and actual source coefficients before absolute values**?
 
-If not, can one prove a source-specific obstruction showing that every admissible recombination of the first-exit branches collapses to the known harmonic/endpoint, full-frequency, positive-envelope, or coefficient-blind frame tariffs? The separately retained nonempty rough-block, first-exit boundary and pre-positive cross-component channels remain alternatives if the empty-vector first-exit family is killed.
+If not, can one prove a source-specific obstruction showing that every admissible recombination of this normalized family collapses to the known harmonic/endpoint, full-frequency, positive-envelope or coefficient-blind tariffs? The separately retained nonempty rough-block, first-exit boundary and pre-positive cross-component channels remain alternatives if the normalized empty-vector first-exit family is killed.
 
 ## Why it may matter
 
-This is the first live continuation that removes the `MC-483` selector without replacing the hard mask by a positive surrogate. It therefore evades the exact information-loss mechanism that killed the most natural upper/lower-bracket repair. At the same time, `MC-484` prevents false optimism: classical Buchstab iteration preserves the generic two-residue sieve geometry, so the well-known bilinear remainder theory of the **linear** Rosser-Iwaniec sieve cannot simply be imported as a dimension-two theorem.
+The normalized formulation removes a coordinate artifact from the frontier. `MC-484` remains important because first exit eliminates the `MC-483` selector without replacing the hard mask by a positive surrogate, but `MC-487` shows that the apparent coupling of two moving inverse shifts is only how the fixed source pair looks after division by `q`. This prevents spending further effort on reciprocity or frame arguments whose only input is that common shift motion.
 
-`MC-485`--`MC-486` add a second boundary: the new source variable is not valuable merely because its character shift moves or because only an incomplete prime subset is present. A genuine estimate must exploit coefficient motion tied to the same `q`, or prove exceptional arithmetic alignment unavailable to the coefficient-blind frame. A negative result for that coupled family would be equally useful because it would close the most canonical selector-free escape and redirect effort away from further bracket/envelope or bare-source-subset refinements.
+At the same time, normalization does not trivialize cross-q recombination. The affine change is row-dependent, so a common intrinsic coordinate turns the family into different arithmetic-progressions with different `P(q)` cutoffs rather than one common coefficient vector. That is exactly the structure absent from `MC-485`--`MC-486`. A genuine gain must therefore be visible in the incidence/cutoff/weight family itself.
 
 ## Decisive test
 
-Work first in the `R=T=1` empty-vector source frame. Split the first-exit prime into dyadic blocks and keep the exact root parameterization `n=a+qm`. For each block, retain simultaneously:
+Work first in the `R=T=1` empty-vector source frame and split first-exit primes into dyadic blocks. **Normalize each root branch to the intrinsic integer coordinate before proposing a new estimate.** Retain simultaneously the exact progression condition induced by `q`, the source interval endpoints, the fixed translated-ratio separation `±h`, the exact residual pair-sieve cutoff `P(q)`, and the outer q-vdC/Fejér/staged-sieve coefficients actually present in the source frame.
 
-- the shortened source interval and its exact endpoint dependence;
-- the translated-ratio character separation `h q^{-1} (mod p)`;
-- the exact residual pair-sieve cutoff `q` and CRT shift `delta_q`;
-- the outer q-vdC/Fejér and staged-sieve coefficients that actually occur in the source frame.
+Accept the route only if a proved cross-q estimate gains a fixed conductor power after all coefficient normalizations, shell summations, endpoint terms and diagonal costs are restored. The gain must occur before replacing the `q` sum by absolute values. A per-q estimate followed by triangle inequality is insufficient unless its aggregate already beats the first-exit harmonic/endpoint budget.
 
-Accept the route only if a proved estimate for the recombined block gains a fixed conductor power after all coefficient normalizations, shell summations, endpoint terms and diagonal costs are restored. The gain must occur **before** replacing the `q` sum by absolute values. A bound obtained independently for each `q` and then summed is not enough unless its aggregate genuinely beats the trivial first-exit budget.
+Reject any argument that derives its gain only from the family of inverse shifts `h q^{-1}`: `MC-487` removes those shifts branchwise. Reject any argument that then freezes or common-majorizes the progression/cutoff profile and invokes only a phase-frame norm: `MC-485`--`MC-486` close that coefficient-blind architecture. Expansion of the exact hard mask must still pass the exponential branch/frequency tariffs of `MC-473`--`MC-475`, and positive replacement must still pass the transfer barriers of `MC-479`--`MC-483`.
 
-Do not count a proof that freezes or common-majorizes the `q`-dependent interval/sieve profile and then appeals only to the complete or incomplete inverse-shift phase matrix: `MC-485` and `MC-486` show that this coefficient-blind architecture retains the `sqrt(p)` operator scale, even for sparse incomplete source residue sets. A proposed exceptional-mode or kernel mechanism must instead prove that the **actual arithmetic coefficients** have the required alignment.
-
-Do not invoke Iwaniec's bilinear linear-sieve remainder or Pomykała's subunit-dimensional Rosser-Iwaniec result as a black box. A transfer must verify the actual `kappa=2` density and the moving character/sieve shifts, or explicitly reduce the problem to dimension-one pieces without reopening exponential branch multiplicity. Higher-dimensional Buchstab/DHR-type identities may reorganize the tree, but iteration counts as progress only if the terminal pieces land in an independently controlled analytic range.
-
-Kill this continuation if every valid decomposition either: (i) scalarizes the first-exit prime and returns to a positive-envelope/selector problem; (ii) expands the residual hard mask with the superpolynomial branch/frequency tariffs already proved in `MC-473`--`MC-475`; (iii) freezes the moving coefficients and returns to the coefficient-blind phase-frame ceilings of `MC-485`--`MC-486`; or (iv) retains `q` but cannot beat the harmonic/endpoint recombination after exact source weights are restored.
+A promising continuation must instead exhibit one of the following in exact form: a dispersion identity coupling distinct q-progressions, a nested-cutoff cancellation unavailable rowwise, a bilinear/factorable structure surviving dimension two, or a proved arithmetic alignment of the actual outer coefficients with the normalized source family. If none yields a conductor-power gain, close this continuation and return to the already separated nonempty/boundary/pre-positive channels rather than reintroducing the inverse-shift coordinate.
 
 ## Evidence boundary
 
-`MC-484` proves only the exact Buchstab specialization and the simultaneous affine/CRT closure of the character phase and pair-sieve mask. `MC-485`--`MC-486` prove exact complete and incomplete coefficient-blind phase-frame obstructions after the `q`-dependent coefficient profile is frozen. None proves a bilinear estimate for the actual moving mask, a conductor-power saving, a dimension-two analogue of Iwaniec's remainder theorem, or any improved bound for the Möbius function.
+`MC-484` proves the exact selector-free Buchstab decomposition and residual dimension-two pair sieve. `MC-485`--`MC-486` prove complete and incomplete coefficient-blind phase-frame obstructions after moving coefficients are frozen. `MC-487` proves that the simultaneous inverse shifts in the phase and pair sieve are branchwise affine gauge and that normalization transfers q-dependence to support/cutoff/weights.
 
-The classical literature establishes Buchstab iteration in arbitrary sieve settings, bilinear/factorable remainder structure for the linear Rosser-Iwaniec sieve, a subunit-dimensional extension, separate higher-dimensional sieve frameworks, and the character-correlation identities underlying the frame calculations. The current evidence does not identify a theorem that directly supplies the required dimension-two, moving-shift, character-coupled estimate. Absence from the targeted search is not a novelty claim.
-
-`MC-482`--`MC-483` remain valid: positive bracketing still has the level/selector tariffs they identify. `MC-484` avoids those tariffs by changing the representation, while `MC-485`--`MC-486` show that discarding the resulting coefficient motion loses the remaining generic source-frame leverage. No Möbius bound, zero-free region, or RH consequence has been obtained.
+None of those findings proves a bilinear estimate for the normalized cross-q family, a conductor-power saving, a dimension-two analogue of the linear Rosser-Iwaniec remainder theorem, or an improved bound for the Möbius function. Classical Buchstab/switching and character-sum literature supplies the underlying operations; absence of a directly applicable theorem in the targeted audit is not a novelty claim.
 
 ## Research disposition
 
-The clue remains `accepted` and is narrowed again. The immediate empty-vector question is no longer whether an exact signed representation exists, whether the bare complete `q` motion creates a coefficient-blind gain, or whether source-prime incompleteness alone lowers that frame scale: those possibilities are closed by `MC-484`--`MC-486`. The active test is whether the **dimension-two moving-prime bilinear family with its exact `q`-dependent interval and pair-sieve coefficients retained** admits a conductor-sensitive estimate, or whether those actual coefficients have a provable special phase-space alignment. If that test fails, continue with the already-separated nonempty, boundary or pre-positive cross-component channels rather than returning to deeper positive brackets or bare incomplete-source averaging.
+The clue remains `accepted`, but the target is narrowed. The immediate question is no longer whether exact first exit exists, whether complete/incomplete inverse-shift frames produce a coefficient-blind gain, or whether the shared motion `h q^{-1}` itself is exploitable. Those routes are closed by `MC-484`--`MC-487`.
+
+The active test is now the **affine-normalized first-exit progression/cutoff family with its exact source weights retained**. If that family cannot beat the harmonic/endpoint budget before absolute values, the empty-vector first-exit continuation should be regarded as closed and research should move to the already separated alternative channels.
