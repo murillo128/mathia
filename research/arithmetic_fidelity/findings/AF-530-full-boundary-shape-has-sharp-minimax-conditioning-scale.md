@@ -6,13 +6,13 @@
 
 ## Claim
 
-AF-529 proved that a single finite boundary secant recovers the power-separated anchor exponent in the AF-527 co-tuned control family only at the vanishing signal scale
+AF-529 proved that one finite boundary secant recovers the power-separated anchor exponent in the AF-527 co-tuned control family only at the vanishing signal scale
 
 \[
 \delta_A:=\frac{\log A}{A\log\log A}.
 \]
 
-That two-sample result leaves open whether observing the **entire boundary-layer shape** can improve the deterministic recovery scale. It cannot, for the baseline-differenced carrier-shape channel considered here.
+Observing the **entire baseline-differenced boundary-layer shape** does not improve that deterministic recovery scale.
 
 Fix a nondegenerate compact interval
 
@@ -21,19 +21,11 @@ K=[\theta_-,\theta_+]\Subset(0,1),
 \qquad D:=\theta_+-\theta_->0.
 \]
 
-For every \(\theta\in K\), let
+For \(\theta\in K\), set \(B_A(\theta)=\lfloor A^\theta\rfloor\) and choose the co-tuned multipliers \(C_A,\widetilde C_{A,\theta}\) exactly as in AF-527. Write
 
 \[
-B_A(\theta)=\lfloor A^\theta\rfloor
+L_A=\log A,\qquad H_A=\log L_A,
 \]
-
-and choose the co-tuned multipliers \(C_A,\widetilde C_{A,\theta}\) exactly as in AF-527, with
-
-\[
-L_A=\log A,\qquad H_A=\log L_A.
-\]
-
-Let
 
 \[
 R_{A,\theta}(t)
@@ -44,7 +36,7 @@ R_{A,\theta}(t)
 B_0(X,t)=\sum_{p\le X}p^{-1-t},
 \]
 
-and retain the complete anchored shape on the physical boundary layer,
+and retain the anchored shape
 
 \[
 F_{A,\theta}(u)
@@ -53,7 +45,7 @@ F_{A,\theta}(u)
 \qquad 0\le u\le1.
 \]
 
-Then AF-529 strengthens uniformly in \(\theta\in K\) to
+Then AF-529 upgrades uniformly over \(K\) to
 
 \[
 \boxed{
@@ -66,13 +58,7 @@ Then AF-529 strengthens uniformly in \(\theta\in K\) to
 \tag{1}
 \]
 
-Thus, after the only normalization that prevents the signal from vanishing, the entire continuum profile converges to the one-dimensional affine family
-
-\[
-G_\theta(u)=u(1-\theta).
-\]
-
-In particular,
+Hence the complete normalized continuum profile converges to the one-dimensional family \(G_\theta(u)=u(1-\theta)\), and
 
 \[
 \boxed{
@@ -86,7 +72,7 @@ In particular,
 \tag{2}
 \]
 
-Now observe one unknown profile through deterministic sup-norm error:
+Now observe one unknown profile under deterministic sup-norm error,
 
 \[
 Y_A=F_{A,\theta}+e_A,
@@ -95,7 +81,7 @@ Y_A=F_{A,\theta}+e_A,
 \tag{3}
 \]
 
-Define the worst-case minimax risk
+Define
 
 \[
 \mathcal R_A(\varepsilon_A)
@@ -111,7 +97,7 @@ If
 
 \[
 \frac{\varepsilon_A}{\delta_A}\longrightarrow c
-\qquad\text{for }c\in[0,\infty],
+\qquad(c\in[0,\infty]),
 \]
 
 then
@@ -125,38 +111,32 @@ then
 \tag{5}
 \]
 
-Consequently,
+Therefore
 
 \[
 \boxed{
 \text{uniform recovery of }\theta\text{ on }K
-\quad\Longleftrightarrow\quad
+\iff
 \varepsilon_A=o(\delta_A).
 }
 \tag{6}
 \]
 
-So arbitrarily dense sampling of the complete anchored carrier shape does **not** improve the deterministic noise order obtained from AF-529's single endpoint secant. At leading order the profile contains only one scalar direction, and the endpoint already reads that direction optimally.
+Arbitrarily dense sampling of this full shape channel therefore has the same sharp worst-case noise order as AF-529's endpoint secant. At leading order there is only one retained shape direction, and the endpoint already reads it optimally.
 
-There is also an intrinsic amplitude-quotient formulation. Put
+There is also an amplitude-quotient statement. Put
 
 \[
 f_{A,\theta}(u)=\log R_{A,\theta}(u/A)
 \]
 
-and pass to the quotient Banach space
-
-\[
-C([0,1])/\mathbb R
-\]
-
-that forgets additive amplitude constants, with quotient norm
+and use the quotient norm on \(C([0,1])/\mathbb R\),
 
 \[
 \|[f]\|_q:=\inf_{c\in\mathbb R}\|f-c\|_\infty.
 \]
 
-Since \([f_{A,\theta}]=[F_{A,\theta}]\), equation (1) gives
+Since \([f_{A,\theta}]=[F_{A,\theta}]\),
 
 \[
 \boxed{
@@ -170,318 +150,223 @@ Since \([f_{A,\theta}]=[F_{A,\theta}]\), equation (1) gives
 \tag{7}
 \]
 
-Thus forgetting the absolute carrier amplitude does not erase the anchor exponent, but it leaves the same vanishing conditioning order \(\delta_A\); only the constant changes with the observation geometry.
+Thus forgetting the absolute carrier amplitude does not erase \(\theta\), but it leaves the same vanishing conditioning order \(\delta_A\).
 
 ## Derivation
 
-### 1. AF-529 is uniform on compact anchor-exponent families
+### 1. Compact-uniform form of AF-529
 
-AF-529 proves, for each fixed \(\theta\in(0,1)\),
+AF-529 gives for each fixed \(\theta\in(0,1)\)
 
 \[
 \sup_{0\le t\le A^{-1}}
 \left|
 \frac{H_A}{L_A}(\log R_{A,\theta})'(t)-(1-\theta)
-\right|
-\to0.
+\right|\to0.
 \tag{8}
 \]
 
-Every estimate in that proof is uniform when \(\theta\) ranges over a compact \(K\Subset(0,1)\).
-
-Indeed, if \(\theta\in K\), then uniformly
+Its estimates are uniform on \(K\Subset(0,1)\). Indeed,
 
 \[
-\log B_A(\theta)
-=
-\theta L_A+O(A^{-\theta_-}),
+\log B_A(\theta)=\theta L_A+O(A^{-\theta_-})
 \tag{9}
 \]
 
-and hence
+uniformly, and therefore
 
 \[
-\log\log B_A(\theta)
-=
-H_A+\log\theta+o(1).
+\log\log B_A(\theta)=H_A+\log\theta+o(1)
 \tag{10}
 \]
 
-Because \(\theta\ge\theta_->0\), the Mertens errors used in AF-529 satisfy uniformly
+uniformly because \(\theta\ge\theta_->0\). The Mertens estimates and elementary moment domination used in AF-529 then give, uniformly for \(\theta\in K\) and \(0\le t\le A^{-1}\),
 
 \[
-B_0(B_A(\theta),t)
-=
-\log\log B_A(\theta)+B_1
-+O(L_A^{-1})+O(L_A/A),
+\frac{H_A}{L_A}\mu_A(t)=1+o(1),
+\qquad
+\frac{H_A}{L_A}\mu_{B_A(\theta)}(t)=\theta+o(1),
 \tag{11}
 \]
 
-for \(0\le t\le A^{-1}\). Likewise, with
+where
 
 \[
-M_1(X,t)=\sum_{p\le X}(\log p)p^{-1-t},
-\qquad
-\mu_X(t)=\frac{M_1(X,t)}{B_0(X,t)},
+\mu_X(t)
+=
+\frac{\sum_{p\le X}(\log p)p^{-1-t}}
+{\sum_{p\le X}p^{-1-t}}.
 \]
 
-the elementary moment bounds in AF-529 give
+The co-tuning also satisfies
 
 \[
-\sup_{\theta\in K}\sup_{0\le t\le A^{-1}}
-\left|
-\frac{H_A}{L_A}\mu_{B_A(\theta)}(t)-\theta
-\right|
-\to0.
+\frac{\widetilde C_{A,\theta}}{C_A}=1+O(H_A^{-1})
 \tag{12}
 \]
 
-The \(X=A\) term is independent of \(\theta\) and satisfies
+uniformly on \(K\): the factor \(\log\theta\) stays bounded and the nearest-integer error remains exponentially smaller than \(H_A^{-1}\). Consequently the multiplier term in AF-529's exact derivative identity is still \(o(L_A/H_A)\) uniformly. Thus
 
 \[
-\sup_{0\le t\le A^{-1}}
-\left|
-\frac{H_A}{L_A}\mu_A(t)-1
-\right|
-\to0.
-\tag{13}
-\]
-
-For the multiplier contribution, AF-527's co-tuning gives
-
-\[
-\frac{\widetilde C_{A,\theta}}{C_A}
-=
-1+O(H_A^{-1})
-\tag{14}
-\]
-
-uniformly on \(K\), because \(\log\theta\) is bounded there and nearest-integer rounding is exponentially smaller than \(H_A^{-1}\). The derivative term therefore remains
-
-\[
-\sup_{\theta\in K}\sup_{0\le t\le A^{-1}}
-\frac{H_A}{L_A}
-|g_t(\widetilde C_{A,\theta})-g_t(C_A)|
-\to0,
-\tag{15}
-\]
-
-with
-
-\[
-g_t(C)=\frac{C^{1+t}\log C}{C^{1+t}-1}.
-\]
-
-Combining (12)--(15) in AF-529's exact logarithmic-derivative identity proves the compact-uniform version of (8):
-
-\[
+\boxed{
 \sup_{\theta\in K}\sup_{0\le t\le A^{-1}}
 \left|
 \frac{H_A}{L_A}(\log R_{A,\theta})'(t)-(1-\theta)
-\right|
-\to0.
-\tag{16}
+\right|\to0.
+}
+\tag{13}
 \]
 
-### 2. Integration gives a rank-one limiting shape family
+### 2. The entire boundary profile is asymptotically rank one
 
-For \(0\le u\le1\),
+Integrating (13) from \(0\) to \(u/A\) and multiplying by \(AH_A/L_A=1/\delta_A\) proves (1).
 
-\[
-F_{A,\theta}(u)
-=
-\int_0^{u/A}(\log R_{A,\theta})'(t)\,dt.
-\]
-
-Multiply by \(AH_A/L_A=1/\delta_A\). The uniform estimate (16) then gives (1).
-
-For \(\theta,\eta\in K\), subtract the two expansions in (1):
+Subtracting the expansions for \(\theta\) and \(\eta\) gives
 
 \[
 \frac{F_{A,\theta}(u)-F_{A,\eta}(u)}{\delta_A}
 =
 u(\eta-\theta)+r_A(\theta,\eta,u),
-\tag{17}
+\tag{14}
 \]
 
-where the symbol on the right is \(u(\eta-\theta)\) and
+where here the first symbol on the right is the profile variable \(u\), so equivalently the leading term is simply
+
+\[
+u(\eta-\theta)=u(\eta-\theta),
+\]
+
+and
 
 \[
 \sup_{\theta,\eta\in K}\sup_{u\in[0,1]}|r_A(\theta,\eta,u)|\to0.
-\tag{18}
+\tag{15}
 \]
 
-Therefore
+Since \(\sup_{u\in[0,1]}u=1\), equation (2) follows.
 
-\[
-\frac{\|F_{A,\theta}-F_{A,\eta}\|_\infty}{\delta_A}
-=|\theta-\eta|+o(1)
-\]
+### 3. Endpoint decoding gives the upper minimax bound
 
-uniformly, because \(\sup_{0\le u\le1}u=1\). This proves (2).
-
-The occurrence of \(\nu\) in (17) is only typographical notation for the profile variable \(u\); no additional parameter is introduced.
-
-### 3. Endpoint decoding supplies the minimax upper bound
-
-Let \(\Pi_K\) denote metric projection onto the interval \(K\), and define
+Let \(\Pi_K\) be metric projection onto \(K\) and define
 
 \[
 \widehat\theta_A(Y)
 =
 \Pi_K\!\left(1-\frac{Y(1)}{\delta_A}\right).
-\tag{19}
+\tag{16}
 \]
 
 By (1), uniformly in \(\theta\in K\),
 
 \[
-\frac{F_{A,\theta}(1)}{\delta_A}
-=1-\theta+o(1).
+\frac{F_{A,\theta}(1)}{\delta_A}=1-\theta+o(1).
 \]
 
-Since projection onto an interval is nonexpansive,
+Because projection onto an interval is nonexpansive,
 
 \[
 \sup_{\theta\in K}\sup_{\|e\|_\infty\le\varepsilon_A}
 |\widehat\theta_A(F_{A,\theta}+e)-\theta|
 \le
 \frac{\varepsilon_A}{\delta_A}+o(1).
-\tag{20}
+\tag{17}
 \]
 
-The constant estimator \((\theta_-+\theta_+)/2\) has worst-case error \(D/2\). Hence
+The constant midpoint estimator has risk \(D/2\), hence
 
 \[
 \limsup_A\mathcal R_A(\varepsilon_A)
 \le
-\min\!\left(c,\frac D2\right)
-\tag{21}
+\min\!\left(c,\frac D2\right).
+\tag{18}
 \]
 
-whenever \(\varepsilon_A/\delta_A\to c\), including \(c=\infty\) in the obvious extended sense.
+### 4. Overlapping sup-norm balls give the matching lower bound
 
-Thus the complete continuum profile cannot improve the order achieved by reading only its terminal secant.
-
-### 4. Overlapping noise balls give the matching lower bound
-
-Fix two parameters \(\theta_0,\theta_1\in K\). If
+For \(\theta_0,\theta_1\in K\), if
 
 \[
-\|F_{A,\theta_0}-F_{A,\theta_1}\|_\infty
-\le2\varepsilon_A,
-\tag{22}
+\|F_{A,\theta_0}-F_{A,\theta_1}\|_\infty\le2\varepsilon_A,
+\tag{19}
 \]
 
-then the midpoint profile
+the midpoint \((F_{A,\theta_0}+F_{A,\theta_1})/2\) is an admissible datum for both parameters. Every decoder therefore incurs worst-case error at least \(|\theta_0-\theta_1|/2\) on that datum.
+
+If \(0<c<\infty\), choose any
 
 \[
-Y_A=\frac12(F_{A,\theta_0}+F_{A,\theta_1})
+0<d<\min(2c,D)
 \]
 
-lies in both admissible noise balls. No decoder receiving \(Y_A\) can distinguish which parameter generated it, so its worst-case error on that datum is at least
-
-\[
-\frac{|\theta_0-\theta_1|}{2}.
-\tag{23}
-\]
-
-Suppose first \(0<c<\infty\). For any
-
-\[
-0<d<\min(2c,D),
-\]
-
-choose \(\theta_0,\theta_1\in K\) with \(|\theta_0-\theta_1|=d\). Equation (2) gives
+and parameters in \(K\) separated by \(d\). Equation (2) gives
 
 \[
 \|F_{A,\theta_0}-F_{A,\theta_1}\|_\infty
 =
-\delta_A(d+o(1))
-<2\varepsilon_A
+\delta_A(d+o(1))<2\varepsilon_A
 \]
 
-for all sufficiently large \(A\). Hence
+for large \(A\), so
 
 \[
 \liminf_A\mathcal R_A(\varepsilon_A)\ge d/2.
 \]
 
-Letting \(d\uparrow\min(2c,D)\) yields
+Letting \(d\uparrow\min(2c,D)\) yields the lower half of (5). For \(c=0\), (17) gives zero risk asymptotically. For \(c=\infty\), take any \(d<D\), use (19) for large \(A\), and let \(d\uparrow D\). This proves (5).
 
-\[
-\liminf_A\mathcal R_A(\varepsilon_A)
-\ge
-\min\!\left(c,\frac D2\right).
-\tag{24}
-\]
+If \(\varepsilon_A=o(\delta_A)\), equation (17) gives uniform consistency. Conversely, if \(\varepsilon_A/\delta_A\not\to0\), a subsequence has \(\varepsilon_A/\delta_A\ge c_0>0\), and the same overlap argument gives a fixed positive minimax error on that subsequence. This proves (6).
 
-For \(c=0\), the lower bound is trivial and (20) gives convergence to zero. For \(c=\infty\), take any \(d<D\); equation (22) eventually holds and then let \(d\uparrow D\). Combining with (21) proves (5).
+### 5. Quotienting amplitude changes the constant, not the scale
 
-Equation (6) is immediate: \(\varepsilon_A=o(\delta_A)\) is sufficient by (20), while if it fails there is a subsequence with \(\varepsilon_A/\delta_A\ge c_0>0\), and the same two-point overlap argument gives a fixed positive minimax error on that subsequence.
-
-### 5. Quotienting amplitude keeps the same order
-
-Because subtracting \(f(0)\) changes only the additive constant,
-
-\[
-[f_{A,\theta}]=[F_{A,\theta}].
-\]
-
-For a real continuous function \(h\),
+For every real continuous \(h\),
 
 \[
 \|[h]\|_q
 =
 \inf_c\|h-c\|_\infty
 =
-\frac12\bigl(\max h-\min h\bigr).
-\tag{25}
+\frac12(\max h-\min h).
+\tag{20}
 \]
 
-The normalized difference in (17) converges uniformly to
+The normalized difference in (14) converges uniformly to \(u(\eta-\theta)\), whose range has length \(|\eta-\theta|\). Continuity of the quotient norm under ambient sup-norm perturbations gives (7).
 
-\[
-u(\eta-\theta),
-\]
-
-whose range has length \(|\eta-\theta|\). Quotient norms are 1-Lipschitz with respect to the ambient sup norm, so (18) immediately gives (7).
-
-Thus the scalar zero-jet may be discarded completely while the relational shape still retains \(\theta\); however, the retained separation remains only order \(\delta_A\).
+This is the appropriate statement after completely forgetting the zero-jet amplitude. It does not identify quotient-noise constants with the anchored observation model in (3).
 
 ## Prior-art / novelty audit
 
-The minimax mechanism in (22)--(24) is classical optimal-recovery reasoning, not a new general theorem. Micchelli, Rivlin, and Winograd studied worst-case recovery bounds from finite information in the 1970s, and the Micchelli--Rivlin survey organized the broader optimal-recovery framework. Donoho later made the modulus-of-continuity viewpoint explicit in statistical estimation and connected it to optimal recovery. Modern work such as Ettehad--Foucart treats worst-case recovery from inaccurate observations directly.
+The minimax mechanism is classical optimal-recovery and inverse-stability mathematics. In particular:
 
-No novelty is claimed for overlapping deterministic noise balls, minimax two-point lower bounds, quotient norms, or the principle that inverse stability is governed by a modulus of continuity.
+- Charles A. Micchelli, T. J. Rivlin, and S. Winograd, **“The optimal recovery of smooth functions,”** *Numerische Mathematik* 26 (1976), 191–200, gives classical worst-case lower bounds for recovery from finite information.
+- Charles A. Micchelli and T. J. Rivlin, **“A Survey of Optimal Recovery,”** in *Optimal Estimation in Approximation Theory* (1977), DOI `10.1007/978-1-4684-2388-4_1`, is classical prior art for worst-case optimal recovery.
+- David L. Donoho, **“Statistical Estimation and Optimal Recovery,”** *Annals of Statistics* 22(1), 238–270 (1994), DOI `10.1214/aos/1176325367`, explicitly relates estimation difficulty to a modulus of continuity and connects minimax estimation to optimal recovery.
+- Mahmood Ettehad and Simon Foucart, **“Instances of Computational Optimal Recovery: Dealing with Observation Errors,”** *SIAM/ASA Journal on Uncertainty Quantification* 9(4), 1438–1456 (2021), DOI `10.1137/20M1328476`, treats worst-case optimal recovery with inaccurate observations.
+- Heinz W. Engl, Martin Hanke, and Andreas Neubauer, ***Regularization of Inverse Problems***, Mathematics and Its Applications 375, Springer/Kluwer (1996), DOI `10.1007/978-94-009-1740-8`, provides standard inverse-problem language for instability and regularization.
 
-The durable Arithmetic Fidelity content is the **exact specialization to the AF-527 co-tuned arithmetic control family**: AF-529's finite-window expansion is uniform over compact anchor exponents, the whole continuum carrier shape collapses after normalization to the one-dimensional family \(u(1-\theta)\), and therefore the complete profile has the same sharp deterministic recovery scale \(\log A/(A\log\log A)\) as one endpoint secant. More samples do not improve the minimax order because there is no additional leading shape direction to average against adversarial sup-norm error.
+No novelty is claimed for overlapping deterministic noise balls, two-point minimax lower bounds, quotient norms, or the principle that inverse stability is controlled by a modulus of continuity.
+
+The durable Arithmetic Fidelity content is the exact specialization to the AF-527 control family: AF-529's finite-window law is uniform over compact anchor-exponent families, the **whole** normalized carrier shape collapses to \(u(1-\theta)\), and its deterministic minimax recovery scale is exactly \(\log A/(A\log\log A)\). Thus denser access to the same boundary-shape observable does not restore a stronger fidelity margin.
 
 ## Boundaries and falsification audit
 
-1. **Anchored shape, not the raw amplitude profile.** Equations (1)--(6) concern \(F_{A,\theta}(u)=f_{A,\theta}(u)-f_{A,\theta}(0)\). AF-527's static amplitude mismatch is only known to be super-algebraically small in \(H_A\), which is still much larger than \(\delta_A\) on the relevant scale. The theorem therefore does not claim that the unquotiented raw profile has no additional information.
+1. **Anchored shape, not raw amplitude.** Equations (1)--(6) concern \(F_{A,\theta}(u)=f_{A,\theta}(u)-f_{A,\theta}(0)\). AF-527 only shows that the static amplitude mismatch is super-algebraically small in \(H_A\); that can still be much larger than \(\delta_A\). No claim is made that the unquotiented raw profile lacks additional information.
 
-2. **Amplitude quotient has its own noise geometry.** Equation (7) identifies exact quotient separation. If observation error is itself measured in the quotient norm, endpoint differencing can double the ambient error and the minimax constant changes. The theorem claims equality of the asymptotic **order**, not invariance of constants across observation models.
+2. **Amplitude quotient has a different noise geometry.** Equation (7) identifies quotient separation. If observation error is measured directly in quotient norm, minimax constants differ. Only the asymptotic order is shared.
 
-3. **Deterministic adversarial sup-norm noise only.** Independent stochastic errors at many sample points may average down and define a different experiment. Correlated, integral, derivative, or Sobolev noise geometries likewise require separate analysis.
+3. **Deterministic adversarial sup-norm noise.** Independent stochastic errors at many samples may average down and define a different experiment. Correlated, integral, derivative, Sobolev, or probabilistic noise requires separate analysis.
 
-4. **Compact exponent families away from 0 and 1.** The compactness of \(K\Subset(0,1)\) makes the AF-529 asymptotics uniform. Letting \(\theta\) approach 0 or 1 with \(A\) can create new boundary regimes.
+4. **Compact exponent family.** The uniform result assumes \(K\Subset(0,1)\). Regimes with \(\theta=\theta_A\to0\) or \(1\) can have different asymptotics.
 
-5. **Anchor exponent, not rational-prime identity.** As in AF-528/AF-529, the recovered parameter is \(\theta\). The proof uses Mertens-type prime moments and does not separate rational primes from generalized-prime systems sharing the same moment laws.
+5. **Anchor exponent, not rational-prime identity.** The recovered target is \(\theta\). The proof uses Mertens-type moments and does not distinguish rational primes from matched generalized-prime systems with the same moment laws.
 
-6. **Exact carrier ratio, not normalized curvature defect.** The result still concerns the AF-527 carrier ratio before the curvature-to-carrier approximation. Uniform derivative control for the curvature-defect ratio would be an additional theorem.
+6. **Exact carrier ratio, not curvature-defect ratio.** The theorem remains upstream of the curvature-to-carrier approximation. A corresponding derivative/profile theorem for the normalized curvature defect needs separate error control.
 
-7. **No minimal-lift theorem.** The full profile being asymptotically rank one does not prove that the first derivative or endpoint secant is minimal among every admissible representation. It proves only that within this declared boundary-shape channel, the complete continuum observation does not improve the deterministic noise order.
+7. **No universal minimal-lift claim.** The full declared shape channel being asymptotically rank one does not prove that the endpoint or first derivative is minimal among all possible representations.
 
-8. **The scale is target-relative.** The normalization \(\delta_A\) is forced by recovery of an order-one change in \(\theta\). A weaker target, such as distinguishing exponents separated by a vanishing amount, has a correspondingly different decision scale.
+8. **Target-relative conditioning.** The scale \(\delta_A\) is the margin for order-one recovery of \(\theta\). Distinguishing parameters whose separation itself tends to zero is a different decision problem.
 
 ## Consequence
 
-AF-527, AF-528, AF-529, and AF-530 now separate four distinct fidelity questions for the same matched-control family:
+AF-527--AF-530 separate four fidelity layers for one matched-control family. Scalar amplitude can collide beyond every algebraic order in \(1/\log\log A\); one infinitesimal relational derivative recovers the coarse anchor exponent; a physical finite secant carries it only at scale \(\delta_A\); and the complete anchored boundary shape does not improve the deterministic conditioning order.
 
-- scalar amplitude can collide beyond every algebraic order in \(1/\log\log A\);
-- an infinitesimal relational derivative recovers the coarse anchor exponent;
-- a physical finite secant carries that exponent only at the vanishing scale \(\delta_A\);
-- retaining the entire anchored boundary shape does not improve the worst-case deterministic conditioning order.
-
-The lesson is sharper than injective versus non-injective recovery. **Once a lift restores a discriminator, one must still ask whether the whole retained observation class contains additional stable directions.** Here it does not at leading order: the normalized profile is asymptotically rank one. Any genuine conditioning improvement must therefore come from a different scale, a different observable, extra source-derived structure, or a different noise geometry rather than denser sampling of the same boundary shape.
+The resulting principle is stronger than an injectivity test: **after a lift restores a discriminator, inspect the dimension and modulus of the retained shape family.** Here the normalized family is asymptotically rank one, so a conditioning improvement must come from another scale, another observable, extra source-derived structure, or another noise geometry—not from denser sampling of the same boundary shape.
