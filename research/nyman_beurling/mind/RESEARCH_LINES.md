@@ -60,8 +60,24 @@ NB-313 extends anchored non-decay beyond the finite-section boundary. For every 
 
 where `c_ext=1/(32 sqrt(log(2)(1+pi^2/6))) > 0.0230`. The proof pulls the cross-correlation back to `(0,1]`; the first reciprocal shell alone forces a universal positive fractional-part integral, while the canonical neutralization term contributes only `O(1/N)`. More sharply, if `m/N->lambda` with finite `lambda>=1`, the normalized anchored correlation converges to a strictly positive profile `B(lambda)`. Hence any moving family with `beta_(N+1)(m)->0` must satisfy the necessary condition `m/N->infinity`.
 
+NB-314 identifies the eventual external shape at each fixed section. If `mu_N` is reciprocal-period averaging and `p_N=P_(U_N)1`, then
+
+`sqrt(m) T_(N,m) -> R_N`, with `R_N v = <v,p_N> r_N`,
+
+where `r_N` represents `mu_N`. Hence `L_N:=||R_N||=||P_(U_N)1|| ||mu_N||`, so the far-external coefficient factors exactly into captured Nyman-target energy and reciprocal-shell mean susceptibility. The fixed-section proof alone is nonuniform because its elementary averaging argument sees the large common period `lcm(2,...,N)`.
+
+NB-315 removes that lcm loss at the already-known superquadratic frontier. Farey control of centered shell partial sums gives the uniform primitive estimate `||G_u||_infinity=O(N^(5/2)||u||)`, and therefore
+
+`||sqrt(m) T_(N,m)-R_N|| <= C_mix N^(5/2)/m`, with `C_mix<11`.
+
+Because NB-314 also gives `L_N >> sqrt(N)`, this strengthens to the relative estimate
+
+`||sqrt(m) T_(N,m)-R_N|| / L_N < 80 N^2/m`.
+
+Thus every moving family with `m/N^2->infinity` satisfies `sqrt(m) beta_(N+1)(m)/L_N -> 1`, and the normalized projected-dilation operator itself converges to the normalized rank-one channel. The superquadratic region of NB-303 is therefore asymptotically rank one, not merely small. This does not lower the sufficient decay threshold: absolute operator error requires the stronger `m/N^(5/2)->infinity`, while the rank-one shape at quadratic scale is a relative statement against `L_N`.
+
 Thus NB-309 and NB-311 still bracket the staircase boundary layer near the exact plateau edge, while NB-312 and NB-313 answer the separate question of complete source-overlap collapse across every bounded linear dilation scale. The post-core gap from `1` is always nonzero and has a polynomial lower bound internally; it can tend to zero throughout an `o(N)` neighborhood of the first plateau edge; deeper inside and just beyond the finite section the operator norm may move a macroscopic distance below `1`, but it cannot collapse to zero while `m/N` remains bounded.
 
-Accordingly `m=N/2` is the exact end of the unit-norm plateau, NB-311 gives the current widest explicit vanishing-gap regime near staircase edges, NB-309 prevents superpolynomial collapse of the first internal post-core gap, and NB-312--NB-313 show that complete source-overlap decay requires a genuinely superlinear dilation `m/N->infinity`. `m/N^2->infinity` remains a sufficient full-decay regime from NB-303. The unresolved source-side decay transition is therefore squeezed between the necessary superlinear scale and the sufficient superquadratic scale, while the detailed gap from `1` inside `N/2<m<=N` remains a separate spectral question.
+Accordingly `m=N/2` is the exact end of the unit-norm plateau, NB-311 gives the current widest explicit vanishing-gap regime near staircase edges, NB-309 prevents superpolynomial collapse of the first internal post-core gap, and NB-312--NB-313 show that complete source-overlap decay requires a genuinely superlinear dilation `m/N->infinity`. `m/N^2->infinity` remains the sufficient full-decay regime, now sharpened by NB-314--NB-315 to a target-weighted rank-one asymptotic there. The unresolved source-side transition is whether that mixing/decay picture can be pushed into the genuinely intermediate window `N<<m<=O(N^2)`, or whether coherent centered shell modes survive and obstruct it.
 
 That source theorem is still not the destination theorem. After locating the strong singular subspaces one must propagate the actual moving first-free datum through the NB-298 sampling/null decomposition, lower-section conditioning and off-critical diagonal contraction. A large singular value that lives in a sample-null or unoccupied direction does not improve the Nyman target. The surviving destination question is therefore joint singular-spectrum **and target-occupation** control, not support mass, one-vector Rayleigh overlap, operator norm, or pivot survival alone.
