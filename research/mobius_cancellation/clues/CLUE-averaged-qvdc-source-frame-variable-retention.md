@@ -31,6 +31,8 @@ based_on:
   - research/mobius_cancellation/findings/MC-479-selberg-envelope-leakage-is-order-one-on-near-cutoff-single-violations.md
   - research/mobius_cancellation/findings/MC-480-selberg-leakage-complete-period-phase-factorizes.md
   - research/mobius_cancellation/findings/MC-481-centered-selberg-leakage-is-target-equivalent-modulo-envelope.md
+  - research/mobius_cancellation/findings/MC-482-two-sided-beta-sieve-transfer-forces-a-polylogarithmic-cutoff.md
+  - research/mobius_cancellation/findings/MC-483-well-factorable-bracket-width-does-not-transfer-the-signed-error.md
 ---
 
 # Can the staged factor-weighted source kernel beat the Möbius source-frame tariff?
@@ -61,17 +63,15 @@ for only `O(sqrt(p) log p)`, uniformly in the rational denominator. `MC-478` ret
 
 The quantity called `\mathcal E_{W,h}` in `MC-480` is exactly `\mathcal D_L`. Meanwhile `MC-478` plus the zero Fourier mode of the Bera--Viswanadham envelope already gives a conductor-sensitive bound for `\mathcal D_\beta`. Therefore a conductor-power estimate for centered leakage is, up to that already-cheap comparison term, the original exact rough×rough discrepancy itself. Centering the leakage does not create an independent transfer lemma.
 
-The low-denominator family remains analytically useful as a controlled comparison object, but the base-component bridge must now contain genuinely additional signed/factorable structure rather than merely a better norm estimate for `beta-A`. The mixed rough/boundary and first-exit terms remain distinct, as do nonempty rough-block components and cross-component interference before positive closure.
+`MC-482` then supplies a genuinely independent order-theoretic replacement: bracket the hard mask between lower and upper beta-sieve divisor sums and use their midpoint. The replacement error is bounded by the upper-minus-lower gap without first estimating the hard-mask discrepancy. Standard fundamental-lemma plus absolute interval-remainder bookkeeping, however, can make that gap conductor-power small only at a polylogarithmic sieve cutoff; a fixed-power cutoff forces incompatible demands on sieve depth and divisor level.
+
+`MC-483` closes the immediate “make the bracket well-factorable and keep the phase” repair. For any pointwise bracket, the exact signed error has the form `(A-B)=theta(B^+-B^-)/2` with `|theta|<=1`. The selector `theta` exactly carries the hard-mask information not fixed by the bracket. Factorability of the upper/lower width therefore does not pass automatically to the signed replacement error: the phase-coupled source coefficient is `K_h theta`, not `K_h`. Without an independent theorem on the selector, taking absolute values returns precisely to the phase-blind gap priced in `MC-482`.
+
+The low-denominator family remains analytically useful as a controlled comparison object, but the base-component bridge must now contain genuinely additional signed/factorable structure rather than merely a better norm estimate for `beta-A`, a deeper upper/lower bracket, or a stronger factorability class for the bracket width. The mixed rough/boundary and first-exit terms remain distinct, as do nonempty rough-block components and cross-component interference before positive closure.
 
 ## Research question
 
-Can one construct a genuinely signed/factorable surrogate or decomposition for the exact pair-sieve channel whose retained variables expose a conductor-sensitive estimate **not reducible to the tautological centered identity**
-
-\[
-\mathcal D_{B-A}=\mathcal D_B-\mathcal D_A,
-\]
-
-or can the needed gain instead be recovered from first-exit boundary terms, nonempty rough-block components, or pre-positive cross-component interference?
+Can one construct an **exact signed/factorable error representation** for the hard pair-sieve channel, or prove a nontrivial structural theorem for the exact upper/lower selector, whose retained variables expose a conductor-sensitive estimate before coefficientwise absolute values? If not, can the needed gain instead be recovered from first-exit boundary terms, nonempty rough-block components, or pre-positive cross-component interference?
 
 For the current Selberg envelope, merely proving
 
@@ -82,21 +82,32 @@ For the current Selberg envelope, merely proving
 +\frac{|I|}{p}\overline{(\beta-A)}
 \]
 
-small is no longer an independent subproblem: `MC-481` shows that it directly solves the exact centered hard-mask discrepancy once the known envelope bound is inserted. A useful replacement must therefore expose an exact decomposition, factorization, first-exit rule, or signed cancellation mechanism that supplies new estimable structure before this algebraic equivalence is invoked.
+small is no longer an independent subproblem: `MC-481` shows that it directly solves the exact centered hard-mask discrepancy once the known envelope bound is inserted. For a two-sided bracket, merely proving that the gap has well-factorable divisor coefficients is likewise insufficient: `MC-483` shows that the actual signed error contains the additional source selector `theta`.
+
+A useful replacement must therefore expose an exact decomposition, factorization, first-exit rule, selector theorem, or signed cancellation mechanism that supplies new estimable structure before either algebraic target-equivalence or bracket-width scalarization is invoked.
 
 For nonempty components and boundary terms, retain their exact support and first-exit structure rather than importing the empty-vector positive-envelope analysis automatically.
 
 ## Why it may matter
 
-The route has progressively removed apparent resources that were artifacts of representation or positive closure: favorable gcd sectors, generic well-factorability, residual coefficient signs, complete-period resonance, full inclusion-exclusion, hard-mask Fourier expansion, generic Hilbert-space averaging, coefficient-uniform restriction, unsigned Selberg-envelope accuracy, complete-period phase cancellation of leakage, and now centered leakage as an allegedly cheaper transfer target.
+The route has progressively removed apparent resources that were artifacts of representation or positive closure: favorable gcd sectors, generic well-factorability, residual coefficient signs, complete-period resonance, full inclusion-exclusion, hard-mask Fourier expansion, generic Hilbert-space averaging, coefficient-uniform restriction, unsigned Selberg-envelope accuracy, complete-period phase cancellation of leakage, centered leakage as an allegedly cheaper transfer target, and now factorability of an upper/lower bracket width without control of its signed selector.
 
-What survives is sharper. The low-denominator envelope proves that the character phase can coexist with a polynomial spectral representation cost; the failure lies in transporting that gain to the exact hard mask without simply restating the target discrepancy. If a signed/factorable representation exposes additional internal cancellation before separate absolute values or positive closure, the route may still evade the full-primorial obstructions. If no such retained structure exists, attention should redirect to boundary/nonempty components or cross-component interference rather than further refinements of centered Selberg leakage.
+What survives is sharper. The low-denominator envelope proves that the character phase can coexist with a polynomial spectral representation cost, and the two-sided beta-sieve shows that an independently priceable replacement exists at the order level. The failure lies in transporting either advantage to the exact hard mask at conductor-power accuracy without discarding the sign information that distinguishes the target. If an exact signed/factorable representation or a genuine selector theorem exposes additional internal cancellation before separate absolute values or positive closure, the route may still evade the full-primorial and level-depth obstructions. If no such retained structure exists, attention should redirect to boundary/nonempty components or cross-component interference.
 
 ## Decisive test
 
-Work in the `R=T=1` empty-vector source frame unless explicitly testing one of the separate boundary/nonempty channels. For any proposed surrogate `B`, first write the exact centered identity relating `B`, `A`, and `B-A`. Do not credit smallness of `\mathcal D_{B-A}` as a transfer advantage if the only proof obligation is algebraically equivalent to `\mathcal D_A` modulo an already-controlled `\mathcal D_B`.
+Work in the `R=T=1` empty-vector source frame unless explicitly testing one of the separate boundary/nonempty channels. For any proposed surrogate `B`, first write the exact identity relating `B`, `A`, and `B-A`. Do not credit smallness of `\mathcal D_{B-A}` as a transfer advantage if the only proof obligation is algebraically equivalent to `\mathcal D_A` modulo an already-controlled `\mathcal D_B`.
 
-Accept a surrogate route only if it supplies additional exact structure that can be estimated independently: for example a finite signed factorization whose components retain source variables, a first-exit decomposition with a quantitatively smaller support/mass theorem, or a bilinear/dispersion identity in which the translated-ratio phase couples before coefficientwise absolute values. Price every surviving term against the conductor-sensitive envelope scale
+For any proposed upper/lower bracket `B^- <= A <= B^+`, also write the exact selector representation
+
+\[
+A-B=\frac12\theta(B^+-B^-),
+\qquad |\theta|\le1.
+\]
+
+Do not credit well-factorability, programmable factorability, or another divisor-coefficient property of `B^+-B^-` as a property of the signed error unless the argument either removes `theta` by an exact identity or proves enough structure of the actual selector to preserve the needed phase-coupled estimate. If the proof eliminates `theta` only by `|theta|<=1`, price the resulting positive gap against the `MC-482` level-versus-accuracy tariff.
+
+Accept a surrogate route only if it supplies additional exact structure that can be estimated independently: for example a finite signed factorization of `A-B` whose components retain source variables, a first-exit decomposition with a quantitatively smaller support/mass theorem, a structural representation of the exact selector, or a bilinear/dispersion identity in which the translated-ratio phase couples before coefficientwise absolute values. Price every surviving term against the conductor-sensitive envelope scale
 
 \[
 \frac{z^2(\log(2z))^5}{G(z)}\sqrt p\log(2p)
@@ -107,14 +118,16 @@ together with source interval length, shell summation, Fejér weights, coefficie
 
 For mixed/boundary terms, use the exact first-exit structure from `MC-470`; for nonempty pieces, retain the exact bin-product support pruning; for cross-component interference, retain the signed finite decomposition through the proposed transform and exhibit a concrete surviving cross term rather than appealing to cancellation after separate absolute bounds.
 
-Kill any proposed repair whose only new content is a different majorant, centering, or norm on a replacement error while the exact identity leaves that error target-equivalent to the hard-mask discrepancy. A signed surrogate remains admissible only when its matching/decomposition theorem creates an independently priced structure rather than merely renaming the original target.
+Kill any proposed repair whose only new content is a different majorant, centering, norm, deeper classical bracket, or stronger factorability class for the bracket width while the exact signed residual remains either target-equivalent to the hard mask or hidden behind an uncontrolled selector.
 
 ## Evidence boundary
 
 `MC-477` proves a denominator-independent character estimate for each low-denominator rational mode. `MC-478` improves the aggregate envelope recombination using exact local pair-sieve Fourier factorization. `MC-479` proves that the current Selberg envelope is exact on survivors but has order-one false positives near the cutoff and only logarithmically suppressed unsigned leakage on the complete local period. `MC-480` proves that completing also in the conductor coordinate does not cancel that leakage. `MC-481` proves that after canonical centering the leakage discrepancy equals the difference between the controlled envelope discrepancy and the original exact hard-mask discrepancy.
 
-None of these results supplies a conductor-power estimate for the exact rough×rough discrepancy, a signed/factorable surrogate, boundary/nonempty components, or cross-component interference. `MC-481` is an accounting obstruction, not a lower bound or hardness theorem. The low-denominator envelope remains a useful controlled comparison representation, but no Möbius bound, zero-free region, or RH consequence has been obtained.
+`MC-482` proves that a classical two-sided beta-sieve midpoint is an independent replacement mechanism, but standard phase-blind fundamental-lemma bookkeeping forces a polylogarithmic cutoff for conductor-power transfer on polynomial source intervals. `MC-483` proves that factorability of an upper/lower bracket width alone does not repair that loss: the exact signed error contains a source selector that is equivalent to the hard-mask information left unresolved by the bracket.
+
+None of these results supplies a conductor-power estimate for the exact rough×rough discrepancy, an exact signed factorable error decomposition, a useful theorem for the actual selector, boundary/nonempty components, or cross-component interference. `MC-481` and `MC-483` are accounting/information obstructions, not lower bounds or hardness theorems. No Möbius bound, zero-free region, or RH consequence has been obtained.
 
 ## Research disposition
 
-The clue remains `accepted`, but centered Selberg leakage is closed as an independent transfer subproblem. The immediate surviving question is whether a **genuinely signed/factorable exact representation** introduces estimable structure beyond the identity `D_(B-A)=D_B-D_A`, or whether the conductor gain must instead come from first-exit boundary terms, nonempty components, or pre-positive cross-component interference.
+The clue remains `accepted`, but three tempting transfer subproblems are now closed in their naive forms: centered Selberg leakage, phase-blind two-sided beta-sieve transfer at fixed-power cutoff, and factorability of the upper/lower gap without selector control. The immediate surviving question is whether the empty-vector channel admits an **exact signed factorable representation or nontrivial selector theorem** that retains the translated-ratio phase before scalarization; otherwise the conductor gain must come from first-exit boundary terms, nonempty components, or pre-positive cross-component interference.
