@@ -172,7 +172,7 @@ u_N(y/m)\,\overline{u_N(y)}\,dy.
 \tag{13}
 \]
 
-In (13), the first factor is the ordinary function value `u_N(y/m)`. Using (7),
+The first factor in the integrand is the ordinary function value `u_N(y/m)`. Using (7),
 
 \[
 |\langle u_N,A_m u_N\rangle|
