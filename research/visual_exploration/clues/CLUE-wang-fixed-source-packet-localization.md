@@ -1,7 +1,7 @@
 ---
 id: CLUE-visual-wang-fixed-source-packet-localization
 type: research-clue
-status: accepted
+status: resolved
 origin: research-watch
 target_line: visual_exploration
 based_on:
@@ -25,6 +25,7 @@ based_on:
   - research/visual_exploration/findings/VIS-405-fixed-lipschitz-quantile-budget-has-uniform-mass-floor.md
   - research/visual_exploration/findings/VIS-406-fixed-decoder-complexity-forces-uniform-mass.md
   - research/visual_exploration/findings/VIS-407-qutrit-source-invariant-chart-is-boundary-singular.md
+  - research/visual_exploration/findings/VIS-408-wang-final-test-packet-does-not-supply-qutrit-decoder-budget.md
 ---
 
 # Does Wang packet localization preserve source information without manufacturing strip gain?
@@ -37,40 +38,43 @@ In the minimal generic rank-one qutrit test bed, `VIS-388`--`VIS-390` reduce the
 
 `VIS-403`--`VIS-404` close the representation-level escape in which unrestricted finite latent variables or a fixed uniform latent with target-dependent monotone transport are presented as meaningful restrictions. `VIS-405` identifies the first exact quantitative boundary: a pre-fixed monotone `L`-Lipschitz decoder forces the residual target law to contain the uniform component `L^(-1)Leb_I`. `VIS-406` converts ordinary frozen representation budgets into such a mass floor: fixed basis/coefficient budgets and fixed polynomial degree give explicit target-independent Lipschitz bounds.
 
-`VIS-407` now removes **source conjugacy/support geometry itself** as the missing justification for that budget in the rank-one qutrit test bed. The normalized source quotient has a regular Hilbert-Schmidt arc-length coordinate `theta`, while the complete algebraic invariant `x=tr(E^3)^2=(1/6)cos^2(3theta)` is boundary-singular: root gaps split like `sqrt(x)` or `sqrt(1/6-x)` at the two repeated-root boundaries. A Lipschitz/derivative budget measured only in `x` is therefore coordinate-dependent and cannot be credited as intrinsic source complexity. Together with the arbitrary-law symmetry result of `VIS-393`, this localizes the remaining restriction to **mechanism-specific source--tangent/source--response coupling**, not source conjugacy data by themselves.
+`VIS-407` removes source conjugacy/support geometry itself as the missing justification for that budget in the rank-one qutrit test bed. The normalized source quotient has a regular Hilbert-Schmidt arc-length coordinate `theta`, while the complete algebraic invariant `x=tr(E^3)^2=(1/6)cos^2(3theta)` is boundary-singular. A Lipschitz/derivative budget measured only in `x` is therefore coordinate-dependent and cannot be credited as intrinsic source complexity.
+
+`VIS-408` now audits the **actual final Wang packet/test-function interface**. Wang chooses an arbitrary fixed real-even `eta in C_c^infinity((-lambda/2,lambda/2))` with `int eta^2=1`, sets `f=eta^2`, `K=hat(f)`, and optimizes the resulting scalar zero-pair functional `C(f)`. Before optimization this is an infinite-dimensional smooth class with no packet-uniform derivative, finite-basis, polynomial-degree, or Lipschitz budget; normalized bumps can be localized arbitrarily inside the fixed support. After optimization Wang obtains an explicit target-independent cosine profile in the larger `L^2` class and approximates it by admissible smooth squares, but that profile is a scalar zero-pair kernel, not a source-to-qutrit response map. The source supplies no dictionary turning it into the decoder restriction required by `VIS-405`--`VIS-407`.
 
 ## Research question
 
 Can an admissible Wang/source-packet construction derive, before inspecting the candidate residual, a genuinely target-independent family of allowed source-to-response maps whose complexity is fixed by packet resources or another intrinsic operational constraint, and does the resulting qutrit residual then violate the corresponding exact source-free null while surviving full Wang destination-cost propagation?
 
-After `VIS-405`--`VIS-407`, a useful restriction must be more than a chosen latent prior, qualitative smoothness, an arbitrary scalar invariant chart, or a post-hoc finite representation. It should arise from the actual packet/source mechanism: for example a fixed response basis with independently bounded coefficients, a source--tangent differential estimate in an intrinsic metric, a finite incidence/interaction architecture, a phase/support constraint, or another source-derived admissibility condition that excludes some residual laws before the target is seen.
+The direct Wang-packet answer is now negative: Wang's actual test-packet admissibility neither imposes a universal numerical decoder capacity nor defines the qutrit source-response map. Any surviving version of this question would therefore require a **new explicit theorem** mapping Wang's arithmetic source decomposition into the intrinsic qutrit tangent/response object and bounding that map independently of the target. That is no longer a property of the existing packet interface.
 
 ## Why it may matter
 
-The current qutrit branch has deliberately eliminated increasingly flexible ways to manufacture a residual anomaly. The generic approximation-theory part is now understood: once a real complexity budget exists, it can be translated into a falsifiable observable null. The unresolved scientific content is whether Wang/source-packet mathematics supplies that budget rather than merely giving a language in which one can fit it.
+The current qutrit branch deliberately eliminated increasingly flexible ways to manufacture a residual anomaly. The generic approximation-theory part is understood: once a real complexity budget exists, it can be translated into a falsifiable observable null. `VIS-408` establishes that the needed budget is not hidden in Wang's final packet language.
 
-A surviving anomaly would therefore carry substantially more information than rejection of a convenient parametric control. Conversely, failure to derive any mechanism-specific restriction after the source-conjugacy and stabilizer-symmetry routes have been removed would close the decoder-capacity branch without confusing coordinate regularity or representational convenience with arithmetic information.
+This prevents a source-attribution error. Wang's fixed test functions and variationally optimal kernel are genuine, mathematically controlled objects, but importing their fixedness into an unrelated qutrit decoder would create exactly the representation-level restriction the preceding findings were designed to rule out. A future source-response theorem may still be worthwhile, but it must be established as new mathematics rather than inferred from packet admissibility.
 
 ## Decisive test
 
-Choose one explicit admissible Wang/source family, center it modulo the identity, form its Hilbert-Schmidt source subspace `S`, and construct the intrinsic commutator Laplacian `Delta_S=sum_a ad_(E_a)^*ad_(E_a)` with the ambient coefficient-space metric and numerical rank/tolerance rule frozen independently. In the generic rank-one qutrit reduction, condition on the source invariant/support and scalar defect rate and use the residual coordinate `u` from `VIS-389`--`VIS-390`.
+The decisive test was to inspect the source-level Wang packet construction rather than invent another decoder family. Wang's Section 3 admits every fixed normalized real-even smooth `eta` in the support interval. Dilation of a fixed normalized bump preserves every stated admissibility condition while making derivative norms arbitrarily large, so the class has no uniform numerical smoothness or finite-complexity budget.
 
-Before examining the candidate residual distribution, derive the admissible source-to-response/decoder family from the packet mechanism itself. State the operational input metric or coordinate and justify it. If the restriction is a basis/coefficient, degree, variation, or Lipschitz budget, convert it through `VIS-405`--`VIS-406` into its observable mass/support/moment consequence. A bound expressed in `x=tr(E^3)^2` must additionally survive the `VIS-407` coordinate check or be justified by an independent mechanism that makes `x` the actual operational metric.
+Wang's Section 4 does select a unique cosine minimizer for the scalar functional `C(f)` in the larger `L^2` class and proves that admissible smooth-square packets approach the same infimum. This does not repair the decoder route: the optimized object acts as a scalar kernel on zero differences, and no source-to-qutrit tangent/response identification is present.
 
-Kill the route if the admitted family can still realize arbitrary laws on `u`; if latent, basis, degree, coefficient, metric, or regularity capacity is chosen after seeing the target; if the only finite bound comes from the singular `t^2` chart rather than intrinsic packet geometry; if an equivalent source reparameterization removes the claimed complexity; or if the apparent anomaly disappears under the independently justified restricted control.
-
-For any surviving source-side anomaly, freeze the statistic and decision rule before confirmation data and propagate the complete effect through the Wang destination, charging metric scale, Gram-gap/cluster width, coefficient norm, normalization, rank-selection, and source-information costs. Kill the route if the destination step imports the target arithmetic estimate or requires tuned ranks/windows.
+A future attempt should be treated as a different research question unless it derives an explicit intrinsic map from the Wang arithmetic source to the qutrit response object and proves a target-independent bound on that map. Merely choosing the Wang optimizer, another latent, another chart, or another finite representation is not such a derivation.
 
 ## Evidence boundary
 
-`VIS-378`--`VIS-386` establish the intrinsic source-subspace and normalization gates. `VIS-388`--`VIS-393` classify the minimal qutrit residual and show where Gaussian/isotropic calibration ends and symmetry becomes non-identifying. `VIS-394`--`VIS-402` calibrate broad finite source-free packet mechanisms. `VIS-403`--`VIS-406` show that latent/decoder language is vacuous until a numerical target-independent complexity budget is fixed, and then give exact observable consequences once it is.
+`VIS-378`--`VIS-386` establish the intrinsic source-subspace and normalization gates. `VIS-388`--`VIS-393` classify the minimal qutrit residual and show where Gaussian/isotropic calibration ends and symmetry becomes non-identifying. `VIS-394`--`VIS-402` calibrate broad finite source-free packet mechanisms. `VIS-403`--`VIS-406` show that latent/decoder language is vacuous until a numerical target-independent complexity budget is fixed, and then give exact observable consequences once it is. `VIS-407` shows that the natural scalar invariant chart does not provide an intrinsic replacement.
 
-`VIS-407` does not show that the full Wang/source-packet construction lacks such a budget. It shows only that rank-one qutrit source conjugacy/support geometry and source-stabilizer symmetry do not supply one by themselves, and that `t^2`-based Lipschitzness is not an intrinsic substitute because the scalar invariant chart is singular at the Weyl boundaries.
+`VIS-408` is an exact interface audit of Wang's paper, not an impossibility theorem for all conceivable arithmetic source-response maps. It establishes only that the **existing Wang final packet/test-function construction** does not itself contain the qutrit decoder budget or dictionary sought here. A genuinely new source-to-response theorem could open a different route.
 
-No persisted result yet derives a Wang-specific source--response complexity bound, proves that an admissible Wang family has an anomalous residual relative to the resulting frozen control, identifies an arithmetic cause for such an anomaly, or propagates one to a destination gain.
+No result in this chain proves an anomalous qutrit residual, an arithmetic cause for one, a new pair-correlation theorem, a zeta-zero criterion, or an RH consequence.
 
 ## Research disposition
 
-Outcome: **narrowed**.
+Outcome: **refuted**.
 
-The clue remains `accepted`. The source-conjugacy/stabilizer route to the missing decoder budget is now closed in the minimal qutrit test bed. The next coherent step is to inspect the actual Wang/source-packet response construction for a target-independent source--tangent or source--response restriction in an intrinsic operational metric. If no such restriction exists, the decoder-capacity branch should be closed rather than replaced by another representation-level budget.
+Resolved by:
+- [[research/visual_exploration/findings/VIS-408-wang-final-test-packet-does-not-supply-qutrit-decoder-budget]]
+
+The decoder-capacity branch cannot be justified from Wang packet admissibility alone. The actual admissible packet class is too flexible to furnish a universal numerical decoder budget, while the variational optimizer is a scalar zero-pair kernel with no proved qutrit source-response dictionary. Any revival requires a new explicit source-to-qutrit response theorem and should enter as a new research question rather than another repair of this clue.
