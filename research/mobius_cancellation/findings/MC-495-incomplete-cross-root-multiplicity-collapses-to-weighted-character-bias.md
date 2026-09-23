@@ -130,13 +130,13 @@ then necessarily
 \tag{13}
 \]
 
-Since `|C_{A,B}|<=sqrt(E_+E_-)`, this also forces both a near-extremal negative correlation with the relative phase and sufficient balance between the two root energies. Incompleteness remains a live route, but it is now a precise **weighted character-bias problem**, not a collective-multiplicity problem.
+Since `|C_{A,B}|<=sqrt(E_+E_-)`, this forces a fixed negative correlation of at least the requested saving scale and sufficient balance between the two root energies. Incompleteness remains a live route, but it is now a precise **weighted character-bias problem**, not a collective-multiplicity problem.
 
 No estimate for `M(x)`, zero-free region, or RH follows.
 
 ## 1. Pointwise aggregation does not use completion
 
-The factorization `(4)` is purely algebraic. If `q equiv a (mod p)`, then the plus-root phase after `n=qm` is exactly the first expression in `(3)`, regardless of the source prime's size, cutoff, or shortened interval. All q-dependence is confined to the nonnegative exact amplitude `B_q^+`, so
+The factorization `(4)` is purely algebraic. If `q\equiv a (mod p)`, then the plus-root phase after `n=qm` is exactly the first expression in `(3)`, regardless of the source prime's size, cutoff, or shortened interval. All q-dependence is confined to the nonnegative exact amplitude `B_q^+`, so
 
 \[
 \sum_qG_q^+
@@ -160,7 +160,7 @@ K_a^+(m)\overline{K_a^-(m)}
   \overline{\chi(am)}\chi(am-h),
 \]
 
-which is `(9)`. For `am not equiv 0 (mod p)`, multiplicativity and unit modulus give `(10)`.
+which is `(9)`. For `am\not\equiv0 (mod p)`, multiplicativity and unit modulus give `(10)`.
 
 After the conductor relabeling
 
@@ -289,7 +289,7 @@ A useful next test is therefore not to count more repeated-residue rows. It is t
 
 ## Boundaries and falsification tests
 
-- **One repeated conductor residue.** The theorem concerns a block with `q equiv a (mod p)`. Distinct conductor residues still supply distinct phase directions and are governed by `MC-490` and related findings.
+- **One repeated conductor residue.** The theorem concerns a block with `q\equiv a (mod p)`. Distinct conductor residues still supply distinct phase directions and are governed by `MC-490` and related findings.
 - **Native common-sign first exit.** The nonnegative amplitudes in `(2)` are essential. A proved q-dependent signed or complex inner coefficient before aggregation is a genuine escape.
 - **No completeness assumption.** Intervals, cutoffs and exact masks may be arbitrary and q-dependent; they are absorbed by zero-extension into `A,B`. What is not controlled is the resulting weighted bias `(18)`.
 - **Character zeros retained.** Equations `(9)` and `(18)` are valid with the convention `chi(0)=0`; the rational form `(10)` is asserted only away from its poles/zeros.
