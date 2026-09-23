@@ -6,9 +6,7 @@
 
 ## Claim
 
-WI-416 showed that a finite discrete defect set has zero finite-TV cost if translated Blaschke probes may be placed atomically after seeing the targets: arbitrarily small coefficients can be compensated by moving a probe exponentially close to each logarithmic singularity. One of the explicit possible repairs left there was a quantitative regularity condition on the probe measure.
-
-A uniform two-dimensional density cap is enough to restore coercivity, and the shallow-depth exponent is forced.
+WI-416 showed that a finite discrete defect set has zero finite-TV cost if translated Blaschke probes may be placed atomically after seeing the targets: arbitrarily small coefficients can be compensated by moving a probe exponentially close to each logarithmic singularity. A uniform two-dimensional density cap removes that atomic escape, and in fact the resulting one-target capacity can be computed exactly.
 
 For
 
@@ -21,7 +19,7 @@ q_{a,b}(\gamma,d)
 \tag{1}
 \]
 
-fix a target `(gamma,d)`, a required quantum `Q>0`, and a density cap `B>0`. Let `nu` range over finite signed or complex measures on `(0,\infty)\times\mathbb R` that are absolutely continuous with respect to `da db` and satisfy
+fix a target `(\gamma,d)`, a required quantum `Q>0`, and a density cap `B>0`. Let `\nu` range over finite signed or complex measures on `(0,\infty)\times\mathbb R` that are absolutely continuous with respect to `da db` and satisfy
 
 \[
 \frac{d|\nu|}{da\,db}\le B
@@ -29,7 +27,7 @@ fix a target `(gamma,d)`, a required quantum `Q>0`, and a density cap `B>0`. Let
 \tag{2}
 \]
 
-Define the one-target cost
+Define
 
 \[
 \mathcal M_B(d,Q)
@@ -38,92 +36,159 @@ Define the one-target cost
 \|\nu\|_{\rm TV}:
 |Q_\nu(\gamma,d)|\ge Q
 \right\},
+\qquad
+Q_\nu(\gamma,d)=\int q_{a,b}(\gamma,d)\,d\nu(a,b).
 \tag{3}
 \]
 
-where
+For `t>0` put
 
 \[
-Q_\nu(\gamma,d)=\int q_{a,b}(\gamma,d)\,d\nu(a,b).
+R_{B,d}(t)
+=
+\pi B d^2
+\left(
+t\,\operatorname{csch}^2 t+\coth t-1
+\right).
 \tag{4}
 \]
 
-Then
+`R_{B,d}` is strictly decreasing from `+\infty` to `0`, so there is a unique `t_Q>0` with `R_{B,d}(t_Q)=Q`. Then the capacity is exactly
 
 \[
 \boxed{
-\frac{Q^2}{16\pi B d^2}
-\le
 \mathcal M_B(d,Q)
-\le
-4Q+\frac{Q^2}{B d^2}.
+=
+\pi B d^2\,\operatorname{csch}^2 t_Q.
 }
 \tag{5}
 \]
 
-In particular, for fixed `B,Q`,
+Equivalently, if
 
 \[
-\boxed{
-\mathcal M_B(d,Q)=\Theta_{B,Q}(d^{-2})
-\qquad(d\downarrow0).
-}
+x=\sqrt{\frac{\mathcal M_B(d,Q)}{\pi B d^2}},
+\qquad
+\eta=\frac{Q}{\pi B d^2},
 \tag{6}
 \]
 
-Thus the zero-TV oracle concentration of WI-416 is genuinely a singular-measure phenomenon. A uniform `L^infty` cap on source density does not merely make the cost positive: a fixed count quantum at shallow horizontal depth requires TV of quadratic order `1/d^2`.
-
-The lower bound is valid even for signed/complex measures because it uses total variation. The upper bound is realized by an explicit positive absolutely continuous measure. No zero is excluded and no statement of RH follows: the missing zeta-specific step is to derive an appropriate source-side regularity bound rather than assume (2).
-
-## 1. A sharp radial majorant for one Blaschke charge
-
-Put
+then `x` is the unique positive solution of
 
 \[
-r^2=(a-d)^2+(b-\gamma)^2.
+\boxed{
+\eta=H(x)
+:=
+x^2\operatorname{arsinh}(1/x)
++\sqrt{1+x^2}-1.
+}
 \tag{7}
 \]
 
-Since
+In particular,
 
 \[
-q_{a,b}(\gamma,d)
-=\frac12\log\left(1+\frac{4ad}{r^2}\right)
+\boxed{
+\frac{Q^2}{4\pi B d^2}
+\le
+\mathcal M_B(d,Q)
+\le
+\frac{(Q+\pi B d^2)^2}{4\pi B d^2}.
+}
 \tag{8}
 \]
 
-and
+Hence, whenever `Q/(B d^2)\to\infty`,
 
 \[
-a\le d+|a-d|\le d+r,
+\boxed{
+\mathcal M_B(d,Q)
+\sim
+\frac{Q^2}{4\pi B d^2}.
+}
 \tag{9}
 \]
 
-we have
+For fixed `B,Q`, this gives the sharp shallow-depth asymptotic
 
 \[
-4ad\le4d(d+r).
+\boxed{
+\mathcal M_B(d,Q)
+\sim
+\frac{Q^2}{4\pi B}\,d^{-2}
+\qquad(d\downarrow0).
+}
 \tag{10}
 \]
 
-Therefore
+The extremizer is positive: density `B` on one exact superlevel disk of the Blaschke kernel. Signed or complex coefficients cannot improve the optimum. Thus the `d^{-2}` exponent is not only order-sharp; the leading constant and full one-target capacity are fixed by the half-plane Green geometry.
+
+No zero is excluded and no statement of RH follows. The missing zeta-specific step is still to derive an admissible source-side density bound such as (2) from arithmetic data, and then to control reuse of the same source budget across multiple exceptional zeros.
+
+## 1. Exact superlevel geometry
+
+Write `x=b-\gamma`. The inequality `q_{a,b}(\gamma,d)>t` is equivalent to
 
 \[
-\begin{aligned}
-q_{a,b}(\gamma,d)
-&\le
-\frac12\log\left(1+\frac{4d(d+r)}{r^2}\right)\\
-&=
-\frac12\log\left(1+\frac{2d}{r}\right)^2\\
-&=
-\boxed{\log\left(1+\frac{2d}{r}\right)}.
-\end{aligned}
+x^2+a^2+d^2
+<
+2ad\,\coth t.
 \tag{11}
 \]
 
-The majorant is pointwise sharp along the outward horizontal ray `b=gamma`, `a=d+r`. Its logarithmic singularity is locally integrable in two dimensions, so an `L^infty` density cap removes the atomic blow-up exploited by WI-416.
+Completing the square in `a` gives
 
-## 2. Exact bathtub envelope for the radial majorant
+\[
+\boxed{
+\{q_{a,b}(\gamma,d)>t\}
+=
+\left\{
+(a,b):
+(a-d\coth t)^2+(b-\gamma)^2
+<
+d^2\operatorname{csch}^2 t
+\right\}.
+}
+\tag{12}
+\]
+
+Thus every positive superlevel set is a Euclidean disk with center
+
+\[
+(d\coth t,\gamma)
+\]
+
+and radius
+
+\[
+d\,\operatorname{csch}t.
+\]
+
+The disk lies wholly inside the allowed source half-plane `a>0`, because its leftmost horizontal coordinate is
+
+\[
+d(\coth t-\operatorname{csch}t)
+=
+d\tanh(t/2)>0.
+\tag{13}
+\]
+
+Therefore the distribution function of the exact Blaschke charge is
+
+\[
+\boxed{
+A_d(t)
+:=
+\left|\{q_{a,b}(\gamma,d)>t\}\right|
+=
+\pi d^2\operatorname{csch}^2 t.
+}
+\tag{14}
+\]
+
+This is stronger than a radial majorant: it is the exact superlevel geometry of the original half-plane kernel.
+
+## 2. Exact bathtub capacity
 
 Let
 
@@ -133,246 +198,217 @@ f(a,b)=\frac{d|\nu|}{da\,db},
 0\le f\le B,
 \qquad
 \int f=M:=\|\nu\|_{\rm TV}.
-\tag{12}
-\]
-
-Extend `f` by zero from the half-plane `a>0` to all of `R^2`. With
-
-\[
-K_d(r)=\log\left(1+\frac{2d}{r}\right),
-\tag{13}
-\]
-
-(11) gives
-
-\[
-|Q_\nu(\gamma,d)|
-\le\int_{\mathbb R^2}K_d(|z|)f(z)\,dz.
-\tag{14}
-\]
-
-Because `K_d` is radial and strictly decreasing, the elementary bathtub/layer-cake principle says that among all `0<=f<=B` of mass `M`, the right side is maximized by density `B` on a centered disk of area `M/B`. Indeed, for every `t>0`,
-
-\[
-\int_{\{K_d>t\}}f
-\le
-\min\{M,\,B|\{K_d>t\}|\},
 \tag{15}
 \]
 
-and the saturated centered disk attains the right side simultaneously for every superlevel set. Thus, with
+Positivity of the kernel gives
 
 \[
-R=\sqrt{\frac{M}{\pi B}},
+|Q_\nu(\gamma,d)|
+\le
+\int q_{a,b}(\gamma,d)\,f(a,b)\,da\,db.
 \tag{16}
+\]
+
+Layer cake and (14) imply
+
+\[
+\begin{aligned}
+\int q f
+&=
+\int_0^\infty
+\left(
+\int_{\{q>t\}}f
+\right)dt\\
+&\le
+\int_0^\infty
+\min\{M,\,B A_d(t)\}\,dt.
+\end{aligned}
+\tag{17}
+\]
+
+There is a unique `t_M>0` with
+
+\[
+M
+=
+B A_d(t_M)
+=
+\pi B d^2\operatorname{csch}^2 t_M.
+\tag{18}
+\]
+
+Because the superlevel sets of a function are nested, density
+
+\[
+f_M
+=
+B\,\mathbf 1_{\{q>t_M\}}
+\tag{19}
+\]
+
+attains equality in (17) simultaneously at every layer. Hence the right side of (17) is the exact maximum response among all admissible signed or complex measures of TV mass `M`.
+
+Using
+
+\[
+\int_{t_M}^{\infty}\operatorname{csch}^2 t\,dt
+=
+\coth t_M-1,
+\]
+
+the exact response envelope is
+
+\[
+\boxed{
+\mathcal R_{B,d}(M)
+=
+M t_M
++
+\pi B d^2(\coth t_M-1),
+}
+\tag{20}
+\]
+
+with `t_M` determined by (18). It is strictly increasing in `M`; equivalently, after setting
+
+\[
+x=\sqrt{\frac{M}{\pi B d^2}},
+\qquad
+t_M=\operatorname{arsinh}(1/x),
+\tag{21}
 \]
 
 we obtain
 
 \[
-|Q_\nu(\gamma,d)|
-\le
-2\pi B\int_0^R
-r\log\left(1+\frac{2d}{r}\right)\,dr.
-\tag{17}
-\]
-
-The integral is elementary:
-
-\[
-\begin{aligned}
-|Q_\nu(\gamma,d)|
-\le \pi B\Bigg[
-&4d^2\log\frac{2d}{2d+R}
-+2dR\\
-&+R^2\log\left(1+\frac{2d}{R}\right)
-\Bigg].
-\end{aligned}
-\tag{18}
-\]
-
-Set
-
-\[
-x=\frac{R}{2d}
-=\sqrt{\frac{M}{4\pi B d^2}}
-\tag{19}
-\]
-
-and
-
-\[
-F(x)
-=x-\log(1+x)+x^2\log(1+1/x).
-\tag{20}
-\]
-
-Then the stronger implicit response bound is
-
-\[
 \boxed{
-|Q_\nu(\gamma,d)|
-\le
-4\pi B d^2 F\!\left(
-\sqrt{\frac{M}{4\pi B d^2}}
-\right).
+\mathcal R_{B,d}(M)
+=
+\pi B d^2 H(x),
 }
-\tag{21}
-\]
-
-The envelope on the right is strictly increasing in `M`: direct differentiation gives
-
-\[
-F'(x)=2x\log(1+1/x)>0.
 \tag{22}
 \]
 
-This is an exact extremal formula for the **radial majorant problem** (14). It is not claimed to be the exact capacity of the original half-plane Blaschke kernel, because passing from (8) to (11) and then enlarging the source domain to the whole plane can lose constants.
-
-## 3. Universal quadratic lower bound
-
-The exact envelope immediately yields a simple closed form. Since
+where `H` is (7), and
 
 \[
-\log(1+1/x)\le\frac1x
+H'(x)
+=
+2x\,\operatorname{arsinh}(1/x)>0.
 \tag{23}
 \]
 
-and `-log(1+x)<=0`,
+The unique mass for which the exact envelope equals `Q` is therefore precisely (5)--(7). The optimizing measure is the positive absolutely continuous measure with density (19), so the infimum in (3) is attained.
+
+## 3. Sharp quadratic scale and constants
+
+The implicit capacity yields simple global bounds. Since
 
 \[
-F(x)\le2x.
+\operatorname{arsinh}(1/x)\le\frac1x,
+\qquad
+\sqrt{1+x^2}-1\le x,
+\]
+
+we have
+
+\[
+H(x)\le2x.
 \tag{24}
 \]
 
-Combining (21), (24), and (19),
+For the reverse estimate needed here, use
 
 \[
-|Q_\nu(\gamma,d)|
-\le
-4d\sqrt{\pi B M}.
+\operatorname{arsinh}(1/x)
+=
+\int_0^{1/x}\frac{du}{\sqrt{1+u^2}}
+\ge
+\frac1{\sqrt{1+x^2}}.
 \tag{25}
 \]
 
-Hence a response of magnitude at least `Q` forces
-
-\[
-\boxed{
-M\ge\frac{Q^2}{16\pi B d^2}.
-}
-\tag{26}
-\]
-
-This is the left side of (5). It also gives the useful variable-cap criterion
-
-\[
-B(d)d^2\longrightarrow0
-\quad\Longrightarrow\quad
-\mathcal M_{B(d)}(d,Q)\longrightarrow\infty
-\tag{27}
-\]
-
-for every fixed `Q>0`. Conversely, a density cap allowed to grow at the critical rate `B(d)asymp d^{-2}` need not produce any divergent TV obstruction. The source-side regularity scale therefore matters, not merely absolute continuity.
-
-## 4. The `d^{-2}` exponent is sharp
-
-The lower-bound exponent is not an artefact of the full-plane rearrangement. There is an explicit admissible positive source of the same order.
-
-For `R>2d`, put density `B` on
-
-\[
-\Omega_R
-=
-\{(a,b):2d\le a\le R,\ |b-\gamma|\le a\}
-\tag{28}
-\]
-
-and zero elsewhere. On this region,
-
-\[
-(b-\gamma)^2+(a-d)^2\le2a^2,
-\tag{29}
-\]
-
-so
-
-\[
-q_{a,b}(\gamma,d)
-\ge
-\frac12\log\left(1+\frac{2d}{a}\right).
-\tag{30}
-\]
-
-Because `2d/a<=1` and `log(1+t)>=t/2` for `0<=t<=1`,
-
-\[
-q_{a,b}(\gamma,d)\ge\frac{d}{2a}.
-\tag{31}
-\]
-
-Integrating across the width `2a` in `b`,
-
-\[
-Q_\nu(\gamma,d)
-\ge
-Bd(R-2d).
-\tag{32}
-\]
-
-Choose
-
-\[
-R=2d+\frac{Q}{Bd}.
-\tag{33}
-\]
-
-Then the target response is at least `Q`, while the total variation is
+Then
 
 \[
 \begin{aligned}
-M
-&=B\int_{2d}^R2a\,da\\
-&=B(R^2-4d^2)\\
-&=\boxed{4Q+\frac{Q^2}{Bd^2}}.
+H(x)
+&\ge
+\frac{x^2}{\sqrt{1+x^2}}
++\sqrt{1+x^2}-1\\
+&=
+\frac{2x^2+1}{\sqrt{1+x^2}}-1\\
+&\ge
+2x-1,
 \end{aligned}
-\tag{34}
+\tag{26}
 \]
 
-This proves the upper side of (5), hence the order-sharp statement (6).
+because `(2x^2+1)^2-4x^2(1+x^2)=1`.
 
-## 5. Stress tests and what this does not buy
+Applying `2x-1\le H(x)\le2x` to (7) gives
 
-The theorem closes one specific escape left open by WI-416, but it must not be overread.
+\[
+\frac{\eta}{2}
+\le x\le
+\frac{\eta+1}{2}.
+\tag{27}
+\]
 
-First, the lower bound is **one-target coercivity**. A single source distribution may contribute to many exceptional zeros, so (26) cannot be summed over zeros without an additional packing, separation, transport, or near-orthogonality argument. In particular this finding does not convert a zero count into a `d^{-2}` multiple-target budget.
+Multiplying by `\pi B d^2` after squaring proves (8). When `\eta\to\infty`, (27) gives `x\sim\eta/2`, proving (9). In particular the optimal shallow-depth leading constant is `1/(4\pi)`, not merely an unspecified constant hidden in `\Theta(d^{-2})`.
 
-Second, the hypothesis is genuinely two-dimensional. Atomic measures, measures supported on curves, or source families whose density cap grows too quickly as `d` decreases are outside (2). WI-416 remains the correct obstruction for unconstrained target-adaptive atoms.
+The exact formula also identifies the density-scale transition. For fixed `Q`, if
 
-Third, no zeta-specific source theorem currently supplies (2) at the required scale. The point of the result is to quantify exactly what this candidate regularization would have to achieve: if prime/source-side structure can be represented by an absolutely continuous translated-Blaschke measure with `B(d)d^2=o(1)`, then shallow discrete defects can no longer be hidden at arbitrarily small source TV. If the natural source representation is singular or has `B(d)gtrsim d^{-2}`, this branch does not bootstrap.
+\[
+B(d)d^2\to0,
+\]
 
-Finally, the full-plane radial rearrangement in Section 2 is deliberately one-sided. It is used only for a rigorous universal upper bound on response. No equality statement for the original half-plane kernel is needed for (5), and the explicit construction in Section 4 independently proves that the quadratic depth exponent cannot be improved under the density-cap hypothesis alone.
+then (9) forces `\mathcal M_{B(d)}(d,Q)\to\infty`. A cap at the critical scale `B(d)\asymp d^{-2}` can leave a finite positive cost, while allowing `B(d)d^2\to\infty` drives the exact capacity back toward zero. Thus `d^{-2}` is the genuine source-density crossover between coercive and increasingly oracle-like concentration.
 
-## 6. Prior-art and novelty audit
+## 4. Stress tests and what this does not buy
 
-The analytic mechanisms are classical. Symmetric decreasing rearrangement and bathtub principles go back to the Hardy--Littlewood/Riesz tradition; a standard multi-function reference is H. J. Brascamp, E. H. Lieb, and J. M. Luttinger, *A general rearrangement inequality for multiple integrals*, Journal of Functional Analysis **17** (1974), 227--237, DOI `10.1016/0022-1236(74)90013-5`.
+The theorem remains a **one-target** statement. One source distribution can contribute to many exceptional zeros, so the exact capacity (5) cannot be summed over zeros without an additional packing, transport, separation, near-orthogonality, or source-allocation theorem. The sharpening of the one-target constant does not by itself produce a stronger simple-critical-zero proportion or an RH implication.
 
-The scale in (25) is also the familiar endpoint interpolation behavior of a two-dimensional order-one Riesz-type potential: `L^1` mass and `L^infty` density combine as the square root. Lars Inge Hedberg, *On Certain Convolution Inequalities*, Proceedings of the American Mathematical Society **36** (1972), 505--510, DOI `10.1090/S0002-9939-1972-0312232-4`, is a classical source for this convolution/potential viewpoint.
+The density hypothesis is genuinely two-dimensional. Atomic measures, measures on curves, or source representations with no `L^\infty(da\,db)` control lie outside (2), and WI-416 remains the correct obstruction for unrestricted target-adaptive atoms. The exact superlevel disks make this boundary especially explicit: the optimum under a density cap is obtained by saturating a two-dimensional neighborhood of the logarithmic pole; collapsing that neighborhood to a singular source is exactly the escape that the cap forbids.
 
-The zeta/Blaschke setting and the relevant half-plane factorization are already anchored in WI-409--WI-416, including Kunik and the Balazard--Saias--Yor lineage. A targeted search found no basis for a priority claim for the potential estimate itself, and none is made. The line-specific contribution recorded here is the exact quantitative answer to the regularity escape isolated by WI-416: **a uniform two-dimensional source-density cap converts the discrete oracle cost from zero to an order-sharp `1/(B d^2)` TV tariff**.
+No current zeta-side theorem in this line supplies (2) with a useful `B(d)`. The arithmetic problem therefore remains upstream of the capacity calculation. Even if such a cap were proved, a global defect-to-zero bootstrap would still need a multiple-target theorem preventing the same admissible source mass from paying repeatedly for many defects.
+
+Finally, (5) is specific to the linear translated-Blaschke response and an `L^\infty` density cap measured against Euclidean `da db`. Different source norms, singular measures, nonlinear observables, or renormalized infinite-budget constructions are not controlled by this extremal problem.
+
+## 5. Prior-art and novelty audit
+
+The ingredients are classical. The layer-cake/bathtub principle is standard rearrangement theory; a classical reference is H. J. Brascamp, E. H. Lieb, and J. M. Luttinger, *A general rearrangement inequality for multiple integrals*, Journal of Functional Analysis **17** (1974), 227--237, DOI `10.1016/0022-1236(74)90013-5`. The exact disks in (12) are the elementary Apollonius-circle level sets of a half-plane logarithmic Green/Blaschke kernel. The zeta/half-plane factorization itself is already anchored in WI-409--WI-416 through Kunik and the Balazard--Saias--Yor lineage.
+
+A targeted search around half-plane Green/Blaschke level sets, Poisson-kernel translates, rearrangement/bathtub extremals, and bounded-density potential estimates found classical ingredients but no reason to make a priority claim for the general potential-theory mechanism. None is made. The line-specific result recorded here is the exact specialization relevant to the WI-416 regularity escape: the original translated-Blaschke kernel has an explicitly computable bounded-density one-target capacity, with positive extremizer and sharp leading constant `1/(4\pi)`.
+
+The result is stronger than a generic Riesz-potential interpolation estimate because it uses the exact distribution function (14), not a radial majorant. Its mathematical role in `weil_inertia` is correspondingly narrow: it completely solves the one-target `L^\infty` source-capacity problem while leaving the zeta-specific source-regularity and multiple-target reuse questions untouched.
 
 ## Consequence
 
-WI-415 and WI-416 left a sharp dichotomy between continuum coverage, which costs `T/d`, and unrestricted discrete oracle targeting, which costs zero. The present result inserts a third regime:
+The Blaschke branch now has an exact third regime between WI-415 continuum coverage and WI-416 atomic oracle targeting:
 
 \[
 \boxed{
-\text{discrete target}
-+\text{uniform 2D source-density cap }B
+\text{one discrete target}
++\text{2D source-density cap }B
 \Longrightarrow
-\mathcal M_B(d,Q)\asymp\frac{Q^2}{Bd^2}
-\text{ as }d\downarrow0.
+\mathcal M_B(d,Q)
+=
+\pi B d^2\operatorname{csch}^2 t_Q,
 }
-\tag{35}
+\tag{28}
 \]
 
-This is a genuine structural constraint on the exceptional-mass detector class, but not yet a zeta theorem. The next useful question is no longer whether *some* regularity can defeat the WI-416 oracle construction; this theorem shows that bounded density does. The live gate is whether arithmetic/source-side structure supplies a comparable non-oracular regularity estimate, or whether the natural probe representation is necessarily too singular for this coercivity to apply.
+where `t_Q` is determined by (4). In the shallow coercive regime this becomes
+
+\[
+\boxed{
+\mathcal M_B(d,Q)
+\sim
+\frac{Q^2}{4\pi B d^2}.
+}
+\tag{29}
+\]
+
+So the one-target regularity gate itself is no longer a source of constant-factor slack. Any further progress on this branch must derive source regularity from arithmetic information, control budget reuse across multiple defects, or leave the linear translated-Blaschke architecture.
