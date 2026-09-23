@@ -14,14 +14,18 @@ MC-446--MC-483 progressively close generic well-factorability, positive Fejer/q-
 
 MC-484 removes the uncontrolled bracket selector without weakening the hard mask. Buchstab first exit gives an exact decomposition in which the same prime `q` controls the shortened source interval, the translated-ratio character shift `h q^{-1} (mod p)`, and the residual dimension-two pair-sieve mask with cutoff and shift depending on `q`. That coupled `q,m` family is the surviving arithmetic object.
 
-MC-485 now rules out the most tempting simplification of it. For the bare translated character family `K_q(m)=chi(m+hq^{-1})conjugate(chi(m))` over all nonzero residue classes, the complete Gram matrix is exactly
+MC-485 rules out the complete coefficient-blind simplification. For the bare translated character family `K_q(m)=chi(m+hq^{-1})conjugate(chi(m))` over all nonzero residue classes, the complete Gram matrix is exactly
 
 `G = p I - J - v v*`.
 
-Thus the analysis operator has norm `sqrt(p)` on the codimension-two complement of the constant and character directions. Freezing or majorizing the `q`-dependent mask to one common coefficient vector and hoping that the inverse-shift motion alone yields a uniform subconductor `L^2` gain cannot work: on a first-exit rectangle of area `H` the generic frame bound is only `sqrt(pH)`, which does not beat `H` when `H<=p`.
+Thus the analysis operator has norm `sqrt(p)` on the codimension-two complement of the constant and character directions. Freezing or majorizing the `q`-dependent mask to one common coefficient vector and hoping that inverse-shift motion alone yields a uniform subconductor `L^2` gain cannot work.
 
-The live theorem is therefore more specific than “average in `q`”. One must estimate a **weighted Gram or dispersion form with the first-exit pair-sieve mask and source interval still inside the `q,m` sum**, so that the same `q` moves both coefficients and phase. A genuine conductor saving would have to use structure absent from the complete coefficient-blind frame. Conversely, a no-go showing that this coupled weighted operator still has norm at the same scale would close the current branch decisively.
+MC-486 closes the remaining coefficient-blind subset escape. For every incomplete set `Q` of at least three distinct nonzero residue classes, the row Gram is
 
-Two narrower possibilities remain logically open and must not be promoted without evidence: the actual coefficients could concentrate in the two exceptional frame modes, or the incomplete prime set could have cancellation unavailable to the complete family. Both require an arithmetic theorem about the real first-exit coefficients or source-prime distribution; neither follows from the frame identity itself. The accepted clue `CLUE-averaged-qvdc-source-frame-variable-retention` already targets the coupled handoff and does not need a Mind-owned status change.
+`A_Q A_Q* = p I_Q - 1_Q 1_Q* - u_Q u_Q*`,
 
-For nonempty rough-block pieces, retain the exact bin-product support pruning and price only the surviving construction-specific coefficient mass. Redesigned non-Fejer architectures remain separate and must re-pay interval geometry, diagonal cost and favorable-set concentration rather than treating reweighting as free.
+so `||A_Q||_(2->2)=sqrt(p)` exactly. When `|Q|=o(p)`, the whole row family is asymptotically `sqrt(p)`-tight in every source-weight direction, up to the two explicit low-rank subtractions. Merely replacing the complete `q` family by the actual sparse source-prime residues therefore cannot create a conductor-power saving. Prime incompleteness is not a new mechanism once the moving coefficients have been frozen.
+
+The live theorem is correspondingly sharper than “average in `q`” or “use only source primes.” One must estimate a **weighted Gram or dispersion form with the first-exit pair-sieve mask and shortened source interval still inside the `q,m` sum**, so that the same `q` moves both coefficients and phase. A surviving secondary possibility is a proved special alignment of the actual arithmetic coefficient vector with the restricted row space or kernel, but that would be an arithmetic theorem about the real first-exit coefficients, not a generic consequence of subset sparsity.
+
+The accepted clue `CLUE-averaged-qvdc-source-frame-variable-retention` already targets this coupled handoff and does not need a Mind-owned status change. For nonempty rough-block pieces, retain the exact bin-product support pruning and price only the surviving construction-specific coefficient mass. Redesigned non-Fejer architectures remain separate and must re-pay interval geometry, diagonal cost and favorable-set concentration rather than treating reweighting as free.

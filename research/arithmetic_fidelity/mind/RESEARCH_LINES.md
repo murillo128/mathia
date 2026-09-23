@@ -2,15 +2,25 @@
 
 This file records the current mathematical questions that survive the Arithmetic-Fidelity evidence. It is not a roadmap, task queue, status page, or history.
 
-## Classify extinction and multi-scale moment participation beyond source-surviving curvature
+## Classify extinction and multi-scale participation beyond boundary-layer curvature invisibility
 
 AF-509--AF-510 show that the full log-Dirichlet curvature profile of a simple unit-weight positive source determines the source exactly up to global dilation, but AF-511--AF-518 show that this exact quotient injectivity is badly conditioned against remote tail edits. AF-519--AF-521 then identify the one-point boundary carrier more sharply: at `s=1+t`, positive-source curvature depends exactly on normalized zeroth, first and second logarithmic moments, and under source survival the leading law usually collapses to the zeroth/second-moment ratio unless the normalized first moment reaches the `sqrt(log(1/t))` scale.
 
-AF-522 closes the first near-extinction simplification. For the anchored outward unit-weight transport that keeps every prime `p<=A` and sends each `p>A` to the distinct composite `C_A p`, one can have `Q_A(s_A)/P(s_A)->0` at `s_A=1+1/A` while the relative curvature tends to any prescribed `lambda in [0,1]`. For every fixed interior `lambda`, the extinction can even occur at the common order `Theta(log log A/log A)`. Thus zeroth-moment extinction is not itself a curvature regime: after the denominator degenerates, relative participation of higher logarithmic moments remains independent information.
+AF-522 shows that source extinction does not restore a one-parameter law. For the anchored outward unit-weight transport that keeps every prime `p<=A` and sends each `p>A` to the distinct composite `C_A p`, one can have `Q_A(1+1/A)/P(1+1/A)->0` while the relative curvature tends to any prescribed `lambda in [0,1]`. Even a common extinction order can therefore carry different higher-moment participation.
 
-The live one-point question is therefore to classify **which normalized moment profiles are realizable under the actual admissible source category when `rho_0->0`**, and which asymptotic combinations determine curvature after the common normalization degenerates. Any proposed scalar extinction parameter must be stress-tested against anchored, simple, unit-weight prime-to-composite transports such as AF-522. A stronger arithmetic-fidelity claim must then move beyond one moving point: determine whether multi-scale or whole-profile constraints couple those moment ratios tightly enough to recover source provenance, or whether similarly source-blind controls survive every finite collection of scales.
+AF-523 closes the first natural multi-scale repair. Choosing `C_A->infinity` with `C_A log log A/log A->0`, the same rigid positive prime-to-composite transport satisfies, uniformly for every `0<t<=1/A`,
 
-The adversarial boundary is important. AF-522 does not show that arbitrary signed/complex sources, inward transports, or arbitrary prescribed triples are realizable; it shows only that even a very rigid positive outward class already destroys any single-valued curvature law based on `rho_0->0`. Conversely, the exact full-profile inversion of AF-509--AF-510 remains valid and should not be conflated with stable recovery.
+`Q_A(1+t)/P(1+t)->0`
+
+while
+
+`kappa_Q_A(1+t)/kappa_P(1+t)->1`.
+
+More precisely the zeroth, first and second normalized moment participations all acquire the same vanishing factor `C_A^(-1-t)(1+o(1))`, so the exact AF-521 curvature quotient cancels that common factor. A finite set of boundary scales, or even the complete leading relative-curvature profile on the shrinking layer `1<s<=1+1/A`, therefore still does not recover prime provenance.
+
+The live question has moved beyond “add more nearby curvature samples.” One must identify information that breaks the common asymptotic dilation factor: scales `t>>1/A` where the retained anchor re-enters, lower-order curvature asymptotics that survive after the leading ratio cancels, or a richer observable whose visible layers do not share the same participation factor. Within those alternatives, the source category still has to determine which normalized moment profiles are actually realizable; arbitrary signed/complex sources, inward transports and arbitrary prescribed moment tuples are not consequences of AF-522--AF-523.
+
+The adversarial boundary remains sharp. AF-523 is a moving-family, shrinking-window leading-order obstruction, not equality of complete curvature profiles for two fixed sources. The exact full-profile inversion of AF-509--AF-510 therefore remains intact. Any claimed robust prime discriminator must state which scale range, asymptotic order or extra observable escapes the AF-523 gauge-like collapse rather than conflating exact recoverability with stable provenance.
 
 ## Classify quotient-visible contact through admission and no-contact accessibility rates
 

@@ -2,7 +2,7 @@
 
 This file records the current mathematical questions that survive the Visual-Exploration evidence. It is not a roadmap, task queue, status page, or history.
 
-## Derive a source-independent quantitative capacity bound before testing the qutrit residual
+## Derive a Wang/source-packet capacity bound before testing the qutrit residual
 
 VIS-367--VIS-389 reduce the intrinsic centered source-subspace problem to a scale-free commutator-Laplacian observable. In the minimal generic qutrit rank-one case, after source conjugacy and the scalar defect rate are fixed, the normalized positive spectrum has one residual shape coordinate. VIS-390--VIS-402 then calibrate that coordinate under progressively broader independently specified Gaussian/Gamma packet, exclusive-allocation, signed sector and finite common-factor nuisance mechanisms.
 
@@ -18,9 +18,11 @@ for every residual interval, or equivalently
 
 At `L=ell` the only admissible law is uniform; for larger fixed `L` the remaining excess law `eta` is arbitrary. Thus a numerical Lipschitz budget is genuinely falsifiable, but its mathematical content is exactly a uniform mass floor and nothing stronger.
 
-The live question is now concrete: **can Wang/source-packet mathematics derive a numerical decoder/interaction capacity before the candidate residual is inspected?** A fixed basis/coefficient budget, packet geometry, incidence law, source regularity estimate or another admissible mechanism must imply a target-independent `L` or a stronger structural constraint. Only then should the actual residual be compared with the frozen family. Choosing `L` from the observed residual collapses immediately back to the VIS-404 universal transport.
+VIS-406 closes the generic representation-to-capacity bridge. A fixed differentiable basis with coefficient budget `||c||_p<=B` gives `Lip(Q)<=B M_q` and hence a forced uniform component of mass at least `ell/(B M_q)`. A monotone polynomial decoder of degree at most `n` has the universal Markov bound `Lip(Q)<=n^2 ell`, forcing uniform mass at least `1/n^2`. In the ordered Bernstein subclass, the coefficient-gap geometry improves this to the exact floor `ell/(n Delta)`, and in particular to at least `1/n` when only degree and ordered endpoints are retained. These are source-free capacity consequences: they show exactly how a representation budget becomes a target-law restriction, but they do not derive any such budget from Wang arithmetic.
 
-The accepted clue `CLUE-wang-fixed-source-packet-localization` already records this handoff. No new Mind-owned proposed clue is warranted by VIS-405 itself: the precise fertile direction is established and already persisted as an accepted research question.
+The live question is therefore narrower: **can the actual Wang/source-packet construction derive, before the candidate residual is inspected, a fixed basis, degree, coefficient norm, Bernstein-gap, interaction or comparable complexity budget?** Once such a bound is source-derived, VIS-405--VIS-406 turn it immediately into a falsifiable residual mass floor. Choosing a convenient decoder family or its constants after seeing the residual remains circular and collapses back toward the VIS-404 universal transport.
+
+The accepted clue `CLUE-wang-fixed-source-packet-localization` already records this handoff and does not need a Mind-owned status change. No new proposed clue is warranted by VIS-406: the precise fertile direction is established and already persisted as an accepted research question.
 
 ## Quotient universal compact geometry before crediting a Wang gain
 
