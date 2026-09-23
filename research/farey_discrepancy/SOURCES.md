@@ -71,6 +71,10 @@ This file records durable literature dependencies for `research/farey_discrepanc
 - H. L. Montgomery and R. C. Vaughan, *The large sieve*, Mathematika **20**(2) (1973), 119--134, DOI `10.1112/S0025579300004708`. Role: primary anchor for the classical additive large-sieve inequality on separated rational points used in `FD-108` to turn the physical coefficient law into a simultaneous `L^2` bound for prime-divisibility projections.
 - Henryk Iwaniec, *The large sieve with prime moduli*, Revista Matemática Iberoamericana **38**(7) (2022), 2337--2354, DOI `10.4171/RMI/1381`. Role: prior-art boundary for sharper prime-modulus large-sieve estimates under additional coefficient-support or `L^2` hypotheses. `FD-108` does not claim the classical bound is optimal for the physical coefficient sequence; it isolates only the power-scale limitation of the immediate first-order divisibility reduction.
 
+## Dirichlet-series finite-window mean value
+
+- H. L. Montgomery and R. C. Vaughan, *Hilbert's Inequality*, Journal of the London Mathematical Society **s2-8**(1) (1974), 73--82, DOI `10.1112/jlms/s2-8.1.73`. Role: primary source for the Hilbert inequality underlying the weighted Montgomery--Vaughan mean-value theorem `integral_0^T |sum_n a_n n^(-it)|^2 dt = sum_n |a_n|^2 (T + O(n))` when `sum_n n|a_n|^2<infinity`. `FD-289` applies the translation-invariant finite-window form to `-zeta'/zeta(1+u+it)` and its `u`-derivative, transferring the `FD-288` phase-spike sparsity bound from Besicovitch density to moving height windows.
+
 ## Critical-line zero auxiliary input
 
 - G. H. Hardy, *Sur les zéros de la fonction ζ(s) de Riemann*, Comptes rendus hebdomadaires des séances de l'Académie des sciences **158** (1914), 1012--1014. Role: primary source for Hardy's theorem that infinitely many nontrivial zeros of `zeta(s)` lie on `Re(s)=1/2`. `FD-033` uses only the existence of one such zero to force divergence of the critical Mellin square norm attached to the coefficient summatory function with Dirichlet series `zeta(s+1)/zeta(s)`; no RH assumption or zero-density input is used.
