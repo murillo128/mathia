@@ -4,7 +4,7 @@
 - **Status:** proved
 - **Research line:** `nyman_beurling`
 - **Depends on:** NB-290, NB-303, NB-312
-- **Classification:** `EXACT-DERIVED + CANONICAL-NYMAN-SOURCE + PROJECTED-DILATION + EXTERNAL-DILATION + EXPLICIT-CORRELATION-CHANNEL + SQUARE-ROOT-FLOOR + FIXED-RATIO-ASYPTOTIC + NON-TARGET-AWARE + PRIOR-ART-AUDITED`
+- **Classification:** `EXACT-DERIVED + CANONICAL-NYMAN-SOURCE + PROJECTED-DILATION + EXTERNAL-DILATION + EXPLICIT-CORRELATION-CHANNEL + SQUARE-ROOT-FLOOR + FIXED-RATIO-ASYMPTOTIC + NON-TARGET-AWARE + PRIOR-ART-AUDITED`
 
 ## Claim
 
@@ -217,7 +217,7 @@ J(\lambda)\ge\frac1{32}
 \tag{12}
 \]
 
-For the correction term in (9), use `0<=g_2<=1/2` and `0<={m/y}<1` after taking the fractional part:
+For the correction term in (9), use `0<=g_2<=1/2` and the fact that every fractional part lies in `[0,1)`:
 
 \[
 0
@@ -265,7 +265,7 @@ and the elementary uniform generator bound
 \tag{16}
 \]
 
-Since `g_2,g_N in U_N`,
+Since \(g_2,g_N\in U_N\),
 
 \[
 \begin{aligned}
@@ -409,7 +409,7 @@ No external quantitative theorem is load-bearing. The proof uses the canonical g
 
 - The lower bound `J(lambda)>=1/32` was derived without asymptotics from only the first reciprocal shell and the unit-period integral of the fractional-part function.
 - The finite-`N` correction in (9) is uniformly at most `1/(2N)`, so the sign and `m^{-1/2}` scale in (14) are stable throughout all `m>=N` once `N>=32`.
-- Direct numerical evaluation of the exact transformed correlation for representative pairs `(N,m)=(32,32),(32,39),(32,64),(50,250),(100,500)` is positive and comfortably above the crude bound in (14).
+- Direct truncated reciprocal-shell evaluation for representative pairs `(N,m)=(32,32),(32,39),(32,64),(50,250),(100,500)` is positive and comfortably above the crude bound in (14).
 - The fixed-ratio limit was checked numerically for several ratios `lambda=1,1.1,1.5,2,3,5,10`; the scaled correlation converges to the positive integral `J(lambda)`.
 - The result is compatible with `NB-303`: when `m/N^2->infinity`, the lower floor `sqrt(N/m)` itself tends to zero.
 - No clue is consumed, and no target-aware claim is made.
