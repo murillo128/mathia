@@ -134,3 +134,9 @@ This file records durable external literature dependencies used to support or de
 ## Vandermonde partition sums and discrete orthogonal-polynomial ensembles
 
 - Jinho Baik, Thomas Kriecherbauer, K. T.-R. McLaughlin, and Peter D. Miller, **Discrete Orthogonal Polynomials: Asymptotics and Applications**, Annals of Mathematics Studies 164, Princeton University Press (2007), DOI `10.1515/9781400837137`. Role: classical prior-art boundary for `VIS-366`; discrete orthogonal-polynomial ensembles use squared Vandermonde product weights and their partition functions as standard objects. `VIS-366` claims no new orthogonal-polynomial-ensemble, Andreief/Cauchy-Binet, or determinant-partition-function theorem; its Mathia contribution is the support-cardinality-independent fixed-depth comparison between Wang polynomial-sampling singular products and those partition sums.
+
+## Compositional/simplex dependence controls
+
+- J. Aitchison, **The Statistical Analysis of Compositional Data**, *Journal of the Royal Statistical Society: Series B (Methodological)* 44:2 (1982), 139–160. DOI: `10.1111/j.2517-6161.1982.tb01195.x`. Role: foundational simplex/compositional-data prior art for `VIS-400`; establishes the simplex as the natural sample space for proportions and develops non-Dirichlet dependence models. `VIS-400` does not claim a new general theory of distributions on the simplex.
+
+- William S. Rayens and Cidambi Srinivasan, **Dependence Properties of Generalized Liouville Distributions on the Simplex**, *Journal of the American Statistical Association* 89:428 (1994), 1465–1470. DOI: `10.1080/01621459.1994.10476885`. Role: direct prior-art boundary for rich non-Dirichlet dependence structures on the simplex, including a family containing the Dirichlet class. `VIS-400` uses only an elementary positive-vector radial change of variables and finite mixture to delimit a Wang nuisance mechanism; it does not claim a new Liouville-distribution result.
