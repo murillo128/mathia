@@ -26,141 +26,80 @@ based_on:
   - research/mobius_cancellation/findings/MC-474-pair-sieve-fourier-spectral-norm-is-exponential.md
   - research/mobius_cancellation/findings/MC-475-pair-sieve-parseval-coupling-pays-full-frequency-dimension.md
   - research/mobius_cancellation/findings/MC-476-sifted-restriction-is-coefficient-blind-at-zero-frequency.md
+  - research/mobius_cancellation/findings/MC-477-low-denominator-envelope-admits-denominator-free-character-completion.md
+  - research/mobius_cancellation/findings/MC-478-pair-sieve-local-fourier-factorization-lowers-envelope-l1-cost.md
 ---
 
 # Can the staged factor-weighted source kernel beat the Möbius source-frame tariff?
 
 ## Observation
 
-The factor-specific route has been reduced to a small number of genuinely different channels. `MC-459`--`MC-467` price the generic staged source geometry: normalized gcd sectors collapse to one anchor quotient, favorable gcd classes remain sparse under Fejér weighting, increasing residual support shortens the corresponding source interval, and nonendpoint gain is forced onto small outer scales. `MC-468` shows that generic well-factorability alone supplies no missing anti-concentration theorem.
+The empty-vector base component has now been reduced to a sharply defined incomplete pair-sieve discrepancy. `MC-472` shows that its complete joint period has no hidden sieve/character resonance. `MC-473`--`MC-475` then close three direct incomplete continuations: exact divisor branching plus independent completion pays exponentially many branches, exact hard-mask Fourier `ell^1` has exponential spectral mass, and plain full-grid `ell^2`/Parseval pays the full primorial frequency dimension. `MC-476` further shows that the modern coefficient-uniform restriction theorem for sifted sets is blind to the translated-ratio character phase at zero frequency.
 
-The concrete modified linear-sieve decomposition then forces an `r=0` empty-vector component (`MC-469`) with outer geometry `R=T=1`. Its residual is the nonnegative upper-sieve boundary count
-
-\[
-B(y)=R_z(y)+E(y),
-\qquad
-R_z(y)=\mathbf 1_{(y,P(z))=1},
-\qquad E(y)\ge0,
-\]
-
-so internal coefficient signs do not provide oscillation (`MC-470`). In this base cell, staging also creates no independent reciprocal phase: recombination gives exactly
+The representation layer of that restriction theory nevertheless survives. `MC-477` proves that every rational frequency in the Bera--Viswanadham/Ramaré--Ruzsa low-denominator envelope couples to
 
 \[
-C_h^{(0)}(I)=\sum_{n\in I}K_h(n)B(n+h)B(n),
-\qquad
 K_h(n)=\chi(n+h)\overline{\chi(n)}
-=\chi\!\left(\frac{n+h}{n}\right)
 \]
 
-on nonzero character support (`MC-471`). The amplitude splits into rough×rough, two mixed rough/boundary terms, and boundary×boundary.
-
-For rough×rough, let
+for only `O(sqrt(p) log p)`, uniformly in the rational denominator. `MC-478` then retains the exact pair-sieve local Fourier product instead of collapsing immediately to the generic `q^{-1/2}` coefficient bound. This lowers the total absolute envelope coefficient cost from the crude `z^3/G(z)` of `MC-477` to
 
 \[
-W_z=\prod_{\substack{q<z\\q\ne p}}q,
-\qquad
-A_{W_z,h}(n)=\mathbf 1_{(n(n+h),W_z)=1}.
+\ll \frac{z^2(\log(2z))^5}{G(z)}.
 \]
 
-`MC-472` proves that the complete joint period contains no hidden sieve/phase resonance:
+Thus the low-denominator family itself no longer appears to be the main representation-complexity obstruction. The remaining base-component gap is the **signed interface between the exact pair-sieve indicator and the enveloping representation**. Pointwise majorization cannot be inserted into the complex character sum, while a generic positive norm closure risks erasing exactly the conductor-sensitive gain that the low-denominator completion preserves.
 
-\[
-\sum_{n\bmod pW_z}K_h(n)A_{W_z,h}(n)
-=-W_z\delta_{W_z}(h),
-\]
-
-with normalized mean `-delta_W(h)/p`. Odd shifts vanish exactly when `z>2`, and the uniform shift-average of `delta_W(h)` is the independent reduced-residue baseline. Thus the live rough×rough object is the centered incomplete discrepancy
-
-\[
-\mathcal D_{W,h}(I)
-=
-\sum_{n\in I}K_h(n)A_{W,h}(n)
-+\frac{|I|}{p}\delta_W(h).
-\]
-
-`MC-473` closes the most direct incomplete repair. Exact Möbius expansion of both roughness constraints followed by a separate Fourier/Weil completion of every congruence branch gives
-
-\[
-|\mathcal D_{W,h}(I)|
-\ll
-\sqrt p\log p\,
-\mathcal B_W(h),
-\qquad
-\mathcal B_W(h)=\prod_{q\mid W}(1+\nu_q(h)),
-\]
-
-up to the smaller finite-interval centering term. For a primorial sieve,
-
-\[
-2^{\omega(W)}\le\mathcal B_W(h)\le3^{\omega(W)}.
-\]
-
-So the individual progression character sums are easy, but full inclusion-exclusion plus branchwise absolute values is exponentially expensive in the number of sieve primes. This is a method obstruction, not a lower bound for the true discrepancy: any surviving sieve route must keep cancellation or approximation structure across divisor levels before absolute closure.
-
-`MC-474` and `MC-475` classify the two most immediate Fourier repairs. Exact additive Fourier expansion followed by separate modewise completion still pays an exponentially large Fourier `ell^1` norm. Replacing `ell^1` scalarization by plain Cauchy--Schwarz/Parseval does not help either: if
-
-\[
-S_r(I)=\sum_{n\in I}K_h(n)e_W(rn),
-\]
-
-then grouping by residues modulo `W` gives exactly
-
-\[
-\sum_{r\bmod W}|S_r(I)|^2
-=W\sum_{a\bmod W}\left|
-\sum_{\substack{n\in I\\n\equiv a\pmod W}}K_h(n)
-\right|^2.
-\]
-
-In the live `|I|<W`, `|I|\le p` regime this is essentially `W|I|`. Thus the centered mask has cheap Fourier `ell^2` energy, but the matching full-grid response carries the entire primorial frequency dimension. Ordinary full-grid additive large-sieve averaging therefore reproduces the same `W` cost rather than yielding a conductor-power saving.
-
-`MC-476` now audits the natural next suggestion against the current general restriction theory for sifted sets. Bera--Viswanadham's 2026 restriction theorem applies directly to the shifted pair sieve for surviving even shifts when `z<=|I|^(1/4)`: each small prime forbids one or two residues and the corresponding sieve dimension is two. But the theorem is uniform in the coefficient sequence and sees `K_h` only through its `ell^2` mass. At the zero additive frequency it therefore gives essentially the same norm bound for `K_h` as for constant positive coefficients on the same sifted support. Since its sieve quantity is at most polylogarithmic for this dimension-two sieve, the black-box restriction inequality cannot itself supply a fixed power of the character conductor.
-
-Crucially, this does not exhaust the new prior art. Bera--Viswanadham's proof uses an enveloping-sieve majorant whose Fourier representation is supported on rational frequencies with denominators at most `z^2`, far smaller as a representation than the full primorial `W` grid. That compressed representation remains potentially useful only if it is coupled to `K_h`-specific cancellation **before** coefficient phase is discarded. Positivity of the majorant alone does not authorize its substitution inside the signed character sum.
-
-There is also a one-sided prior-art boundary from Gong--Jia--Korolev: above the square-root conductor scale, `sum R_z(n)K_h(n)` and its translated analogue receive logarithmic cancellation because one rough leg can be absorbed into a bounded multiplicative coefficient. That theorem neither handles the joint pair-sieve coefficient nor supplies the required conductor-power gain.
+The mixed rough/boundary and first-exit terms remain mathematically distinct, as do nonempty rough-block components and cross-component interference before positive closure.
 
 ## Research question
 
-Can the concrete staged-sieve decomposition still produce a strict conductor-power gain through a mechanism that survives `MC-473`--`MC-476`?
+Can the exact rough×rough pair-sieve sum be transferred to the low-denominator envelope, or embedded in a positive quadratic form, with an error strictly below the conductor-saving budget supplied by `MC-477`--`MC-478`?
 
-For the **empty-vector rough×rough component**, the target is no longer generic incomplete completion, exact hard-mask Fourier expansion, ordinary full-grid Hilbert-space averaging, or a black-box application of a coefficient-uniform sifted restriction theorem. The sharp restriction-style question is now: can the **low-denominator enveloping-sieve representation** be combined with a conductor-sensitive estimate for the translated-ratio phase before positive majorization or norm closure destroys that phase? Equivalent alternatives are a truncated/factorable beta-sieve weight, a Buchstab/bilinear decomposition, or dispersion performed before the full `W`-frequency frame is formed. Any approximation to the exact pair-sieve indicator must price its signed error on the actual source interval; positivity or a standard density asymptotic alone is insufficient.
+For the exact mask
 
-The three positive boundary variants obtained by replacing one or both rough indicators by `E` remain separate targets. Their first-exit structure is not covered by the complete-period factorization, branch-multiplicity calculation, hard-mask Fourier barriers, or the rough-pair restriction audit.
+\[
+A_{W,h}(n)=\mathbf1_{(n(n+h),W)=1}
+\]
 
-For **nonempty rough-block components**, after discarding every bin tuple whose product cannot enter the `MC-467` small-outer region, does the surviving normalized signed mass remain large and structured enough for factor-specific dispersion to matter?
+and the corresponding low-denominator envelope `beta`, the direct missing object is
 
-A third channel is **cross-component interference**. It is admissible only if the complete signed finite decomposition is carried through an oscillatory transform before componentwise absolute values or positive quadratic closure.
+\[
+\sum_{n\in I}K_h(n)\bigl(A_{W,h}(n)-\beta(n)\bigr).
+\]
+
+A useful result may instead avoid literal replacement by deriving a bilinear, Buchstab, truncated-sieve, dispersion, or positive quadratic representation in which the exact mask is controlled while the translated-ratio phase remains visible. What does not qualify is a pointwise majorization followed by triangle inequality, or a norm estimate whose right-hand side depends only on coefficient magnitude and therefore treats `K_h` like constant positive coefficients.
+
+For nonempty components and boundary terms, the same question should be asked only after their exact support and first-exit structure is retained; they are not automatically covered by the empty-vector analysis.
 
 ## Why it may matter
 
-The route has progressively removed fake resources: large gcd, extra factor labels, Fejér concentration, independent support/interval tuning, generic well-factorability, blanket support pruning, internal signs of the empty-vector upper-sieve residual, the reciprocal divisor coordinate, complete-period sieve/phase resonance, full exact pair-sieve inclusion-exclusion followed by independent completion, exact Fourier `ell^1` recombination, plain full-grid `ell^2`/ordinary-large-sieve averaging, and now coefficient-uniform restriction at the target zero mode.
+The route has progressively removed several apparent resources that were artifacts of representation or positive closure: favorable gcd sectors, generic well-factorability, residual coefficient signs, complete-period resonance, full inclusion-exclusion, hard-mask Fourier expansion, generic Hilbert-space averaging, and coefficient-uniform restriction. The low-denominator envelope is the first surviving representation in this chain whose individual character modes and aggregate absolute coefficient mass both fit a polynomial source budget.
 
-The latest prior art also gives a more concrete positive target than the vague phrase “try restriction theory.” A general sifted restriction theorem already exists and is not enough by itself; what remains is its **representation layer**. If the `q<=z^2` enveloping frequencies can be coupled to the special rational character phase with a conductor-power estimate while the signed replacement cost stays below the gain, that would evade the full-primorial complexity exposed by `MC-473`--`MC-475`. Conversely, if this compressed majorant necessarily loses the needed phase through positive domination or its signed replacement error recreates the source tariff, the main restriction-style escape closes cleanly.
+If the signed replacement can also be controlled at that scale, the base component would genuinely evade the full-primorial obstructions of `MC-473`--`MC-475`. If every accurate replacement necessarily recreates a trivial-scale signed error or loses the conductor-sensitive phase under positive closure, that would close the main restriction-style escape and redirect attention to boundary/nonempty components or pre-positive cross-component interference.
 
 ## Decisive test
 
-For the **base rough×rough term**, set `R=T=1` and work in the recombined `n` representation. Remove odd `h` exactly when `z>2` and subtract the complete mean `-delta_W(h)/p` from the outset.
+Work in the `R=T=1` empty-vector source frame and retain the centering from `MC-472`. Use the actual Bera--Viswanadham/Ramaré--Ruzsa enveloping object or one precisely specified truncated/factorable replacement; do not revert to the exact full-primorial Fourier frame already closed by `MC-473`--`MC-475`.
 
-Do **not** re-expand the exact pair sieve completely and estimate every divisor/residue branch independently: `MC-473` proves that this pays `B_W(h)=prod(1+nu_q(h))`. Do **not** replace that by exact hard-mask Fourier modes and estimate them independently: `MC-474` proves exponential `ell^1` cost. Do **not** rely only on Cauchy--Schwarz/Parseval or the ordinary additive large sieve over all `W` modes: `MC-475` proves that the dual response energy pays the full primorial frequency dimension. Do **not** invoke the Bera--Viswanadham restriction inequality at zero frequency as the missing character estimate: `MC-476` proves that this step is coefficient-blind and contains no conductor-sensitive power gain.
+First derive a valid identity or inequality that connects the exact pair-sieve term to the compressed object **without using sign-insensitive pointwise majorization inside the character sum**. Then charge the resulting error or quadratic remainder explicitly against the conductor-sensitive budget
 
-The immediate restriction-style test is instead to take the **enveloping-sieve majorant/decomposition itself**, with its rational Fourier support at denominators `q<=z^2`, and derive both sides of the actual signed tradeoff:
+\[
+\frac{z^2(\log(2z))^5}{G(z)}\sqrt p\log(2p)
+\]
 
-1. a conductor-sensitive estimate for the resulting `K_h`-twisted rational-frequency family, with the total coefficient/norm cost over `q<=z^2` explicit; and
-2. a valid treatment of the difference between the exact pair-sieve indicator and the enveloping object on the actual source interval. Pointwise majorization is not enough because `K_h` changes phase; either the replacement must occur inside a legitimate positive quadratic form that retains useful character information or the signed replacement error must be bounded directly.
+from `MC-478`, together with source interval length, shell summation, Fejér weights, coefficient normalization, endpoint separation, and source depth from the staged architecture.
 
-Accept the route only if these two bounds together produce a strict conductor-power saving after source length, shell summation, Fejér weights, endpoint separation, coefficient normalization, and source depth are charged. Kill the route if the low-denominator representation still accumulates enough coefficient/spectral mass to erase the character saving, or if making the majorant accurate enough forces a signed replacement error of trivial scale.
+Accept the route only if the complete accounting gives a strict conductor-power gain for the exact base component. Kill the restriction-style route if every legitimate exact-to-envelope transfer has trivial-scale signed error, or if the only available positive closure replaces the `K_h`-specific completion gain by a coefficient-blind norm bound.
 
-For the mixed and boundary terms, use the exact first-exit formula from `MC-470`; high rank or nonnegativity alone is not sparsity. For nonempty components, apply the exact lower support `a>D_1...D_r` before estimating surviving tuples. For cross-component interference, retain the signed finite sum through the proposed transform and exhibit a concrete cross term whose cancellation survives normalization; separate positive energies followed by a later appeal to cancellation do not qualify.
-
-Keep exact `(U,D)` collision aggregation wherever a staged form is genuinely needed, and isolate the near-complete endpoint instead of hiding it in a bulk estimate.
+For mixed/boundary terms, use the exact first-exit decomposition from `MC-470`; for nonempty pieces, retain the exact bin-product support pruning; for cross-component interference, retain the signed finite decomposition through the proposed transform and exhibit a concrete surviving cross term rather than appealing to cancellation after separate absolute bounds.
 
 ## Evidence boundary
 
-`MC-472` proves only complete-period factorization and local density identities. `MC-473` proves only that full exact inclusion-exclusion plus independent branchwise completion is too expensive. `MC-474` proves only that exact hard-mask Fourier expansion plus modewise absolute values has exponential Fourier `ell^1` cost. `MC-475` proves only that plain full-grid `ell^2` coupling restores the full `W`-dimensional response energy. `MC-476` proves only that the current general coefficient-uniform sifted restriction theorem does not expose translated-ratio character cancellation at zero frequency; it explicitly leaves the enveloping representation plus a coefficient-specific estimate open.
+`MC-477` proves only a denominator-independent character estimate for each low-denominator rational mode and a crude envelope recombination. `MC-478` improves only that envelope recombination by exploiting exact local pair-sieve Fourier factorization. Neither controls the exact pair-sieve indicator, the signed replacement error, boundary terms, nonempty components, or cross-component interference.
 
-None of these results bounds the actual incomplete discrepancy or rules out a successful low-denominator enveloping-sieve/character coupling, truncated structured weights, Buchstab identities, bilinear forms, or dispersion before scalarization. Likewise, none proves a power saving for the boundary terms, the surviving nonempty components, or cross-component interference. No conductor-power gain, Möbius bound, zero-free region, or RH consequence has been obtained.
+The displayed low-denominator budget is an upper bound for one coefficientwise envelope treatment, not a lower bound or an optimal barrier. No conductor-power estimate for the exact rough×rough discrepancy, Möbius bound, zero-free region, or RH consequence has been obtained.
 
 ## Research disposition
 
-The clue remains `accepted` and is materially narrowed through `MC-476`. The immediate rough×rough restriction test is now **representation-level rather than theorem-level**: the general restriction inequality already exists but quotients away the needed coefficient phase, while its low-denominator enveloping sieve may still compress the exact pair-sieve complexity enough to permit a separate `K_h`-specific estimate. Full inclusion-exclusion plus termwise completion, exact hard-mask Fourier `ell^1` recombination, ordinary full-grid `ell^2` averaging, and black-box zero-mode sifted restriction are closed as standalone routes. The low-denominator mixed sieve/character coupling, boundary terms, nonempty components, and pre-positive cross-component interference remain distinct surviving channels.
+The clue remains `accepted`, but the restriction-style branch is now substantially narrower. The low-denominator character modes and their aggregate pair-sieve `ell^1` cost have survived and been priced by `MC-477`--`MC-478`; the immediate unresolved question is the **signed exact-to-envelope transfer while retaining the conductor gain**. Further improvement of the envelope coefficient aggregation is useful but no longer substitutes for that missing interface theorem.
