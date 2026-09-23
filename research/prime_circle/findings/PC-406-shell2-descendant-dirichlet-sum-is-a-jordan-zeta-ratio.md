@@ -1,8 +1,8 @@
 # PC-406 — shell-2 descendant Dirichlet sum is a Jordan-zeta ratio
 
-**Status:** `EXACT-DERIVED` + `CLASSICAL-IDENTITY` + `DECISIVE-NEGATIVE` for the most direct infinite-level analytic resummation left open by PC-405. After conjugating the canonical shell-2 child maps to ordinary dilations, every Mellin moment of the complete multiplicative descendant tree has an exact Dirichlet generating function equal to a finite Euler correction times `zeta(s+j)/zeta(s)`. Equivalently, the fresh-prime coefficients are the classical Dirichlet convolution `mu * id_{-j}` (a generalized Jordan-totient coefficient). Thus the natural infinite-level Dirichlet completion does not create a new analytic carrier: it reintroduces zeta through a standard Euler-product identity, and its nontrivial zeros/poles occur only after scalarization and analytic continuation beyond the operator series' native convergence half-plane.
+**Status:** `EXACT-DERIVED` + `CLASSICAL-IDENTITY` + `DECISIVE-NEGATIVE` for the most direct infinite-level analytic resummation left open by PC-405. After conjugating the canonical shell-2 child maps to ordinary dilations, the complete descendant Dirichlet family has a universal Euler product. Polynomial Mellin moments give finite Euler corrections times `zeta(s+j)/zeta(s)`, and the full complex Mellin-character readout gives the same ratio with `j` replaced by a complex dilation character `z`. Moreover, the conjugated shell-2 measure is exactly the signed radial-flux measure of PC-179, so the only source-specific zeta factor in the two-variable transform is the already-classical one-shell Mellin carrier. Thus the natural infinite-level Dirichlet completion does not create a new analytic carrier: its nontrivial zeta divisors either pre-exist in the one-shell flux or appear only after scalarization and analytic continuation beyond the descendant operator series' native convergence domain.
 
-This does **not** rule out every infinite-level or renormalized limit of the shell-2 refinement system. It closes the canonical conductor-Dirichlet resummation of all descendants, including its operator-valued Euler product and all polynomial Mellin moments.
+This does **not** rule out every infinite-level or renormalized limit of the shell-2 refinement system. It closes the canonical conductor-Dirichlet resummation of all descendants, its operator-valued Euler product, its polynomial Mellin moments, and its full scalar Mellin-character diagonalization.
 
 ## 1. Start from the exact PC-405 dilation model
 
@@ -216,27 +216,173 @@ M_0(\nu_n)\prod_{p\mid n}(1-p^{-s})^{-1}.
 
 For `j>0`, the only new analytic factor is the shifted classical ratio in (18).
 
-## 5. The matched arbitrary-measure control survives the infinite sum
+## 5. The full Mellin-character readout is the old radial-flux carrier times the same universal ratio
+
+The shell-2 coordinate change can be identified exactly with the radial variable used in PC-179. PC-405 defines
+
+\[
+\mu_n=\tau_*(dX_n),
+\qquad
+\tau(r)=\log(1+r),
+\qquad
+X_n(r)=\log\Phi_n(r),
+\]
+
+and `chi(t)=-log(e^t-1)`. Since
+
+\[
+\chi(\tau(r))=-\log r,
+\]
+
+pushing `dX_n` through `chi\circ tau` and substituting `r=e^{-x}` gives, for every compactly supported continuous test function,
+
+\[
+\int f(x)\,d\nu_n(x)
+=
+\int_0^1 f(-\log r)\,dX_n(r)
+=
+\int_0^\infty f(x)\,\rho_n(x)\,dx,
+\]
+
+where `rho_n(x)=-d/dx log Phi_n(e^{-x})` is exactly the signed radial flux of PC-179. Hence
+
+\[
+\boxed{d\nu_n(x)=\rho_n(x)\,dx.}
+\tag{20}
+\]
+
+This identifies two apparently different Prime-Circle carriers: the measure whose shell-2 moments drive PC-399--PC-406 and the radial-flux profile already Mellinized in PC-179 are the same object after the canonical refinement coordinate change.
+
+For a complex dilation character `z`, put
+
+\[
+M_z(\nu):=\int_0^\infty x^z\,d\nu(x).
+\]
+
+Because `rho_n` is bounded at `0+` and decays exponentially at infinity, `M_z(\nu_n)` is holomorphic for `Re(z)>-1`. Substituting `s=z+1` into the exact PC-179 Mellin formula gives
+
+\[
+\boxed{
+M_z(\nu_n)
+=-\Gamma(z+1)\zeta(z+1)n^{-z}
+\prod_{p\mid n}(1-p^z),
+\qquad \Re(z)>-1,
+}
+\tag{21}
+\]
+
+with removable cancellations interpreted by limits, in particular at `z=0`. Dilation is diagonal on these characters,
+
+\[
+M_z(S_a\nu)=a^{-z}M_z(\nu),
+\]
+
+so (6)--(7) immediately sharpen (15) to
+
+\[
+\boxed{
+M_z(\nu_{nm})
+=
+m^{-z}
+\prod_{\substack{p\mid m\\p\nmid n}}(1-p^z)
+\,M_z(\nu_n).
+}
+\tag{22}
+\]
+
+Now form the genuine two-variable Mellin--conductor transform
+
+\[
+\mathcal Z_n(s,z)
+:=
+\sum_{m\ge1}\frac{M_z(\nu_{nm})}{m^s}.
+\tag{23}
+\]
+
+The local Euler factors converge absolutely in the natural domain
+
+\[
+\Re(z)>-1,
+\qquad
+\Re(s)>1,
+\qquad
+\Re(s+z)>1.
+\]
+
+For `p\nmid n` the local factor is
+
+\[
+1+\sum_{k\ge1}p^{-k(s+z)}(1-p^z)
+=
+\frac{1-p^{-s}}{1-p^{-(s+z)}},
+\]
+
+while for `p\mid n` it is `(1-p^{-(s+z)})^{-1}`. Therefore
+
+\[
+\boxed{
+\mathcal Z_n(s,z)
+=
+M_z(\nu_n)
+\frac{\zeta(s+z)}{\zeta(s)}
+\prod_{p\mid n}(1-p^{-s})^{-1}.
+}
+\tag{24}
+\]
+
+Combining (21) and (24) gives the complete scalar factorization
+
+\[
+\boxed{
+\mathcal Z_n(s,z)
+=
+-\Gamma(z+1)\zeta(z+1)
+\frac{\zeta(s+z)}{\zeta(s)}
+ n^{-z}
+\prod_{p\mid n}\frac{1-p^z}{1-p^{-s}}.
+}
+\tag{25}
+\]
+
+Thus passing from integer moments to the full complex Mellin spectrum does not expose a hidden interaction. It separates even more cleanly: the cyclotomic source contributes the one-shell PC-179 factor, while the entire descendant tree contributes the universal Jordan/zeta ratio already present in PC-406. For the smooth exponentially decaying profiles here, Mellin characters are the natural scalar diagonalization of dilation, so this closes the obvious noninteger-Mellin escape rather than merely checking more polynomial moments.
+
+## 6. The matched arbitrary-measure control survives the full Mellin sum
 
 PC-405 already showed that the finite descendant architecture works for an arbitrary finite signed base measure when synthetic descendants are generated by the same `T_p` rules. The infinite-level series does not break that control.
 
-Indeed, choose any finite signed measure `nu` for which the moment `M_j(nu)` exists and generate synthetic descendants using exactly the operators `B_{n,m}` of (7). Equations (8)--(18) are unchanged, with `M_j(nu_n)` replaced by `M_j(nu)`. In particular, the zeta ratio is **independent of the cyclotomic source measure**.
+Choose any finite signed measure `nu` for which `M_z(nu)` exists in a common vertical strip and generate synthetic descendants using exactly the operators `B_{n,m}` of (7). The derivation of (22)--(24) is unchanged, with `M_z(nu_n)` replaced by `M_z(nu)`. In particular, the factor
 
-Thus neither the operator Euler product nor its moment symbol distinguishes the actual Prime-Circle shell from the matched nonarithmetic control. The arithmetic source contributes the base moment; the `zeta(s+j)/zeta(s)` carrier is forced by the universal dilation/difference semigroup and ordinary Dirichlet summation.
+\[
+\frac{\zeta(s+z)}{\zeta(s)}
+\prod_{p\mid n}(1-p^{-s})^{-1}
+\]
 
-## 6. Why the zeta zeros here are not a new RH mechanism
+is **independent of the cyclotomic source measure**.
 
-There are three separate obstructions.
+Thus neither the operator Euler product nor its full Mellin symbol distinguishes the actual Prime-Circle shell from the matched nonarithmetic control. The arithmetic source contributes only its base Mellin transform; for the genuine cyclotomic source that transform is already exactly the classical PC-179 factor (21).
 
-First, the operator series (8) is obtained canonically only in `Re(s)>1`. In that half-plane the denominator `zeta(s)` has no zeros, and for `j>=0` the numerator `zeta(s+j)` introduces no nontrivial zero phenomenon relevant to RH. The familiar nontrivial zeros appear only after the scalar identity (18) is meromorphically continued beyond the domain in which the operator Euler product was derived.
+## 7. Why the zeta zeros here are not a new RH mechanism
 
-Second, the divisor in the continuation is exactly the classical one already visible in (17). A zero or pole of the continued scalar ratio is inherited from zeta; it is not produced as a spectrum, determinant, resonance, or positivity boundary of a new Prime-Circle operator.
+There are four separate obstructions.
 
-Third, the moment order `j` merely translates the numerator to `zeta(s+j)`. No source-derived principle here singles out a half-density normalization, supplies the archimedean gamma factor, or creates an `s <-> 1-s` symmetry. Treating the continued ratio as the desired spectral object would therefore wrap the known zeta function around the descendant data rather than derive its critical-line geometry from the circle construction.
+First, the operator series (8) is obtained canonically only in `Re(s)>1`. The full scalar Euler product (24) additionally has the natural absolute-convergence condition `Re(s+z)>1`. In that joint domain both descendant factors `zeta(s)` and `zeta(s+z)` are zero-free. The only nontrivial zeta zeros accessible without continuing the descendant variables are those of the base factor `zeta(z+1)` in (21), and those are exactly the one-shell zeros already classicalized in PC-179.
 
-This is the same classicalization warning encountered in PC-055 and PC-378, but here it closes a distinct live regime: the infinite conductor sum of the shell-2 descendant measures left outside the finite theorem of PC-405.
+Second, after meromorphic continuation the two-variable divisor consists only of inherited zeta hyperplanes `z+1=rho`, `s+z=rho`, and `s=rho`, together with elementary gamma and finite Euler factors. No new nonlinear zero condition, spectral determinant, positivity boundary, or resonance equation is generated by coupling the shell to its descendants.
 
-## 7. Prior-art and novelty audit
+Third, even the tempting functional-equation pairing is not source-forced. Pairing `zeta(z+1)` with its reflected argument would require
+
+\[
+s+z=1-(z+1)=-z,
+\qquad\text{hence}\qquad s=-2z.
+\]
+
+But this diagonal has **no intersection with the native domain** `Re(z)>-1`, `Re(s)>1`, `Re(s+z)>1`: the last condition would require `Re(z)<-1`. The relation can only be imposed after analytic continuation as an external constraint between two independent transform variables. It therefore inserts the classical functional equation geometry rather than deriving it from Prime Circle.
+
+Fourth, no source-derived principle in the descendant semigroup singles out a half-density normalization or creates an intrinsic `s <-> 1-s` involution. Treating the continued factors in (25) as the desired spectral object would wrap known zeta functions around the shell data rather than explain their critical-line geometry.
+
+This is the same classicalization warning encountered in PC-055 and PC-378, but here it closes a distinct live regime: the infinite conductor sum of the shell-2 descendant measures left outside the finite theorem of PC-405, including its full scalar dilation spectrum rather than only integer moments.
+
+## 8. Prior-art and novelty audit
 
 The arithmetic identity is classical. For the Jordan totient,
 
@@ -249,35 +395,35 @@ and the standard Dirichlet generating function is
 \[
 \sum_{m\ge1}\frac{J_k(m)}{m^s}
 =\frac{\zeta(s-k)}{\zeta(s)}.
-\tag{20}
+\tag{26}
 \]
 
-Equation (17) is the same identity with `k=-j`. PC-020 already records Jordan-totient data as classical Prime-Circle output in a different local-jet context. PC-055 classifies the corresponding zeta/Möbius thresholds for an infinite divisor transform, while PC-378 shows that an Euler-product completion of the Chebyshev refinement shifts is likewise just a classical zeta divisor multiplier. External checks against standard Dirichlet-series/Jordan-totient references and the Bost--Connes semigroup literature confirm that no historical novelty should be assigned to the zeta ratio or the dilation Euler-product mechanism.
+Equation (17) is the same identity with `k=-j`, and equations (22)--(24) are its elementary complex-parameter Euler-product continuation in the domain of absolute convergence. Likewise, using Mellin characters to diagonalize ordinary dilation is classical harmonic analysis on the multiplicative half-line. PC-020 already records Jordan-totient data as classical Prime-Circle output in a different local-jet context. PC-055 classifies the corresponding zeta/Moebius thresholds for an infinite divisor transform, while PC-378 shows that an Euler-product completion of the Chebyshev refinement shifts is likewise just a classical zeta divisor multiplier. Most importantly, PC-179 already proves the one-shell factor (21). External checks against standard Jordan-totient/Dirichlet-series references and standard Mellin-dilation theory therefore leave no plausible historical novelty claim for any factor in (25).
 
-The durable project-local delta is narrower: PC-405 explicitly left genuinely infinite-level or renormalized analytic limits outside its finite one-measure theorem. Equations (11) and (18) settle the most direct such continuation. Summing **all multiplicative descendants by conductor** still yields a universal one-measure dilation operator, and every canonical polynomial Mellin readout classicalizes to a Jordan/zeta ratio.
+The durable project-local delta is structural rather than a new number-theory identity. PC-405's shell-2 measure, after its own canonical dilation conjugacy, is **exactly** the PC-179 radial-flux measure, and the full two-variable transform factors into that old one-shell carrier times the universal PC-406 descendant multiplier. This identifies and closes what otherwise looks like a separate complex-Mellin/refinement route.
 
-No novelty is claimed for the classical identity itself.
+No novelty is claimed for the classical factors themselves.
 
-## 8. Falsification checks and surviving frontier
+## 9. Falsification checks and surviving frontier
 
-The derivation has exact local tests. For a fresh prime `p\nmid n`, (6) predicts
+The derivation has exact local tests. For a fresh prime `p\nmid n`, (22) predicts
 
 \[
-M_j(\nu_{np})=(p^{-j}-1)M_j(\nu_n),
-\tag{21}
+M_z(\nu_{np})=(p^{-z}-1)M_z(\nu_n),
+\tag{27}
 \]
 
 whereas for a repeated prime `p\mid n`,
 
 \[
-M_j(\nu_{np^k})=p^{-kj}M_j(\nu_n).
-\tag{22}
+M_z(\nu_{np^k})=p^{-kz}M_z(\nu_n).
+\tag{28}
 \]
 
-Any direct cyclotomic shell-2 computation violating either identity falsifies the reduction. Expanding the first few Euler factors in (18) gives an independent coefficient-by-coefficient check of (15).
+The `z=j` specializations reproduce the previous polynomial identities exactly. Independently, direct substitution of `chi(tau(r))=-log r` must reproduce the PC-179 radial density (20); failure of that pushforward identity would invalidate the strengthened conclusion. Expanding the first few Euler factors in (24) gives a coefficient-by-coefficient check of (22).
 
 The result does **not** cover an arbitrary nonlinear functional of the full descendant family, a source-derived interaction that couples two levels before separate pushforward reduction, angular/chord/old-new data joined to radial refinement, a non-functorial product law, or an infinite-level renormalization whose definition is not the ordinary conductor Dirichlet sum (8). Those remain legitimate only if they can be shown to introduce information not already determined by the one-base-measure dilation system.
 
 ## Consequence
 
-The simplest infinite-level escape from PC-405 is closed. Passing from finitely many shell-2 descendants to the complete conductor-Dirichlet generating family does not generate a new zeta mechanism; it yields the classical generalized-Jordan identity `zeta(s+j)/zeta(s)` with only finite Euler corrections from primes already dividing the parent shell. A further Prime-Circle candidate must change the information law rather than merely sum the same descendant semigroup over all conductors.
+The simplest infinite-level escape from PC-405 is closed more strongly than the polynomial-moment calculation alone showed. Passing from finitely many shell-2 descendants to the complete conductor-Dirichlet generating family does not generate a new zeta mechanism, and allowing the full complex Mellin spectrum does not repair it: the two-variable transform is exactly the old PC-179 radial-flux Mellin factor times the classical generalized-Jordan ratio `zeta(s+z)/zeta(s)`, with only finite Euler corrections from primes already dividing the parent shell. A further Prime-Circle candidate must change the information law rather than merely respectralize or sum the same descendant dilation semigroup.
