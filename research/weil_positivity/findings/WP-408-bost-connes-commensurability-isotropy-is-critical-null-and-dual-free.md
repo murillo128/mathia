@@ -4,23 +4,23 @@ title: Bost--Connes commensurability isotropy is critical-null and dual-free
 branch: weil_positivity
 status: supported
 kind: bost-connes-groupoid-isotropy-cycle-holonomy-obstruction
-claim_strength: exact RH-independent classification showing that nontrivial isotropy of the native Bost--Connes commensurability groupoid is confined to the single point rho=0, which is null for the critical KMS Haar measure, while the scale-retaining dual groupoid is free everywhere; consequently a scalar phase that descends to a normalized groupoid 1-cocycle has trivial holonomy on critical-almost-every native cycles and on every dual cycle
+claim_strength: exact RH-independent classification showing that nontrivial isotropy of the native Bost--Connes commensurability groupoid is confined to the single point rho=0, which is null for the critical KMS Haar measure, while the scale-retaining dual groupoid is free everywhere; consequently every normalized group-valued groupoid 1-cocycle and every honest unitary groupoid representation has trivial holonomy on critical-almost-every native cycle and on every dual cycle, including noncommutative U(d)-valued fibre transport
 created: 2026-09-22
-related: [WP-297, WP-395, WP-407]
+related: [WP-297, WP-395, WP-407, WP-411, WP-412]
 clues: [CLUE-weil-positivity-bost-connes-affiliation-conditioning-boundary]
 prior_art:
   - J.-B. Bost and A. Connes, Hecke algebras, type III factors and phase transitions with spontaneous symmetry breaking in number theory, Selecta Math. (N.S.) 1 (1995), 411--457, DOI 10.1007/BF01589495
   - A. Connes, C. Consani, and M. Marcolli, Noncommutative geometry and motives: the thermodynamics of endomotives, Adv. Math. 214 (2007), 761--831, DOI 10.1016/j.aim.2007.03.006; especially the Bost--Connes groupoid descriptions around equations (4.37)--(4.40)
-  - standard isotropy calculation for transformation groupoids and the torsion-freeness of the additive group of the profinite completion Z-hat
+  - standard isotropy calculation for transformation groupoids, functoriality of groupoid representations, and the torsion-freeness of the additive group of the profinite completion Z-hat
 ---
 
 # WP-408 — Bost--Connes commensurability isotropy is critical-null and dual-free
 
 ## Claim
 
-`WP-407` isolates the first place where an enlarged block-positive architecture can see a central scalar phase: a genuine cycle. The remaining provenance gate is therefore not merely to draw a loop, but to show that the arithmetic source itself supplies a nontrivial cycle holonomy.
+`WP-407` isolates the first place where an enlarged block-positive architecture can see a central scalar phase: a genuine cycle. `WP-411` and `WP-412` later show that arbitrary passive matrix decorations can retain ordered matrix products on scale-balanced words. The provenance gate is therefore not merely to draw a loop or attach noncommuting matrices, but to show that the arithmetic source itself supplies a nontrivial cycle holonomy.
 
-For the **bare Bost--Connes commensurability groupoid**, the source does not supply such holonomy on the part seen by the critical state.
+For the **bare Bost--Connes commensurability groupoid**, the source does not supply such holonomy on the part seen by the critical state, even for nonabelian coefficient groups or honest unitary fibre representations.
 
 Connes--Consani--Marcolli describe the Bost--Connes algebra through the etale groupoid
 
@@ -45,8 +45,7 @@ with source `rho`, range `k rho`, and composition by multiplication of the ratio
 
 Equivalently, **every nonzero `rho in Z-hat` has trivial stabilizer** under the partial rational-scaling action. The only unit with nontrivial isotropy is `rho=0`.
 
-By `WP-395`, the restriction of the critical `KMS_1` state to
-`C(Z-hat)` is normalized additive Haar measure. Since the singleton `{0}` is Haar-null,
+By `WP-395`, the restriction of the critical `KMS_1` state to `C(Z-hat)` is normalized additive Haar measure. Since the singleton `{0}` is Haar-null,
 
 \[
 m_{\rm Haar}\bigl(\{\rho:\operatorname{Iso}(G_{BC})_\rho
@@ -84,11 +83,15 @@ forces `k lambda=lambda`, hence `k=1`. Therefore
 
 **everywhere**, not merely almost everywhere.
 
-The consequence for the live `WP-407` route is exact. If a proposed scalar edge phase is source-derived in the strict sense that it descends to a normalized `U(1)`-valued groupoid 1-cocycle, then its product around any composable source cycle is the cocycle value of the resulting isotropy arrow. Hence that holonomy is `1` for critical-almost-every cycle in `G_BC`, and for every cycle in the scale-retaining dual groupoid. The canonical time cocycle `k -> k^{it}` is the simplest example.
+The holonomy consequence does not depend on commutativity of the coefficient group. Let `K` be any group and let `c:G->K` be a normalized multiplicative groupoid 1-cocycle. The product of cocycle values around a composable cycle based at `x` is `c(g)`, where `g` is the resulting isotropy arrow. If the isotropy at `x` is trivial, then `g=1_x` and the product is the identity of `K`. Likewise, for a unitary groupoid representation on a Hilbert bundle, the ordered product of transport operators around such a cycle is exactly the identity operator on the fibre at `x`.
 
-So **the bare Bost--Connes commensurability relation cannot provide the nontrivial source-forced scalar cycle holonomy demanded by `WP-407`**. A surviving cyclic route must add genuinely new source structure: for example a canonical projective/twisted groupoid extension, a non-flat connection that does not descend to the native arrow, noncentral operator-valued holonomy, or a larger global correspondence. Such extra structure must then pass the arithmetic-provenance and finite-plus-archimedean destination gates independently.
+Hence **every honest native groupoid cocycle or unitary representation is cycle-flat on all nonzero units of `G_BC`, and on every unit of the scale-retaining dual groupoid**. This includes `U(d)`-valued transport with noncommuting edge matrices. Noncentrality by itself is therefore not an escape.
 
-**Classification:** `EXACT-DERIVED + RH-INDEPENDENT + BOST-CONNES-GROUPOID + PARTIAL-RATIONAL-SCALING + ISOTROPY-CLASSIFICATION + CRITICAL-KMS-HAAR + NONTRIVIAL-ISOTROPY-NULL + DUAL-GROUPOID-FREE + GROUPoid-1-COCYCLE-HOLONOMY-TRIVIAL + SOURCE-CYCLE-PROVENANCE-NO-GO + MATCHED-CONTROL-GENERIC + TWISTED-EXTENSION-REMAINS-OPEN + NOT-A-WEIL-BRIDGE`.
+This sharpens the boundary left by `WP-411`/`WP-412`. Their arbitrary passive matrix coefficients were intentionally not required to be the values of one coherent groupoid cocycle or representation. A scale-balanced ordered product can survive there precisely because the coefficient assignment carries extra path-sensitive freedom. Once arithmetic provenance is strengthened to an honest representation of the native commensurability arrows, the balanced holonomy collapses to the identity on the critical support.
+
+So a surviving cyclic route must add genuinely new source structure: for example a canonical projective/twisted groupoid extension, a non-flat connection whose transport does not descend to the native arrow, a nontrivial correspondence/Fell-bundle category, or a larger global object. Such extra structure must then pass the arithmetic-provenance and finite-plus-archimedean destination gates independently.
+
+**Classification:** `EXACT-DERIVED + RH-INDEPENDENT + BOST-CONNES-GROUPOID + PARTIAL-RATIONAL-SCALING + ISOTROPY-CLASSIFICATION + CRITICAL-KMS-HAAR + NONTRIVIAL-ISOTROPY-NULL + DUAL-GROUPOID-FREE + ARBITRARY-GROUP-1-COCYCLE-HOLONOMY-TRIVIAL + UNITARY-REPRESENTATION-HOLONOMY-TRIVIAL + NONCOMMUTATIVE-COEFFICIENTS-NOT-AN-ESCAPE + SOURCE-CYCLE-PROVENANCE-NO-GO + MATCHED-CONTROL-GENERIC + TWISTED-EXTENSION-REMAINS-OPEN + NOT-A-WEIL-BRIDGE`.
 
 ## 1. The native Bost--Connes groupoid has one exceptional isotropy point
 
@@ -151,7 +154,7 @@ m_{\rm Haar}(\{0\})=0.
 
 Combining (2) and (10) proves (3). The only place where the native commensurability groupoid admits a nonidentity loop is invisible to the critical unit-space measure.
 
-This is distinct from the support obstruction of `WP-395`. There the issue was that exact arithmetic orbit support becomes null in the critical centralizer. Here the null set is used for a different live question: **whether the source relation itself supplies nontrivial cyclic isotropy capable of carrying the phase that `WP-407` shows positivity could detect**.
+This is distinct from the support obstruction of `WP-395`. There the issue was that exact arithmetic orbit support becomes null in the critical centralizer. Here the null set is used for a different live question: **whether the source relation itself supplies nontrivial cyclic isotropy capable of carrying holonomy that positivity could detect**.
 
 ## 3. Retaining the scale coordinate removes even the exceptional loop
 
@@ -174,65 +177,99 @@ Since `lambda in R_+^times`, division by `lambda` gives `k=1`. No property of `r
 
 This is an important control for the current finite--archimedean problem. Adding the natural positive scale variable does **not** rescue native cycle holonomy. It deletes the sole exceptional isotropy point rather than promoting it into a finite--archimedean loop.
 
-## 4. Native groupoid 1-cocycles have trivial holonomy on the surviving source
+## 4. Honest groupoid cocycles and representations have trivial holonomy on the surviving source
 
-Let
+Let `K` be an arbitrary, possibly nonabelian group and let
 
 \[
-\omega:G\to U(1)
+c:G\to K
 \]
 
 be a normalized multiplicative groupoid 1-cocycle,
 
 \[
-\omega(g_1g_2)=\omega(g_1)\omega(g_2),
+c(g_1g_2)=c(g_1)c(g_2),
 \qquad
-\omega(1_x)=1.
+c(1_x)=e_K.
 \tag{13}
 \]
 
-For a composable cycle `g_1,...,g_m` based at `x`,
+For a composable cycle `g_1,...,g_m` based at `x`, put
 
 \[
-g=g_m\cdots g_1\in\operatorname{Iso}(G)_x
+g=g_m\cdots g_1\in\operatorname{Iso}(G)_x.
 \]
 
-and its scalar holonomy is
+Without commuting or reordering any factors,
 
 \[
-\prod_{j=1}^m\omega(g_j)=\omega(g).
+c(g_m)\cdots c(g_1)=c(g).
 \tag{14}
 \]
 
-If the isotropy at `x` is trivial, then `g=1_x`, so (14) is exactly `1`. Therefore every source phase that **descends to an honest native groupoid 1-cocycle** is cycle-flat on all nonzero units of `G_BC`, and on every unit of the dual groupoid.
+If the isotropy at `x` is trivial, then `g=1_x`, so (14) is exactly `e_K`. The argument uses only functoriality; abelianity of `K` plays no role.
+
+The same statement is coordinate-free for a unitary groupoid representation. If a Hilbert bundle `H_x` carries unitary transports
+
+\[
+U_g:H_{s(g)}\to H_{r(g)},
+\qquad
+U_{g_2g_1}=U_{g_2}U_{g_1},
+\qquad
+U_{1_x}=I_{H_x},
+\tag{15}
+\]
+
+then every cycle at a trivial-isotropy unit satisfies
+
+\[
+U_{g_m}\cdots U_{g_1}=I_{H_x}.
+\tag{16}
+\]
+
+Thus matrix noncommutativity cannot manufacture holonomy when the transport genuinely descends to the native arrow. In particular, a fixed-fibre `U(d)`-valued 1-cocycle is covered by (13), while a varying-fibre unitary representation is covered by (15).
 
 For the canonical time evolution,
 
 \[
-\omega_t(k,\rho)=k^{it},
-\tag{15}
+c_t(k,\rho)=k^{it},
+\tag{17}
 \]
 
-and a native cycle off zero has total rational multiplier `k=1`; its phase is therefore identically one. Prime factorizations do not change this: two factorization paths representing the same native arrow are not distinct holonomy classes in the groupoid.
+and a native cycle off zero has total rational multiplier `k=1`; its phase is identically one. Prime factorizations do not change this: two factorization paths representing the same native arrow are not distinct holonomy classes in the groupoid.
 
-This is exactly where an apparent loophole must be named rather than hidden. A phase assignment can have nontrivial holonomy around a graph cycle if it **fails** to descend to (13). But then the phase uses additional path-sensitive structure: a projective representation/2-cocycle, a connection with curvature, an auxiliary bundle, or another enlargement. `WP-408` does not forbid such objects. It says that their holonomy is not already present in the bare Bost--Connes commensurability groupoid and therefore needs a separate source-canonicity argument.
+At the exceptional unit `rho=0`, a cocycle may restrict to a nontrivial representation of the isotropy group `Q_+^times`. That does not alter the critical conclusion because `{0}` has Haar measure zero. In the scale-retaining dual groupoid there is no exceptional unit at all.
 
-## 5. Relation to the previous obstructions
+A path assignment can still have nontrivial holonomy if it **fails** to descend to (13) or (15). A projective representation may accumulate a 2-cocycle multiplier; a twisted/Fell-bundle lift may retain multiplication data not determined by the underlying arrow; a connection with curvature may be path-sensitive; a larger correspondence can add genuinely new loops. Those are additional structures, not hidden holonomy of the bare commensurability groupoid.
+
+## 5. Relation to the previous obstructions and the WP-412 frontier
 
 This result is not a restatement of `WP-297`. There the object was a flat multiplicative transport over the rooted positive-integer action category, and the initial object made every such cocycle gauge-trivial. Here the object is the actual Bost--Connes commensurability groupoid; the obstruction is its isotropy geometry, sharpened by the critical Haar measure and by the scale-retaining dual action.
 
-It is also stronger in the direction left open by `WP-407`. `WP-407` proves that cycles are the first graph topology on which a central scalar phase can affect block positivity. `WP-408` asks whether the most canonical arithmetic source currently in play supplies such a cycle. For native commensurability arrows the answer is negative on the critical support, and exactly negative once the scale coordinate is retained.
+It is stronger in the direction left open by `WP-407`: the negative conclusion is not specific to central scalar phases. Once transport is an honest functor of the native groupoid, **all** coefficient groups and all unitary fibre dimensions have identity holonomy at trivial-isotropy units.
 
-The conclusion is deliberately narrower than saying that Bost--Connes has no useful cyclic or cohomological structure. Twisted groupoid cohomology, noncentral correspondences, cyclic homology, and larger adelic constructions are different categories. Indeed the Connes--Consani--Marcolli program uses a cokernel and cyclic homology precisely to obtain structure not visible in the bare transformation groupoid alone.
+This also narrows the scale-balanced survivor isolated by `WP-412`. KMS invariance permits a word such as `V_a^*V_bV_c^*V_d` only when `bd=ac`. For arbitrary passive coefficients, the ordered matrix product need not vanish or equal the identity. But if those coefficients are additionally required to arise from an honest native groupoid cocycle/representation, a composable balanced word has total rational label `1`, hence is the identity arrow off the exceptional unit, and its ordered transport product is forced to `I`. Therefore **source-forced balanced holonomy cannot mean merely a nonabelian representation of the bare Bost--Connes groupoid**.
+
+There is no contradiction with `WP-411`. That finding deliberately grants arbitrary unitary decorations of the canonical bisection sections and does not impose the functorial law (13) or (15) across different paths. `WP-411`/`WP-412` therefore identify where matrix information could survive algebraically; the present strengthened boundary identifies when that information is actually native groupoid data rather than extra coefficient freedom.
+
+The conclusion remains narrower than saying that Bost--Connes has no useful cyclic or cohomological structure. Twisted groupoid cohomology, projective representations, nontrivial Fell bundles/correspondences, cyclic homology, and larger adelic constructions are different categories. Indeed the Connes--Consani--Marcolli program uses a cokernel and cyclic homology precisely to obtain structure not visible in the bare transformation groupoid alone.
 
 ## 6. Matched control and novelty audit
 
-The groupoid presentation is standard prior art, and the isotropy calculation itself is elementary. No new theorem about transformation groupoids is claimed. The line-specific contribution is the consequence for the current Mathia gate: after `WP-407` made nontrivial source-forced cycle holonomy the first surviving scalar-phase datum, the canonical Bost--Connes commensurability groupoid is shown not to contain that datum on the critical source support.
+The groupoid presentation is standard prior art, and the isotropy calculation itself is elementary. The extension from `U(1)` to arbitrary group-valued cocycles and unitary groupoid representations is likewise a formal consequence of functoriality: a representation sends the identity arrow to the identity operator. No new theorem about transformation groupoids or groupoid representation theory is claimed.
 
-The obstruction is not Riemann-specific. If an infinite compact torsion-free additive group carries the analogous partial rational-scaling action, the same calculation forces nontrivial stabilizers to the origin, and Haar measure again makes that point null. If a positive scale coordinate is multiplied simultaneously, the action is free outright. This matched control is useful diagnostically: **freeness is a structural no-go, not the desired arithmetic mechanism**.
+The substantive Mathia delta is narrower and line-specific. The original scalar statement left “noncentral operator-valued holonomy” as a possible escape. `WP-411`/`WP-412` made that escape concrete by showing that arbitrary passive matrix coefficients can survive on scale-balanced words. Reapplying the already proved isotropy classification at the correct representation level closes the honest-native-cocycle subclass exactly: **noncommuting coefficients alone do not help; nontrivial balanced holonomy requires additional path-sensitive/twisted structure beyond the bare Bost--Connes arrows**.
 
-Accordingly, the next admissible cyclic proposal must identify extra source structure that creates nontrivial holonomy without programming the Weil sign. In particular, it must explain why a twist, projective extension, noncentral loop, or global correspondence is canonical for the arithmetic source, why the same construction fails an appropriate nonarithmetic control, and how the resulting positive form reaches the full finite plus archimedean Weil destination.
+The obstruction is not Riemann-specific. If an infinite compact torsion-free additive group carries the analogous partial rational-scaling action, the same calculation forces nontrivial stabilizers to the origin, and Haar measure again makes that point null. If a positive scale coordinate is multiplied simultaneously, the action is free outright. This matched control is diagnostically useful: freeness plus functoriality is a generic no-go, not the desired arithmetic mechanism.
+
+Accordingly, the next admissible cyclic proposal must identify extra source structure that creates nontrivial holonomy without programming the Weil sign. In particular, it must explain why a projective/twisted extension, non-flat connection, nontrivial correspondence, or larger global object is canonical for the arithmetic source, why the same construction fails an appropriate nonarithmetic control, and how the resulting positive form reaches the full finite plus archimedean Weil destination.
+
+## Representation audit
+
+The primary object is the native Bost--Connes commensurability groupoid and its scale-retaining dual. A group-valued 1-cocycle is a functor to a one-object groupoid; a unitary groupoid representation is a functorial transport between Hilbert fibres. Holonomy is the ordered product attached to a composable cycle. No commutation, simultaneous diagonalization, scalarization, trace, determinant, or choice of basis is used in the triviality argument.
+
+The strengthened statement does **not** identify arbitrary matrix decorations with groupoid representations. It applies only when the coefficient assignment satisfies the exact composition law of the native arrows. Projective representations, 2-cocycle twists, Fell-bundle multiplication, path-dependent connections, and larger correspondence categories deliberately fail or enlarge that assumption and remain outside this no-go.
 
 ## Verdict
 
-**Supported exact negative with a category boundary.** The native Bost--Connes commensurability groupoid has nontrivial isotropy only at `rho=0`, a Haar-null point for the critical `KMS_1` state, while its scale-retaining dual groupoid is free everywhere. Hence any scalar phase that genuinely descends to a normalized native groupoid 1-cocycle has trivial cycle holonomy on the source relevant to the critical state. The cycle sensitivity isolated by `WP-407` therefore cannot be supplied by bare Bost--Connes commensurability; a surviving route must source-force additional twisted, non-flat, noncentral, or global structure before positivity can use a nontrivial holonomy.
+**Supported exact negative with a sharper category boundary.** The native Bost--Connes commensurability groupoid has nontrivial isotropy only at `rho=0`, a Haar-null point for the critical `KMS_1` state, while its scale-retaining dual groupoid is free everywhere. Therefore any normalized group-valued 1-cocycle or honest unitary groupoid representation—including noncommutative `U(d)`-valued transport—has identity holonomy on the source relevant to the critical state. The balanced matrix words left algebraically alive by `WP-412` can carry nontrivial holonomy only when their coefficient data contains additional path-sensitive, projective, twisted, or correspondence structure that does not descend to the bare Bost--Connes arrow. Noncentrality alone is not an escape, and no Weil-positivity mechanism follows until such extra structure is source-forced and connected to the full finite-plus-archimedean Weil form.
