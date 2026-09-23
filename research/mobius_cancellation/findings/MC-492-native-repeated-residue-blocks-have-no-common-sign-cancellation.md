@@ -206,7 +206,7 @@ The other native possibility is to superpose the two root branches before closur
 
 The phase-locking argument is elementary Hilbert-space algebra applied to periodic Dirichlet characters. No novelty is claimed for positivity of Gram matrices of same-phase nonnegative amplitudes.
 
-Jacobi sums, the identity relating them to Gauss sums, the magnitude `sqrt(p)` in the nondegenerate case, and the quadratic exceptional formula are classical. A standard monograph source is Berndt, Evans and Williams, *Gauss and Jacobi Sums*, Wiley, 1998; `MC-S57` records this source for the present exact reduction. The same square-root character-sum scale is consistent with the more general rational-character Weil bounds already anchored by `MC-S55`.
+Jacobi sums, the identity relating them to Gauss sums, the magnitude `sqrt(p)` in the nondegenerate case, and the quadratic exceptional formula are classical. A standard monograph source is Bruce C. Berndt, Ronald J. Evans and Kenneth S. Williams, *Gauss and Jacobi Sums*, Wiley, 1998. The same square-root character-sum scale is consistent with the more general rational-character Weil bounds already anchored by `MC-S55`.
 
 The durable Mathia delta is the **frontier classification** inside the exact `MC-484` source frame. The dense repeated-residue loophole from `MC-491` cannot be justified merely by the existence of many conductor collisions: within each root, the native coefficients force constructive interference at arbitrary cardinality, while switching roots replaces the `p`-scale collision by a classical Jacobi-sum correlation of size at most `sqrt(p)+1`.
 
