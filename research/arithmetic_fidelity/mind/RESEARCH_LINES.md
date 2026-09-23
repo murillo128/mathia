@@ -42,7 +42,13 @@ AF-520 removes the fixed-amplitude one-block restriction at leading boundary ord
 
 Thus arbitrary outward source-surviving transport is compressed, at one moving boundary scale and to leading curvature order, to the normalized value and second logarithmic moment. The first moment and the detailed displacement geometry are lower order. Variable, blockwise and oscillatory outward displacement are therefore not separate leading-order escape routes once `rho_0` stays nondegenerate.
 
-The quantitative frontier has moved to what this two-defect compression does **not** cover. The live questions are mixed or inward transport, the near-extinction regime `rho_0->0`, lower-order terms and full-profile stability, and whether multi-scale curvature or a richer source-native observable can recover information erased by the one-scale pair `(rho_0,rho_2)`. Any robust rational-prime provenance claim still has to distinguish those destination-visible defects from arithmetic incidence that curvature may never retain.
+AF-521 identifies the exact gate hidden by that outwardness hypothesis. For any positive Dirichlet source at one observation point, with `rho_j=M_j^Q/M_j^P` and `r=(M_1^P)^2/(M_0^P M_2^P)`, the curvature ratio is exactly
+
+`kappa_Q/kappa_P = [rho_2/rho_0-r(rho_1/rho_0)^2]/(1-r)`.
+
+At `s=1+t`, `r~1/log(1/t)`. Hence the AF-520 two-moment law survives whenever `r(rho_1/rho_0)^2->0`; with `rho_0` bounded below it is sufficient that `rho_1=o(sqrt(log(1/t)))`. Inward transport can cross precisely this threshold. AF-521 constructs simple unit-weight prime-to-composite controls that match the leading `(rho_0,rho_2)` pair while separating `rho_1/sqrt(log(1/t))`, and their leading curvature limits differ by an order-one amount. Thus once first-moment domination is removed, the exact scalar one-point carrier is the triple `(rho_0,rho_1,rho_2)`, not a measure-valued object and not the AF-520 pair.
+
+The quantitative frontier has therefore narrowed again. Mixed or inward transport is no longer an undifferentiated escape: its first new leading coordinate is the normalized first logarithmic moment at the `sqrt(log(1/t))` scale. The live questions are the near-extinction regime `rho_0->0`, lower-order and full-profile stability, multi-scale observation, signed/complex sources, and whether richer source-native observables retain arithmetic provenance that every one-point finite-moment curvature carrier can erase. Any robust rational-prime provenance claim must distinguish these destination-visible moment defects from arithmetic incidence that curvature may never retain.
 
 ## Classify quotient-visible contact through admission, boundary membership and no-contact accessibility rates
 

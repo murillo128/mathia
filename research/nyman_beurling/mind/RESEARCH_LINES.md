@@ -54,4 +54,14 @@ NB-305 separates that support sharpness from dilation correlation on the exact s
 
 uniformly in `N>=8` and `m>=1`. Along every subquadratic cutoff `m_N=ceil(N^(2-eta))` from NB-304, an order-one fraction of the norm remains below `1/m_N` while the normalized dilation Rayleigh overlap tends to zero. The source-tail extremizer is therefore not a quadratic lower-bound witness for `beta_(N+1)(m)`. Large retained support mass and large projected-dilation correlation are genuinely different resources.
 
-The decisive source-side question has consequently become **bilinear** before the destination packet is even reintroduced. Any matching lower bound near or below the quadratic scale must exhibit distinct left/right vectors with coherent shell patterns under multiplicative rescaling, or characterize the singular spectrum of `P_(U_N)A_m|_(U_N)`; one-vector support concentration cannot provide it. The full ordinary theorem remains a joint-scale moving-packet occupation problem: even a bilinear source correlation must still survive the NB-298 destination map, sampling conditioning and off-critical contraction. Logarithmic refinements around `m~N^2` remain open, but any subquadratic improvement or obstruction must exploit more than universal shell localization and more than the NB-304 self-witness.
+NB-306 identifies an exact lower-scale obstruction for the **operator norm** that NB-305's self-witness cannot see. For integer `m>=2` and `q=floor(N/m)`, the canonical covariance gives the finite-section inclusion
+
+`A_m U_q subseteq U_N`.
+
+On that entire lower-index core the projected dilation `T_(N,m)=P_(U_N)A_m|_(U_N)` is exactly the isometry `A_m`, so `T_(N,m)^*T_(N,m)=I` on `U_q`. In particular,
+
+`2m<=N => beta_(N+1)(m)=1`.
+
+The singular value `1` has multiplicity at least `dim U_q`. Thus the source-overlap transition cannot begin below linear scale, even though the high-index adjacent-cancellation witness can already have tiny self-overlap. The norm is carried by a different lower-index semigroup core.
+
+Together NB-303 and NB-306 bracket the unresolved generic source-overlap transition between linear and quadratic multiplicative scales: exact unit norm for `m<=N/2`, decay for `m/N^2->infinity`, and an open intermediate regime `N/2<m\lesssim N^2`. The next source-side theorem should characterize how the pinned unit singular core disappears and how the top singular value behaves in that intermediate window. This remains distinct from the destination problem: even a large singular value matters only if the moving first-free datum occupies its strong subspace after NB-298 sampling, conditioning and off-critical contraction. The precise source question is therefore singular-spectrum evolution, not support mass or one-vector Rayleigh overlap.
