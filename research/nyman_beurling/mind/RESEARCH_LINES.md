@@ -24,16 +24,14 @@ and the complete unit right-singular subspace is exactly `U_q`. Hence singular v
 
 `beta_(N+1)(m)=1` if and only if `2m<=N`.
 
-NB-307 now resolves the algebraic form of the spectrum immediately after quotienting that unit core. On `H_(N,m)=U_N minus-orthogonal U_q`, the defect `I-T_(N,m)^*T_(N,m)` is exactly the generalized residual-Gram pencil `(mR,S)`, and its determinant is bounded below by the canonical multiplicative pivot-survival product
+NB-307 identifies the spectrum after quotienting that exact unit core with a generalized residual-Gram pencil `(mR,S)`. Its determinant is bounded below by the canonical multiplicative pivot-survival product `prod_(j=q+1)^N c_(m,j)^2`, where `c_(m,j)=sqrt(m) sigma_(mj)/sigma_j` comes from NB-290. NB-308 then uses reciprocal-shell Möbius inversion to prove the pointwise pivot floor `sigma_n >= sqrt(3/2)/(pi n)`, making the determinant certificate explicit but only factorially/exponentially small across an `O(N)` band.
 
-`prod_(j=q+1)^N c_(m,j)^2`, with `c_(m,j)=sqrt(m) sigma_(mj)/sigma_j` from NB-290.
+NB-309 shows that this tiny determinant bound is principally an artifact of multiplying pointwise pivot floors. Stacking the same shell coefficient extractors and exploiting their divisibility sparsity with a Schur bound gives the direct residual-Gram estimate
 
-Consequently the least post-core defect obeys
+`1-s_post(N,m)^2 >= 1 / (5(1+sqrt(2)) m N^2 H_(mN) (H_N-H_q))`.
 
-`1-s_post(N,m)^2 >= prod_(j=q+1)^N c_(m,j)^2`.
+Consequently the first singular value below the exact core is separated from `1` by at least a polynomial amount; uniformly for `2<=m<=N`, the squared gap is `Omega(1/(N^3 log^2 N))`. In the first post-core strip `N/2<m<=N`, this applies directly to `beta_(N+1)(m)`. The unresolved source question is therefore no longer whether a nonzero or merely non-superpolynomial post-core gap exists. **The live discriminator is whether the exact residual-Gram pencil has a macroscopic lower edge somewhere in the linear-to-quadratic transition, or whether explicit post-core near-isometries force a genuinely vanishing polynomial gap.**
 
-In the first post-core strip `N/2<m<=N`, this is directly `1-beta_(N+1)(m)^2`. The unresolved source question is therefore no longer only to estimate an opaque cross-Gram norm: **one concrete route is to lower-bound multiplicative-band pivot survival, equivalently to control `sum_(j=q+1)^N -log c_(m,j)`, while the exact residual-Gram pencil remains available if the determinant certificate is too lossy.** NB-290 currently gives only the opposite-direction bound `c_(m,j)<=1`, so a quantitative rate still requires new arithmetic input.
-
-Thus `m=N/2` is the exact end of the unit-norm plateau, and `m/N^2->infinity` is a sufficient decay regime, with canonical pivot survival now exposing a metric mechanism that can open a gap between them.
+Thus `m=N/2` is the exact end of the unit-norm plateau, NB-309 supplies polynomial spectral separation immediately beyond the plateau, and `m/N^2->infinity` is a sufficient full-decay regime. The remaining source transition lies between these statements rather than in pointwise pivot nondegeneracy.
 
 That source theorem is still not the destination theorem. After locating the strong singular subspaces one must propagate the actual moving first-free datum through the NB-298 sampling/null decomposition, lower-section conditioning and off-critical diagonal contraction. A large singular value that lives in a sample-null or unoccupied direction does not improve the Nyman target. The surviving destination question is therefore joint singular-spectrum **and target-occupation** control, not support mass, one-vector Rayleigh overlap, operator norm, or pivot survival alone.
