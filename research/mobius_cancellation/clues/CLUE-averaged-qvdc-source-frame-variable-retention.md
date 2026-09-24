@@ -50,6 +50,7 @@ based_on:
   - research/mobius_cancellation/findings/MC-498-endpoint-start-bias-is-priced-by-effective-quotient-fibres.md
   - research/mobius_cancellation/findings/MC-499-endpoint-start-dispersion-has-a-source-population-ceiling.md
   - research/mobius_cancellation/findings/MC-500-dyadic-endpoint-quotient-support-has-q-free-square-root-ceiling.md
+  - research/mobius_cancellation/findings/MC-501-dyadic-endpoint-certificate-has-q-free-source-width-barrier.md
 ---
 
 # Can load-bearing q-dependent arithmetic asymmetry beat the Möbius source-frame tariff?
@@ -72,21 +73,29 @@ T_{p,H}=\frac pH\log^2(2H),
 }
 \]
 
-with no residual `sqrt(p)` floor, and expresses endpoint bias through the effective start support or the exact winning-endpoint participation/fibre ratios. `MC-499` shows that one repeated-residue dyadic source block has at most `O(1+Q/p)` endpoint labels, while `MC-500` combines label growth with reciprocal-quotient compression to give the Q-free ceiling
+with no residual `sqrt(p)` floor, and expresses endpoint bias through the effective start support or the exact winning-endpoint participation/fibre ratios. `MC-499` shows that one repeated-residue dyadic source block has at most `O(1+Q/p)` endpoint labels, while `MC-500` combines label growth with reciprocal-quotient compression to give the Q-free source-location ceiling
 
 \[
 R_{\rm start}\le4+\sqrt{2Z_*/p}.
 \]
 
-Hence the corrected source-height admission gate is
+Hence the corrected source-location admission gate is
 
 \[
 \boxed{
-Z_*\gg_\delta\frac{p^3}{H^2}\log^4(2H)
+Z_*\gg_\delta\frac{p^3}{H^2}\log^4(2H).
 }
 \]
 
-for a fixed target saving. The older extra `p^2 log^2(2H)` term is not an independent constraint; near the `MC-496` boundary it reappears in scale from the surviving `p/H` tariff itself.
+`MC-501` supplies an independent Q-free gate from the physical source width `Y`. Since first exit shortens every row to at most `1+Y/Q`, a nonempty dyadic overlap band of length `H` forces `Q\ll Y/H`; combining this with the repeated-residue population resource gives, for `H>=4`,
+
+\[
+\boxed{
+Y\gg_\delta p^2\log^2(2H).
+}
+\]
+
+Thus a source can have ample location height but still be too narrow to provide both long overlaps and enough distinct repeated-residue starts. Only regimes passing both Q-free gates can make the current endpoint-dispersion certificate feasible.
 
 Independently, the lower-prime pair-sieve profile inside the overlap and a genuinely q-dependent pre-aggregation sign, phase, modulus, or reciprocal role remain live arithmetic channels.
 
@@ -94,7 +103,7 @@ Independently, the lower-prime pair-sieve profile inside the overlap and a genui
 
 Can the exact normalized first-exit family produce either remaining load-bearing resource?
 
-For endpoints, do the physical source height and overlap-length regime pass the corrected `MC-500` gate at any dyadic first-exit scale? If so, which material q-blocks pass the `MC-499` population gate, and on those blocks do the exact winning-endpoint weights pass the `MC-498` participation/fibre threshold?
+For endpoints, do the physical source width, source location, and overlap-length regime pass both corrected Q-free gates at any material scale? If so, which dyadic q-blocks pass the `MC-499` population gate, and on those blocks do the exact winning-endpoint weights pass the `MC-498` participation/fibre threshold?
 
 Beyond endpoints, can the retained lower-prime hard masks or another exact source operation create a centered conductor weight with fixed negative correlation against the relative phase, or a genuinely q-dependent signed/complex coefficient before the nonnegative aggregation of `MC-495`?
 
@@ -102,7 +111,7 @@ If neither resource survives with all reconstruction costs restored, the normali
 
 ## Why it may matter
 
-The surviving question is no longer whether more averaging variables can be exposed. Exact reductions repeatedly show that visible multiplicity, shifts, support labels, and endpoint incompleteness can collapse before they yield cancellation. The corrected `MC-497`--`MC-500` chain separates three negative outcomes: failure of the Q-free source-height gate makes the entire endpoint-dispersion certificate method-limited; passing it but failing the per-block population gate makes that block population-limited; only a block that passes both gates but has poor `kappa/D` raises a genuine source-localization or quotient-folding question.
+The surviving question is no longer whether more averaging variables can be exposed. Exact reductions repeatedly show that visible multiplicity, shifts, support labels, and endpoint incompleteness can collapse before they yield cancellation. The corrected `MC-497`--`MC-501` chain now separates four negative outcomes: failure of either Q-free source-width/location gate makes the entire endpoint-dispersion certificate method-limited for every dyadic `Q`; passing those but failing the per-block population gate makes that block population-limited; only a block that passes all three cheap gates but has poor `kappa/D` raises a genuine source-localization or quotient-folding question.
 
 That ordering prevents detailed coefficient audits in regimes where the current second-moment method is structurally incapable of succeeding.
 
@@ -122,17 +131,23 @@ For the quadratic endpoint-only branch, partition the material source into dyadi
 T_{p,H}=\frac pH\log^2(2H).
 \]
 
-First put `Z_*=max(X,X+h)` and test the Q-free `MC-500` ceiling. If
+First record the physical source width `Y` before division by the first-exit label and the source location `Z_*=max(X,X+h)`. For every band with `H>=4`, test the `MC-501` width gate
 
 \[
-T_{p,H}\not\ll_\delta4+\sqrt{2Z_*/p},
+Y\gg_\delta p^2\log^2(2H)
 \]
 
-record that source-height/length regime as method-limited: no dyadic `Q` can supply enough physical start diversity for the current exceptional-start certificate.
+and the `MC-500` location gate
 
-Only when the Q-free gate is feasible should each repeated-residue dyadic q-block be compared with the `MC-499` population ceiling `1+Q/p`, or the exact active-label count when available. If the available population is not larger than `T_{p,H}` by the margin required for the target saving, classify the block as method-limited by population.
+\[
+T_{p,H}\ll_\delta4+\sqrt{2Z_*/p}.
+\]
 
-Only for blocks passing both gates form the actual nonnegative pair weights, split them by the winning start `max(ceil(X/q),ceil((X+h)/r))`, and compute `kappa_+`, `kappa_-`, `D_+`, and `D_-` from `MC-498`. Charge the number of dyadic bands and the original shell/reconstruction weights. If the corrected `MC-498` threshold holds with enough margin, endpoint-only bias is closed on that block. If it fails despite ample source height and label population, isolate whether the loss comes from quotient folding, winning-side imbalance, or genuine coefficient localization.
+If either fails, record that source-width/location regime as method-limited: no dyadic `Q` can supply both the needed physical overlap length and enough physical start diversity for the current exceptional-start certificate.
+
+Only when both Q-free gates are feasible should each repeated-residue dyadic q-block be compared with the `MC-499` population ceiling `1+Q/p`, or the exact active-label count when available. If the available population is not larger than `T_{p,H}` by the margin required for the target saving, classify the block as method-limited by population.
+
+Only for blocks passing all three admission gates form the actual nonnegative pair weights, split them by the winning start `max(ceil(X/q),ceil((X+h)/r))`, and compute `kappa_+`, `kappa_-`, `D_+`, and `D_-` from `MC-498`. Charge the number of dyadic bands and the original shell/reconstruction weights. If the corrected `MC-498` threshold holds with enough margin, endpoint-only bias is closed on that block. If it fails despite ample width, location height, and label population, isolate whether the loss comes from quotient folding, winning-side imbalance, or genuine coefficient localization.
 
 For the remaining hard-mask route, compute the exact projected overlap weight
 
@@ -146,10 +161,10 @@ For any pre-aggregation proposal, identify the first exact formula where two fir
 
 ## Evidence boundary
 
-`MC-484` proves exact selector-free Buchstab first exit and retains the dimension-two pair sieve. `MC-485`--`MC-495` close coefficient-blind phase-frame, affine-shift, partition, dilation, completed repeated-residue, and multiplicity-only loopholes. `MC-496` closes long endpoint-only overlaps. The corrected `MC-497` proves `O(pH)` fixed-length start energy in the quadratic case; `MC-498` gives the corrected maximal/effective-support tariff `pH^{-1}log^2(2H)`; `MC-499` supplies the per-block source-population ceiling; and `MC-500` supplies the Q-free source-height ceiling.
+`MC-484` proves exact selector-free Buchstab first exit and retains the dimension-two pair sieve. `MC-485`--`MC-495` close coefficient-blind phase-frame, affine-shift, partition, dilation, completed repeated-residue, and multiplicity-only loopholes. `MC-496` closes long endpoint-only overlaps. The corrected `MC-497` proves `O(pH)` fixed-length start energy in the quadratic case; `MC-498` gives the corrected maximal/effective-support tariff `pH^{-1}log^2(2H)`; `MC-499` supplies the per-block source-population ceiling; `MC-500` supplies the Q-free source-location ceiling; and `MC-501` supplies the independent Q-free source-width ceiling obtained by restoring exact row shortening.
 
-None of these findings evaluates all material source-height/length regimes for the full q-vdC reconstruction, computes the exact participation ratios on doubly feasible blocks, controls the lower-prime hard-mask contribution to the conductor profile, derives a new q-dependent signed/complex pre-aggregation coefficient, or improves `M(x)`. `MC-456` remains a neighboring positive template only; it is not evidence that the required quotient-breaking structure exists here.
+None of these findings evaluates all material source-width/location/length regimes for the full q-vdC reconstruction, computes the exact participation ratios on triply feasible blocks, controls the lower-prime hard-mask contribution to the conductor profile, derives a new q-dependent signed/complex pre-aggregation coefficient, or improves `M(x)`. `MC-456` remains a neighboring positive template only; it is not evidence that the required quotient-breaking structure exists here.
 
 ## Research disposition
 
-The clue remains `accepted`. The endpoint audit is strictly staged: **apply the corrected MC-500 Q-free source-height gate first; only surviving regimes proceed to the MC-499 per-block population gate; only doubly feasible blocks proceed to the exact MC-498 winning-endpoint participation/fibre audit**. Failure at either of the first two stages is a limitation of the present endpoint-dispersion certificate, not evidence for true phase bias. Lower-prime hard-mask phase selectivity and genuinely q-specific pre-aggregation arithmetic asymmetry remain independent admissible routes.
+The clue remains `accepted`. The endpoint audit is strictly staged: **apply the MC-501 Q-free source-width gate and the corrected MC-500 Q-free source-location gate first; only surviving regimes proceed to the MC-499 per-block population gate; only triply feasible blocks proceed to the exact MC-498 winning-endpoint participation/fibre audit**. Failure at any of the first three stages is a limitation of the present endpoint-dispersion certificate, not evidence for true phase bias. Lower-prime hard-mask phase selectivity and genuinely q-specific pre-aggregation arithmetic asymmetry remain independent admissible routes.
