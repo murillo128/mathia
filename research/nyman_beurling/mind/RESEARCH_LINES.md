@@ -10,36 +10,26 @@ NB-264--NB-272 show that large aggregate Ford response can coexist with a vanish
 
 NB-306 identifies the exact unit singular core of the projected integer-dilation operator: singular value `1` persists precisely through `2m<=N`, with unit right-singular subspace `U_floor(N/m)`. NB-309 gives a polynomial lower bound on the first post-core gap, NB-311 shows that the first post-core strip remains near-isometric for every sublinear additive overrun, and NB-312--NB-313 rule out complete source-overlap collapse on every bounded linear dilation scale. NB-314--NB-315 identify the far-external superquadratic regime as asymptotically rank one after the correct `sqrt(m)` normalization.
 
-The unresolved operator transition therefore remains in the genuinely intermediate window `N<<m<=O(N^2)`: determine the singular geometry there rather than infer it from endpoint models. Even a complete source-side theorem is not yet the destination theorem. Any useful singular direction must be occupied by the actual moving first-free datum after the sampling/null decomposition, lower-section conditioning and off-critical contraction; operator norm or support mass alone does not imply a Nyman target gain.
+NB-316--NB-329 then show that the most obvious primitive, denominator and phase effects do not create a clean transition inside the subquadratic window. The centered Cesaro primitive has sharp `Theta(N^(3/2))` growth, exact divisor folds and the full lattice `m=d(n-1)` retain a canonical `1/sqrt(log n)` rank-one-error resonance, and moving one selector cell to `m=dn` flips the adjacent coefficient's sign. On the intermediate cell `m=d(n-1)+r`, `rho=r/d`, the outer adjacent coefficient is `(1-2rho)log 2/(4n)+O(d/n^2)`, so that particular channel vanishes at half drift.
 
-## Separate adjacent-witness phase cancellation from genuine operator mixing
+NB-330 proves that this half-cell zero is only witness cancellation. Shifting the target inward by one adjacent mode produces a cell coefficient independent of `rho`, with
 
-NB-316--NB-326 show that the most obvious primitive and weighted estimates do not produce a clean scale transition inside the subquadratic window. The centered Cesaro primitive has sharp `Theta(N^(3/2))` growth, the exact bounded-linear Cesaro extremizer retains that scale after conversion to the physical Nyman norm, and the actual `1/t^2` pairing suppresses primitive growth but leaves a canonical `1/sqrt(log n)` rank-one-error resonance on exact rational folds.
+`F_(n,d,r)=-log(2)/(4(n-1))+O(d/(n-1)^2)`,
 
-NB-322--NB-325 progressively remove the apparent denominator-size and parity thresholds on the exact divisor skeleton. For growing divisors `q|n`, the adjacent cancellation gives `n E_(n,q)->(log 2)/4` regardless of the relative size or parity of `q`, so exact divisor folds realize the same logarithmic resonance at every fixed power scale `m=n^(alpha+o(1))`, `1<=alpha<2`.
+uniformly across the entire drift cell. Consequently every sequence `d_n=o(n)` retains the same logarithmic operator obstruction even at the outer witness's half-cell zero.
 
-NB-327 shows that divisibility itself is not the sustaining mechanism. For every integer `d>=1`, with no relation `d|n`, the lattice
+NB-331 removes the remaining gaps between those one-cell bands. The same intrinsic adjacent-index calculation works at any `8<=q<=n`: if `m=dq+r`, `0<=r<=d`, the `q`-adjacent witness has the same leading coefficient with error `O(d/q^2)`. For every integer sequence
 
-`m^-_(n,d)=d(n-1)`
+`n <= m_n = o(n^2)`
 
-satisfies
+one can choose an explicit adaptive inner index `q_n<=n` so that
 
-`E^-_(n,d)=log(2)/(4n)+O(d/n^2)`.
+`q_n <( (sqrt(m_n) T_(n,m_n)-R_n) g_2, nu_(q_n) ) -> -log(2)/4`
 
-Hence every sequence `d_n=o(n)` retains the same `1/sqrt(log n)` operator-norm obstruction, including every fixed subquadratic power scale. The mechanism is cellwise centering rather than a common global period.
+and therefore
 
-NB-328 moves one full selector cell to the neighboring lattice `m^+_(n,d)=dn` and finds the same magnitude with opposite sign. NB-329 resolves the entire intermediate cell for the same adjacent witness. Writing
+`liminf sqrt(log n) ||sqrt(m_n)T_(n,m_n)-R_n|| >= sqrt(log 2)/(2 sqrt 2)`.
 
-`m=d(n-1)+r`, `rho=r/d in [0,1]`,
+Thus there is **no faster-mixing external subquadratic window at the operator-norm level** detectable by escaping between the previous resonant lattices: every `n<=m=o(n^2)` carries an adaptive adjacent resonance of the same logarithmic scale. The bound still tends to zero, so it does not prove a fixed positive norm gap, and it does not determine the critical `m asymp n^2` transition where the adaptive condition `d=o(q)` can fail.
 
-the weighted coefficient obeys
-
-`E_(n,d,r)=(1-2rho) log(2)/(4n)+O(d/n^2)`
-
-uniformly, so for `d=o(n)` the two endpoint resonances are one affine phase law. At half-cell drift `rho=1/2`, the leading adjacent coefficient cancels exactly cell by cell and `n E_(n,d,r)->0`; away from half drift the logarithmic operator-norm lower bound survives with factor `|1-2rho|`.
-
-This identifies a genuine **witness-level cancellation window**, but not an operator transition. NB-329 does not show that the optimized norm becomes small at half drift; another source direction may remain resonant there. The live source-side question is therefore to test `rho=1/2` and its shrinking neighborhoods against optimized or structurally independent witnesses. If the operator norm remains logarithmically large, the adjacent zero is only channel cancellation. If a norm-level upper estimate emerges, the theorem must explain why all competing resonant directions are simultaneously suppressed rather than merely why one coefficient crosses zero.
-
-A useful mixing theorem can no longer rely on denominator size, parity, divisibility, leaving one resonant lattice, or the sign of this adjacent channel. The relevant transition, if one exists, must be an operator-level property of the half-drift geometry or another exact off-lattice mechanism.
-
-The resonance remains source-side. NB-327--NB-329 do not show that the moving first-free Ford datum occupies these directions, do not produce a finite-section excess or a Nyman approximation rate, and have no RH consequence by themselves. Any destination claim must still pass the sampling/null decomposition, lower-section conditioning and off-critical contraction with the actual target source.
+The source-side transition question is therefore pushed to the quadratic scale: determine the singular geometry when `m` is genuinely comparable with `n^2`, and connect it to the superquadratic rank-one asymptotic without mistaking a moving lower bound of order `1/sqrt(log n)` for a nonzero limiting gap. On the destination side the older warning remains decisive: NB-330--NB-331 concern available source directions, not occupation by the actual moving first-free Ford datum. Any Nyman consequence must still pass the sampling/null decomposition, lower-section conditioning and off-critical contraction with the physical target source.
