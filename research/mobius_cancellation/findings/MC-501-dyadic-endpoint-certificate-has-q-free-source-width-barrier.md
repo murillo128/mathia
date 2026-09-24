@@ -8,7 +8,7 @@
 
 ## Claim
 
-Let the original source interval `I` have integer length `Y>=1`. Fix an odd prime conductor `p`, one repeated conductor residue `a mod p`, and a dyadic first-exit block
+Work in the quadratic-character repeated-residue endpoint setting of `MC-497`--`MC-500`. Let the original source interval `I` have integer length `Y>=1`. Fix an odd prime conductor `p`, one repeated conductor residue `a mod p`, and a dyadic first-exit block
 
 \[
 Q\le q,r\le 2Q,
@@ -37,7 +37,7 @@ Now restrict to one dyadic overlap-length band as in `MC-498`,
 
 \[
 \frac H2\le L_{q,r}\le H,
-\qquad H>2.
+\qquad 2<H\le p.
 \tag{4}
 \]
 
@@ -68,7 +68,7 @@ R_{\rm start}
 \tag{7}
 \]
 
-The corrected `MC-498` maximal-second-moment tariff is
+The corrected `MC-498` maximal-second-moment tariff, valid in this quadratic setting for `1<=H<=p`, is
 
 \[
 T_{p,H}:=\frac pH\log^2(2H),
@@ -101,7 +101,7 @@ p^2\frac{H-2}{H}\log^2(2H).
 \tag{10}
 \]
 
-In particular, throughout every dyadic overlap band with `H>=4`,
+In particular, throughout every dyadic overlap band with `4<=H<=p`,
 
 \[
 \boxed{
@@ -169,7 +169,7 @@ and the physical row-length compatibility `Q\ll Y/H` are simultaneously possible
 
 ### 3. Fixed-saving feasibility
 
-`MC-498` gives `(8)` with an absolute implied constant. To force `|B|/M<=delta`, the certificate therefore needs
+`MC-498` gives `(8)` with an absolute implied constant in the quadratic case. To force `|B|/M<=delta`, the certificate therefore needs
 
 \[
 R_{\rm start}\gg_\delta T_{p,H}.
@@ -194,11 +194,12 @@ A targeted prior-art check found the expected classical Buchstab short-interval/
 
 ## Boundaries and falsification tests
 
-- **Endpoint-only certificate.** The result constrains the `MC-497`/`MC-498` exceptional-start method. Lower-prime pair-sieve phase selectivity and genuinely q-dependent signed or complex pre-aggregation coefficients remain outside it.
+- **Quadratic endpoint-only certificate.** The result constrains the quadratic `MC-497`/`MC-498` exceptional-start method. Higher-order characters require their own start-energy/maximal audit. Lower-prime pair-sieve phase selectivity and genuinely q-dependent signed or complex pre-aggregation coefficients remain outside it.
 - **Method ceiling, not true bias.** Failure of `(9)` means only that this effective-start-support certificate cannot prove the requested saving on that band.
 - **One repeated conductor residue.** Pooling different residues changes the conductor-phase geometry and is not covered by `(6)`.
 - **One dyadic q-block and one dyadic overlap band.** Global reconstruction must still charge the number and weights of bands.
 - **Physical source interval.** `Y` is the width before rowwise division by `q`; substituting a post-dilation or smoothed width would erase the exact cancellation behind `(5)`.
+- **Overlap scale `H<=p`.** The source-width ceiling `(7)` is elementary, but the analytic tariff `(8)` is invoked only in the `MC-498` range `H<=p`.
 - **No prime-distribution assumption.** Restricting labels to primes or active first-exit rows only decreases `R_start`, so irregular prime availability cannot invalidate the obstruction.
 - **No claim of sharp attainment.** Passing `(9)` does not show that enough active labels, distinct quotient starts, or flat reconstruction weights actually occur.
 - **Independent of the MC-500 location gate.** A source may have very large location `Z_*` but small width `Y`, or conversely. The source-height gate of `MC-500` and the source-width gate here must both be checked.
@@ -206,7 +207,7 @@ A targeted prior-art check found the expected classical Buchstab short-interval/
 
 ## Consequence for the research line
 
-The endpoint audit now has two cheap Q-free admission tests before any per-block coefficient work. `MC-500` asks whether the physical source **location** can support enough reciprocal-quotient start diversity; this finding asks whether the physical source **width** can simultaneously support overlaps long enough to exploit that diversity. In every material band with `H>=4`, failure of
+The endpoint audit now has two cheap Q-free admission tests before any per-block coefficient work. `MC-500` asks whether the physical source **location** can support enough reciprocal-quotient start diversity; this finding asks whether the physical source **width** can simultaneously support overlaps long enough to exploit that diversity. In every material quadratic band with `4<=H<=p`, failure of
 
 \[
 Y\gg_\delta p^2\log^2(2H)
@@ -219,7 +220,7 @@ Only source regimes passing both Q-free gates should proceed to the `MC-499` per
 ## Sources
 
 - `MC-484`: exact Buchstab first exit and physical row shortening by `q`.
-- `MC-497`: Fourier--Weil/Parseval start mean square.
-- `MC-498`: corrected maximal endpoint-start tariff and effective-support certificate.
+- `MC-497`: quadratic Fourier--Weil/Parseval start mean square.
+- `MC-498`: corrected quadratic maximal endpoint-start tariff and effective-support certificate.
 - `MC-499`: repeated-residue source-population ceiling.
 - `MC-500`: complementary Q-free source-location ceiling.
