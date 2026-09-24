@@ -98,8 +98,7 @@ In particular,
 
 \[
 \boxed{
-\liminf_{\substack{n\to\infty\\ n\ {
-rm even}}}
+\liminf_{\substack{n\to\infty\\ n\ \mathrm{even}}}
 \sqrt{\log n}\,
 \|\sqrt{n-1}\,T_{n,n-1}-R_n\|
 \ge
@@ -446,7 +445,7 @@ A fresh prior-art audit checked the classical multiplicative fractional-part aut
 
 ## Classification and next discriminator
 
-This is a rigorous positive structural finding and a method correction. It shows that the apparent `q~sqrt n` boundary of the current `NB-322` remainder is not the endpoint of the adjacent resonance: a logarithmic weighted residue reappears, in fact persists, at the maximal denominator `q=n` and linear dilation `m=n-1`.
+This is a rigorous positive structural finding and a method correction. It shows that the apparent `q~sqrt n` boundary of the current `NB-322` remainder is not the endpoint of the adjacent resonance: a logarithmic weighted residue persists at the maximal denominator `q=n` and linear dilation `m=n-1`.
 
 The next useful discriminator is now two-parameter rather than one-sided. Write `n=aq` on the `q|n` subsequences. The cases already controlled correspond to `a->infinity` with `q=o(sqrt n)` and the new endpoint `a=1`. A direct cellwise or summation-by-parts analysis that keeps both `a` and `q` visible should determine whether the logarithmic resonance persists uniformly for fixed `a`, for `a` growing slowly, or across the full corridor `1<=q<=n`. That would distinguish a genuinely broad rational skeleton from separated resonant islands without returning to the lossy second-primitive supremum.
 
