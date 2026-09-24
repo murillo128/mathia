@@ -53,144 +53,65 @@ based_on:
   - research/mobius_cancellation/findings/MC-501-dyadic-endpoint-certificate-has-q-free-source-width-barrier.md
   - research/mobius_cancellation/findings/MC-502-cross-root-first-exit-rows-have-q-plus-r-logarithmic-sieve-coherence.md
   - research/mobius_cancellation/findings/MC-503-fixed-hard-mask-profiles-obey-effective-support-start-tariff.md
+  - research/mobius_cancellation/findings/MC-504-profile-start-participation-obeys-product-tariff.md
+  - research/mobius_cancellation/findings/MC-505-varying-profile-bias-sees-only-centered-matched-fourier-diagonal.md
+  - research/mobius_cancellation/findings/MC-506-anti-diagonal-pushforward-reduces-bias-to-excess-collisions.md
+  - research/mobius_cancellation/findings/MC-507-uniform-marginals-do-not-control-anti-diagonal-collisions.md
+  - research/mobius_cancellation/findings/MC-508-fixed-conductor-phase-leaves-finite-mask-coordinates-programmable.md
 ---
 
-# Can load-bearing q-dependent arithmetic asymmetry beat the Möbius source-frame tariff?
+# Can localized full-profile coupling beat the Möbius source-frame tariff?
 
 ## Observation
 
-The normalized empty-vector source has survived a long chain of exact reductions, but most generic uses of the first-exit label are closed. `MC-472`--`MC-495` eliminate direct completion, coefficient-blind phase averaging, affine inverse shifts, multiplicity-only repeated-residue effects, and several positive/bracketed sieve replacements. The incomplete two-root problem reduces to one nonnegative source-derived weight against an explicit relative character phase.
+The normalized empty-vector first-exit branch has survived a long chain of exact reductions, but most generic uses of the first-exit label are closed. `MC-472`--`MC-495` eliminate direct completion, coefficient-blind phase averaging, affine inverse shifts, multiplicity-only repeated-residue effects, and several positive or bracketed sieve replacements. The incomplete two-root problem reduces to one nonnegative source-derived weight against an explicit relative conductor-character phase.
 
-The endpoint contribution is now sharply staged. `MC-496` rules out endpoint-only order-one bias above the square-root completion scale. `MC-497` strengthens the quadratic short-overlap start average by Fourier-Weil diagonalization,
+The endpoint branch is already sharply staged. `MC-496`--`MC-501` show that endpoint-only bias must pass, in order, the Q-free source-width gate, the Q-free source-location gate, the per-block population gate, and finally the exact winning-endpoint participation/fibre tariff. Failure of an early gate makes the present endpoint certificate method-limited rather than proving true phase bias.
 
-\[
-\sum_x|S_{c,x}(H)|^2\ll pH,
-\]
+The lower-prime hard-mask branch has now narrowed further. `MC-502` shows that complete-period plus/minus mask coherence is only logarithmic/totient-sized. `MC-503` shows that a fixed exact incomplete profile has large normalized quadratic bias only on a sparse set of conductor starts controlled by its effective support. `MC-504` removes the artificial uniform-start assumption: for conditional start participation `R_a` and profile support `R_b`, fixed normalized bias requires `R_aR_b` at most conductor scale.
 
-so dangerous fixed-length starts occupy only `O(p/H)` conductor residues. `MC-498` maximalizes this to the weighted variable-length tariff
+`MC-505` then removes the need to choose profile classes at all. For a general start/profile coefficient table `B`, the centered conductor kernel sees only the matched Fourier diagonal of the doubly centered interaction. `MC-506` gives the corresponding physical-space currency: after pushing the nonnegative mass by the actual sum coordinate `t=x+j`, large normalized bias requires excess collision mass of that pushforward. `MC-507` proves that uniform or otherwise well-controlled start and profile marginals do not control those anti-diagonal collisions; the required theorem must use the physical coupling itself.
 
-\[
-T_{p,H}=\frac pH\log^2(2H),
-\]
-
-with no residual `sqrt(p)` floor, and expresses endpoint bias through effective start support or exact winning-endpoint participation/fibre ratios. `MC-499` bounds one repeated-residue dyadic source block by `O(1+Q/p)` endpoint labels. `MC-500` then combines label growth with reciprocal-quotient compression to give the Q-free source-location ceiling
-
-\[
-R_{\rm start}\le4+\sqrt{2Z_*/p},
-\]
-
-and hence the admission gate
-
-\[
-Z_*\gg_\delta\frac{p^3}{H^2}\log^4(2H).
-\]
-
-`MC-501` supplies an independent Q-free gate from the physical source width `Y`. Since first exit shortens every row to at most `1+Y/Q`, a nonempty dyadic overlap band of length `H` forces `Q\ll Y/H`; together with the repeated-residue population ceiling this gives, for `H>=4`,
-
-\[
-Y\gg_\delta p^2\log^2(2H).
-\]
-
-Thus a source can have ample location height but still be too narrow to provide both long overlaps and enough distinct repeated-residue starts. Only regimes passing both Q-free gates can make the current endpoint-dispersion certificate feasible.
-
-The lower-prime hard-mask route is narrower in two independent ways. `MC-502` proves that for one complete plus/minus first-exit pair the exact common lower-prime collision law is controlled by `q+r`, and its complete-period normalized sieve coherence satisfies
-
-\[
-\rho_{\rm sieve}^{+-}(q,r)
-\ll_{h,\mathcal E}
-\frac1{\log\max(q,r)}\frac{q+r}{\varphi(q+r)}.
-\]
-
-So complete-period hard-mask overlap supplies only logarithmic/totient enhancement, not a conductor power.
-
-`MC-503` now keeps an **arbitrary fixed incomplete coefficient profile** rather than completing or smoothing it. For the centered quadratic relative phase `F`, every nonnegative profile `b=(b_j)` of length at most `p` satisfies
-
-\[
-\frac1p\sum_{x\bmod p}
-\left|\sum_j b_jF(x+j)\right|^2
-\ll \sum_jb_j^2.
-\]
-
-Writing `R_b=||b||_1^2/||b||_2^2`, order-one normalized bias for this fixed exact profile can therefore occur on only `O(1/R_b)` of the relative conductor starts. For a `0/1` hard mask with `M` survivors the exceptional fraction is `O(1/M)`. No primorial Fourier dimension is paid because the lower-prime profile remains in physical space.
-
-Consequently incomplete hard-mask irregularity by itself is no longer an unconstrained resource. The live hard-mask mechanism is specifically **source-forced alignment between a q-dependent exact profile and that profile's sparse exceptional conductor starts**, or low effective support. A genuinely q-dependent pre-aggregation sign, phase, modulus, or reciprocal role remains a separate live arithmetic channel.
+`MC-508` rules out the first weak version of such coupling. At fixed conductor phase, every fixed finite set of lower-prime moving mask roots can be prescribed arbitrarily by CRT and Dirichlet once the realizing first-exit prime `q` is allowed to escape the active source scale. Therefore finitely many local congruence coordinates cannot be the missing rigidity. Any useful dependence must be destroyed by that nonlocalized control: the full growing profile over all lower primes, the moving cutoff/order carried by `q`, tight localization of `q` in the physical source range, or the archimedean quotient/start/endpoints and reconstruction weights.
 
 ## Research question
 
-Can the exact normalized first-exit family produce either remaining load-bearing resource?
+Does the **actual localized first-exit source**, with `q` constrained to its physical source block and with its entire growing lower-prime profile and archimedean row geometry retained, force subcritical excess collisions in the `MC-506` physical sum coordinate?
 
-For endpoints, do the physical source width, source location, and overlap-length regime pass both corrected Q-free gates at any material scale? If so, which dyadic q-blocks pass the `MC-499` population gate, and on those blocks do the exact winning-endpoint weights pass the `MC-498` participation/fibre threshold?
-
-For the hard-mask branch, does the first-exit source map force enough conditional participation across conductor starts once the relevant exact lower-prime profile is fixed or grouped into a quantitatively controlled profile class? Equivalently, can `(q,r)` systematically pair a changing mask profile with one of that profile's `MC-503` exceptional conductor starts strongly enough to create fixed negative correlation, after the `MC-502` complete-period contribution and all reconstruction costs are charged?
-
-Alternatively, can another exact source operation produce a genuinely q-dependent signed/complex coefficient before the nonnegative aggregation of `MC-495`?
-
-If none of these resources survives with all reconstruction costs restored, the normalized empty-vector first-exit continuation should be closed and attention returned to separately retained nonempty rough-block, boundary, or pre-positive cross-component channels.
+Equivalently, can the source-derived coefficient measure on start/profile-offset pairs be shown not to concentrate on anti-diagonals strongly enough to sustain fixed conductor bias, using a mechanism that genuinely fails for the nonlocalized finite-coordinate CRT controls of `MC-508`? If such a theorem exists, identify exactly whether its rigidity comes from the growing mask dimension, the moving cutoff `q`, source localization, quotient/end-point geometry, or a genuinely signed/complex pre-aggregation coefficient. If none survives all reconstruction costs, the normalized empty-vector first-exit continuation should be closed and attention returned to separately retained nonempty rough-block, boundary, or pre-positive cross-component channels.
 
 ## Why it may matter
 
-The surviving question is no longer whether more averaging variables can be exposed. Exact reductions repeatedly show that visible multiplicity, shifts, support labels, endpoints, complete hard-mask overlaps, and now arbitrary **fixed incomplete hard-mask profiles** can collapse before they yield conductor-scale cancellation.
+The remaining hard-mask question is no longer generic “profile/start dependence.” It has an exact target and an adversarial control. `MC-506` says the only load-bearing statistic for the centered conductor kernel is excess collision mass after the physical addition map; `MC-507` says marginal regularity cannot bound it; and `MC-508` says any fixed finite local residue description can be matched while keeping conductor phase fixed if localization is dropped.
 
-The `MC-497`--`MC-503` chain separates the failure modes cleanly. Failure of either Q-free source-width/location gate makes the endpoint-dispersion certificate method-limited for every dyadic `Q`; passing those but failing the per-block population gate makes that block population-limited; passing all three but failing the exact participation/fibre audit isolates a source-localization or quotient-folding problem. On the hard-mask side, replacing the incomplete profile by its complete-period pair overlap gives at most the `q+r` logarithmic/totient coherence of `MC-502`, while freezing the exact incomplete profile and varying only its conductor alignment gives the `MC-503` effective-support exceptional-set tariff.
-
-Thus any residual hard-mask gain must be carried by the **dependence between profile and start**, not by either marginal object alone. That distinction prevents both fresh complete-period sieve calculations and generic “irregular mask” heuristics from reopening closed mechanisms.
+This sharply separates a potentially arithmetic phenomenon from a representation artifact. A successful estimate must use scale-growing or archimedean structure that is genuinely present in the first-exit source. Conversely, if a matched nonlocalized control reproduces the same collision behaviour, the proposed mechanism has not found rational-prime-specific rigidity.
 
 ## Decisive test
 
-Work in the `R=T=1` empty-vector source frame and retain the exact first-exit cell
+Work in the `R=T=1` empty-vector source frame and retain the exact first-exit cells, shortened endpoints, lower-prime hard masks, source/reconstruction coefficients, and the actual source range of every first-exit label.
+
+For the endpoint-only branch, keep the existing staged audit unchanged: apply the `MC-501` Q-free width gate and `MC-500` Q-free location gate first, then the `MC-499` per-block population gate, and only on surviving blocks the exact `MC-498` winning-endpoint participation/fibre test.
+
+For the hard-mask branch, form the exact nonnegative source coefficient table `B_{x,j}` in the physical conductor start `x` and profile offset `j`. Push this mass through `t=x+j` as in `MC-506` and measure the normalized collision excess
 
 \[
-E_q=\{n:q\mid n(n+h),\ (n(n+h),P(q))=1\}
+\Delta=p\sum_t\nu(t)^2-1,
 \]
 
-with exact shortened endpoints and all source/reconstruction coefficients.
+with `nu` the normalized pushforward. The target is a bound on `Delta` strong enough, after all shell and reconstruction costs, to force the required conductor saving.
 
-For the quadratic endpoint-only branch, partition the material source into dyadic overlap-length bands and compute
+Stress-test any proposed bound against matched controls from `MC-508`: fix the conductor residue of `q` and any selected finite set of local lower-prime mask roots, but remove tight localization and realize the same finite data by primes in the resulting CRT class. A valid positive theorem must identify a hypothesis absent from these controls and prove that it is quantitatively used. Candidates include the full growing lower-prime profile, the moving cutoff/order `q`, the actual narrow source interval, or the archimedean quotient/start geometry. Another theorem about finitely many local mask residues does not pass.
 
-\[
-T_{p,H}=\frac pH\log^2(2H).
-\]
-
-First record the physical source width `Y` before division by the first-exit label and the source location `Z_*=max(X,X+h)`. For every band with `H>=4`, test the `MC-501` width gate
-
-\[
-Y\gg_\delta p^2\log^2(2H)
-\]
-
-and the `MC-500` location gate
-
-\[
-T_{p,H}\ll_\delta4+\sqrt{2Z_*/p}.
-\]
-
-If either fails, record that source-width/location regime as method-limited: no dyadic `Q` can supply both the needed physical overlap length and enough physical start diversity for the current exceptional-start certificate.
-
-Only when both Q-free gates are feasible should each repeated-residue dyadic q-block be compared with the `MC-499` population ceiling `1+Q/p`, or the exact active-label count when available. If the available population is not larger than `T_{p,H}` by the margin required for the target saving, classify the block as method-limited by population.
-
-Only for blocks passing all three admission gates form the actual nonnegative pair weights, split them by the winning start `max(ceil(X/q),ceil((X+h)/r))`, and compute `kappa_+`, `kappa_-`, `D_+`, and `D_-` from `MC-498`. Charge the number of dyadic bands and the original shell/reconstruction weights. If the corrected `MC-498` threshold holds with enough margin, endpoint-only bias is closed on that block. If it fails despite ample width, location height, and label population, isolate whether the loss comes from quotient folding, winning-side imbalance, or genuine coefficient localization.
-
-For the remaining hard-mask route, keep the exact lower-prime coefficient profile on each physical overlap rather than completing or smoothing it. For every profile (or rigorously defined class of profiles with a common controllable envelope), compute its effective support
-
-\[
-R_b=\frac{\|b\|_1^2}{\|b\|_2^2}
-\]
-
-and use `MC-503` to price the set of relative conductor starts capable of fixed normalized bias. Then derive the **actual source pushforward** of `(q,r)` into the joint data “profile/profile-class + conductor start”. A useful continuation must prove that the physical source does not concentrate on the profile-dependent exceptional sets strongly enough to defeat the required saving, or else exhibit an exact arithmetic law forcing such concentration.
-
-The complete auxiliary-sieve component is charged separately by the `MC-502` `q+r` coherence ceiling. Do not replace the exact profile or source pushforward by a smooth, uniform, random, independent, or interval model unless the replacement error is quantitatively transferred.
-
-For any pre-aggregation proposal, identify the first exact formula where two first-exit labels occupy genuinely different arithmetic roles inside the transformed kernel or coefficient. A scalar row factor, affine relabeling, increased multiplicity, complete-period `q+r` collision factor, or an arbitrary fixed nonnegative mask profile does not pass.
+The complete auxiliary-sieve component remains charged separately by the `MC-502` `q+r` coherence ceiling. Do not replace the exact source measure by a smooth, uniform, random, independent, or interval model unless the replacement error is quantitatively transferred. For any pre-aggregation alternative, identify the first exact formula where two first-exit labels occupy genuinely different arithmetic roles; scalar row factors, affine relabelings, multiplicity, complete-period collision factors, fixed nonnegative profiles, marginal regularity, and finite local mask coordinates are already closed mechanisms.
 
 ## Evidence boundary
 
-`MC-484` proves exact selector-free Buchstab first exit and retains the dimension-two pair sieve. `MC-485`--`MC-495` close coefficient-blind phase-frame, affine-shift, partition, dilation, completed repeated-residue, and multiplicity-only loopholes. `MC-496` closes long endpoint-only overlaps. The corrected `MC-497` proves `O(pH)` fixed-length start energy in the quadratic case; `MC-498` gives the corrected maximal/effective-support tariff `pH^{-1}log^2(2H)`; `MC-499` supplies the per-block source-population ceiling; `MC-500` supplies the Q-free source-location ceiling; and `MC-501` supplies the independent Q-free source-width ceiling obtained by restoring exact row shortening.
+`MC-484` proves selector-free Buchstab first exit while retaining the dimension-two pair sieve. `MC-485`--`MC-495` close coefficient-blind phase-frame, affine-shift, partition, dilation, completed repeated-residue, and multiplicity-only loopholes. `MC-496`--`MC-501` stage the endpoint certificate through exact width, location, population, and participation constraints.
 
-`MC-502` proves that complete-period plus/minus lower-prime hard-mask coherence is controlled by divisors of `q+r` and is only logarithmic/totient-sized. `MC-503` proves that, conditional on any fixed exact incomplete coefficient profile, large quadratic conductor bias is sparse in the relative conductor start at scale `1/R_b`.
+For the hard-mask branch, `MC-502` closes complete-period coherence at logarithmic/totient scale. `MC-503` prices fixed-profile exceptional starts. `MC-504` prices actual conditional start participation jointly with profile support. `MC-505` identifies the centered matched Fourier diagonal as the complete varying-profile interaction seen by the conductor kernel. `MC-506` converts that interaction into an exact physical anti-diagonal collision statistic. `MC-507` proves that the marginals do not control this statistic. `MC-508` proves that fixed finite local mask coordinates remain programmable at fixed conductor phase once tight prime localization is removed.
 
-None of these findings controls the **joint source distribution of changing mask profiles and their physical conductor starts**, proves enough conditional participation within useful profile classes, derives a new q-dependent signed/complex pre-aggregation coefficient, evaluates every material endpoint regime, or improves `M(x)`. The `MC-503` uniform-start average must not be substituted for the actual first-exit source measure. `MC-456` remains a neighboring positive template only; it is not evidence that the required quotient-breaking structure exists here.
+None of these findings bounds the anti-diagonal collision excess for the **actual localized full growing first-exit profile**, proves that source localization supplies the missing rigidity, derives a new pre-aggregation signed/complex coefficient, evaluates every material endpoint regime, or improves `M(x)`. `MC-456` remains only a neighboring positive template; it is not evidence that the required quotient-breaking structure exists here.
 
 ## Research disposition
 
-The clue remains `accepted`. The endpoint audit is strictly staged: **apply the MC-501 Q-free source-width gate and the corrected MC-500 Q-free source-location gate first; only surviving regimes proceed to the MC-499 per-block population gate; only triply feasible blocks proceed to the exact MC-498 winning-endpoint participation/fibre audit**. Failure at any of the first three stages is a limitation of the present endpoint-dispersion certificate, not evidence for true phase bias.
-
-The lower-prime branch is now staged more sharply: **complete-period pair coherence is closed at logarithmic/totient scale by MC-502; fixed incomplete profiles are subject to the MC-503 effective-support conductor-start tariff; only source-forced profile/start alignment or low profile effective support remains as the phase-selective hard-mask resource**. Genuinely q-specific pre-aggregation arithmetic asymmetry remains an independent admissible route.
+The clue remains `accepted`. The endpoint audit retains its existing four-stage gate. The lower-prime branch is now staged as: complete-period coherence closed by `MC-502`; fixed-profile and conditional-participation tariffs imposed by `MC-503`--`MC-504`; arbitrary profile variation reduced by `MC-505`--`MC-506` to physical anti-diagonal collisions; marginal control ruled out by `MC-507`; and finite local congruence rigidity ruled out by `MC-508` without localization. The live mechanism is therefore **localized, scale-growing full-profile/archimedean source coupling**, or a genuinely q-specific signed/complex pre-aggregation operation.
