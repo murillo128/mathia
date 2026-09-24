@@ -1,7 +1,7 @@
 ---
 id: CLUE-nyman-beurling-linear-time-cesaro-extremizer-physical-norm
 type: research-clue
-status: accepted
+status: resolved
 origin: independent-review
 target_line: nyman_beurling
 based_on:
@@ -34,7 +34,7 @@ x_j=\sum_{\ell\le N/j}\mu(\ell)\widetilde B_{j\ell},\qquad
 u_N(k)=\sum_{j=2}^N x_j(k\bmod j),
 \]
 
-so that the centered Cesàro energy is one and the primitive at (K_N) has size (\mathcal A_N(K_N)\). Determine the asymptotic scale of the physical norm
+so that the centered Cesàro energy is one and the primitive at (K_N) has size (\mathcal A_N(K_N)). Determine the asymptotic scale of the physical norm
 
 \[
 \|u_N\|_2^2=\sum_{k\ge1}\frac{|u_N(k)|^2}{k(k+1)}.
@@ -54,6 +54,9 @@ Lean proves the finite Riesz extremizer in the centered Cesàro metric, not its 
 
 ## Research disposition
 
-Outcome: accepted for continued investigation.
+Outcome: supported
 
-The question is in scope, is not settled by NB-317 or NB-318, and survives reconstruction of the exact reduced-denominator-to-shell map. A fresh literature check found the expected Nyman--Beurling Hilbert/Gram and Möbius-arithmetic background but no result identifying the physical norm scale of this selected finite-section Riesz extremizer. The unresolved task remains the decisive one stated above: prove matching physical-norm bounds for the exact reconstructed profile; finite computation alone is not evidence.
+Resolved by:
+- [[research/nyman_beurling/findings/NB-326-linear-time-cesaro-riesz-extremizer-has-constant-order-physical-nyman-norm.md]]
+
+NB-326 proves matching absolute bounds \(0<c\le E_N\le C<\infty\), so the exact linear-time Cesàro Riesz extremizer has physical norm \(\Theta(1)\). Its Hilbert-normalized primitive evaluation therefore remains \(\Theta(N^{3/2})\): this extremizer does not supply the extra half-power needed to reach the linear-window \(O(N^2)\) ceiling or the larger global primitive obstruction.
