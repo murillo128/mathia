@@ -1,0 +1,436 @@
+# NB-320 — Half-period adjacent resonance leaves a logarithmic weighted mixing defect
+
+- **Date:** 2026-09-24
+- **Status:** proved
+- **Research line:** `nyman_beurling`
+- **Depends on:** NB-304, NB-305, NB-315, NB-316, NB-319
+- **Classification:** `EXACT-DERIVED + SOURCE-SIDE + WEIGHTED-BILINEAR-MIXING + QUADRATIC-RESONANCE + ADJACENT-WITNESS + RANK-ONE-ERROR + METHOD-DISCRIMINATOR + NON-TARGET-AWARE + PRIOR-ART-AUDITED`
+
+## Claim
+
+Let
+
+\[
+U_n:=\operatorname{span}\{g_2,\ldots,g_n\},
+\qquad
+T_{n,m}:=P_{U_n}A_m|_{U_n},
+\]
+
+and let `R_n` be the far-external rank-one operator of `NB-314`/`NB-315`, so that for `u,v in U_n`
+
+\[
+\left\langle(\sqrt m\,T_{n,m}-R_n)v,u\right\rangle
+=
+\int_1^\infty
+F_v(t)\widetilde F_u(mt)\,\frac{dt}{t^2}.
+\tag{1}
+\]
+
+For every even integer `n>=4`, take the scaled adjacent cancellation
+
+\[
+u_n:=g_n-\frac{n-1}{n}g_{n-1}
+\tag{2}
+\]
+
+from `NB-304`/`NB-316`, whose centered reciprocal profile has period
+
+\[
+P_n=n(n-1),
+\tag{3}
+\]
+
+and choose the resonant quadratic dilation
+
+\[
+\boxed{
+m_n:=\frac{P_n}{2}=\frac{n(n-1)}2.
+}
+\tag{4}
+\]
+
+Then the actual weighted rank-one mixing error has the explicit matrix coefficient asymptotic
+
+\[
+\boxed{
+\left\langle
+(\sqrt{m_n}\,T_{n,m_n}-R_n)g_2,u_n
+\right\rangle
+=
+\frac{\pi^2}{64(n-1)}+O\!\left(\frac1{n^2}\right).
+}
+\tag{5}
+\]
+
+The error term is absolute. One explicit bound is
+
+\[
+\left|
+\left\langle
+(\sqrt{m_n}T_{n,m_n}-R_n)g_2,u_n
+\right\rangle
+-
+\frac{\pi^2}{64(n-1)}
+\right|
+\le
+\frac{C_0}{(n-1)^2},
+\tag{6}
+\]
+
+where
+
+\[
+C_0
+:=
+\frac58\left(
+\frac74\zeta(3)+\frac{45}{8}\zeta(4)
+\right)
+<5.2.
+\tag{7}
+\]
+
+The adjacent witness has physical norm of order `sqrt(log n)/n`. More precisely, `NB-304` and `NB-305` give
+
+\[
+\frac{H_{\lfloor n/2\rfloor}-1}{4n^2}
+\le
+\|u_n\|_2^2
+\le
+\frac{2H_{n-2}+1+\pi^2/18}{n^2}.
+\tag{8}
+\]
+
+Since
+
+\[
+\|g_2\|_2^2=\frac{\log2}{4},
+\tag{9}
+\]
+
+(5)--(9) imply
+
+\[
+\boxed{
+\frac{
+\left|
+\left\langle
+(\sqrt{m_n}T_{n,m_n}-R_n)g_2,u_n
+\right\rangle
+\right|
+}{\|g_2\|_2\,\|u_n\|_2}
+=\Theta\!\left(\frac1{\sqrt{\log n}}\right)
+}
+\tag{10}
+\]
+
+along even `n->infinity`. Consequently,
+
+\[
+\boxed{
+\|\sqrt{m_n}T_{n,m_n}-R_n\|
+\gg
+\frac1{\sqrt{\log n}}.
+}
+\tag{11}
+\]
+
+Thus the direct `1/t^2`-weighted bilinear pairing does exploit a cancellation that the primitive supremum of `NB-319` completely misses: the same adjacent family has Hilbert-normalized centered primitive of order `n^2/sqrt(log n)` at this half-period, while its normalized weighted mixing residue is only of order `1/sqrt(log n)`. The weight suppresses the primitive obstruction by a full quadratic factor.
+
+However, the suppression is not polynomially complete. At the resonant quadratic sequence `m_n=n(n-1)/2`, the rank-one mixing error cannot be `O(n^(-delta))` for any fixed `delta>0`. This does **not** disprove rank-one mixing at quadratic scale because the lower bound in (11) still tends to zero. It is a rate obstruction and a method discriminator, not a non-mixing theorem.
+
+## 1. Folding the weighted pairing onto one half-period
+
+For the generator `g_2`, its reciprocal profile is especially simple:
+
+\[
+F_{g_2}(t)
+=
+\begin{cases}
+0,&t\in[2\ell,2\ell+1),\\[1mm]
+1/2,&t\in[2\ell+1,2\ell+2),
+\end{cases}
+\qquad \ell\ge0.
+\tag{12}
+\]
+
+The centered reciprocal profile `widetilde F_(u_n)` is `P_n`-periodic. Because `2m_n=P_n`, the product
+
+\[
+t\longmapsto
+F_{g_2}(t)\widetilde F_{u_n}(m_nt)
+\]
+
+is therefore `2`-periodic apart from the nonperiodic weight `t^(-2)`.
+
+Introduce the positive kernel
+
+\[
+K(t)
+:=
+\sum_{\ell\ge0}\frac1{(t+2\ell)^2},
+\qquad 1\le t\le2.
+\tag{13}
+\]
+
+Using (12) to fold (1) over the odd unit cells gives the exact identity
+
+\[
+\boxed{
+\mathcal E_n
+:=
+\left\langle
+(\sqrt{m_n}T_{n,m_n}-R_n)g_2,u_n
+\right\rangle
+=
+\frac12\int_1^2
+\widetilde F_{u_n}(m_nt)K(t)\,dt.
+}
+\tag{14}
+\]
+
+After the change of variable `s=m_n t`,
+
+\[
+\mathcal E_n
+=
+\frac1{2m_n}
+\int_{m_n}^{P_n}
+\widetilde F_{u_n}(s)K(s/m_n)\,ds.
+\tag{15}
+\]
+
+This is the actual weighted bilinear error, not a primitive majorant. The only loss introduced below will be in bounding a second-order remainder.
+
+## 2. The half-period primitive produces the leading term
+
+Let
+
+\[
+G_n(T)
+:=
+\int_0^T\widetilde F_{u_n}(s)\,ds.
+\tag{16}
+\]
+
+`NB-316` computes this primitive exactly. It is `P_n`-periodic, hence
+
+\[
+G_n(P_n)=0.
+\tag{17}
+\]
+
+For even `n`, its negative extremum occurs exactly at the half-period:
+
+\[
+\boxed{
+G_n(m_n)=-\frac n8.
+}
+\tag{18}
+\]
+
+Integrating (15) by parts and using (17) gives
+
+\[
+\mathcal E_n
+=
+-\frac{G_n(m_n)K(1)}{2m_n}
+-
+\frac1{2m_n^2}
+\int_{m_n}^{P_n}
+G_n(s)K'(s/m_n)\,ds.
+\tag{19}
+\]
+
+The endpoint kernel is explicit:
+
+\[
+K(1)
+=
+\sum_{\ell\ge0}\frac1{(2\ell+1)^2}
+=
+\frac{\pi^2}{8}.
+\tag{20}
+\]
+
+Substituting (4), (18), and (20) into the boundary term in (19) yields exactly
+
+\[
+\boxed{
+-\frac{G_n(m_n)K(1)}{2m_n}
+=
+\frac{\pi^2}{64(n-1)}.
+}
+\tag{21}
+\]
+
+The `1/n` residue is therefore not obtained by taking absolute values of the primitive. It is the signed boundary contribution generated by aligning the dilation with the adjacent witness's half-period extremum.
+
+## 3. A second integration by parts makes the remainder quadratic
+
+Define the primitive anchored at the resonance point,
+
+\[
+H_n(s)
+:=
+\int_{m_n}^sG_n(r)\,dr,
+\qquad m_n\le s\le P_n.
+\tag{22}
+\]
+
+The block formulas of `NB-316` give a convenient uniform bound for `H_n`. In the block indexed by `a`, `0<=a<=n-2`, the primitive starts at
+
+\[
+P_a=\frac{a(n-1-a)}{2n}
+\]
+
+and reaches
+
+\[
+Q_a=-\frac{(a+1)(n-1-a)}{2n}.
+\]
+
+Integrating the resulting piecewise-linear primitive over the complete block gives the exact value
+
+\[
+\boxed{
+J_a
+:=(\text{integral of }G_n\text{ over block }a)
+=-\frac{2a^2-2an+4a+n^2-2n+2}{4n}.
+}
+\tag{23}
+\]
+
+For `0<=a<=n-2`, the numerator in (23) is positive and at most `n^2`, hence
+
+\[
+|J_a|\le\frac n4.
+\tag{24}
+\]
+
+Also `NB-316` gives the global bound `||G_n||_infinity=n/8` for even `n`. Starting from the midpoint minimum (18), the remainder of the current block contributes at most `n^2/16`; the subsequent complete blocks contribute at most `n^2/8` by (24); and a possible final partial block contributes at most `n^2/8`. Therefore
+
+\[
+\boxed{
+\|H_n\|_{L^\infty([m_n,P_n])}
+\le\frac{5n^2}{16}.
+}
+\tag{25}
+\]
+
+For the kernel (13), termwise differentiation gives on `[1,2]`
+
+\[
+\|K'\|_\infty
+\le
+2\sum_{\ell\ge0}(2\ell+1)^{-3}
+=
+\frac74\zeta(3),
+\tag{26}
+\]
+
+\[
+\|K''\|_\infty
+\le
+6\sum_{\ell\ge0}(2\ell+1)^{-4}
+=
+\frac{45}{8}\zeta(4).
+\tag{27}
+\]
+
+A second integration by parts gives
+
+\[
+\int_{m_n}^{P_n}G_n(s)K'(s/m_n)\,ds
+=
+H_n(P_n)K'(2)
+-
+\frac1{m_n}
+\int_{m_n}^{P_n}H_n(s)K''(s/m_n)\,ds.
+\tag{28}
+\]
+
+Since `P_n-m_n=m_n`, equations (25)--(28) imply
+
+\[
+\left|
+\int_{m_n}^{P_n}G_n(s)K'(s/m_n)\,ds
+\right|
+\le
+\frac{5n^2}{16}
+\left(
+\frac74\zeta(3)+\frac{45}{8}\zeta(4)
+\right).
+\tag{29}
+\]
+
+Putting (29) into (19), and using `m_n^2=n^2(n-1)^2/4`, proves (6)--(7), hence the asymptotic (5).
+
+## 4. The primitive obstruction loses exactly the quadratic scale in this channel
+
+At the resonant time `m_n=P_n/2`, equations (8) and (18) show
+
+\[
+\frac{|G_n(m_n)|}{\|u_n\|_2}
+=\Theta\!\left(
+\frac{n^2}{\sqrt{\log n}}
+\right).
+\tag{30}
+\]
+
+This is the same almost-linear-in-reciprocal-radius phenomenon localized across all mesoscopic annuli by `NB-319`, specialized here to the top adjacent witness and the quadratic reciprocal radius `m_n asymp n^2`.
+
+By contrast, equations (5), (8), and (9) give the normalized **actual weighted matrix coefficient**
+
+\[
+\frac{|\mathcal E_n|}{\|g_2\|_2\|u_n\|_2}
+=\Theta\!\left(\frac1{\sqrt{\log n}}\right).
+\tag{31}
+\]
+
+Comparing (30) and (31), the `1/t^2` pairing has removed a factor of order `n^2`, exactly the scale of the resonant dilation. This confirms that the escape route left open by `NB-319` is real: a large local primitive does **not** force a comparably large weighted bilinear mixing error.
+
+At the same time, (31) is too large for polynomial absolute mixing. Since the operator norm dominates every normalized matrix coefficient,
+
+\[
+\|\sqrt{m_n}T_{n,m_n}-R_n\|
+\ge
+\frac{|\mathcal E_n|}{\|g_2\|_2\|u_n\|_2},
+\]
+
+which proves (11). Hence no bound
+
+\[
+\|\sqrt{m}T_{n,m}-R_n\|
+\le C n^{-\delta}
+\tag{32}
+\]
+
+with fixed `delta>0` can hold uniformly at all quadratic dilations `m asymp n^2`: the half-period sequence (4) violates it.
+
+This does not contradict `NB-315`. Its moving rank-one theorem assumes `m/n^2->infinity`, while here `m_n/n^2->1/2`. Nor does (11) show that quadratic rank-one mixing fails: `1/sqrt(log n)->0`, so a logarithmic transition remains entirely compatible with the present lower bound.
+
+## 5. Evidence boundary and next discriminator
+
+This finding is source-side. The left test vector `u_n` and source vector `g_2` are explicit elements of `U_n`, but no claim is made about occupation by the actual first-free Ford datum, finite-section excess, Nyman distance, or RH.
+
+The result also does not determine the full operator error at quadratic scale. It supplies one resonant channel with a sharp `1/n` unnormalized leading term and a `1/sqrt(log n)` normalized lower bound. Other singular directions may be much larger. Conversely, this channel alone cannot prevent the full error from tending to zero logarithmically.
+
+What it does decide is the method question posed by `NB-319`. Replacing the weighted bilinear integral by a local primitive supremum really does discard a quadratic amount of cancellation on the canonical adjacent obstruction. Therefore further progress below the superquadratic sufficient regime of `NB-315` should estimate the weighted pairing itself. But any such estimate must preserve enough arithmetic phase information to account for the surviving half-period boundary resonance (21); a scale-only `O(n^(-delta))` quadratic mixing law is already impossible.
+
+A useful next discriminator is whether the half-period calculation extends from this one explicit channel to a reduced-denominator description of the entire quadratic mixing operator. If every centered mode has only logarithmic or smaller resonance after the `1/t^2` weighting, quadratic rank-one mixing may hold with a slow rate. If some family produces an order-one normalized weighted coefficient, then the true transition lies beyond quadratic scale.
+
+## 6. Adversarial checks and prior-art audit
+
+The folding in (14) uses both structures exactly: `F_(g_2)` selects the odd unit cells and `2m_n=P_n` makes the centered adjacent profile repeat after each pair of cells. The endpoint in (18) is a half-period minimum only for even `n`; the theorem is therefore stated only on the even subsequence. The centered primitive has zero increment over a full period, so `G_n(P_n)=0` is exact.
+
+The remainder estimate is not obtained by reusing the large primitive supremum in the first integration by parts. It integrates once more and uses the exact signed block integrals (23). This is what recovers the additional factor `1/m_n` and turns the remainder into `O(n^(-2))`. The normalization in (10) uses bounds on `||u_n||_2` in both directions: the upper norm bound proves the lower matrix-coefficient scale, and the independent lower norm bound from `NB-305` proves the matching upper scale.
+
+A fresh prior-art search on 2026-09-24 checked the neighboring fractional-part autocorrelation and Nyman--Beurling Gram/dilation literature, including Balazard--Martin's multiplicative autocorrelation work, Ehm's Nyman Gram formulae and reciprocity structures, Alouges--Darses--Hillion's generalized Gram framework, and recent multiplicative-ladder Gram decay work. Those sources cover the surrounding autocorrelation, Gram, and dilation machinery, but the material reviewed did not exhibit this finite-section half-period weighted rank-one-error coefficient or the asymptotic (5). This is recorded only as the boundary of the audit, not as a claim of bibliographic novelty.
+
+No external theorem is load-bearing for the proof. The derivation uses the exact line-local identities already established in `NB-315` and `NB-316`, elementary periodic folding, two integrations by parts, and the standard odd zeta sums in (20), (26), and (27). Accordingly, `SOURCES.md` requires no new durable dependency.
+
+## Conclusion
+
+`NB-319` showed that no annular `L^infinity` primitive estimate can buy a positive-power saving before quadratic reciprocal depth. `NB-320` shows why that does **not** force the actual mixing operator to be equally bad: on the canonical adjacent obstruction, the true weighted bilinear pairing cancels a full quadratic factor.
+
+The cancellation is nevertheless resonant rather than complete. At the quadratic half-period `m_n=n(n-1)/2`, the normalized rank-one mixing error retains a `Theta(1/sqrt(log n))` matrix channel. The next source-side question is therefore no longer whether primitive localization can beat the quadratic obstruction; it is whether the complete reduced-denominator weighted operator has only such logarithmic resonances at quadratic scale, or whether stronger coherent modes survive.
