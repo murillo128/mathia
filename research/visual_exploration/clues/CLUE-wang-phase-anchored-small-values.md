@@ -14,82 +14,79 @@ based_on:
   - research/visual_exploration/findings/VIS-422-gram-points-prime-torus-haar-null.md
   - research/visual_exploration/findings/VIS-423-gram-block-character-small-divisor-tariff.md
   - research/visual_exploration/findings/VIS-424-normalized-wang-amplitude-moment-tariff.md
+  - research/visual_exploration/findings/VIS-425-fixed-radius-wang-persistence-moment-tariff.md
 ---
 
 # Does an independently justified arithmetic height selector align with Wang quiet regions beyond each shell's own translation orbit?
 
 ## Observation
 
-`VIS-416` isolates the bandwidth-normalized amplitude `a_i(T)=|F_i(T)|/||F_i||_infinity` as the candidate small-value factor after removing the generic reciprocal-bandwidth scale. `VIS-417` shows that long finite-window suppression can still be manufactured by an unresolved beat scale even when mode count, coefficient magnitudes, long-time energy, bandlimit, and global sup norm are fixed.
+`VIS-416` isolates normalized shell amplitude after removing the generic reciprocal-bandwidth scale. `VIS-417` and `VIS-418` show that beat scales and global time translation can manufacture long quiet regions while preserving coarse spectral data, so fixed-height smallness must be calibrated against the exact shell orbit rather than against loose random-sum controls.
 
-`VIS-418` strengthens that control. Even after the complete two-mode frequency set and its beat gap are fixed, global translation can move an arbitrarily long quiet interval onto or away from any prescribed observation height while preserving the full frequency geometry, coefficient magnitudes, long-time energy, and sup norm. Fixed-height localization therefore contains a phase/time-origin alignment component that ordinary spectral matching does not remove.
+`VIS-419` supplies that exact fixed-shell null: a finite Wang shell is a Laurent polynomial on its base-prime torus, and long translation is its Haar pushforward. `VIS-420` quantifies finite-window character-polynomial calibration through prime-log small divisors. `VIS-421` then separates selector provenance from Wang's source interface: Wang's generic interval start does not itself choose a sparse distinguished-height panel.
 
-`VIS-419` closes the fixed-shell asymptotic calibration question: each canonical finite Wang shell is a finite character polynomial on its base-prime torus, and long translation of the actual shell is exactly the Haar pushforward of that same character polynomial. The valid Haar coordinates are base-prime phases; ratio-mode phases retain their induced character dependencies.
+For ordinary Gram points, the escape route has narrowed repeatedly. `VIS-422` proves fixed finite prime-phase vectors are asymptotically Haar. `VIS-423` gives a quantitative tariff for changing Laurent-polynomial observables. `VIS-424` reduces normalized pointwise amplitude to fixed scalar moment tariffs plus Haar anti-concentration.
 
-`VIS-420` closes the elementary finite-window calibration for character-polynomial observables. Translation error is an explicit sinc-weighted Fourier sum whose sufficient bound pays the active small divisors `|m dot (log p)|`; for shell energy these are exactly the pairwise beat gaps `|lambda_j-lambda_k|`. A finite translation window is therefore auditable for polynomial diagnostics, while nonlinear amplitude/persistence tails still require direct Haar evaluation or a controlled approximation.
+`VIS-425` now removes the remaining ambiguity for **fixed-radius persistence** in the canonical strict near-band shells. Their frequency radius is uniformly below `log 2`, so Bernstein's inequality turns every fixed path window into a finite offset mesh at arbitrary fixed accuracy. Mixed offset moments pay the same `VIS-423` character tariff, with a structural divisor that for a dyadic shell of arithmetic height `Y_N` satisfies
 
-`VIS-421` corrects the remaining source-interface assumption. Wang's short-interval source treats `T` as the generic asymptotic interval start, with `H=T^theta`, and does not itself define a sparse distinguished-height selector. Any actual panel must therefore be justified separately or declared as an external arithmetic/zeta selector. In the latter case the experiment tests cross-structure alignment, not a height selected by Wang alone.
+`delta^*_(N,R) >= (2Y_N)^(-2R)`.
 
-`VIS-422` disposes of ordinary Gram points in the fixed-shell regime: their finite prime-phase vectors converge to Haar, so every fixed finite Wang shell and fixed continuous persistence observable has the same asymptotic Gram law as its exact Haar self-null.
-
-`VIS-423` supplies a quantitative partial closure for changing Laurent-polynomial observables on dyadic Gram blocks. Increasing prime support alone is not enough: the total Fourier mass, frequency-weighted mass, and reciprocal-frequency/small-divisor mass must actually exceed the explicit Gram tariff to escape the Haar mean.
-
-`VIS-424` removes the remaining ambiguity for **pointwise normalized amplitude**. With `X_N=|F_N|^2/||F_N||_infinity^2`, every fixed moment `X_N^r` is again a Laurent polynomial, and its `VIS-423` costs are bounded by the normalized Wiener mass `W_N`, outer frequency scale `Omega_N`, and the fixed-order prime-log small divisor `delta_(N,r)`. If those moment tariffs vanish for every fixed `r`, then every fixed continuous function of normalized amplitude has the same Gram-block average as the corresponding Haar self-null. A fixed low-tail threshold is also forced to Haar once the Haar amplitude laws satisfy a uniform boundary-mass/anti-concentration condition.
-
-Thus the modulus itself is no longer an unspecified nonlinear escape. The remaining Gram-point resource must be visible as moment-tariff failure, nonuniform Haar concentration near the chosen threshold, or genuinely path-valued persistence structure.
+Thus fixed-radius local suprema are not an independent nonlinear escape once the strengthened mixed-moment tariffs and Haar boundary-mass condition pass. A surviving Gram-point anomaly must now expose a quantified tariff failure, nonuniform Haar concentration, genuinely growing path complexity, or a different selector.
 
 ## Research question
 
-Fix, before inspecting shell values, a deterministic arithmetic height selector `S={T_j}` with explicit provenance and a pre-specified rule transporting the Wang shell family across those heights. Do the selected heights exhibit unusually small normalized amplitudes or unusually persistent local quiet regions **relative to the exact translation/Haar self-null of each corresponding frozen shell**, after bandwidth normalization and without scanning the selector, shift, shell scale, or persistence radius to favor the observed values?
+Fix, before inspecting shell values, a deterministic arithmetic height selector `S={T_j}` with explicit provenance and a pre-specified rule transporting the Wang shell family across those heights. Do the selected heights exhibit unusually small normalized amplitudes or unusually persistent quiet regions relative to each corresponding shell's exact translation/Haar self-null, after bandwidth normalization and without scanning the selector, shell scale, shift, persistence radius, or statistic to favor the observed values?
 
-For ordinary Gram points, the pointwise amplitude branch is now narrower: do the actual changing Wang shells violate the `VIS-424` moment conditions through excessive normalized Wiener mass, high character scale, fixed-order prime-log small divisors, or nonuniform Haar concentration at the intended low-tail threshold? If not, the normalized-amplitude route is already asymptotically Haar and should be closed without numerical anomaly hunting.
-
-The separate persistence question remains: can a pre-specified path-valued statistic such as a fixed-radius local supremum evade the scalar moment reduction while surviving the `VIS-420`/`VIS-423` calibration gates?
+For ordinary Gram points and strict near-band Wang shells, do the **actual transported source coefficients** violate the combined `VIS-424`/`VIS-425` sufficient null through excessive normalized Wiener mass, unexpectedly small fixed-order product-ratio divisors, nonuniform Haar concentration, or a path radius/bandwidth that grows fast enough to defeat fixed-mesh reduction? If not, both pointwise amplitude and fixed-radius persistence should be closed without numerical anomaly hunting.
 
 ## Why it may matter
 
-This isolates a cleaner question than comparing raw balance radii against loosely matched random sums. The exact prime-torus Haar self-null preserves the shell's frequencies, coefficient magnitudes, beat gaps, internal spectral crowding, and algebraic dependencies among ratio modes. What changes is only alignment between the frozen shell and the selected height.
+The control hierarchy now preserves essentially all fixed-shell arithmetic character structure while removing generic explanations one by one. Deterministic selector sparsity is insufficient (`VIS-422`); growing dimension alone is insufficient below the character tariff (`VIS-423`); scalar modulus is insufficient below the moment tariff (`VIS-424`); and a fixed local supremum is insufficient when uniform bandwidth and mixed-moment tariffs hold (`VIS-425`).
 
-The cumulative negative controls now distinguish three levels. Deterministic sparsity of a selector is insufficient (`VIS-422`); growing shell dimension is insufficient when its Fourier observables stay below the character tariff (`VIS-423`); and pointwise absolute value is insufficient when the scalar moment tariffs and Haar anti-concentration pass (`VIS-424`). A surviving anomaly must therefore expose a concrete source resource rather than hide behind generic nonlinearity.
+A positive residual would therefore have to identify a concrete source resource rather than hide behind generic nonlinearity, finite-window beating, or path dependence. A negative result is equally useful because it closes the current Gram selector branch at the level of the actual Wang transport rather than by simulation.
 
 ## Decisive test
 
-Before evaluating any comparison value, freeze the deterministic height rule and its provenance, whether it is internal or external to the Wang source interface, the shell-family transport rule, bandwidth normalization, the amplitude/persistence statistic, the persistence radius or scale law, the panel aggregation rule, and any numerical approximation rule.
+Before numerical evaluation, freeze the selector provenance, the shell-family transport rule, the Wang parameters, bandwidth normalization, amplitude/persistence statistic, persistence-radius law, panel aggregation, and numerical approximation rule.
 
-For ordinary Gram points, apply the analytic gates before simulation. For a shell
+For an ordinary-Gram strict near-band shell
 
 `F_N=sum_a b_(N,a) z^a`,
 
-compute or bound
+compute or rigorously bound
 
-`W_N=(sum_a |b_(N,a)|)/||F_N||_infinity`,
+`W_N=(sum_a |b_(N,a)|)/||F_N||_infinity`
 
-`Omega_N=max_a |sum_p a_p log p|`,
+and the dyadic shell height `Y_N`. For every fixed total moment order `R` relevant to the intended test, use the structural divisor
 
-and, for each fixed moment order needed by the intended scalar test,
+`delta^*_(N,R)=min |sum_(j=1)^R(lambda_(a_j)-lambda_(c_j))|`
 
-`delta_(N,r)=min{|nu|: nu!=0 occurs in (|F_N|^2/||F_N||_infinity^2)^r}`.
+over nonzero values. `VIS-425` gives the source-independent bound
 
-If
+`delta^*_(N,R) >= (2Y_N)^(-2R)`
 
-`W_N^(2r)[1/N + r Omega_N/log N + log N/(N delta_(N,r))] -> 0`
+for the strict near-band ratio shells.
 
-for every fixed `r`, then `VIS-424` already forces every fixed continuous amplitude diagnostic to its Haar self-null. For a fixed low-tail threshold `t`, additionally test the Haar boundary mass `m_H{|X_N-t|<=eta}` uniformly in `N`; if it vanishes as `eta->0`, the tail frequency is also analytically closed.
+Attempt the explicit sufficient tariff
 
-Only if one of those amplitude gates fails should the failure be treated as the candidate resource and investigated further. Do not interpret a failed sufficient bound as evidence of an anomaly.
+`W_N^(2R) [ 1/N + R/log N + (log N)(2Y_N)^(2R)/N ] -> 0`
 
-For persistence, use the exact base-prime Haar pushforward from `VIS-419`. If finite translation is used, apply the `VIS-420` small-divisor calibration. Any polynomial surrogate must satisfy `VIS-423`; a genuinely nonlinear path statistic needs a separate uniform approximation/stability argument rather than pointwise-amplitude moments.
+for every fixed `R`, or replace the elementary divisor floor by a sharper proved bound when available. If these mixed-moment tariffs pass, `VIS-425` forces every fixed continuous pointwise-amplitude and fixed-radius persistence diagnostic to its Haar self-null. For a fixed low-tail threshold, additionally require the corresponding Haar boundary mass to vanish uniformly in shrinking neighborhoods of that threshold.
 
-Kill the direction if no non-arbitrary selector with defensible provenance can be frozen, if the relevant selector is already Haar for the tested regime, if the Gram amplitude moment and boundary-mass gates pass, if the selected heights are typical under their exact self-nulls, or if an apparent effect disappears under the pre-registered shell scaling or can be recreated by post-selection.
+Only a quantified failure of these gates should remain live. A failed sufficient bound is **not** evidence of an anomaly: identify which resource causes the failure and test whether it is specific to the Wang source rather than a generic property of comparable finite character polynomials. If the intended persistence radius or effective bandwidth grows with `N`, formulate that growth explicitly; the fixed-mesh theorem no longer applies and a separate quantitative path-approximation argument is required.
+
+For a different external selector, first audit whether its finite prime-phase vectors or the relevant changing observables are already forced to the same Haar null. Independent randomization of ratio-mode phases is not an admissible substitute for the base-prime Haar control.
+
+Kill the direction if no non-arbitrary selector with defensible provenance can be frozen, if the relevant selector is already Haar in the tested regime and the combined amplitude/persistence tariffs pass, if the selected heights are typical under their exact self-nulls, or if an apparent effect disappears under the pre-registered transport/scaling rules or can be recreated by post-selection.
 
 ## Evidence boundary
 
-`VIS-419` proves the fixed-shell translation/Haar calibration. `VIS-420` gives the finite-window character-polynomial error with explicit small-divisor cost. `VIS-421` proves only an interface boundary: the imported Wang source does not itself supply a distinguished-height selector. `VIS-422` proves ordinary Gram points are asymptotically Haar for every fixed finite shell. `VIS-423` adds a quantitative sufficient condition for changing Laurent-polynomial observables.
+`VIS-419` proves fixed-shell Haar calibration; `VIS-420` gives finite-window small-divisor costs; `VIS-421` separates Wang's generic source height from an external selector; `VIS-422` closes ordinary Gram points for fixed shells; `VIS-423` controls changing Laurent-polynomial observables; `VIS-424` reduces pointwise amplitude to scalar moments; and `VIS-425` extends that reduction to fixed-radius persistence under a uniform frequency bound and stronger mixed-frequency divisor.
 
-`VIS-424` adds a scalar moment reduction for pointwise normalized amplitude. It does **not** prove that the actual Wang growing family satisfies the moment tariffs, does not prove uniform Haar anti-concentration at any chosen threshold, and does not control the path-valued persistence supremum. Failure of any sufficient gate is not evidence of a positive arithmetic anomaly.
+None of these findings proves that the actual transported Wang growing family satisfies the sufficient tariffs, proves uniform Haar anti-concentration at a chosen threshold, or establishes a source-sensitive anomaly when a tariff fails. `VIS-425` also does not cover persistence radii or bandwidths that grow with the Gram block.
 
 No current result identifies a selector with an anomalous Wang-shell phase law, establishes a source-sensitive low-tail excess, produces an RH mechanism, or turns an external selector into part of Wang's theorem.
 
 ## Research disposition
 
-Accepted, further narrowed by `VIS-424`. **Ordinary Gram points remain live only where an explicit amplitude resource or path-valued persistence obstruction survives the analytic nulls.** For pointwise amplitude, first audit `W_N`, `Omega_N`, fixed-order `delta_(N,r)`, and Haar threshold anti-concentration; if they pass, close the Gram amplitude route. Continue only with a quantified failure of those gates, a genuinely different selector, or the persistence statistic whose local-supremum structure is not reduced by `VIS-424`.
+Accepted, further narrowed by `VIS-425`. **For ordinary Gram points, pointwise amplitude and fixed-radius persistence now share the same analytic decision boundary.** The next substantive step is to audit the actual Wang shell transport through `W_N`, `Y_N`, sharper fixed-order product-ratio divisors where available, and Haar threshold concentration. Continue only with a quantified failure of those gates, a genuinely growing path scale, or a different selector whose prime-phase law is not already driven to the same self-null.
