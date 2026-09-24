@@ -8,20 +8,26 @@ MC-423--MC-445 separate source diversity, representation fidelity, Möbius top-i
 
 The surviving resources are qualitatively different: growing rank, another justified source measure, absolute scale, discontinuous arithmetic data, cross-rank structure, or coordinates that retain enough factor identity to survive the Möbius projection. Any such carrier still has to produce an analytic cancellation estimate after the exact top-interaction quotient.
 
-## Can the actual first-exit source concentrate on the exceptional quadratic short-overlap starts?
+## Can the endpoint-only first-exit route pass its source-population and effective-support gates?
 
 MC-484--MC-492 isolate the exact first-exit geometry and close a large family of coefficient-blind Hilbert-space escapes. After affine normalization the visible inverse shift is gauge; the least-active-prime cells are disjoint; common transforms preserve that orthogonality; rowwise dilation leaves the conductor-scale diagonal; sublinear completed families are Riesz-stable; and native same-root repeated-residue coefficients make the remaining positive cross terms constructive. A useful gain must therefore enter through source-dependent inner arithmetic before positive closure, not through a free scalar row weight or a hidden Gram eigenvector.
 
-MC-497 now gives the exact short-overlap restriction for the quadratic repeated-residue phase in the **physical additive source coordinate**. For fixed conductor `p` and nonzero `c`, the relevant phase is `R_c(m)=chi(m^2-c^2)` away from the harmless `m=0` correction. If `S_(c,x)(H)` is its centered sum on a cyclic interval of length `H<=p`, then
+MC-497 gives the exact short-overlap restriction for the quadratic repeated-residue phase in the **physical additive source coordinate**. Starts with normalized bias at least a fixed level occupy only `O(1/H+1/sqrt(p))` of the conductor classes. MC-498 converts that exceptional-set statement into the quantity carried by the actual source weights: for induced start weights `w`, the effective participation
 
-`(1/p) sum_(x mod p) |S_(c,x)(H)|^2 << H + H^2/sqrt(p)`.
+`R_start=||w||_1^2/||w||_2^2`
 
-Hence the starts with normalized bias at least `eta` occupy only
+enters the short-character-sum tariff, while the physical quotient maps `ceil(X/q)` and `ceil((X+h)/r)` contribute explicit fibre costs `D_+` and `D_-`. After splitting by the winning endpoint, sufficient growth of `kappa_+/D_+` and `kappa_-/D_-` forces endpoint-only quadratic bias to vanish.
 
-`O_eta(1/H + 1/sqrt(p))`
+MC-499 adds a cheaper admission gate before those reconstruction details are computed. In one repeated residue class with dyadic labels `Q<=q,r<=2Q`, the source population is at most `N_Q<=1+Q/p`, and every physical overlap start is literally one of the two endpoint values. Hence
 
-of the conductor classes. This is an average-over-start theorem, not a uniform Burgess-type bound, and it is specific to the quadratic phase. It nevertheless rules out generic short-endpoint geometry as a persistent source of order-one bias: below the MC-496 completion threshold, a surviving endpoint-only mechanism must place a fixed fraction of the **actual reconstruction-weighted overlap mass** on these sparse exceptional physical starts.
+`R_start <= 2(1+Q/p)`,
 
-The live theorem is therefore a source-incidence statement. Determine the distribution, with the true first-exit progression, changing cutoff and outer/staged weights retained, of the physical overlap-start residues relative to the MC-497 exceptional sets. A positive result must prove enough weighted concentration to survive conductor and reconstruction costs; a negative result should prove that the exact source map cannot overpopulate the exceptional classes at the required scale. Merely producing many short overlaps, or rescaling the additive interval to a conductor coordinate where it is no longer consecutive, does not meet the gate.
+and separately `kappa_+/D_+, kappa_-/D_- <= 1+Q/p`. If
 
-Collective cross-root interference, internal lower-prime pair-sieve variation and genuinely `q`-dependent pre-aggregation signs/phases remain logically distinct possibilities. They must exhibit a source-forced arithmetic law before scalarization; the MC-497 exceptional-set theorem does not rule them out.
+`T_(p,H)=p/H log^2(2H)+sqrt(p) log(2H)`
+
+is the MC-498 second-moment tariff, then the current dispersion certificate cannot deliver a fixed saving unless `1+Q/p` itself is larger than `T_(p,H)` up to the required constants. In particular the `sqrt(p)` term forces a population floor of order `Q >> p^(3/2) log(2H)` for this method. This is a ceiling on the certificate, not evidence that true endpoint bias is large.
+
+The endpoint audit should therefore be staged. First apply the source-population gate to every material repeated-residue block. Blocks below it are **method-limited by population**: even perfectly flat coefficients cannot supply enough physical starts, so failure must not be misread as arithmetic concentration. Only blocks above the population threshold make the detailed MC-498 participation/fibre computation diagnostic. There, failure can genuinely reflect reconstruction-weight concentration, quotient folding or winning-side imbalance; success closes endpoint-only bias after the remaining block tariffs are charged.
+
+If all material blocks fail the MC-499 population gate, further refinement of the same MC-497/MC-498 exceptional-start second moment cannot settle the endpoint branch. A stronger incomplete-character-sum input, a different norm, or another surviving arithmetic channel is required. Collective cross-root interference, internal lower-prime pair-sieve variation and genuinely `q`-dependent pre-aggregation signs/phases remain logically distinct possibilities. Any such route must still exhibit a source-forced arithmetic law before scalarization rather than another coefficient-blind multiplicity or support effect.

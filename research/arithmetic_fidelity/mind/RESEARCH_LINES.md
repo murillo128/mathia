@@ -20,7 +20,17 @@ AF-534 shows that in an infinite-dimensional Gaussian shift experiment the nuisa
 
 with `J_A=delta_A^2 d_A^2`. One can therefore have algebraic identifiability with zero robust margin when `u_A in closure(N_A) \ N_A`. For a fixed compact target interval, AF-534 proves uniform nuisance-robust consistency exactly when `J_A -> infinity`.
 
-The live question is to classify **which exact relational or differential lifts of the arithmetic boundary data produce a source-forced carrier that remains quantitatively transverse to the closed admissible nuisance geometry on the observation window actually available**. AF-528 supplies one exact shape variable in a narrow co-tuned family; AF-533 supplies the finite-dimensional precision projection; AF-534 identifies closure as the infinite-dimensional stability boundary. What remains is a source theorem connecting the arithmetic observable to a carrier with enough closed-quotient Cameron--Martin/precision energy for uniform discrimination. Algebraic non-membership in the raw nuisance span, exact recoverability at infinite precision, raw sample count and unprojected carrier energy are all insufficient by themselves.
+AF-535 adds the observation/compression gate in a regular semiparametric experiment. If `e=(I-P_Lambda)s` is the source efficient score, `C=E[.\mid Y]` is the conditional-expectation contraction of a parameter-independent observation channel, and `M=closure(C Lambda)` is the downstream nuisance tangent space, then the downstream efficient score is
+
+`e_Y=(I-P_M) C e`,
+
+and the exact information loss splits as
+
+`I_X^eff-I_Y^eff = (||e||^2-||Ce||^2) + ||P_M Ce||^2`.
+
+The first term is direct loss of the efficient score through compression; the second is nuisance recontamination created after observation. Equality holds exactly when the upstream efficient score is measurable from the retained observation. Adjoining `e` itself gives a minimal first-order lift, but that repair is target-, baseline- and nuisance-dependent and is therefore not automatically a source-natural arithmetic representation.
+
+The live question is to classify **which exact relational or differential lifts of the arithmetic boundary data produce a source-forced efficient carrier that remains quantitatively transverse to the closed admissible nuisance geometry after the actual observation/compression**. AF-528 supplies one exact shape variable in a narrow co-tuned family; AF-533--AF-534 identify precision/Cameron--Martin transversality and closure; AF-535 shows that transversality can still be lost either by erasing the efficient score or by projecting its retained image back into the downstream nuisance closure. What remains is a source theorem connecting the arithmetic observable to a carrier with enough downstream efficient information on the observation window actually available. Algebraic non-membership in the raw nuisance span, exact recoverability at infinite precision, raw sample count, unprojected carrier energy, and an artificial score-adjoining lift are all insufficient by themselves.
 
 ## Classify quotient-visible contact through admission and no-contact accessibility rates
 
