@@ -200,8 +200,8 @@ E_r(K)
 This is elementary. Since
 
 \[
-\frac{1-\cos(2\theta)}{4\sin^2\theta}
-=\frac12\frac{\sin^2(K\theta)}{\sin^2\theta}
+\frac{1-\cos(2K\theta)}{4\sin^2\theta}
+=\frac12\frac{\sin^2(K\theta)}{\sin^2\theta},
 \]
 
 when `theta=pi a/r`, equation (12) is equivalent to
