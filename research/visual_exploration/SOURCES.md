@@ -140,3 +140,10 @@ This file records durable external literature dependencies used to support or de
 - J. Aitchison, **The Statistical Analysis of Compositional Data**, *Journal of the Royal Statistical Society: Series B (Methodological)* 44:2 (1982), 139–160. DOI: `10.1111/j.2517-6161.1982.tb01195.x`. Role: foundational simplex/compositional-data prior art for `VIS-400`; establishes the simplex as the natural sample space for proportions and develops non-Dirichlet dependence models. `VIS-400` does not claim a new general theory of distributions on the simplex.
 
 - William S. Rayens and Cidambi Srinivasan, **Dependence Properties of Generalized Liouville Distributions on the Simplex**, *Journal of the American Statistical Association* 89:428 (1994), 1465–1470. DOI: `10.1080/01621459.1994.10476885`. Role: direct prior-art boundary for rich non-Dirichlet dependence structures on the simplex, including a family containing the Dirichlet class. `VIS-400` uses only an elementary positive-vector radial change of variables and finite mixture to delimit a Wang nuisance mechanism; it does not claim a new Liouville-distribution result.
+
+
+## Bernstein approximation and buffered target smoothing
+
+- G. G. Lorentz, **Bernstein Polynomials**, 2nd ed., Chelsea Publishing Company (1986), ISBN `0-8284-0323-6`. Role: classical monograph background for Bernstein polynomial approximation used in `VIS-431`; no general approximation-theory novelty is claimed.
+
+- Tiangang Cui and Friedrich Pillichshammer, **Bernstein approximation and beyond: Proofs by means of elementary probability theory**, *Elemente der Mathematik* 81:1 (2026), 1–7. DOI: `10.4171/EM/548`; arXiv `2307.11533`. Role: modern prior-art anchor for the probabilistic representation of Bernstein polynomials and quantitative error bounds for Lipschitz functions used in `VIS-431`. The Mathia finding derives only the buffered hard-target/finite-Laurent-depth specialization and claims no new Bernstein approximation theorem.
