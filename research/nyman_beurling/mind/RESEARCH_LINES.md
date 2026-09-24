@@ -12,7 +12,7 @@ NB-306 identifies the exact unit singular core of the projected integer-dilation
 
 The unresolved operator transition lies in the genuinely intermediate window `N<<m<=O(N^2)`: determine whether coherent centered shell modes survive there or whether the rank-one mixing picture can be pushed down to that scale. That source-side theorem is still not the destination theorem. Any useful singular direction must also be occupied by the actual moving first-free datum after the sampling/null decomposition, lower-section conditioning and off-critical contraction. Operator norm or support mass alone does not imply a Nyman target gain.
 
-## Quantify the weighted mixing transition directly; the exact even-divisor skeleton carries logarithmic resonance from linear to subquadratic scales
+## Quantify the weighted mixing transition directly; the full exact-divisor skeleton carries logarithmic resonance from linear to subquadratic scales
 
 NB-316--NB-318 isolate the multiplicative loss in the centered reciprocal-shell primitive estimate. The centered Cesaro shell factor has sharp `Theta(N^(3/2))` norm growth, and bounded linear reciprocal time admits an `O_C(N^2)` physical Hilbert evaluation bound even though the top-index adjacent witness reaches its largest primitive excursion only at quadratic time.
 
@@ -22,12 +22,14 @@ NB-320--NB-322 then move to the actual signed `1/t^2` pairing. The weight suppre
 
 NB-323 reaches the opposite endpoint `q=n`, equivalently the linear dilation `m=n-1`, and again finds a Hilbert-normalized `Theta(1/sqrt(log n))` residue from an exact alternating-harmonic pulse calculation. This already shows that the `O(q^2/n^2)` remainder used in NB-322 cannot define an intrinsic transition near `q~sqrt n`.
 
-NB-324 closes the intervening denominator-size gap on a large exact arithmetic skeleton. If `q>=2` is an even divisor of `n` and `m=n(n-1)/q`, the canonical matrix coefficient has the exact form
+NB-324 closes the intervening denominator-size gap for every growing **even** divisor `q|n`: if `m=n(n-1)/q`, the canonical matrix coefficient is `(H_q-H_(q/2))/(4n)+O(1/(nq))`, so `nE_(n,q)->(log 2)/4` with no restriction on the relative size of `q` and `n`.
 
-`E_(n,q)=(H_q-H_(q/2))/(4n)+T_(n,q)`, `|T_(n,q)|<1/(nq)`.
+NB-325 removes the remaining parity escape. For an odd divisor `q|n`, the selector no longer closes after one `n`-period, but it flips to its complement; over `2n` the product has exact zero mean. This gives
 
-Hence for **every** sequence of growing even divisors `q_n|n`, with no restriction on its size relative to `n`, one has `n E_(n,q_n)->(log 2)/4`, and the rank-one-subtracted operator retains a `1/sqrt(log n)` lower bound. On power-of-two subsequences this produces such resonances at every fixed power scale `m=n^(alpha+o(1))`, `1<=alpha<2`. The earlier intermediate-denominator uncertainty was therefore a remainder artifact on the exact even-divisor family, not a genuine denominator-size transition.
+`E_(n,q)=(H_(q-1)-H_((q-1)/2))/(4n)+O(1/(nq))`.
 
-The live source question is now concentrated on **arithmetic geometry outside that skeleton**, not on the size of an even exact denominator. Determine what happens for odd denominators, nondivisors and near-rational ratios, and whether any cancellation there can support a uniform mixing theorem that still accommodates the exact even-divisor resonances. A useful upper theorem cannot interpolate monotonically from the old small-`q` remainder or divide the range into small/intermediate/maximal denominators; it must exploit arithmetic unavailable on the divisor pulse train, cancellation unavailable to the adjacent witness, or another genuinely target-aware mechanism.
+Hence for **every** sequence of growing divisors `q_n|n`, regardless of parity or relative size, `nE_(n,q_n)->(log 2)/4` and the rank-one-subtracted operator retains a `1/sqrt(log n)` lower bound. Power-of-three subsequences show that purely odd denominators already realize every fixed power scale `m=n^(alpha+o(1))`, `1<=alpha<2`. The denominator-size and parity distinctions are therefore both artifacts on the exact divisor pulse train.
 
-Even a complete source-side classification would remain separate from target occupation. The NB-324 obstruction is a specific rank-one-subtracted matrix coefficient; it does not show that the moving first-free Ford datum occupies that direction, give a finite-section excess, improve a Nyman approximation rate, or imply RH. Any destination claim must still pass the sampling/null decomposition, lower-section conditioning and off-critical contraction with the actual target source.
+The live source question is now concentrated on **arithmetic geometry outside the exact divisor skeleton**. Determine what happens for nondivisors and near-rational ratios, where selector boundaries drift relative to the adjacent pulse train, and whether that drift can create enough cancellation for a uniform mixing theorem while still accommodating the exact-divisor resonances. A useful upper theorem cannot discriminate by denominator size or parity; it must exploit genuinely nondivisor arithmetic, cancellation unavailable to the adjacent witness, or another target-aware mechanism.
+
+Even a complete source-side classification would remain separate from target occupation. The NB-324--NB-325 obstruction is a specific rank-one-subtracted matrix coefficient; it does not show that the moving first-free Ford datum occupies that direction, give a finite-section excess, improve a Nyman approximation rate, or imply RH. Any destination claim must still pass the sampling/null decomposition, lower-section conditioning and off-critical contraction with the actual target source.
