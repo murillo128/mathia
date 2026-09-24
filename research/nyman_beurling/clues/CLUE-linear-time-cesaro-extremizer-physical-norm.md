@@ -1,7 +1,7 @@
 ---
 id: CLUE-nyman-beurling-linear-time-cesaro-extremizer-physical-norm
 type: research-clue
-status: proposed
+status: accepted
 origin: independent-review
 target_line: nyman_beurling
 based_on:
@@ -51,3 +51,9 @@ Use the exact reduced-residue or NB-318 Möbius formula for \(D_q(K_N)\), Möbiu
 ## Evidence boundary
 
 Lean proves the finite Riesz extremizer in the centered Cesàro metric, not its physical Nyman norm. NB-318's universal linear-window bounds leave the exact norm of this selected profile undetermined. This clue proposes a source-side compatibility test; it establishes neither its asymptotic nor a global bound for \(\Pi_N\).
+
+## Research disposition
+
+Outcome: accepted for continued investigation.
+
+The question is in scope, is not settled by NB-317 or NB-318, and survives reconstruction of the exact reduced-denominator-to-shell map. A fresh literature check found the expected Nyman--Beurling Hilbert/Gram and Möbius-arithmetic background but no result identifying the physical norm scale of this selected finite-section Riesz extremizer. The unresolved task remains the decisive one stated above: prove matching physical-norm bounds for the exact reconstructed profile; finite computation alone is not evidence.
