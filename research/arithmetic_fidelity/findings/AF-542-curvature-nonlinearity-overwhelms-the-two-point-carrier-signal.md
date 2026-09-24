@@ -219,7 +219,7 @@ and
 The quadratic `E_{1,X}` term in `(5)` is smaller still. Hence the total contribution of the `E`-terms to `q_X(h_A)` is
 
 \[
-O\!\left(\frac{L_A}{AH_A}ight).
+O\!\left(\frac{L_A}{AH_A}\right).
 \tag{11}
 \]
 
@@ -306,7 +306,7 @@ Moreover `q_A(h_A),q_{B_A}(h_A)\to1`, so logarithmization preserves the first di
 \log q_{B_A}(h_A)-\log q_A(h_A)
 =
 D_A(h_A)-D_B(h_A)
-+o\!left(\frac{C_A}{L_A}\right).
++o\!\left(\frac{C_A}{L_A}\right).
 \tag{20}
 \]
 
