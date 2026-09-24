@@ -12,7 +12,7 @@ NB-306 identifies the exact unit singular core of the projected integer-dilation
 
 The unresolved operator transition lies in the genuinely intermediate window `N<<m<=O(N^2)`: determine whether coherent centered shell modes survive there or whether the rank-one mixing picture can be pushed down to that scale. That source-side theorem is still not the destination theorem. Any useful singular direction must also be occupied by the actual moving first-free datum after the sampling/null decomposition, lower-section conditioning and off-critical contraction. Operator norm or support mass alone does not imply a Nyman target gain.
 
-## Quantify the weighted mixing transition directly; rational quadratic resonances exclude polynomial rates
+## Quantify the weighted mixing transition directly; growing rational denominators carry logarithmic resonances down to every exponent above `3/2`
 
 NB-316--NB-318 isolate the multiplicative loss in the centered reciprocal-shell primitive estimate. The centered Cesaro shell factor has sharp `Theta(N^(3/2))` norm growth, and bounded linear reciprocal time admits an `O_C(N^2)` physical Hilbert evaluation bound even though the top-index adjacent witness reaches its largest primitive excursion only at quadratic time.
 
@@ -28,10 +28,18 @@ NB-320 shows that the actual signed `1/t^2`-weighted bilinear pairing behaves mu
 
 and resonant half-period dilation `m=n(n-1)/2`, one has a Hilbert-normalized rank-one error of order `1/sqrt(log n)`. The weight suppresses the primitive obstruction by a full quadratic factor, confirming that primitive-sup control was genuinely wasteful, but the surviving resonance forbids any uniform `O(n^(-delta))` rank-one error rate for fixed `delta>0` along these dilations.
 
-NB-321 shows that the half-period point is not isolated. Writing `P_n=n(n-1)`, every fixed rational quadratic scale `m=P_n/q` admits a finite rational-period boundary reduction in terms of centered-primitive samples on the `q`-grid of one adjacent period. At `q=4`, the boundary term is explicitly nonzero on two congruence classes, with opposite signs but magnitude `Theta(1/n)`, and after normalization again gives
+NB-321 shows that the half-period point is not isolated. Writing `P_n=n(n-1)`, every fixed rational quadratic scale `m=P_n/q` admits a finite rational-period boundary reduction in terms of centered-primitive samples on the `q`-grid of one adjacent period. The `q=4` calculation gives another explicit `1/sqrt(log n)` obstruction, but NB-321 by itself leaves open cancellation for other fixed denominators and does not control the remainder uniformly when `q` grows.
 
-`||sqrt(m)T_(n,m)-R_n|| >> 1/sqrt(log n)`
+NB-322 removes both limitations on the two canonical congruence subsequences `q|n` or `q|(n-1)`. The first boundary term collapses to the alternating residue coefficient
 
-along `m=n(n-1)/4`. Thus logarithmic weighted resonances occur at the distinct macroscopic ratios `m/n^2 -> 1/2` and `1/4`, and the mechanism is a general rational-period folding reduction rather than a special half-period accident. NB-321 does **not** show that every fixed `q` produces a nonzero resonance of this size; cancellation among the finitely many boundary samples can still occur.
+`C_q=sum_(k>=1) (-1)^k phi_q(k)/k^2`, `phi_q(k)=r(q-r)`, `r=k mod q`,
 
-The live source question is therefore to **classify the weighted bilinear mixing error across `N<<m<=O(N^2)` at the correct subpower scale, including the arithmetic of rational and near-rational quadratic ratios**. For fixed `q`, determine which boundary combinations vanish and which retain logarithmic-size resonances; beyond exact rational folding, determine whether near-rational or genuinely irrational scales obey stronger cancellation. Any useful upper theorem must exploit the actual `1/t^2` weight, reciprocal-shell phase cancellation, square-function/frequency structure or reduced-denominator arithmetic while accommodating the explicit `q=2` and `q=4` obstructions. It remains open whether the whole quadratic corridor admits a uniform logarithmic/subpower rank-one mixing law and where the transition to the far-external NB-315 regime occurs. Even a sharp source-side mixing theorem remains separate from target occupation, first-free gain and the final Nyman/RH destination.
+and `C_q<0` for every `q>=2`, with the uniform lower bound `|C_q|>=q/10`. The exact folding remainder is bounded by `O(q^2/n^2)`. Consequently, whenever `q=q_n=o(sqrt(n))` divides `n` or `n-1`, the adjacent witness still forces
+
+`||sqrt(m_(n,q))T_(n,m_(n,q))-R_n|| >> 1/sqrt(log n)`,
+
+with `m_(n,q)=n(n-1)/q`. Thus exact rational folding supplies logarithmic rank-one-error obstructions at explicit scales `m=n^(alpha+o(1))` for every fixed `3/2<alpha<=2`. These are absolute source-side operator errors tending to zero, not order-one channels and not target-occupation statements.
+
+The live source question is now narrower. Fixed denominators are no longer candidates for a cancellation escape on the canonical congruence subsequences, and the rational skeleton is not confined to `m asymp n^2`. The next discriminator is the actual `q`-dependence of the second-order folding error near and beyond `q asymp sqrt(n)`: determine whether cancellation improves the current `O(q^2/n^2)` bound enough to continue the logarithmic resonance toward the linear regime, or whether `q asymp sqrt(n)` marks a genuine `m asymp n^(3/2)` transition for this adjacent channel. Near-rational ratios not satisfying the exact divisibility geometry and genuinely irrational ratios remain separate questions.
+
+Any useful upper theorem across `N<<m<=O(N^2)` must therefore accommodate explicit logarithmic resonances throughout `n^(3/2+epsilon)` to quadratic scales, while exploiting the actual `1/t^2` weight, reciprocal-shell phase cancellation, square-function/frequency structure or denominator arithmetic in the remaining regime. Even a sharp source-side mixing theorem remains separate from target occupation, first-free gain and the final Nyman/RH destination.

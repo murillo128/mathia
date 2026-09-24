@@ -8,7 +8,7 @@ MC-423--MC-445 separate source diversity, representation fidelity, Möbius top-i
 
 The surviving resources are qualitatively different: growing rank, another justified source measure, absolute scale, discontinuous arithmetic data, cross-rank structure, or coordinates that retain enough factor identity to survive the Möbius projection. Any such carrier still has to produce an analytic cancellation estimate after the exact top-interaction quotient.
 
-## Can the endpoint-only first-exit route pass its source-height, population and effective-support gates?
+## Can the endpoint-only first-exit route pass its source-location, source-width, population and effective-support gates?
 
 MC-484--MC-492 isolate the exact first-exit geometry and close a large family of coefficient-blind Hilbert-space escapes. After affine normalization the visible inverse shift is gauge; the least-active-prime cells are disjoint; common transforms preserve that orthogonality; rowwise dilation leaves the conductor-scale diagonal; sublinear completed families are Riesz-stable; and native same-root repeated-residue coefficients make the remaining positive cross terms constructive. A useful gain must therefore enter through source-dependent inner arithmetic before positive closure, not through a free scalar row weight or a hidden Gram eigenvector.
 
@@ -28,13 +28,13 @@ MC-499 adds a cheaper per-block admission gate before those reconstruction detai
 
 `R_start <= 2(1+Q/p)`,
 
-and separately `kappa_+/D_+, kappa_-/D_- <= 1+Q/p`. With the corrected MC-497 second moment, the relevant tariff is now
+and separately `kappa_+/D_+, kappa_-/D_- <= 1+Q/p`. With the corrected MC-497 second moment, the relevant tariff is
 
 `T_(p,H)=(p/H) log^2(2H)`.
 
 The current dispersion certificate cannot deliver a fixed saving unless `1+Q/p` is larger than this tariff up to the required constants.
 
-MC-500 shows that increasing `Q` cannot evade this source-scarcity obstruction. On a dyadic block the endpoint image satisfies
+MC-500 shows that increasing `Q` cannot evade source scarcity through the physical **location** coordinate. On a dyadic block the endpoint image satisfies
 
 `#{ceil(Z/q)} <= min(1+Q/p, 2+Z/(2Q))`,
 
@@ -46,12 +46,30 @@ Consequently the corrected exceptional-start certificate can succeed at some dya
 
 `T_(p,H) <<_delta 4+sqrt(2Z_*/p)`.
 
-In the nonconstant-tariff regime this forces the single source-height scale
+In the nonconstant-tariff regime this forces the source-location scale
 
 `Z_* >>_delta p^3 H^(-2) log^4(2H)`.
 
-The previously displayed extra `p^2 log^2(2H)` requirement came from the spurious square-root term in the older tariff and is not an independent gate. Near the MC-496 square-root boundary comparable scales can still arise from the surviving `p/H` term, but they must be derived from that corrected tariff rather than added separately.
+The previously displayed extra `p^2 log^2(2H)` requirement came from the spurious square-root term in the older tariff and is not an independent **location** gate.
 
-The endpoint audit is therefore genuinely three-stage. First apply the Q-free source-height gate from MC-500; if it fails, no dyadic first-exit scale can make the current exceptional-start second moment succeed, so detailed reconstruction weights are irrelevant. If it passes, apply the MC-499 repeated-residue population gate to each material dyadic block. Only blocks passing both admission tests make the MC-498 participation/fibre computation diagnostic. There, failure can genuinely reflect reconstruction-weight concentration, quotient folding or winning-side imbalance; success closes endpoint-only bias after the remaining block tariffs are charged.
+MC-501 identifies a distinct Q-free obstruction from the physical **source width**. If the original interval has integer length `Y`, every first-exit row with `q,r in [Q,2Q]` has overlap length at most `1+Y/Q`. A nonempty dyadic overlap band `H/2<=L_(q,r)<=H`, `2<H<=p`, therefore forces
 
-If the Q-free gate fails throughout the physical source regime, or all material blocks that pass it still fail MC-499, further refinement of the same MC-497/MC-498 exceptional-start certificate cannot settle the endpoint branch. A stronger incomplete-character-sum input, a different norm, or another surviving arithmetic channel is required. Collective cross-root interference, internal lower-prime pair-sieve variation and genuinely `q`-dependent pre-aggregation signs/phases remain logically distinct possibilities. Any such route must still exhibit a source-forced arithmetic law before scalarization rather than another coefficient-blind multiplicity or support effect.
+`Q <= 2Y/(H-2)`.
+
+Combining this exact row-shortening constraint with the MC-499 repeated-residue support ceiling removes `Q` again and gives
+
+`R_start <= 2 + 4Y/[p(H-2)]`.
+
+Thus a fixed-saving use of the current MC-498 certificate requires
+
+`T_(p,H) <<_delta 2 + 4Y/[p(H-2)]`,
+
+and throughout material bands `4<=H<=p` this implies the independent source-width feasibility condition
+
+`Y >>_delta p^2 log^2(2H)`.
+
+This is not the discarded extra term from MC-500: `Z_*` measures where the physical source lies, whereas `Y` measures how much pre-dilation interval width is available to sustain an overlap of length `H`. A source can pass one Q-free gate and fail the other.
+
+The endpoint audit is therefore four-stage. First apply the MC-500 Q-free source-location gate and the MC-501 Q-free source-width gate; failure of either closes the present quadratic exceptional-start certificate for every dyadic first-exit scale in that regime. Only after both pass should one apply the MC-499 repeated-residue population gate to each material dyadic block. Blocks passing all three admission tests reach the MC-498 participation/fibre computation, where failure can genuinely reflect reconstruction-weight concentration, quotient folding or winning-side imbalance; success closes endpoint-only bias after the remaining block tariffs are charged.
+
+If either Q-free gate fails throughout the physical source regime, or all material blocks that pass them still fail MC-499, further refinement of the same MC-497/MC-498 exceptional-start certificate cannot settle the endpoint branch. A stronger incomplete-character-sum input, a different norm, or another surviving arithmetic channel is required. Collective cross-root interference, internal lower-prime pair-sieve variation and genuinely `q`-dependent pre-aggregation signs/phases remain logically distinct possibilities. Any such route must still exhibit a source-forced arithmetic law before scalarization rather than another coefficient-blind multiplicity or support effect.
