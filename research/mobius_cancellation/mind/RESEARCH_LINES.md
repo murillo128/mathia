@@ -12,7 +12,13 @@ The surviving resources are qualitatively different: growing rank, another justi
 
 MC-484--MC-492 isolate the exact first-exit geometry and close a large family of coefficient-blind Hilbert-space escapes. After affine normalization the visible inverse shift is gauge; the least-active-prime cells are disjoint; common transforms preserve that orthogonality; rowwise dilation leaves the conductor-scale diagonal; sublinear completed families are Riesz-stable; and native same-root repeated-residue coefficients make the remaining positive cross terms constructive. A useful gain must therefore enter through source-dependent inner arithmetic before positive closure, not through a free scalar row weight or a hidden Gram eigenvector.
 
-MC-497 gives the exact short-overlap restriction for the quadratic repeated-residue phase in the **physical additive source coordinate**. Starts with normalized bias at least a fixed level occupy only `O(1/H+1/sqrt(p))` of the conductor classes. MC-498 converts that exceptional-set statement into the quantity carried by the actual source weights: for induced start weights `w`, the effective participation
+MC-497 gives the exact short-overlap restriction for the quadratic repeated-residue phase in the **physical additive source coordinate**. For the centered length-`H` short character sum `S_(c,x)(H)`, Fourier--Weil diagonalization gives the mean-square bound
+
+`sum_(x mod p) |S_(c,x)(H)|^2 << pH`
+
+uniformly in the nonzero quadratic phase. Hence starts with normalized bias at least a fixed level occupy only `O(1/H)` of the conductor classes. The earlier residual `p^(-1/2)` exceptional-density floor is not present in this averaged start-coordinate statement. This is an average-over-start theorem, not a uniform short character-sum bound.
+
+MC-498 converts that exceptional-set statement into the quantity carried by the actual source weights: for induced start weights `w`, the effective participation
 
 `R_start=||w||_1^2/||w||_2^2`
 
@@ -22,11 +28,11 @@ MC-499 adds a cheaper per-block admission gate before those reconstruction detai
 
 `R_start <= 2(1+Q/p)`,
 
-and separately `kappa_+/D_+, kappa_-/D_- <= 1+Q/p`. If
+and separately `kappa_+/D_+, kappa_-/D_- <= 1+Q/p`. With the corrected MC-497 second moment, the relevant tariff is now
 
-`T_(p,H)=p/H log^2(2H)+sqrt(p) log(2H)`
+`T_(p,H)=(p/H) log^2(2H)`.
 
-is the MC-498 second-moment tariff, then the current dispersion certificate cannot deliver a fixed saving unless `1+Q/p` itself is larger than `T_(p,H)` up to the required constants.
+The current dispersion certificate cannot deliver a fixed saving unless `1+Q/p` is larger than this tariff up to the required constants.
 
 MC-500 shows that increasing `Q` cannot evade this source-scarcity obstruction. On a dyadic block the endpoint image satisfies
 
@@ -36,11 +42,15 @@ so label growth `Q/p` and reciprocal-quotient compression `Z/Q` compensate. With
 
 `R_start <= 4+sqrt(2Z_*/p)`.
 
-Consequently the current endpoint-dispersion certificate can succeed at some dyadic scale only if
+Consequently the corrected exceptional-start certificate can succeed at some dyadic scale only if
 
-`T_(p,H) <<_delta 4+sqrt(2Z_*/p)`,
+`T_(p,H) <<_delta 4+sqrt(2Z_*/p)`.
 
-which, once the tariff is nonconstant, forces `Z_* >>_delta p T_(p,H)^2`. In particular the two terms in `T_(p,H)` yield the necessary source-height scales `Z_* >> p^2 log^2(2H)` and `Z_* >> p^3 H^(-2) log^4(2H)`. This remains a ceiling on the certificate, not evidence that the true endpoint bias is large.
+In the nonconstant-tariff regime this forces the single source-height scale
+
+`Z_* >>_delta p^3 H^(-2) log^4(2H)`.
+
+The previously displayed extra `p^2 log^2(2H)` requirement came from the spurious square-root term in the older tariff and is not an independent gate. Near the MC-496 square-root boundary comparable scales can still arise from the surviving `p/H` term, but they must be derived from that corrected tariff rather than added separately.
 
 The endpoint audit is therefore genuinely three-stage. First apply the Q-free source-height gate from MC-500; if it fails, no dyadic first-exit scale can make the current exceptional-start second moment succeed, so detailed reconstruction weights are irrelevant. If it passes, apply the MC-499 repeated-residue population gate to each material dyadic block. Only blocks passing both admission tests make the MC-498 participation/fibre computation diagnostic. There, failure can genuinely reflect reconstruction-weight concentration, quotient folding or winning-side imbalance; success closes endpoint-only bias after the remaining block tariffs are charged.
 
