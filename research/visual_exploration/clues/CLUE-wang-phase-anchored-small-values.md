@@ -16,6 +16,7 @@ based_on:
   - research/visual_exploration/findings/VIS-424-normalized-wang-amplitude-moment-tariff.md
   - research/visual_exploration/findings/VIS-425-fixed-radius-wang-persistence-moment-tariff.md
   - research/visual_exploration/findings/VIS-427-growing-window-path-average-no-radius-tariff.md
+  - research/visual_exploration/findings/VIS-428-fixed-shell-growing-supremum-uniform-saturation.md
 ---
 
 # Does an independently justified arithmetic height selector align with Wang quiet regions beyond each shell's own translation orbit?
@@ -34,29 +35,37 @@ For ordinary Gram points, the escape route has narrowed repeatedly. `VIS-422` pr
 
 Thus fixed-radius local suprema are not an independent nonlinear escape once the strengthened mixed-moment tariffs and Haar boundary-mass condition pass.
 
-`VIS-427` now closes a different growing-path loophole. For every fixed power `q`, the normalized path average
+`VIS-427` closes a different growing-path loophole. For every fixed power `q`, the normalized path average
 
 `J_(N,q)=(1/(2rho_N)) int_(-rho_N)^(rho_N) X_(N,u)^q du`
 
 pays **no additional radius tariff**, even when `rho_N -> infinity`: Fubini expands each fixed moment into the same shifted Laurent characters, while the offset-box volume cancels against the path-length normalization. Therefore merely increasing the observation radius cannot create a Gram/Haar anomaly for normalized fixed-power path averages when the existing Wiener/frequency/small-divisor tariffs pass.
 
-A surviving Gram-point anomaly must now expose a quantified tariff failure, nonuniform Haar concentration, a selector with a genuinely non-Haar finite-prime phase law, or **localized path concentration invisible to normalized averages**. Growing radius by itself is no longer an escape.
+`VIS-428` now sharpens the remaining growing-window **supremum** route. For every fixed nonzero shell and every fixed threshold `t<1`, the exact superlevel set `{A_N>t}` is a nonempty open set in the shell's prime torus. Minimality of the prime-log Kronecker flow plus compactness gives a finite shell-specific cover radius `R_N(t)` such that every initial phase hits `{A_N>t}` within `|u|<=R_N(t)`. Hence
+
+`Q_(N,rho)(z)>t`
+
+for every phase `z` once `rho>=R_N(t)`, and fixed-shell path suprema converge uniformly to one as the window grows.
+
+So `rho_N->infinity` by itself is not a residual mechanism for suprema either. A nontrivial changing-shell effect must live **before universal saturation** and is exactly a hitting-time / shrinking-target problem: the prescribed radius `rho_N` must compete with the shell-dependent cover scale `R_N(t)` (or the threshold itself must approach one).
+
+A surviving Gram-point anomaly must now expose a quantified tariff failure, nonuniform Haar concentration, a selector with a genuinely non-Haar finite-prime phase law, or an atypical pre-saturation hitting-time profile for the changing Wang shells. Unqualified growing radius is no longer an escape.
 
 ## Research question
 
-Fix, before inspecting shell values, a deterministic arithmetic height selector `S={T_j}` with explicit provenance and a pre-specified rule transporting the Wang shell family across those heights. Do the selected heights exhibit unusually small normalized amplitudes or unusually persistent quiet regions relative to each corresponding shell's exact translation/Haar self-null, after bandwidth normalization and without scanning the selector, shell scale, shift, persistence radius, moment order, or statistic to favor the observed values?
+Fix, before inspecting shell values, a deterministic arithmetic height selector `S={T_j}` with explicit provenance and a pre-specified rule transporting the Wang shell family across those heights. Do the selected heights exhibit unusually small normalized amplitudes or unusually persistent quiet regions relative to each corresponding shell's exact translation/Haar self-null, after bandwidth normalization and without scanning the selector, shell scale, shift, persistence radius, moment order, threshold, or statistic to favor the observed values?
 
-For ordinary Gram points and strict near-band Wang shells, do the **actual transported source coefficients** violate the combined `VIS-424`/`VIS-425`/`VIS-427` sufficient null through excessive normalized Wiener mass, unexpectedly small fixed-order product-ratio divisors, nonuniform Haar concentration, or concentration of high amplitude into a vanishing relative subset of a growing path window? If not, pointwise amplitude, fixed-radius persistence, and normalized fixed-power path averages are all forced to their own Haar self-nulls under the corresponding gates.
+For ordinary Gram points and strict near-band Wang shells, do the **actual transported source coefficients** violate the combined `VIS-424`/`VIS-425`/`VIS-427` sufficient null through excessive normalized Wiener mass, unexpectedly small fixed-order product-ratio divisors, or nonuniform Haar concentration? If a growing-window supremum remains the intended diagnostic, does the selected phase have an atypically long hitting time into the shell superlevel target before the universal saturation radius `R_N(t)` exposed by `VIS-428`?
 
 ## Why it may matter
 
-The control hierarchy now preserves essentially all fixed-shell arithmetic character structure while removing generic explanations one by one. Deterministic selector sparsity is insufficient (`VIS-422`); growing dimension alone is insufficient below the character tariff (`VIS-423`); scalar modulus is insufficient below the moment tariff (`VIS-424`); a fixed local supremum is insufficient when uniform bandwidth and mixed-moment tariffs hold (`VIS-425`); and a normalized fixed-power path average cannot escape merely by widening its observation window (`VIS-427`).
+The control hierarchy now preserves essentially all fixed-shell arithmetic character structure while removing generic explanations one by one. Deterministic selector sparsity is insufficient (`VIS-422`); growing dimension alone is insufficient below the character tariff (`VIS-423`); scalar modulus is insufficient below the moment tariff (`VIS-424`); a fixed local supremum is insufficient when uniform bandwidth and mixed-moment tariffs hold (`VIS-425`); a normalized fixed-power path average cannot escape merely by widening its observation window (`VIS-427`); and a fixed shell's growing-window supremum eventually saturates for every phase (`VIS-428`).
 
-A positive residual would therefore have to identify a concrete source resource rather than hide behind generic nonlinearity, finite-window beating, path dependence, or growing path length. A negative result is equally useful because it closes the current Gram selector branch at the level of the actual Wang transport rather than by simulation.
+A positive residual would therefore have to identify a concrete source resource rather than hide behind generic nonlinearity, finite-window beating, path dependence, or radius growth. For a supremum, the source-sensitive object is now the pre-saturation hitting-time tail, not the existence of a large window. A negative result is equally useful because it can close the current Gram selector branch at the level of the actual Wang transport rather than by simulation.
 
 ## Decisive test
 
-Before numerical evaluation, freeze the selector provenance, the shell-family transport rule, the Wang parameters, bandwidth normalization, amplitude/persistence statistic, persistence-radius law, panel aggregation, moment orders used by any path-average statistic, and numerical approximation rule.
+Before numerical evaluation, freeze the selector provenance, the shell-family transport rule, the Wang parameters, bandwidth normalization, amplitude/persistence statistic, persistence-radius law, threshold law, panel aggregation, moment orders used by any path-average statistic, and numerical approximation rule.
 
 For an ordinary-Gram strict near-band shell
 
@@ -84,20 +93,34 @@ for every fixed `R`, or replace the elementary divisor floor by a sharper proved
 
 For any normalized growing-window path average of a **fixed** power, do not add a radius penalty: `VIS-427` shows that the same fixed-order character tariff controls its moments for arbitrary `rho_N`. Treat an observed dependence on growing radius in such an averaged statistic as a reason to audit normalization, coefficient transport, moment order, or tariff failure rather than as a new mechanism by itself.
 
-Only a quantified failure of these gates should remain live. A failed sufficient bound is **not** evidence of an anomaly: identify which resource causes the failure and test whether it is specific to the Wang source rather than a generic property of comparable finite character polynomials. If the intended diagnostic is a growing-window **supremum** or another functional sensitive to concentration on a vanishing relative subset, formulate that localization explicitly; `VIS-427` does not reduce such a statistic to fixed-power normalized averages. Likewise, allowing the moment order itself to grow with `N` lies outside the fixed-order closure and needs a separate argument.
+For a growing-window **supremum**, fix a threshold `t<1` and use the exact hitting variable
+
+`H_(N,t)(z)=inf{|u| : A_N(z tau_N(u))>t}`.
+
+`VIS-428` gives
+
+`Q_(N,rho)(z)<=t  iff  H_(N,t)(z)>rho`
+
+and a finite fixed-shell cover radius
+
+`R_N(t)=sup_z H_(N,t)(z)`.
+
+Therefore first determine whether the chosen `rho_N` is already at or beyond the universal saturation scale. If `rho_N>=R_N(t)` eventually, the low-supremum event is empty for every phase and the test is dead. If not, compare the source-selected hitting times with the exact Haar tail `m_H{H_(N,t)>rho_N}` and identify what controls the changing-shell cover/hitting scale. A threshold `t_N->1` is admissible only when its shrinking-target law is frozen in advance and audited separately.
+
+Only a quantified failure of these gates should remain live. A failed sufficient bound is **not** evidence of an anomaly: identify which resource causes the failure and test whether it is specific to the Wang source rather than a generic property of comparable finite character polynomials. Likewise, a large `R_N(t)` is not itself a source anomaly; it is a property of the shell flow/target shared by every starting phase.
 
 For a different external selector, first audit whether its finite prime-phase vectors or the relevant changing observables are already forced to the same Haar null. Independent randomization of ratio-mode phases is not an admissible substitute for the base-prime Haar control.
 
-Kill the direction if no non-arbitrary selector with defensible provenance can be frozen, if the relevant selector is already Haar in the tested regime and the combined amplitude/persistence/path-average tariffs pass, if the selected heights are typical under their exact self-nulls, or if an apparent effect disappears under the pre-registered transport/scaling rules or can be recreated by post-selection.
+Kill the direction if no non-arbitrary selector with defensible provenance can be frozen, if the relevant selector is already Haar in the tested regime and the combined amplitude/persistence/path-average tariffs pass, if a growing-window supremum is already beyond its shell cover radius, if the selected phases are typical under the exact pre-saturation hitting-time self-null, or if an apparent effect disappears under the pre-registered transport/scaling rules or can be recreated by post-selection.
 
 ## Evidence boundary
 
-`VIS-419` proves fixed-shell Haar calibration; `VIS-420` gives finite-window small-divisor costs; `VIS-421` separates Wang's generic source height from an external selector; `VIS-422` closes ordinary Gram points for fixed shells; `VIS-423` controls changing Laurent-polynomial observables; `VIS-424` reduces pointwise amplitude to scalar moments; `VIS-425` extends that reduction to fixed-radius persistence under a uniform frequency bound and stronger mixed-frequency divisor; and `VIS-427` shows that normalized fixed-power path averages acquire no additional growing-radius tariff.
+`VIS-419` proves fixed-shell Haar calibration; `VIS-420` gives finite-window small-divisor costs; `VIS-421` separates Wang's generic source height from an external selector; `VIS-422` closes ordinary Gram points for fixed shells; `VIS-423` controls changing Laurent-polynomial observables; `VIS-424` reduces pointwise amplitude to scalar moments; `VIS-425` extends that reduction to fixed-radius persistence under a uniform frequency bound and stronger mixed-frequency divisor; `VIS-427` shows that normalized fixed-power path averages acquire no additional growing-radius tariff; and `VIS-428` shows that every fixed shell's sub-maximal supremum threshold is eventually hit from every starting phase within a finite uniform radius.
 
-None of these findings proves that the actual transported Wang growing family satisfies the sufficient tariffs, proves uniform Haar anti-concentration at a chosen threshold, or establishes a source-sensitive anomaly when a tariff fails. `VIS-427` also does not control growing-window suprema, concentration supported on a vanishing relative path set, or moment orders that grow with `N`.
+None of these findings proves that the actual transported Wang growing family satisfies the sufficient tariffs, proves uniform Haar anti-concentration at a chosen threshold, or establishes a source-sensitive anomaly when a tariff fails. `VIS-428` gives no quantitative or uniform bound on `R_N(t)` as the shell changes, and it does not control a shrinking target `t_N->1` without additional work.
 
 No current result identifies a selector with an anomalous Wang-shell phase law, establishes a source-sensitive low-tail excess, produces an RH mechanism, or turns an external selector into part of Wang's theorem.
 
 ## Research disposition
 
-Accepted, further narrowed by `VIS-427`. **For ordinary Gram points, pointwise amplitude, fixed-radius persistence, and normalized fixed-power path averages now share the same basic character-tariff decision boundary; growing path length alone is not a residual resource.** Continue only with a quantified failure of those gates, a selector whose prime-phase law is not already driven to the same self-null, a genuinely localized/supremum path effect invisible to normalized averages, a growing-moment regime, or another destination observable not reduced by the current character machinery.
+Accepted, further narrowed by `VIS-428`. **For ordinary Gram points, pointwise amplitude, fixed-radius persistence, normalized fixed-power path averages, and fixed-shell large-radius suprema now have explicit self-null boundaries.** Continue only with a quantified failure of the character/moment gates, a selector whose prime-phase law is not already driven to the same self-null, a pre-saturation hitting-time anomaly for the actual changing Wang shells, a shrinking-target regime, a growing-moment regime, or another destination observable not reduced by the current character machinery.
