@@ -41,9 +41,9 @@ Thus fixed-radius local suprema are not an independent nonlinear escape once the
 
 pays **no additional radius tariff**, even when `rho_N -> infinity`: Fubini expands each fixed moment into the same shifted Laurent characters, while the offset-box volume cancels against the path-length normalization. Therefore merely increasing the observation radius cannot create a Gram/Haar anomaly for normalized fixed-power path averages when the existing Wiener/frequency/small-divisor tariffs pass.
 
-`VIS-428` now sharpens the remaining growing-window **supremum** route. For every fixed nonzero shell and every fixed threshold `t<1`, the exact superlevel set `{A_N>t}` is a nonempty open set in the shell's prime torus. Minimality of the prime-log Kronecker flow plus compactness gives a finite shell-specific cover radius `R_N(t)` such that every initial phase hits `{A_N>t}` within `|u|<=R_N(t)`. Hence
+`VIS-428` now sharpens the remaining growing-window **supremum** route. For every fixed nonzero shell and every fixed threshold `t<1`, the closed target `{A_N>=t}` contains the nonempty open set `{A_N>t}` in the shell's prime torus. Minimality of the prime-log Kronecker flow plus compactness gives a finite shell-specific cover radius `R_N(t)` such that every initial phase reaches `{A_N>=t}` within `|u|<=R_N(t)`. Hence
 
-`Q_(N,rho)(z)>t`
+`Q_(N,rho)(z)>=t`
 
 for every phase `z` once `rho>=R_N(t)`, and fixed-shell path suprema converge uniformly to one as the window grows.
 
@@ -93,19 +93,19 @@ for every fixed `R`, or replace the elementary divisor floor by a sharper proved
 
 For any normalized growing-window path average of a **fixed** power, do not add a radius penalty: `VIS-427` shows that the same fixed-order character tariff controls its moments for arbitrary `rho_N`. Treat an observed dependence on growing radius in such an averaged statistic as a reason to audit normalization, coefficient transport, moment order, or tariff failure rather than as a new mechanism by itself.
 
-For a growing-window **supremum**, fix a threshold `t<1` and use the exact hitting variable
+For a growing-window **supremum**, fix a threshold `t<1` and use the exact closed-target hitting variable
 
-`H_(N,t)(z)=inf{|u| : A_N(z tau_N(u))>t}`.
+`H_(N,t)(z)=inf{|u| : A_N(z tau_N(u))>=t}`.
 
 `VIS-428` gives
 
-`Q_(N,rho)(z)<=t  iff  H_(N,t)(z)>rho`
+`Q_(N,rho)(z)<t  iff  H_(N,t)(z)>rho`
 
 and a finite fixed-shell cover radius
 
 `R_N(t)=sup_z H_(N,t)(z)`.
 
-Therefore first determine whether the chosen `rho_N` is already at or beyond the universal saturation scale. If `rho_N>=R_N(t)` eventually, the low-supremum event is empty for every phase and the test is dead. If not, compare the source-selected hitting times with the exact Haar tail `m_H{H_(N,t)>rho_N}` and identify what controls the changing-shell cover/hitting scale. A threshold `t_N->1` is admissible only when its shrinking-target law is frozen in advance and audited separately.
+Therefore first determine whether the chosen `rho_N` is already at or beyond the universal saturation scale. If `rho_N>=R_N(t)` eventually, the strict low-supremum event is empty for every phase and the test is dead. If not, compare the source-selected hitting times with the exact Haar tail `m_H{H_(N,t)>rho_N}` and identify what controls the changing-shell cover/hitting scale. A non-strict threshold event can be handled with the usual `t±eta` sandwich when Haar boundary mass is controlled. A threshold `t_N->1` is admissible only when its shrinking-target law is frozen in advance and audited separately.
 
 Only a quantified failure of these gates should remain live. A failed sufficient bound is **not** evidence of an anomaly: identify which resource causes the failure and test whether it is specific to the Wang source rather than a generic property of comparable finite character polynomials. Likewise, a large `R_N(t)` is not itself a source anomaly; it is a property of the shell flow/target shared by every starting phase.
 
@@ -115,7 +115,7 @@ Kill the direction if no non-arbitrary selector with defensible provenance can b
 
 ## Evidence boundary
 
-`VIS-419` proves fixed-shell Haar calibration; `VIS-420` gives finite-window small-divisor costs; `VIS-421` separates Wang's generic source height from an external selector; `VIS-422` closes ordinary Gram points for fixed shells; `VIS-423` controls changing Laurent-polynomial observables; `VIS-424` reduces pointwise amplitude to scalar moments; `VIS-425` extends that reduction to fixed-radius persistence under a uniform frequency bound and stronger mixed-frequency divisor; `VIS-427` shows that normalized fixed-power path averages acquire no additional growing-radius tariff; and `VIS-428` shows that every fixed shell's sub-maximal supremum threshold is eventually hit from every starting phase within a finite uniform radius.
+`VIS-419` proves fixed-shell Haar calibration; `VIS-420` gives finite-window small-divisor costs; `VIS-421` separates Wang's generic source height from an external selector; `VIS-422` closes ordinary Gram points for fixed shells; `VIS-423` controls changing Laurent-polynomial observables; `VIS-424` reduces pointwise amplitude to scalar moments; `VIS-425` extends that reduction to fixed-radius persistence under a uniform frequency bound and stronger mixed-frequency divisor; `VIS-427` shows that normalized fixed-power path averages acquire no additional growing-radius tariff; and `VIS-428` shows that every fixed shell's fixed sub-maximal threshold is reached from every starting phase within a finite uniform radius.
 
 None of these findings proves that the actual transported Wang growing family satisfies the sufficient tariffs, proves uniform Haar anti-concentration at a chosen threshold, or establishes a source-sensitive anomaly when a tariff fails. `VIS-428` gives no quantitative or uniform bound on `R_N(t)` as the shell changes, and it does not control a shrinking target `t_N->1` without additional work.
 

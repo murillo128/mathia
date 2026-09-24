@@ -22,17 +22,17 @@ and define the path supremum
 
 `Q_(N,rho)(z)=sup_(|u|<=rho) A_N(z tau_N(u))`.
 
-For every fixed threshold `t in (0,1)`, define the open superlevel target
+For every fixed threshold `t in (0,1)`, define the closed superlevel target
 
-`E_(N,t)={z : A_N(z)>t}`
+`E_(N,t)={z : A_N(z)>=t}`,
 
-and the two-sided hitting time
+which has nonempty interior because it contains `{A_N>t}`, and define the two-sided hitting time
 
 `H_(N,t)(z)=inf{|u| : z tau_N(u) in E_(N,t)}`.
 
 Then:
 
-1. `E_(N,t)` is nonempty and open;
+1. `E_(N,t)` is nonempty and contains a nonempty open set;
 2. `H_(N,t)(z)<infinity` for every torus phase `z`;
 3. the shell-specific cover radius
 
@@ -41,7 +41,11 @@ Then:
 is finite; and
 4. for every `rho>=0`,
 
-`Q_(N,rho)(z)<=t  iff  H_(N,t)(z)>rho`.
+`Q_(N,rho)(z)>=t  iff  H_(N,t)(z)<=rho`,
+
+so equivalently
+
+`Q_(N,rho)(z)<t  iff  H_(N,t)(z)>rho`.
 
 Consequently, for every fixed shell,
 
@@ -49,7 +53,7 @@ Consequently, for every fixed shell,
 
 **uniformly in the starting phase `z` as `rho->infinity`**. Equivalently, for every `epsilon in (0,1)` there is a finite `R_N(1-epsilon)` such that
 
-`Q_(N,rho)(z)>1-epsilon`
+`Q_(N,rho)(z)>=1-epsilon`
 
 for every `z` whenever `rho>=R_N(1-epsilon)`.
 
@@ -57,19 +61,19 @@ For any changing-shell family and any fixed threshold `t<1`, if a chosen radius 
 
 `rho_N >= R_N(t)`
 
-eventually, then the low-supremum event `Q_(N,rho_N)<=t` is identically empty for **every** starting phase, including both Gram-selected phases and Haar-random phases. Thus a nontrivial growing-window supremum test can only live in the pre-saturation regime controlled by the changing-shell hitting/cover scale `R_N(t)` (or by a threshold `t=t_N` tending to one), not in unqualified growth of `rho_N` by itself.
+eventually, then the strict low-supremum event `Q_(N,rho_N)<t` is identically empty for **every** starting phase, including both Gram-selected phases and Haar-random phases. Non-strict threshold events can be recovered by the usual `t±eta` sandwich when the relevant Haar boundary mass is controlled. Thus a nontrivial growing-window supremum test can only live in the pre-saturation regime controlled by the changing-shell hitting/cover scale `R_N(t)` (or by a threshold `t=t_N` tending to one), not in unqualified growth of `rho_N` by itself.
 
 **Evidence/status:** `EXACT-DERIVED + CLASSICAL KRONECKER/MINIMAL-FLOW SPECIALIZATION + NEGATIVE/BOUNDARY + NO-NOVELTY-CLAIM`.
 
 No quantitative bound on `R_N(t)`, no uniform theorem in the growing shell, no Gram anomaly, and no RH consequence is claimed.
 
-## 1. The high-amplitude target is a nonempty open set
+## 1. The high-amplitude target has nonempty interior
 
 Because `Phi_N` is continuous on the compact torus, it attains its positive maximum `S_N`. If `z_*` is a maximizer, then
 
 `A_N(z_*)=1>t`.
 
-Hence `E_(N,t)` is nonempty. Continuity of `A_N` makes it open.
+Hence the open set `{A_N>t}` is nonempty. The target `E_(N,t)={A_N>=t}` is closed and contains this nonempty open set.
 
 This step uses the **exact torus supremum normalization** already fixed in `VIS-419`--`VIS-425`; no visual threshold or numerical maximizer is being promoted to evidence.
 
@@ -85,7 +89,7 @@ Therefore the continuous Kronecker flow
 
 `u -> z tau_N(u)`
 
-is dense in the full finite prime torus for every starting phase `z`. Since `E_(N,t)` is nonempty and open, every orbit intersects it. Thus
+is dense in the full finite prime torus for every starting phase `z`. Since the interior set `{A_N>t}` is nonempty and open, every orbit intersects it and hence intersects `E_(N,t)`. Thus
 
 `H_(N,t)(z)<infinity`
 
@@ -95,13 +99,13 @@ This is exactly the fixed-shell minimality already underlying the Haar/translati
 
 ## 3. Compactness upgrades pointwise recurrence to a uniform cover radius
 
-For each phase `z`, choose one time `u_z` such that
+For each phase `z`, choose one time `u_z` with the **strict** hit
 
-`z tau_N(u_z) in E_(N,t)`.
+`A_N(z tau_N(u_z))>t`.
 
-Because multiplication by `tau_N(u_z)` is continuous and `E_(N,t)` is open, the set
+By continuity, the set
 
-`U_z={y : y tau_N(u_z) in E_(N,t)}`
+`U_z={y : A_N(y tau_N(u_z))>t}`
 
 is an open neighborhood of `z`.
 
@@ -113,35 +117,41 @@ and set
 
 `R=max_(1<=j<=J) |u_(z_j)|`.
 
-Every starting phase belongs to some `U_(z_j)` and therefore reaches `E_(N,t)` at a time of magnitude at most `R`. Hence
+Every starting phase belongs to some `U_(z_j)` and therefore reaches the closed target `E_(N,t)` at a time of magnitude at most `R`. Hence
 
 `R_N(t)=sup_z H_(N,t)(z) <= R < infinity`.
 
 This is the continuous-time version of the standard syndetic-return consequence of minimal compact dynamics. The proof above is included so that the Wang specialization does not depend on an unstated recurrence theorem.
 
-## 4. A growing-window supremum is exactly a hitting-time tail
+## 4. A growing-window supremum is exactly a closed-target hitting-time tail
+
+The preimage
+
+`{u : z tau_N(u) in E_(N,t)}`
+
+is a nonempty closed subset of the real line. Therefore its minimum absolute value is attained and equals `H_(N,t)(z)`.
 
 By definition,
 
-`Q_(N,rho)(z)>t`
+`Q_(N,rho)(z)>=t`
 
-if and only if there exists `|u|<=rho` with `A_N(z tau_N(u))>t`, which is equivalent to
+if and only if there exists `|u|<=rho` with `A_N(z tau_N(u))>=t`, which is exactly
 
 `H_(N,t)(z)<=rho`.
 
-Taking complements gives the exact identity
+Taking complements gives
 
-`Q_(N,rho)(z)<=t  iff  H_(N,t)(z)>rho`.
+`Q_(N,rho)(z)<t  iff  H_(N,t)(z)>rho`.
 
-Thus the Haar self-null for a low growing-window supremum is not a new amplitude distribution. It is the hitting-time tail
+Thus the Haar self-null for a strict low growing-window supremum is not a new amplitude distribution. It is the hitting-time tail
 
 `m_H{z : H_(N,t)(z)>rho}`
 
-for the prime-log flow entering the shell's exact superlevel set.
+for the prime-log flow entering the shell's exact closed superlevel set.
 
 Likewise, evaluating the same statistic at an arithmetic selector phase `z(T_*)` asks whether that source-selected phase has an unusually long avoidance time of `E_(N,t)` relative to this exact Haar hitting-time law.
 
-The fixed-shell limit follows immediately. Since `R_N(t)<infinity`, the tail above is exactly zero for every `rho>=R_N(t)`. Taking `t=1-epsilon` for arbitrary `epsilon>0` gives uniform convergence `Q_(N,rho)->1`.
+The fixed-shell limit follows immediately. Since `R_N(t)<infinity`, the strict low tail above is exactly zero for every `rho>=R_N(t)`. Taking `t=1-epsilon` for arbitrary `epsilon>0` gives uniform convergence `Q_(N,rho)->1`.
 
 ## 5. What remains in a growing family
 
@@ -166,9 +176,9 @@ The dynamical input is classical. `VIS-419` already records the Kronecker-Weyl/B
 
 The representation is intrinsic to the fixed Wang shell: changing prime-coordinate labels or translating the starting torus phase does not alter the target's cover property. The threshold target is defined from normalized shell amplitude itself, not from an arbitrary visual embedding. The result is therefore a representation-certified boundary statement rather than a visual pattern claim.
 
-The nonzero-shell and fixed-threshold assumptions matter. At `t=1`, the exact maximizing set need not be hit by a given orbit even though it is approached densely. For `t_N->1`, the open target can shrink and its cover radius can diverge. For a changing shell there is no uniform rate without additional Diophantine/target-geometry information.
+The nonzero-shell and fixed-threshold assumptions matter. At `t=1`, the exact maximizing set need not be hit by a given orbit even though it is approached densely. For `t_N->1`, the target neighborhood can shrink and its cover radius can diverge. For a changing shell there is no uniform rate without additional Diophantine/target-geometry information.
 
-Falsify the argument by finding a participating base-prime relation that destroys minimality, a threshold `t<1` for which the superlevel set is empty or non-open, a starting phase whose orbit avoids that open set, or a fixed shell for which no finite collection of translated target preimages covers the compact torus.
+Falsify the argument by finding a participating base-prime relation that destroys minimality, a threshold `t<1` for which `{A_N>t}` is empty, a starting phase whose orbit avoids that open set, a failure of closed-target hitting-time attainment, or a fixed shell for which no finite collection of strict-target preimages covers the compact torus.
 
 ## Dependencies
 
