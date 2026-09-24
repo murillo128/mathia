@@ -9,6 +9,8 @@ based_on:
   - research/prime_lattice/formalization/PL437Mod5OrientationDefect.lean
   - research/prime_lattice/findings/PL-421-local-factor-dephasing-image-cone.md
   - research/prime_lattice/findings/PL-436-scalar-variance-lower-bounds-do-not-close-oriented-cone.md
+  - research/prime_lattice/findings/PL-438-mod5-oriented-schur-ellipse.md
+  - research/prime_lattice/findings/PL-439-mod5-signed-residue-polarization.md
 ---
 
 # Can the residual PL-437 cone test be reduced to a source-estimable Schur ellipse?
@@ -65,4 +67,6 @@ Lean proves finite matrix identities and the residual two-coordinate structure; 
 
 The direction survives initial triage and is **accepted** for continued investigation. `PL-438` derives an exact `1+2+1` residue-space normal form, reduces the strict positive branch to a two-dimensional Schur ellipse, and gives an admissible positive covariance for which that ellipse certifies the `PL-421` cone while the `PL-437` Weyl disk fails. The ellipse coefficients and center are determined by the real-product sector plus the residue diagonal; only the two oriented combinations remain unresolved.
 
-The still-open part of the clue is arithmetic rather than representational: determine whether the actual fixed-mod-5 prime source controls the resulting scalar Schur budget at variance scale by an unconditional input genuinely weaker than the full complex lower-frame estimate. Acceptance does not assert that such an estimate exists or that the ellipse advances RH by itself. Durable evidence is in `research/prime_lattice/findings/PL-438-mod5-oriented-schur-ellipse.md`.
+`PL-439` further shows that those two combinations are source-observable without a full complex covariance reconstruction: they are exactly two paired differences of four fixed real `\{\pm1\}` signed-residue Selberg energies, and the complete diagonal self-energy cancels in each difference. Thus the representational part of “source-estimable” is now settled more strongly than in `PL-438`; quarter-turn tomography is not intrinsically needed on the real residue-source side.
+
+The still-open part of the clue is arithmetic: prove or refute an unconditional fixed-mod-5 estimate for those two signed variance differences, at enough precision relative to the visible `PL-438` ellipse data to satisfy the Schur budget. Existing audited scalar/AP variance and almost-all Hardy--Littlewood results do not supply that variance-scale signed difference. Acceptance does not assert that such an estimate exists or that the ellipse advances RH by itself. Durable evidence is in `research/prime_lattice/findings/PL-438-mod5-oriented-schur-ellipse.md` and `research/prime_lattice/findings/PL-439-mod5-signed-residue-polarization.md`.
