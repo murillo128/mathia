@@ -12,40 +12,22 @@ NB-306 identifies the exact unit singular core of the projected integer-dilation
 
 The unresolved operator transition lies in the genuinely intermediate window `N<<m<=O(N^2)`: determine whether coherent centered shell modes survive there or whether the rank-one mixing picture can be pushed down to that scale. That source-side theorem is still not the destination theorem. Any useful singular direction must also be occupied by the actual moving first-free datum after the sampling/null decomposition, lower-section conditioning and off-critical contraction. Operator norm or support mass alone does not imply a Nyman target gain.
 
-## Quantify the weighted mixing transition directly; logarithmic resonances reach both quadratic and linear rational scales
+## Quantify the weighted mixing transition directly; the exact even-divisor skeleton carries logarithmic resonance from linear to subquadratic scales
 
 NB-316--NB-318 isolate the multiplicative loss in the centered reciprocal-shell primitive estimate. The centered Cesaro shell factor has sharp `Theta(N^(3/2))` norm growth, and bounded linear reciprocal time admits an `O_C(N^2)` physical Hilbert evaluation bound even though the top-index adjacent witness reaches its largest primitive excursion only at quadratic time.
 
-NB-319 removes the interpretation that this primitive obstruction is confined near the quadratic endpoint. For every `8<=M<=N^2/2`, nested adjacent cancellations with index `n=floor(sqrt(2M))` give an exact evaluation inside the annulus `[M,3M]` with
+NB-319 removes the interpretation that this primitive obstruction is confined near the quadratic endpoint. For every `8<=M<=N^2/2`, nested adjacent cancellations give a Hilbert-normalized primitive lower bound within a square-root logarithm of linear growth on an annulus of radius `M`. No uniform power-saving primitive estimate can therefore hold across the full mesoscopic range.
 
-`H_N(M) >= M/(32 sqrt(log M))`,
+NB-320--NB-322 then move to the actual signed `1/t^2` pairing. The weight suppresses the primitive obstruction by a full quadratic factor, but exact rational folds retain a `1/sqrt(log n)` rank-one-error resonance. On the canonical divisor subsequences `q|n` or `q|(n-1)`, NB-322 proves this while `q=o(sqrt n)`, giving explicit resonant scales `m=n^(alpha+o(1))` for every `3/2<alpha<=2`. These are absolute source-side operator errors tending to zero, not order-one target channels.
 
-where `H_N(M)` is the Hilbert-normalized supremum of the centered primitive over that annulus. Thus every mesoscopic reciprocal annulus up to the quadratic frontier contains a source direction whose primitive is within a square-root logarithm of linear growth in the annulus radius. No uniform estimate `sup_(M<=T<=3M)|G_u(T)| <= C M^(1-epsilon)||u||_2` can hold across this range for fixed `epsilon>0`.
+NB-323 reaches the opposite endpoint `q=n`, equivalently the linear dilation `m=n-1`, and again finds a Hilbert-normalized `Theta(1/sqrt(log n))` residue from an exact alternating-harmonic pulse calculation. This already shows that the `O(q^2/n^2)` remainder used in NB-322 cannot define an intrinsic transition near `q~sqrt n`.
 
-NB-320 shows that the actual signed `1/t^2`-weighted bilinear pairing behaves much better than that primitive envelope on the canonical adjacent witness, but not polynomially better. For even `n`, with
+NB-324 closes the intervening denominator-size gap on a large exact arithmetic skeleton. If `q>=2` is an even divisor of `n` and `m=n(n-1)/q`, the canonical matrix coefficient has the exact form
 
-`u_n=g_n-((n-1)/n)g_(n-1)`
+`E_(n,q)=(H_q-H_(q/2))/(4n)+T_(n,q)`, `|T_(n,q)|<1/(nq)`.
 
-and resonant half-period dilation `m=n(n-1)/2`, one has a Hilbert-normalized rank-one error of order `1/sqrt(log n)`. The weight suppresses the primitive obstruction by a full quadratic factor, confirming that primitive-sup control was genuinely wasteful, but the surviving resonance forbids any uniform `O(n^(-delta))` rank-one error rate for fixed `delta>0` along these dilations.
+Hence for **every** sequence of growing even divisors `q_n|n`, with no restriction on its size relative to `n`, one has `n E_(n,q_n)->(log 2)/4`, and the rank-one-subtracted operator retains a `1/sqrt(log n)` lower bound. On power-of-two subsequences this produces such resonances at every fixed power scale `m=n^(alpha+o(1))`, `1<=alpha<2`. The earlier intermediate-denominator uncertainty was therefore a remainder artifact on the exact even-divisor family, not a genuine denominator-size transition.
 
-NB-321 shows that the half-period point is not isolated. Writing `P_n=n(n-1)`, every fixed rational quadratic scale `m=P_n/q` admits a finite rational-period boundary reduction in terms of centered-primitive samples on the `q`-grid of one adjacent period. The `q=4` calculation gives another explicit `1/sqrt(log n)` obstruction, but NB-321 by itself leaves open cancellation for other fixed denominators and does not control the remainder uniformly when `q` grows.
+The live source question is now concentrated on **arithmetic geometry outside that skeleton**, not on the size of an even exact denominator. Determine what happens for odd denominators, nondivisors and near-rational ratios, and whether any cancellation there can support a uniform mixing theorem that still accommodates the exact even-divisor resonances. A useful upper theorem cannot interpolate monotonically from the old small-`q` remainder or divide the range into small/intermediate/maximal denominators; it must exploit arithmetic unavailable on the divisor pulse train, cancellation unavailable to the adjacent witness, or another genuinely target-aware mechanism.
 
-NB-322 removes both limitations on the two canonical congruence subsequences `q|n` or `q|(n-1)`. The first boundary term collapses to the alternating residue coefficient
-
-`C_q=sum_(k>=1) (-1)^k phi_q(k)/k^2`, `phi_q(k)=r(q-r)`, `r=k mod q`,
-
-and `C_q<0` for every `q>=2`, with the uniform lower bound `|C_q|>=q/10`. The exact folding remainder is bounded by `O(q^2/n^2)`. Consequently, whenever `q=q_n=o(sqrt(n))` divides `n` or `n-1`, the adjacent witness still forces
-
-`||sqrt(m_(n,q))T_(n,m_(n,q))-R_n|| >> 1/sqrt(log n)`,
-
-with `m_(n,q)=n(n-1)/q`. Thus exact rational folding supplies logarithmic rank-one-error obstructions at explicit scales `m=n^(alpha+o(1))` for every fixed `3/2<alpha<=2`. These are absolute source-side operator errors tending to zero, not order-one channels and not target-occupation statements.
-
-NB-323 shows that the `q=o(sqrt n)` range is not an intrinsic endpoint of the same adjacent resonance. At the opposite extreme `q=n`, equivalently the linear dilation `m=n-1` along even `n`, the exact weighted matrix coefficient satisfies
-
-`< (sqrt(n-1)T_(n,n-1)-R_n)g_2, u_n > = (H_n-H_(n/2))/(4n) + O(n^(-2))`
-
-and therefore its Hilbert-normalized size is again `Theta(1/sqrt(log n))`. The leading term comes from an exact one-period alternating-harmonic pulse calculation, while all later periods contribute only `O(n^(-2))`. Thus the `O(q^2/n^2)` absolute remainder used in NB-322 is not describing the actual maximal-denominator endpoint, and `q~sqrt n` cannot be declared a genuine resonance cutoff from that estimate alone. NB-323 is one explicit matrix coefficient at `q=n`; it does not prove uniform persistence across the whole intermediate denominator range.
-
-The live source question is now the **intermediate-denominator geometry**. The same adjacent channel has logarithmic rank-one-error resonances for every fixed exponent above `3/2` through NB-322 and again at the linear endpoint through NB-323, so the unresolved issue is whether the resonance persists, oscillates or undergoes narrower cancellations for `sqrt(n)<<q<<n`. This requires a sharper signed analysis than the absolute second-primitive remainder, ideally resolving the actual `q`-dependence of the rational-period boundary terms and tails. Near-rational ratios not satisfying the exact divisibility geometry and genuinely irrational ratios remain separate questions.
-
-Any useful upper theorem across `N<<m<=O(N^2)` must therefore accommodate explicit logarithmic resonances at both the previously established `n^(3/2+epsilon)`-to-quadratic scales and the linear edge. It must exploit the actual `1/t^2` weight, reciprocal-shell phase cancellation, square-function/frequency structure or denominator arithmetic rather than a monotone interpolation of the current absolute remainder. Even a sharp source-side mixing theorem remains separate from target occupation, first-free gain and the final Nyman/RH destination.
+Even a complete source-side classification would remain separate from target occupation. The NB-324 obstruction is a specific rank-one-subtracted matrix coefficient; it does not show that the moving first-free Ford datum occupies that direction, give a finite-section excess, improve a Nyman approximation rate, or imply RH. Any destination claim must still pass the sampling/null decomposition, lower-section conditioning and off-critical contraction with the actual target source.
