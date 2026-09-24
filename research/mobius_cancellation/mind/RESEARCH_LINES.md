@@ -52,6 +52,20 @@ so `pM_z>B` makes the relative tuple pair-injective; in a dyadic block the suffi
 
 Thus exact relative-state recurrence is depleted continuously as the CRT modulus grows. A longer exact mask is not a free averaging resource even below full reconstruction: its available population must be paid for by the remaining rational-reconstruction uncertainty.
 
-The live arithmetic question is now to estimate or structurally constrain the **physical anti-diagonal pushforward while keeping distinct localized absolute and relative mask states in the same source average**. A viable theorem cannot rely on broad marginals, finite local congruence rigidity, many source labels sharing one exact growing profile, gauge quotienting alone, or an unspecified large recurrent class at intermediate mask depth. It must exploit the quantitative map from many distinct states to the observed coordinate `x+j`, work deliberately below the integer/rational reconstruction tariffs with a justified coarser state, exploit endpoint/cutoff geometry before exact conditioning, or introduce a genuinely signed/complex pre-aggregation relation. If the excess collision statistic is `o(1)`, MC-506 closes the current quadratic hard-mask bias. If it has fixed excess, collisions remain only necessary and one must test signed alignment with the centered quadratic phase.
+MC-511 shows that exact-state recurrence can cease to be a viable **collision carrier** strictly before MC-510 reaches pair reconstruction. If `b_u(t)>=0` is the pair-resolved contribution to conductor coordinate `t`, `L` bounds the exact relative-state fibre size and
+
+`R_* = W^2 / sum_(u,t) b_u(t)^2`
+
+is the effective pair-phase participation, then the same-state share obeys
+
+`p C_same/W^2 <= pL/R_*`.
+
+With the MC-510 localized fibre tariff, in the common regime `H<p min I`,
+
+`p C_same/W^2 <= p/R_* + 2B/(M_z R_*)`, with `B=H(2Q+H)`.
+
+Hence `R_*>>p` and `M_z R_*>>B` force `C_same=o(W^2/p)` even while `M_z` can remain far below the pair-injectivity scale `B/p`. Any material excess collision must then be carried by **distinct exact states that collide only after the physical pushforward**. The conclusion is conditional on nonnegative pair-resolved provenance and on proving the required `R_*` from the actual source weights; a large raw pair count is not a substitute.
+
+The live arithmetic question is therefore to estimate the physical effective participation and the **cross-state anti-diagonal pushforward** before spending more exact-state resolution. A viable theorem cannot rely on broad marginals, finite local congruence rigidity, many source labels sharing one exact growing profile, gauge quotienting alone, or an unspecified recurrent class at intermediate mask depth. First compare the source-proved `R_*` with the MC-510 fibre tariff. If `pL_z/R_*` is already negligible, the load-bearing object is the many-to-one map from distinct gauge-invariant states to the observed coordinate `x+j`; if it is not, a justified coarser state may still retain a collision budget. Endpoint/cutoff geometry before exact conditioning or a genuinely signed/complex pre-aggregation relation remain separate escapes. If the total excess collision statistic is `o(1)`, MC-506 closes the current quadratic hard-mask bias; if it has fixed excess, collisions are still only necessary and signed alignment with the centered quadratic phase must be tested.
 
 A genuinely `q`-dependent signed or complex coefficient introduced **before** the nonnegative aggregation remains a distinct escape and requires its own normed-measure analysis; the probability/collision formulation above must not be applied to it without that extra work. The accepted localized-full-profile clue records this surviving branch, but MC-509--MC-510 remove exact absolute-profile recurrence and exact relative-profile recurrence from its possible mechanism.
