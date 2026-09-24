@@ -8,96 +8,32 @@ MC-423--MC-445 separate source diversity, representation fidelity, Möbius top-i
 
 The surviving resources are qualitatively different: growing rank, another justified source measure, absolute scale, discontinuous arithmetic data, cross-rank structure, or coordinates that retain enough factor identity to survive the Möbius projection. Any such carrier still has to produce an analytic cancellation estimate after the exact top-interaction quotient.
 
-## Can the endpoint-only first-exit route pass its source-location, source-width, population and centered-interaction gates?
+## Determine the physical anti-diagonal law of the first-exit source
 
-MC-484--MC-492 isolate the exact first-exit geometry and close a large family of coefficient-blind Hilbert-space escapes. After affine normalization the visible inverse shift is gauge; the least-active-prime cells are disjoint; common transforms preserve that orthogonality; rowwise dilation leaves the conductor-scale diagonal; sublinear completed families are Riesz-stable; and native same-root repeated-residue coefficients make the remaining positive cross terms constructive. A useful gain must therefore enter through source-dependent inner arithmetic before positive closure, not through a free scalar row weight or a hidden Gram eigenvector.
+MC-484--MC-502 isolate the endpoint-only geometry and close a large family of coefficient-blind escapes. The visible inverse shift is gauge, least-active-prime cells are disjoint, common transforms preserve the relevant orthogonality, native same-root repeated-residue coefficients make the surviving positive cross terms constructive, and complete lower-prime hard-mask averaging cannot supply a conductor-power gain. MC-497--MC-501 further price the endpoint branch by source location, source width, block population and effective start participation in the actual physical coordinate.
 
-MC-497 gives the exact short-overlap restriction for the quadratic repeated-residue phase in the **physical additive source coordinate**. For the centered length-`H` short character sum `S_(c,x)(H)`, Fourier--Weil diagonalization gives the mean-square bound
+MC-503--MC-504 show that for a fixed incomplete profile, or for an exact profile class with its true source mass, the centered quadratic conductor phase is controlled by effective support in the start/profile variables. MC-505 removes the arbitrariness of any profile decomposition: for the actual nonnegative start/profile table `B=(B_(x,j))`, the kernel `F(x+j)` sees only the matched Fourier diagonal of `B`, and double centering removes the two marginals and grand mean without changing those visible modes. The nuclear interaction norm `||PBP||_*` is therefore a valid decomposition-free upper certificate, but it is not the minimal observable.
 
-`sum_(x mod p) |S_(c,x)(H)|^2 << pH`
+MC-506 identifies that minimal quotient exactly. Define the physical anti-diagonal pushforward
 
-uniformly in the nonzero quadratic phase. Hence starts with normalized bias at least a fixed level occupy only `O(1/H)` of the conductor classes. The earlier residual `p^(-1/2)` exceptional-density floor is not present in this averaged start-coordinate statement. This is an average-over-start theorem, not a uniform short character-sum bound.
+`c_t = sum_x B_(x,t-x)`,
 
-MC-498 converts that exceptional-set statement into the quantity carried by the actual source weights: for induced start weights `w`, the effective participation
+with total mass `W=sum_t c_t` and normalized law `nu(t)=c_t/W`. Then
 
-`R_start=||w||_1^2/||w||_2^2`
+`C_F(B)=sum_t c_t F(t)=W E_nu F`.
 
-enters the short-character-sum tariff, while the physical quotient maps `ceil(X/q)` and `ceil((X+h)/r)` contribute explicit fibre costs `D_+` and `D_-`. After splitting by the winning endpoint, sufficient growth of `kappa_+/D_+` and `kappa_-/D_-` forces endpoint-only quadratic bias to vanish.
+For every centered kernel, Cauchy--Schwarz gives
 
-MC-499 adds a cheaper per-block admission gate before those reconstruction details are computed. In one repeated residue class with dyadic labels `Q<=q,r<=2Q`, the source population is at most `N_Q<=1+Q/p`, and every physical overlap start is literally one of the two endpoint values. Hence
+`|C_F(B)|/W <= sigma_F sqrt(Delta(B))`,
 
-`R_start <= 2(1+Q/p)`,
+where
 
-and separately `kappa_+/D_+, kappa_-/D_- <= 1+Q/p`. With the corrected MC-497 second moment, the relevant tariff is
+`Delta(B)=p sum_t (nu(t)-1/p)^2 = p sum_t nu(t)^2-1`.
 
-`T_(p,H)=(p/H) log^2(2H)`.
+For the current centered quadratic phase `sigma_F<1`. Hence fixed normalized bias requires a fixed excess of weighted collisions in the **actual conductor argument** `t=x+j`; equivalently, the source pair count with `t_alpha=t_beta mod p` must exceed the uniform baseline `W^2/p` by a fixed relative amount. The matched Fourier diagonal of MC-505 is simply the Fourier transform of this one-dimensional pushforward. Structure in `B` that leaves `c_t` unchanged is invisible to the kernel.
 
-The current dispersion certificate cannot deliver a fixed saving unless `1+Q/p` is larger than this tariff up to the required constants.
+MC-507 shows that this quotient cannot be controlled from broad marginals or unitary-invariant matrix complexity. Every probability law `nu` on `F_p` is compatible with the same perfectly uniform start and profile-offset marginals via `B_(x,j)=(W/p)nu(x+j)`. More sharply, affine permutation couplings can have identical row/column marginals, support size, singular values, centered Frobenius norm and centered nuclear norm while ranging from exactly uniform anti-diagonal law to a point mass. Full support does not repair the obstruction. Thus marginal equidistribution, profile count, broad support and the singular spectrum of the table are not surrogates for the conductor law.
 
-MC-500 shows that increasing `Q` cannot evade source scarcity through the physical **location** coordinate. On a dyadic block the endpoint image satisfies
+The live arithmetic question is now to estimate or structurally constrain the **physical anti-diagonal pushforward itself after every first-exit, sieve, endpoint and reconstruction restriction is restored**. If its excess collision statistic is `o(1)`, MC-506 closes the current quadratic hard-mask bias. If it has a fixed excess, collisions alone are only necessary: one must then determine whether the overloaded fibres are signedly aligned with the centered quadratic phase. A successful source theorem may directly count the congruence pairs, prove an arithmetic restriction on the coupling `(x,j)` relative to `x+j`, or identify a stronger signed cancellation on the overloaded fibres. Separate start/profile marginals and decomposition-dependent matrix summaries cannot decide this.
 
-`#{ceil(Z/q)} <= min(1+Q/p, 2+Z/(2Q))`,
-
-so label growth `Q/p` and reciprocal-quotient compression `Z/Q` compensate. With `Z_*=max(X,X+h)`, the physical start participation has the Q-free ceiling
-
-`R_start <= 4+sqrt(2Z_*/p)`.
-
-Consequently the corrected exceptional-start certificate can succeed at some dyadic scale only if
-
-`T_(p,H) <<_delta 4+sqrt(2Z_*/p)`.
-
-In the nonconstant-tariff regime this forces the source-location scale
-
-`Z_* >>_delta p^3 H^(-2) log^4(2H)`.
-
-The previously displayed extra `p^2 log^2(2H)` requirement came from the spurious square-root term in the older tariff and is not an independent **location** gate.
-
-MC-501 identifies a distinct Q-free obstruction from the physical **source width**. If the original interval has integer length `Y`, every first-exit row with `q,r in [Q,2Q]` has overlap length at most `1+Y/Q`. A nonempty dyadic overlap band `H/2<=L_(q,r)<=H`, `2<H<=p`, therefore forces
-
-`Q <= 2Y/(H-2)`.
-
-Combining this exact row-shortening constraint with the MC-499 repeated-residue support ceiling removes `Q` again and gives
-
-`R_start <= 2 + 4Y/[p(H-2)]`.
-
-Thus a fixed-saving use of the current MC-498 certificate requires
-
-`T_(p,H) <<_delta 2 + 4Y/[p(H-2)]`,
-
-and throughout material bands `4<=H<=p` this implies the independent source-width feasibility condition
-
-`Y >>_delta p^2 log^2(2H)`.
-
-This is not the discarded extra term from MC-500: `Z_*` measures where the physical source lies, whereas `Y` measures how much pre-dilation interval width is available to sustain an overlap of length `H`. A source can pass one Q-free gate and fail the other.
-
-MC-502 closes the most direct complete-period cross-root hard-mask escape. For plus-root label `q` and minus-root label `r`, the shifted lower-prime forbidden residues collide only when the active lower prime divides `h(q+r)`. After complete averaging, the normalized pair-sieve coherence therefore satisfies
-
-`rho_sieve^(+-)(q,r) <<_(h,E) (1/log r) prod_(ell|(q+r), ell<q, active) (1-1/ell)^(-1)`
-
-and hence is at most `(1/log r)(q+r)/phi(q+r)`, which is only logarithmic/totient-sized in polynomial conductor ranges. The sign-specific collision law is genuinely `q+r` rather than the same-root `q-r` law, but complete lower-prime hard-mask structure still cannot supply a conductor-power gain. Any larger cross-root effect must survive through incomplete endpoint geometry, conductor-profile alignment, genuinely `q`-dependent signed or complex pre-aggregation coefficients, or another structure destroyed by complete-period averaging. MC-502 is pairwise and does not by itself control a full cross-root matrix norm.
-
-MC-503 shows that arbitrary **fixed incomplete** hard-mask irregularity is also not a free resource. If a fixed coefficient profile `b` of length at most `p` is paired with the centered quadratic conductor phase, then Fourier--Weil diagonalization gives
-
-`sum_(x mod p) |T_b(x)|^2 <= C^2 p ||b||_2^2`.
-
-For nonnegative `b`, fixed normalized bias can therefore occur only on an `O(1/R_b)` fraction of conductor starts, where `R_b=||b||_1^2/||b||_2^2`; for a `0/1` hard mask with `M` survivors this is `O(1/M)`. The theorem keeps the exact incomplete profile in physical space and pays no primorial Fourier dimension. Its boundary is equally important: the physical first-exit source may change the profile together with the start, so the fixed-profile average cannot be substituted for the actual source measure.
-
-MC-504 inserts that actual conditional source measure. For source-start weights `a` at one fixed profile, the normalized class bias obeys
-
-`|sum_x a(x)T_b(x)|/(||a||_1 ||b||_1) <= C sqrt(p/(R_a R_b))`,
-
-with `R_a=||a||_1^2/||a||_2^2`. Thus order-one bias requires the **profile/start participation product** `R_a R_b=O(p)`. Exact profile classes can be summed with their real source masses, and approximate classes are legitimate only after charging their weighted `l^1` profile distortion. This does not prove recurrence or compressibility of the physical profiles; it converts the old vague “irregular mask” escape into a precise source question about low effective support, low conditional start participation, or genuinely load-bearing profile diversity.
-
-MC-505 removes the remaining dependence on an arbitrary profile-class decomposition. For the actual start/profile coefficient table `B=(B_(x,j))` and a centered character kernel `F(x+j)` with square-root Fourier multiplier, the bias sees only the matched Fourier diagonal
-
-`d_k(B)=(1/p) sum_(x,j) B_(x,j)e_p(kx)e_p(kj)`, `k!=0`.
-
-Double centering `B^circ=PBP` deletes the start marginal, profile-offset marginal and grand mean exactly, without changing those visible modes. The canonical decomposition-free bounds are
-
-`|C_F(B)| <= C sqrt(p) sum_(k!=0)|d_k(B)| <= C sqrt(p) ||B^circ||_*`.
-
-For nonnegative source mass `W=sum B_(x,j)`, the interaction participation `R_int(B)=W^2/||B^circ||_*^2` therefore gives normalized bias at most `C sqrt(p/R_int)`. Profile-class factorizations remain valid upper bounds on this nuclear interaction cost but are no longer the intrinsic object. Broad marginals, many profile classes or large separate supports are irrelevant if the centered matched diagonal is small.
-
-The endpoint audit is therefore two-layered. For the endpoint-only branch, first apply the MC-500 Q-free source-location gate and the MC-501 Q-free source-width gate; only scales passing both reach the MC-499 block-population gate and then the exact MC-498 participation/fibre computation. For the incomplete hard-mask branch, MC-502 removes complete-period conductor-power coherence, MC-503--MC-504 give convenient factorized participation tariffs, and MC-505 identifies the sharper quotient actually seen by the character kernel: the centered matched Fourier diagonal of the physical start/profile incidence matrix, conservatively controlled by `||PBP||_*`.
-
-The live arithmetic question is now to determine that **centered start-profile interaction in the exact physical first-exit matrix after all sieve and endpoint restrictions**. Direct control of `sum_(k!=0)|d_k(B)|` is strongest; when unavailable, proving `R_int(B)>>p` through a source-derived nuclear-norm bound would close the present quadratic-character alignment certificate. If `R_int=O(p)`, the burden is to derive the exact arithmetic law that concentrates source mass in this matched interaction channel rather than merely observing many profiles or exceptional starts. Profile recurrence/compressibility remains useful only insofar as it quantitatively bounds the canonical interaction norm. A genuinely `q`-dependent signed or complex coefficient introduced before the nonnegative aggregation of MC-495 remains a separate escape. None of these mechanisms may be inferred from raw label multiplicity, marginal dispersion or mask irregularity alone.
+A genuinely `q`-dependent signed or complex coefficient introduced **before** the nonnegative aggregation remains a distinct escape and requires its own normed-measure analysis; the probability/collision formulation above must not be applied to it without that extra work.

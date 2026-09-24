@@ -8,30 +8,40 @@ NB-264--NB-272 show that large aggregate Ford response can coexist with a vanish
 
 ## Determine the singular-spectrum transition and actual target occupation
 
-NB-306 identifies the exact unit singular core of the projected integer-dilation operator: singular value `1` persists precisely through `2m<=N`, with unit right-singular subspace `U_floor(N/m)`. NB-309 gives a polynomial lower bound on the first post-core gap, while NB-311 shows that the first post-core strip remains near-isometric for every sublinear additive overrun. NB-312--NB-313 rule out complete source-overlap collapse on every bounded linear dilation scale, and NB-314--NB-315 identify the far-external superquadratic regime as asymptotically rank one after the correct `sqrt(m)` normalization.
+NB-306 identifies the exact unit singular core of the projected integer-dilation operator: singular value `1` persists precisely through `2m<=N`, with unit right-singular subspace `U_floor(N/m)`. NB-309 gives a polynomial lower bound on the first post-core gap, NB-311 shows that the first post-core strip remains near-isometric for every sublinear additive overrun, and NB-312--NB-313 rule out complete source-overlap collapse on every bounded linear dilation scale. NB-314--NB-315 identify the far-external superquadratic regime as asymptotically rank one after the correct `sqrt(m)` normalization.
 
-The unresolved operator transition lies in the genuinely intermediate window `N<<m<=O(N^2)`: determine whether coherent centered shell modes survive there or whether the rank-one mixing picture can be pushed down to that scale. That source-side theorem is still not the destination theorem. Any useful singular direction must also be occupied by the actual moving first-free datum after the sampling/null decomposition, lower-section conditioning and off-critical contraction. Operator norm or support mass alone does not imply a Nyman target gain.
+The unresolved operator transition therefore remains in the genuinely intermediate window `N<<m<=O(N^2)`: determine the singular geometry there rather than infer it from endpoint models. Even a complete source-side theorem is not yet the destination theorem. Any useful singular direction must be occupied by the actual moving first-free datum after the sampling/null decomposition, lower-section conditioning and off-critical contraction; operator norm or support mass alone does not imply a Nyman target gain.
 
-## Quantify the weighted mixing transition directly; the full exact-divisor skeleton carries logarithmic resonance from linear to subquadratic scales
+## Quantify the weighted mixing transition between neighboring resonant lattices
 
-NB-316--NB-318 isolate the multiplicative loss in the centered reciprocal-shell primitive estimate. The centered Cesaro shell factor has sharp `Theta(N^(3/2))` norm growth, and bounded linear reciprocal time admits an `O_C(N^2)` physical Hilbert evaluation bound even though the top-index adjacent witness reaches its largest primitive excursion only at quadratic time.
+NB-316--NB-326 show that the most obvious primitive and weighted estimates do not produce a clean scale transition inside the subquadratic window. The centered Cesaro primitive has sharp `Theta(N^(3/2))` growth, the exact bounded-linear Cesaro extremizer retains that scale after conversion to the physical Nyman norm, and the actual `1/t^2` pairing suppresses primitive growth but leaves a canonical `1/sqrt(log n)` rank-one-error resonance on exact rational folds.
 
-NB-326 closes the physical-normalization question for the **exact linear-time Cesaro Riesz extremizer** left by that analysis. After normalizing the centered Cesaro energy and reconstructing the generator coefficients by finite Möbius inversion, its physical Nyman norm satisfies `||u_N||_2^2=Theta(1)`, while `A_N(floor(N/2))=Theta(N^(3/2))`. Thus the Hilbert-normalized amplification of this exact extremizer remains `Theta(N^(3/2))`: transfer to the physical Nyman metric creates neither a polynomial loss nor the missing extra half-power. Any larger global primitive amplification must therefore use a different profile and/or an evaluation time escaping the bounded linear window. This is source-side and says nothing about actual first-free target occupation.
+NB-322--NB-325 progressively remove the apparent denominator-size and parity thresholds on the exact divisor skeleton. For growing divisors `q|n`, the adjacent cancellation gives `n E_(n,q)->(log 2)/4` regardless of the relative size or parity of `q`, so exact divisor folds realize the same logarithmic resonance at every fixed power scale `m=n^(alpha+o(1))`, `1<=alpha<2`.
 
-NB-319 removes the interpretation that the primitive obstruction is confined near the quadratic endpoint. For every `8<=M<=N^2/2`, nested adjacent cancellations give a Hilbert-normalized primitive lower bound within a square-root logarithm of linear growth on an annulus of radius `M`. No uniform power-saving primitive estimate can therefore hold across the full mesoscopic range.
+NB-327 shows that divisibility itself is not the sustaining mechanism. For every integer `d>=1`, with no relation `d|n`, the lattice
 
-NB-320--NB-322 then move to the actual signed `1/t^2` pairing. The weight suppresses the primitive obstruction by a full quadratic factor, but exact rational folds retain a `1/sqrt(log n)` rank-one-error resonance. On the canonical divisor subsequences `q|n` or `q|(n-1)`, NB-322 proves this while `q=o(sqrt n)`, giving explicit resonant scales `m=n^(alpha+o(1))` for every `3/2<alpha<=2`. These are absolute source-side operator errors tending to zero, not order-one target channels.
+`m^-_(n,d)=d(n-1)`
 
-NB-323 reaches the opposite endpoint `q=n`, equivalently the linear dilation `m=n-1`, and again finds a Hilbert-normalized `Theta(1/sqrt(log n))` residue from an exact alternating-harmonic pulse calculation. This already shows that the `O(q^2/n^2)` remainder used in NB-322 cannot define an intrinsic transition near `q~sqrt n`.
+satisfies
 
-NB-324 closes the intervening denominator-size gap for every growing **even** divisor `q|n`: if `m=n(n-1)/q`, the canonical matrix coefficient is `(H_q-H_(q/2))/(4n)+O(1/(nq))`, so `nE_(n,q)->(log 2)/4` with no restriction on the relative size of `q` and `n`.
+`E^-_(n,d)=log(2)/(4n)+O(d/n^2)`.
 
-NB-325 removes the remaining parity escape. For an odd divisor `q|n`, the selector no longer closes after one `n`-period, but it flips to its complement; over `2n` the product has exact zero mean. This gives
+Hence every sequence `d_n=o(n)` retains the same `1/sqrt(log n)` operator-norm obstruction, including every fixed subquadratic power scale. The mechanism is cellwise centering rather than a common global period.
 
-`E_(n,q)=(H_(q-1)-H_((q-1)/2))/(4n)+O(1/(nq))`.
+NB-328 then tests a full one-cell drift to the neighboring lattice
 
-Hence for **every** sequence of growing divisors `q_n|n`, regardless of parity or relative size, `nE_(n,q_n)->(log 2)/4` and the rank-one-subtracted operator retains a `1/sqrt(log n)` lower bound. Power-of-three subsequences show that purely odd denominators already realize every fixed power scale `m=n^(alpha+o(1))`, `1<=alpha<2`. The denominator-size and parity distinctions are therefore both artifacts on the exact divisor pulse train.
+`m^+_(n,d)=dn=d(n-1)+d`.
 
-The live source question is now concentrated on **arithmetic geometry outside the exact divisor skeleton**. Determine what happens for nondivisors and near-rational ratios, where selector boundaries drift relative to the adjacent pulse train, and whether that drift can create enough cancellation for a uniform mixing theorem while still accommodating the exact-divisor resonances. A useful upper theorem cannot discriminate by denominator size or parity; it must exploit genuinely nondivisor arithmetic, cancellation unavailable to the adjacent witness, or another target-aware mechanism. NB-326 separately rules out hoping that the exact bounded-linear Cesaro extremizer acquires the missing amplification merely through conversion to the physical Nyman norm.
+The obstruction does not disappear. The same adjacent channel now satisfies
 
-Even a complete source-side classification would remain separate from target occupation. The NB-324--NB-325 obstruction is a specific rank-one-subtracted matrix coefficient, and NB-326 is a source-side extremizer norm statement. Neither shows that the moving first-free Ford datum occupies the relevant direction, gives a finite-section excess, improves a Nyman approximation rate, or implies RH. Any destination claim must still pass the sampling/null decomposition, lower-section conditioning and off-critical contraction with the actual target source.
+`E^+_(n,d)=-log(2)/(4n)+O(d/n^2)`,
+
+so for `d=o(n)` the logarithmic operator-norm lower bound survives with the **opposite sign**. A relative perturbation of only `1/(n-1)` in the dilation scale therefore flips this explicit matrix coefficient from `+log(2)/(4n)` to `-log(2)/(4n)` while leaving its magnitude at the same subquadratic scale. Leaving the NB-327 lattice is not, by itself, a mixing mechanism.
+
+The live arithmetic question is now the **intermediate drift phase**
+
+`m=d(n-1)+r`, `0<r<d`.
+
+As the selector boundary slides continuously through the adjacent-profile cells, does this signed channel pass through a genuine cancellation window? If it does, is that cancellation stable in operator norm after optimization over witnesses, or only a zero of this one adjacent matrix coefficient between two resonant endpoints? A useful upper mixing theorem cannot rely on denominator size, parity, divisibility, or one full cell of drift; it must identify a robust off-lattice cancellation mechanism that survives the exact neighboring-lattice controls.
+
+The resonance remains source-side. NB-327--NB-328 do not show that the moving first-free Ford datum occupies these directions, do not produce a finite-section excess or a Nyman approximation rate, and have no RH consequence by themselves. Any destination claim must still pass the sampling/null decomposition, lower-section conditioning and off-critical contraction with the actual target source.
