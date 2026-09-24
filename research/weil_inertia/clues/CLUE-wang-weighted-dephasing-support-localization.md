@@ -1,7 +1,7 @@
 ---
 id: CLUE-weil-inertia-wang-weighted-dephasing-support-localization
 type: research-clue
-status: proposed
+status: rejected
 origin: mind
 target_line: weil_inertia
 based_on:
@@ -43,3 +43,7 @@ A successful transfer must produce an explicit new total error and show whether 
 WI-354 proves only the support-localization barrier for Wang's current displayed error. VIS-309 is an infinite-time quadratic statement at fixed `x,H`, and VIS-311 is a sufficient finite-window bound that still pays a uniform hard-tail cost and remains far from the natural local scale. No existing finding establishes a theorem-level implication from VIS-311 to Wang's `T^lambda L^2` error or to enlarged Fourier support.
 
 This clue proposes an interface audit and possible transfer, not an improved short-interval pair-correlation theorem, not a larger simple-zero proportion, and not an RH implication.
+
+## Research disposition
+
+**Outcome: rejected.** Primary-source audit of Wang shows that Lemma 2.4 already contributes `O(xL^3)` when the interval-zero object `A_I` is replaced by the full explicit-formula object `A`, using only zero-window endpoint localization and before any mean-square estimate for the prime polynomial `D_x`. After `x=T^alpha` support integration this alone gives `O_g(T^lambda L^2)`. Hence improving coefficient-weighted finite-height/dephasing control on `D_x` by itself cannot relax the `lambda<theta` gate; a viable route must also sharpen or reorganize the zero-window truncation. See `[[../findings/WI-439-wang-endpoint-localization-already-forces-the-support-gap]]`.
