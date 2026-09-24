@@ -32,17 +32,19 @@ and
 
 FD-307 also derived shell-dependent thresholds at which current minor-arc control would force that witness onto the principal `q=1` major arc and then contradict it there. FD-308 performs the required dominance audit and changes the frontier: after the RH shell floor `rho>=2c` is imposed, both the major-arc localization threshold and the principal-arc kill threshold lie **strictly above** the earlier unconditional source ceiling `lambda_src`. Those later implications remain correct, but their antecedent is already impossible by FD-300. The apparent FD-307 shell squeeze is likewise nonbinding throughout the source-live range.
 
-The genuinely new, nonvacuous output of FD-307 is therefore the Fejer low-pass certificate itself in the interval
+FD-309 stress-tests the remaining low-frequency witness against the classical GRH additive Möbius bounds. Under GRH for Dirichlet `L`-functions, both the uniform Baker--Harman `X^(3/4+epsilon)` estimate and its sharper principal-arc form
+
+`|F_X(alpha)| << X^(1/2+epsilon) (1+X||alpha||)^(1/2)`
+
+become contradictory only at thresholds that are **tangent to or above** the same source ceiling. With shell depth `rho>=2c`, the principal-frequency threshold is `lambda>1/(3c-rho/2)` and the uniform threshold is `lambda>7/[2(9c-rho)]`; both attain their minimum exactly at `rho=2c`, where that minimum equals `1/(2c)=lambda_src`. Because a power contradiction requires a strict inequality, GRH removes none of the live interval. This closes the generic classical pointwise additive-bound repair: even the frequency-sensitive principal-arc theorem is exactly too weak at the source boundary.
+
+The genuinely nonvacuous output of FD-307 therefore remains the Fejer low-pass certificate itself in the interval
 
 `3/(10c) < lambda <= 1/(2c)`,
 
-not the later `q=1` exclusion. At the balanced calibration `lambda=1`, it forces
+especially near the balanced calibration `lambda=1`, where the forced coefficient is roughly `X^(0.65--0.67)` depending on shell depth. FD-309 shows that replacing the unconditional `X^(4/5)` minor-arc ceiling by the classical GRH-quality pointwise theory still leaves a fixed-power gap and cannot remove even a sliver of the source-feasible range.
 
-`||alpha_*|| <= N^(-0.872556...+o(1))`
-
-and a coefficient of roughly `X^(0.65--0.67)` depending on the carrying-shell depth. That amplitude remains below the current general `X^(4/5)` minor-arc ceiling by a fixed power, so re-optimizing the existing major-arc bookkeeping cannot close the live regime.
-
-The live spectral question is now precise: **exclude the FD-307 low-frequency Möbius Fourier witness inside the source-feasible interval, especially near `lambda=1`**. A successful theorem could exploit the much narrower frequency neighborhood rather than a general minor-arc estimate, strengthen the source-side reduction so the forced amplitude increases, or derive additional arithmetic structure of the carrying shell that couples to the low-pass phase. Above `lambda_src` the route is already impossible before Fourier localization; below `3/(10c)` the earlier aligned/low-block-frequency and moving-start carriers remain the finer necessary descriptions. Once the Farey divisor-replication geometry has been discharged and only the fixed-block low-frequency Möbius problem remains, ownership naturally moves toward `mobius_cancellation` unless new Farey structure constrains the witness.
+The live spectral question is now more restrictive: **exclude the FD-307 low-frequency Möbius Fourier witness inside the source-feasible interval by structure not already present in a generic pointwise additive sum bound**. A successful theorem must either improve substantially on the Baker--Harman scale in exactly this regime, strengthen the source reduction so the forced amplitude or localization improves, or exploit additional arithmetic structure of the carrying shell that couples to the low-pass phase. Merely re-optimizing major arcs or invoking classical GRH cancellation is ruled out by the exact tangency. Above `lambda_src` the route is already impossible before Fourier localization; below `3/(10c)` the earlier aligned/low-block-frequency and moving-start carriers remain the finer necessary descriptions. Once the Farey divisor-replication geometry has been discharged and only the fixed-block low-frequency Möbius problem remains, ownership naturally moves toward `mobius_cancellation` unless new Farey structure constrains the witness.
 
 ## Force physical occupation of the complete zero-packet regime
 
@@ -50,4 +52,4 @@ FD-282--FD-292 show that the grouped strict-right Perron collar retains a prime 
 
 FD-293 shows that reciprocal-log-safe occupation of positive measure already requires `H^(1-o(1))` remainder-good gaps under RH. FD-294 converts such occupation into near-linear many short complete zero-packet cancellations, and FD-295 shows that below square-root height those complete packets are automatically capacity-subcritical. FD-296--FD-297 identify a lower-height rigidity regime in which the whole zero-safe trajectory is controlled, up to `o(B)`, by one fixed low-height complete hard remainder rather than by return frequency.
 
-Inside that rigidity regime FD-298--FD-308 expose the fixed baseline as the block-Mertens source field and then, under a near-capacity premise, as increasingly rigid correlation and low-frequency spectral carriers. Outside it, but still in the short-complete-packet range, the unresolved theorem remains near-linear safe occupation or a stronger source-side path-control statement. The current Montgomery--Vaughan phase selector is intrinsically aggregate at zero-gap scale and cannot simply be rerun independently on each RH zero gap.
+Inside that rigidity regime FD-298--FD-309 expose the fixed baseline as the block-Mertens source field and then, under a near-capacity premise, as increasingly rigid correlation and low-frequency spectral carriers. Outside it, but still in the short-complete-packet range, the unresolved theorem remains near-linear safe occupation or a stronger source-side path-control statement. The current Montgomery--Vaughan phase selector is intrinsically aggregate at zero-gap scale and cannot simply be rerun independently on each RH zero gap.

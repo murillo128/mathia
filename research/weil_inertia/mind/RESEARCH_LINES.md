@@ -10,7 +10,7 @@ WI-423 shows why those useful auxiliary spaces cannot simply be imposed on the c
 
 The live question is to derive such an auxiliary source and a target-independent concentration-and-tail budget from accessible prime-side, boundary or explicit-formula data. The norm must be fixed without inspecting hypothetical zero locations and must control the actual Poisson-capacity geometry consumed by the destination.
 
-## Approach the boundary with independently controlled information; transport and canonical Hardy pairing both reproduce the defect
+## Approach the boundary with independently controlled information; compact mixed-frequency repairs are asymptotically blind
 
 WI-424 identifies the boundary logarithmic derivative of the Kunik Blaschke factor as a canonical positive Poisson defect counter. WI-425--WI-428 show why fixed safe lines and bounded positive or signed multiscale portfolios lose shallow defects unless their cost becomes singular. WI-429 supplies a different bounded category: the positive Hardy projection on `Re(s)=1/2+a` keeps exactly the zeros deeper than `a` and, as `a downarrow0`, retains a fixed fraction of the boundary defect energy. WI-430 extracts the corresponding first-defect quantum, making clear that an unconditional subquantum upper bound would already contain the missing zero-exclusion theorem.
 
@@ -18,7 +18,7 @@ WI-431--WI-434 then audit horizontal continuation from the absolutely convergent
 
 WI-435 gives the decisive matched control. Even if the entire transported edge and safe-line leakage are both `o(1)`, a finite Kunik Blaschke block leaves a nonzero interior Hardy residue field with the full first-defect quantum. Horizontal transport therefore represents the defect more faithfully as its auxiliary errors vanish; it does not upper-bound that defect from independent source information.
 
-WI-436 closes the most canonical mixed-frequency continuation of that idea. For a finite Kunik block and any probe line `0<a<d_*`, the non-Hermitian square of the interior logarithmic derivative satisfies the exact line-invariant identity
+WI-436 closes the most canonical translation-invariant mixed-frequency continuation. For a finite Kunik block and any probe line `0<a<d_*`, the non-Hermitian square of the interior logarithmic derivative satisfies the exact line-invariant identity
 
 `int G_(F,a)(t)^2 dt = ||h_F||_2^2`,
 
@@ -26,8 +26,12 @@ where `h_F` is the positive boundary Poisson flux. Splitting `G_(F,a)=G_++G_-` i
 
 `2 int G_+(t)G_-(t) dt = ||h_F||_2^2`.
 
-Thus the simplest translation-invariant bilinear positive/negative-frequency coupling is not killed by Hardy orthogonality; it sees the off-line defect perfectly. But that is exactly the obstruction: the finite-Blaschke matched control saturates it identically, and broad localization converges to the same boundary energy. The bilinear signal is coercive but not **independent**.
+Thus the simplest bilinear positive/negative-frequency coupling sees the off-line defect perfectly, but the finite-Blaschke matched control saturates it identically. The signal is coercive without being independent source control.
 
-The live theorem must therefore introduce information that the finite inner factor cannot reproduce from itself. Adequate categories include a non-translation-invariant or Hankel-type mixed-frequency operator with a symbol justified independently from prime/explicit-formula data, a genuinely nonlinear arithmetic relation between the two Hardy channels, or a boundary/source observable that upper-bounds the interior field without importing reciprocal distances to the same right-half zeros. A canonical bilinear cross pairing, like horizontal transport, may be an exact defect representation and still supply no source constraint.
+WI-437 sharpens the surviving non-translation-invariant/Hankel branch. For one right-half Kunik defect of horizontal depth `d` and a probe line at fixed relative depth `a=theta d`, the normalized Hardy channels become uniformly weakly null as `d downarrow0`. Every **fixed compact** cross-channel operator therefore has normalized matrix element tending to zero uniformly in the zero ordinate, while the canonical WI-436 pairing remains the fixed fraction `sqrt(1-theta^2)` of the channel norms and has size `pi m^2/d`. Compact corrections are asymptotically lower order on arbitrarily shallow defects.
 
-Every proposal must pass the finite Kunik Blaschke adversarial test: if the proposed source quantity, localization error or mixed-frequency functional can be made small or can be reproduced while the finite block retains its boundary defect energy, it has not supplied independent arithmetic coercivity. A full-zeta passage must additionally handle the lack of a fixed probe depth to the left of all possible off-line zeros; WI-436 is a finite-block theorem and must not be promoted past that domain without a new localization argument.
+For classical Hankel operators this gives a concrete category gate through Hartman's theorem: symbols in the compact `H^infinity+C` class, including fixed smooth compactly supported or decaying boundary multipliers after the half-plane identification, are blind at the required shallow-defect scale. A viable mixed-frequency route must contain an **essentially noncompact** component, or a parameter family whose compactness degenerates at the same scale. Noncompactness is only necessary: the essential response on the shallow Hardy packets must also remain order one and be fixed by independent arithmetic/source data.
+
+The live theorem is therefore narrower than “find a non-translation-invariant coupling.” First determine the Calkin/essential class of any proposed source-derived cross-frequency operator. If it is compact, or remains norm-precompact in the shallow regime, WI-437 rules it out as a uniform first-defect detector. If it is noncompact, prove that its essential matrix elements on the exact boundary-kernel family are nonzero and source-controlled without importing the hypothetical divisor. A genuinely nonlinear arithmetic relation or another independently bounded boundary/source observable remains possible, but a fixed compact Hankel repair cannot supply the missing coercive quantum.
+
+Every proposal must still pass the finite Kunik Blaschke adversarial test. WI-437 is a one-defect/fixed-relative-depth compactness barrier, not a theorem that every noncompact operator works and not a full-zeta localization theorem. A successful passage to zeta must additionally handle the absence of a fixed probe depth to the left of all possible off-line zeros and derive the proposed essential coupling from admissible source information rather than from the target zero configuration.
