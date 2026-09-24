@@ -4,12 +4,12 @@
 
 ## Claim
 
-`MC-498` reduces the quadratic endpoint-only repeated-residue branch to the effective support of the actual weighted physical-start pushforward. Before computing the detailed first-exit reconstruction weights, there is a sharp elementary admission test that was missing from that criterion: **the repeated-residue source population itself caps the effective support**.
+`MC-498` reduces the quadratic endpoint-only repeated-residue branch to the effective support of the actual weighted physical-start pushforward. Before computing detailed first-exit reconstruction weights, the repeated-residue source population itself caps that support.
 
-Fix an odd prime conductor `p`, a repeated residue `a mod p`, and a dyadic label range
+Fix an odd prime conductor `p`, one repeated residue `a mod p`, and a dyadic label range
 
 \[
-Q\le q,r\le 2Q,
+Q\le q,r\le2Q,
 \qquad q\equiv r\equiv a\pmod p.
 \tag{1}
 \]
@@ -17,18 +17,18 @@ Q\le q,r\le 2Q,
 Let
 
 \[
-\mathcal Q_a(Q):=\{n\in[Q,2Q]\cap\mathbf Z:n\equiv a\pmod p\}.
+\mathcal Q_a(Q)=\{n\in[Q,2Q]\cap\mathbf Z:n\equiv a\pmod p\}.
 \tag{2}
 \]
 
-The actual first-exit primes form a subset of this integer set, so
+Then
 
 \[
-N_Q:=\#\mathcal Q_a(Q)\le 1+\frac Qp.
+N_Q:=\#\mathcal Q_a(Q)\le1+\frac Qp.
 \tag{3}
 \]
 
-For the physical endpoints from `MC-498`,
+For the physical first-exit endpoints from `MC-498`,
 
 \[
 u_q=\left\lceil\frac Xq\right\rceil,
@@ -39,16 +39,15 @@ x_{q,r}=\max(u_q,v_r).
 \tag{4}
 \]
 
-Give any selected nonempty overlap family arbitrary nonnegative pair weights `lambda_{q,r}` and let the induced start histogram modulo `p` be
+Give any selected nonempty overlap family arbitrary nonnegative pair weights `lambda_{q,r}` and let
 
 \[
-w(\xi):=
-\sum_{q,r}\lambda_{q,r}
-\mathbf 1_{x_{q,r}\equiv\xi\pmod p}.
+w(\xi)=\sum_{q,r}\lambda_{q,r}
+\mathbf1_{x_{q,r}\equiv\xi\pmod p}.
 \tag{5}
 \]
 
-Because every maximum in `(4)` is literally one of its two endpoints,
+Because every start in `(4)` is literally one of its two endpoints,
 
 \[
 \operatorname{supp}(w)
@@ -63,16 +62,15 @@ Therefore
 
 \[
 \#\operatorname{supp}(w)
-\le 2N_Q
-\le 2\left(1+\frac Qp\right).
+\le2N_Q
+\le2\left(1+\frac Qp\right).
 \tag{7}
 \]
 
-The effective start support of `MC-498`,
+The effective start support
 
 \[
-R_{\rm start}
-:=\frac{\|w\|_1^2}{\|w\|_2^2},
+R_{\rm start}=\frac{\|w\|_1^2}{\|w\|_2^2}
 \tag{8}
 \]
 
@@ -81,32 +79,29 @@ satisfies by Cauchy
 \[
 \boxed{
 R_{\rm start}
-\le \#\operatorname{supp}(w)
-\le 2\left(1+\frac Qp\right).
+\le2\left(1+\frac Qp\right).
 }
 \tag{9}
 \]
 
-This bound is independent of the reconstruction coefficients, overlap selector, primality restriction, and quotient-fibre geometry. Those can only reduce the effective support further.
-
-Now write the `MC-498` short-overlap tariff as
+After the Fourier-Parseval correction in `MC-497`, the `MC-498` dyadic short-overlap tariff is
 
 \[
-T_{p,H}
-:=
-\frac pH\log^2(2H)+\sqrt p\log(2H).
+\boxed{
+T_{p,H}:=\frac pH\log^2(2H).
+}
 \tag{10}
 \]
 
-Its maximal-second-moment estimate has the form
+and its weighted start-dispersion estimate is
 
 \[
 \frac{|B|}{M}
-\ll \sqrt{\frac{T_{p,H}}{R_{\rm start}}}.
+\ll\sqrt{\frac{T_{p,H}}{R_{\rm start}}}.
 \tag{11}
 \]
 
-Consequently, this particular start-dispersion mechanism can certify a fixed small normalized bias only if the available repeated-residue label population is itself larger than the threshold. Quantitatively, for any fixed target saving `delta>0`, feasibility of `(11)` requires
+Consequently, for this certificate to prove any fixed target saving `|B|/M<=delta`, a necessary feasibility condition is
 
 \[
 2\left(1+\frac Qp\right)
@@ -114,115 +109,107 @@ Consequently, this particular start-dispersion mechanism can certify a fixed sma
 \tag{12}
 \]
 
-Once `T_{p,H}` is large, this forces the scale condition
+Whenever `T_{p,H}` is larger than a fixed constant, this forces
 
 \[
 \boxed{
 Q\gg_\delta pT_{p,H}
 =
-\frac{p^2}{H}\log^2(2H)
-+p^{3/2}\log(2H).
+\frac{p^2}{H}\log^2(2H).
 }
 \tag{13}
 \]
 
-In particular, the `sqrt(p) log(2H)` term alone imposes a population floor of order
+The previous version contained an additional `p^{3/2} log(2H)` population floor. That term came entirely from the nonsharp `sqrt(p)H^2` contribution in the original `MC-497` lag-by-lag second moment and is removed by the corrected Fourier-Parseval diagonalization. The source-population obstruction itself remains: pair multiplicity cannot manufacture more physical endpoint starts than the two one-dimensional label families provide.
 
-\[
-Q\gg_\delta p^{3/2}\log(2H)
-\tag{14}
-\]
-
-for the `MC-497`/`MC-498` effective-support certificate to have enough possible physical starts to close a repeated-residue block by dispersion alone.
-
-The same obstruction is visible directly in the winning-endpoint criterion of `MC-498`. For its induced weights `gamma_q` and `delta_r`,
+The same ceiling applies to the winning-endpoint participation ratios of `MC-498`. For induced plus weights `gamma_q` and minus weights `delta_r`,
 
 \[
 \kappa_+
 =\frac{(\sum_q\gamma_q)^2}{\sum_q\gamma_q^2}
 \le \#\{q:\gamma_q>0\}
 \le N_Q,
+\tag{14}
+\]
+
+and similarly `kappa_-<=N_Q`. Since the quotient-fibre costs `D_+,D_-` are at least one,
+
+\[
+\frac{\kappa_\pm}{D_\pm}
+\le N_Q
+\le1+\frac Qp.
 \tag{15}
 \]
 
-and likewise `kappa_-<=N_Q`. Since the quotient-fibre costs `D_+,D_-` are at least one,
-
-\[
-\frac{\kappa_\pm}{D_\pm}\le N_Q\le1+\frac Qp.
-\tag{16}
-\]
-
-Thus the sufficient threshold `kappa_\pm/D_\pm \gg T_{p,H}` from `MC-498` is **structurally impossible** whenever the repeated-residue label population lies below `T_{p,H}`, regardless of how evenly the actual coefficients are distributed.
+Thus the sufficient `MC-498` threshold `kappa_\pm/D_\pm >> T_{p,H}` is structurally impossible whenever the source population lies below `T_{p,H}`, regardless of how evenly the actual coefficients are distributed.
 
 This is a method obstruction, not evidence for a true endpoint bias and not a bound for `M(x)`.
 
 ## Derivation
 
-The only arithmetic input is the size of one residue class inside a dyadic interval. The interval `[Q,2Q]` has length `Q`, so one congruence class modulo `p` contains at most `1+Q/p` integers. Restricting those integers to primes or to active first-exit labels only lowers the count, proving `(3)`.
+One residue class modulo `p` contains at most `1+Q/p` integers in an interval of length `Q`, proving `(3)`. Restricting those integers to primes or active first-exit labels only lowers the count.
 
-Equation `(6)` uses the exact first-exit geometry from `MC-498`: an overlap starts at `max(u_q,v_r)`, so no third start coordinate can be created by pairing. Pair multiplicity may be quadratic in the numbers of `q` and `r` labels, but the set of possible starts remains contained in the union of the two endpoint images. This is precisely where a large pair population fails to buy a large physical-start population.
+Equation `(6)` uses the exact first-exit geometry: an overlap starts at `max(u_q,v_r)`, so no third start coordinate is created by pairing. Pair multiplicity may be quadratic in the numbers of labels, but the set of possible starts remains contained in the union of the two endpoint images.
 
 For any nonnegative histogram supported on `S` residues,
 
 \[
 \left(\sum_\xi w(\xi)\right)^2
 \le S\sum_\xi w(\xi)^2,
-\tag{17}
+\tag{16}
 \]
 
-which gives `R_start<=S` and hence `(9)`. Equations `(12)`--`(14)` are then obtained by substituting the ceiling `(9)` into the `MC-498` estimate `(11)`. Equation `(16)` is the same Cauchy inequality before quotienting, applied separately to the winning-endpoint label weights.
+which proves `(9)`. Substitution into `(11)` yields `(12)`--`(13)`.
 
-No distribution theorem for primes in progressions, floor quotients, or exceptional character-sum starts is required for this ceiling.
+No distribution theorem for primes in progressions, floor quotients, or exceptional character-sum starts is needed.
 
 ## What changes in the MC-498 decisive test
 
-A failed `kappa/D` threshold does **not** always diagnose concentration of the true reconstruction coefficients. There are now two qualitatively different failure regimes.
+A failed `kappa/D` threshold has two distinct interpretations.
 
 If
 
 \[
 1+Q/p\lesssim T_{p,H},
-\tag{18}
+\tag{17}
 \]
 
-then low effective start support is forced already by source cardinality. Even perfectly flat weights on every available repeated-residue label cannot supply enough start participation for the maximal-second-moment argument. In this regime, describing the failure as “coefficient localization” or an “arithmetic concentration on exceptional starts” would overinterpret the data: the ambient source family is simply too small relative to the exceptional-set energy threshold.
+then low effective start support is forced already by source cardinality. Even perfectly flat weights on every available repeated-residue label cannot supply enough start participation for the maximal-second-moment certificate. Calling such a failure “coefficient localization” would overinterpret it.
 
 Only after
 
 \[
 1+Q/p\gg T_{p,H}
-\tag{19}
+\tag{18}
 \]
 
-becomes feasible does the detailed `MC-498` computation of `kappa_\pm/D_\pm` become diagnostic. A failure there can genuinely be attributed to coefficient concentration, quotient folding, imbalance between the winning sides, or another feature of the exact reconstruction.
+becomes feasible does the detailed `MC-498` computation of `kappa_\pm/D_\pm` become diagnostic of coefficient concentration, quotient folding, side imbalance, or another feature of the exact reconstruction.
 
-This split makes the next endpoint audit cheaper: test the population gate `(18)` first, and compute detailed reconstruction participation only on blocks that pass it.
+The efficient endpoint audit is therefore: source-population gate first, exact participation/fibre calculation second.
 
 ## Prior art and novelty boundary
 
-The inequality `(17)` is the elementary Cauchy bound behind the standard inverse-squared-weight effective-sample-size / participation-ratio quantity. The use of
+The participation-ratio inequality `(16)` is elementary Cauchy and standard effective-sample-size bookkeeping. Floor-quotient sets and their arithmetic-progression distribution have an established literature, but no such theorem is needed for `(3)` or `(6)`.
 
-\[
-(\sum w)^2/\sum w^2
-\]
-
-as an effective sample size is standard; for example, Martino, Elvira and Louzada discuss the inverse sum of squared normalized importance weights in *Effective Sample Size for Importance Sampling based on discrepancy measures* (2017; arXiv:1602.03572). No novelty is claimed for that inequality or interpretation.
-
-Floor-quotient sets such as `{floor(x/n)}` and their residue-class distribution also have an established literature; for example Yu and Wu, *Distribution of elements of a floor function set in arithmetical progression* (arXiv:2112.14427), study a substantially sharper distribution problem. None of those results is needed here: `(3)` is only the trivial count of source labels in one residue class, and `(6)` uses the exact first-exit maximum map already proved in `MC-498`.
-
-The Mathia-specific contribution of this finding is therefore only the **exact specialization of those elementary support facts to the `MC-498` source-frame certificate** and the resulting method boundary `(12)`--`(14)`. It is recorded because it changes how a future failure of the accepted clue's participation-ratio test must be interpreted, not as a claim of a new general theorem.
+No novelty is claimed for those ingredients. The durable Mathia result is their specialization to the exact `MC-498` physical start map and, after the corrected `MC-497`/`MC-498` tariff, the necessary scale `(13)`.
 
 ## Boundaries and failure modes
 
-- `(9)` is an upper bound on the effective support available to the `MC-497`/`MC-498` second-moment method. It does not lower-bound the actual endpoint bias.
-- A block below the population threshold may still have tiny true bias for reasons invisible to this certificate. Stronger incomplete character-sum information, a different norm, or arithmetic cancellation inside the source weights could close it.
-- Pooling different source residue classes before the repeated-residue reduction can enlarge the start population, but it also changes the cross-root phase organization. Such pooling must be derived before importing this count across blocks.
-- The lower-prime pair-sieve masks retained by `MC-495` are not endpoint-only data and are untouched by this obstruction.
-- When `(19)` holds, the population ceiling is no longer decisive; the actual winning-endpoint weights and quotient fibres from `MC-498` remain load-bearing.
-- The prime restriction can only make the source-population ceiling smaller than `(9)`, so no prime-distribution irregularity can invalidate the obstruction.
+- `(9)` caps only the effective support available to the `MC-497`/`MC-498` second-moment method. It does not lower-bound the true endpoint bias.
+- A block below the population threshold may still have tiny true bias for stronger arithmetic reasons invisible to this certificate.
+- Pooling different source residue classes changes the cross-root phase organization and is outside this repeated-residue count.
+- Lower-prime pair-sieve masks retained by `MC-495` are not endpoint-only data and remain untouched.
+- When `(18)` holds, source cardinality is no longer decisive; the actual winning-endpoint weights and quotient fibres remain load-bearing.
+- Restricting labels to primes only reduces the source-population ceiling, so prime-distribution irregularity cannot invalidate the obstruction.
 
 ## Consequence
 
-The accepted endpoint clue should be triaged in two stages. First compare each material dyadic repeated-residue block with the cheap source-population gate `1+Q/p` versus `T_{p,H}`. Blocks below threshold cannot be closed by the current start-dispersion certificate and should be classified as **method-limited by population**, not as unexplained coefficient concentration. Only blocks above threshold merit the more expensive exact `kappa_\pm/D_\pm` reconstruction audit.
+The endpoint branch should first compare every material dyadic repeated-residue block with the corrected population threshold
 
-If every material block falls below the population gate, then the endpoint-only continuation cannot be settled by further refinement of the same `MC-497` exceptional-start second moment: a genuinely stronger character-sum input or a different surviving arithmetic channel is required.
+\[
+1+Q/p
+\quad\text{versus}\quad
+\frac pH\log^2(2H).
+\]
+
+Blocks below threshold are method-limited by population. Only blocks above it merit the more expensive `MC-498` reconstruction audit. `MC-500` removes the dyadic scale `Q` entirely and shows when no choice of first-exit scale can satisfy even this admission test.

@@ -19,11 +19,7 @@ R_c(m)=\chi(m^2-c^2)\quad(m\ne0),
 \tag{1}
 \]
 
-where the values at `m=plusminus c` vanish automatically. This is the same rational-character phase as `chi(1-t^{-2})` after the conductor scaling `t=am h^{-1}`, but the present formulation deliberately keeps the **physical additive `m` coordinate**, because source intervals are consecutive in `m` and conductor scaling does not preserve additive intervals.
-
-`MC-496` shows that endpoint-only overlap intervals of length much larger than `p^{1/2}\log p` cannot create order-one bias by classical completion. In the quadratic-character case, the remaining short-overlap branch has a further exact restriction: **large interval bias is possible only at a sparse exceptional set of physical interval starts.**
-
-The complete mean is
+where the values at `m=\pm c` vanish automatically. Its complete mean is
 
 \[
 \mu_c=\frac1p\sum_{m\bmod p}R_c(m)
@@ -31,19 +27,20 @@ The complete mean is
 \tag{2}
 \]
 
-For `1<=H<=p` and `x in F_p`, put
+For `1<=H<=p` and `x in F_p`, let
 
 \[
 S_{c,x}(H)=\sum_{j=1}^{H}\bigl(R_c(x+j)-\mu_c\bigr),
 \tag{3}
 \]
 
-where the interval is read cyclically modulo `p`. Then uniformly in `c ne 0`,
+with cyclic intervals modulo `p`. Then, uniformly in `c ne 0`,
 
 \[
 \boxed{
-\frac1p\sum_{x\bmod p}|S_{c,x}(H)|^2
-\ll H+\frac{H^2}{\sqrt p}.
+\sum_{x\bmod p}|S_{c,x}(H)|^2\ll pH,
+\qquad
+\frac1p\sum_x|S_{c,x}(H)|^2\ll H.
 }
 \tag{4}
 \]
@@ -59,172 +56,138 @@ then
 \[
 \boxed{
 \frac{|E_{c,H}(\eta)|}{p}
-\ll \frac1{\eta^2}\left(\frac1H+\frac1{\sqrt p}\right).
+\ll \frac1{\eta^2H}.
 }
 \tag{5}
 \]
 
-Thus as soon as `H -> infinity`, an order-one normalized endpoint bias is confined to a vanishing fraction of physical conductor starts, even when `H` is far below the worst-case Pólya--Vinogradov scale `sqrt(p) log p` used in `MC-496`.
+Thus an order-one normalized endpoint bias at a fixed short length can occur only on `O_eta(p/H)` physical conductor starts. This is stronger than the earlier autocorrelation expansion, which bounded the same mean square by `pH+sqrt(p)H^2`; that extra `sqrt(p)H^2` term is not intrinsic. Fourier diagonalization exposes cancellation between the nonzero shifts and removes the artificial `p^{-1/2}` exceptional-density floor.
 
-This does **not** give a uniform short-interval bound. It instead converts the unresolved endpoint-only escape into a source-distribution requirement. For any finite collection of physical source intervals `J_i` for the same repeated-residue block, with lengths `H_i`, starts `x_i (mod p)`, and nonnegative reconstruction weights `c_i`, write
-
-\[
-M=\sum_i c_iH_i,
-\qquad
-B=\sum_i c_i S_{c,x_i}(H_i).
-\tag{6}
-\]
-
-If `|B|>=epsilon M`, then with `eta=epsilon/2`, at least an `epsilon/2` fraction of the weighted interval mass must lie on intervals satisfying
-
-\[
-|S_{c,x_i}(H_i)|\ge \frac\epsilon2 H_i.
-\tag{7}
-\]
-
-Indeed, the complementary intervals contribute at most `(epsilon/2)M`, while every centered interval sum is bounded by a constant multiple of its length; adjusting the absolute constant in `eta` if necessary leaves the same fixed-fraction conclusion. Therefore a quadratic endpoint-only mechanism below the `MC-496` completion threshold must make the **actual first-exit overlap starts concentrate on the exceptional physical conductor sets `(5)`**. Merely producing many short overlaps is not enough.
+This remains an **average-over-start** theorem, not a uniform short-character-sum bound. It therefore does not conflict with the lack of a general Burgess-scale theorem for one-variable inhomogeneous polynomial character sums.
 
 No estimate for `M(x)`, zero-free region, or RH follows.
 
-## 1. Quadratic specialization in the physical source coordinate
+## 1. Exact centering and the one-point defect
 
 Define
 
 \[
-Q_c(m)=\chi(m^2-c^2)
-=\chi(m-c)\chi(m+c)
-\tag{8}
+Q_c(m)=\chi(m^2-c^2).
+\tag{6}
 \]
 
-for all `m in F_p`. The classical quadratic character-sum identity gives
+The classical quadratic identity gives
 
 \[
 \sum_{m\bmod p}Q_c(m)=-1.
+\tag{7}
+\]
+
+Since `Q_c(0)=chi(-1)` while `R_c(0)=0`, one has exactly
+
+\[
+F_c(m):=R_c(m)-\mu_c
+=Q_c(m)+\frac1p
+-\chi(-1)\left(\mathbf 1_{m=0}-\frac1p\right).
+\tag{8}
+\]
+
+In particular `sum_m F_c(m)=0`.
+
+## 2. Fourier-Weil diagonalization gives the sharp start mean square
+
+Use the unnormalized additive Fourier transform
+
+\[
+\widehat F_c(k)=\sum_{m\bmod p}F_c(m)e_p(-km),
+\qquad e_p(y)=e^{2\pi i y/p}.
 \tag{9}
 \]
 
-The exact source phase `R_c` differs from `Q_c` only at `m=0`, where
+The zero mode vanishes by centering. For `k ne 0`, equation `(8)` gives
 
 \[
-Q_c(0)=\chi(-c^2)=\chi(-1),
-\qquad
-R_c(0)=0.
+\widehat F_c(k)
+=\sum_{m\bmod p}\chi(m^2-c^2)e_p(-km)-\chi(-1).
 \tag{10}
 \]
 
-Thus `R_c-mu_c` differs from `Q_c+1/p` by the centered one-point mass
+The polynomial `m^2-c^2` has two distinct simple roots because `c ne0`, and it is not a square in `F_p[m]`. The classical Weil bound for mixed additive-multiplicative character sums of bounded-degree rational/polynomial phases, as recorded in `MC-S55`, therefore yields
 
 \[
--\chi(-1)\left(\mathbf 1_{m=0}-\frac1p\right).
+\boxed{
+|\widehat F_c(k)|\ll\sqrt p
+\qquad(k\ne0),
+}
 \tag{11}
 \]
 
-For an interval of length `H<=p`, the sum of `(11)` has total start-mean-square `O(H)`. It therefore does not change the scale in `(4)`.
+uniformly in `c` and `k`; the one-point defect contributes only the bounded scalar in `(10)`.
 
-The representation `(8)` exposes the relevant Legendre autocorrelation without changing the source coordinate. This point is essential: the normalization `t=am h^{-1}` is a bijection of `F_p` and is harmless for complete sums, but a consecutive interval in `m` becomes an arithmetic progression of step `a h^{-1}` in `t`, not a consecutive interval. The second-moment argument below is therefore carried out directly for `Q_c(m)`.
-
-## 2. Complete shifted correlations give the second moment
-
-For `d in F_p`, define
+Let
 
 \[
-C_c(d)=\sum_{m\bmod p}Q_c(m)Q_c(m+d).
+D_H(k)=\sum_{j=1}^{H}e_p(kj).
 \tag{12}
 \]
 
-At `d=0`,
+Fourier inversion and Parseval give
 
 \[
-C_c(0)=p-2.
+\sum_x|S_{c,x}(H)|^2
+=\frac1p\sum_{k\ne0}|\widehat F_c(k)|^2|D_H(k)|^2.
 \tag{13}
 \]
 
-For `d ne 0, plusminus 2c`, the product
+Since
 
 \[
-(m^2-c^2)((m+d)^2-c^2)
+\sum_{k\bmod p}|D_H(k)|^2=pH,
 \tag{14}
 \]
 
-has four distinct roots and is not a square, so the classical Weil bound gives
+substitution of `(11)` proves `(4)` immediately. Chebyshev then gives `(5)`.
 
-\[
-C_c(d)=O(\sqrt p).
-\tag{15}
-\]
-
-For `d=plusminus2c`, one root is doubled; removing the square factor leaves a nondegenerate quadratic character sum, so in fact `C_c(d)=O(1)`. Hence `(15)` holds uniformly for every nonzero `d` and every `c ne0`.
-
-Centering `Q_c` changes each complete correlation only by `O(1/p)`. Expanding the square in a physical interval of length `H` therefore gives
-
-\[
-\sum_{x\bmod p}
-\left|\sum_{j=1}^{H}(Q_c(x+j)+1/p)\right|^2
-\ll pH+\sqrt p\,H^2.
-\tag{16}
-\]
-
-The centered point defect `(11)` has start-mean-square `O(H)`. Using `|A+B|^2<=2|A|^2+2|B|^2` proves `(4)`, and Chebyshev immediately gives `(5)`.
-
-The bound is intentionally average-over-start rather than uniform. It says that below the completion threshold the obstruction cannot be generic endpoint geometry: it must be arithmetic concentration of the **actual physical source starts** on a sparse exceptional set.
+The earlier shifted-correlation proof bounded each nonzero lag separately by `O(sqrt(p))` and then summed absolute values over all lags. Equation `(13)` is the correct spectral organization of the same second moment: it keeps the signed correlation information through the Fourier transform instead of discarding it lag by lag.
 
 ## 3. Weighted endpoint consequence
 
-Take the exact endpoint-only expansion from `MC-496` after grouping one repeated-residue opposite-root contribution into its physical `m`-interval intersections. The weights multiplying those interval sums are nonnegative. Centering contributes only `mu_c M=O(M/p)`, so an order-one negative cross-root term requires an order-one centered aggregate `B` as in `(6)`.
-
-Split the intervals into good and bad according to `(7)`. Up to the harmless fixed centering constant described above, the good contribution is at most a fixed fraction of `M`. Therefore a fixed order-one total bias forces a fixed fraction of the weighted interval mass onto bad intervals. Equation `(5)` says that, at any fixed length `H`, the available bad physical starts occupy only
+For any finite family of physical source intervals `J_i` of the same length `H`, starts `x_i mod p`, and nonnegative reconstruction weights `lambda_i`, put
 
 \[
-O_\epsilon\left(p/H+\sqrt p\right)
-\tag{17}
+M=H\sum_i\lambda_i,
+\qquad
+B=\sum_i\lambda_i S_{c,x_i}(H).
+\tag{15}
 \]
 
-residue classes.
+If `|B|>=epsilon M`, then a fixed positive fraction of the weighted interval mass must lie on starts in `E_{c,H}(eta)` for a fixed `eta>0` depending only on `epsilon`. Equation `(5)` shows that only `O_epsilon(p/H)` conductor residues are available to carry that mass.
 
-This is the new proof obligation. A surviving source mechanism must show that the exact first-exit endpoint map sends a substantial fraction of its reconstruction mass into those rare classes, or else use the lower-prime pair-sieve/internal arithmetic or a genuinely `q`-dependent pre-aggregation sign/phase that lies outside the endpoint-only model.
+For variable lengths inside one dyadic band, the appropriate uniform weighted statement is the maximal estimate derived in `MC-498`. The strengthened fixed-length input `(4)` removes the old `sqrt(p)` floor from that tariff as well.
 
-## 4. Why ordinary Burgess is not a free replacement
+## 4. Relation to the long-overlap completion bound
 
-There is a tempting but invalid shortcut: transform `(8)` into an ordinary character and then apply the classical Burgess bound for `sum chi(n)`. For `m ne -c`, set
+`MC-496` gives a worst-case endpoint-only bound by Fourier completion, ruling out order-one endpoint bias once weighted overlap lengths are much larger than `sqrt(p) log p`. The present result is complementary: for shorter intervals it does not bound every start, but it shows that large bias can occur only on a `O(1/H)` fraction of starts.
 
-\[
-u=\frac{m-c}{m+c}.
-\tag{18}
-\]
-
-Then, away from the exceptional points,
-
-\[
-\chi(m^2-c^2)=\chi(u),
-\tag{19}
-\]
-
-because the remaining factor `4c^2/(1-u)^2` is a square. But an additive interval in the physical variable `m` becomes a fractional-linear image in `u`, not an additive interval. The ordinary one-dimensional Burgess theorem therefore does not transfer by this coordinate change.
-
-The literature boundary is consistent with that distinction. Mauduit and Sárközy's classical Legendre-sequence work (*Acta Arithmetica* 82 (1997), 365--377, DOI `10.4064/aa-82-4-365-377`) and subsequent pseudorandom-sequence literature give the familiar `O(sqrt(p) log p)` worst-case aperiodic-correlation scale. Rena Chu's recent *Short character sums of inhomogeneous polynomials* (arXiv:`2609.04092`, submitted 3 September 2026) explicitly notes that nontrivial short bounds for one-variable inhomogeneous polynomial character sums remain open in general, giving `X^2+1` as an example. That statement does **not** prove that the special reducible polynomial `X^2-c^2` is itself an open case, and the present finding makes no such claim. A targeted audit did not identify a theorem that supplies a Burgess-scale worst-case bound for this exact shifted Legendre autocorrelation.
-
-So `(4)`--`(5)` should not be read as a substitute for a missing uniform theorem. Their value is different: they prove that the only short physical endpoint intervals capable of mattering are exceptional starts, and they quantify how sparse those starts are.
+The two statements use the same underlying square-root complete Fourier control in different norms. `MC-496` sums the Fourier envelope in `l1` to obtain a worst-case incomplete interval bound; `(13)` uses Parseval in `l2` to obtain a stronger average-over-start statement.
 
 ## Prior art and novelty boundary
 
-- Complete quadratic and quartic character-sum bounds used in `(12)`--`(16)` are classical Weil theory; no novelty is claimed.
-- Mean-square expansion over interval starts and Chebyshev are classical harmonic/probabilistic bookkeeping.
-- Aperiodic Legendre autocorrelation and higher correlation measures are established pseudorandom-sequence topics; the classical `sqrt(p) log p` worst-case completion scale predates this line.
-- Chu's 2026 result is cited only as a boundary on importing a generic inhomogeneous-polynomial Burgess theorem. It is not evidence that this special reducible polynomial has no stronger theorem.
-- The durable Mathia delta is the specialization of those classical ingredients to the exact `MC-495` cross-root phase **in the physical source coordinate** and the resulting source-frame admission condition: below the `MC-496` completion threshold, endpoint-only cancellation requires weighted concentration of actual first-exit interval starts on the exceptional sets `(5)`.
+- Complete mixed additive-multiplicative character bounds are classical Weil/Stepanov theory. `MC-S55` records Cochrane--Pinner, *Using Stepanov's method for exponential sums involving rational functions*, Journal of Number Theory 116 (2006), 270--292, DOI `10.1016/j.jnt.2005.04.001`.
+- The Fourier-envelope plus Parseval mechanism is already used elsewhere in this line, notably `MC-448`; no novelty is claimed for that harmonic argument.
+- Mean-square exceptional-set extraction by Chebyshev is standard.
+- Rena Chu, *Short character sums of inhomogeneous polynomials* (arXiv:`2609.04092`, submitted 3 September 2026), is relevant only to the boundary between average-over-start information and uniform one-variable short-sum bounds. The present result does not claim a new uniform Burgess theorem.
+- The durable Mathia result is the specialization to the exact `MC-495` physical cross-root phase and the resulting source-frame obstruction: short endpoint-only bias requires the actual first-exit start measure to concentrate on only `O(p/H)` conductor starts.
 
 ## Boundaries and falsification tests
 
-- **Quadratic character only.** The factorization `(8)` and especially clean autocorrelation calculation use `chi^2=1`. Higher-order characters need their own shifted-rational correlation audit.
-- **Physical additive coordinate.** The theorem controls consecutive intervals in the shortened source variable `m`. Conductor scaling is used only for complete identities; it must not be used to turn a physical interval into a unit-step interval in another coordinate.
-- **Average over starts, not a maximum.** A single adversarial start may still have a large short sum. This finding cannot close the short-overlap branch without source information on where its starts land.
-- **Endpoint-only model.** Internal pair-sieve variation inside the overlap interval, or a source-derived `q`-dependent sign/phase before aggregation, is intentionally outside the theorem.
-- **Cyclic conductor intervals.** Integer `m`-intervals of length at most `p` descend directly to the cyclic model modulo `p`; endpoint defects at the singular classes change only `O(1)` terms.
-- **No independence assumption.** Equation `(5)` is deterministic. Conversely, treating first-exit starts as random without proving a source-distribution statement would add an unsupported hypothesis.
-- **Worst-case Burgess remains unimported.** Any future use of a sub-square-root uniform estimate must cite a theorem whose hypotheses cover the exact shifted-product/rational phase, not merely ordinary `sum chi(n)`.
+- **Quadratic character only.** The factorization and bounded-degree Fourier transform are used for the quadratic repeated-residue phase. Higher-order characters require their own transform audit.
+- **Physical additive coordinate.** Consecutive source intervals are intervals in `m`; conductor scaling is harmless for complete sums but must not be used to replace a physical interval by a unit-step interval in another coordinate.
+- **Average over starts, not a maximum.** Individual adversarial starts may still carry large short sums.
+- **Endpoint-only implication.** Lower-prime pair-sieve masks, signed or complex pre-aggregation coefficients, and other internal source arithmetic can create non-interval weights and lie outside this theorem.
+- **No independence assumption.** The theorem does not model Möbius or the source starts as random; it only prices how much weighted source mass may occupy a sparse exceptional set.
+- **No Möbius summatory conclusion.** This is a finite conductor obstruction inside the normalized first-exit architecture.
 
 ## Consequence for the research line
 
-The endpoint-only loophole from `MC-496` is now split cleanly in the exact source coordinate. Long overlaps are uniformly harmless by completion; short overlaps can be dangerous only if the actual source endpoint map concentrates reconstruction mass on a sparse exceptional set of physical conductor starts. The next meaningful endpoint calculation is therefore **not another generic character-sum estimate**: it is the distribution, with the true first-exit weights retained, of the physical start residues of the overlap intervals relative to the exceptional sets in `(5)`.
-
-If that source map is sufficiently dispersed, the endpoint-only branch closes even below the Pólya--Vinogradov threshold. If it is not, the concentration pattern itself becomes a concrete arithmetic object to explain. In parallel, the lower-prime pair-sieve profile and genuinely `q`-dependent pre-aggregation asymmetry remain independent live channels.
+The short quadratic endpoint branch is narrower than previously recorded. At fixed length `H`, the exceptional-start density is `O(1/H)`, with no residual `p^{-1/2}` floor. The next source-frame question is therefore purely arithmetic: whether the exact first-exit endpoint map and reconstruction weights can concentrate enough mass on those rare physical start residues. `MC-498` prices that question for variable lengths and quotient fibres using the corrected Fourier-Parseval input.

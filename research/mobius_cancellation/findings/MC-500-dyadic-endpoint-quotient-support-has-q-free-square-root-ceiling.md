@@ -4,19 +4,17 @@
 
 ## Claim
 
-`MC-499` shows that the `MC-497`/`MC-498` endpoint-dispersion certificate can fail before any coefficient audit because one repeated conductor residue contains only `O(1+Q/p)` labels in a dyadic block `Q<=q<=2Q`. There is a second, opposite source-cardinality constraint that becomes stronger when `Q` is large: the physical endpoint quotient `ceil(Z/q)` itself has only `O(1+Z/Q)` possible values on that dyadic block.
+`MC-499` shows that the endpoint-dispersion certificate can fail before any coefficient audit because one repeated conductor residue contains only `O(1+Q/p)` labels in a dyadic block `Q<=q<=2Q`. There is an opposite source-cardinality constraint when `Q` is large: the physical endpoint quotient `ceil(Z/q)` has only `O(1+Z/Q)` possible values on that block. Combining the two gives a `Q`-free ceiling on the effective physical-start population.
 
-Combining the two constraints gives a **Q-free ceiling** on the number of physical start residues available to the endpoint-only branch.
-
-Fix an odd prime conductor `p`, a repeated residue `a mod p`, a dyadic label range
+Fix an odd prime conductor `p`, one repeated residue `a mod p`, a dyadic label range
 
 \[
-Q\le q,r\le 2Q,
+Q\le q,r\le2Q,
 \qquad q\equiv r\equiv a\pmod p,
 \tag{1}
 \]
 
-and a positive source interval `[X,X+Y]` with `X+h>0`. As in `MC-498`, define
+and positive source endpoints `X` and `X+h`. Define
 
 \[
 u_q=\left\lceil\frac Xq\right\rceil,
@@ -27,22 +25,17 @@ x_{q,r}=\max(u_q,v_r).
 \tag{2}
 \]
 
-Let any selected family of nonempty overlaps carry arbitrary nonnegative pair weights `lambda_{q,r}`, and let
+Give any selected family of nonempty overlaps arbitrary nonnegative pair weights `lambda_{q,r}` and put
 
 \[
 w(\xi)=\sum_{q,r}\lambda_{q,r}
-\mathbf 1_{x_{q,r}\equiv\xi\pmod p}
+\mathbf1_{x_{q,r}\equiv\xi\pmod p},
+\qquad
+R_{\rm start}=\frac{\|w\|_1^2}{\|w\|_2^2}.
 \tag{3}
 \]
 
-be the weighted physical-start histogram modulo `p`. Put
-
-\[
-R_{\rm start}=\frac{\|w\|_1^2}{\|w\|_2^2}.
-\tag{4}
-\]
-
-For every `Z>0`, the endpoint image of one repeated-residue label family satisfies
+For every `Z>0`,
 
 \[
 \boxed{
@@ -57,10 +50,10 @@ Q\le q\le2Q,
 \ 2+\frac{Z}{2Q}
 \right).
 }
-\tag{5}
+\tag{4}
 \]
 
-The same bound holds a fortiori after restricting `q` to primes or active first-exit labels. Since every overlap start in `(2)` is literally one of the two endpoint values,
+The same bound holds after restricting `q` to primes or active first-exit labels. Since each physical overlap start is one of its two endpoint values,
 
 \[
 \boxed{
@@ -70,115 +63,87 @@ R_{\rm start}
 +
 \min\left(1+\frac Qp,2+\frac{X+h}{2Q}\right).
 }
-\tag{6}
+\tag{5}
 \]
 
 Using
 
 \[
-\min(1+x,2+y)
-\le 2+\min(x,y)
-\le2+\sqrt{xy},
-\tag{7}
+\min(1+x,2+y)\le2+\min(x,y)\le2+\sqrt{xy}
+\tag{6}
 \]
 
-with `x=Q/p` and `y=Z/(2Q)` removes the dyadic scale entirely:
+removes `Q`:
 
 \[
-\boxed{
 R_{\rm start}
 \le
 4+\sqrt{\frac{X}{2p}}
-+\sqrt{\frac{X+h}{2p}}.
-}
-\tag{8}
++
+\sqrt{\frac{X+h}{2p}}.
+\tag{7}
 \]
 
-In particular, with
+With
 
 \[
 Z_*:=\max(X,X+h),
 \]
 
-one has the simpler ceiling
+this gives the simpler ceiling
 
 \[
 \boxed{
 R_{\rm start}
-\le 4+\sqrt{\frac{2Z_*}{p}}.
+\le4+\sqrt{\frac{2Z_*}{p}}.
+}
+\tag{8}
+\]
+
+Thus varying the dyadic first-exit scale cannot make the available endpoint-start population arbitrarily large: small `Q` is label-limited, large `Q` is quotient-compression-limited, and the best possible scale is at most `O(sqrt(Z_*/p))`.
+
+After the Fourier-Parseval correction in `MC-497`, the `MC-498` maximal-second-moment tariff is
+
+\[
+\boxed{
+T_{p,H}:=\frac pH\log^2(2H).
 }
 \tag{9}
 \]
 
-Thus changing `Q` cannot make the effective physical-start population arbitrarily large. Small `Q` is limited by the number of labels in one residue class; large `Q` is limited by reciprocal-quotient compression. The best possible support scale occurs only near the hyperbola balance `Q/p approx Z_*/Q`, namely `Q approx sqrt(pZ_*)`, and is at most order `sqrt(Z_*/p)`.
-
-Now write the `MC-498` maximal-second-moment tariff as
-
-\[
-T_{p,H}
-:=
-\frac pH\log^2(2H)+\sqrt p\log(2H).
-\tag{10}
-\]
-
-Its endpoint-only estimate is
+and
 
 \[
 \frac{|B|}{M}
-\ll
-\sqrt{\frac{T_{p,H}}{R_{\rm start}}}.
-\tag{11}
+\ll\sqrt{\frac{T_{p,H}}{R_{\rm start}}}.
+\tag{10}
 \]
 
 Therefore, for this certificate to prove a fixed target bound `|B|/M<=delta`, a necessary feasibility condition is
 
 \[
-\boxed{
 T_{p,H}
 \ll_\delta
 4+\sqrt{\frac{2Z_*}{p}}.
+\tag{11}
+\]
+
+Once `T_{p,H}` is larger than a fixed constant depending only on `delta`, equation `(11)` forces the `Q`-free source-height gate
+
+\[
+\boxed{
+Z_*
+\gg_\delta
+pT_{p,H}^2
+=
+\frac{p^3}{H^2}\log^4(2H).
 }
 \tag{12}
 \]
 
-Once `T_{p,H}` is larger than a fixed constant depending only on `delta`, `(12)` forces the Q-free source-height gate
+The previous version also displayed a separate necessary term `Z_* >> p^2 log^2(2H)`. That term came from the nonsharp `sqrt(p) log(2H)` contribution in the old `MC-498` tariff and is removed by the corrected Fourier-Parseval second moment. The surviving source-height obstruction `(12)` is still strong in the unresolved short-overlap regime. Near the `MC-496` completion boundary, where `H` is comparable to `sqrt(p) log p`, it is already of order `p^2` times logarithmic factors; for shorter `H` it becomes stronger.
 
-\[
-\boxed{
-Z_*
-\gg_\delta
-p\,T_{p,H}^2.
-}
-\tag{13}
-\]
-
-Two immediate necessary consequences are
-
-\[
-\boxed{
-Z_*
-\gg_\delta
-p^2\log^2(2H)
-}
-\tag{14}
-\]
-
-from the `sqrt(p) log(2H)` term, and
-
-\[
-\boxed{
-Z_*
-\gg_\delta
-\frac{p^3}{H^2}\log^4(2H)
-}
-\tag{15}
-\]
-
-from the `p/H` term.
-
-Hence there is a parameter regime where **no dyadic first-exit scale `Q` can make the current exceptional-start dispersion certificate succeed**, even under perfectly flat reconstruction weights: if the source height is below the Q-free threshold `(13)`, increasing `Q` to gain more repeated-residue labels loses physical quotient values at the reciprocal rate, while decreasing `Q` restores quotient values but loses labels.
-
-This is a ceiling on the `MC-497`/`MC-498` proof method, not evidence that the true endpoint bias is large and not a bound for `M(x)`.
+Hence there remains a parameter regime where **no dyadic first-exit scale `Q` can make the current exceptional-start dispersion certificate succeed**, even under perfectly flat reconstruction weights. This is a ceiling on the proof method, not evidence that the true endpoint bias is large and not a bound for `M(x)`.
 
 ## 1. Exact dyadic quotient-value count
 
@@ -188,7 +153,7 @@ For fixed `Z>0`, the map
 q\mapsto\left\lceil\frac Zq\right\rceil
 \]
 
-is nonincreasing. On `Q<=q<=2Q`, every attained value lies between
+is nonincreasing. On `Q<=q<=2Q`, every attained integer lies between
 
 \[
 \left\lceil\frac{Z}{2Q}\right\rceil
@@ -196,23 +161,19 @@ is nonincreasing. On `Q<=q<=2Q`, every attained value lies between
 \left\lceil\frac ZQ\right\rceil.
 \]
 
-Therefore the total number of possible **integer quotient values**, even before imposing a residue condition on `q`, is at most
+Therefore the total number of possible quotient values, before imposing a residue condition, is at most
 
 \[
 \left\lceil\frac ZQ\right\rceil
 -
-\left\lceil\frac{Z}{2Q}\right\rceil
-+1
-\le
-2+\frac{Z}{2Q}.
-\tag{16}
+\left\lceil\frac{Z}{2Q}\right\rceil+1
+\le2+\frac{Z}{2Q}.
+\tag{13}
 \]
 
-Independently, one residue class modulo `p` contains at most `1+Q/p` integers in `[Q,2Q]`. The endpoint image cannot contain more values than labels, so taking the minimum proves `(5)`.
+Independently, one residue class modulo `p` contains at most `1+Q/p` integers in `[Q,2Q]`. The endpoint image cannot contain more values than source labels, so the minimum of the two bounds proves `(4)`.
 
-This is deliberately weaker than refined distribution theorems for floor-quotient sets. Its advantage here is that it is exact enough for the source-frame admission test and requires no distribution result for primes in arithmetic progressions.
-
-## 2. Pair multiplicity cannot exceed the union of endpoint images
+## 2. Pair multiplicity cannot exceed the endpoint images
 
 Equation `(2)` gives
 
@@ -222,67 +183,75 @@ Equation `(2)` gives
 \{u_q\bmod p\}
 \cup
 \{v_r\bmod p\}.
-\tag{17}
+\tag{14}
 \]
 
-Reduction modulo `p` can only identify quotient values, never create new ones. Hence `(5)` on the two endpoint families gives the support bound in `(6)`. As in `MC-499`, Cauchy gives
+Reduction modulo `p` can only identify quotient values. Applying `(4)` to the two endpoint families yields `(5)`, while Cauchy gives
 
 \[
-R_{\rm start}
-\le \#\operatorname{supp}(w),
-\tag{18}
+R_{\rm start}\le\#\operatorname{supp}(w).
+\tag{15}
 \]
 
-so pair multiplicity, overlap selection, primality, and reconstruction coefficients cannot enlarge the right side of `(6)`.
+The geometric-mean inequality `(6)` then proves `(7)`--`(8)`. The square-root scale is exactly the balance between the label resource `Q/p` and the quotient-value resource `Z/Q`.
 
-The Q-free form `(8)` is just the elementary inequality `(7)`. For one endpoint, increasing `Q` raises the label ceiling `Q/p` while lowering the quotient-range ceiling `Z/Q`. Their minimum is maximized near the geometric-mean balance, which produces the square-root scale `sqrt(Z/p)`. Summing the two root endpoints gives `(8)` and `(9)`.
+## 3. Consequence for the corrected MC-498 certificate
 
-## 3. Consequence for the MC-498 certificate
+The endpoint certificate can prove a fixed saving only when `R_start` exceeds a fixed `delta`-dependent multiple of `T_{p,H}`. Substituting `(8)` gives `(11)`, and squaring after the constant term is dominated gives `(12)`.
 
-The estimate `(11)` can certify a fixed small normalized bias only if `R_start` is larger than a fixed `delta`-dependent multiple of `T_{p,H}`. Substituting `(9)` yields `(12)`.
-
-When `T_{p,H}` tends to infinity, the additive constant `4` is negligible after adjusting the fixed `delta`-dependent constant, so `(12)` implies `(13)`. Since both summands in `(10)` are nonnegative, `(14)` and `(15)` follow separately.
-
-This sharpens the interpretation of `MC-499`. The earlier population gate said that a **given** dyadic block needs roughly
+This sharpens `MC-499` in a way independent of the dyadic first-exit scale. The per-block population gate requires roughly
 
 \[
-Q/p\gg T_{p,H}
+Q/p\gg T_{p,H},
 \]
 
-available repeated-residue labels. The present result shows that choosing larger `Q` cannot evade that obstruction indefinitely: the same change shrinks the number of endpoint quotient values like `Z_*/Q`. The product of the two resources is fixed at the source-height scale `Z_*/p`, so the maximal available start support is only square-root in that ratio.
+but increasing `Q` cannot evade that requirement indefinitely because it simultaneously shrinks the endpoint quotient range like `Z_*/Q`. Their product is controlled by `Z_*/p`, so maximal start support is only square-root in the source-height ratio.
 
-Thus the endpoint audit now has an even cheaper pre-gate. Before inspecting a particular dyadic `Q`, compare the source height with `(13)`. If it fails, **every** dyadic block is method-limited for the current start-dispersion certificate. Only if the source-height gate passes is it useful to apply the `MC-499` per-block population test and then the detailed `MC-498` participation/fibre audit.
+The audit order is therefore:
 
-## 4. Prior art and novelty boundary
+1. apply the `Q`-free source-height gate `(11)`;
+2. only if it passes, apply the `MC-499` per-block source-population gate;
+3. only then compute the exact `MC-498` participation ratios and quotient fibres.
 
-No new theorem about floor quotients is claimed. The reciprocal quotient set
+## 4. Relation to the MC-496 long-overlap threshold
+
+`MC-496` already controls endpoint-only overlap families whose weighted average length is much larger than `sqrt(p) log p` by worst-case Fourier completion. The current branch is therefore relevant below or near that conductor-square-root scale.
+
+At `H` comparable to `sqrt(p) log p`, the corrected gate `(12)` has scale roughly
 
 \[
-\{\lfloor x/n\rfloor:1\le n\le x\}
+\frac{p^3}{p\log^2 p}\,\log^4 p
+\asymp p^2\log^2 p,
 \]
 
-and its `O(sqrt(x))` cardinality/hyperbola structure are classical objects. Randell Heyman, *Cardinality of a floor function set* (arXiv:1905.00533), studies the global cardinality explicitly, and Yahui Yu and Jie Wu, *Distribution of elements of a floor function set in arithmetical progression* (arXiv:2112.14427), studies the substantially sharper problem of distributing such quotient values in residue classes.
+up to constants from replacing `log(2H)` by a constant multiple of `log p`. Thus the earlier `p^2` logarithmic scale survives near the interface with `MC-496`, but now for the correct reason: it comes from the `p/H` start-dispersion tariff evaluated at the completion boundary, not from a separate artificial `sqrt(p)` floor.
 
-Equation `(16)` is only the trivial local dyadic range count, while `(18)` is the standard participation-ratio/Cauchy inequality already used in `MC-499`. No novelty is claimed for either ingredient or for the geometric-mean optimization by itself.
+## Prior art and novelty boundary
 
-The durable Mathia-specific delta is their **composition with the exact physical first-exit start map and the `MC-498` second-moment tariff**. That composition turns the Q-dependent source-population obstruction of `MC-499` into the Q-free source-height barrier `(12)`--`(15)`, and changes the order of the decisive test.
+No new theorem about floor quotients is claimed. The hyperbola structure and `O(sqrt(x))` global cardinality of reciprocal floor-quotient sets are classical. Randell Heyman, *Cardinality of a floor function set* (arXiv:1905.00533), and Yahui Yu and Jie Wu, *Distribution of elements of a floor function set in arithmetical progression* (arXiv:2112.14427), are neighboring references.
+
+The participation-ratio inequality is elementary Cauchy, and the corrected analytic tariff comes from `MC-497`/`MC-498` using the classical mixed Weil estimate recorded in `MC-S55`. No novelty is claimed for those ingredients.
+
+The durable Mathia result is their composition with the exact physical first-exit start map, producing the `Q`-free method barrier `(11)`--`(12)`.
 
 ## Boundaries and falsification tests
 
-- **Endpoint-only branch.** The result controls only the physical start support available to the `MC-497`/`MC-498` endpoint-dispersion argument. Lower-prime pair-sieve variation and q-dependent signed/complex pre-aggregation coefficients remain outside it.
-- **Method ceiling, not true-bias lower bound.** Failing `(12)` says the current maximal-second-moment/effective-support certificate cannot prove the target saving. The actual endpoint correlation may still be small for stronger arithmetic reasons.
-- **Positive physical endpoints.** The displayed square-root form assumes `X>0` and `X+h>0`, as in the positive source interval regime. The elementary range argument can be rewritten with absolute endpoint heights outside that regime.
-- **One repeated conductor residue.** Pooling different residues changes the conductor phase organization and is not covered by the repeated-residue reduction.
-- **No prime-distribution input.** Restricting labels to primes can only shrink the endpoint images, so irregular primes in progressions cannot invalidate the ceiling.
-- **No claim of sharp attainment.** The upper bound does not assert that enough eligible prime labels exist near `Q approx sqrt(pZ_*)`, that their endpoint quotient values are distinct, or that the reconstruction weights are flat. Actual effective support can be much smaller.
-- **No global Möbius conclusion.** There is no estimate for `M(x)`, no zero-free region, and no RH implication.
+- **Endpoint-only branch.** Lower-prime pair-sieve variation and q-dependent signed/complex pre-aggregation coefficients remain outside this ceiling.
+- **Method ceiling, not a true-bias lower bound.** Failing `(11)` says only that the current effective-support certificate cannot prove the target saving.
+- **Positive physical endpoints.** The displayed square-root form assumes positive `X` and `X+h`; outside that regime the elementary range count must be rewritten with appropriate absolute heights.
+- **One repeated conductor residue.** Pooling distinct residues changes the conductor phase organization.
+- **No prime-distribution input.** Restricting labels to primes can only shrink the endpoint images.
+- **No claim of sharp attainment.** The upper bound does not assert that eligible prime labels exist near the balancing scale, that their quotient values are distinct, or that reconstruction weights are flat.
+- **No global Möbius conclusion.** There is no estimate for `M(x)`, zero-free region, or RH.
 
 ## Consequence for the accepted clue
 
-The endpoint-only part of the accepted q-vdC clue now has a three-stage admission test.
+The endpoint-only part of the accepted q-vdC clue has a strict admission order. First apply the corrected `Q`-free source-height gate
 
-First apply the Q-free source-height gate `(12)` using only `p`, the overlap-length band `H`, and the physical source height `Z_*`. If it fails, no choice of dyadic first-exit scale can make the present exceptional-start dispersion certificate close that block family.
+\[
+Z_*
+\gg_\delta
+\frac{p^3}{H^2}\log^4(2H).
+\]
 
-If it passes, apply the per-block `MC-499` source-population gate. Only then compute the exact `MC-498` winning-endpoint participation ratios and quotient fibres on the surviving blocks.
-
-This prevents a new form of futile refinement: increasing the first-exit scale to create more repeated-residue labels cannot beat the endpoint obstruction indefinitely, because reciprocal quotient compression removes start diversity at the compensating rate.
+If it fails, no dyadic first-exit scale can make the current exceptional-start dispersion certificate close the block family. If it passes, use `MC-499` and then the exact `MC-498` start-participation/fibre audit. This prevents spending effort on detailed quotient fibres in a source-height regime where the corrected harmonic certificate is structurally unable to succeed.
