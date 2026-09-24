@@ -2,59 +2,21 @@
 
 This file records the current mathematical questions that survive the Arithmetic-Fidelity evidence. It is not a roadmap, task queue, status page, or history.
 
-## Classify extinction and multi-scale participation beyond boundary-layer curvature invisibility
+## Which source relations remain observable after matched controls, nuisance quotienting and finite-resolution noise?
 
-AF-509--AF-510 show that the full log-Dirichlet curvature profile of a simple unit-weight positive source determines the source exactly up to global dilation, but AF-511--AF-518 show that this exact quotient injectivity is badly conditioned against remote tail edits. AF-519--AF-521 then identify the one-point boundary carrier more sharply: at `s=1+t`, positive-source curvature depends exactly on normalized zeroth, first and second logarithmic moments, and under source survival the leading law usually collapses to the zeroth/second-moment ratio unless the normalized first moment reaches the `sqrt(log(1/t))` scale.
+AF-523--AF-527 show that a rigid positive prime-to-composite transport can make source participation vanish while preserving the leading boundary-curvature profile, and can even make the first nonzero curvature-defect amplitude agree super-algebraically after the anchor cutoff and multiplier are co-tuned. AF-528 proves that this scalar collision does not extend automatically to relational shape: for power-separated anchors the logarithmic derivative of the exact carrier ratio at `t=0`, after the stated `log log A/log A` normalization, recovers the hidden anchor exponent. That recovery is exact but infinitesimal; across the physical layer `0<t<=1/A` the available change can still be too small for stable observation.
 
-AF-522 shows that source extinction does not restore a one-parameter law. For the anchored outward unit-weight transport that keeps every prime `p<=A` and sends each `p>A` to the distinct composite `C_A p`, one can have `Q_A(1+1/A)/P(1+1/A)->0` while the relative curvature tends to any prescribed `lambda in [0,1]`. Even a common extinction order can therefore carry different higher-moment participation.
+AF-533 gives the correct Gaussian conditioning object once nuisance directions are present. In a linear observation model `Y_A=s_A a+B_A eta+epsilon_A` with covariance `Sigma_A`, whitening and profiling the nuisance span `W_A=col(Sigma_A^{-1/2}B_A)` leaves the transverse carrier
 
-AF-523 closes the first natural multi-scale repair. Choosing `C_A->infinity` with `C_A log log A/log A->0`, the same rigid positive prime-to-composite transport satisfies, uniformly for every `0<t<=1/A`,
+`h_perp,A=(I-P_W_A) Sigma_A^{-1/2} h_A`,
 
-`Q_A(1+t)/P(1+t)->0`
+and the effective discrimination scale is
 
-while
+`I_A^eff = delta_A^2 ||h_perp,A||^2`.
 
-`kappa_Q_A(1+t)/kappa_P(1+t)->1`.
+Raw sample count, source density, or even large unprojected precision-weighted carrier energy is therefore not enough: a carrier can be statistically useless if it lies asymptotically inside the nuisance span. Conversely, stable recovery requires the source-derived relational observable to retain transverse precision energy at the scale actually available to the experiment.
 
-More precisely the zeroth, first and second normalized moment participations all acquire the same vanishing factor `C_A^(-1-t)(1+o(1))`, so the exact AF-521 curvature quotient cancels that common factor. A finite set of boundary scales, or even the complete leading relative-curvature profile on the shrinking layer `1<s<=1+1/A`, therefore still does not recover prime provenance.
-
-AF-524 resolves the first leading-order re-entry beyond that blind layer for the same transport. At
-
-`t_A=exp(-alpha C_A log log A)`, `alpha>0` fixed,
-
-one still has source extinction, with `C_A Q_A(1+t_A)/P(1+t_A)->1+1/alpha`, and the first two logarithmic-moment participations remain tail-dominated, `C_A M_j^Q/M_j^P->1` for `j=1,2`. The retained prefix has, however, re-entered the zeroth moment at leading order, and the relative curvature converges to `alpha/(1+alpha)`. Thus leading curvature becomes informative precisely when the visible moment layers stop sharing one common participation factor. The crossover variable is `log(1/t)/(C_A log log A)`, not the geometric boundary `t~1/A`.
-
-AF-525 resolves the first lower-order question *inside* the AF-523 blind layer for a rigid anchored family. If `D_A(t)` denotes its normalized first anchor-defect scale, then uniformly for `0<t<=1/A`,
-
-`(1-kappa_Q_A(1+t)/kappa_P(1+t))/D_A(t)->1`,
-
-with
-
-`D_A(t) ~ C_A log log A / log(1/t)`.
-
-Thus the leading quotient is blind while its first nonzero correction remembers the transport parameter `C_A` after division by the known anchor normalization.
-
-AF-526 shows that this first correction is still not an intrinsic provenance marker once the anchor cutoff is allowed to vary. For two controls with the same multiplier `C_A` but cutoffs `A` and `B_A<=A`, their first curvature defects satisfy, on the common layer `0<t<=1/A`,
-
-`Delta_B_A(t)/Delta_A(t) -> log log B_A / log log A`
-
-uniformly whenever that ratio has a limit and both transports remain in the AF-525 regime. In particular, every fixed-power cutoff `B_A=floor(A^theta)`, `0<theta<1`, has defect ratio tending to `1` although the retained prime supports differ on an asymptotically large interval. The first correction therefore sees the anchor only through its slowly varying Mertens mass `log log A`; AF-525's recovery of `C_A` is conditional on that anchor normalization being known.
-
-AF-527 strengthens that collision without claiming equality of higher curvature jets or of the full profile. Let `B_A=floor(A^theta)` with fixed `0<theta<1` and allow the two outward-transport multipliers to co-vary so that their retained reciprocal-prime masses are matched. For the same first nonzero normalized curvature defect, if `H_A=log log A`, then for every fixed `m>=1`,
-
-`sup_(0<t<=1/A) H_A^m |Delta_A^(B)(t)/Delta_A^(A)(t)-1| -> 0`.
-
-Thus provenance-distinct anchored controls can have the entire finite algebraic asymptotic expansion in `1/log log A` of this first defect agree. The obstruction is stronger than AF-526's first-order collision but remains scoped: it concerns the renormalized first curvature defect in an explicit co-tuned two-parameter control family, not every higher derivative, every source-derived observable, or the complete curvature function.
-
-AF-528 now shows that this super-algebraic amplitude collision is not invariant under a one-derivative relational lift. For the same co-tuned controls, let `R_A(t)` be the ratio of the exact AF-527 carriers. The common prime-zeta factor cancels before differentiation and
-
-`(H_A/L_A) (log R_A)'(0) -> 1-theta`, with `L_A=log A` and `H_A=log log A`.
-
-So the infinitesimal logarithmic shape of the exact carrier ratio recovers the power-separated anchor exponent even though the scalar carrier amplitudes can be matched beyond every finite algebraic order in `1/H_A`. The distinction is narrow but decisive: AF-528 concerns the exact carrier ratio, not the curvature-defect ratio, and gives no finite-resolution stability theorem. Across the physical layer `0<t<=1/A`, the derivative produces only an order `L_A/(A H_A)` change, so exact recoverability can remain severely ill-conditioned.
-
-The live question is therefore to classify **which relational or differential lifts escape the AF-527 collision and at what observation scale they remain stable**. AF-528 proves that one exact first log-slope retains the coarse anchor exponent in the specific power-separated co-tuning regime, but it does not transfer that derivative to the curvature-defect ratio, establish a minimal lift, distinguish rational primes from matched generalized-prime controls, or survive finite-resolution noise. A robust discriminator must pair any recovered shape variable with a conditioning theorem on a non-infinitesimal window, or with an independently source-forced normalization that prevents admissible controls from reproducing it. Outside the blind region, one should likewise classify how generally the AF-524 moment-balance crossover persists and which moment layer de-locks first.
-
-The adversarial boundary remains sharp. AF-523 is a moving-family, shrinking-window leading-order obstruction; AF-524 is a fixed-`alpha` leading-curvature calculation for the same transport; AF-525 is a uniform first-correction theorem for one anchored family; AF-526 is a first-correction collision for variable anchor cutoffs; AF-527 is a super-algebraic collision for that first defect after co-tuning cutoff and multiplier; and AF-528 is an infinitesimal exact-carrier recovery theorem whose finite-resolution conditioning is unresolved. None contradicts the exact full-profile inversion of AF-509--AF-510. Any claimed robust discriminator must state the source class, observable class, scale range, independently fixed provenance data and asymptotic order at which its information survives matched positive controls.
+The live question is to classify **which exact relational or differential lifts of the boundary data produce a source-forced carrier whose transverse precision energy survives admissible nuisance quotients and realistic observation windows**. AF-528 supplies one exact shape variable in a narrow co-tuned family; AF-533 supplies the correct stability criterion after Gaussian nuisance profiling. What remains is a source theorem connecting the arithmetic observable to a carrier outside the nuisance span with enough projected energy for uniform discrimination, rather than merely exact recoverability at infinite precision. Any proposed discriminator must state the source class, nuisance class, observation window and normalization under which `I_A^eff` stays nondegenerate or diverges.
 
 ## Classify quotient-visible contact through admission and no-contact accessibility rates
 
