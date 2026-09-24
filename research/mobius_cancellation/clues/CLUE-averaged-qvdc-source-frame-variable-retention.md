@@ -45,78 +45,67 @@ based_on:
   - research/mobius_cancellation/findings/MC-493-native-cross-root-blocks-need-square-root-multiplicity.md
   - research/mobius_cancellation/findings/MC-494-complete-repeated-residue-blocks-tensorize-before-root-interference.md
   - research/mobius_cancellation/findings/MC-495-incomplete-cross-root-multiplicity-collapses-to-weighted-character-bias.md
+  - research/mobius_cancellation/findings/MC-496-endpoint-only-cross-root-bias-has-a-square-root-conductor-threshold.md
+  - research/mobius_cancellation/findings/MC-497-quadratic-short-overlap-bias-requires-exceptional-starts.md
+  - research/mobius_cancellation/findings/MC-498-endpoint-start-bias-is-priced-by-effective-quotient-fibres.md
 ---
 
 # Can load-bearing q-dependent arithmetic asymmetry beat the Möbius source-frame tariff?
 
 ## Observation
 
-The normalized empty-vector source has survived a long sequence of exact reductions, but most generic uses of the first-exit label are now closed. `MC-472`--`MC-483` eliminate direct completion, hard-mask Fourier/Parseval, coefficient-blind restriction, and positive or bracketed sieve replacements as routes to a fixed conductor-power gain. `MC-484` supplies the canonical lossless escape: exact Buchstab first exit removes the bracket selector while retaining a dimension-two residual pair sieve and an explicit prime label `q`.
+The normalized empty-vector source has survived a long chain of exact reductions, but most generic uses of the first-exit label are now closed. `MC-472`--`MC-483` eliminate direct completion, hard-mask Fourier/Parseval, coefficient-blind restriction, and positive or bracketed sieve replacements as routes to a fixed conductor-power gain. `MC-484` supplies the canonical lossless escape: exact Buchstab first exit removes the bracket selector while retaining a dimension-two residual pair sieve and an explicit prime label `q`.
 
-The subsequent chain shows that most visible q-dependence is not load-bearing. `MC-485`--`MC-486` close complete and incomplete coefficient-blind inverse-shift frame gains; `MC-487` identifies the common inverse shift as affine gauge; `MC-488` shows that exact first-exit cells are a disjoint least-prime partition; and `MC-489`--`MC-491` price rowwise dilation, distinct-residue conditioning, and repeated-residue mask coherence without producing a conductor-power saving.
+`MC-485`--`MC-495` then show that most visible q-dependence is not load-bearing. Inverse shifts are affine gauge, exact first-exit cells form a deterministic least-prime partition, rowwise dilation retains the conductor-scale diagonal, small/repeated-residue completed subframes are stable, native same-root repeated-residue blocks have constructive rather than destructive interference, and both completed and incomplete repeated-residue multiplicity collapse before they can create new conductor directions. The incomplete two-root problem reduces to one nonnegative source-derived weight against one explicit relative character phase.
 
-The native repeated-residue branch is now especially rigid. `MC-492` proves that same-root rows with the Buchstab common sign cannot cancel even on incomplete domains. `MC-494` strengthens the completed cross-root analysis by showing that arbitrary repeated-residue multiplicity tensorizes into two nonnegative amplitudes before Jacobi interference. `MC-495` shows that the same aggregation happens **before completion as well**: on any incomplete common `m`-domain the whole repeated-residue two-root block reduces to
+The endpoint part of that weight is now much more tightly priced. `MC-496` rules out endpoint-only order-one bias when weighted overlap lengths are above the square-root completion scale. `MC-497` shows in the quadratic case that shorter dangerous intervals must begin at a sparse exceptional set of **physical** conductor starts. `MC-498` converts that exceptional-set condition into a weighted source-frame inequality: within a dyadic overlap-length band, endpoint bias is controlled by the `l1/l2` effective support of the actual start pushforward, while the physical quotient maps `ceil(X/q)` and `ceil((X+h)/r)` have explicit deterministic fibre costs. Arbitrary overlap selection is absorbed into the effective participation of the induced winning-endpoint weights rather than hidden behind an equidistribution assumption.
 
-\[
-U=K_a^+A,\qquad V=K_a^-B,
-\]
-
-with `A,B>=0`. The only possible destructive term is therefore
-
-\[
-C_{A,B}=\sum_m A(m)B(m)R_a(m),
-\qquad
-R_a(m)=\chi(am+h)\chi(am-h)\overline{\chi(am)}^2.
-\]
-
-After projection modulo `p`, this is one nonnegative source-derived weight `w(t)` against the fixed rational-character phase `chi(1-t^{-2})`. The uniform part of `w` is exactly the already-small complete Jacobi contribution; any larger incomplete effect must come from the centered conductor profile `w(t)-\bar w`. Thus repeated-residue multiplicity itself is closed even in the incomplete setting. What remains is a source-weight/phase correlation problem, or a pre-aggregation q-dependent sign/complex phase that prevents the collapse.
+Thus the endpoint-only loophole no longer asks vaguely whether starts are random or dispersed. Its next exact object is the participation of the **actual reconstruction weights** after the winning-endpoint split. Independently, the lower-prime pair-sieve profile inside the overlap and a genuinely q-dependent pre-aggregation sign/phase/modulus remain live arithmetic channels.
 
 ## Research question
 
-Can the exact normalized first-exit family produce a justified operation in which the first-exit label `q` changes the **inner arithmetic coefficient or kernel** before positive closure, rather than only the row coordinate, scalar weight, support, or repeated-residue multiplicity?
+Can the exact normalized first-exit family produce either of the two remaining load-bearing resources?
 
-There are now two precise surviving forms. First, derive the exact conductor projection `w(t)` created by endpoints, lower-prime cutoffs, pair-sieve masks and source coefficients, and prove that its centered component has a sufficiently strong negative correlation with the relative phase `chi(1-t^{-2})` to yield a fixed conductor-power gain after reconstruction. Second, derive a genuinely q-dependent signed/complex coefficient, modulus, or reciprocal-phase role before the aggregation step of `MC-495`, analogous in spirit to the factor-specific quotient-breaking mechanism isolated in `MC-456`.
+First, after restoring the true outer/staged weights, do the induced winning-endpoint participation ratios satisfy the `MC-498` threshold in every material dyadic q/overlap block, thereby closing endpoint-only quadratic cross-root bias after reconstruction? If not, what exact concentrated source subfamily causes the threshold to fail, and does that concentration itself carry usable arithmetic structure rather than merely losing effective support?
 
-If neither structure can be derived from the exact source frame, the normalized empty-vector first-exit continuation should be closed and research should return to separately retained nonempty rough-block, boundary, or pre-positive cross-component channels.
+Second, beyond endpoints, can the exact lower-prime hard masks or another source operation create a centered conductor weight with fixed negative correlation against the relative phase, or create a genuinely q-dependent signed/complex coefficient, modulus, or reciprocal-phase role **before** the nonnegative aggregation of `MC-495`? The latter must be analogous in substance, not merely vocabulary, to the factor-specific quotient breaking isolated in `MC-456`.
+
+If neither resource survives with all reconstruction costs restored, the normalized empty-vector first-exit continuation should be closed and research should return to separately retained nonempty rough-block, boundary, or pre-positive cross-component channels.
 
 ## Why it may matter
 
-The surviving question is no longer whether more averaging variables can be exposed. The exact reductions show that the obvious candidates repeatedly collapse: inverse shifts are gauge, first-exit supports are a deterministic partition, coefficient-blind phase families remain at the conductor scale, scalar weights do not access a hidden small singular direction, and repeated-residue multiplicity produces no new conductor phase even without completion.
+The surviving question is no longer whether more averaging variables can be exposed. The exact reductions repeatedly show that visible multiplicity, shifts, support labels and endpoint incompleteness can collapse to lower-dimensional or positive objects before they yield cancellation. `MC-498` is especially useful because it replaces a distributional guess about exceptional starts by quantities computed directly from the source coefficients: quotient-fibre size and effective winning-endpoint participation.
 
-`MC-495` makes the remaining incomplete escape auditable. A fixed-fraction energy reduction requires an order-one negative weighted correlation of the **actual** source overlap with one explicit relative character phase. This is much sharper than saying that endpoints or incomplete sums might help: the source geometry must now explain where the phase-selective conductor bias comes from and how it survives all normalization and reconstruction tariffs.
+That creates a cheap falsification path. If the actual coefficients make `kappa_+/D_+` and `kappa_-/D_-` dominate the explicit short-overlap threshold across all material dyadic blocks, endpoints are finished and effort should move immediately to the hard-mask/internal-arithmetic channel. If they fail, the offending concentrated block is itself a precise object rather than an unspecified short-interval loophole.
 
 ## Decisive test
 
-Work first in the `R=T=1` empty-vector source frame and keep the exact first-exit cell
+Work in the `R=T=1` empty-vector source frame and keep the exact first-exit cell
 
 \[
 E_q=\{n:q\mid n(n+h),\ (n(n+h),P(q))=1\}
 \]
 
-with exact shortened endpoints and source coefficients. Reject proposals whose only q-dependence is already priced by `MC-485`--`MC-495`: coefficient-blind complete/incomplete phase averaging, affine inverse shifts, common transforms of disjoint first-exit cells, rowwise dilation followed by positive `L^2` closure, scalar reweighting, dense same-root repeated-residue blocks, or completed/incomplete cross-root multiplicity by itself.
+with exact shortened endpoints and all source/reconstruction coefficients. Reject proposals whose only q-dependence is already priced by `MC-485`--`MC-498`: coefficient-blind complete/incomplete phase averaging, affine inverse shifts, common transforms of disjoint first-exit cells, rowwise dilation followed by positive `L^2` closure, scalar reweighting, bare repeated-residue multiplicity, long endpoint overlaps, or short endpoint overlaps without an effective-support calculation.
 
-For an incomplete repeated-residue proposal, compute the exact projected overlap weight
+For the quadratic endpoint-only branch, partition the material source into dyadic q-blocks and dyadic overlap-length bands. For each block form the actual nonnegative pair weights, split them by the winning physical start `max(ceil(X/q),ceil((X+h)/r))`, and compute the induced weights `gamma_q`, `delta_r`, their participation ratios `kappa_+`, `kappa_-`, and the quotient-fibre costs `D_+`, `D_-` from `MC-498`. Charge the number of dyadic blocks and the original shell/reconstruction weights. If the `MC-498` threshold holds with enough margin after these costs, treat endpoint-only bias as closed. If it fails, isolate the smallest weighted block responsible and test whether its concentration follows from a genuine arithmetic constraint or merely from coefficient localization.
+
+For the remaining incomplete hard-mask route, compute the exact projected overlap weight
 
 \[
 w(t)=\sum_{m\equiv t\ (p)}A(m)B(m)
 \]
 
-and the centered correlation
+with the lower-prime pair-sieve factors retained, and estimate the centered correlation with `chi(1-t^{-2})` without replacing `w` by a smooth, uniform, random, or interval model unless the replacement error is quantitatively transferred.
 
-\[
-\sum_{t\in\mathbf F_p}(w(t)-\bar w)\chi(1-t^{-2}).
-\]
-
-Do not replace `w` by a smooth, uniform, random, or interval model unless the replacement error is quantitatively transferred. Accept this route only if the resulting bound gives a fixed conductor-power gain after diagonal energy, endpoint costs, q-summation, shell reconstruction and all source weights are restored.
-
-For a pre-aggregation proposal, identify the first exact formula where two first-exit labels occupy genuinely different arithmetic roles inside the transformed kernel or coefficient: for example a q-dependent modulus, reciprocal phase, or `m`-dependent sign/complex coefficient not removable by affine relabeling. A harmless scalar row factor or increased multiplicity does not pass.
+For a pre-aggregation proposal, identify the first exact formula where two first-exit labels occupy genuinely different arithmetic roles inside the transformed kernel or coefficient: a q-dependent modulus, reciprocal phase, or `m`-dependent sign/complex coefficient not removable by affine relabeling. A harmless scalar row factor or increased multiplicity does not pass.
 
 ## Evidence boundary
 
-`MC-484` proves exact selector-free Buchstab first exit and preserves the dimension-two pair sieve. `MC-485`--`MC-491` close coefficient-blind phase-frame, affine-shift, partition, dilation and small/repeated-residue conditioning loopholes. `MC-492` rules out native same-root repeated-residue cancellation. `MC-494` removes arbitrary completed cross-root multiplicity as a resource. `MC-495` removes incomplete repeated-residue multiplicity as an independent phase resource and identifies the exact surviving object as a weighted rational-character bias.
+`MC-484` proves exact selector-free Buchstab first exit and preserves the dimension-two pair sieve. `MC-485`--`MC-495` close coefficient-blind phase-frame, affine-shift, partition, dilation, completed repeated-residue and multiplicity-only loopholes, leaving one weighted incomplete relative-phase correlation. `MC-496` closes long endpoint-only overlaps, `MC-497` makes short dangerous starts sparse in the quadratic case, and `MC-498` supplies a deterministic effective-support/fibre criterion for the actual endpoint start map.
 
-None of these findings estimates the centered source weight in `MC-495`, derives a new q-dependent signed/complex pre-aggregation coefficient, proves a factor-specific dispersion theorem for the exact dimension-two source frame, or improves `M(x)`. `MC-456` remains a neighboring positive template only; it is not evidence that the required quotient-breaking structure exists here.
+None of these findings evaluates the `MC-498` participation ratios for the full q-vdC reconstruction, proves that every material dyadic block passes its threshold, controls the lower-prime hard-mask contribution to the conductor profile, derives a new q-dependent signed/complex pre-aggregation coefficient, or improves `M(x)`. `MC-456` remains a neighboring positive template only; it is not evidence that the required quotient-breaking structure exists here.
 
 ## Research disposition
 
-The clue remains `accepted`, with a stricter frontier. The primary live test is now **source-derived phase-selective conductor bias or genuinely q-specific pre-aggregation arithmetic asymmetry**. Bare repeated-residue density, pair counting, or incompleteness without control of the exact projected weight should not be revisited as distinct mechanisms.
+The clue remains `accepted`, but the primary endpoint test is now concrete: **evaluate the exact winning-endpoint participation/fibre budget of MC-498 before doing any further generic short-character-sum work**. Only a quantified failure of that budget keeps the endpoint-only branch alive. In parallel, lower-prime hard-mask phase selectivity and genuinely q-specific pre-aggregation arithmetic asymmetry remain independent admissible routes.
