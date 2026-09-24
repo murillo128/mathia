@@ -2,7 +2,7 @@
 
 This file records the current mathematical questions that survive the Farey-discrepancy evidence. It is not a roadmap, task queue, status page, or history.
 
-## Force block-Mertens magnitude past the positive-capacity boundary; under RH the deepest regime now forces a common-window correlation family
+## Force block-Mertens magnitude past the positive-capacity boundary; in the deepest RH regime the carrier compresses to an additive spectral spike
 
 FD-255--FD-265 separate the signed exact-omission threshold from the physical nonnegative-source boundary. The positive switched-response cone has a genuine capacity loss, while canonical full-grid inversion supplies only `O(D log D)` repair mass after explicit forcing terms are removed. Dense deep blocks or a negative signed mean therefore do not by themselves produce the one-sided amplification required by the physical destination.
 
@@ -46,7 +46,25 @@ In that range near-capacity mass forces at least `N^(-1/2)x^(3c-o(1))` distinct 
 
 `C_h^0(X) >= Q N^(-1/2)x^(3c-o(1))`.
 
-The live deterministic source question is therefore regime-dependent and sharper than the original masked correlation problem. For `lambda>3/(10c)`, exclude or classify the **common-window Chowla-type family forced by FD-304**, with its exact shift population, amplitude and source-selected scale `X=NQ`. For `1/(6c)<lambda<=3/(10c)`, the FD-303 moving-start family is the stronger established carrier. Below that threshold, or where FD-303 amplification is not superdiagonal, the FD-301--FD-302 untwisted/low-block-frequency family remains the finer necessary carrier. These implications are one-way: deep shells, large Mertens endpoints or large ordinary correlations do not by themselves reconstruct a near-capacity `L_N(x)` field.
+FD-305 compresses that entire common-window family into one exact additive-spectral certificate. For `f_X(n)=mu(n)1_[X,2X)(n)` and `F_X(alpha)=sum f_X(n)e(n alpha)`, trimming the common-window correlations to compact autocorrelations costs at most `N`, which is already negligible in the FD-304 range. Wiener--Parseval then gives
+
+`int_0^1 |F_X(alpha)|^4 d alpha = sum_h |R_h(X)|^2`
+
+and therefore
+
+`int_0^1 |F_X(alpha)|^4 d alpha >= Q^2 N^(-3/2) x^(9c-o(1))`.
+
+Relative to the natural `X^2` scale this is `N^(-7/2)x^(9c-o(1))`. Once
+
+`lambda>7/(18c)=0.9369969932...`,
+
+the fourth moment is forced power-above `X^2`, and the second-moment bound also forces at least one source-selected frequency `alpha_*` with
+
+`|F_X(alpha_*)|/X^(1/2) >= N^(-7/4)x^(9c/2-o(1))`.
+
+This is a one-way deterministic compression of the FD-304 family; it neither localizes `alpha_*` nor contradicts classical logarithmic Möbius exponential-sum bounds.
+
+The live deterministic source question is therefore regime-dependent and sharper than the original masked correlation problem. For `lambda>7/(18c)`, exclude the **fixed-block additive spectral concentration forced by FD-305**, either through the fourth moment or a sufficiently strong uniform pointwise bound at the source-selected scale `X=NQ`. For `3/(10c)<lambda<=7/(18c)`, the FD-305 lower bound still holds but need not be power-above the natural fourth-moment scale, so the FD-304 common-window Chowla-type family remains the stronger quantitative carrier. For `1/(6c)<lambda<=3/(10c)`, the FD-303 moving-start family is the strongest established carrier. Below that threshold, or where FD-303 amplification is not superdiagonal, the FD-301--FD-302 untwisted/low-block-frequency family remains the finer necessary carrier. These implications are one-way: deep shells, large Mertens endpoints, large ordinary correlations or a large additive Fourier coefficient do not by themselves reconstruct a near-capacity `L_N(x)` field.
 
 ## Force physical occupation of the complete zero-packet regime
 
@@ -80,10 +98,10 @@ FD-297 removes even that dyadic first-return requirement. Fix any low height `T_
 
 for every near-capacity budget `B_(N,x)=C_(N,x)/ell(x)` with subpolynomial `ell`. Consequently the whole low-height zero-safe trajectory has the same good/bad classification, up to an `o(B)` transition layer, as one **fixed low-height complete hard remainder**. Replacing `T_bullet` by another fixed admissible gap changes the normalized baseline only by `o(1)`, so this is not a tuned-anchor effect.
 
-The low-height gate is therefore static rather than a return-frequency problem. Below the FD-296/FD-297 rigidity threshold, the decisive source question is to estimate one fixed baseline `R_(T_bullet,N)` at the physical band scale. FD-298--FD-304 sharpen that baseline question in the regime where the hard complement is `l^1`-close to the block-Mertens field: under RH, one-sided sign polarization cannot decide the near-capacity classification; near-capacity mass forces aligned shell energy; RH pushes every carrying shell past `x^(2c-o(1))` and makes it power-populated; the correlation carrier first demasks to an untwisted/low-frequency family, then thickens into moving-start ordinary correlations, and in the deepest regime moves onto one canonical interval. A cancellation theorem at whichever exact source carrier is strongest in the relevant regime would close the low-height near-capacity route before one has to prove a matching `l^1` lower bound.
+The low-height gate is therefore static rather than a return-frequency problem. Below the FD-296/FD-297 rigidity threshold, the decisive source question is to estimate one fixed baseline `R_(T_bullet,N)` at the physical band scale. FD-298--FD-305 sharpen that baseline question in the regime where the hard complement is `l^1`-close to the block-Mertens field: under RH, one-sided sign polarization cannot decide the near-capacity classification; near-capacity mass forces aligned shell energy; RH pushes every carrying shell past `x^(2c-o(1))` and makes it power-populated; the correlation carrier first demasks to an untwisted/low-frequency family, then thickens into moving-start ordinary correlations, then moves onto one canonical interval, and at the deepest polynomial scales compresses further into an additive Fourier fourth-moment/pointwise spike. A cancellation theorem at whichever exact source carrier is strongest in the relevant regime would close the low-height near-capacity route before one has to prove a matching `l^1` lower bound.
 
 Above that threshold but still inside the FD-295 short-complete-packet regime, one must still prove near-linear safe occupation directly or obtain a stronger path-control theorem. If the fixed low-height baseline cannot be controlled from the physical source, the unresolved mathematics is no longer “find a first return” but derive a direct estimate for that exact complete hard complement or replace the phase/remainder coupling mechanism.
 
 The current Montgomery--Vaughan selector still cannot be rerun gap by gap. The FD-292 estimate on an interval of length `R` requires `R/L^(2m(m+2))->infinity` for fixed moment order `m`, whereas every individual RH zero gap has `R<<1/log log H`. The phase theorem is therefore intrinsically aggregate at zero-gap scale. This is a limitation of that implementation, not a theorem that finer local phase control is impossible.
 
-This sharpening remains conditional where stated. FD-297 turns the low-height search into a fixed-baseline dichotomy only under its global background control and zero-safe complete-cluster geometry; FD-298--FD-304 identify a more explicit low-height source field, remove sign polarization under the stated Mertens/RH input, expose a necessary aligned variance tariff, localize any capacity-bearing shell under RH, and progressively demask its correlation consequence to a common-window ordinary family in the deepest polynomial regime. They do not prove the required lower bound for `L_N(x)` or show that any of those necessary anomalies are sufficient. FD-294 still requires the occupation and complete-packet hypotheses it consumes outside the rigidity regime, and FD-295 only removes capacity for short complete packets in its stated range. Any attempt to replace the physical grouped remainder by a generic Möbius/Mellin estimate must re-prove that it controls the exact gapwise destination quantity; once the Farey divisor-replication geometry has been discharged and only the fixed-window Möbius family remains, the natural ownership moves to `mobius_cancellation`.
+This sharpening remains conditional where stated. FD-297 turns the low-height search into a fixed-baseline dichotomy only under its global background control and zero-safe complete-cluster geometry; FD-298--FD-305 identify a more explicit low-height source field, remove sign polarization under the stated Mertens/RH input, expose a necessary aligned variance tariff, localize any capacity-bearing shell under RH, and progressively demask its correlation consequence to a common-window ordinary family and then an additive-spectral certificate in the deepest regime. They do not prove the required lower bound for `L_N(x)` or show that any of those necessary anomalies are sufficient. FD-294 still requires the occupation and complete-packet hypotheses it consumes outside the rigidity regime, and FD-295 only removes capacity for short complete packets in its stated range. Any attempt to replace the physical grouped remainder by a generic Möbius/Mellin estimate must re-prove that it controls the exact gapwise destination quantity; once the Farey divisor-replication geometry has been discharged and only the fixed-window Möbius or additive-spectral carrier remains, the natural ownership moves to `mobius_cancellation`.
