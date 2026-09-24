@@ -74,6 +74,7 @@ Moreover, for every fixed `eta>0`, the same shell contains at least
 \boxed{
 x^{2c-o(1)}}
 \tag{8}
+\]
 
 indices `q` for which
 
@@ -159,6 +160,7 @@ Hence, under RH and (3), every fixed depth satisfying (16) forces at least
 N^{-1/2}x^{3c-o(1)}
 }
 \tag{17}
+\]
 
 distinct shifts `1<=h<N` with the **common-window, untwisted** lower bound
 
