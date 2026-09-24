@@ -12,7 +12,7 @@ NB-306 identifies the exact unit singular core of the projected integer-dilation
 
 The unresolved operator transition lies in the genuinely intermediate window `N<<m<=O(N^2)`: determine whether coherent centered shell modes survive there or whether the rank-one mixing picture can be pushed down to that scale. That source-side theorem is still not the destination theorem. Any useful singular direction must also be occupied by the actual moving first-free datum after the sampling/null decomposition, lower-section conditioning and off-critical contraction. Operator norm or support mass alone does not imply a Nyman target gain.
 
-## Attack the weighted bilinear mixing error directly; annular primitive-sup power savings are impossible
+## Quantify the weighted mixing transition directly; primitive-sup power savings and polynomial quadratic-rate mixing are both excluded
 
 NB-316--NB-318 isolate the multiplicative loss in the centered reciprocal-shell primitive estimate. The centered Cesaro shell factor has sharp `Theta(N^(3/2))` norm growth, and bounded linear reciprocal time admits an `O_C(N^2)` physical Hilbert evaluation bound even though the top-index adjacent witness reaches its largest primitive excursion only at quadratic time.
 
@@ -22,6 +22,18 @@ NB-319 removes the interpretation that this primitive obstruction is confined ne
 
 where `H_N(M)` is the Hilbert-normalized supremum of the centered primitive over that annulus. Thus every mesoscopic reciprocal annulus up to the quadratic frontier contains a source direction whose primitive is within a square-root logarithm of linear growth in the annulus radius. No uniform estimate `sup_(M<=T<=3M)|G_u(T)| <= C M^(1-epsilon)||u||_2` can hold across this range for fixed `epsilon>0`.
 
-This is a method boundary, not a lower bound for the actual weighted projected-dilation error. The same adjacent family can have large primitive excursions while decorrelating strongly after the signed weight is applied. Therefore merely localizing the NB-315 integration-by-parts argument, or replacing one global primitive supremum by annular `L^infinity` envelopes, cannot buy the missing polynomial gain.
+NB-320 shows that the actual signed `1/t^2`-weighted bilinear pairing behaves much better than that primitive envelope on the canonical adjacent witness, but not polynomially better. For even `n`, with
 
-The live source question is now more specific: **does the weighted bilinear mixing pairing itself exhibit cancellation that is invisible to primitive-sup control?** A useful theorem must exploit the actual `1/t^2`-type weight, cancellation between primitive excursions, frequency-sensitive/square-function structure, or direct reduced-denominator arithmetic. It should quantify the transition in the linear-to-quadratic dilation window without first majorizing by a scale-uniform primitive maximum. Even a successful source-side estimate remains separate from target occupation, first-free gain and the final Nyman/RH destination.
+`u_n=g_n-((n-1)/n)g_(n-1)`
+
+and resonant half-period dilation `m_n=n(n-1)/2`, one has
+
+`< (sqrt(m_n)T_(n,m_n)-R_n)g_2, u_n > = pi^2/(64(n-1))+O(n^(-2))`.
+
+Since `||u_n||_2=Theta(sqrt(log n)/n)`, the Hilbert-normalized coefficient is `Theta(1/sqrt(log n))`, hence
+
+`||sqrt(m_n)T_(n,m_n)-R_n|| >> 1/sqrt(log n)`
+
+along this quadratic sequence. The weight suppresses the primitive obstruction by a full quadratic factor, confirming that primitive-sup control was genuinely wasteful, but the surviving resonance forbids any uniform `O(n^(-delta))` rank-one error rate for fixed `delta>0` along these dilations. Because the lower bound still tends to zero, this is a rate obstruction, not a non-mixing theorem.
+
+The live source question is therefore to **characterize the weighted bilinear mixing error itself across `N<<m<=O(N^2)` at the correct subpower scale**. A useful upper theorem must exploit the actual weight, cancellation between reciprocal-shell phases, square-function/frequency structure or reduced-denominator arithmetic, while accommodating the NB-320 half-period resonances rather than majorizing them by a primitive maximum. It remains open whether the quadratic corridor admits a uniform logarithmic/subpower rank-one mixing law, which other resonant families saturate it, and where the transition to the far-external NB-315 regime occurs. Even a sharp source-side mixing theorem remains separate from target occupation, first-free gain and the final Nyman/RH destination.
