@@ -2,7 +2,7 @@
 
 This file records the current mathematical questions that survive the Arithmetic-Fidelity evidence. It is not a roadmap, task queue, status page, or history.
 
-## Which source relations remain observable after matched controls, nuisance quotienting and finite-resolution noise?
+## Which source relations remain observable after matched controls, nuisance closure and finite-resolution noise?
 
 AF-523--AF-527 show that a rigid positive prime-to-composite transport can make source participation vanish while preserving the leading boundary-curvature profile, and can even make the first nonzero curvature-defect amplitude agree super-algebraically after the anchor cutoff and multiplier are co-tuned. AF-528 proves that this scalar collision does not extend automatically to relational shape: for power-separated anchors the logarithmic derivative of the exact carrier ratio at `t=0`, after the stated `log log A/log A` normalization, recovers the hidden anchor exponent. That recovery is exact but infinitesimal; across the physical layer `0<t<=1/A` the available change can still be too small for stable observation.
 
@@ -14,9 +14,13 @@ and the effective discrimination scale is
 
 `I_A^eff = delta_A^2 ||h_perp,A||^2`.
 
-Raw sample count, source density, or even large unprojected precision-weighted carrier energy is therefore not enough: a carrier can be statistically useless if it lies asymptotically inside the nuisance span. Conversely, stable recovery requires the source-derived relational observable to retain transverse precision energy at the scale actually available to the experiment.
+AF-534 shows that in an infinite-dimensional Gaussian shift experiment the nuisance space must be **closed in the Cameron--Martin geometry** before this distance is interpreted as a stability margin. For a target carrier `u_A` and linear nuisance space `N_A`, exact target aliasing occurs only when `u_A in N_A`, but stable distinguishability is governed by
 
-The live question is to classify **which exact relational or differential lifts of the boundary data produce a source-forced carrier whose transverse precision energy survives admissible nuisance quotients and realistic observation windows**. AF-528 supplies one exact shape variable in a narrow co-tuned family; AF-533 supplies the correct stability criterion after Gaussian nuisance profiling. What remains is a source theorem connecting the arithmetic observable to a carrier outside the nuisance span with enough projected energy for uniform discrimination, rather than merely exact recoverability at infinite precision. Any proposed discriminator must state the source class, nuisance class, observation window and normalization under which `I_A^eff` stays nondegenerate or diverges.
+`d_A = dist_(H_A)(u_A, closure(N_A))`,
+
+with `J_A=delta_A^2 d_A^2`. One can therefore have algebraic identifiability with zero robust margin when `u_A in closure(N_A) \ N_A`. For a fixed compact target interval, AF-534 proves uniform nuisance-robust consistency exactly when `J_A -> infinity`.
+
+The live question is to classify **which exact relational or differential lifts of the arithmetic boundary data produce a source-forced carrier that remains quantitatively transverse to the closed admissible nuisance geometry on the observation window actually available**. AF-528 supplies one exact shape variable in a narrow co-tuned family; AF-533 supplies the finite-dimensional precision projection; AF-534 identifies closure as the infinite-dimensional stability boundary. What remains is a source theorem connecting the arithmetic observable to a carrier with enough closed-quotient Cameron--Martin/precision energy for uniform discrimination. Algebraic non-membership in the raw nuisance span, exact recoverability at infinite precision, raw sample count and unprojected carrier energy are all insufficient by themselves.
 
 ## Classify quotient-visible contact through admission and no-contact accessibility rates
 
