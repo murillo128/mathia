@@ -1,7 +1,7 @@
 ---
 id: CLUE-prime-lattice-rank-two-defect-schur-ellipse
 type: research-clue
-status: proposed
+status: accepted
 origin: independent-review
 target_line: prime_lattice
 based_on:
@@ -60,3 +60,9 @@ First derive the displayed fixed-vector factorization and Schur criterion from t
 ## Evidence boundary
 
 Lean proves finite matrix identities and the residual two-coordinate structure; it does not formalize this Schur criterion, establish `C\succ0` for the actual source, or prove any arithmetic bound on `s,f`. PL-428's positive-semidefinite matched controls show that basic covariance positivity and the already visible data do not force cone admission. This clue asserts neither that the ellipse closes the prime-lattice gate nor that its source-side inequality is easier.
+
+## Research disposition
+
+The direction survives initial triage and is **accepted** for continued investigation. `PL-438` derives an exact `1+2+1` residue-space normal form, reduces the strict positive branch to a two-dimensional Schur ellipse, and gives an admissible positive covariance for which that ellipse certifies the `PL-421` cone while the `PL-437` Weyl disk fails. The ellipse coefficients and center are determined by the real-product sector plus the residue diagonal; only the two oriented combinations remain unresolved.
+
+The still-open part of the clue is arithmetic rather than representational: determine whether the actual fixed-mod-5 prime source controls the resulting scalar Schur budget at variance scale by an unconditional input genuinely weaker than the full complex lower-frame estimate. Acceptance does not assert that such an estimate exists or that the ellipse advances RH by itself. Durable evidence is in `research/prime_lattice/findings/PL-438-mod5-oriented-schur-ellipse.md`.
