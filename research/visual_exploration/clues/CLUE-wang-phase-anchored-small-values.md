@@ -21,6 +21,8 @@ based_on:
   - research/visual_exploration/findings/VIS-430-target-autocorrelation-hitting-upper-bound.md
   - research/visual_exploration/findings/VIS-431-bernstein-smoothing-finite-depth-hitting-control.md
   - research/visual_exploration/findings/VIS-432-binomial-tail-smoothing-logarithmic-rarity-depth.md
+  - research/visual_exploration/findings/VIS-433-chernoff-balanced-bernstein-hitting-depth.md
+  - research/visual_exploration/findings/VIS-434-chernoff-arcsine-buffer-geometry.md
 ---
 
 # Does an independently justified arithmetic height selector align with Wang quiet regions beyond each shell's own translation orbit?
@@ -67,6 +69,8 @@ Thus a rare high-amplitude target forces long quiet windows for a large Haar fra
 So `rho_N->infinity` by itself is not a residual mechanism for suprema, and neither is a large absolute hitting/cover time. A nontrivial changing-shell effect must live **before universal saturation and beyond the target-rarity floor**: the prescribed radius `rho_N` must be anomalous relative to the shell's exact Haar hitting profile after accounting for `mu_N(t)`, `Omega_N`, and the threshold buffer.
 
 A surviving Gram-point anomaly must now expose a quantified tariff failure, nonuniform Haar concentration, a selector with a genuinely non-Haar finite-prime phase law, or an atypical pre-saturation hitting-time profile that is not already forced by target rarity. Unqualified growing radius or long quiet intervals are no longer escapes.
+
+`VIS-430`--`VIS-433` now close much of the complementary upper-tail representation cost. Occupation variance converts finite Fourier control into a hitting bound; buffered Bernstein smoothing makes the hard target finite-depth; thresholded binomial tails make fixed-buffer rarity cost only logarithmic depth in `1/mu_b`; and Chernoff balancing gives the optimal exponent inside that separator family. `VIS-434` further shows that, for a fixed interior amplitude threshold and small buffer, the local Chernoff cost is governed by the Fisher/arcsine amplitude coordinate. The extra `t^(-2)` factor in the coarse raw-squared-amplitude Hoeffding certificate is therefore not an intrinsic shrinking-buffer resource.
 
 ## Research question
 
@@ -135,11 +139,19 @@ When this lower bound is already large at the chosen `rho_N`, a quiet selected p
 
 `R_N(t+eta) >= (eta/Omega_N)(1/mu_N(t)-1)`.
 
-Only after this rarity gate fails to explain the selected quiet interval should the test pursue an upper-tail certificate. `VIS-430` reduces that task to occupation variance. For a buffered amplitude target, `VIS-431` first replaces the hard indicator by finite Laurent depth, and `VIS-432` sharpens the required depth: with `a=t^2`, `b=(t+eta)^2`, `g=b-a`, and `mu_b=mu_N(t+eta)`, the thresholded Bernstein tail has leakage `epsilon_d=exp(-d g^2/2)`. It is enough to take
+Only after this rarity gate fails to explain the selected quiet interval should the test pursue an upper-tail certificate. `VIS-430` reduces that task to occupation variance. For a buffered amplitude target, `VIS-431` first replaces the hard indicator by finite Laurent depth. `VIS-432` gives the universal Hoeffding separator, while `VIS-433` supplies the sharper Chernoff-balanced certificate. With `a=t^2`, `b=(t+eta)^2`, `mu_b=mu_N(t+eta)`, use
 
-`d > (2/g^2) log((1+mu_b)/mu_b)`
+`d > log((1+mu_b)/mu_b)/C_Ber(a,b)`
 
-to make the occupation denominator positive, then apply the `VIS-430` variance formula together with the depth-`d` Wang Wiener/small-divisor tariff. Thus fixed-buffer rarity by itself costs only logarithmically growing Laurent depth; the live question is whether the actual Wang coefficient geometry controls that depth. A failure of this sufficient bound is not an anomaly by itself.
+whenever the exact Chernoff information is available; the `VIS-432` coefficient `2/(b-a)^2` remains a universal coarse fallback.
+
+For fixed interior `t in (0,1)` and a small pre-registered amplitude buffer `eta`, `VIS-434` gives
+
+`C_Ber(t^2,(t+eta)^2)=eta^2/[2(1-t^2)] + O_t(eta^3)`.
+
+Thus the optimized leading depth coefficient is `2(1-t^2)/eta^2`, not the coarse `1/(2t^2 eta^2)` obtained by applying Hoeffding directly to the squared-amplitude gap. Interpret this only locally at fixed interior `t`; if `t=t_N` approaches an endpoint together with `eta_N`, audit that coupled endpoint regime separately.
+
+After choosing `d`, apply the `VIS-430` variance formula together with the depth-`d` Wang Wiener/small-divisor tariff. Fixed-buffer rarity still costs only logarithmically growing Laurent depth; the live question is whether the actual Wang coefficient geometry controls the **Chernoff-priced** depth. A failure of this sufficient bound is not an anomaly by itself.
 
 The `VIS-429` bound remains one-sided, so passing beyond its forced scale does **not** establish atypicality; it only makes the upper-tail certificate or sharper same-shell hitting-time comparison informative.
 
@@ -153,7 +165,7 @@ Kill the direction if no non-arbitrary selector with defensible provenance can b
 
 ## Evidence boundary
 
-`VIS-419` proves fixed-shell Haar calibration; `VIS-420` gives finite-window small-divisor costs; `VIS-421` separates Wang's generic source height from an external selector; `VIS-422` closes ordinary Gram points for fixed shells; `VIS-423` controls changing Laurent-polynomial observables; `VIS-424` reduces pointwise amplitude to scalar moments; `VIS-425` extends that reduction to fixed-radius persistence under a uniform frequency bound and stronger mixed-frequency divisor; `VIS-427` shows that normalized fixed-power path averages acquire no additional growing-radius tariff; `VIS-428` gives fixed-shell uniform saturation; `VIS-429` gives the target-rarity lower tail; `VIS-430` gives the complementary occupation-variance upper-tail route; `VIS-431` converts buffered hard targets to finite Laurent depth; and `VIS-432` sharpens the rare-target approximation cost from algebraic to logarithmic growth in inverse target mass at fixed buffer.
+`VIS-419` proves fixed-shell Haar calibration; `VIS-420` gives finite-window small-divisor costs; `VIS-421` separates Wang's generic source height from an external selector; `VIS-422` closes ordinary Gram points for fixed shells; `VIS-423` controls changing Laurent-polynomial observables; `VIS-424` reduces pointwise amplitude to scalar moments; `VIS-425` extends that reduction to fixed-radius persistence under a uniform frequency bound and stronger mixed-frequency divisor; `VIS-427` shows that normalized fixed-power path averages acquire no additional growing-radius tariff; `VIS-428` gives fixed-shell uniform saturation; `VIS-429` gives the target-rarity lower tail; `VIS-430` gives the complementary occupation-variance upper-tail route; `VIS-431` converts buffered hard targets to finite Laurent depth; `VIS-432` reduces the fixed-buffer rarity cost to logarithmic depth; `VIS-433` optimizes the thresholded-Bernstein exponent by Bernoulli Chernoff information; and `VIS-434` identifies its fixed-interior small-buffer Fisher/arcsine geometry and the coordinate looseness in the raw squared-amplitude Hoeffding coefficient.
 
 None of these findings proves that the actual transported Wang growing family satisfies the sufficient tariffs, proves uniform Haar anti-concentration at a chosen threshold, gives an upper bound or asymptotic law for `R_N(t)`, or establishes a source-sensitive anomaly when a tariff fails. `VIS-429` is only a one-sided generic lower bound: a selected phase beyond that forced scale may still be entirely typical under the exact Haar hitting-time law.
 
@@ -161,4 +173,4 @@ No current result identifies a selector with an anomalous Wang-shell phase law, 
 
 ## Research disposition
 
-Accepted, further narrowed through `VIS-432`. **For ordinary Gram points, pointwise amplitude, fixed-radius persistence, normalized fixed-power path averages, fixed-shell large-radius suprema, and buffered pre-saturation hitting now have explicit lower- and upper-tail control routes.** Fixed-buffer target rarity no longer forces the `mu^-2` Bernstein depth from `VIS-431`; the remaining finite-depth question is whether the Wang Wiener/small-divisor tariff survives depth `d=O(log(1/mu))`. Continue only with a quantified tariff failure at that growing depth, a genuinely shrinking buffer/target regime, a selector whose prime-phase law is not driven to the same self-null, or another destination observable not reduced by the current character machinery.
+Accepted, further narrowed through `VIS-434`. **For ordinary Gram points, pointwise amplitude, fixed-radius persistence, normalized fixed-power path averages, fixed-shell large-radius suprema, and buffered pre-saturation hitting now have explicit lower- and upper-tail control routes.** Fixed-buffer target rarity costs only logarithmic separator depth, and the recommended coefficient is the exact Bernoulli Chernoff information rather than the coarse squared-gap Hoeffding constant. For fixed interior amplitude threshold and small buffer, the local cost is governed by the arcsine/Fisher amplitude coordinate; the extra low-`t` penalty of the raw squared-amplitude Hoeffding certificate is not intrinsic. Continue only with a quantified Wang tariff failure at that Chernoff-priced growing depth, a genuinely endpoint-coupled shrinking-buffer/target regime, a selector whose prime-phase law is not driven to the same self-null, or another destination observable not reduced by the current character machinery.
