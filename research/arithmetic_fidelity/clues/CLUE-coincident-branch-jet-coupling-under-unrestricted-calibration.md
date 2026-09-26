@@ -1,7 +1,7 @@
 ---
 id: CLUE-arithmetic-fidelity-coincident-branch-jet-coupling
 type: research-clue
-status: proposed
+status: resolved
 origin: mind
 target_line: arithmetic_fidelity
 based_on:
@@ -35,3 +35,12 @@ Next perturb the common base value by a gap `epsilon != 0`. Determine whether th
 ## Evidence boundary
 
 AF-548 establishes the separated regular no-go and identifies coincident values only as an unclassified boundary where relative invariants **may** occur. It does not prove a complete coincident-jet classification, a stability theorem, a source mechanism producing coincidence, or any arithmetic/RH consequence. Those missing steps are exactly why this is a proposed clue rather than an intuition or finding.
+
+## Research disposition
+
+Outcome: narrowed
+
+Resolved by:
+- [[research/arithmetic_fidelity/findings/AF-549-coincident-regular-jet-invariants-have-zero-robust-margin.md]]
+
+AF-549 classifies the coincident finite-jet orbits completely by relative transition jets and proves that these nontrivial invariants have zero robust margin under the unrestricted calibration pseudogroup. Every nonzero base separation restores the separated transitivity of AF-548, so no nonconstant collision invariant has a continuous invariant extension through that regime. A quantitative margin appears only after adding cross-value regularity or another coupling of calibration jets; retaining overlapping branch profiles is a distinct nonlocal boundary not decided by the finite-jet theorem.
