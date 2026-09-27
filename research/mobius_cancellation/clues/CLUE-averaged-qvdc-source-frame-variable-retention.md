@@ -61,6 +61,7 @@ based_on:
   - research/mobius_cancellation/findings/MC-509-localized-growing-mask-state-becomes-source-injective.md
   - research/mobius_cancellation/findings/MC-510-localized-relative-mask-state-is-pair-injective.md
   - research/mobius_cancellation/findings/MC-511-relative-state-recurrence-loses-collision-budget-before-reconstruction.md
+  - research/mobius_cancellation/findings/MC-512-pair-phase-participation-factorization.md
 ---
 
 # Can localized cross-state coupling beat the Möbius source-frame tariff?
@@ -109,8 +110,8 @@ Any proposed bound must identify a hypothesis absent from the nonlocalized CRT c
 
 `MC-509`--`MC-511` do **not** bound the total anti-diagonal collision excess. They show only that exact localized profile rigidity is not itself a free averaging resource and quantify when repeated exact-state collisions cannot carry the relevant second moment. Distinct states may still concentrate on the same physical conductor argument and may still align with the centered quadratic phase.
 
-No persisted finding currently proves a useful lower bound for `R_*`, a cross-state collision estimate, a source-specific dispersion theorem for the map into `t=x+j`, a q-dependent signed/complex coefficient before nonnegative aggregation, or any improved bound for `M(x)`. These remain the missing premises.
+No persisted finding currently proves a useful source lower bound for either factor in the exact `MC-512` identity `R_* = R_pair S_phase`, a cross-state collision estimate, a source-specific dispersion theorem for the map into `t=x+j`, a q-dependent signed/complex coefficient before nonnegative aggregation, or any improved bound for `M(x)`. These remain the missing premises.
 
 ## Research disposition
 
-The clue remains `accepted`, but its live nonnegative mechanism is narrowed from generic localized full-profile coupling to **localized cross-state physical pushforward control**. Exact-state recurrence is now subject to the `MC-510` fibre tariff and the stronger `MC-511` collision-budget gate; the next useful result must estimate `R_*` from the exact reconstruction or control collisions between distinct relative states after the physical conductor map.
+The clue remains `accepted`, but its live nonnegative mechanism is narrowed from generic localized full-profile coupling to **localized cross-state physical pushforward control**. `MC-512` now factorizes the `MC-511` participation gate exactly as `R_* = R_pair S_phase`: if `R_pair < L_z`, maximal phase spread cannot pass the gate; if `R_pair >= p L_z`, the gate is automatic; only the intermediate regime requires a lower bound for the collision-weighted within-pair phase support `S_phase`. The next useful source result should therefore estimate `R_pair` first, then `S_phase` only when needed, and attack cross-state physical collisions once the gate is actually met.

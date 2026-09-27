@@ -335,3 +335,15 @@ Role: primary classical anchor for the Fourier multiplier estimate in `MC-448`. 
 László Mérai, Igor E. Shparlinski and Arne Winterhof, *Character sums over sparse elements of finite fields*, Bulletin of the London Mathematical Society 56 (2024), no. 4, 1488–1510. DOI: https://doi.org/10.1112/blms.13008. arXiv: https://arxiv.org/abs/2211.08452.
 
 Role: adjacent sparse-set prior-art boundary for `MC-448`. The paper obtains mixed character-sum estimates on subsets defined by sparse coordinate representations in finite-field extensions. Its sparse-set geometry is different from the CRT-idempotent start sets arising in `MC-447`; it is therefore comparison literature rather than a theorem transfer to the Mathia source frame.
+
+## MC-S57 — Hill, diversity numbers and inverse-Simpson effective participation
+
+M. O. Hill, *Diversity and Evenness: A Unifying Notation and Its Consequences*, Ecology 54 (1973), no. 2, 427–432. DOI: https://doi.org/10.2307/1934352.
+
+Role: classical effective-number anchor for `MC-512`. Hill relates Simpson's index, Shannon entropy and species count through a continuum of diversity numbers interpreted as effective numbers. The order-two member is the inverse collision/Simpson participation quantity used for `R_pair` and the within-pair supports `S_u`. `MC-512` does not attribute its source-specific pair/phase factorization or collision gate to Hill.
+
+## MC-S58 — Jost, entropy-to-effective-number interpretation
+
+Lou Jost, *Entropy and diversity*, Oikos 113 (2006), no. 2, 363–375. DOI: https://doi.org/10.1111/j.2006.0030-1299.14714.x.
+
+Role: modern prior-art boundary for `MC-512`. Jost emphasizes converting Gini–Simpson and related entropy indices into effective numbers with multiplicative/interpretable diversity behavior. This supports the terminology of effective participation; the exact squared-pair-mass harmonic factor `S_phase` in `MC-512` is derived directly from the collision second moment and is not presented as a general entropy chain rule.
