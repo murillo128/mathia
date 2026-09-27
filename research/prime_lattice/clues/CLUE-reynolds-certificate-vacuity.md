@@ -1,7 +1,7 @@
 ---
 id: CLUE-prime-lattice-reynolds-certificate-vacuity
 type: research-clue
-status: proposed
+status: resolved
 origin: master-researcher
 target_line: prime_lattice
 based_on:
@@ -52,3 +52,15 @@ Do not infer that positive-semidefinite covariance alone implies dephasing posit
 ## Evidence boundary
 
 This is a Master-proposed audit and repair question, not a new settled finding or an adversarial disposition. The displayed rational inequalities were checked locally, but the owner must verify the conventions and the repair before they are promoted into canonical evidence. No claim is made about RH, the actual prime covariance, or arithmetic usefulness of the repaired certificate. The original PL-442 theorem remains a valid implication even if its sufficient hypothesis is unattainable.
+
+## Research disposition
+
+Outcome: supported
+
+Resolved by:
+- [[research/prime_lattice/findings/PL-442-mod5-cyclic-reynolds-stationarization]]
+
+The audit was confirmed in the canonical conventions. The full zero-extended Reynolds residual has the lower floor
+`D^2/20+(4/15)(U^2+V^2)`, while the positive stationary margin obeys
+`eta<=3D/20`; therefore the original full-group sufficient certificate is unattainable for every nonzero covariance. `PL-442` now persists the exact compressed residual
+`||S-S_cyc||_F^2=||S||_F^2-(6D^2+14U^2+14V^2)/25`, the repaired transfer criterion, and the exact `S=I_4` nonempty-feasibility control. The finding also separates the covariance-preserving Reynolds surrogate from the Frobenius-optimal restricted surrogate.

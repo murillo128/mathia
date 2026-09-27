@@ -417,3 +417,8 @@ Only sources that materially support, delimit, or redirect stored `PL-*` finding
 
 107. **Neelam Kandhil, Alessandro Languasco, Pieter Moree**, “Pair correlation of zeros of Dirichlet L-functions: a possible path towards the conjectures of Chowla, Elliott-Halberstam and Montgomery,” *Mathematische Annalen* **394** (2026), Article 43. DOI: https://doi.org/10.1007/s00208-026-03383-y. Published 13 February 2026.
      - Role: current guardrail for `PL-415`. Under GRH plus a Dirichlet-`L` pair-correlation conjecture, derives strong prime-distribution consequences in arithmetic progressions; confirms that treating the nonprincipal fixed-modulus variance sectors by separate zero-pair machinery introduces genuinely stronger auxiliary spectral hypotheses rather than an automatic consequence of zeta RH.
+
+## Circulant Frobenius projection and the mod-5 stationarization control
+
+108. **T. F. Chan**, “An Optimal Circulant Preconditioner for Toeplitz Systems,” *SIAM Journal on Scientific and Statistical Computing* **9**(4) (1988), 766–771. DOI: https://doi.org/10.1137/0909051.
+     - Role: classical prior-art anchor for `PL-442`. Provides the nearest-circulant/Frobenius-projection context used to audit the restricted stationary fit. The mod-5 zero-extension comparison, the vacuity proof for the full Reynolds transfer budget, and the corrected compressed-residual certificate in `PL-442` are Mathia derivations, not claims attributed to Chan.
