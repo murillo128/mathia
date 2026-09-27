@@ -97,7 +97,7 @@ Equation (9) is an exact full-group anisotropy energy, but it is **not** a usabl
 
 The arithmetic-facing transfer must instead use the actual compressed residual `E_R=S-S_cyc`. Its exact Frobenius norm is derived in Section 4, and the resulting corrected certificate has nonempty feasibility (for example `S=I_4`). Thus a covariance-respecting stationary surrogate still exists canonically, but the full-group Reynolds error is only a diagnostic of the zero-extended group action; the compressed residual is the relevant perturbation budget on `U_5`.
 
-There is one further exact strengthening. Because the dephasing cone is positively homogeneous, the relevant stationary object is not only the fixed normalization `S_cyc` but the positive ray `c S_cyc`, `c>0`. Optimizing the transfer certificate along that ray removes purely radial mismatch without changing the normalized stationary coordinates. The optimal scale is explicit, the trace-matching scale `c=5/4` already improves the normalized residual strictly for every nonzero covariance, and the full five-dimensional Reynolds residual remains universally unusable even after arbitrary positive rescaling because the artificial residue-zero row/column leaves a scale-invariant error floor.
+There are two further exact strengthenings. First, because the dephasing cone is positively homogeneous, the relevant stationary object is not only the fixed normalization `S_cyc` but the positive ray `c S_cyc`, `c>0`. Optimizing along that ray removes purely radial mismatch without changing the normalized stationary coordinates. Second, the Frobenius geometry of the dephasing map is itself contractive: diagonal residuals are attenuated by `3/4`, so the earlier `5/4` operator-norm triangle bound is unnecessary once the transfer error is measured in Frobenius norm. Combining both facts gives an explicit **dephased-ray** optimizer that is strictly stronger than the raw residual optimizer. The trace-matching scale `c=5/4` improves both residuals for every nonzero covariance, while the full five-dimensional Reynolds residual remains universally unusable even after arbitrary positive rescaling because the artificial residue-zero row/column leaves a scale-invariant error floor.
 
 No prime asymptotic, RH implication, or claim of new circulant-matrix theory is contained in this finding.
 
@@ -396,13 +396,25 @@ Write
 \tag{43}
 \]
 
-For `E_R`, the perturbative estimate from `PL-441` gives
+For `E_R`, the operator-norm triangle estimate from `PL-441` is valid but is not sharp for a Frobenius transfer budget. Entrywise, `\Phi` leaves off-diagonal entries unchanged and multiplies diagonal entries by `3/4`. Hence for every real symmetric matrix `A`,
+
+\[
+\boxed{
+\|\Phi(A)\|_F^2
+=
+\|A\|_F^2-
+\frac7{16}\sum_{a=1}^4 A_{aa}^2
+\le \|A\|_F^2.
+}
+\tag{44}
+\]
+
+Therefore
 
 \[
 \|\Phi(E_R)\|_{\rm op}
-\le\frac54\|E_R\|_{\rm op}
-\le\frac54\|E_R\|_F.
-\tag{44}
+\le\|\Phi(E_R)\|_F
+\le\|E_R\|_F.
 \]
 
 Consequently, if `\eta>0` and
@@ -412,7 +424,7 @@ Consequently, if `\eta>0` and
 \|S\|_F^2-
 \frac{6D^2+14U^2+14V^2}{25}
 <
-\left(\frac{4\eta}{5}\right)^2,
+\eta^2,
 }
 \tag{45}
 \]
@@ -424,8 +436,11 @@ then
 \tag{46}
 \]
 
+This strictly dominates the earlier sufficient condition obtained from
+`\|\Phi(E_R)\|_{\rm op}\le(5/4)\|E_R\|_{\rm op}`, which required the left side of (45) to be smaller than `(4\eta/5)^2`.
+
 The same argument gives the obstruction version: if
-`\lambda_{\min}(\Phi(S_{\rm cyc}))\le-\eta<0` and the left side of (45) is smaller than `(4\eta/5)^2`, then `\Phi(S)` still has a negative eigenvalue.
+`\lambda_{\min}(\Phi(S_{\rm cyc}))\le-\eta<0` and the left side of (45) is smaller than `\eta^2`, then `\Phi(S)` still has a negative eigenvalue.
 
 The original attempt to use the full-group error (9) in place of (41) is universally vacuous on nonzero covariances. Indeed, Cauchy--Schwarz on the four diagonal entries and separately on each group of three off-diagonal entries gives
 
@@ -451,8 +466,8 @@ On the positive-margin branch, `\operatorname{tr}\Phi(S_{\rm cyc})=3D/5`, so
 \[
 \eta\le\frac{3D}{20}
 \quad\Longrightarrow\quad
-\left(\frac{4\eta}{5}\right)^2
-\le\frac{9D^2}{625}
+\eta^2
+\le\frac{9D^2}{400}
 <
 \frac{D^2}{20}
 \le
@@ -476,12 +491,12 @@ and
 \qquad
 \|E_R\|_F^2=\frac4{25}
 <
-\left(\frac{4\eta}{5}\right)^2
+\eta^2
 =
-\frac{144}{625}.
+\frac9{25}.
 \]
 
-Thus the full-group criterion fails while the corrected compressed criterion succeeds.
+Thus the full-group criterion fails while the corrected compressed criterion succeeds. The older `4\eta/5` threshold also succeeds for this control, but (44)--(45) show that this loss is unnecessary.
 
 There is also a distinct norm-optimal restricted surrogate. If
 
@@ -553,10 +568,10 @@ For `c>0`, define the scale-normalized compressed residual
 \tag{55}
 \]
 
-The transfer argument (44) now reads
+The contractive Frobenius estimate (44) now gives
 
 \[
-\boxed{\rho(c)<\frac{4\eta}{5}\quad\Longrightarrow\quad \Phi(S)\succ0.}
+\boxed{\rho(c)<\eta\quad\Longrightarrow\quad \Phi(S)\succ0.}
 \tag{56}
 \]
 
@@ -626,13 +641,135 @@ The artificial residue-zero row and column give the exact scale-independent gap
 \tag{63}
 \]
 
-But `\eta\le3D/20`, so `(4\eta/5)^2\le9D^2/625<D^2/25`. Consequently **no positive scale `c` can make the full-group residual satisfy the perturbative transfer criterion**. The obstruction in (49) is therefore not an artifact of having fixed `c=1`; it comes from the zero-extension coordinate itself.
+But `\eta\le3D/20`, so `\eta^2\le9D^2/400<D^2/25`. Consequently **no positive scale `c` can make the full-group residual satisfy even the stronger Frobenius transfer criterion (56)**. The obstruction in (49) is therefore not an artifact of having fixed `c=1`; it comes from the zero-extension coordinate itself.
+
+### Dephased-ray optimizer
+
+The raw residual `\rho(c)` still overpays for diagonal mismatch, because `\Phi` attenuates every diagonal residual by `3/4`. Let
+
+\[
+A=\sum_{a=1}^4 S_{aa}^2,
+\qquad
+M=N-\frac7{16}A,
+\qquad
+Q_\Phi=\frac9{16}D^2+2R,
+\qquad
+P_\Phi=\frac94D^2+6R.
+\tag{64}
+\]
+
+By (44), `M=\|\Phi(S)\|_F^2`. Moreover,
+
+\[
+\langle\Phi(S),\Phi(S_{\rm cyc})\rangle_F
+=
+\frac{Q_\Phi}{5},
+\qquad
+\|\Phi(S_{\rm cyc})\|_F^2
+=
+\frac{P_\Phi}{25}.
+\tag{65}
+\]
+
+Define the scale-normalized **dephased** residual
+
+\[
+\delta(c)^2
+:=
+\frac{\|\Phi(S-cS_{\rm cyc})\|_F^2}{c^2}
+=
+\frac{M}{c^2}
+-\frac{2Q_\Phi}{5c}
++\frac{P_\Phi}{25}.
+\tag{66}
+\]
+
+Then the direct sufficient condition is
+
+\[
+\boxed{\delta(c)<\eta\quad\Longrightarrow\quad\Phi(S)\succ0.}
+\tag{67}
+\]
+
+Because `D>0` for every nonzero covariance, both `M>0` and `Q_\Phi>0`. Optimizing again in `t=1/c` gives
+
+\[
+\boxed{
+c_\Phi^*
+=
+\frac{5M}{Q_\Phi},
+\qquad
+\delta_*^2
+=
+\frac1{25}
+\left(
+P_\Phi-\frac{Q_\Phi^2}{M}
+\right).
+}
+\tag{68}
+\]
+
+The quantity under the square root is nonnegative by Cauchy--Schwarz for the Frobenius inner product after applying `\Phi`. Since `\delta(c)\le\rho(c)` for every `c>0`, (67)--(68) dominate the raw-ray certificate (56), and the domination can be strict.
+
+The same trace-matching representative `c_0=5/4` is universally better than `c=1` for the dephased residual. Indeed,
+
+\[
+\delta(1)^2-\delta(5/4)^2
+=
+\frac{9M-2Q_\Phi}{25}.
+\tag{69}
+\]
+
+Let `A=\sum_aS_{aa}^2`. Cauchy--Schwarz on the two groups of three off-diagonal entries gives
+`N\ge A+(2/3)R`, while the nonnegative diagonal entries of a covariance give `A\ge D^2/4`. Therefore
+
+\[
+9M-2Q_\Phi
+\ge
+\frac{81}{16}A+2R-\frac98D^2
+\ge
+\frac9{64}D^2+2R
+>0.
+\tag{70}
+\]
+
+Thus trace matching strictly improves the dephased normalized residual for every nonzero covariance, not only the raw residual.
+
+The improvement over the old transfer budget is genuinely nonvacuous. Take
+
+\[
+S=\operatorname{diag}(2,1,1,1).
+\tag{71}
+\]
+
+Then `D=5`, `R=0`, `N=A=7`, `S_{\rm cyc}=I_4`, and `\eta=3/4`. The raw-ray optimizer is `c_*=7/5` with
+
+\[
+\rho_*^2=\frac37>
+\left(\frac{4\eta}{5}\right)^2
+=
+\frac9{25},
+\]
+
+so the earlier `5/4`-loss certificate fails even after optimizing the raw residual. By contrast,
+
+\[
+c_\Phi^*=\frac75,
+\qquad
+\delta_*^2=\frac{27}{112}<\eta^2=\frac9{16}.
+\tag{72}
+\]
+
+Even the fixed trace-matching choice already gives
+`\delta(5/4)^2=27/100<9/16`. Hence the dephased Frobenius geometry certifies an explicit covariance that the previous optimized raw-residual test misses.
 
 ## 5. Prior-art and adversarial audit
 
 Finite-group Reynolds averaging, conditional expectation onto a fixed-point algebra, Fourier diagonalization of circulant matrices, and Frobenius-nearest circulant approximations are classical. In particular, the nearest-circulant/preconditioning literature already treats Frobenius projection onto circulant algebras and its positivity behavior; a standard anchor is T. F. Chan, “An Optimal Circulant Preconditioner for Toeplitz Systems,” *SIAM Journal on Scientific and Statistical Computing* **9**(4) (1988), 766–771, DOI `10.1137/0909051`. No novelty claim is made for any of those general constructions.
 
 Tyrtyshnikov's later distinction between optimal and superoptimal circulant preconditioners is useful calibration for the scale-free refinement: the former minimizes an absolute Frobenius residual, while the latter minimizes a relative residual of the form `||I-C^{-1}A||_F`. The scalar-ray optimization (55)--(58) is only an elementary one-dimensional analogue adapted to the present dephasing transfer problem; its formulas and the zero-extension floor (63) are not attributed to that preconditioning literature.
+
+The additional Hilbert--Schmidt sharpening (44), (64)--(70) is likewise not a claim of new matrix analysis. Diagonal extraction is an orthogonal coordinate projection for the Frobenius inner product, so (44) is an entrywise Pythagorean identity and (68) is another one-dimensional least-squares optimization after applying `\Phi`. The line-specific content is that the exact dephasing map of the mod-5 local-factor gate changes the correct residual geometry and therefore enlarges the certified Reynolds-ray transfer region.
 
 The line-specific content is the comparison forced by the incomplete residue set `U_5` and the zero-extension convention already present in `PL-440`: the restricted `4 x 4` least-squares fit and the `Z/5Z` Reynolds fit differ by the exact normalized factor `3/4`; the former can leave the covariance cone; the latter cannot; the full-group Reynolds residual has the exact vacuity floor (48)--(49); and the compressed residual (41) gives the corrected transfer certificate (45) for the dephasing lens of `PL-441`.
 
@@ -650,9 +787,9 @@ The main adversarial control is (34): even the positivity-preserving canonical a
 
 4. **Covariance positivity is not the target positivity.** Equations (25)--(30) describe the ordinary PSD cone of the cyclic surrogate. The dephased gate is strictly smaller, as (34) shows.
 
-5. **The compressed residual certificate is sufficient, not optimal.** Passing from operator norm to Frobenius norm in (44) can be wasteful. Failure of (45) says nothing by itself about failure of the true gate. The full-group residual (9) must not be substituted into this transfer test: (49) shows that doing so makes the sufficient hypothesis vacuous for every nonzero covariance.
+5. **The dephased Frobenius certificate is sufficient, not optimal.** Equation (44) removes the avoidable `5/4` loss, and (66)--(68) also remove radial and diagonal mismatch as far as the Frobenius geometry permits. The remaining step `\|\Phi(E)\|_{\rm op}\le\|\Phi(E)\|_F` can still be wasteful, so failure of (45) or (67) says nothing by itself about failure of the true gate. The full-group residual (9) must not be substituted into this transfer test: (49) and (63) show that doing so makes the sufficient hypothesis vacuous for every nonzero covariance.
 
-6. **No arithmetic estimate has been supplied.** The finding identifies `D,U,V` and the compressed residual (41) as the exact arithmetic-facing observables to estimate. The full-group energy (9) remains a valid group-action diagnostic, but not the perturbative transfer budget. Nothing here shows that the canonical prime covariance has positive margin `\eta` or small compressed anisotropy.
+6. **No arithmetic estimate has been supplied.** The finding identifies `D,U,V`, the covariance energy `N=\|S\|_F^2`, and, for the strongest dephased-ray certificate, the diagonal energy `A=\sum_aS_{aa}^2` as explicit arithmetic-facing observables. The full-group energy (9) remains a valid group-action diagnostic, but not the perturbative transfer budget. Nothing here shows that the canonical prime covariance has positive margin `\eta` or small compressed anisotropy.
 
 7. **No RH consequence follows from this finite-dimensional reduction alone.** Any RH-relevant progress still requires independently controlled signed prime correlation at the covariance scale, in accordance with the line mandate.
 
@@ -660,10 +797,10 @@ The main adversarial control is (34): even the positivity-preserving canonical a
 
 The immediate `PL-441` program can now be made unambiguous. Instead of speaking generically about a “best stationary approximation,” first form the `Z/5Z` cyclic Reynolds surrogate (5). It preserves the covariance cone, exposes the same quadratic-lag coordinate `f` as `PL-440`, and yields the exact normalized point `(x_R,y_R)` to test against the `PL-441` wedge–ellipse.
 
-Then measure transfer anisotropy by the exact compressed residual (41), not by the full zero-extended energy (9). A positive stationary dephasing margin together with (45) certifies the full gate; a robustly negative stationary margin plus the same small-compressed-residual condition certifies failure. The full-group quantity (9) remains a useful diagnostic of departure from the cyclic fixed-point algebra, but (49) proves that it cannot itself satisfy the perturbative transfer inequality for a nonzero covariance.
+Then measure transfer anisotropy on the four arithmetic channels, not by the full zero-extended energy (9). The raw compressed residual (41) together with (45) already gives a stronger certificate than the original operator-norm triangle bound; the dephased residual (66) is sharper still because it measures exactly the perturbation seen by the target map `\Phi`. A positive stationary dephasing margin together with (67) certifies the full gate; a robustly negative stationary margin plus the analogous small-dephased-residual condition certifies failure. The full-group quantity (9) remains a useful diagnostic of departure from the cyclic fixed-point algebra, but (49) proves that it cannot itself satisfy the perturbative transfer inequality for a nonzero covariance.
 
 The restricted Frobenius residual (50) is even smaller and is optimal within the stationary `4 x 4` family, but its surrogate can leave the covariance cone. The Reynolds and restricted-Frobenius stationarizations should therefore not be conflated.
 
-Because the cone is homogeneous, the strongest Reynolds-ray certificate should use the optimized scale (57), or at minimum the universally better trace-matching representative `c=5/4`, rather than treating the raw Reynolds normalization as geometrically distinguished. This changes only the radial normalization: the `PL-441` lens coordinates remain fixed. By contrast, no positive rescaling can make the full zero-extended residual into a viable transfer budget, by (63).
+Because the cone is homogeneous, the strongest readily computable Reynolds-ray certificate in this Frobenius framework should use the **dephased** optimizer (68), or at minimum the universally better trace-matching representative `c=5/4`, rather than treating the raw Reynolds normalization as geometrically distinguished. The raw optimizer (57) remains a useful intermediate diagnostic but can be strictly weaker, as (71)--(72) show. These rescalings change only the radial normalization: the `PL-441` lens coordinates remain fixed. By contrast, no positive rescaling can make the full zero-extended residual into a viable transfer budget, by (63).
 
 If neither corrected inequality is available, the remaining problem is no longer finite-dimensional linear algebra: it is precisely the arithmetic task of controlling the start-residue anisotropy and the signed lag imbalance at the natural variance scale. This narrows the next theorem surface to two quantitative observables derived directly from the canonical covariance: the dephasing margin of a declared stationary surrogate and the corresponding **compressed** residual. Any future prime estimate that controls only the artificial zero-extended error floor cannot close the current local-factor gate.
