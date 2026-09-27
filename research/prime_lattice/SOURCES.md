@@ -422,3 +422,6 @@ Only sources that materially support, delimit, or redirect stored `PL-*` finding
 
 108. **T. F. Chan**, “An Optimal Circulant Preconditioner for Toeplitz Systems,” *SIAM Journal on Scientific and Statistical Computing* **9**(4) (1988), 766–771. DOI: https://doi.org/10.1137/0909051.
      - Role: classical prior-art anchor for `PL-442`. Provides the nearest-circulant/Frobenius-projection context used to audit the restricted stationary fit. The mod-5 zero-extension comparison, the vacuity proof for the full Reynolds transfer budget, and the corrected compressed-residual certificate in `PL-442` are Mathia derivations, not claims attributed to Chan.
+
+109. **Evgenij E. Tyrtyshnikov**, “Optimal and Superoptimal Circulant Preconditioners,” *SIAM Journal on Matrix Analysis and Applications* **13**(2) (1992), 459–473. DOI: https://doi.org/10.1137/0613030.
+     - Role: classical calibration for the scale-free strengthening of `PL-442`. Distinguishes the Frobenius-nearest “optimal” circulant from a relative-residual “superoptimal” criterion and proves positivity inheritance in that preconditioning setting. `PL-442` uses only the conceptual distinction between absolute and relative residuals; its positive-ray optimizer, trace-matching improvement, and scale-invariant zero-extension floor are elementary Mathia derivations, not results attributed to Tyrtyshnikov.
