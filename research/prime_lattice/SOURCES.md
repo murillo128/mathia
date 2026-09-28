@@ -425,3 +425,6 @@ Only sources that materially support, delimit, or redirect stored `PL-*` finding
 
 109. **Evgenij E. Tyrtyshnikov**, “Optimal and Superoptimal Circulant Preconditioners,” *SIAM Journal on Matrix Analysis and Applications* **13**(2) (1992), 459–473. DOI: https://doi.org/10.1137/0613030.
      - Role: classical calibration for the scale-free strengthening of `PL-442`. Distinguishes the Frobenius-nearest “optimal” circulant from a relative-residual “superoptimal” criterion and proves positivity inheritance in that preconditioning setting. `PL-442` uses only the conceptual distinction between absolute and relative residuals; its positive-ray optimizer, trace-matching improvement, and scale-invariant zero-extension floor are elementary Mathia derivations, not results attributed to Tyrtyshnikov.
+
+110. **Nicholas J. Higham**, “Computing the Nearest Correlation Matrix—a Problem from Finance,” *IMA Journal of Numerical Analysis* **22**(3) (2002), 329–343. DOI: https://doi.org/10.1093/imanum/22.3.329.
+     - Role: classical prior-art calibration for `PL-443`. Treats the unit-diagonal positive-semidefinite correlation-matrix cone and Frobenius nearness as standard structured-matrix objects. `PL-443` does not attribute its Hardy--Littlewood/Reynolds compatibility identity or its stationary shrinkage formulas to Higham.
