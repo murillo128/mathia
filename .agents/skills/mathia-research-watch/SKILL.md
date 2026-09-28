@@ -527,6 +527,8 @@ Do **not** write to:
 
 Scheduled Research Watches publish substantive research-knowledge improvements directly to the repository default branch. They do not open a PR for routine evidence/review maintenance.
 
+For remote mutation/publication, load `.agents/skills/codex-github-operations/SKILL.md` and use it as the transport authority. In a scheduled or connector-only runtime where persistent local `git push` is unavailable, use its Git Data fallback directly (`create_blob` -> `create_tree` -> `create_commit` -> non-forced `update_ref`) and verify the resulting ref and changed files remotely. The transport choice does not relax this skill's path, substantive, review, or publication gates.
+
 Before every commit:
 
 1. refresh the default branch and inspect the complete planned diff;
