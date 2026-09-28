@@ -206,7 +206,7 @@ Before every commit:
 6. remove unrelated formatting churn;
 7. use `research(mind): <mathematical synthesis>`.
 
-Use the repository Git/GitHub operations skill for transport and concurrency safety. Never force-push. A concurrent main change requires refreshing affected sources and gates rather than overwriting it.
+Load `.agents/skills/codex-github-operations/SKILL.md` for transport and concurrency safety. In a scheduled or connector-only runtime without persistent local `git push`, use its Git Data fallback (`create_blob` -> `create_tree` -> `create_commit` -> non-forced `update_ref`) and verify the resulting ref and changed files remotely. Never force-push. A concurrent main change requires refreshing affected sources and gates rather than overwriting it. Transport substitution does not relax the Mind path, evidence, adversarial, stale-reference, or publication gates.
 
 ## Reporting
 
