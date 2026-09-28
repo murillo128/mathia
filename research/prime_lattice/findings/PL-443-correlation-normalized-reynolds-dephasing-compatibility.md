@@ -306,6 +306,117 @@ G(\alpha)
 
 over the interval where `0\le\alpha\le1` and `\eta_\alpha>0`. Hence the fixed Reynolds point `\alpha=3/4` is one admissible structural choice, not an optimization principle.
 
+### Closed-form optimizer and the no-rescue threshold
+
+The scalar optimization can be closed explicitly, and doing so reveals a structural limit of shrinkage. The same argument works for every odd prime after replacing `3/4` and `1/4` by `r_p=(p-2)/(p-1)` and `\delta_p=1/(p-1)`. Keep `\varepsilon,` `\beta`, and `\lambda=\lambda_{\min}(F)` as in (22), and put
+
+\[
+q=1-\lambda.
+\]
+
+Since `F` has unit diagonal on `n=p-1` coordinates, `\operatorname{tr}F=n`. If `q>0`, one eigenvalue deviation from `1` is `-q`, while the remaining `n-1` deviations have sum `q`. Cauchy--Schwarz therefore gives
+
+\[
+\boxed{
+\beta
+=
+\|F-I\|_F^2
+\ge
+q^2+\frac{q^2}{n-1}
+=
+\frac{q^2}{r_p}.
+}
+\tag{26a}
+\]
+
+For the general shrinkage segment `H_\alpha=I+\alpha(F-I)`, the target margin and certificate gap are
+
+\[
+\eta_\alpha
+=
+r_p-q\alpha,
+\qquad
+G_p(\alpha)
+=
+(r_p-q\alpha)^2
+-
+\varepsilon^2
+-
+(1-\alpha)^2\beta,
+\tag{26b}
+\]
+
+hence
+
+\[
+\boxed{
+G_p(\alpha)
+=
+r_p^2-\varepsilon^2-\beta
++
+2(\beta-r_pq)\alpha
+-
+(\beta-q^2)\alpha^2.
+}
+\tag{26c}
+\]
+
+This immediately yields a no-rescue threshold. If
+
+\[
+\lambda\le\delta_p
+\quad\Longleftrightarrow\quad
+q\ge r_p,
+\]
+
+then every `\alpha\in[0,1]` with positive target margin satisfies `\alpha<r_p/q`. Using (26a),
+
+\[
+\sqrt\beta(1-\alpha)
+\ge
+\frac{q(1-\alpha)}{\sqrt{r_p}}
+\ge
+r_p-q\alpha
+=
+\eta_\alpha.
+\tag{26d}
+\]
+
+For the second inequality, after multiplying by `\sqrt{r_p}`, the difference is linear in `\alpha`, decreases on `[0,r_p/q]`, and at the right endpoint equals `q-r_p\ge0`. Thus even with `\varepsilon=0`, the strict Frobenius transfer inequality cannot hold. **Identity/Reynolds shrinkage cannot rescue a stationary fit whose smallest eigenvalue is at or below the exact local-factor floor `\delta_p`.**
+
+On the only potentially certifiable branch `\lambda>\delta_p`, one has `q<r_p`. If `q=0`, the trace constraint forces `F=I` and `\beta=0`, so `\alpha` is irrelevant. If `q>0`, (26a) implies `\beta>q^2`, so (26c) is strictly concave and the constrained maximizer is
+
+\[
+\boxed{
+\alpha_{\rm opt}
+=
+\begin{cases}
+0, & \beta\le r_pq,\\[4pt]
+\dfrac{\beta-r_pq}{\beta-q^2}, & \beta>r_pq,
+\end{cases}
+}
+\tag{26e}
+\]
+
+with
+
+\[
+\boxed{
+\max_{0\le\alpha\le1}G_p(\alpha)
+=
+\begin{cases}
+r_p^2-\varepsilon^2-\beta,
+& \beta\le r_pq,\\[6pt]
+\dfrac{\beta(\lambda-\delta_p)^2}{\beta-q^2}
+-\varepsilon^2,
+& \beta>r_pq.
+\end{cases}
+}
+\tag{26f}
+\]
+
+The interior value in (26e) lies in `(0,1)` because `q<r_p<1`. Therefore the segment contains a successful strict Frobenius certificate **if and only if** `\lambda>\delta_p` and the corresponding value in (26f) is positive. Shrinkage can improve robustness once the stationary fit is already inside the exact dephasing cone, but it cannot change stationary admissibility itself.
+
 For the concrete mod-`5` coordinates (9),
 
 \[
@@ -452,7 +563,26 @@ while
 \tag{39}
 \]
 
-Thus the Reynolds Frobenius transfer test fails even though the covariance is **exactly stationary** and satisfies the target cone with positive margin. The shrinkage optimization (20)--(26) removes this artifact.
+Thus the Reynolds Frobenius transfer test fails even though the covariance is **exactly stationary** and satisfies the target cone with positive margin. The shrinkage optimization removes this artifact, but its exact optimum is slightly inside the Frobenius endpoint. Here
+
+\[
+q=\frac7{10},
+\qquad
+\beta=12t^2=\frac{147}{25},
+\]
+
+so (26e)--(26f) give
+
+\[
+\alpha_{\rm opt}=\frac{153}{154},
+\qquad
+G(\alpha_{\rm opt})=\frac3{1100}
+>
+G(1)=\frac1{400}.
+\tag{40}
+\]
+
+Thus `\alpha=1` is a zero-residual certificate for exact stationary data, but not generally the maximizer of the margin-minus-residual gap: an infinitesimal retreat toward the identity gains margin linearly while paying residual only quadratically.
 
 ## 5. Prior art and novelty audit
 
@@ -460,9 +590,9 @@ The generic ingredients are classical.
 
 - Converting a covariance matrix to a unit-diagonal positive-semidefinite correlation matrix by diagonal scaling is standard. The nearest-correlation-matrix literature, including Higham (2002), treats the unit-diagonal PSD cone as a classical structured matrix object.
 - Frobenius-nearest circulant/structured approximations are classical; the Prime-Lattice source list already records Chan (1988) and Tyrtyshnikov (1992) as calibration for `PL-442`.
-- Group/Reynolds averaging preserving positivity is standard finite-dimensional convexity/representation theory, and linear shrinkage toward the identity is classical covariance regularization.
+- Group/Reynolds averaging preserving positivity is standard finite-dimensional convexity/representation theory. Linear shrinkage toward the identity is also classical covariance regularization; Ledoit--Wolf (2004), for example, studies an asymptotically optimal convex combination with the identity under quadratic loss.
 
-No novelty is claimed for correlation matrices, diagonal congruence, Frobenius projection, Reynolds averaging, shrinkage, Weyl's inequality, or one-dimensional quadratic optimization.
+No novelty is claimed for correlation matrices, diagonal congruence, Frobenius projection, Reynolds averaging, identity shrinkage, Weyl's inequality, or one-dimensional quadratic optimization. The Ledoit--Wolf objective is statistical and distinct from the deterministic dephasing-margin certificate here; it is used only to calibrate the generic status of identity-target shrinkage.
 
 The line-specific content is the exact compatibility (7)--(8): **after the exact `PL-421` correlation normalization, the trace-matched zero-extension Reynolds stationarization equals the Hardy--Littlewood local-factor dephasing map applied to the ordinary stationary Frobenius fit.** The equality uses the same arithmetic coefficient `(p-2)/(p-1)` on both sides and yields the explicit certification family (20)--(26). Targeted literature checks around nearest correlation matrices, circulant approximation, structured covariance, and periodic covariance extension did not locate this Hardy--Littlewood specialization.
 
@@ -474,7 +604,7 @@ This is a representation refinement, not evidence that the actual prime covarian
 
 2. **Normalization can magnify weak channels.** Even though diagonal congruence is exact algebraically, an arithmetic estimate for `C_{ab}=S_{ab}/\sqrt{S_{aa}S_{bb}}` requires quantitative lower control of the residue variances. A tiny diagonal entry can make normalized error estimates harder, not easier.
 
-3. **The Frobenius fit need not be positive semidefinite.** That is not hidden by (20). If `\eta_1=\lambda-1/4>0`, positivity is automatic; otherwise `\alpha=1` is simply not a valid positive-margin transfer point. The segment permits retreat toward the identity or the Reynolds point.
+3. **Shrinkage cannot repair a stationary fit below the dephasing floor.** A small `\alpha` can make `H_\alpha-\delta_p I` positive even when `F-\delta_p I` is not, but (26d) shows that the required Frobenius residual then consumes at least the entire margin. Thus no member of this certificate family succeeds unless `\lambda_{\min}(F)>\delta_p`. Once that condition holds, (26e)--(26f) optimize robustness; they do not alter the exact stationary admissibility condition.
 
 4. **Reynolds remains structurally canonical, not certification-optimal.** Equation (7) explains why it preserves covariance positivity and how it matches the local dephasing coefficient. Equations (23)--(26) show that this does not make `\alpha=r_p` the best perturbative certificate.
 
@@ -486,8 +616,8 @@ This is a representation refinement, not evidence that the actual prime covarian
 
 The current mod-`5` theorem surface should distinguish three layers that were previously conflated.
 
-First, use the `PL-421` diagonal congruence and work with the correlation matrix `C`, because the target cone itself is invariant under residue-wise positive rescaling. Second, form the Frobenius stationary correlation fit `F=T(1,U/3,V/3)`. Third, choose the shrinkage parameter `\alpha` by the exact scalar tradeoff (23)--(26), rather than fixing the zero-extension Reynolds value `3/4` before seeing the target margin.
+First, use the `PL-421` diagonal congruence and work with the correlation matrix `C`, because the target cone itself is invariant under residue-wise positive rescaling. Second, form the Frobenius stationary correlation fit `F=T(1,U/3,V/3)`. Third, test the exact stationary floor `\lambda_{\min}(F)>1/4`; if it fails, (26d) proves that no identity/Reynolds shrinkage can make this Frobenius transfer family certify the cone. If it passes, choose `\alpha` from the closed form (26e)--(26f), rather than fixing the zero-extension Reynolds value `3/4` before seeing the target margin and residual.
 
-The trace-matched Reynolds surrogate remains mathematically distinguished: it is exactly `\Psi_5(F)`, and its dephasing margin is `(3/4)\lambda_{\min}(F)`. But for certification it is one point on a larger target-aligned family. In particular, exact stationary data should use `\alpha=1`, while strongly uncertain stationary fits may benefit from shrinking toward the identity.
+The trace-matched Reynolds surrogate remains mathematically distinguished: it is exactly `\Psi_5(F)`, and its dephasing margin is `(3/4)\lambda_{\min}(F)`. But for certification it is one point on a larger target-aligned family. Even exact stationary data need not maximize the gap at `\alpha=1`: the control (36) has optimum `153/154`. Shrinkage can therefore improve the quantitative certificate only after the stationary fit already lies inside the exact dephasing cone; it cannot manufacture admissibility from a stationary fit below the `1/4` floor.
 
 The unresolved number-theoretic question is now cleaner. One needs variance-scale control of the **normalized** residue correlations sufficient to bound `\lambda_{\min}(F)`, `\varepsilon`, and `\beta`; pure residue-variance imbalance should no longer consume the anisotropy budget. This does not lower the arithmetic difficulty automatically, but it removes a non-invariant obstruction from the finite-dimensional transfer geometry.

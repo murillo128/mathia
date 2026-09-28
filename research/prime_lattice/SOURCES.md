@@ -428,3 +428,6 @@ Only sources that materially support, delimit, or redirect stored `PL-*` finding
 
 110. **Nicholas J. Higham**, “Computing the Nearest Correlation Matrix—a Problem from Finance,” *IMA Journal of Numerical Analysis* **22**(3) (2002), 329–343. DOI: https://doi.org/10.1093/imanum/22.3.329.
      - Role: classical prior-art calibration for `PL-443`. Treats the unit-diagonal positive-semidefinite correlation-matrix cone and Frobenius nearness as standard structured-matrix objects. `PL-443` does not attribute its Hardy--Littlewood/Reynolds compatibility identity or its stationary shrinkage formulas to Higham.
+
+111. **Olivier Ledoit, Michael Wolf**, “A Well-Conditioned Estimator for Large-Dimensional Covariance Matrices,” *Journal of Multivariate Analysis* **88**(2) (2004), 365–411. DOI: https://doi.org/10.1016/S0047-259X(03)00096-4.
+     - Role: classical linear-shrinkage calibration for `PL-443`. Studies an asymptotically optimal convex linear combination of the sample covariance matrix with the identity under quadratic loss. It supports only the generic status of identity shrinkage as standard covariance regularization; `PL-443`'s exact Hardy--Littlewood/Reynolds compatibility, deterministic dephasing-margin optimizer, and no-rescue threshold are Mathia derivations.
