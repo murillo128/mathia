@@ -248,6 +248,8 @@ The adversary may read those sources as needed, but reading does not grant write
 
 A scheduled adversarial pass may publish substantive sidecar/clue changes directly to the repository default branch when all path and protocol gates pass.
 
+For remote mutation/publication, load `.agents/skills/codex-github-operations/SKILL.md` and use it as the transport authority. In a scheduled or connector-only runtime without persistent local `git push`, use its Git Data fallback (`create_blob` -> `create_tree` -> `create_commit` -> non-forced `update_ref`) and verify the resulting ref and changed files remotely. Transport substitution does not relax any review-turn, sidecar, clue, path, persistence, concurrency, or publication gate.
+
 Before every commit:
 
 1. refresh the default branch and ensure the target has not changed or disappeared while being reviewed;
