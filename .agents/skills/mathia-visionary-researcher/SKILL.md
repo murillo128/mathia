@@ -261,6 +261,8 @@ The Visionary may mutate only the **single exact campaign issue that passes the 
 
 A scheduled Visionary campaign may publish a clue directly to the default branch only in phase 6 when the Visionary gate and shared clue gates pass.
 
+For remote mutation/publication, load `.agents/skills/codex-github-operations/SKILL.md` and use it as the transport authority. In a scheduled or connector-only runtime without persistent local `git push`, use its Git Data fallback (`create_blob` -> `create_tree` -> `create_commit` -> non-forced `update_ref`) and verify the resulting ref and changed files remotely. Transport substitution does not relax the Visionary phase, campaign-identity, clue, path, continuity, or publication gates.
+
 Before publication, refresh current `main`, inspect the complete diff, verify every changed path is authorized, verify every clue remains proposed and its origin is correct for creation versus strengthening, verify a concrete question/decisive test/evidence boundary, verify controlled false steps are quarantined to provenance, and remove unrelated churn.
 
 Use commit messages `research(visionary): propose <clue>` or `research(visionary): sharpen <clue>`. If no clue passes, create no commit.
