@@ -566,6 +566,8 @@ It also must not create/delete/move `research/<line>/` directories, and it must 
 
 A scheduled Master Researcher pass may publish substantive owned-path changes **directly to the default branch** when all gates pass.
 
+For remote mutation/publication, load `.agents/skills/codex-github-operations/SKILL.md` and use it as the transport authority. In a scheduled or connector-only runtime where persistent local `git push` is unavailable, use its Git Data fallback directly (`create_blob` -> `create_tree` -> `create_commit` -> non-forced `update_ref`) and verify the resulting ref and changed files remotely. The transport choice does not relax this skill's ownership, clue, adversarial, concurrency, or publication gates.
+
 Before each commit:
 
 1. inspect the complete diff;
