@@ -23,6 +23,24 @@ Before mutating remote state, verify that the selected persistent transport is a
 
 A failure of one replaceable transport is not a technical blocker when another permitted route or precise handoff can complete the operation.
 
+
+### Git Data fallback for connector-only runtimes
+
+When local `git` publication is unavailable or lacks persistent authentication, but the connected GitHub app exposes Git Data mutations, use Git Data as the normal publication transport rather than treating the workflow as blocked. This is a transport substitution only: the calling skill's path ownership, review, concurrency, publication, and direct-main gates remain fully authoritative.
+
+For a commit that changes one or more repository files:
+
+1. resolve the exact current remote branch HEAD and its tree before constructing the update;
+2. create blobs for the complete intended file contents;
+3. create a tree based on the current remote tree, changing only the caller-authorized paths;
+4. create a commit whose parent is the exact previously observed branch HEAD;
+5. advance the intended branch with a non-forced ref update;
+6. re-read the branch/ref and every changed file from GitHub, verifying the resulting commit/blob SHAs and content.
+
+If the ref moved after it was read, do not force the update. Refresh HEAD/tree, reconcile the caller-authorized changes against the new state, rerun every gate affected by the movement, create a fresh commit, and retry the normal fast-forward update.
+
+In scheduled or connector-only runtimes, prefer this Git Data sequence over the Contents API (`create_file`/`update_file`) when Git Data is available and permitted. A Contents-API failure is not a publication blocker when the Git Data route remains available. Never use Git Data to bypass an explicit platform safety/security denial of the same operation; respect that denial and report the precise blocked action.
+
 ## Workflow state
 
 For non-trivial controlling issues that use the generic issue workflow, the current workflow state is authoritative through exactly one state label:
