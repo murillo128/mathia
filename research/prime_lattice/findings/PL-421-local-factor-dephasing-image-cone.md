@@ -327,6 +327,110 @@ already suffices because there are three off-diagonal entries per row.
 
 These are only sufficient conditions; the exact criterion is (7). Their value is analytic: they turn the abstract restricted-cone escape of `PL-420` into concrete **cross-residue decorrelation estimates**. A theorem giving `C=I+o(1)` in operator norm for the relevant actual-prime or zero-side matrix would eventually make exact local deletion positive. But if such a theorem is proved only under GRH, it cannot serve as an RH mechanism; the lower-frame estimate has to come from non-circular arithmetic input at the stage where it is used.
 
+### Character-side scalar shadow and the PL-415 virtual supertrace
+
+The exact cone also has a useful character-side scalar shadow. Let `n=p-1`, let `F` be the unitary character table of `U_p`, and write its normalized character columns as
+
+\[
+(f_\chi)_a=\frac{\chi(a)}{\sqrt n}.
+\]
+
+For
+
+\[
+K=F^*SF,
+\qquad
+V_\chi=K_{\chi\chi}=f_\chi^*Sf_\chi,
+\qquad
+T=\operatorname{tr}S=\sum_\chi V_\chi,
+\]
+
+put `R=\Psi_p^{-1}(S)`. Since every character vector is flat on `U_p`,
+
+\[
+f_\chi^*\operatorname{Diag}(S)f_\chi
+=
+\frac{T}{n}.
+\]
+
+Equation (4) therefore gives the exact identity
+
+\[
+\boxed{
+f_\chi^*Rf_\chi
+=
+\frac1{r_p}
+\left(
+V_\chi-\frac{T}{n^2}
+\right).
+}
+\]
+
+Consequently every covariance in the positive image cone satisfies the necessary family of scalar bounds
+
+\[
+\boxed{
+V_\chi\ge \frac{T}{(p-1)^2}
+\qquad\text{for every }\chi\bmod p.
+}
+\]
+
+These inequalities are only shadows of the full Loewner condition: they test the inverse covariance on the character rays but do not control mixed character polarizations.
+
+The coefficient pattern from `PL-415` has an exact interpretation in this language. Define the normalized virtual-character functional
+
+\[
+Q_p(S)
+:=
+V_{\chi_0}
+-
+\frac1{p(p-2)}
+\sum_{\chi\ne\chi_0}V_\chi.
+\]
+
+Because `p(p-2)=n^2-1` and `\sum_\chi V_\chi=T`,
+
+\[
+Q_p(S)
+=
+\frac{n^2V_{\chi_0}-T}{n^2-1},
+\]
+
+and hence
+
+\[
+\boxed{
+Q_p(S)
+=
+\frac{p-1}{p}\,
+f_{\chi_0}^*\Psi_p^{-1}(S)f_{\chi_0}.
+}
+\]
+
+Thus, at the positive-covariance stage where the `PL-421` cone applies, the signed virtual-character supertrace singled out by the inverse local factor is exactly one principal-direction quadratic form of the dephased preimage. Cone membership forces `Q_p(S)\ge0`; equality holds exactly when the principal character vector lies in the kernel of the positive preimage.
+
+For `p=5` this becomes
+
+\[
+V_\chi\ge\frac{T}{16},
+\qquad
+Q_5(S)
+=
+V_{\chi_0}
+-
+\frac1{15}\sum_{\chi\ne\chi_0}V_\chi
+=
+\frac{16V_{\chi_0}-T}{15}
+=
+\frac45 f_{\chi_0}^*\Psi_5^{-1}(S)f_{\chi_0}.
+\]
+
+The `PL-424` matched controls show sharply why this scalar consequence cannot replace the matrix gate. There `K_{\rm good}=I_4` and `K_{\rm bad}=vv^*` have the same four character variances `V_\chi=1` and `T=4`, so both have `Q_5=4/5>0`; nevertheless only the good control lies in the `PL-421` image cone. The supertrace is therefore a necessary one-ray test of the inverse covariance, not a sufficient positivity certificate.
+
+No new general Fourier or matrix-analysis theorem is claimed here. Flatness of finite-group characters, unitary trace invariance, and taking quadratic forms of a Loewner inequality are standard. The line-specific content is the exact identification of the `PL-415` local-factor coefficient pattern with the principal-character quadratic form of the `PL-421` positive preimage, together with the `PL-424` control proving that this scalarization loses decisive coherence.
+
+This covariance-level identity does **not** impose a sign on the source-subtracted residual `\Delta T_X^{(p)}` from `PL-415`. After deterministic model subtraction the object need not remain a positive covariance, as already emphasized by `PL-418`; the nonnegativity conclusion applies only when the same `S` is genuinely subject to the positive-image cone.
+
 ## 5. Relation to `PL-419` and the current source-transfer frontier
 
 `PL-419` shows that retaining only the positive diagonal residue energies loses the off-diagonal information needed by the mod-5 signed supertrace. `PL-420` then shows that retaining the full matrix still does not make exact local deletion positive automatically. The present calculation identifies the exact missing quantitative statement.
