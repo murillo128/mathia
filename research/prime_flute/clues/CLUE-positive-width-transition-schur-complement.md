@@ -1,12 +1,13 @@
 ---
 id: CLUE-prime-flute-positive-width-transition-schur-complement
 type: research-clue
-status: proposed
+status: accepted
 origin: research-watch
 target_line: prime_flute
 based_on:
   - research/prime_flute/findings/PF-342-sharp-physical-cutoff-forces-order-one-direct-angle-correlation.md
   - research/prime_flute/findings/PF-343-uniformly-small-physical-hard-sector-gaps-force-order-one-direct-angle-correlation.md
+  - research/prime_flute/findings/PF-344-positive-width-transition-shorting-removes-the-leading-corridor-cost.md
 ---
 
 # Can a positive-width transition band absorb the collapsing-corridor mode after exact Schur elimination?
@@ -23,7 +24,7 @@ Therefore moving the hard cutoff or inserting only a narrow direct gap does not 
 
 in which the transition band \`T\` has a physical width bounded below independently of the cuff period and is **retained in the full positive boundary form** before being eliminated.
 
-Schur-complement realizations of Dirichlet-to-Neumann operators are classical, so the operation itself is not new. The unresolved issue is its quantitative effect on the exact collapsing Prime-Flute corridor.
+Schur-complement realizations of Dirichlet-to-Neumann operators are classical. PF-344 now proves that exact positive shorting cancels the leading raw corridor-scale matrix element on bounded edge witnesses and, qualitatively, shorts every individual bounded physical-frequency cosine to subleading energy. The surviving issue is the **diagonally normalized** effective angle and its global singular-value scale.
 
 ## Research question
 
@@ -75,28 +76,43 @@ The test is also structurally clean. It asks whether the leading thin-corridor r
 
 ## Decisive test
 
-Work first on one PF-341 tail pant, then on the symmetric two-pant module.
+PF-344 settles the first raw-corridor-scale obstruction, but not the completed endpoint. In strictly positive canonical finite sections, form the exact three-sector positive shorted precision
 
-At corridor scale the leading positive self-DtN form behaves like a large, highly coherent boundary response concentrated near the finite-finite foot. Resolve that leading form in the physical Fourier basis across \`L/T/H\`.
+\[
+\widehat M_{LH}
+=M_{LH}-M_{LT}M_{TT}^{-1}M_{TH}
+\]
 
-The decisive calculation is the leading Schur complement of the transition block:
+with a fixed positive-width physical transition sector. PF-344 supplies the actual bound that its bounded-frequency *matrix entries* are \(o(D_n)\), and the stronger edge rate \(O(1+D_n/L_n^2)\), by explicit variational trials. Do not ask for the same raw leading-order cancellation again or reinterpret it as normalized angle decay.
 
-1. obtain uniform-in-\`L\` asymptotics for \`M_{LT}\`, \`M_{TT}\`, and \`M_{TH}\` on a fixed physical transition interval;
-2. determine whether
-   \[
-   M_{LH}-M_{LT}M_{TT}^{-1}M_{TH}
-   \]
-   cancels the full \`1/(sL)\` corridor contribution between low and high;
-3. normalize by the Schur-complement diagonal energies, not by the pre-elimination blocks;
-4. if the normalized mixed response is \`o(1)\` with a summable/ideal-compatible rate, continue to separated-module reassembly;
-5. if it remains bounded below on infinitely many separated modules, reject the route by the PF-342/PF-343 noncompactness template.
+Now determine the shorted diagonal energies \(\widehat M_{LL},\widehat M_{HH}\) on these witnesses and estimate
 
-A useful first finite model is the corridor-leading Gram form restricted to all Fourier modes in a fixed compact physical interval. Because the number of transition modes grows like \`\eta L/(2\pi)\`, the test must keep the whole growing transition block; a fixed-rank surrogate would not answer the question.
+\[
+\widehat Z_{LH}
+=
+\widehat M_{LL}^{-1/2}
+\widehat M_{LH}
+\widehat M_{HH}^{-1/2}
+\]
+
+in the actual finite-section spectral currency. A lower bound on the normalized correlation along infinitely many separated modules would refute this architecture. A positive endpoint requires quantitative decay after normalization, control of all high frequencies, and the PF-318/PF-320 weak-trace reassembly, not merely small unnormalized entries.
+
+The main new quantitative gate is the tradeoff in PF-344's trial bound
+
+\[
+D_n\left\|f+\sum_j a_j\cos(\xi_j\cdot)\right\|_
+{L^2(\operatorname{sech}t\,dt)}^2
++C\left(1+\sum_j|a_j|\right)^2.
+\]
+
+PF-344's weighted density proof gives arbitrarily good approximations at **uncontrolled** coefficient cost. Obtain a rate at the true \(D_n\) scale, and either show that the resulting shorted diagonal and mixed blocks yield a small completed angle or construct a surviving normalized witness. Keep the full growing transition block, not a fixed-rank surrogate.
 
 ## Evidence boundary
 
-No cancellation theorem is established here. PF-343 only proves that **direct** opposite hard sectors cannot be physically too close. It does not determine the Schur complement after a positive-width intermediate band is retained.
+PF-344 proves a **partial positive** result: a fixed positive physical transition band removes the raw \(D_n\)-scale edge correlation after exact positive Schur shorting; all individual bounded-frequency cosine matrix entries are \(o(D_n)\). These are variational upper bounds on the unnormalized shorted form, not a claim about its normalized low/high canonical-correlation angle.
 
-General DtN/Schur-complement theory guarantees algebraic positivity properties under suitable hypotheses but does not supply the Prime-Flute asymptotic cancellation or Schatten estimate.
+No lower or upper spectral bound after division by the shorted diagonal energies, no uniform approximation-conditioning rate, no control of the unbounded high sector, and no compactness or weak-\(\mathcal S_1\) endpoint is established. General DtN/Schur theory and weighted-exponential completeness are classical; neither supplies these missing quantitative Prime-Flute estimates.
 
-This clue therefore proposes a new operator calculation; it is not evidence that transition-band elimination succeeds, and it does not establish any scattering, determinant, zeta-zero, critical-line, or RH consequence.
+## Research disposition
+
+Status: accepted. PF-344 resolves the preliminary question whether the raw collapsing-corridor \(D_n\) term survives exact transition-band shorting: it does **not** survive on the bounded edge witnesses, and the individual bounded-frequency raw entries are all subleading. The clue remains active for the materially different question of the **completed, diagonally normalized and globally reassembled** effective low/high angle. Its decisive test is now a quantitative approximation-cost/conditioning estimate or a normalized counter-witness. See [[research/prime_flute/findings/PF-344-positive-width-transition-shorting-removes-the-leading-corridor-cost.md]].

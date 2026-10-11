@@ -366,6 +366,22 @@ Relevant finding: PF-197; relevant local clue: `CLUE-weak-trace-reassembly-with-
 
 **Scope warning.** Ponge's global Proposition 3.13 is stated on a closed manifold. Its local lemma does not supply a uniform constant for the infinite prime-flute module family and does not control off-diagonal resolvent tails, IMS/commutator terms, finite-color reassembly, or the endpoint conservative splice. PF-197 keeps those as explicit open gates.
 
+## S21 — completeness of weighted exponential families
+
+**A. Poltoratski**, *A problem on completeness of exponentials*, Annals of Mathematics 178 (2013), 983–1016. DOI: 10.4007/annals.2013.178.3.4.
+
+- https://annals.math.princeton.edu/2013/178-3/p04
+- https://doi.org/10.4007/annals.2013.178.3.4
+
+Used for:
+
+- authoritative prior-art context for the classical completeness/type problem of exponentials whose frequencies lie in an interval, in weighted \(L^2(\mu)\) spaces;
+- PF-344's comparison with the zero-type case \(\mu(dt)=\operatorname{sech}t\,dt\), where completeness of cosines from any nonempty open positive frequency interval follows directly from Fourier uniqueness and strip analyticity.
+
+Relevant finding: PF-344; relevant local clue: CLUE-positive-width-transition-schur-complement.md.
+
+**Scope warning.** PF-344 proves its exponential-weight completeness lemma directly and does not import Poltoratski's deep general type theorem. Completeness gives no quantitative approximation-coefficient bound, no Schur inverse conditioning estimate, and no weak-Schatten endpoint.
+
 ## Provenance policy for future additions
 
 For each future finding, record separately:
