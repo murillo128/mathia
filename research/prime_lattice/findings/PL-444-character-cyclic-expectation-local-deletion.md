@@ -1,12 +1,12 @@
 # PL-444 — Character-side cyclic expectation fixes the circulant sector and amplifies only noncirculant coherence under local-factor deletion
 
-**Evidence/status:** \`EXACT-DERIVED + PRIOR-ART-AUDITED + REPRESENTATION-REFINEMENT + STRICT-CERTIFICATION-STRENGTHENING\`.
+**Evidence/status:** `EXACT-DERIVED + PRIOR-ART-AUDITED + REPRESENTATION-REFINEMENT + GAUGE-COLLAPSE-BOUNDARY`; corrected interpretation of unchanged exact identity.
 
-**Parent findings:** \`PL-421\`, \`PL-424\`, \`PL-443\`.
+**Parent findings:** `PL-421`, `PL-424`, `PL-443`.
 
 ## Claim
 
-The exact dephasing image cone of \`PL-421\` has a second normal form in the Dirichlet-character basis that separates **harmless cyclic coherence** from the genuinely dangerous noncyclic sector.
+The exact dephasing image cone of `PL-421` has a second normal form in the Dirichlet-character basis that separates **harmless cyclic coherence** from the genuinely dangerous noncyclic sector.
 
 Let
 
@@ -75,7 +75,7 @@ Thus deletion leaves the cyclic/conditional-expectation component **unchanged** 
 
 At the live prime \(p=5\), the amplification is exactly \(4/3\).
 
-Equivalently, the \`PL-421\` image-cone gate becomes
+Equivalently, the `PL-421` image-cone gate becomes
 
 \[
 \boxed{
@@ -90,11 +90,11 @@ K\succeq\delta_p\,\mathcal C(K).
 
 Because \(\mathcal C\) is positive, \(K\succeq0\) implies \(K_{\mathrm{cyc}}\succeq0\). Hence **every positive character covariance already lying in the cyclic fixed-point algebra passes the local-factor gate automatically**, regardless of the size of its off-diagonal character coherences. Only the component transverse to that algebra can destroy positivity under deletion.
 
-This strictly sharpens the earlier global coherence budget in \`PL-421\`: total off-diagonal character coherence is not the correct quantity to suppress.
+Relative to the *raw* character-off-diagonal budget `PL-421` (29c), the cyclic split removes an unnecessary component. However, the apparent strengthening is **not independent** of the normalized correlation gauge already used in `PL-421` and `PL-443`; the safe cyclic sector is exactly residue-diagonal scaling data, as the following audit proves.
 
 ## 1. Exact conditional-expectation normal form
 
-The inverse dephasing map from \`PL-421\` is
+The inverse dephasing map from `PL-421` is
 
 \[
 \Psi_p^{-1}(S)
@@ -137,7 +137,7 @@ Dividing by \(r_p\) gives (5), while positivity of (8) gives (6).
 
 The interpretation is therefore exact rather than heuristic. Local-factor insertion in residue coordinates damps off-diagonal residue coherence. The inverse operation, viewed in character coordinates, does **not** amplify every character coherence uniformly. It fixes the component that is already compatible with residue-diagonal structure and amplifies only the complementary component.
 
-This is the character-side counterpart of the representation refinements in \`PL-442\`--\`PL-443\`, but it is not their zero-extension Reynolds construction. Here no artificial residue is added: \(\mathcal C\) is intrinsic to the exact residue-diagonal term already appearing in the \`PL-421\` cone.
+This is the character-side counterpart of the representation refinements in `PL-442`--`PL-443`, but it is not their zero-extension Reynolds construction. Here no artificial residue is added: \(\mathcal C\) is intrinsic to the exact residue-diagonal term already appearing in the `PL-421` cone.
 
 ## 2. Relative lower-frame criterion
 
@@ -209,16 +209,66 @@ Two previous exact slices are recovered immediately.
   \[
   K_{\mathrm{cyc}}=\frac{\operatorname{tr}K}{n}I,
   \]
-  and (6) reduces exactly to the character-variance floor from \`PL-421\`,
+  and (6) reduces exactly to the character-variance floor from `PL-421`,
   \[
   V_\chi\ge\frac{\operatorname{tr}K}{n^2}.
   \]
 
 So the character-diagonal theorem is one boundary slice of a broader conditional-expectation geometry rather than the generic coherence model.
 
-## 3. A strict control: large cyclic coherence is harmless
+### Exact gauge-collapse audit
 
-The distinction from the total-coherence sufficient bound in \`PL-421\` is not cosmetic.
+Let \(D=\operatorname{Diag}(S)\succ0\) and \(C=D^{-1/2}SD^{-1/2}\) be the normalized residue correlation matrix. By (1)--(2),
+
+\[
+\boxed{K_{\mathrm{cyc}}=F^*DF,\qquad
+K_{\mathrm{cyc}}^{-1/2}=F^*D^{-1/2}F.}
+\tag{13a}
+\]
+
+Consequently,
+
+\[
+\boxed{K_{\mathrm{cyc}}^{-1/2}K
+K_{\mathrm{cyc}}^{-1/2}=F^*CF,}
+\tag{13b}
+\]
+
+\[
+\boxed{K_{\mathrm{cyc}}^{-1/2}K_\perp
+K_{\mathrm{cyc}}^{-1/2}=F^*(C-I)F.}
+\tag{13c}
+\]
+
+In particular,
+
+\[
+\boxed{\lambda_{\min}\!\left(
+K_{\mathrm{cyc}}^{-1/2}K K_{\mathrm{cyc}}^{-1/2}
+\right)=\lambda_{\min}(C),
+\qquad
+\left\|K_{\mathrm{cyc}}^{-1/2}K_\perp
+K_{\mathrm{cyc}}^{-1/2}\right\|_{\rm op}
+=\|C-I\|_{\rm op}.}
+\tag{13d}
+\]
+
+Therefore **(10) is exactly PL-421 (7) and (12) is exactly PL-421 (25)**, not independent improvements in the source theorem. Moreover,
+
+\[
+\boxed{K=\mathcal C(K)\iff S=\operatorname{Diag}(S)\iff C=I.}
+\tag{13e}
+\]
+
+The full cyclic fixed-point algebra corresponds simply to residue-diagonal covariances, whose apparent character coherence disappears under the positive diagonal congruence of PL-443. The raw estimate (13) is weaker than or equal to the normalized test (12), since
+\(\|D^{-1/2}(S-D)D^{-1/2}\|_{\rm op}
+\le\|S-D\|_{\rm op}/\lambda_{\min}(D)\).
+
+The identity (5) remains exact, but this audit **rules out interpreting its cyclic-relative criterion as a genuinely weaker arithmetic lower-frame obligation**. For singular \(D\), the inverse square roots apply only after reducing to the active support; (6) remains valid without normalization.
+
+## 3. A raw-coordinate control explained by diagonal gauge
+
+The distinction from the total-coherence sufficient bound in `PL-421` is not cosmetic.
 
 At \(p=5\), let
 
@@ -252,7 +302,7 @@ K_t-\frac14\mathcal C(K_t)
 \tag{15}
 \]
 
-However, the robust bound (29c) of \`PL-421\` treats all off-diagonal character coherence as potentially dangerous. Here
+However, the robust bound (29c) of `PL-421` treats all off-diagonal character coherence as potentially dangerous. Here
 
 \[
 A_t=K_t-\operatorname{Diag}(K_t)
@@ -284,7 +334,7 @@ hence only \(t\le1/5\). At the explicit nondegenerate control \(t=1/2\), it fail
 
 while (15) is strictly positive.
 
-The lesson is exact: **large character coherence can be completely harmless when it belongs to the cyclic fixed-point algebra**. An arithmetic theorem aimed at suppressing \(\|K-\operatorname{Diag}K\|\) may therefore spend strength on a sector that local-factor deletion does not endanger.
+This defeats the *raw* character-off-diagonal bound, but it does not outperform PL-443 normalization: \(S_t=FK_tF^*=\operatorname{diag}(1+3t,1-t,1-t,1-t)\) up to the fixed residue ordering, so its normalized correlation matrix is \(C_t=I\). The apparently large safe character coherence is solely heterogeneity of residue variances. That is already a harmless gauge direction in PL-421 and PL-443, not a new arithmetically distinct covariance channel.
 
 ## 4. A scalar noncyclic-energy obstruction
 
@@ -343,7 +393,7 @@ T^2-\|K_{\mathrm{cyc}}\|_F^2
 
 This is not sufficient, but unlike the marginal variance shadow it detects some purely coherent failures.
 
-For the \`PL-424\` bad control
+For the `PL-424` bad control
 
 \[
 K_{\mathrm{bad}}=vv^*,
@@ -387,19 +437,52 @@ which is false. Equivalently,
 
 Thus the noncyclic-energy shadow already distinguishes the bad matched control from \(K_{\mathrm{good}}=I_4\), even though their four character variances and four residue variances are identical.
 
+### Frobenius-energy shadow is not sufficient after gauge fixing
+
+At \(p=5\), take the positive-definite unit-diagonal correlation matrix
+
+\[
+C_t=
+\begin{pmatrix}
+1&t&0&0\\t&1&0&0\\
+0&0&1&0\\0&0&0&1
+\end{pmatrix},
+\qquad t=\frac45.
+\tag{23a}
+\]
+
+Its character transform \(K_t=F^*C_tF\) obeys \(\mathcal C(K_t)=I\) and
+
+\[
+\|K_t-\mathcal C(K_t)\|_F^2
+=\|C_t-I\|_F^2=\frac{32}{25}
+<\frac{27}{4}=r_5^2(4^2-4),
+\tag{23b}
+\]
+
+so the scalar necessary energy bound (21) passes. Yet
+
+\[
+\boxed{\lambda_{\min}(C_t)=1-t=\frac15<\frac14.}
+\tag{23c}
+\]
+
+Thus the exact cone fails even for a full-rank covariance satisfying the energy shadow with slack. A scalar Frobenius-energy bound does not replace complex-polarized coercivity.
+
 ## 5. Prior art and novelty audit
 
 The generic matrix operations used here are classical.
 
 - Cyclic averaging / Reynolds projection onto the circulant algebra is standard finite-group averaging. Chan, Jin and Yeung (1991) study the circulant projection operator, including equivalent formulations and norm properties.
 - Pinching and averaging onto matrix subalgebras are standard conditional-expectation operations; Bhatia (2000) is an audit-friendly matrix-analysis reference.
+- Kucerovsky, Mousavand and Sarraf (2016), Theorem 4.6, explicitly formulate the Fourier-conjugated diagonal pinching as a trace-preserving conditional expectation onto the circulant algebra. This is a theorem-level prior-art match for the generic map (2)--(3).
 - The Frobenius-nearest circulant literature already recorded in the Prime-Lattice source ledger, including Chan (1988) and Tyrtyshnikov (1992), calibrates the structured-projection side.
 
 No novelty is claimed for conditional expectations, circulant projection, Frobenius orthogonality, finite-group Reynolds averaging, or the generic relative-eigenvalue manipulation in (10).
 
-The line-specific content is the exact arithmetic identification (5)--(6): the inverse Hardy--Littlewood local factor from \`PL-421\` acts in character coordinates as the identity on the cyclic conditional-expectation component and as multiplication by \((p-1)/(p-2)\) on the transverse component. That identity yields the relative lower-frame criterion (10), the strict safe-coherence control (14)--(16), and the noncyclic-energy obstruction (21).
+The line-specific content is the exact arithmetic identification (5)--(6): the inverse Hardy--Littlewood local factor from `PL-421` acts in character coordinates as the identity on the cyclic conditional-expectation component and as multiplication by \((p-1)/(p-2)\) on the transverse component. That identity yields the relative lower-frame criterion (10), the strict safe-coherence control (14)--(16), and the noncyclic-energy obstruction (21).
 
-A targeted prior-art audit around circulant projection, matrix pinching/averaging, covariance shrinkage, and conditional expectations found the generic machinery but no number-theoretic result supplying the actual-prime bound required by (10)--(13). The arithmetic estimate remains the unresolved part.
+The generic cyclic conditional expectation is established prior art. The arithmetic coefficient in (5) comes from PL-421, and the gauge identities (13a)--(13e) show that the relative condition (10)--(12) **is only an equivalent formulation of the already-persisted PL-421 correlation gate**. The source-theorem difficulty has not been reduced. The energy bound (21) remains a necessary but insufficient secondary diagnostic by (23a)--(23c).
 
 ## 6. Boundaries and falsification conditions
 
@@ -413,24 +496,18 @@ A targeted prior-art audit around circulant projection, matrix pinching/averagin
 
 5. **The Frobenius energy test is necessary, not sufficient.** Passing (21) does not imply positivity of the preimage.
 
-6. **The \`PL-424\` obstruction remains load-bearing.** Marginal character variances still do not determine the noncyclic sector. The present result explains more precisely where that missing information lives.
+6. **The `PL-424` obstruction remains load-bearing.** Marginal character variances still do not determine the noncyclic sector. The present result explains more precisely where that missing information lives.
 
-7. **No unconditional prime covariance theorem or RH consequence is supplied.** Closing the route still requires source-scale control of the actual noncyclic character covariance relative to its cyclic expectation.
+7. **No unconditional prime covariance theorem or RH consequence is supplied.** The source theorem still requires the original normalized complex-polarized lower frame.
+
+8. **Relative cyclic normalization is a gauge reexpression.** Equations (13a)--(13e) identify the apparently safe coherence with residue variance heterogeneity, already removed in PL-443. The Frobenius-energy shadow (21) is not sufficient, even for the positive-definite counterexample (23a).
 
 ## Consequence for the line
 
-The current character-side theorem target can be narrowed again.
+The exact character-side decomposition (5)--(6) remains valid and provides a convenient representation dictionary. However, the audit (13a)--(13e) shows that its cyclic-relative lower frame and operator-norm budget are **identically** the PL-421 correlation-normalized criteria, while the safe cyclic coherence of the raw character covariance is simply residue-diagonal heteroscedasticity, already eliminated by PL-443.
 
-It is unnecessarily strong to demand that the full mixed-character covariance be small, or even that all off-diagonal character coherences be small. The exact local-factor inverse tolerates arbitrary positive coherence inside the cyclic conditional-expectation algebra. What must be controlled is the **transverse noncyclic defect**
+The Frobenius-energy shadow (21) detects the PL-424 rank-one failure but is not sufficient: the full-rank control (23a)--(23c) satisfies it and nevertheless lies outside the dephasing image cone. Therefore the conditional-expectation representation does not yield an independent, strictly weaker prime-side estimate.
 
-\[
-K_\perp
-=
-K-\mathcal C(K)
-\]
-
-relative to the positive cyclic background \(\mathcal C(K)\).
-
-A source theorem proving the one-sided relative floor (10), or the stronger but simpler estimate (12), would close the finite-dimensional local-factor gate without first diagonalizing the actual covariance. Conversely, any proposed scalar or norm estimate that spends its budget suppressing the safe cyclic component is quantitatively misaligned with the exact deletion geometry.
-
-This does not reduce the required arithmetic scale: the bound must still hold for the actual centered fixed-modulus prime covariance at covariance strength. It does, however, remove another representation-induced overpayment from the theorem surface and isolates the character coherence that local-factor deletion genuinely amplifies.
+The unresolved arithmetic obligation remains a non-circular, variance-scale complex-polarized lower-frame bound
+\(\lambda_{\min}(C_{\rm arith})\ge1/(p-1)\)
+for the correctly constructed and centered fixed-modulus prime covariance, or a genuinely distinct source mechanism. Merely repackaging the same bound in Fourier or conditional-expectation coordinates does not cross that boundary.
