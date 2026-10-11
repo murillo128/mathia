@@ -353,3 +353,5 @@ This stable projection inventories every current canonical Prime Flute finding. 
 - [[research/prime_flute/findings/PF-340-symmetric-seam-parity-averages-two-adjacent-pant-self-responses|PF-340]]
 - [[research/prime_flute/findings/PF-341-thin-pant-self-dtn-contrast-has-common-positive-sign|PF-341]]
 - [[research/prime_flute/findings/PF-342-sharp-physical-cutoff-forces-order-one-direct-angle-correlation|PF-342]]
+- [[research/prime_flute/findings/PF-343-uniformly-small-physical-hard-sector-gaps-force-order-one-direct-angle-correlation|PF-343]]
+- [[research/prime_flute/findings/PF-344-positive-width-transition-shorting-removes-the-leading-corridor-cost|PF-344]]

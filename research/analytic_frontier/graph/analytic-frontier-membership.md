@@ -196,3 +196,5 @@ This stable projection inventories every current canonical Analytic Frontier fin
 - [[research/analytic_frontier/findings/ANF-184-odd-dilation-return-has-a-sharp-ell-squared-physical-threshold|ANF-184]]
 - [[research/analytic_frontier/findings/ANF-185-triangular-twist-averaging-turns-critical-aperture-into-a-universal-one-height-high-pass|ANF-185]]
 - [[research/analytic_frontier/findings/ANF-186-prime-rough-source-marginals-still-permit-square-root-endpoint-memory-under-exact-carrier-placement|ANF-186]]
+- [[research/analytic_frontier/findings/ANF-187-critical-high-pass-danger-forces-a-semicircle-prefix-prime-rough-contrast|ANF-187]]
+- [[research/analytic_frontier/findings/ANF-188-source-scale-semicircle-contrast-survives-growing-harmonic-cancellation-on-the-exact-carrier|ANF-188]]
