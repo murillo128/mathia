@@ -431,3 +431,11 @@ Only sources that materially support, delimit, or redirect stored `PL-*` finding
 
 111. **Olivier Ledoit, Michael Wolf**, “A Well-Conditioned Estimator for Large-Dimensional Covariance Matrices,” *Journal of Multivariate Analysis* **88**(2) (2004), 365–411. DOI: https://doi.org/10.1016/S0047-259X(03)00096-4.
      - Role: classical linear-shrinkage calibration for `PL-443`. Studies an asymptotically optimal convex linear combination of the sample covariance matrix with the identity under quadratic loss. It supports only the generic status of identity shrinkage as standard covariance regularization; `PL-443`'s exact Hardy--Littlewood/Reynolds compatibility, deterministic dephasing-margin optimizer, and no-rescue threshold are Mathia derivations.
+
+## Cyclic conditional expectations and character-side local deletion
+
+112. **Raymond H. Chan, Xiao-Qing Jin, Man-Chung Yeung**, “The circulant operator in the Banach algebra of matrices,” *Linear Algebra and its Applications* **149** (1991), 41–53. DOI: https://doi.org/10.1016/0024-3795(91)90324-P.
+     - Role: classical circulant-projection anchor for \`PL-444\`. Studies the operator mapping a matrix to its Frobenius-nearest circulant and gives equivalent algebraic/geometric formulations and operator-norm information. \`PL-444\` uses this only to calibrate cyclic/circulant projection as standard matrix theory; the Hardy--Littlewood coefficient and the safe/transverse arithmetic decomposition are Mathia derivations.
+
+113. **Rajendra Bhatia**, “Pinching, Trimming, Truncating, and Averaging of Matrices,” *The American Mathematical Monthly* **107**(7) (2000), 602–608. DOI: https://doi.org/10.1080/00029890.2000.12005245.
+     - Role: classical pinching/averaging anchor for \`PL-444\`. Provides matrix-analysis context for diagonal pinching and averaging operations. It supports only the generic conditional-expectation machinery; the character-side local-factor identity, relative lower-frame gate, and noncyclic-energy obstruction are not attributed to this source.
