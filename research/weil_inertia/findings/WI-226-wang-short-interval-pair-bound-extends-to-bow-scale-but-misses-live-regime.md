@@ -37,6 +37,8 @@ Since `3943/12011 < theta_d < theta_0`, **both of Wang's generic proportion boun
 
 The underlying short-interval pair-correlation identity remains potentially useful as an input to a future source-aware or coupled observable: it is valid on bow-scale intervals at any fixed exponent `vartheta>0`, but only with fixed Fourier support `lambda<vartheta`. In the live range this lies strictly below support one, where WI-115 and the subsequent screening controls warn that a universal vertical pair statistic alone can be cancelled. The preprint therefore redirects the program toward extracting **source-fixed signed/covariance information** from the local pair formula rather than treating its standalone simple/distinct proportions as a bow contradiction.
 
+**Source-revision correction (arXiv:2609.07918v2, 6 October 2026):** the claim above that both proportion bounds are nonpositive describes the **September v1 corollaries**, not the revised theorem. In v2, Wang proves a stronger distinct-zero inequality for every fixed θ>0 using an integer-parameter finite-multiset bound. At the surviving bow endpoint 3943/12011, it certifies 0.320384362143664... of zeros as distinct, while the simple-critical coefficient remains negative. This does **not** supply the missing critical-line reservoir or exclude off-line pairs; distinctness is insensitive to horizontal location. The source-level proof, exact bound, and bow audit are recorded in WI-442. The calculations below remain a scoped audit of the v1 finite-multiset corollary, not the best current distinctness theorem.
+
 No unconditional global simple-critical-zero proportion changes here, and no claim is made that bow configurations occur among zeta zeros.
 
 ## 1. Primary theorem and provenance
