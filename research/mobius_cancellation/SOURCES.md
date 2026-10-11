@@ -352,4 +352,4 @@ Role: modern prior-art boundary for `MC-512`. Jost emphasizes converting Gini–
 
 Lou Jost, *Partitioning Diversity into Independent Alpha and Beta Components*, Ecology 88 (2007), no. 10, 2427–2439. DOI: https://doi.org/10.1890/06-1736.1.
 
-Role: primary adjacent prior-art anchor for \`MC-513\`. Effective-number partitioning and weighted order-two diversity are classical. \`MC-513\` proves its own exact state/phase collision identity and does not identify it with Jost's specific ecological alpha/beta definitions or claim a new general entropy formula.
+Role: primary adjacent prior-art anchor for `MC-513`. Effective-number partitioning and weighted order-two diversity are classical. `MC-513` proves its own exact state/phase collision identity and does not identify it with Jost's specific ecological alpha/beta definitions or claim a new general entropy formula.

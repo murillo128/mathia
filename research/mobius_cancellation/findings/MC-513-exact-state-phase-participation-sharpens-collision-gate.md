@@ -1,10 +1,10 @@
 # MC-513 — Exact state-phase participation sharpens the same-state collision gate
 
-**Evidence:** \`EXACT-DERIVED · SOURCE-RESOLVED-COLLISION-CERTIFICATE · CLASSICAL-ORDER-TWO-DIVERSITY+DERIVED-SPECIALIZATION · PRIOR-ART-AUDITED · NO-GENERAL-NOVELTY-CLAIM · NON-RH\`
+**Evidence:** `EXACT-DERIVED · SOURCE-RESOLVED-COLLISION-CERTIFICATE · CLASSICAL-ORDER-TWO-DIVERSITY+DERIVED-SPECIALIZATION · PRIOR-ART-AUDITED · NO-GENERAL-NOVELTY-CLAIM · NON-RH`
 
 ## Claim
 
-Retain the actual nonnegative pair-resolved first-exit coefficients of \`MC-511/512\`:
+Retain the actual nonnegative pair-resolved first-exit coefficients of `MC-511/512`:
 \[
 b_u(t)\ge 0,\quad u\in\mathcal P,\quad t\in\mathbf F_p,\qquad
 W=\sum_{u,t}b_u(t)>0.
@@ -36,7 +36,7 @@ R_{\rm same}:=\frac{W^2}{C_{\rm same}}
 =R_{\rm state}S_{\rm state\text{-}phase}.
 }\tag{1}
 \]
-Consequently the normalized same-state tariff is an **identity**, not the maximum-fibre bound of \`MC-511\`:
+Consequently the normalized same-state tariff is an **identity**, not the maximum-fibre bound of `MC-511`:
 \[
 \boxed{
 \frac{p C_{\rm same}}{W^2}
@@ -70,7 +70,7 @@ E_{\rm pair-phase}=\sum_{u,t}b_u(t)^2,\qquad
 R_*=\frac{W^2}{E_{\rm pair-phase}}
 =R_{\rm pair}S_{\rm phase}
 \]
-as in \`MC-512\`. If each exact state has at most \(L\) source pairs, positivity and Cauchy on each state fibre imply
+as in `MC-512`. If each exact state has at most \(L\) source pairs, positivity and Cauchy on each state fibre imply
 \[
 E_{\rm pair-phase}\le C_{\rm same}\le L E_{\rm pair-phase}.
 \]
@@ -82,7 +82,7 @@ R_{\rm same}=\frac{R_*}{A_{\rm same}}.\tag{3}
 \]
 The previous sufficient gate \(R_*\ge pL\) implies \(R_{\rm same}\ge p\), but it need not be necessary. The loss is exactly the *actual within-state overlap amplification* \(A_{\rm same}\), which may be much smaller than the crude maximum multiplicity \(L\).
 
-From \`MC-506\` let \(\Delta=pC/W^2-1\ge0\). The exact decomposition yields
+From `MC-506` let \(\Delta=pC/W^2-1\ge0\). The exact decomposition yields
 \[
 \boxed{
 \frac{pC_{\rm cross}}{W^2}
@@ -92,7 +92,7 @@ From \`MC-506\` let \(\Delta=pC/W^2-1\ge0\). The exact decomposition yields
 In particular \(R_{\rm same}\ge p\) forces
 \(C_{\rm cross}\ge\Delta W^2/p\). A centered quadratic conductor bias
 \(|\mathcal C_F|/W\ge\eta\) implies
-\(\Delta\ge\eta^2/\sigma_F^2\) by \`MC-506\`; hence in this regime
+\(\Delta\ge\eta^2/\sigma_F^2\) by `MC-506`; hence in this regime
 \[
 \frac{pC_{\rm cross}}{W^2}\ge\frac{\eta^2}{\sigma_F^2}.
 \tag{5}
@@ -101,7 +101,7 @@ This is a **necessary cross-state carrier condition**, not a bound on cross-stat
 
 ## Sharp controls
 
-**Maximum-fibre slack is real.** For any prime \(p\), take one relative state containing \(L=p\) labelled pairs, one pair at each distinct phase \(t\), each with mass \(1/p\). Then \(W=1\), \(C_{\rm same}=E_{\rm pair-phase}=1/p\), \(R_*=R_{\rm same}=p\), and \(A_{\rm same}=1\). The exact normalized tariff is \(1\), while \`MC-511\`'s \(pL/R_*=p\) overestimates it by a factor \(p\). Conversely, if \(L\) equal-weight pairs of one state sit on one phase, \(A_{\rm same}=L\), proving the upper extreme of (3).
+**Maximum-fibre slack is real.** For any prime \(p\), take one relative state containing \(L=p\) labelled pairs, one pair at each distinct phase \(t\), each with mass \(1/p\). Then \(W=1\), \(C_{\rm same}=E_{\rm pair-phase}=1/p\), \(R_*=R_{\rm same}=p\), and \(A_{\rm same}=1\). The exact normalized tariff is \(1\), while `MC-511`'s \(pL/R_*=p\) overestimates it by a factor \(p\). Conversely, if \(L\) equal-weight pairs of one state sit on one phase, \(A_{\rm same}=L\), proving the upper extreme of (3).
 
 **Cross-state excess survives the exact gate.** Take \(p\) distinct states, each with one pair carrying mass \(1/p\) on the *same* phase \(t_0\). Then \(R_{\rm same}=p\), \(C_{\rm same}=1/p\), but \(C=1\), \(\Delta=p-1\), and (4) gives \(pC_{\rm cross}=p-1\). Thus vanishing or baseline-sized same-state collisions alone do not control the physical pushforward: distinct states may still concentrate maximally.
 
@@ -109,12 +109,12 @@ These are abstract nonnegative source-table controls, **not** asserted construct
 
 ## Prior art and novelty audit
 
-Inverse-Simpson/order-two Hill effective numbers, conditional collision probabilities and their squared-mass weighting are classical. \`MC-S57\` (Hill 1973), \`MC-S58\` (Jost 2006), and \`MC-S59\` (Jost 2007, on diversity partitioning) are the closest diversity-language anchors. No novelty is claimed for the abstract harmonic factorization or for a general entropy chain rule. The source-specific delta is its use *after grouping by the exact \(\Lambda_z\) state*, replacing the maximum-fibre inequality in \`MC-511\` by the exact physical same-state collision certificate, and exposing precisely the gap \(A_{\rm same}\).
+Inverse-Simpson/order-two Hill effective numbers, conditional collision probabilities and their squared-mass weighting are classical. `MC-S57` (Hill 1973), `MC-S58` (Jost 2006), and `MC-S59` (Jost 2007, on diversity partitioning) are the closest diversity-language anchors. No novelty is claimed for the abstract harmonic factorization or for a general entropy chain rule. The source-specific delta is its use *after grouping by the exact \(\Lambda_z\) state*, replacing the maximum-fibre inequality in `MC-511` by the exact physical same-state collision certificate, and exposing precisely the gap \(A_{\rm same}\).
 
 ## Boundaries and decisive test
 
 - All quantities require **actual** nonnegative \(b_u(t)\) and recoverable source-pair/state provenance. No independence, completed source, uniform surrogate or random model is imported.
-- There is no independent source estimate for \(R_{\rm state}\) or \(S_{\rm state\text{-}phase}\). Their exact factorization is not an improvement over \`MC-511\` unless the localized prime source supplies a usable lower bound.
+- There is no independent source estimate for \(R_{\rm state}\) or \(S_{\rm state\text{-}phase}\). Their exact factorization is not an improvement over `MC-511` unless the localized prime source supplies a usable lower bound.
 - The conditional state laws need not be uniform. State support cardinality without collision-weight control is insufficient.
 - The kernel sees \(c_t=\sum_\sigma c_{\sigma,t}\), not the state labels. Even \(R_{\rm same}\gg p\) does not prohibit large \(\Delta\) produced by different-state phase alignment.
 - Signed or complex pre-aggregation coefficients require a different argument; the probability interpretation here is only for the present nonnegative branch.
