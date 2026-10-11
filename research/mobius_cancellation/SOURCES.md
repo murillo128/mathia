@@ -347,3 +347,9 @@ Role: classical effective-number anchor for `MC-512`. Hill relates Simpson's ind
 Lou Jost, *Entropy and diversity*, Oikos 113 (2006), no. 2, 363–375. DOI: https://doi.org/10.1111/j.2006.0030-1299.14714.x.
 
 Role: modern prior-art boundary for `MC-512`. Jost emphasizes converting Gini–Simpson and related entropy indices into effective numbers with multiplicative/interpretable diversity behavior. This supports the terminology of effective participation; the exact squared-pair-mass harmonic factor `S_phase` in `MC-512` is derived directly from the collision second moment and is not presented as a general entropy chain rule.
+
+## MC-S59 — Jost, partitioning diversity into independent alpha and beta components
+
+Lou Jost, *Partitioning Diversity into Independent Alpha and Beta Components*, Ecology 88 (2007), no. 10, 2427–2439. DOI: https://doi.org/10.1890/06-1736.1.
+
+Role: primary adjacent prior-art anchor for \`MC-513\`. Effective-number partitioning and weighted order-two diversity are classical. \`MC-513\` proves its own exact state/phase collision identity and does not identify it with Jost's specific ecological alpha/beta definitions or claim a new general entropy formula.
