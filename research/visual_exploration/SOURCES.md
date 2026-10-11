@@ -12,15 +12,15 @@ This file records durable external literature dependencies used to support or de
 
 ## Local analytic-zero normal form
 
-- NIST Digital Library of Mathematical Functions, **§1.10(i) Taylor's Theorem for Complex Variables — Zeros**, https://dlmf.nist.gov/1.10. Role: authoritative standard reference for the definition of zero multiplicity by the first nonzero Taylor coefficient; prior-art boundary for the local factorization and universal rescaled zero portrait in `VIS-008`.
+- NIST Digital Library of Mathematical Functions, **`1.10(i) Taylor's Theorem for Complex Variables — Zeros**, https://dlmf.nist.gov/1.10. Role: authoritative standard reference for the definition of zero multiplicity by the first nonzero Taylor coefficient; prior-art boundary for the local factorization and universal rescaled zero portrait in `VIS-008`.
 
 ## Riemann-xi reflection symmetry
 
-- NIST Digital Library of Mathematical Functions, **§25.4 Reflection Formulas**, https://dlmf.nist.gov/25.4. Role: authoritative definition of Riemann's `xi` function and its reflection functional equation; together with ordinary conjugation symmetry, this is the classical input for the reflection-fixed Taylor-coefficient constraints in `VIS-009` and `VIS-011`.
+- NIST Digital Library of Mathematical Functions, **`25.4 Reflection Formulas**, https://dlmf.nist.gov/25.4. Role: authoritative definition of Riemann's `xi` function and its reflection functional equation; together with ordinary conjugation symmetry, this is the classical input for the reflection-fixed Taylor-coefficient constraints in `VIS-009` and `VIS-011`.
 
 ## Riemann-zeta zero geometry
 
-- NIST Digital Library of Mathematical Functions, **§25.10(i) Riemann Zeta Function — Zeros — Distribution**, https://dlmf.nist.gov/25.10. Role: authoritative reference for the critical strip, zero symmetries, critical line, and statement of RH used as contextual boundaries in `VIS-008`, `VIS-009`, `VIS-011`, `VIS-012`, `VIS-013`, and `VIS-014`; none of those local identities assumes RH unless explicitly stated as a conditional specialization.
+- NIST Digital Library of Mathematical Functions, **`25.10(i) Riemann Zeta Function — Zeros — Distribution**, https://dlmf.nist.gov/25.10. Role: authoritative reference for the critical strip, zero symmetries, critical line, and statement of RH used as contextual boundaries in `VIS-008`, `VIS-009`, `VIS-011`, `VIS-012`, `VIS-013`, and `VIS-014`; none of those local identities assumes RH unless explicitly stated as a conditional specialization.
 
 ## Hadamard zero moments and Lehmer pairs
 
@@ -33,11 +33,11 @@ This file records durable external literature dependencies used to support or de
 
 ## Jensen zero-counting formula
 
-- Elias M. Stein and Rami Shakarchi, **Complex Analysis**, Princeton Lectures in Analysis II, Princeton University Press (2003), Chapter 5 §1, pp. 135–137. Role: standard Jensen formula relating the logarithmic circular mean of a holomorphic function to the moduli of the zeros inside the disk; prior-art boundary for `VIS-014`, which uses the formula to show that the circular-mean zero-entry profile is exactly a transform of centered radial zero distances.
+- Elias M. Stein and Rami Shakarchi, **Complex Analysis**, Princeton Lectures in Analysis II, Princeton University Press (2003), Chapter 5 `1, pp. 135–137. Role: standard Jensen formula relating the logarithmic circular mean of a holomorphic function to the moduli of the zeros inside the disk; prior-art boundary for `VIS-014`, which uses the formula to show that the circular-mean zero-entry profile is exactly a transform of centered radial zero distances.
 
 ## Poisson–Jensen zero-potential decomposition
 
-- Thomas Ransford, **Potential Theory in the Complex Plane**, London Mathematical Society Student Texts 28, Cambridge University Press (1995), §4.5 “The Poisson–Jensen Formula”. Role: classical Green-function/harmonic-measure decomposition of `log|F|` into boundary harmonic data plus zero/pole sources; prior-art boundary for `VIS-015`, which rewrites the disk zero-source term in angular Fourier/log-radius coordinates and uses it as a negative control for circular-shell multiscale geometry.
+- Thomas Ransford, **Potential Theory in the Complex Plane**, London Mathematical Society Student Texts 28, Cambridge University Press (1995), `4.5 “The Poisson–Jensen Formula”. Role: classical Green-function/harmonic-measure decomposition of `log|F|` into boundary harmonic data plus zero/pole sources; prior-art boundary for `VIS-015`, which rewrites the disk zero-source term in angular Fourier/log-radius coordinates and uses it as a negative control for circular-shell multiscale geometry.
 
 ## Hybrid prime/zero decompositions
 
@@ -157,3 +157,7 @@ This file records durable external literature dependencies used to support or de
 - A. Bhattacharyya, **On a measure of divergence between two statistical populations defined by their probability distributions**, *Bulletin of the Calcutta Mathematical Society* 35 (1943), 99–109. MR0010358. Role: classical source for the Bhattacharyya coefficient/distance used in `VIS-435`; the finding only specializes the symmetric affinity to Bernoulli square-root/arcsine coordinates and claims no new statistical-distance or information-geometry theorem.
 
 - Frank Nielsen, **An Information-Geometric Characterization of Chernoff Information**, *IEEE Signal Processing Letters* 20:3 (2013), 269–272. DOI: `10.1109/LSP.2013.2243726`. Role: information-geometric prior-art anchor for `VIS-434`; characterizes Chernoff information geometrically for exponential families including multinomial families. `VIS-434` claims no new Chernoff/Fisher theorem and uses only the elementary local Bernoulli specialization to audit the squared-amplitude buffer coordinate.
+
+## Parseval/Plancherel for bounded torus observables
+
+- Elias M. Stein and Rami Shakarchi, **Fourier Analysis: An Introduction**, Princeton Lectures in Analysis I, Princeton University Press (2003), ISBN `0-691-11384-X`. Role: the classical Fourier-series Parseval identity used in `VIS-439` to replace a positive Wiener coefficient bound by the exact `L^2` Fourier energy of a bounded torus polynomial. The further inequality `Var_H(Q)<=qbar(1-qbar)<=1/4` is elementary; no new arithmetic small-divisor or hitting theorem is attributed to this source.
