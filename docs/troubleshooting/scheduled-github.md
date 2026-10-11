@@ -22,3 +22,11 @@ This file records controlled publication evidence from the scheduled GitHub diag
 Git Data is a verified publication route for scheduled tasks even while `create_file` remains blocked. This update is a second end-to-end use of Git Data on the same diagnostic branch, now updating an existing tracked file rather than creating it, to verify the route is reproducible.
 
 Full Mathia recovery is not yet proven because no affected research task has produced a new verifiable repository publication after this fallback was validated, and the shared GitHub operations skill has not been updated to name Git Data explicitly as the fallback.
+
+## Revalidation — 2026-10-11
+
+- Test identifier: `mathia-scheduled-retry-2026-10-11-76af4e82`
+- Timestamp: `2026-10-11T20:29:20+02:00` (Europe/Madrid)
+- Origin: scheduled GitHub diagnostic task
+- Publication route: Git Data (`create_blob` → `create_tree` → `create_commit` → `update_ref`)
+- Starting HEAD: `23b87b468fc0684b9d52e480cbf0e7dadaf4727d`
