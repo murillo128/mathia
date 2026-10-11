@@ -161,3 +161,7 @@ This file records durable external literature dependencies used to support or de
 ## Parseval/Plancherel for bounded torus observables
 
 - Elias M. Stein and Rami Shakarchi, **Fourier Analysis: An Introduction**, Princeton Lectures in Analysis I, Princeton University Press (2003), ISBN `0-691-11384-X`. Role: the classical Fourier-series Parseval identity used in `VIS-439` to replace a positive Wiener coefficient bound by the exact `L^2` Fourier energy of a bounded torus polynomial. The further inequality `Var_H(Q)<=qbar(1-qbar)<=1/4` is elementary; no new arithmetic small-divisor or hitting theorem is attributed to this source.
+
+## Level crossing and directional perimeter for hitting sets
+
+- S. O. Rice, **Mathematical Analysis of Random Noise**, *Bell System Technical Journal* 23:3 (1944), 282–332. DOI: 10.1002/j.1538-7305.1944.tb00874.x. Role: classical level-crossing/entry-intensity background for the deterministic directional flux counting bound in VIS-440. The finite-torus result follows from directional boundary flux and stationarity; no novel general Rice/perimeter theorem is claimed.
