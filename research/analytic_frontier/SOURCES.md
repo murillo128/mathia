@@ -22,6 +22,8 @@ This file records durable literature dependencies for `research/analytic_frontie
 - H. L. Montgomery and R. C. Vaughan, **The large sieve**, *Mathematika* 20:2 (1973), 119–134, DOI `10.1112/S0025579300004708`. Role: classical Brun--Titchmarsh source for the uniform interval upper-bound scale `pi(x+H)-pi(x) << H/log H`; load-bearing in `ANF-162` and `ANF-163` for source-specific interval mass estimates.
 - D. R. Heath-Brown, **Lectures on sieves**, arXiv:math/0209360 (2002). Role: classical Selberg upper-bound-sieve anchor; load-bearing in `ANF-163` for the uniform bound on `R`-rough integers in a translated interval. The finding writes out the interval remainder and uses `R=exp((log X)^(1/10))=X^{o(1)}` to make the sieve error negligible on every fixed polynomial interval.
 
+- Hugh L. Montgomery, **Ten Lectures on the Interface between Analytic Number Theory and Harmonic Analysis**, CBMS Regional Conference Series in Mathematics 84, American Mathematical Society (1994), DOI `10.1090/cbms/084`. Role: classical Erdős–Turán interval discrepancy and van der Corput exponential-sum bounds (chapters 1 and 3); load-bearing for the uniform shrinking-arc occupancy step in `ANF-188`, applied to nonnegative carrier counting rather than signed prime/rough discrepancy.
+
 ## Critical-line proportions and mollifiers
 
 - [`research/prior_art/levinson-conrey-mollifier-method.md`](../prior_art/levinson-conrey-mollifier-method.md). Role: retained primary-source-backed anchor for the Levinson–Conrey method, longer mollifiers, mean-value asymptotics, Kloosterman control, and variational optimization.
