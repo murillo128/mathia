@@ -206,3 +206,10 @@ AF-551 derives the reference-gauged quotient metric, the horizontal registration
 
 AF-552 derives the transition-boundary formulas directly from the prime-zeta logarithmic normal form and the exact identities `P(H_n)=T_n`. No novelty is claimed for the prime-zeta expansion, Mertens estimates, inverse-function asymptotics, or calibration-invariant transition profiles. The Arithmetic Fidelity contribution is the channel comparison after AF-550/AF-551: the same full quotient profile whose right-tail absolute-scale carrier is exponentially ill-conditioned has a left-boundary first-order carrier that recovers every prime norm, separates AF-551's matched finite-prefix control by a fixed boundary-dilation gap, and retains the large-index reciprocal-prime signal along every diagonal `s_n-1=o(1/log p_n)`.
 
+## AF-553 — Pole-order boundary-contact filtration for analytic finite prefixes
+
+- NIST Digital Library of Mathematical Functions, **§25.2 “Definition and Expansions,” Eq. 25.2.4**, https://dlmf.nist.gov/25.2.E4. Role: authoritative Laurent expansion of \(\zeta\) at \(s=1\), fixing the order-\(m\) pole coefficient of \(\zeta^m-1\).
+- Marco Abate, **“Discrete holomorphic local dynamical systems,”** arXiv:0903.3289 (2009), https://arxiv.org/abs/0903.3289. Role: established parabolic-germ and Fatou/Abel-coordinate framework for constant translation \(F\circ H_a=F-a\); order-\(m+1\) tangency is classical in that setting.
+- AF-553 reuses the exact common-calibration quotient of AF-550 and the logarithmic prime-zeta boundary comparison of AF-552.
+
+AF-553 derives the sharp vanishing-order shift from analytic prefix differences to relative-transition boundary jets, then specializes it to the marked Dirichlet tails of \(\zeta^m-1\). No novelty is claimed for zeta Laurent expansions, divisor convolution, implicit inversion, or parabolic dynamics. The Arithmetic Fidelity contribution is the category-specific information boundary: all jets through order \(m\) erase every finite analytic prefix, order \(m+1\) recovers its boundary value, and a source difference beginning at order \(r\) first survives in order \(m+r+1\).
