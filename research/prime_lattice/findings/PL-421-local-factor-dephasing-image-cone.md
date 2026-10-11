@@ -431,6 +431,69 @@ No new general Fourier or matrix-analysis theorem is claimed here. Flatness of f
 
 This covariance-level identity does **not** impose a sign on the source-subtracted residual `\Delta T_X^{(p)}` from `PL-415`. After deterministic model subtraction the object need not remain a positive covariance, as already emphasized by `PL-418`; the nonnegativity conclusion applies only when the same `S` is genuinely subject to the positive-image cone.
 
+
+### When character variances become complete: a quantitative coherence gate
+
+The scalar necessary inequalities above are **necessary and sufficient on the exactly character-diagonal slice**. This identifies precisely which additional information the general counterexample of PL-424 lacks. Retain \(n=p-1\), \(K=F^*SF\), \(V_\chi=K_{\chi\chi}\), and \(T=\operatorname{tr}S\), and split
+
+\[
+A:=K-\operatorname{Diag}(K),\qquad
+E_D:=\operatorname{Diag}(FAF^*).
+\]
+
+Flatness of the character table gives the *full* residue-diagonal identity
+
+\[
+\operatorname{Diag}(S)=\frac{T}{n}I+E_D.
+\]
+
+Consequently, conjugating the exact gate (5) by \(F\) yields
+
+\[
+\boxed{
+F^*\left(S-\frac1n\operatorname{Diag}(S)\right)F
+=
+\operatorname{Diag}_\chi\!\left(V_\chi-\frac{T}{n^2}\right)
++
+A-\frac1n F^*E_DF.
+}
+\tag{29a}
+\]
+
+When \(A=0\), also \(E_D=0\), and the right side is diagonal. Thus
+
+\[
+\boxed{
+K\text{ diagonal}
+\quad\Longrightarrow\quad
+\left(
+S\in\Psi_p(M_n^+)
+\iff
+V_\chi\ge\frac{T}{n^2}\ \text{for every }\chi
+\right).
+}
+\tag{29b}
+\]
+
+Away from this slice, the identity gives a **quantitative sufficient condition** involving only the marginal surplus and the *mixed-character coherence*. Indeed \(\|E_D\|_{\rm op}\le\|A\|_{\rm op}\), because each entry on the diagonal of \(FAF^*\) is a unit-vector quadratic form of \(A\). Therefore
+
+\[
+\boxed{
+\min_\chi\left(V_\chi-\frac{T}{n^2}\right)
+\ge\left(1+\frac1n\right)\|A\|_{\rm op}
+\quad\Longrightarrow\quad
+S\in\Psi_p(M_n^+).
+}
+\tag{29c}
+\]
+
+The sharper, directly computable sufficient test replaces the right side of (29c) by \(\|A-\frac1nF^*E_DF\|_{\rm op}\). In particular, \(\|\operatorname{Diag}(S)-(T/n)I\|_{\rm op}\le\|A\|_{\rm op}\): residue-diagonal anisotropy is *already controlled* by the same off-diagonal character matrix and need not be bounded independently when this character-basis budget is used.
+
+For the current \(p=5\) gate, (29b) says that \(V_\chi\ge T/16\) is an exact decision test when \(K\) is diagonal; (29c) gives the robust sufficient budget \(\min_\chi(V_\chi-T/16)\ge\frac54\|K-\operatorname{Diag}K\|_{\rm op}\). This is not vacuous or merely a disguised Gershgorin test. Set \(K=\operatorname{diag}(8,1,1,1)\), with the principal-character component first. Then \(S=I_4+\frac74\mathbf1\mathbf1^*\), \(T=11\), and \(\lambda_{\min}(C_S)=4/11>1/4\), while the row-sum sufficient test (26) fails since each normalized off-diagonal entry is \(7/11\) and \(3(7/11)>3/4\).
+
+The strengthening is a local finite-character-table argument, not a new general matrix-analysis theorem. It does **not** make scalar variances sufficient for arbitrary \(S\): the PL-424 equal-diagonal matched controls differ precisely in their nonzero \(A\). Nor does the almost character-diagonal *singular-series model* of PL-425 give the actual-prime covariance estimate required here. A non-circular application still needs both a positive character-variance surplus at the \(T\)-scale and an actual-prime mixed-character error small relative to that surplus. Finally the source-subtracted signed residual of PL-418 is not automatically a positive covariance, so the cone test must be applied only at its proper positive stage.
+
+
 ## 5. Relation to `PL-419` and the current source-transfer frontier
 
 `PL-419` shows that retaining only the positive diagonal residue energies loses the off-diagonal information needed by the mod-5 signed supertrace. `PL-420` then shows that retaining the full matrix still does not make exact local deletion positive automatically. The present calculation identifies the exact missing quantitative statement.
