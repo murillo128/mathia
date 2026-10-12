@@ -8,6 +8,7 @@ based_on:
   - research/prime_flute/findings/PF-342-sharp-physical-cutoff-forces-order-one-direct-angle-correlation.md
   - research/prime_flute/findings/PF-343-uniformly-small-physical-hard-sector-gaps-force-order-one-direct-angle-correlation.md
   - research/prime_flute/findings/PF-344-positive-width-transition-shorting-removes-the-leading-corridor-cost.md
+  - research/prime_flute/findings/PF-345-growing-exterior-edge-strips-have-exponentially-small-shorted-trace.md
 ---
 
 # Can a positive-width transition band absorb the collapsing-corridor mode after exact Schur elimination?
@@ -24,7 +25,7 @@ Therefore moving the hard cutoff or inserting only a narrow direct gap does not 
 
 in which the transition band \`T\` has a physical width bounded below independently of the cuff period and is **retained in the full positive boundary form** before being eliminated.
 
-Schur-complement realizations of Dirichlet-to-Neumann operators are classical. PF-344 proves that exact positive shorting cancels the leading raw corridor-scale matrix element on bounded edge witnesses. Its strengthened binomial compensation (equation (27)) gives a relative (O(e^{-\gamma L_n})) edge rate, while individual arbitrary bounded-frequency cosine modes still have only the qualitative (o(D_n)) result. The surviving issue is the **diagonally normalized** effective angle and its global singular-value scale.
+Schur-complement realizations of Dirichlet-to-Neumann operators are classical. PF-344 proves that exact positive shorting cancels the leading raw corridor-scale matrix element on bounded edge witnesses. Its strengthened binomial compensation (equation (27)) gives a relative (O(e^{-\gamma L_n})) edge rate, while individual arbitrary bounded-frequency cosine modes still have only the qualitative (o(D_n)) result. PF-345 extends the relative exponential upper bound to two positive-width exterior edge strips of dimension Θ(L_n), with a positive-compression trace estimate. The surviving issue is the **diagonally normalized** effective angle and its global singular-value scale.
 
 ## Research question
 
@@ -105,14 +106,14 @@ D_n\left\|f+\sum_j a_j\cos(\xi_j\cdot)\right\|_
 +C\left(1+\sum_j|a_j|\right)^2.
 \]
 
-PF-344 now controls this coefficient tradeoff **for the two edge modes**, but its weighted density proof still has uncontrolled coefficient cost for arbitrary bounded exterior packets. Obtain a general rate at the true \(D_n\) scale and lower bounds on the shorted diagonal energies, then either prove a small completed angle or construct a surviving normalized witness. Keep the full growing transition block, not a fixed-rank surrogate.
+PF-344 controls the coefficient tradeoff at the two edges; PF-345's negative-binomial extrapolator controls a **positive physical-width strip** at each edge and obtains a relative exponential trace bound on its positive compressed shorted form. Arbitrary bounded exterior packets still lack a uniform coefficient-cost bound. Obtain two-sided bounds on the shorted diagonal energies and the normalized mixed response (including beyond-strip modes), then either prove a small completed angle or construct a surviving normalized witness. Keep the full growing transition block, not a fixed-rank surrogate.
 
 ## Evidence boundary
 
 PF-344 proves a **partial positive** result: a fixed positive physical transition band removes the raw \(D_n\)-scale edge correlation after exact positive Schur shorting; all individual bounded-frequency cosine matrix entries are \(o(D_n)\). These are variational upper bounds on the unnormalized shorted form, not a claim about its normalized low/high canonical-correlation angle.
 
-No lower or upper spectral bound after division by the shorted diagonal energies, no uniform approximation-conditioning rate **for the whole exterior band**, no control of the unbounded high sector, and no compactness or weak-\(\mathcal S_1\) endpoint is established. General DtN/Schur theory and weighted-exponential completeness are classical; neither supplies these missing quantitative Prime-Flute estimates.
+PF-345 strengthens the relative unnormalized control to a growing-rank edge-strip compression, but no spectral bound **after division by the shorted diagonal energies**, no uniform approximation-conditioning rate **for the whole exterior band**, no control of the unbounded high sector, and no compactness or weak-\(\mathcal S_1\) endpoint is established. General DtN/Schur theory and weighted-exponential completeness are classical; neither supplies these missing quantitative Prime-Flute estimates.
 
 ## Research disposition
 
-Status: accepted. PF-344 resolves the preliminary question whether the raw collapsing-corridor \(D_n\) term survives exact transition-band shorting: it does **not** survive on the bounded edge witnesses, and the individual bounded-frequency raw entries are all subleading. The clue remains active for the materially different question of the **completed, diagonally normalized and globally reassembled** effective low/high angle. Its decisive test is now a **beyond-edge** quantitative approximation-cost/conditioning estimate or a normalized counter-witness. See [[research/prime_flute/findings/PF-344-positive-width-transition-shorting-removes-the-leading-corridor-cost.md]].
+Status: accepted. PF-344 removes the raw \(D_n\) term on bounded edge witnesses, and PF-345 extends relative exponential suppression to two physically positive-width edge strips of dimension \(\Theta(L_n)\) in the positive unnormalized shorted compression. The clue remains active for the materially different question of the **completed, diagonally normalized and globally reassembled** effective low/high angle. Its decisive test is now a **beyond-strip** approximation-cost/conditioning estimate **together with two-sided diagonal normalization**, or a normalized counter-witness. See [[research/prime_flute/findings/PF-344-positive-width-transition-shorting-removes-the-leading-corridor-cost.md]] and [[research/prime_flute/findings/PF-345-growing-exterior-edge-strips-have-exponentially-small-shorted-trace.md]].

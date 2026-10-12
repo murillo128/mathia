@@ -382,6 +382,22 @@ Relevant finding: PF-344; relevant local clue: CLUE-positive-width-transition-sc
 
 **Scope warning.** PF-344 proves its exponential-weight completeness lemma directly and does not import Poltoratski's deep general type theorem. Completeness gives no quantitative approximation-coefficient bound, no Schur inverse conditioning estimate, and no weak-Schatten endpoint.
 
+## S22 — constructive bandlimited superoscillation context
+
+**T. Karmakar and A. N. Jordan**, *Beyond Superoscillation: General Theory of Approximation with Bandlimited Functions*, arXiv:2306.03963 (2023); related journal DOI: 10.1088/1751-8121/ad09ec.
+
+- https://arxiv.org/abs/2306.03963
+- https://doi.org/10.1088/1751-8121/ad09ec
+
+Used for:
+
+- prior-art context for constructive approximation of out-of-band behavior by bounded-frequency superpositions, including the importance of coefficient growth and approximation range;
+- comparison with PF-345's **elementary negative-binomial** compensation, not a claimed application of a theorem from this paper.
+
+Relevant finding: PF-345; relevant local clue: CLUE-positive-width-transition-schur-complement.md.
+
+**Scope warning.** PF-345 proves its own explicit negative-binomial bounds in the prime-flute weighted corridor norm; this paper does not supply prime-flute Schur conditioning or diagonally normalized Schatten estimates.
+
 ## Provenance policy for future additions
 
 For each future finding, record separately:
