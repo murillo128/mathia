@@ -179,3 +179,8 @@ This file records durable external literature dependencies used to support or de
 ## Triple correlations, cyclic reconstruction, and first-hit nonidentifiability
 
 - Tamás Keleti and Mihail N. Kolountzakis, **On the determination of sets by their triple correlation in finite cyclic groups**, *Online Journal of Analytic Combinatorics* 1 (2006), paper 4, pp. 1–18. DOI: 10.61091/ojac-104; arXiv:math/0603415. Role: Theorem 2.23 supplies an explicit equal-three-deck cyclic family. VIS-443 takes \((p,q,r,d)=(2,3,2,3)\) and independently derives the transfer to continuous arc targets, degree-ten analytic-polynomial superlevels and unequal first-hit tails. Neither cyclic three-deck nonuniqueness nor the classical Fourier triple-product identity is claimed as new.
+
+## Hausdorff moments and integrated occupation certificates
+
+- Felix Hausdorff, **Summationsmethoden und Momentfolgen. I** and **II**, *Mathematische Zeitschrift* 9 (1921), 74–109 and 280–299. Role: classical compact-interval moment-determinacy context for VIS-444. Its direct atom-at-zero limit follows by bounded convergence; the finite-arc approximation error and explicit fourth-order integrated VIS-443 witness are separately derived.
+- J. A. Shohat and J. D. Tamarkin, **The Problem of Moments**, American Mathematical Society Mathematical Surveys 1 (1943). Role: authoritative moment-problem monograph bounding any novelty claim about reconstructing a bounded occupation law from all of its moments in VIS-444.
