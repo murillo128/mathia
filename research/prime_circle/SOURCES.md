@@ -223,3 +223,8 @@ This file records durable literature dependencies used to support or falsify fin
 
 - Norbert Wiener, **Tauberian Theorems**, *Annals of Mathematics* 33:1 (1932), 1–100. DOI: 10.2307/1968102. Role: classical Fourier nonvanishing/translation-cyclicity prior art; PC-427 proves the exact weighted Hilbert--Schmidt Fourier-kernel version directly by finite-measure Fourier uniqueness.
 - Marcin Moszyński, **Spectral Theory of Self-adjoint Finitely Cyclic Operators and Introduction to Matrix Measure \(L^2\)-spaces**, arXiv:2212.13953 (2022). Role: modern detailed treatment of cyclic spectral representations and their multiplication-operator models; prior art for PC-427's abstract multiplicity-one generator, distinct from the specifically computed Prime-Circle marked spectral measures.
+
+## Zeta value density and marked spectral transport
+
+- Harald Bohr and Richard Courant, **Neue Anwendungen der Theorie der Diophantischen Approximationen auf die Riemannsche Zetafunktion**, *Journal für die reine und angewandte Mathematik* 144 (1914), 249–274. DOI: 10.1515/crll.1914.144.249. Role: the classical fixed-line denseness of \(\{\zeta(\sigma+it):t\in\mathbb R\}\) in \(\mathbb C\) for \(1/2<\sigma<1\); indispensable external theorem in PC-428 for the two-sided failure of bounded marked Hilbert--Schmidt spectral transport.
+- Athanasios Sourmelidis and Jörn Steuding, **Spirals of Riemann's Zeta-Function -- Curvature, Denseness, and Universality**, arXiv:2306.00460 (2023). Role: modern authoritative fixed-vertical-line value-distribution context for the Bohr--Courant input; PC-428's specific shell calculation and graph-closure theorem are derived separately.
