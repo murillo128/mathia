@@ -365,3 +365,9 @@ Role: classical cycle-balance/switching antecedent for MC-514's consistency of a
 Thomas Zaslavsky, *Signed Graphs*, Discrete Applied Mathematics 4 (1982), no. 1, 47–74. DOI: https://doi.org/10.1016/0166-218X(82)90033-6.
 
 Role: classical signed-graph and cycle/matroid framework surrounding the graph-dependence obstruction of MC-514. The elementary block-spectrum and four-vertex probability are proved in that finding and carry no general novelty claim.
+
+## MC-S62 — Eagleson, orthogonal expansions and degenerate two-sample U-statistics
+
+G. K. Eagleson, *Orthogonal Expansions and U-Statistics*, Australian Journal of Statistics 21 (1979), no. 3, 221–237. DOI: https://doi.org/10.1111/j.1467-842X.1979.tb01141.x.
+
+Role: primary classical reference for degenerate U-statistic limit distributions through orthogonal expansions, explicitly including the two-sample case. MC-515 specializes that framework to fixed-prime bipartite residue-match counts, and derives its own exact finite-sample fourth moment and rectangle correction; neither the abstract product-Gaussian limit nor general U-statistic theory is claimed as new.
