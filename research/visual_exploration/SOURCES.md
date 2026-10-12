@@ -165,3 +165,7 @@ This file records durable external literature dependencies used to support or de
 ## Level crossing and directional perimeter for hitting sets
 
 - S. O. Rice, **Mathematical Analysis of Random Noise**, *Bell System Technical Journal* 23:3 (1944), 282–332. DOI: 10.1002/j.1538-7305.1944.tb00874.x. Role: classical level-crossing/entry-intensity background for the deterministic directional flux counting bound in VIS-440. The finite-torus result follows from directional boundary flux and stationarity; no novel general Rice/perimeter theorem is claimed.
+
+## Fejér–Riesz spectral factorization and exact circle target geometry
+
+- **Encyclopedia of Mathematics**, *Fejér–Riesz theorem*, https://encyclopediaofmath.org/wiki/Fej%C3%A9r-Riesz_theorem. Role: classical one-variable statement that a nonnegative trigonometric polynomial of degree \(d\) is the squared modulus of an analytic polynomial of degree at most \(d\). Used in `VIS-441` to realize two prescribed regular superlevel-arc configurations as normalized full-support degree-two analytic-polynomial amplitudes. The exact gap-erosion identity is an elementary one-dimensional parallel-set calculation, and the crossing-flux precedent is the Rice source already listed for `VIS-440`; no general novelty is claimed.
