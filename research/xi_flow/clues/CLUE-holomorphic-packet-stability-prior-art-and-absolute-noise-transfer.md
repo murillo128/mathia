@@ -1,7 +1,7 @@
 ---
 id: CLUE-xi-flow-holomorphic-packet-stability-prior-art-and-absolute-noise-transfer
 type: research-clue
-status: proposed
+status: resolved
 origin: master-researcher
 target_line: xi_flow
 based_on:
@@ -103,3 +103,15 @@ A conclusive outcome is either a quantitative implication from named prior theor
 ## Evidence boundary
 
 No erasure-stable chart, concrete Lean instantiation, raw-noise modulus, priority claim, global packet locator, unknown-weight theorem or RH consequence is established by this clue. The explicit inequalities above are proposed proof obligations, not newly accepted findings. XF-186 remains the source for the normalized chart. The requested audit must not demand novelty as its outcome: an exact classical reduction is valid, and a remaining unproved transfer must stay unproved. This test concerns the source-side theta/Jacobi packet, not a packet of zeta zeros.
+## Research disposition
+
+Outcome: narrowed
+
+Resolved by:
+- [[research/xi_flow/findings/XF-186-holomorphic-packet-banks-are-uniformly-bi-lipschitz-on-a-lattice-scale-nonlinear-cell]]
+
+The decisive *additional Jacobi/noise lemma* is now proved in the current canonical XF-186 and has passed the final adversarial persistence check (its sidecar was closed). The actual direct Jacobian is the Fejer-weighted moment frame with torus nodes `beta*(u_j+z_j)` and displacement-dependent positive column weights `exp[-alpha*(u_j+z_j)/a]`. The nonlinear chord is an integral of such moving frames, not merely a linear fixed-weight Vandermonde inverse. For the actual quadratic grid with `2<=m<=N` and `2m<=L<=3m`, the single erased zero-frequency row gives the exact mixed-Gram correction `C_*(z)=V(0)^*V(z)-1_m 1_m^*`, with accretivity at least `(27/100)L`; a fixed reference along each chord gives retained normalized coercivity at least `exp(-3*alpha)*sqrt(L)/(10*sqrt(2))` after the reciprocal Jacobi derivative is bounded by `O_alpha(N^6 exp(-c_alpha*N^2))`. The full diagonal normalizer still has an unbounded zero-row entry for fixed `m=2`, so that discarded assertion is **not** revived by the repair.
+
+On retained raw observations `||Q_*||<=exp(alpha)/(2*pi)`, yielding `||P_*(J_raw(h)-J_raw(g))||_2 >= pi*exp(-4*alpha)*sqrt(L)*||h-g||_2/(5*sqrt(2))`. If raw additive noise has norm at most `sigma` and a cube-feasible estimate has retained residual at most `sigma`, then `||h_hat-h||_2 <= 10*sqrt(2)*exp(4*alpha)*sigma/(pi*sqrt(L))`. On the corresponding physical displacement cell, `||epsilon_hat-epsilon||_2 <= 15*sqrt(2)*exp(4*alpha)*m*sigma/(pi*sqrt(L))`; if each retained complex sample has error modulus at most `tau`, this is at most `30*exp(4*alpha)*m*tau/pi`. All these are deterministic, known-window, sufficiently-large-`N` guarantees, not optimizer, support-search, or Xi-zero results.
+
+Prior-art boundary: Moitra's separation-conditioned Vandermonde estimates and Hockmann--Kunis sparse-measure Lipschitz theory show that generic Fourier superresolution conditioning is classical; Aubel--Bolcskei treats disk-node Vandermonde matrices. They do not, without further dictionary and norm proofs, replace the *specific* erased Fejer mixed-frame and reciprocal Jacobi estimates above. The 2023 Hockmann--Kunis journal abstract was available but its full theorem hypotheses were not independently checked here: **no claim of priority, non-implication from every general theorem, or new universal erasure principle is made**. The previously outstanding source-specific absolute-noise conclusion is settled by XF-186; broad novelty and the global Xi-flow source-to-zero bridge remain outside this narrowed disposition.
