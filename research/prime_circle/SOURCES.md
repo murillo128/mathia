@@ -218,3 +218,8 @@ This file records durable literature dependencies used to support or falsify fin
 
 - Ole Christensen, **An Introduction to Frames and Riesz Bases**, 2nd ed., Birkhäuser (2016). DOI: 10.1007/978-3-319-25613-9. Role: standard Hilbert-space Riesz/Bessel criteria and frames of translates; prior-art anchor for the finite-positive-versus-uniform-Gram distinction in PC-426.
 - Peter Balazs and Sigrid Heineken, **An Operator Based Approach to Irregular Frames of Translates**, *Mathematics* 7 (2019), 449. DOI: 10.3390/math7050449. Role: irregular-translate Gram/frame theory; general structural context for PC-426's log-prime-translation-clustering obstruction, not a proof of the source-specific commutator formula.
+
+## Translation cyclicity and multiplicity-one spectral models
+
+- Norbert Wiener, **Tauberian Theorems**, *Annals of Mathematics* 33:1 (1932), 1–100. DOI: 10.2307/1968102. Role: classical Fourier nonvanishing/translation-cyclicity prior art; PC-427 proves the exact weighted Hilbert--Schmidt Fourier-kernel version directly by finite-measure Fourier uniqueness.
+- Marcin Moszyński, **Spectral Theory of Self-adjoint Finitely Cyclic Operators and Introduction to Matrix Measure \(L^2\)-spaces**, arXiv:2212.13953 (2022). Role: modern detailed treatment of cyclic spectral representations and their multiplication-operator models; prior art for PC-427's abstract multiplicity-one generator, distinct from the specifically computed Prime-Circle marked spectral measures.
