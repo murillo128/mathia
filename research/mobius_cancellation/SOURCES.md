@@ -353,3 +353,15 @@ Role: modern prior-art boundary for `MC-512`. Jost emphasizes converting Gini–
 Lou Jost, *Partitioning Diversity into Independent Alpha and Beta Components*, Ecology 88 (2007), no. 10, 2427–2439. DOI: https://doi.org/10.1890/06-1736.1.
 
 Role: primary adjacent prior-art anchor for `MC-513`. Effective-number partitioning and weighted order-two diversity are classical. `MC-513` proves its own exact state/phase collision identity and does not identify it with Jost's specific ecological alpha/beta definitions or claim a new general entropy formula.
+
+## MC-S60 — Harary, structural balance of signed graphs
+
+Frank Harary, *On the Notion of Balance of a Signed Graph*, Michigan Mathematical Journal 2 (1953–54), no. 2, 143–146. DOI: https://doi.org/10.1307/mmj/1028989917.
+
+Role: classical cycle-balance/switching antecedent for MC-514's consistency of alternating-sign residue constraints. The fixed-prime collision counts and source-specific interpretation in MC-514 are derived directly, not imported as a new general graph theorem.
+
+## MC-S61 — Zaslavsky, signed graphs and cycle dependence
+
+Thomas Zaslavsky, *Signed Graphs*, Discrete Applied Mathematics 4 (1982), no. 1, 47–74. DOI: https://doi.org/10.1016/0166-218X(82)90033-6.
+
+Role: classical signed-graph and cycle/matroid framework surrounding the graph-dependence obstruction of MC-514. The elementary block-spectrum and four-vertex probability are proved in that finding and carry no general novelty claim.
