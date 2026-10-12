@@ -442,3 +442,8 @@ Only sources that materially support, delimit, or redirect stored `PL-*` finding
 
 114. **Dan Kucerovsky, Kaveh Mousavand, Aydin Sarraf**, “On some properties of Toeplitz matrices,” *Cogent Mathematics* **3**(1) (2016), Article 1154705. DOI: https://doi.org/10.1080/23311835.2016.1154705.
      - Role: theorem-level prior-art control for PL-444. Theorem 4.6 explicitly gives the Fourier-conjugated diagonal projection as a trace-preserving conditional expectation onto the circulant algebra. The resulting PL-444 relative criterion is the prior PL-421 correlation lower-frame condition in different coordinates, not a distinct prime estimate.
+
+## Unconditional prime-pair upper bounds for microscopic window Gram controls
+
+115. **Jared Duker Lichtman, Joni Teräväinen**, “On the Hardy–Littlewood–Chowla conjecture on average,” *Forum of Mathematics, Sigma* **10** (2022), e57. DOI: https://doi.org/10.1017/fms.2022.54.
+     - Role: primary unconditional upper-bound-sieve anchor for `PL-445`. Lemma 2.3 provides fixed-order prime-tuple Selberg upper bounds, Lemma 2.4 controls their singular-series weights by totient factors, and Lemma 2.5 bounds their shift averages. `PL-445` combines these classical estimates with a fixed-modulus PNT diagonal calculation and the `PL-421` local-factor image-cone identity; it makes no novel prime-pair asymptotic or cancellation claim.
