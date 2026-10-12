@@ -221,3 +221,12 @@ AF-553 derives the sharp vanishing-order shift from analytic prefix differences 
 - AF-554 reuses the exact common-output-calibration transition quotient of AF-550, the horizontal source-metric warning of AF-551, and the fixed-index boundary asymptotics of AF-552.
 
 AF-554 gives a direct Stieltjes--Mertens proof that \(T_n(1+a/\log q_n)=\kappa E_1(a)+O(e^{-a}/\log q_n)\) uniformly in \(a>0\), together with a \(C^1_{\rm loc}\) inverse-reference transition limit. The rational-prime index-only variant and AF-551 finite-prefix matched control exhibit an interior critical-profile gap, but the source-specific content is entirely the retained reference inverse, and raw input resolution must shrink as \(1/\log n\). No novelty is claimed for Mertens theory, exponential integrals, or inverse-function/registration theory; no RH consequence follows.
+
+## AF-556 — Geometric sampling of remote-generator critical curves
+
+- NIST Digital Library of Mathematical Functions, **§4.13 “Lambert W-Function,” Eq. 4.13.1**, https://dlmf.nist.gov/4.13. Role: standard two-real-branch inverse of \(u e^{1-u}=\theta\), determining the endpoints of a fixed-fraction normalized sensitivity band.
+- Classical **Bertrand--Chebyshev prime-interval theorem** (there is a prime between \(x\) and \(2x\) for \(x>1\)); the prime-number theorem also suffices. Role: select actual rational-prime controls at geometrically separated values of \(\log p\), not a continuous artificial parameter.
+- AF-556 uses AF-554's critical-index limit and AF-555's exact uniform inverse-displacement bounds and Meissel--Mertens normal form; their analytic-number-theory source anchors are recorded in earlier entries.
+
+The new line-specific conclusion is global normalized convergence to \(u e^{1-u}\) in the moving \(a\log p\) window, and the matching upper/lower asymptotic \(N_\theta(P)\sim(\log\log P)/\log[u_+(\theta)/u_-(\theta)]\) for nonadaptive fixed-fraction signal capture over admissible one-prime controls. No novelty is claimed for Lambert \(W\), multiplicative covering, geometric-grid sampling, Bertrand's postulate, inverse calculus, or prime-zeta/Mertens asymptotics. This is not stable absolute-noise recovery or prime identification.
+
