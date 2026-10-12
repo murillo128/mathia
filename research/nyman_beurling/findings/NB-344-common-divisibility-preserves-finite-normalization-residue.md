@@ -13,7 +13,7 @@ U_n=\operatorname{span}\{g_2,\ldots,g_n\},\qquad
 T_{n,m}=P_{U_n}A_m|_{U_n},\qquad
 E_{n,m}=\sqrt m\,T_{n,m}-R_n.
 \]
-Let \(L_n=\operatorname{lcm}(1,\ldots,n)\), and take integers \(n\ge8\), \(m\ge n^2\) with \(L_n\mid m\). For any \(8\le q\le n\), let
+Take integers \(n\ge8\), \(m\ge n^2\), and \(8\le q\le n\) with the **local** divisibility condition \(q(q-1)\mid m\). Let
 \[
 \nu_q=g_q-\frac{q-1}{q}g_{q-1}.
 \]
@@ -35,7 +35,7 @@ The constants in this asymptotic are absolute: there is no assumption that \(m/q
 +O\left(\frac{q^2}{m^3}\right).}
 \tag{2}
 \]
-For every sequence of multiples \(m_n\ge n^2\) of \(L_n\), including \(m_n=n!\),
+For every sequence \(m_n\ge n^2\) of integers with \(n(n-1)\mid m_n\), including \(m_n=2n(n-1)\) and \(m_n=n!\),
 \[
 \boxed{
 \liminf_{n\to\infty}
@@ -45,7 +45,16 @@ For every sequence of multiples \(m_n\ge n^2\) of \(L_n\), including \(m_n=n!\),
 }
 \tag{3}
 \]
-The norm in (3) is the physical operator norm on \(U_n\), not an artificial coefficient or Cesaro norm. Its unweighted lower bound decreases as \(n/(m_n\sqrt{\log n})\), and it is not a nonzero limiting norm gap.
+In particular, the first multiple of \(n(n-1)\) satisfying \(m\ge n^2\) is already \(m=2n(n-1)\), and (3) gives the genuinely quadratic-scale specialization
+\[
+\boxed{
+\liminf_{n\to\infty}
+n\sqrt{\log n}\,\|E_{n,\,2n(n-1)}\|
+\ge \frac{\pi^2}{288}\sqrt{\frac2{\log2}}>0.
+}
+\tag{3a}
+\]
+The norm in (3)--(3a) is the physical operator norm on \(U_n\), not an artificial coefficient or Cesaro norm. Its unweighted lower bound decreases as \(n/(m_n\sqrt{\log n})\); no nonzero limiting operator-norm gap is proved.
 
 ## 1. Exact integer-phase reduction
 
@@ -61,7 +70,7 @@ q\langle E_{n,m}g_2,\nu_q\rangle
 \qquad u=\frac mq,\quad v=\frac m{q-1}.
 \tag{4}
 \]
-Indeed \(m=dq\), \(r=0\), and \(d=m/q\ge q\), so the original NB-338 selector identity applies exactly, with no limiting interchange. In particular, \(u\) and \(v\) are integers because \(L_n\mid m\) and \(q,q-1\le n\).
+Indeed \(q(q-1)\mid m\) implies \(m=dq\), \(r=0\), and \(d=m/q\ge q\) since \(m\ge n^2\ge q^2\). Thus the original NB-338 selector identity applies exactly, with no limiting interchange. Both \(u=m/q\) and \(v=m/(q-1)\) are positive integers, and conversely their integrality is equivalent to \(q(q-1)\mid m\) because \(\gcd(q,q-1)=1\). Divisibility by \(\operatorname{lcm}(1,\ldots,n)\) was a sufficient but unnecessary global hypothesis.
 
 For any integer \(a\ge1\), split the integral for \(F(a)\) into unit intervals. Direct integration gives
 \[
@@ -164,13 +173,13 @@ The exact series (4) with (6), evaluated at high precision for \(q=n\) and \(m=L
 \]
 These are sign/constant checks, not the proof. In particular, applying only the \(O((q\delta)^{-1})\) coarse error of NB-341 at integral phases would *not* recover the sharp coefficient: (6)--(9) are needed to expose its sign and normalization.
 
-The uniformity stress test is precisely the exceptional sequence \(m=n!\), which lies far beyond the upper window of NB-343, and the endpoint \(q=n\), where physical adjacent-vector conditioning costs \(\sqrt{\log n}/n\). Equation (7) is used only at positive integers, so fractional folds introduce no hidden regularity assumption. No fixed-\(n\) convergence statement is silently upgraded to a uniform moving-\(n\) bound.
+Complementary uniformity stress tests are the quadratic sequence \(m=2n(n-1)\), with \(q=n\) and the minimal permitted local multiple, and the far-external sequence \(m=n!\), beyond the window of NB-343. At the endpoint \(q=n\), physical adjacent-vector conditioning costs \(\sqrt{\log n}/n\). Equation (7) is used only at positive integers, so fractional folds introduce no hidden regularity assumption. No fixed-\(n\) convergence statement is silently upgraded to a uniform moving-\(n\) bound.
 
-**Prior-art boundary.** The harmonic/digamma asymptotic is classical (NIST DLMF above). The inner-product arithmetic of the Nyman generators and harmonic-series summation are likewise established themes; see L. Báez-Duarte, *Harmonic Series Summation Lemma and Vasyunin's Formulas*, J. Math. Sci. 120 (2004), 1653--1656, DOI 10.1023/B:JOTH.0000018862.38853.fe, and the Báez-Duarte--Balazard--Landreau--Saias / Balazard--Martin fractional-part autocorrelation works already recorded in this line. No originality is claimed for those tools, nor is an absence of exact-match search results treated as a priority claim. The **line-local mathematical delta** is the common-divisibility specialization of NB-338's exact finite selector coefficient and its physical uniform norm consequence (3); this is not a best-approximation theorem.
+**Prior-art boundary.** The harmonic/digamma asymptotic is classical (NIST DLMF above). The inner-product arithmetic of the Nyman generators and harmonic-series summation are likewise established themes; see L. Báez-Duarte, *Harmonic Series Summation Lemma and Vasyunin's Formulas*, J. Math. Sci. 120 (2004), 1653--1656, DOI 10.1023/B:JOTH.0000018862.38853.fe, and the Báez-Duarte--Balazard--Landreau--Saias / Balazard--Martin fractional-part autocorrelation works already recorded in this line. No originality is claimed for those tools, nor is an absence of exact-match search results treated as a priority claim. The **line-local mathematical delta** is the locally coprime-divisible specialization of NB-338's exact finite selector coefficient. Only \(q(q-1)\mid m\) is needed, so the physical norm consequence (3) reaches the quadratic scale (3a), not just global lcm multiples. This is an immediate strengthening within the same finite-normalization-residue mechanism, not a best-approximation theorem or an originality claim.
 
 **RH-facing boundary.** The coefficient and bound apply to \(E_{n,m}\), not to
-\(d_n=\operatorname{dist}({\bf1},U_n)\). They do not show occupation by the actual Ford target, supply stable inverse-section conditioning, control off-critical zero sampling, or imply RH or its negation. The bound is consistent with far-external rank-one mixing because \(n/(m_n\sqrt{\log n})\to0\) extremely rapidly at common-divisibility scales.
+\(d_n=\operatorname{dist}({\bf1},U_n)\). They do not show occupation by the actual Ford target, supply stable inverse-section conditioning, control off-critical zero sampling, or imply RH or its negation. The bound is consistent with rank-one mixing because \(n/(m_n\sqrt{\log n})\to0\) even on the quadratic sequence \(m_n=2n(n-1)\), and faster still for factorial dilations.
 
 ## Research consequence
 
-The exact vanishing of reciprocal-phase contrast at common multiples, emphasized in NB-342--343, is a failure of that observer's leading-order discrimination, **not** exact cancellation of the projected-dilation error. A smaller but explicitly signed finite-normalization residue survives at every such dilation. Further enlargement of phase windows or sharpening of source-only lower bounds remains separate from the missing target-occupation bridge.
+The exact vanishing of reciprocal-phase contrast whenever both adjacent rational phases are integers is a failure of that observer's leading-order discrimination, **not** exact cancellation of the projected-dilation error. Local divisibility \(q(q-1)\mid m\) already forces this phase cancellation, yet a smaller explicitly signed normalization residue survives. At \(q=n\), this happens as early as \(m=2n(n-1)\), rather than requiring factorial or global-lcm dilation. Sharpening source-only lower bounds remains separate from the missing target-occupation bridge.
