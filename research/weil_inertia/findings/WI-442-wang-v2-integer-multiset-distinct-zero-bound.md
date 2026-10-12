@@ -145,6 +145,57 @@ and the finite-multiset step (5) is independent of interval length. This is a Ma
 
 **Crucial countercontrol:** distinctness is not critical-line occupancy. A mirror-closed configuration of simple off-line zeros can have \(N^d/N=1\), satisfy (2) with ample slack, and contain *no* simple critical-line zeros. Therefore (16) supplies neither the complementary critical-line reservoir needed to contradict the surviving bow nor an individual-off-line-defect certificate. It also cannot exclude a finite or zero-density exceptional divisor: both affect normalized fractions by \(o(1)\).
 
+
+### Full finite defect and joint short-interval stability
+
+The source's inequalities (7)–(10) admit an **exact, nonnegative defect decomposition**, not merely the discarded lower bound (10). Since \(\eta\) is nonzero on a set of positive measure, distinct complex exponentials are linearly independent after multiplication by \(\eta\); consequently the spans in (7) have \(\dim U=r+k\), \(\dim V=n+r+k\). Define \(Q_U=I-P_U\), \(Q_V=I-P_V\), \(B=qP_V+P_U\), and the projection losses
+\[
+\begin{aligned}
+\varepsilon_U
+&:=\operatorname{tr}(P_U A)-(H_*+M)
+ =\sum_{x\in\mathcal R_1}m_x\|P_Uf_x\|^2
+  +2\sum_{j=1}^k m_{z_j}\|Q_Uh_{z_j}\|^2,\\
+\varepsilon_V
+&:=\operatorname{tr}(P_V A)-N
+ =2\sum_{j=1}^k m_{z_j}\|Q_Vh_{z_j}\|^2 .
+\end{aligned}\tag{18}
+\]
+Both are nonnegative. The self-adjoint square identity
+\(S=2\operatorname{tr}(AB)-\operatorname{tr}(B^2)+\|A-B\|_{\rm HS}^2\),
+combined with the **exact** projection traces above, gives
+\[
+\boxed{\begin{aligned}
+&S-(2q+1)N+q(q+1)D\\
+&\quad=M+(q^2-1)k+
+\sum_{x\in\mathcal R_2}(m_x-q-1)
++\sum_{x\in\mathcal R_1}(q-m_x)\\
+&\qquad\quad+\|A-B\|_{\rm HS}^2
+   +2\varepsilon_U+2q\varepsilon_V .
+\end{aligned}}\tag{19}
+\]
+Every summand is nonnegative for integer \(m_x\), \(q\ge1\). This is a strengthening **of the recorded proof audit for the same claim**, derived from Wang's projection argument, not a new analytic input or a separately certified zeta theorem. For a single real location of multiplicity \(m\), (19) reduces exactly to \((m-q)(m-q-1)\); this checks both branches of the adjacent-integer multiplicity split.
+
+For each fixed \(0<\theta<1\) put \(q=\lfloor C_\theta\rfloor\), and write \(M_\theta(T)\), \(k_\theta(T)\), \(N_{0,j}(T)\) for the off-line multiplicity mass, number of off-line conjugate pairs, and number of on-line locations of multiplicity \(j\) in \((T,T+T^\theta]\), respectively. Use the same \(N=N(T,T^\theta)\), \(D=N^d(T,T^\theta)\) as in (4). Applying Wang's second-moment upper bound separately for **fixed** admissible supports \(\lambda<\theta\), then taking \(\lambda\uparrow\theta\), yields
+\[
+\boxed{\;
+\frac{M+(q^2-1)k+
+\sum_{x\in\mathcal R_2}(m_x-q-1)+
+\sum_{x\in\mathcal R_1}(q-m_x)}{N}
+\le q(q+1)\left(\frac DN-D(C_\theta)\right)+o(1).
+\;}\tag{20}
+\]
+The result is a **joint** bound: the same distinctness surplus pays simultaneously for all off-line zeros (including simple ones), the distinct off-line pairs, and critical-line multiplicities different from \(q,q+1\). At the fixed bow endpoint \(\theta=\vartheta_*=3943/12011\), \(q=3\), so (20) becomes
+\[
+\boxed{\;
+\frac{M+8k+2N_{0,1}+N_{0,2}+R_{\ge5}}{N}
+\le12\left(\frac{N^d}{N}-0.320384362143664\ldots\right)+o(1),
+\;}\tag{21}
+\]
+where \(R_{\ge5}=\sum_{\Re\rho=1/2,\ m_\rho\ge5}(m_\rho-4)\) counts locations in the same short interval. The \(q=3\) calculation charges simple and double on-line locations by 2 and 1, leaves triple/quadruple ones uncharged, and charges higher multiplicities by their excess above four.
+
+If \(D/N\to D(C_\theta)\), each population in (20) has **vanishing relative density**. The squared-operator and projection losses in (19) are controlled in the **iterated** limit of near-optimal fixed tests \(\lambda\uparrow\theta\) after \(T\to\infty\); (11) supplies no uniform statement for a varying test \(\lambda=\lambda(T)\). At no point is equality in Wang's bound established for actual zeta zeros. Even if it were attained in density, (20) would not exclude an individual off-critical zero or a zero-density exceptional family, and the finite-square identity adds no independent prime-side control.
+
+
 ## 4. Prior art, boundaries, and falsification
 
 The analytic pair formula, optimizer, and integer-parameter Proposition 5.1 are **Wang v2 source claims**. Lamzouri's \(q=1\) finite-multiset inequality, the older global pair framework, and the rank/trace estimate are acknowledged prior art. The exact mathematical outcome recorded here is a **source-revision correction and Weil-inertia consequence**, not a new proof of the source theorem or a novelty/priority claim.
