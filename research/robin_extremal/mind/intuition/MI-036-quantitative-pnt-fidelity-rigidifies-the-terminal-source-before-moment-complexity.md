@@ -2,7 +2,7 @@
 
 **Evidence level:** literature-backed/exact synthesis from [RE-015](../../findings/RE-015-pnt-remainder-controls-upper-robin-tail.md), [RE-153](../../findings/RE-153-self-tangent-robin-height-is-a-pareto-weighted-chebyshev-deficit-average.md), and [RE-155](../../findings/RE-155-terminal-generalized-source-ambiguity.md) through [RE-168](../../findings/RE-168-kv-decay-length-interpolates-local-and-remote-robin-capacity.md). The quantitative PNT envelope is an explicit source-class hypothesis; no claim is made that arbitrary generalized primes satisfy it.
 
-The terminal moment hierarchy measures ambiguity only inside the source class still allowed after stronger source information is imposed. RE-164--RE-166 identify a sharp Korobov--Vinogradov remote-tail capacity
+The terminal moment hierarchy measures ambiguity only inside the source class still allowed after stronger source information is imposed. RE-165--RE-168 quantify a sharp Korobov--Vinogradov remote-tail capacity
 
 `K_b(p,T)=sqrt(p) log p exp(-b V(T))/V(T)`,
 
@@ -32,7 +32,7 @@ The reusable source-fidelity variable is therefore not simply “local versus re
 
 `xi = W V(T)/log T`.
 
-A pointwise source envelope has different destination power depending on how many of its intrinsic decay lengths the unresolved discrepancy may occupy. Restricting source error to a geometrically small or even subpower region can still leave full remote ambiguity if that region contains `omega(1)` KV decay lengths.
+A pointwise source envelope has different destination power depending on how many of its intrinsic decay lengths the unresolved discrepancy may occupy. The separate strict horizon-rigidity statement in [RE-238](../../findings/RE-238-strict-quantitative-pnt-fidelity-collapses-terminal-generalized-source-ambiguity.md) holds only when `b kappa_A>1/2` under its quantitative PNT hypothesis; equality remains unresolved. Restricting source error to a geometrically small or even subpower region can still leave full remote ambiguity if that region contains `omega(1)` KV decay lengths.
 
 For Robin, moment matching becomes relevant only after the actual selector/source geometry is placed relative to this profile. At bounded-multiplicative `T=Bp`, even the fixed-width capacity diverges, so quantitative PNT fidelity still does not identify the source coordinate. A genuinely new ordinary-prime/CA input must constrain **where inside the KV decay-length window** mass can move, not merely improve the global envelope or state that the perturbation is subpower-local.
 

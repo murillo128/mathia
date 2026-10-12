@@ -59,3 +59,13 @@ FD-282--FD-292 show that the grouped strict-right Perron collar retains a prime 
 FD-293 shows that reciprocal-log-safe occupation of positive measure already requires `H^(1-o(1))` remainder-good gaps under RH. FD-294 converts such occupation into near-linear many short complete zero-packet cancellations, and FD-295 shows that below square-root height those complete packets are automatically capacity-subcritical. FD-296--FD-297 identify a lower-height rigidity regime in which the whole zero-safe trajectory is controlled, up to `o(B)`, by one fixed low-height complete hard remainder rather than by return frequency.
 
 Inside that rigidity regime FD-298--FD-311 expose the fixed baseline as the block-Mertens source field and then, under a near-capacity premise, as an inflated sliding variance together with low-frequency spectral carriers and explicit theorem-design thresholds in both physical and Fourier space. Outside it, but still in the short-complete-packet range, the unresolved theorem remains near-linear safe occupation or a stronger source-side path-control statement. The current Montgomery--Vaughan phase selector is intrinsically aggregate at zero-gap scale and cannot simply be rerun independently on each RH zero gap.
+
+## Classify Farey spectral rigidity by cumulative excursion transport, not index-defect count
+
+FD-315 establishes rigidity of the genuine Farey edge ordering under exact integrality of **every** local Hall--Shiu index. The converse quantitative stability fails drastically: FD-319 constructs reflection-symmetric, directed-denominator-edge-preserving reassemblies with only four noninteger indices, each `1+/-1/p`, for which total fractional index error is `4/p->0` while Franel energy changes by `3/(4pi^2)` and fixed sine modes persist.
+
+FD-320 identifies the actual variable for **prime-order excursion permutations**. With excursion gap counts `ell_j`, `w_j=ell_j/N_p-1/p`, and cumulative sums `U_j=sum_(i<j)w_i`, the permuted transport potential is
+`T_p(sigma)=sum_t ell_(sigma(t)) (U_(sigma(t))-U_t^sigma)^2`.
+The exact decomposition `D^sigma=P_sigma D+v^sigma` has `||v^sigma||_2^2=T_p(sigma)` and `||D||_2=o(1)`, uniformly over permutations. Hence `|sqrt(E_p^sigma)-sqrt(T_p(sigma))|=o(1)`, together with a full sine-spectrum `l^2` approximation. The local index defect count, by contrast, is merely the number of breaks in the excursion permutation, and can diverge while `T_p->0`.
+
+For this precise reassembly class, which additional **source-natural order constraint** bounds the cumulative length transport `T_p`? Counting or shrinking index defects cannot supply that estimate; any proposed local-to-spectral transfer must control the weighted cumulative shifts themselves.

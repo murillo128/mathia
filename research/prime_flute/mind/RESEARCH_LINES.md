@@ -19,3 +19,11 @@ The older heavy low/high ideal-count problem remains meaningful only for a split
 ## Prime realization within the resolved upstream-memory window
 
 The older prime-gap realization problem remains logically separate: can consecutive prime-gap isolation realize the moderate graded neck ratios of MI-001, or can the surface-to-graph error be sharpened enough to resolve `w_j^2/w_(j-1)` in known hierarchies? This does not repair the sharp-cutoff completed-angle obstruction; it concerns the upstream geometric realization itself.
+
+## Test the diagonally normalized angle after exact transition-band shorting
+
+PF-344 changes the **representation**, not just the hard-cutoff estimate. Keep a physical transition band `kappa_-<|xi|<kappa_+` in the complete positive finite-section seam form `M`, eliminate it by the exact Schur complement `S=M^( /T)`, and set `D_n=L_n^(-1)(s_(n-1)^(-1)+s_n^(-1))`. Binomial transition-mode compensators make the two boundary-edge diagonal energies and their mixed entry `O(D_n exp(-gamma L_n))`, rather than order `D_n`. All individual bounded-frequency entries are `o(D_n)`, but the latter statement has no uniform growing-band trace bound.
+
+PF-345 extends the exponential bound to a low/high exterior strip of dimension `Theta(L_n)`: its **positive unnormalized compression** satisfies `||P_(E_n)S P_(E_n)||_(S_1)=O(D_n exp(-gamma L_n))`. This makes the direct hard-cutoff PF-342/PF-343 witness nonportable to the shorted geometry. Yet the same transition elimination reduces the shorted diagonal energies, so small raw off-diagonal entries and a small relative-to-`D_n` trace do **not** imply a compact diagonally normalized low/high canonical-correlation operator.
+
+The decisive quantity is the completed normalized cross block formed from the **same shorted** low, high and mixed blocks, with uniform finite-section control. Determine whether its singular values decay or whether a normalized edge sequence recovers an order-one correlation; neither outcome follows from PF-344/PF-345's raw-energy estimates.
