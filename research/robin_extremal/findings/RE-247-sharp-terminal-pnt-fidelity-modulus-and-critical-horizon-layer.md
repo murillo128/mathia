@@ -4,7 +4,7 @@
 
 **Parent findings:** RE-153, RE-155, RE-238, RE-246.
 
-RE-238 gives an upper bound on the effect of a terminal source modification under a quantitative Chebyshev remainder. RE-246 constructs an order-one modification at the leading-order critical Korobov–Vinogradov exponent. The missing quantitative question is whether that upper bound has the *correct size* for each allowed terminal horizon, including horizons tuned through the critical second-order layer. It does: within the stated generalized-prime comparison class, the worst terminal ambiguity is comparable on both sides to one explicit scale. This gives an if-and-only-if source-information criterion, not merely a sufficient strict exponent test.
+RE-238 gives an upper bound on the effect of a terminal source modification under a quantitative Chebyshev remainder. RE-246 constructs an order-one modification at the leading-order critical Korobov–Vinogradov exponent. The missing quantitative question is whether that upper bound has the *correct size* for each allowed terminal horizon, including horizons tuned through the critical second-order layer. It does: within the stated generalized-prime comparison class, the worst terminal ambiguity has an exact asymptotic leading constant, and the upper bound is attained by explicit discrete sources obeying the same unit PNT envelope. This gives an if-and-only-if source-information criterion, not merely a sufficient strict exponent test.
 
 ## 1. Sharp modulus theorem
 
@@ -51,11 +51,9 @@ B_{p,b,U}:=\frac{\sqrt p\log p}{\log U}\,e^{-bV(U)}.
 \tag{5}
 \]
 
-**Theorem.** There is a universal fixed \(c_0>0\) such that, for every fixed \(b>0\) and every admissible \(U(p)\),
+**Theorem.** For every fixed \(b>0\) and every admissible \(U(p)\),
 \[
-\boxed{(c_0+o(1))B_{p,b,U}
-\ \le\ \Delta_{p,b,U}\
-\le (2+o(1))B_{p,b,U}.}
+\boxed{\Delta_{p,b,U}=(2+o(1))B_{p,b,U}.}
 \tag{6}
 \]
 In particular,
@@ -66,7 +64,7 @@ bV(U)-\tfrac12\log p+
 \log\frac{\log U}{\log p}\longrightarrow+\infty.}
 \tag{7}
 \]
-If the expression on the right fails to tend to \(+\infty\), admissible matched sources retain a nonvanishing terminal discrepancy along a subsequence. If it tends to \(-\infty\), the maximal discrepancy diverges. The claim is a sharp *order of magnitude*, not an assertion that the constants in (6) are best possible.
+If the expression on the right fails to tend to \(+\infty\), admissible matched sources retain a nonvanishing terminal discrepancy along a subsequence. If it tends to \(-\infty\), the maximal discrepancy diverges. The constant (2) in (6) is optimal even though every source is a strictly increasing discrete system of labels and the PNT envelope constant is fixed at (1).
 
 ## 2. Upper bound: the exact terminal kernel norm
 
@@ -110,81 +108,97 @@ Combining (8)--(11) with \(Z_{p,U}\to2\) gives
 \]
 The asymptotic is uniform over all source pairs in (4); no unstated smoothness of their step functions is used.
 
-## 3. Lower bound: one baseline and uniformly admissible opposite surgeries
+## 3. Saturating the upper bound with genuine discrete labels
 
-The matching construction does not assume any unproved result about ordinary primes. Take one fixed source \(Q_*=\{q_j\}\), defined by \(q_1=2\) and
+The two-sided estimate of the earlier version of this finding can be made exact. The key is that a discrete positive source can shadow *either* permitted Chebyshev envelope throughout nearly the whole terminal shell: its nonnegative jumps are not a restriction at this very slowly varying error scale. This construction does not impose an unmentioned bound on the number of labels per short interval.
+
+Use the fixed baseline \(Q_*=\{q_j\}\), defined by \(q_1=2\) and
 \[
 q_{j+1}-\log q_{j+1}=q_j.
 \tag{13}
 \]
-As in RE-246, its gaps satisfy \(q_{j+1}-q_j=\log q_{j+1}\), and
-\(\vartheta_{Q_*}(t)=t+O(\log t)\). Hence for one fixed sufficiently large \(t_0(b)\),
+As in RE-246, its gap is \(\log q_{j+1}\), and the exact identity
+\(\vartheta_{Q_*}(q_j)=q_j-(2-\log2)\) yields
 \[
-|\vartheta_{Q_*}(t)-t|\le \tfrac1{10}E_b(t)
-\qquad(t\ge t_0).
+|\vartheta_{Q_*}(t)-t|=O(\log t).
 \tag{14}
 \]
-Set \(c=e^{-3/2}\), \(d=e^{-1/2}\) and choose one small absolute \(\epsilon>0\), say \(\epsilon=10^{-4}\). For each \(p\) put
+Choose once and for all \(t_0=t_0(b)\) so this error is at most \(E_b(t)/10\) for \(t\ge t_0\).
+
+For each \(p,U\), let \(S=\vartheta_{Q_*}(T)\), and set
 \[
-m=\left\lfloor
-\epsilon\frac{Ue^{-bV(U)}}{\log U}
-\right\rfloor.
+\delta=(\log U)^{-1/2},\qquad
+w=4E_b(T),\qquad
+\rho(t)=\min\{(t-T)/w,1\}\quad(t\ge T),
 \tag{15}
 \]
-Because \(V(U)=o(\log U)\), we have \(m\to\infty\) and
-\(m\log U=(\epsilon+o(1))E_b(U)=o(U)\).
-
-The baseline gaps near \(cU,dU\) are at most \(2\log U\). Thus there are at least \(m\) baseline labels in each of the intervals
 \[
-(cU,cU+4m\log U],\qquad(dU,dU+4m\log U],
+H_\pm(t)=S+(t-T)\pm(1-\delta)\rho(t)E_b(t).
 \tag{16}
 \]
-and the intervals have width \(o(U)\). Construct \(Q_p^+\) by deleting \(m\) labels \(r_i=cU+o(U)\) from the first interval and inserting \(m\) distinct real labels \(s_i=dU+O(1)\) that avoid the baseline. Construct \(Q_p^-\) by the opposite relocation: delete \(m\) labels near \(dU\) and insert \(m\) fresh labels near \(cU\). Each modification has equal deletion and insertion counts, and every changed label lies strictly between \(T\) and \(U\).
-
-For either modified source,
+Here \(w/T=4e^{-bV(T)}=o(1)\), so \(T+w<U\) for large \(p\). The envelope derivative satisfies
 \[
-\vartheta_{Q_p^\pm}(t)=\vartheta_{Q_*}(t)\quad(t\le T),
-\qquad
-|\vartheta_{Q_p^\pm}(t)-\vartheta_{Q_*}(t)|
-\le2m\log U\quad(t\ge T).
+E_b'(t)=e^{-bV(t)}(1-btV'(t))=o(1)
+\quad(t\ge T),
 \tag{17}
 \]
-Since \(E_b(t)\) is eventually increasing and
-\(E_b(T)/E_b(U)=e^{-2}+o(1)\), the right side of (17) is less than
-\(\tfrac1{10}E_b(t)\) for every \(t\ge T\) if \(\epsilon=10^{-4}\) and \(p\) is large. Together with (14), all three sources \(Q_*,Q_p^+,Q_p^-\) obey the very same unit-constant bound (4), with \(t_0\) independent of \(p\).
-
-Deleting one label \(r\in(T,U)\) increases (3) by
+uniformly, while \(\rho'(t)E_b(t)\le1/4+o(1)\) in the short ramp \(T<t<T+w\). Therefore \(H_\pm'(t)\ge1/2\) wherever differentiable, eventually, including slightly beyond \(U\). Both targets are strictly increasing. Moreover \(S-T=O(\log U)\) and \(\delta E_b(T)/\log U\to\infty\), so they stay a quantization margin inside the unit envelope:
 \[
-\frac{\sqrt p\log p}{Z_{p,U}}
-\log r\,[h(r)-h(U)],
+|H_\pm(t)-t|
+\le(1-\delta)E_b(t)+O(\log U)
+<E_b(t)-2\log U
+\quad(T\le t\le U)
 \tag{18}
 \]
-and inserting a label decreases it by the analogous expression. The *complete* endpoint-subtracted influence obeys, for \(r=cU+o(U)\) and \(s=dU+o(U)\),
+for all sufficiently large \(p\). The displayed \(2\log U\) may be replaced by any fixed multiple of \(\log U\).
+
+Construct \(Q_p^\pm\) by retaining all labels of \(Q_*\) at or below \(T\), and then placing labels successively at the unique roots \(r>T\) of
 \[
-\log r\,[h(r)-h(U)]-\log s\,[h(s)-h(U)]
-=\frac{c^{-1}-d^{-1}+o(1)}{U}.
+H_\pm(r)=M+\log r,
 \tag{19}
 \]
-This follows from
-\(\log q\,h(q)=-\log(1-q^{-1})=q^{-1}+O(q^{-2})\)
-and \((\log s-\log r)h(U)=O(1/(U\log U))\). It retains the upper-endpoint term.
-
-Summing (19), using (15) and \(Z_{p,U}=2+o(1)\), gives
+where \(M\) is the total logarithmic weight of the labels already placed; continue until the next root exceeds \(U\). Such a root is unique and lies above the previous label since \(H_\pm'(r)-1/r>0\). The spacing is \(O(\log U)\) across the shell. At a newly placed label \(r\), the new Chebyshev step equals \(H_\pm(r)\); between labels it lags the increasing target by at most the next label's weight. Thus
 \[
-\mathcal A_{p,U}(Q_p^\pm)-\mathcal A_{p,U}(Q_*)
-=\pm\left(\frac{\epsilon}{2}
-(c^{-1}-d^{-1})+o(1)\right)B_{p,b,U}.
+0\le H_\pm(t)-\vartheta_{Q_p^\pm}(t)
+=O(\log U)\qquad(T\le t\le U).
 \tag{20}
 \]
-Consequently the admissible pair \((Q_p^+,Q_p^-)\) satisfies
+To complete the sources, include *exactly* the original baseline labels \(Q_*\cap(U,\infty)\) above \(U\). Hence the systems consist of distinct real labels \(>1\), tend to infinity, and coincide with \(Q_*\) below \(T\) and above \(U\); their finite changes inside the shell need not preserve the number of labels.
+
+Equations (18)--(20) imply the unit-constant PNT envelope (4) throughout \([T,U]\). Below \(T\) it follows from (14). Above \(U\), using the identical baseline tails,
 \[
-|\mathcal A_{p,U}(Q_p^+)-\mathcal A_{p,U}(Q_p^-)|
-=\left(\epsilon(c^{-1}-d^{-1})+o(1)\right)B_{p,b,U},
+\vartheta_{Q_p^\pm}(t)-t
+=\bigl(\vartheta_{Q_p^\pm}(U)-\vartheta_{Q_*}(U)\bigr)
+ +\bigl(\vartheta_{Q_*}(t)-t\bigr),
+\quad
+|\vartheta_{Q_p^\pm}(U)-\vartheta_{Q_*}(U)|
+\le(1-\delta)E_b(U)+O(\log U).
 \tag{21}
 \]
-proving (6) with any \(c_0<\epsilon(c^{-1}-d^{-1})\).
+Since \(E_b(t)\) and \(E_b(t)/\log t\) are eventually increasing and \(\delta E_b(U)\gg\log U\), the unit bound also holds for *every* \(t\ge U\), with the same fixed \(t_0(b)\) and no source-dependent constant. This is an explicit realization by discrete generalized-prime labels, not by signed or continuously weighted measures.
 
-The unit-constant restriction is important: the lower bound is not obtained by allowing a hidden \(p\)-dependent PNT constant. The construction also uses a single baseline for all \(p\), and the two changes are confined to a fixed terminal multiplicative shell.
+On the main portion \([T+w,U]\), (16) and (20) show
+\[
+\vartheta_{Q_p^+}(t)-\vartheta_{Q_p^-}(t)
+=2(1-\delta)E_b(t)+O(\log U).
+\]
+The same formula on the initial ramp has its main term multiplied by \(\rho(t)\). Set
+\[
+W_{p,U}:=\int_T^U E_b(t)(-h'(t))\,dt
+=(2+o(1))\frac{e^{-bV(U)}}{\log U}.
+\]
+The lost ramp contributes only
+\[
+\int_T^{T+w}E_b(t)(-h'(t))\,dt
+=O\!\left(\frac{e^{-2bV(T)}}{\log T}\right)=o(W_{p,U}),
+\]
+and integrating the discretization error \(O(\log U)\) against \(-h'\) contributes \(O(1/U)=o(W_{p,U})\). Therefore the exact matched-source identity (8) and \(Z_{p,U}=2+o(1)\) give
+\[
+\left|\mathcal A_{p,U}(Q_p^+)-\mathcal A_{p,U}(Q_p^-)\right|
+=\frac{\sqrt p\log p}{Z_{p,U}}(2+o(1))W_{p,U}
+=(2+o(1))B_{p,b,U}.
+\]
+Together with (12), this proves the asymptotically **exact** modulus (6) for every admissible moving horizon. The one-sided envelope constraints can be saturated simultaneously throughout a fixed multiplicative shell, apart from an asymptotically negligible initial adjustment and the negligible discrete jump resolution.
 
 ## 4. The exact second-order inversion boundary
 
@@ -211,7 +225,7 @@ A_b=\left(\frac1{2b}\right)^{5/3}
 \left(\frac53\right)^{1/3}.
 \tag{24}
 \]
-At \(v=v_*\), the ambiguity is of constant order. The critical layer has a definite *log-horizon width*. For every fixed real \(s\), if
+At \(v=v_*\), the maximal ambiguity tends to \(2\). The critical layer has a definite *log-horizon width*. For every fixed real \(s\), if
 \[
 v=v_*(x)+s\frac{v_*(x)}x
 +o\!\left(\frac{v_*(x)}x\right),
@@ -228,10 +242,11 @@ b\frac{v^{3/5}}{(\log v)^{1/5}}+
 \]
 The second derivative contributes \(o(1)\) over (25), and hence
 \[
-\boxed{B_{p,b,U}\longrightarrow e^{-3s/10}.}
+\boxed{B_{p,b,U}\longrightarrow e^{-3s/10},
+\qquad \Delta_{p,b,U}\longrightarrow 2e^{-3s/10}.}
 \tag{27}
 \]
-Thus the **maximal source ambiguity remains of positive constant order throughout every fixed-width rescaled transition layer**, whereas shifts much farther to the right drive it to zero. This is not an assertion of an exact limit for \(\Delta_{p,b,U}\); only its two-sided comparability to (27) is proved.
+Thus the **maximal source ambiguity has the exact limit \(2e^{-3s/10}\)** throughout every fixed-width rescaled transition layer, whereas shifts much farther to the right drive it to zero. This is a sharp statement about the specified matched generalized-prime class, not ordinary primes.
 
 Two useful contrasts fix the interpretation.
 
@@ -249,10 +264,10 @@ It lies well on the non-rigid side of the *true* critical layer. RE-246's equali
 
 ## 5. Prior-art boundary, stress tests, and consequence
 
-The positive-kernel upper estimate and matched-source subtraction identity originate in RE-238; the discrete baseline, equal-cardinality relocation and exact endpoint influence originate in RE-246 (and its RE-155 ancestor). What is newly established here is their **uniform two-sided modulus at arbitrary terminal horizons**, including an envelope constant fixed across the entire source family, the necessity-and-sufficiency criterion (7), and the resolved log-horizon transition layer (23)--(27). This is a quantitative completion of a local information-boundary question, not a new prime distribution theorem.
+The positive-kernel upper estimate and matched-source subtraction identity originate in RE-238; the discrete baseline, equal-cardinality relocation and exact endpoint influence originate in RE-246 (and its RE-155 ancestor). The earlier version of this finding established two-sided comparability for arbitrary terminal horizons. The additional mathematical content is a **discrete positive-label saturation lemma** that attains the upper constant (2), thereby promoting that modulus and the rescaled critical-layer law to exact asymptotic equivalents. The construction uses the freedom to choose distinct generalized-prime labels within a fixed terminal shell; the two shadow sources are not asserted to preserve the shell's original cardinality. This is a sharp source-information bound, not a new prime distribution theorem.
 
-The quantitative PNT context is the Korobov–Vinogradov remainder already anchored through Bellotti in SOURCES.md. Finite perturbations of Beurling generalized-prime systems have prior-art precedents already acknowledged in RE-246; no novel generalized-prime existence theorem is claimed. All essential statements here follow by direct calculus and the explicit baseline/relocation construction. No additional external theorem is needed, and SOURCES.md is unchanged.
+The quantitative PNT context is the Korobov–Vinogradov remainder already anchored through Bellotti in SOURCES.md. Classical generalized-prime construction and Chebyshev-bound literature (for example, Diamond–Zhang, *Acta Arith.* 160 (2013), 259–275) concerns broader existence and generalized-integer count conditions, not this fixed-envelope Robin-kernel optimum. No novelty is claimed for constructing generalized-prime systems as such. The constant is established directly by the explicit monotone-target discretization above, not by invoking an external existence theorem; SOURCES.md requires no new load-bearing source.
 
-The falsification checks are: (i) use the true derivative (9), not a kernel lacking its logarithm; (ii) keep the full endpoint subtraction in (19); (iii) use the same \(t_0\) and envelope coefficient for all sources; (iv) distinguish the source-pair supremum from what occurs for the *single ordinary-prime sequence*; (v) keep \(U/p\to\infty\) so the normalization in (3) remains \(2+o(1)\); and (vi) do not read the moving truncation (25) as an alternative established Robin reduction.
+The falsification checks are: (i) use the true derivative (9), not a kernel lacking its logarithm; (ii) keep the full upper-endpoint subtraction in (8); (iii) check that the monotone targets discretize to positive log-weight jumps with \(O(\log U)\) error and satisfy the unit envelope even *after* the shell; (iv) use the same \(t_0\) for all sources; (v) distinguish the source-pair supremum from the *single ordinary-prime sequence*; (vi) keep \(U/p\to\infty\) for \(Z_{p,U}\to2\); and (vii) do not read the moving truncation (25) as an alternative established Robin reduction.
 
 The mathematical implication is exact but limited: **quantitative PNT fidelity alone fixes the terminal Robin-kernel observable precisely when \(B_{p,b,U}\to0\)** in this generalized-prime source class. It does not bound the source-specific middle annulus, correlate ordinary-prime CA selectors with the Robin height, prove an inequality for actual extremal integers, or resolve RH.
