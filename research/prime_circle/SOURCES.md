@@ -237,3 +237,8 @@ This file records durable literature dependencies used to support or falsify fin
 ## Closed sums of Hilbert subspaces
 
 - Irwin E. Schochetman, Robert L. Smith and Sze-Kai Tsui, **On the closure of the sum of closed subspaces**, *International Journal of Mathematics and Mathematical Sciences* **26**:5 (2001), 257--267. DOI: 10.1155/S0161171201005324. Role: classical Friedrichs-angle/closed-additive-sum criterion used in PC-430 to distinguish individual one-prime cyclic Riesz subspaces from their nonclosed two-prime additive sum; the Prime-Circle periodic-fiber specialization is derived directly in that finding.
+
+## Bernoulli Fourier expansions and cusp periodization
+
+- NIST Digital Library of Mathematical Functions, **§24.8, Fourier series of Bernoulli polynomials**, https://dlmf.nist.gov/24.8, and **§2.10, Euler--Maclaurin summation**, https://dlmf.nist.gov/2.10. Role: authoritative formulas for the Fourier series of periodic Bernoulli polynomials and the Euler--Maclaurin asymptotic machinery; anchors the classical Poisson/Bernoulli ingredients and coefficient checks for PC-431.
+- Luca Brandolini, Leonardo Colzani, Bianca Gariboldi, Giacomo Gigante and Alessandro Monguzzi, **Euler--Maclaurin Summation Formula on Polytopes and Expansions in Multivariate Bernoulli Polynomials**, *Journal of Fourier Analysis and Applications* **29** (2023), article 33. DOI: 10.1007/s00041-023-10011-9. Role: modern general treatment of periodization and Bernoulli polynomial expansions; neighboring prior art, not a source for the specific Prime-Circle Hilbert--Schmidt constants in PC-431.
