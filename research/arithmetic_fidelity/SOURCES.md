@@ -213,3 +213,11 @@ AF-552 derives the transition-boundary formulas directly from the prime-zeta log
 - AF-553 reuses the exact common-calibration quotient of AF-550 and the logarithmic prime-zeta boundary comparison of AF-552.
 
 AF-553 derives the sharp vanishing-order shift from analytic prefix differences to relative-transition boundary jets, then specializes it to the marked Dirichlet tails of \(\zeta^m-1\). No novelty is claimed for zeta Laurent expansions, divisor convolution, implicit inversion, or parabolic dynamics. The Arithmetic Fidelity contribution is the category-specific information boundary: all jets through order \(m\) erase every finite analytic prefix, order \(m+1\) recovers its boundary value, and a source difference beginning at order \(r\) first survives in order \(m+r+1\).
+
+## AF-554 — Critical-index exponential-integral tail transition window
+
+- Franz Mertens, **“Ein Beitrag zur analytischen Zahlentheorie,”** *Journal für die reine und angewandte Mathematik* 78 (1874), 46–62. Role: reciprocal-prime harmonic sum with the \(O(1/\log x)\) remainder required for the *uniform* logarithmic-window tail estimate, not only pointwise Mertens convergence. This source is also used in AF-552.
+- NIST Digital Library of Mathematical Functions, **§6.2(i), Eq. 6.2.1**, https://dlmf.nist.gov/6.2.E1. Role: standard exponential integral \(E_1(a)=\int_a^\infty e^{-v}dv/v\).
+- AF-554 reuses the exact common-output-calibration transition quotient of AF-550, the horizontal source-metric warning of AF-551, and the fixed-index boundary asymptotics of AF-552.
+
+AF-554 gives a direct Stieltjes--Mertens proof that \(T_n(1+a/\log q_n)=\kappa E_1(a)+O(e^{-a}/\log q_n)\) uniformly in \(a>0\), together with a \(C^1_{\rm loc}\) inverse-reference transition limit. The rational-prime index-only variant and AF-551 finite-prefix matched control exhibit an interior critical-profile gap, but the source-specific content is entirely the retained reference inverse, and raw input resolution must shrink as \(1/\log n\). No novelty is claimed for Mertens theory, exponential integrals, or inverse-function/registration theory; no RH consequence follows.
