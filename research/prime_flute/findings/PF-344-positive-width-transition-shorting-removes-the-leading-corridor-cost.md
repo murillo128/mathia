@@ -1,12 +1,12 @@
 # PF-344 — a positive-width transition band shorts out the leading corridor cost
 
-**Status:** EXACT-DERIVED + VARIATIONAL-SCHUR-SHORTING + QUANTITATIVE-EDGE-CANCELLATION + WEIGHTED-EXPONENTIAL-COMPLETENESS + ENDPOINT-OPEN.
+**Status:** EXACT-DERIVED + VARIATIONAL-SCHUR-SHORTING + EXPONENTIAL-EDGE-CANCELLATION + WEIGHTED-EXPONENTIAL-COMPLETENESS + ENDPOINT-OPEN.
 
 PF-343 proves a noncompact **direct** hard-sector angle when two bounded physical Fourier modes lie in opposite sectors and are sufficiently close. It explicitly leaves open the different architecture in which a physical transition band is retained in the full positive boundary precision and eliminated by a Schur complement.
 
 That architecture does suppress the very corridor-scale term that drives PF-342/PF-343. There are two distinct statements:
 
-1. For low/high modes immediately adjacent to the two edges of a fixed positive-width transition band, the shorted diagonal energies and their mixed matrix element are at most \(O(1+D_n/L_n^2)\), rather than the raw \(D_n\) scale.
+1. For low/high modes immediately adjacent to the two edges of a fixed positive-width transition band, binomial transition-mode compensators improve the shorted diagonal-energy and mixed-entry upper bounds from \(O(1+D_n/L_n^2)\) to \(O(D_n e^{-\gamma L_n})\) for some \(\gamma>0\); this is **relative to the raw corridor scale**, not an absolute-energy or normalized-angle bound.
 2. More generally, **every individual bounded-physical-frequency cosine mode** has shorted energy \(o(D_n)\) when the full growing transition band is available. The second statement uses classical weighted exponential completeness and is qualitative; its approximation coefficients need not have a uniform norm or any useful rate.
 
 Here \(D_n=L_n^{-1}(s_{n-1}^{-1}+s_n^{-1})\to\infty\) is PF-343's symmetric two-pant corridor scale. These facts show that the leading direct-angle witness is **not stable under exact positive shorting**. They do **not** prove the effective, *diagonally normalized* low/high angle is compact or weak trace class: the shorted diagonal energies decrease along with the mixed term.
@@ -116,7 +116,7 @@ M_{\mathcal T X}\ell_n\rangle
 \tag{10}
 \]
 
-This is a cancellation in an unnormalized **matrix element**; it is not a trace-ideal theorem.
+This is a cancellation in an unnormalized **matrix element**; it is not a trace-ideal theorem. Section 4 strengthens the edge bounds (5)--(7) to an exponential decay rate relative to \(D_n\). The globally bounded-frequency statement (8)--(9) remains qualitative.
 
 ## 1. A reusable upper trial from the canonical one-cusp pant
 
@@ -262,13 +262,122 @@ Take \(\limsup_{n\to\infty}\), then \(\epsilon\downarrow0\), proving (8) uniform
 
 This is a form of frequency-restricted weighted approximation/superoscillation, **not** approximation in unweighted boundary \(L^2\). The compensating transition trace may have large unweighted norm. Its coefficient cost is precisely what prevents (19) from giving a quantitative trace-ideal endpoint.
 
+## 4. Binomial transition compensators give an exponential edge rate
+
+The neighboring-mode trial in Section 2 uses only one transition mode. Retaining a **growing but small fraction** of the transition band gives a quantitative improvement that still fits the exact positive shorting (3). The only additional arithmetic input is the Baker--Harman--Pintz prime-gap estimate already recorded as S6; there is no new spectral or superoscillation theorem.
+
+Write \(\eta=\kappa_+-\kappa_->0\), \(h_n=2\pi/L_n\), and fix
+
+\[
+0<a<\min\left\{\frac{\eta}{8\pi},\,10^{-3}\right\},
+\qquad
+m_n=\lfloor a L_n\rfloor.
+\tag{20}
+\]
+
+For \(n\) large, the \(m_n\) neighboring frequencies on the inside of **each** transition edge are all in the physical transition interval: the furthest displacement is at most \(m_nh_n\le 2\pi a<\eta/4\), with the single lattice-step offset at the endpoint absorbed for sufficiently large \(n\). In particular \(m_n\asymp L_n\), and no frequencies outside the actual Schur-eliminated sector are used as compensators.
+
+For either exterior edge frequency \(\alpha_n\), take \(\sigma=+1\) at the lower edge (step upward into \(\mathcal T_n\)) and \(\sigma=-1\) at the upper edge (step downward). The normalized boundary trace whose exterior part is the selected mode and whose remaining part belongs to \(\mathcal T_n\) is
+
+\[
+\begin{aligned}
+f_{n,\sigma}(t)
+&=\sqrt{\frac2{L_n}}
+\sum_{j=0}^{m_n}(-1)^j\binom{m_n}{j}
+\cos((\alpha_n+\sigma jh_n)t)\\
+&=\sqrt{\frac2{L_n}}\operatorname{Re}
+\left[e^{i\alpha_nt}(1-e^{i\sigma h_nt})^{m_n}\right].
+\end{aligned}
+\tag{21}
+\]
+
+The coefficient absolute mass is **exactly** \(A_f=2^{m_n}\), and all frequencies are in the fixed compact physical interval \([0,\kappa_++1]\) for large \(n\). Therefore the constant in PF-344's pant/seam trial (13) is independent of \(m_n\); the coefficient cost is explicitly \(4^{m_n}\), not a hidden approximation constant.
+
+Set \(\delta=1/(8\pi)\), so that \(2\pi\delta=1/4\). The elementary estimates
+
+\[
+|1-e^{i h_nt}|\le\min\{2,h_n|t|\},
+\qquad
+\operatorname{sech}t\le 2e^{-|t|}
+\tag{22}
+\]
+
+give two regimes. On \(|t|\le\delta L_n\), the magnitude of the unnormalized polynomial in (21) is bounded by \(4^{-m_n}\). Outside that interval its magnitude is bounded by \(2^{m_n}\), but the exponentially decaying corridor weight absorbs that growth. Thus
+
+\[
+\boxed{
+\int_{\mathbb R}
+\left|\sqrt{\frac{L_n}{2}}f_{n,\sigma}(t)\right|^2
+\operatorname{sech}t\,dt
+\le
+\pi\,16^{-m_n}+4^{m_n+1}e^{-\delta L_n}.
+}
+\tag{23}
+\]
+
+Inserting (23) and \(A_f=2^{m_n}\) into the actual complete-module trial (13), with the other seam modules set to zero, yields
+
+\[
+\frac{\mathcal E_M(f_{n,\sigma})}{D_n}
+\le C\left(
+16^{-m_n}
++4^{m_n}e^{-\delta L_n}
++\frac{(1+w_n)4^{m_n}}{D_n}
+\right).
+\tag{24}
+\]
+
+The last term matters: proving small weighted error alone is not enough, because binomial coefficients amplify the nonsingular pant and seam contributions.
+
+For the *canonical prime-flute* the coefficient cost is nevertheless dominated by the corridor conductance. PF-216 and the BHP exponent \(0.525\) imply \(s_{n-1},s_n\ll p_n^{-0.475}\). The exact cuff formula in the local construction and the elementary gap lower bound \(g_n\ge2\) give \(L_n\le 2\log p_n+O(1)\). Hence
+
+\[
+\boxed{
+D_n=\frac{s_{n-1}^{-1}+s_n^{-1}}{L_n}
+\ge
+\frac{c\,p_n^{0.475}}{L_n}
+\ge\frac{c'e^{(19/80)L_n}}{L_n}.
+}
+\tag{25}
+\]
+
+There is no assumed prime-gap conjecture in (25). Because \(a<10^{-3}\), we have \(a\log4<\delta\) and \(a\log4<19/80\). The three terms on the right of (24) therefore decay exponentially in \(L_n\); the factor \(L_n\) from (25) can be absorbed by taking a smaller exponent. For instance any sufficiently small positive
+
+\[
+0<\gamma<
+\frac12\min\left\{
+a\log16,\ \delta-a\log4,\ \frac{19}{80}-a\log4
+\right\}
+\tag{26}
+\]
+
+works after enlarging \(C\) to account for \(m_n=\lfloor aL_n\rfloor\).
+
+The finite-section Schur minimum (3) and positivity now give, **uniformly over canonical finite sections containing the full transition band**,
+
+\[
+\boxed{
+\langle\ell_n,S\ell_n\rangle+
+\langle h_n,Sh_n\rangle+
+|\langle h_n,S\ell_n\rangle|
+\le C D_n e^{-\gamma L_n}.
+}
+\tag{27}
+\]
+
+The off-diagonal bound is Cauchy--Schwarz in the **shorted** positive form, not polarization of raw pant energies. Equation (27) strengthens (5)--(7) for the same two edge modes, without changing their claim identity; it does not improve (8)--(9) for all bounded exterior modes.
+
+**Stress tests.** If \(\eta\downarrow0\) along the tail, no fixed \(a>0\) is available and (27) does not follow. If \(D_n\) lacks a lower exponential growth rate, the nonsingular \(4^{m_n}\) term can defeat the cancellation even when the weighted integral is small. The rate is **only relative to \(D_n\)**: \(D_ne^{-\gamma L_n}\) need not tend to zero. Most importantly, no lower bound on the shorted diagonal energies is proved, so the ratio defining the normalized canonical angle may still be order one. Nothing here gives a uniform norm bound on the growing exterior bands, the unbounded high-frequency sector, finite-section compatibility, or weak-\(\mathcal S_1\) reassembly.
+
 ## Prior art and novelty assessment
 
 The algebraic identity (3) is the classical variational meaning of a positive Schur complement/shorted form; the Dirichlet-to-Neumann setting has classical Schur-complement formulations, including Knockaert, De Zutter, Lippens and Rogier, *On the Schur complement form of the Dirichlet-to-Neumann operator*, Wave Motion 45 (2008), 309--324, DOI 10.1016/j.wavemoti.2007.07.004, already noted in PF-343.
 
 Completeness of restricted exponential families in weighted \(L^2\) spaces is likewise classical; the general type problem and its history are treated by A. Poltoratski, *A problem on completeness of exponentials*, Annals of Mathematics 178 (2013), 983--1016, DOI 10.4007/annals.2013.178.3.4 (S21). The particular exponential-weight zero-type fact (16) is proved directly above by elementary strip analyticity, not imported as a novel theorem or as an unverified specialization of a deep result.
 
-The project-specific delta is the transfer of that approximation fact **through the actual PF-341 corridor variational upper trial, PF-340 zero-twist two-pant assembly, and the complete finite-section positive shorting**. Neither abstract weighted completeness nor abstract Schur algebra alone implies the bounds (5)--(10) for the canonical prime flute.
+Finite binomial-difference identities and cancellations by repeated nearby frequencies are elementary and belong to the classical approximation/superoscillation toolkit; neither the polynomial in (21) nor the abstract Schur identity is claimed as novel. The BHP input is the established 2001 theorem recorded as S6, not an arithmetic improvement.
+
+The project-specific delta is the transfer of these tools **through the actual PF-341 corridor variational upper trial, PF-340 zero-twist two-pant assembly, and the complete finite-section positive shorting**, with the coefficient cost beaten by the intrinsic prime-flute (D_n) scale. Neither abstract weighted completeness nor abstract Schur algebra alone implies the bounds (5)--(10) and (27) for the canonical prime flute.
 
 ## Boundaries, falsification, and remaining gate
 
@@ -276,9 +385,9 @@ The project-specific delta is the transfer of that approximation fact **through 
 2. **The symmetric seam-parity geometry is essential.** The proof uses \(q_+(\xi,w_n)=O_K(w_n)\), the common zero-twist physical origin, and the positive shifted pant trial. It does not supply the analogous antisymmetric \(q_-=O(w_n^{-1})\) bound.
 3. **Only bounded physical frequencies are controlled.** The complete high sector extends to arbitrarily large frequency. Neither (8) nor (9) is an operator norm bound on that whole sector.
 4. **The bounds are unnormalized.** The shorted low and high diagonal energies fall at the same time as their mixed term. Dividing by them can restore order-one canonical correlation. No compactness, Schatten membership, or weak-\(\mathcal S_1\) result follows.
-5. **The qualitative density proof has no conditioning rate.** Its coefficients may grow badly as the approximation error tends to zero. Formula (19) gives no reciprocal-prime scale and no uniform operator bound on the growing-dimensional low band.
+5. **The qualitative whole-band density proof has no conditioning rate.** Its coefficients may grow badly as the approximation error tends to zero. The binomial rate (27) solves the edge-witness coefficient-cost problem only; (19) still gives no uniform approximation rate for arbitrary bounded exterior modes or any operator bound on the growing-dimensional low band.
 6. **Finite-section authority is explicit.** Every Schur inverse is taken on a strictly positive finite section containing the full relevant physical transition modes. Compatibility and ideal estimates of the infinite-tail shorted operator remain to be proved.
 
 A decisive falsification would exhibit a failure of PF-341's noncollapsing chart extension for bounded finite cosine combinations, of the fixed-band corridor upper estimate (12), of the symmetry/normalization identification in (13), or of the strictly positive finite-section Schur minimum (3). Merely observing raw order-one correlations as in PF-343 does not contradict this shorted-form result.
 
-The live endpoint is now quantitative: estimate the transition-sector approximation error **together with its coefficient/energy cost at the actual \(D_n\) scale**, then normalize by the **shorted** diagonal blocks and test the resulting effective low/high angle in the PF-318/PF-320 singular-value currency. The present result removes the leading raw corridor obstruction to that program; it does not solve the program.
+The live endpoint remains quantitative beyond the edge witnesses: determine the transition-sector approximation cost for general exterior packets, then establish two-sided bounds on the **shorted** diagonal blocks and test the effective low/high angle in the PF-318/PF-320 singular-value currency. The new exponential *relative* edge rate (27) alone does not suppress the normalized angle or solve the spectral endpoint.
