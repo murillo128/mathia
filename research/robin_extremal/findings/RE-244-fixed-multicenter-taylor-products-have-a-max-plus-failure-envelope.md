@@ -119,14 +119,14 @@ Uniform Stirling at fixed \(\lambda_j>0\) and the bounded ceiling offsets gives
 =\Theta_j\!\left(m^{-1/2}e^{m h(\lambda_j)}\right).
 \tag{12}
 \]
-Consequently there are fixed constants \(0<A_j<B_j<\infty\) such that, for all large \(T\) and every \(z=e^{i\theta}\in I_\alpha\) with \(u_j(\theta)\ne0\),
+Consequently, for any fixed \(\varepsilon>0\), there are constants \(0<A_{j,\varepsilon}<B_{j,\varepsilon}<\infty\) such that, for every sufficiently large \(T\) and every \(\theta\) with \(|u_j(\theta)|\ge\varepsilon\),
 \[
-A_jm_j^{-1/2}e^{m_j\tau_j(\theta)}
+A_{j,\varepsilon}m_j^{-1/2}e^{m_j\tau_j(\theta)}
 \le |E_{j,T}(e^{i\theta})|
-\le B_jm_j^{-1/2}e^{m_j\tau_j(\theta)}.
+\le B_{j,\varepsilon}m_j^{-1/2}e^{m_j\tau_j(\theta)}.
 \tag{13}
 \]
-Indeed the extra power \(u^{K-\lambda_jm_j}\) has bounded exponent, but its modulus can approach zero when \(u\to0\). Thus the stated **uniform lower bound in (13) requires refinement**: it is valid uniformly only where \(|u_j(\theta)|\ge\varepsilon>0\), whereas its upper bound is uniform on the entire arc because \(|u_j|\le r_j\) and \(K-\lambda_jm_j\in[1,2)\). At zeros of \(u_j\), \(E_{j,T}=0\) exactly. The proof below uses a pointwise two-sided estimate only at fixed \(\theta\) with \(u_j(\theta)\ne0\), and uses the full-arc upper estimate. The possible small-\(u\) prefactor therefore causes no gap.
+The **upper** bound in fact holds uniformly on the entire observed arc, with a constant independent of \(\varepsilon\), where \(u_j(\theta)\ne0\). The lower bound is intentionally restricted away from \(u=0\): the bounded rounding offset \(K-\lambda_jm_j>0\) leaves a factor \(|u|^{K-\lambda_jm_j}\), which has no positive lower bound as \(u\to0\). The proof uses a lower bound only at a fixed nonzero \(u\), so this restriction loses no information. At \(u=0\) the remainder vanishes identically.
 
 Specifically, for each **fixed** \(\theta\) with \(u_j(\theta)\ne0\),
 \[
@@ -196,13 +196,15 @@ Conversely, if any factor has \(\max_{I_\alpha}\tau_j>0\), then \(P>0\) and (20)
 
 **Two identical co-phased stages.** When \(Q_1=Q_2\) and \(s_1=s_2=s\), the envelope is \(2s\max[\tau]_+\): if one polynomial grows, its square grows at twice the logarithmic rate, despite the normalization. This is consistent with RE-237, which concerns the *coefficient Wiener norm*, not arc prediction.
 
-**Mixed phases.** With two conjugate centers \(\rho e^{\pm i\beta}\), common \(\lambda\), and positive \(s_j\), the envelope reads
+**Mixed phases.** With two conjugate centers \(\rho e^{\pm i\beta}\), common \(\lambda\), and positive \(s_j\), the exposed endpoint \(\theta=-\alpha\) supplies the **lower bound**
 \[
-P=s_1\max(0,\tau(\lambda,\alpha+\beta))
- +s_2\max(0,\tau(\lambda,\alpha-\beta))
+P\ \ge\
+s_1[\tau(\lambda,\alpha+\beta)]_+
++s_2[\tau(\lambda,\alpha-\beta)]_+,
+\qquad 0\le\beta<\alpha.
 \tag{22}
 \]
-at the exposed endpoint when \(0\le\beta<\alpha\) and the other parameter assumptions hold. The opposite endpoint interchanges the stages; with equal scales the result is symmetric. For fixed nonzero \(\beta\), RE-242 identifies the locally sharp far-edge threshold by endpoint dominance; (7) extends factorwise necessity to *all fixed depths satisfying (2)* and an arbitrary finite constellation of centers. For moving \(\beta_T\to0\), the theorem is not uniform in parameters and RE-243 remains a distinct result.
+The other endpoint interchanges the stages; the *actual* value of \(P\) is always the maximum in (5), and no unproved endpoint-maximization assertion is needed. For fixed nonzero \(\beta\), RE-242 identifies the locally sharp far-edge threshold by endpoint dominance; (7) extends factorwise necessity to all fixed depths satisfying (2) and an arbitrary finite constellation of centers. For moving \(\beta_T\to0\), the theorem is not uniform in parameters and RE-243 remains a distinct result.
 
 **DC normalization cannot be ignored.** If (4) is dropped, a denominator may itself have exponential growth, and normalized factors can behave differently. The envelope (6) makes no claim in that regime. Likewise (2) is load-bearing: in the saddle-point or turning-point regime where the first omitted term no longer controls the tail, cancellation *within* a section may change the exponent. Neither failure of (2) nor failure of (4) is evidence that a coupled escape exists.
 
