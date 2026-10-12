@@ -452,3 +452,4 @@ This stable projection inventories every current canonical Prime Lattice finding
 - [[research/prime_lattice/findings/PL-442-mod5-cyclic-reynolds-stationarization|PL-442]]
 - [[research/prime_lattice/findings/PL-443-correlation-normalized-reynolds-dephasing-compatibility|PL-443]]
 - [[research/prime_lattice/findings/PL-444-character-cyclic-expectation-local-deletion|PL-444]]
+- [[research/prime_lattice/findings/PL-445-sublog-prime-window-self-pair-dominance|PL-445]]

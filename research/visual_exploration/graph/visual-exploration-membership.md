@@ -446,3 +446,7 @@ This stable projection inventories every current canonical Visual Exploration fi
 - [[research/visual_exploration/findings/VIS-437-thresholded-bernstein-exact-wiener-majorant|VIS-437]]
 - [[research/visual_exploration/findings/VIS-438-chernoff-balance-minimizes-combined-wang-tariff|VIS-438]]
 - [[research/visual_exploration/findings/VIS-439-parseval-removes-wiener-hitting-tariff|VIS-439]]
+- [[research/visual_exploration/findings/VIS-440-directional-level-crossing-flux-hitting-tail|VIS-440]]
+- [[research/visual_exploration/findings/VIS-441-equal-crossing-flux-different-hitting-laws|VIS-441]]
+- [[research/visual_exploration/findings/VIS-442-homometric-autocorrelation-does-not-fix-hitting-laws|VIS-442]]
+- [[research/visual_exploration/findings/VIS-443-equal-triple-correlations-different-hitting-laws|VIS-443]]

@@ -326,3 +326,8 @@ This stable projection inventories every current canonical Farey Discrepancy fin
 - [[research/farey_discrepancy/findings/FD-314-farey-denominator-edge-controls-are-nonintegrable-or-degenerate|FD-314]]
 - [[research/farey_discrepancy/findings/FD-315-exact-farey-index-stitching-is-rigid|FD-315]]
 - [[research/farey_discrepancy/findings/FD-316-six-index-defects-preserve-prime-order-farey-edge-inventory|FD-316]]
+- [[research/farey_discrepancy/findings/FD-317-six-farey-index-defects-shift-quadratic-energy-at-the-franel-scale|FD-317]]
+- [[research/farey_discrepancy/findings/FD-318-six-index-defects-create-macroscopic-farey-energy-and-fixed-modes|FD-318]]
+- [[research/farey_discrepancy/findings/FD-319-four-vanishing-farey-index-defects-carry-macroscopic-energy|FD-319]]
+- [[research/farey_discrepancy/findings/FD-320-all-prime-farey-excursion-permutations-have-an-exact-transport-spectrum|FD-320]]
+- [[research/farey_discrepancy/findings/FD-321-three-vanishing-farey-index-defects-are-sharp-without-reflection|FD-321]]

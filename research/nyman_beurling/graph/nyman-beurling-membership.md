@@ -343,3 +343,8 @@ This stable projection inventories every current canonical Nyman–Beurling find
 - [[research/nyman_beurling/findings/NB-334-integer-nodes-of-the-critical-diophantine-profile-are-linear-cusps|NB-334]]
 - [[research/nyman_beurling/findings/NB-335-integer-critical-nodes-persist-under-sublinear-adjacent-reindexing|NB-335]]
 - [[research/nyman_beurling/findings/NB-336-even-denominator-phases-open-logarithmically-enhanced-critical-cusps|NB-336]]
+- [[research/nyman_beurling/findings/NB-337-uniform-critical-section-error-and-moving-even-denominator-cusps|NB-337]]
+- [[research/nyman_beurling/findings/NB-338-renormalized-finite-critical-phase-resolves-microscopic-cusps|NB-338]]
+- [[research/nyman_beurling/findings/NB-339-odd-denominator-linear-cusps-and-microscopic-signs|NB-339]]
+- [[research/nyman_beurling/findings/NB-340-interior-phase-routing-blocks-faster-quadratic-mixing|NB-340]]
+- [[research/nyman_beurling/findings/NB-341-moving-superquadratic-phase-routing-preserves-weighted-logarithmic-obstruction|NB-341]]

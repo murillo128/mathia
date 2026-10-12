@@ -446,3 +446,6 @@ This stable projection inventories every current canonical Weil Inertia finding.
 - [[research/weil_inertia/findings/WI-438-shallow-hankel-coercivity-requires-scale-matched-boundary-oscillation|WI-438]]
 - [[research/weil_inertia/findings/WI-440-smooth-test-flatness-reaches-wang-short-interval-endpoint|WI-440]]
 - [[research/weil_inertia/findings/WI-441-finite-cost-hankel-frequency-banks-are-shallow-blind|WI-441]]
+- [[research/weil_inertia/findings/WI-442-wang-v2-integer-multiset-distinct-zero-bound|WI-442]]
+- [[research/weil_inertia/findings/WI-443-knausgard-labelled-gram-certificates-and-finite-frame-ceilings|WI-443]]
+- [[research/weil_inertia/findings/WI-444-knausgard-critical-certificate-controls-offline-multiplicity|WI-444]]

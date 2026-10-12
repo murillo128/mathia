@@ -198,3 +198,5 @@ This stable projection inventories every current canonical Analytic Frontier fin
 - [[research/analytic_frontier/findings/ANF-186-prime-rough-source-marginals-still-permit-square-root-endpoint-memory-under-exact-carrier-placement|ANF-186]]
 - [[research/analytic_frontier/findings/ANF-187-critical-high-pass-danger-forces-a-semicircle-prefix-prime-rough-contrast|ANF-187]]
 - [[research/analytic_frontier/findings/ANF-188-source-scale-semicircle-contrast-survives-growing-harmonic-cancellation-on-the-exact-carrier|ANF-188]]
+- [[research/analytic_frontier/findings/ANF-189-opposed-prime-rough-packets-defeat-every-saturated-critical-high-pass|ANF-189]]
+- [[research/analytic_frontier/findings/ANF-190-height-mean-values-confine-bow-endpoint-memory-to-sparse-twists|ANF-190]]

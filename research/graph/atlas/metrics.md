@@ -38,7 +38,7 @@ The five hard-pruned interfaces retain their existing scoped canonical evidence:
 
 ## Structural and semantic scope
 
-The exact tree projections contain 13 research lines, 4,817 findings, 819 durable intuitions and 60 prior-art notes. Membership changes and reversible source-reference formatting are graph maintenance, never frontier episodes. Semantic inspection remains selective as recorded in `research/graph/semantic-inspection.json`; uninspected source changes do not justify Atlas transitions.
+The exact tree projections contain 13 research lines, 4,863 findings, 823 durable intuitions and 60 prior-art notes. Membership changes and reversible source-reference formatting are graph maintenance, never frontier episodes. Semantic inspection remains selective as recorded in `research/graph/semantic-inspection.json`; uninspected source changes do not justify Atlas transitions.
 
 ## Frontier fertility
 

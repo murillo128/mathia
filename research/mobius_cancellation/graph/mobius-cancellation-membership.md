@@ -520,3 +520,4 @@ This stable projection inventories every current canonical Möbius Cancellation 
 - [[research/mobius_cancellation/findings/MC-511-relative-state-recurrence-loses-collision-budget-before-reconstruction|MC-511]]
 - [[research/mobius_cancellation/findings/MC-512-pair-phase-participation-factorization|MC-512]]
 - [[research/mobius_cancellation/findings/MC-513-exact-state-phase-participation-sharpens-collision-gate|MC-513]]
+- [[research/mobius_cancellation/findings/MC-514-q-plus-r-collisions-force-cycle-dependence-and-spectral-rank|MC-514]]

@@ -439,3 +439,7 @@ This stable projection inventories every current canonical Weil Positivity findi
 - [[research/weil_positivity/findings/WP-429-coherent-kms-sandwiches-are-state-universal-on-finite-gibbs-truncations|WP-429]]
 - [[research/weil_positivity/findings/WP-430-thermodynamic-naturality-forces-finite-gibbs-selectors-into-spectral-functional-calculus|WP-430]]
 - [[research/weil_positivity/findings/WP-431-critical-prime-coherent-semigroup-field-has-a-sharp-kms-domain-collapse|WP-431]]
+- [[research/weil_positivity/findings/WP-432-coanalytic-prime-field-is-dense-but-nonclosable-at-critical-half-density|WP-432]]
+- [[research/weil_positivity/findings/WP-433-thermal-coanalytic-prime-regularization-is-compact-and-sign-inert|WP-433]]
+- [[research/weil_positivity/findings/WP-434-logarithmic-coanalytic-prime-smoothing-compactness-without-schatten-gain|WP-434]]
+- [[research/weil_positivity/findings/WP-435-fractional-heat-prime-field-schatten-phase-transition|WP-435]]

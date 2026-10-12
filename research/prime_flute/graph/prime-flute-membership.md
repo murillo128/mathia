@@ -355,3 +355,4 @@ This stable projection inventories every current canonical Prime Flute finding. 
 - [[research/prime_flute/findings/PF-342-sharp-physical-cutoff-forces-order-one-direct-angle-correlation|PF-342]]
 - [[research/prime_flute/findings/PF-343-uniformly-small-physical-hard-sector-gaps-force-order-one-direct-angle-correlation|PF-343]]
 - [[research/prime_flute/findings/PF-344-positive-width-transition-shorting-removes-the-leading-corridor-cost|PF-344]]
+- [[research/prime_flute/findings/PF-345-growing-exterior-edge-strips-have-exponentially-small-shorted-trace|PF-345]]

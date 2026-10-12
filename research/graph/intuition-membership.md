@@ -210,6 +210,7 @@ This is a path-derived structural projection for graph topology. Each link means
 - [[research/farey_discrepancy/mind/intuition/MI-062-hard-cutoff-cluster-completion-repartitions-packet-and-remainder]]
 - [[research/farey_discrepancy/mind/intuition/MI-063-pointwise-remainders-must-cross-the-repair-threshold-before-cluster-pruning-expires]]
 - [[research/farey_discrepancy/mind/intuition/MI-064-fixed-low-height-hard-complements-inherit-near-capacity-source-difficulty]]
+- [[research/farey_discrepancy/mind/intuition/MI-065-excursion-transport-not-local-index-defects-controls-spectrum]]
 
 ### Möbius Cancellation
 - [[research/mobius_cancellation/mind/intuition/MI-001-local-cancellation-needs-a-polynomial-information-budget]]
@@ -488,6 +489,7 @@ This is a path-derived structural projection for graph topology. Each link means
 - [[research/prime_flute/mind/intuition/MI-014-critical-packet-leakage-occupies-a-positive-measure-center-family-with-explicit-parity-scales]]
 - [[research/prime_flute/mind/intuition/MI-015-intrinsic-angle-packets-must-be-normalized-by-completed-diagonal-energy]]
 - [[research/prime_flute/mind/intuition/MI-016-critical-translation-locality-is-frequency-off-diagonal-concentration]]
+- [[research/prime_flute/mind/intuition/MI-017-transition-shorting-erases-raw-corridor-scale-but-not-normalized-angle]]
 
 ### Prime Lattice
 - [[research/prime_lattice/mind/intuition/MI-001-exponent-lattice-is-scaffolding]]
@@ -616,6 +618,7 @@ This is a path-derived structural projection for graph topology. Each link means
 - [[research/robin_extremal/mind/intuition/MI-059-fixed-complex-single-center-cancellation-still-pays-the-factor-two-wiener-floor]]
 - [[research/robin_extremal/mind/intuition/MI-060-complex-single-center-drift-cannot-escape-a-fixed-prediction-corridor]]
 - [[research/robin_extremal/mind/intuition/MI-061-co-phased-serial-multicenter-has-no-wiener-discount]]
+- [[research/robin_extremal/mind/intuition/MI-062-taylor-multicenter-error-has-nonnegative-max-plus-exponent]]
 
 ### Visual Exploration
 - [[research/visual_exploration/mind/intuition/MI-001-visual-residuals-must-survive-exact-coordinate-controls]]
@@ -766,6 +769,7 @@ This is a path-derived structural projection for graph topology. Each link means
 - [[research/weil_inertia/mind/intuition/MI-074-bsy-supplies-a-summable-positive-defect-but-not-source-side-vanishing]]
 - [[research/weil_inertia/mind/intuition/MI-075-vertical-localization-conserves-a-linear-defect-area-budget]]
 - [[research/weil_inertia/mind/intuition/MI-076-positive-safe-line-averages-face-a-blind-or-singular-defect-dichotomy]]
+- [[research/weil_inertia/mind/intuition/MI-077-finite-cost-hankel-frequency-banks-are-low-pass]]
 
 ### Weil Positivity
 - [[research/weil_positivity/mind/intuition/MI-001-positivity-needs-a-sign-producing-global-operation]]

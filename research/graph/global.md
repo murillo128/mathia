@@ -58,7 +58,7 @@ This is the derived root graph for Mathia research. Canonical findings and mind 
 
 ## Integration boundary
 
-Stable memberships cover all 13 initialized research lines, 4,817 canonical findings, 819 durable intuitions and 60 canonical prior-art notes. Structural attachment asserts ownership only. It includes challenged findings without treating a review as withdrawal or endorsement.
+Stable memberships cover all 13 initialized research lines, 4,863 canonical findings, 823 durable intuitions and 60 canonical prior-art notes. Structural attachment asserts ownership only. It includes challenged findings without treating a review as withdrawal or endorsement.
 
 Semantic coverage is selective. The [[research/arithmetic_fidelity/graph/relations/euler-harmonic-collision-budget|Euler harmonic collision budget]] records AF-337/AF-338's finite-order refinement and its surviving source/observation restrictions. Nine direct reference links in those two findings preserve their original text exactly. No cross-line implication follows from this maintenance.
 
