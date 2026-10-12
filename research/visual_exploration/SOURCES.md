@@ -184,3 +184,7 @@ This file records durable external literature dependencies used to support or de
 
 - Felix Hausdorff, **Summationsmethoden und Momentfolgen. I** and **II**, *Mathematische Zeitschrift* 9 (1921), 74–109 and 280–299. Role: classical compact-interval moment-determinacy context for VIS-444. Its direct atom-at-zero limit follows by bounded convergence; the finite-arc approximation error and explicit fourth-order integrated VIS-443 witness are separately derived.
 - J. A. Shohat and J. D. Tamarkin, **The Problem of Moments**, American Mathematical Society Mathematical Surveys 1 (1943). Role: authoritative moment-problem monograph bounding any novelty claim about reconstructing a bounded occupation law from all of its moments in VIS-444.
+
+## Endpoint Laplace asymptotics for finite-window occupation
+
+- **Encyclopedia of Mathematics**, *Watson lemma*, https://encyclopediaofmath.org/wiki/Watson_lemma (references B. Davies, *Integral Transforms and Their Applications*, Springer, 1978, §1.3). Role: classical endpoint Laplace-asymptotic precedent for the \(1/n\) boundary-layer term in VIS-445. The exact gap-count coefficient, contact-equality convention, and explicit matched circle control are elementary line-specific derivations, not claimed as a new Watson/Laplace theorem.
