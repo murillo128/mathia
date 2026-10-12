@@ -64,8 +64,61 @@ where the same window has $b=4389/10^6$. Using the two multiplicity inequalities
 \tag{4}
 \]
 
-The certificate's *defined* critical proportion is
-$s=(2-C(f)-b)/$1-x$$. Rearranging (3)–(4) proves (1). This deduction neither assumes positive semidefiniteness of the full Weil form nor drops off-line multiplicities.
+For the abstract theorem, the certificate defines
+\(s_f=(2-C(f)-b)/(1-x)\); the displayed rational \(s=1669159/2478195\)
+is a certified **lower bound** for \(s_f\), obtained from an upper enclosure for
+\(C(f)\), not an assertion that the exact window energy is rational.
+Rearranging (3)–(4) therefore proves (1). The argument neither assumes
+positive semidefiniteness of the full Weil form nor drops off-line multiplicities.
+
+### Exact excess-multiplicity refinement
+
+The bound (4) discards two nonnegative multiplicity surpluses. Define
+\[
+H_0(T):=D-2r
+ =\sum_{\substack{\operatorname{Re}\rho=1/2\\m_\rho\ge3}}(m_\rho-2),
+\qquad
+H_{\mathrm{off}}(T):=2(M_2-2k_2)
+ =\sum_{\substack{\operatorname{Re}\rho\ne1/2\\m_\rho\ge3}}(m_\rho-2),
+\tag{5}
+\]
+with \(0<\operatorname{Im}\rho\le T\) in both sums. Off-line conjugate
+partners are **both** counted in \(H_{\mathrm{off}}\). Substitution of (2)
+gives the exact finite-count identity
+\[
+\begin{aligned}
+&4(N-n)-4(r+k_1+k_2)+(1+x)n\\
+&\qquad=2N-(1-x)n+
+ E_{\mathrm{off},\,m\ge2}+2H_0+H_{\mathrm{off}}.
+\end{aligned}
+\tag{6}
+\]
+Keeping these nonnegative terms through the same source estimate (3),
+the \(T\to\infty\) and smoothing limits, and the enclosure
+\(s\le s_f\), strengthens (1) to
+\[
+\boxed{\;
+\frac{E_{\mathrm{off},\,m\ge2}(T)+2H_0(T)+H_{\mathrm{off}}(T)}{N(T)}
+\le(1-x)\left(\frac{N_0^s(T)}{N(T)}-s\right)+o(1).
+\;}
+\tag{7}
+\]
+Thus near saturation of the simple-critical lower bound excludes not
+only a positive *density* of off-line multiple-zero mass, as (1) does,
+but also a positive *density* of multiplicity **excess above two**
+on the critical line. The original (1) by itself cannot control \(H_0\).
+For a critical-line zero of multiplicity \(m\ge3\), the retained
+additional cost is \(2(m-2)\); for an off-line pair of multiplicity \(m\ge3\)
+it is \(2(m-2)\) in addition to the \(2m\) already charged by
+\(E_{\mathrm{off},\,m\ge2}\). Equality in the counting relaxations used
+for (1) requires every multiple zero to be exactly double.
+
+This is an exact consequence of the published intermediate count
+inequality in Theorem 6.2(a), **not** an independent new zeta theorem or
+an independently replayed numerical certificate. Every term is global
+and asymptotic; a fixed exceptional zero or a zero-density exceptional
+family still contributes \(o(N)\), and simple off-line zeros remain
+uncontrolled.
 
 The source also proves
 $\liminf(N_s+N_0)/(2N)\ge(1+s)/2$. Since
