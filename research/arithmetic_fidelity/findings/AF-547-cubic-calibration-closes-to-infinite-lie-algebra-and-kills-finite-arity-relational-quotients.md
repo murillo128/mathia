@@ -341,7 +341,7 @@ The mathematical ingredients are classical, and no novelty is claimed for them.
 - The Lie-Scheffers theorem states that a nonautonomous first-order system admits a finite superposition rule exactly when its time-dependent vector fields lie in a finite-dimensional Lie algebra. A modern statement appears in J. de Lucas et al., *Geometric Models for Lie-Hamilton Systems on R2*, Mathematics 7 (2019), 1053: https://www.mdpi.com/2227-7390/7/11/1053 . Riccati equations are the standard one-dimensional projective example.
 - The infinite-dimensional Witt/Virasoro vector-field framework is classical; a modern open treatment of Witt realizations is Q. Huang and R. Zhdanov, *Realizations of the Witt and Virasoro Algebras and Integrable Equations* (2020): https://doi.org/10.1080/14029251.2020.1683964 .
 
-The durable Arithmetic Fidelity contribution is the synthesis and exact placement of these classical facts after AF-545/AF-546:
+The durable Arithmetic Fidelity contribution is the synthesis and exact placement of these classical facts after AF-558/AF-546:
 
 1. configuration-space **evaluation rank** is the local criterion for whether a finite matched-branch relational lift can retain anything after a shared nuisance;
 2. the AF-546 `2,3,4` hierarchy is recovered from Vandermonde rank plus Lie closure;

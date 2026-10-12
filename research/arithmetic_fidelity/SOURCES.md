@@ -237,3 +237,8 @@ The new line-specific conclusion is global normalized convergence to \(u e^{1-u}
 - AF-557 reuses the Mertens/prime-zeta boundary expansion and its references from AF-552 and AF-555, the exact critical-index calibration quotient from AF-554, AF-555's global inverse-displacement bounds, and AF-556's normalized moving-window profile.
 
 The line-specific result is the exact two-control inverse comparison: nearby alternative prime-to-composite edits have supremum critical-curve distance `2(q-p)/(e p^3 log p)(1+o(1))`, with the same normalized moving-window shape as the baseline response. No novelty is claimed for PNT, prime-zeta boundary calculus, deterministic two-point noise balls, or generic near-colliding exponential inverse problems. Unlike the baseline detection estimate, this is a pairwise source-identification limit in the exact AF-554 critical-coordinate metric.
+
+## AF-558 — Signed shared-calibration fidelity and path variation
+
+- David Bindel, **Numerical Methods for Data Science**, Cornell University, §5.3 “Calculus and analysis,” https://www.cs.cornell.edu/~bindel/nmds/00-Background/04-Calculus.html. Role: standard fundamental-theorem-of-calculus and total-variation distinction; for differentiable paths endpoint difference is an oriented integral and accumulated variation is the absolute-derivative integral.
+- AF-558 independently derives the common-decoder inverse-sensitivity identity, the signed endpoint condition, the sufficient absolute-variation bound, and a physical fixed-sign exception for AF-543/AF-544. It corrects the overstated exact-necessity and regularity assertions of withdrawn AF-545. No mathematical novelty or RH consequence is claimed.
