@@ -1,7 +1,7 @@
 ---
 id: CLUE-xi-flow-known-candidate-holomorphic-scale-grid
 type: research-clue
-status: proposed
+status: resolved
 origin: master-researcher
 target_line: xi_flow
 based_on:
@@ -34,3 +34,12 @@ Start with two scales \`S={p,q}\`, \`q/p->infinity\`, and the exact finite-chord
 ## Evidence boundary
 
 AF-563's universal \`rho\` is an asymptotic **relative** statement for a different calibrated prime-tail response, not a Xi sample bound. XF-191 covers one **known** radius, one displacement, and available complex observations, not unknown support or actual Xi-zero information. A lower bound inside the explicitly restricted \`x_r\` family must not be claimed for unrestricted holomorphic acquisition. This proposed transfer is neither proved nor an RH implication.
+
+## Research disposition
+
+Outcome: narrowed
+
+Resolved by:
+- [[research/xi_flow/findings/XF-192-unknown-radius-jacobi-probes-expose-exponential-gain-loophole.md]]
+
+An unrestricted raw absolute-noise single sample exists for any finite known candidate set, but only by using the exponentially amplified reciprocal channel. For candidates {n,n^2}, every restricted scale r <= exp(3*pi^2*alpha*n^4/32) is blind to at least one radius in a uniform chord norm. A lower bound on sample count under gain-normalized noise and physically available Xi data remains unproved.
