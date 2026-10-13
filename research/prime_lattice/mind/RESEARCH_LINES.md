@@ -73,3 +73,19 @@ The adversarial boundary remains load-bearing. Translation stationarity is a mod
 The representation problem is now sharply separated from the number-theoretic one. PL-429--PL-432 show how the oriented sector can be observed through character-side vertical modulation; PL-437 compresses it to two coordinates; PL-438 identifies the exact strict-branch feasible ellipse; PL-439 realizes those coordinates as real signed-residue energy differences; PL-440 resolves their symmetry types; PL-441 identifies the exact stationary cross-section and the operator-norm tolerance for deviations from it; and PL-442 supplies a canonical covariance-preserving stationary projection plus an exact anisotropy budget. None of these results supplies the required arithmetic covariance estimate.
 
 Any proposed completion should therefore state the exact branch hypotheses (`gamma>0`, `E` positive definite where the inverse ellipse is used), the centering convention, the cyclic zero-extension/Reynolds projection, how its stationary `(m/d,f/d)` coordinates sit in the PL-441 lens, how the exact anisotropy energy compares with the spectral margin, and the unconditional arithmetic input. A scalar theorem that sees only unshifted real products in the character basis is information-theoretically incomplete; a full complex-matrix theorem is stronger than representation requires; a restricted Frobenius-best stationary fit can leave the covariance cone; and positivity of the canonical Reynolds surrogate remains weaker than the actual dephasing condition.
+
+## Do not smuggle a Dirichlet zero-free theorem into mod-5 covariance centering
+
+**Linked intuition:** `MI-064-the-mod5-first-moment-premise-is-a-zero-free-input`.
+
+PL-458 derives a normalized `t=0` mod-5 covariance close to the identity **conditionally** on both a signed second-order prime-pair remainder (B) and an integrated actual-prime first moment (A). PL-459 diagnoses the latter as independently strong: for `H=floor(X^theta)`, fixed `0<theta<1/2`, and all sufficiently large real `X`, the four-channel bound
+
+`max_(a in U_5) |int_X^(2X) P_a(y)dy-XH/4|=o(X log X)`
+
+forces `psi_a(x)-x/4=o(x^(1-theta) log x)` for every reduced residue `a mod 5`, hence excludes zeros of every Dirichlet `L(s,chi)` modulo 5 in `Re(s)>1-theta`. The exact transfer uses
+
+`int_X^(2X) P_a(y)dy=H(psi_a(2X)-psi_a(X))+O(H(H+1)log X)`,
+
+so both the all-`X` quantifier and `theta<1/2` boundary tariff matter. Assuming (A) for fixed exponents tending to `1/2` is equivalent, using classical explicit formulae and functional equations, to joint GRH modulo 5 (including ordinary RH). This is **not** a proof of (A), GRH or RH, and uses none of (B).
+
+The remaining mod-5 image-cone question must therefore not treat (A) as an independently innocuous centering estimate. Find a source-derived centering/cancellation identity or a directly complex-polarized covariance-scale lower frame that certifies the PL-438/PL-441 cone **without** first assuming the PL-459 zero-free gate; if using another moment input, explicitly test whether its all-`X` strength again forces Dirichlet zero exclusion. Neither PL-458's singular-series model nor its conditional covariance transfer supplies such an input.
