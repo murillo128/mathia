@@ -456,3 +456,11 @@ Only sources that materially support, delimit, or redirect stored `PL-*` finding
 
 117. **Colin McDiarmid**, “On the method of bounded differences,” in *Surveys in Combinatorics, 1989*, London Mathematical Society Lecture Note Series **141**, Cambridge University Press, 1989, pp. 148–188. DOI: https://doi.org/10.1017/CBO9781107359949.008.
      - Role: standard concentration theorem for independent bounded-influence choices. PL-457 uses it to select one atom per residue per logarithmic block with uniform shifted-pair **upper bounds** simultaneously over all shifts. This construction is not a theorem about actual primes.
+
+## Mod-5 weighted singular-series sums and short-interval covariance models
+
+118. **Hugh L. Montgomery, Kannan Soundararajan**, “Primes in short intervals,” *Communications in Mathematical Physics* **252** (2004), 589–617. arXiv: https://arxiv.org/abs/math/0409258.
+     - Role: classical singular-series triangular-covariance and \(H\log H\) correction background for PL-458; this is not an unconditional variance asymptotic for the actual primes or for each mod-5 channel.
+
+119. **Vivian Z. Kuperberg**, “Sums of singular series along arithmetic progressions and with smooth weights,” *International Journal of Number Theory* **21**(1) (2025), 53–74. DOI: https://doi.org/10.1142/S1793042125500046. arXiv: https://arxiv.org/abs/2301.06095.
+     - Role: primary prior art for progression-constrained and weighted singular-series sums used to calibrate PL-458's explicit modulo-5 triangular decomposition. The claimed four-channel matrix transfer is conditional on separate actual-prime covariance-precision hypotheses.
