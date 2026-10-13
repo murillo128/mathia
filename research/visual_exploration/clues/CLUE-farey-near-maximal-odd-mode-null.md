@@ -1,7 +1,7 @@
 ---
 id: CLUE-visual-exploration-farey-near-maximal-odd-mode-null
 type: research-clue
-status: proposed
+status: accepted
 origin: master-researcher
 target_line: visual_exploration
 based_on:
@@ -37,3 +37,10 @@ Compute the expected total and each band expectation for the **new** unreflected
 ## Evidence boundary
 
 FD-323 concerns only labeled-edge **artificial** reassemblies, not actual alternative Farey sequences; `3/pi²` is neither a universal bound for all three-break constructions nor an RH-related constant. VIS-447's normalized total-variation bound does not control an arbitrary vanishing null-band denominator. The near-maximal odd-only spectrum follows from a prescribed nested control limit; no genuinely selected Farey low-band anomaly, valid transfer of reflected expectations, arithmetic source-order theorem, or RH implication follows from it. This clue remains untriaged, distinct from the already accepted general Farey–Visual investigation.
+
+
+## Research disposition
+
+Accepted. VIS-449 derives the FD-323 near-maximal family's exact even-parity leakage and a conditional spectral transition at mode \(m\asymp k\): total even energy fraction is asymptotic to \(1/k\), while the normalized even-mode distribution converges after rescaling \(m/k\) to \((1-\cos 2\pi x)^2/(\pi^2x^2)\,dx\). The odd-only limit therefore cannot be used with a reflected even-mode null denominator; doing so fabricates a parity/normalization anomaly. This is a positive scope-and-plausibility triage, not acceptance of a genuine Farey arithmetic signal.
+
+The unresolved decisive test remains a predeclared, full-mode and parity-conditioned **model-specific** null comparison against genuine Farey and the distinct reflected FD-319 control, with separate total/band expectations, appropriate \(E_p/T_p\) and \(k\)-dependent error gates, and an independent source-natural ordering constraint. No abnormal genuine Farey limiting \(S_q\), general three-break ceiling, or RH implication has been established. Canonical quantitative evidence: research/visual_exploration/findings/VIS-449-farey-near-maximal-even-parity-boundary-layer.md.
