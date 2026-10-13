@@ -179,6 +179,57 @@ scaled form
 \]
 Using \(Ab=\lambda^2/2\) gives exactly (1).
 
+## 3a. Rigidity of every asymptotically sharp triple
+
+**Theorem A' (near-extremizer classification).** Fix \(0<\lambda\le1\) and write \(L_j=\pi\lambda R_j\to\infty\). Suppose \(u_j,v_j\ge0\), \(w_j=u_j+v_j\le L_j\), and
+\[
+ L_j^4\big(k(u_j)^2+k(v_j)^2+k(w_j)^2\big)
+ \longrightarrow 6A^2b^2.
+ \tag{10a}
+\]
+Then
+\[
+ \frac{w_j}{L_j}\to1,\qquad
+ \frac{u_j}{L_j}\to\frac12,\qquad
+ \frac{v_j}{L_j}\to\frac12.
+ \tag{10b}
+\]
+Furthermore, there are positive integers \(n_j,m_j\to\infty\) such that
+\[
+ \boxed{\quad
+ u_j=n_j\pi+\frac{3b}{4n_j\pi}+o(L_j^{-1}),\qquad
+ v_j=m_j\pi+\frac{3b}{4m_j\pi}+o(L_j^{-1}).\quad}
+ \tag{10c}
+\]
+Thus the two gaps of every asymptotically optimal triple are almost equal, fill the available span, and have the same first-order phase shift relative to their nearest multiples of \(\pi\). The result applies to *any* asymptotically sharp family, not only to exact minimizers of the compact problem.
+
+**Proof.** The compactness and boundary-exclusion argument in Section 3 uses only the bound in (7), not exact minimization. It therefore applies to the family in (10a): along every subsequence one can extract limits \(\alpha,\beta,d,x,y,z\) satisfying (8)--(9), with \(\alpha,\beta>0\), \(\alpha+\beta=1\) and \(0<d\le1\). Put \(t=\alpha\beta\), \(B=b(t^{-1}-1)\), and
+\[
+ P=\left(\frac{x}{\alpha^2},\frac{y}{\beta^2},z\right),
+ \qquad a=(-\alpha,-\beta,1).
+\]
+Equation (8) says \(a\cdot P=B\). Orthogonal projection onto the normal \(a\) gives the *exact* Pythagorean identity
+\[
+ \|P\|^2=
+ \frac{B^2}{1+\alpha^2+\beta^2}
+ +\left\|P-\frac{B}{1+\alpha^2+\beta^2}a\right\|^2
+ =
+ \frac{b^2(1-t)}{2t^2}
+ +\left\|P-\frac{B}{1+\alpha^2+\beta^2}a\right\|^2.
+ \tag{10d}
+\]
+Because \(0<t\le1/4\), the first term is at least \(6b^2\), with equality *only* at \(t=1/4\). Inserting (10d) into (9) and comparing with the assumed sharp limit (10a) forces simultaneously \(d=1\), \(\alpha=\beta=1/2\), and vanishing of the orthogonal remainder. At those parameters \(B=3b\) and \(1+\alpha^2+\beta^2=3/2\), so \(P=(-b,-b,2b)\). Hence \(x=y=-b/4\) and \(z=2b\).
+
+The boundedness of \(H(u_j),H(v_j)\) together with \(u_j,v_j\to\infty\) gives \(\sin u_j,\sin v_j\to0\). Choose the nearest integer multiples \(n_j\pi,m_j\pi\), and set \(\delta_j=u_j-n_j\pi\), \(\epsilon_j=v_j-m_j\pi\). Then \(\delta_j=O(u_j^{-1})\) and \(\epsilon_j=O(v_j^{-1})\). With the signs removed as in Section 3,
+\[
+ (-1)^{n_j}H(u_j)
+   =u_j\sin\delta_j-b\cos\delta_j
+   =u_j\delta_j-b+o(1)\to-b/4,
+\]
+and analogously \(v_j\epsilon_j\to3b/4\). Since \(u_j,v_j\sim L_j/2\), replacing \(u_j,v_j\) by \(n_j\pi,m_j\pi\) in these denominators incurs only \(o(L_j^{-1})\); this gives (10c). Every convergent subsequence has the same forced limiting parameters, so the full sequence satisfies (10b)--(10c). Conversely, the construction in Section 2 attains this phase-locked geometry and the sharp coefficient.
+
+**Boundary of use.** The rigidity is at the artificially free *finite real-frequency* minimization interface, not a statement that zeta ordinates obey or avoid the displayed phase conditions. Excluding these near-extremizers arithmetically would require an independent source-controlled ordinate-spacing input; the off-line indefinite blocks remain untreated.
+
 ## 4. Cost of creating an exact smooth orthogonal triple
 
 **Lower bound.** Wang's exact second-variation identity is
