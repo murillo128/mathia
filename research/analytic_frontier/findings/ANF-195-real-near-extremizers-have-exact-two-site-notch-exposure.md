@@ -1,6 +1,6 @@
 # ANF-195 — Real near-extremizers have exactly the two-site notch-exposure envelope
 
-**Status:** EXACT-DERIVED + SHARP-REAL-ENVELOPE + ZERO-SET-PACKING + SOURCE-SPECIFIC-LOCALIZATION. This is a theorem for real conjugation-invariant multisets only, not the unrestricted complex near-extremizer envelope of ANF-099.
+**Status:** EXACT-DERIVED + SHARP-REAL-ENVELOPE + ZERO-SET-PACKING + SOURCE-SPECIFIC-LOCALIZATION + POSITIVE-FOURIER-PROFILE-CLASS + FINITE-EXCESS-MODULUS. This is a theorem for real conjugation-invariant multisets only, not the unrestricted complex near-extremizer envelope of ANF-099.
 
 ## 1. Sharp statement for every fixed triangular notch
 
@@ -191,9 +191,117 @@ h_\eta(\{0,r\})=\Phi_\eta(0)+\Phi_\eta(r).
 \]
 Choosing a maximizing zero gives equality in (16), completing (1).
 
-## 5. Relevance, prior art and audit boundary
 
-The exact two-site equality class and sum-free Montgomery--Taylor zero set are existing Mathia results (ANF-087), based on the classical extremizer and Lamzouri's positive Hilbert-space inequality already anchored in SOURCES.md. The scalar near-extremizer envelope is ANF-099; ANF-081 previously certified one improving notch against *all* real multiplicity profiles, while ANF-105--ANF-106 supply related profile-decoupling and bounded-strip localization. The **new local conclusion** is the exact real-restricted all-cardinality envelope (1), not a new classical pair-correlation, point-process or zero-free theorem. The proof adds a direct local matching extraction from small positive \(K^2\) excess, with a source-paid cell-occupancy tail, so no new external theorem is load-bearing. The relevant external literature audit by zero-set packing, near-extremal positive-type pair energies and Montgomery--Taylor notch language did not identify a direct version; this is not a global novelty claim.
+## 5. Positive-Fourier profile class and a finite-excess envelope
+
+The two-site mechanism is not tied to a triangular notch. Let \(\phi\) be any **fixed**, real, even, integrable profile satisfying \(0\le\phi\le J_0\) almost everywhere, and write \(\Phi=\widehat\phi\). Assume
+
+\[
+\Phi(t)\ge0\quad(t\in\mathbb R),\qquad
+\sum_{n\in\mathbb Z}
+\sup_{|s-nh|\le h}\Phi(s)<\infty
+\tag{18}
+\]
+
+for some sufficiently small \(h>0\) with
+\(\kappa:=\inf_{|t|\le h}K(t)^2>0\).
+In particular, (18) holds if \(\Phi(t)=O((1+|t|)^{-1-\delta})\) for some \(\delta>0\). Define \(h_\phi(W)\) and \(\beta_\phi^{\mathbb R}\) as in section 1, replacing \(\phi_\eta\) by \(\phi\), and put
+
+\[
+M_\phi:=\max_{r\in Z_+(K)}\Phi(r).
+\]
+The maximum exists because the positive zeros \(r_n\to\infty\) are discrete, \(\Phi(r_n)\to0\), and \(\Phi\ge0\) (if every value vanishes, any zero maximizes). Then
+
+\[
+\boxed{\displaystyle
+\beta_\phi^{\mathbb R}=\Phi(0)+M_\phi.}
+\tag{19}
+\]
+
+There is also a **uniform finite-excess inequality**. For \(T>4h\) let
+
+\[
+\omega_{\Phi,h}(T):=
+\sum_{\substack{n\in\mathbb Z\\|n|>T/h-1}}
+\sup_{|s-nh|\le h}\Phi(s),
+\qquad \omega_{\Phi,h}(T)\longrightarrow0.
+\tag{20}
+\]
+For any \(\xi>0\), compactness and the sum-free zero-set result of ANF-087 allow a number
+\(\gamma=\gamma(T,\xi,\Phi,K)>0\) such that
+
+\[
+\gamma<c_T,\qquad
+0<|t|\le T,\ K(t)^2\le\gamma
+\ \Longrightarrow\ \Phi(t)\le M_\phi+\xi,
+\tag{21}
+\]
+where \(c_T>0\) is defined by (12). For **every** nonempty finite real multiset \(W\), of arbitrary size, span and multiplicities, write \(e=e(W)\ge0\). Then
+
+\[
+\boxed{\displaystyle
+h_\phi(W)\le
+\left[
+\sqrt{\Phi(0)+M_\phi+\xi+
+          \omega_{\Phi,h}(T)(1+e/\kappa)}
++\sqrt{(3+2/\gamma)e}
+\right]^2.}
+\tag{22}
+\]
+
+**Proof.** The integer diagonal surplus and positive \(K^2\) terms in (2) do not depend on the notch. Apply exactly the whole-site deletion in section 2 at threshold \(\gamma\), obtaining \(W=G\sqcup B\) and
+\[
+L(B)\le(2+2/\gamma)\Delta,\qquad
+E_\phi(B)\le E_0(B)\le L(B)+\Delta
+\le(3+2/\gamma)\Delta.
+\tag{23}
+\]
+Here \(E_\phi=\int\phi|S|^2\), and the first inequality for \(E_\phi\) uses pointwise domination \(0\le\phi\le J_0\), not merely Fourier positivity.
+
+For the good sites, the cell-mass argument (10) remains
+\(\sum_k M_k^2\le L(G)+\Delta/\kappa\).
+If \(x_i\) lies in cell \(k\) and \(x_j\) in cell \(k+n\), their distance differs from \(nh\) by at most \(h\). A pair at distance \(>T\) necessarily has \(|n|>T/h-1\). Therefore the ordered far-pair energy, including both orientations, satisfies
+
+\[
+2\!\!\sum_{\substack{i<j\ {\rm in}\ G\\|x_i-x_j|>T}}
+m_im_j\Phi(x_i-x_j)
+\le\omega_{\Phi,h}(T)\sum_k M_k^2
+\le\omega_{\Phi,h}(T)\bigl(L(G)+\Delta/\kappa\bigr).
+\tag{24}
+\]
+
+By (12) and (21), the near graph is still a matching and each of its edges has \(\Phi(x_i-x_j)\le M_\phi+\xi\). Equation (14), with \(\Phi\) in place of \(\Phi_\eta\), consequently gives
+
+\[
+E_\phi(G)\le
+(\Phi(0)+M_\phi+\xi)L(G)
++\omega_{\Phi,h}(T)(L(G)+\Delta/\kappa).
+\tag{25}
+\]
+The \(L^2(\phi\,d\alpha)\) triangle inequality for \(S_W=S_G+S_B\), (23), \(L(G)\le L(W)\), and \(\Delta=eL(W)\) prove (22). Let \(e\downarrow0\) at fixed \(T,\xi,\gamma\), then \(T\to\infty\) and \(\xi\downarrow0\). This proves the upper bound in (19) uniformly over all real configurations; the real two-site equality configurations \(W=\{0,r\}\) attain \(\Phi(0)+\Phi(r)\) at \(e=0\), proving sharpness. No new zero-set or compactness theorem is assumed.
+
+The admissible cone contains genuinely nontriangular profiles. If \(f\ge0\) is nonzero, even and \(C_c^\infty(-\eta/2,\eta/2)\), \(0<\eta<1\), take
+\[
+\phi=c(f*\widetilde f),\quad \widetilde f(u)=f(-u),\quad
+\Phi(t)=c|\widehat f(t)|^2\ge0,
+\tag{26}
+\]
+with \(c>0\) small enough that \(\phi\le J_0\). This is possible because \(J_0>0\) on \([-\eta,\eta]\), and \(\Phi\) decays faster than any power. For positive mixtures that still satisfy domination and (18), the sharp formula reads
+\[
+\beta_{\sum_j a_j\phi_j}^{\mathbb R}
+=\sum_j a_j\Phi_j(0)
++\max_{r\in Z_+(K)}\sum_j a_j\Phi_j(r)
+\le\sum_j a_j\beta_{\phi_j}^{\mathbb R}
+\quad(a_j\ge0).
+\tag{27}
+\]
+Thus optimizing a *fixed real* notch shape uses a shared zero location, not separate optimal locations for its components.
+
+**Boundary and novelty.** Equations (19)--(27) strengthen the same real two-site envelope claim from triangular notches to a summable positive-Fourier profile class and expose a finite-excess bound. They reuse the ANF-087 sum-free zeros and ANF-195 deletion/matching proof; they do not establish a new classical zeta theorem. The summable local Fourier envelope is a sufficient hypothesis, not a claimed necessity. The profile is fixed before \(e\downarrow0\): neither \(\gamma(T,\xi)\) nor the proof is asserted uniform for profile families with changing support or Fourier tails. Most importantly, the extension remains **real-only**; it does not control the unrestricted complex near-extremizer envelope in ANF-099 or supply an improved unconditional critical-zero proportion.
+
+## 6. Relevance, prior art and audit boundary
+
+The exact two-site equality class and sum-free Montgomery--Taylor zero set are existing Mathia results (ANF-087), based on the classical extremizer and Lamzouri's positive Hilbert-space inequality already anchored in SOURCES.md. The scalar near-extremizer envelope is ANF-099; ANF-081 previously certified one improving notch against *all* real multiplicity profiles, while ANF-105--ANF-106 supply related profile-decoupling and bounded-strip localization. The **local conclusions** are the exact real-restricted all-cardinality envelope (1), its positive-Fourier extension (19), and the finite-excess modulus (22), not a new classical pair-correlation, point-process or zero-free theorem. The proof adds a direct local matching extraction from small positive \(K^2\) excess, with a source-paid cell-occupancy tail, so no new external theorem is load-bearing. The relevant external literature audit by zero-set packing, near-extremal positive-type pair energies and Montgomery--Taylor notch language did not identify a direct version; this is not a global novelty claim.
 
 To falsify (1), check the integer multiplicity surplus and the coefficient \(2m_i m_j\) in (2)--(3), the weighted incident-energy identity before discarding exceptional sites, the positivity/decay of \(\widehat{\phi_\eta}\), the \(\ell^2\) occupancy estimate (10), the compact no-zero-triple implication (12), and the matching normalization \(2m_i m_j\le m_i^2+m_j^2\). The order of limits is essential: first \(e\to0\) with \(T,\xi,\gamma\) fixed, then \(T\to\infty\), then \(\xi\to0\).
 
