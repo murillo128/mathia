@@ -242,3 +242,9 @@ This file records durable literature dependencies used to support or falsify fin
 
 - NIST Digital Library of Mathematical Functions, **§24.8, Fourier series of Bernoulli polynomials**, https://dlmf.nist.gov/24.8, and **§2.10, Euler--Maclaurin summation**, https://dlmf.nist.gov/2.10. Role: authoritative formulas for the Fourier series of periodic Bernoulli polynomials and the Euler--Maclaurin asymptotic machinery; anchors the classical Poisson/Bernoulli ingredients and coefficient checks for PC-431.
 - Luca Brandolini, Leonardo Colzani, Bianca Gariboldi, Giacomo Gigante and Alessandro Monguzzi, **Euler--Maclaurin Summation Formula on Polytopes and Expansions in Multivariate Bernoulli Polynomials**, *Journal of Fourier Analysis and Applications* **29** (2023), article 33. DOI: 10.1007/s00041-023-10011-9. Role: modern general treatment of periodization and Bernoulli polynomial expansions; neighboring prior art, not a source for the specific Prime-Circle Hilbert--Schmidt constants in PC-431.
+
+## Prime-log uniqueness and sharp strip envelopes
+
+- Peter L. Duren, **Theory of \(H^p\) Spaces**, Academic Press, 1970; Dover reprint, 2000. Role: standard bounded-holomorphic zero-set and Blaschke-product theory behind the prime-log uniqueness theorem of PC-433 and the explicit below-threshold annihilators of PC-434.
+- Reinhold Remmert, **Classical Topics in Complex Function Theory**, Springer Graduate Texts in Mathematics 172 (1998). DOI: 10.1007/978-1-4757-2956-6. Role: classical holomorphic zero-set/Blaschke condition used on the half-plane image of prime logarithms in PC-433--PC-434.
+- Raymond E. A. C. Paley and Norbert Wiener, **Fourier Transforms in the Complex Domain**, American Mathematical Society Colloquium Publications 19 (1934). DOI: 10.1090/coll/019. Role: classical strip Fourier analyticity/decay relation; PC-434 proves its needed weighted inverse-transform estimate by direct contour shifting.
