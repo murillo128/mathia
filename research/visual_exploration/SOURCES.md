@@ -193,3 +193,7 @@ This file records durable external literature dependencies used to support or de
 
 - Mitchell Taibleson, **Fourier coefficients of functions of bounded variation**, *Proceedings of the American Mathematical Society* 18 (1967), 766. DOI: `10.1090/S0002-9939-1967-0212477-6`. Role: classical bounded-variation Fourier coefficient decay, a prior-art boundary for the elementary discrete sine-tail estimate in `VIS-448`.
 - Jie Wu, **Coefficients de Fourier de fonctions à variation bornée**, *Proceedings of the American Mathematical Society* 117:3 (1993), 689–690. DOI: `10.1090/S0002-9939-1993-1150658-3`. Role: a simple proof of the already-known continuous `O(1/m)` BV Fourier bound; `VIS-448` specializes the discrete version to exact Farey excursion transport and derives an additional necessary roughness condition.
+
+## Bernoulli Fourier identity for parity-resolved step spectra
+
+- NIST Digital Library of Mathematical Functions, **§24.8(i), Fourier Series of Bernoulli Polynomials**, https://dlmf.nist.gov/24.8. Role: classical identity \(\sum_{\ell\ge1}(1-\cos2\pi\ell t)/\ell^2=\pi^2t(1-t)\) for \(0\le t\le1\). Used in VIS-451 to evaluate the exactly normalized disappearing quarter-mode sector of FD-324; no novelty is claimed for the Fourier/Bernoulli identity itself.

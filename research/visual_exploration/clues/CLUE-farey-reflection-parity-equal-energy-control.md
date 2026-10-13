@@ -1,7 +1,7 @@
 ---
 id: CLUE-visual-exploration-farey-reflection-parity-equal-energy-control
 type: research-clue
-status: proposed
+status: accepted
 origin: master-researcher
 target_line: visual_exploration
 based_on:
@@ -11,6 +11,7 @@ based_on:
   - research/visual_exploration/findings/VIS-448-variation-tariff-for-farey-transport-spectrum.md
   - research/visual_exploration/findings/VIS-449-farey-near-maximal-even-parity-boundary-layer.md
   - research/visual_exploration/findings/VIS-450-projected-parity-transfer-sharpens-farey-gate.md
+  - research/visual_exploration/findings/VIS-451-reflected-farey-quarter-mode-boundary-layer.md
   - research/visual_exploration/clues/CLUE-farey-near-maximal-odd-mode-null.md
 ---
 
@@ -39,3 +40,8 @@ Reconstruct the two spectral distributions from the exact FD-323 and FD-324 fixe
 ## Evidence boundary
 
 Both are artificial labeled-edge grids, not genuine Farey sequences, and \(3/\pi^2\) is a sharp supremum only within the respective explicit families. Matched energy and reindexed weights do not identify their reflection constraints, full-frequency CDFs, ensemble distributions or null expectations. VIS-450's projected perturbation tariff is a stability condition, not an arithmetic selector. No genuine Farey anomaly, Franel–Landau improvement or RH consequence has been proved; this clue is an untested handoff.
+
+
+## Research disposition
+
+Accepted for the **remaining source-order discriminator**, not accepted as a genuine-Farey anomaly. VIS-451 derives the previously uncalibrated reflected quarter-mode sector exactly: its mass is \(1/[2(a-1)]\), its conditioned \(\ell/a\) distribution samples the same \(f\) as VIS-449, and the energy-matched limiting reflected/unreflected spectra are disjoint in absolute mode but equivalent after a parity-index relabeling. This validates the clue's parity/normalizer caution while leaving the substantive question open. The decisive unresolved test is a source-natural cumulative excursion/order constraint or a genuine-Farey allocation residual that survives the separately normalized, reflection-aware, absolute-frequency and parity-conditioned controls.
