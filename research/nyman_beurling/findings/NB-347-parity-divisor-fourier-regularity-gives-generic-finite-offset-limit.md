@@ -61,6 +61,29 @@ Thus the normalized adjacent source coefficient is finite for almost every limit
 \]
 This does **not** assert that \(\mathcal L(t)\ne0\) for every differentiability phase.
 
+
+**Positive-measure source nonvanishing.** Put
+\[
+\mu=\frac{5\pi^2}{1152},\qquad
+M_0^2=\frac{\pi^2(27200-521\pi^2)}{31334400},\qquad
+p_0=\frac{\mu^2}{4M_0^2}>0.066.
+\]
+There is a measurable set \(\mathcal A\subset(-1/2,1/2)\) of
+Lebesgue measure at least \(p_0\), consisting of differentiability
+phases of \(\mathfrak D\), on which
+\(\mathcal L(t)\le-\mu/2<0\). Hence **without assuming pointwise
+nonvanishing** of the limit, for every \(t\in\mathcal A\), every
+sequence of integers \(a_q\ge2\), and every \(n_q\ge q\),
+\[
+\boxed{\displaystyle
+\liminf_{q\to\infty}\frac{m_q\sqrt{\log q}}q
+\|E_{n_q,m_q}\|
+\ge\frac{5\pi^2}{2304}\sqrt{\frac2{\log2}}>0.}
+\tag{4a}
+\]
+This is a positive-measure statement, not an assertion of nonvanishing
+at every irrational or almost every phase.
+
 ## Parity-divisor spectrum and exact Sobolev energy
 
 NB-339(5) records the classical absolutely convergent Fourier series
@@ -110,6 +133,92 @@ In one dimension \(H^1(\mathbb T)\) has an absolutely continuous
 representative and almost-everywhere ordinary derivative, proving (2).
 The exact norm is a property of the intrinsic arithmetic phase profile,
 not a Nyman target norm.
+
+## Positive-measure phase certificate
+
+The conditional nonzero-limit consequence (4) is realized on a
+quantitatively positive measure of phases. The proof requires only
+the exact Fourier energy above and the already-established physical
+witness estimate; it does not require any assumed differentiability
+at rational cusps.
+
+By (1), \(\mathfrak D\) has mean \(H\) on the circle. It is even
+and periodic, and direct evaluation gives
+\[
+\mathfrak D(1/2)=\frac14\sum_{\substack{k\ge1\\k\ {\rm odd}}}
+\frac1{k^2}=\frac{\pi^2}{32},\qquad
+\Delta:=\mathfrak D(1/2)-H=\frac{5\pi^2}{288}.
+\tag{11a}
+\]
+Integrating by parts on \([-1/2,1/2]\), using the absolutely
+continuous representative furnished by (2), shows
+\[
+\int_{-1/2}^{1/2} t\mathfrak D'(t)\,dt
+=\mathfrak D(1/2)-H=\Delta,\qquad
+\int_{-1/2}^{1/2}\mathcal L(t)\,dt
+=-\frac{\Delta}{4}=-\mu.
+\tag{11b}
+\]
+
+The full variance of the periodic profile also has a closed form:
+\[
+V:=\int_{-1/2}^{1/2}(\mathfrak D(t)-H)^2\,dt
+=\frac1{2\pi^4}\sum_{j\ge1}\frac{\sigma_{\pm}(j)^2}{j^4}
+=\frac{371\pi^4}{6609600}.
+\tag{11c}
+\]
+To evaluate the absolutely convergent Dirichlet series, use
+\(\sigma_{\pm}(2^a u)=(a-1)\tau(u)\) for \(u\) odd, as in (6).
+At exponent \(4\), replacing the ordinary divisor-square Euler
+factor at \(2\) multiplies
+\(\zeta(4)^4/\zeta(8)\) by
+\[
+\frac{\sum_{a\ge0}(a-1)^2/16^a}
+{\sum_{a\ge0}(a+1)^2/16^a}
+=\frac{53}{68}.
+\]
+Parseval then gives (11c), including its exact normalization.
+
+Expand the square of
+\(\mathcal L=(\mathfrak D-H)/2-t\mathfrak D'/4\).
+The cross term obeys
+\[
+\int_{-1/2}^{1/2}t(\mathfrak D-H)\mathfrak D'\,dt
+=\frac{\Delta^2-V}{2}.
+\]
+The integration by parts is justified because
+\((\mathfrak D-H)^2\) is absolutely continuous. Using
+\(|t|\le1/2\) and the exact derivative energy (2) yields
+\[
+\begin{aligned}
+\|\mathcal L\|_{L^2(-1/2,1/2)}^2
+&=\frac{3V}{8}-\frac{\Delta^2}{8}
++\frac1{16}\int_{-1/2}^{1/2}t^2|\mathfrak D'(t)|^2\,dt\\
+&\le \frac{3V}{8}-\frac{\Delta^2}{8}
++\frac1{64}\frac{\pi^2}{18}
+=M_0^2.
+\end{aligned}
+\tag{11d}
+\]
+In particular the explicit \(M_0^2\) in the claim is positive;
+numerically it is about \(0.006948\), while
+\(\mu\) is about \(0.042837\).
+
+Let \(A_0=\{t:\mathcal L(t)\le-\mu/2\}\), with the
+inequality interpreted for the almost-everywhere weak derivative.
+Since \(\int\mathcal L=-\mu\),
+\[
+\mu=-\int\mathcal L
+\le\int_{A_0}|\mathcal L|+\frac\mu2
+\le M_0\sqrt{|A_0|}+\frac\mu2.
+\]
+Thus \(|A_0|\ge\mu^2/(4M_0^2)=p_0>0.066\).
+Intersecting \(A_0\) with the full-measure differentiability set
+preserves the bound and defines \(\mathcal A\). Formulae (3)--(4)
+now give (4a) for every \(t\in\mathcal A\), with the same freedom
+in the dilation sequence as before. The proof does not determine
+whether the exceptional zero set of \(\mathcal L\) has positive or
+zero measure, and it supplies no target-approximation estimate.
 
 ## Uniform moving-offset reduction
 
@@ -248,7 +357,10 @@ profile has an **exact finite Sobolev derivative energy**, and the
 physical adjacent operator coefficient has a finite explicit
 normalized limit at almost every irrational limiting offset, with
 no cap on the dilation multiple. Rational logarithmic resonances
-remain genuine but exceptional. This is a source/observer
+remain genuine but exceptional. The coefficient is now proved
+nonzero on a set of phases of measure at least 0.066, with a uniform
+scaled physical-norm floor, without asserting almost-everywhere
+nonvanishing. This is a source/observer
 classification only: it supplies neither target occupation,
 inverse-section conditioning, an asymptotic bound on
 \(\operatorname{dist}(\mathbf1,U_n)\), nor an RH implication.
