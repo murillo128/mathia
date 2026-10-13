@@ -1,6 +1,6 @@
 # ANF-195 — Real near-extremizers have exactly the two-site notch-exposure envelope
 
-**Status:** EXACT-DERIVED + SHARP-REAL-ENVELOPE + ZERO-SET-PACKING + SOURCE-SPECIFIC-LOCALIZATION + POSITIVE-FOURIER-PROFILE-CLASS + FINITE-EXCESS-MODULUS. This is a theorem for real conjugation-invariant multisets only, not the unrestricted complex near-extremizer envelope of ANF-099.
+**Status:** EXACT-DERIVED + SHARP-REAL-ENVELOPE + ZERO-SET-PACKING + SOURCE-SPECIFIC-LOCALIZATION + POSITIVE-FOURIER-PROFILE-CLASS + FINITE-EXCESS-MODULUS + AUTOMATIC-FOURIER-TAIL. This is a theorem for real conjugation-invariant multisets only, not the unrestricted complex near-extremizer envelope of ANF-099.
 
 ## 1. Sharp statement for every fixed triangular notch
 
@@ -192,20 +192,43 @@ h_\eta(\{0,r\})=\Phi_\eta(0)+\Phi_\eta(r).
 Choosing a maximizing zero gives equality in (16), completing (1).
 
 
-## 5. Positive-Fourier profile class and a finite-excess envelope
+## 5. Automatic Fourier-tail control and a finite-excess envelope
 
-The two-site mechanism is not tied to a triangular notch. Let \(\phi\) be any **fixed**, real, even, integrable profile satisfying \(0\le\phi\le J_0\) almost everywhere, and write \(\Phi=\widehat\phi\). Assume
-
+The two-site mechanism is not tied to a triangular notch. Let \(\phi\) be any **fixed**, real, even, integrable profile satisfying \(0\le\phi\le J_0\) almost everywhere, and write \(\Phi=\widehat\phi\). Assume only \(\Phi(t)\ge0\) for every real \(t\), and fix any sufficiently small \(h>0\) for which \(\kappa:=\inf_{|t|\le h}K(t)^2>0\). The cellwise Fourier-tail hypothesis previously needed for the proof is **automatic**:
 \[
-\Phi(t)\ge0\quad(t\in\mathbb R),\qquad
-\sum_{n\in\mathbb Z}
-\sup_{|s-nh|\le h}\Phi(s)<\infty
+\boxed{\displaystyle
+\sum_{n\in\mathbb Z}\sup_{|s-nh|\le h}\Phi(s)<\infty.}
 \tag{18}
 \]
+No pointwise polynomial-decay or smoothness assumption on \(\phi\) is needed.
 
-for some sufficiently small \(h>0\) with
-\(\kappa:=\inf_{|t|\le h}K(t)^2>0\).
-In particular, (18) holds if \(\Phi(t)=O((1+|t|)^{-1-\delta})\) for some \(\delta>0\). Define \(h_\phi(W)\) and \(\beta_\phi^{\mathbb R}\) as in section 1, replacing \(\phi_\eta\) by \(\phi\), and put
+Here is a direct proof, including the absence of any hidden regularity condition. Since \(0\le\phi\le J_0\), the profile is bounded and supported in \([-1,1]\). For \(R>0\), Fourier inversion against a Gaussian gives
+\[
+0\le\int_{\mathbb R}\Phi(t)e^{-\pi t^2/R^2}\,dt
+=\int_{\mathbb R}\phi(u)R e^{-\pi R^2u^2}\,du
+\le\|\phi\|_\infty\le\|J_0\|_\infty.
+\tag{18a}
+\]
+As \(R\to\infty\), monotone convergence and \(\Phi\ge0\) imply
+\(\|\Phi\|_{L^1}\le\|\phi\|_\infty\). Choose a Schwartz function \(\psi\) whose Fourier transform equals one on a neighborhood of \([-1,1]\). Because the inverse Fourier transform of \(\Phi\) is supported there, the bandlimited reproduction identity holds (first distributionally and then pointwise):
+\[
+\Phi=\Phi*\psi.
+\tag{18b}
+\]
+For every fixed \(h>0\), rapid decay of \(\psi\) gives the finite constant
+\[
+C_{h,\psi}:=\sup_{y\in\mathbb R}
+\sum_{n\in\mathbb Z}\sup_{|s-nh|\le h}|\psi(s-y)|<\infty.
+\]
+Using positivity to take the integral before the discrete sum,
+\[
+\sum_{n\in\mathbb Z}\sup_{|s-nh|\le h}\Phi(s)
+\le\int_{\mathbb R}\Phi(y)
+\sum_{n\in\mathbb Z}\sup_{|s-nh|\le h}|\psi(s-y)|\,dy
+\le C_{h,\psi}\|J_0\|_\infty.
+\tag{18c}
+\]
+This establishes (18) for **every** dominated nonnegative-Fourier profile. The argument is the standard bandlimited \(L^1\)-to-local-supremum (Wiener-amalgam) estimate, proved here in the exact normalization required for the source-energy tail. Define \(h_\phi(W)\) and \(\beta_\phi^{\mathbb R}\) as in section 1, replacing \(\phi_\eta\) by \(\phi\), and put
 
 \[
 M_\phi:=\max_{r\in Z_+(K)}\Phi(r).
@@ -297,7 +320,7 @@ with \(c>0\) small enough that \(\phi\le J_0\). This is possible because \(J_0>0
 \]
 Thus optimizing a *fixed real* notch shape uses a shared zero location, not separate optimal locations for its components.
 
-**Boundary and novelty.** Equations (19)--(27) strengthen the same real two-site envelope claim from triangular notches to a summable positive-Fourier profile class and expose a finite-excess bound. They reuse the ANF-087 sum-free zeros and ANF-195 deletion/matching proof; they do not establish a new classical zeta theorem. The summable local Fourier envelope is a sufficient hypothesis, not a claimed necessity. The profile is fixed before \(e\downarrow0\): neither \(\gamma(T,\xi)\) nor the proof is asserted uniform for profile families with changing support or Fourier tails. Most importantly, the extension remains **real-only**; it does not control the unrestricted complex near-extremizer envelope in ANF-099 or supply an improved unconditional critical-zero proportion.
+**Boundary and novelty.** Equations (19)--(27) strengthen the same real two-site envelope claim from triangular notches to a summable positive-Fourier profile class and expose a finite-excess bound. They reuse the ANF-087 sum-free zeros and ANF-195 deletion/matching proof; they do not establish a new classical zeta theorem. The summable local Fourier envelope (18) is a consequence of compact support, bounded domination and Fourier nonnegativity, not an extra hypothesis. The Fourier reproduction/amalgam estimate is classical; the local improvement is removing an artificial condition from the full real two-site envelope and its finite-excess bound. The profile is fixed before \(e\downarrow0\): neither \(\gamma(T,\xi)\) nor the proof is asserted uniform for profile families with changing support or Fourier tails. Most importantly, the extension remains **real-only**; it does not control the unrestricted complex near-extremizer envelope in ANF-099 or supply an improved unconditional critical-zero proportion.
 
 ## 6. Relevance, prior art and audit boundary
 
