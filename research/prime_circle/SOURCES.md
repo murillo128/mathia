@@ -248,3 +248,8 @@ This file records durable literature dependencies used to support or falsify fin
 - Peter L. Duren, **Theory of \(H^p\) Spaces**, Academic Press, 1970; Dover reprint, 2000. Role: standard bounded-holomorphic zero-set and Blaschke-product theory behind the prime-log uniqueness theorem of PC-433 and the explicit below-threshold annihilators of PC-434.
 - Reinhold Remmert, **Classical Topics in Complex Function Theory**, Springer Graduate Texts in Mathematics 172 (1998). DOI: 10.1007/978-1-4757-2956-6. Role: classical holomorphic zero-set/Blaschke condition used on the half-plane image of prime logarithms in PC-433--PC-434.
 - Raymond E. A. C. Paley and Norbert Wiener, **Fourier Transforms in the Complex Domain**, American Mathematical Society Colloquium Publications 19 (1934). DOI: 10.1090/coll/019. Role: classical strip Fourier analyticity/decay relation; PC-434 proves its needed weighted inverse-transform estimate by direct contour shifting.
+
+## Profinite harmonic analysis and diagram deformations
+
+- Gerald B. Folland, **A Course in Abstract Harmonic Analysis**, 2nd ed., CRC Press (2016). Role: standard compact-abelian Pontryagin duality, Haar Fourier bases and bounded-operator spectral framework; PC-443 derives the specific normalized cotangent refinement intertwiner and spectral-type distinction from PC-053.
+- Murray Gerstenhaber and Anthony Giaquinto, **Deformations associated with rigid algebras**, *Journal of Homotopy and Related Structures* **10** (2015), 437--458. DOI: 10.1007/s40062-013-0068-x. Role: classical diagram-deformation prior-art boundary relevant to the refinement-compatible marked-product classification in PC-443; not a source of its Prime-Circle-specific quotient.
