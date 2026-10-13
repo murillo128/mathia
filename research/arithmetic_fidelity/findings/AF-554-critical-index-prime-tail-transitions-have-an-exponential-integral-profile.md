@@ -147,7 +147,7 @@ AF-552 proves a fixed-index boundary dilation \(H_n'(1+)=\exp(\sum_{k<n}1/p_k)\)
 
 ## Matched generalized-prime control and the exact metric tariff
 
-Use the AF-551 source-natural finite-prefix control. Fix
+Use the AF-561 source-natural finite-prefix control. Fix
 \[
 1<c<\frac{\log7}{\log5},\qquad
 q_j=p_j^c\ (j=1,2,3),\qquad q_j=p_j\ (j\ge4).
@@ -186,13 +186,13 @@ The margin is **not** a claim of an order-one lower bound in every horizontal-re
 =(\log n)\Phi'_P(a)(1+o_K(1)).
 \tag{22}
 \]
-An input-registration error \(\eta_n\) can therefore create an order-one critical-profile perturbation unless \(\eta_n\log n\to0\). The natural resolved representation is the rescaled \(a\)-coordinate, not the unweighted input-warp distance of AF-551. Likewise (21) concerns already-formed exact relative transitions, not arbitrary additive errors in the uncalibrated raw outputs before composing with \(Q^{-1}\).
+An input-registration error \(\eta_n\) can therefore create an order-one critical-profile perturbation unless \(\eta_n\log n\to0\). The natural resolved representation is the rescaled \(a\)-coordinate, not the unweighted input-warp distance of AF-561. Likewise (21) concerns already-formed exact relative transitions, not arbitrary additive errors in the uncalibrated raw outputs before composing with \(Q^{-1}\).
 
 ## Prior art, falsification, and boundary
 
-Mertens' second theorem (including the \(O(1/\log x)\) remainder) supplies the arithmetic input; the Laplace--Stieltjes rescaling and exponential integral are classical Abelian analysis. DLMF §6.2.1 gives \(E_1\) and its integral representation. AF-550 supplies the elementary complete common-calibration quotient and AF-551--AF-552 supply the two comparison regimes. No priority is claimed for reciprocal-prime Mertens asymptotics, exponential integrals, Laplace transforms, monotone inversion, Tauberian theory, or inverse-relative distribution/registration mathematics.
+Mertens' second theorem (including the \(O(1/\log x)\) remainder) supplies the arithmetic input; the Laplace--Stieltjes rescaling and exponential integral are classical Abelian analysis. DLMF §6.2.1 gives \(E_1\) and its integral representation. AF-550 supplies the elementary complete common-calibration quotient and AF-561--AF-552 supply the two comparison regimes. No priority is claimed for reciprocal-prime Mertens asymptotics, exponential integrals, Laplace transforms, monotone inversion, Tauberian theory, or inverse-relative distribution/registration mathematics.
 
-The useful Mathia-specific delta is the **uniform double-scaling transition theorem (3)**, its critical-window phase classification, the index-only prime specialization, and the honest target-metric comparison (21)--(22). It is a third conditioning channel of the full AF-550 quotient, beyond AF-551's exponentially weak far-right residual and AF-552's infinitesimal first boundary jets.
+The useful Mathia-specific delta is the **uniform double-scaling transition theorem (3)**, its critical-window phase classification, the index-only prime specialization, and the honest target-metric comparison (21)--(22). It is a third conditioning channel of the full AF-550 quotient, beyond AF-561's exponentially weak far-right residual and AF-552's infinitesimal first boundary jets.
 
 Decisive checks and nonclaims:
 
@@ -205,4 +205,4 @@ Decisive checks and nonclaims:
 
 ## Consequence for Arithmetic Fidelity
 
-The same complete nonlocal quotient has three genuinely different observation regimes. Far-right \(s\to\infty\) recovery can be exponentially ill-conditioned (AF-551); fixed-index near-boundary first jets detect finite prefixes (AF-552); and increasing-index critical samples retain a nontrivial interior transition curve with a matched-control gap at polynomial/logarithmic **input-resolution cost**. Its apparent robustness depends on the rescaled index coordinate and on retaining the reference inverse: the source-specific part is not created by the universal tail limit. Any RH-facing downstream representation must independently preserve this window and its calibration-invariant comparison geometry before the result becomes relevant to zeros.
+The same complete nonlocal quotient has three genuinely different observation regimes. Far-right \(s\to\infty\) recovery can be exponentially ill-conditioned (AF-561); fixed-index near-boundary first jets detect finite prefixes (AF-552); and increasing-index critical samples retain a nontrivial interior transition curve with a matched-control gap at polynomial/logarithmic **input-resolution cost**. Its apparent robustness depends on the rescaled index coordinate and on retaining the reference inverse: the source-specific part is not created by the universal tail limit. Any RH-facing downstream representation must independently preserve this window and its calibration-invariant comparison geometry before the result becomes relevant to zeros.

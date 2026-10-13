@@ -14,7 +14,7 @@ P(s)=sum_p p^{-s},
 qquad
 T_n(s)=sum_{kge n}p_k^{-s},
 ]
-exactly quotient arbitrary common monotone recalibration of the tail values. AF-551 then shows that the absolute prime scale is exponentially ill-conditioned when it is read from the right-tail residual as (s	oinfty).
+exactly quotient arbitrary common monotone recalibration of the tail values. AF-561 then shows that the absolute prime scale is exponentially ill-conditioned when it is read from the right-tail residual as (s	oinfty).
 
 The same invariant profiles contain a different, source-natural carrier at the common divergence boundary (s=1). Extend (H_n) continuously by (H_n(1)=1). Then the one-sided boundary derivative exists and is
 [
@@ -36,7 +36,7 @@ p_n=rac1{log D_{n+1}-log D_n}.
 ]
 No external anchor such as (p_1=2) is needed: (D_1=1) and (D_2=e^{1/2}) already recover the first prime.
 
-This boundary carrier also has a substantially milder source-depth law than AF-551's right-tail residual. Let
+This boundary carrier also has a substantially milder source-depth law than AF-561's right-tail residual. Let
 [
 x_n>0,qquad x_nlog p_nlongrightarrow0,
 ]
@@ -59,13 +59,13 @@ s_n-1=o!left(rac1{log p_n}ight)
 ]
 to retain the reciprocal-prime signal asymptotically. This does not make the inverse problem uniformly noise-stable: the signal itself is (1/p_n), so observation error in (L_n) must shrink with the prime scale.
 
-The finite-prefix generalized-prime control used by AF-551 confirms that this is genuinely a different information channel. For
+The finite-prefix generalized-prime control used by AF-561 confirms that this is genuinely a different information channel. For
 [
 q_1=2^c,quad q_2=3^c,quad q_3=5^c,quad q_k=p_k (kge4),
 qquad
 1<c<rac{log7}{log5},
 ]
-the right-tail quotient profiles become exponentially close in AF-551's moving-tail horizontal metric, but the left-boundary dilation already separates the systems by
+the right-tail quotient profiles become exponentially close in AF-561's moving-tail horizontal metric, but the left-boundary dilation already separates the systems by
 [
 H_2'(1+)=e^{1/2},
 qquad
@@ -73,7 +73,7 @@ K_2'(1+)=e^{2^{-c}}.
 	ag{4}
 ]
 For fixed (c
-e1) this is a fixed nonzero gap. AF-551's exponential conditioning lower bound is therefore a theorem about its right-tail absolute-scale channel, not an intrinsic conditioning law for the entire full-profile quotient.
+e1) this is a fixed nonzero gap. AF-561's exponential conditioning lower bound is therefore a theorem about its right-tail absolute-scale channel, not an intrinsic conditioning law for the entire full-profile quotient.
 
 ## Prime-zeta boundary normal form
 
@@ -300,7 +300,7 @@ log K_{n+1}'(1+)-log K_n'(1+)=rac1{q_n}.
 	ag{22}
 ]
 
-Apply this to AF-551's finite-prefix control. Its first generator is (q_1=2^c), so
+Apply this to AF-561's finite-prefix control. Its first generator is (q_1=2^c), so
 [
 K_2'(1+)=e^{1/q_1}=e^{2^{-c}},
 ]
@@ -310,7 +310,7 @@ This is precisely the line-specific matched-control test required by the Arithme
 
 ## Fidelity / representation audit
 
-AF-550 established exact fidelity of the full nonlocal transition profile under unrestricted common output calibration. AF-551 showed that one decoder of the absolute scale—its right-tail exponentially small curvature—has exponentially collapsing horizontal separation from a matched control.
+AF-550 established exact fidelity of the full nonlocal transition profile under unrestricted common output calibration. AF-561 showed that one decoder of the absolute scale—its right-tail exponentially small curvature—has exponentially collapsing horizontal separation from a matched control.
 
 AF-552 identifies a second decoder already present in the same quotient object. It uses the source-natural singular boundary rather than the remote tail:
 [
@@ -338,7 +338,7 @@ A targeted search for prime-zeta inverse-tail transitions, (P^{-1})-based prime 
 
 ## Boundaries and failure modes
 
-- **The source coordinate is retained structure.** Arbitrary reparameterization of (s) would change boundary derivatives. AF-551 likewise keeps the input coordinate rather than quotienting it.
+- **The source coordinate is retained structure.** Arbitrary reparameterization of (s) would change boundary derivatives. AF-561 likewise keeps the input coordinate rather than quotienting it.
 - **The boundary is source-natural here.** For the rational prime zeta function and finite-prefix deformations, (s=1) is the common logarithmic divergence boundary. A different source need not provide the same anchor.
 - **The singular coefficient matters.** Formula (21) uses that finite-prefix controls preserve the coefficient one of (-log(s-1)). A source with a different singular order requires a separately audited normal form.
 - **Countably many dilations are retained.** Equation (2) does not claim finite-dimensional compression of the entire prime sequence.
@@ -353,10 +353,10 @@ A targeted search for prime-zeta inverse-tail transitions, (P^{-1})-based prime 
 2. Take (xdownarrow0) in (7), verify (H_n'(1+)=e^{a_n}), and check that consecutive log derivatives give exactly (1/p_n).
 3. Subtract the (n) and (n+1) equations to obtain (9) without approximation, then verify the fixed-(n) expansion (11).
 4. Use the two Mertens sums (12)--(13) to prove (15)--(20) and the diagonal law (p_nL_n(x_n)	o1) whenever (x_nlog p_n	o0).
-5. Apply (21) to AF-551's finite-prefix power control and verify the nonzero boundary-dilation gap (e^{1/2}-e^{2^{-c}}).
+5. Apply (21) to AF-561's finite-prefix power control and verify the nonzero boundary-dilation gap (e^{1/2}-e^{2^{-c}}).
 
 ## Consequence for the research line
 
-AF-551's exponential right-tail lower bound does not extend to the whole AF-550 quotient profile. The same exact transition family has a source-boundary carrier that recovers every prime through adjacent first-order dilations and separates AF-551's matched generalized-prime control by a fixed boundary gap.
+AF-561's exponential right-tail lower bound does not extend to the whole AF-550 quotient profile. The same exact transition family has a source-boundary carrier that recovers every prime through adjacent first-order dilations and separates AF-561's matched generalized-prime control by a fixed boundary gap.
 
-The remaining fidelity question is therefore downstream and target-specific: **does an RH-relevant representation preserve this boundary-dilation information, or an equivalent carrier, with a useful normed transport modulus?** A mechanism that discards the (s=1) boundary geometry may still inherit AF-551's exponential tail barrier; one that preserves a controlled boundary/global coupling must be audited on its own conditioning scale.
+The remaining fidelity question is therefore downstream and target-specific: **does an RH-relevant representation preserve this boundary-dilation information, or an equivalent carrier, with a useful normed transport modulus?** A mechanism that discards the (s=1) boundary geometry may still inherit AF-561's exponential tail barrier; one that preserves a controlled boundary/global coupling must be audited on its own conditioning scale.

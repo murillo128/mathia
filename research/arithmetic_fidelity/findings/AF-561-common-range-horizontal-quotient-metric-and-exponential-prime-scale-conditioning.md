@@ -1,4 +1,4 @@
-# AF-551 — Horizontal quotient geometry exposes exponential prime-scale conditioning
+# AF-561 — Common-range horizontal quotient metric and exponential prime-scale conditioning
 
 ## Status
 
@@ -16,7 +16,7 @@ Let \(I\) be an interval and let
 F=(f_i)_{i=1}^m,\qquad G=(g_i)_{i=1}^m
 \]
 
-be two labelled families of same-orientation diffeomorphisms from \(I\) onto target intervals, with a fixed reference branch \(i=1\). Write
+be two labelled families of same-orientation \(C^1\) diffeomorphisms \(f_i:I\to J_F\) and \(g_i:I\to J_G\), where **all branches in each family map onto that family's single full target interval** \(J_F\) or \(J_G\), with fixed reference branch \(i=1\). Write
 
 \[
 H_i^F=f_1^{-1}\circ f_i,\qquad
@@ -24,7 +24,7 @@ H_i^G=g_1^{-1}\circ g_i.
 \tag{1}
 \]
 
-Each \(H_i\) is unchanged by an arbitrary common orientation-preserving postcomposition of its family. On a compact \(I\), define
+Each \(H_i^F,H_i^G\) is an increasing diffeomorphism of \(I\) **onto all of \(I\)**: the common-range assumption makes both the relative transition and its inverse globally defined. These transitions are unchanged by arbitrary common orientation-preserving postcomposition. Define (with an extended value allowed when \(I\) is unbounded)
 
 \[
 \boxed{
@@ -38,7 +38,7 @@ d_{\rm ref}([F],[G])
 \tag{2}
 \]
 
-Within a fixed reference-orientation component, (2) is a genuine metric on the common-postcomposition quotient. It is therefore a natural way to measure the horizontal/domain displacement left after the output calibration has been removed.
+On a compact \(I\), (2) is a finite metric on the common-postcomposition quotient within a fixed reference-orientation component. On a noncompact \(I\), it is an **extended metric** (possibly infinite), restricting to an ordinary metric on every finite-distance component. It measures horizontal/domain displacement after common output calibration is removed; the moving-tail discrepancy used below is a separate, window-restricted comparison.
 
 For the prime-tail scale channel, this metric geometry exposes an exponential inverse-conditioning barrier using a source-natural matched generalized-prime control, not an arbitrary observation perturbation.
 
@@ -174,6 +174,8 @@ The exponential instability of the absolute prime scale is therefore not an arti
 
 ## Reference-gauged metric on the calibration quotient
 
+The full common-range condition is essential. Without it, even on \(I=[0,1]\), the families \(f_1=g_1=\operatorname{id}\), \(f_2(s)=s/2\), \(g_2(s)=s/3\) satisfy the weaker branchwise-diffeomorphism assumption but produce \(H_2^F(s)=s/2\), \(H_2^G(s)=s/3\). The forward comparison is \((H_2^F)^{-1}H_2^G(s)=2s/3\), whereas the reverse comparison \((H_2^G)^{-1}H_2^F(s)=3s/2\) is not defined for \(s>2/3\). Thus no symmetric global distance is defined in that broader class. The common full range rules out this defect rather than hiding it in a choice of inverse domains.
+
 For a homeomorphism \(h:I\to I\),
 
 \[
@@ -217,7 +219,7 @@ Consequently
 
 and taking the maximum over \(i\) gives the triangle inequality.
 
-Finally, \(d_{\rm ref}=0\) exactly when all relative transitions agree. By AF-550's complete-orbit theorem, that is exactly equality of the common-postcomposition orbit once the reference orientation is fixed. Thus (2) is a metric on that quotient, not merely a coordinate-dependent seminorm on raw outputs.
+Finally, \(d_{\rm ref}=0\) exactly when all relative transitions agree. By AF-550's complete-orbit theorem, that is exactly equality of the common-postcomposition orbit once the reference orientation is fixed. Thus (2) is a genuine quotient metric whenever its supremum is finite, not merely a coordinate-dependent seminorm on raw outputs. On a noncompact interval, the value \(+\infty\) is permitted between different finite-displacement components; symmetry and the triangle inequality hold in the extended sense. Because the prime-tail transitions all map \((1,\infty)\) onto itself, the registration warps used in (8)–(11) are globally defined even though their relevant measurement is restricted to \(s\ge S\).
 
 The metric is reference-gauged: changing the marked reference branch or reparameterizing the source domain changes the geometry. That is a feature, not a hidden invariance claim. In the ordered prime-tail problem, the first tail is retained provenance and supplies the declared reference.
 
@@ -359,12 +361,14 @@ J. O. Ramsay and Xiaochun Li, “Curve Registration,” Journal of the Royal Sta
 
 J. S. Marron, James O. Ramsay, Laura M. Sangalli, and Anuj Srivastava, “Functional Data Analysis of Amplitude and Phase Variation,” Statistical Science 30(4), 468–484 (2015), DOI 10.1214/15-STS524, reviews phase variation as lateral deformation distinct from amplitude variation.
 
-Filippo Santambrogio, *Optimal Transport for Applied Mathematicians*, Birkhäuser (2015), DOI 10.1007/978-3-319-20828-2, supplies standard one-dimensional monotone-rearrangement and \(L^\infty\)/supremal-transport context for (20). AF-551 also reuses the relative-distribution prior art already recorded under AF-550.
+Filippo Santambrogio, *Optimal Transport for Applied Mathematicians*, Birkhäuser (2015), DOI 10.1007/978-3-319-20828-2, supplies standard one-dimensional monotone-rearrangement and \(L^\infty\)/supremal-transport context for (20). AF-561 also reuses the relative-distribution prior art already recorded under AF-550.
 
 The metric proof, the asymptotic inversion (22), and the finite-prefix generalized-prime control are derived directly here. A targeted search did not identify this exact prime-tail quotient-conditioning statement, but absence from that search is not a novelty claim. The Arithmetic Fidelity contribution is the boundary conclusion: AF-550's exponentially weak absolute-scale carrier remains exponentially ill-conditioned in a calibration-invariant horizontal geometry and against a control that preserves the convergence boundary and all but finitely many prime norms.
 
 ## Boundaries and failure modes
 
+- **Common full target range is mandatory for the global metric.** Each branch must cover the entire same target interval as its family's reference; pairwise partially overlapping ranges do not suffice. The explicit half-range/third-range example above falsifies the weaker theorem.
+- **Noncompact domains require a finiteness qualification.** Equation (2) is an extended metric there; use finite-distance components or the explicitly symmetric moving-tail discrepancy (10), which is not asserted to be the full quotient metric.
 - **The reference branch is retained structure.** Equation (2) depends on the marked reference profile. Changing the reference is another quotient problem.
 - **The source coordinate is not quotiented.** Arbitrary reparameterization of the input variable would erase the horizontal geometry being used here.
 - **The tail discrepancy is a conditioning profile, not the whole quotient metric.** Equation (10) measures how the quotient coordinate behaves on \(s\ge S\); behavior on a bounded prefix may remain \(O(1)\).
@@ -375,7 +379,7 @@ The metric proof, the asymptotic inversion (22), and the finite-prefix generaliz
 
 ## Decisive audit tests
 
-1. Verify symmetry and the triangle inequality in (14)–(16), and verify that zero distance is exactly AF-550 orbit equality.
+1. Verify the full common-range hypothesis makes all \(H_i^F,H_i^G\) homeomorphisms \(I\to I\), check the half-range/third-range counterexample without it, and then verify symmetry, triangle inequality and AF-550 orbit separation (including extended distance on noncompact \(I\)).
 2. Substitute (17) and derive the registration bound (19) without using an output-coordinate norm.
 3. Check that (4) makes the sequence (5) strictly increasing and that finite modification leaves the convergence boundary at \(s=1\).
 4. Apply the AF-550 two-term tail expansion to (5) and verify (7), including the coefficient \(1/(c\log2)\).
@@ -386,6 +390,6 @@ The metric proof, the asymptotic inversion (22), and the finite-prefix generaliz
 
 AF-550 established that full nonlocal tail transitions escape unrestricted output calibration exactly, but left open whether the exponentially small scale carrier was merely badly expressed in a vertical output coordinate.
 
-AF-551 closes that escape negatively for the AF-550 scale channel. After quotienting common output recalibration, the rational-prime transition and a finite-prefix generalized-prime control with a fixed \(O(1)\) scale change approach one another at the exact exponential rate \((3/5)^S\) in horizontal tail registration. Recovering the absolute first log norm from that channel therefore requires an inverse condition number growing at least as \((5/3)^S\).
+AF-561 closes that escape negatively for the AF-550 scale channel. After quotienting common output recalibration, the rational-prime transition and a finite-prefix generalized-prime control with a fixed \(O(1)\) scale change approach one another at the exact exponential rate \((3/5)^S\) in horizontal tail registration. Recovering the absolute first log norm from that channel therefore requires an inverse condition number growing at least as \((5/3)^S\).
 
 The next useful representation must do more than preserve the exact transition orbit. It must retain a better-conditioned source relation—possibly a boundary/global coupling, a non-tail normalization, or another target-sensitive carrier—whose separation from matched generalized-prime controls does not collapse at the same exponential rate.
