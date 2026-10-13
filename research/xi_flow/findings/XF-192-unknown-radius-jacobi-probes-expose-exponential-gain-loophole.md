@@ -195,6 +195,63 @@ The positive result is purchased by the factor
 \quad(Q\to\infty).
 \tag{16}
 \]
+### Sharp gain-normalized visibility over all holomorphic probe scales
+
+The loss under reciprocal-gain-normalized noise is not restricted to the exponentially large design (11). Define the *explicitly chosen* row gain and normalized defect
+\[
+G_r:=\max\{1,t_r\},\qquad
+\widetilde J_{p,\tau}(r):=G_r^{-1}J_{p,\tau}(x_r).
+\]
+For every \(\alpha>0\), there is a constant \(C_\alpha\) such that, for all \(p\ge1\),
+\[
+\boxed{\quad
+\sup_{r>0}\sup_{|\tau|\le1/4}
+|\widetilde J_{p,\tau}(r)|
+\le C_\alpha p^{-1/2}.
+\quad}
+\tag{17}
+\]
+The rate is sharp for each fixed nonzero physical displacement: by XF-191, for all sufficiently large \(p\) and every \(\tau\in[-1/4,1/4]\),
+\[
+\boxed{\quad
+c_\alpha|\tau|p^{-1/2}
+\le \sup_{r>0}|\widetilde J_{p,\tau}(r)|
+\le C_\alpha p^{-1/2}.
+\quad}
+\tag{18}
+\]
+Here \(c_\alpha>0\) is independent of \(p,\tau\). For any fixed \(|\tau|\ge\tau_0>0\), the optimal one-row normalized signal is therefore \(\Theta_{\alpha,\tau_0}(p^{-1/2})\), even when the active radius is known.
+
+**Proof.** Let \(J=D+B\) be the direct/reciprocal decomposition in (6). For all \(p\ge1\), \(|\tau|\le1/4\), and \(r>0\),
+\[
+|D_{p,\tau}(x_r)|
+ \le4\exp\left(-\frac{9\alpha p^2}{16r^2}\right),
+\qquad
+\frac{|B_{p,\tau}(x_r)|}{G_r}
+ \le4\frac{t_r}{G_r}\exp[-k_r(3p/4)^2].
+\tag{19}
+\]
+If \(r\ge\alpha\), then \(G_r\ge t_r\ge2^{-1/4}\sqrt{\pi r}\) and \(k_r\ge\pi^2\alpha/2\). Consequently
+\[
+\frac{|D|}{G_r}
+ \le C_\alpha r^{-1/2}e^{-9\alpha(p/r)^2/16}
+ \le C_\alpha p^{-1/2},
+\qquad
+\frac{|B|}{G_r}\le4e^{-\kappa p^2},
+\]
+where \(\kappa=9\pi^2\alpha/32\) as in (3); the direct estimate maximizes \(u^{1/2}e^{-cu^2}\) with \(u=p/r\). If \(0<r\le\alpha\), then \(G_r\ge1\), \(t_r\le\sqrt{\pi/\alpha}\,r\), and \(k_r\ge(\pi^2/2\alpha)r^2\). Therefore
+\[
+\frac{|D|}{G_r}\le4e^{-9p^2/(16\alpha)},
+\qquad
+\frac{|B|}{G_r}
+ \le C_\alpha r e^{-9\pi^2p^2r^2/(32\alpha)}
+ \le C_\alpha/p .
+\tag{20}
+\]
+Together these bounds prove (17). XF-191, equation (3), applied to \((\eta,\zeta)=(\tau,0)\), gives \(|J_{p,\tau}(x_p)|\ge3e^{-2\alpha}|\tau|/\pi\) for large \(p\); since \(G_p\le(1+\sqrt\pi)\sqrt p\), this proves (18).
+
+Thus a single gain-normalized complex observation cannot retain an order-one *absolute* displacement-detection margin as \(p\to\infty\), even with a support oracle and unrestricted \(r\). Any finite bank obeys the corresponding bound in the root-mean-square normalized row norm, but (17) alone gives no lower bound on the number of statistically independent samples required under a specified stochastic noise law. The gain convention \(G_r\) is a **mathematical observation model**, not an established Xi instrument-noise law. In particular, this does not contradict the order-one *raw absolute-noise* margin of XF-191 or the raw high-gain existence theorem (5).
+
 Thus the raw absolute-noise success does not persist as a uniform gain-normalized noise modulus. It also does not prove scale optimality, an impossibility result for arbitrary \(\Re x>0\) probes, or a matching lower/upper bound for a scale grid under a meaningful gain/precision budget.
 
 The source-dependent contrast is exact: XF-191's direct phase at \(r=p\) recovers one **known** radius with order-one displacement sensitivity, whereas an unknown radius in a dispersed candidate set can be blind at every scale below the explicit exponential threshold of (3); if raw amplification is unlimited, the reciprocal channel instead identifies all candidates at one artificially large scale. The proposed local clue CLUE-known-candidate-holomorphic-scale-grid is thereby narrowed rather than establishing a universal information-theoretic grid lower bound.
