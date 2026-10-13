@@ -450,3 +450,9 @@ Only sources that materially support, delimit, or redirect stored `PL-*` finding
 
 116. **Dimitris Koukoulopoulos**, “Primes in short arithmetic progressions,” *International Journal of Number Theory* **11**(5) (2015), 1499–1521. DOI: https://doi.org/10.1142/S1793042115400035. arXiv: https://arxiv.org/abs/1405.6592.
      - Role: Theorem 1.2 supplies unconditional averaged prime equidistribution in fixed residue classes on polynomial windows `H=X^theta`, `1/6<theta<=1/2`. `PL-422` uses this to establish collapse of the uncentered residue Gram, and `PL-447` applies fixed subwindows to extend the collapse uniformly to critical vertical modulation horizons `|t|H/X=O(1)`. The sinc profile and local-factor cone obstruction are Mathia deductions, not claims of the cited theorem.
+
+
+## Bounded-differences control for parity-respecting atomic countermodels
+
+117. **Colin McDiarmid**, “On the method of bounded differences,” in *Surveys in Combinatorics, 1989*, London Mathematical Society Lecture Note Series **141**, Cambridge University Press, 1989, pp. 148–188. DOI: https://doi.org/10.1017/CBO9781107359949.008.
+     - Role: standard concentration theorem for independent bounded-influence choices. PL-457 uses it to select one atom per residue per logarithmic block with uniform shifted-pair **upper bounds** simultaneously over all shifts. This construction is not a theorem about actual primes.
