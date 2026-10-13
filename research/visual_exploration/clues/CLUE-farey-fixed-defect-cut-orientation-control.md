@@ -1,7 +1,7 @@
 ---
 id: CLUE-visual-exploration-farey-fixed-defect-cut-orientation-control
 type: research-clue
-status: proposed
+status: accepted
 origin: master-researcher
 target_line: visual_exploration
 based_on:
@@ -36,3 +36,7 @@ Start from FD-327's **same-prime** exact transport step profiles `g_m`, instanti
 ## Evidence boundary
 
 All compared reassemblies are artificial directed-edge/labeled-denominator controls, including **two different reassemblies of the same Farey sequence** in FD-327, not alternative genuine Farey orders. Their defect **rank positions** differ despite the same local defect values. VIS-452/453 use another reflected control law and establish no result for FD-327. Neither local defect equality, conditional spectra, nor apparent modular anomaly implies a genuine Farey arithmetic constraint, a Franel–Landau improvement or RH.
+
+## Research disposition
+
+Accepted for the remaining source-natural cut/orientation discriminator, **not** as a genuine-Farey anomaly. VIS-455 derives FD-327's complete positive sine-mode weights and proves that, after the fixed-parameter same-prime source limit, the shrinking \(m=t+3\) transport sends its **normalized** spectral energy to \(r\asymp m^2\), where it approaches a Haar dipole density. The \(m=3\) matched control retains fixed-mode allocation. Still unresolved: a source-natural orientation/cut-location statistic that distinguishes admissible order rather than the chosen artificial joins, what signed folding or low-band projection loses, and explicit relative finite-prime error control for growing \(m\). See research/visual_exploration/findings/VIS-455-fixed-defect-farey-has-moving-haar-sine-spectrum.md.

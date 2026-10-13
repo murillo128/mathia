@@ -197,3 +197,7 @@ This file records durable external literature dependencies used to support or de
 ## Bernoulli Fourier identity for parity-resolved step spectra
 
 - NIST Digital Library of Mathematical Functions, **§24.8(i), Fourier Series of Bernoulli Polynomials**, https://dlmf.nist.gov/24.8. Role: classical identity \(\sum_{\ell\ge1}(1-\cos2\pi\ell t)/\ell^2=\pi^2t(1-t)\) for \(0\le t\le1\). Used in VIS-451 to evaluate the exactly normalized disappearing quarter-mode sector of FD-324; no novelty is claimed for the Fourier/Bernoulli identity itself.
+
+## Haar wavelet and moving spectral-window localization
+
+- Gilbert Strang and Truong Nguyen, **Wavelets and Filter Banks**, Wellesley-Cambridge Press (1996), Chapters 1–2, https://www-math.mit.edu/~gs/books/wfb_toc.html. Role: classical balanced Haar two-block differences and Fourier scale/translation; prior-art context for VIS-455. The exact FD-327 same-prime specialization, normalization and spectral window are Mathia derivations, not a new general wavelet theorem.
