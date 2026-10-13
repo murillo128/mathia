@@ -464,3 +464,6 @@ Only sources that materially support, delimit, or redirect stored `PL-*` finding
 
 119. **Vivian Z. Kuperberg**, “Sums of singular series along arithmetic progressions and with smooth weights,” *International Journal of Number Theory* **21**(1) (2025), 53–74. DOI: https://doi.org/10.1142/S1793042125500046. arXiv: https://arxiv.org/abs/2301.06095.
      - Role: primary prior art for progression-constrained and weighted singular-series sums used to calibrate PL-458's explicit modulo-5 triangular decomposition. The claimed four-channel matrix transfer is conditional on separate actual-prime covariance-precision hypotheses.
+
+120. **Hugh L. Montgomery, Robert C. Vaughan**, *Multiplicative Number Theory I: Classical Theory*, Cambridge Studies in Advanced Mathematics **97**, Cambridge University Press, 2006. DOI: https://doi.org/10.1017/CBO9780511618314.
+     - Role: classical Dirichlet \(L\)-function logarithmic derivatives, explicit formulas and GRH-conditional prime-distribution estimates (especially Chapters 10--14); used in PL-459 to identify the zero-free content already implicit in the unproved first-moment hypothesis (A) of PL-458.
