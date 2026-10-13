@@ -72,6 +72,11 @@ This file records durable literature dependencies for `research/xi_flow/`. It is
 - Mathias Hockmann and Stefan Kunis, **Sparse super resolution is Lipschitz continuous**, arXiv:2108.11925 (2021). Role: primary local Lipschitz estimates for recovery of supports and weights of separated sparse measures from trigonometric moments; a classical comparison for XF-186's moving direct Fourier frame, not a theorem assumed to handle the exact erased Jacobi bank or its reciprocal term.
 - Mathias Hockmann and Stefan Kunis, **Short Communication: Weak Sparse Superresolution is Well-Conditioned**, *SIAM Journal on Imaging Sciences* 16:1 (2023), SC1–SC13, DOI `10.1137/22M1521353`. Role: additional prior-art boundary for weak sparse-measure superresolution in local Lipschitz and Wasserstein metrics. The accessible publisher abstract does not establish equivalence to XF-186's exact Fejer-weighted erased mixed frame, absolute raw-error norm, or reciprocal Jacobi control; no complete theorem-level reduction is asserted.
 
+## Adaptive sensing and sequential query limits
+
+- Rui M. Castro, **Adaptive sensing performance lower bounds for sparse signal detection and support estimation**, *Bernoulli* 20:4 (2014), 2217–2246, DOI 10.3150/13-BEJ555. Role: primary adaptive-sensing limits used as prior-art calibration for XF-195, in a different statistical/linear model that does not imply the Jacobi tariff.
+- Eric Price and David P. Woodruff, **Lower Bounds for Adaptive Sparse Recovery**, *Proceedings of the Twenty-Fourth Annual ACM-SIAM Symposium on Discrete Algorithms (SODA)* (2013), 652–663, DOI 10.1137/1.9781611973105.47. Role: primary adaptive sparse-recovery lower-bound comparison for XF-195; the zero-transcript adversary is proved directly for the complete Jacobi defect.
+
 ## Exponential-sum estimates
 
 - S. W. Graham and Grigori Kolesnik, **Van der Corput's Method of Exponential Sums**, London Mathematical Society Lecture Note Series 126, Cambridge University Press (1991), DOI `10.1017/CBO9780511661976`. Role: classical anchor for the second-derivative exponential-sum estimate used in XF-057. For a phase with curvature `|f''|\asymp\lambda`, the relevant bound is `O(N\lambda^{1/2}+\lambda^{-1/2})`; XF-057 applies it to quadratic chirp curvature `\lambda\asymp q^{-3}` and derives the Xi-flow scale consequences independently.

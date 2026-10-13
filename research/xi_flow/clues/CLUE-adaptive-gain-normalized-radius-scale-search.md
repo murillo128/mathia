@@ -1,7 +1,7 @@
 ---
 id: CLUE-xi-flow-adaptive-gain-normalized-radius-scale-search
 type: research-clue
-status: proposed
+status: accepted
 origin: master-researcher
 target_line: xi_flow
 based_on:
@@ -34,3 +34,9 @@ Fix `alpha>0`, displacement floor `0<tau_0<=|tau|<=1/4`, and noise `|eta_j|<=eps
 ## Evidence boundary
 
 XF-193 proves a prechosen **same-radius** chord coverage bound, not a lower bound on adaptive or distinct-radius identification, on unrestricted right-half-plane points, or under a fixed-total stochastic noise budget. AF-567 concerns real ordered generalized-prime edits, not a complex Jacobi response. No adaptive advantage, adaptive impossibility, physical Xi observation theorem or RH implication is established by this clue.
+
+## Research disposition
+
+Accepted for the **residual adaptive support-identification / relative-precision question**, not as evidence that AF-567's two-query ordered-profile locator transfers to complex Jacobi. [[research/xi_flow/findings/XF-195-adaptive-jacobi-detection-retains-the-linear-fixed-total-noise-tariff.md]] settles two source-independent deterministic budgets. Fixed per-row gain-normalized error permits complete cancellation at sufficiently remote radii, irrespective of the number of queries. Fixed **total** gain-normalized \(\ell^2\) error instead requires and admits \(\Theta(Q)\) observations for adaptive unknown-radius **edit/no-edit detection**. This detector does not identify which radius moved.
+
+Still open is whether a precisely declared **relative** precision or \(\sqrt p\)-compensated scale-coverage criterion can admit better adaptive scale choice than XF-193's prechosen logarithmic bank without revealing \(p\) to the policy, and whether distinct nonzero radii can be identified under a common source-independent and Xi-source-justified precision law. XF-193's \(\sqrt p\) factor is a comparison normalization, not an observation available before support estimation. Do not transfer the fixed-total binary detection bound to unrelated stochastic or radius-relative observation models.
