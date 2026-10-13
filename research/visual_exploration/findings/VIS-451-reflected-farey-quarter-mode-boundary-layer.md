@@ -45,7 +45,7 @@ The odd-mode integrals vanish by reflection. For \(j=2\ell\), equation (4) becom
 I_{a,4\ell}=\frac{h_a}{2\pi\ell}
 \bigl(1-\cos(2\pi\ell/a)\bigr). \tag{5}
 \]
-For \(0\le t\le1/2\), the classical Bernoulli-polynomial Fourier identity states
+For \(0\le t\le1\), the classical Bernoulli-polynomial Fourier identity states
 \[
 \sum_{\ell\ge1}\frac{1-\cos2\pi\ell t}{\ell^2}
 =\pi^2t(1-t). \tag{6}
