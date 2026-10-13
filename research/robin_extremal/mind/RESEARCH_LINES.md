@@ -32,6 +32,24 @@ Dropping factorwise certification does not remove the same local barrier automat
 
 The remaining mathematical question is whether a construction outside this **fixed finite Taylor/geometric-tail regime** can couple error terms rather than only reduce coefficient norm—for example, a genuinely nongeometric remainder or a changing-number-of-factors limit—and simultaneously improve the destination-width/Wiener ledger. These results do not rule out such classes or prove a minimax bound for all predictors.
 
-## Retain the strict quantitative-PNT source-rigidity boundary
+## Separate strict terminal rigidity from the sharp critical generalized-prime ambiguity
 
-RE-238 replaces the withdrawn terminal-fidelity claim with a strict criterion. Under the prescribed quantitative Chebyshev remainder bound `|vartheta_Q(t)-t|<<t exp(-bV(t))`, with `V(t)=(log t)^(3/5)/(loglog t)^(1/5)`, the canonical Robin terminal discrepancy vanishes when `b kappa_A>1/2`, `kappa_A=A^(3/5)(3/5)^(1/5)`. The equality `b kappa_A=1/2` is **not** covered. Which source restrictions or sharper second-order remainder terms decide equality, without mistaking synthetic generalized-prime controls for ordinary primes?
+RE-238 proves that a quantitative Chebyshev remainder `|vartheta_Q(t)-t|<<t exp(-bV(t))`, with `V(t)=(log t)^(3/5)/(loglog t)^(1/5)`, forces the canonical terminal Robin source discrepancy to vanish for `b kappa_A>1/2`, `kappa_A=A^(3/5)(3/5)^(1/5)`. Its equality case is **not open**. RE-246 constructs generalized-prime source pairs agreeing exactly through `T=U_A(p)e^(-2)`, all obeying one uniform-in-source quantitative PNT bound at `b kappa_A=1/2`, while their normalized terminal Robin coordinates differ by arbitrary fixed signed amounts. This is source-information non-rigidity, not an ordinary-prime Robin counterexample.
+
+RE-247 gives the full sharp result for an admissible moving horizon `U=U(p)`, `U/p->infinity`, and the *unit-constant* common source envelope `E_b(t)=t exp(-bV(t))`. Over pairs of discrete real-label generalized-prime sources agreeing below `T=e^(-2)U`, the supremal terminal ambiguity satisfies
+
+`Delta_(p,b,U)=(2+o(1)) B_(p,b,U),  B_(p,b,U)=sqrt(p) log(p) exp(-bV(U))/log(U)`.
+
+The `2` is the sharp asymptotic constant: discrete envelope-saturating source pairs attain it, not merely a signed formal measure. Therefore the source-class terminal ambiguity tends to zero **if and only if** `bV(U)-0.5log(p)+log(log(U)/log(p))->+infinity`. At the precise log-horizon transition `v=v_*(log p)+s v_*/log p`, its limit is `2 exp(-3s/10)`. The formal leading equality `b kappa_A=1/2` on the canonical horizon is already on the non-rigid side after the second-order correction. None of these comparisons imposes ordinary-prime source realization, a CA selector constraint, or a Robin sign conclusion.
+
+The remaining source question is which *ordinary-prime and CA-selected* constraints forbid the generalized-prime envelope-saturating discrepancies, rather than attempting to recover rigidity from the quantitative PNT envelope alone. Real/integer-label separation and fixed congruences were stress-tested by RE-248--RE-251; they do not by themselves turn this generalized source-class result into an ordinary-prime assertion.
+
+## Use the signed local prime-counting moment at the selected Robin horizon
+
+RE-252 uses the pointwise Guth--Maynard short-interval input to extend the ordinary-prime local invisibility window, but its bound becomes only order one at `H_star=p^(3/4)(log p)^(-1/2) exp(0.5(log p)^(1/4))`. RE-253 identifies the exact unresolved *signed* statistic instead of treating a pointwise counting envelope as a cancellation theorem. For `L=log p` and ordinary-prime `N_p(y)=pi(p+y)-pi(p)`, set
+
+`D_p(H)=int_0^H (N_p(y)-y/L)dy = sum_(p<q<=p+H)(H-(q-p))-H^2/(2L)`.
+
+The direct Robin first-annulus integral obeys `sqrt(p)L int_p^(p+H)I(t)dt = -a_p D_p(H) + O(H(1+|vartheta(p)-p|)/p^(3/2) + LH^3/p^(5/2))`, with `a_p~L/p^(3/2)>0`. At regular self-tangent CA frontier primes, the already persisted endpoint bound gives `o(1)` for this first integral **if and only if** `D_p(H_star)=o(p^(3/2)/L)`; the pointwise input supplies only the corresponding `O` estimate. No sign or little-o is proved for that moment, and the remote annular contribution remains.
+
+The new discriminating question is whether the CA selection condition gives a *signed triangular prime-counting cancellation* in precisely `D_p(H_star)`, together with the remaining remote-tail correlation. A theorem only about nonselected primes, or a bound on `|N_p(y)-y/L|` at each `y`, does not provide the needed selected-sign information.
