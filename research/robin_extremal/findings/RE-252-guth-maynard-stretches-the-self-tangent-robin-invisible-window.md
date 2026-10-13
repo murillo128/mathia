@@ -30,6 +30,28 @@ Then the following is **uniform in every real \(0\le H\le H_\delta(p)\)**:
 \]
 Thus the left side is \(O_{\delta,M}((\log p)^{-M})\) for every fixed \(M>0\). In particular, the same all-logarithmic-order negligibility holds for \(H=p^{3/4}(\log p)^B\), for any fixed real \(B\).
 
+The fixed-\(\delta\) formulation can be sharpened at the **actual error-balance scale**. Define
+\[
+H_\star(p):=\frac{p^{3/4}}{\sqrt{\log p}}\,
+\exp\!\left(\frac12(\log p)^{1/4}\right).
+\]
+In fact, with an absolute implied constant after fixing \(\varepsilon=1/30\) in Guth--Maynard, the same inputs prove **uniformly for all \(0\le H\le H_\star(p)\)** that
+\[
+\boxed{\sqrt p\log p\left|\int_p^{p+H}I(t)\,dt\right|
+\ll \left(\frac{H}{H_\star(p)}\right)^2+p^{-1/5}.}\tag{1a}
+\]
+Thus every \(H=o(H_\star(p))\) has a negligible first-order contribution. More strongly, the explicit near-border horizon
+\[
+H_{\mathrm{near}}(p):=H_\star(p)\exp\bigl(-(\log p)^{1/8}\bigr)
+\]
+gives uniformly for all \(H\le H_{\mathrm{near}}(p)\)
+\[
+\boxed{\sqrt p\log p\left|\int_p^{p+H}I(t)\,dt\right|
+\ll e^{-2(\log p)^{1/8}}+p^{-1/5}
+=O_M((\log p)^{-M})\quad(\forall M>0).}\tag{1b}
+\]
+This is a genuine expansion beyond **every** fixed-\(\delta\) horizon in (1), since \(H_{\mathrm{near}}(p)/H_\delta(p)\to\infty\) for every fixed \(\delta>0\). It is an optimization of the already stated Guth--Maynard error bound, not an assertion that \(H_\star\) is an arithmetically sharp transition.
+
 For the remote PNT horizon from RE-022,
 \[
 U_A(p)=\exp\!\left(A(\log p)^{5/3}(\log\log p)^{1/3}\right),
@@ -43,6 +65,8 @@ one consequently has, for every fixed \(M>0\),
 +O_{\delta,A,M}((\log p)^{-M}).
 }\tag{2}
 \]
+The same identity (2) holds with \(H_{\mathrm{near}}(p)\) in place of \(H_\delta(p)\), with \(O_{A,M}((\log p)^{-M})\) for each fixed \(M\): (1b) controls the near piece and the remote-tail estimate is unchanged.
+
 The universal tax identity and its expansion in RE-021 then give
 \[
 \boxed{
@@ -118,6 +142,8 @@ p^{-3/2}H_\delta(p)^2 L e^{-L^{1/4}}
 \]
 The remaining four summands are \(O_\delta(p^{-1/5})\) for sufficiently large \(p\): their dominant powers are \(p^{-0.23+o(1)}\), \(p^{-0.3}L\), \(p^{-1/4+o(1)}\), and \(p^{-3/4+o(1)}\). All contributions increase monotonically with \(H\), proving the uniform bound (1).
 
+To see the stronger near-border statement directly, substitute \(H\le H_\star(p)=p^{3/4+o(1)}\) into (9). Its third summand is exactly \((H/H_\star(p))^2\); the first, second, fourth and fifth summands are, uniformly, \(O(p^{-0.23+o(1)}+p^{-0.3}\log p+p^{-0.25+o(1)}+p^{-0.75+o(1)})=O(p^{-1/5})\). This proves (1a), and taking \(H\le H_\star e^{-(\log p)^{1/8}}\) proves (1b). The near-border saving \(e^{-(\log p)^{1/8}}\) is smaller than every fixed-\(\delta\) saving \(e^{-\delta(\log p)^{1/4}}\) while still suppressing the contribution below every inverse power of \(\log p\). There is no conclusion of \(o(1)\) from this estimate at \(H\asymp H_\star\).
+
 The unconditional Korobov–Vinogradov remote-tail estimate already proved and parameterized in RE-022 makes
 \[
 \sqrt pL\int_{U_A(p)}^\infty I(t)\,dt
@@ -129,6 +155,6 @@ for every fixed \(M>0\), provided \(A>A_0\) strictly. Split the exact defining i
 
 The uniform short-interval prime theorem and its error exponent are Guth–Maynard's; the transfer (5) is elementary partial summation. The local kernel and CA endpoint dictionary were established in RE-021–RE-022. The mathematical delta here is their quantitative composition: the *cancellation-free* \(p^{3/4}/\sqrt{\log p}\) horizon is not an arithmetic barrier, and the CA-selected Robin height remains insensitive to a strictly longer **ordinary-prime** window with error below every fixed inverse power of \(\log p\). A targeted prior-art search found the Guth–Maynard theorem but not this exact CA-selected Robin-kernel deduction; no claim of exhaustive external novelty is made.
 
-Checks that are load-bearing: use the **uniform** Corollary 1.3 rather than the almost-all Corollary 1.4; retain the factor \(L\) when converting prime counts to \(\vartheta\); use the actual selected endpoint \(\Delta(p)=O(p^{0.52})\), not an unjustified generic PNT estimate at arbitrary \(p\); split at \(p^{3/5}\); keep the \(y^2/p\) logarithmic-weight correction; use the exact \(h,k\) kernel and the strict \(A>A_0\) remote margin. The constants depend on fixed \(\delta\), and the theorem does not cover \(\delta=0\) or horizons \(p^{3/4+\varepsilon}\) with fixed \(\varepsilon>0\).
+Checks that are load-bearing: use the **uniform** Corollary 1.3 rather than the almost-all Corollary 1.4; retain the factor \(L\) when converting prime counts to \(\vartheta\); use the actual selected endpoint \(\Delta(p)=O(p^{0.52})\), not an unjustified generic PNT estimate at arbitrary \(p\); split at \(p^{3/5}\); keep the \(y^2/p\) logarithmic-weight correction; use the exact \(h,k\) kernel and the strict \(A>A_0\) remote margin. The constants in the fixed-\(\delta\) formulation depend on \(\delta\); the optimized (1a) fixes the prime-counting \(\varepsilon=1/30\). The method gives no \(o(1)\) conclusion at \(H\asymp H_\star\), nor at horizons \(p^{3/4+\varepsilon}\) with fixed \(\varepsilon>0\).
 
 Nothing here bounds the remaining annular integral by the Robin threshold, proves monotonicity of CA values, constrains a genuinely prime-specific counterexample profile beyond this source localization, or proves RH. Independent adversarial review of the derived localization remains outstanding.
