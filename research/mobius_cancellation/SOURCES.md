@@ -371,3 +371,9 @@ Role: classical signed-graph and cycle/matroid framework surrounding the graph-d
 G. K. Eagleson, *Orthogonal Expansions and U-Statistics*, Australian Journal of Statistics 21 (1979), no. 3, 221–237. DOI: https://doi.org/10.1111/j.1467-842X.1979.tb01141.x.
 
 Role: primary classical reference for degenerate U-statistic limit distributions through orthogonal expansions, explicitly including the two-sample case. MC-515 specializes that framework to fixed-prime bipartite residue-match counts, and derives its own exact finite-sample fourth moment and rectangle correction; neither the abstract product-Gaussian limit nor general U-statistic theory is claimed as new.
+
+## MC-S63 — Bhattacharya, Diaconis and Mukherjee, universal monochromatic-edge limits
+
+Bhaswar B. Bhattacharya, Persi Diaconis and Sumit Mukherjee, *Universal Limit Theorems in Graph Coloring Problems With Connections to Extremal Combinatorics*, Annals of Applied Probability 27 (2017), no. 1, 337–394. DOI: https://doi.org/10.1214/16-AAP1205. arXiv: https://arxiv.org/abs/1310.2336.
+
+Role: primary prior-art authority for MC-516. Theorems 1.1 and 1.2 establish Poisson/normal regimes for monochromatic edges under a growing number of uniform vertex colors. The complete-bipartite graph with n vertices on each side and m colors is exactly the independent-residue q+r collision control. MC-516 separately proves the three limiting regimes for this specific model and derives an exact conditional-variance concentration identity; no universal limit theorem or arithmetic Möbius bound is claimed as new.
