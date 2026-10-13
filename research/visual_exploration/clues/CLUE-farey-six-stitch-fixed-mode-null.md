@@ -1,7 +1,7 @@
 ---
 id: CLUE-visual-exploration-farey-six-stitch-fixed-mode-null
 type: research-clue
-status: proposed
+status: accepted
 origin: master-researcher
 target_line: visual_exploration
 based_on:
@@ -48,3 +48,9 @@ For FD-320 excursion permutations, independently vary break count and transport 
 ## Evidence boundary
 
 FD-318–FD-322 are proved or derived source-side statements about **artificial labeled-edge grids**, not alternative genuine Farey sequences. FD-322 does not preserve reflection, although unlike FD-321 all its defective indices approach the positive integer one; it does not supersede FD-319 under the reflection constraint. FD-320's full-mode error is absolute, not relative to arbitrary vanishing total energies. VIS-032/VIS-034's even-mode `Q_q=A S_q` assumes reflection and cannot be reused unmodified for an unreflected path. No genuine-Farey transport bound, relative allocation estimate, arithmetic source selection or RH implication is established. This remains a proposed destination-side test.
+
+## Research disposition
+
+Accepted. VIS-447 proves that the exact FD-320 block transport spectrum approximates **all** normalized sine-mode allocations uniformly whenever \(E_p/T_p\to0\); for a null-normalized allocation \(S_q\), its own spectral-fraction denominator must additionally be controlled. FD-319's reflected four-defect and FD-322's unreflected three-positive-near-one macroscopic controls are low-mode tight: for every diverging cutoff their normalized retained spectral share tends to one. They therefore do not, by themselves, falsify the low-band depletion observed in finite genuine Farey spectra.
+
+The precise unresolved test is to predefine reflection-preserving and unreflected, directed-edge/transport-matched null ensembles, compute **each null's own** total-energy and full/even-band expectations, and ask whether the genuine Farey spectral-allocation factor \(S_q\) remains atypical. In the small-transport regime, a quantitative comparison of \(E_p\) with \(T_p\) is indispensable; index-defect count alone does not supply it. No arithmetic source-order restriction, anomalous limiting \(S_q\), or RH consequence has been proved. See research/visual_exploration/findings/VIS-447-uniform-normalized-farey-transport-spectrum.md.
