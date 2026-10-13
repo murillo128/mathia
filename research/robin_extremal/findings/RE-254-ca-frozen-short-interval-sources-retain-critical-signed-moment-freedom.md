@@ -1,10 +1,10 @@
 # RE-254 — CA-frozen short-interval sources retain critical signed-moment freedom
 
-**Status:** EXACT-DERIVED + DECISIVE-NEGATIVE/SOURCE-INFORMATION-OBSTRUCTION + ORDINARY-PRIME-ANCHORED-MATCHED-CONTROL + PRIOR-ART-BOUNDED; independent adversarial audit pending.
+**Status:** EXACT-DERIVED + DECISIVE-NEGATIVE/SOURCE-INFORMATION-OBSTRUCTION + ORDINARY-PRIME-ANCHORED-MATCHED-CONTROL + INTEGER-LABEL-ROBUSTNESS + PRIOR-ART-BOUNDED; independent adversarial audit pending.
 
 **Dependencies:** RE-021 (ordinary CA frontier/selector), RE-022 (mixed Robin kernel), RE-252 (Guth–Maynard short-interval envelope), RE-253 (signed triangular moment), RE-246 and RE-248 (distinct remote generalized-prime transport obstructions).
 
-RE-253 identifies a signed triangular prime-counting moment whose cancellation would make the first ordinary-prime Robin annulus negligible at the Guth–Maynard error-balance horizon. That cancellation **does not follow** from the uniform Guth–Maynard prime-counting estimate combined with an arbitrarily long, exactly ordinary-prime prefix containing the complete selected CA state. An explicit matched real-label generalized-prime transport preserves these inputs and changes the normalized critical moment by a fixed nonzero amount. The result concerns the information supplied by those hypotheses, not the behavior of ordinary primes or the sign of Robin's inequality.
+RE-253 identifies a signed triangular prime-counting moment whose cancellation would make the first ordinary-prime Robin annulus negligible at the Guth–Maynard error-balance horizon. That cancellation **does not follow** from the uniform Guth–Maynard prime-counting estimate combined with an arbitrarily long, exactly ordinary-prime prefix containing the complete selected CA state. An explicit matched generalized-prime transport, including a strictly integer-labeled strengthening, preserves these inputs and changes the normalized critical moment by a fixed nonzero amount. The result concerns the information supplied by those hypotheses, not the behavior of ordinary primes or the sign of Robin's inequality.
 
 ## 1. Sharp local source-information obstruction
 
@@ -145,10 +145,80 @@ and \(r_+-r_-=2s\varphi((q-p)/H)\ge0\). Equations (13)–(15) give
 \]
 This independent exact-kernel computation checks the normalization and sign without requiring RE-253's individual endpoint-remainder estimate. For selected p, RE-253 additionally provides that estimate for each source because the transformed labels have the same fixed prefix through p and comparable gaps.
 
-## 5. Prior art, falsification, and the actual boundary
+## 5. Integer-label robustness without relaxing the all-start short-interval input
 
-The external arithmetic input is Guth–Maynard, *New large value estimates for Dirichlet polynomials*, Annals of Mathematics 203 (2026), 623–675, Corollary 1.3, DOI 10.4007/annals.2026.203.2.6. Smooth order-preserving point transport and generalized-prime flexibility are classical constructions (for generalized-prime context see W.-B. Zhang, *Normalization of Beurling generalized primes with Riemann Hypothesis*, Ann. Univ. Sci. Budapest. 39 (2013)). RE-246–RE-251 already distinguish source-fidelity from ordinary-prime arithmetic, but concern a *remote PNT-controlled terminal shell*, not RE-253's critical *near-p, all-start short-interval* signed statistic with the exact original CA prefix frozen. No generic novelty claim is made for smoothing, transport, Riesz means, or the external prime theorem. No new SOURCES.md anchor is needed.
+The obstruction (4)–(5) persists when **every transported source label is required to be a positive integer**. This is a strengthening of the same source-information statement, not an assertion that the moved labels remain prime.
 
-Essential audit boundaries: (i) the two systems are **real-label generalized sources**, not two possible sets of ordinary primes; (ii) the CA selector is genuinely unchanged only because \(p+H/4\gg X\), not because a general synthetic source shares the ordinary divisor-sum law; (iii) the PNT implied constant is common across the two signs for each fixed a, not an arbitrarily preassigned sharp unit constant; (iv) the changed logarithmic jump weights are retained in (14), and after the shell \(\vartheta_Q\) need not equal ordinary \(\vartheta\) even though the *labels* outside the shell do; (v) the integral in (5) is a **source-model local kernel**. The actual finite value \(\sigma(C)/(C\log\log C)\) is unchanged, and one must not identify either altered source's global Euler-product/Mertens normalization with the ordinary Euler constant or claim a difference in genuine Robin heights.
+For each original ordinary prime \(q\), round the two maps (6) to nearest integers:
+\[
+r_q^\pm=\left\lfloor F_\pm(q)+\frac12\right\rfloor,
+\qquad
+Q_{p,\mathbb Z}^\pm=(r_q^\pm)_{q\ {\rm ordinary\ prime}}.
+\tag{16}
+\]
+Every original prime outside the support of \(\varphi((q-p)/H)\) is retained **exactly**, because then \(F_\pm(q)=q\in\mathbb Z\). Since that support is compactly contained in \((p+H/4,p+3H/4)\) and \(s/H=aLe_p=o(1)\), no altered label leaves the critical interior shell. In particular, the *entire* actual-prime prefix through \(p+H/4\), including the already selected CA exponent vector and selector, is unchanged.
+
+**No collisions or rank changes.** For all sufficiently large \(p\), (7) gives \(F_\pm'(t)\ge3/4\) globally. On and across the modified shell, consecutive original odd primes \(q<q'\) have \(q'-q\ge2\); hence
+\[
+r_{q'}^\pm-r_q^\pm
+\ge F_\pm(q')-F_\pm(q)-1
+\ge \frac34(q'-q)-1
+\ge\frac12>0.
+\tag{17}
+\]
+The only consecutive-prime gap below two is the unaltered pair \(2,3\). Thus each rounded source is a strictly increasing integer sequence, with exactly the original rank, shell cardinality, and exterior labels. The integer labels may be composite; their integrality does not give the prime-atom divisor-sum law.
+
+**All-start counting survives at the same error scale.** Each rounded label differs by at most \(1/2\) from its corresponding real label. The real labels that may move are separated by at least \(3/2\), so at any threshold \(t\), at most one label can cross \(t\) under rounding:
+\[
+\left|\Pi_{Q_{p,\mathbb Z}^\pm}(t)-\Pi_{Q_p^\pm}(t)\right|\le1.
+\tag{18}
+\]
+Consequently every interval count differs by at most two. Because
+\(x^{3/5}\exp(-(\log x)^{1/4})\to\infty\), this additive error is uniformly swallowed by the right-hand error in (2) for \(x\ge x_0\), after enlarging a *single* fixed \(x_0\) if necessary. In particular, both integer sources obey, with one implied constant independent of \(p\) and sign,
+\[
+\Pi_{Q_{p,\mathbb Z}^\pm}(x+y)-\Pi_{Q_{p,\mathbb Z}^\pm}(x)
+=\frac{y}{\log x}
++O_{a,\varphi}\!\left(y e^{-(\log x)^{1/4}}\right),
+\quad x^{3/5}\le y\le x^{0.99}.
+\tag{19}
+\]
+This bound is for **all** admissible starts, not merely for intervals centered on \(p\).
+
+**The critical signed discrepancy survives.** Let \(M\) be the number of ordinary primes in the critical shell. By Guth–Maynard, \(M=O(H/L)\); by (16), \(|(r_q^+-r_q^-)-2s\varphi((q-p)/H)|\le1\). Since both sources have the same shell count, (3) and (12) give the exact-centering comparison
+\[
+\begin{aligned}
+D_{Q_{p,\mathbb Z}^+,p}(H)-D_{Q_{p,\mathbb Z}^-,p}(H)
+&=-\sum_{p<q\le p+H}(r_q^+-r_q^-)\\
+&=-2s\sum_q\varphi((q-p)/H)+O(H/L)\\
+&=-\frac{2ap^{3/2}}{L}(1+o(1)).
+\end{aligned}\tag{20}
+\]
+Here \(H/p^{3/2}\to0\), so the normalized rounding error is \(O(H/p^{3/2})=o(1)\). The limit in (4) remains exactly \(-2a\).
+
+The corresponding kernel calculation is also exact, not an approximation that discards altered logarithmic jump weights. For \(b=p+H\), monotonicity of nearest-integer rounding gives \(r_q^+\ge r_q^-\), and the same integration by parts as (14) yields
+\[
+\int_p^b(I_{Q_{p,\mathbb Z}^+}-I_{Q_{p,\mathbb Z}^-})(t)\,dt
+=\sum_{\text{affected }q}\int_{r_q^-}^{r_q^+}
+\left[\frac1{t(t-1)}+\frac{h(b)}t\right]dt.
+\tag{21}
+\]
+The kernel is \(p^{-2}(1+o(1))\) uniformly on this shell. The total effect of integer rounding on (21), after multiplication by \(\sqrt p L\), is \(O(H/p^{3/2})=o(1)\). Therefore
+\[
+\boxed{\quad
+\frac{L}{p^{3/2}}\left(D_{Q_{p,\mathbb Z}^+,p}(H)
+-D_{Q_{p,\mathbb Z}^-,p}(H)\right)=-2a+o(1),
+\quad
+\sqrt pL\int_p^{p+H}(I_{Q_{p,\mathbb Z}^+}-I_{Q_{p,\mathbb Z}^-})\,dt
+=2a+o(1).
+\quad}\tag{22}
+\]
+
+This rules out **integer labels alone** as an additional sufficient source-fidelity premise for the RE-253 critical little-\(o\) cancellation, even in the presence of the exact original CA prefix, fixed ranks and counts, and a common all-start short-interval PNT error envelope. It does not rule out genuinely prime-only arithmetic constraints, primality of every moved label, or a CA-conditioned result for ordinary primes.
+
+## 6. Prior art, falsification, and the actual boundary
+
+The external arithmetic input is Guth–Maynard, *New large value estimates for Dirichlet polynomials*, Annals of Mathematics 203 (2026), 623–675, Corollary 1.3, DOI 10.4007/annals.2026.203.2.6. Smooth order-preserving point transport and generalized-prime flexibility are classical constructions (for generalized-prime context see W.-B. Zhang, *Normalization of Beurling generalized primes with Riemann Hypothesis*, Ann. Univ. Sci. Budapest. 39 (2013)). RE-246–RE-251 already distinguish source-fidelity from ordinary-prime arithmetic, but concern a *remote PNT-controlled terminal shell*, not RE-253's critical *near-p, all-start short-interval* signed statistic with the exact original CA prefix frozen. No generic novelty claim is made for smoothing, transport, nearest-integer rounding, Riesz means, or the external prime theorem. RE-250–RE-251 already treat integer/congruence-label quantization for a distinct, remote all-height PNT terminal kernel; Section 5 specifically retains integrality under the *near-frontier*, CA-prefix-frozen, all-start Guth–Maynard control of this finding. No new SOURCES.md anchor is needed.
+
+Essential audit boundaries: (i) the smooth sources in Sections 1–4 have real labels and Section 5's integer-rounded sources have potentially composite labels; neither is a second possible set of ordinary primes; (ii) the CA selector is genuinely unchanged only because \(p+H/4\gg X\), not because a general synthetic source shares the ordinary divisor-sum law; (iii) the PNT implied constant is common across the two signs for each fixed a, not an arbitrarily preassigned sharp unit constant; (iv) the changed logarithmic jump weights are retained in (14), and after the shell \(\vartheta_Q\) need not equal ordinary \(\vartheta\) even though the *labels* outside the shell do; (v) the integral in (5) is a **source-model local kernel**. The actual finite value \(\sigma(C)/(C\log\log C)\) is unchanged, and one must not identify either altered source's global Euler-product/Mertens normalization with the ordinary Euler constant or claim a difference in genuine Robin heights.
 
 Thus fixed ordinary-prime/CA prefix information plus the uniform Guth–Maynard prime-counting **error envelope alone** cannot force the RE-253 little-o signed moment at Hstar. An ordinary-prime-specific condition coupling future prime positions to the selected state (or stronger information than this counting envelope) is indispensable for that proposed route. The result neither asserts that actual primes exhibit the freedom, nor controls the remaining remote annulus, nor excludes a Robin counterexample, nor proves RH.
