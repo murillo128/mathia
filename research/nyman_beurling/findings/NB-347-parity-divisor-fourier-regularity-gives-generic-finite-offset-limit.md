@@ -84,6 +84,22 @@ sequence of integers \(a_q\ge2\), and every \(n_q\ge q\),
 This is a positive-measure statement, not an assertion of nonvanishing
 at every irrational or almost every phase.
 
+
+**Local two-sided essential range.** The finite almost-everywhere
+coefficient is not locally essentially bounded: for **every**
+nonempty open interval \(I\subset(-1/2,1/2)\),
+\[
+\boxed{\displaystyle
+\operatorname*{ess\,sup}_{t\in I}\mathcal L(t)=+\infty,
+\qquad
+\operatorname*{ess\,inf}_{t\in I}\mathcal L(t)=-\infty.}
+\tag{4b}
+\]
+Each strict level set \(\{t\in I:\mathcal L(t)>K\}\) and
+\(\{t\in I:\mathcal L(t)<-K\}\) has positive measure for
+every \(K>0\), interpreted at differentiability phases.
+The statement is compatible with \(\mathcal L\in L^2\).
+
 ## Parity-divisor spectrum and exact Sobolev energy
 
 NB-339(5) records the classical absolutely convergent Fourier series
@@ -219,6 +235,72 @@ now give (4a) for every \(t\in\mathcal A\), with the same freedom
 in the dilation sequence as before. The proof does not determine
 whether the exceptional zero set of \(\mathcal L\) has positive or
 zero measure, and it supplies no target-approximation estimate.
+
+## Every-interval two-sided essential blowup
+
+Fix a nonempty open \(I\subset(-1/2,1/2)\) and \(K>0\).
+Choose a **nonzero** reduced rational \(r=a/b\in I\) of
+even denominator \(b\); such points are dense, as seen using
+fractions with odd numerator and power-of-two denominator.
+Keep this rational fixed. NB-336(2) proves the two-sided cusp
+\[
+\mathfrak D(r+s)-\mathfrak D(r)
+=-\frac{|s|}{b}\log\frac1{|s|}+O_b(|s|).
+\tag{11e}
+\]
+The \(H^1\) conclusion (2) gives absolute continuity, so
+the fundamental theorem of calculus yields, for \(h\downarrow0\),
+\[
+\begin{aligned}
+\frac1h\int_r^{r+h}\mathfrak D'(t)\,dt
+&=-\frac1b\log\frac1h+O_b(1)\longrightarrow-\infty,\\
+\frac1h\int_{r-h}^{r}\mathfrak D'(t)\,dt
+&=+\frac1b\log\frac1h+O_b(1)\longrightarrow+\infty.
+\end{aligned}
+\tag{11f}
+\]
+Therefore, for any \(M>0\) and sufficiently small \(h\),
+the right interval contains a positive-measure set where
+\(\mathfrak D'<-M\), and the left interval contains one
+where \(\mathfrak D'>M\). Otherwise the respective integral
+average could not cross its strict threshold. The derivative
+exists almost everywhere.
+
+Since \(0\le\mathfrak D(t)\le\zeta(2)/4=\pi^2/24\) and
+\(H=\pi^2/72\),
+\[
+\left|\frac{\mathfrak D(t)-H}{2}\right|
+\le C_0:=\frac{\pi^2}{72}.
+\tag{11g}
+\]
+Choose the intervals inside \(I\) and so short that
+\(\operatorname{sgn}t=\operatorname{sgn}r\) and
+\(|t|\ge|r|/2\). Take
+\(M>8(K+C_0)/|r|\). On the above two positive-measure
+sets, \(|t\mathfrak D'(t)/4|>K+C_0\), with opposite signs.
+Consequently
+\(\mathcal L(t)=(\mathfrak D(t)-H)/2-t\mathfrak D'(t)/4\)
+exceeds \(K\) on one set and is below \(-K\) on the other
+(the sides reverse when \(r<0\)). This proves (4b).
+
+Combining (4b) with (4), for every \(C>0\) and every
+open phase interval \(I\), a positive-measure subset
+of its differentiability phases has
+\[
+\liminf_{q\to\infty}
+\frac{m_q\sqrt{\log q}}q\,
+\|E_{n_q,m_q}\|>C
+\]
+for **every** integer sequence \(a_q\ge2\) and every
+\(n_q\ge q\) in (3). The phase \(t\) is fixed before
+\(q\to\infty\). No common convergence onset in \(t\)
+is asserted, nor any positive lower density of the
+large-level sets as \(C\) grows. The derivation is a
+source-side consequence of the fixed-rational NB-336
+cusp and absolute continuity; it invokes no outside theorem
+or unproved derivative interchange. The nearby
+Balazard--Martin rational-singularity literature remains
+a prior-art boundary, not an independent novelty claim.
 
 ## Uniform moving-offset reduction
 
@@ -360,7 +442,10 @@ no cap on the dilation multiple. Rational logarithmic resonances
 remain genuine but exceptional. The coefficient is now proved
 nonzero on a set of phases of measure at least 0.066, with a uniform
 scaled physical-norm floor, without asserting almost-everywhere
-nonvanishing. This is a source/observer
+nonvanishing. The finite coefficient is also locally essentially
+unbounded of both signs in every open phase interval, furnishing
+arbitrarily large normalized source coefficients on positive-measure
+subsets while keeping the phase fixed. This is a source/observer
 classification only: it supplies neither target occupation,
 inverse-section conditioning, an asymptotic bound on
 \(\operatorname{dist}(\mathbf1,U_n)\), nor an RH implication.
