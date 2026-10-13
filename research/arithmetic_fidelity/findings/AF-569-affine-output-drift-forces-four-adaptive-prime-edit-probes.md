@@ -53,31 +53,38 @@ G_{i,j}(a_1)
 \]
 where \(G_{i,j}=\Phi_{p_j}-\Phi_{p_i}\).
 
-Moreover there are sets \(S_n\) of **four actual odd rational-prime edit locations**, with \(\min S_n\to\infty\), for which
+Moreover there are sets \(S_n\) of **four actual odd rational-prime edit locations**, with \(\min S_n\to\infty\), for which the three-query/full-curve ratio converges to the *exact* sharp constant
 \[
-\limsup_{n\to\infty}
+\boxed{\lim_{n\to\infty}
 \frac{\varepsilon^{\rm aff,ad}_3(S_n)}
      {\varepsilon^{\rm aff}_{\rm full}(S_n)}
-\le\kappa<1,
+=\rho=\frac{8e}{9}\log\frac32=0.9797052759\ldots<1.}
 \tag{6}
 \]
-with the explicit, source-independent variational constant
+The source-independent three-coordinate contrast constant is
 \[
-\kappa=
+\boxed{\kappa=
 \sup_{0\le x_0<x_1<x_2<\infty}
-\min\{|C_f(x_0,x_1,x_2)|,\ |C_g(x_0,x_1,x_2)|\},
+\min\{|C_f(x_0,x_1,x_2)|,\ |C_g(x_0,x_1,x_2)|\}
+=\rho,}
 \quad
 f(x)=xe^{1-x},\quad g(x)=f(3x/2),
 \tag{7}
 \]
-and
+where
 \[
 C_h(x_0,x_1,x_2)
 =h(x_1)-\frac{x_2-x_1}{x_2-x_0}h(x_0)
 -\frac{x_1-x_0}{x_2-x_0}h(x_2).
 \tag{8}
 \]
-In particular \(\rho\le\kappa<1\), where \(\rho=(8e/9)\log(3/2)\) is AF-562's one-sample maximin value; **no numerical or exact evaluation of \(\kappa\) is asserted**. Thus three adaptive probes are not universally full-margin, whereas four are: the affine nuisance costs one more observation than AF-568's free constant offset.
+In fact the sharp worst-family limit holds uniformly over all finite prime-edit candidate sets:
+\[
+\boxed{\lim_{P\to\infty}\inf_{\substack{|S|\ge2,\ S\ {\rm finite\ odd\ primes}\\\min S\ge P}}
+\frac{\varepsilon^{\rm aff,ad}_3(S)}
+     {\varepsilon^{\rm aff}_{\rm full}(S)}=\rho.}
+\]
+Thus three adaptive probes universally recover at least \(\rho-o(1)\) of the full affine-quotient margin, but cannot universally reach that full margin; four probes do. The affine nuisance costs one more adaptive observation than AF-568's free constant offset.
 
 ## Full-curve affine quotient equals the constant-offset quotient
 
@@ -111,6 +118,24 @@ annihilates both the constant and linear nuisance terms. Under source \(i\), its
 The full interval \([-2\varepsilon,2\varepsilon]\) is attainable by bounded errors. Since the affine nuisance subspace of triples at distinct coordinates is exactly \(\ker R\), a given observed triple is compatible with source \(i\) **if and only if** its contrast differs from \(R(\Phi_{p_i})\) by at most \(2\varepsilon\). Thus a pair is indistinguishable exactly when its contrast centers differ by at most \(4\varepsilon\), proving the fixed-design part of (5).
 
 For an adaptive protocol, the first observation may be any real number under every source, by choosing \(b_0\). Conditional on any first reading, a second reading at a *distinct* chosen coordinate is also completely arbitrary under every source: choose \(b_1\) and then \(b_0\) to interpolate the pair exactly. Conditional on **any two such readings**, all hypotheses therefore reach the third coordinate with the same possible histories; the third reading's possible intervals are separated only by (11), with the same \(4\varepsilon\) compatibility threshold. Each resulting triple is itself a permitted fixed design. An adaptive strategy cannot outperform the supremum over fixed triples, while a fixed triple is an adaptive strategy. Repeated first/second coordinates cannot improve identification: they provide only repeated errors at one location, leaving the affine slope unrestricted and at most two distinct coordinates after the third observation. This proves (5).
+
+## Uniform three-coordinate lower bound
+
+Fix \(\eta>0\). AF-563 supplies, uniformly for every finite prime-edit candidate set with sufficiently large \(\min S\), a known coordinate \(a_*\) with \(\min_i G_i(a_*)\ge(\rho-\eta)d(S)\). Because \(S\) is finite and each adjacent gap vanishes at both domain endpoints, choose \(0<a_L<a_*<a_R\) with
+\[
+\max_i\{G_i(a_L),G_i(a_R)\}<\eta d(S).
+\]
+At the fixed triple \((a_L,a_*,a_R)\), the affine interpolation residual (11) of every adjacent gap is positive and obeys
+\[
+C_{G_i}(a_L,a_*,a_R)>(\rho-2\eta)d(S).
+\]
+Every nonadjacent source contrast is a sum of consecutive positive adjacent residuals, so (5) gives
+\[
+\frac{\varepsilon^{\rm aff}_3(S)}
+     {\varepsilon^{\rm aff}_{\rm full}(S)}
+\ge\rho-2\eta.
+\]
+This is uniform in the candidate-set size and logarithmic diameter, but the two nuisance anchors can depend on the known finite set and can approach the remote ends of the unbounded observation domain. Letting \(\eta\downarrow0\) proves the lower half of the sharp asymptotic worst-family equality stated above.
 
 ## Four adaptive queries: two nuisance anchors, one locator, one targeted separator
 
@@ -160,15 +185,41 @@ G_{q,t}(a)/d_n=f(3x/2)+o(1).
 \]
 Since the interpolation coefficients in (8) are nonnegative and sum to one, uniform \(o(1)\) errors remain \(o(1)\) after forming either affine contrast, **uniformly over moving triples** of query coordinates. Restricting the pairwise minimum in (5) to those two bottleneck pairs therefore yields (6) with the variational constant (7).
 
-To prove \(\kappa<1\) without an unsupported numerical maximization, suppose triples could make *both* contrast magnitudes tend to one. Both \(f\) and \(g\) take values in \([0,1]\), vanish at zero and infinity, are positive in between, and have **distinct unique maximizers** \(1\) and \(2/3\). Write \(u_h=h(x_1)\) and \(v_h=t h(x_0)+(1-t)h(x_2)\), each in \([0,1]\), with \(t=(x_2-x_1)/(x_2-x_0)\). If \(|u_h-v_h|\to1\), pass to a subsequence of constant sign: either \(u_h\to1,v_h\to0\) (positive sign), or \(u_h\to0,v_h\to1\) (negative sign).
+We can evaluate \(\kappa\) *exactly*, rather than merely showing \(\kappa<1\). Put \(t=(x_2-x_1)/(x_2-x_0)\in(0,1)\) and \(v_h=t h(x_0)+(1-t)h(x_2)\), so \(C_h=h(x_1)-v_h\). Both \(f\) and \(g\) take values in \([0,1]\); \(f\) peaks at \(x=1\), \(g\) at \(x=2/3\). Their unique positive crossing
+\[
+x_*=2\log(3/2)\in(2/3,1)
+\]
+satisfies \(f(x_*)=g(x_*)=\rho\), and their monotonicities imply the exact one-point equalizer \(\min\{f(x),g(x)\}\le\rho\) for every \(x\ge0\).
 
-If both \(f,g\) have positive sign, the single middle point must approach both distinct maximizers, impossible. If signs differ, the middle point must approach the maximizer of one function while the other tends to zero there, also impossible because each is strictly positive at the other's maximizer. If both signs are negative, both convex combinations \(v_f,v_g\) tend to one. At least one endpoint carries interpolation weight at least \(1/2\); along a further subsequence the same endpoint does so each time. Both \(f\) and \(g\) must tend to one at that endpoint, again impossible for distinct unique maximizers. These exhaustive cases contradict simultaneous unit contrasts, proving \(\kappa<1\).
+For an arbitrary triple, suppose for contradiction that both \(|C_f|>\rho\) and \(|C_g|>\rho\). There are three sign cases.
 
-For the lower comparison \(\kappa\ge\rho\), take \(x_0\downarrow0\), \(x_2\to\infty\), and \(x_1=2\log(3/2)\). Both endpoint interpolants vanish in the limit and \(f(x_1)=g(x_1)=\rho\). No equality \(\kappa=\rho\), decimal estimate, or sharper obstruction is needed for the strict universal three-versus-four theorem.
+**Both positive.** Since \(v_f,v_g\ge0\), we would have \(f(x_1)>\rho\) and \(g(x_1)>\rho\), contrary to the one-point equalizer.
+
+**Both negative.** First, \(x_1<1\) is impossible: \(f''(x)=e^{1-x}(x-2)\), so if \(x_2\le2\), concavity gives \(C_f\ge0\); if \(x_2>2\), then \(f(x_0)\le f(x_1)\) and
+\[
+-C_f\le(1-t)f(x_2)\le1-t
+=\frac{x_1-x_0}{x_2-x_0}\le\frac{x_1}{x_2}<\frac12<\rho.
+\]
+Consequently \(x_1\ge1\). Both profiles decrease to the right of \(x_1\), so \(h(x_2)\le h(x_1)\) for \(h=f,g\), and hence \(-C_h\le t h(x_0)\le h(x_0)\). Both negative contrasts exceeding \(\rho\) would then require \(f(x_0),g(x_0)>\rho\), again contradicting the equalizer.
+
+**Opposite signs.** If \(C_f>\rho\), then \(f(x_1)>\rho\), so \(x_1\in(1/2,2)\), using \(f(1/2)<\rho\), \(f(2)<\rho\), and unimodality. Throughout that interval,
+\[
+g(x_1)\ge \min\{g(1/2),g(2)\}=3e^{-2}>1-\rho.
+\]
+Since \(v_g\le1\), this forces \(-C_g=v_g-g(x_1)<\rho\), a contradiction. Symmetrically, \(C_g>\rho\) implies \(x_1\in(1/3,4/3)\), where
+\[
+f(x_1)\ge \min\{f(1/3),f(4/3)\}
+=\tfrac13e^{2/3}>1-\rho,
+\]
+so \(C_f<-\rho\) is impossible.
+
+Every sign possibility has been excluded, hence \(\kappa\le\rho\). Conversely, choose \(x_1=x_*\), let \(x_0\downarrow0\) and \(x_2\to\infty\). Both endpoint interpolation terms vanish, so \(C_f,C_g\to\rho\) and \(\kappa\ge\rho\). Thus \(\boxed{\kappa=\rho}\) without a numerical optimization assumption.
+
+The uniform lower bound above and AF-562's four-prime profile convergence (18) now give both sides of the worst-family limit and show that the actual-prime four-location witnesses have three-query/full-curve ratio converging to \(\rho\), as asserted in (6).
 
 ## Prior art, falsification tests, and boundaries
 
-Eliminating an affine nuisance by a three-point interpolation residual, the minimax \(L^\infty\) quotient, and sequential model discrimination are classical techniques. Chebyshev's best-uniform-approximation/alternation theory gives their standard approximation-theoretic setting, while Atkinson--Cox (1974) and Rosa--Harman (2016), already anchored under AF-568 in SOURCES.md, establish model-discrimination and nuisance-resistant design precedents. These sources do **not** establish this source-specific four-prime, three-versus-four adaptive budget. The derivation of the bounded-noise contrast and \(\kappa<1\) is given here, without a general-method priority claim.
+Eliminating an affine nuisance by a three-point interpolation residual, the minimax \(L^\infty\) quotient, and sequential model discrimination are classical techniques. Chebyshev's best-uniform-approximation/alternation theory gives their standard approximation-theoretic setting, while Atkinson--Cox (1974) and Rosa--Harman (2016), already anchored under AF-568 in SOURCES.md, establish model-discrimination and nuisance-resistant design precedents. These sources do **not** establish this source-specific four-prime, three-versus-four adaptive budget. The bounded-noise contrast and the exact source-profile identity \(\kappa=\rho\) are derived here, without a general-method priority claim.
 
 Key checks: the pairwise full-curve radius is \(d/4\), not \(d/2\); a fitted nonzero affine slope is ruled out only by the **unbounded observation domain**; the three-point residual has noise magnitude at most \(2\varepsilon\), hence pairwise compatibility threshold \(4\varepsilon\); the initial two readings convey no source information because **both** affine nuisance coefficients are unrestricted; the four-query anchors must have simultaneously negligible gaps for *every* member of the known finite set; the first decisive locator must exceed **half** the bottleneck peak, not merely be positive; the adversary's errors are independent but not assumed identical; and the strict \(\kappa<1\) proof handles both signs of an affine contrast, even when a query drifts to infinity.
 
@@ -176,4 +227,4 @@ The theorem has no finite-index, bounded-coordinate, unknown-source-family, rand
 
 ## Consequence for Arithmetic Fidelity
 
-The number of shared nuisance parameters can change the **minimal adaptive sensing budget** without changing the full-curve quotient radius: for these source profiles, known calibration needs two probes (AF-567), an unknown constant offset needs three (AF-568), and an unknown affine output law needs four. The extra adaptive observation is not a generic parameter-count slogan: it is certified by an explicit four-rational-prime obstruction, an exact three-point quotient formula, and a source-uniform locator. Recovering the erased calibration structure from an actual downstream mathematical representation remains a separate question.
+The number of shared nuisance parameters can change the **minimal adaptive sensing budget** without changing the full-curve quotient radius: for these source profiles, known calibration needs two probes (AF-567), an unknown constant offset needs three (AF-568), and an unknown affine output law needs four. The extra adaptive observation is not a generic parameter-count slogan: it is certified by an explicit four-rational-prime obstruction, an exact three-point quotient formula, a source-uniform locator, and the sharp uniform three-query minimax fraction \(\rho=(8e/9)\log(3/2)\). Recovering the erased calibration structure from an actual downstream mathematical representation remains a separate question.
