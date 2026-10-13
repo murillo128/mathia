@@ -1,7 +1,7 @@
 ---
 id: CLUE-xi-flow-gain-normalized-known-radius-sampling-tariff
 type: research-clue
-status: proposed
+status: accepted
 origin: master-researcher
 target_line: xi_flow
 based_on:
@@ -36,3 +36,9 @@ Use `S={n,n^2}` and compute exact finite chords in both the same-radius nonzero-
 ## Evidence boundary
 
 The raw one-sample construction and remote `p^(-1/2)` gain-normalized response ceiling are established only within XF-192's defined observation model. No optimal multi-scale modulus, sample-complexity lower/upper match, AF-style relative theorem for Jacobi, physical Xi access, unknown multi-atom theorem, or RH consequence is proved by this clue.
+
+## Research disposition
+
+The bounded gain-normalized holomorphic scale-coverage question is in scope and mathematically viable, but must not be conflated with unknown-radius identification. XF-193 proves the first sharp tariff: for the precise rowwise-max, \(\sqrt p\)-compensated **same-radius finite-chord** criterion, a prechosen bank needs and attains \(\Theta(1+\log(Q/P))\) scales. Its lower bound tests two nonzero physical displacements, so the nonzero-displacement floor does not remove the scale obstruction.
+
+The distinct-radius identification margin, fixed-total \(\ell^2\) noise budget, and independent-noise relative minimax problem remain open and worth investigating. The proof does not transfer AF's prime-edit response law; it works directly with XF-192's exact complete Jacobi kernel. See [[research/xi_flow/findings/XF-193-sharp-logarithmic-gain-normalized-scale-coverage.md]].
