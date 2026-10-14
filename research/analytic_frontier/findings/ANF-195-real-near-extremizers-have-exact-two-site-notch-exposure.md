@@ -1,6 +1,6 @@
 # ANF-195 — Real near-extremizers have exactly the two-site notch-exposure envelope
 
-**Status:** EXACT-DERIVED + SHARP-REAL-ENVELOPE + ZERO-SET-PACKING + SOURCE-SPECIFIC-LOCALIZATION + POSITIVE-FOURIER-PROFILE-CLASS + FINITE-EXCESS-MODULUS + AUTOMATIC-FOURIER-TAIL + CUBIC-ROOT-REAL-STABILITY. This is a theorem for real conjugation-invariant multisets only, not the unrestricted complex near-extremizer envelope of ANF-099.
+**Status:** EXACT-DERIVED + SHARP-REAL-ENVELOPE + ZERO-SET-PACKING + SOURCE-SPECIFIC-LOCALIZATION + POSITIVE-FOURIER-PROFILE-CLASS + FINITE-EXCESS-MODULUS + AUTOMATIC-FOURIER-TAIL + CUBIC-ROOT-REAL-STABILITY + GENERIC-SQUARE-ROOT-RATE-CEILING. This is a theorem for real conjugation-invariant multisets only, not the unrestricted complex near-extremizer envelope of ANF-099.
 
 ## 1. Sharp statement for every fixed triangular notch
 
@@ -420,3 +420,59 @@ h_\eta(W)-\Phi_\eta(0)-M_\eta
 For \(0<e(W)\le1\), set \(T=e(W)^{-1/6}\); both terms become \(e(W)^{1/3}\). For \(e(W)=0\), (1) already gives the exact upper bound (alternatively let \(T\to\infty\) in (36)). This completes (28).
 
 **Audit and scope.** The improvement over (22) has two load-bearing ingredients: ANF-114's explicit \(T^{-4}\) triple-gap scale forces a \(T\)-matching after deletion at cost \(O(eT^4)\); the resulting good-site packing makes the far triangular Fourier potential \(O(T^{-2})\) and the bad--good potential bounded linearly by deleted source mass. Neither ingredient follows from arbitrary positive-definite kernels without the actual Montgomery--Taylor zero geometry. The estimate is restricted to the fixed triangular notch and **real** multisets: a general positive-Fourier profile in section 5 need not have a quadratic pointwise tail, and nonreal near-extremizers are not controlled by this positive real pair-energy decomposition. The background Hilbert inequality is Lamzouri's Proposition 2.1, and the remaining packing and potential estimates are elementary; no new external theorem or RH-facing zero-location consequence is claimed. A targeted check of the Montgomery--Taylor/Hilbert-space pair-correlation literature and quantitative near-extremal packing did not locate this exact finite-real stability modulus, without establishing a global novelty claim.
+
+## 8. Generic square-root lower obstruction for the real stability rate
+
+The uniform exponent \(1/3\) in (28) is not claimed optimal, but the exponent cannot exceed \(1/2\) for a full-measure set of fixed triangular-notch widths \(\eta\), **even if one restricts to two distinct simple real points**. This is a rate obstruction, not an improvement of the upper estimate.
+
+Let \(s(y)=\operatorname{sinc}(y)=\sin(\pi y)/(\pi y)\), and choose a maximizing positive zero \(r_*\in Z_+(K)\) with
+\[
+\Phi_\eta(r_*)=M_\eta>0.
+\]
+If \(\Phi_\eta'(r_*)\ne0\), take \(W_\delta=\{0,r_*+\delta\}\) with \(\delta\) tending to zero from the side on which \(\delta\Phi_\eta'(r_*)>0\). The exact two-site normalizations from (2)--(3) are
+\[
+L(W_\delta)=2,\qquad
+e(W_\delta)=K(r_*+\delta)^2,\qquad
+h_\eta(W_\delta)=\Phi_\eta(0)+\Phi_\eta(r_*+\delta).
+\tag{37}
+\]
+Every *true* positive zero \(r\) of \(K\) is simple. Indeed, with the numerator and denominator of ANF-114,
+\[
+N(t)=\cos(\pi t)-a t\sin(\pi t),\quad
+D(t)=1-2\pi^2t^2,\quad
+a=\sqrt2\pi\cot(1/\sqrt2)>0,
+\]
+the equality \(N(r)=0\) forces \(\sin(\pi r)\ne0\), while
+\[
+N'(r)=-\bigl(\pi+a+a^2\pi r^2\bigr)\sin(\pi r)\ne0.
+\]
+The removable numerator/denominator coincidence is not a zero of \(K\), so \(D(r)\ne0\) at every true zero and \(K'(r)=N'(r)/D(r)\ne0\). Taylor expansion in (37) therefore yields
+\[
+e(W_\delta)=K'(r_*)^2\delta^2+O(\delta^3),\qquad
+h_\eta(W_\delta)-\beta_\eta^{\mathbb R}
+=\Phi_\eta'(r_*)\delta+O(\delta^2),
+\]
+and hence the **positive** limiting ratio
+\[
+\boxed{\displaystyle
+\lim_{\substack{\delta\to0\\ \delta\Phi_\eta'(r_*)>0}}
+\frac{h_\eta(W_\delta)-\beta_\eta^{\mathbb R}}
+{\sqrt{e(W_\delta)}}=
+\frac{|\Phi_\eta'(r_*)|}{|K'(r_*)|}>0.}
+\tag{38}
+\]
+Consequently no bound \(h_\eta(W)\le\beta_\eta^{\mathbb R}+C_\eta e(W)^p\) with \(p>1/2\) and finite \(C_\eta\) can hold uniformly over finite real multisets for such a notch.
+
+This nonstationarity is generic in \(\eta\). Since
+\[
+\Phi_\eta'(t)=2b_\eta\eta^2s(\eta t)s'(\eta t),
+\]
+a maximizing zero always has \(s(\eta r_*)\ne0\). The positive zeros of \(s'\), equivalently the nonzero solutions of \(\tan(\pi y)=\pi y\), form a discrete countable set. The positive zeros \(r_n\) of \(K\) are also countable. Thus all widths for which **any** maximizing zero could have \(\Phi_\eta'(r_n)=0\) lie in the at-most-countable set
+\[
+\mathcal E=\{\eta\in(0,1):\eta r_n\text{ is a positive zero of }s'
+\text{ for some }n\}.
+\tag{39}
+\]
+For every \(\eta\in(0,1)\setminus\mathcal E\), (38) holds at each maximizing zero. There is an explicit nonempty interval without exceptions: for \(0<\eta<1/(2r_1)\), \(r_1\) is the unique maximizing positive zero, because \(s(y)^2\) decreases strictly on \(0<y<1\), while \(s(y)^2\le1/\pi^2<4/\pi^2\le s(\eta r_1)^2\) for \(y\ge1\). Here \(s'(\eta r_1)<0\).
+
+**Audit and significance.** The mechanism is elementary first-order perturbation of the *actual equality pair*, not a high-cardinality construction or a new zeta theorem. It identifies an upper ceiling \(p=1/2\) on any universal power stability improvement at generic fixed widths, leaving the interval between the proved \(1/3\) upper-modulus exponent and this \(1/2\) obstruction unresolved. The argument requires a **fixed** notch width and real two-site configurations; it does not transfer to nonreal multisets or improve unconditional critical-zero proportions. The two-site normalization and zero simplicity are already available in ANF-195 and ANF-114, and the Taylor/sharpness mechanism is elementary; no separate claim of literature novelty is made.
