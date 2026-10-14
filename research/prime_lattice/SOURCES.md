@@ -467,3 +467,6 @@ Only sources that materially support, delimit, or redirect stored `PL-*` finding
 
 120. **Hugh L. Montgomery, Robert C. Vaughan**, *Multiplicative Number Theory I: Classical Theory*, Cambridge Studies in Advanced Mathematics **97**, Cambridge University Press, 2006. DOI: https://doi.org/10.1017/CBO9780511618314.
      - Role: classical Dirichlet \(L\)-function logarithmic derivatives, explicit formulas and GRH-conditional prime-distribution estimates (especially Chapters 10--14); used in PL-459 to identify the zero-free content already implicit in the unproved first-moment hypothesis (A) of PL-458.
+
+121. **Kiran S. Kedlaya**, *Notes on Analytic Number Theory*, Chapter 3, Section 3.1, Theorem 3.4 (Landau's theorem for Dirichlet series with nonnegative coefficients), online lecture notes. https://kskedlaya.org/ant/chapter-3.html.
+     - Role: classical nonnegative-transform abscissa/singularity principle used in PL-460. The same positive-Taylor-series proof applies to nonnegative Mellin transforms after logarithmic change of variable. The special mod-5 real-axis nonvanishing and the reduction from raw prime-window second moments are proved in PL-460, not attributed to this reference.
