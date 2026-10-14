@@ -82,6 +82,71 @@ An exact reproducibility certificate (no floating-point inference) is:
 
 For two commensurate periods, \(Q_M\) has degree \(m+n-\gcd(m,n)-1\), and the WI-451 nonnegative construction realizes degree \(D\); hence (4) reduces exactly to WI-451's threshold \(p+q-\gcd(p,q)<\lambda\). The five-period example proves that this no-extra-positivity-charge property does not extend to all finite families.
 
+
+## Three grids have no extra positivity cost; four are necessary and sufficient
+
+For any three positive integer periods \(a,b,c\) (repetitions allowed), write
+\(S_m(z)=1+z+\cdots+z^{m-1}\),
+\(g_{ab}=\gcd(a,b)\), \(g_{bc}=\gcd(b,c)\),
+\(g_{ac}=\gcd(a,c)\), and \(g=\gcd(a,b,c)\).
+Inclusion--exclusion for each cyclotomic factor \(\Phi_d\), \(d>1\), gives the exact polynomial identity
+\[
+Q_{\{a,b,c\}}(z)
+=\frac{S_a(z)S_b(z)S_c(z)S_g(z)}
+       {S_{g_{ab}}(z)S_{g_{bc}}(z)S_{g_{ac}}(z)}
+=S_g(z)\frac{S_a(z)}{S_{g_{ab}}(z)}
+       \frac{S_b(z)}{S_{g_{bc}}(z)}
+       \frac{S_c(z)}{S_{g_{ac}}(z)}. \tag{8}
+\]
+Whenever \(v\mid u\),
+\(S_u(z)/S_v(z)=\sum_{r=0}^{u/v-1}z^{rv}\), a polynomial with
+nonnegative integer coefficients. Hence \(Q_M\) itself is coefficientwise
+nonnegative for every family of **at most three** commensurate periods.
+In particular, \(d_+(Q_M)=\deg Q_M\): the sharp signed and nonnegative
+enclosing-interval thresholds coincide, and Wang's smooth-square criterion
+remains \(h(\deg Q_M+1)<\lambda\). This is an exact identity, not an
+extrapolation from a bounded search.
+
+The threshold can already separate at **four periods**. Set
+\[
+M_4=\{14,21,30,35\},\qquad
+\mathcal D_4=\{2,3,5,6,7,10,14,15,21,30,35\},\quad
+Q_4=\prod_{d\in\mathcal D_4}\Phi_d. \tag{9}
+\]
+Exact integer coefficient arithmetic gives \(\deg Q_4=77\),
+\(Q_4(1)=210\), and precisely four negative coefficients:
+\([z]Q_4=[z^8]Q_4=[z^{69}]Q_4=[z^{76}]Q_4=-1\).
+Since every degree-77 multiple of the monic \(Q_4\) is scalar,
+there is no coefficientwise-nonnegative nonzero multiple of degree 77.
+Conversely \((1+z)Q_4\) has **all** coefficients nonnegative, degree 78,
+and value 420 at 1. Thus
+\[
+\boxed{d_+(Q_4)=78,\quad
+L_{\rm signed}=78h,\quad L_{\rm nonnegative}=79h,\quad
+\mathcal F_\lambda\text{ feasible}\iff79h<\lambda.} \tag{10}
+\]
+An exact, self-contained verification certificate is:
+
+    import sympy as s
+    z = s.Symbol('z')
+    M4 = (14, 21, 30, 35)
+    orders4 = sorted({d for m in M4 for d in s.divisors(m) if d > 1})
+    Q4 = s.Poly(s.prod(s.cyclotomic_poly(d, z) for d in orders4), z)
+    R4 = s.Poly((1 + z) * Q4.as_expr(), z)
+    assert Q4.degree() == 77 and Q4.eval(1) == 210
+    assert [(j, Q4.nth(j)) for j in range(78) if Q4.nth(j) < 0] == [
+        (1, -1), (8, -1), (69, -1), (76, -1)
+    ]
+    assert R4.degree() == 78 and R4.eval(1) == 420
+    assert all(R4.nth(j) >= 0 for j in range(79))
+
+Therefore **four is the smallest possible number of commensurate periods**
+for a positive-coefficient support surcharge. The existing five-period
+example has a smaller absolute degree but does not establish this
+cardinality threshold. The inclusion--exclusion construction is elementary
+cyclotomic algebra, not a claim of a new general tiling theorem; the
+Fourier/source-admissibility and RH limitations above remain unchanged.
+
 ## Prior art, falsification controls, and Weil-inertia boundary
 
 The correspondence between (5), roots of unity and nonnegative cyclotomic multiples is classical. Etkind--Lev settle the sharper support-**measure** theorem for **two** progressions. Steinberger and Tan--Zhang analyze nonnegative multiples of cyclotomic factors, so neither the degree formulation nor the possibility of positivity-induced obstructions should be presented as a new general theory. Kepka--Korbelar address general nonnegative polynomial multiples. The source-specific content here is the exact arbitrary finite commensurate-grid criterion coupled to Wang's even smooth-square admissibility, and the explicit five-period gap. No exhaustive novelty claim is made.
