@@ -377,3 +377,16 @@ Role: primary classical reference for degenerate U-statistic limit distributions
 Bhaswar B. Bhattacharya, Persi Diaconis and Sumit Mukherjee, *Universal Limit Theorems in Graph Coloring Problems With Connections to Extremal Combinatorics*, Annals of Applied Probability 27 (2017), no. 1, 337–394. DOI: https://doi.org/10.1214/16-AAP1205. arXiv: https://arxiv.org/abs/1310.2336.
 
 Role: primary prior-art authority for MC-516. Theorems 1.1 and 1.2 establish Poisson/normal regimes for monochromatic edges under a growing number of uniform vertex colors. The complete-bipartite graph with n vertices on each side and m colors is exactly the independent-residue q+r collision control. MC-516 separately proves the three limiting regimes for this specific model and derives an exact conditional-variance concentration identity; no universal limit theorem or arithmetic Möbius bound is claimed as new.
+
+
+## MC-S64 — Arratia, Goldstein and Gordon, Chen–Stein local-dependence Poisson bounds
+
+Richard Arratia, Larry Goldstein and Louis Gordon, *Two Moments Suffice for Poisson Approximations: The Chen–Stein Method*, Annals of Probability 17 (1989), no. 1, 9–25. DOI: https://doi.org/10.1214/aop/1176991491. Expository proof and applications by the same authors: *Poisson Approximation and the Chen–Stein Method*, Statistical Science 5 (1990), no. 4, 403–434.
+
+Role: primary classical local-dependence total-variation estimate for MC-517. The two-sample residue-match graph has explicit neighborhoods and zero dependence outside them; substituting its edge probabilities and shared-vertex expectations gives the stated \(b_1,b_2,b_3\). This is an application of established Poisson approximation, not a new abstract theorem.
+
+## MC-S65 — Barbour and Eagleson, Poisson convergence for dissociated statistics
+
+A. D. Barbour and G. K. Eagleson, *Poisson Convergence for Dissociated Statistics*, Journal of the Royal Statistical Society: Series B (Methodological) 46 (1984), no. 3, 397–402. DOI: https://doi.org/10.1111/j.2517-6161.1984.tb01311.x.
+
+Role: primary prior-art boundary for MC-517's setting of comparison indicators built from independently sampled source variables, including non-identically distributed comparison inputs in the general theory. The exact equal-law largest-atom equivalence and heavy-class control are derived explicitly in MC-517; no general novelty is claimed for Poisson limits of dissociated comparisons.
