@@ -1,6 +1,6 @@
 # ANF-195 — Real near-extremizers have exactly the two-site notch-exposure envelope
 
-**Status:** EXACT-DERIVED + SHARP-REAL-ENVELOPE + ZERO-SET-PACKING + SOURCE-SPECIFIC-LOCALIZATION + POSITIVE-FOURIER-PROFILE-CLASS + FINITE-EXCESS-MODULUS + AUTOMATIC-FOURIER-TAIL. This is a theorem for real conjugation-invariant multisets only, not the unrestricted complex near-extremizer envelope of ANF-099.
+**Status:** EXACT-DERIVED + SHARP-REAL-ENVELOPE + ZERO-SET-PACKING + SOURCE-SPECIFIC-LOCALIZATION + POSITIVE-FOURIER-PROFILE-CLASS + FINITE-EXCESS-MODULUS + AUTOMATIC-FOURIER-TAIL + CUBIC-ROOT-REAL-STABILITY. This is a theorem for real conjugation-invariant multisets only, not the unrestricted complex near-extremizer envelope of ANF-099.
 
 ## 1. Sharp statement for every fixed triangular notch
 
@@ -329,3 +329,94 @@ The exact two-site equality class and sum-free Montgomery--Taylor zero set are e
 To falsify (1), check the integer multiplicity surplus and the coefficient \(2m_i m_j\) in (2)--(3), the weighted incident-energy identity before discarding exceptional sites, the positivity/decay of \(\widehat{\phi_\eta}\), the \(\ell^2\) occupancy estimate (10), the compact no-zero-triple implication (12), and the matching normalization \(2m_i m_j\le m_i^2+m_j^2\). The order of limits is essential: first \(e\to0\) with \(T,\xi,\gamma\) fixed, then \(T\to\infty\), then \(\xi\to0\).
 
 This **does not** show that the unrestricted \(\beta_\eta\) of ANF-099 equals its real restriction. Real multisets form only a subclass of conjugation-invariant complex multisets, and the near-extremal Hilbert deficit need not control the height or physical source tensor uniformly when cardinality and span grow. Thus the fixed-notch RH-facing obstruction remains: rule out genuinely nonreal near-extremizers with exposure at least \(B_\eta\), or construct one. No new proportion of critical zeta zeros, global zeta-zero exclusion or RH result follows.
+
+## 7. Uniform cubic-root finite-excess stability for a fixed triangular notch
+
+The qualitative envelope (1) admits a rate uniform in the number of real sites, their multiplicities, and their diameter. For each **fixed** admissible triangular notch from section 1, there is a constant \(C_\eta<\infty\) such that every nonempty finite real multiset \(W\) with \(0\le e(W)\le1\) satisfies
+
+\[
+\boxed{\displaystyle
+h_\eta(W)\le \Phi_\eta(0)+M_\eta+C_\eta e(W)^{1/3}.}
+\tag{28}
+\]
+
+This sharpens the general finite-excess bound (22) in the triangular case. The exponent \(1/3\) is a proved upper-modulus exponent, not an asserted optimal exponent.
+
+**Uniform near-zero estimate.** The triangular Fourier kernel has \(\Phi_\eta(t)\to0\) as \(|t|\to\infty\), and \(M_\eta>0\). All real zeros of \(K\) are simple and locally finite (ANF-087; its removable numerator zero is *not* a zero of \(K\)). Consequently there exists \(A_\eta<\infty\) such that
+
+\[
+\Phi_\eta(t)\le M_\eta+A_\eta|K(t)|
+\qquad(t\in\mathbb R).
+\tag{29}
+\]
+
+For completeness, choose \(R\) with \(\Phi_\eta(t)\le M_\eta\) outside \([-R,R]\). Near each zero \(r\) inside this compact interval, the Lipschitz continuity of \(\Phi_\eta\), the inequality \(\Phi_\eta(r)\le M_\eta\), and the simple-zero bound \(|K(t)|\ge c_r|t-r|\) prove (29). On the compact set remaining after those neighborhoods are removed, \(|K|\) has a positive minimum. This also covers negative zeros by evenness.
+
+**Effective deletion and matching.** Fix \(T\ge1\) and take
+
+\[
+\gamma_T=\frac{1}{96(1+8\pi^2T^2)^2},\qquad
+\Delta=L(W)e(W).
+\tag{30}
+\]
+
+Apply the whole-support-fiber deletion in (2)--(6), with \(\gamma=\gamma_T\), writing \(W=G\sqcup B\). All surviving multiplicities are one or two, every distinct surviving pair has \(K(x_i-x_j)^2\le\gamma_T\), and
+
+\[
+L(B)\le(2+2/\gamma_T)\Delta,\qquad
+E_\eta(B)\le(3+2/\gamma_T)\Delta.
+\tag{31}
+\]
+
+ANF-114 gives the quantitative triple gap
+\[
+\inf_{\substack{u,v\ge0\\u+v\le2T}}
+\bigl(K(u)^2+K(v)^2+K(u+v)^2\bigr)
+\ge\frac{1}{16(1+8\pi^2T^2)^2}
+=6\gamma_T.
+\tag{32}
+\]
+If one surviving site had two other surviving sites at distance at most \(T\), the three sites would have span at most \(2T\), and all three pair-kernel squares would be at most \(\gamma_T\). Their sum would be at most \(3\gamma_T\), contradicting (32). The distance-\(T\) graph on the good sites is therefore a matching. In particular *every interval of length \(T\) contains at most two distinct good sites*.
+
+**Sparse Fourier potentials.** Since \(\Phi_\eta(t)\ll_\eta(1+t^2)^{-1}\) and every good site has multiplicity at most two, the preceding interval packing gives, uniformly for \(T\ge1\),
+
+\[
+\sup_{y\in\mathbb R}\sum_{j\in G}m_j\Phi_\eta(y-x_j)
+\ll_\eta1,\qquad
+\sup_{i\in G}\sum_{\substack{j\in G\\|x_i-x_j|>T}}
+m_j\Phi_\eta(x_i-x_j)
+\ll_\eta T^{-2}.
+\tag{33}
+\]
+
+Indeed, partition each half-line from the chosen center into intervals of length \(T\). Each interval contains at most two sites of multiplicity at most two. The two nearest intervals contribute \(O_\eta(1)\) to the first sum, and the remaining intervals contribute \(O_\eta(\sum_{n\ge1}(nT)^{-2})\). In the second sum the nearest retained interval is already at distance \(T\), giving \(O_\eta(T^{-2})\).
+
+**Direct cross-interaction bound and optimization.** All terms of (3) are nonnegative, so the mixed good--bad interaction can be estimated *without* using the norm triangle inequality. By (33) and \(m_i\le\ell(m_i)\),
+
+\[
+2\sum_{i\in B,\ j\in G}m_im_j\Phi_\eta(x_i-x_j)
+\ll_\eta\sum_{i\in B}m_i
+\le L(B)\ll\Delta/\gamma_T.
+\tag{34}
+\]
+
+Each edge of the good matching has \(\Phi_\eta(x_i-x_j)\le M_\eta+A_\eta\sqrt{\gamma_T}\) by (29). As \(2m_im_j\le m_i^2+m_j^2\) and matching edges are disjoint, their total ordered off-diagonal energy is at most \((M_\eta+A_\eta\sqrt{\gamma_T})L(G)\). The second part of (33) bounds every farther pair, yielding
+
+\[
+E_\eta(G)\le
+\bigl[\Phi_\eta(0)+M_\eta+
+O_\eta(\sqrt{\gamma_T}+T^{-2})\bigr]L(G).
+\tag{35}
+\]
+
+Use (31), (34), (35), \(L(G)\le L(W)\), and \(\Delta=e(W)L(W)\). Since \(\sqrt{\gamma_T}\ll T^{-2}\) and \(\gamma_T^{-1}\ll T^4\) for \(T\ge1\),
+
+\[
+h_\eta(W)-\Phi_\eta(0)-M_\eta
+\ll_\eta T^{-2}+e(W)T^4.
+\tag{36}
+\]
+
+For \(0<e(W)\le1\), set \(T=e(W)^{-1/6}\); both terms become \(e(W)^{1/3}\). For \(e(W)=0\), (1) already gives the exact upper bound (alternatively let \(T\to\infty\) in (36)). This completes (28).
+
+**Audit and scope.** The improvement over (22) has two load-bearing ingredients: ANF-114's explicit \(T^{-4}\) triple-gap scale forces a \(T\)-matching after deletion at cost \(O(eT^4)\); the resulting good-site packing makes the far triangular Fourier potential \(O(T^{-2})\) and the bad--good potential bounded linearly by deleted source mass. Neither ingredient follows from arbitrary positive-definite kernels without the actual Montgomery--Taylor zero geometry. The estimate is restricted to the fixed triangular notch and **real** multisets: a general positive-Fourier profile in section 5 need not have a quadratic pointwise tail, and nonreal near-extremizers are not controlled by this positive real pair-energy decomposition. The background Hilbert inequality is Lamzouri's Proposition 2.1, and the remaining packing and potential estimates are elementary; no new external theorem or RH-facing zero-location consequence is claimed. A targeted check of the Montgomery--Taylor/Hilbert-space pair-correlation literature and quantitative near-extremal packing did not locate this exact finite-real stability modulus, without establishing a global novelty claim.
