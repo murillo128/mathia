@@ -22,6 +22,8 @@ based_on:
   - research/analytic_frontier/findings/ANF-016-cubic-positive-spectrum-beats-thermodynamic-lattice-ratio.md
   - research/analytic_frontier/findings/ANF-017-edge-detuned-finite-configuration-kills-cubic-survivor.md
   - research/analytic_frontier/findings/ANF-018-finite-real-floor-is-a-classical-stability-constant.md
+  - research/analytic_frontier/findings/ANF-034-central-notch-perturbation-gives-an-explicit-finite-real-separator-ray.md
+  - research/analytic_frontier/findings/ANF-081-two-level-clipping-closes-the-full-real-multiplicity-gate.md
   - research/weil_inertia/findings/WI-001-two-moment-bandwidth-one-barrier.md
   - research/weil_inertia/findings/WI-118-termwise-positive-support-one-pair-kernels-are-screened.md
   - research/prior_art/montgomery-pair-correlation.md
@@ -31,123 +33,61 @@ based_on:
 
 ## Observation
 
-`ANF-002` shows that Lamzouri's conjugation-invariant Hilbert inequality extracts unconditional horizontal information from the BGSST complex-zero pair-correlation formula. `ANF-003` and `ANF-004` show that common-translation vector features and finite convex lifts add no information if they are compressed to scalar global pair moments before the counting step. `ANF-005` isolates the residual universal affine support-one question.
+The source-side motivation is unchanged. ANF-002 extracts unconditional horizontal information from complex-zero pair correlation; ANF-003--ANF-004 show that common-translation vector features and finite convex pair-moment lifts add no information when compressed to scalar global pair moments. ANF-006 obtains a verified ordered-gap improvement, but ANF-007--ANF-009 bound the registered higher-point pressure family. Out-of-band negative scalar tails and spectrally negative compact-band tests also face the exact obstructions of ANF-011--ANF-012.
 
-The sign freedoms in that scalar branch are now tightly constrained. `ANF-010` shows that BGSST's all-frequency positivity is analytically sufficient to discard a Cohn--Elkies negative outer tail, but a scalar PSD Gram kernel cannot carry such a tail. `ANF-011` removes the PSD assumption for the out-of-band route: a nontrivial negative Fourier--Laplace tail violates the universal conjugate-pair floor. `ANF-012` closes the analogous compact-band spectral-sign loophole: universality over conjugation-invariant multisets forces every continuous compact-band spectral profile `J` to satisfy `J>=0`. The only scalar sign freedom left is therefore **spatial** sign change of `F=widehat J`.
-
-`ANF-013`--`ANF-015` tested that freedom on long real lattices. With
-
+The former scalar stability question **has been decided negatively**. ANF-018 identifies, for an even continuous nonnegative spectrum \(J\) supported in \([-1,1]\), with \(F=\widehat J\),
 \[
-P_J(h)=\frac1h\sum_{k\in\mathbb Z}J(k/h),\qquad
-p(J)=\inf_hP_J(h),
+q_{\rm real}(J):=\inf_{\varnothing\ne X\subset\mathbb R\ {\rm finite}}
+ \frac1{|X|}\sum_{x,y\in X}F(x-y)
+ =F(0)-2B_{\rm stab}(F).
 \]
-
-the long simple/duplicated lattice family gives the survival ratio `C(J)/p(J)<C_MT`. `ANF-016` proved that this thermodynamic condition is genuinely weaker than Montgomery--Taylor: the explicit cubic spectrum
-
+The proposed universal Montgomery--Taylor no-go inequality was
 \[
-J_*(x)=1-\frac38|x|-\frac74|x|^2+\frac98|x|^3
-\qquad(|x|\le1)
+B_{\rm stab}(F)\ge
+\frac12\left(F(0)-\frac{C(J)}{C_{\rm MT}}\right).
+\tag{1}
 \]
-
-has `J_*>=0`, `p(J_*)=1` and `C(J_*)=53/40<C_MT`, while its spatial kernel changes sign. Thus no optimization of the thermodynamic packing dual alone can close the scalar branch.
-
-`ANF-017` identifies the finite-volume layer and eliminates that particular survivor. For any finite set of distinct real points `X`, let
-
+ANF-034 constructs a central-notch \(J_s=J_{\rm MT}-s\phi_\eta\ge0\), continuous, even, supported in \([-1,1]\), and proves the **uniform, all-finite-real-sets** strict inequality
 \[
-e_J(X)=\frac1{|X|}\sum_{x,y\in X}\widehat J(x-y),
-\qquad
-q_{\rm real}(J)=\inf_X e_J(X).
+q_{\rm real}(J_s)>\frac{C(J_s)}{C_{\rm MT}}.
+\tag{2}
 \]
-
-Testing both `X` and the same support with multiplicity two and reoptimizing the spectral amplitude gives the exact finite-configuration cap `2-C(J)/e_J(X)`. Hence a scalar shape can beat Montgomery--Taylor only if `C(J)/q_real(J)<C_MT`. The 15-site edge-detuned witness of `ANF-017` forces the cubic back below Montgomery--Taylor.
-
-`ANF-018` now identifies `q_real` with a mature classical variational object. If
-
+Consequently,
 \[
-B_{\rm stab}(F)
-=\sup_X\left(-\frac1{|X|}\sum_{x<y}F(x-y)\right),
+\boxed{
+B_{\rm stab}(\widehat J_s)
+=\frac{\widehat J_s(0)-q_{\rm real}(J_s)}2
+<
+\frac12\left(\widehat J_s(0)-\frac{C(J_s)}{C_{\rm MT}}\right).
+}
+\tag{3}
 \]
+This supplies precisely the **global upper bound** on the optimal stability constant that the earlier scalar question demanded; finite searches alone would not have supplied it. ANF-081 subsequently proves a central-notch affine certificate for **every finite real multiset**, with arbitrary support and multiplicities (its admissible notch parameters need not equal those of ANF-034). ANF-017's failed cubic witness was only a failed *particular* shape, not a universal no-go theorem.
 
-then exactly
-
-\[
-q_{\rm real}(J)=F(0)-2B_{\rm stab}(F).
-\]
-
-Thus the remaining scalar no-go is equivalent to the sharp stability/binding inequality
-
-\[
-B_{\rm stab}(F)
-\ge\frac12\left(F(0)-\frac{C(J)}{C_{\rm MT}}\right).
-\]
-
-Sütő's compact-Fourier ground-state theorem shows that this is precisely a classical positive-type pair-potential class and identifies the unit chain as the one-dimensional critical-density bulk ground state under its regularity hypotheses. The key distinction is finite volume: the optimal stability constant can gain binding below that bulk value, exactly as the boundary-detuned cubic witness does.
-
-Writing `j_0=J(0)`, `I(J)=int |alpha|J(alpha)dalpha`, `m_MT=C_MT-1`, and `b_fin=j_0-q_real`, the same target is
-
-\[
-C_{\rm MT}b_{\rm fin}+I(J)\ge m_{\rm MT}j_0.
-\]
-
-Therefore any spectrum with `I(J)>=m_MT j_0` is already killed by the unit-chain limit. Only the thin regime `I(J)<m_MT j_0` needs finite binding. For the cubic, the exact required gain is `0.001882710090706...`; `ANF-017` proves at least `0.001920094737772...`, exceeding the threshold by only `3.74e-5`. This explains quantitatively why its thermodynamic escape was so fragile.
-
-`ANF-018` also checks a tempting shortcut. The translation autocorrelation of an exact finite minimizer is spatially nonnegative and has spectrum `J|S_X|^2/|X|`, but its zero-frequency spectral value is multiplied by `|X|`. A black-box return to the Carneiro--Chandee--Littmann--Milinovich nonnegative-spatial theorem therefore loses a factor `|X|`; autocorrelation positivity alone does not preserve the original BGSST budget.
-
-The configuration-level branch remains distinct. `ANF-006` records a fully checked local ordered-gap certificate beating the Montgomery--Taylor baseline, while `ANF-007`--`ANF-009` show that simply increasing block size or point order inside the same pressure architecture does not supply a durable asymptotic strategy. Its next escape must alter the information carrier or bridge itself.
+The remaining boundary is genuinely different: a finite-real scalar separator is not a universal certificate on **conjugation-invariant complex** configurations, and a strict improvement in the counting theorem for zeta zeros cannot be inferred from (2)--(3). The separate physical near-extremizer question is owned by the accepted local notch-exposure clue and ANF-099. This clue retains the other, configuration-level question: what information must survive **before** global scalar pair compression to improve the zero-counting bridge?
 
 ## Research question
 
-Two distinct questions remain.
+Can an ordered local statistic, nonlinear defect, conditional/matrix observable, or a new window-accounting bridge retain a certified gain after the ANF-007--ANF-009 point-order and block-cap filters, **without** collapsing to the same global scalar pair-moment envelope?
 
-First, in the **universal affine support-one scalar** class, prove or refute the sharp one-dimensional stability inequality
-
-\[
-\boxed{
-B_{\rm stab}(\widehat J)
-\ge\frac12\left(
-\widehat J(0)-\frac{J(0)+\int|\alpha|J(\alpha)d\alpha}{C_{\rm MT}}
-\right)
-}
-\]
-
-for every continuous even `J>=0` supported in `[-1,1]`, with the right side vacuous when nonpositive. This is exactly equivalent to `C(J)/q_real(J)>=C_MT`. If false, construct an explicit positive spectrum and give a rigorous **upper bound** on its optimal stability constant below the displayed threshold; surviving a collection of sampled finite configurations is not enough.
-
-Second, in the **configuration-level** class, what genuinely new local memory, nonlinear defect, matrix/inertia statistic, window accounting or analytic bridge can retain a fixed gain after the `ANF-007`--`ANF-009` filters? Simply enlarging scalar blocks or point count inside the existing `F/Phi_n` pressure family remains ruled out as a durable asymptotic strategy.
+A viable candidate must specify its configuration observable and counting bridge, distinguish the information it preserves from existing global pair moments, and explain how the needed source-side mean or inequality could be evaluated unconditionally for zeta zeros. Increasing point order within the unchanged \(F/\Phi_n\) pressure family is already screened and is not a new mechanism.
 
 ## Why it may matter
 
-The scalar branch now has a precise bridge to classical many-particle mathematics. `q_real` is the diagonal-restored best stability constant, not merely a numerical finite-set floor. This opens a mature body of tools around one-dimensional ground states, stability constants, finite-cluster binding and structure factors while preserving the exact zeta-side quantity that must be controlled.
-
-The bridge also separates useful and insufficient information. Thermodynamic ground-state results control the bulk and explain the unit-chain constraint, but `ANF-017` proves that boundary-sensitive finite binding can be decisive at the `10^-5` margin relevant here. Conversely, a claimed scalar survivor must control the global optimal stability constant from above; finite searches can falsify such a survivor but cannot establish it.
-
-The configuration-level branch is the known escape from scalar compression. Its value lies in identifying pre-compression information that survives current local-pressure obstructions and can still be evaluated unconditionally for zeta zeros.
+ANF-034 and ANF-081 show that a positive support-one spectrum can strictly beat the Montgomery--Taylor normalization on the entire real configuration class. They remove the claimed universal finite-real stability barrier but do **not** remove the complex counting requirement. Meanwhile ANF-006 demonstrates that local ordered information can produce a certified finite improvement that scalar compression obscures. The unresolved value of this clue lies in identifying a genuinely richer information carrier with a complete, support- and normalization-correct passage to zeta-zero counts, rather than optimizing another real scalar potential.
 
 ## Decisive test
 
-For the scalar branch, search the one-dimensional stability/ground-state literature and derive bounds directly for `B_stab(widehat J)`. The first automatic filter is `I(J)>=m_MT J(0)`, which is already fatal by the unit-chain limit. In the residual regime, compare any rigorous lower-energy construction against the exact required binding
+For any proposed pre-compression carrier, define the functional on actual admissible zero configurations, including multiplicities and nonreal conjugate pairs. Exhibit the exact information lost under the global pair-moment scalarization (for example, a proved separation on matched admissible configurations), then derive a finite inequality whose gain survives the precise ANF-008 block cap and ANF-009 point-order envelope or **explicitly changes** their hypotheses. Carry the inequality through the pair-correlation/mean-value input with the actual Fourier support, coefficient/sign class, horizontal-information bookkeeping and affine normalization. A formula requiring unproved RH, higher-correlation, or source moment hypotheses must be labelled conditional, not counted as an unconditional gain.
 
-\[
-b_{\rm fin}\ge\frac{m_{\rm MT}J(0)-I(J)}{C_{\rm MT}}.
-\]
-
-A candidate counterexample must go the opposite direction and prove that **every** finite real configuration has energy above `C(J)/C_MT`, equivalently that `B_stab` stays strictly below its threshold. Only such a shape should proceed to vertically displaced conjugation-invariant complex multisets.
-
-Do not substitute thermodynamic or periodic ground-state energy for `q_real`: `ANF-017` already demonstrates a finite boundary correction that changes the verdict. Likewise, an autocorrelation transform may be useful only if it controls its `|X|`-fold spectral normalization loss rather than applying the nonnegative-spatial extremal theorem as a black box.
-
-For any proposed out-of-band scalar construction, apply `ANF-011` before optimization. For any compact-band spectrally signed construction, apply `ANF-012`. Those branches remain closed unless the information carrier changes or the inequality becomes zeta-specific rather than universal.
-
-For the configuration-level branch, first apply the exact block cap from `ANF-008` and the point-order envelope from `ANF-009`. A survivor must alter the local functional or bridge and then provide an evidence-matched finite inequality plus a complete passage to zeta zeros at the claimed trust tier.
+A candidate is rejected if the supposed extra invariant scalarizes before counting, its local gain vanishes at the certified block cap, or the claimed unconditional zeta passage loses the gain. Conversely, a complete new bridge with a certified strict zero-counting consequence resolves this configuration-level clue. Reproving (2) or testing another finite real sample does not address it.
 
 ## Evidence boundary
 
-`ANF-018` is a structural reduction and prior-art redirect, not a proof of the sharp stability inequality. Sütő's infinite-volume theorem has extra integrability hypotheses and does not identify the finite-volume optimal stability constant required here. The stealthy-hyperuniform literature is relevant to the interaction class and structure-factor machinery, but it likewise does not erase the finite boundary problem.
+The scalar assertion (1) is **false**, by the explicit ANF-034 construction and the exact ANF-018 identity; ANF-081 makes the real multiplicity scope uniform. This is a Mathia-local logical consequence of persisted derivations, not a claim to a new classical statistical-mechanics theorem. Sütő's thermodynamic compact-Fourier ground-state results do not replace the finite optimal stability constant, and the old ANF-017 cubic computation does not contradict the later central-notch witness.
 
-The autocorrelation observation in `ANF-018` is exact for an attained finite minimizer; minimizing sequences give only asymptotic nonnegativity from below. Its purpose is to falsify a naive black-box return to the nonnegative-spatial Montgomery--Taylor theorem, not to rule out a more structured use of autocorrelations.
-
-`ANF-011` and `ANF-012` still close useful negative out-of-band tails and compact-band spectral sign changes inside the universal affine scalar template. Zeta-specific, non-affine, higher-order, matrix/inertia-before-compression and ordered-configuration mechanisms remain outside those theorems.
-
-`ANF-006` establishes one verified configuration-level gain, while `ANF-007`--`ANF-009` constrain only the registered pressure family. They are not ceilings for richer Bellman/coboundary, altered-window, multi-profile, matrix or otherwise modified pre-compression methods.
+The original out-of-band and compact-band spectral-sign obstructions ANF-011--ANF-012 still apply to their stated scalar templates. ANF-006--ANF-009 constrain only their registered ordered-pressure family, not arbitrary future nonlinear, matrix, conditional, or zeta-specific counting methods. No complete new pre-compression carrier is proved here, no universal complex central-notch certificate follows, and RH remains open.
 
 ## Research disposition
 
-Accepted and narrowed. The live scalar problem is now a sharp best-stability-constant inequality for one-dimensional positive-type compact-spectrum pair potentials. `ANF-018` supplies the exact conversion and shows that the `ANF-017` cubic witness succeeds by barely providing the missing finite-cluster binding beyond the unit-chain bulk energy. Future scalar candidates must be judged against the global stability constant, not only thermodynamic lattices or sampled finite supports. The configuration-level branch remains open only through a genuine carrier or bridge change.
+**Accepted only for the configuration-level information-carrier question.** The formerly open universal scalar stability conjecture is **refuted** by ANF-034, via (2)--(3), with the stronger all-real-multiset affine survival in ANF-081. The residual decisive test is a new pre-compression counting bridge; another finite-real scalar stability test cannot settle it.
