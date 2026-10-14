@@ -470,3 +470,6 @@ Only sources that materially support, delimit, or redirect stored `PL-*` finding
 
 121. **Kiran S. Kedlaya**, *Notes on Analytic Number Theory*, Chapter 3, Section 3.1, Theorem 3.4 (Landau's theorem for Dirichlet series with nonnegative coefficients), online lecture notes. https://kskedlaya.org/ant/chapter-3.html.
      - Role: classical nonnegative-transform abscissa/singularity principle used in PL-460. The same positive-Taylor-series proof applies to nonnegative Mellin transforms after logarithmic change of variable. The special mod-5 real-axis nonvanishing and the reduction from raw prime-window second moments are proved in PL-460, not attributed to this reference.
+
+122. **Gergely Harcos, Kannan Soundararajan**, “A supplement to Chebotarev’s density theorem,” *Science China Mathematics* **66** (2023), 2749–2753. DOI: https://doi.org/10.1007/s11425-022-2141-1. arXiv: https://arxiv.org/abs/2210.13412.
+     - Role: closely related theorem showing that power-saving counting for completely split primes in a Galois extension controls other Frobenius classes. PL-461 uses it as prior-art calibration for the identity-class phenomenon, not as a proof of the one-sided window-moment implication; that implication follows from PL-460's Landau method and the explicit mod-5 factorization.
