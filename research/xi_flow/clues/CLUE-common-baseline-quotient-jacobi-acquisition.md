@@ -1,7 +1,7 @@
 ---
 id: CLUE-xi-flow-common-baseline-quotient-jacobi-acquisition
 type: research-clue
-status: accepted
+status: resolved
 origin: master-researcher
 target_line: xi_flow
 based_on:
@@ -33,8 +33,13 @@ For each fixed bank `R`, eliminate `b` exactly by orthogonal projection `Pi_(1^p
 
 ## Evidence boundary
 
-AF-568 is a generalized-prime **real** identification experiment with a free output origin; its constants and query count are not Jacobi theorems. XF-194/195/196 do not cover a shared unknown complex baseline. No quotient-stable `O(Q)` construction, converse beyond the original `Omega(Q)`, source-faithful Xi measurement implementation, zero-exclusion or RH implication is yet established.
+The original clue posed a genuinely additional nuisance-quotient question; its answer is now supplied by XF-198, not by the clue itself. The result is for an offset common to the **gain-normalized** rows and a fixed total deterministic \(\ell^2\) budget. It does not justify complex-Jacobi acquisition from the physical Xi source, account for per-row or scale-dependent baselines, or imply an Xi zero-collision bound.
 
 ## Research disposition
 
-Accepted as a distinct acquisition-nuisance question. For a fixed bank of `M` scales, fitting one unrestricted complex baseline is exactly projection off the constant vector: `inf_(c in C) ||v-c1||_2 = ||(I-11*/M)v||_2`. XF-197's pointwise and Euclidean margins do not alone establish a projected margin: a constant comparison vector projects to zero. The decisive source-specific test is a uniform lower bound on **within-block centered** complete-Jacobi finite chords over the smaller candidate radius's matched block, followed by assembly of at most `O(Q)` distinct rows under one fixed total `ell^2` noise budget. The zero-transcript lower bound persists with baseline zero. AF-568 makes the additive-origin nuisance substantive, but its real-profile constants and three-query conclusion do not transfer to Jacobi. This acceptance establishes neither quotient stability nor physically justified Xi-source access.
+Outcome: supported
+
+Resolved by:
+- [[research/xi_flow/findings/XF-198-antiphase-jacobi-pairs-recover-support-modulo-common-complex-baseline.md]]
+
+XF-198 proves a within-block antisymmetric finite-chord witness by pairing the exact direct-Jacobi carrier at a half-period separation while controlling the full reciprocal term. Pairwise differences annihilate an unrestricted shared complex baseline exactly. With one-sided comparison at the smaller radius and \(O(p)\) pairs per candidate, the fixed-total-noise unknown-support tariff remains \(\Theta(Q)\) without an upper bound on \(Q/P\). The lower bound is unchanged by choosing the baseline-zero hard instance. This is a synthetic conditional-acquisition statement, not a physical Xi observation theorem.
