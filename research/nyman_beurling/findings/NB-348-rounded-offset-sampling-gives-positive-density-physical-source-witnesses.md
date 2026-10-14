@@ -97,6 +97,94 @@ m\langle E_{n,m}g_2,\nu_q\rangle
 \]
 The leading terms are exactly \(\mathscr C_q(h/q)\). In the Bernoulli derivation, \(m/q=a(q-1)+h/q\ge q\), all periodic phase differences are independent of \(a\), and the remaining terms decrease with \(m/q\). This proves (3) without growth restrictions.
 
+## Quantitative parity-divisor sampling rate
+
+The strong \(L^2\) limit in (2) has an unconditional quantitative rate for the exact arithmetic phase profile:
+\[
+\boxed{\displaystyle
+\|\mathscr C_q-\mathcal L\|_{L^2(-1/2,1/2)}
+\ll q^{-1/2}(\log(2q))^{3/2}.}
+\tag{2a}
+\]
+Consequently, the *same* physical-offset sets from (4) satisfy
+\[
+\boxed{\displaystyle
+\frac{|S_q|}{q}\ge p_0-O\!\left(\frac{(\log(2q))^3}{q}\right),
+\qquad q\ge3.}
+\tag{4a}
+\]
+All implied constants are absolute but not numerically optimized; no finite-\(q\) onset is certified. The improvement concerns source-side sampling, not the per-offset bound (5) or the Nyman--Beurling target distance.
+
+For the proof, set \(s(j)=\sigma_{\pm}(j)\). NB-347(6) gives \(s(2^au)=(a-1)\tau(u)\) for odd \(u\). Dividing the modified \(2\)-Euler factor \(\sum_{a\ge0}(a-1)^2x^a=(1-3x+4x^2)/(1-x)^3\) by the ordinary factor \(\sum_{a\ge0}(a+1)^2x^a=(1+x)/(1-x)^3\) yields
+\[
+\boxed{\displaystyle
+\sum_{j\ge1}\frac{s(j)^2}{j^z}
+=\frac{1-3\,2^{-z}+4\,2^{-2z}}{1+2^{-z}}
+\frac{\zeta(z)^4}{\zeta(2z)},\qquad \Re z>1.}
+\tag{7a}
+\]
+At \(z=2\), this recovers NB-347's \(\sum s(j)^2/j^2=\pi^4/36\). At \(z\downarrow1\) the positive real Euler-factor ratio tends to \(1/3\), leaving a fourth-order divergence. Since the Fourier coefficient of \(\mathfrak D\) at frequency \(j\ne0\) is \(s(|j|)/(2\pi^2j^2)\), the regularity threshold is sharp:
+\[
+\boxed{\mathfrak D\in H^s(\mathbb T)\quad (s<3/2),
+\qquad \mathfrak D\notin H^{3/2}(\mathbb T).}
+\tag{7b}
+\]
+
+For quantitative approximation, \(|s(j)|\le\tau(j)\) and \(\tau(j)^2\le d_4(j)\), the latter following multiplicatively from \((a+1)^2\le{a+3\choose3}\). Summing the first three factors of the fourfold divisor function therefore proves the elementary estimate
+\[
+\sum_{j\le X}s(j)^2
+\le\sum_{n\le X}d_4(n)
+\le X\left(\sum_{a\le X}\frac1a\right)^3
+\ll X(\log(2X))^3.
+\tag{7c}
+\]
+Let \(\mathfrak D_N\) be the Fourier truncation of NB-347(1) through frequency \(N\), including its mean. Parseval gives
+\(\|\mathfrak D_N''\|_2^2=8\sum_{j\le N}s(j)^2\) and
+\(\|(\mathfrak D-\mathfrak D_N)'\|_2^2=(2/\pi^2)\sum_{j>N}s(j)^2/j^2\).
+Applying (7c) and dyadic summation yields
+\[
+\|\mathfrak D_N\|_{H^2}\ll N^{1/2}(\log(2N))^{3/2},
+\qquad
+\|\mathfrak D-\mathfrak D_N\|_{H^1}
+\ll N^{-1/2}(\log(2N))^{3/2}.
+\tag{7d}
+\]
+The tail has zero mean, so its \(H^1\) norm is controlled by the derivative. No pointwise differentiated Fourier series is used.
+
+The rounded sampling operator satisfies a stronger **\(H^2\)-consistency estimate**, in addition to the \(H^1\)-stability of (1):
+\[
+\boxed{\|\mathscr T_qf-tf'\|_2\ll q^{-1}\|f\|_{H^2(\mathbb T)}
+\quad(f\in H^2(\mathbb T),\ q\ge3).}
+\tag{7e}
+\]
+Indeed, on a nearest-grid bin \(I_{q,h}\), put \(g=f'\), \(x_h=h/q\),
+\(\delta_h=h/[q(q-1)]\), and \(b_h=q\delta_h=h/(q-1)\). The exact decomposition is
+\[
+\mathscr T_qf(t)-tg(t)
+=(b_h-t)g(t)
++b_h\int_0^1[g(x_h+\theta\delta_h)-g(t)]\,d\theta.
+\]
+The first term has \(|b_h-t|\ll q^{-1}\). The points in the integral lie in an enlarged circular bin \(K_{q,h}\) of length \(O(q^{-1})\); those enlarged bins have uniformly bounded overlap, including across the periodic endpoints. Absolute continuity, Cauchy--Schwarz, and Jensen bound the squared norm of the second term by
+\[
+O(q^{-2})\sum_h\int_{K_{q,h}}|g'(s)|^2\,ds
+\ll q^{-2}\|f''\|_2^2.
+\]
+This proves (7e) without sampling derivative values at rational phases.
+
+Use (7e) for \(f=\mathfrak D_q\) and the uniform \(H^1\) bound (1) for \(f=\mathfrak D-\mathfrak D_q\). Equation (7d) at \(N=q\) gives
+\[
+\|\mathscr T_q\mathfrak D-t\mathfrak D'\|_2
+\ll q^{-1}\|\mathfrak D_q\|_{H^2}
++\|\mathfrak D-\mathfrak D_q\|_{H^1}
+\ll q^{-1/2}(\log(2q))^{3/2}.
+\]
+Binwise absolute continuity also yields
+\(\|\mathfrak D\circ r_q-\mathfrak D\|_2
+\ll q^{-1}\|\mathfrak D'\|_2\).
+Substitute both estimates in (2) to obtain (2a), then square the error in Chebyshev's estimate (6) to obtain (4a).
+
+The cubic logarithm in the divisor-square mean is classical (Jia and Sankaranarayanan, *The Mean Square of Divisor Function*, Acta Arith. 164 (2014), 181--208, arXiv:1311.4041), but (7c) is proved directly and is the only divisor-moment input. The sampled \(H^2\) estimate is standard one-dimensional approximation theory. The line-specific addition is the rate for the actual rounded physical Nyman source coefficient. It provides no target-occupation, inverse-section, or RH consequence and remains pending independent adversarial review.
+
 ## Positive-density conversion and physical Hilbert norm
 
 NB-347(11a)–(11d) establish
