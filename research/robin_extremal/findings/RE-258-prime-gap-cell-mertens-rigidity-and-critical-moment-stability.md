@@ -187,29 +187,59 @@ equations (11) and (15) give
 \]
 Neither bound invokes any prime-gap theorem or short-interval PNT. The earlier \(O(p^{-23/100+o(1)})\) bound of RE-258 was valid but substantially non-sharp: bounding each displacement by the *largest gap* before summing lost the rankwise cancellation encoded in (9).
 
-### Asymptotic optimality inside the cell class
+### Exact finite-horizon integer-cell moment envelopes
 
-For each large \(p=p_m\) and \(b=p+H_\star\), let \(N\) be the largest index with \(p_N\le b\). Two finite, monotone, integer-labelled transports show that the coefficient \(1\) in (11) is asymptotically optimal at this horizon.
+The uniform rank bound (11) has an **exact attained integer-endpoint refinement**. Fix an integer \(b\ge p=p_m\), write \(H=b-p\), and let \(p^+=p_{m+1}\). Over all finitely supported integer-labelled sources satisfying (1) and the frozen prefix through \(p\),
+\[
+\boxed{
+\begin{aligned}
+\max_Q\Delta D_p(b-p)
+ &=\#\{n\in\mathbb Z:p<n<b,\ n\text{ composite}\},\\
+\min_Q\Delta D_p(b-p)
+ &=-\#\{n\in\mathbb Z:p^+<n\le b,\ n\text{ composite}\}.
+\end{aligned}}
+\tag{17}
+\]
+Both extrema are **attained**, not just suprema. They depend only on the composite integers on the two indicated finite intervals; no prime-gap estimate is needed for (17).
 
-For the **negative** extreme, set \(q_j=p_{j+1}-1\) for \(m<j\le N\), leaving all other labels equal to the original primes. The discrepancy is \(-1\) on essentially every interval \([p_j,p_{j+1})\) covered by the shell, except the last unit before each next prime and the initial unmodified gap. Hence
+To prove this, put \(g_b(x)=(b-x)_+\). The prefix is frozen, so (10) becomes the finite sum
 \[
- -H_\star\le\Delta D_p(H_\star)
- \le-H_\star+(p_{m+1}-p)+(N-m).
- \tag{17}
+\Delta D_p(b-p)=\sum_{j>m}\left[g_b(q_j)-g_b(p_j)\right].
 \]
-For the **positive** extreme, set \(q_j=p_{j-1}+1\) for \(m<j\le N+1\), leaving the remaining labels unchanged. Now \(A_Q(t)=+1\) except for at most one unit after each original prime, giving
+For each \(j>m\), the integer-cell restriction is
+\(p_{j-1}+1\le q_j\le p_{j+1}-1\). Since \(g_b\) is nonincreasing, choose \(q_j=p_{j-1}+1\) to maximize and \(q_j=p_{j+1}-1\) to minimize. The choices at different indices are simultaneously admissible and strictly increasing, including at both ends of a finite changed block; beyond a sufficiently large index their contributions vanish and the ordinary labels can be restored. Reindexing and telescoping yields the equivalent endpoint formulas
 \[
- H_\star-(N-m+1)\le\Delta D_p(H_\star)\le H_\star.
- \tag{18}
+\boxed{
+\begin{aligned}
+U_p(b)&=(b-p-1)_+
+          -\#\{r\text{ prime}:p<r<b\},\\
+V_p(b)&=-(b-p^+)_+
+          +\#\{r\text{ prime}:p^+<r\le b\}.
+\end{aligned}}
+\tag{18}
 \]
-All changed integers are strictly inside their original prime cells, the sources remain strictly increasing at both support boundaries, and their complete original-prime prefixes through \(p\) are unchanged. Guth--Maynard's existing pointwise short-interval estimate gives \(N-m=O(H_\star/L)=o(H_\star)\); Li's existing prime-gap estimate gives \(p_{m+1}-p\ll p^{13/25}=o(H_\star)\). Therefore **both signs** attain
+For integer \(b\), the first positive-part term counts \(p<n<b\), and the second counts \(p^+<n\le b\). Subtracting the displayed prime counts proves (17), including \(b=p\) and the initial prime-gap boundary. For real \(b\ge p\), the two extremal envelopes are exactly the piecewise-linear interpolations of their values at integer endpoints: the same endpoint label choices optimize every summand and \(g_b(n)\) has only integer breakpoints.
+
+At the Guth--Maynard horizon \(H_\star=p^{3/4}L^{-1/2}\exp(\tfrac12L^{1/4})\), first let \(b=p+\lfloor H_\star\rfloor\), \(H=b-p\). The already cited pointwise short-interval theorem gives
+\(\pi(p+H)-\pi(p)=H/L+O(H\exp(-L^{1/4}))\).
+Equations (17)--(18), together with \(p^+-p\ll p^{13/25}\), therefore sharpen the signed extremal asymptotics to
 \[
- \boxed{\Delta D_p(H_\star)=\pm(1+o(1))H_\star,\quad
- \sqrt pL\int_p^{p+H_\star}(I_Q-I_P)
- =\mp(1+o(1))a_pH_\star.}
- \tag{19}
+\boxed{
+\begin{aligned}
+\max_Q\Delta D_p(H)
+ &=H\left(1-\frac1L\right)
+    +O\left(H e^{-L^{1/4}}+1\right),\\
+\min_Q\Delta D_p(H)
+ &=-H\left(1-\frac1L\right)
+    +O\left(H e^{-L^{1/4}}+(p^+-p)+1\right).
+\end{aligned}}
+\tag{19}
 \]
-Here the signs correspond to the positive/negative moment transports respectively, with the kernel sign reversed. External analytic inputs enter **only the saturation proof**, not the upper bounds (9)--(16).
+Since \(e^{-L^{1/4}}=o(L^{-1})\) and
+\((p^+-p)/H=o(L^{-1})\), both signed envelopes are
+\(\pm H(1-L^{-1}+o(L^{-1}))\) in the corresponding order. Piecewise-linear interpolation gives the same formula at real \(H_\star\), with \(H_\star\) replacing \(H\).
+
+These extrema are witnessed explicitly by the finite transports \(q_j=p_{j-1}+1\) (positive discrepancy) and \(q_j=p_{j+1}-1\) (negative discrepancy), restricted to the indices affecting the chosen endpoint. They freeze every ordinary-prime label through \(p\) and remain strictly increasing at the support boundaries. Combined with (15), the refinement also transfers to the leading signed first-annulus Robin-kernel **difference** between each source and the ordinary primes, with its sign reversed and an error smaller than the displayed \(H/L\) correction. This does not estimate the ordinary-prime moment itself.
 
 ## 3. Prior art, falsification, and exact information boundary
 
