@@ -1,10 +1,10 @@
 # RE-258 — Prime-gap-cell integer transports are exactly Mertens-rigid and Robin-critically stable
 
-**Status:** EXACT-DERIVED + LITERATURE-BOUND + PRIME-CELL-RIGIDITY + CRITICAL-MOMENT-STABILITY + ORDINARY-PRIME-APPLICATION-OPEN; independent adversarial review pending.
+**Status:** EXACT-DERIVED + SHARP-INTERLACING-COUNT + SHARP-MERTENS-ENVELOPE + PRIME-CELL-MERTENS-RIGIDITY + ROBIN-CRITICAL-STABILITY + ORDINARY-PRIME-APPLICATION-OPEN; independent adversarial review pending.
 
 **Dependencies:** RE-169 (finite-source Mertens rule), RE-172 (finite prime-supported Euler-factor rigidity), RE-253 (signed triangular prime-counting moment), RE-254 (critical generalized-label transports), RE-256 (exact two-shell real-label compensation), RE-257 (subdyadic integer-label injectivity without cell fidelity). Classical Bertrand–Chebyshev postulate; Runbo Li's unconditional 0.52 prime-gap bound and Guth–Maynard's pointwise short-interval prime-number theorem, already anchored in the line's SOURCES.md.
 
-RE-257 makes exact Mertens matching rigid for integer-label changes confined to a single subdyadic support but permits Robin-critical instability under extremely close *approximate* matching: the rounded RE-256 transport can traverse many genuine prime gaps. The missing geometric distinction is whether each integer replacement must stay inside the cell bounded by its two neighboring **original** primes. This natural rank-labelled constraint gives (i) exact global finite Mertens injectivity without any subdyadic-support hypothesis and (ii) uniform stability of the critical signed Robin moment even when Mertens matching is not imposed. Both are source-class statements, not new theorems about ordinary-prime Robin heights.
+RE-257 makes exact Mertens matching rigid for integer-label changes confined to one subdyadic support, but permits Robin-critical instability under extremely close approximate matching: its rounded transports cross many original prime gaps. Requiring each integer replacement to stay between its two **original neighboring primes** gives global finite Mertens injectivity with no subdyadic restriction. More strongly, the two ordered counting functions differ by **at most one at every height**. This elementary interlacing fact yields a sharp, unconditional first-annulus bound, improves the previous exponent from −0.23 to −0.75, and forces Mertens near-matching of order 1/p without assuming it. None of these source-class statements supplies an ordinary-prime Robin sign theorem.
 
 ## 1. Exact global theorem for prime-gap cells
 
@@ -56,80 +56,167 @@ But \(v_r(r/(r-1))=1\). Thus \(v_r(\mathcal R(Q,P))=-1\) or \(-2\), contradictin
 
 This descending-index argument is *global in the modification support* but *local in each index*. It does not use the number of altered cells, monotonicity of the final labels beyond their defining source interpretation, nor any analytic estimate for prime distribution beyond Bertrand's theorem. The condition \(q_j<p_{j+1}\) is the crucial private-prime certificate: all earlier replacement factors are built out of integers smaller than the final altered prime \(r\).
 
-## 2. Uniform critical signed-moment stability
+## 2. Sharp interlacing-count law and uniform Robin stability
 
-Let \(p\to\infty\) through ordinary primes, \(L=\log p\), and use RE-252–RE-256's critical horizon
+Let \(p=p_m\ge3\) be an ordinary prime, put \(L=\log p\), and suppose \(Q\) satisfies (1) with the **complete original prefix frozen**: \(q_j=p_j\) for \(j\le m\). Write
 \[
- H=H_\star(p)=\frac{p^{3/4}}{\sqrt L}
-    \exp\!\left(\frac12L^{1/4}\right)=p^{3/4+o(1)}.
-\tag{7}
+ A_Q(t)=\Pi_Q(t)-\pi(t),\qquad
+ \Pi_Q(t)=\#\{j:q_j\le t\}.
 \]
-Let \(Q_p\) be any source satisfying (1), with all original prime labels through \(p\) unchanged. This is a condition on the complete source prefix, not merely matching its counting function. Alterations above \(p\) can be arbitrary in number and location as long as the cells and the discrete increasing-source condition hold; for each fixed \(p\), take finite support so that the finite Mertens convention remains meaningful.
-
-For \(S=P,Q_p\) define
+For any \(p_k\le t<p_{k+1}\), every \(j\le k-1\) has \(q_j<p_{j+1}\le p_k\le t\), while every \(j\ge k+2\) has \(q_j>p_{j-1}\ge p_{k+1}>t\). Thus only indices \(k,k+1\) can affect the count, and
 \[
- D_{S,p}(H)=
- \sum_{\substack{r\in S\\p<r\le p+H}}
-       \bigl(H-(r-p)\bigr)-\frac{H^2}{2L}.
-\tag{8}
+ \boxed{A_Q(t)=\mathbf1_{\{q_k\le t\}}+\mathbf1_{\{q_{k+1}\le t\}}-1
+ \ \in\{-1,0,1\}.}
+ \tag{9}
 \]
-Then uniformly over all such \(Q_p\),
+This is a deterministic rank/interlacing statement: no gap bound, short-interval PNT, or integrality of the replacement labels is used in (9). Integrality is still essential for the exact product rigidity (3).
+
+For the signed triangular statistic (8), the common centering term cancels and the frozen prefix gives
 \[
-\boxed{\frac{L}{p^{3/2}}
-       \bigl(D_{Q_p,p}(H)-D_{P,p}(H)\bigr)
-       =O\!\left(p^{-23/100+o(1)}\right)=o(1).}
-\tag{9}
+ \Delta D_p(H):=D_{Q,p}(H)-D_{P,p}(H)
+ =\int_p^{p+H}A_Q(t)\,dt.
+ \tag{10}
 \]
-In particular, the order-one critical signed excursion possible for RE-254/RE-256/RE-257 transports cannot occur within the original-prime-cell integer class. Exact Mertens normalization is not required for (9).
-
-**Proof.** Define \(g_p\) as the largest consecutive-prime gap meeting the interval \([p/2,2p]\), with its two neighboring boundary primes included. Runbo Li's prime-in-short-interval theorem supplies
+Therefore the **sharp finite-height uniform bound** is
 \[
- g_p\ll p^{13/25}=p^{0.52}.
-\tag{10}
+ \boxed{|\Delta D_p(H)|\le H\qquad(H\ge0).}
+ \tag{11}
 \]
-Since \(g_p=o(H)\) and \(H=o(p)\), the labels that can contribute differently to (8) have original indices with
+More generally, for every absolutely continuous compactly supported test function \(\phi\) in \((p,\infty)\), Stieltjes integration by parts gives the bounded-variation stability rule
 \[
- p<p_j\le p+H+g_p.
-\tag{11}
+ \sum_j\bigl(\phi(q_j)-\phi(p_j)\bigr)
+ =-\int_p^\infty A_Q(t)\phi'(t)\,dt,\qquad
+ \left|\sum_j(\phi(q_j)-\phi(p_j))\right|
+ \le\int_p^\infty|\phi'(t)|\,dt.
+ \tag{12}
 \]
-Indeed for \(p_j\le p\) the sources agree; for later indices (1) gives \(q_j>p_{j-1}\ge p\), so no lower-bound crossing occurs; and a prime more than \(g_p\) beyond \(p+H\) cannot enter from above. Every relevant displacement is at most \(g_p\).
+Only finitely many summands can be nonzero under the finite-support hypothesis.
 
-The cutoff weight \(w_b(t)=(b-t)_+\), \(b=p+H\), is globally 1-Lipschitz. Consequently the cancellation of the identical centering terms and rankwise pairing give the **exact deterministic bound**
+### Automatic quantitative Mertens fidelity
+
+For \(f(t)=\log(t/(t-1))\), the finite-source identity of RE-169 and (9) give the **exact** representation
 \[
- |D_{Q_p,p}(H)-D_{P,p}(H)|
- \le \sum_{\substack{j\\p<p_j\le p+H+g_p}}
-      |q_j-p_j|
- \le g_p\,[\pi(p+H+g_p)-\pi(p)].
-\tag{12}
+ \Gamma(Q)-\gamma
+ =\sum_j[f(q_j)-f(p_j)]
+ =\int_p^\infty\frac{A_Q(t)}{t(t-1)}\,dt,
 \]
-Guth–Maynard's pointwise short-interval prime-number theorem applies to \(H+g_p=p^{3/4+o(1)}\), yielding
+and hence
 \[
- \pi(p+H+g_p)-\pi(p)\ll H/L.
-\tag{13}
+ \boxed{|\Gamma(Q)-\gamma|
+ \le\int_p^\infty\frac{dt}{t(t-1)}
+ =\log\frac p{p-1}=O(p^{-1})
+ =o((\sqrt p\,L)^{-1}).}
+ \tag{13}
 \]
-Combining (10)–(13) gives
+Thus every finite-support, prefix-frozen prime-cell transport automatically satisfies **much better than Robin-critical approximate Mertens matching**, even if exact matching fails. Exact equality is still rigid by (3). **Exact Mertens-envelope sharpness.** For the fixed prefix \(p=p_m\), integrality and (1) give
+\(p_{j-1}+1\le q_j\le p_{j+1}-1\) for \(j>m\). Since
+\(f(t)=\log(t/(t-1))\) is strictly decreasing, every admissible finite-support source satisfies
 \[
- \frac{L}{p^{3/2}}|\Delta D|
- \ll\frac{H g_p}{p^{3/2}}
- \ll p^{-23/100}L^{-1/2}\exp(\tfrac12L^{1/4})
- =p^{-23/100+o(1)}.
-\tag{14}
+\boxed{-M_-(p)\le\Gamma(Q)-\gamma\le M_+(p),}
+\tag{13a}
 \]
-All constants in this bound are independent of the chosen cell transport. \(\square\)
-
-If a CA-preserving construction demands the stronger frozen prefix through \(p+H/4\), that is a subclass of these controls, so the same conclusion holds. The original-prime CA integer itself and its divisor-sum height remain fixed; (9) compares only the *future source-dependent triangular moment*.
-
-## 3. Falsification, prior art and exact information boundary
-
-The cell restriction is genuine. For example moving \(p_j=7\) to the composite label \(q_j=8\) within the original cell \((5,11)\), leaving the other primes fixed, is admissible and yields a different (non-Mertens-matched) integer source. RE-172 already shows finite injectivity when all changed labels themselves must be primes; RE-257 shows integer-label injectivity when *all changes jointly* lie in one subdyadic interval. Neither requires or derives (1), and neither yields this **unrestricted finite-support, prime-cell-indexed** injectivity theorem. Conversely, RE-257's rounded two-shell transport uses displacements of size about \(Le^{-L^{1/4}}H=p^{3/4+o(1)}\), vastly larger than the available \(O(p^{0.52})\) prime cells: its instability is therefore not a counterexample to (9).
-
-The valuation argument is elementary unique factorization plus Bertrand–Chebyshev, not new Diophantine approximation or a theorem about actual prime gaps. The quantitative estimate is a combination of a Lipschitz triangular cutoff, the existing Guth–Maynard theorem and Li's known 0.52 gap bound. Searches against the immediate classical and modern prime-gap/Euler-factor literature and local RE-172/RE-254–RE-257 dependencies found no reason to claim independent number-theory novelty for the elementary tools. Existing SOURCES.md entries cover both modern inputs; no literature-index mutation is required.
-
-The hypotheses cannot be suppressed silently. Arbitrary integer labels outside the original prime cells admit telescoping identities such as
+where the sharp positive envelopes are the convergent sums
 \[
- \frac21=\frac32\frac43,
-\tag{15}
+\begin{aligned}
+M_+(p)&=\sum_{j>m}\bigl[f(p_{j-1}+1)-f(p_j)\bigr],\\
+M_-(p)&=\sum_{j>m}\bigl[f(p_j)-f(p_{j+1}-1)\bigr].
+\end{aligned}
+\tag{13b}
 \]
-so integer support alone does not imply global injectivity. If replacements are real rather than integer, prime-adic valuations cannot be used. If infinitely many indexed prime cells may change, there need not be a last altered index, so (3) is not asserted. If only a common prime-counting envelope or relative adjacent-gap ratio is preserved, a label can cross many original prime cells and (9) need not hold. The moment bound does not assert a sign for \(D_{P,p}(H)\) or estimate the remaining remote Robin annulus.
+They are **exact suprema** over finite-support integer transports: choose each changed label at its smallest or largest allowed integer, truncate at a terminal index, and let that index grow. Both choices remain strictly increasing at every index, including support boundaries. Termwise monotonicity proves that no other admissible source can exceed these envelopes.
 
-**Research consequence.** The synthetic ambiguity near a CA-selected Robin frontier is sensitive not simply to integer labels, exact Mertens mass, or relative gap fidelity, but to whether the replacement source crosses *original prime-gap cells*. This is an exact, prime-specific fidelity discriminator: preserving every cell kills finite exact-Mertens compensation globally and kills the critical signed-moment excursion quantitatively. What is **not** proved is that any weaker natural CA selection or divisor-sum hypothesis enforces this cell fidelity, or that the actual ordinary-prime signed moment is small. Neither Robin's inequality nor RH follows.
+The positive envelope has an exact prime-square Euler-product form. The intervals \([p_{j-1}+1,p_j]\) cover every prime gap after \(p\) except its first unit. Integrating \(-f'(t)=1/(t(t-1))\) across these intervals gives
+\[
+\boxed{
+M_+(p)=f(p)-\sum_{\substack{r\ge p\\r\ {\rm prime}}}
+           \log\frac{r^2}{r^2-1}
+       =f(p)+\sum_{\substack{r\ge p\\r\ {\rm prime}}}\log(1-r^{-2}).
+}
+\tag{13c}
+\]
+Omitting instead the last unit of each gap gives
+\[
+M_-(p)=f(p_{m+1})-
+   \sum_{j\ge m+2}\log\frac{(p_j-1)^2}{p_j(p_j-2)}.
+\tag{13d}
+\]
+The prime-number theorem and partial summation imply
+\(\sum_{r\ge p,\ r\ {\rm prime}}r^{-2}=O((p\log p)^{-1})\) and
+\(p_{m+1}=p(1+o(1))\). Therefore
+\[
+\boxed{M_+(p)=(1+o(1))p^{-1},\qquad
+       M_-(p)=(1+o(1))p^{-1}.}
+\tag{13e}
+\]
+The coefficient \(1\) in (13) is thus asymptotically optimal **in both signs** within the finite-support integer-cell class. These are suprema approached by longer finite transports, not claims of exact attainment. The prime-square Euler-product tail is classical; the exact source-constrained envelope is the line-local deduction.
+
+### Uniform local Robin-kernel comparison
+
+For \(S=P,Q\), retain the RE-253/RE-254 source-model kernel
+\[
+ \vartheta_S(t)=\sum_{r\in S,\ r\le t}\log r,\quad
+ h(t)=\frac{-\log(1-t^{-1})}{\log t},\quad
+ k(t)=\frac1{t\log t},\quad
+ I_S(t)=(\vartheta_S(t)-t)h'(t)-(h(t)-k(t)).
+\]
+The \(h-k\) terms cancel between sources. Abel summation, with \(A_Q(p)=0\), yields the exact identity
+\[
+ \vartheta_Q(t)-\vartheta_P(t)
+ =\log(t)\,A_Q(t)-\int_p^t\frac{A_Q(u)}u\,du
+ =L A_Q(t)+O(H/p),\qquad p\le t\le p+H.
+ \tag{14}
+\]
+Uniformly for \(0\le H\le p/2\), use \(h'(t)\ll(p^2L)^{-1}\), \(h''(t)\ll(p^3L)^{-1}\) to freeze \(h'\) at \(p\). With the exact positive \(a_p=-\sqrt p\,L^2h'(p)=Lp^{-3/2}(1+O(L^{-1}))\) from RE-253,
+\[
+ \boxed{\sqrt p\,L\int_p^{p+H}(I_Q-I_P)(t)\,dt
+ =-a_p\,\Delta D_p(H)
+ +O\left(\frac{L H^2}{p^{5/2}}\right).}
+ \tag{15}
+\]
+The constant is absolute and independent of how many cells change. In particular, at the critical Guth--Maynard horizon
+\[
+ H_\star=\frac{p^{3/4}}{\sqrt L}\exp(\tfrac12L^{1/4})=p^{3/4+o(1)},
+\]
+equations (11) and (15) give
+\[
+ \boxed{\frac L{p^{3/2}}|\Delta D_p(H_\star)|
+ \le \frac{LH_\star}{p^{3/2}}=p^{-3/4+o(1)},\qquad
+ \left|\sqrt pL\int_p^{p+H_\star}(I_Q-I_P)\right|
+ \le(1+o(1))a_pH_\star=o(1).}
+ \tag{16}
+\]
+Neither bound invokes any prime-gap theorem or short-interval PNT. The earlier \(O(p^{-23/100+o(1)})\) bound of RE-258 was valid but substantially non-sharp: bounding each displacement by the *largest gap* before summing lost the rankwise cancellation encoded in (9).
+
+### Asymptotic optimality inside the cell class
+
+For each large \(p=p_m\) and \(b=p+H_\star\), let \(N\) be the largest index with \(p_N\le b\). Two finite, monotone, integer-labelled transports show that the coefficient \(1\) in (11) is asymptotically optimal at this horizon.
+
+For the **negative** extreme, set \(q_j=p_{j+1}-1\) for \(m<j\le N\), leaving all other labels equal to the original primes. The discrepancy is \(-1\) on essentially every interval \([p_j,p_{j+1})\) covered by the shell, except the last unit before each next prime and the initial unmodified gap. Hence
+\[
+ -H_\star\le\Delta D_p(H_\star)
+ \le-H_\star+(p_{m+1}-p)+(N-m).
+ \tag{17}
+\]
+For the **positive** extreme, set \(q_j=p_{j-1}+1\) for \(m<j\le N+1\), leaving the remaining labels unchanged. Now \(A_Q(t)=+1\) except for at most one unit after each original prime, giving
+\[
+ H_\star-(N-m+1)\le\Delta D_p(H_\star)\le H_\star.
+ \tag{18}
+\]
+All changed integers are strictly inside their original prime cells, the sources remain strictly increasing at both support boundaries, and their complete original-prime prefixes through \(p\) are unchanged. Guth--Maynard's existing pointwise short-interval estimate gives \(N-m=O(H_\star/L)=o(H_\star)\); Li's existing prime-gap estimate gives \(p_{m+1}-p\ll p^{13/25}=o(H_\star)\). Therefore **both signs** attain
+\[
+ \boxed{\Delta D_p(H_\star)=\pm(1+o(1))H_\star,\quad
+ \sqrt pL\int_p^{p+H_\star}(I_Q-I_P)
+ =\mp(1+o(1))a_pH_\star.}
+ \tag{19}
+\]
+Here the signs correspond to the positive/negative moment transports respectively, with the kernel sign reversed. External analytic inputs enter **only the saturation proof**, not the upper bounds (9)--(16).
+
+## 3. Prior art, falsification, and exact information boundary
+
+The one-unit counting discrepancy in (9) is the elementary consequence of interlacing two indexed ordered sequences; it is analogous to classical eigenvalue interlacing/spectral-shift counting bounds and is **not claimed as a new general theorem**. The substantive line-local correction is that this stronger representation of the very same RE-258 prime-cell condition gives a **sharp first-Robin-annulus stability law**, an automatic \(O(p^{-1})\) Mertens mismatch bound, and optimal signed controls. No new external analytic theorem is used. The pre-existing line SOURCES.md already anchors the Guth--Maynard and Li inputs needed for (17)--(19), and RE-169 anchors the finite Euler-product normalization.
+
+The original global integer-factor rigidity (3) still requires **finite** support and ordinary-prime-cell integer labels: the largest changed index and its prime-adic valuation supply its unique-factorization certificate. Equation (9), by contrast, uses only original-cell positional interlacing and remains valid with real replacement labels. The finite-source Mertens identity (13) is asserted for finite differences, not arbitrary infinite perturbations without convergence control. The prefix-frozen hypothesis is essential for the integral identities from \(p\); without it an initial offset remains. An unrestricted integer transport may cross many original cells and fails the one-unit counting estimate; RE-254--RE-257 remain valid matched controls.
+
+The extremizers (17)--(19) use integer labels that are generally **composite**, not additional ordinary-prime realizations. This sharp stability is a fidelity theorem for a synthetic class relative to the *fixed* ordinary primes, not a bound for \(D_{P,p}(H_\star)\) itself. It neither forces cancellation of the actual CA-selected signed prime moment nor estimates the remote Robin annulus. Exact finite Mertens matching implies identity by (3), but even a near-exact match as strong as (13) need not make \(\Delta D_p(H)\) vanish identically; the correct finite-height obstruction is the sharp \(H\)-bound (11). No Robin inequality or RH conclusion follows.
+
+**Research consequence.** RE-258's geometric hypothesis does considerably more than the previous largest-gap argument detected: all rankwise cell transports have at most unit **global counting error**, automatically tiny Mertens error, and sharp \(p^{-3/4+o(1)}\) normalized first-annulus stability. The remaining source-specific question is why any naturally induced synthetic alternative should preserve these original-prime cells; the ordinary-prime signed-moment and remote-tail sign problems remain open.
