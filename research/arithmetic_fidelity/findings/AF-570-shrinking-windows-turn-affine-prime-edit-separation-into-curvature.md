@@ -69,12 +69,25 @@ In particular,
      {\varepsilon_{\rm aff,full}(A,S)}=1.}
 \tag{7}
 \]
+In fact, for every such **fixed finite** set \(S\), there is an \(A_*(S)>0\)
+such that the stronger exact identity
+\[
+\boxed{\varepsilon_{\rm aff,3}(A,S)=\varepsilon_{\rm aff,full}(A,S)}
+\qquad(0<A<A_*(S))
+\]
+holds. This is equality of **supremal** deterministic-noise radii over legal
+three-point designs; the leftmost design point can approach \(0\) without
+being equal to it. Every noise level strictly below the full-curve radius
+is attainable by some legal fixed triple. The threshold \(A_*(S)\) and the
+limiting optimal interior point may depend on the finite known candidate
+set; no uniform joint prime/window statement is claimed.
+
 The fixed, source-independent triple
 \[
 (a_0,a_1,a_2)=(A^2,A/2,A),\qquad 0<A<1/2,
 \tag{8}
 \]
-already achieves (7). Two or fewer observations cannot identify two sources even at zero noise under unrestricted affine calibration, because an affine nuisance fits any two distinct observed coordinates. Thus three fixed observations are **asymptotically** sufficient for the bounded-window full-curve margin, although AF-569 requires four adaptive observations for **exact universal full-margin attainment on the entire unbounded domain**. These are different experiments; no contradiction is involved.
+already achieves (7). Two or fewer observations cannot identify two sources even at zero noise under unrestricted affine calibration, because an affine nuisance fits any two distinct observed coordinates. The universal triple (8) is asymptotically optimal, while an \(S\)-tailored triple recovers the exact **supremal** full-window radius for every sufficiently small window. AF-569 still requires four adaptive observations for exact universal full-margin attainment on the entire unbounded domain. These are different experiments; no contradiction is involved.
 
 ## Exact source boundary jets
 
@@ -206,12 +219,94 @@ Then letting \(p\to\infty\), uniformly over \(q>p\), the leading coefficient is
 \((c/4)\log p\,[1+O(1/\log p)]\).
 This is a **sequential coefficient statement**, not a uniform joint \((p,A)\) limit. It exposes the natural critical scale \(A\asymp1/\log p\) while rigorously showing an extra small-window power of \(A\) under affine rather than constant-offset uncertainty.
 
-Chebyshev best uniform approximation, finite-difference contrasts, and nuisance-resistant experimental design are classical. Equation (17) is proved directly, not presented as a new approximation theorem. The prime-zeta analytic expansion is classical (Fröberg 1968), with the 2026 Kawalec expansion a preprint; both are already documented under AF-552 in SOURCES.md. General nuisance and model-design precedents are documented under AF-568 (Atkinson--Cox 1974 and Rosa--Harman 2016). The source-specific delta is the **exact curvature coefficient, its uniform sign for rational-prime edit locations, and the sharp bounded-window three-query/full-curve fidelity ratio**. No new general-method priority is claimed.
+Chebyshev best uniform approximation, finite-difference contrasts, and nuisance-resistant experimental design are classical. Damelin--Ragozin--Werman (2021), anchored in SOURCES.md, treat min-max affine approximation of concave/convex functions in greater generality. Equation (17) is proved directly, not presented as a new approximation theorem. The prime-zeta analytic expansion is classical (Fröberg 1968), with the 2026 Kawalec expansion a preprint; both are already documented under AF-552 in SOURCES.md. General nuisance and model-design precedents are documented under AF-568 (Atkinson--Cox 1974 and Rosa--Harman 2016). The source-specific delta is the **exact curvature coefficient**, its uniform sign for rational-prime edit locations, the sharp bounded-window asymptotic, and the **exact sufficiently-small-window three-query/full-curve equality of supremal radii**. The affine-approximation and curvature-ordering steps are classical or elementary; no new general approximation theorem is claimed.
 
-The interval is \((0,A]\), the input coordinate \(a\) is fixed/common, the affine calibration is unbounded but shared across probes, and the errors are independent bounded adversarial errors. The asymptotics in (6)--(7) require **first fixing the finite candidate set** and then shrinking \(A\). They do not establish uniform error terms as the prime locations, candidate count, or logarithmic diameter vary jointly with \(A\), and do not assert exact three-query saturation at a fixed positive \(A\). No fixed nonzero absolute noise floor survives. Recalibrating independently at each point destroys the shared-nuisance contrast. These are generalized-prime matched controls indexed by genuine rational-prime edit locations, not a discriminator of ordinary rational primes against arbitrary generalized-prime systems. No RH consequence follows without a separate faithful and stable arithmetic-to-zeros transfer.
+The interval is \((0,A]\), the input coordinate \(a\) is fixed/common, the affine calibration is unbounded but shared across probes, and the errors are independent bounded adversarial errors. The asymptotics in (6)--(7) require **first fixing the finite candidate set** and then shrinking \(A\). They do not establish uniform error terms as the prime locations, candidate count, or logarithmic diameter vary jointly with \(A\), but **do** give exact three-query saturation of the supremal radius at every fixed sufficiently small positive \(A\), with an \(S\)-dependent threshold and interior query coordinate. They do not assert a maximizing legal triple when the boundary point \(a=0\) is excluded. No fixed nonzero absolute noise floor survives. Recalibrating independently at each point destroys the shared-nuisance contrast. These are generalized-prime matched controls indexed by genuine rational-prime edit locations, not a discriminator of ordinary rational primes against arbitrary generalized-prime systems. No RH consequence follows without a separate faithful and stable arithmetic-to-zeros transfer.
 
 Decisive independent checks: expand \(E_1\) through its linear term and rederive \(K_p,M_p\); verify the \(3/2\) logarithmic-derivative coefficient in (13); check the uniform-in-\(q\) tail mean rather than differencing uncontrolled individual prime asymptotics; prove (17) at the three alternation sites; check the \(1/2\) pairwise ball radius and \(1/4\) three-contrast radius factors independently; confirm that all nonadjacent quadratic coefficients have the common sign; and do not import AF-569's unbounded-domain \(d(S)/4\) value into a finite window.
 
+## Exact three-probe saturation on each sufficiently small window
+
+The exponentiated implicit-function argument behind (10) gives a
+**real-analytic extension** of every \(\Phi_p\) through \(a=0\). Write
+\(G_i=\Phi_{p_{i+1}}-\Phi_{p_i}\) for the adjacent gaps. Equations
+(10) and (15) give \(G_i(0)=0\) and
+\[
+G_i''(0)=2(M_{p_{i+1}}-M_{p_i})<0.
+\]
+Fix the finite set \(S\). For any two indices \(i,j\), the analytic
+function \(G_i''-G_j''\) either vanishes identically near zero or has a
+fixed sign on some sufficiently short positive interval (its first
+nonzero Taylor coefficient decides the sign). There are only finitely
+many such pairs. Thus, after choosing one common \(A_*(S)>0\), the
+curvatures are simultaneously ordered there, and one index \(i_*\)
+satisfies
+\[
+0<-G_{i_*}''(a)\le -G_i''(a)
+\quad(0\le a\le A_*(S),\ \text{all }i).
+\tag{22}
+\]
+The argument includes exact ties among the quadratic coefficients:
+the higher analytic jets break ties, or the germs coincide.
+
+For \(0<A<A_*(S)\), define each adjacent gap's *chord sag*
+\[
+H_i^A(a)=G_i(a)-\frac aA G_i(A),\qquad 0\le a\le A.
+\tag{23}
+\]
+Every \(H_i^A\) is strictly concave, is zero at both endpoints, and
+is positive in the interior. Moreover, \(H_i^A-H_{i_*}^A\) is concave
+with zero endpoint values by (22), hence
+\[
+H_i^A(a)\ge H_{i_*}^A(a)\ge0\quad(0\le a\le A).
+\tag{24}
+\]
+For any nonadjacent source pair, its gap is a sum of adjacent \(G_i\)'s,
+so its chord sag is the corresponding sum of the \(H_i^A\)'s and is
+at least \(H_{i_*}^A\) as well.
+
+Put \(h_*^A=\max_{0\le a\le A}H_{i_*}^A(a)>0\), attained at a
+unique \(\tau_A\in(0,A)\). For any strictly concave gap \(G\) with
+\(G(0)=0\), let \(H\) be its chord sag and \(h=\max H\). The exact
+affine-approximation identity is
+\[
+\inf_{u,v}\sup_{0<a\le A}|G(a)-u-va|=\frac h2.
+\tag{25}
+\]
+Indeed, the endpoint chord shifted upward by \(h/2\) gives
+uniform error \(h/2\). Conversely, evaluating the error at the
+sag maximum and subtracting its affine interpolation between the
+two endpoints yields \(h\), at most twice its sup norm. The missing
+query \(a=0\) is harmless in this **full-curve** equality because
+\(G\) extends continuously there.
+
+The pairwise ball-intersection factor \(1/2\) in (16), the
+curvature ordering (24), and the sum rule for nonadjacent pairs imply
+the **exact** full-window identity
+\[
+\varepsilon_{\rm aff,full}(A,S)=\frac{h_*^A}{4}.
+\tag{26}
+\]
+Now use the legal fixed triple \((a_0,\tau_A,A)\), with
+\(0<a_0<\tau_A\) tending to zero. Its noise-free affine-annihilating
+contrast (19), applied to each adjacent gap, tends to
+\(H_i^A(\tau_A)\ge h_*^A\). Every nonadjacent contrast is a sum of
+these positive adjacent contrasts. Hence the three-query
+unique-decoding radius tends to at least \(h_*^A/4\) as \(a_0\downarrow0\),
+while no finite design can exceed the full-curve radius (26).
+This proves the exact equality of **suprema** above. In particular,
+every \(\varepsilon<h_*^A/4\) is handled by a single admissible
+three-point design chosen in advance. The interior coordinate can be
+specified intrinsically by
+\[
+G_{i_*}'(\tau_A)=\frac{G_{i_*}(A)}{A}.
+\tag{27}
+\]
+The construction requires only finite-source analytic curvature
+ordering; arbitrary families of merely concave curves need not
+share a least-curvature gap or a universally adequate interior
+coordinate.
+
 ## Consequence for Arithmetic Fidelity
 
-AF-569's unbounded-domain four-query theorem needs remote nuisance anchors and a global gap peak. When only a shrinking near-boundary window is retained, the same source family instead loses its affine-quotiented information at **quadratic**, rather than linear, rate in the window width; a simple fixed three-query second difference asymptotically preserves **all of that reduced information**. Thus exact recovery budget and absolute conditioning can move in opposite directions under restriction of the representation: one fewer probe suffices relative to a newly diminished quotient margin, not relative to AF-569's original full-domain margin.
+AF-569's unbounded-domain four-query theorem needs remote nuisance anchors and a global gap peak. When only a shrinking near-boundary window is retained, the same source family instead loses its affine-quotiented information at **quadratic**, rather than linear, rate in the window width; a universal fixed three-query second difference preserves **all of that reduced information asymptotically**, while a set-tailored triple approaches the **exact full-curve quotient radius** for every sufficiently small finite window. Thus exact recovery budget and absolute conditioning can move in opposite directions under restriction of the representation: one fewer probe suffices relative to a newly diminished quotient margin, not relative to AF-569's original full-domain margin.
