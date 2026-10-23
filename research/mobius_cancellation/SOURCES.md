@@ -396,3 +396,21 @@ Role: primary prior-art boundary for MC-517's setting of comparison indicators b
 Bhaswar B. Bhattacharya, *Collision times in multicolor urn models and sequential graph coloring with applications to discrete logarithms*, Annals of Applied Probability 26 (2016), no. 6, 3286–3318. DOI: https://doi.org/10.1214/16-AAP1176. Author manuscript: https://arxiv.org/abs/1311.4243 (v5, 24 May 2016).
 
 Role: primary prior-art anchor for MC-519. Theorem 1.3 and Section 4 treat color-dependent urn-selection laws. Equation (4.2) gives the Poisson-embedded no-collision product, whose two-color specialization is used in MC-519's necessity proof. MC-519 derives its clipped-overlap criterion and fixed-sample quantitative bounds explicitly; it does not claim novelty for Poisson embedding, the product formula, or the general nonuniform multicolor birthday mechanism.
+
+## MC-S67 — Littlewood–Titchmarsh reciprocal-zeta bound under RH
+
+E. C. Titchmarsh, revised by D. R. Heath-Brown, *The Theory of the Riemann Zeta-Function*, second edition, Clarendon Press / Oxford University Press (1986), equation (14.2.6). The estimate is explicitly recorded in Philippe Flajolet and Linas Vepstas, *On Differences of Zeta Values*, arXiv:math/0611332v1 (2006), equation (52), p. 15: https://algo.inria.fr/flajolet/Publications/FlVe06.pdf. Article DOI: https://doi.org/10.1016/j.cam.2007.07.040.
+
+Role: classical conditional input for MC-520: for fixed `sigma>1/2` and every fixed `a>0`, RH implies `1/zeta(sigma+it) <<_(sigma,a) (1+|t|)^a`. MC-520 keeps the dependence on the fixed vertical line explicit and derives its own Mellin mean-square consequence. No control on the critical line or unconditional bound is imported.
+
+## MC-S68 — Saffari–Vaughan additive/multiplicative window conversion
+
+Bahman Saffari and R. C. Vaughan, *On the fractional parts of x/n and related sequences. II*, Annales de l'Institut Fourier 27 (1977), no. 2, 1–30, p. 25. DOI: https://doi.org/10.5802/aif.649. The precise general inequality and proof used here are reproduced as Lemma 10 in Ofir Gorodetsky, Kaisa Matomäki, Maksym Radziwiłł and Brad Rodgers, *On the variance of squarefree integers in short intervals and arithmetic progressions*, Geometric and Functional Analysis 31 (2021), 111–149. DOI: https://doi.org/10.1007/s00039-021-00557-5.
+
+Role: classical real-variable conversion in MC-520 from a uniform multiplicative-window second moment to the fixed additive length required by the local Farey clue. Only Lemma 10 is used for this transfer; the squarefree-count variance theorem is not substituted for signed Möbius variance.
+
+## MC-S69 — Chinis, method-specific short-interval variance and Gao attribution
+
+Jake Chinis, *On the Liouville Function in Short Intervals*, International Mathematics Research Notices 2022, no. 15, 11203–11219. DOI: https://doi.org/10.1093/imrn/rnab063. Author manuscript: https://arxiv.org/pdf/2007.06788v2.
+
+Role: Theorem 1.2 and its longer-block consequence support the method-specific rate boundary in MC-178. Separately, pp. 1–2 report Gao's unpublished RH bound of order `Xh(log X)^A`, with a footnote specifying its original Möbius setting. MC-520 records that stronger attribution while proving the sufficient `X^(1+epsilon)h` bound independently; Gao's unpublished proof is not asserted to have been verified.

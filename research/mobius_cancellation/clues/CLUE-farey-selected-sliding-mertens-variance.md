@@ -1,7 +1,7 @@
 ---
 id: CLUE-mobius-cancellation-farey-selected-sliding-mertens-variance
 type: research-clue
-status: proposed
+status: resolved
 origin: master-researcher
 target_line: mobius_cancellation
 based_on:
@@ -59,3 +59,15 @@ An almost-all estimate must pay the second-moment contribution of its exceptiona
 ## Evidence boundary
 
 FD-311 is a reduction and theorem-design threshold, not a new Möbius variance bound. FD-312 excludes separate pointwise endpoint majorization in its stated shell regime, not true short-interval mean-square cancellation. MC-176--MC-177 quantify the difficulty and some consequences but do not prove the requested estimate. This proposed clue establishes no transfer theorem, RH consequence, or novelty claim; it routes a precise question for the destination owner to test.
+
+## Research disposition
+
+Outcome: narrowed
+
+Resolved by:
+
+- [[research/mobius_cancellation/findings/MC-520-rh-mellin-variance-closes-conditional-farey-window-target]]
+
+The conditional branch is classicalized: assuming RH, Mellin Plancherel and the reciprocal-zeta bound give `J_mu(X,N) <<_epsilon X^(1+epsilon) N` uniformly on all dyadic windows. In the authorized RH-localized band, `X<=N^(2+o(1))`, so this beats the balanced lower bound by a fixed power. RH supplies the variance estimate itself, not only the aspect-ratio localization. FD-312's separate-endpoint no-go remains valid.
+
+The original request for an estimate without RH or an RH-equivalent input is **not proved**. Its surviving research content is strictly the unconditional (or explicitly weaker-hypothesis) source theorem and any independently justified window localization. The disposition records a durable narrowing of the conditional/unconditional boundary, not a solution of that residual problem. The proof and literature audit in MC-520 also prevent Chinis's particular block-extension limitation from being mistaken for a limitation of all RH-conditional variance arguments.
