@@ -7,7 +7,7 @@ derived: true
 
 # RH Mellin variance and balanced Farey capacity
 
-This projects the explicit bridge in MC-520, retaining its RH hypothesis and the method-level scope of the earlier obstructions. It adds no cancellation theorem.
+This projects the explicit bridge in MC-520 and the variance-to-zero-free refinement in MC-521, retaining their hypotheses and the method-level scope of the earlier obstructions. It adds no cancellation theorem.
 
 ## Same moment, same selected shell
 
@@ -27,3 +27,11 @@ This projects the explicit bridge in MC-520, retaining its RH hypothesis and the
 The [[research/prior_art/incremental/PA-rh-reciprocal-zeta-subpower-bound|RH reciprocal-zeta bound]] controls frequencies after Mellin Plancherel; [[research/prior_art/incremental/PA-saffari-vaughan-averaging|Saffari–Vaughan averaging]] converts multiplicative to additive windows. These are separate documented dependencies, not a new prior-art theorem proving the Farey consequence by itself.
 
 [[research/mobius_cancellation/mind/intuition/MI-100-mellin-differences-retain-the-rh-short-window-variance-gain|MC MI-100]] records the retained-difference mechanism; [[research/farey_discrepancy/mind/intuition/MI-066-rh-mellin-variance-excludes-balanced-near-capacity|FD MI-066]] records the matching shell and surviving endpoint barrier. Their synthesis does not increase the evidence level. Unconditional cancellation, logarithmic-loss variance, and general Farey-route closure are not established here.
+
+## Reverse direction without sharp endpoints
+
+[[research/mobius_cancellation/findings/MC-521-smooth-deconvolution-removes-the-variance-zero-free-boundary-loss|MC-521]], equations (1)–(14), assumes the complete uncentered moment bound \(J(X,X^\theta)\ll_\varepsilon X^{1+\varepsilon}(X^\theta)^{2-\eta}\), for every \(\varepsilon>0\) and every sufficiently large real \(X\), with fixed \(0<\theta<1\), \(0<\eta\le1\). It derives zero exclusion in \(\Re s>\alpha=1-\theta\eta/2\). Its multiplicative-window version has the same analytic consequence. In contrast, [[research/mobius_cancellation/findings/MC-177-gallagher-diagonal-energy-direct-mertens-power|MC-177]], equation (14), recovers sharp Mertens endpoints only with exponent \(\max(\alpha,\theta)\) by its direct boundary method.
+
+MC-521 applies [[research/prior_art/incremental/PA-van-cittert-approximate-deconvolution|finite van Cittert deconvolution]] to the smooth test weight, with fixed depth satisfying \(K(1-\theta)>\theta\eta/2\). The resulting Mellin test family excludes a putative zero without a uniform inverse estimate at growing height. This improves the analytic conclusion when \(\theta>2/(2+\eta)\); it neither refutes MC-177's method-specific optimum nor supplies the corresponding sharp unsmoothed Mertens bound or removes its weighted Gallagher Gaussian-removal cost.
+
+Section 5 of MC-521 explicitly combines its implication with MC-520's RH converse: diagonal variance at each of a sequence of fixed \(\theta_j\uparrow1\), with the complete all-scale quantifiers, is RH-equivalent. Constants may depend on \(j\). A selected shell, uncontrolled exceptional starts, or centering by an uncontrolled mean cannot replace the premise. At the balanced \(\theta=1/2\) scale, MC-521 states that this gives no stronger Farey-window estimate. [[research/mobius_cancellation/mind/intuition/MI-101-smooth-deconvolution-separates-zero-exclusion-from-endpoint-recovery|MC MI-101]] preserves these distinctions. The uniform arithmetic variance input remains unproved unconditionally; no new unconditional zero-free region or novelty claim follows.

@@ -458,3 +458,4 @@ This stable projection inventories every current canonical Weil Inertia finding.
 - [[research/weil_inertia/findings/WI-451-rational-fourier-lattice-common-grid-support-rebate|WI-451]]
 - [[research/weil_inertia/findings/WI-452-commensurate-cyclotomic-positive-support-gap|WI-452]]
 - [[research/weil_inertia/findings/WI-453-primitive-five-grid-unbounded-positivity-support-surcharge|WI-453]]
+- [[research/weil_inertia/findings/WI-454-coherent-hankel-differences-recover-energy-with-square-summable-calibration|WI-454]]

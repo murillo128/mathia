@@ -527,3 +527,4 @@ This stable projection inventories every current canonical Möbius Cancellation 
 - [[research/mobius_cancellation/findings/MC-518-asymmetric-collision-poisson-moment-leakage|MC-518]]
 - [[research/mobius_cancellation/findings/MC-519-asymmetric-collision-clipped-overlap-poisson-criterion|MC-519]]
 - [[research/mobius_cancellation/findings/MC-520-rh-mellin-variance-closes-conditional-farey-window-target|MC-520]]
+- [[research/mobius_cancellation/findings/MC-521-smooth-deconvolution-removes-the-variance-zero-free-boundary-loss|MC-521]]

@@ -79,4 +79,5 @@ This is a purely structural corpus projection. A link here means only that the t
 - [[research/prior_art/incremental/PA-riesz-energy-roots-of-unity]]
 - [[research/prior_art/incremental/PA-saffari-vaughan-averaging]]
 - [[research/prior_art/incremental/PA-thurston-shear-coordinate]]
+- [[research/prior_art/incremental/PA-van-cittert-approximate-deconvolution]]
 - [[research/prior_art/incremental/PA-venkov-zograf-artin-factorization]]

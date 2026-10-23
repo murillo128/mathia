@@ -314,6 +314,7 @@ This is a path-derived structural projection for graph topology. Each link means
 - [[research/mobius_cancellation/mind/intuition/MI-098-complete-pair-sieve-factorization-pushes-gain-to-incomplete-discrepancy]]
 - [[research/mobius_cancellation/mind/intuition/MI-099-endpoint-only-cross-root-bias-has-a-square-root-conductor-resolution-floor]]
 - [[research/mobius_cancellation/mind/intuition/MI-100-mellin-differences-retain-the-rh-short-window-variance-gain]]
+- [[research/mobius_cancellation/mind/intuition/MI-101-smooth-deconvolution-separates-zero-exclusion-from-endpoint-recovery]]
 
 ### Nyman–Beurling
 - [[research/nyman_beurling/mind/intuition/MI-001-target-aware-gram-geometry-must-carry-absolute-scale]]

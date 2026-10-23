@@ -40,3 +40,5 @@ The territory therefore remains `active`, not `open`: Mathia is traversing the c
 ## Conditional short-window variance
 
 [[research/graph/relations/rh-mellin-variance-and-farey-capacity|RH Mellin variance and balanced Farey capacity]] records MC-520's classical RH-conditional variance input and its application to balanced Farey near-capacity. It supplies no unconditional Mertens or zero-free gain, so the territory remains `active` with unchanged mass.
+
+[[research/mobius_cancellation/findings/MC-521-smooth-deconvolution-removes-the-variance-zero-free-boundary-loss|MC-521]] sharpens the reverse conditional transfer: smooth-test deconvolution removes the sharp-endpoint exponent from zero exclusion under the complete, uncentered, all-scale moment premise. It explicitly retains MC-177's direct-method limitation, the unproved variance input, and MC-520's RH converse. This is a conditional transfer refinement inside A1, not an unconditional zero-free gain; its state and mass remain unchanged.
