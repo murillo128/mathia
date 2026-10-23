@@ -473,3 +473,6 @@ Only sources that materially support, delimit, or redirect stored `PL-*` finding
 
 122. **Gergely Harcos, Kannan Soundararajan**, “A supplement to Chebotarev’s density theorem,” *Science China Mathematics* **66** (2023), 2749–2753. DOI: https://doi.org/10.1007/s11425-022-2141-1. arXiv: https://arxiv.org/abs/2210.13412.
      - Role: closely related theorem showing that power-saving counting for completely split primes in a Galois extension controls other Frobenius classes. PL-461 uses it as prior-art calibration for the identity-class phenomenon, not as a proof of the one-sided window-moment implication; that implication follows from PL-460's Landau method and the explicit mod-5 factorization.
+
+123. **Alessandro Zaccagnini**, “The Selberg integral and a new pair-correlation function for the zeros of the Riemann zeta-function,” *Rivista di Matematica della Università di Parma* **7**(1) (2016), 133–151. arXiv: https://arxiv.org/abs/1603.02952.
+     - Role: classical converse-variance calibration for PL-463. Section 3.3 records that a strong upper bound for the deterministically centered multiplicative Selberg integral implies a zero-free half-plane. PL-463 separately proves its empirically centered additive-window, single mod-5 residue implication using mean-zero tests and finite-order box-average inversion; that statement is not attributed to Zaccagnini.
