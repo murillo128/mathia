@@ -15,7 +15,7 @@ This file records durable literature dependencies for `research/farey_discrepanc
 
 ## Absolute-discrepancy endpoint barrier
 
-- François Dress, *Discrépance des suites de Farey*, Journal de théorie des nombres de Bordeaux **11**(2) (1999), 345--367, MR 1745884, Numdam `JTNB_1999__11_2_345_0`. Role: primary source for the exact theorem that the normalized absolute discrepancy of the Farey sequence of order `n` is `1/n`; `FD-010` uses it to classify complete `L^infty` discrepancy as an endpoint-dominated quantity rather than an RH-sensitive replacement for the cumulative Franel statistic.
+- François Dress, *Discrépance des suites de Farey*, Journal de théorie des nombres de Bordeaux **11**(2) (1999), 345--367, MR 1745884, Numdam `JTNB_1999__11_2_345_0`. Role: primary source for the exact theorem that the normalized absolute discrepancy of the Farey sequence of order `n` is `1/n`; `FD-010` uses it to classify complete `L^infty` discrepancy as an endpoint-dominated quantity rather than an RH-sensitive replacement for the cumulative Franel statistic. `FD-337` uses its sample-point consequence `max_k |x_k-k/N|<=1/Q` to transfer every `q=o(Q)` rank-sine band to the corresponding Ramanujan–Mertens band.
 
 ## Empirical-distribution quadratic identity
 
@@ -74,7 +74,7 @@ This file records durable literature dependencies for `research/farey_discrepanc
 
 ## Prime-divisibility large-sieve auxiliary input
 
-- H. L. Montgomery and R. C. Vaughan, *The large sieve*, Mathematika **20**(2) (1973), 119--134, DOI `10.1112/S0025579300004708`. Role: primary anchor for the classical additive large-sieve inequality on separated rational points used in `FD-108` to turn the physical coefficient law into a simultaneous `L^2` bound for prime-divisibility projections.
+- H. L. Montgomery and R. C. Vaughan, *The large sieve*, Mathematika **20**(2) (1973), 119--134, DOI `10.1112/S0025579300004708`. Role: primary anchor for the classical additive large-sieve inequality on separated rational points used in `FD-108` to turn the physical coefficient law into a simultaneous `L^2` bound for prime-divisibility projections. `FD-337` applies Theorem 1 in its dual form to separated real points along monotone rank-to-position interpolation, controlling the whole Fourier Taylor remainder with relative norm error `O(q Delta)`.
 - Henryk Iwaniec, *The large sieve with prime moduli*, Revista Matemática Iberoamericana **38**(7) (2022), 2337--2354, DOI `10.4171/RMI/1381`. Role: prior-art boundary for sharper prime-modulus large-sieve estimates under additional coefficient-support or `L^2` hypotheses. `FD-108` does not claim the classical bound is optimal for the physical coefficient sequence; it isolates only the power-scale limitation of the immediate first-order divisibility reduction.
 
 ## Dirichlet-series finite-window mean value
