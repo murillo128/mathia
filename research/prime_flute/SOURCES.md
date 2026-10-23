@@ -416,6 +416,22 @@ Relevant finding: PF-346; relevant local clue: CLUE-positive-width-transition-sc
 
 **Scope warning.** These are classical identities and structural results. PF-346 applies them to the weighted cosine Gram form in PF-344's corridor trial; neither these sources nor that calculation identify the full flute DtN form with the Gram model or control errors relative to its exponentially small shorted energies.
 
+## S24 — Fourier form bounds and monotonicity of positive shorting
+
+**R. M. Gray**, *Toeplitz and Circulant Matrices: A Review*, Foundations and Trends in Communications and Information Theory 2 (2006), 155–239; author revision 2009.
+
+- https://ee.stanford.edu/~gray/toeplitz.pdf
+- Section 4.2, Lemma 4.1: eigenvalue bounds from the Fourier quadratic form and the symbol's essential bounds. PF-347 uses the same elementary mechanism directly for its cosine Gram form.
+
+**W. N. Anderson, Jr. and G. E. Trapp**, *Shorted Operators. II*, SIAM Journal on Applied Mathematics 28 (1975), 60–71. DOI: 10.1137/0128007.
+
+- https://doi.org/10.1137/0128007
+- Classical positive shorting framework; PF-347 proves the needed finite-dimensional monotonicity and homogeneity directly by the variational minimum.
+
+Relevant finding: PF-347; relevant local clue: CLUE-positive-width-transition-schur-complement.md.
+
+**Scope warning.** These classical comparisons do not identify a corridor Gram form with the prime-flute DtN operator. PF-347 controls addition of the bounded-frequency symmetric seam block to the Gram model; nonsingular pant terms, intermodule transition elimination and the unbounded high sector remain outside that conclusion.
+
 ## Provenance policy for future additions
 
 For each future finding, record separately:
