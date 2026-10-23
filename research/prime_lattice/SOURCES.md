@@ -476,3 +476,6 @@ Only sources that materially support, delimit, or redirect stored `PL-*` finding
 
 123. **Alessandro Zaccagnini**, “The Selberg integral and a new pair-correlation function for the zeros of the Riemann zeta-function,” *Rivista di Matematica della Università di Parma* **7**(1) (2016), 133–151. arXiv: https://arxiv.org/abs/1603.02952.
      - Role: classical converse-variance calibration for PL-463. Section 3.3 records that a strong upper bound for the deterministically centered multiplicative Selberg integral implies a zero-free half-plane. PL-463 separately proves its empirically centered additive-window, single mod-5 residue implication using mean-zero tests and finite-order box-average inversion; that statement is not attributed to Zaccagnini.
+
+124. **Philippe Flajolet, Xavier Gourdon, Philippe Dumas**, “Mellin transforms and asymptotics: Harmonic sums,” *Theoretical Computer Science* **144**(1–2) (1995), 3–58. DOI: https://doi.org/10.1016/0304-3975(95)00002-E. Author manuscript: https://algo.inria.fr/flajolet/Publications/mellin-harm.pdf.
+     - Role: classical geometric-dilation, vertical-pole-family and logarithmic-oscillation background for PL-464. The dyadic empirical-variance transfer and contradiction between periodic-factor residue phases and real Dirichlet logarithmic-derivative residues are derived in PL-464, not attributed to this source.
