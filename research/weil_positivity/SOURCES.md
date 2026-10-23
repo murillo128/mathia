@@ -190,3 +190,9 @@ This file records only durable literature dependencies for canonical findings in
 ## Positive-block rank and alignment constraints
 
 - **Ronald G. Douglas**, *On majorization, factorization, and range inclusion of operators on Hilbert space*, Proceedings of the American Mathematical Society 17 (1966), no. 2, 413–415. DOI: `10.1090/S0002-9939-1966-0203464-1`. Classical range-inclusion and operator-factorization criterion; WP-438 applies its elementary finite rank-one block-positivity case to the thermal Bost--Connes prime field rather than claiming a new general range theorem.
+
+## Positive heat mixtures and Laplace-Gram completions
+
+- **NIST Digital Library of Mathematical Functions**, §5.2(i), equation [5.2.1](https://dlmf.nist.gov/5.2.E1), Euler's Gamma integral. WP-439 uses its elementary rescaling to construct an exact positive heat-mixture star completion for logarithmic exponent greater than one. This occurrence of the Gamma function is an integral normalization, not a derivation of the Weil archimedean term.
+- **Nachman Aronszajn**, *Theory of reproducing kernels*, Transactions of the American Mathematical Society 68 (1950), no. 3, 337–404. DOI: `10.1090/S0002-9947-1950-0051437-7`. Classical positive-kernel/Hilbert-space framework; prior-art boundary for WP-439's Laplace Gram and finite-charge square completion.
+- **Jonathan R. Partington, Sandra Pott, and Radosław Zawiski**, *Laplace–Carleson Embeddings on Model Spaces and Boundedness of Truncated Hankel and Toeplitz Operators*, Integral Equations and Operator Theory 92 (2020), article 37. DOI: `10.1007/s00020-020-02594-5`. Theorem 4.1 and its proof factor positive-measure Laplace/Hankel kernels through an L2 Laplace map. WP-439 uses this as the closest checked kernel/operator prior-art comparison; its closed, potentially unbounded prime-shift analysis operator and prime-ray obstruction are derived separately.
