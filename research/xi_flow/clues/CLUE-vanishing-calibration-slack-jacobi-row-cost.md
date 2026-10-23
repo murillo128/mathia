@@ -57,3 +57,9 @@ Resolved by:
 - [[research/xi_flow/findings/XF-201-vanishing-jacobi-calibration-slack-has-quartic-row-cost]]
 
 For the specified singleton, alpha=1, first-derivative experiment, XF-201 proves a sharp joint regime: for sufficiently large Q and `0<epsilon<=Q^(-2)`, deterministic detection requires and suffices with `Theta(1+sigma^2/(Q epsilon^4))` distinct rows. The upper bound uses pairs in two endpoint clusters at distance `Theta(Q epsilon)`; a clipped complex velocity gives two global admissible baselines and a common adaptive transcript for the matching lower bound. The full supremum class distance is `Theta(sqrt(Q) epsilon^2)`, and every fixed finite bank aliases strictly below the exact full-curve threshold. The proof retains the exact finite-Q threshold and controls the complete reciprocal term analytically. It does not classify the intermediate regime `Q^2 epsilon -> infinity`, all optimal row geometries, or physical Xi acquisition.
+
+XF-202 extends the outcome to the remaining small-slack phase-rotation regimes:
+
+- [[research/xi_flow/findings/XF-202-rotating-jacobi-certificates-locate-the-calibration-crossover]]
+
+The full-curve separation is `asymp sqrt(Q) epsilon^2/(1+Q epsilon)`. A rotating-tangent finite bank and a globally clipped-velocity adaptive adversary give sharp cost `asymp 1+sigma^2 (1+Q epsilon)^2/(Q epsilon^4)` whenever `epsilon^(5/2)<=sigma^2`, hence for every fixed positive total noise budget and sufficiently small slack. The quartic-to-quadratic crossover is at `epsilon asymp Q^(-1)`. The remaining unrestricted joint zero-noise design problem and physical Xi access are not settled.
