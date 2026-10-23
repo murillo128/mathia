@@ -327,3 +327,10 @@ AF-574 derives an exact tangent-chord certificate throughout the small-window pr
 - De Boor's *Divided Differences* (2005), §§8–9, already listed under AF-571, supplies the normalized derivative and coefficient formulas for the finite stopping certificate. AF-571/572 supply the prime-edit boundary signs and sharp critical derivative budget; AF-573/574 supply the known-budget endpoint-localization comparison.
 
 AF-575 derives a source-realized distinction between an unknown strictly subcritical nuisance promise and a known budget: no uniform finite adaptive query bound, finite noiseless termination on every admitted input, and zero uniform positive full-curve noise margin. Its noise-aware certificate has an explicit sufficient slack/precision condition. This is a derived specialization of classical information and interpolation ideas, without a general novelty or RH claim.
+
+## AF-576 — Randomized error and stopping tails under unknown calibration slack
+
+- Bin Yu, **“Assouad, Fano, and Le Cam,”** in *Festschrift for Lucien Le Cam*, Springer (1997), 423–435. [Paper](https://web.stanford.edu/class/stats300a/REFS/yu1997assouad.pdf). Role: classical two-hypothesis minimax testing framework; AF-576 proves its coupling inequality directly.
+- Robert J. Kunsch, Erich Novak, and Daniel Rudolf, **“Solvable integration problems and optimal sample size selection,”** *Journal of Complexity* 53 (2019), 40–67, DOI: 10.1016/j.jco.2018.10.007; [author manuscript](https://arxiv.org/abs/1805.08637). Role: per-input versus worst-case expected cost, randomized adaptive transcript comparisons and truncation (Proposition 3.13), and smooth hidden-perturbation arguments (Theorem 3.15).
+
+AF-576 combines AF-575's source-admissible Taylor extensions with a seed-independent transcript coupling. It derives the exact binary finite-budget minimax error and the sharp error–stopping-tail tradeoff. The methods are classical; the result concerns the registered unknown-slack calibration class and carries no general novelty or RH claim.
