@@ -315,6 +315,7 @@ This is a path-derived structural projection for graph topology. Each link means
 - [[research/mobius_cancellation/mind/intuition/MI-099-endpoint-only-cross-root-bias-has-a-square-root-conductor-resolution-floor]]
 - [[research/mobius_cancellation/mind/intuition/MI-100-mellin-differences-retain-the-rh-short-window-variance-gain]]
 - [[research/mobius_cancellation/mind/intuition/MI-101-smooth-deconvolution-separates-zero-exclusion-from-endpoint-recovery]]
+- [[research/mobius_cancellation/mind/intuition/MI-102-centered-dyadic-variance-recovers-full-principal-parts]]
 
 ### Nyman–Beurling
 - [[research/nyman_beurling/mind/intuition/MI-001-target-aware-gram-geometry-must-carry-absolute-scale]]
@@ -560,6 +561,7 @@ This is a path-derived structural projection for graph topology. Each link means
 - [[research/prime_lattice/mind/intuition/MI-063-the-live-prime-lattice-gate-is-a-complex-polarized-lower-frame-at-covariance-scale]]
 - [[research/prime_lattice/mind/intuition/MI-064-the-mod5-first-moment-premise-is-a-zero-free-input]]
 - [[research/prime_lattice/mind/intuition/MI-065-seam-filtering-recovers-sparse-arithmetic-poles-from-dyadic-variance]]
+- [[research/prime_lattice/mind/intuition/MI-066-relative-frames-transfer-frontiers-but-admit-common-off-critical-poles]]
 
 ### Robin Extremal
 - [[research/robin_extremal/mind/intuition/MI-001-robin-failure-requires-self-tangent-half-mass-event-gaps]]
@@ -776,6 +778,7 @@ This is a path-derived structural projection for graph topology. Each link means
 - [[research/weil_inertia/mind/intuition/MI-076-positive-safe-line-averages-face-a-blind-or-singular-defect-dichotomy]]
 - [[research/weil_inertia/mind/intuition/MI-077-finite-cost-hankel-frequency-banks-are-low-pass]]
 - [[research/weil_inertia/mind/intuition/MI-078-nonnegative-cyclotomic-multiples-charge-extra-support]]
+- [[research/weil_inertia/mind/intuition/MI-079-fixed-order-moment-convergence-removes-density-defect-not-every-negative-direction]]
 
 ### Weil Positivity
 - [[research/weil_positivity/mind/intuition/MI-001-positivity-needs-a-sign-producing-global-operation]]

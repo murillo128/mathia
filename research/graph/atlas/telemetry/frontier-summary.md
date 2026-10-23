@@ -24,6 +24,10 @@ Semantic inspection is selective. Complete structural memberships do not imply c
 
 The oldest retained episode leaves the fixed trailing window and remains in Git. Other source changes have structural membership but are not certified as semantically inspected or classified by this bounded pass.
 
+## Conditional moment-input reconciliation
+
+[[research/weil_inertia/findings/WI-456-retracted-moment-transport-leaves-only-a-conditional-density-capstone|WI-456]] corrects an external source assessment and makes the surviving classical conditional density theorem explicit. The withdrawn source supplied no accepted unconditional arithmetic input. This evidence reconciliation and its graph/reference maintenance do not establish a new frontier expansion, so no episode is added. No retained episode depends on the withdrawn finding; the event set and ratios are unchanged.
+
 ## Retained prospective window
 
 Classifiable episodes: **20**. Insufficient-evidence episodes: **0**. Retrospective episodes: **0**.

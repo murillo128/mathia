@@ -88,14 +88,14 @@ The classical variational principle explains the polynomial certificate, but nei
 ## Falsification controls and consequences
 
 - If the model has an atom at zero, (5) permits that much limiting nonpositive mass. Nonnegative model support alone is insufficient.
-- If only finitely many moments are available, the subsequential limit need not be determined. The first-two-moment extremizers in WI-001 remain admissible.
+- If only finitely many moments are available, the subsequential limit need not be determined. The first-two-moment extremizers in [[research/weil_inertia/findings/WI-001-two-moment-bandwidth-one-barrier|WI-001]] remain admissible.
 - If only model or finite-algebra certificates are known, premise (1) for the actual arithmetic matrices is absent. This is exactly the layer withdrawn by the source.
-- WI-006's screened replacement concerns distinguishing two populations with the same compressed operator. It does not contradict a hypothetical source theorem excluding their common spectral distribution.
+- [[research/weil_inertia/findings/WI-006-critical-lattice-screening-is-matrix-equivalent-to-doubles|WI-006]]'s screened replacement concerns distinguishing two populations with the same compressed operator. It does not contradict a hypothetical source theorem excluding their common spectral distribution.
 - Even (3) for actual zeta zeros gives density one, not RH. A finite or zero-density off-line exceptional set may remain; simplicity is a separate condition that RH does not require.
 
 An exact control for the last limitation is \(A_d=\operatorname{diag}(-1,1,\ldots,1)\), \(N_d=d\), \(S_d=d-2\), for \(d\ge2\). Its empirical moments converge at every fixed order to those of \(\delta_1\), which is determinate and has no zero atom, and its positive-index budget is an equality. Nevertheless it has one negative direction at every \(d\). This is a finite-matrix control, not an asserted zeta-zero configuration: it shows why the conditional density theorem cannot by itself exclude every exceptional block.
 
-The valid cell-cutoff obstruction in WI-003 remains a statement about the pinned manuscripts: a global parameter cannot implement a cellwise modulus truncation. It neither establishes the separately reported Proposition R nor turns the withdrawn proof into an active unconditional input. A future higher-moment route must provide new arithmetic transport or a new independently justified counting interface; repairing a symbol or rechecking the rational constants does not do so.
+The valid cell-cutoff obstruction in [[research/weil_inertia/findings/WI-003-cell-truncation-does-not-reduce-moduli-as-written|WI-003]] remains a statement about the pinned manuscripts: a global parameter cannot implement a cellwise modulus truncation. It neither establishes the separately reported Proposition R nor turns the withdrawn proof into an active unconditional input. A future higher-moment route must provide new arithmetic transport or a new independently justified counting interface; repairing a symbol or rechecking the rational constants does not do so.
 
 ## Prior art and mathematical delta
 

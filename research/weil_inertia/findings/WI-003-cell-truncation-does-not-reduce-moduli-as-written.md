@@ -168,6 +168,6 @@ That observation sharply localizes the burden of proof and prevents exact-ration
 
 ## 8. Consequence for `weil_inertia`
 
-The Yang--Yang exact-moment manuscripts supply no unconditional improvement to the independent baseline in WI-001. Their retraction leaves the literal cutoff obstruction intact and preserves the distinction between an algebraic certificate and its missing arithmetic input. The claimed `13/18`, `0.7962`, order-14, and density-one rungs cannot be used as established arithmetic evidence through this source.
+The Yang--Yang exact-moment manuscripts supply no unconditional improvement to the independent baseline in [[research/weil_inertia/findings/WI-001-two-moment-bandwidth-one-barrier|WI-001]]. Their retraction leaves the literal cutoff obstruction intact and preserves the distinction between an algebraic certificate and its missing arithmetic input. The claimed `13/18`, `0.7962`, order-14, and density-one rungs cannot be used as established arithmetic evidence through this source.
 
 The five obligations in Section 4 are necessary checks on any future proof that actually uses such a cellwise truncation, not a standing instruction to repair the withdrawn submission. A different higher-moment argument must be judged on its own exact source identities and estimates. WI-456 preserves the conditional moment-to-density implication and the remaining gap between density one and individual-zero exclusion.

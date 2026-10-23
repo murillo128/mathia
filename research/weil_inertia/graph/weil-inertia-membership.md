@@ -12,7 +12,6 @@ derived: true
 This stable projection inventories every current canonical Weil Inertia finding. Links assert line ownership only, not dependence, support, chronology, novelty, or endorsement. The source of membership is the current findings tree, not a curator window.
 
 - [[research/weil_inertia/findings/WI-001-two-moment-bandwidth-one-barrier|WI-001]]
-- [[research/weil_inertia/findings/WI-002-density-one-moment-tower-needs-audit|WI-002]]
 - [[research/weil_inertia/findings/WI-003-cell-truncation-does-not-reduce-moduli-as-written|WI-003]]
 - [[research/weil_inertia/findings/WI-004-rank-trace-remainder-rigidifies-near-extremizers|WI-004]]
 - [[research/weil_inertia/findings/WI-005-critical-lattice-screening-defeats-depth-only-negative-mass|WI-005]]
@@ -460,3 +459,4 @@ This stable projection inventories every current canonical Weil Inertia finding.
 - [[research/weil_inertia/findings/WI-453-primitive-five-grid-unbounded-positivity-support-surcharge|WI-453]]
 - [[research/weil_inertia/findings/WI-454-coherent-hankel-differences-recover-energy-with-square-summable-calibration|WI-454]]
 - [[research/weil_inertia/findings/WI-455-wang-endpoint-flatness-controls-subpower-window-shortening|WI-455]]
+- [[research/weil_inertia/findings/WI-456-retracted-moment-transport-leaves-only-a-conditional-density-capstone|WI-456]]

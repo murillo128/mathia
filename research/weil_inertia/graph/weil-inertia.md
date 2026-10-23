@@ -21,4 +21,6 @@ Canonical findings and `mind/` remain authoritative. Membership links are struct
 
 ## Current source frontier
 
+[[research/weil_inertia/graph/relations/conditional-moment-density-and-screening|Conditional moment density and critical-lattice screening]] separates the withdrawn arithmetic transport from the surviving conditional density theorem, the literal cutoff obstruction and the operator-level replacement symmetry. It does not identify density-one control with individual-zero exclusion.
+
 WI-104 shows that simultaneous full-packed defects can have trivial shared kernel, but WI-105--110 separate algebraic rank from quantitative coercivity: near-parallel defect kernels force a conditioning/transmission tradeoff that bounded linear rescue cannot remove. WI-111--114 then use established prime-distribution input to force polynomial-dimensional near-null sectors, with the current corrected WI-114 range ruling out every fixed deletion power below `11/21`.

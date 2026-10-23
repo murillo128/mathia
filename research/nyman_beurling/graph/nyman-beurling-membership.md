@@ -358,3 +358,4 @@ This stable projection inventories every current canonical Nyman–Beurling find
 - [[research/nyman_beurling/findings/NB-349-entire-late-dilation-spans-have-vanishing-first-free-gain|NB-349]]
 - [[research/nyman_beurling/findings/NB-350-late-dilation-aggregate-is-the-exact-early-shell-kernel|NB-350]]
 - [[research/nyman_beurling/findings/NB-351-geometric-source-seeds-retain-a-positive-target-distance-under-all-dilations|NB-351]]
+- [[research/nyman_beurling/findings/NB-352-finite-nyman-patches-cannot-remove-the-geometric-target-obstruction|NB-352]]
