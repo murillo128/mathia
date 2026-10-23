@@ -449,3 +449,4 @@ This stable projection inventories every current canonical Weil Positivity findi
 - [[research/weil_positivity/findings/WP-439-positive-heat-mixtures-admit-closed-star-completions-but-remain-compact-on-every-prime-ray|WP-439]]
 - [[research/weil_positivity/findings/WP-440-hamiltonian-diagonal-completion-has-sharp-loglog-threshold|WP-440]]
 - [[research/weil_positivity/findings/WP-441-gibbs-minimal-diagonal-completion-has-divergent-critical-cost|WP-441]]
+- [[research/weil_positivity/findings/WP-442-critical-valuation-product-supports-a-closed-log-gcd-energy|WP-442]]

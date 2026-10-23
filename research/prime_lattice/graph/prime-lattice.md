@@ -21,6 +21,8 @@ Canonical findings and `mind/` remain authoritative. Membership links are struct
 
 [[research/prime_lattice/graph/relations/mod5-window-moment-zero-free-prerequisites|Mod-5 moment prerequisites]]
 
+[[research/prime_lattice/graph/relations/dyadic-seam-filtered-zero-recovery|Dyadic seam filtering and arithmetic pole recovery]]
+
 ## Current source frontier
 
 PL-121 directly traverses de Bruijn–Newman heat flow and shows its exponent-lattice quadratic coupling is rank one. PL-123--126/128 map absolute-twistor, Poisson–Newton, Sierra/Grosswald–Schnitzer and Hamburger/Hadamard controls into mature prior art. PL-127 is the positive survivor: a critical-line reflection-phase slope quantitatively detects integer prime-generator deformation, while PL-128 warns that stronger order-one completion can restore rigidity generically without using the integer prime lattice. The missing ingredient remains an arithmetic polarization/localization theorem rather than another spectral encoding.

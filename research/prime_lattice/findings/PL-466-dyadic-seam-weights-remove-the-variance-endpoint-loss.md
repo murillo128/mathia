@@ -29,7 +29,7 @@ at every sufficiently large integer \(j\). Then
 \tag{2}
 \]
 There is no assumption on the empirical means, on other scale parameters,
-or on other window lengths. In particular, (2) improves PL-464's boundary
+or on other window lengths. In particular, (2) improves [[research/prime_lattice/findings/PL-464-dyadic-empirical-variance-residue-rigidity|PL-464]]'s boundary
 \(\max(1-\theta/2,\theta)\) when \(\theta>2/3\).
 If (1) holds separately for fixed exponents \(\theta_\nu\uparrow1\), it
 implies joint GRH modulo 5. Constants and starting scales may depend on
@@ -191,7 +191,7 @@ estimates give
 \ \sigma\le\Re\rho<1,\ |\Im\rho|\le T\}=o(T).
 \tag{15}
 \]
-Zeros are counted with multiplicity. For example, Montgomery's bound,
+Zeros are counted with multiplicity. For example, [[research/prior_art/incremental/PA-montgomery-dirichlet-zero-density-bound|Montgomery's bound]],
 as stated in Dickinson's introduction (source 128), is
 \(\sum_{\chi\bmod q}N(\sigma,T,\chi)
 \ll(qT)^{3(1-\sigma)/(2-\sigma)}(\log(qT))^9\)
@@ -310,7 +310,7 @@ or generalized-prime replacements without a separate proof.
 ## Prior art, audit and consequence
 
 Finite box-average Taylor inversion is the classical local tool already
-derived in PL-465. The authorized MC-521 comparison supplies the finite
+derived in [[research/prime_lattice/findings/PL-465-relative-frame-transfers-dirichlet-zero-bounds|PL-465]]. The authorized [[research/mobius_cancellation/findings/MC-521-smooth-deconvolution-removes-the-variance-zero-free-boundary-loss|MC-521]] comparison supplies the finite
 deconvolution perspective, but its all-real-scale Mellin integral is not
 used here. Geometric Mellin periodicity is classical (source 124).
 Variance-to-zero implications are classical (source 123, Section 3.3).

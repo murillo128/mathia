@@ -72,6 +72,7 @@ This is a purely structural corpus projection. A link here means only that the t
 - [[research/prior_art/incremental/PA-ideal-polygon-cross-ratio-moduli]]
 - [[research/prior_art/incremental/PA-julia-nevanlinna-boundary-reduction]]
 - [[research/prior_art/incremental/PA-landau-nonnegative-dirichlet-series-singularity]]
+- [[research/prior_art/incremental/PA-montgomery-dirichlet-zero-density-bound]]
 - [[research/prior_art/incremental/PA-randomized-zeta-critical-gmc-boundary]]
 - [[research/prior_art/incremental/PA-resultant-potential-theory-on-compact-riemann-surfaces]]
 - [[research/prior_art/incremental/PA-rh-reciprocal-zeta-subpower-bound]]

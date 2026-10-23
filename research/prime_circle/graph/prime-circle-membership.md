@@ -455,3 +455,4 @@ This stable projection inventories every current canonical Prime Circle finding.
 - [[research/prime_circle/findings/PC-445-positive-unital-tube-products-are-pointwise|PC-445]]
 - [[research/prime_circle/findings/PC-446-raw-cotangent-tower-measures-cannot-remove-spectral-bands|PC-446]]
 - [[research/prime_circle/findings/PC-447-character-rigidity-makes-cotangent-tower-measures-nonclosable|PC-447]]
+- [[research/prime_circle/findings/PC-448-haar-admixture-does-not-close-rigid-cotangent-towers|PC-448]]

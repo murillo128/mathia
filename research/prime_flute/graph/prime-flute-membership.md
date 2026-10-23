@@ -358,3 +358,4 @@ This stable projection inventories every current canonical Prime Flute finding. 
 - [[research/prime_flute/findings/PF-345-growing-exterior-edge-strips-have-exponentially-small-shorted-trace|PF-345]]
 - [[research/prime_flute/findings/PF-346-corridor-gram-shorting-preserves-correlations-but-is-unstable-to-subleading-energy|PF-346]]
 - [[research/prime_flute/findings/PF-347-natural-seam-energy-cannot-regularize-the-bounded-band-corridor-gram-model|PF-347]]
+- [[research/prime_flute/findings/PF-348-narrow-transition-shorting-preserves-the-local-dirichlet-pant-angle|PF-348]]

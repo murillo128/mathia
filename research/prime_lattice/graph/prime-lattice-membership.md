@@ -473,3 +473,4 @@ This stable projection inventories every current canonical Prime Lattice finding
 - [[research/prime_lattice/findings/PL-463-empirically-centered-window-variance-zero-free-gate|PL-463]]
 - [[research/prime_lattice/findings/PL-464-dyadic-empirical-variance-residue-rigidity|PL-464]]
 - [[research/prime_lattice/findings/PL-465-relative-frame-transfers-dirichlet-zero-bounds|PL-465]]
+- [[research/prime_lattice/findings/PL-466-dyadic-seam-weights-remove-the-variance-endpoint-loss|PL-466]]

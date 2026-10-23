@@ -16,11 +16,13 @@ The canonical set is [[research/graph/atlas/telemetry/frontier-events.jsonl|fron
 
 Semantic inspection is selective. Complete structural memberships do not imply complete frontier classification. `research/graph/semantic-inspection.json` records bounded completed scopes and fingerprints, retaining the earlier source-window base for further reconciliation. Other changed sources are not certified as semantically integrated. These rates describe the retained inspected episodes, not an unbiased estimate of portfolio fertility.
 
-## Smooth variance-to-zero-free episode
+## Conditional variance transfers and arithmetic recovery
 
-[[research/graph/relations/rh-mellin-variance-and-farey-capacity|The conditional variance mechanism]] now includes MC-521's smooth-test refinement of MC-177. This is one viable extension of a conditional analytic transfer: it removes the endpoint exponent from zero exclusion while retaining the unproved all-scale variance premise. MC-520 supplies the RH converse. Neither the sharp Mertens endpoint conclusion nor an unconditional zero-free gain follows. Classical van Cittert identity materialization and graph maintenance are not additional episodes. No Atlas state changes follow.
+[[research/graph/relations/rh-mellin-variance-and-farey-capacity|The Möbius variance mechanism]] now includes MC-521's classical reciprocal-zeta/Perron step to the epsilon-loss sharp Mertens bound. The existing episode is repaired in place; this composition is not counted as another expansion. Its uncentered all-scale variance premise remains unproved, and MC-177's direct-method boundary survives.
 
-The retained set also includes MC-520's distinct classical RH-conditional Farey resolution, the mod-5 moment-prerequisite, Euler harmonic transport and scalar Julia classification episodes; their source provenance and evidence boundaries remain in the event set and mechanism notes.
+[[research/prime_lattice/graph/relations/dyadic-seam-filtered-zero-recovery|The dyadic seam-filter mechanism]] records one distinct conditional refinement: PL-466 reaches the variance exponent for zero exclusion from centered dyadic data, using arithmetic zero density to recover poles from its finite filter. Its prime variance premise remains unproved. It supplies no sharp block-mass recovery or GRH converse. Classical identity registration and structural/reference maintenance are not episodes. No Atlas state or mass changes follow.
+
+The oldest retained episode leaves the fixed trailing window and remains in Git. Other source changes have structural membership but are not certified as semantically inspected or classified by this bounded pass.
 
 ## Retained prospective window
 
@@ -29,11 +31,11 @@ Classifiable episodes: **20**. Insufficient-evidence episodes: **0**. Retrospect
 | Classification | Episodes |
 | --- | ---: |
 | known-prior-art | 3 |
-| new-barrier | 10 |
-| viable-extension | 7 |
+| new-barrier | 9 |
+| viable-extension | 8 |
 
-- **FrontierFertilityEpisodes = 35.0%**
-- **BarrierRate = 50.0%**
+- **FrontierFertilityEpisodes = 40.0%**
+- **BarrierRate = 45.0%**
 - **PriorArtCollisionRate = 15.0%**
 - **InternalDuplicateRate = 0.0%**
 
@@ -48,11 +50,11 @@ Classifiable episodes: **20**. Insufficient-evidence episodes: **0**. Retrospect
 | `nyman_beurling` | 1 | 0 | 1 | 0 | 0 |
 | `prime_circle` | 1 | 0 | 0 | 1 | 0 |
 | `prime_flute` | 1 | 1 | 0 | 0 | 0 |
-| `prime_lattice` | 2 | 0 | 2 | 0 | 0 |
+| `prime_lattice` | 3 | 1 | 2 | 0 | 0 |
 | `robin_extremal` | 1 | 1 | 0 | 0 | 0 |
 | `visual_exploration` | 1 | 1 | 0 | 0 | 0 |
 | `weil_inertia` | 1 | 0 | 1 | 0 | 0 |
-| `weil_positivity` | 3 | 0 | 2 | 1 | 0 |
+| `weil_positivity` | 2 | 0 | 1 | 1 | 0 |
 | `xi_flow` | 2 | 1 | 1 | 0 | 0 |
 
 Per-line samples are the retained entries, capped at ten; small and selectively inspected samples do not establish trends. No rate alone supports a research-allocation decision.

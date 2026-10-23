@@ -266,3 +266,4 @@ This stable projection inventories every current canonical Robin Extremal findin
 - [[research/robin_extremal/findings/RE-257-subdyadic-integer-label-exact-mertens-rigidity-is-not-critically-stable|RE-257]]
 - [[research/robin_extremal/findings/RE-258-prime-gap-cell-mertens-rigidity-and-critical-moment-stability|RE-258]]
 - [[research/robin_extremal/findings/RE-259-zero-density-removes-critical-robin-moment-boundary|RE-259]]
+- [[research/robin_extremal/findings/RE-260-infinite-unit-prime-shifts-preserve-exact-mertens-matching-but-remain-robin-stable|RE-260]]

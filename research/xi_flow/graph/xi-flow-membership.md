@@ -209,3 +209,4 @@ This stable projection inventories every current canonical Xi Flow finding. Link
 - [[research/xi_flow/findings/XF-199-fixed-degree-polynomial-baselines-preserve-jacobi-support-tariff|XF-199]]
 - [[research/xi_flow/findings/XF-200-bounded-smooth-baselines-have-an-inverse-square-root-jacobi-alias-threshold|XF-200]]
 - [[research/xi_flow/findings/XF-201-vanishing-jacobi-calibration-slack-has-quartic-row-cost|XF-201]]
+- [[research/xi_flow/findings/XF-202-rotating-jacobi-certificates-locate-the-calibration-crossover|XF-202]]

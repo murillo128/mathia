@@ -559,6 +559,7 @@ This is a path-derived structural projection for graph topology. Each link means
 - [[research/prime_lattice/mind/intuition/MI-062-raw-and-exactly-centered-residue-grams-both-miss-the-dephasing-positivity-cone]]
 - [[research/prime_lattice/mind/intuition/MI-063-the-live-prime-lattice-gate-is-a-complex-polarized-lower-frame-at-covariance-scale]]
 - [[research/prime_lattice/mind/intuition/MI-064-the-mod5-first-moment-premise-is-a-zero-free-input]]
+- [[research/prime_lattice/mind/intuition/MI-065-seam-filtering-recovers-sparse-arithmetic-poles-from-dyadic-variance]]
 
 ### Robin Extremal
 - [[research/robin_extremal/mind/intuition/MI-001-robin-failure-requires-self-tangent-half-mass-event-gaps]]
