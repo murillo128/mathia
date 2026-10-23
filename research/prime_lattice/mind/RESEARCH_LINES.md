@@ -74,18 +74,20 @@ The representation problem is now sharply separated from the number-theoretic on
 
 Any proposed completion should therefore state the exact branch hypotheses (`gamma>0`, `E` positive definite where the inverse ellipse is used), the centering convention, the cyclic zero-extension/Reynolds projection, how its stationary `(m/d,f/d)` coordinates sit in the PL-441 lens, how the exact anisotropy energy compares with the spectral margin, and the unconditional arithmetic input. A scalar theorem that sees only unshifted real products in the character basis is information-theoretically incomplete; a full complex-matrix theorem is stronger than representation requires; a restricted Frobenius-best stationary fit can leave the covariance cone; and positivity of the canonical Reynolds surrogate remains weaker than the actual dephasing condition.
 
-## Do not smuggle a Dirichlet zero-free theorem into mod-5 covariance centering
+## Which covariance estimate avoids the moment zero-free prerequisites?
 
-**Linked intuition:** `MI-064-the-mod5-first-moment-premise-is-a-zero-free-input`.
+**Linked intuitions:** [MI-064](intuition/MI-064-the-mod5-first-moment-premise-is-a-zero-free-input.md) and [MI-063](intuition/MI-063-the-live-prime-lattice-gate-is-a-complex-polarized-lower-frame-at-covariance-scale.md).
 
-PL-458 derives a normalized `t=0` mod-5 covariance close to the identity **conditionally** on both a signed second-order prime-pair remainder (B) and an integrated actual-prime first moment (A). PL-459 diagnoses the latter as independently strong: for `H=floor(X^theta)`, fixed `0<theta<1/2`, and all sufficiently large real `X`, the four-channel bound
+For `H=floor X^theta`, PL-459--PL-463 distinguish three unproved actual-prime inputs, each required at every sufficiently large real `X`:
 
-`max_(a in U_5) |int_X^(2X) P_a(y)dy-XH/4|=o(X log X)`
+| Moment input | Fixed exponent range | Forced mod-5 zero-free half-plane |
+| --- | --- | --- |
+| Four-channel `int P_a-XH/4=o(X log X)` | `0<theta<1/2` | `Re s>1-theta` |
+| Identity-residue raw `int P_1^2<=XH^2/16+O(XH log X)` | `0<theta<=1/2` | `Re s>1-theta` |
+| Empirical `int (P_1-bar P_1)^2=O(XH(log X)^A)`, fixed finite `A>=0` | `0<theta<1` | `Re s>1-theta/2` |
 
-forces `psi_a(x)-x/4=o(x^(1-theta) log x)` for every reduced residue `a mod 5`, hence excludes zeros of every Dirichlet `L(s,chi)` modulo 5 in `Re(s)>1-theta`. The exact transfer uses
+Here integrals run over `[X,2X]`, `P_a` is the von-Mangoldt window in residue `a mod 5`, and `bar P_1` is its mean over that interval. The raw hypothesis at `theta=1/2` implies joint GRH; the empirical hypothesis there excludes zeros only in `Re s>3/4`. The first-moment family approaching `1/2` is equivalent to joint GRH, whereas the centered family implies joint GRH when its fixed exponents approach `1`. No converse is asserted for either second-moment hypothesis.
 
-`int_X^(2X) P_a(y)dy=H(psi_a(2X)-psi_a(X))+O(H(H+1)log X)`,
+PL-461 shows that PL-458's single identity-diagonal pair input (B) already supplies the raw ceiling for `1/6<theta<1/2`, without the separate centering input (A). PL-462 preserves that ceiling under one selected twist per scale of size `|t_X|=O(X sqrt(log X)/H^(3/2))`. PL-463 closes the constant-mean escape by mean-zero Mellin probes and finite box-average inversion; fitting the observed mean does not erase nonconstant zero modes.
 
-so both the all-`X` quantifier and `theta<1/2` boundary tariff matter. Assuming (A) for fixed exponents tending to `1/2` is equivalent, using classical explicit formulae and functional equations, to joint GRH modulo 5 (including ordinary RH). This is **not** a proof of (A), GRH or RH, and uses none of (B).
-
-The remaining mod-5 image-cone question must therefore not treat (A) as an independently innocuous centering estimate. Find a source-derived centering/cancellation identity or a directly complex-polarized covariance-scale lower frame that certifies the PL-438/PL-441 cone **without** first assuming the PL-459 zero-free gate; if using another moment input, explicitly test whether its all-`X` strength again forces Dirichlet zero exclusion. Neither PL-458's singular-series model nor its conditional covariance transfer supplies such an input.
+Can the actual source satisfy the PL-438/PL-441 dephasing cone through a direct complex-polarized **relative lower frame**, without first requiring these absolute upper-moment estimates? A lower frame alone implies none of them. Any alternative source cancellation identity must specify its center, scale quantifiers and resulting Mellin pole control. Empirical centering over the window base point is also distinct from the across-residue common-mode projection excluded by MI-062. The singular-series model supplies neither the needed arithmetic bound nor an unconditional zero-free theorem.
