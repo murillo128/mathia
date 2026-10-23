@@ -180,6 +180,8 @@ This file records durable sources that support or constrain findings in `researc
 
 - René L. Schilling, Renming Song and Zoran Vondraček, **Bernstein Functions: Theory and Applications**, 2nd revised and extended ed., de Gruyter Studies in Mathematics 37 (2012), DOI 10.1515/9783110269338. Role for WI-441: standard Lévy/Bernstein representation of positive Laplace increments and the integrability condition for the measure in \(\int(1-e^{-t\omega})\,d\mu(\omega)\). The Hankel frequency-bank diagonalization and Kunik shallow-defect specialization are derived in WI-441 from the exact single-tone calculation in WI-438; the book is not claimed to contain that zeta-specific no-go.
 
+- Terence Tao, **Lecture Notes 5 for 247A**, UCLA (2006), pp. 10--11, https://www.math.ucla.edu/~tao/247a.1.06f/notes5.pdf. Role for WI-454: classical Littlewood--Paley decomposition and Plancherel square-function energy. WI-454 derives the sharp interval version, its coherent pure-tone Hankel realization, and the square-summable scalar calibration condition directly; the source is not claimed to provide a zeta-specific bound.
+
 ## Entire-function zero density and simultaneous Fourier lattice support
 
 - B. Ja. Levin, **Distribution of Zeros of Entire Functions**, revised edition, American Mathematical Society, Translations of Mathematical Monographs 5 (1980), DOI 10.1090/MMONO/005. Role for WI-450: classical Jensen formula, exponential-type growth bounds, and counting of disjoint real-zero lattices. WI-450 derives its aggregate support bound and Wang-class converse directly; the monograph is not claimed to contain this specialization.
