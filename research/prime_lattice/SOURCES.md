@@ -498,3 +498,11 @@ Only sources that materially support, delimit, or redirect stored `PL-*` finding
 
 129. **Greg Martin, Nathan Ng**, “Nonzero values of Dirichlet L-functions in vertical arithmetic progressions,” *International Journal of Number Theory* **9**(4) (2013), 813–843. DOI: https://doi.org/10.1142/S1793042113500140. Author manuscript: https://www.cs.uleth.ca/~nathanng/RESEARCH/NVDVAP.pdf; arXiv: https://arxiv.org/abs/1109.1788.
      - Role: direct prior-art comparison for PL-466's use of sparse vertical zero sequences. The introduction explains the classical zero-density reason that almost all points on each fixed off-critical vertical progression are nonzeros. PL-466 uses that off-critical fact, not the paper's stronger critical-line analysis or a conjecture on rational independence of ordinates.
+
+## Positive residue-source controls with finite off-critical pole sets
+
+130. **NIST Digital Library of Mathematical Functions**, Section 25.11(i), “Hurwitz Zeta Function,” definition (25.11.1) and analytic continuation statement; Section 25.11(iii), Euler--Maclaurin representations. https://dlmf.nist.gov/25.11.
+     - Role: classical continuation and residue anchor for PL-467. The progression series `5^(-s) zeta(s,a/5)` has its only pole at 1 with residue `1/5`; finite shifted combinations realize PL-467's prescribed poles. The positive source and relative covariance bound are derived in the finding.
+
+131. **Kevin Ford, Sergei Konyagin**, “The prime number race and zeros of L-functions off the critical line, II,” in *Proceedings of the Session in Analytic Number Theory and Diophantine Equations* (Bonn, 2002), Bonner Mathematische Schriften **360** (2003); author archive https://arxiv.org/abs/1910.08981, full text https://arxiv.org/html/1910.08981v1.
+     - Role: closest hypothetical-zero-control comparison for PL-467. Section 1 defines finite barriers and their dominant oscillatory residue-class observables. Their prime-race ordering results do not establish PL-467's positive coefficient sequence or centered covariance floor, and neither construction asserts that the hypothetical zeros occur for actual Dirichlet L-functions.
