@@ -76,18 +76,19 @@ Any proposed completion should therefore state the exact branch hypotheses (`gam
 
 ## Which covariance estimate avoids the moment zero-free prerequisites?
 
-**Linked intuitions:** [MI-064](intuition/MI-064-the-mod5-first-moment-premise-is-a-zero-free-input.md) and [MI-063](intuition/MI-063-the-live-prime-lattice-gate-is-a-complex-polarized-lower-frame-at-covariance-scale.md).
+**Linked intuitions:** [MI-064](intuition/MI-064-the-mod5-first-moment-premise-is-a-zero-free-input.md), [MI-065](intuition/MI-065-seam-filtering-recovers-sparse-arithmetic-poles-from-dyadic-variance.md) and [MI-063](intuition/MI-063-the-live-prime-lattice-gate-is-a-complex-polarized-lower-frame-at-covariance-scale.md).
 
-For `H=floor X^theta`, PL-459--PL-463 distinguish three unproved actual-prime inputs, each required at every sufficiently large real `X`:
+For `H=floor X^theta`, PL-459--PL-463 and PL-466 distinguish the following unproved actual-prime inputs. The first three rows require every sufficiently large real `X`; the fourth requires every sufficiently large dyadic `X=2^j` only:
 
 | Moment input | Fixed exponent range | Forced mod-5 zero-free half-plane |
 | --- | --- | --- |
 | Four-channel `int P_a-XH/4=o(X log X)` | `0<theta<1/2` | `Re s>1-theta` |
 | Identity-residue raw `int P_1^2<=XH^2/16+O(XH log X)` | `0<theta<=1/2` | `Re s>1-theta` |
 | Empirical `int (P_1-bar P_1)^2=O(XH(log X)^A)`, fixed finite `A>=0` | `0<theta<1` | `Re s>1-theta/2` |
+| Same empirical bound at all sufficiently large dyadic scales | `0<theta<1` | `Re s>1-theta/2` |
 
 Here integrals run over `[X,2X]`, `P_a` is the von-Mangoldt window in residue `a mod 5`, and `bar P_1` is its mean over that interval. The raw hypothesis at `theta=1/2` implies joint GRH; the empirical hypothesis there excludes zeros only in `Re s>3/4`. The first-moment family approaching `1/2` is equivalent to joint GRH, whereas the centered family implies joint GRH when its fixed exponents approach `1`. No converse is asserted for either second-moment hypothesis.
 
-PL-461 shows that PL-458's single identity-diagonal pair input (B) already supplies the raw ceiling for `1/6<theta<1/2`, without the separate centering input (A). PL-462 preserves that ceiling under one selected twist per scale of size `|t_X|=O(X sqrt(log X)/H^(3/2))`. PL-463 closes the constant-mean escape by mean-zero Mellin probes and finite box-average inversion; fitting the observed mean does not erase nonconstant zero modes.
+PL-461 shows that PL-458's single identity-diagonal pair input (B) already supplies the raw ceiling for `1/6<theta<1/2`, without the separate centering input (A). PL-462 preserves that ceiling under one selected twist per scale of size `|t_X|=O(X sqrt(log X)/H^(3/2))`. PL-463 closes the constant-mean escape by mean-zero Mellin probes and finite box-average inversion; fitting the observed mean does not erase nonconstant zero modes. PL-466 removes the all-real-scale requirement for the dyadic family: seam-vanishing weights give `D_m=Q_m+J_m F+G`, with `F` periodic and `G` holomorphic in the target half-plane. Sublinear arithmetic zero density excludes a pole progression of `F` and then excludes the polynomial residue sequences annihilated by the filter. A positive dyadic density with a full vertical pole progression passes the same variance bound, so this is an arithmetic rigidity theorem, not a generic sparse-scale interpolation principle.
 
 Can the actual source satisfy the PL-438/PL-441 dephasing cone through a direct complex-polarized **relative lower frame**, without first requiring these absolute upper-moment estimates? A lower frame alone implies none of them. Any alternative source cancellation identity must specify its center, scale quantifiers and resulting Mellin pole control. Empirical centering over the window base point is also distinct from the across-residue common-mode projection excluded by MI-062. The singular-series model supplies neither the needed arithmetic bound nor an unconditional zero-free theorem.
