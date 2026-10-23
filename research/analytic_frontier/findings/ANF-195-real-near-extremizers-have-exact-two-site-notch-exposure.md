@@ -1,6 +1,6 @@
 # ANF-195 — Real near-extremizers have exactly the two-site notch-exposure envelope
 
-**Status:** EXACT-DERIVED + SHARP-REAL-ENVELOPE + ZERO-SET-PACKING + SOURCE-SPECIFIC-LOCALIZATION + POSITIVE-FOURIER-PROFILE-CLASS + FINITE-EXCESS-MODULUS + AUTOMATIC-FOURIER-TAIL + CUBIC-ROOT-REAL-STABILITY + GENERIC-SQUARE-ROOT-RATE-CEILING. This is a theorem for real conjugation-invariant multisets only, not the unrestricted complex near-extremizer envelope of ANF-099.
+**Status:** EXACT-DERIVED + SHARP-REAL-ENVELOPE + ZERO-SET-PACKING + SOURCE-SPECIFIC-LOCALIZATION + POSITIVE-FOURIER-PROFILE-CLASS + FINITE-EXCESS-MODULUS + AUTOMATIC-FOURIER-TAIL + SQUARE-ROOT-REAL-STABILITY + GENERIC-SHARP-RATE. This is a theorem for real conjugation-invariant multisets only, not the unrestricted complex near-extremizer envelope of ANF-099.
 
 ## 1. Sharp statement for every fixed triangular notch
 
@@ -51,6 +51,11 @@ Let \(Z_+(K)=\{r>0:K(r)=0\}\). Then the exact all-cardinality, all-multiplicity 
 where \(r_n=n+\delta_n\), \(0<\delta_n<1/2\), are the positive zeros identified in ANF-087. The maximum exists: \(\Phi_\eta(r_n)\to0\), and at least one value is positive.
 
 In particular, **growing real cardinality, unbounded real span, and unbounded real multiplicities cannot increase the limiting normalized notch exposure beyond an exact two-site real equality configuration**. This does not bound the corresponding envelope over complex multisets.
+
+For each fixed triangular notch the convergence has the uniform rate
+\(h_\eta(W)\le\beta_\eta^{\mathbb R}+C_\eta\sqrt{e(W)}\) for
+\(0\le e(W)\le1\), proved in section 9. Section 8 shows that the exponent
+\(1/2\) is optimal outside an at-most-countable set of notch widths.
 
 ## 2. Exact excess and removal of exceptional real sites
 
@@ -340,7 +345,7 @@ h_\eta(W)\le \Phi_\eta(0)+M_\eta+C_\eta e(W)^{1/3}.}
 \tag{28}
 \]
 
-This sharpens the general finite-excess bound (22) in the triangular case. The exponent \(1/3\) is a proved upper-modulus exponent, not an asserted optimal exponent.
+This gives a direct scale-dependent version of the general finite-excess bound (22). Section 9 strengthens the exponent to \(1/2\) by controlling interactions with both endpoints of each bounded pair.
 
 **Uniform near-zero estimate.** The triangular Fourier kernel has \(\Phi_\eta(t)\to0\) as \(|t|\to\infty\), and \(M_\eta>0\). All real zeros of \(K\) are simple and locally finite (ANF-087; its removable numerator zero is *not* a zero of \(K\)). Consequently there exists \(A_\eta<\infty\) such that
 
@@ -423,7 +428,7 @@ For \(0<e(W)\le1\), set \(T=e(W)^{-1/6}\); both terms become \(e(W)^{1/3}\). For
 
 ## 8. Generic square-root lower obstruction for the real stability rate
 
-The uniform exponent \(1/3\) in (28) is not claimed optimal, but the exponent cannot exceed \(1/2\) for a full-measure set of fixed triangular-notch widths \(\eta\), **even if one restricts to two distinct simple real points**. This is a rate obstruction, not an improvement of the upper estimate.
+The uniform exponent cannot exceed \(1/2\) for a full-measure set of fixed triangular-notch widths \(\eta\), **even if one restricts to two distinct simple real points**. Together with section 9 this proves generic sharpness of the square-root rate.
 
 Let \(s(y)=\operatorname{sinc}(y)=\sin(\pi y)/(\pi y)\), and choose a maximizing positive zero \(r_*\in Z_+(K)\) with
 \[
@@ -475,4 +480,222 @@ a maximizing zero always has \(s(\eta r_*)\ne0\). The positive zeros of \(s'\), 
 \]
 For every \(\eta\in(0,1)\setminus\mathcal E\), (38) holds at each maximizing zero. There is an explicit nonempty interval without exceptions: for \(0<\eta<1/(2r_1)\), \(r_1\) is the unique maximizing positive zero, because \(s(y)^2\) decreases strictly on \(0<y<1\), while \(s(y)^2\le1/\pi^2<4/\pi^2\le s(\eta r_1)^2\) for \(y\ge1\). Here \(s'(\eta r_1)<0\).
 
-**Audit and significance.** The mechanism is elementary first-order perturbation of the *actual equality pair*, not a high-cardinality construction or a new zeta theorem. It identifies an upper ceiling \(p=1/2\) on any universal power stability improvement at generic fixed widths, leaving the interval between the proved \(1/3\) upper-modulus exponent and this \(1/2\) obstruction unresolved. The argument requires a **fixed** notch width and real two-site configurations; it does not transfer to nonreal multisets or improve unconditional critical-zero proportions. The two-site normalization and zero simplicity are already available in ANF-195 and ANF-114, and the Taylor/sharpness mechanism is elementary; no separate claim of literature novelty is made.
+**Audit and significance.** The mechanism is elementary first-order perturbation of the *actual equality pair*, not a high-cardinality construction or a new zeta theorem. It identifies the ceiling \(p=1/2\) attained by section 9 at generic fixed widths. The argument requires a **fixed** notch width and real two-site configurations; it does not transfer to nonreal multisets or improve unconditional critical-zero proportions. The two-site normalization and zero simplicity are already available in ANF-195 and ANF-114, and the Taylor/sharpness mechanism is elementary; no separate claim of literature novelty is made.
+
+## 9. Paired source control gives the sharp square-root upper rate
+
+For every fixed admissible triangular notch there are finite constants
+\(A_\eta,B_\eta^*>0\), independent of cardinality, multiplicity and span, such that
+every nonempty finite real multiset satisfies
+\[
+\boxed{\displaystyle
+h_\eta(W)\le\beta_\eta^{\mathbb R}
+ +A_\eta\sqrt{e(W)}+B_\eta^*e(W).}
+\tag{40}
+\]
+Here \(A_\eta\) may be the constant in (29); \(B_\eta^*\) is unrelated to
+ANF-099's analytic notch threshold. In particular (40) gives a uniform
+\(O_\eta(\sqrt e)\) modulus for \(0\le e\le1\). The exponent is optimal
+whenever a maximizing zero is nonstationary for \(\Phi_\eta\), including every
+width outside the countable exceptional set (39).
+
+### Two translates of the source kernel control the full inverse-square tail
+
+Freeze \(R>r_1\). There are a neighborhood \(\mathcal U_R\) of the finitely
+many positive zeros of \(K\) in \([0,R]\) and a constant \(d_R>0\) such that
+\[
+K(t)^2+K(t-r)^2\ge\frac{d_R}{1+t^2}
+\qquad(t\in\mathbb R,\ r\in\mathcal U_R).
+\tag{41}
+\]
+The neighborhood can be chosen bounded in \((0,R+1)\).
+
+To prove this, use the exact kernel formula from section 8. With
+\(c=a/(2\pi^2)>0\), it gives
+\[
+K(t)=c\frac{\sin(\pi t)}{t}+O(t^{-2}),\qquad |t|\to\infty.
+\tag{42}
+\]
+Uniformly for bounded \(r\), therefore,
+\[
+t^2\bigl(K(t)^2+K(t-r)^2\bigr)
+=c^2\bigl(\sin^2(\pi t)+\sin^2(\pi(t-r))\bigr)
+ +O_R(|t|^{-1}).
+\tag{43}
+\]
+The elementary phase identity gives
+\[
+\sin^2\theta+\sin^2(\theta-\pi r)
+=1-\cos(\pi r)\cos(2\theta-\pi r)
+\ge1-|\cos(\pi r)|.
+\tag{44}
+\]
+Every true positive zero \(r_n=n+\delta_n\) is nonintegral. The right side
+of (44) is consequently bounded below by a positive number in sufficiently
+small neighborhoods of the finitely many selected roots. Equations (43)--(44)
+prove (41) for all sufficiently large \(|t|\), uniformly in those neighborhoods.
+
+At an exact root \(r\), \(K(t)\) and \(K(t-r)\) cannot both vanish: otherwise
+the three real sites \(0,r,t\) would have all differences in the zero set,
+contradicting ANF-087. The cases \(t=0,r\) also cannot vanish because
+\(K(0)=1\). On the remaining compact \(t\)-interval, continuity gives a
+positive minimum for each selected root; shrinking the finite neighborhoods
+preserves that minimum. This completes (41), including the removable points
+of the explicit formula, where the continuous kernel is used.
+
+Since \(\Phi_\eta(t)\ll_\eta(1+t^2)^{-1}\) and \(r\) stays bounded, (41)
+implies
+\[
+\Phi_\eta(t)+\Phi_\eta(t-r)
+\le C_{\eta,R}\bigl(K(t)^2+K(t-r)^2\bigr)
+\qquad(r\in\mathcal U_R,\ t\in\mathbb R).
+\tag{45}
+\]
+This is a source estimate for a *pair*. An individual translate of \(K^2\)
+cannot dominate the notch tail at its infinitely many real zeros.
+
+### Freeze one matching scale and use the unused allowance of isolated sites
+
+Write \(M=M_\eta>0\), \(\Phi=\Phi_\eta\), \(L=L(W)\), and
+\(\Delta=Le(W)\). Positivity of \(M\) also follows directly from the zero
+spacing: if every \(\Phi_\eta(r_n)\) vanished, all \(\eta r_n\) would be
+integers, so the integers \(\eta(r_{n+1}-r_n)\) would converge to
+\(\eta\in(0,1)\), which is impossible.
+Choose \(R\ge1\), \(R>r_1\), sufficiently large that
+\[
+\frac{2b_\eta}{3\eta R^2}\le\frac M2.
+\tag{46}
+\]
+This choice depends only on the fixed notch, not on \(e\) or \(W\).
+Choose a fixed \(\gamma>0\) below the compact triple gap (12) at scale \(R\)
+and small enough that
+\[
+0<r\le R,\ K(r)^2\le\gamma\quad\Longrightarrow\quad
+r\in\mathcal U_R.
+\tag{47}
+\]
+Such a \(\gamma\) exists because \(K^2\) has a positive minimum on the
+compact complement of \(\mathcal U_R\) in \([0,R]\), including zero.
+
+Apply the whole-site deletion of section 2 at this fixed threshold. For
+\(W=G\sqcup B\), equations (6)--(7) give
+\[
+L(B)\ll_\eta\Delta,\qquad E_\eta(B)\ll_\eta\Delta,
+\tag{48}
+\]
+and all sites of \(G\) have multiplicity one or two. Its distance-\(R\)
+graph is a matching by the compact triple-gap argument of section 4.
+Let \(P\) be the union of its two-site components and \(U\) its isolated
+sites. Thus \(L(G)=L(P)+L(U)=\sum_{i\in G}m_i^2\).
+
+The sites in \(U\) are mutually more than \(R\) apart. From each such site,
+the \(n\)-th other site on either side is at distance greater than \(nR\),
+and has multiplicity at most two. Since
+\(\Phi(t)\le b_\eta/(\pi^2\eta t^2)\) for \(t\ne0\),
+\[
+\sup_{i\in U}\sum_{\substack{j\in U\\j\ne i}}m_j\Phi(x_i-x_j)
+\le\frac{4b_\eta}{\pi^2\eta R^2}\sum_{n\ge1}n^{-2}
+=\frac{2b_\eta}{3\eta R^2}\le\frac M2.
+\tag{49}
+\]
+Multiplying by \(m_i\), summing, and using \(\sum m_i\le\sum m_i^2=L(U)\)
+shows that the entire ordered off-diagonal \(U\)--\(U\) energy is at most
+\((M/2)L(U)\). It is absorbed by the unused \(M L(U)\) in the two-site
+envelope.
+
+For each matched pair \(\{i,j\}\), (29) gives
+\(\Phi(x_i-x_j)\le M+A_\eta|K(x_i-x_j)|\). Weighted Cauchy--Schwarz and
+disjointness of the matching give
+\[
+\begin{aligned}
+2\sum_{\{i,j\}\ {\rm matched}}m_im_j\Phi(x_i-x_j)
+&\le M L(P)
+ +2A_\eta
+ \sqrt{\sum_{\{i,j\}\ {\rm matched}}m_im_j}
+ \sqrt{\sum_{\{i,j\}\ {\rm matched}}m_im_jK(x_i-x_j)^2}\\
+&\le M L(P)+A_\eta\sqrt{L(P)\Delta}.
+\end{aligned}
+\tag{50}
+\]
+The last line uses \(\sum_{\rm matched}m_im_j\le L(P)/2\) and
+\(2\sum_{\rm matched}m_im_jK^2\le\Delta\).
+
+All remaining good-site interactions involve a matched pair and a site
+outside that pair. Translate its endpoints to \(0,r\), with
+\(r\in\mathcal U_R\) by (47). For endpoint multiplicities
+\(\mu,\nu\in\{1,2\}\), (45) implies
+\[
+\mu\Phi(t)+\nu\Phi(t-r)
+\le2C_{\eta,R}\bigl(\mu K(t)^2+\nu K(t-r)^2\bigr).
+\tag{51}
+\]
+Multiply by the outside multiplicity and sum over pairs and outside sites.
+Each interaction between different matching components is charged at most
+twice; an interaction with an isolated site is charged once. Thus their
+total ordered notch energy is \(O_\eta(\Delta)\), with no factor depending
+on the number of sites. Combining the diagonal, (49), (50) and (51),
+\[
+E_\eta(G)\le[\Phi(0)+M]L(G)-\frac M2L(U)
+ +A_\eta\sqrt{L(P)\Delta}+O_\eta(\Delta).
+\tag{52}
+\]
+
+Finally every interval of length \(R\) contains at most two good sites.
+The same summable-potential argument as (33) therefore yields
+\(\sup_y\sum_{j\in G}m_j\Phi(y-x_j)\ll_\eta1\). Hence
+\[
+2\sum_{i\in B,\ j\in G}m_im_j\Phi(x_i-x_j)
+\ll_\eta\sum_{i\in B}m_i\le L(B)\ll_\eta\Delta.
+\tag{53}
+\]
+Together with (48), (52), \(L(P)\le L(G)\le L\), and \(\beta_\eta^{\mathbb R}
+=\Phi(0)+M\), this gives
+\[
+E_\eta(W)\le\beta_\eta^{\mathbb R}L
+ +A_\eta\sqrt{L\Delta}+O_\eta(\Delta),
+\tag{54}
+\]
+which proves (40). Empty good, paired, or isolated subsets cause no problem:
+their sums vanish and the same inequalities apply.
+
+### Scope, prior art and stress tests
+
+The load-bearing improvement is (41)--(45): the noninteger separation of a
+bounded near-zero pair prevents both source translates from losing their
+leading sine term at the same distant location. The isolated-site allowance
+then permits a **fixed** matching scale. There is no balance of an expanding
+cutoff against the \(R^{-4}\) triple gap, and no cardinality-dependent deletion
+or norm-triangle loss.
+
+The classical kernel is the extremizer in Corollary 14 of
+[Carneiro--Chandee--Littmann--Milinovich](https://arxiv.org/pdf/1406.5462).
+[Lamzouri, Proposition 2.1](https://arxiv.org/html/2609.02882v1) supplies the
+background multiset inequality; neither source is being used as a theorem
+about this notch stability modulus. The two-delta optimization in the former
+paper concerns bandlimited functions satisfying two point constraints, not
+the all-cardinality finite-multiset exposure here.
+[Suto's compact-Fourier ground-state theory](https://arxiv.org/abs/math-ph/0508004)
+provides a neighboring infinite-volume, fixed-density comparison, not the
+finite normalized estimate (40). A targeted search through these mechanisms
+and quantitative near-extremal pair-potential formulations did not identify
+the same bound. This is a local strengthening of ANF-195, with elementary
+phase, compactness, packing and Cauchy--Schwarz steps; no global literature
+novelty claim is made.
+
+The uniformity in (41) is only over neighborhoods of finitely many roots at
+the fixed scale \(R\). It would fail with one constant over all root
+separations, since \(r_n\) approaches integers. The proof neither asserts
+nor needs such uniformity. The actual removable points are not roots;
+the true roots' sum-free property handles compact \(t\), while their
+nonintegrality separately handles infinity. Counting interactions with
+both endpoints and charging each cross-pair edge at most twice are essential
+to the independence from cardinality. Arbitrarily large original
+multiplicities remain covered by (48), not by the two-endpoint argument.
+
+The result controls a fixed triangular notch on real multisets. General
+positive-Fourier profiles in section 5 need not satisfy the inverse-square
+majorant used in (45) and (49). No claim is made that the generic sharp rate
+also gives the optimal leading constant or settles exceptional stationary
+widths. Nonreal configurations lose the nonnegative real pair-energy
+decomposition, so the unrestricted complex envelope in ANF-099 and its
+RH-facing application remain unresolved.
