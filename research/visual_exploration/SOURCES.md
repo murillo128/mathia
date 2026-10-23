@@ -160,7 +160,7 @@ This file records durable external literature dependencies used to support or de
 
 ## Parseval/Plancherel for bounded torus observables
 
-- Elias M. Stein and Rami Shakarchi, **Fourier Analysis: An Introduction**, Princeton Lectures in Analysis I, Princeton University Press (2003), ISBN `0-691-11384-X`. Role: the classical Fourier-series Parseval identity used in `VIS-439` to replace a positive Wiener coefficient bound by the exact `L^2` Fourier energy of a bounded torus polynomial. The further inequality `Var_H(Q)<=qbar(1-qbar)<=1/4` is elementary; no new arithmetic small-divisor or hitting theorem is attributed to this source.
+- Elias M. Stein and Rami Shakarchi, **Fourier Analysis: An Introduction**, Princeton Lectures in Analysis I, Princeton University Press (2003), ISBN `0-691-11384-X`. Role: the classical Fourier-series Parseval identity used in `VIS-439` to replace a positive Wiener coefficient bound by the exact `L^2` Fourier energy of a bounded torus polynomial. The further inequality `Var_H(Q)<=qbar(1-qbar)<=1/4` is elementary; no new arithmetic small-divisor or hitting theorem is attributed to this source. Chapter 3 §1 and Exercise 9 also provide sine Parseval and the reciprocal-square lattice identity used in `VIS-461` to normalize the limiting step spectra and evaluate their distance; the Farey-pair specialization is derived there.
 
 ## Level crossing and directional perimeter for hitting sets
 
@@ -205,3 +205,8 @@ This file records durable external literature dependencies used to support or de
 ## Farey index and equal-rank excursion controls
 
 - R. R. Hall and P. Shiu, **The index of a Farey sequence**, *Michigan Mathematical Journal* 51:1 (2003), 209–223. DOI: `10.1307/mmj/1049832901`. Role: classical index definition and Farey-neighbor context for `VIS-460`. The artificial same-rank pair is supplied by FD-329; its inverse-prime normalized transport-spectrum separation and first-defect-value distinction are derived in VIS-460, not attributed as general results of Hall–Shiu.
+
+
+## Magnitude spectra and phase-retrieval ambiguity
+
+- Robert Beinert and Gerlind Plonka, **Ambiguities in one-dimensional phase retrieval of structured functions**, author preprint, https://static.uni-graz.at/fileadmin/_Persoenliche_Webseite/beinert_robert/Preprints/BeinertPlonka2015a.pdf. Role: established ambiguity of recovering a structured signal from Fourier magnitudes. In `VIS-461`, this bounds the inference from unequal transport profiles: the result instead computes an explicit difference after squared-magnitude and separate energy normalization. No general phase-retrieval uniqueness theorem is claimed.

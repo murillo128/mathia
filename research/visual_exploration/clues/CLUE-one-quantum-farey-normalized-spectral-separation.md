@@ -1,7 +1,7 @@
 ---
 id: CLUE-visual-exploration-one-quantum-farey-normalized-spectral-separation
 type: research-clue
-status: proposed
+status: resolved
 origin: master-researcher
 target_line: visual_exploration
 based_on:
@@ -44,4 +44,28 @@ Only after this test, examine fixed `v>=3` or a specific probability pushforward
 
 ## Evidence boundary
 
-The normalized spectral transfer is unproved. FD-333 already proves the raw fixed-mode and energy separation; reproducing those alone would not answer this clue. VIS-460 resolves the different FD-329 pair and its existing five-defect clue remains resolved. The objects here are artificial labeled-edge reassemblies, not alternative genuine Farey sequences. No Franel–Landau improvement, ordinary-prime coercivity or RH consequence is proposed, and finite sine/Parseval theory remains classical prior art.
+The general fixed-v normalized spectral transfer remains unproved; the disposition below settles the specified v=3 test. FD-333 already proves the raw fixed-mode and energy separation; reproducing those alone would not answer this clue. VIS-460 resolves the different FD-329 pair and its existing five-defect clue remains resolved. The objects here are artificial labeled-edge reassemblies, not alternative genuine Farey sequences. No Franel–Landau improvement, ordinary-prime coercivity or RH consequence is proposed, and finite sine/Parseval theory remains classical prior art.
+
+
+## Research disposition
+
+Outcome: narrowed
+
+Resolved by:
+- [[research/visual_exploration/findings/VIS-461-one-quantum-farey-pair-retains-normalized-spectral-separation]]
+
+For `v=3,u=4`, along primes `p=7 mod 12`, both normalized transport laws
+converge in total variation to explicit, distinct even-mode laws. Their
+limiting distance is about `0.0490847588`; mode 6 alone has exact signed
+probability difference `2716/(36081 pi^2)>0`. A uniform square-summable
+tail bound prevents escaped spectral mass. The source's unquantified
+`o(1)` discrepancy residual is sufficient to transfer the same limits
+and nonzero separation to the full reassembled discrepancy, without a
+finite-prime rate. Exact rational edge reconstruction checks three small
+primes; the paired visualization documents the normalized comparison.
+
+This resolves the clue's first decisive test, not every fixed `v>=3` or
+every probability pushforward. VIS-461 also explicitly fixes the standard
+continuum norm convention where FD-333's final profile sentence has a
+factor-of-square-root-two inconsistency with its own finite formulas.
+No genuine-Farey or RH statement follows.
