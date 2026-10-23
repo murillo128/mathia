@@ -1,6 +1,6 @@
 # ANF-195 — Real near-extremizers have exactly the two-site notch-exposure envelope
 
-**Status:** EXACT-DERIVED + SHARP-REAL-ENVELOPE + ZERO-SET-PACKING + SOURCE-SPECIFIC-LOCALIZATION + POSITIVE-FOURIER-PROFILE-CLASS + FINITE-EXCESS-MODULUS + AUTOMATIC-FOURIER-TAIL + SQUARE-ROOT-REAL-STABILITY + GENERIC-SHARP-RATE. This is a theorem for real conjugation-invariant multisets only, not the unrestricted complex near-extremizer envelope of ANF-099.
+**Status:** EXACT-DERIVED + SHARP-REAL-ENVELOPE + ZERO-SET-PACKING + SOURCE-SPECIFIC-LOCALIZATION + POSITIVE-FOURIER-PROFILE-CLASS + FINITE-EXCESS-MODULUS + AUTOMATIC-FOURIER-TAIL + SQUARE-ROOT-REAL-STABILITY + GENERIC-SHARP-RATE + SOBOLEV-PROFILE-EXTENSION. This is a theorem for real conjugation-invariant multisets only, not the unrestricted complex near-extremizer envelope of ANF-099.
 
 ## 1. Sharp statement for every fixed triangular notch
 
@@ -56,6 +56,10 @@ For each fixed triangular notch the convergence has the uniform rate
 \(h_\eta(W)\le\beta_\eta^{\mathbb R}+C_\eta\sqrt{e(W)}\) for
 \(0\le e(W)\le1\), proved in section 9. Section 8 shows that the exponent
 \(1/2\) is optimal outside an at-most-countable set of notch widths.
+Section 10 extends the square-root upper rate to every fixed dominated
+positive-Fourier profile with one square-integrable weak derivative and
+positive maximum exposure on the source zero set. This includes profiles
+without any inverse-square pointwise Fourier bound.
 
 ## 2. Exact excess and removal of exceptional real sites
 
@@ -699,3 +703,210 @@ also gives the optimal leading constant or settles exceptional stationary
 widths. Nonreal configurations lose the nonnegative real pair-energy
 decomposition, so the unrestricted complex envelope in ANF-099 and its
 RH-facing application remain unresolved.
+
+## 10. One square-integrable weak derivative suffices for the square-root rate
+
+Let \(\phi\) satisfy section 5's hypotheses: it is fixed, real and even,
+\(0\le\phi\le J_0\) almost everywhere, and \(\Phi=\widehat\phi\ge0\) on
+the real axis. Assume additionally
+\[
+\phi\in H^1(\mathbb R),\qquad
+M:=\max_{r\in Z_+(K)}\Phi(r)>0.
+\tag{55}
+\]
+Here \(H^1(\mathbb R)\) means that the profile, extended by zero outside
+its support, and its weak first derivative belong to \(L^2(\mathbb R)\).
+Then there are constants \(C_\phi,D_\phi<\infty\), independent of the
+number of sites, their multiplicities and their span, such that every
+nonempty finite real multiset \(W\) satisfies
+\[
+\boxed{\displaystyle
+h_\phi(W)\le\beta_\phi^{\mathbb R}
+  +C_\phi\sqrt{e(W)}+D_\phi e(W),\qquad
+\beta_\phi^{\mathbb R}=\Phi(0)+M.}
+\tag{56}
+\]
+The maximum-zero hypothesis in (55) is explicit; this argument uses its
+positive allowance for isolated sites and makes no general assertion for
+the case \(M=0\).
+
+### An integrable squared interaction cost replaces pointwise domination
+
+Plancherel in the stated Fourier convention gives
+\[
+Q(t):=(1+t^2)\Phi(t)^2\ge0,\qquad
+\|Q\|_1=\|\phi\|_2^2+(2\pi)^{-2}\|\phi'\|_2^2<\infty.
+\tag{57}
+\]
+The inverse Fourier transform of \(\Phi^2\) is \(\phi*\phi\), supported
+in \([-2,2]\). Multiplication by \(1+t^2\) differentiates this compactly
+supported distribution, so \(Q\) is bandlimited to the same interval.
+Choose a Schwartz function \(\psi\) with \(\widehat\psi=1\) near
+\([-2,2]\). The distributional identity \(Q=Q*\psi\) holds pointwise
+because both sides are continuous. Consequently
+\[
+\mathcal A(Q):=\sum_{k\in\mathbb Z}\sup_{t\in[k,k+1]}Q(t)
+\le \|Q\|_1\sup_y\sum_k\sup_{t\in[k,k+1]}|\psi(t-y)|<\infty.
+\tag{58}
+\]
+This is the same elementary bandlimited reproduction argument as (18b)--(18c).
+Section 5 also gives \(\mathcal A(\Phi)<\infty\). In particular, on any
+point set with at most two sites per unit interval and multiplicities at
+most two, the sums of \(Q\), or of \(\Phi\), translated to any center are
+bounded by \(4\mathcal A(Q)\), or \(4\mathcal A(\Phi)\), respectively.
+This assertion uses cells for the translated differences themselves; it
+is uniform over every real translation.
+
+Choose a fixed \(R>\max(1,r_1)\) sufficiently large that the local-supremum
+tail \(\sum_{|k|>R-2}\sup_{t\in[k,k+1]}\Phi(t)\), multiplied by
+four, is at most \(M/2\). Equations (41)--(44), which concern only the source kernel,
+provide neighborhoods \(\mathcal U_R\) of its finitely many roots in
+\([0,R]\) and \(d_R>0\) such that
+\[
+K(t)^2+K(t-r)^2\ge d_R/(1+t^2)
+\qquad(r\in\mathcal U_R,\ t\in\mathbb R).
+\tag{59}
+\]
+Shrink the neighborhoods to stay in \((0,R+1)\). For any
+\(\mu,\nu\in\{1,2\}\), (59) implies the squared-cost estimate
+\[
+\frac{[\mu\Phi(t)+\nu\Phi(t-r)]^2}
+     {\mu K(t)^2+\nu K(t-r)^2}
+\le C_R\{Q(t)+Q(t-r)\}.
+\tag{60}
+\]
+Indeed the numerator is at most \(8[\Phi(t)^2+\Phi(t-r)^2]\), and
+\(1+t^2\ll_R1+(t-r)^2\). The denominator is strictly positive by (59).
+Unlike (45), (60) does not require \(\Phi(t)\ll(1+t^2)^{-1}\).
+
+### Sum the squared cost before applying Cauchy--Schwarz
+
+Select a fixed \(\gamma>0\) as in (47), also below the compact triple gap
+at scale \(R\), and perform the deletion of section 2. Put
+\(\Delta=L(W)e(W)\) and \(W=G\sqcup B\). Then
+\[
+L(B)+E_\phi(B)\ll_\phi\Delta,
+\tag{61}
+\]
+the distance-\(R\) graph on \(G\) is a matching, and every interval of
+length \(R\) contains at most two good sites. Write \(P\) for the union
+of matched pairs and \(U\) for the isolated sites. All multiplicities in
+\(G\) are one or two. The isolated sites are mutually more than \(R\)
+apart. Our tail choice and (58)'s cell argument give ordered
+\(U\)--\(U\) notch energy at most \((M/2)L(U)\).
+
+The near-zero estimate (29) remains valid with \(\Phi,M\) in place of
+\(\Phi_\eta,M_\eta\): compact support of \(\phi\) makes \(\Phi\)
+Lipschitz, its decay makes \(\Phi\le M\) outside a compact interval,
+and the finitely many source zeros there are simple. Thus the matching
+edges contribute at most
+\[
+M L(P)+A_\phi\sqrt{L(P)\Delta}
+\tag{62}
+\]
+by the weighted Cauchy--Schwarz calculation in (50).
+
+For a matched pair with endpoints \(a<b\), set \(r=b-a\),
+\(\mu=m_a,\nu=m_b\). For every good site \(j\) outside this pair put
+\(t=x_j-a\) and define
+\[
+A_{p,j}=m_j[\mu K(t)^2+\nu K(t-r)^2],\qquad
+B_{p,j}=m_j[\mu\Phi(t)+\nu\Phi(t-r)].
+\tag{63}
+\]
+The positive real source decomposition gives
+\(\sum_{p,j}A_{p,j}\le\Delta\): an edge between two paired components
+is counted twice, and an edge from a pair to an isolated site once, while
+the ordered source excess counts each edge twice. By (58)--(60), for
+each fixed pair
+\[
+\sum_{j\notin p}\frac{B_{p,j}^2}{A_{p,j}}
+\le C_R\sum_{j\notin p}m_j[Q(x_j-a)+Q(x_j-b)]
+\ll_\phi\mathcal A(Q).
+\tag{64}
+\]
+There are at most \(L(G)/2\) pairs. The total ordered notch interaction
+between different components involving at least one pair is therefore
+\[
+\le2\sum_{p,j}B_{p,j}
+\le2\left(\sum_{p,j}A_{p,j}\right)^{1/2}
+       \left(\sum_{p,j}\frac{B_{p,j}^2}{A_{p,j}}\right)^{1/2}
+\ll_\phi\sqrt{L(G)\Delta}.
+\tag{65}
+\]
+This includes pair--pair and pair--isolated interactions with the stated
+counting multiplicities; no factor proportional to the total number of
+site pairs is introduced.
+
+Adding the diagonal, (62), (65) and the isolated-site allowance gives
+\[
+E_\phi(G)\le[\Phi(0)+M]L(G)+O_\phi(\sqrt{L(G)\Delta}).
+\tag{66}
+\]
+The bound \(\mathcal A(\Phi)<\infty\) and the good-site occupancy imply
+\(\sup_y\sum_{j\in G}m_j\Phi(y-x_j)\ll_\phi1\). Hence the mixed
+\(B\)--\(G\) notch energy is \(O_\phi(L(B))=O_\phi(\Delta)\), even
+for unbounded bad-site multiplicities. Combine this with (61), (66) and
+\(L(G)\le L(W)\), then divide by \(L(W)\), proving (56).
+
+### The admissible regime is strictly larger than inverse-square decay
+
+Freeze a triangular \(\tau\le J_0\) of width
+\(0<\eta<1/(2r_1)\), and write \(T=\widehat\tau\ge0\). Put
+\[
+R_n=2^{n^2},\quad Z=\sum_{n\ge1}(n^2R_n)^{-1},\quad
+w_n=(Zn^2R_n)^{-1},\quad 0<\lambda<1,
+\]
+\[
+\phi(\alpha)=\frac{\tau(\alpha)}{1+\lambda}
+ \left(1+\lambda\sum_{n\ge1}w_n\cos(2\pi R_n\alpha)\right).
+\tag{67}
+\]
+Since \(\sum w_n=1\) and \(\sum w_nR_n=Z^{-1}\sum n^{-2}<\infty\),
+the modulation factor is bounded and continuously differentiable.
+The zero-extended tent \(\tau\) is Lipschitz with compact support, so
+\(\phi\in H^1(\mathbb R)\). The positive shifted-transform formula (9)
+of ANF-196 applies with these weights, and proves
+\[
+\frac{1-\lambda}{1+\lambda}\tau\le\phi\le\tau\le J_0,
+\quad\Phi\ge0,\quad M\ge\Phi(r_1)\ge T(r_1)/(1+\lambda)>0.
+\tag{68}
+\]
+Nevertheless
+\[
+R_n^2\Phi(R_n)\ge
+\frac{\lambda T(0)}{2(1+\lambda)Z}\frac{R_n}{n^2}
+\longrightarrow\infty.
+\tag{69}
+\]
+Thus (56) applies to a fixed profile for which the pointwise majorant used
+in section 9 fails. Taking \(\lambda\) small preserves the unique
+maximizing source root \(r_1\) and its nonzero notch derivative: the tent
+has a positive gap to all other root values, and both \(\Phi-T\) and
+\(\Phi'-T'\) tend uniformly to zero with \(\lambda\), by integration
+against \(\phi-\tau\) and \(\alpha(\phi-\tau)\). Section 8's two-site
+Taylor test then shows that the square-root exponent can remain sharp
+even in this added regime.
+
+**Prior art and boundary.** The local-supremum estimate is classical
+Plancherel–Pólya/Nikol'skii sampling theory; see the one-dimensional
+inequalities (2)--(4) in [Pogány, *On multivariable Plancherel–Pólya
+inequality and truncation error upper bounds in irregular sampling*](https://doi.org/10.1007/s43670-022-00044-4)
+(2023). Equations (57)--(58) give the complete version needed here rather
+than importing an unspecified sampling theorem. The Montgomery--Taylor
+kernel and positive pair-energy prior art remain those of section 9.
+The additional result is the squared paired-source cost (60)--(65), which
+replaces pointwise Fourier domination by an integrated derivative condition
+in the same all-cardinality real stability theorem. Targeted checks of
+sampling inequalities, near-extremal positive pair energies and
+Montgomery--Taylor stability did not identify this exact implication;
+no general literature novelty is claimed.
+
+This is a sufficient regularity condition, not a necessary one or a sharp
+Sobolev threshold. ANF-196's continuous no-power-rate profile is not covered:
+its positive Fourier peaks have too much weighted square mass. Indeed each
+shifted tent-transform peak stays above a fixed multiple of its weight on
+a fixed-width neighborhood of \(R_n\), and those disjoint neighborhoods
+make \(\int t^2\Phi(t)^2dt\) diverge for its weights \(2^{-n}\).
+No uniformity over changing profiles, no nonreal stability theorem, and no
+new zero proportion or RH implication follows from (56).

@@ -89,6 +89,7 @@ This file records durable literature dependencies for `research/analytic_frontie
 
 ## Fourier decay and quantitative stability
 
+- Tibor K. Pogány, **On multivariable Plancherel–Pólya inequality and truncation error upper bounds in irregular sampling**, *Sampling Theory, Signal Processing, and Data Analysis* 21 (2023), article 5, DOI `10.1007/s43670-022-00044-4`. Role: classical bandlimited sampling boundary for ANF-195, section 10; equations (2)--(4) record one-dimensional sampling estimates, including bounded local node density. The finding directly proves its needed local-supremum estimate and derives the square-root real stability extension under a square-integrable weak derivative; the source does not assert that Mathia-specific consequence.
 - Holger Boche and Ezra Tampubolon, **On the decay - And the smoothness behavior of the Fourier transform, and the construction of signals having strong divergent Shannon sampling series**, *ICASSP 2016*, 4870–4874, DOI `10.1109/ICASSP.2016.7472603`. Role: general slow-Fourier-decay prior-art boundary for `ANF-196`, checked against the authors' institutional publication record. No theorem from this paper is imported; the positive dominated profile and its four-site failure of every power stability rate are constructed directly in the finding.
 
 ## Expansion rule
