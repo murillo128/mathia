@@ -432,6 +432,18 @@ Relevant finding: PF-347; relevant local clue: CLUE-positive-width-transition-sc
 
 **Scope warning.** These classical comparisons do not identify a corridor Gram form with the prime-flute DtN operator. PF-347 controls addition of the bounded-frequency symmetric seam block to the Gram model; nonsingular pant terms, intermodule transition elimination and the unbounded high sector remain outside that conclusion.
 
+## S25 — angle distortion under comparable positive forms
+
+**M. Lin and G. Sinnamon**, *The Generalized Wielandt Inequality in Inner Product Spaces*, arXiv:1201.6294 (2012).
+
+- https://arxiv.org/abs/1201.6294
+- Theorem 2.4 compares angles for two inner products through their norm-equivalence constants. PF-348 proves the weaker polarization bound it uses directly.
+- Together with S23's classical Cauchy structure and S24's shorting monotonicity, this supplies prior-art context for PF-348's narrow-band conditioning and local Dirichlet-module correlation argument.
+
+Relevant finding: PF-348; relevant local clue: CLUE-positive-width-transition-schur-complement.md.
+
+**Scope warning.** The literature does not provide the prime-flute PDE comparison. PF-348 derives that comparison from PF-216/PF-344 on a narrow growing Fourier cluster, with neighboring cuffs fixed to zero and local relaxation restricted to the symmetric cosine channel. It does not establish the globally shorted angle or its operator ideal.
+
 ## Provenance policy for future additions
 
 For each future finding, record separately:

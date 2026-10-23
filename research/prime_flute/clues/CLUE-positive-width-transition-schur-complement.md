@@ -11,6 +11,7 @@ based_on:
   - research/prime_flute/findings/PF-345-growing-exterior-edge-strips-have-exponentially-small-shorted-trace.md
   - research/prime_flute/findings/PF-346-corridor-gram-shorting-preserves-correlations-but-is-unstable-to-subleading-energy.md
   - research/prime_flute/findings/PF-347-natural-seam-energy-cannot-regularize-the-bounded-band-corridor-gram-model.md
+  - research/prime_flute/findings/PF-348-narrow-transition-shorting-preserves-the-local-dirichlet-pant-angle.md
 ---
 
 # Can a positive-width transition band absorb the collapsing-corridor mode after exact Schur elimination?
@@ -116,6 +117,8 @@ In particular, quantify the nonsingular pant/seam terms and intermodule eliminat
 
 PF-347 rules out the natural **symmetric seam term alone** as the regularizer of the bounded-band Gram model. Full-period Fourier coercivity and the exact cuff law give `0<=Q_J<=epsilon_n D_n G_n`, with `epsilon_n=O_K(P_n^(-19/40))`. The same relative sandwich survives elimination of the whole growing transition band, so the model's normalized edge correlation has the same positive limit after adding `Q_J`. The remaining comparison must use the other pant terms or global transition couplings; replacing them by this seam block is insufficient. The full-period Gram lower bound is not an actual pant lower bound.
 
+PF-348 proves a two-sided comparison for the **actual local Dirichlet module** on a sufficiently narrow fixed positive-width band. A Cauchy inverse estimate gives a conditioning exponent tending to zero with the band width, so the finite-corridor truncation and nonsingular pant trial cost are controlled relative to the entire growing-band Gram form. Exact local shorting then leaves edge correlation at least `1/2` on the tail. This includes the actual pant remainder, but holds with all other cuff traces fixed at zero and relaxation restricted to the local symmetric cosine channel. The remaining test must quantify the additional parity and intermodule transition relaxation; the local Dirichlet lower bound does not survive that enlargement automatically.
+
 ## Evidence boundary
 
 PF-344 proves a **partial positive** result: a fixed positive physical transition band removes the raw \(D_n\)-scale edge correlation after exact positive Schur shorting; all individual bounded-frequency cosine matrix entries are \(o(D_n)\). These are variational upper bounds on the unnormalized shorted form, not a claim about its normalized low/high canonical-correlation angle.
@@ -131,3 +134,5 @@ Status: accepted. PF-344 removes the raw \(D_n\) term on bounded edge witnesses,
 [[research/prime_flute/findings/PF-346-corridor-gram-shorting-preserves-correlations-but-is-unstable-to-subleading-energy.md]] sharpens the required comparison: the leading corridor Gram model retains its normalized correlations, and `o(D_n)` raw error is insufficient to transfer that answer. The remaining actual-PDE question must control the remainder at the residual-energy scale or demonstrate its effect on the normalized angle directly. The clue stays accepted and unresolved.
 
 [[research/prime_flute/findings/PF-347-natural-seam-energy-cannot-regularize-the-bounded-band-corridor-gram-model.md]] excludes one concrete repair of that model: the actual bounded-frequency symmetric seam energy is relatively form-small even before shorting and therefore cannot erase its normalized witness. This narrows the residual question to the remaining geometric and global terms; it does not resolve the actual-PDE clue.
+
+[[research/prime_flute/findings/PF-348-narrow-transition-shorting-preserves-the-local-dirichlet-pant-angle.md]] rules out the sufficiently narrow **local Dirichlet, symmetric-cosine** transition repair using the actual two-pant form. It leaves the clue accepted and unresolved for full parity/global transition shorting: a positive local correlation is not monotone under further relaxation, as its explicit finite control shows.
