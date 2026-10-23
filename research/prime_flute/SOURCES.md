@@ -428,7 +428,7 @@ Relevant finding: PF-346; relevant local clue: CLUE-positive-width-transition-sc
 - https://doi.org/10.1137/0128007
 - Classical positive shorting framework; PF-347 proves the needed finite-dimensional monotonicity and homogeneity directly by the variational minimum.
 
-Relevant finding: PF-347; relevant local clue: CLUE-positive-width-transition-schur-complement.md.
+Relevant findings: PF-347 and PF-349; relevant local clue: CLUE-positive-width-transition-schur-complement.md. PF-349 uses the same finite-dimensional shorting principles to preserve a relative bound through local face-parity and transition relaxation; its matrix estimate is proved directly.
 
 **Scope warning.** These classical comparisons do not identify a corridor Gram form with the prime-flute DtN operator. PF-347 controls addition of the bounded-frequency symmetric seam block to the Gram model; nonsingular pant terms, intermodule transition elimination and the unbounded high sector remain outside that conclusion.
 
@@ -443,6 +443,17 @@ Relevant finding: PF-347; relevant local clue: CLUE-positive-width-transition-sc
 Relevant finding: PF-348; relevant local clue: CLUE-positive-width-transition-schur-complement.md.
 
 **Scope warning.** The literature does not provide the prime-flute PDE comparison. PF-348 derives that comparison from PF-216/PF-344 on a narrow growing Fourier cluster, with neighboring cuffs fixed to zero and local relaxation restricted to the symmetric cosine channel. It does not establish the globally shorted angle or its operator ideal.
+
+## S26 — reflection of cusped and truncated hyperbolic pants
+
+**P. Buser, E. Makover, B. Muetzel and R. Silhol**, *Energy distribution of harmonic 1-forms and Jacobians of Riemann surfaces with a short closed geodesic*, Mathematische Zeitschrift 297 (2021), 1899–1952. DOI: 10.1007/s00209-020-02584-8.
+
+- https://doi.org/10.1007/s00209-020-02584-8
+- Section 2.3 describes the natural reflection fixing pant orthogeodesics and the cusped/equidistantly truncated Y-piece conventions. PF-349 uses this symmetry to decouple tangential cosine and sine sectors in the local positive shifted DtN form.
+
+Relevant finding: PF-349; relevant local clue: CLUE-positive-width-transition-schur-complement.md.
+
+**Scope warning.** The harmonic-form and Jacobian estimates in this source are not imported. Reflection does not identify the two adjacent pants, remove face-parity coupling, or control intermodule transition elimination.
 
 ## Provenance policy for future additions
 
