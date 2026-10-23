@@ -431,4 +431,16 @@ Role: classical Mellin holomorphy and Dirichlet-series framework for MC-521. The
 
 Alessandro Zaccagnini, *The Selberg integral and a new pair-correlation function for the zeros of the Riemann zeta-function*, Rivista di Matematica della Università di Parma 7 (2016), 133–151. Author manuscript: https://arxiv.org/abs/1603.02952.
 
-Role: adjacent prior-art boundary for MC-521, especially Section 3.3 on prime-counting Selberg integrals and quasi-RH. This supports the classical nature of the variance/zero-location connection, not the signed Möbius moment hypothesis or its proof.
+Role: adjacent prior-art boundary for MC-521 and MC-522, especially Section 3.3 on prime-counting Selberg integrals and quasi-RH. This supports the classical nature of the variance/zero-location connection, not the signed Möbius moment hypotheses or their proofs. The prescribed prime-count main term differs from MC-522's empirical block mean.
+
+## MC-S73 — Montgomery zero density, as stated by Dickinson
+
+H. L. Montgomery, *Topics in Multiplicative Number Theory*, Lecture Notes in Mathematics 227, Springer (1971), Theorem 12.1. The exact bound used is reproduced in George Dickinson, *Zeros of Dirichlet L-functions near the critical line*, arXiv:2211.06264v1 (2022), Introduction, p. 1: https://arxiv.org/pdf/2211.06264v1.
+
+Role: classical unconditional sparse-zero input for MC-522. Dickinson states the sum over all characters modulo `q` for `q>=1`, with exponent `3(1-sigma)/(2-sigma)` and a ninth logarithmic power for `1/2<=sigma<=4/5`. Taking `q=1` and then using monotonicity gives `N_zeta(sigma,T)=o(T)` for every fixed `sigma>1/2`. This density bound alone does not exclude any isolated zero; the centered-variance decomposition and principal-part recurrence supply the additional implications.
+
+## MC-S74 — Martin–Ng, zeros on vertical arithmetic progressions
+
+Greg Martin and Nathan Ng, *Nonzero values of Dirichlet L-functions in vertical arithmetic progressions*, International Journal of Number Theory 9 (2013), no. 4, 813–843. DOI: https://doi.org/10.1142/S1793042113500140. Author manuscript: arXiv:1109.1788v2 (2012), https://arxiv.org/pdf/1109.1788.
+
+Role: prior-art comparison for MC-522, especially the Introduction, pp. 1–2, explaining the classical zero-density obstruction to positive-density off-critical zero progressions. Their critical-line nonvanishing theorem is not used as a substitute for the zeta density input. MC-522 separately derives its full Laurent principal-part recurrence from the filtered reciprocal; no novelty is claimed for progression sparsity or finite-difference algebra.

@@ -1,7 +1,7 @@
 ---
 id: CLUE-mobius-cancellation-dyadic-centered-mobius-pole-recovery
 type: research-clue
-status: proposed
+status: resolved
 origin: master-researcher
 target_line: mobius_cancellation
 based_on:
@@ -47,3 +47,13 @@ Then test whether the periodic-mean sparsity argument survives and whether filte
 ## Evidence boundary
 
 No centered dyadic Möbius transfer, moment estimate, RH result, or external novelty is established here. PL-466 proves a prime logarithmic-derivative theorem, not this reciprocal-zeta analogue. MC-521's all-scale uncentered theorem remains intact. Every large dyadic block and its full base-point integral are required by the question; an arbitrary Farey-selected subsequence or an almost-all-start estimate does not supply them. The hypothesis is fixed before the scale varies, and no endpoint `theta=1` or uniform moving-exponent limit is proposed.
+
+## Research disposition
+
+Outcome: supported
+
+Resolved by:
+
+- [[research/mobius_cancellation/findings/MC-522-centered-dyadic-variance-recovers-all-reciprocal-zeta-poles]]
+
+MC-522 reconstructs the signed box inverse and periodic mean decomposition, then proves the finite-difference law for every Laurent principal-part coefficient. Sparse pole support forces all these coefficients to vanish, without simple zeros, sign restrictions, or a uniform multiplicity bound. Thus the stated centered dyadic premise implies zero exclusion for `Re s>1-theta/2` and the corresponding epsilon-loss Mertens bound. The full-progression positive control still passes the variance premise and fails arithmetic sparsity. The premise itself, an unconditional Mertens improvement, and external novelty remain unproved.
