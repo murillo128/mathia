@@ -1,7 +1,7 @@
 ---
 id: CLUE-xi-flow-unknown-slack-jacobi-stopping-certificate
 type: research-clue
-status: proposed
+status: resolved
 origin: master-researcher
 target_line: xi_flow
 based_on:
@@ -39,3 +39,13 @@ Conversely, adapt AF-575's common-transcript test to the least favorable complex
 ## Evidence boundary
 
 No unknown-slack Jacobi algorithm, finite stopping theorem, or sharp adaptive overhead is established. The resolved known-slack clue stays resolved. AF-575's supremum-noise obstruction and XF-202's known-budget row bounds concern different quantifiers and noise norms. The variable-cardinality and approximation tools in their prior-art audits are classical; this proposed transfer needs its own derivation and novelty check. Finite precision, coordinate error, physical calibration access and an RH-sensitive bridge remain outside this synthetic question.
+
+## Research disposition
+
+Outcome: supported
+
+Resolved by:
+
+- [[research/xi_flow/findings/XF-203-unknown-jacobi-calibration-slack-admits-finite-certified-stopping]]
+
+The complete complex Jacobi experiment admits one deterministic procedure, independent of the calibration slack, that stops correctly after finitely many distinct rows on each promised input, both noiselessly and under one known total squared-noise budget. An endpoint chord contrast and two explicit strict inequalities certify exclusion against the whole unknown-budget class. Increasing distinct-row cluster sizes bounds the contrast noise without resetting the global budget. A midpoint-transcript construction with one interpolating baseline per complete finite prefix rules out every uniform adaptive row cap, even without noise. In the fixed-Q, positive-noise, vanishing-slack limit, the procedure retains the known-slack quartic cost order; optimal overhead in all crossover regimes is not claimed. Effective finite stopping additionally assumes certified, arbitrarily refinable source and observation values. Physical Xi access and zero exclusion remain outside the result.
