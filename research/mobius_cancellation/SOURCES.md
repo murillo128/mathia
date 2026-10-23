@@ -390,3 +390,9 @@ Role: primary classical local-dependence total-variation estimate for MC-517. Th
 A. D. Barbour and G. K. Eagleson, *Poisson Convergence for Dissociated Statistics*, Journal of the Royal Statistical Society: Series B (Methodological) 46 (1984), no. 3, 397–402. DOI: https://doi.org/10.1111/j.2517-6161.1984.tb01311.x.
 
 Role: primary prior-art boundary for MC-517's setting of comparison indicators built from independently sampled source variables, including non-identically distributed comparison inputs in the general theory. The exact equal-law largest-atom equivalence and heavy-class control are derived explicitly in MC-517; no general novelty is claimed for Poisson limits of dissociated comparisons.
+
+## MC-S66 — Bhattacharya, color-dependent urn collisions and Poisson embedding
+
+Bhaswar B. Bhattacharya, *Collision times in multicolor urn models and sequential graph coloring with applications to discrete logarithms*, Annals of Applied Probability 26 (2016), no. 6, 3286–3318. DOI: https://doi.org/10.1214/16-AAP1176. Author manuscript: https://arxiv.org/abs/1311.4243 (v5, 24 May 2016).
+
+Role: primary prior-art anchor for MC-519. Theorem 1.3 and Section 4 treat color-dependent urn-selection laws. Equation (4.2) gives the Poisson-embedded no-collision product, whose two-color specialization is used in MC-519's necessity proof. MC-519 derives its clipped-overlap criterion and fixed-sample quantitative bounds explicitly; it does not claim novelty for Poisson embedding, the product formula, or the general nonuniform multicolor birthday mechanism.
