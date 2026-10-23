@@ -69,6 +69,10 @@ This file records durable literature dependencies for `research/robin_extremal/`
 
 - J. E. Nymann, *Linear combinations of Cantor sets*, Colloquium Mathematicum **68** (1995), 259–264, DOI `10.4064/cm-68-2-259-264`. Page 259 records Kakeya's classical subsum interval criterion: a positive summable sequence whose terms do not exceed their remaining tails has every intermediate subsum. `RE-260` reconstructs this argument for the summable changes of Euler factors under unit prime shifts, giving an exact interval of Mertens constants and nontrivial infinite exact matching; the subsum theorem itself is not claimed as new.
 
+## Counting discrepancy and variation
+
+- Christoph Aistleitner and Josef Dick, *Functions of bounded variation, signed measures, and a general Koksma–Hlawka inequality*, Acta Arithmetica **167** (2015), 143–171, DOI `10.4064/aa167-2-4`, arXiv:1406.0230. Role: classical discrepancy/variation and signed-measure prior-art boundary for RE-261. The Robin-specific exact-Mertens counting-budget bound and discrete sharpness construction are derived in that finding; the general Stieltjes/discrepancy mechanism is not claimed as new.
+
 ## Expansion rule
 
 Add primary sources when a canonical finding depends on an exact theorem about superabundant/colossally abundant integers, exponent-profile transitions, explicit prime-distribution errors, or extremal divisor-sum bounds. Finite verification records should be cited only when a finding actually depends on their verified range.
