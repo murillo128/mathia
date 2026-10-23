@@ -30,7 +30,7 @@ For the strict regime \(0<\theta<1/2\), the **second-order pair assumption (B) o
 
 ## 1. The diagonal pair model supplies precisely the raw-moment gate
 
-PL-458 derives from (B), fixed-modulus PNT, its exact same-residue singular-series sum, and endpoint accounting (for \(\theta<1/2\)) that
+[[research/prime_lattice/findings/PL-458-mod5-singular-series-matrix-second-order-transfer|PL-458]] derives from (B), fixed-modulus PNT, its exact same-residue singular-series sum, and endpoint accounting (for \(\theta<1/2\)) that
 \[
 Q_{aa}(X,H)
 =\frac{XH^2}{16}+\frac{XH}{4}\log(X/H)+o(XH\log X).
@@ -52,7 +52,7 @@ I_a\le\frac{XH}{4}+O_\theta(X\log X).
 \]
 The last step uses \(\sqrt{u^2+v}\le u+v/(2u)\) for \(u>0,v\ge0\). In particular, **(3) is only one-sided and has big-\(O\), not little-\(o\), error**: it does *not* silently rederive PL-458's hypothesis (A).
 
-The exact endpoint identity already established in PL-459 is
+The exact endpoint identity already established in [[research/prime_lattice/findings/PL-459-integrated-first-moment-zero-free-gate|PL-459]] is
 \[
 I_a
 =H\bigl(\psi_a(2X)-\psi_a(X)\bigr)
@@ -100,6 +100,6 @@ Character orthogonality applied to (7) now recovers each \(-L'/L(s,\chi)\) as a 
 
 ## Prior art, stress tests and consequence
 
-Cauchy--Schwarz/Jensen, positivity of Mellin transforms (Landau), Dirichlet-character orthogonality, logarithmic derivatives and functional equations are classical. Landau's abscissa theorem is stated and proved for nonnegative Dirichlet series in K. Kedlaya, *Notes on Analytic Number Theory*, Chapter 3, Theorem 3.4 (source 121); the Mellin/Dirichlet \(L\)-function bridge is in Montgomery--Vaughan (source 120). The elementary grouped-series nonvanishing check is special to modulus 5. The line-specific delta is the previously unrecorded implication **PL-458(B) -> diagonal uncentered moment ceiling -> one-sided progression errors -> zero-free half-plane**, making the apparently independent *second-order* route GRH-strength even without (A). No independently new theorem about actual primes is claimed.
+Cauchy--Schwarz/Jensen, positivity of Mellin transforms (Landau), Dirichlet-character orthogonality, logarithmic derivatives and functional equations are classical. [[research/prior_art/incremental/PA-landau-nonnegative-dirichlet-series-singularity|Landau's abscissa theorem]] is stated and proved for nonnegative Dirichlet series in K. Kedlaya, *Notes on Analytic Number Theory*, Chapter 3, Theorem 3.4 (source 121); the Mellin/Dirichlet \(L\)-function bridge is in Montgomery--Vaughan (source 120). The elementary grouped-series nonvanishing check is special to modulus 5. The line-specific delta is the previously unrecorded implication **PL-458(B) -> diagonal uncentered moment ceiling -> one-sided progression errors -> zero-free half-plane**, making the apparently independent *second-order* route GRH-strength even without (A). No independently new theorem about actual primes is claimed.
 
 The signs, quantifiers and logical directions are essential. Replacing **uncentered** \(Q_{aa}\) by an empirically centered variance invalidates (3); a raw moment ceiling with the wrong \(XH^2/16\) coefficient is insufficient. Without all four channels, orthogonality does not exclude every character's zeros. The all-large-real-\(X\) quantifier is required for dyadic summation; sparse-scale estimates do not suffice. The Landau argument depends on real-axis nonvanishing, which is verified here but must not be presumed for arbitrary moduli or Beurling systems. The upper bound is not deduced from existing unconditional sieve-order pair bounds, and GRH alone is not asserted to imply \((M_\theta)\), let alone (B). This is an obstruction to treating PL-458's covariance-scale pair hypothesis as an independent workaround of the classical zero problem, **not a proof of RH or of its zero-free prerequisites**.

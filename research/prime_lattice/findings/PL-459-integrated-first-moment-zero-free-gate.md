@@ -15,7 +15,7 @@ Fix \(0<\theta<1/2\), put \(H=\lfloor X^\theta\rfloor\), and set
 \[
 P_a(y)=\sum_{\substack{y<n\le y+H\\n\equiv a\ (5)}}\Lambda(n).
 \]
-Suppose the PL-458 first-moment input (A) holds **for every sufficiently large real \(X\)**, simultaneously for \(a=1,2,3,4\):
+Suppose the [[research/prime_lattice/findings/PL-458-mod5-singular-series-matrix-second-order-transfer|PL-458]] first-moment input (A) holds **for every sufficiently large real \(X\)**, simultaneously for \(a=1,2,3,4\):
 \[
 \max_a\left|\int_X^{2X}P_a(y)\,dy-XH/4\right|
 =o(X\log X). \tag{A_\theta}

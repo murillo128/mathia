@@ -555,6 +555,7 @@ This is a path-derived structural projection for graph topology. Each link means
 - [[research/prime_lattice/mind/intuition/MI-061-exact-local-factor-deletion-is-positive-exactly-above-a-riesz-floor]]
 - [[research/prime_lattice/mind/intuition/MI-062-raw-and-exactly-centered-residue-grams-both-miss-the-dephasing-positivity-cone]]
 - [[research/prime_lattice/mind/intuition/MI-063-the-live-prime-lattice-gate-is-a-complex-polarized-lower-frame-at-covariance-scale]]
+- [[research/prime_lattice/mind/intuition/MI-064-the-mod5-first-moment-premise-is-a-zero-free-input]]
 
 ### Robin Extremal
 - [[research/robin_extremal/mind/intuition/MI-001-robin-failure-requires-self-tangent-half-mass-event-gaps]]
@@ -770,6 +771,7 @@ This is a path-derived structural projection for graph topology. Each link means
 - [[research/weil_inertia/mind/intuition/MI-075-vertical-localization-conserves-a-linear-defect-area-budget]]
 - [[research/weil_inertia/mind/intuition/MI-076-positive-safe-line-averages-face-a-blind-or-singular-defect-dichotomy]]
 - [[research/weil_inertia/mind/intuition/MI-077-finite-cost-hankel-frequency-banks-are-low-pass]]
+- [[research/weil_inertia/mind/intuition/MI-078-nonnegative-cyclotomic-multiples-charge-extra-support]]
 
 ### Weil Positivity
 - [[research/weil_positivity/mind/intuition/MI-001-positivity-needs-a-sign-producing-global-operation]]

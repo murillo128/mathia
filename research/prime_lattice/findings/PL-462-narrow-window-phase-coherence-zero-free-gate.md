@@ -28,7 +28,7 @@ Fix \(0<\theta\le1/2\), put \(H=\lfloor X^\theta\rfloor\), and suppose there are
 Q_{t_X}(X,H)\le\frac{XH^2}{16}
        +C_\theta XH\log(2X).\tag{2}
 \]
-Then the *unmodulated* one-channel hypothesis of PL-461 follows:
+Then the *unmodulated* one-channel hypothesis of [[research/prime_lattice/findings/PL-461-single-identity-residue-moment-zero-free-gate|PL-461]] follows:
 \[
 \boxed{Q_0(X,H)\le\frac{XH^2}{16}
                +O_{\theta,K_\theta,C_\theta}(XH\log(2X)).}\tag{3}

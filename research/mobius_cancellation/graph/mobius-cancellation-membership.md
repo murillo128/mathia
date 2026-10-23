@@ -521,3 +521,8 @@ This stable projection inventories every current canonical Möbius Cancellation 
 - [[research/mobius_cancellation/findings/MC-512-pair-phase-participation-factorization|MC-512]]
 - [[research/mobius_cancellation/findings/MC-513-exact-state-phase-participation-sharpens-collision-gate|MC-513]]
 - [[research/mobius_cancellation/findings/MC-514-q-plus-r-collisions-force-cycle-dependence-and-spectral-rank|MC-514]]
+- [[research/mobius_cancellation/findings/MC-515-fixed-prime-collision-count-nongaussian-limit|MC-515]]
+- [[research/mobius_cancellation/findings/MC-516-growing-prime-collision-poisson-gaussian-transition|MC-516]]
+- [[research/mobius_cancellation/findings/MC-517-nonuniform-collision-poisson-max-atom-criterion|MC-517]]
+- [[research/mobius_cancellation/findings/MC-518-asymmetric-collision-poisson-moment-leakage|MC-518]]
+- [[research/mobius_cancellation/findings/MC-519-asymmetric-collision-clipped-overlap-poisson-criterion|MC-519]]

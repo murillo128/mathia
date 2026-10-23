@@ -32,3 +32,7 @@ MC-007--MC-008 sharpen the surviving transfer question rather than solving cance
 MC-009 adds a weaker RH-complete target only conditionally on a very recent Pintz theorem that the finding explicitly marks `NEEDS-AUDIT`: the mean-absolute Mertens exponent would recover the rightmost zero boundary. This could lower the required endpoint from pointwise to mean-absolute control, but it supplies no new unconditional cancellation estimate and is not used to promote the territory.
 
 The territory therefore remains `active`, not `open`: Mathia is traversing the classical summatory-error route deeply enough to isolate multiple quantitative barriers, a sharper transfer equivalence, and a conditional literature endpoint, but it has not produced a surviving positive route that improves the Mertens scale or zero-free region.
+
+## Prime-window moment prerequisites
+
+[[research/prime_lattice/graph/relations/mod5-window-moment-zero-free-prerequisites|The mod-5 window-moment mechanism]] adds the conditional zero-free implications in [[research/prime_lattice/findings/PL-459-integrated-first-moment-zero-free-gate|PL-459]]–[[research/prime_lattice/findings/PL-463-empirically-centered-window-variance-zero-free-gate|PL-463]]. Raw and empirically centered upper moments have different exponents and unproved source hypotheses. They diagnose the strength of proposed covariance inputs; they supply no unconditional zero-free improvement. The territory remains `active`, with unchanged mass.

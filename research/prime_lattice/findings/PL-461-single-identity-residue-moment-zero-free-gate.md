@@ -22,7 +22,7 @@ with a constant independent of \(X\). Then **every** Dirichlet \(L(s,\chi)\) mod
 \]
 apart from the principal factor's known pole at \(s=1\). In particular, this *single uncentered diagonal moment upper bound* at \(\theta=1/2\) implies joint GRH modulo 5, including RH. The same implication follows if \((M_{1,\theta_j})\) holds for each of a sequence of fixed \(\theta_j\uparrow1/2\).
 
-For \(1/6<\theta<1/2\), the **single diagonal \(a=b=1\) instance** of PL-458's unproved signed second-order pair remainder (B), together with its unconditional prime-number and singular-series calculations, already implies \((M_{1,\theta})\). Therefore just that instance of (B), assumed for all large \(X\), excludes all mod-5 Dirichlet zeros in \(\Re s>1-\theta\). The other three diagonal pair bounds, all off-diagonal pair bounds, and PL-458's first-moment assumption (A) are unnecessary for this zero-free consequence.
+For \(1/6<\theta<1/2\), the **single diagonal \(a=b=1\) instance** of [[research/prime_lattice/findings/PL-458-mod5-singular-series-matrix-second-order-transfer|PL-458]]'s unproved signed second-order pair remainder (B), together with its unconditional prime-number and singular-series calculations, already implies \((M_{1,\theta})\). Therefore just that instance of (B), assumed for all large \(X\), excludes all mod-5 Dirichlet zeros in \(\Re s>1-\theta\). The other three diagonal pair bounds, all off-diagonal pair bounds, and PL-458's first-moment assumption (A) are unnecessary for this zero-free consequence.
 
 These are implications **from unproved estimates**. Neither the moment hypothesis, the pair remainder, GRH, nor RH is established here.
 
@@ -36,7 +36,7 @@ I_1^2\le XQ_{11}
 I_1\le \frac{XH}{4}+O_\theta(X\log(2X)).
 \tag{1}
 \]
-The second inequality uses \(\sqrt{u^2+v}\le u+v/(2u)\), not an assumption about the signed first moment. Counting the intersection lengths of prime windows with the dyadic interval gives the exact endpoint transfer from PL-459:
+The second inequality uses \(\sqrt{u^2+v}\le u+v/(2u)\), not an assumption about the signed first moment. Counting the intersection lengths of prime windows with the dyadic interval gives the exact endpoint transfer from [[research/prime_lattice/findings/PL-459-integrated-first-moment-zero-free-gate|PL-459]]:
 \[
 I_1(X,H)=H\{\psi_1(2X)-\psi_1(X)\}
          +O(H(H+1)\log(3X)).
@@ -110,8 +110,8 @@ Q_{aa}(X,H)=\frac{XH^2}{16}
  +\frac{XH}{4}\log(X/H)+o(XH\log X).
 \tag{10}
 \]
-Choosing \(a=1\) supplies \((M_{1,\theta})\). No other entry of the covariance matrix enters the proof above. The advance over PL-460 is thus a reduction from **four independent diagonal raw-moment hypotheses to one**, and, separately, from all diagonal instances of PL-458(B) to the identity-residue instance.
+Choosing \(a=1\) supplies \((M_{1,\theta})\). No other entry of the covariance matrix enters the proof above. The advance over [[research/prime_lattice/findings/PL-460-raw-window-moment-landau-zero-free-gate|PL-460]] is thus a reduction from **four independent diagonal raw-moment hypotheses to one**, and, separately, from all diagonal instances of PL-458(B) to the identity-residue instance.
 
-The analytic ingredients are classical: Cauchy–Schwarz, the Mellin/logarithmic-derivative identity, Landau's nonnegative-transform singularity principle (source 121), and Dirichlet factorization/functional equations (source 120). Harcos–Soundararajan (2023, source 122) independently demonstrates, in the more general Chebotarev setting, that power-saving control of completely split primes can govern other Frobenius classes; its hypothesis and conclusion are **not** identified with the one-sided raw-moment theorem proved here. The special identity-character projection and explicit mod-5 real-axis nonvanishing explain the reduction, but no broad novelty of the classical analytic method or an unconditional advance on zeros is claimed.
+The analytic ingredients are classical: Cauchy–Schwarz, the Mellin/logarithmic-derivative identity, [[research/prior_art/incremental/PA-landau-nonnegative-dirichlet-series-singularity|Landau's nonnegative-transform singularity principle]] (source 121), and Dirichlet factorization/functional equations (source 120). Harcos–Soundararajan (2023, source 122) independently demonstrates, in the more general Chebotarev setting, that power-saving control of completely split primes can govern other Frobenius classes; its hypothesis and conclusion are **not** identified with the one-sided raw-moment theorem proved here. The special identity-character projection and explicit mod-5 real-axis nonvanishing explain the reduction, but no broad novelty of the classical analytic method or an unconditional advance on zeros is claimed.
 
 This result does **not** certify the prime-source dephased covariance cone, and the moment ceiling is stronger than an unconditional sieve upper bound. The leading coefficient \(1/16\), the uncentered raw moment, the all-large-real-\(X\) quantifier, the real-axis nonvanishing check, and the strict \(1/6<\theta<1/2\) transfer from PL-458(B) are load-bearing. A generic residue \(a\ne1\) weights characters by different phases, so the no-cancellation step for the product does not automatically follow. In a general modulus, a possible real exceptional zero prevents this Landau argument from being transplanted without a separate real-axis analysis.

@@ -200,3 +200,8 @@ This stable projection inventories every current canonical Analytic Frontier fin
 - [[research/analytic_frontier/findings/ANF-188-source-scale-semicircle-contrast-survives-growing-harmonic-cancellation-on-the-exact-carrier|ANF-188]]
 - [[research/analytic_frontier/findings/ANF-189-opposed-prime-rough-packets-defeat-every-saturated-critical-high-pass|ANF-189]]
 - [[research/analytic_frontier/findings/ANF-190-height-mean-values-confine-bow-endpoint-memory-to-sparse-twists|ANF-190]]
+- [[research/analytic_frontier/findings/ANF-191-liu-three-face-zero-free-boundary-and-untwisted-bow-gap|ANF-191]]
+- [[research/analytic_frontier/findings/ANF-192-shifted-perron-polynomial-height-prime-twists-and-bow-scale-gap|ANF-192]]
+- [[research/analytic_frontier/findings/ANF-193-bonferroni-rough-critical-width-logarithmic-coherence|ANF-193]]
+- [[research/analytic_frontier/findings/ANF-194-primorial-witnesses-block-global-absolute-bonferroni-transfer|ANF-194]]
+- [[research/analytic_frontier/findings/ANF-195-real-near-extremizers-have-exact-two-site-notch-exposure|ANF-195]]

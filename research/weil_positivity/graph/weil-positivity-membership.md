@@ -443,3 +443,7 @@ This stable projection inventories every current canonical Weil Positivity findi
 - [[research/weil_positivity/findings/WP-433-thermal-coanalytic-prime-regularization-is-compact-and-sign-inert|WP-433]]
 - [[research/weil_positivity/findings/WP-434-logarithmic-coanalytic-prime-smoothing-compactness-without-schatten-gain|WP-434]]
 - [[research/weil_positivity/findings/WP-435-fractional-heat-prime-field-schatten-phase-transition|WP-435]]
+- [[research/weil_positivity/findings/WP-436-critical-prime-heat-energy-mosco-collapse|WP-436]]
+- [[research/weil_positivity/findings/WP-437-prime-ray-heat-restriction-mosco-discontinuity-and-vacuum-null-sign-obstruction|WP-437]]
+- [[research/weil_positivity/findings/WP-438-mixed-prime-vacuum-charge-rank-one-thermal-completion-obstruction|WP-438]]
+- [[research/weil_positivity/findings/WP-439-positive-heat-mixtures-admit-closed-star-completions-but-remain-compact-on-every-prime-ray|WP-439]]
