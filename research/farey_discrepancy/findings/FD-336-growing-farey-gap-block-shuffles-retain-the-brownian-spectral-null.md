@@ -2,7 +2,7 @@
 
 **Status:** LITERATURE+DERIVED + EXACT-FINITE-CALIBRATION + UNCONDITIONAL-WEAK-LIMIT + LOCAL-ORDER-BOUNDARY.
 
-The reflection/same-gap null in FD-335 forgets all local order. A strictly more constrained null preserves the internal order of consecutive blocks of genuine Farey gaps. For block length `b=o(sqrt(log Q))`, this null still has the same normalized Brownian energy and growing-band allocation laws. In particular, choosing `b -> infinity` preserves a proportion tending to one of the original adjacent gap pairs without changing those limiting laws. Its finite mean energies must nevertheless be recalculated: the single-gap Green formula is generally false for this ensemble.
+The reflection/same-gap null in FD-335 forgets all local order. A strictly more constrained null preserves the internal order of consecutive blocks of genuine Farey gaps. For every integer block length `1<=b<=Q/log(2Q)`, this null still has the same normalized Brownian energy and growing-band allocation laws. A rank-separation estimate for small-denominator fractions controls internal block motion, while a truncated large-gap second moment prevents the centered block variance from collapsing. In particular, choosing `b -> infinity` preserves a proportion tending to one of the original adjacent gap pairs without changing those limiting laws. Its finite mean energies must nevertheless be recalculated: the single-gap Green formula is generally false for this ensemble.
 
 This resolves a specified stronger-control calibration question from the accepted gap-ordering clue. It does not preserve the complete adjacent-pair inventory, estimate the original Farey spectrum, or prove a new Franel–Landau bound.
 
@@ -43,7 +43,7 @@ The subscripted `Q_q` is a statistic, not the Farey order.
 
 **Theorem.** For every deterministic integer sequence
 \[
-1\le b=b(Q)=o(\sqrt{\log Q}),
+1\le b=b(Q)\le \frac{Q}{\log(2Q)},
 \tag{4}
 \]
 `V_b>0` eventually. If `B` is a standard Brownian bridge, then the interpolated first-half discrepancy process satisfies
@@ -72,7 +72,7 @@ For every deterministic `q=q(Q)->infinity` with `q<=m-1`,
 \]
 In particular, both predeclared bands `floor(sqrt(Q))` and `floor(Q^(2/3))` have this law. The amplitude limit remains nondegenerate, with variance `4/5`.
 
-For fixed `b>1` the preserved fraction of within-block adjacencies is positive. For `b->infinity` satisfying (4), all but `O(1/b)` of the original **labeled adjacent occurrences** survive, yet (6)–(7) remain valid. More generally, for `h=o(b)`, all but `O(h/b)` of the original labeled length-`h` windows lie inside the retained blocks or remainder. This is density-one preservation of occurrences, not equality of the complete window-count matrix: seam-crossing windows can change.
+For fixed `b>1` the preserved fraction of within-block adjacencies is positive. For `b->infinity` satisfying (4), all but `O(1/b)` of the original **labeled adjacent occurrences** survive, yet (6)–(7) remain valid. More generally, for `h=o(b)`, all but `O(h/b)` of the original labeled length-`h` windows lie inside the retained blocks or remainder. For example, `b=floor(Q/log(2Q))` retains a proportion tending to one of every length-`h` window with `h=o(Q/log Q)`, including every fixed power `h=Q^alpha`, `0<alpha<1`. This is density-one preservation of occurrences, not equality of the complete window-count matrix: seam-crossing windows can change.
 
 ## 2. Exact finite calibration, including the anchored remainder
 
@@ -112,7 +112,7 @@ w_i^{[u]}=\frac2{\sqrt m}\sum_{k=i}^{m-1}\sin(\pi uk/m),
 \]
 Equations (9)–(11) give the exact total and band expectations, all spectral covariances, and any nonzero finite means. Odd coefficients vanish identically. Finite even modes need not be uncorrelated or centered; one must not import FD-335's diagonal covariance into the block ensemble. For `b=1`, these formulas reduce to that single-gap result.
 
-## 3. Farey positivity prevents collapse of the block variance
+## 3. Rank separation and the large-gap variance reservoir
 
 FD-335 derives directly from the coprime Farey denominator triangle that
 \[
@@ -121,36 +121,96 @@ V_1:=\sum_{i=1}^m a_i^2
 \max_i g_i=1/Q,\qquad N\sim3Q^2/\pi^2.
 \tag{12}
 \]
-These are unconditional arithmetic inputs, not assumptions about random independent gaps.
+These are unconditional arithmetic inputs, not assumptions about random independent gaps. Using only `b max g_i` would control a block by `b/Q`. The intrinsic Farey rank separation gives a much smaller bound.
 
-Write `G_j=sum_(t=1)^b g_((j-1)b+t)` and `T=sum_j G_j<=1/2`. Centering by the block average gives
-\[
-V_b=\sum_j G_j^2-T^2/K.
-\]
-Since every gap is positive, `G_j^2>=sum_(i in block j)g_i^2`. Removing fewer than `b` gaps costs at most `b/Q^2`; also `T^2/K<=1/(4K)=O(b/Q^2)`. Therefore
-\[
-\boxed{V_1-O(b/Q^2)\le V_b\le bV_1.}
-\tag{13}
-\]
-For the upper bound, subtracting the mean reduces squared mass and Cauchy–Schwarz gives `sum_j s_j^2<=b sum_(i<=Kb)a_i^2<=bV_1`.
+### 3.1 Uniform mass of a consecutive gap window
 
-Under (4), (12)–(13) imply `V_b >> log(Q)/Q^2` and
+Any two distinct fractions of denominator at most an integer `R<=Q` are separated by at least `floor(Q/R)` gaps in `F_Q`. To prove this, first take neighbors `a/q<c/d` in `F_R`. Their determinant is one, so all the fractions
+\[
+\frac{a+kc}{q+kd},\qquad
+1\le k\le\left\lfloor\frac{Q-q}{d}\right\rfloor,
+\]
+are distinct reduced fractions strictly between the two endpoints. The number of these fractions is at least `floor(Q/R)-1`. Nonneighboring `F_R` endpoints are separated by at least as many `F_Q` gaps.
+
+For any `b` consecutive gaps, let `A_R` count their `b+1` vertices of denominator at most `R`. It follows that
+\[
+A_R\le1+\frac b{\lfloor Q/R\rfloor}
+\le1+\frac{2bR}{Q}.
+\tag{13a}
+\]
+The last bound also holds for real `1<=R<=Q`, by taking its integer part. Writing the vertex denominators as `q_i`, the exact integral identity for reciprocal integers gives
+\[
+\sum_{i=0}^b\frac1{q_i}
+=\frac{b+1}{Q}+\int_1^Q\frac{A_t}{t^2}\,dt
+\le1+\frac{b+1}{Q}+\frac{2b\log Q}{Q}.
+\]
+Neighboring denominators satisfy `q_i+q_(i+1)>Q`. Their gap is therefore at most `2/[Q min(q_i,q_(i+1))]`. Summing over the window yields
+\[
+\boxed{\sum_{\text{window}}g_i
+\le\frac4Q\left(1+\frac{b+1}{Q}
+                   +\frac{2b\log Q}{Q}\right)
+\ll\frac1Q+\frac{b\log(2Q)}{Q^2}.}
+\tag{13b}
+\]
+The estimate is uniform over the starting rank, including endpoint windows. Under (4), every block, its partial prefixes, and the anchored remainder have gap mass `O(1/Q)`.
+
+### 3.2 Large gaps cannot be removed by centering the blocks
+
+Put `G_j=sum_(t=1)^b g_((j-1)b+t)`, `T=sum_j G_j<=1/2`, and `lambda=T/K`. Then `c_j=G_j-lambda` and
+\[
+V_b=\sum_j(G_j-\lambda)^2.
+\]
+For any block containing a gap `g_i>=2 lambda`, positivity gives `G_j-lambda>=G_j/2`. Consequently the following is an exact finite inequality:
+\[
+V_b\ge\frac14\sum_{\substack{i\le Kb\\g_i\ge2\lambda}}g_i^2.
+\tag{13c}
+\]
+Thus subtracting the block mean does not cost `b/Q^2` against the entire second moment: it suffices to retain the gaps above that mean.
+
+For large `Q`, (12) gives `m>=Q^2/8` and `K>=m/(2b)`, hence `lambda<=8b/Q^2`. Choose
+\[
+R=\left\lfloor\frac{Q}{32b}\right\rfloor.
+\]
+Condition (4) implies `R->infinity`, `R<Q/2`, and `log R=log(Q/b)+O(1)`. Every gap having an endpoint denominator at most `R` is at least `1/(RQ)>=32b/Q^2>=2 lambda`.
+
+The coprime denominator triangle counts the squared mass of precisely these gaps. With `q_i` now the denominators of the complete Farey grid, reflection and `R<Q/2` give
+\[
+\begin{aligned}
+\sum_{\substack{1\le i\le m\\\min(q_{i-1},q_i)\le R}}g_i^2
+&=\sum_{q\le R}\frac1{q^2}
+  \sum_{\substack{Q-q<d\le Q\\(q,d)=1}}\frac1{d^2}\\
+&\ge\frac1{Q^2}\sum_{q\le R}\frac{\varphi(q)}{q^2}
+ =\frac{(6/\pi^2)\log R+O(1)}{Q^2}.
+\end{aligned}
+\tag{13d}
+\]
+The inner interval has exactly `phi(q)` coprime residues. The last estimate follows from `phi(q)/q=sum_(d|q)mu(d)/d` and the harmonic sum; it uses no cancellation hypothesis.
+
+Removing the final `r<b` gaps loses at most their total mass squared, which is `O(Q^-2)` by (13b). Combining (13c)–(13d) proves, uniformly in (4),
+\[
+\boxed{V_b\gg\frac{\log(Q/b)}{Q^2}>0.}
+\tag{13e}
+\]
+In particular the lower bound still diverges after multiplication by `Q^2` at the largest admitted block size, since `log(Q/b)>=log log(2Q)`.
+
+Subtracting `t/N` from the mass of any within-block prefix, and applying (13b) also to the remainder, now gives
 \[
 \frac{\max_j|c_j|}{\sqrt{V_b}}
 +\frac{|S|+\max_{j,t}|\sum_{i=1}^t a_{(j-1)b+i}|}{\sqrt{V_b}}
-=O\!\left(\frac b{\sqrt{\log Q}}\right)=o(1).
+\ll\frac1{\sqrt{\log(Q/b)}}=o(1).
 \tag{14}
 \]
-Here `|a_i|<=1/Q+1/N`, and the same bound controls partial sums within the remainder. This verifies both the vanishing-jump condition for block totals and the negligibility of internal block motion. It also excludes a degenerate ensemble of identical block totals asymptotically.
+This verifies both the vanishing-jump condition for the block totals and the negligibility of internal block motion. It also excludes an ensemble of identical block totals asymptotically. The expression in (14) is a deterministic error bound, not a distributional convergence rate.
 
-Combining (6), (12) and (13) gives the useful mean boundary
+For comparison, positivity and Cauchy–Schwarz still give the general bounds
+`V_1-O(b/Q^2)<=V_b<=bV_1`: removing the remainder costs at most `b/Q^2`, subtracting `T^2/K` costs `O(b/Q^2)`, and `sum_j s_j^2<=bV_1`. Combining the upper bound and (13e) with the mean limit proved below gives
 \[
-(1-o(1))\frac3{\pi^4}\log Q
-\le\mathbb E E
+\log(Q/b)\ll\mathbb E E
 \le(1+o(1))\frac3{\pi^4}b\log Q.
 \tag{15}
 \]
-Preserving these blocks cannot suppress the null's total mean below the single-gap logarithmic scale. Its exact leading amplitude is encoded by `V_b`; no universal formula for `V_b/V_1` is asserted.
+For `b=o(log Q)`, the sharper lower bound remains
+`E[E]>=(1-o(1))(3/pi^4)log Q`. No exact leading amplitude or universal formula for `V_b/V_1` is asserted across the larger range.
 
 ## 4. Bridge limit and passage to growing bands
 
@@ -166,7 +226,7 @@ At an interior block position,
 H_{kb+t}=R_k+kS/K+
 \sum_{i=1}^t a_{(\pi(k+1)-1)b+i}.
 \]
-Consequently `max|H-Y|<=C b/Q` deterministically, including the tail. Moreover `Kb/m->1` and the largest coarse jump divided by `sqrt(V_b)` tends to zero. These facts prove (5) and convergence of the total-energy and each fixed sine-coefficient functional.
+Consequently `max|H-Y|<=C/Q` deterministically by (13b), including the tail. Moreover `Kb/m->1` and the largest coarse jump divided by `sqrt(V_b)` tends to zero. These facts prove (5) and convergence of the total-energy and each fixed sine-coefficient functional.
 
 The expectation in (6) requires a moment argument, not just weak convergence. The exact finite-population formula is
 \[
@@ -180,7 +240,7 @@ It gives
 =\frac{b(K+1)}{6m}\longrightarrow\frac16.
 \tag{17}
 \]
-The normalized Euclidean distance between the full reflected `H` and `Y` paths is at most `C b/(Q sqrt(V_b))=o(1)`. Cauchy–Schwarz and (17) then show that their normalized expected energies differ by `o(1)`. The same bound applies to every fixed orthogonal sine projection. Equation (16), by Riemann summation, gives its limiting covariance. Thus for fixed `J`, jointly,
+The normalized Euclidean distance between the full reflected `H` and `Y` paths is at most `C/(Q sqrt(V_b))=o(1)`. Cauchy–Schwarz and (17) then show that their normalized expected energies differ by `o(1)`. The same bound applies to every fixed orthogonal sine projection. Equation (16), by Riemann summation, gives its limiting covariance. Thus for fixed `J`, jointly,
 \[
 \frac{d_{2j}}{\sqrt{NV_b}}\Rightarrow\frac{Z_j}{\pi j}
 \quad(1\le j\le J),\qquad
@@ -205,8 +265,12 @@ An independent exact-rational enumeration constructed genuine Farey fractions, p
 \]
 An independently applied full-grid sine transform verified Parseval and the means and second moments from (9)–(11), with maximum absolute floating-point discrepancy below `1.3e-16`. These checks test constants, nonzero remainder handling and finite calibration; the limit is established by the preceding proof.
 
+An additional exact-rational audit generated every genuine Farey grid at `3<=Q<=80`. It checked 1,117,828 consecutive pairs in all denominator-cutoff subsequences against the rank separation used in (13a); 407,949 windows at all available starting ranks for the selected lengths `1,2,3,5,8,13,floor(Q/log(2Q)),floor(m/3)` against the rational harmonic-sum relaxation of (13b); 561 block partitions against (13c) and the squared-tail-mass bound; and 218 truncated denominator triangles against the exact first equality and lower bound in (13d). All exact assertions passed. These are finite normalization and combinatorial checks; the logarithmic reservoir and weak limits follow from the proof, not finite extrapolation.
+
 Block permutation principles and Brownian limits are classical. Claudia Kirch, *Block permutation principles for the change analysis of dependent data*, Journal of Statistical Planning and Inference **137** (2007), 2453–2474, [DOI 10.1016/j.jspi.2006.09.026](https://doi.org/10.1016/j.jspi.2006.09.026), studies block-resampling statistics and deterministic-score conditions in Theorem 2.1 before applying them to dependent data. No novelty is claimed for that method. The probability input actually used here is the vanishing-maximum/squared-mass criterion in [Bertoin, Lemma 2.1(i)](https://arxiv.org/abs/2005.11986), a specialization of Kallenberg (1973), Theorem 2.3, already cited in FD-335 and SOURCES.md. We verify the deterministic Farey conditions directly and assume no stationary time-series or mixing model.
 
-Hall's Farey gap work and [García's same-gap average-local-discrepancy paper](https://doi.org/10.3390/math14142543) remain the arithmetic and permutation prior-art boundaries recorded in SOURCES.md. FD-313 already gives worst-case noncoercivity for **exact complete** local-window inventories on different rational controls; it does not supply a probability law for this genuine-Farey block population. The line-local addition is the verified growing-block regime, its exact finite calibration with a pinned remainder, and the conclusion that density-one retained gap order still gives the Brownian normalized spectral null. This is a literature-backed specialization, not a new general invariance principle or a priority claim.
+The closest spacing-moment comparison is Anji Dong, Huy Xuan Nguyen, Vi Anh Nguyen and Alexandru Zaharescu, *Effective Estimates for a Class of Farey Fraction Sums and Bounds for Mundici-Type Constants*, [arXiv:2606.12907v1](https://arxiv.org/html/2606.12907v1), Theorems 1.1, 1.2 and 2.1. It treats sums of squares of all overlapping `h`-spacings, including a fixed-`h` leading term and explicit `h`-dependent thresholds. That is distinct from the centered variance of one disjoint block partition with an anchored remainder. No such fixed-`h` estimate is extrapolated to growing `b` here: (13a)–(13e) directly establish the needed uniform bounds. The mediant insertion, denominator triangle and totient harmonic sum are elementary classical ingredients; no novelty is claimed for them individually.
 
-Condition (4) is sufficient, not proved sharp. Larger blocks may require better block-sum or internal-oscillation bounds. Matching every overlapping adjacent pair, conditioning denominator seams, or using a different partition/sample distribution requires a fresh analysis. Neither density-one retention nor the Brownian law turns these reassembled grids into genuine Farey sequences. The theorem concerns the null's `S_q`; it makes no assertion about the original Farey `S_q` or its asymptotic suppression. Finite-order distributional error rates and the clue's larger-order comparison panel remain outside this result.
+Hall's Farey gap work and [García's same-gap average-local-discrepancy paper](https://doi.org/10.3390/math14142543) remain the arithmetic and permutation prior-art boundaries recorded in SOURCES.md. FD-313 already gives worst-case noncoercivity for **exact complete** local-window inventories on different rational controls; it does not supply a probability law for this genuine-Farey block population. The line-local addition is the verified range `b<=Q/log(2Q)`, its exact finite calibration with a pinned remainder, and the conclusion that retaining almost every local window through any smaller depth still gives the Brownian normalized spectral null. The load-bearing improvement is simultaneous control of internal motion by rank separation and of centered variance by the truncated large-gap reservoir; the generic bound `b max g_i` would miss this regime. This is a literature-backed specialization, not a new general invariance principle or a priority claim.
+
+Condition (4) is sufficient, not proved sharp. The controlling inputs are the vanishing normalized block maximum and internal motion in (14), not block length alone. Larger blocks require new bounds that keep these quantities small relative to the centered block variance. Matching every overlapping adjacent pair, conditioning denominator seams, or using a different partition/sample distribution requires a fresh analysis. Neither density-one retention nor the Brownian law turns these reassembled grids into genuine Farey sequences. The theorem concerns the null's `S_q`; it makes no assertion about the original Farey `S_q` or its asymptotic suppression. Finite-order distributional error rates and the clue's larger-order comparison panel remain outside this result.
