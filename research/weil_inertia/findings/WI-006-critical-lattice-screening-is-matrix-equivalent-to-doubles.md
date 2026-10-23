@@ -336,14 +336,16 @@ up to a sublinear boundary cost for long finite clusters.
 
 ## 8. What this does and does not obstruct
 
-This result does **not** refute a higher-moment or density-one theorem. A moment sequence can exclude an exceptional block because its **aggregate spectral distribution** is incompatible with the arithmetic moments, without ever deciding whether that block would have consisted of doubles or off-line pairs. In particular, the recent Yang--Yang density-one manuscript claims exactly such a route: the full moment tower is used to drive the allowed spectral mass at the origin to zero, and the same counting inequality then forces the total exceptional mass `s_2+p` to be `o(N)`.
+This replacement identity does **not** rule out higher moments as a mechanism. Independently proved arithmetic moments could exclude an exceptional block because its **aggregate spectral distribution** is incompatible with those moments, without deciding whether that block would have consisted of doubles or off-line pairs. If a valid moment-counting theorem forced `s_2+p=o(N)`, it would eliminate both populations at density scale. It would still permit a finite or zero-density off-line exceptional set and would not prove RH.
+
+The Yang--Yang program formerly proposed such an all-order argument, but its unconditional higher-even-moment claims and density-one consequences have been **retracted**, not merely left awaiting review. They supply no arithmetic moment input to this finding. The distinction between identifying a screened block and excluding its spectral distribution is conditional mathematics independent of that failed source.
 
 What (8)--(15) rule out is a different hoped-for mechanism: **using more spectral information from the same single-scale critical Gabor compression to separate the two sources of exceptional mass once a screened configuration is present.** They are operator-equivalent in the bulk and count-equivalent in the zero ledger.
 
 This sharpens the target for `weil_inertia`. To distinguish off-line pairs from doubles, or to charge horizontal displacement itself, some input must break the replacement symmetry. Plausible ways include:
 
 - vertical information showing that actual zeta zeros cannot form long near-critical screening clusters;
-- two-scale or cross-bandwidth test families, whose critical lattices cannot be simultaneously aligned;
+- cross-bandwidth tests that escape the common support aperture: WI-007 proves that changing grids or combining any finite family of centered windows of length at most `L` remains blind on this same screening lattice;
 - wider-support prime-side information / the `alpha>1` pair-correlation regime;
 - a non-averaged or per-zero observable that retains horizontal depth before the Poisson diagonal erases it.
 
@@ -359,7 +361,7 @@ The harmonic-analysis identity behind (8) is classical in kind.
 
 A bounded literature search found no source applying that frame identity to identify a lattice of **off-critical Weil mirror-pair blocks** with the operator produced by **critical-line double zeros**. No novelty claim is made from absence of a search hit; the durable Mathia contribution is the exact consequence (8) and the resulting obstruction to a route explicitly left open by WI-005.
 
-The recent Yang--Yang density-one manuscript is relevant as an audit target, not as established prior art: it uses the same critical Gabor compression and higher spectral moments, but its analytic transport remains `certified-candidate` pending external review, as already recorded in WI-002/WI-003 and `SOURCES.md`. The replacement identity does not contradict its logical architecture; it clarifies that any successful moment tower eliminates doubles and screened off-line pairs **together**, rather than learning which kind of exceptional zero produced a given screened block.
+The source's [retraction notice](https://github.com/JoshuaHKU/zeta-density-one-reproduction/blob/ac851520f1d135a56d2911ff512011feab2a32dd/RETRACTION.md), pinned at `ac851520f1d135a56d2911ff512011feab2a32dd`, withdraws unconditional moment convergence from the `mu_4 -> 13/4` tier upward and its density-one consequences. It reports an essential analytic gap and expressly preserves the independent Alpöge--Furman baseline. This agrees with the retraction entries in `SOURCES.md`; the earlier `certified-candidate` characterization in WI-002/WI-003 must not be used as current source status. The notice is evidence of withdrawal, not an independent proof here of its reported Proposition R or of the falsity of every possible higher-moment theorem. Equations (8)--(15) use none of the withdrawn inputs and retain their exact/finite-section evidence boundary.
 
 ## 10. Consequence for the research program
 
