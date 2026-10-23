@@ -9,6 +9,7 @@ based_on:
   - research/prime_flute/findings/PF-343-uniformly-small-physical-hard-sector-gaps-force-order-one-direct-angle-correlation.md
   - research/prime_flute/findings/PF-344-positive-width-transition-shorting-removes-the-leading-corridor-cost.md
   - research/prime_flute/findings/PF-345-growing-exterior-edge-strips-have-exponentially-small-shorted-trace.md
+  - research/prime_flute/findings/PF-346-corridor-gram-shorting-preserves-correlations-but-is-unstable-to-subleading-energy.md
 ---
 
 # Can a positive-width transition band absorb the collapsing-corridor mode after exact Schur elimination?
@@ -98,7 +99,9 @@ Now determine the shorted diagonal energies \(\widehat M_{LL},\widehat M_{HH}\) 
 
 in the actual finite-section spectral currency. A lower bound on the normalized correlation along infinitely many separated modules would refute this architecture. A positive endpoint requires quantitative decay after normalization, control of all high frequencies, and the PF-318/PF-320 weak-trace reassembly, not merely small unnormalized entries.
 
-The main new quantitative gate is the tradeoff in PF-344's trial bound
+PF-346 supplies an exact control for this test. The weighted cosine Gram matrix in PF-344 is diagonally scaled Cauchy, and its transition Schur complement is another diagonal congruence of the retained Gram block. Hence **all its retained low/high canonical correlations survive shorting**, despite exponentially small raw residual energies. Yet a positive `o(D_n)` perturbation of that raw model can make the residual correlation vanish. This rules out deciding the actual angle from the weighted leading kernel and raw-scale error alone; it does not decide the flute operator.
+
+The approximation-cost gate remains the tradeoff in PF-344's trial bound
 
 \[
 D_n\left\|f+\sum_j a_j\cos(\xi_j\cdot)\right\|_
@@ -108,12 +111,18 @@ D_n\left\|f+\sum_j a_j\cos(\xi_j\cdot)\right\|_
 
 PF-344 controls the coefficient tradeoff at the two edges; PF-345's negative-binomial extrapolator controls a **positive physical-width strip** at each edge and obtains a relative exponential trace bound on its positive compressed shorted form. Arbitrary bounded exterior packets still lack a uniform coefficient-cost bound. Obtain two-sided bounds on the shorted diagonal energies and the normalized mixed response (including beyond-strip modes), then either prove a small completed angle or construct a surviving normalized witness. Keep the full growing transition block, not a fixed-rank surrogate.
 
+In particular, quantify the nonsingular pant/seam terms and intermodule elimination **relative to the shorted diagonal energies**. PF-346 (18)–(19) gives a sufficient residual-scale comparison for transferring its model witness; that comparison is unproved. A positive compactness route must instead establish how the actual remainder changes the normalized model correlation, while retaining uniform global finite-section control.
+
 ## Evidence boundary
 
 PF-344 proves a **partial positive** result: a fixed positive physical transition band removes the raw \(D_n\)-scale edge correlation after exact positive Schur shorting; all individual bounded-frequency cosine matrix entries are \(o(D_n)\). These are variational upper bounds on the unnormalized shorted form, not a claim about its normalized low/high canonical-correlation angle.
 
 PF-345 strengthens the relative unnormalized control to a growing-rank edge-strip compression, but no spectral bound **after division by the shorted diagonal energies**, no uniform approximation-conditioning rate **for the whole exterior band**, no control of the unbounded high sector, and no compactness or weak-\(\mathcal S_1\) endpoint is established. General DtN/Schur theory and weighted-exponential completeness are classical; neither supplies these missing quantitative Prime-Flute estimates.
 
+PF-346's exact correlation preservation and instability control concern the corridor **Gram model only**. PF-344's one-sided geometric trial estimate does not supply a two-sided comparison at the much smaller shorted scale. The model is therefore neither proof nor refutation of the actual transition-band architecture.
+
 ## Research disposition
 
 Status: accepted. PF-344 removes the raw \(D_n\) term on bounded edge witnesses, and PF-345 extends relative exponential suppression to two physically positive-width edge strips of dimension \(\Theta(L_n)\) in the positive unnormalized shorted compression. The clue remains active for the materially different question of the **completed, diagonally normalized and globally reassembled** effective low/high angle. Its decisive test is now a **beyond-strip** approximation-cost/conditioning estimate **together with two-sided diagonal normalization**, or a normalized counter-witness. See [[research/prime_flute/findings/PF-344-positive-width-transition-shorting-removes-the-leading-corridor-cost.md]] and [[research/prime_flute/findings/PF-345-growing-exterior-edge-strips-have-exponentially-small-shorted-trace.md]].
+
+[[research/prime_flute/findings/PF-346-corridor-gram-shorting-preserves-correlations-but-is-unstable-to-subleading-energy.md]] sharpens the required comparison: the leading corridor Gram model retains its normalized correlations, and `o(D_n)` raw error is insufficient to transfer that answer. The remaining actual-PDE question must control the remainder at the residual-energy scale or demonstrate its effect on the normalized angle directly. The clue stays accepted and unresolved.

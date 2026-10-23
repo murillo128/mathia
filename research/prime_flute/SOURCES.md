@@ -398,6 +398,24 @@ Relevant finding: PF-345; relevant local clue: CLUE-positive-width-transition-sc
 
 **Scope warning.** PF-345 proves its own explicit negative-binomial bounds in the prime-flute weighted corridor norm; this paper does not supply prime-flute Schur conditioning or diagonally normalized Schatten estimates.
 
+## S23 — Cauchy Schur structure and normalized residual correlations
+
+**I. Gohberg, T. Kailath and V. Olshevsky**, *Fast Gaussian Elimination with Partial Pivoting for Matrices with Displacement Structure*, Mathematics of Computation 64 (1995), 1557–1576. DOI: 10.1090/S0025-5718-1995-1312096-X.
+
+- https://www2.math.uconn.edu/~olshevsky/papers/geppdsam.pdf
+- Sections 1–2: recursive Schur elimination preserves Cauchy-like displacement structure. PF-346 proves the needed symmetric rank-one Cauchy product formula directly.
+
+**P. J. Forrester and J. Zhang**, *Parametrising correlation matrices*, Journal of Multivariate Analysis 178 (2020), 104619.
+
+- https://arxiv.org/abs/1812.07685
+- Equations (2.6)–(2.7): normalized Schur complements as partial correlations; prior-art context for PF-346's residual normalization.
+
+**NIST Digital Library of Mathematical Functions**, equations [5.12.3](https://dlmf.nist.gov/5.12.E3) and [5.5.3](https://dlmf.nist.gov/5.5.E3): beta integral and gamma reflection formula used to evaluate the Fourier transform of `sech(t)` in PF-346.
+
+Relevant finding: PF-346; relevant local clue: CLUE-positive-width-transition-schur-complement.md.
+
+**Scope warning.** These are classical identities and structural results. PF-346 applies them to the weighted cosine Gram form in PF-344's corridor trial; neither these sources nor that calculation identify the full flute DtN form with the Gram model or control errors relative to its exponentially small shorted energies.
+
 ## Provenance policy for future additions
 
 For each future finding, record separately:
