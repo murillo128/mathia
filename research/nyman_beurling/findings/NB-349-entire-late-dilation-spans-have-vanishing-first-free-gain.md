@@ -66,7 +66,7 @@ is closed. Its baseline-free sample Gram satisfies
 \[
 \boxed{\displaystyle
 \|\Xi_W\|\le B_M:=
-\frac{\bigl(\sqrt{\|C_Z\|}\,M^{-\delta_-}
+\frac{\bigl(\sqrt{\|C_Z\|}\,M^{-\delta_-}+
 \sqrt{\|K\|}\,b\bigr)^2}{1-b^2},\qquad
 \Xi_W=LP_{R_W}L^*,\quad \delta_-=\min_j\delta_j.}
 \tag{4}
