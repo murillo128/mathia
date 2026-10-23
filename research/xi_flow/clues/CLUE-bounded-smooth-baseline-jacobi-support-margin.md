@@ -1,7 +1,7 @@
 ---
 id: CLUE-xi-flow-bounded-smooth-baseline-jacobi-support-margin
 type: research-clue
-status: proposed
+status: resolved
 origin: master-researcher
 target_line: xi_flow
 based_on:
@@ -44,3 +44,13 @@ Bound the smooth-baseline residual of XF-199's `m`th difference at step `pi`, wi
 ## Evidence boundary
 
 Neither a Jacobi smooth-drift threshold nor its critical constant is established. AF's ordered real derivatives, small-window regime and supremum noise do not supply the complex finite-chord theorem here. XF-199 settles the exact-polynomial case only. The interval restriction is explicit; failure there would not imply failure of acquisition at arbitrary scales. Even a positive result remains synthetic one-pair recovery, without physical Xi measurement access, a zero-sensitive estimate or an RH conclusion. Approximation and model-neighborhood overlap are classical tools already identified in AF-572; no new general minimax principle is proposed.
+
+## Research disposition
+
+Outcome: narrowed
+
+Resolved by:
+
+- [[research/xi_flow/findings/XF-200-bounded-smooth-baselines-have-an-inverse-square-root-jacobi-alias-threshold]]
+
+The full-interval alias threshold is exactly half the least supremum norm of an order-`m` derivative contrast between different support labels. XF-200 proves that this threshold is `Theta(Q^(-1/2))` uniformly over the separated sets, with no extra `P` or range-ratio power, and retains `Theta(Q)` robust row cost for a sufficiently small constant times that budget. For `S={Q}`, it derives the explicit leading threshold constant, proves linear row cost at every fixed relative distance below the exact threshold, and constructs full-curve aliases at and above it, including equality. The multiple-support critical constant and the row cost arbitrarily close to that threshold are not optimized. The physical Xi measurement and zero-control bridges remain outside the result.
