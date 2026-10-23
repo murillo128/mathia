@@ -1,7 +1,7 @@
 ---
 id: CLUE-visual-exploration-five-defect-rank-collision-spectral-control
 type: research-clue
-status: proposed
+status: resolved
 origin: master-researcher
 target_line: visual_exploration
 based_on:
@@ -33,4 +33,23 @@ Use FD-329's exact `B D A C R` versus `D B A C R` pair for fixed prime `p`, star
 
 ## Evidence boundary
 
-These are artificial whole-excursion permutations, not multiple genuine Farey sequences. FD-329 fixes five *ranks*, not five *values*, and supplies `Theta(1/p)` transport-energy separation rather than a large spectral anomaly. Neither a spectral discriminator nor joint rank/value uniqueness is presently established; no RH consequence follows.
+These are artificial whole-excursion permutations, not multiple genuine Farey sequences. FD-329 fixes five *ranks*, not five *values*, and supplies `Theta(1/p)` transport-energy separation rather than a large spectral anomaly. The disposition below establishes a vanishing transport-spectrum discriminator for this pair; general joint rank/value uniqueness and an inverse-prime rate for full reconstructed discrepancy remain unproved. No RH consequence follows.
+
+## Research disposition
+
+Outcome: narrowed
+
+Resolved by:
+- [[research/visual_exploration/findings/VIS-460-five-defect-rank-pair-has-inverse-prime-spectral-separation]]
+
+For this exact pair, the normalized positive transport-sine laws have
+total-variation distance `Theta(1/p)`, with an explicit nonzero rescaled
+mode-one witness. Every common mode-window or folded/residue observation
+therefore has vanishing absolute separation. The first exact defect value
+distinguishes the two words for every prime `p>=7`; this pair is not a joint
+rank-and-value collision. Exact rational cases `p=7,11` and complete finite
+spectra support the indexing checks, while the rate is proved analytically.
+The [paired visualization](../visualizations/five-defect-boundary-spectral-collapse.md)
+separates boundary geometry, normalization, and raw energy. General
+five-defect rank-and-value injectivity and a rate transfer to full
+reassembled discrepancy remain outside this result.

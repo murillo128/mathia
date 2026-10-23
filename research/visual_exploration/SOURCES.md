@@ -192,7 +192,7 @@ This file records durable external literature dependencies used to support or de
 ## Bounded-variation Fourier coefficient decay
 
 - Mitchell Taibleson, **Fourier coefficients of functions of bounded variation**, *Proceedings of the American Mathematical Society* 18 (1967), 766. DOI: `10.1090/S0002-9939-1967-0212477-6`. Role: classical bounded-variation Fourier coefficient decay, a prior-art boundary for the elementary discrete sine-tail estimate in `VIS-448`.
-- Jie Wu, **Coefficients de Fourier de fonctions à variation bornée**, *Proceedings of the American Mathematical Society* 117:3 (1993), 689–690. DOI: `10.1090/S0002-9939-1993-1150658-3`. Role: a simple proof of the already-known continuous `O(1/m)` BV Fourier bound; `VIS-448` specializes the discrete version to exact Farey excursion transport and derives an additional necessary roughness condition.
+- Jie Wu, **Coefficients de Fourier de fonctions à variation bornée**, *Proceedings of the American Mathematical Society* 117:3 (1993), 689–690. DOI: `10.1090/S0002-9939-1993-1150658-3`. Role: a simple proof of the already-known continuous `O(1/m)` BV Fourier bound; `VIS-448` specializes the discrete version to exact Farey excursion transport and derives an additional necessary roughness condition. `VIS-460` combines that discrete decay with an endpoint-localized perturbation estimate to prove inverse-prime spectral separation for FD-329's specific five-defect pair; no new general BV theorem is claimed.
 
 ## Bernoulli Fourier identity for parity-resolved step spectra
 
@@ -201,3 +201,7 @@ This file records durable external literature dependencies used to support or de
 ## Haar wavelet and moving spectral-window localization
 
 - Gilbert Strang and Truong Nguyen, **Wavelets and Filter Banks**, Wellesley-Cambridge Press (1996), Chapters 1–2, https://www-math.mit.edu/~gs/books/wfb_toc.html. Role: classical balanced Haar two-block differences and Fourier scale/translation; prior-art context for VIS-455. The exact FD-327 same-prime specialization, normalization and spectral window are Mathia derivations, not a new general wavelet theorem.
+
+## Farey index and equal-rank excursion controls
+
+- R. R. Hall and P. Shiu, **The index of a Farey sequence**, *Michigan Mathematical Journal* 51:1 (2003), 209–223. DOI: `10.1307/mmj/1049832901`. Role: classical index definition and Farey-neighbor context for `VIS-460`. The artificial same-rank pair is supplied by FD-329; its inverse-prime normalized transport-spectrum separation and first-defect-value distinction are derived in VIS-460, not attributed as general results of Hall–Shiu.
