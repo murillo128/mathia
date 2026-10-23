@@ -160,7 +160,7 @@ The endpoint result changes the causal diagnosis of the support restriction. The
 
 The support-crossing problem remains. If a test genuinely uses \(\alpha>\theta\), then \(x=T^\alpha>H\) on that part of the support. The source's displayed pointwise bounds contain both the localization term \(xL^3\) and the Montgomery--Vaughan error \(x\log^2(2x)\). The present absolute-value proof does not turn those contributions into \(o(HL)\) on a region of prime scales beyond the interval length. New cancellation, a different localization architecture, or stronger short-interval arithmetic is required to prove such an extension.
 
-The exact interval scale also matters. Equation (1) is established here for \(H=T^\theta\). It does not automatically give endpoint support for every generalized \(H=T^{\theta+o(1)}\). If \(H\) is logarithmically shorter than \(T^\theta\), then \(x=T^\theta\) can exceed the actual interval length and the endpoint bookkeeping above no longer applies unchanged. Thus WI-226's safe strict-margin extension to logarithmically perturbed bow-scale intervals is not contradicted.
+The argument above uses \(H=T^\theta\). WI-455 supplies the separate estimate needed when \(x>H\): retaining the full prime-polynomial norm adds \(O(\sqrt H L/\sqrt x)\) to the pointwise error, which integrates to \(O_g(\sqrt H)\). Higher-order endpoint flatness then proves the same \(O_g(H)\) formula for every fixed logarithmic shortening \(H\ge T^\theta/(\log T)^B\), \(B\ge0\). More rapid subpower shortening depends on the test's endpoint Laplace profile; neither result asserts endpoint support for every \(H=T^{\theta+o(1)}\). WI-226's strict-margin extension remains valid throughout that broader class.
 
 Finally, the endpoint sharpening does not improve Wang's limiting simple-zero proportion. Wang already obtains \(c(\theta)\) by taking \(\lambda\uparrow\theta\) after the asymptotic limit. Nor does (1) make a fixed-power normalized pair statistic sensitive to a finite or zero-density exceptional set.
 
@@ -184,7 +184,7 @@ This finding should be withdrawn or narrowed if a direct source check shows any 
 
 The fixed-test quantifier is essential. A \(T\)-dependent family whose derivative norms grow with \(T\) is not covered by the \(O_g(H)\) argument. Nor is a nonsmooth hard cutoff.
 
-No conclusion is claimed for support genuinely beyond \(\theta\), for microscopic intervals, or for arbitrary logarithmically perturbed interval lengths at the endpoint.
+No conclusion is claimed here for support a fixed positive distance beyond \(\theta\), for microscopic intervals, or for arbitrary \(H=T^{\theta+o(1)}\) at the endpoint. Fixed logarithmic shortenings and a test-dependent faster-shortening budget are established separately in WI-455.
 
 ## Research consequence
 

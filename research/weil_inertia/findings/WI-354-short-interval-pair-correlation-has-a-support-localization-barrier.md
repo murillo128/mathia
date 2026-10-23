@@ -158,7 +158,7 @@ For support genuinely extending to an exponent \(\sigma>\theta\), the proof woul
 
 This is a proof-interface statement, not a lower bound proving that support past \(\theta\) is impossible. A reorganized signed argument, smoother height localization, coupled zero/prime treatment before squaring, or stronger short-interval arithmetic could cross the boundary.
 
-The distinction also matters for generalized interval lengths. WI-440 establishes the endpoint for the exact scale \(H=T^\theta\). It does not automatically upgrade the separate WI-226 extension to every \(H=T^{\theta+o(1)}\): a logarithmically shorter interval may have \(T^\theta/H\to\infty\), so the endpoint \(x=T^\theta\) can again lie beyond the actual interval length. The strict fixed support margin used in that generalized extension remains a valid safe regime.
+For generalized interval lengths, WI-455 retains the full prime norm even when \(x>H\) and proves a test-weighted error \(O_g(H+L^3\int_0^\theta|g(\alpha)|T^\alpha d\alpha)\). This reaches the fixed smooth endpoint with \(O_g(H)\) error for every \(H\ge T^\theta/(\log T)^B\) with fixed \(B\ge0\), and for some faster shortenings controlled by the endpoint profile. It does not establish the endpoint for every \(H=T^{\theta+o(1)}\). The strict fixed support margin in WI-226 remains a valid safe regime for that entire class. The surviving support barrier concerns a fixed positive gap between the limiting support and interval exponents, not every instance of \(x>H\).
 
 ## 3. Localization still cannot bootstrap the proportion to zero defect
 
