@@ -397,11 +397,11 @@ Bhaswar B. Bhattacharya, *Collision times in multicolor urn models and sequentia
 
 Role: primary prior-art anchor for MC-519. Theorem 1.3 and Section 4 treat color-dependent urn-selection laws. Equation (4.2) gives the Poisson-embedded no-collision product, whose two-color specialization is used in MC-519's necessity proof. MC-519 derives its clipped-overlap criterion and fixed-sample quantitative bounds explicitly; it does not claim novelty for Poisson embedding, the product formula, or the general nonuniform multicolor birthday mechanism.
 
-## MC-S67 — Littlewood–Titchmarsh reciprocal-zeta bound under RH
+## MC-S67 — Littlewood–Titchmarsh reciprocal-zeta and Mertens bounds
 
-E. C. Titchmarsh, revised by D. R. Heath-Brown, *The Theory of the Riemann Zeta-Function*, second edition, Clarendon Press / Oxford University Press (1986), equation (14.2.6). The estimate is explicitly recorded in Philippe Flajolet and Linas Vepstas, *On Differences of Zeta Values*, arXiv:math/0611332v1 (2006), equation (52), p. 15: https://algo.inria.fr/flajolet/Publications/FlVe06.pdf. Article DOI: https://doi.org/10.1016/j.cam.2007.07.040.
+E. C. Titchmarsh, revised by D. R. Heath-Brown, *The Theory of the Riemann Zeta-Function*, second edition, Clarendon Press / Oxford University Press (1986), Sections 14.2 and 14.25(C), pp. 336–337 and 370, and Lemma 3.12. Book scan: https://sites.math.rutgers.edu/~zeilberg/EM18/TitchmarshZeta.pdf. The reciprocal estimate (14.2.6) is explicitly recorded in Philippe Flajolet and Linas Vepstas, *On Differences of Zeta Values*, arXiv:math/0611332v1 (2006), equation (52), p. 15: https://algo.inria.fr/flajolet/Publications/FlVe06.pdf. Article DOI: https://doi.org/10.1016/j.cam.2007.07.040.
 
-Role: classical conditional input for MC-520: for fixed `sigma>1/2` and every fixed `a>0`, RH implies `1/zeta(sigma+it) <<_(sigma,a) (1+|t|)^a`. MC-520 keeps the dependence on the fixed vertical line explicit and derives its own Mellin mean-square consequence. No control on the critical line or unconditional bound is imported.
+Role: classical conditional input for MC-520: for fixed `sigma>1/2` and every fixed `a>0`, RH implies `1/zeta(sigma+it) <<_(sigma,a) (1+|t|)^a`. MC-520 keeps the dependence on the fixed vertical line explicit and derives its own Mellin mean-square consequence. MC-521 adapts the logarithm/three-circles and Perron proofs to a general fixed zero-free half-plane `Re(s)>beta`, deriving the equivalent Mertens bound `M(x)<<_epsilon x^(beta+epsilon)` only after its variance argument has proved that zero-free premise. No control on the boundary line or unconditional bound is imported.
 
 ## MC-S68 — Saffari–Vaughan additive/multiplicative window conversion
 
