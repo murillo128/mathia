@@ -33,3 +33,7 @@ The withdrawn `MC-030` no longer appears in the current graph. Its corrected con
 ## Curation boundary
 
 The line directly traverses the classical summatory-error side of the RH landscape. Structural membership is complete independently of semantic relations; proposed clues remain frontier context and are not promoted into evidence for their desired outcome.
+
+## Conditional variance bridge
+
+[[research/graph/relations/rh-mellin-variance-and-farey-capacity|RH Mellin variance and balanced Farey capacity]] preserves the explicit RH hypothesis, the matched source window, and the separate-endpoint obstruction.

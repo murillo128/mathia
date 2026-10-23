@@ -211,6 +211,7 @@ This is a path-derived structural projection for graph topology. Each link means
 - [[research/farey_discrepancy/mind/intuition/MI-063-pointwise-remainders-must-cross-the-repair-threshold-before-cluster-pruning-expires]]
 - [[research/farey_discrepancy/mind/intuition/MI-064-fixed-low-height-hard-complements-inherit-near-capacity-source-difficulty]]
 - [[research/farey_discrepancy/mind/intuition/MI-065-excursion-transport-not-local-index-defects-controls-spectrum]]
+- [[research/farey_discrepancy/mind/intuition/MI-066-rh-mellin-variance-excludes-balanced-near-capacity]]
 
 ### Möbius Cancellation
 - [[research/mobius_cancellation/mind/intuition/MI-001-local-cancellation-needs-a-polynomial-information-budget]]
@@ -312,6 +313,7 @@ This is a path-derived structural projection for graph topology. Each link means
 - [[research/mobius_cancellation/mind/intuition/MI-097-staged-residual-divisor-coordinates-can-be-pure-reparametrization]]
 - [[research/mobius_cancellation/mind/intuition/MI-098-complete-pair-sieve-factorization-pushes-gain-to-incomplete-discrepancy]]
 - [[research/mobius_cancellation/mind/intuition/MI-099-endpoint-only-cross-root-bias-has-a-square-root-conductor-resolution-floor]]
+- [[research/mobius_cancellation/mind/intuition/MI-100-mellin-differences-retain-the-rh-short-window-variance-gain]]
 
 ### Nyman–Beurling
 - [[research/nyman_beurling/mind/intuition/MI-001-target-aware-gram-geometry-must-carry-absolute-scale]]

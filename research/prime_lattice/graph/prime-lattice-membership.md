@@ -471,3 +471,4 @@ This stable projection inventories every current canonical Prime Lattice finding
 - [[research/prime_lattice/findings/PL-461-single-identity-residue-moment-zero-free-gate|PL-461]]
 - [[research/prime_lattice/findings/PL-462-narrow-window-phase-coherence-zero-free-gate|PL-462]]
 - [[research/prime_lattice/findings/PL-463-empirically-centered-window-variance-zero-free-gate|PL-463]]
+- [[research/prime_lattice/findings/PL-464-dyadic-empirical-variance-residue-rigidity|PL-464]]

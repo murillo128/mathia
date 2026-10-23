@@ -207,3 +207,4 @@ This stable projection inventories every current canonical Xi Flow finding. Link
 - [[research/xi_flow/findings/XF-197-one-sided-jacobi-witnesses-remove-the-support-leakage-horizon|XF-197]]
 - [[research/xi_flow/findings/XF-198-antiphase-jacobi-pairs-recover-support-modulo-common-complex-baseline|XF-198]]
 - [[research/xi_flow/findings/XF-199-fixed-degree-polynomial-baselines-preserve-jacobi-support-tariff|XF-199]]
+- [[research/xi_flow/findings/XF-200-bounded-smooth-baselines-have-an-inverse-square-root-jacobi-alias-threshold|XF-200]]

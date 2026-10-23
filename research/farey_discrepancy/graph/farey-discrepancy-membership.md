@@ -344,3 +344,4 @@ This stable projection inventories every current canonical Farey Discrepancy fin
 - [[research/farey_discrepancy/findings/FD-333-one-quantum-fixed-rank-farey-spectral-instability|FD-333]]
 - [[research/farey_discrepancy/findings/FD-334-one-fifth-squarefree-intervals-extend-terminal-jordan-occupation|FD-334]]
 - [[research/farey_discrepancy/findings/FD-335-reflected-farey-gap-null-has-a-brownian-energy-law-and-biased-fixed-band-shares|FD-335]]
+- [[research/farey_discrepancy/findings/FD-336-growing-farey-gap-block-shuffles-retain-the-brownian-spectral-null|FD-336]]

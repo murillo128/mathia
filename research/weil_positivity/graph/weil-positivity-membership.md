@@ -447,3 +447,4 @@ This stable projection inventories every current canonical Weil Positivity findi
 - [[research/weil_positivity/findings/WP-437-prime-ray-heat-restriction-mosco-discontinuity-and-vacuum-null-sign-obstruction|WP-437]]
 - [[research/weil_positivity/findings/WP-438-mixed-prime-vacuum-charge-rank-one-thermal-completion-obstruction|WP-438]]
 - [[research/weil_positivity/findings/WP-439-positive-heat-mixtures-admit-closed-star-completions-but-remain-compact-on-every-prime-ray|WP-439]]
+- [[research/weil_positivity/findings/WP-440-hamiltonian-diagonal-completion-has-sharp-loglog-threshold|WP-440]]

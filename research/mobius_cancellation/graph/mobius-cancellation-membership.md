@@ -526,3 +526,4 @@ This stable projection inventories every current canonical Möbius Cancellation 
 - [[research/mobius_cancellation/findings/MC-517-nonuniform-collision-poisson-max-atom-criterion|MC-517]]
 - [[research/mobius_cancellation/findings/MC-518-asymmetric-collision-poisson-moment-leakage|MC-518]]
 - [[research/mobius_cancellation/findings/MC-519-asymmetric-collision-clipped-overlap-poisson-criterion|MC-519]]
+- [[research/mobius_cancellation/findings/MC-520-rh-mellin-variance-closes-conditional-farey-window-target|MC-520]]

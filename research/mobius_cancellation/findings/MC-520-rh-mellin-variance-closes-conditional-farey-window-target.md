@@ -21,9 +21,9 @@ J_\mu(X,H)=\sum_{X\le y<2X}|M(y+H)-M(y)|^2.
 \tag{2}
 \]
 
-The statement is a classical conditional consequence of the reciprocal-zeta bound to the right of the critical line, Mellin Plancherel, and the Saffari–Vaughan conversion between multiplicative and additive windows. A complete derivation is given below. No new unconditional cancellation theorem, variance asymptotic, or RH mechanism is claimed.
+The statement is a classical conditional consequence of the reciprocal-zeta bound to the right of the critical line, Mellin Plancherel, and the [[research/prior_art/incremental/PA-saffari-vaughan-averaging|Saffari–Vaughan conversion]] between multiplicative and additive windows. A complete derivation is given below. No new unconditional cancellation theorem, variance asymptotic, or RH mechanism is claimed.
 
-The material consequence concerns the local clue `CLUE-farey-selected-sliding-mertens-variance`. Its explicitly authorized source packet, FD-311 and FD-312, records at balanced depth the lower bound
+The material consequence concerns the local clue `CLUE-farey-selected-sliding-mertens-variance`. Its explicitly authorized source packet, [[research/farey_discrepancy/findings/FD-311-a-quarter-power-sliding-variance-saving-would-close-balanced-capacity|FD-311]] and [[research/farey_discrepancy/findings/FD-312-pointwise-mertens-envelopes-cannot-close-sliding-variance-below-source-ceiling|FD-312]], records at balanced depth the lower bound
 
 \[
 J_\mu(X,N)\ge XN^{1/2+3c-o(1)},
@@ -54,7 +54,7 @@ M(x)\ll_\alpha x^{1/2+\alpha},
 \tag{5}
 \]
 
-The second bound is the Littlewood–Titchmarsh estimate, recorded explicitly as equation (52) in Flajolet–Vepstas, with reference to Titchmarsh, equation (14.2.6). Neither estimate is an unconditional input. The first ensures convergence of the physical Mellin transform; the second controls its high frequencies. No estimate for \(1/\zeta'(\rho)\), simplicity, or pair correlation of zeros is needed.
+The second bound is the [[research/prior_art/incremental/PA-rh-reciprocal-zeta-subpower-bound|Littlewood–Titchmarsh estimate]], recorded explicitly as equation (52) in Flajolet–Vepstas, with reference to Titchmarsh, equation (14.2.6). Neither estimate is an unconditional input. The first ensures convergence of the physical Mellin transform; the second controls its high frequencies. No estimate for \(1/\zeta'(\rho)\), simplicity, or pair correlation of zeros is needed.
 
 Fix \(1/2<\sigma<1\) and define
 
@@ -176,7 +176,7 @@ Choose any fixed \(0<\varepsilon<d/2\). Equations (3) and (13) then conflict by 
 
 The upper bound holds on every dyadic start window, so choosing the window through the Farey construction creates no exceptional-set problem. The near-capacity-to-lower-bound implication (3) and the RH localization (4) are used exactly as stated in the authorized FD-311/312 packet; their upstream dependencies were not independently re-audited here. No other Farey source is needed for the Möbius estimate (1).
 
-This leaves FD-312's endpoint no-go intact: it restricts a particular proof operation. It does not show that RH cannot provide the needed difference variance. Likewise MC-176 and MC-177 seek arithmetic input that could produce cancellation without assuming RH; (1) cannot serve that purpose without circularity.
+This leaves FD-312's endpoint no-go intact: it restricts a particular proof operation. It does not show that RH cannot provide the needed difference variance. Likewise [[research/mobius_cancellation/findings/MC-176-gallagher-critical-shell-good-churchhouse-variance|MC-176]] and [[research/mobius_cancellation/findings/MC-177-gallagher-diagonal-energy-direct-mertens-power|MC-177]] seek arithmetic input that could produce cancellation without assuming RH; (1) cannot serve that purpose without circularity.
 
 ## 5. Prior art and the corrected research boundary
 
@@ -184,7 +184,7 @@ The ingredients of (1) are classical, and their composition carries no novelty c
 
 There is also a directly relevant literature correction. [Chinis, *On the Liouville Function in Short Intervals*, arXiv:2007.06788v2, pp. 1–2](https://arxiv.org/pdf/2007.06788v2), reports Gao's unpublished RH estimate \(XH(\log X)^A\), and its footnote says the original statement was for Möbius. This is stronger than the qualitative \(o(XH^2)\) report quoted in FD-312. Gao's unpublished proof is not treated here as independently verified evidence: (1), which is already sufficient at polynomial lengths, has the explicit proof above from established analytic input.
 
-MC-178 correctly prices Chinis's *particular* large-prime-factor theorem and its block extension. That method limitation must not be promoted to a limitation on every RH-conditional method. The \(X^\varepsilon\) loss in (1) is harmless for the current fixed polynomial windows, while it is very different from Chinis's logarithmic loss for subpolynomial windows.
+[[research/mobius_cancellation/findings/MC-178-chinis-polynomial-window-smooth-number-ceiling|MC-178]] correctly prices Chinis's *particular* large-prime-factor theorem and its block extension. That method limitation must not be promoted to a limitation on every RH-conditional method. The \(X^\varepsilon\) loss in (1) is harmless for the current fixed polynomial windows, while it is very different from Chinis's logarithmic loss for subpolynomial windows.
 
 The durable change is therefore to the research question: the conditional branch needs no new polynomial-window variance theorem. The genuinely additional target is an unconditional or explicitly weaker-hypothesis source estimate, with its own justified window range. This result neither supplies that estimate nor refutes its possibility.
 

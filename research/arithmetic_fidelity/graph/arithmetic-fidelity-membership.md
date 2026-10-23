@@ -576,3 +576,4 @@ This stable projection inventories every current canonical Arithmetic Fidelity f
 - [[research/arithmetic_fidelity/findings/AF-570-shrinking-windows-turn-affine-prime-edit-separation-into-curvature|AF-570]]
 - [[research/arithmetic_fidelity/findings/AF-571-polynomial-drift-has-exact-small-window-probe-saturation|AF-571]]
 - [[research/arithmetic_fidelity/findings/AF-572-bounded-smooth-calibration-has-sharp-prime-edit-alias-threshold|AF-572]]
+- [[research/arithmetic_fidelity/findings/AF-573-near-threshold-calibration-localizes-prime-edit-information|AF-573]]

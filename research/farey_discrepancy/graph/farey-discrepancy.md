@@ -13,3 +13,7 @@ derived: true
 [[research/farey_discrepancy/graph/farey-discrepancy-membership|Farey Discrepancy structural membership]]
 
 Canonical findings and `mind/` remain authoritative. The membership projection is structural only.
+
+## Conditional variance bridge
+
+[[research/graph/relations/rh-mellin-variance-and-farey-capacity|RH Mellin variance and balanced Farey capacity]] preserves the explicit RH hypothesis, the matched source window, and the separate-endpoint obstruction.

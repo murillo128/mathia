@@ -36,3 +36,7 @@ The territory therefore remains `active`, not `open`: Mathia is traversing the c
 ## Prime-window moment prerequisites
 
 [[research/prime_lattice/graph/relations/mod5-window-moment-zero-free-prerequisites|The mod-5 window-moment mechanism]] adds the conditional zero-free implications in [[research/prime_lattice/findings/PL-459-integrated-first-moment-zero-free-gate|PL-459]]–[[research/prime_lattice/findings/PL-463-empirically-centered-window-variance-zero-free-gate|PL-463]]. Raw and empirically centered upper moments have different exponents and unproved source hypotheses. They diagnose the strength of proposed covariance inputs; they supply no unconditional zero-free improvement. The territory remains `active`, with unchanged mass.
+
+## Conditional short-window variance
+
+[[research/graph/relations/rh-mellin-variance-and-farey-capacity|RH Mellin variance and balanced Farey capacity]] records MC-520's classical RH-conditional variance input and its application to balanced Farey near-capacity. It supplies no unconditional Mertens or zero-free gain, so the territory remains `active` with unchanged mass.

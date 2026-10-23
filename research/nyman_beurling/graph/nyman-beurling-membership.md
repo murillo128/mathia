@@ -355,3 +355,4 @@ This stable projection inventories every current canonical Nyman–Beurling find
 - [[research/nyman_beurling/findings/NB-346-fixed-rational-offsets-have-unbounded-dilation-parity-law|NB-346]]
 - [[research/nyman_beurling/findings/NB-347-parity-divisor-fourier-regularity-gives-generic-finite-offset-limit|NB-347]]
 - [[research/nyman_beurling/findings/NB-348-rounded-offset-sampling-gives-positive-density-physical-source-witnesses|NB-348]]
+- [[research/nyman_beurling/findings/NB-349-entire-late-dilation-spans-have-vanishing-first-free-gain|NB-349]]

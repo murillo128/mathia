@@ -56,15 +56,19 @@ This is the derived root graph for Mathia research. Canonical findings and mind 
 - [[research/graph/relations/universal-boundary-models|Universal boundary models before arithmetic interpretation]]
 - [[research/graph/relations/quantitative-non-escape|Quantitative non-escape before treating finite structure as a mechanism]]
 
+- [[research/graph/relations/rh-mellin-variance-and-farey-capacity|RH Mellin variance and balanced Farey capacity]]
+
 ## Integration boundary
 
-Stable memberships cover all 13 initialized research lines, 4,863 canonical findings, 823 durable intuitions and 60 canonical prior-art notes. Structural attachment asserts ownership only. It includes challenged findings without treating a review as withdrawal or endorsement.
+Stable memberships cover all 13 initialized research lines, 4,997 canonical findings, 827 durable intuitions and 63 canonical prior-art notes. Structural attachment asserts ownership only. It includes challenged findings without treating a review as withdrawal or endorsement.
 
 Semantic coverage is selective. The [[research/arithmetic_fidelity/graph/relations/euler-harmonic-collision-budget|Euler harmonic collision budget]] records AF-337/AF-338's finite-order refinement and its surviving source/observation restrictions. Nine direct reference links in those two findings preserve their original text exactly. No cross-line implication follows from this maintenance.
 
 The [[research/weil_positivity/graph/relations/scalar-julia-derivative-biased-laws|scalar Julia classification]] resolves the persisted finite/infinite pure-measure response into classical boundary reduction and Boolean self-energy. Four source-to-prior-art references are native links; code-formatted finding references are preserved. Source-specific derivative-biased laws and independent finite–archimedean coupling remain outside the universal sign theorem.
 
+The [[research/graph/relations/rh-mellin-variance-and-farey-capacity|RH Mellin variance and balanced Farey capacity]] reconciles MC-520 with FD-311/FD-312 and MC-178: classical analytic inputs exclude the specified balanced branch under RH while leaving the endpoint and Chinis-method limitations intact. Eight native reference wrappers preserve the two edited findings byte-for-byte after exact reversal. The correction is not an unconditional cancellation theorem.
+
 `research/graph/semantic-inspection.json` records the completed mechanism scopes, their verified endpoints and the earlier source-window base. The remaining changes in that window have structural membership but are not certified here as semantically reconciled. Existing mechanism notes remain scoped to their cited canonical evidence; their presence is not a current-frontier census.
 
-The Riemann Atlas v1 masses and territory states are unchanged. [[research/graph/atlas/telemetry/frontier-summary|Frontier telemetry]] distinguishes the selected source-backed episode from topology maintenance and states its sampling limits.
+The Riemann Atlas v1 masses and territory states are unchanged. [[research/graph/atlas/telemetry/frontier-summary|Frontier telemetry]] distinguishes the selected source-backed episodes from topology maintenance and states its sampling limits.
 <!-- graph:end -->

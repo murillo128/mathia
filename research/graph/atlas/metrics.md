@@ -2,7 +2,7 @@
 id: RA-metrics-v1
 type: riemann-atlas-metrics
 atlas_version: 1
-source_revision: f5f2f29e0d2b76651fc8ef264cbf020baeb55ffa
+source_revision: a4b2e74453babffdeb8a0c0f5ac7a8c7140013be
 derived: true
 ---
 
@@ -28,7 +28,7 @@ Thus:
 - pruned share of visited mass = **18.3%**
 - hard-pruned share of all pruned mass = **78.9%**
 
-The v1 denominator and territory states are unchanged by membership reconciliation and the scoped mod-5 moment-obstruction classification. Recomputed masses retain the values above. Complete membership is not complete semantic traversal, and no new territory state is inferred from added links.
+The v1 denominator and territory states are unchanged by membership reconciliation and the scoped RH-conditional variance reconciliation. Recomputed masses retain the values above. Complete membership is not complete semantic traversal, and no new territory state is inferred from added links.
 
 ## Atlas scope and confidence
 
@@ -38,15 +38,15 @@ The five hard-pruned interfaces retain their existing scoped canonical evidence:
 
 ## Structural and semantic scope
 
-The exact tree projections contain 13 research lines, 4,988 findings, 825 durable intuitions and 61 prior-art notes. Membership changes and reversible source-reference formatting are graph maintenance, never frontier episodes. Semantic inspection remains selective as recorded in `research/graph/semantic-inspection.json`; uninspected source changes do not justify Atlas transitions.
+The exact tree projections contain 13 research lines, 4,997 findings, 827 durable intuitions and 63 prior-art notes. Membership changes and reversible source-reference formatting are graph maintenance, never frontier episodes. Semantic inspection remains selective as recorded in `research/graph/semantic-inspection.json`; uninspected source changes do not justify Atlas transitions.
 
 ## Frontier fertility
 
-The retained prospective series contains **20** classifiable episodes and **0** insufficient-evidence episodes. PL-459–PL-463 add one newly represented moment-prerequisite obstruction, with PL-458 supplying its conditional covariance context. The oldest retained episode leaves the fixed trailing window and remains in Git. This is a selected episode sample, not a census of the source window.
+The retained prospective series contains **20** classifiable episodes and **0** insufficient-evidence episodes. MC-520 and its Farey packet add one classical RH-conditional variance resolution. The matching shell, surviving endpoint obstruction and unconditional boundary remain explicit. The oldest retained episode leaves the fixed trailing window and remains in Git. This is a selected episode sample, not a census of the source window.
 
-- **FrontierFertilityEpisodes = 35.0%**
+- **FrontierFertilityEpisodes = 30.0%**
 - **BarrierRate = 55.0%**
-- **PriorArtCollisionRate = 10.0%**
+- **PriorArtCollisionRate = 15.0%**
 - **InternalDuplicateRate = 0.0%**
 
 See [[research/graph/atlas/telemetry/frontier-summary|frontier telemetry]] for per-line sample sizes and [[research/graph/atlas/telemetry/frontier-events.jsonl|the event set]] for exact source provenance. Retrospective and prospective evidence are separate, and no metric alone justifies a portfolio decision.
