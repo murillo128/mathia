@@ -490,3 +490,11 @@ Only sources that materially support, delimit, or redirect stored `PL-*` finding
 
 127. **Kiran S. Kedlaya**, *Notes on Analytic Number Theory*, Chapters 8 and 11, online lecture notes. https://kskedlaya.org/ant/chapter-8.html and https://kskedlaya.org/ant/chapter-11.html.
      - Role: accessible explicit-formula and zero-counting anchors for PL-465's fixed-character bound on partial sums in terms of that character's rightmost-zero supremum. The cross-character transfer and its window-exponent loss are derived in PL-465, not attributed to these notes.
+
+## Dyadic smoothing and sparse vertical pole sequences
+
+128. **Hugh L. Montgomery**, *Topics in Multiplicative Number Theory*, Lecture Notes in Mathematics **227**, Springer, 1971, Chapter 12, Theorem 12.1. DOI: https://doi.org/10.1007/BFb0060851. Accessible statement: **George Dickinson**, “Zeros of Dirichlet L-functions near the critical line,” *Mathematika* **70**(1) (2024), e12239, introduction. DOI: https://doi.org/10.1112/mtk.12239; https://arxiv.org/pdf/2211.06264, p. 1.
+     - Role: the classical bound summed over characters modulo a fixed modulus is `O((qT)^(3(1-sigma)/(2-sigma)) log^9(qT))` for `1/2<=sigma<=4/5`. Its `o(T)` consequence for each fixed `sigma>1/2`, with monotonicity for larger sigma, is the unconditional arithmetic sparsity input in PL-466. The dyadic variance implication is not a theorem attributed to these sources.
+
+129. **Greg Martin, Nathan Ng**, “Nonzero values of Dirichlet L-functions in vertical arithmetic progressions,” *International Journal of Number Theory* **9**(4) (2013), 813–843. DOI: https://doi.org/10.1142/S1793042113500140. Author manuscript: https://www.cs.uleth.ca/~nathanng/RESEARCH/NVDVAP.pdf; arXiv: https://arxiv.org/abs/1109.1788.
+     - Role: direct prior-art comparison for PL-466's use of sparse vertical zero sequences. The introduction explains the classical zero-density reason that almost all points on each fixed off-critical vertical progression are nonzeros. PL-466 uses that off-critical fact, not the paper's stronger critical-line analysis or a conjecture on rational independence of ordinates.

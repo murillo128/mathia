@@ -1,7 +1,7 @@
 ---
 id: CLUE-prime-lattice-dyadic-variance-smooth-endpoint-recovery
 type: research-clue
-status: proposed
+status: resolved
 origin: master-researcher
 target_line: prime_lattice
 based_on:
@@ -54,3 +54,12 @@ Use PL-464's positive blockwise-constant density as a negative control at its st
 ## Evidence boundary
 
 No improved dyadic half-plane, seam estimate, new variance bound, or GRH implication beyond the stated conditional proposal is established here. MC-521 uses complete uncentered moments at all sufficiently large real scales; PL-464 uses empirical centering and only dyadic scales. Their norms and quantifiers are not interchangeable. PL-465 already resolves smooth recovery under its all-real-scale assumption, and neither its frame theorem nor a frame at one exponent supplies this clue's hypothesis. The finite deconvolution polynomial and Mellin method are classical; the unresolved object is their compatibility with the dyadic seam and unknown-mean structure. Research Watch must perform the mathematical and prior-art audit before accepting the proposed transfer.
+
+## Research disposition
+
+Outcome: supported
+
+Resolved by:
+- [[research/prime_lattice/findings/PL-466-dyadic-seam-weights-remove-the-variance-endpoint-loss]]
+
+PL-466 proves the proposed half-plane under exactly the stated dyadic variance hypothesis. It uses a weight `(1-cos(2 pi log(u)/log(2)))^m` whose finite-order zeros remove the seam error while preserving a finite Fourier representation. The empirical means remain in a vertically periodic meromorphic factor. Classical sublinear off-critical zero density rules out poles of that factor, and a finite-difference recurrence then recovers the unweighted logarithmic derivative's pole information. Thus no adjacent-mean estimate or extra window length is needed. The positive dyadic density control remains admissible for the variance bound but fails the arithmetic sublinear-pole-density input. The result establishes the conditional implication, not the actual-prime variance bound or GRH.
