@@ -479,3 +479,14 @@ Only sources that materially support, delimit, or redirect stored `PL-*` finding
 
 124. **Philippe Flajolet, Xavier Gourdon, Philippe Dumas**, “Mellin transforms and asymptotics: Harmonic sums,” *Theoretical Computer Science* **144**(1–2) (1995), 3–58. DOI: https://doi.org/10.1016/0304-3975(95)00002-E. Author manuscript: https://algo.inria.fr/flajolet/Publications/mellin-harm.pdf.
      - Role: classical geometric-dilation, vertical-pole-family and logarithmic-oscillation background for PL-464. The dyadic empirical-variance transfer and contradiction between periodic-factor residue phases and real Dirichlet logarithmic-derivative residues are derived in PL-464, not attributed to this source.
+
+## Relative covariance frames and transfer between Dirichlet channels
+
+125. **Alessandro Languasco, Alberto Perelli, Alessandro Zaccagnini**, “An extension of the pair-correlation conjecture and applications,” *Mathematical Research Letters* **23**(1) (2016), 201–220. DOI: https://doi.org/10.4310/MRL.2016.v23.n1.a10. arXiv: https://arxiv.org/abs/1308.3934.
+     - Role: explicit additive-window normalization of Selberg's RH upper bound, stated in the introduction immediately before (1.12). PL-465 combines this classical principal-channel bound with an unproved relative mod-5 frame; it does not assume the paper's stronger pair-correlation conjectures.
+
+126. **William D. Banks**, “The Generalized Riemann Hypothesis from zeros of a single L-function,” arXiv:2309.03817 (2023). https://arxiv.org/abs/2309.03817.
+     - Role: nearest single-factor-to-GRH prior-art comparison for PL-465. Theorem 1.1 uses a strengthened single-factor RH hypothesis with rationally twisted zero-sum control. It does not prove that RH alone implies GRH or establish the relative covariance frame studied here.
+
+127. **Kiran S. Kedlaya**, *Notes on Analytic Number Theory*, Chapters 8 and 11, online lecture notes. https://kskedlaya.org/ant/chapter-8.html and https://kskedlaya.org/ant/chapter-11.html.
+     - Role: accessible explicit-formula and zero-counting anchors for PL-465's fixed-character bound on partial sums in terms of that character's rightmost-zero supremum. The cross-character transfer and its window-exponent loss are derived in PL-465, not attributed to these notes.
