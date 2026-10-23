@@ -1,6 +1,6 @@
 # WI-003 — the Yang--Yang cell truncation does not reduce moduli as written
 
-**Status:** `EXACT-DERIVED` + `NEGATIVE/OBSTRUCTION` for accepting the currently published Yang--Yang higher-moment arithmetic transport as a proof; `NEEDS-AUDIT` for whether the intended argument can be repaired by introducing and proving estimates for a distinct cell-dependent arithmetic parameter. This does **not** refute the intended fourth-moment theorem, the higher-moment constants, or the density-one conclusion; it isolates a load-bearing gap in the manuscripts as currently written.
+**Status:** `EXACT-DERIVED` + `NEGATIVE/OBSTRUCTION` for the Yang--Yang higher-moment arithmetic transport in the pinned manuscripts below. The external unconditional claims have since been **retracted**, as documented in [WI-456](WI-456-retracted-moment-transport-leaves-only-a-conditional-density-capstone.md). The literal cutoff obstruction remains valid; it is not a proof that every possible fourth-moment or density-one theorem is false, nor an independent proof of the retraction notice's reported Proposition R.
 
 ## 1. Precise obstruction
 
@@ -33,7 +33,7 @@ for `ell>P`;
 
 No second definition of `ell_1` as a function of a cell, a prime-power tuple, `b_1,b_2`, `r,q`, a least common multiple, or another arithmetic modulus occurs before this use. A repository-wide code search for the phrase "cell parameter" in the public `zeta-0.7947-reproduction` source at commit `d85bddfe9d8f12856fba735fc9cb3ca23b48b3a8` finds only the manuscript itself; the density-one successor at commit `acf2b3364f122dfcd3c8792cbab102444e67f7d0` retains the same truncation text.
 
-Thus the ambiguity noted in WI-002 is not resolved by the successor manuscript. More strongly, interpreting the truncation with the manuscript's only explicit definition of `ell_1` makes the claimed modulus reduction fail.
+The successor manuscript retains this ambiguity. Interpreting the truncation with the manuscript's only explicit definition of `ell_1` makes the claimed modulus reduction fail.
 
 ## 2. Literal interpretation makes the truncation vacuous or total
 
@@ -133,9 +133,9 @@ The 22 August density-one manuscript again starts with the global definition
 
 and again states a cell-mass lemma "at parameter `ell_1`", a multiplicity lemma with "cell parameter `ell_1=ell`", and a truncation `ell_1<=P` followed by the same `ell^{-k} ell ell^epsilon` tail bookkeeping.
 
-Therefore this is not merely a typo already repaired between the finite-moment and density-one versions. At the current public revisions, the all-order arithmetic schema inherits the same unresolved base-case bridge.
+Therefore this is not merely a typo already repaired between the finite-moment and density-one versions. At the pinned pre-retraction revisions, the all-order arithmetic schema inherits the same unresolved base-case bridge.
 
-This matters epistemically because the density-one capstone in WI-002 is structurally coherent **conditional on** having every fixed-order arithmetic moment theorem. The present finding does not attack that capstone. It says that the manuscript has not yet supplied a valid written proof of the arithmetic moment theorem even at the first decisive fourth-moment rung.
+The conditional density-one capstone is separate from this defect; WI-456 states sufficient moment, model, and counting hypotheses explicitly. The present finding does not attack that conditional implication. It identifies a failure of the pinned manuscript's proof even at the first decisive fourth-moment rung.
 
 ## 6. Adversarial checks and possible escape routes
 
@@ -143,16 +143,16 @@ Several weaker interpretations do not resolve the issue.
 
 - Treating `ell_1` as the global normalization cannot yield a cell-dependent truncation, as Section 2 shows.
 - Inferring that `ell_1` must secretly mean `r`, `q`, `rq`, `lcm(b_1,b_2)`, or another modulus is not legitimate: these choices have different multiplicities, weights, and implications for the joint modulus, and the manuscript must prove the corresponding ledger identity.
-- The archived label "D1 truncation" and the repository's machine certification do not by themselves fill the analytic bridge. The authors explicitly grade the analytic consumption layer as unformalized and pending external review.
+- The archived label "D1 truncation" and the repository's machine certification do not by themselves fill the analytic bridge. The pre-retraction authors' grading of that layer as unformalized and pending review has been superseded by the withdrawal of the unconditional claims.
 - Numerical agreement of finite ledgers with the CUE/sine-kernel model cannot prove an asymptotic absolute tail bound.
 
-A genuine escape remains possible: there may be an intended arithmetic level variable in the authors' underlying ledger for which all five obligations in Section 4 are true. If such a variable and proof are supplied, this finding should be superseded by a new audited result; the current obstruction is to the published proof, not a no-go theorem for higher moments themselves.
+A different proof could in principle introduce an arithmetic level variable satisfying all five obligations in Section 4. Such a proof would be new evidence requiring its own audit; it would not erase the literal failure of the pinned manuscripts. The present obstruction is not a no-go theorem for higher moments themselves.
 
 ## 7. Prior-art and novelty assessment
 
 The underlying analytic tools -- Siegel--Walfisz, Vaughan bounds, divisor estimates, and truncation of arithmetic sums -- are classical. No novelty is claimed for them.
 
-No independent review resolving this notation/transport issue was located, and the public repositories currently contain no issue discussion establishing the missing definition. Both preprints self-classify their analytic chains below externally reviewed theorem status.
+The official [retraction notice](https://github.com/JoshuaHKU/zeta-density-one-reproduction/blob/ac851520f1d135a56d2911ff512011feab2a32dd/RETRACTION.md) withdraws the unconditional moment tier from the fourth moment upward. It reports an essential analytic gap but does not identify that gap with the literal cutoff failure proved here. These are distinct evidence claims: the notice establishes withdrawal, while the displayed definitions establish this particular obstruction.
 
 The Mathia contribution here is the explicit falsification test obtained by reading the claimed truncation literally and carrying its scales through:
 
@@ -168,6 +168,6 @@ That observation sharply localizes the burden of proof and prevents exact-ration
 
 ## 8. Consequence for `weil_inertia`
 
-The verified unconditional baseline therefore remains the Alpöge--Furman `0.672500703679...` result. The Yang--Yang moment tower remains a high-value research lead because, if repaired, it supplies exactly the defect-to-zero mechanism sought by this line; but its claimed `13/18`, `0.7962`, finite order-14, and density-one rungs must not be used as established arithmetic evidence on the strength of the present manuscripts.
+The Yang--Yang exact-moment manuscripts supply no unconditional improvement to the independent baseline in WI-001. Their retraction leaves the literal cutoff obstruction intact and preserves the distinction between an algebraic certificate and its missing arithmetic input. The claimed `13/18`, `0.7962`, order-14, and density-one rungs cannot be used as established arithmetic evidence through this source.
 
-The next highest-value audit is now narrower than WI-002's original target. Before recomputing the fourth-moment constant, reconstruct the cell ledger far enough to identify the intended arithmetic level variable and prove or disprove the five repair obligations above. If that succeeds, the rest of the fourth-moment transport becomes meaningful to audit. If it fails, the proposed unconditional higher-moment escape from WI-001 is blocked at a precise prime-side truncation step rather than at the later matrix/moment certificate.
+The five obligations in Section 4 are necessary checks on any future proof that actually uses such a cellwise truncation, not a standing instruction to repair the withdrawn submission. A different higher-moment argument must be judged on its own exact source identities and estimates. WI-456 preserves the conditional moment-to-density implication and the remaining gap between density one and individual-zero exclusion.

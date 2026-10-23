@@ -6,7 +6,7 @@ origin: master-researcher
 target_line: weil_inertia
 based_on:
   - research/weil_inertia/findings/WI-001-two-moment-bandwidth-one-barrier.md
-  - research/weil_inertia/findings/WI-002-density-one-moment-tower-needs-audit.md
+  - research/weil_inertia/findings/WI-456-retracted-moment-transport-leaves-only-a-conditional-density-capstone.md
   - research/weil_inertia/findings/WI-005-critical-lattice-screening-defeats-depth-only-negative-mass.md
   - research/weil_inertia/findings/WI-006-critical-lattice-screening-is-matrix-equivalent-to-doubles.md
   - research/weil_inertia/findings/WI-007-support-one-is-screening-threshold-for-cross-scale-depth.md
@@ -58,7 +58,7 @@ For any replacement pair or `k`-point statistic, repeat the same adversarial tes
 
 `WI-118` strengthens only the **universal termwise-positivity** branch: for a real-even support-one pair profile, `K(x)>=0` for all real `x` already forces endpoint taper and `o(M)` critical-lattice blindness; with standard smoothness the exact Montgomery weight remains screened on natural blocks. It does **not** prove that every support-one pair kernel is unusable, because sign-changing profiles can carry a nonzero boundary alias. It also does not control a signed cross-height reservoir or a kernel positive only on a zeta-specifically restricted set of separations.
 
-The BGSTB simple-critical proportions in a fixed narrow box remain conditional on their box/positivity hypothesis (or a suitably strong zero-density hypothesis). They are not unconditional improvements to the Mathia bound. The Lagarias--Rodgers Alternative-Hypothesis process is a vertical simple point process, not an off-line zeta-zero configuration, so it cannot be used as evidence that the exact WI screening multiplicity pattern satisfies all higher-correlation constraints. The all-order trace-moment route in `WI-002` remains separately unverified and cannot be used as evidence for this clue.
+The BGSTB simple-critical proportions in a fixed narrow box remain conditional on their box/positivity hypothesis (or a suitably strong zero-density hypothesis). They are not unconditional improvements to the Mathia bound. The Lagarias--Rodgers Alternative-Hypothesis process is a vertical simple point process, not an off-line zeta-zero configuration, so it cannot be used as evidence that the exact WI screening multiplicity pattern satisfies all higher-correlation constraints. The Yang--Yang unconditional higher-moment claims and density-one consequences are **retracted**, not merely unverified; `WI-456` verifies the official withdrawal and reconstructs only the conditional moment-to-density implication. Neither the withdrawn arithmetic moments nor the retraction notice's unproved-here Proposition R may be used as evidence for this clue. This source correction leaves the signed-reservoir and horizontally coupled correlation question below unresolved.
 
 ## Research disposition
 
