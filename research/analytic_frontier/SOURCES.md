@@ -87,6 +87,10 @@ This file records durable literature dependencies for `research/analytic_frontie
 - Emanuel Carneiro and Micah B. Milinovich, **On Littlewood's estimate for the modulus of the zeta function on the critical line**, arXiv:2403.17803v1 (2024). Role: reproduces the Poisson extremals in Lemma 3 in the exact normalization used to identify the probe in `ANF-106`; its downstream zeta estimates assume RH, but no RH-conditional estimate is imported by `ANF-106`.
 - P.-L. Lions, **The concentration-compactness principle in the calculus of variations. The locally compact case, part 1**, *Annales de l'Institut Henri Poincaré C, Analyse non linéaire* 1:2 (1984), 109–145, DOI `10.1016/S0294-1449(16)30428-0`. Role: conceptual prior-art boundary for translation/dichotomy localization; no concentration--compactness theorem is load-bearing in the explicit finite estimates of `ANF-106`.
 
+## Fourier decay and quantitative stability
+
+- Holger Boche and Ezra Tampubolon, **On the decay - And the smoothness behavior of the Fourier transform, and the construction of signals having strong divergent Shannon sampling series**, *ICASSP 2016*, 4870–4874, DOI `10.1109/ICASSP.2016.7472603`. Role: general slow-Fourier-decay prior-art boundary for `ANF-196`, checked against the authors' institutional publication record. No theorem from this paper is imported; the positive dominated profile and its four-site failure of every power stability rate are constructed directly in the finding.
+
 ## Expansion rule
 
 Add a source here only when it becomes a durable dependency for a canonical finding or a repeated falsification boundary. Recent preprints should be anchored only after the line has identified the exact load-bearing theorem or estimate being used.
