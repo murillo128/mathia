@@ -414,3 +414,21 @@ Role: classical real-variable conversion in MC-520 from a uniform multiplicative
 Jake Chinis, *On the Liouville Function in Short Intervals*, International Mathematics Research Notices 2022, no. 15, 11203–11219. DOI: https://doi.org/10.1093/imrn/rnab063. Author manuscript: https://arxiv.org/pdf/2007.06788v2.
 
 Role: Theorem 1.2 and its longer-block consequence support the method-specific rate boundary in MC-178. Separately, pp. 1–2 report Gao's unpublished RH bound of order `Xh(log X)^A`, with a footnote specifying its original Möbius setting. MC-520 records that stronger attribution while proving the sufficient `X^(1+epsilon)h` bound independently; Gao's unpublished proof is not asserted to have been verified.
+
+## MC-S70 — Layton, finite van Cittert approximate deconvolution
+
+William Layton, *The Interior Error of Van Cittert Deconvolution of Differential Filters Is Optimal*, Applied Mathematics E-Notes 12 (2012), 88–93. Published text: https://www.math.nthu.edu.tw/~amen/2012/120201-1.pdf. Expanded author manuscript: https://www.mathematics.pitt.edu/sites/default/files/research-pdfs/vancitterterrorexpanded.pdf.
+
+Role: classical provenance for the finite operator polynomial `sum_(j<K)(I-B)^j` used in MC-521. MC-521 independently proves the support, norm and derivative remainder bounds for its additive and multiplicative box averages; Layton's differential-filter error theorem is not substituted for those bounds.
+
+## MC-S71 — Zagier, Mellin transforms and Dirichlet series
+
+Don Zagier, *The Mellin Transform and Related Analytic Techniques*, appendix to E. Zeidler, *Quantum Field Theory I: Basics in Mathematics and Physics*, Springer (2006), 305–323. Author text: https://people.mpim-bonn.mpg.de/zagier/files/tex/MellinTransform/fulltext.pdf.
+
+Role: classical Mellin holomorphy and Dirichlet-series framework for MC-521. The finding explicitly proves the compact-smooth transform identity and uses a family of weights to prevent Mellin zeros from masking a zeta zero; no continuation of reciprocal zeta is assumed as an input.
+
+## MC-S72 — Zaccagnini, Selberg integrals and zero-location context
+
+Alessandro Zaccagnini, *The Selberg integral and a new pair-correlation function for the zeros of the Riemann zeta-function*, Rivista di Matematica della Università di Parma 7 (2016), 133–151. Author manuscript: https://arxiv.org/abs/1603.02952.
+
+Role: adjacent prior-art boundary for MC-521, especially Section 3.3 on prime-counting Selberg integrals and quasi-RH. This supports the classical nature of the variance/zero-location connection, not the signed Möbius moment hypothesis or its proof.
