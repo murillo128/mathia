@@ -154,7 +154,7 @@ There are `h` such terms. The classical totient asymptotic
 
 ## 4. Consequence for the calibrated spectral-allocation statistic
 
-For either FD-335's reflected single-gap null or any deterministic block choice `1<=b(Q)<=Q/log(2Q)` in FD-336, let
+For either FD-335's reflected single-gap null or any deterministic block choice `b(Q)>=1`, `b(Q)=o(Q)` in FD-336, let
 \[
 f_q^{\rm null}=\frac{\mathbb E_{\rm null}E_q}
                          {\mathbb E_{\rm null}E},
