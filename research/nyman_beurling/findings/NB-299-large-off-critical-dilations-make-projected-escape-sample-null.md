@@ -1,10 +1,10 @@
 # NB-299 — large off-critical dilations make projected escape sample-null
 
 - **Date:** 2026-09-23
-- **Status:** proved
+- **Status:** proved (author derivation; strengthened estimates pending independent adversarial review)
 - **Research line:** `nyman_beurling`
 - **Depends on:** NB-290, NB-292, NB-294, NB-297, NB-298
-- **Classification:** `EXACT-DERIVED + CANONICAL-NYMAN-SOURCE + FIRST-FREE-SAMPLING + PROJECTED-DILATION-ESCAPE + SHIFT-COMPRESSION-DECAY + OFF-CRITICAL-SAMPLE-CONTRACTION + BASELINE-FREE-NO-GO + TARGET-OCCUPATION-UPPER-BOUND + MOVING-PACKET-GATE + PRIOR-ART-AUDITED`
+- **Classification:** `EXACT-DERIVED + CANONICAL-NYMAN-SOURCE + FIRST-FREE-SAMPLING + PROJECTED-DILATION-ESCAPE + SHIFT-COMPRESSION-DECAY + OFF-CRITICAL-SAMPLE-CONTRACTION + BASELINE-FREE-NO-GO + SHARP-TARGET-DECAY + JOINT-FIXED-PACKET-NULL + MOVING-PACKET-GATE + PRIOR-ART-AUDITED`
 
 ## Claim
 
@@ -208,6 +208,17 @@ while
 \]
 
 A surviving Ford-scale occupation theorem must therefore be genuinely **joint-scale**. It cannot be obtained merely by taking the ordinary section deep, nor merely by pushing the multiplicative dilation far out. The moving packet, cutoff, source concentration constant, sampling conditioning, and off-critical displacement must remain coupled.
+
+More precisely, Sections 3a and 4a give a two-sided relative Gram estimate and the sharp fixed-datum rate. If `h=K^{-1}y!=0` and
+\[
+\delta(y):=\min_{j:h_j\ne0}(\Re\rho_j-1/2),
+\]
+then at fixed `n,Z,y`,
+\[
+\boxed{\mathcal G_{m,n,Z}(y)=\Theta_{n,Z,y}(m^{-2\delta(y)}).}
+\tag{13a}
+\]
+The exponent is selected by the inverse-Gram-transformed datum, not by its raw coordinates. The leading coefficient can retain bounded oscillations in `log m`. Section 7 also combines the **uniform-in-dilation** deep-section bound with the fixed-section far-dilation limit: for fixed `Z`, the sample Gram and the target gain relative to the old cost vanish uniformly outside finite rectangles in `(n,m)`. Thus a moving cutoff and dilation cannot retain a nonzero such gain while the packet remains fixed. None of these conditional statements asserts that an off-critical zeta packet exists.
 
 ---
 
@@ -584,6 +595,59 @@ This exposes the geometry hidden by source rank. For large `m`, `NB-297` gives f
 
 ---
 
+## 3a. Relative sampling asymptotics retain the transported Gram
+
+The source-compression error is smaller than **every** transported sample amplitude at a fixed off-critical packet. Put
+\[
+\delta_j=\Re\rho_j-1/2,\quad
+\delta_+=\max_j\delta_j<1/2,\quad
+A_m=D_Z(m)KD_Z(m)^*,\quad \beta=\|T_m\|,
+\]
+\[
+\varepsilon_m=\sqrt{\kappa(K)}\,m^{\delta_+}\beta,
+\qquad
+\ell_m=(1-\varepsilon_m)^2,\qquad
+u_m=\frac{(1+\varepsilon_m)^2}{1-\beta^2}.
+\]
+Whenever `beta<1` and `epsilon_m<1`, there is the finite, target-independent Loewner comparison
+\[
+\boxed{\ell_m A_m\preceq\Xi_{m,n,Z}\preceq u_m A_m.}
+\tag{47a}
+\]
+
+To prove it without commuting `K` and `D=D_Z(m)`, define
+\[
+W=K^{-1/2}X,\qquad F=K^{-1/2}D^{-1}XT_m.
+\]
+Then `WW^*=I`, `||F||<=epsilon_m`, and exactly
+\[
+Y_m=DK^{1/2}(W-F).
+\]
+For every sample vector `z`, the triangle and reverse-triangle inequalities give
+\[
+(1-\varepsilon_m)\|z\|
+\le\|(W-F)^*z\|
+\le(1+\varepsilon_m)\|z\|.
+\]
+Also `I<=Q_m^{-1}<=(1-beta^2)^{-1}I`. Apply these inequalities to `(43)` and take congruence by `DK^{1/2}` to obtain `(47a)`. No pointwise sample phase, source rank heuristic, or inverse of a singular `Q_m` is used.
+
+At fixed `n,Z`, `(30)` gives
+\[
+\varepsilon_m=O_{n,Z}(m^{\delta_+-1/2})\to0.
+\]
+Consequently `(47a)` is a **relative**, not just absolute, asymptotic: for every nonzero sample vector `z`, uniformly in that vector,
+\[
+\frac{z^*\Xi_{m,n,Z}z}{z^*A_mz}
+=1+O_{n,Z}(m^{\delta_+-1/2}).
+\tag{47b}
+\]
+In particular `(47)` is sharp at matrix-norm level:
+`||Xi||=Theta_{n,Z}(m^{-2 delta_Z})`. Indeed an index attaining `delta_Z` gives `||A_m||>=K_{jj}m^{-2 delta_Z}`, while `(62)` gives the matching upper bound. At sufficiently large `m`, the escaping block has full **sample** rank even as its entire sample Gram tends to zero.
+
+For moving packets the finite estimate `(47a)` remains valid when its displayed hypotheses hold. The sufficient relative-asymptotic gate is `sqrt(kappa(K)) m^{delta_+} beta -> 0`; this is an extra quantitative requirement for this estimate, not a consequence of source overlap merely tending to zero or a necessary condition for relative convergence itself.
+
+---
+
 ## 4. The baseline-free target gain vanishes
 
 Assume `L_Z|_U` is onto, so
@@ -698,6 +762,65 @@ therefore gives
 \]
 
 So a fixed future tail can remain nonzero while the far-out projected dilation block occupies asymptotically none of its target-relevant Parseval mass.
+
+---
+
+## 4a. The fixed target selects the exact decay exponent
+
+Let `y!=0`, `h=K^{-1}y`, and put
+\[
+J_m(y)=h^*A_mh=(D_Z(m)^*h)^*K(D_Z(m)^*h)>0,
+\qquad
+\gamma_m=\|K^{-1/2}A_mK^{-1/2}\|
+\le\kappa(K)m^{-2\delta_Z}.
+\]
+Under the finite hypotheses of `(47a)`, `(52)` yields the two-sided target certificate
+\[
+\boxed{
+\frac{\ell_m}{1+u_m\gamma_m}J_m(y)
+\le\mathcal G_{m,n,Z}(y)
+\le u_m J_m(y).
+}
+\tag{59a}
+\]
+For the proof use
+`M_esc/(1+||M_esc||)<=M_esc(I+M_esc)^{-1}<=M_esc`,
+`||M_esc||<=u_m gamma_m`, and
+`ell_m J_m(y)<=x^*M_esc x<=u_m J_m(y)`.
+Thus for fixed `n,Z`, uniformly over all nonzero `y`,
+\[
+\boxed{
+\mathcal G_{m,n,Z}(y)
+=J_m(y)\left[1+O_{n,Z}\left(
+m^{\delta_+-1/2}+m^{-2\delta_Z}\right)\right].
+}
+\tag{59b}
+\]
+
+For a fixed datum write `rho_j=1/2+delta_j+i t_j`, let
+`delta(y)=min_{h_j!=0} delta_j`, and define the nonzero vector
+\[
+v_j(m)=
+\begin{cases}
+e^{it_j\log m}h_j,&\delta_j=\delta(y),\\
+0,&\delta_j\ne\delta(y).
+\end{cases}
+\]
+There are only finitely many indices, so
+\[
+m^{2\delta(y)}J_m(y)=v(m)^*Kv(m)+o(1),
+\]
+and hence
+\[
+\boxed{m^{2\delta(y)}\mathcal G_{m,n,Z}(y)
+=v(m)^*Kv(m)+o(1).}
+\tag{59c}
+\]
+The norm of `v(m)` is a fixed positive number. Its quadratic form lies between `lambda_min(K)||v||^2` and `lambda_max(K)||v||^2`, proving `(13a)`. This also prevents equal-depth phase cancellation from improving the decay exponent. It does **not** force a scalar limiting constant: the cross terms of `v(m)^*Kv(m)` can oscillate with `log m`. If exactly one coordinate `j` survives at the least occupied depth, the limit is `K_{jj}|h_j|^2`.
+
+Raw nonzero entries of `y` do not identify the exponent. In a two-sample algebraic control with `delta_1<delta_2` and `K_{12}!=0`, choosing `y=K e_2` gives `h=e_2`, so the exponent is `2 delta_2` although `y_1!=0`. This is a finite linear-algebra control, not an assertion about the actual Ford datum. Conversely, any nonzero `h` coordinate at depth `delta_Z` makes the upper rate `(56)` sharp for that datum. The actual canonical datum has to be inserted before either conclusion applies to it.
+
+The gain here is still only the projected-dilation contribution inside the ordinary enlarged section. A positive but vanishing two-sided rate neither controls the rest of that increment nor estimates the Nyman target distance.
 
 ---
 
@@ -852,7 +975,7 @@ This is a significantly narrower destination than merely proving that `R_X` has 
 
 ---
 
-## 7. Two-axis boundary vanishing and the remaining window
+## 7. Joint fixed-packet vanishing and the remaining moving-packet window
 
 `NB-298` proves, for every fixed packet `Z`,
 
@@ -874,11 +997,36 @@ The present finding proves, for every fixed `n,Z`,
 \tag{70}
 \]
 
-These are different limits. Neither implies uniform decay in the pair `(m,n)`, and a two-variable family can retain a ridge along a moving diagonal even when both boundary limits vanish.
+The supremum over `m` in `(69)` is essential: together these limits **do** imply joint vanishing at fixed packet. Fix `Z` and an index `n_0` for which the sampler is onto. Then
+\[
+\boxed{
+\lim_{R\to\infty}
+\sup_{\substack{n\ge n_0,\ m\ge2\\\max\{n,m\}\ge R}}
+\|\Xi_{m,n,Z}\|=0.
+}
+\tag{70a}
+\]
+Given `epsilon>0`, `(69)` first supplies `N` so that all `n>=N` and every `m>=2` have norm below `epsilon`. There are only finitely many remaining indices `n_0<=n<N`; `(70)` supplies one common threshold `M` for these. Outside the rectangle `n<N, m<M`, the norm is therefore below `epsilon`. This proves `(70a)` without interchanging nonuniform limits.
 
-That moving ridge is now the only place where projected dilation can contribute a nontrivial fraction of the ordinary finite-section obstruction. More precisely, a successful Ford-scale theorem must simultaneously avoid the deep-section tail collapse of `(69)` and the far-dilation sample-null collapse of `(67)`, while also proving that the full excess `A_(U_X)(y_X)` itself remains nonvanishing.
+The target consequence is also uniform over data. Nestedness gives
+`K_{n-1,Z}>=K_{n_0-1,Z}>0`, so `(53)`--`(54)` imply
+\[
+0\le\frac{\mathcal G_{m,n,Z}(y)}{\mathcal C_{V_{n-1,Z}}(y)}
+\le\|K_{n_0-1,Z}^{-1}\|\,\|\Xi_{m,n,Z}\|.
+\]
+Thus
+\[
+\boxed{
+\lim_{R\to\infty}
+\sup_{\substack{n\ge n_0,\ m\ge2\\\max\{n,m\}\ge R}}
+\sup_{y\ne0}
+\frac{\mathcal G_{m,n,Z}(y)}{\mathcal C_{V_{n-1,Z}}(y)}=0.
+}
+\tag{70b}
+\]
+This does not give a joint bound on `G/A_U` when the full excess `A_U` itself vanishes: that is a different denominator.
 
-This clarifies the role of `m`. It is not a free amplification parameter. Once `m` is too large relative to the moving source/sampler scales, the projected dilation becomes target-invisible; once `n` is too large at fixed packet, there is no future tail left for it to occupy. Any useful choice must live in an intermediate arithmetic window whose existence and width are themselves part of the theorem to be proved.
+Accordingly, a surviving nonvanishing absolute sample block or relative-to-old-cost target gain must vary the **zero packet**, not just the cutoff and dilation. The uniform thresholds in `(70a)`--`(70b)` depend on the fixed packet. No uniformity over `Z` is asserted. A Ford-scale theorem must control that moving-packet dependence, avoid the quantitative collapse gate `(67)`, and separately establish the needed target occupation and full excess. Dilation alone supplies no free amplification parameter.
 
 ---
 
@@ -887,6 +1035,8 @@ This clarifies the role of `m`. It is not a free amplification parameter. Once `
 The literature audit rechecked the classical Nyman--Beurling/Báez-Duarte dilation framework and Bagchi's Hilbert-space/semigroup exposition. Those sources establish the discrete dilation setting and its relation to the criterion, but the present proof does not require a new external theorem. The key analytic fact is elementary: an isometric dilation whose range is supported in `(0,1/m]` converges weakly to zero, and on a fixed finite-dimensional source section its compression therefore converges to zero in operator norm. The quantitative `m^(-1/2)` estimate is proved directly from the bounded canonical atoms and the finite source Gram.
 
 No novelty is claimed for weak convergence of shifts, finite-dimensional compactness, or the matrix inequality behind `(44)`. The research-specific point is their combination with the exact `NB-297` factorization `Xi=YQ^+Y^*` and the off-critical first-free covariance `L_ZS_m=D_Z(m)L_Z`. The audit did not reveal a Nyman--Beurling source stating this projected-escape sample-null consequence. The already recorded Bagchi and Báez-Duarte anchors remain sufficient, so `SOURCES.md` needs no new durable dependency.
+
+The relative comparison `(47a)` is an elementary singular-value perturbation bound for a coisometry; see G. W. Stewart, *Perturbation Theory for the Singular Value Decomposition*, UMIACS-TR-90-124 (1990), Section 2, [author report](https://users.math.msu.edu/users/iwenmark/Teaching/MTH995/Papers/SVD_Stewart.pdf), for the classical perturbation boundary. The proof above uses only triangle inequalities and proves the needed version directly. Bagchi's [semigroup construction](https://arxiv.org/abs/math/0607733), Theorem 7, supplies the established dilation setting; Werner Ehm's [Gram-kernel study](https://arxiv.org/abs/2405.06349) concerns explicit kernels and quadratic-form decompositions, rather than this finite first-free projected-escape asymptotic. No priority claim is made for the matrix perturbation, inverse-cost identity, or finite-rectangle argument. The added line-specific content is the relative transported-Gram comparison, the inverse-Gram-selected decay exponent for the actual interpolation datum, and the fixed-packet quantifier consequence. All are derived from existing canonical identities, with no new specialized external estimate.
 
 The adversarial checks are as follows.
 
@@ -900,6 +1050,8 @@ Fourth, the result genuinely requires an off-critical packet. If `Re rho=1/2`, t
 
 Fifth, `(67)` is only a sufficient upper gate in a moving family. Failure of `(67)` does not imply nonvanishing occupation. Likewise, the fixed-parameter estimates do not supply a uniform Ford-scale rate because `delta_X` may tend to zero and both source and sample conditioning may deteriorate.
 
+The relative estimate also uses `delta_+<1/2`, not only `delta_Z>0`: it is what makes the source-compression error small after undoing **all** diagonal sample contractions. Neither `K` nor its square root is commuted through `D_Z(m)`. The finite comparison was additionally checked in exact rational arithmetic for `X=((1,1,0),(0,1,1))`, `D=diag(1/3,-1/5)`, and the nonnormal `T` with entries `T_12=1/100`, `T_23=1/200`, `T_31=1/300` and all others zero. Here `K=XX^*`, `beta=1/100`, and `epsilon<=sqrt(3)/20<1/10`; both Gram and target-gain Loewner bounds pass with the conservative `epsilon=1/10` and `gamma<=1/3`. This checks a noncommuting signed control, not realizability by a zeta packet or the general proof. No target coefficient support is assumed from that control.
+
 Finally, the target gain in `(9)` concerns `U+R_(m,n,Z)`, the canonical projected-dilation subspace inside the ordinary enlarged section. It is a lower-dimensional certificate for ordinary enrichment, not the full gain from `U` to `V_(mn-1,Z)`. Showing that this certificate vanishes does not show that every other part of the ordinary increment is useless.
 
 ---
@@ -910,4 +1062,4 @@ Finally, the target gain in `(9)` concerns `U+R_(m,n,Z)`, the canonical projecte
 
 `NB-299` closes the simplest remaining amplification idea: **for a fixed source section and fixed off-critical packet, sending the dilation to infinity makes that baseline-free projected block sample-null even though its source-space escape becomes asymptotically maximal**.
 
-The projected-dilation route is therefore trapped between two vanishing boundaries: deep ordinary sections kill the available future tail uniformly in `m`, while far-out dilations kill first-free visibility at fixed section. A surviving Ford-scale argument must find and control an intermediate moving window and must still prove nonvanishing of the underlying finite-section excess. The next useful estimate should therefore couple `delta_X`, the source concentration/Gram scale `C_(n_X)`, the first-free sampling condition `kappa(K_X)`, and the admissible dilation `m_X`, rather than treating `m_X` as a free coercivity parameter.
+The far-dilation loss is quantitatively sharp: the inverse-Gram-transformed datum determines its decay exponent, with the two-sided certificate `(59a)` and asymptotic `(59c)`. Deep ordinary sections kill the future tail uniformly in `m`; together with far-dilation decay this excludes every joint escape in `(n,m)` at a **fixed** packet. A surviving Ford-scale argument must vary and control the packet itself, couple its horizontal displacements to source and sample conditioning, and still prove the needed finite-section excess and occupation. The fixed-packet classification supplies no Nyman-distance rate or RH implication.
