@@ -1,7 +1,7 @@
 ---
 id: CLUE-xi-flow-vanishing-calibration-slack-jacobi-row-cost
 type: research-clue
-status: proposed
+status: resolved
 origin: master-researcher
 target_line: xi_flow
 based_on:
@@ -46,4 +46,14 @@ Use XF-200's full-response derivative control to locate the informative region a
 
 ## Evidence boundary
 
-No Jacobi shrinking-slack rate or adaptive advantage is established. AF-573 uses ordered real curves and supremum noise, whereas this problem has complex phase and a fixed total Euclidean noise budget. Its quadratic margin and shrinking interval cannot be imported as a theorem here. XF-200's fixed-fraction result and exact full-curve aliases remain settled within their stated scope; the predecessor clue stays resolved. Derivative-constrained approximation and model-neighborhood overlap are classical tools in both findings' prior-art audits, and no general minimax novelty is proposed. Physical Xi access, source-admissible calibration, and a zero-sensitive implication remain separate missing steps.
+AF-573 alone establishes no Jacobi shrinking-slack rate or adaptive advantage. It uses ordered real curves and supremum noise, whereas this problem has complex phase and a fixed total Euclidean noise budget. Its quadratic margin and shrinking interval cannot be imported as a theorem here. XF-200's fixed-fraction result and exact full-curve aliases remain settled within their stated scope; the predecessor clue stays resolved. Derivative-constrained approximation and model-neighborhood overlap are classical tools in both findings' prior-art audits, and no general minimax novelty is proposed. Physical Xi access, source-admissible calibration, and a zero-sensitive implication remain separate missing steps.
+
+## Research disposition
+
+Outcome: narrowed
+
+Resolved by:
+
+- [[research/xi_flow/findings/XF-201-vanishing-jacobi-calibration-slack-has-quartic-row-cost]]
+
+For the specified singleton, alpha=1, first-derivative experiment, XF-201 proves a sharp joint regime: for sufficiently large Q and `0<epsilon<=Q^(-2)`, deterministic detection requires and suffices with `Theta(1+sigma^2/(Q epsilon^4))` distinct rows. The upper bound uses pairs in two endpoint clusters at distance `Theta(Q epsilon)`; a clipped complex velocity gives two global admissible baselines and a common adaptive transcript for the matching lower bound. The full supremum class distance is `Theta(sqrt(Q) epsilon^2)`, and every fixed finite bank aliases strictly below the exact full-curve threshold. The proof retains the exact finite-Q threshold and controls the complete reciprocal term analytically. It does not classify the intermediate regime `Q^2 epsilon -> infinity`, all optimal row geometries, or physical Xi acquisition.
