@@ -1,6 +1,6 @@
 # ANF-196 — Positive-Fourier notches can have no power stability rate
 
-**Status:** EXACT-DERIVED + NEGATIVE/OBSTRUCTION + FIXED-PROFILE + FOUR-REAL-SITE-CONTROL. The qualitative real envelope of ANF-195 survives, but its square-root rate cannot extend to the full dominated positive-Fourier profile class. A single continuous profile, supported in a fixed central interval and arbitrarily close in relative amplitude to a triangular notch, can fail every positive power rate. No nonreal configuration or growing cardinality is needed.
+**Status:** EXACT-DERIVED + NEGATIVE/OBSTRUCTION + FIXED-PROFILE + FOUR-REAL-SITE-CONTROL + SOBOLEV-ENDPOINT-OBSTRUCTION. The qualitative real envelope of ANF-195 survives, but its square-root rate cannot extend to the full dominated positive-Fourier profile class. A single continuous profile, supported in a fixed central interval and arbitrarily close in relative amplitude to a triangular notch, can fail every positive power rate. No nonreal configuration or growing cardinality is needed. A separate choice of weights below gives one profile in every subcritical Sobolev space \(H^s\), \(s<1\), for which the square-root stability rate still fails; this makes the \(H^1\) sufficient condition in ANF-195 sharp within the Sobolev scale.
 
 ## Claim and normalization
 
@@ -215,3 +215,135 @@ known sharp real envelope. Targeted searches in Fourier decay,
 Montgomery--Taylor extremals and positive-type pair-potential stability did
 not locate this exact finite-multiset statement. This is a line-specific
 derived obstruction, not a claim of global literature novelty.
+
+
+## The square-root rate fails even with every subcritical Sobolev regularity
+
+The absence of *every* power rate above uses a rough profile. A second
+choice of weights isolates the endpoint relevant to ANF-195, section 10:
+there exists a **single** fixed admissible profile satisfying
+\[
+\phi\in\bigcap_{s<1}H^s(\mathbb R),\qquad \phi\notin H^1(\mathbb R),
+\quad M_\phi:=\max_j\widehat\phi(r_j)>0,
+\tag{18}
+\]
+for which no profile-dependent constant gives the square-root estimate
+\(h_\phi(W)\le\beta_\phi^{\mathbb R}+C_\phi\sqrt{e(W)}\), even on
+four distinct simple real sites. Here the profile is extended by zero to
+\(\mathbb R\), and the equivalent Fourier norm convention is
+\[
+\|f\|_{H^s}^2=\int_{\mathbb R}(1+t^2)^s|\widehat f(t)|^2\,dt.
+\tag{19}
+\]
+The same profile works simultaneously for every \(s<1\); the norm bounds
+are not asserted uniform as \(s\uparrow1\).
+
+Keep the fixed tent \(\tau\), its transform \(T\), and \(0<\lambda<1\)
+from (4), but now set
+\[
+R_n=2^{n^2},\qquad Z=\sum_{n\ge1}\frac n{R_n}\in(0,\infty),
+\qquad w_n=\frac n{Z R_n},
+\tag{20}
+\]
+and define \(\phi\) by (8) with these new weights. This is a separate
+profile from the no-power-rate example. Since \(w_n>0\) and
+\(\sum_nw_n=1\), the uniform convergence, pointwise bounds (5), positive
+Fourier formula (9), and arbitrary relative-amplitude closeness (17) all
+remain valid. Thus the construction retains continuity, fixed compact
+support, \(0\le\phi\le J_0\), and \(\Phi:=\widehat\phi\ge0\).
+
+**Subcritical regularity.** The zero-extended tent belongs to
+\(H^1(\mathbb R)\): its weak derivative is bounded and compactly supported.
+For \(0\le s<1\), the Fourier translation rule and
+\(1+(u+R)^2\le2(1+u^2)(1+R^2)\) give
+\[
+\|\tau(\alpha)e^{2\pi iR\alpha}\|_{H^s}
+\le2^{s/2}(1+R^2)^{s/2}\|\tau\|_{H^s}.
+\tag{21}
+\]
+Consequently the modulated series in (8) is absolutely convergent in
+\(H^s\), because
+\[
+\sum_nw_n(1+R_n^2)^{s/2}
+\ll_s Z^{-1}\sum_n n\,2^{-(1-s)n^2}<\infty.
+\tag{22}
+\]
+Its \(H^s\) limit is the continuous profile already defined by uniform
+convergence: both convergences give the same \(L^2\) limit on the fixed
+compact support. This proves membership for \(0\le s<1\); negative orders
+follow from \(L^2\subset H^s\). In addition,
+\(\|\phi-\tau\|_{H^s}=O_s(\lambda)\) for each fixed \(s<1\).
+Thus an arbitrarily small perturbation in any finite collection of these
+subcritical norms still permits the counterexample.
+
+**The endpoint really fails.** Choose \(d>0\) so small that
+\(T(u)\ge T(0)/2>0\) for \(|u|\le d\). The positive translated term in
+(9) gives
+\[
+\Phi(R_n+u)\ge\frac{\lambda}{2(1+\lambda)}w_n T(u)
+\ge c_{\tau,\lambda}\frac n{Z R_n}
+\qquad(|u|\le d).
+\tag{23}
+\]
+For sufficiently large \(n\), the intervals \([R_n-d,R_n+d]\) are
+disjoint and \(t^2\ge R_n^2/4\) on each. Therefore
+\(\int t^2\Phi(t)^2\,dt\ge c\sum_{n\ge n_0}n^2=\infty\).
+This proves \(\phi\notin H^1\), without an unproved assertion about
+termwise differentiation or cancellation of the modulation series.
+
+**Four-site endpoint violation.** By (9),
+\(\Phi(r_1)\ge T(r_1)/(1+\lambda)>0\). Since \(\Phi(t)\to0\), its
+maximum on the positive source zeros is attained at some fixed
+\(r_\dagger\). Apply ANF-195's exact real envelope to this profile:
+\(\beta_\phi^{\mathbb R}=\Phi(0)+\Phi(r_\dagger)\).
+For all sufficiently large \(n\), let
+\(W_n=\{0,r_\dagger,R_n,R_n+r_\dagger\}\).
+The exact six-pair identities (13)--(16) apply with \(r_\dagger\) in
+place of \(r_*\), and (23) at \(u=0\) gives
+\[
+e(W_n)\sim c_\dagger R_n^{-2},\quad
+c_\dagger=\frac{a^2\sin^2(\pi r_\dagger)}{4\pi^4}>0,
+\qquad
+h_\phi(W_n)-\beta_\phi^{\mathbb R}
+\ge\Phi(R_n)\ge c\frac n{R_n}.
+\tag{24}
+\]
+Hence
+\[
+\boxed{\displaystyle
+\frac{h_\phi(W_n)-\beta_\phi^{\mathbb R}}{\sqrt{e(W_n)}}
+\ge c' n\longrightarrow\infty.}
+\tag{25}
+\]
+Equivalently, the exposure excess is at least a constant times
+\(\sqrt{e(W_n)\log(1/e(W_n))}\) on this sequence. It still tends to zero,
+since all three cross terms in (14) tend to zero. The qualitative sharp
+envelope is unchanged.
+
+**Boundary and prior art.** ANF-195 proves square-root stability for every
+fixed dominated positive-Fourier \(H^1\) profile with \(M_\phi>0\).
+Equations (18)--(25) show that even membership in *all* \(H^s\), \(s<1\),
+cannot replace that hypothesis for a theorem covering the whole profile
+class. This is sharpness of the sufficient **Sobolev order**, not a claim
+that \(H^1\) is necessary for each individual profile, nor a determination
+of the optimal weaker rates at a fixed \(s<1\). The no-power-rate profile
+and this almost-\(H^1\) profile are distinct; (25) asserts only failure of
+the square-root rate for the latter.
+
+The Fourier definition and completeness used in (19)--(22) are classical;
+see [Semyon Dyatlov, *Lecture notes for 18.155: distributions, elliptic
+regularity, and applications to PDEs*, section 12.1, Definition 12.3 and
+(12.5)](https://math.mit.edu/~dyatlov/18.155/155-notes.pdf).
+The weighted modulation estimate (21) is proved here. Boche--Tampubolon's
+slow-decay result remains the general prior-art boundary, not a source
+for this positive, dominated, almost-\(H^1\) four-site construction.
+Targeted checks of fractional Sobolev modulation, positive Fourier
+profiles, and Montgomery--Taylor stability did not identify this exact
+endpoint implication; no global novelty is claimed.
+
+The substantive refinement is a regularity boundary for the same
+sparse-Fourier-peak obstruction: its four-site detector still works
+arbitrarily close to the sufficient Sobolev endpoint. All configurations
+remain real, with fixed cardinality and multiplicity. The result does not
+control the unrestricted complex envelope, improve a zeta-zero proportion,
+or establish RH.
