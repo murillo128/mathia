@@ -1,6 +1,6 @@
 # MI-079 — Unknown polynomial calibration separates random identification from finite certification
 
-**Evidence level:** supported synthesis of the exact oracle-model results in [AF-577](../../findings/AF-577-unknown-polynomial-calibration-separates-continuous-randomness-from-finite-certification.md), [AF-578](../../findings/AF-578-continuous-randomness-retains-fixed-budget-polynomial-calibration-obstruction.md), and [AF-579](../../findings/AF-579-unbounded-query-locations-preserve-polynomial-budget-obstruction.md). Interpolation, randomized identity testing and Gaussian-prior testing bounds are classical; this is no new recovery theorem.
+**Evidence level:** supported synthesis of the exact oracle-model results in [AF-577](../../findings/AF-577-unknown-polynomial-calibration-separates-continuous-randomness-from-finite-certification.md), [AF-578](../../findings/AF-578-continuous-randomness-retains-fixed-budget-polynomial-calibration-obstruction.md), [AF-579](../../findings/AF-579-unbounded-query-locations-preserve-polynomial-budget-obstruction.md), and [AF-580](../../findings/AF-580-positive-noise-destroys-finite-stopping-under-unknown-polynomial-calibration.md). Interpolation, polynomial approximation, randomized identity testing and Gaussian-prior testing bounds are classical; this is no new recovery theorem.
 
 Let known real-analytic curves \(F_1,\ldots,F_m\), \(m\ge2\), on \(I=(0,A)\) extend continuously to \([0,A]\). Observe \(y=F_i+b\), where one fixed polynomial \(b\) has finite but unknown, unbounded degree and no coefficient bound. Write \(\Pi\) for all polynomials. Then
 \[
@@ -94,4 +94,32 @@ since nonconstant polynomials are unbounded. The ordered prime-edit gaps are pos
 \(d(S)=\min_{i<m}\sup_{a>0}(\Phi_{p_{i+1}}-\Phi_{p_i})(a)>0\).
 The supremal full-ray identification radius under arbitrary uniform error is \(d(S)/4\): uniqueness holds strictly below it, and a midpoint alias occurs at equality. Nonadjacent gaps are sums of positive adjacent gaps, so no smaller pair distance is omitted. Thus a positive full-curve margin coexists with \(R_N^{\rm ray}=c_m\) at every finite cap and the same sharp noiseless stopping law. The elementary pair \(0,a/(1+a)^2\) has radius \(1/16\) and capped error \(1/2\); this separation is not prime-specific. The exact response rescaling changes the noise geometry, so the full-ray radius is proved separately, not transported through compactification.
 
-The nuisance class is decisive. A known degree bound permits ordinary finite deterministic tests; allowing arbitrary analytic nuisances permits exact source-gap aliases. The smooth, strictly derivative-bounded class of [AF-575](../../findings/AF-575-unknown-calibration-slack-requires-unbounded-sampling-depth.md) instead admits deterministic finite stopping at each input, while [AF-576](../../findings/AF-576-randomized-calibration-recovery-has-a-sharp-error-stopping-tail.md) rules out uniform probabilistic query bounds there. Neither conclusion can be imported merely from the words “unknown calibration.” No noisy variable-stopping theorem follows from the positive full-ray margin.
+The nuisance class is decisive. A known degree bound permits ordinary finite deterministic tests; allowing arbitrary analytic nuisances permits exact source-gap aliases. The smooth, strictly derivative-bounded class of [AF-575](../../findings/AF-575-unknown-calibration-slack-requires-unbounded-sampling-depth.md) instead admits deterministic finite stopping at each input, while [AF-576](../../findings/AF-576-randomized-calibration-recovery-has-a-sharp-error-stopping-tail.md) rules out uniform probabilistic query bounds there. Neither conclusion can be imported merely from the words “unknown calibration.”
+
+AF-580 closes the **positive-noise variable-stopping** boundary. On the ray let
+\[
+y_x=F_i+b+\eta,\qquad b\in\Pi,\quad
+\eta\text{ Borel},\quad \|\eta\|_\infty\le\varepsilon>0,
+\]
+with the polynomial and error function fixed before any seed. For continuous sources, arbitrary randomized adaptive value queries, and
+\(e_\varepsilon=\sup_x\Pr_x(T<\infty,\widehat i\ne i)\),
+\[
+e_\varepsilon\ge c_m\Pr_{x_0}(T<\infty)
+\]
+whenever \(\|\eta_0\|_\infty<\varepsilon\) **or** \(\eta_0\) is continuous. No cap, finite-bit restriction or expected-cost bound is needed. In particular zero worst-case error forces zero return probability on every noiseless input. Almost-sure return on even one such input forces worst-case error over the whole noisy class to be at least \(c_m\); uniform guessing attains it.
+
+The mechanism is exact matching on **whole compact windows**, which covers continuously distributed query positions. For integers \(R\ge2\), put \(K_R=[1/R,R]\) and choose a smooth \(0\le\chi_R\le1\), equal to one on \(K_R\), with support inside \(J_R=[1/(2R),R+1]\), and write \(g_j=F_{i_0}-F_j\). If \(\delta=\varepsilon-\|\eta_0\|_\infty>0\), choose a polynomial \(p_{j,R}\) with \(\|g_j-p_{j,R}\|_{C(J_R)}<\delta/2\). Then
+\[
+b_{j,R}=b_0+p_{j,R},\qquad
+\eta_{j,R}=\eta_0+\chi_R(g_j-p_{j,R})
+\]
+are admissible and reproduce \(y_{x_0}\) on \(K_R\). For continuous noise-saturated \(\eta_0\), approximate \(g_j+\eta_0\) instead to error \(<\varepsilon/2\) and use \(\eta_{j,R}=\chi_R(g_j+\eta_0-p_{j,R})\). Thus continuity replaces the need for strict slack; arbitrary discontinuous saturated errors are outside the asserted pointwise bound.
+
+Every finite returning execution stays in some \(K_R\). If its window-confined event has mass \(q_R\), and label-\(j\) return mass \(q_{j,R}\), shared-seed coupling gives
+\[
+e_\varepsilon\ge\max_j(q_R-q_{j,R})\ge c_mq_R,
+\qquad q_R\uparrow\Pr_{x_0}(T<\infty).
+\]
+The competing inputs vary with \(R\), never with the realized seed. Against a noiseless input with smooth sources, all competing errors can be smooth and compactly supported. No common derivative or support bound is imposed, and this cutoff construction gives no analytic-error theorem.
+
+Hence for prime-edit controls, every \(0<\varepsilon<d(S)/4\) retains unique **full-curve** identification but loses the noiseless continuous-random finite-stopping advantage. The rational control \(F_j(a)=j a/(1+a)^2\), \(0\le j<m\), has the same contrast with full-curve radius \(1/16\). Local polynomial approximation, rather than an arithmetic mechanism, creates the obstruction. A usable calibration or error restriction must prevent these exact compact-window matches; global class separation alone does not.
