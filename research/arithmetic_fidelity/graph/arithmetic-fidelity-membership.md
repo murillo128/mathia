@@ -581,3 +581,4 @@ This stable projection inventories every current canonical Arithmetic Fidelity f
 - [[research/arithmetic_fidelity/findings/AF-575-unknown-calibration-slack-requires-unbounded-sampling-depth|AF-575]]
 - [[research/arithmetic_fidelity/findings/AF-576-randomized-calibration-recovery-has-a-sharp-error-stopping-tail|AF-576]]
 - [[research/arithmetic_fidelity/findings/AF-577-unknown-polynomial-calibration-separates-continuous-randomness-from-finite-certification|AF-577]]
+- [[research/arithmetic_fidelity/findings/AF-578-continuous-randomness-retains-fixed-budget-polynomial-calibration-obstruction|AF-578]]

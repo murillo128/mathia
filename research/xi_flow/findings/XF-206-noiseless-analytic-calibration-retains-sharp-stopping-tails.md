@@ -83,7 +83,7 @@ v(Q)=D,\qquad v_{\min}:=\min_I v>0,\qquad
 In particular \(D-v(r)\ge\kappa(r-Q)\). These are exact fixed-\(Q\)
 properties, including the differentiated reciprocal contribution; no
 asymptotic error is compared with an arbitrarily small slack.
-XF-205 proves that \(F\) extends holomorphically to the right half-plane:
+[[research/xi_flow/findings/XF-205-analytic-jacobi-calibration-retains-the-noisy-stopping-obstruction|XF-205]] proves that \(F\) extends holomorphically to the right half-plane:
 use \(G_r=\sqrt\pi\,r(1+r^2)^{-1/4}\) and matching analytic branches
 of its nonvanishing factors there.
 
@@ -166,7 +166,7 @@ K_-&=(K(r_i,r_k))_{i,k<j},& k&=(K(r,r_i))_{i<j},\\
 F_-&=(F(r_i))_{i<j},& y_-&=(y_i)_{i<j}.
 \end{aligned}
 \]
-Gaussian conditioning gives the next-answer mean and variance
+[[research/prior_art/incremental/PA-gaussian-conditioning-adaptive-linear-information|Gaussian conditioning]] gives the next-answer mean and variance
 \[
 \begin{aligned}
 \mu_c(h)&=cF(r)+kK_-^{-1}(y_--cF_-),\\

@@ -45,7 +45,7 @@ This derived view reconciles live Mathia research with the frozen issue-63 prior
 
 ## Calibration testing and interpolation
 
-[[research/graph/relations/calibration-class-and-randomized-stopping|The calibration mechanism]] records AF-576 and XF-204's explicit use of [[research/prior_art/incremental/PA-le-cam-two-point-testing|two-point testing]], and AF-577's explicit comparison with [[research/prior_art/incremental/PA-polynomial-interpolation-early-termination|randomized interpolation early termination]]. The cited classical methods do not establish the Mathia-specific admissible witnesses or the continuous-real, zero-error oracle model.
+[[research/graph/relations/calibration-class-and-randomized-stopping|The calibration mechanism]] records AF-576 and XF-204's explicit use of [[research/prior_art/incremental/PA-le-cam-two-point-testing|two-point testing]], and AF-577's explicit comparison with [[research/prior_art/incremental/PA-polynomial-interpolation-early-termination|randomized interpolation early termination]]. AF-578 and XF-206 additionally use [[research/prior_art/incremental/PA-gaussian-conditioning-adaptive-linear-information|Gaussian conditioning under adaptive linear information]], with different admissible coefficient regions and limiting parameters. The cited classical methods do not establish the Mathia-specific admissible witnesses or the continuous-real, zero-error oracle model.
 
 ## Shared prior-art convergence
 

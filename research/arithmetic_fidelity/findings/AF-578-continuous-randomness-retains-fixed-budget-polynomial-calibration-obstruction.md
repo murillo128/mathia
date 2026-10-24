@@ -4,7 +4,7 @@
 
 EXACT-DERIVED · LITERATURE+DERIVED · ARITHMETIC-FIDELITY · SHARP-MINIMAX · ORACLE-MODEL-BOUNDARY · NO-GENERAL-NOVELTY-CLAIM
 
-AF-577 separates finite-bit policies from ideal continuously randomized policies under polynomial output calibration of unknown, unbounded degree. Its continuous-random procedure identifies each fixed input almost surely within its actual degree plus two value queries. The fixed-query minimax question was left open there.
+[[research/arithmetic_fidelity/findings/AF-577-unknown-polynomial-calibration-separates-continuous-randomness-from-finite-certification|AF-577]] separates finite-bit policies from ideal continuously randomized policies under polynomial output calibration of unknown, unbounded degree. Its continuous-random procedure identifies each fixed input almost surely within its actual degree plus two value queries. The fixed-query minimax question was left open there.
 
 Here every finite query cap has exact minimax error equal to blind guessing, **even with continuous-real randomness and adaptive exact observations**. For a cap of \(N\ge1\), the obstruction already uses calibration polynomials of degree at most \(N-1\), with unrestricted coefficients. The result requires bounded source derivatives through order \(N-1\) on the observation window. The prime-edit curves satisfy this condition.
 
@@ -86,7 +86,7 @@ Condition on the common seed and an identical history under the two source hypot
 \[
  H=V^T(VV^T)^{-1}V,\qquad w=(I-H)v(t)
 \]
-for a new distinct node \(t\). With no previous nodes take \(H=0\). Standard Gaussian conditioning gives common conditional variance \(L^2\|w\|_2^2>0\). The difference of the two conditional response means is
+for a new distinct node \(t\). With no previous nodes take \(H=0\). Standard [[research/prior_art/incremental/PA-gaussian-conditioning-adaptive-linear-information|Gaussian conditioning]] gives common conditional variance \(L^2\|w\|_2^2>0\). The difference of the two conditional response means is
 \[
  \delta=g(t)-v(t)^TV^T(VV^T)^{-1}g_{\rm prev}.
  \tag{8}
@@ -133,7 +133,7 @@ For distinct odd prime edit locations, retain
 \]
 AF-577 proves analyticity on \(a>0\) and that every pairwise gap is nonpolynomial: it is strictly positive in the ordered direction and tends to zero at infinity, so the identity theorem excludes a polynomial gap on any interval. On any compact positive window \([a_-,a_+]\), all derivatives are bounded, and the affine coordinate change preserves the polynomial calibration class. Thus (2), (3), and their continuous-random sharpness apply to these same generalized-prime matched controls.
 
-The result also applies on \((0,A]\): AF-571's analytic implicit equation
+The result also applies on \((0,A]\): [[research/arithmetic_fidelity/findings/AF-571-polynomial-drift-has-exact-small-window-probe-saturation|AF-571]]'s analytic implicit equation
 \[
  B_p(a)=a\exp\{\gamma+R(B_p(a))-h_p(1+B_p(a))-E(a)\},
  \quad B_p=\Phi_p-1,
@@ -158,7 +158,7 @@ Across 48 complete paths and 168 prefixes, 672 exact identities/inequalities che
 - G. W. Wasilkowski, *Optimal algorithms for linear problems with Gaussian measures*, **Rocky Mountain Journal of Mathematics** 16(4), 727–749 (1986), Theorem 3.1 and equation (3.14), gives the classical conditional Gaussian measure under adaptive linear information: DOI [10.1216/rmj-1986-16-4-727](https://doi.org/10.1216/rmj-1986-16-4-727), [primary-paper text mirror](https://paperzz.com/doc/7208297/optimal-algorithms-for-linear-problems-with). Its linear-approximation optimality results are not assumed to prove this discrete-label theorem.
 - Ery Arias-Castro, Emmanuel J. Candès, and Mark A. Davenport, *On the Fundamental Limits of Adaptive Sensing*, **IEEE Transactions on Information Theory** 59(1), 472–481 (2013), §2, equations (2.1), (2.3), and the proof of Theorem 3, use testing bounds, adaptive likelihood factorization, and Gaussian KL calculations: [author paper](https://arxiv.org/abs/1111.4646). Their noise model differs; here uncertainty comes from a single polynomial calibration sampled before the observations.
 
-These are classical ingredients. No priority claim is made for Gaussian-prior lower bounds, polynomial interpolation, Pinsker's inequality, or the broad distinction between fixed and variable information cardinality. The local mathematical addition is the uniform interpolation-energy estimate (9) for this source quotient and its exact **continuous-random** fixed-cap and stopping-tail conclusions. It fills the explicitly unasserted fixed-budget case in AF-577, without importing AF-576's smooth gluing construction into the polynomial class.
+These are classical ingredients. No priority claim is made for Gaussian-prior lower bounds, polynomial interpolation, Pinsker's inequality, or the broad distinction between fixed and variable information cardinality. The local mathematical addition is the uniform interpolation-energy estimate (9) for this source quotient and its exact **continuous-random** fixed-cap and stopping-tail conclusions. It fills the explicitly unasserted fixed-budget case in AF-577, without importing [[research/arithmetic_fidelity/findings/AF-576-randomized-calibration-recovery-has-a-sharp-error-stopping-tail|AF-576]]'s smooth gluing construction into the polynomial class.
 
 The hypotheses are load-bearing. There is no coefficient bound, and the masking variance can grow without restriction. Known degree bounds cease to mask once enough observations exceed that degree; the theorem says precisely where. The window is bounded and source-gap derivatives through the required order are bounded; this proof does not establish the same bound for arbitrary analytic functions with singular derivatives at excluded endpoints, or on an unbounded observation ray. Full-curve information, derivative queries, and symbolic access to the unknown polynomial are different channels.
 

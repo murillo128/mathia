@@ -458,3 +458,4 @@ This stable projection inventories every current canonical Prime Circle finding.
 - [[research/prime_circle/findings/PC-448-haar-admixture-does-not-close-rigid-cotangent-towers|PC-448]]
 - [[research/prime_circle/findings/PC-449-equivalent-power-weights-give-cotangent-towers-empty-resolvent|PC-449]]
 - [[research/prime_circle/findings/PC-450-bounded-weighted-cotangent-towers-retain-the-haar-band|PC-450]]
+- [[research/prime_circle/findings/PC-451-cotangent-tower-boundedness-is-exactly-orbit-a2|PC-451]]

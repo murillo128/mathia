@@ -66,6 +66,7 @@ This is a purely structural corpus projection. A link here means only that the t
 - [[research/prior_art/incremental/PA-boolean-convolution-self-energy]]
 - [[research/prior_art/incremental/PA-cycle-graph-spectral-zeta-rh-reformulation]]
 - [[research/prior_art/incremental/PA-gamma-2-thrice-punctured-sphere-scattering]]
+- [[research/prior_art/incremental/PA-gaussian-conditioning-adaptive-linear-information]]
 - [[research/prior_art/incremental/PA-gcd-sums-from-poisson-integrals-on-the-polydisc]]
 - [[research/prior_art/incremental/PA-generalized-cusp-scattering-inverse-rigidity]]
 - [[research/prior_art/incremental/PA-helson-zeta-divisor-and-continuation-flexibility]]
