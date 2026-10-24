@@ -16,6 +16,7 @@ based_on:
   - research/prime_flute/findings/PF-350-collective-antisymmetric-transition-relaxation-is-uniformly-form-small.md
   - research/prime_flute/findings/PF-351-mismatched-transition-nodes-can-erase-the-coupled-corridor-model-angle.md
   - research/prime_flute/findings/PF-354-prime-cuff-lengths-are-rationally-independent-and-have-no-common-nonzero-frequency.md
+  - research/prime_flute/findings/PF-355-one-complete-constant-fibre-retains-corridor-correlation-on-unequal-lattices.md
 ---
 
 # Can a positive-width transition band absorb the collapsing-corridor mode after exact Schur elimination?
@@ -154,3 +155,5 @@ Status: accepted. PF-344 removes the raw \(D_n\) term on bounded edge witnesses,
 [[research/prime_flute/findings/PF-351-mismatched-transition-nodes-can-erase-the-coupled-corridor-model-angle.md]] supplies an exact coupled-corridor countercontrol to transferring the local scalar Cauchy invariant by positivity and adjacency alone. The clue remains accepted and unresolved for the actual geometry, its complete transition lattices and the normalized global operator.
 
 [[research/prime_flute/findings/PF-354-prime-cuff-lengths-are-rationally-independent-and-have-no-common-nonzero-frequency.md]] proves that distinct actual prime cuffs have rationally independent lengths and share no nonzero physical Fourier frequency. Thus PF-353's exact complete common-frequency obstruction for the PF-352 model cannot be transplanted to those cuffs. Near-common modes remain possible at the lattice-spacing scale; they need a stability estimate after shorted diagonal normalization. The same exact independence holds for pairwise coprime odd composite labels, so it is not a primality selector. The clue remains accepted and unresolved for the actual global normalized angle.
+
+[[research/prime_flute/findings/PF-355-one-complete-constant-fibre-retains-corridor-correlation-on-unequal-lattices.md]] removes the shared-nonzero-frequency requirement for the **whole retained-constant angle of the coupled corridor model**. After arbitrary mismatched transition shorting, all module constants together have correlation `2 sqrt(cosh(pi xi))/(1+cosh(pi xi))` with any single retained high mode of frequency `xi`. A residual determinant identity forces the model angle norm towards one when a bounded high strip contains a diverging number of modes per module. These witnesses use exact unequal lattices, including prime-cuff lattices, but can spread over all module constants. The clue remains accepted and unresolved for the actual pant/seam form, a mean-zero split, residual-scale comparison, localization and infinite-operator singular-value counting. Frequency mismatch alone no longer supplies a whole-model escape from the retained-constant witness.

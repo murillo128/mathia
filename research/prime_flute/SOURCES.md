@@ -412,7 +412,7 @@ Relevant finding: PF-345; relevant local clue: CLUE-positive-width-transition-sc
 
 **NIST Digital Library of Mathematical Functions**, equations [5.12.3](https://dlmf.nist.gov/5.12.E3) and [5.5.3](https://dlmf.nist.gov/5.5.E3): beta integral and gamma reflection formula used to evaluate the Fourier transform of `sech(t)` in PF-346.
 
-Relevant findings: PF-346 and PF-353; relevant local clue: CLUE-positive-width-transition-schur-complement.md. PF-353 uses Lemma 1.1 of Gohberg–Kailath–Olshevsky for the classical displacement-generator context, proves its positive block specialization directly, and derives the complete retained frequency-fibre correlation invariant for the coupled corridor control.
+Relevant findings: PF-346, PF-353 and PF-355; relevant local clue: CLUE-positive-width-transition-schur-complement.md. PF-353 uses Lemma 1.1 of Gohberg–Kailath–Olshevsky for the classical displacement-generator context, proves its positive block specialization directly, and derives the complete retained frequency-fibre correlation invariant for the coupled corridor control. PF-355 reverses finite shorting order to require only one complete fibre, deriving an exact residual congruence and correlation/determinant identities for unequal retained high nodes. Its constant-mode application needs no shared nonzero cuff frequency and remains a network-model statement.
 
 **Scope warning.** These are classical identities and structural results. PF-346 applies them to the weighted cosine Gram form in PF-344's corridor trial; neither these sources nor that calculation identify the full flute DtN form with the Gram model or control errors relative to its exponentially small shorted energies.
 
