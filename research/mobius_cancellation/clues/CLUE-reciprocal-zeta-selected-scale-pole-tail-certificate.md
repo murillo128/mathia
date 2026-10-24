@@ -1,7 +1,7 @@
 ---
 id: CLUE-mobius-cancellation-reciprocal-zeta-selected-scale-pole-tail-certificate
 type: research-clue
-status: proposed
+status: accepted
 origin: master-researcher
 target_line: mobius_cancellation
 based_on:
@@ -60,3 +60,26 @@ A positive result must meet the displayed certificate on the same `E` as the var
 ## Evidence boundary
 
 MC-526 establishes finite-exception exclusion; PL-470 establishes its own logarithmic-derivative packet/tail interface and the growth diagnosis for its positive synthetic control. The reciprocal infinite-family transfer remains unproved. An unfinished estimate is not an impossibility theorem. There is no asserted infinite-family exclusion, variance upper bound, RH result, simple-zero assumption, uniform growing-packet theorem, or external novelty. Prime Lattice's accepted clue and Möbius's resolved clues retain their dispositions.
+
+## Research disposition
+
+Accepted with the contour subproblem narrowed by
+[[research/mobius_cancellation/findings/MC-527-good-height-truncation-isolates-selected-scale-pole-cancellation|MC-527]].
+For any fixed smooth mean-zero bank and fixed `delta>0`, classical
+unconditional good heights permit the complete packet through
+`T(X) in [X^delta,X^delta+1]`, retaining every Laurent principal part,
+with residual `O_f,delta(X^(-1/2))`. This is a contour-grouped estimate;
+absolute summability or individual inverse-derivative bounds are not
+needed or established.
+
+The surviving question is arithmetic cancellation inside that growing
+packet. If the selected-scale diagonal ceiling holds and a zero has
+`beta>alpha=1-theta/2`, MC-527 gives two fixed tests for which the
+complementary packet must cancel the chosen conjugate pole pair to
+relative error `O(X^(-(beta-alpha-epsilon))(log X)^(1-m))` on the same
+measured scales, where `m` is its multiplicity and
+`0<epsilon<beta-alpha`. Disproving that cancellation requires new
+source information; finite-packet independence does not do so. For a
+bank that varies with the packet, the ratios of derivative seminorms
+to test norm and the Gram/window costs remain unpaid. The full
+infinite-family exclusion is still open, so this clue is not resolved.
