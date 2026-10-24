@@ -12,6 +12,8 @@ Specifically, for the genuine order-`Q` sequence and `q=128Q-1`,
 \]
 The coefficients have exactly FD-337's normalizations. This is a statement about the **distance between vectors**, not a difference between their squared norms. It does not settle the actual linear-band energy-share question. It does show that the genuine coefficient distance cannot be `o(Q^{-1/2})`, and that relative coefficient transfer on this band would require `QE_Q -> infinity`. No assertion that `QE_Q` is bounded or diverges is made.
 
+The obstruction also survives subtracting any reflection-compatible `O(1/Q)` profile supported in the outer quarters: the empty interval immediately right of `1/2` supplies an interior coefficient-error floor below `512Q`. Section 6 states this robust form with its exact correction class.
+
 ## 1. Objects and finite statement
 
 Let
@@ -180,10 +182,84 @@ The distinction from FD-338 is material. That finding obtains different normaliz
 
 The first empty interval, global displacement bound, and reflection explain this obstruction. It is an endpoint-geometric effect, not an additional arithmetic information channel or improved cancellation estimate. RH only supplies the usual `E_Q=O_epsilon(Q^{-1+epsilon})` criterion, which does not assert bounded `QE_Q`; no contradiction to RH follows. Sublinear-band transfer, the total-energy identity, and the untouched confirmation panel in the local gap-ordering clue remain unchanged.
 
-## 6. Audit and prior-art boundary
+## 6. Bounded endpoint subtraction leaves an interior obstruction
+
+The mismatch is not confined to the outermost Farey gaps. In particular, removing bounded endpoint profiles cannot restore absolute coefficient transfer at every linear cutoff. This follows from the same positive-kernel test at the exactly anchored rational point `1/2`; no asymptotic rational-rank estimate is needed.
+
+Let `A_0>=0` be fixed, and for each `Q` let `e_Q` be any real measurable function satisfying, almost everywhere,
+\[
+e_Q(1-t)=-e_Q(t),\qquad
+\operatorname{supp}e_Q\subset[0,1/4]\cup[3/4,1],\qquad
+\|e_Q\|_\infty\le A_0/Q.
+\tag{17}
+\]
+It may depend arbitrarily on the genuine Farey grid. Its coefficient correction is
+\[
+b_{Q,j}=\sqrt{2N}\int_0^1e_Q(t)\sin(2\pi jt)\,dt.
+\]
+Set `m=512Q`, `q=m-1`. Uniformly over every family (17),
+\[
+\boxed{\liminf_{Q\to\infty}Q\sum_{j=1}^{512Q-1}
+ |d_{2j}-a_j-b_{Q,j}|^2
+ \ge\frac{3}{32768\pi^2}>0.}
+\tag{18}
+\]
+Thus even a correction supported on the entire outer quarters, rather than just shrinking endpoint neighborhoods, cannot remove the critical absolute mismatch at this bandwidth. Differences of two endpoint corrections also satisfy (17), with their amplitude bounds added. This is a statement about the explicitly defined additive corrections to the coefficient vector, not every possible nonlinear change of coordinates.
+
+To prove (18), let `B` be the largest odd integer at most `Q`. The Farey fraction immediately to the right of `1/2` is
+\[
+x_{N/2+1}=\frac12+\frac1{2B}.
+\tag{19}
+\]
+Indeed any reduced `a/b>1/2` has displacement `(2a-b)/(2b)`. For odd `b` this is at least `1/(2B)`; for even `b` the positive numerator is at least two, so the displacement is at least `1/b>=1/Q>=1/(2B)` for `Q>=3`. The fraction `((B+1)/2)/B` attains the minimum and is reduced. Reflection gives `x_(N/2)=1/2` exactly.
+
+Assume `N>=16Q`. For
+\[
+s\in[1/(16Q),1/(8Q)],\qquad t=1/2+s,
+\]
+the affine position interpolant is beyond the first rank cell to the right of `1/2`, so `t+f(t)>=1/2+1/(2B)`. Meanwhile the actual counting function is constant, `A(t)=N/2`, throughout this interval. Here `A(t)` is the counting function from (6). Consequently,
+\[
+h(1/2+s)\ge\frac1{2Q}-2s+\frac1{2N}
+\ge\frac1{4Q}.
+\tag{20}
+\]
+This is an interior plateau at the same physical coordinate used for both transforms.
+
+Center the Fejér kernel at `t_*=1/2+3/(32Q)`, with radius `delta=1/(32Q)`. Equation (13) bounds its mass outside the plateau by `1/32`. Equations (9) and (20) then give
+\[
+\int h(t)K_m(t_*-t)\,dt
+\ge\frac1Q\left(\frac14\frac{31}{32}-\frac3{32}\right)
+=\frac{19}{128Q}\ge\frac1{8Q}.
+\tag{21}
+\]
+Every point in the support of (17) has circular distance at least `1/8` from `t_*`. The pointwise kernel estimate used in (13) therefore gives `K_m(t_*-t)<=16/m` there. Since that support has measure at most `1/2`,
+\[
+\left|\int e_Q(t)K_m(t_*-t)\,dt\right|
+\le\frac{8A_0}{mQ}.
+\tag{22}
+\]
+The signal in (21) is of order `Q^-1`, while this entire remote correction is only `O_(A_0)(Q^-2)`.
+
+The function `h-e_Q` is antisymmetric and has only sine modes. Repeating (8), (12), and (16) gives the explicit finite estimate, whenever `q<N/2` and `N>=16Q`,
+\[
+\boxed{\left(\sum_{j\le q}|d_{2j}-a_j-b_{Q,j}|^2\right)^{1/2}
+\ge\frac{\sqrt N}{\sqrt m}
+ \left(\frac1{8Q}-\frac{8A_0}{mQ}\right)
+ -\frac{\pi^2q^2}{3N^2}\sqrt{E_Q}.}
+\tag{23}
+\]
+As before, a negative right side is uninformative. The correction term inside parentheses and the interpolation error are negligible relative to the leading `Q^-1/2` term after normalization, by `N~3Q^2/pi^2` and (5). Squaring proves (18).
+
+This closes the specific repair that attributes the linear-band coefficient obstruction solely to neighborhoods of `0` and `1`, then subtracts natural-size profiles supported there. It includes every fixed endpoint cutoff and every growing endpoint neighborhood that stays inside the outer quarters and obeys (17); it makes no assertion that such a subtraction is arithmetically neutral. It does not exclude a correction that also treats interior rational gaps, amplitudes outside (17), a different nonlinear transport, or a smaller fixed linear cutoff. Just as in (1), coefficient separation does not imply unequal band energies, and a relative-error obstruction additionally needs a bound on `QE_Q`. The midpoint argument supplies no improvement of the Franel exponent.
+
+## 7. Audit and prior-art boundary
 
 A standard-library Python audit independently enumerated the genuine grids at `Q=8,16,32,48,64,80`. It checked the two integration identities in (7) in 110 modes by directly integrating the affine interpolant and the counting discrepancy on their respective intervals. Maximum absolute discrepancies were below `7.0e-15` and `5.2e-16`. For the four orders satisfying `N>=8Q`, 260 exact rational samples checked (10); exact rational summation verified (12) for `1<=m<=500`. These checks test conventions and algebra, not the large-`Q` theorem. The analytic inequalities (9)–(16) prove that theorem; no large-order spectral panel, inferred asymptotic fit, independent adversarial approval, or Lean validation is claimed.
+
+An independent standard-library audit checked the exact midpoint neighbor (19) at every `3<=Q<=120` (118 orders). At the 68 orders satisfying `N>=16Q`, 2,244 exact rational samples verified (20). For the antisymmetric correction equal to `1/Q` on `[0,1/4]` and `-1/Q` on `[3/4,1]`, composite Simpson integration at `Q=16,32,64` checked the remote-kernel bound (22); 15 sine-integral checks agreed with the explicit integral `(1-cos(pi j/2))/(pi j Q)` to within `5.3e-15`. These small-order checks test the midpoint anchor, sign, and correction normalization. They do not test the large-`Q` band directly; (19)–(23) provide its proof. No larger-order confirmation panel was used.
 
 The required arithmetic bound is François Dress, *Discrépance des suites de Farey*, Journal de théorie des nombres de Bordeaux **11**(2) (1999), 345–367, [primary paper record](https://www.numdam.org/item/JTNB_1999__11_2_345_0/). The kernel and its positivity/localization are classical Fourier analysis; [NIST DLMF §1.15(iii), equations 1.15.15–1.15.17](https://dlmf.nist.gov/1.15#iii) supplies the standard normalization, while (11)–(13) give all estimates used here explicitly. M. N. Huxley, *Identities involving Farey fractions*, Proc. Steklov Inst. Math. **276** (2012), 125–139, [primary record](https://www.mathnet.ru/eng/tm3374), remains the neighboring discrete/continuous Franel-identity literature. Its full-energy identity is not a coefficientwise equality.
 
 The novelty audit considered Farey rank/discrepancy Fourier comparisons, classical empirical/quantile inversion, and localized Fourier kernels. No stochastic empirical-quantile theorem is applied to this deterministic array. The proof uses elementary interpolation and classical positive-kernel localization; it makes no claim to a new general Fourier or quantile principle, or to literature priority. Its local mathematical delta is the explicit **genuine-Farey coefficient obstruction**, including its finite normalization and its limitation to vector distance. This is not a routine reformulation of the scalar Franel criterion: that criterion alone does not compare the two coefficient vectors at the same frequency cutoff.
+
+The midpoint strengthening uses the elementary nearest-fraction calculation (19), not a new Farey-neighbor theorem. Targeted comparison with local rational Farey discrepancy, discrete/continuous Franel identities, and empirical/quantile remainder theory revealed no input giving (18) directly; stochastic empirical/quantile estimates require hypotheses not supplied by this deterministic array. The mathematical addition is the uniform obstruction to the specific endpoint-subtraction repair, proved by the same kernel mechanism as the original claim, rather than a separate general principle or priority claim.
