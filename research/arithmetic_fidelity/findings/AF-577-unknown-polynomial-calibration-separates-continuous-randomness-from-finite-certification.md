@@ -6,7 +6,7 @@ EXACT-DERIVED · LITERATURE+DERIVED · ARITHMETIC-FIDELITY · ORACLE-MODEL-BOUND
 
 [[research/arithmetic_fidelity/findings/AF-571-polynomial-drift-has-exact-small-window-probe-saturation|AF-571]] assumes a known polynomial calibration degree. AF-575/576 instead bound a derivative but leave its strict slack unknown. Neither addresses calibration that is a polynomial of some finite, **unknown and unbounded** degree, with no derivative or coefficient bound.
 
-In this different class, full curves identify the source exactly but no universally correct deterministic procedure can stop on any finite value transcript. Nevertheless, a continuously randomized exact-real oracle procedure identifies every fixed input almost surely, after at most the actual calibration degree plus two queries. The advantage disappears if a terminating computation must use only finitely many random bits: no such procedure can have both zero error and almost-sure finite termination on every input. Every positive uniform noise margin also disappears.
+In this different class, full curves identify the source exactly but no universally correct deterministic procedure can stop on any finite value transcript. Nevertheless, a continuously randomized exact-real oracle procedure identifies every fixed input almost surely, after at most the actual calibration degree plus two queries. The advantage disappears if a terminating computation must use only finitely many random bits: among policies that return a label almost surely on every input, the exact worst-case minimax error is the blind-guess value \(1-1/m\). This remains true without any uniform or expected bound on the bits or queries used. Every positive uniform noise margin also disappears.
 
 The result locates an observation-model boundary, not a numerical recovery method. Its interpolation and identity-testing mechanism is classical.
 
@@ -31,10 +31,10 @@ The following statements concern the same class (1).
 
 1. A deterministic policy that never returns a wrong label on any admitted input cannot stop after finitely many queries on **any** input.
 2. With one continuously distributed random validation coordinate, there is a policy correct with probability one on every fixed input. If \(b\) has degree \(d\), with \(d=0\) also used for the zero polynomial, it stops after at most \(d+2\) queries, almost surely. The degree is not supplied.
-3. If all randomness comes from fair independent coin bits, and each terminating execution reads finitely many bits and makes finitely many queries, zero error and almost-sure finite termination on every input are impossible.
+3. If all randomness comes from fair independent coin bits, and each label-returning execution reads finitely many bits and makes finitely many queries, worst-case error \(e\) forces the probability of returning any label on **each** input to be at most \(\min\{1,me/(m-1)\}\). Consequently the exact minimax error among policies returning almost surely on every input is \(1-1/m\). Zero error permits no positive probability of a finite label return on any input.
 4. Under arbitrary additive observation error \(\|\eta\|_\infty\le\varepsilon\), the uniform full-curve identification radius is zero.
 
-These statements do not assert a sharp fixed-budget minimax error or an optimal degree-dependent query count. They do not extend [[research/arithmetic_fidelity/findings/AF-576-randomized-calibration-recovery-has-a-sharp-error-stopping-tail|AF-576]]'s smooth-nuisance testing lower bound to polynomial nuisances.
+The finite-bit minimax statement also holds under a fixed query budget, since the matching blind-guess policy needs no queries. No sharp fixed-budget minimax error for **continuous-real randomness**, or optimal degree-dependent query count, is asserted. This is a separate interpolation argument; it does not extend [[research/arithmetic_fidelity/findings/AF-576-randomized-calibration-recovery-has-a-sharp-error-stopping-tail|AF-576]]'s smooth-nuisance coupling to polynomial nuisances.
 
 ## Every finite deterministic transcript has another label
 
@@ -76,13 +76,53 @@ This proves correctness and finite termination separately for **each fixed input
 
 Reusing one validation point is legitimate because the entire hypothetical sequence of interpolants is independent of that point; response-dependent interpolation nodes or incorporating the validation value into fitting would require another argument. For fixed input, the stopping events are measurable analytic-equality sets.
 
-## Finite-bit zero-error stopping remains impossible
+## Finite-bit return probability has a sharp error bound
 
-Suppose a coin-based policy is correct almost surely and terminates almost surely on every input. Fix any one input. A terminating computation that reads finitely many coin bits is determined by a finite bit word and its finite oracle transcript. The termination event is a countable union of such cylinders, so at least one terminating correct word has positive probability.
+For a coin-based policy \(\mathcal A\), let \(T\) be the time of its single label return, with \(T=\infty\) if it never returns a label. An explicit abstention, if allowed, is also a nonreturn for this definition. Define the **unconditional** worst-case error
+\[
+ e(\mathcal A)=\sup_{\substack{1\le i\le m\\ b\in\Pi}}
+ \Pr_{F_i+b}\{T<\infty,\ \widehat i\ne i\}.
+\]
+Then every admitted fixed input \(y\) satisfies
+\[
+ e(\mathcal A)\ \ge\ \frac{m-1}{m}\Pr_y\{T<\infty\}.
+\tag{6a}
+\]
+No moment bound or common finite cap on the random-bit count, query count, or stopping time is assumed. Only a returning execution must read finitely many bits and make finitely many value queries. All other operations may still use exact reals.
 
-Fix that word, its output label \(i\), and its queried coordinates. Choose \(j\ne i\), and use (3) to construct a polynomial calibration for label \(j\) with the same responses. On this second **fixed** input, every coin stream extending the word follows the same execution and returns \(i\). That cylinder has positive probability, contradicting zero error.
+**Finite collections of returning executions can be matched simultaneously.** Fix \(y=F_i+b\). Its returning executions are a countable disjoint union of coin cylinders \(C_w\) indexed by the finite words read at return. The words are prefix-free: once the policy returns, later unread bits cannot change that execution. Each cylinder fixes one finite oracle transcript and one returned label \(\ell_w\).
 
-The argument allows arbitrary finite, response-dependent bit and query counts; it does not assume a uniform bound. It does not prohibit Monte Carlo algorithms with a nonzero error allowance. The continuously random coordinate above implicitly supplies infinitely many random bits at unit query cost, so it lies outside this finite-bit stopping model. Exact equality testing is a second idealization. Neither resource is justified merely by the analyticity of the source.
+Take any finite subset \(W\) of these words, and let \(D_W\subset I\) be the finite union of **all** coordinates queried on their executions. Values at repeated coordinates are consistent because they all come from the same fixed function \(y\). For each label \(j\), choose one polynomial \(c_{j,W}\) interpolating
+\[
+ c_{j,W}(t)=y(t)-F_j(t)\qquad(t\in D_W).
+\tag{6b}
+\]
+It has degree at most \(|D_W|-1\) when \(D_W\ne\varnothing\); take zero when there are no queries. On the single competing input \(y_{j,W}=F_j+c_{j,W}\), every seed in every cylinder of \(W\) follows the original execution and returns \(\ell_w\). This follows by induction through coin reads, adaptive queries, responses, and the return decision. The polynomial depends on the policy, the reference input, and the **finite set** of words, but not on the subsequently realized random seed. Matching separate inputs for separate seeds would not prove the bound.
+
+Write
+\[
+ q_W=\sum_{w\in W}2^{-|w|},\qquad
+ q_{j,W}=\sum_{w\in W:\,\ell_w=j}2^{-|w|}.
+\]
+For every \(j\), the fixed input \(y_{j,W}\) has error at least \(q_W-q_{j,W}\). Since \(\sum_j q_{j,W}=q_W\),
+\[
+ e(\mathcal A)\ge\max_j(q_W-q_{j,W})
+ \ge\frac{m-1}{m}q_W.
+\tag{6c}
+\]
+Finite subsets exhaust the countable returning cylinders, so \(q_W\uparrow\Pr_y\{T<\infty\}\), proving (6a). The competing input may change along this exhaustion; this is legitimate because \(e\) is a supremum over all fixed inputs. No input is chosen after observing the actual seed.
+
+In particular, if \(\Pr_y\{T<\infty\}=1\) on every input, then \(e\ge1-1/m\). Uniform random guessing attains equality without observing \(y\); a uniform label can be sampled with almost-surely finitely many fair bits by rejection sampling. Thus
+\[
+ \inf_{\mathcal A:\,\Pr_y(T<\infty)=1\ \forall y}e(\mathcal A)
+ =1-\frac1m.
+\tag{6d}
+\]
+The return-probability coefficient in (6a) is sharp too: return a uniform label with probability \(\gamma\) and otherwise never return. Then every input has return probability \(\gamma\) and error \(\gamma(m-1)/m\). For rational \(\gamma\), this uses only almost-surely finite coin sampling before that decision; rational choices also establish sharpness of the coefficient. At zero error, (6a) rules out any positive return probability on any input.
+
+The load-bearing property is simultaneous finite interpolation in every label class, not analyticity. Analytic nonpolynomial gaps make the source label globally well-defined and enable the continuous-random success theorem, but they do not obstruct (6b). For a known degree bound, (6b) eventually leaves the admitted class. For an unknown unrestricted degree, increasing the random-bit or query budget, even adaptively and without a uniform cap, cannot yield uniform error below blind guessing with almost-sure return. This does not rule out guarantees restricted by the actual degree, coefficient size, or another quantitative promise, nor does it equate input-dependent errors with one uniform error allowance.
+
+The continuously random coordinate above implicitly supplies infinitely many random bits at unit query cost, so its returning executions need not contain positive-probability finite-bit cylinders. It lies outside the hypothesis of (6a). Exact equality testing is a second idealization. Neither resource is justified merely by the analyticity of the source.
 
 ## Prime-edit curves satisfy the nonpolynomial separation criterion
 
@@ -116,7 +156,7 @@ Since the generator \(2\) is unchanged and \(0<k(s)<p^{-s}\),
 \]
 Here \(s_q\to\infty\) because \(E_1(a)\to0\). If this positive analytic gap equalled a polynomial on any open observation window, the real-analytic identity theorem would extend that equality to all \(a>0\). By (9) the polynomial would tend to zero at infinity and therefore be identically zero, contradicting (8).
 
-Thus every finite set of distinct odd prime-edit locations satisfies (2), on every fixed finite positive window. No far-out prime threshold or shrinking-window jet asymptotic is needed for this exact separation argument. The source family remains generalized-prime matched controls indexed by rational-prime edits, not alternative ordinary-prime systems.
+Thus every finite set of distinct odd prime-edit locations satisfies (2), on every fixed finite positive window. Both the continuous-random identification theorem and the finite-bit minimax bound (6d) apply to these same source curves under (1). No far-out prime threshold or shrinking-window jet asymptotic is needed for this exact separation argument. The source family remains generalized-prime matched controls indexed by rational-prime edits, not alternative ordinary-prime systems.
 
 ## Positive noise and exact controls
 
@@ -138,12 +178,22 @@ This proves directly that the false analytic residual has only the interpolation
 
 Exact rational arithmetic checked 99 interpolation, polynomial-reproduction and alias identities for orders \(0\) through \(8\), using \(t_\ell=(\ell+1)/20\); it also checked 12 geometric-remainder identities. The continuous-randomness and finite-bit claims rest on the proofs above, not a simulation of a continuous distribution. Formula (11) is independently verified by multiplying both sides by \(1+a\) and comparing roots and leading coefficients.
 
+A separate exact-rational check tests the simultaneous adaptive-transcript step in (6b), using \(F_0=0\), \(F_1(x)=1/(1+x)\), \(F_2(x)=1/(2+x)\) and reference input \(y(x)=x^2-x/7\) on \((0,1/2)\). On coin word \(1^k0\), query \(t=1/(k+3)\), then
+\[
+ u=\frac14+\frac1{100(k+1)}+
+       \frac{y(t)}{100(1+|y(t)|)},
+ \qquad \widehat i=(k+\mathbf1_{\{y(u)>0\}})\bmod3.
+\]
+For each \(L=1,\ldots,8\), interpolate all \(2L\) observed nodes for all three labels on the words \(k<L\). All 108 reconstructed executions retained both query locations, both responses, and the return label exactly. Their cylinder mass is \(1-2^{-L}\), and the three matched error masses sum to twice that mass, as required by (6c). This finite sanity check verifies the construction on an explicit analytic control; countable exhaustion and the universal bound are proved above.
+
 ## Prior art, mathematical delta, and limits
 
-[Kaltofen and Lee (2003), *Early termination in sparse interpolation algorithms*, §1.2 and §6](https://kaltofen.math.ncsu.edu/bibliography/03/KL03.pdf), explicitly discuss interpolation without a supplied degree bound and testing a deterministically fitted interpolant at a random point. Thus the central algorithmic idea is existing prior art. Their finite-sampling Monte Carlo guarantees are not the zero-error continuous-real oracle model used here.
+[Kaltofen and Lee (2003), *Early termination in sparse interpolation algorithms*, §1.2 and §6](https://kaltofen.math.ncsu.edu/bibliography/03/KL03.pdf), explicitly discuss interpolation without a supplied degree bound and testing a deterministically fitted interpolant at a random point. Thus the central algorithmic idea is existing prior art. Their Theorem 1's error bound depends on the true degree and the sampling-set size; it is not a uniform guarantee over unbounded degree. This dependence is consistent with (6d), not an escape from it.
 
 [Mityagin (2015), *The Zero Set of a Real Analytic Function*, Proposition 0](https://arxiv.org/abs/1512.07276), supplies a general null-zero-set theorem; in one dimension the isolated-zero argument above suffices. [Gulwani (2013), *Example-Based Learning in Computer-Aided STEM Education*, Property 1](https://www.microsoft.com/en-us/research/wp-content/uploads/2013/05/education13.pdf), already proposes analytic identity testing for synthesis. Its informal random-selection statement is not used for the probability theorem here: our distribution is explicitly supported on a bounded interval, and the proof uses univariate null sets. Interpolation and polynomial approximation are classical; de Boor's *Divided Differences* is already anchored under AF-571. No priority is claimed for these methods.
 
-The local addition is the precise polynomial-calibration source quotient, its prime-edit nonpolynomiality certificate, and the separation between full-curve uniqueness, finite deterministic certification, continuous-random almost-sure identification, finite-bit zero-error impossibility, and positive-noise recovery. It rules out treating analyticity or randomized identity checks as a cost-free physical repair of AF-575/576.
+[Devroye (1986), *Non-Uniform Random Variate Generation*, Chapter XV, §§1–2](https://luc.devroye.org/chapter_fifteen_1.pdf), distinguishes random bits from continuously distributed exact reals and describes finite-word decision trees. [Giles, Hefter, Mayer and Ritter (2019), *Random bit multilevel algorithms for stochastic differential equations*, §5.2, Lemma 11 and Example 14](https://arxiv.org/abs/1808.10623), give a finite-bit truncation/enumeration lower-bound method and a problem separable by continuous randomness but not by random bits at finite worst-case expected cost. Thus neither the observation-model distinction nor finite-execution reduction is new. Here simultaneous polynomial interpolation gives the exact label-error bound (6a) without any expected-cost hypothesis.
+
+The local addition is the precise polynomial-calibration source quotient, its prime-edit nonpolynomiality certificate, and the separation between full-curve uniqueness, finite deterministic certification, continuous-random almost-sure identification, finite-bit blind-guess minimax error, and positive-noise recovery. In particular, allowing a fixed nonzero error below \(1-1/m\) does not make finite-bit identification uniformly feasible merely by permitting unbounded input-dependent stopping. It rules out treating analyticity or randomized identity checks as a cost-free physical repair of AF-575/576.
 
 Polynomial calibration of unknown finite degree is a new explicit hypothesis, not a consequence of the prime construction. Allowing all analytic nuisances would instead create immediate exact aliases by taking a nuisance equal to a source gap. A known polynomial degree bound restores ordinary finite deterministic tests. The present result neither supplies a finite-precision implementation nor revises the smooth-calibration claims of AF-575/576. It establishes no ordinary-prime discriminator, uniform noise floor, or RH implication.
