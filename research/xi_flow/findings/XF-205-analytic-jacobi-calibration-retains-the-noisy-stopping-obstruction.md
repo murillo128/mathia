@@ -149,7 +149,7 @@ laws therefore satisfy
 \tag{11}
 \]
 No continuity of the policy's decision boundaries or query map is used.
-Its rules are defined measurably on every finite history, as in XF-204.
+Its rules are defined measurably on every finite history, as in [[research/xi_flow/findings/XF-204-randomized-jacobi-detection-has-a-sharp-error-stopping-tail|XF-204]].
 An almost-sure cap on all admitted inputs can first be enforced on all
 histories by truncation.
 

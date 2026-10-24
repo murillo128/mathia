@@ -530,3 +530,4 @@ This stable projection inventories every current canonical Möbius Cancellation 
 - [[research/mobius_cancellation/findings/MC-521-smooth-deconvolution-removes-the-variance-zero-free-boundary-loss|MC-521]]
 - [[research/mobius_cancellation/findings/MC-522-centered-dyadic-variance-recovers-all-reciprocal-zeta-poles|MC-522]]
 - [[research/mobius_cancellation/findings/MC-523-density-one-dyadic-window-control-permits-near-linear-prefixes|MC-523]]
+- [[research/mobius_cancellation/findings/MC-524-density-one-window-control-coexists-with-prescribed-sparse-poles|MC-524]]

@@ -206,3 +206,4 @@ This stable projection inventories every current canonical Analytic Frontier fin
 - [[research/analytic_frontier/findings/ANF-194-primorial-witnesses-block-global-absolute-bonferroni-transfer|ANF-194]]
 - [[research/analytic_frontier/findings/ANF-195-real-near-extremizers-have-exact-two-site-notch-exposure|ANF-195]]
 - [[research/analytic_frontier/findings/ANF-196-positive-fourier-notches-can-have-no-power-stability-rate|ANF-196]]
+- [[research/analytic_frontier/findings/ANF-197-zero-exposure-profiles-are-only-source-rescalings|ANF-197]]

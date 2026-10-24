@@ -877,5 +877,6 @@ This is a path-derived structural projection for graph topology. Each link means
 - [[research/xi_flow/mind/intuition/MI-012-xi-tail-hazard-is-source-specific-but-not-yet-coercive]]
 - [[research/xi_flow/mind/intuition/MI-013-adapted-cusp-coordinates-separate-depth-from-conditioning]]
 - [[research/xi_flow/mind/intuition/MI-014-endpoint-preserving-calibration-joins-force-sharp-randomized-stopping-tails]]
+- [[research/xi_flow/mind/intuition/MI-015-positive-noise-retains-analytic-calibration-stopping-obstruction]]
 
 <!-- intuition-membership:end -->

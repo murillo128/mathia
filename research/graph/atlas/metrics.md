@@ -2,7 +2,7 @@
 id: RA-metrics-v1
 type: riemann-atlas-metrics
 atlas_version: 1
-source_revision: ce89dce6069b89a5af39f827cf1a38972accbe44
+source_revision: c5da296aeac89ff31b0dbea829ea682ee403e2e2
 derived: true
 ---
 
@@ -38,11 +38,11 @@ The five hard-pruned interfaces retain their existing scoped canonical evidence:
 
 ## Structural and semantic scope
 
-The exact tree projections contain 13 research lines, 5,032 findings, 835 durable intuitions and 67 prior-art notes. Membership changes and reversible source-reference formatting are graph maintenance, never frontier episodes. Semantic inspection remains selective as recorded in `research/graph/semantic-inspection.json`; uninspected source changes do not justify Atlas transitions.
+The exact tree projections contain 13 research lines, 5,041 findings, 836 durable intuitions and 67 prior-art notes. Membership changes and reversible source-reference formatting are graph maintenance, never frontier episodes. Semantic inspection remains selective as recorded in `research/graph/semantic-inspection.json`; uninspected source changes do not justify Atlas transitions.
 
 ## Frontier fertility
 
-The retained prospective series contains **20** classifiable episodes and **0** insufficient-evidence episodes. AF-577 and XF-204 add two distinct, scoped calibration-resource barriers; two older episodes leave the trailing window. Their ideal-oracle and pointwise termination results remain intact. The sample remains selective, and no acquisition barrier changes the Atlas denominator or territory states.
+The retained prospective series contains **20** classifiable episodes and **0** insufficient-evidence episodes. AF-577's sharp finite-bit return/error bound and XF-205's positive-noise holomorphic obstruction refine the two existing calibration-resource episodes; they add no duplicate observations and do not advance the trailing window. Ideal continuous-random identification and pointwise finite Xi termination remain intact. The sample remains selective, and no acquisition barrier changes the Atlas denominator or territory states.
 
 - **FrontierFertilityEpisodes = 30.0%**
 - **BarrierRate = 55.0%**

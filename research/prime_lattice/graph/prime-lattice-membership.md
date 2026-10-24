@@ -475,3 +475,4 @@ This stable projection inventories every current canonical Prime Lattice finding
 - [[research/prime_lattice/findings/PL-465-relative-frame-transfers-dirichlet-zero-bounds|PL-465]]
 - [[research/prime_lattice/findings/PL-466-dyadic-seam-weights-remove-the-variance-endpoint-loss|PL-466]]
 - [[research/prime_lattice/findings/PL-467-relative-frame-admits-sparse-common-off-critical-poles|PL-467]]
+- [[research/prime_lattice/findings/PL-468-fixed-profile-sparse-overwrites-force-a-natural-boundary|PL-468]]

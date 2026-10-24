@@ -212,3 +212,4 @@ This stable projection inventories every current canonical Xi Flow finding. Link
 - [[research/xi_flow/findings/XF-202-rotating-jacobi-certificates-locate-the-calibration-crossover|XF-202]]
 - [[research/xi_flow/findings/XF-203-unknown-jacobi-calibration-slack-admits-finite-certified-stopping|XF-203]]
 - [[research/xi_flow/findings/XF-204-randomized-jacobi-detection-has-a-sharp-error-stopping-tail|XF-204]]
+- [[research/xi_flow/findings/XF-205-analytic-jacobi-calibration-retains-the-noisy-stopping-obstruction|XF-205]]
