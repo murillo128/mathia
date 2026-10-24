@@ -220,3 +220,7 @@ This file records only durable literature dependencies for canonical findings in
 ## Critical valuation dilation and diagonal counterterms
 
 - **NIST Digital Library of Mathematical Functions**, [§27.4, equation 27.4.3](https://dlmf.nist.gov/27.4.E3) and [§25.2(i)](https://dlmf.nist.gov/25.2). WP-444 uses the absolutely convergent Euler product, the simple pole at one, and holomorphy at every other point to show that critical finite-prime logarithmic characteristic functions vanish in modulus at every nonzero frequency. This proves the required diagonal-counterterm obstruction directly, without RH or a zero-free-line input. Neshveyev's geometric-product type-III theorem above supplies the prior-art classification; Connes--Consani's Appendices A--B supply the Weil convolution normalization.
+
+## Maharam compensation and the sign boundary
+
+- **Cyril Houdayer, Amine Marrakchi, and Peter Verraedt**, *Strongly ergodic equivalence relations: spectral gap and type III invariants*, Ergodic Theory and Dynamical Systems 39 (2019), 1904--1935, [author preprint](https://arxiv.org/pdf/1704.07326), introduction and Section 2.5. WP-445 uses the classical equivalence between type III_1 and ergodicity of the Maharam extension, together with Neshveyev's critical geometric-product result above, to classify all finite measurable drift compensators on the real extension. Its unbounded-below energy and failure of positive spectral compression are proved directly. The [2021 corrigendum](https://doi.org/10.1017/etds.2020.86) repairs a strong-ergodicity proof not used here.
