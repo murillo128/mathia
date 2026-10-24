@@ -17,3 +17,9 @@ The live theorem is now genuinely global: locate and recenter unknown packet win
 ## Treat sample complexity, local nonlinear conditioning, support search, and source access as different currencies
 
 In the holomorphic category, lattice-scale packet complexity costs linearly many measurements but does not worsen either the linear condition number or the local nonlinear inverse on a constant physical cell. Future obstructions must target support discovery, global assembly, source-side analytic access, or the bridge to Xi-zero control rather than remote known-packet conditioning.
+
+## Which source-derived calibration information makes singleton detection uniformly finite?
+
+[MI-014](intuition/MI-014-endpoint-preserving-calibration-joins-force-sharp-randomized-stopping-tails.md) retains a separate obstruction even when the singleton source window is known. For the complete Jacobi response, the exact threshold is `L_*=min_tau |F_tau'(Q)|/2`. An unknown positive slack `delta=L_*-||B'||_infinity` admits exact input-dependent finite stopping with a known total squared-noise cap, but XF-204 forces `sup_x P(nu_x>N)>=1-2 alpha` for every finite `N` when per-input error is at most `alpha<1/2`. Its endpoint-preserving complex join prevents a value query at `Q` from removing the obstruction.
+
+Can physical source access supply a positive slack floor or a stricter calibration class that excludes those joins? With a slack floor, XF-203's sufficient certificate is concrete: `C Q^(-3/2)h+2 sigma sqrt(2/n)/h<delta` for distinct-row differences near `Q`. An analytic calibration restriction excludes the present tail-gluing witness but does not by itself supply a finite-precision recovery theorem. The source-derived calibration law, exact threshold and coordinate/precision access remain separate from local nonlinear conditioning and from any Xi-zero implication.
