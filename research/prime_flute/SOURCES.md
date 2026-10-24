@@ -33,7 +33,7 @@ Used for:
 - parabolicity criteria for zero-twist flutes in terms of cuff/Fenchel-Nielsen parameters;
 - background for why some scalar cuff sums detect conformal type while remaining too coarse for fine prime-gap arithmetic.
 
-Relevant findings: PF-001, PF-002, PF-012.
+Relevant findings: PF-001, PF-002, PF-012, PF-352. PF-352 uses only Section 9's prescribed-length tight-pants construction for its finite nonprime model patches; it imports no parabolicity or spectral conclusion.
 
 ## S3 — shear coordinates / quasisymmetry
 
@@ -475,9 +475,9 @@ Relevant finding: PF-350; relevant local clue: CLUE-positive-width-transition-sc
 - https://motion.me.ucsb.edu/pdf/2011d-db.pdf
 - Classical Schur elimination of grounded weighted network forms. PF-351 combines this framework with the scalar Cauchy identity already supported by S23; its cancellation criterion is proved directly.
 
-Relevant finding: PF-351; relevant local clue: CLUE-positive-width-transition-schur-complement.md.
+Relevant findings: PF-351 and PF-352; relevant local clue: CLUE-positive-width-transition-schur-complement.md. PF-352 combines the classical Schur and correlation identities with an odd-rank sign change on complete Fourier bands; its cuff-compatible grounding construction and conditioning estimate are derived directly.
 
-**Scope warning.** PF-351 concerns a Gram-valued two-module corridor control, with arbitrary distinct transition nodes and tunable grounding. Scalar graph sign rules do not identify its frequency matrix with a scalar Laplacian. Neither this source nor the control establishes cancellation for the actual prime-flute Fourier lattices or pant DtN form.
+**Scope warning.** PF-351 concerns a Gram-valued two-module corridor control, with arbitrary distinct transition nodes and tunable grounding. Scalar graph sign rules do not identify its frequency matrix with a scalar Laplacian. PF-352 extends the model control to complete growing Fourier bands and conductances compatible with four long nonprime cuffs. Neither source nor control establishes cancellation for the actual prime-flute periods or pant DtN form.
 
 ## Provenance policy for future additions
 
