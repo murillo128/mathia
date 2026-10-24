@@ -1,10 +1,10 @@
 # FD-341 — Linear-band relative transfer is equivalent to diverging critical energy
 
-**Status:** LITERATURE+DERIVED + EXACT-FINITE-INEQUALITY + CONDITIONAL-EQUIVALENCE.
+**Status:** LITERATURE+DERIVED + EXACT-FINITE-INEQUALITY + ENERGY-TRANSFER-EQUIVALENCE + UNCONDITIONAL-RELATIVE-TRANSFER.
 
 For the genuine Farey sequence, FD-339 makes divergence of `Q E_Q` necessary for vanishing relative rank/position coefficient error at its linear cutoff. That condition is also sufficient, simultaneously at every fixed linear cutoff. The missing input is a uniform truncation of the classical Mertens–sawtooth field: its bounded-quotient part has controlled fourth moment, while its complement has arbitrarily small amplitude compared with `Q` by unconditional Mertens cancellation.
 
-This is an unconditional theorem **equating properties whose truth is not established here**. It neither proves nor disproves `Q E_Q -> infinity`, and supplies no new Franel upper bound. In particular, an absolute coefficient-error floor of order `Q^(-1/2)` is consistent with relative transfer if the total energy grows above `1/Q` by an unbounded factor.
+All the equivalent properties in fact hold unconditionally: FD-033's already-established superlinear physical Jordan-tail energy, combined with FD-003's exact Franel normalization, gives `Q E_Q -> infinity`. Section 4a supplies this bridge explicitly. Thus the absolute coefficient-error floor of order `Q^(-1/2)` coexists with vanishing relative error at every fixed linear cutoff. This reconciliation supplies no new Franel upper bound, no rate in `Q`, and no new theorem about zeta zeros.
 
 ## 1. Objects and the equivalence
 
@@ -44,7 +44,7 @@ Here `E_Q>0`. All cutoffs below lie below `N/2` for sufficiently large `Q`.
 3. for every fixed `c>0`, `mathcal R_Q(floor(cQ)) -> 0`;
 4. `mathcal R_Q(128Q-1) -> 0`.
 
-The universal quantifier in (3) concerns each fixed `c`; no claim is made for an arbitrarily growing multiplier `c=c(Q)`. The equivalence also holds along subsequences, with all limits restricted to the same subsequence.
+The universal quantifier in (3) concerns each fixed `c`; no claim is made for an arbitrarily growing multiplier `c=c(Q)`. The equivalence also holds along subsequences, with all limits restricted to the same subsequence. Moreover, FD-033 and the exact identity in Section 4a establish (1), hence all four properties, along the full sequence of integer Farey orders.
 
 A quantitative input, valid for all sufficiently large `Q` and every integer `2<=R<=Q`, is
 \[
@@ -222,9 +222,70 @@ This proves (2) implies (3), and (3) implies (4) by monotonicity in the cutoff. 
 \]
 If the relative error at that cutoff tends to zero, (23) forces `K_Q -> infinity`. This completes all four implications. It does not require a conjectural energy asymptotic.
 
+## 4a. The existing Jordan-tail theorem establishes the divergence condition
+
+To distinguish the quotient-shell source from the counting field `H_Q(t)` in (6), write
+\[
+\mathcal H(n)=\sum_{s\le n}\frac{M(\lfloor n/s\rfloor)}s,
+\qquad w(r)=\frac{J_2(r)}{r^2},
+\qquad
+\mathcal J_Q=\sum_{r\le Q}w(r)\mathcal H(\lfloor Q/r\rfloor)^2.
+\tag{25}
+\]
+FD-003, equation (9), gives the exact full-energy identity
+\[
+\boxed{\mathcal J_Q=12NE_Q+1.}
+\tag{26}
+\]
+In the notation of FD-033, take horizon `H=Q` and fixed head dimension `D=1`. Its physical Schur tail is precisely
+\[
+E_{Q,1}^{\rm Schur}
+=\sum_{2\le r\le Q}w(r)\mathcal H(\lfloor Q/r\rfloor)^2
+\le\mathcal J_Q.
+\tag{27}
+\]
+FD-033 proves `E_(Q,1)^Schur/Q -> infinity`, so (26), (27), and `N/Q^2 -> 3/pi^2` imply
+\[
+\boxed{
+K_Q=QE_Q
+=\frac{Q^2}{12N}\left(\frac{\mathcal J_Q}{Q}-\frac1Q\right)
+\longrightarrow\infty.}
+\tag{28}
+\]
+The factor `N` counts Farey gaps; the horizon in the Schur theorem is `Q`, not `N`. No bound on the deleted first row is needed because all rows are nonnegative.
+
+The decisive argument behind the invoked tail theorem can also be checked without any Schur machinery. FD-033 establishes
+\[
+\sum_{n\ge1}\frac{\mathcal H(n)^2}{n(n+1)}=\infty.
+\tag{29}
+\]
+For clarity, its analytic input is only the existence of one critical-line zeta zero. If the sum were finite, the step function `G(x)=mathcal H(floor(x))` would satisfy `int_1^infinity |G(x)|^2 dx/x^2<infinity`. Its Mellin transform would then be analytic for `Re(s)>1/2` and, initially for `Re(s)>1`, equal to
+\[
+F(s)=\int_1^\infty G(x)x^{-s-1}\,dx
+=\frac{\zeta(s+1)}{s\zeta(s)}.
+\tag{30}
+\]
+Cauchy–Schwarz would give, uniformly in real `t`,
+\[
+|F(\tfrac12+\delta+it)|
+\le \frac{\|G(x)/x\|_{L^2([1,\infty),dx)}}{\sqrt{2\delta}}
+\quad(\delta>0).
+\tag{31}
+\]
+Analytic continuation first excludes any pole in the open half-plane. At a known critical-line zero `rho=1/2+i gamma` of multiplicity `m>=1`, the nonvanishing numerator `zeta(rho+1)` makes the right side of (30) grow as a nonzero constant times `delta^(-m)` along `s=rho+delta`. This contradicts (31). Neither RH nor simplicity is assumed.
+
+Finally, `w(r)>=1/zeta(2)`. For every **fixed** positive integer `L`, quotient grouping in (25) gives
+\[
+\frac{\mathcal J_Q}{Q}\ge
+\frac1{\zeta(2)}\sum_{n=1}^L\mathcal H(n)^2
+\frac{\lfloor Q/n\rfloor-\lfloor Q/(n+1)\rfloor}{Q}.
+\tag{32}
+\]
+Taking `liminf` as `Q -> infinity` at fixed `L` replaces the final factor by `1/[n(n+1)]`. Letting `L -> infinity` afterwards and using (29) proves `mathcal J_Q/Q -> infinity` along **all** integer orders, not merely in limsup. This is the same positive quotient-shell mechanism as FD-033. It provides neither a monotonicity claim nor a quantitative divergence rate, and does not justify letting `L` grow inside the fixed-`L` limit.
+
 ## 5. Consequences and limits
 
-Under any of the equivalent conditions, the normalized **band energies** also transfer at every fixed linear cutoff. In the notation
+Consequently the normalized **band energies** also transfer unconditionally at every fixed linear cutoff. In the notation
 \[
 E_q=\sum_{j\le q}d_{2j}^2,\qquad T_q=\sum_{j\le q}a_j^2,
 \qquad T_\infty=E_Q+\frac1{12N},
@@ -241,12 +302,16 @@ The converse is **not** asserted for energy shares: vectors can remain separated
 
 The arithmetic in (7) is essential. The rational controls of FD-338 need not admit the Mertens truncation (9)–(12), so this theorem is not a general statement about reflected grids with Dress-size displacement. Conversely, no new arithmetic carrier has been introduced: the proof works inside the existing Farey counting field and its classical divisor transform.
 
-The new implication is **sufficiency** of diverging critical energy for linear-band coefficient transfer, together with the exact fourth-moment characterization. It changes the earlier one-way boundary into an equivalence. Neither the divergence condition nor its negation is established, and RH's usual `E_Q=O_epsilon(Q^(-1+epsilon))` does not decide between them. Bounded `K_Q` along a subsequence retains the coefficient obstruction there; unbounded `limsup K_Q` alone does not imply transfer along all orders. The larger-order spectral confirmation panel in the local gap-ordering clue remains untouched. No endpoint subtraction, new null ensemble, or claimed improvement of the RH-critical exponent is involved.
+The new transfer implication is **sufficiency** of diverging critical energy, together with the exact fourth-moment characterization. FD-033 already supplies the required divergence through (26)–(28); this is an application of existing source energy, not a second discovery of that divergence. In particular, bounded `K_Q` on any infinite subsequence is excluded for the genuine sequence. RH's usual `E_Q=O_epsilon(Q^(-1+epsilon))` is consistent with the unconditional divergence and provides no rate for it. The larger-order spectral confirmation panel in the local gap-ordering clue remains untouched. No endpoint subtraction, new null ensemble, limiting band share, or improvement of the RH-critical upper exponent is involved.
 
 ## 6. Audit and prior-art boundary
 
 An independent implementation using exact rational arithmetic enumerated genuine grids for all `3<=Q<=40`. Direct gap integration verified both identities (8) at all 38 orders. Another 48 exact moment checks used the 24 non-reflected rational grids `x_k=(k/N)^p`, `2<=N<=13`, `p in {2,3}`, checking that reflection is unnecessary for (8). For the distinct choices `R` in `{2,3,min(Q,5),min(Q,8),Q}`, the Farey audit checked the exact decomposition and remainder bound at 34,784 gap midpoints, and 540 integrated/finite inequalities covering (16)–(18). Separately, exact integration over every discontinuity interval of `S_L`, for `1<=L<=50`, verified 100 second/fourth-moment statements, including equality with the GCD sum (14) and the bound (15). These checks validate finite constants, signs, quotient boundaries, and centering; the proof of the asymptotic equivalence is the analytic argument above, not extrapolation. No independent adversarial approval or Lean validation is claimed.
 
-The only additional analytic input beyond FD-337/339 is the classical unconditional estimate (11). H. Davenport, *On Some Infinite Series Involving Arithmetical Functions (II)*, Quarterly Journal of Mathematics **os-8** (1937), 313–320, [DOI](https://doi.org/10.1093/qmath/os-8.1.313), is already anchored in SOURCES.md. The needed log-power estimate is also explicitly stated as equation (1.2) in Xiaoguang He and Bingrong Huang, *Exponential sums involving the Möbius function*, Acta Arithmetica **175**(3) (2016), 201–210, [DOI](https://doi.org/10.4064/aa8130-5-2016), [publisher PDF](https://www.impan.pl/shop/intranet.php?h=6534c91a557d4&p=91740&t=1697958170). Only its zero-frequency case with log exponent two is used; none of that paper's conditional exponential-sum results enters.
+The bridge (25)–(32) was independently checked with exact rational arithmetic for all 62 orders `3<=Q<=64`: 62 direct Farey-grid/Jordan-energy identities, 62 first-row/tail decompositions, 2,077 quotient-fibre counts, and 369 finite truncated lower bounds passed. The 64 source values were also computed independently by floor-harmonic summation and by summing the Dirichlet-convolution coefficients. These checks establish finite normalization and grouping only; the divergence follows from the analytic argument and the fixed-truncation limit. No additional spectral confirmation panel was inspected.
+
+The equivalence proof's additional analytic input beyond FD-337/339 is the classical unconditional estimate (11). H. Davenport, *On Some Infinite Series Involving Arithmetical Functions (II)*, Quarterly Journal of Mathematics **os-8** (1937), 313–320, [DOI](https://doi.org/10.1093/qmath/os-8.1.313), is already anchored in SOURCES.md. The needed log-power estimate is also explicitly stated as equation (1.2) in Xiaoguang He and Bingrong Huang, *Exponential sums involving the Möbius function*, Acta Arithmetica **175**(3) (2016), 201–210, [DOI](https://doi.org/10.4064/aa8130-5-2016), [publisher PDF](https://www.impan.pl/shop/intranet.php?h=6534c91a557d4&p=91740&t=1697958170). Only its zero-frequency case with log exponent two is used; none of that paper's conditional exponential-sum results enters.
 
 Möbius inversion, the sawtooth GCD integral, norm interpolation, and the ordered-grid moment calculation are classical mechanisms. P. Codecà and A. Perelli, *On the uniform distribution (mod 1) of the Farey fractions and l^p spaces*, Math. Ann. **279** (1988), 413–422, [institutional abstract](https://iris.unife.it/handle/11392/522882), and M. N. Huxley, *Identities involving Farey fractions*, Proc. Steklov Inst. Math. **276** (2012), 125–139, [primary record](https://www.mathnet.ru/eng/tm3374), are neighboring harmonic/discrete-continuous prior art. The former's abstract concerns integration errors for absolutely continuous test functions; it was not used to infer the present relative fourth-moment or cutoff theorem. Searches also compared empirical/quantile remainder theory, which supplies no deterministic sampling hypothesis for this Farey array. No priority claim is made from the absence of an identical formulation. The durable contribution is the explicit local equivalence and its finite inequality (18), rather than a new general Mertens, Fourier, or empirical-process theorem.
+
+For the unconditional conclusion, the additional source is already part of FD-033: G. H. Hardy, *Sur les zéros de la fonction ζ(s) de Riemann*, C. R. Acad. Sci. Paris **158** (1914), 1012–1014 ([original text and facsimile](https://fr.wikisource.org/wiki/Page:Comptes_rendus_hebdomadaires_des_s%C3%A9ances_de_l%E2%80%99Acad%C3%A9mie_des_sciences,_tome_158,_1914.djvu/1014)). Only one critical-line zero is needed. The source-square divergence, positive Jordan factorization, and tail-growth mechanism are established in FD-003/FD-033; their use here is an explicit reconciliation of those earlier results with the transfer equivalence. It is not a new lower-bound mechanism or literature-priority claim. The retained equivalence and finite estimates have unchanged hypotheses.
