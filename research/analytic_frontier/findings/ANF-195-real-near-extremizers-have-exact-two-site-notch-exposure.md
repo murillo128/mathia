@@ -727,8 +727,11 @@ h_\phi(W)\le\beta_\phi^{\mathbb R}
 \tag{56}
 \]
 The maximum-zero hypothesis in (55) is explicit; this argument uses its
-positive allowance for isolated sites and makes no general assertion for
-the case \(M=0\).
+positive allowance for isolated sites. ANF-197 classifies the remaining
+case \(M=0\) exactly: \(\phi=cJ_0\), \(0\le c\le1\), and
+\(h_\phi(W)=c(1+e(W))\). Consequently the square-root conclusion covers
+every dominated nonnegative-Fourier \(H^1\) profile, with a linear modulus
+on that exceptional rescaling branch.
 
 ### An integrable squared interaction cost replaces pointwise domination
 
