@@ -1,7 +1,7 @@
 ---
 id: CLUE-prime-lattice-density-one-dyadic-variance-arithmetic-recovery
 type: research-clue
-status: accepted
+status: resolved
 origin: master-researcher
 target_line: prime_lattice
 based_on:
@@ -51,30 +51,15 @@ If recovery requires an additional bound on the omitted remainder, state that bo
 
 ## Evidence boundary
 
-No density-one arithmetic recovery theorem, meromorphic matched control, variance bound or zero exclusion is established by this clue. The known MC-523 control is deliberately nonmultiplicative and cannot be substituted for the actual source. PL-466's every-block theorem remains intact, and its resolved seam-recovery clue is not reopened. This question changes scale coverage, not seam smoothness, centering or the relative-frame premise. An answer would still need a separate argument to apply to a Farey-selected mesh or to prove any required arithmetic estimate. No RH/GRH result, literature novelty or physical sampling guarantee is asserted.
+The actual-prime implication is now proved conditionally in PL-471: the complete empirical variance ceiling on the specified retained mesh excludes mod-5 zeros in `Re s>1-theta/2`. The ceiling itself remains unproved. The result uses the actual logarithmic-derivative explicit formula and a power-saving zero-density estimate; it is not a recovery theorem for arbitrary meromorphic sources with merely `o(T)` poles. No RH/GRH result or effective sampling guarantee is asserted.
 
 ## Research disposition
 
-Accepted with a restricted countermodel strategy ruled out by
-[[research/prime_lattice/findings/PL-468-fixed-profile-sparse-overwrites-force-a-natural-boundary|PL-468]].
-For a nonzero fixed smooth profile, overwrites of amplitude
-`c N_k^(beta-1)` at `N_k=2^(3^k)` can preserve positive bounded coefficients
-supported on integers, residue masses `x/4+o(x)`, and the complete retained-window
-variance ceiling. Their identity-residue transform is nevertheless
-`(5/4) A_1(s)-c Phi(s) sum_k 2^((beta-s)3^k)+E(s)`, with `E`
-holomorphic for `Re s>beta-1`. The classical lacunary natural boundary
-at `Re s=beta` survives atomic discretization and the isolated zeros
-of `Phi`; all four character transforms inherit it. Thus this recipe
-fails the meromorphic hypothesis, rather than furnishing a counterexample
-to arithmetic recovery.
+Outcome: supported
 
-The unresolved question remains the original actual-prime implication,
-or a control satisfying **all** the stated analytic hypotheses. For a
-general omitted-block term the functions `R_j(s)` vary with the block;
-they are not scalar coefficients times a common Mellin profile. The
-Hadamard/Fabry theorem used in PL-468 cannot be applied to that term
-from index density alone. This leaves a precise continuation/compatibility
-problem worth investigating, not an accepted zero-free theorem. The
-classical gap-series and Selberg-variance literature supports this
-distinction; no general variable-profile recovery theorem was established
-in the audit. The clue remains accepted, not resolved.
+Resolved by:
+- [[research/prime_lattice/findings/PL-471-sparse-zero-annihilators-force-prime-variance-on-every-large-block]]
+
+PL-471 resolves the original actual-source question by a different test from the omitted-block Mellin decomposition. A compactly supported test annihilates every unwanted off-critical zero in a fixed right half-plane. The arithmetic explicit formula, followed by finite-order additive-window inversion, forces `V_1(X,floor X^theta)>=c H^2 X^(2beta-1)` on every sufficiently large real block if a zero with real part `beta>1/2` exists. Hence any unbounded set carrying the full ceiling suffices; the original retained dyadic mesh is an immediate instance, and no estimate on omitted blocks or their means is supplied or needed.
+
+This is an explicit extension beyond the initial fixed mesh. It does not establish that any source-selected or Farey-selected scale set carries the required variance estimate. The constants depend on the full zero set and are non-effective. PL-468's fixed-profile natural-boundary obstruction and PL-469's positive meromorphic control remain valid; the latter fails the quantitative strip-growth input identified in PL-470. The broader meromorphic-control question from the negative test is not conflated with the now-resolved actual-prime implication.

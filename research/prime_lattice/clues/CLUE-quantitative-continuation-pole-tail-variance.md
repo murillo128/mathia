@@ -1,7 +1,7 @@
 ---
 id: CLUE-prime-lattice-quantitative-continuation-pole-tail-variance
 type: research-clue
-status: accepted
+status: resolved
 origin: master-researcher
 target_line: prime_lattice
 based_on:
@@ -58,10 +58,16 @@ Determine whether the standard arithmetic bounds actually provide that certifica
 
 ## Evidence boundary
 
-MC-525 establishes its fixed isolated-pair theorem. PL-469 establishes the positive control on its stated mesh; PL-470 now proves its strip-growth diagnosis as described in the disposition below. The proposed infinite-pole transfer remains unproved. No every-block lower bound for actual primes, sparse-scale zero-free criterion, independent arithmetic estimate, RH/GRH result or external novelty is asserted. The accepted thin-mesh clue and the resolved moderate-mesh control retain their existing dispositions. A theorem needing an isolated rightmost finite pole cluster would be a conditional result, not a resolution for the actual unrestricted zero set.
+PL-470 proves the positive control's strip-growth obstruction and the actual-source explicit formula. PL-471 now resolves the infinite-pole transfer for the actual mod-5 logarithmic derivative, using the classical power-saving off-critical zero count, not a bare sublinear count. Its fixed tests depend on the full hypothetical zero set, and its constants are non-effective. No prime-variance ceiling, effective sampling certificate, unconditional zero exclusion or RH/GRH result is established.
 
 ## Research disposition
 
-Accepted for the remaining infinite-pole quantitative test. The positive-source calibration is now proved in [[research/prime_lattice/findings/PL-470-positive-source-strip-growth-and-the-infinite-pole-tail-gate|PL-470]]: mean-zero tests erase the density pole exactly, retain a bounded periodic counting error, and force the PL-469 pole-subtracted transform to violate every polynomial bound uniformly on each strip `beta-1<sigma_0<beta` through `Re s=2`.
+Outcome: supported
 
-PL-470 also gives the actual source's absolutely convergent smoothed zero sum, explicitly retaining the trivial zero at 0 and the correction for powers of 5. Its equations (14)--(17) state the remaining certificate, including the normalized packet singular value, test derivative costs and complete remaining zero vector. The standard absolute high-height bound for fixed tests is `C_(N,f) X T^(1-N) log(2T)`; a fixed cutoff does not prove the required `o(X^beta)` error. Growing the packet requires new uniform estimates. These are precise limitations of this proof route, not a counterexample to arithmetic recovery or a proof that cancellation occurs. The unresolved question is whether arithmetic information controls that residual on the same selected scales as the variance ceiling. No rightmost-zero or gap premise has been supplied, and neither other mesh clue changes disposition.
+Resolved by:
+- [[research/prime_lattice/findings/PL-471-sparse-zero-annihilators-force-prime-variance-on-every-large-block]]
+- [[research/prime_lattice/findings/PL-470-positive-source-strip-growth-and-the-infinite-pole-tail-gate]]
+
+PL-471 constructs a compactly supported complex mean-zero Mellin test with value one at a chosen zero `rho_0`, and value zero at every other zero with `Re rho>sigma_0`, for any fixed `1/2<sigma_0<Re rho_0`. A genus-zero product and a convergent Gevrey derivative series supply the test. The full arithmetic explicit formula then leaves only `-w_(rho_0) X^rho_0+O(X^sigma_0)`, retaining the trivial-zero and powers-of-5 corrections. Finite-order box inversion converts this into the empirical-variance floor on every sufficiently large real block for each fixed `0<theta<1`. Its derivative tests form a fixed finite real measurement bank; no growing Gram matrix is required.
+
+Thus a covariance-scale ceiling on any unbounded set of scales forces the stated zero-free half-plane. The proof needs no rightmost zero or horizontal gap and does not bound the tail of an arbitrary preselected bank. Its all-zero-dependent test resolves the existence question without furnishing an effective bank from finite data. PL-469's generic positive control remains valid because its continuation lacks the quantitative growth needed for the arithmetic explicit formula, as PL-470 proves. Neither the abstract control nor the earlier finite-packet cost analysis is refuted.
