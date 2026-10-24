@@ -460,3 +460,4 @@ This stable projection inventories every current canonical Prime Circle finding.
 - [[research/prime_circle/findings/PC-450-bounded-weighted-cotangent-towers-retain-the-haar-band|PC-450]]
 - [[research/prime_circle/findings/PC-451-cotangent-tower-boundedness-is-exactly-orbit-a2|PC-451]]
 - [[research/prime_circle/findings/PC-452-finite-base-cotangent-boundedness-forces-comparable-orbit-weights|PC-452]]
+- [[research/prime_circle/findings/PC-453-bounded-cotangent-towers-force-haar-equivalence|PC-453]]

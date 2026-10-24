@@ -78,6 +78,7 @@ This is a purely structural corpus projection. A link here means only that the t
 - [[research/prior_art/incremental/PA-montgomery-dirichlet-zero-density-bound]]
 - [[research/prior_art/incremental/PA-polynomial-homogenization-linear-fractional-action]]
 - [[research/prior_art/incremental/PA-polynomial-interpolation-early-termination]]
+- [[research/prior_art/incremental/PA-randomized-integration-unsolvability-on-unrestricted-smooth-functions]]
 - [[research/prior_art/incremental/PA-randomized-zeta-critical-gmc-boundary]]
 - [[research/prior_art/incremental/PA-resultant-potential-theory-on-compact-riemann-surfaces]]
 - [[research/prior_art/incremental/PA-rh-reciprocal-zeta-subpower-bound]]
@@ -87,3 +88,4 @@ This is a purely structural corpus projection. A link here means only that the t
 - [[research/prior_art/incremental/PA-thurston-shear-coordinate]]
 - [[research/prior_art/incremental/PA-van-cittert-approximate-deconvolution]]
 - [[research/prior_art/incremental/PA-venkov-zograf-artin-factorization]]
+- [[research/prior_art/incremental/PA-weierstrass-polynomial-approximation]]

@@ -54,7 +54,7 @@ For each integer `R>=2`, put
 \[
  K_R=[1/R,R],\qquad J_R=[1/(2R),R+1].
 \]
-Choose a smooth function `chi_R`, valued in `[0,1]`, equal to one on `K_R` and with compact support inside the interior of `J_R`. For every label `j`, polynomial approximation on the compact interval `J_R` supplies `p_(j,R) in Pi` such that
+Choose a smooth function `chi_R`, valued in `[0,1]`, equal to one on `K_R` and with compact support inside the interior of `J_R`. For every label `j`, [[research/prior_art/incremental/PA-weierstrass-polynomial-approximation|polynomial approximation]] on the compact interval `J_R` supplies `p_(j,R) in Pi` such that
 \[
  g_j=F_{i_0}-F_j,\qquad
  \sup_{J_R}|g_j-p_{j,R}|<\delta/2.
@@ -112,7 +112,7 @@ Couple the runs on `x_0` and the `m` inputs (6), or (7a) for the continuous-erro
 \]
 Let `R` increase to prove (3). For each `R`, all `m` adversarial inputs are fixed independently of the realized seed. They may change with `R` because the left side is a supremum over inputs. No seed-dependent interpolation, minimax interchange, or continuity of the policy in its observed values is used. Equality on an entire window is what permits arbitrary continuously distributed coordinates.
 
-The abstract sufficient condition is exact local matching of a reference input in every label class on an exhausting sequence of windows. Polynomial density together with bounded-error slack, or continuity of the reference error, establishes that condition here. This is different from equality on a finite list of points, which alone did not defeat the noiseless continuous-random procedure in AF-577.
+The abstract sufficient condition is exact local matching of a reference input in every label class on an exhausting sequence of windows. Polynomial density together with bounded-error slack, or continuity of the reference error, establishes that condition here. This is different from equality on a finite list of points, which alone did not defeat the noiseless continuous-random procedure in [[research/arithmetic_fidelity/findings/AF-577-unknown-polynomial-calibration-separates-continuous-randomness-from-finite-certification|AF-577]].
 
 ## Positive full-ray margin still survives for prime-edit controls
 

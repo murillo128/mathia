@@ -2,7 +2,7 @@
 id: RA-metrics-v1
 type: riemann-atlas-metrics
 atlas_version: 1
-source_revision: 318a33ff6fa58d8d5f129ebeb02cdf49e8b88875
+source_revision: 2a12ef1e9a3ce0ab7fc1209575a271f27669a9ad
 derived: true
 ---
 
@@ -38,11 +38,11 @@ The five hard-pruned interfaces retain their existing scoped canonical evidence:
 
 ## Structural and semantic scope
 
-The exact tree projections contain 13 research lines, 5,059 findings, 836 durable intuitions and 70 prior-art notes. Membership changes and reversible source-reference formatting are graph maintenance, never frontier episodes. Semantic inspection remains selective as recorded in `research/graph/semantic-inspection.json`; uninspected source changes do not justify Atlas transitions.
+The exact tree projections contain 13 research lines, 5,067 findings, 836 durable intuitions and 72 prior-art notes. Membership changes and reversible source-reference formatting are graph maintenance, never frontier episodes. Semantic inspection remains selective as recorded in `research/graph/semantic-inspection.json`; uninspected source changes do not justify Atlas transitions.
 
 ## Frontier fertility
 
-The retained prospective series contains **20** classifiable episodes and **0** insufficient-evidence episodes. AF-579's ray-domain extension and XF-207's complex-value extension refine the same two calibration-resource episodes, with no duplicate observations or window advance. AF's positive full-curve noise margin and Xi's compact-bound allowance are explicit qualifications; finite per-input recovery remains possible. These synthetic acquisition results do not change Atlas territory states or masses.
+The retained prospective series contains **20** classifiable episodes and **0** insufficient-evidence episodes. AF-580 refines the existing polynomial-calibration episode without adding an observation or advancing the window. At every positive bounded-error allowance, its pointwise error/return inequality prevents uniformly reliable finite stopping even at noiseless inputs, despite AF-579's positive full-ray identification margin. Noiseless ideal continuous validation remains possible; Xi's separate total-energy model retains its per-input certificate. These synthetic acquisition results do not change Atlas territory states or masses.
 
 - **FrontierFertilityEpisodes = 30.0%**
 - **BarrierRate = 55.0%**

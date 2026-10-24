@@ -583,3 +583,4 @@ This stable projection inventories every current canonical Arithmetic Fidelity f
 - [[research/arithmetic_fidelity/findings/AF-577-unknown-polynomial-calibration-separates-continuous-randomness-from-finite-certification|AF-577]]
 - [[research/arithmetic_fidelity/findings/AF-578-continuous-randomness-retains-fixed-budget-polynomial-calibration-obstruction|AF-578]]
 - [[research/arithmetic_fidelity/findings/AF-579-unbounded-query-locations-preserve-polynomial-budget-obstruction|AF-579]]
+- [[research/arithmetic_fidelity/findings/AF-580-positive-noise-destroys-finite-stopping-under-unknown-polynomial-calibration|AF-580]]

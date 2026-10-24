@@ -478,3 +478,4 @@ This stable projection inventories every current canonical Prime Lattice finding
 - [[research/prime_lattice/findings/PL-468-fixed-profile-sparse-overwrites-force-a-natural-boundary|PL-468]]
 - [[research/prime_lattice/findings/PL-469-positive-sparse-block-sources-retain-negative-pole-residues|PL-469]]
 - [[research/prime_lattice/findings/PL-470-positive-source-strip-growth-and-the-infinite-pole-tail-gate|PL-470]]
+- [[research/prime_lattice/findings/PL-471-sparse-zero-annihilators-force-prime-variance-on-every-large-block|PL-471]]

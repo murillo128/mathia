@@ -2,7 +2,7 @@
 id: RA-frontier-telemetry-v1
 type: riemann-atlas-frontier-telemetry
 atlas_version: 1
-prospective_source_cutoff: 6140afa5cce42e087bbf5378c02a967f1a0216a3
+prospective_source_cutoff: 2a12ef1e9a3ce0ab7fc1209575a271f27669a9ad
 derived: true
 ---
 
@@ -18,11 +18,11 @@ Semantic inspection is selective. Complete structural memberships do not imply c
 
 ## Calibration-resource boundaries
 
-[[research/graph/relations/calibration-class-and-randomized-stopping|The calibration-class mechanism]] supports two distinct resource questions. AF-579 extends AF-578's finite-cap polynomial obstruction to every finite location on the real ray, after verifying the compactified gaps' endpoint regularity. The sharp noiseless law e + c_m q_N ≥ c_m, c_m = 1−1/m, survives. The full-ray noise radius d(S)/4 is nevertheless positive for a fixed finite source set; this separate full-curve statement does not provide a uniform finite bank or a noisy stopping theorem. AF-577's per-input exact continuous validation and finite-bit obstruction remain intact.
+[[research/graph/relations/calibration-class-and-randomized-stopping|The calibration-class mechanism]] supports two distinct resource questions. AF-579 extends AF-578's finite-cap polynomial obstruction to the whole ray while retaining a positive full-curve noise radius d(S)/4. AF-580 now closes the positive-noise variable-stopping question: for fixed supremum-bounded errors of allowance ε>0, e_ε ≥ c_m Pr_x(return), c_m=1−1/m, on every strict-slack input and every continuous-error input. Exact matching on exhausting compact windows covers arbitrary continuous randomness and unbounded input-dependent query counts. Almost-sure return on even one noiseless input forces blind-guess worst-case error over the noisy class. Smooth compactly supported errors suffice against noiseless references; analytic errors, common derivative/support bounds and arbitrary discontinuous saturated reference errors are not covered. Full-curve uniqueness below d(S)/4 survives, as does AF-577's exact continuous validation at zero noise.
 
 XF-207 extends XF-206's noiseless holomorphic obstruction to arbitrary finite complex value queries. Hermite interpolation replaces the even-power witness, which fails at reflected nodes. A compact baseline bound M still leaves admissible coefficient room when M > ‖F‖_K/2. Capped error 1/2 and sharp tail 1−2α persist; XF-203's real-axis per-input certificate is still allowed. A supplied exact derivative or contour integral, positive slack floor, or bound excluding the midpoint is a different information class. The restricted supplied scalar class retains its one-query noiseless test.
 
-These are domain refinements of the same two calibration-resource questions, so their existing `new-barrier` episodes are updated rather than counted again. AF's positive full-ray norm margin is retained in that episode's basis instead of being hidden by the barrier label. The classical coordinate/interpolation methods do not establish the source-specific admissibility or testing claims. No exact Atlas leaf is assigned to these synthetic acquisition interfaces, and no territory mass or state changes.
+The positive-noise result refines the same polynomial-calibration resource question, so its existing `new-barrier` episode is updated rather than counted again; the Jacobi episode is unchanged. AF's positive full-ray norm margin remains explicit. Global MI-039 compares the norms without transferring the theorem: Xi's chord contrast has decreasing ℓ² coefficient norm as the row count grows, whereas its ℓ¹ norm does not decrease under AF's supremum-error model. Classical approximation and hidden-perturbation impossibility are prior art; the source proves its own admissibility and finite-label return bound. No exact Atlas leaf is assigned to these synthetic acquisition interfaces, and no territory mass or state changes.
 
 The retained window and ratios are unchanged. Membership, native-link formatting, synthesis and prior-art registration contribute no episodes. The sample remains selective; other current source changes have not been semantically classified in this bounded reconciliation.
 

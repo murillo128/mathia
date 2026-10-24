@@ -268,3 +268,4 @@ This stable projection inventories every current canonical Robin Extremal findin
 - [[research/robin_extremal/findings/RE-259-zero-density-removes-critical-robin-moment-boundary|RE-259]]
 - [[research/robin_extremal/findings/RE-260-infinite-unit-prime-shifts-preserve-exact-mertens-matching-but-remain-robin-stable|RE-260]]
 - [[research/robin_extremal/findings/RE-261-exact-mertens-matching-has-a-sharp-counting-discrepancy-robin-threshold|RE-261]]
+- [[research/robin_extremal/findings/RE-262-balanced-integer-mertens-repairs-force-prime-chain-or-quadratic-support|RE-262]]
