@@ -1,6 +1,6 @@
 # RE-261 — Exact Mertens matching has a sharp counting-discrepancy Robin threshold
 
-**Status:** EXACT-DERIVED + SHARP-SOURCE-STABILITY + DISCRETE-REAL-LABEL-REALIZATION + CLASSICAL-DISCREPANCY-MECHANISM; independent adversarial review pending.
+**Status:** EXACT-DERIVED + SHARP-SOURCE-STABILITY + DISCRETE-REAL-AND-INTEGER-LABEL-REALIZATION + CLASSICAL-DISCREPANCY-MECHANISM; independent adversarial review pending.
 
 **Dependencies:** RE-169 (Mertens compensation), RE-154 (post-selector relocation scale), RE-258 (prime-cell counting bound), RE-260 (infinite exact matching with unit shifts). The only prime-distribution input to sharpness is the classical PNT.
 
@@ -11,7 +11,7 @@ Prime-cell interlacing and unit displacement impose strong source fidelity. The 
 \tag{1}
 \]
 
-The upper bound covers infinite sources; finite, cardinality-preserving real-label transports already establish sharpness. Near equality forces a specific two-phase counting profile around \(2p\). Thus exact normalization does not improve the critical counting scale \(K\asymp\sqrt p/\log p\), although it constrains how the excursion and its compensation must be arranged. This is a synthetic-source theorem, not an estimate for the ordinary-prime Robin tail.
+The upper bound covers infinite sources; finite, cardinality-preserving real-label transports already establish sharpness. The same sharp constant holds for distinct **integer** labels: a finite integer packet followed by infinitely many unit prime shifts realizes exact normalization without increasing the counting budget. Near equality forces a specific two-phase counting profile around \(2p\). Thus exact normalization does not improve the critical counting scale \(K\asymp\sqrt p/\log p\), although it constrains how the excursion and its compensation must be arranged. This is a synthetic-source theorem, not an estimate for the ordinary-prime Robin tail.
 
 ## 1. Source class and finite-height bound
 
@@ -139,6 +139,121 @@ The second term of (10) is \(O(K/(pL))\). Hence
 \]
 For every fixed \(M\), this proves the corresponding lower bound for the supremum in (13). Taking the limit inferior in \(p\) first and then letting \(M\to\infty\) gives \(1/2\). Together with (6), this proves (13). No uniform prime theorem on a growing \(Mp\)-shell and no infinite discrete source limit is needed for this order of limits.
 
+### Integer labels attain the same sharp norm through infinite completion
+
+Let \(\mathcal C^{\mathbb Z}_{p,K}\) be the subclass of (2) with
+\(Q\subset\{2,3,\ldots\}\), still with no repeated labels. Under (12),
+\[
+\boxed{\sup_{Q\in\mathcal C^{\mathbb Z}_{p,K}}\sup_{U\ge p}|E_Q(U)|
+=\left(\frac12+o(1)\right)\frac Kp.}
+\tag{18a}
+\]
+This remains true with any prescribed frozen prefix \(T=p+o(p)\),
+\(T\ge p\). The witnesses below have infinitely many changed labels;
+finite integer-label sharpness is not asserted.
+
+Fix \(M>1\) and \(c_M\) as in (14). Replace the early real packet by the
+first \(K\) even integers strictly larger than \(T\), denoted \(a_i\).
+Then \(a_i=p+o(p)\) uniformly, since \(K=o(p/L)\). Delete \(2K\)
+ordinary primes \(r_i=c_Mp+o(p)\), whose availability follows from the
+same fixed-relative-neighborhood PNT argument used above. For large
+\(p\) the packets are disjoint and ordered. Define
+\[
+D=\sum_{i=1}^{2K}f(r_i)-\sum_{i=1}^Kf(a_i)
+  =(1+o(1))\frac K{Mp}>0,
+\qquad
+F(n)=\sum_{i=1}^K f(2(n+i)).
+\tag{18b}
+\]
+Choose the integer \(n\) with \(F(n)\ge D>F(n+1)\), and insert the
+\(K\) even integers \(b_i=2(n+i)\). Bracketing as in (16) gives
+\(2n=Mp(1+o(1))\). The finite Euler-log correction is
+\(\delta=F(n)-D\), and the step size telescopes:
+\[
+0\le\delta<F(n)-F(n+1)
+=f(2(n+1))-f(2(n+K+1))
+=O_M(K/p^2).
+\tag{18c}
+\]
+The last bound follows by integrating \(-f'(t)=1/[t(t-1)]\) over an
+interval of length \(2K\) at height \(Mp(1+o(1))\). In particular the
+error is \(O(K/p^2)\), rather than a separate uncontrolled rounding
+error for each continuous compensator.
+
+In fact \(\delta>0\). The rational number
+\[
+C=\frac{\prod_i a_i/(a_i-1)\prod_i b_i/(b_i-1)}
+        {\prod_i r_i/(r_i-1)}=e^\delta
+\tag{18d}
+\]
+has strictly positive 2-adic valuation: all inserted labels are even,
+their predecessors are odd, and all removed primes are odd. Thus
+\(C\ne1\); together with the chosen bracket this proves strict
+positivity. This is only a finite-product valuation argument.
+
+Set \(H=2Mp\), beyond every altered finite label for large \(p\).
+For ordinary primes \(s>H\), put
+\[
+\beta_s=f(s)-f(s+1)=\log\frac{s^2}{s^2-1},\qquad
+B(H)=\sum_{s>H}\beta_s\sim\frac1{H\log H}.
+\tag{18e}
+\]
+The asymptotic follows from \(\beta_s=s^{-2}+O(s^{-4})\) and the PNT
+by partial summation. Also
+\(\beta_s/\sum_{r>s}\beta_r\sim(\log s)/s\to0\), so every sufficiently
+late term is at most its remaining tail. Therefore Kakeya's subsum
+interval criterion gives every number in \([0,B(H)]\) as a sum of a
+subset of the \(\beta_s\)'s. The elementary argument is to retain the
+residual in the interval from zero to the remaining total: omit a
+term if the later tail can still cover the residual, and include it
+otherwise. Tail domination makes either chosen residual nonnegative;
+the remaining total tends to zero.
+
+The capacity comparison is decisive:
+\[
+\frac{\delta}{B(H)}=O_M(KL/p)=o(1).
+\tag{18f}
+\]
+Choose a subset \(S\) of the primes above \(H\) with
+\(\sum_{s\in S}\beta_s=\delta\), and replace each such \(s\) by
+\(s+1\). All these labels are even, above the finite packets, and
+distinct. Distinct odd primes differ by at least two, so any subset
+of these upward unit shifts preserves strict order and has counting
+discrepancy in \(\{-1,0\}\). No real-label adjustment or duplicated
+atom remains.
+
+The finite packets make \(A\) rise from zero to \(K\), fall to
+\(-K\), then return to zero before \(H\). The tail adds only disjoint
+negative unit pulses on \([s,s+1)\). Consequently \(|A(t)|\le K\)
+on the entire ray, including \(K=1\). Absolute convergence of
+\(\sum\beta_s\), or equivalently (7), now yields
+\[
+\Gamma(Q)-\gamma=\delta-\sum_{s\in S}\beta_s=0.
+\tag{18g}
+\]
+For completeness, a cutoff can split at most one shifted pair, whose
+unmatched Euler-log contribution is \(O(1/x)\). Thus passing from
+paired sums to the cutoff definition of \(\Gamma\) does not change
+the limit.
+
+The compensating set \(S\) must be infinite. Each finite upward-shift
+ratio \((s^2-1)/s^2\) has positive 2-adic valuation, as does \(C\).
+No product of \(C\) with finitely many such ratios can equal one.
+Their convergent infinite product can equal one in the real topology;
+there is no claim of 2-adic convergence.
+
+At \(U_p=\min_i r_i-1/2\), only the early packet is present. Since
+every \(a_i=p+o(p)\), (17)--(18) apply unchanged:
+\[
+E_Q(U_p)=-\frac Kp\left(\frac{M-1}{2M}+o(1)\right).
+\tag{18h}
+\]
+The infinite correction cannot alter this earlier measurement.
+Take the limit inferior in \(p\) at fixed \(M\), then let
+\(M\to\infty\), and combine with (6). This proves (18a) without a
+uniform PNT on a growing shell or a numerical approximation to an
+infinite exact product.
+
 ## 3. The sharp threshold and near-extremizer geometry
 
 Multiplying (13) by \(\sqrt pL\) proves (1). Within (12), the worst-case normalized discrepancy tends to zero **if and only if**
@@ -146,7 +261,7 @@ Multiplying (13) by \(\sqrt pL\) proves (1). Within (12), the worst-case normali
 K\log p/\sqrt p\longrightarrow0.
 \tag{19}
 \]
-At \(K\sim a\sqrt p/L\), its supremum tends to \(a/2\). This sharpens the qualitative distinction between the stable prime-cell/unit-shift classes and the larger relocation classes: exact Mertens matching alone does not remove the counting threshold.
+At \(K\sim a\sqrt p/L\), its supremum tends to \(a/2\). By (18a), both conclusions hold also for the distinct-integer-label subclass. This sharpens the qualitative distinction between the stable prime-cell/unit-shift classes and the larger relocation classes: exact Mertens matching alone does not remove the counting threshold.
 
 There is also a necessary shape for asymptotically maximal excursions. Suppose \(Q_p\in\mathcal C_{p,K}\) and finite \(U_p\ge p\) satisfy
 \[
@@ -175,15 +290,42 @@ The general mechanism is classical one-dimensional discrepancy/variation duality
 
 The line-local delta is the **sharp Mertens-conditioned Robin norm over admissible discrete sources**, including its finite real-label realization and necessary near-extremizer geometry. RE-154 establishes the relocation scale but not this optimal norm under exact normalization. RE-169 supplies the compensation identity but not a counting-budget extremum. RE-258 and RE-260 establish narrower positional stability and injectivity boundaries; their hypotheses do not classify growing counting budgets. RE-173 permits infinite prime multiplicities and RE-256 constructs local real-label compensation, without the optimal all-height counting-norm statement. The literature comparison does not establish a globally new discrepancy theorem.
 
+The integer realization uses the classical subsum interval criterion
+recorded by J. E. Nymann, [*Linear combinations of Cantor sets*,
+Colloquium Mathematicum **68** (1995), 259--264](https://doi.org/10.4064/cm-68-2-259-264),
+p. 259, attributed there to Kakeya. The criterion and its proof are
+not new. RE-260 applies it to a globally unit-shifted, uniformly stable
+source. Here the separate finite packet creates the large excursion;
+the infinite unit-shift tail absorbs only its integer rounding debt.
+Equation (18f) checks that this splice works throughout the same
+\(K=o(p/L)\) regime without using an extra counting unit. RE-257's
+integer rigidity assumes all alterations are confined to a finite
+subdyadic interval, whereas this correction is necessarily unbounded.
+The strengthened realization rules out integrality and distinctness
+as repairs of the sharp counting-norm obstruction; it does not claim
+a new general subsum or Mertens theorem.
+
 The proof is analytic and exact. As a supplementary sign/endpoint check, a 65-digit decimal calculation constructed the three packets with \(M=8\), \(T=p+p^{3/5}\), \(K=\lfloor\sqrt p/\log p\rfloor\), and \(p=1009,10007,100003,1000003\). It checked the counting bound and equality between the atom-sum and (10), with residuals below \(10^{-60}\), and satisfied (5). Those finite floating-point checks are not interval certificates or evidence of the asymptotic theorem; the exact root argument, PNT availability, and inequalities above supply that proof.
+
+For the integer realization, 27 finite packet checks used
+\(p\in\{1009,10007,100003\}\), \(M\in\{2,4,8\}\),
+\(T=p+\lfloor p^{3/5}\rfloor\), and
+\(K\in\{1,\lfloor\sqrt p/L\rfloor,\lfloor p/L^2\rfloor\}\).
+Exact rational arithmetic verified the strict Euler-product bracket,
+positive 2-adic valuation, distinct labels and counting budget.
+At 70 decimal digits the atom and counting formulas agreed within
+\(10^{-65}\), and the finite unit-shift capacity from primes in
+\((H,2H)\) exceeded the rounding debt in every case. These decimal
+comparisons are supplementary, not interval certificates. No finite
+calculation certifies the infinite exact match; (18e)--(18g) prove it.
 
 Important boundaries:
 
-- The sharpness sources use real labels. This does not contradict finite integer prime-cell rigidity or finite ordinary-prime Euler-factor rigidity. Sharpness within either narrower integer class is not asserted.
+- Finite sharpness witnesses use real labels; the distinct-integer witnesses require the infinite correction constructed above. Neither construction satisfies the original-prime-cell restriction. Finite integer prime-cell rigidity and finite ordinary-prime Euler-factor rigidity remain intact, and finite integer-label sharpness is not asserted.
 - Infinite modifications are allowed in the upper bound because bounded \(A\) proves the needed convergence. No finite-support valuation argument is passed to an infinite product.
 - Exact Mertens matching is essential for the smaller complementary-mass bound in (5); without it the zero integral in (8) is absent.
 - The longer frozen prefix may be any \(T=p+o(p)\), including one beyond the known first-annulus localization scale. This is positional source agreement, not a new actual CA state or an altered ordinary divisor sum.
 - At the critical budget \(K=O(\sqrt p/L)\), (9) gives a discrepancy from ordinary Chebyshev data of \(O(K\log t)\), smaller than every fixed KV relative envelope for \(t\ge p\) as \(p\to\infty\). This is fidelity of the *difference* and does not upgrade the KV constant available for ordinary primes.
 - A zero full-tail difference does not force each truncated integral to vanish. Conversely the supremum over synthetic sources is not a lower bound for an actual ordinary-prime excursion.
 
-**Research consequence:** an independent argument forcing counting fidelity \(o(\sqrt p/\log p)\) would suffice for uniform Robin stability even with infinitely many changes. At the critical scale, exact Mertens fidelity and a longer \(p+o(p)\) frozen prefix still allow a finite, source-realized excursion. The arithmetic task remains to justify stronger fidelity or a signed restriction for actual CA-selected primes; no Robin inequality or RH conclusion follows here.
+**Research consequence:** an independent argument forcing counting fidelity \(o(\sqrt p/\log p)\) would suffice for uniform Robin stability even with infinitely many changes. At the critical scale, exact Mertens fidelity and a longer \(p+o(p)\) frozen prefix still allow a finite-height, source-realized excursion, even with distinct integer labels. The composite integer labels remain synthetic Euler atoms; their factors \(q/(q-1)\) are not the ordinary divisor-sum contributions of those composite integers. The arithmetic task remains to justify stronger fidelity or a signed restriction for actual CA-selected primes; no Robin inequality or RH conclusion follows here.

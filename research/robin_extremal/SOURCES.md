@@ -67,7 +67,7 @@ This file records durable literature dependencies for `research/robin_extremal/`
 
 ## Subsum compensation
 
-- J. E. Nymann, *Linear combinations of Cantor sets*, Colloquium Mathematicum **68** (1995), 259–264, DOI `10.4064/cm-68-2-259-264`. Page 259 records Kakeya's classical subsum interval criterion: a positive summable sequence whose terms do not exceed their remaining tails has every intermediate subsum. `RE-260` reconstructs this argument for the summable changes of Euler factors under unit prime shifts, giving an exact interval of Mertens constants and nontrivial infinite exact matching; the subsum theorem itself is not claimed as new.
+- J. E. Nymann, *Linear combinations of Cantor sets*, Colloquium Mathematicum **68** (1995), 259–264, DOI `10.4064/cm-68-2-259-264`. Page 259 records Kakeya's classical subsum interval criterion: a positive summable sequence whose terms do not exceed their remaining tails has every intermediate subsum. `RE-260` reconstructs this argument for the summable changes of Euler factors under unit prime shifts, giving an exact interval of Mertens constants and nontrivial infinite exact matching. `RE-261` uses the same tail to absorb integer-packet rounding debt while retaining the sharp counting-budget norm with distinct integer labels; the subsum theorem itself is not claimed as new.
 
 ## Counting discrepancy and variation
 
