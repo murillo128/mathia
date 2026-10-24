@@ -352,3 +352,10 @@ AF-577 applies classical interpolation and identity-testing ideas to the unknown
 - De Boor's *Divided Differences* (2005), already listed under AF-571, §§1 and 8, equation (44), supplies the uniform Newton-coefficient bound, including coalescing-node limits.
 
 AF-578 derives a bounded interpolation-energy certificate that makes every fixed-query polynomial-calibration experiment approach a label-independent transcript law. It establishes exact blind-guess minimax error even for continuous-real randomized adaptive policies, and the sharp uniform stopping-tail tradeoff where AF-577's per-input continuous-random recovery applies. The methods are classical; the source-quotient conclusion and prime-edit instantiation are derived, with no general novelty or RH claim.
+
+## AF-579 — Unbounded-domain polynomial calibration and full-curve separation
+
+- Peter J. Olver, **Classical Invariant Theory**, London Mathematical Society Student Texts 44, Cambridge University Press (1999), Chapter 2, pp. 13–14, equations (2.4)–(2.7), Theorem 2.2; [monograph](https://www.math.utoronto.ca/~ila/ClassicalInvariantTheory.pdf). Role: classical homogeneous-polynomial action under linear coordinate changes and its fractional-linear affine coordinate form. AF-579 specializes this to the exact degree-dependent polynomial bijection for compactifying the positive ray.
+- The divided-difference, Gaussian conditioning and adaptive-testing sources under AF-578 supply the bounded-window minimax ingredient. AF-571 supplies analytic continuation of the prime-edit profiles through zero; AF-577 and AF-568 supply the ordered source gaps and constant-offset full-curve geometry.
+
+AF-579 proves all-derivative exponential decay of each fixed prime-edit gap at infinity, validates the compactified experiment, and separates positive full-ray noise margin from blind-guess minimax error at every finite adaptive query cap. The ingredients are classical; no general approximation, invariant-theory, or RH novelty is claimed.
