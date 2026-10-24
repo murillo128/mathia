@@ -482,3 +482,9 @@ Role: classical pole-to-smoothed-asymptotic mechanism for MC-525. That finding p
 Pierre Lissy, *Construction of Gevrey functions with compact support using the Bray–Mandelbrojt iterative process and applications to the moment method in control theory*, Mathematical Control and Related Fields 7 (2017), no. 1, 21–40. DOI: https://doi.org/10.3934/mcrf.2017002. Author manuscript: https://cermics.gitlab.enpc.fr/lissy/Publi/upper.pdf, especially §2 and §3.2, Proposition 1.
 
 Role: compact nonnegative Gevrey bumps of every order `q>1` and the classical use of their Fourier decay to dominate canonical-product growth. MC-528 proves its own multiplicity-aware derivative-series construction, strip decay, reciprocal-zeta division bound, and finite box transfer. Lissy's control-theory spectral assumptions and quantitative control costs are not imported into the zeta argument.
+
+## MC-S80 — NIST DLMF, Bernoulli inversion and asymptotic truncation
+
+NIST Digital Library of Mathematical Functions, §24.2(i), especially equation 24.2.1 (Bernoulli generating function), https://dlmf.nist.gov/24.2; and §2.11 (remainder terms and exponentially improved expansions), https://dlmf.nist.gov/2.11.
+
+Role: classical provenance for the coefficients of `z/(1-exp(-z))` and the truncation principle in MC-529. The finding proves its own remainder uniform in order and window ratio, preserves the multiplicity-aware test's Gevrey order, and controls the bounded combined test in the Möbius coefficient domain. The source does not assert the Möbius variance floor or its sparse-scale RH equivalence.

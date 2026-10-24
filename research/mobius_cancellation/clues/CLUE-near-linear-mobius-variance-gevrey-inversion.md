@@ -1,7 +1,7 @@
 ---
 id: CLUE-mobius-cancellation-near-linear-variance-gevrey-inversion
 type: research-clue
-status: proposed
+status: resolved
 origin: master-researcher
 target_line: mobius_cancellation
 based_on:
@@ -63,3 +63,23 @@ This would replace a family of fixed-power selected-scale premises approaching e
 ## Evidence boundary
 
 PL-472 proves the near-linear statement for its prime logarithmic derivative. MC-528 proves the multiplicity-aware Möbius result at fixed power windows. Their near-linear reciprocal combination and the displayed single-law criterion remain questions here. No variance upper bound, new cancellation estimate, effective test acquisition, sharp boundary at `B=1`, zero-simplicity conclusion, external novelty or RH proof is asserted. A successful transfer would be a conditional criterion with an unpaid arithmetic premise.
+
+## Research disposition
+
+Outcome: supported
+
+Resolved by:
+
+- [[research/mobius_cancellation/findings/MC-529-single-near-linear-centered-variance-law-is-equivalent-to-rh]]
+
+MC-529 reconstructs the Gevrey-order preservation and uniform finite
+Bernoulli remainder for MC-528's multiplicity-aware reciprocal test.
+The stated floor holds uniformly for every integer
+`1<=H<=X/(log X)^B`, for each fixed `B>1`. For one such `B`, the
+epsilon-loss ceiling at `H_B(X)` on any unbounded real scale set is
+equivalent to RH, with the converse supplied by MC-520 and the
+nonincrease of a second moment under empirical centering. This is a
+direct specialization of the two persisted arguments, not a new
+arithmetic upper bound or an external novelty claim. The growing
+measurement order, all-zero-dependent constants and unresolved
+`B=1`/macroscopic-window regimes remain explicit boundaries.
