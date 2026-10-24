@@ -1,6 +1,6 @@
 # ANF-198 — Fejér profiles force vanishing real improvement amplitudes
 
-**Status:** EXACT-DERIVED + NEGATIVE/OBSTRUCTION + VARYING-PROFILE + REAL-LATTICE-CONTROL + NONCOMMUTING-LIMITS. ANF-197 classifies exactly zero source-zero exposure as a source rescaling. That classification does not give a uniform stability modulus or a uniform improving amplitude for profiles with small positive exposure. Even profiles converging in every finite \(L^p\) norm to a fixed nonzero rescaling, with uniformly converging Fourier transforms and with each profile in \(H^1\), can have real near-extremizers whose notch exposure tends to the full source budget. The construction uses the classical Fejér kernel; the consequence concerns the quantifiers in ANF-195 and ANF-197, not a new Fourier kernel.
+**Status:** EXACT-DERIVED + NEGATIVE/OBSTRUCTION + VARYING-PROFILE + REAL-LATTICE-CONTROL + NONCOMMUTING-LIMITS + NARROW-SUPPORT-BOUNDARY. ANF-197 classifies exactly zero source-zero exposure as a source rescaling. That classification does not give a uniform stability modulus or a uniform improving amplitude for profiles with small positive exposure. Even profiles converging in every finite \(L^p\) norm to a fixed nonzero rescaling, with uniformly converging Fourier transforms and with each profile in \(H^1\), can have real near-extremizers whose notch exposure tends to the full source budget. The construction uses the classical Fejér kernel; the consequence concerns the quantifiers in ANF-195 and ANF-197, not a new Fourier kernel. The two uniformity failures separate on sufficiently narrow fixed central support: the modulus still fails, but a common positive improving amplitude exists for every nonzero dominated positive-Fourier profile on that support.
 
 ## Statement and conventions
 
@@ -290,6 +290,145 @@ For every fixed \(0<t<1\), the floors converge to \(1-t\), whereas their
 right derivatives at zero converge to \(-c\). The profile limit,
 near-extremizer limit and small-amplitude limit cannot be interchanged.
 
+## Narrow fixed support separates the modulus from amplitude selection
+
+Fix
+\[
+0<\eta<\min\{1/2,1/(8C_0)\},\qquad
+a:=\frac{8\eta+1/C_0}{2}\in(8\eta,1/C_0).
+\tag{24}
+\]
+There exists \(t_\eta>0\), depending only on this fixed support width and
+the source, such that **every** nonzero continuous real even profile with
+\[
+\operatorname{supp}\phi\subset[-\eta,\eta],\qquad
+0\le\phi\le J_0,\qquad \widehat\phi\ge0
+\tag{25}
+\]
+has, for every \(0<t\le t_\eta\), the real affine certificate
+\[
+\boxed{\quad
+q_\phi^{\mathbb R}(t)\ge1-t a\phi(0)
+\ge1-t\frac{C(\phi)}{C_0}
+       +t\phi(0)(1/C_0-a)
+>1-t\frac{C(\phi)}{C_0}.
+\quad}
+\tag{26}
+\]
+Here \(q_\phi^{\mathbb R}\) is (20) with \(\phi\) in place of
+\(\phi_{N,R}\). No derivative bound, Fourier-tail bound uniform in
+\(\phi\), or lower bound on \(\phi(0)\) is required. The absolute
+improvement need not stay bounded away from zero as \(\phi(0)\to0\).
+The constant in (24) is sufficient, not asserted sharp.
+
+**A single tent majorizes the whole class.** Write \(p=\phi(0)\).
+Fourier nonnegativity gives the classical peak inequality
+\(0\le\phi(\alpha)\le p\), with \(p>0\) for a nonzero profile.
+For completeness, Gaussian inversion and monotone convergence give
+\[
+\int\widehat\phi(t)\,dt
+=\lim_{R\to\infty}\int\phi(u)R e^{-\pi R^2u^2}\,du=p.
+\]
+Continuity at zero identifies the last limit. Fourier inversion then
+gives \(|\phi(\alpha)|\le\int\widehat\phi=p\). Thus there is no
+assumption about choosing point values of an almost-everywhere profile.
+
+Choose one \(b>0\) so that the wider tent
+\[
+\tau(\alpha)=b(1-|\alpha|/(2\eta))_+\le J_0(\alpha).
+\]
+Such a \(b\) exists because \(2\eta<1\) and \(J_0\) is strictly
+positive on \([-2\eta,2\eta]\). It is fixed independently of \(\phi\).
+On the support of \(\phi\), the tent is at least \(b/2\); outside
+that support \(\phi=0\). Consequently
+\[
+\phi\le(2p/b)\tau,\qquad
+h_\phi(W)\le(2p/b)h_\tau(W).
+\tag{27}
+\]
+This is pointwise spectral domination, so (27) itself also holds for
+complex configurations. The subsequent envelope input is real-only.
+
+ANF-195's exact real envelope for this **one fixed tent** gives
+\[
+\beta_\tau^{\mathbb R}
+=\widehat\tau(0)+\max_j\widehat\tau(r_j)
+\le4b\eta<ba/2.
+\tag{28}
+\]
+The bound uses \(\widehat\tau(t)=2b\eta\operatorname{sinc}^2(2\eta t)
+\le2b\eta\). Hence some \(\varepsilon_\eta>0\), independent of
+\(\phi\) and of the real multiset, satisfies
+\[
+e(W)\le\varepsilon_\eta
+\quad\Longrightarrow\quad
+h_\tau(W)\le ba/2,
+\quad h_\phi(W)\le pa.
+\tag{29}
+\]
+Take
+\(t_\eta=\min\{1/2,\varepsilon_\eta/(1+\varepsilon_\eta)\}\).
+For \(e\le\varepsilon_\eta\), (29) gives
+\(1+e-t h_\phi\ge1-tpa\). For \(e>\varepsilon_\eta\), use only
+\(\phi\le J_0\):
+\[
+1+e-t h_\phi\ge(1-t)(1+e)\ge1\ge1-tpa.
+\tag{30}
+\]
+Taking the infimum and using \(C(\phi)\ge\phi(0)=p\) proves (26).
+Also \(C(\phi)/C_0\le1\) by domination, so these amplitudes and
+floors lie in the positive admissible range.
+
+**The real exposure modulus still fails on the same narrow support.**
+Choose a fixed nonzero dominated tent
+\(u(\alpha)=b_0(1-|\alpha|/\eta)_+\), and put
+\[
+\chi_{N,R}(\alpha)=u(\alpha)|D_N(R\alpha)|^2/N^2.
+\tag{31}
+\]
+These profiles satisfy (25), all have \(\chi_{N,R}(0)=b_0\), and
+belong individually to \(H^1\). The positive shifted-transform argument
+(10)--(12), now with \(U(t)=b_0\eta\operatorname{sinc}^2(\eta t)\),
+gives uniformly in integer \(R\ge1\)
+\[
+\|\widehat\chi_{N,R}\|_\infty=O_\eta(N^{-1}),\qquad
+\beta_{\chi_{N,R}}^{\mathbb R}=O_\eta(N^{-1}).
+\tag{32}
+\]
+At the same source near-extremizers \(W_{m,R}\), \(m\ge N\),
+the exact constant coefficient from (17) instead yields
+\[
+h_{\chi_{N,R}}(W_{m,R})
+=b_0\eta\left[1-\frac{N^2-1}{3mN}\right]+O_\eta(R^{-2}).
+\tag{33}
+\]
+To check uniformity of the remainder, every Fourier coefficient of
+\(|D_N|^2|D_m|^2/(mN^2)\) is nonnegative and at most one:
+its defining convolution is bounded by
+\(m\sum_{|k|<N}(N-|k|)/(mN^2)=1\).
+The nonconstant terms therefore sum to at most
+\(\sum_{l\ne0}U(lR)=O_\eta(R^{-2})\), independently of \(N,m\).
+
+Take \(m=N^2\), \(N\to\infty\), and integers \(R_N\to\infty\).
+Then \(e(W_{m,R_N})\to0\), \(M_{\chi_{N,R_N}}\to0\), and
+\(\beta_{\chi_{N,R_N}}^{\mathbb R}\to0\), but the exposure tends to
+\(b_0\eta>0\). Thus proper central support alone does not restore a
+profile-uniform near-extremizer modulus. Nevertheless (26) supplies
+one common amplitude for all these profiles. The distinction is the
+analytic threshold: \(C(\chi_{N,R})/C_0\to b_0/C_0>b_0\eta\),
+since \(\|\chi_{N,R}\|_1=O_\eta(N^{-1})\). The surviving exposure
+does not reach the cost threshold.
+
+This support boundary is an elementary domination consequence of
+ANF-195, not a new extremal-function theorem. The classical
+positive-definite peak inequality is recorded in Remark 1 of
+[Kolountzakis--Révész, *On pointwise estimates of positive definite
+functions with given support*](https://eigen-space.org/ps/posdef.pdf).
+Their sharper Boas--Kac/Turán support extremals are not needed here.
+The local addition distinguishes uniform amplitude selection from
+uniform convergence to each profile's envelope. It neither identifies
+the largest admissible support width nor controls complex near-extremizers.
+
 ## Prior art, falsification controls and consequence
 
 The Fejér polynomial (9), its positivity and its concentration are
@@ -320,7 +459,10 @@ The controls distinguish this result from nearby claims:
   finite-\(L^p\) convergence itself.
 - The profiles occupy the full source support and have oscillations
   throughout it. They are not the fixed proper central triangular notch
-  of the accepted exposure-envelope clue. That complex-envelope question
+  of the accepted exposure-envelope clue. Equations (24)--(33) show
+  exactly what changes under sufficiently narrow fixed central support:
+  common real improving amplitudes survive even though profile-uniform
+  exposure convergence still fails. That complex-envelope question
   remains open; no clue disposition is changed.
 
 The decisive checks are the positive triangular coefficients in (10),
@@ -329,5 +471,8 @@ the exact integer source values (15), and the constant coefficient in
 \(m\in\{N,N+1,N^2\}\) verified the coefficient identity; evaluations at
 \(R\in\{1,2,8,32\}\) checked the energy inequalities in all 192 cases.
 These are arithmetic sanity checks, not the proof of the quantified result.
+For (33), 69 exact integer convolutions with \(2\le N\le24\) and
+\(m\in\{N,N+1,N^2\}\) also checked that every normalized coefficient
+lies in \([0,1]\), with the stated constant coefficient and total mass.
 No Lean certification, zero-density improvement, unconditional critical-line
 proportion improvement, or RH consequence is asserted.
