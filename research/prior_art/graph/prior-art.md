@@ -43,6 +43,10 @@ This derived view reconciles live Mathia research with the frozen issue-63 prior
 
 [[research/weil_positivity/findings/WP-318-scalar-julia-tangents-are-boolean-self-energies-of-derivative-biased-measures|WP-318]] identifies its pure-measure scalar Julia response with [[research/prior_art/incremental/PA-boolean-convolution-self-energy|Boolean self-energy]], using [[research/prior_art/incremental/PA-julia-nevanlinna-boundary-reduction|classical boundary reduction]]. The [[research/weil_positivity/graph/relations/scalar-julia-derivative-biased-laws|mechanism note]] preserves the finite/infinite-support qualifications and the separate arithmetic-law/coupling question.
 
+## Calibration testing and interpolation
+
+[[research/graph/relations/calibration-class-and-randomized-stopping|The calibration mechanism]] records AF-576 and XF-204's explicit use of [[research/prior_art/incremental/PA-le-cam-two-point-testing|two-point testing]], and AF-577's explicit comparison with [[research/prior_art/incremental/PA-polynomial-interpolation-early-termination|randomized interpolation early termination]]. The cited classical methods do not establish the Mathia-specific admissible witnesses or the continuous-real, zero-error oracle model.
+
 ## Shared prior-art convergence
 
 [[research/prime_circle/findings/PC-022-cyclic-cover-spectrum-has-exact-order-birth-layers|PC-022]] and [[research/prime_flute/findings/PF-044-one-gap-tangent-is-gamma2-and-zeta-scattering-is-universal|PF-044]] independently land on [[research/prior_art/incremental/PA-gamma-2-thrice-punctured-sphere-scattering|the same Gamma(2) scattering object]] and both classify its Riemann-zeta content as inherited/universal background rather than newly generated arithmetic signal.

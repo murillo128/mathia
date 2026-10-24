@@ -4,7 +4,7 @@
 
 EXACT-DERIVED · LITERATURE+DERIVED · ARITHMETIC-FIDELITY · ORACLE-MODEL-BOUNDARY · MATCHED-CONTROL · NO-GENERAL-NOVELTY-CLAIM
 
-AF-571 assumes a known polynomial calibration degree. AF-575/576 instead bound a derivative but leave its strict slack unknown. Neither addresses calibration that is a polynomial of some finite, **unknown and unbounded** degree, with no derivative or coefficient bound.
+[[research/arithmetic_fidelity/findings/AF-571-polynomial-drift-has-exact-small-window-probe-saturation|AF-571]] assumes a known polynomial calibration degree. AF-575/576 instead bound a derivative but leave its strict slack unknown. Neither addresses calibration that is a polynomial of some finite, **unknown and unbounded** degree, with no derivative or coefficient bound.
 
 In this different class, full curves identify the source exactly but no universally correct deterministic procedure can stop on any finite value transcript. Nevertheless, a continuously randomized exact-real oracle procedure identifies every fixed input almost surely, after at most the actual calibration degree plus two queries. The advantage disappears if a terminating computation must use only finitely many random bits: no such procedure can have both zero error and almost-sure finite termination on every input. Every positive uniform noise margin also disappears.
 
@@ -34,7 +34,7 @@ The following statements concern the same class (1).
 3. If all randomness comes from fair independent coin bits, and each terminating execution reads finitely many bits and makes finitely many queries, zero error and almost-sure finite termination on every input are impossible.
 4. Under arbitrary additive observation error \(\|\eta\|_\infty\le\varepsilon\), the uniform full-curve identification radius is zero.
 
-These statements do not assert a sharp fixed-budget minimax error or an optimal degree-dependent query count. They do not extend AF-576's smooth-nuisance testing lower bound to polynomial nuisances.
+These statements do not assert a sharp fixed-budget minimax error or an optimal degree-dependent query count. They do not extend [[research/arithmetic_fidelity/findings/AF-576-randomized-calibration-recovery-has-a-sharp-error-stopping-tail|AF-576]]'s smooth-nuisance testing lower bound to polynomial nuisances.
 
 ## Every finite deterministic transcript has another label
 
@@ -45,7 +45,7 @@ Suppose a policy stops on an admitted input \(y=F_i+b\). Write \(t_1,\ldots,t_k\
 \]
 The other admitted input \(F_j+c\) produces the same finite transcript. Induction over adaptive queries proves equality of every response, next coordinate, and stopping/output decision. Hence the policy cannot be correct on both inputs. Repeated queries add no constraints; a zero-query stop is equally ambiguous.
 
-Unlike AF-575's midpoint construction, this argument applies at **every actual input**, not only along an excluded limiting transcript. No derivative constraint must be preserved, so ordinary polynomial interpolation suffices. Imposing a known degree bound would invalidate this arbitrary-finite-transcript extension.
+Unlike [[research/arithmetic_fidelity/findings/AF-575-unknown-calibration-slack-requires-unbounded-sampling-depth|AF-575]]'s midpoint construction, this argument applies at **every actual input**, not only along an excluded limiting transcript. No derivative constraint must be preserved, so ordinary polynomial interpolation suffices. Imposing a known degree bound would invalidate this arbitrary-finite-transcript extension.
 
 ## One random validation value supports all degree tests
 
@@ -94,9 +94,9 @@ Use the registered generalized-prime controls from AF-559/570:
  \quad E_1(a)=\int_a^\infty e^{-v}\frac{dv}{v}.
 \tag{7}
 \]
-Here \(p\) is any odd rational-prime edit location. The positive Dirichlet series \(Q_p\) is analytic and strictly decreasing on \(s>1\), with range \((0,\infty)\). Its derivative never vanishes. Consequently \(\Phi_p\) is real analytic on \(a>0\). As \(a\downarrow0\), \(E_1(a)\to\infty\) and \(\Phi_p(a)\to1\), giving the required continuous endpoint extension. AF-570 gives the stronger analytic extension there, but that is unnecessary for this argument.
+Here \(p\) is any odd rational-prime edit location. The positive Dirichlet series \(Q_p\) is analytic and strictly decreasing on \(s>1\), with range \((0,\infty)\). Its derivative never vanishes. Consequently \(\Phi_p\) is real analytic on \(a>0\). As \(a\downarrow0\), \(E_1(a)\to\infty\) and \(\Phi_p(a)\to1\), giving the required continuous endpoint extension. [[research/arithmetic_fidelity/findings/AF-570-shrinking-windows-turn-affine-prime-edit-separation-into-curvature|AF-570]] gives the stronger analytic extension there, but that is unnecessary for this argument.
 
-For odd primes \(p<q\), AF-559's exact gap identity follows directly from
+For odd primes \(p<q\), [[research/arithmetic_fidelity/findings/AF-559-all-pair-prime-edit-separation-has-uniform-sharp-critical-window|AF-559]]'s exact gap identity follows directly from
 \[
  k(s):=h_p(s)-h_q(s)
  =s(s+1)\int_p^q\int_v^{v+1}u^{-s-2}\,du\,dv>0.

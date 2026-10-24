@@ -116,7 +116,7 @@ Applying (3) yields
 \]
 Then \(\sup_x\mathbb E_x\tau\ge N(1-2\alpha)\) for every \(N\), proving (5). This argument never interchanges a pointwise limit with a supremum over inputs.
 
-For the matching policy, use the noiseless exact certificate of AF-575. For completeness, let \(K=\|g^{(n+1)}\|_\infty\), and at scales \(h=A2^{-j}\) take the normalized divided difference \(D_h\) at \(n+1\) equally spaced positive nodes between \(h/(n+1)\) and \(h\). It has
+For the matching policy, use the noiseless exact certificate of [[research/arithmetic_fidelity/findings/AF-575-unknown-calibration-slack-requires-unbounded-sampling-depth|AF-575]]. For completeness, let \(K=\|g^{(n+1)}\|_\infty\), and at scales \(h=A2^{-j}\) take the normalized divided difference \(D_h\) at \(n+1\) equally spaced positive nodes between \(h/(n+1)\) and \(h\). It has
 \[
  |D_hb|\le\|b^{(n)}\|_\infty,\qquad D_hg\ge d-Kh.
 \tag{14}
@@ -164,7 +164,7 @@ Exact rational checks covered (6)–(8), the derivative joins and (18) for order
 
 ## Prior art and boundary
 
-Two-hypothesis testing through total variation is classical; [Yu (1997), *Assouad, Fano, and Le Cam*](https://web.stanford.edu/class/stats300a/REFS/yu1997assouad.pdf) describes that framework. Equation (11) is proved directly by coupling, without a minimax interchange over an infinite input class.
+[[research/prior_art/incremental/PA-le-cam-two-point-testing|Two-hypothesis testing through total variation]] is classical; [Yu (1997), *Assouad, Fano, and Le Cam*](https://web.stanford.edu/class/stats300a/REFS/yu1997assouad.pdf) describes that framework. Equation (11) is proved directly by coupling, without a minimax interchange over an infinite input class.
 
 [Kunsch, Novak and Rudolf (2019), *Solvable integration problems and optimal sample size selection*](https://doi.org/10.1016/j.jco.2018.10.007), [author manuscript, §§1, 3.1 and 3.4](https://arxiv.org/abs/1805.08637), already distinguish per-input finite expected cost from infinite worst-case cost. Proposition 3.13 uses transcript comparison and truncation of randomized adaptive algorithms; Theorem 3.15 uses rarely observed smooth perturbations. Their integration classes and targets differ from (2). Their unsolvability conclusion is not transferred here: the present binary problem has an exact per-input terminating procedure. Wasilkowski's varying-cardinality work, anchored under AF-575, is earlier background.
 

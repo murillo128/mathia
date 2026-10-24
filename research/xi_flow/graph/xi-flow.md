@@ -16,3 +16,7 @@ This is the structural hub for the initialized Xi Flow research line. Membership
 ## Canonical finding membership (structural)
 
 [[research/xi_flow/graph/xi-flow-membership|Xi Flow structural membership]]
+
+## Calibration and randomized stopping
+
+[[research/graph/relations/calibration-class-and-randomized-stopping|Calibration class and randomized stopping]] records the source-backed transfer and its nuisance-class, endpoint and noise restrictions.

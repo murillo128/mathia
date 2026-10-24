@@ -58,9 +58,11 @@ This is the derived root graph for Mathia research. Canonical findings and mind 
 
 - [[research/graph/relations/rh-mellin-variance-and-farey-capacity|RH Mellin variance and balanced Farey capacity]]
 
+- [[research/graph/relations/calibration-class-and-randomized-stopping|Calibration class and randomized stopping]]
+
 ## Integration boundary
 
-Stable memberships cover all 13 initialized research lines, 5,025 canonical findings, 832 durable intuitions and 65 canonical prior-art notes. Structural attachment asserts ownership only. It includes challenged findings without treating a review as withdrawal or endorsement.
+Stable memberships cover all 13 initialized research lines, 5,032 canonical findings, 835 durable intuitions and 67 canonical prior-art notes. Structural attachment asserts ownership only. It includes challenged findings without treating a review as withdrawal or endorsement.
 
 Semantic coverage is selective. The [[research/arithmetic_fidelity/graph/relations/euler-harmonic-collision-budget|Euler harmonic collision budget]] records AF-337/AF-338's finite-order refinement and its surviving source/observation restrictions. Nine direct reference links in those two findings preserve their original text exactly. No cross-line implication follows from this maintenance.
 
@@ -71,6 +73,8 @@ The [[research/graph/relations/rh-mellin-variance-and-farey-capacity|RH Mellin v
 The dyadic seam-filter mechanism in Prime Lattice records PL-466's conditional improvement over PL-464 with a verified classical zero-density dependency. Its four source-reference wrappers preserve the original bytes on exact reversal. The Möbius variance projection now includes MC-521's classical epsilon-loss sharp-Mertens consequence; its existing telemetry episode is repaired rather than counted twice. Neither change proves an arithmetic variance input.
 
 The [[research/weil_inertia/graph/relations/conditional-moment-density-and-screening|conditional moment-density mechanism]] separates WI-456's source withdrawal from its surviving classical conditional theorem. WI-003's literal cutoff obstruction and WI-006's critical-lattice replacement remain scoped independently; neither refutes every higher-moment method. Six reversible reference wrappers materialize the verified source relations. Density-one control still permits individual exceptions.
+
+The calibration-class mechanism records XF-204's endpoint-preserving transfer of AF-576's fixed-input testing argument, alongside AF-577's different polynomial-nuisance oracle boundary. Eleven native reference wrappers in three findings preserve their bytes on exact reversal. The two classical prior-art nodes identify testing and interpolation methods; they do not supply the source-specific joins, continuous-real oracle assumptions, physical acquisition or an RH implication.
 
 `research/graph/semantic-inspection.json` records the completed mechanism scopes, their verified endpoints and the earlier source-window base. The remaining changes in that window have structural membership but are not certified here as semantically reconciled. Existing mechanism notes remain scoped to their cited canonical evidence; their presence is not a current-frontier census.
 

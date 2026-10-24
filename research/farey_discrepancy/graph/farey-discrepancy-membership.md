@@ -346,3 +346,4 @@ This stable projection inventories every current canonical Farey Discrepancy fin
 - [[research/farey_discrepancy/findings/FD-335-reflected-farey-gap-null-has-a-brownian-energy-law-and-biased-fixed-band-shares|FD-335]]
 - [[research/farey_discrepancy/findings/FD-336-growing-farey-gap-block-shuffles-retain-the-brownian-spectral-null|FD-336]]
 - [[research/farey_discrepancy/findings/FD-337-sublinear-rank-sine-bands-transfer-to-the-mertens-spectrum|FD-337]]
+- [[research/farey_discrepancy/findings/FD-338-linear-rank-band-transfer-fails-for-critical-energy-rational-grids|FD-338]]

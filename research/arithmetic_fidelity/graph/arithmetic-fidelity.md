@@ -46,3 +46,6 @@ AF-071--AF-077 replace per-scale existence by a coherent compactness theory: com
 ## Curation boundary
 
 Arithmetic Fidelity is a transversal theory line rather than a direct RH attack. Its findings remain direct graph nodes through their repository paths; relations here do not promote abstract fidelity examples into claims about another Mathia line without source evidence.
+## Calibration and randomized stopping
+
+[[research/graph/relations/calibration-class-and-randomized-stopping|Calibration class and randomized stopping]] records the source-backed transfer and its nuisance-class, endpoint and noise restrictions.

@@ -2,7 +2,7 @@
 id: RA-metrics-v1
 type: riemann-atlas-metrics
 atlas_version: 1
-source_revision: baddf7be03bd96e0309ef33d4de6fc1c01559391
+source_revision: ce89dce6069b89a5af39f827cf1a38972accbe44
 derived: true
 ---
 
@@ -28,7 +28,7 @@ Thus:
 - pruned share of visited mass = **18.3%**
 - hard-pruned share of all pruned mass = **78.9%**
 
-The v1 denominator and territory states are unchanged by membership reconciliation and the conditional moment-input reconciliation. Recomputed masses retain the values above. Complete membership is not complete semantic traversal, and no new territory state is inferred from added links.
+The v1 denominator and territory states are unchanged by membership reconciliation and the calibration-resource reconciliation. Recomputed masses retain the values above. Complete membership is not complete semantic traversal, and no new territory state is inferred from added links.
 
 ## Atlas scope and confidence
 
@@ -38,17 +38,17 @@ The five hard-pruned interfaces retain their existing scoped canonical evidence:
 
 ## Structural and semantic scope
 
-The exact tree projections contain 13 research lines, 5,025 findings, 832 durable intuitions and 65 prior-art notes. Membership changes and reversible source-reference formatting are graph maintenance, never frontier episodes. Semantic inspection remains selective as recorded in `research/graph/semantic-inspection.json`; uninspected source changes do not justify Atlas transitions.
+The exact tree projections contain 13 research lines, 5,032 findings, 835 durable intuitions and 67 prior-art notes. Membership changes and reversible source-reference formatting are graph maintenance, never frontier episodes. Semantic inspection remains selective as recorded in `research/graph/semantic-inspection.json`; uninspected source changes do not justify Atlas transitions.
 
 ## Frontier fertility
 
-The retained prospective series contains **20** classifiable episodes and **0** insufficient-evidence episodes. PL-466 adds one conditional dyadic transfer refinement. MC-521's existing episode is corrected to include its classical sharp-Mertens consequence without another event. Both variance premises remain unproved unconditionally. The oldest episode leaves the fixed trailing window and remains in Git; the sample remains selective.
+The retained prospective series contains **20** classifiable episodes and **0** insufficient-evidence episodes. AF-577 and XF-204 add two distinct, scoped calibration-resource barriers; two older episodes leave the trailing window. Their ideal-oracle and pointwise termination results remain intact. The sample remains selective, and no acquisition barrier changes the Atlas denominator or territory states.
 
-- **FrontierFertilityEpisodes = 40.0%**
-- **BarrierRate = 45.0%**
+- **FrontierFertilityEpisodes = 30.0%**
+- **BarrierRate = 55.0%**
 - **PriorArtCollisionRate = 15.0%**
 - **InternalDuplicateRate = 0.0%**
 
-The WI-456 reconciliation adds no episode: the withdrawn source had supplied no accepted unconditional moment input, and the surviving conditional capstone clarifies the existing route without a new frontier expansion. The retained event set and all episode ratios are unchanged.
+The conditional moment-input reconciliation adds no episode. Membership, reference formatting and classical-method registration are also excluded from the event set.
 
-See [[research/graph/atlas/telemetry/frontier-summary|frontier telemetry]] for per-line sample sizes and [[research/graph/atlas/telemetry/frontier-events.jsonl|the event set]] for exact source provenance. Retrospective and prospective evidence are separate, and no metric alone justifies a portfolio decision.
+See [[research/graph/atlas/telemetry/frontier-summary|frontier telemetry]] for the exact calibration boundaries and per-line sample sizes, and [[research/graph/atlas/telemetry/frontier-events.jsonl|the event set]] for source provenance. Retrospective and prospective evidence are separate, and no metric alone justifies a portfolio decision.

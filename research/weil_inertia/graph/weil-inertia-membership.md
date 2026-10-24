@@ -460,3 +460,4 @@ This stable projection inventories every current canonical Weil Inertia finding.
 - [[research/weil_inertia/findings/WI-454-coherent-hankel-differences-recover-energy-with-square-summable-calibration|WI-454]]
 - [[research/weil_inertia/findings/WI-455-wang-endpoint-flatness-controls-subpower-window-shortening|WI-455]]
 - [[research/weil_inertia/findings/WI-456-retracted-moment-transport-leaves-only-a-conditional-density-capstone|WI-456]]
+- [[research/weil_inertia/findings/WI-457-normalized-euler-hankel-symbols-have-local-blindness-and-recurrent-peaks|WI-457]]

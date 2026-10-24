@@ -54,6 +54,7 @@ This is a path-derived structural projection for graph topology. Each link means
 - [[research/mind/intuition/MI-036-source-structure-matters-only-through-the-reachable-quotient-seen-by-the-destination]]
 - [[research/mind/intuition/MI-037-only-intrinsic-destination-budgets-count-as-surviving-source-resources]]
 - [[research/mind/intuition/MI-038-destination-fibres-and-baselines-must-be-separated-before-crediting-a-resource]]
+- [[research/mind/intuition/MI-039-calibration-gluing-transfers-randomized-stopping-bounds-only-in-the-admitted-function-class]]
 - [[research/mind/intuition/MI-900-exact-inversion-can-coexist-with-zero-budgeted-separation]]
 
 ### Analytic Frontier
@@ -144,6 +145,7 @@ This is a path-derived structural projection for graph topology. Each link means
 - [[research/arithmetic_fidelity/mind/intuition/MI-076-convex-critical-contact-is-a-temporal-plateau-gate]]
 - [[research/arithmetic_fidelity/mind/intuition/MI-077-curvature-profile-classifies-simple-sources-up-to-dilation]]
 - [[research/arithmetic_fidelity/mind/intuition/MI-078-boundary-fidelity-is-controlled-by-precision-weighted-carrier-energy]]
+- [[research/arithmetic_fidelity/mind/intuition/MI-079-unknown-polynomial-calibration-separates-random-identification-from-certification]]
 
 ### Farey Discrepancy
 - [[research/farey_discrepancy/mind/intuition/MI-001-cumulative-farey-discrepancy-is-mertens-energy]]
@@ -874,5 +876,6 @@ This is a path-derived structural projection for graph topology. Each link means
 - [[research/xi_flow/mind/intuition/MI-011-cross-scale-observability-can-compress-to-one-off-circle-heat-trace]]
 - [[research/xi_flow/mind/intuition/MI-012-xi-tail-hazard-is-source-specific-but-not-yet-coercive]]
 - [[research/xi_flow/mind/intuition/MI-013-adapted-cusp-coordinates-separate-depth-from-conditioning]]
+- [[research/xi_flow/mind/intuition/MI-014-endpoint-preserving-calibration-joins-force-sharp-randomized-stopping-tails]]
 
 <!-- intuition-membership:end -->
