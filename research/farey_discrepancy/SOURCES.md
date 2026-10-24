@@ -114,6 +114,11 @@ This file records durable literature dependencies for `research/farey_discrepanc
 
 - Emanuel Sperner, *Ein Satz über Untermengen einer endlichen Menge*, Mathematische Zeitschrift **27** (1928), 544--548, EuDML `167993`. Role: primary source for Sperner's theorem that an antichain in the Boolean lattice has size at most the central binomial coefficient. `FD-015` applies this classical bound only after deriving a Farey--Mertens GCD-duality non-saturation relation on comparable squarefree divisor-lattice horizons.
 
+## Rank-to-position Fourier transport boundary
+
+- Stéphane Mallat, *Group Invariant Scattering*, Communications on Pure and Applied Mathematics **65**(10) (2012), 1331–1398, DOI `10.1002/cpa.21413`, Section 2.1; [author-hosted published paper](https://www.di.ens.fr/~mallat/College/CPAM-Mallat-Scat.pdf). Role: primary prior-art boundary for high-frequency Fourier instability under spatial deformation. FD-338 derives its own rational-grid counterexample with critical Franel energy and distinct normalized rank/position band shares; Mallat's deformation norm and observable differ, and no scattering theorem is imported.
+- M. N. Huxley, *Identities involving Farey fractions*, Proceedings of the Steklov Institute of Mathematics **276** (2012), 125–139, DOI `10.1134/S0081543812010105`; [primary record](https://www.mathnet.ru/eng/tm3374). Role: neighboring weighted discrete/continuous Franel-identity literature for FD-337–FD-338. Total-energy correspondence does not assert cutoff-preserving Fourier correspondence; FD-338 verifies its generic reflected-grid normalization directly through the Bernoulli kernel.
+
 ## Expansion rule
 
 Add primary sources only when a canonical finding depends on an exact Farey discrepancy theorem, Möbius bridge, reciprocity identity, or genuinely stronger geometric/multiscale structure.
