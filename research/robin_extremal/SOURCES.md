@@ -80,6 +80,10 @@ This file records durable literature dependencies for `research/robin_extremal/`
 
 - Kevin Ford, Sergei V. Konyagin and Florian Luca, *Prime chains and Pratt trees*, Geometric and Functional Analysis **20** (2010), 1231--1258, DOI `10.1007/s00039-010-0089-0`, [arXiv:0904.0473v4](https://arxiv.org/abs/0904.0473v4). Role: Section 1.1 defines the classical relation `r | s-1` between primes. RE-262 uses it as the denominator-cancellation alternative in a finite Euler-factor rigidity theorem with a counting constraint. The source is a prior-art boundary for that relation; no prime-chain distribution estimate is imported, and the finite source-repair theorem is derived in RE-262.
 
+## Two-factor Diophantine classification
+
+- Tieling Chen and Reginald Koo, *Two-term Egyptian fractions*, Notes on Number Theory and Discrete Mathematics **19** (2013), no. 2, 15–25, [primary paper](https://www.nntdm.net/papers/nntdm-19/NNTDM-19-2-15-25.pdf), Section 2, Theorems 2–3. Role: classical comparison for reducing a bilinear rational equation to a shifted product and divisor congruences. RE-263 derives its different Euler-product classification independently; no Egyptian-fraction existence theorem is imported.
+
 ## Expansion rule
 
 Add primary sources when a canonical finding depends on an exact theorem about superabundant/colossally abundant integers, exponent-profile transitions, explicit prime-distribution errors, or extremal divisor-sum bounds. Finite verification records should be cited only when a finding actually depends on their verified range.
