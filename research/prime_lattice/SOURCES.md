@@ -530,3 +530,6 @@ Only sources that materially support, delimit, or redirect stored `PL-*` finding
 
 137. **Jan-Christoph Schlage-Puchta**, “Oscillations of the error term in the prime number theorem,” *Acta Mathematica Hungarica* **156** (2018), 303--308. DOI: https://doi.org/10.1007/s10474-018-0884-x; author manuscript https://arxiv.org/abs/1912.00853.
      - Role: close prior-art comparison for PL-471. Theorem 3 gives effective prime-counting-error oscillation on `[X,X^(1+epsilon)]` from an off-critical zero under its stated height conditions. PL-471's empirical additive-window variance on `[X,2X]` has non-effective constants depending on the entire off-critical zero set; it is not asserted to improve that effective theorem.
+
+138. **NIST Digital Library of Mathematical Functions**, Section 24.2(i), “Bernoulli Numbers and Polynomials,” equations (24.2.1) and (24.2.3); Section 2.11(iii), “Exponentially-Improved Expansions.” https://dlmf.nist.gov/24.2 and https://dlmf.nist.gov/2.11.
+     - Role: classical Bernoulli generating-function and optimal-truncation background for PL-472. The uniform Gevrey box-inversion remainder, its bounded combined test norm, and the near-linear empirical prime-variance implication are proved in PL-472, not attributed to DLMF.
