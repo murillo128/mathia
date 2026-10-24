@@ -479,6 +479,23 @@ Relevant findings: PF-351 and PF-352; relevant local clue: CLUE-positive-width-t
 
 **Scope warning.** PF-351 concerns a Gram-valued two-module corridor control, with arbitrary distinct transition nodes and tunable grounding. Scalar graph sign rules do not identify its frequency matrix with a scalar Laplacian. PF-352 extends the model control to complete growing Fourier bands and conductances compatible with four long nonprime cuffs. Neither source nor control establishes cancellation for the actual prime-flute periods or pant DtN form.
 
+## S29 — cyclotomic sign embeddings and multiplicative length relations
+
+**J. S. Milne**, *Fields and Galois Theory*.
+
+- https://www.jmilne.org/math/Books/FT0.pdf
+- Proposition 2.4: extend an embedding through a simple algebraic extension by choosing a root of the transported minimal polynomial.
+- Lemma 5.9 and Theorem 5.10: `Gal(Q(zeta_N)/Q)` is the full unit group modulo `N`.
+
+**G. Prasad and A. S. Rapinchuk**, *Weakly commensurable arithmetic groups, lengths of closed geodesics and isospectral locally symmetric spaces*, Publications Mathématiques de l'IHÉS 109 (2009), 113–184. DOI: 10.1007/s10240-009-0019-6.
+
+- https://arxiv.org/abs/0705.2891
+- Introduction and Section 8: prior-art context for translating rational length relations into multiplicative relations among algebraic eigenvalues.
+
+Relevant finding: PF-354. Its CRT endpoint-sign changes and minimal-support argument prove rational independence of the exact distinguished cuff lengths; pairwise coprime odd composite labels satisfy the same conclusion.
+
+**Scope warning.** No arithmetic-group rigidity theorem is applied to the infinite-type prime flute. Exact nonintersection of cuff Fourier lattices gives no quantitative frequency separation, normalized Schur-angle estimate, or spectral conclusion. PF-354 uses the elementary Galois facts directly, not a transcendence theorem.
+
 ## Provenance policy for future additions
 
 For each future finding, record separately:
