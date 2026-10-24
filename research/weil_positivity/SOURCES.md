@@ -242,3 +242,7 @@ This file records only durable literature dependencies for canonical findings in
 ## Nonperiodic Maharam profiles and coprime counting
 
 - **Tomas Oliveira e Silva**, *Computing pi(x): the combinatorial method*, Revista do DETUA 4 (2006), no. 6, 759--768, [author text](https://sweet.ua.pt/tos/bib/5.4.pdf), Section II-B. Classical partial-sieve recurrence, used in WP-449 for the coprime-count weights of a nonperiodic positive covariant form. The Kaarnioja--Haukkanen--Ilmonen--Mattila semilattice reference above, Theorem 2.5 and Corollary 2.6, supplies the classical incidence-positivity boundary for its floor-GCD Gram. Neither source supplies a Weil orientation or selects the real-coordinate cutoff.
+
+## Bounded diagonal Maharam rigidity
+
+- **Satoshi Takanobu**, *A generalization of functional limit theorems on the Riemann zeta process*, Osaka Journal of Mathematics 56 (2019), 843--882, [institutional text](https://ir.library.osaka-u.ac.jp/repo/ouka/all/73631/ojm56_04_843.pdf), [DOI: 10.18910/73631](https://doi.org/10.18910/73631), introductory Claim 1. Records the classical exponential scaling limit of the logarithmic zeta distribution. WP-450 instead proves a quantitative derivative estimate uniform against varying bounded inputs, which turns uniformly bounded critical inverse-sieve transforms into a constant vacuum profile. Nakamura's uncompleted zeta law and Deny's bounded convolution rigidity above are the neighboring classical ingredients; neither weak convergence nor a fixed-point theorem is substituted for the required uniform estimate.
