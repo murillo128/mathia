@@ -13,6 +13,7 @@ based_on:
   - research/prime_flute/findings/PF-347-natural-seam-energy-cannot-regularize-the-bounded-band-corridor-gram-model.md
   - research/prime_flute/findings/PF-348-narrow-transition-shorting-preserves-the-local-dirichlet-pant-angle.md
   - research/prime_flute/findings/PF-349-local-full-parity-transition-shorting-retains-the-narrow-band-angle.md
+  - research/prime_flute/findings/PF-350-collective-antisymmetric-transition-relaxation-is-uniformly-form-small.md
 ---
 
 # Can a positive-width transition band absorb the collapsing-corridor mode after exact Schur elimination?
@@ -122,6 +123,8 @@ PF-348 proves a two-sided comparison for the **actual local Dirichlet module** o
 
 PF-349 settles the local parity enlargement for sufficiently narrow fixed width: the actual antisymmetric seam penalty and whole-band pant trace bound give a relative sandwich with loss `b_n/(1+b_n)`, where `b_n<=C eta+o(1)`, even after symmetric transition elimination. Tangential reflection also decouples every sine transition mode. The full local transition shorting therefore retains correlation at least `1/4`. All other cuffs are still fixed to zero. The unresolved narrow-band test is now **intermodule** transition relaxation; a different global answer cannot be attributed just to restoring local parity variables.
 
+PF-350 controls **collective** antisymmetric transition relaxation across any coupled tail finite section: positive pant assembly gives `C<=2 direct-sum C_nn`, and the actual seam penalty gives `C<=b Q_-`, with `b<=C_kappa eta+epsilon_m` and `epsilon_m -> 0` independently of section size. Hence `(1+b)^(-1) S_sym <= S_full <= S_sym` even after all symmetric transition modes are shorted. Both forms already allow neighboring symmetric transition data. The decisive narrow-band question can therefore be attacked in the global symmetric face sector; a normalized witness larger than `b/(1+b)` transfers to full parity. PF-349's local Dirichlet witness does not establish that global symmetric witness, and a fixed form comparison does not transfer compactness.
+
 ## Evidence boundary
 
 PF-344 proves a **partial positive** result: a fixed positive physical transition band removes the raw \(D_n\)-scale edge correlation after exact positive Schur shorting; all individual bounded-frequency cosine matrix entries are \(o(D_n)\). These are variational upper bounds on the unnormalized shorted form, not a claim about its normalized low/high canonical-correlation angle.
@@ -141,3 +144,5 @@ Status: accepted. PF-344 removes the raw \(D_n\) term on bounded edge witnesses,
 [[research/prime_flute/findings/PF-348-narrow-transition-shorting-preserves-the-local-dirichlet-pant-angle.md]] rules out the sufficiently narrow **local Dirichlet, symmetric-cosine** transition repair using the actual two-pant form. It leaves the clue accepted and unresolved for full parity/global transition shorting: a positive local correlation is not monotone under further relaxation, as its explicit finite control shows.
 
 [[research/prime_flute/findings/PF-349-local-full-parity-transition-shorting-retains-the-narrow-band-angle.md]] extends that local obstruction to both face parities and the full sine/cosine transition sector. The clue remains accepted and unresolved for intermodule relaxation, wider fixed bands, and the globally completed angle; the new relative bound does not cross that boundary.
+
+[[research/prime_flute/findings/PF-350-collective-antisymmetric-transition-relaxation-is-uniformly-form-small.md]] narrows the intermodule test to symmetric transition propagation by controlling all antisymmetric transition freedoms uniformly over coupled tail sections. The clue remains accepted and unresolved: the global symmetric correlation, infinite-section passage and completed operator ideal are still unproved.

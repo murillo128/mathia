@@ -428,7 +428,7 @@ Relevant finding: PF-346; relevant local clue: CLUE-positive-width-transition-sc
 - https://doi.org/10.1137/0128007
 - Classical positive shorting framework; PF-347 proves the needed finite-dimensional monotonicity and homogeneity directly by the variational minimum.
 
-Relevant findings: PF-347 and PF-349; relevant local clue: CLUE-positive-width-transition-schur-complement.md. PF-349 uses the same finite-dimensional shorting principles to preserve a relative bound through local face-parity and transition relaxation; its matrix estimate is proved directly.
+Relevant findings: PF-347, PF-349 and PF-350; relevant local clue: CLUE-positive-width-transition-schur-complement.md. PF-349 uses the same finite-dimensional shorting principles to preserve a relative bound through local face-parity and transition relaxation. PF-350 preserves a collective antisymmetric relaxation bound through global symmetric transition shorting in arbitrary tail finite sections. Both matrix estimates are proved directly.
 
 **Scope warning.** These classical comparisons do not identify a corridor Gram form with the prime-flute DtN operator. PF-347 controls addition of the bounded-frequency symmetric seam block to the Gram model; nonsingular pant terms, intermodule transition elimination and the unbounded high sector remain outside that conclusion.
 
@@ -454,6 +454,18 @@ Relevant finding: PF-348; relevant local clue: CLUE-positive-width-transition-sc
 Relevant finding: PF-349; relevant local clue: CLUE-positive-width-transition-schur-complement.md.
 
 **Scope warning.** The harmonic-form and Jacobian estimates in this source are not imported. Reflection does not identify the two adjacent pants, remove face-parity coupling, or control intermodule transition elimination.
+
+## S27 — positive block Cauchy--Schwarz and complementary-sector relaxation
+
+**M. S. Moslehian, M. Kian and Q. Xu**, *Positivity of 2 x 2 block matrices of operators*, Banach Journal of Mathematical Analysis 13 (2019), no. 3, 726–743. DOI: 10.1215/17358787-2019-0019.
+
+- https://arxiv.org/abs/1904.08680
+- Theorem 5.11 gives contraction factorization for a positive block matrix; Proposition 5.14 gives its equivalent Cauchy--Schwarz inequality.
+- PF-350 proves the required finite-dimensional consequence directly, allowing unequal or singular pant diagonal blocks before adding the positive seam penalty.
+
+Relevant finding: PF-350; relevant local clue: CLUE-positive-width-transition-schur-complement.md.
+
+**Scope warning.** These are classical block-positivity principles. The prime-flute input is PF-350's uniform domination of the entire coupled antisymmetric transition block by the actual seam form. Neither the reference nor that comparison resolves the globally symmetric transition angle, infinite-section limits, or compactness.
 
 ## Provenance policy for future additions
 
