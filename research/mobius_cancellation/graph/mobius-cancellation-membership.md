@@ -532,3 +532,4 @@ This stable projection inventories every current canonical Möbius Cancellation 
 - [[research/mobius_cancellation/findings/MC-523-density-one-dyadic-window-control-permits-near-linear-prefixes|MC-523]]
 - [[research/mobius_cancellation/findings/MC-524-density-one-window-control-coexists-with-prescribed-sparse-poles|MC-524]]
 - [[research/mobius_cancellation/findings/MC-525-polynomial-strip-growth-forces-pole-variance-on-every-block|MC-525]]
+- [[research/mobius_cancellation/findings/MC-526-selected-mobius-variance-excludes-finite-exceptional-zero-clusters|MC-526]]

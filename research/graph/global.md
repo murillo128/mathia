@@ -62,7 +62,7 @@ This is the derived root graph for Mathia research. Canonical findings and mind 
 
 ## Integration boundary
 
-Stable memberships cover all 13 initialized research lines, 5,050 canonical findings, 836 durable intuitions and 68 canonical prior-art notes. Structural attachment asserts ownership only. It includes challenged findings without treating a review as withdrawal or endorsement.
+Stable memberships cover all 13 initialized research lines, 5,059 canonical findings, 836 durable intuitions and 70 canonical prior-art notes. Structural attachment asserts ownership only. It includes challenged findings without treating a review as withdrawal or endorsement.
 
 Semantic coverage is selective. The [[research/arithmetic_fidelity/graph/relations/euler-harmonic-collision-budget|Euler harmonic collision budget]] records AF-337/AF-338's finite-order refinement and its surviving source/observation restrictions. Nine direct reference links in those two findings preserve their original text exactly. No cross-line implication follows from this maintenance.
 
@@ -74,7 +74,7 @@ The dyadic seam-filter mechanism in Prime Lattice records PL-466's conditional i
 
 The [[research/weil_inertia/graph/relations/conditional-moment-density-and-screening|conditional moment-density mechanism]] separates WI-456's source withdrawal from its surviving classical conditional theorem. WI-003's literal cutoff obstruction and WI-006's critical-lattice replacement remain scoped independently; neither refutes every higher-moment method. Six reversible reference wrappers materialize the verified source relations. Density-one control still permits individual exceptions.
 
-The [[research/graph/relations/calibration-class-and-randomized-stopping|calibration-class mechanism]] now incorporates AF-578's continuous-random fixed-budget lower bound and XF-206's noiseless full-holomorphic-class lower bound. Six reversible wrappers in those findings materialize verified dependencies and the classical adaptive Gaussian-conditioning method. Broad polynomial uncertainty in AF and endpoint-flat uncertainty with bounded nonconstant coefficients in Xi are distinct witnesses. Per-input finite recovery survives, as does Xi's restricted scalar one-query test; neither result supplies physical acquisition or an RH implication.
+The [[research/graph/relations/calibration-class-and-randomized-stopping|calibration-class mechanism]] includes AF-579's whole-ray extension and XF-207's complex-query extension. AF retains blind-guess finite-cap error despite a positive full-curve noise margin; Xi retains its sharp tail even with a fixed compact norm allowance strictly above the midpoint. The coordinate and Hermite-interpolation ingredients have verified classical prior-art nodes. Three reversible wrappers in the two findings add native references without changing their text, and their existing domain/dependency links are retained. Neither theorem supplies physical acquisition or an RH implication.
 
 `research/graph/semantic-inspection.json` records the completed mechanism scopes, their verified endpoints and the earlier source-window base. The remaining changes in that window have structural membership but are not certified here as semantically reconciled. Existing mechanism notes remain scoped to their cited canonical evidence; their presence is not a current-frontier census.
 

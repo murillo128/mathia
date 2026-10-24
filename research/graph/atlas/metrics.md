@@ -2,7 +2,7 @@
 id: RA-metrics-v1
 type: riemann-atlas-metrics
 atlas_version: 1
-source_revision: d053d301894e699cce523c0d3ca87b7a45a407ed
+source_revision: 318a33ff6fa58d8d5f129ebeb02cdf49e8b88875
 derived: true
 ---
 
@@ -38,11 +38,11 @@ The five hard-pruned interfaces retain their existing scoped canonical evidence:
 
 ## Structural and semantic scope
 
-The exact tree projections contain 13 research lines, 5,050 findings, 836 durable intuitions and 68 prior-art notes. Membership changes and reversible source-reference formatting are graph maintenance, never frontier episodes. Semantic inspection remains selective as recorded in `research/graph/semantic-inspection.json`; uninspected source changes do not justify Atlas transitions.
+The exact tree projections contain 13 research lines, 5,059 findings, 836 durable intuitions and 70 prior-art notes. Membership changes and reversible source-reference formatting are graph maintenance, never frontier episodes. Semantic inspection remains selective as recorded in `research/graph/semantic-inspection.json`; uninspected source changes do not justify Atlas transitions.
 
 ## Frontier fertility
 
-The retained prospective series contains **20** classifiable episodes and **0** insufficient-evidence episodes. AF-578's continuous-random fixed-cap theorem and XF-206's noiseless full-holomorphic obstruction refine the two existing calibration-resource episodes; they add no duplicate observations and do not advance the trailing window. Per-input exact continuous-random identification and finite Xi termination remain intact. The restricted scalar Xi class still permits its noiseless one-query test. The sample remains selective, and no acquisition barrier changes the Atlas denominator or territory states.
+The retained prospective series contains **20** classifiable episodes and **0** insufficient-evidence episodes. AF-579's ray-domain extension and XF-207's complex-value extension refine the same two calibration-resource episodes, with no duplicate observations or window advance. AF's positive full-curve noise margin and Xi's compact-bound allowance are explicit qualifications; finite per-input recovery remains possible. These synthetic acquisition results do not change Atlas territory states or masses.
 
 - **FrontierFertilityEpisodes = 30.0%**
 - **BarrierRate = 55.0%**

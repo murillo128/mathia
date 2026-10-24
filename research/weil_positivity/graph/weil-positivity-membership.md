@@ -454,3 +454,4 @@ This stable projection inventories every current canonical Weil Positivity findi
 - [[research/weil_positivity/findings/WP-444-critical-valuation-energy-drift-has-no-measurable-diagonal-counterterm|WP-444]]
 - [[research/weil_positivity/findings/WP-445-maharam-drift-cancellation-forces-an-indefinite-energy|WP-445]]
 - [[research/weil_positivity/findings/WP-446-positive-maharam-spectral-filters-collapse-under-two-dilations|WP-446]]
+- [[research/weil_positivity/findings/WP-447-homogeneous-maharam-forms-recover-classical-gcd-grams|WP-447]]

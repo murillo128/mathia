@@ -214,3 +214,4 @@ This stable projection inventories every current canonical Xi Flow finding. Link
 - [[research/xi_flow/findings/XF-204-randomized-jacobi-detection-has-a-sharp-error-stopping-tail|XF-204]]
 - [[research/xi_flow/findings/XF-205-analytic-jacobi-calibration-retains-the-noisy-stopping-obstruction|XF-205]]
 - [[research/xi_flow/findings/XF-206-noiseless-analytic-calibration-retains-sharp-stopping-tails|XF-206]]
+- [[research/xi_flow/findings/XF-207-complex-value-queries-retain-the-analytic-calibration-stopping-obstruction|XF-207]]

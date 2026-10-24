@@ -360,3 +360,4 @@ This stable projection inventories every current canonical Nyman–Beurling find
 - [[research/nyman_beurling/findings/NB-351-geometric-source-seeds-retain-a-positive-target-distance-under-all-dilations|NB-351]]
 - [[research/nyman_beurling/findings/NB-352-finite-nyman-patches-cannot-remove-the-geometric-target-obstruction|NB-352]]
 - [[research/nyman_beurling/findings/NB-353-finitely-many-seed-orbits-pay-a-quantitative-target-coefficient-cost|NB-353]]
+- [[research/nyman_beurling/findings/NB-354-finite-seed-real-dilation-spaces-have-an-exact-target-loss-classification|NB-354]]

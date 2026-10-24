@@ -271,7 +271,7 @@ These checks test the algebra and degeneracies; (8) and (15)–(17) prove
 the arbitrary-cap, arbitrary-policy statement. No Lean verification or
 new numerical Xi source estimate is claimed.
 
-Hermite interpolation is classical: [Carl de Boor, *Divided Differences*
+[[research/prior_art/incremental/PA-hermite-polynomial-interpolation|Hermite interpolation]] is classical: [Carl de Boor, *Divided Differences*
 (2005), Proposition 7](https://arxiv.org/pdf/math/0502036) gives its
 polynomial formulation. Adaptive conditional Gaussian measures and
 truncated-prior lower bounds are classical as well; see [Robert Kunsch,

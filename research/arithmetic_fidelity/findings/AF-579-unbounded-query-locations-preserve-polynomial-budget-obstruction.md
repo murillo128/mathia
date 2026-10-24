@@ -95,7 +95,7 @@ To derive (4), truncate at cap `N` and guess uniformly on nonreturn. The capped 
 
 ## Prime-edit gaps are smooth after compactification
 
-The endpoint at `a=0` is controlled by AF-571's analytic implicit equation. With `B_p=Phi_p-1`, analytic functions
+The endpoint at `a=0` is controlled by [[research/arithmetic_fidelity/findings/AF-571-polynomial-drift-has-exact-small-window-probe-saturation|AF-571]]'s analytic implicit equation. With `B_p=Phi_p-1`, analytic functions
 `R(u)=P(1+u)+log u` and `E(a)=E_1(a)+gamma+log a` near zero give
 \[
  B_p(a)=a\exp\{\gamma+R(B_p(a))-h_p(1+B_p(a))-E(a)\}.
@@ -185,7 +185,7 @@ The load-bearing distinctions are:
 
 ## Prior art and mathematical delta
 
-The polynomial map (7) is classical homogenization and linear fractional change of coordinate: Peter J. Olver, *Classical Invariant Theory*, London Mathematical Society Student Texts 44, Cambridge University Press (1999), Chapter 2, pp. 13–14, equations (2.4)–(2.7), Theorem 2.2 ([monograph](https://www.math.utoronto.ca/~ila/ClassicalInvariantTheory.pdf)). No new invariant-theoretic construction is claimed.
+The polynomial map (7) is classical [[research/prior_art/incremental/PA-polynomial-homogenization-linear-fractional-action|homogenization and linear fractional change of coordinate]]: Peter J. Olver, *Classical Invariant Theory*, London Mathematical Society Student Texts 44, Cambridge University Press (1999), Chapter 2, pp. 13–14, equations (2.4)–(2.7), Theorem 2.2 ([monograph](https://www.math.utoronto.ca/~ila/ClassicalInvariantTheory.pdf)). No new invariant-theoretic construction is claimed.
 
 The interpolation/Gaussian lower-bound machinery is already derived in AF-578 and anchored in de Boor's *Divided Differences* ([2005 paper](https://arxiv.org/abs/math/0502036)), Wasilkowski's conditional Gaussian adaptive-information theorem (1986), and Arias-Castro, Candes and Davenport's adaptive-testing arguments ([author paper](https://arxiv.org/abs/1111.4646)). Equation (14), positive Dirichlet-series tail dominance, and the analytic implicit function theorem are classical elementary ingredients. These sources do not by themselves assert the prime-edit identification result.
 
