@@ -120,6 +120,10 @@ This file records durable literature dependencies for `research/farey_discrepanc
 - M. N. Huxley, *Identities involving Farey fractions*, Proceedings of the Steklov Institute of Mathematics **276** (2012), 125–139, DOI `10.1134/S0081543812010105`; [primary record](https://www.mathnet.ru/eng/tm3374). Role: neighboring weighted discrete/continuous Franel-identity literature for FD-337–FD-338. Total-energy correspondence does not assert cutoff-preserving Fourier correspondence; FD-338 verifies its generic reflected-grid normalization directly through the Bernoulli kernel.
 - NIST Digital Library of Mathematical Functions, §1.15(iii), equations 1.15.15–1.15.17, [Fejér kernel](https://dlmf.nist.gov/1.15#iii). Role: standard positive Fourier-kernel normalization for FD-339; that finding derives the kernel tail and norm bounds explicitly and combines them with Dress's discrepancy bound and the first empty Farey interval to force genuine rank/position coefficient separation below `128Q`. It does not infer a band-energy-share gap.
 
+## Exact signature erasures
+
+- R. W. Hamming, *Error Detecting and Error Correcting Codes*, Bell System Technical Journal **29**(2) (1950), 147–160, DOI `10.1002/j.1538-7305.1950.tb00463.x`, §§2 and 5; [original-paper scan](https://zoo.cs.yale.edu/classes/cs323/doc/Hamming.pdf). Role: classical checksum/Hamming-distance boundary for FD-340. That finding derives an exact integer checksum for inherited prime-Farey seam defects, recovers one erased value using FD-331, and supplies an energy-changing two-erasure certificate; it does not claim a new coding principle or a binary linear code.
+
 ## Expansion rule
 
 Add primary sources only when a canonical finding depends on an exact Farey discrepancy theorem, Möbius bridge, reciprocity identity, or genuinely stronger geometric/multiscale structure.
