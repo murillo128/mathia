@@ -174,25 +174,47 @@ This is the exact nonlinear version of the mean-removal problem that motivated X
 
 That distinction matters for the Xi program. XF-020 supplies enough spatial room to make the remote exterior negligible, but zero counting alone controls the number of zeros in the buffer, not the endpoint gap ratio appearing in (18). A future source-valid theorem must either control this ratio/mean contrast at the relevant scale, show that its endpoint flux is favorable, or augment the observable so that affine log-gap profiles acquire bulk cost.
 
-## 4. Pointwise conductance alignment is also false in a finite matched control
+## 4. Pointwise conductance alignment is also false in a complete periodic control
 
-The kernel obstruction is stronger than the statement that no sign proof is currently known. Even away from an exact geometric ramp, the two positive-conductance Laplacians in XF-031 can have opposite pointwise signs.
+Even away from an exact geometric ramp, the two positive-conductance
+Laplacians in XF-031 can have opposite pointwise signs. This requires a
+complete zero configuration: restricting the infinite gap equation to the
+gaps of a finite root set drops endpoint terms.
 
-Consider four ordered roots with three gaps
+Take the bi-infinite ordered configuration
 \[
-(g_0,g_1,g_2)=\left(2,\frac12,\frac14\right),
+x_{4m+j}=3m+a_j,\qquad
+(a_0,a_1,a_2,a_3)=\left(0,2,\frac52,\frac{11}4\right),
+\quad m\in\mathbb Z.
+\]
+Its periodic gaps and reciprocal gaps are
+\[
+(g_0,g_1,g_2,g_3)=\left(2,\frac12,\frac14,\frac14\right),
 \qquad
-(h_0,h_1,h_2)=\left(\frac12,2,4\right).
+(h_0,h_1,h_2,h_3)=\left(\frac12,2,4,4\right).
 \tag{19}
 \]
-At the middle gap, the nearest-neighbor triple conductances are, from (7),
+This is the full simple real zero set of the real-entire function
+\[
+f(z)=\prod_{j=0}^3\sin\frac{\pi(z-a_j)}3.
+\]
+The finite Fourier sum \(f_t=e^{-t\partial_z^2}f\) supplies an actual
+heat-flow realization. At \(t=0\), differentiation at a simple root gives
+\(x_i'=f''(x_i)/f'(x_i)\). All four roots per period continue as simple
+real roots for sufficiently small real \(|t|\), by the implicit function
+theorem. There are no additional roots: after multiplication by
+\(e^{4\pi iz/3}\), the Fourier sum is a degree-four polynomial in
+\(e^{2\pi iz/3}\) with nonzero constant and leading coefficients, and
+these four continued roots account for its full degree.
+
+At the middle gap, the nearest-neighbor triple conductances are
 \[
 \lambda\!\left(2,\frac12\right)=\frac{36}{35},
 \qquad
 \lambda\!\left(\frac12,\frac14\right)=\frac{10}{21}.
 \tag{20}
 \]
-Therefore
+Consequently
 \[
 (L_\lambda h)_1
 =\frac{36}{35}\left(2-\frac12\right)
@@ -200,20 +222,68 @@ Therefore
 =\frac{62}{105}>0.
 \tag{21}
 \]
-For a finite four-root logarithmic-repulsion system, the XF-018 cross-ratio weights from the middle gap to either adjacent gap are exactly one, so
+
+The full periodic velocity, including every image, is
 \[
-(L_wh)_1
-=\left(2-\frac12\right)+(2-4)
-=-\frac12<0.
+x_j'=\frac{2\pi}{3}\sum_{\substack{0\le k<4\\k\ne j}}
+\cot\frac{\pi(a_j-a_k)}3.
 \tag{22}
 \]
-The XF-031 locally constant-weight bulk density is consequently
+This follows directly from the sine product, or from the classical
+cotangent partial-fraction expansion
+\(\operatorname{PV}\sum_{m\in\mathbb Z}(z-3m)^{-1}
+=(\pi/3)\cot(\pi z/3)\). Self-images cancel in symmetric pairs.
+Using \(\cot(\pi/12)=2+\sqrt3\) and the elementary special angles,
 \[
+ x_1'=\frac{2\pi}{3}\left(-1-\frac4{\sqrt3}\right),
+ \qquad
+ x_2'=\frac{2\pi}{3}(-2-\sqrt3).
+\]
+Hence
+\[
+y_1'=\frac{x_2'-x_1'}{g_1}
+=\frac{4\pi}{3}\left(\frac1{\sqrt3}-1\right)<0.
+\]
+For this complete periodic configuration the XF-014/XF-031 gap identity
+is valid: reindexing the principal-value sums has vanishing boundary
+terms because \(|x_k|\asymp |k|\), and the resulting conductance sum is
+absolutely convergent because the gaps are bounded and its coefficients
+are \(O(|k|^{-2})\). Thus \(y_1'=2h_1(L_wh)_1\), and
+\[
+\boxed{
 2h_1(L_\lambda h)_1(L_wh)_1
-=-\frac{124}{105}<0.
+=\frac{248\pi}{315}\left(\frac1{\sqrt3}-1\right)<0.
+}
 \tag{23}
 \]
-This matched finite control rules out a universal **pointwise** alignment theorem based only on positivity of `L_lambda` and `L_w`. It does not rule out an aggregate inequality after summation, an Xi-specific restriction on admissible gap configurations, or compensation by collision/endpoint terms.
+This is the actual instantaneous locally constant-weight bulk density,
+with every exterior interaction retained.
+
+The distinction from a finite truncation is material. If only
+\(0,2,5/2,11/4\) are kept and evolved by the finite polynomial zero law
+\(x_i'=2\sum_{k\ne i}(x_i-x_k)^{-1}\), then
+\(x_1'=-17/3\), \(x_2'=-16/5\), and \(y_1'=74/15>0\).
+The two adjacent cross-ratio weights being one does not make them the
+whole finite-system gap velocity. For finite roots \(x_0<\cdots<x_n\),
+the precise endpoint correction is
+\[
+\frac{g_i'}2
+=\sum_{\substack{0\le k<n\\k\ne i}}c_{ik}(g_k-g_i)
+ +\frac1{x_{i+1}-x_0}-\frac1{x_i-x_n},
+\qquad 0\le i<n.
+\]
+Here \(c_{ik}=[(x_i-x_k)(x_{i+1}-x_{k+1})]^{-1}\).
+The identity follows by shifting the first velocity sum by one index;
+the two unmatched endpoints must be retained. The periodic construction avoids
+this finite-boundary substitution.
+
+The control disproves universal **pointwise** conductance alignment.
+It does not disprove an aggregate inequality after summation, an
+Xi-specific restriction on admissible configurations, or compensation
+by collision/endpoint terms. Exact arithmetic in \(\mathbb Q(\sqrt3)\)
+checks the cotangent sums, the two rational conductances and the factor
+\(248/315\); the equations above, rather than a numerical sign test,
+prove the result.
 
 ## 5. Boundary conditions and stress tests
 
@@ -221,13 +291,13 @@ The case `r=1` is the arithmetic lattice. Then `d=0`, `phi=0`, and the null mode
 
 For fixed `r\ne1`, a block of length `M` has endpoint ratio `g_{n+1}/g_m=r^M`, which becomes exponentially large or small. Such a long ramp need not satisfy any source-relevant Xi gap envelope. One may instead take `d=d_M\to0` so that the dynamic range stays bounded, but then the absolute per-triple shape defect also shrinks. Therefore (3) by itself is **not** a source-admissible growing-buffer counterexample and does not establish a positive-`Lambda` scenario.
 
-The pointwise example (19)--(23) is likewise a universal finite log-gas control, not an Xi configuration. Its role is falsification: any successful theorem must use aggregation, endpoint information, collision coverage, or genuinely Xi-specific input rather than infer pointwise sign from the two conductance factorizations.
+The pointwise example (19)--(23) is a complete periodic real-entire heat-flow control, not an Xi configuration. It is not asserted to have Xi's even symmetry or arithmetic source law. Its role is falsification: any successful theorem must use aggregation, endpoint information, collision coverage, or genuinely Xi-specific input rather than infer pointwise sign from the two conductance factorizations.
 
 Finally, (3) depends on strict injectivity of `F'`, supplied here by the exact `F''<0` theorem of XF-030. For a different block observable whose shape derivative is not injective, the null family could be larger. The classification is exact for the active normalized three-root discriminant route, not for arbitrary shape energies.
 
 ## 6. Prior-art and novelty boundary
 
-Affine kernels of derivative operators, discrete summation by parts, geometric progressions as affine profiles after taking logarithms, and positive-conductance graph Laplacians are classical structures. The relevant one-dimensional log-gas and nonlocal-diffusion prior-art boundaries are already anchored in `SOURCES.md`. No external theorem is load-bearing in (1)--(23).
+Affine kernels of derivative operators, discrete summation by parts, geometric progressions as affine profiles after taking logarithms, and positive-conductance graph Laplacians are classical structures. The relevant one-dimensional log-gas and nonlocal-diffusion prior-art boundaries are already anchored in `SOURCES.md`. The periodic summation uses the classical cotangent partial fraction [NIST DLMF, Eq. 4.22.3](https://dlmf.nist.gov/4.22.E3); the same velocity is derived directly from the finite sine product. Neither that identity nor periodic logarithmic repulsion is new. The explicit complete-control sign check supplies the pointwise obstruction without importing a finite truncation of the infinite gap law.
 
 The line-specific content is the exact identification of the nonlinear kernel created by the XF-030/XF-031 normalized-triple construction and its consequence for the active Xi taper strategy: **the bulk operator annihilates precisely constant log-gap contrast, so mean contrast survives only as an endpoint gap-ratio mode**. This is not claimed as a new general theorem about log gases.
 
