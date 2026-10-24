@@ -278,12 +278,67 @@ the two unmatched endpoints must be retained. The periodic construction avoids
 this finite-boundary substitution.
 
 The control disproves universal **pointwise** conductance alignment.
-It does not disprove an aggregate inequality after summation, an
-Xi-specific restriction on admissible configurations, or compensation
-by collision/endpoint terms. Exact arithmetic in \(\mathbb Q(\sqrt3)\)
-checks the cotangent sums, the two rational conductances and the factor
-\(248/315\); the equations above, rather than a numerical sign test,
-prove the result.
+In fact it cannot produce a negative derivative of any fixed,
+nonnegative tapered triple sum at this instant. To see the distinction,
+put \(c=2\pi/3\). Equation (22) gives, in cyclic order,
+\[
+\frac{(x_0',x_1',x_2',x_3')}{c}
+=\left(2+\frac7{\sqrt3},-1-\frac4{\sqrt3},-2-\sqrt3,1\right),
+\]
+and hence
+\[
+\frac{(y_0',y_1',y_2',y_3')}{c}
+=\left(-\frac32-\frac{11\sqrt3}6,
+        -2+\frac{2\sqrt3}3,
+        12+4\sqrt3,
+        4+\frac{28\sqrt3}3\right).
+\]
+The four contrast fluxes are
+\[
+(\phi_0,\phi_1,\phi_2,\phi_3)
+=\left(\frac{54}{35},\frac{20}{21},0,-\frac{1190}{657}\right).
+\]
+Using the unregrouped identity
+\(\mathcal J_j'=\phi_j(y_{j+1}'-y_j')\) therefore yields
+\[
+\boxed{
+\frac{(\mathcal J_0',\mathcal J_1',\mathcal J_2',\mathcal J_3')}{c}
+=\left(
+\frac{27(5\sqrt3-1)}{35},
+\frac{40(21+5\sqrt3)}{63},
+0,
+\frac{595(33+67\sqrt3)}{1971}
+\right).
+}
+\tag{24}
+\]
+Every entry is nonnegative. Periodicity now proves
+\[
+\mathcal K_a'(0)=\sum_j a_j\mathcal J_j'(0)\ge0
+\tag{25}
+\]
+for **every** finitely supported, time-independent \(a_j\ge0\),
+without a slow-taper hypothesis. It is strictly positive whenever the
+taper gives positive weight to a triple whose start is not congruent
+to \(2\pmod4\). Thus repeating this particular control across a growing
+buffer cannot turn (23) into the adverse aggregate sought by the
+overlap/taper clue.
+
+The negative density in (23) and the nonnegative densities in (24)
+are compatible: discrete summation by parts redistributes the local
+contributions. For a nonconstant taper the taper-difference term in
+XF-031 must accompany the regrouped bulk term. The signs of these
+two local representations are not interchangeable. This calculation
+does not prove aggregate positivity for other configurations, for
+time-dependent weights, or at later times of this trajectory; it
+does not supply an Xi-specific restriction either.
+
+Exact arithmetic in \(\mathbb Q(\sqrt3)\) checks the cotangent sums,
+the rational fluxes, and both cyclic expressions
+\(\sum_j\phi_j(y_{j+1}'-y_j')
+=\sum_j(\phi_{j-1}-\phi_j)y_j'\).
+The displayed equations, rather than a numerical sign test, prove
+the result.
 
 ## 5. Boundary conditions and stress tests
 
