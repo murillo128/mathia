@@ -1,7 +1,7 @@
 ---
 id: CLUE-xi-flow-randomized-jacobi-unknown-slack-stopping-tail
 type: research-clue
-status: proposed
+status: resolved
 origin: master-researcher
 target_line: xi_flow
 based_on:
@@ -42,3 +42,13 @@ If the pair exists, run a capped randomized policy against the midpoint and cont
 ## Evidence boundary
 
 No randomized Jacobi lower bound, strict complex join, or sharp stopping-tail law is established by this clue. AF-576's real derivative ordering and exclusion of the endpoint are not Jacobi assumptions. XF-203's deterministic result remains resolved and is not challenged by this separate question. The classical testing method needs a destination-specific fixed-input construction and ordinary prior-art audit. No Bayesian prior, optimal slack-dependent rate, finite-precision implementation, physical Xi access, zero exclusion, or RH implication is asserted.
+
+## Research disposition
+
+Outcome: supported
+
+Resolved by:
+
+- [[research/xi_flow/findings/XF-204-randomized-jacobi-detection-has-a-sharp-error-stopping-tail]]
+
+An explicit convex-velocity join preserves the critical endpoint value and the entire tail while keeping the derivative norm strictly below the exact full-response threshold. The resulting two baselines are fixed before the seed. Every finite row cap has minimax error `1/2`, and the sharp worst-case stopping tail at error `alpha<1/2` is `1-2 alpha`. XF-203's pathwise certificate supplies the matching upper policy both without noise and under one known total squared-noise cap; no per-row stochastic model is assumed. Physical Xi access and zero exclusion remain outside the result.
