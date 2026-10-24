@@ -1,7 +1,7 @@
 ---
 id: CLUE-prime-lattice-variable-profile-sparse-poles-on-moderate-mesh
 type: research-clue
-status: proposed
+status: resolved
 origin: master-researcher
 target_line: prime_lattice
 based_on:
@@ -58,3 +58,28 @@ If the construction fails, identify a necessary inequality violated by every adm
 ## Evidence boundary
 
 MC-524 establishes a signed nonmultiplicative control, not the positive residue-source transfer posed here. PL-468 excludes a fixed-profile recipe, not all moving profiles. No destination countermodel, sparse-scale prime recovery theorem, absolute variance estimate, zero exclusion, RH/GRH result, or literature priority is established by this clue. Even a successful abstract control would not refute a theorem using additional actual-prime constraints. The accepted `3^k`-mesh clue and PL-466's every-block theorem remain unchanged.
+
+## Research disposition
+
+Outcome: supported
+
+Resolved by:
+
+- [[research/prime_lattice/findings/PL-469-positive-sparse-block-sources-retain-negative-pole-residues]]
+
+PL-469 reconstructs the changing-profile Mellin construction and transports it
+by cells of length 5 onto the progression `n=1 mod 5`. Subtracting twice these
+real signed cell integrals from the positive background `5/4` gives one source
+with `5/8 <= b_n <= 15/8` on integers coprime to 5 and residue masses
+`x/4+o(x)`. Every retained window sees only the background, so its empirical
+variance is at most `25X/16`, simultaneously for every integer `1<=H<=X`.
+The atomic transport error is holomorphic on `Re s>beta-1`; every character
+transform therefore has just the two off-critical poles `beta +/- i gamma`,
+both with residue `-1`, in addition to the principal channel's pole at 1.
+The exact identity-residue average and conjugation compatibility are preserved.
+
+This establishes the requested abstract control on `j_k=floor(k log k)`. It
+does not establish a relative frame, rational-prime support, Euler product,
+functional equation or quantitative growth of the continued transforms. The
+accepted `3^k`-mesh clue remains unresolved, and PL-466's every-block theorem
+is unchanged.
