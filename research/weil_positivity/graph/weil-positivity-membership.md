@@ -456,3 +456,4 @@ This stable projection inventories every current canonical Weil Positivity findi
 - [[research/weil_positivity/findings/WP-446-positive-maharam-spectral-filters-collapse-under-two-dilations|WP-446]]
 - [[research/weil_positivity/findings/WP-447-homogeneous-maharam-forms-recover-classical-gcd-grams|WP-447]]
 - [[research/weil_positivity/findings/WP-448-periodic-maharam-forms-have-a-sharp-zeta-smoothing-threshold|WP-448]]
+- [[research/weil_positivity/findings/WP-449-nonperiodic-maharam-positive-forms-from-coprime-counting|WP-449]]

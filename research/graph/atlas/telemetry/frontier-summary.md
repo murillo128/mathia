@@ -2,7 +2,7 @@
 id: RA-frontier-telemetry-v1
 type: riemann-atlas-frontier-telemetry
 atlas_version: 1
-prospective_source_cutoff: 2a12ef1e9a3ce0ab7fc1209575a271f27669a9ad
+prospective_source_cutoff: 8ca9e2370e2ab13a76dfb138808357b257b2647a
 derived: true
 ---
 
@@ -24,7 +24,13 @@ XF-207 extends XF-206's noiseless holomorphic obstruction to arbitrary finite co
 
 The positive-noise result refines the same polynomial-calibration resource question, so its existing `new-barrier` episode is updated rather than counted again; the Jacobi episode is unchanged. AF's positive full-ray norm margin remains explicit. Global MI-039 compares the norms without transferring the theorem: Xi's chord contrast has decreasing ℓ² coefficient norm as the row count grows, whereas its ℓ¹ norm does not decrease under AF's supremum-error model. Classical approximation and hidden-perturbation impossibility are prior art; the source proves its own admissibility and finite-label return bound. No exact Atlas leaf is assigned to these synthetic acquisition interfaces, and no territory mass or state changes.
 
-The retained window and ratios are unchanged. Membership, native-link formatting, synthesis and prior-art registration contribute no episodes. The sample remains selective; other current source changes have not been semantically classified in this bounded reconciliation.
+## Known-degree full-ray recovery
+
+[[research/arithmetic_fidelity/findings/AF-581-known-polynomial-degree-restores-sharp-full-ray-adaptive-recovery|AF-581]] settles a different question: how many deterministic adaptive values recover the full absolute-error margin when the finite polynomial degree r is supplied? Its escaping-anchor construction controls the absolute coefficient norm while cancelling the nuisance exactly. For every sufficiently remote finite prime-edit set, r+3 values attain each strict allowance below d(S)/4. At r+2, adaptivity equals fixed design for every finite set, and the sharp asymptotic worst-family fraction is ρ=(8e/9)log(3/2)<1. An all-signed-measure bound controls arbitrary polynomial-annihilating banks; an explicit non-arithmetic analytic family realizes the same gap exactly.
+
+This is one `viable-extension` episode for the known-degree budget, separately classifiable from AF-580's unknown-degree return obstruction. It does not reopen or reclassify that obstruction. Classical interpolation and uniform-approximation ideas are acknowledged prior art; the source supplies its own noise-norm and sharp-budget argument. The source set, degree and strict slack are fixed before choosing finite anchors. No uniform anchor-size, finite-precision, relative-error, endpoint-recovery or randomized-minimax result is asserted, and no exact RH Atlas leaf is assigned.
+
+The last-20 rule removes the oldest retained translation-coordinate episode from the current window; its evidence remains in Git. The change in rates reflects this selected question and window replacement, not increased topology. Membership, native-link formatting, synthesis and prior-art registration contribute no episodes. Other source changes remain outside this bounded semantic classification.
 
 ## Retained prospective window
 
@@ -33,11 +39,11 @@ Classifiable episodes: **20**. Insufficient-evidence episodes: **0**. Retrospect
 | Classification | Episodes |
 | --- | ---: |
 | known-prior-art | 3 |
-| new-barrier | 11 |
-| viable-extension | 6 |
+| new-barrier | 10 |
+| viable-extension | 7 |
 
-- **FrontierFertilityEpisodes = 30.0%**
-- **BarrierRate = 55.0%**
+- **FrontierFertilityEpisodes = 35.0%**
+- **BarrierRate = 50.0%**
 - **PriorArtCollisionRate = 15.0%**
 - **InternalDuplicateRate = 0.0%**
 
@@ -45,7 +51,7 @@ Classifiable episodes: **20**. Insufficient-evidence episodes: **0**. Retrospect
 
 | Line | Episodes | Viable extension | Barrier | Prior art | Duplicate |
 | --- | ---: | ---: | ---: | ---: | ---: |
-| `arithmetic_fidelity` | 3 | 1 | 2 | 0 | 0 |
+| `arithmetic_fidelity` | 3 | 2 | 1 | 0 | 0 |
 | `farey_discrepancy` | 1 | 0 | 1 | 0 | 0 |
 | `mobius_cancellation` | 3 | 1 | 1 | 1 | 0 |
 | `nyman_beurling` | 1 | 0 | 1 | 0 | 0 |

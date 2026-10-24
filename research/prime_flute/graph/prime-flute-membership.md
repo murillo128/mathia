@@ -364,3 +364,4 @@ This stable projection inventories every current canonical Prime Flute finding. 
 - [[research/prime_flute/findings/PF-351-mismatched-transition-nodes-can-erase-the-coupled-corridor-model-angle|PF-351]]
 - [[research/prime_flute/findings/PF-352-complete-transition-lattices-admit-geometrically-compatible-corridor-cancellation|PF-352]]
 - [[research/prime_flute/findings/PF-353-complete-common-frequency-fibres-retain-the-coupled-corridor-angle|PF-353]]
+- [[research/prime_flute/findings/PF-354-prime-cuff-lengths-are-rationally-independent-and-have-no-common-nonzero-frequency|PF-354]]

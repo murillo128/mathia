@@ -6,7 +6,7 @@ EXACT-DERIVED · LITERATURE+DERIVED · POLYNOMIAL-NUISANCE · SHARP-ADAPTIVE-BUD
 
 ## The degree promise changes the positive-noise stopping boundary
 
-AF-580 rules out reliable finite stopping under unknown, unbounded polynomial calibration degree, even below a positive full-ray noise margin. A **known finite degree bound** changes that conclusion. On the full positive ray, every fixed degree has the same sharp one-extra-adaptive-probe phenomenon previously established only for constant and affine drift in AF-568/569.
+[[research/arithmetic_fidelity/findings/AF-580-positive-noise-destroys-finite-stopping-under-unknown-polynomial-calibration|AF-580]] rules out reliable finite stopping under unknown, unbounded polynomial calibration degree, even below a positive full-ray noise margin. A **known finite degree bound** changes that conclusion. On the full positive ray, every fixed degree has the same sharp one-extra-adaptive-probe phenomenon previously established only for constant and affine drift in AF-568/569.
 
 Use the registered prime-edit curves
 \[
@@ -53,7 +53,7 @@ and the sharp worst-family ratio is, for each fixed \(r\),
       {\varepsilon_{\rm full}^{[r]}(S)}=\rho.}
  \tag{6}
 \]
-The same four-prime families as AF-562 realize the upper limit for every fixed \(r\). Thus \(r+3\) is the smallest budget that universally captures the full margin in this regime. At most \(r+1\) queries cannot identify even two labels at zero noise.
+The same four-prime families as [[research/arithmetic_fidelity/findings/AF-562-multiway-prime-edit-one-sample-locality-and-two-scale-obstruction|AF-562]] realize the upper limit for every fixed \(r\). Thus \(r+3\) is the smallest budget that universally captures the full margin in this regime. At most \(r+1\) queries cannot identify even two labels at zero noise.
 
 The new ingredients are a polynomial-annihilating anchor construction whose noise norm approaches that of a constant-offset contrast, and a signed-measure certificate that bounds **all** higher-degree one-dimensional quotient contrasts. Merely counting nuisance coefficients would prove neither (4) nor (6).
 
@@ -142,7 +142,7 @@ These strict inequalities are possible because \(\gamma>d/2>2\varepsilon\) and \
 
 Query the anchors, then \(a_*\). Every label-compatible center lies within \(E=\varepsilon(2+\nu)\) of \(Z(a_*)\). Adjacent centers are separated by more than \(\gamma-\tau>E\); three centers, or two nonadjacent centers, therefore cannot fit in an interval of length \(2E\). At most two adjacent labels survive. If two remain, query their \(a_i^\sharp\). Their new centers differ by more than \(d-2\tau>2E\), so their error intervals are disjoint. Reusing the anchors correlates the contrast errors, but these necessary marginal bounds already suffice for identification.
 
-This uses at most \(r+3\) values. AF-563 supplies (15) uniformly for all sufficiently remote finite prime-edit sets, since it proves a locator with \(\gamma/d\ge\rho-o(1)>1/2\). It proves (4) without a cardinality or logarithmic-diameter restriction on \(S\).
+This uses at most \(r+3\) values. [[research/arithmetic_fidelity/findings/AF-563-universal-sharp-one-sample-ratio-for-discrete-prime-edits|AF-563]] supplies (15) uniformly for all sufficiently remote finite prime-edit sets, since it proves a locator with \(\gamma/d\ge\rho-o(1)>1/2\). It proves (4) without a cardinality or logarithmic-diameter restriction on \(S\).
 
 Using only the anchors and locator instead gives a fixed \(r+2\)-query radius approaching \(\gamma/4\). To see this directly, the adjacent unnormalized contrasts in (14) approach \(G_i(a_*)\), their noise norm approaches two, and every nonadjacent contrast is a sum of positive adjacent ones. For fixed \(S,r\) the anchors can approach the required limits independently of the prime asymptotics. AF-563 therefore gives the lower bound \(\rho\) in (6).
 
@@ -160,7 +160,7 @@ For **every finite signed measure** \(\mu\) on \([0,\infty)\) satisfying
  \boxed{\min\{|\mu(f)|,|\mu(g)|\}\le\rho/2.}
  \tag{18}
 \]
-This removes the three-node restriction of AF-569's contrast bound. No higher moment constraints or support-size assumptions are needed.
+This removes the three-node restriction of [[research/arithmetic_fidelity/findings/AF-569-affine-output-drift-forces-four-adaptive-prime-edit-probes|AF-569]]'s contrast bound. No higher moment constraints or support-size assumptions are needed.
 
 **Same-sign case.** Since \(1/c<x_*<1\), the coefficient
 \[
@@ -191,7 +191,7 @@ For any \(r+2\)-node design, (8) defines such a measure after the common positiv
  \frac{G_{u,v}(a)}{d(S)}=g(e^{B_1}a\log p)+o(1).
  \tag{22}
 \]
-For clarity, that construction uses a consecutive gap \(q-p=s=O(\log p)\), sets \(Q=p^{3/2}/(2\sqrt{s})\), and takes primes \(u\sim Q\), \(v\sim2Q\). PNT gives these choices. AF-559's uniform peak formula makes both outer peaks asymptotic to \(2s/(ep^3\log p)\), while the middle peak is much larger; \(\log u/\log p\to3/2\). Thus normalization by the actual \(d(S)\) gives (22).
+For clarity, that construction uses a consecutive gap \(q-p=s=O(\log p)\), sets \(Q=p^{3/2}/(2\sqrt{s})\), and takes primes \(u\sim Q\), \(v\sim2Q\). PNT gives these choices. [[research/arithmetic_fidelity/findings/AF-559-all-pair-prime-edit-separation-has-uniform-sharp-critical-window|AF-559]]'s uniform peak formula makes both outer peaks asymptotic to \(2s/(ep^3\log p)\), while the middle peak is much larger; \(\log u/\log p\to3/2\). Thus normalization by the actual \(d(S)\) gives (22).
 
 The TV-one normalization carries the uniform \(o(1)\) through **every** design, including ill-conditioned, coalescing or escaping nodes. Applying (18) and then (9) gives
 \[
@@ -220,9 +220,9 @@ A scratch-only rational-arithmetic check verified 252 polynomial-reproduction id
 
 ## Prior art, delta and boundaries
 
-Polynomial interpolation, divided-difference annihilators, quotient duality and bounded-error ball intersection are classical. Carl de Boor's *Divided Differences* (2005), already anchored under AF-571, supplies the standard interpolation setting. Dette and Titoff, [*Optimal discrimination designs* (2009), Theorem 2.1](https://arxiv.org/abs/0908.1912), connect classical regression discrimination to best uniform approximation. Rosa and Harman, [*Optimal Approximate Designs for Estimating Treatment Contrasts Resistant to Nuisance Effects*](https://arxiv.org/abs/1504.06079), treat additive nuisance effects and polynomial trends. Their statistical criteria do not directly prove this deterministic adaptive query theorem on an unbounded domain. No general approximation, experimental-design or priority claim is made.
+[[research/prior_art/incremental/PA-hermite-polynomial-interpolation|Polynomial interpolation]], divided-difference annihilators, quotient duality and bounded-error ball intersection are classical. Carl de Boor's *Divided Differences* (2005), already anchored under AF-571, supplies the standard interpolation setting. Dette and Titoff, [*Optimal discrimination designs* (2009), Theorem 2.1](https://arxiv.org/abs/0908.1912), connect classical regression discrimination to best uniform approximation. Rosa and Harman, [*Optimal Approximate Designs for Estimating Treatment Contrasts Resistant to Nuisance Effects*](https://arxiv.org/abs/1504.06079), treat additive nuisance effects and polynomial trends. Their statistical criteria do not directly prove this deterministic adaptive query theorem on an unbounded domain. No general approximation, experimental-design or priority claim is made.
 
-Relative to AF-568/569, the substantive extension is the **all-known-degrees full-ray budget and unchanged sharp ratio**, supported by the stronger signed-measure certificate and the controlled noise norm of escaping anchors. Relative to AF-571, the domain and margin change: that finding recovers the reduced small-window quotient margin with \(r+2\) fixed probes, whereas the present full-ray margin can require \(r+3\) adaptive probes. Relative to AF-580, the supplied degree bound is the explicit hypothesis that restores reliable finite positive-noise recovery.
+Relative to AF-568/569, the substantive extension is the **all-known-degrees full-ray budget and unchanged sharp ratio**, supported by the stronger signed-measure certificate and the controlled noise norm of escaping anchors. Relative to [[research/arithmetic_fidelity/findings/AF-571-polynomial-drift-has-exact-small-window-probe-saturation|AF-571]], the domain and margin change: that finding recovers the reduced small-window quotient margin with \(r+2\) fixed probes, whereas the present full-ray margin can require \(r+3\) adaptive probes. Relative to AF-580, the supplied degree bound is the explicit hypothesis that restores reliable finite positive-noise recovery.
 
 The load-bearing limits are separate: first fix the finite source set, degree and strict noise slack, then choose legal finite anchors; prime-family limits establish the worst relative ratio. No uniform bound on anchor locations, output magnitudes or finite-precision arithmetic cost is proved. Interpolated values may be enormous, even though their absolute-error amplification is controlled. The theorem fails to address bounded query windows, unknown degree, separately changing calibration between probes, relative rather than absolute error, and randomized minimax error probabilities. It gives an equality of supremal radii, not endpoint recovery or one finite anchor set attaining all limiting margins simultaneously.
 

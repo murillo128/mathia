@@ -534,3 +534,4 @@ This stable projection inventories every current canonical Möbius Cancellation 
 - [[research/mobius_cancellation/findings/MC-525-polynomial-strip-growth-forces-pole-variance-on-every-block|MC-525]]
 - [[research/mobius_cancellation/findings/MC-526-selected-mobius-variance-excludes-finite-exceptional-zero-clusters|MC-526]]
 - [[research/mobius_cancellation/findings/MC-527-good-height-truncation-isolates-selected-scale-pole-cancellation|MC-527]]
+- [[research/mobius_cancellation/findings/MC-528-multiplicity-aware-annihilation-forces-mobius-variance-on-every-block|MC-528]]
