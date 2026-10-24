@@ -467,6 +467,18 @@ Relevant finding: PF-350; relevant local clue: CLUE-positive-width-transition-sc
 
 **Scope warning.** These are classical block-positivity principles. The prime-flute input is PF-350's uniform domination of the entire coupled antisymmetric transition block by the actual seam form. Neither the reference nor that comparison resolves the globally symmetric transition angle, infinite-section limits, or compactness.
 
+## S28 — grounded network elimination and the coupled corridor control
+
+**F. Dörfler and F. Bullo**, *Kron Reduction of Graphs With Applications to Electrical Networks*, IEEE Transactions on Circuits and Systems I 60 (2013), 150–163. DOI: 10.1109/TCSI.2012.2215780.
+
+- https://arxiv.org/abs/1102.2950
+- https://motion.me.ucsb.edu/pdf/2011d-db.pdf
+- Classical Schur elimination of grounded weighted network forms. PF-351 combines this framework with the scalar Cauchy identity already supported by S23; its cancellation criterion is proved directly.
+
+Relevant finding: PF-351; relevant local clue: CLUE-positive-width-transition-schur-complement.md.
+
+**Scope warning.** PF-351 concerns a Gram-valued two-module corridor control, with arbitrary distinct transition nodes and tunable grounding. Scalar graph sign rules do not identify its frequency matrix with a scalar Laplacian. Neither this source nor the control establishes cancellation for the actual prime-flute Fourier lattices or pant DtN form.
+
 ## Provenance policy for future additions
 
 For each future finding, record separately:
