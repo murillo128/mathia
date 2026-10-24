@@ -7,7 +7,7 @@
 
 ## Claim and scope
 
-Two multiplicatively independent seed orbits recover the continuous Nyman space in closure, but their algebraic sum does not contain the projection of the actual target onto that space. Approaching the optimal target distance forces both orbit components to diverge in the physical Hilbert norm. This strengthens the coefficient-cost obstruction of NB-353: cancellations within each seed orbit have already been taken before the cost is measured.
+Two multiplicatively independent seed orbits recover the continuous Nyman space in closure, but their algebraic sum does not contain the projection of the actual target onto that space. Approaching the optimal target distance forces both orbit components to diverge in the physical Hilbert norm, with squared component norm at least a seed-dependent constant times the logarithm of inverse projection error. This strengthens the coefficient-cost obstruction of NB-353: cancellations within each seed orbit have already been taken before the cost is measured.
 
 In \(H=L^2(0,1;dx)\), set
 \[
@@ -157,10 +157,61 @@ If \(\varepsilon=0\), every return instead has
 \]
 which proves divergence of the other component. Together with (5) and the closure statement, this proves (2)--(3).
 
+## 4. Weighted returns give an explicit logarithmic norm cost
+
+The return count in (10) can be replaced by a lower bound that needs no information about the spacing of good approximations. For any irrational \(\alpha\) and real \(X\ge1\), define
+\[
+W_\alpha(X)=\sum_{1\le\ell\le X}
+\frac1{\ell^2\|\ell\alpha\|_{\mathbb R/\mathbb Z}^2}.
+\tag{11}
+\]
+An elementary dyadic form of Dirichlet's argument gives
+\[
+\boxed{W_\alpha(X)\ge1+\lfloor\log_2 X\rfloor.}
+\tag{12}
+\]
+To prove this without assuming distinct returns at successive scales, put \(m=\lfloor\log_2 X\rfloor\). For every \(0\le k\le m\), choose a Dirichlet return \(1\le n_k\le2^k\) with \(\|n_k\alpha\|\le2^{-k}\). If the same integer \(n\) is selected at \(r\) scales \(k_1<\cdots<k_r\), then
+\[
+\frac1{n^2\|n\alpha\|^2}
+\ge\left(\frac{2^{k_r}}n\right)^2
+\ge4^{k_r-k_1}\ge4^{r-1}\ge r.
+\]
+Sum this inequality over the distinct selected integers, all at most \(2^m\). Their scale counts sum to \(m+1\), proving (12). A very sparse return sequence therefore does not defeat the estimate: a return used for many scales has enough reciprocal-square weight to pay for every reuse. No lower bound of order \(\log X\) for the *unweighted* count \(D_\alpha(X)\) is being assumed.
+
+The estimate in (9) before restricting to returns is
+\[
+|\Theta_p(s_\ell)|\le K_{p,q}\|\ell\alpha\|_{\mathbb R/\mathbb Z}
+\qquad(\ell\ge1).
+\]
+Set
+\[
+a_q=\frac b{2S_q},\qquad
+\kappa_{p,q}=\frac{b^2}{4C_qS_q^2K_{p,q}^2}>0.
+\]
+For \(0<\varepsilon\le a_q\), put \(X=a_q/\varepsilon\). At every integer \(1\le\ell\le X\),
+\(b/|s_\ell|-\varepsilon\ge b/(2S_q\ell)\). Applying (7) with \(K=\lfloor X\rfloor\), and then (11)--(12), gives
+\[
+\boxed{\|v\|_2^2\ge\kappa_{p,q}W_\alpha(a_q/\varepsilon)
+\ge\kappa_{p,q}\left(1+\left\lfloor
+\log_2\frac{a_q}{\varepsilon}\right\rfloor\right).}
+\tag{13}
+\]
+Interchanging the seeds gives the corresponding bound for \(u\), with \(a_p\) and \(\kappa_{q,p}\). Thus each physical component is at least of order \(\sqrt{\log(1/\varepsilon)}\) as the projection error tends to zero, for every fixed independent seed pair, unconditionally.
+
+In particular, a bound \(\|v\|_2\le R\), with \(R\ge0\), implies the explicit target-error floor
+\[
+\boxed{\|e-u-v\|_2^2
+\ge1-b^2+a_q^2\,2^{-2R^2/\kappa_{p,q}}.}
+\tag{14}
+\]
+Indeed, (13) implies \(\varepsilon\ge a_q2^{-R^2/\kappa_{p,q}}\) when \(\varepsilon\le a_q\); the same weak inequality is automatic when \(\varepsilon>a_q\), and \(\varepsilon=0\) has already been excluded. Use (5) to square this bound. There is an analogous bound under \(\|u\|_2\le R\).
+
+The constants retain the unknown positive Burnol factor \(b\). Formula (14) is a necessary lower bound; it does not construct approximants with exponentially small error at a given norm budget. Nor does a lower bound on a reciprocal sum turn the sampling inequality (6) into a sufficient interpolation theorem.
+
 ## Consequences and controls
 
-- Both components already range over complete closed real-dilation orbit spaces. Replacing a seed's generator list by an equivalent basis, or canceling coefficients within that orbit, cannot remove the bound on its resulting physical vector. The decomposition between the two spaces need not be unique; (7)--(10) hold for every decomposition.
-- Any fixed bound on either component norm leaves a strictly positive excess over the squared Burnol floor. For a bound on \(v\), choose \(X\) for which the right-hand coefficient in (10) times \(D_\alpha(X)\) exceeds the proposed squared norm budget; then \(\varepsilon\le b/(2S_qX)\) is impossible. Interchange \(p,q\) for a bound on \(u\). The constants depend on the seeds and on \(b\); no effective lower estimate for \(b\) is asserted.
+- Both components already range over complete closed real-dilation orbit spaces. Replacing a seed's generator list by an equivalent basis, or canceling coefficients within that orbit, cannot remove the bound on its resulting physical vector. The decomposition between the two spaces need not be unique; (7)--(14) hold for every decomposition.
+- Any fixed bound on either component norm leaves the explicit positive excess (14) over the squared Burnol floor. The constants depend on the seeds and on \(b\); no effective lower estimate for \(b\), bounded partial quotients, or irrationality measure for the log ratio is assumed.
 - The two total components must cancel increasingly large physical energy while their sum converges to the fixed vector \(t\). Nonclosedness alone would only show that some vector lacks a decomposition; the lattice argument identifies the actual projected Nyman target as such a vector.
 - The result is compatible with NB-354: a sequence of finite sums from the two orbits approaches \(t\), while the separately grouped orbit sums have unbounded norms. It is also distinct from NB-353's weighted absolute-coefficient cost, which is not a physical norm and cannot be substituted for it.
 - Rational log ratios do not satisfy the theorem's hypotheses: exact common zeros then survive, and NB-354 gives a smaller closure with extra target loss. Allowing three or more independent seed types also changes the interpolation equation at a zero of one seed; the present two-component contradiction does not establish the corresponding claim for that larger family.
@@ -174,6 +225,8 @@ Burnol, *A note on Nyman's equivalent formulation of the Riemann Hypothesis*, [S
 
 For the surrounding operator mechanism, Douglas, *Variations on a theme of Beurling*, New York J. Math. 17a (2011), 1--10, [Section 6, Theorem 6.1](https://nyjm.albany.edu/j/2011/17a-1v.pdf), records the classical corona lower bound controlling similarity for a two-function Hardy quotient. Our pair, divided by \(\sqrt2\), satisfies its boundary normalization but fails the interior lower bound along (9). That identifies the usual conditioning mechanism; it does not itself prove that the specified target is outside the algebraic sum. The target-specific step here is the non-square-summability forced by \(b/s\), quantified in (7)--(10).
 
+Borda, *On the theorem of Davenport and generalized Dedekind sums*, J. Number Theory 172 (2017), 1--20, [Section 4, Theorem 3](https://arxiv.org/pdf/1606.07946), studies exactly the family of reciprocal sums containing (11), with continued-fraction estimates at convergent cutoffs. His *Remarks on sums of reciprocals of fractional parts*, Acta Arith. 212 (2024), 373--389, [Introduction](https://arxiv.org/pdf/2305.07394), places the squared case in the older Beck/Kruse literature. The scalar sum and its Diophantine mechanism are established prior art. The self-contained dyadic proof (12) supplies the coarse all-cutoff bound needed here; the line-specific consequence is its transfer into the physical target budget (13)--(14). No new reciprocal-sum theorem or sharp asymptotic for the arithmetic log ratio is claimed.
+
 The literature audit covered finite generator families, dilation-invariant Nyman subspaces, coprime inner factors, corona bounds, and sums of invariant subspaces. Yang's *A fundamental set in \(L^2(0,1)\)*, Acta Arith. 199 (2021), 269--274, DOI `10.4064/aa200216-31-8`, was inspected at publisher-abstract level only; no detailed theorem comparison is inferred from that abstract. No matching-search absence is treated as a novelty claim. Locally, NB-004 already uses logarithmic phase recurrence for target-orthogonal approximate aliases; its control does not imply the present obstruction for the actual target after inner-factor removal.
 
-The mathematical delta is the failure of exact two-orbit assembly of \(P_{\mathcal N}e\) and necessary divergence of physical component norms, not a new closure criterion. The evidence is the analytic proof above. Its decisive audit points are the retained factor \(b\), the sampling normalization \(C_q\), the removed zero at \(s=1\), and the balance of target decay \(1/\ell\) with near-collision decay in (9). No numerical estimate of the optimum, Lean verification, independent adversarial approval, or uniform error-rate law is asserted.
+The mathematical delta is the failure of exact two-orbit assembly of \(P_{\mathcal N}e\), with a logarithmic lower bound on squared physical component norms and the explicit budget-dependent excess (14), not a new closure criterion. The evidence is the analytic proof above. Its decisive audit points are the retained factor \(b\), the sampling normalization \(C_q\), the removed zero at \(s=1\), the balance of target decay \(1/\ell\) with near-collision decay in (9), and correct counting of repeated dyadic returns in (12). No numerical estimate of the optimum, Lean verification, independent adversarial approval, matching upper bound, or finite-section approximation rate is asserted.
