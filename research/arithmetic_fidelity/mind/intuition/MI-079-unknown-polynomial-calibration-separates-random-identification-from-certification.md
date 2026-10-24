@@ -20,7 +20,19 @@ The quantifiers carry the effect:
 \]
 without a common probability-one set working for every \(x\). Fixing \(V\) first restores the interpolation adversary. Reusing \(V\) is valid only because the entire sequence of possible interpolants is independent of it.
 
-This advantage requires an exact continuous coordinate and exact equality tests. If a terminating execution reads finitely many fair coin bits, some terminating correct finite bit word has positive probability. Interpolate a false-label input on that word's finite transcript. Every coin stream extending the word then makes the same incorrect decision on that fixed input, contradicting zero error. Arbitrarily many input-dependent bits do not remove this obstruction when every terminating execution uses finitely many. Nonzero-error Monte Carlo recovery is not excluded.
+This advantage requires an exact continuous coordinate and exact equality tests. For fair-coin policies whose label-returning executions use finitely many bits and queries, AF-577 proves the sharper bound
+\[
+e(\mathcal A):=\sup_x\Pr_x(T<\infty,\widehat i\ne i)
+\ \ge\ \frac{m-1}{m}\Pr_y(T<\infty)
+\quad\text{for every fixed input }y.
+\]
+Here \(T\) is the label-return time; abstention or nonreturn contributes no error. To see why the bound concerns one fixed adversary rather than a seed-dependent choice, take any finite set \(W\) of returning prefix-free coin words on \(y\). Interpolate **one polynomial for each label** on the union of all their queried coordinates. Repeated coordinates are consistent because every transcript comes from the same \(y\). Each resulting input reproduces every execution in \(W\), including adaptive choices. If \(q_W\) is their total probability and \(q_{j,W}\) the mass returning label \(j\), some matched label incurs error at least
+\[
+\max_j(q_W-q_{j,W})\ge(1-1/m)q_W.
+\]
+Exhausting the countable returning words proves the bound. The competing input may change with the finite set \(W\), but never with the realized seed.
+
+Consequently almost-sure return on every input has exact minimax error \(1-1/m\), attained by blind uniform guessing. No uniform cap or finite expected cost is needed; unrestricted input-dependent finite bits and queries cannot lower this worst-case error. Returning a uniform label with probability \(\gamma\) gives equality \(e=\gamma(1-1/m)\), with finite-bit sampling for rational \(\gamma\). This is a uniform guarantee over unbounded polynomial degree, not an exclusion of degree-dependent success bounds. The continuous-coordinate procedure has no positive-mass finite-bit cylinders and lies outside the argument; its fixed-budget minimax law is not established here.
 
 The same class has zero uniform noise radius, even with the full curve: polynomial density in \(C[0,A]\) gives, for every \(\varepsilon>0\), a \(p\in\Pi\) with
 \[
