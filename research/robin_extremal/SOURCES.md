@@ -76,6 +76,10 @@ This file records durable literature dependencies for `research/robin_extremal/`
 
 - Lawrence G. Brown and Bradley J. Lucier, *Best approximations in L1 are near best in Lp, p < 1*, Proceedings of the American Mathematical Society **120** (1994), 97–100, [author-hosted paper](https://www.math.purdue.edu/~lucier/pde-papers/nearbest.pdf). Role: the opening page identifies medians as best constant L1 approximants, the classical mechanism behind RE-261's exact zero-moment counting relaxation. The Robin kernel, finite-scale constant and maximizing cutoff are derived in RE-261; the source does not establish discrete-source attainability or a Robin inequality.
 
+## Prime-chain divisibility
+
+- Kevin Ford, Sergei V. Konyagin and Florian Luca, *Prime chains and Pratt trees*, Geometric and Functional Analysis **20** (2010), 1231--1258, DOI `10.1007/s00039-010-0089-0`, [arXiv:0904.0473v4](https://arxiv.org/abs/0904.0473v4). Role: Section 1.1 defines the classical relation `r | s-1` between primes. RE-262 uses it as the denominator-cancellation alternative in a finite Euler-factor rigidity theorem with a counting constraint. The source is a prior-art boundary for that relation; no prime-chain distribution estimate is imported, and the finite source-repair theorem is derived in RE-262.
+
 ## Expansion rule
 
 Add primary sources when a canonical finding depends on an exact theorem about superabundant/colossally abundant integers, exponent-profile transitions, explicit prime-distribution errors, or extremal divisor-sum bounds. Finite verification records should be cited only when a finding actually depends on their verified range.
