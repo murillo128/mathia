@@ -506,3 +506,11 @@ Only sources that materially support, delimit, or redirect stored `PL-*` finding
 
 131. **Kevin Ford, Sergei Konyagin**, “The prime number race and zeros of L-functions off the critical line, II,” in *Proceedings of the Session in Analytic Number Theory and Diophantine Equations* (Bonn, 2002), Bonner Mathematische Schriften **360** (2003); author archive https://arxiv.org/abs/1910.08981, full text https://arxiv.org/html/1910.08981v1.
      - Role: closest hypothetical-zero-control comparison for PL-467. Section 1 defines finite barriers and their dominant oscillatory residue-class observables. Their prime-race ordering results do not establish PL-467's positive coefficient sequence or centered covariance floor, and neither construction asserts that the hypothetical zeros occur for actual Dirichlet L-functions.
+
+## Lacunary Mellin boundaries of sparse source overwrites
+
+132. **Jason P. Bell, Jeffrey C. Lagarias**, “3x+1 inverse orbit generating functions almost always have natural boundaries,” *Acta Arithmetica* **170**(2) (2015), 101–120. DOI: https://doi.org/10.4064/aa170-2-1. Author manuscript: https://arxiv.org/abs/1408.6884; publisher text: https://www.impan.pl/shop/publication/transaction/download/product/82190.
+     - Role: Section 2.1, Theorem 2.1 states the classical Fabry gap theorem. PL-468's series with exponents `3^k` is a special case; its dense-root radial argument also proves directly the stronger wording needed there, exclusion of meromorphic continuation. The positive atomic source and retained-window variance estimates are derived in PL-468, not attributed to Bell–Lagarias.
+
+133. **Ovidiu Costin, Min Huang**, “Behavior of lacunary series at the natural boundary,” *Advances in Mathematics* **222**(4) (2009), 1370–1404. DOI: https://doi.org/10.1016/j.aim.2009.06.011. Author manuscript: https://arxiv.org/abs/0810.3027.
+     - Role: primary modern comparison for boundary behavior of lacunary exponential/Dirichlet series in PL-468. No general theorem for the variable-profile omitted-block remainder of PL-466, and no actual-prime variance converse, is attributed to this source.
