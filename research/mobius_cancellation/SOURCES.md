@@ -444,3 +444,9 @@ Role: classical unconditional sparse-zero input for MC-522. Dickinson states the
 Greg Martin and Nathan Ng, *Nonzero values of Dirichlet L-functions in vertical arithmetic progressions*, International Journal of Number Theory 9 (2013), no. 4, 813–843. DOI: https://doi.org/10.1142/S1793042113500140. Author manuscript: arXiv:1109.1788v2 (2012), https://arxiv.org/pdf/1109.1788.
 
 Role: prior-art comparison for MC-522, especially the Introduction, pp. 1–2, explaining the classical zero-density obstruction to positive-density off-critical zero progressions. Their critical-line nonvanishing theorem is not used as a substitute for the zeta density input. MC-522 separately derives its full Laurent principal-part recurrence from the filtered reciprocal; no novelty is claimed for progression sparsity or finite-difference algebra.
+
+## MC-S75 — Hoeffding, bounded independent-sum concentration
+
+Wassily Hoeffding, *Probability Inequalities for Sums of Bounded Random Variables*, Journal of the American Statistical Association 58 (1963), no. 301, 13–30. DOI: https://doi.org/10.1080/01621459.1963.10500830. Original article scan: https://www.cs.rpi.edu/academics/courses/spring06/random/hoefding.pdf.
+
+Role: classical concentration input for MC-523's single square-free-supported random-sign base. A union bound over all starting points and lengths on each dyadic block, followed by Borel–Cantelli, gives simultaneous interval bounds. MC-523 proves the needed moment-generating-function special case and uses sparse deterministic overwrites to distinguish local moment coverage from global prefix control. No independence claim about Möbius or new concentration theorem is made.
