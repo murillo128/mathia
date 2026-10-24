@@ -450,3 +450,17 @@ Role: prior-art comparison for MC-522, especially the Introduction, pp. 1–2, e
 Wassily Hoeffding, *Probability Inequalities for Sums of Bounded Random Variables*, Journal of the American Statistical Association 58 (1963), no. 301, 13–30. DOI: https://doi.org/10.1080/01621459.1963.10500830. Original article scan: https://www.cs.rpi.edu/academics/courses/spring06/random/hoefding.pdf.
 
 Role: classical concentration input for MC-523's single square-free-supported random-sign base. A union bound over all starting points and lengths on each dyadic block, followed by Borel–Cantelli, gives simultaneous interval bounds. MC-523 proves the needed moment-generating-function special case and uses sparse deterministic overwrites to distinguish local moment coverage from global prefix control. No independence claim about Möbius or new concentration theorem is made.
+
+The same bounded-independent-variable inequality is used in MC-524 for nonidentically distributed signs: it controls centered prefix fluctuations, the unbiased retained windows, and fixed-pattern averages. Its use supplies an auxiliary deterministic existence control, not a model assertion about Möbius.
+
+## MC-S76 — Bos–Ware and classical Legendre reproducing kernels
+
+Leonard Bos and A. F. Ware, *On the Uniqueness of an Orthogonality Property of the Legendre Polynomials*, Dolomites Research Notes on Approximation 11 (2018), 37–42. https://drna.padovauniversitypress.it/system/files/papers/BosWare_2018_UOP.pdf. Classical normalization and finite polynomial formulas: NIST Digital Library of Mathematical Functions, §§18.3 and 18.5, https://dlmf.nist.gov/18.3 and https://dlmf.nist.gov/18.5.
+
+Role: the paper's introductory reproducing-kernel formula, not its specialized orthogonality theorem, anchors MC-524's finite polynomial moment transport. That finding derives the growing-degree norm/error balance, square-free discretization, and prescribed-pole control independently. No new orthogonal-polynomial identity is claimed.
+
+## MC-S77 — Fabry, lacunary-series continuation boundary
+
+Eugène Fabry, *Sur les points singuliers d'une fonction donnée par son développement en série et l'impossibilité du prolongement analytique dans des cas très généraux*, Annales scientifiques de l'École Normale Supérieure, série 3, 13 (1896), 367–399. DOI: https://doi.org/10.24033/asens.431. Original text: https://www.numdam.org/item/10.24033/asens.431.pdf.
+
+Role: classical gap-theorem comparison for MC-524. A sparse scalar power series is not the same object as a sparse sum of changing within-block Mellin profiles. MC-524 proves the latter's continuation directly; it neither invokes a gap theorem outside its hypotheses nor claims that meromorphic continuation is generically forbidden by density-zero block support.
