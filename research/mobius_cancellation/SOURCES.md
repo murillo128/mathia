@@ -464,3 +464,9 @@ Role: the paper's introductory reproducing-kernel formula, not its specialized o
 Eugène Fabry, *Sur les points singuliers d'une fonction donnée par son développement en série et l'impossibilité du prolongement analytique dans des cas très généraux*, Annales scientifiques de l'École Normale Supérieure, série 3, 13 (1896), 367–399. DOI: https://doi.org/10.24033/asens.431. Original text: https://www.numdam.org/item/10.24033/asens.431.pdf.
 
 Role: classical gap-theorem comparison for MC-524. A sparse scalar power series is not the same object as a sparse sum of changing within-block Mellin profiles. MC-524 proves the latter's continuation directly; it neither invokes a gap theorem outside its hypotheses nor claims that meromorphic continuation is generically forbidden by density-zero block support.
+
+## MC-S78 — Flajolet–Gourdon–Dumas, Mellin converse mapping
+
+Philippe Flajolet, Xavier Gourdon and Philippe Dumas, *Mellin Transforms and Asymptotics: Harmonic Sums*, Theoretical Computer Science 144 (1995), 3–58, Theorem 4 (converse mapping). Author manuscript: https://algo.inria.fr/flajolet/Publications/mellin-harm.pdf. Related reference: NIST Digital Library of Mathematical Functions, §2.5(i), https://dlmf.nist.gov/2.5.
+
+Role: classical pole-to-smoothed-asymptotic mechanism for MC-525. That finding proves the contour shift uniformly in the additive-window ratio, uses two mean-zero tests to retain every phase after empirical centering, and derives the necessary failure of polynomial strip growth in MC-524. Neither the literature theorem nor the finding supplies the isolated-pole/growth hypotheses for actual reciprocal zeta.
