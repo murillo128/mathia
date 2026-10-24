@@ -49,7 +49,7 @@ Then
  R_2(\delta)\sim\sqrt{\frac{\log(1/\delta)}{\delta}}.}
  \tag{5}
 \]
-The second law is a sharp resource obstruction even for binary identification. It is distinct from AF-581's multiway adaptive query-count gap and from AF-571's shrinking-window Taylor-jet law.
+The second law is a sharp resource obstruction even for binary identification. It is distinct from AF-581's multiway adaptive query-count gap and from [[research/arithmetic_fidelity/findings/AF-571-polynomial-drift-has-exact-small-window-probe-saturation|AF-571]]'s shrinking-window Taylor-jet law.
 
 ## Affine benchmark: an exact three-contact certificate
 
@@ -67,7 +67,7 @@ Indeed \(f(x)/x=e^{1-x}\ge s\), and \(f'(x)-s\) crosses zero once before one and
  \qquad p_1(x)=E_1(B)+sx.
  \tag{6}
 \]
-The residual \(f-p_1\) alternates as \(-E_1,+E_1,-E_1\) at \(0,x_1,B\) and stays between those values. Chebyshev alternation proves optimality. Since \(w=s+O(s^2)\), (6) gives (3).
+The residual \(f-p_1\) alternates as \(-E_1,+E_1,-E_1\) at \(0,x_1,B\) and stays between those values. [[research/prior_art/incremental/PA-chebyshev-alternation|Chebyshev alternation]] proves optimality. Since \(w=s+O(s^2)\), (6) gives (3).
 
 ## Quadratic certificate and its moving interior contact
 

@@ -2,7 +2,7 @@
 id: RA-metrics-v1
 type: riemann-atlas-metrics
 atlas_version: 1
-source_revision: 8ca9e2370e2ab13a76dfb138808357b257b2647a
+source_revision: b946d20d9d2017c832686dfb1208648d128c0dff
 derived: true
 ---
 
@@ -38,11 +38,11 @@ The five hard-pruned interfaces retain their existing scoped canonical evidence:
 
 ## Structural and semantic scope
 
-The exact tree projections contain 13 research lines, 5,076 findings, 837 durable intuitions and 72 prior-art notes. Membership changes and reversible source-reference formatting are graph maintenance, never frontier episodes. Semantic inspection remains selective as recorded in `research/graph/semantic-inspection.json`; uninspected source changes do not justify Atlas transitions.
+The exact tree projections contain 13 research lines, 5,085 findings, 838 durable intuitions and 73 prior-art notes. Membership changes and reversible source-reference formatting are graph maintenance, never frontier episodes. Semantic inspection remains selective as recorded in `research/graph/semantic-inspection.json`; uninspected source changes do not justify Atlas transitions.
 
 ## Frontier fertility
 
-The retained prospective series contains **20** classifiable episodes and **0** insufficient-evidence episodes. AF-581 adds one `viable-extension` episode for the supplied-degree sharp-budget question: for each known finite degree r, r+3 adaptive values attain every strict full-ray noise allowance below d(S)/4 for sufficiently remote finite prime-edit sets, while r+2 values retain a sharp worst-family deficit. This differs from the unknown-degree variable-stopping question recorded by AF-577–AF-580; that obstruction remains valid. The new episode replaces the oldest retained episode under the fixed trailing-window rule; it is not a count of membership changes or links. These synthetic acquisition results do not change Atlas territory states or masses.
+The retained prospective series contains **20** classifiable episodes and **0** insufficient-evidence episodes. AF-582 adds one `new-barrier` episode for the binary bounded-coordinate question: a quadratic nuisance changes the range needed for a near-full noise margin from logarithmic to algebraic. This is distinct from AF-581's known-degree query budget and AF-580's unknown-degree stopping obstruction. The fixed trailing window replaces its oldest retained Farey scalar-dual barrier, so the global classification counts and rates remain unchanged. No Atlas territory state or mass changes; source restrictions and selective sampling remain explicit in the telemetry summary.
 
 - **FrontierFertilityEpisodes = 35.0%**
 - **BarrierRate = 50.0%**

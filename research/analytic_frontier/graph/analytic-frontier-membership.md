@@ -208,3 +208,4 @@ This stable projection inventories every current canonical Analytic Frontier fin
 - [[research/analytic_frontier/findings/ANF-196-positive-fourier-notches-can-have-no-power-stability-rate|ANF-196]]
 - [[research/analytic_frontier/findings/ANF-197-zero-exposure-profiles-are-only-source-rescalings|ANF-197]]
 - [[research/analytic_frontier/findings/ANF-198-fejer-profiles-force-vanishing-real-improvement-amplitudes|ANF-198]]
+- [[research/analytic_frontier/findings/ANF-199-stationary-source-zero-contacts-characterize-linear-real-notch-stability|ANF-199]]

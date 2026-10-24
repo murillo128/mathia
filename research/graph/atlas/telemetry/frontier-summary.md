@@ -2,7 +2,7 @@
 id: RA-frontier-telemetry-v1
 type: riemann-atlas-frontier-telemetry
 atlas_version: 1
-prospective_source_cutoff: 8ca9e2370e2ab13a76dfb138808357b257b2647a
+prospective_source_cutoff: b946d20d9d2017c832686dfb1208648d128c0dff
 derived: true
 ---
 
@@ -30,7 +30,13 @@ The positive-noise result refines the same polynomial-calibration resource quest
 
 This is one `viable-extension` episode for the known-degree budget, separately classifiable from AF-580's unknown-degree return obstruction. It does not reopen or reclassify that obstruction. Classical interpolation and uniform-approximation ideas are acknowledged prior art; the source supplies its own noise-norm and sharp-budget argument. The source set, degree and strict slack are fixed before choosing finite anchors. No uniform anchor-size, finite-precision, relative-error, endpoint-recovery or randomized-minimax result is asserted, and no exact RH Atlas leaf is assigned.
 
-The last-20 rule removes the oldest retained translation-coordinate episode from the current window; its evidence remains in Git. The change in rates reflects this selected question and window replacement, not increased topology. Membership, native-link formatting, synthesis and prior-art registration contribute no episodes. Other source changes remain outside this bounded semantic classification.
+## Quadratic bounded-range loss
+
+[[research/arithmetic_fidelity/findings/AF-582-quadratic-calibration-changes-sharp-window-cost-from-logarithmic-to-algebraic|AF-582]] settles the coordinate budget excluded from AF-581. For f(x)=xe^(1−x), the full-window binary radius is half the best uniform error against Π_r. Its quadratic loss from the full-ray radius is (1+2 log B)/B²+O((log B)²/B³), compared with affine loss e^(1−B)+O(e^(2−2B)). Retaining fraction 1−δ therefore needs quadratic range asymptotic to sqrt(log(1/δ)/δ), versus affine range 1+log(1/δ)+o(1). The fourth alternation contact gives an exact whole-window obstruction; extra readings or adaptivity inside the window cannot exceed that radius. Three affine or four quadratic fixed values approach the respective suprema, with a positive node replacing zero.
+
+This is one `new-barrier` episode for a distinct coordinate-resource question. It is not a novelty claim for classical alternation or a reclassification of the supplied-degree query-count result. The normalized prime-edit transfer error is at most 2α_p; α_p=o(log B/B²) suffices to preserve the leading quadratic loss along growing windows. No explicit joint prime/range/precision rate, multiway optimal bank, higher-degree range law or RH consequence is established. No exact RH Atlas leaf is assigned.
+
+The last-20 rule replaces the oldest retained Farey scalar-dual barrier with this bounded-range barrier, leaving global rates unchanged. Membership, native-link formatting, synthesis and prior-art registration contribute no episodes. Other source changes remain outside this bounded semantic classification.
 
 ## Retained prospective window
 
@@ -51,8 +57,7 @@ Classifiable episodes: **20**. Insufficient-evidence episodes: **0**. Retrospect
 
 | Line | Episodes | Viable extension | Barrier | Prior art | Duplicate |
 | --- | ---: | ---: | ---: | ---: | ---: |
-| `arithmetic_fidelity` | 3 | 2 | 1 | 0 | 0 |
-| `farey_discrepancy` | 1 | 0 | 1 | 0 | 0 |
+| `arithmetic_fidelity` | 4 | 2 | 2 | 0 | 0 |
 | `mobius_cancellation` | 3 | 1 | 1 | 1 | 0 |
 | `nyman_beurling` | 1 | 0 | 1 | 0 | 0 |
 | `prime_circle` | 1 | 0 | 0 | 1 | 0 |

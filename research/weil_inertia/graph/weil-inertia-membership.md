@@ -463,3 +463,4 @@ This stable projection inventories every current canonical Weil Inertia finding.
 - [[research/weil_inertia/findings/WI-457-normalized-euler-hankel-symbols-have-local-blindness-and-recurrent-peaks|WI-457]]
 - [[research/weil_inertia/findings/WI-458-euler-hankel-peaks-have-exponentially-small-height-density|WI-458]]
 - [[research/weil_inertia/findings/WI-459-safe-line-optimization-preserves-double-exponential-euler-peak-rarity|WI-459]]
+- [[research/weil_inertia/findings/WI-460-adaptive-euler-peaks-remain-rare-at-zeta-zero-ordinates|WI-460]]

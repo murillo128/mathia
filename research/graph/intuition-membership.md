@@ -147,6 +147,7 @@ This is a path-derived structural projection for graph topology. Each link means
 - [[research/arithmetic_fidelity/mind/intuition/MI-078-boundary-fidelity-is-controlled-by-precision-weighted-carrier-energy]]
 - [[research/arithmetic_fidelity/mind/intuition/MI-079-unknown-polynomial-calibration-separates-random-identification-from-certification]]
 - [[research/arithmetic_fidelity/mind/intuition/MI-080-escaping-anchors-cancel-known-degree-at-constant-noise-cost]]
+- [[research/arithmetic_fidelity/mind/intuition/MI-081-quadratic-tail-contact-makes-near-full-recovery-range-algebraic]]
 
 ### Farey Discrepancy
 - [[research/farey_discrepancy/mind/intuition/MI-001-cumulative-farey-discrepancy-is-mertens-energy]]

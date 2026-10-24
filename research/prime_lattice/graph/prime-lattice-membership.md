@@ -480,3 +480,4 @@ This stable projection inventories every current canonical Prime Lattice finding
 - [[research/prime_lattice/findings/PL-470-positive-source-strip-growth-and-the-infinite-pole-tail-gate|PL-470]]
 - [[research/prime_lattice/findings/PL-471-sparse-zero-annihilators-force-prime-variance-on-every-large-block|PL-471]]
 - [[research/prime_lattice/findings/PL-472-gevrey-box-inversion-reaches-near-linear-prime-windows|PL-472]]
+- [[research/prime_lattice/findings/PL-473-box-fourier-zeros-obstruct-logarithmic-window-test-inversion|PL-473]]
