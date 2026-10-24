@@ -113,7 +113,7 @@ Role: authoritative classical anchor for `MC-008`. DLMF records `zeta(s)=eta(s)/
 
 ## MC-S19 — Pintz, average and maximal oscillation of the Mertens function
 
-János Pintz, *Oscillation of partial sums of the Möbius function and zeros of Riemann's zeta function*, arXiv:2608.24878 (submitted 25 August 2026; revised 26 August 2026). https://arxiv.org/abs/2608.24878.
+János Pintz, *Oscillation of partial sums of the Möbius function and zeros of Riemann's zeta function*, arXiv:2608.24878v2 (submitted 25 August 2026; revised 1 September 2026). https://arxiv.org/abs/2608.24878v2.
 
 Role: primary source for `MC-009`. Theorems 2.1 and 2.2 relate the mean absolute statistic `D_M(x)=x^(-1) int_0^x |M(u)|du` and the near-end maximum `S_{M,delta}(x)` to the zero-edge quantities `Z(x)` and `W(x)`, yielding logarithmic order governed by `vartheta=sup_{zeta(rho)=0} Re(rho)`. This is a very recent arXiv preprint; its theorem-level proof is treated as literature evidence pending independent audit rather than as independently verified Mathia derivation.
 ## MC-S20 — Ford, explicit Korobov–Vinogradov zeta bound
@@ -405,6 +405,8 @@ Role: classical conditional input for MC-520: for fixed `sigma>1/2` and every fi
 
 MC-527 instead uses the unconditional good-height Theorem 9.7 and local logarithmic-derivative formula 9.6(A). Fixed smooth tests absorb the polynomial reciprocal bound on selected horizontal edges, yielding a finite-height formula with all Laurent principal parts and a controlled grouped remainder. This does not assert absolute convergence of the residue sum or bound cancellation inside a growing pole packet. Section 9.8 supplies classical reciprocal-contour precedent; the RH-conditional unsmoothed Mertens formula of Section 14.27 is a comparison, not an input.
 
+MC-528 uses Theorem 9.6(B)'s local logarithm formula to bound a sparse canonical product divided by zeta after exact multiplicity cancellation. Uncancelled nearby zeros lie a fixed horizontal distance from the integration strip. This gives a subexponential quotient bound, which the independently constructed Gevrey multiplier dominates; neither inverse-derivative estimates nor absolute summability of reciprocal residues is assumed.
+
 ## MC-S68 — Saffari–Vaughan additive/multiplicative window conversion
 
 Bahman Saffari and R. C. Vaughan, *On the fractional parts of x/n and related sequences. II*, Annales de l'Institut Fourier 27 (1977), no. 2, 1–30, p. 25. DOI: https://doi.org/10.5802/aif.649. The precise general inequality and proof used here are reproduced as Lemma 10 in Ofir Gorodetsky, Kaisa Matomäki, Maksym Radziwiłł and Brad Rodgers, *On the variance of squarefree integers in short intervals and arithmetic progressions*, Geometric and Functional Analysis 31 (2021), 111–149. DOI: https://doi.org/10.1007/s00039-021-00557-5.
@@ -441,6 +443,8 @@ H. L. Montgomery, *Topics in Multiplicative Number Theory*, Lecture Notes in Mat
 
 Role: classical unconditional sparse-zero input for MC-522. Dickinson states the sum over all characters modulo `q` for `q>=1`, with exponent `3(1-sigma)/(2-sigma)` and a ninth logarithmic power for `1/2<=sigma<=4/5`. Taking `q=1` and then using monotonicity gives `N_zeta(sigma,T)=o(T)` for every fixed `sigma>1/2`. This density bound alone does not exclude any isolated zero; the centered-variance decomposition and principal-part recurrence supply the additional implications.
 
+MC-528 uses the stronger fixed-power consequence `N_zeta(sigma,T)=O(T^a)` for some `a<1`, including multiplicities. This permits a genus-zero product cancelling every unwanted reciprocal pole and a compact Gevrey test whose transform decays faster than that product grows. Quantitative division by zeta is a separate step proved using MC-S67.
+
 ## MC-S74 — Martin–Ng, zeros on vertical arithmetic progressions
 
 Greg Martin and Nathan Ng, *Nonzero values of Dirichlet L-functions in vertical arithmetic progressions*, International Journal of Number Theory 9 (2013), no. 4, 813–843. DOI: https://doi.org/10.1142/S1793042113500140. Author manuscript: arXiv:1109.1788v2 (2012), https://arxiv.org/pdf/1109.1788.
@@ -472,3 +476,9 @@ Role: classical gap-theorem comparison for MC-524. A sparse scalar power series 
 Philippe Flajolet, Xavier Gourdon and Philippe Dumas, *Mellin Transforms and Asymptotics: Harmonic Sums*, Theoretical Computer Science 144 (1995), 3–58, Theorem 4 (converse mapping). Author manuscript: https://algo.inria.fr/flajolet/Publications/mellin-harm.pdf. Related reference: NIST Digital Library of Mathematical Functions, §2.5(i), https://dlmf.nist.gov/2.5.
 
 Role: classical pole-to-smoothed-asymptotic mechanism for MC-525. That finding proves the contour shift uniformly in the additive-window ratio, uses two mean-zero tests to retain every phase after empirical centering, and derives the necessary failure of polynomial strip growth in MC-524. Neither the literature theorem nor MC-525 supplies the isolated-pole/growth hypotheses for actual reciprocal zeta. MC-526 obtains the needed growth condition from a finite-exception hypothesis on actual zeta zeros and treats all leading finite pole orders; its explicit residue and covariance calculations give a selected-scale centered-variance obstruction. No general infinite-pole tail estimate is supplied.
+
+## MC-S79 — Lissy, compact Gevrey functions and canonical-product multipliers
+
+Pierre Lissy, *Construction of Gevrey functions with compact support using the Bray–Mandelbrojt iterative process and applications to the moment method in control theory*, Mathematical Control and Related Fields 7 (2017), no. 1, 21–40. DOI: https://doi.org/10.3934/mcrf.2017002. Author manuscript: https://cermics.gitlab.enpc.fr/lissy/Publi/upper.pdf, especially §2 and §3.2, Proposition 1.
+
+Role: compact nonnegative Gevrey bumps of every order `q>1` and the classical use of their Fourier decay to dominate canonical-product growth. MC-528 proves its own multiplicity-aware derivative-series construction, strip decay, reciprocal-zeta division bound, and finite box transfer. Lissy's control-theory spectral assumptions and quantitative control costs are not imported into the zeta argument.

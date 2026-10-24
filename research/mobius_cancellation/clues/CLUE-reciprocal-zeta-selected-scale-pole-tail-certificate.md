@@ -1,7 +1,7 @@
 ---
 id: CLUE-mobius-cancellation-reciprocal-zeta-selected-scale-pole-tail-certificate
 type: research-clue
-status: accepted
+status: resolved
 origin: master-researcher
 target_line: mobius_cancellation
 based_on:
@@ -63,23 +63,27 @@ MC-526 establishes finite-exception exclusion; PL-470 establishes its own logari
 
 ## Research disposition
 
-Accepted with the contour subproblem narrowed by
-[[research/mobius_cancellation/findings/MC-527-good-height-truncation-isolates-selected-scale-pole-cancellation|MC-527]].
-For any fixed smooth mean-zero bank and fixed `delta>0`, classical
-unconditional good heights permit the complete packet through
-`T(X) in [X^delta,X^delta+1]`, retaining every Laurent principal part,
-with residual `O_f,delta(X^(-1/2))`. This is a contour-grouped estimate;
-absolute summability or individual inverse-derivative bounds are not
-needed or established.
+Outcome: supported
 
-The surviving question is arithmetic cancellation inside that growing
-packet. If the selected-scale diagonal ceiling holds and a zero has
-`beta>alpha=1-theta/2`, MC-527 gives two fixed tests for which the
-complementary packet must cancel the chosen conjugate pole pair to
-relative error `O(X^(-(beta-alpha-epsilon))(log X)^(1-m))` on the same
-measured scales, where `m` is its multiplicity and
-`0<epsilon<beta-alpha`. Disproving that cancellation requires new
-source information; finite-packet independence does not do so. For a
-bank that varies with the packet, the ratios of derivative seminorms
-to test norm and the Gram/window costs remain unpaid. The full
-infinite-family exclusion is still open, so this clue is not resolved.
+Resolved by:
+- [[research/mobius_cancellation/findings/MC-527-good-height-truncation-isolates-selected-scale-pole-cancellation]]
+- [[research/mobius_cancellation/findings/MC-528-multiplicity-aware-annihilation-forces-mobius-variance-on-every-block]]
+
+MC-527 supplies the complete good-height packet and its small grouped
+contour remainder for every fixed smooth bank. MC-528 closes the
+infinite-family exclusion through a different admissible measurement:
+one fixed compact test annihilates all unwanted off-critical principal
+parts, and a local product estimate bounds its quotient by zeta.
+The selected zero contributes `X^rho_0 Q_(m-1)(log X)` with nonzero
+leading coefficient; the complete remaining contour is `O(X^sigma_1)`
+for a fixed `sigma_1<Re rho_0`.
+
+A finite-order box inverse is a uniformly bounded combination of a
+fixed derivative bank. It transfers this measurement to the original
+centered variance on every sufficiently large real block, including
+the same arbitrary unbounded measured set `E`. This resolves the
+zero-exclusion question without proving an absolute reciprocal residue
+sum or the proposed packet/residual norm inequality for every fixed
+bank. The test encodes the whole hypothetical sparse zero set and has
+uncontrolled fixed norms; no independently obtained variance ceiling
+or unconditional improvement of Mertens cancellation follows.

@@ -1,7 +1,7 @@
 ---
 id: CLUE-mobius-cancellation-multiplicity-aware-sparse-zero-annihilator
 type: research-clue
-status: proposed
+status: resolved
 origin: master-researcher
 target_line: mobius_cancellation
 based_on:
@@ -57,3 +57,26 @@ at every sufficiently large real `X`, with all constants fixed before `X` varies
 ## Evidence boundary
 
 PL-471 proves its logarithmic-derivative result. MC-527 proves good-height truncation, not the displayed one-pole asymptotic. The multiplicity-aware interpolation and, especially, the reciprocal growth bound remain unvalidated here. No infinite-family Möbius exclusion, variance upper bound, effective zero-based test bank, new theorem of oscillation, or RH result is asserted. Dependence on all hypothetical zeros is acceptable for a necessity proof but cannot be relabelled as independently acquired source control. A result conditional on an unpaid growth estimate would remain conditional.
+
+## Research disposition
+
+Outcome: supported
+
+Resolved by:
+- [[research/mobius_cancellation/findings/MC-528-multiplicity-aware-annihilation-forces-mobius-variance-on-every-block]]
+
+MC-528 reconstructs the product with all unwanted multiplicities and
+proves the missing division estimate. Titchmarsh's local logarithm
+formula factors all nearby zeros; those to the right of `sigma_0`
+cancel exactly against the product, while those to its left are a
+fixed distance from the integration strip. The quotient grows at most
+`T^C exp(C T^a)`, and a compact Gevrey multiplier supplies decay
+`exp(-c T^b)` with `a<b<1`. No zero separation or inverse-derivative
+bound is used.
+
+The resulting one-pole asymptotic retains the degree `m-1` logarithmic
+polynomial even when the ordinary residue vanishes. Finite box inversion
+then proves the stated variance floor on every sufficiently large real
+block. The original unvalidated analytic steps above are discharged in
+that finding; the variance ceiling, effective acquisition of the test,
+and an independent route to RH remain unproved.
