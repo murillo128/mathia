@@ -61,7 +61,28 @@ If additionally \(0<\tau<q/(1+q)^2\), there is \(C=C(q,\tau)>c\) such that
 \]
 Thus the recurrent order-one peaks have doubly exponential rarity in \(1/\varepsilon\), with no claim of a sharp constant or an exact density asymptotic. This strengthens the same peak-frequency claim; (4) remains a useful bound at arbitrary fixed \(\varepsilon,r\).
 
-The order of limits in (4)--(5b) is essential: the infinite-height density is taken at each fixed \(\varepsilon,r\), then \(\varepsilon\) tends to zero. A separate quantitative finite-window estimate, uniform in the window's starting height, is
+The density statements (4)--(5b) take the infinite-height limit at each fixed \(\varepsilon,r\). A quantitative finite-height replacement is available on a doubly exponential window scale. For fixed \(q>0\) and \(0<\tau<1\), put
+\[
+\mathcal F_\varepsilon(H)=\sup_{T\in\mathbb R}
+\frac{|\{\gamma\in[T,T+H]:Q_\varepsilon(q\varepsilon,\gamma)\ge\tau\}|}{H}.
+\]
+There are constants \(c_{\rm fin},C_{\rm fin}>0\), depending only on \(q,\tau\), such that for sufficiently small \(\varepsilon>0\),
+\[
+\boxed{H\ge\exp[\exp(C_{\rm fin}/\varepsilon)]
+\quad\Longrightarrow\quad
+\mathcal F_\varepsilon(H)\le\exp[-\exp(c_{\rm fin}/\varepsilon)].}
+\tag{5c}
+\]
+For a submaximum threshold \(0<\tau<q/(1+q)^2\), a constant \(b=b(q,\tau)>0\) also gives, for every \(H>0\),
+\[
+\boxed{\mathcal F_\varepsilon(H)\ge\min\{1,b\varepsilon/H\}.}
+\tag{5d}
+\]
+Thus a proposed bound \(\mathcal F_\varepsilon(H)\le\exp[-\exp(c_0/\varepsilon)]\), with fixed \(c_0>0\), necessarily requires
+\(H\ge b\varepsilon\exp[\exp(c_0/\varepsilon)]\).
+The broad doubly exponential window scale is therefore sufficient and necessary for a uniform-in-starting-height upper bound of this strength. No matching constants, finite-window lower density law, or maximum recurrence-gap estimate is asserted.
+
+A separate quantitative mean estimate, valid on every window and uniform in its starting height, is
 \[
 \frac1H\int_T^{T+H}Q_\varepsilon(r,\gamma)\,d\gamma
 =\mu_\varepsilon(r)+O(H^{-1}),\qquad 0<\varepsilon\le1,
@@ -81,7 +102,7 @@ C=\sum_{n\ge2}\frac{\Lambda(n)^2\log n}{n^2}>0.
 \tag{8}
 \]
 Consequently the finite-window superlevel fraction is at most
-\((\mu_\varepsilon(r)+C_0/H)/\tau\) for an absolute \(C_0\). The exponential and doubly exponential bounds have no asserted uniform finite-height convergence rate.
+\((\mu_\varepsilon(r)+C_0/H)/\tau\) for an absolute \(C_0\). Unlike (5c), this mean estimate needs no lower bound on the window length. Equation (5c) is an upper tail estimate, not a rate of convergence of the full height distribution to its torus law.
 
 ## Prime blocks, rather than independent prime powers
 
@@ -266,15 +287,108 @@ for sufficiently small \(\varepsilon\); only \(\pi(y)\le y\) was used. At each f
 
 The two cutoffs serve different purposes: \(a\) is small for the upper bound so the retained part cannot reach threshold; \(K\) is large for the lower bound so arbitrary tail phases cannot destroy a near-maximum. No equality of the inner exponential constants follows.
 
+## Finite windows through tensor moments
+
+Fix \(q>0\), \(0<\tau<1\), and \(r=q\varepsilon\). Choose the small constant \(a>0\) in (24) so \(S_y\le\sqrt\tau/4\) for \(y=e^{a/\varepsilon}\). There is then a fixed \(D>0\) such that
+\[
+V_y\le \overline V:=D e^{-a/\varepsilon}
+\tag{29}
+\]
+for all sufficiently small \(\varepsilon\). Next choose a fixed \(K>a\) large enough, and put \(X=e^{K/\varepsilon}\). The coefficient tail over **all integers** \(n>X\) has the same tilt estimate as (25):
+\[
+A_\varepsilon^{-1}\sum_{n>X}\frac{\Lambda(n)}{n^{1+\varepsilon}}
+\le X^{-\varepsilon/2}\frac{A_{\varepsilon/2}}{A_\varepsilon}
+\le3e^{-K/2}\le\sqrt\tau/4.
+\tag{30}
+\]
+This estimate is uniform in every phase and ordinate. Remove the small-prime blocks and this far coefficient tail, retaining the finite Hilbert-valued Dirichlet polynomial
+\[
+Z(\gamma)=\sum_{\substack{p>y,\ j\ge1\\p^j\le X}}
+\frac{\log p}{A_\varepsilon p^{j(1+\varepsilon)}}
+ h_{j\log p}e^{-ij\gamma\log p}.
+\tag{31}
+\]
+The two discarded portions have total norm at most \(\sqrt\tau/2\). Therefore
+\[
+Q_\varepsilon(q\varepsilon,\gamma)\ge\tau
+\quad\Longrightarrow\quad \|Z(\gamma)\|\ge v:=\sqrt\tau/2.
+\tag{32}
+\]
+No truncation of the Hardy variable \(t\) is made: each \(h_{j\log p}\) remains its exact \(L^2\) vector.
+
+Under prime-torus Haar measure, the truncated blocks are still independent across primes, with zero mean and coordinate sensitivity at most \(2b_p/A_\varepsilon\). If \(F=\|Z\|\), (13)--(14) imply
+\[
+\mathbb EF\le\sqrt{\overline V},\qquad
+\Pr(F-\mathbb EF\ge u)\le e^{-u^2/(2\overline V)}.
+\]
+For each integer \(m\ge1\), integration of the latter tail gives
+\(\mathbb E[(F-\mathbb EF)_+^{2m}]\le(2\overline V)^m m!\).
+Minkowski and \(m!\le m^m\) consequently give
+\[
+\mathbb E\|Z\|^{2m}\le(9m\overline V)^m.
+\tag{33}
+\]
+Dependent powers of a prime have never been randomized separately.
+
+The finite-height transfer is quantitative because tensor powers retain integer Dirichlet frequencies. Write \(Z(\gamma)=\sum_{n\le X}u_n n^{-i\gamma}\), with Hilbert-space coefficients \(u_n\). In the Hilbert tensor product,
+\[
+Z(\gamma)^{\otimes m}=\sum_{n\le X^m}U_n n^{-i\gamma},
+\qquad \|Z(\gamma)^{\otimes m}\|^2=\|Z(\gamma)\|^{2m}.
+\tag{34}
+\]
+Unique factorization makes different integers different torus characters, so
+\(\sum_n\|U_n\|^2=\mathbb E\|Z\|^{2m}\).
+Apply the scalar Montgomery--Vaughan estimate (17) in an orthonormal basis of the finite span of the \(U_n\), and sum. Its absolute constant is independent of the dimension, \(m\), and coefficient phases. Hence, for an absolute \(C_{\rm MV}\),
+\[
+\frac1H\int_T^{T+H}\|Z(\gamma)\|^{2m}\,d\gamma
+\le\left(1+\frac{C_{\rm MV}X^m}{H}\right)
+\mathbb E\|Z\|^{2m}.
+\tag{35}
+\]
+This step replaces qualitative equidistribution; it does not claim probabilistic independence on a finite height interval. Equations (32)--(35) yield the explicit interface
+\[
+\boxed{\mathcal F_\varepsilon(H)
+\le\left(1+\frac{C_{\rm MV}X^m}{H}\right)
+\left(\frac{9m\overline V}{v^2}\right)^m.}
+\tag{36}
+\]
+Take
+\[
+m=\left\lfloor\frac{v^2}{36D}e^{a/\varepsilon}\right\rfloor.
+\]
+For sufficiently small \(\varepsilon\), \(m\ge2\), the last parenthesis in (36) is at most \(1/4\), and \(H\ge C_{\rm MV}X^m\) gives an upper bound \(2\cdot4^{-m}\le e^{-m}\). For example, after reducing \(\varepsilon\) further,
+\[
+m\ge e^{a/(2\varepsilon)},\qquad
+\log(C_{\rm MV}X^m)\le e^{2a/\varepsilon}.
+\]
+Thus \(c_{\rm fin}=a/2\) and \(C_{\rm fin}=2a\) suffice in (5c). These constants are deliberately coarse and depend on the earlier fixed threshold choices.
+
+## Why a uniform rare-peak bound needs long windows
+
+Suppose \(\tau<q/(1+q)^2\), and let \(\Delta=\sqrt q/(1+q)-\sqrt\tau>0\). The pole-scale limit gives
+\(\sqrt{Q_\varepsilon(q\varepsilon,0)}\ge\sqrt\tau+3\Delta/4\)
+for sufficiently small \(\varepsilon\). From the translated vector representation (9) and the positive Euler coefficients,
+\[
+\left|\sqrt{Q_\varepsilon(r,\gamma)}-
+\sqrt{Q_\varepsilon(r,\gamma')}\right|
+\le |\gamma-\gamma'|\,
+\frac{-L'(1+\varepsilon)}{A_\varepsilon}
+\le\frac{2|\gamma-\gamma'|}{\varepsilon}.
+\tag{37}
+\]
+The last inequality uses the simple pole expansion and is valid for sufficiently small \(\varepsilon\), uniformly in \(r\). Taking \(b=\Delta/8\) shows that the interval \([0,b\varepsilon]\) lies strictly above threshold, with a fixed positive gap. The fraction in the interval \([0,H]\) is consequently at least \(\min\{1,b\varepsilon/H\}\), proving (5d).
+
+This lower obstruction also survives restriction to arbitrarily large starting heights at each fixed \(\varepsilon\): the almost periods in WI-457 transfer the whole above-threshold interval with its strict gap. It is not eliminated by discarding the neighborhood of height zero. It does not specify where those high intervals occur, bound their gaps, or associate them with zeta zeros. The necessary window scale concerns a supremum over interval placements, not a typical starting height.
+
 ## Recurrence, controls, and the remaining arithmetic gap
 
-For fixed \(\varepsilon,r\), (11) makes \(Q_\varepsilon(r,\cdot)\) uniformly almost periodic. If \(Q_\varepsilon(r,0)>\tau\), continuity supplies an interval above threshold and relative density of sufficiently accurate almost periods supplies translated intervals of the same positive width with bounded gaps. This gives positive lower uniform density. The phase-box argument quantifies a lower density at the pole scale, but supplies neither a useful finite-height convergence rate nor a bound on the largest gap between successive peaks. Its lower density tends to zero as \(\varepsilon\downarrow0\), consistently with (5a).
+For fixed \(\varepsilon,r\), (11) makes \(Q_\varepsilon(r,\cdot)\) uniformly almost periodic. If \(Q_\varepsilon(r,0)>\tau\), continuity supplies an interval above threshold and relative density of sufficiently accurate almost periods supplies translated intervals of the same positive width with bounded gaps. This gives positive lower uniform density. The phase-box argument quantifies an infinite-height lower density at the pole scale. The tensor-moment estimate (5c) supplies a uniform finite-window upper bound, but neither argument gives a quantitative finite-window lower density or a bound on the largest gap between successive peaks. Its lower density tends to zero as \(\varepsilon\downarrow0\), consistently with (5a).
 
 This test changes the information available about the explicit source family: recurrent maxima have doubly exponential rarity at the shallow packet scale, even though the exact mean is only cubic. It does not reopen WI-457's failure of uniform shallow detection. In the Kunik correspondence \(r=(1-\theta)d\), \(d\) is horizontal defect depth; neither Haar averaging nor Lebesgue averaging makes actual zero ordinates independent prime phases. Even a set of zero height density can contain every member of a prescribed discrete exceptional zero set. None of the density bounds can upper-bound the number of off-line zeros, certify simplicity, or exclude one exceptional block.
 
-The estimates apply to the fixed symbol and fixed \(\varepsilon,r\) while averaging height. They do not bound a height-adaptive supremum over all \(\varepsilon\), arbitrary translations aligning each symbol's pole with a chosen ordinate, or signed coefficient redesign. The finite-window bound (6) gives a cubic-scale mean with error \(O(H^{-1})\); substituting a growing-height/decreasing-\(\varepsilon\) diagonal into (5a)--(5b) without a convergence-rate theorem is invalid. The lower bound requires a fixed strict gap below the limiting maximum; it asserts nothing at equality or for a threshold approaching that maximum with \(\varepsilon\). The concentration estimate is not an optimal large-deviation law.
+The estimates apply to the fixed symbol and fixed \(\varepsilon,r\) while averaging height. They do not bound a height-adaptive supremum over all \(\varepsilon\), arbitrary translations aligning each symbol's pole with a chosen ordinate, or signed coefficient redesign. The finite-window bound (6) gives a cubic-scale mean with error \(O(H^{-1})\); (5c) permits a simultaneous shrinking-scale/long-window limit only in its stated range. Substituting an unrestricted diagonal into (5a)--(5b) remains invalid. The general finite-window interface (36) keeps the length cost explicit. The lower bound requires a fixed strict gap below the limiting maximum; it asserts nothing at equality or for a threshold approaching that maximum with \(\varepsilon\). The concentration estimate is not an optimal large-deviation law.
 
-The decisive audit checks are the \(\sqrt r\) factor in each prime block (12), retention of all dependent prime powers within that block, the squared coordinate costs in (14), the distinct deterministic and quadratic tail costs (22)--(24), the tail-uniform phase-box inclusion (25)--(27), uniform phase approximation at fixed \(\varepsilon\), and the finite-interval error (18). A single prime cannot create a fixed-threshold peak as \(\varepsilon\downarrow0\); charging its sensitivity to the whole large deviation is exactly the loss avoided by (20). These are analytic identities and inequalities, not numerical or formalized evidence.
+The decisive audit checks are the \(\sqrt r\) factor in each prime block (12), retention of all dependent prime powers within that block, the squared coordinate costs in (14), the distinct deterministic and quadratic tail costs (22)--(24), the tail-uniform phase-box inclusion (25)--(27), uniform phase approximation at fixed \(\varepsilon\), the finite-interval error (18), the tensor-frequency length \(X^m\) in (34)--(36), and the peak-width lower bound (37). A single prime cannot create a fixed-threshold peak as \(\varepsilon\downarrow0\); charging its sensitivity to the whole large deviation is exactly the loss avoided by (20). These are analytic identities and inequalities, not numerical or formalized evidence.
 
 ## Prior art and mathematical delta
 
@@ -282,8 +396,10 @@ The probability mechanism is classical bounded differences: Colin McDiarmid, *On
 
 Prime-torus value distributions of logarithmic derivatives are established prior art. Yasutaka Ihara, *On “M-Functions” Closely Related to the Distribution of L'/L-Values*, **Publications of RIMS 44** (2008), 893--954, [DOI 10.2977/PRIMS/1216238306](https://doi.org/10.2977/PRIMS/1216238306), especially §1.5 and its discussion of the vertical family, explicitly constructs the prime torus and relates logarithmic-derivative values to Bohr--Jessen theory. No new random Euler-product principle is claimed. Only the elementary absolutely convergent regime \(\Re s>1\) is used here.
 
-The quantitative finite-window ingredient is H. L. Montgomery and R. C. Vaughan, *Hilbert's Inequality*, **Journal of the London Mathematical Society** (2) 8 (1974), 73--82, Corollary 3, equation (1.11), [author-hosted paper](https://personal.science.psu.edu/rcv4/personal/Publications/s2-8-1-73.pdf). The pole input is the same classical input already anchored in WI-457.
+The quantitative finite-window ingredient is H. L. Montgomery and R. C. Vaughan, *Hilbert's Inequality*, **Journal of the London Mathematical Society** (2) 8 (1974), 73--82, Corollary 3, equation (1.11), [author-hosted paper](https://personal.science.psu.edu/rcv4/personal/Publications/s2-8-1-73.pdf). Summing that scalar estimate over a finite orthonormal basis gives (35); the moment order enters through the polynomial length \(X^m\), without a dimension-dependent constant. The pole input is the same classical input already anchored in WI-457.
 
 Doubly exponential tails of logarithmic-derivative Euler models are also established neighboring prior art. Youness Lamzouri, *The distribution of Euler-Kronecker constants of quadratic fields*, [arXiv:1410.1603](https://arxiv.org/abs/1410.1603), Theorem 1.2, proves sharp doubly exponential tails for a scalar quadratic-character model at \(s=1\); the discussion immediately preceding it also identifies the unit-circle model for vertical zeta logarithmic derivatives. That scalar theorem is not imported as a theorem about this Hilbert-valued, \(r=q\varepsilon\), normalized Hankel response. Equations (19)--(28) supply the needed specialization directly. No new double-exponential Euler-product phenomenon is claimed.
 
-The delta from WI-457 is a bound on the frequency of its recurrent peaks, now determining the doubly exponential scale above and below for fixed submaximum thresholds, with a separate finite-window interface and explicit noncommuting parameter limits. This is stronger than the unsplit concentration estimate (5), while preserving the same claim identity. It is a derived specialization of classical concentration, torus averaging, and mean-value theory, not a new general theorem or a claim of literature priority. The missing zero-ordinate alignment estimate remains missing; no RH implication follows.
+Effective random-model comparison by truncating Euler series and comparing high moments is established prior art too. Clayton James Lungstrum, *Discrepancy Bounds of the Logarithmic Derivative of the Riemann Zeta Function*, Ph.D. thesis, University of Rochester (2019), [institutional copy](https://hdl.handle.net/1802/35234), §2.3, studies scalar prime-polynomial moments for this purpose. The proof here retains the Hilbert-valued Hankel coefficients, groups all powers of a prime, and obtains a dimension-independent finite-window estimate by tensorization. It is a direct specialization of classical methods, not a new discrepancy principle or an imported scalar theorem about this response.
+
+The delta from WI-457 is a bound on the frequency of its recurrent peaks, determining the doubly exponential density scale above and below for fixed submaximum thresholds. The finite-window strengthening (5c), (36), and (37) additionally identifies a sufficient and necessary broad window scale for a uniform rare-peak upper bound, with explicit control of the simultaneous parameter limit. This is stronger than the unsplit concentration estimate (5), while preserving the same claim identity. It is a derived specialization of classical concentration, torus averaging, and mean-value theory, not a new general theorem or a claim of literature priority. The missing zero-ordinate alignment estimate remains missing; no RH implication follows.
