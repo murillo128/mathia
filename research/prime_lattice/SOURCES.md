@@ -478,7 +478,7 @@ Only sources that materially support, delimit, or redirect stored `PL-*` finding
      - Role: classical converse-variance calibration for PL-463. Section 3.3 records that a strong upper bound for the deterministically centered multiplicative Selberg integral implies a zero-free half-plane. PL-463 separately proves its empirically centered additive-window, single mod-5 residue implication using mean-zero tests and finite-order box-average inversion; that statement is not attributed to Zaccagnini.
 
 124. **Philippe Flajolet, Xavier Gourdon, Philippe Dumas**, “Mellin transforms and asymptotics: Harmonic sums,” *Theoretical Computer Science* **144**(1–2) (1995), 3–58. DOI: https://doi.org/10.1016/0304-3975(95)00002-E. Author manuscript: https://algo.inria.fr/flajolet/Publications/mellin-harm.pdf.
-     - Role: classical geometric-dilation, vertical-pole-family and logarithmic-oscillation background for PL-464. The dyadic empirical-variance transfer and contradiction between periodic-factor residue phases and real Dirichlet logarithmic-derivative residues are derived in PL-464, not attributed to this source.
+     - Role: classical geometric-dilation, vertical-pole-family and logarithmic-oscillation background for PL-464; Theorem 4 (converse mapping) is also the classical contour-shift background for PL-470's positive-source strip-growth diagnosis. The empirical-variance transfers and the diagnosis of PL-469 are derived in the findings, not attributed to this source.
 
 ## Relative covariance frames and transfer between Dirichlet channels
 
@@ -488,8 +488,8 @@ Only sources that materially support, delimit, or redirect stored `PL-*` finding
 126. **William D. Banks**, “The Generalized Riemann Hypothesis from zeros of a single L-function,” arXiv:2309.03817 (2023). https://arxiv.org/abs/2309.03817.
      - Role: nearest single-factor-to-GRH prior-art comparison for PL-465. Theorem 1.1 uses a strengthened single-factor RH hypothesis with rationally twisted zero-sum control. It does not prove that RH alone implies GRH or establish the relative covariance frame studied here.
 
-127. **Kiran S. Kedlaya**, *Notes on Analytic Number Theory*, Chapters 8 and 11, online lecture notes. https://kskedlaya.org/ant/chapter-8.html and https://kskedlaya.org/ant/chapter-11.html.
-     - Role: accessible explicit-formula and zero-counting anchors for PL-465's fixed-character bound on partial sums in terms of that character's rightmost-zero supremum. The cross-character transfer and its window-exponent loss are derived in PL-465, not attributed to these notes.
+127. **Kiran S. Kedlaya**, *Notes on Analytic Number Theory*, Chapters 8, 10 and 11, online lecture notes. https://kskedlaya.org/ant/chapter-8.html, https://kskedlaya.org/ant/chapter-10.html and https://kskedlaya.org/ant/chapter-11.html.
+     - Role: explicit-formula and zero-counting anchors for PL-465. Chapter 10, Section 10.3 and Chapter 11, Section 11.1 also supply the unit-height zero count, separated horizontal contours and logarithmic-derivative expansions used in PL-470's smoothed mod-5 formula. Its exact empirical centering, explicit powers-of-5 correction and finite-packet residual certificate are derived in PL-470.
 
 ## Dyadic smoothing and sparse vertical pole sequences
 
@@ -502,7 +502,7 @@ Only sources that materially support, delimit, or redirect stored `PL-*` finding
 ## Positive residue-source controls with finite off-critical pole sets
 
 130. **NIST Digital Library of Mathematical Functions**, Section 25.11(i), “Hurwitz Zeta Function,” definition (25.11.1) and analytic continuation statement; Section 25.11(iii), Euler--Maclaurin representations. https://dlmf.nist.gov/25.11.
-     - Role: classical continuation and residue anchor for PL-467 and PL-469. The progression series `5^(-s) zeta(s,a/5)` has its only pole at 1 with residue `1/5`; finite shifted combinations realize PL-467's prescribed poles. The positive source and relative covariance bound are derived in the finding.
+     - Role: classical continuation and residue anchor for PL-467 and PL-469. The progression series `5^(-s) zeta(s,a/5)` has its only pole at 1 with residue `1/5`; finite shifted combinations realize PL-467's prescribed poles. Euler--Maclaurin continuation also gives the fixed-strip polynomial bound for the pole-subtracted periodic background used in PL-470. The positive source, variance and strip-growth obstruction are derived in the findings.
 
 131. **Kevin Ford, Sergei Konyagin**, “The prime number race and zeros of L-functions off the critical line, II,” in *Proceedings of the Session in Analytic Number Theory and Diophantine Equations* (Bonn, 2002), Bonner Mathematische Schriften **360** (2003); author archive https://arxiv.org/abs/1910.08981, full text https://arxiv.org/html/1910.08981v1.
      - Role: closest hypothetical-zero-control comparison for PL-467. Section 1 defines finite barriers and their dominant oscillatory residue-class observables. Their prime-race ordering results do not establish PL-467's positive coefficient sequence or centered covariance floor, and neither construction asserts that the hypothetical zeros occur for actual Dirichlet L-functions.

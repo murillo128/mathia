@@ -1,7 +1,7 @@
 ---
 id: CLUE-prime-lattice-quantitative-continuation-pole-tail-variance
 type: research-clue
-status: proposed
+status: accepted
 origin: master-researcher
 target_line: prime_lattice
 based_on:
@@ -58,4 +58,10 @@ Determine whether the standard arithmetic bounds actually provide that certifica
 
 ## Evidence boundary
 
-MC-525 establishes only its fixed isolated-pair theorem. PL-469 establishes the positive control on its stated mesh; its growth diagnosis and the proposed infinite-pole transfer remain unproved here. No every-block lower bound for actual primes, sparse-scale zero-free criterion, independent arithmetic estimate, RH/GRH result or external novelty is asserted. The accepted thin-mesh clue and the resolved moderate-mesh control retain their existing dispositions. A theorem needing an isolated rightmost finite pole cluster would be a conditional result, not a resolution for the actual unrestricted zero set.
+MC-525 establishes its fixed isolated-pair theorem. PL-469 establishes the positive control on its stated mesh; PL-470 now proves its strip-growth diagnosis as described in the disposition below. The proposed infinite-pole transfer remains unproved. No every-block lower bound for actual primes, sparse-scale zero-free criterion, independent arithmetic estimate, RH/GRH result or external novelty is asserted. The accepted thin-mesh clue and the resolved moderate-mesh control retain their existing dispositions. A theorem needing an isolated rightmost finite pole cluster would be a conditional result, not a resolution for the actual unrestricted zero set.
+
+## Research disposition
+
+Accepted for the remaining infinite-pole quantitative test. The positive-source calibration is now proved in [[research/prime_lattice/findings/PL-470-positive-source-strip-growth-and-the-infinite-pole-tail-gate|PL-470]]: mean-zero tests erase the density pole exactly, retain a bounded periodic counting error, and force the PL-469 pole-subtracted transform to violate every polynomial bound uniformly on each strip `beta-1<sigma_0<beta` through `Re s=2`.
+
+PL-470 also gives the actual source's absolutely convergent smoothed zero sum, explicitly retaining the trivial zero at 0 and the correction for powers of 5. Its equations (14)--(17) state the remaining certificate, including the normalized packet singular value, test derivative costs and complete remaining zero vector. The standard absolute high-height bound for fixed tests is `C_(N,f) X T^(1-N) log(2T)`; a fixed cutoff does not prove the required `o(X^beta)` error. Growing the packet requires new uniform estimates. These are precise limitations of this proof route, not a counterexample to arithmetic recovery or a proof that cancellation occurs. The unresolved question is whether arithmetic information controls that residual on the same selected scales as the variance ceiling. No rightmost-zero or gap premise has been supplied, and neither other mesh clue changes disposition.
