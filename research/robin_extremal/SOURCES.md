@@ -74,6 +74,8 @@ This file records durable literature dependencies for `research/robin_extremal/`
 
 - Christoph Aistleitner and Josef Dick, *Functions of bounded variation, signed measures, and a general Koksma–Hlawka inequality*, Acta Arithmetica **167** (2015), 143–171, DOI `10.4064/aa167-2-4`, arXiv:1406.0230. Role: classical discrepancy/variation and signed-measure prior-art boundary for RE-261. The Robin-specific exact-Mertens counting-budget bound and discrete sharpness construction are derived in that finding; the general Stieltjes/discrepancy mechanism is not claimed as new.
 
+- Lawrence G. Brown and Bradley J. Lucier, *Best approximations in L1 are near best in Lp, p < 1*, Proceedings of the American Mathematical Society **120** (1994), 97–100, [author-hosted paper](https://www.math.purdue.edu/~lucier/pde-papers/nearbest.pdf). Role: the opening page identifies medians as best constant L1 approximants, the classical mechanism behind RE-261's exact zero-moment counting relaxation. The Robin kernel, finite-scale constant and maximizing cutoff are derived in RE-261; the source does not establish discrete-source attainability or a Robin inequality.
+
 ## Expansion rule
 
 Add primary sources when a canonical finding depends on an exact theorem about superabundant/colossally abundant integers, exponent-profile transitions, explicit prime-distribution errors, or extremal divisor-sum bounds. Finite verification records should be cited only when a finding actually depends on their verified range.

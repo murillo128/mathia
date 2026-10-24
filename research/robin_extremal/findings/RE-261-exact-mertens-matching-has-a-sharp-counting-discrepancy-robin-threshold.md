@@ -13,6 +13,12 @@ Prime-cell interlacing and unit displacement impose strong source fidelity. The 
 
 The upper bound covers infinite sources; finite, cardinality-preserving real-label transports already establish sharpness. The same sharp constant holds for distinct **integer** labels, even when every changed label lies below \(2p+o(p)\): finite exact Euler-factor splitting attains the bound with a net addition of \(K\) labels. A separate construction with infinitely many unit prime shifts has counting discrepancy returning to zero between tail shifts. Near equality forces a specific two-phase counting profile around \(2p\). Thus exact normalization does not improve the critical counting scale \(K\asymp\sqrt p/\log p\), although it constrains how the excursion and its compensation must be arranged. This is a synthetic-source theorem, not an estimate for the ordinary-prime Robin tail.
 
+The finite-scale counting relaxation can also be solved exactly. Its
+unique maximizing height is \(p+\sqrt{p(p-1)}\); the resulting explicit
+bound improves (6) for every admissible discrete source. Exact attainment
+at a fixed \(p\) is asserted only for the measurable counting relaxation,
+not for the prime-deletion/integer-insertion source class.
+
 ## 1. Source class and finite-height bound
 
 Let \(p\ge3\) be an ordinary prime, \(L=\log p\), and \(K\ge1\) an integer. Let \(\mathcal C_{p,K}\) consist of locally finite, strictly increasing, unbounded real-label sources \(Q\subset(1,\infty)\) that agree with the ordinary primes \(P\) on \((1,p]\), and satisfy
@@ -84,6 +90,104 @@ h(U)\log(U/p)\le\frac1{e(p-1)L}.
 \tag{11}
 \]
 The minimum of two nonnegative quantities summing to \(f(p)\) is at most \(f(p)/2\), proving (6). The factor \(1/2\) is the prefix/tail capacity balance imposed by exact Mertens matching, not an improved prime-distribution theorem.
+
+### Exact finite-scale norm of the counting relaxation
+
+Let \(\mathcal A_{p,K}\) be the measurable real functions on
+\([p,\infty)\) with \(|A|\le K\) almost everywhere and
+\(\int_p^\infty A\,d\mu=0\). Every counting discrepancy in (2)
+belongs to this class. Define \(E_A(U)\) by the right side of (10).
+For \(p\ge3\), set
+\[
+u_p=p+\sqrt{p(p-1)},\qquad
+f(u_p)=\frac{f(p)}2,\qquad
+\alpha=\exp(f(p)/2).
+\tag{11a}
+\]
+The exact fixed-height relaxed norm is
+\[
+\frac1K\sup_{A\in\mathcal A_{p,K}}|E_A(U)|=N_p(U)
+=\begin{cases}
+f(p)-h(U)\log p,&p\le U\le u_p,\\[2mm]
+f(U)+h(U)\log\!\dfrac{Up}{v(U)^2},&U>u_p,
+\end{cases}
+\quad
+v(U)=\frac{\alpha U}{1+(\alpha-1)U}.
+\tag{11b}
+\]
+In the second case, \(p<v(U)<U\) and
+\(f(v(U))-f(U)=f(p)/2\). Thus
+\[
+\boxed{\sup_{U\ge p}|E_Q(U)|\le K C(p),\qquad
+C(p)=f(p)\left(1-\frac{\log p}{2\log u_p}\right)
+=\frac{f(p)}2\left(1+\frac{\log(u_p/p)}{\log u_p}\right).}
+\tag{11c}
+\]
+This bound holds for every \(Q\in\mathcal C_{p,K}\), without an
+asymptotic restriction on \(K\). It is the exact all-height norm over
+\(\mathcal A_{p,K}\), and
+\[
+C(p)=\frac1{2p}+\frac{\log2}{2p\log p}
+ +O\!\left(\frac1{p(\log p)^2}+\frac1{p^2}\right).
+\tag{11d}
+\]
+
+To prove (11b), write
+\[
+-E_A(U)=\int_p^\infty A(t)r_U(t)\,d\mu(t),\qquad
+r_U(t)=\mathbf1_{[p,U]}(t)\,[1+h(U)(t-1)].
+\tag{11e}
+\]
+The kernel is strictly increasing on \([p,U]\) and zero afterwards.
+If \(U\le u_p\), the prefix has at most half of the total
+\(\mu\)-mass \(f(p)\). Taking \(A=K\) on the prefix and
+\(A=-K[f(p)-f(U)]/f(U)\) on the tail is admissible and maximizes
+the integral, since the kernel is nonnegative. Its value divided by
+\(K\) is \(f(p)-f(U)+h(U)\log(U/p)
+=f(p)-h(U)\log p\).
+
+If \(U>u_p\), the interval \([v(U),U]\) has exactly half of
+the total \(\mu\)-mass. Set \(\lambda=1+h(U)(v(U)-1)\).
+The zero-moment condition gives the dual bound
+\[
+\int A r_U\,d\mu=\int A(r_U-\lambda)\,d\mu
+\le K\int|r_U-\lambda|\,d\mu.
+\tag{11f}
+\]
+Equality holds for \(A=K\) on \((v(U),U)\) and \(A=-K\)
+on its complement. Integrating this profile gives the second branch
+of (11b). Negating any profile handles the absolute value. This is
+the classical weighted-median/one-moment duality; no general duality
+theorem is needed beyond the displayed bound and its attaining profile.
+
+The first branch is strictly increasing because \(h'<0\). To check
+the second branch globally, put \(b=\alpha-1\) and
+\(D(U)=\log(Up/v(U)^2)\). For \(U\ge u_p=\alpha/b\),
+\[
+D(U)\ge D(u_p)=\log(u_p/p)>0,\qquad
+0<D'(U)=\frac{bU-1}{U(1+bU)}<\frac1U.
+\]
+Consequently
+\[
+N_p'(U)=f'(U)+h'(U)D(U)+h(U)D'(U)
+< -\frac1{U(U-1)}+\frac{f(U)}{U\log U}<0,
+\tag{11g}
+\]
+using \(f(U)\le1/(U-1)\) and \(U\ge u_p>e\).
+The two branches agree at \(u_p\), proving its unique maximality
+and (11c). At that height the relaxed maximizers are, up to overall
+sign and null sets, \(A=K\) before \(u_p\) and \(A=-K\)
+afterwards. The expansion (11d) follows from
+\(u_p=2p-1/2+O(p^{-1})\) and \(f(p)=p^{-1}+O(p^{-2})\).
+
+The relaxation discards prime locations, integer-valued counting jumps
+and source realizability. Its exact maximizing profile is not an
+admissible source agreeing through \(p\): local finiteness and prefix
+agreement force the actual discrepancy to vanish on an interval
+immediately to the right of \(p\). Thus (11c) is a sharp **relaxed**
+norm and a universal source upper bound; it does not identify the
+exact discrete-source supremum at a fixed \(p\). The constructions
+below establish only the stated leading asymptotic source sharpness.
 
 ## 2. Sharpness by finite discrete sources
 
@@ -382,6 +486,16 @@ The general mechanism is classical one-dimensional discrepancy/variation duality
 
 The line-local delta is the **sharp Mertens-conditioned Robin norm over admissible discrete sources**, including its finite real- and integer-label realizations and necessary near-extremizer geometry. RE-154 establishes the relocation scale but not this optimal norm under exact normalization. RE-169 supplies the compensation identity but not a counting-budget extremum. RE-258 and RE-260 establish narrower positional stability and injectivity boundaries; their hypotheses do not classify growing counting budgets. RE-173 permits infinite prime multiplicities and RE-256 constructs local real-label compensation, without the optimal all-height counting-norm statement. The literature comparison does not establish a globally new discrepancy theorem.
 
+The finite-scale optimization (11b) is a specialization of classical
+best constant approximation in \(L^1\), whose minimizers are weighted
+medians. See L. G. Brown and B. J. Lucier,
+[*Best approximations in L1 are near best in Lp, p < 1*,
+Proceedings of the AMS **120** (1994), 97--100](https://www.math.purdue.edu/~lucier/pde-papers/nearbest.pdf),
+opening page. The additional calculation here is the exact Robin
+kernel norm and its maximizing height, including the finite-scale
+correction in (11d); neither median duality nor a new arithmetic
+exclusion theorem is claimed.
+
 The integer realization uses the classical subsum interval criterion
 recorded by J. E. Nymann, [*Linear combinations of Cantor sets*,
 Colloquium Mathematicum **68** (1995), 259--264](https://doi.org/10.4064/cm-68-2-259-264),
@@ -439,8 +553,23 @@ atom and counting formulas within \(3\cdot10^{-76}\), satisfied
 checks are supplementary and are not interval certificates; the
 finite rational identity and the asymptotic proof above are decisive.
 
+For (11b), a supplementary floating-point optimization used
+\(p\in\{3,11,101,1009\}\), ten cutoffs per \(p\) (including
+\(u_p\), both sides of it, and \(100p\)), and meshes of 127, 511 and
+2047 equal cells in \(x=f(t)/f(p)\), split additionally at
+\(x=f(U)/f(p)\). Integrating the kernel on each cell and sorting
+cell scores solves the resulting box-constrained, zero-mean linear
+program. Across the 120 checks, its value never exceeded (11b) by
+more than \(1.4\cdot10^{-15}f(p)\); the largest mesh deficit was
+\(4.1\cdot10^{-6}f(p)\). At \(u_p\), agreement was within
+\(1.4\cdot10^{-15}f(p)\). A further 8000 height comparisons agreed
+with the proved monotonicity on the two branches. These are numerical
+sign and optimization checks, not interval certificates; (11e)--(11g)
+give the exact proof.
+
 Important boundaries:
 
+- The exact finite-scale constant (11c) is optimal over measurable zero-Mertens-moment profiles. Discrete-source asymptotic sharpness does not prove attainment of that finite-scale constant or its second-order term by ordinary-prime deletions and integer insertions.
 - Finite cardinality-preserving sharpness witnesses use real labels. Finite distinct-integer witnesses in (18i) add \(K\) net labels; the alternative integer construction uses infinitely many unit shifts. None satisfies the original-prime-cell restriction throughout. Finite integer prime-cell rigidity and finite ordinary-prime Euler-factor rigidity remain intact. Finite cardinality-preserving integer sharpness is not asserted.
 - Infinite modifications are allowed in the upper bound because bounded \(A\) proves the needed convergence. No finite-support valuation argument is passed to an infinite product.
 - Exact Mertens matching is essential for the smaller complementary-mass bound in (5); without it the zero integral in (8) is absent.
