@@ -1,13 +1,15 @@
-# MI-040 — Paired-box inversion transports trimmed Möbius pole tests
+# MI-040 — Paired-box inversion and deleted-start recovery transfer between prime and Möbius tests
 
 **Evidence level:** supported conditional cross-line deduction from
 [PL-475](../../prime_lattice/findings/PL-475-two-box-lengths-force-paired-macroscopic-prime-variance.md),
 [MC-528](../../mobius_cancellation/findings/MC-528-multiplicity-aware-annihilation-forces-mobius-variance-on-every-block.md),
-[MC-531](../../mobius_cancellation/findings/MC-531-bounded-jumps-recover-trimmed-mobius-variance.md), and
-[MC-532](../../mobius_cancellation/findings/MC-532-paired-boxes-recover-trimmed-mobius-variance-at-macroscopic-lengths.md).
+[MC-531](../../mobius_cancellation/findings/MC-531-bounded-jumps-recover-trimmed-mobius-variance.md),
+[MC-532](../../mobius_cancellation/findings/MC-532-paired-boxes-recover-trimmed-mobius-variance-at-macroscopic-lengths.md), and
+[PL-476](../../prime_lattice/findings/PL-476-trimmed-paired-prime-variance-retains-the-grh-obstruction.md).
 The local mechanisms are retained in [Prime Lattice MI-067](../../prime_lattice/mind/intuition/MI-067-two-box-lengths-recover-smooth-pole-tests-at-macroscopic-scale.md)
 and [Möbius MI-103](../../mobius_cancellation/mind/intuition/MI-103-bounded-jumps-price-deleted-starts-in-pole-tests.md).
-MC-532 proves the composition and its quantified RH equivalence; this
+MC-532 proves the composition and its quantified RH equivalence;
+PL-476 transfers deleted-start recovery back to the prime source. This
 note preserves the cross-line correspondence without claiming independent
 adversarial approval, an arithmetic upper estimate, formal verification
 or novelty.
@@ -95,3 +97,45 @@ a qualitative exceptional density, or a start-dependent fitted center
 does not supply (*). The bounded-jump tent control establishes only the
 generic absolute-mass cost, not optimality of the Möbius deletion budget.
 Full-zero-set dependence and non-effective onset remain unchanged.
+
+The reverse transfer has an explicit coefficient price. For a generic
+source \(a_n\), the same integer-window identity gives
+\(\Delta S_L(j)=a_{j+L+1}-a_{j+1}\). If this is bounded by
+\(J_X\), the common finite lemma bounds a complete pairing by
+\[
+|P_i|\ll_\phi
+ \{\sqrt{XV_i}+J_XB_i^2\}/L_i.
+\]
+Thus the two source-dependent costs separate:
+
+| Source | Jump bound \(J_X\) | Rounded-target error | Isolated pole signal |
+| --- | --- | --- | --- |
+| \(\mu(n)\) | \(2\) | \(O(1)\) | \(X^{\rho_0}Q_{m-1}(\log X)\), nonzero leading coefficient |
+| \(\Lambda(n)\mathbf1_{n\equiv1\ (5)}\) | \(\log(3X)\) | \(O(\log(3X))\) | \(-w_{\rho_0}X^{\rho_0}\), \(w_{\rho_0}>0\) |
+
+PL-476 therefore proves, with \(V_i^{(p)}\) defined as the retained
+energy of the prime window about its own constant and \(B_i^{(p)}\)
+its omitted-start count,
+\[
+\sum_{i=1}^2
+\frac{\sqrt{XV_i^{(p)}}+(B_i^{(p)})^2\log(3X)}{L_i}
+\gg X^\beta.
+\]
+Here \(X\) is an integer, each \(B_i^{(p)}<X/2\), and the length,
+mask and center choices have the same uniformity as in (*). A common
+zero of the four mod-5 functions adds positive multiplicity weights;
+logarithmic derivatives retain simple poles even at multiple zeros.
+The Möbius logarithmic multiplicity factor must not be copied to primes.
+
+The same quantified \(3/4\)-deletion and retained-energy criterion
+above, now for the prime source, is equivalent to **joint GRH for zeta
+and the three primitive nonprincipal mod-5 functions**. The extra
+logarithm is absorbed by the strict exponent gap to \(\beta>1/2\).
+Its converse is independent: the GRH prime-counting error
+\(O(\sqrt{x}\log^2(3x))\), with empty masks and centers \(L_i/4\),
+gives \(V_i^{(p)}\ll X^2\log^4(3X)\), sufficient at
+\(L_i\asymp X\). It supplies no short-window analogue of MC-520.
+The common operator and recovery lemma identify an observation budget;
+the different arithmetic pole formulas and converse estimates remain
+separate inputs. Constant coefficients also satisfy the jump bound but
+give constant window sums, so recovery alone cannot force a pole signal.

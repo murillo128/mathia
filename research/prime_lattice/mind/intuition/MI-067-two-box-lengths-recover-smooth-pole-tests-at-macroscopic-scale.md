@@ -1,6 +1,6 @@
 # MI-067 — Two box lengths recover a smooth pole test at macroscopic scale
 
-**Evidence level:** supported conditional synthesis of [PL-475](../../findings/PL-475-two-box-lengths-force-paired-macroscopic-prime-variance.md), with the single-box boundary in [PL-474](../../findings/PL-474-nonquasianalytic-tests-close-the-iterated-log-window-boundary.md). Compact-distribution multichannel deconvolution is classical. No arithmetic variance ceiling or new general inversion theorem is asserted.
+**Evidence level:** supported conditional synthesis of [PL-475](../../findings/PL-475-two-box-lengths-force-paired-macroscopic-prime-variance.md) and [PL-476](../../findings/PL-476-trimmed-paired-prime-variance-retains-the-grh-obstruction.md), with the single-box boundary in [PL-474](../../findings/PL-474-nonquasianalytic-tests-close-the-iterated-log-window-boundary.md). Compact-distribution multichannel deconvolution is classical. No arithmetic variance ceiling or new general inversion theorem is asserted.
 
 Let \(b_a=a^{-1}\mathbf1_{[0,a]}\), \(A_af=b_a*f\), and use
 \(\widehat f(\xi)=\int f(u)e^{-iu\xi}\,du\). A single box has zeros
@@ -73,6 +73,49 @@ of which length is large is available. Bounds
 unbounded scale set with \(H=\lfloor X/20\rfloor\) and fixed finite
 \(A\ge0\), imply joint GRH
 modulo 5. A ceiling at just one member does not suffice.
+
+For integer base scales, PL-476 also recovers the complete pairings
+after deleting whole starts. Put \(I_X=\{X,\ldots,2X-1\}\),
+\(L_1=H,L_2=K\), and independently choose \(E_i\subset I_X\),
+\(B_i=|E_i|<X/2\), and constants \(c_i\in\mathbb C\). Define
+\[
+W_i=\sum_{j\in I_X\setminus E_i}|S_{L_i}(j)-c_i|^2.
+\]
+The exact endpoint difference is
+\(S_L(j+1)-S_L(j)=a_{j+L+1}-a_{j+1}\). Since both coefficients
+lie in \([0,\log(3X)]\), its modulus is at most \(\log(3X)\).
+The finite recovery lemma for a sequence with jumps bounded by \(J\)
+gives \(\sum_j|r_j|\le2\sqrt{XW}+2JB^2\) when \(B<X/2\).
+Applying it separately to the centered windows yields
+\[
+\boxed{\sum_{i=1}^2
+ \frac{\sqrt{XW_i}+B_i^2\log(3X)}{L_i}\gg X^\beta.}
+\]
+The complete mean-zero pairings still recover the pole-isolating target
+with the same \(O(\log X)\) rounding error; no test is multiplied by a
+mask. Different masks and retained empirical means are allowed. A
+start-dependent fitted profile need not preserve either cancellation
+of the center or the jump bound.
+
+At \(H=\lfloor X/20\rfloor\), joint GRH for the four functions is
+equivalent to the existence of one unbounded integer scale set and
+mask/center families, fixed before epsilon, for which both channels obey
+\[
+B_i\ll_\varepsilon X^{3/4+\varepsilon},\qquad
+W_i\ll_\varepsilon X^{1+\varepsilon}L_i
+\quad\text{for every }\varepsilon>0.
+\]
+The resulting upper bound is
+\(O_\varepsilon(X^{1/2+\varepsilon/2}
++X^{1/2+2\varepsilon}\log(3X))\), contradicting any \(\beta>1/2\)
+for sufficiently small epsilon. The converse uses the separate prime
+estimate \(\psi(x;5,1)=x/4+O(\sqrt{x}\log^2(3x))\) under joint
+GRH: empty masks and \(c_i=L_i/4\) give
+\(W_i\ll X^2\log^4(3X)\). This suffices because \(L_i\asymp X\);
+it does not give the same ceiling at arbitrary short lengths.
+The \(3/4\) deletion exponent is sufficient, not proved optimal for
+primes or signed tests; qualitative \(B_i=o(X)\) is insufficient for
+this recovery bound.
 
 PL-474's single-box certificate stops at
 \(H=X/[\log X(\log\log X)^r]\), \(r>1\), within that family of
