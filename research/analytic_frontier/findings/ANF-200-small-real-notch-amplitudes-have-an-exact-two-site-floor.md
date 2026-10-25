@@ -1,6 +1,6 @@
 # ANF-200 — Small real notch amplitudes have an exact two-site floor
 
-**Status:** EXACT-DERIVED + REAL-MULTISET + LOCAL-AMPLITUDE-REDUCTION + SHARP-QUADRATIC-RESPONSE. For each fixed dominated positive-Fourier profile with an inverse-square Fourier tail and positive exposure on the source zero set, the entire finite-real-multiset infimum is attained by two sites throughout a positive amplitude interval. This strengthens ANF-199's stationary-contact criterion: the nonstationary case also reduces exactly to a one-variable minimum, rather than merely having a two-site upper bound. The interval depends on the profile. No complex-configuration or zeta-zero consequence is established.
+**Status:** EXACT-DERIVED + REAL-MULTISET + LOCAL-AMPLITUDE-REDUCTION + SHARP-QUADRATIC-RESPONSE + EXACT-FINITE-ATTAINMENT-TAIL-BOUNDARY. For each fixed dominated positive-Fourier profile with an inverse-square Fourier tail and positive exposure on the source zero set, the entire finite-real-multiset infimum is attained by two sites throughout a positive amplitude interval. This strengthens ANF-199's stationary-contact criterion: the nonstationary case also reduces exactly to a one-variable minimum, rather than merely having a two-site upper bound. Conversely, finite attainment at even one positive amplitude forces the inverse-square tail; without it, every finite configuration can be strictly improved by adjoining a distant translate. This failure can occur even for an \(H^1\) profile. The interval depends on the profile. No complex-configuration or zeta-zero consequence is established.
 
 ## Exact reduction and its quadratic consequence
 
@@ -289,6 +289,155 @@ and \(\delta\Phi'(r)>0\). Simplicity gives
 \(\delta=\operatorname{sgn}(\Phi'(r))\sqrt\varepsilon/|K'(r)|+O_\phi(\varepsilon)\).
 The actual pair then attains the asserted leading constant.
 
+## The inverse-square tail is exactly the finite-attainment boundary
+
+Temporarily drop only the tail assumption from (2), retaining
+\(0\le\phi\le J_0\), real evenness, integrability, \(\Phi\ge0\), and
+\(M=\max_j\Phi(r_j)>0\). The maximum still exists by Fourier decay.
+With the notation (4), the following conditions are equivalent:
+
+1. \(\sup_{x\in\mathbb R}(1+x^2)\Phi(x)<\infty\).
+2. For some \(t\in(0,1)\), a nonempty finite real multiset attains
+   \(q_\phi^{\mathbb R}(t)\).
+3. There is \(t_\phi>0\) such that the exact two-site formula (5) holds,
+   with an attaining pair, for every \(0<t\le t_\phi\).
+
+The proof above gives \(1\Rightarrow3\), and \(3\Rightarrow2\) is immediate.
+The converse follows from a translated-copy test that also explains the
+failure outside this tail class.
+
+Write a fixed nonempty real multiset \(W\) as distinct sites \(x_i\) with
+positive integer multiplicities \(m_i\). Set
+\[
+N=\sum_i m_i,\qquad A_W=\sum_i m_i^2>0,\qquad
+d_W=\max_i x_i-\min_i x_i,\qquad
+Q_t(W)=\frac{E_{J_0-t\phi}(W)}{L(W)}.
+\]
+The explicit source kernel (1), including its removable points, has a
+finite constant \(C_F\) such that
+\[
+0\le F(x)\le\frac{C_F}{1+x^2}\qquad(x\in\mathbb R).
+\tag{19}
+\]
+For \(R>2d_W+1\), the supports of \(W\) and \(W+R\) are disjoint.
+Every multiplicity is preserved, so their affine denominators add
+exactly: \(L(W\cup(W+R))=2L(W)\). Define
+\[
+\mathcal C_t(R)=
+\sum_{i,j}m_im_j\{F(R+x_i-x_j)-t\Phi(R+x_i-x_j)\}.
+\]
+Expanding the two self-energies and the two cross-energies gives
+\[
+\boxed{
+Q_t(W\cup(W+R))=Q_t(W)+\frac{\mathcal C_t(R)}{L(W)}.
+}
+\tag{20}
+\]
+Because \(|R+x_i-x_j|\ge R/2\), (19) bounds the entire source cross
+term by \(4C_FN^2/(1+R^2)\). Fourier nonnegativity lets us retain just
+the \(i=j\) terms of the notch cross term. Therefore
+\[
+\boxed{
+\mathcal C_t(R)
+\le\frac{4C_FN^2}{1+R^2}-tA_W\Phi(R).
+}
+\tag{21}
+\]
+If \(W\) attains the global floor, (20) forces
+\(\mathcal C_t(R)\ge0\) for every such \(R\). Equation (21) then gives
+\[
+(1+R^2)\Phi(R)\le\frac{4C_FN^2}{tA_W}
+\qquad(R>2d_W+1).
+\tag{22}
+\]
+Evenness and boundedness of \(\Phi\) on the remaining compact interval
+prove condition 1. This establishes the equivalence.
+
+More strongly, when condition 1 fails, continuity and evenness supply
+arbitrarily large positive \(R\) for which the right side of (21) is
+strictly negative. Thus, for **each** fixed \(t\in(0,1)\) and **each**
+finite \(W\), a disjoint translated copy strictly improves its
+normalized energy. No finite multiset attains the floor at that
+amplitude. The floor nevertheless remains positive:
+\[
+q_\phi^{\mathbb R}(t)\ge1-t>0,
+\tag{23}
+\]
+by \(J_0-t\phi\ge(1-t)J_0\) and (7). Nonattainment is not instability
+or an energy unbounded below.
+
+When condition 1 fails, there is also a four-site witness against the
+*best simple two-site value* at every positive amplitude. Even without
+the tail assumption,
+\(V_t=F-t\Phi\) tends to zero at infinity, has a negative value at
+an active source root, and has \(V_t(0)>0\). It therefore attains a
+negative minimum at some \(x_t>0\). Apply (20)--(21) to
+\(W=\{0,x_t\}\). For a sufficiently distant selected \(R\), the four
+distinct simple sites \(\{0,x_t,R,R+x_t\}\) have energy strictly below
+\(1-t\Phi(0)+V_t(x_t)\). This uses an optimizing pair for the actual
+amplitude, rather than an unperturbed equality pair.
+
+The translated-copy identity is the multiset-normalized version of
+ANF-018, section 5. ANF-019 uses far copies to make cross interaction
+small. Here its **negative sign** is forced by the source tail and
+\(\Phi\ge0\), which converts that classical test into the converse
+to (5). No growing-cardinality or infinite-volume limit is used to
+produce each strict improvement.
+
+## Square-root exposure stability does not ensure finite attainment
+
+The converse separates the exact floor from ANF-195's weaker \(H^1\)
+square-root stability theorem. Freeze
+\[
+0<\eta<1/(2r_1),\qquad
+\tau(u)=b(1-|u|/\eta)_+\le J_0(u),\qquad
+T(x)=b\eta\,\operatorname{sinc}^2(\eta x),
+\]
+with \(b>0\) chosen small enough and
+\(\operatorname{sinc}(x)=\sin(\pi x)/(\pi x)\).
+Let \(0<\lambda<1\), and set
+\[
+R_n=2^{n^2},\qquad
+Z=\sum_{n\ge1}R_n^{-3/2},\qquad
+w_n=Z^{-1}R_n^{-3/2},\qquad
+\phi(u)=\frac{\tau(u)}{1+\lambda}
+\left[1+\lambda\sum_{n\ge1}w_n\cos(2\pi R_nu)\right].
+\tag{24}
+\]
+This is one fixed profile, independent of \(t\) and all configurations.
+Since \(\sum w_n=1\),
+\[
+\frac{1-\lambda}{1+\lambda}\tau\le\phi\le\tau\le J_0.
+\]
+Also \(\sum_n w_nR_n<\infty\), so the cosine series and its first
+derivative converge uniformly. Multiplying this bounded \(C^1\)
+function by the zero-extended tent proves \(\phi\in H^1(\mathbb R)\):
+the product is compactly supported, continuous at the endpoints and
+has a bounded weak first derivative. Its transform is
+\[
+\Phi(x)=\frac1{1+\lambda}
+\left[T(x)+\frac{\lambda}{2}\sum_{n\ge1}w_n
+\{T(x-R_n)+T(x+R_n)\}\right]\ge0.
+\tag{25}
+\]
+Uniform convergence and an integrable physical-space majorant justify
+the transformation. In particular,
+\[
+\Phi(r_1)\ge\frac{T(r_1)}{1+\lambda}>0,\qquad
+R_n^2\Phi(R_n)\ge
+\frac{\lambda T(0)}{2(1+\lambda)Z}R_n^{1/2}\longrightarrow\infty.
+\tag{26}
+\]
+Thus \(M>0\), yet condition 1 fails. This profile has the qualitative
+two-site exposure envelope and the square-root exposure bound of
+ANF-195, but **no** finite configuration attains
+\(q_\phi^{\mathbb R}(t)\) at any \(t\in(0,1)\). In particular, that
+Sobolev stability bound cannot replace the tail assumption in (5).
+The construction uses ANF-196's positive modulation mechanism with
+different weights; unlike its almost-\(H^1\) example, this one belongs
+to \(H^1\). Neither the exact floor value outside the tail class nor
+a uniform lower bound on the strict improvement is asserted.
+
 ## Prior art, checks and boundary
 
 The source kernel and its one-delta extremal role are classical:
@@ -312,12 +461,28 @@ stability and ground-state reductions did not identify that formula;
 this is not a claim of exhaustive literature novelty. The Taylor and
 implicit-function steps are classical. Existing SOURCES anchors suffice.
 
+For the converse, the classical replication/autocorrelation mechanism
+is already explicit in ANF-018--ANF-019; no novelty is claimed for
+adjoining a translated cluster. The additional conclusion is the exact
+tail characterization (19)--(22) and its compatibility with \(H^1\)
+regularity in (24)--(26). Procacci's stability definition does not by
+itself assert finite attainment, and Sütő's fixed-density infinite-volume
+theorem does not decide this free finite-multiset minimum. The positive
+modulation construction is elementary Fourier analysis, with the
+slow-decay prior-art boundary already recorded in ANF-196. No external
+ground-state or Sobolev theorem is being imported to prove the converse.
+
 The decisive audit points are: the marked-site incident sums contain no
 internal good matching edge; the two-endpoint estimate pays for outside
 edges without spending \(\Delta_P\); the negative sign of \(v(t)\)
 reverses the matched-weight comparison correctly; and multiplicity
 normalization uses \(L\), not total particle number. The proof does not
 rely on compactness of the original configuration class.
+For the converse, disjointness is needed for denominator additivity,
+\(\Phi\ge0\) is needed before discarding all but the matched-copy
+terms, and the translation is selected only after the fixed profile,
+amplitude and finite configuration. Mere Fourier positive-definiteness
+without pointwise \(\Phi\ge0\) would not justify (21).
 
 As a noncertifying numerical falsification attempt, use the triangular
 profile \(\phi(u)=\tfrac1{10}(1-5|u|)_+\). It is admissible: on its
@@ -338,8 +503,11 @@ These samples neither certify \(t_\phi\) nor prove the global bound;
 
 The interval is fixed-profile and may become arbitrarily small under
 profile variation; ANF-198's nonuniform controls are not contradicted.
-The inverse-square tail is essential to the stated proof and is stronger
-than the bare regularity of all profiles in ANF-195. The excluded case
+The inverse-square tail is the exact finite-attainment boundary above,
+not merely a sufficient condition of the matching proof. It is stronger
+than the \(H^1\) regularity sufficient for square-root exposure stability.
+Necessity at one amplitude does not assert sufficiency at that same
+amplitude: (5) is still an initial-interval result. The excluded case
 \(M=0\) is the source-rescaling case treated separately by ANF-197.
 Most importantly, positivity of the real pair terms in (7) does not
 extend to arbitrary complex differences. This closes the small-amplitude
