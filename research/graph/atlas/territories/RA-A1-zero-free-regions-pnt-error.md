@@ -48,3 +48,7 @@ The territory therefore remains `active`, not `open`: Mathia is traversing the c
 ## Fixed-target logarithmic-window boundary
 
 [[research/graph/relations/fixed-target-box-inversion-regularity-boundary|Fixed-target box inversion and its regularity boundary]] records PL-474 and MC-530's constructive r>1 range together with PL-473's all-scale fixed-target obstruction for 0<=r<=1. The source-dependent variance floors are conditional on an off-critical zero; the required absolute variance ceilings remain unproved. This is a conditional analytic refinement within A1, whose state `active` and mass are unchanged.
+
+## Paired windows and exceptional starts
+
+The same [[research/graph/relations/fixed-target-box-inversion-regularity-boundary|box-inversion mechanism]] now records two distinct conditional extensions: PL-475 reaches macroscopic lengths with a pair of variances, while MC-531 prices deleted integer starts by a B² recovery term without changing its single-box range. Their arithmetic upper estimates remain unproved. Global MI-040's composition retains synthesis evidence level. These extensions leave A1 `active` and its mass unchanged.

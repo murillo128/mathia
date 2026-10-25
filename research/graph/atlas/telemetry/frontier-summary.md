@@ -2,7 +2,7 @@
 id: RA-frontier-telemetry-v1
 type: riemann-atlas-frontier-telemetry
 atlas_version: 1
-prospective_source_cutoff: dad389ed99a0df95a4db87934b7e0275ae436f57
+prospective_source_cutoff: b76d9d4208485a9c9c04192126afd07979ef2cda
 derived: true
 ---
 
@@ -44,7 +44,13 @@ Membership, native-link formatting, synthesis and prior-art registration contrib
 
 The prime logarithmic derivative retains a noncancelling simple pole, whereas reciprocal zeta requires full unwanted-pole multiplicity and local division, and retains a logarithmic polynomial at the chosen pole. Both sources leave the absolute arithmetic variance ceiling unproved and their tests dependent on the full hypothetical zero set. Classical nonquasianalytic cutoffs and logarithmic-integral uncertainty are prior art; the sources verify the compatibility estimates.
 
-This is one `viable-extension` episode for the shared regularity question, attributed to `prime_lattice` for reporting and including the independently reconstructed Möbius instance. It does not count two findings as two episodes or assert a new unconditional RH route. It replaces the oldest retained heat-phase barrier under the existing last-20 rule. Atlas A1 remains `active` with unchanged mass. The episode rates remain selective, not an unbiased portfolio sample.
+This is one `viable-extension` episode for the shared regularity question, attributed to `prime_lattice` for reporting and including the independently reconstructed Möbius instance. It does not count two findings as two episodes or assert a new unconditional RH route. Atlas A1 remains `active` with unchanged mass. The episode rates remain selective, not an unbiased portfolio sample.
+
+## Paired kernels and missing starts
+
+[[research/graph/relations/fixed-target-box-inversion-regularity-boundary|The expanded mechanism]] records two independently classifiable extensions. PL-475 changes the operator to a two-box system, reaching a paired conditional prime-variance floor through H<=X/20 with explicit rounding cost. MC-531 changes the missing-data allowance, recovering a complete Möbius linear pairing from retained energy and a B² deletion bill in the existing single-box range. The first requires both variance ceilings; the second requires both the retained-energy and exceptional-count estimates. Neither supplies those arithmetic upper bounds.
+
+They contribute one `viable-extension` episode per distinct question. Global MI-040's composition is conditional synthesis, not a third episode. Classical multichannel inversion is registered as prior art without a separate event or novelty upgrade. The single-box obstruction, reciprocal-pole multiplicity, full-zero-set dependence and arbitrary-constant-center restriction survive. A1 remains `active`; all Atlas masses and states are unchanged.
 
 ## Retained prospective window
 
@@ -52,13 +58,13 @@ Classifiable episodes: **20**. Insufficient-evidence episodes: **0**. Retrospect
 
 | Classification | Episodes |
 | --- | ---: |
-| known-prior-art | 3 |
-| new-barrier | 9 |
-| viable-extension | 8 |
+| known-prior-art | 2 |
+| new-barrier | 8 |
+| viable-extension | 10 |
 
-- **FrontierFertilityEpisodes = 40.0%**
-- **BarrierRate = 45.0%**
-- **PriorArtCollisionRate = 15.0%**
+- **FrontierFertilityEpisodes = 50.0%**
+- **BarrierRate = 40.0%**
+- **PriorArtCollisionRate = 10.0%**
 - **InternalDuplicateRate = 0.0%**
 
 ## Per-line sample
@@ -66,11 +72,9 @@ Classifiable episodes: **20**. Insufficient-evidence episodes: **0**. Retrospect
 | Line | Episodes | Viable extension | Barrier | Prior art | Duplicate |
 | --- | ---: | ---: | ---: | ---: | ---: |
 | `arithmetic_fidelity` | 4 | 2 | 2 | 0 | 0 |
-| `mobius_cancellation` | 2 | 1 | 0 | 1 | 0 |
-| `nyman_beurling` | 1 | 0 | 1 | 0 | 0 |
-| `prime_circle` | 1 | 0 | 0 | 1 | 0 |
+| `mobius_cancellation` | 3 | 2 | 0 | 1 | 0 |
 | `prime_flute` | 1 | 1 | 0 | 0 | 0 |
-| `prime_lattice` | 4 | 2 | 2 | 0 | 0 |
+| `prime_lattice` | 5 | 3 | 2 | 0 | 0 |
 | `robin_extremal` | 1 | 1 | 0 | 0 | 0 |
 | `visual_exploration` | 1 | 1 | 0 | 0 | 0 |
 | `weil_inertia` | 1 | 0 | 1 | 0 | 0 |

@@ -55,6 +55,7 @@ This is a path-derived structural projection for graph topology. Each link means
 - [[research/mind/intuition/MI-037-only-intrinsic-destination-budgets-count-as-surviving-source-resources]]
 - [[research/mind/intuition/MI-038-destination-fibres-and-baselines-must-be-separated-before-crediting-a-resource]]
 - [[research/mind/intuition/MI-039-calibration-gluing-transfers-randomized-stopping-bounds-only-in-the-admitted-function-class]]
+- [[research/mind/intuition/MI-040-paired-box-inversion-transports-trimmed-mobius-pole-tests]]
 - [[research/mind/intuition/MI-900-exact-inversion-can-coexist-with-zero-budgeted-separation]]
 
 ### Analytic Frontier
@@ -320,6 +321,7 @@ This is a path-derived structural projection for graph topology. Each link means
 - [[research/mobius_cancellation/mind/intuition/MI-100-mellin-differences-retain-the-rh-short-window-variance-gain]]
 - [[research/mobius_cancellation/mind/intuition/MI-101-smooth-deconvolution-separates-zero-exclusion-from-endpoint-recovery]]
 - [[research/mobius_cancellation/mind/intuition/MI-102-centered-dyadic-variance-recovers-full-principal-parts]]
+- [[research/mobius_cancellation/mind/intuition/MI-103-bounded-jumps-price-deleted-starts-in-pole-tests]]
 
 ### Nyman–Beurling
 - [[research/nyman_beurling/mind/intuition/MI-001-target-aware-gram-geometry-must-carry-absolute-scale]]
@@ -566,6 +568,7 @@ This is a path-derived structural projection for graph topology. Each link means
 - [[research/prime_lattice/mind/intuition/MI-064-the-mod5-first-moment-premise-is-a-zero-free-input]]
 - [[research/prime_lattice/mind/intuition/MI-065-seam-filtering-recovers-sparse-arithmetic-poles-from-dyadic-variance]]
 - [[research/prime_lattice/mind/intuition/MI-066-relative-frames-transfer-frontiers-but-admit-common-off-critical-poles]]
+- [[research/prime_lattice/mind/intuition/MI-067-two-box-lengths-recover-smooth-pole-tests-at-macroscopic-scale]]
 
 ### Robin Extremal
 - [[research/robin_extremal/mind/intuition/MI-001-robin-failure-requires-self-tangent-half-mass-event-gaps]]

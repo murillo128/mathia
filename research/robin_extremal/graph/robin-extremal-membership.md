@@ -271,3 +271,4 @@ This stable projection inventories every current canonical Robin Extremal findin
 - [[research/robin_extremal/findings/RE-262-balanced-integer-mertens-repairs-force-prime-chain-or-quadratic-support|RE-262]]
 - [[research/robin_extremal/findings/RE-263-two-prime-balanced-mertens-repairs-have-one-candidate-and-a-square-root-gap-barrier|RE-263]]
 - [[research/robin_extremal/findings/RE-264-maynard-panels-realize-finite-balanced-integer-robin-sharpness-at-fixed-budget|RE-264]]
+- [[research/robin_extremal/findings/RE-265-disjoint-fixed-panel-repairs-reach-robin-critical-balanced-integer-budgets|RE-265]]

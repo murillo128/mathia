@@ -139,7 +139,7 @@ Uniformly over (3), the same construction gives
 \]
 for all sufficiently large \(X\).
 
-The analytic input to (13) is specific: MC-528's multiplicity-counted
+The analytic input to (13) is specific: [[research/mobius_cancellation/findings/MC-528-multiplicity-aware-annihilation-forces-mobius-variance-on-every-block|MC-528]]'s multiplicity-counted
 sparse canonical product cancels every unwanted reciprocal-zeta pole;
 local division gives a growth bound after exact cancellation; MC-530's
 compact nonquasianalytic test dominates that growth and its finite
@@ -181,7 +181,7 @@ If a zero has \(\beta>1/2\), choose \(\varepsilon\) so small
 that \(2\varepsilon<\beta-1/2\). The right side is
 \(o(X^\beta)\), contradicting (13) on every sufficiently large member
 of the unbounded set. Functional-equation symmetry then gives RH.
-For the converse, under RH MC-520's classical complete uncentered
+For the converse, under RH [[research/mobius_cancellation/findings/MC-520-rh-mellin-variance-closes-conditional-farey-window-target|MC-520]]'s classical complete uncentered
 estimate gives (7) with \(E_X=\varnothing\), \(c_X=0\), and all
 integer \(X\) sufficiently large. Choosing the empirical mean also works.
 

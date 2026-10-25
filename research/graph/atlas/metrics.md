@@ -2,7 +2,7 @@
 id: RA-metrics-v1
 type: riemann-atlas-metrics
 atlas_version: 1
-source_revision: dad389ed99a0df95a4db87934b7e0275ae436f57
+source_revision: b76d9d4208485a9c9c04192126afd07979ef2cda
 derived: true
 ---
 
@@ -38,15 +38,15 @@ The five hard-pruned interfaces retain their existing scoped canonical evidence:
 
 ## Structural and semantic scope
 
-The exact tree projections contain 13 research lines, 5,094 findings, 838 durable intuitions and 75 prior-art notes. Membership changes and reversible source-reference formatting are graph maintenance, never frontier episodes. Semantic inspection remains selective as recorded in `research/graph/semantic-inspection.json`; uninspected source changes do not justify Atlas transitions.
+The exact tree projections contain 13 research lines, 5,102 findings, 841 durable intuitions and 76 prior-art notes. Membership changes and reversible source-reference formatting are graph maintenance, never frontier episodes. Semantic inspection remains selective as recorded in `research/graph/semantic-inspection.json`; uninspected source changes do not justify Atlas transitions.
 
 ## Frontier fertility
 
-The retained prospective series contains **20** classifiable episodes and **0** insufficient-evidence episodes. The fixed-target box-inversion question gains one shared `viable-extension` episode: PL-474 and MC-530 construct the iterated-log range for r>1 while retaining PL-473's fixed-target, all-scale norm-certificate obstruction for 0<=r<=1. Prime residues and reciprocal-pole multiplicities remain distinct. The trailing window replaces its oldest heat-phase barrier; no arithmetic variance ceiling, effective acquisition or unconditional RH/GRH result is supplied. Atlas states and masses are unchanged.
+The retained prospective series contains **20** classifiable episodes and **0** insufficient-evidence episodes. PL-475's paired macroscopic-window certificate and MC-531's bounded-jump missing-start recovery are distinct `viable-extension` questions. Global MI-040's composition remains conditional synthesis and adds no episode. Both source results retain unproved arithmetic upper estimates and non-effective zero-set dependence. The last-20 window describes selectively inspected questions, not an unbiased portfolio sample. Atlas states and masses are unchanged.
 
-- **FrontierFertilityEpisodes = 40.0%**
-- **BarrierRate = 45.0%**
-- **PriorArtCollisionRate = 15.0%**
+- **FrontierFertilityEpisodes = 50.0%**
+- **BarrierRate = 40.0%**
+- **PriorArtCollisionRate = 10.0%**
 - **InternalDuplicateRate = 0.0%**
 
 Membership, reversible reference formatting and classical-method registration are excluded from the event set.

@@ -37,7 +37,7 @@ The change from
 [[research/prime_lattice/findings/PL-473-box-fourier-zeros-obstruct-logarithmic-window-test-inversion|PL-473]]
 and
 [[research/prime_lattice/findings/PL-474-nonquasianalytic-tests-close-the-iterated-log-window-boundary|PL-474]]
-is the **measurement operator**. Two fixed box kernels with length ratio \(\sqrt2\) admit a compactly supported distributional Bezout identity.
+is the **measurement operator**. Two fixed box kernels with length ratio \(\sqrt2\) admit a [[research/prior_art/incremental/PA-multichannel-compact-distribution-deconvolution|compactly supported distributional Bezout identity]].
 Applied to the fixed smooth zero-isolating target, its dilates give
 smooth compact tests with uniformly bounded norms and exact joint
 recovery. Integer rounding costs only \(O(X^{-1})\) in the target

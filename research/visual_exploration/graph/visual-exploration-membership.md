@@ -467,3 +467,4 @@ This stable projection inventories every current canonical Visual Exploration fi
 - [[research/visual_exploration/findings/VIS-459-single-wall-folding-measures-mirror-overlap|VIS-459]]
 - [[research/visual_exploration/findings/VIS-460-five-defect-rank-pair-has-inverse-prime-spectral-separation|VIS-460]]
 - [[research/visual_exploration/findings/VIS-461-one-quantum-farey-pair-retains-normalized-spectral-separation|VIS-461]]
+- [[research/visual_exploration/findings/VIS-462-zero-ordinate-shell-moments-pay-resonance-and-small-frequency-costs|VIS-462]]

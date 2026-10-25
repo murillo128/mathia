@@ -537,3 +537,4 @@ This stable projection inventories every current canonical Möbius Cancellation 
 - [[research/mobius_cancellation/findings/MC-528-multiplicity-aware-annihilation-forces-mobius-variance-on-every-block|MC-528]]
 - [[research/mobius_cancellation/findings/MC-529-single-near-linear-centered-variance-law-is-equivalent-to-rh|MC-529]]
 - [[research/mobius_cancellation/findings/MC-530-nonquasianalytic-tests-reach-logarithmic-mobius-windows|MC-530]]
+- [[research/mobius_cancellation/findings/MC-531-bounded-jumps-recover-trimmed-mobius-variance|MC-531]]

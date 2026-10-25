@@ -458,3 +458,4 @@ This stable projection inventories every current canonical Weil Positivity findi
 - [[research/weil_positivity/findings/WP-448-periodic-maharam-forms-have-a-sharp-zeta-smoothing-threshold|WP-448]]
 - [[research/weil_positivity/findings/WP-449-nonperiodic-maharam-positive-forms-from-coprime-counting|WP-449]]
 - [[research/weil_positivity/findings/WP-450-bounded-maharam-diagonal-covariance-forces-a-scalar|WP-450]]
+- [[research/weil_positivity/findings/WP-451-phase-invariant-maharam-forms-retain-the-full-finite-weil-sign-defect|WP-451]]

@@ -482,3 +482,4 @@ This stable projection inventories every current canonical Prime Lattice finding
 - [[research/prime_lattice/findings/PL-472-gevrey-box-inversion-reaches-near-linear-prime-windows|PL-472]]
 - [[research/prime_lattice/findings/PL-473-box-fourier-zeros-obstruct-logarithmic-window-test-inversion|PL-473]]
 - [[research/prime_lattice/findings/PL-474-nonquasianalytic-tests-close-the-iterated-log-window-boundary|PL-474]]
+- [[research/prime_lattice/findings/PL-475-two-box-lengths-force-paired-macroscopic-prime-variance|PL-475]]

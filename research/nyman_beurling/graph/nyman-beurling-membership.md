@@ -364,3 +364,4 @@ This stable projection inventories every current canonical Nyman–Beurling find
 - [[research/nyman_beurling/findings/NB-355-two-independent-seed-orbits-require-divergent-physical-components|NB-355]]
 - [[research/nyman_beurling/findings/NB-356-finite-orbit-target-assembly-is-equivalent-to-a-reciprocal-phase-series|NB-356]]
 - [[research/nyman_beurling/findings/NB-357-truncated-lattice-interpolation-prices-two-orbit-target-approximation|NB-357]]
+- [[research/nyman_beurling/findings/NB-358-phase-filtering-characterizes-polynomial-two-orbit-energy|NB-358]]
