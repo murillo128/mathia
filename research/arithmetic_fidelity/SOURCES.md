@@ -404,3 +404,10 @@ AF-584 proves `Delta_r(B)=Theta((r^2/B)^2 log(B/r^2))` with absolute constants f
 - NIST DLMF §3.11(i), recorded under AF-582, supplies the classical minimax/alternation framework; Dette--Titoff, recorded under AF-581, supplies the discrimination-design connection. AF-583 supplies the quantitative prime-profile transport estimate.
 
 AF-585 proves `Delta_3(B)~(27/2)log B/B^2`, the sharp normalized range constant `3 sqrt(3)/2`, and convergence of rescaled best cubics to the saturated-endpoint extremal. A global cubic witness matches the compactness/interpolation obstruction. The prime-edit transfer requires `delta log p -> infinity`; no general approximation priority, ordinary-prime provenance discriminator, or RH conclusion is claimed.
+
+## AF-586 — All fixed-degree sharp range constants
+
+- NIST DLMF §§18.5(i) and 3.11(i), recorded under AF-584/582, supply the classical Chebyshev representation and minimax framework. Shadrin, *Twelve Proofs of the Markov Inequality*, §1.4, recorded under AF-585, supplies the surrounding Zolotarev/affine-Chebyshev extremal theory. AF-586 proves its constrained endpoint-curvature certificate directly by signed Lagrange interpolation.
+- Wu--Yang, *Polynomial methods in statistical inference: theory and practice*, Theorem 3.3.4 and proof, and Dette--Titoff, *Optimal discrimination designs*, recorded under AF-585/581, provide the close Poisson-kernel approximation and discrimination-design comparisons. AF-583 supplies the quantitative arithmetic source estimate; these sources do not supply the new finding's fixed-degree deficit formula as an imported theorem.
+
+AF-586 proves `Delta_r(B)~[r^2 cot^2(pi/(2r))/2] log B/B^2` for every fixed `r>=2`, identifies the unique rescaled limiting approximant as an affine Chebyshev polynomial, and transfers the sharp range constant `r cot(pi/(2r))/2` to the registered prime-edit controls when `delta log p -> infinity`. A whole-window polynomial witness matches the endpoint certificate. Growing-degree sharp limits, general approximation priority and RH conclusions are not claimed.
