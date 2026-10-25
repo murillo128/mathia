@@ -539,3 +539,6 @@ Only sources that materially support, delimit, or redirect stored `PL-*` finding
 
 140. **Iain M. Johnstone, Marc Raimondo**, “Periodic boxcar deconvolution and diophantine approximation,” *Annals of Statistics* **32**(5) (2004), 1781–1804. DOI: https://doi.org/10.1214/009053604000000391; https://arxiv.org/abs/math/0503663.
      - Role: close classical comparison for PL-473: Section 1.1 records exact lost Fourier frequencies for periodic boxcar blur. PL-473 instead studies uniform approximation of a fixed compactly supported target on the real line as the box width shrinks; no statistical recovery theorem is imported.
+
+141. **Armin Rainer**, “Ultradifferentiable extension theorems: a survey,” *Expositiones Mathematicae* **40**(3) (2022), 679–757. DOI: https://doi.org/10.1016/j.exmath.2021.12.001. Author manuscript: https://www.mat.univie.ac.at/~armin/publ/survey-UET.pdf; arXiv: https://arxiv.org/abs/2107.01061.
+     - Role: Lemma 3.3 supplies the infinite-convolution compact bump and its derivative bounds; Theorem 3.6 states the classical Denjoy--Carleman criterion. PL-474 specializes the widths to `1/[j(log(e+j))^q]`, `q>1`, proves that sparse-zero isolation preserves the finer derivative class, and derives the iterated-log prime-window range. No prime-variance result or new uncertainty principle is attributed to the survey.
