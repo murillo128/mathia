@@ -507,6 +507,22 @@ Relevant finding: PF-356; relevant local clue: CLUE-positive-width-transition-sc
 
 **Scope warning.** No uniform perturbation theorem at a singular metric is imported. PF-356's constants depend on the fixed node sets; its growing-dimensional countercontrol uses a freely chosen dense network matrix and does not establish the behavior of the nearest-neighbor prime-flute operator or the full retained low/high angle.
 
+## S31 — residual minimization and scalar approximation products
+
+**C.-K. Li and R. Mathias**, *Extremal Characterizations of the Schur Complement and Resulting Inequalities*, SIAM Review 42 (2000), no. 2, 233–246. DOI: 10.1137/S0036144599337290.
+
+- https://doi.org/10.1137/S0036144599337290
+- The variational characterization of positive Schur complements supplies the classical context for comparing both retained and further-shorted forms. PF-357 proves the comparison it uses directly.
+
+**J. M. Almira**, *Müntz Type Theorems I*, Surveys in Approximation Theory 3 (2007), 152–194.
+
+- https://www.maths.tcd.ie/EMIS/journals/SAT/papers/10/10.pdf
+- Section 2.1, pp. 154–155: the classical Cauchy Gram-distance product in the Müntz proof. Under the exponential-to-power isometry it is PF-357's scalar residual product; no infinite-dimensional density conclusion is used.
+
+Relevant finding: PF-357; relevant local clue: CLUE-positive-width-transition-schur-complement.md. Together with S25's equivalent-metric angle context, these classical facts yield the derived ordered defect sandwich, uniform over mismatched transition elimination, and an explicit conductance/section-size criterion for growing finite path multiplicity.
+
+**Scope warning.** The comparison is conditioned on a quantitative diagonal-relative bound for the spatial matrix. It neither proves that bound for the actual infinite flute nor identifies its pant/seam form with the Cauchy corridor model at the shorted residual scale. The finite-network theorem is not an infinite-operator or RH conclusion.
+
 ## Provenance policy for future additions
 
 For each future finding, record separately:
