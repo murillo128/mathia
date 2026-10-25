@@ -22,6 +22,14 @@ This file records durable literature dependencies for `research/xi_flow/`. It is
 
 - NIST Digital Library of Mathematical Functions, **§4.22 Infinite Products and Partial Fractions**, [Eq. 4.22.3](https://dlmf.nist.gov/4.22.E3). Role: classical cotangent partial fraction summing all periodic zero images in XF-032. Its negative pointwise regrouped bulk density coexists with nonnegative individual triple-discriminant derivatives, so this particular complete sine-product control has nonnegative derivative for every fixed nonnegative taper at the stated instant. These signs are derived directly; a finite polynomial truncation requires separate endpoint terms.
 
+  XF-208 uses the same complete periodic summation for a different control:
+  joint degeneration of a covered gap and its taper weight makes the full
+  derivative negative despite a smooth widening buffer. The comparison
+  with boundary separation uses Rodgers--Tao, Section 9, proof of
+  Proposition 28 in [arXiv v5](https://arxiv.org/pdf/1801.05914v5), where
+  localized-energy propagation selects a quantitatively separated
+  boundary; the new taper counterexample is derived independently.
+
 ## Nonlocal lattice, periodic quadrature, and fractional-diffusion scaling
 
 - Óscar Ciaurri, Luz Roncal, Pablo R. Stinga, José L. Torrea and Juan L. Varona, **Nonlocal discrete diffusion equations and the fractional discrete Laplacian, regularity and applications**, *Advances in Mathematics* 330 (2018), 688–738, DOI `10.1016/j.aim.2018.03.023`; arXiv:1608.08913. Role: peer-reviewed anchor for discrete nonlocal diffusion and convergence to continuum fractional Laplacians. XF-008 uses it only to calibrate the prior-art class of the Cauchy/half-Laplacian hydrodynamic limit; the exact finite-spacing Xi lattice linearization is derived independently and is not identified with the canonical discrete fractional Laplacian of this paper.

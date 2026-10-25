@@ -66,3 +66,18 @@ Accepted for continued investigation. `XF-029` proves the desired localization m
 `XF-030` now supplies the exact nonlinear three-root primitive behind that perturbative formula. A triple normalized discriminant is a strictly concave function of the single contrast `d_j=log(g_{j+1}/g_j)`, and its full exterior coupling is an absolutely convergent signed cubic kernel `1/[(x_j-z)(x_{j+1}-z)(x_{j+2}-z)]`. This gives the exact coefficient and side-sign at arbitrary finite gaps and interpolates between the `1/epsilon^2` collision production of `XF-028` and the lattice Hessian of `XF-029`.
 
 The clue therefore remains unresolved but narrower. The decisive test is now whether the translated signed cubic kernels of `XF-030` can be summed with a nonnegative slow taper so that the adverse aggregate is controlled by taper differences (or dominated by the internal shape production), uniformly across the intermediate finite-gap regime; alternatively, a growing-buffer configuration with an order-one adverse cubic aggregate would kill the route.
+
+`XF-208` excludes using absolute smoothness and positive core coverage alone
+to bound the derivative of the whole tapered sum. A fixed smooth widening
+profile, a complete periodic heat flow with gaps at most two and bounded
+lattice-counting discrepancy, and a covered small gap give
+`K_a' = -(50/441) exp(M^2/2) + o(1)`. The controlling edge ratio is
+`a_1^2/(a_-1+a_0)`, which diverges even though every fixed-order taper
+difference tends to zero. This is a joint coverage/gap degeneration at
+the taper edge; it does not contradict fixed-weight collision positivity
+or produce a negative aggregate with uniform coverage and gaps bounded
+below. The clue remains accepted: the unresolved inequality needs
+relative edge-weight control, source-selected separated boundaries, or
+another justified way to handle that edge layer in addition to its
+interior finite-gap analysis. The instantaneous example supplies no
+fixed-time integrated obstruction.
