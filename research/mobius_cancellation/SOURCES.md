@@ -488,3 +488,15 @@ Role: compact nonnegative Gevrey bumps of every order `q>1` and the classical us
 NIST Digital Library of Mathematical Functions, §24.2(i), especially equation 24.2.1 (Bernoulli generating function), https://dlmf.nist.gov/24.2; and §2.11 (remainder terms and exponentially improved expansions), https://dlmf.nist.gov/2.11.
 
 Role: classical provenance for the coefficients of `z/(1-exp(-z))` and the truncation principle in MC-529. The finding proves its own remainder uniform in order and window ratio, preserves the multiplicity-aware test's Gevrey order, and controls the bounded combined test in the Möbius coefficient domain. The source does not assert the Möbius variance floor or its sparse-scale RH equivalence.
+
+## MC-S81 — Hedenmalm–Wennman, compact smooth functions by iterated convolution
+
+Haakan Hedenmalm and Aron Wennman, *A critical topology for L^p-Carleman classes with 0<p<1*, Mathematische Annalen 371 (2018), 1803–1844. DOI and open text: https://doi.org/10.1007/s00208-018-1654-3, Section 3.1, equations (3.1)–(3.3).
+
+Role: classical construction of compact smooth probability densities from summable interval widths, with explicit derivative sup-norm bounds. MC-530 specializes the widths to `1/[j log(e+j)^kappa]`, `kappa>1`, and derives the moderate-growth, annihilator, composition and finite-inverse estimates itself. The paper's separate small-p completion results are not used.
+
+## MC-S82 — Bhowmik–Ray–Sen, Ingham and Paley–Wiener decay thresholds
+
+Mithun Bhowmik, Swagato K. Ray and Suparna Sen, *Around uncertainty principles of Ingham-type on R^n, T^n and two step nilpotent Lie groups*, arXiv:1605.09616v1 (2016), Introduction, Theorems 1.1–1.2, https://arxiv.org/pdf/1605.09616. Published as *Around theorems of Ingham-type regarding decay of Fourier transform on R^n, T^n and two step nilpotent Lie groups*, Bulletin des Sciences Mathématiques (2019), DOI: https://doi.org/10.1016/j.bulsci.2019.02.004.
+
+Role: authoritative statement of the classical Fourier logarithmic-integral criterion. MC-530 uses its necessary direction to identify the fixed-target box-inverse obstruction at `0<=r<=1`, following the exact PL-473 source permitted by its local clue. The admissible `r>1` inverse and reciprocal-zeta transfer are explicitly constructed; convergence of the logarithmic integral alone is not treated as their proof.

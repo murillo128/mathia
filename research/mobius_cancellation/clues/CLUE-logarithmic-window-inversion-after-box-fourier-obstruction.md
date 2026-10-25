@@ -1,7 +1,7 @@
 ---
 id: CLUE-mobius-cancellation-logarithmic-window-inversion-after-box-fourier-obstruction
 type: research-clue
-status: proposed
+status: resolved
 origin: master-researcher
 target_line: mobius_cancellation
 based_on:
@@ -57,4 +57,22 @@ The destination now receives a rigorous boundary that the resolved near-linear c
 
 ## Evidence boundary
 
-The negative result for `0<=r<=1` is established in PL-473 for fixed-target uniform norm certificates on all large real scales. Its transfer as an operator restriction does not prove failure of Möbius cancellation. The candidate stronger derivative envelope, its preservation, inverse remainder and resulting `r>1` variance extension are unvalidated. Moving targets, signed arithmetic sampling error, multiple kernels and sparse-scale inversion are outside this test. No variance ceiling, effective acquisition, uniform constants near the exponent boundary, external novelty or RH proof is claimed. The earlier Gevrey clue remains resolved by MC-529 and is not reopened.
+The negative result for `0<=r<=1` is established in PL-473 for fixed-target uniform norm certificates on all large real scales. Its transfer as an operator restriction does not prove failure of Möbius cancellation. At proposal, the candidate stronger derivative envelope, its preservation, inverse remainder and resulting `r>1` variance extension were unvalidated; the disposition below records their resolution. Moving targets, signed arithmetic sampling error, multiple kernels and sparse-scale inversion are outside this test. No variance ceiling, effective acquisition, uniform constants near the exponent boundary, external novelty or RH proof is claimed. The earlier Gevrey clue remains resolved by MC-529 and is not reopened.
+
+## Research disposition
+
+Outcome: supported
+
+Resolved by:
+- [[research/mobius_cancellation/findings/MC-530-nonquasianalytic-tests-reach-logarithmic-mobius-windows]]
+
+MC-530 constructs the proposed derivative class by an infinite interval
+convolution for every `1<kappa<r`, proves its order-uniform preservation
+under the full annihilator and logarithmic composition, and obtains a
+bounded mean-zero finite inverse with error
+`exp(-c/[h log(e+1/h)^kappa])`. The reciprocal contour and exact centered
+pairing then give the multiplicity-aware floor uniformly for all real
+large `X` and integers `1<=H<=X/(log X (loglog X)^r)`. This supports the
+regularity repair for `r>1`; PL-473's obstruction at `0<=r<=1` remains a
+boundary of the fixed-target uniform norm certificate. No arithmetic
+variance ceiling or effective zero-dependent test is obtained.
