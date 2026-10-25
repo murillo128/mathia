@@ -84,6 +84,11 @@ This file records durable literature dependencies for `research/robin_extremal/`
 
 - Tieling Chen and Reginald Koo, *Two-term Egyptian fractions*, Notes on Number Theory and Discrete Mathematics **19** (2013), no. 2, 15–25, [primary paper](https://www.nntdm.net/papers/nntdm-19/NNTDM-19-2-15-25.pdf), Section 2, Theorems 2–3. Role: classical comparison for reducing a bilinear rational equation to a shifted product and divisor congruences. RE-263 derives its different Euler-product classification independently; no Egyptian-fraction existence theorem is imported.
 
+## Prime supply for finite balanced repairs
+
+- James Maynard, *Dense clusters of primes in subsets*, Compositio Mathematica **152** (2016), 1517–1554, DOI `10.1112/S0010437X16007296`, [primary paper](https://compositio.nl/Content/prize2018_maynard.pdf), Theorem 3.4. Role: for a fixed sufficiently large admissible panel of positive integer linear forms, supplies a prescribed fixed number of prime values in every sufficiently large interval of the permitted length. RE-264 uses the fixed-panel case with interval length proportional to the frontier to realize finite balanced integer Euler repairs and sharp fixed-budget Robin excursions. No uniformity at the critical growing counting budget is imported.
+- Kevin Ford and Sergei Konyagin, *Differences between totients*, author manuscript dated 16 September 2021, [primary manuscript](https://www.ford126.web.illinois.edu/wwwpapers/totient_gaps.pdf), Theorem 4 and its proof. Role: neighboring prior art for designing pairwise arithmetic consequences across an admissible panel before applying a theorem that selects unspecified prime forms. RE-264's exact Euler matching and Robin source construction are derived separately; no new panel-selection method is claimed.
+
 ## Expansion rule
 
 Add primary sources when a canonical finding depends on an exact theorem about superabundant/colossally abundant integers, exponent-profile transitions, explicit prime-distribution errors, or extremal divisor-sum bounds. Finite verification records should be cited only when a finding actually depends on their verified range.
