@@ -2,7 +2,7 @@
 id: RA-frontier-telemetry-v1
 type: riemann-atlas-frontier-telemetry
 atlas_version: 1
-prospective_source_cutoff: b76d9d4208485a9c9c04192126afd07979ef2cda
+prospective_source_cutoff: f8e01c313b8986cd038ec98ae7e63ac5d45e2155
 derived: true
 ---
 
@@ -50,7 +50,7 @@ This is one `viable-extension` episode for the shared regularity question, attri
 
 [[research/graph/relations/fixed-target-box-inversion-regularity-boundary|The expanded mechanism]] records two independently classifiable extensions. PL-475 changes the operator to a two-box system, reaching a paired conditional prime-variance floor through H<=X/20 with explicit rounding cost. MC-531 changes the missing-data allowance, recovering a complete Möbius linear pairing from retained energy and a B² deletion bill in the existing single-box range. The first requires both variance ceilings; the second requires both the retained-energy and exceptional-count estimates. Neither supplies those arithmetic upper bounds.
 
-They contribute one `viable-extension` episode per distinct question. Global MI-040's composition is conditional synthesis, not a third episode. Classical multichannel inversion is registered as prior art without a separate event or novelty upgrade. The single-box obstruction, reciprocal-pole multiplicity, full-zero-set dependence and arbitrary-constant-center restriction survive. A1 remains `active`; all Atlas masses and states are unchanged.
+They contribute one `viable-extension` episode per distinct question. MC-532 now reconstructs their composition canonically: separate masks and constant centers are allowed through H<=X/20, rounding costs O(1), and the simultaneous macroscopic energy/deletion budgets on one unbounded integer scale set are equivalent to RH with families fixed before epsilon. The existing missing-start episode is refined to include this extended range. Global MI-040 is supporting synthesis, and canonical persistence is not a third episode. Classical multichannel inversion is registered as prior art without a separate event or novelty upgrade. The single-box obstruction, reciprocal-pole multiplicity, full-zero-set dependence and arbitrary-constant-center restriction survive. A1 remains `active`; all Atlas masses and states are unchanged.
 
 ## Retained prospective window
 

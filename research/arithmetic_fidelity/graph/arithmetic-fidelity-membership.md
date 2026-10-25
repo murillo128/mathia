@@ -588,3 +588,4 @@ This stable projection inventories every current canonical Arithmetic Fidelity f
 - [[research/arithmetic_fidelity/findings/AF-582-quadratic-calibration-changes-sharp-window-cost-from-logarithmic-to-algebraic|AF-582]]
 - [[research/arithmetic_fidelity/findings/AF-583-fixed-polynomial-degrees-share-algebraic-range-order|AF-583]]
 - [[research/arithmetic_fidelity/findings/AF-584-growing-calibration-degree-has-sharp-quadratic-range-cost|AF-584]]
+- [[research/arithmetic_fidelity/findings/AF-585-cubic-calibration-has-sharp-range-constant-from-endpoint-curvature|AF-585]]

@@ -465,3 +465,4 @@ This stable projection inventories every current canonical Prime Circle finding.
 - [[research/prime_circle/findings/PC-455-one-resolvent-point-forces-singleton-cotangent-tower-boundedness|PC-455]]
 - [[research/prime_circle/findings/PC-456-one-resolvent-point-forces-every-finite-base-cotangent-tower-bounded|PC-456]]
 - [[research/prime_circle/findings/PC-457-growing-base-cotangent-towers-require-conductor-scale-normalization|PC-457]]
+- [[research/prime_circle/findings/PC-458-conductor-scaled-cotangent-bulk-collapses-exactly-at-vanishing-primitive-density|PC-458]]

@@ -55,7 +55,7 @@ source of that input or a proof of RH.
 
 ## 1. A compatible test retains the full reciprocal principal part
 
-Choose \(1/2<\sigma_0<\sigma_1<\beta\). MC-528, Sections 1–3,
+Choose \(1/2<\sigma_0<\sigma_1<\beta\). [[research/mobius_cancellation/findings/MC-528-multiplicity-aware-annihilation-forces-mobius-variance-on-every-block|MC-528]], Sections 1–3,
 constructs a compact smooth complex test \(\phi\) whose Mellin
 transform \(\Phi\) satisfies
 \[
@@ -212,7 +212,7 @@ truncation. Combining (5), (10), and (11), uniformly in \(H\),
 \]
 
 For integer \(L\), the window sum is constant on \([j,j+1)\),
-and \(|S_L(j+1)-S_L(j)|\le2\). The discrete lemma of MC-531
+and \(|S_L(j+1)-S_L(j)|\le2\). The discrete lemma of [[research/mobius_cancellation/findings/MC-531-bounded-jumps-recover-trimmed-mobius-variance|MC-531]]
 then gives, separately for each mask and center,
 \[
  \sum_{j\in I_X}|S_{L_i}(j)-c_i|
@@ -255,7 +255,7 @@ unbounded set. Functional-equation symmetry then gives RH. The same
 small epsilon ensures \(B_i<X/2\) eventually, so this auxiliary
 condition is automatic from (3).
 
-Conversely, under RH, MC-520 proves the complete uncentered bound
+Conversely, under RH, [[research/mobius_cancellation/findings/MC-520-rh-mellin-variance-closes-conditional-farey-window-target|MC-520]] proves the complete uncentered bound
 \(\sum_{j\in I_X}|S_L(j)|^2\ll_\varepsilon X^{1+\varepsilon}L\)
 uniformly for integer \(1\le L\le X\). Take all large integer
 scales, empty masks, and centers zero. This proves (3) simultaneously
@@ -272,7 +272,7 @@ also gives the consistency check
 
 [Casey–Walnut (1994)](https://doi.org/10.1137/1036140) and
 [Casey's 1996 report, Section 2.1, Theorems 2.3–2.4](https://api.drum.lib.umd.edu/server/api/core/bitstreams/fff4ad58-33f1-4d4f-b92d-1117c53a9efc/content)
-(MC-S83) establish the classical compact-distribution Bezout framework;
+(MC-S83) establish the classical [[research/prior_art/incremental/PA-multichannel-compact-distribution-deconvolution|compact-distribution Bezout framework]];
 the report explicitly treats box lengths with square-root-of-prime
 ratio. [Pensky–Sapatinas (2011)](https://doi.org/10.1214/11-EJS597)
 (MC-S84) studies Diophantine boxcar channels in a periodic statistical
