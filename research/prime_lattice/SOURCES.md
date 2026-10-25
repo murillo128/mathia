@@ -542,3 +542,11 @@ Only sources that materially support, delimit, or redirect stored `PL-*` finding
 
 141. **Armin Rainer**, “Ultradifferentiable extension theorems: a survey,” *Expositiones Mathematicae* **40**(3) (2022), 679–757. DOI: https://doi.org/10.1016/j.exmath.2021.12.001. Author manuscript: https://www.mat.univie.ac.at/~armin/publ/survey-UET.pdf; arXiv: https://arxiv.org/abs/2107.01061.
      - Role: Lemma 3.3 supplies the infinite-convolution compact bump and its derivative bounds; Theorem 3.6 states the classical Denjoy--Carleman criterion. PL-474 specializes the widths to `1/[j(log(e+j))^q]`, `q>1`, proves that sparse-zero isolation preserves the finer derivative class, and derives the iterated-log prime-window range. No prime-variance result or new uncertainty principle is attributed to the survey.
+
+## Compact multichannel box deconvolution
+
+142. **Stephen D. Casey, David F. Walnut**, “Systems of Convolution Equations, Deconvolution, Shannon Sampling, and the Wavelet and Gabor Transforms,” *SIAM Review* **36**(4) (1994), 537–577. DOI: https://doi.org/10.1137/1036140. Accessible companion: **Stephen D. Casey**, “Modulation and Sampling Techniques for Multichannel Deconvolution,” University of Maryland Institute for Systems Research, Technical Report TR-96-54 (1996), Section 2.1, Theorem 2.3; https://hdl.handle.net/1903/5773.
+     - Role: classical compact-distribution Bezout reconstruction for strongly coprime convolution kernels. PL-475 constructs its two-box specialization directly and proves the uniform smooth-test dilation, empirical centering, integer-rounding error and paired prime-variance transfer; no prime theorem is attributed to these sources.
+
+143. **Marianna Pensky, Theofanis Sapatinas**, “Multichannel boxcar deconvolution with growing number of channels,” *Electronic Journal of Statistics* **5** (2011), 53–82. DOI: https://doi.org/10.1214/11-EJS597. Author text: https://sciences.ucf.edu/math/mpensky/wp-content/uploads/sites/9/2016/09/EJS597_Published-2011.pdf; arXiv: https://arxiv.org/abs/1102.2298.
+     - Role: primary boxcar/Diophantine prior-art comparison for PL-475. Its periodic statistical reconstruction model differs from PL-475's deterministic compact tests on the real line. No risk bound or growing-channel theorem is imported into the arithmetic argument.
