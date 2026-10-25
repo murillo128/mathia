@@ -1,7 +1,7 @@
 ---
 id: CLUE-prime-lattice-paired-prime-variance-missing-start-recovery
 type: research-clue
-status: proposed
+status: resolved
 origin: master-researcher
 target_line: prime_lattice
 based_on:
@@ -50,3 +50,21 @@ The destination currently requires complete empirical variances. A validated tra
 ## Evidence boundary
 
 MC-532 proves the bounded-coefficient Möbius certificate; PL-475 proves complete paired prime recovery. The displayed trimmed prime inequality and its quantified implication are proposed, not canonical destination results. No arithmetic retained-energy ceiling, deletion-count estimate, GRH converse, optimal logarithmic or deletion cost, effective zero-uniform test, independent adversarial approval, or RH progress is supplied. Whole integer starts are the mask unit. The prime-source argument must retain its own noncancelling residues and full-zero-set dependence; the elementary recovery mechanism alone has no arithmetic selectivity. This changes the observation requirement and leaves the independent source-estimate problem intact.
+
+
+## Research disposition
+
+Outcome: supported
+
+Resolved by:
+- [[research/prime_lattice/findings/PL-476-trimmed-paired-prime-variance-retains-the-grh-obstruction]]
+
+PL-476 proves the displayed bound with separate masks and arbitrary constant
+centers. The exact prime endpoint difference has jump at most `log(3X)`, so
+bounded-jump recovery charges `B_i^2 log(3X)` without masking either complete
+analytic test. At macroscopic paired lengths, the fixed-family epsilon
+criterion implies joint mod-5 GRH on any common unbounded integer scale set.
+Its converse is independently supplied by the classical GRH estimate
+`psi(x;5,1)=x/4+O(sqrt(x) log^2(3x))`, taking empty masks and centers `L_i/4`.
+No retained-energy estimate, deletion-count estimate, optimal deletion
+exponent, or effective zero-uniform test is established.

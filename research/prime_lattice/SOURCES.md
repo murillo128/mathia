@@ -550,3 +550,12 @@ Only sources that materially support, delimit, or redirect stored `PL-*` finding
 
 143. **Marianna Pensky, Theofanis Sapatinas**, “Multichannel boxcar deconvolution with growing number of channels,” *Electronic Journal of Statistics* **5** (2011), 53–82. DOI: https://doi.org/10.1214/11-EJS597. Author text: https://sciences.ucf.edu/math/mpensky/wp-content/uploads/sites/9/2016/09/EJS597_Published-2011.pdf; arXiv: https://arxiv.org/abs/1102.2298.
      - Role: primary boxcar/Diophantine prior-art comparison for PL-475. Its periodic statistical reconstruction model differs from PL-475's deterministic compact tests on the real line. No risk bound or growing-channel theorem is imported into the arithmetic argument.
+
+
+## Trimmed paired prime variance and its GRH converse
+
+144. **Ethan Simpson Lee**, “The prime number theorem for primes in arithmetic progressions at large values,” *The Quarterly Journal of Mathematics* **74**(4) (2023), 1505–1533. DOI: https://doi.org/10.1093/qmath/haad031. Publisher text: https://academic.oup.com/qjmath/article/74/4/1505/7240642.
+     - Role: Corollary 1.1, equation (4), and the character-wise proof give the classical GRH bound for `psi(x;q,a)`. PL-476 uses only the fixed-modulus-5 consequence to prove the macroscopic criterion's converse with empty masks; no short-length mean-square bound or trimmed recovery theorem is attributed to this paper.
+
+145. **Danilo Bazzanella, Alberto Perelli**, “The exceptional set for the number of primes in short intervals,” *Journal of Number Theory* **80**(1) (2000), 109–124. DOI: https://doi.org/10.1006/jnth.1999.2429. Author institutional record: https://iris.polito.it/handle/11583/1397856.
+     - Role: closest exceptional-set prior-art comparison for PL-476; the paper studies inertia/decrease properties and quantitative exceptional sets for short-interval prime asymptotics. PL-476 proves its elementary arbitrary-mask bounded-jump recovery directly and does not import an exceptional-set bound from this source.
