@@ -350,3 +350,4 @@ This stable projection inventories every current canonical Farey Discrepancy fin
 - [[research/farey_discrepancy/findings/FD-339-genuine-farey-endpoints-force-linear-band-coefficient-mismatch|FD-339]]
 - [[research/farey_discrepancy/findings/FD-340-one-erased-farey-defect-value-is-recoverable-two-need-not-be|FD-340]]
 - [[research/farey_discrepancy/findings/FD-341-linear-band-relative-transfer-is-equivalent-to-diverging-critical-energy|FD-341]]
+- [[research/farey_discrepancy/findings/FD-342-log-weighted-divisor-control-saturates-every-linear-farey-band|FD-342]]

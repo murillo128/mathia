@@ -465,3 +465,4 @@ This stable projection inventories every current canonical Weil Inertia finding.
 - [[research/weil_inertia/findings/WI-459-safe-line-optimization-preserves-double-exponential-euler-peak-rarity|WI-459]]
 - [[research/weil_inertia/findings/WI-460-adaptive-euler-peaks-remain-rare-at-zeta-zero-ordinates|WI-460]]
 - [[research/weil_inertia/findings/WI-461-fixed-scale-euler-peaks-have-positive-density-at-zeta-zero-ordinates|WI-461]]
+- [[research/weil_inertia/findings/WI-462-prime-power-coherence-lowers-the-zero-sampled-euler-response-mean|WI-462]]

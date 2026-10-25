@@ -52,6 +52,8 @@ This is one `viable-extension` episode for the shared regularity question, attri
 
 They contribute one `viable-extension` episode per distinct question. MC-532 now reconstructs their composition canonically: separate masks and constant centers are allowed through H<=X/20, rounding costs O(1), and the simultaneous macroscopic energy/deletion budgets on one unbounded integer scale set are equivalent to RH with families fixed before epsilon. The existing missing-start episode is refined to include this extended range. Global MI-040 is supporting synthesis, and canonical persistence is not a third episode. Classical multichannel inversion is registered as prior art without a separate event or novelty upgrade. The single-box obstruction, reciprocal-pole multiplicity, full-zero-set dependence and arbitrary-constant-center restriction survive. A1 remains `active`; all Atlas masses and states are unchanged.
 
+PL-476 now verifies the prime-source version of the same missing-start question: the jump and rounding costs are logarithmic, the prime pole is simple, and the macroscopic converse comes from the separate classical GRH prime-counting estimate. Its quantified paired criterion is equivalent to joint mod-5 GRH, with no arithmetic upper bounds or optimal deletion threshold acquired. The missing-start episode includes this transfer and retains its `mobius_cancellation` reporting attribution; no new episode is counted. Global MI-040 and Prime Lattice MI-067 record the source-dependent dictionary. Rates and Atlas states remain unchanged.
+
 ## Retained prospective window
 
 Classifiable episodes: **20**. Insufficient-evidence episodes: **0**. Retrospective episodes: **0**.

@@ -228,7 +228,7 @@ that variance bound uniformly for arbitrarily short lengths.
 
 ## Prior art, controls, and evidence boundary
 
-The compact inverse is classical multichannel deconvolution:
+The compact inverse is classical [[research/prior_art/incremental/PA-multichannel-compact-distribution-deconvolution|multichannel deconvolution]]:
 [Casey–Walnut (1994)](https://doi.org/10.1137/1036140), source 142,
 and [Pensky–Sapatinas (2011)](https://doi.org/10.1214/11-EJS597),
 source 143, supply the neighboring boxcar/Diophantine literature.

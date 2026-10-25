@@ -460,3 +460,4 @@ This stable projection inventories every current canonical Weil Positivity findi
 - [[research/weil_positivity/findings/WP-450-bounded-maharam-diagonal-covariance-forces-a-scalar|WP-450]]
 - [[research/weil_positivity/findings/WP-451-phase-invariant-maharam-forms-retain-the-full-finite-weil-sign-defect|WP-451]]
 - [[research/weil_positivity/findings/WP-452-bounded-covariant-energies-cannot-orient-infinitely-many-prime-rays|WP-452]]
+- [[research/weil_positivity/findings/WP-453-closability-forbids-infinite-prime-ray-orientation|WP-453]]
