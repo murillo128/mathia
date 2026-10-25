@@ -1,6 +1,6 @@
 # ANF-200 — Small real notch amplitudes have an exact two-site floor
 
-**Status:** EXACT-DERIVED + REAL-MULTISET + LOCAL-AMPLITUDE-REDUCTION + SHARP-QUADRATIC-RESPONSE + EXACT-FINITE-ATTAINMENT-TAIL-BOUNDARY. For each fixed dominated positive-Fourier profile with an inverse-square Fourier tail and positive exposure on the source zero set, the entire finite-real-multiset infimum is attained by two sites throughout a positive amplitude interval. This strengthens ANF-199's stationary-contact criterion: the nonstationary case also reduces exactly to a one-variable minimum, rather than merely having a two-site upper bound. Conversely, finite attainment at even one positive amplitude forces the inverse-square tail; without it, every finite configuration can be strictly improved by adjoining a distant translate. This failure can occur even for an \(H^1\) profile. The interval depends on the profile. No complex-configuration or zeta-zero consequence is established.
+**Status:** EXACT-DERIVED + REAL-MULTISET + LOCAL-AMPLITUDE-REDUCTION + SHARP-QUADRATIC-RESPONSE + EXACT-FINITE-ATTAINMENT-TAIL-BOUNDARY + SHARP-SOBOLEV-SUFFICIENT-ORDER. For each fixed dominated positive-Fourier profile with an inverse-square Fourier tail and positive exposure on the source zero set, the entire finite-real-multiset infimum is attained by two sites throughout a positive amplitude interval. This strengthens ANF-199's stationary-contact criterion: the nonstationary case also reduces exactly to a one-variable minimum, rather than merely having a two-site upper bound. Conversely, finite attainment at even one positive amplitude forces the inverse-square tail; without it, every finite configuration can be strictly improved by adjoining a distant translate. The sufficient Sobolev order is exactly two: \(H^2\) guarantees the tail condition, while a single admissible profile in every \(H^s\), \(s<2\), can fail finite attainment at every positive amplitude. The interval depends on the profile. No complex-configuration or zeta-zero consequence is established.
 
 ## Exact reduction and its quadratic consequence
 
@@ -384,59 +384,129 @@ small. Here its **negative sign** is forced by the source tail and
 to (5). No growing-cardinality or infinite-volume limit is used to
 produce each strict improvement.
 
-## Square-root exposure stability does not ensure finite attainment
+## The sharp sufficient Sobolev order for finite attainment is two
 
-The converse separates the exact floor from ANF-195's weaker \(H^1\)
-square-root stability theorem. Freeze
+The tail characterization has a sharp regularity consequence. For the
+zero-extended profiles in this finding, use the equivalent Sobolev norm
 \[
-0<\eta<1/(2r_1),\qquad
-\tau(u)=b(1-|u|/\eta)_+\le J_0(u),\qquad
-T(x)=b\eta\,\operatorname{sinc}^2(\eta x),
-\]
-with \(b>0\) chosen small enough and
-\(\operatorname{sinc}(x)=\sin(\pi x)/(\pi x)\).
-Let \(0<\lambda<1\), and set
-\[
-R_n=2^{n^2},\qquad
-Z=\sum_{n\ge1}R_n^{-3/2},\qquad
-w_n=Z^{-1}R_n^{-3/2},\qquad
-\phi(u)=\frac{\tau(u)}{1+\lambda}
-\left[1+\lambda\sum_{n\ge1}w_n\cos(2\pi R_nu)\right].
+\|f\|_{H^s}^2=\int_{\mathbb R}(1+x^2)^s|\widehat f(x)|^2\,dx.
 \tag{24}
 \]
-This is one fixed profile, independent of \(t\) and all configurations.
-Since \(\sum w_n=1\),
+Every admissible \(H^2\) profile satisfies the inverse-square tail and
+therefore has an attaining pair on an initial positive amplitude
+interval. Conversely, there is a single fixed admissible profile in
+\(\bigcap_{s<2}H^s\), with \(M>0\), for which **no** finite configuration
+attains the floor at **any** \(t\in(0,1)\).
+
+**Sufficiency at the endpoint.** If the zero extension belongs to
+\(H^2(\mathbb R)\), its weak second derivative belongs to \(L^2\) and is
+supported in \([-1,1]\). Thus it is in \(L^1\), with
+\(\|\phi''\|_1\le\sqrt2\|\phi''\|_2\). The distributional Fourier
+identity and continuity of both transforms give, for every real \(x\),
 \[
-\frac{1-\lambda}{1+\lambda}\tau\le\phi\le\tau\le J_0.
-\]
-Also \(\sum_n w_nR_n<\infty\), so the cosine series and its first
-derivative converge uniformly. Multiplying this bounded \(C^1\)
-function by the zero-extended tent proves \(\phi\in H^1(\mathbb R)\):
-the product is compactly supported, continuous at the endpoints and
-has a bounded weak first derivative. Its transform is
-\[
-\Phi(x)=\frac1{1+\lambda}
-\left[T(x)+\frac{\lambda}{2}\sum_{n\ge1}w_n
-\{T(x-R_n)+T(x+R_n)\}\right]\ge0.
+4\pi^2x^2\Phi(x)=-\widehat{\phi''}(x),\qquad
+(1+x^2)\Phi(x)
+\le\|\phi\|_1+\frac{\|\phi''\|_1}{4\pi^2}.
 \tag{25}
 \]
-Uniform convergence and an integrable physical-space majorant justify
-the transformation. In particular,
+The second inequality uses \(\Phi\ge0\). There are no omitted endpoint
+atoms: the assumption concerns the weak derivative of the entire zero
+extension, not merely differentiability inside its support. Equation
+(25) gives condition 1 above and hence (5). This implication does not
+require any sampling theorem or pointwise estimate inferred directly
+from a weighted \(L^2\) Fourier norm.
+
+**One profile with every subcritical Sobolev order.** Freeze
+\(0<\eta<1/(2r_1)\) and define the box and its fourfold convolution by
 \[
-\Phi(r_1)\ge\frac{T(r_1)}{1+\lambda}>0,\qquad
-R_n^2\Phi(R_n)\ge
-\frac{\lambda T(0)}{2(1+\lambda)Z}R_n^{1/2}\longrightarrow\infty.
+\chi(u)=\mathbf1_{[-\eta/4,\eta/4]}(u),\qquad
+\tau(u)=b(\chi*\chi*\chi*\chi)(u),\qquad
+T(x)=b(\eta/2)^4\operatorname{sinc}^4(\eta x/2),
 \tag{26}
 \]
-Thus \(M>0\), yet condition 1 fails. This profile has the qualitative
-two-site exposure envelope and the square-root exposure bound of
-ANF-195, but **no** finite configuration attains
-\(q_\phi^{\mathbb R}(t)\) at any \(t\in(0,1)\). In particular, that
-Sobolev stability bound cannot replace the tail assumption in (5).
-The construction uses ANF-196's positive modulation mechanism with
-different weights; unlike its almost-\(H^1\) example, this one belongs
-to \(H^1\). Neither the exact floor value outside the tail class nor
-a uniform lower bound on the strict improvement is asserted.
+where \(\operatorname{sinc}(x)=\sin(\pi x)/(\pi x)\) and \(b>0\) is
+small enough that \(\tau\le J_0\). Such a choice exists: the convolution
+is bounded, nonnegative and supported in \([-\eta,\eta]\), where
+\(J_0\) has a positive minimum. Its transform is exactly \(T\ge0\).
+Moreover \(T(x)=O((1+|x|)^{-4})\), so \(\tau\in H^2\), and
+\(T(r_1)>0\). The fourfold convolution, rather than a tent, makes the
+base profile smooth enough for the endpoint being tested.
+
+Let \(0<\lambda<1\) and set
+\[
+R_n=2^{n^2},\quad Z=\sum_{n\ge1}\frac n{R_n^2},\quad
+w_n=\frac n{ZR_n^2},\qquad
+\phi_*(u)=\frac{\tau(u)}{1+\lambda}
+\left[1+\lambda\sum_{n\ge1}w_n\cos(2\pi R_nu)\right].
+\tag{27}
+\]
+All frequencies and weights are fixed before the amplitude or a
+configuration is chosen. Since \(\sum_nw_n=1\), the series converges
+uniformly and
+\[
+\frac{1-\lambda}{1+\lambda}\tau\le\phi_*\le\tau\le J_0,\qquad
+\Phi_*(x)=\frac1{1+\lambda}
+\left[T(x)+\frac\lambda2\sum_{n\ge1}w_n
+\{T(x-R_n)+T(x+R_n)\}\right]\ge0.
+\tag{28}
+\]
+The transform identity follows from the integrable majorant
+\((1+\lambda)\tau\). In particular, \(\Phi_*(r_1)>0\), so its maximum
+\(M_*\) over source roots is positive and is attained by Fourier decay.
+
+For \(0\le s<2\), the elementary weighted translation bound gives
+\[
+\|\tau(u)e^{2\pi iRu}\|_{H^s}
+\le2^{s/2}(1+R^2)^{s/2}\|\tau\|_{H^s},\qquad
+\sum_nw_n(1+R_n^2)^{s/2}<\infty.
+\tag{29}
+\]
+Indeed the last sum is bounded by a constant times
+\(\sum_n n\,2^{-(2-s)n^2}\). Therefore (27) converges absolutely in
+\(H^s\). Its limit agrees with the continuous profile from uniform
+convergence, since both converge in \(L^2\) on the fixed compact
+support. Negative orders follow from \(L^2\subset H^s\). This proves
+membership in every \(H^s\), \(s<2\), for the **same** profile, without
+claiming uniform norms as \(s\uparrow2\).
+
+Positivity of every term in (28) gives the decisive tail failure:
+\[
+R_n^2\Phi_*(R_n)
+\ge\frac{\lambda T(0)}{2(1+\lambda)Z}\,n\longrightarrow\infty.
+\tag{30}
+\]
+It also directly proves \(\phi_*\notin H^2\). Choose a fixed \(d>0\)
+with \(T(u)\ge T(0)/2\) on \([-d,d]\). On the disjoint intervals
+\([R_n-d,R_n+d]\) for large \(n\), (28) gives
+\(\Phi_*(R_n+u)\ge c w_n\). Hence
+\[
+\int_{\mathbb R}(1+x^2)^2\Phi_*(x)^2\,dx
+\ge c'\sum_{n\ge n_0}R_n^4w_n^2
+=\frac{c'}{Z^2}\sum_{n\ge n_0}n^2=\infty.
+\tag{31}
+\]
+There is no possible cancellation between the Fourier peaks.
+
+Equations (20)--(22) now apply to this one profile. Every finite real
+multiset, at every fixed \(t\in(0,1)\), is strictly improved by a
+sufficiently distant selected copy. In particular a four-site
+configuration beats the best simple two-site value. Yet the floor
+remains at least \(1-t\), and \(\phi_*\in H^1\), so ANF-195's
+square-root exposure stability still holds. Stability of near-extremizer
+exposure and finite attainment are distinct properties even arbitrarily
+close to the sufficient Sobolev order for attainment.
+
+The counterexample can be small: for each fixed \(s<2\),
+\(\|\phi_*-\tau\|_{H^s}=O_s(\lambda)\) by (29), and
+\(0\le\tau-\phi_*\le2\lambda\tau/(1+\lambda)\).
+Thus no replacement of \(H^2\) by any lower Sobolev order guarantees
+finite attainment throughout this admissible profile class. This is
+sharpness of a **sufficient order**, not necessity of \(H^2\) for each
+profile. The original nonzero tent has an inverse-square transform and
+finite attainment for small amplitudes, but its derivative jumps make
+its second distributional derivative contain atoms, so it is not in
+\(H^2\). The necessary and sufficient condition remains the Fourier
+tail, not Sobolev membership.
 
 ## Prior art, checks and boundary
 
@@ -464,13 +534,21 @@ implicit-function steps are classical. Existing SOURCES anchors suffice.
 For the converse, the classical replication/autocorrelation mechanism
 is already explicit in ANF-018--ANF-019; no novelty is claimed for
 adjoining a translated cluster. The additional conclusion is the exact
-tail characterization (19)--(22) and its compatibility with \(H^1\)
-regularity in (24)--(26). Procacci's stability definition does not by
+tail characterization (19)--(22) and its sharp sufficient Sobolev order
+in (24)--(31). Procacci's stability definition does not by
 itself assert finite attainment, and Sütő's fixed-density infinite-volume
 theorem does not decide this free finite-multiset minimum. The positive
 modulation construction is elementary Fourier analysis, with the
-slow-decay prior-art boundary already recorded in ANF-196. No external
-ground-state or Sobolev theorem is being imported to prove the converse.
+slow-decay prior-art boundary already recorded in ANF-196. The Sobolev
+definition and weak-derivative characterization are classical; see
+[Dyatlov, section 12.1, Proposition 12.1 and Definition 12.3](https://math.mit.edu/~dyatlov/18.155/155-notes.pdf).
+Equations (25)--(31) supply the exact endpoint proof and the dominated
+positive-Fourier counterexample; no general slow-decay theorem asserts
+this finite-attainment consequence. Targeted searches on positive
+compactly supported Fourier profiles, Sobolev decay and pair-potential
+finite attainment did not identify this exact specialization. No novelty
+is claimed for Fourier differentiation, box convolution or modulation.
+No external ground-state theorem is imported to prove nonattainment.
 
 The decisive audit points are: the marked-site incident sums contain no
 internal good matching edge; the two-endpoint estimate pays for outside
@@ -504,8 +582,10 @@ These samples neither certify \(t_\phi\) nor prove the global bound;
 The interval is fixed-profile and may become arbitrarily small under
 profile variation; ANF-198's nonuniform controls are not contradicted.
 The inverse-square tail is the exact finite-attainment boundary above,
-not merely a sufficient condition of the matching proof. It is stronger
-than the \(H^1\) regularity sufficient for square-root exposure stability.
+not merely a sufficient condition of the matching proof. It is guaranteed
+by \(H^2\), and even all Sobolev orders below two
+do not guarantee it. This remains stronger than the \(H^1\) regularity
+sufficient for square-root exposure stability.
 Necessity at one amplitude does not assert sufficiency at that same
 amplitude: (5) is still an initial-interval result. The excluded case
 \(M=0\) is the source-rescaling case treated separately by ANF-197.
