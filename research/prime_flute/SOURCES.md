@@ -412,7 +412,7 @@ Relevant finding: PF-345; relevant local clue: CLUE-positive-width-transition-sc
 
 **NIST Digital Library of Mathematical Functions**, equations [5.12.3](https://dlmf.nist.gov/5.12.E3) and [5.5.3](https://dlmf.nist.gov/5.5.E3): beta integral and gamma reflection formula used to evaluate the Fourier transform of `sech(t)` in PF-346.
 
-Relevant findings: PF-346, PF-353 and PF-355; relevant local clue: CLUE-positive-width-transition-schur-complement.md. PF-353 uses Lemma 1.1 of Gohberg–Kailath–Olshevsky for the classical displacement-generator context, proves its positive block specialization directly, and derives the complete retained frequency-fibre correlation invariant for the coupled corridor control. PF-355 reverses finite shorting order to require only one complete fibre, deriving an exact residual congruence and correlation/determinant identities for unequal retained high nodes. Its constant-mode application needs no shared nonzero cuff frequency and remains a network-model statement.
+Relevant findings: PF-346, PF-353, PF-355 and PF-356; relevant local clue: CLUE-positive-width-transition-schur-complement.md. PF-353 uses Lemma 1.1 of Gohberg–Kailath–Olshevsky for the classical displacement-generator context, proves its positive block specialization directly, and derives the complete retained frequency-fibre correlation invariant for the coupled corridor control. PF-355 reverses finite shorting order to require only one complete fibre, deriving an exact residual congruence and correlation/determinant identities for unequal retained high nodes. Its constant-mode application needs no shared nonzero cuff frequency and remains a network-model statement.
 
 **Scope warning.** These are classical identities and structural results. PF-346 applies them to the weighted cosine Gram form in PF-344's corridor trial; neither these sources nor that calculation identify the full flute DtN form with the Gram model or control errors relative to its exponentially small shorted energies.
 
@@ -495,6 +495,17 @@ Relevant findings: PF-351 and PF-352; relevant local clue: CLUE-positive-width-t
 Relevant finding: PF-354. Its CRT endpoint-sign changes and minimal-support argument prove rational independence of the exact distinguished cuff lengths; pairwise coprime odd composite labels satisfy the same conclusion.
 
 **Scope warning.** No arithmetic-group rigidity theorem is applied to the infinite-type prime flute. Exact nonintersection of cuff Fourier lattices gives no quantitative frequency separation, normalized Schur-angle estimate, or spectral conclusion. PF-354 uses the elementary Galois facts directly, not a transcendence theorem.
+
+## S30 — canonical correlations in a positive matrix metric
+
+**A. V. Knyazev and M. E. Argentati**, *Principal Angles between Subspaces in an A-Based Scalar Product: Algorithms and Perturbation Estimates*, SIAM Journal on Scientific Computing 23 (2002), no. 6, 2008–2040. DOI: 10.1137/S1064827500377332.
+
+- https://doi.org/10.1137/S1064827500377332
+- Classical interpretation and perturbation context for principal angles/canonical correlations in a positive definite matrix inner product. PF-356 separately proves the estimate needed when the network metric approaches rank one, using a rank-one approximation after normalization.
+
+Relevant finding: PF-356; relevant local clue: CLUE-positive-width-transition-schur-complement.md.
+
+**Scope warning.** No uniform perturbation theorem at a singular metric is imported. PF-356's constants depend on the fixed node sets; its growing-dimensional countercontrol uses a freely chosen dense network matrix and does not establish the behavior of the nearest-neighbor prime-flute operator or the full retained low/high angle.
 
 ## Provenance policy for future additions
 
