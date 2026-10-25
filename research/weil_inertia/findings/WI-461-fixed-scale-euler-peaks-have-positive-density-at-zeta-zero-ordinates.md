@@ -73,6 +73,22 @@ In particular this applies to every shrinking function \(R(T)\) with
 
 None of (2)--(4a) restricts the real parts of the responsive zeros. They do not show that any off-line zero exists or responds, nor that any responsive zero is simple. They are fully compatible with RH. The lower bound in (2) does **not** apply with an arbitrary shrinking \(R=R(T)\); (4a) supplies a specific sufficient range instead of exchanging limits.
 
+For every fixed \(\varepsilon,r>0\), the prime-torus response law
+\(\mu_{\varepsilon,r}=(\mathscr Q_{\varepsilon,r})_*m\), defined by (7), is
+**absolutely continuous with respect to Lebesgue measure**. In particular its
+distribution function \(F_{\varepsilon,r}(x)=\mu_{\varepsilon,r}((-\infty,x])\)
+is continuous, and the zero-sampled distribution satisfies
+\[
+\boxed{\sup_{x\in\mathbb R}\left|
+\frac1{D_T}\sum_{T<\gamma\le2T}
+\mathbf1_{\{Q_\varepsilon(r,\gamma)\le x\}}
+-F_{\varepsilon,r}(x)\right|\longrightarrow0.}
+\tag{4b}
+\]
+Thus every fixed threshold has an exact limiting frequency, with the same
+limit for strict and non-strict inequalities. The uniformity in (4b) is over
+thresholds, not over the two fixed response parameters, and supplies no rate.
+
 ## Classical arithmetic input and the finite-prime sampling law
 
 The input is the unconditional equidistribution of \(\alpha\gamma\) modulo one for every fixed real \(\alpha\ne0\), with all zeros counted with multiplicity. In character form,
@@ -121,7 +137,109 @@ For every continuous \(F:[0,1]\to\mathbb R\), finite truncation, (6)'s continuou
 \]
 The truncation is fixed before taking \(T\to\infty\), then removed. The same torus law governs continuous-height averages, by finite-prime Kronecker equidistribution and the identical uniform truncation. Thus (8) is a leading-order sampling law for this fixed observable, not a postulate of random prime phases at selected zeros.
 
-Weak convergence alone does not give equality for every threshold indicator: a level set might have positive Haar measure. The lower bound below uses a finite box with null boundary and pointwise inclusion, avoiding that issue entirely.
+Weak convergence alone would not give equality for every threshold indicator.
+For this coherent response the following two-prime argument removes that
+obstruction. The quantitative phase-box argument later in the finding still
+uses its own explicit errors; qualitative absolute continuity cannot replace
+them.
+
+## Two prime phases give an absolutely continuous response law
+
+Fix \(\varepsilon,r>0\) throughout. For a prime \(p\) and integer \(k\ge1\), put
+\[
+a_{p,k}=\frac{\log p}{A_\varepsilon p^{k(1+\varepsilon)}},
+\qquad
+X_p(\theta)=\sum_{k\ge1}a_{p,k}e^{ik\theta}h_{k\log p}.
+\tag{8a}
+\]
+Freeze all prime phases except those of two distinct primes \(p,q\), and
+denote their remaining, uniformly convergent vector sum by \(W\). The
+conditional response is the real-valued function
+\[
+G_W(\theta,\psi)=\|W+X_p(\theta)+X_q(\psi)\|_2^2.
+\tag{8b}
+\]
+It is real analytic on the two-dimensional torus for **every** frozen tail.
+Indeed, the two vector series have geometrically decreasing coefficients;
+their norm-square Fourier expansions converge on each smaller complex strip
+\[
+|\Im\theta|<(1+\varepsilon)\log p,\qquad
+|\Im\psi|<(1+\varepsilon)\log q.
+\]
+Here the norm-square expansion is extended using both positive and negative
+Fourier powers, rather than treating a squared norm as a holomorphic norm.
+The tail \(W\) is a fixed bounded vector and does not affect this convergence.
+
+The Hardy-tone Gram matrix, obtained by the same projection calculation as
+WI-457 (7)--(8), is
+\[
+\langle h_\omega,h_\nu\rangle
+=e^{-r|\omega-\nu|}-e^{-r(\omega+\nu)}
+\qquad(\omega,\nu>0).
+\tag{8c}
+\]
+Consequently the coefficient of \(e^{i(\theta-\psi)}\) in (8b) is exactly
+\[
+c_{p,q}=a_{p,1}a_{q,1}
+\left(e^{-r|\log(p/q)|}-(pq)^{-r}\right)>0.
+\tag{8d}
+\]
+Only the \(p^1,q^1\) cross term contributes to that coefficient. Terms involving
+\(W\) depend on at most one of the two phases, and higher prime powers have
+different mixed exponents. Thus no choice of the other prime phases can cancel
+(8d). In particular, \(\partial_\theta G_W\) is a nonzero real-analytic
+function for every \(W\).
+
+The classical real-analytic zero-set theorem implies that
+\(\{\partial_\theta G_W=0\}\) has two-dimensional Haar measure zero.
+On its complement the map
+\[
+(\theta,\psi)\longmapsto(G_W(\theta,\psi),\psi)
+\]
+has nonzero Jacobian. The inverse function theorem covers this complement by
+countably many coordinate neighborhoods on which this map is a \(C^1\)
+diffeomorphism. For any Lebesgue-null Borel set \(E\subset\mathbb R\), the set
+\(E\times\mathbb R\) has planar measure zero. Change of variables on these
+neighborhoods, together with the null critical set, therefore gives
+\[
+m_{\mathbb T^2}\{G_W\in E\}=0.
+\tag{8e}
+\]
+Local coordinate charts handle the torus endpoints. Integrating (8e) over
+all remaining prime phases by Fubini proves
+\(\mu_{\varepsilon,r}(E)=0\). This is absolute continuity, not merely absence
+of an atom at a chosen threshold; no probability law for selected zeros has
+been assumed.
+
+Equation (8) now implies convergence of the zero-sampled distribution function
+at every real \(x\). Monotonicity upgrades it to (4b): on the compact response
+range \([0,1]\), choose a finite mesh on which increments of the continuous
+limit distribution function are arbitrarily small, apply pointwise
+convergence at mesh points, and bracket every intermediate threshold.
+The identical argument applies to continuous-height averages, so for every
+fixed real \(\tau\),
+\[
+\begin{aligned}
+\lim_{T\to\infty}\frac1{D_T}\sum_{T<\gamma\le2T}
+ \mathbf1_{\{Q_\varepsilon(r,\gamma)>\tau\}}
+&=\mu_{\varepsilon,r}((\tau,\infty))\\
+&=\lim_{T\to\infty}\frac1T\int_T^{2T}
+ \mathbf1_{\{Q_\varepsilon(r,t)>\tau\}}\,dt .
+\end{aligned}
+\tag{8f}
+\]
+Both strict inequalities may be replaced by non-strict ones.
+
+Coherence is essential to this proof. A single tone has phase-independent
+squared norm; replacing the full response by its diagonal prime-power energy
+also gives a constant and hence an atomic law. The actual cross coefficient
+(8d) prevents that degeneration for fixed positive parameters. It does not
+provide uniform smoothing as parameters shrink: for each fixed \(\kappa>0\),
+WI-458 (8) gives
+\(\int x\,d\mu_{\varepsilon,\kappa\varepsilon}(x)=O_\kappa(\varepsilon^3)\).
+Since the responses are nonnegative, these absolutely continuous laws
+converge weakly to the point mass at zero as \(\varepsilon\downarrow0\).
+There is no contradiction and no parameter-uniform density bound here.
 
 ## A phase box forces responsive zeros
 
@@ -286,9 +404,9 @@ This resolves **fixed-scale overlap with the full divisor** and gives a sufficie
 - At scale \(R\), the number of constrained primes can be as large as \(\exp(K/R)\). Equation (4a) pays a triple-exponential sufficient height for this growing box. It does not justify arbitrary shrinking diagonals or optimal convergence heights. Its lower fraction tends to zero, consistently with WI-460's vanishing fraction for **every** \(R(T)\to0\).
 - A slowly chosen diagonal can retain some responsive zeros at widths tending to zero, by (3)--(4). This is existence with freely chosen heights and widths; it identifies neither a zero's horizontal depth nor the physical relation \(r=(1-\vartheta)d\) for a Kunik defect.
 - The leading Haar law loses lower-order arithmetic biases. Ford--Zaharescu's nonzero prime-resonant correction occurs at order \(T\), whereas the normalization here is \(T\log T\). It is not contradicted or eliminated by (8).
-- No maximum attainment, atom-free response law, sharp rare-peak constant, or optimal recurrence gap is asserted. The growing-frequency estimate is only (14)--(19) with its stated size and separation costs; it is not an unrestricted growing-dimensional equidistribution law.
+- Absolute continuity and (4b) concern each fixed \(Q_\varepsilon(r,\cdot)\). They assert no bounded or smooth density, rate uniform in \(\varepsilon,r\), or absolute continuity for the optimized observables \(M_r,\mathcal M_R\). No maximum attainment, sharp rare-peak constant, or optimal recurrence gap is asserted. The growing-frequency estimate is only (14)--(19) with its stated size and separation costs; it is not an unrestricted growing-dimensional equidistribution law.
 
-The analytical audit points are the unconditional quantifier in (5), dyadic normalization, uniform Hilbert-valued truncation, the tail-uniform box inclusion, the mirror-paired density estimate (15), rational frequency separation (18), and the complete dimension/truncation budget in (19)--(22). No numerical evidence, Lean proof, new critical-line or simplicity proportion, or RH conclusion is claimed. The auxiliary Fourier and sampling lemmas are classical and do not present a separate formalization-fertility question.
+The analytical audit points are the unconditional quantifier in (5), dyadic normalization, uniform Hilbert-valued truncation, the tail-independent mixed coefficient (8d), the null-critical-set/change-of-variables step (8e), the tail-uniform box inclusion, the mirror-paired density estimate (15), rational frequency separation (18), and the complete dimension/truncation budget in (19)--(22). No numerical evidence, Lean proof, new critical-line or simplicity proportion, or RH conclusion is claimed. The auxiliary Fourier, real-analytic and sampling lemmas are classical and do not present a separate formalization-fertility question.
 
 ## Prior art and novelty assessment
 
@@ -298,4 +416,26 @@ Kevin Ford, K. Soundararajan and Alexandru Zaharescu, *On the distribution of im
 
 Ford--Zaharescu's Lemmas 1--2 also provide the uniform Landau and Selberg-density inputs for (14)--(15). The layer-cake proof here makes their use uniform even at very small mixed frequencies. Kevin Ford, Xianchang Meng and Alexandru Zaharescu, *Simultaneous distribution of the fractional parts of Riemann zeta zeros*, **Bull. London Math. Soc. 49** (2017), 1--9, [DOI 10.1112/blms.12001](https://doi.org/10.1112/blms.12001), [arXiv:1511.06814v2](https://arxiv.org/abs/1511.06814), Theorem 1, Corollary 1.1 and §2, are closer multidimensional prior art: they treat fixed dimension with Diophantine frequency control and retain lower-order prime bias. Their fixed-dimensional theorem is not used with growing dimension. Equations (16)--(22) instead keep all costs explicitly.
 
-Finite-dimensional character testing, uniform almost-periodic approximation, tent Fourier coefficients and phase-box sampling are standard. The local delta is the proved transfer for the normalized Euler--Hankel family: positive rare-peak fraction, exact sampled supremum, and a quantitative lower bound along a stated shrinking-scale regime. The last conclusion is stronger than fixed-scale convergence because it retains an error smaller than the shrinking box mass. It is a classical-method specialization, with no claim of literature priority, a new general equidistribution theorem, or an optimal triple-logarithmic scale.
+Boris S. Mityagin, *The Zero Set of a Real Analytic Function*,
+[arXiv:1512.07276v1](https://arxiv.org/abs/1512.07276), Proposition 0, supplies
+the classical null-zero-set fact used for \(\partial_\theta G_W\). The
+inverse-function/change-of-variables argument above proves the required
+absolute-continuity consequence directly. Yasutaka Ihara, *On
+“M-Functions” Closely Related to the Distribution of \(L'/L\)-Values*,
+**Publ. RIMS 44** (2008), 893--954,
+[DOI 10.2977/PRIMS/1216238306](https://ems.press/journals/prims/articles/2161),
+provides neighboring prime-torus density theory for scalar logarithmic
+derivatives. That scalar density is not the distribution of this coherent
+Hilbert-norm-square observable and is not imported as such.
+
+Finite-dimensional character testing, uniform almost-periodic approximation,
+analytic pushforwards, tent Fourier coefficients and phase-box sampling are
+standard. The local delta is the proved transfer for the normalized
+Euler--Hankel family: an absolutely continuous fixed-parameter response law
+and exact frequency at every threshold, positive rare-peak fraction, exact
+sampled supremum, and a quantitative lower bound along a stated shrinking-scale
+regime. The last conclusion is stronger than fixed-scale convergence because
+it retains an error smaller than the shrinking box mass. Qualitative density
+regularity does not improve that error budget. This is a classical-method
+specialization, with no claim of literature priority, a new general
+equidistribution theorem, or an optimal triple-logarithmic scale.
