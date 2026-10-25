@@ -1,4 +1,4 @@
-# WI-461 — Fixed-scale Euler peaks have positive density at zeta-zero ordinates
+# WI-461 — Euler peaks meet zeta-zero ordinates at fixed and controlled shrinking scales
 
 **Status:** LITERATURE+EXACT-DERIVED + CLASSICAL-EQUIDISTRIBUTION + SOURCE-FAMILY-BOUNDARY + NO-NOVELTY-CLAIM + NON-RH
 
@@ -56,7 +56,22 @@ Consequently
 \]
 for any finite nonnegative cutoff \(B(r)\). These are suprema, not assertions that a maximum is attained at a zero.
 
-Neither (2) nor (3) restricts the real parts of the responsive zeros. They do not show that any off-line zero exists or responds, nor that any responsive zero is simple. They are fully compatible with RH. The lower bound in (2) does **not** apply with an arbitrary shrinking \(R=R(T)\); its order of limits is essential.
+There is a quantitative replacement for the fixed-scale lower limit. After enlarging \(C_\tau\) and decreasing \(R_\tau\), there is \(H_\tau>C_\tau\) such that, uniformly in \(R,T\),
+\[
+\boxed{\begin{gathered}
+0<R<R_\tau,\qquad
+T\ge\exp\!\big(\exp(\exp(H_\tau/R))\big)
+\\[2pt]\Longrightarrow\qquad
+\frac1{D_T}\sum_{T<\gamma\le2T}
+\mathbf1_{\{Q_R(R,\gamma)>\tau\}}
+\ge\exp[-\exp(C_\tau/R)].
+\end{gathered}}
+\tag{4a}
+\]
+In particular this applies to every shrinking function \(R(T)\) with
+\(R(T)\ge H_\tau/\log\log\log T\) eventually. The triple-exponential height is a sufficient cost, not a sharp recurrence scale; the constants are not numerically evaluated.
+
+None of (2)--(4a) restricts the real parts of the responsive zeros. They do not show that any off-line zero exists or responds, nor that any responsive zero is simple. They are fully compatible with RH. The lower bound in (2) does **not** apply with an arbitrary shrinking \(R=R(T)\); (4a) supplies a specific sufficient range instead of exchanging limits.
 
 ## Classical arithmetic input and the finite-prime sampling law
 
@@ -146,19 +161,134 @@ for a larger \(C_\tau\). Only \(\pi(y)\le y\) is used. The upper bound in (2) is
 
 For (3), use arbitrary fixed \(\varepsilon,r>0\). Uniform convergence in (7) lets a sufficiently large finite phase box make \(V_{\varepsilon,r}(z)\) arbitrarily close to \(V_{\varepsilon,r}(1)\), regardless of the tail. Equation (6) puts a positive limiting fraction of zeros in each such box, hence infinitely many beyond any finite \(B\). This gives the lower bound for the supremum in (3). The reverse bound is WI-457's pointwise inequality \(Q_\varepsilon(r,t)\le Q_\varepsilon(r,0)\). Interchanging two suprema proves the first equality in (4); WI-459's \(M_r(0)\to1/4\) proves its limit, including a finite cutoff depending on \(r\).
 
+## A dimension-explicit phase-box estimate
+
+The quantitative input is Ford--Zaharescu's uniform Landau formula and Selberg density bound (their Lemmas 1--2). Write \(\ell=\log T\). For every \(B\ge1\) with \(B\le\ell/8\), and every nonzero real \(\omega\) satisfying
+\[
+e^{-B}\le|\omega|\le B,
+\]
+they imply the uniform dyadic character estimate
+\[
+\left|\frac1{D_T}\sum_{T<\gamma\le2T}e^{i\omega\gamma}\right|
+\le C\left(\frac1\ell+\frac{B^2}{\ell^2}
+                  +\frac{e^B\ell}{T}\right)=:\mathcal E(T,B).
+\tag{14}
+\]
+Here and below absolute constants do not depend on the number of primes or the mixed character. Negative frequencies follow by conjugation. The very small lower frequency cutoff is essential.
+
+To verify (14) without a hidden fixed-frequency constant, take \(x=e^\omega>1\). The Landau formula at height \(U\) has main term of modulus at most \(C U\Lambda(n_x)\), where \(n_x\) is the nearest prime power to \(x\), and error
+\(O(x\log^2(2xU)+\log(2U)/\log x)\).
+After multiplication by \(x^{-1/2}\), the main term is \(O(U)\): one has \(n_x\le2x\), so \(\Lambda(n_x)/\sqrt x\) is bounded. This also covers exact prime-power resonance; no separation from prime powers is assumed.
+
+The conversion from \(x^{\rho-1/2}\) to \(x^{i\gamma}\) must be unconditional and uniform near \(x=1\). Pair \(\beta+i\gamma\) with \(1-\beta+i\gamma\), preserving multiplicities. If \(u=\beta-1/2>0\), their difference in modulus is bounded by \(2(\cosh(\omega u)-1)\). Selberg's bound gives
+\[
+N_+(u,U):=\#\{\rho:0<\gamma\le U,\ \beta>1/2+u\}
+\ll U\log U\,e^{-u\log U/4}.
+\]
+Layer-cake integration, \(\sinh v\le ve^v\), and \(\omega\le\log U/8\) therefore yield
+\[
+\begin{aligned}
+\left|\sum_{0<\gamma\le U}
+       (x^{i\gamma}-x^{\rho-1/2})\right|
+&\le 2\int_0^{1/2}\omega\sinh(\omega u)N_+(u,U)\,du\\
+&\ll U\log U\,\omega^2
+       \int_0^\infty u e^{-u\log U/8}\,du
+\ll\frac{U\omega^2}{\log U}.
+\end{aligned}
+\tag{15}
+\]
+Critical-line zeros contribute zero to this difference. This direct integration retains the factor \(\omega^2\) even for an exponentially small frequency.
+Apply these bounds at \(U=2T,T\), subtract, and divide by \(D_T\asymp T\ell\). Since \(x^{1/2}\le e^{B/2}\), \(1/\omega\le e^B\), and \(\log(2xU)\ll\ell\), the resulting errors are bounded by (14).
+
+Now fix the phase aperture \(\eta\) from (12). On \([-\pi,\pi]\), periodically extended, use the tent
+\[
+f(\theta)=(1-|\theta|/\eta)_+,
+\qquad b=\widehat f(0)=\frac{\eta}{2\pi}\in(0,1).
+\]
+Its Fourier coefficients, normalized by \(d\theta/(2\pi)\), are
+\[
+\widehat f(j)=\frac{1-\cos(j\eta)}{\pi\eta j^2}\ge0
+\quad(j\ne0),\qquad
+\sum_{j\in\mathbb Z}\widehat f(j)=f(0)=1.
+\tag{16}
+\]
+For \(f_J=\sum_{|j|\le J}\widehat f(j)e^{ij\theta}\),
+\[
+\|f-f_J\|_\infty\le\frac{C_\eta}{J},\qquad
+|f_J|\le1,\qquad C_\eta=\frac4{\pi\eta}.
+\tag{17}
+\]
+Although \(f_J\) need not be nonnegative, its absolute value and coefficient sum have the displayed bounds; no positivity of the truncated function is used.
+
+For primes \(p\le y\), let \(d=\pi(y)\) and
+\[
+g(z)=\prod_{p\le y}f(\arg z_p),\qquad
+g_J(z)=\prod_{p\le y}f_J(\arg z_p).
+\]
+Then \(0\le g\le\mathbf1_{\{|\arg z_p|<\eta\ \forall p\le y\}}\),
+\(\|g-g_J\|_\infty\le C_\eta d/J\), and the constant coefficient of \(g_J\) is \(b^d\). Its nonnegative Fourier coefficients have total sum at most one. Every nonconstant character evaluated at \(z_p(t)=e^{-it\log p}\) has frequency
+\(\omega=-\sum_{p\le y}j_p\log p\), with \(|j_p|\le J\).
+Put
+\[
+B=\max\left\{1,J\sum_{p\le y}\log p\right\}.
+\]
+Unique factorization gives \(\omega\ne0\). More quantitatively, \(e^{|\omega|}=a/c>1\) for unequal positive integers \(a,c\le e^B\); hence
+\[
+|\omega|=\log(a/c)\ge(a-c)/a\ge e^{-B}.
+\tag{18}
+\]
+This elementary rational separation handles all mixed frequencies, including near cancellation between large numerator and denominator.
+
+Applying (14) to the finite Fourier expansion gives the explicit box lower bound
+\[
+\frac1{D_T}\sum_{T<\gamma\le2T}
+\mathbf1_{\{|\arg z_p(\gamma)|<\eta\ \forall p\le y\}}
+\ge b^d-\frac{C_\eta d}{J}-\mathcal E(T,B),
+\qquad B\le\tfrac18\log T.
+\tag{19}
+\]
+There is no factor counting the number of characters: their coefficient mass is at most one. Equation (19), rather than a fixed-dimensional asymptotic with unspecified constants, is the interface used below.
+
+## Paying for a growing prime box
+
+Take \(y=\exp(K/R)\), with the fixed \(K=K(\tau)\) from (12), and choose
+\[
+J=\left\lceil4C_\eta d\,b^{-d}\right\rceil.
+\tag{20}
+\]
+Then \(C_\eta d/J\le b^d/4\). The elementary bounds \(d\le y\) and \(\sum_{p\le y}\log p\le y\log y\) show that, for a constant \(C_1=C_1(\eta)\) and large \(y\),
+\[
+B\le\exp(C_1y),\qquad b^d\ge\exp[-y\log(1/b)].
+\tag{21}
+\]
+Choose \(C_2\) large enough depending only on \(\eta\). If
+\[
+\ell=\log T\ge\exp(C_2y),
+\tag{22}
+\]
+then \(B\le\ell/8\) and \(\mathcal E(T,B)\le b^d/4\). Indeed the first two errors in (14) are at most constants times \(e^{-C_2y}\) and \(e^{-2(C_2-C_1)y}\); taking \(C_2>C_1+\log(1/b)+2\) makes both negligible compared with \(b^d\). The remaining term is \(e^B\ell e^{-\ell}\), smaller still throughout (22). Fixed multiplicative constants are absorbed by taking \(R\) sufficiently small.
+
+Thus (19) is at least \(b^d/2\). Every counted ordinate is responsive by the tail-uniform inclusion (9)--(12), independently of all prime phases beyond \(y\). Enlarging \(C_\tau>K\) gives
+\[
+b^d/2\ge\exp[-\exp(C_\tau/R)].
+\]
+Finally choose \(H_\tau>C_\tau\). For all sufficiently small \(R\), the height assumption in (4a) implies (22), since
+\(\exp(H_\tau/R)\ge C_2\exp(K/R)\).
+This proves (4a) with every dimension, truncation and small-frequency cost retained. The method uses neither independent phases at zeros nor an RH-conditional discrepancy theorem.
+
 ## Consequence and limits of the conclusion
 
 WI-460 proves upper rarity and explicitly leaves peak occurrence at zeros undecided. Classical fixed-frequency equidistribution supplies that missing qualitative arithmetic input: actual zero ordinates sample the full fixed-parameter response range and meet every robust near-maximum phase box. Their positive lower fraction has the same broad double-exponential scale as the established upper bound.
 
-This resolves **fixed-scale overlap with the full divisor**, not the alignment question for a hypothetical exceptional subpopulation. The relevant distinctions are:
+This resolves **fixed-scale overlap with the full divisor** and gives a sufficient quantitative range for shrinking-scale overlap. It does not resolve alignment with a hypothetical exceptional subpopulation. The relevant distinctions are:
 
 - All zeros and multiplicities enter (5)--(8). Restricting to off-line zeros, simple zeros, or any other selected subpopulation requires a new sampling theorem. In particular, the result supplies no lower bound for the response at every off-line zero.
-- At scale \(R\), the number of constrained primes is finite but can be as large as \(\exp(K/R)\). Nothing here bounds the convergence height uniformly as \(R\downarrow0\). The positive fixed-\(R\) lower density is compatible with WI-460's vanishing fraction for **every** \(R(T)\to0\).
+- At scale \(R\), the number of constrained primes can be as large as \(\exp(K/R)\). Equation (4a) pays a triple-exponential sufficient height for this growing box. It does not justify arbitrary shrinking diagonals or optimal convergence heights. Its lower fraction tends to zero, consistently with WI-460's vanishing fraction for **every** \(R(T)\to0\).
 - A slowly chosen diagonal can retain some responsive zeros at widths tending to zero, by (3)--(4). This is existence with freely chosen heights and widths; it identifies neither a zero's horizontal depth nor the physical relation \(r=(1-\vartheta)d\) for a Kunik defect.
 - The leading Haar law loses lower-order arithmetic biases. Ford--Zaharescu's nonzero prime-resonant correction occurs at order \(T\), whereas the normalization here is \(T\log T\). It is not contradicted or eliminated by (8).
-- No maximum attainment, atom-free response law, sharp rare-peak constant, finite-height lower estimate, or uniform distribution for growing frequency sets is asserted.
+- No maximum attainment, atom-free response law, sharp rare-peak constant, or optimal recurrence gap is asserted. The growing-frequency estimate is only (14)--(19) with its stated size and separation costs; it is not an unrestricted growing-dimensional equidistribution law.
 
-The analytical audit points are the unconditional quantifier in (5), nonzero mixed prime frequencies, dyadic normalization, uniform Hilbert-valued truncation, the tail-uniform box inclusion, and the fixed-scale order of limits. No numerical evidence, Lean proof, new critical-line or simplicity proportion, or RH conclusion is claimed. The general sampling argument is classical and does not present a separate formalization-fertility question.
+The analytical audit points are the unconditional quantifier in (5), dyadic normalization, uniform Hilbert-valued truncation, the tail-uniform box inclusion, the mirror-paired density estimate (15), rational frequency separation (18), and the complete dimension/truncation budget in (19)--(22). No numerical evidence, Lean proof, new critical-line or simplicity proportion, or RH conclusion is claimed. The auxiliary Fourier and sampling lemmas are classical and do not present a separate formalization-fertility question.
 
 ## Prior art and novelty assessment
 
@@ -166,4 +296,6 @@ Kevin Ford and Alexandru Zaharescu, *On the distribution of imaginary parts of z
 
 Kevin Ford, K. Soundararajan and Alexandru Zaharescu, *On the distribution of imaginary parts of zeros of the Riemann zeta function, II*, **Mathematische Annalen 343** (2009), 487--505, [DOI 10.1007/s00208-008-0280-x](https://doi.org/10.1007/s00208-008-0280-x), [arXiv:0805.2745](https://arxiv.org/abs/0805.2745), equation (1.1), explicitly states the fixed-frequency continuous-test law. Its later conjectures and RH-conditional refinements are not inputs here. The original Hlawka reference is *Über die Gleichverteilung gewisser Folgen, welche mit den Nullstellen der Zetafunktionen zusammenhängen*, **Sitzungsberichte der Österreichischen Akademie der Wissenschaften, Math.-Naturw. Klasse, Abteilung II 184** (1975), 459--471; the theorem was checked here through the two primary research papers above.
 
-Finite-dimensional character testing, passage to uniformly convergent almost-periodic observables, and positive measure of a phase box are standard. The local delta is the proved sampling transfer for the normalized Euler--Hankel family and the resulting positive rare-peak fraction and exact sampled supremum. This is a classical-theorem specialization resolving a previously unfilled implication, with no claim of literature priority or a new equidistribution theorem.
+Ford--Zaharescu's Lemmas 1--2 also provide the uniform Landau and Selberg-density inputs for (14)--(15). The layer-cake proof here makes their use uniform even at very small mixed frequencies. Kevin Ford, Xianchang Meng and Alexandru Zaharescu, *Simultaneous distribution of the fractional parts of Riemann zeta zeros*, **Bull. London Math. Soc. 49** (2017), 1--9, [DOI 10.1112/blms.12001](https://doi.org/10.1112/blms.12001), [arXiv:1511.06814v2](https://arxiv.org/abs/1511.06814), Theorem 1, Corollary 1.1 and §2, are closer multidimensional prior art: they treat fixed dimension with Diophantine frequency control and retain lower-order prime bias. Their fixed-dimensional theorem is not used with growing dimension. Equations (16)--(22) instead keep all costs explicitly.
+
+Finite-dimensional character testing, uniform almost-periodic approximation, tent Fourier coefficients and phase-box sampling are standard. The local delta is the proved transfer for the normalized Euler--Hankel family: positive rare-peak fraction, exact sampled supremum, and a quantitative lower bound along a stated shrinking-scale regime. The last conclusion is stronger than fixed-scale convergence because it retains an error smaller than the shrinking box mass. It is a classical-method specialization, with no claim of literature priority, a new general equidistribution theorem, or an optimal triple-logarithmic scale.
