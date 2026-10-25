@@ -500,3 +500,15 @@ Role: classical construction of compact smooth probability densities from summab
 Mithun Bhowmik, Swagato K. Ray and Suparna Sen, *Around uncertainty principles of Ingham-type on R^n, T^n and two step nilpotent Lie groups*, arXiv:1605.09616v1 (2016), Introduction, Theorems 1.1–1.2, https://arxiv.org/pdf/1605.09616. Published as *Around theorems of Ingham-type regarding decay of Fourier transform on R^n, T^n and two step nilpotent Lie groups*, Bulletin des Sciences Mathématiques (2019), DOI: https://doi.org/10.1016/j.bulsci.2019.02.004.
 
 Role: authoritative statement of the classical Fourier logarithmic-integral criterion. MC-530 uses its necessary direction to identify the fixed-target box-inverse obstruction at `0<=r<=1`, following the exact PL-473 source permitted by its local clue. The admissible `r>1` inverse and reciprocal-zeta transfer are explicitly constructed; convergence of the logarithmic integral alone is not treated as their proof.
+
+## MC-S83 — Casey–Walnut, compact-distribution multichannel deconvolution
+
+Stephen D. Casey and David F. Walnut, *Systems of Convolution Equations, Deconvolution, Shannon Sampling, and the Wavelet and Gabor Transforms*, SIAM Review 36 (1994), no. 4, 537–577. DOI: https://doi.org/10.1137/1036140. Stephen D. Casey, *Modulation and Sampling Techniques for Multichannel Deconvolution*, University of Maryland ISR TR-96-54 (1996), Section 2.1, Theorems 2.3–2.4, printed pp. 5–7. Institutional record: https://drum.lib.umd.edu/items/afce37a2-e785-4d81-90b7-610a94de7310. Report: https://api.drum.lib.umd.edu/server/api/core/bitstreams/fff4ad58-33f1-4d4f-b92d-1117c53a9efc/content.
+
+Role: classical provenance of the compact-distribution Bezout identity used in MC-532. The report states the strong-coprimeness criterion and explicitly treats interval kernels with square-root-of-prime length ratio. MC-532 reconstructs the needed support, dilation, mean-zero and integer-rounding estimates for a fixed smooth reciprocal-zeta test; no new inversion principle or bounded inverse on arbitrary L2 signals is claimed.
+
+## MC-S84 — Pensky–Sapatinas, Diophantine boxcar channels
+
+Marianna Pensky and Theofanis Sapatinas, *Multichannel Boxcar Deconvolution with Growing Number of Channels*, Electronic Journal of Statistics 5 (2011), 53–82. DOI: https://doi.org/10.1214/11-EJS597. Author manuscript: https://arxiv.org/abs/1102.2298.
+
+Role: adjacent primary prior art for MC-532's distinction between multiple box measurements, irrational ratios, and quantitative small-divisor control. The paper studies periodic statistical reconstruction and badly approximable channel tuples; its estimation rates are not imported into the deterministic Möbius variance certificate.

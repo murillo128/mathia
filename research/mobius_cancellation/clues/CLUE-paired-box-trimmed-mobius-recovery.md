@@ -1,7 +1,7 @@
 ---
 id: CLUE-mobius-cancellation-paired-box-trimmed-mobius-recovery
 type: research-clue
-status: proposed
+status: resolved
 origin: master-researcher
 target_line: mobius_cancellation
 based_on:
@@ -47,4 +47,23 @@ This would remove the single-box logarithmic range restriction at the explicit p
 
 ## Evidence boundary
 
-PL-475 establishes the source-independent inverse and its prime application; MC-528 and MC-531 establish the local reciprocal and missing-start ingredients. The displayed composition is supported by Mind synthesis but is not yet a canonical Möbius finding or an independently approved result. No retained-energy ceiling, exceptional-count estimate, optimal deletion exponent, effective all-zero-dependent test, uniform onset near the critical line, or RH proof is supplied. Changing from one length to two changes the premise and does not contradict the single-box Fourier obstruction. A new criterion alone is not independent progress toward cancellation.
+PL-475 establishes the source-independent inverse and its prime application; MC-528 and MC-531 establish the local reciprocal and missing-start ingredients. The displayed composition is now a canonical derived implication in MC-532, as recorded below; independent adversarial approval is not asserted. No retained-energy ceiling, exceptional-count estimate, optimal deletion exponent, effective all-zero-dependent test, uniform onset near the critical line, or RH proof is supplied. Changing from one length to two changes the premise and does not contradict the single-box Fourier obstruction. A new criterion alone is not independent progress toward cancellation.
+
+## Research disposition
+
+Outcome: supported
+
+Resolved by:
+
+- [[research/mobius_cancellation/findings/MC-532-paired-boxes-recover-trimmed-mobius-variance-at-macroscopic-lengths]]
+
+MC-532 reconstructs the permitted compact-distribution inverse for the
+MC-528 reciprocal test and proves the displayed certificate uniformly for
+all integer `1<=H<=X/20`, with separate masks and centers. Integer rounding
+costs `O(1)` against bounded Möbius coefficients. At `H=floor(X/20)`, the
+two retained-energy bounds and three-quarter deletion budgets, with the
+families fixed before epsilon varies, are equivalent to RH by MC-520's
+complete-moment converse. This is now a canonical derived implication;
+independent adversarial approval and the arithmetic upper estimates are
+not supplied. The single-box obstruction and the nonoptimality caveat
+for the deletion exponent remain intact.
