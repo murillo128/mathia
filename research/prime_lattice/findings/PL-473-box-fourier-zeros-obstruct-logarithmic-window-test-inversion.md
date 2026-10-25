@@ -83,7 +83,7 @@ Taking \(k=1\) and \(k=-1\) in (7), and then
 \quad (|\xi|\text{ sufficiently large}).
 \tag{8}
 \]
-The classical Paley–Wiener logarithmic-integral theorem says that a
+The classical [[research/prior_art/incremental/PA-paley-wiener-ingham-logarithmic-integral|Paley–Wiener logarithmic-integral theorem]] says that a
 nonzero compactly supported continuous function cannot satisfy such
 a Fourier envelope when
 \(\int_0^\infty\psi(t)/(1+t^2)\,dt=\infty\).

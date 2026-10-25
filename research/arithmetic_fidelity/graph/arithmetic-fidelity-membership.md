@@ -586,3 +586,4 @@ This stable projection inventories every current canonical Arithmetic Fidelity f
 - [[research/arithmetic_fidelity/findings/AF-580-positive-noise-destroys-finite-stopping-under-unknown-polynomial-calibration|AF-580]]
 - [[research/arithmetic_fidelity/findings/AF-581-known-polynomial-degree-restores-sharp-full-ray-adaptive-recovery|AF-581]]
 - [[research/arithmetic_fidelity/findings/AF-582-quadratic-calibration-changes-sharp-window-cost-from-logarithmic-to-algebraic|AF-582]]
+- [[research/arithmetic_fidelity/findings/AF-583-fixed-polynomial-degrees-share-algebraic-range-order|AF-583]]

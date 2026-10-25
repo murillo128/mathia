@@ -463,3 +463,4 @@ This stable projection inventories every current canonical Prime Circle finding.
 - [[research/prime_circle/findings/PC-453-bounded-cotangent-towers-force-haar-equivalence|PC-453]]
 - [[research/prime_circle/findings/PC-454-self-adjoint-similarity-of-cotangent-towers-forces-haar-norm-equivalence|PC-454]]
 - [[research/prime_circle/findings/PC-455-one-resolvent-point-forces-singleton-cotangent-tower-boundedness|PC-455]]
+- [[research/prime_circle/findings/PC-456-one-resolvent-point-forces-every-finite-base-cotangent-tower-bounded|PC-456]]

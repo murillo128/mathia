@@ -77,6 +77,8 @@ This is a purely structural corpus projection. A link here means only that the t
 - [[research/prior_art/incremental/PA-landau-nonnegative-dirichlet-series-singularity]]
 - [[research/prior_art/incremental/PA-le-cam-two-point-testing]]
 - [[research/prior_art/incremental/PA-montgomery-dirichlet-zero-density-bound]]
+- [[research/prior_art/incremental/PA-nonquasianalytic-infinite-convolution-cutoff]]
+- [[research/prior_art/incremental/PA-paley-wiener-ingham-logarithmic-integral]]
 - [[research/prior_art/incremental/PA-polynomial-homogenization-linear-fractional-action]]
 - [[research/prior_art/incremental/PA-polynomial-interpolation-early-termination]]
 - [[research/prior_art/incremental/PA-randomized-integration-unsolvability-on-unrestricted-smooth-functions]]

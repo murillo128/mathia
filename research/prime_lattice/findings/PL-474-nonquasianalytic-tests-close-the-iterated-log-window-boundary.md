@@ -72,7 +72,7 @@ with
 \|\eta^{(j)}\|_\infty\le C R^j M_j.
 \tag{5}
 \]
-This is a classical nonquasianalytic cutoff. For the precise bound,
+This is a classical [[research/prior_art/incremental/PA-nonquasianalytic-infinite-convolution-cutoff|nonquasianalytic cutoff]]. For the precise bound,
 take interval probability densities of widths
 \(d_j=\varepsilon/[jL_j^q]\), \(j\ge1\), and one fixed width
 \(d_0>0\). Their widths have finite sum because \(q>1\).
@@ -294,7 +294,7 @@ the exact zero interpolation and bounded test norms needed here.
 
 The cutoff construction is classical Denjoy--Carleman theory:
 [Rainer, Lemma 3.3 and Theorem 3.6](https://www.mat.univie.ac.at/~armin/publ/survey-UET.pdf),
-source 141. Source 139 gives the corresponding Paley--Wiener/Ingham
+source 141. Source 139 gives the corresponding [[research/prior_art/incremental/PA-paley-wiener-ingham-logarithmic-integral|Paley--Wiener/Ingham]]
 Fourier boundary. Sources 138, 128 and 127 supply, respectively,
 the classical Bernoulli coefficients, arithmetic zero-density input,
 and explicit-formula background. Zaccagnini, source 123, §3.3,

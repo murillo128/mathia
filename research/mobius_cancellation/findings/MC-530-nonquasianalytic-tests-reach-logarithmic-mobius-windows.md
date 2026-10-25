@@ -68,7 +68,7 @@ For each \(n\), the remaining interval factors give a continuous
 convolution density, so these distributional derivatives are continuous.
 The absolutely summable widths give a compactly supported probability
 limit; this proves smoothness as well as the bound. This is the standard
-iterated-convolution construction, anchored in MC-S81.
+[[research/prior_art/incremental/PA-nonquasianalytic-infinite-convolution-cutoff|iterated-convolution construction]], anchored in MC-S81.
 
 The order-uniform inequality
 \[
@@ -328,7 +328,7 @@ that the variance floor fails for \(r\le1\).
 ## Prior art, controls and evidence boundary
 
 The bump construction is classical (MC-S81, Section 3.1), and the
-Fourier threshold is classical Paley–Wiener/Ingham theory (MC-S82,
+Fourier threshold is classical [[research/prior_art/incremental/PA-paley-wiener-ingham-logarithmic-integral|Paley–Wiener/Ingham theory]] (MC-S82,
 Theorems 1.1–1.2). Bernoulli inversion is MC-S80. The local contribution
 is the explicit compatibility of these ingredients with MC-528's full
 reciprocal pole cancellation and the order-uniform estimates (8),

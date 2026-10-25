@@ -2,7 +2,7 @@
 id: RA-frontier-telemetry-v1
 type: riemann-atlas-frontier-telemetry
 atlas_version: 1
-prospective_source_cutoff: b946d20d9d2017c832686dfb1208648d128c0dff
+prospective_source_cutoff: dad389ed99a0df95a4db87934b7e0275ae436f57
 derived: true
 ---
 
@@ -36,7 +36,15 @@ This is one `viable-extension` episode for the known-degree budget, separately c
 
 This is one `new-barrier` episode for a distinct coordinate-resource question. It is not a novelty claim for classical alternation or a reclassification of the supplied-degree query-count result. The normalized prime-edit transfer error is at most 2α_p; α_p=o(log B/B²) suffices to preserve the leading quadratic loss along growing windows. No explicit joint prime/range/precision rate, multiway optimal bank, higher-degree range law or RH consequence is established. No exact RH Atlas leaf is assigned.
 
-The last-20 rule replaces the oldest retained Farey scalar-dual barrier with this bounded-range barrier, leaving global rates unchanged. Membership, native-link formatting, synthesis and prior-art registration contribute no episodes. Other source changes remain outside this bounded semantic classification.
+Membership, native-link formatting, synthesis and prior-art registration contribute no episodes. Other source changes remain outside this bounded semantic classification.
+
+## Fixed-target box-inversion boundary
+
+[[research/graph/relations/fixed-target-box-inversion-regularity-boundary|The fixed-target inversion mechanism]] records PL-474 and MC-530's constructive answer for every fixed r>1 at H<=X/[log X (loglog X)^r]. They preserve an almost analytic derivative class through their respective zero annihilators and growing finite inverses. PL-473's Fourier-zero obstruction remains valid for 0<=r<=1: a fixed nonzero compact target cannot have power-saving global approximation error at all large real scales. This is a boundary of a norm certificate, not a variance counterexample or an obstruction on arbitrary sparse width sets.
+
+The prime logarithmic derivative retains a noncancelling simple pole, whereas reciprocal zeta requires full unwanted-pole multiplicity and local division, and retains a logarithmic polynomial at the chosen pole. Both sources leave the absolute arithmetic variance ceiling unproved and their tests dependent on the full hypothetical zero set. Classical nonquasianalytic cutoffs and logarithmic-integral uncertainty are prior art; the sources verify the compatibility estimates.
+
+This is one `viable-extension` episode for the shared regularity question, attributed to `prime_lattice` for reporting and including the independently reconstructed Möbius instance. It does not count two findings as two episodes or assert a new unconditional RH route. It replaces the oldest retained heat-phase barrier under the existing last-20 rule. Atlas A1 remains `active` with unchanged mass. The episode rates remain selective, not an unbiased portfolio sample.
 
 ## Retained prospective window
 
@@ -45,11 +53,11 @@ Classifiable episodes: **20**. Insufficient-evidence episodes: **0**. Retrospect
 | Classification | Episodes |
 | --- | ---: |
 | known-prior-art | 3 |
-| new-barrier | 10 |
-| viable-extension | 7 |
+| new-barrier | 9 |
+| viable-extension | 8 |
 
-- **FrontierFertilityEpisodes = 35.0%**
-- **BarrierRate = 50.0%**
+- **FrontierFertilityEpisodes = 40.0%**
+- **BarrierRate = 45.0%**
 - **PriorArtCollisionRate = 15.0%**
 - **InternalDuplicateRate = 0.0%**
 
@@ -58,11 +66,11 @@ Classifiable episodes: **20**. Insufficient-evidence episodes: **0**. Retrospect
 | Line | Episodes | Viable extension | Barrier | Prior art | Duplicate |
 | --- | ---: | ---: | ---: | ---: | ---: |
 | `arithmetic_fidelity` | 4 | 2 | 2 | 0 | 0 |
-| `mobius_cancellation` | 3 | 1 | 1 | 1 | 0 |
+| `mobius_cancellation` | 2 | 1 | 0 | 1 | 0 |
 | `nyman_beurling` | 1 | 0 | 1 | 0 | 0 |
 | `prime_circle` | 1 | 0 | 0 | 1 | 0 |
 | `prime_flute` | 1 | 1 | 0 | 0 | 0 |
-| `prime_lattice` | 3 | 1 | 2 | 0 | 0 |
+| `prime_lattice` | 4 | 2 | 2 | 0 | 0 |
 | `robin_extremal` | 1 | 1 | 0 | 0 | 0 |
 | `visual_exploration` | 1 | 1 | 0 | 0 | 0 |
 | `weil_inertia` | 1 | 0 | 1 | 0 | 0 |

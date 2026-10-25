@@ -37,3 +37,7 @@ The line directly traverses the classical summatory-error side of the RH landsca
 ## Conditional variance bridge
 
 [[research/graph/relations/rh-mellin-variance-and-farey-capacity|RH Mellin variance and balanced Farey capacity]] preserves the explicit RH hypothesis, the matched source window, and the separate-endpoint obstruction.
+
+## Fixed-target inversion boundary
+
+[[research/graph/relations/fixed-target-box-inversion-regularity-boundary|Fixed-target box inversion and its regularity boundary]] preserves the distinct arithmetic pole inputs and the all-scale norm-certificate restriction. The variance ceilings remain unproved.
