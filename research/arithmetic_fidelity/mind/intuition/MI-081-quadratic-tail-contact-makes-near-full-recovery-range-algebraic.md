@@ -1,6 +1,6 @@
-# MI-081 — Quadratic tail contact fixes the range order for every fixed higher degree
+# MI-081 — Growing calibration degree costs a quadratic increase in recovery range
 
-**Evidence level:** supported synthesis of [AF-582](../../findings/AF-582-quadratic-calibration-changes-sharp-window-cost-from-logarithmic-to-algebraic.md) and [AF-583](../../findings/AF-583-fixed-polynomial-degrees-share-algebraic-range-order.md). Classical alternation and Markov derivative bounds give the fixed-degree range order for an explicit non-arithmetic profile. The prime-edit transfer has a quantitative sufficient approximation-error gate; no general novelty is claimed.
+**Evidence level:** supported synthesis of [AF-582](../../findings/AF-582-quadratic-calibration-changes-sharp-window-cost-from-logarithmic-to-algebraic.md), [AF-583](../../findings/AF-583-fixed-polynomial-degrees-share-algebraic-range-order.md), and [AF-584](../../findings/AF-584-growing-calibration-degree-has-sharp-quadratic-range-cost.md). Classical alternation, Markov bounds and an explicit Chebyshev witness give a degree-uniform range law for a non-arithmetic profile. The prime-edit transfer has a quantitative sufficient approximation-error gate; no general novelty is claimed.
 
 For binary sources \(F_0=0\), \(F_1=f\), \(f(x)=xe^{1-x}\), observe
 \[
@@ -70,7 +70,44 @@ Taking \(t=2\log B\) for \(B\ge e\) and using the quadratic certificate proves, 
 \le\limsup_{\delta\downarrow0}\frac{R_r(\delta)}{\sqrt{\log(1/\delta)/\delta}}
 \le\sqrt{A_r}.
 \]
-Thus bounded curvature, the peak and one decaying-tail value control the entire fixed-degree hierarchy without solving each alternation system. The upper constant is only a bound; existence or value of a limiting range ratio for \(r\ge3\) is not established. The same bound gives the sufficient growing-degree condition \(r(B)^4\log B=o(B^2)\) for \(\Delta_{r(B)}(B)\to0\), with no claim of necessity. At any fixed compact window, allowing unbounded degree instead makes \(E_r(B)\to0\) by polynomial approximation.
+Thus bounded curvature, the peak and one decaying-tail value control the fixed-degree hierarchy without solving each alternation system. The upper constant is only a bound; existence or value of a limiting range ratio for \(r\ge3\) is not established.
+
+For growing known degree, AF-584 optimizes the tail point at
+\(t=1+\log(B^2/A_r)\) and supplies the missing converse. Put
+\(\nu=r^2/B\). Uniformly for \(r\ge2\), \(B\ge16r^2\),
+\[
+\frac{\nu^2\log(1/\nu)}{20736}
+\le\Delta_r(B)\le2\nu^2\log(1/\nu).
+\]
+The lower bound uses \(n=\lfloor r/2\rfloor\), \(k=n^2/B\),
+\(t=\log(1/k)\), and
+\[
+D(x)=1-T_n(1-2x/B),\quad
+Q(x)=(t/x-1)D(x)^2,\quad d=k^2\log(1/k)/256.
+\]
+Here \(T_n\) is the Chebyshev polynomial. Since \(D(0)=0\),
+\(Q\) is a polynomial of degree at most \(2n\), including at zero.
+For \(k\le1/64\), the global certificate
+\(0\le f-Q/64\le1-d\) makes \((1-d)/2+Q/64\) an admissible
+approximant. Near the peak, \(kx\le D(x)\le2kx\); beyond \(t\),
+\(-4\le Q\le0\). Thus the witness retains the gain while controlling
+every remote Chebyshev oscillation, not merely selected contacts.
+
+If \(B\ge64\) and \(r^2/B\ge1/16\), choosing instead
+\(n=\lfloor\sqrt B/8\rfloor\) gives
+\(\Delta_r(B)\ge\log(256)/2^{24}\). Consequently, as \(B\to\infty\),
+\[
+\Delta_{r(B)}(B)\to0\ \Longleftrightarrow\ r(B)^2/B\to0,
+\qquad
+R_r(\delta)=\Theta\!\left(r^2\sqrt{\log(1/\delta)/\delta}\right),
+\quad r\ge2.
+\]
+The range constants and the small-\(\delta\) threshold are independent
+of \(r\); the degree may grow arbitrarily along this limit. This removes
+the extra \(\log B\) in the earlier sufficient condition. It does not
+determine the limiting deficit when \(r^2/B\) approaches a positive
+constant. At a fixed compact window, unbounded degree still makes
+\(E_r(B)\to0\).
 
 Extra readings or adaptivity inside the window cannot beat its whole-curve quotient distance. Conversely the \(r+2\) alternation nodes, with polynomial-annihilating divided-difference weights normalized by \(\sum|\lambda_j|=1\), have \(|\sum\lambda_j f(x_j)|=E_r(B)\) and observation error at most \(\varepsilon\). Hence \(r+2\) fixed readings approach the corresponding radius at every known fixed degree; if zero is a node, replace it by a positive node tending to zero. At most \(r+1\) distinct readings admit a noiseless interpolation alias. These are binary supremal radii, with no recovery at a midpoint tie or common optimal multiway bank asserted. [MI-080](MI-080-escaping-anchors-cancel-known-degree-at-constant-noise-cost.md)'s multiway adaptive budget and its unrestricted anchors address a different resource.
 
@@ -87,14 +124,19 @@ Subtracting separate source asymptotics would not establish a gap-relative estim
 \[
 \left|\frac{\varepsilon_{r;p,q}(B)}{D_{p,q}/4}-2E_r(B)\right|\le2\alpha_p.
 \]
-The same TV-one contrast transfers the finite-bank lower bound \(D_{p,q}(E_r(B)-\alpha_p)/2\). For fixed \(r\ge2\), the explicit rate now suffices to transport the loss order along \(B\to\infty\) whenever
+The same TV-one contrast transfers the finite-bank lower bound \(D_{p,q}(E_r(B)-\alpha_p)/2\). This quotient comparison is uniform in the degree: no factor of \(r\) amplifies \(\alpha_p\). In particular, as \(p,B\to\infty\), for any supplied finite degrees \(r=r(p)\) and labels \(q(p)>p\),
+\[
+1-\frac{\varepsilon_{r;p,q}(B)}{D_{p,q}/4}\to0
+\quad\Longleftrightarrow\quad r^2/B\to0.
+\]
+For fixed \(r\ge2\), the explicit rate suffices to transport the loss order along \(B\to\infty\) whenever
 \[
 B^2=o((\log p)\log B).
 \]
 Equivalently at a desired loss \(\delta=\delta(p)\downarrow0\), \(\delta\log p\to\infty\) suffices for the actual minimum normalized range to satisfy
 \[
-R_{r;p,q}(\delta)=\Theta_r\!\left(\sqrt{\log(1/\delta)/\delta}\right)
+R_{r;p,q}(\delta)=\Theta\!\left(r^2\sqrt{\log(1/\delta)/\delta}\right),\qquad r\ge2,
 \]
-uniformly over larger prime labels \(q\); for \(r=2\) its ratio to the displayed expression tends to one. Indeed the quotient comparison sandwiches this range between \(R_r(\delta+C/\log p)\) and \(R_r(\delta-C/\log p)\). The affine leading loss still needs its separate comparison \(\alpha_p=o(e^{1-B})\). These conditions are sufficient, not necessary, and the profile error rate is not known sharp. The range law is in \(x\), so its physical coordinate cost includes \(1/(c\log p)\). These are the exact limiting prime-edit curves; no simultaneous finite-critical-index error is supplied.
+uniformly over the growing known degree and larger prime labels \(q\). For \(r=2\), the sharper ratio \(R_{2;p,q}(\delta)/\sqrt{\log(1/\delta)/\delta}\) still tends to one. Indeed the quotient comparison sandwiches the range between \(R_r(\delta+C/\log p)\) and \(R_r(\delta-C/\log p)\). The condition \(\delta\log p\to\infty\) is sufficient for this relative-loss law; the qualitative threshold above needs only \(\alpha_p\to0\). The affine leading loss still needs its separate comparison \(\alpha_p=o(e^{1-B})\). These conditions are sufficient, not necessary, and the profile error rate is not known sharp. The range law is in \(x\), so its physical coordinate cost includes \(1/(c\log p)\). These are the exact limiting prime-edit curves; no simultaneous finite-critical-index error is supplied.
 
-No sharp higher-degree leading constant, optimal growing-degree threshold, relative-error guarantee or finite-precision cost follows. The matched generalized-prime sources do not certify ordinary-prime provenance or imply RH. The retained distinction is exact: a known degree can make the query count finite while the desired noise fraction still forces a large accessible coordinate range.
+No sharp higher-degree leading constant, relative-observation-error guarantee or finite-precision cost follows. The matched generalized-prime sources do not certify ordinary-prime provenance or imply RH. The retained distinction is exact: a known degree can make the query count finite while its square prices the coordinate range needed for a near-full noise margin.
