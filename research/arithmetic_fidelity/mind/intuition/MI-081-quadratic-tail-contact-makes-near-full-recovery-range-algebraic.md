@@ -1,6 +1,6 @@
 # MI-081 — Growing calibration degree costs a quadratic increase in recovery range
 
-**Evidence level:** supported synthesis of [AF-582](../../findings/AF-582-quadratic-calibration-changes-sharp-window-cost-from-logarithmic-to-algebraic.md), [AF-583](../../findings/AF-583-fixed-polynomial-degrees-share-algebraic-range-order.md), and [AF-584](../../findings/AF-584-growing-calibration-degree-has-sharp-quadratic-range-cost.md). Classical alternation, Markov bounds and an explicit Chebyshev witness give a degree-uniform range law for a non-arithmetic profile. The prime-edit transfer has a quantitative sufficient approximation-error gate; no general novelty is claimed.
+**Evidence level:** supported synthesis of [AF-582](../../findings/AF-582-quadratic-calibration-changes-sharp-window-cost-from-logarithmic-to-algebraic.md), [AF-583](../../findings/AF-583-fixed-polynomial-degrees-share-algebraic-range-order.md), [AF-584](../../findings/AF-584-growing-calibration-degree-has-sharp-quadratic-range-cost.md), and [AF-585](../../findings/AF-585-cubic-calibration-has-sharp-range-constant-from-endpoint-curvature.md). Classical alternation, Markov bounds and explicit Chebyshev witnesses give a degree-uniform range law and sharp quadratic/cubic constants for a non-arithmetic profile. The prime-edit transfer has a quantitative sufficient approximation-error gate; no general novelty is claimed.
 
 For binary sources \(F_0=0\), \(F_1=f\), \(f(x)=xe^{1-x}\), observe
 \[
@@ -48,7 +48,7 @@ To retain fraction \(1-\delta\) of the full-ray radius, define \(R_r(\delta)=\in
 R_1(\delta)=1+\log(1/\delta)+o(1),\qquad
 R_2(\delta)\sim\sqrt{\log(1/\delta)/\delta}.
 \]
-Higher fixed degrees cannot change this algebraic order, although these findings do not determine their optimal contacts. Write
+Higher fixed degrees cannot change this algebraic order. Write
 \[
 \Delta_r(B)=1-2E_r(B),\qquad A_r=\frac{2r^2(r^2-1)}3.
 \]
@@ -70,7 +70,52 @@ Taking \(t=2\log B\) for \(B\ge e\) and using the quadratic certificate proves, 
 \le\limsup_{\delta\downarrow0}\frac{R_r(\delta)}{\sqrt{\log(1/\delta)/\delta}}
 \le\sqrt{A_r}.
 \]
-Thus bounded curvature, the peak and one decaying-tail value control the fixed-degree hierarchy without solving each alternation system. The upper constant is only a bound; existence or value of a limiting range ratio for \(r\ge3\) is not established.
+Thus bounded curvature, the peak and one decaying-tail value control the fixed-degree hierarchy without solving each alternation system. The Markov constant is only a bound; the cubic sharp constant instead uses the saturated endpoint forced by the source peak.
+
+For \(r=3\), every coefficientwise limit of a rescaled best approximant
+\(P_B(y)=p_B(By)\) satisfies
+\[
+|P|\le\tfrac12\quad(0\le y\le1),\qquad P(0)=\tfrac12,
+\qquad P'(0)=0.
+\]
+Indeed \(f(By)\to0\) for fixed \(y>0\), while
+\(p_B(1)\ge1-E_3(B)\) forces endpoint saturation; comparison with
+\(p_B(0)\le E_3(B)\) forces the zero slope in the limit, not at finite
+\(B\). Write \(P=1/2+dy+ay^2+by^3\). Even without assuming zero
+slope, endpoint maximality gives \(d\le0\); the values at \(1\) and
+\(2/3\) imply
+\[
+d+a+b\le0,\qquad
+-1\le\tfrac23d+\tfrac49a+\tfrac8{27}b
+\le\tfrac{10}{27}d+\tfrac4{27}a.
+\]
+Hence \(P''(0)=2a\ge-27/2\), with equality only at
+\[
+P_*(y)=\tfrac12-\tfrac{27}{4}y^2(1-y)
+=-\tfrac12T_3((1-3y)/2).
+\]
+Its minimum is \(-1/2\) at \(y=2/3\). Interpolating the finite
+approximant at \(0,1,s_B\), \(s_B=2\log B+\log\log B\), gives
+\(\limsup B^2\Delta_3(B)/\log B\le-2a\le27/2\) along each
+convergent subsequence. Compactness yields the global upper bound.
+For sufficiently large \(B\), the matching whole-window witness is
+\[
+c_B=\frac{27}{4B^2}(1-B^{-1/2}),\quad
+t_B=2+\log(1/c_B),\quad Q_B(x)=c_Bx(t_B-x)(1-x/B).
+\]
+Its residual \(f-Q_B\) is nonnegative on \([0,B]\), has minimum
+zero, and maximum \(1-(1+o(1))c_Bt_B\); centering this range proves
+the reverse bound. Consequently
+\[
+\Delta_3(B)\sim\frac{27}{2}\frac{\log B}{B^2},\qquad
+R_3(\delta)\sim\frac{3\sqrt3}{2}
+\sqrt{\frac{\log(1/\delta)}{\delta}},\qquad P_B\to P_*.
+\]
+The cubic pays \(3\sqrt3/2\) times the quadratic range. The endpoint
+value is essential: a cubic with the same norm but value \(-1/2\)
+at zero can have second derivative \(-48\), so a norm-only extremum
+would give the wrong coefficient. Exact finite-\(B\) contact locations
+and sharp coefficients for \(r\ge4\) are not supplied.
 
 For growing known degree, AF-584 optimizes the tail point at
 \(t=1+\log(B^2/A_r)\) and supplies the missing converse. Put
@@ -137,6 +182,6 @@ Equivalently at a desired loss \(\delta=\delta(p)\downarrow0\), \(\delta\log p\t
 \[
 R_{r;p,q}(\delta)=\Theta\!\left(r^2\sqrt{\log(1/\delta)/\delta}\right),\qquad r\ge2,
 \]
-uniformly over the growing known degree and larger prime labels \(q\). For \(r=2\), the sharper ratio \(R_{2;p,q}(\delta)/\sqrt{\log(1/\delta)/\delta}\) still tends to one. Indeed the quotient comparison sandwiches the range between \(R_r(\delta+C/\log p)\) and \(R_r(\delta-C/\log p)\). The condition \(\delta\log p\to\infty\) is sufficient for this relative-loss law; the qualitative threshold above needs only \(\alpha_p\to0\). The affine leading loss still needs its separate comparison \(\alpha_p=o(e^{1-B})\). These conditions are sufficient, not necessary, and the profile error rate is not known sharp. The range law is in \(x\), so its physical coordinate cost includes \(1/(c\log p)\). These are the exact limiting prime-edit curves; no simultaneous finite-critical-index error is supplied.
+uniformly over the growing known degree and larger prime labels \(q\). For \(r=2,3\), the sharper ratio \(R_{r;p,q}(\delta)/\sqrt{\log(1/\delta)/\delta}\) tends respectively to \(1\) and \(3\sqrt3/2\). Indeed the quotient comparison sandwiches the range between \(R_r(\delta+C/\log p)\) and \(R_r(\delta-C/\log p)\). The condition \(\delta\log p\to\infty\) is sufficient for this relative-loss law; the qualitative threshold above needs only \(\alpha_p\to0\). The affine leading loss still needs its separate comparison \(\alpha_p=o(e^{1-B})\). These conditions are sufficient, not necessary, and the profile error rate is not known sharp. The range law is in \(x\), so its physical coordinate cost includes \(1/(c\log p)\). These are the exact limiting prime-edit curves; no simultaneous finite-critical-index error is supplied.
 
-No sharp higher-degree leading constant, relative-observation-error guarantee or finite-precision cost follows. The matched generalized-prime sources do not certify ordinary-prime provenance or imply RH. The retained distinction is exact: a known degree can make the query count finite while its square prices the coordinate range needed for a near-full noise margin.
+No sharp leading constant for degree four and above, relative-observation-error guarantee or finite-precision cost follows. The matched generalized-prime sources do not certify ordinary-prime provenance or imply RH. The retained distinction is exact: a known degree can make the query count finite while its square prices the coordinate range needed for a near-full noise margin.

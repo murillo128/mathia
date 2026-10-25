@@ -2,12 +2,15 @@
 
 **Evidence level:** supported conditional cross-line deduction from
 [PL-475](../../prime_lattice/findings/PL-475-two-box-lengths-force-paired-macroscopic-prime-variance.md),
-[MC-528](../../mobius_cancellation/findings/MC-528-multiplicity-aware-annihilation-forces-mobius-variance-on-every-block.md), and
-[MC-531](../../mobius_cancellation/findings/MC-531-bounded-jumps-recover-trimmed-mobius-variance.md).
+[MC-528](../../mobius_cancellation/findings/MC-528-multiplicity-aware-annihilation-forces-mobius-variance-on-every-block.md),
+[MC-531](../../mobius_cancellation/findings/MC-531-bounded-jumps-recover-trimmed-mobius-variance.md), and
+[MC-532](../../mobius_cancellation/findings/MC-532-paired-boxes-recover-trimmed-mobius-variance-at-macroscopic-lengths.md).
 The local mechanisms are retained in [Prime Lattice MI-067](../../prime_lattice/mind/intuition/MI-067-two-box-lengths-recover-smooth-pole-tests-at-macroscopic-scale.md)
 and [Möbius MI-103](../../mobius_cancellation/mind/intuition/MI-103-bounded-jumps-price-deleted-starts-in-pole-tests.md).
-This composition is Mind synthesis, not a separately reviewed finding,
-an arithmetic upper estimate, formal verification or a novelty claim.
+MC-532 proves the composition and its quantified RH equivalence; this
+note preserves the cross-line correspondence without claiming independent
+adversarial approval, an arithmetic upper estimate, formal verification
+or novelty.
 
 The transferable object is a fixed **smooth mean-zero test**, not the
 prime logarithmic derivative or its residue weights. Conditional on a
@@ -76,8 +79,12 @@ The scale set, masks and centers are fixed before the epsilon
 quantifier. The left side of (*) is
 \(O_\varepsilon(X^{1/2+\varepsilon/2}+X^{1/2+2\varepsilon})\),
 contradicting any \(\beta>1/2\) when \(2\varepsilon<\beta-1/2\).
-Thus those **unproved joint estimates** would imply RH. This costs a
-second length but removes the single-box logarithmic restriction from
+Thus those **unproved joint estimates** would imply RH. Conversely,
+[MC-520](../../mobius_cancellation/findings/MC-520-rh-mellin-variance-closes-conditional-farey-window-target.md)
+supplies both complete uncentered moment bounds under RH; empty masks
+and zero centers give the required fixed families on all large integer
+scales. The paired criterion is therefore equivalent to RH. This costs
+a second length but removes the single-box logarithmic restriction from
 the trimmed criterion. With empty masks, direct-sum Cauchy–Schwarz also
 gives \(V_1/H^2+V_2/K^2\gg X^{2\beta-1}(\log X)^{2m-2}\).
 

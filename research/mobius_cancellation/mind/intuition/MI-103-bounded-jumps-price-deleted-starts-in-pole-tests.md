@@ -1,6 +1,6 @@
 # MI-103 — Bounded jumps price deleted starts in a pole-isolating test
 
-**Evidence level:** supported conditional synthesis of [MC-528](../../findings/MC-528-multiplicity-aware-annihilation-forces-mobius-variance-on-every-block.md), [MC-530](../../findings/MC-530-nonquasianalytic-tests-reach-logarithmic-mobius-windows.md), and [MC-531](../../findings/MC-531-bounded-jumps-recover-trimmed-mobius-variance.md). The interpolation and analytic ingredients are classical. No retained-energy ceiling, exceptional-set estimate, external novelty or formal verification is supplied.
+**Evidence level:** supported conditional synthesis of [MC-528](../../findings/MC-528-multiplicity-aware-annihilation-forces-mobius-variance-on-every-block.md), [MC-530](../../findings/MC-530-nonquasianalytic-tests-reach-logarithmic-mobius-windows.md), [MC-531](../../findings/MC-531-bounded-jumps-recover-trimmed-mobius-variance.md), and [MC-532](../../findings/MC-532-paired-boxes-recover-trimmed-mobius-variance-at-macroscopic-lengths.md). The interpolation and analytic ingredients are classical. No retained-energy ceiling, exceptional-set estimate, external novelty or formal verification is supplied.
 
 For integers \(X,H\ge1\), let \(I_X=\{X,\ldots,2X-1\}\) and
 \(S_H(j)=M(j+H)-M(j)\). Delete any \(E\subset I_X\),
@@ -78,6 +78,45 @@ center through MC-520's complete moment estimate. At fixed
 \(B_X\ll_\varepsilon X^{\delta+\varepsilon}\), \(0\le\delta<1\),
 and the same energy ceiling instead exclude
 \(\Re\rho>\max(1-\theta/2,2\delta-\theta)\).
+
+The same deletion lemma also works at macroscopic lengths if two
+channels reconstruct the smooth target. For integers \(1\le H\le X/20\),
+put \(L_1=H\), \(L_2=K=\lfloor\sqrt2H\rfloor\), and allow separate
+masks \(E_i\), counts \(B_i=|E_i|<X/2\), and constants \(c_i\). Define
+\(V_i=\sum_{j\in I_X\setminus E_i}|S_{L_i}(j)-c_i|^2\).
+MC-532's compact-distribution two-box inverse supplies uniformly
+bounded mean-zero smooth tests, supported in one fixed compact subset
+of \((1,2)\). Integer rounding gives target error \(O(X^{-1})\),
+which costs only \(O(1)\) against the bounded Möbius coefficients.
+Applying (*) separately to the two complete pairings gives
+\[
+\boxed{
+\frac{\sqrt{XV_1}+B_1^2}{H}
++\frac{\sqrt{XV_2}+B_2^2}{K}
+\gg X^\beta(\log X)^{m-1}.}
+\]
+Constants depend on the selected zero and full zero set, uniformly in
+all the stated observation choices. The masks need not coincide and
+the centers may be the separate retained means; neither test is cut
+by its mask. This is joint recovery, not a claim that either single
+variance must exceed its ceiling.
+
+At \(H=\lfloor X/20\rfloor\), RH is equivalent to the existence of
+one unbounded integer scale set and mask/center families, fixed before
+epsilon, for which both estimates
+\(B_i\ll_\varepsilon X^{3/4+\varepsilon}\) and
+\(V_i\ll_\varepsilon X^{1+\varepsilon}L_i\) hold for every
+\(\varepsilon>0\), uniformly on that scale set.
+These estimates bound the displayed left side by
+\(O_\varepsilon(X^{1/2+\varepsilon/2}+X^{1/2+2\varepsilon})\),
+excluding every \(\beta>1/2\) by choosing sufficiently small epsilon.
+Conversely, [MC-520](../../findings/MC-520-rh-mellin-variance-closes-conditional-farey-window-target.md)
+supplies both complete uncentered moments under RH; use empty masks
+and zero centers. This removes the single-channel length restriction
+by changing the observations, and supplies no independent arithmetic
+upper bound. The source-independent inverse and its different prime
+and reciprocal-pole inputs are compared in
+[global MI-040](../../../mind/intuition/MI-040-paired-box-inversion-transports-trimmed-mobius-pole-tests.md).
 
 The \(B^2\) cost is sharp for absolute-mass recovery from bounded jumps:
 two separated opposite triangular sliding-sum spikes can have retained
