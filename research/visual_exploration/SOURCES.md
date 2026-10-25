@@ -2,6 +2,11 @@
 
 This file records durable external literature dependencies used to support or delimit canonical findings in `research/visual_exploration/`. It is an anchor list, not search history.
 
+## Quantitative character sampling at zeta zeros
+
+- Kevin Ford and Alexandru Zaharescu, **On the distribution of imaginary parts of zeros of the Riemann zeta function**, *Journal für die reine und angewandte Mathematik* 579 (2005), 145–158, [arXiv:math/0405459v2](https://arxiv.org/html/math/0405459v2). Role: §3, Lemmas 1–2 supply the uniform nearest-prime-power Landau formula and Selberg zero-density estimate used in `VIS-462`; the paper's lower-order arithmetic bias is classical prior art, retained explicitly in the shell calibration.
+- Kevin Ford, Xianchang Meng and Alexandru Zaharescu, **Simultaneous distribution of the fractional parts of Riemann zeta zeros**, *Bulletin of the London Mathematical Society* 49 (2017), 1–9, DOI `10.1112/blms.12001`, [author manuscript](https://www.ford126.web.illinois.edu/wwwpapers/FMZ.pdf). Role: fixed-dimensional joint distribution and weighted/unweighted zero-sum comparison delimit the growing-shell claim in `VIS-462`; no fixed-dimensional theorem is used with an uncontrolled growing dimension.
+
 ## Invariant-subspace perturbation geometry
 
 - Chandler Davis and W. M. Kahan, **The Rotation of Eigenvectors by a Perturbation. III**, *SIAM Journal on Numerical Analysis* 7:1 (1970), 1–46. DOI: `10.1137/0707001`. Role: classical reference for principal angles and perturbation of invariant subspaces; prior-art boundary for the projector-angle language used in `VIS-005`. The commutator lower bound in that finding is elementary and is not claimed as a new general perturbation theorem.

@@ -1,7 +1,7 @@
 ---
 id: CLUE-visual-zero-ordinate-growing-shell-character-tariff
 type: research-clue
-status: proposed
+status: resolved
 origin: master-researcher
 target_line: visual_exploration
 based_on:
@@ -45,3 +45,30 @@ Replacing Gram points by actual zeros cannot be assumed to create a fixed-shell 
 ## Evidence boundary
 
 WI-461 establishes qualitative fixed-frequency all-zero sampling and its fixed Euler-response application. VIS-423/425 establish the different Gram-point tariff and persistence reduction. No quantitative actual-zero bound for the changing bank, admissible growth exponent, Wang coefficient estimate or non-Haar anomaly is established here. The preliminary fixed-shell transfer is an expected classical specialization; novelty must be assessed for any quantitative remainder actually obtained. Neither positive all-zero peak density nor a failed uniform certificate supplies individual off-line defect coupling, independence of successive peaks, an RH consequence or permission to select a favorable zero panel after seeing values.
+
+## Research disposition
+
+Outcome: supported
+
+Resolved by:
+- [[research/visual_exploration/findings/VIS-462-zero-ordinate-shell-moments-pay-resonance-and-small-frequency-costs.md]]
+
+The current WI-461 has strengthened its original qualitative input with
+a uniform Landau/zero-density estimate. VIS-462 reconstructs that input,
+retains the prime-power resonance term, and transfers it to bounded-bandwidth
+Wang mixed moments with sufficient cost
+`W_T^(2R) [1/log T + log T/T + (2Y_T)^(2R)/T]`.
+The rational bank `A,B <= (log T)^c` has uniform error `O_c(1/log T)`.
+The actual coefficient bound `W_T <= 2Y_T` covers every nonzero shell
+with `log Y_T = o(log log T)` at all fixed moment orders. An aligned
+`H=1` coefficient family also gives a larger explicit admissible regime,
+without asserting that it is the active Wang source scaling.
+
+All-order fixed-moment control passes to fixed-radius continuous
+persistence tests; threshold indicators retain their Haar boundary-mass
+condition. This resolves the quantitative sampling prerequisite, not
+the broader question of a non-Haar source selector or the calibration
+of an unstated physical growing-shell regime. The
+[paired view](../visualizations/zero-ordinate-character-boundaries.md)
+separates genuine `1/T` small-frequency noncancellation from classical
+`1/log T` prime-power bias. Neither is an RH conclusion.
