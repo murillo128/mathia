@@ -114,8 +114,48 @@ GRH: empty masks and \(c_i=L_i/4\) give
 \(W_i\ll X^2\log^4(3X)\). This suffices because \(L_i\asymp X\);
 it does not give the same ceiling at arbitrary short lengths.
 The \(3/4\) deletion exponent is sufficient, not proved optimal for
-primes or signed tests; qualitative \(B_i=o(X)\) is insufficient for
-this recovery bound.
+primes; qualitative \(B_i=o(X)\) is insufficient for this recovery bound.
+
+[PL-477](../../findings/PL-477-common-mask-paired-windows-retain-quadratic-deletion-ambiguity.md)
+closes the generic signed-test escape even with shared-source and
+common-mask constraints. Fix any nonzero mean-zero
+\(\varphi\in C_c^\infty((4/3,5/3);\mathbb C)\) and
+\(1/2<\gamma<1\). Choose \(u_0\) with \(\varphi'(u_0)\ne0\).
+On sufficiently separated scales \(X=10^k\), let
+\(m=\lfloor X^\gamma\rfloor\), take \(N\equiv1\pmod5\) within
+five of \(u_0X\), and put a balanced packet on that residue:
+\[
+d_{N+5\ell}=\begin{cases}1/4&0\le\ell<m,\\-1/4&m\le\ell<2m.\end{cases}
+\]
+All packets together define one fixed sequence \(d\). The two fixed
+positive completions
+\(b_n^\pm=(5/4)\mathbf1_{n\equiv1\ (5),\ n\ge6}\pm d_n\)
+have coefficients at most \(3/2\), the logarithmic envelope
+\(b_n^\pm\le\log n\), and sums \(x/4+O(x^\gamma)\).
+The current packet's primitive vanishes outside
+\(Q=\{N,\ldots,N+10m-1\}\); no other packet contributes on
+\([X,3X]\). At \(H=\lfloor X/20\rfloor\), \(K=\lfloor\sqrt2H\rfloor\),
+the common mask
+\[
+E_X=Q\cup(Q-H)\cup(Q-K),\qquad B_X=30m,
+\]
+hides both endpoint differences. Every retained window value agrees
+for the two completions and the periodic background, and each energy
+about \(L/4\) is at most \(25X/16\). Nevertheless
+\[
+\sum_n(b_n^+-b_n^-)\varphi(n/X)
+=-\tfrac52\varphi'(u_0)m^2/X+O_\varphi(m^3/X^2).
+\]
+The packet has zero mass but first moment \(-5m^2/4\), so the signed
+test detects it. Identical observed vectors force any estimator of
+this target to incur error \(\gg_\varphi B_X^2/X\) on one completion.
+For \(\gamma>3/4\) the hidden response exceeds square-root size while
+the retained energies are \(O(X)\). Thus positivity, correct leading
+residue density, bounded jumps, common masks and two consistent windows
+cannot alone save a power of the quadratic deletion cost, even for a
+target known in advance. This is an exact non-prime control: it proves
+neither necessity of the prime logarithm nor optimality for von Mangoldt
+coefficients, and supplies no arithmetic pole formula for these sources.
 
 PL-474's single-box certificate stops at
 \(H=X/[\log X(\log\log X)^r]\), \(r>1\), within that family of

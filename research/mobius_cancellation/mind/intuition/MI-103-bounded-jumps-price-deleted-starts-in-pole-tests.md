@@ -127,6 +127,58 @@ cancellation. The improvement over an amplitude-only \(HB\) bill matters
 when \(B=o(H)\). Arbitrary measurable deletions cutting unit cells and
 qualitative density-one statements are outside this discrete budget.
 
+[MC-533](../../findings/MC-533-geometric-start-coverage-recovers-sparsely-sampled-mobius-variance.md)
+replaces the count-only bill by the geometry of any nonempty retained
+set, with no majority requirement. For each channel map every
+\(j\in I_X\) to its nearest retained point \(\pi_i(j)\), breaking ties
+toward the smaller point, and define
+\[
+w_{i,r}=|\pi_i^{-1}(r)|,\qquad
+D_i=\sum_{j\in I_X}|j-\pi_i(j)|,\qquad
+\widetilde V_i(c_i)=\sum_{r\in R_i}w_{i,r}|S_{L_i}(r)-c_i|^2.
+\]
+Telescoping the jumps and weighted Cauchy–Schwarz give
+\[
+\sum_{j\in I_X}|S_{L_i}(j)-c_i|
+\le\sqrt{X\widetilde V_i(c_i)}+2D_i,
+\qquad
+\sum_{i=1}^2\frac{\sqrt{X\widetilde V_i(c_i)}+D_i}{L_i}
+\gg X^\beta(\log X)^{m-1}.
+\]
+The same complete tests supply the second inequality; neither the
+centers nor the mean-zero tests are fitted separately at each start.
+An unweighted sample energy is insufficient on an irregular set:
+\(\widetilde V_i(c)\le w_{i,\max}\sum_{r\in R_i}|S_{L_i}(r)-c|^2\)
+is a valid conversion only with its actual coverage weight paid.
+
+Fix \(g_X=\lfloor\sqrt X\rfloor\) and
+\(R_X=\{X+kg_X:0\le k\le\lfloor(X-1)/g_X\rfloor\}\), of size
+\(q_X\asymp\sqrt X\). Then \(D_i\le Xg_X\),
+\(w_{i,\max}\le2g_X\), and \(g_Xq_X\le2X\). At
+\(H=\lfloor X/20\rfloor\), put
+\(Q_i(X)=\min_c\sum_{r\in R_X}|S_{L_i}(r)-c|^2\).
+The existence of one unbounded integer scale set, fixed before epsilon,
+on which both \(Q_i(X)/q_X\ll_\varepsilon X^{1+\varepsilon}\)
+hold for every \(\varepsilon>0\) is equivalent to RH. Indeed the
+recovery cost is \(O_\varepsilon(X^{1/2+\varepsilon/2}+X^{1/2})\);
+the converse uses RH's pointwise Mertens bound with center zero,
+not an inference from a complete mean square to its sparse sample.
+Thus deleting \(X-O(\sqrt X)\) well-distributed starts is compatible
+with this criterion even though it exceeds the count-only allowance.
+
+For \(q\) samples in \(N\) consecutive starts, the distance cost obeys
+\[
+D\ge\frac{N^2/q-q}{4}.
+\]
+The sequence \(u_j=A\operatorname{dist}(j,R)\) has jumps at most
+\(A\), zero observed values and absolute mass exactly \(AD\).
+At macroscopic lengths this yields a worst-case cost of order at least
+\(N/q\) when \(q\le\sqrt N\). The square-root sample exponent is
+therefore sharp for this generic absolute-mass recovery method, not
+proved necessary for Möbius or for compatible signed window tests.
+Nearest assignment minimizes \(D\), not necessarily the whole bound
+including the weighted energy. No sample-energy ceiling is established.
+
 The all-dyadic premise in [MI-102](MI-102-centered-dyadic-variance-recovers-full-principal-parts.md)
 belongs to its periodic-seam proof. The full-zero-set certificate here
 allows an arbitrary unbounded scale set, while retaining a quantified

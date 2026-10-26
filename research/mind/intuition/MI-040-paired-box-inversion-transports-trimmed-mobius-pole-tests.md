@@ -139,3 +139,47 @@ The common operator and recovery lemma identify an observation budget;
 the different arithmetic pole formulas and converse estimates remain
 separate inputs. Constant coefficients also satisfy the jump bound but
 give constant window sums, so recovery alone cannot force a pole signal.
+
+The observation geometry further separates count from recovery cost.
+[MC-533](../../mobius_cancellation/findings/MC-533-geometric-start-coverage-recovers-sparsely-sampled-mobius-variance.md)
+gives a source-independent replacement: for any nonempty retained set
+\(R_i\), assign each start to its nearest sample \(\pi_i(j)\), let
+\(w_{i,r}=|\pi_i^{-1}(r)|\),
+\(D_i=\sum_j|j-\pi_i(j)|\), and
+\(\widetilde V_i=\sum_{r\in R_i}w_{i,r}|S_{L_i}(r)-c_i|^2\).
+For jump bound \(J_X\), telescoping gives
+\[
+\sum_j|S_{L_i}(j)-c_i|
+\le\sqrt{X\widetilde V_i}+J_XD_i,
+\qquad
+|P_i|\ll_\phi\frac{\sqrt{X\widetilde V_i}+J_XD_i}{L_i}.
+\]
+Consequently MC-533's geometric recovery composes with either complete
+pole test above, using \(J_X=2\) or \(\log(3X)\) respectively.
+This is a conditional cross-line deduction from the finite inequality
+and the existing complete pairings; the distinct pole signals remain
+unchanged. The weighted energy and \(D_i\), not just retained count,
+must be supplied. For Möbius, MC-533 already proves the RH equivalence
+of the centered average sample-energy ceiling on a fixed grid of
+\(q_X\asymp\sqrt X\) starts at the macroscopic pair. Its proof pays
+\(D_i=O(X^{3/2})\) and \(w_{i,\max}=O(\sqrt X)\).
+
+[PL-477](../../prime_lattice/findings/PL-477-common-mask-paired-windows-retain-quadratic-deletion-ambiguity.md)
+explains why this sparse-grid improvement does not remove the quadratic
+worst-case cost for clustered deletions. Its common mask consists of
+three separated intervals of length \(10m\), so nearest retained
+coverage has \(D_i\asymp m^2\asymp B_X^2\) in both channels.
+The balanced coefficient packet produces a primitive hidden in these
+intervals and their endpoint translates; its nonzero first moment
+changes the prescribed signed smooth target by
+\(\asymp B_X^2/X\) while leaving both retained vectors identical.
+Unlike a generic distance-envelope sequence, these are two compatible
+window channels of each of two fixed positive sources. Thus neither
+using a common mask nor replacing absolute mass by a signed target
+alone yields a uniform power saving in that source class. Geometric
+coverage can improve the budget; an improvement at the same bad geometry
+requires a source restriction beyond these generic inputs. Arithmetic
+could supply such a restriction.
+The control is supported on a full residue class, not prime powers,
+and does not establish a lower sampling bound for either arithmetic
+source or identify their zero sets.
