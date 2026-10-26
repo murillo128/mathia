@@ -233,6 +233,8 @@ Marc Munsch, *Character sums over squarefree and squarefull numbers*, Archiv der
 
 Role: direct prior-art anchor for `MC-064`. Lemma 2.3 defines `S_free_chi(x)=sum_{n<=x} mu(n)^2 chi(n)` and proves the two elementary bounds `S_free_chi(x) << x^(1/2) q^(1/4) (log q)^(1/2)` and `S_free_chi(x) << x^(1/2) (log x) q^(3/16+epsilon)` for nonprincipal characters; Remark 2.4 notes that when `q` is prime the `q^epsilon` loss in the Burgess branch may be replaced by `(log q)^(1/2)`. The proof is exactly the square-divisor decomposition of `mu^2` followed by Pólya–Vinogradov or Burgess. This sharpens the cruder fixed-comparator certificate used in `MC-055` and supplies the classical analytic input for the defect/conductor transfer budget in `MC-064`.
 
+MC-544 uses only the elementary fixed-modulus-four periodic-sum version of this square-divisor mechanism, proved directly, and repairs the prime-two value to preserve exact square-free magnitude. No moving-conductor estimate is imported into its deterministic replica control.
+
 ## MC-S39 — Friedlander and Iwaniec, the sieve parity phenomenon
 
 John B. Friedlander and Henryk Iwaniec, *What is ... the parity phenomenon?*, Notices of the American Mathematical Society 56 (2009), no. 7, 817–818.
@@ -606,3 +608,9 @@ Role: classical logarithmic maximal partial-sum bound and its dyadic proof mecha
 Ky Fan, Olga Taussky and John Todd, *Discrete analogs of inequalities of Wirtinger*, Monatshefte für Mathematik 59 (1955), no. 2, 73–90, Theorem 9, p. 79. DOI: https://doi.org/10.1007/BF01302991. Institutional metadata: https://authors.library.caltech.edu/records/6rmb3-97627. Digitized original: https://bomongiaitich.wordpress.com/wp-content/uploads/2013/09/ky-fan_olga-taussky_john-todd.pdf.
 
 Role: classical sharp lower bound for the squared first-difference norm of a finite sequence with zero endpoints. MC-542 applies the principle to residue chains of a translated prime primitive, while proving a sufficient weaker constant by telescoping. This removes the separated-pulse requirement and prices cancellation of the combined smooth target by the prime-deleted background. Neither the discrete inequality nor a new random-multiplicative concentration theorem is claimed.
+
+## MC-S98 — Kedlaya, fixed-modulus prime populations in progressions
+
+Kiran S. Kedlaya, *Notes on analytic number theory*, Chapter 4, §4.4, Theorem 4.12, *Prime number theorem in arithmetic progressions*. Author's text: https://kskedlaya.org/ant/chap-primes-in-ap.html.
+
+Role: classical unconditional asymptotic `pi(x;q,a) ~ x/(phi(q) log x)` for fixed coprime `a,q`. MC-544 uses only `q=4` on two fixed proportional intervals to select equal populations of positive and negative character primes. The theorem supplies population, not Möbius cancellation, and no short-interval or moving-modulus uniformity is asserted.
