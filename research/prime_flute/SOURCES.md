@@ -523,6 +523,17 @@ Relevant finding: PF-357; relevant local clue: CLUE-positive-width-transition-sc
 
 **Scope warning.** The comparison is conditioned on a quantitative diagonal-relative bound for the spatial matrix. It neither proves that bound for the actual infinite flute nor identifies its pant/seam form with the Cauchy corridor model at the shorted residual scale. The finite-network theorem is not an infinite-operator or RH conclusion.
 
+## S32 — nearest-neighbor Cholesky factorization and residual multiplicity
+
+**C. F. Van Loan**, *Introduction to Scientific Computing: A Matrix-Vector Approach Using MATLAB*, second edition, Prentice Hall.
+
+- https://www.cs.cornell.edu/courses/cs4210/2014fa/CVLBook/chap7.pdf
+- Section 7.3.2, p. 258: a positive tridiagonal matrix has a lower bidiagonal Cholesky factor. PF-358 verifies the recurrence directly and uses the two-module support of each column before transition minimization.
+
+Relevant finding: PF-358; relevant local clue: CLUE-positive-width-transition-schur-complement.md. Together with S31's classical scalar residual product and positive shorting, the factorization yields a bound for at least half the constant/high correlations that needs no spatial condition-number estimate. The band criterion and paired-network sharpness control are derived in the finding.
+
+**Scope warning.** The theorem concerns the finite Cauchy corridor model with retained constants. It does not compare that model to the actual pant/seam form, establish compatible infinite-section compressions, or infer an operator ideal or RH consequence.
+
 ## Provenance policy for future additions
 
 For each future finding, record separately:
