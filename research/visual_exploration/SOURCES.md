@@ -224,3 +224,7 @@ This file records durable external literature dependencies used to support or de
 - SciPy developers, **scipy.fft.dst**, SciPy reference manual. Stable locator: `https://docs.scipy.org/doc/scipy/reference/generated/scipy.fft.dst.html`. Role: type-I sine-transform definition and orthonormal normalization used to check VIS-466's complete finite spectra; documentation of the numerical convention, not independent mathematical evidence.
 
 - Gilbert Strang, **The Discrete Cosine Transform**, *SIAM Review* 41:1 (1999), 135–147. DOI: `10.1137/S0036144598336745`. Role: classical meshpoint/midpoint and boundary-condition dependence of discrete trigonometric transforms, a prior-art boundary for VIS-467. Its Farey high-band conditional constant and residue-class measures are independently derived; neither general transform theory nor conditioning instability is claimed as new.
+
+## Circular shifts and inherited Farey modes
+
+- Brian McFee, **Digital Signals Theory**, §6.2, *The DFT shifting theorem*, https://brianmcfee.net/dstbook-site/content/ch06-dft-properties/Shifting.html. Role: classical circular-shift phase law underlying VIS-468. Its exact half-shift representation of the four-defect Farey reassembly, unchanged source sector, and conditional-band lower bound are independently derived specializations; no general Fourier novelty is claimed.
