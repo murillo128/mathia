@@ -215,3 +215,4 @@ This stable projection inventories every current canonical Analytic Frontier fin
 - [[research/analytic_frontier/findings/ANF-203-sparse-profile-peaks-force-complex-cardinality-escape|ANF-203]]
 - [[research/analytic_frontier/findings/ANF-204-complex-finite-attainment-requires-an-inverse-square-profile-tail|ANF-204]]
 - [[research/analytic_frontier/findings/ANF-205-an-upward-central-cusp-prevents-finite-notch-attainment|ANF-205]]
+- [[research/analytic_frontier/findings/ANF-206-finite-positive-translations-make-the-distant-copy-cusp-threshold-sharp|ANF-206]]

@@ -41,3 +41,16 @@ Writing `M(alpha)=1-alpha+integral_alpha^1 g(x) dx`, the odd fraction tends to `
 The full reconstructed `y` has no odd modes, so `TV(pi^B(y),pi^B(v))` is at least the raw odd fraction whenever its conditional law exists. This lower bound does not identify the even-band laws of `y` and `a`. After projection, VIS-450 still requires the separate sufficient gate `||Pi_B Q_- P_sigma D||² / ||Pi_B a||² -> 0`; the corrected global ratio `(E-L)/(T-L)` cannot replace it. The high-band limits hold with alpha fixed before dimension grows, not uniformly for shrinking bands. Projection remains an analysis vector, and no genuine Farey anomaly, matched-null expectation or RH estimate follows.
 
 Classical finite sine sums, reflection and conditioning are the background; VIS-467's additional result is the source-realized quantitative obstruction. Its new frontier episode concerns conditional high-band reliability, separately from the finite parity correction and erasure-identification problem. Atlas masses and states remain unchanged.
+
+## Inherited source sector after stitch projection
+
+[[research/visual_exploration/findings/VIS-468-four-defect-farey-reassembly-preserves-source-sector|VIS-468]], equations (1)–(5), resolves the finite residual representation for the specific FD-319 four-defect `BCA` order. With `N=2h`, `b=1/(2p)`, periodically extended genuine discrepancy D and half-shift `CD(k)=D((k+h) mod N)`, the exact identity is `y=CD+w`. The step w is b on `1<=k<h`, minus b on `h<k<N`, and zero at the endpoints and midpoint. The genuine values at ranks 1 and h+1 make the identity valid even at the two fixed boundary ranks.
+
+On the same absolute sine indices, odd coefficients vanish. For `m=0 mod 4`, `yhat_m=Dhat_m` but `ahat_m=0`. For `m=2 mod 4`, with `theta_m=pi m/N`,
+
+- `yhat_m=-Dhat_m+2b sqrt(2/N) cot(theta_m/2)`;
+- `ahat_m=2b sqrt(2/N) cos(theta_m) cot(theta_m/2)`.
+
+Thus removing odd stitches leaves a genuine-source sector that projected transport entirely omits. For a band B with both laws defined, VIS-468 (6) gives `TV(pi^B(y),pi^B(a)) >= sum_(m in B,4|m)|Dhat_m|² / ||Pi_B y||²`. That source fraction must vanish for conditional convergence; it is not generally the full distance. Its equation (7) also evaluates VIS-450's sufficient projected-error ratio exactly: the residual coefficients are Dhat on multiples of four, and `-Dhat_m+2b sqrt(2/N) sin(theta_m)` on `m=2 mod 4`. On a fixed high band the denominator remains asymptotic to `b² integral_alpha^1 g(x) dx`, so source cancellation at scale `p^(-2)` is still unproved. Vanishing residual ratio is sufficient, not necessary for convergence of squared-energy laws.
+
+The circular-shift phase rule is classical; the source's cited [McFee, Digital Signals Theory, Theorem 6.1](https://brianmcfee.net/dstbook-site/content/ch06-dft-properties/Shifting.html) states it explicitly. The finite endpoint dictionary specializes that rule and does not establish an asymptotic arithmetic estimate. A spectral match on multiples of four copies source information; the finite panel is exploratory and does not show a positive limiting mass. This refines the existing conditional-band question without adding a frontier episode or changing Atlas states. It proves no theorem for arbitrary excursion orders and does not make either analysis vector a source-natural null ensemble.

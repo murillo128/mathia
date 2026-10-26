@@ -74,6 +74,14 @@ PL-478 refines the existing missing-start recovery episode with the prime-source
 
 FD-344's asymptotic erased-record energy gap is an explicit specialization of FD-333's existing construction. The erasure mechanism now records its PNT inputs and half-gap estimator bound, while preserving the distinction from FD-345's finite energy-matched spectral example. That specialization and all membership/reference-formatting work add no episode.
 
+## Source restrictions on the two Farey obstructions
+
+FD-345 now restricts its single mirrored-pair mechanism: exact energy equality requires endpoint balance, and full-spectrum TV is less than `sqrt(2/(pE))`. Persistent separation therefore requires common energy of order at most `1/p`. No such family is established, and general four-erasure collisions are not closed. The finite energy-conditioned-erasure episode retains its classification with this narrower extension boundary.
+
+[[research/visual_exploration/findings/VIS-468-four-defect-farey-reassembly-preserves-source-sector|VIS-468]] makes the residual in the conditional-band episode explicit for the `BCA` control. The exact half-shift-plus-step identity copies genuine coefficients at multiples of four, where projected transport is zero. Their fraction of reassembled band energy is a necessary lower bound on conditional TV. Its signed residual gives a sufficient projected-energy test, but the required source estimate at scale `p^(-2)` remains unproved. Classical shift geometry and finite diagnostic values do not establish an asymptotic gap. This refines the same question rather than adding a source-count episode.
+
+The two existing episodes are updated; their classifications, the retained count, all rates and every Atlas state/mass remain unchanged. Membership repair contributes no event.
+
 ## Retained prospective window
 
 Classifiable episodes: **20**. Insufficient-evidence episodes: **0**. Retrospective episodes: **0**.

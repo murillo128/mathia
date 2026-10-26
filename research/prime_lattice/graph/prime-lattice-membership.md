@@ -489,3 +489,4 @@ This stable projection inventories every current canonical Prime Lattice finding
 - [[research/prime_lattice/findings/PL-479-prime-supported-relative-perturbations-retain-interval-query-ambiguity|PL-479]]
 - [[research/prime_lattice/findings/PL-480-prime-supported-interval-recovery-has-sharp-inverse-query-rate|PL-480]]
 - [[research/prime_lattice/findings/PL-481-stratified-random-starts-retain-the-prime-variance-criterion|PL-481]]
+- [[research/prime_lattice/findings/PL-482-small-empirical-energy-permits-quarter-power-prime-observations|PL-482]]

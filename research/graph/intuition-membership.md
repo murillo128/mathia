@@ -322,6 +322,7 @@ This is a path-derived structural projection for graph topology. Each link means
 - [[research/mobius_cancellation/mind/intuition/MI-101-smooth-deconvolution-separates-zero-exclusion-from-endpoint-recovery]]
 - [[research/mobius_cancellation/mind/intuition/MI-102-centered-dyadic-variance-recovers-full-principal-parts]]
 - [[research/mobius_cancellation/mind/intuition/MI-103-bounded-jumps-price-deleted-starts-in-pole-tests]]
+- [[research/mobius_cancellation/mind/intuition/MI-104-small-random-sample-energy-controls-dispersion-but-subquarter-multiplicative-bridges-survive]]
 
 ### Nyman–Beurling
 - [[research/nyman_beurling/mind/intuition/MI-001-target-aware-gram-geometry-must-carry-absolute-scale]]
@@ -569,6 +570,7 @@ This is a path-derived structural projection for graph topology. Each link means
 - [[research/prime_lattice/mind/intuition/MI-065-seam-filtering-recovers-sparse-arithmetic-poles-from-dyadic-variance]]
 - [[research/prime_lattice/mind/intuition/MI-066-relative-frames-transfer-frontiers-but-admit-common-off-critical-poles]]
 - [[research/prime_lattice/mind/intuition/MI-067-two-box-lengths-recover-smooth-pole-tests-at-macroscopic-scale]]
+- [[research/prime_lattice/mind/intuition/MI-068-empirical-energy-controls-prime-pole-tests-with-quarter-power-random-starts]]
 
 ### Robin Extremal
 - [[research/robin_extremal/mind/intuition/MI-001-robin-failure-requires-self-tangent-half-mass-event-gaps]]

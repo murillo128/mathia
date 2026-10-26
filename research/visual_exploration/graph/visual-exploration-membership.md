@@ -472,3 +472,4 @@ This stable projection inventories every current canonical Visual Exploration fi
 - [[research/visual_exploration/findings/VIS-465-capped-variation-tariff-for-farey-transport-spectrum|VIS-465]]
 - [[research/visual_exploration/findings/VIS-466-reflected-farey-transport-parity-is-a-stitch-boundary-term|VIS-466]]
 - [[research/visual_exploration/findings/VIS-467-vanishing-stitch-parity-dominates-farey-high-bands|VIS-467]]
+- [[research/visual_exploration/findings/VIS-468-four-defect-farey-reassembly-preserves-source-sector|VIS-468]]

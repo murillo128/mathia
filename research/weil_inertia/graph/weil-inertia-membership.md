@@ -471,3 +471,4 @@ This stable projection inventories every current canonical Weil Inertia finding.
 - [[research/weil_inertia/findings/WI-465-analytic-euler-observables-have-a-full-first-zero-sampling-correction|WI-465]]
 - [[research/weil_inertia/findings/WI-466-full-euler-sampling-bias-changes-sign-on-increasing-tests|WI-466]]
 - [[research/weil_inertia/findings/WI-467-far-right-euler-correction-is-an-absolutely-continuous-signed-measure|WI-467]]
+- [[research/weil_inertia/findings/WI-468-first-prime-square-correction-has-a-singular-arcsine-profile|WI-468]]
