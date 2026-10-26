@@ -77,6 +77,8 @@ Role: classical square-free counting anchor for `MC-004`. The exercise records `
 
 MC-534 uses only this elementary density estimate on one fixed proportional interval and includes its proof. No density theorem for the individual gaps between sampled endpoints is needed.
 
+MC-540 uses the same elementary error on geometric bridge intervals of length `c^kappa/100`, with fixed `kappa>3/4`; their square-free populations are asymptotic to length divided by `zeta(2)`. Its proof includes the elementary count and requires no finer short-interval theorem.
+
 ## MC-S13 — Matomäki, Radziwiłł and Tao, averaged Chowla
 
 Kaisa Matomäki, Maksym Radziwiłł and Terence Tao, *An averaged form of Chowla's conjecture*, Algebra & Number Theory 9 (2015), no. 9, 2167–2196. DOI: https://doi.org/10.2140/ant.2015.9.2167. arXiv: https://arxiv.org/abs/1503.05121.
@@ -527,6 +529,8 @@ Role: classical provenance for MC-533's sample-gap recovery cost. Lipschitz enve
 
 MC-534 applies the same indistinguishable-envelope principle to a common coefficient primitive. Its square-free sign bridges match all observed interval endpoints and retain a fixed signed smooth pairing; this is a derived observation-boundary control, not a new integration principle. MC-538 uses hidden narrow prime bridges as a sampling obstruction for one fixed multiplicative source, without importing a new general integration bound. MC-539 derives a discrete dispersion-to-pair-tail inequality from the quadratic exceptional-set area and uses tents to delimit independent detection on polynomial scale sequences; no new Lipschitz integration principle is claimed.
 
+MC-540 assembles balanced square-free bridges into one deterministic source with large dispersion on every integer block and summable endpoint-hit probabilities on faster-than-fourth-power scales. The hidden-area principle remains classical; its added boundary is consistency of the populations across overlapping scales and both window lengths.
+
 ## MC-S86 — Verjovsky, local Fourier moment criteria for RH
 
 Alberto Verjovsky, *How Random Is the Möbius Function? Smoothing, Probability, and the Riemann Hypothesis*, arXiv:2607.25002v2 (2026), Sections 4 and 9–11. https://arxiv.org/html/2607.25002v2. Preprint; used as a prior-art comparison, not as an arithmetic input.
@@ -568,3 +572,11 @@ Role: adjacent primary prior art for MC-537's use of small observed variance in 
 Rick Durrett, *Probability: Theory and Examples*, fifth edition, Cambridge University Press (2019), Section 2.3, especially Theorem 2.3.7 (second Borel–Cantelli lemma). DOI: https://doi.org/10.1017/9781108591034. Author manuscript: https://services.math.duke.edu/~rtd/PTE/PTE5_011119.pdf.
 
 Role: classical divergent-probability-sum criterion for independent events in MC-539. The finding includes the product proof and derives its own bounded-jump pair-tail lower bound before applying the lemma. Independence concerns draws at distinct scales, not Möbius coefficients or overlapping arithmetic windows. Neither the probability theorem nor the sampling argument supplies the RH-scale energy ceiling.
+
+MC-540 uses the first Borel–Cantelli lemma, Theorem 2.3.1: summable endpoint-hit probabilities give eventual invisibility without independence. The author-hosted manuscript is also available at https://sites.math.duke.edu/~rtd/PTE/PTE5_011119.pdf.
+
+## MC-S93 — Kunsch–Rudolf, disjoint-bump randomized integration controls
+
+Robert J. Kunsch and Daniel Rudolf, *Optimal confidence for Monte Carlo integration of smooth functions*, arXiv:1809.09890v1 (2018), Section 2.1, Lemmas 2.1–2.2. https://arxiv.org/html/1809.09890v1.
+
+Role: primary prior art for disjoint-support fooling functions and randomized integration lower bounds. MC-540 uses a related hidden-support mechanism, but constructs its common square-free coefficient source and all-scale dispersion directly. Neither the paper's minimax rates nor its distributions over inputs are imported as a theorem about one fixed arithmetic sequence.
