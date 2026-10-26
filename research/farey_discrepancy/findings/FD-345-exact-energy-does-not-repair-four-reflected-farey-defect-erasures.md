@@ -16,6 +16,15 @@ spectral measure. Everything below concerns the **full reconstructed
 discrepancy**, with no transport approximation, rescaling, or limiting
 passage. This is a finite control obstruction, not an RH estimate.
 
+For a single mirrored excursion-pair exchange, endpoint balance is also
+**necessary** for exact energy equality: a noncentral prime-Farey
+excursion cannot have zero intrinsic reversal skew. Moreover, the two
+normalized spectra have total-variation distance at most
+`sqrt(2/(p E))`. Thus this particular mechanism cannot produce a
+nonvanishing asymptotic spectral separation when `p E -> infinity`,
+including when the common energy has a positive limit. These restrictions
+do not classify general four-erasure collisions.
+
 ## 1. Object and energy-preserving reversal
 
 Fix an odd prime `p`, put `n=p-2` and
@@ -61,10 +70,65 @@ makes the interior discrepancy a signed reversal and preserves its squared
 norm. The same holds at the mirrored slot; all other coordinates are
 unchanged. Hence the two **full** energies agree exactly.
 
-For a noncentral left slot, `1<=t<=(p-3)/2`, (4) requires `p|N`.
-This is a necessary condition for this balanced-slot construction, not for
-every possible equal-energy collision. It explains why this construction
-cannot be realized at the small primes used in Section 4.
+### Necessity of balance for one mirrored pair
+
+The sufficient condition (4) is exact for this operation. Suppose the
+left slot contains `E_j`, and put
+\[
+A_j=\frac{\ell-1}{p}-2\sum_{a=1}^{\ell-1}y_a.
+\tag{4a}
+\]
+Only interior coordinates change. Expanding (3), the energy change at the
+left slot is
+\[
+\sum_{a=1}^{\ell-1}\bigl((D'_{r+a})^2-D_{r+a}^2\bigr)
+=C\left((\ell-1)C-2\sum_{a=1}^{\ell-1}D_{r+a}\right)
+=C A_j.
+\tag{4b}
+\]
+The last equality uses
+`D_(r+a)=t/p-r/N+y_a-a/N`; the rank and placement terms cancel.
+At the reflected slot, both `C` and `A_j` change sign, so the complete
+energy change is
+\[
+\boxed{E^{\mathrm{after}}-E^{\mathrm{before}}=2C A_j.}
+\tag{4c}
+\]
+
+To rule out an unbalanced cancellation, let `f_a=j/p+y_a` be the genuine
+fractions strictly inside `E_j`. Their reduced denominators are all
+strictly less than `p`. Each denominator contributes at most one such
+fraction to an interval of length `1/p`, so `ell<=p`. Also `ell>=2`:
+otherwise the two endpoints, whose determinant is `p`, would be adjacent
+Farey fractions, contrary to the determinant-one neighbor relation.
+Consequently `1<=ell-1<p`. In the ring of rationals with denominator
+coprime to `p`,
+\[
+p A_j=(\ell-1)(2j+1)-2p\sum_{a=1}^{\ell-1}f_a
+\equiv(\ell-1)(2j+1)\pmod p.
+\tag{4d}
+\]
+For `1<=j<=p-2`, this residue vanishes only when
+`j=(p-1)/2`. That central excursion has `A_j=0` by reflection and is
+fixed in the central slot under (2); exchanging it with its mirror does
+nothing. Every nontrivial mirrored pair therefore has `A_j!=0`, and
+(4c) proves
+\[
+\boxed{E^{\mathrm{after}}=E^{\mathrm{before}}
+\quad\Longleftrightarrow\quad N(2t+1)=p(2r+\ell).}
+\tag{4e}
+\]
+
+For a left slot `1<=t<=(p-3)/2`, `2t+1` is not divisible by `p`.
+Thus a nontrivial single-pair energy collision requires `p|N`.
+Since `N` is even and `p` is odd, `N/p` is then even, and (4) also
+requires `ell` even. Neither divisibility nor evenness alone supplies a
+realizable balanced rank. This necessity applies only to one mirrored
+excursion-pair exchange: several changes can have compensating energy
+increments, and a multi-excursion block exchange is a different operation.
+No condition on every possible equal-energy collision is asserted.
+Balance alone also does not guarantee an identical defective-rank list:
+the changed seam values must remain noninteger, as checked in Section 2.
 
 ## 2. A realizable certificate at order 617
 
@@ -198,6 +262,40 @@ As an additional control, their first spectral moments coincide:
 Thus the difference in (14) is not total energy, gap energy, global sign,
 or rank reversal in disguise.
 
+### Asymptotic limit of the single-pair mechanism
+
+There are only `2(ell-1)` possibly changed coordinates in one mirrored
+pair. At each, the old and new positions lie in the same interval of
+width `1/p` and have the same rank. Hence, without any approximation,
+\[
+\|D'-D\|_2^2\le\frac{2(\ell-1)}{p^2}<\frac2p.
+\tag{15}
+\]
+Suppose the energies are equal to `E>0`, as in (4e), and define the two
+normalized sine laws as in (11)--(12). Cauchy--Schwarz and orthogonality
+give the full-spectrum estimate
+\[
+\begin{aligned}
+\operatorname{TV}(\pi',\pi)
+&:=\frac12\sum_{m=1}^{N-1}|\pi'_m-\pi_m|\\
+&\le\frac{\|\widehat D'-\widehat D\|_2
+               \|\widehat D'+\widehat D\|_2}{2E}
+\le\frac{\|D'-D\|_2}{\sqrt E}
+\le\sqrt{\frac{2(\ell-1)}{p^2E}}
+<\sqrt{\frac2{pE}}.
+\end{aligned}
+\tag{16}
+\]
+This bounds every band-mass difference as well as each mode, on the
+common absolute mode labels. In particular, an infinite family of these
+collisions with `pE->infinity` has vanishing spectral total variation.
+If instead `TV>=delta>0` along a family, (16) requires
+`E<=2/(delta^2 p)`. The inequality does not prove the existence of such
+a small-energy family, infinitely many eligible primes, or a lower bound
+on its spectral separation. The positive finite separation in (14) is
+fully consistent with (16). General four-erasure pairs can move whole
+blocks and need not satisfy the support bound (15).
+
 ## 4. Exact audit and reproducibility
 
 The Farey recurrence and a separate reduced-fraction enumeration both
@@ -281,6 +379,19 @@ energy. This finite absence does not extend to all primes, as (5)--(14)
 demonstrate. No minimality claim for `617` is made. No Lean verification
 or independent adversarial approval is claimed.
 
+For (4a)--(4e), an additional exact rational audit sorted all reduced
+fractions at primes `7,11,13,17,19,23,29,31,43,61,101`. All `333`
+excursions had zero `A_j` exactly at the central label and satisfied
+(4d). Four reflected permutations per prime, generated by shuffling the
+left-half labels and independently choosing each orientation with Python
+`Random(345)`, were checked at the distinct slots in
+`{1,max(1,h//2),h}`, `h=(p-3)//2`. These `128` mirrored reversals verified
+(3), (4c), (4e), and the exact squared-distance bound (15), using full
+gap reconstruction and rational energies. The order-617 certificate
+above was also rerun successfully. The universal assertions follow
+from the displayed proofs; these finite checks test signs, mirror
+factors, central degeneracy, and endpoint conventions.
+
 ## 5. Prior art and consequence
 
 The index `nu=(q_-+q_+)/q` is classical: R. R. Hall and P. Shiu,
@@ -296,6 +407,17 @@ see Gilbert Strang, *The Discrete Cosine Transform*, SIAM Review **41**(1)
 [publisher text](https://epubs.siam.org/doi/10.1137/S0036144598336745).
 Equations (11)--(14) specialize that classical spectral calculus and
 derive the separating moment directly.
+
+The conversion from vector error to total variation in (16) is classical
+square-root-density/Cauchy--Schwarz stability; compare Alison L. Gibbs
+and Francis Edward Su, *On choosing and bounding probability metrics*,
+International Statistical Review **70**(3) (2002), 419--435, §3,
+equation (8), [primary preprint](https://arxiv.org/abs/math/0209021).
+The proof here is included to fix the normalization and its dependence
+on `E`. It is not a new probability-metric inequality. The specific
+additional boundary is the prime-denominator obstruction (4d), which
+makes balance necessary for this realizable single-pair operation,
+combined with its localized spectral cost (15).
 
 General Fourier magnitude ambiguities are neighboring, but different,
 prior art: Robert Beinert and Gerlind Plonka, *Enforcing uniqueness in
@@ -318,6 +440,10 @@ This refutes universal spectral determination for the precise record in
 the local energy-conditioned-erasure clue. Retaining total energy does
 not repair the four-erasure boundary, even though it distinguishes the
 earlier order-seven example. The controls are artificial inherited-label
-reassemblies, not alternative genuine Farey sequences. No lower bound on
-an asymptotic spectral gap, stability rate, new Möbius cancellation, or
-improvement to the RH-equivalent Franel bound follows.
+reassemblies, not alternative genuine Farey sequences. Equations
+(4e) and (16) restrict extensions of the displayed mechanism: a single
+mirrored reversal must be exactly balanced, and a uniformly separated
+normalized spectrum requires common energy of order at most `1/p`.
+This leaves asymptotic spectral separation for general energy-matched
+four-erasure collisions open. No asymptotic spectral lower bound, new Möbius cancellation, or improvement
+to the RH-equivalent Franel bound follows.
