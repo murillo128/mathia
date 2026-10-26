@@ -1,7 +1,7 @@
 ---
 id: CLUE-prime-lattice-prime-supported-weighted-endpoint-ambiguity
 type: research-clue
-status: proposed
+status: resolved
 origin: master-researcher
 target_line: prime_lattice
 based_on:
@@ -55,3 +55,12 @@ A positive answer would show that support, positivity, bounded relative amplitud
 ## Evidence boundary
 
 MC-534 proves the square-free sign construction; PL-477 proves the positive residue-supported common-mask construction; PL-478 proves a conditional actual-prime floor and a GRH-equivalent sampling criterion. None proves the proposed prime-supported weighted bridge. No optimal logarithmic factor, actual-prime sampling lower bound, small baseline energy, Euler product, pole formula for the controls, randomized result, cross-scale fixed-source construction, external novelty, formal verification or RH/GRH progress is asserted. Reweighting actual prime-power locations is a matched control, not another arithmetic prime system.
+
+## Research disposition
+
+Outcome: supported
+
+Resolved by:
+- [[research/prime_lattice/findings/PL-479-prime-supported-relative-perturbations-retain-interval-query-ambiguity]]
+
+PL-479 proves the proposed bound for every permitted query list, including deterministic adaptive transcripts. In each endpoint cell it uses the primitive `F(n)=min(C(n),W-C(n))`, with capacities `a_n/2`. The weighted midpoint loss is explicit: total area is at least `W_total^2/(4 M k)-W_total/2`, where `M=log(3X)/2` and `k<=2q+1`. The unconditional fixed-modulus PNT supplies total capacity proportional to `X`, without any prime-density assumption in the cells. Both controls preserve the exact support and relative envelope and agree with the actual baseline on all queries. The proof does not establish small baseline energies, sharpness of the logarithm, a fixed pair across scales, or a lower bound for recovery using the exact von Mangoldt coefficients.
