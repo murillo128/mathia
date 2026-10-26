@@ -236,10 +236,74 @@ support does not mean a finite generator sum, or a finite-total-variation
 mixture of dilations. The zero and constant may depend on the lift; this
 argument supplies no uniform component bound as `Lambda` grows.
 
-The resulting three resources remain distinct: `M` retained indices,
-`K asymp M log M` inspected indices for order-optimal component cost,
-and the necessarily divergent generator coefficient budget. Closed-orbit
-approximation survives because its coefficient budgets may diverge; the
-critical-zero obstruction is a conditioning cost above the Burnol floor,
-not a positive distance from the full closed orbit. These are source-backed
-necessary bounds, not a measured improvement in research utility.
+[NB-372](../../findings/NB-372-bounded-effective-dilation-range-retains-a-strict-projected-target-gap.md)
+adds an independent range restriction, even with unbounded coefficients
+and column counts. For every finite `R>1`, put
+
+\[
+\mathcal W_R=\overline{\operatorname{span}}
+\{A_ag_v:a\ge1,\ v>1,\ av\le R\}
+=\overline{\operatorname{span}}\{g_v:1<v\le R\},\qquad
+\Delta_R=\operatorname{dist}(t,\mathcal W_R)>0.
+\]
+
+The second equality uses `A_a g_v=sqrt(a)(g_(av)-v^(-1)g_a)`.
+The obstruction survives Hilbert closure because the inverse source
+retains its support, not because coefficients remain bounded. Under
+`Uf(u)=e^(-u/2)f(e^(-u))`, extended by zero for `u<0`, define
+
+\[
+\mathfrak m=\sum_{n\ge1}\mu(n)n^{-1/2}\delta_{\log n},\qquad
+\mathscr I h=\mathfrak m*(\partial_u+1/2)h.
+\]
+
+This is continuous from `L^2` to distributions on each compact interval:
+only finitely many atoms contribute there. Direct floor-function
+cancellation gives
+
+\[
+\mathscr I U(A_ag_v)
+=v^{-1}\delta_{\log a}-v^{-1/2}\delta_{\log(av)}.
+\]
+
+Thus every `w in W_R` has inverse source supported in `[0,log R]`, even
+when colliding parameters and diverging coefficients produce distributional
+limits rather than measures. If `nu_t=mathscr I Ut` had compact support,
+its transform `E(s)=<nu_t,e^(-(s-1/2)u)>` would be entire, with
+`E(s)=bB(s)/zeta(s)` for `Re s>1`. Continuation and the a.e. inner boundary
+modulus would force `|zeta(1/2+iy)E(1/2+iy)|=b` everywhere by continuity,
+contradicting a critical-line zero. This uses no boundary-point evaluation
+of a general Hardy function and no continuation of `B` across that zero.
+
+A test `phi in C_c^infinity((log R,infinity))` with
+`nu_t(conjugate(phi))!=0` yields a bounded Hilbert dual. If its support is
+below `T`, set
+
+\[
+\psi_\phi(u)=\sum_{n\le e^T}\frac{\mu(n)}{\sqrt n}
+[-\phi'(u+\log n)+\phi(u+\log n)/2],\qquad u\ge0.
+\]
+
+Then `Delta_R>=|nu_t(conjugate(phi))|/||psi_phi||_2>0`.
+Finding this nonzero response is existential and depends on the projected
+target; it supplies no effective cutoff rate.
+
+For a finite synthesis of effective range at most `R`, the two necessary
+costs give the simultaneous lower bound
+
+\[
+\|e-w\|^2\ge1-b^2+
+\max\{\Delta_R^2,\ c_{\rho,b}(1+Q)^{-1/m}\}.
+\]
+
+The resources are therefore distinct: retained lattice count `M`, search
+horizon `K`, generator coefficients, and effective range `max(av)`.
+As the final-target error tends to zero, both the coefficient budget and
+effective range must diverge; for fixed seeds this forces `max(a)->infinity`.
+Variable seeds can instead enlarge `v`, so divergence of `a` alone is not
+required. Conversely `Delta_R->0` as `R->infinity`, by full-space density.
+Neither restriction removes the Burnol floor, supplies an upper synthesis,
+or quantifies column count without coefficient control. A cutoff bound for
+distance to `e` cannot simply be reduced by the positive floor to obtain a
+rate for `Delta_R`. These are source-backed necessary costs, not a measured
+improvement in research utility.

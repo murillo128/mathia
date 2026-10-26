@@ -127,6 +127,59 @@ The remaining escape needs backgrounds paying the displayed deterministic
 cost, removal of the replica, or geometry outside its isolated multiplier
 band; no impossibility of such a construction has been established.
 
+[MC-543](../../findings/MC-543-independent-block-orientations-cannot-suppress-every-prime-replica.md)
+excludes independent block orientations as a way to pay that cancellation
+cost at every scale. Keep a balanced template `b_p` on `P` as above, fix
+arbitrary signs at all other primes, and set `f_sigma(p)=sigma b_p` for
+`sigma=+1,-1`. Extend multiplicatively on square-free integers and set the
+other values to zero. On the same replica test support,
+
+\[
+S_{+,L}(j)-S_{-,L}(j)=2f(3)a_L(j),\qquad
+Z_+-Z_-=2f(3)E_L,\quad Z_\sigma=\sum_j a_L(j)S_{\sigma,L}(j).
+\]
+
+The background cancels in this **difference** even if its prefixes are
+large. Since `sum a_L=0` and `|f(3)|=1`,
+
+\[
+\max(|Z_+|,|Z_-|)\ge E_L,\qquad
+\max_\sigma V_{\sigma,L}\ge E_L/X
+\ge3\mathcal B_2/(R_L^2X),\quad R_L=\lceil3w/L\rceil\le8.
+\]
+
+Thus a fair orientation has conditional probability at least `1/2` of
+energy `E_L/X`, for each fixed length and scale separately. The successful
+orientation need not be the same for the two lengths or across scales.
+This is a two-point inequality, not a free-prime moment estimate.
+
+For one infinite source, fix in advance `Y_k->infinity`, pairwise disjoint
+prime sets `P_k subset (4Y_k/3,5Y_k/3)`, balanced templates, and all
+complementary prime signs. Give the blocks independent fair orientations.
+At `X_k=3Y_k`, almost surely each channel has infinitely many indices with
+
+\[
+V_{i,k}\ge\mathcal B_{2,k}/(64Y_k).
+\]
+
+To justify the dependence across scales, select a deterministic subsequence
+`Y_(k_(r+1))>6Y_(k_r)` and condition on every off-subsequence orientation,
+without deleting its block. The windows involve only integers below
+`7Y_(k_r)`; later retained primes exceed that horizon. Each next failure
+has conditional probability at most `1/2`, so `n` consecutive failures
+have probability at most `2^(-n)`. The original block family needs no
+lacunarity or old-prime-product bound, and its containing bands may overlap.
+
+For the fixed smooth weight above, `|T_k|^2<=w_k D^2 mathcal B_(2,k)/Y_k^2`
+and `w_k<Y_k/3`. Hence an eventual selected-block target
+`|T_k|>=Y_k^(1/2+delta)` forces, almost surely for each channel,
+`V_(i,k)>=3|T_k|^2/(64D^2)` infinitely often. An eventual complete-energy
+ceiling `X_k^(1+o(1))` has probability zero in this ensemble. Exceptional
+deterministic orientations and complements coordinated with them remain
+possible; independence is a new hypothesis, not a property of Möbius.
+Neither full smooth-target size nor sparse sampled energy follows from
+this selected-block target and complete-energy bound.
+
 MC-538's sampling obstruction needs neither sample-adapted signs nor a fresh nonmultiplicative tent at every scale. It does need sparse scales and permits `f(p)=+1`; it lacks Möbius's prime-sign law and reciprocal-zeta identity. It proves no dense-scale failure, no failure at exponent `1/4`, and no lower bound for actual Möbius or a different sampling design. The matching prime-source recovery and its different pole input are compared in [global MI-040](../../../mind/intuition/MI-040-paired-box-inversion-transports-trimmed-mobius-pole-tests.md).
 
 [MC-539](../../findings/MC-539-two-random-starts-detect-mobius-poles-on-fourth-power-scales.md) exchanges observations per scale for a stronger scale quantifier. For independent uniform indices `J,K` in a fixed length-`X` population with jumps at most `A`, let `p_T=Pr(|u_J-u_K|>T)`. The exact bound is

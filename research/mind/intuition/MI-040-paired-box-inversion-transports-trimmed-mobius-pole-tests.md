@@ -312,11 +312,31 @@ MC-542, that target instead forces large complete energy with high
 probability throughout the band. Neither statement gives small or large
 **sampled** energy, a dense infinite control, or an actual Möbius bound.
 
+[MC-543](../../mobius_cancellation/findings/MC-543-independent-block-orientations-cannot-suppress-every-prime-replica.md)
+sharpens this distinction without assuming small background prefixes.
+For a fixed balanced template, reverse all its prime signs together.
+On the multiplier-three test support the two window fields differ by
+`2f(3)a_L`, so their pairings with `a_L` differ by `2f(3)E_L`.
+The background can cancel at most one orientation; a fair one has
+conditional probability at least `1/2` of complete energy `E_L/X`.
+For predetermined disjoint blocks and a predetermined complement,
+independent orientations therefore force, almost surely for each channel,
+`V_(i,k)>=sum_n B_k(n)^2/(64Y_k)` infinitely often at `X_k=3Y_k`.
+The proof conditions on all blocks outside a causally separated observation
+subsequence; it does not require separating the original source blocks.
+
 The cross-line limit is concrete: PL-485's positive reweightings can return
 their additive prefix to the exact-prime baseline outside each packet;
 MC-538 cannot inherit that reset at every scale merely by balancing its
 prime signs, because their composite copies create this extra endpoint
-profile. Large complete replica energy may still be missed by sparse
-observations. A dense multiplicative escape must pay the background
-prefix cost or alter the isolated multiplier geometry; this is not an
-impossibility theorem for that escape or a sharp arithmetic sampling law.
+profile. Independent orientations almost surely cannot keep the complete
+replica energies at `X_k^(1+o(1))` eventually when the selected-block
+targets retain a fixed power excess over square-root size. PL-485's additive reset has no corresponding forced
+`3p` copy, so its deterministic construction does not violate this result.
+Large complete replica energy may still be missed by sparse observations;
+exceptional deterministic or adaptively coordinated orientations are not
+excluded. A dense multiplicative escape must pay the background prefix
+cost through exceptional or coordinated choices, or alter the isolated
+multiplier geometry.
+No full-target bound, deterministic impossibility or sharp arithmetic
+sampling law follows.
