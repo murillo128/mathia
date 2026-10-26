@@ -1,7 +1,7 @@
 ---
 id: CLUE-farey-discrepancy-half-period-gap-decorrelation
 type: research-clue
-status: proposed
+status: accepted
 origin: research-watch
 target_line: farey_discrepancy
 based_on:
@@ -148,3 +148,23 @@ FD-346 has already settled the comparator's nonconvergence. This clue
 addresses the remaining arithmetic sector question through a more
 specific sufficient correlation estimate. It claims no full TV limit,
 new cancellation theorem, formal verification or RH improvement.
+
+## Research disposition
+
+The all-fixed-offset arithmetic question remains worth investigating;
+acceptance asserts neither its truth nor its novelty.
+[FD-347](../findings/FD-347-finite-half-period-tests-miss-reflected-gap-sector-bias.md)
+establishes a stronger control boundary than identical replication:
+rotating the genuine gap list and adjoining its reversal preserves the
+normalized gap multiset and the full coarse high-band law, while passing
+any prescribed finite window `S_(M/2+r)=O(Q^-2)` and retaining a nonzero
+limiting sector bias. Even the single-offset test can pass with the
+`4|m` upper-band fraction tending to `0.1701038168...`.
+
+This does not challenge (A) for actual Farey gaps: the control lacks the
+original denominator cutoff and adjacency labels. The remaining test is
+a proof of (A) for every fixed offset, an independently sufficient
+band-weighted estimate, or an arithmetic rigidity theorem that justifies
+reducing to fewer offsets. The existing source dictionary and the
+bounded-multiplier implication (B)–(C) survive independent reconstruction;
+the fixed-lag literature does not supply the missing moving-lag bound.
