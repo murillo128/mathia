@@ -15,7 +15,7 @@ This file records durable literature dependencies for `research/farey_discrepanc
 
 ## Absolute-discrepancy endpoint barrier
 
-- François Dress, *Discrépance des suites de Farey*, Journal de théorie des nombres de Bordeaux **11**(2) (1999), 345--367, MR 1745884, Numdam `JTNB_1999__11_2_345_0`. Role: primary source for the exact theorem that the normalized absolute discrepancy of the Farey sequence of order `n` is `1/n`; `FD-010` uses it to classify complete `L^infty` discrepancy as an endpoint-dominated quantity rather than an RH-sensitive replacement for the cumulative Franel statistic. `FD-336` subtracts two sample discrepancies to bound every centered block prefix by `2/Q`, extending its Brownian null to all `b=o(Q)`. `FD-337` uses the sample-point consequence `max_k |x_k-k/N|<=1/Q` to transfer every `q=o(Q)` rank-sine band to the corresponding Ramanujan–Mertens band.
+- François Dress, *Discrépance des suites de Farey*, Journal de théorie des nombres de Bordeaux **11**(2) (1999), 345--367, MR 1745884, Numdam `JTNB_1999__11_2_345_0`. Role: primary source for the exact theorem that the normalized absolute discrepancy of the Farey sequence of order `n` is `1/n`; `FD-010` uses it to classify complete `L^infty` discrepancy as an endpoint-dominated quantity rather than an RH-sensitive replacement for the cumulative Franel statistic. `FD-336` subtracts two sample discrepancies to bound every centered block prefix by `2/Q`, extending its Brownian null to all `b=o(Q)`. `FD-337` uses the sample-point consequence `max_k |x_k-k/N|<=1/Q` to transfer every `q=o(Q)` rank-sine band to the corresponding Ramanujan–Mertens band. `FD-348` combines the same bound with rational separation to force exact half-translations for small-denominator pairs at half-period rank lag, then derives their rank-coincidence counting formula; it proves no new discrepancy estimate.
 
 ## Empirical-distribution quadratic identity
 
@@ -123,6 +123,11 @@ This file records durable literature dependencies for `research/farey_discrepanc
 - NIST Digital Library of Mathematical Functions, §1.15(iii), equations 1.15.15–1.15.17, [Fejér kernel](https://dlmf.nist.gov/1.15#iii). Role: standard positive Fourier-kernel normalization for FD-339; that finding derives the kernel tail and norm bounds explicitly and combines them with Dress's discrepancy bound and the first empty Farey interval to force genuine rank/position coefficient separation below `128Q`. Its midpoint variant shows that bounded antisymmetric corrections supported in the outer quarters leave a coefficient-error floor below `512Q`. It does not infer a band-energy-share gap.
 
 - Florin P. Boca and Alexandru Zaharescu, *The correlations of Farey fractions*, Journal of the London Mathematical Society **72**(1) (2005), 25–39, DOI `10.1112/S0024610705006629`; [primary preprint](https://arxiv.org/abs/math/0404114). Role: primary comparison for FD-343's use of Farey exponential sums and their Mertens divisor formula. The paper's correlation scaling uses `N_Q asymp Q^2`; its fixed-test-function limits do not alone justify FD-343's frequency scale `j asymp Q`, uniform removal of a complementary-divisor truncation, or positive infinite-tail profile.
+
+## Half-period denominator-count comparison
+
+- J. S. Athreya and Y. Cheung, *A Poincaré section for horocycle flow on the space of lattices*, arXiv `1206.6597`, §1.3.3 and Lemma 4.1. Role: classical identification of successive normalized Farey denominators with a finite periodic BCZ orbit and of its roof with normalized gaps. FD-348 distinguishes this orbit from the continuous invariant measure when reducing small-denominator half-period pairs to exact rational rank coincidences.
+- Albert Artiles, Andrew Best and Matteo Bordignon, *Mixing of the BCZ map*, arXiv `2610.07347v1` (5 October 2026), Theorem 1.1. Role: prior-art boundary for the count direction in FD-348: strong mixing is with respect to normalized Lebesgue measure on the BCZ triangle. No estimate for changing finite periodic-orbit measures, shrinking denominator thresholds or the required rank anti-concentration is imported.
 
 ## Exact signature erasures
 

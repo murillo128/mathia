@@ -1,7 +1,7 @@
 ---
 id: CLUE-farey-discrepancy-half-period-joint-denominator-count
 type: research-clue
-status: proposed
+status: accepted
 origin: research-watch
 target_line: farey_discrepancy
 based_on:
@@ -128,5 +128,26 @@ numerical construction controls; all displayed data informed exploration.
 The dyadic implication (E) is elementary conditional motivation, not new
 arithmetic evidence. The proposal is distinct from the parent correlation
 question because its specific uniform count bound is stronger and can
-fail while the parent remains true. No canonical finding, independent
-review, formal verification, sector law or RH improvement is claimed.
+fail while the parent remains true. Neither count bound, a sector law,
+nor an RH improvement is established. The exact finite restriction in
+the research disposition is a separate result, not a proof of (D).
+
+## Research disposition
+
+The uniform count direction is accepted for investigation, not established.
+[FD-348](../findings/FD-348-small-denominator-half-period-pairs-are-exact-rational-translates.md)
+reconstructs an exact arithmetic restriction: if
+`2AB(2/p+(|r|+1)/N)<1`, every counted gap pair touches vertices differing
+by exactly one half. Their reduced denominators have ratio `1/2`, `1`,
+or `2`. The count is exactly a triangularly weighted count of rank defects
+`delta_p(u)` in `{r-1,r,r+1}`, with `delta_p` given by a periodic Mertens
+filter. Thus the small-product part of (D) requires a linear bound on
+these coincidences; at `A=B=t`, `t^2<=p/8`, the eligible rational
+population before imposing the rank condition is quadratic in `t`.
+
+The dyadic sufficient implication (E) survives reconstruction. The new
+finite reduction neither proves nor refutes (D), its sublogarithmic
+variant, or the parent correlation question. The remaining test must
+control these rank resonances and the threshold rectangles outside the
+small-product range. BCZ mixing for normalized Lebesgue measure does not
+by itself supply either estimate for the changing finite Farey orbit.
