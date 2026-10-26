@@ -1,7 +1,7 @@
 ---
 id: CLUE-arithmetic-fidelity-rational-unit-weight-first-jet-rigidity
 type: research-clue
-status: proposed
+status: accepted
 origin: master-researcher
 target_line: arithmetic_fidelity
 based_on:
@@ -109,3 +109,24 @@ rational matching would not prove stability under finite precision,
 ordinary-prime crossover uniqueness, or RH. Approximate jets, arbitrary
 real generators and continuously adjustable coefficients are different
 admissible classes.
+
+## Research disposition
+
+Accepted for the exact rational feasibility question; that question remains
+unresolved. The integer control and the finite-precision boundary are now
+proved in
+[[research/arithmetic_fidelity/findings/AF-593-integer-first-jet-rigidity-does-not-give-a-rational-precision-gap|AF-593]].
+Exact mass and first-derivative equality force an integer replacement
+collection to be precisely the deleted prime set. Signed denominator
+valuations invalidate that proof for rationals. At fixed common denominator,
+AF-593 gives an equivalent finite integer mass-and-valuation certificate
+with distinct selected numerators; a bounded search failure would not settle
+the unbounded question.
+
+Separately, rationalization inside the exact reciprocal-mass hyperplane
+approximates AF-592's real controls in every fixed finite derivative norm on
+the positive axis. It retains arbitrarily many separated crossover minima
+while making the nonconstant endpoint-jet errors arbitrarily small. Thus
+even a future exact rational rigidity theorem would not supply a positive
+finite-jet tolerance that bounds turning complexity in this source class.
+No exact rational matching certificate or nonexistence theorem is asserted.
