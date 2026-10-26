@@ -2,6 +2,12 @@
 
 This file records the current mathematical questions that survive the Arithmetic-Fidelity evidence. It is not a roadmap, task queue, status page, or history.
 
+## Can nonintegral rational generators match the exact prime first jet?
+
+[MI-082](intuition/MI-082-integer-jet-rigidity-does-not-supply-rational-precision.md) separates three admissible classes for `H(z)=sum_g g^(-1-z)-sum_(p in S) p^(-1-z)`: integer generators obey exact first-jet rigidity; real unit-weight generators admit arbitrary remote finite-jet repair; distinct nonintegral rationals admit exact mass and arbitrarily accurate finite jets while crossover turning complexity is unbounded. Neither real repair nor rational approximation decides exact rational matching.
+
+For a finite nonempty prime set `S` above `Y>2` and a positive integer `D` divisible by its primes, can distinct integers `1<=n<D/Y`, none dividing `D` and each supported on the prime factors of `D`, satisfy `sum n=sum_(p in S) D/p` and `product n^n=product_(p in S) (D/p)^(D/p)`? Such a certificate gives replacements `g=D/n>Y` with exactly the same mass and first logarithmic moment. Is any certificate possible, and if so can certificates occur above every cutoff `Y>2`? Negative searches at finitely many `D` do not answer the unrestricted question. No turning-complexity or RH consequence follows merely from exact feasibility.
+
 ## Which source relations remain observable after matched controls, nuisance closure and the actual representation map?
 
 AF-523--AF-528 show that leading scalar boundary-curvature data can be matched while an exact relational carrier still retains hidden source shape. For power-separated anchors, the projective logarithmic derivative of the exact carrier recovers the anchor exponent, but the signal is infinitesimal and therefore does not by itself give a stable finite-resolution observable.
