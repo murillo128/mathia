@@ -219,8 +219,8 @@ This does **not** refute a prime-specific improvement or a GRH
 criterion with another argument. The coefficients are supported on
 an entire residue class, not on prime powers, and no arithmetic
 explicit formula, pole growth, or zero-density hypothesis is supplied.
-In particular (11) is not the pure pole formula in PL-471.
-The exact paired deconvolution in PL-475 concerns complete data and
+In particular (11) is not the pure pole formula in [[research/prime_lattice/findings/PL-471-sparse-zero-annihilators-force-prime-variance-on-every-large-block|PL-471]].
+The exact paired deconvolution in [[research/prime_lattice/findings/PL-475-two-box-lengths-force-paired-macroscopic-prime-variance|PL-475]] concerns complete data and
 is fully consistent with this ambiguity after deletion. The proposed
 single-box sparse Mellin interpolation question remains undecided.
 
@@ -232,7 +232,7 @@ classical lower-bound mechanism of optimal recovery. See
 especially the latter chapter's treatment of integration of Lipschitz
 functions ([chapter DOI](https://doi.org/10.1017/9781009003933.017)),
 source 146. The balanced packet's primitive is a discrete tent; neither
-tent-function lower bounds nor their quadratic area are new principles.
+[[research/prior_art/incremental/PA-lipschitz-integration-recovery|tent-function lower bounds]] nor their quadratic area are new principles.
 For the prime-specific comparison,
 [Bazzanella--Perelli (2000)](https://doi.org/10.1006/jnth.1999.2429),
 source 145, studies exceptional-set inertia for primes in short

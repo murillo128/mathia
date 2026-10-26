@@ -54,6 +54,12 @@ They contribute one `viable-extension` episode per distinct question. MC-532 now
 
 PL-476 now verifies the prime-source version of the same missing-start question: the jump and rounding costs are logarithmic, the prime pole is simple, and the macroscopic converse comes from the separate classical GRH prime-counting estimate. Its quantified paired criterion is equivalent to joint mod-5 GRH, with no arithmetic upper bounds or optimal deletion threshold acquired. The missing-start episode includes this transfer and retains its `mobius_cancellation` reporting attribution; no new episode is counted. Global MI-040 and Prime Lattice MI-067 record the source-dependent dictionary. Rates and Atlas states remain unchanged.
 
+## Geometric coverage and common-mask ambiguity
+
+[[research/mobius_cancellation/findings/MC-533-geometric-start-coverage-recovers-sparsely-sampled-mobius-variance|MC-533]] refines the existing missing-start episode: coverage weights and total nearest-sample distance replace the count-only B² bill. A fixed grid of about sqrt(X) starts admits an RH-equivalent paired sample-energy criterion; its energy ceiling remains unproved, and the converse uses pointwise Mertens control. Generic absolute-mass sharpness supplies no Möbius information lower bound.
+
+[[research/prime_lattice/findings/PL-477-common-mask-paired-windows-retain-quadratic-deletion-ambiguity|PL-477]] contributes one separate `new-barrier` episode for signed recovery under shared-source/common-mask constraints. Two fixed positive residue-supported sources give identical retained vectors at both lengths but differ by order B²/X on the prescribed smooth target. The clustered gaps have quadratic distance cost, so this does not contradict geometric sparse-grid recovery. It proves neither prime-specific optimality nor necessity of the prime logarithm, and it does not refute the arithmetic pole criteria. Classical Lipschitz recovery registration and six reference wrappers are maintenance, not episodes.
+
 ## Retained prospective window
 
 Classifiable episodes: **20**. Insufficient-evidence episodes: **0**. Retrospective episodes: **0**.
@@ -61,11 +67,11 @@ Classifiable episodes: **20**. Insufficient-evidence episodes: **0**. Retrospect
 | Classification | Episodes |
 | --- | ---: |
 | known-prior-art | 2 |
-| new-barrier | 8 |
-| viable-extension | 10 |
+| new-barrier | 9 |
+| viable-extension | 9 |
 
-- **FrontierFertilityEpisodes = 50.0%**
-- **BarrierRate = 40.0%**
+- **FrontierFertilityEpisodes = 45.0%**
+- **BarrierRate = 45.0%**
 - **PriorArtCollisionRate = 10.0%**
 - **InternalDuplicateRate = 0.0%**
 
@@ -75,8 +81,7 @@ Classifiable episodes: **20**. Insufficient-evidence episodes: **0**. Retrospect
 | --- | ---: | ---: | ---: | ---: | ---: |
 | `arithmetic_fidelity` | 4 | 2 | 2 | 0 | 0 |
 | `mobius_cancellation` | 3 | 2 | 0 | 1 | 0 |
-| `prime_flute` | 1 | 1 | 0 | 0 | 0 |
-| `prime_lattice` | 5 | 3 | 2 | 0 | 0 |
+| `prime_lattice` | 6 | 3 | 3 | 0 | 0 |
 | `robin_extremal` | 1 | 1 | 0 | 0 | 0 |
 | `visual_exploration` | 1 | 1 | 0 | 0 | 0 |
 | `weil_inertia` | 1 | 0 | 1 | 0 | 0 |

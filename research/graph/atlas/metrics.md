@@ -2,7 +2,7 @@
 id: RA-metrics-v1
 type: riemann-atlas-metrics
 atlas_version: 1
-source_revision: 28265c9dadc2e10d87e9dfa84a995ca379c48c2a
+source_revision: 704e7681c084d662fa47114d33b79b6512815a8b
 derived: true
 ---
 
@@ -38,14 +38,14 @@ The five hard-pruned interfaces retain their existing scoped canonical evidence:
 
 ## Structural and semantic scope
 
-The exact tree projections contain 13 research lines, 5,120 findings, 841 durable intuitions and 76 prior-art notes. Membership changes and reversible source-reference formatting are graph maintenance, never frontier episodes. Semantic inspection remains selective as recorded in `research/graph/semantic-inspection.json`; uninspected source changes do not justify Atlas transitions.
+The exact tree projections contain 13 research lines, 5,130 findings, 841 durable intuitions and 77 prior-art notes. Membership changes and reversible source-reference formatting are graph maintenance, never frontier episodes. Semantic inspection remains selective as recorded in `research/graph/semantic-inspection.json`; uninspected source changes do not justify Atlas transitions.
 
 ## Frontier fertility
 
-The retained prospective series contains **20** classifiable episodes and **0** insufficient-evidence episodes. PL-475's paired macroscopic-window certificate and MC-531's bounded-jump missing-start recovery are distinct `viable-extension` questions. MC-532's canonical paired trimmed transfer refines the existing missing-start episode, retaining the same two unproved arithmetic budgets and fixed-family quantifiers. PL-476 adds the prime-source reconstruction to that same missing-start episode, retaining its logarithmic deletion cost and independent classical GRH converse. Global MI-040 and Prime Lattice MI-067 remain supporting synthesis; no additional episode is counted. Both source results retain unproved arithmetic upper estimates and non-effective zero-set dependence. The last-20 window describes selectively inspected questions, not an unbiased portfolio sample. Atlas states and masses are unchanged.
+The retained prospective series contains **20** classifiable episodes and **0** insufficient-evidence episodes. MC-533 refines the existing missing-start episode with coverage-weighted sparse sampling; its RH-equivalent sample-energy ceiling remains unproved. PL-477 adds one separate `new-barrier` episode for generic signed recovery from two compatible windows under a common mask. It does not prove an optimal prime or Möbius threshold. The oldest retained episode leaves the fixed last-20 window; Git preserves it. These selectively inspected questions are not an unbiased portfolio sample. Atlas states and masses are unchanged.
 
-- **FrontierFertilityEpisodes = 50.0%**
-- **BarrierRate = 40.0%**
+- **FrontierFertilityEpisodes = 45.0%**
+- **BarrierRate = 45.0%**
 - **PriorArtCollisionRate = 10.0%**
 - **InternalDuplicateRate = 0.0%**
 

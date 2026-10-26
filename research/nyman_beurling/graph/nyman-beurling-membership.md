@@ -367,3 +367,4 @@ This stable projection inventories every current canonical Nyman–Beurling find
 - [[research/nyman_beurling/findings/NB-358-phase-filtering-characterizes-polynomial-two-orbit-energy|NB-358]]
 - [[research/nyman_beurling/findings/NB-359-quadratic-mean-digits-characterize-logarithmic-two-orbit-energy|NB-359]]
 - [[research/nyman_beurling/findings/NB-360-almost-every-real-third-seed-completes-any-fixed-finite-type-pair|NB-360]]
+- [[research/nyman_beurling/findings/NB-361-non-two-brjuno-seed-pairs-admit-no-third-orbit-completion|NB-361]]

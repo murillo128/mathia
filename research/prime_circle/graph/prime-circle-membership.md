@@ -467,3 +467,4 @@ This stable projection inventories every current canonical Prime Circle finding.
 - [[research/prime_circle/findings/PC-457-growing-base-cotangent-towers-require-conductor-scale-normalization|PC-457]]
 - [[research/prime_circle/findings/PC-458-conductor-scaled-cotangent-bulk-collapses-exactly-at-vanishing-primitive-density|PC-458]]
 - [[research/prime_circle/findings/PC-459-primorial-cotangent-local-limits-split-into-anchor-pair-and-antipodal-dyadic-kernel|PC-459]]
+- [[research/prime_circle/findings/PC-460-primorial-cotangent-rare-spectrum-has-a-prime-pair-counting-law|PC-460]]

@@ -76,6 +76,7 @@ This is a purely structural corpus projection. A link here means only that the t
 - [[research/prior_art/incremental/PA-julia-nevanlinna-boundary-reduction]]
 - [[research/prior_art/incremental/PA-landau-nonnegative-dirichlet-series-singularity]]
 - [[research/prior_art/incremental/PA-le-cam-two-point-testing]]
+- [[research/prior_art/incremental/PA-lipschitz-integration-recovery]]
 - [[research/prior_art/incremental/PA-montgomery-dirichlet-zero-density-bound]]
 - [[research/prior_art/incremental/PA-multichannel-compact-distribution-deconvolution]]
 - [[research/prior_art/incremental/PA-nonquasianalytic-infinite-convolution-cutoff]]

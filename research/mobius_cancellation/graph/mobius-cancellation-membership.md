@@ -539,3 +539,4 @@ This stable projection inventories every current canonical Möbius Cancellation 
 - [[research/mobius_cancellation/findings/MC-530-nonquasianalytic-tests-reach-logarithmic-mobius-windows|MC-530]]
 - [[research/mobius_cancellation/findings/MC-531-bounded-jumps-recover-trimmed-mobius-variance|MC-531]]
 - [[research/mobius_cancellation/findings/MC-532-paired-boxes-recover-trimmed-mobius-variance-at-macroscopic-lengths|MC-532]]
+- [[research/mobius_cancellation/findings/MC-533-geometric-start-coverage-recovers-sparsely-sampled-mobius-variance|MC-533]]

@@ -125,7 +125,7 @@ satisfy
 \tag{12}
 \]
 For clarity, that result cancels all unwanted reciprocal-zeta poles with
-full multiplicities using MC-528's compact Mellin test. A compact
+full multiplicities using [[research/mobius_cancellation/findings/MC-528-multiplicity-aware-annihilation-forces-mobius-variance-on-every-block|MC-528]]'s compact Mellin test. A compact
 finite-order two-box inverse at ratio \(\sqrt2\) reconstructs the test.
 Integer rounding of the second length costs \(O(1)\) in the coefficient
 sum. The surviving pole contributes
@@ -169,7 +169,7 @@ For any zero with \(\beta>1/2\), fix
 contradicting (3) along the unbounded set. Functional-equation symmetry
 excludes left-of-line nontrivial zeros as well, proving RH.
 
-Conversely, RH implies the classical Mertens bound
+Conversely, RH implies the [[research/prior_art/mobius-summatory-criterion|classical Mertens bound]]
 \(M(t)\ll_\delta t^{1/2+\delta}\) for every \(\delta>0\)
 (MC-S67). For \(r\in I_X\) and either macroscopic length,
 \(r+L_i<3X\). Taking \(c=0\) in (5) gives
@@ -223,7 +223,7 @@ or phase-sensitive information. No such improvement is established.
 
 ## Prior art, validation and consequence
 
-The interpolation argument is classical Lipschitz recovery, not a new
+The interpolation argument is classical [[research/prior_art/incremental/PA-lipschitz-integration-recovery|Lipschitz recovery]], not a new
 sampling principle. [Baran–Demaine–Katz, Section 2](https://erikdemaine.org/papers/Integration_Algorithmica/paper.pdf)
 (MC-S85) derives integral uncertainty between observations from the
 Lipschitz envelope; equal observed values give the familiar quadratic

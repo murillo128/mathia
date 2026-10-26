@@ -210,3 +210,4 @@ This stable projection inventories every current canonical Analytic Frontier fin
 - [[research/analytic_frontier/findings/ANF-198-fejer-profiles-force-vanishing-real-improvement-amplitudes|ANF-198]]
 - [[research/analytic_frontier/findings/ANF-199-stationary-source-zero-contacts-characterize-linear-real-notch-stability|ANF-199]]
 - [[research/analytic_frontier/findings/ANF-200-small-real-notch-amplitudes-have-an-exact-two-site-floor|ANF-200]]
+- [[research/analytic_frontier/findings/ANF-201-bounded-cardinality-complex-near-extremizers-have-the-real-notch-envelope|ANF-201]]

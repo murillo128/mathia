@@ -274,3 +274,4 @@ This stable projection inventories every current canonical Robin Extremal findin
 - [[research/robin_extremal/findings/RE-265-disjoint-fixed-panel-repairs-reach-robin-critical-balanced-integer-budgets|RE-265]]
 - [[research/robin_extremal/findings/RE-266-pairwise-balanced-integer-repairs-have-a-sharp-quadratically-small-positive-robin-excursion|RE-266]]
 - [[research/robin_extremal/findings/RE-267-net-counting-budget-controls-positive-robin-excursions-without-a-pair-count-bound|RE-267]]
+- [[research/robin_extremal/findings/RE-268-balanced-three-prime-repairs-retain-a-nonnegative-counting-primitive|RE-268]]
