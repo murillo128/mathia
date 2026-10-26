@@ -24,6 +24,14 @@ localization theorem for arbitrary Xi configurations. It supplies a
 uniform real-simple interval for this control and closes its possible
 promotion into a fixed-time adverse-integral example.
 
+The initial gap law matters for **absolute** variation. With the same
+profiles but an unrestricted initial gap, Section 5 gives the sharp
+threshold \(a_0\log(1/\epsilon)\to0\). Negative variation still vanishes
+uniformly in the gap: any surviving initial-time concentration has
+positive sign. Thus a missing logarithmic gap bound obstructs absolute
+variation control, but does not resurrect an adverse-integral example
+within this isolated-defect family.
+
 ## 1. Precise control and quantitative estimate
 
 Let \(N=8M\) and use the XF-208 roots
@@ -257,7 +265,114 @@ Thus \(\alpha\log(1+4T_*/\epsilon^2)=O(M^p e^{-M^p})\) and
 \(\beta\sqrt{T_*}=O(e^{-M^p/2^p})\). Substitution into (5)
 proves (1). This rate is an upper bound, not a sharp asymptotic.
 
-## 5. Prior art, stress tests, and remaining boundary
+## 5. Sharp gap-depth boundary and the sign of concentration
+
+Keep the roots (2) and either profile from XF-208, but now allow
+**any** sequence \(0<\epsilon_M\le\epsilon_*\), independently of
+\(\alpha_M=a_0\) and \(\beta_M=a_1\). Only the initial-gap choice in
+(20) is released. The uniform continuation and spatial-tail estimates
+in Sections 2--3 still apply. Fix \(0<T\le T_*\), independently of
+\(M\), and define
+\[
+V_M^\pm(T)=\int_0^T(\pm\mathcal K_a'(t))_+\,dt,
+\qquad V_M(T)=V_M^+(T)+V_M^-(T).
+\]
+Then, uniformly in the initial gap,
+\[
+\boxed{\begin{aligned}
+V_M^-(T)&=O_A(M^{-3}),\\
+V_M(T)&=2\alpha_M\log(1/\epsilon_M)+O_{A,T}(M^{-3}),\\
+\mathcal K_a(T)-\mathcal K_a(0)
+&=2\alpha_M\log(1/\epsilon_M)+O_{A,T}(M^{-3}).
+\end{aligned}}
+\tag{21}
+\]
+In particular,
+\[
+V_M(T)\longrightarrow0
+\quad\Longleftrightarrow\quad
+\alpha_M\log(1/\epsilon_M)\longrightarrow0.
+\tag{22}
+\]
+This characterizes the initial-gap restriction behind (1); it is not
+a new positivity theorem for arbitrary configurations.
+
+To prove the sign and the matching lower bound, retain the singular
+logarithm rather than estimate the whole first triple absolutely. Put
+\(g=g_0\), \(h=g_1\), and \(q=g^2\). The exact XF-030 formula gives
+\[
+\mathcal J_0=\log q+R(g,h),\qquad
+R(g,h)=2\log h+2\log(g+h)
+-3\log\!\left[\frac23(g^2+gh+h^2)\right].
+\tag{23}
+\]
+Here \(R\) extends smoothly to \(g=0\) on the closed range
+\(0\le g\le g_*\), \(3/4\le h\le2\) supplied by Section 2,
+where \(g_*\) is an absolute small constant. Its first derivatives
+are uniformly bounded. For example,
+\[
+R_g=\frac2{g+h}-\frac{3(2g+h)}{g^2+gh+h^2},\qquad
+R_h=\frac2h+\frac2{g+h}-\frac{3(g+2h)}{g^2+gh+h^2}.
+\]
+Equations (8)--(10) imply
+\(|g'|+|h'|\le C(1+1/g)\) and \(4\le q'\le8\).
+Consequently (18), with \(T_*\le1\), yields
+\(\int_0^T|\partial_tR(g,h)|\,dt\le C\sqrt T\).
+Combining this with (16)--(18) gives the exact decomposition
+\[
+\mathcal K_a'=\alpha\frac{q'}q+r_M,
+\qquad
+\int_0^T|r_M(t)|\,dt
+\le C\left[(\alpha+\beta)\sqrt T
++T\sum_{j=2}^{3M-1}\frac{a_j}{(1+j)^4}\right].
+\tag{24}
+\]
+The first term is nonnegative. Therefore negative variation is at
+most the right side of (24), while both total variation and net change
+differ from \(\alpha\log(q(T)/\epsilon^2)\) by at most that same
+quantity. For fixed positive \(T\), (10) bounds \(q(T)\) above and
+below by positive constants independent of \(M,\epsilon\).
+Using (19), \(\alpha=e^{-M^p}\), and
+\(\beta=e^{-M^p/2^p}\) proves (21)--(22). The constants in
+\(O_{A,T}\) may grow as \(T\downarrow0\); a shrinking observation
+interval is not covered by (21).
+
+There is a precise concentration interpretation. For any finite
+\(L\ge0\), if
+\(2\alpha_M\log(1/\epsilon_M)\to L\), then on the **closed**
+interval \([0,T]\), as finite signed measures,
+\[
+\boxed{\mathcal K_a'(t)\,dt\ \rightharpoonup\ L\delta_0.}
+\tag{25}
+\]
+Indeed the nonnegative measure \(\alpha_M q'/q\,dt\) has total
+mass tending to \(L\). For every fixed \(0<\delta<T\), its mass on
+\([\delta,T]\) is
+\(\alpha_M\log(q(T)/q(\delta))=O_{\delta,T}(\alpha_M)\to0\).
+Testing against a continuous function and then taking \(\delta\downarrow0\)
+proves convergence to \(L\delta_0\); (24) removes the remainder in
+total variation. For each \(L>0\), the explicit admissible choice
+\[
+\epsilon_M=\exp[-L/(2\alpha_M)]
+\tag{26}
+\]
+realizes this limit for all sufficiently large \(M\). These are genuine
+positive gaps, with the same bounded lattice displacement, upper gaps,
+taper smoothness, and positive core coverage as before. No numerical
+representation of this doubly small gap is needed for the proof.
+
+Thus taper smoothness and bounded counting discrepancy alone do not
+make the derivative uniformly integrable at the initial time. The
+missing input for absolute variation is logarithmic gap-depth control.
+The surviving mass in (25) is **positive** opening-pair production;
+it does not falsify a one-sided lower bound for the integrated
+derivative. Even gaps much smaller than (26) cannot make the negative
+variation exceed (21). The tuned gaps (20) have
+\(\alpha_M\log(1/\epsilon_M)=O(M^p e^{-M^p})\), so (1) remains
+unchanged. At a collision itself \(\epsilon=0\), the logarithmic
+observable is undefined; no ordered-zero ODE is continued through it.
+
+## 6. Prior art, stress tests, and remaining boundary
 
 The reciprocal zero ODE and square-root opening of a pair are classical;
 see Tao's [heat-flow exposition](https://terrytao.wordpress.com/2017/10/17/heat-flow-and-zeroes-of-polynomials/)
@@ -279,6 +394,16 @@ spatially tapered discriminant's total time variation. The additional
 content here is the uniform isolated-pair continuation and spatial-tail
 estimate that make (5) quantitative for the XF-208 edge family.
 No literature-wide novelty claim is made.
+
+The logarithmic singularity of a discriminant and its relation to
+logarithmic-particle energy are classical, also explicit in Tao's
+exposition above. Initial-layer concentration of a nonnegative measure
+is an elementary compactness mechanism. Section 5 applies these facts
+to the same complete periodic control, using the uniform continuation
+and tail bounds to isolate the entire nonvanishing mass. Its additional
+content is the sharp weighted logarithmic threshold and the separation
+of positive concentration from vanishing adverse variation, not a new
+general logarithmic-energy law.
 
 The proof was checked at the potentially nonuniform steps: comparison
 uses an ordered supersolution rather than the singular actual
@@ -302,6 +427,8 @@ external replenishment are load-bearing. Many interacting defects,
 source-driven boundary flux, or uniformly covered finite-gap interior
 geometry are outside (5). These controls do not satisfy the full Xi
 source law, and no bound on the de Bruijn--Newman constant follows.
-The overlap clue still needs an estimate for its actual source class;
-this result only rules out using the XF-208 family itself as a
-persistent integrated obstruction.
+The overlap clue still needs an estimate for its actual source class.
+The XF-208 tuned-gap sequences have vanishing absolute variation, and
+the same isolated-defect family has vanishing negative variation for
+every positive initial gap. Without the threshold (22), its absolute
+variation can survive or diverge through positive production alone.

@@ -104,3 +104,15 @@ uniform backward interval or the missing estimate for Xi: rescaling to
 spacing `h` reduces the proved interval to `h^2 T_*`, and multiple or
 replenished defects remain outside the theorem. The clue stays accepted
 with its source-specific finite-gap/time-integrated question unresolved.
+
+XF-209, Section 5, also identifies the exact boundary for removing its
+tuned initial-gap law. For either fixed taper profile, arbitrary
+positive initial gaps satisfy
+`integral |K_a'| dt = 2 a_0 log(1/epsilon) + O_T(M^-3)` on every fixed
+positive interval within the uniform continuation time, whereas
+`integral (K_a')_- dt = O(M^-3)` uniformly in the gap. A doubly small
+gap can therefore leave a prescribed positive initial-time atom in
+`K_a' dt`. An absolute-variation argument needs weighted logarithmic
+gap-depth control; a one-sided adverse-flux argument does not fail
+from this atom. The unresolved task remains the source-valid control
+of adverse flux beyond the isolated-defect family.

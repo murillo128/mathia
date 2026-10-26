@@ -34,6 +34,12 @@ This file records durable literature dependencies for `research/xi_flow/`. It is
   proves a uniform short-time absolute-variation bound. Cotangent
   summation supplies the exact velocity; its spatial-tail comparison
   and integrated taper estimate are proved in the finding.
+  Its sharp initial-gap boundary separates positive logarithmic-energy
+  concentration from negative variation: the former needs weighted
+  log-gap control, while the latter vanishes uniformly for this isolated
+  defect. The discriminant/logarithmic-energy identity is classical
+  (also in Tao's exposition); this sign-sensitive periodic estimate is
+  derived locally, not imported from a general log-gas theorem.
 
 ## Nonlocal lattice, periodic quadrature, and fractional-diffusion scaling
 
