@@ -626,6 +626,8 @@ The classical inputs are Almira's Cauchy determinant/residual method, Section 2.
 
 Relevant finding: PF-366; relevant local clue: CLUE-positive-width-transition-schur-complement.md. Eliminating all modes in a sufficiently small fixed interval around zero, as well as a narrow transition interval, still leaves essential angle norm one in the actual seam-energy completion. The quadratic zero-frequency cosine-node spacing is controlled by an exact factorial product. This makes the coefficient exponent tend to zero with the two compensation widths and pays for an eliminated low sector of rank proportional to cuff length.
 
+Section 5a derives a uniform corollary for every closed subspace of the same band envelope, including nonlocal mixtures. A high-only compensator removes dependence on the chosen eliminated subspace; its Gram bound follows by zero-padding coefficients in the full matrix. Comparing its cost with the full-envelope residual requires the stronger margin `gamma>(1+R)delta`. This uses elementary Hilbert-space distance monotonicity, not monotonicity of normalized angles, and introduces no additional external theorem.
+
 **Scope warning.** The result requires the stated strict width/residual margins and the canonical coupled lower, complete-pant upper and seam-coercivity inputs. It neither treats arbitrary broad low-band elimination nor uses monotonicity of normalized angles under additional shorting. Other completions, relative spectral consequences, primality discrimination and RH remain outside it.
 
 ## Provenance policy for future additions
