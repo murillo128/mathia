@@ -323,3 +323,7 @@ This file records durable literature dependencies used to support or falsify fin
 ## Entropy cost of selecting rooted cotangent limits
 
 - Mauro Mariani, **A Gamma-convergence approach to large deviations**, *Annali della Scuola Normale Superiore di Pisa, Classe di Scienze (5)* **18** (2018), 951–976. DOI: 10.2422/2036-2145.201301_010; https://arxiv.org/pdf/1204.0640. Role: Theorems 3.4–3.5 supply the classical large-deviation/normalized-relative-entropy lower-bound and recovery framework for PC-470. That finding proves its rooted-sieve specialization by finite-window partitions and conditional uniformity; the Kedlaya singular-series normalization and Lagarias Mertens theorem already listed above supply its arithmetic input. No new general entropy theorem or prime-tuple conjecture is used.
+
+## Compatible sieve phases and cotangent limits
+
+- Stanisław Kasjan, Gerhard Keller and Mariusz Lemańczyk, **Dynamics of B-free sets: a view through the window**, *International Mathematics Research Notices* **2019**, no. 9, 2690–2734. DOI: 10.1093/imrn/rnx196; https://arxiv.org/pdf/1702.02375. Role: §1.1 defines the classical group/window coding and Lemma 3.10 describes its continuity points. PC-471 specializes to all primes and retained-root phases, proving the proper dense image, generic/product-uniform collapse and phase-preserving buffered full-spectrum realization directly. Positive-density or taut-sieve conclusions are not assumed for this zero-density prime sieve.
