@@ -1,7 +1,7 @@
 ---
 id: CLUE-published-prime-existence-extends-minimax-sharpness
 type: research-clue
-status: proposed
+status: resolved
 origin: adversarial
 target_line: arithmetic_fidelity
 based_on:
@@ -39,4 +39,24 @@ Reconstruct AF-566 with fixed \(1/20+\epsilon<\beta<\beta_k\). Check the convers
 
 ## Evidence boundary
 
-The original published theorem statement and the threshold arithmetic have been checked; the proposed extension has not been accepted as a canonical Mathia result, and the external sieve proof has not been reproduced. This is a source-substitution question, not an objection to AF-566's valid Guth--Maynard consequence or a claim of a new prime theorem. The absolute identification margin still vanishes, the edited sources remain generalized-prime matched controls, and no RH-sensitive transfer or positive fixed-noise margin is supplied.
+Jia's theorem is an external published input; its sieve proof has not been reproduced here. The independently checked source substitution is persisted in AF-566 as linked below, without claiming a new prime theorem. The absolute identification margin still vanishes, the edited sources remain generalized-prime matched controls, and no RH-sensitive transfer or positive fixed-noise margin is supplied.
+
+## Research disposition
+
+Outcome: supported
+
+Resolved by:
+
+- [[research/arithmetic_fidelity/findings/AF-566-almost-all-short-interval-primes-sharpen-multi-probe-minimax.md]]
+
+The source substitution is now proved in AF-566: Jia's integer exceptional
+set remains \(o(X)\) after endpoint padding, and
+\((2X)^{1/20+\epsilon}\le X^\beta\) eventually for the fixed chosen
+\(1/20+\epsilon<\beta<\beta_k\). The injective shifted-start selection,
+gap-relative error, equal bottleneck heights, cross-pair exclusion and global
+response limit therefore apply unchanged for every fixed \(k\le24\).
+Exact integer comparisons certify \(\beta_{24}>1/20>\beta_{25}\).
+Jia's sieve theorem remains an external published input, and \(k=25\) remains
+outside this particular substitution. No growing-budget sharpness, usable
+finite prime-height bound, positive absolute-noise margin or RH implication
+is established.

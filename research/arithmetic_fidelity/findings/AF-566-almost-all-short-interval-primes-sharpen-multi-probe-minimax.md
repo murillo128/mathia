@@ -1,4 +1,4 @@
-# AF-566 — Almost-all short-interval primes make eight-probe minimax loss sharp
+# AF-566 — Almost-all short-interval primes make minimax loss sharp through 24 probes
 
 ## Status
 
@@ -34,23 +34,64 @@ for every sufficiently large \(X\). Then, for every fixed \(k\ge2\), there are s
 \]
 Hence \(\lim_{P\to\infty}M_k(P)=\vartheta_k\) under (2). Crucially, the hypothesis **does not require** a prime within \(X^\beta\) of every sufficiently large real starting point, as AF-565's more restrictive pointwise argument did.
 
-**Refereed unconditional consequence.** Guth--Maynard (2026), Corollary 1.4, gives (2) for every fixed \(\beta>2/15\). Since
+**Published unconditional consequence.** Jia (1996), Theorem on p. 21, gives (2) for every fixed \(\beta>1/20\), by the integer-start and interval-length conversion below. Since \(\beta_k\) strictly decreases in \(k\) and
 \[
-\beta_8=3-3(3/2)^{-1/8}=0.148260525\ldots>2/15,
+\beta_{24}=3-3(3/2)^{-1/24}=0.05025740927\ldots>1/20,
 \quad
-\beta_9=0.132155765\ldots<2/15,
+\beta_{25}=0.04826337276\ldots<1/20,
 \]
-we conclude **unconditionally using a peer-reviewed input** that
+we conclude **unconditionally using a published input** that
 \[
 \boxed{\displaystyle
 \lim_{P\to\infty}M_k(P)
 =\frac{\log((3/2)^{1/k})}{(3/2)^{1/k}-1}
  \exp\!\left(1-\frac{\log((3/2)^{1/k})}
  {(3/2)^{1/k}-1}\right)
-\quad(1\le k\le8).}
+\quad(1\le k\le24).}
 \tag{4}
 \]
-For \(k=1\) sharpness was already known from AF-563; the new conclusion is \(3\le k\le8\), extending AF-565's unconditional \(k=2\) result. In particular \(\vartheta_3=0.997719822162\ldots\) and \(\vartheta_8=0.999678965432\ldots\).
+The strict threshold inequalities have exact integer certificates:
+\(3\cdot59^{24}>2\cdot60^{24}\) and
+\(3\cdot59^{25}<2\cdot60^{25}\).
+For \(k=1\) sharpness follows from AF-563; AF-565 settles \(k=2\).
+Guth--Maynard's published exponent \(2/15\) also gives \(3\le k\le8\);
+Jia's existence theorem additionally supplies \(9\le k\le24\) without a
+preprint dependency. In particular \(\vartheta_{24}=0.9999643232705\ldots\).
+
+## Published existence input and its exact interface
+
+Jia's [original theorem](https://matwbn.icm.edu.pl/ksiazki/aa/aa76/aa7613.pdf),
+*Acta Arithmetica* 76 (1996), p. 21, states that for fixed sufficiently large
+\(B>0\), sufficiently small \(\epsilon>0\), and sufficiently large \(X\), all
+but \(O(X\log^{-B}X)\) **integers** \(n\in(X,2X)\) have at least
+\[
+0.005\,\frac{n^{1/20+\epsilon}}{\log n}
+\]
+primes in \((n,n+n^{1/20+\epsilon})\). Only existence is used here; an
+asymptotic count of primes is unnecessary.
+
+For a fixed \(2\le k\le24\), choose a sufficiently small fixed
+\(\epsilon>0\) and then a fixed \(\beta\) so that
+\[
+\alpha:=1/20+\epsilon<\beta<\beta_k.
+\]
+Uniformly for \(X<n<2X\),
+\[
+n^\alpha\le(2X)^\alpha\le X^\beta
+\quad\text{once }X^{\beta-\alpha}\ge2^\alpha.
+\]
+Thus every nonexceptional integer has a prime in the closed interval in
+(2). Adding the at most two integer endpoints to the exception set converts
+the open dyadic interval to \([X,2X]\) and leaves its size
+\(O(X\log^{-B}X)+O(1)=o(X)\). This proves exactly (2), at every sufficiently
+large scale, including the finitely many \(X_j\) used below.
+There is no passage from a real-start measure bound to an integer-start
+count, no independence assumption, and no requirement that either selected
+prime be consecutive to the other.
+
+The theorem of Jia is a literature input, not a sieve proof reproduced here.
+The additional conclusion is its specialization to the already established
+almost-all transfer theorem (3); it is not a new prime-distribution estimate.
 
 ## Lemma: a sparse exception set can be avoided at both shifted endpoints
 
@@ -78,11 +119,13 @@ g=q_0-p_0=O(\log p_0),\qquad
 d_0=\frac{2g}{e p_0^3\log p_0}.
 \tag{7}
 \]
-Fix \(k\in\{2,\ldots,8\}\), put \(r=r_k\), and choose once and for all
+Fix \(k\ge2\), put \(r=r_k\), and fix an exponent for which (2) holds with
 \[
-\frac{2}{15}<\beta<3-\frac3r=\beta_k.
+\beta<3-\frac3r=\beta_k.
 \tag{8}
 \]
+For the published specialization \(2\le k\le24\), the preceding source
+bridge supplies such an exponent with \(1/20+\epsilon<\beta\).
 For each \(1\le j<k\), set \(X_j=p_0^{r^j}\) (rounding to an integer changes nothing), and on \([X_j,3X_j/2]\) prescribe
 \[
 \Delta_j(v)=g\left(\frac{v}{p_0}\right)^3
@@ -106,7 +149,7 @@ g\,p_0^{\,r^j(3-\beta)-3}
 \]
 The exponent is smallest at \(j=1\) and is strictly positive because of (8). Equation (11) is exactly the prime-gap precision threshold in AF-565, but it need only be realized **for some suitable starting points**, not every one.
 
-Apply Guth--Maynard's almost-all theorem at the scale \(X_j\), once to the original starting point and once to its increasing shifted image \(m_j(n)=\lfloor n+\Delta_j(n)\rfloor\). The lemma constructs odd primes \(p_j,q_j\) with
+Apply (2) at the scale \(X_j\), once to the original starting point and once to its increasing shifted image \(m_j(n)=\lfloor n+\Delta_j(n)\rfloor\). The lemma constructs odd primes \(p_j,q_j\) with
 \[
 p_j\asymp X_j,\quad
 \frac{\log p_j}{\log p_0}\longrightarrow r^j,\quad
@@ -165,10 +208,12 @@ The upper bound uses the \(k+1\) separated peak scales and pigeonhole covering. 
 
 **Stress tests.** The selection lemma needs an increasing \(\Delta\), not merely \(\Delta=o(X)\); (9) is increasing, with \(\Delta'_j(v)>0\). The two exceptional-start sets are compared at the **same** dyadic scale, and the shifted map is injective; no unjustified probabilistic independence is used. The choice \(n\le3X/2\) keeps the shifted points inside the theorem's \([X,2X]\) range. The endpoint errors are \(O(X^\beta)\), negligible relative to the gap by (11), and \(q_j>p_j\) eventually. No assumption that \(p_j/X_j\to1\) is needed: \(\log p_j/\log p_0\to r^j\) suffices, while the *actual* prime \(p_j\) is used in the target gap (9). Only a fixed \(k\) is claimed; no simultaneous \(k\to\infty\) sharpness is inferred.
 
-**Further, explicitly non-refereed extension.** Runbo Li's *preprint* “Primes in almost all short intervals” (arXiv:2407.05651, v6) announces (2) for any \(\beta>1/21.5\). If that preprint theorem is accepted as valid, the identical argument extends the sharp constants through \(k=25\), since \(\beta_{25}=0.04826337\ldots>1/21.5\) but \(\beta_{26}=0.04642153\ldots<1/21.5\). This is a clearly marked dependency on an unrefereed result, **not** part of the peer-reviewed unconditional claim (4). The argument for all \(k\ge9\) cannot be obtained from Guth--Maynard's \(2/15\) exponent alone.
+**Further, explicitly non-refereed extension.** Runbo Li's *preprint* “Primes in almost all short intervals” ([arXiv:2407.05651v6](https://arxiv.org/abs/2407.05651v6)) announces (2) for any \(\beta>1/21.5\). If that preprint theorem is accepted as valid, the identical argument additionally covers \(k=25\), since \(\beta_{25}=0.04826337\ldots>1/21.5\) but \(\beta_{26}=0.04642153\ldots<1/21.5\). This additional case is a clearly marked dependency on an unrefereed result, **not** part of the published unconditional claim (4). Jia's \(1/20\) input alone cannot satisfy the strict exponent condition at \(k=25\); this is a boundary of this source substitution, not an impossibility theorem for 25-probe sharpness or a claim about every available prime theorem.
 
 ## Prior art and relevance
 
-The mean-value/PNT initial pair, last far pair, adjacent-gap reduction, uniform critical response, and equioscillating \(k\)-probe covering are from AF-559, AF-562, AF-564 and AF-565. The crucial external published input is Guth and Maynard, “New large value estimates for Dirichlet polynomials,” *Annals of Mathematics* 203(2), 623--675 (2026), DOI 10.4007/annals.2026.203.2.6, Corollary 1.4. Their almost-all prime distribution theorem is not new here. The line-specific derived contribution is the **two-endpoint injective-exception avoidance** that converts this weaker average information into AF-565's prescribed near-prime pair gaps, yielding sharp actual-prime-source minimax constants for six additional sample budgets.
+The mean-value/PNT initial pair, last far pair, adjacent-gap reduction, uniform critical response, and equioscillating \(k\)-probe covering are from AF-559, AF-562, AF-564 and AF-565. The load-bearing published input for (4) is Chaohua Jia, “Almost all short intervals containing prime numbers,” *Acta Arithmetica* 76(1), 21--84 (1996), [DOI 10.4064/aa-76-1-21-84](https://doi.org/10.4064/aa-76-1-21-84), Theorem on p. 21. Guth and Maynard, “New large value estimates for Dirichlet polynomials,” *Annals of Mathematics* 203(2), 623--675 (2026), [Corollary 1.4](https://annals.math.princeton.edu/2026/203-2/p06), supplies the stronger kind of conclusion of an almost-all counting asymptotic, but at the larger exponent \(2/15\), which suffices here only through \(k=8\). Existence and asymptotic counting are different source interfaces; this construction uses only the former.
+
+The line-specific derived mechanism is the **two-endpoint injective-exception avoidance** that converts almost-all information into AF-565's prescribed near-prime pair gaps. The Jia specialization extends its published-input consequences through 24 probes without changing that mechanism or the minimax formula. Both prime theorems and the finite covering calculation are prior art; no new general theorem or novelty of the immediate source substitution is claimed. The asymptotic proof supplies no practical finite prime-height cutoff, and the small positive exponent slack at \(k=24\) must not be treated as a finite-size guarantee.
 
 This changes the finite-sampling frontier but not the underlying absolute information threshold. Each source family has a full-curve identification radius \(d_0/2\to0\); all bounds are relative to that vanishing margin, and the critical parameter registration is assumed known and shared. The generalized-prime edits are matched controls, not a demonstrated discriminator between rational primes and generalized primes at an RH-relevant output, and no implication for RH or an actual zero-exclusion mechanism follows without a separately verified arithmetic-to-zeros stability bridge.
