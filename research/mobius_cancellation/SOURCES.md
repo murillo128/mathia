@@ -534,3 +534,15 @@ Role: comparison for MC-533's observation criterion. The preprint states RH-equi
 David Krieg and Jan Vybíral, *New Lower Bounds for the Integration of Periodic Functions*, Journal of Fourier Analysis and Applications 29, article 41 (2023), Section 2.1. DOI and open text: https://doi.org/10.1007/s00041-023-10021-7.
 
 Role: explicit primary discussion of the classical construction of functions invisible at observation points but with a large integral. MC-534 uses this as prior-art provenance for its lower-bound method, while deriving its own discrete square-free sign realization, interval-endpoint constraints, and signed target separation. The paper's Hilbert-space lower bounds and Schur-product results are not imported.
+
+## MC-S88 — Harper, Rademacher multiplicative model and moments
+
+Adam J. Harper, *Moments of random multiplicative functions, II: High moments*, Algebra & Number Theory 13 (2019), no. 10, 2277–2321. DOI: https://doi.org/10.2140/ant.2019.13.2277. Publisher text: https://msp.org/ant/2019/13-10/ant-v13-n10-p02-s.pdf, Section 1.
+
+Role: primary source for the classical independent-prime Rademacher model, extended multiplicatively to square-free integers and set to zero otherwise. MC-535 derives the elementary orthogonality and finite-background selection it needs directly; the paper's higher-moment estimates are not imported.
+
+## MC-S89 — NIST DLMF, prime population on fixed proportional intervals
+
+NIST Digital Library of Mathematical Functions, §27.12, *Asymptotic Formulas: Primes*, equations 27.12.4–27.12.5. https://dlmf.nist.gov/27.12.
+
+Role: classical PNT anchor for MC-535's count of selected primes in a fixed interval `(sX,tX]`: `(t-s+o(1))X/log X`. No estimate for every small sample gap is needed, and no new short-interval prime theorem is claimed.
