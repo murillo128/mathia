@@ -512,3 +512,15 @@ Role: classical provenance of the compact-distribution Bezout identity used in M
 Marianna Pensky and Theofanis Sapatinas, *Multichannel Boxcar Deconvolution with Growing Number of Channels*, Electronic Journal of Statistics 5 (2011), 53–82. DOI: https://doi.org/10.1214/11-EJS597. Author manuscript: https://arxiv.org/abs/1102.2298.
 
 Role: adjacent primary prior art for MC-532's distinction between multiple box measurements, irrational ratios, and quantitative small-divisor control. The paper studies periodic statistical reconstruction and badly approximable channel tuples; its estimation rates are not imported into the deterministic Möbius variance certificate.
+
+## MC-S85 — Baran–Demaine–Katz, Lipschitz integration from samples
+
+Ilya Baran, Erik D. Demaine and Dmitriy A. Katz, *Optimally Adaptive Integration of Univariate Lipschitz Functions*, Algorithmica 50 (2008), no. 2, 255–278. DOI: https://doi.org/10.1007/s00453-007-9093-7. Author manuscript: https://erikdemaine.org/papers/Integration_Algorithmica/paper.pdf, Section 2, Definition 2 and Proposition 1.
+
+Role: classical provenance for MC-533's sample-gap recovery cost. Lipschitz envelopes bound integral uncertainty between samples by a quadratic gap expression. MC-533 proves its discrete coverage weights, distance sum, and generic sharpness directly, then applies them to the existing paired Möbius pole test; no new quadrature principle is claimed.
+
+## MC-S86 — Verjovsky, local Fourier moment criteria for RH
+
+Alberto Verjovsky, *How Random Is the Möbius Function? Smoothing, Probability, and the Riemann Hypothesis*, arXiv:2607.25002v2 (2026), Sections 4 and 9–11. https://arxiv.org/html/2607.25002v2. Preprint; used as a prior-art comparison, not as an arithmetic input.
+
+Role: comparison for MC-533's observation criterion. The preprint states RH-equivalent local moments on Fourier arcs of scale `1/N` and derives a moment-to-point-value bound from derivative control. MC-533 instead uses physical-start second moments of two macroscopic windows and the already persisted reciprocal-pole certificate. The comparison supports no external novelty claim.
