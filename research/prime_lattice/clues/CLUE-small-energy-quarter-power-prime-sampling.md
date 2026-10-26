@@ -1,7 +1,7 @@
 ---
 id: CLUE-prime-lattice-small-energy-quarter-power-prime-sampling
 type: research-clue
-status: proposed
+status: resolved
 origin: master-researcher
 target_line: prime_lattice
 based_on:
@@ -111,9 +111,28 @@ tests and prime-counting converse.
 
 MC-537 proves the generic finite dispersion lemma and its Möbius
 application; PL-481 proves the cube-root stratified prime criterion.
-The quarter-power prime composition above is a target to validate, not
-an established destination theorem. Neither result supplies the prime
+The quarter-power prime composition is established by PL-482 as specified
+below. None of these results supplies the prime
 energy premise, complete uncentered variance, a finite GRH decision
 procedure, effective zero-uniform onset, adaptive sampling, randomized
 minimax optimality for prime data, or a guarantee for sources selected
 after the draws. No novelty or formal-verification claim is made.
+
+## Research disposition
+
+Outcome: supported
+
+Resolved by:
+
+- [[research/prime_lattice/findings/PL-482-small-empirical-energy-permits-quarter-power-prime-observations]]
+
+The finite range/dispersion proof permits the growing jump bound
+`A_X=log(3X)`. With `t=4 log X`, its failure probabilities are summable
+over both channels and all integer scales, giving the proposed
+`D_i << sqrt(V_i)+sqrt(X)(log X)^3` on one probability-one event.
+This event controls every bounded mean-zero pairing simultaneously.
+The local prime pole tests then give the claimed quarter-power
+joint-GRH equivalence, including the common outcome-dependent scale set
+fixed before epsilon. Positive multiplicity weights and the `O(log X)`
+rounding cost are retained; the converse uses the joint-GRH pointwise
+prime-counting bound. The actual sampled-energy ceiling remains unproved.
