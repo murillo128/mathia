@@ -31,6 +31,14 @@ moment-to-threshold inference, not a number-theoretic threshold formula.
 The leading `o(1)` tail-transfer statements in VIS-424/425/462 remain
 valid; the distinction is the additional multiplication by `log T`.
 
+A complementary smooth-density construction below matches an entire
+growing harmonic bank **exactly**, including every mixed amplitude
+moment of total degree at most `K`, yet leaves a threshold discrepancy
+of order `1/K`. It retains a nonzero scaled correction when `K` is
+proportional to `L`. A pointwise-bracket lower bound then shows why the
+physical-frequency range of VIS-462 cannot alone implement (12) at
+first-correction resolution, even if errors inside that range vanished.
+
 ## A fixed shell and its classical signed correction
 
 On the torus of the primes `2,3`, write `z_p=exp(i theta_p)`, put
@@ -185,6 +193,122 @@ condition is a theorem about **moving tests**; fixed-test asymptotics
 do not supply it. No uniform growing-degree estimate is inferred from
 the fixed-degree constants in VIS-463.
 
+## Exact growing-bank matching still leaves threshold ambiguity
+
+Write `theta=2v`, so `X=(1+cos(theta))/2` and the hard event is
+`E={pi/2<=theta<=3pi/2}` modulo `2pi`. For an integer `K>=0`, let
+`n` be the least odd integer greater than `K`, and let
+`s_n=sin(n*pi/2)`, which is `+1` or `-1`. Using the same `h` and
+`a=1/4`, define two comparison probabilities on the two-prime torus:
+
+\[
+ d\nu_{L,K}^{\pm}
+  =[1+h/L\mp a s_n\cos(n\theta)]\,dm,\qquad L\ge16.       \tag{13}
+\]
+
+Both densities are smooth, normalized and bounded below by
+`1-C/16-a>0.353`. Both satisfy the same uniform ordinary boundary-mass
+bound as the collar construction. Conditional Haar averaging gives
+`E_m[h | theta]=0`, so their angle marginals have densities
+`1 \mp a s_n cos(n theta)` relative to uniform angle measure.
+
+Their only Fourier differences from `(1+h/L)m` are at the torus
+characters `m=+/-2n(e_2-e_3)`. Hence every angular trigonometric test
+of degree at most `K` agrees **exactly** with the baseline. This includes
+every product of fixed-offset squared amplitudes of total degree at
+most `K`: each factor is `(1+cos(theta+omega u))/2`, with
+`omega=2log(3/2)`, and a product of total degree `R` has angular
+Fourier support in `[-R,R]`. The offsets can vary; support is unchanged.
+Nevertheless, direct integration gives
+
+\[
+ \nu_{L,K}^{\pm}(E)-m(E)=\pm\frac{a}{\pi n}.             \tag{14}
+\]
+
+Indeed `m(E)=1/2`, `m(h 1_E)=0`, and
+`int_E cos(n theta) dtheta/(2pi)=-s_n/(pi n)`.
+If `K=floor(cL)` for fixed `c>0`, then
+
+\[
+ L[\nu_{L,K}^{\pm}(E)-\tfrac12]
+     \longrightarrow\pm\frac{a}{\pi c}.                 \tag{15}
+\]
+
+For every fixed smooth torus test, repeated integration by parts in
+`theta_2` makes the difference from `(1+h/L)m` be `O_{psi,j}(n^{-j})`
+for every fixed `j`. Thus with `K` proportional to `L`, every fixed
+smooth-test remainder can be smaller than any prescribed inverse power
+of `L`, while (15) survives. Unlike the collar model, the scaled signed
+residual here has unbounded total variation, `2aL/pi`; no convergence
+against **all continuous** tests is asserted for this second model.
+The controls isolate different information failures, rather than
+silently strengthening every property of the first model.
+
+## The finite-band bracket resolution floor
+
+Let real angular trigonometric polynomials `q^-`, `q^+` of degree
+at most `K` obey `q^-<=1_E<=q^+`. Allow overshoot outside `[0,1]`,
+so this is more permissive than insisting that each bracket be bounded
+between zero and one. Set `g=q^+-q^-`. Then `g>=0` everywhere,
+and continuity from the two sides of each jump forces
+`g(pi/2)>=1` and `g(3pi/2)>=1`, regardless of the event's endpoint
+convention. Define the even integer `M_K=2 ceil((K+1)/2)>K`.
+The equally spaced quadrature rule starting at `pi/2` is exact for
+every trigonometric polynomial of degree at most `K`, and includes
+both jump points. Therefore
+
+\[
+ \int g\,\frac{d\theta}{2\pi}
+ =\frac1{M_K}\sum_{j=0}^{M_K-1}
+        g(\pi/2+2\pi j/M_K)
+ \ge\frac2{M_K}.                                        \tag{16}
+\]
+
+Consequently `L m(q^+-q^-)->0` requires `K/L->infinity`.
+This is a necessary condition, not a sufficient arithmetic estimate
+and not a claim that the displayed finite-`K` constant is always optimal.
+
+Adding torus coordinates does not evade (16). For any finite Laurent
+brackets of the same event, conditionally average over Haar fibers of
+`theta=2(theta_2-theta_3)-lambda`. This preserves order and the Haar
+gap integral. A character survives precisely when its exponent is
+`2k(e_2-e_3)`; every other prime coordinate and the common angle
+average away, and the twofold relative-angle fiber removes odd
+multiples of `e_2-e_3`. The surviving physical frequencies have
+magnitude `|k| omega`.
+
+Thus if the original brackets use only characters with physical
+frequency at most `L/8`, their conditional averages have degree
+`K<=floor(L/(8 omega))`. Equation (16) then implies
+
+\[
+ \liminf_{L\to\infty} Lm(q^+-q^-)
+       \ge16\omega>0.                                  \tag{17}
+\]
+
+This is precisely the frequency range of the unconditional character
+estimate in VIS-462. The first condition of (12) cannot hold within
+that band, even if all its character errors were zero. The construction
+(13) with `K=floor(L/(8 omega))` is a compatible information control:
+its only residual characters lie just outside that physical band, so
+**every** character inside the band on this two-prime torus matches the
+signed-density baseline,
+yet its scaled threshold correction tends to `+/-8a omega/pi`.
+
+This closes only the proposed finite-band bracketing repair using the
+current input. An enlarged band still needs moving-test error control;
+conditional arithmetic cancellation, direct interval estimates, or
+other information about the sampling measure may bypass this argument.
+It is not a theorem that genuine zero ordinates have a nonzero residual.
+
+The [Fourier-bank visualization](../visualizations/threshold-fourier-bank.md)
+shows the exact matched moments, opposite threshold shifts and bracket
+floor. Rational Laurent convolution verified 78 moment-support checks;
+independent event quadrature agreed with (14) within `2.4e-16`, and
+the equally spaced quadrature identity within `6.7e-16` on the stated
+finite control panel. The proof, not these finite checks, gives the
+growing-bank and multivariate statements.
+
 ## Controls and numerical audit
 
 The [paired visualization](../visualizations/threshold-boundary-layer.md)
@@ -227,6 +351,14 @@ of zeros of the Riemann zeta function, II*, *Mathematische Annalen*
 explicitly separate smooth-test correction from an interval-indicator
 assertion. This describes what that source establishes, not a claim
 that its conjecture remains open after all subsequent literature.
+Its section 2, proof of Theorem 1(ii) and Theorem 2, also uses classical
+interval majorants/minorants with an inverse-degree integral gap and
+separates the controlled Fourier range from higher modes. The resolution
+tradeoff itself is therefore prior art. Equations (13)--(17) specialize
+it to the normalized two-prime shell, give smooth positive exact-bank
+controls and show by fiber averaging that extra torus coordinates do
+not repair this particular threshold. They are elementary harmonic
+analysis, not a new approximation theorem.
 
 The measure-theoretic mechanism is classical weak-versus-setwise
 convergence of signed corrections. For the underlying probability and
@@ -238,11 +370,11 @@ that retains the **whole** classical smooth-test correction, even with
 `O_psi(L^-2)` error, yet defeats first-correction threshold transfer.
 
 VIS-463's axis cancellation remains exact, and VIS-462's leading Haar
-tail convergence is unaffected. The model does not obey or purport to
-obey every arithmetic constraint on a zero sequence, a uniform Fourier
-bank estimate, or a fixed single orbit sampling rule. It therefore
-cannot demonstrate an actual zero anomaly or disprove an arithmetic
-threshold theorem. Its consequence is narrower: calibrating a hard
+tail convergence is unaffected. These models do not obey or purport to
+obey every arithmetic constraint on a zero sequence, estimates outside
+their specified test banks, or a fixed single orbit sampling rule. They
+therefore cannot demonstrate an actual zero anomaly or disprove an
+arithmetic threshold theorem. Their consequence is narrower: calibrating a hard
 low-tail residual at `1/log T` resolution requires a quantitative
 boundary/moving-test input beyond the existing fixed-moment and
 ordinary Haar boundary-mass gates. No new selector, RH implication,
