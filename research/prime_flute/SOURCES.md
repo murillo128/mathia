@@ -612,6 +612,14 @@ Relevant finding: PF-364; relevant local clue: CLUE-positive-width-transition-sc
 
 **Scope warning.** This closes the sufficiently narrow, constant-retaining transition-angle repair, not every fixed-width band, mean-zero variant or condition at infinity. It supplies no comparison theorem for relative resolvents, scattering or RH and no primality-specific invariant. The classical sources do not themselves establish the geometric hypotheses of this application.
 
+## S38 — actual-energy mean removal with a polynomial residual loss
+
+The approximation, concentration and positive-shorting sources are Almira, Section 2.1 (S31), Friedland–Yomdin, Theorem 1.1 (S34), and Anderson–Trapp (S24/S33). PF-365 derives its first-mode residual factor, scalar coefficient estimate and completed-space conclusion explicitly; no new general Cauchy or shorting theorem is claimed.
+
+Relevant finding: PF-365; relevant local clue: CLUE-positive-width-transition-schur-complement.md. First nonzero cosine carriers extend the actual-energy obstruction to constants fixed to zero and to all constants shorted together with transitions. Shorting the common scalar node costs `tanh^4(pi^2/L_i) ~ pi^8/L_i^4`; the actual upper-trial coefficient cost and the antisymmetric constant sector remain controlled by the same strict exponential margins as PF-364.
+
+**Scope warning.** The scalar constant-residual congruence is used only to construct a trial. The two actual-energy angles are not asserted to be unitarily equivalent. Wider bands, other completions, elimination of growing low sectors and relative spectral/RH consequences remain outside the result.
+
 ## Provenance policy for future additions
 
 For each future finding, record separately:
