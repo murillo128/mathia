@@ -30,7 +30,7 @@ R_n^\infty:=\sup_{0<\alpha\le1}R_n(\alpha),
 \tag{2}
 \]
 
-with the usual harmless one-sided convention at jumps. Dress's 1999 theorem is
+with the usual harmless one-sided convention at jumps. [[research/prior_art/incremental/PA-dress-exact-farey-absolute-discrepancy|Dress's 1999 theorem]] is
 
 \[
 \boxed{R_n^\infty=\frac1n\qquad(n\ge1).}

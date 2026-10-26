@@ -78,7 +78,7 @@ Z_{Q,r}(A,B)\le C_{Q,r}(A,B)\le2Z_{Q,r}(A,B).
 
 ## 2. Why approximate rank placement forces exact translation
 
-Dress's absolute-discrepancy theorem, in the positive-point convention,
+[[research/prior_art/incremental/PA-dress-exact-farey-absolute-discrepancy|Dress's absolute-discrepancy theorem]], in the positive-point convention,
 gives
 \[
 |D_k|\le1/Q,\qquad D_k=x_k-k/N,

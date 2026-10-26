@@ -88,7 +88,13 @@ FD-346 refines the existing high-band episode; its classification, the retained 
 
 [[research/farey_discrepancy/findings/FD-347-finite-half-period-tests-miss-reflected-gap-sector-bias|FD-347]] adds one `new-barrier` episode for finite-test sufficiency, distinct from the already resolved projected-comparator question. For every fixed offset radius R, a reflected rotated doubled grid preserves the normalized genuine gap population and coarse high-band law, passes all half-period tests in that window at `O_R(Q^-2)`, and still has nonzero limiting sector bias. Its source construction omits the Farey denominator cutoff and adjacency labels. The bias is not uniform in growing R; genuine all-fixed-offset decorrelation, band-weighted sufficient estimates and additional arithmetic rigidity remain outside the obstruction.
 
-The latest 20 classifiable prospective episodes give 35% fertility, 55% barriers and 10% prior-art collisions. These unchanged rates summarize a changed set of inspected questions. Atlas states and masses remain unchanged. Reference formatting, membership reconciliation and clue lifecycle changes contribute no episodes.
+The finite-test obstruction is retained as its own episode. Reference formatting, membership reconciliation and clue lifecycle changes contribute no episodes.
+
+## Exact rational rank reduction
+
+[[research/farey_discrepancy/findings/FD-348-small-denominator-half-period-pairs-are-exact-rational-translates|FD-348]] adds one `viable-extension` episode for the genuine-source small-denominator counting question. Under its strict small-product condition, every encounter is an exact rational half-translation, and the count equals a triangularly weighted three-value rank-defect population. This makes the necessary anti-concentration estimate explicit without establishing it. Composite orders are included; the other threshold rectangles and all-fixed-offset correlation target remain open. This is distinct from FD-347's artificial finite-test obstruction. Dress registration, source wrappers and structural memberships add no episode.
+
+The retained window contains eight viable extensions, ten barriers and two prior-art collisions. Atlas masses and states remain unchanged; the window is selective, not a representative productivity sample.
 
 ## Retained prospective window
 
@@ -97,11 +103,11 @@ Classifiable episodes: **20**. Insufficient-evidence episodes: **0**. Retrospect
 | Classification | Episodes |
 | --- | ---: |
 | known-prior-art | 2 |
-| new-barrier | 11 |
-| viable-extension | 7 |
+| new-barrier | 10 |
+| viable-extension | 8 |
 
-- **FrontierFertilityEpisodes = 35.0%**
-- **BarrierRate = 55.0%**
+- **FrontierFertilityEpisodes = 40.0%**
+- **BarrierRate = 50.0%**
 - **PriorArtCollisionRate = 10.0%**
 - **InternalDuplicateRate = 0.0%**
 
@@ -110,11 +116,11 @@ Classifiable episodes: **20**. Insufficient-evidence episodes: **0**. Retrospect
 | Line | Episodes | Viable extension | Barrier | Prior art | Duplicate |
 | --- | ---: | ---: | ---: | ---: | ---: |
 | `arithmetic_fidelity` | 4 | 2 | 2 | 0 | 0 |
-| `farey_discrepancy` | 2 | 0 | 2 | 0 | 0 |
+| `farey_discrepancy` | 3 | 1 | 2 | 0 | 0 |
 | `mobius_cancellation` | 4 | 2 | 1 | 1 | 0 |
 | `prime_lattice` | 5 | 3 | 2 | 0 | 0 |
 | `visual_exploration` | 1 | 0 | 1 | 0 | 0 |
-| `weil_positivity` | 2 | 0 | 1 | 1 | 0 |
+| `weil_positivity` | 1 | 0 | 0 | 1 | 0 |
 | `xi_flow` | 2 | 0 | 2 | 0 | 0 |
 
 Per-line samples are the retained entries, capped at ten; small and selectively inspected samples do not establish trends. No rate alone supports a research-allocation decision.

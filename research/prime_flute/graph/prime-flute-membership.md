@@ -375,3 +375,4 @@ This stable projection inventories every current canonical Prime Flute finding. 
 - [[research/prime_flute/findings/PF-362-normal-ray-transport-has-a-nonvanishing-corridor-end-cost|PF-362]]
 - [[research/prime_flute/findings/PF-363-trace-preserving-corridor-charts-give-a-coupled-pant-energy-lower-bound|PF-363]]
 - [[research/prime_flute/findings/PF-364-narrow-transition-shorting-has-essential-angle-one-in-the-actual-seam-energy|PF-364]]
+- [[research/prime_flute/findings/PF-365-removing-or-shorting-constants-leaves-essential-angle-one-in-the-actual-seam-energy|PF-365]]

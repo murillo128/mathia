@@ -356,3 +356,4 @@ This stable projection inventories every current canonical Farey Discrepancy fin
 - [[research/farey_discrepancy/findings/FD-345-exact-energy-does-not-repair-four-reflected-farey-defect-erasures|FD-345]]
 - [[research/farey_discrepancy/findings/FD-346-classical-gap-correlations-separate-high-band-farey-transport|FD-346]]
 - [[research/farey_discrepancy/findings/FD-347-finite-half-period-tests-miss-reflected-gap-sector-bias|FD-347]]
+- [[research/farey_discrepancy/findings/FD-348-small-denominator-half-period-pairs-are-exact-rational-translates|FD-348]]

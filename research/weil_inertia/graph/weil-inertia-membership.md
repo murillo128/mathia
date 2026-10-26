@@ -473,3 +473,4 @@ This stable projection inventories every current canonical Weil Inertia finding.
 - [[research/weil_inertia/findings/WI-467-far-right-euler-correction-is-an-absolutely-continuous-signed-measure|WI-467]]
 - [[research/weil_inertia/findings/WI-468-first-prime-square-correction-has-a-singular-arcsine-profile|WI-468]]
 - [[research/weil_inertia/findings/WI-469-gevrey-cutoffs-admit-the-full-first-euler-sampling-correction|WI-469]]
+- [[research/weil_inertia/findings/WI-470-three-prime-curvature-gives-finite-euler-correction-at-every-safe-line|WI-470]]
