@@ -575,6 +575,8 @@ Role: classical divergent-probability-sum criterion for independent events in MC
 
 MC-540 uses the first Borel–Cantelli lemma, Theorem 2.3.1: summable endpoint-hit probabilities give eventual invisibility without independence. The author-hosted manuscript is also available at https://sites.math.duke.edu/~rtd/PTE/PTE5_011119.pdf.
 
+MC-543 uses the elementary conditional nonavoidance principle recorded in Exercise 4.3.5, with its finite repeated-conditioning proof included. Its independent variables are balanced-prime-block orientations; the resulting arithmetic window events need not be independent. Conditioning on off-subsequence orientations and using finite observation horizons supplies the adapted event structure. No new probability theorem is claimed.
+
 ## MC-S93 — Kunsch–Rudolf, disjoint-bump randomized integration controls
 
 Robert J. Kunsch and Daniel Rudolf, *Optimal confidence for Monte Carlo integration of smooth functions*, arXiv:1809.09890v1 (2018), Section 2.1, Lemmas 2.1–2.2. https://arxiv.org/html/1809.09890v1.
