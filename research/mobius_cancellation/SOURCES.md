@@ -525,7 +525,7 @@ Ilya Baran, Erik D. Demaine and Dmitriy A. Katz, *Optimally Adaptive Integration
 
 Role: classical provenance for MC-533's sample-gap recovery cost. Lipschitz envelopes bound integral uncertainty between samples by a quadratic gap expression. MC-533 proves its discrete coverage weights, distance sum, and generic sharpness directly, then applies them to the existing paired Möbius pole test; no new quadrature principle is claimed.
 
-MC-534 applies the same indistinguishable-envelope principle to a common coefficient primitive. Its square-free sign bridges match all observed interval endpoints and retain a fixed signed smooth pairing; this is a derived observation-boundary control, not a new integration principle.
+MC-534 applies the same indistinguishable-envelope principle to a common coefficient primitive. Its square-free sign bridges match all observed interval endpoints and retain a fixed signed smooth pairing; this is a derived observation-boundary control, not a new integration principle. MC-538 uses hidden narrow prime bridges as a sampling obstruction for one fixed multiplicative source, without importing a new general integration bound.
 
 ## MC-S86 — Verjovsky, local Fourier moment criteria for RH
 
@@ -543,13 +543,13 @@ Role: explicit primary discussion of the classical construction of functions inv
 
 Adam J. Harper, *Moments of random multiplicative functions, II: High moments*, Algebra & Number Theory 13 (2019), no. 10, 2277–2321. DOI: https://doi.org/10.2140/ant.2019.13.2277. Publisher text: https://msp.org/ant/2019/13-10/ant-v13-n10-p02-s.pdf, Section 1.
 
-Role: primary source for the classical independent-prime Rademacher model, extended multiplicatively to square-free integers and set to zero otherwise. MC-535 derives the elementary orthogonality and finite-background selection it needs directly; the paper's higher-moment estimates are not imported.
+Role: primary source for the classical independent-prime Rademacher model, extended multiplicatively to square-free integers and set to zero otherwise. MC-535 derives the elementary orthogonality and finite-background selection it needs directly; the paper's higher-moment estimates are not imported. MC-538 derives the weighted second-moment cost of finitely many prescribed prime signs and uses it in a lacunary, fixed-function construction.
 
 ## MC-S89 — NIST DLMF, prime population on fixed proportional intervals
 
 NIST Digital Library of Mathematical Functions, §27.12, *Asymptotic Formulas: Primes*, equations 27.12.4–27.12.5. https://dlmf.nist.gov/27.12.
 
-Role: classical PNT anchor for MC-535's count of selected primes in a fixed interval `(sX,tX]`: `(t-s+o(1))X/log X`. No estimate for every small sample gap is needed, and no new short-interval prime theorem is claimed.
+Role: classical PNT anchor for MC-535's count of selected primes in a fixed interval `(sX,tX]`: `(t-s+o(1))X/log X`. No estimate for every small sample gap is needed, and no new short-interval prime theorem is claimed. MC-538 pigeonholes this fixed-interval prime population into one narrow cell at each selected scale; it likewise requires no uniform short-interval prime asymptotic.
 
 ## MC-S90 — Chopin–Gerber, classical stratified quadrature rate
 
