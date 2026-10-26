@@ -630,6 +630,19 @@ Section 5a derives a uniform corollary for every closed subspace of the same ban
 
 **Scope warning.** The result requires the stated strict width/residual margins and the canonical coupled lower, complete-pant upper and seam-coercivity inputs. It neither treats arbitrary broad low-band elimination nor uses monotonicity of normalized angles under additional shorting. Other completions, relative spectral consequences, primality discrimination and RH remain outside it.
 
+## S40 — exact-lattice packets and the window/width obstruction
+
+**NIST Digital Library of Mathematical Functions**, Section 2.3(iii), *Laplace's Method*.
+
+- https://dlmf.nist.gov/2.3#iii
+- Classical asymptotic background for PF-367's binomial packet. The finding derives its logarithmic rates directly and handles every period with an exponential-weight comparison; no new asymptotic method is claimed.
+
+Friedland--Yomdin, Theorem 1.1, and Gaillac--Gautier, Proposition 1 and Section 3 (S34), supply the neighboring exponential-polynomial and weighted-Fourier concentration context. Neither result is imported to prove the explicit counterexample.
+
+Relevant finding: PF-367; relevant local clue: CLUE-positive-width-transition-schur-complement.md. A consecutive exact cuff-lattice packet in a physical interval of width `W` concentrates at `|t|/L=arctan(W)/pi`. Windows with a smaller limiting half-length/period ratio capture exponentially vanishing weighted mass, even though the packet has coefficient absolute sum one. This excludes a broad-band extension of the uniform scalar window comparison based only on exact lattice membership and the conservative certified window.
+
+**Scope warning.** The threshold is for the exhibited packet, not the optimal concentration constant over all band fields. Failure on a smaller certified subwindow does not imply failure on the actual full corridor. No actual minimizing residual, wide-band shorted angle, relative spectral or RH conclusion is established.
+
 ## Provenance policy for future additions
 
 For each future finding, record separately:
