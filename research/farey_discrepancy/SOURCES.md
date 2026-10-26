@@ -125,7 +125,7 @@ This file records durable literature dependencies for `research/farey_discrepanc
 
 ## Exact signature erasures
 
-- R. W. Hamming, *Error Detecting and Error Correcting Codes*, Bell System Technical Journal **29**(2) (1950), 147–160, DOI `10.1002/j.1538-7305.1950.tb00463.x`, §§2 and 5; [original-paper scan](https://zoo.cs.yale.edu/classes/cs323/doc/Hamming.pdf). Role: classical checksum/Hamming-distance boundary for FD-340. That finding derives an exact integer checksum for inherited prime-Farey seam defects, recovers one erased value using FD-331, and supplies an energy-changing two-erasure certificate; it does not claim a new coding principle or a binary linear code.
+- R. W. Hamming, *Error Detecting and Error Correcting Codes*, Bell System Technical Journal **29**(2) (1950), 147–160, DOI `10.1002/j.1538-7305.1950.tb00463.x`, §§2 and 5; [original-paper scan](https://zoo.cs.yale.edu/classes/cs323/doc/Hamming.pdf). Role: classical checksum/Hamming-distance boundary for FD-340. That finding derives an exact integer checksum for inherited prime-Farey seam defects, recovers one erased value using FD-331, and supplies an energy-changing two-erasure certificate; it does not claim a new coding principle or a binary linear code. FD-344 combines the checksum with equality of mirrored seam values to recover any three erasures in the reflection-preserving class, and supplies an exact energy-changing four-erasure certificate at order seven.
 
 ## Expansion rule
 
