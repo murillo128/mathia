@@ -461,6 +461,8 @@ Role: classical concentration input for MC-523's single square-free-supported ra
 
 The same bounded-independent-variable inequality is used in MC-524 for nonidentically distributed signs: it controls centered prefix fluctuations, the unbiased retained windows, and fixed-pattern averages. Its use supplies an auxiliary deterministic existence control, not a model assertion about Möbius.
 
+MC-536 applies the inequality to independent observation locations inside disjoint cells, with Möbius held fixed. Summable tail probabilities yield almost-sure recovery on all large integer scales; this supplies no arithmetic energy ceiling.
+
 ## MC-S76 — Bos–Ware and classical Legendre reproducing kernels
 
 Leonard Bos and A. F. Ware, *On the Uniqueness of an Orthogonality Property of the Legendre Polynomials*, Dolomites Research Notes on Approximation 11 (2018), 37–42. https://drna.padovauniversitypress.it/system/files/papers/BosWare_2018_UOP.pdf. Classical normalization and finite polynomial formulas: NIST Digital Library of Mathematical Functions, §§18.3 and 18.5, https://dlmf.nist.gov/18.3 and https://dlmf.nist.gov/18.5.
@@ -546,3 +548,9 @@ Role: primary source for the classical independent-prime Rademacher model, exten
 NIST Digital Library of Mathematical Functions, §27.12, *Asymptotic Formulas: Primes*, equations 27.12.4–27.12.5. https://dlmf.nist.gov/27.12.
 
 Role: classical PNT anchor for MC-535's count of selected primes in a fixed interval `(sX,tX]`: `(t-s+o(1))X/log X`. No estimate for every small sample gap is needed, and no new short-interval prime theorem is claimed.
+
+## MC-S90 — Chopin–Gerber, classical stratified quadrature rate
+
+Nicolas Chopin and Mathieu Gerber, *Higher-order Monte Carlo through cubic stratification*, SIAM Journal on Numerical Analysis 62 (2024), no. 1, 229–247. DOI: https://doi.org/10.1137/22M1532287. Author manuscript: https://arxiv.org/html/2210.01554v2, Section 2.1, equation (5).
+
+Role: primary-paper exposition of Haber's classical one-uniform-point-per-cell estimator and its one-dimensional `q^(-3/2)` root-mean-square rate. MC-536 derives its discrete cell-integrated-weight variant, covariance bias, exact removal of fitted constants, and transfer to the paired Möbius pole test. No new quadrature rate or external novelty is claimed; the paper's higher-order estimators are not used.
