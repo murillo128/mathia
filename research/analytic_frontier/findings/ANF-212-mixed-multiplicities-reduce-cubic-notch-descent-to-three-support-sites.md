@@ -5,9 +5,12 @@ At `a=(5/12) eta^3` and every sufficiently small width, the smallest
 number of distinct real sites that can beat the entire two-site class
 is three when integer multiplicities are allowed, but four when every
 site must be simple. An explicit three-site witness has multiplicities
-`(1,2,2)` and total cardinality five. This resolves the support-versus-
-cardinality boundary left by ANF-211; it neither finds the unrestricted
-minimizer nor improves that finding's four-point energy witness.
+`(1,2,2)` and total cardinality five, the least total multiplicity
+that permits three-site descent. Every three-site configuration of total
+cardinality four retains a uniform positive fourth-order gap above the
+pair baseline. This resolves the support-versus-cardinality boundary
+left by ANF-211; it neither finds the unrestricted minimizer nor improves
+that finding's four-point energy witness.
 
 ## Object and exact support distinction
 
@@ -225,6 +228,172 @@ witness can therefore be compared to precisely the same (3), proving
 (6). The witness (4) has five points with multiplicity, so it does
 not contradict ANF-211's total-cardinality-three exclusion.
 
+## One double site still cannot produce three-site descent
+
+The five units of multiplicity in (4) are necessary among descending
+configurations supported on at most three sites. The only new case
+beyond ANF-211's total-cardinality-three exclusion is a permutation of
+`(1,1,2)` on three distinct sites. For every such configuration, uniformly
+in its two positive gaps,
+\[
+\boxed{
+\liminf_{\eta\downarrow0}\inf_{\substack{|\operatorname{supp}W|=3\\
+N(W)=4}}
+\frac{Q_{\eta,\lambda\eta^3}(W)-(1-2\lambda\eta^4)}{\eta^4}
+\ge\frac1{600}.
+}
+\tag{18}
+\]
+Here and below `lambda=5/12`; the infimum in (18) is over real
+multisets. In particular, the quotient is at least `1/1200` for all
+sufficiently small widths. A pair at any fixed positive zero of `K`
+has energy `1-2 lambda eta^4+O(eta^6)`, so (18) excludes descent below
+the true pair minimum, not merely below its leading approximation.
+
+To prove (18), order the sites as `0,u,u+v`. With edge order
+`u,v,u+v`, put `w=(m_0 m_1,m_1 m_2,m_0 m_2)`. Reflection leaves
+only the patterns
+\[
+w=(2,2,1)\quad\hbox{or}\quad w=(2,1,2).
+\]
+The reflected endpoint edge-weight pattern `(1,2,2)` is covered by exchanging
+`u,v` in the second case. Both have `D=L=6` and `sum w_j=5`.
+For positive radian variables `x,y`, define
+\[
+s(z)=(\sin z/z)^2,\qquad
+C_w(x,y)=\frac{(1/x+1/y-1/(x+y))^2}
+{4\{x^2/w_1+y^2/w_2+(x+y)^2/w_3\}},
+\]
+\[
+S_w(x,y)=w_1s(x)+w_2s(y)+w_3s(x+y).
+\]
+The decisive global inequality is
+\[
+\boxed{C_w(x,y)-\frac5{12}\{S_w(x,y)-3\}\ge\frac1{200}
+\qquad(x,y>0).}
+\tag{19}
+\]
+
+Here is a reduction to a compact rational certificate. If
+`M=max(x,y)>=2`, at most one edge is shorter than `M`. Its weight
+is at most two, while the other two `s` values are at most `M^-2`.
+Consequently `S_w<=2+3/4=11/4`, and (19)'s left side is at least
+`5/48`. If `min(x,y)<=1/10` and `M<=2`, the numerator before
+squaring is at least `1/min(x,y)>=10`. The denominator is at most
+`4(1/100+4+441/100)=842/25`, since every weight is at least one.
+As `S_w<=5`, the left side is at least `1250/421-5/6>1/200`.
+
+It remains to cover `[1/10,2]^2`. The positive numerator
+`1/x+1/y-1/(x+y)` strictly decreases in either variable, and the
+positive denominator strictly increases. Thus `C_w` decreases in
+each variable. The polynomial envelope from ANF-211 is
+\[
+P(t)=1-t^2/3+2t^4/45-t^6/315+2t^8/14175,\qquad
+U(t)=\begin{cases}P(t),&0\le t\le2,\\t^{-2},&t>2.\end{cases}
+\tag{20}
+\]
+It bounds `s(z)` for every `z>=t`. On `[0,2]`, the alternating
+Taylor tail gives `s(t)<=P(t)`; `s` decreases on `[0,pi]`, and its
+remaining lobes obey `s(z)<=1/pi^2<1/9<=s(2)`. The last inequality
+follows from `sin 2>=2/3`. For `t>2` use `sin^2 z<=1`.
+
+On each box with lower corner `(i/100,j/100)` and side `1/100`,
+evaluate `C_w` at the upper corner and the three `U` terms at the
+lower endpoints. The following standard-library certificate uses
+exact rational arithmetic for all 36,100 boxes for each weight pattern:
+
+```python
+from fractions import Fraction as R
+
+
+def P(t):
+    z = t*t
+    return 1-z/3+2*z*z/45-z**3/315+2*z**4/14175
+
+
+def U(t):
+    return P(t) if t <= 2 else 1/(t*t)
+
+
+def C(x, y, w):
+    return (1/x+1/y-1/(x+y))**2 / (
+        4*(x*x/w[0]+y*y/w[1]+(x+y)**2/w[2]))
+
+
+upper = {i: U(R(i, 100)) for i in range(10, 400)}
+expected = {
+    (2, 2, 1): R(1166717774248412191204945798883,
+                 154502449989887340000000000000000),
+    (2, 1, 2): R(68092332178977567481864557740869,
+                 257709716413487415000000000000000),
+}
+for w in expected:
+    minimum, count = R(100), 0
+    for i in range(10, 200):
+        for j in range(10, 200):
+            lower = C(R(i+1, 100), R(j+1, 100), w)-R(5, 12)*(
+                w[0]*upper[i]+w[1]*upper[j]+w[2]*upper[i+j]-3)
+            assert lower > R(1, 200)
+            minimum = min(minimum, lower)
+            count += 1
+    assert count == 36100
+    assert minimum == expected[w]
+```
+
+The two minimum enclosure values are approximately `0.00755145`
+and `0.26422105`, respectively. These are lower bounds on entire
+boxes, not sampled function values. Together with the exterior
+estimates they prove (19).
+
+It remains to justify that this covers every possible low-energy
+configuration in (18). Its exact energy is
+\[
+Q=1+\frac13\sum_{j=1}^3w_jF(r_j)
+-\lambda\eta^4\left[1+\frac13\sum_{j=1}^3
+w_j\operatorname{sinc}^2(\eta r_j)\right],
+\qquad(r_1,r_2,r_3)=(u,v,u+v).
+\tag{21}
+\]
+A sequence with bounded-above scaled excess in (18) has
+`sum F(r_j)=O(eta^4)`, because all weights are positive and the
+notch exposure is bounded. If `max(eta u,eta v)` tends to infinity,
+two notch terms vanish. The surviving weight is at most two, so
+(21) gives lower limit at least `lambda/3=5/36` in (18).
+
+Otherwise take a subsequence `eta u->p`, `eta v->q`, both finite.
+The coarse triple gap of ANF-114 forces `p+q>0`. Neither limit can
+vanish: if `p=0<q`, the identity
+`z K(z)=(b/d)sin(pi z)+O(1/z)` at `v` and `u+v` gives
+`sin(pi u)=O(eta)`. Hence `|cos(pi u)|->1` and
+`bu sin(pi u)->0`, whereas
+\[
+\cos(\pi u)-bu\sin(\pi u)=(1-du^2)K(u)=o(1).
+\]
+This contradiction includes bounded or colliding short gaps. The
+case `q=0<p` is identical.
+
+For `p,q>0`, all three gaps approach integers to order `eta`.
+After taking bounded phase-offset subsequences, (12)--(13) apply.
+Changing to radians `x=pi p`, `y=pi q` turns their weighted minimum
+into exactly `C_w(x,y)`: the factor is `pi^4/d^2=1/4`.
+Thus (21) and (19) give lower limit at least
+`[C_w-lambda(S_w-3)]/3>=1/600`. Subsequences cover bounded and
+unbounded scaled gaps, proving the uniform assertion (18).
+
+Every three-site configuration with total multiplicity at most four
+is either simple or one of these mixed triples. Configurations on
+at most two sites obey (16)--(17), irrespective of their
+multiplicities. ANF-211 handles the simple triples, while (4)--(5)
+supply a descending five-point triple. Consequently
+\[
+\boxed{\min_{\substack{|\operatorname{supp}W|\le3\\
+Q_{\eta,\lambda\eta^3}(W)<q_{2,\mathrm{supp}}}}N(W)=5}
+\tag{22}
+\]
+for all sufficiently small widths. Merely adding one double site
+to a simple triple does not suffice; the two double sites in (4)
+cross a real threshold in the weighted phase/exposure balance.
+
 ## Prior art, validation and consequence
 
 [Wang, Lemma 3.2](https://arxiv.org/html/2609.24167v1#S3)
@@ -242,9 +411,12 @@ the kernel, weighted triple energy and mixed-occupation notch did
 not identify this exact comparison; no exhaustive novelty claim is
 made.
 
-The embedded rational certificate and both ANF-211 certificates
-were executed successfully. The latter support the imported universal
-simple-triple exclusion and four-point witness; a sampled triple
+Both embedded rational certificates and all three ANF-211 certificates
+were executed successfully. The weighted exclusion certificate covers
+72,200 rational boxes; the analytic exterior bounds and the exhaustive
+low-energy sequence reduction in (21) make it a global inequality.
+The ANF-211 certificates support the imported universal simple-triple
+exclusion, four-point witness and distant-copy bound; a sampled triple
 search would not establish (6). Direct parity-reduced floating-point
 evaluation of (4) at shrinking widths agrees with (11), but only
 the exact expansion and rational inequality prove eventual descent.
@@ -256,11 +428,15 @@ cardinality and distinct support in this cubic regime. Four distinct
 sites are necessary for a **simple** descending configuration; only
 three are necessary when a simple site and two double sites may share
 the phase constraint. Uniformly doubling a simple triple gives the
-same normalized energy and cannot produce this effect.
+same normalized energy and cannot produce this effect. The weighted
+inequality (19) additionally rules out every single-double-site triple,
+so five units of multiplicity are necessary as well as sufficient in
+the three-site class. Weighted least squares and interval enclosures
+are classical methods; the threshold (22) is a local consequence for
+this fixed shrinking-notch family, not a new general principle.
 
-This does not show that five is the smallest total multiplicity for
-a three-site descending configuration, that (4) minimizes even the
-three-site class, or that it beats ANF-211's simple four-point witness.
+This does not show that (4) minimizes the three-site class or that it
+beats ANF-211's simple four-point witness.
 It does not locate the first transition coefficient, prove finite
 attainment of the unrestricted infimum, or address nonreal
 configurations. No new zero-density bound, zero proportion or RH
