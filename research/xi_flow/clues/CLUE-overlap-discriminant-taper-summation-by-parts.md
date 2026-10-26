@@ -7,6 +7,7 @@ target_line: xi_flow
 based_on:
   - research/xi_flow/findings/XF-027-normalized-block-discriminant-has-square-production-and-affine-exterior-cancellation.md
   - research/xi_flow/findings/XF-028-overlapping-normalized-discriminants-make-covered-collisions-positive.md
+  - research/xi_flow/findings/XF-209-covered-edge-spikes-have-vanishing-fixed-time-total-variation.md
 ---
 
 # Can overlapped discriminant flux be localized by discrete taper derivatives?
@@ -91,3 +92,15 @@ by itself yield a vanishing localization loss. The required estimate
 must make the relevant edge cost small, dominate it by retained
 production, or use further source/time information. This remains an
 edge degeneration, not a negative uniformly covered interior.
+
+`XF-209` settles the temporal behavior of that particular edge family:
+on a fixed short forward-time interval in its unit-spacing coordinates,
+the complete periodic flow has `integral |K_a'| dt = O(M^-3)` for both
+XF-208 profiles. The proof retains all newly evolving triples through a
+uniform inverse-square displacement tail and integrates the opening
+pair's singularities explicitly. Thus these instantaneous spikes do
+not supply a persistent integrated loss. This does not provide a
+uniform backward interval or the missing estimate for Xi: rescaling to
+spacing `h` reduces the proved interval to `h^2 T_*`, and multiple or
+replenished defects remain outside the theorem. The clue stays accepted
+with its source-specific finite-gap/time-integrated question unresolved.

@@ -18,6 +18,7 @@ This file records durable literature dependencies for `research/xi_flow/`. It is
 
 - George Csordas, Wayne Smith and Richard S. Varga, **Lehmer Pairs of Zeros, the de Bruijn–Newman Constant Lambda, and the Riemann Hypothesis**, *Constructive Approximation* 10 (1994), 107–129, DOI `10.1007/BF01205170`. Role: primary anchor for the classical real-zero dynamics/Lehmer-pair mechanism, the exact `Delta^2 G < 4/5` Lehmer criterion used in XF-005, and the associated lower bounds on `Lambda`.
 - Jeffrey Stopple, **Lehmer Pairs Revisited**, *Experimental Mathematics* 26:1 (2017), 130–138; arXiv:1508.05870. Role: accessible restatement of the Csordas–Smith–Varga criterion and its reformulation through pre-Schwarzian data and nearby zeros of `zeta'`; used only for prior-art calibration in XF-005.
+- Terence Tao, **Heat flow and zeroes of polynomials** (17 October 2017), [author's exposition](https://terrytao.wordpress.com/2017/10/17/heat-flow-and-zeroes-of-polynomials/). Role: classical reciprocal zero ODE and square-root pair-collision model, with time reversed for XF-209's opening pair. XF-209 derives its periodic, uniform-in-small-gap continuation and tapered absolute-time-variation estimate independently; polynomial pair motion alone is not used as a global periodic theorem.
 - Arnaud Guillin, Pierre Le Bris and Pierre Monmarché, **On systems of particles in singular repulsive interaction in dimension one: log and Riesz gas**, *Journal de l'École polytechnique — Mathématiques* 10 (2023), 867–916, DOI `10.5802/jep.235`. Role: peer-reviewed prior-art boundary for the positive contraction mechanism behind XF-014. Their ordered one-dimensional log/Riesz particle coupling uses convexity of the repulsive interaction and proves squared-distance/Wasserstein-2 contraction statements; XF-014 derives its Xi gap-conductance identity independently and does not treat this general log-gas mechanism as Xi-specific.
 
 - NIST Digital Library of Mathematical Functions, **§4.22 Infinite Products and Partial Fractions**, [Eq. 4.22.3](https://dlmf.nist.gov/4.22.E3). Role: classical cotangent partial fraction summing all periodic zero images in XF-032. Its negative pointwise regrouped bulk density coexists with nonnegative individual triple-discriminant derivatives, so this particular complete sine-product control has nonnegative derivative for every fixed nonnegative taper at the stated instant. These signs are derived directly; a finite polynomial truncation requires separate endpoint terms.
@@ -29,6 +30,10 @@ This file records durable literature dependencies for `research/xi_flow/`. It is
   Proposition 28 in [arXiv v5](https://arxiv.org/pdf/1801.05914v5), where
   localized-energy propagation selects a quantitatively separated
   boundary; the new taper counterexample is derived independently.
+  XF-209 follows that same complete periodic family forward in time and
+  proves a uniform short-time absolute-variation bound. Cotangent
+  summation supplies the exact velocity; its spatial-tail comparison
+  and integrated taper estimate are proved in the finding.
 
 ## Nonlocal lattice, periodic quadrature, and fractional-diffusion scaling
 
