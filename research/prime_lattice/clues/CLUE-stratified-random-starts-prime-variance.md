@@ -1,7 +1,7 @@
 ---
 id: CLUE-prime-lattice-stratified-random-starts-prime-variance
 type: research-clue
-status: proposed
+status: resolved
 origin: master-researcher
 target_line: prime_lattice
 based_on:
@@ -135,3 +135,23 @@ zero-uniform onset, finite GRH decision procedure, novelty, formal
 verification or zero-exclusion result is asserted by this clue.
 The retained energy premise remains an arithmetic hypothesis even
 if the observation transfer succeeds.
+
+## Research disposition
+
+Outcome: supported
+
+Resolved by:
+- [[research/prime_lattice/findings/PL-481-stratified-random-starts-retain-the-prime-variance-criterion]]
+
+The fixed-source prime transfer holds with the stated cube-root sample
+count and probability-one quantifiers. Cell-integrated weights remove
+the empirical center exactly; the covariance bias is
+`O_phi(log(3X) X^(1/3))`, and summable concentration gives fluctuation
+`O_phi(log(3X) sqrt(X log X))` on every sufficiently large integer
+scale almost surely. The prime logarithmic-derivative formula retains
+positive multiplicity weights without a reciprocal-pole logarithm.
+The converse follows independently from the fixed-modulus GRH
+prime-counting bound for every sample outcome. This is a classical
+quadrature transfer and a change in observation guarantee, not an
+arithmetic energy estimate, randomized minimax optimality, or a
+uniform guarantee for reweighted sources chosen after the draws.
