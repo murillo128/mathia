@@ -66,6 +66,7 @@ This is a purely structural corpus projection. A link here means only that the t
 - [[research/prior_art/incremental/PA-best-term-hilbert-approximation-weak-sequence]]
 - [[research/prior_art/incremental/PA-boolean-convolution-self-energy]]
 - [[research/prior_art/incremental/PA-bounded-variation-fourier-decay]]
+- [[research/prior_art/incremental/PA-burnol-nyman-projection-factorization]]
 - [[research/prior_art/incremental/PA-chebyshev-alternation]]
 - [[research/prior_art/incremental/PA-cycle-graph-spectral-zeta-rh-reformulation]]
 - [[research/prior_art/incremental/PA-dress-exact-farey-absolute-discrepancy]]

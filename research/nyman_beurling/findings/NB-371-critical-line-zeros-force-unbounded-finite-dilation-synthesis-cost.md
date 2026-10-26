@@ -50,7 +50,7 @@ The unitary Mellin transform has boundary norm
 \[
 \|\mathcal Mf\|^2=\frac1{2\pi}\int_{\mathbb R}|\mathcal Mf(s_y)|^2dy.
 \]
-NB-354, using Burnol's projection theorem, gives
+[[research/nyman_beurling/findings/NB-354-finite-seed-real-dilation-spaces-have-an-exact-target-loss-classification|NB-354]], using [[research/prior_art/incremental/PA-burnol-nyman-projection-factorization|Burnol's projection theorem]], gives
 \[
 \mathcal Mt(s)=\frac{bB(s)}s,\qquad
 \mathcal M(A_ag_v)(s)=a^{1/2-s}\frac{\zeta(s)}s(v^{-1}-v^{-s}).
@@ -111,7 +111,7 @@ Indeed, restrict (2) to \(|y-\gamma|\le h_n\), where
 
 ## 3. A nonzero finite lattice lift cannot have bounded synthesis cost
 
-Fix \(q,v>1\), \(L=\log q\), \(\tau=2\pi/L\), and \(z_k=1+i\tau k\). Let \(d=(d_k)\ne0\) have finite support \(E\subset\mathbb Z\), of cardinality \(D\). NB-356's right inverse is explicitly
+Fix \(q,v>1\), \(L=\log q\), \(\tau=2\pi/L\), and \(z_k=1+i\tau k\). Let \(d=(d_k)\ne0\) have finite support \(E\subset\mathbb Z\), of cardinality \(D\). [[research/nyman_beurling/findings/NB-356-finite-orbit-target-assembly-is-equivalent-to-a-reciprocal-phase-series|NB-356]]'s right inverse is explicitly
 \[
 V(s)=R_qd(s)
 =\frac{1-q^{1-s}}L\sum_{k\in E}\frac{d_k}{s-z_k}.
@@ -151,7 +151,7 @@ as in (6) proves
 \]
 This also holds for the norm closure of that budget ball. In particular, \(h\) is not a finite combination of the generating dilations. Nor is it a Bochner integral against a finite-total-variation measure on the dilation parameter: strong continuity of \(a\mapsto A_ag_v\), its constant norm, and finite measure tightness approximate any such integral by finite sums with the same total-variation bound. Its closed-orbit membership remains valid, with necessarily divergent coefficient budgets along convergent syntheses.
 
-Every nonzero selected component in NB-370 has precisely the form (9)--(10), with \(E\subset\{\pm n:n\in\Lambda\}\) and \(d_0=0\). For each fixed selection, (12) applies without a bad-approximation assumption. The selected zero and constant may depend on the data; no uniform component lower bound as \(\Lambda\) grows is inferred from this root count.
+Every nonzero selected component in [[research/nyman_beurling/findings/NB-370-adaptive-lattice-selection-removes-the-three-orbit-cutoff-logarithm|NB-370]] has precisely the form (9)--(10), with \(E\subset\{\pm n:n\in\Lambda\}\) and \(d_0=0\). For each fixed selection, (12) applies without a bad-approximation assumption. The selected zero and constant may depend on the data; no uniform component lower bound as \(\Lambda\) grows is inferred from this root count.
 
 ## Consequence for the finite-generator frontier
 
@@ -172,7 +172,7 @@ Burnol, *A note on Nyman's equivalent formulation of the Riemann Hypothesis*, [S
 
 Burnol, *A lower bound in an approximation problem involving the zeros of the Riemann zeta function*, [Theorems 1.3--1.4](https://arxiv.org/pdf/math/0103058), is the closest classical boundary-zero comparison: it prices the dilation cutoff and establishes the multiplicity-sensitive logarithmic distance bound, with a polynomial prediction model. The present budget is an absolute coefficient sum with unrestricted dilation range, and the target is the unconditional projection \(t\). Equations (2), (8), and (12) are derived directly; they neither replace nor improve Burnol's cutoff theorem. Alouges--Darses--Hillion's [Theorem 1.2](https://www.numdam.org/item/10.5802/jtnb.1227.pdf) is neighboring prior art for separating fractional-part approximation from coefficient control, not a source for the bound here.
 
-The mechanism is classical Fourier/Mellin multiplier vanishing plus integration over a neighborhood of a zero. No new general approximation principle or bibliographic priority is claimed. The local delta is its actual-source application after finite lattice selection: finite sample lifts still require unbounded generator coefficients, and the final target gives a selection-independent necessary budget. NB-353 prices a different weighted cost at the one-line seed lattice; NB-020 prices integer-section coefficients weighted by their indices; NB-083 treats a stationary polynomial prediction model. None supplies (12) for these selected physical vectors.
+The mechanism is classical Fourier/Mellin multiplier vanishing plus integration over a neighborhood of a zero. No new general approximation principle or bibliographic priority is claimed. The local delta is its actual-source application after finite lattice selection: finite sample lifts still require unbounded generator coefficients, and the final target gives a selection-independent necessary budget. [[research/nyman_beurling/findings/NB-353-finitely-many-seed-orbits-pay-a-quantitative-target-coefficient-cost|NB-353]] prices a different weighted cost at the one-line seed lattice; [[research/nyman_beurling/findings/NB-020-early-shell-mobius-inversion-forces-an-inverse-distance-coefficient-core|NB-020]] prices integer-section coefficients weighted by their indices; [[research/nyman_beurling/findings/NB-083-boundary-zeros-force-reciprocal-depth-screening|NB-083]] treats a stationary polynomial prediction model. None supplies (12) for these selected physical vectors.
 
 - A boundary zero alone does not obstruct Hilbert closure. Removing the fixed budget lets the neighborhood in (6) shrink to zero.
 - The inner factor is retained through \(t\) and \(b\). No assertion \(t=e\), source-only reconstruction of \(B\), or removal of the Burnol floor is made.

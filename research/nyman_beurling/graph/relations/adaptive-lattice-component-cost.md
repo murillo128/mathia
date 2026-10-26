@@ -30,6 +30,20 @@ F_{M,K}\asymp_\gamma M^{-1}+\frac{\log K}{K},\qquad K\ge M\ge64,
 
 for retaining at most \(M\) indices within a searched prefix of length \(K\). Its \(M\log M\) order-optimal horizon is explicitly a synthesis deduction, not an additional canonical finding or independently reviewed result. It need not find the globally largest weights or the exact physical optimizer. No precision or arithmetic-operation bound follows from either index horizon.
 
+## Actual dilation coefficients after lattice selection
+
+[[research/nyman_beurling/findings/NB-371-critical-line-zeros-force-unbounded-finite-dilation-synthesis-cost|NB-371]], §§1–3 and its finite-generator consequence, settles the fixed absolute-coefficient budget question left by NB-370. For the normalized columns \(A_ag_v\), arbitrary real seeds \(v>1\) and arbitrary dilation ranges, put \(Q=\sum|c_\nu|(v_\nu^{-1}+v_\nu^{-1/2})\le2S\), where \(S=\sum|c_\nu|\). The [[research/prior_art/incremental/PA-burnol-nyman-projection-factorization|classical Burnol projection]] retains target modulus \(b/|s|\), while the synthesized modulus is at most \(Q|\zeta(s)|/|s|\) on \(\Re s=1/2\). Integration near one fixed critical-line zero of multiplicity \(m\) gives
+
+\[
+\|t-w\|^2\ge c_{\rho,b}(1+Q)^{-1/m}.
+\]
+
+This is a shrinking-neighborhood estimate, not bounded point evaluation on the Hardy boundary. Hence error \(O(M^{-1/2})\) for the final projected target requires \(S_M=\Omega(M^m)\), at least \(\Omega(M)\) without a simplicity assumption. If the coefficient Euclidean norm is bounded by \(C_M\), then \(J_MC_M^2=\Omega(M^{2m})\); no generator-count bound follows without coefficient control.
+
+For each fixed nonzero finite lattice lift, NB-356's explicit right inverse has a rational numerator with finitely many critical-line zeros. Hardy's infinitude theorem leaves a critical-line zeta zero at which that lift is nonzero. NB-371 therefore also excludes each selected component from every fixed same-seed absolute-coefficient closure, including finite-total-variation dilation mixtures. The selected zero and constant may depend on the component. This is not a uniform lower bound as the selected set grows.
+
+The fixed-target estimate permits all seed choices and bounds excess above the Burnol floor. It supplies no matching upper synthesis law, maximal-dilation bound or positive distance from the unrestricted closed orbit. NB-353's weighted one-line lattice cost, NB-020's index-weighted integer-section cost and NB-083's stationary polynomial prediction depth remain different resources, as NB-371 expressly records. The classical multiplier-vanishing mechanism is not claimed as novel.
+
 ## Evidence boundary
 
-The budget counts positive lattice-index pairs shared by two non-anchor components. The approximation spaces contain an unrestricted infinite-dimensional sampler kernel, and the anchor remains unrestricted. Squared component-distance lower bounds do not lower-bound the residual of the sum, whose errors may cancel. Constructing the vectors still uses \(B\) and \(b=B(1)\), even though the selector uses only phases. Mere summability does not replace the all-integer bad-approximation hypothesis, and the specified integer seeds \(2,3,5\) are not covered. The Burnol floor, finite-generator approximation problem and RH closure question remain unchanged. The sources report analytic derivations with independent adversarial review pending; graph curation supplies no approval or novelty upgrade.
+The budget counts positive lattice-index pairs shared by two non-anchor components. The approximation spaces contain an unrestricted infinite-dimensional sampler kernel, and the anchor remains unrestricted. Squared component-distance lower bounds do not lower-bound the residual of the sum, whose errors may cancel. Constructing the vectors still uses \(B\) and \(b=B(1)\), even though the selector uses only phases. Mere summability does not replace the all-integer bad-approximation hypothesis, and the specified integer seeds \(2,3,5\) are not covered. The Burnol floor and RH closure question remain unchanged. NB-371 adds a necessary coefficient cost; the finite-generator upper approximation problem remains open. The sources report analytic derivations with independent adversarial review pending; graph curation supplies no approval or novelty upgrade.

@@ -493,3 +493,4 @@ This stable projection inventories every current canonical Prime Lattice finding
 - [[research/prime_lattice/findings/PL-483-fixed-prime-supported-sources-evade-subquarter-uniform-observations|PL-483]]
 - [[research/prime_lattice/findings/PL-484-two-random-starts-detect-prime-poles-on-fourth-power-scales|PL-484]]
 - [[research/prime_lattice/findings/PL-485-prime-supported-perturbations-hide-every-scale-dispersion|PL-485]]
+- [[research/prime_lattice/findings/PL-486-subunit-order-mellin-filters-cannot-preserve-a-fixed-box-range|PL-486]]

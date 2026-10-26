@@ -94,7 +94,7 @@ The finite-test obstruction is retained as its own episode. Reference formatting
 
 [[research/farey_discrepancy/findings/FD-348-small-denominator-half-period-pairs-are-exact-rational-translates|FD-348]] adds one `viable-extension` episode for the genuine-source small-denominator counting question. Under its strict small-product condition, every encounter is an exact rational half-translation, and the count equals a triangularly weighted three-value rank-defect population. This makes the necessary anti-concentration estimate explicit without establishing it. Composite orders are included; the other threshold rectangles and all-fixed-offset correlation target remain open. This is distinct from FD-347's artificial finite-test obstruction. Dress registration, source wrappers and structural memberships add no episode.
 
-The retained window contains eight viable extensions, ten barriers and two prior-art collisions. Atlas masses and states remain unchanged; the window is selective, not a representative productivity sample.
+The retained window contains eight viable extensions, eleven barriers and one prior-art collision. Atlas masses and states remain unchanged; the window is selective, not a representative productivity sample.
 
 ## Rational finite-jet precision boundary
 
@@ -102,7 +102,13 @@ The retained window contains eight viable extensions, ten barriers and two prior
 
 ## Adaptive Nyman lattice retention
 
-[[research/nyman_beurling/graph/relations/adaptive-lattice-component-cost|The adaptive lattice mechanism]] contributes one `viable-extension` episode for NB-370’s answer to NB-369’s selected-index escape: the same all-integer phase bound yields sharp squared component cost 1/M for adaptive retention, versus log(M)/M for contiguous retention. The sampler/lift comparison applies to every exact split on the lower side and one fixed split on the upper side. Infinite-dimensional kernels, unrestricted anchor and the zeta inner factor remain; no finite-generator rate or RH closure result follows. MI-087’s two-budget synthesis and classical best-term registration are not additional events. F1 stays `open` with unchanged mass. The oldest retained extension leaves this twenty-question window, remaining in Git history.
+[[research/nyman_beurling/graph/relations/adaptive-lattice-component-cost|The adaptive lattice mechanism]] contributes one `viable-extension` episode for NB-370’s answer to NB-369’s selected-index escape: the same all-integer phase bound yields sharp squared component cost 1/M for adaptive retention, versus log(M)/M for contiguous retention. The sampler/lift comparison applies to every exact split on the lower side and one fixed split on the upper side. Infinite-dimensional kernels, unrestricted anchor and the zeta inner factor remain; no finite-generator rate or RH closure result follows. MI-087’s two-budget synthesis and classical best-term registration are not additional events. F1 stays `open` with unchanged mass. The adaptive-retention episode remains separate from actual generator-coefficient conditioning.
+
+## Finite-dilation coefficient conditioning
+
+[[research/nyman_beurling/findings/NB-371-critical-line-zeros-force-unbounded-finite-dilation-synthesis-cost|NB-371]] contributes one `new-barrier` episode for bounded-coefficient realization after lattice selection. A fixed critical-line zero of multiplicity m forces absolute coefficient sum at least of order epsilon^(-2m) for approximation to the projected target, with arbitrary real seeds and dilation ranges. Each fixed nonzero selected lift also lies outside every bounded same-seed coefficient closure. The component constant can depend on the lift; the final-target bound is selection-independent.
+
+This is a conditioning obstruction, distinct from NB-370's retained-index optimization. Shrinking boundary neighborhoods leave unrestricted Hilbert closure intact. No maximal-dilation bound, matching upper synthesis rate, column-count lower bound without coefficient control or RH consequence is supplied. F1 remains `open` at unchanged mass. The classical projection node and seven reversible source wrappers add no events. Retaining twenty questions removes the oldest prior-art collision from this window; Git retains it. Other changed findings have structural membership only unless separately inspected.
 
 ## Retained prospective window
 
@@ -110,13 +116,13 @@ Classifiable episodes: **20**. Insufficient-evidence episodes: **0**. Retrospect
 
 | Classification | Episodes |
 | --- | ---: |
-| known-prior-art | 2 |
-| new-barrier | 10 |
+| known-prior-art | 1 |
+| new-barrier | 11 |
 | viable-extension | 8 |
 
 - **FrontierFertilityEpisodes = 40.0%**
-- **BarrierRate = 50.0%**
-- **PriorArtCollisionRate = 10.0%**
+- **BarrierRate = 55.0%**
+- **PriorArtCollisionRate = 5.0%**
 - **InternalDuplicateRate = 0.0%**
 
 ## Per-line sample
@@ -126,10 +132,9 @@ Classifiable episodes: **20**. Insufficient-evidence episodes: **0**. Retrospect
 | `arithmetic_fidelity` | 4 | 1 | 3 | 0 | 0 |
 | `farey_discrepancy` | 3 | 1 | 2 | 0 | 0 |
 | `mobius_cancellation` | 4 | 2 | 1 | 1 | 0 |
-| `nyman_beurling` | 1 | 1 | 0 | 0 | 0 |
+| `nyman_beurling` | 2 | 1 | 1 | 0 | 0 |
 | `prime_lattice` | 5 | 3 | 2 | 0 | 0 |
 | `visual_exploration` | 1 | 0 | 1 | 0 | 0 |
-| `weil_positivity` | 1 | 0 | 0 | 1 | 0 |
 | `xi_flow` | 1 | 0 | 1 | 0 | 0 |
 
 Per-line samples are the retained entries, capped at ten; small and selectively inspected samples do not establish trends. No rate alone supports a research-allocation decision.

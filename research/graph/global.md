@@ -64,7 +64,7 @@ This is the derived root graph for Mathia research. Canonical findings and mind 
 
 ## Integration boundary
 
-Stable memberships cover all 13 initialized research lines, 5,219 canonical findings, 847 durable intuitions and 82 canonical prior-art notes. Structural attachment asserts ownership only. It includes challenged findings without treating a review as withdrawal or endorsement.
+Stable memberships cover all 13 initialized research lines, 5,227 canonical findings, 847 durable intuitions and 83 canonical prior-art notes. Structural attachment asserts ownership only. It includes challenged findings without treating a review as withdrawal or endorsement.
 
 Semantic coverage is selective. The [[research/arithmetic_fidelity/graph/relations/euler-harmonic-collision-budget|Euler harmonic collision budget]] records AF-337/AF-338's finite-order refinement and its surviving source/observation restrictions. Nine direct reference links in those two findings preserve their original text exactly. No cross-line implication follows from this maintenance.
 
@@ -98,3 +98,5 @@ The [[research/nyman_beurling/graph/relations/adaptive-lattice-component-cost|ad
 
 The Riemann Atlas v1 masses and territory states are unchanged. [[research/graph/atlas/telemetry/frontier-summary|Frontier telemetry]] distinguishes the selected source-backed episodes from topology maintenance and states its sampling limits.
 <!-- graph:end -->
+
+NB-371 now supplies the actual finite-dilation coefficient boundary in the [[research/nyman_beurling/graph/relations/adaptive-lattice-component-cost|same Nyman mechanism]]. It prices absolute coefficient mass separately from retained lattice slots and leaves the unrestricted closed orbit intact. Seven reversible wrappers connect its persisted finding comparisons and the canonical Burnol projection input. The selected new barrier changes no Atlas mass or state; other changed sources remain outside this bounded semantic inspection.

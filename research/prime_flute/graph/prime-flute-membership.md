@@ -377,3 +377,4 @@ This stable projection inventories every current canonical Prime Flute finding. 
 - [[research/prime_flute/findings/PF-364-narrow-transition-shorting-has-essential-angle-one-in-the-actual-seam-energy|PF-364]]
 - [[research/prime_flute/findings/PF-365-removing-or-shorting-constants-leaves-essential-angle-one-in-the-actual-seam-energy|PF-365]]
 - [[research/prime_flute/findings/PF-366-shorting-a-small-positive-width-low-band-leaves-essential-angle-one|PF-366]]
+- [[research/prime_flute/findings/PF-367-exact-cuff-lattice-packets-obstruct-broad-band-corridor-comparison|PF-367]]

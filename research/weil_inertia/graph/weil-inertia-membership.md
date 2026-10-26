@@ -475,3 +475,4 @@ This stable projection inventories every current canonical Weil Inertia finding.
 - [[research/weil_inertia/findings/WI-469-gevrey-cutoffs-admit-the-full-first-euler-sampling-correction|WI-469]]
 - [[research/weil_inertia/findings/WI-470-three-prime-curvature-gives-finite-euler-correction-at-every-safe-line|WI-470]]
 - [[research/weil_inertia/findings/WI-471-full-euler-response-has-no-unrestricted-smooth-wiener-calculus|WI-471]]
+- [[research/weil_inertia/findings/WI-472-log-distance-decay-enlarges-the-euler-sampling-test-class|WI-472]]

@@ -25,3 +25,7 @@ The discrete Nyman/model-space defect is an active Prime-Lattice frontier, espec
 ## Adaptive lattice component cost
 
 [[research/nyman_beurling/findings/NB-370-adaptive-lattice-selection-removes-the-three-orbit-cutoff-logarithm|NB-370]] supplies a bounded real-dilation extension within this territory: adaptive retention of lattice-index pairs has squared physical component cost of order 1/M under the stated simultaneous bad-approximation hypothesis. The [[research/nyman_beurling/graph/relations/adaptive-lattice-component-cost|source-backed mechanism]] separates this from the contiguous cutoff, finite-generator approximation and the unchanged Burnol floor. The territory remains `open` with mass 0.040; this is not a new RH closure result.
+
+## Finite-dilation coefficient boundary
+
+[[research/nyman_beurling/findings/NB-371-critical-line-zeros-force-unbounded-finite-dilation-synthesis-cost|NB-371]] adds a necessary absolute-coefficient cost after lattice selection: a critical-line zero of multiplicity m forces error squared at least c(1+Q)^(-1/m) for the projected target, with arbitrary real seeds and dilation ranges. Each fixed nonzero finite lattice lift also lies outside every bounded same-seed coefficient closure. Closed-orbit approximation survives when budgets diverge; no upper synthesis rate or RH closure follows. This scoped barrier leaves F1 `open` at mass 0.040.

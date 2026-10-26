@@ -221,3 +221,4 @@ This stable projection inventories every current canonical Analytic Frontier fin
 - [[research/analytic_frontier/findings/ANF-209-real-two-site-notch-attainment-has-a-sharp-cubic-width-window|ANF-209]]
 - [[research/analytic_frontier/findings/ANF-210-sharp-triple-gap-phase-balance-gives-a-cubic-notch-witness|ANF-210]]
 - [[research/analytic_frontier/findings/ANF-211-four-point-notch-descent-is-invisible-to-every-three-point-test|ANF-211]]
+- [[research/analytic_frontier/findings/ANF-212-mixed-multiplicities-reduce-cubic-notch-descent-to-three-support-sites|ANF-212]]
