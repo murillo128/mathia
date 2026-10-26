@@ -2,7 +2,7 @@
 id: RA-frontier-telemetry-v1
 type: riemann-atlas-frontier-telemetry
 atlas_version: 1
-prospective_source_cutoff: f8e01c313b8986cd038ec98ae7e63ac5d45e2155
+prospective_source_cutoff: e9ffbffc09cd7cecdf451dada2dcc58c60ebc0c9
 derived: true
 ---
 
@@ -78,9 +78,11 @@ FD-344's asymptotic erased-record energy gap is an explicit specialization of FD
 
 FD-345 now restricts its single mirrored-pair mechanism: exact energy equality requires endpoint balance, and full-spectrum TV is less than `sqrt(2/(pE))`. Persistent separation therefore requires common energy of order at most `1/p`. No such family is established, and general four-erasure collisions are not closed. The finite energy-conditioned-erasure episode retains its classification with this narrower extension boundary.
 
-[[research/visual_exploration/findings/VIS-468-four-defect-farey-reassembly-preserves-source-sector|VIS-468]] makes the residual in the conditional-band episode explicit for the `BCA` control. The exact half-shift-plus-step identity copies genuine coefficients at multiples of four, where projected transport is zero. Their fraction of reassembled band energy is a necessary lower bound on conditional TV. Its signed residual gives a sufficient projected-energy test, but the required source estimate at scale `p^(-2)` remains unproved. Classical shift geometry and finite diagnostic values do not establish an asymptotic gap. This refines the same question rather than adding a source-count episode.
+[[research/visual_exploration/findings/VIS-468-four-defect-farey-reassembly-preserves-source-sector|VIS-468]] makes the conditional-band residual explicit for the `BCA` control: its half-shift-plus-step identity copies genuine coefficients at multiples of four, where projected transport is zero. [[research/farey_discrepancy/findings/FD-346-classical-gap-correlations-separate-high-band-farey-transport|FD-346]] now resolves projected upper-half nonconvergence from classical fixed-lag gap correlations. Source energy is asymptotic to `(6/pi²)(2/pi−1/2)log(p)/p²` and dominates the step. The normalized source and projected-comparator limits have different continuous-frequency densities, separated by the fixed event `[1/2,3/4]`; `liminf TV>=0.2989471621...`. Divergence of the sufficient coefficient-error ratio is a separate conclusion and is not used as a substitute for that event bound.
 
-The two existing episodes are updated; their classifications, the retained count, all rates and every Atlas state/mass remain unchanged. Membership repair contributes no event.
+The inherited `4|m` fraction remains unknown: alternating mesh classes require half-period correlations absent from the fixed-lag input. No shrinking-band limit, exact discrete-TV limit, low-frequency improvement or RH consequence is inferred. The artificial-reassembly and uncalibrated-comparator restrictions survive.
+
+FD-346 refines the existing high-band episode; its classification, the retained count, all rates and every Atlas state/mass remain unchanged. Membership repair, source wrappers and classical prior-art registration contribute no event. Other changed findings have structural membership only unless included in a separately recorded inspected scope.
 
 ## Retained prospective window
 

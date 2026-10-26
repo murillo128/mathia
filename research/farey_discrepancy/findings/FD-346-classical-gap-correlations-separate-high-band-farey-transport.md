@@ -5,7 +5,7 @@
 The genuine Farey rank spectrum has an explicit weak limiting profile on
 any fixed band bounded away from zero frequency. Its energy is of order
 `log Q / Q^2`, and its density is proportional to a squared cotangent.
-For FD-319's reflected four-defect reassembly, this source contribution
+For [[research/farey_discrepancy/findings/FD-319-four-vanishing-farey-index-defects-carry-macroscopic-energy|FD-319]]'s reflected four-defect reassembly, this source contribution
 dominates the balanced step in the upper-half band. The resulting
 conditional spectrum stays a positive total-variation distance from the
 antisymmetrically projected transport comparator.
@@ -45,7 +45,7 @@ C_B=\frac6{\pi^2}\left(\frac2\pi-\frac12\right)>0.
 \tag{2}
 \]
 This is an asymptotic for actual **rank** coefficients at `m=Theta(N)`.
-It does not substitute the position-Fourier coefficients from FD-342,
+It does not substitute the position-Fourier coefficients from [[research/farey_discrepancy/findings/FD-342-log-weighted-divisor-control-saturates-every-linear-farey-band|FD-342]],
 whose total-energy-relative error is insufficient at this scale.
 
 ## 2. Classical input and the spectral measure proof
@@ -62,7 +62,7 @@ S_1(Q)=\frac6{\pi^2}\frac{\log Q}{Q^2}+O(Q^{-2}),\qquad
 S_r(Q)=O_r(Q^{-2})\quad(r\ge2).
 \tag{3}
 \]
-These are the Hall/Boca–Cobeli–Zaharescu gap-correlation results. An
+These are the [[research/prior_art/incremental/PA-farey-fixed-lag-gap-correlations|Hall/Boca–Cobeli–Zaharescu gap-correlation results]]. An
 explicit primary-source formulation is Dong–Nguyen–Nguyen–Zaharescu,
 *Effective Estimates for a Class of Farey Fraction Sums and Bounds for
 Mundici-Type Constants*, arXiv:2606.12907v1, equation (2.2) and Theorem 2.3.

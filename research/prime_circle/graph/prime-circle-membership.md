@@ -472,3 +472,4 @@ This stable projection inventories every current canonical Prime Circle finding.
 - [[research/prime_circle/findings/PC-462-separated-cluster-hilbert-bound-closes-the-cotangent-triplet-counting-law|PC-462]]
 - [[research/prime_circle/findings/PC-463-every-fixed-cotangent-population-level-is-a-finite-constellation-law|PC-463]]
 - [[research/prime_circle/findings/PC-464-primorial-cotangent-extreme-spectrum-converges-to-the-admissible-constellation-edge|PC-464]]
+- [[research/prime_circle/findings/PC-465-moving-center-cotangent-limits-fill-the-admissible-hull|PC-465]]

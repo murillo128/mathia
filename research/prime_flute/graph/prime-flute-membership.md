@@ -373,3 +373,4 @@ This stable projection inventories every current canonical Prime Flute finding. 
 - [[research/prime_flute/findings/PF-360-removing-or-shorting-constants-does-not-compactify-the-corridor-angle|PF-360]]
 - [[research/prime_flute/findings/PF-361-finite-corridor-windows-preserve-the-narrow-band-model-angle|PF-361]]
 - [[research/prime_flute/findings/PF-362-normal-ray-transport-has-a-nonvanishing-corridor-end-cost|PF-362]]
+- [[research/prime_flute/findings/PF-363-trace-preserving-corridor-charts-give-a-coupled-pant-energy-lower-bound|PF-363]]

@@ -216,3 +216,4 @@ This stable projection inventories every current canonical Analytic Frontier fin
 - [[research/analytic_frontier/findings/ANF-204-complex-finite-attainment-requires-an-inverse-square-profile-tail|ANF-204]]
 - [[research/analytic_frontier/findings/ANF-205-an-upward-central-cusp-prevents-finite-notch-attainment|ANF-205]]
 - [[research/analytic_frontier/findings/ANF-206-finite-positive-translations-make-the-distant-copy-cusp-threshold-sharp|ANF-206]]
+- [[research/analytic_frontier/findings/ANF-207-shrinking-notches-force-a-sharp-cardinality-scale-below-the-cusp-threshold|ANF-207]]

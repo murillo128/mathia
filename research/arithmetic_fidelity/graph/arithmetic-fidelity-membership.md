@@ -594,3 +594,4 @@ This stable projection inventories every current canonical Arithmetic Fidelity f
 - [[research/arithmetic_fidelity/findings/AF-588-fixed-prime-tail-changes-the-sharp-range-constant-and-limit-order|AF-588]]
 - [[research/arithmetic_fidelity/findings/AF-589-prime-window-crossover-is-set-by-the-exact-source-coordinate|AF-589]]
 - [[research/arithmetic_fidelity/findings/AF-590-superpolynomial-windows-have-a-uniform-smallest-generator-recovery-limit|AF-590]]
+- [[research/arithmetic_fidelity/findings/AF-591-matched-prime-endpoints-admit-arbitrarily-many-crossover-minima|AF-591]]

@@ -373,3 +373,4 @@ This stable projection inventories every current canonical Nyman–Beurling find
 - [[research/nyman_beurling/findings/NB-364-optimal-return-exponent-determines-completion-budget-moments|NB-364]]
 - [[research/nyman_beurling/findings/NB-365-every-third-seed-interval-retains-the-global-completion-budget-thresholds|NB-365]]
 - [[research/nyman_beurling/findings/NB-366-brjuno-is-the-exact-generic-third-orbit-completion-threshold|NB-366]]
+- [[research/nyman_beurling/findings/NB-367-third-orbit-failure-has-exact-half-dimensional-size-at-minimal-type|NB-367]]

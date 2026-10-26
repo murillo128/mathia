@@ -545,3 +545,4 @@ This stable projection inventories every current canonical Möbius Cancellation 
 - [[research/mobius_cancellation/findings/MC-536-stratified-random-starts-reduce-the-mobius-variance-sample-exponent|MC-536]]
 - [[research/mobius_cancellation/findings/MC-537-small-sampled-energy-permits-quarter-power-mobius-observations|MC-537]]
 - [[research/mobius_cancellation/findings/MC-538-one-fixed-multiplicative-source-defeats-subquarter-random-observations|MC-538]]
+- [[research/mobius_cancellation/findings/MC-539-two-random-starts-detect-mobius-poles-on-fourth-power-scales|MC-539]]

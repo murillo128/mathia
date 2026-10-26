@@ -217,6 +217,7 @@ This is a path-derived structural projection for graph topology. Each link means
 - [[research/farey_discrepancy/mind/intuition/MI-064-fixed-low-height-hard-complements-inherit-near-capacity-source-difficulty]]
 - [[research/farey_discrepancy/mind/intuition/MI-065-excursion-transport-not-local-index-defects-controls-spectrum]]
 - [[research/farey_discrepancy/mind/intuition/MI-066-rh-mellin-variance-excludes-balanced-near-capacity]]
+- [[research/farey_discrepancy/mind/intuition/MI-067-fixed-gap-correlations-determine-high-band-rank-spectrum]]
 
 ### Möbius Cancellation
 - [[research/mobius_cancellation/mind/intuition/MI-001-local-cancellation-needs-a-polynomial-information-budget]]
