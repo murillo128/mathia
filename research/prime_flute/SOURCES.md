@@ -550,6 +550,27 @@ Relevant findings: PF-359 and PF-360; relevant local clue: CLUE-positive-width-t
 
 **Scope warning.** No boundedness of the infinite coefficient matrix on ordinary `ell^2`, convergence of independently normalized finite matrices, or identification of different boundary conditions at infinity is imported. The essential-norm-one result concerns the specified Cauchy corridor completion on prime or nonprime periods. It does not establish a residual-scale comparison with the actual pant/seam form or an intrinsic surface spectral consequence.
 
+## S34 — Turán–Nazarov concentration without frequency separation
+
+**F. L. Nazarov**, *Local estimates for exponential polynomials and their applications to inequalities of the uncertainty principle type*, Algebra i Analiz 5 (1993), no. 4, 3–66; English translation, St. Petersburg Math. J. 5 (1994), 663–717.
+
+- https://www.mathnet.ru/eng/aa397
+- The measurable-set Turán inequality controls an exponential polynomial on an interval by its values on a positive-measure subset. For purely imaginary exponents its constant depends on the number of terms, not frequency separation.
+
+**O. Friedland and Y. Yomdin**, *An observation on the Turán–Nazarov inequality*, Studia Mathematica 218 (2013), no. 1, 27–39. DOI: 10.4064/sm218-1-2.
+
+- https://arxiv.org/abs/1107.0039
+- Theorem 1.1 reproduces the exact classical inequality used in PF-361; its metric-entropy extension is not used.
+
+**C. Gaillac and E. Gautier**, *Estimates for the SVD of the Truncated Fourier Transform on L2(cosh(b·)) and Stable Analytic Continuation*, author manuscript, May 2019.
+
+- https://publications.ut-capitole.fr/id/eprint/32479/1/wp_tse_1013.pdf
+- Closest weighted-Fourier comparison: a `sech` convolution kernel and Turán-based spectral estimates, not the network shorting statement. No theorem from this paper is imported.
+
+Relevant finding: PF-361; relevant local clue: CLUE-positive-width-transition-schur-complement.md. The finding derives a relative `sech`-weighted tail bound, applies it uniformly to unions of neighboring complete narrow Fourier bands, and preserves the essential-angle-one witness under finite-window truncation in the same energy completion.
+
+**Scope warning.** The combined transition/high width must be sufficiently small relative to the growing corridor window. The theorem does not control the nonlinear boundary-coordinate transport or the remaining actual pant/seam energy. It is a literature-derived concentration application, not a new uncertainty principle or an actual surface spectral theorem.
+
 ## Provenance policy for future additions
 
 For each future finding, record separately:
