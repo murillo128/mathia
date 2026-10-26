@@ -604,6 +604,14 @@ Relevant finding: PF-363; relevant local clue: CLUE-positive-width-transition-sc
 
 **Scope warning.** The two-sided local comparison retains tangential and mass energy. Only its lower bound transfers to the difference-only network and the full pant. No matching upper trial at the shorted scale, antisymmetric elimination, completed-angle conclusion, or RH consequence is supplied by these sources or by PF-363.
 
+## S37 — coefficient-controlled approximation transfers the actual seam angle
+
+The primary approximation and operator sources are Almira's *Müntz Type Theorems I*, Section 2.1 (S31), Anderson–Trapp's *Shorted Operators. II* (S24/S33), and Friedland–Yomdin's statement of the Turán–Nazarov inequality, Theorem 1.1 (S34). PF-364 derives its Cauchy inverse bound, projection coefficient estimate, distance-ratio argument and finite-head reduction explicitly. Wentworth's [DtN determinant gluing paper](https://arxiv.org/abs/2209.11863) remains nearby geometric prior art; no theorem from it supplies the actual-angle transfer.
+
+Relevant finding: PF-364; relevant local clue: CLUE-positive-width-transition-schur-complement.md. The derived addition combines PF-363's coupled lower certificate with PF-344's complete single-module pant trial, pays the optimal compensator coefficients using PF-348's narrow-cluster exponent, and restores all transition face parities through PF-350. Two strict exponent margins give essential angle norm one in the specified actual seam-energy completion, including finite-head transition relaxation.
+
+**Scope warning.** This closes the sufficiently narrow, constant-retaining transition-angle repair, not every fixed-width band, mean-zero variant or condition at infinity. It supplies no comparison theorem for relative resolvents, scattering or RH and no primality-specific invariant. The classical sources do not themselves establish the geometric hypotheses of this application.
+
 ## Provenance policy for future additions
 
 For each future finding, record separately:
