@@ -68,6 +68,12 @@ PL-478 refines the existing missing-start recovery episode with the prime-source
 
 [[research/farey_discrepancy/graph/relations/reflected-defect-erasure-and-energy-identifiability|The reflected erasure mechanism]] adds one `new-barrier` episode: FD-345 supplies an exact positive-energy-matched pair whose normalized spectra differ after four known-position value erasures. Its finite, realizable certificate settles an enriched observation question; it supplies no asymptotic gap or genuine Farey bound. The complete-signature inverse and three-erasure guarantee survive. No exact Atlas leaf is assigned. VIS-466's stitch-parity correction is a representation correction and classical projection specialization, not another episode.
 
+## Realized high-band conditioning
+
+[[research/visual_exploration/findings/VIS-467-vanishing-stitch-parity-dominates-farey-high-bands|VIS-467]] adds one `new-barrier` episode for conditional high-band reliability in the realized four-defect control. Its odd fraction tends to `pi/(16-4pi)` in the upper half although it vanishes globally. The raw-versus-full discrepancy distance has the same lower bound whenever defined; no equality of the even spectra is asserted. The separate band-energy transfer gate remains open. This is distinct from VIS-466's representation correction and the erasure-identification problem, and does not close an RH Atlas territory.
+
+FD-344's asymptotic erased-record energy gap is an explicit specialization of FD-333's existing construction. The erasure mechanism now records its PNT inputs and half-gap estimator bound, while preserving the distinction from FD-345's finite energy-matched spectral example. That specialization and all membership/reference-formatting work add no episode.
+
 ## Retained prospective window
 
 Classifiable episodes: **20**. Insufficient-evidence episodes: **0**. Retrospective episodes: **0**.
@@ -75,11 +81,11 @@ Classifiable episodes: **20**. Insufficient-evidence episodes: **0**. Retrospect
 | Classification | Episodes |
 | --- | ---: |
 | known-prior-art | 2 |
-| new-barrier | 10 |
-| viable-extension | 8 |
+| new-barrier | 11 |
+| viable-extension | 7 |
 
-- **FrontierFertilityEpisodes = 40.0%**
-- **BarrierRate = 50.0%**
+- **FrontierFertilityEpisodes = 35.0%**
+- **BarrierRate = 55.0%**
 - **PriorArtCollisionRate = 10.0%**
 - **InternalDuplicateRate = 0.0%**
 
@@ -91,7 +97,7 @@ Classifiable episodes: **20**. Insufficient-evidence episodes: **0**. Retrospect
 | `farey_discrepancy` | 1 | 0 | 1 | 0 | 0 |
 | `mobius_cancellation` | 4 | 2 | 1 | 1 | 0 |
 | `prime_lattice` | 5 | 3 | 2 | 0 | 0 |
-| `visual_exploration` | 1 | 1 | 0 | 0 | 0 |
+| `visual_exploration` | 1 | 0 | 1 | 0 | 0 |
 | `weil_inertia` | 1 | 0 | 1 | 0 | 0 |
 | `weil_positivity` | 2 | 0 | 1 | 1 | 0 |
 | `xi_flow` | 2 | 0 | 2 | 0 | 0 |

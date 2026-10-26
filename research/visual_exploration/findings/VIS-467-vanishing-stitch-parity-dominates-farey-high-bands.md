@@ -2,7 +2,7 @@
 
 ## Claim and evidence boundary
 
-For FD-319's reflected four-defect reassembly, VIS-466 shows that the
+For [[research/farey_discrepancy/findings/FD-319-four-vanishing-farey-index-defects-carry-macroscopic-energy|FD-319]]'s reflected four-defect reassembly, VIS-466 shows that the
 right-endpoint transport has a globally vanishing odd-sine fraction
 `1/(N−4)`. That error is **not negligible after high-band conditioning**.
 For the upper half of the absolute sine modes, its odd fraction tends to

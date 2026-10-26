@@ -281,7 +281,7 @@ Thus even an `o(1)` additive energy guarantee fails uniformly for this
 record. The erasure pattern (15) is sufficient for failure; no assertion
 is made about every pattern with two missing mirror pairs. Exact energy
 as an extra datum distinguishes this family for all sufficiently large
-primes. FD-345 separately treats finite spectral ambiguity with energy
+primes. [[research/farey_discrepancy/findings/FD-345-exact-energy-does-not-repair-four-reflected-farey-defect-erasures|FD-345]] separately treats finite spectral ambiguity with energy
 retained, and (18) must not be substituted for that stronger matching
 condition.
 

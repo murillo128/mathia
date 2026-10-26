@@ -371,3 +371,4 @@ This stable projection inventories every current canonical Nyman–Beurling find
 - [[research/nyman_beurling/findings/NB-362-brjuno-pairs-complete-generically-but-two-brjuno-alone-does-not|NB-362]]
 - [[research/nyman_beurling/findings/NB-363-logarithmic-orbit-cost-is-equivalent-to-exponential-completion-budgets|NB-363]]
 - [[research/nyman_beurling/findings/NB-364-optimal-return-exponent-determines-completion-budget-moments|NB-364]]
+- [[research/nyman_beurling/findings/NB-365-every-third-seed-interval-retains-the-global-completion-budget-thresholds|NB-365]]

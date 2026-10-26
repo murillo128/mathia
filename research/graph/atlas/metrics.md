@@ -2,7 +2,7 @@
 id: RA-metrics-v1
 type: riemann-atlas-metrics
 atlas_version: 1
-source_revision: f318208bba3a2d50e599538bde2544bb87892662
+source_revision: beea08343c01292010965bb44541151ba33d807e
 derived: true
 ---
 
@@ -38,16 +38,16 @@ The five hard-pruned interfaces retain their existing scoped canonical evidence:
 
 ## Structural and semantic scope
 
-The exact tree projections contain 13 research lines, 5,161 findings, 842 durable intuitions and 78 prior-art notes. Membership changes and reversible source-reference formatting are graph maintenance, never frontier episodes. Semantic inspection remains selective as recorded in `research/graph/semantic-inspection.json`; uninspected source changes do not justify Atlas transitions.
+The exact tree projections contain 13 research lines, 5,171 findings, 842 durable intuitions and 78 prior-art notes. Membership changes and reversible source-reference formatting are graph maintenance, never frontier episodes. Semantic inspection remains selective as recorded in `research/graph/semantic-inspection.json`; uninspected source changes do not justify Atlas transitions.
 
-The reflected Farey reconciliation distinguishes full-discrepancy parity from right-endpoint transport parity and records exact-energy-conditioned erasure nonidentifiability. Both concern artificial reassemblies. Their source-backed scope changes no Atlas mass or state; VIS-466's conflicting illustrative length tuple is explicitly excluded from support in the mechanism note.
+The reflected Farey reconciliation distinguishes full-discrepancy parity from right-endpoint transport parity and records exact-energy-conditioned erasure nonidentifiability. Both concern artificial reassemblies. Its updated scope also separates the PNT-assisted erased-record energy gap from the finite matched-energy spectral obstruction and the realized conditioned high-band barrier. This changes no Atlas mass or state; VIS-466's conflicting illustrative length tuple is explicitly excluded from support in the mechanism note.
 
 ## Frontier fertility
 
-The retained prospective series contains **20** classifiable episodes and **0** insufficient-evidence episodes. FD-345 adds one `new-barrier` episode for four erased reflected defect values even when exact positive full energy is retained. The oldest episode leaves the fixed last-20 window; Git preserves it. The finite spectral certificate supplies no asymptotic gap or arithmetic estimate. These selectively inspected questions are not an unbiased portfolio sample. Atlas states and masses are unchanged.
+The retained prospective series contains **20** classifiable episodes and **0** insufficient-evidence episodes. VIS-467 adds one `new-barrier` episode for high-band conditioning in the realized reflected control. The oldest episode leaves the fixed last-20 window; Git preserves it. The explicit specialization in FD-344 adds no episode. These selectively inspected questions are not an unbiased portfolio sample. Atlas states and masses are unchanged.
 
-- **FrontierFertilityEpisodes = 40.0%**
-- **BarrierRate = 50.0%**
+- **FrontierFertilityEpisodes = 35.0%**
+- **BarrierRate = 55.0%**
 - **PriorArtCollisionRate = 10.0%**
 - **InternalDuplicateRate = 0.0%**
 

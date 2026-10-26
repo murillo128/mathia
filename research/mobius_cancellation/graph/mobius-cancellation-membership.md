@@ -543,3 +543,4 @@ This stable projection inventories every current canonical Möbius Cancellation 
 - [[research/mobius_cancellation/findings/MC-534-common-squarefree-coefficients-retain-signed-sampling-ambiguity|MC-534]]
 - [[research/mobius_cancellation/findings/MC-535-multiplicative-prime-bridges-retain-sparse-window-ambiguity|MC-535]]
 - [[research/mobius_cancellation/findings/MC-536-stratified-random-starts-reduce-the-mobius-variance-sample-exponent|MC-536]]
+- [[research/mobius_cancellation/findings/MC-537-small-sampled-energy-permits-quarter-power-mobius-observations|MC-537]]

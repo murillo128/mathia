@@ -464,3 +464,4 @@ This stable projection inventories every current canonical Weil Positivity findi
 - [[research/weil_positivity/findings/WP-454-bounded-covariant-energies-retain-negative-dyadic-prime-blocks|WP-454]]
 - [[research/weil_positivity/findings/WP-455-closed-diagonal-trace-energies-lock-prime-phases-but-retain-both-weil-signs|WP-455]]
 - [[research/weil_positivity/findings/WP-456-closed-singular-arc-traces-can-select-either-finite-weil-sign|WP-456]]
+- [[research/weil_positivity/findings/WP-457-dyadic-sign-conditioning-preserves-all-bounded-support-weak-prime-moments|WP-457]]
