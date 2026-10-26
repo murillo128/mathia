@@ -10,6 +10,7 @@ based_on:
   - research/prime_lattice/findings/PL-473-box-fourier-zeros-obstruct-logarithmic-window-test-inversion.md
   - research/prime_lattice/findings/PL-475-two-box-lengths-force-paired-macroscopic-prime-variance.md
   - research/prime_lattice/findings/PL-486-subunit-order-mellin-filters-cannot-preserve-a-fixed-box-range.md
+  - research/mobius_cancellation/findings/MC-528-multiplicity-aware-annihilation-forces-mobius-variance-on-every-block.md
 ---
 
 # Can sparse-zero isolation be performed inside one fixed box range?
@@ -70,6 +71,28 @@ The function may depend on the entire set. No effective construction,
 uniform norm over sets, or uniformity in \(h_*\) is requested. The
 arithmetic instance uses the distinct zeros of the four mod-5 factors
 in this half-plane, with coincident zeros merged as in PL-471.
+
+An optional stronger version would make the same interpolation construction
+usable for reciprocal poles. MC-528 supplies the exact source-side motivation:
+outside a box-range restriction, a multiplicity-counted sparse canonical
+product times a rapidly decaying Mellin transform cancels all unwanted
+principal parts of `1/zeta`, while preserving a selected pole of arbitrary
+finite order. Simple test zeros would not suffice at unwanted multiple poles.
+The prime question (2) does not require this stronger version.
+
+Give each point `lambda` a positive integer multiplicity `m_lambda`, with
+`sum_(|lambda|<=R) m_lambda <= C(1+R)^a`, and put
+
+`P(s)=(s-1) product_(lambda != rho_0) (1-s/lambda)^(m_lambda)`.
+
+Can a fixed-box interpolant also satisfy
+`Phi_(h_*,f)^(j)(lambda)=0` for every unwanted point and
+`0<=j<m_lambda`, with `Phi_(h_*,f)(rho_0)=1`, while the entire quotient
+`G=Phi_(h_*,f)/P` has a bound
+`|G(sigma+it)|<=C exp(-c |t|^b)` for some `a<b<1`, uniformly on
+each fixed closed vertical strip? Constants may depend on the strip and
+the full set. This is a sufficient analytic strengthening, not an asserted
+necessary condition for (2) or for a single-window arithmetic result.
 
 ## Why it may matter
 
@@ -146,6 +169,20 @@ sparse products used in PL-471. It does not exclude a specially
 chosen input satisfying both sets of constraints, so (2) remains the
 decisive question and the clue remains proposed.
 
+For the optional reciprocal version, test a selected double pole with zero
+ordinary residue and unwanted repeated poles before passing to an infinite
+set. The target is full Hermite cancellation **and** the displayed quotient
+decay, not merely holomorphic removability. MC-528 proves, for the actual
+zeta multiset and each `sigma_0<sigma_1<Re rho_0`,
+`|P(s)/zeta(s)|<=C |t|^C exp(C |t|^a)` at sufficiently large heights,
+uniformly for `sigma_1<=Re s<=2`, by cancelling local factors before
+estimating them. The proposed decay would dominate that bound; its
+availability inside the box range is unproved. If this stronger problem
+fails, identify whether the obstruction concerns Hermite feasibility or
+quotient growth, and keep the original simple-value question (2) separate.
+The reciprocal datum and sufficient test are stated here completely;
+the cross-line source path supplies provenance, not a reading grant.
+
 ## Evidence boundary
 
 This is a proposed interpolation question, not an established
@@ -157,3 +194,7 @@ adversarial approval, variance ceiling, or RH/GRH progress is claimed.
 The actual-source implication would still require PL-471's arithmetic
 zero-density, logarithmic-derivative growth and noncancelling residues;
 a generic positive or phase-deformed source does not inherit them.
+The reciprocal extension likewise has no established fixed-box solution.
+MC-528's unrestricted test and the existing near-linear or paired-window
+Möbius results do not answer it. Even a positive solution would remove a
+measurement restriction, not provide an independent variance ceiling.
