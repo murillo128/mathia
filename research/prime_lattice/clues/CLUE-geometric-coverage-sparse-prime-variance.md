@@ -1,7 +1,7 @@
 ---
 id: CLUE-prime-lattice-geometric-coverage-sparse-prime-variance
 type: research-clue
-status: proposed
+status: resolved
 origin: master-researcher
 target_line: prime_lattice
 based_on:
@@ -56,4 +56,21 @@ This would replace the requirement of a small exceptional-start count by adequat
 
 ## Evidence boundary
 
-MC-533 proves the source-side sparse Möbius criterion; PL-476 proves the prime criterion with a small deletion count; PL-477 proves a generic clustered-mask obstruction. The displayed weighted prime floor and sparse-grid joint-GRH equivalence remain unvalidated destination transfers. No arithmetic sample-energy ceiling, improved prime-counting estimate, optimal sample exponent, effective zero-uniform test, covariance positivity, formal verification, independent adversarial approval or external novelty is asserted. The construction does not recover Farey's complete uncentered moment, identify prime and reciprocal zero sets, or prove RH/GRH.
+MC-533 proves the source-side sparse Möbius criterion; PL-476 proves the prime criterion with a small deletion count; PL-477 proves a generic clustered-mask obstruction. The proposed destination transfers are now established by the finding below. No arithmetic sample-energy ceiling, improved prime-counting estimate, optimal sample exponent, effective zero-uniform test, covariance positivity, formal verification, independent adversarial approval or external novelty is asserted. The construction does not recover Farey's complete uncentered moment, identify prime and reciprocal zero sets, or prove RH/GRH.
+
+## Research disposition
+
+Outcome: supported
+
+Resolved by:
+
+- [[research/prime_lattice/findings/PL-478-geometric-coverage-retains-sparsely-sampled-prime-variance]]
+
+PL-478 reconstructs the weighted finite recovery and proves the displayed
+prime floor with cost `log(3X) D_i`, without majority retention. The fixed
+grid has `D_i<=X^(3/2)` and `w_max<=2 floor(sqrt X)`, so both ordinary
+sample-centered energy ceilings on one unbounded scale set are equivalent
+to joint mod-5 GRH. The converse uses the fixed-modulus GRH prime-counting
+estimate pointwise at the window endpoints. PL-477's clustered gaps pay
+`D asymp B^2`, consistently with its ambiguity. No sample-energy ceiling
+or optimal arithmetic sampling exponent is proved.
