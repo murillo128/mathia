@@ -9,6 +9,7 @@ based_on:
   - research/prime_lattice/findings/PL-471-sparse-zero-annihilators-force-prime-variance-on-every-large-block.md
   - research/prime_lattice/findings/PL-473-box-fourier-zeros-obstruct-logarithmic-window-test-inversion.md
   - research/prime_lattice/findings/PL-475-two-box-lengths-force-paired-macroscopic-prime-variance.md
+  - research/prime_lattice/findings/PL-486-subunit-order-mellin-filters-cannot-preserve-a-fixed-box-range.md
 ---
 
 # Can sparse-zero isolation be performed inside one fixed box range?
@@ -134,6 +135,16 @@ the box range. Writing \(E=u\partial_u\) and
 translation therefore do not commute. A claimed transfer of that
 construction must supply the missing compatibility, not just cite the
 existence of an unrestricted sparse Mellin interpolant.
+
+[[research/prime_lattice/findings/PL-486-subunit-order-mellin-filters-cannot-preserve-a-fixed-box-range|PL-486]]
+now excludes a universal version of that compatibility: if an entire
+symbol satisfies \(|P(s)|\le C\exp(C|s|^a)\), \(a<1\), and
+\(P(-u\partial_u)A_{h_*}f\) preserves even one nonzero box Fourier
+zero for **every** mean-zero compact Gevrey input of order
+\(1<q<1/a\), then \(P\) is constant. This includes the nonconstant
+sparse products used in PL-471. It does not exclude a specially
+chosen input satisfying both sets of constraints, so (2) remains the
+decisive question and the clue remains proposed.
 
 ## Evidence boundary
 

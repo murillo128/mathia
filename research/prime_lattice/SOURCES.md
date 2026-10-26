@@ -598,3 +598,11 @@ Only sources that materially support, delimit, or redirect stored `PL-*` finding
 
 154. **Robert J. Kunsch, Daniel Rudolf**, “Optimal confidence for Monte Carlo integration of smooth functions,” arXiv:1809.09890 (2018), Section 2.1, Lemmas 2.1–2.2. https://arxiv.org/abs/1809.09890; author text https://arxiv.org/html/1809.09890v1.
      - Role: primary comparison for the classical disjoint-bump method in randomized integration lower bounds. PL-485 instead derives one prime-supported perturbation across all scales with eventual equality to baseline samples. No Sobolev minimax bound, arithmetic energy estimate, or prime sampling optimality is transferred from these lemmas.
+
+## Fixed-box compatibility of Mellin filters
+
+155. **Philippe Flajolet, Robert Sedgewick**, “Mellin transforms and asymptotics: Finite differences and Rice's integrals,” *Theoretical Computer Science* **144**(1–2) (1995), 101–124. DOI: https://doi.org/10.1016/0304-3975(94)00281-M. Author text: https://algo.inria.fr/flajolet/Publications/FlSe95.pdf.
+     - Role: Section 1, equation (5), records the classical binomial-transform identity for exponential generating functions and its Poisson form. PL-486 proves the subunit-order growth estimate for the transformed symbol and the fixed-box range-preserver classification directly. No box-range or prime-variance theorem is attributed to this paper.
+
+156. **J. L. W. V. Jensen**, “Sur un nouvel et important théorème de la théorie des fonctions,” *Acta Mathematica* **22** (1899), 359–364. DOI: https://doi.org/10.1007/BF02417878. Original scan: https://archive.ymsc.tsinghua.edu.cn/pacm_download/117/5052-11511_2006_Article_BF02417878.pdf.
+     - Role: Equations (8)–(9), pp. 362–363, supply Jensen's formula and its zero-count consequence. PL-486 uses the classical fact that a nonzero entire function with growth bounded by an exponential of order strictly below one cannot vanish on an infinite arithmetic progression; its Mellin-filter application is derived locally.
