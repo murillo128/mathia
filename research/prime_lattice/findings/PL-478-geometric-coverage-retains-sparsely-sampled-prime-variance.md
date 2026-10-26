@@ -277,7 +277,7 @@ unconditional route to the ceiling (4).
 
 ## Prior art and validation
 
-Nearest-sample integration for Lipschitz data is classical optimal
+[[research/prior_art/incremental/PA-lipschitz-integration-recovery|Nearest-sample integration for Lipschitz data]] is classical optimal
 recovery; [Foucart (2022), Chapter 11](https://doi.org/10.1017/9781009003933.017),
 source 146, is the relevant comparison. Equations (5), (17) and (18)
 are elementary discrete versions, not new sampling principles.

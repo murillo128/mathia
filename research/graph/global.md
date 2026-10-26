@@ -64,7 +64,7 @@ This is the derived root graph for Mathia research. Canonical findings and mind 
 
 ## Integration boundary
 
-Stable memberships cover all 13 initialized research lines, 5,130 canonical findings, 841 durable intuitions and 77 canonical prior-art notes. Structural attachment asserts ownership only. It includes challenged findings without treating a review as withdrawal or endorsement.
+Stable memberships cover all 13 initialized research lines, 5,141 canonical findings, 841 durable intuitions and 77 canonical prior-art notes. Structural attachment asserts ownership only. It includes challenged findings without treating a review as withdrawal or endorsement.
 
 Semantic coverage is selective. The [[research/arithmetic_fidelity/graph/relations/euler-harmonic-collision-budget|Euler harmonic collision budget]] records AF-337/AF-338's finite-order refinement and its surviving source/observation restrictions. Nine direct reference links in those two findings preserve their original text exactly. No cross-line implication follows from this maintenance.
 
@@ -85,6 +85,8 @@ The [[research/graph/relations/fixed-target-box-inversion-regularity-boundary|fi
 The same mechanism separates PL-475's two-kernel macroscopic-window certificate from MC-531's bounded-jump missing-start recovery. Three reversible source wrappers link their documented dependencies and the classical compact-distribution deconvolution object. MC-532 now derives the composed paired trimmed Möbius transfer canonically and states its quantified macroscopic RH equivalence. Four exact reversible wrappers link its documented MC-528/MC-531/MC-520 dependencies and classical inverse; its existing PL-475 link is retained. Global MI-040 remains synthesis of those sources. No independently proved arithmetic ceiling, independent adversarial approval or external novelty is inferred.
 
 The same mechanism now distinguishes MC-533's coverage-weighted sparse-grid recovery from PL-477's quadratic common-mask ambiguity. The former prices actual distance to retained samples; the latter uses two fixed positive non-prime sources with identical retained window vectors but different signed targets. Global MI-040 explicitly reconciles their observation geometries. Six reversible wrappers link documented dependencies and classical Lipschitz recovery without changing source bytes after exact reversal. Neither result proves an arithmetic energy ceiling or an optimal prime/Möbius threshold.
+
+PL-478 now reconstructs the sparse-grid prime transfer with its separate pointwise GRH converse. MC-534 strengthens generic signed-sampling ambiguity to compatible common square-free coefficients, without multiplicativity or reciprocal-zeta structure. Global MI-040 records their endpoint-observation comparison with PL-477; the graph does not manufacture a direct relation in either finding. Two reversible wrappers connect the existing Lipschitz-recovery references to canonical prior art. The arithmetic ceilings and actual-source optimality remain open.
 
 `research/graph/semantic-inspection.json` records the completed mechanism scopes, their verified endpoints and the earlier source-window base. The remaining changes in that window have structural membership but are not certified here as semantically reconciled. Existing mechanism notes remain scoped to their cited canonical evidence; their presence is not a current-frontier census.
 

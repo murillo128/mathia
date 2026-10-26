@@ -591,3 +591,4 @@ This stable projection inventories every current canonical Arithmetic Fidelity f
 - [[research/arithmetic_fidelity/findings/AF-585-cubic-calibration-has-sharp-range-constant-from-endpoint-curvature|AF-585]]
 - [[research/arithmetic_fidelity/findings/AF-586-every-fixed-calibration-degree-has-an-explicit-sharp-range-constant|AF-586]]
 - [[research/arithmetic_fidelity/findings/AF-587-logarithmic-tail-control-transfers-sharp-range-below-the-profile-error|AF-587]]
+- [[research/arithmetic_fidelity/findings/AF-588-fixed-prime-tail-changes-the-sharp-range-constant-and-limit-order|AF-588]]

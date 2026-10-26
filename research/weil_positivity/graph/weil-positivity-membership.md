@@ -462,3 +462,4 @@ This stable projection inventories every current canonical Weil Positivity findi
 - [[research/weil_positivity/findings/WP-452-bounded-covariant-energies-cannot-orient-infinitely-many-prime-rays|WP-452]]
 - [[research/weil_positivity/findings/WP-453-closability-forbids-infinite-prime-ray-orientation|WP-453]]
 - [[research/weil_positivity/findings/WP-454-bounded-covariant-energies-retain-negative-dyadic-prime-blocks|WP-454]]
+- [[research/weil_positivity/findings/WP-455-closed-diagonal-trace-energies-lock-prime-phases-but-retain-both-weil-signs|WP-455]]

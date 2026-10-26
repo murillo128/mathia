@@ -2,7 +2,7 @@
 id: RA-metrics-v1
 type: riemann-atlas-metrics
 atlas_version: 1
-source_revision: 704e7681c084d662fa47114d33b79b6512815a8b
+source_revision: 36a86a20f893bf3d58df43d97eb539da8ed935aa
 derived: true
 ---
 
@@ -38,11 +38,11 @@ The five hard-pruned interfaces retain their existing scoped canonical evidence:
 
 ## Structural and semantic scope
 
-The exact tree projections contain 13 research lines, 5,130 findings, 841 durable intuitions and 77 prior-art notes. Membership changes and reversible source-reference formatting are graph maintenance, never frontier episodes. Semantic inspection remains selective as recorded in `research/graph/semantic-inspection.json`; uninspected source changes do not justify Atlas transitions.
+The exact tree projections contain 13 research lines, 5,141 findings, 841 durable intuitions and 77 prior-art notes. Membership changes and reversible source-reference formatting are graph maintenance, never frontier episodes. Semantic inspection remains selective as recorded in `research/graph/semantic-inspection.json`; uninspected source changes do not justify Atlas transitions.
 
 ## Frontier fertility
 
-The retained prospective series contains **20** classifiable episodes and **0** insufficient-evidence episodes. MC-533 refines the existing missing-start episode with coverage-weighted sparse sampling; its RH-equivalent sample-energy ceiling remains unproved. PL-477 adds one separate `new-barrier` episode for generic signed recovery from two compatible windows under a common mask. It does not prove an optimal prime or Möbius threshold. The oldest retained episode leaves the fixed last-20 window; Git preserves it. These selectively inspected questions are not an unbiased portfolio sample. Atlas states and masses are unchanged.
+The retained prospective series contains **20** classifiable episodes and **0** insufficient-evidence episodes. PL-478 refines the existing missing-start episode with the prime-source sparse-grid criterion and its separate pointwise GRH converse. MC-534 adds one `new-barrier` episode for common square-free coefficients with identical interval observations but a separated signed target. This generic query-count obstruction does not prove an optimal actual Möbius threshold. The oldest retained episode leaves the fixed last-20 window; Git preserves it. These selectively inspected questions are not an unbiased portfolio sample. Atlas states and masses are unchanged.
 
 - **FrontierFertilityEpisodes = 45.0%**
 - **BarrierRate = 45.0%**

@@ -233,7 +233,7 @@ No claim concerns arbitrary densely interlaced scale observations.
 The recovery obstruction is a classical indistinguishable-input
 construction. [Baran–Demaine–Katz, Sections 2–3](https://erikdemaine.org/papers/Integration_Algorithmica/paper.pdf)
 (MC-S85) bounds the uncertainty left between samples by Lipschitz
-upper and lower envelopes. [Krieg–Vybíral, Section 2.1](https://doi.org/10.1007/s00041-023-10021-7)
+[[research/prior_art/incremental/PA-lipschitz-integration-recovery|upper and lower envelopes]]. [Krieg–Vybíral, Section 2.1](https://doi.org/10.1007/s00041-023-10021-7)
 (MC-S87) explicitly describes the standard use of functions that
 vanish at observation points while retaining a large integral.
 The counting input (13) is classical (MC-S12) and is derived here.

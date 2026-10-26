@@ -467,3 +467,4 @@ This stable projection inventories every current canonical Weil Inertia finding.
 - [[research/weil_inertia/findings/WI-461-fixed-scale-euler-peaks-have-positive-density-at-zeta-zero-ordinates|WI-461]]
 - [[research/weil_inertia/findings/WI-462-prime-power-coherence-lowers-the-zero-sampled-euler-response-mean|WI-462]]
 - [[research/weil_inertia/findings/WI-463-first-euler-threshold-correction-exceeds-logarithmic-bracket-bandwidth|WI-463]]
+- [[research/weil_inertia/findings/WI-464-full-euler-correction-has-an-integrable-threshold-primitive|WI-464]]

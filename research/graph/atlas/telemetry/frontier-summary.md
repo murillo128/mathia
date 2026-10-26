@@ -60,6 +60,10 @@ PL-476 now verifies the prime-source version of the same missing-start question:
 
 [[research/prime_lattice/findings/PL-477-common-mask-paired-windows-retain-quadratic-deletion-ambiguity|PL-477]] contributes one separate `new-barrier` episode for signed recovery under shared-source/common-mask constraints. Two fixed positive residue-supported sources give identical retained vectors at both lengths but differ by order B²/X on the prescribed smooth target. The clustered gaps have quadratic distance cost, so this does not contradict geometric sparse-grid recovery. It proves neither prime-specific optimality nor necessity of the prime logarithm, and it does not refute the arithmetic pole criteria. Classical Lipschitz recovery registration and six reference wrappers are maintenance, not episodes.
 
+## Sparse prime transfer and square-free signed-query barrier
+
+PL-478 refines the existing missing-start recovery episode with the prime-source sparse-grid criterion and its independent pointwise GRH converse; the reporting attribution remains `mobius_cancellation`. MC-534 adds one `new-barrier` episode for exact signed recovery from interval queries over common square-free sign coefficients. This preserves support and channel compatibility that MC-533's distance envelope did not provide. Its X/(q+1) ambiguity is distinct from PL-477's clustered-deletion B²/X budget. Neither result proves an arithmetic ceiling or an optimal actual-source sample count. The linked box-inversion mechanism retains the precise quantifiers and source exclusions. The two prior-art wrappers are maintenance, not episodes.
+
 ## Retained prospective window
 
 Classifiable episodes: **20**. Insufficient-evidence episodes: **0**. Retrospective episodes: **0**.
@@ -80,8 +84,8 @@ Classifiable episodes: **20**. Insufficient-evidence episodes: **0**. Retrospect
 | Line | Episodes | Viable extension | Barrier | Prior art | Duplicate |
 | --- | ---: | ---: | ---: | ---: | ---: |
 | `arithmetic_fidelity` | 4 | 2 | 2 | 0 | 0 |
-| `mobius_cancellation` | 3 | 2 | 0 | 1 | 0 |
-| `prime_lattice` | 6 | 3 | 3 | 0 | 0 |
+| `mobius_cancellation` | 4 | 2 | 1 | 1 | 0 |
+| `prime_lattice` | 5 | 3 | 2 | 0 | 0 |
 | `robin_extremal` | 1 | 1 | 0 | 0 | 0 |
 | `visual_exploration` | 1 | 1 | 0 | 0 | 0 |
 | `weil_inertia` | 1 | 0 | 1 | 0 | 0 |

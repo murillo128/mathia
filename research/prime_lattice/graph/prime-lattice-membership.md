@@ -485,3 +485,4 @@ This stable projection inventories every current canonical Prime Lattice finding
 - [[research/prime_lattice/findings/PL-475-two-box-lengths-force-paired-macroscopic-prime-variance|PL-475]]
 - [[research/prime_lattice/findings/PL-476-trimmed-paired-prime-variance-retains-the-grh-obstruction|PL-476]]
 - [[research/prime_lattice/findings/PL-477-common-mask-paired-windows-retain-quadratic-deletion-ambiguity|PL-477]]
+- [[research/prime_lattice/findings/PL-478-geometric-coverage-retains-sparsely-sampled-prime-variance|PL-478]]
