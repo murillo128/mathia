@@ -217,3 +217,8 @@ This file records durable external literature dependencies used to support or de
 ## Magnitude spectra and phase-retrieval ambiguity
 
 - Robert Beinert and Gerlind Plonka, **Ambiguities in one-dimensional phase retrieval of structured functions**, author preprint, https://static.uni-graz.at/fileadmin/_Persoenliche_Webseite/beinert_robert/Preprints/BeinertPlonka2015a.pdf. Role: established ambiguity of recovering a structured signal from Fourier magnitudes. In `VIS-461`, this bounds the inference from unequal transport profiles: the result instead computes an explicit difference after squared-magnitude and separate energy normalization. No general phase-retrieval uniqueness theorem is claimed.
+
+## Discrete sine reflection and sampling conventions
+
+- FFTW authors, **Real even/odd DFTs (cosine/sine transforms)**, FFTW manual §2.5.2. Stable locator: `https://www.fftw.org/fftw3_doc/Real-even_002fodd-DFTs-_0028cosine_002fsine-transforms_0029.html`. Role: classical sample-centered versus half-sample symmetry and transform boundary conventions; prior-art boundary for VIS-466. VIS-466 derives the Farey stitch energy formula from the exact block assignment; it is not attributed to FFTW.
+- SciPy developers, **scipy.fft.dst**, SciPy reference manual. Stable locator: `https://docs.scipy.org/doc/scipy/reference/generated/scipy.fft.dst.html`. Role: type-I sine-transform definition and orthonormal normalization used to check VIS-466's complete finite spectra; documentation of the numerical convention, not independent mathematical evidence.
