@@ -68,6 +68,11 @@ would give the wrong answer. For orientation, numerical evaluations give
 `F(1/2)≈0.782361`, `F(1)≈0.739368`, and `F(2)≈0.723837`;
 the strict inequality in (5) is proved separately below.
 
+The crossover has only finitely many stationary points. It decreases strictly
+for all sufficiently small positive `tau` and increases strictly for
+`tau >= (1+2e)/(2 log 2)`. Every global minimizer lies strictly between zero
+and that explicit upper threshold. Uniqueness of the minimum is not asserted.
+
 There is an equivalent minimum-range consequence. Put
 `R_(r;p,q)(delta)=inf{B>1:Delta_(r;p,q)(B)<=delta}`. If `delta->0`,
 `p->infinity`, and `log(1/delta)/log p -> sigma in (0,infinity)`, then
@@ -334,7 +339,103 @@ Therefore `P(2)>E_1(log2)` and the decreasing inverse gives
 `mathfrak a(1)<log2`. This proves `F(1/2)<c log2`.
 The standard value `B_1≈0.2614972128` gives `c log2≈0.9003103806<1`.
 Together with the endpoint limits, the strict undershoot proves
-nonmonotonicity, without claiming uniqueness or a location for a minimum.
+nonmonotonicity.
+
+## The stationary-point problem is confined away from both endpoints
+
+Write `a=mathfrak a(z)`, `ell=log 2`, and
+\[
+ M_j(z)=\sum_{p\ {\rm prime}}(\log p)^j p^{-1-z},\qquad z>0.
+\]
+These series and their derivatives converge locally uniformly. Implicit
+differentiation of `E_1(a)=P(1+z)` gives the exact sign test
+\[
+ a'=a e^aM_1(z),\qquad
+ F'(\tau)=\frac{2ca}{z^2}\{z e^aM_1(z)-1\},\qquad z=2\tau.
+ \tag{26}
+\]
+Thus monotonicity of `P`, or its log-convexity alone, is not the derivative
+inequality needed for this inverse-coordinate ratio.
+
+At the singular endpoint, the next regular coefficient is
+\[
+ C_1=\gamma+\sum_{p\ {\rm prime}}\frac{\log p}{p(p-1)},\qquad
+ P(1+z)=-\log z+B_1-\gamma+C_1z+O(z^2).
+ \tag{27}
+\]
+To derive it without a prime-counting remainder, use the absolutely convergent
+Euler-log identity
+`P(s)=log zeta(s)-sum_(k>=2) P(ks)/k`. The latter sum is analytic near
+`s=1`; its differentiated series is locally normally convergent, since it is
+bounded by a convergent series of multiples of `log n/n^(2-epsilon)`.
+The Laurent expansion of zeta gives the linear coefficient `gamma` of its
+logarithmic regular part, and summing the geometric prime-power tails gives
+(27). This is a classical coefficient, not a new prime-zeta constant.
+
+The `E_1` power series and the analytic implicit function theorem, applied to
+`a/z` after cancelling `-log z`, now give
+\[
+ \mathfrak a(z)=c^{-1}z\{1+(c^{-1}-C_1)z+O(z^2)\},\qquad
+ F'(0+)=2(c^{-1}-C_1)<0.
+ \tag{28}
+\]
+The sign does not rely on decimal evaluation of `C_1`. Indeed the same
+Euler-log identity gives
+\[
+ B_1=\gamma-\sum_p\sum_{k\ge2}\frac{p^{-k}}k
+ >\gamma-\sum_{n\ge2}\{-\log(1-1/n)-1/n\}
+ =2\gamma-1>0,
+\]
+where the integer sum telescopes to `1-gamma`. Also
+`C_1 > gamma+(log 2)/2+(log 3)/6 > 1`, using just
+`gamma>0.57`, `log 2>0.69` and `log 3>1.09`. Therefore
+`c^(-1)<1<C_1`. Analyticity of the regular expansion makes `F'` strictly
+negative on some positive interval, rather than merely providing a negative
+secant slope. No explicit size for that initial interval is claimed.
+
+There is a simple explicit tail cutoff. For every `a>0`,
+\[
+ \frac1{a+1}<e^aE_1(a)<\frac1a.
+ \tag{29}
+\]
+The integral `e^aE_1(a)=integral_0^infinity e^(-v)/(a+v)dv` proves the
+upper bound directly and the strict lower bound by Jensen's inequality for
+the exponential probability density. These are weaker than the classical
+bounds in [DLMF (6.8.2)](https://dlmf.nist.gov/6.8.E2).
+Put `b=z ell`. For `b>=1+2e`,
+\[
+ E_1(b-1)<\frac{e e^{-b}}{b-1}\le\tfrac12e^{-b}
+       <P(1+z)=E_1(a).
+\]
+The decreasing inverse implies `a<b-1`. Since `M_1(z)>=ell P(1+z)`,
+\[
+ z e^aM_1(z)\ge b e^aE_1(a)>\frac b{a+1}>1.
+ \tag{30}
+\]
+Equation (26) therefore proves strict increase for
+`tau >= (1+2e)/(2 log 2)`; the endpoint is included. This cutoff is sufficient,
+not sharp, and uses only positivity and the smallest prime for its tail step.
+
+The two endpoint signs imply that all stationary points belong to a compact
+subinterval of `(0,(1+2e)/(2 log 2))`. The function `F` is real analytic on
+`(0,infinity)` because both defining functions are real analytic with
+nonzero derivatives. Its derivative cannot have infinitely many zeros in that
+compact interval without vanishing identically. Hence there are finitely many
+stationary points. The strict undershoot in (5), together with both endpoint
+limits, ensures that the global minimum is attained; (28)--(30) put every
+minimizer strictly inside the stated interval.
+
+For the remaining interior question, at a stationary point define
+`G(z)=z e^aM_1(z)-1`. Differentiating before imposing `G=0` gives
+\[
+ G'(z)=\frac{1+a}{z}-\frac{M_2(z)}{M_1(z)}\quad\hbox{when }G(z)=0.
+ \tag{31}
+\]
+Strict positivity of the right side at every root would force a unique root
+and hence a unique global minimum: every crossing would be upward, while the
+endpoint signs are opposite. Neither positivity of the prime terms nor
+`M_2 M_0>=M_1^2` proves that inequality. Equations (26)--(31) confine and
+specify the unresolved test; a sampled minimum does not settle it.
 
 ## Prior art, checks and evidence boundary
 
@@ -359,8 +460,18 @@ display the classical analytic regular part used in (10). Only this local
 analytic input is used. The compact-source estimates and the crossover proof
 above use no zero-free-region assumption.
 
+For (27), [DLMF (25.2.4)](https://dlmf.nist.gov/25.2.E4) supplies the
+classical Laurent expansion; Kawalec's equation (14) identifies the same
+linear coefficient. The positive prime-power derivation above is independent
+of that preprint's conditional prime-counting remainder. DLMF (6.8.2)
+supplies neighboring sharper exponential-integral bounds. The derivative
+confinement is an application of classical inverse calculus and these
+inequalities to this registered crossover, not a new general monotonicity
+theorem. It leaves the number of interior turning points unresolved.
+
 The substantive delta is the compact-source relative estimate (7), the sharp
-joint transition (4), and its strict undershoot. The question was explicitly
+joint transition (4), its strict undershoot, and the finite interior
+stationary-point restriction (26)--(31). The joint transition was explicitly
 left outside AF-587/588. No new Chebyshev family, general approximation
 principle, or theorem-priority claim based on search absence is asserted.
 
@@ -375,6 +486,16 @@ and real bisection. They give `F(0.001)≈0.998878`, `F(0.1)≈0.913803`,
 and undershoot statements. These are finite-precision consistency checks,
 not interval certificates, actual minimax computations, or a proof of a
 unique crossover minimum. Equations (7)--(25) supply the analytic argument.
+
+A separate scratch-only `decimal` check at 55-digit precision used the primes
+up to `10000` and the `E_1` power series. At `z=2,4,6,10`, the implicit
+derivative of the finite-prime inverse agreed with a centered difference of
+step `10^(-10)` to absolute error below `2*10^(-23)`, and (29) held.
+The omitted positive series tails admit the integer-integral bounds
+`N^(-z)/z` and `N^(-z)(log N/z+1/z^2)` for `M_0` and `M_1`, respectively,
+at these parameters. This is a finite-prefix consistency check, not an
+interval certificate for (31), a count of stationary points, or a proof of
+uniqueness. Equations (26)--(30) give the endpoint sign proofs independently.
 
 The theorem retains fixed degree and a positive finite limiting ratio
 `log B/log p`. It gives neither a uniform supercritical joint limit nor
