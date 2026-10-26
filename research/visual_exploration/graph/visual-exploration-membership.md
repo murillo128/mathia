@@ -470,3 +470,4 @@ This stable projection inventories every current canonical Visual Exploration fi
 - [[research/visual_exploration/findings/VIS-463-prime-only-shell-symmetry-erases-zero-resonance-bias|VIS-463]]
 - [[research/visual_exploration/findings/VIS-464-smooth-zero-bias-does-not-determine-hard-threshold-correction|VIS-464]]
 - [[research/visual_exploration/findings/VIS-465-capped-variation-tariff-for-farey-transport-spectrum|VIS-465]]
+- [[research/visual_exploration/findings/VIS-466-reflected-farey-transport-parity-is-a-stitch-boundary-term|VIS-466]]

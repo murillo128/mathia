@@ -21,3 +21,7 @@ Canonical findings and `mind/` remain authoritative. The membership projection i
 ## Farey spectral transport
 
 [[research/graph/relations/farey-transport-relative-energy-and-variation|Relative energy and rank variation]] separates normalized-spectrum transfer from the capped variation tail estimate for labeled-edge reassemblies.
+
+## Reflected defect recovery
+
+[[research/farey_discrepancy/graph/relations/reflected-defect-erasure-and-energy-identifiability|Erasure recovery and energy-conditioned spectra]] distinguishes the complete-signature inverse, the three-erasure guarantee and the exact-energy-matched four-erasure obstruction.

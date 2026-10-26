@@ -64,6 +64,10 @@ PL-476 now verifies the prime-source version of the same missing-start question:
 
 PL-478 refines the existing missing-start recovery episode with the prime-source sparse-grid criterion and its independent pointwise GRH converse; the reporting attribution remains `mobius_cancellation`. MC-534 adds one `new-barrier` episode for exact signed recovery from interval queries over common square-free sign coefficients. This preserves support and channel compatibility that MC-533's distance envelope did not provide. Its X/(q+1) ambiguity is distinct from PL-477's clustered-deletion B²/X budget. Neither result proves an arithmetic ceiling or an optimal actual-source sample count. The linked box-inversion mechanism retains the precise quantifiers and source exclusions. The two prior-art wrappers are maintenance, not episodes.
 
+## Energy-conditioned reflected erasures
+
+[[research/farey_discrepancy/graph/relations/reflected-defect-erasure-and-energy-identifiability|The reflected erasure mechanism]] adds one `new-barrier` episode: FD-345 supplies an exact positive-energy-matched pair whose normalized spectra differ after four known-position value erasures. Its finite, realizable certificate settles an enriched observation question; it supplies no asymptotic gap or genuine Farey bound. The complete-signature inverse and three-erasure guarantee survive. No exact Atlas leaf is assigned. VIS-466's stitch-parity correction is a representation correction and classical projection specialization, not another episode.
+
 ## Retained prospective window
 
 Classifiable episodes: **20**. Insufficient-evidence episodes: **0**. Retrospective episodes: **0**.
@@ -71,11 +75,11 @@ Classifiable episodes: **20**. Insufficient-evidence episodes: **0**. Retrospect
 | Classification | Episodes |
 | --- | ---: |
 | known-prior-art | 2 |
-| new-barrier | 9 |
-| viable-extension | 9 |
+| new-barrier | 10 |
+| viable-extension | 8 |
 
-- **FrontierFertilityEpisodes = 45.0%**
-- **BarrierRate = 45.0%**
+- **FrontierFertilityEpisodes = 40.0%**
+- **BarrierRate = 50.0%**
 - **PriorArtCollisionRate = 10.0%**
 - **InternalDuplicateRate = 0.0%**
 
@@ -84,9 +88,9 @@ Classifiable episodes: **20**. Insufficient-evidence episodes: **0**. Retrospect
 | Line | Episodes | Viable extension | Barrier | Prior art | Duplicate |
 | --- | ---: | ---: | ---: | ---: | ---: |
 | `arithmetic_fidelity` | 4 | 2 | 2 | 0 | 0 |
+| `farey_discrepancy` | 1 | 0 | 1 | 0 | 0 |
 | `mobius_cancellation` | 4 | 2 | 1 | 1 | 0 |
 | `prime_lattice` | 5 | 3 | 2 | 0 | 0 |
-| `robin_extremal` | 1 | 1 | 0 | 0 | 0 |
 | `visual_exploration` | 1 | 1 | 0 | 0 | 0 |
 | `weil_inertia` | 1 | 0 | 1 | 0 | 0 |
 | `weil_positivity` | 2 | 0 | 1 | 1 | 0 |

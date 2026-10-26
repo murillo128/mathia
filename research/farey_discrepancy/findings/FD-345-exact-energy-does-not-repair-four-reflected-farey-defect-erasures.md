@@ -2,7 +2,7 @@
 
 **Status:** EXACT-DERIVED + EXACT-FINITE-COUNTEREXAMPLE + ENERGY-CONDITIONED-SPECTRAL-NONIDENTIFIABILITY.
 
-In FD-344's reflected whole-excursion reassembly class, retaining the exact
+In [[research/farey_discrepancy/findings/FD-344-reflection-makes-three-farey-defect-erasures-recoverable-four-need-not-be|FD-344]]'s reflected whole-excursion reassembly class, retaining the exact
 full discrepancy energy does **not** make four known-position defect-value
 erasures spectrally identifying. At prime order `p=617`, two reassemblies
 have the same complete defective-rank list, agree in every defect value
@@ -286,7 +286,7 @@ or independent adversarial approval is claimed.
 The index `nu=(q_-+q_+)/q` is classical: R. R. Hall and P. Shiu,
 *The index of a Farey sequence*, Michigan Mathematical Journal **51**(1)
 (2003), 209--223, [DOI](https://doi.org/10.1307/mmj/1049832901).
-FD-331 and FD-344 already supply the full-signature inverse and the
+[[research/farey_discrepancy/findings/FD-331-joint-farey-defect-ranks-and-values-invert-all-excursion-permutations|FD-331]] and FD-344 already supply the full-signature inverse and the
 three-erasure guarantee. Their identities and the reversal isometry of
 Euclidean norm are not claimed as new.
 

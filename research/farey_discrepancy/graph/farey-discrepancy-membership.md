@@ -353,3 +353,4 @@ This stable projection inventories every current canonical Farey Discrepancy fin
 - [[research/farey_discrepancy/findings/FD-342-log-weighted-divisor-control-saturates-every-linear-farey-band|FD-342]]
 - [[research/farey_discrepancy/findings/FD-343-linear-position-fourier-tails-have-a-positive-limiting-profile|FD-343]]
 - [[research/farey_discrepancy/findings/FD-344-reflection-makes-three-farey-defect-erasures-recoverable-four-need-not-be|FD-344]]
+- [[research/farey_discrepancy/findings/FD-345-exact-energy-does-not-repair-four-reflected-farey-defect-erasures|FD-345]]

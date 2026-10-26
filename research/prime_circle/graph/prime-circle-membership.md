@@ -470,3 +470,4 @@ This stable projection inventories every current canonical Prime Circle finding.
 - [[research/prime_circle/findings/PC-460-primorial-cotangent-rare-spectrum-has-a-prime-pair-counting-law|PC-460]]
 - [[research/prime_circle/findings/PC-461-admissible-triplets-force-cotangent-populations-above-the-pair-spectrum|PC-461]]
 - [[research/prime_circle/findings/PC-462-separated-cluster-hilbert-bound-closes-the-cotangent-triplet-counting-law|PC-462]]
+- [[research/prime_circle/findings/PC-463-every-fixed-cotangent-population-level-is-a-finite-constellation-law|PC-463]]

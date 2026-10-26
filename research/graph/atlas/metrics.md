@@ -2,7 +2,7 @@
 id: RA-metrics-v1
 type: riemann-atlas-metrics
 atlas_version: 1
-source_revision: d173b1d2a30b3e698f236df92bf8672affe19080
+source_revision: f318208bba3a2d50e599538bde2544bb87892662
 derived: true
 ---
 
@@ -38,16 +38,16 @@ The five hard-pruned interfaces retain their existing scoped canonical evidence:
 
 ## Structural and semantic scope
 
-The exact tree projections contain 13 research lines, 5,151 findings, 842 durable intuitions and 78 prior-art notes. Membership changes and reversible source-reference formatting are graph maintenance, never frontier episodes. Semantic inspection remains selective as recorded in `research/graph/semantic-inspection.json`; uninspected source changes do not justify Atlas transitions.
+The exact tree projections contain 13 research lines, 5,161 findings, 842 durable intuitions and 78 prior-art notes. Membership changes and reversible source-reference formatting are graph maintenance, never frontier episodes. Semantic inspection remains selective as recorded in `research/graph/semantic-inspection.json`; uninspected source changes do not justify Atlas transitions.
 
-The capped Farey transport reconciliation records VIS-465 and its existing dependencies, with classical bounded-variation Fourier provenance. The replacement corrects an intermediate majorant; it does not create a new frontier episode. Its relative-energy and variation gates concern artificial reassemblies and do not alter the reproduced Farey/Riesz territory or any Atlas mass.
+The reflected Farey reconciliation distinguishes full-discrepancy parity from right-endpoint transport parity and records exact-energy-conditioned erasure nonidentifiability. Both concern artificial reassemblies. Their source-backed scope changes no Atlas mass or state; VIS-466's conflicting illustrative length tuple is explicitly excluded from support in the mechanism note.
 
 ## Frontier fertility
 
-The retained prospective series contains **20** classifiable episodes and **0** insufficient-evidence episodes. PL-478 refines the existing missing-start episode with the prime-source sparse-grid criterion and its separate pointwise GRH converse. MC-534 adds one `new-barrier` episode for common square-free coefficients with identical interval observations but a separated signed target. This generic query-count obstruction does not prove an optimal actual Möbius threshold. The oldest retained episode leaves the fixed last-20 window; Git preserves it. These selectively inspected questions are not an unbiased portfolio sample. Atlas states and masses are unchanged.
+The retained prospective series contains **20** classifiable episodes and **0** insufficient-evidence episodes. FD-345 adds one `new-barrier` episode for four erased reflected defect values even when exact positive full energy is retained. The oldest episode leaves the fixed last-20 window; Git preserves it. The finite spectral certificate supplies no asymptotic gap or arithmetic estimate. These selectively inspected questions are not an unbiased portfolio sample. Atlas states and masses are unchanged.
 
-- **FrontierFertilityEpisodes = 45.0%**
-- **BarrierRate = 45.0%**
+- **FrontierFertilityEpisodes = 40.0%**
+- **BarrierRate = 50.0%**
 - **PriorArtCollisionRate = 10.0%**
 - **InternalDuplicateRate = 0.0%**
 

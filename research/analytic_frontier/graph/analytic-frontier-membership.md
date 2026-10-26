@@ -213,3 +213,4 @@ This stable projection inventories every current canonical Analytic Frontier fin
 - [[research/analytic_frontier/findings/ANF-201-bounded-cardinality-complex-near-extremizers-have-the-real-notch-envelope|ANF-201]]
 - [[research/analytic_frontier/findings/ANF-202-bounded-cardinality-small-notch-minima-are-exactly-real|ANF-202]]
 - [[research/analytic_frontier/findings/ANF-203-sparse-profile-peaks-force-complex-cardinality-escape|ANF-203]]
+- [[research/analytic_frontier/findings/ANF-204-complex-finite-attainment-requires-an-inverse-square-profile-tail|ANF-204]]
