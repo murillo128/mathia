@@ -64,7 +64,7 @@ This is the derived root graph for Mathia research. Canonical findings and mind 
 
 ## Integration boundary
 
-Stable memberships cover all 13 initialized research lines, 5,187 canonical findings, 845 durable intuitions and 79 canonical prior-art notes. Structural attachment asserts ownership only. It includes challenged findings without treating a review as withdrawal or endorsement.
+Stable memberships cover all 13 initialized research lines, 5,196 canonical findings, 845 durable intuitions and 79 canonical prior-art notes. Structural attachment asserts ownership only. It includes challenged findings without treating a review as withdrawal or endorsement.
 
 Semantic coverage is selective. The [[research/arithmetic_fidelity/graph/relations/euler-harmonic-collision-budget|Euler harmonic collision budget]] records AF-337/AF-338's finite-order refinement and its surviving source/observation restrictions. Nine direct reference links in those two findings preserve their original text exactly. No cross-line implication follows from this maintenance.
 
@@ -89,6 +89,8 @@ The same mechanism now distinguishes MC-533's coverage-weighted sparse-grid reco
 PL-478 now reconstructs the sparse-grid prime transfer with its separate pointwise GRH converse. MC-534 strengthens generic signed-sampling ambiguity to compatible common square-free coefficients, without multiplicativity or reciprocal-zeta structure. Global MI-040 records their endpoint-observation comparison with PL-477; the graph does not manufacture a direct relation in either finding. Two reversible wrappers connect the existing Lipschitz-recovery references to canonical prior art. The arithmetic ceilings and actual-source optimality remain open.
 
 `research/graph/semantic-inspection.json` records the completed mechanism scopes, their verified endpoints and the earlier source-window base. The remaining changes in that window have structural membership but are not certified here as semantically reconciled. Existing mechanism notes remain scoped to their cited canonical evidence; their presence is not a current-frontier census.
+
+The Farey transport mechanism now separates FD-347's finite-half-period-test obstruction from FD-346's comparator separation. The reflected doubled control passes any prescribed finite window while retaining a biased sector split; it does not retain genuine denominator/adjacency arithmetic or refute all-fixed-offset decorrelation. Two reversible source-reference wrappers preserve the finding's bytes after exact reversal. Other newly attached findings remain outside this bounded semantic reconciliation.
 
 The Riemann Atlas v1 masses and territory states are unchanged. [[research/graph/atlas/telemetry/frontier-summary|Frontier telemetry]] distinguishes the selected source-backed episodes from topology maintenance and states its sampling limits.
 <!-- graph:end -->

@@ -2,7 +2,7 @@
 id: RA-frontier-telemetry-v1
 type: riemann-atlas-frontier-telemetry
 atlas_version: 1
-prospective_source_cutoff: e9ffbffc09cd7cecdf451dada2dcc58c60ebc0c9
+prospective_source_cutoff: 4d169608b45b232c68af16844d7434636299028a
 derived: true
 ---
 
@@ -84,6 +84,12 @@ The inherited `4|m` fraction remains unknown: alternating mesh classes require h
 
 FD-346 refines the existing high-band episode; its classification, the retained count, all rates and every Atlas state/mass remain unchanged. Membership repair, source wrappers and classical prior-art registration contribute no event. Other changed findings have structural membership only unless included in a separately recorded inspected scope.
 
+## Finite half-period test boundary
+
+[[research/farey_discrepancy/findings/FD-347-finite-half-period-tests-miss-reflected-gap-sector-bias|FD-347]] adds one `new-barrier` episode for finite-test sufficiency, distinct from the already resolved projected-comparator question. For every fixed offset radius R, a reflected rotated doubled grid preserves the normalized genuine gap population and coarse high-band law, passes all half-period tests in that window at `O_R(Q^-2)`, and still has nonzero limiting sector bias. Its source construction omits the Farey denominator cutoff and adjacency labels. The bias is not uniform in growing R; genuine all-fixed-offset decorrelation, band-weighted sufficient estimates and additional arithmetic rigidity remain outside the obstruction.
+
+The latest 20 classifiable prospective episodes give 35% fertility, 55% barriers and 10% prior-art collisions. These unchanged rates summarize a changed set of inspected questions. Atlas states and masses remain unchanged. Reference formatting, membership reconciliation and clue lifecycle changes contribute no episodes.
+
 ## Retained prospective window
 
 Classifiable episodes: **20**. Insufficient-evidence episodes: **0**. Retrospective episodes: **0**.
@@ -104,11 +110,10 @@ Classifiable episodes: **20**. Insufficient-evidence episodes: **0**. Retrospect
 | Line | Episodes | Viable extension | Barrier | Prior art | Duplicate |
 | --- | ---: | ---: | ---: | ---: | ---: |
 | `arithmetic_fidelity` | 4 | 2 | 2 | 0 | 0 |
-| `farey_discrepancy` | 1 | 0 | 1 | 0 | 0 |
+| `farey_discrepancy` | 2 | 0 | 2 | 0 | 0 |
 | `mobius_cancellation` | 4 | 2 | 1 | 1 | 0 |
 | `prime_lattice` | 5 | 3 | 2 | 0 | 0 |
 | `visual_exploration` | 1 | 0 | 1 | 0 | 0 |
-| `weil_inertia` | 1 | 0 | 1 | 0 | 0 |
 | `weil_positivity` | 2 | 0 | 1 | 1 | 0 |
 | `xi_flow` | 2 | 0 | 2 | 0 | 0 |
 

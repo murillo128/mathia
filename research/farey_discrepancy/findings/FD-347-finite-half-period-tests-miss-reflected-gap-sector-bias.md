@@ -193,7 +193,7 @@ no lower bound uniform as `R->infinity` is asserted.
 
 ## 5. Prior art, audit, and consequence
 
-The Farey gap-correlation input is classical Hall/Boca–Cobeli–Zaharescu
+The Farey gap-correlation input is classical [[research/prior_art/incremental/PA-farey-fixed-lag-gap-correlations|Hall/Boca–Cobeli–Zaharescu]]
 theory, with the explicit formulation cited above. Fourier correlation,
 shift modulation, finite-moment nonuniqueness and weak convergence via
 trigonometric polynomials are classical. Searches by Farey gap/rank
@@ -202,7 +202,7 @@ trigonometric moments did not identify this particular positive-grid
 certificate; that is not a claim of general novelty. No new arithmetic
 estimate is used or proved.
 
-Unlike FD-313's local-block controls for full cumulative energy, this
+Unlike [[research/farey_discrepancy/findings/FD-313-sublinear-local-gap-block-inventories-can-remain-noncoercive|FD-313]]'s local-block controls for full cumulative energy, this
 construction retains the actual Farey gap population up to scaling and
 duplication, matches the entire classical high-band profile, and passes
 specified **macroscopic-lag** tests. Unlike identical replication, it
