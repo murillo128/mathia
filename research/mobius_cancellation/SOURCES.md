@@ -580,3 +580,9 @@ MC-540 uses the first Borel–Cantelli lemma, Theorem 2.3.1: summable endpoint-h
 Robert J. Kunsch and Daniel Rudolf, *Optimal confidence for Monte Carlo integration of smooth functions*, arXiv:1809.09890v1 (2018), Section 2.1, Lemmas 2.1–2.2. https://arxiv.org/html/1809.09890v1.
 
 Role: primary prior art for disjoint-support fooling functions and randomized integration lower bounds. MC-540 uses a related hidden-support mechanism, but constructs its common square-free coefficient source and all-scale dispersion directly. Neither the paper's minimax rates nor its distributions over inputs are imported as a theorem about one fixed arithmetic sequence.
+
+## MC-S94 — O'Donnell, orthogonality of Boolean characters
+
+Ryan O'Donnell, *Analysis of Boolean Functions*, Cambridge University Press (2014), Theorem 1.5; author's May 2021 edition: https://www.cs.cmu.edu/~odonnell/papers/Analysis-of-Boolean-Functions-by-Ryan-ODonnell.pdf. https://arxiv.org/abs/2105.10386.
+
+Role: classical orthonormality of distinct products of independent Rademacher signs. MC-541 groups coefficients by their unprescribed prime part, derives the exact uncentered and centered moment norms, and uses their attaining vectors to prove a scale-separation boundary for MC-538's uniform weighted-moment method. Neither a new orthogonality principle nor an interval-specific lower bound is claimed.
