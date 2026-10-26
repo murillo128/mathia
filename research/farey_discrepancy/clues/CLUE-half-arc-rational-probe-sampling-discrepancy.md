@@ -1,7 +1,7 @@
 ---
 id: CLUE-farey-discrepancy-half-arc-rational-probe-sampling-discrepancy
 type: research-clue
-status: proposed
+status: accepted
 origin: master-researcher
 target_line: farey_discrepancy
 based_on:
@@ -74,3 +74,73 @@ Before promotion, compare the resulting estimate with classical discrepancy/quad
 The proposed absolute and one-sided sampling bounds, the needed spatial small-window bound, and their asymptotics are unvalidated. The Visual artifact is supporting exploration, not a canonical finding or independent confirmation sample. Its exact finite comparison establishes that the measures differ; it supplies no rate in the present regime. The Gram and rank identities are classical/local persisted inputs, not a novelty claim for this proposal.
 
 This clue adds a specific sufficient-route test to the existing count question and changes no accepted clue disposition. No decorrelation, sector equipartition, low-frequency Franel estimate, or RH improvement is established. The destination must independently check source and review state before relying on the cited inputs.
+
+## Research disposition
+
+Accepted for investigation after exact admissible-panel checks and a classical
+quadrature audit. Neither the absolute nor the one-sided bound is established.
+The residual is cancellation in the quadrature of a `Q`-dependent
+rank-level function; equidistribution of the probe set alone is insufficient.
+
+The probe geometry can be simplified exactly. Put `m=floor(t/2)` and use
+the cyclic `F_m` convention, including `0` and excluding `1`. Then
+
+`E_t={v/2,(v+1)/2: v in F_m}`, and `|E_t|=2 N_m`.
+
+Indeed, for reduced `v=a/d`, the larger reduced denominator of its two
+preimages under doubling is exactly `2d`: for odd `d` their denominators
+are `d,2d`, and for even `d` both are `2d`. Thus, with
+
+`H_(Q,r)(v)=w_r(D_Q(v/2))+w_r(-D_Q(v/2))`,
+
+half-period antisymmetry gives the exact quadrature expression
+
+`Delta_(Q,t,r)=sum_(v in F_m) H_(Q,r)(v)-N_m int_0^1 H_(Q,r)(v) dv`.
+
+Here `int H=2P_(Q,r)`. The one-dimensional Koksma inequality, stated in
+[Aistleitner–Dick, equation (2)](https://arxiv.org/pdf/1406.0230), and
+[Dress's discrepancy theorem](https://www.numdam.org/article/JTNB_1999__11_2_345_0.pdf)
+give only
+
+`|Delta_(Q,t,r)| <= (N_m/m+1) Var(H_(Q,r)) = O(t Var(H_(Q,r)))`.
+
+The harmless `+1` accommodates the cyclic endpoint convention. The step
+function has finite variation for each `Q`; no bound uniform in `Q` is
+supplied. Discarding that factor would assume a missing input. These are
+classical quadrature ingredients and an elementary change of variables,
+not a new estimate or an independent arithmetic channel.
+
+Rational endpoint atoms do not cause a convention mismatch on these
+probes. At `u in E_t`, both `u` and `u+1/2` belong to `F_Q`, so their
+opposite half-arc jumps cancel. Every other possible jump is a rational
+of denominator at most `2Q`. Rational separation therefore makes `D_Q`
+constant on the circular open neighborhood
+`|v-u|<1/(2 q(u) Q)`, including its center. This removes an endpoint
+ambiguity, not the sampling problem.
+
+Exact-fraction scratch checks used prime orders `61,127,251,509,1021`,
+every `2<=t<=floor(sqrt(Q/8))`, and every `-2<=r<=2` satisfying the
+strict condition: 115 panels in total. Spatial integrals were sums of
+rational breakpoint lengths, and probe values were checked independently
+against direct Farey ranks and the FD-348 periodic Mertens filter. Every
+probe sum also equaled the direct half-period gap count. Representative
+`r=0` values are rounded only for display:
+
+| Q | t | probe count | probe sum | spatial P | Delta/t |
+| --- | --- | --- | --- | --- | --- |
+| 251 | 5 | 4 | 6 | 0.412475548 | 0.870019562 |
+| 509 | 7 | 8 | 4 | 0.292926831 | 0.236655051 |
+| 1021 | 11 | 20 | 12 | 0.348694557 | 0.456918987 |
+
+A separate sorted-reduced-fraction construction checked the doubling
+identity, half-period signs, and local continuity for all `4<=Q<=80`,
+`2<=t<=min(floor(Q/2),15)`, and `-2<=r<=2` (4,480 quadrature-sum
+panels). These checks test finite algebra and implementation; they do
+not calibrate an asymptotic constant or establish a rate. No finding,
+formalization, or compute-executor handoff is inferred from them.
+
+The next mathematical test remains a uniform signed quadrature estimate
+for this particular `H_(Q,r)`, or an admissible growing prime-order family
+with unbounded positive or absolute `Delta/t`. Ordinary bounded-variation
+quadrature, independent layer rotations, and the finite panel do not
+settle it. The separate spatial small-window estimate is also still open.
