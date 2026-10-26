@@ -17,3 +17,7 @@ Canonical findings and `mind/` remain authoritative. The membership projection i
 ## Conditional variance bridge
 
 [[research/graph/relations/rh-mellin-variance-and-farey-capacity|RH Mellin variance and balanced Farey capacity]] preserves the explicit RH hypothesis, the matched source window, and the separate-endpoint obstruction.
+
+## Farey spectral transport
+
+[[research/graph/relations/farey-transport-relative-energy-and-variation|Relative energy and rank variation]] separates normalized-spectrum transfer from the capped variation tail estimate for labeled-edge reassemblies.

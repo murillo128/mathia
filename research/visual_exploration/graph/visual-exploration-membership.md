@@ -454,7 +454,6 @@ This stable projection inventories every current canonical Visual Exploration fi
 - [[research/visual_exploration/findings/VIS-445-high-moment-boundary-counts-uncovered-gaps|VIS-445]]
 - [[research/visual_exploration/findings/VIS-446-critical-gap-occupation-boundary-layer|VIS-446]]
 - [[research/visual_exploration/findings/VIS-447-uniform-normalized-farey-transport-spectrum|VIS-447]]
-- [[research/visual_exploration/findings/VIS-448-variation-tariff-for-farey-transport-spectrum|VIS-448]]
 - [[research/visual_exploration/findings/VIS-449-farey-near-maximal-even-parity-boundary-layer|VIS-449]]
 - [[research/visual_exploration/findings/VIS-450-projected-parity-transfer-sharpens-farey-gate|VIS-450]]
 - [[research/visual_exploration/findings/VIS-451-reflected-farey-quarter-mode-boundary-layer|VIS-451]]
@@ -470,3 +469,4 @@ This stable projection inventories every current canonical Visual Exploration fi
 - [[research/visual_exploration/findings/VIS-462-zero-ordinate-shell-moments-pay-resonance-and-small-frequency-costs|VIS-462]]
 - [[research/visual_exploration/findings/VIS-463-prime-only-shell-symmetry-erases-zero-resonance-bias|VIS-463]]
 - [[research/visual_exploration/findings/VIS-464-smooth-zero-bias-does-not-determine-hard-threshold-correction|VIS-464]]
+- [[research/visual_exploration/findings/VIS-465-capped-variation-tariff-for-farey-transport-spectrum|VIS-465]]

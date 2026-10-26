@@ -27,3 +27,7 @@ VIS-004 proves that midpoint centering changes local Gamma geometry without movi
 ## Curation boundary
 
 Visualizations remain creative diagnostic artifacts. A render becomes graph evidence only through a canonical source-backed finding; structural links do not convert an image into mathematical support.
+
+## Farey spectral transport
+
+[[research/graph/relations/farey-transport-relative-energy-and-variation|Relative energy and rank variation]] separates normalized-spectrum transfer from the capped variation tail estimate for labeled-edge reassemblies.

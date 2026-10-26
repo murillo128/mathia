@@ -2,7 +2,7 @@
 id: RA-metrics-v1
 type: riemann-atlas-metrics
 atlas_version: 1
-source_revision: 36a86a20f893bf3d58df43d97eb539da8ed935aa
+source_revision: d173b1d2a30b3e698f236df92bf8672affe19080
 derived: true
 ---
 
@@ -38,7 +38,9 @@ The five hard-pruned interfaces retain their existing scoped canonical evidence:
 
 ## Structural and semantic scope
 
-The exact tree projections contain 13 research lines, 5,141 findings, 841 durable intuitions and 77 prior-art notes. Membership changes and reversible source-reference formatting are graph maintenance, never frontier episodes. Semantic inspection remains selective as recorded in `research/graph/semantic-inspection.json`; uninspected source changes do not justify Atlas transitions.
+The exact tree projections contain 13 research lines, 5,151 findings, 842 durable intuitions and 78 prior-art notes. Membership changes and reversible source-reference formatting are graph maintenance, never frontier episodes. Semantic inspection remains selective as recorded in `research/graph/semantic-inspection.json`; uninspected source changes do not justify Atlas transitions.
+
+The capped Farey transport reconciliation records VIS-465 and its existing dependencies, with classical bounded-variation Fourier provenance. The replacement corrects an intermediate majorant; it does not create a new frontier episode. Its relative-energy and variation gates concern artificial reassemblies and do not alter the reproduced Farey/Riesz territory or any Atlas mass.
 
 ## Frontier fertility
 

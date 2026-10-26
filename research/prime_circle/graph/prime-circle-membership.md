@@ -469,3 +469,4 @@ This stable projection inventories every current canonical Prime Circle finding.
 - [[research/prime_circle/findings/PC-459-primorial-cotangent-local-limits-split-into-anchor-pair-and-antipodal-dyadic-kernel|PC-459]]
 - [[research/prime_circle/findings/PC-460-primorial-cotangent-rare-spectrum-has-a-prime-pair-counting-law|PC-460]]
 - [[research/prime_circle/findings/PC-461-admissible-triplets-force-cotangent-populations-above-the-pair-spectrum|PC-461]]
+- [[research/prime_circle/findings/PC-462-separated-cluster-hilbert-bound-closes-the-cotangent-triplet-counting-law|PC-462]]

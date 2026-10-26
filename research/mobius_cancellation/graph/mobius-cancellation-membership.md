@@ -541,3 +541,4 @@ This stable projection inventories every current canonical Möbius Cancellation 
 - [[research/mobius_cancellation/findings/MC-532-paired-boxes-recover-trimmed-mobius-variance-at-macroscopic-lengths|MC-532]]
 - [[research/mobius_cancellation/findings/MC-533-geometric-start-coverage-recovers-sparsely-sampled-mobius-variance|MC-533]]
 - [[research/mobius_cancellation/findings/MC-534-common-squarefree-coefficients-retain-signed-sampling-ambiguity|MC-534]]
+- [[research/mobius_cancellation/findings/MC-535-multiplicative-prime-bridges-retain-sparse-window-ambiguity|MC-535]]

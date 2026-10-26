@@ -29,7 +29,7 @@ proved facts are \(1-F_{\le q}(v)\le B_q(v)\) and
 \(1-F_{\le q}(v)\le1\); neither asserts \(B_q(v)\le1\).
 The empty sum at \(q=N-1\) is zero.
 
-For the actual denominator-\(p\) Farey excursion permutation of FD-320, write \(D_p^\sigma=P_\sigma D_p+v_p^\sigma\), \(E_p=\|D_p\|_2^2=o(1)\), \(T_p=\|v_p^\sigma\|_2^2\), and \(\mathcal R_p=\mathcal R_{N_p}(v_p^\sigma)\). Whenever \(T_p>0\) and \(D_p^\sigma\ne0\), VIS-447 and (1) imply
+For the actual denominator-\(p\) Farey excursion permutation of [[research/farey_discrepancy/findings/FD-320-all-prime-farey-excursion-permutations-have-an-exact-transport-spectrum|FD-320]], write \(D_p^\sigma=P_\sigma D_p+v_p^\sigma\), \(E_p=\|D_p\|_2^2=o(1)\), \(T_p=\|v_p^\sigma\|_2^2\), and \(\mathcal R_p=\mathcal R_{N_p}(v_p^\sigma)\). Whenever \(T_p>0\) and \(D_p^\sigma\ne0\), [[research/visual_exploration/findings/VIS-447-uniform-normalized-farey-transport-spectrum|VIS-447]] and (1) imply
 \[
 \boxed{\quad
 1-F_{\le q}(D_p^\sigma)
@@ -118,11 +118,11 @@ T_p=\sum_{t=1}^{p-2}\ell_{\sigma(t)}c_t^2.
 \]
 Here rank 1 and the artificial endpoint rank \(N_p\) have zero displacement. Formula (4) is determined entirely by the excursion gap counts and their permutation. It does not ask whether the altered Hall–Shiu stitches are close to integers; stitch defects and variation are different summaries of ordering.
 
-For FD-319's reflected four-defect exchange, the two nonzero steps are \(+1/(2p)\) and \(-1/(2p)\). Hence \(V=2/p\), \(T_p=(N_p-4)/(4p^2)\), and
+For [[research/farey_discrepancy/findings/FD-319-four-vanishing-farey-index-defects-carry-macroscopic-energy|FD-319]]'s reflected four-defect exchange, the two nonzero steps are \(+1/(2p)\) and \(-1/(2p)\). Hence \(V=2/p\), \(T_p=(N_p-4)/(4p^2)\), and
 \[
 \mathcal R_p=\frac{16N_p}{N_p-4}\longrightarrow16. \tag{5}
 \]
-For FD-322's **unreflected** three-positive-near-one-defect exchange, \(v\) takes successive values \(w_A,-w_B,0\). Its exact limiting rank jumps give \(pV\to4/3\) in both prime congruence classes. Using \(N_p/p^2\to3/\pi^2\) and FD-322's two transport limits,
+For [[research/farey_discrepancy/findings/FD-322-three-near-one-farey-index-defects-carry-macroscopic-energy|FD-322]]'s **unreflected** three-positive-near-one-defect exchange, \(v\) takes successive values \(w_A,-w_B,0\). Its exact limiting rank jumps give \(pV\to4/3\) in both prime congruence classes. Using \(N_p/p^2\to3/\pi^2\) and FD-322's two transport limits,
 \[
 \mathcal R_p\longrightarrow
 \begin{cases}
@@ -132,7 +132,7 @@ For FD-322's **unreflected** three-positive-near-one-defect exchange, \(v\) take
 \]
 Both families therefore retain asymptotically all normalized sine energy below *every divergent full-mode cutoff*, without first computing their fixed sine coefficients. This recovers a consequence of FD-319/FD-322 through an independently visible **rank-order smoothness** mechanism. It also extends the deduction to any further excursion permutation family satisfying the two quantitative conditions in (2), including families with an unbounded number of stitch defects.
 
-For reflection-symmetric paths the odd sine coefficients vanish. VIS-032/VIS-034 index their band by the first \(q\) **even** modes \(m=2,4,\ldots,2q\); that share is \(F_{\le2q}\), not \(F_{\le q}\). In this special case (2) has \(\mathcal R_p/(4q)\) in place of \(\mathcal R_p/(2q)\). For FD-322, which does not preserve reflection, use the **full** sine basis and a newly computed null-specific band expectation.
+For reflection-symmetric paths the odd sine coefficients vanish. [[research/visual_exploration/findings/VIS-032-reflection-null-sublinear-band-saturates-green-energy|VIS-032]]/[[research/visual_exploration/findings/VIS-034-farey-low-band-suppression-factorization|VIS-034]] index their band by the first \(q\) **even** modes \(m=2,4,\ldots,2q\); that share is \(F_{\le2q}\), not \(F_{\le q}\). In this special case (2) has \(\mathcal R_p/(4q)\) in place of \(\mathcal R_p/(2q)\). For FD-322, which does not preserve reflection, use the **full** sine basis and a newly computed null-specific band expectation.
 
 ## Falsification, geometric view and scope
 
@@ -166,7 +166,7 @@ shows the exact two-coordinate family and the reflected finite Farey
 transport. It records the mathematical construction and rendering
 parameters; the picture is supporting context, not the proof.
 
-The \(O(m^{-1})\) bounded-variation Fourier coefficient estimate is classical; compare Taibleson (1967) and [Wu (1993)](https://www.ams.org/proc/1993-117-03/S0002-9939-1993-1150658-3/), anchored in this line's SOURCES.md. Equation (1) is its elementary exact discrete Dirichlet-sine analogue. FD-320 provides the source-specific block decomposition and PNT-assisted \(E_p=o(1)\), while VIS-447 supplies the normalized full-spectrum transfer. The contribution here is the **variation-to-band quantitative test** on exact excursion transport, not a new harmonic-analysis theorem. VIS-032/VIS-034 supply the reflection-null normalizations that motivate the depletion question.
+The \(O(m^{-1})\) [[research/prior_art/incremental/PA-bounded-variation-fourier-decay|bounded-variation Fourier coefficient estimate]] is classical; compare Taibleson (1967) and [Wu (1993)](https://www.ams.org/proc/1993-117-03/S0002-9939-1993-1150658-3/), anchored in this line's SOURCES.md. Equation (1) is its elementary exact discrete Dirichlet-sine analogue. FD-320 provides the source-specific block decomposition and PNT-assisted \(E_p=o(1)\), while VIS-447 supplies the normalized full-spectrum transfer. The contribution here is the **variation-to-band quantitative test** on exact excursion transport, not a new harmonic-analysis theorem. VIS-032/VIS-034 supply the reflection-null normalizations that motivate the depletion question.
 
 This is a **one-sided** smoothness criterion, not a spectral classification: large \(\mathcal R_p\) allows, but does not force, high-frequency allocation, and it can overestimate oscillation through cancellation. A sublinear \(q\) alone does not guarantee the result when \(\mathcal R_p\) grows. Near-zero transport requires an independently proved \(E_p/T_p\) estimate. Genuine Farey order corresponds to zero permutation transport, so neither (2) nor (3) constrains its actual spectral allocation. A null-normalized ratio \(S_q=F_{\le q}/f_{\rm null}(q)\) additionally depends on that null's own expected spectral fraction; a false-positive claim cannot borrow the same-gap null denominator. No improved Franel–Landau bound, exceptional-height selector, or RH consequence follows.
 

@@ -370,3 +370,4 @@ This stable projection inventories every current canonical Prime Flute finding. 
 - [[research/prime_flute/findings/PF-357-network-conditioning-bounds-every-constant-fibre-correlation-defect|PF-357]]
 - [[research/prime_flute/findings/PF-358-nearest-neighbor-factorization-preserves-half-the-constant-fibre-correlations|PF-358]]
 - [[research/prime_flute/findings/PF-359-infinite-corridor-transition-shorting-has-essential-angle-norm-one|PF-359]]
+- [[research/prime_flute/findings/PF-360-removing-or-shorting-constants-does-not-compactify-the-corridor-angle|PF-360]]

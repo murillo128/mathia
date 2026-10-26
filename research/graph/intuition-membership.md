@@ -705,6 +705,7 @@ This is a path-derived structural projection for graph topology. Each link means
 - [[research/visual_exploration/mind/intuition/MI-068-qutrit-residual-shape-has-an-exact-sector-anisotropic-gaussian-null]]
 - [[research/visual_exploration/mind/intuition/MI-069-stabilizer-symmetry-exhausts-the-centered-gaussian-qutrit-null]]
 - [[research/visual_exploration/mind/intuition/MI-070-any-wang-shell-holonomy-must-pass-through-mesoscopic-sign-transitions]]
+- [[research/visual_exploration/mind/intuition/MI-071-farey-spectral-transfer-pays-relative-energy-and-rank-variation]]
 
 ### Weil Inertia
 - [[research/weil_inertia/mind/intuition/MI-001-screening-is-an-information-bandwidth-obstruction]]

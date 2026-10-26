@@ -64,6 +64,7 @@ This is a purely structural corpus projection. A link here means only that the t
 
 - [[research/prior_art/incremental/PA-bagchi-strong-recurrence-criterion]]
 - [[research/prior_art/incremental/PA-boolean-convolution-self-energy]]
+- [[research/prior_art/incremental/PA-bounded-variation-fourier-decay]]
 - [[research/prior_art/incremental/PA-chebyshev-alternation]]
 - [[research/prior_art/incremental/PA-cycle-graph-spectral-zeta-rh-reformulation]]
 - [[research/prior_art/incremental/PA-gamma-2-thrice-punctured-sphere-scattering]]
