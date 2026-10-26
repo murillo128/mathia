@@ -154,15 +154,29 @@ For jump bound \(J_X\), telescoping gives
 \qquad
 |P_i|\ll_\phi\frac{\sqrt{X\widetilde V_i}+J_XD_i}{L_i}.
 \]
-Consequently MC-533's geometric recovery composes with either complete
-pole test above, using \(J_X=2\) or \(\log(3X)\) respectively.
-This is a conditional cross-line deduction from the finite inequality
-and the existing complete pairings; the distinct pole signals remain
-unchanged. The weighted energy and \(D_i\), not just retained count,
-must be supplied. For Möbius, MC-533 already proves the RH equivalence
-of the centered average sample-energy ceiling on a fixed grid of
-\(q_X\asymp\sqrt X\) starts at the macroscopic pair. Its proof pays
-\(D_i=O(X^{3/2})\) and \(w_{i,\max}=O(\sqrt X)\).
+MC-533 and
+[PL-478](../../prime_lattice/findings/PL-478-geometric-coverage-retains-sparsely-sampled-prime-variance.md)
+prove this composition for their respective complete pole tests,
+using \(J_X=2\) and \(\log(3X)\). The distinct pole signals remain
+unchanged. Fix the grid of spacing \(g_X=\lfloor\sqrt X\rfloor\)
+starting at \(X\) and ending at its last point below \(2X\), with
+\(q_X\asymp\sqrt X\) samples. It pays \(D_i=O(X^{3/2})\) and
+\(w_{i,\max}=O(\sqrt X)\). At \(H=\lfloor X/20\rfloor\),
+define \(Q_i=\min_c\sum_{r\in R_X}|S_{L_i}(r)-c|^2\) for each
+source separately. The same observation statement
+\[
+\exists\mathcal X\text{ unbounded, fixed before }\varepsilon,
+\quad Q_i(X)/q_X\ll_\varepsilon X^{1+\varepsilon}
+\quad(i=1,2;\ \forall\varepsilon>0;\ X\in\mathcal X)
+\]
+is equivalent to RH for Möbius, and to joint mod-5 GRH for the prime
+source. This is a correspondence of observation criteria, not an
+equivalence between the two hypotheses. Both channels share one scale
+set within each criterion; no common scale set across sources is needed.
+Their separate converses use pointwise Mertens and prime-counting
+estimates, respectively, not complete-to-sparse mean-square inference.
+The extra prime logarithm changes no exponent because every hypothetical
+\(\beta>1/2\) leaves a strict power gap. Neither ceiling is proved.
 
 [PL-477](../../prime_lattice/findings/PL-477-common-mask-paired-windows-retain-quadratic-deletion-ambiguity.md)
 explains why this sparse-grid improvement does not remove the quadratic
@@ -183,3 +197,33 @@ could supply such a restriction.
 The control is supported on a full residue class, not prime powers,
 and does not establish a lower sampling bound for either arithmetic
 source or identify their zero sets.
+
+[MC-534](../../mobius_cancellation/findings/MC-534-common-squarefree-coefficients-retain-signed-sampling-ambiguity.md)
+adds a different admissible-class obstruction: for each fixed nonzero
+\(\phi\in C_c^1((1,2);\mathbb C)\), any \(q\le\kappa_\phi X\)
+integer interval queries admit two sequences with exact magnitudes
+\(|a^\pm(n)|=\mu(n)^2\), identical query values in \(\{-1,0,1\}\),
+and target separation \(\gg_\phi X/(q+1)\). Here \(q\) counts all
+intervals across both channels. Deterministic adaptive queries obey the
+same obstruction; no randomized average-case conclusion follows.
+
+The explicit bridge to PL-477 is the prefix difference. If
+\(F(n)=\sum_{k\le n}(a^+(k)-a^-(k))\), an observed window sees
+only \(F(j+L)-F(j)\), whereas its smooth target sees
+\[
+\sum_n(a^+(n)-a^-(n))\phi(n/X)
+=-\sum_nF(n)\{\phi((n+1)/X)-\phi(n/X)\}.
+\]
+PL-477 hides one balanced primitive and its two translates with a common
+mask; its area is of order \(B^2\). MC-534 pins the primitive to zero
+at every queried endpoint and places nonnegative square-free sign bridges
+between them. Their total area is \(\gg_\phi X^2/(q+1)\), and a
+fixed derivative-phase interval prevents signed cancellation. Both controls
+therefore expose the same endpoint-observation kernel, with different
+source constraints and different geometry budgets. The square-free control
+rules out saving a sample-count power using signedness and common-source
+consistency alone: for fixed \(0<\delta<1/2\), \(q\le X^{1/2-\delta}\) leaves ambiguity
+\(\gg_\phi X^{1/2+\delta}\). It does not transfer that lower bound to
+the positive prime class, impose multiplicativity, or retain the arithmetic
+pole formula. A better actual-source recovery must exclude the respective
+control; the shared finite operator alone cannot do so.

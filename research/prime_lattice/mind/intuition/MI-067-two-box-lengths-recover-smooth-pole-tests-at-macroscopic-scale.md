@@ -157,6 +157,50 @@ target known in advance. This is an exact non-prime control: it proves
 neither necessity of the prime logarithm nor optimality for von Mangoldt
 coefficients, and supplies no arithmetic pole formula for these sources.
 
+[PL-478](../../findings/PL-478-geometric-coverage-retains-sparsely-sampled-prime-variance.md)
+replaces the deleted count by coverage geometry, permitting any nonempty
+retained set \(R_i\subset I_X\). For the nearest-sample map
+\(\pi_i\), define
+\[
+w_{i,r}=|\pi_i^{-1}(r)|,\qquad D_i=\sum_{j\in I_X}|j-\pi_i(j)|,
+\qquad \widetilde W_i(c_i)=\sum_{r\in R_i}w_{i,r}|S_{L_i}(r)-c_i|^2.
+\]
+Telescoping the prime jump bound and weighted Cauchy–Schwarz give
+\(\sum_j|S_{L_i}(j)-c_i|\le\sqrt{X\widetilde W_i}+\log(3X)D_i\).
+Applying this to the same complete tests yields
+\[
+\boxed{\sum_{i=1}^2
+\frac{\sqrt{X\widetilde W_i(c_i)}+\log(3X)D_i}{L_i}
+\gg X^\beta.}
+\]
+This keeps the non-effective zero-dependent constants and the uniformity
+in lengths, separate masks and constant centers. No positive retained
+fraction is needed; inserting a mask into the smooth test is still invalid.
+
+At the macroscopic pair, fix \(g_X=\lfloor\sqrt X\rfloor\),
+\(R_X=\{X+kg_X:0\le k\le\lfloor(X-1)/g_X\rfloor\}\), and
+\(q_X=|R_X|\asymp\sqrt X\). Let
+\(Q_i(X)=\min_c\sum_{r\in R_X}|S_{L_i}(r)-c|^2\).
+The grid satisfies \(D_i\le Xg_X\), \(w_{i,\max}\le2g_X\),
+and \(g_Xq_X\le2X\). Using the ordinary sample mean in both
+energies, \(\widetilde W_i\le2g_XQ_i\). Therefore
+\[
+\exists\mathcal X\text{ unbounded, fixed before }\varepsilon,
+\quad Q_i(X)/q_X\ll_\varepsilon X^{1+\varepsilon}
+\quad(i=1,2;\ \forall\varepsilon>0;\ X\in\mathcal X)
+\]
+is equivalent to joint GRH for the four mod-5 functions. Both channels
+must obey the bound on the same scale set. The forward cost is
+\(O_\varepsilon(X^{1/2+\varepsilon/2}+X^{1/2}\log(3X))\),
+which cannot accommodate any \(\beta>1/2\). The converse uses
+the GRH pointwise bound for \(\psi(x;5,1)\), giving
+\(Q_i/q_X\ll X\log^4(3X)\) with the trial center \(L_i/4\).
+It does not deduce sparse energy from complete mean square.
+PL-477's clustered gaps instead have \(D_i\asymp B^2\), so its
+hidden signed response and this sparse-grid criterion are consistent.
+The finite recovery is classical; neither the required arithmetic ceiling
+nor an optimal prime sample count or logarithmic loss is established.
+
 PL-474's single-box certificate stops at
 \(H=X/[\log X(\log\log X)^r]\), \(r>1\), within that family of
 uniform fixed-target approximations. The second channel changes the

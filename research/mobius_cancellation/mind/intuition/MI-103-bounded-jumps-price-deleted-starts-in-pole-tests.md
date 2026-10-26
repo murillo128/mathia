@@ -174,10 +174,60 @@ The sequence \(u_j=A\operatorname{dist}(j,R)\) has jumps at most
 \(A\), zero observed values and absolute mass exactly \(AD\).
 At macroscopic lengths this yields a worst-case cost of order at least
 \(N/q\) when \(q\le\sqrt N\). The square-root sample exponent is
-therefore sharp for this generic absolute-mass recovery method, not
-proved necessary for Möbius or for compatible signed window tests.
+therefore sharp for this generic absolute-mass recovery method. Compatible
+signed window tests need the separate construction below; necessity for
+actual Möbius remains unproved.
 Nearest assignment minimizes \(D\), not necessarily the whole bound
 including the weighted energy. No sample-energy ceiling is established.
+
+[MC-534](../../findings/MC-534-common-squarefree-coefficients-retain-signed-sampling-ambiguity.md)
+supplies the missing compatible **signed** control. Fix any nonzero
+\(\phi\in C_c^1((1,2);\mathbb C)\). There is \(\kappa_\phi>0\) such that, for all sufficiently large
+\(X\), every list of \(q\le\kappa_\phi X\) integer interval
+observations \(A(v_\ell)-A(u_\ell)\) admits two common coefficient
+sources with
+\[
+|a^\pm(n)|=\mu(n)^2,\qquad
+\mathcal O_\ell(a^+)=\mathcal O_\ell(a^-)\in\{-1,0,1\},\qquad
+|T_{\phi,X}(a^+)-T_{\phi,X}(a^-)|\gg_\phi\frac{X}{q+1},
+\]
+where \(A(t)=\sum_{n\le t}a(n)\) and
+\(T_{\phi,X}(a)=\sum_na(n)\phi(n/X)\). The list can include
+both window lengths, and the exact observations agree before centering.
+Every channel's sample-centered energy is at most its sample count.
+
+The construction explains why square-free support and signed testing
+do not remove the ambiguity. The baseline alternates signs on the
+square-free integers, so its prefix is \(Q(n)\bmod2\), with
+\(Q(n)=\sum_{j\le n}\mu(j)^2\). Partition a fixed derivative-phase
+interval \([sX,tX]\) at all observed endpoints. In each gap with
+\(m_j\) square-free sites, opposite sign bridges of half-length
+\(h_j=\lfloor m_j/2\rfloor\) return both prefixes to the baseline;
+an odd final site has the same sign in both sources. Their difference
+primitive \(F=A^+-A^-\) is nonnegative and vanishes at every endpoint.
+With \(k\le2q+1\) gaps and total population \(S\asymp_\phi X\),
+\[
+\sum_nF(n)\ge2\sum_jh_j^2\ge\frac{(S-k)_+^2}{2k},\qquad
+T_{\phi,X}(a^+)-T_{\phi,X}(a^-)
+=-\sum_nF(n)\{\phi((n+1)/X)-\phi(n/X)\}.
+\]
+Choose \(|\omega|=1\) and the fixed interval so that
+\(\Re(-\omega\phi')\ge\eta>0\); the signed target then sees at
+least \(\eta X^{-1}\sum F\). Only total square-free density is used,
+not density in each short gap. This is classical indistinguishable-input
+recovery realized by one coefficient source per control.
+
+Thus \(q\le X^{1/2-\delta}\), fixed \(0<\delta<1/2\), leaves error
+\(\gg_\phi X^{1/2+\delta}\) for some admissible signs even for a
+nonlinear estimator or deterministic adaptive interval queries. A fixed
+pair can realize prescribed observations on separated scales
+\(X_{j+1}\ge4X_j\), with starts in \([X_j,2X_j)\) and lengths
+at most \(X_j\). Dense interlacing and randomized average-case claims
+are not supplied. The target must be fixed before \(X\) varies.
+These controls have no imposed multiplicativity or reciprocal-zeta pole
+formula. They rule out saving a sample-count power from exact magnitudes,
+common windows and signed recovery alone, not from additional Möbius
+arithmetic. They do not prove the actual source needs this many samples.
 
 The all-dyadic premise in [MI-102](MI-102-centered-dyadic-variance-recovers-full-principal-parts.md)
 belongs to its periodic-seam proof. The full-zero-set certificate here
