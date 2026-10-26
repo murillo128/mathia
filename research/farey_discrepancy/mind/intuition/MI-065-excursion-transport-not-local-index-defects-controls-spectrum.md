@@ -30,4 +30,16 @@ FD-344 §4 also makes the four-erasure obstruction **macroscopic**, by specializ
 
 Let `K` be the Dirichlet second-difference matrix, `lambda_m=2-2cos(pi m/N)`, and `pi_m(D)=|Dhat_m|^2/||D||^2`. Then `sum_m lambda_m^2 pi_m(D)=||KD||^2/||D||^2`. Reversing the excursion preserves its internal adjacent-gap differences but changes its boundary contribution by `2(b-a)(L-H)`, where `a,b` are its first/last gaps and `L,H` the exterior adjacent gaps. The mirrored slot doubles this change. FD-345's pair has equal positive `||D||^2` and equal first spectral moments (the latter depend only on the gap inventory), yet `||KD^sigma||^2-||KD^tau||^2=-11577/141348948592544`. Thus at least one normalized **even-mode intensity** differs; unequal vectors alone would not prove this. Three known-position value erasures remain uniformly recoverable, while four can hide spectral shape even after energy is supplied. This finite certificate gives no fixed-low-mode separation, asymptotic gap, or classification of all two-pair erasures.
 
+For this **single mirrored excursion-pair exchange**, FD-345 also makes balance necessary. If `E_j` has local cumulative gaps `y_a`, define `A_j=(ell-1)/p-2sum_(a=1)^(ell-1)y_a`. The exact full-energy increment is `2C A_j`. Genuine interior fractions `f_a=j/p+y_a` have denominators coprime to `p`, and `1<=ell-1<p`, so
+
+`p A_j = (ell-1)(2j+1)-2p sum_a f_a ≡ (ell-1)(2j+1) (mod p)`.
+
+Only the central excursion can have `A_j=0`; exchanging it with its mirror does nothing. A nontrivial exchange is therefore energy-preserving exactly when `C=0`, requiring `p|N` and even `ell` at a left noncentral slot. These conditions alone do not realize a balanced rank or preserve the defective-rank list.
+
+Its spectral ambiguity is necessarily small when the common energy is large enough. Only `2(ell-1)` coordinates change, by at most `1/p` each. For equal energies `E>0`, orthogonality and Cauchy--Schwarz give
+
+`TV(pi(D'),pi(D)) <= ||D'-D||/sqrt(E) <= sqrt(2(ell-1)/(p^2 E)) < sqrt(2/(pE))`.
+
+Thus `pE->infinity` forces full-spectrum convergence, even though the finite laws differ. A fixed TV gap `>=delta>0` requires `E<=2/(delta^2 p)`; existence of such a family is not proved. General four-erasure collisions can move whole blocks or balance several energy increments and need not obey this support bound. The finite equal-energy obstruction must not be extrapolated to a persistent gap at positive limiting energy.
+
 The exact destination-side condition for asymptotically vanishing energy is `T_p(sigma)->0`, not approximate local index integrality. Nothing here turns an artificial reassembled grid into another canonical Farey sequence or changes the true Farey identity; the gap is whether natural source restrictions enforce small **weighted cumulative** excursion displacement.

@@ -227,3 +227,28 @@ consistency alone: for fixed \(0<\delta<1/2\), \(q\le X^{1/2-\delta}\) leaves am
 the positive prime class, impose multiplicativity, or retain the arithmetic
 pole formula. A better actual-source recovery must exclude the respective
 control; the shared finite operator alone cannot do so.
+
+The random small-energy interface changes the recovery cost again.
+[MC-537](../../mobius_cancellation/findings/MC-537-small-sampled-energy-permits-quarter-power-mobius-observations.md) and
+[PL-482](../../prime_lattice/findings/PL-482-small-empirical-energy-permits-quarter-power-prime-observations.md), retained in
+[Möbius MI-104](../../mobius_cancellation/mind/intuition/MI-104-small-random-sample-energy-controls-dispersion-but-subquarter-multiplicative-bridges-survive.md) and
+[Prime Lattice MI-068](../../prime_lattice/mind/intuition/MI-068-empirical-energy-controls-prime-pole-tests-with-quarter-power-random-starts.md), use the same two macroscopic lengths but replace the deterministic grid by `2q` independent uniform draws with replacement per channel. Here `V_i` is the **average** sample-centered energy, with repeated draws counted.
+
+For fixed populations with jump bound `J_X`, the common finite lemma gives, outside probability `3exp(-t)` per channel,
+
+`D_i <= (4+16t/sqrt(q))sqrt(V_i)+8J_X X t^2/q^2+16J_X t/q`,
+
+where `D_i=X^(-2)sum_(j,k)|S_(L_i)(j)-S_(L_i)(k)|`. Jensen and exact zero mean of the test give `|P_i|<=C_phi XD_i/L_i`. Thus only mean absolute dispersion is needed; complete second-moment recovery and nearest-sample coverage weights are unnecessary for this observation law. Small sample energy bounds both paired differences and the sampled range, producing the `X/q^2` remainder. This is not a deterministic bound for all sample placements.
+
+With `q=ceil(X^(1/4))`, `t=4log X`, the source correspondence is explicit:
+
+| Fixed source | Jump bound | Almost-sure recovery remainder | Pole signal |
+| --- | --- | --- | --- |
+| Möbius | `2` | `sqrt(X)(log X)^2` | `X^beta(log X)^(m-1)` |
+| Identity-residue mod-5 Mangoldt | `log(3X)` | `sqrt(X)(log X)^3` | `X^beta` |
+
+Each row yields `sqrt(V_1)+sqrt(V_2)+remainder >= c_rho signal` on all large integer scales. Each source separately has a probability-one event, uniform over its bounded mean-zero tests. On it, the same quantified observation premise—one common unbounded scale set before epsilon, with both `V_i<<_epsilon X^(1+epsilon)` for every epsilon—is equivalent to that row's zero hypothesis. Extra prime logarithms do not change the exponent because every excluded `beta>1/2` leaves a strict power gap. The separate pointwise converses remain necessary; no equivalence between RH and joint mod-5 GRH is implied.
+
+[MC-538](../../mobius_cancellation/findings/MC-538-one-fixed-multiplicative-source-defeats-subquarter-random-observations.md) now fixes the order-of-choices escape in the earlier query controls. For each `0<=alpha<1/4` and `3/4<kappa<1-alpha`, one deterministic square-free multiplicative sign source and predetermined lacunary scales have almost-sure small sampled energies in **both** channels, yet a fixed smooth target of size at least `X^(2kappa-1)/log^2 X`. The balanced primitive has width `X^kappa`; its signed response is its area divided by `X`, while sampling sees it only at window endpoints with total hit probability `O(X^(alpha+kappa-1))`. Thus multiplicativity and fixing the source before the random seed do not save a power for this class. The current bridge has no composite copies below the observation horizon; lacunarity absorbs the old prescribed-prime second-moment factor.
+
+This control is not in the positive prime-coefficient class and does not retain Möbius's prime signs or reciprocal-zeta formula. It therefore cannot transport an actual-source lower bound between the two rows. The common finite recovery theorem transfers; a claimed improvement must separately identify which source restriction excludes the hidden primitive. No arithmetic energy ceiling, dense-scale comparator, optimal logarithmic factor or new general concentration theorem follows.

@@ -64,4 +64,24 @@ At `alpha=1/2` this is `pi/(16-4pi)=0.914948...`, although globally the distance
 
 After the stitch projection, the sufficient transfer condition from [VIS-450](../../findings/VIS-450-projected-parity-transfer-sharpens-farey-gate.md) is instead `||Pi_B Q_- P_sigma D||^2 / ||Pi_B a||^2 -> 0`, where `Q_-=(I-J)/2` uses the rank-reversal operator defined above. The global corrected ratio `(E-L)/(T-L)` cannot replace this band ratio. All high-band limits keep `alpha` fixed before `N->infinity`; they give no uniform shrinking-band limit. This realizes the conditioning obstruction within the actual excursion control, without asserting an anomaly of the genuine Farey spectrum.
 
+[VIS-468](../../findings/VIS-468-four-defect-farey-reassembly-preserves-source-sector.md) resolves the residual for this specific four-defect `BCA` order. Put `h=N/2`, extend `D_0,...,D_(N-1)` periodically, and define `(CD)_k=D_((k+h) mod N)`. Let `w_k=b` for `1<=k<h`, `w_k=-b` for `h<k<N`, and zero at `0,h,N`. The exact endpoint-respecting identity is `y=CD+w`, including the fixed ranks `1,h+1` because `D_1=2b-1/N`, `D_(h+1)=b-1/N`.
+
+With `theta_m=pi m/N`, its full signed sine dictionary is
+
+- odd `m`: `yhat_m=ahat_m=0`;
+- `m=0 mod 4`: `yhat_m=Dhat_m`, `ahat_m=0`;
+- `m=2 mod 4`: `yhat_m=-Dhat_m+2b sqrt(2/N)cot(theta_m/2)`, `ahat_m=2b sqrt(2/N)cos(theta_m)cot(theta_m/2)`.
+
+Thus removing odd stitches still leaves an **unchanged genuine-source sector** that the projected transport entirely lacks. For any band `B` where both conditional laws exist, let `H={m in B:4 divides m}`. Then
+
+`TV(pi^B(y),pi^B(a)) >= sum_(m in H)|Dhat_m|^2 / ||Pi_B y||^2`.
+
+Conditional convergence requires this source mass fraction to vanish. It is not the full TV distance: the `2 mod 4` probabilities may also differ. The earlier sufficient projected-residual test is now explicit. Its numerator is
+
+`sum_(m in H)|Dhat_m|^2 + sum_(m in B, m=2 mod 4)|Dhat_m-2b sqrt(2/N)sin(theta_m)|^2`,
+
+and its denominator is `sum_(m in B, m=2 mod 4)8b^2 N^(-1)cos^2(theta_m)cot^2(theta_m/2)`.
+
+A vanishing ratio suffices, but is not necessary for convergence of squared-energy laws. On a fixed high band the denominator is asymptotic to `b^2 int_alpha^1 g(x)dx`, so the unresolved estimate is source cancellation at scale `p^(-2)`, including its sign relative to the antisymmetric endpoint correction. Neither global `E=o(1)` nor a positive inherited fraction in a finite numerical panel settles that limit. Copying the source coefficients at multiples of four is not independent arithmetic validation; this dictionary is specific to `BCA`, not every reflected excursion order.
+
 This is a one-sided criterion on artificial labeled-edge reassemblies. Genuine Farey order has `T=0`, outside the normalized transport comparison. Neither exact recovery of a reassembly nor bounded transport roughness proves suppression in the genuine Farey spectrum; a source-natural comparator still needs its own band normalization.
