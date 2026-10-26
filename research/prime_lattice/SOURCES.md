@@ -559,3 +559,8 @@ Only sources that materially support, delimit, or redirect stored `PL-*` finding
 
 145. **Danilo Bazzanella, Alberto Perelli**, “The exceptional set for the number of primes in short intervals,” *Journal of Number Theory* **80**(1) (2000), 109–124. DOI: https://doi.org/10.1006/jnth.1999.2429. Author institutional record: https://iris.polito.it/handle/11583/1397856.
      - Role: closest exceptional-set prior-art comparison for PL-476; the paper studies inertia/decrease properties and quantitative exceptional sets for short-interval prime asymptotics. PL-476 proves its elementary arbitrary-mask bounded-jump recovery directly and does not import an exceptional-set bound from this source.
+
+## Limits of recovery from masked window data
+
+146. **Simon Foucart**, *Mathematical Pictures at a Data Science Exhibition*, Cambridge University Press, 2022. Chapter 9, “Foundational Results of Optimal Recovery,” pp. 68–75, https://doi.org/10.1017/9781009003933.015; Chapter 11, “Ideal Selection of Observation Schemes,” pp. 86–93, https://doi.org/10.1017/9781009003933.017.
+     - Role: classical optimal-recovery and Lipschitz-integration background for PL-477's indistinguishable-input lower bound. PL-477 derives its fixed positive residue sources, common mask for paired windows, and prescribed smooth-test ambiguity directly. No prime-specific deletion theorem or novelty of tent-function lower bounds is attributed to this construction.
