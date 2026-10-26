@@ -254,6 +254,86 @@ Schur-concavity argument is unavailable for the four-gap cyclic
 observable. Equation (15) is a boundary of this proof, **not** a
 negative-flow example or a proof that larger-period monotonicity fails.
 
+The stronger **universal-diffusion** assertion does fail at every
+period size \(q\ge4\), even with all gaps in \([1,2]\). This gives
+an explicit boundary for (8)--(9), beyond the loss of permutation
+symmetry. It does not decide the sign for the geometric conductances
+in (13).
+
+To prove this, set
+\[
+\mathcal H_q(g)=\sum_{i=0}^{q-1}J(g_i,g_{i+1}),\qquad
+\phi(r)=-\frac{(r-1)(r+2)(2r+1)}{(r+1)(r^2+r+1)},
+\]
+with cyclic indices. Its physical-gap gradient is
+\[
+G_i:=\partial_{g_i}\mathcal H_q
+ =\frac{\phi(g_i/g_{i-1})-\phi(g_{i+1}/g_i)}{g_i}.
+\tag{16}
+\]
+For any symmetric positive-conductance diffusion, direct pairing gives
+\[
+\mathcal H_q'
+ =-2\sum_{i<j}C_{ij}(g_i-g_j)(G_i-G_j).
+\tag{17}
+\]
+Thus a universal sign requires every pairwise product in (17) to
+be nonpositive: if one is positive, its conductance can dominate
+the other, still strictly positive, conductances. Conversely that
+pairwise condition suffices. This elementary test does not require
+convexity or permutation symmetry of the observable.
+
+Take
+\[
+g^{(\varepsilon)}=(1+\varepsilon,1,\ldots,1,2),\quad
+C_{01}=\varepsilon^{-2},\quad C_{ij}=1
+\quad(\{i,j\}\ne\{0,1\}),\qquad 0<\varepsilon<1.
+\]
+The conductances are fixed in time for each chosen initial condition.
+At \(\varepsilon=0\), (16) gives \(G_0=\phi(1/2)=20/21\)
+and \(G_1=0\). The latter identity needs \(q\ge4\): gap 2
+must still equal one. Smoothness on the positive compact gap cube gives
+\(G_0-G_1=20/21+O(\varepsilon)\). All other summands in (17)
+are bounded for fixed \(q\), so at the initial time
+\[
+\boxed{\mathcal H_q'
+ =-\frac{40}{21\varepsilon}+O_q(1)<0
+ \quad\hbox{for sufficiently small }\varepsilon>0.}
+\tag{18}
+\]
+This is an admissible complete-graph diffusion, not a truncated
+trajectory: the finite linear ODE has a global solution, conserves
+the sum of the gaps, and its maximum principle keeps every gap in
+\([1,2]\). For each fixed sufficiently small \(\varepsilon\),
+continuity makes the derivative negative on a nonempty time interval.
+No uniform interval length or adverse time integral is asserted as
+\(\varepsilon\to0\). No gap collision or taper-edge degeneration is
+involved.
+
+For an exact finite check, \(q=4\), \(g=(11/10,1,1,2)\),
+\(C_{01}=1000\), and all other off-diagonal conductances equal to
+one give
+\[
+G_0-G_1=\frac{13674316}{27879137}>0,\qquad
+\mathcal H_4'=-\frac{87338875711}{975769795}<0.
+\tag{19}
+\]
+Both numbers follow by rational substitution in (16)--(17).
+This witness is explicitly outside the heat-zero class. If these
+four gaps are periodically repeated, their lower bound one forces
+the actual geometric adjacent-residue conductance to satisfy
+\[
+C_{01}^{\rm heat}
+ \le\sum_{n\in\mathbb Z}\frac1{(1+4n)^2}
+ =\frac{\pi^2}{8},
+\tag{20}
+\]
+because each distance in (12) spans at least the corresponding number
+of unit gaps. It cannot equal 1000. Therefore a proof for larger
+periodic heat-zero systems must use more than symmetry and positivity
+of their conductance matrix. Equations (18)--(19) do not refute such
+a proof, the overlap/taper clue, or an Xi-specific estimate.
+
 ## 5. Prior art, checks, and Xi boundary
 
 Schur concavity, pairwise averaging, and the gradient criterion are
@@ -274,9 +354,21 @@ claim of a new general entropy principle or literature-wide novelty.
 The targeted prior-art check did not supply this particular
 three-gap certificate; the proof does not rely on search absence.
 
+The single-transition test in (17) belongs to classical universal
+Lyapunov-function theory. A close primary comparison is
+[Gorban, *General H-theorem and Entropies that Violate the Second Law*](https://arxiv.org/pdf/1212.6767),
+Section 3, Proposition 1: its convex-function criterion tests partial
+equilibria of reversible pairs. No convexity hypothesis for
+\(-\mathcal H_q\) is assumed here, and that theorem is not substituted
+for the direct derivative calculation. The additional boundary is the
+specific failure of this cyclic observable for every \(q\ge4\), with
+positive noncolliding gaps and an explicit geometric inadmissibility
+check; no new general Markov-chain obstruction is claimed.
+
 Integer polynomial expansion checks every coefficient in (6) against
 (7); exact rational substitution independently checks the gradient
-identity (3). The equations above are the analytic proof. No numerical
+identity (3) and the four-gap witness (19). The equations above are the
+analytic proof. No numerical
 trajectory search, target-model inference, or Lean validation is
 claimed. Equal gaps, arbitrary permutations, positive rescaling,
 small positive gaps, the time sign, and all periodic images are
