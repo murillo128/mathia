@@ -586,3 +586,8 @@ Only sources that materially support, delimit, or redirect stored `PL-*` finding
 
 152. **Ilya Baran, Erik D. Demaine, Dmitriy A. Katz**, “Optimally Adaptive Integration of Univariate Lipschitz Functions,” *Algorithmica* **50**(2) (2008), 255–278. Author record: https://erikdemaine.org/papers/Integration_Algorithmica/; full text: https://erikdemaine.org/papers/Integration_Algorithmica/paper.pdf.
      - Role: Section 2 and the randomized analysis provide classical Lipschitz-envelope, hidden-area and sampling-complexity comparisons for PL-482's generic tent boundary. PL-483 combines prime-capacity packets with a direct summable missed-set bound to obtain fixed prime-supported controls invisible to subquarter uniform observations along geometric scales. These uniform-sampling obstructions are proved directly; no prime sample-optimality result or arithmetic energy estimate is imported.
+
+## Independent pair detection across prescribed scales
+
+153. **Rick Durrett**, *Probability: Theory and Examples*, fifth edition, Cambridge University Press, 2019, Section 2.3, Theorem 2.3.7. Author text: https://sites.math.duke.edu/~rtd/PTE/PTE5_011119.pdf.
+     - Role: the classical second Borel–Cantelli lemma used in PL-484. Independent observation pairs detect the fixed prime source's hypothetical pole-induced dispersion infinitely often because their probability lower bounds have a divergent sum on fourth-power scales. The arithmetic window values are not independent random coefficients. PL-484 reconstructs MC-539's finite lemma with the growing prime jump envelope, uses source 152 for its Lipschitz hidden-area comparison and source 144 for the separate joint-GRH converse; no arithmetic energy ceiling or new probability principle is attributed to Durrett.

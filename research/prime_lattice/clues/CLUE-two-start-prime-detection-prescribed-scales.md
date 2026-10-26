@@ -1,7 +1,7 @@
 ---
 id: CLUE-prime-lattice-two-start-prime-detection-prescribed-scales
 type: research-clue
-status: proposed
+status: resolved
 origin: master-researcher
 target_line: prime_lattice
 based_on:
@@ -121,3 +121,19 @@ is established here. MC-539's faster-polynomial-scale tents are generic
 populations, not one prime source. Neither those tents nor PL-483 settle
 optimality of this proposed criterion. No formal verification or
 independent adversarial approval is asserted.
+
+## Research disposition
+
+Outcome: supported
+
+Resolved by:
+- [[research/prime_lattice/findings/PL-484-two-random-starts-detect-prime-poles-on-fourth-power-scales]]
+
+The prime jump envelope contributes `1/sqrt(log(3X))` to the pair-tail
+lower bound, whose sum still diverges on `X_k=k^4` for every strict-right
+zero. Independent repetitions and the separate mod-5 GRH pointwise
+converse prove the stated almost-sure equivalence on the full prescribed
+sequence. The finite lemma and probability mechanism are classical/reused;
+no prime-energy ceiling or optimal actual-prime sampling claim follows.
+Generic tents explain both the faster-polynomial coverage boundary of
+this inference and why favorable unbounded subsequences are insufficient.
