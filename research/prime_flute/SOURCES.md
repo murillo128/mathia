@@ -546,7 +546,7 @@ Relevant finding: PF-358; relevant local clue: CLUE-positive-width-transition-sc
 - https://doi.org/10.1007/BF01236449
 - Studies shorts of finite truncations and their infinite-network limits for a bounded positive block operator on `ell^2(X)`.
 
-Relevant finding: PF-359; relevant local clue: CLUE-positive-width-transition-schur-complement.md. PF-359 defines the completion of the corridor energy directly, proves a local residual bound against every finitely supported transition trial, and then passes to the closed transition space. S31 supplies the classical scalar distance product, and S6 supplies the non-optimal prime-gap exponent sufficient for neighboring-period comparability.
+Relevant findings: PF-359 and PF-360; relevant local clue: CLUE-positive-width-transition-schur-complement.md. PF-359 defines the completion of the corridor energy directly, proves a local residual bound against every finitely supported transition trial, and then passes to the closed transition space. PF-360 replaces retained constants by unequal nonzero low modes and proves the completed-space equivalence between excluding and shorting the whole constant sector. S31 supplies the classical scalar distance product, and S6 supplies the non-optimal prime-gap exponent sufficient for neighboring-period comparability.
 
 **Scope warning.** No boundedness of the infinite coefficient matrix on ordinary `ell^2`, convergence of independently normalized finite matrices, or identification of different boundary conditions at infinity is imported. The essential-norm-one result concerns the specified Cauchy corridor completion on prime or nonprime periods. It does not establish a residual-scale comparison with the actual pant/seam form or an intrinsic surface spectral consequence.
 
