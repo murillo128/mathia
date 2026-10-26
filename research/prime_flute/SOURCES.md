@@ -571,6 +571,23 @@ Relevant finding: PF-361; relevant local clue: CLUE-positive-width-transition-sc
 
 **Scope warning.** The combined transition/high width must be sufficiently small relative to the growing corridor window. The theorem does not control the nonlinear boundary-coordinate transport or the remaining actual pant/seam energy. It is a literature-derived concentration application, not a new uncertainty principle or an actual surface spectral theorem.
 
+## S35 — directional capacity and normal-ray boundary transport
+
+**B. Muetzel**, *Inequalities for the capacity of non-contractible annuli on cylinders of constant and variable negative curvature*, Geometriae Dedicata 166 (2013), 129–145. DOI: 10.1007/s10711-012-9788-z.
+
+- https://arxiv.org/abs/1105.5060
+- https://doi.org/10.1007/s10711-012-9788-z
+- Lemma 2.1 and Theorem 4.1 express directional capacity using the reciprocal integral of the Fermi metric factor. PF-362 proves its varying-trace radial-energy formula directly.
+
+**B. Muetzel**, *The Jacobian of a Riemann surface and the geometry of the cut locus of simple closed geodesics*, Annales Academiae Scientiarum Fennicae Mathematica 42 (2017), 693–721. DOI: 10.5186/aasfm.2017.4242.
+
+- https://www.acadsci.fi/mathematica/Vol42/vol42pp0693-0721.pdf
+- Section 2.1, equation (2) and Theorem 2.1: the Fermi-coordinate energy decomposition and related capacity estimates.
+
+Relevant finding: PF-362; relevant local clue: CLUE-positive-width-transition-schur-complement.md. The finding derives the explicit nonzero corridor-end transport cost for matching oscillations, its persistence under small equidistant boundary offsets, and a distinct-frequency countercontrol to a separation-independent relative difference-energy estimate.
+
+**Scope warning.** Directional energy is a lower bound for full Dirichlet energy. No actual prime-lattice near-match, globally shorted pant comparison, or spectral/RH consequence is imported from these capacity results or established by the transport control.
+
 ## Provenance policy for future additions
 
 For each future finding, record separately:
