@@ -645,6 +645,19 @@ Relevant finding: PF-367; relevant local clue: CLUE-positive-width-transition-sc
 
 **Scope warning.** The threshold is for the exhibited packet, not the optimal concentration constant over all band fields. Failure on a smaller certified subwindow does not imply failure on the actual full corridor. No actual minimizing residual, wide-band shorted angle, relative spectral or RH conclusion is established.
 
+## S41 — exact single-lattice Cauchy conditioning and window concentration
+
+**Dario Fasino**, *Orthogonal Cauchy-like matrices*, Numerical Algorithms 92 (2023), 619–637. DOI: 10.1007/s11075-022-01391-y.
+
+- https://doi.org/10.1007/s11075-022-01391-y
+- Section 2.1, equations (5)–(7): classical Cauchy determinant and inverse structure. PF-368 derives its inverse diagonal by a cofactor ratio and specializes it to `G_jk=pi sech(pi^2(j-k)/L)`.
+
+Relevant finding: PF-368; relevant local clue: CLUE-positive-width-transition-schur-complement.md. The derived finite-span rate is `c(W)=(4/pi^2) integral_0^(pi W/4) log coth(u) du<1/2`. It is the exact exponential least-eigenvalue rate on full consecutive bands and gives the coefficient-uniform tail bound `(4N^2/pi) exp(c(W)L-T)`. S23's beta/reflection identities fix the Fourier normalization. S34's Gaillac–Gautier manuscript, Proposition 1 and Theorem 1, supplies neighboring continuous weighted-Fourier context, without identifying continuous and discrete spectra.
+
+Combined with PF-367's actual-window exceptional count, supported by S6 and S40, this makes every fixed single-cuff band uniformly window-concentrated in prime-index density. The estimate is an explicit classical-algebra specialization and application, not a claimed new general uncertainty principle.
+
+**Scope warning.** A difference of traces on two unequal cuff lattices need not satisfy the single-lattice estimate. Density-one control permits infinitely many exceptional modules, and the margin tends to zero as the frequency span grows. No globally shorted actual-angle, trace-ideal, scattering or RH consequence is established.
+
 ## Provenance policy for future additions
 
 For each future finding, record separately:
