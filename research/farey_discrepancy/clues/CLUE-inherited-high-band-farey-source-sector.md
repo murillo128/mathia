@@ -1,7 +1,7 @@
 ---
 id: CLUE-farey-discrepancy-inherited-high-band-source-sector
 type: research-clue
-status: proposed
+status: resolved
 origin: master-researcher
 target_line: farey_discrepancy
 based_on:
@@ -123,3 +123,25 @@ The finite visual panel is exploratory; neither `a` nor the balanced step
 is an independently justified null ensemble. The reassembly is artificial,
 not another genuine Farey order. This clue proves no new cancellation,
 Franel estimate, RH consequence, external novelty or formal verification.
+
+## Research disposition
+
+Outcome: narrowed
+
+Resolved by:
+- [[research/farey_discrepancy/findings/FD-346-classical-gap-correlations-separate-high-band-farey-transport]]
+
+Classical fixed-lag Farey gap correlations imply a genuine high-band
+energy asymptotic `C_B log(p)/p^2` and a weak squared-cotangent frequency
+profile. The reassembly inherits this profile, while projected transport
+has the different `cos^2(pi x)`-tilted profile. A fixed sub-band event
+gives `liminf TV>=0.298947...`; the stronger coefficient-error ratio
+diverges like a positive constant times `log p`. Both conditional laws
+are defined for all sufficiently large primes.
+
+The specific inherited-sector ratio `eta_p` remains open. Fixed-lag
+correlations do not resolve the alternating frequency sublattices; that
+would require moving-lag information near half the rank period. Thus the
+projected-matching discriminator is settled by a different source-derived
+test, without claiming a limit or positive limsup for `eta_p`, a full TV
+limit, or any RH gain.
