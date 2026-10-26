@@ -3,8 +3,10 @@
 **Status:** `EXACT-DERIVED`, `LITERATURE+DERIVED`, `MATCHED-CONTROL`,
 `NEGATIVE/OBSTRUCTION`, `CLASSICAL-MECHANISM`, `NO-NOVELTY-CLAIM`.
 The source is a fixed character-based multiplicative control with exact
-square-free magnitude. This is not a bound for Möbius and does not
-produce a large full-source smooth sum.
+square-free magnitude. It supports both proportional-width selectors
+and selectors of width \(Y^\kappa\), for every fixed
+\(3/4<\kappa<1\). This is not a bound for Möbius and does not produce
+a large full-source smooth sum.
 
 ## Claim: deterministic background compatibility is possible
 
@@ -134,7 +136,7 @@ Between the last selected positive prime and the first negative one,
 \tag{9}
 \]
 This is the wide-block regime allowed in MC-543 and in Section 5 of
-MC-542. No assertion about prescribed sublinear-width blocks is made.
+MC-542. Section 4 supplies sublinear-width selectors as well.
 
 ## 3. One source supplies the required backgrounds at every scale
 
@@ -202,7 +204,108 @@ The background cancels the selected contribution \(-E_L\) to relative
 error tending to zero. Its large prefix in (11) is exactly compatible
 with the necessary background cost of MC-542.
 
-## 4. What this closes, and what it does not
+## 4. Narrow balanced blocks also have compatible backgrounds
+
+Fix \(3/4<\kappa<1\). Keep exactly the source (1), and put
+\[
+ W=4\lfloor Y^\kappa/40\rfloor,\qquad u=\lfloor3Y/2\rfloor.
+\tag{16}
+\]
+For all sufficiently large integer \(Y\), select primes from
+\[
+ \begin{split}
+ A_{Y,\kappa}&=\{p:u<p\le u+W/4,\ p\equiv1\pmod4\},\\
+ D_{Y,\kappa}&=\{p:u+3W/4<p\le u+W,\ p\equiv3\pmod4\}.
+ \end{split}
+\tag{17}
+\]
+The unconditional short-interval prime number theorem in fixed
+progressions gives
+\[
+ |A_{Y,\kappa}|,|D_{Y,\kappa}|\sim\frac{W}{8\log Y}.
+\tag{18}
+\]
+One precise source is Thorner--Zaman, Theorem 1.1, Remark 1.2 and
+the short-interval deduction in Section 1.2 of the
+[author manuscript, pp. 1--3](https://arxiv.org/pdf/2108.10878v2)
+(MC-S99). Take modulus four and choose a fixed
+\(0<\epsilon<\kappa-7/12\); the lengths \(W/4\) eventually exceed
+\(x^{7/12+\epsilon}\log x\) at both upper endpoints \(x\asymp Y\).
+The weighted prime asymptotic converts to (18) because
+\(\log p/\log Y\to1\) uniformly here. This stronger input is
+necessary for these prescribed narrow intervals; fixed-proportion
+PNT alone does not justify (18). No RH or GRH is used.
+
+Let \(h=\min(|A_{Y,\kappa}|,|D_{Y,\kappa}|)\) and take the
+smallest \(h\) primes of each class. Their union \(P\) is inside
+\((4Y/3,5Y/3)\), has diameter \(w<W\), and the inherited signs
+\(b_p=f(p)\) balance. Every selected positive prime precedes every
+selected negative prime, with a gap greater than \(W/2\). Thus
+\[
+ -T_{Y,\kappa}:=-\sum_{p\in P}b_p\frac pY
+       >\frac{hW}{2Y}
+       \asymp_\kappa\frac{Y^{2\kappa-1}}{\log Y}.
+\tag{19}
+\]
+The matching upper bound \(|T_{Y,\kappa}|\le hW/Y\) follows by
+pairing the two lists. In particular this selected smooth target
+exceeds \(Y^{1/2+\delta}\) eventually whenever
+\(0<\delta<2\kappa-3/2\). The source itself remains independent
+of \(Y\), \(\kappa\), and all observation draws. For each fixed
+\(\kappa\), the selected sets at \(Y=2^k\) are eventually disjoint.
+
+Write \(B(n)=\sum_{p\in P,p\le n}b_p\),
+\(\mathcal B_1=\sum_n B(n)\), and
+\(\mathcal B_2=\sum_n B(n)^2\). The plateau between the two
+selection intervals has at least \(W/2\) integer positions. Hence
+\[
+ 0\le B\le h,\qquad
+ \mathcal B_1\le Wh,\qquad
+ \frac{Wh^2}{2}\le\mathcal B_2\le Wh^2.
+\tag{20}
+\]
+Throughout \(3Y\le X\le\lfloor13Y/4\rfloor\), for both lengths
+\(L=H,K\) of Section 3, eventually \(3W\le H\le L\). The two
+translated supports of
+\[
+ a_L(j)=B(\lfloor(j+L)/3\rfloor)-B(\lfloor j/3\rfloor)
+\]
+are then disjoint and contained in \(I_X\). Consequently
+\[
+ \sum_j a_L(j)=0,\qquad
+ E_L:=\sum_j a_L(j)^2=6\mathcal B_2,\qquad
+ \sum_j|a_L(j)|=6\mathcal B_1.
+\tag{21}
+\]
+The exact replica isolation (13) still holds after zeroing precisely
+these selected primes to form \(g_{Y,\kappa}\). Indeed, on the test
+support the windows still lie between \(4Y-L\) and \(5Y+L\);
+only multiplier three survives, and \(f(3)=-1\). Thus
+\(Z_g=E_L+Z_f\) as before. The pointwise bound
+\(|S_L(j)|<8\sqrt X\) and (20)--(21) give the uniform estimate
+\[
+ \boxed{\left|\frac{Z_g}{E_L}-1\right|
+       \le\frac{16\sqrt X}{h}
+       \ll_\kappa Y^{1/2-\kappa}\log Y=o(1).}
+\tag{22}
+\]
+This uses the actual first absolute moment of the separated test;
+no inference from a random-ensemble expectation is involved.
+
+At \(t=u+W/2\), the selected prime prefix is \(h\) and none of
+its composite copies has appeared, so
+\(G_{Y,\kappa}(t)=F(t)-h\). Each selected prime still has at
+most five multiples through \(7Y\). Since \(h\gg\sqrt Y\),
+\[
+ \max_{0\le t\le7Y}|G_{Y,\kappa}(t)|
+       \asymp_\kappa h\asymp_\kappa Y^\kappa/\log Y.
+\tag{23}
+\]
+Thus the full background can pay for and cancel even a narrow
+balanced replica with a super-square-root selected target. Its
+cost is not evidence that the full source has a large target.
+
+## 5. What this closes, and what it does not
 
 In MC-543's notation take \(b_{k,p}=f(p)\) on these disjoint dyadic
 sets, and fix the complement to the other prime values of (1).
@@ -219,13 +322,22 @@ The target is selection-sensitive. For any fixed
                          \ll_\phi\sqrt Y.
 \tag{15}
 \]
+The same bound holds uniformly on every subinterval of this band:
+the two boundary terms and the variation term in partial summation
+are all \(O_\phi(\sqrt Y)\). Thus it also applies to the full
+narrow source sum over \((u,u+W]\) in Section 4.
 For \(\phi(t)=t\), the omitted coefficients therefore cancel the
 selected \(Y/\log Y\) target already in its original band. This
 does not produce the large **full-source** target or dispersion sought
 in the dense-scale extension of MC-538, and it supplies no sparse-sample
 lower bound. It eliminates deterministic impossibility based only on
 large selected balanced targets, exact square-free magnitude and
-multiplicativity in the broad-band class.
+multiplicativity, including narrow selectors in Section 4. In fact
+(2) gives \(D_i(X)\le16\sqrt X\) for the pair-dispersion statistic
+of MC-540. This cannot meet a floor \(cX^{2\kappa-1}\) when
+\(\kappa>3/4\). Narrowing the selectors therefore does not repair
+the missing full-source signal. Nor do (19)--(22) exclude constructions
+that prescribe signs independently of this fixed character.
 
 The control agrees with \(\chi_4\) at every odd prime. It therefore
 does not model the absence of correlation with fixed Dirichlet characters
@@ -243,16 +355,23 @@ argument in (5) is the elementary fixed-conductor specialization of
 classical square-free character-sum methods; see MC-055 and
 [Munsch, *Character sums over squarefree and squarefull numbers*](https://doi.org/10.1007/s00013-014-0658-9)
 (MC-S38). No moving-conductor estimate from that paper is needed.
-The only prime-population input is the fixed-modulus PNT in progressions
+The broad selectors use the fixed-modulus PNT in progressions
 ([Kedlaya, Theorem 4.12](https://kskedlaya.org/ant/chap-primes-in-ap.html),
-MC-S98); no uniform short-interval theorem or GRH assumption enters.
+MC-S98). The narrow selectors additionally use the unconditional
+short-interval specialization of Thorner--Zaman recorded in MC-S99.
+No moving-modulus uniformity or GRH assumption enters.
 
 The character cancellation itself is prior art, and the two-interval
 selection is elementary. The mathematical delta is the explicit
 compatible family (1), (7), (10), (14), which settles the deterministic
-background-existence question left by MC-542/543 in their full-band
-class. It redirects that question to the missing full-source or
-additional-arithmetic condition. No external novelty is claimed.
+background-existence question left by MC-542/543. Equations (16)--(23)
+extend the same compatible source to the sublinear-width regime with
+super-square-root selected targets. They remove width alone as a way
+to exclude the character control; the missing full-source or
+additional-arithmetic condition remains. The narrow extension combines
+a classical prime-population theorem with the same replica identity;
+no new prime-distribution or cancellation mechanism or external
+novelty is claimed.
 
 Exact-integer validation checked (6), exact square-free magnitude and
 \(F(n)^2\le4n\) at all 114,688 prefixes; the square-divisor formula at
@@ -261,8 +380,19 @@ entries below 300. At \(Y=256,512,\ldots,16384\), the construction (7)
 was checked at \(X=3Y,\lfloor25Y/8\rfloor,\lfloor13Y/4\rfloor\)
 and both lengths: 42 channel/scale cases checked balance, (8)–(10),
 zero test mean, (12), (14)'s finite Cauchy–Schwarz bound, and 161,660
-nonzero-test entries of (13). These finite checks audit identities and
-integer endpoints; the PNT and displayed proofs establish the asymptotic
-statements. No Lean verification or independent adversarial approval
-is asserted. The classical decomposition and explicit selector do not
-identify a separate high-value formalization target in this invocation.
+nonzero-test entries of (13).
+
+For the narrow construction, an additional exact-integer sieve checked
+the square-root prefix bound through 1,835,008. With
+\(\kappa=4/5,7/8\) and \(Y=2^{10},\ldots,2^{18}\), thirteen
+blocks had nonempty selections in both residue classes. Integer roots
+computed (16) without floating-point endpoint decisions. Seventy-eight
+channel/scale cases checked (19)--(21), the deletion identity at
+\(u+W/2\), \(Z_g=E_L+Z_f\), and the squared finite bound
+\(h^2 Z_f^2\le256XE_L^2\) from (22); they included 578,952
+nonzero-test entries of (13). The finite relative error need not be
+small when \(h\) is small. These checks audit identities and integer
+endpoints; the cited prime theorems and displayed proofs establish the
+asymptotic statements. No Lean verification or independent adversarial
+approval is asserted. The classical decomposition and explicit
+selector do not identify a separate high-value formalization target.

@@ -614,3 +614,9 @@ Role: classical sharp lower bound for the squared first-difference norm of a fin
 Kiran S. Kedlaya, *Notes on analytic number theory*, Chapter 4, §4.4, Theorem 4.12, *Prime number theorem in arithmetic progressions*. Author's text: https://kskedlaya.org/ant/chap-primes-in-ap.html.
 
 Role: classical unconditional asymptotic `pi(x;q,a) ~ x/(phi(q) log x)` for fixed coprime `a,q`. MC-544 uses only `q=4` on two fixed proportional intervals to select equal populations of positive and negative character primes. The theorem supplies population, not Möbius cancellation, and no short-interval or moving-modulus uniformity is asserted.
+
+## MC-S99 — Thorner–Zaman, primes in short fixed progressions
+
+Jesse Thorner and Asif Zaman, *Refinements to the prime number theorem for arithmetic progressions*, Mathematische Zeitschrift 306 (2024), article 54. DOI: https://doi.org/10.1007/s00209-023-03414-3. Inspected author manuscript: https://arxiv.org/pdf/2108.10878v2, Theorem 1.1, Remark 1.2 and Section 1.2, pp. 1–3.
+
+Role: unconditional short-interval prime asymptotic at fixed modulus four. MC-544 uses intervals of length comparable to `Y^kappa`, with fixed `kappa>3/4`, to select balanced narrow character blocks. The manuscript's `7/12+epsilon` range suffices. This supplies prime populations only; the replica cancellation is derived separately, and no RH, GRH or moving-modulus assertion is imported.
