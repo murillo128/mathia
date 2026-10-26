@@ -620,6 +620,14 @@ Relevant finding: PF-365; relevant local clue: CLUE-positive-width-transition-sc
 
 **Scope warning.** The scalar constant-residual congruence is used only to construct a trial. The two actual-energy angles are not asserted to be unitarily equivalent. Wider bands, other completions, elimination of growing low sectors and relative spectral/RH consequences remain outside the result.
 
+## S39 — two-cluster conditioning for growing low-band elimination
+
+The classical inputs are Almira's Cauchy determinant/residual method, Section 2.1 (S31), Friedland–Yomdin's Turán–Nazarov statement, Theorem 1.1 (S34), and Anderson–Trapp shorting (S24/S33). PF-366 derives the inverse diagonal by a Cauchy cofactor ratio and proves its two-cluster bound explicitly; no new general approximation theorem is claimed. Wentworth's [DtN determinant gluing paper](https://arxiv.org/abs/2209.11863) supplies neighboring compact-surface context, not the infinite normalized-angle conclusion.
+
+Relevant finding: PF-366; relevant local clue: CLUE-positive-width-transition-schur-complement.md. Eliminating all modes in a sufficiently small fixed interval around zero, as well as a narrow transition interval, still leaves essential angle norm one in the actual seam-energy completion. The quadratic zero-frequency cosine-node spacing is controlled by an exact factorial product. This makes the coefficient exponent tend to zero with the two compensation widths and pays for an eliminated low sector of rank proportional to cuff length.
+
+**Scope warning.** The result requires the stated strict width/residual margins and the canonical coupled lower, complete-pant upper and seam-coercivity inputs. It neither treats arbitrary broad low-band elimination nor uses monotonicity of normalized angles under additional shorting. Other completions, relative spectral consequences, primality discrimination and RH remain outside it.
+
 ## Provenance policy for future additions
 
 For each future finding, record separately:
