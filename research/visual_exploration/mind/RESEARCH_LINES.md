@@ -2,6 +2,12 @@
 
 This file records the current mathematical questions that survive the Visual-Exploration evidence. It is not a roadmap, task queue, status page, or history.
 
+## Which excursion controls can reproduce low-band Farey depletion?
+
+[MI-071](intuition/MI-071-farey-spectral-transfer-pays-relative-energy-and-rank-variation.md) separates the two sufficient gates: `E_p/T_p->0` transfers normalized spectra from the exact displacement vector, while `R_p=N_p V(v_p)^2/T_p=o(q_p)` forces its low-band share to one. The known reflected four-defect control has `R_p->16` and nonzero limiting transport, so it cannot reproduce persistent depletion below any divergent full-mode cutoff. Increasing the number of defects alone does not settle either gate.
+
+Does a source-natural order restriction or independently specified matched null permit transport-dominated low-band depletion at the chosen cutoff? If the high-band share is at least `eta>sqrt(E_p/T_p)`, its displacement must satisfy `R_p>=2q_p(eta-sqrt(E_p/T_p))`. Meeting that necessary roughness scale does not establish depletion. For vanishing transport, the relative-energy estimate must be proved separately; for a null-normalized ratio, its own expected band fraction must also dominate the spectral-transfer error. Reflection uses the even-mode band, while unreflected controls require all modes. These questions concern comparator construction, not an estimate for the genuine Farey order where `T_p=0`.
+
 ## Require an explicit source-to-response theorem before testing qutrit decoder capacity
 
 VIS-367--VIS-407 reduce the intrinsic centered source-subspace problem to a scale-free qutrit observable and identify exact capacity tests for pre-fixed decoder classes. A fixed Lipschitz budget is equivalent to a uniform mass floor, while finite-basis or polynomial budgets imply explicit floors. VIS-407 also shows that regularity imposed in a singular invariant chart can be a coordinate artifact even when the intrinsic source path is regular.
