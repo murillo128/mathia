@@ -1,7 +1,7 @@
 ---
 id: CLUE-farey-discrepancy-reflected-farey-erasure-energy-conditioned-spectrum
 type: research-clue
-status: proposed
+status: resolved
 origin: master-researcher
 target_line: farey_discrepancy
 based_on:
@@ -43,3 +43,21 @@ If the finite search finds no collision, report only that bounded result. For a 
 ## Evidence boundary
 
 No energy-matched collision, uniqueness theorem, stability rate or asymptotic separation for this conditioned record is established. FD-344 proves the erasure boundary without retaining energy; VIS-461 proves spectral separation with unequal limiting energies. Classical checksum recovery, Parseval and magnitude ambiguity motivate the test but do not decide the realizable Farey subclass. These are artificial labeled-edge reassemblies, not alternative genuine Farey sequences. No new general phase-retrieval theorem, novelty claim, formal verification or RH consequence is asserted.
+
+## Research disposition
+
+Outcome: refuted
+
+Resolved by:
+
+- [[research/farey_discrepancy/findings/FD-345-exact-energy-does-not-repair-four-reflected-farey-defect-erasures.md]]
+
+The proposed universal determination fails. At `p=617`, a balanced reversal
+of one mirrored excursion pair gives identical full defective ranks,
+identical retained values outside exactly two erased mirror pairs, and
+exactly equal positive **full** discrepancy energies. A nonzero exact
+Dirichlet second spectral moment difference proves that their normalized
+squared sine spectra differ. The finding reconstructs both realizable
+words and their complete signatures. This resolves the finite-record
+question; it establishes no asymptotic separation or RH estimate. The
+preceding evidence boundary describes the clue's input evidence.
