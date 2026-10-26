@@ -102,6 +102,11 @@ This file records durable literature dependencies for `research/analytic_frontie
 - Richard P. Brent, **On computing factors of cyclotomic polynomials**, *Mathematics of Computation* 61 (1993), 131–149; [arXiv:1004.5466](https://arxiv.org/abs/1004.5466), section 1.4. Role: classical Newton-identity recurrence used in ANF-201's direct root-modulus bound; no cyclotomic factorization result is imported.
 - Petr Chunaev, **Interpolation by generalized exponential sums with equal weights**, *Journal of Approximation Theory* 254 (2020), 105397, DOI `10.1016/j.jat.2020.105397`; [arXiv:1906.01332v3](https://arxiv.org/abs/1906.01332v3), sections 2 and 4.1. Role: close prior art for consecutive equal-weight exponential samples as power sums and the resulting control of exponential parameters. ANF-201 derives its own averaged-grid source-energy bound and collision-safe Montgomery--Taylor envelope consequence; it imports no interpolation-existence or numerical-stability claim.
 
+## Eventual Fourier sign and spectral cusps
+
+- B. F. Logan, **Extremal Problems for Positive-Definite Bandlimited Functions. I. Eventually Positive Functions with Zero Integral**, *SIAM Journal on Mathematical Analysis* 14:2 (1983), 249–252, DOI `10.1137/0514022`. Role: classical eventual-sign/zero-integral prior-art boundary for ANF-205. Its extremal sign-radius theorem is not imported; the source-weighted central-cusp obstruction and triangular-notch nonattainment are derived directly.
+- D. V. Gorbachev, V. I. Ivanov and S. Yu. Tikhonov, **Uncertainty principles for eventually constant sign bandlimited functions**, arXiv:1904.11328v1 (2019), sections 1 and 3. Role: primary modern treatment of generalized Logan problems and sign/moment restrictions; prior-art boundary for ANF-205's elementary eventual-Fourier-positivity argument. No sign-radius optimum or vanishing-moment hypothesis is transferred to the Mathia source.
+
 ## Expansion rule
 
 Add a source here only when it becomes a durable dependency for a canonical finding or a repeated falsification boundary. Recent preprints should be anchored only after the line has identified the exact load-bearing theorem or estimate being used.
