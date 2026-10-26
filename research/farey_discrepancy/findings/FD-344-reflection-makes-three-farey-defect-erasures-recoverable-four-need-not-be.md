@@ -1,6 +1,6 @@
 # FD-344 — Reflection makes three Farey defect erasures recoverable; four need not be
 
-**Status:** EXACT-DERIVED + EXACT-FINITE-COUNTEREXAMPLE + SHARP-REFLECTED-ERASURE-BOUNDARY.
+**Status:** EXACT-DERIVED + EXACT-FINITE-COUNTEREXAMPLE + PNT/DIRICHLET-ASSISTED-ASYMPTOTIC + SHARP-REFLECTED-ERASURE-BOUNDARY.
 
 In the reflection-preserving prime-Farey excursion class, the full list of
 defective ranks and all but any three defect values determine the reassembly
@@ -8,10 +8,16 @@ exactly. Four erased values can already conceal different quadratic
 discrepancy energies at order `p=7`. This settles the reflection-restricted
 erasure question left open in FD-340. The mechanism is equality of mirrored
 values plus the integer checksum, followed by FD-331's exact inverse.
+The four-erasure failure also persists at the macroscopic energy scale:
+FD-333's existing family, specialized below, gives an infinite-prime
+sequence of identical erased records with energy gap tending to
+`17/(288 pi^2)>0`.
 
 The result concerns known-position value erasures in inherited denominator
-labels. It does not provide stability under perturbed ranks, an asymptotic
-energy separation, or an estimate for the genuine Farey discrepancy.
+labels. It does not provide stability under perturbed ranks or an estimate
+for the genuine Farey discrepancy. The asymptotic pair has unequal energies;
+it does not settle asymptotic spectral separation after exact energy is
+also retained.
 
 ## 1. Reflected signatures and the recovery theorem
 
@@ -178,7 +184,108 @@ transported scalar target, not merely the excursion labels. It establishes
 the sharp uniform erasure threshold even within reflection-preserving
 controls with identical complete directed-edge and gap inventories.
 
-## 4. Audit, prior art, and research boundary
+## 4. Four erased values can hide an order-one limiting energy gap
+
+This is a specialization of the already-proved construction in
+[[research/farey_discrepancy/findings/FD-333-one-quantum-fixed-rank-farey-spectral-instability|FD-333]],
+not a new reassembly mechanism. It strengthens the same erasure boundary
+from finite nonuniqueness to failure of asymptotically vanishing additive
+energy recovery.
+
+Let `p>=19` run through primes `p=7 mod 12`, an infinite progression by
+Dirichlet's theorem. Put `i=(p+1)/4`, `j=(p-1)/3`, and partition the original
+excursion list into the nonempty consecutive blocks
+\[
+A=E_1\cdots E_{i-1},\quad B=E_i\cdots E_{j-1},\quad
+C=E_j\cdots E_{p-j-1},\quad
+H=E_{p-j}\cdots E_{p-i-1},\quad R=E_{p-i}\cdots E_{p-2}.
+\tag{13}
+\]
+Their gap counts are `(a,b,h,b,a)` by reflection. Retain the two outer edges
+and use the orders `sigma=BACRH` and `tau=HACRB`. Both satisfy (1) and
+preserve the same directed-edge inventory. Their complete defective-rank
+list and integer numerators are
+\[
+\begin{aligned}
+\mathbf r&=(1,1+b,1+a+b,N-1-a-b,N-1-b,N-1),\\
+\mathbf d^\sigma&=(-3,p-4,7-p,7-p,p-4,-3),\\
+\mathbf d^\tau&=(-2,p-5,7-p,7-p,p-5,-2).
+\end{aligned}
+\tag{14}
+\]
+Indeed the seam formula (2) uses `I(i)=4`, `I(j)=p-3`,
+`I(p-j)=3`, and `I(p-i)=p-4`. All six displayed numerators are nonzero;
+within each block the indices remain integral. Both orders have the same
+slot gap counts `(b,a,h,a,b)`, proving the rank equality without an
+asymptotic approximation.
+
+Erase the two mirror pairs
+\[
+\{1,N-1\},\qquad\{1+b,N-1-b\}.
+\tag{15}
+\]
+The entire observed record agrees exactly. The two retained values, at
+`1+a+b` and `N-1-a-b`, both equal `7/p`. Thus this is a four-value erasure
+example even though there are six defective ranks; no rank is erased.
+
+Write `E_p^omega=sum_(k=1)^(N-1)(x_k^omega-k/N)^2` for the full
+reconstructed energy and `E_p` for the genuine Farey energy. For its limit,
+set
+\[
+x=\frac aN-\frac{i-1}{p},\quad
+y=\frac bN-\frac{j-i}{p},\quad
+z=\frac hN-\frac{p-2j}{p}.
+\]
+FD-320's exact block transport, on slots of lengths `(b,a,h,a,b)`, is
+`(x,-y,0,y,-x)` for `sigma` and
+`(x+y+z,-y,0,y,-x-y-z)` for `tau`. Hence
+\[
+T_p(\sigma)=2b x^2+2a y^2,\qquad
+T_p(\tau)=2b(x+y+z)^2+2a y^2.
+\tag{16}
+\]
+Writing `rho_p(t)` for the number of positive genuine Farey fractions at
+most `t`, adjacency to `1/4` and `1/3` gives the exact counts
+`a=rho_p(1/4)` and `b=rho_p(1/3)-rho_p(1/4)-2`.
+FD-330's PNT-based estimate `rho_p(1/q)=N/q+o_q(p)` and
+`N/p^2 -> 3/pi^2`, together with `2x+2y+z=2/p-2/N`, yield
+\[
+\frac aN\to\frac14,\quad\frac bN\to\frac1{12},\qquad
+px\to\frac34,\quad py\to\frac7{12},\quad
+p(x+y+z)\to\frac23.
+\tag{17}
+\]
+Both transports in (16) are bounded. FD-318's unconditional genuine
+energy bound `E_p=o(1)` and FD-320's exact permutation-plus-transport
+decomposition therefore give `E_p^omega-T_p(omega)=o(1)` for these two
+orders. Substitution in (16) proves
+\[
+\boxed{
+E_p^\sigma\longrightarrow\frac{19}{24\pi^2},\qquad
+E_p^\tau\longrightarrow\frac{211}{288\pi^2},\qquad
+E_p^\sigma-E_p^\tau\longrightarrow\frac{17}{288\pi^2}>0.}
+\tag{18}
+\]
+These are full reconstructed energies, not merely transport energies.
+The use of PNT is unconditional and supplies no RH-strength rate.
+
+Any scalar estimator `F_p` using only the common erased record must return
+the same value on both configurations. Consequently
+\[
+\liminf_{\substack{p\to\infty\\p\equiv7\ (12)}}
+\max\{|F_p-E_p^\sigma|,|F_p-E_p^\tau|\}
+\ \ge\ \frac{17}{576\pi^2}.
+\tag{19}
+\]
+Thus even an `o(1)` additive energy guarantee fails uniformly for this
+record. The erasure pattern (15) is sufficient for failure; no assertion
+is made about every pattern with two missing mirror pairs. Exact energy
+as an extra datum distinguishes this family for all sufficiently large
+primes. FD-345 separately treats finite spectral ambiguity with energy
+retained, and (18) must not be substituted for that stronger matching
+condition.
+
+## 5. Audit, prior art, and research boundary
 
 A standard-library exact audit enumerated every permutation satisfying
 (1) at `p=7` and `p=11`: respectively `8` and `384` permutations, grouped
@@ -196,6 +303,18 @@ recovered each numerator vector from all `42` erasure subsets of sizes
 zero through three, for `84` exact completions. The displayed words and
 (11) make the finite certificate reproducible without the enumeration.
 No Lean proof or independent adversarial approval is claimed.
+
+For (13)--(18), an independent exact audit sorted all reduced fractions
+`a/b` with `0<=a<=b<=p` for `p=19,31,43,67,79,103,127`, cut the resulting
+denominator words into the stated excursions, and reconstructed both
+grids from their inherited gaps. It verified reflection, endpoint one,
+the directed-edge inventories, every defective rank and value in (14),
+the erased-record equality, the exact rational-rank counts, and the
+coordinatewise permutation-plus-transport identities underlying (16).
+At `p=19`, the common ranks are `(1,10,39,81,110,119)` and the exact full
+energy difference is `49440269/132691759200`. These finite checks audit
+the construction, not convergence to (18); the latter follows from the
+stated PNT inputs and exact transport formulas.
 
 The index itself is classical: R. R. Hall and P. Shiu, *The index of a
 Farey sequence*, Michigan Mathematical Journal **51**(1) (2003), 209–223,
@@ -218,12 +337,24 @@ four while changing discrepancy energy. Targeted comparison with
 Farey-index reconstruction, reflection, and repetition/checksum erasure
 recovery supplies no priority claim for this specialized certificate.
 
+The asymptotic erasure conclusion is an immediate consequence of FD-333's
+already-persisted one-quantum instability family. It is integrated here
+to make the strength of the erasure obstruction explicit, with no claim
+of an independent new construction. Neighboring gap-permutation work,
+R. Tomás García, *A General Lower Bound for Average Local Discrepancy and
+an Application to the Farey Sequence*, Mathematics **14** (2026), 2543,
+§3, [DOI](https://doi.org/10.3390/math14142543), studies average local
+discrepancy over a gap-permutation family; that statistic does not supply
+the exactly matched defective ranks and retained values used here.
+
 This closes the exact reflection-restricted erasure boundary, rather than
 creating a new cancellation channel. The prime, genuine excursion lengths,
 all defective ranks, and erasure locations must remain exact. Dropped or
 shifted ranks, inaccurate lengths, unknown-location errors, and approximate
-reflection are outside the theorem. The finite separation (12) is not an
-order-one asymptotic separation as `p` grows. Inherited labels at defective
-stitches need not be actual reduced vertex denominators, so the controls
+reflection are outside the theorem. Equation (18) supplies an order-one
+asymptotic separation for a specified four-erasure pattern, but does not
+match scalar energy or establish an energy-conditioned asymptotic spectral
+gap. Inherited labels at defective stitches need not be actual reduced
+vertex denominators, so the controls
 are not alternative genuine Farey sequences. No RH-critical estimate or
 improved bound on the genuine Franel energy follows.
