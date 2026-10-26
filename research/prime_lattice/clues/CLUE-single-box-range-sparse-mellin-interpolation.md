@@ -10,6 +10,7 @@ based_on:
   - research/prime_lattice/findings/PL-473-box-fourier-zeros-obstruct-logarithmic-window-test-inversion.md
   - research/prime_lattice/findings/PL-475-two-box-lengths-force-paired-macroscopic-prime-variance.md
   - research/prime_lattice/findings/PL-486-subunit-order-mellin-filters-cannot-preserve-a-fixed-box-range.md
+  - research/prime_lattice/findings/PL-487-sparse-mellin-division-preserves-gevrey-decay-and-support.md
   - research/mobius_cancellation/findings/MC-528-multiplicity-aware-annihilation-forces-mobius-variance-on-every-block.md
 ---
 
@@ -183,6 +184,20 @@ quotient growth, and keep the original simple-value question (2) separate.
 The reciprocal datum and sufficient test are stated here completely;
 the cross-line source path supplies provenance, not a reading grant.
 
+[[research/prime_lattice/findings/PL-487-sparse-mellin-division-preserves-gevrey-decay-and-support|PL-487]]
+removes the separate quotient-growth obligation **if** the interpolant is
+Gevrey of order `1<q<1/a`. For any such fixed-box input satisfying the
+mean-zero and unwanted Hermite conditions, exact division by `P`
+automatically retains `exp(-c |t|^(1/q))` decay on every fixed vertical
+strip, even for arbitrarily close zeros and repeated zeros obeying the
+multiplicity count. The quotient is itself the Mellin transform of a
+Gevrey test with the same support interval. Thus in this regularity class
+the remaining problem is Hermite feasibility inside the box range, not
+an additional quotient estimate. No argument upgrades an arbitrary
+smooth solution of (2) to this Gevrey class; no such interpolant has been
+constructed. The original smooth question and this stronger existence
+question both remain proposed.
+
 ## Evidence boundary
 
 This is a proposed interpolation question, not an established
@@ -194,7 +209,8 @@ adversarial approval, variance ceiling, or RH/GRH progress is claimed.
 The actual-source implication would still require PL-471's arithmetic
 zero-density, logarithmic-derivative growth and noncancelling residues;
 a generic positive or phase-deformed source does not inherit them.
-The reciprocal extension likewise has no established fixed-box solution.
+The reciprocal extension likewise has no established fixed-box solution;
+PL-487 supplies conditional division control, not that solution.
 MC-528's unrestricted test and the existing near-linear or paired-window
 Möbius results do not answer it. Even a positive solution would remove a
 measurement restriction, not provide an independent variance ceiling.
