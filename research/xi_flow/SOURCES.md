@@ -41,6 +41,13 @@ This file records durable literature dependencies for `research/xi_flow/`. It is
   (also in Tao's exposition); this sign-sensitive periodic estimate is
   derived locally, not imported from a general log-gas theorem.
 
+  XF-210 retains this prior-art boundary while extending the periodic
+  estimate to growing, separated pair clouds in a power-sublinear
+  taper-edge layer. Its many-center ordered comparison, quadratic
+  far-tail cost, and positive logarithmic concentration formula are
+  derived explicitly; no superposition principle for nonlinear
+  particle trajectories is assumed.
+
 ## Nonlocal lattice, periodic quadrature, and fractional-diffusion scaling
 
 - Óscar Ciaurri, Luz Roncal, Pablo R. Stinga, José L. Torrea and Juan L. Varona, **Nonlocal discrete diffusion equations and the fractional discrete Laplacian, regularity and applications**, *Advances in Mathematics* 330 (2018), 688–738, DOI `10.1016/j.aim.2018.03.023`; arXiv:1608.08913. Role: peer-reviewed anchor for discrete nonlocal diffusion and convergence to continuum fractional Laplacians. XF-008 uses it only to calibrate the prior-art class of the Cauchy/half-Laplacian hydrodynamic limit; the exact finite-spacing Xi lattice linearization is derived independently and is not identified with the canonical discrete fractional Laplacian of this paper.

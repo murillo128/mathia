@@ -8,6 +8,7 @@ based_on:
   - research/xi_flow/findings/XF-027-normalized-block-discriminant-has-square-production-and-affine-exterior-cancellation.md
   - research/xi_flow/findings/XF-028-overlapping-normalized-discriminants-make-covered-collisions-positive.md
   - research/xi_flow/findings/XF-209-covered-edge-spikes-have-vanishing-fixed-time-total-variation.md
+  - research/xi_flow/findings/XF-210-separated-pair-clouds-in-sublinear-edge-layers-have-vanishing-adverse-variation.md
 ---
 
 # Can overlapped discriminant flux be localized by discrete taper derivatives?
@@ -116,3 +117,16 @@ gap can therefore leave a prescribed positive initial-time atom in
 gap-depth control; a one-sided adverse-flux argument does not fail
 from this atom. The unresolved task remains the source-valid control
 of adverse flux beyond the isolated-defect family.
+
+XF-210 now treats a growing cloud of mutually interacting pairs: with
+fixed sufficiently large index separation and all defects inside the
+first `M^theta` taper indices (`theta<1` fixed), the complete periodic
+flow has adverse variation `O(m^2 M^-3)`, uniformly in every positive
+initial gap. An ordered sum of spatial comparison profiles controls
+the nonlinear flow without superposing trajectories. The only
+potentially surviving initial-time mass is positive, with size
+`2 sum_k (a_(k-1)+a_k) log(1/epsilon_k)`. This excludes accumulation
+by separated pairs in a power-sublinear edge layer; it leaves adjacent
+multi-root clusters, macroscopic/interior defects, and source-driven
+replenishment outside the estimate. The clue remains accepted and
+unresolved for the actual Xi source class.
