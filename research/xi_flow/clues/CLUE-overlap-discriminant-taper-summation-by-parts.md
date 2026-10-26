@@ -81,3 +81,13 @@ relative edge-weight control, source-selected separated boundaries, or
 another justified way to handle that edge layer in addition to its
 interior finite-gap analysis. The instantaneous example supplies no
 fixed-time integrated obstruction.
+
+The bounded-ratio specialization in XF-208, Section 3a, sharpens that
+repair obligation. A fixed cutoff with endpoint profile `exp(-1/s)`
+has uniformly bounded
+`sup_{W_k>0} (a_{k-2}+a_{k+1})^2/W_k`, but the same covered collision
+gives `K_a' -> -50/441`. Bounded relative edge cost therefore does not
+by itself yield a vanishing localization loss. The required estimate
+must make the relevant edge cost small, dominate it by retained
+production, or use further source/time information. This remains an
+edge degeneration, not a negative uniformly covered interior.

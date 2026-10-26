@@ -39,6 +39,13 @@ interior density or a failure of the fixed-weight collision asymptotic.
 This does not rule out a better choice of taper, a source-dependent
 boundary selection, a gap floor, or a time-integrated estimate.
 
+A second smooth profile isolates a stronger boundary for a proposed
+repair: even a uniform bound on neighboring-weight-squared divided by
+coverage, at every covered pair, does not force a vanishing localization
+loss. For that profile the same complete-flow construction gives
+\(\mathcal K_a'(0)\to-50/441\); see Section 3a. Bounded edge cost and
+edge cost tending to zero are different requirements.
+
 ## 1. A complete heat-flow control with a local spacing defect
 
 Let \(M\ge6\) be an integer, \(N=8M\), and \(0<\epsilon<1/4\). In one
@@ -213,6 +220,76 @@ Substitution of (13) into (10)--(11) proves (1):
 The negative term is the actual total derivative, not a negative term
 in a summation-by-parts representation whose companions were omitted.
 
+## 3a. Bounded relative edge weights still permit a fixed negative loss
+
+Choose instead a fixed smooth profile \(B\), positive on \((0,3)\),
+zero outside that interval, and bounded by one, with
+\[
+B(s)=e^{-1/s}\quad(0<s\le1/2),\qquad
+B(s)=1\quad(1\le s\le2),\qquad
+B(s)=e^{-1/(3-s)}\quad(5/2\le s<3).
+\tag{14}
+\]
+Positive smooth interpolation gives such a profile. Set
+\(a_j=B((j+1)/M)\), still with \(N=8M\), and use the same roots
+(2). All fixed-order taper differences are \(O_r(M^{-r})\), and the
+plateau again has coverage two. Now
+\[
+\alpha=e^{-M},\qquad \beta=e^{-M/2},\qquad
+\gamma=e^{-M/3},\qquad
+\epsilon_M=\frac{42}{5}e^{-M/2}.
+\tag{15}
+\]
+In particular the adverse pair has strictly positive coverage and
+\(\beta^2/W_0=\beta^2/\alpha=1\). The uniform expansion (10) gives
+\[
+\boxed{\mathcal K_a'(0)=-\frac{50}{441}+O(e^{-M/3}).}
+\tag{16}
+\]
+No term elsewhere in the plateau has been dropped: starts from 3 to the
+end of the support still have equal adjacent gaps, so their instantaneous
+derivative is exactly zero.
+
+The relative bound holds across **all covered pairs**, not just at the
+chosen small gap. Define
+\[
+R_M=\sup_{k:W_k>0}
+\frac{(a_{k-2}+a_{k+1})^2}{W_k},\qquad
+W_k=a_{k-1}+a_k.
+\tag{17}
+\]
+Then \(R_M\le C_B\), uniformly for all sufficiently large \(M\).
+For a left-edge index whose relevant weights lie in the first region
+of (14), the inward neighbor satisfies
+\[
+\frac{a_{k+1}^2}{W_k}
+\le\frac{a_{k+1}^2}{a_k}
+=\exp\!\left[-\frac{Mk}{(k+1)(k+2)}\right]\le1,
+\qquad k\ge0.
+\tag{18}
+\]
+The outward weight obeys \(a_{k-2}\le a_k\le1\), with weights before
+the support taken as zero, so \(a_{k-2}^2/W_k\le1\) as well.
+The inequality \((u+v)^2\le2(u^2+v^2)\) bounds (17) there by four.
+Reflection about the right endpoint proves the same bound at that
+edge. At all remaining indices, a denominator weight lies in a fixed
+compact subinterval of \((0,3)\), on which \(B\) has a positive
+minimum; the numerator is at most four. This proves the stated uniform
+bound without imposing a positive lower bound on every \(W_k\).
+
+The restriction \(W_k>0\) in (17) is essential. A compact taper also
+has uncovered pairs just outside its support; (17) asserts no bound
+there. In the present control those exterior gaps are of ordinary
+size, and the adverse pair is the **covered** pair at index zero.
+Thus the fixed negative limit does not exploit an uncovered collision.
+
+Equations (15)--(18) rule out a universal estimate
+\(\mathcal K_a'(0)\ge-o(1)\) from absolute smoothness, positive core
+coverage, the upper-gap/counting hypotheses, and bounded \(R_M\) alone.
+They do not rule out an order-one lower bound. The mechanism is the
+same quadratic-versus-linear collision balance as (10)--(11), now at
+its bounded-cost threshold; it is not a separate interior obstruction.
+
 ## 4. What is excluded, and what remains open
 
 For each **fixed** taper, (10) is eventually positive as
@@ -225,8 +302,11 @@ only on the listed absolute smoothness, core-coverage, upper-gap, and
 counting hypotheses. It also identifies a concrete repair obligation:
 control relative edge weights such as \(a_{j+1}^2/(a_{j-1}+a_j)\), avoid
 small gaps at the selected boundary, or supply an estimate that uses
-additional source or time information. No sufficiency theorem for any
-one of these repairs is proved here.
+additional source or time information. Section 3a shows that merely
+bounding these ratios on covered pairs does not give an error tending
+to zero; the particular singular edge cost in (11) must instead vanish
+or be offset by additional production. No sufficiency theorem for such
+a repair is proved here.
 
 The defect remains at a degenerating taper edge. It does **not** answer
 the stronger question of negative aggregate production in a region
@@ -261,6 +341,11 @@ full production when the coverage degenerates relative to the adjacent
 weight. This strengthens the previous warnings about uncovered edges
 and coefficient-only localization into a quantitative counterexample.
 No new general log-gas theorem or literature-wide novelty is claimed.
+The bounded-ratio profile (14) is a further specialization of the same
+balance, kept here to delimit the proposed relative-weight repair rather
+than treated as an independent mechanism. It separates an order-one
+edge allowance from the vanishing error required by a stronger
+localization estimate.
 
 The proof retains all periodic images and supplies uniform remainder
 bounds before taking the joint limit. Exact rational algebra checks
