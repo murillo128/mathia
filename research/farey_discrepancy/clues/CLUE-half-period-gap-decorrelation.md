@@ -168,3 +168,15 @@ band-weighted estimate, or an arithmetic rigidity theorem that justifies
 reducing to fewer offsets. The existing source dictionary and the
 bounded-multiplier implication (B)–(C) survive independent reconstruction;
 the fixed-lag literature does not supply the missing moving-lag bound.
+
+[FD-349](../findings/FD-349-denominator-parity-forces-a-half-period-gap-correlation-deficit.md)
+now gives an unconditional but weaker moving-lag restriction for every
+fixed offset: `limsup Q^2 S_(N/2+r)/log Q <= 11/pi^2`, compared with
+the full gap-energy coefficient `12/pi^2`. Denominator parity forces
+a summed gap-size mismatch without estimating rank coincidences. It
+also forces at least `1/24` of full gap Fourier energy asymptotically
+into odd indices and a positive `2 mod 4` discrepancy contribution on
+the broad band `[1/100,1]`. This excludes near-perfect alignment, but
+still permits a positive logarithmic correlation coefficient and does
+not determine the upper-half-band sector fraction. The all-fixed-offset
+vanishing question (A) remains open.
