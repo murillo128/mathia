@@ -658,6 +658,16 @@ Combined with PF-367's actual-window exceptional count, supported by S6 and S40,
 
 **Scope warning.** A difference of traces on two unequal cuff lattices need not satisfy the single-lattice estimate. Density-one control permits infinitely many exceptional modules, and the margin tends to zero as the frequency span grows. No globally shorted actual-angle, trace-ideal, scattering or RH consequence is established.
 
+## S42 — confluent exponential traces and coupled window cancellation
+
+**NIST Digital Library of Mathematical Functions**, equation [5.12.5](https://dlmf.nist.gov/5.12#E5), is the cosine beta integral used to compute the Fourier coefficients of the periodic function `t cos^(2n)(pi t/L)` on its central period. PF-369 differentiates that integral and sums the discarded coefficients explicitly; no new Fourier approximation theorem is claimed.
+
+**S. A. Avdonin and S. A. Ivanov**, *Exponential Riesz bases of subspaces and divided differences* (2001), [primary manuscript](https://arxiv.org/abs/math/0103160), Introduction and Section 2.2. Clustered exponentials and their divided differences have polynomial-times-exponential limits. This supplies the classical mechanism comparison; no Riesz-basis theorem is imported into PF-369.
+
+Relevant finding: PF-369. Two exact cuff lattices with `0<|L'-L|=o(L^2 exp(-L/2))` admit fixed-band differences whose `sech`-weighted mass escapes `[-L/2,L/2]`. The exact composite sequence `x_m=6m+3` has `L'-L~8 exp(-L/2)` and prescribed windows shorter than `L/2` by a fixed limiting amount. This obstructs transferring S41's separate single-cuff concentration to the coupled difference using those geometric hypotheses alone. The quantitative divided-difference error and composite realization are proved directly.
+
+**Scope warning.** Coefficients grow exponentially in this control. No corresponding prime subsequence, actual minimizing residual, completed pant angle, spectral-ideal or RH conclusion is established. S34's narrow-band comparison remains unaffected.
+
 ## Provenance policy for future additions
 
 For each future finding, record separately:
