@@ -525,13 +525,13 @@ Ilya Baran, Erik D. Demaine and Dmitriy A. Katz, *Optimally Adaptive Integration
 
 Role: classical provenance for MC-533's sample-gap recovery cost. Lipschitz envelopes bound integral uncertainty between samples by a quadratic gap expression. MC-533 proves its discrete coverage weights, distance sum, and generic sharpness directly, then applies them to the existing paired Möbius pole test; no new quadrature principle is claimed.
 
-MC-534 applies the same indistinguishable-envelope principle to a common coefficient primitive. Its square-free sign bridges match all observed interval endpoints and retain a fixed signed smooth pairing; this is a derived observation-boundary control, not a new integration principle. MC-538 uses hidden narrow prime bridges as a sampling obstruction for one fixed multiplicative source, without importing a new general integration bound.
+MC-534 applies the same indistinguishable-envelope principle to a common coefficient primitive. Its square-free sign bridges match all observed interval endpoints and retain a fixed signed smooth pairing; this is a derived observation-boundary control, not a new integration principle. MC-538 uses hidden narrow prime bridges as a sampling obstruction for one fixed multiplicative source, without importing a new general integration bound. MC-539 derives a discrete dispersion-to-pair-tail inequality from the quadratic exceptional-set area and uses tents to delimit independent detection on polynomial scale sequences; no new Lipschitz integration principle is claimed.
 
 ## MC-S86 — Verjovsky, local Fourier moment criteria for RH
 
 Alberto Verjovsky, *How Random Is the Möbius Function? Smoothing, Probability, and the Riemann Hypothesis*, arXiv:2607.25002v2 (2026), Sections 4 and 9–11. https://arxiv.org/html/2607.25002v2. Preprint; used as a prior-art comparison, not as an arithmetic input.
 
-Role: comparison for MC-533's observation criterion. The preprint states RH-equivalent local moments on Fourier arcs of scale `1/N` and derives a moment-to-point-value bound from derivative control. MC-533 instead uses physical-start second moments of two macroscopic windows and the already persisted reciprocal-pole certificate. The comparison supports no external novelty claim.
+Role: comparison for MC-533's observation criterion. The preprint states RH-equivalent local moments on Fourier arcs of scale `1/N` and derives a moment-to-point-value bound from derivative control. MC-533 instead uses physical-start second moments of two macroscopic windows and the already persisted reciprocal-pole certificate. MC-539 contrasts full Fourier moments with a single independent pair of physical starts per channel on each prescribed fourth-power scale. The comparison supports no external novelty claim.
 
 ## MC-S87 — Krieg–Vybíral, classical indistinguishable-input integration bounds
 
@@ -562,3 +562,9 @@ Role: primary-paper exposition of Haber's classical one-uniform-point-per-cell e
 Andreas Maurer and Massimiliano Pontil, *Empirical Bernstein Bounds and Sample Variance Penalization*, Proceedings of COLT 2009, Theorem 4. Proceedings text: https://www.cs.mcgill.ca/~colt2009/papers/012.pdf. Author manuscript: https://arxiv.org/abs/0907.3740.
 
 Role: adjacent primary prior art for MC-537's use of small observed variance in a sampling guarantee. MC-537 derives its own nonnegative pair-difference estimate and bounded-jump control of the population range. It does not insert a random range into the cited theorem, import a learning guarantee, or claim a new concentration principle.
+
+## MC-S92 — Durrett, independent repeated detection
+
+Rick Durrett, *Probability: Theory and Examples*, fifth edition, Cambridge University Press (2019), Section 2.3, especially Theorem 2.3.7 (second Borel–Cantelli lemma). DOI: https://doi.org/10.1017/9781108591034. Author manuscript: https://services.math.duke.edu/~rtd/PTE/PTE5_011119.pdf.
+
+Role: classical divergent-probability-sum criterion for independent events in MC-539. The finding includes the product proof and derives its own bounded-jump pair-tail lower bound before applying the lemma. Independence concerns draws at distinct scales, not Möbius coefficients or overlapping arithmetic windows. Neither the probability theorem nor the sampling argument supplies the RH-scale energy ceiling.
