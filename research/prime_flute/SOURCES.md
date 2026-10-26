@@ -534,6 +534,22 @@ Relevant finding: PF-358; relevant local clue: CLUE-positive-width-transition-sc
 
 **Scope warning.** The theorem concerns the finite Cauchy corridor model with retained constants. It does not compare that model to the actual pant/seam form, establish compatible infinite-section compressions, or infer an operator ideal or RH consequence.
 
+## S33 — Hilbert-space shorting and infinite-network approximation
+
+**W. N. Anderson, Jr. and G. E. Trapp**, *Shorted Operators. II*, SIAM Journal on Applied Mathematics 28 (1975), no. 1, 60–71. DOI: 10.1137/0128007.
+
+- https://doi.org/10.1137/0128007
+- Classical positive-operator shorting in Hilbert spaces, extending the finite network formulation.
+
+**T. D. Morley**, *Shorts of block operators and infinite networks—A note on the shorted operator: II*, Circuits, Systems, and Signal Processing 9 (1990), 161–170. DOI: 10.1007/BF01236449.
+
+- https://doi.org/10.1007/BF01236449
+- Studies shorts of finite truncations and their infinite-network limits for a bounded positive block operator on `ell^2(X)`.
+
+Relevant finding: PF-359; relevant local clue: CLUE-positive-width-transition-schur-complement.md. PF-359 defines the completion of the corridor energy directly, proves a local residual bound against every finitely supported transition trial, and then passes to the closed transition space. S31 supplies the classical scalar distance product, and S6 supplies the non-optimal prime-gap exponent sufficient for neighboring-period comparability.
+
+**Scope warning.** No boundedness of the infinite coefficient matrix on ordinary `ell^2`, convergence of independently normalized finite matrices, or identification of different boundary conditions at infinity is imported. The essential-norm-one result concerns the specified Cauchy corridor completion on prime or nonprime periods. It does not establish a residual-scale comparison with the actual pant/seam form or an intrinsic surface spectral consequence.
+
 ## Provenance policy for future additions
 
 For each future finding, record separately:
