@@ -6,7 +6,9 @@ small width, an explicit simple real four-point configuration has lower
 normalized notch energy than every real multiset of total cardinality at
 most three. The minimum in that capped class is still attained by a simple
 pair. Thus the loss of two-site optimality at cubic width cannot be decided
-by the best three-point test. This does not identify the first transition,
+by the best three-point test. The same descending four-point witness also
+strictly resists every sufficiently distant duplicate, and any finite collection
+of sufficiently separated copies. This does not identify the first transition,
 the unrestricted minimizer, or the complex floor.
 
 ## Object and precise separation
@@ -317,6 +319,114 @@ The strict margin and the `o(eta^4)` remainder prove the left side
 of (5), with `1/500` in place of `1/400`, for every sufficiently small
 width. The floor in (7) does not restrict widths to a subsequence.
 
+## The descending witness resists all sufficiently distant copies
+
+Loss of two-site optimality does not make the witness (7) unstable to
+dilute replication. For every sufficiently small fixed `eta`, there is
+`R_0(eta)>diam(W_eta)` such that
+\[
+\boxed{
+Q_{\eta,a}(W_\eta\cup(W_\eta+R))-Q_{\eta,a}(W_\eta)
+\ge\frac{\eta^2}{16\pi^2R^2}>0\qquad(R\ge R_0(\eta)).
+}
+\tag{21}
+\]
+There is no rationality restriction on `eta`. The translation threshold
+is not asserted uniform as the width shrinks.
+
+Set `c_*=(1/2)cot^2(1/sqrt(2))=b^2/(4 pi^2)`; this cusp
+constant is distinct from `d=2 pi^2` in (1). For the four-point
+source write
+\[
+P_\eta(u)=\left|\sum_{x\in W_\eta}e^{-2\pi iux}\right|^2,
+\qquad H_\eta(R)=\widehat{J_{\eta,a}P_\eta}(R).
+\]
+The derivative-jump identity of ANF-206 gives, at fixed width,
+\[
+R^2H_\eta(R)=\frac1{2\pi^2}
+\left[16(c_*-a/\eta)-c_*P_\eta(1)\cos(2\pi R)
+ +(a/\eta)P_\eta(\eta)\cos(2\pi\eta R)\right]+o_\eta(1).
+\tag{22}
+\]
+For completeness, `J_0'(0+)=J_0'(1-)=-c_*` and `P_eta` is
+smooth and even, with `P_eta(0)=16`. The second distributional
+derivative of `J_(eta,a)P_eta`, extended by zero, has atoms
+`2(a/eta-c_*)16` at zero, `-(a/eta)P_eta(eta)` at each of
+`+/-eta`, and `c_*P_eta(1)` at each of `+/-1`.
+Its remaining piecewise smooth part is integrable. Fourier
+differentiation followed by Riemann--Lebesgue gives (22), including
+its signs and factor `2 pi^2`.
+
+Since both endpoint powers are nonnegative, the bracket in (22) is
+bounded below, uniformly in the translation phases, by
+\[
+B_\eta=c_*\{16-P_\eta(1)\}
+ -\lambda\eta^2\{16+P_\eta(\eta)\}.
+\tag{23}
+\]
+The phases in (7) give the exact squared difference sum
+\[
+\sum_{0\le i<j\le3}(t_j-t_i)^2=65/9.
+\]
+The integer parts disappear at frequency one. Expanding its six
+cosines therefore yields
+\[
+16-P_\eta(1)=\frac4{b^2n^2}\frac{65}{9}+O(n^{-4}),
+\qquad
+\frac{c_*\{16-P_\eta(1)\}}{\eta^2}
+\longrightarrow\frac{6500}{81\pi^2}.
+\tag{24}
+\]
+At the other endpoint, `eta x_j -> 3j/10`, so the finite geometric
+sum gives
+\[
+P_\eta(\eta)\longrightarrow
+\left|\sum_{j=0}^3e^{-2\pi i(3j/10)}\right|^2
+=\frac{\sin^2(6\pi/5)}{\sin^2(3\pi/10)}=5-2\sqrt5.
+\]
+Consequently
+\[
+\boxed{
+\frac{B_\eta}{\eta^2}\longrightarrow
+\frac{6500}{81\pi^2}-\frac5{12}(21-2\sqrt5)>\frac65.
+}
+\tag{25}
+\]
+Here is an exact certificate using the same classical constant bounds
+as (20):
+
+```python
+from fractions import Fraction as R
+
+t = [R(0), R(2, 3), R(7, 6), R(11, 6)]
+assert sum((t[j]-t[i])**2 for i in range(4)
+           for j in range(i+1, 4)) == R(65, 9)
+lower = R(6500, 81)/R(355, 113)**2 - R(5, 12)*(21-2*R(559, 250))
+assert lower == R(25398469, 20416050)
+assert lower > R(6, 5)
+```
+
+For all sufficiently small widths, (25) gives `B_eta>=eta^2`.
+Fix such a width before sending `R` to infinity. Absorbing the
+remainder in (22) gives `H_eta(R)>=eta^2/(4 pi^2 R^2)` beyond
+some `R_0(eta)`. Disjointness gives the exact energy increment
+`H_eta(R)/L(W_eta)=H_eta(R)/4`, proving (21).
+
+More generally, take any finite `k>=2` real shifts `R_j` whose
+pairwise distances are at least this same `R_0(eta)`. All copies
+are disjoint and simple, and
+\[
+Q_{\eta,a}\left(\bigcup_{j=1}^k(W_\eta+R_j)\right)
+=Q_{\eta,a}(W_\eta)+\frac1{2k}
+\sum_{i<j}H_\eta(R_i-R_j)>Q_{\eta,a}(W_\eta).
+\tag{26}
+\]
+Evenness of `H_eta` covers either sign of the difference. Thus no
+number of sufficiently separated identical copies lowers this
+witness's normalized energy. This does not control closer copies,
+different component shapes, positional perturbations, or complex
+configurations, and is not a local or global minimality theorem.
+
 ## Prior art, audit boundary and consequence
 
 The Montgomery--Taylor kernel is classical; see
@@ -340,7 +450,18 @@ energy and ground-state mechanism did not identify (5); this is not
 an exhaustive novelty claim. Taylor enclosures, least-squares phase
 balancing and rational interval certificates are standard methods.
 
-Both embedded exact certificates were executed successfully. The
+The tail calculation (22) is the existing ANF-206 derivative-jump
+test applied to the same four-point witness, not a new Fourier-sign
+principle. Its neighboring literature includes
+[Gorbachev--Ivanov--Tikhonov, section 1](https://arxiv.org/pdf/1904.11328),
+on eventual-sign bandlimited functions and Logan problems. No
+sign-radius optimum or vanishing-moment theorem is imported.
+The additional boundary established here is coexistence of the
+strict descent (5) and strict distant-copy resistance (21) in one
+explicit configuration, without the energy-changing positive
+translation filter of ANF-206.
+
+All three embedded exact certificates were executed successfully. The
 covering argument (8)--(9) and the sequential analysis (10)--(16) are
 load-bearing: a numerical search over equal-gap triples would not prove
 the claimed exclusion. Independent double-precision checks of (7),
@@ -356,5 +477,7 @@ occurs at `5/12`, or that there is a unique transition. ANF-209's initial
 window remains cubic, with its exact coefficient undetermined. What is
 ruled out is determining that loss by testing only cardinalities at most
 three: at the explicit coefficient (4), their exact optimum is still a
-pair while a valid four-point source beats it. No zero-density,
-zero-proportion or RH consequence is established.
+pair while a valid four-point source beats it. Moreover, (21)--(26)
+show that dilute replication of this descending source cannot by
+itself settle finite nonattainment beyond the two-site window.
+No zero-density, zero-proportion or RH consequence is established.
