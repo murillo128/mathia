@@ -63,6 +63,7 @@ This is a purely structural corpus projection. A link here means only that the t
 ## Incremental prior-art corpus
 
 - [[research/prior_art/incremental/PA-bagchi-strong-recurrence-criterion]]
+- [[research/prior_art/incremental/PA-best-term-hilbert-approximation-weak-sequence]]
 - [[research/prior_art/incremental/PA-boolean-convolution-self-energy]]
 - [[research/prior_art/incremental/PA-bounded-variation-fourier-decay]]
 - [[research/prior_art/incremental/PA-chebyshev-alternation]]

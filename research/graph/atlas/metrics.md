@@ -2,7 +2,7 @@
 id: RA-metrics-v1
 type: riemann-atlas-metrics
 atlas_version: 1
-source_revision: 4d169608b45b232c68af16844d7434636299028a
+source_revision: 955d7da34397ec4b8e35e61c67b37950070fb5fc
 derived: true
 ---
 
@@ -38,13 +38,13 @@ The five hard-pruned interfaces retain their existing scoped canonical evidence:
 
 ## Structural and semantic scope
 
-The exact tree projections contain 13 research lines, 5,205 findings, 845 durable intuitions and 80 prior-art notes. Membership changes and reversible source-reference formatting are graph maintenance, never frontier episodes. Semantic inspection remains selective as recorded in `research/graph/semantic-inspection.json`; uninspected source changes do not justify Atlas transitions.
+The exact tree projections contain 13 research lines, 5,219 findings, 847 durable intuitions and 82 prior-art notes. Membership changes and reversible source-reference formatting are graph maintenance, never frontier episodes. Semantic inspection remains selective as recorded in `research/graph/semantic-inspection.json`; uninspected source changes do not justify Atlas transitions.
 
 The reflected Farey reconciliation distinguishes full-discrepancy parity from right-endpoint transport parity and records exact-energy-conditioned erasure nonidentifiability. Both concern artificial reassemblies. Its updated scope also separates the PNT-assisted erased-record energy gap, the finite matched-energy spectral obstruction and its single-pair localization bound, and the realized conditioned high-band barrier with its inherited genuine-source sector and the classical fixed-gap resolution of the upper-half projected-comparator match. This changes no Atlas mass or state; VIS-466's conflicting illustrative length tuple is explicitly excluded from support in the mechanism note.
 
 ## Frontier fertility
 
-The retained prospective series contains **20** classifiable episodes and **0** insufficient-evidence episodes. FD-348 adds one viable extension: an exact small-product half-translation and rank-incidence reduction for the genuine denominator-count question. The required anti-concentration estimate and the remaining rectangles stay open. Retaining the latest 20 questions removes the oldest barrier episode from this window, not from Git history. These selectively inspected questions are not an unbiased portfolio sample. Atlas states and masses are unchanged.
+The retained prospective series contains **20** classifiable episodes and **0** insufficient-evidence episodes. NB-370 adds one viable extension for adaptive lattice retention under an all-integer phase bound, preserving the contiguous-cutoff obstruction and the infinite-dimensional physical-realization boundary. Retaining the latest 20 questions removes the oldest extension from this window, not from Git history. These selectively inspected questions are not an unbiased portfolio sample. Atlas states and masses are unchanged.
 
 - **FrontierFertilityEpisodes = 40.0%**
 - **BarrierRate = 50.0%**

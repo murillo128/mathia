@@ -7,7 +7,7 @@
 
 ## Claim and scope
 
-NB-369's logarithmic loss belongs to a contiguous lattice cutoff. Under the same simultaneous bad-approximation hypothesis, allowing a budget of selected lattice-index pairs removes it: the optimal squared physical component cost is of order \(1/M\), rather than \(\log M/M\). A phase-only selection attaining that order needs to inspect at most \(O_\gamma(M^2)\) positive indices. This is a different approximation family, not a stronger bound for NB-369's fixed cutoff.
+[[research/nyman_beurling/findings/NB-369-critical-return-energy-makes-three-orbit-lattice-truncation-logarithmically-sharp|NB-369]]'s logarithmic loss belongs to a contiguous lattice cutoff. Under the same simultaneous bad-approximation hypothesis, allowing a budget of selected lattice-index pairs removes it: the optimal squared physical component cost is of order \(1/M\), rather than \(\log M/M\). A phase-only selection attaining that order needs to inspect at most \(O_\gamma(M^2)\) positive indices. This is a different approximation family, not a stronger bound for NB-369's fixed cutoff.
 
 Fix positive real \(\alpha,\beta\) with
 \[
@@ -86,7 +86,7 @@ The exact-decomposition set is nonempty and
 \boxed{\mathfrak A_M\asymp_{q,\alpha,\beta,b,\gamma}M^{-1}.}
 \tag{8}
 \]
-In particular (1)--(8) apply to \((\alpha,\beta)=(\sqrt[3]2,\sqrt[3]4)\), with NB-368's explicitly proved \(\gamma\). The phase selection in (4) attains the upper order in (8) for one fixed exact decomposition, independent of \(M\). It is not asserted to minimize the physical cost exactly.
+In particular (1)--(8) apply to \((\alpha,\beta)=(\sqrt[3]2,\sqrt[3]4)\), with [[research/nyman_beurling/findings/NB-368-cubic-logarithmic-seeds-give-deterministic-finite-energy-target-completion|NB-368]]'s explicitly proved \(\gamma\). The phase selection in (4) attains the upper order in (8) for one fixed exact decomposition, independent of \(M\). It is not asserted to minimize the physical cost exactly.
 
 ## 1. Count large weights across all index scales
 
@@ -146,7 +146,7 @@ a_k=|\Theta_p(z_k)|^2+|\Theta_r(z_k)|^2,\qquad
 t_k=\frac{|f(z_k)|^2}{a_k},\qquad
 T_{\Lambda^c}=\sum_{\substack{k\ne0\\|k|\notin\Lambda}}t_k.
 \]
-The elementary factor bounds in NB-356 give constants \(0<c_0\le C_0<\infty\), depending only on \(q,\alpha,\beta,b\), such that
+The elementary factor bounds in [[research/nyman_beurling/findings/NB-356-finite-orbit-target-assembly-is-equivalent-to-a-reciprocal-phase-series|NB-356]] give constants \(0<c_0\le C_0<\infty\), depending only on \(q,\alpha,\beta,b\), such that
 \[
 t_{-n}=t_n,\qquad c_0 w_n\le t_n\le C_0 w_n\quad(n\ge1).
 \tag{12}
@@ -202,7 +202,7 @@ The upper bound uses the \(M\) largest \(w_n\), so the sample-index rule require
 
 ## Prior art, mathematical delta, and limits
 
-The rearrangement mechanism is classical nonlinear approximation. DeVore, *Nonlinear approximation*, Acta Numerica 7 (1998), 51--150, DOI `10.1017/S0962492900002816`, [author manuscript, Section 2, equations (2.18)--(2.19), and Section 5](https://people.math.sc.edu/devore/publications/nlacta.pdf), relates best-term Hilbert error to decreasing coefficients and weak sequence spaces. Here the sample amplitudes have rearranged size of order \(j^{-1}\), giving squared tail of order \(M^{-1}\). The Hardy lift is bounded, not an orthonormal coordinate identification; inequalities (14)--(15) supply the required physical comparison rather than assuming Parseval for that lift.
+The rearrangement mechanism is classical [[research/prior_art/incremental/PA-best-term-hilbert-approximation-weak-sequence|nonlinear approximation]]. DeVore, *Nonlinear approximation*, Acta Numerica 7 (1998), 51--150, DOI `10.1017/S0962492900002816`, [author manuscript, Section 2, equations (2.18)--(2.19), and Section 5](https://people.math.sc.edu/devore/publications/nlacta.pdf), relates best-term Hilbert error to decreasing coefficients and weak sequence spaces. Here the sample amplitudes have rearranged size of order \(j^{-1}\), giving squared tail of order \(M^{-1}\). The Hardy lift is bounded, not an orthonormal coordinate identification; inequalities (14)--(15) supply the required physical comparison rather than assuming Parseval for that lift.
 
 Fregoli, *Sums of reciprocals of fractional parts*, [Section 1, gap argument preceding Theorem 1.2](https://pure.royalholloway.ac.uk/ws/files/34774891/1805.00865v1.pdf), is the neighboring classical return-gap source already used in NB-368. Its linear-form denominator differs from the sum of two squared distances here. Equations (9)--(10) directly establish the precise counting estimate needed for this sequence. No new general gap, interpolation, or nonlinear-approximation theorem is claimed.
 

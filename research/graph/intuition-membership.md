@@ -413,6 +413,7 @@ This is a path-derived structural projection for graph topology. Each link means
 - [[research/nyman_beurling/mind/intuition/MI-084-multiplicative-band-coercivity-can-be-pure-dilation-baseline-repair]]
 - [[research/nyman_beurling/mind/intuition/MI-085-ordinary-multiplicative-enrichment-is-source-escape-filtered-by-sample-visibility]]
 - [[research/nyman_beurling/mind/intuition/MI-086-adjacent-cancellation-forces-near-quadratic-uniform-primitive-complexity]]
+- [[research/nyman_beurling/mind/intuition/MI-087-adaptive-lattice-retention-removes-the-component-cost-logarithm]]
 - [[research/nyman_beurling/mind/intuition/MI-900-early-shell-inversion-makes-projected-dilation-source-compression-polynomial]]
 
 ### Prime Circle

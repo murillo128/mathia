@@ -476,3 +476,4 @@ This stable projection inventories every current canonical Prime Circle finding.
 - [[research/prime_circle/findings/PC-466-full-primorial-cotangent-spectra-converge-to-the-admissible-pattern-spectrum|PC-466]]
 - [[research/prime_circle/findings/PC-467-admissible-cotangent-spectrum-is-perfect-and-has-a-purely-singular-realization|PC-467]]
 - [[research/prime_circle/findings/PC-468-generic-admissible-cotangent-limits-are-purely-singular-continuous|PC-468]]
+- [[research/prime_circle/findings/PC-469-full-admissible-cotangent-spectrum-has-dense-pure-point-realizations|PC-469]]

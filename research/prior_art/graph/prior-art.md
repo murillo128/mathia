@@ -9,6 +9,9 @@ derived: true
 
 # Prior-art research graph
 
+[[research/graph/global|Global research graph]]
+[[research/prior_art/graph/prior-art-membership|Prior-art structural membership]]
+
 This derived view reconciles live Mathia research with the frozen issue-63 prior-art bootstrap and the curator-owned incremental prior-art layer. Exact links below are present only where the finding itself identifies the classical object strongly enough to audit.
 
 <!-- graph:start -->

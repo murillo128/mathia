@@ -100,6 +100,10 @@ The retained window contains eight viable extensions, ten barriers and two prior
 
 [[research/arithmetic_fidelity/graph/relations/endpoint-jet-category-and-crossover-shape|The endpoint-jet mechanism]] adds one `new-barrier` episode for rational finite-precision control of crossover shape. AF-593 preserves exact reciprocal mass while approximating each fixed finite nonconstant endpoint jet arbitrarily closely and retaining arbitrarily many separated minima. Its integer rigidity theorem does not extend to signed rational valuations; the exact rational feasibility question remains open. The finite Euler factor preserves the nontrivial zero divisor. No bound on denominators, edit count or range is supplied. Classical entropy registration and graph maintenance add no episodes; no exact Atlas leaf is assigned.
 
+## Adaptive Nyman lattice retention
+
+[[research/nyman_beurling/graph/relations/adaptive-lattice-component-cost|The adaptive lattice mechanism]] contributes one `viable-extension` episode for NB-370’s answer to NB-369’s selected-index escape: the same all-integer phase bound yields sharp squared component cost 1/M for adaptive retention, versus log(M)/M for contiguous retention. The sampler/lift comparison applies to every exact split on the lower side and one fixed split on the upper side. Infinite-dimensional kernels, unrestricted anchor and the zeta inner factor remain; no finite-generator rate or RH closure result follows. MI-087’s two-budget synthesis and classical best-term registration are not additional events. F1 stays `open` with unchanged mass. The oldest retained extension leaves this twenty-question window, remaining in Git history.
+
 ## Retained prospective window
 
 Classifiable episodes: **20**. Insufficient-evidence episodes: **0**. Retrospective episodes: **0**.
@@ -119,9 +123,10 @@ Classifiable episodes: **20**. Insufficient-evidence episodes: **0**. Retrospect
 
 | Line | Episodes | Viable extension | Barrier | Prior art | Duplicate |
 | --- | ---: | ---: | ---: | ---: | ---: |
-| `arithmetic_fidelity` | 5 | 2 | 3 | 0 | 0 |
+| `arithmetic_fidelity` | 4 | 1 | 3 | 0 | 0 |
 | `farey_discrepancy` | 3 | 1 | 2 | 0 | 0 |
 | `mobius_cancellation` | 4 | 2 | 1 | 1 | 0 |
+| `nyman_beurling` | 1 | 1 | 0 | 0 | 0 |
 | `prime_lattice` | 5 | 3 | 2 | 0 | 0 |
 | `visual_exploration` | 1 | 0 | 1 | 0 | 0 |
 | `weil_positivity` | 1 | 0 | 0 | 1 | 0 |

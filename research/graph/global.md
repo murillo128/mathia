@@ -64,7 +64,7 @@ This is the derived root graph for Mathia research. Canonical findings and mind 
 
 ## Integration boundary
 
-Stable memberships cover all 13 initialized research lines, 5,213 canonical findings, 846 durable intuitions and 81 canonical prior-art notes. Structural attachment asserts ownership only. It includes challenged findings without treating a review as withdrawal or endorsement.
+Stable memberships cover all 13 initialized research lines, 5,219 canonical findings, 847 durable intuitions and 82 canonical prior-art notes. Structural attachment asserts ownership only. It includes challenged findings without treating a review as withdrawal or endorsement.
 
 Semantic coverage is selective. The [[research/arithmetic_fidelity/graph/relations/euler-harmonic-collision-budget|Euler harmonic collision budget]] records AF-337/AF-338's finite-order refinement and its surviving source/observation restrictions. Nine direct reference links in those two findings preserve their original text exactly. No cross-line implication follows from this maintenance.
 
@@ -93,6 +93,8 @@ PL-478 now reconstructs the sparse-grid prime transfer with its separate pointwi
 The Farey transport mechanism separates FD-347's finite-test obstruction from FD-348's genuine-source rational rank reduction. The former omits denominator/adjacency arithmetic; the latter retains it and derives exact half-translates only in the stated small-product range. The remaining rank anti-concentration and all-fixed-offset estimates are unproved. Dress's exact discrepancy theorem is a shared classical input with FD-010, not an inferred direct relation between findings. Two reversible source-to-prior-art wrappers preserve both edited findings byte-for-byte after exact reversal. Other newly attached findings remain outside this bounded semantic reconciliation.
 
 The [[research/arithmetic_fidelity/graph/relations/endpoint-jet-category-and-crossover-shape|endpoint-jet category mechanism]] distinguishes AF-591's rational mass-matched crossover controls, AF-592's exact real finite-jet repair and AF-593's rational finite-precision obstruction. Integer first-jet rigidity does not settle exact rational feasibility. The classical entropy/self-power conversion is registered without asserting admissible solutions. Two reversible wrappers preserve AF-593 byte-for-byte after exact reversal; the existing AF-592 dependency link is retained. Other newly attached findings remain outside this bounded semantic inspection.
+
+The [[research/nyman_beurling/graph/relations/adaptive-lattice-component-cost|adaptive Nyman lattice mechanism]] separates NB-369’s contiguous squared component cost from NB-370’s adaptive retention rate under the same simultaneous bad-approximation hypothesis. NB-356 supplies the sampler/lift and NB-368 the specified cubic phase pair. MI-087’s two-budget refinement remains attributed synthesis. Four reversible wrappers in NB-370 materialize the three finding dependencies and classical best-term approximation input. Infinite-dimensional sampler kernels, physical realization through the zeta inner factor, and the unchanged Burnol floor remain explicit. Other newly attached findings are outside this bounded semantic inspection.
 
 The Riemann Atlas v1 masses and territory states are unchanged. [[research/graph/atlas/telemetry/frontier-summary|Frontier telemetry]] distinguishes the selected source-backed episodes from topology maintenance and states its sampling limits.
 <!-- graph:end -->

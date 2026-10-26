@@ -13,3 +13,7 @@ derived: true
 [[research/nyman_beurling/graph/nyman-beurling-membership|Nyman–Beurling structural membership]]
 
 Canonical findings and `mind/` remain authoritative. The membership projection is structural only.
+
+## Mechanisms
+
+- [[research/nyman_beurling/graph/relations/adaptive-lattice-component-cost|Adaptive lattice selection and physical component cost]]

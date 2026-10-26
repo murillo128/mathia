@@ -376,3 +376,4 @@ This stable projection inventories every current canonical Nyman–Beurling find
 - [[research/nyman_beurling/findings/NB-367-third-orbit-failure-has-exact-half-dimensional-size-at-minimal-type|NB-367]]
 - [[research/nyman_beurling/findings/NB-368-cubic-logarithmic-seeds-give-deterministic-finite-energy-target-completion|NB-368]]
 - [[research/nyman_beurling/findings/NB-369-critical-return-energy-makes-three-orbit-lattice-truncation-logarithmically-sharp|NB-369]]
+- [[research/nyman_beurling/findings/NB-370-adaptive-lattice-selection-removes-the-three-orbit-cutoff-logarithm|NB-370]]
