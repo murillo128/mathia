@@ -284,4 +284,39 @@ The lower bound uses `sqrt(D_i/X)` with jump bound two; the upper bound holds be
 
 The shared relation is precisely the endpoint map `U_i(j)=F(j+L_i)-F(j)` and the packet area-to-dispersion cost. Its baselines differ: MC-540 returns to an alternating square-free prefix with bounded windows, so missed packets yield small energy; PL-485 returns to the exact-prime source, whose energy is unknown. The latter's every-scale floor is for `d`, not for either `b^+` or `b^-`. A fixed signed pole certificate also does not follow from either dispersion construction. This is the positive prime-support extension of the hidden-perturbation mechanism, not a transfer of MC-540's energy ceiling.
 
-The remaining multiplicative gap has a specific method boundary. [MC-541](../../mobius_cancellation/findings/MC-541-optimal-prescribed-prime-moments-still-force-lacunarity.md), retained in Möbius MI-104, decomposes MC-538's weighted random background into coherent divisor fibres. With `D_A(t)=#{d|product_(p in A)p:d<=t}`, the sharp second-moment norm is `D_A(N)` and ensemble centering leaves `D_A(N/2)`. The preceding prime block already forces a loss `gg X_(k-1)^kappa/log X_(k-1)`, so an `X_k^eta_k` uniform budget with `eta_k ->0` still requires diverging logarithmic scale ratios. Optimizing that uniform norm cannot import the every-block placement into the multiplicative construction; cancellation for the actual interval or smooth weights remains an open alternative. These are limits of the specified controls and proof method, not an impossibility theorem for dense multiplicative sources or a sharp sampling theorem for Möbius or primes.
+The remaining multiplicative gap has a specific method boundary. [MC-541](../../mobius_cancellation/findings/MC-541-optimal-prescribed-prime-moments-still-force-lacunarity.md), retained in Möbius MI-104, decomposes MC-538's weighted random background into coherent divisor fibres. With `D_A(t)=#{d|product_(p in A)p:d<=t}`, the sharp second-moment norm is `D_A(N)` and ensemble centering leaves `D_A(N/2)`. The preceding prime block already forces a loss `gg X_(k-1)^kappa/log X_(k-1)`, so an `X_k^eta_k` uniform budget with `eta_k ->0` still requires diverging logarithmic scale ratios.
+
+[MC-542](../../mobius_cancellation/findings/MC-542-balanced-prime-replicas-force-centered-window-energy.md),
+reconciled in Möbius MI-104, supplies the missing interval-specific price.
+For integral `Y>=100` and balanced selected primes
+`P subset (4Y/3,5Y/3)`, let `B` be their
+signed prefix, `w=max P-min P`, and `C(j)=B(floor(j/3))`. On
+`3Y<=X<=floor(13Y/4)`, with the same two macroscopic lengths, the test
+`a_L(j)=C(j+L)-C(j)` has zero mean and
+`sum|a_L|^2>=3 sum|B|^2/R^2`, `R=ceil(3w/floor(3Y/20))<=8`.
+This is the same endpoint-difference map as the hidden-packet controls,
+but here multiplicativity forces a **replica** at `3p`; it is not a freely
+placed additive perturbation. For a square-free-supported multiplicative
+sign source with `|g(3)|=1` and fixed `phi in C^1([4/3,5/3];C)`, the
+exact pairing yields
+
+`|sum_(p in P)b_p phi(p/Y)| <<_phi sqrt(V_L)+A`,
+
+where `V_L` is the complete centered energy and `A` is the maximal prefix
+through `7Y` after zeroing all primes of `P`. The inequality holds for
+overlapping selected blocks and arbitrary other prime prescriptions.
+Thus keeping a combined target above square-root size while suppressing
+its replica requires a background prefix of comparable size. Under the
+additional old-product bound and independent free-prime ensemble of
+MC-542, that target instead forces large complete energy with high
+probability throughout the band. Neither statement gives small or large
+**sampled** energy, a dense infinite control, or an actual Möbius bound.
+
+The cross-line limit is concrete: PL-485's positive reweightings can return
+their additive prefix to the exact-prime baseline outside each packet;
+MC-538 cannot inherit that reset at every scale merely by balancing its
+prime signs, because their composite copies create this extra endpoint
+profile. Large complete replica energy may still be missed by sparse
+observations. A dense multiplicative escape must pay the background
+prefix cost or alter the isolated multiplier geometry; this is not an
+impossibility theorem for that escape or a sharp arithmetic sampling law.

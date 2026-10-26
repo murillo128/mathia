@@ -52,7 +52,80 @@ In MC-538, `A=A_(<k)`, `Z=P_k`, `q_0=2`, and the preceding block contributes `|P
 
 `log X_k / log X_(k-1) >= (kappa-o(1))/eta_k -> infinity`.
 
-Thus optimizing the uniform moment constant or removing just the expectation cannot densify this construction. The extremizers are sign-aligned divisor fibres, generally not interval or fixed smooth weights. The result supplies no lower bound on the actual background window energy and does not exclude a dense multiplicative construction using cancellation in those particular inner sums or a different selection argument.
+Thus optimizing the uniform moment constant or removing just the expectation cannot densify this construction. MC-541's extremizers are sign-aligned divisor fibres, generally not interval or fixed smooth weights. Its worst-case norm alone supplies no lower bound on actual background window energy.
+
+[MC-542](../../findings/MC-542-balanced-prime-replicas-force-centered-window-energy.md)
+adds the interval-specific constraint, including overlapping selected blocks.
+Let `Y>=100` be integral, prescribe balanced signs `b_p` on a nonempty
+finite prime set `P subset (4Y/3,5Y/3)`, and set
+
+\[
+B(n)=\sum_{p\in P,\ p\le n}b_p,\quad
+w=\max P-\min P,\quad \mathcal B_2=\sum_n|B(n)|^2.
+\]
+
+Take integers `3Y<=X<=floor(13Y/4)`, `I_X={X,...,2X-1}`,
+`H=floor(X/20)`, `K=floor(sqrt(2)H)`. For `L=H` or `K`, the replica test is
+`a_L(j)=C(j+L)-C(j)`, where `C(j)=B(floor(j/3))`. Both translated supports
+lie completely inside `I_X`, so `sum_j a_L(j)=0`. With
+
+\[
+R=\left\lceil\frac{3w}{\lfloor3Y/20\rfloor}\right\rceil\le8,
+\qquad E_L=\sum_j|a_L(j)|^2,
+\]
+
+compact-support telescoping gives `E_L>=3 mathcal B_2/R^2` and
+`|supp a_L|<=6w`, even when `3w>L`. The separated-pulse identity
+`E_L=6 mathcal B_2` cannot be used in that regime.
+
+For any square-free-supported multiplicative `g:N->{-1,0,1}` with these
+prime values and `|g(3)|=1`, zero all primes of `P` to obtain `g_0` and put
+`A=max_(t<=7Y)|sum_(n<=t)g_0(n)|`. On the test support, the only nonzero
+selected-prime multiples in the windows are `3p`: multiplier four is
+nonsquare-free and all other multipliers are outside. Hence exactly
+
+\[
+S_L(j)-\sum_{j<n\le j+L}g_0(n)=g(3)a_L(j).
+\]
+
+Pair this identity with `a_L`. Its zero mean removes any fitted constant,
+and Cauchy--Schwarz gives, for the complete empirical energy
+`V_L=X^(-1)sum_(j in I_X)|S_L(j)-mean_(I_X) S_L|^2`,
+
+\[
+\sqrt{XV_L}\ge
+\left(\frac{\sqrt{3\mathcal B_2}}R-2A\sqrt{6w}\right)_+.
+\]
+
+For fixed `phi in C^1([4/3,5/3];C)`, `D=||phi'||_infinity>0`, write
+`T_B(Y)=sum_(p in P)b_p phi(p/Y)`. Summation by parts bounds this
+**selected-prime target** by `D sqrt(w mathcal B_2)/Y`, so
+
+\[
+|T_B(Y)|\le\frac{RD}{Y}\sqrt{\frac{Xw}{3}}\sqrt{V_L}
+             +\frac{2\sqrt2RDw}{Y}A
+\ll D(\sqrt{V_L}+A).
+\]
+
+Thus retaining `|T_B(Y)|>=Y^(1/2+delta)` with `V_L=Y^(1+o(1))`
+requires `A>>_phi Y^(1/2+delta)`, for fixed `delta>0`. Overlapping
+prescriptions within this band cannot erase their combined smooth target's
+replica without a large prefix in the background after those primes are
+removed. This deterministic alternative has no old-prime-product assumption.
+
+The stronger typical-energy conclusion has additional hypotheses: the old
+prescribed set `A_0` excludes three and has `product_(p in A_0)p<Y`, three
+is free, and apart from a disjoint finite zeroed set, remaining prime signs
+are independent Rademachers.
+The one maximal-prefix estimate `E A^2<=2^(|A_0|)(7Y)(ceil(log_2(7Y))+1)^2`
+then yields, conditional on the target size above, `V_H,V_K>>_phi |T_B(Y)|^2`
+throughout the band with probability `1-O_phi(Y^(-2delta+o(1)))`.
+It does not follow from expectation alone. These are finite-ensemble
+statements about complete energies, not all realizations, sparse sampled
+energies, actual Möbius sums, or one dense infinite multiplicative control.
+The remaining escape needs backgrounds paying the displayed deterministic
+cost, removal of the replica, or geometry outside its isolated multiplier
+band; no impossibility of such a construction has been established.
 
 MC-538's sampling obstruction needs neither sample-adapted signs nor a fresh nonmultiplicative tent at every scale. It does need sparse scales and permits `f(p)=+1`; it lacks Möbius's prime-sign law and reciprocal-zeta identity. It proves no dense-scale failure, no failure at exponent `1/4`, and no lower bound for actual Möbius or a different sampling design. The matching prime-source recovery and its different pole input are compared in [global MI-040](../../../mind/intuition/MI-040-paired-box-inversion-transports-trimmed-mobius-pole-tests.md).
 

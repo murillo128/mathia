@@ -173,5 +173,73 @@ equivalently `2M` nonzero slots. Each `E_(v,Lambda)` still contains an
 infinite-dimensional sampler kernel, the value at `z_0=1` is free, and the
 anchor is unrestricted. These are squared component distances, not a
 lower bound on the residual of their sum: component errors may cancel.
-No finite-dilation-generator rate follows. Every orbit sum `w` retains
+No finite-dilation upper approximation rate follows from lattice selection.
+Every orbit sum `w` retains
 `||e-w||^2=1-b^2+||t-w||^2`, so the Burnol floor is unchanged.
+
+[NB-371](../../findings/NB-371-critical-line-zeros-force-unbounded-finite-dilation-synthesis-cost.md)
+prices the missing coefficient resource in this exact normalization. For
+any finite sum, allowing arbitrary real seeds `v_nu>1` and dilations
+`a_nu>=1`, put
+
+\[
+w=\sum_{\nu=1}^J c_\nu A_{a_\nu}g_{v_\nu},\quad
+Q=\sum_\nu|c_\nu|(v_\nu^{-1}+v_\nu^{-1/2}),\quad
+S=\sum_\nu|c_\nu|,\qquad Q\le2S.
+\]
+
+On `s=1/2+iy`, dilation has unit modulus and
+
+\[
+\mathcal M(A_ag_v)(s)=a^{1/2-s}\frac{\zeta(s)}s(v^{-1}-v^{-s}),
+\qquad |\mathcal Mt(s)|=b/|s|\quad\text{a.e.}
+\]
+
+Thus a fixed budget cannot fill the target's modulus near a critical-line
+zero:
+
+\[
+\|t-w\|^2\ge\frac1{2\pi}\int_{\mathbb R}
+\frac{[b-Q|\zeta(1/2+iy)|]_+^2}{|1/2+iy|^2}\,dy
+\ge c_{\rho,b}(1+Q)^{-1/m},
+\]
+
+where `rho` is any one fixed critical-line zero of multiplicity `m`.
+The last estimate integrates a mismatch of fixed height over an interval
+of width comparable to `(1+Q)^(-1/m)`. It is not point evaluation on the
+Hardy boundary. Infinitely many critical-line zeros are known without RH;
+simplicity is not assumed.
+
+Consequently any finite synthesis of the **final target** with
+`||t-w_M||=O(M^(-1/2))` requires `S_M=Omega(M^m)`, hence at least
+`Omega(M)`. If its coefficient Euclidean norm is at most `C_M`, then
+`S_M<=sqrt(J_M) C_M` gives `J_M C_M^2=Omega(M^(2m))`.
+This is uniform over the selected lattice sets because it tests `t`, not
+the separate component errors. It does not give a column-count bound
+without coefficient control, a maximal-dilation bound, or a matching upper
+synthesis rate. Rescaling the generators would change this budget.
+
+Even a **fixed nonzero finite lift** already lies outside every bounded
+same-seed coefficient closure. With `E` its finite nonzero data support,
+
+\[
+R_qd(s)=\frac{1-q^{1-s}}{\log q}
+\sum_{k\in E}\frac{d_k}{s-z_k}.
+\]
+
+The rational numerator has degree at most `|E|-1`; the prefactor has no
+critical-line zeros. Some critical-line zeta zero therefore leaves
+`R_qd` nonzero. Integrating the same mismatch for
+`h=mathcal M^(-1)(B Theta_v R_qd)` gives a positive distance from every
+fixed `sum|c_nu|` budget in `span{A_a g_v}`. Hence finite interpolation
+support does not mean a finite generator sum, or a finite-total-variation
+mixture of dilations. The zero and constant may depend on the lift; this
+argument supplies no uniform component bound as `Lambda` grows.
+
+The resulting three resources remain distinct: `M` retained indices,
+`K asymp M log M` inspected indices for order-optimal component cost,
+and the necessarily divergent generator coefficient budget. Closed-orbit
+approximation survives because its coefficient budgets may diverge; the
+critical-zero obstruction is a conditioning cost above the Burnol floor,
+not a positive distance from the full closed orbit. These are source-backed
+necessary bounds, not a measured improvement in research utility.
