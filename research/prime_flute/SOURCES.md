@@ -86,9 +86,9 @@ Relevant finding: PF-005.
 
 ## S6 — Baker-Harman-Pintz short intervals
 
-**R. C. Baker, G. Harman, J. Pintz**, *The Difference Between Consecutive Primes, II*, Proceedings of the London Mathematical Society 83 (2001), 532–562. DOI: 10.1112/S0024611501012690.
+**R. C. Baker, G. Harman, J. Pintz**, *The Difference Between Consecutive Primes, II*, Proceedings of the London Mathematical Society 83 (2001), 532–562. DOI: 10.1112/plms/83.3.532.
 
-- https://doi.org/10.1112/S0024611501012690
+- https://doi.org/10.1112/plms/83.3.532
 
 Used for:
 
@@ -640,6 +640,8 @@ Section 5a derives a uniform corollary for every closed subspace of the same ban
 Friedland--Yomdin, Theorem 1.1, and Gaillac--Gautier, Proposition 1 and Section 3 (S34), supply the neighboring exponential-polynomial and weighted-Fourier concentration context. Neither result is imported to prove the explicit counterexample.
 
 Relevant finding: PF-367; relevant local clue: CLUE-positive-width-transition-schur-complement.md. A consecutive exact cuff-lattice packet in a physical interval of width `W` concentrates at `|t|/L=arctan(W)/pi`. Windows with a smaller limiting half-length/period ratio capture exponentially vanishing weighted mass, even though the packet has coefficient absolute sum one. This excludes a broad-band extension of the uniform scalar window comparison based only on exact lattice membership and the conservative certified window.
+
+**NIST Digital Library of Mathematical Functions**, equation [27.2.3](https://dlmf.nist.gov/27.2#E3), states the classical prime number theorem. Together with the sublinear gap bound in S6 and a directly proved telescoping count, it supports PF-367's actual-window boundary: `T_i<=theta L_i`, `theta<1/2`, forces a neighboring gap `b>=c P^(1-2theta) a^(2theta)` and occurs at most `O(X^(2theta))` times for `P<=X`. Thus the prescribed embedded-window ratio tends to `1/2` in prime-index density and captures this fixed-width packet's mass in density. S4's Pintz paper, Theorems 1, 1' and 2, supplies a logarithmic-scale ratio guarantee, which alone does not establish the required power-scale jump. No new prime-gap distribution theorem is claimed.
 
 **Scope warning.** The threshold is for the exhibited packet, not the optimal concentration constant over all band fields. Failure on a smaller certified subwindow does not imply failure on the actual full corridor. No actual minimizing residual, wide-band shorted angle, relative spectral or RH conclusion is established.
 
