@@ -549,3 +549,4 @@ This stable projection inventories every current canonical Möbius Cancellation 
 - [[research/mobius_cancellation/findings/MC-540-one-squarefree-source-hides-every-scale-dispersion-above-fourth-power-sampling|MC-540]]
 - [[research/mobius_cancellation/findings/MC-541-optimal-prescribed-prime-moments-still-force-lacunarity|MC-541]]
 - [[research/mobius_cancellation/findings/MC-542-balanced-prime-replicas-force-centered-window-energy|MC-542]]
+- [[research/mobius_cancellation/findings/MC-543-independent-block-orientations-cannot-suppress-every-prime-replica|MC-543]]

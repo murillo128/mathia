@@ -18,7 +18,7 @@ g_v(x)=\{1/(vx)\}-v^{-1}\{1/x\},\quad v>1,
 A_af(x)=\sqrt a f(ax)\mathbf1_{x\le1/a},\quad a\ge1,
 \qquad \mathcal N=\overline{\operatorname{span}}\{g_v:v>1\}.
 \]
-Let \(t=P_{\mathcal N}e\). With the normalization of NB-354,
+Let \(t=P_{\mathcal N}e\). With the normalization of [[research/nyman_beurling/findings/NB-354-finite-seed-real-dilation-spaces-have-an-exact-target-loss-classification|NB-354]],
 \[
 \mathcal Mt(s)=\frac{bB(s)}s,\qquad b=B(1)>0,
 \qquad \|e-t\|^2=1-b^2,
@@ -193,7 +193,7 @@ Under RH, \(t=e\), and the inverse source is simply
 \]
 since \((D+1/2)(e^{-u/2}\mathbf1_{u\ge0})=\delta_0\). Its support is unbounded because there are arbitrarily large squarefree integers. This verifies the sign, boundary atom, and compact-support obstruction in a direct control. The general proof retains the unknown inner factor and does not assume this simplification.
 
-The cutoff conclusion is independent of NB-371's fixed absolute-coefficient budget: (3) allows that budget to be unbounded. Together they require divergent coefficients and divergent effective range along convergent finite syntheses. Neither result quantifies the column count without an additional condition. A zero coefficient, a redundant column, or a rescaling of the chosen atoms does not affect the range-space statement (2). There is no claim that every strict increase of \(R\) strictly decreases \(\Delta_R\).
+The cutoff conclusion is independent of [[research/nyman_beurling/findings/NB-371-critical-line-zeros-force-unbounded-finite-dilation-synthesis-cost|NB-371]]'s fixed absolute-coefficient budget: (3) allows that budget to be unbounded. Together they require divergent coefficients and divergent effective range along convergent finite syntheses. Neither result quantifies the column count without an additional condition. A zero coefficient, a redundant column, or a rescaling of the chosen atoms does not affect the range-space statement (2). There is no claim that every strict increase of \(R\) strictly decreases \(\Delta_R\).
 
 Burnol's *A note on Nyman's equivalent formulation of the Riemann Hypothesis*, [Section 2, equation (2.3) and Lemma 2.4](https://arxiv.org/pdf/math/9910055), supplies the Mellin factor and target projection (1). Hardy's critical-line zero theorem is the classical input recorded in Titchmarsh--Heath-Brown, *The Theory of the Riemann Zeta-function*, second edition, [Section 10.2](https://sites.math.rutgers.edu/~zeilberg/EM18/TitchmarshZeta.pdf), also used by NB-371.
 

@@ -2,7 +2,7 @@
 id: RA-frontier-telemetry-v1
 type: riemann-atlas-frontier-telemetry
 atlas_version: 1
-prospective_source_cutoff: 67319d8a8695f0955a4fcfd31e91e199ad74c78b
+prospective_source_cutoff: 593182fb417eb3f619144607d68ce74438dcd7b3
 derived: true
 ---
 
@@ -94,7 +94,7 @@ The finite-test obstruction is retained as its own episode. Reference formatting
 
 [[research/farey_discrepancy/findings/FD-348-small-denominator-half-period-pairs-are-exact-rational-translates|FD-348]] adds one `viable-extension` episode for the genuine-source small-denominator counting question. Under its strict small-product condition, every encounter is an exact rational half-translation, and the count equals a triangularly weighted three-value rank-defect population. This makes the necessary anti-concentration estimate explicit without establishing it. Composite orders are included; the other threshold rectangles and all-fixed-offset correlation target remain open. This is distinct from FD-347's artificial finite-test obstruction. Dress registration, source wrappers and structural memberships add no episode.
 
-The retained window contains eight viable extensions, eleven barriers and one prior-art collision. Atlas masses and states remain unchanged; the window is selective, not a representative productivity sample.
+Atlas masses and states remain unchanged; the window is selective, not a representative productivity sample.
 
 ## Rational finite-jet precision boundary
 
@@ -108,7 +108,13 @@ The retained window contains eight viable extensions, eleven barriers and one pr
 
 [[research/nyman_beurling/findings/NB-371-critical-line-zeros-force-unbounded-finite-dilation-synthesis-cost|NB-371]] contributes one `new-barrier` episode for bounded-coefficient realization after lattice selection. A fixed critical-line zero of multiplicity m forces absolute coefficient sum at least of order epsilon^(-2m) for approximation to the projected target, with arbitrary real seeds and dilation ranges. Each fixed nonzero selected lift also lies outside every bounded same-seed coefficient closure. The component constant can depend on the lift; the final-target bound is selection-independent.
 
-This is a conditioning obstruction, distinct from NB-370's retained-index optimization. Shrinking boundary neighborhoods leave unrestricted Hilbert closure intact. No maximal-dilation bound, matching upper synthesis rate, column-count lower bound without coefficient control or RH consequence is supplied. F1 remains `open` at unchanged mass. The classical projection node and seven reversible source wrappers add no events. Retaining twenty questions removes the oldest prior-art collision from this window; Git retains it. Other changed findings have structural membership only unless separately inspected.
+This is a conditioning obstruction, distinct from NB-370's retained-index optimization. Shrinking boundary neighborhoods leave unrestricted Hilbert closure intact. No maximal-dilation bound, matching upper synthesis rate, column-count lower bound without coefficient control or RH consequence is supplied. F1 remains `open` at unchanged mass. The classical projection node and seven reversible source wrappers add no events. Other changed findings have structural membership only unless separately inspected.
+
+## Fixed effective range and conditional fixed-box division
+
+[[research/nyman_beurling/graph/relations/adaptive-lattice-component-cost|NB-372’s range obstruction]] adds one `new-barrier` episode distinct from the absolute-coefficient budget: fixed effective range retains positive excess above the projected-target floor even with unbounded coefficients and column count. The excess vanishes as range grows; no effective rate or upper synthesis is supplied.
+
+[[research/prime_lattice/graph/relations/fixed-box-mellin-interpolation-and-division|PL-487’s division reduction]] adds one `viable-extension` episode for the conditional quotient-decay obligation. Exact Hermite cancellation in the specified Gevrey class automatically supplies decay and preserves the support interval. It does not construct the required fixed-box interpolant, upgrade smooth inputs, or evade PL-486’s universal obstruction. Classical prior-art registration and source wrappers add no events. The two oldest episodes leave the twenty-question window and remain in Git. Other changed findings receive structural membership only unless separately inspected.
 
 ## Retained prospective window
 
@@ -116,13 +122,12 @@ Classifiable episodes: **20**. Insufficient-evidence episodes: **0**. Retrospect
 
 | Classification | Episodes |
 | --- | ---: |
-| known-prior-art | 1 |
 | new-barrier | 11 |
-| viable-extension | 8 |
+| viable-extension | 9 |
 
-- **FrontierFertilityEpisodes = 40.0%**
+- **FrontierFertilityEpisodes = 45.0%**
 - **BarrierRate = 55.0%**
-- **PriorArtCollisionRate = 5.0%**
+- **PriorArtCollisionRate = 0.0%**
 - **InternalDuplicateRate = 0.0%**
 
 ## Per-line sample
@@ -131,9 +136,9 @@ Classifiable episodes: **20**. Insufficient-evidence episodes: **0**. Retrospect
 | --- | ---: | ---: | ---: | ---: | ---: |
 | `arithmetic_fidelity` | 4 | 1 | 3 | 0 | 0 |
 | `farey_discrepancy` | 3 | 1 | 2 | 0 | 0 |
-| `mobius_cancellation` | 4 | 2 | 1 | 1 | 0 |
-| `nyman_beurling` | 2 | 1 | 1 | 0 | 0 |
-| `prime_lattice` | 5 | 3 | 2 | 0 | 0 |
+| `mobius_cancellation` | 3 | 2 | 1 | 0 | 0 |
+| `nyman_beurling` | 3 | 1 | 2 | 0 | 0 |
+| `prime_lattice` | 5 | 4 | 1 | 0 | 0 |
 | `visual_exploration` | 1 | 0 | 1 | 0 | 0 |
 | `xi_flow` | 1 | 0 | 1 | 0 | 0 |
 

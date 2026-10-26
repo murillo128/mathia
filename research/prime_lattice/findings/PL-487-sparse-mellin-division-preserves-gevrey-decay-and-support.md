@@ -152,7 +152,7 @@ Since \(H(\sigma)-c_0\sigma=d|\sigma|\), (8) implies, for every
 \tag{9}
 \]
 Equation (3) puts \(G(i\tau)\) in \(L^2(\mathbb R)\). The classical
-\(L^2\) Paley–Wiener theorem applied to (9), with the Fourier variable
+\(L^2\) [[research/prior_art/incremental/PA-paley-wiener-l2-exponential-type|Paley–Wiener theorem]] applied to (9), with the Fourier variable
 rotated by \(s=i\tau\), gives an inverse supported in
 \([\ell-\epsilon,r+\epsilon]\). Fourier uniqueness makes it the same
 inverse for every \(\epsilon\); intersecting these intervals gives

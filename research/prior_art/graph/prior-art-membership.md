@@ -86,6 +86,7 @@ This is a purely structural corpus projection. A link here means only that the t
 - [[research/prior_art/incremental/PA-multichannel-compact-distribution-deconvolution]]
 - [[research/prior_art/incremental/PA-nonquasianalytic-infinite-convolution-cutoff]]
 - [[research/prior_art/incremental/PA-paley-wiener-ingham-logarithmic-integral]]
+- [[research/prior_art/incremental/PA-paley-wiener-l2-exponential-type]]
 - [[research/prior_art/incremental/PA-polynomial-homogenization-linear-fractional-action]]
 - [[research/prior_art/incremental/PA-polynomial-interpolation-early-termination]]
 - [[research/prior_art/incremental/PA-randomized-integration-unsolvability-on-unrestricted-smooth-functions]]

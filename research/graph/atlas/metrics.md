@@ -2,7 +2,7 @@
 id: RA-metrics-v1
 type: riemann-atlas-metrics
 atlas_version: 1
-source_revision: eae1d200cb10b20e03ed54f55b1b0743b8f3f633
+source_revision: 593182fb417eb3f619144607d68ce74438dcd7b3
 derived: true
 ---
 
@@ -38,17 +38,17 @@ The five hard-pruned interfaces retain their existing scoped canonical evidence:
 
 ## Structural and semantic scope
 
-The exact tree projections contain 13 research lines, 5,227 findings, 847 durable intuitions and 83 prior-art notes. Membership changes and reversible source-reference formatting are graph maintenance, never frontier episodes. Semantic inspection remains selective as recorded in `research/graph/semantic-inspection.json`; uninspected source changes do not justify Atlas transitions.
+The exact tree projections contain 13 research lines, 5,232 findings, 847 durable intuitions and 84 prior-art notes. Membership changes and reversible source-reference formatting are graph maintenance, never frontier episodes. Semantic inspection remains selective as recorded in `research/graph/semantic-inspection.json`; uninspected source changes do not justify Atlas transitions.
 
 The reflected Farey reconciliation distinguishes full-discrepancy parity from right-endpoint transport parity and records exact-energy-conditioned erasure nonidentifiability. Both concern artificial reassemblies. Its updated scope also separates the PNT-assisted erased-record energy gap, the finite matched-energy spectral obstruction and its single-pair localization bound, and the realized conditioned high-band barrier with its inherited genuine-source sector and the classical fixed-gap resolution of the upper-half projected-comparator match. This changes no Atlas mass or state; VIS-466's conflicting illustrative length tuple is explicitly excluded from support in the mechanism note.
 
 ## Frontier fertility
 
-The retained prospective series contains **20** classifiable episodes and **0** insufficient-evidence episodes. NB-371 adds one barrier for actual finite-dilation coefficient conditioning, distinct from NB-370’s adaptive lattice retention. Retaining twenty questions removes the oldest prior-art collision from this window, not from Git history. These selectively inspected questions are not an unbiased portfolio sample. Atlas states and masses are unchanged.
+The retained prospective series contains **20** classifiable episodes and **0** insufficient-evidence episodes. NB-372 adds a fixed-effective-range barrier distinct from NB-371’s coefficient budget. PL-487 removes a quotient-decay obligation conditional on a sufficiently regular fixed-box interpolant; it does not establish existence. The oldest two episodes leave the bounded window and remain in Git. These selectively inspected questions are not an unbiased portfolio sample. Atlas states and masses are unchanged.
 
-- **FrontierFertilityEpisodes = 40.0%**
+- **FrontierFertilityEpisodes = 45.0%**
 - **BarrierRate = 55.0%**
-- **PriorArtCollisionRate = 5.0%**
+- **PriorArtCollisionRate = 0.0%**
 - **InternalDuplicateRate = 0.0%**
 
 Membership, reversible reference formatting and classical-method registration are excluded from the event set.

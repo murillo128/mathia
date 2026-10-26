@@ -30,3 +30,5 @@ PL-121 directly traverses de Bruijn–Newman heat flow and shows its exponent-la
 ## Fixed-target inversion boundary
 
 [[research/graph/relations/fixed-target-box-inversion-regularity-boundary|Fixed-target box inversion and its regularity boundary]] preserves the distinct arithmetic pole inputs and the all-scale norm-certificate restriction. The variance ceilings remain unproved.
+
+[[research/prime_lattice/graph/relations/fixed-box-mellin-interpolation-and-division|Fixed-box Mellin interpolation and division]] separates universal filter failure from the conditional quotient-decay reduction for a specially chosen Gevrey interpolant. Existence remains open.

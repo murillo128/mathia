@@ -378,3 +378,4 @@ This stable projection inventories every current canonical Nyman–Beurling find
 - [[research/nyman_beurling/findings/NB-369-critical-return-energy-makes-three-orbit-lattice-truncation-logarithmically-sharp|NB-369]]
 - [[research/nyman_beurling/findings/NB-370-adaptive-lattice-selection-removes-the-three-orbit-cutoff-logarithm|NB-370]]
 - [[research/nyman_beurling/findings/NB-371-critical-line-zeros-force-unbounded-finite-dilation-synthesis-cost|NB-371]]
+- [[research/nyman_beurling/findings/NB-372-bounded-effective-dilation-range-retains-a-strict-projected-target-gap|NB-372]]
