@@ -1,9 +1,11 @@
 # MC-542 — Balanced prime replicas force centered window energy
 
 **Status:** `EXACT-DERIVED`, `LITERATURE+DERIVED`, `NEGATIVE/OBSTRUCTION`,
-`NO-NOVELTY-CLAIM`. The lower bound is over a prescribed-prime random
-multiplicative ensemble. It is neither a pointwise lower bound for
-every realization nor a statement about actual Möbius sums.
+`NO-NOVELTY-CLAIM`. The bounds concern a prescribed-prime random
+multiplicative ensemble: an exact expectation floor and a simultaneous
+high-probability floor on a comparable-scale band. They are neither
+pointwise bounds for every realization nor statements about actual
+Möbius sums.
 
 ## Claim and the interval-specific question
 
@@ -87,6 +89,13 @@ Two useful forms of the same obstruction are:
   \]
   Thus retaining a large signed smooth target on a narrow prime
   block has a definite quadratic cost at its multiplicative replica.
+
+Section 4 strengthens the same replica obstruction from expectation
+to probability. For the ordered blocks of Section 3, with probability
+\(1-o(1)\), both centered energies satisfy the lower bound in (19)
+**simultaneously at every integer scale in (4)**. This uses a maximal
+bound for the background with the selected prime block removed;
+it does not infer typical behavior from (6) alone.
 
 ## 1. The free-prime projection isolates an actual interval profile
 
@@ -218,6 +227,143 @@ the failure is not confined to its arbitrary coefficient extremizers.
 An isolated balanced block already obstructs the desired expectation
 bound for both intended window lengths on comparable scales.
 
+## 4. The replica survives with high probability throughout the band
+
+Retain (1)–(5), now with the band-wide separation
+\(3w\le\lfloor3Y/20\rfloor\). Put
+\[
+ N=7Y,\qquad r=\lceil\log_2 N\rceil,\qquad
+ C_0=2^{|A_0|}.
+\tag{20}
+\]
+For every \(0<\tau<1\),
+\[
+\boxed{
+ \Pr\!\left\{
+  \text{for all }3Y\le X\le\lfloor13Y/4\rfloor
+  \text{ and }L\in\{H,K\},\quad
+  V_L\ge(1-\tau)^2\frac{6\mathcal B_2}{X}
+ \right\}
+ \ge 1-\frac{4C_0N(r+1)^2w}{\tau^2\mathcal B_2}.
+}
+\tag{21}
+\]
+All scales here are integers; \(H,K,V_L\) retain their dependence
+on \(X\). A negative right side is simply uninformative. The event
+also gives the same lower bound for energy about **any** fitted
+constant, including a realization-dependent choice.
+
+### Remove the entire prime block before bounding the background
+
+Let \(g_0\) agree with \(g\) except that all primes in \(P\) are
+set to zero, and define
+\[
+ G_0(t)=\sum_{n\le t}g_0(n),\qquad
+ A=\max_{0\le t\le N}|G_0(t)|.
+\tag{22}
+\]
+Grouping by the free prime part as in MC-541 gives, for every
+deterministic complex weight vector supported on \([1,N]\),
+\[
+ \mathbb E\left|\sum_{n\le N}v_ng_0(n)\right|^2
+             \le C_0\sum_{n\le N}|v_n|^2.
+\tag{23}
+\]
+Only the old primes \(A_0\) are prescribed in this auxiliary
+ensemble. The possibly large set \(P\) is zeroed and therefore
+does not enter \(C_0\).
+
+Here is the needed maximal version, with its constant explicit:
+\[
+                       \mathbb E A^2\le C_0N(r+1)^2.
+\tag{24}
+\]
+Pad \(g_0(n)\) by zero from \(N+1\) through \(2^r\). Every
+prefix is a disjoint union of at most \(r+1\) dyadic intervals,
+so its squared sum is at most \(r+1\) times the sum of squared
+block sums over the whole dyadic tree. At each of its \(r+1\)
+levels, (23) bounds the expectation of that sum by \(C_0N\):
+the intervals partition the padded range and the nonzero coefficient
+norms total \(N\). This proves (24). It is the classical
+Rademacher–Menshov dyadic argument, applied to the second-moment
+bound (23); independence of the values \(g_0(n)\) is not assumed.
+
+### Isolate the replica pathwise on the support of its test
+
+For a given \(X,L\), write \(a_L(j)=C(j+L)-C(j)\), with
+\(C\) from Section 2. On the support of \(a_L\), every integer
+in the window \((j,j+L]\) lies between \(4Y-L\) and \(5Y+L\).
+Also \(L\le13\sqrt2Y/80<Y/4\). A multiple of a selected
+prime in this range can only have multiplier three or four:
+multiplier at most two is below \(10Y/3\), and multiplier at
+least five is above \(20Y/3\). Multiplier four is nonsquare-free
+and contributes zero. All these windows lie below \(N\), and
+\((\min P)^2>N\), so no product of two selected primes occurs.
+Consequently, for every realization and every such start,
+\[
+ S_L(j)-[G_0(j+L)-G_0(j)]=g(3)a_L(j).
+\tag{25}
+\]
+This identity uses the physical support of the test, not just its
+Walsh coefficient. From (15)–(16),
+\[
+ \sum_j a_L(j)=0,\quad
+ \sum_j|a_L(j)|^2=6\mathcal B_2,\quad
+ \sum_j|a_L(j)|\le6\sqrt{w\mathcal B_2}.
+\tag{26}
+\]
+The last bound is Cauchy–Schwarz on the \(3w\) positions of
+\(C\), followed by the two disjoint translates. Thus
+\[
+ \sum_{j\in I_X}a_L(j)S_L(j)
+      =6g(3)\mathcal B_2+E_L,\qquad
+ |E_L|\le12A\sqrt{w\mathcal B_2}.
+\tag{27}
+\]
+Because \(|g(3)|=1\), the single event
+\[
+                  A\le\frac{\tau\sqrt{\mathcal B_2}}{2\sqrt w}
+\tag{28}
+\]
+forces the absolute pairing in (27) to be at least
+\(6(1-\tau)\mathcal B_2\), for **every** scale and both
+channels at once. No independence between \(g(3)\) and the error
+is required. Since the test sums to zero, Cauchy–Schwarz gives,
+for any complex constant \(c\),
+\[
+ \left|\sum_j a_L(j)S_L(j)\right|^2
+       \le6\mathcal B_2\sum_j|S_L(j)-c|^2.
+\tag{29}
+\]
+Take the empirical mean for \(c\), then apply Markov's inequality
+to (24) and (28). This proves (21) without a union bound over the
+scales. Under the original hypotheses, \(\mathbb E g(3)=0\)
+and \(\mathbb E g_0(n)=0\) for \(n>Q_0\). Hence the pairing
+with \(\mathbb E S_L\) is zero; the same event also proves (21)
+after ensemble centering followed by empirical centering.
+
+### Ordered blocks give a vanishing exceptional probability
+
+The condition \(Q_0<Y\) implies \(C_0=Y^{o(1)}\), uniformly
+over the old prescribed set. Indeed, for any \(\epsilon>0\),
+\(2\le p^\epsilon\) for all sufficiently large primes; the
+finitely many smaller primes contribute a fixed factor, giving
+\(2^{|A_0|}\ll_\epsilon Q_0^\epsilon\).
+
+For the ordered blocks in Section 3, \(w\le Y^\kappa\) and
+\(\mathcal B_2\gg Y^{3\kappa}/(\log Y)^3\). For fixed
+\(\tau\), the exceptional probability in (21) is therefore
+\[
+                 O_\tau\bigl(Y^{1-2\kappa+o(1)}\bigr)=o(1).
+\tag{30}
+\]
+In particular, for the declared \(2/3<\kappa<1\), both
+energies are \(\gg Y^{3\kappa-1}/(\log Y)^3\) on the entire
+band with probability tending to one. The superlinear energy floor
+is not supported only by rare large-energy realizations. This is a
+finite-ensemble statement as the block scale grows, not an almost-sure
+claim about one infinite family of interacting prescribed blocks.
+
 ## Prior art, controls, and evidence boundary
 
 Multiplicative propagation of a balanced prime primitive is already
@@ -242,11 +388,24 @@ input for (19) is the ordinary [PNT](https://dlmf.nist.gov/27.12)
 (MC-S89). No new orthogonality, summation-by-parts, prime-counting,
 or external novelty claim is made.
 
+[Lewko–Lewko, Theorem 1](https://arxiv.org/html/1106.0871v2#S1)
+(MC-S96) states the classical Rademacher–Menshov maximal inequality.
+The proof of (24) supplies its needed finite variant directly, since
+prescribing prime values destroys orthogonality of some integer
+coefficients. The probability upgrade uses only that dyadic argument,
+the second-moment estimate, Markov's inequality and the pathwise
+isolation (25). MC-118 already selects a small random background at
+a prime primitive; here the same strategy isolates its replica in
+empirically centered windows and controls the whole scale band on
+one event. No new concentration theorem is claimed.
+
 The limitations are consequential:
 
-* The expectation is over the free prime signs. It does not rule out
-  favorable realizations with smaller energy, and supplies no lower
-  probability or almost-sure bound for that energy.
+* The expectation and probability are over the free prime signs.
+  Equation (21) does not rule out exceptional realizations with
+  smaller energy. It is useful only when its displayed error is
+  small; arbitrary balanced sign orders need not meet that condition.
+  No almost-sure statement across growing prescribed blocks follows.
 * The observation band is comparable to one isolated source block.
   The condition \(Q_0<Y\) is sufficient to remove all older divisors
   from the isolated profile. No such isolation is proved for an
@@ -263,11 +422,12 @@ The limitations are consequential:
   localized contribution. The result does not contradict MC-538,
   improve Möbius estimates, or establish optimal sampling for RH.
 
-The remaining route must control the actual signed background in a
-chosen realization, pay to remove the coherent replicas, or prove
-additional interactions between non-isolated blocks. Simply replacing
-arbitrary weights by intervals and fitting their means does not give
-a uniformly small expected energy in this admissible class.
+The remaining route must select exceptional backgrounds that cancel
+the replicas, pay to remove them, or prove additional interactions
+between non-isolated blocks. Simply replacing arbitrary weights by
+intervals and fitting their means gives neither uniformly small
+expected energy nor typically small energy for the isolated ordered
+blocks in this admissible class.
 
 Exact finite checks used three actual prime blocks at source scales
 100, 240 and 1,000, all 28 balanced sign patterns on those blocks,
@@ -285,3 +445,20 @@ asymptotic consequence (19).
 No Lean verification or independent adversarial approval is asserted.
 The finite orthogonality/translation calculation alone does not
 currently justify a separate formalization handoff.
+
+Additional exact-integer checks for (24)–(29) used prime blocks
+\(\{269,271\}\), \(\{1069,1087,1091,1093\}\), and
+\(\{2671,2677,2683,2687,2689,2693\}\) at scales 200, 800,
+and 2,000, all 28 balanced sign orders, and old sets empty, {2},
+and {2,5,7} with every sign assignment. Four free primes
+{3,11,13,17} were exhaustively averaged; other nonprescribed primes
+inside the horizon were zeroed. The audit checked 22,656 full-band
+scale/channel geometries, 9,371,120 dyadic blocks over 33 background
+ensembles, and 3,015,936 pointwise entries of (25) in 29,568
+realization/scale/channel cases. It also checked the exact pairing,
+its error bound and the centered Cauchy–Schwarz inequality. These
+small examples check identities and maximal-bound bookkeeping;
+their maximal-event thresholds did not give a nonvacuous probability
+test. The vanishing error in (30) is an analytic consequence of the
+proved estimates, not a numerical extrapolation. The classical
+maximal estimate does not add a separate formalization target.

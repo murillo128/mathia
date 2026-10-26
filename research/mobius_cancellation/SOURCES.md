@@ -592,3 +592,9 @@ Role: classical orthonormality of distinct products of independent Rademacher si
 Adam J. Harper, Kannan Soundararajan and Max Wenqiang Xu, *Distribution of random multiplicative functions in short intervals, with proper normalization*, arXiv:2606.29040v1 (2026), Section 2, equation (2.1). https://arxiv.org/html/2606.29040v1#S2.
 
 Role: primary prior art for expressing conditional interval variance as a sum of squared inner sums grouped by the unconditioned prime part. MC-542 proves its prescribed-sign Rademacher specialization and isolates a balanced prime replica that survives empirical centering. The paper's Steinhaus limiting distribution and conditional-variance concentration theorems are not imported; neither the grouping principle nor a general new moment theorem is claimed.
+
+## MC-S96 — Lewko–Lewko, classical Rademacher–Menshov maximal bound
+
+Allison Lewko and Mark Lewko, *Estimates for the square variation of partial sums of Fourier series and their rearrangements*, Journal of Functional Analysis 262 (2012), no. 6, 2561–2607, Theorem 1 (Rademacher–Menshov). DOI: https://doi.org/10.1016/j.jfa.2011.12.007. Author manuscript: https://arxiv.org/html/1106.0871v2#S1.
+
+Role: classical logarithmic maximal partial-sum bound and its dyadic proof mechanism. MC-542 derives the finite variant for an auxiliary multiplicative ensemble with prescribed old primes, then uses it to make the balanced-replica centered-energy floor simultaneous across a comparable-scale band with high probability. Neither a new maximal inequality nor the paper's stronger variation estimates are claimed or imported.
