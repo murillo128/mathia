@@ -586,3 +586,9 @@ Role: primary prior art for disjoint-support fooling functions and randomized in
 Ryan O'Donnell, *Analysis of Boolean Functions*, Cambridge University Press (2014), Theorem 1.5; author's May 2021 edition: https://www.cs.cmu.edu/~odonnell/papers/Analysis-of-Boolean-Functions-by-Ryan-ODonnell.pdf. https://arxiv.org/abs/2105.10386.
 
 Role: classical orthonormality of distinct products of independent Rademacher signs. MC-541 groups coefficients by their unprescribed prime part, derives the exact uncentered and centered moment norms, and uses their attaining vectors to prove a scale-separation boundary for MC-538's uniform weighted-moment method. Neither a new orthogonality principle nor an interval-specific lower bound is claimed.
+
+## MC-S95 — Harper–Soundararajan–Xu, conditional interval variance
+
+Adam J. Harper, Kannan Soundararajan and Max Wenqiang Xu, *Distribution of random multiplicative functions in short intervals, with proper normalization*, arXiv:2606.29040v1 (2026), Section 2, equation (2.1). https://arxiv.org/html/2606.29040v1#S2.
+
+Role: primary prior art for expressing conditional interval variance as a sum of squared inner sums grouped by the unconditioned prime part. MC-542 proves its prescribed-sign Rademacher specialization and isolates a balanced prime replica that survives empirical centering. The paper's Steinhaus limiting distribution and conditional-variance concentration theorems are not imported; neither the grouping principle nor a general new moment theorem is claimed.
