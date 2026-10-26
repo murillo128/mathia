@@ -1,7 +1,7 @@
 ---
 id: CLUE-prime-lattice-prime-supported-every-scale-hidden-dispersion
 type: research-clue
-status: proposed
+status: resolved
 origin: master-researcher
 target_line: prime_lattice
 based_on:
@@ -126,3 +126,19 @@ formula. Even a positive answer would prove no RH/GRH statement, optimal
 actual-prime sampling rate, small prime energy, fixed signed pole test
 on every scale, or lower bound for an estimator accumulating observations
 from other scales. The actual energy estimate remains a separate problem.
+
+## Research disposition
+
+Outcome: supported
+
+Resolved by:
+- [[research/prime_lattice/findings/PL-485-prime-supported-perturbations-hide-every-scale-dispersion]]
+
+Deterministic maximal-capacity prime packets in disjoint proportional
+search intervals realize the requested positive reweightings. Geometric
+placement supplies an isolated complete packet in every large integer
+block for both lengths, giving perturbation dispersion
+`asymp X^(2kappa-1)`; summable endpoint-hit probabilities give eventual
+baseline-identical observations on the entire `ceil(k^s)` schedule.
+The result concerns perturbation dispersion and transfers no unproved
+small-energy ceiling from the baseline to either positive control.
