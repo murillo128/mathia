@@ -463,6 +463,8 @@ The same bounded-independent-variable inequality is used in MC-524 for nonidenti
 
 MC-536 applies the inequality to independent observation locations inside disjoint cells, with Möbius held fixed. Summable tail probabilities yield almost-sure recovery on all large integer scales; this supplies no arithmetic energy ceiling.
 
+MC-537 proves the nonnegative relative-lower-tail special case directly by exponential Markov. Pair differences and a separate bounded-jump range estimate transfer small sampled energy to complete mean absolute dispersion; sampling randomness does not randomize Möbius coefficients.
+
 ## MC-S76 — Bos–Ware and classical Legendre reproducing kernels
 
 Leonard Bos and A. F. Ware, *On the Uniqueness of an Orthogonality Property of the Legendre Polynomials*, Dolomites Research Notes on Approximation 11 (2018), 37–42. https://drna.padovauniversitypress.it/system/files/papers/BosWare_2018_UOP.pdf. Classical normalization and finite polynomial formulas: NIST Digital Library of Mathematical Functions, §§18.3 and 18.5, https://dlmf.nist.gov/18.3 and https://dlmf.nist.gov/18.5.
@@ -554,3 +556,9 @@ Role: classical PNT anchor for MC-535's count of selected primes in a fixed inte
 Nicolas Chopin and Mathieu Gerber, *Higher-order Monte Carlo through cubic stratification*, SIAM Journal on Numerical Analysis 62 (2024), no. 1, 229–247. DOI: https://doi.org/10.1137/22M1532287. Author manuscript: https://arxiv.org/html/2210.01554v2, Section 2.1, equation (5).
 
 Role: primary-paper exposition of Haber's classical one-uniform-point-per-cell estimator and its one-dimensional `q^(-3/2)` root-mean-square rate. MC-536 derives its discrete cell-integrated-weight variant, covariance bias, exact removal of fitted constants, and transfer to the paired Möbius pole test. No new quadrature rate or external novelty is claimed; the paper's higher-order estimators are not used.
+
+## MC-S91 — Maurer–Pontil, empirical variance-sensitive confidence bounds
+
+Andreas Maurer and Massimiliano Pontil, *Empirical Bernstein Bounds and Sample Variance Penalization*, Proceedings of COLT 2009, Theorem 4. Proceedings text: https://www.cs.mcgill.ca/~colt2009/papers/012.pdf. Author manuscript: https://arxiv.org/abs/0907.3740.
+
+Role: adjacent primary prior art for MC-537's use of small observed variance in a sampling guarantee. MC-537 derives its own nonnegative pair-difference estimate and bounded-jump control of the population range. It does not insert a random range into the cited theorem, import a learning guarantee, or claim a new concentration principle.
