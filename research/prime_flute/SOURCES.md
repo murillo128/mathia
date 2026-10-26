@@ -588,6 +588,22 @@ Relevant finding: PF-362; relevant local clue: CLUE-positive-width-transition-sc
 
 **Scope warning.** Directional energy is a lower bound for full Dirichlet energy. No actual prime-lattice near-match, globally shorted pant comparison, or spectral/RH consequence is imported from these capacity results or established by the transport control.
 
+## S36 — equal-arclength strip correspondence and coercive energy comparison
+
+**A. Papadopoulos and G. Théret**, *Shortening all the simple closed geodesics on surfaces with boundary*, Proceedings of the American Mathematical Society 138 (2010), 1775–1784. DOI: 10.1090/S0002-9939-09-10195-8.
+
+- https://arxiv.org/abs/0905.4661
+- Section 2, pp. 5–6 of the author manuscript: the equidistant-arc foliation of an ultraparallel strip induces the canonical isometry between its geodesic boundaries. This is the classical untrimmed equal-arclength correspondence.
+
+**L. Friedlander and M. Solomyak**, *On the Spectrum of the Dirichlet Laplacian in a Narrow Strip*, Israel Journal of Mathematics 170 (2009), 337–354. DOI: 10.1007/s11856-009-0032-y.
+
+- https://arxiv.org/abs/0705.4058
+- Section 3, equations (3.8)–(3.11): related quadratic-form treatment of mixed derivative terms against a coercive diagonal form. Its spectral asymptotic theorem is not used.
+
+Relevant finding: PF-363; relevant local clue: CLUE-positive-width-transition-schur-complement.md. The finding interpolates PF-235's two inverse hypercycle boundary maps across PF-231's strip, prices the additional shear using PF-232's energy scales, and proves a coupled actual-pant lower bound in the inherited cuff coordinates. S34 concentration and S31 scalar residual algebra then give a lower certificate against all symmetric transition trials.
+
+**Scope warning.** The two-sided local comparison retains tangential and mass energy. Only its lower bound transfers to the difference-only network and the full pant. No matching upper trial at the shorted scale, antisymmetric elimination, completed-angle conclusion, or RH consequence is supplied by these sources or by PF-363.
+
 ## Provenance policy for future additions
 
 For each future finding, record separately:
