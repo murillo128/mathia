@@ -432,3 +432,10 @@ AF-588 proves the fixed-profile deficit `kappa_r (m/lambda) log B/B^2`, with `m`
 - The prime-zeta regular-part sources above support the endpoint derivative bounds. AF-583 supplies whole-ray normalized-profile convergence; AF-586 supplies the exact endpoint-curvature certificate. AF-589 independently derives a compact-source, gap-uniform relative estimate rather than subtracting individual inverse-response errors.
 
 AF-589 proves that when `log B/log p -> tau in (0,infinity)`, the sharp deficit coefficient is `F(tau)=exp(B_1) E_1^(-1)(P(1+2tau))/(2tau)`, uniformly in the larger edit label. Its endpoint limits are the two AF-588 constants, but `F(1/2)<exp(B_1) log 2`, so the transition is nonmonotone. This also determines the minimum-range constant for polynomially small target losses. No uniform supercritical joint limit, general approximation priority, ordinary-prime discriminator or RH claim is made.
+
+## AF-590 — Uniform recovery limit for superpolynomial windows
+
+- DLMF §6.12, equation (6.12.1), and §3.11(i), and Shadrin §1.4, anchored above, supply the classical exponential-integral, minimax and affine-Chebyshev background. AF-583 supplies gap-uniform peak normalization and whole-ray profile convergence; AF-586 supplies the constrained-curvature certificate; AF-589 supplies the compact-source lower envelope. The large-exponent source estimate is derived directly from positive Dirichlet-series comparisons.
+- Wu--Yang, *Polynomial methods in statistical inference: theory and practice*, §§2.1--2.2 and 3.3, and Dette--Titoff, *Optimal discrimination designs*, Theorem 2.1, supply the approximation/moment-matching and discrimination comparisons. They are not invoked as the joint source-tail theorem.
+
+AF-590 proves the normalized deficit coefficient `exp(B_1) log 2` along every joint path `p->infinity`, `log B/log p->infinity`, uniformly over larger prime edit labels. Its logarithmic estimate remains valid when the fixed-pair relative tail equivalent fails, with no upper limit on tail depth relative to the edit location. The result fixes calibration degree and does not imply an ordinary-prime discriminator or RH.
