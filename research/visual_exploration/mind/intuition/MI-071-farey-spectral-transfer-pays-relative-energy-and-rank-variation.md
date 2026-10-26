@@ -50,4 +50,18 @@ On the same full mode index set, `TV(pi(v),pi(a))=L/T` and `TV(pi(y),pi(a))<=min
 
 The first `q` even modes equal the full cutoff `2q` for `y` and `a`, **not for raw `v`**. Applying the original full-band bound at `2q<N` still gives `R/(4q)` in the tail estimate for `y`, with its original `sqrt(E/T)` error. Unreflected controls require the full basis; a projected transport is an analysis vector, not another admissible reassembled grid.
 
+[VIS-467](../../findings/VIS-467-vanishing-stitch-parity-dominates-farey-high-bands.md) shows that the vanishing global leakage is **leading-order inside a fixed high band**. In the four-defect family, `N` is even, `b=1/(2p)`, and raw `v_k` equals `b` on `2<=k<=N/2-1`, `-b` on `N/2+2<=k<=N-1`, and zero elsewhere. For fixed `0<alpha<1`, let `B=B_alpha={m:alpha<=m/N<1}` and let `pi^B` normalize by energy inside `B`. Separate sine sums in the four mode residue classes give weak limits of finite intensity measures, with `delta_x` the point mass at `x`:
+
+`N sum_(m in B_alpha, odd) pi_m(v) delta_(m/N) -> dx`,
+
+`N sum_(m in B_alpha, even) pi_m(v) delta_(m/N) -> g(x) dx`, `g(x)=2 cos^2(pi x) cot^2(pi x/2)` on `[alpha,1]`.
+
+Put `M(alpha)=1-alpha+int_alpha^1 g(x) dx`. For sufficiently large `N` both band energies are positive. Since `a` keeps precisely the even coefficients of `v`, disjoint parity support gives
+
+`TV(pi^B(v),pi^B(a))=pi^B(v)(odd) -> (1-alpha)/M(alpha)`.
+
+At `alpha=1/2` this is `pi/(16-4pi)=0.914948...`, although globally the distance is only `1/(N-4)`. For the full reassembled `y`, exact antisymmetry gives `TV(pi^B(y),pi^B(v))>=pi^B(v)(odd)` whenever its band law exists. This is a lower bound, not an identification of the even spectra of `y` and `a`. The band energies are `||Pi_B v||^2 ~ b^2 M(alpha)` and `||Pi_B s||^2 ~ b^2(1-alpha)`: both are of order `p^(-2)`, while `T` is of order one.
+
+After the stitch projection, the sufficient transfer condition from [VIS-450](../../findings/VIS-450-projected-parity-transfer-sharpens-farey-gate.md) is instead `||Pi_B Q_- P_sigma D||^2 / ||Pi_B a||^2 -> 0`, where `Q_-=(I-J)/2` uses the rank-reversal operator defined above. The global corrected ratio `(E-L)/(T-L)` cannot replace this band ratio. All high-band limits keep `alpha` fixed before `N->infinity`; they give no uniform shrinking-band limit. This realizes the conditioning obstruction within the actual excursion control, without asserting an anomaly of the genuine Farey spectrum.
+
 This is a one-sided criterion on artificial labeled-edge reassemblies. Genuine Farey order has `T=0`, outside the normalized transport comparison. Neither exact recovery of a reassembly nor bounded transport roughness proves suppression in the genuine Farey spectrum; a source-natural comparator still needs its own band normalization.
