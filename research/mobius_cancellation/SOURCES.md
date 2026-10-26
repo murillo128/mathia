@@ -75,6 +75,8 @@ Hugh L. Montgomery and Robert C. Vaughan, *Multiplicative Number Theory I: Class
 
 Role: classical square-free counting anchor for `MC-004`. The exercise records `Q(x)=(6/pi^2)x+R(x)` for the number of square-free integers and derives an error stronger than `O(sqrt(x))`. The weaker elementary form `Q(x)=(6/pi^2)x+O(sqrt(x))` is sufficient to show that an interval of length `x/log x` contains asymptotically `(6/pi^2)x/log x` square-free integers.
 
+MC-534 uses only this elementary density estimate on one fixed proportional interval and includes its proof. No density theorem for the individual gaps between sampled endpoints is needed.
+
 ## MC-S13 — Matomäki, Radziwiłł and Tao, averaged Chowla
 
 Kaisa Matomäki, Maksym Radziwiłł and Terence Tao, *An averaged form of Chowla's conjecture*, Algebra & Number Theory 9 (2015), no. 9, 2167–2196. DOI: https://doi.org/10.2140/ant.2015.9.2167. arXiv: https://arxiv.org/abs/1503.05121.
@@ -519,8 +521,16 @@ Ilya Baran, Erik D. Demaine and Dmitriy A. Katz, *Optimally Adaptive Integration
 
 Role: classical provenance for MC-533's sample-gap recovery cost. Lipschitz envelopes bound integral uncertainty between samples by a quadratic gap expression. MC-533 proves its discrete coverage weights, distance sum, and generic sharpness directly, then applies them to the existing paired Möbius pole test; no new quadrature principle is claimed.
 
+MC-534 applies the same indistinguishable-envelope principle to a common coefficient primitive. Its square-free sign bridges match all observed interval endpoints and retain a fixed signed smooth pairing; this is a derived observation-boundary control, not a new integration principle.
+
 ## MC-S86 — Verjovsky, local Fourier moment criteria for RH
 
 Alberto Verjovsky, *How Random Is the Möbius Function? Smoothing, Probability, and the Riemann Hypothesis*, arXiv:2607.25002v2 (2026), Sections 4 and 9–11. https://arxiv.org/html/2607.25002v2. Preprint; used as a prior-art comparison, not as an arithmetic input.
 
 Role: comparison for MC-533's observation criterion. The preprint states RH-equivalent local moments on Fourier arcs of scale `1/N` and derives a moment-to-point-value bound from derivative control. MC-533 instead uses physical-start second moments of two macroscopic windows and the already persisted reciprocal-pole certificate. The comparison supports no external novelty claim.
+
+## MC-S87 — Krieg–Vybíral, classical indistinguishable-input integration bounds
+
+David Krieg and Jan Vybíral, *New Lower Bounds for the Integration of Periodic Functions*, Journal of Fourier Analysis and Applications 29, article 41 (2023), Section 2.1. DOI and open text: https://doi.org/10.1007/s00041-023-10021-7.
+
+Role: explicit primary discussion of the classical construction of functions invisible at observation points but with a large integral. MC-534 uses this as prior-art provenance for its lower-bound method, while deriving its own discrete square-free sign realization, interval-endpoint constraints, and signed target separation. The paper's Hilbert-space lower bounds and Schur-product results are not imported.
