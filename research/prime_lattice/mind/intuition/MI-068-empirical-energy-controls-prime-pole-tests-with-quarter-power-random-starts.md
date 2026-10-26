@@ -50,4 +50,22 @@ The same noncancelling prime pole test forces `D_1(X)+D_2(X)>>_rho X^beta` on ev
 
 The channel carrying dispersion may change with scale. The union event suffices, and its lower probabilities have divergent sum at `X_k=k^4`, since `2(1-beta)<1`. Independent repetition and a countable intersection over zeros and rational exponents give infinitely many exceedances on one probability-one event. On it, joint mod-5 GRH is equivalent to `V_i(k)<<_(epsilon,omega) X_k^(1+epsilon)` for both channels and every epsilon along **every sufficiently late prescribed scale**. The converse is the separate pointwise prime-counting estimate above and holds for every draw outcome. No ceiling is proved.
 
-Any fixed increasing scale sequence with `sum_k X_k^(-d)=infinity` for every `0<d<1/4` also works: choose `d` strictly between `(1-beta)/2` and `1/4` to absorb the prime logarithm. This sufficient coverage condition matches the Möbius result without importing its reciprocal-pole multiplicity factor. A favorable post-selected unbounded subset or arbitrary dependence across scales does not inherit the argument. PL-483's positive controls only match unknown baseline energies on geometric scales; MC-540's every-scale square-free sign control is a different source class. Neither proves sharpness of fourth-power coverage for the exact prime source.
+Any fixed increasing scale sequence with `sum_k X_k^(-d)=infinity` for every `0<d<1/4` also works: choose `d` strictly between `(1-beta)/2` and `1/4` to absorb the prime logarithm. This sufficient coverage condition matches the Möbius result without importing its reciprocal-pole multiplicity factor. A favorable post-selected unbounded subset or arbitrary dependence across scales does not inherit the argument.
+
+[PL-485](../../findings/PL-485-prime-supported-perturbations-hide-every-scale-dispersion.md) extends the positive prime-support control to **every-block perturbation dispersion**. Fix `s>4` and `3/4<kappa<1-1/s`. There are fixed `b^+=a+d`, `b^-=a-d`, with `|d_n|<=a_n/2`, modifications only at actual primes, and one prefix `F(x)=sum_(n<=x)d_n=O(x^kappa)`. Both sources retain the leading PNT and the unchanged higher prime-power coefficients. For the two lengths above and `I_X={X,...,2X-1}`, put
+
+`U_i(j)=F(j+L_i)-F(j)`,
+
+`D_i^d(X)=X^(-2)sum_(j,r in I_X)|U_i(j)-U_i(r)| asymp X^(2kappa-1)`
+
+for both channels at **every sufficiently large integer** `X`. The dispersion here belongs to the perturbation, not to either positive source separately.
+
+The prime-capacity packets above can be placed in search intervals `(c_m,1.01c_m]`, `c_m=floor((3/2)^m)`, each with width `O(c_m^kappa)` and area `asymp c_m^(2kappa)`. Coarse PNT selects a rich cell and the sieve upper bound spreads its capacity; no lower prime count in a prescribed short interval is assumed. Every large `I_X` contains a complete packet `J_m` whose translate by either `L_i` misses all packets. On `J_m`, `U_i=-F_m`; on a set `G_i` of `X-O(X^kappa)` other starts, `U_i=0`. Thus
+
+`D_i^d >= 2|G_i| sum_(j in J_m)F_m(j)/X^2 >> X^(2kappa-1)`.
+
+The matching upper bound uses support size `O(X^kappa)` and amplitude `O(X^kappa)`. Each packet returns its prefix to zero, so this is one compatible coefficient pair across all overlapping scales.
+
+Couple two uniform starts per channel for `b^+`, `b^-` and `a` at `X_k=ceil(k^s)`. The chance that any sampled endpoint sees the perturbation is `O(X_k^(kappa-1))`, whose sum converges. Hence all sampled window values, and their centered energies, eventually agree exactly almost surely. Uniform marginal laws suffice for this direction, even with dependence across scales. The same sources work on any prescribed sequence with `sum_k X_k^(kappa-1)<infinity`.
+
+Their common energy is still the **unknown exact-prime baseline energy**. No low-energy conclusion, every-scale dispersion floor for either `b^+` or `b^-`, or fixed signed pole-isolating test on every scale follows. At `s=4` the strict interval for `kappa` is empty. Positive relative weights, exact prime support, leading PNT and common-source compatibility therefore do not remove the faster-schedule hidden-perturbation mechanism; optimal sampling for the canonical Mangoldt source remains unresolved.

@@ -36,7 +36,25 @@ The mechanism is a balanced prime-sign bridge in one cell of width `X_k^kappa`: 
 
 Old prescribed primes do have composite copies. If there are `r_k` old primes, the random multiplicative background pays the finite second-moment factor `C_k=2^r_k`. Choose the next scale large enough that `C_k` is absorbed by `X_k^(1/k)` and that the background cannot cancel the bridge. A countable union bound fixes one successful global sign assignment; lacunarity makes subsequent endpoint-hit and background-energy failures summable. The observed source does not change with the scale or sample seed.
 
-This obstruction needs neither sample-adapted signs nor a fresh nonmultiplicative tent at every scale. It does need sparse scales and permits `f(p)=+1`; it lacks Möbius's prime-sign law and reciprocal-zeta identity. It proves no dense-scale failure, no failure at exponent `1/4`, and no lower bound for actual Möbius or a different sampling design. The matching prime-source recovery and its different pole input are compared in [global MI-040](../../../mind/intuition/MI-040-paired-box-inversion-transports-trimmed-mobius-pole-tests.md).
+[MC-541](../../findings/MC-541-optimal-prescribed-prime-moments-still-force-lacunarity.md) identifies the sharp replacement for that crude factor. Let `A` be the prescribed primes with signs `b_p`, `Z` the disjoint zeroed primes, and all other prime signs independent Rademachers. Extend multiplicatively on square-free integers and set nonsquare-free values to zero. Write `Q_A=product_(p in A)p`, `b(d)=product_(p|d)b_p`, `D_A(t)=#{d|Q_A:d<=t}`, and let `q_0` be the smallest prime outside `A union Z`. For deterministic complex weights on `1,...,N`, allowed to depend on the prescribed signs but not the free signs, put `T_v=sum_(n<=N)v_ng(n)`. Then
+
+`sup_(v!=0) E|T_v|^2 / sum|v_n|^2 = D_A(N)`,
+
+`sup_(v!=0) E|T_v-E T_v|^2 / sum|v_n|^2 = D_A(N/q_0)`.
+
+The decomposition `n=dm` into prescribed divisor and free square-free part gives
+
+`E|T_v|^2 = sum_m |sum_(d|Q_A, d<=N/m)b(d)v_(dm)|^2`.
+
+Each free part is one orthogonal signed rank-one block of size `D_A(N/m)`. Ensemble centering deletes only `m=1`; the `m=q_0` block remains, attained by `v_(q_0 d)=b(d)`. This is not centering over sampled window starts. Balanced signs cannot improve the uniform weighted norm: the weights can align with them. With `Z` empty, even balanced sets `A subset (Y,2Y]` with `|A| asymp Y^kappa` have `sum_(p in A)1/p ->0` but both norms `1+|A|` at `N=4Y` for large `Y`, since `q_0=2` and products of two prescribed primes exceed the horizon.
+
+In MC-538, `A=A_(<k)`, `Z=P_k`, `q_0=2`, and the preceding block contributes `|P_(k-1)| >> X_(k-1)^kappa/log X_(k-1)` single-prime divisors below `N_k/2`. Requiring even the optimal factor to be at most `X_k^eta_k`, `eta_k ->0`, forces
+
+`log X_k / log X_(k-1) >= (kappa-o(1))/eta_k -> infinity`.
+
+Thus optimizing the uniform moment constant or removing just the expectation cannot densify this construction. The extremizers are sign-aligned divisor fibres, generally not interval or fixed smooth weights. The result supplies no lower bound on the actual background window energy and does not exclude a dense multiplicative construction using cancellation in those particular inner sums or a different selection argument.
+
+MC-538's sampling obstruction needs neither sample-adapted signs nor a fresh nonmultiplicative tent at every scale. It does need sparse scales and permits `f(p)=+1`; it lacks Möbius's prime-sign law and reciprocal-zeta identity. It proves no dense-scale failure, no failure at exponent `1/4`, and no lower bound for actual Möbius or a different sampling design. The matching prime-source recovery and its different pole input are compared in [global MI-040](../../../mind/intuition/MI-040-paired-box-inversion-transports-trimmed-mobius-pole-tests.md).
 
 [MC-539](../../findings/MC-539-two-random-starts-detect-mobius-poles-on-fourth-power-scales.md) exchanges observations per scale for a stronger scale quantifier. For independent uniform indices `J,K` in a fixed length-`X` population with jumps at most `A`, let `p_T=Pr(|u_J-u_K|>T)`. The exact bound is
 
