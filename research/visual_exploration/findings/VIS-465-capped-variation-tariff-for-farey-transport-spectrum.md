@@ -1,4 +1,4 @@
-# VIS-448 — variation tariff for low-band Farey excursion transport
+# VIS-465 — capped variation tariff for low-band Farey excursion transport
 
 ## Exact claim and evidence
 
@@ -11,16 +11,23 @@ T(v)=\sum_{j=1}^{N-1}v_j^2>0,\qquad
 For the orthonormal Dirichlet sine coefficients
 \(\widehat v_m=\sqrt{2/N}\sum_{j=1}^{N-1}v_j\sin(\pi m j/N)\), let
 \(F_{\le q}(v)=T(v)^{-1}\sum_{m=1}^q|\widehat v_m|^2\),
-where \(1\le q<N\). Then **without any reflection, block count or asymptotic hypothesis**,
+where \(1\le q<N\). Define the nonnegative Abel majorant
+\[
+B_q(v)=\frac{V(v)^2}{2NT(v)}
+ \sum_{m=q+1}^{N-1}\csc^2\!\left(\frac{\pi m}{2N}\right).
+\]
+Then **without any reflection, block count or asymptotic hypothesis**,
 \[
 \boxed{\quad
 1-F_{\le q}(v)
-\le \frac{V(v)^2}{2NT(v)}
- \sum_{m=q+1}^{N-1}
-   \csc^2\!\left(\frac{\pi m}{2N}\right)
+\le \min\{1,B_q(v)\}
 \le \min\left\{1,\frac{\mathcal R_N(v)}{2q}\right\}.
 \quad} \tag{1}
 \]
+The uncapped majorant need not be at most one. The two independently
+proved facts are \(1-F_{\le q}(v)\le B_q(v)\) and
+\(1-F_{\le q}(v)\le1\); neither asserts \(B_q(v)\le1\).
+The empty sum at \(q=N-1\) is zero.
 
 For the actual denominator-\(p\) Farey excursion permutation of FD-320, write \(D_p^\sigma=P_\sigma D_p+v_p^\sigma\), \(E_p=\|D_p\|_2^2=o(1)\), \(T_p=\|v_p^\sigma\|_2^2\), and \(\mathcal R_p=\mathcal R_{N_p}(v_p^\sigma)\). Whenever \(T_p>0\) and \(D_p^\sigma\ne0\), VIS-447 and (1) imply
 \[
@@ -36,7 +43,7 @@ Thus \(E_p/T_p\to0\) and \(\mathcal R_p=o(q_p)\) suffice for \(F_{\le q_p}(D_p^\
 \mathcal R_p\ge 2q\left(\eta-\sqrt{E_p/T_p}\right).
 \quad} \tag{3}
 \]
-The condition \(E_p/T_p\to0\) is essential: an absolute small original Farey discrepancy need not control the normalized spectrum of vanishing transport.
+The relative-energy gate is a sufficient transfer condition: absolute smallness of the original Farey discrepancy alone need not control the normalized spectrum of vanishing transport.
 
 **Evidence/status:** EXACT-DERIVED + CLASSICAL BOUNDED-VARIATION FOURIER DECAY + FD-320/VIS-447 FAREY SPECIALIZATION + NECESSARY ROUGHNESS GATE. No novel general Fourier/BV theorem and no arithmetic or RH implication are claimed.
 
@@ -53,7 +60,10 @@ Consequently
 =\sqrt{\frac2N}|\operatorname{Im}G_m|
 \le\sqrt{\frac2N}\,\frac{V(v)}{2\sin(\pi m/(2N))}.
 \]
-Dirichlet Parseval yields the first inequality in (1). Since \(0<\pi m/(2N)<\pi/2\), concavity gives
+Summing the coefficient bounds and using Dirichlet Parseval gives
+\(1-F_{\le q}(v)\le B_q(v)\). Parseval also gives
+\(1-F_{\le q}(v)\le1\), so their minimum is the first inequality
+in (1). Since \(0<\pi m/(2N)<\pi/2\), concavity gives
 \(\sin(\pi m/(2N))\ge m/N\); also
 \(\sum_{m=q+1}^{\infty}m^{-2}\le1/q\).
 These show
@@ -62,7 +72,30 @@ These show
 \le\frac{NV(v)^2}{2T(v)}\sum_{m>q}\frac1{m^2}
 \le\frac{\mathcal R_N(v)}{2q}.
 \]
-The upper bound one is automatic because the left side is a spectral fraction. No continuum approximation, small-angle replacement, randomness or image measurement is used in the proof.
+The same calculation bounds the majorant itself by
+\(B_q(v)\le\mathcal R_N(v)/(2q)\). Monotonicity of
+\(x\mapsto\min\{1,x\}\) now proves the second inequality in (1).
+No continuum approximation, small-angle replacement, randomness or image
+measurement is used in the proof.
+
+The cap is essential even at the smallest nonempty tail. For
+\(N=3\), \(v=(1,-1)\) and \(q=1\),
+\[
+V=4,\quad T=2,\quad \mathcal R_3=24,\quad
+\widehat v_1=0,\quad\widehat v_2=\sqrt2.
+\]
+Thus
+\[
+1-F_{\le1}=1,\qquad
+B_1=\frac{16}{12}\csc^2(\pi/3)=\frac{16}{9}>1,
+\qquad \min\{1,B_1\}=1.
+\]
+This exact counterexample excludes any universal comparison of the
+uncapped \(B_q\) with the probability ceiling, while attaining equality
+in the capped tail bound. Scaling by any nonzero real constant, changing
+the global sign, or reversing rank order leaves \(V^2/T\) and the
+normalized sine energies unchanged, so the distinction is not an
+amplitude or orientation artifact.
 
 VIS-447 bounds the total-variation distance between the normalized sine energy distributions of \(D_p^\sigma\) and \(v_p^\sigma\) by \(\min\{1,\sqrt{E_p/T_p}\}\), simultaneously for all mode subsets. Apply it to the complementary high band \(m>q\) to obtain (2). If the observed high-band share is at least \(\eta\), rearrange its upper bound to obtain (3). No direct estimate of \(E_p/T_p\) is hidden in the roughness statistic.
 
@@ -103,10 +136,38 @@ For reflection-symmetric paths the odd sine coefficients vanish. VIS-032/VIS-034
 
 ## Falsification, geometric view and scope
 
-A finite check built the exact excursion gap-count blocks at primes \(101\) and \(211\), formed the FD-319 and FD-322 transports as well as randomly permuted complete excursions, and compared the full discrete sine energy tail with (1) for multiple cutoffs. No violation occurred. At \(p=211\), the reflected four-defect transport has \(\mathcal R_p\approx16.00470\) and \(F_{\le100}\approx0.9921822\); the unreflected three-defect transport has \(\mathcal R_p\approx31.99086\) and \(F_{\le100}\approx0.9825441\). An inspected high-resolution cumulative-spectrum comparison also shuffled the **coordinates** of the four-defect transport while preserving its coordinate-value multiset and total energy: the share fell to approximately \(0.01059\) at \(q=100\), while \(\mathcal R_p\) increased sharply. That shuffled vector is **not** an admissible Farey excursion null; it tests the importance of rank ordering, not arithmetic specificity. The image was an exploratory check, not proof or a retained evidence artifact.
+The exact two-coordinate counterexample above is the decisive check on
+where the cap belongs. Independent floating-point falsification evaluated
+all nonzero vectors in \(\{-1,0,1\}^{N-1}\) for \(2\le N\le9\)
+and every cutoff: 73,776 vector/cutoff cases. Direct sine-matrix
+multiplication agreed with Parseval, and the largest excess over either
+corrected capped inequality was below \(7\cdot10^{-16}\). Another
+62,592 vector/cutoff cases used 128 standard Gaussian vectors at each
+\(N\in\{16,31,64,127,256\}\), NumPy PCG64 seed 448465, and an
+orthonormal type-I discrete sine transform; no violation exceeded
+\(2\cdot10^{-12}\). These finite checks supplement the algebraic proof;
+they do not establish a universal inequality by sampling.
 
-The \(O(m^{-1})\) bounded-variation Fourier coefficient estimate is classical; compare Taibleson (1967) and Wu (1993), anchored in this line's SOURCES.md. Equation (1) is its elementary exact discrete Dirichlet-sine analogue. FD-320 provides the source-specific block decomposition and PNT-assisted \(E_p=o(1)\), while VIS-447 supplies the normalized full-spectrum transfer. The contribution here is the **variation-to-band quantitative test** on exact excursion transport, not a new harmonic-analysis theorem. VIS-032/VIS-034 supply the reflection-null normalizations that motivate the depletion question.
+Exact rational Farey grids at primes 101 and 211 independently supplied
+excursion gap counts, the reflected FD-319 permutation, the unreflected
+FD-322 permutation, and one complete-excursion random permutation per
+prime, continuing the same PCG64 stream after the Gaussian checks and
+processing the primes in ascending order. The transported vector, its exact rational variation/energy and
+its independently reconstructed grid discrepancy satisfied the block
+identity to floating-point precision. All full-mode cutoffs obeyed the
+capped transport bound and (2). At \(p=211\), \(N_p=13624\), the
+reflected transport has \(\mathcal R_p\approx16.00470\) and
+\(F_{\le100}\approx0.9921822\); the unreflected transport has
+\(\mathcal R_p\approx31.99086\) and
+\(F_{\le100}\approx0.9825441\).
+
+The paired [probability-cap visualization](../visualizations/sine-tail-probability-cap.md)
+shows the exact two-coordinate family and the reflected finite Farey
+transport. It records the mathematical construction and rendering
+parameters; the picture is supporting context, not the proof.
+
+The \(O(m^{-1})\) bounded-variation Fourier coefficient estimate is classical; compare Taibleson (1967) and [Wu (1993)](https://www.ams.org/proc/1993-117-03/S0002-9939-1993-1150658-3/), anchored in this line's SOURCES.md. Equation (1) is its elementary exact discrete Dirichlet-sine analogue. FD-320 provides the source-specific block decomposition and PNT-assisted \(E_p=o(1)\), while VIS-447 supplies the normalized full-spectrum transfer. The contribution here is the **variation-to-band quantitative test** on exact excursion transport, not a new harmonic-analysis theorem. VIS-032/VIS-034 supply the reflection-null normalizations that motivate the depletion question.
 
 This is a **one-sided** smoothness criterion, not a spectral classification: large \(\mathcal R_p\) allows, but does not force, high-frequency allocation, and it can overestimate oscillation through cancellation. A sublinear \(q\) alone does not guarantee the result when \(\mathcal R_p\) grows. Near-zero transport requires an independently proved \(E_p/T_p\) estimate. Genuine Farey order corresponds to zero permutation transport, so neither (2) nor (3) constrains its actual spectral allocation. A null-normalized ratio \(S_q=F_{\le q}/f_{\rm null}(q)\) additionally depends on that null's own expected spectral fraction; a false-positive claim cannot borrow the same-gap null denominator. No improved Franel–Landau bound, exceptional-height selector, or RH consequence follows.
 
-**Research consequence:** the accepted reflection-/transport-matched Farey clue now has a concrete additional control: compute \(\mathcal R_p\) from the exact block changes (4), verify the denominator gate \(E_p/T_p\), and compare it against the frozen cutoff \(q\). Any artificial excursion null whose ratio \(\mathcal R_p/q\) vanishes is incapable of reproducing persistent low-band depletion; a transport-dominated counterexample with low-band share bounded below one must have rank-variation roughness at least of order \(q\). A genuinely discriminating arithmetic test still requires a source-natural null and its independently normalized expected spectrum.
+**Research consequence:** the accepted reflection-/transport-matched Farey clue now has a concrete additional control: compute \(\mathcal R_p\) from the exact block changes (4), verify the denominator gate \(E_p/T_p\), and compare it against the frozen cutoff \(q\). Any artificial excursion null satisfying both \(E_p/T_p\to0\) and \(\mathcal R_p/q\to0\) is incapable of reproducing persistent low-band depletion; a transport-dominated counterexample with low-band share bounded below one must have rank-variation roughness at least of order \(q\). A genuinely discriminating arithmetic test still requires a source-natural null and its independently normalized expected spectrum.

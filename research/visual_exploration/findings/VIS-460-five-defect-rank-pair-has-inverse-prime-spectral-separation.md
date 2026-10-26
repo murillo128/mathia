@@ -97,7 +97,7 @@ to the sharper estimate below.
 Extend each vector by \(v_0=v_N=0\). Its number of jumps is bounded and
 every jump is \(O(p^{-1})\), so its endpoint-inclusive variation is
 \(V(v)=O(p^{-1})\). Discrete summation by parts, as explicitly derived in
-[VIS-448](VIS-448-variation-tariff-for-farey-transport-spectrum.md), gives
+[VIS-465](VIS-465-capped-variation-tariff-for-farey-transport-spectrum.md), gives
 \[
 |\widehat v_r|\le\sqrt{2/N}\frac{V(v)}{2\sin(\pi r/(2N))}
 \le\frac{\sqrt{N/2}\,V(v)}r\le C/r,
@@ -218,7 +218,7 @@ contraction are standard. A targeted comparison against index/neighbor,
 BV-Fourier and permutation-transport formulations supplies no basis for
 claiming a new general theorem in any of these areas.
 
-FD-329 already provides the raw energy difference. VIS-448 already provides
+FD-329 already provides the raw energy difference. VIS-465 already provides
 the variation estimate. Neither gives (2)–(3) for this equal-rank pair:
 the additional content is the boundary estimate (8) combined with its
 nonzero energy-normalization witness. It resolves this pair's spectral

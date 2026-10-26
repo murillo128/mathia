@@ -198,8 +198,8 @@ This file records durable external literature dependencies used to support or de
 
 ## Bounded-variation Fourier coefficient decay
 
-- Mitchell Taibleson, **Fourier coefficients of functions of bounded variation**, *Proceedings of the American Mathematical Society* 18 (1967), 766. DOI: `10.1090/S0002-9939-1967-0212477-6`. Role: classical bounded-variation Fourier coefficient decay, a prior-art boundary for the elementary discrete sine-tail estimate in `VIS-448`.
-- Jie Wu, **Coefficients de Fourier de fonctions à variation bornée**, *Proceedings of the American Mathematical Society* 117:3 (1993), 689–690. DOI: `10.1090/S0002-9939-1993-1150658-3`. Role: a simple proof of the already-known continuous `O(1/m)` BV Fourier bound; `VIS-448` specializes the discrete version to exact Farey excursion transport and derives an additional necessary roughness condition. `VIS-460` combines that discrete decay with an endpoint-localized perturbation estimate to prove inverse-prime spectral separation for FD-329's specific five-defect pair; no new general BV theorem is claimed.
+- Mitchell Taibleson, **Fourier coefficients of functions of bounded variation**, *Proceedings of the American Mathematical Society* 18 (1967), 766. DOI: `10.1090/S0002-9939-1967-0212477-6`. Role: classical bounded-variation Fourier coefficient decay, a prior-art boundary for the elementary discrete sine-tail estimate in `VIS-465`.
+- Jie Wu, **Coefficients de Fourier de fonctions à variation bornée**, *Proceedings of the American Mathematical Society* 117:3 (1993), 689–690. DOI: `10.1090/S0002-9939-1993-1150658-3`. Role: a simple proof of the already-known continuous `O(1/m)` BV Fourier bound; `VIS-465` specializes the discrete version to exact Farey excursion transport and derives an additional necessary roughness condition. `VIS-460` combines that discrete decay with an endpoint-localized perturbation estimate to prove inverse-prime spectral separation for FD-329's specific five-defect pair; no new general BV theorem is claimed.
 
 ## Bernoulli Fourier identity for parity-resolved step spectra
 
