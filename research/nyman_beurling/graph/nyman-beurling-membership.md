@@ -375,3 +375,4 @@ This stable projection inventories every current canonical Nyman–Beurling find
 - [[research/nyman_beurling/findings/NB-366-brjuno-is-the-exact-generic-third-orbit-completion-threshold|NB-366]]
 - [[research/nyman_beurling/findings/NB-367-third-orbit-failure-has-exact-half-dimensional-size-at-minimal-type|NB-367]]
 - [[research/nyman_beurling/findings/NB-368-cubic-logarithmic-seeds-give-deterministic-finite-energy-target-completion|NB-368]]
+- [[research/nyman_beurling/findings/NB-369-critical-return-energy-makes-three-orbit-lattice-truncation-logarithmically-sharp|NB-369]]

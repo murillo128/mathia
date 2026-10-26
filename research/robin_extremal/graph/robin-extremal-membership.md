@@ -278,3 +278,4 @@ This stable projection inventories every current canonical Robin Extremal findin
 - [[research/robin_extremal/findings/RE-269-total-prime-spread-controls-positive-robin-excursions-for-arbitrary-packet-size|RE-269]]
 - [[research/robin_extremal/findings/RE-270-four-prime-balanced-integer-repairs-can-have-a-negative-counting-primitive|RE-270]]
 - [[research/robin_extremal/findings/RE-271-one-unit-counting-surplus-forces-nonnegative-primitives-for-arbitrary-subdyadic-repairs|RE-271]]
+- [[research/robin_extremal/findings/RE-272-prime-chain-triples-attain-the-first-negative-primitive-at-unit-counting-budget|RE-272]]

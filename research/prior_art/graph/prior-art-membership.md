@@ -88,6 +88,7 @@ This is a purely structural corpus projection. A link here means only that the t
 - [[research/prior_art/incremental/PA-polynomial-interpolation-early-termination]]
 - [[research/prior_art/incremental/PA-randomized-integration-unsolvability-on-unrestricted-smooth-functions]]
 - [[research/prior_art/incremental/PA-randomized-zeta-critical-gmc-boundary]]
+- [[research/prior_art/incremental/PA-rational-entropy-self-power-identity]]
 - [[research/prior_art/incremental/PA-resultant-potential-theory-on-compact-riemann-surfaces]]
 - [[research/prior_art/incremental/PA-rh-reciprocal-zeta-subpower-bound]]
 - [[research/prior_art/incremental/PA-riemann-primon-gas]]

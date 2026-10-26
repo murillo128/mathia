@@ -39,6 +39,8 @@ This is a derived Obsidian hub. Canonical findings and `mind/` remain authoritat
 
 - [[research/arithmetic_fidelity/graph/relations/euler-harmonic-collision-budget|Euler harmonic collision budget]]
 
+- [[research/arithmetic_fidelity/graph/relations/endpoint-jet-category-and-crossover-shape|Endpoint-jet category and crossover shape]]
+
 ## Current source frontier
 
 AF-071--AF-077 replace per-scale existence by a coherent compactness theory: compact transversals, precompact witness pools, width decay and a canonical compact disk characterize whether witnesses survive the limit. AF-078--AF-081 then split quotient repair by category: bounded linear, equivariant and order-compatible repairs have exact splitting/naturality gates, while uniformly convex metric repair gives a canonical nonlinear minimum-norm section even when linear splitting fails.

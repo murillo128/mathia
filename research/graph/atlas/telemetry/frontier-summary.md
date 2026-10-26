@@ -2,7 +2,7 @@
 id: RA-frontier-telemetry-v1
 type: riemann-atlas-frontier-telemetry
 atlas_version: 1
-prospective_source_cutoff: 4d169608b45b232c68af16844d7434636299028a
+prospective_source_cutoff: 67319d8a8695f0955a4fcfd31e91e199ad74c78b
 derived: true
 ---
 
@@ -96,6 +96,10 @@ The finite-test obstruction is retained as its own episode. Reference formatting
 
 The retained window contains eight viable extensions, ten barriers and two prior-art collisions. Atlas masses and states remain unchanged; the window is selective, not a representative productivity sample.
 
+## Rational finite-jet precision boundary
+
+[[research/arithmetic_fidelity/graph/relations/endpoint-jet-category-and-crossover-shape|The endpoint-jet mechanism]] adds one `new-barrier` episode for rational finite-precision control of crossover shape. AF-593 preserves exact reciprocal mass while approximating each fixed finite nonconstant endpoint jet arbitrarily closely and retaining arbitrarily many separated minima. Its integer rigidity theorem does not extend to signed rational valuations; the exact rational feasibility question remains open. The finite Euler factor preserves the nontrivial zero divisor. No bound on denominators, edit count or range is supplied. Classical entropy registration and graph maintenance add no episodes; no exact Atlas leaf is assigned.
+
 ## Retained prospective window
 
 Classifiable episodes: **20**. Insufficient-evidence episodes: **0**. Retrospective episodes: **0**.
@@ -115,12 +119,12 @@ Classifiable episodes: **20**. Insufficient-evidence episodes: **0**. Retrospect
 
 | Line | Episodes | Viable extension | Barrier | Prior art | Duplicate |
 | --- | ---: | ---: | ---: | ---: | ---: |
-| `arithmetic_fidelity` | 4 | 2 | 2 | 0 | 0 |
+| `arithmetic_fidelity` | 5 | 2 | 3 | 0 | 0 |
 | `farey_discrepancy` | 3 | 1 | 2 | 0 | 0 |
 | `mobius_cancellation` | 4 | 2 | 1 | 1 | 0 |
 | `prime_lattice` | 5 | 3 | 2 | 0 | 0 |
 | `visual_exploration` | 1 | 0 | 1 | 0 | 0 |
 | `weil_positivity` | 1 | 0 | 0 | 1 | 0 |
-| `xi_flow` | 2 | 0 | 2 | 0 | 0 |
+| `xi_flow` | 1 | 0 | 1 | 0 | 0 |
 
 Per-line samples are the retained entries, capped at ten; small and selectively inspected samples do not establish trends. No rate alone supports a research-allocation decision.

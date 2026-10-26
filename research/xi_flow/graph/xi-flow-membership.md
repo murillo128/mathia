@@ -217,3 +217,4 @@ This stable projection inventories every current canonical Xi Flow finding. Link
 - [[research/xi_flow/findings/XF-207-complex-value-queries-retain-the-analytic-calibration-stopping-obstruction|XF-207]]
 - [[research/xi_flow/findings/XF-208-smooth-tapers-do-not-uniformize-vanishing-collision-coverage|XF-208]]
 - [[research/xi_flow/findings/XF-209-covered-edge-spikes-have-vanishing-fixed-time-total-variation|XF-209]]
+- [[research/xi_flow/findings/XF-210-separated-pair-clouds-in-sublinear-edge-layers-have-vanishing-adverse-variation|XF-210]]

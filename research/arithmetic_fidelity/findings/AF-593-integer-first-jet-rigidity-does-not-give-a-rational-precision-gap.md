@@ -250,7 +250,7 @@ in the replacement logarithmic moment is `-32/35`, so first derivatives
 do not match. These are exact valuation checks, not floating-point tests.
 
 The prime-log argument is elementary unique factorization. The normalized
-entropy interpretation and integer self-power reduction are classical:
+entropy interpretation and [[research/prior_art/incremental/PA-rational-entropy-self-power-identity|integer self-power reduction]] are classical:
 Tom Leinster, [*Entropy modulo a prime*](https://arxiv.org/abs/1903.06961),
 *Communications in Number Theory and Physics* **15** (2021), 279--314,
 §7, especially the proof of Theorem 7.2, equations (101)--(105), uses the
@@ -269,7 +269,7 @@ or density theorem is claimed.
 
 The mathematical delta is the contrast between exact integer rigidity and
 the absence of a positive rational finite-jet tolerance controlling the
-already constructed crossover shape. AF-591 did not match nonconstant
+already constructed crossover shape. [[research/arithmetic_fidelity/findings/AF-591-matched-prime-endpoints-admit-arbitrarily-many-crossover-minima|AF-591]] did not match nonconstant
 jets, and AF-592's exact repair allowed real generators. Neither alone
 stated this rational finite-precision boundary. The proof does not upgrade
 approximate rational matching to exact matching, or independent real-node
