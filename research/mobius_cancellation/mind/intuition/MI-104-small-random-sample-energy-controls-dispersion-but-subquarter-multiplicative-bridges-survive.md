@@ -123,9 +123,9 @@ throughout the band with probability `1-O_phi(Y^(-2delta+o(1)))`.
 It does not follow from expectation alone. These are finite-ensemble
 statements about complete energies, not all realizations, sparse sampled
 energies, actual Möbius sums, or one dense infinite multiplicative control.
-The remaining escape needs backgrounds paying the displayed deterministic
-cost, removal of the replica, or geometry outside its isolated multiplier
-band; no impossibility of such a construction has been established.
+This is a cost on the prime-deleted background, not on the full prefix.
+MC-544 below realizes the cost with deterministic cancellation without
+retaining a large full-source target.
 
 [MC-543](../../findings/MC-543-independent-block-orientations-cannot-suppress-every-prime-replica.md)
 excludes independent block orientations as a way to pay that cancellation
@@ -179,6 +179,66 @@ deterministic orientations and complements coordinated with them remain
 possible; independence is a new hypothesis, not a property of Möbius.
 Neither full smooth-target size nor sparse sampled energy follows from
 this selected-block target and complete-energy bound.
+
+[MC-544](../../findings/MC-544-fixed-character-backgrounds-cancel-balanced-prime-replicas.md)
+realizes an exceptional deterministic orientation in the full proportional
+band. Let `chi_4` be zero on even integers, one on `1 mod 4` and minus
+one on `3 mod 4`. Set `f(2)=1`, `f(p)=chi_4(p)` for odd primes, extend
+multiplicatively on square-free integers, and set `f(p^a)=0` for `a>=2`.
+Write `F(x)=sum_(n<=x)f(n)`. With
+`C_4(t)=sum_(n<=t)chi_4(n) in {0,1}`,
+
+\[
+U(x)=\sum_{n\le x}\mu(n)^2\chi_4(n)
+=\sum_{\substack{d\le\sqrt x\\d\ \mathrm{odd}}}
+\mu(d)C_4(x/d^2),\qquad F(x)=U(x)+U(x/2).
+\]
+
+Thus `|f|=mu^2`, `|F(x)|<=2sqrt(x)` and `V_L(X)<=64X` for **every**
+`1<=L<=X`. No cancellation in the outer sum over `d` is required.
+Choose equally many primes congruent to one mod four in
+`(4Y/3,17Y/12]` and to three mod four in `(19Y/12,5Y/3)`.
+Take the smallest `h_Y` primes in each, where the fixed-modulus PNT gives
+`h_Y~Y/(24log Y)`. Their union `P_Y` has balanced signs but
+
+\[
+T_Y=\sum_{p\in P_Y}f(p)p/Y<-h_Y/6.
+\]
+
+For `Y_k=2^k` the selected sets are disjoint and one fixed `f` works at
+all scales. With these primes zeroed to form `g_Y`, the deleted prefix
+at `floor(3Y/2)` is `G_Y=F-h_Y`, and its maximum through `7Y` is
+`asymp h_Y`. This pays exactly the background cost above.
+For the same replica test, put `Z_f=sum_j a_L(j)S_L(j)` and
+`Z_g=sum_j a_L(j)(G_Y(j+L)-G_Y(j))`. Then `E_L>=Yh_Y^2/128` and
+`f(3)=-1` give
+
+\[
+Z_g=E_L+Z_f,\quad |Z_f|\le8X\sqrt{E_L},\qquad
+Z_g/E_L=1+O(\log Y/\sqrt Y),
+\]
+
+uniformly over the observation band and both lengths. The complement
+cancels the selected replica `-E_L` asymptotically exactly. The all-positive
+block orientation is a probability-zero choice in MC-543's independent
+fair ensemble, so its almost-sure obstruction is unchanged.
+
+The decisive loss is already present before replication: partial summation
+of `F=O(sqrt x)` gives, for every fixed `phi in C^1([4/3,5/3])`,
+
+\[
+\sum_{4Y/3<n\le5Y/3}f(n)\phi(n/Y)=O_\phi(\sqrt Y).
+\]
+
+The omitted coefficients cancel the selected `Y/log Y` target. This
+settles deterministic background compatibility for broad selected blocks,
+not dense-scale full-source dispersion or MC-538's signed-target extension.
+Sublinear block widths are not covered. The control also agrees with a
+fixed character at all odd primes and violates `mu(p)=-1`; neither property
+is excluded by multiplicativity and square-free magnitude alone. A stronger
+transfer must retain a full-source target or add a justified restriction
+on the selector/source. This is supported synthesis of a classical
+character control, without a novelty or actual-Möbius bound claim.
 
 MC-538's sampling obstruction needs neither sample-adapted signs nor a fresh nonmultiplicative tent at every scale. It does need sparse scales and permits `f(p)=+1`; it lacks Möbius's prime-sign law and reciprocal-zeta identity. It proves no dense-scale failure, no failure at exponent `1/4`, and no lower bound for actual Möbius or a different sampling design. The matching prime-source recovery and its different pole input are compared in [global MI-040](../../../mind/intuition/MI-040-paired-box-inversion-transports-trimmed-mobius-pole-tests.md).
 

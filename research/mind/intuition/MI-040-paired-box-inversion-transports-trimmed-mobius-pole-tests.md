@@ -333,10 +333,27 @@ profile. Independent orientations almost surely cannot keep the complete
 replica energies at `X_k^(1+o(1))` eventually when the selected-block
 targets retain a fixed power excess over square-root size. PL-485's additive reset has no corresponding forced
 `3p` copy, so its deterministic construction does not violate this result.
-Large complete replica energy may still be missed by sparse observations;
-exceptional deterministic or adaptively coordinated orientations are not
-excluded. A dense multiplicative escape must pay the background prefix
-cost through exceptional or coordinated choices, or alter the isolated
-multiplier geometry.
-No full-target bound, deterministic impossibility or sharp arithmetic
+Large complete replica energy may still be missed by sparse observations.
+
+[MC-544](../../mobius_cancellation/findings/MC-544-fixed-character-backgrounds-cancel-balanced-prime-replicas.md),
+retained in Möbius MI-104, realizes deterministic cancellation in the broad
+selected-block class. Its fixed source `f(2)=1`, `f(p)=chi_4(p)` at odd
+primes, with square-free multiplicative extension, has `|F(x)|<=2sqrt(x)`
+and `V_L(X)<=64X` for all lengths `1<=L<=X`. Fixed residue selectors
+produce disjoint dyadic balanced prime blocks with `|T_Y| asymp Y/log Y`.
+Their prime-deleted backgrounds have prefixes of the same order and
+cancel the multiplier-three pairing to relative error `O(log Y/sqrt Y)`.
+This is an exceptional deterministic orientation allowed by MC-543.
+
+The comparison with PL-485 must therefore retain **which field carries the
+signal**. PL-485 has large full perturbation dispersion while returning
+to an exact-prime baseline of unknown energy. MC-544 has small full-source
+windows; its large selected-prime signal is canceled already in the
+original band, whose full smooth sums are `O_phi(sqrt Y)`. It does not
+supply a multiplicative version of PL-485's perturbation dispersion or
+MC-538's full signed target at dense scales. A selected subset and its
+complement are not separate source signals after their sum is observed.
+Broad-block deterministic compatibility is settled, while full-source
+retention, sublinear block geometry and additional arithmetic exclusions
+of the character control remain distinct questions. No sharp arithmetic
 sampling law follows.

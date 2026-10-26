@@ -285,23 +285,66 @@ below `T`, set
 \]
 
 Then `Delta_R>=|nu_t(conjugate(phi))|/||psi_phi||_2>0`.
-Finding this nonzero response is existential and depends on the projected
-target; it supplies no effective cutoff rate.
+Finding this tail response is existential and depends on the projected
+target. NB-372 obtains a quantitative bound by testing the **approximant's
+compact source** instead. Put `T=log R` and choose a smooth cutoff `chi_T`
+equal to one near `[0,T]`, supported in `(-1,T+1)`, with
+`0<=chi_T<=1` and `|chi_T'|<=4` on the positive half-line. For
+`s_y=1/2+iy` and `w in W_R`, integration by parts gives
+
+\[
+E_w(s_y)=\langle\mathscr I Uw,e^{-iyu}\rangle
+=\int_0^\infty Uw(u)q_{R,y}(u)\,du,
+\]
+\[
+q_{R,y}(u)=\sum_{n\le eR}\frac{\mu(n)}{\sqrt n}
+ e^{-iy(u+\log n)}
+ [s_y\chi_T(u+\log n)-\chi_T'(u+\log n)].
+\]
+
+This is a bilinear pairing. The cutoff is one on a neighborhood of the
+support, so endpoint distributional derivatives are retained. The bound
+`sum_(n<=e^(T+1-u)) n^(-1/2)<=2e^((T+1-u)/2)` yields
+
+\[
+K_R(y):=\|q_{R,y}\|_2\le2\sqrt{eR}(|s_y|+4).
+\]
+
+Integrating this decaying envelope avoids a spurious `sqrt(log R)` loss.
+For the projection `w_R=P_(W_R)t`, `||w_R||<=b` and
+`mathcal M w_R= zeta E_(w_R)/s`; hence
+
+\[
+\Delta_R^2\ge\frac{b^2}{2\pi}\int_{\mathbb R}
+\frac{[1-|\zeta(s_y)|K_R(y)]_+^2}{|s_y|^2}\,dy
+\ge c_\rho R^{-1/(2m)}.
+\]
+
+The second inequality integrates over a width `asymp_rho R^(-1/(2m))`
+near a fixed critical-line zero `rho` of multiplicity `m`. The constant
+can be independent of the unknown inner factor: `g_2 in N` gives
+`b^2>=|<e,g_2>|^2/||g_2||^2=log 2`. Thus the rate holds without RH,
+even above a positive Burnol floor. It is a necessary lower bound, not a
+sharp rate or an improvement of the classical logarithmic rate under RH.
 
 For a finite synthesis of effective range at most `R`, the two necessary
 costs give the simultaneous lower bound
 
 \[
 \|e-w\|^2\ge1-b^2+
-\max\{\Delta_R^2,\ c_{\rho,b}(1+Q)^{-1/m}\}.
+\max\{c_\rho R^{-1/(2m)},\ c_{\rho,b}(1+Q)^{-1/m}\}.
 \]
 
 The resources are therefore distinct: retained lattice count `M`, search
 horizon `K`, generator coefficients, and effective range `max(av)`.
-As the final-target error tends to zero, both the coefficient budget and
-effective range must diverge; for fixed seeds this forces `max(a)->infinity`.
-Variable seeds can instead enlarge `v`, so divergence of `a` alone is not
-required. Conversely `Delta_R->0` as `R->infinity`, by full-space density.
+Final-target error `epsilon` requires `R=Omega_rho(epsilon^(-4m))`;
+error `O(M^(-1/2))` therefore needs both `R_M=Omega_rho(M^(2m))` and
+`S_M=Omega(M^m)`. In particular the range is at least quadratic in `M`
+without assuming simplicity. For fixed seeds this also prices `max(a)`;
+variable seeds can instead enlarge `v`. The physical range `av` is not
+the lattice search horizon `K`: the `M log M` selection law does not
+supply finite synthesis within that physical range. Conversely
+`Delta_R->0` as `R->infinity`, by full-space density.
 Neither restriction removes the Burnol floor, supplies an upper synthesis,
 or quantifies column count without coefficient control. A cutoff bound for
 distance to `e` cannot simply be reduced by the positive floor to obtain a
