@@ -598,3 +598,9 @@ Role: primary prior art for expressing conditional interval variance as a sum of
 Allison Lewko and Mark Lewko, *Estimates for the square variation of partial sums of Fourier series and their rearrangements*, Journal of Functional Analysis 262 (2012), no. 6, 2561–2607, Theorem 1 (Rademacher–Menshov). DOI: https://doi.org/10.1016/j.jfa.2011.12.007. Author manuscript: https://arxiv.org/html/1106.0871v2#S1.
 
 Role: classical logarithmic maximal partial-sum bound and its dyadic proof mechanism. MC-542 derives the finite variant for an auxiliary multiplicative ensemble with prescribed old primes, then uses it to make the balanced-replica centered-energy floor simultaneous across a comparable-scale band with high probability. Neither a new maximal inequality nor the paper's stronger variation estimates are claimed or imported.
+
+## MC-S97 — Fan–Taussky–Todd, discrete Dirichlet Wirtinger inequality
+
+Ky Fan, Olga Taussky and John Todd, *Discrete analogs of inequalities of Wirtinger*, Monatshefte für Mathematik 59 (1955), no. 2, 73–90, Theorem 9, p. 79. DOI: https://doi.org/10.1007/BF01302991. Institutional metadata: https://authors.library.caltech.edu/records/6rmb3-97627. Digitized original: https://bomongiaitich.wordpress.com/wp-content/uploads/2013/09/ky-fan_olga-taussky_john-todd.pdf.
+
+Role: classical sharp lower bound for the squared first-difference norm of a finite sequence with zero endpoints. MC-542 applies the principle to residue chains of a translated prime primitive, while proving a sufficient weaker constant by telescoping. This removes the separated-pulse requirement and prices cancellation of the combined smooth target by the prime-deleted background. Neither the discrete inequality nor a new random-multiplicative concentration theorem is claimed.

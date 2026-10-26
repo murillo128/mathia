@@ -3,9 +3,10 @@
 **Status:** `EXACT-DERIVED`, `LITERATURE+DERIVED`, `NEGATIVE/OBSTRUCTION`,
 `NO-NOVELTY-CLAIM`. The bounds concern a prescribed-prime random
 multiplicative ensemble: an exact expectation floor and a simultaneous
-high-probability floor on a comparable-scale band. They are neither
-pointwise bounds for every realization nor statements about actual
-Möbius sums.
+high-probability floor on a comparable-scale band. Section 5 also gives
+a deterministic replica/background inequality without a narrow-block
+assumption. The probability floors are not pointwise bounds for every
+realization, and none of these results bounds actual Möbius sums.
 
 ## Claim and the interval-specific question
 
@@ -96,6 +97,14 @@ to probability. For the ordered blocks of Section 3, with probability
 **simultaneously at every integer scale in (4)**. This uses a maximal
 bound for the background with the selected prime block removed;
 it does not infer typical behavior from (6) alone.
+
+Section 5 removes the separation condition \(3w\le H\), with a
+controlled loss. It permits several interacting prescribed blocks
+anywhere in the full prime band, provided their combined signs balance.
+A retained smooth target above square-root size still forces large
+window energy with high probability. Deterministically, cancellation
+of that replica requires a comparably large prefix of the background
+obtained by removing all the selected primes.
 
 ## 1. The free-prime projection isolates an actual interval profile
 
@@ -364,6 +373,176 @@ is not supported only by rare large-energy realizations. This is a
 finite-ensemble statement as the block scale grows, not an almost-sure
 claim about one infinite family of interacting prescribed blocks.
 
+## 5. Overlapping replicas cannot freely erase a retained smooth target
+
+Keep the prime band, balance, and observation geometry (2)–(5), but
+**drop \(3w\le H\)**. Thus \(P\) may be a union of many prescribed
+blocks spread across \((4Y/3,5Y/3)\); no individual block balance,
+sign ordering, gap lower bound, or pulse separation is required.
+Use the combined primitive \(B\), its energy \(\mathcal B_2\), and
+
+\[
+ R_L=\left\lceil\frac{3w}{L}\right\rceil,
+ \qquad R=\left\lceil\frac{3w}{\lfloor3Y/20\rfloor}\right\rceil\le8.
+\tag{31}
+\]
+
+The coarse bound follows from \(3w<Y\), \(Y\ge100\), and
+\(\lfloor3Y/20\rfloor\ge3Y/20-1\). It holds uniformly for
+both channels and every integer scale in (4).
+
+### Compact support replaces disjointness
+
+Let \(a_L(j)=C(j+L)-C(j)\), as before, and put
+\(E_L=\sum_j|a_L(j)|^2\). The containment of both pulse supports
+in \(I_X\) did not use disjointness, so \(\sum_j a_L(j)=0\)
+still holds. For \(j\in J\), \(C(j+R_LL)=0\), and telescoping gives
+
+\[
+ C(j)=-\sum_{k=0}^{R_L-1}a_L(j+kL).
+\]
+
+Cauchy–Schwarz, followed by summation over \(J\), counts any value
+of \(|a_L|^2\) at most \(R_L\) times. Consequently
+
+\[
+ \boxed{E_L\ge\frac{3\mathcal B_2}{R_L^2}
+                  \ge\frac{3\mathcal B_2}{R^2},
+ \qquad |\operatorname{supp}a_L|\le6w.}
+\tag{32}
+\]
+
+This is a deliberately nonsharp discrete Poincaré estimate. Applying
+the classical Dirichlet discrete Wirtinger inequality to each residue
+chain modulo \(L\) gives the stronger coefficient
+\(4\sin^2(\pi/[2(R_L+1)])\) multiplying \(3\mathcal B_2\).
+No new finite-difference inequality is asserted. The elementary proof
+above is sufficient and also makes clear why a compactly supported
+primitive cannot become exactly \(L\)-periodic unless it vanishes.
+
+Under the original ensemble hypotheses, (11)–(13) remain valid.
+Thus both the usual and ensemble-centered empirical energies satisfy
+\(\mathbb E V_L\ge E_L/X\ge3\mathcal B_2/(R^2X)\).
+The equality \(E_L=6\mathcal B_2\) is specific to disjoint pulses
+and is not used in this section.
+
+### A deterministic price for cancellation by the background
+
+The isolation identity (25) also did not use disjointness. In fact,
+for this paragraph \(g\) may be **any** square-free-supported
+multiplicative function taking values in \(\{-1,0,1\}\), with
+\(g(p)=b_p\) on \(P\) and \(|g(3)|=1\). There is no restriction
+on its other prime values or on a product of older prescribed primes.
+Define \(g_0,G_0,A\) by (22), zeroing all of \(P\).
+
+Every window used by the test still lies between \(4Y-L\) and
+\(5Y+L\); among multiples of \(P\), only multiplier three survives
+square-free support there. Therefore (25) and zero test mean give
+
+\[
+ \left|\sum_j a_L(j)S_L(j)-g(3)E_L\right|
+       \le2A\|a_L\|_1
+       \le2A\sqrt{6wE_L}.
+\]
+
+Pairing with \(S_L-c\) and applying Cauchy–Schwarz proves, for
+every fitted constant \(c\), and in particular for the empirical mean,
+
+\[
+ \boxed{\sqrt{XV_L}\ge
+   \left(\sqrt{E_L}-2A\sqrt{6w}\right)_+
+   \ge\left(\frac{\sqrt{3\mathcal B_2}}R
+                    -2A\sqrt{6w}\right)_+.}
+\tag{33}
+\]
+
+Here \(u_+=\max(u,0)\); for an arbitrary \(c\), replace \(V_L\)
+by \(X^{-1}\sum_j|S_L(j)-c|^2\). No probabilistic cancellation
+assumption enters (33).
+
+Let \(\phi\in C^1([4/3,5/3];\mathbb C)\),
+\(D=\|\phi'\|_\infty>0\), and
+\(T_B(Y)=\sum_{p\in P}b_p\phi(p/Y)\). Equation (18) applies
+to the combined signs, so rearranging (33) yields the useful transfer
+
+\[
+ \boxed{|T_B(Y)|\le
+   \frac{RD}{Y}\sqrt{\frac{Xw}{3}}\sqrt{V_L}
+       +\frac{2\sqrt2RDw}{Y}A.}
+\tag{34}
+\]
+
+Since \(X\asymp Y\), \(w<Y/3\), and \(R\le8\), this implies
+\(|T_B(Y)|\ll D(\sqrt{V_L}+A)\), with an absolute constant,
+for every scale and both channels. Hence a target of size
+\(Y^{1/2+\delta}\) together with \(V_L=Y^{1+o(1)}\) requires
+\(A\gg_D Y^{1/2+\delta}\). Even an exceptional background cannot
+erase the replica at no cost: it must carry a prefix of the same
+power size after all selected primes are removed. This is a necessary
+condition, not a proof that such backgrounds cannot exist.
+
+### The same single event controls the entire band
+
+Return to the ensemble hypotheses (1)–(5), except for separation.
+Retain \(N,r,C_0\) from (20). Bound (24) is unaffected by how
+many selected primes lie in \(P\), or where they lie in its band.
+For \(0<\tau<1\), the event
+
+\[
+ A\le\frac{\tau\sqrt{\mathcal B_2}}{2\sqrt2R\sqrt w}
+\]
+
+and (33) imply, simultaneously at every scale and both lengths,
+
+\[
+ \boxed{V_L\ge(1-\tau)^2\frac{3\mathcal B_2}{R^2X},
+ \quad\text{with probability at least}\quad
+ 1-\frac{8R^2C_0N(r+1)^2w}{\tau^2\mathcal B_2}.}
+\tag{35}
+\]
+
+This again uses one maximal-prefix event and Markov's inequality,
+not a union bound over scales. The mean of the ensemble sum vanishes
+on the test support, for the reasons following (29), so (35) also
+holds after ensemble centering and then empirical centering.
+
+For a fixed test with \(D>0\), (18) makes (35) particularly direct:
+if \(T_B(Y)\ne0\), then
+
+\[
+ V_L\ge(1-\tau)^2
+          \frac{3Y^2|T_B(Y)|^2}{R^2XwD^2},\qquad
+ \Pr(\text{failure})\le
+ \frac{8R^2C_0N(r+1)^2w^2D^2}
+      {\tau^2Y^2|T_B(Y)|^2}.
+\tag{36}
+\]
+
+Thus, for any fixed \(\delta>0\), if the combined prescription
+satisfies \(|T_B(Y)|\ge Y^{1/2+\delta}\), then, uniformly over
+all admissible old sets and sign orders,
+
+\[
+ V_H,V_K\gg_{\phi,\tau}|T_B(Y)|^2
+ \quad\text{throughout the band, with probability}
+ \quad1-O_{\phi,\tau}(Y^{-2\delta+o(1)}).
+\tag{37}
+\]
+
+Here \(C_0=Y^{o(1)}\) still follows from \(Q_0<Y\). No existence
+of such a target is assumed as a fact about arbitrary prescriptions;
+(37) is conditional on its displayed size. For \(D=0\), balance
+gives \(T_B=0\), so there is no target to transfer.
+
+The added regime is substantive: several selected blocks may cancel
+parts of one another's translated profiles, but if their **combined**
+smooth target remains large, this overlap cannot produce typically
+square-root background prefixes and small centered window energy
+simultaneously. Interactions with arbitrary older prime prescriptions
+are covered by the deterministic alternative (34); the high-probability
+conclusion still requires (1). Neither statement constructs or excludes
+a dense-scale infinite multiplicative comparator.
+
 ## Prior art, controls, and evidence boundary
 
 Multiplicative propagation of a balanced prime primitive is already
@@ -399,6 +578,15 @@ a prime primitive; here the same strategy isolates its replica in
 empirically centered windows and controls the whole scale band on
 one event. No new concentration theorem is claimed.
 
+[Fan–Taussky–Todd, Theorem 9, p. 79](https://bomongiaitich.wordpress.com/wp-content/uploads/2013/09/ky-fan_olga-taussky_john-todd.pdf)
+(MC-S97) gives the classical sharp Dirichlet discrete Wirtinger
+inequality behind (32). Section 5 proves its weaker telescoping
+version directly. Its additional content is the overlap-tolerant
+arithmetic replica/background transfer (34), retaining the same
+smooth prime target and empirical centering, and its uniform-band
+probability consequence. It does not claim a new Poincaré principle,
+conditional-variance theorem, or external novelty.
+
 The limitations are consequential:
 
 * The expectation and probability are over the free prime signs.
@@ -406,28 +594,33 @@ The limitations are consequential:
   smaller energy. It is useful only when its displayed error is
   small; arbitrary balanced sign orders need not meet that condition.
   No almost-sure statement across growing prescribed blocks follows.
-* The observation band is comparable to one isolated source block.
-  The condition \(Q_0<Y\) is sufficient to remove all older divisors
-  from the isolated profile. No such isolation is proved for an
-  arbitrary dense infinite family of prescriptions. The result does
-  not establish a dense-scale multiplicative counterexample or its
-  impossibility.
-* Three must remain free. Prescribing or zeroing it destroys this
-  particular random character argument; a different multiplier
-  would require fresh isolation and support checks.
-* Balance, full inclusion of both pulse supports, and \(L\ge3w\)
-  are used in (16). Without them the exact zero mean and separated
-  norm identity are not asserted.
+* The observation band is comparable to the selected prime band.
+  The condition \(Q_0<Y\) removes all older divisors from the
+  isolated random character and controls the background moment.
+  Section 5's deterministic inequality needs no such condition,
+  but supplies no small-background estimate for an arbitrary dense
+  infinite family of prescriptions. The result establishes neither
+  a dense-scale multiplicative counterexample nor its impossibility.
+* Three must remain free for the displayed ensemble arguments.
+  The deterministic inequality (33) allows it to be prescribed with
+  either sign, but still requires \(|g(3)|=1\). Zeroing it destroys
+  this replica; another multiplier needs fresh isolation checks.
+* Balance and full inclusion of both pulse supports are needed for
+  zero empirical mean. The hypothesis \(L\ge3w\) is needed for
+  (16)'s exact norm identity; Section 5 replaces it by the bounded
+  support-to-window ratio. It does not dispense with balance or
+  allow arbitrary truncation of either translated support.
 * Complete energy can be large while sparse observations miss its
   localized contribution. The result does not contradict MC-538,
   improve Möbius estimates, or establish optimal sampling for RH.
 
-The remaining route must select exceptional backgrounds that cancel
-the replicas, pay to remove them, or prove additional interactions
-between non-isolated blocks. Simply replacing arbitrary weights by
-intervals and fitting their means gives neither uniformly small
-expected energy nor typically small energy for the isolated ordered
-blocks in this admissible class.
+The remaining route must select backgrounds large enough to pay (34),
+remove the replicas, or exploit interactions outside the isolated
+multiplier band. Overlap between several selected blocks within that
+band cannot evade (34) while retaining their combined smooth target.
+Simply replacing arbitrary weights by intervals and fitting their means
+gives neither uniformly small expected energy nor typically small energy
+for the admissible prescriptions with that target.
 
 Exact finite checks used three actual prime blocks at source scales
 100, 240 and 1,000, all 28 balanced sign patterns on those blocks,
@@ -462,3 +655,22 @@ their maximal-event thresholds did not give a nonvacuous probability
 test. The vanishing error in (30) is an analytic consequence of the
 proved estimates, not a numerical extrapolation. The classical
 maximal estimate does not add a separate formalization target.
+
+Exact-integer overlap checks used \(P=\{137,139,149,151,157,163\}\)
+at \(Y=100\), \(P=\{269,277,313,331\}\) at \(Y=200\), and
+\(P=\{541,557,599,617,647,661\}\) at \(Y=400\). All 46
+balanced sign orders and all integer scales in (4) gave 5,692
+overlapping scale/channel geometries satisfying (32); in 3,976 cases
+\(E_L<6\mathcal B_2\), so the separated norm identity really fails.
+Old sets empty, \(\{2\}\), and \(\{2,5\}\), with every sign
+assignment, gave 322 ensembles. Exhaustive averaging over free primes
+\(\{3,7,11,13\}\), with all other nonprescribed primes in the horizon
+zeroed, checked 30,912 realization/channel cases at each band's first,
+middle and last integer scales. The audit checked 5,687,136 entries
+of the pathwise isolation identity, zero test mean, the exact pairing
+error bound and centered Cauchy–Schwarz inequality behind (33), the
+expectation lower bound, and (18) with \(\phi(t)=t\). These are
+bookkeeping checks, not numerical evidence for the asymptotic probability
+in (37), which follows analytically from (24), (32), and Markov's
+inequality. The classical finite-difference step presents no additional
+material formalization-fertility target.
