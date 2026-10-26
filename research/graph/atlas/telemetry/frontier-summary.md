@@ -2,7 +2,7 @@
 id: RA-frontier-telemetry-v1
 type: riemann-atlas-frontier-telemetry
 atlas_version: 1
-prospective_source_cutoff: 593182fb417eb3f619144607d68ce74438dcd7b3
+prospective_source_cutoff: 8f3a4c83f17088cf5d2f2148cf76c2c560d77d72
 derived: true
 ---
 
@@ -112,7 +112,7 @@ This is a conditioning obstruction, distinct from NB-370's retained-index optimi
 
 ## Fixed effective range and conditional fixed-box division
 
-[[research/nyman_beurling/graph/relations/adaptive-lattice-component-cost|NB-372’s range obstruction]] adds one `new-barrier` episode distinct from the absolute-coefficient budget: fixed effective range retains positive excess above the projected-target floor even with unbounded coefficients and column count. The excess vanishes as range grows; no effective rate or upper synthesis is supplied.
+[[research/nyman_beurling/graph/relations/adaptive-lattice-component-cost|NB-372’s range obstruction]] is one `new-barrier` episode distinct from the absolute-coefficient budget: fixed effective range retains positive excess above the projected-target floor even with unbounded coefficients and column count. Its quantitative refinement gives `Delta_R² >= c_rho R^(-1/(2m))` for a fixed critical-line zero of multiplicity m by bounding the approximant's compact-source transform in Hilbert norm. Error `O(M^(-1/2))` therefore requires `R_M=Omega(M^(2m))`, independently of NB-371's coefficient cost. The same range question is refined in place, without another episode. The excess vanishes as range grows; no sharp rate, upper synthesis or RH consequence is supplied. Atlas states, masses and episode rates remain unchanged.
 
 [[research/prime_lattice/graph/relations/fixed-box-mellin-interpolation-and-division|PL-487’s division reduction]] adds one `viable-extension` episode for the conditional quotient-decay obligation. Exact Hermite cancellation in the specified Gevrey class automatically supplies decay and preserves the support interval. It does not construct the required fixed-box interpolant, upgrade smooth inputs, or evade PL-486’s universal obstruction. Classical prior-art registration and source wrappers add no events. The two oldest episodes leave the twenty-question window and remain in Git. Other changed findings receive structural membership only unless separately inspected.
 

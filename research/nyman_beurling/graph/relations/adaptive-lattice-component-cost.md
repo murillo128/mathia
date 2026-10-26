@@ -46,13 +46,29 @@ The fixed-target estimate permits all seed choices and bounds excess above the B
 
 ## Effective range remains a separate obstruction
 
-[[research/nyman_beurling/findings/NB-372-bounded-effective-dilation-range-retains-a-strict-projected-target-gap|NB-372]], §§1–3, retains the same projected target but removes the coefficient-budget hypothesis. For every finite \(R>1\), the closed span \(\mathcal W_R\) of columns with \(av\le R\) has \(\Delta_R=\operatorname{dist}(t,\mathcal W_R)>0\), even with unbounded coefficient sums and column counts. Its distance from the original target is exactly \(1-b^2+\Delta_R^2\) after squaring.
+[[research/nyman_beurling/findings/NB-372-bounded-effective-dilation-range-retains-a-strict-projected-target-gap|NB-372]], §§1–4, retains the same projected target but removes the coefficient-budget hypothesis. For every finite \(R>1\), the closed span \(\mathcal W_R\) of columns with \(av\le R\) has \(\Delta_R=\operatorname{dist}(t,\mathcal W_R)>0\), even with unbounded coefficient sums and column counts. Its distance from the original target is exactly \(1-b^2+\Delta_R^2\) after squaring.
 
 In logarithmic time, the causal inverse source is \(\mathscr I h=M*(D+1/2)h\), with \(M=\sum_{n\ge1}\mu(n)n^{-1/2}\delta_{\log n}\). It is locally continuous from \(L^2\) to distributions. Each column has inverse source \(v^{-1}\delta_{\log a}-v^{-1/2}\delta_{\log(av)}\); fixed support therefore survives Hilbert closure without assuming a finite measure limit. A compact inverse source for \(t\) would give an entire transform \(E=bB/\zeta\). The continuous boundary product would have modulus \(b>0\) everywhere, contradicting a critical-line zero. No boundary evaluation of a generic Hardy function is used.
 
-NB-372 also constructs bounded Hilbert duals from compact tests outside \([0,\log R]\). Their nonzero target responses are existential, so no effective rate for \(\Delta_R\) follows. Increasing range gives \(\Delta_R\to0\). Convergent finite syntheses must therefore have both divergent coefficients (NB-371) and divergent effective range (NB-372); only for fixed seeds does the latter force dilation \(a\) itself to diverge. Neither condition prices column count without additional assumptions.
+NB-372's §3 constructs bounded Hilbert duals from compact tests outside \([0,\log R]\). Those target-tail responses remain existential. Section 4 obtains a quantitative lower rate by a different test: it bounds the compact inverse-source transform of the approximant. A smooth cutoff equal to one near the whole support, including its endpoints, gives a bounded bilinear functional \(E_w(1/2+iy)=\int Uw(u)q_{R,y}(u)\,du\). Integrating the decaying envelope in logarithmic time yields
 
-The source's comparison with [Burnol's cutoff theorem, Theorem 1.3](https://arxiv.org/pdf/math/0103058), preserves the distinction between distance to the original indicator and strict excess above its possibly positive projection floor. The displayed classical lower rate becomes trivial when the limiting distance is positive; subtracting the floor does not yield a rate for \(\Delta_R\). No improved cutoff rate or bibliographic priority is inferred.
+\[
+K_R(y):=\|q_{R,y}\|_2\le2\sqrt{eR}(|1/2+iy|+4).
+\]
+
+This is a Hilbert-norm estimate on the closed range space, not a coefficient estimate. For its orthogonal projection \(w_R=P_{\mathcal W_R}t\), one has \(\|w_R\|\le b\) and \(\mathcal Mw_R=\zeta E_{w_R}/s\). NB-372's equations (25)–(30) therefore give
+
+\[
+\Delta_R^2\ge\frac{b^2}{2\pi}\int_{\mathbb R}
+\frac{[1-|\zeta(1/2+iy)|K_R(y)]_+^2}{|1/2+iy|^2}\,dy
+\ge c_\rho R^{-1/(2m)}.
+\]
+
+Here \(\rho\) is any one fixed critical-line zero of multiplicity \(m\). The second inequality integrates over a shrinking neighborhood of that zero. The elementary projection bound \(b^2\ge\log2\) removes dependence of the lower constant on the unknown inner factor; local zeta bounds still enter \(c_\rho\). There is no bounded point evaluation on the ambient Hardy space or assumption of simple zeros.
+
+Thus final-target error \(O(M^{-1/2})\) requires both \(R_M=\Omega_\rho(M^{2m})\) and NB-371's \(S_M=\Omega_{\rho,b}(M^m)\). The physical range \(\max(av)\) is distinct from the lattice search horizon: an \(M\log M\) search does not supply actual-generator synthesis at that range. Only for fixed seeds does effective-range growth force dilation \(a\) itself to grow. Increasing range still gives \(\Delta_R\to0\); neither necessary cost gives a sharp rate, a matching upper synthesis or a column-count bound without additional assumptions.
+
+The source's comparison with [Burnol's cutoff theorem, Theorem 1.3](https://arxiv.org/pdf/math/0103058), preserves the distinction between distance to the original indicator and strict excess above its possibly positive projection floor. The displayed classical lower rate becomes trivial when the limiting distance is positive; subtracting the floor does not yield a rate for \(\Delta_R\). NB-372's separate power bound applies above that floor but does not improve Burnol's logarithmic rate under RH. No bibliographic priority is inferred.
 
 ## Evidence boundary
 

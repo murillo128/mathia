@@ -550,3 +550,4 @@ This stable projection inventories every current canonical Möbius Cancellation 
 - [[research/mobius_cancellation/findings/MC-541-optimal-prescribed-prime-moments-still-force-lacunarity|MC-541]]
 - [[research/mobius_cancellation/findings/MC-542-balanced-prime-replicas-force-centered-window-energy|MC-542]]
 - [[research/mobius_cancellation/findings/MC-543-independent-block-orientations-cannot-suppress-every-prime-replica|MC-543]]
+- [[research/mobius_cancellation/findings/MC-544-fixed-character-backgrounds-cancel-balanced-prime-replicas|MC-544]]
