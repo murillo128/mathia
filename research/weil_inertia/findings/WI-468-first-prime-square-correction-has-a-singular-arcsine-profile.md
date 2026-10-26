@@ -14,6 +14,9 @@ and is unbounded at the two limiting endpoints. Consequently the scalar
 signed correction measures of WI-467, although finite at every
 sufficiently large fixed `sigma`, have **unbounded total variation
 relative to the first perturbation scale** as `sigma` tends to infinity.
+More precisely, their unnormalized variation decays at the square-root
+perturbation scale. Explicit endpoint layers supply the matching lower
+bound and explain the failure of a finite-measure first derivative.
 
 This is a parameter limit of the already-defined Haar coefficient.
 It is not a first arithmetic sampling law for indicators. In particular,
@@ -109,6 +112,17 @@ In contrast,
 Total variation here is the full mass of the variation measure.
 Equation (8) is a relative statement; it does not assert divergence
 of the unnormalized variation as `sigma` grows.
+The sharper estimate, proved by resolving the endpoint layers below, is
+
+\[
+ \boxed{\|\nu_\sigma\|_{\rm TV}\asymp_r\sqrt{\tau_\sigma}.}
+ \tag{8a}
+\]
+
+Here both comparison constants are positive and independent of
+`sigma` once it is sufficiently large at the fixed `r`. Thus the
+unnormalized variation tends to zero, whereas its ratio to `tau_sigma`
+has order `tau_sigma^(-1/2)`.
 
 ## The infinite tail is small at the perturbation scale
 
@@ -295,6 +309,172 @@ pushforward correction measures converge distributionally to `P'`,
 which is not a finite signed measure. Affine rescaling of their scalar
 coordinate does not change their total variation.
 
+## Endpoint layers determine the sharp variation scale
+
+Write `tau=tau_sigma`, `e=e_sigma`, and let `tilde nu_sigma` be the
+pushforward of `nu_sigma` under `x -> (x-mu_sigma)/b_sigma`. Define
+`eta_tau=(psi_tau)_#(w du dv/(2pi)^2)`, so its cumulative function is
+`D_tau` from (11). The needed full-source comparison in variation is
+
+\[
+ \|\widetilde\nu_\sigma-\eta_\tau\|_{\rm TV}
+       =O_r(\sqrt e)=o_r(\sqrt\tau).
+ \tag{21}
+\]
+
+Its constants must be uniform in the parameter; merely using WI-467's
+fixed-parameter conclusion does not give (21). Here is that uniform
+check. Keeping `u` and all remaining prime angles fixed, differentiation
+in `v` acts only on powers of `z_3`. The remainder in (9) satisfies
+
+\[
+ \max_{0\le j\le2}\|\partial_v^jR_\sigma\|_\infty=O_r(e).
+ \tag{22}
+\]
+
+Indeed each derivative multiplies a character by its `3`-exponent,
+whose absolute value is at most `(log n+log m)/log 3` for a pair
+`n,m`. The tail argument for (9) therefore remains valid with squared
+logarithmic weights: for `sigma>=2`,
+`sum_(n>=5) (log n)^3 n^(-sigma)=O(5^(-sigma))`, by factoring
+`5^(2-sigma)` and comparing the remaining sum at exponent two.
+The full normalized logarithmic moments through order two stay
+bounded, while their `n>=5` tails are `O((2/5)^sigma)`.
+Expanding `(log n+log m)^2` in the double sum and dividing by
+`b_sigma asymp_r (2/3)^sigma` gives the claimed tail bound.
+The `3,4` character has `v`-frequency one and retains its
+`O_r(2^(-sigma))` bound. This proves (22).
+
+Both `Y_sigma` and `psi_tau`, as functions of `v`, consequently have
+their first two derivatives within `1/100` of those of `cos v` for
+large `sigma`. Apply the elementary weighted circle lemma (9) of
+WI-467 with weight `w(u,v)`. Its `C^1` norm in `v` is bounded uniformly
+in `u`, and its stability constant is absolute after this scaling.
+The combined `p=2,3` pushforwards differ by `O_r(sqrt(e))` in variation.
+
+For `p>=5`, compare `Y_sigma` with `(Q^(-p)-mu_sigma)/b_sigma`.
+Their `C^1` distance in `v` is `O(w_p/b_sigma)`, by WI-467 (13);
+the factor `sum_k k a_(3^k)` there stays bounded as `sigma` grows.
+Both maps have the same uniform cosine derivative geometry, including
+after deletion. The weight `h_p` is constant along the smoothing
+coordinate, and the deleted map has zero `h_p`-weighted pushforward.
+The uniform tail cost is therefore
+
+\[
+ \sum_{p\ge5}B_p\sqrt{w_p/b_\sigma}
+ \ll_r 3^{\sigma/2}\sum_{p\ge5}(\log p)^{3/2}
+                           p^{-(\sigma+1)/2}
+ =O_r((3/5)^{\sigma/2}),\qquad \sigma\ge4.
+ \tag{23}
+\]
+
+For the last estimate factor `5^(-(sigma-4)/2)` and compare the
+remaining sum with `sum_(n>=5) (log n)^(3/2)n^(-5/2)`.
+Here `w_p/b_sigma <<_r (log p)(3/p)^sigma`, using
+`A=O(2^(-sigma))`. Summing these individually defined measures proves
+(21), with no infinite signed torus density or growing hidden
+smoothing constant.
+
+For a real number `t`, write `t_+=max(t,0)` and set
+
+\[
+ w_+(u)=h_2(u)+h_3(u),\qquad
+ w_-(u)=h_2(u)+h_3(u-\pi),
+\]
+\[
+ F_+(x)=-\frac{\sqrt2}{\pi}
+       \int w_+(u)\sqrt{(\cos u-x)_+}\,\frac{du}{2\pi},
+ \qquad
+ F_-(x)=\frac{\sqrt2}{\pi}
+       \int w_-(u)\sqrt{(x-\cos u)_+}\,\frac{du}{2\pi}.
+ \tag{24}
+\]
+
+For every fixed compact interval `K` of real `x`, the endpoint formulas
+are uniform on `K`:
+
+\[
+ \boxed{\begin{aligned}
+  \frac{\widetilde C_\sigma(1+\tau x)}{\sqrt\tau}
+       &=F_+(x)+O_{r,K}(\tau+\sqrt{e/\tau}),\\
+  \frac{\widetilde C_\sigma(-1+\tau x)}{\sqrt\tau}
+       &=F_-(x)+O_{r,K}(\tau+\sqrt{e/\tau}).
+ \end{aligned}}
+ \tag{25}
+\]
+
+These are boundary layers of width `b_sigma tau_sigma` in the original
+response coordinate, centered at `mu_sigma +/- b_sigma`. They are not
+evaluations of the divergent profile `P` at its endpoints.
+
+To prove (25) for the model, use its zero total mass. At the upper
+endpoint the complement of the sublevel set, for fixed `u`, is the
+arc `|v|<alpha`, where
+`alpha=arccos(1-tau(cos u-x)_+)`. Uniformly for `x in K`,
+
+\[
+ \alpha=\sqrt{2\tau}\sqrt{(\cos u-x)_+}+O_K(\tau^{3/2}).
+\]
+
+Integrating the smooth weight over this symmetric arc gives
+`alpha w_+(u)/pi+O_K(alpha^3)`. After averaging over `u`, the
+zero total mass makes the cumulative function the negative of this
+arc mass; no conditional zero-mass assertion is needed. At the lower
+endpoint the sublevel set itself is an arc
+about `v=pi`, with half-width
+`arccos(1-tau(x-cos u)_+)` and weight `w_-(u)`. These two expansions
+give (25) for `D_tau` with error `O_K(tau)` after division by
+`sqrt(tau)`. Equation (21) transfers them uniformly to the full
+coefficient. Its normalized error tends to zero because `e/tau->0`.
+
+The upper profile is nonzero without a numerical sign test. Writing
+`q=p^(-1/2)` and `c=cos u`,
+
+\[
+ h_p(u)=\log p\left(1-\frac{1-q^2}{1-2qc+q^2}\right)
+\]
+
+is strictly decreasing in `c`. Thus `w_+` is strictly decreasing in
+`c` and has zero Haar mean, whereas `sqrt(c_+)` is increasing and
+nonconstant. Their covariance is strictly negative. Explicitly,
+for independent arcsine variables `X,X'`, twice that covariance is
+`E[(w_+(X)-w_+(X'))(sqrt(X_+)-sqrt(X'_+))]<0`, where `w_+(c)`
+denotes the displayed function of `c`. Hence `F_+(0)>0` and (25)
+gives
+
+\[
+ \|\nu_\sigma\|_{\rm TV}
+ \ge2|\widetilde C_\sigma(1)|
+ =2\sqrt\tau\{F_+(0)+o_r(1)\}.
+ \tag{26}
+\]
+
+The factor two uses the zero total mass of the signed measure: the
+chosen half-line and its complement have opposite masses.
+
+For the matching upper bound, the density of `eta_tau` is
+`k_tau(y)=int H_u(y-tau cos u) du/(2pi)`, with `H_u` from (14).
+Its zero-parameter density vanishes almost everywhere. Therefore (15)
+gives `||eta_tau||_TV<=int ||H_u(.-tau cos u)-H_u||_1 du/(2pi)
+=O(sqrt(tau))`. Combining this with (21) proves (8a).
+
+As matching checks, the profiles vanish on their outer sides:
+`F_+(x)=0` for `x>=1` and `F_-(x)=0` for `x<=-1`. On their inner
+sides, expansion of the square roots and the zero means gives
+
+\[
+ F_+(x)=\frac{A_2+A_3}{\pi\sqrt{-2x}}+O(|x|^{-3/2})
+       \quad(x\to-\infty),\qquad
+ F_-(x)=\frac{A_2-A_3}{\pi\sqrt{2x}}+O(x^{-3/2})
+       \quad(x\to+\infty).
+ \tag{27}
+\]
+
+The signs and constants agree with the two singular ends of `P`.
+This checks separate formulas, without asserting uniformity of (25)
+on growing `K`. In particular the lower endpoint layer need not have
+the upper layer's sign; no stochastic ordering is restored.
+
 ## Prior art, controls, and research consequence
 
 Ford–Zaharescu, *On the distribution of imaginary parts of zeros of the
@@ -310,6 +490,17 @@ This is contextual prior art, not a theorem imported without checking
 its hypotheses: (14)–(18) give the entire differentiation argument used
 here. The arcsine density, translation continuity, and variation
 obstruction are standard mechanisms; no literature priority is claimed.
+For neighboring prior art on fractional regularity and variation
+stability of nonlinear image laws, see V. I. Bogachev, E. D. Kosov and
+G. I. Zelenov, *Fractional smoothness of distributions of polynomials
+and a fractional analog of the Hardy–Landau–Littlewood inequality*,
+**Trans. AMS 370** (2018), 4401–4432,
+[introduction and §§5–6](https://arxiv.org/abs/1602.05207).
+That paper treats Gaussian polynomial images, including the familiar
+inverse-square-root density at a quadratic critical point. Its
+hypotheses do not directly cover the signed infinite Euler-torus
+coefficient. The arc expansions (24)–(27), the uniform summed tail
+(23), and both bounds for this coefficient are proved here.
 
 The local delta is a full-source, controlled profile at the first
 prime-square scale, including the summed tail (10), interior sign
@@ -318,12 +509,17 @@ expansion (8). WI-466 proved existence of opposite signs through a
 polynomial witness; it did not locate the coefficient at fixed scaled
 interior levels. WI-467 proved finite variation at each fixed parameter;
 it did not control variation relative to the vanishing perturbation.
+The endpoint layers sharpen the relative divergence to the exact order
+in (8a), while showing that the unnormalized variation actually vanishes.
+An interior first derivative in `L^1` and a square-root response in
+variation coexist for the same full-source coefficient.
 
 The endpoint singularities explain why uniform convergence cannot be
 extended to all scaled thresholds, and why a finite scalar measure at
 each parameter does not yield a finite-measure derivative in this
 parameter limit. The main term is not to be evaluated at `y=+/-1`.
-The constants in (7) deteriorate at those endpoints and at varying `r`.
+Equation (25) supplies the separate endpoint description; the constants
+in (7) still deteriorate there and at varying `r`.
 There is no conclusion near the pole `sigma=1`.
 
 The prime-only control has zero correction by common-rotation
@@ -338,8 +534,9 @@ The present parameter theorem supplies no missing arithmetic estimate
 for thresholds; WI-463's obstruction remains. Nor does it couple the
 observable to a single off-line zero, improve a critical-line proportion,
 or imply RH. Its decisive checks are the full mean in (9), the weighted
-prime tail (10), the minus sign in (16), and distinguishing the limits
-in prime cutoff, `sigma`, and sampling height. The result is an analytic
+prime tails (10) and (23), the derivative uniformity in (22), the minus
+signs in (16) and (24), and distinguishing the limits in prime cutoff,
+`sigma`, and sampling height. The result is an analytic
 derivation, without numerical, Lean, or independent-review certification.
 No separate finite formalization target with a material fertility gain
 is identified by the elementary circle algebra.
