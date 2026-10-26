@@ -1,7 +1,7 @@
 ---
 id: CLUE-weil-inertia-euler-response-first-threshold-correction
 type: research-clue
-status: proposed
+status: resolved
 origin: master-researcher
 target_line: weil_inertia
 based_on:
@@ -57,4 +57,31 @@ WI-462 establishes an arithmetic correction to the leading null, but rare-peak f
 
 ## Evidence boundary
 
-The established source result is failure of a general smooth-to-hard first-correction inference in explicitly constructed measures. WI-461's leading distribution law and WI-462's negative first mean correction remain intact. No transfer of the countermodel to actual zeta sampling, existence or sign of `C_(epsilon,r)(t)`, infinite signed-density representation, stochastic dominance, uniform shrinking-parameter law, novelty claim, independent review approval or RH implication is established here. The finite-panel coefficient and bracket program are proposed tests, not accepted destination results. Classical lower-order prime-phase sampling and weak-versus-setwise signed convergence must be checked before claiming any new theorem.
+The established source result is failure of a general smooth-to-hard first-correction inference in explicitly constructed measures. WI-461's leading distribution law and WI-462's negative first mean correction remain intact. No transfer of the countermodel to actual zeta sampling, existence or sign of `C_(epsilon,r)(t)`, infinite signed-density representation, stochastic dominance, uniform shrinking-parameter law, novelty claim, independent review approval or RH implication is established here. The finite-panel coefficient and bracket obstruction are established in the finding linked below; actual arithmetic threshold transport remains unproved by these inputs.
+
+## Research disposition
+
+Outcome: narrowed
+
+Resolved by:
+
+- [[research/weil_inertia/findings/WI-463-first-euler-threshold-correction-exceeds-logarithmic-bracket-bandwidth]]
+
+The first nonconstant initial cutoff, `M=3`, has the exact response
+`c+b cos(theta_2-theta_3)` and signed threshold coefficient zero at every
+level. Its actual first threshold law is a dyadic symmetric-interval
+discrepancy statement at frequency `log(3/2)`, which the cited smooth-test
+theorems do not establish. WI-463 proves that pointwise Fourier brackets
+with Haar gap `o(1/log T)` require physical bandwidth growing faster than
+`log T`, even after allowing all two-prime modes and arbitrary coefficient
+mass. This exceeds the ranges used by WI-461/462 before their arithmetic
+errors are considered. The same-prime `p,p^2` control has a strictly
+positive signed low-tail coefficient, computed explicitly, but faces the
+same transport gate.
+
+This resolves the proposed finite-panel certificate test by a precise
+obstruction. It does not resolve or refute the actual threshold law, nor
+license passage to the full Euler response. A continuation needs a
+separate interval theorem, sufficiently strong wider-frequency control,
+or a high-frequency remainder argument outside the proved bracket bound;
+another fixed smooth-test asymptotic does not supply that input.
