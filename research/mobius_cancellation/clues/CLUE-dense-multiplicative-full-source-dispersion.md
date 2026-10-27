@@ -30,13 +30,24 @@ positive source is shown to have the required dispersion or small energy.
 Its adjustable, logarithmically weighted prime perturbations also differ
 from the discrete prime signs required by a multiplicative sign source.
 
-MC-544 now resolves broad-band deterministic replica cancellation in a
-different way. One fixed square-free multiplicative character source has
-prefix `O(sqrt(x))`, complete centered energy `O(X)`, and balanced selected
-prime targets of order `Y/log Y`. Its background cancels those targets:
-the full smooth source sum on the band is only `O_phi(sqrt(Y))`. Thus
-deterministic compatibility alone is no longer the missing test. A large
-signal belonging to the **full source** must survive the cancellation.
+MC-544 resolves deterministic replica cancellation for both proportional
+and sublinear selector widths. Its one fixed square-free multiplicative
+character source has prefix `O(sqrt(x))` and complete centered energy
+`V_L(X)<=64X`. For each fixed `3/4<kappa<1`, prescribed residue-class
+intervals of width `W asymp Y^kappa` contain balanced selected blocks with
+`h asymp Y^kappa/log Y` primes of each sign and selected target
+`|T_(Y,kappa)| asymp Y^(2kappa-1)/log Y`. Their deleted backgrounds have
+prefix cost `asymp h` and cancel the replica pairing to relative error
+`O_kappa(Y^(1/2-kappa)log Y)`. This extension uses the unconditional
+short-interval prime theorem recorded in MC-544, beyond proportional PNT.
+
+Yet every fixed smooth **full-source** sum on every subinterval of the band
+is `O_phi(sqrt(Y))`, and the full pair dispersion below is at most
+`16sqrt(X)`. Narrowing the selector therefore does not preserve the missing
+full-source floor. This differs from PL-485, whose additive perturbation
+retains its area but has adjustable weights and an unknown prime baseline
+energy. A large signal belonging to the full multiplicative source must
+survive the complement and composite contributions.
 
 ## Research question
 
@@ -99,10 +110,16 @@ For an endpoint-hiding construction, establish a background sample
 ceiling and an exceptional endpoint set of size `O(X^kappa)`; its hit
 sum on `ceil(k^s)` would then converge. If multiplicative replicas spread
 the exceptional set, bound their actual sample tail instead of treating
-them as absent. Use MC-544's character source as a control: its small
-prefix must not be mistaken for a solution with the stated dispersion
-floor. Independent random block orientations do not settle the
-deterministic question already separated by MC-543.
+them as absent. Use MC-544's Section 4 character source as a control at
+the **same** sublinear width: it already pays the deleted-background cost and cancels
+the replica while violating the requested full-source floor, since
+`D_i(X)<=16sqrt(X)=o(X^(2kappa-1))`. Merely bounding width or exhibiting a
+super-square-root selected target therefore cannot pass the test. A new
+assignment must demonstrate where its full primitive survives, or state a
+source-justified constraint excluding this character control; independently
+chosen signs are a different class, not excluded by MC-544. Independent
+random block orientations do not settle the deterministic question already
+separated by MC-543.
 
 A passing two-block calculation is only a compatibility test. Completion
 requires one infinite prime assignment and uniform estimates on every
