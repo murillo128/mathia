@@ -668,6 +668,16 @@ Relevant finding: PF-369. Two exact cuff lattices with `0<|L'-L|=o(L^2 exp(-L/2)
 
 **Scope warning.** Coefficients grow exponentially in this control. No corresponding prime subsequence, actual minimizing residual, completed pant angle, spectral-ideal or RH conclusion is established. S34's narrow-band comparison remains unaffected.
 
+## S43 — positive-shift interval trace cost and the two-cuff escape witness
+
+**Olaf Post**, *Boundary pairs associated with quadratic forms*, Mathematische Nachrichten 289 (2016), 1052–1099. [DOI](https://doi.org/10.1002/mana.201500048); [primary manuscript](https://arxiv.org/pdf/1210.4707), Section 6.1, equation (6.2).
+
+The interval Dirichlet-to-Neumann matrix at a negative spectral parameter has symmetric/antisymmetric eigenvalues `kappa tanh(kappa ell/2)` and `kappa coth(kappa ell/2)`. PF-370 derives the `kappa=1` identity directly and applies it on the transverse slices of PF-363's trace-preserving actual pant chart. S42 supplies the separate classical divided-difference context.
+
+Relevant finding: PF-370. For PF-369's explicit pair, the actual positive-shift pant energy is at least `c s L^2/delta^2`, while its full-line scalar residual squared norm is at most `C L^2 exp(-L/2)`. For the entire stated separation regime and exact cuff relation `s~4 exp(-L/2)`, the ratio of scalar difference energy to actual pant energy tends to zero. The derived contribution prices this specific witness, including its real components; it is not a new interval trace theorem.
+
+**Scope warning.** This neither repairs coefficient-uniform scalar concentration nor proves a full-line lower comparison for arbitrary actual traces. Prime realization, global transition minimizers, completed-angle and spectral consequences remain outside the claim. The positive shift and uniformly admissible geometric offsets are essential to the proof.
+
 ## Provenance policy for future additions
 
 For each future finding, record separately:
