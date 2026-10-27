@@ -28,7 +28,7 @@ PF-345 extends the exponential bound to a low/high exterior strip of dimension `
 
 The decisive quantity is the completed normalized cross block formed from the **same shorted** low, high and mixed blocks, with uniform finite-section control. Determine whether its singular values decay or whether a normalized edge sequence recovers an order-one correlation; neither outcome follows from PF-344/PF-345's raw-energy estimates.
 
-## Price the two-cuff cancellation before transporting scalar concentration
+## Can positive-shift energy control arbitrary broad-band two-cuff residuals?
 
 [MI-018](intuition/MI-018-nearly-equal-cuff-periods-can-hide-their-difference-outside-the-window.md)
 separates two exact scalar facts. Fixed-band traces on each cuff concentrate
@@ -37,12 +37,22 @@ distinct periods with `|L'-L|=o(L^2 e^(-L/2))`, divided differences of
 indices `ceil(alpha L),...,3ceil(alpha L)`, `alpha>1/log(16)`, have central
 mass fraction tending to zero despite fixed bandwidth. Composite cotangent
 labels realize this with `L'-L~8e^(-L/2)` and the prescribed actual window.
-For actual minimizing pant fields, can mass, tangential and seam energies
-control `H[f_L]+H[f_(L')]` relative to `H[f_(L')-f_L]`, or otherwise
-bound the residual in a norm that survives cancellation? An absolute
-coefficient cap without normalization would not settle this homogeneous
-comparison. A separate arithmetic
-question is whether prime cuffs realize the sufficient period regime.
-Neither single-cuff concentration in prime-index density nor asymptotic
-period agreement answers these questions, and this scalar control gives
-no completed-angle conclusion.
+PF-370 prices this explicit pair in the actual shifted pant: the common
+central amplitude costs `E_pant>=c sL^2/|L'-L|^2`, while
+`H[f_(L')-f_L]<=C L^2 e^(-L/2)`, with `s~4e^(-L/2)`. Its full-line
+difference energy divided by `E_pant` tends to zero, even conditionally
+on a prime realization. The witness therefore cannot refute the actual
+energy lower bound.
+
+For arbitrary traces on the two exact cuff lattices in a fixed band, is
+`E_pant[f_L,f_(L')]>=c s^(-1)H[f_(L')-f_L]` uniform along a far tail of
+the actual prime geometry, with `c>0` independent of the coefficients?
+The known trace estimate charges the components only through
+`int_(-T)^T tanh(s cosh(t)/2)(|f_L|^2+|f_(L')|^2)dt`; a bound must
+connect that cost, the window difference, or the retained tangential
+energy to the full residual. A counterexample must make this
+energy-normalized ratio unbounded, not merely move most scalar mass
+outside the window. Global transition minimizers may choose other
+traces, so neither outcome follows from the specified pair. Prime
+realization of its period regime remains a scalar-concentration question
+and does not resolve the actual-energy or completed-angle problem.
