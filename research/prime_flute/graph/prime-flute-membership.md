@@ -380,3 +380,4 @@ This stable projection inventories every current canonical Prime Flute finding. 
 - [[research/prime_flute/findings/PF-367-exact-cuff-lattice-packets-obstruct-broad-band-corridor-comparison|PF-367]]
 - [[research/prime_flute/findings/PF-368-fixed-single-cuff-bands-concentrate-in-actual-windows-in-density|PF-368]]
 - [[research/prime_flute/findings/PF-369-nearly-equal-cuff-lattices-hide-broad-band-residual-mass-beyond-actual-windows|PF-369]]
+- [[research/prime_flute/findings/PF-370-positive-shift-trace-cost-dominates-the-two-cuff-escape-construction|PF-370]]

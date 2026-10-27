@@ -154,7 +154,7 @@ This bound holds for arbitrary traces for which the energy is finite;
 it has no band or period-separation hypothesis. Its weight is of order `s`
 on a fixed central interval. The positive shift is essential: dropping
 the mass term from (9) leaves only `|b-a|^2/w` and no common-amplitude
-penalty. The formula is a classical interval Dirichlet-to-Neumann identity,
+penalty. The formula is a [[research/prior_art/incremental/PA-positive-shift-interval-dirichlet-to-neumann|classical interval Dirichlet-to-Neumann identity]],
 not a new general trace theorem.
 
 ## 3. The escaping pair has a large central component cost

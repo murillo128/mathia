@@ -467,3 +467,4 @@ This stable projection inventories every current canonical Weil Positivity findi
 - [[research/weil_positivity/findings/WP-457-dyadic-sign-conditioning-preserves-all-bounded-support-weak-prime-moments|WP-457]]
 - [[research/weil_positivity/findings/WP-458-conditioned-block-orbit-forms-have-no-nonzero-closable-part|WP-458]]
 - [[research/weil_positivity/findings/WP-459-analytic-exponential-separators-rule-out-orbit-domain-block-orientation|WP-459]]
+- [[research/weil_positivity/findings/WP-460-sparse-closed-diagonal-traces-admit-summable-prime-block-repairs|WP-460]]

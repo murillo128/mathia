@@ -282,3 +282,4 @@ This stable projection inventories every current canonical Robin Extremal findin
 - [[research/robin_extremal/findings/RE-273-first-insertion-classifies-three-prime-repairs-without-a-prime-chain-hypothesis|RE-273]]
 - [[research/robin_extremal/findings/RE-274-prescribed-prime-triple-conditionally-realizes-positive-critical-robin-excursions|RE-274]]
 - [[research/robin_extremal/findings/RE-276-affine-direction-count-forbids-all-balanced-polynomial-euler-repairs|RE-276]]
+- [[research/robin_extremal/findings/RE-277-fixed-rational-balanced-repairs-have-sparse-integral-parameter-sets|RE-277]]

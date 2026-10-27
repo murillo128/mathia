@@ -90,6 +90,7 @@ This is a purely structural corpus projection. A link here means only that the t
 - [[research/prior_art/incremental/PA-paley-wiener-l2-exponential-type]]
 - [[research/prior_art/incremental/PA-polynomial-homogenization-linear-fractional-action]]
 - [[research/prior_art/incremental/PA-polynomial-interpolation-early-termination]]
+- [[research/prior_art/incremental/PA-positive-shift-interval-dirichlet-to-neumann]]
 - [[research/prior_art/incremental/PA-randomized-integration-unsolvability-on-unrestricted-smooth-functions]]
 - [[research/prior_art/incremental/PA-randomized-zeta-critical-gmc-boundary]]
 - [[research/prior_art/incremental/PA-rational-entropy-self-power-identity]]

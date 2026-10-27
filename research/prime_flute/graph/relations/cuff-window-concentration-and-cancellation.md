@@ -32,4 +32,24 @@ The proof's [[research/prior_art/incremental/PA-exponential-divided-differences|
 
 This obstructs a broad-band scalar comparison from those geometric assumptions alone. Separate bounds have denominator `H[f_L]+H[f_(L')]`, which can dwarf `H[g_L]`. Individual coefficient sums grow like `L/|delta_L|`; common scaling does not remove their relative energy cost. Equal periods collapse to one lattice and do not admit this divided-difference construction. Realification preserves the obstruction with real zero-mean traces, with both frequency signs included when applying a single-cuff span bound.
 
-PF-361's narrow combined-band theorem survives. No prime subsequence, minimizing residual, full pant-energy comparison, completed-operator compactness or RH obstruction is established. The possible arithmetic/energy repair is already explicit in PF-369 and is not promoted here to a new clue or a proved graph edge. This is one scalar-comparison frontier episode, not a closure of the localized-scattering Atlas territory.
+## Positive-shift cost of the specified escaping pair
+
+[[research/prime_flute/findings/PF-370-positive-shift-trace-cost-dominates-the-two-cuff-escape-construction|PF-370]] settles the actual-energy cost of PF-369's explicit pair, while preserving its scalar escape. It uses [[research/prime_flute/findings/PF-363-trace-preserving-corridor-charts-give-a-coupled-pant-energy-lower-bound|PF-363]]'s embedded trace-preserving chart, positive shift `+1`, and offsets `rho_1+rho_2<=eta_0 s` with fixed `eta_0<1`. Here `s~4e^(-L/2)` and the same period-separation regime applies. The [[research/prior_art/incremental/PA-positive-shift-interval-dirichlet-to-neumann|classical interval DtN identity]] retains the mass penalty even where the two traces cancel. PF-370's §2 gives the arbitrary-trace lower bound
+
+\[
+E_{\rm pant}[f,f']\ge c_*\int_{-T}^{T}
+\tanh(s\cosh t/2)(|f(t)|^2+|f'(t)|^2)\,dt.
+\]
+
+For this specified divided-difference pair, §§3–4 establish
+
+\[
+E_{\rm pant}\ge c\,sL^2/\delta_L^2,\qquad
+H[g_L]\le CL^2e^{-L/2},\qquad
+\frac{s^{-1}H[g_L]}{E_{\rm pant}}
+\le C\delta_L^2e^{L/2}\longrightarrow0.
+\]
+
+The same conclusion holds for each real component; at least one retains scalar escape. Common rescaling preserves this ratio. Nonnegative extra seam energy with fixed traces only strengthens the obstruction. Thus even prime realization of these periods would not make this pair a counterexample to an actual-energy lower certificate. This is a specific-witness transfer obstruction, not a refutation of PF-369 or a uniform full-line energy theorem for all fixed-band traces.
+
+PF-361's narrow combined-band theorem survives. Prime realization, arbitrary broad-band traces, global transition minimizers and completed-angle consequences remain open. The positive shift and inherited chart are essential to the stated argument; no unshifted, on-spectrum, compactness or RH conclusion follows. The scalar-window question and the specified witness's energy transfer are distinct frontier episodes, neither closing the localized-scattering Atlas territory. No new clue is needed to restate the sources' remaining questions.

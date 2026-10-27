@@ -358,3 +358,4 @@ This stable projection inventories every current canonical Farey Discrepancy fin
 - [[research/farey_discrepancy/findings/FD-347-finite-half-period-tests-miss-reflected-gap-sector-bias|FD-347]]
 - [[research/farey_discrepancy/findings/FD-348-small-denominator-half-period-pairs-are-exact-rational-translates|FD-348]]
 - [[research/farey_discrepancy/findings/FD-349-denominator-parity-forces-a-half-period-gap-correlation-deficit|FD-349]]
+- [[research/farey_discrepancy/findings/FD-350-rational-probe-plateaus-have-a-sharp-spatial-sampling-cost|FD-350]]

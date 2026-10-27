@@ -2,7 +2,7 @@
 id: RA-metrics-v1
 type: riemann-atlas-metrics
 atlas_version: 1
-source_revision: 52a1a48af8f7519e6f0a8d7fcdbb4eb383e72017
+source_revision: 06bcafba0cd8997b4ce128664439453a280f13ad
 derived: true
 ---
 
@@ -38,16 +38,16 @@ The five hard-pruned interfaces retain their existing scoped canonical evidence:
 
 ## Structural and semantic scope
 
-The exact tree projections contain 13 research lines, 5,238 findings, 850 durable intuitions and 85 prior-art notes. Membership changes and reversible source-reference formatting are graph maintenance, never frontier episodes. Semantic inspection remains selective as recorded in `research/graph/semantic-inspection.json`; uninspected source changes do not justify Atlas transitions.
+The exact tree projections contain 13 research lines, 5,246 findings, 850 durable intuitions and 86 prior-art notes. Membership changes and reversible source-reference formatting are graph maintenance, never frontier episodes. Semantic inspection remains selective as recorded in `research/graph/semantic-inspection.json`; uninspected source changes do not justify Atlas transitions.
 
 The reflected Farey reconciliation distinguishes full-discrepancy parity from right-endpoint transport parity and records exact-energy-conditioned erasure nonidentifiability. Both concern artificial reassemblies. Its updated scope also separates the PNT-assisted erased-record energy gap, the finite matched-energy spectral obstruction and its single-pair localization bound, and the realized conditioned high-band barrier with its inherited genuine-source sector and the classical fixed-gap resolution of the upper-half projected-comparator match. This changes no Atlas mass or state; VIS-466's conflicting illustrative length tuple is explicitly excluded from support in the mechanism note.
 
 ## Frontier fertility
 
-The retained prospective series contains **20** classifiable episodes and **0** insufficient-evidence episodes. PF-369 contributes one scoped coupled scalar-comparison barrier; the oldest retained episode leaves the fixed window. These selectively inspected questions are not an unbiased portfolio sample. Atlas states and masses are unchanged.
+The retained prospective series contains **20** classifiable episodes and **0** insufficient-evidence episodes. PF-369’s scalar-window obstruction and PF-370’s specified-witness positive-shift transfer obstruction are distinct questions. The twenty-episode window includes both; the oldest retained episode remains available in Git. These selectively inspected questions are not an unbiased portfolio sample. Atlas states and masses are unchanged.
 
-- **FrontierFertilityEpisodes = 40.0%**
-- **BarrierRate = 60.0%**
+- **FrontierFertilityEpisodes = 35.0%**
+- **BarrierRate = 65.0%**
 - **PriorArtCollisionRate = 0.0%**
 - **InternalDuplicateRate = 0.0%**
 

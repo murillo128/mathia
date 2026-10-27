@@ -480,3 +480,4 @@ This stable projection inventories every current canonical Prime Circle finding.
 - [[research/prime_circle/findings/PC-470-root-selection-entropy-classifies-finite-cotangent-limits|PC-470]]
 - [[research/prime_circle/findings/PC-471-compatible-root-phases-retain-full-spectrum-but-generically-collapse|PC-471]]
 - [[research/prime_circle/findings/PC-472-primewise-separation-does-not-ensure-compatible-root-selection|PC-472]]
+- [[research/prime_circle/findings/PC-473-compatible-root-selection-has-no-finite-hole-certificate|PC-473]]
