@@ -1,10 +1,11 @@
 ---
 id: CLUE-mobius-cancellation-dense-multiplicative-full-source-dispersion
 type: research-clue
-status: proposed
+status: accepted
 origin: master-researcher
 target_line: mobius_cancellation
 based_on:
+  - research/mobius_cancellation/findings/MC-545-balanced-character-swaps-force-a-full-source-singularity.md
   - research/mobius_cancellation/findings/MC-540-one-squarefree-source-hides-every-scale-dispersion-above-fourth-power-sampling.md
   - research/mobius_cancellation/findings/MC-544-fixed-character-backgrounds-cancel-balanced-prime-replicas.md
   - research/prime_lattice/findings/PL-485-prime-supported-perturbations-hide-every-scale-dispersion.md
@@ -154,3 +155,26 @@ Möbius prime signs, isolated-pole formula, RH result, optimal arithmetic
 sampling rate, or lower bound for an estimator accumulating observations
 from other scales. No small energy for the actual prime or Möbius source
 is being imported. The actual arithmetic energy ceilings remain separate.
+
+## Research disposition
+
+Accepted for continued investigation of the complete window populations.
+[MC-545](../findings/MC-545-balanced-character-swaps-force-a-full-source-singularity.md)
+constructs one deterministic infinite assignment by actually swapping
+balanced character-prime packets at every sufficiently large dyadic
+scale. Its exact Euler quotient includes all composite contributions.
+For `beta=2kappa-1`, the continued full-source series has a nonmeromorphic
+real singularity with an explicit fractional radial exponent; hence the
+complete prefix cannot be `O(x^(beta-delta))` for any `delta>0`.
+This establishes a full-source obstruction that the unchanged character
+control MC-544 cannot supply.
+
+The clue is not resolved. A global failure of a power bound does not
+give either channel's dispersion floor on every block, and the
+singularity gives no sparse-sample upper tail. For this explicit source,
+the remaining test must include old-packet replicas and products of
+changed primes in both complete window populations. Its nonmeromorphic
+singularity also prevents direct reuse of an isolated-pole certificate.
+The general failure of ordinary character pretentiousness to preserve
+power cancellation, and Euler-factor singularity construction, are
+classical prior art; the partial result is not an RH mechanism.

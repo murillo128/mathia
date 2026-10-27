@@ -620,3 +620,11 @@ Role: classical unconditional asymptotic `pi(x;q,a) ~ x/(phi(q) log x)` for fixe
 Jesse Thorner and Asif Zaman, *Refinements to the prime number theorem for arithmetic progressions*, Mathematische Zeitschrift 306 (2024), article 54. DOI: https://doi.org/10.1007/s00209-023-03414-3. Inspected author manuscript: https://arxiv.org/pdf/2108.10878v2, Theorem 1.1, Remark 1.2 and Section 1.2, pp. 1–3.
 
 Role: unconditional short-interval prime asymptotic at fixed modulus four. MC-544 uses intervals of length comparable to `Y^kappa`, with fixed `kappa>3/4`, to select balanced narrow character blocks. The manuscript's `7/12+epsilon` range suffices. This supplies prime populations only; the replica cancellation is derived separately, and no RH, GRH or moving-modulus assertion is imported.
+
+MC-545 uses the same MC-S99 theorem on fixed fractional subdivisions of its narrow residue intervals. The resulting prime first moments determine the signed displacement of balanced packets; the infinite Euler quotient and its nonmeromorphic singularity are derived in the finding, not supplied by the prime theorem.
+
+## MC-S100 — Seip, singularity construction through prime Euler factors
+
+Kristian Seip, *Universality and distribution of zeros and poles of some zeta functions*, Journal d'Analyse Mathématique 141 (2020), 331–381. DOI: https://doi.org/10.1007/s11854-020-0126-3. Author manuscript: https://arxiv.org/html/1812.11729v2, Section 6.1.
+
+Role: primary prior art for constructing analytic singularities by selecting prime Euler factors and separating the first prime contribution from higher prime powers. MC-545 derives its own balanced-packet, real-sign, square-free construction and radial noninteger singularity. Seip's meromorphic Helson-zeta constructions and universality results are not imported as source-window estimates or as a theorem about Möbius.
