@@ -612,3 +612,6 @@ Only sources that materially support, delimit, or redirect stored `PL-*` finding
 
 158. **Armin Rainer**, *Real Analysis*, University of Vienna lecture notes for the spring 2014 and 2016 courses, §8.3, Theorem 8.18, pp. 88–89. Author text: https://www.tuwien.at/mg/arainer/wp-content/uploads/2025/03/real-analysis.pdf.
      - Role: precise classical L2 Paley–Wiener theorem with a radial exponential-type bound and L2 restriction to the real axis. PL-487 applies it, after rotation and normalization of the Fourier variable, to show that division by its sparse genus-zero product preserves the support interval. The Gevrey estimate and the implication for the clue's quotient condition are derived in PL-487.
+
+159. **John H. Schwarz**, “The Generalized Stieltjes Transform and Its Inverse,” *Journal of Mathematical Physics* **46** (2005), 013501. DOI: https://doi.org/10.1063/1.1825077. Author manuscript: https://arxiv.org/abs/math-ph/0405050.
+     - Role: equations (8) and (22)–(25) supply the classical generalized-Stieltjes/iterated-Laplace comparison for PL-488's convolution-kernel uniqueness mechanism. PL-488 proves its finite-packet, complex-exponent, compact-measure preservation classification directly by monodromy and moments; no fixed-box interpolation or smoothing-preserver theorem is attributed to Schwarz.

@@ -11,6 +11,7 @@ based_on:
   - research/prime_lattice/findings/PL-475-two-box-lengths-force-paired-macroscopic-prime-variance.md
   - research/prime_lattice/findings/PL-486-subunit-order-mellin-filters-cannot-preserve-a-fixed-box-range.md
   - research/prime_lattice/findings/PL-487-sparse-mellin-division-preserves-gevrey-decay-and-support.md
+  - research/prime_lattice/findings/PL-488-additive-mollifiers-cannot-universally-preserve-box-mellin-zeros.md
   - research/mobius_cancellation/findings/MC-528-multiplicity-aware-annihilation-forces-mobius-variance-on-every-block.md
 ---
 
@@ -197,6 +198,18 @@ an additional quotient estimate. No argument upgrades an arbitrary
 smooth solution of (2) to this Gevrey class; no such interpolant has been
 constructed. The original smooth question and this stronger existence
 question both remain proposed.
+
+[[research/prime_lattice/findings/PL-488-additive-mollifiers-cannot-universally-preserve-box-mellin-zeros|PL-488]]
+excludes an automatic additive-mollification repair. For any finite
+nonempty packet in the open strip, a compact finite-measure convolution
+that preserves one chosen packet zero for **every** centered input
+annihilating that packet must be a scalar Dirac mass. This includes
+signed and complex kernels and remains true on Gevrey inputs. Additive
+convolution retains the box range but cannot universally retain these
+Mellin constraints. The theorem does not cover a specially chosen input,
+an infinite constraint subspace, additional Hermite conditions, or
+smoothing followed by exact corrections. It therefore supplies no
+counterexample to (2); direct compatible construction remains open.
 
 ## Evidence boundary
 
