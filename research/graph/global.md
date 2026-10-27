@@ -64,7 +64,7 @@ This is the derived root graph for Mathia research. Canonical findings and mind 
 
 ## Integration boundary
 
-Stable memberships cover all 13 initialized research lines, 5,235 canonical findings, 847 durable intuitions and 84 canonical prior-art notes. Structural attachment asserts ownership only. It includes challenged findings without treating a review as withdrawal or endorsement.
+Stable memberships cover all 13 initialized research lines, 5,238 canonical findings, 850 durable intuitions and 85 canonical prior-art notes. Structural attachment asserts ownership only. It includes challenged findings without treating a review as withdrawal or endorsement.
 
 Semantic coverage is selective. The [[research/arithmetic_fidelity/graph/relations/euler-harmonic-collision-budget|Euler harmonic collision budget]] records AF-337/AF-338's finite-order refinement and its surviving source/observation restrictions. Nine direct reference links in those two findings preserve their original text exactly. No cross-line implication follows from this maintenance.
 
@@ -100,3 +100,5 @@ The Riemann Atlas v1 masses and territory states are unchanged. [[research/graph
 <!-- graph:end -->
 
 The [[research/nyman_beurling/graph/relations/adaptive-lattice-component-cost|Nyman synthesis mechanism]] separates NB-371’s absolute-coefficient budget from NB-372’s effective-range budget. NB-372’s compact-source Hilbert estimate now supplies a power lower bound on excess above the Burnol floor, even with unrestricted coefficients and column count. It leaves unrestricted closure intact and gives no matching upper synthesis or RH consequence. The existing range episode is refined without changing its classification, Atlas state or mass. One reversible reference wrapper connects NB-372’s classical projection input; other changed sources remain outside this bounded semantic inspection.
+
+[[research/prime_flute/graph/relations/cuff-window-concentration-and-cancellation|The cuff-window mechanism]] separates single-cuff concentration from broad-band cancellation between distinct cuff lattices. PF-369 supplies an exact composite-label scalar counterexample while PF-361's narrow-band theorem survives. Four reversible wrappers connect PF-369 to its verified finding dependencies; classical exponential divided differences have a canonical prior-art node. Prime realization and actual pant-energy consequences remain open. Other modified findings are not certified by this bounded reconciliation.

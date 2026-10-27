@@ -70,6 +70,7 @@ This is a purely structural corpus projection. A link here means only that the t
 - [[research/prior_art/incremental/PA-chebyshev-alternation]]
 - [[research/prior_art/incremental/PA-cycle-graph-spectral-zeta-rh-reformulation]]
 - [[research/prior_art/incremental/PA-dress-exact-farey-absolute-discrepancy]]
+- [[research/prior_art/incremental/PA-exponential-divided-differences]]
 - [[research/prior_art/incremental/PA-farey-fixed-lag-gap-correlations]]
 - [[research/prior_art/incremental/PA-gamma-2-thrice-punctured-sphere-scattering]]
 - [[research/prior_art/incremental/PA-gaussian-conditioning-adaptive-linear-information]]

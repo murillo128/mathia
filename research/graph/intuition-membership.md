@@ -66,6 +66,7 @@ This is a path-derived structural projection for graph topology. Each link means
 - [[research/analytic_frontier/mind/intuition/MI-005-one-pair-collapse-is-curvature-seeded-before-higher-order-effects]]
 - [[research/analytic_frontier/mind/intuition/MI-006-relative-xi-source-reconstruction-moves-the-gate-to-destination-conditioning]]
 - [[research/analytic_frontier/mind/intuition/MI-007-bow-variance-needs-source-specific-coherence-at-the-distinguished-twist]]
+- [[research/analytic_frontier/mind/intuition/MI-008-small-real-notches-admit-exact-simple-double-reduction]]
 
 ### Arithmetic Fidelity
 - [[research/arithmetic_fidelity/mind/intuition/MI-001-fidelity-is-quotient-relative]]
@@ -485,6 +486,7 @@ This is a path-derived structural projection for graph topology. Each link means
 - [[research/prime_circle/mind/intuition/MI-067-fixed-gap-log-determinants-cannot-amplify-a-vanishing-density-kron-contrast-sector]]
 - [[research/prime_circle/mind/intuition/MI-068-subcritical-positive-kron-survival-classicalizes-on-the-smooth-macroscopic-sector]]
 - [[research/prime_circle/mind/intuition/MI-069-infinite-shell2-chen-depth-is-a-generic-moment-decoder]]
+- [[research/prime_circle/mind/intuition/MI-070-primewise-exclusion-does-not-select-a-compatible-root]]
 
 ### Prime Flute
 - [[research/prime_flute/mind/intuition/MI-001-relative-multigap-geometry-carries-the-spectral-signal]]
@@ -504,6 +506,7 @@ This is a path-derived structural projection for graph topology. Each link means
 - [[research/prime_flute/mind/intuition/MI-015-intrinsic-angle-packets-must-be-normalized-by-completed-diagonal-energy]]
 - [[research/prime_flute/mind/intuition/MI-016-critical-translation-locality-is-frequency-off-diagonal-concentration]]
 - [[research/prime_flute/mind/intuition/MI-017-transition-shorting-erases-raw-corridor-scale-but-not-normalized-angle]]
+- [[research/prime_flute/mind/intuition/MI-018-nearly-equal-cuff-periods-can-hide-their-difference-outside-the-window]]
 
 ### Prime Lattice
 - [[research/prime_lattice/mind/intuition/MI-001-exponent-lattice-is-scaffolding]]

@@ -2,7 +2,7 @@
 id: RA-frontier-telemetry-v1
 type: riemann-atlas-frontier-telemetry
 atlas_version: 1
-prospective_source_cutoff: 8f3a4c83f17088cf5d2f2148cf76c2c560d77d72
+prospective_source_cutoff: 52a1a48af8f7519e6f0a8d7fcdbb4eb383e72017
 derived: true
 ---
 
@@ -116,17 +116,23 @@ This is a conditioning obstruction, distinct from NB-370's retained-index optimi
 
 [[research/prime_lattice/graph/relations/fixed-box-mellin-interpolation-and-division|PL-487’s division reduction]] adds one `viable-extension` episode for the conditional quotient-decay obligation. Exact Hermite cancellation in the specified Gevrey class automatically supplies decay and preserves the support interval. It does not construct the required fixed-box interpolant, upgrade smooth inputs, or evade PL-486’s universal obstruction. Classical prior-art registration and source wrappers add no events. The two oldest episodes leave the twenty-question window and remain in Git. Other changed findings receive structural membership only unless separately inspected.
 
+## Two-cuff cancellation in actual windows
+
+[[research/prime_flute/graph/relations/cuff-window-concentration-and-cancellation|The cuff-window mechanism]] distinguishes PF-368's coefficient-uniform single-cuff concentration from PF-369's two-lattice counterexample. Distinct exponentially close periods admit broad-band differences whose central/full weighted mass ratio tends to zero. Exact cotangent composite labels realize this in the prescribed actual windows while each trace separately concentrates. The divided-difference error is controlled relative to an exponentially small residual norm, with coefficient growth retained.
+
+This is one `new-barrier` episode for the coupled scalar comparison. PF-361's narrow combined-band result survives. Prime realization, minimizing residuals, nonsingular energy costs and completed-operator consequences remain open; E3 stays `open` with unchanged mass. Classical-method registration and source wrappers are maintenance. The oldest prospective episode leaves the fixed twenty-question window; its history remains in Git. Other source changes remain outside this bounded semantic inspection.
+
 ## Retained prospective window
 
 Classifiable episodes: **20**. Insufficient-evidence episodes: **0**. Retrospective episodes: **0**.
 
 | Classification | Episodes |
 | --- | ---: |
-| new-barrier | 11 |
-| viable-extension | 9 |
+| new-barrier | 12 |
+| viable-extension | 8 |
 
-- **FrontierFertilityEpisodes = 45.0%**
-- **BarrierRate = 55.0%**
+- **FrontierFertilityEpisodes = 40.0%**
+- **BarrierRate = 60.0%**
 - **PriorArtCollisionRate = 0.0%**
 - **InternalDuplicateRate = 0.0%**
 
@@ -136,8 +142,9 @@ Classifiable episodes: **20**. Insufficient-evidence episodes: **0**. Retrospect
 | --- | ---: | ---: | ---: | ---: | ---: |
 | `arithmetic_fidelity` | 4 | 1 | 3 | 0 | 0 |
 | `farey_discrepancy` | 3 | 1 | 2 | 0 | 0 |
-| `mobius_cancellation` | 3 | 2 | 1 | 0 | 0 |
+| `mobius_cancellation` | 2 | 1 | 1 | 0 | 0 |
 | `nyman_beurling` | 3 | 1 | 2 | 0 | 0 |
+| `prime_flute` | 1 | 0 | 1 | 0 | 0 |
 | `prime_lattice` | 5 | 4 | 1 | 0 | 0 |
 | `visual_exploration` | 1 | 0 | 1 | 0 | 0 |
 | `xi_flow` | 1 | 0 | 1 | 0 | 0 |

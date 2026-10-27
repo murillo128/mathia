@@ -2,7 +2,7 @@
 
 **Status:** EXACT-DERIVED + CLASSICAL-FOURIER-AND-DIVIDED-DIFFERENCE-CONSTRUCTION + MATCHED-CONTROL-OBSTRUCTION + PRIME-REALIZATION-OPEN.
 
-PF-368's coefficient-uniform single-cuff concentration does not extend to
+[[research/prime_flute/findings/PF-368-fixed-single-cuff-bands-concentrate-in-actual-windows-in-density|PF-368]]'s coefficient-uniform single-cuff concentration does not extend to
 differences of neighboring cuff traces from the available geometric bounds
 alone. Two distinct, exponentially close periods admit fixed-band differences
 whose weighted mass escapes even the entire central fundamental interval.
@@ -190,7 +190,7 @@ limit in which the escaping weighted mass is exponentially small.
 Consider the infinite endpoint-label sequence `x_m=6m+3`, `m>=1`, all of
 whose labels are composite, with `u_m=cot(pi/x_m)`. Consecutive triples
 are `P,P+a,P+2a`, `a=6`. Use the same exact cuff and prescribed-window
-formulas as PF-001 and PF-367:
+formulas as [[research/prime_flute/findings/PF-001-exact-cuff-coordinate|PF-001]] and [[research/prime_flute/findings/PF-367-exact-cuff-lattice-packets-obstruct-broad-band-corridor-comparison|PF-367]]:
 
 \[
  F(x)=\log\cot(\pi/x),\quad
@@ -269,7 +269,7 @@ two-cuff cancellation.
   neither the ratio (2) nor their relative energy costs. Nonsingular
   coefficient, tangential, mass and seam costs cannot be discarded when
   asking whether these are actual minimizing residuals.
-- PF-361's sufficiently narrow combined-band theorem is unchanged. No
+- [[research/prime_flute/findings/PF-361-finite-corridor-windows-preserve-the-narrow-band-model-angle|PF-361]]'s sufficiently narrow combined-band theorem is unchanged. No
   narrow-band counterexample, full pant-energy comparison, global
   transition minimizer, compactness/Schatten conclusion, or RH consequence
   is proved here. The construction is neither a new intrinsic spectral
