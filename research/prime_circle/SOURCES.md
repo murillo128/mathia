@@ -323,6 +323,7 @@ This file records durable literature dependencies used to support or falsify fin
 ## Entropy cost of selecting rooted cotangent limits
 
 - Mauro Mariani, **A Gamma-convergence approach to large deviations**, *Annali della Scuola Normale Superiore di Pisa, Classe di Scienze (5)* **18** (2018), 951–976. DOI: 10.2422/2036-2145.201301_010; https://arxiv.org/pdf/1204.0640. Role: Theorems 3.4–3.5 supply the classical large-deviation/normalized-relative-entropy lower-bound and recovery framework for PC-470. That finding proves its rooted-sieve specialization by finite-window partitions and conditional uniformity; the Kedlaya singular-series normalization and Lagarias Mertens theorem already listed above supply its arithmetic input. No new general entropy theorem or prime-tuple conjecture is used.
+- Robert M. Gray, **Entropy and Information Theory**, Springer (1990), author's corrected first edition (2023), https://ee.stanford.edu/~gray/it.pdf. Role: Corollary 2.5.1 and Corollaries 5.2.3–5.2.5 supply the information chain rule and convergence of relative entropy along generating coordinate sigma-fields in PC-474. That finding derives fixed compatible phase-law recovery, the uniform cardinality bound for countable mixtures, and the exact finite-mixture second-order penalty directly. Its arithmetic constants use the existing Kedlaya/Lagarias anchors; no new general information principle is claimed.
 
 ## Compatible sieve phases and cotangent limits
 
