@@ -327,8 +327,40 @@ can be independent of the unknown inner factor: `g_2 in N` gives
 even above a positive Burnol floor. It is a necessary lower bound, not a
 sharp rate or an improvement of the classical logarithmic rate under RH.
 
-For a finite synthesis of effective range at most `R`, the two necessary
-costs give the simultaneous lower bound
+NB-372 also transfers Burnol's growing dual vectors to the **actual projected
+target**, giving a stronger asymptotic range cost. Let `J` have unitary
+Mellin multiplier `(s-1)/s`, put `f=Jt`, and keep
+`M f(s)=bB(s)(s-1)/s^2`. The bounded-range generators map into the classical
+cutoff space `C_(1/R)`, but `f` is not replaced by the projection of `Je`
+onto that larger space. For the classical cutoff-annihilating duals
+`Y_(rho,k)`, set `X_(rho,k)=T^(-k-1/2)Y_(rho,k)`, `0<=k<m_rho`,
+where `T=log R`. For each fixed finite set `F` of distinct
+critical-line zeros, these dual Gram blocks converge to
+`H_m=(1/(k+l+1))_(0<=k,l<m)`. The normalized target pairings, multiplied
+by `sqrt T`, tend to `(M f(rho),0,...,0)` in each block. Since
+`|(M f)(rho)|^2=b^2/|rho|^2` and `(H_m^(-1))_(0,0)=m^2`,
+
+\[
+\liminf_{R\to\infty}(\log R)\Delta_R^2
+\ge b^2\sum_{\rho\in F}\frac{m_\rho^2}{|\rho|^2}.
+\]
+
+The extra bridge is local Fourier regularity, not a finite off-critical
+defect space. For `g in L^2(R)` with Fourier transform smooth near a fixed
+`gamma`, `int_0^T g(u)e^(-i gamma u)du` converges, while
+`T^(-k)int_0^T u^k g(u)e^(-i gamma u)du ->0` for each fixed `k>=1`.
+A smooth frequency cutoff gives a Schwartz local part; the remaining
+transform divided by `(y-gamma)^j` is integrable by Cauchy--Schwarz for
+`j>=1`, so Riemann--Lebesgue controls the distant frequencies. Applied
+after Burnol's unitary multiplier, this gives the dual pairings. The
+Blaschke factor `B` continues locally at each selected critical zero even
+with infinitely many off-critical zeros. The finite zero set stays fixed
+throughout the range limit; no uniform strip or growing-zero interchange
+is assumed.
+
+For a finite synthesis of effective range at most `R`, the all-range
+power certificate and coefficient restriction still give the simultaneous
+lower bound
 
 \[
 \|e-w\|^2\ge1-b^2+
@@ -337,10 +369,13 @@ costs give the simultaneous lower bound
 
 The resources are therefore distinct: retained lattice count `M`, search
 horizon `K`, generator coefficients, and effective range `max(av)`.
-Final-target error `epsilon` requires `R=Omega_rho(epsilon^(-4m))`;
-error `O(M^(-1/2))` therefore needs both `R_M=Omega_rho(M^(2m))` and
-`S_M=Omega(M^m)`. In particular the range is at least quadratic in `M`
-without assuming simplicity. For fixed seeds this also prices `max(a)`;
+The asymptotic certificate is stronger: final-target error `epsilon ->0`
+requires `log R=Omega(epsilon^(-2))`. Error `O(M^(-1/2))` therefore needs
+both `R_M>=exp(cM)` eventually for some `c>0` and `S_M=Omega(M^m)`.
+The exponential range requirement uses only one fixed critical-line zero,
+without assuming simplicity. Its onset is not effective here; the power
+certificate remains valid at every finite range with local zeta constants.
+For fixed seeds the exponential cost also prices `max(a)`;
 variable seeds can instead enlarge `v`. The physical range `av` is not
 the lattice search horizon `K`: the `M log M` selection law does not
 supply finite synthesis within that physical range. Conversely
@@ -348,5 +383,7 @@ supply finite synthesis within that physical range. Conversely
 Neither restriction removes the Burnol floor, supplies an upper synthesis,
 or quantifies column count without coefficient control. A cutoff bound for
 distance to `e` cannot simply be reduced by the positive floor to obtain a
-rate for `Delta_R`. These are source-backed necessary costs, not a measured
+rate for `Delta_R`; the logarithmic result instead pairs the duals directly
+with the transported projected target. It is not an improvement of Burnol's
+classical rate under RH. These are source-backed necessary costs, not a measured
 improvement in research utility.

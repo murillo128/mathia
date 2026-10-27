@@ -230,10 +230,40 @@ of `F=O(sqrt x)` gives, for every fixed `phi in C^1([4/3,5/3])`,
 \sum_{4Y/3<n\le5Y/3}f(n)\phi(n/Y)=O_\phi(\sqrt Y).
 \]
 
-The omitted coefficients cancel the selected `Y/log Y` target. This
-settles deterministic background compatibility for broad selected blocks,
-not dense-scale full-source dispersion or MC-538's signed-target extension.
-Sublinear block widths are not covered. The control also agrees with a
+The same source also handles narrow blocks. For each fixed `3/4<kappa<1`,
+set `W=4floor(Y^kappa/40)` and `u=floor(3Y/2)`. Select the smallest `h`
+primes congruent to one modulo four in `(u,u+W/4]` and the smallest `h`
+congruent to three in `(u+3W/4,u+W]`, where `h` is the smaller population.
+The unconditional short-interval PNT in fixed progressions persisted in
+MC-544 gives `h~W/(8log Y)`; proportional-width PNT alone is insufficient.
+With inherited signs and the same prefix `B`,
+
+\[
+|T_{Y,\kappa}|=\left|\sum_{p\in P}f(p)p/Y\right|
+\asymp_\kappa Y^{2\kappa-1}/\log Y,\quad
+\mathcal B_1:=\sum_n B(n)\le Wh,\quad
+Wh^2/2\le\mathcal B_2\le Wh^2.
+\]
+
+Eventually `3W<=H`, so the two replica pulses are disjoint. Now
+`E_L=6 mathcal B_2` and `sum|a_L|=6 mathcal B_1` exactly. Pairing with
+`|S_L|<8sqrt X` gives the sharper relative cancellation estimate
+
+\[
+|Z_g/E_L-1|\le16\sqrt X/h
+\ll_\kappa Y^{1/2-\kappa}\log Y\longrightarrow0.
+\]
+
+The deleted background prefix is `asymp_kappa h`; its large value pays
+for cancellation without making the full source large. Partial summation
+also bounds every full-source subinterval sum in this band by
+`O_phi(sqrt Y)`. In particular its pair dispersion is at most `16sqrt X`,
+below any fixed floor `cX^(2kappa-1)` for `kappa>3/4`.
+
+The omitted coefficients cancel both the broad and narrow selected targets.
+Width alone therefore cannot exclude this compatible background, while
+dense-scale full-source dispersion and MC-538's signed-target extension
+remain unprovided. The control also agrees with a
 fixed character at all odd primes and violates `mu(p)=-1`; neither property
 is excluded by multiplicativity and square-free magnitude alone. A stronger
 transfer must retain a full-source target or add a justified restriction

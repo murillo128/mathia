@@ -2,6 +2,19 @@
 
 This file holds the current mathematical questions suggested by the durable analytic-frontier intuitions. It is not a roadmap, task queue, status page, or history.
 
+## Optimize the real notch floor after exact multiplicity reduction
+
+[MI-008](intuition/MI-008-small-real-notches-admit-exact-simple-double-reduction.md)
+retains ANF-213's exact reduction for `0<eta<=1/2`, `0<a<=1/100`:
+the infimum of `sum_(i,j)m_i m_j V(x_i-x_j)/sum_i ell(m_i)` is unchanged
+by restricting `m_i` to `1,2` and quarter-interval occupation to at most
+four. Here `V=F-a eta sinc^2(eta x)` and `ell(1)=1`, `ell(2)=4`.
+Can minimizing sequences still lower this floor through unbounded numbers
+of occupied intervals, or can one prove a finite-cardinality reduction
+in a specified regime such as `a=lambda eta^3`? The local occupation
+bound neither gives a minimum separation nor prevents mass from escaping
+to many distant clusters; those are the remaining variational freedoms.
+
 ## Decide whether the surviving same-profile cascade is fatally non-excisable
 
 **Linked intuition:** `MI-005-one-pair-collapse-is-curvature-seeded-before-higher-order-effects`.

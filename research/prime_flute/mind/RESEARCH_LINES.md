@@ -27,3 +27,22 @@ PF-344 changes the **representation**, not just the hard-cutoff estimate. Keep a
 PF-345 extends the exponential bound to a low/high exterior strip of dimension `Theta(L_n)`: its **positive unnormalized compression** satisfies `||P_(E_n)S P_(E_n)||_(S_1)=O(D_n exp(-gamma L_n))`. This makes the direct hard-cutoff PF-342/PF-343 witness nonportable to the shorted geometry. Yet the same transition elimination reduces the shorted diagonal energies, so small raw off-diagonal entries and a small relative-to-`D_n` trace do **not** imply a compact diagonally normalized low/high canonical-correlation operator.
 
 The decisive quantity is the completed normalized cross block formed from the **same shorted** low, high and mixed blocks, with uniform finite-section control. Determine whether its singular values decay or whether a normalized edge sequence recovers an order-one correlation; neither outcome follows from PF-344/PF-345's raw-energy estimates.
+
+## Price the two-cuff cancellation before transporting scalar concentration
+
+[MI-018](intuition/MI-018-nearly-equal-cuff-periods-can-hide-their-difference-outside-the-window.md)
+separates two exact scalar facts. Fixed-band traces on each cuff concentrate
+when the actual window has `T/L->1/2`; their differences need not. For
+distinct periods with `|L'-L|=o(L^2 e^(-L/2))`, divided differences of
+indices `ceil(alpha L),...,3ceil(alpha L)`, `alpha>1/log(16)`, have central
+mass fraction tending to zero despite fixed bandwidth. Composite cotangent
+labels realize this with `L'-L~8e^(-L/2)` and the prescribed actual window.
+For actual minimizing pant fields, can mass, tangential and seam energies
+control `H[f_L]+H[f_(L')]` relative to `H[f_(L')-f_L]`, or otherwise
+bound the residual in a norm that survives cancellation? An absolute
+coefficient cap without normalization would not settle this homogeneous
+comparison. A separate arithmetic
+question is whether prime cuffs realize the sufficient period regime.
+Neither single-cuff concentration in prime-index density nor asymptotic
+period agreement answers these questions, and this scalar control gives
+no completed-angle conclusion.

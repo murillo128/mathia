@@ -2,6 +2,21 @@
 
 This file records the current mathematical questions that survive the Prime-Circle evidence. It is not a roadmap, task queue, status page, or history.
 
+## Decide simultaneous residue selection, not only holewise separation
+
+[MI-070](intuition/MI-070-primewise-exclusion-does-not-select-a-compatible-root.md)
+retains an infinite admissible support `S` with `cl_pr S=S` that is not
+`{h:h!=r_p mod p for all p}` for any one nonzero residue choice per prime.
+Its holes `2,4` both have available-prime set `{3}` and require different
+residues there. What condition on the incidence data
+`W_h(S)={p:h mod p notin S mod p}` and their required residue values
+characterizes simultaneous exclusion when some holes have only finitely
+many available primes? Infinite `W_h(S)` for every hole is sufficient by
+Baire; individual nonemptiness is insufficient. Any resulting exact-image
+criterion must remain distinct from closure of the compatible supports:
+finite compatible truncations already approximate this noncompatible
+`S`, even strongly at the associated Cauchy-operator level.
+
 ## Find source-forced interaction before the descendant state collapses to one-shell Mellin data
 
 PC-391--PC-415 progressively show that multiplicative descendants, finite and infinite conductor tensors, positive frame constructions and trace-class spectral invariants collapse after shell-2 scalarization to one-shell source amplitudes times universal conductor data. Matched nonarithmetic base profiles reproduce that conductor structure, so large support, matrix rank, Euler products or Fredholm data are not source specificity by themselves.

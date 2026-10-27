@@ -353,7 +353,19 @@ original band, whose full smooth sums are `O_phi(sqrt Y)`. It does not
 supply a multiplicative version of PL-485's perturbation dispersion or
 MC-538's full signed target at dense scales. A selected subset and its
 complement are not separate source signals after their sum is observed.
-Broad-block deterministic compatibility is settled, while full-source
-retention, sublinear block geometry and additional arithmetic exclusions
-of the character control remain distinct questions. No sharp arithmetic
+The same fixed source also handles every fixed `3/4<kappa<1`: prescribed
+residue selectors of width `W asymp Y^kappa` contain
+`h asymp W/log Y` primes of each sign and give
+`|T_(Y,kappa)| asymp Y^(2kappa-1)/log Y`. The short-interval PNT supplies
+these populations. Disjoint replica pulses give
+`E_L=6sum B(n)^2` and `sum|a_L|=6sum B(n)`, so the actual first absolute
+moment yields `|Z_g/E_L-1|<=16sqrt X/h=o(1)`. The deleted prefix has size
+`asymp h`, but full-source subinterval sums remain `O_phi(sqrt Y)` and
+`D_i(X)<=16sqrt X`.
+
+Thus the selectors fit the same sublinear width scale as PL-485's packets
+without producing its full perturbation dispersion. Width alone cannot
+exclude the character control; the distinguishing object is the complete
+endpoint field after adding the complement. Full-source retention and
+additional arithmetic exclusions remain open. No sharp arithmetic
 sampling law follows.
