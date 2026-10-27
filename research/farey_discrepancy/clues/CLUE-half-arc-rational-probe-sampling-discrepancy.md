@@ -144,3 +144,21 @@ for this particular `H_(Q,r)`, or an admissible growing prime-order family
 with unbounded positive or absolute `Delta/t`. Ordinary bounded-variation
 quadrature, independent layer rotations, and the finite panel do not
 settle it. The separate spatial small-window estimate is also still open.
+
+[FD-350](../findings/FD-350-rational-probe-plateaus-have-a-sharp-spatial-sampling-cost.md)
+closes a narrower local-constancy rescue. For \(Q>3t\), the full genuine
+half-arc plateaus containing these probes are disjoint and have total
+length asymptotic to \(6t/(\pi^2Q)\) when \(t\to\infty\), \(t=o(Q)\).
+The sharp positive sampling constant for arbitrary nonnegative functions
+constant on that same partition is asymptotic to \(Qt/2\).
+The union indicator preserves the genuine partition and both reflection
+and half-period symmetry, has spatial mass \(O(1/t)\) on admissible
+growing prime-order panels, but has positive quadrature discrepancy
+\(\Theta(t^2)\).
+
+This refutes only a transfer based on those relaxed properties.
+The indicator need not take equal values on separated cells with equal
+\(D_Q\), and is not the actual triangular rank-level function.
+Both proposed transfer bounds remain unresolved. A successful argument
+must retain that integer-value linkage or another hypothesis excluding
+the control; local endpoint continuity alone does not supply it.

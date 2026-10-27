@@ -126,6 +126,7 @@ This file records durable literature dependencies for `research/farey_discrepanc
 
 ## Half-period denominator-count comparison
 
+- Christoph Aistleitner and Josef Dick, *Functions of bounded variation, signed measures, and a general Koksma–Hlawka inequality*, Acta Arithmetica **167**(2) (2015), 143–171; [arXiv:1406.0230v2](https://arxiv.org/pdf/1406.0230), equation (2). Role: classical variation-dependent quadrature boundary for FD-350. That finding derives the exact Farey half-arc probe-cell widths and a sharp positive sampling cost; its partition-preserving control has no uniform variation bound and does not contradict Koksma–Hlawka or refute the actual rank-level sampling conjecture.
 - J. S. Athreya and Y. Cheung, *A Poincaré section for horocycle flow on the space of lattices*, arXiv `1206.6597`, §1.3.3 and Lemma 4.1. Role: classical identification of successive normalized Farey denominators with a finite periodic BCZ orbit and of its roof with normalized gaps. FD-348 distinguishes this orbit from the continuous invariant measure when reducing small-denominator half-period pairs to exact rational rank coincidences.
 - Albert Artiles, Andrew Best and Matteo Bordignon, *Mixing of the BCZ map*, arXiv `2610.07347v1` (5 October 2026), Theorem 1.1. Role: prior-art boundary for the count direction in FD-348: strong mixing is with respect to normalized Lebesgue measure on the BCZ triangle. No estimate for changing finite periodic-orbit measures, shrinking denominator thresholds or the required rank anti-concentration is imported.
 
