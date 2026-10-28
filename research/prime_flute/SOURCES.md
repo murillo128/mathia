@@ -678,6 +678,14 @@ Relevant finding: PF-370. For PF-369's explicit pair, the actual positive-shift 
 
 **Scope warning.** This neither repairs coefficient-uniform scalar concentration nor proves a full-line lower comparison for arbitrary actual traces. Prime realization, global transition minimizers, completed-angle and spectral consequences remain outside the claim. The positive shift and uniformly admissible geometric offsets are essential to the proof.
 
+## S44 — full-cuff variable collars and periodized residual tails
+
+Basmajian–Hakobyan–Šarić (S2), [Section 5.2, equations (26),(30), Theorem 5.6](https://arxiv.org/pdf/2011.03166), describe nonstandard half-collars and their variable profile; the discussion before Lemma 6.4 gives disjoint half-collars for two cuffs directed toward the third end. **Curtis T. McMullen**, *Complex Dynamics and Renormalization*, Annals of Mathematics Studies 135, Princeton University Press (1994), [Section 2.9, pp. 23–24](https://people.math.harvard.edu/~ctm/papers/home/text/papers/real/book.pdf), records the ideal-quadrilateral collar identity and tight-pants seam sum. These are classical geometric inputs, not new collar constructions. Post's interval DtN formula (S43) gives the positive-shift free-end trace minimum `tanh(ell)|z|^2`.
+
+Relevant finding: PF-371. A bounded-depth portion of each full-cuff Lambert collar charges `A_a[f]=(cosh a)^(-1) integral_(-a)^a |f|^2 cosh(t) dt`. Periodizing the scalar tail and combining this with PF-363's trace-preserving corridor bound gives `E_pant>=c H[g-f]/(s(1+chi))`, where `chi=s max(cosh a,cosh b)` and the cuff lengths are `2a,2b`. Bounded additive length contrast gives a coefficient-uniform full-line lower certificate for all finite-energy periodic traces, without any bandwidth restriction. The periodization and actual-energy application are derived explicitly; no extremal-length theorem is treated as a trace-energy theorem.
+
+**Scope warning.** Individual seam offsets must satisfy PF-371's stated collar-fraction bounds. Unbounded adjacent length/gap contrast still incurs a nonuniform loss; no all-tail constant, matching residual-scale upper bound, completed-angle, spectral or RH consequence is established. The argument uses the positive shift and applies equally to nonprime tight pants.
+
 ## Provenance policy for future additions
 
 For each future finding, record separately:
