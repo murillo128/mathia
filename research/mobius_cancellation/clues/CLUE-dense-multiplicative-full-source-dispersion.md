@@ -169,9 +169,18 @@ complete prefix cannot be `O(x^(beta-delta))` for any `delta>0`.
 This establishes a full-source obstruction that the unchanged character
 control MC-544 cannot supply.
 
+MC-545, Section 4, extends this same obstruction to every fixed nonzero
+compact smooth test, even with a Mellin zero of any finite order at
+`beta`: its complete smoothed sum is not `O(X^(beta-delta))` for any
+`delta>0`, also on integer scales. A nonzero analytic multiplier cannot
+remove the fractional singularity. Fixed moment cancellation therefore
+does not recover the character source's power bound.
+
 The clue is not resolved. A global failure of a power bound does not
 give either channel's dispersion floor on every block, and the
-singularity gives no sparse-sample upper tail. For this explicit source,
+singularity gives no sparse-sample upper tail. The smooth-test
+obstructions likewise supply only test-dependent unbounded subsequences,
+not simultaneous lower bounds on the prescribed scales. For this explicit source,
 the remaining test must include old-packet replicas and products of
 changed primes in both complete window populations. Its nonmeromorphic
 singularity also prevents direct reuse of an isolated-pole certificate.

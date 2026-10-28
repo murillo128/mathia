@@ -437,6 +437,8 @@ Don Zagier, *The Mellin Transform and Related Analytic Techniques*, appendix to 
 
 Role: classical Mellin holomorphy and Dirichlet-series framework for MC-521. The finding explicitly proves the compact-smooth transform identity and uses a family of weights to prevent Mellin zeros from masking a zeta zero; no continuation of reciprocal zeta is assumed as an input.
 
+MC-545, Section 4, uses the same classical transform identity and uniqueness to propagate its noninteger radial singularity to every nonzero fixed compact smooth test. Finite-order Mellin zeros cannot make that product meromorphic; this gives a power-cancellation obstruction on unbounded subsequences, not a Tauberian asymptotic or an every-block lower bound.
+
 ## MC-S72 — Zaccagnini, Selberg integrals and zero-location context
 
 Alessandro Zaccagnini, *The Selberg integral and a new pair-correlation function for the zeros of the Riemann zeta-function*, Rivista di Matematica della Università di Parma 7 (2016), 133–151. Author manuscript: https://arxiv.org/abs/1603.02952.
